@@ -59,8 +59,14 @@ body.car .scr{background:var(--car-bg)}
 /* ── HEADER ── */
 .hdr{background:var(--w);padding:14px 16px 10px;display:flex;align-items:center;gap:10px;
   box-shadow:0 2px 10px rgba(0,0,0,.06);flex-shrink:0}
-.hbk{width:48px;height:48px;border-radius:50%;background:var(--vl);border:none;
-  cursor:pointer;font-size:28px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.hbk{width:54px;height:54px;border-radius:50%;background:var(--vl);border:none;
+  cursor:pointer;font-size:0;display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  box-shadow:0 2px 8px rgba(0,0,0,.18);position:relative}
+.hbk::before{content:'';display:block;width:22px;height:22px;
+  border-left:4px solid var(--t);border-bottom:4px solid var(--t);
+  transform:rotate(45deg) translate(3px,-3px);border-radius:2px}
+.hbk.hbk-x::before{display:none}
+.hbk.hbk-x::after{content:'✕';font-size:20px;font-weight:900;color:var(--t)}
 .htit{font-size:17px;font-weight:800;color:var(--t);flex:1}
 .hsc{background:var(--y);border-radius:20px;padding:5px 12px;font-weight:800;font-size:13px;color:#4A3800}
 .htts{background:var(--vl);border:none;border-radius:50%;width:34px;height:34px;
@@ -251,7 +257,22 @@ body.car .citem{font-size:18px;padding:18px}
 /* ── DEFI ── */
 .dcard{background:linear-gradient(135deg,var(--m),#00B884);border-radius:22px;
   padding:24px 20px;text-align:center;color:#fff;margin-bottom:14px}
-.dcard .de{font-size:60px;margin-bottom:8px}
+.dcard[data-cat="cardio"]{background:linear-gradient(135deg,#FF6B6B,#FF9F1C)}
+.dcard[data-cat="gainage"]{background:linear-gradient(135deg,#6C63FF,#A855F7)}
+.dcard[data-cat="stretching"]{background:linear-gradient(135deg,#06D6A0,#0EA5E9)}
+.dcard[data-cat="respiration"]{background:linear-gradient(135deg,#4FC3F7,#7C4DFF)}
+.dcard .de{font-size:70px;margin-bottom:4px;display:block;animation:defi-bounce .9s ease-in-out infinite alternate}
+@keyframes defi-bounce{from{transform:scale(1) translateY(0)}to{transform:scale(1.12) translateY(-6px)}}
+.dcard[data-cat="cardio"] .de{animation:defi-run .5s ease-in-out infinite alternate}
+@keyframes defi-run{from{transform:rotate(-8deg) scale(1)}to{transform:rotate(8deg) scale(1.1)}}
+.dcard[data-cat="gainage"] .de{animation:defi-shake .7s ease-in-out infinite alternate}
+@keyframes defi-shake{from{transform:scaleX(1)}to{transform:scaleX(1.15) scaleY(.92)}}
+.dcard[data-cat="respiration"] .de{animation:defi-breathe 3s ease-in-out infinite}
+@keyframes defi-breathe{0%,100%{transform:scale(1);opacity:.8}50%{transform:scale(1.25);opacity:1}}
+.df-catbadge{display:inline-block;background:rgba(255,255,255,.25);border-radius:20px;
+  padding:4px 12px;font-size:11px;font-weight:800;margin-bottom:10px;letter-spacing:.5px}
+.df-progbar{height:6px;background:rgba(255,255,255,.25);border-radius:3px;margin:12px 0 0;overflow:hidden}
+.df-progbar-inner{height:100%;background:#fff;border-radius:3px;width:0%;transition:width 1s linear}
 .dcard h2{font-size:20px;font-weight:900;margin-bottom:7px}
 .dcard p{font-size:14px;font-weight:600;line-height:1.6;opacity:.95}
 body.car .dcard p{font-size:17px}
@@ -1009,7 +1030,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 <!-- ADVENTURE MODE -->
 <div class="scr" id="scr-adventure">
 <div class="hdr">
-  <button class="hbk" onclick="stopAdventure()">✕</button>
+  <button class="hbk hbk-x" onclick="stopAdventure()"></button>
   <div class="htit" id="adv-title">🗺️ Mode Aventure</div>
   <div class="hsc" id="adv-score">⭐ 0</div>
 </div>
@@ -1023,7 +1044,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 <!-- MODULE LIST -->
 <div class="scr" id="scr-mod">
 <div class="hdr">
-  <button class="hbk" onclick="goHome()">←</button>
+  <button class="hbk" onclick="goHome()"></button>
   <div class="htit" id="mod-htit">Module</div>
   <div class="hsc" id="mod-hsc">⭐ 0</div>
 </div>
@@ -1038,7 +1059,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 <!-- EXERCISE -->
 <div class="scr" id="scr-ex">
 <div class="hdr">
-  <button class="hbk" onclick="backMod()">←</button>
+  <button class="hbk" onclick="backMod()"></button>
   <div class="htit" id="ex-htit">Exercice</div>
   <button class="htts" id="btn-tts" onclick="ttsRead()">🔊</button>
   <div class="hsc" id="ex-hsc">⭐ 0</div>
@@ -1050,7 +1071,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 <!-- DEFI -->
 <div class="scr" id="scr-defi">
 <div class="hdr">
-  <button class="hbk" onclick="backMod()">←</button>
+  <button class="hbk" onclick="backMod()"></button>
   <div class="htit" id="df-htit">Défi</div>
   <div class="hsc" id="df-hsc">⭐ 0</div>
 </div>
@@ -1069,7 +1090,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 <!-- ATELIERS -->
 <div class="scr" id="scr-ateliers">
 <div class="hdr">
-  <button class="hbk" onclick="goHome()">←</button>
+  <button class="hbk" onclick="goHome()"></button>
   <div class="htit">🎨 Ateliers</div>
 </div>
 <div class="sc" id="ateliers-c"></div>
@@ -1078,7 +1099,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 <!-- ATELIER DETAIL -->
 <div class="scr" id="scr-atelier-detail">
 <div class="hdr">
-  <button class="hbk" onclick="show('ateliers');renderAteliers()">←</button>
+  <button class="hbk" onclick="show('ateliers');renderAteliers()"></button>
   <div class="htit" id="atelier-htit">Atelier</div>
 </div>
 <div class="sc" id="atelier-detail-c"></div>
@@ -1087,7 +1108,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 <!-- VIDEO PLAYER -->
 <div class="scr" id="scr-vidplayer">
 <div class="hdr" style="background:#000;color:#fff;border-bottom:none">
-  <button class="hbk" onclick="closeVidPlayer()" style="color:#fff">←</button>
+  <button class="hbk" onclick="closeVidPlayer()" style="color:#fff"></button>
   <div class="htit" id="vid-htit" style="color:#fff">Vidéo</div>
 </div>
 <div id="vid-player-wrap" style="background:#000;width:100%;aspect-ratio:16/9"></div>
@@ -1106,7 +1127,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 <!-- PROFIL -->
 <div class="scr" id="scr-profil">
 <div class="hdr">
-  <button class="hbk" onclick="goHome()">←</button>
+  <button class="hbk" onclick="goHome()"></button>
   <div class="htit">Mon Profil</div>
 </div>
 <div class="sc" id="profil-c"></div>
@@ -1156,7 +1177,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 <!-- SCREEN JEUX -->
 <div class="scr" id="scr-jeux">
   <div class="hdr">
-    <button class="hbk" onclick="goHome()">←</button>
+    <button class="hbk" onclick="goHome()"></button>
     <span class="htit">🎮 Jeux</span>
     <span class="hsc" id="jeux-hsc">⭐ 0</span>
   </div>
@@ -1170,7 +1191,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 <!-- SCREEN GAME (individual game) -->
 <div class="scr" id="scr-game">
   <div class="hdr">
-    <button class="hbk" onclick="quitGame()">←</button>
+    <button class="hbk" onclick="quitGame()"></button>
     <span class="htit" id="game-title">Jeu</span>
     <span class="hsc" id="game-hsc">⭐ 0</span>
   </div>
@@ -1185,7 +1206,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 <!-- POLITESSE SCREEN -->
 <div class="scr" id="scr-politesse">
   <div class="hdr">
-    <button class="hbk" onclick="goHome()">←</button>
+    <button class="hbk" onclick="goHome()"></button>
     <div class="htit">🌸 Politesse & Savoir-vivre</div>
     <div class="hsc" id="pol-hsc">⭐ 0</div>
   </div>
@@ -1196,7 +1217,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 
 <div class="scr" id="scr-stats">
   <div class="hdr">
-    <button class="hbk" onclick="openParent()">←</button>
+    <button class="hbk" onclick="openParent()"></button>
     <div class="htit">📊 Statistiques</div>
   </div>
   <div class="sc" id="stats-content"></div>
@@ -1204,7 +1225,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 
 <div class="scr" id="scr-legal">
   <div class="hdr">
-    <button class="hbk" onclick="goHome()">←</button>
+    <button class="hbk" onclick="goHome()"></button>
     <div class="htit">📋 Légal</div>
   </div>
   <div style="display:flex;gap:0;padding:12px 14px 0;flex-shrink:0">
@@ -3054,13 +3075,22 @@ videos:[
 {id:"V13",titre:"Les pieuvres & céphalopodes",vid:"7YxsCCj5NC8",cat:"Animaux",dur:26,lang:"fr"},
 {id:"V14",titre:"Bicarbonate + vinaigre : volcan maison",vid:"zgxlvY51mm8",cat:"Chimie",dur:4,lang:"fr"},
 {id:"V15",titre:"Manchots et pingouins",vid:"o7-hFWftQw0",cat:"Animaux",dur:5,lang:"fr"},
-// Vidéos en anglais
-{id:"V16",titre:"How Do Volcanoes Work?",vid:"lAmqsmjFDpk",cat:"Science",dur:4,lang:"en"},
-{id:"V17",titre:"Why is the Sky Blue?",vid:"XBHZkek8OSU",cat:"Science",dur:4,lang:"en"},
+// Vidéos en anglais — sciences & nature
+{id:"V16",titre:"How Do Volcanoes Work?",vid:"VNGUdObDoLk",cat:"Science",dur:4,lang:"en"},
+{id:"V17",titre:"Why is the Sky Blue?",vid:"bSMPAXYF5uI",cat:"Science",dur:3,lang:"en"},
 {id:"V18",titre:"Animal Adaptation",vid:"FSfagRojHzc",cat:"Animaux",dur:5,lang:"en"},
 {id:"V19",titre:"The Water Cycle",vid:"ncORPosDrjI",cat:"Science",dur:4,lang:"en"},
 {id:"V20",titre:"Exploring the Solar System",vid:"libKVRa01L8",cat:"Espace",dur:5,lang:"en"},
-{id:"V21",titre:"What are Insects?",vid:"ln3vl5LeVgI",cat:"Animaux",dur:4,lang:"en"}
+{id:"V21",titre:"Amazing Animal Facts for Kids",vid:"lDGDSMTYOdE",cat:"Animaux",dur:4,lang:"en"},
+// Chansons pour apprendre l'anglais
+{id:"V22",titre:"ABC Song — Learn the Alphabet",vid:"75p-N9YKqNo",cat:"Chansons",dur:2,lang:"en"},
+{id:"V23",titre:"Phonics Song — A to Z Sounds",vid:"BELlZKpi1Zs",cat:"Chansons",dur:3,lang:"en"},
+{id:"V24",titre:"Colors Song for Kids",vid:"KTpHnHhFI1o",cat:"Chansons",dur:2,lang:"en"},
+{id:"V25",titre:"Numbers 1–20 Song",vid:"D0Ajq682yrA",cat:"Chansons",dur:3,lang:"en"},
+{id:"V26",titre:"Days of the Week Song",vid:"mXMofxtDPUQ",cat:"Chansons",dur:2,lang:"en"},
+{id:"V27",titre:"Body Parts Song for Kids",vid:"0wwLxOJTHss",cat:"Chansons",dur:2,lang:"en"},
+{id:"V28",titre:"Head Shoulders Knees and Toes",vid:"h4eueDYPTIg",cat:"Chansons",dur:2,lang:"en"},
+{id:"V29",titre:"Animals Sound Song",vid:"42LhBqFjyoc",cat:"Chansons",dur:3,lang:"en"}
 ],
 ateliers:[
 {id:"AT-001",nom:"Avion en papier ✈️",cat:"Origami",age:"4-12",dur:10,diff:1,
@@ -4555,7 +4585,8 @@ function getVideoSubcats(){
     {k:'A',l:'🐘 Animaux',d:vids.filter(v=>v.cat==='Animaux')},
     {k:'S',l:'🔬 Science',d:vids.filter(v=>v.cat==='Science')},
     {k:'E',l:'🚀 Espace',d:vids.filter(v=>v.cat==='Espace')},
-    {k:'C',l:'⚗️ Chimie',d:vids.filter(v=>v.cat==='Chimie')}
+    {k:'C',l:'⚗️ Chimie',d:vids.filter(v=>v.cat==='Chimie')},
+    {k:'M',l:'🎵 Chansons',d:vids.filter(v=>v.cat==='Chansons')}
   ];
 }
 function renderLangTabs(){
@@ -4594,9 +4625,9 @@ const MCFG={
       return [
         {k:'df',    l:'🏃 Tout',        d:all},
         {k:'cardio',l:'❤️ Cardio',       d:cardio},
-        {k:'gain',  l:'💪 Gainage',      d:gainage,  car:true},
-        {k:'str',   l:'🧘 Stretching',   d:stretch,  car:true},
-        {k:'respi', l:'🌬️ Respiration',  d:respi,    car:true},
+        {k:'gain',  l:'💪 Gainage',      d:gainage},
+        {k:'str',   l:'🧘 Stretching',   d:stretch},
+        {k:'respi', l:'🌬️ Respiration',  d:respi},
       ];
     }},
   langues:{emoji:'🌍',title:'Langues',desc:'Apprends les langues du monde !',bg:'linear-gradient(135deg,#FF9F1C,#FF6B35)',
@@ -5183,12 +5214,17 @@ function startDefi(item,idx,list){
   document.getElementById('df-hsc').textContent='⭐ '+(P()?P().score:0);
   const dur=item.dur||30;let rem=dur,running=false;
   const c=document.getElementById('df-c');
+  const catInfo={cardio:{l:'❤️ Cardio',e:'🏃'},gainage:{l:'💪 Gainage',e:'🏋️'},stretching:{l:'🧘 Stretching',e:'🤸'},respiration:{l:'🌬️ Respiration',e:'🫁'}};
+  const ci=catInfo[item.cat]||{l:'💪 Défi',e:''};
+  const emoji=item.nom.match(/\p{Emoji}/u)?.[0]||ci.e||'💪';
   c.innerHTML=`
-    <div class="dcard">
-      <div class="de">${item.nom.match(/\p{Emoji}/u)?.[0]||'💪'}</div>
+    <div class="dcard" data-cat="${item.cat||''}">
+      <div class="df-catbadge">${ci.l}</div>
+      <div class="de">${emoji}</div>
       <h2>${item.nom.replace(/\p{Emoji}/gu,'').trim()}</h2>
       <p>${item.consigne}</p>
       <div class="tring" id="df-ring">${dur}s</div>
+      <div class="df-progbar"><div class="df-progbar-inner" id="df-prog"></div></div>
       <button class="dstart" id="df-st">▶ Commencer !</button>
       <button class="ddone" id="df-dn">✅ J'ai réussi !</button>
     </div>
@@ -5207,8 +5243,10 @@ function startDefi(item,idx,list){
     if(APP.car)ttsSpeak(item.consigne);
     APP.timer=setInterval(()=>{rem--;
       const r=document.getElementById('df-ring');if(r)r.textContent=rem+'s';
+      const pg=document.getElementById('df-prog');if(pg)pg.style.width=((dur-rem)/dur*100)+'%';
       if(rem<=0){clearInterval(APP.timer);APP.timer=null;
         if(r){r.textContent='🎉';r.classList.remove('run');}
+        if(pg)pg.style.width='100%';
         const dn=document.getElementById('df-dn');if(dn)dn.style.display='block';
         if(APP.car)ttsSpeak('Temps écoulé ! Appuie sur J\'ai réussi si tu l\'as fait !');
       }},1000);
