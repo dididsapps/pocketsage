@@ -4560,6 +4560,41 @@ function ageNum(a){return a==='18+'?18:parseInt(a)||6;}
 function levelLabel(a){const n=ageNum(a);
   if(n<=6)return'Explorateur 🌱';if(n<=9)return'Aventurier 🗺️';
   if(n<=12)return'Champion 🏆';if(n<=15)return'Expert 🔬';return'Maître 🎓';}
+
+// ── Filtrage par âge ──────────────────────────────────────────
+// Mappe un âge numérique vers les classes scolaires autorisées
+function _ageToClasses(age){
+  // GS=5-6, CP=6-7, CE1=7-8, CE2=8-9, CM1=9-10, CM2=10-11, 6ème=11-12, 5ème=12-13, 4ème=13-14, 3ème=14-15, Lycée=15+
+  const n = typeof age === 'string' ? ageNum(age) : (age||6);
+  if(n <= 5)  return ['GS'];
+  if(n <= 6)  return ['GS','CP'];
+  if(n <= 7)  return ['GS','CP','CE1'];
+  if(n <= 8)  return ['GS','CP','CE1','CE2'];
+  if(n <= 9)  return ['GS','CP','CE1','CE2','CM1'];
+  if(n <= 10) return ['GS','CP','CE1','CE2','CM1','CM2'];
+  if(n <= 11) return ['GS','CP','CE1','CE2','CM1','CM2','6ème'];
+  if(n <= 12) return ['GS','CP','CE1','CE2','CM1','CM2','6ème','5ème'];
+  if(n <= 13) return ['GS','CP','CE1','CE2','CM1','CM2','6ème','5ème','4ème'];
+  if(n <= 14) return ['GS','CP','CE1','CE2','CM1','CM2','6ème','5ème','4ème','3ème'];
+  return ['GS','CP','CE1','CE2','CM1','CM2','6ème','5ème','4ème','3ème','Lycée'];
+}
+// Filtre un tableau d'items selon l'âge du profil (utilise item.classe ou item.age)
+function filterByAge(items, profileAge){
+  if(!items || !items.length) return items;
+  const n = typeof profileAge === 'string' ? ageNum(profileAge) : (profileAge||6);
+  const allowed = _ageToClasses(n);
+  // Items avec classe : filtrer strictement
+  // Items avec age range (ex: "4-6") : vérifier si l'âge du profil est dans la plage
+  return items.filter(item => {
+    if(item.classe) return allowed.includes(item.classe);
+    if(item.age) {
+      const parts = String(item.age).split('-').map(Number);
+      if(parts.length === 2) return n >= parts[0] && n <= parts[1];
+      if(parts.length === 1) return n >= parts[0];
+    }
+    return true; // pas de restriction d'âge → toujours inclus
+  });
+}
 // HERO_GRADS déplacé en haut (voir déclaration avant buildHome)
 // HOME_MODS est déclaré plus haut (avant initSetup IIFE)
 
@@ -4851,13 +4886,14 @@ function renderList(items,mod){
   if(mod==='recompenses'){renderVideos(items);return;}
   if(mod==='defis'){renderDefis(items);return;}
   const p=P();
+  items=filterByAge(items, p?.age);
   items.forEach((item,idx)=>{
     const done=p&&p.done&&p.done[item.id];
     const d=document.createElement('div');d.className='ecard'+(done?' done':'');
     const diff=item.diff||1;
     const t2=item.enonce||item.situation||item.nom||item.titre||'Exercice';
     const short=t2.length>58?t2.slice(0,55)+'…':t2;
-    d.innerHTML=`<div class="ecl"><div class="ecn">${item.type||''} · ${item.age||''} ans</div><div class="ect">${short}</div><div class="ecb"><span class="bd bd${diff}">${['','Facile','Intermédiaire','Avancé'][diff]}</span></div></div><div>${done?'✅':'▶️'}</div>`;
+    d.innerHTML=`<div class="ecl"><div class="ecn">${item.type||item.cat||''} · ${item.age?item.age+' ans':item.classe||''}</div><div class="ect">${short}</div><div class="ecb"><span class="bd bd${diff}">${['','Facile','Intermédiaire','Avancé'][diff]}</span></div></div><div>${done?'✅':'▶️'}</div>`;
     d.onclick=()=>{sndTap();startEx(item,mod,idx,items);};
     el.appendChild(d);
   });
@@ -5828,14 +5864,14 @@ function celebrate(){
 
 // Types d'étapes disponibles avec leur poids et couleur
 const ADV_TYPES = [
-  {id:'maths',    label:'Maths',      emoji:'🔢', color:'#FF6B6B', bg:'linear-gradient(135deg,#FF6B6B,#FF9999)', pool:()=>DATA.maths},
-  {id:'logique',  label:'Logique',    emoji:'🧠', color:'#6C63FF', bg:'linear-gradient(135deg,#6C63FF,#9B93FF)', pool:()=>DATA.suites},
-  {id:'langue',   label:'Langues',    emoji:'🌍', color:'#FF9F1C', bg:'linear-gradient(135deg,#FF9F1C,#FFD166)', pool:()=>{const p=P();const langs=(p&&p.langs&&p.langs.length)?p.langs:['EN'];const all=[];langs.forEach(l=>{if(DATA.langues&&DATA.langues[l])all.push(...DATA.langues[l]);});return all.length?all:(DATA.langues.EN||[]);}},
-  {id:'sciences', label:'Sciences',   emoji:'🔬', color:'#26C6DA', bg:'linear-gradient(135deg,#26C6DA,#0097A7)', pool:()=>DATA.sciences},
-  {id:'histoire', label:'Histoire',   emoji:'🏛️', color:'#8B6914', bg:'linear-gradient(135deg,#C9A227,#8B6914)', pool:()=>DATA.histoire},
-  {id:'francais', label:'Langue Maternelle 📚', emoji:'📚', color:'#E91E8C', bg:'linear-gradient(135deg,#E91E8C,#AD1457)', pool:()=>DATA.francais},
-  {id:'geo',      label:'Géographie', emoji:'🌍', color:'#2E7D32', bg:'linear-gradient(135deg,#4CAF50,#2E7D32)', pool:()=>DATA.geo},
-  {id:'politesse',label:'Politesse',  emoji:'🤝', color:'#06D6A0', bg:'linear-gradient(135deg,#06D6A0,#00B884)', pool:()=>DATA.politesse},
+  {id:'maths',    label:'Maths',      emoji:'🔢', color:'#FF6B6B', bg:'linear-gradient(135deg,#FF6B6B,#FF9999)', pool:()=>filterByAge(DATA.maths, P()?.age)},
+  {id:'logique',  label:'Logique',    emoji:'🧠', color:'#6C63FF', bg:'linear-gradient(135deg,#6C63FF,#9B93FF)', pool:()=>filterByAge(DATA.suites, P()?.age)},
+  {id:'langue',   label:'Langues',    emoji:'🌍', color:'#FF9F1C', bg:'linear-gradient(135deg,#FF9F1C,#FFD166)', pool:()=>{const p=P();const langs=(p&&p.langs&&p.langs.length)?p.langs:['EN'];const all=[];langs.forEach(l=>{if(DATA.langues&&DATA.langues[l])all.push(...DATA.langues[l]);});return filterByAge(all.length?all:(DATA.langues.EN||[]), p?.age);}},
+  {id:'sciences', label:'Sciences',   emoji:'🔬', color:'#26C6DA', bg:'linear-gradient(135deg,#26C6DA,#0097A7)', pool:()=>filterByAge(DATA.sciences, P()?.age)},
+  {id:'histoire', label:'Histoire',   emoji:'🏛️', color:'#8B6914', bg:'linear-gradient(135deg,#C9A227,#8B6914)', pool:()=>filterByAge(DATA.histoire, P()?.age)},
+  {id:'francais', label:'Langue Maternelle 📚', emoji:'📚', color:'#E91E8C', bg:'linear-gradient(135deg,#E91E8C,#AD1457)', pool:()=>filterByAge(DATA.francais, P()?.age)},
+  {id:'geo',      label:'Géographie', emoji:'🌍', color:'#2E7D32', bg:'linear-gradient(135deg,#4CAF50,#2E7D32)', pool:()=>filterByAge(DATA.geo, P()?.age)},
+  {id:'politesse',label:'Politesse',  emoji:'🤝', color:'#06D6A0', bg:'linear-gradient(135deg,#06D6A0,#00B884)', pool:()=>filterByAge(DATA.politesse, P()?.age)},
   {id:'defi',     label:'Défi',       emoji:'🏃', color:'#FFD166', bg:'linear-gradient(135deg,#FFD166,#FFA500)', pool:()=>DATA.defis,   isDefi:true},
   {id:'video',    label:'Vidéo 🎬',   emoji:'🎬', color:'#E040FB', bg:'linear-gradient(135deg,#E040FB,#AB47BC)', pool:()=>DATA.videos,  isVideo:true},
   {id:'repos',    label:'Pause 🌿',   emoji:'🌿', color:'#1a1a3e', bg:'linear-gradient(135deg,#090920,#1a3a6e)', pool:()=>[...DATA.histoires.filter(h=>h.court),...DATA.meditation], isRest:true},
@@ -6260,15 +6296,26 @@ function renderAdvVideo(c, typeCfg){
     <div style="font-size:16px;font-weight:900;margin-bottom:4px">Pause Vidéo !</div>
     <div style="font-size:13px;opacity:.85">Bien mérité après ${ADV.correct} bonnes réponses !</div>`;
   c.appendChild(card);
-  const vc=document.createElement('a');
-  vc.className='adv-video-card';vc.href=v.url;vc.target='_blank';
-  vc.innerHTML=`<div style="width:52px;height:52px;border-radius:12px;background:#F0E0FF;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0">${emojis[v.cat]||'🎬'}</div>
-    <div style="flex:1"><div style="font-size:10px;font-weight:700;color:#AB47BC">${v.cat}</div>
+  // Titre + meta de la vidéo
+  const vmeta=document.createElement('div');
+  vmeta.style.cssText='display:flex;align-items:center;gap:12px;margin-bottom:10px';
+  vmeta.innerHTML=`<div style="width:44px;height:44px;border-radius:10px;background:#F0E0FF;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0">${emojis[v.cat]||'🎬'}</div>
+    <div style="flex:1;text-align:left"><div style="font-size:10px;font-weight:700;color:#CE93D8">${v.cat}</div>
     <div style="font-size:14px;font-weight:800;margin:2px 0">${v.titre}</div>
-    <div style="font-size:11px;color:var(--tl)">⏱ ${v.dur} min</div></div>
-    <div style="font-size:22px">▶</div>`;
-  vc.onclick=()=>{const p=P();if(p){p.done[v.id]=true;saveApp();}};
-  c.appendChild(vc);
+    <div style="font-size:11px;opacity:.75">⏱ ${v.dur} min</div></div>`;
+  c.appendChild(vmeta);
+  // Iframe YouTube embarquée
+  const vwrap=document.createElement('div');
+  vwrap.style.cssText='position:relative;width:100%;padding-bottom:56.25%;border-radius:14px;overflow:hidden;margin-bottom:10px;background:#000';
+  const vif=document.createElement('iframe');
+  vif.src=`https://www.youtube-nocookie.com/embed/${v.vid}?rel=0&modestbranding=1`;
+  vif.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:none';
+  vif.setAttribute('allow','accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture');
+  vif.setAttribute('allowfullscreen','');
+  vwrap.appendChild(vif);
+  c.appendChild(vwrap);
+  // Marquer comme vue
+  const p=P();if(p){p.done[v.id]=true;saveApp();}
   const nb=document.createElement('button');nb.className='nxtbtn show';nb.textContent='Continuer l\'aventure →';
   nb.onclick=()=>advNextStep();c.appendChild(nb);
 }
