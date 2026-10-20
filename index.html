@@ -5560,12 +5560,12 @@ function buildAdventureSequence(){
   // 14+    : 16 QCM + 3 histoires + 2 vidéos → ~23 étapes
   // span = QCM entre chaque pause, totalQcm = total QCM de la session
   const ageConfig = [
-    [4,  {span:3, totalQcm:6,  videos:1, defis:1}],
-    [6,  {span:4, totalQcm:8,  videos:1, defis:1}],
-    [8,  {span:5, totalQcm:10, videos:1, defis:1}],
-    [10, {span:6, totalQcm:12, videos:1, defis:2}],
-    [12, {span:7, totalQcm:14, videos:2, defis:2}],
-    [14, {span:8, totalQcm:16, videos:2, defis:2}],
+    [4,  {span:3, totalQcm:9,  videos:1, defis:1}],
+    [6,  {span:4, totalQcm:12, videos:1, defis:2}],
+    [8,  {span:4, totalQcm:16, videos:2, defis:2}],
+    [10, {span:5, totalQcm:20, videos:2, defis:3}],
+    [12, {span:5, totalQcm:25, videos:3, defis:3}],
+    [14, {span:5, totalQcm:30, videos:3, defis:3}],
   ];
   let cfg = ageConfig[0][1];
   for(const [minAge,c] of ageConfig){ if(age>=minAge) cfg=c; }
@@ -5904,6 +5904,19 @@ function advHandleAnswer(ok, btn, container, item, c, isPol){
 }
 
 function renderAdvVideo(c, typeCfg){
+  // Hors ligne → zapper la vidéo automatiquement
+  if(!navigator.onLine){
+    const offCard=document.createElement('div');
+    offCard.style.cssText='background:linear-gradient(135deg,#607D8B,#455A64);border-radius:20px;padding:24px;text-align:center;color:#fff;margin-bottom:14px';
+    offCard.innerHTML=`<div style="font-size:48px;margin-bottom:8px">📵</div>
+      <div style="font-size:16px;font-weight:900;margin-bottom:6px">Pas de connexion</div>
+      <div style="font-size:13px;opacity:.85">Les vidéos nécessitent Internet.<br>Cette étape est zappée !</div>`;
+    c.appendChild(offCard);
+    const nb=document.createElement('button');nb.className='nxtbtn show';nb.textContent='Continuer l\'aventure →';
+    nb.onclick=()=>advNextStep();c.appendChild(nb);
+    if(APP.car)setTimeout(()=>ttsSpeak('Pas de connexion Internet, vidéo zappée.','fr-FR'),300);
+    return;
+  }
   // Choisir une vidéo au hasard
   const vids=shuffle([...DATA.videos]);
   const v=vids[0];
