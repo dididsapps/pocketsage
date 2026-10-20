@@ -263,6 +263,8 @@ body.car .citem{font-size:18px;padding:18px}
 .dcard[data-cat="respiration"]{background:linear-gradient(135deg,#4FC3F7,#7C4DFF)}
 .dcard .de{font-size:70px;margin-bottom:4px;display:block;animation:defi-bounce .9s ease-in-out infinite alternate}
 @keyframes defi-bounce{from{transform:scale(1) translateY(0)}to{transform:scale(1.12) translateY(-6px)}}
+@keyframes slideUp{from{transform:translateY(100%);opacity:0}to{transform:translateY(0);opacity:1}}
+.coach-age-btn:active{transform:scale(.96)!important}
 .dcard[data-cat="cardio"] .de{animation:defi-run .5s ease-in-out infinite alternate}
 @keyframes defi-run{from{transform:rotate(-8deg) scale(1)}to{transform:rotate(8deg) scale(1.1)}}
 .dcard[data-cat="gainage"] .de{animation:defi-shake .7s ease-in-out infinite alternate}
@@ -1052,6 +1054,16 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <div class="mod-ban" id="mod-ban"><div class="me" id="mod-e">📚</div><h2 id="mod-t">Module</h2><p id="mod-d">Desc</p></div>
   <div class="stabs" id="video-lang-tabs" style="display:none;margin-bottom:8px"></div>
   <div class="stabs" id="stabs"></div>
+  <div id="coach-btn-wrap" style="display:none;padding:0 14px 14px">
+    <button id="coach-start-btn" onclick="openCoachModal()" style="width:100%;background:linear-gradient(135deg,#FF6B6B,#FFD166);border:none;border-radius:20px;padding:18px 20px;display:flex;align-items:center;gap:14px;cursor:pointer;font-family:var(--f);box-shadow:0 4px 18px rgba(255,107,107,.35);touch-action:manipulation">
+      <span style="font-size:36px">🏅</span>
+      <div style="text-align:left;flex:1">
+        <div style="font-size:16px;font-weight:900;color:#fff">Mode Coach Sportif</div>
+        <div style="font-size:12px;color:rgba(255,255,255,.85);margin-top:2px">Séance complète · Exercices dans le bon ordre · Guidé par ta voix</div>
+      </div>
+      <span style="font-size:22px">▶</span>
+    </button>
+  </div>
   <div class="elist" id="elist"></div>
 </div>
 </div>
@@ -1066,6 +1078,56 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 </div>
 <div class="epb"><div class="epbf" id="ex-prog" style="width:0%"></div></div>
 <div class="exc" id="ex-c"></div>
+</div>
+
+<!-- COACH MODAL -->
+<div id="coach-modal-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9000;align-items:flex-end;justify-content:center" onclick="if(event.target===this)closeCoachModal()">
+  <div style="background:var(--w);border-radius:28px 28px 0 0;padding:24px 20px 40px;width:100%;max-width:480px;box-shadow:0 -8px 40px rgba(0,0,0,.25);animation:slideUp .28s ease">
+    <div style="width:36px;height:4px;background:var(--bg);border-radius:2px;margin:0 auto 20px"></div>
+    <div style="text-align:center;margin-bottom:20px">
+      <div style="font-size:52px">🏅</div>
+      <div style="font-size:20px;font-weight:900;margin-top:6px">Mode Coach Sportif</div>
+      <div style="font-size:13px;color:var(--tl);margin-top:4px;line-height:1.5">Une séance complète structurée comme un pro :<br>échauffement → cardio → gainage → stretching → récupération</div>
+    </div>
+    <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--tl);margin-bottom:10px">Pour qui est cette séance ?</div>
+    <div id="coach-age-btns" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px">
+      <button class="coach-age-btn" data-age="5" onclick="selectCoachAge(this)" style="background:linear-gradient(135deg,#ADE8F4,#48CAE4);border:none;border-radius:16px;padding:14px;cursor:pointer;font-family:var(--f)">
+        <div style="font-size:28px">🐣</div>
+        <div style="font-size:14px;font-weight:900;color:#023E8A;margin-top:4px">4 – 6 ans</div>
+        <div style="font-size:10px;color:#0077B6;margin-top:2px">8 exercices · 20s chacun</div>
+      </button>
+      <button class="coach-age-btn" data-age="9" onclick="selectCoachAge(this)" style="background:linear-gradient(135deg,#B7E4C7,#52B788);border:none;border-radius:16px;padding:14px;cursor:pointer;font-family:var(--f)">
+        <div style="font-size:28px">🐸</div>
+        <div style="font-size:14px;font-weight:900;color:#1B4332;margin-top:4px">7 – 10 ans</div>
+        <div style="font-size:10px;color:#2D6A4F;margin-top:2px">10 exercices · 30s chacun</div>
+      </button>
+      <button class="coach-age-btn" data-age="13" onclick="selectCoachAge(this)" style="background:linear-gradient(135deg,#FFD166,#FFA500);border:none;border-radius:16px;padding:14px;cursor:pointer;font-family:var(--f)">
+        <div style="font-size:28px">🦅</div>
+        <div style="font-size:14px;font-weight:900;color:#5C3100;margin-top:4px">11 – 14 ans</div>
+        <div style="font-size:10px;color:#7B4400;margin-top:2px">12 exercices · 35s chacun</div>
+      </button>
+      <button class="coach-age-btn" data-age="18" onclick="selectCoachAge(this)" style="background:linear-gradient(135deg,#FF6B6B,#C9184A);border:none;border-radius:16px;padding:14px;cursor:pointer;font-family:var(--f)">
+        <div style="font-size:28px">💪</div>
+        <div style="font-size:14px;font-weight:900;color:#fff;margin-top:4px">Adulte</div>
+        <div style="font-size:10px;color:rgba(255,255,255,.8);margin-top:2px">14 exercices · 40s chacun</div>
+      </button>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;background:var(--vl);border-radius:14px;padding:12px 14px;margin-bottom:18px">
+      <span style="font-size:22px">🔊</span>
+      <div style="flex:1">
+        <div style="font-size:13px;font-weight:800">Coaching vocal</div>
+        <div style="font-size:11px;color:var(--tl);margin-top:1px">Le coach annonce chaque exercice et t'encourage</div>
+      </div>
+      <label style="position:relative;width:44px;height:24px;flex-shrink:0">
+        <input type="checkbox" id="coach-voice-toggle" checked style="opacity:0;width:0;height:0">
+        <span onclick="this.previousElementSibling.checked=!this.previousElementSibling.checked" style="position:absolute;inset:0;background:var(--v);border-radius:12px;cursor:pointer;transition:.3s"></span>
+      </label>
+    </div>
+    <button id="coach-launch-btn" onclick="launchCoachSession()" style="display:none;width:100%;background:linear-gradient(135deg,#FF6B6B,#C9184A);border:none;border-radius:18px;padding:18px;font-family:var(--f);font-size:16px;font-weight:900;color:#fff;cursor:pointer;box-shadow:0 4px 18px rgba(201,24,74,.4);touch-action:manipulation">
+      🏅 Lancer la séance !
+    </button>
+    <button onclick="closeCoachModal()" style="width:100%;margin-top:10px;background:none;border:none;font-family:var(--f);font-size:14px;font-weight:700;color:var(--tl);cursor:pointer;padding:10px">Annuler</button>
+  </div>
 </div>
 
 <!-- DEFI -->
@@ -4746,6 +4808,9 @@ function openMod(mod){
     if(!subs||!subs.length){toast('Aucun contenu pour '+cfg.title,'err');return;}
     try{renderTabs(subs,mod);}catch(e){console.error('renderTabs:',e);}
     try{renderList(subs[0].d,mod);}catch(e){console.error('renderList:',e);}
+    // Bouton Mode Coach — uniquement pour les défis
+    const coachBtnWrap=document.getElementById('coach-btn-wrap');
+    if(coachBtnWrap) coachBtnWrap.style.display=(mod==='defis')?'block':'none';
     show('mod');
     document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));
     const _modToNav={recompenses:'videos',langues:'langues',savoirs:'savoirs',logique:'jeux',politesse:'politesse',defis:'jeux'};
@@ -5258,6 +5323,265 @@ function startDefi(item,idx,list){
   document.getElementById('df-nx').onclick=()=>{clearTimer();if(idx+1<list.length)startDefi(list[idx+1],idx+1,list);else backMod();};
   show('defi');
   if(APP.car)setTimeout(()=>ttsSpeak(item.nom.replace(/\p{Emoji}/gu,'').trim()+'. '+item.consigne),400);
+}
+
+// ════════════════════════════════════════════
+// 🏅 MODE COACH SPORTIF
+// ════════════════════════════════════════════
+
+let COACH = { age: null, seq: [], stepIdx: 0, voice: true, timer: null };
+
+// Structure séance par âge — règles scientifiques :
+// 1) Toujours commencer par cardio léger (échauffement)
+// 2) Jamais 2x respiration de suite
+// 3) Jamais gainage juste après respiration
+// 4) Toujours finir par respiration (retour au calme)
+// 5) Alterner cardio/gainage pour éviter l'épuisement localisé
+const COACH_PLANS = {
+  5:  { // 4-6 ans
+    dur: 20,
+    pattern: ['cardio','cardio','gainage','cardio','stretching','stretching','gainage','respiration'],
+    label:'4-6 ans', emoji:'🐣'
+  },
+  9:  { // 7-10 ans
+    dur: 30,
+    pattern: ['cardio','cardio','gainage','cardio','gainage','cardio','stretching','stretching','gainage','respiration'],
+    label:'7-10 ans', emoji:'🐸'
+  },
+  13: { // 11-14 ans
+    dur: 35,
+    pattern: ['cardio','cardio','cardio','gainage','gainage','cardio','cardio','stretching','stretching','gainage','stretching','respiration'],
+    label:'11-14 ans', emoji:'🦅'
+  },
+  18: { // Adulte
+    dur: 40,
+    pattern: ['cardio','cardio','cardio','gainage','gainage','gainage','cardio','cardio','stretching','stretching','gainage','gainage','stretching','respiration'],
+    label:'Adulte', emoji:'💪'
+  }
+};
+
+const COACH_PHASE_NAMES = {
+  cardio:      ['🔥 Échauffement','🏃 Cardio','💨 Interval','🔥 Boost cardio','⚡ Sprint'],
+  gainage:     ['💪 Gainage','🧱 Core','🏋️ Renforcement','🔩 Stabilisation'],
+  stretching:  ['🧘 Étirement','🌿 Souplesse','🌸 Flexibilité'],
+  respiration: ['🌬️ Récupération','🫁 Respiration','🌊 Retour au calme'],
+};
+function _coachPhaseLabel(cat, idx){
+  const arr=COACH_PHASE_NAMES[cat]||[cat];
+  return arr[idx % arr.length];
+}
+
+// Messages d'encouragement vocaux entre exercices
+const COACH_MSGS = {
+  cardio:['Allez, on active le cardio ! Tu peux le faire !','C\'est parti pour booster ton cœur !','Cardio time ! Lève-toi et bouge !','Encore un effort ! Ton corps te remerciera !'],
+  gainage:['Place au gainage ! Tiens bon, c\'est pour les abdos !','Renforce ton core ! Respire et tiens la position.','Gainage ! C\'est là que les champions sont faits !'],
+  stretching:['Maintenant on étire en douceur. Respire profondément.','Étirements ! Prends ton temps, ne force pas.','On assouplit les muscles. Excellent travail jusqu\'ici !'],
+  respiration:['Super travail aujourd\'hui ! Maintenant on récupère.','Dernière étape : la respiration. Tu l\'as mérité !','Respiration finale. Détends-toi et savoure l\'effort.'],
+};
+function _coachMsg(cat){ const a=COACH_MSGS[cat]||['C\'est parti !'];return a[Math.floor(Math.random()*a.length)]; }
+
+function openCoachModal(){
+  sndTap();
+  const overlay=document.getElementById('coach-modal-overlay');
+  if(overlay){ overlay.style.display='flex'; COACH.age=null;
+    document.querySelectorAll('.coach-age-btn').forEach(b=>b.style.outline='none');
+    document.getElementById('coach-launch-btn').style.display='none';
+  }
+}
+function closeCoachModal(){
+  const overlay=document.getElementById('coach-modal-overlay');
+  if(overlay)overlay.style.display='none';
+}
+function selectCoachAge(btn){
+  sndTap();
+  document.querySelectorAll('.coach-age-btn').forEach(b=>{b.style.outline='none';b.style.transform='scale(1)';});
+  btn.style.outline='3px solid var(--v)';btn.style.transform='scale(1.03)';
+  COACH.age=parseInt(btn.dataset.age);
+  document.getElementById('coach-launch-btn').style.display='block';
+}
+
+function buildCoachSequence(age){
+  // Trouver le plan le plus adapté
+  const keys=[5,9,13,18];
+  let planKey=keys[0];
+  for(const k of keys){ if(age>=k) planKey=k; }
+  const plan=COACH_PLANS[planKey];
+  const all=DATA.defis;
+
+  // Pool par catégorie, shufflé
+  const pools={};
+  ['cardio','gainage','stretching','respiration'].forEach(cat=>{
+    pools[cat]=shuffle(all.filter(d=>d.cat===cat));
+  });
+
+  // Compter l'usage par catégorie
+  const usageCount={cardio:0,gainage:0,stretching:0,respiration:0};
+
+  const seq=[];
+  for(const cat of plan.pattern){
+    const pool=pools[cat];
+    if(!pool||!pool.length) continue;
+    // Cyclique si plus d'items
+    const idx=usageCount[cat]%pool.length;
+    const item={...pool[idx]};
+    item._coachDur=plan.dur; // Override durée pour uniformité
+    item._phase=_coachPhaseLabel(cat, usageCount[cat]);
+    item._isCoach=true;
+    seq.push(item);
+    usageCount[cat]++;
+  }
+  return { seq, plan };
+}
+
+function launchCoachSession(){
+  sndTap();
+  if(!COACH.age){ toast('Choisis un âge !','info'); return; }
+  COACH.voice = document.getElementById('coach-voice-toggle')?.checked !== false;
+  const {seq, plan} = buildCoachSequence(COACH.age);
+  COACH.seq = seq;
+  COACH.stepIdx = 0;
+  COACH.plan = plan;
+  closeCoachModal();
+  // Annonce départ
+  if(COACH.voice){
+    const intro=`Séance pour ${plan.label} ! ${plan.pattern.length} exercices. Prépare-toi !`;
+    ttsSpeak(intro,'fr-FR');
+  }
+  setTimeout(()=>startCoachStep(0), COACH.voice?2200:200);
+}
+
+function startCoachStep(idx){
+  if(idx>=COACH.seq.length){ endCoachSession(); return; }
+  COACH.stepIdx=idx;
+  const item=COACH.seq[idx];
+  const total=COACH.seq.length;
+
+  // Message coach vocal avant l'exercice
+  if(COACH.voice && idx>0){
+    const msg=_coachMsg(item.cat);
+    const txt=`${item._phase}. ${msg} ${item.nom.replace(/\p{Emoji}/gu,'').trim()} : ${item.consigne}`;
+    ttsSpeak(txt,'fr-FR');
+    setTimeout(()=>renderCoachStep(item, idx, total), 2800);
+  } else if(COACH.voice && idx===0){
+    const txt=`Premier exercice : ${item.nom.replace(/\p{Emoji}/gu,'').trim()} ! ${item.consigne}`;
+    ttsSpeak(txt,'fr-FR');
+    setTimeout(()=>renderCoachStep(item, idx, total), 2200);
+  } else {
+    renderCoachStep(item, idx, total);
+  }
+}
+
+function renderCoachStep(item, stepNum, totalSteps){
+  clearInterval(COACH.timer); COACH.timer=null;
+  APP.curEx={item,mod:'defis',idx:stepNum,list:COACH.seq};
+  const dur=item._coachDur||item.dur||30;
+  let rem=dur, running=false;
+
+  const catInfo={cardio:{l:'❤️ Cardio',e:'🏃'},gainage:{l:'💪 Gainage',e:'🏋️'},stretching:{l:'🧘 Stretching',e:'🤸'},respiration:{l:'🌬️ Respiration',e:'🫁'}};
+  const ci=catInfo[item.cat]||{l:'💪 Défi',e:''};
+  const emoji=item.nom.match(/\p{Emoji}/u)?.[0]||ci.e||'💪';
+
+  // Couleur de phase
+  const phaseBg={cardio:'linear-gradient(135deg,#FF6B6B,#FF9F1C)',gainage:'linear-gradient(135deg,#6C63FF,#A855F7)',stretching:'linear-gradient(135deg,#06D6A0,#0EA5E9)',respiration:'linear-gradient(135deg,#4FC3F7,#7C4DFF)'}[item.cat]||'linear-gradient(135deg,#666,#999)';
+
+  document.getElementById('df-htit').textContent=`🏅 Coach · ${stepNum+1}/${totalSteps}`;
+  document.getElementById('df-hsc').textContent='⭐ '+(P()?P().score:0);
+
+  const c=document.getElementById('df-c');
+  c.innerHTML=`
+    <!-- Barre progression séance -->
+    <div style="background:var(--bg);border-radius:10px;height:8px;margin-bottom:12px;overflow:hidden">
+      <div style="height:100%;background:linear-gradient(90deg,#FF6B6B,#FFD166);border-radius:10px;width:${Math.round((stepNum)/totalSteps*100)}%;transition:width .5s ease"></div>
+    </div>
+    <div style="text-align:center;font-size:11px;font-weight:700;color:var(--tl);margin-bottom:10px">
+      Étape ${stepNum+1} sur ${totalSteps} · ${item._phase}
+    </div>
+    <div class="dcard" data-cat="${item.cat||''}">
+      <div class="df-catbadge">${ci.l}</div>
+      <div class="de">${emoji}</div>
+      <h2>${item.nom.replace(/\p{Emoji}/gu,'').trim()}</h2>
+      <p>${item.consigne}</p>
+      <div class="tring" id="df-ring">${dur}s</div>
+      <div class="df-progbar"><div class="df-progbar-inner" id="df-prog"></div></div>
+      <button class="dstart" id="df-st">▶ Commencer !</button>
+      <button class="ddone" id="df-dn">✅ J'ai réussi !</button>
+    </div>
+    <div style="padding:0 4px 20px">
+      <button class="hintbtn" id="df-hb">💡 Astuce</button>
+      <div class="hinttxt" id="df-ht">${item.hint||'Vas-y à ton rythme !'}</div>
+      <button class="nxtbtn show" id="df-nx" style="margin-top:10px">
+        ${stepNum+1<totalSteps?'Exercice suivant →':'🏆 Terminer la séance'}
+      </button>
+    </div>`;
+
+  document.getElementById('df-hb').onclick=()=>{sndTap();document.getElementById('df-ht').classList.toggle('show');};
+
+  document.getElementById('df-st').onclick=()=>{
+    if(running)return; running=true;
+    document.getElementById('df-st').style.display='none';
+    document.getElementById('df-ring').classList.add('run');
+    if(COACH.voice) ttsSpeak(item.consigne,'fr-FR');
+    COACH.timer=setInterval(()=>{rem--;
+      const r=document.getElementById('df-ring');if(r)r.textContent=rem+'s';
+      const pg=document.getElementById('df-prog');if(pg)pg.style.width=((dur-rem)/dur*100)+'%';
+      // Compte à rebours vocal : 3,2,1
+      if(rem<=3&&rem>0&&COACH.voice) ttsSpeak(String(rem),'fr-FR');
+      if(rem<=0){
+        clearInterval(COACH.timer);COACH.timer=null;
+        if(r){r.textContent='🎉';r.classList.remove('run');}
+        if(pg)pg.style.width='100%';
+        const dn=document.getElementById('df-dn');if(dn)dn.style.display='block';
+        if(COACH.voice) ttsSpeak('Bravo ! Super !','fr-FR');
+      }
+    },1000);
+  };
+
+  document.getElementById('df-dn').onclick=()=>{
+    const p=P();if(p&&!p.done[item.id]){p.score++;p.done[item.id]=true;saveApp();celebrate();sndStar();}
+    if(p)document.getElementById('df-hsc').textContent='⭐ '+p.score;
+  };
+
+  document.getElementById('df-nx').onclick=()=>{
+    clearInterval(COACH.timer);COACH.timer=null;
+    const next=stepNum+1;
+    if(next<totalSteps) startCoachStep(next);
+    else endCoachSession();
+  };
+
+  show('defi');
+  // Auto-démarrage si mode voiture
+  if(APP.car) setTimeout(()=>{ const btn=document.getElementById('df-st');if(btn)btn.click(); },500);
+}
+
+function endCoachSession(){
+  clearInterval(COACH.timer);COACH.timer=null;
+  const total=COACH.seq.length;
+  const plan=COACH.plan;
+  // Écran de fin coach
+  const c=document.getElementById('df-c');
+  c.innerHTML=`
+    <div style="text-align:center;padding:30px 20px 40px">
+      <div style="font-size:80px;animation:defi-bounce .9s ease-in-out infinite alternate">🏆</div>
+      <h2 style="font-size:24px;font-weight:900;margin:16px 0 8px">Séance terminée !</h2>
+      <div style="font-size:14px;color:var(--tl);line-height:1.7;margin-bottom:20px">
+        Tu viens de faire <strong>${total} exercices</strong><br>
+        comme un vrai champion ${plan.emoji}<br>
+        <span style="font-size:12px">Cardio · Gainage · Stretching · Respiration</span>
+      </div>
+      <div style="background:linear-gradient(135deg,#FFD166,#FFA500);border-radius:18px;padding:16px;margin-bottom:20px;color:#5C3100;font-weight:800;font-size:15px">
+        🌟 Ton corps est plus fort qu'hier !
+      </div>
+      <button onclick="sndTap();openMod('defis')" style="width:100%;background:linear-gradient(135deg,#FF6B6B,#C9184A);border:none;border-radius:18px;padding:16px;font-family:var(--f);font-size:15px;font-weight:900;color:#fff;cursor:pointer;margin-bottom:10px;touch-action:manipulation">
+        🏅 Refaire une séance
+      </button>
+      <button onclick="sndTap();backMod()" style="width:100%;background:var(--vl);border:none;border-radius:18px;padding:14px;font-family:var(--f);font-size:14px;font-weight:800;color:var(--v);cursor:pointer;touch-action:manipulation">
+        Retour aux exercices
+      </button>
+    </div>`;
+  document.getElementById('df-htit').textContent='🏆 Séance terminée !';
+  show('defi');
+  celebrate(); sndStar();
+  if(COACH.voice) setTimeout(()=>ttsSpeak(`Bravo ! Séance complète terminée ! ${total} exercices réussis comme un champion !`,'fr-FR'),300);
 }
 
 // ════════════════════════════════════════════
