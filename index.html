@@ -5733,7 +5733,11 @@ function advHandleAnswer(ok, btn, container, item, c, isPol){
   // Résultat
   const res=document.createElement('div');
   res.className='resbanner show '+(ok?'bok':'bko');
-  res.textContent=ok?'🎉 Bravo !':'🤔 Pas tout à fait…';
+  if(ok){res.textContent='🎉 Bravo !';}
+  else{
+    const bonneRep=item.sage||item.rep||item.reponse||'';
+    res.innerHTML='🤔 Pas tout à fait…'+(bonneRep?'<br><span style="font-size:14px;font-weight:900;display:block;margin-top:6px">✅ Bonne réponse : '+bonneRep+'</span>':'');
+  }
   c.appendChild(res);
   // Bouton TTS pour la réponse correcte
   const answerTxt=item.sage||item.rep||item.reponse||'';
