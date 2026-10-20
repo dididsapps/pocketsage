@@ -4272,7 +4272,7 @@ function openLangSelector(){
   document.body.appendChild(ov);
 }
 
-function goHome(){try{clearTimer();buildHome();show('home');}catch(e){console.error('goHome:',e);toast('Erreur accueil: '+e.message,'err');show('home');}}
+function goHome(){try{stopAdvMedia();clearTimer();buildHome();show('home');}catch(e){console.error('goHome:',e);toast('Erreur accueil: '+e.message,'err');show('home');}}
 function openWorld(){
   show('world');
   document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));
@@ -6088,7 +6088,22 @@ function getAdvItem(typeId){
   return item;
 }
 
+function stopAdvMedia(){
+  // Stopper toutes les iframes YouTube (vidéos) dans adv-content
+  const c=document.getElementById('adv-content');
+  if(c){
+    c.querySelectorAll('iframe').forEach(f=>{
+      try{f.src='';}catch(e){}
+    });
+  }
+  // Stopper le TTS (histoires lues)
+  if(window.speechSynthesis) window.speechSynthesis.cancel();
+  // Stopper tout AudioContext actif
+  if(window.AC && AC.state!=='closed'){try{AC.suspend();}catch(e){}}
+}
+
 function renderAdvStep(){
+  stopAdvMedia();
   if(ADV.stepIndex>=ADV.sequence.length){showAdvSummary();return;}
   const typeId = ADV.sequence[ADV.stepIndex];
   const typeCfg = ADV_TYPES.find(t=>t.id===typeId);
@@ -6404,6 +6419,7 @@ function advNextStep(){
 }
 
 function showAdvSummary(){
+  stopAdvMedia();
   clearInterval(ADV.timerInterval);
   clearInterval(_advDefiTimer);
   ADV.active=false;
