@@ -6253,8 +6253,8 @@ function advHandleAnswer(ok, btn, container, item, c, isPol){
     btns.forEach(b=>{if(String(b.textContent)===String(item.rep))b.classList.add('ok');});
     if(!ok)btn.classList.add('ko');
   }
-  if(ok){sndOK();senseiOK();ADV.correct++;}
-  else{sndKO();senseiKO();}
+  if(ok){sndOK();senseiOK();ADV.correct++;setTimeout(()=>showReactOverlay(true),300);}
+  else{sndKO();senseiKO();setTimeout(()=>showReactOverlay(false),300);}
   // Sauvegarder
   const p=P();
   if(ok&&p&&!p.done[item.id]){p.score++;p.done[item.id]=true;saveApp();celebrate();sndStar();}
