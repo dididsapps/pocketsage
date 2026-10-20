@@ -85,9 +85,9 @@ body.car .scr{background:var(--car-bg)}
 .pav-spacer{flex:1}
 
 /* ── AVATARS ── */
-.av-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:4px}
-.av-item{display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;
-  padding:10px 6px;min-height:108px;justify-content:center;border-radius:14px;border:2.5px solid transparent;transition:all .2s;background:#F8F7FF}
+.av-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:4px}
+.av-item{display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;
+  padding:4px 2px;min-height:110px;justify-content:center;border-radius:14px;border:2.5px solid transparent;transition:all .2s;background:#F8F7FF}
 .av-item:active{transform:scale(.92)}
 .av-item.sel{border-color:var(--v);background:var(--vl)}
 .av-item svg{display:block;transition:transform .2s}
@@ -3958,11 +3958,11 @@ function buildAvatarGrid(){
     d.setAttribute('data-avid',avid);
     var img=document.createElement('img');
     img.src=imgSrc;
-    img.style.cssText='height:88px;width:auto;display:block;margin:auto';
+    img.style.cssText='height:100px;width:auto;max-width:100%;display:block;margin:auto';
     img.setAttribute('loading','lazy');
     img.onerror=function(){
       // fallback emoji si image bloquée (ex: CSP artifact preview)
-      d.innerHTML='<span style="font-size:52px;line-height:88px;display:block;text-align:center">'+emoji+'</span>';
+      d.innerHTML='<span style="font-size:60px;line-height:100px;display:block;text-align:center">'+emoji+'</span>';
     };
     d.appendChild(img);
     d.addEventListener('click',function(){
@@ -3971,13 +3971,13 @@ function buildAvatarGrid(){
     });
     return d;
   }
-  // Andrew — mascotte toujours en premier
-  var andrewEl=mkAvItem('boy1', IMG_AVATAR_BOY1, '🧒', !prevId||prevId==='boy1');
-  var andrewBadge=document.createElement('div');
-  andrewBadge.style.cssText='font-size:8px;font-weight:800;color:#6C63FF;text-align:center;margin-top:2px;letter-spacing:.3px';
-  andrewBadge.textContent='⭐ MASCOTTE';
-  andrewEl.appendChild(andrewBadge);
-  g.appendChild(andrewEl);
+  // Andrew (7 ans) — uniquement visible dans la tranche 4-8 ans
+  if(tranche==='4-8'){
+    g.appendChild(mkAvItem('boy1', IMG_AVATAR_BOY1, '🧒', !prevId||prevId==='boy1'));
+  } else if(prevId==='boy1'){
+    // Si Andrew était sélectionné mais on change de tranche → sélectionner le 1er avatar dispo
+    prevId=null;
+  }
   // 16 avatars de la tranche
   var EMOJIS=['🧒🏿','👦🏻','👧🏼','👦🏾','👧🏻','👦🏿','👧🏽','👦🏼','👧🏾','👦🏽','👧🏿','👦🏻','👧🏼','👦🏾','👧🏻','👦🏿'];
   list.forEach(function(av,i){
@@ -5310,9 +5310,9 @@ function openProfil(){
     d.className='av-item'+(isSel?' sel':'');
     d.setAttribute('data-avid',avid);
     var img=document.createElement('img');
-    img.src=imgSrc; img.style.cssText='height:88px;width:auto;display:block;margin:auto';
+    img.src=imgSrc; img.style.cssText='height:100px;width:auto;max-width:100%;display:block;margin:auto';
     img.setAttribute('loading','lazy');
-    img.onerror=function(){d.innerHTML='<span style="font-size:52px;line-height:88px;display:block;text-align:center">'+emoji+'</span>';};
+    img.onerror=function(){d.innerHTML='<span style="font-size:60px;line-height:100px;display:block;text-align:center">'+emoji+'</span>';};
     d.appendChild(img);
     d.addEventListener('click',onClickFn);
     return d;
