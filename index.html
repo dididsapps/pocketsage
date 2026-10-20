@@ -174,6 +174,7 @@ body.car .scr{background:var(--car-bg)}
   font-family:var(--f);font-size:12px;font-weight:700;cursor:pointer;
   background:var(--w);color:var(--tl)}
 .stab.on,.ltab.on{background:var(--v);color:#fff;border-color:var(--v)}
+.stab-locked{opacity:.55;cursor:default!important}
 .ltab{font-size:13px;padding:8px 15px}
 .elist{display:flex;flex-direction:column;gap:9px}
 .ecard{background:var(--w);border-radius:var(--r);padding:13px 15px;cursor:pointer;
@@ -1505,24 +1506,58 @@ politesse:[
 {id:"PO-006",situation:"Tu joues et tu perds.",choix:[{t:"Tu renverses le plateau.",s:false},{t:"Tu félicites le gagnant et proposes une revanche.",s:true},{t:"Tu dis que le jeu est nul.",s:false}],sage:"Tu félicites le gagnant et proposes une revanche.",expl:"Savoir perdre avec grâce, c'est un fair-player !",diff:2,age:"5-8",hint:"Comment réagit un bon joueur ?"}
 ],
 defis:[
-{id:"DF-001",nom:"La Statue 🗿",consigne:"Fais la statue 10 secondes ! Ne bouge plus du tout !",dur:10,diff:1,age:"4-6",hint:"Imagine que tu es en pierre !",invite:"Qui dans ta famille peut rester immobile le plus longtemps ? Lance le défi !"},
-{id:"DF-002",nom:"Le Saut 🦵",consigne:"Saute 5x sur le pied droit, puis 5x sur le gauche !",dur:20,diff:1,age:"4-7",hint:"Lève bien le genou !",invite:"Appelle un ami ou un frère/sœur et voyez qui saute le mieux !"},
-{id:"DF-003",nom:"Le Pingouin 🐧",consigne:"Marche comme un pingouin : bras collés, pieds en V — 15 secondes !",dur:15,diff:1,age:"4-6",hint:"Pieds pointés vers l'extérieur !",invite:"Toute la famille en pingouin, c'est encore plus rigolo !"},
-{id:"DF-004",nom:"La Fusée 🚀",consigne:"Accroupis-toi puis saute le plus haut possible ! 5 fois !",dur:30,diff:2,age:"4-8",hint:"Pousse fort avec tes jambes !",invite:"Qui saute le plus haut dans la maison ? Organisez un concours !"},
-{id:"DF-005",nom:"Le Crabe 🦀",consigne:"Position crabe (ventre vers le haut) et avance de 5 pas !",dur:20,diff:2,age:"4-8",hint:"Les crabes marchent de côté !",invite:"Course de crabes en famille — le premier arrivé gagne une étoile !"},
-{id:"DF-006",nom:"L'Avion ✈️",consigne:"Sur un pied, penche le corps, bras en ailes — 10s de chaque côté !",dur:25,diff:2,age:"5-8",hint:"Fixe un point pour t'équilibrer !",invite:"Qui tient l'équilibre le plus longtemps ? Défi avec papa ou maman !"},
-{id:"DF-007",nom:"Les Grenouilles 🐸",consigne:"Accroupis et saute 8x en criant COÂ !",dur:20,diff:1,age:"4-6",hint:"Propulse-toi avec tes deux jambes !",invite:"Le plus grand coassement de la famille — à vous de jouer !"},
-{id:"DF-008",nom:"La Danse Robot 🤖",consigne:"Danse comme un robot 30s : mouvements saccadés !",dur:30,diff:1,age:"4-8",hint:"Les robots bougent par à-coups !",invite:"Duel de robots avec un ami ! Qui danse le mieux ?"},
-{id:"DF-009",nom:"Étirement du Cobra 🐍",consigne:"Allonge-toi sur le ventre. Pose les mains sous les épaules. Pousse pour lever doucement la tête et le buste. Reste 15s. Redescends lentement. Répète 3 fois.",dur:60,diff:1,age:"6-18",hint:"Sens ton dos s'étirer doucement, ne force pas !",invite:"Essaie cet étirement avec tes parents après le repas, ça fait du bien à tout le monde !"},
-{id:"DF-010",nom:"Étirement Papillon 🦋",consigne:"Assieds-toi par terre. Colle tes pieds ensemble, genoux écartés. Tiens tes pieds avec tes mains. Balance doucement tes genoux comme des ailes. 30 secondes.",dur:30,diff:1,age:"5-18",hint:"Reste le dos droit, respire calmement !",invite:"Fais le papillon avec un ami ou ton frère — c'est bon pour les jambes avant une longue journée !"},
-{id:"DF-011",nom:"Étirement Chat-Vache 🐱🐄",consigne:"À quatre pattes. Dos rond comme un chat fâché, tête baissée — 5s. Puis dos creusé, tête levée — 5s. Alterne 8 fois lentement.",dur:90,diff:1,age:"5-18",hint:"Expire quand tu arrondis, inspire quand tu creuses !",invite:"Toute la famille peut faire ça le matin ! Proposez-le à vos parents dès le réveil !"},
-{id:"DF-012",nom:"Sprint des Héros 🏃",consigne:"Cours sur place le plus vite possible pendant 20 secondes ! Genoux bien hauts !",dur:25,diff:2,age:"6-16",hint:"Pompe avec tes bras pour aller plus vite !",invite:"Qui lève les genoux le plus haut ? Comptez chacun vos pas — le record de la famille !"},
-{id:"DF-013",nom:"Les Squats Rigolos 🏋️",consigne:"Pieds écartés, descends en gardant le dos droit — comme pour t'asseoir sur une chaise invisible ! 10 squats en comptant fort.",dur:40,diff:2,age:"7-18",hint:"Garde les talons bien au sol et les genoux au-dessus des pieds !",invite:"Lancez un défi en famille : qui fait 10 squats avec la meilleure posture ? Un parent peut être le juge !"},
-{id:"DF-014",nom:"La Planche 🏄",consigne:"Appuie-toi sur tes coudes et la pointe des pieds, corps bien droit comme une planche. Tiens le plus longtemps possible !",dur:30,diff:3,age:"8-18",hint:"Ne laisse pas les fesses monter ni descendre — corps en ligne droite !",invite:"Record de famille ! Chacun chronomètre son temps et on note le meilleur !"},
-{id:"DF-015",nom:"Yoga de l'Arbre 🌳",consigne:"Pose le pied droit sur ta cheville ou ta cuisse gauche. Joins les mains devant toi. Équilibre-toi comme un arbre dans le vent — 20 secondes par pied.",dur:50,diff:2,age:"6-18",hint:"Fixe un point devant toi pour ne pas tomber !",invite:"Défi d'équilibre en famille ! Faites-le ensemble et encouragez-vous !"},
-{id:"DF-016",nom:"Étirement des Épaules 🙆",consigne:"Lève le bras droit, coude plié derrière la tête. Pousse doucement avec la main gauche. Tiens 15s. Change de côté. Répète 2 fois.",dur:70,diff:1,age:"7-18",hint:"Respire doucement pendant l'étirement, ne force jamais !",invite:"Parfait après les devoirs ! Propose-le à toute la famille devant la télé."},
-{id:"DF-017",nom:"Les Jumping Jacks ⭐",consigne:"Pieds joints, bras le long du corps. Saute en écartant pieds et bras en même temps — comme une étoile ! 15 jumping jacks !",dur:30,diff:2,age:"5-16",hint:"Garde le sourire, c'est un exercice joyeux !",invite:"En musique avec des amis ou en famille, c'est encore mieux ! Qui fait les plus beaux jumping jacks ?"},
-{id:"DF-018",nom:"Respiration du Boxeur 🥊",consigne:"Debout, pieds écartés. Frappe l'air doucement en alternant les bras — 20 fois chaque bras. Puis expire fort à chaque coup : HWAH !",dur:45,diff:2,age:"6-16",hint:"C'est un vrai exercice de sport et de respiration combinés !",invite:"Défi de boxe amicale avec un frère ou un ami — sans se toucher bien sûr ! Qui tient le plus longtemps ?"}
+// ── CARDIO ────────────────────────────────────────────────────────────
+{id:"DF-001",cat:"cardio",nom:"La Statue 🗿",consigne:"Fais la statue 10 secondes ! Ne bouge plus du tout !",dur:10,diff:1,age:"4-6",hint:"Imagine que tu es en pierre !",invite:"Qui dans ta famille peut rester immobile le plus longtemps ? Lance le défi !"},
+{id:"DF-002",cat:"cardio",nom:"Le Saut 🦵",consigne:"Saute 5x sur le pied droit, puis 5x sur le gauche !",dur:20,diff:1,age:"4-7",hint:"Lève bien le genou !",invite:"Appelle un ami ou un frère/sœur et voyez qui saute le mieux !"},
+{id:"DF-003",cat:"cardio",nom:"Le Pingouin 🐧",consigne:"Marche comme un pingouin : bras collés, pieds en V — 15 secondes !",dur:15,diff:1,age:"4-6",hint:"Pieds pointés vers l'extérieur !",invite:"Toute la famille en pingouin, c'est encore plus rigolo !"},
+{id:"DF-004",cat:"cardio",nom:"La Fusée 🚀",consigne:"Accroupis-toi puis saute le plus haut possible ! 5 fois !",dur:30,diff:2,age:"4-8",hint:"Pousse fort avec tes jambes !",invite:"Qui saute le plus haut dans la maison ? Organisez un concours !"},
+{id:"DF-005",cat:"cardio",nom:"Le Crabe 🦀",consigne:"Position crabe (ventre vers le haut) et avance de 5 pas !",dur:20,diff:2,age:"4-8",hint:"Les crabes marchent de côté !",invite:"Course de crabes en famille — le premier arrivé gagne une étoile !"},
+{id:"DF-006",cat:"cardio",nom:"L'Avion ✈️",consigne:"Sur un pied, penche le corps, bras en ailes — 10s de chaque côté !",dur:25,diff:2,age:"5-8",hint:"Fixe un point pour t'équilibrer !",invite:"Qui tient l'équilibre le plus longtemps ? Défi avec papa ou maman !"},
+{id:"DF-007",cat:"cardio",nom:"Les Grenouilles 🐸",consigne:"Accroupis et saute 8x en criant COÂ !",dur:20,diff:1,age:"4-6",hint:"Propulse-toi avec tes deux jambes !",invite:"Le plus grand coassement de la famille — à vous de jouer !"},
+{id:"DF-008",cat:"cardio",nom:"La Danse Robot 🤖",consigne:"Danse comme un robot 30s : mouvements saccadés !",dur:30,diff:1,age:"4-8",hint:"Les robots bougent par à-coups !",invite:"Duel de robots avec un ami ! Qui danse le mieux ?"},
+{id:"DF-012",cat:"cardio",nom:"Sprint des Héros 🏃",consigne:"Cours sur place le plus vite possible pendant 20 secondes ! Genoux bien hauts !",dur:25,diff:2,age:"6-16",hint:"Pompe avec tes bras pour aller plus vite !",invite:"Qui lève les genoux le plus haut ? Comptez chacun vos pas — le record de la famille !"},
+{id:"DF-013",cat:"cardio",nom:"Les Squats Rigolos 🏋️",consigne:"Pieds écartés, descends en gardant le dos droit — comme pour t'asseoir sur une chaise invisible ! 10 squats en comptant fort.",dur:40,diff:2,age:"7-18",hint:"Garde les talons bien au sol et les genoux au-dessus des pieds !",invite:"Lancez un défi en famille : qui fait 10 squats avec la meilleure posture ? Un parent peut être le juge !"},
+{id:"DF-017",cat:"cardio",nom:"Les Jumping Jacks ⭐",consigne:"Pieds joints, bras le long du corps. Saute en écartant pieds et bras en même temps — comme une étoile ! 15 jumping jacks !",dur:30,diff:2,age:"5-16",hint:"Garde le sourire, c'est un exercice joyeux !",invite:"En musique avec des amis ou en famille, c'est encore mieux ! Qui fait les plus beaux jumping jacks ?"},
+{id:"DF-019",cat:"cardio",nom:"Le Mountain Climber 🧗",consigne:"En position de pompe, ramène alternativement chaque genou vers ta poitrine, le plus vite possible. 20 secondes !",dur:25,diff:2,age:"8-18",hint:"Garde les hanches basses et le dos plat !",invite:"En duo — qui fait le plus de genoux en 20s ? Compte les répétitions !"},
+{id:"DF-020",cat:"cardio",nom:"Les Burpees Faciles 🔥",consigne:"Debout → mains au sol → tends les jambes → reviens → saute les bras en l'air ! Fais-en 5 d'affilée.",dur:45,diff:3,age:"9-18",hint:"Prends ton temps au début, l'important c'est la forme !",invite:"Challenge du jour : qui arrive à faire 10 burpees ? Note ton record !"},
+{id:"DF-021",cat:"cardio",nom:"Les Pompes Genoux 💪",consigne:"À quatre pattes, genoux au sol. Descends la poitrine vers le sol en pliant les coudes. Remonte. 8 fois !",dur:35,diff:2,age:"7-18",hint:"Garde le dos plat comme une table !",invite:"Qui fait les plus belles pompes dans la famille ? Un parent peut chronométrer !"},
+{id:"DF-022",cat:"cardio",nom:"Course de Canards 🦆",consigne:"Accroupis-toi bas. Avance de 10 pas sans te relever, jambes fléchies. Puis reviens !",dur:30,diff:2,age:"5-12",hint:"Garde le dos bien droit comme un canard fier !",invite:"Course avec tes amis — premier au mur en position canard !"},
+{id:"DF-023",cat:"cardio",nom:"Les Fentes 🦵",consigne:"Fais un grand pas en avant, genou droit qui descend sans toucher le sol. Reviens debout. 5 fentes de chaque côté !",dur:45,diff:2,age:"8-18",hint:"Ton genou avant ne doit pas dépasser la pointe de ton pied !",invite:"Qui fait les plus belles fentes ? Un adulte peut vérifier la position !"},
+{id:"DF-024",cat:"cardio",nom:"Le Saut du Lapin 🐰",consigne:"Saute vers l'avant à pieds joints, le plus loin possible ! 8 sauts d'affilée !",dur:30,diff:1,age:"4-10",hint:"Fléchis bien les genoux avant de sauter pour aller plus loin !",invite:"Marque ta distance et essaie de battre ton record à chaque fois !"},
+{id:"DF-025",cat:"cardio",nom:"Le Boxeur 🥊",consigne:"Debout, pieds écartés. Frappe l'air en alternant les bras — 30 coups totaux. Expire fort à chaque coup : HOP !",dur:40,diff:2,age:"6-16",hint:"Reste sur la pointe des pieds comme un vrai boxeur !",invite:"Défi de boxe amicale — qui frappe le plus vite sans s'arrêter ?"},
+{id:"DF-026",cat:"cardio",nom:"L'Ourson Marcheur 🐻",consigne:"Posé sur mains et pieds (pas les genoux !), marche comme un ours sur 5 pas aller-retour.",dur:25,diff:2,age:"4-9",hint:"Bras et jambes opposés avancent en même temps !",invite:"Course d'ours avec toute la famille — qui traverse la pièce en premier ?"},
+// ── GAINAGE ────────────────────────────────────────────────────────────
+{id:"DF-014",cat:"gainage",nom:"La Planche 🏄",consigne:"Appuie-toi sur tes coudes et la pointe des pieds, corps bien droit comme une planche. Tiens le plus longtemps possible !",dur:30,diff:3,age:"8-18",hint:"Ne laisse pas les fesses monter ni descendre — corps en ligne droite !",invite:"Record de famille ! Chacun chronomètre son temps et on note le meilleur !"},
+{id:"DF-027",cat:"gainage",nom:"Planche Latérale Droite ⬆️",consigne:"Allonge-toi sur le côté droit. Appuie-toi sur le coude droit. Lève les hanches — corps en ligne droite. Tiens 20 secondes.",dur:25,diff:3,age:"9-18",hint:"Garde les hanches bien levées, ne les laisse pas tomber !",invite:"Chacun son tour — qui tient le plus longtemps de chaque côté ?"},
+{id:"DF-028",cat:"gainage",nom:"Planche Latérale Gauche ⬇️",consigne:"Même exercice sur le côté gauche ! Corps droit appuyé sur le coude gauche. Tiens 20 secondes.",dur:25,diff:3,age:"9-18",hint:"Respire régulièrement, ne retiens pas ton souffle !",invite:"Fais-le après la planche droite — les deux côtés comptent !"},
+{id:"DF-029",cat:"gainage",nom:"Le Superman 🦸",consigne:"Allonge-toi sur le ventre, bras tendus devant. Lève simultanément le bras droit ET la jambe gauche. Tiens 5s. Alterne 8 fois.",dur:50,diff:2,age:"7-18",hint:"Contracte le ventre pour protéger ton dos !",invite:"Le superman le plus impressionnant de la famille ?"},
+{id:"DF-030",cat:"gainage",nom:"La Table 🪑",consigne:"Assieds-toi, mains au sol derrière toi. Pousse les hanches vers le haut — corps comme une table renversée. Tiens 15 secondes.",dur:20,diff:2,age:"7-18",hint:"Talons au sol, hanches bien levées, tête dans l'axe !",invite:"Défi de la table — qui reste en position le plus longtemps ?"},
+{id:"DF-031",cat:"gainage",nom:"Crunch Simple 🔢",consigne:"Allongé sur le dos, genoux fléchis. Croise les bras sur la poitrine. Lève les épaules du sol en contractant le ventre. 12 répétitions.",dur:40,diff:2,age:"8-18",hint:"C'est le ventre qui travaille, pas le cou !",invite:"Qui fait les 12 crunchs avec la meilleure technique ?"},
+{id:"DF-032",cat:"gainage",nom:"Le Pont 🌉",consigne:"Allongé sur le dos, genoux fléchis, pieds à plat. Pousse les hanches vers le haut. Serre les fesses. Tiens 15s. 3 fois.",dur:60,diff:1,age:"6-18",hint:"Pousse dans les talons pour monter encore plus haut !",invite:"Qui fait le pont le plus haut ? Les parents aussi peuvent essayer !"},
+{id:"DF-033",cat:"gainage",nom:"La Planche sur Mains 🖐️",consigne:"Position de pompe : bras tendus, corps droit. Tiens sans bouger ! Commence par 15 secondes.",dur:20,diff:3,age:"9-18",hint:"Regarde le sol légèrement en avant, pas sous toi !",invite:"Version avancée de la planche — qui tient le plus longtemps ?"},
+{id:"DF-034",cat:"gainage",nom:"Dead Bug 🐛",consigne:"Sur le dos, bras et jambes en l'air. Descends simultanément le bras droit et la jambe gauche sans toucher le sol. Remonte. 8 fois.",dur:50,diff:3,age:"10-18",hint:"Garde le bas du dos plaqué au sol tout le temps !",invite:"L'exercice préféré des sportifs pros — essaie et montre-le à ta famille !"},
+// ── STRETCHING ────────────────────────────────────────────────────────
+{id:"DF-009",cat:"stretching",nom:"Étirement du Cobra 🐍",consigne:"Allonge-toi sur le ventre. Pose les mains sous les épaules. Pousse pour lever doucement la tête et le buste. Reste 20s. Redescends lentement. Répète 3 fois.",dur:75,diff:1,age:"6-18",hint:"Sens ton dos s'étirer doucement, ne force pas !",invite:"Essaie cet étirement avec tes parents après le repas, ça fait du bien à tout le monde !"},
+{id:"DF-010",cat:"stretching",nom:"Étirement Papillon 🦋",consigne:"Assieds-toi par terre. Colle tes pieds ensemble, genoux écartés. Tiens tes pieds avec tes mains. Balance doucement tes genoux comme des ailes. 30 secondes.",dur:30,diff:1,age:"5-18",hint:"Reste le dos droit, respire calmement !",invite:"Fais le papillon avec un ami ou ton frère — c'est bon pour les jambes avant une longue journée !"},
+{id:"DF-011",cat:"stretching",nom:"Étirement Chat-Vache 🐱🐄",consigne:"À quatre pattes. Dos rond comme un chat fâché, tête baissée — 5s. Puis dos creusé, tête levée — 5s. Alterne 8 fois lentement.",dur:90,diff:1,age:"5-18",hint:"Expire quand tu arrondis, inspire quand tu creuses !",invite:"Toute la famille peut faire ça le matin ! Proposez-le à vos parents dès le réveil !"},
+{id:"DF-015",cat:"stretching",nom:"Yoga de l'Arbre 🌳",consigne:"Pose le pied droit sur ta cheville ou ta cuisse gauche. Joins les mains devant toi. Équilibre-toi comme un arbre dans le vent — 20 secondes par pied.",dur:50,diff:2,age:"6-18",hint:"Fixe un point devant toi pour ne pas tomber !",invite:"Défi d'équilibre en famille ! Faites-le ensemble et encouragez-vous !"},
+{id:"DF-016",cat:"stretching",nom:"Étirement des Épaules 🙆",consigne:"Lève le bras droit, coude plié derrière la tête. Pousse doucement avec la main gauche. Tiens 20s. Change de côté. Répète 2 fois.",dur:70,diff:1,age:"7-18",hint:"Respire doucement pendant l'étirement, ne force jamais !",invite:"Parfait après les devoirs ! Propose-le à toute la famille devant la télé."},
+{id:"DF-035",cat:"stretching",nom:"L'Enfant Sage 🧘",consigne:"À genoux, assieds-toi sur tes talons. Penche-toi en avant, bras tendus devant. Front au sol (ou proche). Reste 30 secondes. Respire.",dur:35,diff:1,age:"5-18",hint:"C'est la pose du repos — sens ton dos s'allonger !",invite:"Après le sport, c'est parfait pour se détendre ensemble !"},
+{id:"DF-036",cat:"stretching",nom:"Étirement des Ischio 🦵",consigne:"Assieds-toi, jambes tendues devant toi. Penche doucement le buste vers l'avant, mains vers les pieds. Tiens 20s sans forcer.",dur:25,diff:1,age:"7-18",hint:"Ne force jamais — va jusqu'où tu peux sans douleur !",invite:"Indispensable après la course ! Toute la famille peut le faire ensemble."},
+{id:"DF-037",cat:"stretching",nom:"Le Pigeon 🕊️",consigne:"Mets le genou droit plié devant toi, jambe gauche tendue derrière. Reste penché en avant. 20s de chaque côté.",dur:50,diff:2,age:"9-18",hint:"Un coussin sous la hanche peut aider si c'est inconfortable !",invite:"L'étirement préféré des danseurs et coureurs — essaie-le !"},
+{id:"DF-038",cat:"stretching",nom:"Rotation du Torse 🔄",consigne:"Assieds-toi, jambes croisées. Pose la main droite sur le genou gauche et tourne le buste vers la gauche. 15s. Change de côté.",dur:40,diff:1,age:"6-18",hint:"Regarde loin derrière toi pour aller plus loin dans la rotation !",invite:"Super pour le dos des élèves qui sont assis toute la journée !"},
+{id:"DF-039",cat:"stretching",nom:"Le Guerrier 1 ⚔️",consigne:"Grand pas en avant pied droit. Genou droit fléchi. Jambe gauche tendue. Bras levés vers le ciel. Tiens 20s. Change de côté.",dur:50,diff:2,age:"7-18",hint:"Garde l'épaule du côté avant au-dessus de la hanche !",invite:"Pose du guerrier en famille — qui est le plus droit et le plus stable ?"},
+{id:"DF-040",cat:"stretching",nom:"Étirement du Cou 🦦",consigne:"Assieds-toi droit. Penche lentement la tête vers l'épaule droite. Tiens 10s. Centre. Penche vers la gauche. 10s. 2 fois de chaque côté.",dur:50,diff:1,age:"7-18",hint:"Ne force jamais le cou — juste le poids de la tête !",invite:"Parfait après les devoirs ou une journée sur écran — proposons-le à toute la famille !"},
+// ── RESPIRATION ────────────────────────────────────────────────────────
+{id:"DF-018",cat:"respiration",nom:"Respiration Carrée 🟦",consigne:"Inspire 4s → retiens 4s → expire 4s → vide 4s. Répète 4 cycles. Ferme les yeux si tu veux.",dur:70,diff:1,age:"6-18",hint:"Visualise un carré dans ta tête et suis chaque côté !",invite:"La respiration des pilotes et sportifs de haut niveau — partage-la avec ta famille !"},
+{id:"DF-041",cat:"respiration",nom:"Le Ballon 🎈",consigne:"Gonfle ton ventre comme un ballon quand tu inspires (4s). Puis dégonfle-le doucement en expirant (6s). Fais 5 respirations profondes.",dur:55,diff:1,age:"4-18",hint:"Pose la main sur le ventre pour sentir qu'il monte et descend !",invite:"Parfait avant de dormir ou pour se calmer — enseigne-le à tes proches !"},
+{id:"DF-042",cat:"respiration",nom:"La Respiration du Lion 🦁",consigne:"Inspire par le nez. Puis expire très fort par la bouche, langue sortie, yeux grands ouverts — comme un lion qui rugit ! 5 fois.",dur:40,diff:1,age:"4-10",hint:"C'est rigolo et ça aide à évacuer le stress !",invite:"Qui fait le lion le plus impressionnant ? Tout le monde s'y met !"},
+{id:"DF-043",cat:"respiration",nom:"Cohérence Cardiaque 💙",consigne:"Inspire lentement par le nez pendant 5 secondes. Expire lentement par la bouche pendant 5 secondes. Répète 6 fois de suite (1 minute).",dur:70,diff:1,age:"8-18",hint:"Écoute ton corps : après 1 minute, tu te sens plus calme !",invite:"6 fois par jour, ça change la vie ! Propose-le à tes parents après leur travail."},
+{id:"DF-044",cat:"respiration",nom:"La Respiration 4-7-8 🌙",consigne:"Inspire par le nez pendant 4s. Retiens ta respiration 7s. Expire très lentement par la bouche pendant 8s. Répète 3 fois.",dur:65,diff:2,age:"10-18",hint:"C'est la technique anti-stress préférée des médecins — essaie-la le soir !",invite:"Super pour s'endormir ou se calmer après une dispute — partage-la en famille !"},
+{id:"DF-045",cat:"respiration",nom:"La Respiration du Vent 💨",consigne:"Debout, bras le long du corps. Inspire en levant les bras au-dessus de la tête (3s). Expire en les redescendant (5s). 6 cycles.",dur:55,diff:1,age:"5-18",hint:"Synchronise parfaitement les bras et la respiration !",invite:"On peut le faire ensemble, debout en cercle — beau et reposant !"},
+{id:"DF-046",cat:"respiration",nom:"Le Nettoyage du Cerveau 🧠",consigne:"Inspire par le nez — remplis le ventre d'abord, puis la poitrine (4s). Retiens 1s. Expire fort par la bouche en faisant WHOOSH (6s). 4 fois.",dur:50,diff:1,age:"7-18",hint:"La grande expiration WHOOSH libère les tensions !",invite:"Parfait après une journée stressante à l'école — essaie avant les devoirs !"},
+{id:"DF-047",cat:"respiration",nom:"La Respiration Alternée 🌸",consigne:"Bouche ton narine droite avec le pouce. Inspire par la gauche (4s). Bouche la gauche avec l'index. Expire par la droite (4s). Alterne 4 cycles.",dur:50,diff:2,age:"9-18",hint:"Technique de yoga pour équilibrer l'énergie — utilise la main droite !",invite:"La technique secrète des yogis — montre-la à ta famille !"},
+{id:"DF-048",cat:"respiration",nom:"Respiration des Super-Héros 🦸",consigne:"Inspire fort et lève les bras comme tu décoles. Retiens 3s, poings fermés. Expire PUISSAMMENT en ramenant les poings vers toi. 5 fois !",dur:45,diff:1,age:"4-12",hint:"Imagine que tu charges tes pouvoirs à chaque inspiration !",invite:"Le rituel du matin pour se sentir invincible — toute la famille peut le faire !"}
 ],
 maths:[
 {id:"MA-GS-001",classe:"GS",cat:"🔢",enonce:"Tu as 2 pommes dans une main et 1 pomme dans l'autre. Combien as-tu de pommes en tout ?",rep:"3",choix:["2","3","4"],diff:1,hint:"Compte sur tes doigts : lève 2 doigts, puis 1 de plus."},
@@ -4550,7 +4585,20 @@ const MCFG={
   politesse:{emoji:'🤝',title:'Politesse',desc:'Apprends les bonnes manières !',bg:'linear-gradient(135deg,#06D6A0,#00B884)',
     subcats:[{k:'pol',l:'🤝 Scénarios',d:DATA.politesse}]},
   defis:{emoji:'🏃',title:'Défis physiques',desc:'Lève-toi et bouge !',bg:'linear-gradient(135deg,#FFD166,#FFA500)',
-    subcats:[{k:'df',l:'💪 Défis',d:DATA.defis}]},
+    get subcats(){
+      const all=DATA.defis;
+      const cardio=all.filter(d=>d.cat==='cardio');
+      const gainage=all.filter(d=>d.cat==='gainage');
+      const stretch=all.filter(d=>d.cat==='stretching');
+      const respi=all.filter(d=>d.cat==='respiration');
+      return [
+        {k:'df',    l:'🏃 Tout',        d:all},
+        {k:'cardio',l:'❤️ Cardio',       d:cardio},
+        {k:'gain',  l:'💪 Gainage',      d:gainage,  car:true},
+        {k:'str',   l:'🧘 Stretching',   d:stretch,  car:true},
+        {k:'respi', l:'🌬️ Respiration',  d:respi,    car:true},
+      ];
+    }},
   langues:{emoji:'🌍',title:'Langues',desc:'Apprends les langues du monde !',bg:'linear-gradient(135deg,#FF9F1C,#FF6B35)',
     get subcats(){return getLangSubcats();}},
   recompenses:{emoji:'🎬',title:'Vidéos récompenses',desc:'Tu l\'as mérité ! Une vidéo éducative t\'attend.',bg:'linear-gradient(135deg,#E040FB,#AB47BC)',
@@ -4678,8 +4726,17 @@ function openMod(mod){
 function renderTabs(subs,mod){
   const t=document.getElementById('stabs');t.innerHTML='';
   subs.forEach((sc,i)=>{
-    const b=document.createElement('button');b.className='stab'+(i===0?' on':'');b.textContent=sc.l;
-    b.onclick=()=>{sndTap();t.querySelectorAll('.stab').forEach(x=>x.classList.remove('on'));b.classList.add('on');renderList(sc.d,mod);};
+    const locked=sc.car&&!APP.car;
+    const b=document.createElement('button');
+    b.className='stab'+(i===0?' on':'')+(locked?' stab-locked':'');
+    b.innerHTML=sc.l+(locked?' 🔒':'');
+    b.onclick=()=>{
+      sndTap();
+      if(locked){toast('Disponible en 🚗 Mode Voiture','info');return;}
+      t.querySelectorAll('.stab').forEach(x=>x.classList.remove('on'));
+      b.classList.add('on');
+      renderList(sc.d,mod);
+    };
     t.appendChild(b);
   });
 }
@@ -4855,10 +4912,12 @@ function openAtelierDetail(a){
 function renderDefis(items){
   const el=document.getElementById('elist');el.innerHTML='';
   const p=P();
+  const catLabel={cardio:'❤️ Cardio',gainage:'💪 Gainage',stretching:'🧘 Stretching',respiration:'🌬️ Respiration'};
   items.forEach((item,idx)=>{
     const done=p&&p.done&&p.done[item.id];
     const d=document.createElement('div');d.className='ecard'+(done?' done':'');
-    d.innerHTML=`<div class="ecl"><div class="ecn">Défi physique · ${item.age||''} ans</div><div class="ect">${item.nom}</div><div class="ecb"><span class="bd bd${item.diff||1}">${['','Facile','Intermédiaire','Avancé'][item.diff||1]}</span></div></div><div>${done?'✅':'🏃'}</div>`;
+    const cat=catLabel[item.cat]||'💪 Défi';
+    d.innerHTML=`<div class="ecl"><div class="ecn">${cat} · ${item.age||''} ans</div><div class="ect">${item.nom}</div><div class="ecb"><span class="bd bd${item.diff||1}">${['','Facile','Intermédiaire','Avancé'][item.diff||1]}</span><span style="font-size:10px;opacity:.6;margin-left:6px">⏱ ${item.dur}s</span></div></div><div>${done?'✅':'🏃'}</div>`;
     d.onclick=()=>{sndTap();startDefi(item,idx,items);};
     el.appendChild(d);
   });
