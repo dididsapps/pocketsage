@@ -59,8 +59,8 @@ body.car .scr{background:var(--car-bg)}
 /* ── HEADER ── */
 .hdr{background:var(--w);padding:14px 16px 10px;display:flex;align-items:center;gap:10px;
   box-shadow:0 2px 10px rgba(0,0,0,.06);flex-shrink:0}
-.hbk{width:38px;height:38px;border-radius:50%;background:var(--vl);border:none;
-  cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center}
+.hbk{width:48px;height:48px;border-radius:50%;background:var(--vl);border:none;
+  cursor:pointer;font-size:28px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .htit{font-size:17px;font-weight:800;color:var(--t);flex:1}
 .hsc{background:var(--y);border-radius:20px;padding:5px 12px;font-weight:800;font-size:13px;color:#4A3800}
 .htts{background:var(--vl);border:none;border-radius:50%;width:34px;height:34px;
@@ -170,10 +170,11 @@ body.car .scr{background:var(--car-bg)}
 .mod-ban h2{font-size:19px;font-weight:900}
 .mod-ban p{font-size:12px;opacity:.88;margin-top:2px}
 .stabs{display:flex;gap:7px;margin-bottom:14px;overflow-x:auto;padding-bottom:3px}
-.stab{white-space:nowrap;padding:7px 13px;border-radius:18px;border:2px solid transparent;
+.stab,.ltab{white-space:nowrap;padding:7px 13px;border-radius:18px;border:2px solid transparent;
   font-family:var(--f);font-size:12px;font-weight:700;cursor:pointer;
   background:var(--w);color:var(--tl)}
-.stab.on{background:var(--v);color:#fff;border-color:var(--v)}
+.stab.on,.ltab.on{background:var(--v);color:#fff;border-color:var(--v)}
+.ltab{font-size:13px;padding:8px 15px}
 .elist{display:flex;flex-direction:column;gap:9px}
 .ecard{background:var(--w);border-radius:var(--r);padding:13px 15px;cursor:pointer;
   display:flex;align-items:center;gap:11px;box-shadow:var(--sh);border:2px solid transparent}
@@ -1027,6 +1028,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 </div>
 <div class="sc">
   <div class="mod-ban" id="mod-ban"><div class="me" id="mod-e">📚</div><h2 id="mod-t">Module</h2><p id="mod-d">Desc</p></div>
+  <div class="stabs" id="video-lang-tabs" style="display:none;margin-bottom:8px"></div>
   <div class="stabs" id="stabs"></div>
   <div class="elist" id="elist"></div>
 </div>
@@ -3073,22 +3075,29 @@ histoires:[
 {id:'HR-005',titre:'La Neige Douce ❄️',texte:'Allonge-toi. Sens la chaleur de ton lit. Ferme les yeux...\n\n[RESPIRE] Inspire lentement : 1… 2… 3… 4… Expire encore plus lentement : 1… 2… 3… 4… 5… 6… 7… 8…\n\nDehors, il neige. Mais toi tu es chaud, bien au chaud. Les flocons tombent, doucement, silencieusement.\n\nChaque souffle que tu expires emporte une pensée de la journée. Les soucis s\'en vont dans les flocons. Les émotions se dissolvent dans la neige blanche.\n\n[RESPIRE] Inspire fraîcheur : 1… 2… 3… 4… Expire douceur : 1… 2… 3… 4… 5… 6… 7… 8…\n\nLe monde est silencieux sous son manteau blanc. Il n\'y a plus rien à faire. Juste recevoir ce calme immense, cette paix.\n\nTu t\'endors comme la nature sous la neige : doucement, profondément, en paix.',dur:12,age:'6-14',audio:true,respiration:'4-8'}
 ],
 videos:[
-// IDs YouTube — vidéos éducatives en français
-{id:"V01",titre:"Les animaux de la savane",vid:"GIbC6WoS3fw",cat:"Animaux",dur:4},
-{id:"V02",titre:"Pourquoi les volcans entrent en éruption ?",vid:"RP8QQEMFqps",cat:"Science",dur:3},
-{id:"V03",titre:"Les planètes du système solaire",vid:"8Cf5vCYgNj8",cat:"Espace",dur:4},
-{id:"V04",titre:"La vie des abeilles",vid:"x5SdEBlF0c8",cat:"Animaux",dur:5},
-{id:"V05",titre:"L'œuf qui flotte — expérience",vid:"MVqeQ_Fotss",cat:"Chimie",dur:3},
-{id:"V06",titre:"Pourquoi les dinosaures ont disparu ?",vid:"ClRM6DELlV8",cat:"Science",dur:3},
-{id:"V07",titre:"Les dauphins",vid:"DoxvaiNjgm0",cat:"Animaux",dur:5},
-{id:"V08",titre:"C'est quoi une étoile ?",vid:"NIyjtgvRcnQ",cat:"Espace",dur:4},
-{id:"V09",titre:"Le cycle de l'eau",vid:"Gq1Y3P8lacw",cat:"Science",dur:4},
-{id:"V10",titre:"Grandes migrations animales",vid:"GIbC6WoS3fw",cat:"Animaux",dur:5},
-{id:"V11",titre:"Pourquoi le ciel est bleu ?",vid:"QtKyBRFgTyI",cat:"Science",dur:3},
-{id:"V12",titre:"La Station Spatiale ISS",vid:"6s6N-9OCCrE",cat:"Espace",dur:4},
-{id:"V13",titre:"Les pieuvres, maîtresses du camouflage",vid:"OaG6iWVnpFg",cat:"Animaux",dur:4},
-{id:"V14",titre:"Bicarbonate + vinaigre : volcan maison",vid:"zgxlvY51mm8",cat:"Chimie",dur:4},
-{id:"V15",titre:"Manchots et pingouins",vid:"o7-hFWftQw0",cat:"Animaux",dur:5}
+// IDs YouTube — vidéos éducatives (lang:"fr" = français, lang:"en" = anglais)
+{id:"V01",titre:"La savane africaine",vid:"fve3WureGaw",cat:"Animaux",dur:26,lang:"fr"},
+{id:"V02",titre:"Pourquoi les volcans entrent en éruption ?",vid:"RP8QQEMFqps",cat:"Science",dur:3,lang:"fr"},
+{id:"V03",titre:"Les planètes du système solaire",vid:"8Cf5vCYgNj8",cat:"Espace",dur:4,lang:"fr"},
+{id:"V04",titre:"La vie des abeilles",vid:"x5SdEBlF0c8",cat:"Animaux",dur:5,lang:"fr"},
+{id:"V05",titre:"L'œuf qui flotte — expérience",vid:"MVqeQ_Fotss",cat:"Chimie",dur:3,lang:"fr"},
+{id:"V06",titre:"Pourquoi les dinosaures ont disparu ?",vid:"ClRM6DELlV8",cat:"Science",dur:3,lang:"fr"},
+{id:"V07",titre:"Les dauphins",vid:"Ci64dLXMKi4",cat:"Animaux",dur:26,lang:"fr"},
+{id:"V08",titre:"C'est quoi une étoile ?",vid:"NIyjtgvRcnQ",cat:"Espace",dur:4,lang:"fr"},
+{id:"V09",titre:"Le cycle de l'eau",vid:"Gq1Y3P8lacw",cat:"Science",dur:4,lang:"fr"},
+{id:"V10",titre:"Les félins",vid:"gYeG-TLImlw",cat:"Animaux",dur:26,lang:"fr"},
+{id:"V11",titre:"Pourquoi le ciel est bleu ?",vid:"QtKyBRFgTyI",cat:"Science",dur:3,lang:"fr"},
+{id:"V12",titre:"La Station Spatiale ISS",vid:"6s6N-9OCCrE",cat:"Espace",dur:4,lang:"fr"},
+{id:"V13",titre:"Les pieuvres & céphalopodes",vid:"7YxsCCj5NC8",cat:"Animaux",dur:26,lang:"fr"},
+{id:"V14",titre:"Bicarbonate + vinaigre : volcan maison",vid:"zgxlvY51mm8",cat:"Chimie",dur:4,lang:"fr"},
+{id:"V15",titre:"Manchots et pingouins",vid:"o7-hFWftQw0",cat:"Animaux",dur:5,lang:"fr"},
+// Vidéos en anglais
+{id:"V16",titre:"How Do Volcanoes Work?",vid:"lAmqsmjFDpk",cat:"Science",dur:4,lang:"en"},
+{id:"V17",titre:"Why is the Sky Blue?",vid:"XBHZkek8OSU",cat:"Science",dur:4,lang:"en"},
+{id:"V18",titre:"Animal Adaptation",vid:"FSfagRojHzc",cat:"Animaux",dur:5,lang:"en"},
+{id:"V19",titre:"The Water Cycle",vid:"ncORPosDrjI",cat:"Science",dur:4,lang:"en"},
+{id:"V20",titre:"Exploring the Solar System",vid:"libKVRa01L8",cat:"Espace",dur:5,lang:"en"},
+{id:"V21",titre:"What are Insects?",vid:"ln3vl5LeVgI",cat:"Animaux",dur:4,lang:"en"}
 ],
 ateliers:[
 {id:"AT-001",nom:"Avion en papier ✈️",cat:"Origami",age:"4-12",dur:10,diff:1,
@@ -4574,6 +4583,37 @@ function getLangSubcats(){
   return tabs;
 }
 
+// ── Video language filter state ──────────────
+let _videoLang='all'; // 'all' | 'fr' | 'en'
+function getVideoSubcats(){
+  const vids=_videoLang==='all'?DATA.videos:DATA.videos.filter(v=>v.lang===_videoLang);
+  return [
+    {k:'all',l:'🌟 Toutes',d:vids},
+    {k:'A',l:'🐘 Animaux',d:vids.filter(v=>v.cat==='Animaux')},
+    {k:'S',l:'🔬 Science',d:vids.filter(v=>v.cat==='Science')},
+    {k:'E',l:'🚀 Espace',d:vids.filter(v=>v.cat==='Espace')},
+    {k:'C',l:'⚗️ Chimie',d:vids.filter(v=>v.cat==='Chimie')}
+  ];
+}
+function renderLangTabs(){
+  const cnt=document.getElementById('video-lang-tabs');if(!cnt)return;
+  cnt.innerHTML='';
+  const langs=[{k:'all',l:'🌍 Toutes langues'},{k:'fr',l:'🇫🇷 Français'},{k:'en',l:'🇬🇧 English'}];
+  langs.forEach(lg=>{
+    const b=document.createElement('button');
+    b.className='ltab'+((_videoLang===lg.k)?' on':'');
+    b.textContent=lg.l;
+    b.onclick=()=>{
+      sndTap();_videoLang=lg.k;
+      cnt.querySelectorAll('.ltab').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+      const subs=getVideoSubcats();
+      renderTabs(subs,'recompenses');
+      renderList(subs[0].d,'recompenses');
+    };
+    cnt.appendChild(b);
+  });
+}
+
 const MCFG={
   logique:{emoji:'🧠',title:'Logique',desc:'Suites, intrus, compter, labyrinthes !',bg:'linear-gradient(135deg,#6C63FF,#9B93FF)',
     subcats:[{k:'suites',l:'🔁 Suites',d:DATA.suites},{k:'intrus',l:'🔍 Intrus',d:DATA.intrus},{k:'count',l:'🔢 Compter',d:DATA.denombrement},{k:'lab',l:'🗺️ Labyrinthes',d:DATA.labyrinthes}]},
@@ -4586,14 +4626,7 @@ const MCFG={
   langues:{emoji:'🌍',title:'Langues',desc:'Apprends les langues du monde !',bg:'linear-gradient(135deg,#FF9F1C,#FF6B35)',
     get subcats(){return getLangSubcats();}},
   recompenses:{emoji:'🎬',title:'Vidéos récompenses',desc:'Tu l\'as mérité ! Une vidéo éducative t\'attend.',bg:'linear-gradient(135deg,#E040FB,#AB47BC)',
-    subcats:[
-      {k:'all',l:'🌟 Toutes',d:DATA.videos},
-      {k:'A',l:'🐘 Animaux',d:DATA.videos.filter(v=>v.cat==='Animaux')},
-      {k:'S',l:'🔬 Science',d:DATA.videos.filter(v=>v.cat==='Science')},
-      {k:'E',l:'🚀 Espace',d:DATA.videos.filter(v=>v.cat==='Espace')},
-      {k:'B',l:'🔨 Bricolage',d:DATA.videos.filter(v=>v.cat==='Bricolage')},
-      {k:'C',l:'⚗️ Chimie',d:DATA.videos.filter(v=>v.cat==='Chimie')}
-    ]},
+    get subcats(){return getVideoSubcats();}},
 };
 
 // ════════════════════════════════════════════
@@ -4697,6 +4730,10 @@ function openMod(mod){
     const me=document.getElementById('mod-e');if(me)me.textContent=cfg.emoji;
     const mt=document.getElementById('mod-t');if(mt)mt.textContent=cfg.title;
     const md=document.getElementById('mod-d');if(md)md.textContent=cfg.desc;
+    // Language tab row — visible only for video module
+    const langTabEl=document.getElementById('video-lang-tabs');
+    if(langTabEl)langTabEl.style.display=(mod==='recompenses')?'flex':'none';
+    if(mod==='recompenses'){try{renderLangTabs();}catch(e){console.error('renderLangTabs:',e);}}
     let subs;
     try{subs=cfg.subcats;}catch(e){console.error('subcats error:',e);subs=[];}
     if(!subs||!subs.length){toast('Aucun contenu pour '+cfg.title,'err');return;}
@@ -4739,10 +4776,12 @@ function renderList(items,mod){
 function renderVideos(items){
   const el=document.getElementById('elist');el.innerHTML='';
   const em={Animaux:'🐘',Science:'🔬',Espace:'🚀',Bricolage:'🔨',Chimie:'⚗️'};
+  const lf={fr:'🇫🇷',en:'🇬🇧',es:'🇪🇸'};
   const p=P();
   items.forEach(v=>{
     const d=document.createElement('div');d.className='vcard c'+v.cat[0];d.style.cursor='pointer';
-    d.innerHTML=`<div class="vth">${em[v.cat]||'🎬'}</div><div class="vinfo"><div class="vcat">${v.cat}</div><div class="vtit">${v.titre}</div><div class="vmeta">⏱ ${v.dur} min</div></div><div style="color:var(--tl);font-size:22px">▶</div>`;
+    const flag=lf[v.lang]||'';
+    d.innerHTML=`<div class="vth">${em[v.cat]||'🎬'}</div><div class="vinfo"><div class="vcat">${v.cat}${flag?' · '+flag:''}</div><div class="vtit">${v.titre}</div><div class="vmeta">⏱ ${v.dur} min</div></div><div style="color:var(--tl);font-size:22px">▶</div>`;
     d.onclick=()=>{
       if(p){p.done[v.id]=true;saveApp();}
       openVidPlayer(v);
