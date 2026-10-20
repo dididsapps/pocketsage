@@ -820,8 +820,9 @@ body.car .nb .ni-hz{color:#AAAACC}
 /* ── OVERLAY WIN/LOSE ── */
 #react-overlay{position:fixed;inset:0;z-index:700;pointer-events:none;
   display:flex;flex-direction:column;align-items:center;justify-content:flex-end;
-  padding-bottom:80px;opacity:0;transition:opacity .3s;visibility:hidden}
-#react-overlay.on{pointer-events:auto;visibility:visible}
+  padding-bottom:80px;opacity:0;transition:opacity .35s ease;
+  visibility:hidden;transition-property:opacity}
+#react-overlay.on{pointer-events:auto;visibility:visible;opacity:1}
 .rov-bubble{background:white;border-radius:24px;padding:14px 24px;font-size:22px;font-weight:900;
   color:#2D2D44;box-shadow:0 8px 32px rgba(0,0,0,.25);text-align:center;margin-bottom:12px;
   transform:scale(0);transition:transform .35s cubic-bezier(.34,1.56,.64,1);border:3px solid transparent}
@@ -4362,10 +4363,12 @@ function showReactOverlay(win){
     avEl.innerHTML='<div style="width:60px;height:60px;border-radius:50%;background:var(--vl);display:flex;align-items:center;justify-content:center;font-size:32px">😊</div>';
   }
   // Show
-  ov.style.visibility='';  // retire le style inline pour laisser le CSS .on jouer
-  ov.style.opacity='0';
+  ov.style.removeProperty('visibility');
+  ov.style.removeProperty('opacity');
+  ov.classList.remove('on');
+  // Force reflow avant d'ajouter .on pour que la transition CSS parte de 0
+  void ov.offsetWidth;
   ov.classList.add('on');
-  requestAnimationFrame(function(){requestAnimationFrame(function(){ov.style.opacity='1';});});
   // Click to dismiss
   ov.onclick=function(){hideReactOverlay();};
   if(_rovTimer)clearTimeout(_rovTimer);
@@ -4374,8 +4377,14 @@ function showReactOverlay(win){
 function hideReactOverlay(){
   const ov=document.getElementById('react-overlay');
   if(!ov)return;
-  ov.style.opacity='0';
-  setTimeout(function(){ov.classList.remove('on','win','lose');ov.style.visibility='hidden';},320);
+  ov.classList.remove('on','win','lose');
+  // La transition CSS opacity .35s s'occupe du fade ; on masque après
+  setTimeout(function(){
+    if(!ov.classList.contains('on')){
+      ov.style.visibility='hidden';
+      ov.style.removeProperty('opacity');
+    }
+  },370);
   if(_rovTimer){clearTimeout(_rovTimer);_rovTimer=null;}
 }
 function buildSenseiMiniSVG(win){
