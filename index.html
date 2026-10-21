@@ -1203,6 +1203,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <h2 id="sc-t">Bravo !</h2>
   <p id="sc-s">Super !</p>
   <div class="sc-stars" id="sc-str">⭐⭐⭐</div>
+  <div id="sc-chars" style="display:flex;justify-content:center;align-items:flex-end;gap:16px;margin:12px 0 4px"></div>
   <button class="sc-back" onclick="backMod()">Continuer !</button>
 </div>
 </div>
@@ -5318,6 +5319,16 @@ function showFinal(list,mod){
   document.getElementById('sc-t').textContent=pct===1?'Parfait !':pct>=.7?'Excellent !':pct>=.4?'Bien joué !':'Continue !';
   document.getElementById('sc-s').textContent=dn+'/'+list.length+' réussis · '+(p?p.score:0)+' ⭐ au total';
   document.getElementById('sc-str').textContent=pct===1?'⭐⭐⭐':pct>=.7?'⭐⭐':'⭐';
+  // GIFs de fin selon le score
+  var senseiGif,andrewGif;
+  if(pct<=0.25){senseiGif=IMG_SENSEI_KO;andrewGif=IMG_ANDREW_KO;}
+  else if(pct<=0.5){senseiGif=IMG_SENSEI_ENCOURAGE;andrewGif=IMG_ANDREW_ENCOURAGE;}
+  else{senseiGif=IMG_SENSEI_OK;andrewGif=IMG_ANDREW_OK;}
+  var charsEl=document.getElementById('sc-chars');
+  if(charsEl){
+    charsEl.innerHTML='<img src="'+senseiGif+'" style="height:110px;width:auto" alt="Sensei">'
+      +(p&&p.avatarId==='boy1'?'<img src="'+andrewGif+'" style="height:110px;width:auto" alt="Andrew">':'');
+  }
   show('score');if(pct>=.7){celebrate();sndStar();senseiDance();}else{senseiKO();}
   if(APP.car)ttsSpeak(document.getElementById('sc-t').textContent+'. '+dn+' exercices réussis sur '+list.length+'.');
 }
