@@ -47,6 +47,26 @@ body{font-family:var(--f);background:var(--bg);color:var(--t);
 body.car{--bg:var(--car-bg);--w:#242440;--t:#FFFFFF;--tl:#AAAACC;--ts:#666688;--sh:0 4px 20px rgba(0,0,0,.4)}
 body.car .bnav{background:#12122A;border-top-color:#333355}
 body.car .nb .nl{color:#AAAACC}
+
+/* ── MODE NUIT 🌙 — palette ambrée, zéro lumière bleue ── */
+body.night{
+  --bg:#1A1205;--w:#231A08;--t:#F0D080;--tl:#C8A040;--ts:#8A6820;
+  --v:#C47A00;--vl:#2A1E06;--vd:#A06000;
+  --c:#C45000;--cl:#2A1008;
+  --y:#E89000;--yl:#2A1E06;
+  --m:#8A9400;--ml:#1A1E06;
+  --o:#D06000;--ol:#2A1406;
+  --sh:0 4px 20px rgba(0,0,0,.6);
+}
+body.night .bnav{background:#120D02;border-top-color:#3A2A08}
+body.night .nb .nl{color:#C8A040}
+body.night .nb.active{background:rgba(196,122,0,.25)}
+body.night .scr{background:#1A1205}
+body.night .nxtbtn{background:#C47A00;color:#1A1205}
+body.night .nxtbtn:hover{background:#A06000}
+body.night input,body.night select{background:#231A08;color:#F0D080;border-color:#5A3A10}
+body.night .pav-mode{background:#231A08!important;border-color:#5A3A10!important;color:#F0D080}
+body.night .pav-mode.active{background:#3A2A08!important;border-color:#C47A00!important}
 body.car .nb.active{background:rgba(108,99,255,.25)}
 body.car .scr{background:var(--car-bg)}
 
@@ -4570,6 +4590,7 @@ let APP={
   cur:0,          // index du profil actif
   silent:false,   // mode silencieux
   car:false,      // mode voiture
+  night:false,    // mode nuit (palette ambrée, zéro lumière bleue)
   music:false,    // musique de fond
   curMod:null,
   curEx:null,
@@ -4580,6 +4601,8 @@ function loadApp(){
   try{const r=localStorage.getItem('psa3');if(r)Object.assign(APP,JSON.parse(r));}catch(e){}
   if(!APP.profiles)APP.profiles=[];
   if(APP.cur===undefined)APP.cur=0;
+  try{APP.night=localStorage.getItem('psa3-night')==='1';}catch(e){}
+  if(APP.night)document.body.classList.add('night');
 }
 function saveApp(){
   try{localStorage.setItem('psa3',JSON.stringify({profiles:APP.profiles,cur:APP.cur}));}catch(e){}
@@ -4939,6 +4962,20 @@ function buildProfBar(containerId){
     if(APP.car&&!APP.silent)ttsSpeak('Mode voiture activé. Grande interface et lecture automatique.');
   });
   bar.appendChild(mc);
+
+  // Mode nuit 🌙
+  const mn=document.createElement('button');mn.type='button';
+  mn.id='btn-night';
+  mn.className='pav-mode'+(APP.night?' active':'');mn.textContent='🌙';mn.title='Mode nuit — réduit la lumière bleue';
+  mn.style.cssText='width:44px;height:44px;border-radius:14px;font-size:20px;cursor:pointer;border:2px solid transparent;background:var(--bg);flex-shrink:0';
+  mn.addEventListener('click',function(){sndTap();APP.night=!APP.night;
+    document.body.classList.toggle('night',APP.night);
+    mn.classList.toggle('active',APP.night);
+    document.getElementById('mode-badge').textContent='🌙 Nuit';
+    document.getElementById('mode-badge').className='mode-badge'+(APP.night?' on':'');
+    try{localStorage.setItem('psa3-night',APP.night?'1':'');}catch(e){}
+  });
+  bar.appendChild(mn);
 }
 
 function addProfile(){
@@ -6801,7 +6838,9 @@ function renderAdvDefi(c, typeCfg){
   c.appendChild(card);
   const nb=document.createElement('button');nb.className='nxtbtn';nb.id='adv-defi-skip';nb.textContent='Passer ce défi →';
   nb.onclick=()=>advNextStep();c.appendChild(nb);
-  if(APP.car)setTimeout(()=>ttsSpeak(item.consigne),400);
+  const p2=P();
+  if(APP.car||ageNum((p2||{}).age||'8')<=8)
+    setTimeout(()=>ttsSpeak(item.nom.replace(/\p{Emoji}/gu,'').trim()+'. '+item.consigne,'fr-FR'),500);
 }
 
 let _advDefiTimer=null;
