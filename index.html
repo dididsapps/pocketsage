@@ -6334,6 +6334,7 @@ const ADV_TYPES = [
   {id:'defi',     label:'Défi',       emoji:'🏃', color:'#FFD166', bg:'linear-gradient(135deg,#FFD166,#FFA500)', pool:()=>DATA.defis,   isDefi:true},
   {id:'video',    label:'Vidéo 🎬',   emoji:'🎬', color:'#E040FB', bg:'linear-gradient(135deg,#E040FB,#AB47BC)', pool:()=>DATA.videos,  isVideo:true},
   {id:'repos',    label:'Pause 🌿',   emoji:'🌿', color:'#1a1a3e', bg:'linear-gradient(135deg,#090920,#1a3a6e)', pool:()=>[...DATA.histoires.filter(h=>h.court),...DATA.meditation], isRest:true},
+  {id:'sagesse',  label:'Sagesse ✨',  emoji:'✨', color:'#FF9F1C', bg:'linear-gradient(135deg,#FF9F1C,#FFD166)', pool:()=>[...POLITESSE_DATA.dictons.map(d=>({...d,type:'dicton'})),...POLITESSE_DATA.conseils.map(c=>({...c,type:'conseil'})),...POLITESSE_DATA.manieres.map(m=>({...m,type:'maniere'}))], isSagesse:true},
 ];
 
 // Schéma d'une session (20 étapes)
@@ -6410,14 +6411,21 @@ function buildAdventureSequence(){
   let videosAdded = 0;
   let defisAdded = 0;
 
+  let sagessesAdded = 0;
+  const maxSagesses = Math.max(1, Math.floor(totalQcm/7)); // 1 sagesse tous les ~7 QCM
+
   while(qcmCount < totalQcm){
     // Après chaque bloc de `span` QCM → pause histoire courte
     if(qcmCount>0 && qcmCount%span===0){
       seq.push('repos');
-      // Alterner : après la 1ère pause vidéo, après la 2ème défi, etc.
+      // Cycle : vidéo → défi → sagesse → vidéo…
       const pauseNum = qcmCount/span;
-      if(pauseNum%2===0 && videosAdded<videos){ seq.push('video'); videosAdded++; }
-      else if(pauseNum%2===1 && defisAdded<defis){ seq.push('defi'); defisAdded++; }
+      const cycle = pauseNum % 3;
+      if(cycle===0 && videosAdded<videos){ seq.push('video'); videosAdded++; }
+      else if(cycle===1 && defisAdded<defis){ seq.push('defi'); defisAdded++; }
+      else if(cycle===2 && sagessesAdded<maxSagesses){ seq.push('sagesse'); sagessesAdded++; }
+      else if(videosAdded<videos){ seq.push('video'); videosAdded++; }
+      else if(defisAdded<defis){ seq.push('defi'); defisAdded++; }
     }
     // QCM
     let candidates = pool.filter(t=>t!==lastType);
@@ -6426,9 +6434,10 @@ function buildAdventureSequence(){
     lastType = t;
     qcmCount++;
   }
-  // Pause finale si pas encore faite
+  // Pause finale
   seq.push('repos');
-  if(videosAdded<videos){ seq.push('video'); }
+  if(sagessesAdded<maxSagesses){ seq.push('sagesse'); }
+  else if(videosAdded<videos){ seq.push('video'); }
   return seq;
 }
 
@@ -6469,9 +6478,10 @@ function startAdventure(){
   ADV.sessionStart = Date.now();
   // Estimation : QCM≈30s, repos≈120s, video≈240s, defi≈60s
   ADV.sessionDur = ADV.sequence.reduce((acc,t)=>{
-    if(t==='repos') return acc+120;
-    if(t==='video') return acc+240;
-    if(t==='defi')  return acc+60;
+    if(t==='repos')    return acc+120;
+    if(t==='video')    return acc+240;
+    if(t==='defi')     return acc+60;
+    if(t==='sagesse')  return acc+30;
     return acc+30; // QCM
   },0);
   ADV.score = p.score;
@@ -6481,7 +6491,9 @@ function startAdventure(){
   ADV.qcmQueue = {};
   ADV_TYPES.forEach(t=>{
     const pool = t.pool();
-    ADV.qcmQueue[t.id] = shuffle([...pool]);
+    // sagesse, repos, video, defi gèrent leur propre rendu — pas besoin de queue QCM
+    if(!t.isSagesse && !t.isRest && !t.isVideo && !t.isDefi)
+      ADV.qcmQueue[t.id] = shuffle([...pool]);
   });
   // Démarrer
   show('adventure');
@@ -6606,6 +6618,8 @@ function renderAdvStep(){
     renderAdvRest(c, typeCfg);
   } else if(typeCfg.isDefi){
     renderAdvDefi(c, typeCfg);
+  } else if(typeCfg.isSagesse){
+    renderAdvSagesse(c, typeCfg);
   } else {
     renderAdvQCM(c, typeCfg, typeId);
   }
@@ -6817,7 +6831,7 @@ function renderAdvRest(c, typeCfg){
     <button style="${_ttsStopStyle}" onclick="ttsStop()">⏹ Stop</button>`;
   c.appendChild(tbar);
   // Bouton Passer (toujours visible) + bouton Reprendre
-  const skipNb=document.createElement('button');skipNb.className='nxtbtn show';skipNb.style.cssText='background:rgba(255,255,255,.15);color:#fff;margin-bottom:8px;font-size:13px';skipNb.textContent='⏭ Passer →';
+  const skipNb=document.createElement('button');skipNb.className='nxtbtn show';skipNb.style.cssText='background:var(--vl);color:var(--v);border:2px solid var(--v);margin-bottom:8px;font-size:13px';skipNb.textContent='⏭ Passer →';
   skipNb.onclick=()=>{ttsStop();advNextStep();};c.appendChild(skipNb);
   if(APP.car||ageNum((P()||{}).age||'8')<=8)
     setTimeout(()=>ttsSpeak(item.titre+'. '+item.texte,'fr-FR'),500);
@@ -6836,11 +6850,40 @@ function renderAdvDefi(c, typeCfg){
     <button id="adv-defi-start" style="background:#fff;color:#00856B;border:none;border-radius:14px;padding:12px 28px;font-family:var(--f);font-size:16px;font-weight:900;cursor:pointer" onclick="advStartDefiTimer(${dur})">▶ Commencer !</button>
     <button id="adv-defi-done" style="display:none;background:var(--y);color:#4A3800;border:none;border-radius:14px;padding:12px 28px;font-family:var(--f);font-size:16px;font-weight:900;cursor:pointer;margin-top:8px" onclick="advDefiDone('${item.id}')">✅ J'ai réussi !</button>`;
   c.appendChild(card);
-  const nb=document.createElement('button');nb.className='nxtbtn';nb.id='adv-defi-skip';nb.textContent='Passer ce défi →';
-  nb.onclick=()=>advNextStep();c.appendChild(nb);
+  const nb=document.createElement('button');nb.className='nxtbtn show';nb.id='adv-defi-skip';nb.style.cssText='font-size:13px;margin-bottom:4px';nb.textContent='⏭ Passer ce défi →';
+  nb.onclick=()=>{clearInterval(_advDefiTimer);advNextStep();};c.appendChild(nb);
   const p2=P();
   if(APP.car||ageNum((p2||{}).age||'8')<=8)
     setTimeout(()=>ttsSpeak(item.nom.replace(/\p{Emoji}/gu,'').trim()+'. '+item.consigne,'fr-FR'),500);
+}
+
+function renderAdvSagesse(c, typeCfg){
+  const pool=typeCfg.pool();
+  const item=pool[Math.floor(Math.random()*pool.length)];
+  if(!item){advNextStep();return;}
+  const isDicton=item.type==='dicton';
+  const isManiere=item.type==='maniere';
+  const card=document.createElement('div');
+  card.style.cssText='background:linear-gradient(135deg,#FF9F1C,#FFD166);border-radius:20px;padding:24px 18px;text-align:center;color:#4A2800;margin-bottom:14px';
+  if(isDicton){
+    card.innerHTML=`<div style="font-size:36px;margin-bottom:10px">${item.icon||'✨'}</div>
+      <div style="font-size:15px;font-weight:800;line-height:1.6;font-style:italic">"${item.texte}"</div>`;
+  } else if(isManiere){
+    card.innerHTML=`<div style="font-size:36px;margin-bottom:8px">${item.icon||'🤝'}</div>
+      <div style="font-size:16px;font-weight:900;margin-bottom:8px">${item.titre}</div>
+      <div style="font-size:14px;font-weight:600;line-height:1.6;opacity:.9">${item.conseil}</div>`;
+  } else {
+    card.innerHTML=`<div style="font-size:36px;margin-bottom:8px">${item.icon||'💡'}</div>
+      <div style="font-size:16px;font-weight:900;margin-bottom:8px">${item.titre}</div>
+      <div style="font-size:14px;font-weight:600;line-height:1.6;opacity:.9">${item.texte}</div>`;
+  }
+  c.appendChild(card);
+  const nb=document.createElement('button');nb.className='nxtbtn show';nb.style.cssText='font-size:13px';nb.textContent='✅ Compris →';
+  nb.onclick=()=>advNextStep();c.appendChild(nb);
+  const p2=P();
+  const txt=isDicton?item.texte:(item.conseil||item.texte||'');
+  if(APP.car||ageNum((p2||{}).age||'8')<=8)
+    setTimeout(()=>ttsSpeak(txt,'fr-FR'),400);
 }
 
 let _advDefiTimer=null;
