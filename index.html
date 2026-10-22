@@ -4736,19 +4736,22 @@ function showReactOverlay(win){
     ov.className='';
     ov.classList.add('lose');
   }
-  // Sensei : GIF selon humeur
-  var senseiGif=win?IMG_SENSEI_OK:IMG_SENSEI_KO;
+  // Sensei : GIF selon humeur — alterner entre 2 GIFs positifs ou 2 négatifs (indépendant de l'avatar)
+  var senseiGif;
+  if(win){senseiGif=Math.random()<.5?IMG_SENSEI_OK:IMG_SENSEI_SUPER;}
+  else{senseiGif=Math.random()<.5?IMG_SENSEI_KO:IMG_SENSEI_ENCOURAGE;}
   senseiEl.innerHTML='<img src="'+senseiGif+'" style="height:105px;width:auto" alt="Sensei">';
-  // Avatar joueur
+  // Avatar joueur — humeur aléatoire parmi les 2 variantes du résultat (sans suivre le Sensei)
   const p=P();
   if(p&&p.avatarId){
     // Si Andrew (boy1) → GIF selon humeur
     if(p.avatarId==='boy1'){
-      var andrewGif=win?IMG_ANDREW_OK:IMG_ANDREW_KO;
+      var andrewGif=win?(Math.random()<.5?IMG_ANDREW_OK:IMG_ANDREW_SUPER):(Math.random()<.5?IMG_ANDREW_KO:IMG_ANDREW_ENCOURAGE);
       avEl.innerHTML='<img src="'+andrewGif+'" style="height:110px;width:auto" alt="Andrew">';
     }else if(GIF_MAP[p.avatarId]){
       var gm=GIF_MAP[p.avatarId];
-      var avatarGif=_GH+(win?gm.content:gm.pasBienDuTout);
+      var avatarKey=win?(Math.random()<.5?'content':'superContent'):(Math.random()<.5?'pasBienDuTout':'pasBien');
+      var avatarGif=_GH+gm[avatarKey];
       avEl.innerHTML='<img src="'+avatarGif+'" style="height:110px;width:auto" alt="Avatar">';
     }else{
       var avSvg=getAvatarSVG(p.avatarId,'md');
@@ -6770,11 +6773,14 @@ function renderAdvRest(c, typeCfg){
   card.appendChild(inner);c.appendChild(card);
   // TTS
   const tbar=document.createElement('div');tbar.style.cssText='display:flex;gap:8px;margin-bottom:12px';
-  tbar.innerHTML=`<button class="nuit-tb" onclick="ttsSpeak('${(item.texte||'').replace(/'/g,"\\'").replace(/\n/g,' ')}','fr-FR')">🔊 Lire à voix haute</button>
-    <button class="nuit-tb" onclick="ttsStop()">⏹ Stop</button>`;
+  const _ttsStyle='background:#6C63FF;border:none;color:#fff;border-radius:10px;padding:8px 14px;font-family:var(--f);font-size:12px;font-weight:700;cursor:pointer';
+  const _ttsStopStyle='background:rgba(0,0,0,.12);border:none;color:var(--t);border-radius:10px;padding:8px 14px;font-family:var(--f);font-size:12px;font-weight:700;cursor:pointer';
+  tbar.innerHTML=`<button style="${_ttsStyle}" onclick="ttsSpeak('${(item.texte||'').replace(/'/g,"\\'").replace(/\n/g,' ')}','fr-FR')">🔊 Lire à voix haute</button>
+    <button style="${_ttsStopStyle}" onclick="ttsStop()">⏹ Stop</button>`;
   c.appendChild(tbar);
-  const nb=document.createElement('button');nb.className='nxtbtn show';nb.textContent='Reprendre l\'aventure →';
-  nb.onclick=()=>advNextStep();c.appendChild(nb);
+  // Bouton Passer (toujours visible) + bouton Reprendre
+  const skipNb=document.createElement('button');skipNb.className='nxtbtn show';skipNb.style.cssText='background:rgba(255,255,255,.15);color:#fff;margin-bottom:8px;font-size:13px';skipNb.textContent='⏭ Passer →';
+  skipNb.onclick=()=>{ttsStop();advNextStep();};c.appendChild(skipNb);
   if(APP.car||ageNum((P()||{}).age||'8')<=8)
     setTimeout(()=>ttsSpeak(item.titre+'. '+item.texte,'fr-FR'),500);
 }
