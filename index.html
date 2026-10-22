@@ -1368,18 +1368,403 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 <script>
 const _GH="https://dididsapps.github.io/pocketsage/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
-const IMG_ANDREW_GIF_BRAVO=_GH+"Andrew_7-ans_4-8-ans_bravo.gif"; // legacy
-const IMG_SENSEI_GIF_BRAVO=_GH+"Sensei_bravo.gif"; // legacy
-const IMG_SENSEI_NEUTRE=_GH+"Sensei_neutre_transparent.png";
-// Nouveaux GIFs par humeur
-const IMG_SENSEI_OK=_GH+"sensei_ok.gif";
-const IMG_SENSEI_NEUTRE_GIF=_GH+"sensei_neutre.gif";
-const IMG_SENSEI_KO=_GH+"sensei_ko.gif";
-const IMG_SENSEI_ENCOURAGE=_GH+"sensei_encourage.gif";
-const IMG_ANDREW_OK=_GH+"andrew_ok.gif";
-const IMG_ANDREW_NEUTRE_GIF=_GH+"andrew_neutre.gif";
-const IMG_ANDREW_KO=_GH+"andrew_ko.gif";
-const IMG_ANDREW_ENCOURAGE=_GH+"andrew_encourage.gif";
+// GIFs Sensei par humeur (4 niveaux)
+const IMG_SENSEI_OK=_GH+'Sensei_heureux.gif';                          // 51-75%
+const IMG_SENSEI_SUPER=_GH+'Sensei_super-content-salto-vrille.gif';    // 76-100%
+const IMG_SENSEI_KO=_GH+'Sensei_pas-bien-du-tout-mains-au-visage.gif'; // 0-25%
+const IMG_SENSEI_ENCOURAGE=_GH+'Sensei_non-pas-bien.gif';              // 26-50%
+// GIFs Andrew (boy1) par humeur (4 niveaux)
+const IMG_ANDREW_OK=_GH+'Andrew_7-ans_4-8-ans_content_applaudissements-pouce-leve.gif';
+const IMG_ANDREW_SUPER=_GH+'Andrew_7-ans_4-8-ans_super-content_air-dunk.gif';
+const IMG_ANDREW_KO=_GH+'Andrew_7-ans_4-8-ans_pas-bien-du-tout_mains-sur-visage.gif';
+const IMG_ANDREW_ENCOURAGE=_GH+'Andrew_7-ans_4-8-ans_pas-bien_non-index-leve.gif';
+// GIF_MAP : tous les avatars PNG (16 avatars × 4 groupes d'âge × 4 humeurs)
+var GIF_MAP = {
+  "avatar-01_14-18-ans": {
+    content: "avatar-01_14-18-ans_fille_peau-foncee_cheveux-boucles_bomber-emeraude_3d_content_clin-oeil-complice.gif",
+    pasBien: "avatar-01_14-18-ans_fille_peau-foncee_cheveux-boucles_bomber-emeraude_3d_pas-bien_paume-et-tete.gif",
+    pasBienDuTout: "avatar-01_14-18-ans_fille_peau-foncee_cheveux-boucles_bomber-emeraude_3d_pas-bien-du-tout_bras-serres-triste.gif",
+    superContent: "avatar-01_14-18-ans_fille_peau-foncee_cheveux-boucles_bomber-emeraude_3d_super-content_pirouette-joyeuse.gif",
+  },
+  "avatar-01_18-et-plus": {
+    content: "avatar-01_18-et-plus_femme_peau-foncee_cheveux-boucles_blazer-bleu_3d_content_merci-main-sur-coeur.gif",
+    pasBien: "avatar-01_18-et-plus_femme_peau-foncee_cheveux-boucles_blazer-bleu_3d_pas-bien_poing-sur-hanche.gif",
+    pasBienDuTout: "avatar-01_18-et-plus_femme_peau-foncee_cheveux-boucles_blazer-bleu_3d_pas-bien-du-tout_main-sur-coeur-decue.gif",
+    superContent: "avatar-01_18-et-plus_femme_peau-foncee_cheveux-boucles_blazer-bleu_3d_super-content_pas-robot.gif",
+  },
+  "avatar-01_4-8-ans": {
+    content: "avatar-01_4-8-ans_fille_peau-foncee_cheveux-afro_salopette-corail_3d_content_coeur-des-mains.gif",
+    pasBien: "avatar-01_4-8-ans_fille_peau-foncee_cheveux-afro_salopette-corail_3d_pas-bien_paume-stop.gif",
+    pasBienDuTout: "avatar-01_4-8-ans_fille_peau-foncee_cheveux-afro_salopette-corail_3d_pas-bien-du-tout_mains-sur-visage.gif",
+    superContent: "avatar-01_4-8-ans_fille_peau-foncee_cheveux-afro_salopette-corail_3d_super-content_saut-etoile.gif",
+  },
+  "avatar-01_9-13-ans": {
+    content: "avatar-01_9-13-ans_fille_peau-foncee_tresses-noires_sweat-ocre_3d_content_salut-en-cercle.gif",
+    pasBien: "avatar-01_9-13-ans_fille_peau-foncee_tresses-noires_sweat-ocre_3d_pas-bien_pouce-vers-bas.gif",
+    pasBienDuTout: "avatar-01_9-13-ans_fille_peau-foncee_tresses-noires_sweat-ocre_3d_pas-bien-du-tout_main-sur-joue-triste.gif",
+    superContent: "avatar-01_9-13-ans_fille_peau-foncee_tresses-noires_sweat-ocre_3d_super-content_air-guitare.gif",
+  },
+  "avatar-02_14-18-ans": {
+    content: "avatar-02_14-18-ans_garcon_peau-claire_cheveux-blonds_veste-jean_3d_content_check-victoire.gif",
+    pasBien: "avatar-02_14-18-ans_garcon_peau-claire_cheveux-blonds_veste-jean_3d_pas-bien_doigt-sur-la-joue.gif",
+    pasBienDuTout: "avatar-02_14-18-ans_garcon_peau-claire_cheveux-blonds_veste-jean_3d_pas-bien-du-tout_regard-au-sol.gif",
+    superContent: "avatar-02_14-18-ans_garcon_peau-claire_cheveux-blonds_veste-jean_3d_super-content_saut-du-champion.gif",
+  },
+  "avatar-02_18-et-plus": {
+    content: "avatar-02_18-et-plus_homme_peau-claire_cheveux-bruns_barbe_surchemise-olive_3d_content_check-victoire.gif",
+    pasBien: "avatar-02_18-et-plus_homme_peau-claire_cheveux-bruns_barbe_surchemise-olive_3d_pas-bien_paume-stop.gif",
+    pasBienDuTout: "avatar-02_18-et-plus_homme_peau-claire_cheveux-bruns_barbe_surchemise-olive_3d_pas-bien-du-tout_joues-dans-paumes.gif",
+    superContent: "avatar-02_18-et-plus_homme_peau-claire_cheveux-bruns_barbe_surchemise-olive_3d_super-content_saut-de-biche.gif",
+  },
+  "avatar-02_4-8-ans": {
+    content: "avatar-02_4-8-ans_garcon_peau-claire_cheveux-roux_sweat-vert_3d_content_check-victoire.gif",
+    pasBien: "avatar-02_4-8-ans_garcon_peau-claire_cheveux-roux_sweat-vert_3d_pas-bien_non-de-la-tete.gif",
+    pasBienDuTout: "avatar-02_4-8-ans_garcon_peau-claire_cheveux-roux_sweat-vert_3d_pas-bien-du-tout_tete-dans-les-mains.gif",
+    superContent: "avatar-02_4-8-ans_garcon_peau-claire_cheveux-roux_sweat-vert_3d_super-content_bond-super-heros.gif",
+  },
+  "avatar-02_9-13-ans": {
+    content: "avatar-02_9-13-ans_garcon_peau-claire_cheveux-chatains_veste-bleue_3d_content_check-victoire.gif",
+    pasBien: "avatar-02_9-13-ans_garcon_peau-claire_cheveux-chatains_veste-bleue_3d_pas-bien_deux-paumes-stop.gif",
+    pasBienDuTout: "avatar-02_9-13-ans_garcon_peau-claire_cheveux-chatains_veste-bleue_3d_pas-bien-du-tout_regret-mains-jointes.gif",
+    superContent: "avatar-02_9-13-ans_garcon_peau-claire_cheveux-chatains_veste-bleue_3d_super-content_pas-chasses.gif",
+  },
+  "avatar-03_14-18-ans": {
+    content: "avatar-03_14-18-ans_fille_peau-claire_cheveux-noirs-carre_pull-bordeaux_3d_content_reverence-dansee.gif",
+    pasBien: "avatar-03_14-18-ans_fille_peau-claire_cheveux-noirs-carre_pull-bordeaux_3d_pas-bien_sourcils-fronces.gif",
+    pasBienDuTout: "avatar-03_14-18-ans_fille_peau-claire_cheveux-noirs-carre_pull-bordeaux_3d_pas-bien-du-tout_mains-sur-visage.gif",
+    superContent: "avatar-03_14-18-ans_fille_peau-claire_cheveux-noirs-carre_pull-bordeaux_3d_super-content_danse-des-epaules.gif",
+  },
+  "avatar-03_18-et-plus": {
+    content: "avatar-03_18-et-plus_femme_peau-claire_cheveux-noirs-carre_pull-orange_3d_content_reverence-dansee.gif",
+    pasBien: "avatar-03_18-et-plus_femme_peau-claire_cheveux-noirs-carre_pull-orange_3d_pas-bien_non-de-la-tete.gif",
+    pasBienDuTout: "avatar-03_18-et-plus_femme_peau-claire_cheveux-noirs-carre_pull-orange_3d_pas-bien-du-tout_cache-les-yeux.gif",
+    superContent: "avatar-03_18-et-plus_femme_peau-claire_cheveux-noirs-carre_pull-orange_3d_super-content_air-batterie.gif",
+  },
+  "avatar-03_4-8-ans": {
+    content: "avatar-03_4-8-ans_fille_peau-claire_cheveux-noirs-carre_robe-lilas_3d_content_reverence-dansee.gif",
+    pasBien: "avatar-03_4-8-ans_fille_peau-claire_cheveux-noirs-carre_robe-lilas_3d_pas-bien_bras-croises.gif",
+    pasBienDuTout: "avatar-03_4-8-ans_fille_peau-claire_cheveux-noirs-carre_robe-lilas_3d_pas-bien-du-tout_visage-cache.gif",
+    superContent: "avatar-03_4-8-ans_fille_peau-claire_cheveux-noirs-carre_robe-lilas_3d_super-content_tour-de-danse.gif",
+  },
+  "avatar-03_9-13-ans": {
+    content: "avatar-03_9-13-ans_fille_peau-claire_queue-de-cheval-noire_veste-sport-menthe_3d_content_reverence-dansee.gif",
+    pasBien: "avatar-03_9-13-ans_fille_peau-claire_queue-de-cheval-noire_veste-sport-menthe_3d_pas-bien_petit-recul.gif",
+    pasBienDuTout: "avatar-03_9-13-ans_fille_peau-claire_queue-de-cheval-noire_veste-sport-menthe_3d_pas-bien-du-tout_deux-mains-au-front.gif",
+    superContent: "avatar-03_9-13-ans_fille_peau-claire_queue-de-cheval-noire_veste-sport-menthe_3d_super-content_saut-ciseaux.gif",
+  },
+  "avatar-04_14-18-ans": {
+    content: "avatar-04_14-18-ans_garcon_peau-mate_cheveux-boucles_sweat-terracotta_3d_content_poings-de-victoire.gif",
+    pasBien: "avatar-04_14-18-ans_garcon_peau-mate_cheveux-boucles_sweat-terracotta_3d_pas-bien_main-balayage.gif",
+    pasBienDuTout: "avatar-04_14-18-ans_garcon_peau-mate_cheveux-boucles_sweat-terracotta_3d_pas-bien-du-tout_tete-dans-les-mains.gif",
+    superContent: "avatar-04_14-18-ans_garcon_peau-mate_cheveux-boucles_sweat-terracotta_3d_super-content_pas-robot.gif",
+  },
+  "avatar-04_18-et-plus": {
+    content: "avatar-04_18-et-plus_homme_peau-foncee_crane-rase_lunettes_polo-bordeaux_3d_content_poings-de-victoire.gif",
+    pasBien: "avatar-04_18-et-plus_homme_peau-foncee_crane-rase_lunettes_polo-bordeaux_3d_pas-bien_bras-croises.gif",
+    pasBienDuTout: "avatar-04_18-et-plus_homme_peau-foncee_crane-rase_lunettes_polo-bordeaux_3d_pas-bien-du-tout_mains-jointes-triste.gif",
+    superContent: "avatar-04_18-et-plus_homme_peau-foncee_crane-rase_lunettes_polo-bordeaux_3d_super-content_danse-hip-hop.gif",
+  },
+  "avatar-04_4-8-ans": {
+    content: "avatar-04_4-8-ans_garcon_peau-mate_cheveux-noirs-boucles_polo-turquoise_3d_content_poings-de-victoire.gif",
+    pasBien: "avatar-04_4-8-ans_garcon_peau-mate_cheveux-noirs-boucles_polo-turquoise_3d_pas-bien_index-non.gif",
+    pasBienDuTout: "avatar-04_4-8-ans_garcon_peau-mate_cheveux-noirs-boucles_polo-turquoise_3d_pas-bien-du-tout_depit-tete-baissee.gif",
+    superContent: "avatar-04_4-8-ans_garcon_peau-mate_cheveux-noirs-boucles_polo-turquoise_3d_super-content_danse-des-talons.gif",
+  },
+  "avatar-04_9-13-ans": {
+    content: "avatar-04_9-13-ans_garcon_peau-mate_cheveux-noirs-boucles_sweat-violet_3d_content_poings-de-victoire.gif",
+    pasBien: "avatar-04_9-13-ans_garcon_peau-mate_cheveux-noirs-boucles_sweat-violet_3d_pas-bien_regard-de-cote.gif",
+    pasBienDuTout: "avatar-04_9-13-ans_garcon_peau-mate_cheveux-noirs-boucles_sweat-violet_3d_pas-bien-du-tout_mains-ouvertes-depit.gif",
+    superContent: "avatar-04_9-13-ans_garcon_peau-mate_cheveux-noirs-boucles_sweat-violet_3d_super-content_pirouette-joyeuse.gif",
+  },
+  "avatar-05_14-18-ans": {
+    content: "avatar-05_14-18-ans_fille_peau-mate_cheveux-bruns-ondules_lunettes_cardigan-lilas_3d_content_salut-des-doigts.gif",
+    pasBien: "avatar-05_14-18-ans_fille_peau-mate_cheveux-bruns-ondules_lunettes_cardigan-lilas_3d_pas-bien_epaules-decue.gif",
+    pasBienDuTout: "avatar-05_14-18-ans_fille_peau-mate_cheveux-bruns-ondules_lunettes_cardigan-lilas_3d_pas-bien-du-tout_visage-cache.gif",
+    superContent: "avatar-05_14-18-ans_fille_peau-mate_cheveux-bruns-ondules_lunettes_cardigan-lilas_3d_super-content_saut-de-biche.gif",
+  },
+  "avatar-05_18-et-plus": {
+    content: "avatar-05_18-et-plus_femme_peau-mate_hijab-petrole_tunique-creme_3d_content_salut-des-doigts.gif",
+    pasBien: "avatar-05_18-et-plus_femme_peau-mate_hijab-petrole_tunique-creme_3d_pas-bien_index-non.gif",
+    pasBienDuTout: "avatar-05_18-et-plus_femme_peau-mate_hijab-petrole_tunique-creme_3d_pas-bien-du-tout_deux-mains-au-front.gif",
+    superContent: "avatar-05_18-et-plus_femme_peau-mate_hijab-petrole_tunique-creme_3d_super-content_saut-rotation-quart.gif",
+  },
+  "avatar-05_4-8-ans": {
+    content: "avatar-05_4-8-ans_fille_peau-mate_tresses-brunes_sweat-turquoise_3d_content_salut-des-doigts.gif",
+    pasBien: "avatar-05_4-8-ans_fille_peau-mate_tresses-brunes_sweat-turquoise_3d_pas-bien_main-sur-hanche.gif",
+    pasBienDuTout: "avatar-05_4-8-ans_fille_peau-mate_tresses-brunes_sweat-turquoise_3d_pas-bien-du-tout_larmes-essuyees.gif",
+    superContent: "avatar-05_4-8-ans_fille_peau-mate_tresses-brunes_sweat-turquoise_3d_super-content_pas-chasses.gif",
+  },
+  "avatar-05_9-13-ans": {
+    content: "avatar-05_9-13-ans_fille_peau-claire_cheveux-roux_lunettes_cardigan-bleu_3d_content_salut-des-doigts.gif",
+    pasBien: "avatar-05_9-13-ans_fille_peau-claire_cheveux-roux_lunettes_cardigan-bleu_3d_pas-bien_croix-des-avant-bras.gif",
+    pasBienDuTout: "avatar-05_9-13-ans_fille_peau-claire_cheveux-roux_lunettes_cardigan-bleu_3d_pas-bien-du-tout_bras-serres-triste.gif",
+    superContent: "avatar-05_9-13-ans_fille_peau-claire_cheveux-roux_lunettes_cardigan-bleu_3d_super-content_saut-du-champion.gif",
+  },
+  "avatar-06_14-18-ans": {
+    content: "avatar-06_14-18-ans_garcon_peau-foncee_cheveux-twists_veste-sport-petrole_3d_content_salut-sportif.gif",
+    pasBien: "avatar-06_14-18-ans_garcon_peau-foncee_cheveux-twists_veste-sport-petrole_3d_pas-bien_poing-sur-hanche.gif",
+    pasBienDuTout: "avatar-06_14-18-ans_garcon_peau-foncee_cheveux-twists_veste-sport-petrole_3d_pas-bien-du-tout_main-sur-front.gif",
+    superContent: "avatar-06_14-18-ans_garcon_peau-foncee_cheveux-twists_veste-sport-petrole_3d_super-content_air-batterie.gif",
+  },
+  "avatar-06_18-et-plus": {
+    content: "avatar-06_18-et-plus_homme_peau-mate_cheveux-poivre-sel_barbe_veste-marine_3d_content_salut-sportif.gif",
+    pasBien: "avatar-06_18-et-plus_homme_peau-mate_cheveux-poivre-sel_barbe_veste-marine_3d_pas-bien_main-sur-hanche.gif",
+    pasBienDuTout: "avatar-06_18-et-plus_homme_peau-mate_cheveux-poivre-sel_barbe_veste-marine_3d_pas-bien-du-tout_regret-mains-jointes.gif",
+    superContent: "avatar-06_18-et-plus_homme_peau-mate_cheveux-poivre-sel_barbe_veste-marine_3d_super-content_tourbillon-des-bras.gif",
+  },
+  "avatar-06_4-8-ans": {
+    content: "avatar-06_4-8-ans_garcon_peau-foncee_cheveux-courts_lunettes_veste-orange_3d_content_salut-sportif.gif",
+    pasBien: "avatar-06_4-8-ans_garcon_peau-foncee_cheveux-courts_lunettes_veste-orange_3d_pas-bien_pouce-vers-bas.gif",
+    pasBienDuTout: "avatar-06_4-8-ans_garcon_peau-foncee_cheveux-courts_lunettes_veste-orange_3d_pas-bien-du-tout_bras-replies-triste.gif",
+    superContent: "avatar-06_4-8-ans_garcon_peau-foncee_cheveux-courts_lunettes_veste-orange_3d_super-content_saut-ciseaux.gif",
+  },
+  "avatar-06_9-13-ans": {
+    content: "avatar-06_9-13-ans_garcon_peau-foncee_cheveux-afro_tshirt-orange_3d_content_salut-sportif.gif",
+    pasBien: "avatar-06_9-13-ans_garcon_peau-foncee_cheveux-afro_tshirt-orange_3d_pas-bien_paume-et-tete.gif",
+    pasBienDuTout: "avatar-06_9-13-ans_garcon_peau-foncee_cheveux-afro_tshirt-orange_3d_pas-bien-du-tout_visage-dans-paumes.gif",
+    superContent: "avatar-06_9-13-ans_garcon_peau-foncee_cheveux-afro_tshirt-orange_3d_super-content_danse-des-epaules.gif",
+  },
+  "avatar-07_14-18-ans": {
+    content: "avatar-07_14-18-ans_fille_peau-claire_cheveux-cuivres-courts_salopette-marine_3d_content_etoile-des-bras.gif",
+    pasBien: "avatar-07_14-18-ans_fille_peau-claire_cheveux-cuivres-courts_salopette-marine_3d_pas-bien_paume-stop.gif",
+    pasBienDuTout: "avatar-07_14-18-ans_fille_peau-claire_cheveux-cuivres-courts_salopette-marine_3d_pas-bien-du-tout_bras-serres-triste.gif",
+    superContent: "avatar-07_14-18-ans_fille_peau-claire_cheveux-cuivres-courts_salopette-marine_3d_super-content_danse-hip-hop.gif",
+  },
+  "avatar-07_18-et-plus": {
+    content: "avatar-07_18-et-plus_femme_peau-claire_cheveux-gris-boucles_cardigan-prune_3d_content_etoile-des-bras.gif",
+    pasBien: "avatar-07_18-et-plus_femme_peau-claire_cheveux-gris-boucles_cardigan-prune_3d_pas-bien_pouce-vers-bas.gif",
+    pasBienDuTout: "avatar-07_18-et-plus_femme_peau-claire_cheveux-gris-boucles_cardigan-prune_3d_pas-bien-du-tout_main-sur-coeur-decue.gif",
+    superContent: "avatar-07_18-et-plus_femme_peau-claire_cheveux-gris-boucles_cardigan-prune_3d_super-content_bond-poing-en-air.gif",
+  },
+  "avatar-07_4-8-ans": {
+    content: "avatar-07_4-8-ans_fille_peau-mate_cheveux-auburn_veste-jean_jupe-peche_3d_content_etoile-des-bras.gif",
+    pasBien: "avatar-07_4-8-ans_fille_peau-mate_cheveux-auburn_veste-jean_jupe-peche_3d_pas-bien_deux-paumes-stop.gif",
+    pasBienDuTout: "avatar-07_4-8-ans_fille_peau-mate_cheveux-auburn_veste-jean_jupe-peche_3d_pas-bien-du-tout_joues-dans-paumes.gif",
+    superContent: "avatar-07_4-8-ans_fille_peau-mate_cheveux-auburn_veste-jean_jupe-peche_3d_super-content_pirouette-joyeuse.gif",
+  },
+  "avatar-07_9-13-ans": {
+    content: "avatar-07_9-13-ans_fille_peau-mate_hijab-creme_tunique-rose_3d_content_etoile-des-bras.gif",
+    pasBien: "avatar-07_9-13-ans_fille_peau-mate_hijab-creme_tunique-rose_3d_pas-bien_doigt-sur-la-joue.gif",
+    pasBienDuTout: "avatar-07_9-13-ans_fille_peau-mate_hijab-creme_tunique-rose_3d_pas-bien-du-tout_regard-au-sol.gif",
+    superContent: "avatar-07_9-13-ans_fille_peau-mate_hijab-creme_tunique-rose_3d_super-content_pas-robot.gif",
+  },
+  "avatar-08_14-18-ans": {
+    content: "avatar-08_14-18-ans_presentation-androgyne_peau-mate_cheveux-bruns-courts_surchemise-creme_3d_content_double-pouce.gif",
+    pasBien: "avatar-08_14-18-ans_presentation-androgyne_peau-mate_cheveux-bruns-courts_surchemise-creme_3d_pas-bien_non-de-la-tete.gif",
+    pasBienDuTout: "avatar-08_14-18-ans_presentation-androgyne_peau-mate_cheveux-bruns-courts_surchemise-creme_3d_pas-bien-du-tout_bras-replies-triste.gif",
+    superContent: "avatar-08_14-18-ans_presentation-androgyne_peau-mate_cheveux-bruns-courts_surchemise-creme_3d_super-content_saut-rotation-quart.gif",
+  },
+  "avatar-08_18-et-plus": {
+    content: "avatar-08_18-et-plus_presentation-androgyne_peau-mate_cheveux-auburn-courts_veste-moutarde_3d_content_double-pouce.gif",
+    pasBien: "avatar-08_18-et-plus_presentation-androgyne_peau-mate_cheveux-auburn-courts_veste-moutarde_3d_pas-bien_deux-paumes-stop.gif",
+    pasBienDuTout: "avatar-08_18-et-plus_presentation-androgyne_peau-mate_cheveux-auburn-courts_veste-moutarde_3d_pas-bien-du-tout_visage-dans-paumes.gif",
+    superContent: "avatar-08_18-et-plus_presentation-androgyne_peau-mate_cheveux-auburn-courts_veste-moutarde_3d_super-content_saut-etoile.gif",
+  },
+  "avatar-08_4-8-ans": {
+    content: "avatar-08_4-8-ans_garcon_peau-claire_cheveux-blonds_salopette-jean_3d_content_double-pouce.gif",
+    pasBien: "avatar-08_4-8-ans_garcon_peau-claire_cheveux-blonds_salopette-jean_3d_pas-bien_petit-recul.gif",
+    pasBienDuTout: "avatar-08_4-8-ans_garcon_peau-claire_cheveux-blonds_salopette-jean_3d_pas-bien-du-tout_cache-les-yeux.gif",
+    superContent: "avatar-08_4-8-ans_garcon_peau-claire_cheveux-blonds_salopette-jean_3d_super-content_saut-du-champion.gif",
+  },
+  "avatar-08_9-13-ans": {
+    content: "avatar-08_9-13-ans_garcon_peau-mate_cheveux-bruns_surchemise-sauge_3d_content_double-pouce.gif",
+    pasBien: "avatar-08_9-13-ans_garcon_peau-mate_cheveux-bruns_surchemise-sauge_3d_pas-bien_sourcils-fronces.gif",
+    pasBienDuTout: "avatar-08_9-13-ans_garcon_peau-mate_cheveux-bruns_surchemise-sauge_3d_pas-bien-du-tout_mains-sur-coeur.gif",
+    superContent: "avatar-08_9-13-ans_garcon_peau-mate_cheveux-bruns_surchemise-sauge_3d_super-content_saut-de-biche.gif",
+  },
+  "avatar-09_14-18-ans": {
+    content: "avatar-09_14-18-ans_fille_peau-foncee_cheveux-tresses-violettes_veste-cuir-noire_3d_content_doigts-en-v.gif",
+    pasBien: "avatar-09_14-18-ans_fille_peau-foncee_cheveux-tresses-violettes_veste-cuir-noire_3d_pas-bien_bras-croises.gif",
+    pasBienDuTout: "avatar-09_14-18-ans_fille_peau-foncee_cheveux-tresses-violettes_veste-cuir-noire_3d_pas-bien-du-tout_joues-dans-paumes.gif",
+    superContent: "avatar-09_14-18-ans_fille_peau-foncee_cheveux-tresses-violettes_veste-cuir-noire_3d_super-content_tourbillon-des-bras.gif",
+  },
+  "avatar-09_18-et-plus": {
+    content: "avatar-09_18-et-plus_femme_peau-mate_cheveux-noirs-boucles_chemise-sauge_3d_content_doigts-en-v.gif",
+    pasBien: "avatar-09_18-et-plus_femme_peau-mate_cheveux-noirs-boucles_chemise-sauge_3d_pas-bien_petit-recul.gif",
+    pasBienDuTout: "avatar-09_18-et-plus_femme_peau-mate_cheveux-noirs-boucles_chemise-sauge_3d_pas-bien-du-tout_bras-serres-triste.gif",
+    superContent: "avatar-09_18-et-plus_femme_peau-mate_cheveux-noirs-boucles_chemise-sauge_3d_super-content_bond-super-heros.gif",
+  },
+  "avatar-09_4-8-ans": {
+    content: "avatar-09_4-8-ans_fille_peau-claire_cheveux-chatains-courts_lunettes_salopette-jaune_3d_content_doigts-en-v.gif",
+    pasBien: "avatar-09_4-8-ans_fille_peau-claire_cheveux-chatains-courts_lunettes_salopette-jaune_3d_pas-bien_regard-de-cote.gif",
+    pasBienDuTout: "avatar-09_4-8-ans_fille_peau-claire_cheveux-chatains-courts_lunettes_salopette-jaune_3d_pas-bien-du-tout_mains-jointes-triste.gif",
+    superContent: "avatar-09_4-8-ans_fille_peau-claire_cheveux-chatains-courts_lunettes_salopette-jaune_3d_super-content_danse-des-epaules.gif",
+  },
+  "avatar-09_9-13-ans": {
+    content: "avatar-09_9-13-ans_fille_peau-mate_cheveux-noirs-tresses_veste-jaune_3d_content_doigts-en-v.gif",
+    pasBien: "avatar-09_9-13-ans_fille_peau-mate_cheveux-noirs-tresses_veste-jaune_3d_pas-bien_main-balayage.gif",
+    pasBienDuTout: "avatar-09_9-13-ans_fille_peau-mate_cheveux-noirs-tresses_veste-jaune_3d_pas-bien-du-tout_main-sur-coeur-decue.gif",
+    superContent: "avatar-09_9-13-ans_fille_peau-mate_cheveux-noirs-tresses_veste-jaune_3d_super-content_air-batterie.gif",
+  },
+  "avatar-10_14-18-ans": {
+    content: "avatar-10_14-18-ans_garcon_peau-mate_cheveux-noirs-ondules_chemise-lin-bleue_3d_content_dab-amuse.gif",
+    pasBien: "avatar-10_14-18-ans_garcon_peau-mate_cheveux-noirs-ondules_chemise-lin-bleue_3d_pas-bien_index-non.gif",
+    pasBienDuTout: "avatar-10_14-18-ans_garcon_peau-mate_cheveux-noirs-ondules_chemise-lin-bleue_3d_pas-bien-du-tout_regret-mains-jointes.gif",
+    superContent: "avatar-10_14-18-ans_garcon_peau-mate_cheveux-noirs-ondules_chemise-lin-bleue_3d_super-content_bond-poing-en-air.gif",
+  },
+  "avatar-10_18-et-plus": {
+    content: "avatar-10_18-et-plus_homme_peau-foncee_cheveux-twists_barbiche_veste-orange_3d_content_dab-amuse.gif",
+    pasBien: "avatar-10_18-et-plus_homme_peau-foncee_cheveux-twists_barbiche_veste-orange_3d_pas-bien_regard-de-cote.gif",
+    pasBienDuTout: "avatar-10_18-et-plus_homme_peau-foncee_cheveux-twists_barbiche_veste-orange_3d_pas-bien-du-tout_mains-sur-coeur.gif",
+    superContent: "avatar-10_18-et-plus_homme_peau-foncee_cheveux-twists_barbiche_veste-orange_3d_super-content_tour-de-danse.gif",
+  },
+  "avatar-10_4-8-ans": {
+    content: "avatar-10_4-8-ans_garcon_peau-foncee_cheveux-tresses_tshirt-menthe_short-corail_3d_content_dab-amuse.gif",
+    pasBien: "avatar-10_4-8-ans_garcon_peau-foncee_cheveux-tresses_tshirt-menthe_short-corail_3d_pas-bien_croix-des-avant-bras.gif",
+    pasBienDuTout: "avatar-10_4-8-ans_garcon_peau-foncee_cheveux-tresses_tshirt-menthe_short-corail_3d_pas-bien-du-tout_deux-mains-au-front.gif",
+    superContent: "avatar-10_4-8-ans_garcon_peau-foncee_cheveux-tresses_tshirt-menthe_short-corail_3d_super-content_pas-robot.gif",
+  },
+  "avatar-10_9-13-ans": {
+    content: "avatar-10_9-13-ans_garcon_peau-claire_cheveux-blonds_lunettes_pull-prune_3d_content_dab-amuse.gif",
+    pasBien: "avatar-10_9-13-ans_garcon_peau-claire_cheveux-blonds_lunettes_pull-prune_3d_pas-bien_epaules-decue.gif",
+    pasBienDuTout: "avatar-10_9-13-ans_garcon_peau-claire_cheveux-blonds_lunettes_pull-prune_3d_pas-bien-du-tout_mains-sur-visage.gif",
+    superContent: "avatar-10_9-13-ans_garcon_peau-claire_cheveux-blonds_lunettes_pull-prune_3d_super-content_danse-hip-hop.gif",
+  },
+  "avatar-11_14-18-ans": {
+    content: "avatar-11_14-18-ans_fille_peau-claire_cheveux-blonds-courts_lunettes_pull-vert_3d_content_bisou-souffle.gif",
+    pasBien: "avatar-11_14-18-ans_fille_peau-claire_cheveux-blonds-courts_lunettes_pull-vert_3d_pas-bien_main-sur-hanche.gif",
+    pasBienDuTout: "avatar-11_14-18-ans_fille_peau-claire_cheveux-blonds-courts_lunettes_pull-vert_3d_pas-bien-du-tout_mains-jointes-triste.gif",
+    superContent: "avatar-11_14-18-ans_fille_peau-claire_cheveux-blonds-courts_lunettes_pull-vert_3d_super-content_saut-etoile.gif",
+  },
+  "avatar-11_18-et-plus": {
+    content: "avatar-11_18-et-plus_femme_peau-claire_cheveux-roux_lunettes_robe-marine_3d_content_bisou-souffle.gif",
+    pasBien: "avatar-11_18-et-plus_femme_peau-claire_cheveux-roux_lunettes_robe-marine_3d_pas-bien_croix-des-avant-bras.gif",
+    pasBienDuTout: "avatar-11_18-et-plus_femme_peau-claire_cheveux-roux_lunettes_robe-marine_3d_pas-bien-du-tout_main-sur-joue-triste.gif",
+    superContent: "avatar-11_18-et-plus_femme_peau-claire_cheveux-roux_lunettes_robe-marine_3d_super-content_air-guitare.gif",
+  },
+  "avatar-11_4-8-ans": {
+    content: "avatar-11_4-8-ans_fille_peau-mate_cheveux-noirs-boucles_robe-verte_3d_content_bisou-souffle.gif",
+    pasBien: "avatar-11_4-8-ans_fille_peau-mate_cheveux-noirs-boucles_robe-verte_3d_pas-bien_paume-et-tete.gif",
+    pasBienDuTout: "avatar-11_4-8-ans_fille_peau-mate_cheveux-noirs-boucles_robe-verte_3d_pas-bien-du-tout_tete-baissee.gif",
+    superContent: "avatar-11_4-8-ans_fille_peau-mate_cheveux-noirs-boucles_robe-verte_3d_super-content_saut-de-biche.gif",
+  },
+  "avatar-11_9-13-ans": {
+    content: "avatar-11_9-13-ans_fille_peau-foncee_cheveux-afro-courts_salopette-denim_3d_content_bisou-souffle.gif",
+    pasBien: "avatar-11_9-13-ans_fille_peau-foncee_cheveux-afro-courts_salopette-denim_3d_pas-bien_poing-sur-hanche.gif",
+    pasBienDuTout: "avatar-11_9-13-ans_fille_peau-foncee_cheveux-afro-courts_salopette-denim_3d_pas-bien-du-tout_tete-dans-les-mains.gif",
+    superContent: "avatar-11_9-13-ans_fille_peau-foncee_cheveux-afro-courts_salopette-denim_3d_super-content_saut-rotation-quart.gif",
+  },
+  "avatar-12_14-18-ans": {
+    content: "avatar-12_14-18-ans_garcon_peau-foncee_cheveux-afro_veste-denim-ecrue_3d_content_tap-tap-coeur.gif",
+    pasBien: "avatar-12_14-18-ans_garcon_peau-foncee_cheveux-afro_veste-denim-ecrue_3d_pas-bien_pouce-vers-bas.gif",
+    pasBienDuTout: "avatar-12_14-18-ans_garcon_peau-foncee_cheveux-afro_veste-denim-ecrue_3d_pas-bien-du-tout_deux-mains-au-front.gif",
+    superContent: "avatar-12_14-18-ans_garcon_peau-foncee_cheveux-afro_veste-denim-ecrue_3d_super-content_bond-super-heros.gif",
+  },
+  "avatar-12_18-et-plus": {
+    content: "avatar-12_18-et-plus_homme_peau-mate_cheveux-noirs-courts_polo-bleu_3d_content_tap-tap-coeur.gif",
+    pasBien: "avatar-12_18-et-plus_homme_peau-mate_cheveux-noirs-courts_polo-bleu_3d_pas-bien_paume-et-tete.gif",
+    pasBienDuTout: "avatar-12_18-et-plus_homme_peau-mate_cheveux-noirs-courts_polo-bleu_3d_pas-bien-du-tout_mains-sur-visage.gif",
+    superContent: "avatar-12_18-et-plus_homme_peau-mate_cheveux-noirs-courts_polo-bleu_3d_super-content_pas-chasses.gif",
+  },
+  "avatar-12_4-8-ans": {
+    content: "avatar-12_4-8-ans_garcon_peau-claire_cheveux-noirs-lisses_cardigan-orange_3d_content_tap-tap-coeur.gif",
+    pasBien: "avatar-12_4-8-ans_garcon_peau-claire_cheveux-noirs-lisses_cardigan-orange_3d_pas-bien_doigt-sur-la-joue.gif",
+    pasBienDuTout: "avatar-12_4-8-ans_garcon_peau-claire_cheveux-noirs-lisses_cardigan-orange_3d_pas-bien-du-tout_main-devant-bouche.gif",
+    superContent: "avatar-12_4-8-ans_garcon_peau-claire_cheveux-noirs-lisses_cardigan-orange_3d_super-content_air-batterie.gif",
+  },
+  "avatar-12_9-13-ans": {
+    content: "avatar-12_9-13-ans_garcon_peau-mate_cheveux-noirs-lisses_veste-baseball-verte_3d_content_tap-tap-coeur.gif",
+    pasBien: "avatar-12_9-13-ans_garcon_peau-mate_cheveux-noirs-lisses_veste-baseball-verte_3d_pas-bien_paume-stop.gif",
+    pasBienDuTout: "avatar-12_9-13-ans_garcon_peau-mate_cheveux-noirs-lisses_veste-baseball-verte_3d_pas-bien-du-tout_regard-au-sol.gif",
+    superContent: "avatar-12_9-13-ans_garcon_peau-mate_cheveux-noirs-lisses_veste-baseball-verte_3d_super-content_tourbillon-des-bras.gif",
+  },
+  "avatar-13_14-18-ans": {
+    content: "avatar-13_14-18-ans_fille_peau-mate_hijab-lilas_veste-sport-creme_3d_content_petits-coeurs.gif",
+    pasBien: "avatar-13_14-18-ans_fille_peau-mate_hijab-lilas_veste-sport-creme_3d_pas-bien_deux-paumes-stop.gif",
+    pasBienDuTout: "avatar-13_14-18-ans_fille_peau-mate_hijab-lilas_veste-sport-creme_3d_pas-bien-du-tout_tete-baissee.gif",
+    superContent: "avatar-13_14-18-ans_fille_peau-mate_hijab-lilas_veste-sport-creme_3d_super-content_tour-de-danse.gif",
+  },
+  "avatar-13_18-et-plus": {
+    content: "avatar-13_18-et-plus_femme_peau-foncee_cheveux-gris-tresses_cardigan-ocre_3d_content_petits-coeurs.gif",
+    pasBien: "avatar-13_18-et-plus_femme_peau-foncee_cheveux-gris-tresses_cardigan-ocre_3d_pas-bien_doigt-sur-la-joue.gif",
+    pasBienDuTout: "avatar-13_18-et-plus_femme_peau-foncee_cheveux-gris-tresses_cardigan-ocre_3d_pas-bien-du-tout_tete-dans-les-mains.gif",
+    superContent: "avatar-13_18-et-plus_femme_peau-foncee_cheveux-gris-tresses_cardigan-ocre_3d_super-content_saut-ciseaux.gif",
+  },
+  "avatar-13_4-8-ans": {
+    content: "avatar-13_4-8-ans_fille_peau-foncee_cheveux-noirs-tresses_ensemble-sport-lilas_3d_content_petits-coeurs.gif",
+    pasBien: "avatar-13_4-8-ans_fille_peau-foncee_cheveux-noirs-tresses_ensemble-sport-lilas_3d_pas-bien_sourcils-fronces.gif",
+    pasBienDuTout: "avatar-13_4-8-ans_fille_peau-foncee_cheveux-noirs-tresses_ensemble-sport-lilas_3d_pas-bien-du-tout_visage-dans-paumes.gif",
+    superContent: "avatar-13_4-8-ans_fille_peau-foncee_cheveux-noirs-tresses_ensemble-sport-lilas_3d_super-content_danse-hip-hop.gif",
+  },
+  "avatar-13_9-13-ans": {
+    content: "avatar-13_9-13-ans_fille_peau-claire_cheveux-bruns-ondules_cardigan-corail_3d_content_petits-coeurs.gif",
+    pasBien: "avatar-13_9-13-ans_fille_peau-claire_cheveux-bruns-ondules_cardigan-corail_3d_pas-bien_non-de-la-tete.gif",
+    pasBienDuTout: "avatar-13_9-13-ans_fille_peau-claire_cheveux-bruns-ondules_cardigan-corail_3d_pas-bien-du-tout_main-sur-front.gif",
+    superContent: "avatar-13_9-13-ans_fille_peau-claire_cheveux-bruns-ondules_cardigan-corail_3d_super-content_bond-poing-en-air.gif",
+  },
+  "avatar-14_14-18-ans": {
+    content: "avatar-14_14-18-ans_garcon_peau-claire_cheveux-chatains_lunettes_surchemise-carreaux_3d_content_check-des-poings.gif",
+    pasBien: "avatar-14_14-18-ans_garcon_peau-claire_cheveux-chatains_lunettes_surchemise-carreaux_3d_pas-bien_petit-recul.gif",
+    pasBienDuTout: "avatar-14_14-18-ans_garcon_peau-claire_cheveux-chatains_lunettes_surchemise-carreaux_3d_pas-bien-du-tout_regard-au-sol.gif",
+    superContent: "avatar-14_14-18-ans_garcon_peau-claire_cheveux-chatains_lunettes_surchemise-carreaux_3d_super-content_air-guitare.gif",
+  },
+  "avatar-14_18-et-plus": {
+    content: "avatar-14_18-et-plus_homme_peau-claire_cheveux-gris_lunettes_pull-prune_3d_content_check-des-poings.gif",
+    pasBien: "avatar-14_18-et-plus_homme_peau-claire_cheveux-gris_lunettes_pull-prune_3d_pas-bien_sourcils-fronces.gif",
+    pasBienDuTout: "avatar-14_18-et-plus_homme_peau-claire_cheveux-gris_lunettes_pull-prune_3d_pas-bien-du-tout_mains-ouvertes-depit.gif",
+    superContent: "avatar-14_18-et-plus_homme_peau-claire_cheveux-gris_lunettes_pull-prune_3d_super-content_pirouette-joyeuse.gif",
+  },
+  "avatar-14_4-8-ans": {
+    content: "avatar-14_4-8-ans_garcon_peau-mate_cheveux-chatains-boucles_veste-denim_3d_content_check-des-poings.gif",
+    pasBien: "avatar-14_4-8-ans_garcon_peau-mate_cheveux-chatains-boucles_veste-denim_3d_pas-bien_main-balayage.gif",
+    pasBienDuTout: "avatar-14_4-8-ans_garcon_peau-mate_cheveux-chatains-boucles_veste-denim_3d_pas-bien-du-tout_regard-au-sol.gif",
+    superContent: "avatar-14_4-8-ans_garcon_peau-mate_cheveux-chatains-boucles_veste-denim_3d_super-content_saut-rotation-quart.gif",
+  },
+  "avatar-14_9-13-ans": {
+    content: "avatar-14_9-13-ans_garcon_peau-foncee_cheveux-boucles-degrades_surchemise-beige_3d_content_check-des-poings.gif",
+    pasBien: "avatar-14_9-13-ans_garcon_peau-foncee_cheveux-boucles-degrades_surchemise-beige_3d_pas-bien_bras-croises.gif",
+    pasBienDuTout: "avatar-14_9-13-ans_garcon_peau-foncee_cheveux-boucles-degrades_surchemise-beige_3d_pas-bien-du-tout_larmes-essuyees.gif",
+    superContent: "avatar-14_9-13-ans_garcon_peau-foncee_cheveux-boucles-degrades_surchemise-beige_3d_super-content_saut-etoile.gif",
+  },
+  "avatar-15_14-18-ans": {
+    content: "avatar-15_14-18-ans_fille_peau-mate_cheveux-noirs-queue-de-cheval_blazer-rose_3d_content_fleur-des-mains.gif",
+    pasBien: "avatar-15_14-18-ans_fille_peau-mate_cheveux-noirs-queue-de-cheval_blazer-rose_3d_pas-bien_regard-de-cote.gif",
+    pasBienDuTout: "avatar-15_14-18-ans_fille_peau-mate_cheveux-noirs-queue-de-cheval_blazer-rose_3d_pas-bien-du-tout_visage-dans-paumes.gif",
+    superContent: "avatar-15_14-18-ans_fille_peau-mate_cheveux-noirs-queue-de-cheval_blazer-rose_3d_super-content_pas-chasses.gif",
+  },
+  "avatar-15_18-et-plus": {
+    content: "avatar-15_18-et-plus_femme_peau-mate_hijab-rose_longue-veste-sauge_3d_content_fleur-des-mains.gif",
+    pasBien: "avatar-15_18-et-plus_femme_peau-mate_hijab-rose_longue-veste-sauge_3d_pas-bien_main-balayage.gif",
+    pasBienDuTout: "avatar-15_18-et-plus_femme_peau-mate_hijab-rose_longue-veste-sauge_3d_pas-bien-du-tout_main-sur-front.gif",
+    superContent: "avatar-15_18-et-plus_femme_peau-mate_hijab-rose_longue-veste-sauge_3d_super-content_saut-du-champion.gif",
+  },
+  "avatar-15_4-8-ans": {
+    content: "avatar-15_4-8-ans_fille_peau-claire_cheveux-roux-queue-de-cheval_sweat-rose_3d_content_fleur-des-mains.gif",
+    pasBien: "avatar-15_4-8-ans_fille_peau-claire_cheveux-roux-queue-de-cheval_sweat-rose_3d_pas-bien_epaules-decue.gif",
+    pasBienDuTout: "avatar-15_4-8-ans_fille_peau-claire_cheveux-roux-queue-de-cheval_sweat-rose_3d_pas-bien-du-tout_mains-sur-coeur.gif",
+    superContent: "avatar-15_4-8-ans_fille_peau-claire_cheveux-roux-queue-de-cheval_sweat-rose_3d_super-content_tourbillon-des-bras.gif",
+  },
+  "avatar-15_9-13-ans": {
+    content: "avatar-15_9-13-ans_fille_peau-mate_cheveux-noirs-chignon_ensemble-sport-turquoise_3d_content_fleur-des-mains.gif",
+    pasBien: "avatar-15_9-13-ans_fille_peau-mate_cheveux-noirs-chignon_ensemble-sport-turquoise_3d_pas-bien_index-non.gif",
+    pasBienDuTout: "avatar-15_9-13-ans_fille_peau-mate_cheveux-noirs-chignon_ensemble-sport-turquoise_3d_pas-bien-du-tout_bras-replies-triste.gif",
+    superContent: "avatar-15_9-13-ans_fille_peau-mate_cheveux-noirs-chignon_ensemble-sport-turquoise_3d_super-content_bond-super-heros.gif",
+  },
+  "avatar-16_14-18-ans": {
+    content: "avatar-16_14-18-ans_presentation-androgyne_peau-claire_cheveux-cuivres-courts_bomber-turquoise_3d_content_poing-du-champion.gif",
+    pasBien: "avatar-16_14-18-ans_presentation-androgyne_peau-claire_cheveux-cuivres-courts_bomber-turquoise_3d_pas-bien_croix-des-avant-bras.gif",
+    pasBienDuTout: "avatar-16_14-18-ans_presentation-androgyne_peau-claire_cheveux-cuivres-courts_bomber-turquoise_3d_pas-bien-du-tout_regard-au-sol.gif",
+    superContent: "avatar-16_14-18-ans_presentation-androgyne_peau-claire_cheveux-cuivres-courts_bomber-turquoise_3d_super-content_saut-ciseaux.gif",
+  },
+  "avatar-16_18-et-plus": {
+    content: "avatar-16_18-et-plus_presentation-androgyne_peau-mate_cheveux-bruns-courts_surchemise-lilas_3d_content_poing-du-champion.gif",
+    pasBien: "avatar-16_18-et-plus_presentation-androgyne_peau-mate_cheveux-bruns-courts_surchemise-lilas_3d_pas-bien_epaules-decue.gif",
+    pasBienDuTout: "avatar-16_18-et-plus_presentation-androgyne_peau-mate_cheveux-bruns-courts_surchemise-lilas_3d_pas-bien-du-tout_regard-au-sol.gif",
+    superContent: "avatar-16_18-et-plus_presentation-androgyne_peau-mate_cheveux-bruns-courts_surchemise-lilas_3d_super-content_danse-des-epaules.gif",
+  },
+  "avatar-16_4-8-ans": {
+    content: "avatar-16_4-8-ans_garcon_peau-mate_cheveux-noirs-courts_chemise-carreaux_3d_content_poing-du-champion.gif",
+    pasBien: "avatar-16_4-8-ans_garcon_peau-mate_cheveux-noirs-courts_chemise-carreaux_3d_pas-bien_poing-sur-hanche.gif",
+    pasBienDuTout: "avatar-16_4-8-ans_garcon_peau-mate_cheveux-noirs-courts_chemise-carreaux_3d_pas-bien-du-tout_epaules-tombantes.gif",
+    superContent: "avatar-16_4-8-ans_garcon_peau-mate_cheveux-noirs-courts_chemise-carreaux_3d_super-content_bond-poing-en-air.gif",
+  },
+  "avatar-16_9-13-ans": {
+    content: "avatar-16_9-13-ans_garcon_peau-claire_cheveux-bruns-courts_veste-verte_pantalon-marine_3d_content_poing-du-champion.gif",
+    pasBien: "avatar-16_9-13-ans_garcon_peau-claire_cheveux-bruns-courts_veste-verte_pantalon-marine_3d_pas-bien_main-sur-hanche.gif",
+    pasBienDuTout: "avatar-16_9-13-ans_garcon_peau-claire_cheveux-bruns-courts_veste-verte_pantalon-marine_3d_pas-bien-du-tout_joues-dans-paumes.gif",
+    superContent: "avatar-16_9-13-ans_garcon_peau-claire_cheveux-bruns-courts_veste-verte_pantalon-marine_3d_super-content_tour-de-danse.gif",
+  },
+};
 const IMG_SENSEI="data:image/png;base64,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";
 
 
@@ -4361,6 +4746,10 @@ function showReactOverlay(win){
     if(p.avatarId==='boy1'){
       var andrewGif=win?IMG_ANDREW_OK:IMG_ANDREW_KO;
       avEl.innerHTML='<img src="'+andrewGif+'" style="height:110px;width:auto" alt="Andrew">';
+    }else if(GIF_MAP[p.avatarId]){
+      var gm=GIF_MAP[p.avatarId];
+      var avatarGif=_GH+(win?gm.content:gm.pasBienDuTout);
+      avEl.innerHTML='<img src="'+avatarGif+'" style="height:110px;width:auto" alt="Avatar">';
     }else{
       var avSvg=getAvatarSVG(p.avatarId,'md');
       avEl.innerHTML=avSvg;
@@ -5320,14 +5709,25 @@ function showFinal(list,mod){
   document.getElementById('sc-s').textContent=dn+'/'+list.length+' réussis · '+(p?p.score:0)+' ⭐ au total';
   document.getElementById('sc-str').textContent=pct===1?'⭐⭐⭐':pct>=.7?'⭐⭐':'⭐';
   // GIFs de fin selon le score
-  var senseiGif,andrewGif;
-  if(pct<=0.25){senseiGif=IMG_SENSEI_KO;andrewGif=IMG_ANDREW_KO;}
-  else if(pct<=0.5){senseiGif=IMG_SENSEI_ENCOURAGE;andrewGif=IMG_ANDREW_ENCOURAGE;}
-  else{senseiGif=IMG_SENSEI_OK;andrewGif=IMG_ANDREW_OK;}
+  var senseiGif,avatarGif;
+  if(pct<=0.25){senseiGif=IMG_SENSEI_KO;}
+  else if(pct<=0.5){senseiGif=IMG_SENSEI_ENCOURAGE;}
+  else if(pct<=0.75){senseiGif=IMG_SENSEI_OK;}
+  else{senseiGif=IMG_SENSEI_SUPER;}
+  if(p&&p.avatarId==='boy1'){
+    if(pct<=0.25){avatarGif=IMG_ANDREW_KO;}
+    else if(pct<=0.5){avatarGif=IMG_ANDREW_ENCOURAGE;}
+    else if(pct<=0.75){avatarGif=IMG_ANDREW_OK;}
+    else{avatarGif=IMG_ANDREW_SUPER;}
+  }else if(p&&p.avatarId&&GIF_MAP[p.avatarId]){
+    var gm=GIF_MAP[p.avatarId];
+    var mk=pct<=0.25?'pasBienDuTout':pct<=0.5?'pasBien':pct<=0.75?'content':'superContent';
+    avatarGif=_GH+gm[mk];
+  }
   var charsEl=document.getElementById('sc-chars');
   if(charsEl){
     charsEl.innerHTML='<img src="'+senseiGif+'" style="height:110px;width:auto" alt="Sensei">'
-      +(p&&p.avatarId==='boy1'?'<img src="'+andrewGif+'" style="height:110px;width:auto" alt="Andrew">':'');
+      +(avatarGif?'<img src="'+avatarGif+'" style="height:110px;width:auto" alt="Avatar">':'');
   }
   show('score');if(pct>=.7){celebrate();sndStar();senseiDance();}else{senseiKO();}
   if(APP.car)ttsSpeak(document.getElementById('sc-t').textContent+'. '+dn+' exercices réussis sur '+list.length+'.');
