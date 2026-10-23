@@ -5825,7 +5825,7 @@ function renderSuite(item,c){
     const {wrap,b}=_mkChoiceRow(ch,'cbig',()=>ans(String(ch)===String(item.rep),b,g,item,c),il,i);
     g.appendChild(wrap);
   });
-  c.appendChild(g);c.appendChild(mkNext());c.appendChild(mkRes());
+  c.appendChild(g);c.appendChild(mkRes());c.appendChild(mkNext());
 }
 
 function renderIntrus(item,c){
@@ -5837,7 +5837,7 @@ function renderIntrus(item,c){
     const {wrap,b}=_mkChoiceRow(el,'cbig',()=>ans(String(el)===String(item.rep),b,g,item,c),il,i);
     g.appendChild(wrap);
   });
-  c.appendChild(g);c.appendChild(mkNext());c.appendChild(mkRes());
+  c.appendChild(g);c.appendChild(mkRes());c.appendChild(mkNext());
 }
 
 function renderGeneric(item,c){
@@ -5868,7 +5868,7 @@ function renderGeneric(item,c){
     },il,i);
     lst.appendChild(wrap);
   });
-  c.appendChild(lst);c.appendChild(valBtn);c.appendChild(mkNext());c.appendChild(mkRes());
+  c.appendChild(lst);c.appendChild(valBtn);c.appendChild(mkRes());c.appendChild(mkNext());
 }
 
 function renderPol(item,c){
@@ -5883,7 +5883,7 @@ function renderPol(item,c){
     b.onclick=()=>ansPol(ch,b,w,item,c);
     w.appendChild(b);
   });
-  c.appendChild(w);c.appendChild(mkNext());c.appendChild(mkRes());
+  c.appendChild(w);c.appendChild(mkRes());c.appendChild(mkNext());
 }
 
 function ans(ok,btn,cont,item,c){
