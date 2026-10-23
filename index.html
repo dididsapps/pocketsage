@@ -5460,66 +5460,8 @@ const ATELIER_PICTOS={
   ],
 };
 
-// Recherche Wikimedia Commons pour images online
-async function fetchWikimediaImages(query, count=5){
-  try{
-    const url=`https://en.wikipedia.org/w/api.php?action=query&generator=images&titles=${encodeURIComponent(query)}&prop=imageinfo&iiprop=url|thumburl&iiurlwidth=200&format=json&origin=*`;
-    // Wikimedia Search API
-    const surl=`https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&srnamespace=6&srlimit=${count}&format=json&origin=*`;
-    const r=await fetch(surl);
-    const d=await r.json();
-    const pages=d.query&&d.query.search||[];
-    const imgs=[];
-    for(const p of pages){
-      try{
-        const iurl=`https://commons.wikimedia.org/w/api.php?action=query&titles=${encodeURIComponent(p.title)}&prop=imageinfo&iiprop=url&iiurlwidth=200&format=json&origin=*`;
-        const ir=await fetch(iurl);
-        const id=await ir.json();
-        const pages2=id.query&&id.query.pages||{};
-        for(const pg of Object.values(pages2)){
-          if(pg.imageinfo&&pg.imageinfo[0]&&pg.imageinfo[0].url){
-            imgs.push({url:pg.imageinfo[0].url,title:pg.title.replace('File:','').replace(/\.\w+$/,'')});
-          }
-        }
-        if(imgs.length>=count)break;
-      }catch(e){}
-    }
-    return imgs;
-  }catch(e){return [];}
-}
-
-// Requêtes Wikimedia par atelier
-// Mots-clés Unsplash par étape pour chaque atelier
-// Format: tableau de mots-clés par étape (même ordre que a.etapes)
-const ATELIER_UNSPLASH={
-  'AT-001':['paper folding','paper crease fold','paper airplane wing','paper airplane fold','paper airplane fly'],
-  'AT-002':['baking soda','vinegar bottle','volcano model','eruption foam','science experiment kids'],
-  'AT-003':['salt crystals','hot water dissolve','crystal formation','crystal growing','blue crystal sparkle'],
-  'AT-004':['paper card','scissors paper','paper folding card','pop up paper','greeting card handmade'],
-  'AT-005':['glue craft','mixing bowl kids','slime texture','slime stretch','slime green kids'],
-  'AT-006':['planet earth space','solar system planets','paper circle paint','mobile hanging craft','space planets colorful'],
-  'AT-007':['origami paper fold','paper square fold','paper triangle origami','paper corner fold','origami bookmark'],
-  'AT-008':['colorful thread','knot macrame','bracelet weaving','friendship bracelet','colorful bracelet wrist'],
-  'AT-009':['plastic bottle','cork bottle','outdoor launch','water pressure','bottle rocket launch'],
-  'AT-010':['ice cube colorful','watercolor ice','painting paper','ice melting art','colorful ice paint'],
-};
-// Requête Google Images de secours par atelier
-const ATELIER_GOOGLE={
-  'AT-001':'avion+papier+origami+pliage+étapes',
-  'AT-002':'volcan+bicarbonate+vinaigre+expérience+enfant',
-  'AT-003':'cristaux+sel+expérience+enfant+étapes',
-  'AT-004':'carte+popup+bricolage+enfant+étapes',
-  'AT-005':'slime+maison+enfant+recette+étapes',
-  'AT-006':'mobile+planètes+système+solaire+bricolage',
-  'AT-007':'marque+page+origami+coin+étapes',
-  'AT-008':'bracelet+amitié+nœuds+couleurs+étapes',
-  'AT-009':'fusée+bouteille+eau+expérience+enfant',
-  'AT-010':'peinture+glaçons+art+enfant+étapes',
-};
-
-let _imgPanelAtelier=null;
-function openAtelierImages(a, mode){
-  // Panneau glissant dans la même page détail
+function openAtelierImages(a){
+  // Panneau glissant — schémas illustrés SVG
   let panel=document.getElementById('atelier-img-panel');
   if(panel)panel.remove();
   panel=document.createElement('div');
@@ -5527,12 +5469,11 @@ function openAtelierImages(a, mode){
   panel.style.cssText='position:fixed;bottom:0;left:0;right:0;max-height:75vh;background:var(--bg);border-radius:24px 24px 0 0;box-shadow:0 -8px 40px rgba(0,0,0,.35);z-index:1000;overflow-y:auto;padding:0 0 80px;transform:translateY(100%);transition:transform .3s ease';
 
   const col={Origami:'#6C63FF',Sciences:'#06D6A0',Bricolage:'#FF9F1C',Peinture:'#FF6B6B'}[a.cat]||'var(--v)';
-  const isOnline=mode==='online';
 
   // Barre de titre + fermeture
   const bar=document.createElement('div');
   bar.style.cssText='display:flex;align-items:center;justify-content:space-between;padding:16px 16px 12px;position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--w);z-index:2';
-  bar.innerHTML=`<div><div style="font-size:14px;font-weight:900;color:${col}">${isOnline?'🖼️ Photos étape par étape':'✏️ Schémas illustrés'}</div><div style="font-size:11px;color:var(--tl);margin-top:2px">${a.nom}</div></div><button onclick="closeAtelierImages()" style="background:var(--w);border:none;border-radius:50%;width:32px;height:32px;font-size:16px;cursor:pointer;color:var(--t)">✕</button>`;
+  bar.innerHTML=`<div><div style="font-size:14px;font-weight:900;color:${col}">✏️ Schémas illustrés</div><div style="font-size:11px;color:var(--tl);margin-top:2px">${a.nom}</div></div><button onclick="closeAtelierImages()" style="background:var(--w);border:none;border-radius:50%;width:32px;height:32px;font-size:16px;cursor:pointer;color:var(--t)">✕</button>`;
   panel.appendChild(bar);
 
   const body=document.createElement('div');
@@ -5541,64 +5482,19 @@ function openAtelierImages(a, mode){
   document.body.appendChild(panel);
   requestAnimationFrame(()=>{panel.style.transform='translateY(0)';});
 
-  if(!isOnline){
-    // MODE OFFLINE — SVG pictos
-    const pictos=ATELIER_PICTOS[a.id]||[];
-    if(!pictos.length){
-      body.innerHTML='<div style="text-align:center;padding:30px;color:var(--tl)">Schémas non disponibles pour cet atelier.</div>';
-      return;
-    }
-    pictos.forEach((p,i)=>{
-      const row=document.createElement('div');
-      row.style.cssText='display:flex;align-items:center;gap:12px;background:var(--w);border-radius:14px;padding:12px;margin-bottom:10px;box-shadow:var(--sh)';
-      row.innerHTML=`<div style="background:${col};color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;flex-shrink:0">${i+1}</div>
-        <div style="width:70px;height:52px;flex-shrink:0">${p.svg}</div>
-        <div style="font-size:13px;font-weight:700;flex:1">${p.label}</div>`;
-      body.appendChild(row);
-    });
-  } else {
-    // MODE ONLINE — Unsplash par étape + bouton Google Images fallback
-    const keywords=ATELIER_UNSPLASH[a.id]||[];
-    const googleQ=ATELIER_GOOGLE[a.id]||encodeURIComponent(a.nom+' étapes');
-    const etapes=a.etapes;
-
-    // Bouton "Voir plus sur Google Images" en haut
-    const gBtn=document.createElement('a');
-    gBtn.href=`https://www.google.com/search?q=${googleQ}&tbm=isch&safe=active`;
-    gBtn.target='_blank';
-    gBtn.rel='noopener';
-    gBtn.style.cssText='display:flex;align-items:center;gap:10px;background:#4285F4;color:#fff;border-radius:14px;padding:10px 14px;margin-bottom:14px;text-decoration:none;font-size:12px;font-weight:800';
-    gBtn.innerHTML='<span style="font-size:18px">🔍</span><div><div>Voir plus de photos</div><div style="font-weight:500;opacity:.85;font-size:11px">Google Images — recherche sécurisée</div></div><span style="margin-left:auto;font-size:16px">›</span>';
-    body.appendChild(gBtn);
-
-    // Une carte par étape avec image Unsplash
-    etapes.forEach((et,i)=>{
-      const kw=(keywords[i]||a.nom+' craft').replace(/\s+/g,',');
-      // Unsplash Source — image aléatoire par mot-clé, 400x200, seed=atelier+step
-      const imgUrl=`https://source.unsplash.com/400x200/?${encodeURIComponent(kw)}&sig=${a.id}-${i}`;
-      const row=document.createElement('div');
-      row.style.cssText='background:var(--w);border-radius:14px;margin-bottom:12px;box-shadow:var(--sh);overflow:hidden';
-
-      // Placeholder coloré pendant le chargement
-      const ph=document.createElement('div');
-      ph.style.cssText=`width:100%;height:140px;background:${col}22;display:flex;align-items:center;justify-content:center;font-size:28px`;
-      ph.textContent=['✂️','🖊️','🎨','🔧','🌊','⭐','📐','🎀','🚀','❄️'][i%10];
-
-      const img=document.createElement('img');
-      img.style.cssText='width:100%;height:140px;object-fit:cover;display:none';
-      img.alt=et;
-      img.onload=()=>{ph.style.display='none';img.style.display='block';};
-      img.onerror=()=>{/* garde le placeholder */};
-      img.src=imgUrl;
-
-      row.innerHTML=`<div style="display:flex;align-items:center;gap:10px;padding:10px 12px;border-bottom:1px solid var(--bg)">
-        <div style="background:${col};color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;flex-shrink:0">${i+1}</div>
-        <div style="font-size:13px;font-weight:700;line-height:1.3">${et}</div></div>`;
-      row.appendChild(ph);
-      row.appendChild(img);
-      body.appendChild(row);
-    });
+  const pictos=ATELIER_PICTOS[a.id]||[];
+  if(!pictos.length){
+    body.innerHTML='<div style="text-align:center;padding:30px;color:var(--tl)">Schémas non disponibles pour cet atelier.</div>';
+    return;
   }
+  pictos.forEach((p,i)=>{
+    const row=document.createElement('div');
+    row.style.cssText='display:flex;align-items:center;gap:12px;background:var(--w);border-radius:14px;padding:12px;margin-bottom:10px;box-shadow:var(--sh)';
+    row.innerHTML=`<div style="background:${col};color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;flex-shrink:0">${i+1}</div>
+      <div style="width:70px;height:52px;flex-shrink:0">${p.svg}</div>
+      <div style="font-size:13px;font-weight:700;flex:1">${p.label}</div>`;
+    body.appendChild(row);
+  });
 }
 
 function closeAtelierImages(){
@@ -5721,18 +5617,11 @@ function openAtelierDetail(a){
   const btnZone=document.createElement('div');
   btnZone.style.cssText='padding:0 14px 80px;display:flex;flex-direction:column;gap:10px';
 
-  // Bouton B — Images online étape par étape
-  const btnImgOnline=document.createElement('button');
-  btnImgOnline.style.cssText='display:flex;align-items:center;gap:12px;width:100%;padding:14px 16px;background:var(--w);border:2px solid #6C63FF;border-radius:16px;color:var(--t);font-size:14px;font-weight:800;cursor:pointer;box-shadow:var(--sh);text-align:left';
-  btnImgOnline.innerHTML='<span style="font-size:24px;flex-shrink:0">🖼️</span><div><div style="font-size:13px;font-weight:900;color:#6C63FF">Photos étape par étape</div><div style="font-size:11px;font-weight:600;color:var(--tl);margin-top:2px">Images depuis internet (connexion requise)</div></div><span style="margin-left:auto;font-size:18px;color:#6C63FF">›</span>';
-  btnImgOnline.onclick=()=>{sndTap();openAtelierImages(a,'online');};
-  btnZone.appendChild(btnImgOnline);
-
-  // Bouton C — Pictogrammes offline
+  // Bouton — Schémas illustrés (seule option visuelle, toujours dispo)
   const btnImgOffline=document.createElement('button');
   btnImgOffline.style.cssText='display:flex;align-items:center;gap:12px;width:100%;padding:14px 16px;background:var(--w);border:2px solid #06D6A0;border-radius:16px;color:var(--t);font-size:14px;font-weight:800;cursor:pointer;box-shadow:var(--sh);text-align:left';
   btnImgOffline.innerHTML='<span style="font-size:24px;flex-shrink:0">✏️</span><div><div style="font-size:13px;font-weight:900;color:#06D6A0">Schémas illustrés</div><div style="font-size:11px;font-weight:600;color:var(--tl);margin-top:2px">Pictogrammes intégrés — fonctionne hors ligne</div></div><span style="margin-left:auto;font-size:18px;color:#06D6A0">›</span>';
-  btnImgOffline.onclick=()=>{sndTap();openAtelierImages(a,'offline');};
+  btnImgOffline.onclick=()=>{sndTap();openAtelierImages(a);};
   btnZone.appendChild(btnImgOffline);
 
   // Bouton Vidéo YouTube
