@@ -12,7 +12,7 @@ from pathlib import Path
 # CONFIGURATION — modifie ces valeurs
 # ══════════════════════════════════════════
 API_KEY = "sk_f30727c3dcfbab65149ebe22296dad06a81aa89c8ad2fd93"
-VOICE_ID_FR = ""   # ← colle ici l'ID de la voix Algieba (FR)
+VOICE_ID_FR = "9mF01VTvwaxuBPjm0hMu"   # Algieba (FR)
 OUTPUT_DIR = Path("audio/fr")
 MANIFEST_FILE = Path("audio/manifest.json")
 INDEX_HTML = Path("index.html")
