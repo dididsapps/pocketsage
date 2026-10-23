@@ -13,6 +13,7 @@ from pathlib import Path
 # ══════════════════════════════════════════
 API_KEY = "sk_f30727c3dcfbab65149ebe22296dad06a81aa89c8ad2fd93"
 VOICE_ID_FR = "9mF01VTvwaxuBPjm0hMu"   # Algieba (FR)
+VOICE_ID_EN = "GFj5Qf6cNQ3Lgp8VKBwc"   # Achird (EN)
 OUTPUT_DIR = Path("audio/fr")
 MANIFEST_FILE = Path("audio/manifest.json")
 INDEX_HTML = Path("index.html")
