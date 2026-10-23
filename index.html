@@ -5385,6 +5385,199 @@ function closeVidPlayer(){
   else if(APP.curMod)openMod(APP.curMod);else goHome();
 }
 
+// ── ATELIER IMAGES (online & offline) ────────────
+// Pictogrammes SVG offline par atelier
+const ATELIER_PICTOS={
+  'AT-001':[
+    {label:'Plier en 2 en long',svg:'<svg viewBox="0 0 80 60"><rect x="10" y="5" width="60" height="50" rx="3" fill="#E8E8FF" stroke="#6C63FF" stroke-width="2"/><line x1="40" y1="5" x2="40" y2="55" stroke="#6C63FF" stroke-width="2" stroke-dasharray="4,2"/><path d="M35 28 L40 32 L45 28" fill="none" stroke="#6C63FF" stroke-width="2"/></svg>'},
+    {label:'Coins vers le centre',svg:'<svg viewBox="0 0 80 60"><rect x="10" y="5" width="60" height="50" rx="3" fill="#E8E8FF" stroke="#6C63FF" stroke-width="2"/><path d="M10 5 L40 25" stroke="#6C63FF" stroke-width="2"/><path d="M70 5 L40 25" stroke="#6C63FF" stroke-width="2"/><polygon points="10,5 40,25 25,5" fill="#6C63FF66"/><polygon points="70,5 40,25 55,5" fill="#6C63FF66"/></svg>'},
+    {label:'Bords vers le centre',svg:'<svg viewBox="0 0 80 60"><path d="M10 5 L40 25 L70 5 L70 55 L10 55 Z" fill="#E8E8FF" stroke="#6C63FF" stroke-width="2"/><path d="M25 15 L40 35" stroke="#6C63FF" stroke-width="2"/><path d="M55 15 L40 35" stroke="#6C63FF" stroke-width="2"/><polygon points="10,5 40,25 25,15" fill="#6C63FF66"/><polygon points="70,5 40,25 55,15" fill="#6C63FF66"/></svg>'},
+    {label:'Replier en deux',svg:'<svg viewBox="0 0 80 60"><path d="M15 10 L65 10 L50 50 L15 50 Z" fill="#E8E8FF" stroke="#6C63FF" stroke-width="2"/><line x1="15" y1="30" x2="55" y2="30" stroke="#6C63FF" stroke-width="2" stroke-dasharray="4,2"/><path d="M25 42 L15 30 L55 30 L55 42 Z" fill="#6C63FF66"/></svg>'},
+    {label:'Écarter les ailes !',svg:'<svg viewBox="0 0 80 60"><path d="M5 35 L40 15 L75 35" fill="#6C63FF" stroke="#4A3FCC" stroke-width="1.5"/><path d="M35 15 L40 55 L45 15" fill="#4A3FCC"/><text x="40" y="52" text-anchor="middle" font-size="10" fill="#6C63FF">✈</text></svg>'},
+  ],
+  'AT-002':[
+    {label:'Bol dans assiette',svg:'<svg viewBox="0 0 80 60"><ellipse cx="40" cy="45" rx="35" ry="8" fill="#ddd" stroke="#999" stroke-width="1.5"/><path d="M15 30 Q40 50 65 30" fill="#ccc" stroke="#999" stroke-width="1.5"/><ellipse cx="40" cy="30" rx="10" ry="4" fill="#aaa" stroke="#999" stroke-width="1.5"/></svg>'},
+    {label:'Bicarbonate',svg:'<svg viewBox="0 0 80 60"><rect x="20" y="15" width="40" height="35" rx="5" fill="#fff" stroke="#999" stroke-width="2"/><text x="40" y="38" text-anchor="middle" font-size="9" fill="#666" font-weight="bold">BICARB</text><path d="M28 20 Q40 10 52 20" fill="none" stroke="#ccc" stroke-width="1.5"/></svg>'},
+    {label:'Colorant rouge',svg:'<svg viewBox="0 0 80 60"><rect x="28" y="10" width="24" height="40" rx="4" fill="#FF6B6B" stroke="#CC0000" stroke-width="2"/><ellipse cx="40" cy="10" rx="6" ry="3" fill="#CC0000"/><text x="40" y="35" text-anchor="middle" font-size="8" fill="#fff">🔴</text></svg>'},
+    {label:'Verser le vinaigre',svg:'<svg viewBox="0 0 80 60"><rect x="22" y="5" width="18" height="35" rx="3" fill="#E8FFE8" stroke="#06D6A0" stroke-width="2"/><path d="M32 40 Q28 52 20 55 Q32 52 40 55 Q32 52 32 40" fill="#06D6A0CC"/><circle cx="25" cy="50" r="3" fill="#06D6A0"/><circle cx="38" cy="47" r="2" fill="#06D6A0"/></svg>'},
+    {label:'Éruption ! 🌋',svg:'<svg viewBox="0 0 80 60"><path d="M10 58 L30 20 L40 10 L50 20 L70 58 Z" fill="#888"/><path d="M30 20 L40 10 L50 20 Z" fill="#666"/><path d="M35 10 Q40 0 45 10 Q50 5 55 15 Q45 12 40 18 Q35 12 25 15 Q30 5 35 10Z" fill="#FF4444"/><circle cx="32" cy="6" r="3" fill="#FF6600"/><circle cx="48" cy="4" r="2" fill="#FF6600"/><circle cx="40" cy="2" r="2.5" fill="#FFAA00"/></svg>'},
+  ],
+  'AT-003':[
+    {label:'Eau chaude + sel',svg:'<svg viewBox="0 0 80 60"><rect x="20" y="20" width="40" height="35" rx="4" fill="#E8F4FF" stroke="#4A9FFF" stroke-width="2"/><path d="M25 25 Q30 20 35 25 Q40 20 45 25 Q50 20 55 25" fill="none" stroke="#4A9FFF" stroke-width="1.5"/><text x="40" y="45" text-anchor="middle" font-size="9" fill="#4A9FFF" font-weight="bold">MAX SEL</text></svg>'},
+    {label:'Verser dans verre',svg:'<svg viewBox="0 0 80 60"><path d="M25 10 L30 55 L50 55 L55 10 Z" fill="#E8F4FF" stroke="#4A9FFF" stroke-width="2"/><ellipse cx="40" cy="40" rx="12" ry="4" fill="#4A9FFF55"/></svg>'},
+    {label:'Fil + crayon',svg:'<svg viewBox="0 0 80 60"><rect x="15" y="18" width="50" height="6" rx="2" fill="#8B4513"/><line x1="40" y1="24" x2="40" y2="52" stroke="#999" stroke-width="1.5" stroke-dasharray="3,2"/><circle cx="40" cy="52" r="4" fill="#ccc" stroke="#999" stroke-width="1.5"/></svg>'},
+    {label:'Tremper le fil',svg:'<svg viewBox="0 0 80 60"><path d="M25 10 L30 55 L50 55 L55 10 Z" fill="#E8F4FF" stroke="#4A9FFF" stroke-width="2"/><line x1="40" y1="5" x2="40" y2="48" stroke="#ccc" stroke-width="2"/><rect x="12" y="3" width="56" height="6" rx="2" fill="#8B4513"/></svg>'},
+    {label:'24h → cristaux !',svg:'<svg viewBox="0 0 80 60"><path d="M25 10 L30 55 L50 55 L55 10 Z" fill="#E8F4FF" stroke="#4A9FFF" stroke-width="2"/><rect x="12" y="3" width="56" height="5" rx="2" fill="#8B4513"/><line x1="40" y1="8" x2="40" y2="45" stroke="#ccc" stroke-width="2"/><polygon points="40,45 36,38 38,42 40,36 42,42 44,38" fill="#4A9FFF" opacity=".7"/><polygon points="40,35 37,30 39,33 40,28 41,33 43,30" fill="#4A9FFF" opacity=".9"/></svg>'},
+  ],
+  'AT-004':[
+    {label:'Plier en deux',svg:'<svg viewBox="0 0 80 60"><rect x="10" y="8" width="60" height="44" rx="3" fill="#FFE8E8" stroke="#FF6B6B" stroke-width="2"/><line x1="40" y1="8" x2="40" y2="52" stroke="#FF6B6B" stroke-width="2" stroke-dasharray="4,2"/></svg>'},
+    {label:'Couper 2 fentes',svg:'<svg viewBox="0 0 80 60"><rect x="10" y="8" width="30" height="44" rx="3" fill="#FFE8E8" stroke="#FF6B6B" stroke-width="2"/><line x1="20" y1="22" x2="36" y2="22" stroke="#FF6B6B" stroke-width="2"/><line x1="20" y1="38" x2="36" y2="38" stroke="#FF6B6B" stroke-width="2"/><text x="48" y="35" font-size="18" text-anchor="middle">✂️</text></svg>'},
+    {label:'Pousser la languette',svg:'<svg viewBox="0 0 80 60"><rect x="10" y="8" width="60" height="44" rx="3" fill="#FFE8E8" stroke="#FF6B6B" stroke-width="2"/><rect x="28" y="22" width="24" height="16" rx="2" fill="#FF6B6B" stroke="#CC0000" stroke-width="1.5"/><path d="M40 30 L40 20" stroke="#fff" stroke-width="2" marker-end="url(#arr)"/></svg>'},
+    {label:'Coller un dessin',svg:'<svg viewBox="0 0 80 60"><rect x="10" y="8" width="60" height="44" rx="3" fill="#FFE8E8" stroke="#FF6B6B" stroke-width="2"/><rect x="28" y="18" width="24" height="20" rx="2" fill="#FF6B6B"/><text x="40" y="32" text-anchor="middle" font-size="11">⭐</text></svg>'},
+    {label:'Décorer la carte',svg:'<svg viewBox="0 0 80 60"><rect x="10" y="8" width="60" height="44" rx="3" fill="#FFE8E8" stroke="#FF6B6B" stroke-width="2"/><rect x="28" y="18" width="24" height="20" rx="2" fill="#FF6B6B"/><text x="40" y="32" text-anchor="middle" font-size="11">⭐</text><text x="18" y="22" font-size="8">🌸</text><text x="60" y="22" font-size="8">🌸</text><text x="18" y="50" font-size="8">✨</text><text x="60" y="50" font-size="8">✨</text></svg>'},
+  ],
+  'AT-005':[
+    {label:'Colle dans un bol',svg:'<svg viewBox="0 0 80 60"><path d="M15 30 Q40 52 65 30" fill="#fff" stroke="#ccc" stroke-width="2"/><ellipse cx="40" cy="30" rx="25" ry="8" fill="#fffde7" stroke="#ccc" stroke-width="2"/><path d="M38 10 Q40 8 42 10 L44 30 Q40 32 36 30 Z" fill="#fffde7" stroke="#ccc" stroke-width="1.5"/></svg>'},
+    {label:'Eau + colorant',svg:'<svg viewBox="0 0 80 60"><path d="M15 30 Q40 52 65 30" fill="#E8FFE8" stroke="#06D6A0" stroke-width="2"/><ellipse cx="40" cy="30" rx="25" ry="8" fill="#06D6A055" stroke="#06D6A0" stroke-width="2"/><text x="40" y="20" text-anchor="middle" font-size="10">💧🎨</text></svg>'},
+    {label:'Ajouter du sel',svg:'<svg viewBox="0 0 80 60"><path d="M15 30 Q40 52 65 30" fill="#E8FFE8" stroke="#06D6A0" stroke-width="2"/><ellipse cx="40" cy="30" rx="25" ry="8" fill="#06D6A055" stroke="#06D6A0" stroke-width="2"/><text x="27" y="16" font-size="8" fill="#999">• • •</text><text x="45" y="14" font-size="8" fill="#999">• •</text></svg>'},
+    {label:'Mélanger',svg:'<svg viewBox="0 0 80 60"><path d="M15 32 Q40 54 65 32" fill="#06D6A055" stroke="#06D6A0" stroke-width="2"/><ellipse cx="40" cy="32" rx="25" ry="8" fill="#06D6A033" stroke="#06D6A0" stroke-width="2"/><path d="M40 10 L40 35" stroke="#888" stroke-width="3" stroke-linecap="round"/><path d="M40 10 Q45 15 40 20 Q35 15 40 10" fill="#888"/></svg>'},
+    {label:'Pétrir le slime',svg:'<svg viewBox="0 0 80 60"><ellipse cx="40" cy="38" rx="28" ry="16" fill="#06D6A0" stroke="#04A87A" stroke-width="2"/><path d="M24 28 Q30 22 36 26 Q40 20 44 26 Q50 22 56 28" fill="none" stroke="#04A87A" stroke-width="2"/><text x="40" y="42" text-anchor="middle" font-size="10" fill="#fff">👋</text></svg>'},
+  ],
+  'AT-006':[
+    {label:'Découper cercles',svg:'<svg viewBox="0 0 80 60"><circle cx="15" cy="15" r="5" fill="#FF6B6B" stroke="#CC0000" stroke-width="1.5"/><circle cx="32" cy="15" r="7" fill="#FF9F1C" stroke="#CC7000" stroke-width="1.5"/><circle cx="52" cy="15" r="9" fill="#FFD166" stroke="#CC9900" stroke-width="1.5"/><text x="40" y="50" text-anchor="middle" font-size="10">✂️ 8 planètes</text></svg>'},
+    {label:'Colorier planètes',svg:'<svg viewBox="0 0 80 60"><circle cx="15" cy="20" r="7" fill="#FF6B6B"/><circle cx="33" cy="18" r="9" fill="#FF9F1C"/><circle cx="55" cy="22" r="11" fill="#4A9FFF"/><path d="M44 22 Q55 15 66 22" stroke="#FFD166" stroke-width="2" fill="none"/><text x="40" y="52" text-anchor="middle" font-size="8" fill="#666">🎨 couleurs réelles</text></svg>'},
+    {label:'Percer un trou',svg:'<svg viewBox="0 0 80 60"><circle cx="40" cy="32" r="18" fill="#4A9FFF" stroke="#2266CC" stroke-width="2"/><circle cx="40" cy="14" r="3" fill="#fff" stroke="#2266CC" stroke-width="1.5"/><text x="40" y="56" text-anchor="middle" font-size="9">✂️ trou en haut</text></svg>'},
+    {label:'Accrocher avec fil',svg:'<svg viewBox="0 0 80 60"><rect x="10" y="8" width="60" height="4" rx="2" fill="#8B4513"/><line x1="25" y1="12" x2="25" y2="32" stroke="#999" stroke-width="1.5"/><line x1="40" y1="12" x2="40" y2="26" stroke="#999" stroke-width="1.5"/><line x1="55" y1="12" x2="55" y2="40" stroke="#999" stroke-width="1.5"/><circle cx="25" cy="36" r="7" fill="#FF6B6B"/><circle cx="40" cy="30" r="5" fill="#FFD166"/><circle cx="55" cy="44" r="9" fill="#4A9FFF"/></svg>'},
+    {label:'Suspendre le mobile',svg:'<svg viewBox="0 0 80 60"><line x1="40" y1="0" x2="40" y2="10" stroke="#999" stroke-width="2"/><rect x="10" y="10" width="60" height="4" rx="2" fill="#8B4513"/><line x1="20" y1="14" x2="18" y2="32" stroke="#999" stroke-width="1.5"/><line x1="40" y1="14" x2="40" y2="28" stroke="#999" stroke-width="1.5"/><line x1="60" y1="14" x2="62" y2="40" stroke="#999" stroke-width="1.5"/><circle cx="18" cy="38" r="6" fill="#FF6B6B"/><circle cx="40" cy="33" r="5" fill="#FF9F1C"/><circle cx="62" cy="46" r="7" fill="#4A9FFF"/></svg>'},
+  ],
+  'AT-007':[
+    {label:'Plier en triangle',svg:'<svg viewBox="0 0 80 60"><rect x="10" y="5" width="60" height="50" rx="2" fill="#E8E8FF" stroke="#6C63FF" stroke-width="2"/><line x1="10" y1="5" x2="70" y2="55" stroke="#6C63FF" stroke-width="2" stroke-dasharray="4,2"/></svg>'},
+    {label:'Plier puis déplier',svg:'<svg viewBox="0 0 80 60"><polygon points="10,5 70,55 10,55" fill="#E8E8FF" stroke="#6C63FF" stroke-width="2"/><line x1="10" y1="30" x2="40" y2="30" stroke="#6C63FF" stroke-width="1.5" stroke-dasharray="3,2"/></svg>'},
+    {label:'Coins vers la pointe',svg:'<svg viewBox="0 0 80 60"><polygon points="10,5 70,55 10,55" fill="#E8E8FF" stroke="#6C63FF" stroke-width="2"/><path d="M10 5 L40 30" stroke="#6C63FF" stroke-width="2"/><polygon points="10,5 40,30 25,5" fill="#6C63FF66"/></svg>'},
+    {label:'Même de l\'autre côté',svg:'<svg viewBox="0 0 80 60"><polygon points="10,5 70,55 10,55" fill="#E8E8FF" stroke="#6C63FF" stroke-width="2"/><path d="M10 5 L40 30" stroke="#6C63FF" stroke-width="2"/><path d="M70 55 L40 30" stroke="#6C63FF" stroke-width="2"/><polygon points="10,5 40,30 25,5" fill="#6C63FF66"/><polygon points="70,55 40,30 55,55" fill="#6C63FF66"/></svg>'},
+    {label:'Glisser dans la poche',svg:'<svg viewBox="0 0 80 60"><polygon points="10,5 70,55 10,55" fill="#6C63FF" stroke="#4A3FCC" stroke-width="2"/><polygon points="22,18 40,30 10,30" fill="#4A3FCC"/><polygon points="58,42 40,30 70,42" fill="#4A3FCC"/><text x="40" y="58" text-anchor="middle" font-size="8" fill="#6C63FF">📖 dans le livre !</text></svg>'},
+  ],
+  'AT-008':[
+    {label:'Couper 3 fils 60cm',svg:'<svg viewBox="0 0 80 60"><line x1="10" y1="15" x2="70" y2="15" stroke="#FF6B6B" stroke-width="3" stroke-linecap="round"/><line x1="10" y1="30" x2="70" y2="30" stroke="#06D6A0" stroke-width="3" stroke-linecap="round"/><line x1="10" y1="45" x2="70" y2="45" stroke="#4A9FFF" stroke-width="3" stroke-linecap="round"/><text x="75" y="32" font-size="12">✂️</text></svg>'},
+    {label:'Nouer ensemble',svg:'<svg viewBox="0 0 80 60"><line x1="35" y1="5" x2="35" y2="20" stroke="#FF6B6B" stroke-width="3" stroke-linecap="round"/><line x1="40" y1="5" x2="40" y2="20" stroke="#06D6A0" stroke-width="3" stroke-linecap="round"/><line x1="45" y1="5" x2="45" y2="20" stroke="#4A9FFF" stroke-width="3" stroke-linecap="round"/><ellipse cx="40" cy="22" rx="8" ry="4" fill="none" stroke="#888" stroke-width="2"/></svg>'},
+    {label:'Tresser',svg:'<svg viewBox="0 0 80 60"><path d="M25 5 Q40 20 55 35 Q40 50 25 55" fill="none" stroke="#FF6B6B" stroke-width="3"/><path d="M40 5 Q25 20 40 35 Q55 50 40 55" fill="none" stroke="#06D6A0" stroke-width="3"/><path d="M55 5 Q40 20 25 35 Q40 50 55 55" fill="none" stroke="#4A9FFF" stroke-width="3"/></svg>'},
+    {label:'Nouer l\'autre bout',svg:'<svg viewBox="0 0 80 60"><path d="M25 5 Q40 20 55 35 Q40 50 25 55" fill="none" stroke="#FF6B6B" stroke-width="3"/><path d="M40 5 Q25 20 40 35 Q55 50 40 55" fill="none" stroke="#06D6A0" stroke-width="3"/><path d="M55 5 Q40 20 25 35 Q40 50 55 55" fill="none" stroke="#4A9FFF" stroke-width="3"/><ellipse cx="40" cy="55" rx="8" ry="3" fill="none" stroke="#888" stroke-width="2"/></svg>'},
+    {label:'Mesurer & couper',svg:'<svg viewBox="0 0 80 60"><circle cx="40" cy="30" r="25" fill="none" stroke="#ddd" stroke-width="12"/><circle cx="40" cy="30" r="25" fill="none" stroke="#FF9F1C" stroke-width="8" stroke-dasharray="40 120"/><text x="40" y="35" text-anchor="middle" font-size="10">✂️</text></svg>'},
+  ],
+  'AT-009':[
+    {label:'Remplir au 1/3',svg:'<svg viewBox="0 0 80 60"><rect x="25" y="5" width="30" height="50" rx="6" fill="none" stroke="#4A9FFF" stroke-width="2"/><rect x="25" y="38" width="30" height="17" rx="0" fill="#4A9FFF55"/><line x1="22" y1="38" x2="55" y2="38" stroke="#4A9FFF" stroke-width="1.5" stroke-dasharray="3,2"/><text x="40" y="50" text-anchor="middle" font-size="8" fill="#4A9FFF">1/3</text></svg>'},
+    {label:'Aiguille dans bouchon',svg:'<svg viewBox="0 0 80 60"><rect x="25" y="5" width="30" height="50" rx="6" fill="#E8F4FF" stroke="#4A9FFF" stroke-width="2"/><ellipse cx="40" cy="5" rx="10" ry="4" fill="#888"/><line x1="40" y1="1" x2="40" y2="15" stroke="#666" stroke-width="2"/></svg>'},
+    {label:'Fermer avec bouchon',svg:'<svg viewBox="0 0 80 60"><rect x="25" y="8" width="30" height="47" rx="6" fill="#E8F4FF" stroke="#4A9FFF" stroke-width="2"/><rect x="27" y="4" width="26" height="6" rx="3" fill="#888"/><rect x="25" y="35" width="30" height="20" rx="4" fill="#4A9FFF55"/></svg>'},
+    {label:'Retourner la bouteille',svg:'<svg viewBox="0 0 80 60"><rect x="25" y="8" width="30" height="47" rx="6" fill="#E8F4FF" stroke="#4A9FFF" stroke-width="2" transform="rotate(180 40 31)"/><rect x="25" y="8" width="30" height="16" rx="4" fill="#4A9FFF55" transform="rotate(180 40 31)"/><path d="M20 45 L40 55 L60 45" fill="none" stroke="#4A9FFF" stroke-width="2"/></svg>'},
+    {label:'Pomper → décollage !',svg:'<svg viewBox="0 0 80 60"><path d="M30 55 L40 5 L50 55 Z" fill="#888"/><path d="M34 18 L40 5 L46 18 Z" fill="#FF6B6B"/><path d="M36 28 L40 18 L44 28 Z" fill="#FF9F1C"/><path d="M36 55 L44 55 Q46 50 44 45 Q40 42 36 45 Q34 50 36 55" fill="#4A9FFF" opacity=".6"/><text x="40" y="58" text-anchor="middle" font-size="8">🚀</text></svg>'},
+  ],
+  'AT-010':[
+    {label:'Préparer glaçons colorés',svg:'<svg viewBox="0 0 80 60"><rect x="8" y="20" width="18" height="18" rx="3" fill="#FF6B6B88" stroke="#FF6B6B" stroke-width="2"/><rect x="31" y="20" width="18" height="18" rx="3" fill="#4A9FFF88" stroke="#4A9FFF" stroke-width="2"/><rect x="54" y="20" width="18" height="18" rx="3" fill="#FFDD0088" stroke="#FFD166" stroke-width="2"/><text x="40" y="52" text-anchor="middle" font-size="8" fill="#666">❄️ congeler la veille</text></svg>'},
+    {label:'Poser une grande feuille',svg:'<svg viewBox="0 0 80 60"><rect x="8" y="20" width="64" height="35" rx="3" fill="#fffde7" stroke="#ddd" stroke-width="2"/><text x="40" y="42" text-anchor="middle" font-size="10">📄</text></svg>'},
+    {label:'Saupoudrer du sel',svg:'<svg viewBox="0 0 80 60"><rect x="8" y="25" width="64" height="30" rx="3" fill="#fffde7" stroke="#ddd" stroke-width="2"/><text x="20" y="18" font-size="8" fill="#aaa">• •</text><text x="38" y="15" font-size="8" fill="#aaa">• • •</text><text x="58" y="18" font-size="8" fill="#aaa">• •</text></svg>'},
+    {label:'Frotter les glaçons',svg:'<svg viewBox="0 0 80 60"><rect x="8" y="30" width="64" height="25" rx="3" fill="#fffde7" stroke="#ddd" stroke-width="2"/><rect x="28" y="16" width="14" height="18" rx="3" fill="#FF6B6B88" stroke="#FF6B6B" stroke-width="2"/><path d="M30 34 Q35 38 42 36 Q48 33 52 37" fill="none" stroke="#FF6B6B" stroke-width="1.5"/></svg>'},
+    {label:'Couleurs qui fondent !',svg:'<svg viewBox="0 0 80 60"><rect x="8" y="15" width="64" height="40" rx="3" fill="#fffde7"/><path d="M10 35 Q25 25 40 35 Q55 45 70 35 L70 55 L10 55 Z" fill="#FF6B6B55"/><path d="M10 40 Q25 30 40 40 Q55 50 70 40 L70 55 L10 55 Z" fill="#4A9FFF55"/><path d="M10 45 Q30 38 50 45 Q60 50 70 45 L70 55 L10 55 Z" fill="#FFD16655"/></svg>'},
+  ],
+};
+
+// Recherche Wikimedia Commons pour images online
+async function fetchWikimediaImages(query, count=5){
+  try{
+    const url=`https://en.wikipedia.org/w/api.php?action=query&generator=images&titles=${encodeURIComponent(query)}&prop=imageinfo&iiprop=url|thumburl&iiurlwidth=200&format=json&origin=*`;
+    // Wikimedia Search API
+    const surl=`https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&srnamespace=6&srlimit=${count}&format=json&origin=*`;
+    const r=await fetch(surl);
+    const d=await r.json();
+    const pages=d.query&&d.query.search||[];
+    const imgs=[];
+    for(const p of pages){
+      try{
+        const iurl=`https://commons.wikimedia.org/w/api.php?action=query&titles=${encodeURIComponent(p.title)}&prop=imageinfo&iiprop=url&iiurlwidth=200&format=json&origin=*`;
+        const ir=await fetch(iurl);
+        const id=await ir.json();
+        const pages2=id.query&&id.query.pages||{};
+        for(const pg of Object.values(pages2)){
+          if(pg.imageinfo&&pg.imageinfo[0]&&pg.imageinfo[0].url){
+            imgs.push({url:pg.imageinfo[0].url,title:pg.title.replace('File:','').replace(/\.\w+$/,'')});
+          }
+        }
+        if(imgs.length>=count)break;
+      }catch(e){}
+    }
+    return imgs;
+  }catch(e){return [];}
+}
+
+// Requêtes Wikimedia par atelier
+const ATELIER_WIKI={
+  'AT-001':['paper airplane folding origami','avion papier pliage'],
+  'AT-002':['baking soda vinegar volcano experiment','volcan bicarbonate experience'],
+  'AT-003':['salt crystal growing experiment','cristaux sel experience'],
+  'AT-004':['popup card making craft','carte popup bricolage'],
+  'AT-005':['slime making craft children','slime maison enfant'],
+  'AT-006':['solar system mobile craft','systeme solaire mobile'],
+  'AT-007':['origami bookmark corner','marque page origami'],
+  'AT-008':['friendship bracelet braiding','bracelet tresse couleur'],
+  'AT-009':['water bottle rocket experiment','fusee bouteille eau'],
+  'AT-010':['ice painting art children','peinture glacons enfant'],
+};
+
+let _imgPanelAtelier=null;
+function openAtelierImages(a, mode){
+  // Panneau glissant dans la même page détail
+  let panel=document.getElementById('atelier-img-panel');
+  if(panel)panel.remove();
+  panel=document.createElement('div');
+  panel.id='atelier-img-panel';
+  panel.style.cssText='position:fixed;bottom:0;left:0;right:0;max-height:75vh;background:var(--bg);border-radius:24px 24px 0 0;box-shadow:0 -8px 40px rgba(0,0,0,.35);z-index:1000;overflow-y:auto;padding:0 0 80px;transform:translateY(100%);transition:transform .3s ease';
+
+  const col={Origami:'#6C63FF',Sciences:'#06D6A0',Bricolage:'#FF9F1C',Peinture:'#FF6B6B'}[a.cat]||'var(--v)';
+  const isOnline=mode==='online';
+
+  // Barre de titre + fermeture
+  const bar=document.createElement('div');
+  bar.style.cssText='display:flex;align-items:center;justify-content:space-between;padding:16px 16px 12px;position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--w);z-index:2';
+  bar.innerHTML=`<div><div style="font-size:14px;font-weight:900;color:${col}">${isOnline?'🖼️ Photos étape par étape':'✏️ Schémas illustrés'}</div><div style="font-size:11px;color:var(--tl);margin-top:2px">${a.nom}</div></div><button onclick="closeAtelierImages()" style="background:var(--w);border:none;border-radius:50%;width:32px;height:32px;font-size:16px;cursor:pointer;color:var(--t)">✕</button>`;
+  panel.appendChild(bar);
+
+  const body=document.createElement('div');
+  body.style.cssText='padding:14px';
+  panel.appendChild(body);
+  document.body.appendChild(panel);
+  requestAnimationFrame(()=>{panel.style.transform='translateY(0)';});
+
+  if(!isOnline){
+    // MODE OFFLINE — SVG pictos
+    const pictos=ATELIER_PICTOS[a.id]||[];
+    if(!pictos.length){
+      body.innerHTML='<div style="text-align:center;padding:30px;color:var(--tl)">Schémas non disponibles pour cet atelier.</div>';
+      return;
+    }
+    pictos.forEach((p,i)=>{
+      const row=document.createElement('div');
+      row.style.cssText='display:flex;align-items:center;gap:12px;background:var(--w);border-radius:14px;padding:12px;margin-bottom:10px;box-shadow:var(--sh)';
+      row.innerHTML=`<div style="background:${col};color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;flex-shrink:0">${i+1}</div>
+        <div style="width:70px;height:52px;flex-shrink:0">${p.svg}</div>
+        <div style="font-size:13px;font-weight:700;flex:1">${p.label}</div>`;
+      body.appendChild(row);
+    });
+  } else {
+    // MODE ONLINE — fetch Wikimedia
+    body.innerHTML='<div style="text-align:center;padding:20px;color:var(--tl)"><div style="font-size:24px;margin-bottom:8px">🔍</div>Recherche des images…</div>';
+    const queries=ATELIER_WIKI[a.id]||[a.nom];
+    (async()=>{
+      let allImgs=[];
+      for(const q of queries){
+        const imgs=await fetchWikimediaImages(q,3);
+        allImgs=[...allImgs,...imgs];
+        if(allImgs.length>=6)break;
+      }
+      body.innerHTML='';
+      if(!allImgs.length){
+        body.innerHTML='<div style="text-align:center;padding:20px;color:var(--tl)"><div style="font-size:28px;margin-bottom:8px">😕</div>Aucune image trouvée.<br><span style="font-size:12px">Vérifiez votre connexion internet.</span></div>';
+        return;
+      }
+      // Montrer les étapes avec illustrations
+      const etapes=a.etapes;
+      etapes.forEach((et,i)=>{
+        const img=allImgs[i%allImgs.length];
+        const row=document.createElement('div');
+        row.style.cssText='background:var(--w);border-radius:14px;margin-bottom:12px;box-shadow:var(--sh);overflow:hidden';
+        row.innerHTML=`<div style="display:flex;align-items:center;gap:10px;padding:10px 12px;border-bottom:1px solid var(--bg)">
+          <div style="background:${col};color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;flex-shrink:0">${i+1}</div>
+          <div style="font-size:13px;font-weight:700">${et}</div></div>
+          <img src="${img.url}" alt="${img.title}" style="width:100%;max-height:180px;object-fit:cover;display:block" onerror="this.style.display='none'"/>`;
+        body.appendChild(row);
+      });
+    })();
+  }
+}
+
+function closeAtelierImages(){
+  const panel=document.getElementById('atelier-img-panel');
+  if(panel){panel.style.transform='translateY(100%)';setTimeout(()=>panel.remove(),350);}
+}
+
 // ── ATELIERS ──
 function openAteliers(){
   document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));
@@ -5492,23 +5685,41 @@ function openAtelierDetail(a){
 
   // Astuce
   const ast=document.createElement('div');
-  ast.style.cssText='background:#FFF8E7;border:2px solid #FFD166;border-radius:16px;padding:14px 16px;margin:0 14px '+(a.youtube?'14px':'80px')+';font-size:13px;font-weight:600;color:#6B4F00;line-height:1.6';
+  ast.style.cssText='background:#FFF8E7;border:2px solid #FFD166;border-radius:16px;padding:14px 16px;margin:0 14px 16px;font-size:13px;font-weight:600;color:#6B4F00;line-height:1.6';
   ast.innerHTML=`<span style="font-size:16px">💡</span> <strong>Astuce :</strong> ${a.astuce}`;
   c.appendChild(ast);
+
+  // ── ZONE BOUTONS ENRICHISSEMENT ─────────────────
+  const btnZone=document.createElement('div');
+  btnZone.style.cssText='padding:0 14px 80px;display:flex;flex-direction:column;gap:10px';
+
+  // Bouton B — Images online étape par étape
+  const btnImgOnline=document.createElement('button');
+  btnImgOnline.style.cssText='display:flex;align-items:center;gap:12px;width:100%;padding:14px 16px;background:var(--w);border:2px solid #6C63FF;border-radius:16px;color:var(--t);font-size:14px;font-weight:800;cursor:pointer;box-shadow:var(--sh);text-align:left';
+  btnImgOnline.innerHTML='<span style="font-size:24px;flex-shrink:0">🖼️</span><div><div style="font-size:13px;font-weight:900;color:#6C63FF">Photos étape par étape</div><div style="font-size:11px;font-weight:600;color:var(--tl);margin-top:2px">Images depuis internet (connexion requise)</div></div><span style="margin-left:auto;font-size:18px;color:#6C63FF">›</span>';
+  btnImgOnline.onclick=()=>{sndTap();openAtelierImages(a,'online');};
+  btnZone.appendChild(btnImgOnline);
+
+  // Bouton C — Pictogrammes offline
+  const btnImgOffline=document.createElement('button');
+  btnImgOffline.style.cssText='display:flex;align-items:center;gap:12px;width:100%;padding:14px 16px;background:var(--w);border:2px solid #06D6A0;border-radius:16px;color:var(--t);font-size:14px;font-weight:800;cursor:pointer;box-shadow:var(--sh);text-align:left';
+  btnImgOffline.innerHTML='<span style="font-size:24px;flex-shrink:0">✏️</span><div><div style="font-size:13px;font-weight:900;color:#06D6A0">Schémas illustrés</div><div style="font-size:11px;font-weight:600;color:var(--tl);margin-top:2px">Pictogrammes intégrés — fonctionne hors ligne</div></div><span style="margin-left:auto;font-size:18px;color:#06D6A0">›</span>';
+  btnImgOffline.onclick=()=>{sndTap();openAtelierImages(a,'offline');};
+  btnZone.appendChild(btnImgOffline);
 
   // Bouton Vidéo YouTube
   if(a.youtube){
     const vbtn=document.createElement('button');
-    vbtn.style.cssText='display:flex;align-items:center;justify-content:center;gap:10px;width:calc(100% - 28px);margin:0 14px 80px;padding:16px;background:linear-gradient(135deg,#FF0000,#CC0000);border:none;border-radius:16px;color:#fff;font-size:16px;font-weight:900;cursor:pointer;box-shadow:0 4px 16px rgba(255,0,0,.35)';
-    vbtn.innerHTML='<span style="font-size:22px">▶</span> Voir la vidéo';
-    vbtn.onclick=()=>{
-      sndTap();
-      // Mémoriser l'atelier courant pour y revenir
-      _lastAtelier=a;
-      openVidPlayer({titre:a.nom, vid:a.youtube, cat:a.cat, dur:a.dur});
-    };
-    c.appendChild(vbtn);
+    vbtn.style.cssText='display:flex;align-items:center;gap:12px;width:100%;padding:14px 16px;background:var(--w);border:2px solid #FF0000;border-radius:16px;color:var(--t);font-size:14px;font-weight:800;cursor:pointer;box-shadow:var(--sh);text-align:left';
+    vbtn.innerHTML='<span style="font-size:24px;flex-shrink:0">▶️</span><div><div style="font-size:13px;font-weight:900;color:#FF0000">Voir la vidéo</div><div style="font-size:11px;font-weight:600;color:var(--tl);margin-top:2px">Tutoriel vidéo YouTube</div></div><span style="margin-left:auto;font-size:18px;color:#FF0000">›</span>';
+    vbtn.onclick=()=>{sndTap();_lastAtelier=a;openVidPlayer({titre:a.nom,vid:a.youtube,cat:a.cat,dur:a.dur});};
+    btnZone.appendChild(vbtn);
   }
+
+  c.appendChild(btnZone);
+
+  // ── PANNEAU IMAGES (injecté dans la même page) ───
+  // Ouvert par openAtelierImages(), fermé par closeAtelierImages()
 
   show('atelier-detail');
 }
