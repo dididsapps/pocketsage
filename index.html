@@ -201,6 +201,8 @@ body.car .scr{background:var(--car-bg)}
   background:var(--w);color:var(--tl)}
 .stab.on,.ltab.on{background:var(--v);color:#fff;border-color:var(--v)}
 .stab-locked{opacity:.55;cursor:default!important}
+.stab-mix{border-color:#FF9F1C!important;color:#FF9F1C!important;font-weight:800!important}
+.stab-mix.on{background:#FF9F1C!important;color:#fff!important;border-color:#FF9F1C!important}
 .ltab{font-size:13px;padding:8px 15px}
 .elist{display:flex;flex-direction:column;gap:9px}
 .ecard{background:var(--w);border-radius:var(--r);padding:13px 15px;cursor:pointer;
@@ -5312,6 +5314,22 @@ function openMod(mod){
 
 function renderTabs(subs,mod){
   const t=document.getElementById('stabs');t.innerHTML='';
+  // Bouton Mix — mélange toutes les questions de tous les sous-domaines
+  const allItems=subs.reduce((acc,sc)=>acc.concat(sc.d||[]),[]);
+  if(allItems.length>1&&mod!=='recompenses'&&mod!=='defis'){
+    const mix=document.createElement('button');
+    mix.className='stab stab-mix';
+    mix.innerHTML='🔀 Mix';
+    mix.title='Mélanger toutes les questions';
+    mix.onclick=()=>{
+      sndTap();
+      t.querySelectorAll('.stab').forEach(x=>x.classList.remove('on'));
+      mix.classList.add('on');
+      const shuffled=[...allItems].sort(()=>Math.random()-.5);
+      renderList(shuffled,mod);
+    };
+    t.appendChild(mix);
+  }
   subs.forEach((sc,i)=>{
     const locked=sc.car&&!APP.car;
     const b=document.createElement('button');
@@ -5754,8 +5772,16 @@ function mkNext(){
   b.textContent=APP.car?'▶ SUIVANT':'Question suivante →';
   b.onclick=()=>{
     const{idx,list,mod}=APP.curEx;
-    if(idx+1<list.length)startEx(list[idx+1],mod,idx+1,list);
-    else showFinal(list,mod);
+    if(idx+1<list.length){
+      startEx(list[idx+1],mod,idx+1,list);
+    } else {
+      // Fin de la liste — retour au domaine
+      const cfg=MCFG[mod];
+      const label=cfg?cfg.emoji+' '+cfg.title:'Retour';
+      b.textContent=label;
+      b.style.background='var(--m)';
+      b.onclick=()=>{sndTap();if(mod)openMod(mod);else goHome();};
+    }
   };
   return b;
 }
