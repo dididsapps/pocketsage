@@ -12,8 +12,8 @@ from pathlib import Path
 # CONFIGURATION — modifie ces valeurs
 # ══════════════════════════════════════════
 API_KEY = "sk_f30727c3dcfbab65149ebe22296dad06a81aa89c8ad2fd93"
-VOICE_ID_FR = "9mF01VTvwaxuBPjm0hMu"   # Olivier (FR)
-VOICE_ID_EN = "GFj5Qf6cNQ3Lgp8VKBwc"   # anglais
+VOICE_ID_FR = "GFj5Qf6cNQ3Lgp8VKBwc"   # Olivier (FR)
+VOICE_ID_EN = "9mF01VTvwaxuBPjm0hMu"   # Charlie Horse (EN)
 OUTPUT_DIR = Path("audio/fr")
 MANIFEST_FILE = Path("audio/manifest.json")
 INDEX_HTML = Path("index.html")
