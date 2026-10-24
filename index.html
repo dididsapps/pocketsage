@@ -892,6 +892,8 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 .modal-box ul{padding-left:18px;font-size:13px;line-height:1.8;color:var(--tl);margin-bottom:10px}
 .modal-close{background:var(--v);color:#fff;border:none;border-radius:12px;
   padding:12px 24px;font-family:var(--f);font-size:14px;font-weight:800;cursor:pointer;width:100%;margin-top:8px}
+/* Hide Netlify badge */
+[data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
 </head>
 <body>
@@ -16886,5 +16888,14 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js').catch(() => {});
   });
 }
+</script>
+<script>
+// Remove Netlify badge if injected
+function _rmNetlify(){
+  var el=document.querySelector('[data-netlify-deploy-id]')||document.querySelector('a[href*="netlify.com"]');
+  if(el){el.remove();}
+}
+document.addEventListener('DOMContentLoaded',_rmNetlify);
+setTimeout(_rmNetlify,1000);
 </script>
 </body></html>
