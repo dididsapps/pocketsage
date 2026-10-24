@@ -2479,6 +2479,89 @@ suites:[
 {id:"LG-6-028",classe:"6ème",cat:"🧠",enonce:"En théorie de la décision, l'espérance mathématique est...",rep:"La somme des valeurs pondérées par leurs probabilités",choix:["La somme des valeurs pondérées par leurs probabilités","La valeur la plus probable","La valeur maximale possible"],diff:5,hint:"E[X] = Σ p(i) × x(i). Jeu à pile ou face : (0.5×10) + (0.5×0) = 5."},
 {id:"LG-6-029",classe:"6ème",cat:"🧠",enonce:"'Modus tollens' : Si P→Q et NON Q, alors...",rep:"NON P",choix:["NON P","P","Q est faux et P est faux en même temps"],diff:4,hint:"Si 'pluie → mouillé' et 'pas mouillé', alors 'pas de pluie'."},
 {id:"LG-6-030",classe:"6ème",cat:"🧠",enonce:"La 'dualité' en logique propositionnelle : si on échange ET/OU et 0/1, l'algèbre de Boole...",rep:"Reste valide — les théorèmes duals sont aussi vrais",choix:["Reste valide — les théorèmes duals sont aussi vrais","Devient fausse","Perd toute signification"],diff:5,hint:"De Morgan est une illustration de cette dualité : ¬(A∧B) ↔ ¬A∨¬B."},
+{id:"LG-6-031",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si tous les chats sont des animaux et Felix est un chat, que peut-on conclure ?",rep:"Felix est un animal",choix:["Felix est un animal","Felix est un chien","Felix est un insecte"],diff:3,hint:"Felix est un animal déduit par syllogisme"}
+{id:"LG-6-032",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite logique : 2, 4, 8, 16, ... ?",rep:"32",choix:["32","24","20"],diff:3,hint:"Chaque terme est multiplié par 2"}
+{id:"LG-6-033",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Quelle est la figure manquante ? Carré, triangle, carré, triangle, ...",rep:"carré",choix:["carré","cercle","rectangle"],diff:3,hint:"La suite alterne carré et triangle"}
+{id:"LG-6-034",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si A > B et B > C, alors ?",rep:"A > C",choix:["A > C","C > A","A = C"],diff:3,hint:"Transitivité de la relation >"}
+{id:"LG-6-035",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 1, 3, 6, 10, ... ?",rep:"15",choix:["15","12","13"],diff:3,hint:"On ajoute 2, 3, 4, 5..."}
+{id:"LG-6-036",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Un sac contient 3 boules rouges et 2 bleues. Quelle couleur est plus probable ?",rep:"rouge",choix:["rouge","bleue","égal"],diff:3,hint:"3 > 2 donc rouge plus probable"}
+{id:"LG-6-037",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si tous les oiseaux volent et un pingouin est un oiseau, est-ce logiquement vrai que le pingouin vole ?",rep:"oui selon la prémisse",choix:["oui selon la prémisse","non","impossible de dire"],diff:3,hint:"La logique formelle dit oui, même si faux dans la réalité"}
+{id:"LG-6-038",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 100, 90, 81, 73, ... ?",rep:"66",choix:["66","65","64"],diff:3,hint:"On soustrait 10, 9, 8, 7..."}
+{id:"LG-6-039",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Parmi ces formes, laquelle est différente : carré, rectangle, triangle, losange ?",rep:"triangle",choix:["triangle","carré","losange"],diff:3,hint:"Le triangle a 3 côtés, les autres en ont 4"}
+{id:"LG-6-040",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si 1 pomme coûte 0,50€, combien coûtent 6 pommes ?",rep:"3€",choix:["3€","4€","2,50€"],diff:3,hint:"0,50 × 6 = 3"}
+{id:"LG-6-041",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 3, 6, 12, 24, ... ?",rep:"48",choix:["48","36","30"],diff:3,hint:"Chaque terme est doublé"}
+{id:"LG-6-042",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Quelle conclusion est correcte ? Tous les roses sont des fleurs. Une tulipe est une fleur.",rep:"On ne peut pas dire que la tulipe est une rose",choix:["On ne peut pas dire que la tulipe est une rose","La tulipe est une rose","Les fleurs ne sont pas des roses"],diff:3,hint:"Être une fleur n'implique pas être une rose"}
+{id:"LG-6-043",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 0, 1, 1, 2, 3, 5, 8, ... ?",rep:"13",choix:["13","11","12"],diff:3,hint:"Suite de Fibonacci"}
+{id:"LG-6-044",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si la probabilité de pluie est de 1/4, quelle est la probabilité qu'il ne pleuve pas ?",rep:"3/4",choix:["3/4","1/4","1/2"],diff:3,hint:"1 - 1/4 = 3/4"}
+{id:"LG-6-045",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite de lettres : A, C, E, G, ... ?",rep:"I",choix:["I","H","J"],diff:3,hint:"On saute une lettre à chaque fois"}
+{id:"LG-6-046",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si un train part à 9h et arrive à 11h30, combien de temps dure le trajet ?",rep:"2h30",choix:["2h30","2h","3h"],diff:3,hint:"11h30 - 9h = 2h30"}
+{id:"LG-6-047",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Quelle forme a 6 côtés ?",rep:"hexagone",choix:["hexagone","pentagone","octogone"],diff:3,hint:"Hex = 6"}
+{id:"LG-6-048",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 1, 4, 9, 16, 25, ... ?",rep:"36",choix:["36","30","35"],diff:3,hint:"Carrés parfaits : 6² = 36"}
+{id:"LG-6-049",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si P implique Q, et P est vrai, alors ?",rep:"Q est vrai",choix:["Q est vrai","Q est faux","On ne sait pas"],diff:3,hint:"Modus ponens"}
+{id:"LG-6-050",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Dans une classe de 30 élèves, 18 ont un animal. Quelle fraction ?",rep:"3/5",choix:["3/5","2/5","1/2"],diff:3,hint:"18/30 = 3/5"}
+{id:"LG-6-051",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 5, 10, 20, 40, ... ?",rep:"80",choix:["80","60","70"],diff:3,hint:"Multiplication par 2"}
+{id:"LG-6-052",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Parmi : chat, chien, dauphin, baleine, quel animal est un mammifère marin ?",rep:"dauphin et baleine",choix:["dauphin et baleine","chat","chien"],diff:3,hint:"Les cétacés sont des mammifères marins"}
+{id:"LG-6-053",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si tu lances un dé, quelle est la probabilité d'obtenir un 6 ?",rep:"1/6",choix:["1/6","1/3","1/2"],diff:3,hint:"Un dé a 6 faces"}
+{id:"LG-6-054",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 2, 5, 11, 23, ... ?",rep:"47",choix:["47","45","46"],diff:3,hint:"On multiplie par 2 et on ajoute 1"}
+{id:"LG-6-055",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Quelle figure a tous ses côtés égaux et tous ses angles droits ?",rep:"carré",choix:["carré","rectangle","losange"],diff:3,hint:"Seul le carré vérifie les deux conditions"}
+{id:"LG-6-056",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si on a 3 boîtes et 9 bonbons à répartir également, combien par boîte ?",rep:"3",choix:["3","4","2"],diff:3,hint:"9 ÷ 3 = 3"}
+{id:"LG-6-057",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : Z, Y, X, W, ... ?",rep:"V",choix:["V","U","T"],diff:3,hint:"Alphabet à l'envers"}
+{id:"LG-6-058",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Un rectangle a une longueur de 8 cm et une largeur de 5 cm. Quel est son périmètre ?",rep:"26 cm",choix:["26 cm","40 cm","13 cm"],diff:3,hint:"2×(8+5) = 26"}
+{id:"LG-6-059",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si tous les B sont des C, et X est un B, alors ?",rep:"X est un C",choix:["X est un C","X n'est pas un C","On ne sait pas"],diff:3,hint:"Syllogisme simple"}
+{id:"LG-6-060",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 1, 2, 4, 7, 11, ... ?",rep:"16",choix:["16","15","14"],diff:3,hint:"On ajoute 1, 2, 3, 4, 5..."}
+{id:"LG-6-061",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Dans un groupe de 20 personnes, 5 portent des lunettes. Quelle proportion ?",rep:"1/4",choix:["1/4","1/5","1/3"],diff:3,hint:"5/20 = 1/4"}
+{id:"LG-6-062",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : rouge, bleu, vert, rouge, bleu, ... ?",rep:"vert",choix:["vert","rouge","bleu"],diff:3,hint:"Le cycle se répète tous les 3"}
+{id:"LG-6-063",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si A = 3 et B = A + 4, alors B = ?",rep:"7",choix:["7","8","6"],diff:3,hint:"B = 3 + 4 = 7"}
+{id:"LG-6-064",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Quel est l'intrus : 4, 9, 16, 25, 30 ?",rep:"30",choix:["30","4","9"],diff:3,hint:"30 n'est pas un carré parfait"}
+{id:"LG-6-065",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 1, 8, 27, 64, ... ?",rep:"125",choix:["125","100","81"],diff:3,hint:"Cubes : 1³, 2³, 3³, 4³, 5³"}
+{id:"LG-6-066",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si un événement a une probabilité de 0, cela signifie ?",rep:"impossible",choix:["impossible","certain","probable"],diff:3,hint:"Probabilité 0 = impossible"}
+{id:"LG-6-067",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 2, 3, 5, 7, 11, 13, ... ?",rep:"17",choix:["17","15","16"],diff:3,hint:"Suite des nombres premiers"}
+{id:"LG-6-068",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Dans un sac : 2 rouges, 3 bleues, 5 vertes. Probabilité de tirer vert ?",rep:"1/2",choix:["1/2","1/3","3/10"],diff:3,hint:"5/10 = 1/2"}
+{id:"LG-6-069",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 10, 9, 7, 4, 0, ... ?",rep:"-5",choix:["-5","-4","-3"],diff:3,hint:"On soustrait 1, 2, 3, 4, 5..."}
+{id:"LG-6-070",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Parmi des figures : rond, ovale, ellipse, carré. Quel est l'intrus ?",rep:"carré",choix:["carré","rond","ovale"],diff:3,hint:"Le carré a des coins, les autres sont arrondis"}
+{id:"LG-6-071",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si 1 heure = 60 minutes, combien de minutes en 3h30 ?",rep:"210",choix:["210","200","190"],diff:3,hint:"3×60 + 30 = 210"}
+{id:"LG-6-072",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 1, 3, 9, 27, ... ?",rep:"81",choix:["81","54","72"],diff:3,hint:"Multiplication par 3"}
+{id:"LG-6-073",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Un carré a un côté de 7 cm. Quel est son aire ?",rep:"49 cm²",choix:["49 cm²","28 cm²","14 cm²"],diff:3,hint:"7² = 49"}
+{id:"LG-6-074",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si P est vrai et Q est faux, que vaut 'P ET Q' ?",rep:"faux",choix:["faux","vrai","indéterminé"],diff:3,hint:"ET nécessite que les deux soient vrais"}
+{id:"LG-6-075",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 2, 6, 18, 54, ... ?",rep:"162",choix:["162","108","144"],diff:3,hint:"Multiplication par 3"}
+{id:"LG-6-076",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Quel est l'intrus : lundi, mardi, jeudi, mai ?",rep:"mai",choix:["mai","lundi","jeudi"],diff:3,hint:"Mai est un mois, les autres sont des jours"}
+{id:"LG-6-077",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si 40% des 50 élèves aiment les maths, combien est-ce ?",rep:"20",choix:["20","25","15"],diff:3,hint:"0,4 × 50 = 20"}
+{id:"LG-6-078",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite de formes : △○□△○... Quelle est la suivante ?",rep:"□",choix:["□","△","○"],diff:3,hint:"Le cycle est triangle, cercle, carré"}
+{id:"LG-6-079",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si P implique Q est vrai, et Q est faux, alors ?",rep:"P est faux",choix:["P est faux","P est vrai","indéterminé"],diff:3,hint:"Modus tollens"}
+{id:"LG-6-080",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Dans une urne : 1 rouge sur 5 boules. Probabilité de ne pas tirer rouge ?",rep:"4/5",choix:["4/5","1/5","3/5"],diff:3,hint:"1 - 1/5 = 4/5"}
+{id:"LG-6-081",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 256, 128, 64, 32, ... ?",rep:"16",choix:["16","8","24"],diff:3,hint:"Division par 2"}
+{id:"LG-6-082",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Un train roule à 100 km/h. En 30 min, quelle distance ?",rep:"50 km",choix:["50 km","30 km","100 km"],diff:3,hint:"100 × 0,5 = 50"}
+{id:"LG-6-083",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Quel est l'intrus : 2, 4, 6, 9, 10 ?",rep:"9",choix:["9","2","4"],diff:3,hint:"9 est impair, les autres sont pairs"}
+{id:"LG-6-084",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 1, 1, 2, 3, 5, 8, 13, 21, ... ?",rep:"34",choix:["34","33","32"],diff:3,hint:"Fibonacci : 13+21=34"}
+{id:"LG-6-085",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si 3 crayons coûtent 1,50€, quel est le prix d'un crayon ?",rep:"0,50€",choix:["0,50€","0,75€","1€"],diff:3,hint:"1,50 ÷ 3 = 0,50"}
+{id:"LG-6-086",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Parmi : cercle, carré, triangle, pentagone. Combien ont exactement 4 côtés ?",rep:"1",choix:["1","2","0"],diff:3,hint:"Seul le carré a exactement 4 côtés"}
+{id:"LG-6-087",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 1, 2, 6, 24, 120, ... ?",rep:"720",choix:["720","600","480"],diff:3,hint:"Factorielles : 1!, 2!, 3!, 4!, 5!, 6!"}
+{id:"LG-6-088",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si la chance de gagner est de 1/5, sur 100 essais, combien de victoires ?",rep:"20",choix:["20","25","10"],diff:3,hint:"100 × 1/5 = 20"}
+{id:"LG-6-089",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : A1, B2, C3, D4, ... ?",rep:"E5",choix:["E5","F5","E6"],diff:3,hint:"Lettre suivante + chiffre suivant"}
+{id:"LG-6-090",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Quelle affirmation est une tautologie ?",rep:"Il fait soleil ou il ne fait pas soleil",choix:["Il fait soleil ou il ne fait pas soleil","Il fait toujours soleil","Il ne fait jamais soleil"],diff:3,hint:"P ou non-P est toujours vrai"}
+{id:"LG-6-091",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 3, 7, 15, 31, ... ?",rep:"63",choix:["63","61","59"],diff:3,hint:"On multiplie par 2 et ajoute 1"}
+{id:"LG-6-092",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Dans une classe, 1/3 des 24 élèves ont les yeux bleus. Combien ?",rep:"8",choix:["8","6","12"],diff:3,hint:"24 ÷ 3 = 8"}
+{id:"LG-6-093",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 0, 3, 8, 15, 24, ... ?",rep:"35",choix:["35","33","36"],diff:3,hint:"n² - 1 : 0,3,8,15,24,35"}
+{id:"LG-6-094",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si tous les X sont Y et aucun Y n'est Z, alors ?",rep:"Aucun X n'est Z",choix:["Aucun X n'est Z","Tous les X sont Z","Certains X sont Z"],diff:3,hint:"Si X⊂Y et Y∩Z=∅ alors X∩Z=∅"}
+{id:"LG-6-095",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Quel nombre manque : 2, ?, 8, 16, 32 ?",rep:"4",choix:["4","6","3"],diff:3,hint:"Suite doublée : 2, 4, 8, 16, 32"}
+{id:"LG-6-096",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite de couleurs : rouge, orange, jaune, vert, bleu, indigo, ... ?",rep:"violet",choix:["violet","rouge","orange"],diff:3,hint:"Couleurs de l'arc-en-ciel"}
+{id:"LG-6-097",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si tu lances deux pièces, quelle est la probabilité d'avoir deux faces ?",rep:"1/4",choix:["1/4","1/2","1/3"],diff:3,hint:"1/2 × 1/2 = 1/4"}
+{id:"LG-6-098",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 12, 6, 3, 1,5, ... ?",rep:"0,75",choix:["0,75","1","0,5"],diff:3,hint:"Division par 2 à chaque fois"}
+{id:"LG-6-099",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Quel est l'intrus : addition, soustraction, multiplication, triangle ?",rep:"triangle",choix:["triangle","addition","multiplication"],diff:3,hint:"Triangle est une figure, pas une opération"}
+{id:"LG-6-100",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si A ⊂ B et B ⊂ C, alors ?",rep:"A ⊂ C",choix:["A ⊂ C","C ⊂ A","A = C"],diff:3,hint:"Transitivité de l'inclusion"}
+{id:"LG-6-101",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 1, 5, 14, 30, 55, ... ?",rep:"91",choix:["91","85","80"],diff:3,hint:"Sommes cumulées des triangulaires"}
+{id:"LG-6-102",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Dans un paquet de 52 cartes, probabilité de tirer un as ?",rep:"1/13",choix:["1/13","4/52","1/4"],diff:3,hint:"4 as sur 52 = 1/13"}
+{id:"LG-6-103",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : ♠♥♦♣♠♥♦... Quelle suit ?",rep:"♣",choix:["♣","♠","♥"],diff:3,hint:"Le cycle recommence"}
+{id:"LG-6-104",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si la probabilité de pluie lundi est 1/2 et mardi 1/3, probabilité les deux jours ?",rep:"1/6",choix:["1/6","5/6","2/5"],diff:3,hint:"1/2 × 1/3 = 1/6 (événements indépendants)"}
+{id:"LG-6-105",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 2, 3, 5, 8, 13, 21, ... ?",rep:"34",choix:["34","31","33"],diff:3,hint:"Chaque terme est la somme des deux précédents"}
+{id:"LG-6-106",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Un sac a 4 billes rouges et 6 bleues. Tu en tires une. Probabilité rouge ?",rep:"2/5",choix:["2/5","4/10","3/5"],diff:3,hint:"4/10 = 2/5"}
+{id:"LG-6-107",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 64, 32, 16, 8, ... ?",rep:"4",choix:["4","6","2"],diff:3,hint:"Division par 2"}
+{id:"LG-6-108",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si non(P et Q) est équivalent à ?",rep:"non-P ou non-Q",choix:["non-P ou non-Q","non-P et non-Q","P ou Q"],diff:3,hint:"Loi de De Morgan"}
+{id:"LG-6-109",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Quel est le 10ème terme de la suite 3n+1 (n commençant à 1) ?",rep:"31",choix:["31","30","32"],diff:3,hint:"3×10 + 1 = 31"}
+{id:"LG-6-110",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : lundi, mercredi, vendredi, ... ?",rep:"dimanche",choix:["dimanche","samedi","jeudi"],diff:3,hint:"On saute un jour : lun, mer, ven, dim"}
+{id:"LG-6-111",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Si 6 personnes se serrent la main avec tout le monde, combien de poignées ?",rep:"15",choix:["15","12","18"],diff:3,hint:"6×5÷2 = 15"}
+{id:"LG-6-112",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Suite : 1, 4, 13, 40, ... ?",rep:"121",choix:["121","118","115"],diff:3,hint:"Chaque terme × 3 + 1"}
+{id:"LG-6-113",classe:"6ème",cat:"🧠",type:"LogiqueModule",enonce:"Quelle est la négation de 'tous les chats sont noirs' ?",rep:"Il existe au moins un chat non noir",choix:["Il existe au moins un chat non noir","Aucun chat n'est noir","Tous les chats sont blancs"],diff:3,hint:"Négation du quantificateur universel"}
 {id:"LG-5-001",classe:"5ème",cat:"🧠",enonce:"Le problème de Halting de Turing montre que certains problèmes sont...",rep:"Indécidables — aucun algorithme ne peut les résoudre",choix:["Indécidables — aucun algorithme ne peut les résoudre","Toujours résolubles avec assez de temps","Résolubles uniquement par des ordinateurs quantiques"],diff:5,hint:"Turing 1936 : on ne peut pas décider en général si un programme s'arrête."},
 {id:"LG-5-002",classe:"5ème",cat:"🧠",enonce:"La 'logique paraconsistante' tolère les contradictions. Dans quels contextes est-elle utile ?",rep:"Raisonnement sur des bases de données incohérentes",choix:["Raisonnement sur des bases de données incohérentes","Mathématiques formelles","Uniquement en philosophie"],diff:5,hint:"Si une BD contient P et NON-P, la logique classique explose. La paraconsistante isole la contradiction."},
 {id:"LG-5-003",classe:"5ème",cat:"🧠",enonce:"Kolmogorov et la complexité algorithmique de description : qu'est-ce que la 'complexité de Kolmogorov' ?",rep:"La longueur du plus court programme qui génère une chaîne",choix:["La longueur du plus court programme qui génère une chaîne","La vitesse d'exécution d'un algorithme","Le nombre d'opérations d'un tri"],diff:5,hint:"'π' : une infinité de décimales mais un programme court. Entropie vs structure."},
@@ -3726,6 +3809,87 @@ geo:[
 {id:"HI-GS-078",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel mois marque la fin de l'année ?",rep:"décembre",choix:["novembre","décembre","janvier","octobre"],diff:1,hint:"Noël est dans ce mois !"},
 {id:"HI-GS-079",classe:"GS",cat:"📅",type:"Histoire",enonce:"Qu'est-ce qu'un libraire vend ?",rep:"des livres",choix:["des jouets","des livres","des médicaments","des vêtements"],diff:1,hint:"On aime y aller pour choisir des histoires !"},
 {id:"HI-GS-080",classe:"GS",cat:"📅",type:"Histoire",enonce:"Pendant quelle période les enfants ont-ils les grandes vacances ?",rep:"en juillet et août",choix:["en janvier","en mars","en juillet et août","en octobre"],diff:1,hint:"C'est les vacances d'été !"},
+
+{id:"HI-GS-081",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel jour est aujourd'hui si hier était lundi ?",rep:"mardi",choix:["lundi","mardi","mercredi"],diff:1,hint:"Hier lu, aujourd'hui..."},
+
+{id:"HI-GS-082",classe:"GS",cat:"📅",type:"Histoire",enonce:"Combien de jours dans une semaine ?",rep:"7",choix:["5","6","7"],diff:1,hint:"Lu-Ma-Me-Je-Ve-Sa-Di !"},
+
+{id:"HI-GS-083",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel repas mange-t-on le matin ?",rep:"le petit-déjeuner",choix:["le dîner","le petit-déjeuner","le déjeuner"],diff:1,hint:"Tartines et chocolat chaud !"},
+
+{id:"HI-GS-084",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quelle saison suit l'hiver ?",rep:"le printemps",choix:["l'automne","le printemps","l'été"],diff:1,hint:"Les fleurs poussent !"},
+
+{id:"HI-GS-085",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel métier aide les malades ?",rep:"le médecin",choix:["le boulanger","le médecin","le pompier"],diff:1,hint:"Avec un stéthoscope !"},
+
+{id:"HI-GS-086",classe:"GS",cat:"📅",type:"Histoire",enonce:"Combien de mois dans une année ?",rep:"12",choix:["10","11","12"],diff:1,hint:"De janvier à décembre !"},
+
+{id:"HI-GS-087",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel métier conduit les pompiers ?",rep:"le pompier",choix:["le policier","le pompier","le gendarme"],diff:1,hint:"18 pour appeler !"},
+
+{id:"HI-GS-088",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel est le premier jour de la semaine ?",rep:"lundi",choix:["dimanche","lundi","mardi"],diff:1,hint:"Lu-ndi !"},
+
+{id:"HI-GS-089",classe:"GS",cat:"📅",type:"Histoire",enonce:"En quelle saison fait-il très froid et peut-il neiger ?",rep:"en hiver",choix:["au printemps","en été","en hiver"],diff:1,hint:"Bonhomme de neige !"},
+
+{id:"HI-GS-090",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel métier livre le courrier ?",rep:"le facteur",choix:["le livreur","le facteur","le chauffeur"],diff:1,hint:"Avec sa sacoche jaune !"},
+
+{id:"HI-GS-091",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quelle fête a lieu le 25 décembre ?",rep:"Noël",choix:["l'Épiphanie","Noël","Pâques"],diff:1,hint:"Père Noël et cadeaux !"},
+
+{id:"HI-GS-092",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel métier protège les maisons qui brûlent ?",rep:"le pompier",choix:["le policier","le pompier","le gendarme"],diff:1,hint:"Lance à incendie !"},
+
+{id:"HI-GS-093",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel jour est le dernier de la semaine ?",rep:"dimanche",choix:["vendredi","samedi","dimanche"],diff:1,hint:"Repos !"},
+
+{id:"HI-GS-094",classe:"GS",cat:"📅",type:"Histoire",enonce:"En quelle saison y a-t-il des citrouilles et des feuilles mortes ?",rep:"en automne",choix:["au printemps","en automne","en hiver"],diff:1,hint:"Halloween !"},
+
+{id:"HI-GS-095",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel métier apprend à lire et à écrire aux enfants ?",rep:"l'enseignant",choix:["le directeur","l'enseignant","le surveillant"],diff:1,hint:"À l'école !"},
+
+{id:"HI-GS-096",classe:"GS",cat:"📅",type:"Histoire",enonce:"Combien de jours dans une année normale ?",rep:"365",choix:["300","365","400"],diff:1,hint:"Une révolution de la Terre !"},
+
+{id:"HI-GS-097",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel mois a-t-il lieu Noël ?",rep:"décembre",choix:["novembre","décembre","janvier"],diff:1,hint:"Le 25 !"},
+
+{id:"HI-GS-098",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel métier vend du pain et des croissants ?",rep:"le boulanger",choix:["le pâtissier","le boulanger","le boucher"],diff:1,hint:"Il se lève très tôt !"},
+
+{id:"HI-GS-099",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel est le mois de la Saint-Valentin ?",rep:"février",choix:["janvier","février","mars"],diff:1,hint:"Cœurs et amour !"},
+
+{id:"HI-GS-100",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel métier répare les voitures ?",rep:"le mécanicien",choix:["le carrossier","le mécanicien","le garagiste"],diff:1,hint:"Cambouis et clés !"},
+
+{id:"HI-GS-101",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quelle fête célèbre-t-on au printemps avec des œufs en chocolat ?",rep:"Pâques",choix:["Noël","Pâques","l'Épiphanie"],diff:1,hint:"Le lapin passe !"},
+
+{id:"HI-GS-102",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel jour commence le week-end ?",rep:"samedi",choix:["vendredi","samedi","dimanche"],diff:1,hint:"Pas d'école !"},
+
+{id:"HI-GS-103",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel métier soigne les dents ?",rep:"le dentiste",choix:["le médecin","le dentiste","l'infirmier"],diff:1,hint:"Brosse tes dents !"},
+
+{id:"HI-GS-104",classe:"GS",cat:"📅",type:"Histoire",enonce:"En quelle saison les enfants ont-ils de grandes vacances ?",rep:"en été",choix:["au printemps","en été","en automne"],diff:1,hint:"Juillet-août !"},
+
+{id:"HI-GS-105",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel outil mesure le temps qui passe en secondes ?",rep:"la montre",choix:["le thermomètre","la montre","la règle"],diff:1,hint:"Tic-tac !"},
+
+{id:"HI-GS-106",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel métier s'occupe des animaux malades ?",rep:"le vétérinaire",choix:["le médecin","le vétérinaire","le biologiste"],diff:1,hint:"Pour ton chat ou ton chien !"},
+
+{id:"HI-GS-107",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel événement a lieu le 1er janvier ?",rep:"le Nouvel An",choix:["Noël","le Nouvel An","l'Épiphanie"],diff:1,hint:"Bonne année !"},
+
+{id:"HI-GS-108",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel est le dernier mois de l'année ?",rep:"décembre",choix:["novembre","décembre","janvier"],diff:1,hint:"Les fêtes !"},
+
+{id:"HI-GS-109",classe:"GS",cat:"📅",type:"Histoire",enonce:"En quelle saison les arbres ont-ils le plus de feuilles vertes ?",rep:"en été",choix:["au printemps","en été","en automne"],diff:1,hint:"Ombre et chaleur !"},
+
+{id:"HI-GS-110",classe:"GS",cat:"📅",type:"Histoire",enonce:"Combien d'heures dans une journée ?",rep:"24",choix:["12","24","48"],diff:1,hint:"Midi + minuit = 24h !"},
+
+{id:"HI-GS-111",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel métier pilote les avions ?",rep:"le pilote",choix:["le conducteur","le pilote","le capitaine"],diff:1,hint:"Décollage !"},
+
+{id:"HI-GS-112",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel jour vient avant mercredi ?",rep:"mardi",choix:["lundi","mardi","jeudi"],diff:1,hint:"Lu-Ma-Mer... !"},
+
+{id:"HI-GS-113",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quelle fête est au début de l'année et on mange une galette ?",rep:"l'Épiphanie",choix:["Noël","l'Épiphanie","la Chandeleur"],diff:1,hint:"Fève et couronne !"},
+
+{id:"HI-GS-114",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel métier conduit les bus ?",rep:"le chauffeur de bus",choix:["le conducteur de train","le chauffeur de bus","le taximan"],diff:1,hint:"Stop-stop !"},
+
+{id:"HI-GS-115",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel mois y a-t-il Halloween ?",rep:"octobre",choix:["septembre","octobre","novembre"],diff:1,hint:"Le 31 !"},
+
+{id:"HI-GS-116",classe:"GS",cat:"📅",type:"Histoire",enonce:"Combien de semaines dans un mois environ ?",rep:"4",choix:["2","3","4"],diff:1,hint:"~28-31 jours !"},
+
+{id:"HI-GS-117",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel est le 3ème jour de la semaine ?",rep:"mercredi",choix:["mardi","mercredi","jeudi"],diff:1,hint:"Lu-Ma-Mercredi !"},
+
+{id:"HI-GS-118",classe:"GS",cat:"📅",type:"Histoire",enonce:"En quelle saison la nature reverdit et les oiseaux chantent ?",rep:"au printemps",choix:["en automne","au printemps","en été"],diff:1,hint:"Mars-juin !"},
+
+{id:"HI-GS-119",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel métier nourrit les clients au restaurant ?",rep:"le serveur",choix:["le cuisinier","le serveur","le gérant"],diff:1,hint:"Avec un plateau !"},
+
+{id:"HI-GS-120",classe:"GS",cat:"📅",type:"Histoire",enonce:"Quel est le 5ème mois de l'année ?",rep:"mai",choix:["avril","mai","juin"],diff:1,hint:"Muguet et fête du travail !"},
+
 // CP (6 ans) : mon quartier, ma ville, la France, les paysages simples
 {id:"GE-CP-001",classe:"CP",cat:"🏙️",enonce:"Comment s'appelle la ville principale de la France — la capitale ?",rep:"Paris",choix:["Lyon","Paris","Bordeaux"],diff:1,hint:"La tour Eiffel se trouve dans cette ville."},
 {id:"GE-CP-002",classe:"CP",cat:"🌍",enonce:"La France, c'est sur quel continent ?",rep:"L'Europe",choix:["L'Afrique","L'Asie","L'Europe"],diff:1,hint:"Nos voisins sont l'Espagne, l'Italie et l'Allemagne — tous en Europe."},
