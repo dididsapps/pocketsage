@@ -8,7 +8,9 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="PocketSage">
 <meta name="theme-color" content="#6C63FF">
-<title>PocketSage Academy — V51</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="apple-touch-icon" href="/icons/icon-192.png">
+<title>PocketSage Academy</title>
 <!-- POLITIQUE DE CONFIDENTIALITÉ INTÉGRÉE
   PocketSage Academy — v3
   • Aucune donnée personnelle collectée ni transmise à des tiers
@@ -16806,5 +16808,12 @@ window.transferCoinsToWorld=function(n){
 // Bateaux initialisés à l'ouverture du monde (dans w3Init)
 
 })();
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+  });
+}
 </script>
 </body></html>
