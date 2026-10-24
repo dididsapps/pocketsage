@@ -10642,7 +10642,8 @@ const AUDIO_CDN='https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev';
 const _audioCache={};
 function _playMp3(id,fallbackTxt,lang){
   if(!id)return false;
-  const url=`${AUDIO_CDN}/audio/fr/${id}.mp3`;
+  const audioLang=(lang==='en')?'en':'fr';
+  const url=`${AUDIO_CDN}/audio/${audioLang}/${id}.mp3`;
   // Vérifier dans le cache mémoire
   if(_audioCache[id]==='miss')return false;
   const a=new Audio(url);
