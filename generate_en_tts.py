@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 PocketSage Academy - ElevenLabs TTS Generator (English)
-Génère les MP3 pour les questions CP+CE1 type Anglais
+Génère les MP3 pour les questions GS→CE2 type Anglais
 Voix: Olivier EN (9mF01VTvwaxuBPjm0hMu)
 
 Usage:
@@ -21,7 +21,10 @@ import requests
 ELEVENLABS_API_KEY = "sk_e920c195b03adac355923ab26527d2d48af72105260a0c00"
 VOICE_ID = "9mF01VTvwaxuBPjm0hMu"  # Olivier EN
 OUTPUT_DIR = "audio/en"
-INDEX_PATH = "index.html"  # chemin vers index.html (dossier pocketsage)
+INDEX_PATH = "index.html"
+
+# Classes ciblées (comme pour le FR : GS → CE2)
+TARGET_CLASSES = {"GS", "CP", "CE1", "CE2"}
 
 # ElevenLabs TTS settings
 MODEL_ID = "eleven_multilingual_v2"
@@ -36,9 +39,17 @@ VOICE_SETTINGS = {
 print("📖 Lecture de index.html...")
 content = open(INDEX_PATH, encoding="utf-8").read()
 
-pattern = r'\{id:"(AN-(?:CP|CE1)-\d+)"[^}]*?enonce:"((?:[^"\\]|\\.)*?)"'
-matches = re.findall(pattern, content)
-print(f"✅ {len(matches)} questions Anglais trouvées (CP + CE1)")
+pattern = r'\{id:"(AN-([A-Z0-9]+)-\d+)"[^}]*?enonce:"((?:[^"\\]|\\.)*?)"'
+all_matches = re.findall(pattern, content)
+
+# Filtrer GS → CE2
+matches = [(qid, enonce) for qid, classe, enonce in all_matches if classe in TARGET_CLASSES]
+print(f"✅ {len(matches)} questions Anglais trouvées (GS → CE2)")
+
+from collections import Counter
+classes_count = Counter(m[0].split('-')[1] for m in matches)
+for k, v in sorted(classes_count.items()):
+    print(f"   {k}: {v}")
 
 # ── Create output directory ────────────────────────────────────────────────────
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -64,7 +75,7 @@ for i, (qid, enonce) in enumerate(matches, 1):
         print(f"  ⏭️  [{i}/{total}] {qid} (déjà généré)")
         continue
 
-    # Clean text: unescape and clean up
+    # Clean text
     text = enonce.replace("\\'", "'").replace('\\"', '"').replace("\\n", " ").strip()
     if not text:
         print(f"  ⚠️  [{i}/{total}] {qid} - texte vide, ignoré")
@@ -85,39 +96,36 @@ for i, (qid, enonce) in enumerate(matches, 1):
             with open(out_path, "wb") as f:
                 f.write(resp.content)
             generated += 1
-            print(f"         ✅ Sauvegardé ({len(resp.content)//1024}KB)")
+            print(f"         ✅ {len(resp.content)//1024}KB")
         elif resp.status_code == 429:
             print(f"         ⏳ Rate limit - pause 60s...")
             time.sleep(60)
-            # Retry
             resp = requests.post(url, json=payload, headers=headers, timeout=30)
             if resp.status_code == 200:
                 with open(out_path, "wb") as f:
                     f.write(resp.content)
                 generated += 1
-                print(f"         ✅ Retry OK ({len(resp.content)//1024}KB)")
+                print(f"         ✅ Retry OK")
             else:
                 errors.append(qid)
-                print(f"         ❌ Erreur après retry: {resp.status_code}")
+                print(f"         ❌ {resp.status_code}")
         else:
             errors.append(qid)
-            print(f"         ❌ Erreur: {resp.status_code} - {resp.text[:100]}")
+            print(f"         ❌ {resp.status_code} - {resp.text[:100]}")
     except Exception as e:
         errors.append(qid)
-        print(f"         ❌ Exception: {e}")
+        print(f"         ❌ {e}")
 
-    # Pause entre les requêtes pour éviter le rate limiting
     time.sleep(0.5)
 
 # ── Summary ────────────────────────────────────────────────────────────────────
 print(f"\n{'='*50}")
-print(f"✅ Générés : {generated}")
-print(f"⏭️  Ignorés (déjà existants) : {skipped}")
+print(f"✅ Générés  : {generated}")
+print(f"⏭️  Ignorés  : {skipped}")
 if errors:
-    print(f"❌ Erreurs ({len(errors)}) : {', '.join(errors)}")
+    print(f"❌ Erreurs  : {len(errors)} — {', '.join(errors)}")
 else:
     print(f"🎉 Aucune erreur !")
 
-print(f"\n📁 Fichiers dans : {os.path.abspath(OUTPUT_DIR)}/")
-print(f"\n🚀 Prochaine étape - Upload sur R2 :")
+print(f"\n🚀 Upload sur R2 :")
 print(f"   rclone copy audio/en r2:pocketsage-audio/audio/en --progress")
