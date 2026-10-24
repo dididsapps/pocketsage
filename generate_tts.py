@@ -11,7 +11,7 @@ from pathlib import Path
 # ══════════════════════════════════════════
 # CONFIGURATION — modifie ces valeurs
 # ══════════════════════════════════════════
-API_KEY = "sk_f30727c3dcfbab65149ebe22296dad06a81aa89c8ad2fd93"
+API_KEY = "sk_f30727c3dcfbab65149ebe22296dad06a81aa89c8ad2fd93"  # updated Oct 2026
 VOICE_ID_FR = "GFj5Qf6cNQ3Lgp8VKBwc"   # Olivier (FR)
 VOICE_ID_EN = "9mF01VTvwaxuBPjm0hMu"   # Charlie Horse (EN)
 OUTPUT_DIR = Path("audio/fr")
