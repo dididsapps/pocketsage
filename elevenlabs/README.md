@@ -74,7 +74,7 @@ avatars/       ← Avatars SVG
 | Mini-histoires HC-001/002/003/005 | ElevenLabs Olivier | ✅ 4 fichiers |
 
 **Format fichiers Nuit :** `audio/nuit/{ID}.mp3`
-Les histoires Nuit ne sont **pas** dans manifest.json — elles sont jouées directement depuis R2 via `elSpeak()` dans index.html.
+Les histoires Nuit ne sont **pas** dans manifest.json — elles sont servies depuis R2 via `elPlayNuit()` dans index.html, avec fallback ElevenLabs API si le fichier n'existe pas encore.
 
 ---
 
@@ -170,14 +170,15 @@ Bouton audio pressé
   │     ├─ Cherche MP3 sur R2 (fetch + AudioContext)
   │     └─ Fallback : ttsSpeak() → Web Speech API
   │
-  ├─ Onglet Nuit (histoires/méditations) → elSpeak(texte)
-  │     ├─ Appel ElevenLabs API en temps réel (texte long découpé en chunks)
-  │     └─ Fallback : Web Speech API si API indisponible
+  ├─ Onglet Nuit (histoires/méditations) → elPlayNuit(id, texte)
+  │     ├─ 1. Cherche MP3 sur R2 (audio/nuit/{id}.mp3) — GRATUIT si pré-généré
+  │     ├─ 2. Fallback : elSpeak() → ElevenLabs API temps réel (texte chunké)
+  │     └─ 3. Fallback : Web Speech API si API indisponible
   │
   └─ Autres (CE2+, conseils, etc.) → ttsSpeak() → Web Speech API
 ```
 
-**À faire (amélioration future) :** Modifier `elSpeak()` pour vérifier d'abord si le fichier existe dans `audio/nuit/` sur R2 (comme `_playMp3`) avant d'appeler l'API en temps réel — économise des crédits si l'histoire est pré-générée.
+✅ **Implémenté (02/11/2026) :** `elPlayNuit(id, txt)` vérifie d'abord `audio/nuit/{id}.mp3` sur R2 avant d'appeler l'API. Les 17 MP3 pré-générés sont servis gratuitement depuis R2 — zéro crédit pour les écoutes répétées.
 
 ---
 
