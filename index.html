@@ -10674,11 +10674,12 @@ const _audioCache={};
 function _playMp3(id,fallbackTxt,lang){
   if(!id)return false;
   const isEN=(lang==='en'||id.startsWith('AN-'));
-  // Modules FR avec MP3 ElevenLabs sur R2 : GS, CP, CE1 (tous modules)
+  // Modules FR avec MP3 sur R2 : GS/CP/CE1 (ElevenLabs) + CE2/CM1/CM2/6E→LY (Google TTS)
   const _frGS=id.startsWith('LG-GS-')||id.startsWith('SC-GS-')||id.startsWith('HI-GS-')||id.startsWith('MA-GS-')||id.startsWith('GE-GS-')||id.startsWith('ES-GS-')||id.startsWith('CG-')||id.startsWith('FR-GS-');
   const _frCP=id.startsWith('LG-CP-')||id.startsWith('SC-CP-')||id.startsWith('MA-CP-')||id.startsWith('GE-CP-')||id.startsWith('ES-CP-')||id.startsWith('FR-CP-');
   const _frCE1=id.startsWith('LG-CE1-')||id.startsWith('SC-CE1-')||id.startsWith('MA-CE1-')||id.startsWith('GE-CE1-')||id.startsWith('ES-CE1-')||id.startsWith('FR-CE1-');
-  const isFR=_frGS||_frCP||_frCE1||id.startsWith('FR-');
+  const _frSup=/^(?:LG|SC|MA|GE|HI|FR|ES|FLE)-(?:CE2|CM1|CM2|6E|5E|4E|3E|LY)-/.test(id);
+  const isFR=_frGS||_frCP||_frCE1||_frSup||id.startsWith('FR-');
   if(!isEN&&!isFR)return false;
   const audioLang=isEN?'en':'fr';
   const fileId=isEN?id:id.replace(/^LG-/,'FR-');
