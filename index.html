@@ -11703,13 +11703,13 @@ function showReactOverlay(win){
   if(!ov)return;
   // Contenu
   if(win){
-    bub.textContent=['🎉 Excellent !','🌟 Bravo !','⭐ Parfait !','🏆 Super !'][Math.floor(Math.random()*4)];
+    bub.textContent=[t('ok1'),t('ok2'),t('ok3'),t('ok4')][Math.floor(Math.random()*4)];
     bub.className='rov-bubble win';
     bg.className='rov-bg win';
     ov.className='';
     ov.classList.add('win');
   }else{
-    bub.textContent=['😅 Presque !','💪 Réessaie !','🤔 Pas tout à fait…','✊ Courage !'][Math.floor(Math.random()*4)];
+    bub.textContent=[t('ko1'),t('ko2'),t('ko3'),t('ko4')][Math.floor(Math.random()*4)];
     bub.className='rov-bubble lose';
     bg.className='rov-bg lose';
     ov.className='';
@@ -11800,27 +11800,310 @@ function updateAgeSlider(val){
 // ════════════════════════════════════════════
 // HOME MODULES (déclaré avant initSetup pour éviter TDZ)
 // ════════════════════════════════════════════
+// ════════════════════════════════════════════
+// I18N — Interface language (follows device language, not profile native)
+// ════════════════════════════════════════════
+(function(){
+  const bl=(navigator.language||'fr').toLowerCase().split('-')[0];
+  const map={fr:'FR',en:'EN',es:'ES',de:'DE',ar:'AR',it:'IT',zh:'ZH',pt:'PT',ru:'RU',uk:'UK'};
+  window._uiLang=map[bl]||'FR';
+})();
+
+const I18N={
+  FR:{
+    hello:'Bonjour',
+    stars_one:'étoile',stars_other:'étoiles',
+    explore:'Explorer →',
+    done_one:'fait',done_other:'faits',
+    learn:'Apprend :',
+    age_label:'ans',
+    level_1:'Explorateur 🌱',level_2:'Aventurier 🗺️',level_3:'Champion 🏆',level_4:'Expert 🔬',level_5:'Maître 🎓',
+    // Setup
+    setup_title:'PocketSage Academy',setup_sub:'Personnalise ton expérience !',
+    setup_name:'👤 Prénom',setup_name_ph:'Emma, Lucas, Maman…',
+    setup_native:'🗺️ Langue maternelle',
+    setup_langs:'🌍 Langues à apprendre',setup_langs_hint:'(plusieurs OK)',
+    setup_age:'🎂 Ton âge :',
+    setup_avatar:'🎨 Choisis ton avatar',
+    setup_create:'✨ Créer mon profil !',
+    // Modules
+    m_logique:'Logique & Maths',m_logique_d:'Calculs, suites, devinettes…',
+    m_langues:'Langues',m_langues_d:'Anglais, Espagnol, vocabulaire',
+    m_sciences:'Sciences & Nature',m_sciences_d:'Physique, biologie, curiosités',
+    m_politesse:'Politesse & Savoir-vivre',m_politesse_d:'Bonnes manières, dictons, conseils de vie',
+    m_videos:'Vidéos éducatives',m_videos_d:'Documentaires, découvertes, culture',
+    m_ateliers:'Ateliers',m_ateliers_d:'Bricolage, sciences, origami, peinture',
+    m_nuit:'Histoires du soir',m_nuit_d:'Méditations, relaxation, sommeil',
+    m_jeux:'Mini-jeux',m_jeux_d:'Mémoire, serpent, anagrammes…',
+    m_sport:'Sport & Défis',m_sport_d:'Exercices, mouvements, défis sportifs',
+    // Feedback exercices
+    ok1:'🎉 Excellent !',ok2:'🌟 Bravo !',ok3:'⭐ Parfait !',ok4:'🏆 Super !',
+    ko1:'😅 Presque !',ko2:'💪 Réessaie !',ko3:'🤔 Pas tout à fait…',ko4:'✊ Courage !',
+    score_perfect:'Parfait !',score_great:'Excellent !',score_good:'Bien joué !',score_keep:'Continue !',
+    correct:'🎉 Bravo ! C\'est la bonne réponse !',wrong:'🤔 Pas tout à fait… Lis l\'indice !',
+    // Nav
+    nav_home:'Accueil',nav_langues:'Langues',nav_savoirs:'Savoirs',nav_jeux:'Jeux',nav_night:'Nuit',nav_back:'Continuer !',
+  },
+  EN:{
+    hello:'Hello',
+    stars_one:'star',stars_other:'stars',
+    explore:'Explore →',
+    done_one:'done',done_other:'done',
+    learn:'Learning:',
+    age_label:'y.o.',
+    level_1:'Explorer 🌱',level_2:'Adventurer 🗺️',level_3:'Champion 🏆',level_4:'Expert 🔬',level_5:'Master 🎓',
+    setup_title:'PocketSage Academy',setup_sub:'Personalize your experience!',
+    setup_name:'👤 First name',setup_name_ph:'Emma, Lucas, Mom…',
+    setup_native:'🗺️ Mother tongue',
+    setup_langs:'🌍 Languages to learn',setup_langs_hint:'(pick several)',
+    setup_age:'🎂 Your age:',
+    setup_avatar:'🎨 Choose your avatar',
+    setup_create:'✨ Create my profile!',
+    m_logique:'Logic & Maths',m_logique_d:'Arithmetic, sequences, riddles…',
+    m_langues:'Languages',m_langues_d:'English, Spanish, vocabulary',
+    m_sciences:'Science & Nature',m_sciences_d:'Physics, biology, curiosities',
+    m_politesse:'Manners & Life skills',m_politesse_d:'Good manners, sayings, life tips',
+    m_videos:'Educational videos',m_videos_d:'Documentaries, discoveries, culture',
+    m_ateliers:'Workshops',m_ateliers_d:'Crafts, science, origami, painting',
+    m_nuit:'Bedtime stories',m_nuit_d:'Meditations, relaxation, sleep',
+    m_jeux:'Mini-games',m_jeux_d:'Memory, snake, anagrams…',
+    m_sport:'Sport & Challenges',m_sport_d:'Exercises, movements, sport challenges',
+    ok1:'🎉 Excellent!',ok2:'🌟 Well done!',ok3:'⭐ Perfect!',ok4:'🏆 Super!',
+    ko1:'😅 Almost!',ko2:'💪 Try again!',ko3:'🤔 Not quite…',ko4:'✊ Keep going!',
+    score_perfect:'Perfect!',score_great:'Excellent!',score_good:'Well done!',score_keep:'Keep going!',
+    correct:'🎉 Great! That\'s the right answer!',wrong:'🤔 Not quite… Read the hint!',
+    nav_home:'Home',nav_langues:'Languages',nav_savoirs:'Knowledge',nav_jeux:'Games',nav_night:'Night',nav_back:'Continue!',
+  },
+  ES:{
+    hello:'Hola',
+    stars_one:'estrella',stars_other:'estrellas',
+    explore:'Explorar →',
+    done_one:'hecho',done_other:'hechos',
+    learn:'Aprende:',
+    age_label:'años',
+    level_1:'Explorador 🌱',level_2:'Aventurero 🗺️',level_3:'Campeón 🏆',level_4:'Experto 🔬',level_5:'Maestro 🎓',
+    setup_title:'PocketSage Academy',setup_sub:'¡Personaliza tu experiencia!',
+    setup_name:'👤 Nombre',setup_name_ph:'Emma, Lucas, Mamá…',
+    setup_native:'🗺️ Lengua materna',
+    setup_langs:'🌍 Idiomas a aprender',setup_langs_hint:'(elige varios)',
+    setup_age:'🎂 Tu edad:',
+    setup_avatar:'🎨 Elige tu avatar',
+    setup_create:'✨ ¡Crear mi perfil!',
+    m_logique:'Lógica y Mates',m_logique_d:'Cálculos, series, adivinanzas…',
+    m_langues:'Idiomas',m_langues_d:'Inglés, Francés, vocabulario',
+    m_sciences:'Ciencias & Naturaleza',m_sciences_d:'Física, biología, curiosidades',
+    m_politesse:'Modales & Vida',m_politesse_d:'Buenas maneras, dichos, consejos',
+    m_videos:'Vídeos educativos',m_videos_d:'Documentales, descubrimientos, cultura',
+    m_ateliers:'Talleres',m_ateliers_d:'Manualidades, ciencia, origami, pintura',
+    m_nuit:'Cuentos de noche',m_nuit_d:'Meditaciones, relajación, sueño',
+    m_jeux:'Minijuegos',m_jeux_d:'Memoria, serpiente, anagramas…',
+    m_sport:'Deporte & Retos',m_sport_d:'Ejercicios, movimientos, retos deportivos',
+    ok1:'🎉 ¡Excelente!',ok2:'🌟 ¡Bravo!',ok3:'⭐ ¡Perfecto!',ok4:'🏆 ¡Genial!',
+    ko1:'😅 ¡Casi!',ko2:'💪 ¡Inténtalo!',ko3:'🤔 No del todo…',ko4:'✊ ¡Ánimo!',
+    score_perfect:'¡Perfecto!',score_great:'¡Excelente!',score_good:'¡Bien hecho!',score_keep:'¡Continúa!',
+    correct:'🎉 ¡Genial! ¡Es la respuesta correcta!',wrong:'🤔 No del todo… ¡Lee la pista!',
+    nav_home:'Inicio',nav_langues:'Idiomas',nav_savoirs:'Saber',nav_jeux:'Juegos',nav_night:'Noche',nav_back:'¡Continuar!',
+  },
+  DE:{
+    hello:'Hallo',
+    stars_one:'Stern',stars_other:'Sterne',
+    explore:'Entdecken →',
+    done_one:'gemacht',done_other:'gemacht',
+    learn:'Lernt:',
+    age_label:'J.',
+    level_1:'Entdecker 🌱',level_2:'Abenteurer 🗺️',level_3:'Champion 🏆',level_4:'Experte 🔬',level_5:'Meister 🎓',
+    setup_title:'PocketSage Academy',setup_sub:'Personalisiere dein Erlebnis!',
+    setup_name:'👤 Vorname',setup_name_ph:'Emma, Lucas, Mama…',
+    setup_native:'🗺️ Muttersprache',
+    setup_langs:'🌍 Sprachen lernen',setup_langs_hint:'(mehrere möglich)',
+    setup_age:'🎂 Dein Alter:',
+    setup_avatar:'🎨 Wähle deinen Avatar',
+    setup_create:'✨ Profil erstellen!',
+    m_logique:'Logik & Mathe',m_logique_d:'Rechnen, Folgen, Rätsel…',
+    m_langues:'Sprachen',m_langues_d:'Englisch, Spanisch, Wortschatz',
+    m_sciences:'Wissenschaft & Natur',m_sciences_d:'Physik, Biologie, Kuriositäten',
+    m_politesse:'Manieren & Leben',m_politesse_d:'Gute Manieren, Sprichwörter, Tipps',
+    m_videos:'Lehrvideos',m_videos_d:'Dokumentationen, Entdeckungen, Kultur',
+    m_ateliers:'Werkstätten',m_ateliers_d:'Basteln, Wissenschaft, Origami, Malen',
+    m_nuit:'Gutenachtgeschichten',m_nuit_d:'Meditationen, Entspannung, Schlaf',
+    m_jeux:'Minispiele',m_jeux_d:'Gedächtnis, Schlange, Anagramme…',
+    m_sport:'Sport & Challenges',m_sport_d:'Übungen, Bewegung, Sportwettbewerbe',
+    ok1:'🎉 Ausgezeichnet!',ok2:'🌟 Bravo!',ok3:'⭐ Perfekt!',ok4:'🏆 Super!',
+    ko1:'😅 Fast!',ko2:'💪 Versuch es!',ko3:'🤔 Nicht ganz…',ko4:'✊ Weiter!',
+    score_perfect:'Perfekt!',score_great:'Ausgezeichnet!',score_good:'Gut gemacht!',score_keep:'Weiter so!',
+    correct:'🎉 Super! Das ist die richtige Antwort!',wrong:'🤔 Nicht ganz… Lies den Hinweis!',
+    nav_home:'Start',nav_langues:'Sprachen',nav_savoirs:'Wissen',nav_jeux:'Spiele',nav_night:'Nacht',nav_back:'Weiter!',
+  },
+  AR:{
+    hello:'مرحبا',
+    stars_one:'نجمة',stars_other:'نجوم',
+    explore:'استكشف ←',
+    done_one:'مكتمل',done_other:'مكتملة',
+    learn:'يتعلم:',
+    age_label:'سنة',
+    level_1:'مستكشف 🌱',level_2:'مغامر 🗺️',level_3:'بطل 🏆',level_4:'خبير 🔬',level_5:'أستاذ 🎓',
+    setup_title:'PocketSage Academy',setup_sub:'خصّص تجربتك!',
+    setup_name:'👤 الاسم',setup_name_ph:'إيما، لوكاس، ماما…',
+    setup_native:'🗺️ اللغة الأم',
+    setup_langs:'🌍 اللغات المراد تعلمها',setup_langs_hint:'(اختر أكثر من واحدة)',
+    setup_age:'🎂 عمرك:',
+    setup_avatar:'🎨 اختر صورتك',
+    setup_create:'✨ إنشاء ملفي الشخصي!',
+    m_logique:'المنطق والرياضيات',m_logique_d:'حسابات، متتاليات، ألغاز…',
+    m_langues:'اللغات',m_langues_d:'الإنجليزية، الإسبانية، المفردات',
+    m_sciences:'العلوم والطبيعة',m_sciences_d:'فيزياء، أحياء، فضوليات',
+    m_politesse:'الأخلاق والحياة',m_politesse_d:'الآداب، الأقوال، نصائح الحياة',
+    m_videos:'مقاطع تعليمية',m_videos_d:'وثائقيات، اكتشافات، ثقافة',
+    m_ateliers:'ورش عمل',m_ateliers_d:'الحرف، العلوم، الأوريغامي، الرسم',
+    m_nuit:'قصص المساء',m_nuit_d:'تأملات، استرخاء، نوم',
+    m_jeux:'ألعاب صغيرة',m_jeux_d:'الذاكرة، الثعبان، الأنغرام…',
+    m_sport:'الرياضة والتحديات',m_sport_d:'تمارين، حركات، تحديات رياضية',
+    ok1:'🎉 ممتاز!',ok2:'🌟 أحسنت!',ok3:'⭐ مثالي!',ok4:'🏆 رائع!',
+    ko1:'😅 تقريبا!',ko2:'💪 حاول مجددا!',ko3:'🤔 ليس تماما…',ko4:'✊ استمر!',
+    score_perfect:'مثالي!',score_great:'ممتاز!',score_good:'أحسنت!',score_keep:'استمر!',
+    correct:'🎉 رائع! هذه الإجابة الصحيحة!',wrong:'🤔 ليس تماما… اقرأ التلميح!',
+    nav_home:'الرئيسية',nav_langues:'اللغات',nav_savoirs:'المعرفة',nav_jeux:'ألعاب',nav_night:'ليل',nav_back:'استمر!',
+  },
+  IT:{
+    hello:'Ciao',
+    stars_one:'stella',stars_other:'stelle',
+    explore:'Esplora →',done_one:'fatto',done_other:'fatti',
+    learn:'Impara:',age_label:'anni',
+    level_1:'Esploratore 🌱',level_2:'Avventuriero 🗺️',level_3:'Campione 🏆',level_4:'Esperto 🔬',level_5:'Maestro 🎓',
+    setup_title:'PocketSage Academy',setup_sub:'Personalizza la tua esperienza!',
+    setup_name:'👤 Nome',setup_name_ph:'Emma, Lucas, Mamma…',
+    setup_native:'🗺️ Lingua madre',setup_langs:'🌍 Lingue da imparare',setup_langs_hint:'(più scelte OK)',
+    setup_age:'🎂 La tua età:',setup_avatar:'🎨 Scegli il tuo avatar',setup_create:'✨ Crea il mio profilo!',
+    m_logique:'Logica & Matematica',m_logique_d:'Calcoli, sequenze, indovinelli…',
+    m_langues:'Lingue',m_langues_d:'Inglese, Spagnolo, vocabolario',
+    m_sciences:'Scienze & Natura',m_sciences_d:'Fisica, biologia, curiosità',
+    m_politesse:'Galateo & Vita',m_politesse_d:'Buone maniere, proverbi, consigli',
+    m_videos:'Video educativi',m_videos_d:'Documentari, scoperte, cultura',
+    m_ateliers:'Laboratori',m_ateliers_d:'Fai da te, scienze, origami, pittura',
+    m_nuit:'Storie della buonanotte',m_nuit_d:'Meditazioni, relax, sonno',
+    m_jeux:'Minigiochi',m_jeux_d:'Memoria, serpente, anagrammi…',
+    m_sport:'Sport & Sfide',m_sport_d:'Esercizi, movimenti, sfide sportive',
+    ok1:'🎉 Eccellente!',ok2:'🌟 Bravo!',ok3:'⭐ Perfetto!',ok4:'🏆 Super!',
+    ko1:'😅 Quasi!',ko2:'💪 Riprova!',ko3:'🤔 Non proprio…',ko4:'✊ Coraggio!',
+    score_perfect:'Perfetto!',score_great:'Eccellente!',score_good:'Ben fatto!',score_keep:'Continua!',
+    correct:'🎉 Bravo! È la risposta giusta!',wrong:'🤔 Non proprio… Leggi il suggerimento!',
+    nav_home:'Home',nav_langues:'Lingue',nav_savoirs:'Sapere',nav_jeux:'Giochi',nav_night:'Notte',nav_back:'Continua!',
+  },
+  PT:{
+    hello:'Olá',stars_one:'estrela',stars_other:'estrelas',
+    explore:'Explorar →',done_one:'feito',done_other:'feitos',
+    learn:'Aprendendo:',age_label:'anos',
+    level_1:'Explorador 🌱',level_2:'Aventureiro 🗺️',level_3:'Campeão 🏆',level_4:'Especialista 🔬',level_5:'Mestre 🎓',
+    setup_title:'PocketSage Academy',setup_sub:'Personalize sua experiência!',
+    setup_name:'👤 Nome',setup_name_ph:'Emma, Lucas, Mamãe…',
+    setup_native:'🗺️ Língua materna',setup_langs:'🌍 Idiomas para aprender',setup_langs_hint:'(vários OK)',
+    setup_age:'🎂 Sua idade:',setup_avatar:'🎨 Escolha seu avatar',setup_create:'✨ Criar meu perfil!',
+    m_logique:'Lógica & Matemática',m_logique_d:'Cálculos, sequências, enigmas…',
+    m_langues:'Idiomas',m_langues_d:'Inglês, Espanhol, vocabulário',
+    m_sciences:'Ciências & Natureza',m_sciences_d:'Física, biologia, curiosidades',
+    m_politesse:'Boas maneiras & Vida',m_politesse_d:'Etiqueta, provérbios, dicas de vida',
+    m_videos:'Vídeos educativos',m_videos_d:'Documentários, descobertas, cultura',
+    m_ateliers:'Ateliês',m_ateliers_d:'Artesanato, ciências, origami, pintura',
+    m_nuit:'Histórias para dormir',m_nuit_d:'Meditações, relaxamento, sono',
+    m_jeux:'Minijogos',m_jeux_d:'Memória, cobra, anagramas…',
+    m_sport:'Esporte & Desafios',m_sport_d:'Exercícios, movimentos, desafios esportivos',
+    ok1:'🎉 Excelente!',ok2:'🌟 Bravo!',ok3:'⭐ Perfeito!',ok4:'🏆 Ótimo!',
+    ko1:'😅 Quase!',ko2:'💪 Tenta de novo!',ko3:'🤔 Não exatamente…',ko4:'✊ Coragem!',
+    score_perfect:'Perfeito!',score_great:'Excelente!',score_good:'Muito bem!',score_keep:'Continue!',
+    correct:'🎉 Muito bem! É a resposta certa!',wrong:'🤔 Não exatamente… Leia a dica!',
+    nav_home:'Início',nav_langues:'Idiomas',nav_savoirs:'Saber',nav_jeux:'Jogos',nav_night:'Noite',nav_back:'Continuar!',
+  },
+  ZH:{
+    hello:'你好',stars_one:'颗星',stars_other:'颗星',
+    explore:'探索 →',done_one:'完成',done_other:'完成',
+    learn:'正在学:',age_label:'岁',
+    level_1:'探索者 🌱',level_2:'冒险家 🗺️',level_3:'冠军 🏆',level_4:'专家 🔬',level_5:'大师 🎓',
+    setup_title:'PocketSage Academy',setup_sub:'定制你的体验！',
+    setup_name:'👤 名字',setup_name_ph:'艾玛、卢卡斯、妈妈…',
+    setup_native:'🗺️ 母语',setup_langs:'🌍 要学习的语言',setup_langs_hint:'（可多选）',
+    setup_age:'🎂 你的年龄：',setup_avatar:'🎨 选择你的头像',setup_create:'✨ 创建我的档案！',
+    m_logique:'逻辑与数学',m_logique_d:'计算、数列、谜语…',
+    m_langues:'语言',m_langues_d:'英语、西班牙语、词汇',
+    m_sciences:'科学与自然',m_sciences_d:'物理、生物、奇趣',
+    m_politesse:'礼仪与生活',m_politesse_d:'礼貌、谚语、生活建议',
+    m_videos:'教育视频',m_videos_d:'纪录片、发现、文化',
+    m_ateliers:'工作坊',m_ateliers_d:'手工、科学、折纸、绘画',
+    m_nuit:'睡前故事',m_nuit_d:'冥想、放松、睡眠',
+    m_jeux:'小游戏',m_jeux_d:'记忆、贪吃蛇、字谜…',
+    m_sport:'运动与挑战',m_sport_d:'练习、动作、体育挑战',
+    ok1:'🎉 优秀！',ok2:'🌟 太棒了！',ok3:'⭐ 完美！',ok4:'🏆 超级！',
+    ko1:'😅 差一点！',ko2:'💪 再试一次！',ko3:'🤔 不太对…',ko4:'✊ 加油！',
+    score_perfect:'完美！',score_great:'优秀！',score_good:'干得好！',score_keep:'继续！',
+    correct:'🎉 太棒了！答对了！',wrong:'🤔 不太对…看看提示吧！',
+    nav_home:'首页',nav_langues:'语言',nav_savoirs:'知识',nav_jeux:'游戏',nav_night:'夜晚',nav_back:'继续！',
+  },
+};
+
+// Fonction de traduction : t('clé') → texte dans la langue du device
+function t(k,lang){
+  const L=lang||window._uiLang||'FR';
+  const d=I18N[L]||I18N.FR;
+  return (d[k]!==undefined?d[k]:I18N.FR[k])||k;
+}
+
+// Applique la langue UI à la page setup (appelée au démarrage)
+function applyI18nSetup(){
+  const L=window._uiLang||'FR';
+  const setTxt=(id,k)=>{const el=document.getElementById(id);if(el)el.textContent=t(k,L);};
+  const setPh=(id,k)=>{const el=document.getElementById(id);if(el)el.placeholder=t(k,L);};
+  // Logo
+  const h1=document.querySelector('#scr-setup h1');if(h1)h1.textContent=t('setup_title',L);
+  const sub=document.querySelector('#scr-setup .setup-logo p');if(sub)sub.textContent=t('setup_sub',L);
+  // Sections
+  document.querySelectorAll('#scr-setup h3').forEach((h,i)=>{
+    if(i===0)h.textContent=t('setup_name',L);
+    else if(i===1)h.textContent=t('setup_native',L);
+    else if(i===2){h.innerHTML=t('setup_langs',L)+' <span style="font-weight:600;color:var(--tl)">'+t('setup_langs_hint',L)+'</span>';}
+    else if(i===3){h.innerHTML=t('setup_age',L)+' <span id="age-display" style="color:var(--v);font-size:20px;font-weight:900">8</span> '+t('age_label',L);}
+  });
+  setPh('inp-name','setup_name_ph');
+  // Bouton créer
+  const btn=document.querySelector('#scr-setup .sbtn');if(btn)btn.textContent=t('setup_create',L);
+}
+
+// Applique la langue UI à la nav bar et au bouton retour (HTML statique)
+function applyI18nNav(){
+  const L=window._uiLang||'FR';
+  // Nav bar labels
+  const navMap={home:'nav_home',jeux:'nav_jeux',langues:'nav_langues',savoirs:'nav_savoirs',nuit:'nav_night'};
+  document.querySelectorAll('.nb').forEach(btn=>{
+    const key=btn.dataset.nav;
+    if(key&&navMap[key]){
+      const nl=btn.querySelector('.nl');
+      if(nl)nl.textContent=t(navMap[key],L);
+    }
+  });
+  // Bouton "Continuer !"
+  document.querySelectorAll('.sc-back').forEach(btn=>{btn.textContent=t('nav_back',L);});
+}
+
 const HOME_MODS=[
-  {id:'logique',icon:'🧩',name:'Logique & Maths',desc:'Calculs, suites, devinettes…',color:'linear-gradient(135deg,#6C63FF,#9B93FF)',nav:'logique'},
-  {id:'langues',icon:'🌍',name:'Langues',desc:'Anglais, Espagnol, vocabulaire',color:'linear-gradient(135deg,#FF6B6B,#FF9999)',nav:'langues'},
-  {id:'sciences',icon:'🔬',name:'Sciences & Nature',desc:'Physique, biologie, curiosités',color:'linear-gradient(135deg,#06D6A0,#00B884)',nav:'savoirs'},
-  {id:'politesse',icon:'🌸',name:'Politesse & Savoir-vivre',desc:'Bonnes manières, dictons, conseils de vie',color:'linear-gradient(135deg,#FF9F1C,#FF6B35)',nav:'politesse'},
-  {id:'videos',icon:'🎬',name:'Vidéos éducatives',desc:'Documentaires, découvertes, culture',color:'linear-gradient(135deg,#E040FB,#AB47BC)',nav:'videos'},
-  {id:'ateliers',icon:'🎨',name:'Ateliers',desc:'Bricolage, sciences, origami, peinture',color:'linear-gradient(135deg,#FF6B6B,#FF9F1C)',nav:'ateliers'},
-  {id:'nuit',icon:'🌙',name:'Histoires du soir',desc:'Méditations, relaxation, sommeil',color:'linear-gradient(135deg,#1A1A3E,#2D2D60)',nav:'nuit'},
-  {id:'jeux',icon:'🎮',name:'Mini-jeux',desc:'Mémoire, serpent, anagrammes…',color:'linear-gradient(135deg,#26C6DA,#0097A7)',nav:'jeux'},
-  {id:'sport',icon:'🏃',name:'Sport & Défis',desc:'Exercices, mouvements, défis sportifs',color:'linear-gradient(135deg,#FF6B35,#FF9F1C)',nav:'defis'},
+  {id:'logique',icon:'🧩',name:t('m_logique'),desc:t('m_logique_d'),color:'linear-gradient(135deg,#6C63FF,#9B93FF)',nav:'logique'},
+  {id:'langues',icon:'🌍',name:t('m_langues'),desc:t('m_langues_d'),color:'linear-gradient(135deg,#FF6B6B,#FF9999)',nav:'langues'},
+  {id:'sciences',icon:'🔬',name:t('m_sciences'),desc:t('m_sciences_d'),color:'linear-gradient(135deg,#06D6A0,#00B884)',nav:'savoirs'},
+  {id:'politesse',icon:'🌸',name:t('m_politesse'),desc:t('m_politesse_d'),color:'linear-gradient(135deg,#FF9F1C,#FF6B35)',nav:'politesse'},
+  {id:'videos',icon:'🎬',name:t('m_videos'),desc:t('m_videos_d'),color:'linear-gradient(135deg,#E040FB,#AB47BC)',nav:'videos'},
+  {id:'ateliers',icon:'🎨',name:t('m_ateliers'),desc:t('m_ateliers_d'),color:'linear-gradient(135deg,#FF6B6B,#FF9F1C)',nav:'ateliers'},
+  {id:'nuit',icon:'🌙',name:t('m_nuit'),desc:t('m_nuit_d'),color:'linear-gradient(135deg,#1A1A3E,#2D2D60)',nav:'nuit'},
+  {id:'jeux',icon:'🎮',name:t('m_jeux'),desc:t('m_jeux_d'),color:'linear-gradient(135deg,#26C6DA,#0097A7)',nav:'jeux'},
+  {id:'sport',icon:'🏃',name:t('m_sport'),desc:t('m_sport_d'),color:'linear-gradient(135deg,#FF6B35,#FF9F1C)',nav:'defis'},
 ];
 
 (function initSetup(){
   loadApp();
   if(APP.profiles.length>0){show('home');buildHome();return;}
-  // Auto-detect language from browser
+  // Auto-detect language from browser & apply i18n to setup screen
   try{
     var bl=(navigator.language||navigator.userLanguage||'fr').toLowerCase().split('-')[0];
     var langMap={'fr':'FR','en':'EN','es':'ES','de':'DE','ar':'AR','it':'IT','zh':'ZH','pt':'PT','ru':'RU','uk':'UK'};
     if(langMap[bl]){_setupNative=langMap[bl];}
   }catch(e){}
+  try{applyI18nSetup();applyI18nNav();}catch(e){console.error('i18n setup:',e);}
   // Init slider
   updateAgeSlider(8);
   // Grille d'avatars
@@ -11958,8 +12241,8 @@ function addProfile(){
 // ════════════════════════════════════════════
 function ageNum(a){return a==='18+'?18:parseInt(a)||6;}
 function levelLabel(a){const n=ageNum(a);
-  if(n<=6)return'Explorateur 🌱';if(n<=9)return'Aventurier 🗺️';
-  if(n<=12)return'Champion 🏆';if(n<=15)return'Expert 🔬';return'Maître 🎓';}
+  if(n<=6)return t('level_1');if(n<=9)return t('level_2');
+  if(n<=12)return t('level_3');if(n<=15)return t('level_4');return t('level_5');}
 
 // ── Filtrage par âge ──────────────────────────────────────────
 // Mappe un âge numérique vers les classes scolaires autorisées
@@ -12012,16 +12295,16 @@ function buildHome(){
       if(p.avatarId){avEl.style.background='transparent';avEl.style.overflow='visible';avEl.innerHTML=getAvatarSVG(p.avatarId,'md');}
       else{avEl.style.background='rgba(255,255,255,.25)';avEl.innerHTML='<span style="font-size:34px;line-height:1">'+av+'</span>';}
     }
-    const hName=document.getElementById('h-name');if(hName)hName.textContent='Bonjour '+p.name+' !';
-    const hLvl=document.getElementById('h-lvl');if(hLvl)hLvl.textContent=levelLabel(p.age)+' · '+p.age+' ans';
+    const hName=document.getElementById('h-name');if(hName)hName.textContent=t('hello')+' '+p.name+' !';
+    const hLvl=document.getElementById('h-lvl');if(hLvl)hLvl.textContent=levelLabel(p.age)+' · '+p.age+' '+t('age_label');
     const langTxt=(p.langs&&p.langs.length)?p.langs.map(l=>LANG_NAMES[l]||l).join(' · '):'';
-    const hLangs=document.getElementById('h-langs');if(hLangs)hLangs.textContent=langTxt?'Apprend : '+langTxt:'';
+    const hLangs=document.getElementById('h-langs');if(hLangs)hLangs.textContent=langTxt?t('learn')+' '+langTxt:'';
     const NATIVE_FLAGS={FR:'🇫🇷',EN:'🇬🇧',ES:'🇪🇸',DE:'🇩🇪',IT:'🇮🇹',AR:'🇸🇦',ZH:'🇨🇳',PT:'🇵🇹',RU:'🇷🇺',UK:'🇺🇦'};
     const hLangBtn=document.getElementById('h-lang-btn');
     if(hLangBtn)hLangBtn.textContent=NATIVE_FLAGS[p.native]||'🌐';
     try{
       const tot=totalItems(p);const dn=Object.keys(p.done||{}).filter(k=>p.done[k]).length;
-      const hSc=document.getElementById('h-sc-txt');if(hSc)hSc.textContent=p.score+' étoile'+(p.score!==1?'s':'')+' ✨';
+      const hSc=document.getElementById('h-sc-txt');if(hSc)hSc.textContent=p.score+' '+(p.score!==1?t('stars_other'):t('stars_one'))+' ✨';
       const hProg=document.getElementById('h-prog');if(hProg)hProg.style.width=Math.round(dn/Math.max(tot,1)*100)+'%';
     }catch(e){console.error('buildHome score:',e);}
   }catch(e){console.error('buildHome hero:',e);}
@@ -12038,7 +12321,7 @@ function buildHome(){
         btn.style.cssText='background:'+m.color+';border-radius:22px;padding:22px 20px;display:flex;align-items:center;gap:16px;cursor:pointer;border:none;width:100%;text-align:left;font-family:var(--f);transition:transform .12s;box-shadow:var(--sh)';
         const mDone=Object.keys(p.done||{}).filter(k=>p.done[k]&&k.startsWith(m.id+'_')).length;
         const mDoneAll=Object.keys(p.done||{}).filter(k=>p.done[k]&&(k.startsWith(m.id)||k.includes(m.id))).length;
-        const badgeTxt=mDoneAll>0?'✅ '+mDoneAll+' fait'+(mDoneAll>1?'s':''):'Explorer →';
+        const badgeTxt=mDoneAll>0?'✅ '+mDoneAll+' '+(mDoneAll>1?t('done_other'):t('done_one')):t('explore');
         btn.innerHTML='<span style="font-size:54px;flex-shrink:0;line-height:1">'+m.icon+'</span><div style="flex:1"><span style="font-size:18px;font-weight:900;color:#fff;display:block;margin-bottom:5px">'+m.name+'</span><span style="font-size:12px;font-weight:600;color:rgba(255,255,255,.85);display:block;margin-bottom:8px;line-height:1.4">'+m.desc+'</span><span style="background:rgba(255,255,255,.25);border-radius:20px;padding:4px 12px;font-size:11px;font-weight:800;color:#fff">'+badgeTxt+'</span></div>';
         btn.onclick=()=>{
           try{sndTap();}catch(e){}
@@ -12182,11 +12465,11 @@ function renderLangTabs(){
 }
 
 const MCFG={
-  logique:{emoji:'🧠',title:'Logique',desc:'Suites, intrus, compter, labyrinthes !',bg:'linear-gradient(135deg,#6C63FF,#9B93FF)',
+  logique:{emoji:'🧠',get title(){return t('m_logique');},desc:'Suites, intrus, compter, labyrinthes !',bg:'linear-gradient(135deg,#6C63FF,#9B93FF)',
     subcats:[{k:'suites',l:'🔁 Suites',d:DATA.suites},{k:'intrus',l:'🔍 Intrus',d:DATA.intrus},{k:'count',l:'🔢 Compter',d:DATA.denombrement},{k:'lab',l:'🗺️ Labyrinthes',d:DATA.labyrinthes}]},
-  savoirs:{emoji:'📚',title:'Savoirs',desc:'Maths · Géographie · Sciences · Histoire',bg:'linear-gradient(135deg,#FF6B6B,#FF9999)',
+  savoirs:{emoji:'📚',get title(){return t('m_sciences');},desc:'Maths · Géographie · Sciences · Histoire',bg:'linear-gradient(135deg,#FF6B6B,#FF9999)',
     subcats:[{k:'maths',l:'🔢 Maths',d:DATA.maths},{k:'geo',l:'🌍 Géo',d:DATA.geo},{k:'sci',l:'🔬 Sciences',d:DATA.sciences},{k:'hist',l:'📜 Histoire',d:DATA.histoire}]},
-  politesse:{emoji:'🤝',title:'Politesse',desc:'Apprends les bonnes manières !',bg:'linear-gradient(135deg,#06D6A0,#00B884)',
+  politesse:{emoji:'🤝',get title(){return t('m_politesse');},desc:'Apprends les bonnes manières !',bg:'linear-gradient(135deg,#06D6A0,#00B884)',
     subcats:[{k:'pol',l:'🤝 Scénarios',d:DATA.politesse}]},
   defis:{emoji:'🏃',title:'Défis physiques',desc:'Lève-toi et bouge !',bg:'linear-gradient(135deg,#FFD166,#FFA500)',
     get subcats(){
@@ -12203,9 +12486,9 @@ const MCFG={
         {k:'respi', l:'🌬️ Respiration',  d:respi},
       ];
     }},
-  langues:{emoji:'🌍',title:'Langues',desc:'Apprends les langues du monde !',bg:'linear-gradient(135deg,#FF9F1C,#FF6B35)',
+  langues:{emoji:'🌍',get title(){return t('m_langues');},desc:'Apprends les langues du monde !',bg:'linear-gradient(135deg,#FF9F1C,#FF6B35)',
     get subcats(){return getLangSubcats();}},
-  recompenses:{emoji:'🎬',title:'Vidéos récompenses',desc:'Tu l\'as mérité ! Une vidéo éducative t\'attend.',bg:'linear-gradient(135deg,#E040FB,#AB47BC)',
+  recompenses:{emoji:'🎬',get title(){return t('m_videos');},desc:'Tu l\'as mérité ! Une vidéo éducative t\'attend.',bg:'linear-gradient(135deg,#E040FB,#AB47BC)',
     get subcats(){return getVideoSubcats();}},
 };
 
@@ -12946,14 +13229,14 @@ function markDone(item,ok,c){
   else if(p&&!p.done[item.id]){p.done[item.id]=false;setTimeout(function(){showReactOverlay(false);},300);}
   if(p)document.getElementById('ex-hsc').textContent='⭐ '+p.score;
   const res=c.querySelector('.resbanner');
-  if(res){res.classList.add('show',ok?'bok':'bko');res.textContent=ok?'🎉 Bravo ! C\'est la bonne réponse !':'🤔 Pas tout à fait… Lis l\'indice !';}
+  if(res){res.classList.add('show',ok?'bok':'bko');res.textContent=ok?t('correct'):t('wrong');}
   const nb=c.querySelector('.nxtbtn');if(nb)nb.classList.add('show');
 }
 
 function showFinal(list,mod){
   const p=P();const dn=list.filter(i=>p&&p.done[i.id]).length;const pct=dn/list.length;
   document.getElementById('sc-e').textContent=pct===1?'🏆':pct>=.7?'🎉':pct>=.4?'😊':'💪';
-  document.getElementById('sc-t').textContent=pct===1?'Parfait !':pct>=.7?'Excellent !':pct>=.4?'Bien joué !':'Continue !';
+  document.getElementById('sc-t').textContent=pct===1?t('score_perfect'):pct>=.7?t('score_great'):pct>=.4?t('score_good'):t('score_keep');
   document.getElementById('sc-s').textContent=dn+'/'+list.length+' réussis · '+(p?p.score:0)+' ⭐ au total';
   document.getElementById('sc-str').textContent=pct===1?'⭐⭐⭐':pct>=.7?'⭐⭐':'⭐';
   // GIFs de fin selon le score
@@ -15693,7 +15976,7 @@ buildHome=function(){
 // INIT
 // ════════════════════════════════════════════
 loadApp();
-if(APP.profiles.length>0){show('home');buildHome();}
+if(APP.profiles.length>0){show('home');buildHome();try{applyI18nNav();}catch(e){}}
 // Vérification stockage audio au démarrage (silencieuse)
 setTimeout(()=>AudioDB.suggestCleanup().catch(()=>{}), 3000);
 
