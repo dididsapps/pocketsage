@@ -12548,7 +12548,7 @@ function mkCard(item){
     <span style="background:${cat.bg};color:${cat.col};border-radius:8px;padding:2px 7px;font-size:16px">${cat.ic}</span>
     <span>${item.type||''} ${item.cat?'· '+item.cat:''}</span>
   </div>
-  <div class="tts-row"><button class="tts-b" onclick="ttsRead('${qEsc}','${qLang}')">🔊 Écouter</button></div>
+  <div class="tts-row"><button class="tts-b" onclick="_ttsCurrentId='${item.id||''}';ttsRead('${qEsc}','${qLang}')">🔊 Écouter</button></div>
   ${mathViz?`<div class="exq" style="display:none">${qTxt}</div>${mathViz}`:`<div class="exq">${qTxt}</div>`}`;
   return d;
 }
@@ -13613,7 +13613,7 @@ function renderAdvQCM(c, typeCfg, typeId){
   card.style.background=typeCfg.bg;
   const _qTxt=(item.enonce||item.situation||'').replace(/'/g,"\\'");
   const _qLang=_detectLang(item.enonce||item.situation||'');
-  const ttsBtn=`<button onclick="ttsRead('${_qTxt}','${_qLang}')" style="background:rgba(255,255,255,.35);border:2px solid rgba(255,255,255,.5);color:#fff;border-radius:14px;padding:11px 20px;font-family:var(--f);font-size:15px;font-weight:800;cursor:pointer;margin-bottom:10px;min-height:48px;letter-spacing:.2px;touch-action:manipulation">🔊 Écouter la question</button>`;
+  const ttsBtn=`<button onclick="_ttsCurrentId='${item.id||''}';ttsRead('${_qTxt}','${_qLang}')" style="background:rgba(255,255,255,.35);border:2px solid rgba(255,255,255,.5);color:#fff;border-radius:14px;padding:11px 20px;font-family:var(--f);font-size:15px;font-weight:800;cursor:pointer;margin-bottom:10px;min-height:48px;letter-spacing:.2px;touch-action:manipulation">🔊 Écouter la question</button>`;
   card.innerHTML=`<div style="font-size:11px;font-weight:700;opacity:.8;margin-bottom:6px">${item.type||typeCfg.label} ${item.cat?'· '+item.cat:''}</div>
     ${ttsBtn}
     <div style="font-size:18px;font-weight:800;line-height:1.4">${item.enonce||item.situation||''}</div>
