@@ -10647,6 +10647,9 @@ const _audioCache={};
 function _playMp3(id,fallbackTxt,lang){
   if(!id)return false;
   const isEN=(lang==='en'||id.startsWith('AN-'));
+  const isFR=id.startsWith('LG-GS-')||id.startsWith('LG-CP-')||id.startsWith('LG-CE1-')||id.startsWith('LG-CE2-')||id.startsWith('FR-');
+  // Seuls les modules avec MP3 sur R2 : Logique GS/CP/CE1/CE2 (FR-) et Anglais (AN-)
+  if(!isEN&&!isFR)return false;
   const audioLang=isEN?'en':'fr';
   const fileId=isEN?id:id.replace(/^LG-/,'FR-');
   const url=`${AUDIO_CDN}/audio/${audioLang}/${fileId}${isEN?'':'_enonce'}.mp3`;
