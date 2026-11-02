@@ -12233,6 +12233,9 @@ function addProfile(){
   document.querySelector('[data-nat="FR"]').classList.add('sel');
   document.querySelectorAll('[data-lang]').forEach(b=>b.classList.remove('sel'));
   _setupAge='';_setupNative='FR';_setupLangs=[];_setupAvatarIdx=0;
+  // Réinitialiser visibilité bouton FR (masqué si langue maternelle = FR par défaut)
+  const frBtnReset=document.getElementById('lang-btn-FR');
+  if(frBtnReset)frBtnReset.style.display='none';
   buildAvatarGrid();
   show('setup');
 }
@@ -13074,7 +13077,7 @@ function mkHint(item){
   const hintTxt=item.hint||'Réfléchis bien !';
   b.onclick=()=>{sndTap();t.classList.toggle('show');b.innerHTML=t.classList.contains('show')?'💡 Cacher l\'indice':'💡 Voir l\'indice';};
   const sp=document.createElement('button');sp.className='tts-choice-btn';sp.textContent='🔊';
-  sp.onclick=(e)=>{e.stopPropagation();ttsRead(hintTxt,'FR');sndTap();};
+  sp.onclick=(e)=>{e.stopPropagation();_ttsCurrentId=null;ttsRead(hintTxt,'FR');sndTap();};
   row.appendChild(b);row.appendChild(sp);
   w.appendChild(row);w.appendChild(t);return w;
 }
@@ -14158,7 +14161,7 @@ function renderAdvQCM(c, typeCfg, typeId){
   const hintStr=item.hint||'Réfléchis bien !';
   hintBtn.onclick=()=>{sndTap();hintTxt.classList.toggle('show');hintBtn.innerHTML=hintTxt.classList.contains('show')?'💡 Cacher':'💡 Voir l\'indice';};
   const hintSp=document.createElement('button');hintSp.className='tts-choice-btn';hintSp.textContent='🔊';
-  hintSp.onclick=(e)=>{e.stopPropagation();ttsRead(hintStr,'FR');sndTap();};
+  hintSp.onclick=(e)=>{e.stopPropagation();_ttsCurrentId=null;ttsRead(hintStr,'FR');sndTap();};
   hintRow.appendChild(hintBtn);hintRow.appendChild(hintSp);
   hintWrap.appendChild(hintRow);hintWrap.appendChild(hintTxt);c.appendChild(hintWrap);
   // Emoji hint caché pour items langues (renforcement dual coding)
@@ -14284,7 +14287,7 @@ function advHandleAnswer(ok, btn, container, item, c, isPol){
   const ttsBtn=document.createElement('button');
   ttsBtn.innerHTML='🔊 Écouter la réponse';
   ttsBtn.style.cssText='background:linear-gradient(135deg,#6C63FF,#9B93FF);border:none;color:#fff;border-radius:16px;padding:14px 28px;font-family:var(--f);font-size:16px;font-weight:800;cursor:pointer;letter-spacing:.3px;box-shadow:0 4px 16px rgba(108,99,255,.35);min-height:52px;touch-action:manipulation';
-  ttsBtn.onclick=()=>{ttsRead(ttsTxt,'FR');sndTap();};
+  ttsBtn.onclick=()=>{_ttsCurrentId=null;ttsRead(ttsTxt,'FR');sndTap();};
   ttsRow.appendChild(ttsBtn);
   c.appendChild(ttsRow);
   // Bouton suivant
