@@ -10593,17 +10593,19 @@ const _TYPE_TO_LANG={
 };
 
 // Détection automatique de langue d'un texte court
-function _detectLang(txt){
-  if(!txt||txt.length<2)return'FR';
+function _detectLang(txt,defaultLang){
+  if(!txt||txt.length<2)return defaultLang||'FR';
   const t=txt.toLowerCase().trim();
   if(/[一-鿿]/.test(t))return'ZH';
   if(/[؀-ۿ]/.test(t))return'AR';
-  if(/\b(le|la|les|un|une|des|en|est|et|de|du|qu|je|tu|il|elle|nous|vous|ils|bonjour|merci|oui|non|avec|dans|pour|sur|par|pas|plus|très|bien|aussi|mais|comme|ou|si|ce|qui|que|quoi|quand|comment|où|ça|cette|cet|mon|ma|mes|ton|ta|ses|son|au|aux|être|avoir|faire|aller)\b/.test(t))return'FR';
+  if(/\b(le|la|les|un|une|des|en|est|et|de|du|qu|je|tu|il|elle|nous|vous|ils|bonjour|merci|oui|non|avec|dans|pour|sur|par|pas|plus|très|bien|aussi|mais|comme|ou|si|ce|qui|que|quoi|quand|comment|où|ça|cette|cet|mon|ma|mes|ton|ta|ses|son|au|aux|être|avoir|faire|aller|voici|voilà|celui|celle|leur|leurs|dont|même|autre|autres|tout|tous|toutes|encore|toujours|jamais|rien|quelque|chaque|quel|quelle|quels|quelles)\b/.test(t))return'FR';
   if(/\b(el|la|los|las|un|una|de|del|en|es|y|que|no|si|con|por|para|como|pero|más|muy|bien|hola|gracias|sí)\b/.test(t))return'ES';
   if(/\b(der|die|das|ein|eine|und|ist|in|von|mit|auf|für|zu|nicht|auch|ich|du|er|sie|wir|ihr|guten|tag|danke|bitte|ja|nein)\b/.test(t))return'DE';
   if(/\b(il|lo|la|gli|le|un|uno|una|di|del|in|e|è|che|non|si|con|per|come|ma|anche|ciao|grazie)\b/.test(t))return'IT';
-  if(/^[a-z0-9\s\W]+$/.test(t))return'EN';
-  return'FR';
+  // Détection anglaise uniquement si mots anglais clairement présents
+  if(/\b(the|a|an|is|are|was|were|be|been|have|has|had|do|does|did|will|would|can|could|should|may|might|shall|must|and|or|but|if|in|on|at|to|for|of|with|by|from|this|that|these|those|he|she|it|we|they|i|you|what|who|where|when|how|why)\b/.test(t))return'EN';
+  // Par défaut : langue du profil ou français
+  return defaultLang||'FR';
 }
 
 // ════════════ TTS — Web Speech API native ════════════
@@ -10644,15 +10646,36 @@ const AUDIO_CDN='https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev';
 const _audioCache={};
 function _playMp3(id,fallbackTxt,lang){
   if(!id)return false;
-  const audioLang=(lang==='en'||id.startsWith('AN-'))?'en':'fr';
-  const url=`${AUDIO_CDN}/audio/${audioLang}/${id}.mp3`;
-  // Vérifier dans le cache mémoire
+  const isEN=(lang==='en'||id.startsWith('AN-'));
+  const audioLang=isEN?'en':'fr';
+  const fileId=isEN?id:id.replace(/^LG-/,'FR-');
+  const url=`${AUDIO_CDN}/audio/${audioLang}/${fileId}${isEN?'':'_enonce'}.mp3`;
   if(_audioCache[id]==='miss')return false;
-  const a=new Audio(url);
-  a.onerror=()=>{_audioCache[id]='miss';};
-  a.oncanplaythrough=()=>{_audioCache[id]='hit';};
-  a.play().catch(()=>{_audioCache[id]='miss';});
-  return true;
+  console.log('[TTS] _playMp3',url);
+  // Utiliser AudioContext (déjà débloqué par les sons de l'app) pour bypasser autoplay mobile
+  try{
+    const ac=getAC();
+    fetch(url,{mode:'cors'}).then(r=>{
+      if(!r.ok)throw new Error('HTTP '+r.status);
+      return r.arrayBuffer();
+    }).then(buf=>ac.decodeAudioData(buf)).then(decoded=>{
+      const src=ac.createBufferSource();
+      src.buffer=decoded;
+      src.connect(ac.destination);
+      src.start(0);
+      _audioCache[id]='hit';
+      console.log('[TTS] MP3 ok',url);
+    }).catch(e=>{
+      _audioCache[id]='miss';
+      console.error('[TTS] MP3 error',url,e.message);
+      ttsSpeak(_ttsText||fallbackTxt||'',_detectLang(_ttsText||fallbackTxt||''));
+    });
+    return true;
+  }catch(e){
+    _audioCache[id]='miss';
+    console.error('[TTS] MP3 init error',e);
+    return false;
+  }
 }
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -10724,9 +10747,10 @@ function _ttsUnlock(){
 }
 
 function ttsRead(txt,lang){
+  console.log('ttsRead called',{txt:txt&&txt.substring(0,30),lang,id:_ttsCurrentId,cache:_audioCache[_ttsCurrentId]});
   // Essayer MP3 CDN d'abord si on a un id de question courant
-  if(!txt&&_ttsCurrentId&&_audioCache[_ttsCurrentId]!=='miss'){
-    if(_playMp3(_ttsCurrentId,_ttsText))return;
+  if(_ttsCurrentId&&_audioCache[_ttsCurrentId]!=='miss'){
+    if(_playMp3(_ttsCurrentId,txt||_ttsText))return;
   }
   // Vérifier si speechSynthesis est disponible (bloqué dans certaines iframes)
   if(!window.speechSynthesis){
@@ -10734,7 +10758,7 @@ function ttsRead(txt,lang){
     return;
   }
   const t=txt||_ttsText;
-  const l=lang||undefined;
+  const l=lang||_detectLang(t);
   _ttsUnlock();
   setTimeout(()=>{if(t)ttsSpeak(t,l);},120);
 }
@@ -12458,7 +12482,7 @@ function startEx(item,mod,idx,list){
   show('ex');
   // mode voiture : lit automatiquement (MP3 CDN en priorité, fallback Web Speech)
   if(APP.car)setTimeout(()=>{
-    if(!_ttsCurrentId||!_playMp3(_ttsCurrentId,_ttsText))ttsSpeak(_ttsText);
+    if(!_ttsCurrentId||!_playMp3(_ttsCurrentId,_ttsText))ttsSpeak(_ttsText,_detectLang(_ttsText));
   },400);
 }
 
@@ -13589,7 +13613,7 @@ function renderAdvQCM(c, typeCfg, typeId){
   card.style.background=typeCfg.bg;
   const _qTxt=(item.enonce||item.situation||'').replace(/'/g,"\\'");
   const _qLang=_detectLang(item.enonce||item.situation||'');
-  const ttsBtn=`<button onclick="ttsSpeak('${_qTxt}','${_qLang}')" style="background:rgba(255,255,255,.35);border:2px solid rgba(255,255,255,.5);color:#fff;border-radius:14px;padding:11px 20px;font-family:var(--f);font-size:15px;font-weight:800;cursor:pointer;margin-bottom:10px;min-height:48px;letter-spacing:.2px;touch-action:manipulation">🔊 Écouter la question</button>`;
+  const ttsBtn=`<button onclick="ttsRead('${_qTxt}','${_qLang}')" style="background:rgba(255,255,255,.35);border:2px solid rgba(255,255,255,.5);color:#fff;border-radius:14px;padding:11px 20px;font-family:var(--f);font-size:15px;font-weight:800;cursor:pointer;margin-bottom:10px;min-height:48px;letter-spacing:.2px;touch-action:manipulation">🔊 Écouter la question</button>`;
   card.innerHTML=`<div style="font-size:11px;font-weight:700;opacity:.8;margin-bottom:6px">${item.type||typeCfg.label} ${item.cat?'· '+item.cat:''}</div>
     ${ttsBtn}
     <div style="font-size:18px;font-weight:800;line-height:1.4">${item.enonce||item.situation||''}</div>
