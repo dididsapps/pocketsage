@@ -10767,6 +10767,48 @@ function elSpeak(txt){
   const chunks=_elChunks(txt);
   _elSpeakChunks(chunks,0,null);
 }
+
+// ── elPlayNuit : R2 d'abord, ElevenLabs API en fallback ──────────────────────
+// Utiliser les MP3 pré-générés sur R2 (audio/nuit/{id}.mp3) — économise les
+// crédits ElevenLabs quand le fichier existe déjà. Fallback sur elSpeak() si
+// le fichier n'existe pas encore sur R2 (nouveaux contenus).
+const _nuitCache={};
+function elPlayNuit(id,txt){
+  if(APP&&APP.silent)return;
+  if(!id){elSpeak(txt);return;}
+  // Déjà vérifié : miss → API temps réel
+  if(_nuitCache[id]==='miss'){elSpeak(txt);return;}
+  // Stop tout ce qui joue
+  _ttsPlaying=false;_ttsQueue=[];_ttsStopResumeLoop();_elStop();
+  try{if(window.speechSynthesis)window.speechSynthesis.cancel();}catch(e){}
+  // Essai R2
+  const url=`${AUDIO_CDN}/audio/nuit/${id}.mp3`;
+  console.log('[EL] R2 nuit check',url);
+  try{
+    const ac=getAC();
+    fetch(url,{mode:'cors'}).then(r=>{
+      if(!r.ok)throw new Error('HTTP '+r.status);
+      return r.arrayBuffer();
+    }).then(buf=>ac.decodeAudioData(buf)).then(decoded=>{
+      _nuitCache[id]='hit';
+      _ttsPlaying=true;
+      const src=ac.createBufferSource();
+      src.buffer=decoded;src.connect(ac.destination);
+      _elCurrentSource=src;
+      src.onended=()=>{_elCurrentSource=null;_ttsPlaying=false;};
+      src.start(0);
+      console.log('[EL] R2 nuit ok',id);
+    }).catch(e=>{
+      _nuitCache[id]='miss';
+      console.warn('[EL] R2 nuit miss',id,e.message,'→ API temps réel');
+      elSpeak(txt);
+    });
+  }catch(e){
+    _nuitCache[id]='miss';
+    console.warn('[EL] R2 nuit init error',id,e);
+    elSpeak(txt);
+  }
+}
 // ─────────────────────────────────────────────────────────────────────────────
 
 function _ttsNext(){
@@ -13209,7 +13251,7 @@ function openReader(item,type){
     aBanner.innerHTML=`<div style="font-size:42px;margin-bottom:8px">🎧</div>
       <div style="font-size:15px;font-weight:900;margin-bottom:4px">${item.titre}</div>
       <div style="font-size:12px;opacity:.7;margin-bottom:14px">⏱ ${item.dur} min · Respiration guidée · ${item.age} ans</div>
-      <button id="audio-play-btn" onclick="elSpeak(document.getElementById('reader-full-txt').innerText);this.textContent='⏸ En cours…';this.style.opacity='.7'" style="background:#6C63FF;border:none;color:#fff;border-radius:14px;padding:12px 24px;font-family:var(--f);font-size:15px;font-weight:900;cursor:pointer;width:100%;margin-bottom:8px">▶ Écouter l'histoire</button>
+      <button id="audio-play-btn" onclick="elPlayNuit('${item.id}',document.getElementById('reader-full-txt').innerText);this.textContent='⏸ En cours…';this.style.opacity='.7'" style="background:#6C63FF;border:none;color:#fff;border-radius:14px;padding:12px 24px;font-family:var(--f);font-size:15px;font-weight:900;cursor:pointer;width:100%;margin-bottom:8px">▶ Écouter l'histoire</button>
       <button onclick="ttsStop();const b=document.getElementById('audio-play-btn');if(b){b.textContent='▶ Écouter l\'histoire';b.style.opacity='1';}" style="background:rgba(255,255,255,.15);border:none;color:#fff;border-radius:14px;padding:10px 24px;font-family:var(--f);font-size:13px;font-weight:700;cursor:pointer;width:100%;margin-bottom:12px">⏹ Arrêter</button>
       <div style="display:flex;gap:7px;justify-content:center">
         <span style="font-size:11px;color:rgba(255,255,255,.5);align-self:center">Vitesse :</span>
@@ -13237,7 +13279,7 @@ function openReader(item,type){
     const _nuitTxt=item.titre+'. '+(item.texte||'');
     const _nuitBtn=document.createElement('button');_nuitBtn.className='nuit-tb';
     _nuitBtn.textContent='🔊 Lire à voix haute';
-    _nuitBtn.onclick=()=>elSpeak(_nuitTxt);
+    _nuitBtn.onclick=()=>elPlayNuit(item.id,_nuitTxt);
     const _nuitStop=document.createElement('button');_nuitStop.className='nuit-tb';
     _nuitStop.textContent='⏹ Stop';_nuitStop.onclick=ttsStop;
     tbar.appendChild(_nuitBtn);tbar.appendChild(_nuitStop);
@@ -13273,7 +13315,7 @@ function openReader(item,type){
 
   show('reader');
   // Pour les histoires audio, on ne démarre PAS automatiquement — l'enfant clique ▶
-  if(!isAudio&&(autoTTS||APP.car))setTimeout(()=>elSpeak(item.titre+'. '+item.texte),800);
+  if(!isAudio&&(autoTTS||APP.car))setTimeout(()=>elPlayNuit(item.id,item.titre+'. '+item.texte),800);
 }
 
 // ════════════════════════════════════════════
