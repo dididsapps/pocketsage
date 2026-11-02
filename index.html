@@ -10689,6 +10689,86 @@ let _ttsQueue=[];
 let _ttsPlaying=false;
 let _ttsRate=0.85; // vitesse, modifiable par les boutons nuit
 
+// ── ElevenLabs TTS pour l'onglet Nuit ────────────────────────────────────────
+const _EL_API_KEY='sk_e920c195b03adac355923ab26527d2d48af72105260a0c00';
+const _EL_VOICE_FR='GFj5Qf6cNQ3Lgp8VKBwc'; // Olivier (FR)
+let _elCurrentSource=null; // AudioBufferSourceNode en cours
+
+function _elStop(){
+  try{if(_elCurrentSource){_elCurrentSource.stop();_elCurrentSource=null;}}catch(e){}
+}
+
+// Découpe un texte long en morceaux de max ~350 mots (limite ElevenLabs confortable)
+function _elChunks(txt,maxWords=350){
+  const paras=txt.split(/\n+/).map(s=>s.trim()).filter(Boolean);
+  const chunks=[];
+  let cur=[];
+  let wcount=0;
+  paras.forEach(p=>{
+    const w=p.split(/\s+/).length;
+    if(wcount+w>maxWords&&cur.length){chunks.push(cur.join('\n'));cur=[];wcount=0;}
+    cur.push(p);wcount+=w;
+  });
+  if(cur.length)chunks.push(cur.join('\n'));
+  return chunks;
+}
+
+async function _elSpeakChunks(chunks,idx,onDone){
+  if(!_ttsPlaying||idx>=chunks.length){if(onDone)onDone();return;}
+  try{
+    const ac=getAC();
+    const r=await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${_EL_VOICE_FR}`,{
+      method:'POST',
+      headers:{'xi-api-key':_EL_API_KEY,'Content-Type':'application/json'},
+      body:JSON.stringify({
+        text:chunks[idx],
+        model_id:'eleven_multilingual_v2',
+        voice_settings:{stability:0.45,similarity_boost:0.75,style:0.25,use_speaker_boost:true}
+      })
+    });
+    if(!r.ok)throw new Error('EL HTTP '+r.status);
+    const buf=await r.arrayBuffer();
+    const decoded=await ac.decodeAudioData(buf);
+    if(!_ttsPlaying)return;
+    const src=ac.createBufferSource();
+    src.buffer=decoded;
+    src.connect(ac.destination);
+    _elCurrentSource=src;
+    src.onended=()=>{
+      _elCurrentSource=null;
+      if(!_ttsPlaying)return;
+      // Pause naturelle entre paragraphes
+      setTimeout(()=>_elSpeakChunks(chunks,idx+1,onDone),400);
+    };
+    src.start(0);
+  }catch(e){
+    console.warn('[EL] erreur chunk',idx,e.message,'→ Web Speech fallback');
+    // Fallback Web Speech pour ce chunk
+    if(window.speechSynthesis&&_ttsPlaying){
+      const u=new SpeechSynthesisUtterance(chunks[idx]);
+      u.lang='fr-FR';u.rate=_ttsRate;
+      u.onend=()=>setTimeout(()=>_elSpeakChunks(chunks,idx+1,onDone),400);
+      u.onerror=()=>_elSpeakChunks(chunks,idx+1,onDone);
+      window.speechSynthesis.speak(u);
+    }
+  }
+}
+
+function elSpeak(txt){
+  // TTS ElevenLabs pour textes longs (histoires/méditations onglet Nuit)
+  if(APP&&APP.silent)return;
+  if(!txt)return;
+  _ttsPlaying=false;
+  _ttsQueue=[];
+  _ttsStopResumeLoop();
+  _elStop();
+  try{if(window.speechSynthesis)window.speechSynthesis.cancel();}catch(e){}
+  _ttsPlaying=true;
+  const chunks=_elChunks(txt);
+  _elSpeakChunks(chunks,0,null);
+}
+// ─────────────────────────────────────────────────────────────────────────────
+
 function _ttsNext(){
   if(!_ttsPlaying||!_ttsQueue.length){_ttsPlaying=false;_ttsStopResumeLoop();return;}
   if(APP&&APP.silent){_ttsQueue=[];_ttsPlaying=false;_ttsStopResumeLoop();return;}
@@ -10712,13 +10792,13 @@ function _ttsNext(){
 }
 
 function ttsSpeak(txt,lang){
-  if(!window.speechSynthesis)return; // iframe sandbox — pas d'erreur affichée
   if(APP&&APP.silent)return;
   if(!txt)return;
   _ttsPlaying=false;
   _ttsQueue=[];
   _ttsStopResumeLoop();
-  try{window.speechSynthesis.cancel();}catch(e){}
+  _elStop();
+  try{if(window.speechSynthesis)window.speechSynthesis.cancel();}catch(e){}
   const useLang=lang||(APP&&APP.cur&&APP.cur.nativeLang)||'FR';
   _ttsPlaying=true;
   const paras=(txt||'').split(/\n+/).map(s=>s.trim()).filter(Boolean);
@@ -10736,7 +10816,8 @@ function ttsStop(){
   _ttsPlaying=false;
   _ttsQueue=[];
   _ttsStopResumeLoop();
-  try{window.speechSynthesis.cancel();}catch(e){}
+  _elStop();
+  try{if(window.speechSynthesis)window.speechSynthesis.cancel();}catch(e){}
 }
 
 function _ttsUnlock(){
@@ -13128,7 +13209,7 @@ function openReader(item,type){
     aBanner.innerHTML=`<div style="font-size:42px;margin-bottom:8px">🎧</div>
       <div style="font-size:15px;font-weight:900;margin-bottom:4px">${item.titre}</div>
       <div style="font-size:12px;opacity:.7;margin-bottom:14px">⏱ ${item.dur} min · Respiration guidée · ${item.age} ans</div>
-      <button id="audio-play-btn" onclick="ttsSpeak(document.getElementById('reader-full-txt').innerText,'fr-FR');this.textContent='⏸ En cours…';this.style.opacity='.7'" style="background:#6C63FF;border:none;color:#fff;border-radius:14px;padding:12px 24px;font-family:var(--f);font-size:15px;font-weight:900;cursor:pointer;width:100%;margin-bottom:8px">▶ Écouter l'histoire</button>
+      <button id="audio-play-btn" onclick="elSpeak(document.getElementById('reader-full-txt').innerText);this.textContent='⏸ En cours…';this.style.opacity='.7'" style="background:#6C63FF;border:none;color:#fff;border-radius:14px;padding:12px 24px;font-family:var(--f);font-size:15px;font-weight:900;cursor:pointer;width:100%;margin-bottom:8px">▶ Écouter l'histoire</button>
       <button onclick="ttsStop();const b=document.getElementById('audio-play-btn');if(b){b.textContent='▶ Écouter l\'histoire';b.style.opacity='1';}" style="background:rgba(255,255,255,.15);border:none;color:#fff;border-radius:14px;padding:10px 24px;font-family:var(--f);font-size:13px;font-weight:700;cursor:pointer;width:100%;margin-bottom:12px">⏹ Arrêter</button>
       <div style="display:flex;gap:7px;justify-content:center">
         <span style="font-size:11px;color:rgba(255,255,255,.5);align-self:center">Vitesse :</span>
@@ -13152,8 +13233,14 @@ function openReader(item,type){
 
   if(!isAudio){
     const tbar=document.createElement('div');tbar.className='nuit-tts';
-    tbar.innerHTML=`<button class="nuit-tb" onclick="ttsSpeak('${(item.texte||'').replace(/'/g,"\\'").replace(/\n/g,' ')}','fr-FR')">🔊 Lire à voix haute</button>
-      <button class="nuit-tb" onclick="ttsStop()">⏹ Stop</button>`;
+    // Utilise ElevenLabs (voix Olivier) pour les histoires/méditations
+    const _nuitTxt=item.titre+'. '+(item.texte||'');
+    const _nuitBtn=document.createElement('button');_nuitBtn.className='nuit-tb';
+    _nuitBtn.textContent='🔊 Lire à voix haute';
+    _nuitBtn.onclick=()=>elSpeak(_nuitTxt);
+    const _nuitStop=document.createElement('button');_nuitStop.className='nuit-tb';
+    _nuitStop.textContent='⏹ Stop';_nuitStop.onclick=ttsStop;
+    tbar.appendChild(_nuitBtn);tbar.appendChild(_nuitStop);
     c.appendChild(tbar);
   }
 
@@ -13186,7 +13273,7 @@ function openReader(item,type){
 
   show('reader');
   // Pour les histoires audio, on ne démarre PAS automatiquement — l'enfant clique ▶
-  if(!isAudio&&(autoTTS||APP.car))setTimeout(()=>ttsSpeak(item.titre+'. '+item.texte,'fr-FR'),800);
+  if(!isAudio&&(autoTTS||APP.car))setTimeout(()=>elSpeak(item.titre+'. '+item.texte),800);
 }
 
 // ════════════════════════════════════════════
