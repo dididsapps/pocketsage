@@ -14799,7 +14799,7 @@ function buildCalcul(){
     const op=ops[Math.floor(Math.random()*ops.length)];
     let a,b,ans;
     if(op==='+'){a=Math.floor(Math.random()*(age<7?6:age<10?20:50))+1;b=Math.floor(Math.random()*(age<7?6:age<10?20:50))+1;ans=a+b;}
-    else if(op===' -'){a=Math.floor(Math.random()*30)+10;b=Math.floor(Math.random()*a)+1;ans=a-b;}
+    else if(op==='-'||op===' -'){a=Math.floor(Math.random()*30)+10;b=Math.floor(Math.random()*a)+1;ans=a-b;}
     else{a=Math.floor(Math.random()*9)+2;b=Math.floor(Math.random()*9)+2;ans=a*b;}
     const wrong=[ans-1,ans+1,ans+2,ans-2].filter(x=>x!==ans&&x>0);
     const choices=[ans,...wrong.slice(0,3)].sort(()=>Math.random()-.5);
