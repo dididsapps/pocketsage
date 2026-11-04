@@ -12598,7 +12598,7 @@ function renderPolContent(tab){
     intro.textContent='Choisis la réponse la plus sage 🌸';
     c.appendChild(intro);
     let _qIdx=0;
-    function showPolQ(){
+    const showPolQ=()=>{
       c.innerHTML='';c.appendChild(intro);
       if(_qIdx>=POLITESSE_QCM.length){
         const done=document.createElement('div');
