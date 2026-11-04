@@ -10690,7 +10690,7 @@ function _playMp3(id,fallbackTxt,lang){
   // Utiliser AudioContext (déjà débloqué par les sons de l'app) pour bypasser autoplay mobile
   try{
     const ac=getAC();
-    fetch(url,{mode:'cors'}).then(r=>{
+    ac.resume().catch(()=>{});fetch(url,{mode:'cors'}).then(r=>{
       if(!r.ok)throw new Error('HTTP '+r.status);
       return r.arrayBuffer();
     }).then(buf=>ac.decodeAudioData(buf)).then(decoded=>{
