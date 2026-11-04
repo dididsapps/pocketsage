@@ -14894,7 +14894,7 @@ function buildMastermind(){
     inner.innerHTML=`${curRow===0?HELP:''}
     <div class="mm-colors">${COLORS.map(c=>`<div class="mm-color-btn${c===selected?' cur':''}" onclick="mmSel('${c}')">${c}</div>`).join('')}</div>
     <div id="mm-rows">${renderRows()}</div>
-    <div style="display:flex;gap:8px;justify-content:center;margin-top:8px">
+    <div style="position:sticky;bottom:8px;display:flex;gap:8px;justify-content:center;margin-top:8px;background:var(--bg);padding:8px 0">
       <button class="adv-continue-btn" style="padding:12px 24px;font-size:14px" onclick="mmPlace()">Placer</button>
       <button class="adv-continue-btn" style="padding:12px 24px;font-size:14px;background:var(--c)" onclick="mmCheck()">Valider</button>
     </div>`;
