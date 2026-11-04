@@ -11860,6 +11860,7 @@ const I18N={
     m_nuit:'Histoires du soir',m_nuit_d:'Méditations, relaxation, sommeil',
     m_jeux:'Mini-jeux',m_jeux_d:'Mémoire, serpent, anagrammes…',
     m_sport:'Sport & Défis',m_sport_d:'Exercices, mouvements, défis sportifs',
+    m_world:'Mon Monde',m_world_d:'Construis ta ville, récole des ressources',
     // Feedback exercices
     ok1:'🎉 Excellent !',ok2:'🌟 Bravo !',ok3:'⭐ Parfait !',ok4:'🏆 Super !',
     ko1:'😅 Presque !',ko2:'💪 Réessaie !',ko3:'🤔 Pas tout à fait…',ko4:'✊ Courage !',
@@ -11892,6 +11893,7 @@ const I18N={
     m_nuit:'Bedtime stories',m_nuit_d:'Meditations, relaxation, sleep',
     m_jeux:'Mini-games',m_jeux_d:'Memory, snake, anagrams…',
     m_sport:'Sport & Challenges',m_sport_d:'Exercises, movements, sport challenges',
+    m_world:'My World',m_world_d:'Build your city, harvest resources',
     ok1:'🎉 Excellent!',ok2:'🌟 Well done!',ok3:'⭐ Perfect!',ok4:'🏆 Super!',
     ko1:'😅 Almost!',ko2:'💪 Try again!',ko3:'🤔 Not quite…',ko4:'✊ Keep going!',
     score_perfect:'Perfect!',score_great:'Excellent!',score_good:'Well done!',score_keep:'Keep going!',
@@ -11922,6 +11924,7 @@ const I18N={
     m_nuit:'Cuentos de noche',m_nuit_d:'Meditaciones, relajación, sueño',
     m_jeux:'Minijuegos',m_jeux_d:'Memoria, serpiente, anagramas…',
     m_sport:'Deporte & Retos',m_sport_d:'Ejercicios, movimientos, retos deportivos',
+    m_world:'Mi Mundo',m_world_d:'Construye tu ciudad, cosecha recursos',
     ok1:'🎉 ¡Excelente!',ok2:'🌟 ¡Bravo!',ok3:'⭐ ¡Perfecto!',ok4:'🏆 ¡Genial!',
     ko1:'😅 ¡Casi!',ko2:'💪 ¡Inténtalo!',ko3:'🤔 No del todo…',ko4:'✊ ¡Ánimo!',
     score_perfect:'¡Perfecto!',score_great:'¡Excelente!',score_good:'¡Bien hecho!',score_keep:'¡Continúa!',
@@ -12116,6 +12119,7 @@ const HOME_MODS=[
   {id:'nuit',icon:'🌙',name:t('m_nuit'),desc:t('m_nuit_d'),color:'linear-gradient(135deg,#1A1A3E,#2D2D60)',nav:'nuit'},
   {id:'jeux',icon:'🎮',name:t('m_jeux'),desc:t('m_jeux_d'),color:'linear-gradient(135deg,#26C6DA,#0097A7)',nav:'jeux'},
   {id:'sport',icon:'🏃',name:t('m_sport'),desc:t('m_sport_d'),color:'linear-gradient(135deg,#FF6B35,#FF9F1C)',nav:'defis'},
+  {id:'world',icon:'🏙️',name:t('m_world'),desc:t('m_world_d'),color:'linear-gradient(135deg,#26A69A,#00796B)',nav:'world'},
 ];
 
 (function initSetup(){
@@ -12311,7 +12315,50 @@ function filterByAge(items, profileAge){
 
 function buildHome(){
   try{buildProfBar();}catch(e){console.error('buildProfBar:',e);}
-  const p=P();if(!p){show('setup');return;}
+  const p=P();
+  if(!p){
+    // Mode privé / sans profil : afficher accueil en mode découverte
+    show('home');
+    try{
+      const hero=document.getElementById('h-hero');
+      if(hero)hero.style.background='linear-gradient(135deg,#6C63FF,#9B93FF)';
+      const avEl=document.getElementById('h-av');
+      if(avEl){avEl.style.background='rgba(255,255,255,.25)';avEl.innerHTML='<span style="font-size:34px;line-height:1">🌟</span>';}
+      const hName=document.getElementById('h-name');if(hName)hName.textContent='Bonjour !';
+      const hLvl=document.getElementById('h-lvl');if(hLvl)hLvl.textContent='';
+      const hLangs=document.getElementById('h-langs');if(hLangs)hLangs.textContent='';
+    }catch(e){}
+    // Build module cards sans profil
+    try{
+      const sc=document.querySelector('#scr-home .sc');
+      if(sc){
+        const oldMods=sc.querySelector('.home-modules');if(oldMods)oldMods.remove();
+        const wrap=document.createElement('div');wrap.className='home-modules';
+        HOME_MODS.forEach(m=>{
+          const btn=document.createElement('button');
+          btn.className='hmod-card';
+          btn.style.cssText='background:'+m.color+';border-radius:22px;padding:22px 20px;display:flex;align-items:center;gap:16px;cursor:pointer;border:none;width:100%;text-align:left;font-family:var(--f);transition:transform .12s;box-shadow:var(--sh)';
+          btn.innerHTML='<span style="font-size:54px;flex-shrink:0;line-height:1">'+m.icon+'</span><div style="flex:1"><span style="font-size:18px;font-weight:900;color:#fff;display:block;margin-bottom:5px">'+m.name+'</span><span style="font-size:12px;font-weight:600;color:rgba(255,255,255,.85);display:block;margin-bottom:8px;line-height:1.4">'+m.desc+'</span><span style="background:rgba(255,255,255,.25);border-radius:20px;padding:4px 12px;font-size:11px;font-weight:800;color:#fff">Explorer →</span></div>';
+          btn.onclick=()=>{
+            try{sndTap();}catch(e){}
+            try{
+              if(m.nav==='politesse')openPolitesse();
+              else if(m.nav==='nuit')openNuit();
+              else if(m.nav==='jeux')openJeux();
+              else if(m.nav==='videos')openMod('recompenses');
+              else if(m.nav==='ateliers')openAteliers();
+              else if(m.nav==='defis')openMod('defis');
+              else if(m.nav==='world')openWorld();
+              else openMod(m.nav==='savoirs'?'savoirs':m.nav==='langues'?'langues':'logique');
+            }catch(e){}
+          };
+          wrap.appendChild(btn);
+        });
+        sc.appendChild(wrap);
+      }
+    }catch(e){console.error('buildHome noProfile modules:',e);}
+    return;
+  }
   try{
     const av=AVATARS[(p.name.charCodeAt(0)||0)%AVATARS.length];
     const grad=HERO_GRADS[APP.cur%HERO_GRADS.length];
