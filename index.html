@@ -13197,7 +13197,7 @@ function renderPol(item,c){
     <div>${item.situation}</div>`;
   // addEventListener pour éviter les problèmes d'échappement dans onclick
   const _polTtsBtn=box.querySelector('#pol-tts-btn');
-  if(_polTtsBtn)_polTtsBtn.addEventListener('click',()=>{_ttsCurrentId=null;ttsRead(item.situation||'','fr');sndTap();});
+  if(_polTtsBtn)_polTtsBtn.addEventListener('click',()=>{_ttsCurrentId=item.id||null;ttsRead(item.situation||'','fr');sndTap();});
   c.appendChild(box);c.appendChild(mkHint(item));
   const w=document.createElement('div');
   item.choix.forEach(ch=>{
