@@ -3070,6 +3070,19 @@ defis:[
 {id:"DF-046",cat:"respiration",nom:"Le Nettoyage du Cerveau 🧠",consigne:"Inspire par le nez — remplis le ventre d'abord, puis la poitrine (4s). Retiens 1s. Expire fort par la bouche en faisant WHOOSH (6s). 4 fois.",dur:50,diff:1,age:"7-18",hint:"La grande expiration WHOOSH libère les tensions !",invite:"Parfait après une journée stressante à l'école — essaie avant les devoirs !"},
 {id:"DF-047",cat:"respiration",nom:"La Respiration Alternée 🌸",consigne:"Bouche ton narine droite avec le pouce. Inspire par la gauche (4s). Bouche la gauche avec l'index. Expire par la droite (4s). Alterne 4 cycles.",dur:50,diff:2,age:"9-18",hint:"Technique de yoga pour équilibrer l'énergie — utilise la main droite !",invite:"La technique secrète des yogis — montre-la à ta famille !"},
 {id:"DF-048",cat:"respiration",nom:"Respiration des Super-Héros 🦸",consigne:"Inspire fort et lève les bras comme tu décoles. Retiens 3s, poings fermés. Expire PUISSAMMENT en ramenant les poings vers toi. 5 fois !",dur:45,diff:1,age:"4-12",hint:"Imagine que tu charges tes pouvoirs à chaque inspiration !",invite:"Le rituel du matin pour se sentir invincible — toute la famille peut le faire !"}
+,
+{id:"DF-V-001",cat:"voiture",nom:"Gainage du Siege",consigne:"Assis, contracte le ventre fort. Tiens 10s en respirant. Relache. 8 fois.",dur:100,diff:1,age:"6-18",hint:"Contracte sans retenir le souffle!",invite:"Qui tient le plus longtemps?"},
+{id:"DF-V-002",cat:"voiture",nom:"Epaules en Rondelles",consigne:"5 grands cercles d epaules vers l avant, 5 vers l arriere. 2 fois.",dur:40,diff:1,age:"4-18",hint:"Les plus grands cercles possible!",invite:"Qui fait les cercles les plus impressionnants?"},
+{id:"DF-V-003",cat:"voiture",nom:"Boxer de Voiture",consigne:"Poings fermes, 10 jabs devant toi, 10 crochets gauche/droite. 3 series.",dur:60,diff:2,age:"7-18",hint:"Engage le ventre a chaque coup!",invite:"Qui fait les jabs les plus rapides?"},
+{id:"DF-V-004",cat:"voiture",nom:"Poignee Ninja",consigne:"Ouvre les mains. Ferme les poings fort, 5s. Relache. 10 fois.",dur:60,diff:1,age:"4-18",hint:"Contracte jusqu au bout des doigts!",invite:"Qui a la poignee la plus puissante?"},
+{id:"DF-V-005",cat:"voiture",nom:"Rotation du Cou",consigne:"Tete a droite 10s. Centre. Gauche 10s. Menton poitrine 10s. Jamais vers l arriere! 2 cycles.",dur:70,diff:1,age:"5-18",hint:"Tres lentement - le cou est fragile!",invite:"Toute la famille s etire apres 1h de route!"},
+{id:"DF-V-006",cat:"voiture",nom:"Respiration Carree",consigne:"Inspire 4s, retiens 4s, expire 4s, vide 4s. 4 cycles. Ferme les yeux si passager!",dur:70,diff:1,age:"6-18",hint:"Visualise un carre bleu!",invite:"Le meilleur anti-stress en voiture!"},
+{id:"DF-V-007",cat:"voiture",nom:"Griffes de Dragon",consigne:"Courbe les doigts en griffes, tiens 5s. Relache. 10 fois. Secoue les mains. 3 series.",dur:65,diff:1,age:"4-18",hint:"Les mains travaillent sans bouger les bras!",invite:"Qui fait les griffes les plus feroces?"},
+{id:"DF-V-008",cat:"voiture",nom:"Le Sphinx Assis",consigne:"Assis tres droit, epaules en arriere et en bas. Poitrine avant. Menton rentre. Tiens 20s. 5 fois.",dur:120,diff:1,age:"7-18",hint:"Un fil tire ta tete vers le plafond!",invite:"La posture parfaite du voyage!"},
+{id:"DF-V-009",cat:"voiture",nom:"Fessiers Secrets",consigne:"Contracte les fessiers fort (sans que ca se voie!). Tiens 8s. Relache 3s. 10 fois.",dur:120,diff:1,age:"8-18",hint:"Un grand muscle entraine en secret!",invite:"L exercice secret du voyage!"},
+{id:"DF-V-010",cat:"voiture",nom:"Etirement des Poignets",consigne:"Paumes jointes, pousse vers le bas 15s. Dos a dos, tire vers le haut 15s. 3 cycles.",dur:110,diff:1,age:"6-18",hint:"Parfait apres le telephone!",invite:"Proposez-le apres 1h d ecran!"},
+{id:"DF-V-011",cat:"voiture",nom:"Souffle du Guerrier",consigne:"Inspire nez + ventre 4s. Retiens abdos 4s. Expire fort bouche 6s. 6 cycles.",dur:90,diff:2,age:"9-18",hint:"Expire plus long que l inspire!",invite:"Le souffle des champions en choeur!"},
+{id:"DF-V-012",cat:"voiture",nom:"Le Scan Corporel",consigne:"Ferme les yeux si passager. Pieds: contracte 5s, relache. Monte mollets, cuisses, ventre, epaules, mains. 2 minutes.",dur:120,diff:1,age:"7-18",hint:"Un scanner passe sur tout ton corps!",invite:"L exercice anti-ennui des longs trajets!"}
 ],
 maths:[
 {id:"MA-GS-001",classe:"GS",cat:"🔢",enonce:"Tu as 2 pommes dans une main et 1 pomme dans l'autre. Combien as-tu de pommes en tout ?",rep:"3",choix:["2","3","4"],diff:1,hint:"Compte sur tes doigts : lève 2 doigts, puis 1 de plus."},
@@ -12499,6 +12512,7 @@ const MCFG={
         {k:'gain',  l:'💪 Gainage',      d:gainage},
         {k:'str',   l:'🧘 Stretching',   d:stretch},
         {k:'respi', l:'🌬️ Respiration',  d:respi},
+        {k:'car',   l:'🚗 En voiture',    d:all.filter(d=>d.cat==='voiture')},
       ];
     }},
   langues:{emoji:'🌍',get title(){return t('m_langues');},desc:'Apprends les langues du monde !',bg:'linear-gradient(135deg,#FF9F1C,#FF6B35)',
