@@ -12106,7 +12106,6 @@ const HOME_MODS=[
 ];
 
 (function initSetup(){
-  try{
   loadApp();
   if(APP.profiles.length>0){show('home');buildHome();return;}
   // Auto-detect language from browser & apply i18n to setup screen
@@ -12139,7 +12138,7 @@ const HOME_MODS=[
   });
   // Sensei idle salue à l'arrivée
   setTimeout(()=>senseiAnim('sensei-bravo',1200,'🎓'),600);
-  }catch(e){console.error('initSetup FATAL:',e);var dbg=document.createElement('div');dbg.style.cssText='position:fixed;top:0;left:0;right:0;background:red;color:white;padding:10px;z-index:99999;font-size:12px';dbg.textContent='ERREUR INIT: '+e.message;document.body.appendChild(dbg);}
+
 })();
 
 function createProfile(){
