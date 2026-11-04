@@ -11607,7 +11607,8 @@ function openLangSelector(){
   const LANG_FLAGS={FR:'\u{1F1EB}\u{1F1F7}',EN:'\u{1F1EC}\u{1F1E7}',ES:'\u{1F1EA}\u{1F1F8}',DE:'\u{1F1E9}\u{1F1EA}',IT:'\u{1F1EE}\u{1F1F9}',AR:'\u{1F1F8}\u{1F1E6}',ZH:'\u{1F1E8}\u{1F1F3}',PT:'\u{1F1F5}\u{1F1F9}',RU:'\u{1F1F7}\u{1F1FA}',UK:'\u{1F1FA}\u{1F1E6}'};
   const LANG_NAMES_UI={FR:'Français',EN:'English',ES:'Español',DE:'Deutsch',IT:'Italiano',AR:'العربية',ZH:'中文',PT:'Português',RU:'Русский',UK:'Українська'};
   const p=P();
-  if(!p)return;
+  // Si pas de profil actif (ex: mode privé, ajout profil), on opère sur _setupNative
+  const setupMode=!p;
   const ov=document.createElement('div');
   ov.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px';
   const box=document.createElement('div');
@@ -11626,7 +11627,8 @@ function openLangSelector(){
   closeBtn.onclick=()=>ov.remove();
   box.appendChild(h3);box.appendChild(desc);box.appendChild(grid);box.appendChild(closeBtn);
   Object.keys(LANG_FLAGS).forEach(function(code){
-    const active=p.native===code;
+    const curNative=setupMode?_setupNative:(p?p.native:'FR');
+    const active=curNative===code;
     const btn=document.createElement('button');
     btn.style.cssText='padding:12px 8px;border-radius:14px;border:'+(active?'3px solid #6C63FF':'2px solid rgba(0,0,0,.1)')+';background:'+(active?'rgba(108,99,255,.12)':'var(--bg)')+';cursor:pointer;font-size:13px;font-weight:700;display:flex;align-items:center;gap:8px;transition:all .15s';
     const flagSpan=document.createElement('span');flagSpan.style.fontSize='28px';flagSpan.textContent=LANG_FLAGS[code];
@@ -11634,9 +11636,17 @@ function openLangSelector(){
     btn.appendChild(flagSpan);btn.appendChild(nameSpan);
     btn.onclick=function(){
       sndTap();
-      p.native=code;
-      saveApp();
-      buildHome();
+      if(setupMode){
+        // Mode setup : mettre à jour _setupNative et les boutons [data-nat]
+        _setupNative=code;
+        document.querySelectorAll('[data-nat]').forEach(function(b){b.classList.remove('sel');});
+        var natBtn=document.querySelector('[data-nat="'+code+'"]');if(natBtn)natBtn.classList.add('sel');
+        var frBtn=document.getElementById('lang-btn-FR');if(frBtn)frBtn.style.display=(code==='FR')?'none':'';
+      } else {
+        p.native=code;
+        saveApp();
+        buildHome();
+      }
       ov.remove();
       toast(LANG_FLAGS[code]+' Langue mise à jour !');
     };
@@ -12096,6 +12106,7 @@ const HOME_MODS=[
 ];
 
 (function initSetup(){
+  try{
   loadApp();
   if(APP.profiles.length>0){show('home');buildHome();return;}
   // Auto-detect language from browser & apply i18n to setup screen
@@ -12106,9 +12117,9 @@ const HOME_MODS=[
   }catch(e){}
   try{applyI18nSetup();applyI18nNav();}catch(e){console.error('i18n setup:',e);}
   // Init slider
-  updateAgeSlider(8);
+  try{updateAgeSlider(8);}catch(e){console.error('updateAgeSlider:',e);}
   // Grille d'avatars
-  buildAvatarGrid();
+  try{buildAvatarGrid();}catch(e){console.error('buildAvatarGrid:',e);}
   // Langue maternelle
   document.querySelectorAll('[data-nat]').forEach(b=>{
     b.onclick=()=>{sndTap();document.querySelectorAll('[data-nat]').forEach(x=>x.classList.remove('sel'));b.classList.add('sel');_setupNative=b.dataset.nat;
@@ -12128,6 +12139,7 @@ const HOME_MODS=[
   });
   // Sensei idle salue à l'arrivée
   setTimeout(()=>senseiAnim('sensei-bravo',1200,'🎓'),600);
+  }catch(e){console.error('initSetup FATAL:',e);var dbg=document.createElement('div');dbg.style.cssText='position:fixed;top:0;left:0;right:0;background:red;color:white;padding:10px;z-index:99999;font-size:12px';dbg.textContent='ERREUR INIT: '+e.message;document.body.appendChild(dbg);}
 })();
 
 function createProfile(){
