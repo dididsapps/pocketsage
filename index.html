@@ -10679,7 +10679,8 @@ function _playMp3(id,fallbackTxt,lang){
   const _frCP=id.startsWith('LG-CP-')||id.startsWith('SC-CP-')||id.startsWith('MA-CP-')||id.startsWith('GE-CP-')||id.startsWith('ES-CP-')||id.startsWith('FR-CP-');
   const _frCE1=id.startsWith('LG-CE1-')||id.startsWith('SC-CE1-')||id.startsWith('MA-CE1-')||id.startsWith('GE-CE1-')||id.startsWith('ES-CE1-')||id.startsWith('FR-CE1-');
   const _frSup=/^(?:LG|SC|MA|GE|HI|FR|ES|FLE)-(?:CE2|CM1|CM2|6E|5E|4E|3E|LY)-/.test(id);
-  const isFR=_frGS||_frCP||_frCE1||_frSup||id.startsWith('FR-');
+  const _frPol=id.startsWith('PO-');
+  const isFR=_frGS||_frCP||_frCE1||_frSup||id.startsWith('FR-')||_frPol;
   if(!isEN&&!isFR)return false;
   const audioLang=isEN?'en':'fr';
   const fileId=isEN?id:id.replace(/^LG-/,'FR-');
@@ -13057,7 +13058,7 @@ function mkCard(item){
   const d=document.createElement('div');d.className='excard';
   const qTxt=(item.enonce||item.situation||'');
   const qLang=_detectLang(qTxt);
-  const qEsc=qTxt.replace(/'/g,"\\'");
+  const qId=item.id||'';
   const cat=_catIcon(item);
   const isMath=cat.ic==='➕';
   const mathViz=isMath?_mathVisual(qTxt):'';
@@ -13065,8 +13066,11 @@ function mkCard(item){
     <span style="background:${cat.bg};color:${cat.col};border-radius:8px;padding:2px 7px;font-size:16px">${cat.ic}</span>
     <span>${item.type||''} ${item.cat?'· '+item.cat:''}</span>
   </div>
-  <div class="tts-row"><button class="tts-b" onclick="_ttsCurrentId='${item.id||''}';ttsRead('${qEsc}','${qLang}')">🔊 Écouter</button></div>
+  <div class="tts-row"><button class="tts-b" id="mk-tts-b">🔊 Écouter</button></div>
   ${mathViz?`<div class="exq" style="display:none">${qTxt}</div>${mathViz}`:`<div class="exq">${qTxt}</div>`}`;
+  // addEventListener pour éviter les problèmes d'échappement dans onclick
+  const _mkTtsBtn=d.querySelector('#mk-tts-b');
+  if(_mkTtsBtn)_mkTtsBtn.addEventListener('click',()=>{_ttsCurrentId=qId;ttsRead(qTxt,qLang);});
   return d;
 }
 function mkHint(item){
@@ -13189,8 +13193,11 @@ function renderGeneric(item,c){
 function renderPol(item,c){
   const box=document.createElement('div');box.className='scbox';
   box.innerHTML=`<div class="sclbl">🎭 SCÉNARIO</div>
-    <button style="background:rgba(255,255,255,.2);border:none;color:#fff;border-radius:8px;padding:5px 10px;font-family:var(--f);font-size:11px;font-weight:700;cursor:pointer;margin-bottom:6px" onclick="ttsRead('${(item.situation||'').replace(/'/g,"\\'")}')">🔊 Écouter</button>
+    <button id="pol-tts-btn" style="background:rgba(255,255,255,.2);border:none;color:#fff;border-radius:8px;padding:5px 10px;font-family:var(--f);font-size:11px;font-weight:700;cursor:pointer;margin-bottom:6px">🔊 Écouter</button>
     <div>${item.situation}</div>`;
+  // addEventListener pour éviter les problèmes d'échappement dans onclick
+  const _polTtsBtn=box.querySelector('#pol-tts-btn');
+  if(_polTtsBtn)_polTtsBtn.addEventListener('click',()=>{_ttsCurrentId=null;ttsRead(item.situation||'','fr');sndTap();});
   c.appendChild(box);c.appendChild(mkHint(item));
   const w=document.createElement('div');
   item.choix.forEach(ch=>{
@@ -14134,14 +14141,17 @@ function renderAdvQCM(c, typeCfg, typeId){
   const card=document.createElement('div');
   card.className='adv-phase-card';
   card.style.background=typeCfg.bg;
-  const _qTxt=(item.enonce||item.situation||'').replace(/'/g,"\\'");
-  const _qLang=_detectLang(item.enonce||item.situation||'');
-  const ttsBtn=`<button onclick="_ttsCurrentId='${item.id||''}';ttsRead('${_qTxt}','${_qLang}')" style="background:rgba(255,255,255,.35);border:2px solid rgba(255,255,255,.5);color:#fff;border-radius:14px;padding:11px 20px;font-family:var(--f);font-size:15px;font-weight:800;cursor:pointer;margin-bottom:10px;min-height:48px;letter-spacing:.2px;touch-action:manipulation">🔊 Écouter la question</button>`;
+  const _qTxt=item.enonce||item.situation||'';
+  const _qLang=_detectLang(_qTxt);
+  const _qId=item.id||'';
   card.innerHTML=`<div style="font-size:11px;font-weight:700;opacity:.8;margin-bottom:6px">${item.type||typeCfg.label} ${item.cat?'· '+item.cat:''}</div>
-    ${ttsBtn}
+    <button id="adv-tts-q" style="background:rgba(255,255,255,.35);border:2px solid rgba(255,255,255,.5);color:#fff;border-radius:14px;padding:11px 20px;font-family:var(--f);font-size:15px;font-weight:800;cursor:pointer;margin-bottom:10px;min-height:48px;letter-spacing:.2px;touch-action:manipulation">🔊 Écouter la question</button>
     <div style="font-size:18px;font-weight:800;line-height:1.4">${item.enonce||item.situation||''}</div>
     ${item.sequence?'<div style="font-size:28px;margin:12px 0">'+item.sequence.map(s=>`<span>${s}</span>`).join(' ')+' <span style="opacity:.4">❓</span></div>':''}`;
   c.appendChild(card);
+  // Bouton TTS question — addEventListener pour éviter les problèmes d'échappement
+  const _advTtsQBtn=card.querySelector('#adv-tts-q');
+  if(_advTtsQBtn)_advTtsQBtn.addEventListener('click',()=>{_ttsCurrentId=_qId;ttsRead(_qTxt,_qLang);sndTap();});
   // Trachtenberg tip (si question de table de multiplication dans maths)
   if(typeId==='maths' && item.enonce){
     const _enonceUp=item.enonce;
