@@ -11881,9 +11881,15 @@ function getLangSubcats(){
     const d=itemsForLang(k);
     if(d.length||codes[k]?.length)tabs.push({k,l:names[k]||k,d,niveau:curNiveau});
   });
-  // Onglet prononciation
-  tabs.push({k:'prono',l:'🎤 Prononcer',d:[],isProno:true,niveau:curNiveau});
   return tabs;
+}
+
+// Sous-onglets du mode Prononciation
+function getPronoSubcats(){
+  const langs=getActivePronoLangs();
+  const langNames={EN:'🇬🇧 Anglais',ES:'🇪🇸 Espagnol',DE:'🇩🇪 Allemand'};
+  // On renvoie un seul tab isProno (la logique interne gère la langue/niveau)
+  return [{k:'prono',l:'🎤 Prononciation',d:[],isProno:true}];
 }
 
 // Retourne les tabs de NIVEAU pour la sélection dans le module langues
@@ -11928,6 +11934,74 @@ function renderLangNiveauBtns(currentLangKey){
     };
     el.appendChild(b);
   });
+}
+
+// Sélecteur de MODE dans le module langues : Vocabulaire | Prononciation
+// Affiché dans la barre #video-lang-tabs (repurposée)
+function renderLangModeSelector(){
+  const el=document.getElementById('video-lang-tabs');
+  if(!el)return;
+  el.innerHTML='';
+  if(!APP.langMode)APP.langMode='vocab';
+  const modes=[
+    {k:'vocab',  l:'📚 Vocabulaire'},
+    {k:'prono',  l:'🎤 Prononciation'},
+  ];
+  modes.forEach(m=>{
+    const b=document.createElement('button');
+    b.className='ltab'+(APP.langMode===m.k?' on':'');
+    b.textContent=m.l;
+    b.onclick=()=>{
+      sndTap();
+      APP.langMode=m.k;
+      el.querySelectorAll('.ltab').forEach(x=>x.classList.remove('on'));
+      b.classList.add('on');
+      if(m.k==='vocab'){
+        // Remettre les boutons de niveau
+        renderLangNiveauBtns('all');
+        const subs=getLangSubcats();
+        renderTabs(subs,'langues');
+        renderList(subs[0].d,'langues',subs[0]);
+      } else {
+        // Mode prononciation — effacer les ltab niveau et afficher prono
+        const subs=getPronoSubcats();
+        renderTabs(subs,'langues');
+        renderList(subs[0].d,'langues',subs[0]);
+      }
+    };
+    el.appendChild(b);
+  });
+  // Si mode vocab, ajouter aussi les boutons de niveau après les modes
+  if(APP.langMode==='vocab'||!APP.langMode){
+    // Séparateur visuel
+    const sep=document.createElement('span');
+    sep.style.cssText='width:1px;height:28px;background:var(--tl);opacity:.2;margin:0 4px;align-self:center;';
+    el.appendChild(sep);
+    // Boutons de niveau inline
+    const p=P();
+    const curNiveau=(p&&p.langNiveau)||APP.langNiveau||'debutant';
+    LANG_NIVEAUX.forEach(nv=>{
+      const b=document.createElement('button');
+      b.className='ltab'+(nv.k===curNiveau?' on':'');
+      b.textContent=nv.l;
+      b.title=nv.classes.join(' · ');
+      b.onclick=()=>{
+        sndTap();
+        APP.langNiveau=nv.k;
+        if(p){p.langNiveau=nv.k;saveApp();}
+        el.querySelectorAll('.ltab').forEach(x=>x.classList.remove('on'));
+        // Remettre le bon état sur les 2 premiers boutons (modes)
+        el.querySelectorAll('.ltab').forEach((btn,i)=>{
+          if(i===0)btn.classList.add('on'); // vocab toujours actif ici
+        });
+        b.classList.add('on');
+        const subs=getLangSubcats();
+        renderTabs(subs,'langues');
+        renderList(subs[0].d,'langues',subs[0]);
+      };
+      el.appendChild(b);
+    });
+  }
 }
 
 // ── Video language filter state ──────────────
@@ -12098,15 +12172,24 @@ function openMod(mod){
       try{renderLangTabs();}catch(e){console.error('renderLangTabs:',e);}
     } else if(mod==='langues'){
       if(langTabEl){langTabEl.style.display='flex';langTabEl.innerHTML='';}
-      try{renderLangNiveauBtns('all');}catch(e){console.error('renderLangNiveauBtns:',e);}
+      try{renderLangModeSelector();}catch(e){console.error('renderLangModeSelector:',e);}
     } else {
       if(langTabEl)langTabEl.style.display='none';
     }
     let subs;
-    try{subs=cfg.subcats;}catch(e){console.error('subcats error:',e);subs=[];}
+    try{
+      if(mod==='langues'){
+        subs=(APP.langMode==='prono')?getPronoSubcats():cfg.subcats;
+      } else {
+        subs=cfg.subcats;
+      }
+    }catch(e){console.error('subcats error:',e);subs=[];}
     if(!subs||!subs.length){toast('Aucun contenu pour '+cfg.title,'err');return;}
     try{renderTabs(subs,mod);}catch(e){console.error('renderTabs:',e);}
-    try{renderList(subs[0].d,mod);}catch(e){console.error('renderList:',e);}
+    try{
+      const first=subs[0];
+      renderList(first.d,mod,first);
+    }catch(e){console.error('renderList:',e);}
     // Bouton Mode Coach — uniquement pour les défis
     const coachBtnWrap=document.getElementById('coach-btn-wrap');
     if(coachBtnWrap) coachBtnWrap.style.display=(mod==='defis')?'block':'none';
@@ -12120,12 +12203,13 @@ function openMod(mod){
 
 function renderTabs(subs,mod){
   const t=document.getElementById('stabs');t.innerHTML='';
-  // Bouton Mix — mélange toutes les questions de tous les sous-domaines
-  const allItems=subs.reduce((acc,sc)=>acc.concat(sc.d||[]),[]);
-  if(allItems.length>1&&mod!=='recompenses'&&mod!=='defis'){
+  // Bouton Mix — mélange toutes les questions de tous les sous-domaines (sauf tabs spéciaux isProno)
+  const allItems=subs.filter(sc=>!sc.isProno).reduce((acc,sc)=>acc.concat(sc.d||[]),[]);
+  const isPronoMode=subs.length===1&&subs[0].isProno;
+  if(allItems.length>1&&mod!=='recompenses'&&mod!=='defis'&&!isPronoMode){
     const mix=document.createElement('button');
     mix.className='stab stab-mix';
-    mix.innerHTML='🔀 Mix';
+    mix.innerHTML=mod==='langues'?'🔀 Mix langues':'🔀 Mix';
     mix.title='Mélanger toutes les questions';
     mix.onclick=()=>{
       sndTap();
