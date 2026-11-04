@@ -12500,6 +12500,17 @@ const MCFG={
 // ════════════════════════════════════════════
 // POLITESSE DATA & SCREEN
 // ════════════════════════════════════════════
+const POLITESSE_QCM=[
+  {id:'POC-Q-001',situation:"Tu rencontres un adulte que tu ne connais pas. Que fais-tu ?",choix:[{t:"Tu baisses les yeux et tu fuis.",s:false},{t:"Tu souris et tu dis bonjour.",s:true},{t:"Tu l'ignores complètement.",s:false}],sage:"Tu souris et tu dis bonjour.",expl:"Sourire et saluer montre de la confiance et du respect !",diff:1,age:"4-7",hint:"Pense au mot magique du matin…"},
+  {id:'POC-Q-002',situation:"Tu as cassé accidentellement le jouet de ta sœur. Que dis-tu ?",choix:[{t:"Rien, tu fais comme si de rien n'était.",s:false},{t:"C'est pas moi !",s:false},{t:"Je suis désolé(e), c'était un accident.",s:true}],sage:"Je suis désolé(e), c'était un accident.",expl:"Assumer ses erreurs et s'excuser, c'est du courage !",diff:1,age:"4-7",hint:"Quel mot montre qu'on regrette ?"},
+  {id:'POC-Q-003',situation:"À table, tu veux encore du pain. Comment demandes-tu ?",choix:[{t:"Tu tends la main et tu prends.",s:false},{t:"S'il te plaît, est-ce que je peux avoir du pain ?",s:true},{t:"Je veux du pain !",s:false}],sage:"S'il te plaît, est-ce que je peux avoir du pain ?",expl:"'S'il te plaît' est le mot magique pour toutes les demandes !",diff:1,age:"4-7",hint:"Un mot transforme une exigence en jolie demande…"},
+  {id:'POC-Q-004',situation:"Ton ami te parle de son week-end. Tu trouves ça un peu ennuyeux. Que fais-tu ?",choix:[{t:"Tu regardes ton téléphone en attendant qu'il finisse.",s:false},{t:"Tu l'interromps pour parler de toi.",s:false},{t:"Tu l'écoutes avec attention et tu poses une question.",s:true}],sage:"Tu l'écoutes avec attention et tu poses une question.",expl:"Écouter vraiment les autres, c'est un cadeau précieux !",diff:2,age:"4-7",hint:"La meilleure façon de montrer qu'on s'intéresse…"},
+  {id:'POC-Q-005',situation:"Un camarade t'a aidé à finir ton travail. Que fais-tu ?",choix:[{t:"Tu ranges tes affaires sans rien dire.",s:false},{t:"Tu lui dis merci avec un sourire.",s:true},{t:"Tu lui demandes de t'aider encore.",s:false}],sage:"Tu lui dis merci avec un sourire.",expl:"Un merci sincère renforce l'amitié et donne envie d'aider encore !",diff:1,age:"4-7",hint:"Quel mot magique exprime la gratitude ?"},
+  {id:'POC-Q-006',situation:"Tu es en retard et tu bouscules quelqu'un dans le couloir. Que fais-tu ?",choix:[{t:"Tu continues sans t'arrêter.",s:false},{t:"Tu t'arrêtes et tu dis : Excuse-moi, je suis désolé(e).",s:true},{t:"Tu dis c'est de ta faute.",s:false}],sage:"Tu t'arrêtes et tu dis : Excuse-moi, je suis désolé(e).",expl:"S'excuser même pressé montre du respect pour les autres.",diff:2,age:"4-7",hint:"Même quand on est pressé, on peut…"},
+  {id:'POC-Q-007',situation:"Tu es au cinéma et tu as envie de parler à ton voisin pendant le film.",choix:[{t:"Tu lui chuchotes à l'oreille.",s:false},{t:"Tu attends la fin du film pour lui parler.",s:true},{t:"Tu parles normalement.",s:false}],sage:"Tu attends la fin du film pour lui parler.",expl:"Respecter le silence dans les lieux publics, c'est penser aux autres !",diff:2,age:"4-7",hint:"Les autres spectateurs regardent aussi le film…"},
+  {id:'POC-Q-008',situation:"Tu reçois un cadeau qui ne te plaît pas vraiment. Que dis-tu ?",choix:[{t:"Bof, c'est pas ce que je voulais.",s:false},{t:"Merci, c'est très gentil de ta part !",s:true},{t:"Tu ne dis rien et tu le mets de côté.",s:false}],sage:"Merci, c'est très gentil de ta part !",expl:"Remercier avec sincérité rend la personne heureuse d'avoir pensé à toi !",diff:2,age:"4-7",hint:"L'intention compte plus que le cadeau lui-même…"},
+];
+
 const POLITESSE_DATA={
   manieres:[
     {id:'POC-M-001',titre:'À table',icon:'🍽️',conseil:"Attends que tout le monde soit servi avant de commencer. Dis toujours s'il te plaît et merci."},
@@ -12542,7 +12553,7 @@ function openPolitesse(){
 }
 function renderPolTabs(){
   const tabs=document.getElementById('pol-tabs');
-  const labels=['Manières 🌸','Dictons ✨','Conseils 🎯'];
+  const labels=['Manières 🌸','Dictons ✨','Conseils 🎯','Exercices 🧠'];
   tabs.innerHTML='';
   labels.forEach((l,i)=>{
     const b=document.createElement('button');b.className='stab'+(_polTab===i?' on':'');
@@ -12580,6 +12591,54 @@ function renderPolContent(tab){
       card.innerHTML=`<span style="font-size:32px;flex-shrink:0">${cs.icon}</span><div style="flex:1"><div style="font-size:14px;font-weight:900;margin-bottom:5px">${cs.titre}</div><div style="font-size:13px;color:var(--tl);line-height:1.5;font-weight:600">${cs.texte}</div><button onclick="_ttsCurrentId=this.dataset.id;ttsRead(this.dataset.t,'fr');sndTap()" data-t="${ct}" data-id="${cs.id}" style="margin-top:8px;background:var(--vl);border:none;border-radius:10px;padding:6px 12px;font-family:var(--f);font-size:11px;font-weight:700;color:var(--v);cursor:pointer">🔊 Écouter</button></div>`;
       c.appendChild(card);
     });
+  }else{
+    // Exercices QCM Politesse
+    const intro=document.createElement('div');
+    intro.style.cssText='text-align:center;padding:16px 0 10px;font-size:13px;font-weight:700;color:var(--tl)';
+    intro.textContent='Choisis la réponse la plus sage 🌸';
+    c.appendChild(intro);
+    let _qIdx=0;
+    function showPolQ(){
+      c.innerHTML='';c.appendChild(intro);
+      if(_qIdx>=POLITESSE_QCM.length){
+        const done=document.createElement('div');
+        done.style.cssText='text-align:center;padding:40px 20px;font-size:28px';
+        done.innerHTML='🎉<div style="font-size:16px;font-weight:700;margin-top:12px;color:var(--v)">Bravo ! Tu as terminé tous les exercices !</div><button onclick="_polTab=3;_qIdx=0;renderPolContent(3)" style="margin-top:20px;background:var(--v);color:#fff;border:none;border-radius:14px;padding:12px 28px;font-size:14px;font-weight:700;cursor:pointer;font-family:var(--f)">Recommencer</button>';
+        c.appendChild(done);return;
+      }
+      const item=POLITESSE_QCM[_qIdx];
+      // scénario
+      const box=document.createElement('div');box.className='scbox';
+      box.innerHTML=`<div class="sclbl">🎭 SCÉNARIO ${_qIdx+1}/${POLITESSE_QCM.length}</div>
+        <button id="polq-tts" style="background:rgba(255,255,255,.2);border:none;color:#fff;border-radius:8px;padding:5px 10px;font-family:var(--f);font-size:11px;font-weight:700;cursor:pointer;margin-bottom:6px">🔊 Écouter</button>
+        <div>${item.situation}</div>`;
+      box.querySelector('#polq-tts').addEventListener('click',()=>{_ttsCurrentId=item.id;ttsRead(item.situation,'fr');sndTap();});
+      c.appendChild(box);
+      c.appendChild(mkHint(item));
+      const w=document.createElement('div');
+      item.choix.forEach(ch=>{
+        const b=document.createElement('button');b.className='pochoice';b.textContent=ch.t;
+        b.onclick=()=>{
+          if(w.dataset.a)return;w.dataset.a='1';
+          w.querySelectorAll('button').forEach(x=>{
+            if(x.textContent===item.sage){x.classList.add('sage-r');x.innerHTML+=`<span class="sage-badge">SAGE</span>`;}
+            else x.classList.add('bad-r');
+          });
+          if(ch.s){sndOK();senseiOK();markDone(item,true,c);}else{sndKO();senseiKO();markDone(item,false,c);}
+          if(ch.s){
+            const ex=document.createElement('div');
+            ex.style.cssText='background:var(--ml);border-radius:11px;padding:11px;margin-top:9px;font-size:12px;font-weight:600;color:#006B55;line-height:1.5';
+            ex.textContent='💡 '+item.expl;c.appendChild(ex);
+          }
+          const nb=document.createElement('button');nb.className='nxtbtn show';
+          nb.textContent=_qIdx<POLITESSE_QCM.length-1?'Question suivante →':'Terminer ✅';
+          nb.onclick=()=>{_qIdx++;showPolQ();};c.appendChild(nb);
+        };
+        w.appendChild(b);
+      });
+      c.appendChild(w);
+    }
+    showPolQ();
   }
 }
 
