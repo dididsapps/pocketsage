@@ -10679,7 +10679,7 @@ function _playMp3(id,fallbackTxt,lang){
   const _frCP=id.startsWith('LG-CP-')||id.startsWith('SC-CP-')||id.startsWith('MA-CP-')||id.startsWith('GE-CP-')||id.startsWith('ES-CP-')||id.startsWith('FR-CP-');
   const _frCE1=id.startsWith('LG-CE1-')||id.startsWith('SC-CE1-')||id.startsWith('MA-CE1-')||id.startsWith('GE-CE1-')||id.startsWith('ES-CE1-')||id.startsWith('FR-CE1-');
   const _frSup=/^(?:LG|SC|MA|GE|HI|FR|ES|FLE)-(?:CE2|CM1|CM2|6E|5E|4E|3E|LY)-/.test(id);
-  const _frPol=id.startsWith('PO-');
+  const _frPol=id.startsWith('PO-')||id.startsWith('POC-');
   const isFR=_frGS||_frCP||_frCE1||_frSup||id.startsWith('FR-')||_frPol;
   if(!isEN&&!isFR)return false;
   const audioLang=isEN?'en':'fr';
@@ -12502,30 +12502,30 @@ const MCFG={
 // ════════════════════════════════════════════
 const POLITESSE_DATA={
   manieres:[
-    {titre:'À table',icon:'🍽️',conseil:"Attends que tout le monde soit servi avant de commencer. Dis toujours s'il te plaît et merci."},
-    {titre:'Saluer',icon:'👋',conseil:'Regarde la personne dans les yeux quand tu la salues. Un sourire sincère vaut mille mots.'},
-    {titre:'Écouter',icon:'👂',conseil:"N'interromps pas quand quelqu'un parle. Écouter vraiment, c'est offrir un cadeau."},
-    {titre:'Téléphone',icon:'📵',conseil:'Range ton téléphone lors des repas et conversations. Ta présence est ton plus beau cadeau.'},
-    {titre:'Remercier',icon:'🙏',conseil:"Un merci sincère et spontané crée un lien fort. N'attends pas qu'on te le rappelle."},
-    {titre:"S'excuser",icon:'💬',conseil:"S'excuser sincèrement demande du courage. Je suis désolé dit avec le cœur répare beaucoup."},
+    {id:'POC-M-001',titre:'À table',icon:'🍽️',conseil:"Attends que tout le monde soit servi avant de commencer. Dis toujours s'il te plaît et merci."},
+    {id:'POC-M-002',titre:'Saluer',icon:'👋',conseil:'Regarde la personne dans les yeux quand tu la salues. Un sourire sincère vaut mille mots.'},
+    {id:'POC-M-003',titre:'Écouter',icon:'👂',conseil:"N'interromps pas quand quelqu'un parle. Écouter vraiment, c'est offrir un cadeau."},
+    {id:'POC-M-004',titre:'Téléphone',icon:'📵',conseil:'Range ton téléphone lors des repas et conversations. Ta présence est ton plus beau cadeau.'},
+    {id:'POC-M-005',titre:'Remercier',icon:'🙏',conseil:"Un merci sincère et spontané crée un lien fort. N'attends pas qu'on te le rappelle."},
+    {id:'POC-M-006',titre:"S'excuser",icon:'💬',conseil:"S'excuser sincèrement demande du courage. Je suis désolé dit avec le cœur répare beaucoup."},
   ],
   dictons:[
-    {texte:'La politesse est l\'art de choisir parmi ses pensées. — Germaine de Staël',icon:'✨'},
-    {texte:'Le secret du succès, c\'est la constance dans le but. — Benjamin Disraeli',icon:'🎯'},
-    {texte:'Peu importe la vitesse à laquelle tu avances, l\'important est de ne pas s\'arrêter. — Confucius',icon:'🐢'},
-    {texte:'Traite les autres comme tu aimerais être traité. — Règle d\'or universelle',icon:'💛'},
-    {texte:'Le respect de soi est le commencement de la sagesse. — Proverbe écossais',icon:'🌟'},
-    {texte:'Un sourire ne coûte rien et vaut pourtant beaucoup. — Proverbe français',icon:'😊'},
-    {texte:'Les grandes choses ne se font pas par impulsion, mais par une série de petites choses. — Van Gogh',icon:'🎨'},
-    {texte:'La gratitude transforme ce que nous avons en suffisamment. — Proverbe amérindien',icon:'🙏'},
+    {id:'POC-D-001',texte:'La politesse est l\'art de choisir parmi ses pensées. — Germaine de Staël',icon:'✨'},
+    {id:'POC-D-002',texte:'Le secret du succès, c\'est la constance dans le but. — Benjamin Disraeli',icon:'🎯'},
+    {id:'POC-D-003',texte:'Peu importe la vitesse à laquelle tu avances, l\'important est de ne pas s\'arrêter. — Confucius',icon:'🐢'},
+    {id:'POC-D-004',texte:'Traite les autres comme tu aimerais être traité. — Règle d\'or universelle',icon:'💛'},
+    {id:'POC-D-005',texte:'Le respect de soi est le commencement de la sagesse. — Proverbe écossais',icon:'🌟'},
+    {id:'POC-D-006',texte:'Un sourire ne coûte rien et vaut pourtant beaucoup. — Proverbe français',icon:'😊'},
+    {id:'POC-D-007',texte:'Les grandes choses ne se font pas par impulsion, mais par une série de petites choses. — Van Gogh',icon:'🎨'},
+    {id:'POC-D-008',texte:'La gratitude transforme ce que nous avons en suffisamment. — Proverbe amérindien',icon:'🙏'},
   ],
   conseils:[
-    {titre:'Fixe un objectif',icon:'🎯',texte:'Écris ton objectif sur papier. Il devient beaucoup plus probable de le réaliser !'},
-    {titre:'Découpe en petites étapes',icon:'🪜',texte:'Un grand rêve + petites actions quotidiennes = résultats certains. Commence par 5 minutes par jour.'},
-    {titre:'Célèbre tes progrès',icon:'🎉',texte:'Chaque pas compte. Félicite-toi pour les petites victoires — elles construisent la grande.'},
-    {titre:'Entoure-toi bien',icon:'👥',texte:'Tu deviens la moyenne des 5 personnes que tu côtoies le plus. Choisis des gens qui t\'élèvent.'},
-    {titre:'La persévérance',icon:'💪',texte:'Tous les experts ont été des débutants. La différence ? Ils n\'ont pas abandonné.'},
-    {titre:'Sois curieux',icon:'🔍',texte:'Pose des questions, lis, explore. La curiosité est le moteur de tous les grands accomplissements.'},
+    {id:'POC-CS-001',titre:'Fixe un objectif',icon:'🎯',texte:'Écris ton objectif sur papier. Il devient beaucoup plus probable de le réaliser !'},
+    {id:'POC-CS-002',titre:'Découpe en petites étapes',icon:'🪜',texte:'Un grand rêve + petites actions quotidiennes = résultats certains. Commence par 5 minutes par jour.'},
+    {id:'POC-CS-003',titre:'Célèbre tes progrès',icon:'🎉',texte:'Chaque pas compte. Félicite-toi pour les petites victoires — elles construisent la grande.'},
+    {id:'POC-CS-004',titre:'Entoure-toi bien',icon:'👥',texte:'Tu deviens la moyenne des 5 personnes que tu côtoies le plus. Choisis des gens qui t\'élèvent.'},
+    {id:'POC-CS-005',titre:'La persévérance',icon:'💪',texte:'Tous les experts ont été des débutants. La différence ? Ils n\'ont pas abandonné.'},
+    {id:'POC-CS-006',titre:'Sois curieux',icon:'🔍',texte:'Pose des questions, lis, explore. La curiosité est le moteur de tous les grands accomplissements.'},
   ]
 };
 
@@ -12558,7 +12558,7 @@ function renderPolContent(tab){
       const card=document.createElement('div');
       card.style.cssText='background:var(--w);border-radius:var(--r);padding:16px;margin-bottom:10px;box-shadow:var(--sh);display:flex;align-items:flex-start;gap:12px';
       const conseil=m.conseil.replace(/'/g,"&#39;");
-      card.innerHTML=`<span style="font-size:32px;flex-shrink:0">${m.icon}</span><div style="flex:1"><div style="font-size:14px;font-weight:900;margin-bottom:5px">${m.titre}</div><div style="font-size:13px;color:var(--tl);line-height:1.5;font-weight:600">${m.conseil}</div><button onclick="ttsSpeak(this.dataset.t);sndTap()" data-t="${conseil}" style="margin-top:8px;background:var(--vl);border:none;border-radius:10px;padding:6px 12px;font-family:var(--f);font-size:11px;font-weight:700;color:var(--v);cursor:pointer">🔊 Écouter</button></div>`;
+      card.innerHTML=`<span style="font-size:32px;flex-shrink:0">${m.icon}</span><div style="flex:1"><div style="font-size:14px;font-weight:900;margin-bottom:5px">${m.titre}</div><div style="font-size:13px;color:var(--tl);line-height:1.5;font-weight:600">${m.conseil}</div><button onclick="_ttsCurrentId=this.dataset.id;ttsRead(this.dataset.t,'fr');sndTap()" data-t="${conseil}" data-id="${m.id}" style="margin-top:8px;background:var(--vl);border:none;border-radius:10px;padding:6px 12px;font-family:var(--f);font-size:11px;font-weight:700;color:var(--v);cursor:pointer">🔊 Écouter</button></div>`;
       c.appendChild(card);
     });
   }else if(tab===1){
@@ -12570,14 +12570,14 @@ function renderPolContent(tab){
     const card=document.createElement('div');
     card.style.cssText='background:linear-gradient(135deg,#6C63FF,#9B93FF);border-radius:22px;padding:28px 20px;text-align:center;color:#fff;margin-bottom:14px;min-height:200px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px';
     const dt=d.texte.replace(/'/g,"&#39;");
-    card.innerHTML=`<div style="font-size:52px">${d.icon}</div><div style="font-size:16px;font-weight:700;line-height:1.6">${d.texte}</div><button onclick="ttsSpeak(this.dataset.t);sndTap()" data-t="${dt}" style="background:rgba(255,255,255,.2);border:none;border-radius:10px;padding:8px 16px;font-family:var(--f);font-size:12px;font-weight:700;color:#fff;cursor:pointer">🔊 Écouter</button>`;
+    card.innerHTML=`<div style="font-size:52px">${d.icon}</div><div style="font-size:16px;font-weight:700;line-height:1.6">${d.texte}</div><button onclick="_ttsCurrentId=this.dataset.id;ttsRead(this.dataset.t,'fr');sndTap()" data-t="${dt}" data-id="${d.id}" style="background:rgba(255,255,255,.2);border:none;border-radius:10px;padding:8px 16px;font-family:var(--f);font-size:12px;font-weight:700;color:#fff;cursor:pointer">🔊 Écouter</button>`;
     c.appendChild(card);
   }else{
     POLITESSE_DATA.conseils.forEach(cs=>{
       const card=document.createElement('div');
       card.style.cssText='background:var(--w);border-radius:var(--r);padding:16px;margin-bottom:10px;box-shadow:var(--sh);display:flex;align-items:flex-start;gap:12px';
       const ct=cs.texte.replace(/'/g,"&#39;");
-      card.innerHTML=`<span style="font-size:32px;flex-shrink:0">${cs.icon}</span><div style="flex:1"><div style="font-size:14px;font-weight:900;margin-bottom:5px">${cs.titre}</div><div style="font-size:13px;color:var(--tl);line-height:1.5;font-weight:600">${cs.texte}</div><button onclick="ttsSpeak(this.dataset.t);sndTap()" data-t="${ct}" style="margin-top:8px;background:var(--vl);border:none;border-radius:10px;padding:6px 12px;font-family:var(--f);font-size:11px;font-weight:700;color:var(--v);cursor:pointer">🔊 Écouter</button></div>`;
+      card.innerHTML=`<span style="font-size:32px;flex-shrink:0">${cs.icon}</span><div style="flex:1"><div style="font-size:14px;font-weight:900;margin-bottom:5px">${cs.titre}</div><div style="font-size:13px;color:var(--tl);line-height:1.5;font-weight:600">${cs.texte}</div><button onclick="_ttsCurrentId=this.dataset.id;ttsRead(this.dataset.t,'fr');sndTap()" data-t="${ct}" data-id="${cs.id}" style="margin-top:8px;background:var(--vl);border:none;border-radius:10px;padding:6px 12px;font-family:var(--f);font-size:11px;font-weight:700;color:var(--v);cursor:pointer">🔊 Écouter</button></div>`;
       c.appendChild(card);
     });
   }
