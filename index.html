@@ -10743,9 +10743,10 @@ function _ttsUnlock(){
 
 function ttsRead(txt,lang){
   console.log('ttsRead called',{txt:txt&&txt.substring(0,30),lang,id:_ttsCurrentId,cache:_audioCache[_ttsCurrentId]});
-  // Essayer MP3 CDN d'abord si on a un id de question courant
-  if(_ttsCurrentId&&_audioCache[_ttsCurrentId]!=='miss'){
-    if(_playMp3(_ttsCurrentId,txt||_ttsText))return;
+  // MP3 CDN uniquement si aucun texte explicite (auto-lecture mode voiture)
+  // Si txt fourni → ttsSpeak direct (évite de jouer un MP3 obsolète)
+  if(!txt&&_ttsCurrentId&&_audioCache[_ttsCurrentId]!=='miss'){
+    if(_playMp3(_ttsCurrentId,_ttsText))return;
   }
   // Vérifier si speechSynthesis est disponible (bloqué dans certaines iframes)
   if(!window.speechSynthesis){
@@ -14252,7 +14253,7 @@ function mkCard(item){
   ${mathViz?`<div class="exq" style="display:none">${qTxt}</div>${mathViz}`:`<div class="exq">${qTxt}</div>`}`;
   // addEventListener pour éviter les problèmes d'échappement dans onclick
   const _mkTtsBtn=d.querySelector('#mk-tts-b');
-  if(_mkTtsBtn)_mkTtsBtn.addEventListener('click',()=>{_ttsCurrentId=qId;ttsRead(qTxt,qLang);});
+  if(_mkTtsBtn)_mkTtsBtn.addEventListener('click',()=>{ttsRead(qTxt,qLang);sndTap();});
   return d;
 }
 function mkHint(item){
@@ -15333,7 +15334,7 @@ function renderAdvQCM(c, typeCfg, typeId){
   c.appendChild(card);
   // Bouton TTS question — addEventListener pour éviter les problèmes d'échappement
   const _advTtsQBtn=card.querySelector('#adv-tts-q');
-  if(_advTtsQBtn)_advTtsQBtn.addEventListener('click',()=>{_ttsCurrentId=_qId;ttsRead(_qTxt,_qLang);sndTap();});
+  if(_advTtsQBtn)_advTtsQBtn.addEventListener('click',()=>{ttsRead(_qTxt,_qLang);sndTap();});
   // Trachtenberg tip (si question de table de multiplication dans maths)
   if(typeId==='maths' && item.enonce){
     const _enonceUp=item.enonce;
