@@ -12629,6 +12629,7 @@ function renderTables(){
   // ── Sélecteur de technique
   const techniques=[
     {k:'batonnets', l:'🎋 Bâtonnets', age:'6-9 ans'},
+    {k:'perles',    l:'🟡 Perles',     age:'4-8 ans'},
     {k:'pythagore', l:'🏛️ Pythagore', age:'7-10 ans'},
     {k:'histoires', l:'🧠 Histoires',  age:'7-11 ans'},
     {k:'trachtenberg',l:'⚡ Trachtenberg',age:'10-15 ans'},
@@ -12651,7 +12652,7 @@ function renderTables(){
   wrap.appendChild(techBar);
 
   // ── Dispatcher
-  const fn={batonnets:renderBatonnets,pythagore:renderPythagore,histoires:renderHistoires,trachtenberg:renderTrachtenberg,flash:renderFlash};
+  const fn={batonnets:renderBatonnets,perles:renderPerles,pythagore:renderPythagore,histoires:renderHistoires,trachtenberg:renderTrachtenberg,flash:renderFlash};
   (fn[_tablesState.technique]||renderBatonnets)(wrap);
 
   el.appendChild(wrap);
@@ -13099,6 +13100,282 @@ function flashAns(btn,val,rep,container,maxN){
   }
 }
 
+// ─────────────────────────────────────────
+// PERLES MONTESSORI
+// ─────────────────────────────────────────
+const PERLES_NIVEAUX=[
+  {age:'4-6 ans',label:'🐣 Unités',desc:'Compte les perles une par une',n1max:5,n2max:5,mode:'count'},
+  {age:'6-7 ans',label:'🌱 Barres de 10',desc:'Regroupe en dizaines',n1max:9,n2max:5,mode:'tens'},
+  {age:'7-8 ans',label:'🌿 Tables visuelles',desc:'Multiplication avec les perles',n1max:9,n2max:9,mode:'mult'},
+];
+// Couleurs Montessori des perles 1→9
+const PERLE_COLORS=['#E53935','#43A047','#1E88E5','#FFB300','#8E24AA','#D81B60','#00897B','#6D4C41','#546E7A'];
+const PERLE_NAMES=['','rouge','vert','bleu','jaune','violet','rose','turquoise','marron','gris'];
+
+function renderPerles(wrap){
+  if(!_tablesState.perleNiveau)_tablesState.perleNiveau=0;
+  if(!_tablesState.perleScore)_tablesState.perleScore=0;
+  if(!_tablesState.perleStreak)_tablesState.perleStreak=0;
+
+  const niv=PERLES_NIVEAUX[_tablesState.perleNiveau]||PERLES_NIVEAUX[0];
+
+  // Header
+  const hdr=document.createElement('div');
+  hdr.style.cssText='margin-bottom:14px;';
+  hdr.innerHTML=`<div style="font-size:18px;font-weight:800;margin-bottom:4px">🟡 Perles Montessori <span style="font-size:12px;font-weight:600;opacity:.6;">Méthode Montessori</span></div>
+  <div style="font-size:13px;color:var(--ts,#888);margin-bottom:10px">${niv.desc} · ${niv.age}</div>`;
+
+  // Sélecteur de niveau
+  const nivBar=document.createElement('div');
+  nivBar.style.cssText='display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;';
+  PERLES_NIVEAUX.forEach((n,i)=>{
+    const b=document.createElement('button');
+    b.className='stab'+(i===_tablesState.perleNiveau?' on':'');
+    b.innerHTML=`${n.label} <span style="font-size:10px;opacity:.65;">${n.age}</span>`;
+    b.onclick=()=>{sndTap();_tablesState.perleNiveau=i;_tablesState.perleScore=0;_tablesState.perleStreak=0;renderTables();};
+    nivBar.appendChild(b);
+  });
+
+  wrap.appendChild(hdr);
+  wrap.appendChild(nivBar);
+
+  // Zone principale selon mode
+  const zone=document.createElement('div');
+  if(niv.mode==='count') renderPerlesCount(zone,niv);
+  else if(niv.mode==='tens') renderPerlesTens(zone,niv);
+  else renderPerlesMult(zone,niv);
+  wrap.appendChild(zone);
+}
+
+function _makeBeadSVG(n,color,size){
+  // Crée une rangée de n perles SVG de la couleur donnée
+  const r=size/2, pad=4, total=(n*(size+pad));
+  const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
+  svg.setAttribute('width',total); svg.setAttribute('height',size+6);
+  svg.style.cssText='display:block;margin:4px 0;';
+  for(let i=0;i<n;i++){
+    const cx=r+i*(size+pad), cy=r+3;
+    const c=document.createElementNS('http://www.w3.org/2000/svg','circle');
+    c.setAttribute('cx',cx);c.setAttribute('cy',cy);c.setAttribute('r',r-1);
+    c.setAttribute('fill',color);c.setAttribute('stroke','rgba(0,0,0,.18)');c.setAttribute('stroke-width','1.5');
+    // Reflet
+    const sh=document.createElementNS('http://www.w3.org/2000/svg','circle');
+    sh.setAttribute('cx',cx-r*.3);sh.setAttribute('cy',cy-r*.3);sh.setAttribute('r',r*.28);
+    sh.setAttribute('fill','rgba(255,255,255,.45)');
+    svg.appendChild(c);svg.appendChild(sh);
+  }
+  return svg;
+}
+
+function renderPerlesCount(zone,niv){
+  // Mode 4-6 ans : montre N perles, demande combien
+  const n=Math.floor(Math.random()*(niv.n1max))+1;
+  const color=PERLE_COLORS[(n-1)%9];
+
+  const card=document.createElement('div');
+  card.style.cssText='background:var(--cs,#f5f5f5);border-radius:16px;padding:20px;text-align:center;margin-bottom:16px;';
+
+  const title=document.createElement('div');
+  title.style.cssText='font-size:14px;font-weight:600;margin-bottom:12px;';
+  title.textContent='Combien de perles vois-tu ?';
+  card.appendChild(title);
+
+  const beadWrap=document.createElement('div');
+  beadWrap.style.cssText='display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:4px;margin:16px 0;min-height:48px;';
+  beadWrap.appendChild(_makeBeadSVG(n,color,36));
+  card.appendChild(beadWrap);
+
+  // Boutons réponse
+  const opts=document.createElement('div');
+  opts.style.cssText='display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:12px;';
+  const choices=new Set([n]);
+  while(choices.size<4){choices.add(Math.max(1,n+Math.floor(Math.random()*5)-2));}
+  [...choices].sort((a,b)=>a-b).forEach(c=>{
+    const b=document.createElement('button');
+    b.className='stab';
+    b.style.cssText='font-size:20px;font-weight:800;min-width:52px;min-height:52px;border-radius:12px;';
+    b.textContent=c;
+    b.onclick=()=>{
+      sndTap();
+      if(c===n){
+        _tablesState.perleScore++;_tablesState.perleStreak++;
+        sndOk&&sndOk();
+        b.style.background='#4CAF50';b.style.color='#fff';
+        const fb=document.createElement('div');
+        fb.style.cssText='margin-top:12px;font-size:15px;font-weight:700;color:#4CAF50;';
+        fb.textContent=`✅ Bravo ! ${n} perle${n>1?'s':''} ${PERLE_NAMES[n]||''}`;
+        card.appendChild(fb);
+        setTimeout(()=>{_tablesState.perleScore=_tablesState.perleScore;renderTables();},1400);
+      } else {
+        _tablesState.perleStreak=0;
+        sndWrong&&sndWrong();
+        b.style.background='#FF5252';b.style.color='#fff';
+        opts.querySelectorAll('button').forEach(x=>{if(+x.textContent===n){x.style.background='#4CAF50';x.style.color='#fff';}});
+        setTimeout(()=>renderTables(),1600);
+      }
+    };
+    opts.appendChild(b);
+  });
+  card.appendChild(opts);
+
+  // Score
+  const sc=document.createElement('div');
+  sc.style.cssText='margin-top:12px;font-size:13px;color:var(--ts,#888);';
+  sc.textContent=`Score : ${_tablesState.perleScore} ⭐ | Série : ${_tablesState.perleStreak} 🔥`;
+  card.appendChild(sc);
+  zone.appendChild(card);
+}
+
+function renderPerlesTens(zone,niv){
+  // Mode 6-7 ans : barres de 10 + unités, demande le total
+  const dizaines=Math.floor(Math.random()*(niv.n2max-1))+1;
+  const unites=Math.floor(Math.random()*9)+1;
+  const total=dizaines*10+unites;
+
+  const card=document.createElement('div');
+  card.style.cssText='background:var(--cs,#f5f5f5);border-radius:16px;padding:20px;text-align:center;margin-bottom:16px;';
+
+  card.innerHTML=`<div style="font-size:14px;font-weight:600;margin-bottom:12px;">Combien cela fait-il en tout ?</div>`;
+
+  const viz=document.createElement('div');
+  viz.style.cssText='display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:flex-end;margin:16px 0;';
+
+  // Barres de 10 (bleu doré Montessori)
+  for(let d=0;d<dizaines;d++){
+    const col=document.createElement('div');
+    col.style.cssText='display:flex;flex-direction:column;align-items:center;gap:1px;';
+    const lbl=document.createElement('div');lbl.style.cssText='font-size:9px;color:#888;margin-bottom:2px;';lbl.textContent='10';
+    col.appendChild(lbl);
+    col.appendChild(_makeBeadSVG(1,'#FFD700',28));
+    for(let i=1;i<10;i++) col.appendChild(_makeBeadSVG(1,'#1565C0',24));
+    viz.appendChild(col);
+  }
+  // Séparateur
+  const sep=document.createElement('div');
+  sep.style.cssText='width:2px;height:40px;background:rgba(0,0,0,.12);border-radius:2px;align-self:center;';
+  viz.appendChild(sep);
+  // Unités (perles rouges)
+  const uCol=document.createElement('div');
+  uCol.style.cssText='display:flex;flex-direction:column;align-items:center;gap:2px;';
+  const uLbl=document.createElement('div');uLbl.style.cssText='font-size:9px;color:#888;margin-bottom:2px;';uLbl.textContent=`+${unites}`;
+  uCol.appendChild(uLbl);
+  uCol.appendChild(_makeBeadSVG(unites,'#E53935',22));
+  viz.appendChild(uCol);
+
+  card.appendChild(viz);
+  card.innerHTML+=`<div style="font-size:13px;color:var(--ts,#888);margin-bottom:12px;">${dizaines} barre${dizaines>1?'s':''} de 10 + ${unites} perle${unites>1?'s':''} rouge${unites>1?'s':''}</div>`;
+
+  const opts=document.createElement('div');
+  opts.style.cssText='display:flex;flex-wrap:wrap;gap:10px;justify-content:center;';
+  const choices=new Set([total]);
+  while(choices.size<4){choices.add(Math.max(11,total+Math.floor(Math.random()*21)-10));}
+  [...choices].sort((a,b)=>a-b).forEach(c=>{
+    const b=document.createElement('button');
+    b.className='stab';
+    b.style.cssText='font-size:18px;font-weight:800;min-width:60px;min-height:48px;border-radius:12px;';
+    b.textContent=c;
+    b.onclick=()=>{
+      sndTap();
+      if(c===total){
+        _tablesState.perleScore++;_tablesState.perleStreak++;
+        sndOk&&sndOk();
+        b.style.background='#4CAF50';b.style.color='#fff';
+        const fb=document.createElement('div');
+        fb.style.cssText='margin-top:10px;font-size:14px;font-weight:700;color:#4CAF50;';
+        fb.textContent=`✅ ${dizaines}×10 + ${unites} = ${total} !`;
+        card.appendChild(fb);
+        setTimeout(()=>renderTables(),1400);
+      } else {
+        _tablesState.perleStreak=0;sndWrong&&sndWrong();
+        b.style.background='#FF5252';b.style.color='#fff';
+        opts.querySelectorAll('button').forEach(x=>{if(+x.textContent===total){x.style.background='#4CAF50';x.style.color='#fff';}});
+        setTimeout(()=>renderTables(),1600);
+      }
+    };
+    opts.appendChild(b);
+  });
+  card.appendChild(opts);
+
+  const sc=document.createElement('div');
+  sc.style.cssText='margin-top:12px;font-size:13px;color:var(--ts,#888);';
+  sc.textContent=`Score : ${_tablesState.perleScore} ⭐ | Série : ${_tablesState.perleStreak} 🔥`;
+  card.appendChild(sc);
+  zone.appendChild(card);
+}
+
+function renderPerlesMult(zone,niv){
+  // Mode 7-8 ans : grille de perles = n1 × n2
+  const maxN=Math.min(niv.n1max,9);
+  const n1=Math.floor(Math.random()*(maxN-1))+2;
+  const n2=Math.floor(Math.random()*(Math.min(niv.n2max,9)-1))+2;
+  const result=n1*n2;
+  const color=PERLE_COLORS[(n1-1)%9];
+
+  const card=document.createElement('div');
+  card.style.cssText='background:var(--cs,#f5f5f5);border-radius:16px;padding:20px;text-align:center;margin-bottom:16px;';
+
+  card.innerHTML=`<div style="font-size:15px;font-weight:700;margin-bottom:8px;">${n1} × ${n2} = ?</div>
+  <div style="font-size:12px;color:var(--ts,#888);margin-bottom:12px;">${n1} rangée${n1>1?'s':''} de ${n2} perles ${PERLE_NAMES[n2]||''}</div>`;
+
+  // Grille de perles
+  const grid=document.createElement('div');
+  grid.style.cssText='display:flex;flex-direction:column;align-items:center;gap:3px;margin:12px 0;';
+  for(let r=0;r<n1;r++){
+    const row=document.createElement('div');
+    row.style.cssText='display:flex;align-items:center;gap:2px;';
+    const lbl=document.createElement('span');
+    lbl.style.cssText='font-size:11px;color:var(--ts,#888);width:16px;text-align:right;margin-right:4px;';
+    lbl.textContent=r+1;
+    row.appendChild(lbl);
+    row.appendChild(_makeBeadSVG(n2,color,20));
+    grid.appendChild(row);
+  }
+  card.appendChild(grid);
+
+  // Choix
+  const opts=document.createElement('div');
+  opts.style.cssText='display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:12px;';
+  const choices=new Set([result]);
+  while(choices.size<4){
+    const delta=Math.floor(Math.random()*8)-4;
+    const c=Math.max(2,result+delta);
+    if(c!==result) choices.add(c);
+  }
+  [...choices].sort((a,b)=>a-b).forEach(c=>{
+    const b=document.createElement('button');
+    b.className='stab';
+    b.style.cssText='font-size:18px;font-weight:800;min-width:56px;min-height:48px;border-radius:12px;';
+    b.textContent=c;
+    b.onclick=()=>{
+      sndTap();
+      if(c===result){
+        _tablesState.perleScore++;_tablesState.perleStreak++;
+        sndOk&&sndOk();
+        b.style.background='#4CAF50';b.style.color='#fff';
+        const fb=document.createElement('div');
+        fb.style.cssText='margin-top:10px;font-size:15px;font-weight:700;color:#4CAF50;';
+        fb.innerHTML=`✅ ${n1} rangées × ${n2} perles = <strong>${result}</strong> perles !`;
+        card.appendChild(fb);
+        setTimeout(()=>renderTables(),1500);
+      } else {
+        _tablesState.perleStreak=0;sndWrong&&sndWrong();
+        b.style.background='#FF5252';b.style.color='#fff';
+        opts.querySelectorAll('button').forEach(x=>{if(+x.textContent===result){x.style.background='#4CAF50';x.style.color='#fff';}});
+        setTimeout(()=>renderTables(),1700);
+      }
+    };
+    opts.appendChild(b);
+  });
+  card.appendChild(opts);
+
+  const sc=document.createElement('div');
+  sc.style.cssText='margin-top:12px;font-size:13px;color:var(--ts,#888);';
+  sc.textContent=`Score : ${_tablesState.perleScore} ⭐ | Série : ${_tablesState.perleStreak} 🔥`;
+  card.appendChild(sc);
+  zone.appendChild(card);
+}
+
+// ─────────────────────────────────────────
 function renderVideos(items){
   const el=document.getElementById('elist');el.innerHTML='';
   const em={Animaux:'🐘',Science:'🔬',Espace:'🚀',Bricolage:'🔨',Chimie:'⚗️'};
