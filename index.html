@@ -12539,16 +12539,14 @@ function renderPrononcer(tabMeta){
   const feedbackZone=document.createElement('div');
   feedbackZone.id='prono-feedback';
   feedbackZone.style.cssText='text-align:center;min-height:60px;margin-bottom:16px;';
-  container.appendChild(feedbackZone);
 
   // ── Attempts indicator
   const attBar=document.createElement('div');
   attBar.id='prono-att';
   attBar.style.cssText='text-align:center;font-size:20px;margin-bottom:14px;letter-spacing:4px;';
   attBar.textContent='○'.repeat(3).split('').map((c,i)=>i<_pronoState.attempts?'●':c).join('');
-  container.appendChild(attBar);
 
-  // ── Boutons TTS + Micro
+  // ── Boutons TTS + Micro (insérés AVANT feedback/attBar)
   const btnRow=document.createElement('div');
   btnRow.style.cssText='display:flex;gap:12px;justify-content:center;margin-bottom:16px;';
 
@@ -12582,6 +12580,8 @@ function renderPrononcer(tabMeta){
   btnRow.appendChild(micBtn);
 
   container.appendChild(btnRow);
+  container.appendChild(feedbackZone);
+  container.appendChild(attBar);
 
   // ── Navigation mot précédent / suivant
   const navRow=document.createElement('div');
@@ -12687,7 +12687,7 @@ function showPronoResult(score,said,item,micBtn,feedbackZone,attBar){
 
   if(success){
     _pronoState.score++;
-    sndCorrect&&sndCorrect();
+    typeof sndCorrect!=="undefined"&&sndCorrect();
     feedbackZone.innerHTML=`
       <div style="text-align:center;padding:16px;background:linear-gradient(135deg,#06D6A0,#00B884);border-radius:16px;color:#fff;">
         <div style="font-size:36px;margin-bottom:4px;">✅</div>
@@ -12716,7 +12716,7 @@ function showPronoResult(score,said,item,micBtn,feedbackZone,attBar){
   } else {
     _pronoState.attempts++;
     const left=3-_pronoState.attempts;
-    sndWrong&&sndWrong();
+    typeof sndWrong!=="undefined"&&sndWrong();
     // Mise à jour des cercles d'essai
     if(attBar){
       attBar.textContent=Array.from({length:3},(_,i)=>i<_pronoState.attempts?'●':'○').join('');
@@ -12939,7 +12939,7 @@ function renderBatonnets(wrap){
   showBtn.onclick=()=>{
     const r=_tablesState.n1*_tablesState.n2;
     resDiv.innerHTML=`${_tablesState.n1} × ${_tablesState.n2} = <span style="color:var(--acc,#6C63FF);font-size:32px;">${r}</span> ✅`;
-    sndCorrect&&sndCorrect();
+    typeof sndCorrect!=="undefined"&&sndCorrect();
   };
   wrap.appendChild(showBtn);
 
@@ -13080,11 +13080,11 @@ function startPythaQuiz(container){
 function pythaAnswer(btn,val,rep,container){
   if(val===rep){
     btn.style.background='#4CAF50';btn.style.color='#fff';btn.style.borderColor='#4CAF50';
-    sndCorrect&&sndCorrect();
+    typeof sndCorrect!=="undefined"&&sndCorrect();
     setTimeout(()=>startPythaQuiz(container),1200);
   } else {
     btn.style.background='#E74C3C';btn.style.color='#fff';btn.style.borderColor='#E74C3C';
-    sndWrong&&sndWrong();
+    typeof sndWrong!=="undefined"&&sndWrong();
     btn.parentElement.querySelectorAll('button').forEach(b=>{if(+b.textContent===rep){b.style.background='#4CAF50';b.style.color='#fff';}});
     setTimeout(()=>startPythaQuiz(container),1800);
   }
@@ -13270,11 +13270,11 @@ function trachAns(btn,val,rep,container,n){
   const rule=TRACHTENBERG_RULES.find(r=>r.n===n)||TRACHTENBERG_RULES[2];
   if(val===rep){
     btn.style.background='#4CAF50';btn.style.color='#fff';btn.style.borderColor='#4CAF50';
-    sndCorrect&&sndCorrect();
+    typeof sndCorrect!=="undefined"&&sndCorrect();
     setTimeout(()=>startTrachTraining(container,rule),1200);
   } else {
     btn.style.background='#E74C3C';btn.style.color='#fff';btn.style.borderColor='#E74C3C';
-    sndWrong&&sndWrong();
+    typeof sndWrong!=="undefined"&&sndWrong();
     btn.parentElement.querySelectorAll('button').forEach(b=>{if(+b.textContent===rep){b.style.background='#4CAF50';b.style.color='#fff';}});
     setTimeout(()=>startTrachTraining(container,rule),1800);
   }
@@ -13363,7 +13363,7 @@ function flashAns(btn,val,rep,container,maxN){
   if(val===rep){
     btn.style.background='#4CAF50';btn.style.color='#fff';btn.style.borderColor='#4CAF50';
     _tablesState.score++;_tablesState.streak++;
-    sndCorrect&&sndCorrect();
+    typeof sndCorrect!=="undefined"&&sndCorrect();
     // Mettre à jour score affiché
     const sc=document.getElementById('flash-score');const st=document.getElementById('flash-streak');
     if(sc)sc.textContent=_tablesState.score;if(st)st.textContent=_tablesState.streak;
@@ -13371,7 +13371,7 @@ function flashAns(btn,val,rep,container,maxN){
   } else {
     btn.style.background='#E74C3C';btn.style.color='#fff';btn.style.borderColor='#E74C3C';
     _tablesState.streak=0;
-    sndWrong&&sndWrong();
+    typeof sndWrong!=="undefined"&&sndWrong();
     container.querySelectorAll('button').forEach(b=>{if(+b.textContent===rep){b.style.background='#4CAF50';b.style.color='#fff';}});
     setTimeout(()=>nextFlashQ(container,maxN),1500);
   }
@@ -13485,7 +13485,7 @@ function renderPerlesCount(zone,niv){
         setTimeout(()=>{_tablesState.perleScore=_tablesState.perleScore;renderTables();},1400);
       } else {
         _tablesState.perleStreak=0;
-        sndWrong&&sndWrong();
+        typeof sndWrong!=="undefined"&&sndWrong();
         b.style.background='#FF5252';b.style.color='#fff';
         opts.querySelectorAll('button').forEach(x=>{if(+x.textContent===n){x.style.background='#4CAF50';x.style.color='#fff';}});
         setTimeout(()=>renderTables(),1600);
@@ -13563,7 +13563,7 @@ function renderPerlesTens(zone,niv){
         card.appendChild(fb);
         setTimeout(()=>renderTables(),1400);
       } else {
-        _tablesState.perleStreak=0;sndWrong&&sndWrong();
+        _tablesState.perleStreak=0;typeof sndWrong!=="undefined"&&sndWrong();
         b.style.background='#FF5252';b.style.color='#fff';
         opts.querySelectorAll('button').forEach(x=>{if(+x.textContent===total){x.style.background='#4CAF50';x.style.color='#fff';}});
         setTimeout(()=>renderTables(),1600);
@@ -13635,7 +13635,7 @@ function renderPerlesMult(zone,niv){
         card.appendChild(fb);
         setTimeout(()=>renderTables(),1500);
       } else {
-        _tablesState.perleStreak=0;sndWrong&&sndWrong();
+        _tablesState.perleStreak=0;typeof sndWrong!=="undefined"&&sndWrong();
         b.style.background='#FF5252';b.style.color='#fff';
         opts.querySelectorAll('button').forEach(x=>{if(+x.textContent===result){x.style.background='#4CAF50';x.style.color='#fff';}});
         setTimeout(()=>renderTables(),1700);
