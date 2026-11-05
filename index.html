@@ -11836,6 +11836,31 @@ function buildHome(){
       }catch(e){console.error('buildHome mod card:',e);}
     });
     sc.appendChild(wrap);
+
+    // ── Bannière Nouveautés
+    const news=document.createElement('div');
+    news.style.cssText='margin-top:4px;border-radius:20px;overflow:hidden;box-shadow:var(--sh);';
+    news.innerHTML=`
+      <div style="background:linear-gradient(135deg,#FF6B35,#FFD166);padding:14px 18px;display:flex;align-items:center;gap:10px;cursor:pointer;"
+           onclick="sndTap();openMod('savoirs');setTimeout(()=>{document.querySelectorAll('.stab').forEach(b=>{if(b.textContent.includes('Tables'))b.click();});},300)">
+        <span style="font-size:36px;">🆕</span>
+        <div>
+          <div style="font-size:15px;font-weight:900;color:#fff;">✖️ Tables de multiplication</div>
+          <div style="font-size:12px;color:rgba(255,255,255,.9);margin-top:2px;">5 techniques visuelles : Bâtonnets japonais, Pythagore, Trachtenberg…</div>
+        </div>
+        <span style="color:rgba(255,255,255,.8);font-size:20px;margin-left:auto;">→</span>
+      </div>
+      <div style="background:linear-gradient(135deg,#FF9F1C,#FF6B35);padding:14px 18px;display:flex;align-items:center;gap:10px;cursor:pointer;"
+           onclick="sndTap();APP.langMode='prono';openMod('langues');">
+        <span style="font-size:36px;">🎤</span>
+        <div>
+          <div style="font-size:15px;font-weight:900;color:#fff;">Atelier Prononciation</div>
+          <div style="font-size:12px;color:rgba(255,255,255,.9);margin-top:2px;">Entraîne ta prononciation en Anglais, Espagnol, Allemand…</div>
+        </div>
+        <span style="color:rgba(255,255,255,.8);font-size:20px;margin-left:auto;">→</span>
+      </div>`;
+    sc.appendChild(news);
+
   }catch(e){console.error('buildHome modules:',e);toast('Erreur modules: '+e.message,'err');}
 }
 
@@ -12040,7 +12065,7 @@ const MCFG={
   logique:{emoji:'🧠',get title(){return t('m_logique');},desc:'Suites, intrus, compter, labyrinthes !',bg:'linear-gradient(135deg,#6C63FF,#9B93FF)',
     subcats:[{k:'suites',l:'🔁 Suites',d:DATA.suites},{k:'intrus',l:'🔍 Intrus',d:DATA.intrus},{k:'count',l:'🔢 Compter',d:DATA.denombrement},{k:'lab',l:'🗺️ Labyrinthes',d:DATA.labyrinthes}]},
   savoirs:{emoji:'📚',get title(){return t('m_sciences');},desc:'Maths · Géographie · Sciences · Histoire',bg:'linear-gradient(135deg,#FF6B6B,#FF9999)',
-    subcats:[{k:'maths',l:'🔢 Maths',d:DATA.maths},{k:'geo',l:'🌍 Géo',d:DATA.geo},{k:'sci',l:'🔬 Sciences',d:DATA.sciences},{k:'hist',l:'📜 Histoire',d:DATA.histoire}]},
+    subcats:[{k:'maths',l:'🔢 Maths',d:DATA.maths},{k:'tables',l:'✖️ Tables',d:[],isTables:true},{k:'geo',l:'🌍 Géo',d:DATA.geo},{k:'sci',l:'🔬 Sciences',d:DATA.sciences},{k:'hist',l:'📜 Histoire',d:DATA.histoire}]},
   politesse:{emoji:'🤝',get title(){return t('m_politesse');},desc:'Apprends les bonnes manières !',bg:'linear-gradient(135deg,#06D6A0,#00B884)',
     subcats:[{k:'pol',l:'🤝 Scénarios',d:DATA.politesse}]},
   defis:{emoji:'🏃',title:'Défis physiques',desc:'Lève-toi et bouge !',bg:'linear-gradient(135deg,#FFD166,#FFA500)',
@@ -12241,6 +12266,7 @@ function renderList(items,mod,tabMeta){
   if(mod==='recompenses'){renderVideos(items);return;}
   if(mod==='defis'){renderDefis(items);return;}
   if(mod==='langues'&&tabMeta&&tabMeta.isProno){renderPrononcer(tabMeta);return;}
+  if(mod==='savoirs'&&tabMeta&&tabMeta.isTables){renderTables();return;}
   const p=P();
   items=filterByAge(items, p?.age);
   items.forEach((item,idx)=>{
@@ -12585,6 +12611,491 @@ function showPronoResult(score,said,item,micBtn,feedbackZone,attBar){
         else if(window.speechSynthesis){const u=new SpeechSynthesisUtterance(item.mot);u.lang=langBcp[_pronoState.lang]||'en-GB';u.rate=0.80;speechSynthesis.speak(u);}
       },800);
     }
+  }
+}
+
+// ════════════════════════════════════════════
+// MODULE TABLES DE MULTIPLICATION
+// 5 techniques visuelles
+// ════════════════════════════════════════════
+let _tablesState={technique:'batonnets',op:'x',n1:2,n2:3,score:0,streak:0,flashIdx:0};
+
+function renderTables(){
+  const el=document.getElementById('elist');
+  el.innerHTML='';
+  const wrap=document.createElement('div');
+  wrap.style.cssText='padding:0 4px 80px;';
+
+  // ── Sélecteur de technique
+  const techniques=[
+    {k:'batonnets', l:'🎋 Bâtonnets', age:'6-9 ans'},
+    {k:'pythagore', l:'🏛️ Pythagore', age:'7-10 ans'},
+    {k:'histoires', l:'🧠 Histoires',  age:'7-11 ans'},
+    {k:'trachtenberg',l:'⚡ Trachtenberg',age:'10-15 ans'},
+    {k:'flash',     l:'🎯 Flash',      age:'8-15 ans'},
+  ];
+  const techBar=document.createElement('div');
+  techBar.style.cssText='display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;';
+  techniques.forEach(tk=>{
+    const b=document.createElement('button');
+    b.className='stab'+(tk.k===_tablesState.technique?' on':'');
+    b.innerHTML=`${tk.l} <span style="font-size:10px;opacity:.65;">${tk.age}</span>`;
+    b.onclick=()=>{
+      sndTap();
+      _tablesState.technique=tk.k;
+      _tablesState.score=0;_tablesState.streak=0;
+      renderTables();
+    };
+    techBar.appendChild(b);
+  });
+  wrap.appendChild(techBar);
+
+  // ── Dispatcher
+  const fn={batonnets:renderBatonnets,pythagore:renderPythagore,histoires:renderHistoires,trachtenberg:renderTrachtenberg,flash:renderFlash};
+  (fn[_tablesState.technique]||renderBatonnets)(wrap);
+
+  el.appendChild(wrap);
+}
+
+// ─────────────────────────────────────────
+// 1. BÂTONNETS JAPONAIS (lignes croisées)
+// ─────────────────────────────────────────
+function renderBatonnets(wrap){
+  const p=P();
+  const age=p?.age||8;
+  // Choix des facteurs selon l'âge
+  const maxN=age<=7?5:age<=9?9:12;
+
+  const intro=document.createElement('div');
+  intro.style.cssText='background:linear-gradient(135deg,#4CAF50,#2E7D32);color:#fff;border-radius:16px;padding:16px;margin-bottom:16px;font-size:14px;';
+  intro.innerHTML=`<strong>🎋 Méthode des bâtonnets japonais</strong><br>Dessine des lignes et compte leurs croisements — pas besoin de mémoriser !`;
+  wrap.appendChild(intro);
+
+  // Sélecteurs n1 × n2
+  const selRow=document.createElement('div');
+  selRow.style.cssText='display:flex;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap;justify-content:center;';
+
+  function mkSel(val,setter){
+    const s=document.createElement('select');
+    s.style.cssText='padding:8px 12px;border-radius:10px;border:2px solid var(--acc,#6C63FF);background:var(--bg);color:var(--fg);font-size:18px;font-weight:700;cursor:pointer;';
+    for(let i=1;i<=maxN;i++){const o=document.createElement('option');o.value=i;o.textContent=i;if(i===val)o.selected=true;s.appendChild(o);}
+    s.onchange=()=>{setter(+s.value);drawBatonnets();};
+    return s;
+  }
+
+  const s1=mkSel(_tablesState.n1,v=>_tablesState.n1=v);
+  const s2=mkSel(_tablesState.n2,v=>_tablesState.n2=v);
+  const lbl=document.createElement('span');lbl.style.cssText='font-size:28px;font-weight:900;';lbl.textContent='×';
+  selRow.appendChild(s1);selRow.appendChild(lbl);selRow.appendChild(s2);
+  wrap.appendChild(selRow);
+
+  // Canvas SVG pour les bâtonnets
+  const svgWrap=document.createElement('div');
+  svgWrap.id='batonnets-svg';
+  svgWrap.style.cssText='text-align:center;margin-bottom:16px;';
+  wrap.appendChild(svgWrap);
+
+  // Résultat
+  const resDiv=document.createElement('div');
+  resDiv.id='batonnets-res';
+  resDiv.style.cssText='text-align:center;font-size:22px;font-weight:900;min-height:40px;';
+  wrap.appendChild(resDiv);
+
+  // Bouton montrer résultat
+  const showBtn=document.createElement('button');
+  showBtn.style.cssText='display:block;margin:12px auto;padding:12px 28px;border-radius:14px;border:none;background:var(--acc,#6C63FF);color:#fff;font-size:16px;font-weight:700;cursor:pointer;';
+  showBtn.textContent='Voir le résultat';
+  showBtn.onclick=()=>{
+    const r=_tablesState.n1*_tablesState.n2;
+    resDiv.innerHTML=`${_tablesState.n1} × ${_tablesState.n2} = <span style="color:var(--acc,#6C63FF);font-size:32px;">${r}</span> ✅`;
+    sndCorrect&&sndCorrect();
+  };
+  wrap.appendChild(showBtn);
+
+  // Explication pas à pas
+  const expDiv=document.createElement('div');
+  expDiv.style.cssText='background:var(--bg2,#f5f5f5);border-radius:14px;padding:14px;font-size:13px;color:var(--tl);margin-top:12px;';
+  expDiv.innerHTML=`<strong>Comment ça marche ?</strong><br>
+    1️⃣ Trace <strong>${_tablesState.n1}</strong> ligne(s) diagonale(s) de gauche à droite (↗)<br>
+    2️⃣ Trace <strong>${_tablesState.n2}</strong> ligne(s) diagonale(s) de droite à gauche (↘)<br>
+    3️⃣ Compte tous les points de croisement = la réponse !`;
+  wrap.appendChild(expDiv);
+
+  drawBatonnets();
+
+  function drawBatonnets(){
+    const n1=_tablesState.n1, n2=_tablesState.n2;
+    const W=Math.min(300,window.innerWidth-60), H=220;
+    const gap1=Math.min(30,Math.floor((W-60)/(n1+1)));
+    const gap2=Math.min(30,Math.floor((H-60)/(n2+1)));
+    let svg=`<svg width="${W}" height="${H}" style="background:var(--bg);border-radius:12px;border:2px solid var(--acc,#6C63FF)20;">`;
+    // Lignes groupe 1 (↗ : bas-gauche → haut-droite)
+    for(let i=0;i<n1;i++){
+      const x1=20+i*gap1; const y1=H-20;
+      const x2=x1+60; const y2=20;
+      svg+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#4CAF50" stroke-width="3" stroke-linecap="round"/>`;
+    }
+    // Lignes groupe 2 (↘ : haut-gauche → bas-droite)
+    for(let j=0;j<n2;j++){
+      const y1=20+j*gap2;
+      const x1=10; const x2=W-10; const y2=y1+60;
+      svg+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#E91E63" stroke-width="3" stroke-linecap="round"/>`;
+    }
+    // Points d'intersection (calculés)
+    for(let i=0;i<n1;i++){
+      for(let j=0;j<n2;j++){
+        // Intersection approximative des 2 familles de lignes
+        const x=25+i*gap1+j*(60/(n2||1));
+        const y=20+j*gap2+(n1-i-1)*(H/(n1*2||1));
+        svg+=`<circle cx="${Math.min(x,W-10)}" cy="${Math.min(y,H-10)}" r="5" fill="#FF9800" stroke="#fff" stroke-width="1.5"/>`;
+      }
+    }
+    svg+=`<text x="${W/2}" y="${H-4}" text-anchor="middle" fill="var(--tl)" font-size="11">${n1*n2} intersection${n1*n2>1?'s':''}</text>`;
+    svg+='</svg>';
+    svgWrap.innerHTML=svg;
+    resDiv.innerHTML='';
+  }
+}
+
+// ─────────────────────────────────────────
+// 2. GRILLE DE PYTHAGORE
+// ─────────────────────────────────────────
+function renderPythagore(wrap){
+  const intro=document.createElement('div');
+  intro.style.cssText='background:linear-gradient(135deg,#2196F3,#0D47A1);color:#fff;border-radius:16px;padding:16px;margin-bottom:16px;font-size:14px;';
+  intro.innerHTML=`<strong>🏛️ Table de Pythagore</strong><br>Clique sur une case pour voir la multiplication. Repère les patterns de couleur !`;
+  wrap.appendChild(intro);
+
+  const size=10;
+  const colors=['','#FF6B6B','#FF9800','#FFD166','#4CAF50','#00BCD4','#2196F3','#9C27B0','#E91E63','#795548','#607D8B'];
+
+  const tbl=document.createElement('div');
+  tbl.style.cssText='overflow-x:auto;';
+  let html='<table style="border-collapse:collapse;font-size:clamp(10px,2.5vw,15px);margin:0 auto;">';
+
+  // En-tête
+  html+='<tr><th style="width:28px;height:28px;"></th>';
+  for(let j=1;j<=size;j++) html+=`<th style="width:28px;height:28px;text-align:center;color:var(--tl);font-weight:700;">×${j}</th>`;
+  html+='</tr>';
+
+  for(let i=1;i<=size;i++){
+    html+=`<tr><th style="text-align:center;color:var(--tl);font-weight:700;padding:2px 4px;">×${i}</th>`;
+    for(let j=1;j<=size;j++){
+      const val=i*j;
+      const col=colors[i]||'#999';
+      const alpha=0.15+(j/size)*0.4;
+      html+=`<td onclick="this.style.background='${col}';this.style.color='#fff';this.style.fontWeight='900';sndTap&&sndTap();"
+        title="${i}×${j}=${val}"
+        style="text-align:center;cursor:pointer;border-radius:6px;padding:3px;border:1px solid var(--bg2,#eee);
+               background:${col}${Math.round(alpha*255).toString(16).padStart(2,'0')};
+               color:var(--fg);transition:all .2s;">${val}</td>`;
+    }
+    html+='</tr>';
+  }
+  html+='</table>';
+  tbl.innerHTML=html;
+  wrap.appendChild(tbl);
+
+  const tip=document.createElement('div');
+  tip.style.cssText='margin-top:14px;font-size:13px;color:var(--tl);text-align:center;';
+  tip.innerHTML='💡 Remarque : chaque ligne a sa couleur. Et <strong>3×7 = 7×3</strong> — la grille est symétrique !';
+  wrap.appendChild(tip);
+
+  // Quiz rapide sous la grille
+  const qDiv=document.createElement('div');
+  qDiv.style.cssText='margin-top:16px;';
+  startPythaQuiz(qDiv);
+  wrap.appendChild(qDiv);
+}
+
+function startPythaQuiz(container){
+  const a=Math.floor(Math.random()*9)+2, b=Math.floor(Math.random()*9)+2;
+  const rep=a*b;
+  const wrong1=rep+(Math.floor(Math.random()*3)+1)*(Math.random()<.5?1:-1);
+  const wrong2=rep+(Math.floor(Math.random()*5)+3)*(Math.random()<.5?1:-1);
+  const choices=[rep,Math.abs(wrong1)||rep+2,Math.abs(wrong2)||rep+3].sort(()=>Math.random()-.5);
+  container.innerHTML=`
+    <div style="background:var(--bg2,#f5f5f5);border-radius:14px;padding:14px;text-align:center;">
+      <div style="font-size:22px;font-weight:900;margin-bottom:12px;">${a} × ${b} = ?</div>
+      <div style="display:flex;gap:8px;justify-content:center;">
+        ${choices.map(c=>`<button onclick="pythaAnswer(this,${c},${rep},this.parentElement.parentElement.parentElement)" style="padding:12px 20px;border-radius:12px;border:2px solid var(--acc,#6C63FF);background:transparent;color:var(--fg);font-size:18px;font-weight:700;cursor:pointer;">${c}</button>`).join('')}
+      </div>
+    </div>`;
+}
+function pythaAnswer(btn,val,rep,container){
+  if(val===rep){
+    btn.style.background='#4CAF50';btn.style.color='#fff';btn.style.borderColor='#4CAF50';
+    sndCorrect&&sndCorrect();
+    setTimeout(()=>startPythaQuiz(container),1200);
+  } else {
+    btn.style.background='#E74C3C';btn.style.color='#fff';btn.style.borderColor='#E74C3C';
+    sndWrong&&sndWrong();
+    btn.parentElement.querySelectorAll('button').forEach(b=>{if(+b.textContent===rep){b.style.background='#4CAF50';b.style.color='#fff';}});
+    setTimeout(()=>startPythaQuiz(container),1800);
+  }
+}
+
+// ─────────────────────────────────────────
+// 3. HISTOIRES MNÉMOTECHNIQUES
+// ─────────────────────────────────────────
+const HISTOIRES_MULTI={
+  '6x6':{img:'🎲🎲',story:'Six et six ont joué aux dés et trouvé **36** faces !'},
+  '6x7':{img:'🎸🎵',story:'Six guitaristes jouent 7 notes et composent **42** mélodies !'},
+  '6x8':{img:'🦷🦷',story:'Six dentistes voient 8 patients — **48** dents examinées !'},
+  '7x7':{img:'🌈✨',story:'Sept fées dansent 7 tours et créent **49** étoiles !'},
+  '7x8':{img:'🧊🌊',story:'Sept icebergs fondent en 8 jours — **56** flaques d\'eau !'},
+  '8x8':{img:'♟️♟️',story:'Huit rois ont 8 tours sur un échiquier : **64** cases !'},
+  '8x9':{img:'🍕🍕',story:'Huit pizzaïolos font 9 pizzas chacun — **72** pizzas !'},
+  '9x9':{img:'🏆🥇',story:'Neuf champions courent 9 tours — **81** mètres de gloire !'},
+  '6x9':{img:'🎯🎯',story:'Six archers lancent 9 flèches — **54** cibles atteintes !'},
+  '7x9':{img:'🌙⭐',story:'Sept nuits, 9 étoiles chaque nuit — **63** étoiles au total !'},
+  '3x7':{img:'🌸🌸',story:'Trois fées plantent 7 fleurs chacune — **21** fleurs dans le jardin !'},
+  '4x8':{img:'🦋🌺',story:'Quatre papillons visitent 8 fleurs — **32** pétales effleurés !'},
+  '5x6':{img:'⭐🌟',story:'Cinq héros ont 6 pouvoirs chacun — **30** super-pouvoirs !'},
+  '5x7':{img:'🐝🌼',story:'Cinq ruches ont 7 abeilles — **35** bourdonnements !'},
+  '5x8':{img:'🦅🌊',story:'Cinq aigles volent 8 heures — **40** heures de vol total !'},
+  '4x6':{img:'🎪🎠',story:'Quatre manèges tournent 6 fois — **24** tours de magie !'},
+  '4x7':{img:'🌊🐠',story:'Quatre plongeurs voient 7 poissons chacun — **28** poissons !'},
+  '3x8':{img:'🎸🎶',story:'Trois rockeurs jouent 8 chansons — **24** rappels réclamés !'},
+};
+
+function renderHistoires(wrap){
+  const intro=document.createElement('div');
+  intro.style.cssText='background:linear-gradient(135deg,#9C27B0,#4A148C);color:#fff;border-radius:16px;padding:16px;margin-bottom:16px;font-size:14px;';
+  intro.innerHTML=`<strong>🧠 Histoires mnémotechniques</strong><br>Une image et une histoire pour ne plus jamais oublier !`;
+  wrap.appendChild(intro);
+
+  // Toutes les paires disponibles
+  const pairs=Object.keys(HISTOIRES_MULTI).map(k=>{
+    const [a,b]=k.split('x').map(Number);
+    return {k,a,b,...HISTOIRES_MULTI[k]};
+  }).sort(()=>Math.random()-.5);
+
+  let currentIdx=0;
+
+  const card=document.createElement('div');
+  card.style.cssText='background:var(--bg2,#f5f5f5);border-radius:20px;padding:24px;text-align:center;margin-bottom:14px;min-height:180px;';
+  wrap.appendChild(card);
+
+  const nav=document.createElement('div');
+  nav.style.cssText='display:flex;gap:10px;justify-content:center;flex-wrap:wrap;';
+  const prevBtn=document.createElement('button');
+  prevBtn.style.cssText='padding:10px 20px;border-radius:12px;border:1.5px solid var(--tl);background:transparent;color:var(--fg);cursor:pointer;';
+  prevBtn.textContent='← Précédent';
+  prevBtn.onclick=()=>{sndTap();currentIdx=(currentIdx-1+pairs.length)%pairs.length;showHist();};
+  const nextBtn=document.createElement('button');
+  nextBtn.style.cssText='padding:10px 20px;border-radius:12px;border:none;background:var(--acc,#6C63FF);color:#fff;font-size:14px;font-weight:700;cursor:pointer;';
+  nextBtn.textContent='Suivant →';
+  nextBtn.onclick=()=>{sndTap();currentIdx=(currentIdx+1)%pairs.length;showHist();};
+  nav.appendChild(prevBtn);nav.appendChild(nextBtn);
+  wrap.appendChild(nav);
+
+  function showHist(){
+    const h=pairs[currentIdx];
+    card.innerHTML=`
+      <div style="font-size:48px;margin-bottom:8px;">${h.img}</div>
+      <div style="font-size:28px;font-weight:900;margin-bottom:12px;">${h.a} × ${h.b} = <span style="color:var(--acc,#6C63FF);">${h.a*h.b}</span></div>
+      <div style="font-size:15px;line-height:1.6;color:var(--tl);">${h.story.replace(/\*\*(\d+)\*\*/g,'<strong style="color:var(--acc,#6C63FF);font-size:18px;">$1</strong>')}</div>
+      <div style="font-size:11px;color:var(--tl);margin-top:8px;opacity:.6;">${currentIdx+1} / ${pairs.length}</div>
+    `;
+  }
+  showHist();
+}
+
+// ─────────────────────────────────────────
+// 4. MÉTHODE TRACHTENBERG
+// ─────────────────────────────────────────
+const TRACHTENBERG_RULES=[
+  {n:2, title:'× 2', age:'8+ ans', rule:'Double chaque chiffre (retenue si >9)',
+   steps:['Prends chaque chiffre de droite à gauche','Double-le','Si > 9, garde les unités et retiens 1'],
+   ex:[{q:'23 × 2',a:'46',expl:'2×2=4, 2×3=6'},{q:'47 × 2',a:'94',expl:'2×7=14→4 retiens 1, 2×4+1=9'},{q:'56 × 2',a:'112',expl:'2×6=12→2 retiens 1, 2×5+1=11'}]},
+  {n:5, title:'× 5', age:'8+ ans', rule:'La moitié du suivant + 5 si le chiffre est impair',
+   steps:['Regarde chaque chiffre','Prends la moitié du chiffre suivant (sans virgule)','Si le chiffre actuel est impair, ajoute 5'],
+   ex:[{q:'24 × 5',a:'120',expl:'2÷2=1, 4÷2=2, 0 → 120'},{q:'13 × 5',a:'65',expl:'1 impair→+5=6, 3 impair→+5+0=5'},{q:'38 × 5',a:'190',expl:'3÷2=1+5=6→non: 3×5=15, 8×5=40 → 190'}]},
+  {n:9, title:'× 9', age:'9+ ans', rule:'(10 - chiffre) pour les unités, (chiffre voisin - 1) pour les dizaines',
+   steps:['Unités : 10 − chiffre','Dizaines : chiffre précédent − 1','Exemple : 7×9 → unités = 10−7=3, dizaines = chiffre avant (0) + 1 = 6 → 63'],
+   ex:[{q:'7 × 9',a:'63',expl:'10−7=3 (unités), 7−1=6 (dizaines) → 63'},{q:'8 × 9',a:'72',expl:'10−8=2, 8−1=7 → 72'},{q:'6 × 9',a:'54',expl:'10−6=4, 6−1=5 → 54'}]},
+  {n:11, title:'× 11', age:'9+ ans', rule:'Ajoute chaque chiffre à son voisin de droite',
+   steps:['Recopie le chiffre des unités','Additionne chaque paire de chiffres adjacents','Recopie le premier chiffre'],
+   ex:[{q:'23 × 11',a:'253',expl:'3 | 2+3=5 | 2 → 253'},{q:'45 × 11',a:'495',expl:'5 | 4+5=9 | 4 → 495'},{q:'57 × 11',a:'627',expl:'7 | 5+7=12 (2 retiens 1) | 5+1=6 → 627'}]},
+  {n:12, title:'× 12', age:'10+ ans', rule:'Double le chiffre + le voisin de droite',
+   steps:['Pour chaque chiffre : double-le','Ajoute le chiffre à sa droite','Gère les retenues'],
+   ex:[{q:'23 × 12',a:'276',expl:'3×2=6 | 2×2+3=7 | 2×1=2 → 276'},{q:'14 × 12',a:'168',expl:'4×2=8 | 1×2+4=6 | 1×1=1 → 168'},{q:'35 × 12',a:'420',expl:'5×2=10 | 3×2+5+1=12 | 3+1=4 → 420'}]},
+];
+
+function renderTrachtenberg(wrap){
+  const intro=document.createElement('div');
+  intro.style.cssText='background:linear-gradient(135deg,#FF6B35,#FF9F1C);color:#fff;border-radius:16px;padding:16px;margin-bottom:16px;font-size:14px;';
+  intro.innerHTML=`<strong>⚡ Méthode Trachtenberg</strong><br>Des astuces inventées dans un camp de prisonniers pour calculer à la vitesse de l'éclair !`;
+  wrap.appendChild(intro);
+
+  if(!_tablesState.trachtN)_tablesState.trachtN=9;
+
+  // Sélecteur de table
+  const selRow=document.createElement('div');
+  selRow.style.cssText='display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;';
+  TRACHTENBERG_RULES.forEach(r=>{
+    const b=document.createElement('button');
+    b.className='stab'+(r.n===_tablesState.trachtN?' on':'');
+    b.innerHTML=`${r.title} <span style="font-size:10px;opacity:.65;">${r.age}</span>`;
+    b.onclick=()=>{sndTap();_tablesState.trachtN=r.n;renderTables();};
+    selRow.appendChild(b);
+  });
+  wrap.appendChild(selRow);
+
+  const rule=TRACHTENBERG_RULES.find(r=>r.n===_tablesState.trachtN)||TRACHTENBERG_RULES[2];
+
+  // Règle
+  const ruleCard=document.createElement('div');
+  ruleCard.style.cssText='background:linear-gradient(135deg,#FF6B3515,#FF9F1C15);border:2px solid #FF9F1C40;border-radius:16px;padding:16px;margin-bottom:14px;';
+  ruleCard.innerHTML=`<div style="font-weight:800;font-size:16px;margin-bottom:10px;">📋 La règle :</div>
+    <div style="font-size:14px;color:var(--fg);font-style:italic;margin-bottom:10px;">"${rule.rule}"</div>
+    <div style="font-size:13px;color:var(--tl);">${rule.steps.map((s,i)=>`<div style="margin-bottom:4px;">➤ ${s}</div>`).join('')}</div>`;
+  wrap.appendChild(ruleCard);
+
+  // Exemples
+  const exDiv=document.createElement('div');
+  exDiv.style.cssText='margin-bottom:14px;';
+  exDiv.innerHTML='<div style="font-weight:700;margin-bottom:8px;">✏️ Exemples :</div>';
+  rule.ex.forEach(ex=>{
+    const d=document.createElement('div');
+    d.style.cssText='background:var(--bg2,#f5f5f5);border-radius:12px;padding:12px 14px;margin-bottom:8px;';
+    d.innerHTML=`<div style="font-size:18px;font-weight:800;">${ex.q} = <span style="color:var(--acc,#6C63FF);">${ex.a}</span></div>
+      <div style="font-size:12px;color:var(--tl);margin-top:4px;">${ex.expl}</div>`;
+    exDiv.appendChild(d);
+  });
+  wrap.appendChild(exDiv);
+
+  // Entraînement
+  const trainDiv=document.createElement('div');
+  trainDiv.id='trach-train';
+  startTrachTraining(trainDiv,rule);
+  wrap.appendChild(trainDiv);
+}
+
+function startTrachTraining(container,rule){
+  const a=Math.floor(Math.random()*9)+2;
+  const rep=a*rule.n;
+  const w1=rep+(Math.floor(Math.random()*4)+1)*(Math.random()<.5?1:-1);
+  const w2=rep+(Math.floor(Math.random()*7)+3)*(Math.random()<.5?1:-1);
+  const choices=[rep,Math.abs(w1)||rep+2,Math.abs(w2)||rep+5].sort(()=>Math.random()-.5);
+  container.innerHTML=`
+    <div style="background:var(--bg2,#f5f5f5);border-radius:14px;padding:16px;text-align:center;">
+      <div style="font-size:13px;color:var(--tl);margin-bottom:4px;">Applique la règle :</div>
+      <div style="font-size:26px;font-weight:900;margin-bottom:14px;">${a} × ${rule.n} = ?</div>
+      <div style="display:flex;gap:8px;justify-content:center;">
+        ${choices.map(c=>`<button onclick="trachAns(this,${c},${rep},this.closest('#trach-train'),${rule.n})" style="padding:12px 18px;border-radius:12px;border:2px solid var(--acc,#6C63FF);background:transparent;color:var(--fg);font-size:18px;font-weight:700;cursor:pointer;">${c}</button>`).join('')}
+      </div>
+    </div>`;
+}
+function trachAns(btn,val,rep,container,n){
+  const rule=TRACHTENBERG_RULES.find(r=>r.n===n)||TRACHTENBERG_RULES[2];
+  if(val===rep){
+    btn.style.background='#4CAF50';btn.style.color='#fff';btn.style.borderColor='#4CAF50';
+    sndCorrect&&sndCorrect();
+    setTimeout(()=>startTrachTraining(container,rule),1200);
+  } else {
+    btn.style.background='#E74C3C';btn.style.color='#fff';btn.style.borderColor='#E74C3C';
+    sndWrong&&sndWrong();
+    btn.parentElement.querySelectorAll('button').forEach(b=>{if(+b.textContent===rep){b.style.background='#4CAF50';b.style.color='#fff';}});
+    setTimeout(()=>startTrachTraining(container,rule),1800);
+  }
+}
+
+// ─────────────────────────────────────────
+// 5. FLASH CHRONO
+// ─────────────────────────────────────────
+function renderFlash(wrap){
+  const p=P();
+  const age=p?.age||9;
+  const maxN=age<=8?6:age<=10?10:12;
+
+  const intro=document.createElement('div');
+  intro.style.cssText='background:linear-gradient(135deg,#E91E63,#880E4F);color:#fff;border-radius:16px;padding:16px;margin-bottom:16px;font-size:14px;';
+  intro.innerHTML=`<strong>🎯 Flash Chrono</strong><br>Réponds le plus vite possible ! Score : <strong id="flash-score">${_tablesState.score}</strong> | Série : <strong id="flash-streak">${_tablesState.streak}</strong> 🔥`;
+  wrap.appendChild(intro);
+
+  // Op selector
+  const opRow=document.createElement('div');
+  opRow.style.cssText='display:flex;gap:8px;margin-bottom:14px;justify-content:center;';
+  [{k:'x',l:'✖️ ×'},{k:'/',l:'➗ ÷'},{k:'mix',l:'🔀 Mix'}].forEach(op=>{
+    const b=document.createElement('button');
+    b.className='stab'+(op.k===_tablesState.op?' on':'');
+    b.textContent=op.l;
+    b.onclick=()=>{sndTap();_tablesState.op=op.k;_tablesState.score=0;_tablesState.streak=0;renderTables();};
+    opRow.appendChild(b);
+  });
+  wrap.appendChild(opRow);
+
+  const qDiv=document.createElement('div');
+  qDiv.id='flash-q';
+  wrap.appendChild(qDiv);
+
+  nextFlashQ(qDiv,maxN);
+}
+
+function nextFlashQ(container,maxN){
+  const isDiv=_tablesState.op==='/'||(_tablesState.op==='mix'&&Math.random()<.4);
+  let a,b,rep,qStr;
+  if(isDiv){
+    b=Math.floor(Math.random()*(maxN-1))+2;
+    rep=Math.floor(Math.random()*(maxN-1))+1;
+    a=b*rep;
+    qStr=`${a} ÷ ${b}`;
+  } else {
+    a=Math.floor(Math.random()*(maxN-1))+2;
+    b=Math.floor(Math.random()*(maxN-1))+2;
+    rep=a*b;
+    qStr=`${a} × ${b}`;
+  }
+  const w1=rep+(Math.floor(Math.random()*4)+1)*(Math.random()<.5?1:-1);
+  const w2=rep+(Math.floor(Math.random()*7)+3)*(Math.random()<.5?1:-1);
+  const choices=[rep,Math.abs(w1)||rep+2,Math.abs(w2)||rep-2<1?rep+6:rep-2].sort(()=>Math.random()-.5);
+
+  // Timer
+  let timeLeft=10;
+  let timerEl;
+
+  container.innerHTML=`
+    <div style="text-align:center;padding:20px;background:var(--bg2,#f5f5f5);border-radius:20px;">
+      <div id="flash-timer" style="font-size:13px;color:var(--tl);margin-bottom:6px;">⏱ <span id="flash-t">${timeLeft}</span>s</div>
+      <div style="font-size:36px;font-weight:900;margin-bottom:16px;">${qStr} = ?</div>
+      <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
+        ${choices.map(c=>`<button onclick="flashAns(this,${c},${rep},this.closest('#flash-q'),${maxN})" style="padding:14px 22px;border-radius:14px;border:2px solid var(--acc,#6C63FF);background:var(--bg);color:var(--fg);font-size:20px;font-weight:700;cursor:pointer;min-width:70px;">${c}</button>`).join('')}
+      </div>
+    </div>`;
+
+  // Countdown
+  const tEl=container.querySelector('#flash-t');
+  timerEl=setInterval(()=>{
+    timeLeft--;
+    if(tEl)tEl.textContent=timeLeft;
+    if(timeLeft<=0){
+      clearInterval(timerEl);
+      _tablesState.streak=0;
+      container.querySelectorAll('button').forEach(b=>{b.disabled=true;if(+b.textContent===rep)b.style.background='#4CAF50';});
+      setTimeout(()=>nextFlashQ(container,maxN),1500);
+    }
+  },1000);
+  container._timer=timerEl;
+}
+
+function flashAns(btn,val,rep,container,maxN){
+  if(container._timer)clearInterval(container._timer);
+  if(val===rep){
+    btn.style.background='#4CAF50';btn.style.color='#fff';btn.style.borderColor='#4CAF50';
+    _tablesState.score++;_tablesState.streak++;
+    sndCorrect&&sndCorrect();
+    // Mettre à jour score affiché
+    const sc=document.getElementById('flash-score');const st=document.getElementById('flash-streak');
+    if(sc)sc.textContent=_tablesState.score;if(st)st.textContent=_tablesState.streak;
+    setTimeout(()=>nextFlashQ(container,maxN),900);
+  } else {
+    btn.style.background='#E74C3C';btn.style.color='#fff';btn.style.borderColor='#E74C3C';
+    _tablesState.streak=0;
+    sndWrong&&sndWrong();
+    container.querySelectorAll('button').forEach(b=>{if(+b.textContent===rep){b.style.background='#4CAF50';b.style.color='#fff';}});
+    setTimeout(()=>nextFlashQ(container,maxN),1500);
   }
 }
 
