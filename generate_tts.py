@@ -13,7 +13,7 @@ from pathlib import Path
 # ══════════════════════════════════════════
 API_KEY = "sk_e920c195b03adac355923ab26527d2d48af72105260a0c00"
 VOICE_ID_FR = "GFj5Qf6cNQ3Lgp8VKBwc"   # Olivier (FR)
-VOICE_ID_EN = "9mF01VTvwaxuBPjm0hMu"   # Charlie Horse (EN)
+VOICE_ID_EN = "uDsPstFWFBUXjIBimV7s"   # Mr Claus (EN) — tel quel
 OUTPUT_DIR = Path("audio/fr")
 MANIFEST_FILE = Path("audio/manifest.json")
 INDEX_HTML = Path("index.html")

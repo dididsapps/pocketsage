@@ -16,9 +16,9 @@ import re, json, os, time
 from pathlib import Path
 
 API_KEY       = "sk_e920c195b03adac355923ab26527d2d48af72105260a0c00"
-VOICE_EN = "9mF01VTvwaxuBPjm0hMu"   # Charlie Horse (EN)
+VOICE_EN = "uDsPstFWFBUXjIBimV7s"   # Mr Claus (EN) — tel quel
 VOICE_ES = "GFj5Qf6cNQ3Lgp8VKBwc"   # Olivier (FR) — fallback, à remplacer par voix ES
-VOICE_DE = "GFj5Qf6cNQ3Lgp8VKBwc"   # idem DE
+VOICE_DE = "CP1kYQLB8eBoe8TavZvQ"   # Nicholas Santa (DE) — tel quel
 
 R2_ACCESS_KEY  = "de8421ae8c94c53e50ffcea2febc93e8"
 R2_SECRET_KEY  = "727932fe1e71c86c9e249479ce2207063867960858be8b3241ac515990a2ca28"
@@ -93,7 +93,7 @@ def google_tts(text, lang_bcp, out_path):
     r = requests.post(
         f"https://texttospeech.googleapis.com/v1/text:synthesize?key={api_key}",
         json={"input": {"text": text}, "voice": {"languageCode": lang_bcp, "ssmlGender": "NEUTRAL"},
-              "audioConfig": {"audioEncoding": "MP3", "speakingRate": 0.9}},
+              "audioConfig": {"audioEncoding": "MP3", "speakingRate": 0.85}},
         timeout=20)
     if r.status_code == 200:
         import base64

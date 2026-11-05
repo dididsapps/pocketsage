@@ -62,8 +62,8 @@ def text_to_speech_google(text: str, lang_code: str, api_key: str, output_path: 
         },
         "audioConfig": {
             "audioEncoding": "MP3",
-            "speakingRate": 0.9,
-            "pitch": 0.0,
+            "speakingRate": 0.85,
+            "pitch": -2.0,
         }
     }
     url = f"https://texttospeech.googleapis.com/v1/text:synthesize?key={api_key}"

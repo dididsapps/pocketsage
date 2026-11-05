@@ -2,7 +2,7 @@
 """
 PocketSage — Génération MP3 Prononciation
 ==========================================
-GS/CP/CE1/CE2  → ElevenLabs (EN: Charlie Horse, ES/DE: voix multilingual)
+GS/CP/CE1/CE2  → ElevenLabs (EN: Mr Claus, DE: Nicholas Santa) | ES+autres → Google TTS
 CM1+ (niv 3-4) → Google Cloud TTS Neural2
 
 Langues : EN (audio/en/), ES (audio/es/), DE (audio/de/)
@@ -23,9 +23,9 @@ from pathlib import Path
 # CONFIG — clés & voix
 # ═══════════════════════════════════════════════════
 EL_API_KEY   = "sk_e920c195b03adac355923ab26527d2d48af72105260a0c00"
-EL_VOICE_EN  = "9mF01VTvwaxuBPjm0hMu"   # Charlie Horse (EN)
-EL_VOICE_ES  = "jsCqWAovK2LkecY7zXl4"   # Liam — multilingual (ES/DE fallback)
-EL_VOICE_DE  = "jsCqWAovK2LkecY7zXl4"   # idem
+EL_VOICE_EN  = "uDsPstFWFBUXjIBimV7s"   # Mr Claus (EN) — tel quel
+# ES → Google TTS (pas ElevenLabs)
+EL_VOICE_DE  = "CP1kYQLB8eBoe8TavZvQ"   # Nicholas Santa (DE) — tel quel
 
 # Google TTS Neural2 — mêmes réglages que generate_tts_google.py
 GOOGLE_VOICE = {
@@ -129,7 +129,7 @@ def google_tts(text, lang, api_key, out_path):
         json={
             "input": {"text": text},
             "voice": {"languageCode": cfg["languageCode"], "name": cfg["name"]},
-            "audioConfig": {"audioEncoding": "MP3", "speakingRate": 0.9, "pitch": 0.0}
+            "audioConfig": {"audioEncoding": "MP3", "speakingRate": 0.85, "pitch": -2.0}
         },
         timeout=20
     )

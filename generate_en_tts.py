@@ -2,7 +2,7 @@
 """
 PocketSage Academy - ElevenLabs TTS Generator (English)
 Génère les MP3 pour les questions GS→CE2 type Anglais
-Voix: Olivier EN (9mF01VTvwaxuBPjm0hMu)
+Voix: Mr Claus (uDsPstFWFBUXjIBimV7s) — tel quel
 
 Usage:
   python3 generate_en_tts.py
@@ -19,7 +19,7 @@ import requests
 
 # ── Configuration ──────────────────────────────────────────────────────────────
 ELEVENLABS_API_KEY = "sk_e920c195b03adac355923ab26527d2d48af72105260a0c00"
-VOICE_ID = "9mF01VTvwaxuBPjm0hMu"  # Olivier EN
+VOICE_ID = "uDsPstFWFBUXjIBimV7s"  # Mr Claus (EN) — tel quel
 OUTPUT_DIR = "audio/en"
 INDEX_PATH = "index.html"
 
