@@ -982,7 +982,22 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
       <button class="native-b" data-nat="IT">🇮🇹 Italien</button>
       <button class="native-b" data-nat="ZH">🇨🇳 Chinois</button>
       <button class="native-b" data-nat="PT">🇧🇷 Portugais</button>
-      <button class="native-b" data-nat="OT">🌐 Autre</button>
+      <button class="native-b" data-nat="OT" onclick="toggleOtherNatives(this)">🌐 Autre ▾</button>
+    </div>
+    <!-- Langues maternelles "Autres" — masquées par défaut -->
+    <div class="native-g native-g-other" id="native-g-other" style="display:none;margin-top:6px">
+      <button class="native-b" data-nat="RU">🇷🇺 Russe</button>
+      <button class="native-b" data-nat="UK">🇺🇦 Ukrainien</button>
+      <button class="native-b" data-nat="PL">🇵🇱 Polonais</button>
+      <button class="native-b" data-nat="RO">🇷🇴 Roumain</button>
+      <button class="native-b" data-nat="BG">🇧🇬 Bulgare</button>
+      <button class="native-b" data-nat="CS">🇨🇿 Tchèque</button>
+      <button class="native-b" data-nat="SK">🇸🇰 Slovaque</button>
+      <button class="native-b" data-nat="HR">🇭🇷 Croate</button>
+      <button class="native-b" data-nat="SR">🇷🇸 Serbe</button>
+      <button class="native-b" data-nat="HU">🇭🇺 Hongrois</button>
+      <button class="native-b" data-nat="TR">🇹🇷 Turc</button>
+      <button class="native-b" data-nat="FA">🇮🇷 Persan</button>
     </div>
   </div>
   
@@ -995,7 +1010,10 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
       <button class="lang-b" data-lang="DE">🇩🇪 Allemand</button>
       <button class="lang-b" data-lang="AR">🇸🇦 Arabe</button>
       <button class="lang-b" data-lang="IT">🇮🇹 Italien</button>
-      <button class="lang-b" data-lang="ZH">🇨🇳 Chinois</button><button class="lang-b" data-lang="RU">🇷🇺 Russe</button><button class="lang-b" data-lang="UK">🇺🇦 Ukrainien</button>
+      <button class="lang-b" data-lang="ZH">🇨🇳 Chinois</button>
+      <button class="lang-b" data-lang="PT">🇧🇷 Portugais</button>
+      <button class="lang-b" data-lang="RU">🇷🇺 Russe</button>
+      <button class="lang-b" data-lang="UK">🇺🇦 Ukrainien</button>
     </div>
   </div>
 
@@ -9297,442 +9315,13 @@ ES:[
 {id:"ES-LY-009",classe:"Lycée",cat:"🇪🇸",enonce:"La 'polifonía' bakhtinienne dans 'Don Quijote' : en quoi ce roman est-il 'polyphonique' ?",rep:"Plusieurs voix autonomes coexistent sans qu'une seule ne domine",choix:["Plusieurs voix autonomes coexistent sans qu'une seule ne domine","Un seul narrateur omniscient domine tout","La voix de Don Quichotte est la seule importante"],diff:5,hint:"Bakhtine : dans le roman dialogique, les personnages ont leur propre vérité."},
 {id:"ES-LY-010",classe:"Lycée",cat:"🇪🇸",enonce:"'La muerte del autor' (Roland Barthes) appliquée à 'Cien años de soledad' : que cela implique-t-il ?",rep:"L'œuvre dépasse l'intention de García Márquez — le lecteur crée le sens",choix:["L'œuvre dépasse l'intention de García Márquez — le lecteur crée le sens","García Márquez est mort et son œuvre n'a plus d'importance","Le contexte biographique est essentiel à la compréhension"],diff:5,hint:"Barthes 1968 : interpréter l'œuvre sans chercher l'intention de l'auteur."}
 ],
-DE:[
-{id:"DE-001",type:"Allemand",enonce:"'Bonjour' en allemand ?",rep:"Guten Tag",choix:["Guten Tag","Danke","Bitte"],diff:1,age:"4-7",hint:"Guten=bon, Tag=jour"},
-{id:"DE-002",type:"Allemand",enonce:"'Merci' en allemand ?",rep:"Danke",choix:["Bitte","Danke","Ja"],diff:1,age:"4-7",hint:"Danke schön !"},
-{id:"DE-003",type:"Allemand",enonce:"'Das Wasser' = ?",rep:"L'eau",choix:["Le feu","L'eau","La terre"],diff:1,age:"6-9",hint:"Comme 'water' en anglais !"},
-{id:"DE-004",type:"Allemand",enonce:"'1' en allemand ?",rep:"Eins",choix:["Eins","Zwei","Drei"],diff:1,age:"5-8",hint:"1=Eins, 2=Zwei, 3=Drei !"},
-{id:"DE-006",type:"Allemand",enonce:"Comment dit-on \'merci\' en allemand ?",rep:"Danke",choix:["Danke","Bitte","Nein"],diff:1,age:"4-7",hint:"Danke sonne comme \'dan-ke\'"},
-{id:"DE-007",type:"Allemand",enonce:"Que signifie \'Hund\' en français ?",rep:"Chien",choix:["Chien","Chat","Oiseau"],diff:1,age:"4-7",hint:"Hund ressemble à \'hound\' en anglais"},
-{id:"DE-008",type:"Allemand",enonce:"Comment dit-on \'eau\' en allemand ?",rep:"Wasser",choix:["Wasser","Milch","Brot"],diff:1,age:"4-7",hint:"Wasser ressemble à \'water\' en anglais"},
-{id:"DE-009",type:"Allemand",enonce:"Que veut dire \'Eins, Zwei, Drei\' ?",rep:"Un, Deux, Trois",choix:["Un, Deux, Trois","Quatre, Cinq, Six","Sept, Huit, Neuf"],diff:1,age:"4-7",hint:"Eins=1, Zwei=2, Drei=3"},
-{id:"DE-010",type:"Allemand",enonce:"Comment dit-on \'au revoir\' en allemand ?",rep:"Auf Wiedersehen",choix:["Auf Wiedersehen","Guten Morgen","Danke schön"],diff:2,age:"7-10",hint:"Auf=à, Wieder=revoir, Sehen=voir"},
-{id:"DE-011",type:"Allemand",enonce:"Quel est le genre de \'Tisch\' (table) en allemand ?",rep:"Masculin (der)",choix:["Masculin (der)","Féminin (die)","Neutre (das)"],diff:2,age:"7-10",hint:"Der Tisch — le genre doit être mémorisé avec le mot"},
-{id:"DE-012",type:"Allemand",enonce:"Comment dit-on \'Je m\'appelle...\' en allemand ?",rep:"Ich heiße...",choix:["Ich heiße...","Ich bin...","Mein Name..."],diff:2,age:"7-10",hint:"Heiße vient du verbe heißen (s\'appeler)"},
-{id:"DE-013",type:"Allemand",enonce:"Quelle est la capitale de l\'Allemagne ?",rep:"Berlin",choix:["Berlin","Munich","Hambourg"],diff:1,age:"7-10",hint:"C\'est aussi la plus grande ville du pays"},
-{id:"DE-014",type:"Allemand",enonce:"Conjuguez \'haben\' (avoir) à la 1ère personne du singulier.",rep:"ich habe",choix:["ich habe","ich bin","ich kann"],diff:2,age:"10-13",hint:"Haben=avoir, ich=je → ich habe"},
-{id:"DE-015",type:"Allemand",enonce:"Quel cas grammatical est utilisé après la préposition \'mit\' ?",rep:"Datif",choix:["Datif","Accusatif","Nominatif"],diff:3,age:"10-13",hint:"mit, nach, bei, seit, von, zu, aus, bei → toujours datif"}
-],
-AR:[
-{id:"AR-001",type:"Arabe",enonce:"'Bonjour' en arabe ?",rep:"Marhaba مرحبا",choix:["Marhaba مرحبا","Shukran شكرا","Salaam سلام"],diff:1,age:"5-8",hint:"Mar-ha-ba !"},
-{id:"AR-002",type:"Arabe",enonce:"'Merci' en arabe ?",rep:"Shukran شكرا",choix:["Marhaba","Shukran شكرا","Inshallah"],diff:1,age:"5-8",hint:"Shouk-ran !"},
-{id:"AR-003",type:"Arabe",enonce:"'1' en arabe ?",rep:"Wahid واحد",choix:["Wahid واحد","Ithnayn اثنان","Thalatha ثلاثة"],diff:2,age:"6-9",hint:"Wa-hid !"},
-{id:"AR-004",type:"Arabe",enonce:"'Qamar قمر' = ?",rep:"La lune",choix:["Le soleil","La lune","L'étoile"],diff:2,age:"6-9",hint:"La nuit, on voit le Qamar !"},
-{id:"AR-005",type:"Arabe",enonce:"Dans quel sens lit-on l\'arabe ?",rep:"De droite à gauche",choix:["De droite à gauche","De gauche à droite","De haut en bas"],diff:1,age:"4-7",hint:"L\'arabe, l\'hébreu et le persan s\'écrivent de droite à gauche"},
-{id:"AR-006",type:"Arabe",enonce:"Comment dit-on \'eau\' en arabe ?",rep:"Ma\' (ماء)",choix:["Ma\' (ماء)","Khubz (خبز)","Laban (لبن)"],diff:1,age:"7-10",hint:"Ma\' est un mot très ancien présent dans beaucoup de langues"},
-{id:"AR-007",type:"Arabe",enonce:"Combien de lettres compte l\'alphabet arabe ?",rep:"28 lettres",choix:["28 lettres","22 lettres","30 lettres"],diff:2,age:"7-10",hint:"Les voyelles courtes ne sont généralement pas écrites"},
-{id:"AR-008",type:"Arabe",enonce:"Comment dit-on \'bonne nuit\' en arabe ?",rep:"Tisbah \'ala khayr (تصبح على خير)",choix:["Tisbah \'ala khayr (تصبح على خير)","Masa\' al-khayr (مساء الخير)","Sabah al-khayr (صباح الخير)"],diff:2,age:"7-10",hint:"Tisbah=\'que tu te réveilles\', khayr=bien"},
-{id:"AR-009",type:"Arabe",enonce:"Que signifie \'Inshallah (إن شاء الله)\' littéralement ?",rep:"Si Dieu le veut",choix:["Si Dieu le veut","Dieu est grand","Grâce à Dieu"],diff:2,age:"10-13",hint:"In=si, sha\'a=a voulu, Allah=Dieu"},
-{id:"AR-010",type:"Arabe",enonce:"Comment dit-on \'Je ne comprends pas\' en arabe ?",rep:"La afham (لا أفهم)",choix:["La afham (لا أفهم)","La a\'rif (لا أعرف)","La astati\' (لا أستطيع)"],diff:3,age:"10-13",hint:"La=ne...pas, afham=je comprends → négation directe"},
-{id:"AR-011",type:"Arabe",enonce:"Quelle est la racine du mot \'kitab (كتاب)\' (livre) ?",rep:"K-T-B (كتب) — écrire",choix:["K-T-B (كتب) — écrire","Q-R-\' (قرأ) — lire","D-R-S (درس) — étudier"],diff:3,age:"10-13",hint:"La racine K-T-B donne aussi maktaba (bibliothèque) et kataba (il a écrit)"}
-],
-PT:[
-{id:"PT-005",type:"Portugais",enonce:"Comment dit-on \'merci\' en portugais ?",rep:"Obrigado",choix:["Obrigado","Por favor","De nada"],diff:1,age:"4-7",hint:"Obrigado pour un garçon, Obrigada pour une fille"},
-{id:"PT-006",type:"Portugais",enonce:"Que veut dire \'gato\' en français ?",rep:"Chat",choix:["Chat","Chien","Cheval"],diff:1,age:"4-7",hint:"Gato ressemble au mot en espagnol"},
-{id:"PT-007",type:"Portugais",enonce:"Comment dit-on \'eau\' en portugais ?",rep:"Água",choix:["Água","Leite","Pão"],diff:1,age:"4-7",hint:"Água — le tilde sur le \'a\' change la prononciation"},
-{id:"PT-008",type:"Portugais",enonce:"Comment dit-on \'au revoir\' en portugais ?",rep:"Tchau",choix:["Tchau","Até logo","Boa noite"],diff:1,age:"7-10",hint:"Tchau vient de l\'italien \'ciao\'"},
-{id:"PT-009",type:"Portugais",enonce:"Que signifie \'eu falo português\' ?",rep:"Je parle portugais",choix:["Je parle portugais","J\'apprends le portugais","Je comprends le portugais"],diff:2,age:"7-10",hint:"eu=je, falo=je parle, português=portugais"},
-{id:"PT-010",type:"Portugais",enonce:"Quel pays a le portugais comme langue officielle en Amérique du Sud ?",rep:"Brésil",choix:["Brésil","Argentine","Colombie"],diff:1,age:"7-10",hint:"C\'est le plus grand pays d\'Amérique du Sud"},
-{id:"PT-011",type:"Portugais",enonce:"Comment dit-on \'Combien ça coûte ?\' en portugais ?",rep:"Quanto custa?",choix:["Quanto custa?","Onde fica?","Como se chama?"],diff:2,age:"10-13",hint:"Quanto=combien, custa=coûte"},
-{id:"PT-012",type:"Portugais",enonce:"Conjuguez \'ser\' (être permanent) à la 1ère personne du singulier.",rep:"eu sou",choix:["eu sou","eu estou","eu tenho"],diff:2,age:"10-13",hint:"Ser exprime une qualité permanente : eu sou français"},
-{id:"PT-013",type:"Portugais",enonce:"Quelle est la différence entre \'ser\' et \'estar\' ?",rep:"Ser = état permanent, Estar = état temporaire",choix:["Ser = état permanent, Estar = état temporaire","Ser = lieu, Estar = identité","Ser = action, Estar = description"],diff:3,age:"10-13",hint:"Sou médecin (ser) / Estou cansado (estar — fatigué maintenant)"}
-],
-IT:[
-{id:"IT-001",type:"Italien",enonce:"'Bonjour' en italien ?",rep:"Ciao / Buongiorno",choix:["Ciao / Buongiorno","Grazie","Prego"],diff:1,age:"4-7",hint:"Ciao ça sonne pareil !"},
-{id:"IT-002",type:"Italien",enonce:"'Merci' en italien ?",rep:"Grazie",choix:["Grazie","Prego","Scusi"],diff:1,age:"4-7",hint:"Gra-zie !"},
-{id:"IT-003",type:"Italien",enonce:"'Il sole' = ?",rep:"Le soleil",choix:["La lune","Le soleil","La mer"],diff:1,age:"5-8",hint:"Sole → soleil !"},
-{id:"IT-004",type:"Italien",enonce:"'5' en italien ?",rep:"Cinque",choix:["Quattro","Cinque","Sei"],diff:1,age:"5-8",hint:"1=uno 2=due 3=tre 4=quattro 5=?"},
-{id:"IT-002",type:"Italien",enonce:"Comment dit-on 'au revoir' en italien ?",rep:"Arrivederci",choix:["Arrivederci","Addio","Adios"],diff:1,age:"4-7",hint:"Un mot long, commence par Arr !"},
-{id:"IT-003",type:"Italien",enonce:"Comment dit-on 'merci' en italien ?",rep:"Grazie",choix:["Grazie","Gracias","Danke"],diff:1,age:"4-7",hint:"Ça commence par Gr !"},
-{id:"IT-004",type:"Italien",enonce:"Comment dit-on 's'il vous plaît' en italien ?",rep:"Per favore",choix:["Per favore","Por favor","Bitte"],diff:1,age:"4-7",hint:"Deux mots, commence par Per !"},
-{id:"IT-005",type:"Italien",enonce:"Comment dit-on 'oui' en italien ?",rep:"Sì",choix:["Sì","Sí","Ja"],diff:1,age:"4-7",hint:"Très court avec un accent !"},
-{id:"IT-006",type:"Italien",enonce:"Comment dit-on 'non' en italien ?",rep:"No",choix:["No","Non","Nein"],diff:1,age:"4-7",hint:"Presque pareil qu'en français !"},
-{id:"IT-007",type:"Italien",enonce:"Comment dit-on 'un' en italien ?",rep:"Uno",choix:["Uno","Una","Unum"],diff:1,age:"4-7",hint:"Ressemble au jeu de cartes !"},
-{id:"IT-008",type:"Italien",enonce:"Comment dit-on 'deux' en italien ?",rep:"Due",choix:["Due","Dos","Zwei"],diff:1,age:"4-7",hint:"3 lettres, commence par D !"},
-{id:"IT-009",type:"Italien",enonce:"Comment dit-on 'trois' en italien ?",rep:"Tre",choix:["Tre","Tres","Drei"],diff:1,age:"4-7",hint:"3 lettres, commence par T !"},
-{id:"IT-010",type:"Italien",enonce:"Comment dit-on 'quatre' en italien ?",rep:"Quattro",choix:["Quattro","Cuatro","Vier"],diff:1,age:"4-7",hint:"Ça commence par Qu !"},
-{id:"IT-011",type:"Italien",enonce:"Comment dit-on 'cinq' en italien ?",rep:"Cinque",choix:["Cinque","Cinco","Fünf"],diff:1,age:"4-7",hint:"Ça commence par Ci !"},
-{id:"IT-012",type:"Italien",enonce:"Comment dit-on 'six' en italien ?",rep:"Sei",choix:["Sei","Seis","Sechs"],diff:1,age:"4-7",hint:"3 lettres, commence par S !"},
-{id:"IT-013",type:"Italien",enonce:"Comment dit-on 'sept' en italien ?",rep:"Sette",choix:["Sette","Siete","Sieben"],diff:1,age:"4-7",hint:"Ça commence par Se !"},
-{id:"IT-014",type:"Italien",enonce:"Comment dit-on 'huit' en italien ?",rep:"Otto",choix:["Otto","Ocho","Acht"],diff:1,age:"4-7",hint:"Ça commence par O !"},
-{id:"IT-015",type:"Italien",enonce:"Comment dit-on 'neuf' en italien ?",rep:"Nove",choix:["Nove","Nueve","Neun"],diff:1,age:"4-7",hint:"Ça commence par No !"},
-{id:"IT-016",type:"Italien",enonce:"Comment dit-on 'dix' en italien ?",rep:"Dieci",choix:["Dieci","Diez","Zehn"],diff:1,age:"4-7",hint:"Ça commence par Di !"},
-{id:"IT-017",type:"Italien",enonce:"Comment dit-on 'rouge' en italien ?",rep:"Rosso",choix:["Rosso","Rojo","Rot"],diff:1,age:"4-7",hint:"Ça commence par Ros !"},
-{id:"IT-018",type:"Italien",enonce:"Comment dit-on 'bleu' en italien ?",rep:"Blu",choix:["Blu","Azul","Blau"],diff:1,age:"4-7",hint:"Très court, 3 lettres !"},
-{id:"IT-019",type:"Italien",enonce:"Comment dit-on 'vert' en italien ?",rep:"Verde",choix:["Verde","Vert","Grün"],diff:1,age:"4-7",hint:"Proche du mot français !"},
-{id:"IT-020",type:"Italien",enonce:"Comment dit-on 'jaune' en italien ?",rep:"Giallo",choix:["Giallo","Amarillo","Gelb"],diff:1,age:"4-7",hint:"Ça commence par Gi !"},
-{id:"IT-021",type:"Italien",enonce:"Comment dit-on 'noir' en italien ?",rep:"Nero",choix:["Nero","Negro","Schwarz"],diff:1,age:"4-7",hint:"Ça commence par N !"},
-{id:"IT-022",type:"Italien",enonce:"Comment dit-on 'blanc' en italien ?",rep:"Bianco",choix:["Bianco","Blanco","Weiß"],diff:1,age:"4-7",hint:"Ça commence par Bi !"},
-{id:"IT-023",type:"Italien",enonce:"Comment dit-on 'orange' en italien ?",rep:"Arancione",choix:["Arancione","Naranja","Orange"],diff:1,age:"4-7",hint:"Ça commence par Ar !"},
-{id:"IT-024",type:"Italien",enonce:"Comment dit-on 'rose' en italien ?",rep:"Rosa",choix:["Rosa","Rose","Pink"],diff:1,age:"4-7",hint:"Presque pareil qu'en français !"},
-{id:"IT-025",type:"Italien",enonce:"Comment dit-on 'violet' en italien ?",rep:"Viola",choix:["Viola","Morado","Lila"],diff:1,age:"4-7",hint:"Ça commence par Vi !"},
-{id:"IT-026",type:"Italien",enonce:"Comment dit-on 'chat' en italien ?",rep:"Gatto",choix:["Gatto","Gato","Katze"],diff:1,age:"4-7",hint:"Ça commence par G !"},
-{id:"IT-027",type:"Italien",enonce:"Comment dit-on 'chien' en italien ?",rep:"Cane",choix:["Cane","Perro","Hund"],diff:1,age:"4-7",hint:"Ça commence par C !"},
-{id:"IT-028",type:"Italien",enonce:"Comment dit-on 'oiseau' en italien ?",rep:"Uccello",choix:["Uccello","Pájaro","Vogel"],diff:1,age:"4-7",hint:"Ça commence par U !"},
-{id:"IT-029",type:"Italien",enonce:"Comment dit-on 'poisson' en italien ?",rep:"Pesce",choix:["Pesce","Pez","Fisch"],diff:1,age:"4-7",hint:"Ça commence par Pe !"},
-{id:"IT-030",type:"Italien",enonce:"Comment dit-on 'cheval' en italien ?",rep:"Cavallo",choix:["Cavallo","Caballo","Pferd"],diff:1,age:"4-7",hint:"Ça commence par Ca !"},
-{id:"IT-031",type:"Italien",enonce:"Comment dit-on 'vache' en italien ?",rep:"Mucca",choix:["Mucca","Vaca","Kuh"],diff:1,age:"4-7",hint:"Ça commence par Mu !"},
-{id:"IT-032",type:"Italien",enonce:"Comment dit-on 'lapin' en italien ?",rep:"Coniglio",choix:["Coniglio","Conejo","Hase"],diff:1,age:"4-7",hint:"Ça commence par C !"},
-{id:"IT-033",type:"Italien",enonce:"Comment dit-on 'lion' en italien ?",rep:"Leone",choix:["Leone","León","Löwe"],diff:1,age:"4-7",hint:"Presque comme en français !"},
-{id:"IT-034",type:"Italien",enonce:"Comment dit-on 'éléphant' en italien ?",rep:"Elefante",choix:["Elefante","Elephant","Elefant"],diff:1,age:"4-7",hint:"Proche du mot français !"},
-{id:"IT-035",type:"Italien",enonce:"Comment dit-on 'maman' en italien ?",rep:"Mamma",choix:["Mamma","Mamá","Mutter"],diff:1,age:"4-7",hint:"Avec deux m !"},
-{id:"IT-036",type:"Italien",enonce:"Comment dit-on 'papa' en italien ?",rep:"Papà",choix:["Papà","Papá","Vater"],diff:1,age:"4-7",hint:"Presque pareil avec un accent !"},
-{id:"IT-037",type:"Italien",enonce:"Comment dit-on 'frère' en italien ?",rep:"Fratello",choix:["Fratello","Hermano","Bruder"],diff:1,age:"4-7",hint:"Ça commence par Fr !"},
-{id:"IT-038",type:"Italien",enonce:"Comment dit-on 'sœur' en italien ?",rep:"Sorella",choix:["Sorella","Hermana","Schwester"],diff:1,age:"4-7",hint:"Ça commence par So !"},
-{id:"IT-039",type:"Italien",enonce:"Comment dit-on 'grand-père' en italien ?",rep:"Nonno",choix:["Nonno","Abuelo","Opa"],diff:1,age:"4-7",hint:"Avec deux n !"},
-{id:"IT-040",type:"Italien",enonce:"Comment dit-on 'grand-mère' en italien ?",rep:"Nonna",choix:["Nonna","Abuela","Oma"],diff:1,age:"4-7",hint:"Presque comme 'nonno' !"},
-{id:"IT-041",type:"Italien",enonce:"Comment dit-on 'pomme' en italien ?",rep:"Mela",choix:["Mela","Manzana","Apfel"],diff:1,age:"4-7",hint:"Ça commence par Me !"},
-{id:"IT-042",type:"Italien",enonce:"Comment dit-on 'banane' en italien ?",rep:"Banana",choix:["Banana","Plátano","Banane"],diff:1,age:"4-7",hint:"Presque pareil qu'en français !"},
-{id:"IT-043",type:"Italien",enonce:"Comment dit-on 'pain' en italien ?",rep:"Pane",choix:["Pane","Pan","Brot"],diff:1,age:"4-7",hint:"Ça commence par Pa !"},
-{id:"IT-044",type:"Italien",enonce:"Comment dit-on 'lait' en italien ?",rep:"Latte",choix:["Latte","Leche","Milch"],diff:1,age:"4-7",hint:"Comme la boisson dans les cafés !"},
-{id:"IT-045",type:"Italien",enonce:"Comment dit-on 'eau' en italien ?",rep:"Acqua",choix:["Acqua","Agua","Wasser"],diff:1,age:"4-7",hint:"Ça commence par Ac !"},
-{id:"IT-046",type:"Italien",enonce:"Comment dit-on 'pizza' en italien ?",rep:"Pizza",choix:["Pizza","Pizze","Pizzas"],diff:1,age:"4-7",hint:"Pareil qu'en français !"},
-{id:"IT-047",type:"Italien",enonce:"Comment dit-on 'pâtes' en italien ?",rep:"Pasta",choix:["Pasta","Paste","Nudeln"],diff:1,age:"4-7",hint:"Ça commence par Pa !"},
-{id:"IT-048",type:"Italien",enonce:"Comment dit-on 'fromage' en italien ?",rep:"Formaggio",choix:["Formaggio","Queso","Käse"],diff:1,age:"4-7",hint:"Ça commence par For !"},
-{id:"IT-049",type:"Italien",enonce:"Comment dit-on 'tête' en italien ?",rep:"Testa",choix:["Testa","Cabeza","Kopf"],diff:1,age:"4-7",hint:"Ça commence par Te !"},
-{id:"IT-050",type:"Italien",enonce:"Comment dit-on 'main' en italien ?",rep:"Mano",choix:["Mano","Main","Hand"],diff:1,age:"4-7",hint:"Pareil qu'en espagnol !"},
-{id:"IT-051",type:"Italien",enonce:"Comment dit-on 'pied' en italien ?",rep:"Piede",choix:["Piede","Pie","Fuß"],diff:1,age:"4-7",hint:"Ça commence par Pi !"},
-{id:"IT-052",type:"Italien",enonce:"Comment dit-on 'œil' en italien ?",rep:"Occhio",choix:["Occhio","Ojo","Auge"],diff:1,age:"4-7",hint:"Ça commence par Oc !"},
-{id:"IT-053",type:"Italien",enonce:"Comment dit-on 'nez' en italien ?",rep:"Naso",choix:["Naso","Nariz","Nase"],diff:1,age:"4-7",hint:"Ça commence par Na !"},
-{id:"IT-054",type:"Italien",enonce:"Comment dit-on 'bouche' en italien ?",rep:"Bocca",choix:["Bocca","Boca","Mund"],diff:1,age:"4-7",hint:"Ça commence par B !"},
-{id:"IT-055",type:"Italien",enonce:"Comment dit-on 'maison' en italien ?",rep:"Casa",choix:["Casa","Maison","Haus"],diff:1,age:"4-7",hint:"Pareil qu'en espagnol !"},
-{id:"IT-056",type:"Italien",enonce:"Comment dit-on 'école' en italien ?",rep:"Scuola",choix:["Scuola","Escuela","Schule"],diff:1,age:"4-7",hint:"Ça commence par Sc !"},
-{id:"IT-057",type:"Italien",enonce:"Comment dit-on 'livre' en italien ?",rep:"Libro",choix:["Libro","Livre","Buch"],diff:1,age:"4-7",hint:"Pareil qu'en espagnol !"},
-{id:"IT-058",type:"Italien",enonce:"Comment dit-on 'crayon' en italien ?",rep:"Matita",choix:["Matita","Lápiz","Stift"],diff:2,age:"4-7",hint:"Ça commence par Ma !"},
-{id:"IT-059",type:"Italien",enonce:"Comment dit-on 'soleil' en italien ?",rep:"Sole",choix:["Sole","Sol","Sonne"],diff:1,age:"4-7",hint:"Ça commence par So !"},
-{id:"IT-060",type:"Italien",enonce:"Comment dit-on 'lune' en italien ?",rep:"Luna",choix:["Luna","Lune","Mond"],diff:1,age:"4-7",hint:"Pareil qu'en espagnol !"},
-{id:"IT-061",type:"Italien",enonce:"Comment dit-on 'étoile' en italien ?",rep:"Stella",choix:["Stella","Estrella","Stern"],diff:1,age:"4-7",hint:"Ça commence par St !"},
-{id:"IT-062",type:"Italien",enonce:"Comment dit-on 'arbre' en italien ?",rep:"Albero",choix:["Albero","Árbol","Baum"],diff:1,age:"4-7",hint:"Ça commence par Al !"},
-{id:"IT-063",type:"Italien",enonce:"Comment dit-on 'fleur' en italien ?",rep:"Fiore",choix:["Fiore","Flor","Blume"],diff:1,age:"4-7",hint:"Ça commence par Fi !"},
-{id:"IT-064",type:"Italien",enonce:"Comment dit-on 'manger' en italien ?",rep:"Mangiare",choix:["Mangiare","Comer","Essen"],diff:1,age:"4-7",hint:"Ça commence par Man !"},
-{id:"IT-065",type:"Italien",enonce:"Comment dit-on 'boire' en italien ?",rep:"Bere",choix:["Bere","Beber","Trinken"],diff:1,age:"4-7",hint:"Très court, 4 lettres !"},
-{id:"IT-066",type:"Italien",enonce:"Comment dit-on 'dormir' en italien ?",rep:"Dormire",choix:["Dormire","Dormir","Schlafen"],diff:1,age:"4-7",hint:"Proche du mot français !"},
-{id:"IT-067",type:"Italien",enonce:"Comment dit-on 'jouer' en italien ?",rep:"Giocare",choix:["Giocare","Jugar","Spielen"],diff:1,age:"4-7",hint:"Ça commence par Gi !"},
-{id:"IT-068",type:"Italien",enonce:"Comment dit-on 'courir' en italien ?",rep:"Correre",choix:["Correre","Correr","Laufen"],diff:1,age:"4-7",hint:"Ça commence par Cor !"},
-{id:"IT-069",type:"Italien",enonce:"Comment dit-on 'chanter' en italien ?",rep:"Cantare",choix:["Cantare","Cantar","Singen"],diff:1,age:"4-7",hint:"Ça commence par Can !"},
-{id:"IT-070",type:"Italien",enonce:"Comment dit-on 'petit' en italien ?",rep:"Piccolo",choix:["Piccolo","Pequeño","Klein"],diff:1,age:"4-7",hint:"Ça commence par Pi !"},
-{id:"IT-071",type:"Italien",enonce:"Comment dit-on 'grand' en italien ?",rep:"Grande",choix:["Grande","Groß","Gran"],diff:1,age:"4-7",hint:"Proche du mot français !"},
-{id:"IT-072",type:"Italien",enonce:"Comment dit-on 'ami' en italien ?",rep:"Amico",choix:["Amico","Amigo","Freund"],diff:1,age:"4-7",hint:"Ça commence par Am !"},
-{id:"IT-073",type:"Italien",enonce:"Comment dit-on 'bébé' en italien ?",rep:"Bambino",choix:["Bambino","Bebé","Baby"],diff:1,age:"4-7",hint:"Ça commence par Ba !"},
-{id:"IT-074",type:"Italien",enonce:"Comment dit-on 'chaud' en italien ?",rep:"Caldo",choix:["Caldo","Caliente","Heiß"],diff:1,age:"4-7",hint:"Ça commence par Ca !"},
-{id:"IT-075",type:"Italien",enonce:"Comment dit-on 'froid' en italien ?",rep:"Freddo",choix:["Freddo","Frío","Kalt"],diff:1,age:"4-7",hint:"Ça commence par Fr !"},
-{id:"IT-076",type:"Italien",enonce:"Comment dit-on 'bonne nuit' en italien ?",rep:"Buonanotte",choix:["Buonanotte","Buenas noches","Gute Nacht"],diff:1,age:"4-7",hint:"Ça commence par Buona !"},
-{id:"IT-077",type:"Italien",enonce:"Comment dit-on 'bonjour (le soir)' en italien ?",rep:"Buonasera",choix:["Buonasera","Buenas tardes","Guten Abend"],diff:1,age:"4-7",hint:"Ça commence par Buona !"},
-{id:"IT-078",type:"Italien",enonce:"Comment dit-on 'bonjour (le matin)' en italien ?",rep:"Buongiorno",choix:["Buongiorno","Buenos días","Guten Morgen"],diff:1,age:"4-7",hint:"Ça commence par Buon !"},
-{id:"IT-079",type:"Italien",enonce:"Comment dit-on 'voiture' en italien ?",rep:"Macchina",choix:["Macchina","Coche","Auto"],diff:2,age:"4-7",hint:"Ça commence par Mac !"},
-{id:"IT-080",type:"Italien",enonce:"Comment dit-on 'ballon' en italien ?",rep:"Pallone",choix:["Pallone","Pelota","Ball"],diff:1,age:"4-7",hint:"Ça commence par Pal !"},
-{id:"IT-081",type:"Italien",enonce:"Comment dit-on 'nuit' en italien ?",rep:"Notte",choix:["Notte","Noche","Nacht"],diff:1,age:"4-7",hint:"Ça commence par No !"},
-{id:"IT-082",type:"Italien",enonce:"Comment dit-on 'jour' en italien ?",rep:"Giorno",choix:["Giorno","Día","Tag"],diff:1,age:"4-7",hint:"Ça commence par Gi !"},
-{id:"IT-083",type:"Italien",enonce:"Comment dit-on 'printemps' en italien ?",rep:"Primavera",choix:["Primavera","Verano","Frühling"],diff:1,age:"4-7",hint:"Pareil qu'en espagnol !"},
-{id:"IT-084",type:"Italien",enonce:"Comment dit-on 'été' en italien ?",rep:"Estate",choix:["Estate","Verano","Sommer"],diff:1,age:"4-7",hint:"Ça commence par E !"},
-{id:"IT-085",type:"Italien",enonce:"Comment dit-on 'automne' en italien ?",rep:"Autunno",choix:["Autunno","Otoño","Herbst"],diff:1,age:"4-7",hint:"Proche du mot français !"},
-{id:"IT-086",type:"Italien",enonce:"Comment dit-on 'hiver' en italien ?",rep:"Inverno",choix:["Inverno","Invierno","Winter"],diff:1,age:"4-7",hint:"Ça commence par Inv !"},
-{id:"IT-087",type:"Italien",enonce:"Comment dit-on 'fenêtre' en italien ?",rep:"Finestra",choix:["Finestra","Ventana","Fenster"],diff:2,age:"4-7",hint:"Ça commence par Fi !"},
-{id:"IT-088",type:"Italien",enonce:"Comment dit-on 'porte' en italien ?",rep:"Porta",choix:["Porta","Puerta","Tür"],diff:1,age:"4-7",hint:"Proche du mot français !"},
-{id:"IT-089",type:"Italien",enonce:"Comment dit-on 'lit' en italien ?",rep:"Letto",choix:["Letto","Cama","Bett"],diff:1,age:"4-7",hint:"Ça commence par Le !"},
-{id:"IT-090",type:"Italien",enonce:"Comment dit-on 'table' en italien ?",rep:"Tavolo",choix:["Tavolo","Mesa","Tisch"],diff:1,age:"4-7",hint:"Ça commence par Ta !"},
-{id:"IT-091",type:"Italien",enonce:"Comment dit-on 'chaise' en italien ?",rep:"Sedia",choix:["Sedia","Silla","Stuhl"],diff:1,age:"4-7",hint:"Ça commence par Se !"},
-{id:"IT-092",type:"Italien",enonce:"Comment dit-on 'fille' en italien ?",rep:"Bambina",choix:["Bambina","Niña","Mädchen"],diff:2,age:"4-7",hint:"Comme 'bambino' mais féminin !"},
-{id:"IT-093",type:"Italien",enonce:"Comment dit-on 'garçon' en italien ?",rep:"Bambino",choix:["Bambino","Niño","Junge"],diff:2,age:"4-7",hint:"Ça commence par Ba !"},
-{id:"IT-094",type:"Italien",enonce:"Comment dit-on 'glace (dessert)' en italien ?",rep:"Gelato",choix:["Gelato","Helado","Eis"],diff:1,age:"4-7",hint:"Un mot qu'on utilise aussi en France !"},
-{id:"IT-095",type:"Italien",enonce:"Comment dit-on 'café' en italien ?",rep:"Caffè",choix:["Caffè","Café","Kaffee"],diff:1,age:"4-7",hint:"Proche du mot français !"},
-{id:"IT-096",type:"Italien",enonce:"Comment dit-on 'je suis' en italien (essere) ?",rep:"sono",choix:["sono","sei","è"],diff:2,age:"7-10",hint:"La forme de 'io' avec essere !"},
-{id:"IT-097",type:"Italien",enonce:"Comment dit-on 'tu es' en italien (essere) ?",rep:"sei",choix:["sei","sono","è"],diff:2,age:"7-10",hint:"La forme de 'tu' avec essere !"},
-{id:"IT-098",type:"Italien",enonce:"Comment dit-on 'il/elle est' en italien (essere) ?",rep:"è",choix:["è","sei","sono"],diff:2,age:"7-10",hint:"La forme de 'lui/lei' avec essere !"},
-{id:"IT-099",type:"Italien",enonce:"Comment dit-on 'nous sommes' en italien ?",rep:"siamo",choix:["siamo","siete","sono"],diff:2,age:"7-10",hint:"La forme de 'noi' avec essere !"},
-{id:"IT-100",type:"Italien",enonce:"Comment dit-on 'j'ai' en italien (avere) ?",rep:"ho",choix:["ho","hai","ha"],diff:2,age:"7-10",hint:"La forme de 'io' avec avere, très court !"},
-{id:"IT-101",type:"Italien",enonce:"Comment dit-on 'tu as' en italien (avere) ?",rep:"hai",choix:["hai","ho","ha"],diff:2,age:"7-10",hint:"La forme de 'tu' avec avere !"},
-{id:"IT-102",type:"Italien",enonce:"Comment dit-on 'il/elle a' en italien (avere) ?",rep:"ha",choix:["ha","ho","hai"],diff:2,age:"7-10",hint:"La forme de 'lui/lei' avec avere !"},
-{id:"IT-103",type:"Italien",enonce:"Comment dit-on 'nous avons' en italien ?",rep:"abbiamo",choix:["abbiamo","avete","hanno"],diff:2,age:"7-10",hint:"La forme de 'noi' avec avere !"},
-{id:"IT-104",type:"Italien",enonce:"Comment dit-on 'je parle' en italien ?",rep:"parlo",choix:["parlo","parli","parla"],diff:2,age:"7-10",hint:"La terminaison de 'io' pour -are est -o !"},
-{id:"IT-105",type:"Italien",enonce:"Comment dit-on 'tu parles' en italien ?",rep:"parli",choix:["parli","parlo","parla"],diff:2,age:"7-10",hint:"La terminaison de 'tu' pour -are est -i !"},
-{id:"IT-106",type:"Italien",enonce:"Comment dit-on 'il/elle parle' en italien ?",rep:"parla",choix:["parla","parlo","parli"],diff:2,age:"7-10",hint:"La terminaison de 'lui/lei' pour -are est -a !"},
-{id:"IT-107",type:"Italien",enonce:"Comment dit-on 'je mange' en italien ?",rep:"mangio",choix:["mangio","mangi","mangia"],diff:2,age:"7-10",hint:"La terminaison de 'io' pour -are est -o !"},
-{id:"IT-108",type:"Italien",enonce:"Comment dit-on 'je lis' en italien ?",rep:"leggo",choix:["leggo","leggi","legge"],diff:2,age:"7-10",hint:"Attention, 'leggere' est irrégulier à 'io' !"},
-{id:"IT-109",type:"Italien",enonce:"Comment dit-on 'je vois' en italien ?",rep:"vedo",choix:["vedo","vedi","vede"],diff:2,age:"7-10",hint:"La terminaison de 'io' pour -ere est -o !"},
-{id:"IT-110",type:"Italien",enonce:"Quel est l'article masculin singulier en italien ?",rep:"il",choix:["il","la","lo"],diff:2,age:"7-10",hint:"Court, 2 lettres !"},
-{id:"IT-111",type:"Italien",enonce:"Quel est l'article masculin pour les mots en s+consonne ?",rep:"lo",choix:["lo","il","un"],diff:3,age:"7-10",hint:"Devant sp-, sc-, st-, z- on utilise 'lo' !"},
-{id:"IT-112",type:"Italien",enonce:"Quel est l'article féminin singulier en italien ?",rep:"la",choix:["la","il","le"],diff:2,age:"7-10",hint:"Comme en français !"},
-{id:"IT-113",type:"Italien",enonce:"Quel est l'article masculin pluriel en italien ?",rep:"i",choix:["i","gli","le"],diff:2,age:"7-10",hint:"Très court, une lettre !"},
-{id:"IT-114",type:"Italien",enonce:"Quel est l'article féminin pluriel en italien ?",rep:"le",choix:["le","la","li"],diff:2,age:"7-10",hint:"Comme en français !"},
-{id:"IT-115",type:"Italien",enonce:"Comment dit-on 'un garçon' en italien ?",rep:"un ragazzo",choix:["un ragazzo","una ragazzo","il ragazzo"],diff:2,age:"7-10",hint:"'Ragazzo' est masculin !"},
-{id:"IT-116",type:"Italien",enonce:"Comment dit-on 'une fille' en italien ?",rep:"una ragazza",choix:["una ragazza","un ragazza","la ragazza"],diff:2,age:"7-10",hint:"'Ragazza' est féminin !"},
-{id:"IT-117",type:"Italien",enonce:"Comment dit-on 'je m'appelle' en italien ?",rep:"Mi chiamo",choix:["Mi chiamo","Mi sono","Mi ho"],diff:2,age:"7-10",hint:"Le verbe est 'chiamarsi' !"},
-{id:"IT-118",type:"Italien",enonce:"Comment dit-on 'quel âge as-tu ?' en italien ?",rep:"Quanti anni hai?",choix:["Quanti anni hai?","Quanti anni sei?","Quanti anni hai tu?"],diff:2,age:"7-10",hint:"On 'a' un âge avec avere !"},
-{id:"IT-119",type:"Italien",enonce:"Comment dit-on 'j'ai 9 ans' en italien ?",rep:"Ho nove anni",choix:["Ho nove anni","Sono nove anni","Ho nove anno"],diff:2,age:"7-10",hint:"On 'a' un âge avec avere !"},
-{id:"IT-120",type:"Italien",enonce:"Comment dit-on 'je suis français' en italien ?",rep:"Sono francese",choix:["Sono francese","Ho francese","Sto francese"],diff:2,age:"7-10",hint:"On utilise 'essere' pour la nationalité !"},
-{id:"IT-121",type:"Italien",enonce:"Comment dit-on 'j'habite à Rome' en italien ?",rep:"Abito a Roma",choix:["Abito a Roma","Vivo a Roma","Sono a Roma"],diff:2,age:"7-10",hint:"'Abitare' = habiter !"},
-{id:"IT-122",type:"Italien",enonce:"Comment dit-on 'j'aime la pizza' en italien ?",rep:"Mi piace la pizza",choix:["Mi piace la pizza","Amo la pizza","Voglio la pizza"],diff:3,age:"7-10",hint:"En italien 'piace' = plaît, comme en espagnol !"},
-{id:"IT-123",type:"Italien",enonce:"Comment dit-on 'j'aime les pâtes' en italien ?",rep:"Mi piacciono le paste",choix:["Mi piacciono le paste","Mi piace le paste","Amo le paste"],diff:3,age:"7-10",hint:"Avec un sujet pluriel, 'piacciono' s'accorde !"},
-{id:"IT-124",type:"Italien",enonce:"Comment dit-on 'je veux' en italien ?",rep:"voglio",choix:["voglio","posso","devo"],diff:2,age:"7-10",hint:"De 'volere', commence par vo !"},
-{id:"IT-125",type:"Italien",enonce:"Comment dit-on 'je peux' en italien ?",rep:"posso",choix:["posso","voglio","devo"],diff:2,age:"7-10",hint:"De 'potere', commence par po !"},
-{id:"IT-126",type:"Italien",enonce:"Comment dit-on 'je dois' en italien ?",rep:"devo",choix:["devo","posso","voglio"],diff:2,age:"7-10",hint:"De 'dovere', commence par de !"},
-{id:"IT-127",type:"Italien",enonce:"Que signifie 'Il cane è grande' ?",rep:"Le chien est grand",choix:["Le chien est grand","Le chien est là","Le grand chien"],diff:2,age:"7-10",hint:"'È' vient de 'essere', 'grande' = grand !"},
-{id:"IT-128",type:"Italien",enonce:"Comment forme-t-on le pluriel de 'libro' ?",rep:"libri",choix:["libri","libros","libres"],diff:2,age:"7-10",hint:"Les mots masculins en -o font leur pluriel en -i !"},
-{id:"IT-129",type:"Italien",enonce:"Comment forme-t-on le pluriel de 'casa' ?",rep:"case",choix:["case","casas","cases"],diff:2,age:"7-10",hint:"Les mots féminins en -a font leur pluriel en -e !"},
-{id:"IT-130",type:"Italien",enonce:"Comment forme-t-on le pluriel de 'fiore' ?",rep:"fiori",choix:["fiori","fiores","flores"],diff:2,age:"7-10",hint:"Les mots en -e font leur pluriel en -i !"},
-{id:"IT-131",type:"Italien",enonce:"Comment dit-on 'il fait beau' en italien ?",rep:"Fa bel tempo",choix:["Fa bel tempo","È bel tempo","Sta bel tempo"],diff:3,age:"7-10",hint:"Pour la météo on utilise 'fare' !"},
-{id:"IT-132",type:"Italien",enonce:"Comment dit-on 'il pleut' en italien ?",rep:"Piove",choix:["Piove","Piovere","Pioggia"],diff:2,age:"7-10",hint:"Ça commence par Pi !"},
-{id:"IT-133",type:"Italien",enonce:"Comment dit-on 'il neige' en italien ?",rep:"Nevica",choix:["Nevica","Neve","Nevico"],diff:2,age:"7-10",hint:"Ça commence par Ne !"},
-{id:"IT-134",type:"Italien",enonce:"Que signifie 'domani' ?",rep:"Demain",choix:["Demain","Aujourd'hui","Hier"],diff:2,age:"7-10",hint:"Ça commence par do !"},
-{id:"IT-135",type:"Italien",enonce:"Que signifie 'oggi' ?",rep:"Aujourd'hui",choix:["Aujourd'hui","Hier","Demain"],diff:2,age:"7-10",hint:"Ça commence par og !"},
-{id:"IT-136",type:"Italien",enonce:"Que signifie 'ieri' ?",rep:"Hier",choix:["Hier","Demain","Aujourd'hui"],diff:2,age:"7-10",hint:"Ça commence par ie !"},
-{id:"IT-137",type:"Italien",enonce:"Comment dit-on 'lundi' en italien ?",rep:"lunedì",choix:["lunedì","martedì","mercoledì"],diff:2,age:"7-10",hint:"Ça vient de 'luna' = lune !"},
-{id:"IT-138",type:"Italien",enonce:"Comment dit-on 'vendredi' en italien ?",rep:"venerdì",choix:["venerdì","giovedì","sabato"],diff:2,age:"7-10",hint:"Ça commence par ven !"},
-{id:"IT-139",type:"Italien",enonce:"Comment dit-on 'janvier' en italien ?",rep:"gennaio",choix:["gennaio","febbraio","marzo"],diff:2,age:"7-10",hint:"Ça commence par gen !"},
-{id:"IT-140",type:"Italien",enonce:"Comment dit-on 'décembre' en italien ?",rep:"dicembre",choix:["dicembre","novembre","ottobre"],diff:2,age:"7-10",hint:"Ça commence par dic !"},
-{id:"IT-141",type:"Italien",enonce:"Comment dit-on 'à quelle heure ?' en italien ?",rep:"A che ora?",choix:["A che ora?","Quando ora?","Che ora è?"],diff:2,age:"7-10",hint:"'A che ora' = à quelle heure !"},
-{id:"IT-142",type:"Italien",enonce:"Comment dit-on 'il est trois heures' en italien ?",rep:"Sono le tre",choix:["Sono le tre","È le tre","Sta le tre"],diff:3,age:"7-10",hint:"Sauf pour une heure, on utilise 'sono' !"},
-{id:"IT-143",type:"Italien",enonce:"Comment dit-on 'il est une heure' en italien ?",rep:"È l'una",choix:["È l'una","Sono l'una","Sta l'una"],diff:3,age:"7-10",hint:"Pour une heure, on utilise 'è' !"},
-{id:"IT-144",type:"Italien",enonce:"Comment dit-on 'je vais à l'école' en italien ?",rep:"Vado a scuola",choix:["Vado a scuola","Vado in scuola","Vado alla scuola"],diff:2,age:"7-10",hint:"Sans article avec certains lieux habituels !"},
-{id:"IT-145",type:"Italien",enonce:"Comment dit-on 'où habites-tu ?' en italien ?",rep:"Dove abiti?",choix:["Dove abiti?","Dove sei?","Dove stai?"],diff:2,age:"7-10",hint:"'Dove' = où !"},
-{id:"IT-146",type:"Italien",enonce:"Comment dit-on 'je ne comprends pas' en italien ?",rep:"Non capisco",choix:["Non capisco","Non comprendo","Non capisce"],diff:2,age:"7-10",hint:"'Capire' = comprendre !"},
-{id:"IT-147",type:"Italien",enonce:"Comment dit-on 'répétez s'il vous plaît' en italien ?",rep:"Ripeta, per favore",choix:["Ripeta, per favore","Ripeti, per favore","Ripetere, per favore"],diff:3,age:"7-10",hint:"C'est l'impératif de politesse !"},
-{id:"IT-148",type:"Italien",enonce:"Que signifie 'a destra' ?",rep:"À droite",choix:["À droite","À gauche","Tout droit"],diff:2,age:"7-10",hint:"'Destra' = droite !"},
-{id:"IT-149",type:"Italien",enonce:"Que signifie 'a sinistra' ?",rep:"À gauche",choix:["À gauche","À droite","En face"],diff:2,age:"7-10",hint:"'Sinistra' = gauche !"},
-{id:"IT-150",type:"Italien",enonce:"Que signifie 'sempre' ?",rep:"Toujours",choix:["Toujours","Jamais","Parfois"],diff:2,age:"7-10",hint:"Ça commence par sem !"},
-{id:"IT-151",type:"Italien",enonce:"Que signifie 'mai' ?",rep:"Jamais",choix:["Jamais","Toujours","Mai"],diff:2,age:"7-10",hint:"Ça ressemble au mois de mai !"},
-{id:"IT-152",type:"Italien",enonce:"Comment dit-on 'beaucoup' en italien ?",rep:"molto",choix:["molto","poco","tanto"],diff:2,age:"7-10",hint:"Ça commence par mo !"},
-{id:"IT-153",type:"Italien",enonce:"Comment dit-on 'un peu' en italien ?",rep:"un po'",choix:["un po'","un poco","un molto"],diff:2,age:"7-10",hint:"Avec une apostrophe à la fin !"},
-{id:"IT-154",type:"Italien",enonce:"Comment dit-on 'avant' en italien ?",rep:"prima",choix:["prima","dopo","adesso"],diff:2,age:"7-10",hint:"Ça commence par pri !"},
-{id:"IT-155",type:"Italien",enonce:"Comment dit-on 'après' en italien ?",rep:"dopo",choix:["dopo","prima","adesso"],diff:2,age:"7-10",hint:"Ça commence par do !"},
-{id:"IT-156",type:"Italien",enonce:"Que signifie 'la settimana prossima' ?",rep:"La semaine prochaine",choix:["La semaine prochaine","La semaine dernière","Cette semaine"],diff:3,age:"7-10",hint:"'Prossima' = prochain !"},
-{id:"IT-157",type:"Italien",enonce:"Que signifie 'l'anno scorso' ?",rep:"L'année dernière",choix:["L'année dernière","L'année prochaine","Cette année"],diff:3,age:"7-10",hint:"'Scorso' = passé, dernier !"},
-{id:"IT-158",type:"Italien",enonce:"Comment dit-on 'j'ai faim' en italien ?",rep:"Ho fame",choix:["Ho fame","Sono fame","Sto fame"],diff:2,age:"7-10",hint:"On 'a' faim avec avere !"},
-{id:"IT-159",type:"Italien",enonce:"Comment dit-on 'j'ai soif' en italien ?",rep:"Ho sete",choix:["Ho sete","Sono sete","Sto sete"],diff:2,age:"7-10",hint:"Comme 'ho fame' mais pour la soif !"},
-{id:"IT-160",type:"Italien",enonce:"Comment dit-on 'je suis content' en italien ?",rep:"Sono contento",choix:["Sono contento","Ho contento","Sto contento"],diff:2,age:"7-10",hint:"On utilise 'essere' pour les états !"},
-{id:"IT-161",type:"Italien",enonce:"Que signifie 'Quanto costa?' ?",rep:"Combien ça coûte ?",choix:["Combien ça coûte ?","C'est combien ?","Quel est le prix ?"],diff:2,age:"7-10",hint:"'Quanto' = combien, 'costa' = coûte !"},
-{id:"IT-162",type:"Italien",enonce:"Que signifie 'più o meno' ?",rep:"Plus ou moins",choix:["Plus ou moins","Beaucoup","Peu"],diff:2,age:"7-10",hint:"'Più' = plus, 'meno' = moins !"},
-{id:"IT-163",type:"Italien",enonce:"Que signifie 'perché' (sans accent) ?",rep:"Parce que",choix:["Parce que","Pourquoi","Car"],diff:3,age:"7-10",hint:"Sans accent = réponse. Avec accent = question !"},
-{id:"IT-164",type:"Italien",enonce:"Que signifie 'Perché?' (avec accent) ?",rep:"Pourquoi ?",choix:["Pourquoi ?","Parce que","Comment ?"],diff:3,age:"7-10",hint:"Avec accent tonique = question !"},
-{id:"IT-165",type:"Italien",enonce:"Que signifie 'anche' ?",rep:"Aussi",choix:["Aussi","Mais","Donc"],diff:2,age:"7-10",hint:"Ça commence par an !"},
-{id:"IT-166",type:"Italien",enonce:"Comment dit-on 'je n'aime pas' en italien ?",rep:"Non mi piace",choix:["Non mi piace","Mi non piace","Mi piace non"],diff:3,age:"7-10",hint:"La négation 'non' se place avant !"},
-{id:"IT-167",type:"Italien",enonce:"Que signifie 'la colazione' ?",rep:"Le petit-déjeuner",choix:["Le petit-déjeuner","Le déjeuner","Le dîner"],diff:2,age:"7-10",hint:"C'est le premier repas de la journée !"},
-{id:"IT-168",type:"Italien",enonce:"Que signifie 'la cena' ?",rep:"Le dîner",choix:["Le dîner","Le déjeuner","Le goûter"],diff:2,age:"7-10",hint:"Pareil qu'en espagnol !"},
-{id:"IT-169",type:"Italien",enonce:"Comment dit-on 'je vais bien' en italien ?",rep:"Sto bene",choix:["Sto bene","Sono bene","Ho bene"],diff:2,age:"7-10",hint:"On utilise 'stare' pour les états de santé !"},
-{id:"IT-170",type:"Italien",enonce:"Comment dit-on 'très bien' en italien ?",rep:"molto bene",choix:["molto bene","troppo bene","tanto bene"],diff:2,age:"7-10",hint:"'Molto' = très/beaucoup !"},
-{id:"IT-171",type:"Italien",enonce:"Que signifie 'tutti' ?",rep:"Tous",choix:["Tous","Tout","Chaque"],diff:2,age:"7-10",hint:"Ça commence par tu !"},
-{id:"IT-172",type:"Italien",enonce:"Comment dit-on 'il y a' en italien ?",rep:"c'è / ci sono",choix:["c'è / ci sono","è / sono","ha / hanno"],diff:3,age:"7-10",hint:"'C'è' pour le singulier, 'ci sono' pour le pluriel !"},
-{id:"IT-173",type:"Italien",enonce:"Que signifie 'la biblioteca' ?",rep:"La bibliothèque",choix:["La bibliothèque","La librairie","Le livre"],diff:2,age:"7-10",hint:"Proche du mot français !"},
-{id:"IT-174",type:"Italien",enonce:"Que signifie 'la farmacia' ?",rep:"La pharmacie",choix:["La pharmacie","La ferme","La bibliothèque"],diff:2,age:"7-10",hint:"Proche du mot français !"},
-{id:"IT-175",type:"Italien",enonce:"Comment dit-on 'je sais' en italien ?",rep:"so",choix:["so","conosco","posso"],diff:3,age:"7-10",hint:"De 'sapere', très court !"},
-{id:"IT-176",type:"Italien",enonce:"Comment dit-on 'je connais' (une personne) en italien ?",rep:"conosco",choix:["conosco","so","posso"],diff:3,age:"7-10",hint:"De 'conoscere' !"},
-{id:"IT-177",type:"Italien",enonce:"Que signifie 'Mi dispiace' ?",rep:"Je suis désolé",choix:["Je suis désolé","Ça me fait plaisir","Je ne sais pas"],diff:3,age:"7-10",hint:"'Dispiacere' = déplaire, regretter !"},
-{id:"IT-178",type:"Italien",enonce:"Comment dit-on 'excusez-moi' en italien ?",rep:"Scusi",choix:["Scusi","Scusa","Mi scuso"],diff:2,age:"7-10",hint:"Forme de politesse du verbe scusare !"},
-{id:"IT-179",type:"Italien",enonce:"Que signifie 'basta' ?",rep:"Ça suffit / c'est assez",choix:["Ça suffit / c'est assez","C'est bien","Pas encore"],diff:3,age:"7-10",hint:"On l'entend souvent dans les cuisines !"},
-{id:"IT-180",type:"Italien",enonce:"Comment dit-on 'il fait chaud' en italien ?",rep:"Fa caldo",choix:["Fa caldo","È caldo","Sta caldo"],diff:2,age:"7-10",hint:"Pour la météo on utilise 'fare' !"},
-{id:"IT-181",type:"Italien",enonce:"Comment dit-on 'il fait froid' en italien ?",rep:"Fa freddo",choix:["Fa freddo","È freddo","Sta freddo"],diff:2,age:"7-10",hint:"Comme 'fa caldo' mais pour le froid !"},
-{id:"IT-182",type:"Italien",enonce:"Comment dit-on 'j'étudie' en italien ?",rep:"studio",choix:["studio","studi","studia"],diff:2,age:"7-10",hint:"La terminaison de 'io' est -o !"},
-{id:"IT-183",type:"Italien",enonce:"Comment dit-on 'nous étudions' en italien ?",rep:"studiamo",choix:["studiamo","studiate","studiano"],diff:2,age:"7-10",hint:"La terminaison de 'noi' est -iamo !"},
-{id:"IT-184",type:"Italien",enonce:"Que signifie 'il mercato' ?",rep:"Le marché",choix:["Le marché","Le supermarché","La boutique"],diff:2,age:"7-10",hint:"Proche du mot français !"},
-{id:"IT-185",type:"Italien",enonce:"Que signifie 'la città' ?",rep:"La ville",choix:["La ville","La cité","Le village"],diff:2,age:"7-10",hint:"Proche du mot 'cité' !"},
-{id:"IT-186",type:"Italien",enonce:"Comment dit-on 'c'est délicieux' en italien ?",rep:"È delizioso",choix:["È delizioso","Sta delizioso","Ho delizioso"],diff:2,age:"7-10",hint:"On utilise 'essere' pour les qualités !"},
-{id:"IT-187",type:"Italien",enonce:"Comment dit-on 'j'habite en France' en italien ?",rep:"Abito in Francia",choix:["Abito in Francia","Abito a Francia","Abito di Francia"],diff:2,age:"7-10",hint:"Pour les pays on utilise 'in' !"},
-{id:"IT-188",type:"Italien",enonce:"Que signifie 'il weekend' ?",rep:"Le week-end",choix:["Le week-end","La semaine","Le mercredi"],diff:2,age:"7-10",hint:"Un mot emprunté à l'anglais !"},
-{id:"IT-189",type:"Italien",enonce:"Comment dit-on 'combien ?' en italien ?",rep:"Quanto?",choix:["Quanto?","Come?","Dove?"],diff:2,age:"7-10",hint:"Ça commence par Qu !"},
-{id:"IT-190",type:"Italien",enonce:"'J'ai mangé' au passato prossimo ?",rep:"ho mangiato",choix:["ho mangiato","mangiavo","mangerò"],diff:2,age:"10-13",hint:"Auxiliaire 'avere' + participe de 'mangiare'"},
-  {id:"IT-191",type:"Italien",enonce:"'Elle allait' à l'imparfait (imperfetto) ?",rep:"andava",choix:["andava","è andata","andrà"],diff:2,age:"10-13",hint:"Imparfait de 'andare'"},
-  {id:"IT-192",type:"Italien",enonce:"Comment dit-on 'le tableau' en italien ?",rep:"la lavagna",choix:["la lavagna","il quadro","il foglio"],diff:2,age:"10-13",hint:"Sur lequel le prof écrit en classe"},
-  {id:"IT-193",type:"Italien",enonce:"'Ils ont vu' au passato prossimo ?",rep:"hanno visto",choix:["hanno visto","vedevano","avevano visto"],diff:2,age:"10-13",hint:"Participe irrégulier de 'vedere'"},
-  {id:"IT-194",type:"Italien",enonce:"'Io sia' est quel mode de 'essere' ?",rep:"subjonctif présent",choix:["subjonctif présent","imparfait","passé simple"],diff:2,age:"10-13",hint:"Congiuntivo presente"},
-  {id:"IT-195",type:"Italien",enonce:"Comment dit-on 'le stylo' en italien ?",rep:"la penna",choix:["la penna","il lapis","il foglio"],diff:2,age:"10-13",hint:"Mot qui ressemble à 'plume'"},
-  {id:"IT-196",type:"Italien",enonce:"'Nous étions' à l'imperfetto ?",rep:"eravamo",choix:["eravamo","siamo stati","saremo"],diff:2,age:"10-13",hint:"Imparfait très irrégulier de 'essere'"},
-  {id:"IT-197",type:"Italien",enonce:"'Il est allé' au passato prossimo (avec quel auxiliaire) ?",rep:"è andato (avec essere)",choix:["è andato (avec essere)","ha andato","andava"],diff:2,age:"10-13",hint:"'Andare' prend 'essere' comme auxiliaire"},
-  {id:"IT-198",type:"Italien",enonce:"Comment dit-on 'les devoirs' en italien ?",rep:"i compiti",choix:["i compiti","le lezioni","gli esercizi"],diff:2,age:"10-13",hint:"Travail fait à la maison"},
-  {id:"IT-199",type:"Italien",enonce:"'Je pensais' à l'imperfetto ?",rep:"pensavo",choix:["pensavo","ho pensato","penserò"],diff:2,age:"10-13",hint:"Imparfait de 'pensare'"},
-  {id:"IT-200",type:"Italien",enonce:"Que signifie 'Penso che lui abbia ragione' ?",rep:"Je pense qu'il a raison (subjonctif)",choix:["Je pense qu'il a raison (subjonctif)","Je pense qu'il aura raison","Je pensais qu'il avait raison"],diff:2,age:"10-13",hint:"'Pensare che' → congiuntivo"},
-  {id:"IT-201",type:"Italien",enonce:"'Elle est née' au passato prossimo ?",rep:"è nata",choix:["è nata","ha nato","nasceva"],diff:2,age:"10-13",hint:"'Nascere' prend 'essere' au passé composé"},
-  {id:"IT-202",type:"Italien",enonce:"Comment dit-on 'la gomme' en italien ?",rep:"la gomma",choix:["la gomma","il correttore","la matita"],diff:2,age:"10-13",hint:"Très proche du mot français"},
-  {id:"IT-203",type:"Italien",enonce:"'Loro abbiano' est quel mode/temps de 'avere' ?",rep:"congiuntivo presente",choix:["congiuntivo presente","congiuntivo imperfetto","futuro"],diff:2,age:"10-13",hint:"Subjonctif présent de 'avere'"},
-  {id:"IT-204",type:"Italien",enonce:"'Tu parlais' à l'imperfetto ?",rep:"parlavi",choix:["parlavi","hai parlato","parlerai"],diff:2,age:"10-13",hint:"Imparfait de 'parlare' pour tu"},
-  {id:"IT-205",type:"Italien",enonce:"Comment dit-on 'la cantine' en italien ?",rep:"la mensa",choix:["la mensa","il ristorante","la cucina"],diff:2,age:"10-13",hint:"Salle de repas à l'école"},
-  {id:"IT-206",type:"Italien",enonce:"'Nous avons fait' au passato prossimo ?",rep:"abbiamo fatto",choix:["abbiamo fatto","facevamo","faremo"],diff:2,age:"10-13",hint:"Participe irrégulier de 'fare'"},
-  {id:"IT-207",type:"Italien",enonce:"Quelle différence entre passato prossimo et imperfetto ?",rep:"prossimo = action ponctuelle, imperfetto = état/habitude",choix:["prossimo = action ponctuelle, imperfetto = état/habitude","imperfetto = récent, prossimo = lointain","aucune différence"],diff:3,age:"10-13",hint:"Pensez à 'je mangeais' vs 'j'ai mangé'"},
-  {id:"IT-208",type:"Italien",enonce:"Comment dit-on 'le couloir' en italien ?",rep:"il corridoio",choix:["il corridoio","la sala","l'ingresso"],diff:2,age:"10-13",hint:"Passe entre les salles de classe"},
-  {id:"IT-209",type:"Italien",enonce:"'Voglio che tu venga' — quel mode ?",rep:"congiuntivo",choix:["congiuntivo","indicativo","condizionale"],diff:2,age:"10-13",hint:"'Volere che' → congiuntivo"},
-  {id:"IT-210",type:"Italien",enonce:"'Ils venaient' à l'imperfetto ?",rep:"venivano",choix:["venivano","sono venuti","verranno"],diff:2,age:"10-13",hint:"Imparfait de 'venire'"},
-  {id:"IT-211",type:"Italien",enonce:"Comment dit-on 'le cartable' en italien ?",rep:"lo zaino",choix:["lo zaino","la borsa","il borsone"],diff:2,age:"10-13",hint:"Sac qu'on porte sur le dos pour aller à l'école"},
-  {id:"IT-212",type:"Italien",enonce:"'Lei sia partita' est quel temps ?",rep:"congiuntivo passato",choix:["congiuntivo passato","congiuntivo imperfetto","passato prossimo"],diff:3,age:"10-13",hint:"Essere au subjonctif présent + participe"},
-  {id:"IT-213",type:"Italien",enonce:"'Nous lisions' à l'imperfetto ?",rep:"leggevamo",choix:["leggevamo","abbiamo letto","leggeremo"],diff:2,age:"10-13",hint:"Imparfait de 'leggere' pour noi"},
-  {id:"IT-214",type:"Italien",enonce:"Comment dit-on 'la récréation' en italien ?",rep:"l'intervallo",choix:["l'intervallo","la pausa","il riposo"],diff:2,age:"10-13",hint:"Moment de pause entre les cours"},
-  {id:"IT-215",type:"Italien",enonce:"'Spero che lui abbia studiato' — quel temps du subjonctif ?",rep:"congiuntivo passato",choix:["congiuntivo passato","congiuntivo presente","indicativo"],diff:3,age:"10-13",hint:"Action antérieure à la principale → passato congiuntivo"},
-  {id:"IT-216",type:"Italien",enonce:"'Vous êtes partis' au passato prossimo (voi) ?",rep:"siete partiti",choix:["siete partiti","avete partito","partivate"],diff:2,age:"10-13",hint:"'Partire' prend 'essere'"},
-  {id:"IT-217",type:"Italien",enonce:"Comment dit-on 'le crayon' en italien ?",rep:"la matita",choix:["la matita","il lapis","il pennarello"],diff:2,age:"10-13",hint:"Instrument pour écrire qu'on peut effacer"},
-  {id:"IT-218",type:"Italien",enonce:"'Benchè venga' — quel mode après 'benché' ?",rep:"congiuntivo",choix:["congiuntivo","indicativo","infinito"],diff:2,age:"10-13",hint:"'Benché' (bien que) → toujours congiuntivo"},
-  {id:"IT-219",type:"Italien",enonce:"'Il dormait' à l'imperfetto ?",rep:"dormiva",choix:["dormiva","ha dormito","dormirà"],diff:2,age:"10-13",hint:"Imparfait de 'dormire'"},
-  {id:"IT-220",type:"Italien",enonce:"Comment dit-on 'l'emploi du temps' en italien ?",rep:"l'orario",choix:["l'orario","il calendario","il programma"],diff:2,age:"10-13",hint:"Planning des cours de la semaine"},
-  {id:"IT-221",type:"Italien",enonce:"'Sebbene + subjonctif' signifie quoi ?",rep:"bien que / quoique",choix:["bien que / quoique","parce que","pour que"],diff:2,age:"10-13",hint:"Conjonction de concession"},
-  {id:"IT-222",type:"Italien",enonce:"'Nous sommes restés' au passato prossimo ?",rep:"siamo rimasti",choix:["siamo rimasti","abbiamo rimasto","restavamo"],diff:3,age:"10-13",hint:"'Rimanere' prend 'essere', participe irrégulier"},
-  {id:"IT-223",type:"Italien",enonce:"Comment dit-on 'le professeur' (féminin) en italien ?",rep:"la professoressa",choix:["la professoressa","la professore","la maestra"],diff:2,age:"10-13",hint:"Féminin de 'il professore'"},
-  {id:"IT-224",type:"Italien",enonce:"'Che lei faccia' est quel mode de 'fare' ?",rep:"congiuntivo presente",choix:["congiuntivo presente","futuro","imperativo"],diff:2,age:"10-13",hint:"Subjonctif présent de 'fare'"},
-  {id:"IT-225",type:"Italien",enonce:"'Vous finissiez' à l'imperfetto (voi) ?",rep:"finivate",choix:["finivate","avete finito","finirete"],diff:2,age:"10-13",hint:"Imparfait de 'finire' pour voi"},
-  {id:"IT-226",type:"Italien",enonce:"Comment dit-on 'le trimestre' en italien ?",rep:"il trimestre",choix:["il trimestre","il semestre","l'anno scolastico"],diff:2,age:"10-13",hint:"Mot identique au français !"},
-  {id:"IT-227",type:"Italien",enonce:"'J'ai lu' au passato prossimo ?",rep:"ho letto",choix:["ho letto","leggevo","leggerò"],diff:2,age:"10-13",hint:"Participe irrégulier de 'leggere'"},
-  {id:"IT-228",type:"Italien",enonce:"'Nonostante + subjonctif' : que signifie 'nonostante' ?",rep:"malgré / bien que",choix:["malgré / bien que","parce que","afin que"],diff:2,age:"10-13",hint:"Conjonction de concession"},
-  {id:"IT-229",type:"Italien",enonce:"Comment dit-on 'l'examen' en italien ?",rep:"l'esame",choix:["l'esame","la verifica","il compito"],diff:2,age:"10-13",hint:"Mot proche du français"},
-  {id:"IT-230",type:"Italien",enonce:"'Mentre mangiavo, leggevo' — quelle valeur de l'imperfetto ?",rep:"deux actions simultanées dans le passé",choix:["deux actions simultanées dans le passé","action habituelle","action interrompue"],diff:3,age:"10-13",hint:"L'imperfetto exprime la simultanéité"},
-  {id:"IT-231",type:"Italien",enonce:"'Ils avaient fini' au trapassato prossimo ?",rep:"avevano finito",choix:["avevano finito","hanno finito","finivano"],diff:3,age:"10-13",hint:"Plus-que-parfait : imparfait de avere + participe"},
-  {id:"IT-232",type:"Italien",enonce:"Comment dit-on 'le directeur d'école' en italien ?",rep:"il preside / il dirigente",choix:["il preside / il dirigente","il professore","il direttore"],diff:2,age:"10-13",hint:"'Preside' est le terme scolaire courant"},
-  {id:"IT-233",type:"Italien",enonce:"'Che io abbia mangiato' est quel temps du subjonctif ?",rep:"congiuntivo passato",choix:["congiuntivo passato","congiuntivo presente","indicativo passato"],diff:3,age:"10-13",hint:"Avere/essere au congiuntivo + participe"},
-  {id:"IT-234",type:"Italien",enonce:"'Tu étudiais' à l'imperfetto ?",rep:"studiavi",choix:["studiavi","hai studiato","studierai"],diff:2,age:"10-13",hint:"Imparfait de 'studiare' pour tu"},
-  {id:"IT-235",type:"Italien",enonce:"Comment dit-on 'la salle de classe' en italien ?",rep:"l'aula",choix:["l'aula","la classe","la sala"],diff:2,age:"10-13",hint:"Mot spécifique au contexte scolaire"},
-  {id:"IT-236",type:"Italien",enonce:"'Prima che tu parta' — quel mode ?",rep:"congiuntivo",choix:["congiuntivo","indicativo","condizionale"],diff:2,age:"10-13",hint:"'Prima che' + congiuntivo toujours"},
-  {id:"IT-237",type:"Italien",enonce:"'Il est tombé' (cadere) au passato prossimo ?",rep:"è caduto",choix:["è caduto","ha caduto","cadeva"],diff:2,age:"10-13",hint:"'Cadere' prend 'essere'"},
-  {id:"IT-238",type:"Italien",enonce:"Comment dit-on 'la note (scolaire)' en italien ?",rep:"il voto",choix:["il voto","la nota","il risultato"],diff:2,age:"10-13",hint:"Notation scolaire en Italie sur 10"},
-  {id:"IT-239",type:"Italien",enonce:"'Affinché tu impari' — que signifie 'affinché' ?",rep:"afin que / pour que",choix:["afin que / pour que","bien que","lorsque"],diff:2,age:"10-13",hint:"Conjonction de but → congiuntivo"},
-  {id:"IT-240",type:"Italien",enonce:"'Nous avons voulu' au passato prossimo ?",rep:"abbiamo voluto",choix:["abbiamo voluto","volevamo","vorremo"],diff:2,age:"10-13",hint:"Participe de 'volere' = voluto"},
-  {id:"IT-241",type:"Italien",enonce:"Comment dit-on 'le dictionnaire' en italien ?",rep:"il dizionario",choix:["il dizionario","l'enciclopedia","il vocabolario"],diff:2,age:"10-13",hint:"Livre de définitions"},
-  {id:"IT-242",type:"Italien",enonce:"'Stavo mangiando' — quelle construction ?",rep:"stare + gérondif (action en cours)",choix:["stare + gérondif (action en cours)","imparfait de avere + participe","verbe modal + infinitif"],diff:3,age:"10-13",hint:"'Stavo + gerundio' = j'étais en train de"},
-  {id:"IT-243",type:"Italien",enonce:"'Ils pouvaient' à l'imperfetto ?",rep:"potevano",choix:["potevano","hanno potuto","potranno"],diff:2,age:"10-13",hint:"Imparfait de 'potere'"},
-  {id:"IT-244",type:"Italien",enonce:"Comment dit-on 'un camarade de classe' en italien ?",rep:"un compagno di classe",choix:["un compagno di classe","un amico di scuola","un collega"],diff:2,age:"10-13",hint:"Compagno = compagnon/camarade"},
-  {id:"IT-245",type:"Italien",enonce:"'Sebbene sia stanco, vengo lo stesso' — que signifie la phrase ?",rep:"Bien que je sois fatigué, je viens quand même",choix:["Bien que je sois fatigué, je viens quand même","Parce que je suis fatigué, je reste","Si j'étais fatigué, je viendrais"],diff:3,age:"10-13",hint:"Conjonction de concession"},
-  {id:"IT-246",type:"Italien",enonce:"'Vous aviez mangé' au trapassato prossimo (voi) ?",rep:"avevate mangiato",choix:["avevate mangiato","avete mangiato","mangiavate"],diff:3,age:"10-13",hint:"Imparfait de avere + participe"},
-  {id:"IT-247",type:"Italien",enonce:"Comment dit-on 'la bibliothèque' en italien ?",rep:"la biblioteca",choix:["la biblioteca","la libreria","il libro"],diff:2,age:"10-13",hint:"Attention : 'libreria' = librairie !"},
-  {id:"IT-248",type:"Italien",enonce:"'Che loro vengano' est quel mode de 'venire' ?",rep:"congiuntivo presente",choix:["congiuntivo presente","futuro","imperativo"],diff:2,age:"10-13",hint:"Subjonctif présent de 'venire'"},
-  {id:"IT-249",type:"Italien",enonce:"'Il pleuvait' à l'imperfetto ?",rep:"pioveva",choix:["pioveva","ha piovuto","pioverà"],diff:2,age:"10-13",hint:"'Piovere' à l'imperfetto"},
-  {id:"IT-250",type:"Italien",enonce:"Comment dit-on 'la salle de sport' en italien ?",rep:"la palestra",choix:["la palestra","il campo","la sala sport"],diff:2,age:"10-13",hint:"Lieu où on fait de la gym à l'école"},
-  {id:"IT-251",type:"Italien",enonce:"'Mentre stavo studiando, ho ricevuto una chiamata' — quel effet ?",rep:"action longue interrompue par une action courte",choix:["action longue interrompue par une action courte","deux actions habituelles","deux actions simultanées"],diff:3,age:"10-13",hint:"Imperfetto vs passato prossimo"},
-  {id:"IT-252",type:"Italien",enonce:"'Elle s'est réveillée' au passato prossimo ?",rep:"si è svegliata",choix:["si è svegliata","ha svegliato","si svegliava"],diff:2,age:"10-13",hint:"Verbe réfléchi prend toujours 'essere'"},
-  {id:"IT-253",type:"Italien",enonce:"Comment dit-on 'l'interro (interrogation)' en italien ?",rep:"l'interrogazione",choix:["l'interrogazione","la domanda","il test"],diff:2,age:"10-13",hint:"Vérification orale par le prof"},
-  {id:"IT-254",type:"Italien",enonce:"'Spero che arrivino in orario' — quel mode ?",rep:"congiuntivo",choix:["congiuntivo","indicativo","condizionale"],diff:2,age:"10-13",hint:"'Sperare che' → congiuntivo"},
-  {id:"IT-255",type:"Italien",enonce:"'Nous nous sommes amusés' au passato prossimo ?",rep:"ci siamo divertiti",choix:["ci siamo divertiti","abbiamo divertito","ci divertivamo"],diff:3,age:"10-13",hint:"Verbe réfléchi + essere + accord"},
-  {id:"IT-256",type:"Italien",enonce:"Comment dit-on 'le règle (pour mesurer)' en italien ?",rep:"il righello",choix:["il righello","la misura","il compasso"],diff:2,age:"10-13",hint:"Instrument de dessin et de mesure"},
-  {id:"IT-257",type:"Italien",enonce:"'Da quando sei arrivato, studi molto' — que signifie 'da quando' ?",rep:"depuis que",choix:["depuis que","dès que","quand"],diff:2,age:"10-13",hint:"Locution temporelle"},
-  {id:"IT-258",type:"Italien",enonce:"'Il avait dormi' au trapassato prossimo ?",rep:"aveva dormito",choix:["aveva dormito","ha dormito","dormiva"],diff:2,age:"10-13",hint:"Imparfait de avere + participe de dormire"},
-  {id:"IT-259",type:"Italien",enonce:"Comment dit-on 'les matières scolaires' en italien ?",rep:"le materie",choix:["le materie","gli argomenti","i temi"],diff:2,age:"10-13",hint:"Disciplines enseignées à l'école"},
-  {id:"IT-260",type:"Italien",enonce:"'Pur essendo stanco, ha continuato' — quelle construction ?",rep:"pur + gérondif (concession)",choix:["pur + gérondif (concession)","imparfait (habitude)","subjonctif (doute)"],diff:3,age:"10-13",hint:"'Pur + gerundio' = bien que + subjonctif"},
-  {id:"IT-261",type:"Italien",enonce:"'Vous vous étiez levés' au trapassato prossimo (voi) ?",rep:"vi eravate alzati",choix:["vi eravate alzati","vi siete alzati","vi alzavate"],diff:3,age:"10-13",hint:"Verbe réfléchi + essere à l'imparfait + participe"},
-  {id:"IT-262",type:"Italien",enonce:"Comment dit-on 'l'année scolaire' en italien ?",rep:"l'anno scolastico",choix:["l'anno scolastico","l'annata","l'anno accademico"],diff:2,age:"10-13",hint:"Période de septembre à juin"},
-  {id:"IT-263",type:"Italien",enonce:"'È necessario che tu studi' — quel mode après 'necessario che' ?",rep:"congiuntivo",choix:["congiuntivo","indicativo","infinito"],diff:2,age:"10-13",hint:"Expression impersonnelle → congiuntivo"},
-  {id:"IT-264",type:"Italien",enonce:"'Elle avait compris' au trapassato prossimo ?",rep:"aveva capito",choix:["aveva capito","ha capito","capiva"],diff:2,age:"10-13",hint:"Participe irrégulier de 'capire' = capito"},
-  {id:"IT-265",type:"Italien",enonce:"Comment dit-on 'l'interrogation écrite' en italien ?",rep:"il compito in classe",choix:["il compito in classe","la verifica scritta","les deux sont corrects"],diff:2,age:"10-13",hint:"Les deux formes sont utilisées"},
-  {id:"IT-266",type:"Italien",enonce:"'Stavo dormendo quando ha telefonato' — quel effet ?",rep:"action en cours interrompue",choix:["action en cours interrompue","deux actions habituelles","futur proche"],diff:2,age:"10-13",hint:"Stare + gerundio = action en cours"},
-  {id:"IT-267",type:"Italien",enonce:"Comment dit-on 'le proviseur' (homme) en italien ?",rep:"il preside",choix:["il preside","il direttore","il principale"],diff:2,age:"10-13",hint:"Responsable d'un liceo ou ginnasio"},
-  {id:"IT-268",type:"Italien",enonce:"'Che io sia' au congiuntivo presente de 'essere' — conjuguez au pluriel (noi) ?",rep:"che noi siamo",choix:["che noi siamo","che noi siano","che noi eravamo"],diff:3,age:"10-13",hint:"Congiuntivo presente de 'essere' pour noi"},
-  {id:"IT-269",type:"Italien",enonce:"'Elles se sont réveillées' au passato prossimo ?",rep:"si sono svegliate",choix:["si sono svegliate","hanno svegliato","si svegliavano"],diff:3,age:"10-13",hint:"Verbe réfléchi + essere + accord féminin pluriel"},
-  {id:"IT-270",type:"Italien",enonce:"Comment dit-on 'le cours magistral' en italien ?",rep:"la lezione",choix:["la lezione","la classe","il corso"],diff:2,age:"10-13",hint:"Séance d'enseignement"},
-  {id:"IT-271",type:"Italien",enonce:"'Non credo che lui sappia la risposta' — quel mode ?",rep:"congiuntivo",choix:["congiuntivo","indicativo","condizionale"],diff:2,age:"10-13",hint:"'Non credere che' → congiuntivo"},
-  {id:"IT-272",type:"Italien",enonce:"'Vous étiez partis' au trapassato prossimo (voi) ?",rep:"eravate partiti",choix:["eravate partiti","siete partiti","partivate"],diff:3,age:"10-13",hint:"Essere à l'imparfait + participe (accord)"},
-  {id:"IT-273",type:"Italien",enonce:"Comment dit-on 'le manuel scolaire' en italien ?",rep:"il libro di testo",choix:["il libro di testo","il manuale","il libro"],diff:2,age:"10-13",hint:"Livre officiel pour les cours"},
-  {id:"IT-274",type:"Italien",enonce:"'Anche se piove, esco' — quel sens ?",rep:"Même s'il pleut, je sors (fait réel)",choix:["Même s'il pleut, je sors (fait réel)","Pour qu'il pleuve, je sors","Bien qu'il ait plu, je sors"],diff:3,age:"10-13",hint:"'Anche se' + indicatif = fait réel"},
-  {id:"IT-275",type:"Italien",enonce:"'Nous avions lu' au trapassato prossimo ?",rep:"avevamo letto",choix:["avevamo letto","abbiamo letto","leggevamo"],diff:2,age:"10-13",hint:"Imparfait de avere + participe irrégulier de leggere"},
-  {id:"IT-276",type:"Italien",enonce:"Comment dit-on 'la salle des profs' en italien ?",rep:"la sala professori",choix:["la sala professori","la sala insegnanti","le bureau"],diff:2,age:"10-13",hint:"Salle réservée aux enseignants"},
-  {id:"IT-277",type:"Italien",enonce:"'Purché venga' — quel mode et sens ?",rep:"congiuntivo / à condition que",choix:["congiuntivo / à condition que","indicativo / bien que","condizionale / si"],diff:2,age:"10-13",hint:"'Purché' = à condition que → toujours congiuntivo"},
-  {id:"IT-278",type:"Italien",enonce:"'Elle avait voulu' au trapassato prossimo ?",rep:"aveva voluto",choix:["aveva voluto","ha voluto","voleva"],diff:2,age:"10-13",hint:"Imparfait de avere + participe de volere"},
-  {id:"IT-279",type:"Italien",enonce:"Comment dit-on 'la récréation' en italien (autre terme) ?",rep:"la ricreazione",choix:["la ricreazione","il riposo","la pausa pranzo"],diff:2,age:"10-13",hint:"Terme formel pour la pause scolaire"},
-  {id:"IT-280",type:"Italien",enonce:"'Che loro abbiano studiato' — quel temps du subjonctif ?",rep:"congiuntivo passato",choix:["congiuntivo passato","congiuntivo presente","futuro congiuntivo"],diff:3,age:"10-13",hint:"Avoir/essere au subjonctif présent + participe"},
-  {id:"IT-281",type:"Italien",enonce:"'J'aurais voulu' au condizionale passato ?",rep:"avrei voluto",choix:["avrei voluto","vorrei","avevo voluto"],diff:3,age:"10-13",hint:"Avere au condizionale presente + participe"},
-  {id:"IT-282",type:"Italien",enonce:"Comment dit-on 'les notes de cours' en italien ?",rep:"gli appunti",choix:["gli appunti","le note","le annotazioni"],diff:2,age:"10-13",hint:"Ce qu'on prend pendant la leçon"},
-  {id:"IT-283",type:"Italien",enonce:"'Credo che lei abbia ragione' vs 'Credo che lei ha ragione' : laquelle est correcte ?",rep:"Credo che lei abbia ragione (avec subjonctif)",choix:["Credo che lei abbia ragione (avec subjonctif)","Credo che lei ha ragione (avec indicatif)","les deux sont correctes"],diff:3,age:"10-13",hint:"En italien standard : 'credere che' → congiuntivo"},
-{id:"IT-284",type:"Italien",enonce:"'Se avessi saputo, sarei venuto' — quelle structure ?",rep:"congiuntivo trapassato + condizionale passato",choix:["congiuntivo trapassato + condizionale passato","congiuntivo imperfetto + condizionale presente","indicativo + condizionale"],diff:3,age:"13-18",hint:"Hypothèse irréalisée dans le passé"},
-  {id:"IT-285",type:"Italien",enonce:"'Fosse arrivato prima...' — quelle valeur de 'fosse' ?",rep:"congiuntivo trapassato de 'essere' (irréel passé)",choix:["congiuntivo trapassato de 'essere' (irréel passé)","congiuntivo imperfetto","passato prossimo"],diff:3,age:"13-18",hint:"Periode ipotetica del tipo 3"},
-  {id:"IT-286",type:"Italien",enonce:"Que signifie 'avere il coraggio di' ?",rep:"avoir le courage de",choix:["avoir le courage de","être courageux","manquer de courage"],diff:3,age:"13-18",hint:"Expression avec 'avere'"},
-  {id:"IT-287",type:"Italien",enonce:"'Dovrei studiare di più' — quel mode/temps ?",rep:"condizionale presente",choix:["condizionale presente","congiuntivo presente","futuro"],diff:3,age:"13-18",hint:"Je devrais = condizionale de 'dovere'"},
-  {id:"IT-288",type:"Italien",enonce:"Que signifie 'non vedo l'ora di' ?",rep:"avoir hâte de / être impatient de",choix:["avoir hâte de / être impatient de","ne pas voir l'heure","être pressé"],diff:3,age:"13-18",hint:"Expression d'impatience très courante"},
-  {id:"IT-289",type:"Italien",enonce:"'Avrei voluto che tu venissi' — quel congiuntivo ?",rep:"congiuntivo imperfetto",choix:["congiuntivo imperfetto","congiuntivo presente","congiuntivo trapassato"],diff:3,age:"13-18",hint:"Condizionale passato → congiuntivo imperfetto"},
-  {id:"IT-290",type:"Italien",enonce:"Que signifie 'farcela' ?",rep:"y arriver / s'en sortir",choix:["y arriver / s'en sortir","le faire","réussir un examen"],diff:3,age:"13-18",hint:"Verbe idiomatique très courant"},
-  {id:"IT-291",type:"Italien",enonce:"'Se venissi, sarei contento' — quel type de condition ?",rep:"hypothèse irréelle au présent",choix:["hypothèse irréelle au présent","hypothèse probable","hypothèse irréelle au passé"],diff:3,age:"13-18",hint:"Congiuntivo imperfetto + condizionale presente"},
-  {id:"IT-292",type:"Italien",enonce:"Que signifie 'prendersela' ?",rep:"s'en prendre à / se vexer",choix:["s'en prendre à / se vexer","prendre quelque chose","se l'approprier"],diff:3,age:"13-18",hint:"Verbe idiomatique réflexif"},
-  {id:"IT-293",type:"Italien",enonce:"'Lui sia andato' vs 'lui fosse andato' : différence ?",rep:"congiuntivo passato (présent) vs congiuntivo trapassato (passé)",choix:["congiuntivo passato (présent) vs congiuntivo trapassato (passé)","même sens","formel vs informel"],diff:3,age:"13-18",hint:"Le temps du subjonctif change la perspective temporelle"},
-  {id:"IT-294",type:"Italien",enonce:"Que signifie 'rendersi conto di' ?",rep:"se rendre compte de / réaliser",choix:["se rendre compte de / réaliser","se rendre quelque part","rembourser"],diff:3,age:"13-18",hint:"Expression réflexive idiomatique"},
-  {id:"IT-295",type:"Italien",enonce:"'A meno che non venga' — quel mode et sens ?",rep:"congiuntivo / à moins que",choix:["congiuntivo / à moins que","indicativo / sauf si","condizionale / à condition que"],diff:3,age:"13-18",hint:"'A meno che non' → congiuntivo toujours"},
-  {id:"IT-296",type:"Italien",enonce:"Que signifie 'cavarsela' ?",rep:"s'en sortir / se débrouiller",choix:["s'en sortir / se débrouiller","l'emmener","s'y prendre mal"],diff:3,age:"13-18",hint:"Verbe idiomatique : sortir d'une mauvaise situation"},
-  {id:"IT-297",type:"Italien",enonce:"'Pur avendo studiato, non ha superato l'esame' — quelle construction ?",rep:"pur + gérondif composé (concession passée)",choix:["pur + gérondif composé (concession passée)","bien que + subjonctif","parce que + passé"],diff:3,age:"13-18",hint:"'Pur avendo' = bien qu'il ait + participe"},
-  {id:"IT-298",type:"Italien",enonce:"Que signifie 'stare con le mani in mano' ?",rep:"rester les bras croisés / ne rien faire",choix:["rester les bras croisés / ne rien faire","être à l'aise","compter son argent"],diff:3,age:"13-18",hint:"Expression sur l'inactivité"},
-  {id:"IT-299",type:"Italien",enonce:"'Quale che sia la tua scelta' — quel mode ?",rep:"congiuntivo",choix:["congiuntivo","indicativo","condizionale"],diff:3,age:"13-18",hint:"Propositions relatives indéfinies → congiuntivo"},
-  {id:"IT-300",type:"Italien",enonce:"Que signifie 'perdere la testa' ?",rep:"perdre la tête / tomber amoureux",choix:["perdre la tête / tomber amoureux","devenir fou","oublier quelque chose"],diff:3,age:"13-18",hint:"Expression avec double sens"},
-  {id:"IT-301",type:"Italien",enonce:"'Avremmo potuto farlo diversamente' — quel temps ?",rep:"condizionale passato",choix:["condizionale passato","condizionale presente","congiuntivo trapassato"],diff:3,age:"13-18",hint:"Nous aurions pu = condizionale passato de 'potere'"},
-  {id:"IT-302",type:"Italien",enonce:"Que signifie 'andare a rotoli' ?",rep:"aller à vau-l'eau / se détériorer",choix:["aller à vau-l'eau / se détériorer","rouler vite","réussir"],diff:3,age:"13-18",hint:"Expression : les choses tournent mal"},
-  {id:"IT-303",type:"Italien",enonce:"'Senza che tu lo sapessi' — quel mode ?",rep:"congiuntivo imperfetto",choix:["congiuntivo imperfetto","indicativo","infinito"],diff:3,age:"13-18",hint:"Deux sujets différents avec 'senza che' → congiuntivo"},
-  {id:"IT-304",type:"Italien",enonce:"Que signifie 'tenere a bada' ?",rep:"tenir en respect / tenir à l'écart",choix:["tenir en respect / tenir à l'écart","tenir à quelque chose","garder près de soi"],diff:3,age:"13-18",hint:"Expression de contrôle"},
-  {id:"IT-305",type:"Italien",enonce:"'Chiunque venga, lo accogliamo' — quel mode ?",rep:"congiuntivo",choix:["congiuntivo","indicativo","futuro"],diff:3,age:"13-18",hint:"'Chiunque' + congiuntivo toujours"},
-  {id:"IT-306",type:"Italien",enonce:"Que signifie 'essere al corrente di' ?",rep:"être au courant de",choix:["être au courant de","être dans le courant","être informé à l'avance"],diff:3,age:"13-18",hint:"Expression d'information"},
-  {id:"IT-307",type:"Italien",enonce:"'Ci vogliono tre ore' vs 'ci vuole un'ora' — pourquoi ?",rep:"accord avec le sujet : tre ore (pluriel), un'ora (singulier)",choix:["accord avec le sujet : tre ore (pluriel), un'ora (singulier)","règle aléatoire","vogliono pour le temps, vuole pour autre chose"],diff:3,age:"13-18",hint:"'Volerci' s'accorde avec son sujet"},
-  {id:"IT-308",type:"Italien",enonce:"Que signifie 'mettercela tutta' ?",rep:"mettre toutes ses forces / faire de son mieux",choix:["mettre toutes ses forces / faire de son mieux","mettre tout dedans","s'énerver"],diff:3,age:"13-18",hint:"Expression d'effort maximal"},
-  {id:"IT-309",type:"Italien",enonce:"'Per quanto mi riguarda' — que signifie cette expression ?",rep:"en ce qui me concerne / pour ma part",choix:["en ce qui me concerne / pour ma part","bien que je sois concerné","pour autant que je sache"],diff:3,age:"13-18",hint:"Expression de point de vue"},
-  {id:"IT-310",type:"Italien",enonce:"Que signifie 'rompere le scatole' ?",rep:"casser les pieds / importuner",choix:["casser les pieds / importuner","ouvrir les boîtes","briser quelque chose"],diff:3,age:"13-18",hint:"Expression familière d'irritation"},
-  {id:"IT-311",type:"Italien",enonce:"'Dovesse mai capitare...' — quelle construction ?",rep:"congiuntivo imperfetto avec valeur d'hypothèse",choix:["congiuntivo imperfetto avec valeur d'hypothèse","futuro","condizionale"],diff:3,age:"13-18",hint:"Subjonctif en tête de phrase = hypothèse"},
-  {id:"IT-312",type:"Italien",enonce:"Que signifie 'fare il punto della situazione' ?",rep:"faire le point de la situation",choix:["faire le point de la situation","analyser le résultat","marquer un point"],diff:3,age:"13-18",hint:"Expression du monde professionnel"},
-  {id:"IT-313",type:"Italien",enonce:"'Non appena arrivò, chiamò' — quelle valeur ?",rep:"dès qu'il arriva (simultaneité)",choix:["dès qu'il arriva (simultaneité)","avant d'arriver","après être arrivé"],diff:3,age:"13-18",hint:"'Non appena' = dès que"},
-  {id:"IT-314",type:"Italien",enonce:"Que signifie 'prendere in giro' ?",rep:"se moquer de / faire marcher",choix:["se moquer de / faire marcher","faire le tour","prendre au sérieux"],diff:3,age:"13-18",hint:"Expression de moquerie"},
-  {id:"IT-315",type:"Italien",enonce:"'Il passivo con venire' vs 'il passivo con essere' : différence ?",rep:"venire = action dynamique, essere = état résultant",choix:["venire = action dynamique, essere = état résultant","ils sont identiques","venire = passé, essere = présent"],diff:3,age:"13-18",hint:"La porta viene chiusa (action) vs è chiusa (état)"},
-  {id:"IT-316",type:"Italien",enonce:"Que signifie 'darla a bere a qualcuno' ?",rep:"faire croire quelque chose à quelqu'un / en faire accroire",choix:["faire croire quelque chose à quelqu'un / en faire accroire","donner à boire","convaincre de boire"],diff:3,age:"13-18",hint:"Expression de tromperie"},
-  {id:"IT-317",type:"Italien",enonce:"'Tanto... quanto...' avec des adjectifs : 'tanto bella quanto intelligente' ?",rep:"aussi belle qu'intelligente",choix:["aussi belle qu'intelligente","si belle et si intelligente","plus belle qu'intelligente"],diff:3,age:"13-18",hint:"Comparatif d'égalité avec deux adjectifs"},
-  {id:"IT-318",type:"Italien",enonce:"Que signifie 'essere sul punto di' ?",rep:"être sur le point de",choix:["être sur le point de","être en train de","être prêt à"],diff:3,age:"13-18",hint:"Expression d'imminence"},
-  {id:"IT-319",type:"Italien",enonce:"'La proposta gli fu rifiutata' — quel passif ?",rep:"passif avec 'essere' (état après refus)",choix:["passif avec 'essere' (état après refus)","passif avec 'venire'","forme impersonnelle"],diff:3,age:"13-18",hint:"Passif d'état avec essere"},
-  {id:"IT-320",type:"Italien",enonce:"Que signifie 'fare il diavolo a quattro' ?",rep:"faire un tapage / faire du grabuge",choix:["faire un tapage / faire du grabuge","faire de son mieux","travailler beaucoup"],diff:3,age:"13-18",hint:"Expression sur le bruit ou l'agitation"},
-  {id:"IT-321",type:"Italien",enonce:"'Stando così le cose' — quelle construction ?",rep:"gérondif de 'stare' (étant donné les choses)",choix:["gérondif de 'stare' (étant donné les choses)","participe de 'stare'","subjonctif de 'stare'"],diff:3,age:"13-18",hint:"Gérondif = forme en -ando"},
-  {id:"IT-322",type:"Italien",enonce:"Que signifie 'in fin dei conti' ?",rep:"en fin de compte / après tout",choix:["en fin de compte / après tout","à la fin du mois","finalement"],diff:3,age:"13-18",hint:"Expression de conclusion"},
-  {id:"IT-323",type:"Italien",enonce:"'Si dice che + congiuntivo ou indicativo ?' dans un registre soutenu ?",rep:"congiuntivo (registre soutenu)",choix:["congiuntivo (registre soutenu)","indicativo (toujours)","les deux sont identiques"],diff:3,age:"13-18",hint:"'Si dice che' → congiuntivo en langue soignée"},
-  {id:"IT-324",type:"Italien",enonce:"Que signifie 'avere le mani in pasta' ?",rep:"avoir la main dans la pâte / être impliqué",choix:["avoir la main dans la pâte / être impliqué","cuisiner","être sale"],diff:3,age:"13-18",hint:"Expression de participation active"},
-  {id:"IT-325",type:"Italien",enonce:"'Più leggo, più capisco' — quelle structure ?",rep:"comparatif proportionnel (plus... plus...)",choix:["comparatif proportionnel (plus... plus...)","superlatif","comparatif d'égalité"],diff:3,age:"13-18",hint:"'Più... più...' = plus... plus..."},
-  {id:"IT-326",type:"Italien",enonce:"Que signifie 'togliersi dai piedi' ?",rep:"se tirer des pieds / dégager",choix:["se tirer des pieds / dégager","enlever ses chaussures","se mêler de ses affaires"],diff:3,age:"13-18",hint:"Expression souvent impérative"},
-  {id:"IT-327",type:"Italien",enonce:"'Sarebbe meglio che tu studiassi' — quel congiuntivo ?",rep:"congiuntivo imperfetto",choix:["congiuntivo imperfetto","congiuntivo presente","congiuntivo trapassato"],diff:3,age:"13-18",hint:"Condizionale présente → congiuntivo imperfetto"},
-  {id:"IT-328",type:"Italien",enonce:"Que signifie 'capitare a fagiolo' ?",rep:"tomber à pic / arriver au bon moment",choix:["tomber à pic / arriver au bon moment","manquer l'occasion","arriver en retard"],diff:3,age:"13-18",hint:"Expression sur le bon timing"},
-  {id:"IT-329",type:"Italien",enonce:"'Fosse per me, andrei' — que signifie cette phrase ?",rep:"Si c'était que de moi, j'irais",choix:["Si c'était que de moi, j'irais","Si j'étais allé","Pour moi, j'irai"],diff:3,age:"13-18",hint:"'Fosse per...' = construction hypothétique"},
-  {id:"IT-330",type:"Italien",enonce:"Que signifie 'fare una figuraccia' ?",rep:"faire mauvaise impression / se couvrir de honte",choix:["faire mauvaise impression / se couvrir de honte","faire bonne figure","se déguiser"],diff:3,age:"13-18",hint:"Expression sur la honte publique"},
-  {id:"IT-331",type:"Italien",enonce:"'Qualunque cosa dica, non ti credo' — quel mode ?",rep:"congiuntivo",choix:["congiuntivo","indicativo","condizionale"],diff:3,age:"13-18",hint:"'Qualunque cosa' + congiuntivo"},
-  {id:"IT-332",type:"Italien",enonce:"Que signifie 'perdere il filo' ?",rep:"perdre le fil (des idées)",choix:["perdre le fil (des idées)","perdre son chemin","rater quelque chose"],diff:3,age:"13-18",hint:"Expression souvent utilisée lors d'un discours"},
-  {id:"IT-333",type:"Italien",enonce:"Différence entre 'poiché' et 'perché' ?",rep:"poiché = causale (car), perché = but (pour que) ou cause",choix:["poiché = causale (car), perché = but (pour que) ou cause","identiques","poiché = futur, perché = passé"],diff:3,age:"13-18",hint:"'Poiché' est toujours causal, 'perché' peut être les deux"},
-  {id:"IT-334",type:"Italien",enonce:"Que signifie 'non fare né carne né pesce' ?",rep:"ne pas trancher / être entre deux eaux",choix:["ne pas trancher / être entre deux eaux","ne pas manger","être neutre de façon positive"],diff:3,age:"13-18",hint:"Expression sur l'indécision"},
-  {id:"IT-335",type:"Italien",enonce:"'Avendo studiato, ha superato l'esame' — quelle construction ?",rep:"gérondif composé (cause antérieure)",choix:["gérondif composé (cause antérieure)","gérondif simple","participe passé"],diff:3,age:"13-18",hint:"'Avendo + participe' = ayant + participe"},
-  {id:"IT-336",type:"Italien",enonce:"Que signifie 'essere al verde' ?",rep:"être à court d'argent / être fauché",choix:["être à court d'argent / être fauché","être jaloux","être naturel"],diff:3,age:"13-18",hint:"Expression sur l'argent (ou son absence)"},
-  {id:"IT-337",type:"Italien",enonce:"'Chissà se verrà' — quel mode après 'chissà se' ?",rep:"indicativo",choix:["indicativo","congiuntivo","condizionale"],diff:3,age:"13-18",hint:"'Chissà se' = on sait si → indicatif"},
-  {id:"IT-338",type:"Italien",enonce:"Que signifie 'andare a nozze' ?",rep:"prendre grand plaisir à / adorer faire quelque chose",choix:["prendre grand plaisir à / adorer faire quelque chose","se marier","aller à un mariage"],diff:3,age:"13-18",hint:"Expression figurée, pas littérale"},
-  {id:"IT-339",type:"Italien",enonce:"'Lo + comparatif' : que signifie 'il più possibile' ?",rep:"le plus possible",choix:["le plus possible","le plus grand","le meilleur"],diff:3,age:"13-18",hint:"Expression de degré maximal"},
-  {id:"IT-340",type:"Italien",enonce:"Que signifie 'essere in gamba' ?",rep:"être compétent / être doué",choix:["être compétent / être doué","avoir des jambes","être agile"],diff:3,age:"13-18",hint:"Expression très courante de compétence"},
-  {id:"IT-341",type:"Italien",enonce:"'Sebbene avesse studiato, non ha passato l'esame' — quel congiuntivo ?",rep:"congiuntivo trapassato",choix:["congiuntivo trapassato","congiuntivo imperfetto","congiuntivo passato"],diff:3,age:"13-18",hint:"Action antérieure à la principale au passé"},
-  {id:"IT-342",type:"Italien",enonce:"Que signifie 'fare quattro chiacchiere' ?",rep:"tailler une bavette / bavarder",choix:["tailler une bavette / bavarder","faire une dispute","parler fort"],diff:3,age:"13-18",hint:"Expression sur la conversation informelle"},
-  {id:"IT-343",type:"Italien",enonce:"'Eccetto che + congiuntivo ou indicatif ?",rep:"congiuntivo",choix:["congiuntivo","indicativo","condizionale"],diff:3,age:"13-18",hint:"'Eccetto che' (sauf que) → congiuntivo"},
-  {id:"IT-344",type:"Italien",enonce:"Que signifie 'avere la testa tra le nuvole' ?",rep:"avoir la tête dans les nuages",choix:["avoir la tête dans les nuages","rêver de voyages","être distrait"],diff:3,age:"13-18",hint:"Expression similaire au français"},
-  {id:"IT-345",type:"Italien",enonce:"Le superlatif absolu de 'buono' en italien ?",rep:"buonissimo / ottimo",choix:["buonissimo / ottimo","molto buono","il più buono"],diff:3,age:"13-18",hint:"Forme irrégulière : ottimo"},
-  {id:"IT-346",type:"Italien",enonce:"Que signifie 'venire a sapere' ?",rep:"apprendre / venir à connaître",choix:["apprendre / venir à connaître","venir savoir","vouloir savoir"],diff:3,age:"13-18",hint:"Expression sur l'acquisition d'information"},
-  {id:"IT-347",type:"Italien",enonce:"'Non saprei' — quelle valeur du condizionale présent ?",rep:"politesse / incertitude",choix:["politesse / incertitude","obligation","hypothèse passée"],diff:3,age:"13-18",hint:"Condizionale de 'sapere' = je ne saurais pas dire"},
-  {id:"IT-348",type:"Italien",enonce:"Que signifie 'non c'è due senza tre' ?",rep:"jamais deux sans trois",choix:["jamais deux sans trois","les événements arrivent toujours par deux","la troisième fois est la bonne"],diff:3,age:"13-18",hint:"Proverbe numérique identique au français"},
-  {id:"IT-349",type:"Italien",enonce:"'Stante la situazione' — quelle construction ?",rep:"participe présent de 'stare' (étant donné la situation)",choix:["participe présent de 'stare' (étant donné la situation)","gérondif","subjonctif"],diff:3,age:"13-18",hint:"Construction formelle et figée"},
-  {id:"IT-350",type:"Italien",enonce:"Que signifie 'a conti fatti' ?",rep:"tout compte fait / en définitive",choix:["tout compte fait / en définitive","au bout du compte","finalement"],diff:3,age:"13-18",hint:"Expression de bilan"},
-  {id:"IT-351",type:"Italien",enonce:"'Il problema è che non ci credo' — quel mode après 'è che' ?",rep:"indicativo (fait réel asserté)",choix:["indicativo (fait réel asserté)","congiuntivo","condizionale"],diff:3,age:"13-18",hint:"'È che' affirme un fait → indicatif"},
-  {id:"IT-352",type:"Italien",enonce:"Que signifie 'fare orecchie da mercante' ?",rep:"faire la sourde oreille",choix:["faire la sourde oreille","écouter attentivement","marchander"],diff:3,age:"13-18",hint:"Expression : feindre de ne pas entendre"},
-  {id:"IT-353",type:"Italien",enonce:"'Ci tengo a' + infinitif : que signifie cette construction ?",rep:"Je tiens à / c'est important pour moi de",choix:["Je tiens à / c'est important pour moi de","j'y suis attaché (objet)","je m'en occupe"],diff:3,age:"13-18",hint:"'Tenerci a' = tenir beaucoup à"},
-  {id:"IT-354",type:"Italien",enonce:"Que signifie 'mettere in moto' ?",rep:"mettre en marche / démarrer",choix:["mettre en marche / démarrer","mettre en mouvement physique","lancer une moto"],diff:3,age:"13-18",hint:"Expression de démarrage (moteur ou projet)"},
-  {id:"IT-355",type:"Italien",enonce:"'Ne + quantité' : comment dit-on 'j'en ai beaucoup' ?",rep:"Ne ho molti/molte",choix:["Ne ho molti/molte","Ho molti di loro","Ne ho molto"],diff:3,age:"13-18",hint:"'Ne' remplace 'di + nom', accord avec le nom sous-entendu"},
-  {id:"IT-356",type:"Italien",enonce:"Que signifie 'buttarsi a capofitto' ?",rep:"se jeter tête baissée / foncer",choix:["se jeter tête baissée / foncer","tomber","sauter dans l'eau"],diff:3,age:"13-18",hint:"Expression d'engagement total et impulsif"},
-  {id:"IT-357",type:"Italien",enonce:"'Quanto prima' signifie quoi ?",rep:"le plus tôt possible / dès que possible",choix:["le plus tôt possible / dès que possible","au plus tôt","avant"],diff:3,age:"13-18",hint:"Expression d'urgence temporelle"},
-  {id:"IT-358",type:"Italien",enonce:"Que signifie 'avere a che fare con' ?",rep:"avoir affaire à / avoir à faire avec",choix:["avoir affaire à / avoir à faire avec","avoir à faire","traiter avec"],diff:3,age:"13-18",hint:"Expression de relation ou d'implication"},
-  {id:"IT-359",type:"Italien",enonce:"'Persino lui sapeva' vs 'persino lui sapesse' : différence ?",rep:"indicativo (fait réel) vs congiuntivo (dans subordonnée)",choix:["indicativo (fait réel) vs congiuntivo (dans subordonnée)","présent vs passé","formel vs informel"],diff:3,age:"13-18",hint:"Le mode dépend du type de phrase"},
-  {id:"IT-360",type:"Italien",enonce:"Que signifie 'mandare avanti la baracca' ?",rep:"faire tourner la boutique / assurer la continuité",choix:["faire tourner la boutique / assurer la continuité","aller de l'avant","déménager"],diff:3,age:"13-18",hint:"Expression sur la gestion du quotidien"},
-  {id:"IT-361",type:"Italien",enonce:"'A seconda di' — que signifie cette locution ?",rep:"selon / en fonction de",choix:["selon / en fonction de","à la suite de","selon la seconde"],diff:3,age:"13-18",hint:"Locution prépositionnelle très utilisée"},
-  {id:"IT-362",type:"Italien",enonce:"Que signifie 'mettere i puntini sulle i' ?",rep:"mettre les points sur les i",choix:["mettre les points sur les i","être précis","corriger une faute"],diff:3,age:"13-18",hint:"Expression similaire au français"},
-  {id:"IT-363",type:"Italien",enonce:"'Tanto da + infinitif' : que signifie 'era così stanco da dormire in piedi' ?",rep:"tellement fatigué qu'il dormait debout",choix:["tellement fatigué qu'il dormait debout","assez fatigué pour dormir","fatigué en dormant debout"],diff:3,age:"13-18",hint:"'Tanto/così... da' = si... que"},
-  {id:"IT-364",type:"Italien",enonce:"Que signifie 'fare del proprio meglio' ?",rep:"faire de son mieux",choix:["faire de son mieux","faire le meilleur","être le meilleur"],diff:3,age:"13-18",hint:"Expression d'effort maximal"},
-  {id:"IT-365",type:"Italien",enonce:"'Checché ne dicano' — quel mode et sens ?",rep:"congiuntivo / quoi qu'ils en disent",choix:["congiuntivo / quoi qu'ils en disent","indicativo / ce qu'ils disent","condizionale / s'ils disaient"],diff:3,age:"13-18",hint:"'Checché' = quoi que → congiuntivo"},
-  {id:"IT-366",type:"Italien",enonce:"Que signifie 'prendere il toro per le corna' ?",rep:"prendre le taureau par les cornes",choix:["prendre le taureau par les cornes","affronter un problème","être courageux en général"],diff:3,age:"13-18",hint:"Expression similaire à l'espagnol et au français"},
-  {id:"IT-367",type:"Italien",enonce:"'Il bello è che...' — quel sens de 'lo bello' nominalisé ?",rep:"Ce qui est bien / la belle chose, c'est que",choix:["Ce qui est bien / la belle chose, c'est que","Le beau est que","Il est beau de"],diff:3,age:"13-18",hint:"Nominalisation de l'adjectif avec l'article"},
-  {id:"IT-368",type:"Italien",enonce:"Que signifie 'tenere il punto' ?",rep:"tenir bon / maintenir sa position",choix:["tenir bon / maintenir sa position","marquer un point","rester immobile"],diff:3,age:"13-18",hint:"Expression de fermeté"},
-  {id:"IT-369",type:"Italien",enonce:"'Non so se venire o no' — quel mode après 'se' dans une interrogative indirecte ?",rep:"infinitivo (même sujet)",choix:["infinitivo (même sujet)","congiuntivo","indicativo"],diff:3,age:"13-18",hint:"Même sujet + 'se' → infinitif"},
-  {id:"IT-370",type:"Italien",enonce:"Que signifie 'essere nei pasticci' ?",rep:"être dans le pétrin / avoir des ennuis",choix:["être dans le pétrin / avoir des ennuis","cuisiner","faire des pâtes"],diff:3,age:"13-18",hint:"Expression sur les problèmes"},
-  {id:"IT-371",type:"Italien",enonce:"'Fosse anche solo un giorno' — quelle valeur ?",rep:"même si c'était juste un jour (hypothèse minimale)",choix:["même si c'était juste un jour (hypothèse minimale)","pendant un seul jour","si c'était un seul jour"],diff:3,age:"13-18",hint:"'Fosse anche' = même si c'était"},
-  {id:"IT-372",type:"Italien",enonce:"Que signifie 'essere all'altezza di' ?",rep:"être à la hauteur de",choix:["être à la hauteur de","être au même niveau que","être à la même hauteur"],diff:3,age:"13-18",hint:"Expression de compétence ou d'adéquation"},
-  {id:"IT-373",type:"Italien",enonce:"'Senza aver studiato' vs 'senza studiare' — différence ?",rep:"aver studiato = antérieur au verbe principal; studiare = simultané",choix:["aver studiato = antérieur au verbe principal; studiare = simultané","aucune différence","studiare = futur"],diff:3,age:"13-18",hint:"Infinitif composé vs simple"},
-  {id:"IT-374",type:"Italien",enonce:"Que signifie 'mettere le carte in tavola' ?",rep:"jouer cartes sur table / être honnête",choix:["jouer cartes sur table / être honnête","montrer ses cartes","négocier"],diff:3,age:"13-18",hint:"Expression de transparence"},
-  {id:"IT-375",type:"Italien",enonce:"'Stare per + infinitif' : que signifie 'sta per piovere' ?",rep:"il est sur le point de pleuvoir",choix:["il est sur le point de pleuvoir","il commence à pleuvoir","il a plu"],diff:3,age:"13-18",hint:"'Stare per' = être sur le point de"},
-  {id:"IT-376",type:"Italien",enonce:"Que signifie 'essere di manica larga' ?",rep:"être indulgent / avoir la main large",choix:["être indulgent / avoir la main large","être généreux avec l'argent","avoir les manches larges"],diff:3,age:"13-18",hint:"Expression sur la sévérité (ou son absence)"},
-  {id:"IT-377",type:"Italien",enonce:"'Anche volendo, non potrei farlo' — quelle valeur du gérondif ?",rep:"concession : même en le voulant",choix:["concession : même en le voulant","cause : parce que je le veux","condition : si je le voulais"],diff:3,age:"13-18",hint:"Gérondif avec valeur concessive"}
-],
-ZH:[
-{id:"ZH-001",type:"Chinois",enonce:"'Bonjour' en mandarin ?",rep:"Nǐ hǎo 你好",choix:["Nǐ hǎo 你好","Xièxiè 谢谢","Zàijiàn 再见"],diff:2,age:"6-9",hint:"Ni hao !"},
-{id:"ZH-002",type:"Chinois",enonce:"'Merci' en mandarin ?",rep:"Xièxiè 谢谢",choix:["Nǐ hǎo","Xièxiè 谢谢","Wǒ ài nǐ"],diff:2,age:"6-9",hint:"Xiè-xiè — le même son x2 !"},
-{id:"ZH-003",type:"Chinois",enonce:"'1' en mandarin ?",rep:"Yī 一",choix:["Yī 一","Èr 二","Sān 三"],diff:2,age:"6-9",hint:"Un seul trait pour écrire 1 !"},
-{id:"ZH-004",type:"Chinois",enonce:"'Māo 猫' = ?",rep:"Chat",choix:["Chien","Chat","Oiseau"],diff:2,age:"6-9",hint:"Māo… comme 'miaou' !"},
-{id:"ZH-005",type:"Chinois",enonce:"Que signifie \'一 (Yī)\' ?",rep:"Un (1)",choix:["Un (1)","Deux (2)","Dix (10)"],diff:1,age:"4-7",hint:"一 est le caractère le plus simple : un seul trait horizontal"},
-{id:"ZH-006",type:"Chinois",enonce:"Comment dit-on \'au revoir\' en chinois ?",rep:"再见 (Zàijiàn)",choix:["再见 (Zàijiàn)","你好 (Nǐ hǎo)","谢谢 (Xièxie)"],diff:1,age:"4-7",hint:"再=encore, 见=voir → \'à la prochaine fois\'"},
-{id:"ZH-007",type:"Chinois",enonce:"Que veut dire \'猫 (Māo)\' ?",rep:"Chat",choix:["Chat","Chien","Lapin"],diff:1,age:"7-10",hint:"猫 — le son māo imite le miaulement"},
-{id:"ZH-008",type:"Chinois",enonce:"Combien y a-t-il de tons en mandarin standard ?",rep:"4 tons",choix:["4 tons","2 tons","6 tons"],diff:2,age:"7-10",hint:"1er=plat, 2e=montant, 3e=descendant-montant, 4e=descendant"},
-{id:"ZH-009",type:"Chinois",enonce:"Comment dit-on \'Je m\'appelle...\' en chinois ?",rep:"我叫... (Wǒ jiào...)",choix:["我叫... (Wǒ jiào...)","我是... (Wǒ shì...)","我有... (Wǒ yǒu...)"],diff:2,age:"7-10",hint:"我=je, 叫=m\'appelle"},
-{id:"ZH-010",type:"Chinois",enonce:"Que signifie le caractère \'日 (Rì)\' ?",rep:"Soleil / Jour",choix:["Soleil / Jour","Lune / Mois","Étoile"],diff:2,age:"10-13",hint:"日 représente un soleil stylisé avec un point au centre"},
-{id:"ZH-011",type:"Chinois",enonce:"Comment forme-t-on le passé en mandarin ?",rep:"Avec la particule 了 (le) après le verbe",choix:["Avec la particule 了 (le) après le verbe","En conjuguant le verbe","En ajoutant un préfixe au verbe"],diff:3,age:"10-13",hint:"我吃了 (Wǒ chī le) = J\'ai mangé — 了 marque l\'action accomplie"},
-{id:"ZH-012",type:"Chinois",enonce:"Quelle est la clé du caractère \'语 (yǔ)\' (langue) ?",rep:"言 (yán) — la parole",choix:["言 (yán) — la parole","水 (shuǐ) — l\'eau","人 (rén) — l\'homme"],diff:3,age:"10-13",hint:"La clé 言 (dire, parler) apparaît dans beaucoup de mots liés au langage"}
-]
+DE:[],
+AR:[],
+PT:[],
+IT:[],
+ZH:[],
+RU:[],
+UK:[]
 },
 prononciation:{
 EN:[
@@ -10276,6 +9865,46 @@ ateliers:[
   astuce:"Le sel aide les glaçons à fondre et crée de beaux effets de texture."}
 ]
 };
+
+// ════════════════════════════════════════════
+// LAZY-LOAD LANGUES VIVANTES depuis R2
+// DE, IT, PT, RU, UK, AR, ZH — chargées à la demande
+// ════════════════════════════════════════════
+const _LANG_CDN="https://audio.pocketsage.org/data/langues";
+const _LANG_KEYS=["DE","IT","PT","RU","UK","AR","ZH"];
+const _langLoadState={};
+async function loadLangData(langCode){
+  if(!_LANG_KEYS.includes(langCode))return;
+  if(_langLoadState[langCode]==="loaded")return;
+  if(_langLoadState[langCode]==="loading"){
+    await new Promise(resolve=>{
+      const check=setInterval(()=>{
+        if(_langLoadState[langCode]!=="loading"){clearInterval(check);resolve();}
+      },50);
+    });
+    return;
+  }
+  _langLoadState[langCode]="loading";
+  try{
+    const url=_LANG_CDN+"/"+langCode.toLowerCase()+".json";
+    const resp=await fetch(url);
+    if(!resp.ok)throw new Error("HTTP "+resp.status);
+    const questions=await resp.json();
+    DATA.langues[langCode]=questions;
+    _langLoadState[langCode]="loaded";
+    console.log("[PocketSage] "+langCode+" chargé: "+questions.length+" questions");
+  }catch(e){
+    _langLoadState[langCode]="error";
+    console.warn("[PocketSage] Erreur chargement "+langCode+":",e.message);
+    if(!DATA.langues[langCode])DATA.langues[langCode]=[];
+  }
+}
+async function ensureLangsLoaded(langCodes){
+  const toLoad=(langCodes||[]).filter(c=>_LANG_KEYS.includes(c));
+  if(!toLoad.length)return;
+  await Promise.all(toLoad.map(loadLangData));
+}
+
 
 // ════════════════════════════════════════════
 // SOUND ENGINE — Web Audio API, zéro fichier
@@ -11327,7 +10956,7 @@ if(size==='lg')return av.svgStr(72,90);
 return av.svgStr(52,65);
 }
 
-const NATIVE_NAMES={FR:'🇫🇷 Français',EN:'🇬🇧 Anglais',ES:'🇪🇸 Espagnol',AR:'🇸🇦 Arabe',DE:'🇩🇪 Allemand',IT:'🇮🇹 Italien',ZH:'🇨🇳 Chinois',PT:'🇧🇷 Portugais',OT:'🌐 Autre'};
+const NATIVE_NAMES={FR:'🇫🇷 Français',EN:'🇬🇧 Anglais',ES:'🇪🇸 Espagnol',AR:'🇸🇦 Arabe',DE:'🇩🇪 Allemand',IT:'🇮🇹 Italien',ZH:'🇨🇳 Chinois',PT:'🇧🇷 Portugais',RU:'🇷🇺 Russe',UK:'🇺🇦 Ukrainien',PL:'🇵🇱 Polonais',RO:'🇷🇴 Roumain',BG:'🇧🇬 Bulgare',CS:'🇨🇿 Tchèque',SK:'🇸🇰 Slovaque',HR:'🇭🇷 Croate',SR:'🇷🇸 Serbe',HU:'🇭🇺 Hongrois',TR:'🇹🇷 Turc',FA:'🇮🇷 Persan',OT:'🌐 Autre'};
 const LANG_NAMES={EN:'🇬🇧 Anglais',ES:'🇪🇸 Espagnol',DE:'🇩🇪 Allemand',AR:'🇸🇦 Arabe',IT:'🇮🇹 Italien',ZH:'🇨🇳 Chinois',PT:'🇧🇷 Portugais',RU:'🇷🇺 Russe',UK:'🇺🇦 Ukrainien'};
 
 // ── EMOJI HINT MAP (langues 4-7) ──
@@ -11500,6 +11129,23 @@ function clearTimer(){try{if(APP.timer){clearInterval(APP.timer);APP.timer=null;
 // ════════════════════════════════════════════
 // SETUP SCREEN
 // ════════════════════════════════════════════
+
+function toggleOtherNatives(btn){
+  const el=document.getElementById('native-g-other');
+  if(!el)return;
+  const shown=el.style.display!=='none';
+  el.style.display=shown?'none':'flex';
+  btn.textContent=shown?'🌐 Autre ▾':'🌐 Autre ▴';
+  if(!shown){
+    // Rebind onclick pour les nouveaux boutons
+    el.querySelectorAll('[data-nat]').forEach(b=>{
+      b.onclick=()=>{sndTap();document.querySelectorAll('[data-nat]').forEach(x=>x.classList.remove('sel'));b.classList.add('sel');_setupNative=b.dataset.nat;
+        const frBtn=document.getElementById('lang-btn-FR');
+        if(frBtn){frBtn.style.display=(b.dataset.nat==='FR')?'none':'';}
+      };
+    });
+  }
+}
 let _setupAge='8',_setupNative='FR',_setupLangs=[];
 
 // ── SENSEI ANIMATION ENGINE ────────────────
@@ -12530,7 +12176,7 @@ function renderPolContent(tab){
 // ════════════════════════════════════════════
 // OPEN MODULE
 // ════════════════════════════════════════════
-function openMod(mod){
+async function openMod(mod){
   try{
     APP.curMod=mod;
     const cfg=MCFG[mod];
@@ -12552,6 +12198,12 @@ function openMod(mod){
       try{renderLangModeSelector();}catch(e){console.error('renderLangModeSelector:',e);}
     } else {
       if(langTabEl)langTabEl.style.display='none';
+    }
+    // Lazy-load langue data si nécessaire
+    if(mod==='langues'){
+      const p=P();
+      const activeLangs=(p&&p.langs&&p.langs.length)?p.langs:['DE','IT','PT','RU','UK','AR','ZH'];
+      try{ await ensureLangsLoaded(activeLangs); }catch(e){ console.warn('ensureLangsLoaded:',e); }
     }
     let subs;
     try{
