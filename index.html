@@ -15381,8 +15381,8 @@ function renderAdvQCM(c, typeCfg, typeId){
     sttFeedback.style.cssText='font-size:13px;font-weight:700;min-height:24px;text-align:center;padding:2px 0';
     micBtn.onclick=()=>{
       sndTap();
-      const repTxt=item.rep||'';
-      const lang=_detectLang(repTxt);
+      const repTxt=item.mot||item.rep||'';
+      const lang=item.lang||_detectLang(repTxt);
       ttsRead(repTxt,lang);
       micBtn.innerHTML='⏳ Écoute…';
       micBtn.disabled=true;
@@ -15393,7 +15393,11 @@ function renderAdvQCM(c, typeCfg, typeId){
           function lev(a,b){const m=a.length,n=b.length;const d=[];for(let i=0;i<=m;i++)d[i]=[i];for(let j=0;j<=n;j++)d[0][j]=j;for(let i=1;i<=m;i++)for(let j=1;j<=n;j++)d[i][j]=a[i-1]===b[j-1]?d[i-1][j-1]:1+Math.min(d[i-1][j],d[i][j-1],d[i-1][j-1]);return d[m][n];}
           const a=transcript.toLowerCase().trim();
           const b=repTxt.toLowerCase().trim();
-          const score=1-lev(a,b)/Math.max(a.length,b.length,1);
+          // Si le mot est contenu dans le transcript, score parfait
+          const aWords=a.split(/\s+/);
+          const containsWord=b.length>0&&(a.includes(b)||aWords.some(w=>1-lev(w,b)/Math.max(w.length,b.length,1)>=0.8));
+          const rawScore=1-lev(a,b)/Math.max(a.length,b.length,1);
+          const score=containsWord?Math.max(rawScore,0.9):rawScore;
           if(score>=0.85){sttFeedback.innerHTML='✅ Parfait !';sttFeedback.style.color='var(--m)';}
           else if(score>=0.55){sttFeedback.innerHTML='🟡 Presque ! "'+transcript+'"';sttFeedback.style.color='#FF9F1C';}
           else{sttFeedback.innerHTML='🔴 Réessaie ! "'+transcript+'"';sttFeedback.style.color='var(--c)';}
