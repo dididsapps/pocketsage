@@ -12507,7 +12507,7 @@ function renderPrononcer(tabMeta){
 function startPronoEval(item,micBtn,feedbackZone,attBar){
   const SpeechRec=window.SpeechRecognition||window.webkitSpeechRecognition;
   if(!SpeechRec){
-    feedbackZone.innerHTML='<div style="color:#E74C3C;font-size:14px;padding:12px;background:#fdecea;border-radius:12px;">⚠️ La reconnaissance vocale n\'est pas disponible sur ce navigateur.<br><small>Essaie Chrome sur Android ou iOS Safari.</small></div>';
+    feedbackZone.innerHTML='<div style="color:#E74C3C;font-size:14px;padding:12px;background:#fdecea;border-radius:12px;">⚠️ La reconnaissance vocale n\'est pas disponible sur ce navigateur.<br><small>Essaie Chrome (Android/PC) ou Safari (iPhone/iPad) — une connexion Internet est requise.</small></div>';
     return;
   }
 
