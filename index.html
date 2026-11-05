@@ -10467,7 +10467,7 @@ function elPlayNuit(id,txt){
   _ttsPlaying=false;_ttsQueue=[];_ttsStopResumeLoop();_elStop();
   try{if(window.speechSynthesis)window.speechSynthesis.cancel();}catch(e){}
   // Essai R2
-  const url=`${AUDIO_CDN}/audio/nuit/${id}.mp3`;
+  const lang=(APP&&APP.lang&&APP.lang!=='FR')?`_${APP.lang}`:"";const url=`${AUDIO_CDN}/audio/nuit/${id}${lang}.mp3`;
   console.log('[EL] R2 nuit check',url);
   try{
     const ac=getAC();
