@@ -203,6 +203,7 @@ body.car .scr{background:var(--car-bg)}
   background:var(--w);color:var(--tl)}
 .stab.on,.ltab.on{background:var(--v);color:#fff;border-color:var(--v)}
 .stab-locked{opacity:.55;cursor:default!important}
+.stab-sm{padding:5px 10px;font-size:12px;border-radius:14px;}
 .stab-mix{border-color:#FF9F1C!important;color:#FF9F1C!important;font-weight:800!important}
 .stab-mix.on{background:#FF9F1C!important;color:#fff!important;border-color:#FF9F1C!important}
 .ltab{font-size:13px;padding:8px 15px}
@@ -2640,12 +2641,54 @@ denombrement:[
 {id:"DN-010",type:"Compter",enonce:"50% de 80 = ?",rep:40,choix:[20,40,60],diff:3,age:"11-14",hint:"50% = la moitié !"}
 ],
 labyrinthes:[
+// ── 4-6 ans : directions simples
 {id:"LT-001",type:"Labyrinthe",enonce:"🐰 La carotte est à DROITE. Quelle direction ?",rep:"Droite",choix:["Gauche","Droite","Tout droit"],diff:1,age:"4-6",hint:"La carotte est à droite !"},
 {id:"LT-002",type:"Labyrinthe",enonce:"🧀 3 portes : Nord, Sud, Est. Fromage au SUD.",rep:"Sud",choix:["Nord","Sud","Est"],diff:1,age:"4-6",hint:"Le Sud c'est vers le bas !"},
 {id:"LT-003",type:"Labyrinthe",enonce:"🚀 Astéroïdes bloquent HAUT et BAS.",rep:"Droite",choix:["Haut","Bas","Droite"],diff:1,age:"4-6",hint:"Deux bloquées, une reste !"},
 {id:"LT-004",type:"Labyrinthe",enonce:"🦊 4 chemins : 🌲Dense, 🏔️Haute, 🌊Sans pont, 🌾Libre !",rep:"Prairie 🌾",choix:["Forêt 🌲","Montagne 🏔️","Rivière 🌊","Prairie 🌾"],diff:1,age:"4-6",hint:"Un seul est libre !"},
+{id:"LT-007",type:"Labyrinthe",enonce:"🐻 L'ours veut son miel. Il est devant lui ou derrière lui ?",rep:"Devant",choix:["Derrière","Devant","À côté"],diff:1,age:"4-6",hint:"Regarde dans la même direction que toi !"},
+{id:"LT-008",type:"Labyrinthe",enonce:"🌟 L'étoile brille à GAUCHE. Où vas-tu ?",rep:"Gauche",choix:["Droite","Gauche","En haut"],diff:1,age:"4-6",hint:"Lève ta main gauche !"},
+{id:"LT-009",type:"Labyrinthe",enonce:"🐠 Le poisson nage vers le NORD. Nord = ?",rep:"En haut",choix:["En bas","À droite","En haut"],diff:1,age:"4-6",hint:"Sur une carte, Nord = vers le haut !"},
+{id:"LT-010",type:"Labyrinthe",enonce:"🏠 Maison à droite, arbre à gauche, pont devant. Par où pour traverser ?",rep:"Devant (pont)",choix:["Droite (maison)","Gauche (arbre)","Devant (pont)"],diff:1,age:"4-6",hint:"Un pont permet de traverser !"},
+// ── 5-7 ans : séquences et logique
 {id:"LT-005",type:"Labyrinthe",enonce:"🐸 grand → petit → grand → ???",rep:"Petit",choix:["Grand","Petit","Moyen"],diff:2,age:"5-7",hint:"Le motif se répète !"},
-{id:"LT-006",type:"Labyrinthe",enonce:"🧸 A=5pas, B=3pas(bloqué!), C=4pas libre. Le meilleur ?",rep:"Chemin C",choix:["Chemin A","Chemin B","Chemin C"],diff:2,age:"5-7",hint:"B bloqué, A ou C ?"}
+{id:"LT-006",type:"Labyrinthe",enonce:"🧸 A=5pas, B=3pas(bloqué!), C=4pas libre. Le meilleur ?",rep:"Chemin C",choix:["Chemin A","Chemin B","Chemin C"],diff:2,age:"5-7",hint:"B bloqué, A ou C ?"},
+{id:"LT-011",type:"Labyrinthe",enonce:"🐦 L'oiseau vole : haut-bas-haut-bas-??? Il vole haut ou bas ?",rep:"Haut",choix:["Haut","Bas","Il s'arrête"],diff:2,age:"5-7",hint:"Alterne : haut-bas-haut-bas-..."},
+{id:"LT-012",type:"Labyrinthe",enonce:"🌈 Rouge→Vert→Bleu→Rouge→??? Quelle couleur suit ?",rep:"Vert",choix:["Rouge","Vert","Bleu"],diff:2,age:"5-7",hint:"Le motif à 3 couleurs recommence !"},
+{id:"LT-013",type:"Labyrinthe",enonce:"🐌 L'escargot fait 2 pas puis tourne. Après 4 pas il a tourné combien de fois ?",rep:"2 fois",choix:["1 fois","2 fois","4 fois"],diff:2,age:"5-7",hint:"Compte : 2 pas→tourne, 2 pas→tourne..."},
+{id:"LT-014",type:"Labyrinthe",enonce:"🗺️ Tu vas DROITE puis GAUCHE. Tu es toujours au même endroit qu'au début ?",rep:"Non, décalé",choix:["Oui, au départ","Non, décalé","Impossible"],diff:2,age:"5-7",hint:"Droite puis gauche : tu avances quand même !"},
+{id:"LT-015",type:"Labyrinthe",enonce:"🐛 Chemin A : 3 virages. Chemin B : 5 virages. Lequel est le plus direct ?",rep:"Chemin A",choix:["Chemin A","Chemin B","Pareil"],diff:2,age:"5-7",hint:"Moins de virages = plus direct !"},
+// ── 6-8 ans : coordonnées et plans
+{id:"LT-016",type:"Labyrinthe",enonce:"🗺️ Sur un plan 3×3, tu es en A1. Tu vas à droite (B1) puis en bas (B2). Tu es où ?",rep:"B2",choix:["A2","B2","C2"],diff:3,age:"6-8",hint:"Droite : lettre monte. Bas : chiffre monte."},
+{id:"LT-017",type:"Labyrinthe",enonce:"🧭 Tu regardes vers le Nord. Tu tournes 90° à droite. Tu regardes maintenant ?",rep:"Est",choix:["Ouest","Est","Sud"],diff:3,age:"6-8",hint:"Nord→Est→Sud→Ouest dans le sens des aiguilles d'une montre."},
+{id:"LT-018",type:"Labyrinthe",enonce:"📍 Case (2,3) : va à droite = (?,3). Quelle est la nouvelle coordonnée X ?",rep:"3",choix:["1","3","2"],diff:3,age:"6-8",hint:"Aller à droite = X augmente de 1."},
+{id:"LT-019",type:"Labyrinthe",enonce:"🔄 Tu fais 2 tours à gauche depuis le Nord. Tu regardes vers ?",rep:"Sud",choix:["Nord","Est","Sud"],diff:3,age:"6-8",hint:"Gauche depuis Nord = Ouest. Encore gauche = Sud."},
+{id:"LT-020",type:"Labyrinthe",enonce:"🗺️ Chemin le plus court de A à C en passant par B ? A→B=4pas, A→C=6pas, B→C=3pas.",rep:"A→B→C (7 pas)",choix:["A→C direct (6 pas)","A→B→C (7 pas)","Impossible"],diff:3,age:"6-8",hint:"6 < 7 : le chemin direct est plus court !"},
+{id:"LT-021",type:"Labyrinthe",enonce:"🏁 Grille 4×4 : tu pars de (1,1) et tu vas en (4,4). Combien de pas minimum ?",rep:"6 pas",choix:["4 pas","6 pas","8 pas"],diff:3,age:"6-8",hint:"3 droite + 3 bas = 6 pas minimum."},
+{id:"LT-022",type:"Labyrinthe",enonce:"🧭 Cap SUD-OUEST. C'est entre quelle direction et quelle direction ?",rep:"Sud et Ouest",choix:["Nord et Est","Sud et Ouest","Est et Sud"],diff:3,age:"6-8",hint:"Sud-Ouest = entre le Sud et l'Ouest !"},
+// ── 8-10 ans : logique spatiale avancée
+{id:"LT-023",type:"Labyrinthe",enonce:"🗺️ Tu avances 3 cases Nord, 2 cases Est, 1 case Sud. Déplacement net ?",rep:"2 N, 2 E",choix:["3 N, 2 E","2 N, 2 E","1 N, 2 E"],diff:4,age:"8-10",hint:"Nord-Sud s'annulent partiellement : 3N−1S=2N."},
+{id:"LT-024",type:"Labyrinthe",enonce:"🔄 Tu tournes à droite 3 fois. C'est comme tourner à gauche combien de fois ?",rep:"1 fois",choix:["1 fois","2 fois","3 fois"],diff:4,age:"8-10",hint:"3 droites = 1 gauche (270° = 90° autre sens)."},
+{id:"LT-025",type:"Labyrinthe",enonce:"🗺️ Un labyrinthe 5×5 a 25 cases. Si 6 sont bloquées, combien restent accessibles ?",rep:"19",choix:["16","19","20"],diff:4,age:"8-10",hint:"25 − 6 = ?"},
+{id:"LT-026",type:"Labyrinthe",enonce:"📐 Tu cherches la sortie. Il y a 3 chemins. A mène à A. B est sans issue. Laquelle choisir ?",rep:"Chemin C",choix:["Chemin A (boucle)","Chemin B (sans issue)","Chemin C"],diff:4,age:"8-10",hint:"Élimine les impossibles : A boucle, B bloque..."},
+{id:"LT-027",type:"Labyrinthe",enonce:"🧭 Depuis (0,0) : +3x, +2y, −1x, −2y. Coordonnées finales ?",rep:"(2, 0)",choix:["(3,2)","(2,0)","(1,1)"],diff:4,age:"8-10",hint:"X: 0+3−1=2. Y: 0+2−2=0."},
+{id:"LT-028",type:"Labyrinthe",enonce:"🗺️ Tu dois traverser 3 zones. Zone 1 : 2 chemins. Zone 2 : 3 chemins. Zone 3 : 2 chemins. Combien de routes totales ?",rep:"12",choix:["7","12","18"],diff:4,age:"8-10",hint:"Multiplie : 2 × 3 × 2 = ?"},
+{id:"LT-029",type:"Labyrinthe",enonce:"🔍 Un robot avance de 1, tourne à droite, avance de 2, tourne à gauche, avance de 1. Il a parcouru combien de cases ?",rep:"4 cases",choix:["3 cases","4 cases","6 cases"],diff:4,age:"8-10",hint:"1 + 2 + 1 = 4 cases avancées en tout."},
+// ── 10-12 ans : plans, angles, distances
+{id:"LT-030",type:"Labyrinthe",enonce:"📐 Dans un labyrinthe, si chaque pas = 10cm et tu fais 15 pas, tu as parcouru ?",rep:"150 cm = 1,5 m",choix:["100 cm","150 cm = 1,5 m","200 cm"],diff:5,age:"10-12",hint:"15 × 10 = 150 cm = 1,5 m."},
+{id:"LT-031",type:"Labyrinthe",enonce:"🧭 Le trésor est à 45° entre Nord et Est. Dans quelle direction ?",rep:"Nord-Est",choix:["Nord-Ouest","Nord-Est","Sud-Est"],diff:5,age:"10-12",hint:"À mi-chemin entre Nord et Est = Nord-Est."},
+{id:"LT-032",type:"Labyrinthe",enonce:"🗺️ Un robot en (3,4) doit aller en (7,1). Combien de pas au minimum (grille) ?",rep:"7 pas",choix:["5 pas","7 pas","10 pas"],diff:5,age:"10-12",hint:"|7−3| + |1−4| = 4 + 3 = 7 (distance de Manhattan)."},
+{id:"LT-033",type:"Labyrinthe",enonce:"🔄 Tu fais 4 rotations de 90° à droite. Tu regardes maintenant dans quelle direction (tu étais vers le Nord) ?",rep:"Nord (retour au départ)",choix:["Est","Ouest","Nord (retour au départ)"],diff:5,age:"10-12",hint:"4 × 90° = 360° = tour complet = même direction !"},
+{id:"LT-034",type:"Labyrinthe",enonce:"🗺️ Labyrinthe : nœuds A,B,C. AB=5, BC=3, AC=7. Le chemin A→C via B est-il plus court que direct ?",rep:"A→B→C = 8, plus long",choix:["A→B→C = 8, plus long","A→B→C = 8, pareil","A→B→C = 6, plus court"],diff:5,age:"10-12",hint:"5+3=8 vs 7 direct → direct est plus court !"},
+{id:"LT-035",type:"Labyrinthe",enonce:"📊 Dans un labyrinthe, tu exploré 60% des cases. Sur 50 cases totales, combien reste-t-il à explorer ?",rep:"20 cases",choix:["15 cases","20 cases","25 cases"],diff:5,age:"10-12",hint:"60% de 50 = 30 explorées → 50−30 = 20."},
+// ── 12-15 ans : logique et algorithmes
+{id:"LT-036",type:"Labyrinthe",enonce:"🤖 Algorithme 'main gauche' : toujours la main gauche au mur. Garantit-il de sortir d'un labyrinthe ?",rep:"Oui si sans ilots",choix:["Toujours oui","Oui si sans ilots","Non jamais"],diff:6,age:"12-15",hint:"La règle de la main marche si le labyrinthe est simplement connexe (pas d'îles)."},
+{id:"LT-037",type:"Labyrinthe",enonce:"📐 Distance euclidienne entre (1,1) et (4,5) ?",rep:"5 unités",choix:["√12","5 unités","7 unités"],diff:6,age:"12-15",hint:"√((4−1)²+(5−1)²) = √(9+16) = √25 = 5."},
+{id:"LT-038",type:"Labyrinthe",enonce:"🧩 BFS vs DFS pour trouver le chemin le plus court dans un labyrinthe : lequel choisir ?",rep:"BFS (largeur d'abord)",choix:["DFS (profondeur)","BFS (largeur d'abord)","Les deux pareil"],diff:6,age:"12-15",hint:"BFS garantit le plus court chemin en nombre de pas !"},
+{id:"LT-039",type:"Labyrinthe",enonce:"🔢 Un labyrinthe a N cases. Dans le pire cas, BFS visite combien de cases ?",rep:"Toutes (N cases)",choix:["N/2 cases","Toutes (N cases)","√N cases"],diff:6,age:"12-15",hint:"Dans le pire cas, BFS doit explorer tout le labyrinthe."},
+{id:"LT-040",type:"Labyrinthe",enonce:"🗺️ Vecteur déplacement : tu vas de (2,3) à (8,7). Le vecteur est ?",rep:"(6, 4)",choix:["(4,6)","(6,4)","(10,10)"],diff:6,age:"12-15",hint:"(8−2, 7−3) = (6, 4)."},
+{id:"LT-041",type:"Labyrinthe",enonce:"📐 Angle entre Nord (0°) et Sud-Est (135°). Combien de degrés ?",rep:"135°",choix:["90°","135°","180°"],diff:6,age:"12-15",hint:"Nord=0°, Est=90°, Sud-Est=135°."},
+{id:"LT-042",type:"Labyrinthe",enonce:"🤖 Un robot tourne de 270° à gauche. C'est équivalent à tourner combien à droite ?",rep:"90° à droite",choix:["270° à droite","90° à droite","180° à droite"],diff:6,age:"12-15",hint:"360°−270°=90° dans l'autre sens."},
 ],
 politesse:[
 {id:"PO-001",situation:"Ton ami te prête son jouet. Que dis-tu ?",choix:[{t:"Je prends sans rien dire.",s:false},{t:"Merci beaucoup, c'est gentil !",s:true},{t:"C'est pas beau !",s:false}],sage:"Merci beaucoup, c'est gentil !",expl:"Quand quelqu'un est gentil, on dit MERCI !",diff:1,age:"4-6",hint:"Quel mot magique ?"},
@@ -12618,7 +12661,8 @@ function showPronoResult(score,said,item,micBtn,feedbackZone,attBar){
 // MODULE TABLES DE MULTIPLICATION
 // 5 techniques visuelles
 // ════════════════════════════════════════════
-let _tablesState={technique:'batonnets',op:'x',n1:2,n2:3,score:0,streak:0,flashIdx:0};
+let _tablesState={technique:'batonnets',op:'x',n1:2,n2:3,score:0,streak:0,flashIdx:0,
+  batonSub:'decouverte', pythaFam:0, histSub:'facile', trachtN:9, perleNiveau:0, flashOp:'x'};
 
 function renderTables(){
   const el=document.getElementById('elist');
@@ -12626,17 +12670,18 @@ function renderTables(){
   const wrap=document.createElement('div');
   wrap.style.cssText='padding:0 4px 80px;';
 
-  // ── Sélecteur de technique
+  // ── Sélecteur de technique (ligne 1)
   const techniques=[
-    {k:'batonnets', l:'🎋 Bâtonnets', age:'6-9 ans'},
-    {k:'perles',    l:'🟡 Perles',     age:'4-8 ans'},
-    {k:'pythagore', l:'🏛️ Pythagore', age:'7-10 ans'},
-    {k:'histoires', l:'🧠 Histoires',  age:'7-11 ans'},
+    {k:'mix',        l:'🎲 Mix',         age:'tous âges'},
+    {k:'batonnets',  l:'🎋 Bâtonnets',   age:'6-9 ans'},
+    {k:'perles',     l:'🟡 Perles',      age:'4-8 ans'},
+    {k:'pythagore',  l:'🏛️ Pythagore',  age:'7-10 ans'},
+    {k:'histoires',  l:'🧠 Histoires',   age:'7-11 ans'},
     {k:'trachtenberg',l:'⚡ Trachtenberg',age:'10-15 ans'},
-    {k:'flash',     l:'🎯 Flash',      age:'8-15 ans'},
+    {k:'flash',      l:'🎯 Flash',       age:'8-15 ans'},
   ];
   const techBar=document.createElement('div');
-  techBar.style.cssText='display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;';
+  techBar.style.cssText='display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;';
   techniques.forEach(tk=>{
     const b=document.createElement('button');
     b.className='stab'+(tk.k===_tablesState.technique?' on':'');
@@ -12651,11 +12696,85 @@ function renderTables(){
   });
   wrap.appendChild(techBar);
 
+  // ── Sous-menus selon la technique (ligne 2)
+  const subBar=document.createElement('div');
+  subBar.style.cssText='display:flex;gap:5px;flex-wrap:wrap;margin-bottom:14px;min-height:28px;';
+
+  if(_tablesState.technique==='batonnets'){
+    [['decouverte','🟢 Découverte','2-5'],['intermediaire','🟡 Intermédiaire','3-9'],['avance','🔴 Avancé ×÷','6-12']].forEach(([k,l,r])=>{
+      const b=document.createElement('button');b.className='stab stab-sm'+(_tablesState.batonSub===k?' on':'');
+      b.innerHTML=`${l} <span style="font-size:10px;opacity:.6;">${r}</span>`;
+      b.onclick=()=>{sndTap();_tablesState.batonSub=k;renderTables();};subBar.appendChild(b);
+    });
+  } else if(_tablesState.technique==='pythagore'){
+    [['petites','🌱 ×2 → ×5'],['grandes','🚀 ×6 → ×10'],['tout','🌍 Toute la table']].forEach(([k,l])=>{
+      const b=document.createElement('button');b.className='stab stab-sm'+(_tablesState.pythaFam===(['petites','grandes','tout'].indexOf(k))?' on':'');
+      b.textContent=l;b.onclick=()=>{sndTap();_tablesState.pythaFam=['petites','grandes','tout'].indexOf(k);renderTables();};subBar.appendChild(b);
+    });
+  } else if(_tablesState.technique==='histoires'){
+    [['facile','🌱 ×2→×5'],['moyen','⭐ ×6→×7'],['difficile','🔥 ×8→×9'],['tout','🎲 Toutes']].forEach(([k,l])=>{
+      const b=document.createElement('button');b.className='stab stab-sm'+(_tablesState.histSub===k?' on':'');
+      b.textContent=l;b.onclick=()=>{sndTap();_tablesState.histSub=k;renderTables();};subBar.appendChild(b);
+    });
+  } else if(_tablesState.technique==='trachtenberg'){
+    [[2,'×2','8+'],[3,'×3','9+'],[4,'×4','9+'],[5,'×5','8+'],[6,'×6','10+'],[7,'×7','10+'],[8,'×8','10+'],[9,'×9','9+'],[11,'×11','9+'],[12,'×12','10+']].forEach(([n,l,a])=>{
+      const b=document.createElement('button');b.className='stab stab-sm'+(_tablesState.trachtN===n?' on':'');
+      b.innerHTML=`${l} <span style="font-size:10px;opacity:.6;">${a}</span>`;
+      b.onclick=()=>{sndTap();_tablesState.trachtN=n;renderTables();};subBar.appendChild(b);
+    });
+  } else if(_tablesState.technique==='flash'){
+    [['x','✖️ ×'],['div','➗ ÷'],['mix','🔀 Mix']].forEach(([k,l])=>{
+      const b=document.createElement('button');b.className='stab stab-sm'+(_tablesState.flashOp===k?' on':'');
+      b.textContent=l;b.onclick=()=>{sndTap();_tablesState.flashOp=k;_tablesState.score=0;_tablesState.streak=0;renderTables();};subBar.appendChild(b);
+    });
+  }
+
+  if(subBar.children.length) wrap.appendChild(subBar);
+
   // ── Dispatcher
-  const fn={batonnets:renderBatonnets,perles:renderPerles,pythagore:renderPythagore,histoires:renderHistoires,trachtenberg:renderTrachtenberg,flash:renderFlash};
+  const fn={mix:renderMixTables,batonnets:renderBatonnets,perles:renderPerles,pythagore:renderPythagore,histoires:renderHistoires,trachtenberg:renderTrachtenberg,flash:renderFlash};
   (fn[_tablesState.technique]||renderBatonnets)(wrap);
 
   el.appendChild(wrap);
+}
+
+// ── Mode Mix : pioche aléatoire dans toutes les techniques
+function renderMixTables(wrap){
+  const techniques=['batonnets','perles','pythagore','histoires','flash'];
+  const p=P();const age=p?.age||8;
+  // Filtre selon l'âge
+  const avail=techniques.filter(t=>{
+    if(t==='perles') return age<=8;
+    if(t==='batonnets') return age>=6;
+    if(t==='pythagore') return age>=7;
+    if(t==='histoires') return age>=7;
+    return true;
+  });
+  const info=document.createElement('div');
+  info.style.cssText='background:linear-gradient(135deg,#845EF7,#5B3FD4);color:#fff;border-radius:16px;padding:16px;margin-bottom:16px;font-size:14px;';
+  info.innerHTML=`<strong>🎲 Mode Mix</strong><br>Chaque question pioche dans une technique différente — surprise à chaque fois !<br><span style="font-size:12px;opacity:.8;">${avail.length} techniques actives pour ton âge</span>`;
+  wrap.appendChild(info);
+  if(!_tablesState.mixTech||!avail.includes(_tablesState.mixTech)){
+    _tablesState.mixTech=avail[Math.floor(Math.random()*avail.length)];
+  }
+  const techLabel={batonnets:'🎋 Bâtonnets',perles:'🟡 Perles',pythagore:'🏛️ Pythagore',histoires:'🧠 Histoires',flash:'🎯 Flash'};
+  const badge=document.createElement('div');
+  badge.style.cssText='text-align:center;font-size:13px;font-weight:700;margin-bottom:12px;color:var(--acc,#6C63FF);';
+  badge.textContent='Technique du moment : '+techLabel[_tablesState.mixTech];
+  wrap.appendChild(badge);
+  const fn={batonnets:renderBatonnets,perles:renderPerles,pythagore:renderPythagore,histoires:renderHistoires,flash:renderFlash};
+  (fn[_tablesState.mixTech]||renderFlash)(wrap);
+  // Bouton "Changer de technique"
+  const chg=document.createElement('button');
+  chg.style.cssText='display:block;margin:14px auto 0;padding:10px 24px;border-radius:12px;border:2px solid #845EF7;background:transparent;color:#845EF7;font-weight:700;cursor:pointer;';
+  chg.textContent='🎲 Autre technique';
+  chg.onclick=()=>{
+    sndTap();
+    const others=avail.filter(t=>t!==_tablesState.mixTech);
+    _tablesState.mixTech=others[Math.floor(Math.random()*others.length)];
+    renderTables();
+  };
+  wrap.appendChild(chg);
 }
 
 // ─────────────────────────────────────────
@@ -12664,12 +12783,15 @@ function renderTables(){
 function renderBatonnets(wrap){
   const p=P();
   const age=p?.age||8;
-  // Choix des facteurs selon l'âge
-  const maxN=age<=7?5:age<=9?9:12;
+  // Choix des facteurs selon le sous-menu de difficulté
+  const sub=_tablesState.batonSub||'decouverte';
+  const maxN=sub==='decouverte'?5:sub==='intermediaire'?9:12;
+  const showDiv=(sub==='avance');
 
   const intro=document.createElement('div');
   intro.style.cssText='background:linear-gradient(135deg,#4CAF50,#2E7D32);color:#fff;border-radius:16px;padding:16px;margin-bottom:16px;font-size:14px;';
-  intro.innerHTML=`<strong>🎋 Méthode des bâtonnets japonais</strong><br>Dessine des lignes et compte leurs croisements — pas besoin de mémoriser !`;
+  const subLabel={decouverte:'×2 à ×5 — commence doucement !',intermediaire:'×2 à ×9 — tu progresses !',avance:'×2 à ×12 avec ÷ — expert !'};
+  intro.innerHTML=`<strong>🎋 Méthode des bâtonnets japonais</strong><br>${subLabel[sub]||'Compte les croisements de lignes !'}`;
   wrap.appendChild(intro);
 
   // Sélecteurs n1 × n2
@@ -12712,6 +12834,19 @@ function renderBatonnets(wrap){
     sndCorrect&&sndCorrect();
   };
   wrap.appendChild(showBtn);
+
+  // Mode division en mode avancé
+  if(showDiv){
+    const divBtn=document.createElement('button');
+    divBtn.style.cssText='display:block;margin:8px auto;padding:10px 24px;border-radius:12px;border:2px solid #FF9800;background:transparent;color:#FF9800;font-weight:700;cursor:pointer;';
+    divBtn.textContent='🔄 Afficher la division';
+    divBtn.onclick=()=>{
+      const prod=_tablesState.n1*_tablesState.n2;
+      resDiv.innerHTML=`<div style="color:var(--tl);font-size:14px;">Division inverse : ${prod} ÷ ${_tablesState.n1} = <strong style="color:#FF9800;">${_tablesState.n2}</strong></div>`;
+      sndTap&&sndTap();
+    };
+    wrap.appendChild(divBtn);
+  }
 
   // Explication pas à pas
   const expDiv=document.createElement('div');
@@ -12764,9 +12899,14 @@ function renderBatonnets(wrap){
 function renderPythagore(wrap){
   const intro=document.createElement('div');
   intro.style.cssText='background:linear-gradient(135deg,#2196F3,#0D47A1);color:#fff;border-radius:16px;padding:16px;margin-bottom:16px;font-size:14px;';
-  intro.innerHTML=`<strong>🏛️ Table de Pythagore</strong><br>Clique sur une case pour voir la multiplication. Repère les patterns de couleur !`;
+  const famLabel=['🌱 Tables ×2 à ×5 — les plus faciles !','🚀 Tables ×6 à ×10 — les plus dures !','🌍 Toute la table — vision globale !'];
+  const fam=_tablesState.pythaFam||0;
+  intro.innerHTML=`<strong>🏛️ Table de Pythagore</strong><br>${famLabel[fam]||famLabel[0]}<br>Clique sur une case pour voir la multiplication !`;
   wrap.appendChild(intro);
 
+  // Plage de la grille selon la famille
+  const famRanges=[[2,5],[6,10],[1,10]];
+  const [minV,maxV]=famRanges[fam]||[1,10];
   const size=10;
   const colors=['','#FF6B6B','#FF9800','#FFD166','#4CAF50','#00BCD4','#2196F3','#9C27B0','#E91E63','#795548','#607D8B'];
 
@@ -12780,16 +12920,18 @@ function renderPythagore(wrap){
   html+='</tr>';
 
   for(let i=1;i<=size;i++){
-    html+=`<tr><th style="text-align:center;color:var(--tl);font-weight:700;padding:2px 4px;">×${i}</th>`;
+    const rowActive=(i>=minV&&i<=maxV);
+    html+=`<tr><th style="text-align:center;color:var(--tl);font-weight:700;padding:2px 4px;opacity:${rowActive?1:.3};">×${i}</th>`;
     for(let j=1;j<=size;j++){
       const val=i*j;
       const col=colors[i]||'#999';
       const alpha=0.15+(j/size)*0.4;
+      const dimmed=(!rowActive||(j<minV||j>maxV));
       html+=`<td onclick="this.style.background='${col}';this.style.color='#fff';this.style.fontWeight='900';sndTap&&sndTap();"
         title="${i}×${j}=${val}"
         style="text-align:center;cursor:pointer;border-radius:6px;padding:3px;border:1px solid var(--bg2,#eee);
                background:${col}${Math.round(alpha*255).toString(16).padStart(2,'0')};
-               color:var(--fg);transition:all .2s;">${val}</td>`;
+               color:var(--fg);transition:all .2s;opacity:${dimmed?.2:1};">${val}</td>`;
     }
     html+='</tr>';
   }
@@ -12810,7 +12952,11 @@ function renderPythagore(wrap){
 }
 
 function startPythaQuiz(container){
-  const a=Math.floor(Math.random()*9)+2, b=Math.floor(Math.random()*9)+2;
+  const fam=_tablesState.pythaFam||0;
+  const ranges=[[2,5],[6,10],[1,10]];
+  const [mn,mx]=ranges[fam]||[1,10];
+  const rng=mx-mn+1;
+  const a=Math.floor(Math.random()*rng)+mn, b=Math.floor(Math.random()*rng)+mn;
   const rep=a*b;
   const wrong1=rep+(Math.floor(Math.random()*3)+1)*(Math.random()<.5?1:-1);
   const wrong2=rep+(Math.floor(Math.random()*5)+3)*(Math.random()<.5?1:-1);
@@ -12840,24 +12986,43 @@ function pythaAnswer(btn,val,rep,container){
 // 3. HISTOIRES MNÉMOTECHNIQUES
 // ─────────────────────────────────────────
 const HISTOIRES_MULTI={
-  '6x6':{img:'🎲🎲',story:'Six et six ont joué aux dés et trouvé **36** faces !'},
-  '6x7':{img:'🎸🎵',story:'Six guitaristes jouent 7 notes et composent **42** mélodies !'},
-  '6x8':{img:'🦷🦷',story:'Six dentistes voient 8 patients — **48** dents examinées !'},
-  '7x7':{img:'🌈✨',story:'Sept fées dansent 7 tours et créent **49** étoiles !'},
-  '7x8':{img:'🧊🌊',story:'Sept icebergs fondent en 8 jours — **56** flaques d\'eau !'},
-  '8x8':{img:'♟️♟️',story:'Huit rois ont 8 tours sur un échiquier : **64** cases !'},
-  '8x9':{img:'🍕🍕',story:'Huit pizzaïolos font 9 pizzas chacun — **72** pizzas !'},
-  '9x9':{img:'🏆🥇',story:'Neuf champions courent 9 tours — **81** mètres de gloire !'},
-  '6x9':{img:'🎯🎯',story:'Six archers lancent 9 flèches — **54** cibles atteintes !'},
-  '7x9':{img:'🌙⭐',story:'Sept nuits, 9 étoiles chaque nuit — **63** étoiles au total !'},
-  '3x7':{img:'🌸🌸',story:'Trois fées plantent 7 fleurs chacune — **21** fleurs dans le jardin !'},
-  '4x8':{img:'🦋🌺',story:'Quatre papillons visitent 8 fleurs — **32** pétales effleurés !'},
-  '5x6':{img:'⭐🌟',story:'Cinq héros ont 6 pouvoirs chacun — **30** super-pouvoirs !'},
-  '5x7':{img:'🐝🌼',story:'Cinq ruches ont 7 abeilles — **35** bourdonnements !'},
-  '5x8':{img:'🦅🌊',story:'Cinq aigles volent 8 heures — **40** heures de vol total !'},
-  '4x6':{img:'🎪🎠',story:'Quatre manèges tournent 6 fois — **24** tours de magie !'},
-  '4x7':{img:'🌊🐠',story:'Quatre plongeurs voient 7 poissons chacun — **28** poissons !'},
-  '3x8':{img:'🎸🎶',story:'Trois rockeurs jouent 8 chansons — **24** rappels réclamés !'},
+  // ── Tables faciles ×2 ×3 ×4 ×5
+  '2x2':{img:'👯',story:'Deux jumeaux ont **4** mains ensemble !',diff:'facile'},
+  '2x3':{img:'🐢🐢',story:'Deux tortues ont 3 pattes chacune — **6** pattes en tout !',diff:'facile'},
+  '2x4':{img:'🐱🐱',story:'Deux chats ont 4 pattes chacun — **8** pattes à câliner !',diff:'facile'},
+  '2x5':{img:'🖐️🖐️',story:'Deux amis se tapent dans les mains — **10** doigts !',diff:'facile'},
+  '2x6':{img:'🎲🎲',story:'Deux dés à 6 faces nous donnent **12** résultats possibles !',diff:'facile'},
+  '2x7':{img:'🌈🌈',story:'Deux arcs-en-ciel ont 7 couleurs chacun — **14** teintes !',diff:'facile'},
+  '2x8':{img:'🕷️🕷️',story:'Deux araignées ont 8 pattes chacune — **16** pattes !',diff:'facile'},
+  '2x9':{img:'🌟🌟',story:'Deux magiciens font 9 tours chacun — **18** tours de magie !',diff:'facile'},
+  '3x3':{img:'🔺🔺',story:'Trois triangles ont 3 côtés chacun — **9** côtés en tout !',diff:'facile'},
+  '3x4':{img:'🌸🌸',story:'Trois vases ont 4 fleurs chacun — **12** fleurs colorées !',diff:'facile'},
+  '3x5':{img:'⭐⭐',story:'Trois généraux ont 5 étoiles chacun — **15** étoiles sur leurs uniformes !',diff:'facile'},
+  '4x4':{img:'🐾🐾',story:'Quatre chiens ont 4 pattes chacun — **16** empreintes dans la neige !',diff:'facile'},
+  '4x5':{img:'🖐️🖐️',story:'Quatre enfants comptent leurs 5 doigts — **20** doigts en tout !',diff:'facile'},
+  '5x5':{img:'🌟✨',story:'Cinq étoiles à 5 branches — **25** pointes qui brillent !',diff:'facile'},
+  // ── Tables moyennes ×6 ×7
+  '3x6':{img:'🌸🌸',story:'Trois fées plantent 6 fleurs chacune — **18** fleurs dans le jardin magique !',diff:'moyen'},
+  '3x7':{img:'🌸🌸',story:'Trois fées plantent 7 fleurs chacune — **21** fleurs dans le jardin !',diff:'moyen'},
+  '4x6':{img:'🎪🎠',story:'Quatre manèges tournent 6 fois — **24** tours de magie !',diff:'moyen'},
+  '4x7':{img:'🌊🐠',story:'Quatre plongeurs voient 7 poissons chacun — **28** poissons !',diff:'moyen'},
+  '5x6':{img:'⭐🌟',story:'Cinq héros ont 6 pouvoirs chacun — **30** super-pouvoirs !',diff:'moyen'},
+  '5x7':{img:'🐝🌼',story:'Cinq ruches ont 7 abeilles — **35** bourdonnements dans le jardin !',diff:'moyen'},
+  '6x6':{img:'🎲🎲',story:'Six et six ont joué aux dés et trouvé **36** faces !',diff:'moyen'},
+  '6x7':{img:'🎸🎵',story:'Six guitaristes jouent 7 notes et composent **42** mélodies !',diff:'moyen'},
+  '7x7':{img:'🌈✨',story:'Sept fées dansent 7 tours et créent **49** étoiles dans le ciel !',diff:'moyen'},
+  // ── Tables difficiles ×8 ×9
+  '3x8':{img:'🎸🎶',story:'Trois rockeurs jouent 8 chansons — **24** rappels réclamés !',diff:'difficile'},
+  '4x8':{img:'🦋🌺',story:'Quatre papillons visitent 8 fleurs — **32** pétales effleurés !',diff:'difficile'},
+  '5x8':{img:'🦅🌊',story:'Cinq aigles volent 8 heures — **40** heures de vol total !',diff:'difficile'},
+  '5x9':{img:'🌙🌙',story:'Cinq loups hurlent 9 nuits — **45** chansons pour la lune !',diff:'difficile'},
+  '6x8':{img:'🦷🦷',story:'Six dentistes voient 8 patients — **48** dents examinées !',diff:'difficile'},
+  '6x9':{img:'🎯🎯',story:'Six archers lancent 9 flèches — **54** cibles atteintes !',diff:'difficile'},
+  '7x8':{img:'🧊🌊',story:'Sept icebergs fondent en 8 jours — **56** flaques d\'eau !',diff:'difficile'},
+  '7x9':{img:'🌙⭐',story:'Sept nuits, 9 étoiles chaque nuit — **63** étoiles au total !',diff:'difficile'},
+  '8x8':{img:'♟️♟️',story:'Huit rois ont 8 tours sur un échiquier : **64** cases !',diff:'difficile'},
+  '8x9':{img:'🍕🍕',story:'Huit pizzaïolos font 9 pizzas chacun — **72** pizzas !',diff:'difficile'},
+  '9x9':{img:'🏆🥇',story:'Neuf champions courent 9 tours — **81** mètres de gloire !',diff:'difficile'},
 };
 
 function renderHistoires(wrap){
@@ -12866,11 +13031,13 @@ function renderHistoires(wrap){
   intro.innerHTML=`<strong>🧠 Histoires mnémotechniques</strong><br>Une image et une histoire pour ne plus jamais oublier !`;
   wrap.appendChild(intro);
 
-  // Toutes les paires disponibles
-  const pairs=Object.keys(HISTOIRES_MULTI).map(k=>{
+  // Filtrer selon le sous-menu
+  const sub=_tablesState.histSub||'facile';
+  const allPairs=Object.keys(HISTOIRES_MULTI).map(k=>{
     const [a,b]=k.split('x').map(Number);
     return {k,a,b,...HISTOIRES_MULTI[k]};
-  }).sort(()=>Math.random()-.5);
+  });
+  const pairs=(sub==='tout'?allPairs:allPairs.filter(p=>p.diff===sub)).sort(()=>Math.random()-.5);
 
   let currentIdx=0;
 
@@ -12907,19 +13074,34 @@ function renderHistoires(wrap){
 // 4. MÉTHODE TRACHTENBERG
 // ─────────────────────────────────────────
 const TRACHTENBERG_RULES=[
-  {n:2, title:'× 2', age:'8+ ans', rule:'Double chaque chiffre (retenue si >9)',
+  {n:2, title:'× 2', age:'8+', rule:'Double chaque chiffre (retenue si >9)',
    steps:['Prends chaque chiffre de droite à gauche','Double-le','Si > 9, garde les unités et retiens 1'],
    ex:[{q:'23 × 2',a:'46',expl:'2×2=4, 2×3=6'},{q:'47 × 2',a:'94',expl:'2×7=14→4 retiens 1, 2×4+1=9'},{q:'56 × 2',a:'112',expl:'2×6=12→2 retiens 1, 2×5+1=11'}]},
-  {n:5, title:'× 5', age:'8+ ans', rule:'La moitié du suivant + 5 si le chiffre est impair',
-   steps:['Regarde chaque chiffre','Prends la moitié du chiffre suivant (sans virgule)','Si le chiffre actuel est impair, ajoute 5'],
-   ex:[{q:'24 × 5',a:'120',expl:'2÷2=1, 4÷2=2, 0 → 120'},{q:'13 × 5',a:'65',expl:'1 impair→+5=6, 3 impair→+5+0=5'},{q:'38 × 5',a:'190',expl:'3÷2=1+5=6→non: 3×5=15, 8×5=40 → 190'}]},
-  {n:9, title:'× 9', age:'9+ ans', rule:'(10 - chiffre) pour les unités, (chiffre voisin - 1) pour les dizaines',
-   steps:['Unités : 10 − chiffre','Dizaines : chiffre précédent − 1','Exemple : 7×9 → unités = 10−7=3, dizaines = chiffre avant (0) + 1 = 6 → 63'],
+  {n:3, title:'× 3', age:'9+', rule:'Ajoute le double du voisin droit + "excès sur 5" du chiffre actuel',
+   steps:['Pour chaque chiffre N (droite→gauche)','Calcule : (2×chiffre_droit) + (N≥5 ? N−5 : N)','Gère les retenues'],
+   ex:[{q:'21 × 3',a:'63',expl:'1→2×0+1=1, 2→2×1+2=4(+5)=... → 63'},{q:'32 × 3',a:'96',expl:'2→2×0+2=2 puis 2→6+2=8→... → 96'},{q:'14 × 3',a:'42',expl:'4→2×0+4=4, 1→2×4+1=9→... → 42'}]},
+  {n:4, title:'× 4', age:'9+', rule:'Double le résultat de ×2 (appliquer ×2 deux fois)',
+   steps:['Applique la règle ×2 au nombre','Applique la règle ×2 au résultat','Ou : calcule directement 4× = 2×(2×N)'],
+   ex:[{q:'21 × 4',a:'84',expl:'21×2=42, puis 42×2=84'},{q:'13 × 4',a:'52',expl:'13×2=26, puis 26×2=52'},{q:'25 × 4',a:'100',expl:'25×2=50, puis 50×2=100'}]},
+  {n:5, title:'× 5', age:'8+', rule:'La moitié du suivant + 5 si le chiffre est impair',
+   steps:['Regarde chaque chiffre','Prends la moitié du chiffre suivant (partie entière)','Si le chiffre actuel est impair, ajoute 5'],
+   ex:[{q:'24 × 5',a:'120',expl:'4÷2=2, 2÷2=1, ajoute 0 → 120'},{q:'13 × 5',a:'65',expl:'3 impair→3÷2+5=6, 1 impair→1÷2+5+0=5 → 65'},{q:'38 × 5',a:'190',expl:'8÷2=4, 3 impair→3÷2+5=6+4retenu=10... → 190'}]},
+  {n:6, title:'× 6', age:'10+', rule:'× 5 + lui-même (ou : moitié du suivant + 5 si impair + lui-même)',
+   steps:['N × 6 = N × 5 + N','Applique la règle ×5 au nombre','Additionne le nombre original'],
+   ex:[{q:'7 × 6',a:'42',expl:'7×5=35, 35+7=42'},{q:'8 × 6',a:'48',expl:'8×5=40, 40+8=48'},{q:'13 × 6',a:'78',expl:'13×5=65, 65+13=78'}]},
+  {n:7, title:'× 7', age:'10+', rule:'× 5 + × 2 (combiner les deux règles)',
+   steps:['N × 7 = N × 5 + N × 2','Applique la règle ×5','Applique la règle ×2 et additionne'],
+   ex:[{q:'6 × 7',a:'42',expl:'6×5=30, 6×2=12, 30+12=42'},{q:'8 × 7',a:'56',expl:'8×5=40, 8×2=16, 40+16=56'},{q:'9 × 7',a:'63',expl:'9×5=45, 9×2=18, 45+18=63'}]},
+  {n:8, title:'× 8', age:'10+', rule:'× 10 − × 2 (soustrais le double de 10 fois le nombre)',
+   steps:['N × 8 = N × 10 − N × 2','Multiplie par 10 (ajoute un 0)','Soustrais le double du nombre'],
+   ex:[{q:'7 × 8',a:'56',expl:'7×10=70, 7×2=14, 70−14=56'},{q:'9 × 8',a:'72',expl:'9×10=90, 9×2=18, 90−18=72'},{q:'12 × 8',a:'96',expl:'12×10=120, 12×2=24, 120−24=96'}]},
+  {n:9, title:'× 9', age:'9+', rule:'(10 − chiffre) pour les unités, (chiffre − 1) pour les dizaines',
+   steps:['Unités : 10 − chiffre','Dizaines : chiffre − 1','Exemple : 7×9 → unités=10−7=3, dizaines=7−1=6 → 63'],
    ex:[{q:'7 × 9',a:'63',expl:'10−7=3 (unités), 7−1=6 (dizaines) → 63'},{q:'8 × 9',a:'72',expl:'10−8=2, 8−1=7 → 72'},{q:'6 × 9',a:'54',expl:'10−6=4, 6−1=5 → 54'}]},
-  {n:11, title:'× 11', age:'9+ ans', rule:'Ajoute chaque chiffre à son voisin de droite',
+  {n:11, title:'× 11', age:'9+', rule:'Ajoute chaque chiffre à son voisin de droite',
    steps:['Recopie le chiffre des unités','Additionne chaque paire de chiffres adjacents','Recopie le premier chiffre'],
    ex:[{q:'23 × 11',a:'253',expl:'3 | 2+3=5 | 2 → 253'},{q:'45 × 11',a:'495',expl:'5 | 4+5=9 | 4 → 495'},{q:'57 × 11',a:'627',expl:'7 | 5+7=12 (2 retiens 1) | 5+1=6 → 627'}]},
-  {n:12, title:'× 12', age:'10+ ans', rule:'Double le chiffre + le voisin de droite',
+  {n:12, title:'× 12', age:'10+', rule:'Double le chiffre + le voisin de droite',
    steps:['Pour chaque chiffre : double-le','Ajoute le chiffre à sa droite','Gère les retenues'],
    ex:[{q:'23 × 12',a:'276',expl:'3×2=6 | 2×2+3=7 | 2×1=2 → 276'},{q:'14 × 12',a:'168',expl:'4×2=8 | 1×2+4=6 | 1×1=1 → 168'},{q:'35 × 12',a:'420',expl:'5×2=10 | 3×2+5+1=12 | 3+1=4 → 420'}]},
 ];
@@ -12931,20 +13113,7 @@ function renderTrachtenberg(wrap){
   wrap.appendChild(intro);
 
   if(!_tablesState.trachtN)_tablesState.trachtN=9;
-
-  // Sélecteur de table
-  const selRow=document.createElement('div');
-  selRow.style.cssText='display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;';
-  TRACHTENBERG_RULES.forEach(r=>{
-    const b=document.createElement('button');
-    b.className='stab'+(r.n===_tablesState.trachtN?' on':'');
-    b.innerHTML=`${r.title} <span style="font-size:10px;opacity:.65;">${r.age}</span>`;
-    b.onclick=()=>{sndTap();_tablesState.trachtN=r.n;renderTables();};
-    selRow.appendChild(b);
-  });
-  wrap.appendChild(selRow);
-
-  const rule=TRACHTENBERG_RULES.find(r=>r.n===_tablesState.trachtN)||TRACHTENBERG_RULES[2];
+  const rule=TRACHTENBERG_RULES.find(r=>r.n===_tablesState.trachtN)||TRACHTENBERG_RULES[7];
 
   // Règle
   const ruleCard=document.createElement('div');
