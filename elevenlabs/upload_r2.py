@@ -4,23 +4,16 @@ Upload les MP3 locaux (audio/fr/ et audio/en/) vers R2.
 Skip les fichiers déjà présents sur R2 (même taille).
 Usage : python3 upload_r2.py
 """
-
 import boto3, os
 
 R2_ENDPOINT   = "https://8ea67fd06083effd6f76efdefb92092f.r2.cloudflarestorage.com"
 R2_ACCESS_KEY = "6af471e11db12cb768c57df351e9a6fd"
 R2_SECRET_KEY = "4e7b9ad69ef6072024954beb7891fe710f1008719bfbf923341bdb35e1ed4f94"
 BUCKET        = "pocketsage-audio"
-
 BASE = os.path.join(os.path.dirname(__file__), "..")
 
-s3 = boto3.client(
-    "s3",
-    endpoint_url=R2_ENDPOINT,
-    aws_access_key_id=R2_ACCESS_KEY,
-    aws_secret_access_key=R2_SECRET_KEY,
-    region_name="auto",
-)
+s3 = boto3.client("s3", endpoint_url=R2_ENDPOINT,
+    aws_access_key_id=R2_ACCESS_KEY, aws_secret_access_key=R2_SECRET_KEY, region_name="auto")
 
 # Récupère la liste des fichiers déjà sur R2 avec leur taille
 print("📋 Récupération de la liste R2 existante...")
@@ -51,8 +44,7 @@ for lang_dir, r2_prefix in [("audio/fr", "audio/fr"), ("audio/en", "audio/en")]:
             skipped += 1
             continue
         try:
-            s3.upload_file(local_path, BUCKET, r2_key,
-                           ExtraArgs={"ContentType": "audio/mpeg"})
+            s3.upload_file(local_path, BUCKET, r2_key, ExtraArgs={"ContentType": "audio/mpeg"})
             print(f"  ✓ {r2_key}")
             uploaded += 1
         except Exception as e:
