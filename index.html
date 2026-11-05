@@ -15391,13 +15391,22 @@ function renderAdvQCM(c, typeCfg, typeId){
         sttFeedback.textContent='';
         sttStart(lang,(transcript)=>{
           function lev(a,b){const m=a.length,n=b.length;const d=[];for(let i=0;i<=m;i++)d[i]=[i];for(let j=0;j<=n;j++)d[0][j]=j;for(let i=1;i<=m;i++)for(let j=1;j<=n;j++)d[i][j]=a[i-1]===b[j-1]?d[i-1][j-1]:1+Math.min(d[i-1][j],d[i][j-1],d[i-1][j-1]);return d[m][n];}
-          const a=transcript.toLowerCase().trim();
-          const b=repTxt.toLowerCase().trim();
-          // Si le mot est contenu dans le transcript, score parfait
+          const a=transcript.toLowerCase().replace(/[^\w\s]/g,'').trim();
+          const b=repTxt.toLowerCase().replace(/[^\w\s]/g,'').trim();
           const aWords=a.split(/\s+/);
-          const containsWord=b.length>0&&(a.includes(b)||aWords.some(w=>1-lev(w,b)/Math.max(w.length,b.length,1)>=0.8));
-          const rawScore=1-lev(a,b)/Math.max(a.length,b.length,1);
-          const score=containsWord?Math.max(rawScore,0.9):rawScore;
+          const bWords=b.split(/\s+/);
+          let score;
+          if(bWords.length===1){
+            // Mot court : chercher le meilleur mot dans le transcript
+            score=aWords.reduce((best,w)=>Math.max(best,1-lev(w,b)/Math.max(w.length,b.length,1)),0);
+          } else {
+            // Phrase : Levenshtein global + couverture des mots-clés
+            const rawScore=1-lev(a,b)/Math.max(a.length,b.length,1);
+            const keyWords=bWords.filter(w=>w.length>2);
+            const matched=keyWords.filter(kw=>aWords.some(w=>1-lev(w,kw)/Math.max(w.length,kw.length,1)>=0.75)).length;
+            const coverage=keyWords.length>0?matched/keyWords.length:rawScore;
+            score=rawScore*0.4+coverage*0.6;
+          }
           if(score>=0.85){sttFeedback.innerHTML='✅ Parfait !';sttFeedback.style.color='var(--m)';}
           else if(score>=0.55){sttFeedback.innerHTML='🟡 Presque ! "'+transcript+'"';sttFeedback.style.color='#FF9F1C';}
           else{sttFeedback.innerHTML='🔴 Réessaie ! "'+transcript+'"';sttFeedback.style.color='var(--c)';}
