@@ -208,9 +208,11 @@ body.car .scr{background:var(--car-bg)}
 .stab-mix.on{background:#FF9F1C!important;color:#fff!important;border-color:#FF9F1C!important}
 .ltab{font-size:13px;padding:8px 15px}
 .elist{display:flex;flex-direction:column;gap:9px}
-.ecard{background:var(--w);border-radius:var(--r);padding:13px 15px;cursor:pointer;
+.ecard{position:relative;background:var(--w);border-radius:var(--r);padding:13px 15px;cursor:pointer;
   display:flex;align-items:center;gap:11px;box-shadow:var(--sh);border:2px solid transparent}
 .ecard.done{border-color:var(--m)}
+.ecard-dim{opacity:.35;filter:grayscale(.35)}
+.ecard-dim .ecard-lock{display:flex!important}
 .ecard:active{transform:scale(.98)}
 .ecl{flex:1}
 .ecn{font-size:10px;font-weight:700;color:var(--tl);margin-bottom:2px}
@@ -12111,6 +12113,25 @@ function _ageToClasses(age){
   return ['GS','CP','CE1','CE2','CM1','CM2','6ème','5ème','4ème','3ème','Lycée'];
 }
 // Filtre un tableau d'items selon l'âge du profil (utilise item.classe ou item.age)
+function _classeToAge(classe){
+  const map={GS:5,CP:6,CE1:7,CE2:8,CM1:9,CM2:10,'6ème':11,'5ème':12,'4ème':13,'3ème':14,'Lycée':16};
+  return map[classe]||null;
+}
+function ageDistFromProfile(item, profileAge){
+  // Retourne la distance en années entre l'item et l'âge du profil
+  const n = typeof profileAge === 'string' ? ageNum(profileAge) : (profileAge||6);
+  if(item.classe){
+    const a = _classeToAge(item.classe);
+    if(a===null) return 0;
+    return Math.abs(a - n);
+  }
+  if(item.age){
+    const parts = String(item.age).split('-').map(Number);
+    const mid = parts.length===2 ? (parts[0]+parts[1])/2 : parts[0];
+    return Math.abs(mid - n);
+  }
+  return 0;
+}
 function filterByAge(items, profileAge){
   if(!items || !items.length) return items;
   const n = typeof profileAge === 'string' ? ageNum(profileAge) : (profileAge||6);
@@ -12601,11 +12622,14 @@ function renderList(items,mod,tabMeta){
   items=filterByAge(items, p?.age);
   items.forEach((item,idx)=>{
     const done=p&&p.done&&p.done[item.id];
-    const d=document.createElement('div');d.className='ecard'+(done?' done':'');
+    const dist=ageDistFromProfile(item, p?.age);
+    const tooFar=dist>2;
+    const d=document.createElement('div');d.className='ecard'+(done?' done':'')+(tooFar?' ecard-dim':'');
     const diff=item.diff||1;
     const t2=item.enonce||item.situation||item.nom||item.titre||'Exercice';
     const short=t2.length>58?t2.slice(0,55)+'…':t2;
-    d.innerHTML=`<div class="ecl"><div class="ecn">${item.type||item.cat||''} · ${item.age?item.age+' ans':item.classe||''}</div><div class="ect">${short}</div><div class="ecb"><span class="bd bd${diff}">${['','Facile','Intermédiaire','Avancé'][diff]}</span></div></div><div>${done?'✅':'▶️'}</div>`;
+    const lockBadge=tooFar?`<span class="ecard-lock" style="display:none;position:absolute;top:7px;right:7px;font-size:11px;background:rgba(0,0,0,.18);border-radius:8px;padding:1px 5px;color:#fff">🔒 ${dist>4?'+'+Math.round(dist)+' niv':'hors niveau'}</span>`:'';
+    d.innerHTML=`${lockBadge}<div class="ecl"><div class="ecn">${item.type||item.cat||''} · ${item.age?item.age+' ans':item.classe||''}</div><div class="ect">${short}</div><div class="ecb"><span class="bd bd${diff}">${['','Facile','Intermédiaire','Avancé'][diff]}</span>${tooFar?'<span style="font-size:10px;opacity:.6;margin-left:4px">hors niveau</span>':''}</div></div><div>${done?'✅':'▶️'}</div>`;
     d.onclick=()=>{sndTap();startEx(item,mod,idx,items);};
     el.appendChild(d);
   });
