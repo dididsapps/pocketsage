@@ -10517,8 +10517,8 @@ function _playMp3(id,fallbackTxt,lang){
   const _frCE1=id.startsWith('LG-CE1-')||id.startsWith('SC-CE1-')||id.startsWith('MA-CE1-')||id.startsWith('GE-CE1-')||id.startsWith('ES-CE1-')||id.startsWith('FR-CE1-');
   const _frSup=/^(?:LG|SC|MA|GE|HI|FR|ES|FLE)-(?:CE2|CM1|CM2|6E|5E|4E|3E|LY)-/.test(id);
   const _frPol=id.startsWith('PO-');
-  const isFR=_frGS||_frCP||_frCE1||_frSup||id.startsWith('FR-')||_frPol;
-  if(!isEN&&!isFR)return false;
+  const _prEN=id.startsWith('PR-EN-');const _prES=id.startsWith('PR-ES-');const _prDE=id.startsWith('PR-DE-');const _isPR=_prEN||_prES||_prDE;const isFR=_frGS||_frCP||_frCE1||_frSup||id.startsWith('FR-')||_frPol;
+  if(_isPR){const prDir=_prEN?'en':_prES?'es':'de';const url=`https://audio.pocketsage.org/audio/${prDir}/${id}.mp3`;const ac=getAC();if(!ac)return false;_audioCache[id]='pending';fetch(url).then(r=>{if(!r.ok)throw new Error(r.status);return r.arrayBuffer();}).then(buf=>ac.decodeAudioData(buf)).then(decoded=>{_audioCache[id]=decoded;_ttsPlaying=true;const src=ac.createBufferSource();src.buffer=decoded;src.connect(ac.destination);src.start(0);}).catch(()=>{_audioCache[id]='miss';if(fallbackTxt)ttsSpeak(fallbackTxt,_prEN?'EN':_prES?'ES':'DE');});return true;}if(!isEN&&!isFR)return false;
   const audioLang=isEN?'en':'fr';
   const fileId=isEN?id:id.replace(/^LG-/,'FR-');
   const url=`${AUDIO_CDN}/audio/${audioLang}/${fileId}${isEN?'':'_enonce'}.mp3`;
@@ -12764,11 +12764,14 @@ function renderPrononcer(tabMeta){
     ttsBtn.style.transform='scale(.9)';
     setTimeout(()=>ttsBtn.style.transform='',200);
     const langBcp={EN:'en-GB',ES:'es-ES',DE:'de-DE'};
-    if(window.ttsSpeak)ttsSpeak(item.mot,langBcp[_pronoState.lang]||'en-GB');
-    else if(window.speechSynthesis){
-      const u=new SpeechSynthesisUtterance(item.mot);
-      u.lang=langBcp[_pronoState.lang]||'en-GB';
-      u.rate=0.85;speechSynthesis.speak(u);
+    const bcp=langBcp[_pronoState.lang]||'en-GB';
+    // Essayer MP3 R2 d'abord (généré par generate_prono_mp3.py)
+    if(!_playMp3(item.id,item.mot,_pronoState.lang)){
+      if(window.ttsSpeak)ttsSpeak(item.mot,bcp);
+      else if(window.speechSynthesis){
+        const u=new SpeechSynthesisUtterance(item.mot);
+        u.lang=bcp;u.rate=0.85;speechSynthesis.speak(u);
+      }
     }
   };
   btnRow.appendChild(ttsBtn);
