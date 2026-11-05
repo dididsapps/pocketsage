@@ -373,6 +373,7 @@ def main():
 
     # ── Google TTS ──
     if todo_g:
+        global GOOGLE_KEY
         print(f"\n🗣  Google TTS ({len(todo_g)} fichiers)")
         # Vérifier la clé
         if not GOOGLE_KEY:
