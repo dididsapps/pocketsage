@@ -11,7 +11,8 @@ from pathlib import Path
 # ══════════════════════════════════════════
 # CONFIGURATION — modifie ces valeurs
 # ══════════════════════════════════════════
-API_KEY = "sk_e920c195b03adac355923ab26527d2d48af72105260a0c00"
+from env_loader import get  # clés lues dans .env (jamais dans le code)
+API_KEY = get("ELEVEN_API_KEY")
 VOICE_ID_FR = "GFj5Qf6cNQ3Lgp8VKBwc"   # Olivier (FR)
 VOICE_ID_EN = "uDsPstFWFBUXjIBimV7s"   # Mr Claus (EN) — tel quel
 OUTPUT_DIR = Path("audio/fr")

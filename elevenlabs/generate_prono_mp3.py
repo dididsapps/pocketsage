@@ -22,7 +22,9 @@ from pathlib import Path
 # ═══════════════════════════════════════════════════
 # CONFIG — clés & voix
 # ═══════════════════════════════════════════════════
-EL_API_KEY   = "sk_e920c195b03adac355923ab26527d2d48af72105260a0c00"
+import sys; sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+from env_loader import get  # clés lues dans .env (jamais dans le code)
+EL_API_KEY   = get("ELEVEN_API_KEY")
 EL_VOICE_EN  = "uDsPstFWFBUXjIBimV7s"   # Mr Claus (EN) — tel quel
 # ES → Google TTS (pas ElevenLabs)
 EL_VOICE_DE  = "CP1kYQLB8eBoe8TavZvQ"   # Nicholas Santa (DE) — tel quel
@@ -34,8 +36,8 @@ GOOGLE_VOICE = {
     "DE": {"languageCode": "de-DE", "name": "de-DE-Neural2-B"},
 }
 
-R2_ACCESS_KEY = "de8421ae8c94c53e50ffcea2febc93e8"
-R2_SECRET_KEY = "727932fe1e71c86c9e249479ce2207063867960858be8b3241ac515990a2ca28"
+R2_ACCESS_KEY = get("R2_ACCESS_KEY_ID")
+R2_SECRET_KEY = get("R2_SECRET_ACCESS_KEY")
 R2_ENDPOINT   = "https://8ea67fd06083effd6f76efdefb92092f.r2.cloudflarestorage.com"
 R2_BUCKET     = "pocketsage-audio"
 

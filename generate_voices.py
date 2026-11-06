@@ -29,6 +29,7 @@ Usage :
 """
 
 import base64, json, os, re, subprocess, sys, tempfile, time
+import env_loader  # noqa: F401  (charge le fichier .env)
 from pathlib import Path
 
 # ─── Chemins ───────────────────────────────────────────────────────────────
@@ -52,13 +53,12 @@ def get_eleven_key():
     p = ROOT / "elevenlabs" / "eleven_api_key.txt"
     if p.exists():
         return p.read_text().strip()
-    # Clé présente dans les anciens scripts (fallback)
-    return "sk_e920c195b03adac355923ab26527d2d48af72105260a0c00"
+    sys.exit("❌ Clé ElevenLabs manquante : définis ELEVEN_API_KEY dans le fichier .env (voir .env.example).")
 
 def get_google_key():
     key = os.environ.get("GOOGLE_TTS_API_KEY", "").strip()
     if not key:
-        key = "AIzaSyDv7OHs9VsWEsJ1loUT2IUfv2OxMs5Vpz0"
+        sys.exit("❌ Clé Google manquante : définis GOOGLE_TTS_API_KEY dans le fichier .env (voir .env.example).")
     return key
 
 ELEVEN_KEY = get_eleven_key()

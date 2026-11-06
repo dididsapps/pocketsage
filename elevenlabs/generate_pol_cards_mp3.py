@@ -7,7 +7,9 @@ IDs : POC-M-001 (manières), POC-D-001 (dictons), POC-CS-001 (conseils)
 
 import os, requests, time
 
-ELEVEN_API_KEY = open(os.path.join(os.path.dirname(__file__), "eleven_api_key.txt")).read().strip()
+import sys; sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+from env_loader import get  # clés lues dans .env (jamais dans le code)
+ELEVEN_API_KEY = get("ELEVEN_API_KEY")
 VOICE_FR = "GFj5Qf6cNQ3Lgp8VKBwc"   # Olivier
 VOICE_EN = "9mF01VTvwaxuBPjm0hMu"   # Charlie Horse
 MODEL    = "eleven_multilingual_v2"

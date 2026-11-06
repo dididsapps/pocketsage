@@ -7,8 +7,10 @@ Usage : python3 upload_r2.py
 import boto3, os
 
 R2_ENDPOINT   = "https://8ea67fd06083effd6f76efdefb92092f.r2.cloudflarestorage.com"
-R2_ACCESS_KEY = "6af471e11db12cb768c57df351e9a6fd"
-R2_SECRET_KEY = "4e7b9ad69ef6072024954beb7891fe710f1008719bfbf923341bdb35e1ed4f94"
+import sys; sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+from env_loader import get  # clés lues dans .env (jamais dans le code)
+R2_ACCESS_KEY = get("R2_ACCESS_KEY_ID")
+R2_SECRET_KEY = get("R2_SECRET_ACCESS_KEY")
 BUCKET        = "pocketsage-audio"
 BASE = os.path.join(os.path.dirname(__file__), "..")
 

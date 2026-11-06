@@ -6,6 +6,7 @@ Usage: python3 generate_tts_google.py
 """
 
 import re, json, os, time, base64
+import env_loader  # noqa: F401  (charge .env)
 from pathlib import Path
 
 # ══════════════════════════════════════════
