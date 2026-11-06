@@ -10185,8 +10185,8 @@ let _ttsPlaying=false;
 let _ttsRate=0.85; // vitesse, modifiable par les boutons nuit
 
 // ── ElevenLabs TTS pour l'onglet Nuit ────────────────────────────────────────
-const _EL_API_KEY='sk_e920c195b03adac355923ab26527d2d48af72105260a0c00';
-const _EL_VOICE_FR='GFj5Qf6cNQ3Lgp8VKBwc'; // Olivier (FR)
+// URL du Worker Cloudflare (proxy ElevenLabs). La clé reste côté serveur — voir worker/README.md
+const _EL_PROXY_URL='https://REMPLACER-PAR-URL-DU-WORKER';
 let _elCurrentSource=null; // AudioBufferSourceNode en cours
 
 function _elStop(){
@@ -10212,14 +10212,10 @@ async function _elSpeakChunks(chunks,idx,onDone){
   if(!_ttsPlaying||idx>=chunks.length){if(onDone)onDone();return;}
   try{
     const ac=getAC();
-    const r=await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${_EL_VOICE_FR}`,{
+    const r=await fetch(_EL_PROXY_URL,{
       method:'POST',
-      headers:{'xi-api-key':_EL_API_KEY,'Content-Type':'application/json'},
-      body:JSON.stringify({
-        text:chunks[idx],
-        model_id:'eleven_multilingual_v2',
-        voice_settings:{stability:0.45,similarity_boost:0.75,style:0.25,use_speaker_boost:true}
-      })
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({text:chunks[idx]})
     });
     if(!r.ok)throw new Error('EL HTTP '+r.status);
     const buf=await r.arrayBuffer();

@@ -13,12 +13,13 @@ import re, os, sys, json
 from pathlib import Path
 
 # ── CONFIG ────────────────────────────────────────────────────────────────────
-API_KEY    = "sk_e920c195b03adac355923ab26527d2d48af72105260a0c00"
+from env_loader import get  # clés lues dans .env (jamais dans le code)
+API_KEY    = get("ELEVEN_API_KEY")
 VOICE_ID   = "GFj5Qf6cNQ3Lgp8VKBwc"   # Olivier (FR)
 BUCKET     = "pocketsage-audio"
 ENDPOINT   = "https://8ea67fd06083effd6f76efdefb92092f.r2.cloudflarestorage.com"
-R2_ACCESS  = "6af471e11db12cb768c57df351e9a6fd"
-R2_SECRET  = "4e7b9ad69ef6072024954beb7891fe710f1008719bfbf923341bdb35e1ed4f94"
+R2_ACCESS  = get("R2_ACCESS_KEY_ID")
+R2_SECRET  = get("R2_SECRET_ACCESS_KEY")
 OUTPUT_DIR = Path("audio/nuit")
 INDEX_HTML = Path("index.html")
 CDN_BASE   = "https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev"

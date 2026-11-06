@@ -7,7 +7,7 @@ Usage:
     pip3 install requests boto3
     python3 gen_prono_mp3.py
     # Pour niveaux 3-4 (Google TTS):
-    GOOGLE_API_KEY=xxx python3 gen_prono_mp3.py
+    GOOGLE_TTS_API_KEY=xxx python3 gen_prono_mp3.py
 
 Les MP3 sont uploadés dans audio/en/, audio/es/, audio/de/ sur R2
 """
@@ -15,13 +15,14 @@ Les MP3 sont uploadés dans audio/en/, audio/es/, audio/de/ sur R2
 import re, json, os, time
 from pathlib import Path
 
-API_KEY       = "sk_e920c195b03adac355923ab26527d2d48af72105260a0c00"
+from env_loader import get  # clés lues dans .env (jamais dans le code)
+API_KEY       = get("ELEVEN_API_KEY")
 VOICE_EN = "uDsPstFWFBUXjIBimV7s"   # Mr Claus (EN) — tel quel
 VOICE_ES = "GFj5Qf6cNQ3Lgp8VKBwc"   # Olivier (FR) — fallback, à remplacer par voix ES
 VOICE_DE = "CP1kYQLB8eBoe8TavZvQ"   # Nicholas Santa (DE) — tel quel
 
-R2_ACCESS_KEY  = "de8421ae8c94c53e50ffcea2febc93e8"
-R2_SECRET_KEY  = "727932fe1e71c86c9e249479ce2207063867960858be8b3241ac515990a2ca28"
+R2_ACCESS_KEY  = get("R2_ACCESS_KEY_ID")
+R2_SECRET_KEY  = get("R2_SECRET_ACCESS_KEY")
 R2_ENDPOINT    = "https://8ea67fd06083effd6f76efdefb92092f.r2.cloudflarestorage.com"
 R2_BUCKET      = "pocketsage-audio"
 
@@ -86,9 +87,9 @@ def elevenlabs_tts(text, voice_id, out_path):
 
 
 def google_tts(text, lang_bcp, out_path):
-    api_key = os.environ.get("GOOGLE_API_KEY", "")
+    api_key = get("GOOGLE_TTS_API_KEY", required=False)
     if not api_key:
-        print("  ⚠️  GOOGLE_API_KEY manquant — skip")
+        print("  ⚠️  GOOGLE_TTS_API_KEY manquant — skip")
         return False
     r = requests.post(
         f"https://texttospeech.googleapis.com/v1/text:synthesize?key={api_key}",

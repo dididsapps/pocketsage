@@ -1,1 +1,18 @@
 index.html.bak2
+
+# Secrets : ne jamais versionner
+.env
+.env.*
+!.env.example
+elevenlabs/eleven_api_key.txt
+elevenlabs/r2_credentials.txt
+*credentials*
+*.pem
+*.key
+
+# Fichiers système
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc

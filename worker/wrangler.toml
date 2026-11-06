@@ -1,0 +1,17 @@
+name = "pocketsage-tts"
+main = "index.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+VOICE_ID = "GFj5Qf6cNQ3Lgp8VKBwc"   # Olivier (FR) — identifiant public, pas un secret
+MODEL_ID = "eleven_multilingual_v2"
+
+# Limite d'appels : 20 requêtes par minute et par adresse IP
+[[unsafe.bindings]]
+name = "RATE_LIMITER"
+type = "ratelimit"
+namespace_id = "1001"
+simple = { limit = 20, period = 60 }
+
+# La clé ElevenLabs n'est PAS ici : elle se range avec
+#   npx wrangler secret put ELEVEN_API_KEY

@@ -18,7 +18,8 @@ import time
 import requests
 
 # ── Configuration ──────────────────────────────────────────────────────────────
-ELEVENLABS_API_KEY = "sk_e920c195b03adac355923ab26527d2d48af72105260a0c00"
+from env_loader import get  # clés lues dans .env (jamais dans le code)
+ELEVENLABS_API_KEY = get("ELEVEN_API_KEY")
 VOICE_ID = "uDsPstFWFBUXjIBimV7s"  # Mr Claus (EN) — tel quel
 OUTPUT_DIR = "audio/en"
 INDEX_PATH = "index.html"

@@ -14,7 +14,9 @@ Puis uploader avec : python3 upload_r2.py
 import re, json, requests, os, time
 
 # ─── Config ────────────────────────────────────────────────────────────────────
-API_KEY  = "sk_e920c195b03adac355923ab26527d2d48af72105260a0c00"
+import sys; sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+from env_loader import get  # clés lues dans .env (jamais dans le code)
+API_KEY  = get("ELEVEN_API_KEY")
 VOICE_FR = "GFj5Qf6cNQ3Lgp8VKBwc"  # Olivier
 VOICE_EN = "9mF01VTvwaxuBPjm0hMu"  # Charlie Horse
 INDEX    = os.path.join(os.path.dirname(__file__), "../index.html")

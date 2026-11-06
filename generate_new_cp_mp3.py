@@ -5,7 +5,8 @@ Lance depuis le dossier pocketsage/ : python3 generate_new_cp_mp3.py
 """
 import requests, os, time
 
-API_KEY  = "sk_e920c195b03adac355923ab26527d2d48af72105260a0c00"
+from env_loader import get  # clés lues dans .env (jamais dans le code)
+API_KEY  = get("ELEVEN_API_KEY")
 VOICE_FR = "GFj5Qf6cNQ3Lgp8VKBwc"
 VOICE_EN = "9mF01VTvwaxuBPjm0hMu"
 
