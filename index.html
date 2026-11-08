@@ -14924,46 +14924,74 @@ function loadNuitExtra(){
     if(added&&scr&&scr.classList.contains('on'))openNuit();
   }).catch(e=>{_nuitExtraState='done';console.log('[Nuit] pas d\'histoires R2 en plus',e.message);});
 }
+function _ageMatch(itemAge,sliderAge,showAll){
+  if(showAll||!itemAge)return true;
+  const s=String(itemAge).trim();
+  let mn=0,mx=99;
+  if(s.endsWith('+')){mn=parseInt(s);mx=99;}
+  else if(s.includes('-')){const p=s.split('-');mn=parseInt(p[0]);mx=parseInt(p[1]);}
+  else{mn=parseInt(s);mx=parseInt(s);}
+  const lo=sliderAge-2,hi=sliderAge+2;
+  return mn<=hi&&mx>=lo;
+}
+function _nuitSliderHTML(sliderAge,showAll){
+  return `<div class="nuit-age-bar" style="display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.07);border-radius:12px;padding:10px 14px;margin:12px 0 4px">
+    <span style="font-size:20px">🎂</span>
+    <div style="flex:1">
+      <div style="display:flex;justify-content:space-between;font-size:11px;color:rgba(255,255,255,.5);margin-bottom:4px">
+        <span>4 ans</span><span style="font-weight:700;color:#a78bfa">${sliderAge} ans</span><span>18 ans</span>
+      </div>
+      <input type="range" min="4" max="18" value="${sliderAge}" id="nuit-age-slider" style="width:100%;accent-color:#a78bfa;cursor:pointer">
+    </div>
+    <label style="display:flex;align-items:center;gap:5px;font-size:11px;color:rgba(255,255,255,.6);cursor:pointer;white-space:nowrap">
+      <input type="checkbox" id="nuit-show-all" ${showAll?'checked':''} style="accent-color:#a78bfa"> Tout afficher
+    </label>
+  </div>`;
+}
+let _nuitSliderAge=null,_nuitShowAll=false;
 function openNuit(){
   try{
   const c=document.getElementById('nuit-c');if(!c){show('nuit');return;}c.innerHTML='';
+  if(_nuitSliderAge===null){_nuitSliderAge=Math.min(18,Math.max(4,parseInt(P().age)||8));}
   // Étoiles
   const sb=document.createElement('div');sb.className='star-bg';
   for(let i=0;i<40;i++){const s=document.createElement('div');s.className='sd';
     s.style.cssText=`width:${1+Math.random()*3}px;height:${1+Math.random()*3}px;left:${Math.random()*100}%;top:${Math.random()*100}%;animation-delay:${Math.random()*3}s;animation-duration:${2+Math.random()*3}s`;
     sb.appendChild(s);}
-  sb.innerHTML+=`<div style="position:relative;z-index:2;text-align:center;color:#fff"><div style="font-size:44px">🌙</div><div style="font-size:18px;font-weight:900;margin-top:4px">Mode Nuit</div><div style="font-size:12px;opacity:.6;margin-top:2px">Méditation & Histoires du soir</div></div>`;
+  sb.innerHTML+=`<div style="position:relative;z-index:2;text-align:center;color:#fff"><div style="font-size:44px">📖</div><div style="font-size:18px;font-weight:900;margin-top:4px">Histoires du soir</div><div style="font-size:12px;opacity:.6;margin-top:2px">Méditation & Histoires</div></div>`;
   c.appendChild(sb);
-  
-  const mt=document.createElement('div');mt.className='nuit-sct';mt.textContent='🧘 Méditations';c.appendChild(mt);
-  DATA.meditation.forEach(item=>{
-    const card=document.createElement('div');card.className='ncard';
-    card.innerHTML=`<div class="nce">🧘</div><div class="nct">${item.titre}</div><div class="ncs">⏱ ${Math.ceil(item.dur/60)} min · ${item.age} ans</div>`;
-    card.onclick=()=>{sndTap();openReader(item,'med');};c.appendChild(card);
-  });
-  
-  const ht=document.createElement('div');ht.className='nuit-sct';ht.style.marginTop='16px';ht.textContent='📖 Histoires du soir';c.appendChild(ht);
-  DATA.histoires.filter(i=>!i.audio&&!_nuitIsGrand(i)).forEach(item=>{
-    const card=document.createElement('div');card.className='ncard';
-    card.innerHTML=`<div class="nce">📖</div><div class="nct">${item.titre}</div><div class="ncs">📚 <span data-nuit-dur="${item.id}">${nuitMin(item)} min</span> · ${item.age} ans</div>`;
-    card.onclick=()=>{sndTap();openReader(item,'hs');};c.appendChild(card);
-  });
 
-  const ha=document.createElement('div');ha.className='nuit-sct';ha.style.marginTop='16px';
-  ha.innerHTML='🌙 Histoires respirées <span style="font-size:11px;font-weight:600;background:#6C63FF22;color:#6C63FF;border-radius:8px;padding:2px 8px;margin-left:6px">🎧 À écouter</span><div style="font-size:11px;color:rgba(255,255,255,.5);font-weight:400;margin-top:2px">Pour se relaxer, respirer et s'endormir sereinement</div>';
-  c.appendChild(ha);
-  const _audioCard=(item,emo)=>{
-    const card=document.createElement('div');card.className='ncard ncard-audio';
-    card.innerHTML=`<div class="nce">${emo}</div><div style="flex:1"><div class="nct">${item.titre}</div><div class="ncs">⏱ <span data-nuit-dur="${item.id}">${nuitMin(item)} min</span> · ${item.age} ans · ${item.sous||'Respiration guidée'}</div></div>`;
-    card.onclick=()=>{sndTap();openReader(item,'audio');};c.appendChild(card);
+  // Slider âge
+  const sliderDiv=document.createElement('div');
+  sliderDiv.innerHTML=_nuitSliderHTML(_nuitSliderAge,_nuitShowAll);
+  c.appendChild(sliderDiv);
+  c.querySelector('#nuit-age-slider').addEventListener('input',e=>{_nuitSliderAge=parseInt(e.target.value);openNuit();});
+  c.querySelector('#nuit-show-all').addEventListener('change',e=>{_nuitShowAll=e.target.checked;openNuit();});
+
+  const _renderSection=(label,items,emo,isAudio)=>{
+    const filtered=items.filter(i=>_ageMatch(i.age,_nuitSliderAge,_nuitShowAll));
+    if(!filtered.length)return;
+    const hdr=document.createElement('div');hdr.className='nuit-sct';hdr.style.marginTop='16px';hdr.innerHTML=label;c.appendChild(hdr);
+    filtered.forEach(item=>{
+      const card=document.createElement('div');card.className='ncard'+(isAudio?' ncard-audio':'');
+      if(isAudio){
+        card.innerHTML=`<div class="nce">${emo}</div><div style="flex:1"><div class="nct">${item.titre}</div><div class="ncs">⏱ <span data-nuit-dur="${item.id}">${nuitMin(item)} min</span> · ${item.age||'?'} ans · ${item.sous||'Respiration guidée'}</div></div>`;
+      }else{
+        const icon=emo==='🧘'?`<div class="nce">🧘</div><div class="nct">${item.titre}</div><div class="ncs">⏱ ${Math.ceil((item.dur||300)/60)} min · ${item.age||'?'} ans</div>`:`<div class="nce">📖</div><div class="nct">${item.titre}</div><div class="ncs">📚 <span data-nuit-dur="${item.id}">${nuitMin(item)} min</span> · ${item.age||'?'} ans</div>`;
+        card.innerHTML=icon;
+      }
+      card.onclick=()=>{sndTap();openReader(item,isAudio?'audio':(emo==='🧘'?'med':'hs'));};
+      c.appendChild(card);
+    });
   };
-  DATA.histoires.filter(i=>i.audio&&!_nuitIsGrand(i)).forEach(item=>_audioCard(item,'🎧'));
-  // Histoires ados & adultes (chargées depuis R2)
+
+  _renderSection('🧘 Méditations',DATA.meditation,'🧘',false);
+  _renderSection('📖 Histoires du soir',DATA.histoires.filter(i=>!i.audio&&!_nuitIsGrand(i)),'📖',false);
+  _renderSection('🌙 Histoires respirées <span style="font-size:11px;font-weight:600;background:#6C63FF22;color:#6C63FF;border-radius:8px;padding:2px 8px;margin-left:6px">🎧 À écouter</span><div style="font-size:11px;color:rgba(255,255,255,.5);font-weight:400;margin-top:2px">Pour se relaxer, respirer et s'endormir sereinement</div>',DATA.histoires.filter(i=>i.audio&&!_nuitIsGrand(i)),'🎧',true);
+  
   const grands=DATA.histoires.filter(_nuitIsGrand);
   if(grands.length){
-    const hg=document.createElement('div');hg.className='nuit-sct';hg.style.marginTop='16px';
-    hg.textContent='🌌 Ados & adultes — relaxation, culture, développement perso';c.appendChild(hg);
-    grands.forEach(item=>_audioCard(item,item.emo||'🌌'));
+    _renderSection('🌌 Ados & adultes — relaxation, culture, développement perso',grands,'🌌',true);
   }
   loadNuitExtra();
   show('nuit');
