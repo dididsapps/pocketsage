@@ -15038,7 +15038,7 @@ function openNuit(){
 
   _renderSection('🧘 Méditations',DATA.meditation,'🧘',false);
   _renderSection('📖 Histoires du soir',DATA.histoires.filter(i=>!i.audio&&!_nuitIsGrand(i)),'📖',false);
-  _renderSection('🌙 Histoires respirées <span style="font-size:11px;font-weight:600;background:#6C63FF22;color:#6C63FF;border-radius:8px;padding:2px 8px;margin-left:6px">🎧 À écouter</span><div style="font-size:11px;color:rgba(255,255,255,.5);font-weight:400;margin-top:2px">Pour se relaxer, respirer et s'endormir sereinement</div>',DATA.histoires.filter(i=>i.audio&&!_nuitIsGrand(i)),'🎧',true);
+  _renderSection('🌙 Histoires respirées <span style="font-size:11px;font-weight:600;background:#6C63FF22;color:#6C63FF;border-radius:8px;padding:2px 8px;margin-left:6px">🎧 À écouter</span><div style="font-size:11px;color:rgba(255,255,255,.5);font-weight:400;margin-top:2px">Pour se relaxer, respirer et s’endormir sereinement</div>',DATA.histoires.filter(i=>i.audio&&!_nuitIsGrand(i)),'🎧',true);
   
   const grands=DATA.histoires.filter(_nuitIsGrand);
   if(grands.length){
