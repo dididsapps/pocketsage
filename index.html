@@ -345,6 +345,10 @@ body.car .dcard p{font-size:17px}
 .reader-tit{font-size:20px;font-weight:900;color:#fff;margin-bottom:16px;line-height:1.3}
 .reader-txt{font-size:16px;color:rgba(255,255,255,.88);line-height:2;font-weight:600}
 .nuit-tts{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.nuit-rate{display:flex;gap:7px;justify-content:center;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.nuit-rate span{font-size:11px;color:rgba(255,255,255,.55)}
+.nuit-rate-btn{background:rgba(255,255,255,.1);border:none;color:#fff;border-radius:8px;padding:6px 11px;font-family:var(--f);font-size:11px;font-weight:700;cursor:pointer}
+.nuit-rate-btn.on{background:rgba(108,99,255,.8)}
 .nuit-tb{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
   border-radius:10px;padding:7px 13px;font-family:var(--f);font-size:12px;
   font-weight:700;color:#fff;cursor:pointer;display:flex;align-items:center;gap:5px}
@@ -1193,7 +1197,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 <div class="scr" id="scr-nuit">
 <div class="nuit-hdr">
   <button class="nuit-back" onclick="goHome()">←</button>
-  <div class="nuit-tit">🌙 Mode Nuit</div>
+  <div class="nuit-tit">📖 Histoires du soir</div>
 </div>
 <div class="nuit-sc" id="nuit-c"></div>
 </div>
@@ -1404,7 +1408,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="savoirs" onclick="openMod('savoirs')"><span class="ni">📚</span><span class="nl">Savoirs</span></button>
   <button class="nb" data-nav="politesse" onclick="openPolitesse()"><span class="ni">🌸</span><span class="nl">Politesse</span></button>
   <button class="nb" data-nav="videos" onclick="openMod('recompenses')"><span class="ni">🎬</span><span class="nl">Vidéos</span></button>
-  <button class="nb" data-nav="nuit" onclick="openNuit()"><span class="ni">🌙</span><span class="nl">Nuit</span></button>
+  <button class="nb" data-nav="nuit" onclick="openNuit()"><span class="ni">📖</span><span class="nl">Histoires</span></button>
   <button class="nb" data-nav="ateliers" onclick="openAteliers()"><span class="ni">🎨</span><span class="nl">Ateliers</span></button>
   <button class="nb" data-nav="defi" onclick="openMod('defis')"><span class="ni">🏃</span><span class="nl">Sport</span></button>
   <button class="nb" data-nav="world" onclick="openWorld()"><span class="ni">🏙️</span><span class="nl">Mon Monde</span></button>
@@ -10337,10 +10341,60 @@ let _ttsRate=0.85; // vitesse, modifiable par les boutons nuit
 // ── ElevenLabs TTS pour l'onglet Nuit ────────────────────────────────────────
 const _EL_API_KEY='sk_e920c195b03adac355923ab26527d2d48af72105260a0c00';
 const _EL_VOICE_FR='GFj5Qf6cNQ3Lgp8VKBwc'; // Olivier (FR)
-let _elCurrentSource=null; // AudioBufferSourceNode en cours
+let _elCurrentSource=null; // AudioBufferSourceNode en cours (plus utilisé par la Nuit)
+
+// ── Vitesse de narration Nuit ────────────────────────────────────────────────
+// Lecture via un <audio> unique : playbackRate + preservesPitch = voix ralentie
+// sans devenir grave, réglable en direct pendant la lecture.
+const NUIT_RATES=[{r:0.5,l:'🐢 Lent'},{r:0.7,l:'😌 Moyen'},{r:1,l:'⚡ Rapide'}];
+let _nuitRate=0.5;
+try{const v=parseFloat(localStorage.getItem('ps_nuit_rate'));if(NUIT_RATES.some(o=>o.r===v))_nuitRate=v;}catch(e){}
+let _nuitAudio=null,_nuitBlobUrl=null,_nuitOnEnd=null;
+function _nuitEl(){
+  if(_nuitAudio)return _nuitAudio;
+  const a=new Audio();a.preload='auto';
+  a.preservesPitch=true;a.mozPreservesPitch=true;a.webkitPreservesPitch=true;
+  a.addEventListener('loadedmetadata',()=>{a.playbackRate=_nuitRate;_nuitShowRealDur(a);});
+  a.addEventListener('ended',()=>{const f=_nuitOnEnd;_nuitOnEnd=null;if(f)f();});
+  _nuitAudio=a;return a;
+}
+function _nuitPlay(src,onEnd,onErr){
+  const a=_nuitEl();
+  _nuitOnEnd=onEnd||null;
+  a.onerror=()=>{if(a.getAttribute('src')!==src)return;_nuitOnEnd=null;if(onErr)onErr(new Error('audio error'));};
+  a.src=src;a.defaultPlaybackRate=_nuitRate;a.playbackRate=_nuitRate;
+  const p=a.play();
+  if(p&&p.catch)p.catch(e=>{if(e&&e.name==='AbortError')return;console.warn('[Nuit] play()',e&&e.name);if(e&&e.name==='NotAllowedError'){_ttsPlaying=false;_nuitResetPlayBtn();}});
+}
+function setNuitRate(r){
+  _nuitRate=r;
+  try{localStorage.setItem('ps_nuit_rate',String(r));}catch(e){}
+  if(_nuitAudio){_nuitAudio.defaultPlaybackRate=r;_nuitAudio.playbackRate=r;_nuitShowRealDur(_nuitAudio);}
+  document.querySelectorAll('.nuit-rate-btn').forEach(b=>b.classList.toggle('on',parseFloat(b.dataset.r)===r));
+  document.querySelectorAll('[data-nuit-dur]').forEach(el=>{const it=_nuitFindItem(el.dataset.nuitDur);if(it)el.textContent=nuitMin(it)+' min';});
+}
+function _nuitRateBar(){
+  return `<div class="nuit-rate"><span>Vitesse :</span>${NUIT_RATES.map(o=>`<button class="nuit-rate-btn${o.r===_nuitRate?' on':''}" data-r="${o.r}" onclick="setNuitRate(${o.r})">${o.l}</button>`).join('')}</div>`;
+}
+// Durée estimée : ~135 mots/min à vitesse d'origine (mesuré sur HS-001)
+function nuitMin(item){
+  const w=((item.titre||'')+' '+(item.texte||'')).split(/\s+/).filter(Boolean).length;
+  return Math.max(1,Math.round(w/(135*_nuitRate)));
+}
+function _nuitFindItem(id){return (DATA.histoires||[]).concat(DATA.meditation||[]).find(i=>i.id===id);}
+function _nuitShowRealDur(a){
+  const el=document.getElementById('reader-dur');
+  if(el&&a&&isFinite(a.duration)&&a.duration>0&&!_nuitBlobUrl)el.textContent=Math.max(1,Math.round(a.duration/_nuitRate/60))+' min';
+}
+function _nuitResetPlayBtn(){
+  const b=document.getElementById('audio-play-btn');
+  if(b){b.textContent='▶ Écouter l\'histoire';b.style.opacity='1';}
+}
 
 function _elStop(){
   try{if(_elCurrentSource){_elCurrentSource.stop();_elCurrentSource=null;}}catch(e){}
+  try{if(_nuitAudio){_nuitOnEnd=null;_nuitAudio.pause();}}catch(e){}
+  if(_nuitBlobUrl){try{URL.revokeObjectURL(_nuitBlobUrl);}catch(e){}_nuitBlobUrl=null;}
 }
 
 // Découpe un texte long en morceaux de max ~350 mots (limite ElevenLabs confortable)
@@ -10372,27 +10426,22 @@ async function _elSpeakChunks(chunks,idx,onDone){
       })
     });
     if(!r.ok)throw new Error('EL HTTP '+r.status);
-    const buf=await r.arrayBuffer();
-    const decoded=await ac.decodeAudioData(buf);
+    const blob=await r.blob();
     if(!_ttsPlaying)return;
-    const src=ac.createBufferSource();
-    src.buffer=decoded;
-    src.connect(ac.destination);
-    _elCurrentSource=src;
-    src.onended=()=>{
-      _elCurrentSource=null;
+    if(_nuitBlobUrl){try{URL.revokeObjectURL(_nuitBlobUrl);}catch(e){}}
+    _nuitBlobUrl=URL.createObjectURL(blob);
+    _nuitPlay(_nuitBlobUrl,()=>{
       if(!_ttsPlaying)return;
       // Pause naturelle entre paragraphes
-      setTimeout(()=>_elSpeakChunks(chunks,idx+1,onDone),400);
-    };
-    src.start(0);
+      setTimeout(()=>_elSpeakChunks(chunks,idx+1,onDone),800);
+    },()=>{if(_ttsPlaying)_elSpeakChunks(chunks,idx+1,onDone);});
   }catch(e){
     console.warn('[EL] erreur chunk',idx,e.message,'→ Web Speech fallback');
     // Fallback Web Speech pour ce chunk
     if(window.speechSynthesis&&_ttsPlaying){
       const u=new SpeechSynthesisUtterance(chunks[idx]);
-      u.lang='fr-FR';u.rate=_ttsRate;
-      u.onend=()=>setTimeout(()=>_elSpeakChunks(chunks,idx+1,onDone),400);
+      u.lang='fr-FR';u.rate=Math.max(0.5,_nuitRate);
+      u.onend=()=>setTimeout(()=>_elSpeakChunks(chunks,idx+1,onDone),800);
       u.onerror=()=>_elSpeakChunks(chunks,idx+1,onDone);
       window.speechSynthesis.speak(u);
     }
@@ -10410,7 +10459,7 @@ function elSpeak(txt){
   try{if(window.speechSynthesis)window.speechSynthesis.cancel();}catch(e){}
   _ttsPlaying=true;
   const chunks=_elChunks(txt);
-  _elSpeakChunks(chunks,0,null);
+  _elSpeakChunks(chunks,0,()=>{_ttsPlaying=false;_nuitResetPlayBtn();});
 }
 
 // ── elPlayNuit : R2 d'abord, ElevenLabs API en fallback ──────────────────────
@@ -10426,33 +10475,15 @@ function elPlayNuit(id,txt){
   // Stop tout ce qui joue
   _ttsPlaying=false;_ttsQueue=[];_ttsStopResumeLoop();_elStop();
   try{if(window.speechSynthesis)window.speechSynthesis.cancel();}catch(e){}
-  // Essai R2
+  // Essai R2 (lecture directe : le geste utilisateur débloque l'audio sur mobile)
   const lang=(APP&&APP.lang&&APP.lang!=='FR')?`_${APP.lang}`:"";const url=`${AUDIO_CDN}/audio/nuit/${id}${lang}.mp3`;
-  console.log('[EL] R2 nuit check',url);
-  try{
-    const ac=getAC();
-    fetch(url,{mode:'cors'}).then(r=>{
-      if(!r.ok)throw new Error('HTTP '+r.status);
-      return r.arrayBuffer();
-    }).then(buf=>ac.decodeAudioData(buf)).then(decoded=>{
-      _nuitCache[id]='hit';
-      _ttsPlaying=true;
-      const src=ac.createBufferSource();
-      src.buffer=decoded;src.connect(ac.destination);
-      _elCurrentSource=src;
-      src.onended=()=>{_elCurrentSource=null;_ttsPlaying=false;};
-      src.start(0);
-      console.log('[EL] R2 nuit ok',id);
-    }).catch(e=>{
-      _nuitCache[id]='miss';
-      console.warn('[EL] R2 nuit miss',id,e.message,'→ API temps réel');
-      elSpeak(txt);
-    });
-  }catch(e){
+  console.log('[Nuit] R2',url,'vitesse',_nuitRate);
+  _ttsPlaying=true;
+  _nuitPlay(url,()=>{_nuitCache[id]='hit';_ttsPlaying=false;_nuitResetPlayBtn();},e=>{
     _nuitCache[id]='miss';
-    console.warn('[EL] R2 nuit init error',id,e);
-    elSpeak(txt);
-  }
+    console.warn('[Nuit] R2 miss',id,'→ API temps réel');
+    if(_ttsPlaying)elSpeak(txt);
+  });
 }
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -14868,6 +14899,31 @@ function endCoachSession(){
 // NUIT
 // ════════════════════════════════════════════
 function leaveNuit(){stopNightAmbiance();ttsStop();}
+
+// ── Histoires supplémentaires hébergées sur R2 (data/nuit_histoires.json) ─────
+// Les nouvelles histoires ne sont pas dans index.html pour garder l'app légère.
+// Format : [{id,titre,texte,age,audio:true,public:'enfant'|'ado'|'adulte',sous,emo}]
+const NUIT_EXTRA_URL=`${AUDIO_CDN}/data/nuit_histoires.json`;
+let _nuitExtraState=null; // null | 'loading' | 'done'
+function _nuitIsGrand(i){return i&&(i.public==='ado'||i.public==='adulte');}
+function _nuitMergeExtra(list){
+  if(!Array.isArray(list))return 0;
+  let n=0;
+  list.forEach(it=>{if(it&&it.id&&it.texte&&!DATA.histoires.some(h=>h.id===it.id)){DATA.histoires.push(it);n++;}});
+  return n;
+}
+function loadNuitExtra(){
+  if(_nuitExtraState)return;
+  _nuitExtraState='loading';
+  try{const c=JSON.parse(localStorage.getItem('ps_nuit_extra')||'null');if(c)_nuitMergeExtra(c);}catch(e){}
+  fetch(NUIT_EXTRA_URL,{mode:'cors',cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}).then(list=>{
+    _nuitExtraState='done';
+    try{localStorage.setItem('ps_nuit_extra',JSON.stringify(list));}catch(e){}
+    const added=_nuitMergeExtra(list);
+    const scr=document.getElementById('scr-nuit');
+    if(added&&scr&&scr.classList.contains('on'))openNuit();
+  }).catch(e=>{_nuitExtraState='done';console.log('[Nuit] pas d\'histoires R2 en plus',e.message);});
+}
 function openNuit(){
   try{
   const c=document.getElementById('nuit-c');if(!c){show('nuit');return;}c.innerHTML='';
@@ -14887,20 +14943,29 @@ function openNuit(){
   });
   
   const ht=document.createElement('div');ht.className='nuit-sct';ht.style.marginTop='16px';ht.textContent='📖 Histoires du soir';c.appendChild(ht);
-  DATA.histoires.filter(i=>!i.audio).forEach(item=>{
+  DATA.histoires.filter(i=>!i.audio&&!_nuitIsGrand(i)).forEach(item=>{
     const card=document.createElement('div');card.className='ncard';
-    card.innerHTML=`<div class="nce">📖</div><div class="nct">${item.titre}</div><div class="ncs">📚 ${item.dur} min · ${item.age} ans</div>`;
+    card.innerHTML=`<div class="nce">📖</div><div class="nct">${item.titre}</div><div class="ncs">📚 <span data-nuit-dur="${item.id}">${nuitMin(item)} min</span> · ${item.age} ans</div>`;
     card.onclick=()=>{sndTap();openReader(item,'hs');};c.appendChild(card);
   });
 
   const ha=document.createElement('div');ha.className='nuit-sct';ha.style.marginTop='16px';
-  ha.innerHTML='🎧 Histoires respirées <span style="font-size:11px;font-weight:600;background:#6C63FF22;color:#6C63FF;border-radius:8px;padding:2px 8px;margin-left:6px">10-15 min · À écouter</span>';
+  ha.innerHTML='🌙 Histoires respirées <span style="font-size:11px;font-weight:600;background:#6C63FF22;color:#6C63FF;border-radius:8px;padding:2px 8px;margin-left:6px">🎧 À écouter</span><div style="font-size:11px;color:rgba(255,255,255,.5);font-weight:400;margin-top:2px">Pour se relaxer, respirer et s'endormir sereinement</div>';
   c.appendChild(ha);
-  DATA.histoires.filter(i=>i.audio).forEach(item=>{
+  const _audioCard=(item,emo)=>{
     const card=document.createElement('div');card.className='ncard ncard-audio';
-    card.innerHTML=`<div class="nce">🎧</div><div style="flex:1"><div class="nct">${item.titre}</div><div class="ncs">⏱ ${item.dur} min · ${item.age} ans · Respiration guidée</div></div>`;
+    card.innerHTML=`<div class="nce">${emo}</div><div style="flex:1"><div class="nct">${item.titre}</div><div class="ncs">⏱ <span data-nuit-dur="${item.id}">${nuitMin(item)} min</span> · ${item.age} ans · ${item.sous||'Respiration guidée'}</div></div>`;
     card.onclick=()=>{sndTap();openReader(item,'audio');};c.appendChild(card);
-  });
+  };
+  DATA.histoires.filter(i=>i.audio&&!_nuitIsGrand(i)).forEach(item=>_audioCard(item,'🎧'));
+  // Histoires ados & adultes (chargées depuis R2)
+  const grands=DATA.histoires.filter(_nuitIsGrand);
+  if(grands.length){
+    const hg=document.createElement('div');hg.className='nuit-sct';hg.style.marginTop='16px';
+    hg.textContent='🌌 Ados & adultes — relaxation, culture, développement perso';c.appendChild(hg);
+    grands.forEach(item=>_audioCard(item,item.emo||'🌌'));
+  }
+  loadNuitExtra();
   show('nuit');
   }catch(e){console.error('openNuit',e);show('nuit');}
 }
@@ -14919,15 +14984,10 @@ function openReader(item,type){
     aBanner.style.cssText='background:linear-gradient(135deg,#090920,#1a3a6e);border-radius:18px;padding:20px;text-align:center;color:#fff;margin-bottom:16px';
     aBanner.innerHTML=`<div style="font-size:42px;margin-bottom:8px">🎧</div>
       <div style="font-size:15px;font-weight:900;margin-bottom:4px">${item.titre}</div>
-      <div style="font-size:12px;opacity:.7;margin-bottom:14px">⏱ ${item.dur} min · Respiration guidée · ${item.age} ans</div>
+      <div style="font-size:12px;opacity:.7;margin-bottom:14px">⏱ <span id="reader-dur">${nuitMin(item)} min</span> · ${item.sous||'Respiration guidée'} · ${item.age} ans</div>
       <button id="audio-play-btn" onclick="elPlayNuit('${item.id}',document.getElementById('reader-full-txt').innerText);this.textContent='⏸ En cours…';this.style.opacity='.7'" style="background:#6C63FF;border:none;color:#fff;border-radius:14px;padding:12px 24px;font-family:var(--f);font-size:15px;font-weight:900;cursor:pointer;width:100%;margin-bottom:8px">▶ Écouter l'histoire</button>
-      <button onclick="ttsStop();const b=document.getElementById('audio-play-btn');if(b){b.textContent='▶ Écouter l\'histoire';b.style.opacity='1';}" style="background:rgba(255,255,255,.15);border:none;color:#fff;border-radius:14px;padding:10px 24px;font-family:var(--f);font-size:13px;font-weight:700;cursor:pointer;width:100%;margin-bottom:12px">⏹ Arrêter</button>
-      <div style="display:flex;gap:7px;justify-content:center">
-        <span style="font-size:11px;color:rgba(255,255,255,.5);align-self:center">Vitesse :</span>
-        <button onclick="ttsStop();_ttsRate=0.65;this.parentElement.querySelectorAll('button').forEach(b=>b.style.background='rgba(255,255,255,.1)');this.style.background='rgba(108,99,255,.7)'" style="background:rgba(255,255,255,.1);border:none;color:#fff;border-radius:8px;padding:5px 10px;font-family:var(--f);font-size:11px;font-weight:700;cursor:pointer">🐢 Lent</button>
-        <button onclick="ttsStop();_ttsRate=0.82;this.parentElement.querySelectorAll('button').forEach(b=>b.style.background='rgba(255,255,255,.1)');this.style.background='rgba(108,99,255,.7)'" style="background:rgba(108,99,255,.7);border:none;color:#fff;border-radius:8px;padding:5px 10px;font-family:var(--f);font-size:11px;font-weight:700;cursor:pointer">😌 Normal</button>
-        <button onclick="ttsStop();_ttsRate=1.0;this.parentElement.querySelectorAll('button').forEach(b=>b.style.background='rgba(255,255,255,.1)');this.style.background='rgba(108,99,255,.7)'" style="background:rgba(255,255,255,.1);border:none;color:#fff;border-radius:8px;padding:5px 10px;font-family:var(--f);font-size:11px;font-weight:700;cursor:pointer">⚡ Rapide</button>
-      </div>`;
+      <button onclick="ttsStop();_nuitResetPlayBtn();" style="background:rgba(255,255,255,.15);border:none;color:#fff;border-radius:14px;padding:10px 24px;font-family:var(--f);font-size:13px;font-weight:700;cursor:pointer;width:100%;margin-bottom:12px">⏹ Arrêter</button>
+      ${_nuitRateBar()}`;
     c.appendChild(aBanner);
     const tip=document.createElement('div');
     tip.style.cssText='background:#EAE9FF;border-radius:12px;padding:12px 14px;margin-bottom:14px;font-size:12px;color:#5A52D5;font-weight:600;line-height:1.6';
@@ -14953,6 +15013,7 @@ function openReader(item,type){
     _nuitStop.textContent='⏹ Stop';_nuitStop.onclick=ttsStop;
     tbar.appendChild(_nuitBtn);tbar.appendChild(_nuitStop);
     c.appendChild(tbar);
+    const _rb=document.createElement('div');_rb.innerHTML=_nuitRateBar();c.appendChild(_rb.firstChild);
   }
 
   const tit=document.createElement('div');tit.className='reader-tit';tit.textContent=item.titre;c.appendChild(tit);
