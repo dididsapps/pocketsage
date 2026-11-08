@@ -1107,6 +1107,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <div class="mod-ban" id="mod-ban"><div class="me" id="mod-e">📚</div><h2 id="mod-t">Module</h2><p id="mod-d">Desc</p></div>
   <div class="stabs" id="video-lang-tabs" style="display:none;margin-bottom:8px"></div>
   <div class="stabs" id="stabs"></div>
+  <div id="mod-age-bar" style="padding:0 14px"></div>
   <div id="coach-btn-wrap" style="display:none;padding:0 14px 14px">
     <button id="coach-start-btn" onclick="openCoachModal()" style="width:100%;background:linear-gradient(135deg,#FF6B6B,#FFD166);border:none;border-radius:20px;padding:18px 20px;display:flex;align-items:center;gap:14px;cursor:pointer;font-family:var(--f);box-shadow:0 4px 18px rgba(255,107,107,.35);touch-action:manipulation">
       <span style="font-size:36px">🏅</span>
@@ -12208,6 +12209,12 @@ function _classeToAge(classe){
   const map={GS:5,CP:6,CE1:7,CE2:8,CM1:9,CM2:10,'6ème':11,'5ème':12,'4ème':13,'3ème':14,'Lycée':16};
   return map[classe]||null;
 }
+function _classeToAgeRange(classe){
+  const map={GS:'5-6',CP:'6-7','CE1':'7-8','CE2':'8-9','CM1':'9-10','CM2':'10-11',
+    '6ème':'11-12','5ème':'12-13','4ème':'13-14','3ème':'14-15',
+    'Lycée':'15-18','Terminale':'17-18'};
+  return map[classe]||null;
+}
 function ageDistFromProfile(item, profileAge){
   // Retourne la distance en années entre l'item et l'âge du profil
   const n = typeof profileAge === 'string' ? ageNum(profileAge) : (profileAge||6);
@@ -12659,6 +12666,17 @@ async function openMod(mod){
     }catch(e){console.error('subcats error:',e);subs=[];}
     if(!subs||!subs.length){toast('Aucun contenu pour '+cfg.title,'err');return;}
     try{renderTabs(subs,mod);}catch(e){console.error('renderTabs:',e);}
+    // Slider d'âge — injecté dans #mod-age-bar si présent
+    try{
+      const ageBarEl=document.getElementById('mod-age-bar');
+      if(ageBarEl){
+        ageBarEl.innerHTML=_globalSliderHTML(_getSliderAge(),_globalShowAll,'mod-age-sl','mod-age-all');
+        const sl=document.getElementById('mod-age-sl');
+        const cb=document.getElementById('mod-age-all');
+        if(sl)sl.addEventListener('input',e=>{_globalSliderAge=parseInt(e.target.value);const sc=subs[0];renderList(sc&&sc.d||[],mod,sc);});
+        if(cb)cb.addEventListener('change',e=>{_globalShowAll=e.target.checked;const sc=subs[0];renderList(sc&&sc.d||[],mod,sc);});
+      }
+    }catch(e){console.error('mod-age-bar:',e);}
     try{
       const first=subs[0];
       renderList(first.d,mod,first);
@@ -12703,6 +12721,8 @@ function renderTabs(subs,mod){
       if(locked){toast('Disponible en 🚗 Mode Voiture','info');return;}
       t.querySelectorAll('.stab').forEach(x=>x.classList.remove('on'));
       b.classList.add('on');
+      // Mettre à jour le slider si présent
+      try{const sl=document.getElementById('mod-age-sl');if(sl){sl.oninput=ev=>{_globalSliderAge=parseInt(ev.target.value);renderList(sc.d,mod,sc);};}}catch(ex){}
       renderList(sc.d,mod,sc);
     };
     t.appendChild(b);
@@ -12716,17 +12736,15 @@ function renderList(items,mod,tabMeta){
   if(mod==='langues'&&tabMeta&&tabMeta.isProno){renderPrononcer(tabMeta);return;}
   if(mod==='savoirs'&&tabMeta&&tabMeta.isTables){renderTables();return;}
   const p=P();
-  items=filterByAge(items, p?.age);
+  const _sa=_getSliderAge(),_sAll=_globalShowAll;
+  if(!_sAll) items=items.filter(i=>_ageMatch(i.age||i.classe&&_classeToAgeRange(i.classe),_sa,false));
   items.forEach((item,idx)=>{
     const done=p&&p.done&&p.done[item.id];
-    const dist=ageDistFromProfile(item, p?.age);
-    const tooFar=dist>2;
-    const d=document.createElement('div');d.className='ecard'+(done?' done':'')+(tooFar?' ecard-dim':'');
+    const d=document.createElement('div');d.className='ecard'+(done?' done':'');
     const diff=item.diff||1;
     const t2=item.enonce||item.situation||item.nom||item.titre||'Exercice';
     const short=t2.length>58?t2.slice(0,55)+'…':t2;
-    const lockBadge=tooFar?`<span class="ecard-lock" style="display:none;position:absolute;top:7px;right:7px;font-size:11px;background:rgba(0,0,0,.18);border-radius:8px;padding:1px 5px;color:#fff">🔒 ${dist>4?'+'+Math.round(dist)+' niv':'hors niveau'}</span>`:'';
-    d.innerHTML=`${lockBadge}<div class="ecl"><div class="ecn">${item.type||item.cat||''} · ${item.age?item.age+' ans':item.classe||''}</div><div class="ect">${short}</div><div class="ecb"><span class="bd bd${diff}">${['','Facile','Intermédiaire','Avancé'][diff]}</span>${tooFar?'<span style="font-size:10px;opacity:.6;margin-left:4px">hors niveau</span>':''}</div></div><div>${done?'✅':'▶️'}</div>`;
+    d.innerHTML=`<div class="ecl"><div class="ecn">${item.type||item.cat||''} · ${item.age?item.age+' ans':item.classe||''}</div><div class="ect">${short}</div><div class="ecb"><span class="bd bd${diff}">${['','Facile','Intermédiaire','Avancé'][diff]}</span></div></div><div>${done?'✅':'▶️'}</div>`;
     d.onclick=()=>{sndTap();startEx(item,mod,idx,items);};
     el.appendChild(d);
   });
@@ -14162,6 +14180,19 @@ function renderAteliers(){
   cats.forEach(c=>mkFBtn(c,c));
   el.appendChild(fbar);
 
+  // Slider d'âge ateliers
+  const ageBarDiv=document.createElement('div');
+  ageBarDiv.id='atelier-age-bar';
+  ageBarDiv.style.cssText='padding:0 14px';
+  ageBarDiv.innerHTML=_globalSliderHTML(_getSliderAge(),_globalShowAll,'atelier-age-sl','atelier-age-all');
+  el.appendChild(ageBarDiv);
+  setTimeout(()=>{
+    const sl=document.getElementById('atelier-age-sl');
+    const cb=document.getElementById('atelier-age-all');
+    if(sl)sl.addEventListener('input',e=>{_globalSliderAge=parseInt(e.target.value);renderAteliers();});
+    if(cb)cb.addEventListener('change',e=>{_globalShowAll=e.target.checked;renderAteliers();});
+  },50);
+
   const grid=document.createElement('div');
   grid.id='atelier-grid';
   grid.style.cssText='padding:10px 14px 80px;display:flex;flex-direction:column;gap:12px';
@@ -14169,7 +14200,8 @@ function renderAteliers(){
 
   function renderAtelierCards(filter){
     grid.innerHTML='';
-    const list=filter==='all'?DATA.ateliers:DATA.ateliers.filter(a=>a.cat===filter);
+    let list=filter==='all'?DATA.ateliers:DATA.ateliers.filter(a=>a.cat===filter);
+    if(!_globalShowAll) list=list.filter(a=>_ageMatch(a.age,_getSliderAge(),false));
     list.forEach(a=>{
       const col=catColors[a.cat]||'var(--v)';
       const diff=['','⭐','⭐⭐','⭐⭐⭐'][a.diff]||'';
@@ -14949,10 +14981,29 @@ function _nuitSliderHTML(sliderAge,showAll){
   </div>`;
 }
 let _nuitSliderAge=null,_nuitShowAll=false;
+// Slider d'âge global — partagé par tous les modules
+let _globalSliderAge=null,_globalShowAll=false;
+function _getSliderAge(){if(_globalSliderAge===null){_globalSliderAge=Math.min(18,Math.max(4,parseInt(P()&&P().age||8)||8));}return _globalSliderAge;}
+function _globalSliderHTML(age,showAll,onChangeId,onCheckId){
+  return `<div class="age-filter-bar" style="display:flex;align-items:center;gap:10px;background:var(--vl);border-radius:12px;padding:10px 14px;margin:8px 0 4px">
+    <span style="font-size:18px">🎂</span>
+    <div style="flex:1">
+      <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--tl);margin-bottom:4px">
+        <span>4</span><span style="font-weight:700;color:var(--v)">${age} ans</span><span>18</span>
+      </div>
+      <input type="range" min="4" max="18" value="${age}" id="${onChangeId}" style="width:100%;accent-color:var(--v);cursor:pointer">
+    </div>
+    <label style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--tl);cursor:pointer;white-space:nowrap">
+      <input type="checkbox" id="${onCheckId}" ${showAll?'checked':''} style="accent-color:var(--v)"> Tout
+    </label>
+  </div>`;
+}
 function openNuit(){
   try{
   const c=document.getElementById('nuit-c');if(!c){show('nuit');return;}c.innerHTML='';
-  if(_nuitSliderAge===null){_nuitSliderAge=Math.min(18,Math.max(4,parseInt(P().age)||8));}
+  // Sync avec slider global
+  if(_globalSliderAge!==null)_nuitSliderAge=_globalSliderAge;
+  else if(_nuitSliderAge===null){_nuitSliderAge=Math.min(18,Math.max(4,parseInt(P()&&P().age||8)||8));}
   // Étoiles
   const sb=document.createElement('div');sb.className='star-bg';
   for(let i=0;i<40;i++){const s=document.createElement('div');s.className='sd';
@@ -14965,8 +15016,8 @@ function openNuit(){
   const sliderDiv=document.createElement('div');
   sliderDiv.innerHTML=_nuitSliderHTML(_nuitSliderAge,_nuitShowAll);
   c.appendChild(sliderDiv);
-  c.querySelector('#nuit-age-slider').addEventListener('input',e=>{_nuitSliderAge=parseInt(e.target.value);openNuit();});
-  c.querySelector('#nuit-show-all').addEventListener('change',e=>{_nuitShowAll=e.target.checked;openNuit();});
+  c.querySelector('#nuit-age-slider').addEventListener('input',e=>{_nuitSliderAge=parseInt(e.target.value);_globalSliderAge=_nuitSliderAge;openNuit();});
+  c.querySelector('#nuit-show-all').addEventListener('change',e=>{_nuitShowAll=e.target.checked;_globalShowAll=_nuitShowAll;openNuit();});
 
   const _renderSection=(label,items,emo,isAudio)=>{
     const filtered=items.filter(i=>_ageMatch(i.age,_nuitSliderAge,_nuitShowAll));
