@@ -1035,7 +1035,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
     <div class="av-grid" id="av-grid"><!-- rempli par JS --></div>
   </div>
   
-  <button class="sbtn" onclick="createProfile()">✨ Créer mon profil !</button>
+  <button class="sbtn" onclick="createProfile()" data-t="create_profile">✨ Créer mon profil !</button>
   <p style="text-align:center;margin-top:12px;font-size:11px;color:rgba(255,255,255,.7);cursor:pointer" onclick="openPrivacy()">🔒 Politique de confidentialité</p>
 </div>
 </div>
@@ -1248,7 +1248,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 <div class="scr" id="scr-score">
 <div class="sc-wrap">
   <div class="se" id="sc-e">🎉</div>
-  <h2 id="sc-t">Bravo !</h2>
+  <h2 id="sc-t" data-t="correct">Bravo !</h2>
   <p id="sc-s">Super !</p>
   <div class="sc-stars" id="sc-str">⭐⭐⭐</div>
   <div id="sc-chars" style="display:flex;justify-content:center;align-items:flex-end;gap:16px;margin:12px 0 4px"></div>
@@ -11017,6 +11017,269 @@ let APP={
   timer:null,
 };
 
+
+// ══════════════════════════════════════════════════════════════
+// TRANSLATIONS — Traductions UI selon langue maternelle
+// ══════════════════════════════════════════════════════════════
+const TRANSLATIONS = {
+  FR: {
+    start:'▶ Commencer !', play:'▶ Jouer !', validate:'✅ Valider',
+    next:'Suivant →', back:'← Retour', close:'Fermer', cancel:'Annuler',
+    correct:'Bravo !', wrong:'Essaie encore !', score:'Score',
+    home:'🏠 Accueil', profile:'Profil', settings:'Réglages',
+    done:'Séance terminée !', retry:'Recommencer', listen:'🔊 Écouter',
+    hint:'💡 Indice', question:'Question', answer:'Réponse',
+    success:'Excellent !', create_profile:'✨ Créer mon profil !',
+    add_profile:'➕ Ajouter un profil', firstname:'👤 Prénom',
+    native_lang:'🗺️ Langue maternelle', learning_lang:'🌍 Langues à apprendre',
+    age:'🎂 Ton âge', avatar:'🎭 Choisis ton avatar',
+    confirm_pin:'Confirmer PIN', new_pin:'Nouveau PIN',
+    export:'💾 Exporter', report:'📊 Bilan', stop:'⏹ Arrêter',
+    challenge:'Défi suivant →', well_done:'Bien joué !',
+    understood:'Compris ✓', placeholder_name:'Emma, Lucas, Maman…',
+    send_feedback:'Envoyer', feedback_placeholder:'Vos remarques, idées…',
+  },
+  EN: {
+    start:'▶ Start!', play:'▶ Play!', validate:'✅ Validate',
+    next:'Next →', back:'← Back', close:'Close', cancel:'Cancel',
+    correct:'Well done!', wrong:'Try again!', score:'Score',
+    home:'🏠 Home', profile:'Profile', settings:'Settings',
+    done:'Session complete!', retry:'Retry', listen:'🔊 Listen',
+    hint:'💡 Hint', question:'Question', answer:'Answer',
+    success:'Excellent!', create_profile:'✨ Create my profile!',
+    add_profile:'➕ Add a profile', firstname:'👤 First name',
+    native_lang:'🗺️ Native language', learning_lang:'🌍 Languages to learn',
+    age:'🎂 Your age', avatar:'🎭 Choose your avatar',
+    confirm_pin:'Confirm PIN', new_pin:'New PIN',
+    export:'💾 Export', report:'📊 Report', stop:'⏹ Stop',
+    challenge:'Next challenge →', well_done:'Well done!',
+    understood:'Got it ✓', placeholder_name:'Emma, Lucas, Mum…',
+    send_feedback:'Send', feedback_placeholder:'Your comments, ideas…',
+  },
+  DE: {
+    start:'▶ Starten!', play:'▶ Spielen!', validate:'✅ Bestätigen',
+    next:'Weiter →', back:'← Zurück', close:'Schließen', cancel:'Abbrechen',
+    correct:'Super!', wrong:'Versuch es nochmal!', score:'Punktzahl',
+    home:'🏠 Startseite', profile:'Profil', settings:'Einstellungen',
+    done:'Sitzung beendet!', retry:'Nochmal', listen:'🔊 Anhören',
+    hint:'💡 Hinweis', question:'Frage', answer:'Antwort',
+    success:'Ausgezeichnet!', create_profile:'✨ Mein Profil erstellen!',
+    add_profile:'➕ Profil hinzufügen', firstname:'👤 Vorname',
+    native_lang:'🗺️ Muttersprache', learning_lang:'🌍 Sprachen lernen',
+    age:'🎂 Dein Alter', avatar:'🎭 Avatar wählen',
+    confirm_pin:'PIN bestätigen', new_pin:'Neue PIN',
+    export:'💾 Exportieren', report:'📊 Bericht', stop:'⏹ Stopp',
+    challenge:'Nächste Herausforderung →', well_done:'Gut gemacht!',
+    understood:'Verstanden ✓', placeholder_name:'Emma, Lucas, Mama…',
+    send_feedback:'Senden', feedback_placeholder:'Ihre Kommentare, Ideen…',
+  },
+  ES: {
+    start:'▶ ¡Empezar!', play:'▶ ¡Jugar!', validate:'✅ Validar',
+    next:'Siguiente →', back:'← Volver', close:'Cerrar', cancel:'Cancelar',
+    correct:'¡Bravo!', wrong:'¡Inténtalo de nuevo!', score:'Puntuación',
+    home:'🏠 Inicio', profile:'Perfil', settings:'Ajustes',
+    done:'¡Sesión terminada!', retry:'Reintentar', listen:'🔊 Escuchar',
+    hint:'💡 Pista', question:'Pregunta', answer:'Respuesta',
+    success:'¡Excelente!', create_profile:'✨ ¡Crear mi perfil!',
+    add_profile:'➕ Añadir perfil', firstname:'👤 Nombre',
+    native_lang:'🗺️ Lengua materna', learning_lang:'🌍 Idiomas a aprender',
+    age:'🎂 Tu edad', avatar:'🎭 Elige tu avatar',
+    confirm_pin:'Confirmar PIN', new_pin:'Nuevo PIN',
+    export:'💾 Exportar', report:'📊 Informe', stop:'⏹ Parar',
+    challenge:'Siguiente reto →', well_done:'¡Bien hecho!',
+    understood:'Entendido ✓', placeholder_name:'Emma, Lucas, Mamá…',
+    send_feedback:'Enviar', feedback_placeholder:'Tus comentarios, ideas…',
+  },
+  IT: {
+    start:'▶ Inizia!', play:'▶ Gioca!', validate:'✅ Conferma',
+    next:'Avanti →', back:'← Indietro', close:'Chiudi', cancel:'Annulla',
+    correct:'Bravo!', wrong:'Riprova!', score:'Punteggio',
+    home:'🏠 Home', profile:'Profilo', settings:'Impostazioni',
+    done:'Sessione terminata!', retry:'Riprova', listen:'🔊 Ascolta',
+    hint:'💡 Suggerimento', question:'Domanda', answer:'Risposta',
+    success:'Eccellente!', create_profile:'✨ Crea il mio profilo!',
+    add_profile:'➕ Aggiungi profilo', firstname:'👤 Nome',
+    native_lang:'🗺️ Lingua madre', learning_lang:'🌍 Lingue da imparare',
+    age:'🎂 La tua età', avatar:'🎭 Scegli il tuo avatar',
+    confirm_pin:'Conferma PIN', new_pin:'Nuovo PIN',
+    export:'💾 Esporta', report:'📊 Rapporto', stop:'⏹ Stop',
+    challenge:'Prossima sfida →', well_done:'Ben fatto!',
+    understood:'Capito ✓', placeholder_name:'Emma, Lucas, Mamma…',
+    send_feedback:'Invia', feedback_placeholder:'Commenti, idee…',
+  },
+  PT: {
+    start:'▶ Começar!', play:'▶ Jogar!', validate:'✅ Validar',
+    next:'Próximo →', back:'← Voltar', close:'Fechar', cancel:'Cancelar',
+    correct:'Parabéns!', wrong:'Tente novamente!', score:'Pontuação',
+    home:'🏠 Início', profile:'Perfil', settings:'Configurações',
+    done:'Sessão concluída!', retry:'Tentar novamente', listen:'🔊 Ouvir',
+    hint:'💡 Dica', question:'Pergunta', answer:'Resposta',
+    success:'Excelente!', create_profile:'✨ Criar meu perfil!',
+    add_profile:'➕ Adicionar perfil', firstname:'👤 Nome',
+    native_lang:'🗺️ Língua materna', learning_lang:'🌍 Idiomas a aprender',
+    age:'🎂 Sua idade', avatar:'🎭 Escolha seu avatar',
+    confirm_pin:'Confirmar PIN', new_pin:'Novo PIN',
+    export:'💾 Exportar', report:'📊 Relatório', stop:'⏹ Parar',
+    challenge:'Próximo desafio →', well_done:'Muito bem!',
+    understood:'Entendido ✓', placeholder_name:'Emma, Lucas, Mamãe…',
+    send_feedback:'Enviar', feedback_placeholder:'Seus comentários, ideias…',
+  },
+  RU: {
+    start:'▶ Начать!', play:'▶ Играть!', validate:'✅ Подтвердить',
+    next:'Далее →', back:'← Назад', close:'Закрыть', cancel:'Отмена',
+    correct:'Молодец!', wrong:'Попробуй ещё!', score:'Очки',
+    home:'🏠 Главная', profile:'Профиль', settings:'Настройки',
+    done:'Занятие завершено!', retry:'Повторить', listen:'🔊 Слушать',
+    hint:'💡 Подсказка', question:'Вопрос', answer:'Ответ',
+    success:'Отлично!', create_profile:'✨ Создать профиль!',
+    add_profile:'➕ Добавить профиль', firstname:'👤 Имя',
+    native_lang:'🗺️ Родной язык', learning_lang:'🌍 Изучаемые языки',
+    age:'🎂 Твой возраст', avatar:'🎭 Выбери аватар',
+    confirm_pin:'Подтвердить PIN', new_pin:'Новый PIN',
+    export:'💾 Экспорт', report:'📊 Отчёт', stop:'⏹ Стоп',
+    challenge:'Следующее задание →', well_done:'Хорошая работа!',
+    understood:'Понял ✓', placeholder_name:'Эмма, Лукас, Мама…',
+    send_feedback:'Отправить', feedback_placeholder:'Ваши комментарии, идеи…',
+  },
+  UK: {
+    start:'▶ Почати!', play:'▶ Грати!', validate:'✅ Підтвердити',
+    next:'Далі →', back:'← Назад', close:'Закрити', cancel:'Скасувати',
+    correct:'Молодець!', wrong:'Спробуй ще!', score:'Очки',
+    home:'🏠 Головна', profile:'Профіль', settings:'Налаштування',
+    done:'Заняття завершено!', retry:'Повторити', listen:'🔊 Слухати',
+    hint:'💡 Підказка', question:'Питання', answer:'Відповідь',
+    success:'Чудово!', create_profile:'✨ Створити профіль!',
+    add_profile:'➕ Додати профіль', firstname:"👤 Ім'я",
+    native_lang:'🗺️ Рідна мова', learning_lang:'🌍 Мови для вивчення',
+    age:'🎂 Твій вік', avatar:'🎭 Обери аватар',
+    confirm_pin:'Підтвердити PIN', new_pin:'Новий PIN',
+    export:'💾 Експорт', report:'📊 Звіт', stop:'⏹ Стоп',
+    challenge:'Наступне завдання →', well_done:'Гарна робота!',
+    understood:'Зрозумів ✓', placeholder_name:'Емма, Лукас, Мама…',
+    send_feedback:'Надіслати', feedback_placeholder:'Коментарі, ідеї…',
+  },
+  AR: {
+    start:'▶ ابدأ!', play:'▶ العب!', validate:'✅ تأكيد',
+    next:'التالي →', back:'← رجوع', close:'إغلاق', cancel:'إلغاء',
+    correct:'أحسنت!', wrong:'حاول مرة أخرى!', score:'النقاط',
+    home:'🏠 الرئيسية', profile:'الملف الشخصي', settings:'الإعدادات',
+    done:'انتهت الجلسة!', retry:'إعادة المحاولة', listen:'🔊 استمع',
+    hint:'💡 تلميح', question:'سؤال', answer:'إجابة',
+    success:'ممتاز!', create_profile:'✨ إنشاء ملفي الشخصي!',
+    add_profile:'➕ إضافة ملف', firstname:'👤 الاسم',
+    native_lang:'🗺️ اللغة الأم', learning_lang:'🌍 اللغات للتعلم',
+    age:'🎂 عمرك', avatar:'🎭 اختر صورتك',
+    confirm_pin:'تأكيد الرمز', new_pin:'رمز جديد',
+    export:'💾 تصدير', report:'📊 تقرير', stop:'⏹ إيقاف',
+    challenge:'التحدي التالي →', well_done:'عمل رائع!',
+    understood:'فهمت ✓', placeholder_name:'إيما، لوكاس، ماما…',
+    send_feedback:'إرسال', feedback_placeholder:'تعليقاتك، أفكارك…',
+  },
+  ZH: {
+    start:'▶ 开始！', play:'▶ 玩！', validate:'✅ 确认',
+    next:'下一步 →', back:'← 返回', close:'关闭', cancel:'取消',
+    correct:'太棒了！', wrong:'再试一次！', score:'分数',
+    home:'🏠 主页', profile:'个人资料', settings:'设置',
+    done:'课程结束！', retry:'重试', listen:'🔊 听',
+    hint:'💡 提示', question:'问题', answer:'答案',
+    success:'优秀！', create_profile:'✨ 创建我的资料！',
+    add_profile:'➕ 添加资料', firstname:'👤 名字',
+    native_lang:'🗺️ 母语', learning_lang:'🌍 要学的语言',
+    age:'🎂 你的年龄', avatar:'🎭 选择头像',
+    confirm_pin:'确认PIN', new_pin:'新PIN',
+    export:'💾 导出', report:'📊 报告', stop:'⏹ 停止',
+    challenge:'下一个挑战 →', well_done:'干得好！',
+    understood:'明白了 ✓', placeholder_name:'艾玛、卢卡斯、妈妈…',
+    send_feedback:'发送', feedback_placeholder:'您的意见、想法…',
+  },
+  PL: {
+    start:'▶ Zacznij!', play:'▶ Graj!', validate:'✅ Potwierdź',
+    next:'Dalej →', back:'← Wstecz', close:'Zamknij', cancel:'Anuluj',
+    correct:'Brawo!', wrong:'Spróbuj ponownie!', score:'Wynik',
+    home:'🏠 Strona główna', profile:'Profil', settings:'Ustawienia',
+    done:'Sesja zakończona!', retry:'Ponów', listen:'🔊 Słuchaj',
+    hint:'💡 Podpowiedź', question:'Pytanie', answer:'Odpowiedź',
+    success:'Doskonale!', create_profile:'✨ Utwórz mój profil!',
+    add_profile:'➕ Dodaj profil', firstname:'👤 Imię',
+    native_lang:'🗺️ Język ojczysty', learning_lang:'🌍 Języki do nauki',
+    age:'🎂 Twój wiek', avatar:'🎭 Wybierz awatar',
+    confirm_pin:'Potwierdź PIN', new_pin:'Nowy PIN',
+    export:'💾 Eksportuj', report:'📊 Raport', stop:'⏹ Stop',
+    challenge:'Następne wyzwanie →', well_done:'Dobra robota!',
+    understood:'Rozumiem ✓', placeholder_name:'Emma, Łukasz, Mama…',
+    send_feedback:'Wyślij', feedback_placeholder:'Komentarze, pomysły…',
+  },
+  RO: {
+    start:'▶ Începe!', play:'▶ Joacă!', validate:'✅ Confirmă',
+    next:'Următor →', back:'← Înapoi', close:'Închide', cancel:'Anulează',
+    correct:'Bravo!', wrong:'Încearcă din nou!', score:'Scor',
+    home:'🏠 Acasă', profile:'Profil', settings:'Setări',
+    done:'Sesiune terminată!', retry:'Reîncearcă', listen:'🔊 Ascultă',
+    hint:'💡 Indiciu', question:'Întrebare', answer:'Răspuns',
+    success:'Excelent!', create_profile:'✨ Creează profilul meu!',
+    add_profile:'➕ Adaugă profil', firstname:'👤 Prenume',
+    native_lang:'🗺️ Limba maternă', learning_lang:'🌍 Limbi de învățat',
+    age:'🎂 Vârsta ta', avatar:'🎭 Alege avatarul',
+    confirm_pin:'Confirmă PIN', new_pin:'PIN nou',
+    export:'💾 Exportă', report:'📊 Raport', stop:'⏹ Stop',
+    challenge:'Provocarea următoare →', well_done:'Bine făcut!',
+    understood:'Înțeles ✓', placeholder_name:'Emma, Lucas, Mamă…',
+    send_feedback:'Trimite', feedback_placeholder:'Comentariile, ideile tale…',
+  },
+  HU: {
+    start:'▶ Kezdés!', play:'▶ Játék!', validate:'✅ Megerősít',
+    next:'Tovább →', back:'← Vissza', close:'Bezár', cancel:'Mégsem',
+    correct:'Remek!', wrong:'Próbáld újra!', score:'Pontszám',
+    home:'🏠 Főoldal', profile:'Profil', settings:'Beállítások',
+    done:'Foglalkozás vége!', retry:'Újra', listen:'🔊 Hallgatás',
+    hint:'💡 Tipp', question:'Kérdés', answer:'Válasz',
+    success:'Kiváló!', create_profile:'✨ Profil létrehozása!',
+    add_profile:'➕ Profil hozzáadása', firstname:'👤 Keresztnév',
+    native_lang:'🗺️ Anyanyelv', learning_lang:'🌍 Tanulható nyelvek',
+    age:'🎂 Korod', avatar:'🎭 Válassz avatárt',
+    confirm_pin:'PIN megerősítése', new_pin:'Új PIN',
+    export:'💾 Exportálás', report:'📊 Jelentés', stop:'⏹ Stop',
+    challenge:'Következő kihívás →', well_done:'Szép munka!',
+    understood:'Értettem ✓', placeholder_name:'Emma, Lukács, Anya…',
+    send_feedback:'Küldés', feedback_placeholder:'Megjegyzések, ötletek…',
+  },
+  TR: {
+    start:'▶ Başla!', play:'▶ Oyna!', validate:'✅ Onayla',
+    next:'İleri →', back:'← Geri', close:'Kapat', cancel:'İptal',
+    correct:'Harika!', wrong:'Tekrar dene!', score:'Puan',
+    home:'🏠 Ana Sayfa', profile:'Profil', settings:'Ayarlar',
+    done:'Oturum tamamlandı!', retry:'Tekrar', listen:'🔊 Dinle',
+    hint:'💡 İpucu', question:'Soru', answer:'Cevap',
+    success:'Mükemmel!', create_profile:'✨ Profilimi oluştur!',
+    add_profile:'➕ Profil ekle', firstname:'👤 Ad',
+    native_lang:'🗺️ Ana dil', learning_lang:'🌍 Öğrenilecek diller',
+    age:'🎂 Yaşın', avatar:'🎭 Avatarını seç',
+    confirm_pin:"PIN'i onayla", new_pin:'Yeni PIN',
+    export:'💾 Dışa aktar', report:'📊 Rapor', stop:'⏹ Dur',
+    challenge:'Sonraki meydan okuma →', well_done:'Çok iyi!',
+    understood:'Anladım ✓', placeholder_name:'Emma, Lucas, Anne…',
+    send_feedback:'Gönder', feedback_placeholder:'Yorumlarınız, fikirleriniz…',
+  },
+};
+// Fallback FR pour les langues non encore traduites
+['BG','CS','SK','HR','SR','FA'].forEach(function(l){TRANSLATIONS[l]=TRANSLATIONS.FR;});
+
+function T(key) {
+  var lang = (typeof P === 'function' && P() && P().native) ? P().native : 'FR';
+  var dict = TRANSLATIONS[lang] || TRANSLATIONS.FR;
+  return dict[key] || TRANSLATIONS.FR[key] || key;
+}
+
+function applyLang() {
+  var lang = (typeof P === 'function' && P() && P().native) ? P().native : 'FR';
+  document.querySelectorAll('[data-t]').forEach(function(el) {
+    var key = el.getAttribute('data-t');
+    el.textContent = T(key);
+  });
+  // Direction RTL pour l'arabe et le persan
+  document.documentElement.setAttribute('dir', (lang === 'AR' || lang === 'FA') ? 'rtl' : 'ltr');
+}
+// ══════════════════════════════════════════════════════════════
 function loadApp(){
   try{const r=localStorage.getItem('psa3');if(r)Object.assign(APP,JSON.parse(r));}catch(e){}
   if(!APP.profiles)APP.profiles=[];
@@ -11798,7 +12061,7 @@ function filterByAge(items, profileAge){
 // HERO_GRADS déplacé en haut (voir déclaration avant buildHome)
 // HOME_MODS est déclaré plus haut (avant initSetup IIFE)
 
-function buildHome(){
+function buildHome(){try{applyLang();}catch(e){}
   try{buildProfBar();}catch(e){console.error('buildProfBar:',e);}
   const p=P();if(!p){show('setup');return;}
   try{
@@ -14144,7 +14407,7 @@ function startDefi(item,idx,list){
       <p>${item.consigne}</p>
       <div class="tring" id="df-ring">${dur}s</div>
       <div class="df-progbar"><div class="df-progbar-inner" id="df-prog"></div></div>
-      <button class="dstart" id="df-st">▶ Commencer !</button>
+      <button class="dstart" id="df-st" data-t="start">▶ Commencer !</button>
       <button class="ddone" id="df-dn">✅ J'ai réussi !</button>
     </div>
     ${item.invite?`<div class="defi-invite">👨‍👩‍👧 <strong>Invite ta famille ou tes amis !</strong><br>${item.invite}</div>`:''}
@@ -14357,7 +14620,7 @@ function renderCoachStep(item, stepNum, totalSteps){
       <p>${item.consigne}</p>
       <div class="tring" id="df-ring">${dur}s</div>
       <div class="df-progbar"><div class="df-progbar-inner" id="df-prog"></div></div>
-      <button class="dstart" id="df-st">▶ Commencer !</button>
+      <button class="dstart" id="df-st" data-t="start">▶ Commencer !</button>
       <button class="ddone" id="df-dn">✅ J'ai réussi !</button>
     </div>
     <div style="padding:0 4px 20px">
@@ -14416,7 +14679,7 @@ function endCoachSession(){
   c.innerHTML=`
     <div style="text-align:center;padding:30px 20px 40px">
       <div style="font-size:80px;animation:defi-bounce .9s ease-in-out infinite alternate">🏆</div>
-      <h2 style="font-size:24px;font-weight:900;margin:16px 0 8px">Séance terminée !</h2>
+      <h2 style="font-size:24px;font-weight:900;margin:16px 0 8px" data-t="done">Séance terminée !</h2>
       <div style="font-size:14px;color:var(--tl);line-height:1.7;margin-bottom:20px">
         Tu viens de faire <strong>${total} exercices</strong><br>
         comme un vrai champion ${plan.emoji}<br>
@@ -14643,7 +14906,7 @@ function openProfil(){
   const actions=document.createElement('div');
   actions.innerHTML=`
     <button class="rbtn rbtn-red" onclick="if(confirm('Remettre à zéro les scores de ${p.name} ?')){const p2=P();if(p2){p2.score=0;p2.done={};saveApp();openProfil();}}">🔄 Remettre à zéro les scores</button>
-    <button class="rbtn rbtn-bl" onclick="addProfile()">➕ Ajouter un profil</button>
+    <button class="rbtn rbtn-bl" onclick="addProfile()">${T('add_profile')}</button>
     ${APP.profiles.length>1?`<button class="rbtn" style="background:var(--cl);border-color:var(--c);color:var(--c)" onclick="if(confirm('Supprimer le profil ${p.name} ?')){APP.profiles.splice(APP.cur,1);APP.cur=0;saveApp();buildHome();goHome();}">🗑 Supprimer ce profil</button>`:''}
     <div style="text-align:center;margin-top:16px">
       <span style="font-size:11px;color:var(--tl);cursor:pointer" onclick="openPrivacy()">🔒 Politique de confidentialité</span>
@@ -15366,7 +15629,7 @@ function showAdvSummary(){
       <div style="font-size:22px;margin-bottom:4px">${game.emoji}</div>
       <div style="font-weight:800;font-size:15px;margin-bottom:2px">Mini-jeu : ${game.label}</div>
       <div style="font-size:12px;color:var(--tl);margin-bottom:10px">Pour finir en beauté !</div>
-      <button class="adv-continue-btn" style="width:100%;margin-bottom:0" onclick="closeAdventureAndOpenGame('${game.id}')">▶ Jouer !</button>
+      <button class="adv-continue-btn" style="width:100%;margin-bottom:0" onclick="closeAdventureAndOpenGame('${game.id}')">${T('play')}</button>
     </div>
     <button class="adv-continue-btn" style="width:100%;margin-bottom:8px" onclick="startAdventure()">🗺️ Nouvelle aventure !</button>
     <button class="adv-continue-btn" style="width:100%;background:var(--tl)" onclick="goHome()">🏠 Retour à l'accueil</button>`;
