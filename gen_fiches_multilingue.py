@@ -153,13 +153,15 @@ def draw_header(c, title, subtitle, cat, age_label, fiche_num, lang):
     title_short = title if len(title) <= 45 else title[:42] + "..."
     c.setFont("Helvetica-Bold", 16)
     c.drawCentredString(W/2, H-2.1*cm, title_short)
-    sub_short = subtitle if len(subtitle) <= 70 else subtitle[:67] + "..."
-    c.setFont("Helvetica", 10)
+    sub_short = subtitle if len(subtitle) <= 90 else subtitle[:87] + "..."
+    c.setFont("Helvetica", 9)
     c.drawCentredString(W/2, H-3.0*cm, sub_short)
 
 def draw_badge(c, x, y, text, main_col):
-    # N&B : bordure noire, fond blanc, texte noir
-    text_short = text[:30] if len(text) > 30 else text
+    # Remplace ⭐ par * pour compatibilité Helvetica
+    text_clean = text.replace("⭐", "*").replace("✏️", "").replace("📋", "").replace("🧠", "").replace("💡", "")
+    text_clean = text_clean.strip()
+    text_short = text_clean[:30] if len(text_clean) > 30 else text_clean
     bw = len(text_short)*0.19*cm + 0.6*cm
     c.setFillColor(colors.white)
     c.setStrokeColor(colors.black)
@@ -169,9 +171,20 @@ def draw_badge(c, x, y, text, main_col):
     c.setFont("Helvetica-Bold", 9)
     c.drawString(x+0.3*cm, y-0.15*cm, text_short)
 
+def clean_text(t):
+    """Supprime les emojis non supportés par Helvetica."""
+    replacements = {"⭐":"*","✏️":"","📋":"","🧠":"","💡":"","⏱":"",
+                    "🍎":"","🌟":"","🎯":"","🏆":"","🌈":"","🦋":"","🎨":"",
+                    "🔵":"","🔴":"","🟢":"","🟡":"","🎭":"","🎲":"","🃏":"",
+                    "🌸":"","🎵":"","🧩":"","🔮":"","🌀":""}
+    for k,v in replacements.items():
+        t = t.replace(k, v)
+    return t.strip()
+
 def draw_section(c, y, title, main_col, bg_col):
     # N&B : fond gris très clair, texte noir gras
-    title_s = title[:50] if len(title)>50 else title
+    title_s = clean_text(title)
+    title_s = title_s[:50] if len(title_s)>50 else title_s
     c.setFillColor(HexColor("#F0F0F0"))
     c.setStrokeColor(colors.black)
     c.setLineWidth(0.5)
@@ -204,22 +217,26 @@ def draw_steps(c, y, steps, main_col):
 def draw_note_box(c, y, text, main_col, bg_col, icon=""):
     if y < 2.0*cm:
         return y
-    lines = wrap_text(text, 75)
+    text_clean = clean_text(text)
+    lines = wrap_text(text_clean, 75)
     box_h = max(1.0*cm, len(lines)*0.38*cm + 0.45*cm)
-    # Réduire la hauteur si on dépasse le footer
     if y - box_h < 1.8*cm:
         box_h = y - 1.8*cm
     if box_h < 0.5*cm:
         return y
-    # N&B : fond blanc, bordure noire fine
+    # Préfixe icône dessiné (petit carré coloré à gauche)
     c.setFillColor(colors.white)
     c.setStrokeColor(colors.black)
     c.setLineWidth(0.8)
     c.roundRect(1*cm, y-box_h, W-2*cm, box_h, 8, fill=1, stroke=1)
+    # Carré coloré indicateur à gauche
+    icon_colors = {"🧠": "#6C63FF", "💡": "#FF9F1C"}
+    sq_col = icon_colors.get(icon, main_col)
+    c.setFillColor(HexColor(sq_col))
+    c.roundRect(1.2*cm, y-box_h+0.15*cm, 0.3*cm, box_h-0.3*cm, 3, fill=1, stroke=0)
     c.setFillColor(colors.black)
     c.setFont("Helvetica-Bold", 10)
-    prefix = f"{icon}  " if icon else ""
-    c.drawString(1.5*cm, y-0.42*cm, f"{prefix}{lines[0]}")
+    c.drawString(1.8*cm, y-0.42*cm, lines[0])
     c.setFont("Helvetica", 10)
     for j, line in enumerate(lines[1:], 1):
         c.drawString(1.8*cm, y-0.42*cm - j*0.38*cm, line)
@@ -238,11 +255,12 @@ def draw_zone(c, y, label, h, main_col, bg_col):
     c.setDash([4, 4])
     c.roundRect(1*cm, y-h, W-2*cm, h, 10, fill=0, stroke=1)
     c.setDash([])
-    # Label : une ligne, en haut à gauche, petit, gris
+    # Label : toutes les lignes, en haut à gauche, petit, gris
     c.setFillColor(HexColor("#888888"))
     c.setFont("Helvetica-Oblique", 8)
-    first_line = (label or "").split("\n")[0][:90]
-    c.drawString(1.5*cm, y - 0.4*cm, first_line)
+    all_lines = (label or "").split("\n")
+    for li, line in enumerate(all_lines[:4]):  # max 4 lignes
+        c.drawString(1.5*cm, y - 0.4*cm - li*0.35*cm, line[:90])
     return y - h - 0.3*cm
 
 def draw_footer(c, lang):
@@ -265,7 +283,7 @@ FICHES_FR = [
           "Commence par les grandes courbes, puis les détails.",
           "Colorie en miroir : même couleur à gauche et à droite !"],
  "note":"Ton cerveau travaille des deux côtés en même temps — c'est de la gym neuronale !",
- "zone":"✏️ Zone de dessin — Feuille A4 paysage recommandée",
+ "zone":"Zone de dessin — Feuille A4 paysage recommandee",
  "astuce":"Ferme les yeux 10 secondes en imaginant le papillon avant de commencer.",
  "duree":"10 min","difficulte":"⭐⭐"},
 
@@ -679,11 +697,16 @@ def generate_pdf(fiche, lang, outdir):
     y = draw_note_box(c, y, fiche["note"], main_col, bg_col, "🧠")
     y = draw_note_box(c, y, fiche["astuce"], main_col, bg_col, "💡")
 
-    # Pour les fiches dessin : exemple visuel + zone de dessin agrandie
+    # Pour les fiches dessin : exemple visuel
     if fiche["cat"] == "dessin" and fiche["id"] == "FI-001":
         y = draw_butterfly_example(c, y, main_col, bg_col, lang)
-    elif fiche["id"] == "FI-007":
-        y = draw_maze_example(c, y, main_col, bg_col, lang)
+
+    # FI-007 : labyrinthes dans la zone
+    if fiche["id"] == "FI-007":
+        y = draw_maze_zone(c, y, lang)
+        draw_footer(c, lang)
+        c.save()
+        return
 
     zone_label = fiche["zone"]
     # Ajouter mention "verso" pour plus d'espace
@@ -840,6 +863,181 @@ def draw_one_maze(c, lx, top_y, maze_w, maze_h, walls_h, walls_v, grid):
                 vy0 = top_y - row * ch
                 vy1 = top_y - (row+1) * ch
                 c.line(vx, vy0, vx, vy1)
+
+
+def draw_cell_maze(c, lx, top_y, mw, mh, grid_str, entry_col=0, exit_col=None):
+    """
+    Dessine un labyrinthe depuis une carte ASCII.
+    grid_str : liste de strings, chaque char = 'X' (mur) ou ' ' (passage)
+    La carte représente une grille de CELLULES avec murs intercalés.
+    Format : (2*rows+1) lignes x (2*cols+1) chars
+    Exemple 3x3 :
+      +--+--+--+
+      |        |
+      +  +--+  +
+      |  |     |
+      +--+  +  +
+      |     |  |
+      +--+--+--+
+    """
+    rows_map = len(grid_str)
+    cols_map = len(grid_str[0]) if grid_str else 0
+    rows = (rows_map - 1) // 2
+    cols = (cols_map - 1) // 2
+    if exit_col is None:
+        exit_col = cols - 1
+    cw = mw / cols
+    ch = mh / rows
+    lw = 1.2
+
+    c.setStrokeColor(colors.black)
+    c.setLineWidth(lw)
+
+    # Dessine tous les segments de mur depuis la carte
+    for r in range(rows_map):
+        for col_c in range(cols_map):
+            ch_char = grid_str[r][col_c] if col_c < len(grid_str[r]) else ' '
+            if ch_char not in ('-', '|', '+'):
+                continue
+            # Position en coordonnées PDF
+            px = lx + (col_c / (cols_map - 1)) * mw
+            py = top_y - (r / (rows_map - 1)) * mh
+
+            if ch_char == '-':
+                # Segment horizontal
+                px0 = lx + ((col_c - 1) / (cols_map - 1)) * mw
+                px1 = lx + ((col_c + 1) / (cols_map - 1)) * mw
+                # Entrée : ne pas tracer le haut de la col entrée
+                if r == 0 and col_c // 2 == entry_col and col_c % 2 == 1:
+                    continue
+                # Sortie : ne pas tracer le bas de la col sortie
+                if r == rows_map - 1 and col_c // 2 == exit_col and col_c % 2 == 1:
+                    continue
+                c.line(px0, py, px1, py)
+            elif ch_char == '|':
+                py0 = top_y - ((r - 1) / (rows_map - 1)) * mh
+                py1 = top_y - ((r + 1) / (rows_map - 1)) * mh
+                c.line(px, py0, px, py1)
+
+
+def draw_maze_zone(c, y, lang):
+    """FI-007 : 3 labyrinthes à résoudre, grands, dans la zone d'activité."""
+    if y < 4*cm:
+        return y
+
+    diff_labels = {
+        "FR": ["Facile", "Moyen", "Difficile"],
+        "EN": ["Easy",   "Medium","Hard"],
+        "DE": ["Leicht", "Mittel","Schwer"],
+        "ES": ["Facil",  "Medio", "Dificil"],
+        "IT": ["Facile", "Medio", "Difficile"],
+        "PT": ["Facil",  "Medio", "Dificil"],
+    }
+    lbls = diff_labels.get(lang, diff_labels["FR"])
+
+    # 3 labyrinthes définis comme cartes ASCII — format (2R+1)×(2C+1)
+    # Chaque '+' = coin, '-' = mur horizontal, '|' = mur vertical, ' ' = passage
+    # Entrée = haut col 0, Sortie = bas col droite
+
+    # Labyrinthe FACILE 4×4 : chemin simple descend puis traverse
+    maze_easy = [
+        "+  +--+--+--+",
+        "|           |",
+        "+  +--+  +--+",
+        "|  |     |   ",
+        "+  +  +--+  +",
+        "|     |     |",
+        "+--+  +  +--+",
+        "         |   ",
+        "+--+--+  +--+",
+    ]
+    # Labyrinthe MOYEN 4×4 : chemin en S
+    maze_med = [
+        "+  +--+--+--+",
+        "|  |        |",
+        "+  +  +--+  +",
+        "|     |  |  |",
+        "+--+  +  +  +",
+        "|  |     |  |",
+        "+  +--+  +  +",
+        "|        |   ",
+        "+--+--+--+  +",
+    ]
+    # Labyrinthe DIFFICILE 5×5 : chemin tortueux
+    maze_hard = [
+        "+  +--+--+--+--+",
+        "|  |           |",
+        "+  +  +--+--+  +",
+        "|     |     |  |",
+        "+--+  +  +  +  +",
+        "|     |  |     |",
+        "+  +--+  +--+  +",
+        "|  |     |     |",
+        "+  +  +--+  +--+",
+        "|     |         ",
+        "+--+--+--+--+  +",
+    ]
+
+    zone_h = max(y - 1.8*cm, 5*cm)
+    # 3 labyrinthes côte à côte
+    mw = (W - 2.5*cm) / 3 - 0.4*cm
+    mh = zone_h - 1.0*cm
+    gap = (W - 2.5*cm - 3*mw) / 2
+    top_y = y - 0.65*cm
+
+    for mi, (mdata, label) in enumerate(zip([maze_easy, maze_med, maze_hard], lbls)):
+        lx = 1.25*cm + mi * (mw + gap)
+
+        # Fond blanc
+        c.setFillColor(colors.white)
+        c.setStrokeColor(HexColor("#DDDDDD"))
+        c.setLineWidth(0.3)
+        c.rect(lx, top_y - mh, mw, mh, fill=1, stroke=1)
+
+        rows_map = len(mdata)
+        cols_map = max(len(row) for row in mdata)
+        rows = (rows_map - 1) // 2
+        cols = (cols_map - 1) // 2
+        cw = mw / cols
+        ch = mh / rows
+
+        c.setStrokeColor(colors.black)
+        c.setLineWidth(1.0)
+
+        # Dessine chaque segment de mur
+        for ri, row in enumerate(mdata):
+            for ci, ch_char in enumerate(row):
+                if ch_char == '-':
+                    # Mur horizontal centré sur cette col
+                    x0 = lx + (ci - 1) / (cols_map - 1) * mw
+                    x1 = lx + (ci + 1) / (cols_map - 1) * mw
+                    py = top_y - ri / (rows_map - 1) * mh
+                    c.line(x0, py, x1, py)
+                elif ch_char == '|':
+                    px = lx + ci / (cols_map - 1) * mw
+                    y0 = top_y - (ri - 1) / (rows_map - 1) * mh
+                    y1 = top_y - (ri + 1) / (rows_map - 1) * mh
+                    c.line(px, y0, px, y1)
+
+        # Marqueurs E / S
+        c.setFillColor(HexColor("#E63946"))
+        c.circle(lx + cw * 0.5, top_y + 0.2*cm, 0.22*cm, fill=1, stroke=0)
+        c.setFillColor(colors.white)
+        c.setFont("Helvetica-Bold", 7)
+        c.drawCentredString(lx + cw * 0.5, top_y + 0.14*cm, "E")
+
+        c.setFillColor(HexColor("#4CAF50"))
+        c.circle(lx + mw - cw * 0.5, top_y - mh - 0.2*cm, 0.22*cm, fill=1, stroke=0)
+        c.setFillColor(colors.white)
+        c.setFont("Helvetica-Bold", 7)
+        c.drawCentredString(lx + mw - cw * 0.5, top_y - mh - 0.26*cm, "S")
+
+        # Label difficulté
+        c.setFillColor(HexColor("#555555"))
+        c.setFont("Helvetica-Bold", 8)
+        c.drawCentredString(lx + mw / 2, top_y - mh - 0.52*cm, label)
+
+    return y - zone_h - 0.2*cm
 
 
 def draw_maze_example(c, y, main_col, bg_col, lang):
