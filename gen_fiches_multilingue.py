@@ -659,11 +659,11 @@ def generate_pdf(fiche, lang, outdir):
     age_label = fiche["age_range"]
     draw_header(c, fiche["titre"], fiche["sous"], fiche["cat"], age_label, num, lang)
 
-    # Badges sous le header — bien en dessous du rectangle titre
-    y = H - 4.5*cm
+    # Badges sous le header
+    y = H - 4.2*cm
     draw_badge(c, 1.2*cm, y, f"⏱ {fiche['duree']}", main_col)
     draw_badge(c, 4.5*cm, y, fiche["difficulte"], main_col)
-    y -= 0.9*cm
+    y -= 1.1*cm
 
     # Titre section Étapes — traduit
     section_labels = {
@@ -787,24 +787,80 @@ def draw_butterfly_example(c, y, main_col, bg_col, lang):
 
     return y - h - 0.3*cm
 
+def draw_one_maze(c, lx, top_y, maze_w, maze_h, walls_h, walls_v, grid):
+    """
+    Dessine un labyrinthe en traçant TOUS les murs de la grille,
+    sauf ceux qui sont absents (passages).
+    grid = (cols, rows)
+    walls_h[row][col] = True  → mur horizontal entre row et row+1 à la colonne col
+    walls_v[row][col] = True  → mur vertical entre col et col+1 à la ligne row
+    Entrée = haut de col 0, Sortie = bas de col (cols-1)
+    """
+    cols, rows = grid
+    cw = maze_w / cols
+    ch = maze_h / rows
+    lw = 1.0
+
+    # Bordure extérieure complète sauf entrée et sortie
+    c.setStrokeColor(colors.black)
+    c.setLineWidth(lw)
+
+    # Haut : toutes colonnes sauf col 0 (entrée)
+    for col in range(cols):
+        if col == 0:
+            continue  # ouverture entrée
+        c.line(lx + col*cw, top_y, lx + (col+1)*cw, top_y)
+
+    # Bas : toutes colonnes sauf dernière (sortie)
+    for col in range(cols):
+        if col == cols - 1:
+            continue  # ouverture sortie
+        c.line(lx + col*cw, top_y - maze_h, lx + (col+1)*cw, top_y - maze_h)
+
+    # Gauche et droite
+    c.line(lx, top_y, lx, top_y - maze_h)
+    c.line(lx + maze_w, top_y, lx + maze_w, top_y - maze_h)
+
+    # Murs horizontaux intérieurs (entre row et row+1)
+    # walls_h indexé 0..rows-2, row_idx = row-1 dans la liste
+    for row in range(1, rows):
+        for col in range(cols):
+            if walls_h[row-1][col]:
+                x0 = lx + col * cw
+                x1 = lx + (col+1) * cw
+                wy = top_y - row * ch
+                c.line(x0, wy, x1, wy)
+
+    # Murs verticaux intérieurs (entre col et col+1)
+    # walls_v[row] indexé 0..cols-2, col_idx = col-1 dans la liste
+    for row in range(rows):
+        for col in range(1, cols):
+            if walls_v[row][col-1]:
+                vx = lx + col * cw
+                vy0 = top_y - row * ch
+                vy1 = top_y - (row+1) * ch
+                c.line(vx, vy0, vx, vy1)
+
+
 def draw_maze_example(c, y, main_col, bg_col, lang):
-    """Dessine 3 labyrinthes simples côte à côte : Facile / Moyen / Difficile."""
+    """Dessine 3 labyrinthes navigables côte à côte : Facile / Moyen / Difficile."""
     if y < 5*cm:
         return y
-    h = 5.0*cm
-    # Fond N&B
+    h = 5.2*cm
+
+    # Fond blanc avec bordure
     c.setFillColor(colors.white)
     c.setStrokeColor(colors.black)
     c.setLineWidth(0.8)
     c.roundRect(1*cm, y-h, W-2*cm, h, 10, fill=1, stroke=1)
 
     # Label "Exemple"
-    ex_labels = {"FR":"Exemple","EN":"Example","DE":"Beispiel","ES":"Ejemplo","IT":"Esempio","PT":"Exemplo","AR":"مثال","ZH":"示例"}
+    ex_labels = {"FR":"Exemple","EN":"Example","DE":"Beispiel","ES":"Ejemplo",
+                 "IT":"Esempio","PT":"Exemplo","AR":"مثال","ZH":"示例"}
     c.setFillColor(colors.black)
     c.setFont("Helvetica-Bold", 9)
     c.drawString(1.5*cm, y-0.42*cm, ex_labels.get(lang,"Exemple"))
 
-    # Labels de difficulté
     diff_labels = {
         "FR": ["Facile","Moyen","Difficile"],
         "EN": ["Easy","Medium","Hard"],
@@ -815,96 +871,90 @@ def draw_maze_example(c, y, main_col, bg_col, lang):
     }
     labels = diff_labels.get(lang, diff_labels["FR"])
 
-    # 3 labyrinthes côte à côte
-    maze_w = 3.5*cm
-    maze_h = 3.5*cm
+    maze_w = 3.4*cm
+    maze_h = 3.4*cm
     gap = (W - 2*cm - 3*maze_w) / 4
-    top_y = y - 0.65*cm
-    lw = 1.2  # épaisseur murs
+    top_y = y - 0.75*cm
 
-    for mi, label in enumerate(labels):
+    # Conventions :
+    #   walls_h : liste de (rows-1) lignes, chaque ligne a `cols` booleans
+    #             walls_h[r][c]=True → mur horizontal entre row r et r+1, colonne c
+    #   walls_v : liste de `rows` lignes, chaque ligne a (cols-1) booleans
+    #             walls_v[r][c]=True → mur vertical entre col c et c+1, ligne r
+
+    # ── Labyrinthe FACILE (4 cols × 4 rows) ─────────────────────────────────
+    # Chemin : col0 row0 → bas → col0 row3 → droite → col3 row3
+    # walls_h : 3 lignes × 4 cols
+    easy_h = [
+        [0, 1, 1, 1],   # entre row0 et row1
+        [1, 1, 1, 1],   # entre row1 et row2
+        [1, 1, 1, 0],   # entre row2 et row3
+    ]
+    # walls_v : 4 lignes × 3 cols
+    easy_v = [
+        [1, 1, 1],      # row0
+        [1, 1, 1],      # row1
+        [1, 1, 1],      # row2
+        [0, 0, 0],      # row3  (chemin horizontal libre)
+    ]
+
+    # ── Labyrinthe MOYEN (4 cols × 4 rows) ──────────────────────────────────
+    # Chemin : col0 r0 → bas r0-r1 → droite → col2 r1 → bas r1-r3 → droite col3
+    # walls_h : 3 × 4
+    med_h = [
+        [0, 1, 1, 1],   # entre row0 et row1
+        [1, 1, 0, 1],   # entre row1 et row2 (passage col2)
+        [1, 1, 0, 1],   # entre row2 et row3 (passage col2)
+    ]
+    # walls_v : 4 × 3
+    med_v = [
+        [1, 1, 1],      # row0
+        [0, 1, 1],      # row1 (passage col0→col1)
+        [1, 0, 1],      # row2 (passage col1→col2)
+        [1, 1, 0],      # row3 (passage col2→col3)
+    ]
+
+    # ── Labyrinthe DIFFICILE (5 cols × 5 rows) ──────────────────────────────
+    # Chemin en S : col0 r0→r1 | r1 col0→col2 | col2 r1→r3 | r3 col2→col4 | col4 r3→r4
+    # walls_h : 4 × 5
+    hard_h = [
+        [0, 1, 1, 1, 1],  # row0→row1
+        [1, 1, 0, 1, 1],  # row1→row2
+        [1, 1, 0, 1, 1],  # row2→row3
+        [1, 1, 1, 1, 0],  # row3→row4
+    ]
+    # walls_v : 5 × 4
+    hard_v = [
+        [1, 1, 1, 1],    # row0
+        [0, 0, 1, 1],    # row1 (passages col0→1, col1→2)
+        [1, 1, 1, 1],    # row2
+        [1, 1, 0, 0],    # row3 (passages col2→3, col3→4)
+        [1, 1, 1, 1],    # row4
+    ]
+
+    mazes = [
+        (easy_h,  easy_v,  (4, 4)),
+        (med_h,   med_v,   (4, 4)),
+        (hard_h,  hard_v,  (5, 5)),
+    ]
+
+    for mi, (wh, wv, grid) in enumerate(mazes):
+        cols, rows = grid
         lx = 1*cm + gap + mi*(maze_w + gap)
-        # Rectangle extérieur labyrinthe
-        c.setStrokeColor(colors.black)
-        c.setLineWidth(lw)
-        c.rect(lx, top_y - maze_h, maze_w, maze_h, fill=0, stroke=1)
+        draw_one_maze(c, lx, top_y, maze_w, maze_h, wh, wv, grid)
 
-        # Cellules : divise en grille 4x4 et trace des murs sélectifs
-        cell_w = maze_w / 4
-        cell_h = maze_h / 4
+        cw = maze_w / cols
 
-        # Entrée (haut-gauche) et Sortie (bas-droite) : ouvrir les murs
-        # Entrée : ouvrir haut de colonne 0
-        c.setFillColor(colors.white)
-        c.setStrokeColor(colors.white)
-        c.rect(lx, top_y, cell_w * 0.6, 1.5, fill=1, stroke=0)
-        # Sortie : ouvrir bas de colonne 3
-        c.rect(lx + maze_w - cell_w * 0.6, top_y - maze_h - 1, cell_w * 0.6, 1.5, fill=1, stroke=0)
-
-        c.setStrokeColor(colors.black)
-        c.setLineWidth(lw)
-
-        if mi == 0:
-            # Labyrinthe FACILE : peu de murs, chemin évident
-            walls = [
-                # Murs horizontaux intérieurs (y, x1, x2) en unités de cellules
-                (3, 0, 2), (2, 1, 3), (1, 0, 2),
-                # Murs verticaux (x, y1, y2)
-            ]
-            # Dessine murs horizontaux : y_cell, col_start, col_end
-            for (row, c0, c1) in walls:
-                wx0 = lx + c0 * cell_w
-                wx1 = lx + c1 * cell_w
-                wy  = top_y - row * cell_h
-                c.line(wx0, wy, wx1, wy)
-            # Murs verticaux
-            vwalls = [(2, 0, 2), (1, 2, 4), (3, 1, 3)]
-            for (col, r0, r1) in vwalls:
-                vx = lx + col * cell_w
-                vy0 = top_y - r0 * cell_h
-                vy1 = top_y - r1 * cell_h
-                c.line(vx, vy0, vx, vy1)
-
-        elif mi == 1:
-            # Labyrinthe MOYEN : plus de murs
-            hwalls = [(1, 0, 1), (1, 2, 4), (2, 1, 3), (3, 0, 2), (3, 3, 4)]
-            for (row, c0, c1) in hwalls:
-                wx0 = lx + c0 * cell_w
-                wx1 = lx + c1 * cell_w
-                wy  = top_y - row * cell_h
-                c.line(wx0, wy, wx1, wy)
-            vwalls = [(1, 0, 2), (2, 1, 3), (3, 2, 4), (1, 3, 4)]
-            for (col, r0, r1) in vwalls:
-                vx = lx + col * cell_w
-                vy0 = top_y - r0 * cell_h
-                vy1 = top_y - r1 * cell_h
-                c.line(vx, vy0, vx, vy1)
-
-        else:
-            # Labyrinthe DIFFICILE : grille très remplie
-            hwalls = [(1,0,1),(1,2,3),(2,0,2),(2,3,4),(3,1,2),(3,3,4),(1,3,4),(2,2,3)]
-            for (row, c0, c1) in hwalls:
-                wx0 = lx + c0 * cell_w
-                wx1 = lx + c1 * cell_w
-                wy  = top_y - row * cell_h
-                c.line(wx0, wy, wx1, wy)
-            vwalls = [(1,0,1),(1,2,3),(2,1,2),(2,3,4),(3,0,2),(3,2,3),(1,3,4),(2,0,1)]
-            for (col, r0, r1) in vwalls:
-                vx = lx + col * cell_w
-                vy0 = top_y - r0 * cell_h
-                vy1 = top_y - r1 * cell_h
-                c.line(vx, vy0, vx, vy1)
-
-        # Marqueurs E (entrée) et S (sortie)
+        # Marqueurs E / S
         c.setFillColor(colors.black)
         c.setFont("Helvetica-Bold", 7)
-        c.drawCentredString(lx + cell_w*0.3, top_y + 0.15*cm, "E")
-        c.drawCentredString(lx + maze_w - cell_w*0.3, top_y - maze_h - 0.25*cm, "S")
+        c.drawCentredString(lx + cw*0.5, top_y + 0.18*cm, "E")
+        c.drawCentredString(lx + maze_w - cw*0.5, top_y - maze_h - 0.22*cm, "S")
 
-        # Label difficulté en dessous
+        # Label difficulté
         c.setFillColor(HexColor("#555555"))
         c.setFont("Helvetica", 8)
-        c.drawCentredString(lx + maze_w/2, top_y - maze_h - 0.5*cm, label)
+        c.drawCentredString(lx + maze_w/2, top_y - maze_h - 0.52*cm, labels[mi])
 
     return y - h - 0.3*cm
 
