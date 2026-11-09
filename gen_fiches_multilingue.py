@@ -140,95 +140,111 @@ def wrap_text(text, max_chars=70):
     return lines or [""]
 
 def draw_header(c, title, subtitle, cat, age_label, fiche_num, lang):
-    main_col, bg_col = PAL.get(cat, ("#6C63FF","#EDE9FF"))
+    # N&B : pas de fond coloré, juste bordure noire fine et texte noir
     ui = UI_KEYS.get(lang, UI_KEYS["FR"])
-    c.setFillColor(hex_color(main_col))
-    c.roundRect(1*cm, H-4.2*cm, W-2*cm, 3.5*cm, 16, fill=1, stroke=0)
-    c.setFillColor(colors.white)
+    c.setStrokeColor(colors.black)
+    c.setLineWidth(1.5)
+    c.roundRect(1*cm, H-4.0*cm, W-2*cm, 3.3*cm, 10, fill=0, stroke=1)
+    c.setFillColor(colors.black)
     c.setFont("Helvetica-Bold", 10)
     c.drawString(1.5*cm, H-1.3*cm, f"{ui['fiche']} #{fiche_num:02d}")
     c.setFont("Helvetica", 10)
-    c.drawRightString(W-1.5*cm, H-1.3*cm, f"👶 {age_label}")
-    # Titre (tronqué si trop long)
+    c.drawRightString(W-1.5*cm, H-1.3*cm, f"{age_label} ans")
     title_short = title if len(title) <= 45 else title[:42] + "..."
     c.setFont("Helvetica-Bold", 18)
-    c.drawCentredString(W/2, H-2.4*cm, title_short)
+    c.drawCentredString(W/2, H-2.3*cm, title_short)
     sub_short = subtitle if len(subtitle) <= 70 else subtitle[:67] + "..."
     c.setFont("Helvetica", 11)
-    c.drawCentredString(W/2, H-3.3*cm, sub_short)
+    c.drawCentredString(W/2, H-3.2*cm, sub_short)
 
 def draw_badge(c, x, y, text, main_col):
+    # N&B : bordure noire, fond blanc, texte noir
     text_short = text[:30] if len(text) > 30 else text
-    c.setFillColor(hex_color(main_col))
-    c.roundRect(x, y-0.35*cm, len(text_short)*0.19*cm+0.6*cm, 0.6*cm, 8, fill=1, stroke=0)
+    bw = len(text_short)*0.19*cm + 0.6*cm
     c.setFillColor(colors.white)
+    c.setStrokeColor(colors.black)
+    c.setLineWidth(0.8)
+    c.roundRect(x, y-0.35*cm, bw, 0.6*cm, 6, fill=1, stroke=1)
+    c.setFillColor(colors.black)
     c.setFont("Helvetica-Bold", 9)
     c.drawString(x+0.3*cm, y-0.15*cm, text_short)
 
 def draw_section(c, y, title, main_col, bg_col):
+    # N&B : fond gris très clair, texte noir gras
     title_s = title[:50] if len(title)>50 else title
-    c.setFillColor(hex_color(bg_col))
-    c.roundRect(1*cm, y-0.1*cm, W-2*cm, 0.8*cm, 8, fill=1, stroke=0)
-    c.setFillColor(hex_color(main_col))
-    c.setFont("Helvetica-Bold", 12)
+    c.setFillColor(HexColor("#F0F0F0"))
+    c.setStrokeColor(colors.black)
+    c.setLineWidth(0.5)
+    c.roundRect(1*cm, y-0.1*cm, W-2*cm, 0.75*cm, 6, fill=1, stroke=1)
+    c.setFillColor(colors.black)
+    c.setFont("Helvetica-Bold", 11)
     c.drawString(1.5*cm, y+0.1*cm, title_s)
-    return y - 1.0*cm
+    return y - 0.95*cm
 
 def draw_steps(c, y, steps, main_col):
     for i, step in enumerate(steps, 1):
         if y < 2.5*cm:
             break
-        c.setFillColor(hex_color(main_col))
+        # Cercle numéroté N&B
+        c.setFillColor(colors.black)
         c.circle(1.7*cm, y+0.15*cm, 0.28*cm, fill=1, stroke=0)
         c.setFillColor(colors.white)
         c.setFont("Helvetica-Bold", 10)
         c.drawCentredString(1.7*cm, y+0.08*cm, str(i))
-        c.setFillColor(colors.HexColor("#333333"))
+        c.setFillColor(colors.black)
         c.setFont("Helvetica", 10)
         lines = wrap_text(step, 72)
         for j, line in enumerate(lines):
             if y - j*0.42*cm < 2*cm:
                 break
             c.drawString(2.3*cm, y - j*0.42*cm, line)
-        y -= len(lines)*0.42*cm + 0.45*cm
+        y -= len(lines)*0.42*cm + 0.4*cm
     return y
 
-def draw_note_box(c, y, text, main_col, bg_col, icon="💡"):
-    if y < 2.5*cm:
+def draw_note_box(c, y, text, main_col, bg_col, icon=""):
+    if y < 2.0*cm:
         return y
     lines = wrap_text(text, 75)
-    box_h = max(1.2*cm, len(lines)*0.4*cm + 0.5*cm)
-    if y - box_h < 1.5*cm:
+    box_h = max(1.0*cm, len(lines)*0.38*cm + 0.45*cm)
+    # Réduire la hauteur si on dépasse le footer
+    if y - box_h < 1.8*cm:
+        box_h = y - 1.8*cm
+    if box_h < 0.5*cm:
         return y
-    c.setFillColor(hex_color(bg_col))
-    c.roundRect(1*cm, y-box_h, W-2*cm, box_h, 10, fill=1, stroke=0)
-    c.setStrokeColor(hex_color(main_col))
-    c.setLineWidth(1.5)
-    c.roundRect(1*cm, y-box_h, W-2*cm, box_h, 10, fill=0, stroke=1)
-    c.setFillColor(hex_color(main_col))
+    # N&B : fond blanc, bordure noire fine
+    c.setFillColor(colors.white)
+    c.setStrokeColor(colors.black)
+    c.setLineWidth(0.8)
+    c.roundRect(1*cm, y-box_h, W-2*cm, box_h, 8, fill=1, stroke=1)
+    c.setFillColor(colors.black)
     c.setFont("Helvetica-Bold", 10)
-    c.drawString(1.5*cm, y-0.5*cm, f"{icon}  {lines[0]}")
+    prefix = f"{icon}  " if icon else ""
+    c.drawString(1.5*cm, y-0.42*cm, f"{prefix}{lines[0]}")
     c.setFont("Helvetica", 10)
     for j, line in enumerate(lines[1:], 1):
-        c.drawString(1.8*cm, y-0.5*cm - j*0.4*cm, line)
-    return y - box_h - 0.4*cm
+        c.drawString(1.8*cm, y-0.42*cm - j*0.38*cm, line)
+    return y - box_h - 0.3*cm
 
 def draw_zone(c, y, label, h, main_col, bg_col):
-    if y < 2.5*cm or h < 1*cm:
+    """Zone de dessin : s'étend jusqu'en bas de page (1.8cm = footer)."""
+    # Recalcul : toujours jusqu'au footer
+    h = max(h, y - 1.8*cm)
+    if h < 1*cm:
         return y
-    c.setFillColor(hex_color(bg_col))
-    c.roundRect(1*cm, y-h, W-2*cm, h, 12, fill=1, stroke=0)
-    c.setStrokeColor(hex_color(main_col))
-    c.setLineWidth(1)
-    c.setDash([4,4])
-    c.roundRect(1*cm, y-h, W-2*cm, h, 12, fill=0, stroke=1)
+    # N&B : fond blanc, bordure pointillée noire
+    c.setFillColor(colors.white)
+    c.roundRect(1*cm, y-h, W-2*cm, h, 10, fill=1, stroke=0)
+    c.setStrokeColor(colors.black)
+    c.setLineWidth(0.8)
+    c.setDash([4, 4])
+    c.roundRect(1*cm, y-h, W-2*cm, h, 10, fill=0, stroke=1)
     c.setDash([])
-    c.setFillColor(hex_color(main_col))
-    c.setFont("Helvetica", 10)
-    # Zone label: first line only
-    first_line = (label or "").split("\n")[0][:60]
-    c.drawCentredString(W/2, y-h/2-0.1*cm, first_line)
-    return y - h - 0.4*cm
+    # Label centré verticalement dans la zone
+    c.setFillColor(HexColor("#888888"))
+    c.setFont("Helvetica", 9)
+    first_line = (label or "").split("\n")[0][:80]
+    c.drawCentredString(W/2, y - h/2 - 0.15*cm, first_line)
+    return y - h - 0.3*cm
 
 def draw_footer(c, lang):
     text = FOOTER_TEXT.get(lang, FOOTER_TEXT["FR"])
@@ -644,10 +660,10 @@ def generate_pdf(fiche, lang, outdir):
     age_label = fiche["age_range"]
     draw_header(c, fiche["titre"], fiche["sous"], fiche["cat"], age_label, num, lang)
 
-    y = H - 4.6*cm
+    y = H - 4.3*cm
     draw_badge(c, 1.2*cm, y, f"⏱ {fiche['duree']}", main_col)
     draw_badge(c, 4.5*cm, y, fiche["difficulte"], main_col)
-    y -= 0.8*cm
+    y -= 0.75*cm
 
     # Titre section Étapes — traduit
     section_labels = {
@@ -680,7 +696,7 @@ def generate_pdf(fiche, lang, outdir):
     if fiche["cat"] == "dessin":
         zone_label = zone_label + verso_hints.get(lang, "")
 
-    zone_h = min(max(y - 1.8*cm, 0), 5.5*cm)
+    zone_h = max(y - 1.8*cm, 0)
     if zone_h > 0.8*cm:
         y = draw_zone(c, y, zone_label, zone_h, main_col, bg_col)
 
@@ -693,12 +709,11 @@ def draw_butterfly_example(c, y, main_col, bg_col, lang):
     if y < 5*cm:
         return y
     h = 4.2*cm
-    # Fond
-    c.setFillColor(HexColor(bg_col))
-    c.roundRect(1*cm, y-h, W-2*cm, h, 10, fill=1, stroke=0)
-    c.setStrokeColor(HexColor(main_col))
-    c.setLineWidth(1)
-    c.roundRect(1*cm, y-h, W-2*cm, h, 10, fill=0, stroke=1)
+    # Fond N&B
+    c.setFillColor(colors.white)
+    c.setStrokeColor(colors.black)
+    c.setLineWidth(0.8)
+    c.roundRect(1*cm, y-h, W-2*cm, h, 10, fill=1, stroke=1)
 
     # Label "Exemple"
     ex_labels = {"FR":"Exemple","EN":"Example","DE":"Beispiel","ES":"Ejemplo","IT":"Esempio","PT":"Exemplo","AR":"مثال","ZH":"示例"}
@@ -711,9 +726,9 @@ def draw_butterfly_example(c, y, main_col, bg_col, lang):
     cy = y - h/2 - 0.1*cm
     s = 0.6  # scale factor en cm
 
-    c.setStrokeColor(HexColor(main_col))
+    c.setStrokeColor(colors.black)
     c.setLineWidth(1.5)
-    c.setFillColor(HexColor(bg_col))
+    c.setFillColor(HexColor("#E8E8E8"))
 
     # Aile gauche haute
     p = c.beginPath()
@@ -752,18 +767,18 @@ def draw_butterfly_example(c, y, main_col, bg_col, lang):
     c.drawPath(p, fill=1, stroke=1)
 
     # Corps (ovale central)
-    c.setFillColor(HexColor(main_col))
+    c.setFillColor(colors.black)
     c.ellipse(cx - 0.18*cm, cy - 1.3*s*cm, cx + 0.18*cm, cy + 0.9*s*cm, fill=1, stroke=0)
 
     # Axe symétrie (tirets)
-    c.setStrokeColor(HexColor("#CCCCCC"))
+    c.setStrokeColor(HexColor("#AAAAAA"))
     c.setLineWidth(0.5)
     c.setDash([3, 3])
     c.line(cx, y - 0.6*cm, cx, y - h + 0.3*cm)
     c.setDash([])
 
     # Flèches ← → pour indiquer les 2 mains
-    c.setFillColor(HexColor(main_col))
+    c.setFillColor(colors.black)
     c.setFont("Helvetica", 8)
     c.drawRightString(cx - 0.4*cm, cy + 1.6*s*cm, "✏️ ←")
     c.drawString(cx + 0.4*cm, cy + 1.6*s*cm, "→ ✏️")
