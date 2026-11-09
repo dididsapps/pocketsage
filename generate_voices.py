@@ -197,6 +197,24 @@ def extract_prono(html: str) -> list:
     return items
 
 
+def extract_flash(html: str) -> list:
+    """Extrait les cartes Flash Savant {id, titre, texte} — FR uniquement → Google TTS."""
+    pat = r"\{id:'((?:MO|SA|EM|CF|CU|PS|MJ|EJ|PT|EN|AD)-\d+)',emoji:'[^']*',titre:'((?:[^'\\]|\\.)*)',texte:'((?:[^'\\]|\\.)*)',tag:"
+    items = []
+    for fid, titre, texte in re.findall(pat, html):
+        # Décoder les échappements JS (’, é, etc.)
+        def unescape(s):
+            return s.encode('raw_unicode_escape').decode('unicode_escape')
+        try:
+            titre_clean = unescape(titre)
+            texte_clean = unescape(texte)
+        except Exception:
+            titre_clean = titre
+            texte_clean = texte
+        items.append({"id": fid, "titre": titre_clean, "texte": texte_clean})
+    return items
+
+
 def extract_nuit(html: str) -> list:
     """Extrait les histoires/méditations/contes de nuit {id, titre, texte}.
     Seules les versions EN et DE sont à générer (FR déjà faite avec Olivier).
@@ -256,8 +274,10 @@ def main():
     print(f"  Questions trouvées : {len(questions)}")
     print(f"  Mots Prononciation : {len(prono)}")
 
-    nuit_items = extract_nuit(html)
+    nuit_items  = extract_nuit(html)
+    flash_items = extract_flash(html)
     print(f"  Histoires de nuit  : {len(nuit_items)}")
+    print(f"  Cartes Flash       : {len(flash_items)}")
 
     man11 = load_manifest(MANIFEST_11)
     manG  = load_manifest(MANIFEST_G)
@@ -316,6 +336,17 @@ def main():
                 else:
                     if fid2 not in manG:
                         todo_g.append((fid2, ch, lang, out2))
+
+    # ── Flash Savant (Google TTS FR uniquement) ──
+    AUDIO_FLASH = ROOT / "audio" / "flash"
+    AUDIO_FLASH.mkdir(parents=True, exist_ok=True)
+    for item in flash_items:
+        fid   = item["id"]
+        texte = f"{item['titre']}. {item['texte']}"
+        file_id = f"{fid}_fr"
+        out = AUDIO_FLASH / f"{file_id}.mp3"
+        if file_id not in manG:
+            todo_g.append((file_id, texte, "FR", out))
 
     # ── Prononciation (toujours ElevenLabs) ──
     for p in prono:

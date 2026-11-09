@@ -49,7 +49,7 @@ def list_r2_files(s3, prefix="audio/"):
 def collect_local_files():
     """Collecte tous les MP3 locaux avec leur chemin R2 cible"""
     files = []
-    for lang in ["fr", "en", "de", "es", "nuit"]:
+    for lang in ["fr", "en", "de", "es", "nuit", "flash"]:
         lang_dir = AUDIO_DIR / lang
         if lang_dir.exists():
             for mp3 in sorted(lang_dir.glob("*.mp3")):
