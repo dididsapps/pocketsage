@@ -140,22 +140,22 @@ def wrap_text(text, max_chars=70):
     return lines or [""]
 
 def draw_header(c, title, subtitle, cat, age_label, fiche_num, lang):
-    # N&B : pas de fond coloré, juste bordure noire fine et texte noir
+    # N&B : bordure noire fine, hauteur réduite à 3.0cm
     ui = UI_KEYS.get(lang, UI_KEYS["FR"])
     c.setStrokeColor(colors.black)
     c.setLineWidth(1.5)
-    c.roundRect(1*cm, H-4.0*cm, W-2*cm, 3.3*cm, 10, fill=0, stroke=1)
+    c.roundRect(1*cm, H-3.6*cm, W-2*cm, 3.0*cm, 10, fill=0, stroke=1)
     c.setFillColor(colors.black)
-    c.setFont("Helvetica-Bold", 10)
-    c.drawString(1.5*cm, H-1.3*cm, f"{ui['fiche']} #{fiche_num:02d}")
-    c.setFont("Helvetica", 10)
-    c.drawRightString(W-1.5*cm, H-1.3*cm, f"{age_label} ans")
+    c.setFont("Helvetica-Bold", 9)
+    c.drawString(1.5*cm, H-1.1*cm, f"{ui['fiche']} #{fiche_num:02d}")
+    c.setFont("Helvetica", 9)
+    c.drawRightString(W-1.5*cm, H-1.1*cm, f"{age_label} ans")
     title_short = title if len(title) <= 45 else title[:42] + "..."
-    c.setFont("Helvetica-Bold", 18)
-    c.drawCentredString(W/2, H-2.3*cm, title_short)
+    c.setFont("Helvetica-Bold", 16)
+    c.drawCentredString(W/2, H-2.1*cm, title_short)
     sub_short = subtitle if len(subtitle) <= 70 else subtitle[:67] + "..."
-    c.setFont("Helvetica", 11)
-    c.drawCentredString(W/2, H-3.2*cm, sub_short)
+    c.setFont("Helvetica", 10)
+    c.drawCentredString(W/2, H-3.0*cm, sub_short)
 
 def draw_badge(c, x, y, text, main_col):
     # N&B : bordure noire, fond blanc, texte noir
@@ -226,8 +226,7 @@ def draw_note_box(c, y, text, main_col, bg_col, icon=""):
     return y - box_h - 0.3*cm
 
 def draw_zone(c, y, label, h, main_col, bg_col):
-    """Zone de dessin : s'étend jusqu'en bas de page (1.8cm = footer)."""
-    # Toujours jusqu'au footer, pas de min artificiel
+    """Zone de dessin/activité : s'étend jusqu'en bas de page."""
     h = max(h, y - 1.8*cm)
     if h < 1*cm:
         return y
@@ -239,14 +238,11 @@ def draw_zone(c, y, label, h, main_col, bg_col):
     c.setDash([4, 4])
     c.roundRect(1*cm, y-h, W-2*cm, h, 10, fill=0, stroke=1)
     c.setDash([])
-    # Label : toutes les lignes wrappées, centré dans la zone
+    # Label : une ligne, en haut à gauche, petit, gris
     c.setFillColor(HexColor("#888888"))
-    c.setFont("Helvetica", 9)
-    lines = wrap_text((label or ""), 80)
-    total_text_h = len(lines) * 0.4*cm
-    start_y = y - h/2 + total_text_h/2 - 0.3*cm
-    for i, line in enumerate(lines):
-        c.drawCentredString(W/2, start_y - i*0.4*cm, line)
+    c.setFont("Helvetica-Oblique", 8)
+    first_line = (label or "").split("\n")[0][:90]
+    c.drawString(1.5*cm, y - 0.4*cm, first_line)
     return y - h - 0.3*cm
 
 def draw_footer(c, lang):
@@ -686,6 +682,8 @@ def generate_pdf(fiche, lang, outdir):
     # Pour les fiches dessin : exemple visuel + zone de dessin agrandie
     if fiche["cat"] == "dessin" and fiche["id"] == "FI-001":
         y = draw_butterfly_example(c, y, main_col, bg_col, lang)
+    elif fiche["id"] == "FI-007":
+        y = draw_maze_example(c, y, main_col, bg_col, lang)
 
     zone_label = fiche["zone"]
     # Ajouter mention "verso" pour plus d'espace
@@ -788,6 +786,128 @@ def draw_butterfly_example(c, y, main_col, bg_col, lang):
     c.drawString(cx + 0.4*cm, cy + 1.6*s*cm, "→ ✏️")
 
     return y - h - 0.3*cm
+
+def draw_maze_example(c, y, main_col, bg_col, lang):
+    """Dessine 3 labyrinthes simples côte à côte : Facile / Moyen / Difficile."""
+    if y < 5*cm:
+        return y
+    h = 5.0*cm
+    # Fond N&B
+    c.setFillColor(colors.white)
+    c.setStrokeColor(colors.black)
+    c.setLineWidth(0.8)
+    c.roundRect(1*cm, y-h, W-2*cm, h, 10, fill=1, stroke=1)
+
+    # Label "Exemple"
+    ex_labels = {"FR":"Exemple","EN":"Example","DE":"Beispiel","ES":"Ejemplo","IT":"Esempio","PT":"Exemplo","AR":"مثال","ZH":"示例"}
+    c.setFillColor(colors.black)
+    c.setFont("Helvetica-Bold", 9)
+    c.drawString(1.5*cm, y-0.42*cm, ex_labels.get(lang,"Exemple"))
+
+    # Labels de difficulté
+    diff_labels = {
+        "FR": ["Facile","Moyen","Difficile"],
+        "EN": ["Easy","Medium","Hard"],
+        "DE": ["Leicht","Mittel","Schwer"],
+        "ES": ["Fácil","Medio","Difícil"],
+        "IT": ["Facile","Medio","Difficile"],
+        "PT": ["Fácil","Médio","Difícil"],
+    }
+    labels = diff_labels.get(lang, diff_labels["FR"])
+
+    # 3 labyrinthes côte à côte
+    maze_w = 3.5*cm
+    maze_h = 3.5*cm
+    gap = (W - 2*cm - 3*maze_w) / 4
+    top_y = y - 0.65*cm
+    lw = 1.2  # épaisseur murs
+
+    for mi, label in enumerate(labels):
+        lx = 1*cm + gap + mi*(maze_w + gap)
+        # Rectangle extérieur labyrinthe
+        c.setStrokeColor(colors.black)
+        c.setLineWidth(lw)
+        c.rect(lx, top_y - maze_h, maze_w, maze_h, fill=0, stroke=1)
+
+        # Cellules : divise en grille 4x4 et trace des murs sélectifs
+        cell_w = maze_w / 4
+        cell_h = maze_h / 4
+
+        # Entrée (haut-gauche) et Sortie (bas-droite) : ouvrir les murs
+        # Entrée : ouvrir haut de colonne 0
+        c.setFillColor(colors.white)
+        c.setStrokeColor(colors.white)
+        c.rect(lx, top_y, cell_w * 0.6, 1.5, fill=1, stroke=0)
+        # Sortie : ouvrir bas de colonne 3
+        c.rect(lx + maze_w - cell_w * 0.6, top_y - maze_h - 1, cell_w * 0.6, 1.5, fill=1, stroke=0)
+
+        c.setStrokeColor(colors.black)
+        c.setLineWidth(lw)
+
+        if mi == 0:
+            # Labyrinthe FACILE : peu de murs, chemin évident
+            walls = [
+                # Murs horizontaux intérieurs (y, x1, x2) en unités de cellules
+                (3, 0, 2), (2, 1, 3), (1, 0, 2),
+                # Murs verticaux (x, y1, y2)
+            ]
+            # Dessine murs horizontaux : y_cell, col_start, col_end
+            for (row, c0, c1) in walls:
+                wx0 = lx + c0 * cell_w
+                wx1 = lx + c1 * cell_w
+                wy  = top_y - row * cell_h
+                c.line(wx0, wy, wx1, wy)
+            # Murs verticaux
+            vwalls = [(2, 0, 2), (1, 2, 4), (3, 1, 3)]
+            for (col, r0, r1) in vwalls:
+                vx = lx + col * cell_w
+                vy0 = top_y - r0 * cell_h
+                vy1 = top_y - r1 * cell_h
+                c.line(vx, vy0, vx, vy1)
+
+        elif mi == 1:
+            # Labyrinthe MOYEN : plus de murs
+            hwalls = [(1, 0, 1), (1, 2, 4), (2, 1, 3), (3, 0, 2), (3, 3, 4)]
+            for (row, c0, c1) in hwalls:
+                wx0 = lx + c0 * cell_w
+                wx1 = lx + c1 * cell_w
+                wy  = top_y - row * cell_h
+                c.line(wx0, wy, wx1, wy)
+            vwalls = [(1, 0, 2), (2, 1, 3), (3, 2, 4), (1, 3, 4)]
+            for (col, r0, r1) in vwalls:
+                vx = lx + col * cell_w
+                vy0 = top_y - r0 * cell_h
+                vy1 = top_y - r1 * cell_h
+                c.line(vx, vy0, vx, vy1)
+
+        else:
+            # Labyrinthe DIFFICILE : grille très remplie
+            hwalls = [(1,0,1),(1,2,3),(2,0,2),(2,3,4),(3,1,2),(3,3,4),(1,3,4),(2,2,3)]
+            for (row, c0, c1) in hwalls:
+                wx0 = lx + c0 * cell_w
+                wx1 = lx + c1 * cell_w
+                wy  = top_y - row * cell_h
+                c.line(wx0, wy, wx1, wy)
+            vwalls = [(1,0,1),(1,2,3),(2,1,2),(2,3,4),(3,0,2),(3,2,3),(1,3,4),(2,0,1)]
+            for (col, r0, r1) in vwalls:
+                vx = lx + col * cell_w
+                vy0 = top_y - r0 * cell_h
+                vy1 = top_y - r1 * cell_h
+                c.line(vx, vy0, vx, vy1)
+
+        # Marqueurs E (entrée) et S (sortie)
+        c.setFillColor(colors.black)
+        c.setFont("Helvetica-Bold", 7)
+        c.drawCentredString(lx + cell_w*0.3, top_y + 0.15*cm, "E")
+        c.drawCentredString(lx + maze_w - cell_w*0.3, top_y - maze_h - 0.25*cm, "S")
+
+        # Label difficulté en dessous
+        c.setFillColor(HexColor("#555555"))
+        c.setFont("Helvetica", 8)
+        c.drawCentredString(lx + maze_w/2, top_y - maze_h - 0.5*cm, label)
+
+    return y - h - 0.3*cm
+
 
 def main():
     for lang in LANGS.keys():
