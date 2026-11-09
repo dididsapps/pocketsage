@@ -663,12 +663,112 @@ def generate_pdf(fiche, lang, outdir):
     y = draw_note_box(c, y, fiche["note"], main_col, bg_col, "🧠")
     y = draw_note_box(c, y, fiche["astuce"], main_col, bg_col, "💡")
 
-    zone_h = min(max(y - 1.8*cm, 0), 3.5*cm)
+    # Pour les fiches dessin : exemple visuel + zone de dessin agrandie
+    if fiche["cat"] == "dessin" and fiche["id"] == "FI-001":
+        y = draw_butterfly_example(c, y, main_col, bg_col, lang)
+
+    zone_label = fiche["zone"]
+    # Ajouter mention "verso" pour plus d'espace
+    verso_hints = {
+        "FR": " — ou dessine au dos pour plus grand !",
+        "EN": " — or draw on the back for more space!",
+        "DE": " — oder auf der Rückseite für mehr Platz!",
+        "ES": " — ¡o dibuja al dorso para más espacio!",
+        "IT": " — o disegna sul retro per più spazio!",
+        "PT": " — ou desenha no verso para mais espaço!",
+    }
+    if fiche["cat"] == "dessin":
+        zone_label = zone_label + verso_hints.get(lang, "")
+
+    zone_h = min(max(y - 1.8*cm, 0), 5.5*cm)
     if zone_h > 0.8*cm:
-        y = draw_zone(c, y, fiche["zone"], zone_h, main_col, bg_col)
+        y = draw_zone(c, y, zone_label, zone_h, main_col, bg_col)
 
     draw_footer(c, lang)
     c.save()
+
+
+def draw_butterfly_example(c, y, main_col, bg_col, lang):
+    """Dessine un exemple simplifié de papillon symétrique."""
+    if y < 5*cm:
+        return y
+    h = 4.2*cm
+    # Fond
+    c.setFillColor(HexColor(bg_col))
+    c.roundRect(1*cm, y-h, W-2*cm, h, 10, fill=1, stroke=0)
+    c.setStrokeColor(HexColor(main_col))
+    c.setLineWidth(1)
+    c.roundRect(1*cm, y-h, W-2*cm, h, 10, fill=0, stroke=1)
+
+    # Label "Exemple"
+    ex_labels = {"FR":"Exemple","EN":"Example","DE":"Beispiel","ES":"Ejemplo","IT":"Esempio","PT":"Exemplo","AR":"مثال","ZH":"示例"}
+    c.setFillColor(HexColor(main_col))
+    c.setFont("Helvetica-Bold", 9)
+    c.drawString(1.5*cm, y-0.45*cm, ex_labels.get(lang,"Exemple"))
+
+    # Dessin papillon centré (bezier curves)
+    cx = W/2
+    cy = y - h/2 - 0.1*cm
+    s = 0.6  # scale factor en cm
+
+    c.setStrokeColor(HexColor(main_col))
+    c.setLineWidth(1.5)
+    c.setFillColor(HexColor(bg_col))
+
+    # Aile gauche haute
+    p = c.beginPath()
+    p.moveTo(cx, cy)
+    p.curveTo(cx - 2.2*s*cm, cy + 2.0*s*cm,
+              cx - 4.0*s*cm, cy + 1.0*s*cm,
+              cx - 2.5*s*cm, cy - 0.5*s*cm)
+    p.curveTo(cx - 1.5*s*cm, cy - 0.8*s*cm, cx, cy, cx, cy)
+    c.drawPath(p, fill=1, stroke=1)
+
+    # Aile droite haute (symétrique)
+    p = c.beginPath()
+    p.moveTo(cx, cy)
+    p.curveTo(cx + 2.2*s*cm, cy + 2.0*s*cm,
+              cx + 4.0*s*cm, cy + 1.0*s*cm,
+              cx + 2.5*s*cm, cy - 0.5*s*cm)
+    p.curveTo(cx + 1.5*s*cm, cy - 0.8*s*cm, cx, cy, cx, cy)
+    c.drawPath(p, fill=1, stroke=1)
+
+    # Aile gauche basse
+    p = c.beginPath()
+    p.moveTo(cx, cy)
+    p.curveTo(cx - 1.8*s*cm, cy - 0.5*s*cm,
+              cx - 2.8*s*cm, cy - 1.8*s*cm,
+              cx - 1.2*s*cm, cy - 1.5*s*cm)
+    p.curveTo(cx - 0.5*s*cm, cy - 1.2*s*cm, cx, cy, cx, cy)
+    c.drawPath(p, fill=1, stroke=1)
+
+    # Aile droite basse
+    p = c.beginPath()
+    p.moveTo(cx, cy)
+    p.curveTo(cx + 1.8*s*cm, cy - 0.5*s*cm,
+              cx + 2.8*s*cm, cy - 1.8*s*cm,
+              cx + 1.2*s*cm, cy - 1.5*s*cm)
+    p.curveTo(cx + 0.5*s*cm, cy - 1.2*s*cm, cx, cy, cx, cy)
+    c.drawPath(p, fill=1, stroke=1)
+
+    # Corps (ovale central)
+    c.setFillColor(HexColor(main_col))
+    c.ellipse(cx - 0.18*cm, cy - 1.3*s*cm, cx + 0.18*cm, cy + 0.9*s*cm, fill=1, stroke=0)
+
+    # Axe symétrie (tirets)
+    c.setStrokeColor(HexColor("#CCCCCC"))
+    c.setLineWidth(0.5)
+    c.setDash([3, 3])
+    c.line(cx, y - 0.6*cm, cx, y - h + 0.3*cm)
+    c.setDash([])
+
+    # Flèches ← → pour indiquer les 2 mains
+    c.setFillColor(HexColor(main_col))
+    c.setFont("Helvetica", 8)
+    c.drawRightString(cx - 0.4*cm, cy + 1.6*s*cm, "✏️ ←")
+    c.drawString(cx + 0.4*cm, cy + 1.6*s*cm, "→ ✏️")
+
+    return y - h - 0.3*cm
 
 def main():
     for lang in LANGS.keys():

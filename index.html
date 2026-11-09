@@ -14578,7 +14578,7 @@ function openAtelierDetail(a){
   // Bouton PDF téléchargeable (Fiches)
   if(a.pdf){
     const lang=(typeof P==='function'&&P()&&P().native)?P().native:'FR';
-    const pdfUrl='https://audio.pocketsage.org/'+a.pdf.replace('{LANG}',lang);
+    const pdfUrl='https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/'+a.pdf.replace('{LANG}',lang);
     const pdfFileName=a.pdf.replace('{LANG}',lang).split('/').pop();
     const pdfBtn=document.createElement('button');
     pdfBtn.style.cssText='display:flex;align-items:center;justify-content:center;gap:10px;background:#8B5CF6;color:#fff;border-radius:16px;padding:14px;margin:0 14px 10px;font-size:15px;font-weight:800;cursor:pointer;border:none;width:calc(100% - 28px)';
