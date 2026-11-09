@@ -94,10 +94,12 @@ def main():
 
     print("\n1. Connexion à R2...")
     try:
-        s3.head_bucket(Bucket=BUCKET)
+        # head_bucket est instable sur R2 — on teste avec list_objects à la place
+        s3.list_objects_v2(Bucket=BUCKET, MaxKeys=1)
         print(f"   ✅ Bucket '{BUCKET}' accessible")
     except Exception as e:
-        print(f"   ❌ Erreur: {e}")
+        print(f"   ❌ Erreur connexion R2: {e}")
+        print("   → Vérifie les clés et l'Account ID dans l'endpoint")
         sys.exit(1)
 
     print("\n2. Inventaire des fichiers locaux...")
