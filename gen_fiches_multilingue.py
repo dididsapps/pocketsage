@@ -634,6 +634,66 @@ FICHES_FR = [
  "zone":"Avant: ___/10  Après: ___/10",
  "astuce":"Fais cette routine tous les jours au même moment — le cerveau adore la régularité !",
  "duree":"5 min","difficulte":"⭐"},
+
+{"id":"FI-031","cat":"cerveau","age_range":"6-14","titre":"L'Intrus — Trouve le Different",
+ "sous":"Repere l'element qui ne ressemble pas aux autres dans chaque groupe !",
+ "steps":["Regarde chaque groupe de 4 elements (mots, formes ou chiffres).",
+          "Trouve celui qui ne respecte pas la meme regle que les 3 autres.",
+          "Entoure l'intrus et ecris en une phrase pourquoi il est different.",
+          "Niveau bonus : trouve une DEUXIEME raison qui fait de chaque element un intrus !",
+          "Invente ton propre groupe de 4 avec un intrus cache."],
+ "note":"Ce jeu entraine la categorisation, la pensee logique et l'attention aux details.",
+ "zone":"1) Chien  Chat  Dauphin  Pierre  — Intrus: ___  Raison: ___\n2) 2  4  7  8  — Intrus: ___  Raison: ___\n3) Triangle  Carre  Cercle  Pyramide  — Intrus: ___  Raison: ___\n4) Pomme  Banane  Carotte  Cerise  — Intrus: ___  Raison: ___",
+ "astuce":"Il peut y avoir plusieurs bonnes reponses ! L'important est de justifier sa logique.",
+ "duree":"8 min","difficulte":"⭐⭐"},
+
+{"id":"FI-032","cat":"cerveau","age_range":"8-16","titre":"Rotation mentale — Tourne dans ta tete",
+ "sous":"Visualise la forme tournee et devine ce qu'elle donne !",
+ "steps":["Regarde la forme de depart a gauche.",
+          "Imagine-la tourner de 90 degres vers la droite — sans toucher.",
+          "Choisis parmi les 4 options celle qui correspond au resultat.",
+          "Niveau 2 : rotation de 180 degres.",
+          "Niveau 3 : rotation en 3D — imagine la forme vue de l'autre cote !"],
+ "note":"La rotation mentale est une des competences spatiales les plus utiles en maths, sciences et architecture.",
+ "zone":"Forme modele : [L] apres 90deg = ?\nA) [J]  B) [r]  C) [L]  D) [7]\nReponds sans tourner la feuille !\nMes reponses : 1.___ 2.___ 3.___ 4.___",
+ "astuce":"Les joueurs de Tetris ameliorent leur rotation mentale de 30% en 90 jours !",
+ "duree":"10 min","difficulte":"⭐⭐⭐"},
+
+{"id":"FI-033","cat":"reflexe","age_range":"5-12","titre":"Touche la bonne couleur — Defi des doigts",
+ "sous":"Pose tes doigts sur les cercles en suivant les instructions !",
+ "steps":["Pose ta feuille a plat sur une table.",
+          "Un ami dit une couleur et un doigt (ex: Index gauche sur Rouge).",
+          "Pose ce doigt sans enlever les autres.",
+          "Continue : chaque nouveau doigt sur une nouvelle couleur.",
+          "Essaie d'avoir 5 doigts sur 5 cercles en meme temps sans te tromper !"],
+ "note":"Cet exercice entraine la coordination bilaterale, l'attention selective et la motricite fine.",
+ "zone":"[6 cercles a dessiner de differentes couleurs : Rouge, Bleu, Vert, Jaune, Orange, Violet]\nScore : ___ doigts places correctement en meme temps",
+ "astuce":"Version solo : utilise des des ou des cartes pour tirer les commandes au hasard !",
+ "duree":"5 min","difficulte":"⭐"},
+
+{"id":"FI-034","cat":"cerveau","age_range":"9-16","titre":"Detective de patterns — Suite a completer",
+ "sous":"Decouvre la regle cachee et complete les series !",
+ "steps":["Observe attentivement la suite de nombres ou de symboles.",
+          "Cherche la difference entre chaque terme (+, x, alternance, Fibonacci...).",
+          "Ecris le prochain terme et explique ta regle.",
+          "Verifie en appliquant ta regle a toute la serie depuis le debut.",
+          "Invente ta propre suite mysterieuse pour challenger tes amis."],
+ "note":"Trouver des patterns est la base de l'algebre, de la programmation et de la musique !",
+ "zone":"1) 1, 3, 6, 10, 15, ___ (regle : ___)\n2) 2, 6, 18, 54, ___ (regle : ___)\n3) A, C, F, J, ___ (regle : ___)\n4) 1, 1, 2, 3, 5, 8, ___ (regle : ___)\n5) 3, 1, 4, 1, 5, 9, ___ (regle : ___)",
+ "astuce":"Suite 4 = Fibonacci (chaque terme = somme des 2 precedents). Suite 5 = decimales de Pi !",
+ "duree":"10 min","difficulte":"⭐⭐⭐"},
+
+{"id":"FI-035","cat":"cerveau","age_range":"7-15","titre":"Memoire photographique — Scan eclair",
+ "sous":"Memorise une scene en 20 secondes puis reponds aux questions !",
+ "steps":["Regarde l'image (ou la liste) pendant EXACTEMENT 20 secondes.",
+          "Retourne la feuille — ne regarde plus !",
+          "Reponds aux questions sans aide.",
+          "Retourne la feuille et compte tes bonnes reponses.",
+          "Rejoue avec quelqu'un : l'un pose les questions, l'autre memorise."],
+ "note":"La memoire photographique peut s'entrainer ! Les champions de memoire utilisent des techniques de visualisation.",
+ "zone":"Scene a memoriser : imagine 10 objets ranges sur une etagere\nBalle rouge  Livre bleu  Tasse jaune  Cle verte  Montre noire\nPomme rouge  Stylo violet  Caillou gris  Fleur rose  Bougie blanche\nQuestions : 1) Quelle couleur est le livre ? ___  2) Combien d'objets de couleur rouge ? ___\n3) Quel objet est entre la tasse et la cle ? ___  4) Cite 5 objets sans regarder : ___",
+ "astuce":"Technique des champions : imagine une histoire bizarre qui relie tous les objets !",
+ "duree":"8 min","difficulte":"⭐⭐"},
 ]
 
 # ── Champs à traduire par fiche ─────────────────────────────────────────────
@@ -704,6 +764,15 @@ def generate_pdf(fiche, lang, outdir):
     # FI-007 : labyrinthes dans la zone
     if fiche["id"] == "FI-007":
         y = draw_maze_zone(c, y, lang)
+        draw_footer(c, lang)
+        c.save()
+        return
+
+    # FI-006 : mots Stroop en couleur discordante
+    if fiche["id"] == "FI-006":
+        zone_h = max(y - 1.8*cm, 0)
+        if zone_h > 1*cm:
+            draw_stroop_zone(c, y, zone_h, lang)
         draw_footer(c, lang)
         c.save()
         return
@@ -865,6 +934,152 @@ def draw_one_maze(c, lx, top_y, maze_w, maze_h, walls_h, walls_v, grid):
                 c.line(vx, vy0, vx, vy1)
 
 
+import random as _random
+
+def generate_maze(rows, cols, seed=42):
+    """Recursive Backtracker — génère un labyrinthe parfait garantissant une solution unique."""
+    _random.seed(seed)
+    walls_h = [[True]*cols for _ in range(rows-1)]
+    walls_v = [[True]*(cols-1) for _ in range(rows)]
+    visited = [[False]*cols for _ in range(rows)]
+
+    def neighbors(r, c):
+        result = []
+        if r > 0: result.append((r-1, c, 'N'))
+        if r < rows-1: result.append((r+1, c, 'S'))
+        if c > 0: result.append((r, c-1, 'W'))
+        if c < cols-1: result.append((r, c+1, 'E'))
+        return result
+
+    stack = [(0, 0)]
+    visited[0][0] = True
+    while stack:
+        r, c = stack[-1]
+        unvisited = [(nr, nc, d) for nr, nc, d in neighbors(r, c) if not visited[nr][nc]]
+        if not unvisited:
+            stack.pop()
+        else:
+            nr, nc, d = _random.choice(unvisited)
+            if d == 'S': walls_h[r][c] = False
+            elif d == 'N': walls_h[nr][c] = False
+            elif d == 'E': walls_v[r][c] = False
+            elif d == 'W': walls_v[r][nc] = False
+            visited[nr][nc] = True
+            stack.append((nr, nc))
+    return walls_h, walls_v
+
+def draw_maze_pdf(c, lx, top_y, mw, mh, rows, cols, seed=42, entry_col=0, exit_col=None):
+    """Dessine un labyrinthe généré algorithmiquement (Recursive Backtracker)."""
+    if exit_col is None:
+        exit_col = cols - 1
+    walls_h, walls_v = generate_maze(rows, cols, seed)
+    cw = mw / cols
+    ch_cell = mh / rows
+    lw = 1.5
+
+    c.setStrokeColor(colors.black)
+    c.setLineWidth(lw)
+
+    # Bordure extérieure complète
+    c.rect(lx, top_y - mh, mw, mh, fill=0, stroke=1)
+
+    # Effacer ouverture entrée (haut, entry_col)
+    c.setFillColor(colors.white)
+    c.setStrokeColor(colors.white)
+    c.setLineWidth(lw + 1.5)
+    ex0 = lx + entry_col * cw + cw * 0.1
+    ex1 = lx + entry_col * cw + cw * 0.9
+    c.line(ex0, top_y, ex1, top_y)
+    # Effacer ouverture sortie (bas, exit_col)
+    sx0 = lx + exit_col * cw + cw * 0.1
+    sx1 = lx + exit_col * cw + cw * 0.9
+    c.line(sx0, top_y - mh, sx1, top_y - mh)
+
+    c.setStrokeColor(colors.black)
+    c.setLineWidth(lw)
+
+    # Murs intérieurs horizontaux (entre lignes r et r+1)
+    for r in range(rows - 1):
+        for col in range(cols):
+            if walls_h[r][col]:
+                x0 = lx + col * cw
+                y0 = top_y - (r + 1) * ch_cell
+                c.line(x0, y0, x0 + cw, y0)
+
+    # Murs intérieurs verticaux (entre colonnes col et col+1)
+    for r in range(rows):
+        for col in range(cols - 1):
+            if walls_v[r][col]:
+                x0 = lx + (col + 1) * cw
+                y0 = top_y - r * ch_cell
+                c.line(x0, y0, x0, y0 - ch_cell)
+
+    # Marqueurs Entrée (rouge) / Sortie (vert)
+    c.setFillColor(HexColor("#E63946"))
+    c.circle(lx + entry_col * cw + cw/2, top_y + 0.22*cm, 0.22*cm, fill=1, stroke=0)
+    c.setFillColor(colors.white)
+    c.setFont("Helvetica-Bold", 7)
+    c.drawCentredString(lx + entry_col * cw + cw/2, top_y + 0.15*cm, "E")
+
+    c.setFillColor(HexColor("#4CAF50"))
+    c.circle(lx + exit_col * cw + cw/2, top_y - mh - 0.22*cm, 0.22*cm, fill=1, stroke=0)
+    c.setFillColor(colors.white)
+    c.setFont("Helvetica-Bold", 7)
+    c.drawCentredString(lx + exit_col * cw + cw/2, top_y - mh - 0.28*cm, "S")
+
+
+def draw_stroop_zone(c, y, zone_h, lang):
+    """FI-006 : Affiche les mots Stroop en couleurs DISCORDANTES (effet Stroop)."""
+    if zone_h < 1*cm:
+        return
+
+    # Fond blanc avec bordure
+    c.setFillColor(colors.white)
+    c.setStrokeColor(colors.black)
+    c.setLineWidth(0.8)
+    c.setDash([4, 4])
+    c.roundRect(1*cm, y - zone_h, W - 2*cm, zone_h, 10, fill=1, stroke=1)
+    c.setDash([])
+
+    # Mots et leurs couleurs d'encre DISCORDANTES
+    # (mot_FR, couleur_encre_hex)
+    stroop_data = [
+        # Ligne 1
+        [("ROUGE", "#1A6EF5"), ("BLEU",  "#22A642"), ("VERT",  "#F5A623"), ("JAUNE", "#E63946")],
+        # Ligne 2
+        [("BLEU",  "#E63946"), ("VERT",  "#1A6EF5"), ("ROUGE", "#9B59B6"), ("ORANGE","#22A642")],
+        # Ligne 3
+        [("VERT",  "#F5A623"), ("JAUNE", "#9B59B6"), ("BLEU",  "#E63946"), ("ROUGE", "#1A6EF5")],
+        # Ligne 4
+        [("JAUNE", "#22A642"), ("ORANGE","#E63946"), ("VERT",  "#1A6EF5"), ("BLEU",  "#F5A623")],
+    ]
+
+    # Si langue non-FR, adapter les mots (traduction basique)
+    word_map = {
+        "EN": {"ROUGE":"RED","BLEU":"BLUE","VERT":"GREEN","JAUNE":"YELLOW","ORANGE":"ORANGE"},
+        "DE": {"ROUGE":"ROT","BLEU":"BLAU","VERT":"GRÜN","JAUNE":"GELB","ORANGE":"ORANGE"},
+        "ES": {"ROUGE":"ROJO","BLEU":"AZUL","VERT":"VERDE","JAUNE":"AMARILLO","ORANGE":"NARANJA"},
+        "IT": {"ROUGE":"ROSSO","BLEU":"BLU","VERT":"VERDE","JAUNE":"GIALLO","ORANGE":"ARANCIO"},
+        "PT": {"ROUGE":"VERMELHO","BLEU":"AZUL","VERT":"VERDE","JAUNE":"AMARELO","ORANGE":"LARANJA"},
+    }
+    wmap = word_map.get(lang, {})
+
+    n_rows = len(stroop_data)
+    n_cols = max(len(r) for r in stroop_data)
+    row_h = zone_h / (n_rows + 0.5)
+    col_w = (W - 2.2*cm) / n_cols
+    font_size = min(22, row_h * 1.8)
+
+    for ri, row in enumerate(stroop_data):
+        for ci, (word_fr, color_hex) in enumerate(row):
+            word = wmap.get(word_fr, word_fr)
+            cx = 1.1*cm + ci * col_w + col_w / 2
+            cy = y - (ri + 0.9) * row_h
+            c.setFillColor(HexColor(color_hex))
+            c.setFont("Helvetica-Bold", font_size)
+            c.drawCentredString(cx, cy, word)
+
+
 def draw_cell_maze(c, lx, top_y, mw, mh, grid_str, entry_col=0, exit_col=None):
     """
     Dessine un labyrinthe depuis une carte ASCII.
@@ -921,121 +1136,44 @@ def draw_cell_maze(c, lx, top_y, mw, mh, grid_str, entry_col=0, exit_col=None):
 
 
 def draw_maze_zone(c, y, lang):
-    """FI-007 : 3 labyrinthes à résoudre, grands, dans la zone d'activité."""
+    """FI-007 : 3 labyrinthes algorithmiques (Recursive Backtracker), côte à côte."""
     if y < 4*cm:
         return y
 
     diff_labels = {
         "FR": ["Facile", "Moyen", "Difficile"],
-        "EN": ["Easy",   "Medium","Hard"],
-        "DE": ["Leicht", "Mittel","Schwer"],
-        "ES": ["Facil",  "Medio", "Dificil"],
-        "IT": ["Facile", "Medio", "Difficile"],
-        "PT": ["Facil",  "Medio", "Dificil"],
+        "EN": ["Easy",   "Medium", "Hard"],
+        "DE": ["Leicht", "Mittel", "Schwer"],
+        "ES": ["Facil",  "Medio",  "Dificil"],
+        "IT": ["Facile", "Medio",  "Difficile"],
+        "PT": ["Facil",  "Medio",  "Dificil"],
+        "RU": ["Легко",  "Средне", "Сложно"],
+        "UK": ["Легко",  "Середньо","Складно"],
+        "PL": ["Łatwy",  "Średni", "Trudny"],
+        "RO": ["Usor",   "Mediu",  "Dificil"],
+        "HU": ["Könnyű", "Közepes","Nehéz"],
+        "TR": ["Kolay",  "Orta",   "Zor"],
+        "AR": ["سهل",    "متوسط",  "صعب"],
+        "ZH": ["简单",    "中等",   "困难"],
     }
     lbls = diff_labels.get(lang, diff_labels["FR"])
 
-    # 3 labyrinthes définis comme cartes ASCII — format (2R+1)×(2C+1)
-    # Chaque '+' = coin, '-' = mur horizontal, '|' = mur vertical, ' ' = passage
-    # Entrée = haut col 0, Sortie = bas col droite
-
-    # Labyrinthe FACILE 4×4 : chemin simple descend puis traverse
-    maze_easy = [
-        "+  +--+--+--+",
-        "|           |",
-        "+  +--+  +--+",
-        "|  |     |   ",
-        "+  +  +--+  +",
-        "|     |     |",
-        "+--+  +  +--+",
-        "         |   ",
-        "+--+--+  +--+",
-    ]
-    # Labyrinthe MOYEN 4×4 : chemin en S
-    maze_med = [
-        "+  +--+--+--+",
-        "|  |        |",
-        "+  +  +--+  +",
-        "|     |  |  |",
-        "+--+  +  +  +",
-        "|  |     |  |",
-        "+  +--+  +  +",
-        "|        |   ",
-        "+--+--+--+  +",
-    ]
-    # Labyrinthe DIFFICILE 5×5 : chemin tortueux
-    maze_hard = [
-        "+  +--+--+--+--+",
-        "|  |           |",
-        "+  +  +--+--+  +",
-        "|     |     |  |",
-        "+--+  +  +  +  +",
-        "|     |  |     |",
-        "+  +--+  +--+  +",
-        "|  |     |     |",
-        "+  +  +--+  +--+",
-        "|     |         ",
-        "+--+--+--+--+  +",
-    ]
+    # 3 labyrinthes : Facile 4×4, Moyen 5×5, Difficile 6×6
+    configs = [(4, 4, 1), (5, 5, 7), (6, 6, 13)]
 
     zone_h = max(y - 1.8*cm, 5*cm)
-    # 3 labyrinthes côte à côte
     mw = (W - 2.5*cm) / 3 - 0.4*cm
-    mh = zone_h - 1.0*cm
+    mh = zone_h - 1.4*cm
     gap = (W - 2.5*cm - 3*mw) / 2
-    top_y = y - 0.65*cm
+    top_y = y - 0.8*cm
 
-    for mi, (mdata, label) in enumerate(zip([maze_easy, maze_med, maze_hard], lbls)):
+    for mi, ((rows, cols, seed), label) in enumerate(zip(configs, lbls)):
         lx = 1.25*cm + mi * (mw + gap)
-
-        # Fond blanc
-        c.setFillColor(colors.white)
-        c.setStrokeColor(HexColor("#DDDDDD"))
-        c.setLineWidth(0.3)
-        c.rect(lx, top_y - mh, mw, mh, fill=1, stroke=1)
-
-        rows_map = len(mdata)
-        cols_map = max(len(row) for row in mdata)
-        rows = (rows_map - 1) // 2
-        cols = (cols_map - 1) // 2
-        cw = mw / cols
-        ch = mh / rows
-
-        c.setStrokeColor(colors.black)
-        c.setLineWidth(1.0)
-
-        # Dessine chaque segment de mur
-        for ri, row in enumerate(mdata):
-            for ci, ch_char in enumerate(row):
-                if ch_char == '-':
-                    # Mur horizontal centré sur cette col
-                    x0 = lx + (ci - 1) / (cols_map - 1) * mw
-                    x1 = lx + (ci + 1) / (cols_map - 1) * mw
-                    py = top_y - ri / (rows_map - 1) * mh
-                    c.line(x0, py, x1, py)
-                elif ch_char == '|':
-                    px = lx + ci / (cols_map - 1) * mw
-                    y0 = top_y - (ri - 1) / (rows_map - 1) * mh
-                    y1 = top_y - (ri + 1) / (rows_map - 1) * mh
-                    c.line(px, y0, px, y1)
-
-        # Marqueurs E / S
-        c.setFillColor(HexColor("#E63946"))
-        c.circle(lx + cw * 0.5, top_y + 0.2*cm, 0.22*cm, fill=1, stroke=0)
-        c.setFillColor(colors.white)
-        c.setFont("Helvetica-Bold", 7)
-        c.drawCentredString(lx + cw * 0.5, top_y + 0.14*cm, "E")
-
-        c.setFillColor(HexColor("#4CAF50"))
-        c.circle(lx + mw - cw * 0.5, top_y - mh - 0.2*cm, 0.22*cm, fill=1, stroke=0)
-        c.setFillColor(colors.white)
-        c.setFont("Helvetica-Bold", 7)
-        c.drawCentredString(lx + mw - cw * 0.5, top_y - mh - 0.26*cm, "S")
-
-        # Label difficulté
-        c.setFillColor(HexColor("#555555"))
+        # Label de difficulté au-dessus
         c.setFont("Helvetica-Bold", 8)
-        c.drawCentredString(lx + mw / 2, top_y - mh - 0.52*cm, label)
+        c.setFillColor(colors.black)
+        c.drawCentredString(lx + mw/2, top_y + 0.1*cm, label)
+        draw_maze_pdf(c, lx, top_y - 0.3*cm, mw, mh, rows, cols, seed)
 
     return y - zone_h - 0.2*cm
 
@@ -1158,12 +1296,33 @@ def draw_maze_example(c, y, main_col, bg_col, lang):
 
 
 def main():
-    for lang in LANGS.keys():
-        print(f"\n📚 Génération langue : {lang}")
+    import argparse
+    parser = argparse.ArgumentParser(description="Génère les fiches PDF PocketSage")
+    parser.add_argument("--lang", default=None, help="Langue(s) séparées par virgule, ex: FR,EN")
+    parser.add_argument("--ids",  default=None, help="IDs de fiches, ex: FI-006,FI-007,FI-031")
+    args = parser.parse_args()
+
+    if args.lang:
+        langs_to_gen = [l.strip().upper() for l in args.lang.split(",")]
+    else:
+        langs_to_gen = list(LANGS.keys())
+
+    if args.ids:
+        ids_filter = set(i.strip() for i in args.ids.split(","))
+        fiches_to_gen = [f for f in FICHES_FR if f["id"] in ids_filter]
+    else:
+        fiches_to_gen = FICHES_FR
+
+    total = 0
+    for lang in langs_to_gen:
+        if lang not in LANGS and lang != "FR":
+            print(f"  ⚠️ Langue inconnue : {lang}")
+            continue
+        print(f"\n Génération langue : {lang}")
         outdir = os.path.join(OUT_BASE, lang)
         os.makedirs(outdir, exist_ok=True)
 
-        for fiche in FICHES_FR:
+        for fiche in fiches_to_gen:
             texts = collect_texts(fiche)
             if lang == "FR":
                 translated = texts
@@ -1171,9 +1330,10 @@ def main():
                 translated = translate_texts(texts, lang)
             fiche_t = rebuild_fiche(fiche, translated)
             generate_pdf(fiche_t, lang, outdir)
-            print(f"  ✅ {lang}/{fiche['id']}.pdf")
+            print(f"  OK {lang}/{fiche['id']}.pdf")
+            total += 1
 
-    print(f"\n✅ TERMINÉ — {len(FICHES_FR) * len(LANGS)} PDF dans {OUT_BASE}/")
+    print(f"\nTERMINE — {total} PDF generes dans {OUT_BASE}/")
 
 if __name__ == "__main__":
     main()
