@@ -1321,6 +1321,16 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 </div>
 
 <!-- POLITESSE SCREEN -->
+<div class="scr" id="scr-flash">
+  <div class="hdr">
+    <button class="hbk" onclick="goHome()"></button>
+    <div class="htit">⚡ Flash Savant</div>
+    <div class="hsc" id="flash-score">⚡ 0</div>
+  </div>
+  <div class="stabs" id="flash-tabs" style="padding:8px 14px 0;flex-shrink:0"></div>
+  <div class="sc" id="flash-content"></div>
+</div>
+
 <div class="scr" id="scr-politesse">
   <div class="hdr">
     <button class="hbk" onclick="goHome()"></button>
@@ -1407,6 +1417,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="jeux" onclick="openJeux()"><span class="ni">🧩</span><span class="nl">Jeux</span></button>
   <button class="nb" data-nav="langues" onclick="openMod('langues')"><span class="ni ni-hz" style="font-size:18px;font-weight:bold;font-family:sans-serif">汉字</span><span class="nl">Langues</span></button>
   <button class="nb" data-nav="savoirs" onclick="openMod('savoirs')"><span class="ni">📚</span><span class="nl">Savoirs</span></button>
+  <button class="nb" data-nav="flash" onclick="openFlash()"><span class="ni">⚡</span><span class="nl">Flash</span></button>
   <button class="nb" data-nav="politesse" onclick="openPolitesse()"><span class="ni">🌸</span><span class="nl">Politesse</span></button>
   <button class="nb" data-nav="videos" onclick="openMod('recompenses')"><span class="ni">🎬</span><span class="nl">Vidéos</span></button>
   <button class="nb" data-nav="nuit" onclick="openNuit()"><span class="ni">📖</span><span class="nl">Histoires</span></button>
@@ -12541,6 +12552,207 @@ const MCFG={
 // ════════════════════════════════════════════
 // POLITESSE DATA & SCREEN
 // ════════════════════════════════════════════
+// ══════════════════════════════════════════════════════
+// FLASH SAVANT DATA
+// ══════════════════════════════════════════════════════
+const FLASH_DATA={
+  curiosites:[
+    {id:'CU-001',emoji:'🧠',titre:'Ton cerveau génère assez d’énergie pour allumer une ampoule',texte:'Le cerveau humain produit environ 20 watts en activité normale. C’est autant qu’une ampoule LED standard. Pendant ton sommeil, il ne s’éteint jamais.',tag:'Neurosciences',age:'8+',couleur:'#6C63FF'},
+    {id:'CU-002',emoji:'🐙',titre:'Les pieuvres ont 3 cœurs et un sang bleu',texte:'Leur hémolymphe contient de la hémocyanine (cuivre) au lieu d’hémoglobine (fer). Deux cœurs s’arrêtent quand elles nagent — elles préfèrent donc marcher sur le fond.',tag:'Biologie',age:'7+',couleur:'#06D6A0'},
+    {id:'CU-003',emoji:'🦈',titre:'Les requins existaient avant les arbres',texte:'Les premiers requins apparaissent il y a 450 millions d’années. Les forêts arrivent 90 millions d’années plus tard. Les requins ont survécu à 5 extinctions de masse.',tag:'Géologie',age:'8+',couleur:'#118AB2'},
+    {id:'CU-004',emoji:'🔢',titre:'Plier 42 fois une feuille dépasse la Lune',texte:'L’épaisseur double à chaque pli. Après 42 plis : 440 000 km. La Lune est à 384 000 km. Au pli 103, la feuille aurait le diamètre de l’Univers observable.',tag:'Mathématiques',age:'9+',couleur:'#FF9F1C'},
+    {id:'CU-005',emoji:'🧊',titre:'Le froid n’existe pas physiquement',texte:'"Froid" est l’absence de chaleur, comme l’obscurité est l’absence de lumière. On ne peut pas "envoyer du froid" — on retire de la chaleur. Le zéro absolu (-273°C) est la limite.',tag:'Physique',age:'10+',couleur:'#4ECDC4'},
+    {id:'CU-006',emoji:'🌊',titre:'L’eau chaude peut geler plus vite que l’eau froide',texte:'L’effet Mpemba : un phénomène réel mais encore non totalement expliqué. Il dépend du contenant, de la dissolution des gaz et des gradients de température.',tag:'Physique',age:'10+',couleur:'#118AB2'},
+    {id:'CU-007',emoji:'🌍',titre:'"Bonjour" vient d’une prière médiévale',texte:'"Bon jour" signifiait "que Dieu vous donne un bon jour". On souhaitait littéralement une bénédiction divine à chaque rencontre. La formule a 800 ans.',tag:'Étymologie',age:'8+',couleur:'#FFD166'},
+    {id:'CU-008',emoji:'🧬',titre:'Tu es composé à 60% d’eau… qui existait avant les dinosaures',texte:'Les atomes d’hydrogène dans ton corps ont 14 milliards d’ans. L’eau que tu bois a peut-être été bue par un dinosaure, un Romain, ou tombée comme pluie sur les Alpes.',tag:'Sciences',age:'8+',couleur:'#06D6A0'},
+    {id:'CU-009',emoji:'🐜',titre:'Les fourmis d’Argentine forment une colonie de 6 000 km',texte:'Des fourmis de Barcelone et d’Italie se reconnaissent et ne s’attaquent pas — elles font partie de la même supercolonie mondiale. C’est la plus grande structure vivante organisée connue.',tag:'Biologie',age:'9+',couleur:'#FF6B6B'},
+    {id:'CU-010',emoji:'🎵',titre:'"Joyeux Anniversaire" était sous copyright jusqu’en 2016',texte:'Warner/Chappell Music touchait ~2M$ par an de royalties. Un procès a prouvé que le copyright était frauduleux. La chanson composée en 1893 est maintenant dans le domaine public.',tag:'Histoire',age:'9+',couleur:'#9B59B6'},
+    {id:'CU-011',emoji:'🌙',titre:'La Lune s’éloigne de 3,8 cm de la Terre chaque année',texte:'Dans 600 millions d’années, elle sera trop loin pour couvrir le Soleil lors des éclipses totales. Les éclipses parfaites que nous voyons sont un hasard cosmique temporaire.',tag:'Astronomie',age:'10+',couleur:'#2C3E50'},
+    {id:'CU-012',emoji:'🦋',titre:'Les papillons goûtent avec leurs pattes',texte:'Leurs capteurs gustatifs sont 200 fois plus sensibles que la langue humaine. En atterrissant sur une plante, ils savent immédiatement si elle convient pour pondre leurs œufs.',tag:'Biologie',age:'6+',couleur:'#E91E63'},
+    {id:'CU-013',emoji:'🔬',titre:'Ton corps remplace la quasi-totalité de ses cellules en 7 ans',texte:'Certaines comme les neurones et les cellules osseuses vivent plus longtemps, mais la plupart se renouvellent constamment. Tu n’es pas le même corps qu’il y a 7 ans.',tag:'Biologie',age:'9+',couleur:'#06D6A0'},
+    {id:'CU-014',emoji:'⚡',titre:'La foudre frappe la Terre 100 fois par seconde',texte:'Soit 8 millions d’éclairs par jour. Un éclair peut atteindre 30 000°C — 5 fois la surface du Soleil. Et pourtant l’air entre les nuages et le sol agit comme un isolant.',tag:'Physique',age:'7+',couleur:'#FF9F1C'},
+    {id:'CU-015',emoji:'🌱',titre:'Les arbres communiquent sous terre via des champignons',texte:'Le "Wood Wide Web" : les racines échangent nutriments et signaux d’alarme via des réseaux de mycélium. Une forêt est une communauté, pas juste une collection d’arbres.',tag:'Sciences',age:'9+',couleur:'#2ECC71'},
+  ],
+  psycho:[
+    {id:'PS-001',emoji:'🧠',titre:'Ton cerveau réinvente tes souvenirs à chaque fois',texte:'La mémoire n’est pas un enregistrement. Chaque rappel reconstruit le souvenir et l’altère légèrement. C’est pourquoi deux témoins racontent la même scène différemment.',tag:'Psychologie',age:'11+',couleur:'#6C63FF'},
+    {id:'PS-002',emoji:'😊',titre:'Sourire force ton cerveau à ressentir de la joie',texte:'L’hypothèse du feedback facial : contracter les muscles du sourire active des zones émotionnelles positives dans le cerveau. Même un sourire forcé réduit le stress mesurable.',tag:'Neurosciences',age:'8+',couleur:'#FFD166'},
+    {id:'PS-003',emoji:'💤',titre:'Ton cerveau consolide tes apprentissages pendant le sommeil',texte:'La nuit, l’hippocampe rejoue les informations de la journée pour les transférer en mémoire à long terme. Dormir après une révision améliore la mémorisation de 20 à 40%.',tag:'Neurosciences',age:'9+',couleur:'#9B59B6'},
+    {id:'PS-004',emoji:'🎯',titre:'L’effet Dunning-Kruger : les novices se croient experts',texte:'Les personnes peu compétentes dans un domaine surestiment leurs capacités — parce qu’elles n’ont pas les outils pour mesurer leur propre ignorance. Les vrais experts doutent davantage.',tag:'Psychologie',age:'13+',couleur:'#E74C3C'},
+    {id:'PS-005',emoji:'🔄',titre:'Prendre une décision fatigue ton cerveau',texte:'La "fatigue décisionnelle" : chaque choix consomme de l’énergie cognitive. Le soir, on fait de moins bonnes décisions. C’est pourquoi Steve Jobs portait toujours la même tenue.',tag:'Psychologie',age:'12+',couleur:'#1ABC9C'},
+    {id:'PS-006',emoji:'📱',titre:'Les notifications fragmentent ta concentration pendant 23 minutes',texte:'Après chaque interruption, il faut en moyenne 23 min pour retrouver un état de concentration profonde (deep work). Vérifier son téléphone toutes les 10 min rend la concentration impossible.',tag:'Neurosciences',age:'11+',couleur:'#E74C3C'},
+    {id:'PS-007',emoji:'🌊',titre:'L’état de flow est mesurable neurologiquement',texte:'Pendant le "flow" (absorption totale), le cortex préfrontal — siège de l’autocritique — se désactive partiellement. Tu penses moins à toi-même, et tes performances augmentent.',tag:'Psychologie',age:'13+',couleur:'#3498DB'},
+    {id:'PS-008',emoji:'🤝',titre:'Faire une faveur à quelqu’un le rend plus favorable envers toi',texte:'L’effet Benjamin Franklin : demander un service crée un lien paradoxal. Le cerveau justifie "j’ai aidé cette personne, donc je dois l’apprécier". Plus efficace que de rendre service.',tag:'Psychologie',age:'12+',couleur:'#FF9F1C'},
+    {id:'PS-009',emoji:'🎨',titre:'La créativité augmente quand tu es légèrement fatigué',texte:'Le matin, le cerveau est en mode analytique et filtrant. En soirée, les inhibitions cognitives baissent et les associations inattendues deviennent possibles. Les artistes créent souvent la nuit.',tag:'Neurosciences',age:'12+',couleur:'#9B59B6'},
+    {id:'PS-010',emoji:'💪',titre:'Le cerveau ne fait pas la différence entre imagination et réalité',texte:'Visualiser un mouvement sportif active les mêmes zones motrices que l’exécuter. Les sportifs de haut niveau s’entraînent mentalement. L’imagination est un vrai entraînement.',tag:'Neurosciences',age:'10+',couleur:'#E91E63'},
+  ],
+  motivation:[
+    {id:'MO-001',emoji:'🔥',titre:'L’identité est plus puissante que la volonté',texte:'Ne dis pas "j’essaie d’arrêter le sucre" mais "je suis quelqu’un qui mange sainement". Les actions suivent l’identité, pas les objectifs. Chaque petit choix vote pour qui tu deviens.',tag:'Motivation',age:'12+',couleur:'#E74C3C'},
+    {id:'MO-002',emoji:'🪜',titre:'Les petites victoires créent une chaîne de momentum',texte:'La dopamine libérée par une petite réussite motive l’action suivante. C’est le "effet de progression" : progresser même légèrement crée plus de motivation que d’atteindre un grand objectif.',tag:'Motivation',age:'10+',couleur:'#FF9F1C'},
+    {id:'MO-003',emoji:'🌱',titre:'Le cerveau confond l’inconfort de la croissance avec le danger',texte:'La résistance que tu ressens avant d’apprendre quelque chose de difficile est neurologique, pas logique. Le cerveau préfère l’efficacité au changement. L’inconfort = signal de croissance.',tag:'Motivation',age:'12+',couleur:'#2ECC71'},
+    {id:'MO-004',emoji:'⏰',titre:'La règle des 2 minutes : si ça prend moins de 2 min, fais-le maintenant',texte:'Remettre à plus tard une petite tâche consomme plus d’énergie cognitive que la faire. Le cerveau garde un "registre ouvert" de toutes les choses non terminées. Vide-le.',tag:'Motivation',age:'11+',couleur:'#1ABC9C'},
+    {id:'MO-005',emoji:'🎯',titre:'Écrire ses objectifs les rend 42% plus probables',texte:'L’écriture active un traitement cérébral différent de la pensée. Elle force la clarté, engage l’hémisphère gauche logique, et crée un contrat symbolique avec soi-même.',tag:'Motivation',age:'11+',couleur:'#9B59B6'},
+    {id:'MO-006',emoji:'💎',titre:'La persévérance prédit le succès mieux que le talent',texte:'Angela Duckworth a étudié des milliers d’étudiants, militaires, sportifs. Le "grit" (ténacité + passion durable) est un meilleur indicateur de réussite que le QI ou le talent inné.',tag:'Motivation',age:'12+',couleur:'#E91E63'},
+    {id:'MO-007',emoji:'🔁',titre:'Une habitude se forme en 66 jours, pas 21',texte:'La croyance des "21 jours" vient d’une mauvaise interprétation d’une étude de chirurgie plastique des années 60. Les vraies recherches montrent 18 à 254 jours selon la complexité.',tag:'Motivation',age:'12+',couleur:'#E74C3C'},
+    {id:'MO-008',emoji:'🌅',titre:'Les 5 premières minutes après le réveil programment ta journée',texte:'Pendant la transition entre sommeil et veille, le cerveau est en état hypnagogique — très réceptif. Les premières pensées, intentions et actions créent un cadre mental pour les heures suivantes.',tag:'Motivation',age:'13+',couleur:'#FF9F1C'},
+    {id:'MO-009',emoji:'🏆',titre:'La fierté est plus motivante que la récompense externe',texte:'Les études sur la motivation intrinsèque montrent que la satisfaction intérieure ("j’ai fait quelque chose de difficile") surpasse sur le long terme l’argent, les notes ou les compliments.',tag:'Motivation',age:'11+',couleur:'#F39C12'},
+    {id:'MO-010',emoji:'🌊',titre:'L’état d’esprit de croissance change littéralement le cerveau',texte:'Carol Dweck (Stanford) : croire que les capacités peuvent se développer active différemment le cerveau face à l’erreur. Les gens à "growth mindset" apprennent plus vite après un échec.',tag:'Motivation',age:'11+',couleur:'#3498DB'},
+  ],
+  confiance:[
+    {id:'CF-001',emoji:'💪',titre:'La posture change ton niveau de cortisol en 2 minutes',texte:'Amy Cuddy (Harvard) : adopter une posture expansive ("power pose") pendant 2 min réduit le cortisol (hormone du stress) et augmente la testostérone. Le corps influence le mental.',tag:'Confiance',age:'12+',couleur:'#E74C3C'},
+    {id:'CF-002',emoji:'🗣️',titre:'La voix intérieure critique n’est pas la tienne',texte:'Cette voix qui dit "tu n’es pas capable" est souvent une intériorisation de voix externes entendues dans l’enfance. Identifier son origine la neutralise. Tu peux choisir ta narration interne.',tag:'Confiance',age:'13+',couleur:'#9B59B6'},
+    {id:'CF-003',emoji:'🌟',titre:'L’auto-compassion est plus efficace que la critique pour progresser',texte:'Kristin Neff (Austin) : se traiter avec la même bienveillance qu’un ami après un échec active la résilience. L’autocritique sévère, elle, inhibe la prise de risque et l’apprentissage.',tag:'Confiance',age:'12+',couleur:'#1ABC9C'},
+    {id:'CF-004',emoji:'🎭',titre:'Tout le monde ressent le syndrome de l’imposteur',texte:'70% des personnes ont vécu l’impression d’être "moins compétents qu’ils n’y paraissent". Albert Einstein, Maya Angelou, Neil Armstrong — tous l’ont décrit. C’est un signe d’intelligence.',tag:'Confiance',age:'12+',couleur:'#E91E63'},
+    {id:'CF-005',emoji:'👁️',titre:'Le regard des autres que tu imagines est souvent faux',texte:'L’effet projecteur : on surestime l’attention que les autres nous portent. Dans une étude, les sujets pensaient que 50% des gens remarquaient un détail gênant. Réalité : moins de 20%.',tag:'Confiance',age:'11+',couleur:'#FF9F1C'},
+    {id:'CF-006',emoji:'🔥',titre:'Agir avant d’être confiant crée la confiance, pas l’inverse',texte:'On attend d’être prêt pour agir — mais la confiance naît de l’action, pas de sa préparation. Chaque défi relevé, même imparfait, construit une preuve neuronale de compétence.',tag:'Confiance',age:'12+',couleur:'#E74C3C'},
+    {id:'CF-007',emoji:'🌊',titre:'Les émotions durent 90 secondes si tu les laisses passer',texte:'La neurobiologiste Jill Bolte Taylor : une émotion physiologique dure 90 secondes. Ce qui l’entretient, c’est la pensée. Observer une émotion sans la nourrir la dissout naturellement.',tag:'Émotions',age:'12+',couleur:'#3498DB'},
+    {id:'CF-008',emoji:'💬',titre:'Nommer une émotion réduit son intensité de moitié',texte:'"Affect labeling" : mettre des mots sur ce qu’on ressent active le cortex préfrontal (raisonnement) et réduit l’activité de l’amygdale (peur/panique). Dire "je suis anxieux" calme l’anxiété.',tag:'Émotions',age:'10+',couleur:'#9B59B6'},
+    {id:'CF-009',emoji:'🤲',titre:'La gratitude recâble le cerveau en 21 jours',texte:'Écrire 3 choses positives chaque soir pendant 21 jours crée de nouvelles connexions neuronales. Le cerveau commence à scanner le monde pour le positif d’abord. Un biais qui se choisit.',tag:'Confiance',age:'10+',couleur:'#2ECC71'},
+    {id:'CF-010',emoji:'🌈',titre:'Les personnes optimistes vivent en moyenne 11 ans de plus',texte:'Une étude sur 70 000 femmes (Harvard) : l’optimisme est lié à une réduction de 30% des maladies coronariennes et de 16% du cancer. L’état d’esprit a un impact physiologique réel.',tag:'Confiance',age:'13+',couleur:'#E91E63'},
+  ],
+  emotions:[
+    {id:'EM-001',emoji:'😤',titre:'La colère non exprimée fragilise le système immunitaire',texte:'Des études longitudinales montrent que réprimer chroniquement la colère augmente les marqueurs inflammatoires. Exprimer ses émotions de façon saine — même négatives — protège la santé.',tag:'Émotions',age:'11+',couleur:'#E74C3C'},
+    {id:'EM-002',emoji:'😭',titre:'Pleurer libère des hormones de stress dans les larmes',texte:'Les larmes émotionnelles contiennent du cortisol et de la prolactine. Pleurer est une évacuation biologique du stress — pas une faiblesse. Après les larmes, les niveaux de stress baissent mesurément.',tag:'Émotions',age:'10+',couleur:'#3498DB'},
+    {id:'EM-003',emoji:'😰',titre:'L’anxiété et l’excitation sont neurologiquement identiques',texte:'Même rythme cardiaque élevé, même flux d’adrénaline. La différence : le récit qu’on se fait. Dire "je suis excité" plutôt que "je suis stressé" avant un défi améliore les performances.',tag:'Émotions',age:'12+',couleur:'#FF9F1C'},
+    {id:'EM-004',emoji:'🤯',titre:'L’empathie peut s’apprendre et se renforcer',texte:'Le cerveau des personnes très empathiques montre une activité accrue des neurones miroirs. Des études montrent que pratiquer délibérément la perspective d’autrui renforce ces connexions.',tag:'Émotions',age:'10+',couleur:'#9B59B6'},
+    {id:'EM-005',emoji:'😌',titre:'La respiration contrôlée est le seul levier direct du système nerveux',texte:'Tu ne peux pas décider de ralentir ton cœur directement — mais tu peux contrôler ta respiration. 4 secondes inspire, 6 secondes expire active le nerf vague et ralentit le rythme cardiaque.',tag:'Émotions',age:'9+',couleur:'#1ABC9C'},
+    {id:'EM-006',emoji:'🔗',titre:'La solitude fait autant de mal à la santé que fumer 15 cigarettes par jour',texte:'Une méta-analyse de Julianne Holt-Lunstad (350 000 participants) : l’isolement social augmente la mortalité de 26%. Le lien social est un besoin biologique, pas un luxe.',tag:'Émotions',age:'13+',couleur:'#E91E63'},
+    {id:'EM-007',emoji:'🎵',titre:'La musique active plus de zones du cerveau que toute autre activité',texte:'Jouer d’un instrument mobilise simultanément les cortex visuel, auditif, moteur et émotionnel. Les musiciens ont un cerveau mesurément différent — plus de connexions inter-hémisphériques.',tag:'Émotions',age:'9+',couleur:'#9B59B6'},
+    {id:'EM-008',emoji:'🌿',titre:'20 minutes dans la nature réduisent le cortisol de 21%',texte:'Une étude de l’Université du Michigan quantifie l’effet : une marche en nature (sans téléphone) pendant 20 min réduit les hormones du stress. Les villes vertes ont des habitants plus sains.',tag:'Émotions',age:'9+',couleur:'#2ECC71'},
+  ],
+  sagesse:[
+    // Récupérés depuis POLITESSE_DATA.dictons + nouveaux
+    {id:'SA-001',emoji:'✨',titre:'La politesse est l’art de choisir parmi ses pensées',texte:'Germaine de Staël — Toutes nos pensées ne méritent pas d’être exprimées. La vraie politesse, c’est choisir celles qui élèvent plutôt que celles qui blessent.',tag:'Sagesse',age:'10+',couleur:'#9B59B6'},
+    {id:'SA-002',emoji:'🎯',titre:'Le secret du succès, c’est la constance dans le but',texte:'Benjamin Disraeli — Non pas la perfection dans les moyens, mais la fidélité à la direction. La constance dépasse le talent sur la durée. Un cap tenu, même lentement, arrive.',tag:'Sagesse',age:'10+',couleur:'#E74C3C'},
+    {id:'SA-003',emoji:'🐢',titre:'L’important n’est pas la vitesse, mais de ne pas s’arrêter',texte:'Confucius — La tortue qui avance sans s’arrêter dépasse le lièvre qui fait des pauses. Le progrès régulier, même infime, surpasse les sprints suivis d’abandon.',tag:'Sagesse',age:'8+',couleur:'#2ECC71'},
+    {id:'SA-004',emoji:'💛',titre:'Traite les autres comme tu aimerais être traité',texte:'Règle d’or universelle — Présente dans toutes les grandes traditions : confucianisme, christianisme, islam, bouddhisme, stoïcisme. 2500 ans d’humanité convergent vers cette idée.',tag:'Sagesse',age:'6+',couleur:'#F39C12'},
+    {id:'SA-005',emoji:'🙏',titre:'La gratitude transforme ce que nous avons en suffisance',texte:'Proverbe amérindien — La richesse n’est pas d’avoir plus, c’est d’apprécier ce qu’on a. La gratitude est la seule façon de ne jamais manquer de quoi que ce soit.',tag:'Sagesse',age:'9+',couleur:'#1ABC9C'},
+    {id:'SA-006',emoji:'🌟',titre:'Le respect de soi est le commencement de la sagesse',texte:'Proverbe écossais — On ne peut pas respecter les autres sans d’abord se respecter soi-même. L’estime de soi n’est pas de l’arrogance — c’est la fondation de tout rapport sain.',tag:'Sagesse',age:'10+',couleur:'#9B59B6'},
+    {id:'SA-007',emoji:'🎨',titre:'Les grandes choses se font par une série de petites choses',texte:'Van Gogh — La cathédrale se construit brique par brique. La maîtrise vient heure par heure. L’impulsion crée l’étincelle ; la discipline construit l’œuvre.',tag:'Sagesse',age:'9+',couleur:'#E91E63'},
+    {id:'SA-008',emoji:'💫',titre:'Ce que tu penses de toi-même est plus important que ce que les autres pensent',texte:'Sénèque — L’opinion la plus persistante et la plus influente sur ta vie est celle que tu as de toi-même. Elle filtre tout le reste.',tag:'Sagesse',age:'11+',couleur:'#6C63FF'},
+    {id:'SA-009',emoji:'🦅',titre:'L’échec est le fondement de la réussite',texte:'Lao Tseu — Chaque tentative échouée t’enseigne ce qui ne fonctionne pas. Thomas Edison : "Je n’ai pas échoué 1000 fois, j’ai trouvé 1000 façons qui ne marchent pas."',tag:'Sagesse',age:'9+',couleur:'#E74C3C'},
+    {id:'SA-010',emoji:'🌊',titre:'La seule façon de faire du bon travail est d’aimer ce qu’on fait',texte:'Steve Jobs — La passion n’est pas un luxe, c’est un carburant. Les gens qui excellent n’ont pas seulement de la discipline — ils ont trouvé quelque chose qui les anime profondément.',tag:'Sagesse',age:'12+',couleur:'#FF9F1C'},
+    {id:'SA-011',emoji:'🕊️',titre:'La paix intérieure commence quand on arrête de vouloir que les choses soient différentes',texte:'Pema Chödrön — Pas la résignation, mais l’acceptation. La souffrance naît souvent de la résistance à la réalité. Accepter ce qui est libère l’énergie pour changer ce qui peut l’être.',tag:'Sagesse',age:'13+',couleur:'#3498DB'},
+    {id:'SA-012',emoji:'🌱',titre:'Plante des arbres dont tu ne verras jamais l’ombre',texte:'Proverbe grec — Les meilleures actions sont souvent celles dont on ne profitera pas. Éduquer, protéger, construire pour ceux qui viennent après. C’est la définition de la civilisation.',tag:'Sagesse',age:'11+',couleur:'#2ECC71'},
+  ],
+};
+
+// Flash Savant : état et fonctions
+let _flashTab=0,_flashIdx=0,_flashSeen=0;
+const _FLASH_TABS=[
+  {id:'mix',  label:'Mix ⚡',    pool:()=>{const all=[];Object.values(FLASH_DATA).forEach(arr=>all.push(...arr));return all.sort(()=>Math.random()-0.5);}},
+  {id:'curi', label:'Curiosités 🔬', pool:()=>FLASH_DATA.curiosites},
+  {id:'psych',label:'Psycho 🧠',    pool:()=>FLASH_DATA.psycho},
+  {id:'motiv',label:'Motivation 🔥',pool:()=>FLASH_DATA.motivation},
+  {id:'conf', label:'Confiance 💪', pool:()=>FLASH_DATA.confiance},
+  {id:'emo',  label:'Émotions 🌊',  pool:()=>FLASH_DATA.emotions},
+  {id:'sag',  label:'Sagesse ✨',   pool:()=>FLASH_DATA.sagesse},
+];
+let _flashPool=[];
+
+function openFlash(){
+  const sc=document.getElementById('flash-score');
+  if(sc)sc.textContent='⚡ '+_flashSeen;
+  _flashTab=0;_flashIdx=0;
+  _flashPool=_FLASH_TABS[0].pool();
+  renderFlashTabs();
+  renderFlashCard();
+  show('flash');
+}
+
+function renderFlashTabs(){
+  const tabs=document.getElementById('flash-tabs');
+  tabs.innerHTML='';
+  _FLASH_TABS.forEach((t,i)=>{
+    const b=document.createElement('button');
+    b.className='stab'+(i===_flashTab?' on':'');
+    b.textContent=t.label;
+    b.onclick=()=>{sndTap();_flashTab=i;_flashIdx=0;_flashPool=_FLASH_TABS[i].pool();renderFlashTabs();renderFlashCard();};
+    tabs.appendChild(b);
+  });
+}
+
+function renderFlashCard(){
+  const c=document.getElementById('flash-content');
+  if(!c)return;
+  const sa=_getSliderAge(),sAll=_globalShowAll;
+  let pool=_flashPool;
+  if(!sAll){
+    const filtered=pool.filter(item=>{
+      if(!item.age)return true;
+      const minAge=parseInt(item.age);
+      return isNaN(minAge)||minAge<=sa+2;
+    });
+    pool=filtered.length>0?filtered:_flashPool;
+  }
+  if(pool.length===0){c.innerHTML='<div style="text-align:center;padding:40px;color:var(--tl)">Aucun contenu pour cet âge</div>';return;}
+  if(_flashIdx>=pool.length)_flashIdx=0;
+  const item=pool[_flashIdx];
+  const total=pool.length;
+  _flashSeen++;
+  const sc=document.getElementById('flash-score');
+  if(sc)sc.textContent='⚡ '+_flashSeen;
+
+  const ttsText=(item.titre+'. '+item.texte).replace(/'/g,"&#39;");
+  const couleur=item.couleur||'#6C63FF';
+  // couleur claire pour le tag
+  const tagBg=couleur+'22';
+
+  c.innerHTML=`
+  <div style="padding:0 14px 20px">
+    <!-- Barre de progression -->
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px">
+      <div style="flex:1;height:4px;background:var(--vl);border-radius:4px;overflow:hidden">
+        <div style="width:${Math.round(((_flashIdx+1)/total)*100)}%;height:100%;background:${couleur};border-radius:4px;transition:width .3s"></div>
+      </div>
+      <span style="font-size:11px;font-weight:700;color:var(--tl);flex-shrink:0">${_flashIdx+1}/${total}</span>
+    </div>
+
+    <!-- Card principale -->
+    <div style="background:linear-gradient(145deg,${couleur},${couleur}cc);border-radius:24px;padding:28px 22px;color:#fff;margin-bottom:16px;box-shadow:0 8px 32px ${couleur}44">
+      <div style="font-size:52px;margin-bottom:14px;text-align:center">${item.emoji}</div>
+      <div style="font-size:17px;font-weight:900;line-height:1.35;margin-bottom:14px;text-align:center">${item.titre}</div>
+      <div style="font-size:14px;line-height:1.65;font-weight:500;opacity:.92">${item.texte}</div>
+      <div style="margin-top:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
+        <span style="background:rgba(255,255,255,.2);border-radius:20px;padding:5px 12px;font-size:11px;font-weight:800">${item.tag}</span>
+        <button onclick="ttsSpeak(this.dataset.t);sndTap()" data-t="${ttsText}" style="background:rgba(255,255,255,.25);border:none;border-radius:20px;padding:6px 14px;font-family:var(--f);font-size:12px;font-weight:700;color:#fff;cursor:pointer">🔊 Écouter</button>
+      </div>
+    </div>
+
+    <!-- Boutons navigation -->
+    <div style="display:flex;gap:10px;margin-bottom:14px">
+      <button onclick="flashNav(-1)" style="flex:1;background:var(--w);border:none;border-radius:16px;padding:14px;font-size:22px;cursor:pointer;box-shadow:var(--sh);color:var(--t)">←</button>
+      <button onclick="flashNav(1)" style="flex:2;background:${couleur};border:none;border-radius:16px;padding:14px;font-size:14px;font-weight:900;cursor:pointer;color:#fff;box-shadow:0 4px 16px ${couleur}66">Flash suivant →</button>
+    </div>
+
+    <!-- Compteur session -->
+    <div style="text-align:center;font-size:12px;color:var(--tl);font-weight:700">
+      ⚡ ${_flashSeen} flash vus cette session
+    </div>
+  </div>`;
+
+  // Swipe gesture
+  let _ts=0,_ty=0;
+  c.ontouchstart=e=>{_ts=Date.now();_ty=e.touches[0].clientY;};
+  c.ontouchend=e=>{
+    const dy=_ty-e.changedTouches[0].clientY;
+    const dt=Date.now()-_ts;
+    if(Math.abs(dy)>60&&dt<400){flashNav(dy>0?1:-1);}
+  };
+}
+
+function flashNav(dir){
+  sndTap();
+  const sa=_getSliderAge(),sAll=_globalShowAll;
+  let pool=_flashPool;
+  if(!sAll){
+    const filtered=pool.filter(item=>{if(!item.age)return true;const m=parseInt(item.age);return isNaN(m)||m<=sa+2;});
+    if(filtered.length>0)pool=filtered;
+  }
+  _flashIdx=(_flashIdx+dir+pool.length)%pool.length;
+  renderFlashCard();
+  document.getElementById('flash-content').scrollTop=0;
+}
+
 const POLITESSE_DATA={
   manieres:[
     {titre:'À table',icon:'🍽️',conseil:"Attends que tout le monde soit servi avant de commencer. Dis toujours s'il te plaît et merci."},
@@ -12686,7 +12898,7 @@ async function openMod(mod){
     if(coachBtnWrap) coachBtnWrap.style.display=(mod==='defis')?'block':'none';
     show('mod');
     document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));
-    const _modToNav={recompenses:'videos',langues:'langues',savoirs:'savoirs',logique:'jeux',politesse:'politesse',defis:'jeux'};
+    const _modToNav={recompenses:'videos',langues:'langues',savoirs:'savoirs',logique:'jeux',politesse:'politesse',defis:'jeux',flash:'flash'};
     const navKey=_modToNav[mod]||mod;
     const nb=document.querySelector('[data-nav="'+navKey+'"]');if(nb)nb.classList.add('active');
   }catch(e){console.error('openMod:',e);toast('Erreur module: '+e.message,'err');}
