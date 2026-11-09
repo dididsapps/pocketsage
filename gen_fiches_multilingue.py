@@ -227,7 +227,7 @@ def draw_note_box(c, y, text, main_col, bg_col, icon=""):
 
 def draw_zone(c, y, label, h, main_col, bg_col):
     """Zone de dessin : s'étend jusqu'en bas de page (1.8cm = footer)."""
-    # Recalcul : toujours jusqu'au footer
+    # Toujours jusqu'au footer, pas de min artificiel
     h = max(h, y - 1.8*cm)
     if h < 1*cm:
         return y
@@ -239,11 +239,14 @@ def draw_zone(c, y, label, h, main_col, bg_col):
     c.setDash([4, 4])
     c.roundRect(1*cm, y-h, W-2*cm, h, 10, fill=0, stroke=1)
     c.setDash([])
-    # Label centré verticalement dans la zone
+    # Label : toutes les lignes wrappées, centré dans la zone
     c.setFillColor(HexColor("#888888"))
     c.setFont("Helvetica", 9)
-    first_line = (label or "").split("\n")[0][:80]
-    c.drawCentredString(W/2, y - h/2 - 0.15*cm, first_line)
+    lines = wrap_text((label or ""), 80)
+    total_text_h = len(lines) * 0.4*cm
+    start_y = y - h/2 + total_text_h/2 - 0.3*cm
+    for i, line in enumerate(lines):
+        c.drawCentredString(W/2, start_y - i*0.4*cm, line)
     return y - h - 0.3*cm
 
 def draw_footer(c, lang):
@@ -660,10 +663,11 @@ def generate_pdf(fiche, lang, outdir):
     age_label = fiche["age_range"]
     draw_header(c, fiche["titre"], fiche["sous"], fiche["cat"], age_label, num, lang)
 
-    y = H - 4.3*cm
+    # Badges sous le header — bien en dessous du rectangle titre
+    y = H - 4.5*cm
     draw_badge(c, 1.2*cm, y, f"⏱ {fiche['duree']}", main_col)
     draw_badge(c, 4.5*cm, y, fiche["difficulte"], main_col)
-    y -= 0.75*cm
+    y -= 0.9*cm
 
     # Titre section Étapes — traduit
     section_labels = {
