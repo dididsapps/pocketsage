@@ -14579,12 +14579,31 @@ function openAtelierDetail(a){
   if(a.pdf){
     const lang=(typeof P==='function'&&P()&&P().native)?P().native:'FR';
     const pdfUrl='https://audio.pocketsage.org/'+a.pdf.replace('{LANG}',lang);
-    const pdfBtn=document.createElement('a');
-    pdfBtn.href=pdfUrl;
-    pdfBtn.target='_blank';
-    pdfBtn.rel='noopener noreferrer';
-    pdfBtn.style.cssText='display:flex;align-items:center;justify-content:center;gap:10px;background:#8B5CF6;color:#fff;border-radius:16px;padding:14px;margin:0 14px 10px;font-size:15px;font-weight:800;text-decoration:none';
+    const pdfFileName=a.pdf.replace('{LANG}',lang).split('/').pop();
+    const pdfBtn=document.createElement('button');
+    pdfBtn.style.cssText='display:flex;align-items:center;justify-content:center;gap:10px;background:#8B5CF6;color:#fff;border-radius:16px;padding:14px;margin:0 14px 10px;font-size:15px;font-weight:800;cursor:pointer;border:none;width:calc(100% - 28px)';
     pdfBtn.innerHTML='📥 Télécharger la fiche PDF';
+    pdfBtn.onclick=async()=>{
+      pdfBtn.innerHTML='⏳ Téléchargement…';
+      pdfBtn.disabled=true;
+      try{
+        const resp=await fetch(pdfUrl);
+        if(!resp.ok) throw new Error('HTTP '+resp.status);
+        const blob=await resp.blob();
+        const blobUrl=URL.createObjectURL(blob);
+        const a2=document.createElement('a');
+        a2.href=blobUrl;
+        a2.download=pdfFileName;
+        document.body.appendChild(a2);
+        a2.click();
+        setTimeout(()=>{document.body.removeChild(a2);URL.revokeObjectURL(blobUrl);},2000);
+        pdfBtn.innerHTML='✅ Fiche téléchargée !';
+        setTimeout(()=>{pdfBtn.innerHTML='📥 Télécharger la fiche PDF';pdfBtn.disabled=false;},3000);
+      }catch(e){
+        pdfBtn.innerHTML='❌ Erreur — réessayer';
+        pdfBtn.disabled=false;
+      }
+    };
     c.appendChild(pdfBtn);
   }
 
