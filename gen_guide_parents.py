@@ -400,7 +400,7 @@ c.drawString(2*cm, y+0.1*cm, "📄  Les fiches imprimables — Nouveauté !")
 y -= 1.1*cm
 
 fiches_lines = wrap_text(
-    "PocketSage propose désormais 30 fiches d'activités à imprimer et à faire en famille, "
+    "PocketSage propose désormais 35 fiches d'activités à imprimer et à faire en famille, "
     "SANS aucun écran. Ces fiches sont disponibles directement dans l'application, "
     "dans la section Ateliers → Fiches.", 78)
 for line in fiches_lines:
@@ -418,6 +418,7 @@ fiches_cats = [
     ("🌀 Mandalas et Op Art",   "5 fiches", "Coloriage thérapeutique, art optique, Zentangle"),
     ("🎮 Jeux sans écran",      "5 fiches", "Escape game, codes secrets, théâtre d'ombres"),
     ("🧘 Yoga et bien-être",    "1 fiche",  "Routine de 5 min, respiration, visualisation"),
+    ("🧩 Logique et mémoire",   "5 fiches", "Intrus, rotation mentale, suites logiques, mémoire photo"),
 ]
 for cat, nb, desc in fiches_cats:
     c.setFillColor(HexColor("#F3EEFF"))
@@ -432,7 +433,7 @@ for cat, nb, desc in fiches_cats:
     c.drawString(9*cm, y-0.37*cm, desc)
     y -= 0.68*cm
 
-y -= 0.2*cm
+y -= 0.7*cm
 
 y = draw_info_box(c, y, "🌍 Fiches dans la langue maternelle de l'enfant",
     ["Chaque fiche est générée automatiquement dans la langue maternelle du profil.",

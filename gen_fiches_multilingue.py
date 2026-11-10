@@ -2,7 +2,7 @@
 """
 Génère les 30 fiches PDF dans les 14 langues PocketSage.
 Utilise Google Translate API pour les traductions.
-Sortie : ~/mnt/pocketsage/fiches/{LANG}/FI-XXX.pdf
+Sortie : <repo>/fiches/{LANG}/FI-XXX.pdf  (ou $FICHES_OUT) — à envoyer sur R2 : rclone copy fiches/FR r2:pocketsage-audio/fiches/FR
 """
 import os, json, requests, time
 from reportlab.lib.pagesizes import A4
@@ -25,7 +25,7 @@ API_KEY = _os.environ.get("GOOGLE_TTS_API_KEY", "")
 TRANSLATE_URL = f"https://translation.googleapis.com/language/translate/v2?key={API_KEY}"
 
 HOME = os.path.expanduser("~")
-OUT_BASE = os.path.join(HOME, "mnt", "pocketsage", "fiches")
+OUT_BASE = os.environ.get("FICHES_OUT", os.path.join(os.path.dirname(os.path.abspath(__file__)), "fiches"))
 
 W, H = A4
 
@@ -777,6 +777,14 @@ def generate_pdf(fiche, lang, outdir):
         c.save()
         return
 
+    # FI-033 : cercles de couleur ; FI-035 : objets à mémoriser
+    if fiche["id"] == "FI-033":
+        draw_color_dots_zone(c, y, lang)
+        draw_footer(c, lang); c.save(); return
+    if fiche["id"] == "FI-035":
+        draw_memory_zone(c, y, fiche["zone"], lang)
+        draw_footer(c, lang); c.save(); return
+
     # FI-006 : mots Stroop en couleur discordante
     if fiche["id"] == "FI-006":
         zone_h = max(y - 1.8*cm, 0)
@@ -1144,6 +1152,88 @@ def draw_cell_maze(c, lx, top_y, mw, mh, grid_str, entry_col=0, exit_col=None):
                 c.line(px, py0, px, py1)
 
 
+COLOR_DOTS = [("#E63946","R"),("#1D70B8","B"),("#2A9D41","V"),("#F2C200","J"),("#F77F00","O"),("#7B2CBF","Vi")]
+
+def draw_color_dots_zone(c, y, lang):
+    """FI-033 : grille de cercles colorés (gros comme un bout de doigt) — type Twister des doigts."""
+    import random as _r
+    h = y - 1.8*cm
+    if h < 4*cm:
+        return y
+    c.setStrokeColor(colors.black); c.setLineWidth(0.8); c.setDash([4, 4])
+    c.roundRect(1*cm, y-h, W-2*cm, h, 10, fill=0, stroke=1); c.setDash([])
+    cols, d = 6, 2.3*cm
+    rows = max(2, min(5, int((h - 1.6*cm) // (d + 0.45*cm))))
+    gx = (W - 2*cm - cols*d) / (cols + 1)
+    gy = (h - 1.4*cm - rows*d) / (rows + 1)
+    rnd = _r.Random(33)
+    seq = []
+    for r in range(rows):
+        row = COLOR_DOTS[:]; rnd.shuffle(row); seq.append(row)
+    for r in range(rows):
+        for k in range(cols):
+            col, _ = seq[r][k]
+            cx = 1*cm + gx*(k+1) + d*k + d/2
+            cy = y - 0.6*cm - gy*(r+1) - d*r - d/2
+            c.setFillColor(HexColor(col)); c.setStrokeColor(colors.black); c.setLineWidth(1)
+            c.circle(cx, cy, d/2, fill=1, stroke=1)
+    c.setFillColor(HexColor("#555555")); c.setFont("Helvetica-Oblique", 9)
+    score = {"FR": "Score : ___ doigts places correctement en meme temps",
+             "EN": "Score: ___ fingers placed correctly at the same time"}.get(lang, "Score : ___")
+    c.drawString(1.5*cm, y - h + 0.4*cm, score)
+    return y - h - 0.3*cm
+
+def draw_memory_zone(c, y, zone_text, lang):
+    """FI-035 : 10 objets colorés sur 2 étagères (à mémoriser), puis questions."""
+    h = y - 1.8*cm
+    if h < 5*cm:
+        return y
+    lines = [l for l in (zone_text or "").split("\n") if l.strip()]
+    import re as _re
+    names = []
+    for l in lines[1:3]:
+        names += [n.strip() for n in _re.split(r"\s{2,}", l) if n.strip()]
+    names = names[:10]
+    questions = lines[3:]
+    pal = {"rouge":"#E63946","bleu":"#1D70B8","jaune":"#F2C200","vert":"#2A9D41","noir":"#222222",
+           "violet":"#7B2CBF","gris":"#9A9A9A","rose":"#F28DB2","blanc":"#FFFFFF","orange":"#F77F00",
+           "red":"#E63946","blue":"#1D70B8","yellow":"#F2C200","green":"#2A9D41","black":"#222222",
+           "purple":"#7B2CBF","grey":"#9A9A9A","gray":"#9A9A9A","pink":"#F28DB2","white":"#FFFFFF"}
+    c.setStrokeColor(colors.black); c.setLineWidth(0.8); c.setDash([4, 4])
+    c.roundRect(1*cm, y-h, W-2*cm, h, 10, fill=0, stroke=1); c.setDash([])
+    c.setFillColor(colors.black); c.setFont("Helvetica-Bold", 10)
+    c.drawString(1.5*cm, y - 0.6*cm, (lines[0] if lines else "")[:90])
+    shelf_w = W - 3*cm; slot = shelf_w / 5; r = 0.75*cm
+    for row in range(2):
+        base = y - 1.2*cm - (row+1)*3.0*cm
+        c.setLineWidth(2.2); c.setStrokeColor(HexColor("#8B5A2B"))
+        c.line(1.5*cm, base, 1.5*cm + shelf_w, base)
+        for k in range(5):
+            i = row*5 + k
+            if i >= len(names): break
+            nm = names[i]
+            col = next((v for kk, v in pal.items() if kk in nm.lower()), "#CCCCCC")
+            cx = 1.5*cm + slot*k + slot/2; cy = base + r + 0.75*cm
+            c.setFillColor(HexColor(col)); c.setStrokeColor(colors.black); c.setLineWidth(1)
+            c.circle(cx, cy, r, fill=1, stroke=1)
+            c.setFillColor(colors.black); c.setFont("Helvetica-Bold", 9)
+            c.drawCentredString(cx, base + 0.25*cm, nm[:22])
+    # ligne de pliage + questions
+    qy = y - 1.2*cm - 2*3.0*cm - 0.9*cm
+    c.setDash([2, 3]); c.setStrokeColor(HexColor("#999999")); c.setLineWidth(0.8)
+    c.line(1.2*cm, qy, W - 1.2*cm, qy); c.setDash([])
+    c.setFillColor(HexColor("#777777")); c.setFont("Helvetica-Oblique", 8)
+    fold = {"FR": "Plie ici : cache les objets avant de repondre", "EN": "Fold here: hide the objects before answering"}.get(lang, "")
+    c.drawCentredString(W/2, qy - 0.35*cm, fold)
+    c.setFillColor(colors.black); c.setFont("Helvetica", 11)
+    qtxt = " ".join(questions)
+    qs = [q.strip() for q in _re.split(r"(?=\b\d\)\s)", qtxt) if q.strip()]
+    yy = qy - 1.1*cm
+    for q in qs:
+        if yy < y - h + 0.6*cm: break
+        c.drawString(1.6*cm, yy, q[:95]); yy -= 1.0*cm
+    return y - h - 0.3*cm
+
 def draw_maze_zone(c, y, lang):
     """FI-007 : 3 labyrinthes algorithmiques (Recursive Backtracker), côte à côte."""
     if y < 4*cm:
@@ -1167,22 +1257,29 @@ def draw_maze_zone(c, y, lang):
     }
     lbls = diff_labels.get(lang, diff_labels["FR"])
 
-    # 3 labyrinthes : Facile 4×4, Moyen 5×5, Difficile 6×6
-    configs = [(4, 4, 1), (5, 5, 7), (6, 6, 13)]
+    # 3 labyrinthes CARRÉS : Facile 5×5, Moyen 7×7, Difficile 9×9
+    configs = [(5, 5, 1), (7, 7, 7), (9, 9, 13)]
 
     zone_h = max(y - 1.8*cm, 5*cm)
-    mw = (W - 2.5*cm) / 3 - 0.4*cm
-    mh = zone_h - 1.4*cm
-    gap = (W - 2.5*cm - 3*mw) / 2
+    gap = 0.7*cm
+    side = min((W - 2.5*cm - 2*gap) / 3, zone_h - 1.6*cm)
+    x0 = (W - (3*side + 2*gap)) / 2
     top_y = y - 0.8*cm
 
     for mi, ((rows, cols, seed), label) in enumerate(zip(configs, lbls)):
-        lx = 1.25*cm + mi * (mw + gap)
-        # Label de difficulté au-dessus
-        c.setFont("Helvetica-Bold", 8)
+        lx = x0 + mi * (side + gap)
+        c.setFont("Helvetica-Bold", 9)
         c.setFillColor(colors.black)
-        c.drawCentredString(lx + mw/2, top_y + 0.1*cm, label)
-        draw_maze_pdf(c, lx, top_y - 0.3*cm, mw, mh, rows, cols, seed)
+        c.drawCentredString(lx + side/2, top_y + 0.1*cm, label)
+        draw_maze_pdf(c, lx, top_y - 0.3*cm, side, side, rows, cols, seed)
+
+    # Espace restant : invente ton labyrinthe
+    rest_top = top_y - 0.3*cm - side - 0.9*cm
+    if rest_top - 1.8*cm > 2.5*cm:
+        own = {"FR": "Invente ton labyrinthe ici et fais-le resoudre a quelqu'un !",
+               "EN": "Invent your own maze here and challenge someone!"}.get(lang, "")
+        if own:
+            draw_zone(c, rest_top, own, rest_top - 1.8*cm, None, None)
 
     return y - zone_h - 0.2*cm
 
