@@ -13,3 +13,5 @@ Point d'entrée pour reprendre le travail sur le module Flash. À lire dans l'or
 Pour une nouvelle session Claude : « lis `docs/flash/README.md` puis reprends le plan d'action ».
 
 Références générales de l'app (hors Flash) : `PROCESS_TTS_TRADUCTIONS.md`, `PLAN_TTS_LANGUES_MATERNELLES.md`, `elevenlabs/README.md`.
+
+Site : https://pocketsage.org · Contact : contact@pocketsage.org

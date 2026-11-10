@@ -87,15 +87,8 @@ Stockée par profil dans `APP.profiles[i].flashL` (`{id: {b: boîte, d: jour du 
 - mauvaise réponse → boîte 1, question le lendemain.
 Bouton orange « 🧠 N à réviser » en tête des onglets Flash quand des rappels sont dus.
 
-## 7. Sécurité : à faire en premier
+## 7. Sécurité des clés
 
-Le repo `dididsapps/pocketsage` est **public** et contient des clés en clair (constaté le 10/11/2026) :
-- **clé Google API** : `gen_fiches_multilingue.py`, `generate_voices.py`, `PLAN_TTS_LANGUES_MATERNELLES.md` (retirée de `generate_flash_tts.py`, qui lit désormais l'environnement) ;
-- **clés R2** : `gen_prono_mp3.py`, `elevenlabs/generate_prono_mp3.py`, `elevenlabs/r2_credentials.txt` ;
-- **clé ElevenLabs** : `index.html` (visible par tout visiteur de pocketsage.org, l'app l'utilise pour `elSpeak()` en direct), plus `generate_tts.py`, `generate_en_tts.py`, `generate_nuit.py`, `generate_voices.py`, `gen_prono_mp3.py`, `generate_new_cp_mp3.py`, `elevenlabs/README.md`, `index.html.bak2`.
+**10/11/2026 : toutes les clés ont été retirées du code** (scripts, docs, `index.html`, `elevenlabs/r2_credentials.txt` supprimé). Les scripts lisent les clés dans les variables d'environnement ou dans un fichier `.env` à la racine (modèle : `.env.example`, `.env` ignoré par git). L'app n'appelle plus ElevenLabs depuis le navigateur : l'onglet Nuit lit les MP3 pré-générés sur R2, sinon la voix du téléphone.
 
-Elles restent aussi dans l'**historique git** public. Actions :
-1. **Toi** : régénérer la clé Google (Google Cloud Console → Identifiants), la clé ElevenLabs (profil → API Keys) et créer un nouveau jeton R2 (Cloudflare → R2 → Manage API Tokens), puis révoquer les anciennes. Mettre les nouvelles **uniquement** dans les secrets GitHub (§4) et ton `.env` local.
-2. Restreindre la clé Google aux API Text-to-Speech et Translation, et fixer un plafond de budget.
-3. Retirer les clés des autres scripts (même méthode que `generate_flash_tts.py`).
-4. App : ne plus appeler ElevenLabs depuis le navigateur (tout pré-générer sur R2, ou un petit Worker Cloudflare qui garde la clé côté serveur).
+Les anciennes clés restent visibles dans l'**historique git** public : elles doivent être **révoquées** et remplacées (Google Cloud, ElevenLabs, Cloudflare R2), puis les nouvelles mises **uniquement** dans les secrets GitHub (§4) et le `.env` local. Ne jamais recoller une clé dans un fichier du repo.

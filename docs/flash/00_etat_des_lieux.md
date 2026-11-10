@@ -60,4 +60,5 @@ Fiches imprimables (ateliers sans écran) :
 - [ ] **Secrets GitHub** + premier lancement de l'Action (traductions + ~2 000 MP3).
 - [ ] Régénérer les 35 fiches FR, les relire, les envoyer sur R2 dans `fiches/FR/`, puis ajouter FI-031 à FI-035 dans la liste des fiches de `index.html`.
 - [ ] Le générateur de fiches écrit dans `~/mnt/pocketsage/fiches/{LANG}/` (dossier de ton ordinateur). Le dossier `fiches/` du repo contient d'anciennes versions à plat (FI-001 à FI-030).
-- [ ] **Sécurité, urgent** : `03_procedures_mp3_traductions.md` §7.
+- [x] Clés retirées du code (10/11).
+- [ ] **Révoquer les anciennes clés et en créer de nouvelles** (Google, ElevenLabs, R2), puis secrets GitHub + `.env`.
