@@ -117,10 +117,22 @@ def translate_batch(texts: list, lang: str) -> list:
     out = []
     for i in range(0, len(texts), 100):
         batch = texts[i:i + 100]
-        r = requests.post(url, json={"q": batch, "source": "fr",
-                                     "target": TRANSLATE_CODES[lang], "format": "text"}, timeout=60)
-        if r.status_code != 200:
-            raise RuntimeError(f"Translate {lang} HTTP {r.status_code}: {r.text[:200]}")
+        for attempt in range(6):  # erreurs temporaires Google (429/5xx) : on réessaie
+            try:
+                r = requests.post(url, json={"q": batch, "source": "fr",
+                                             "target": TRANSLATE_CODES[lang], "format": "text"}, timeout=60)
+            except requests.RequestException as e:
+                r = None; err = str(e)
+            if r is not None and r.status_code == 200:
+                break
+            code = r.status_code if r is not None else "réseau"
+            if r is not None and code not in (429, 500, 502, 503, 504):
+                raise RuntimeError(f"Translate {lang} HTTP {code}: {r.text[:200]}")
+            wait = 5 * 2 ** attempt
+            print(f"    ⏳ Translate {lang} {code}, nouvel essai dans {wait}s")
+            time.sleep(wait)
+        else:
+            raise RuntimeError(f"Translate {lang} : échec après 6 essais")
         out.extend(t["translatedText"] for t in r.json()["data"]["translations"])
         time.sleep(0.1)
     return out
@@ -159,8 +171,17 @@ def gen_tts(text: str, lang: str, out_path: Path) -> bool:
     payload = {"input": {"text": text},
                "voice": {"languageCode": cfg["languageCode"], "name": cfg["name"]},
                "audioConfig": {"audioEncoding": "MP3", "speakingRate": 0.85, "pitch": -2.0}}
-    r = requests.post(f"https://texttospeech.googleapis.com/v1/text:synthesize?key={GOOGLE_KEY}",
-                      json=payload, timeout=60)
+    for attempt in range(5):
+        try:
+            r = requests.post(f"https://texttospeech.googleapis.com/v1/text:synthesize?key={GOOGLE_KEY}",
+                              json=payload, timeout=60)
+        except requests.RequestException:
+            time.sleep(5 * 2 ** attempt); continue
+        if r.status_code in (429, 500, 502, 503, 504):
+            time.sleep(5 * 2 ** attempt); continue
+        break
+    else:
+        print(f"    ✗ TTS {lang} : échec après 5 essais"); return False
     if r.status_code == 200 and r.json().get("audioContent"):
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_bytes(base64.b64decode(r.json()["audioContent"]))
@@ -211,6 +232,7 @@ def main():
         sys.exit("❌ GOOGLE_TTS_API_KEY manquante (variable d'environnement ou .env)")
 
     # 2) Traductions
+    failed_langs = []
     for lang in langs:
         if lang == "FR": continue
         p = FLASH_DIR / f"{lang.lower()}.json"
@@ -219,7 +241,11 @@ def main():
         removed = [i for i in old if i not in by_id]
         print(f"  {lang} : {len(todo)} à traduire, {len(removed)} supprimée(s)")
         if a.dry_run or (not todo and not removed): continue
-        new = {t["id"]: t for t in translate_cards(todo, lang)} if todo else {}
+        try:
+            new = {t["id"]: t for t in translate_cards(todo, lang)} if todo else {}
+        except Exception as e:
+            print(f"  ❌ {lang} : {e} — langue ignorée, sera reprise au prochain lancement")
+            failed_langs.append(lang); continue
         merged = [new.get(c["id"]) or old[c["id"]] for c in cards]
         save_json(p, {"version": 1, "lang": lang, "cards": merged})
 
@@ -256,7 +282,8 @@ def main():
             time.sleep(0.1)
         save_json(AUDIO_MAN, man)
     print(f"Terminé : {total_ok} MP3 publiés, {total_err} erreur(s)")
-    if total_err: sys.exit(2)
+    if failed_langs: print(f"Langues à reprendre : {', '.join(failed_langs)}")
+    if total_err or failed_langs: sys.exit(2)
 
 
 if __name__ == "__main__":
