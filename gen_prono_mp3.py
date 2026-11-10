@@ -26,10 +26,10 @@ if _env.exists():
             _k, _v = _l.split("=", 1)
             os.environ.setdefault(_k.strip(), _v.strip().strip('"').strip("'"))
 
-EL_KEY     = os.environ.get("ELEVENLABS_API_KEY", "")
-GOOGLE_KEY = os.environ.get("GOOGLE_TTS_API_KEY", "") or os.environ.get("GOOGLE_API_KEY", "")
-R2_ACCESS  = os.environ.get("R2_ACCESS_KEY", "")
-R2_SECRET  = os.environ.get("R2_SECRET_KEY", "")
+EL_KEY     = os.environ.get("ELEVENLABS_API_KEY", "").strip().strip('"').strip("'")
+GOOGLE_KEY = (os.environ.get("GOOGLE_TTS_API_KEY", "") or os.environ.get("GOOGLE_API_KEY", "")).strip()
+R2_ACCESS  = os.environ.get("R2_ACCESS_KEY", "").strip()
+R2_SECRET  = os.environ.get("R2_SECRET_KEY", "").strip()
 R2_ENDPOINT = os.environ.get("R2_ENDPOINT", "https://8ea67fd06083effd6f76efdefb92092f.r2.cloudflarestorage.com")
 R2_BUCKET  = "pocketsage-audio"
 
