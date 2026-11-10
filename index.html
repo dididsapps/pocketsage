@@ -10023,6 +10023,7 @@ ateliers:[
 {id:"FI-029",nom:"Concours de pliage — Origami défi",cat:"Fiches",age:"7-15",dur:20,diff:2,
   emoji:"📐",desc:"3 défis d'origami du facile au difficile — qui réussit le plus vite ?",
   pdf:"fiches/{LANG}/FI-029.pdf",
+  tuto:"fiches/{LANG}/FI-029-tutos.pdf",
   materiel:["Feuilles A4 et carrées","instructions imprimées"],
   tags:["origami","motricité","patience","compétition"]},
 {id:"FI-030",nom:"5 minutes pour se recentrer",cat:"Fiches",age:"5-16",dur:5,diff:1,
@@ -14564,21 +14565,25 @@ function openAtelierDetail(a){
   c.appendChild(ast);
   }
 
-  // Bouton PDF téléchargeable (Fiches)
-  if(a.pdf){
+  // Boutons PDF téléchargeables (fiche + tuto éventuel)
+  const _R2PUB='https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/';
+  const _pdfButtons=[];
+  if(a.pdf)_pdfButtons.push({path:a.pdf,label:'📥 Télécharger la fiche PDF',bg:'#8B5CF6'});
+  if(a.tuto)_pdfButtons.push({path:a.tuto,label:'🪄 Tuto pas à pas (PDF)',bg:'#06A77D'});
+  _pdfButtons.forEach(({path,label,bg})=>{
     const lang=(typeof P==='function'&&P()&&P().native)?P().native:'FR';
-    const pdfUrl='https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/'+a.pdf.replace('{LANG}',lang);
-    const pdfFileName=a.pdf.replace('{LANG}',lang).split('/').pop();
+    const pdfUrl=_R2PUB+path.replace('{LANG}',lang);
+    const pdfUrlFR=_R2PUB+path.replace('{LANG}','FR');
+    const pdfFileName=path.replace('{LANG}',lang).split('/').pop();
     const pdfBtn=document.createElement('button');
-    pdfBtn.style.cssText='display:flex;align-items:center;justify-content:center;gap:10px;background:#8B5CF6;color:#fff;border-radius:16px;padding:14px;margin:0 14px 10px;font-size:15px;font-weight:800;cursor:pointer;border:none;width:calc(100% - 28px)';
-    pdfBtn.innerHTML='📥 Télécharger la fiche PDF';
-    const pdfUrlFR='https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/'+a.pdf.replace('{LANG}','FR');
-    const _reset=()=>setTimeout(()=>{pdfBtn.innerHTML='📥 Télécharger la fiche PDF';pdfBtn.disabled=false;},3000);
+    pdfBtn.style.cssText='display:flex;align-items:center;justify-content:center;gap:10px;background:'+bg+';color:#fff;border-radius:16px;padding:14px;margin:0 14px 10px;font-size:15px;font-weight:800;cursor:pointer;border:none;width:calc(100% - 28px)';
+    pdfBtn.innerHTML=label;
+    const _reset=()=>setTimeout(()=>{pdfBtn.innerHTML=label;pdfBtn.disabled=false;},3000);
     pdfBtn.onclick=async()=>{
       pdfBtn.innerHTML='⏳ Téléchargement…';
       pdfBtn.disabled=true;
       // 1) téléchargement dans l'app (langue du profil, puis FR)
-      for(const [url,name] of [[pdfUrl,pdfFileName],[pdfUrlFR,pdfFileName.replace(/_[A-Z]{2}\.pdf$/,'.pdf')]]){
+      for(const url of (lang==='FR'?[pdfUrlFR]:[pdfUrl,pdfUrlFR])){
         try{
           const resp=await fetch(url,{mode:'cors',cache:'no-store'});
           if(!resp.ok) throw new Error('HTTP '+resp.status);
@@ -14586,23 +14591,22 @@ function openAtelierDetail(a){
           if(blob.size<500) throw new Error('fichier vide');
           const blobUrl=URL.createObjectURL(new Blob([blob],{type:'application/pdf'}));
           const a2=document.createElement('a');
-          a2.href=blobUrl;a2.download=name;a2.rel='noopener';
+          a2.href=blobUrl;a2.download=pdfFileName;a2.rel='noopener';
           document.body.appendChild(a2);a2.click();
           setTimeout(()=>{document.body.removeChild(a2);URL.revokeObjectURL(blobUrl);},4000);
-          pdfBtn.innerHTML='✅ Fiche téléchargée !';_reset();
+          pdfBtn.innerHTML='✅ Téléchargé !';_reset();
           return;
         }catch(e){console.warn('[PDF]',url,e&&e.message);}
       }
-      // 2) secours : ouvrir le PDF directement (le navigateur l'affiche ou le télécharge)
-      // (fiches publiées en FR sur R2 : c'est la version sûre)
+      // 2) secours : ouvrir le PDF FR directement
       const lk=document.createElement('a');
       lk.href=pdfUrlFR;lk.target='_blank';lk.rel='noopener';
       document.body.appendChild(lk);lk.click();
       setTimeout(()=>document.body.removeChild(lk),2000);
-      pdfBtn.innerHTML='📄 Fiche ouverte';_reset();
+      pdfBtn.innerHTML='📄 PDF ouvert';_reset();
     };
     c.appendChild(pdfBtn);
-  }
+  });
 
   // ── ZONE BOUTONS ENRICHISSEMENT ─────────────────
   const btnZone=document.createElement('div');
