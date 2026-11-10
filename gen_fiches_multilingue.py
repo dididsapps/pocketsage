@@ -777,6 +777,13 @@ def generate_pdf(fiche, lang, outdir):
         c.save()
         return
 
+    # Fiches avec un visuel dédié
+    _special = {"FI-015": draw_spot_diff_zone, "FI-016": draw_simon_cards_zone,
+                "FI-029": draw_origami_zone, "FI-032": draw_rotation_zone}
+    if fiche["id"] in _special:
+        _special[fiche["id"]](c, y, lang)
+        draw_footer(c, lang); c.save(); return
+
     # FI-033 : cercles de couleur ; FI-035 : objets à mémoriser
     if fiche["id"] == "FI-033":
         draw_color_dots_zone(c, y, lang)
@@ -1233,6 +1240,197 @@ def draw_memory_zone(c, y, zone_text, lang):
         if yy < y - h + 0.6*cm: break
         c.drawString(1.6*cm, yy, q[:95]); yy -= 1.0*cm
     return y - h - 0.3*cm
+
+# ════════════════ VISUELS FI-015 / FI-016 / FI-029 / FI-032 ════════════════
+def _zone_frame(c, y):
+    h = y - 1.8*cm
+    c.setStrokeColor(colors.black); c.setLineWidth(0.8); c.setDash([4, 4])
+    c.roundRect(1*cm, y-h, W-2*cm, h, 10, fill=0, stroke=1); c.setDash([])
+    return h
+
+def _upside(c, x, y, lines, size=7):
+    """Texte à l'envers (correction en bas de page)."""
+    c.saveState(); c.translate(x, y); c.rotate(180)
+    c.setFillColor(HexColor("#777777")); c.setFont("Helvetica", size)
+    for i, l in enumerate(lines):
+        c.drawCentredString(0, -i*(size+2), l)
+    c.restoreState()
+
+def _scene(c, x, y0, w, h, v):
+    """Petite scène N&B. v=0 : image A, v=1 : image B (7 différences)."""
+    X = lambda t: x + t*w
+    Y = lambda t: y0 + t*h
+    c.setStrokeColor(colors.black); c.setLineWidth(1.2); c.setFillColor(colors.white)
+    c.rect(x, y0, w, h, fill=0, stroke=1)
+    c.line(X(0.02), Y(0.18), X(0.98), Y(0.18))                       # sol
+    c.rect(X(0.08), Y(0.18), w*0.40, h*0.36, fill=0, stroke=1)        # maison
+    p = c.beginPath(); p.moveTo(X(0.05), Y(0.54)); p.lineTo(X(0.28), Y(0.76)); p.lineTo(X(0.51), Y(0.54)); p.close()
+    c.drawPath(p, fill=0, stroke=1)                                   # toit
+    c.rect(X(0.38), Y(0.62), w*0.05, h*0.12, fill=0, stroke=1)        # cheminée
+    if v == 0:                                                        # (1) fumée
+        c.circle(X(0.42), Y(0.80), w*0.015); c.circle(X(0.45), Y(0.85), w*0.02)
+    c.rect(X(0.14), Y(0.18), w*0.09, h*0.20, fill=0, stroke=1)        # porte
+    if v == 0:                                                        # (2) poignée
+        c.setFillColor(colors.black); c.circle(X(0.21), Y(0.27), w*0.008, fill=1); c.setFillColor(colors.white)
+    c.rect(X(0.32), Y(0.32), w*0.11, h*0.12, fill=0, stroke=1)        # fenêtre
+    if v == 0:                                                        # (3) croisillon
+        c.line(X(0.375), Y(0.32), X(0.375), Y(0.44)); c.line(X(0.32), Y(0.38), X(0.43), Y(0.38))
+    sx, sy, r = X(0.86), Y(0.86), w*0.05                              # soleil
+    c.circle(sx, sy, r)
+    import math
+    n = 8 if v == 0 else 6                                            # (4) rayons
+    for k in range(n):
+        a = 2*math.pi*k/n
+        c.line(sx+math.cos(a)*r*1.3, sy+math.sin(a)*r*1.3, sx+math.cos(a)*r*1.9, sy+math.sin(a)*r*1.9)
+    c.rect(X(0.68), Y(0.18), w*0.04, h*0.20, fill=0, stroke=1)        # tronc
+    c.circle(X(0.70), Y(0.50), w*0.11)                                # feuillage
+    apples = [(0.66, 0.53), (0.74, 0.47), (0.70, 0.56)] if v == 0 else [(0.66, 0.53), (0.74, 0.47)]
+    for ax, ay in apples:                                             # (5) pommes
+        c.circle(X(ax), Y(ay), w*0.012)
+    if v == 0:                                                        # (6) oiseau
+        p = c.beginPath(); p.moveTo(X(0.55), Y(0.88)); p.lineTo(X(0.58), Y(0.85)); p.lineTo(X(0.61), Y(0.88))
+        c.drawPath(p, fill=0, stroke=1)
+    if v == 0:                                                        # (7) fleur
+        c.line(X(0.90), Y(0.18), X(0.90), Y(0.28))
+        for dx, dy in [(0, 0.03), (0.02, 0), (-0.02, 0), (0, -0.0)]:
+            c.circle(X(0.90+dx*0.6), Y(0.31+dy*0.6), w*0.012)
+
+def draw_spot_diff_zone(c, y, lang):
+    h = _zone_frame(c, y)
+    gap = 0.8*cm
+    w = (W - 3*cm - gap) / 2
+    sh = min(w * 0.85, h - 2.6*cm)
+    top = y - 0.8*cm
+    for i, lab in enumerate(["A", "B"]):
+        x = 1.5*cm + i*(w + gap)
+        c.setFont("Helvetica-Bold", 11); c.setFillColor(colors.black)
+        c.drawCentredString(x + w/2, top - 0.1*cm, lab)
+        _scene(c, x, top - 0.4*cm - sh, w, sh, i)
+    c.setFont("Helvetica-Oblique", 9); c.setFillColor(HexColor("#555555"))
+    c.drawString(1.5*cm, top - 0.4*cm - sh - 0.7*cm, "Mon temps : ____ min ____ s        Differences trouvees : ___ / 7")
+    _upside(c, W/2, y - h + 1.0*cm, [
+        "Correction : 1) fumee de la cheminee  2) poignee de porte  3) croisillon de la fenetre  4) rayons du soleil (8/6)",
+        "5) pommes dans l'arbre (3/2)  6) oiseau  7) fleur"])
+
+def draw_simon_cards_zone(c, y, lang):
+    h = _zone_frame(c, y)
+    cards = [("#E63946", "ROUGE"), ("#1D70B8", "BLEU"), ("#2A9D41", "VERT"), ("#F2C200", "JAUNE")]
+    cols, rows = 4, 4
+    cw = (W - 3*cm) / cols
+    ch = min(2.5*cm, (h - 1.6*cm) / rows)
+    top = y - 0.6*cm
+    for r in range(rows):
+        for k in range(cols):
+            col, name = cards[k]
+            x = 1.5*cm + k*cw; yy = top - (r+1)*ch
+            c.setFillColor(HexColor(col)); c.rect(x+0.15*cm, yy+0.15*cm, cw-0.3*cm, ch-0.3*cm, fill=1, stroke=0)
+            c.setFillColor(colors.white if name != "JAUNE" else colors.black)
+            c.setFont("Helvetica-Bold", 13); c.drawCentredString(x + cw/2, yy + ch/2 - 0.2*cm, name)
+    c.setStrokeColor(HexColor("#777777")); c.setLineWidth(0.6); c.setDash([3, 3])
+    for k in range(cols+1):
+        c.line(1.5*cm + k*cw, top, 1.5*cm + k*cw, top - rows*ch)
+    for r in range(rows+1):
+        c.line(1.5*cm, top - r*ch, 1.5*cm + cols*cw, top - r*ch)
+    c.setDash([])
+    c.setFillColor(HexColor("#555555")); c.setFont("Helvetica-Oblique", 9)
+    c.drawString(1.5*cm, top + 0.12*cm, "Decoupe en suivant les pointilles (16 cartes).")
+    c.drawString(1.5*cm, top - rows*ch - 0.6*cm, "Record : ____ couleurs memorisees d'affilee")
+
+def draw_origami_zone(c, y, lang):
+    h = _zone_frame(c, y)
+    side = min(8.5*cm, h - 2.0*cm)
+    x0, top = 1.6*cm, y - 0.9*cm
+    c.setFont("Helvetica-Bold", 10); c.setFillColor(colors.black)
+    c.drawString(x0, top + 0.15*cm, "Carre pret a plier (grue, base preliminaire)")
+    by = top - side
+    c.setStrokeColor(colors.black); c.setLineWidth(1.6); c.setDash([1, 2])
+    c.rect(x0, by, side, side, fill=0, stroke=1)                     # trait de découpe (pointillés fins)
+    c.setDash([]); c.setLineWidth(1)
+    c.setDash([5, 3])                                                 # vallées : diagonales
+    c.line(x0, by, x0+side, by+side); c.line(x0, by+side, x0+side, by)
+    c.setDash([7, 2, 1, 2])                                           # montagnes : médianes
+    c.line(x0+side/2, by, x0+side/2, by+side); c.line(x0, by+side/2, x0+side, by+side/2)
+    c.setDash([])
+    lx = x0 + side + 0.9*cm; ly = top
+    c.setFont("Helvetica-Bold", 10); c.drawString(lx, ly, "Legende")
+    c.setLineWidth(1.2)
+    c.setLineWidth(1.6); c.setDash([1, 2]); c.line(lx, ly-0.7*cm, lx+1.4*cm, ly-0.7*cm); c.setLineWidth(1.2)
+    c.setDash([5, 3]); c.line(lx, ly-1.4*cm, lx+1.4*cm, ly-1.4*cm)
+    c.setDash([7, 2, 1, 2]); c.line(lx, ly-2.1*cm, lx+1.4*cm, ly-2.1*cm); c.setDash([])
+    c.setFont("Helvetica", 9)
+    c.drawString(lx+1.7*cm, ly-0.78*cm, "decouper le carre")
+    c.drawString(lx+1.7*cm, ly-1.48*cm, "pli vallee : plier vers toi")
+    c.drawString(lx+1.7*cm, ly-2.18*cm, "pli montagne : plier vers l'arriere")
+    tips = ["Marque bien chaque pli avec l'ongle,",
+            "puis rabats les 4 coins vers le bas :",
+            "tu obtiens la base preliminaire,",
+            "point de depart de la grue.",
+            "",
+            "Pas de carre ? Plie un coin d'une feuille A4",
+            "sur le bord oppose et coupe la bande."]
+    for i, t in enumerate(tips):
+        c.drawString(lx, ly-3.0*cm - i*0.45*cm, t)
+    ry = by - 0.8*cm
+    c.setFont("Helvetica-Oblique", 9); c.setFillColor(HexColor("#555555"))
+    c.drawString(x0, ry, "Records :  grenouille ____ cm   |   bateau ____ min a flot   |   grue en ____ min")
+
+# — Rotation mentale —
+_SHAPES = {"L": [(0,0),(1,0),(2,0),(2,1)], "F": [(1,0),(1,1),(0,1),(1,2),(2,2)],
+           "P": [(0,0),(1,0),(0,1),(1,1),(0,2)], "N": [(0,0),(0,1),(1,1),(1,2),(1,3)]}
+def _norm(cells):
+    mx = min(a for a, b in cells); my = min(b for a, b in cells)
+    return tuple(sorted((a-mx, b-my) for a, b in cells))
+def _rot(cells, k):          # k quarts de tour dans le sens des aiguilles d'une montre
+    for _ in range(k % 4):
+        cells = [(b, -a) for a, b in cells]
+    return _norm(cells)
+def _mir(cells):
+    return _norm([(-a, b) for a, b in cells])
+
+def _draw_poly(c, cells, x, y, s, fill="#BBBBBB"):
+    for a, b in cells:
+        c.setFillColor(HexColor(fill)); c.setStrokeColor(colors.black); c.setLineWidth(0.8)
+        c.rect(x + a*s, y + b*s, s, s, fill=1, stroke=1)
+
+def draw_rotation_zone(c, y, lang):
+    import random as _r
+    h = _zone_frame(c, y)
+    tasks = [("L", 1, "90 deg"), ("F", 2, "180 deg"), ("N", 3, "90 deg (sens inverse)"), ("P", 1, "90 deg")]
+    rnd = _r.Random(32)
+    rows = len(tasks)
+    row_h = (h - 2.6*cm) / rows
+    s = min(0.42*cm, (row_h - 0.7*cm) / 4)
+    top = y - 0.5*cm
+    answers = []
+    for i, (name, k, lab) in enumerate(tasks):
+        base = _norm(_SHAPES[name])
+        good = _rot(base, k)
+        opts = [good, _mir(good), _rot(_mir(base), (k+1) % 4)]
+        alt = _rot(base, k+1)
+        if alt == good: alt = _rot(base, k+2)
+        opts.append(alt)
+        uniq = []
+        for o in opts:
+            if o not in uniq: uniq.append(o)
+        while len(uniq) < 4:
+            uniq.append(_rot(_mir(base), len(uniq)))
+        opts = uniq[:4]; rnd.shuffle(opts)
+        answers.append("ABCD"[opts.index(good)])
+        ry = top - (i+1)*row_h + 0.35*cm
+        c.setFillColor(colors.black); c.setFont("Helvetica-Bold", 9)
+        c.drawString(1.4*cm, ry + 4*s + 0.05*cm, f"{i+1})  tourne de {lab}")
+        _draw_poly(c, base, 1.6*cm, ry, s, "#888888")
+        c.setFont("Helvetica-Bold", 14); c.drawString(1.6*cm + 4.6*s, ry + 1.4*s, "->")
+        ox = 1.6*cm + 4.6*s + 1.2*cm
+        slot = (W - 1.5*cm - ox) / 4
+        for j, o in enumerate(opts):
+            c.setFont("Helvetica-Bold", 10); c.setFillColor(colors.black)
+            c.drawString(ox + j*slot, ry + 1.6*s, "ABCD"[j] + ")")
+            _draw_poly(c, o, ox + j*slot + 0.7*cm, ry, s, "#DDDDDD")
+    c.setFont("Helvetica-Oblique", 9); c.setFillColor(HexColor("#555555"))
+    c.drawString(1.5*cm, y - h + 1.5*cm, "Mes reponses : 1) ___   2) ___   3) ___   4) ___   (sans tourner la feuille !)")
+    _upside(c, W/2, y - h + 0.7*cm, ["Correction : " + "   ".join(f"{i+1}) {a}" for i, a in enumerate(answers))])
+
 
 def draw_maze_zone(c, y, lang):
     """FI-007 : 3 labyrinthes algorithmiques (Recursive Backtracker), côte à côte."""
