@@ -1,0 +1,72 @@
+name: Dialogues Sensei — vérification + MP3
+
+# Se lance quand un scénario data/dialogues/*.json est modifié sur main.
+# Vérifie les scénarios, génère les MP3 des nouvelles répliques de Sensei (R2),
+# puis recommite data/dialogues/*.audio.json (table texte → fichier utilisée par l'app).
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/dialogues/**"
+      - "gen_dialogues_mp3.py"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dialogues-tts
+  cancel-in-progress: false
+
+jobs:
+  flash:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Dépendances
+        run: pip install requests boto3
+
+      - name: Vérifier les secrets
+        id: chk
+        env:
+          GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+          R2_ACCESS_KEY: ${{ secrets.R2_ACCESS_KEY }}
+          R2_SECRET_KEY: ${{ secrets.R2_SECRET_KEY }}
+        run: |
+          if [ -z "$GOOGLE_TTS_API_KEY" ] || [ -z "$R2_ACCESS_KEY" ] || [ -z "$R2_SECRET_KEY" ]; then
+            echo "::warning::Secrets GOOGLE_TTS_API_KEY / R2_ACCESS_KEY / R2_SECRET_KEY absents — étape ignorée. Voir docs/flash/03_procedures_mp3_traductions.md"
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Vérification + MP3 Sensei + upload R2
+        if: steps.chk.outputs.ok == 'true'
+        env:
+          GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          R2_ACCESS_KEY: ${{ secrets.R2_ACCESS_KEY }}
+          R2_SECRET_KEY: ${{ secrets.R2_SECRET_KEY }}
+        run: python3 gen_dialogues_mp3.py
+
+      - name: Recommiter le manifest
+        # Même en cas d'erreur partielle, on garde ce qui a été fait (le manifest évite de refaire).
+        if: always() && steps.chk.outputs.ok == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add data/dialogues/ || true
+          if git diff --cached --quiet; then
+            echo "Rien à commiter"
+          else
+            # Pas de [skip ci] : Cloudflare Pages doit redéployer avec les traductions.
+            git commit -m "chore(dialogues): MP3 Sensei auto"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

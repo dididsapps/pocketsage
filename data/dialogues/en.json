@@ -1,0 +1,1346 @@
+{
+ "version": 1,
+ "lang": "EN",
+ "stt": "en-GB",
+ "fillers": [
+  "Mm-hmm!",
+  "Oh!",
+  "Okay!",
+  "Ah!"
+ ],
+ "global": {
+  "retry": [
+   "Sorry? Can you say that again?",
+   "Hmm, I didn't catch that. One more time?",
+   "Pardon? Say it again, please!"
+  ],
+  "silence": [
+   "I can't hear you. Speak a little louder!",
+   "Are you there? Talk to me!"
+  ],
+  "move_on": [
+   "Good try! Let's continue.",
+   "Well done for trying! Let's go on."
+  ],
+  "dontknow": [
+   "That's okay! Let me help you."
+  ],
+  "repeat_keys": [
+   "again",
+   "repeat",
+   "what",
+   "pardon",
+   "sorry",
+   "encore",
+   "répète"
+  ],
+  "dontknow_keys": [
+   "i don't know",
+   "i dont know",
+   "dont know",
+   "no idea",
+   "je sais pas",
+   "je ne sais pas",
+   "sais pas"
+  ],
+  "french_keys": [
+   "french",
+   "français",
+   "francais",
+   "comprends pas",
+   "je comprends pas",
+   "pas compris"
+  ]
+ },
+ "scenarios": [
+  {
+   "id": "EN-D01",
+   "emoji": "👋",
+   "titre": "Bonjour Sensei !",
+   "desc": "Se présenter, dire comment on va, sa couleur et son animal préférés.",
+   "age_min": 4,
+   "age_max": 8,
+   "petits": true,
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "say": [
+      "Hello! I'm Sensei. What's your name?",
+      "Hi there! I'm Sensei. What's your name?"
+     ],
+     "fr": "Bonjour ! Je suis Sensei. Comment tu t'appelles ?",
+     "choices": [
+      "My name is {name}"
+     ],
+     "any": {
+      "reply": [
+       "Nice to meet you!",
+       "What a lovely name! Nice to meet you."
+      ],
+      "next": "n2"
+     },
+     "help": "You can say: My name is... and your name.",
+     "open": true
+    },
+    "n2": {
+     "say": [
+      "How are you today?",
+      "So, how are you today?"
+     ],
+     "fr": "Comment vas-tu aujourd'hui ?",
+     "choices": [
+      "I'm fine",
+      "I'm happy",
+      "I'm tired"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "tired",
+        "sleepy"
+       ],
+       "reply": [
+        "Oh, you're tired. Let's have fun, it will wake you up!"
+       ],
+       "next": "n3"
+      },
+      {
+       "keys": [
+        "sad",
+        "bad",
+        "not good",
+        "not well",
+        "not great"
+       ],
+       "reply": [
+        "Oh no! Don't worry, I'm here. Let's play together!"
+       ],
+       "next": "n3"
+      },
+      {
+       "keys": [
+        "hungry"
+       ],
+       "reply": [
+        "Hungry? Me too! We can eat after our chat."
+       ],
+       "next": "n3"
+      },
+      {
+       "keys": [
+        "fine",
+        "good",
+        "great",
+        "okay",
+        "ok",
+        "well",
+        "happy",
+        "super",
+        "very good"
+       ],
+       "reply": [
+        "Great! I'm happy too!",
+        "Wonderful! Me too, I feel great."
+       ],
+       "next": "n3"
+      }
+     ],
+     "help": "You can say: I'm fine, thank you!"
+    },
+    "n3": {
+     "say": [
+      "What's your favourite colour?",
+      "Tell me, what's your favourite colour?"
+     ],
+     "fr": "Quelle est ta couleur préférée ?",
+     "choices": [
+      "Blue",
+      "Red",
+      "Green",
+      "Yellow",
+      "Pink",
+      "Purple"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "blue"
+       ],
+       "reply": [
+        "Blue! Like the sky and the sea. I love blue!"
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "red"
+       ],
+       "reply": [
+        "Red! Like a strawberry. Yummy!"
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "green"
+       ],
+       "reply": [
+        "Green! Like the trees in my garden."
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "yellow"
+       ],
+       "reply": [
+        "Yellow! Like the sun. So bright!"
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "pink"
+       ],
+       "reply": [
+        "Pink! Like a flamingo. Beautiful!"
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "purple"
+       ],
+       "reply": [
+        "Purple! Like a magic wizard!"
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "orange"
+       ],
+       "reply": [
+        "Orange! Like an orange. Ha ha!"
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "black"
+       ],
+       "reply": [
+        "Black! Like the night sky with stars."
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "white"
+       ],
+       "reply": [
+        "White! Like snow in winter."
+       ],
+       "next": "n4"
+      }
+     ],
+     "any": {
+      "reply": [
+       "Oh, what a nice colour!"
+      ],
+      "next": "n4"
+     },
+     "help": "You can say: My favourite colour is blue."
+    },
+    "n4": {
+     "say": [
+      "Do you have a pet?",
+      "Do you have an animal at home?"
+     ],
+     "fr": "As-tu un animal à la maison ?",
+     "choices": [
+      "Yes, a dog",
+      "Yes, a cat",
+      "No"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "dog",
+        "puppy"
+       ],
+       "reply": [
+        "A dog! Woof woof! Dogs are great friends."
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "cat",
+        "kitten"
+       ],
+       "reply": [
+        "A cat! Meow! Cats are so soft."
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "fish"
+       ],
+       "reply": [
+        "A fish! Blub blub blub!"
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "rabbit",
+        "bunny"
+       ],
+       "reply": [
+        "A rabbit! Hop hop hop!"
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "bird",
+        "parrot"
+       ],
+       "reply": [
+        "A bird! Tweet tweet!"
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "hamster",
+        "guinea pig",
+        "mouse"
+       ],
+       "reply": [
+        "So small and cute!"
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "horse",
+        "pony"
+       ],
+       "reply": [
+        "A horse! Wow, you're lucky!"
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "no",
+        "not",
+        "don't"
+       ],
+       "reply": [
+        "No pet? That's okay. I have a little turtle!"
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "yes",
+        "yeah"
+       ],
+       "reply": [
+        "Cool! I have a little turtle."
+       ],
+       "next": "n5"
+      }
+     ],
+     "help": "You can say: Yes, I have a dog. Or: No, I don't."
+    },
+    "n5": {
+     "say": [
+      "I had so much fun with you! Can you say goodbye?"
+     ],
+     "fr": "Je me suis bien amusé avec toi ! Tu peux dire au revoir ?",
+     "choices": [
+      "Goodbye!",
+      "Bye bye!"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "bye",
+        "goodbye",
+        "see you"
+       ],
+       "reply": [
+        "Goodbye! See you soon, my friend!"
+       ],
+       "end": true
+      }
+     ],
+     "any": {
+      "reply": [
+       "Goodbye! See you soon, my friend!"
+      ],
+      "end": true
+     },
+     "help": "You can say: Goodbye, Sensei!"
+    }
+   }
+  },
+  {
+   "id": "EN-D02",
+   "emoji": "🍪",
+   "titre": "L'heure du goûter",
+   "desc": "Dire si on a faim, choisir à manger et à boire, dire merci.",
+   "age_min": 5,
+   "age_max": 10,
+   "petits": true,
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "say": [
+      "Hello again! It's snack time. Are you hungry?"
+     ],
+     "fr": "Rebonjour ! C'est l'heure du goûter. As-tu faim ?",
+     "choices": [
+      "Yes!",
+      "No"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "no",
+        "not"
+       ],
+       "reply": [
+        "Not hungry? Maybe just a drink then!"
+       ],
+       "next": "n3"
+      },
+      {
+       "keys": [
+        "yes",
+        "yeah",
+        "hungry",
+        "very"
+       ],
+       "reply": [
+        "Me too! Let's look in the kitchen."
+       ],
+       "next": "n2"
+      }
+     ],
+     "help": "You can say: Yes, I'm hungry!"
+    },
+    "n2": {
+     "say": [
+      "I have apples, bananas, cookies and sandwiches. What would you like?"
+     ],
+     "fr": "J'ai des pommes, des bananes, des biscuits et des sandwichs. Qu'est-ce que tu voudrais ?",
+     "choices": [
+      "An apple, please",
+      "A banana, please",
+      "A cookie, please",
+      "A sandwich, please"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "apple"
+       ],
+       "reply": [
+        "An apple! Crunchy and healthy. Here you are!"
+       ],
+       "next": "n3"
+      },
+      {
+       "keys": [
+        "banana"
+       ],
+       "reply": [
+        "A banana! Monkeys love bananas. Here you are!"
+       ],
+       "next": "n3"
+      },
+      {
+       "keys": [
+        "cookie",
+        "biscuit"
+       ],
+       "reply": [
+        "A cookie! Mmm, chocolate. Here you are!"
+       ],
+       "next": "n3"
+      },
+      {
+       "keys": [
+        "sandwich"
+       ],
+       "reply": [
+        "A sandwich with cheese. Here you are!"
+       ],
+       "next": "n3"
+      }
+     ],
+     "any": {
+      "reply": [
+       "Hmm, I don't have that. How about an apple? Here you are!"
+      ],
+      "next": "n3"
+     },
+     "help": "You can say: An apple, please."
+    },
+    "n3": {
+     "say": [
+      "And to drink: water, milk or orange juice?"
+     ],
+     "fr": "Et à boire : de l'eau, du lait ou du jus d'orange ?",
+     "choices": [
+      "Water, please",
+      "Milk, please",
+      "Orange juice, please"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "water"
+       ],
+       "reply": [
+        "Water! Very good for you."
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "milk"
+       ],
+       "reply": [
+        "Milk! Good for your bones."
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "juice",
+        "orange"
+       ],
+       "reply": [
+        "Orange juice! Full of vitamins."
+       ],
+       "next": "n4"
+      }
+     ],
+     "any": {
+      "reply": [
+       "Let's have some water then!"
+      ],
+      "next": "n4"
+     },
+     "help": "You can say: Water, please."
+    },
+    "n4": {
+     "say": [
+      "Here you are! What do you say?"
+     ],
+     "fr": "Voilà ! Qu'est-ce qu'on dit ?",
+     "choices": [
+      "Thank you!"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "thank",
+        "thanks"
+       ],
+       "reply": [
+        "You're welcome! You're very polite."
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "please"
+       ],
+       "reply": [
+        "Ha ha, now we say thank you! But well done."
+       ],
+       "next": "n5"
+      }
+     ],
+     "help": "You can say: Thank you, Sensei!"
+    },
+    "n5": {
+     "say": [
+      "Yummy! Is it good?"
+     ],
+     "fr": "Miam ! C'est bon ?",
+     "choices": [
+      "Yes, it's delicious!",
+      "No"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "no",
+        "not",
+        "yuck"
+       ],
+       "reply": [
+        "Oh no! Next time I'll make something better."
+       ],
+       "end": true
+      },
+      {
+       "keys": [
+        "yes",
+        "delicious",
+        "good",
+        "yummy",
+        "great",
+        "love"
+       ],
+       "reply": [
+        "I'm so glad! Enjoy your snack!"
+       ],
+       "end": true
+      }
+     ],
+     "any": {
+      "reply": [
+       "Enjoy your snack!"
+      ],
+      "end": true
+     },
+     "help": "You can say: Yes, it's delicious!"
+    }
+   }
+  },
+  {
+   "id": "EN-D03",
+   "emoji": "⚽",
+   "titre": "Mon week-end",
+   "desc": "Raconter son week-end, parler de ses loisirs et de l'école.",
+   "age_min": 9,
+   "age_max": 15,
+   "petits": false,
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "say": [
+      "Hi! How was your weekend?",
+      "Hey! So, how was your weekend?"
+     ],
+     "fr": "Salut ! Comment s'est passé ton week-end ?",
+     "choices": [
+      "It was great!",
+      "It was okay.",
+      "It was boring."
+     ],
+     "intents": [
+      {
+       "keys": [
+        "boring",
+        "bad",
+        "not good",
+        "not great",
+        "terrible"
+       ],
+       "reply": [
+        "Oh, I'm sorry. Next weekend will be better!"
+       ],
+       "next": "n2"
+      },
+      {
+       "keys": [
+        "good",
+        "great",
+        "fun",
+        "nice",
+        "amazing",
+        "cool",
+        "awesome",
+        "fine",
+        "okay",
+        "ok"
+       ],
+       "reply": [
+        "Great to hear!",
+        "Cool!"
+       ],
+       "next": "n2"
+      }
+     ],
+     "any": {
+      "reply": [
+       "I see!"
+      ],
+      "next": "n2"
+     },
+     "help": "You can say: It was great, thanks!",
+     "open": true
+    },
+    "n2": {
+     "say": [
+      "What did you do?",
+      "So, what did you do?"
+     ],
+     "fr": "Qu'est-ce que tu as fait ?",
+     "choices": [
+      "I played football",
+      "I visited my grandparents",
+      "I watched a film",
+      "I stayed at home"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "football",
+        "soccer",
+        "basketball",
+        "tennis",
+        "rugby",
+        "swimming",
+        "swam",
+        "sport",
+        "bike",
+        "cycling",
+        "danced",
+        "dance",
+        "ran",
+        "running"
+       ],
+       "reply": [
+        "Sport! That's great for your body and your brain."
+       ],
+       "next": "n3s"
+      },
+      {
+       "keys": [
+        "grandparents",
+        "grandma",
+        "granny",
+        "grandpa",
+        "family",
+        "cousin",
+        "cousins",
+        "aunt",
+        "uncle",
+        "visited"
+       ],
+       "reply": [
+        "Family time is precious!"
+       ],
+       "next": "n3f"
+      },
+      {
+       "keys": [
+        "film",
+        "movie",
+        "cinema",
+        "tv",
+        "television",
+        "series",
+        "video games",
+        "games",
+        "console"
+       ],
+       "reply": [
+        "Nice! A bit of rest is important too."
+       ],
+       "next": "n3m"
+      },
+      {
+       "keys": [
+        "nothing",
+        "stayed",
+        "home",
+        "slept",
+        "relaxed",
+        "rested"
+       ],
+       "reply": [
+        "A quiet weekend is nice sometimes."
+       ],
+       "next": "n4"
+      }
+     ],
+     "any": {
+      "reply": [
+       "Sounds interesting!"
+      ],
+      "next": "n4"
+     },
+     "help": "You can say: I played football with my friends.",
+     "open": true
+    },
+    "n3s": {
+     "say": [
+      "Do you play in a team?"
+     ],
+     "fr": "Tu joues dans une équipe ?",
+     "choices": [
+      "Yes, I do",
+      "No, I don't"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "no",
+        "not",
+        "don't"
+       ],
+       "reply": [
+        "Playing just for fun is great too."
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "yes",
+        "yeah",
+        "team",
+        "club",
+        "do"
+       ],
+       "reply": [
+        "A team! Teamwork makes you stronger."
+       ],
+       "next": "n4"
+      }
+     ],
+     "help": "You can say: Yes, I do. Or: No, I don't."
+    },
+    "n3f": {
+     "say": [
+      "What did you do with them?"
+     ],
+     "fr": "Qu'avez-vous fait ensemble ?",
+     "choices": [
+      "We had lunch together",
+      "We went for a walk",
+      "We played games"
+     ],
+     "any": {
+      "reply": [
+       "That sounds lovely!",
+       "How nice!"
+      ],
+      "next": "n4"
+     },
+     "help": "You can say: We had lunch together.",
+     "open": true
+    },
+    "n3m": {
+     "say": [
+      "Was it good?"
+     ],
+     "fr": "C'était bien ?",
+     "choices": [
+      "Yes, it was great!",
+      "No, it was boring."
+     ],
+     "intents": [
+      {
+       "keys": [
+        "no",
+        "not",
+        "boring",
+        "bad"
+       ],
+       "reply": [
+        "Oh, too bad. Next time, a better one!"
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "yes",
+        "good",
+        "great",
+        "funny",
+        "cool",
+        "amazing",
+        "awesome"
+       ],
+       "reply": [
+        "I'd like to see it too!"
+       ],
+       "next": "n4"
+      }
+     ],
+     "any": {
+      "reply": [
+       "Interesting!"
+      ],
+      "next": "n4"
+     },
+     "help": "You can say: Yes, it was great!"
+    },
+    "n4": {
+     "say": [
+      "And school? What's your favourite subject?"
+     ],
+     "fr": "Et l'école ? Quelle est ta matière préférée ?",
+     "choices": [
+      "Maths",
+      "English",
+      "Sport",
+      "Art",
+      "Science",
+      "History"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "maths",
+        "math",
+        "mathematics"
+       ],
+       "reply": [
+        "Maths! Numbers are like puzzles."
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "english"
+       ],
+       "reply": [
+        "English! That's why we're talking!"
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "sport",
+        "pe",
+        "p.e"
+       ],
+       "reply": [
+        "Sport! You like moving."
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "art",
+        "drawing"
+       ],
+       "reply": [
+        "Art! You're creative."
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "science",
+        "biology",
+        "physics",
+        "chemistry"
+       ],
+       "reply": [
+        "Science! You ask big questions."
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "history"
+       ],
+       "reply": [
+        "History! Amazing stories from the past."
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "music"
+       ],
+       "reply": [
+        "Music! Do you play an instrument? Cool!"
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "geography"
+       ],
+       "reply": [
+        "Geography! You love the world."
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "french"
+       ],
+       "reply": [
+        "French! Your own language. Very important!"
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "break",
+        "lunch",
+        "recess"
+       ],
+       "reply": [
+        "Ha ha! Break time is everyone's favourite!"
+       ],
+       "next": "n5"
+      }
+     ],
+     "any": {
+      "reply": [
+       "Good choice!"
+      ],
+      "next": "n5"
+     },
+     "help": "You can say: My favourite subject is maths."
+    },
+    "n5": {
+     "say": [
+      "It was great chatting with you. Have a nice week!"
+     ],
+     "fr": "C'était super de discuter avec toi. Bonne semaine !",
+     "choices": [
+      "Thanks, you too!",
+      "Bye!"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "thank",
+        "thanks",
+        "you too",
+        "bye",
+        "goodbye",
+        "see you"
+       ],
+       "reply": [
+        "Thank you! See you soon!"
+       ],
+       "end": true
+      }
+     ],
+     "any": {
+      "reply": [
+       "See you soon!"
+      ],
+      "end": true
+     },
+     "help": "You can say: Thanks, you too!"
+    }
+   }
+  },
+  {
+   "id": "EN-D04",
+   "emoji": "☕",
+   "titre": "Au café à Londres",
+   "desc": "Commander une boisson et un en-cas, choisir la taille, payer.",
+   "age_min": 11,
+   "age_max": 99,
+   "petits": false,
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "say": [
+      "Good morning! Welcome to the Sensei Café. What can I get you?"
+     ],
+     "fr": "Bonjour ! Bienvenue au Café Sensei. Qu'est-ce que je vous sers ?",
+     "choices": [
+      "A hot chocolate, please",
+      "A tea, please",
+      "An orange juice, please"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "chocolate"
+       ],
+       "reply": [
+        "One hot chocolate, lovely."
+       ],
+       "next": "n2"
+      },
+      {
+       "keys": [
+        "tea"
+       ],
+       "reply": [
+        "A cup of tea, very British!"
+       ],
+       "next": "n2"
+      },
+      {
+       "keys": [
+        "coffee",
+        "latte",
+        "cappuccino"
+       ],
+       "reply": [
+        "A coffee, good choice."
+       ],
+       "next": "n2"
+      },
+      {
+       "keys": [
+        "juice",
+        "orange"
+       ],
+       "reply": [
+        "Fresh orange juice, perfect."
+       ],
+       "next": "n2"
+      },
+      {
+       "keys": [
+        "water"
+       ],
+       "reply": [
+        "A bottle of water, sure."
+       ],
+       "next": "n3"
+      }
+     ],
+     "any": {
+      "reply": [
+       "Sorry, we don't have that today. Let's say a hot chocolate!"
+      ],
+      "next": "n2"
+     },
+     "help": "You can say: A hot chocolate, please."
+    },
+    "n2": {
+     "say": [
+      "Small, medium or large?"
+     ],
+     "fr": "Petit, moyen ou grand ?",
+     "choices": [
+      "Small, please",
+      "Medium, please",
+      "Large, please"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "small"
+       ],
+       "reply": [
+        "Small, okay."
+       ],
+       "next": "n3"
+      },
+      {
+       "keys": [
+        "medium",
+        "regular"
+       ],
+       "reply": [
+        "Medium, okay."
+       ],
+       "next": "n3"
+      },
+      {
+       "keys": [
+        "large",
+        "big"
+       ],
+       "reply": [
+        "Large! You must be thirsty."
+       ],
+       "next": "n3"
+      }
+     ],
+     "help": "You can say: Medium, please."
+    },
+    "n3": {
+     "say": [
+      "Would you like anything to eat?"
+     ],
+     "fr": "Voulez-vous quelque chose à manger ?",
+     "choices": [
+      "Yes, a muffin, please",
+      "Yes, a croissant, please",
+      "No, thank you"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "muffin"
+       ],
+       "reply": [
+        "A blueberry muffin, delicious."
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "croissant"
+       ],
+       "reply": [
+        "A croissant, very French!"
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "sandwich",
+        "bagel"
+       ],
+       "reply": [
+        "Of course, freshly made."
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "cake",
+        "brownie",
+        "cookie"
+       ],
+       "reply": [
+        "Good choice, it's homemade."
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "no",
+        "nothing",
+        "that's all",
+        "that's it"
+       ],
+       "reply": [
+        "No problem."
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "yes",
+        "yeah"
+       ],
+       "reply": [
+        "Great, I'll give you our best muffin."
+       ],
+       "next": "n4"
+      }
+     ],
+     "help": "You can say: Yes, a muffin, please. Or: No, thank you."
+    },
+    "n4": {
+     "say": [
+      "Is it to eat in or to take away?"
+     ],
+     "fr": "C'est sur place ou à emporter ?",
+     "choices": [
+      "To eat in, please",
+      "To take away, please"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "take away",
+        "takeaway",
+        "to go",
+        "take"
+       ],
+       "reply": [
+        "I'll put it in a bag for you."
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "eat in",
+        "here",
+        "stay",
+        "inside",
+        "in"
+       ],
+       "reply": [
+        "Find a nice table, I'll bring it to you."
+       ],
+       "next": "n5"
+      }
+     ],
+     "help": "You can say: To eat in, please."
+    },
+    "n5": {
+     "say": [
+      "That's five pounds fifty, please. Cash or card?"
+     ],
+     "fr": "Ça fait cinq livres cinquante, s'il vous plaît. Espèces ou carte ?",
+     "choices": [
+      "Card, please",
+      "Cash"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "card",
+        "contactless",
+        "phone"
+       ],
+       "reply": [
+        "Just tap your card here. Thank you!"
+       ],
+       "next": "n6"
+      },
+      {
+       "keys": [
+        "cash",
+        "coins",
+        "money",
+        "note"
+       ],
+       "reply": [
+        "Thank you! And here is your change."
+       ],
+       "next": "n6"
+      }
+     ],
+     "help": "You can say: By card, please."
+    },
+    "n6": {
+     "say": [
+      "Here you are. Have a lovely day!"
+     ],
+     "fr": "Voilà. Bonne journée !",
+     "choices": [
+      "Thank you, you too!",
+      "Thanks, bye!"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "thank",
+        "thanks",
+        "you too",
+        "bye",
+        "goodbye",
+        "cheers"
+       ],
+       "reply": [
+        "Thank you! Come back soon to the Sensei Café!"
+       ],
+       "end": true
+      }
+     ],
+     "any": {
+      "reply": [
+       "Come back soon to the Sensei Café!"
+      ],
+      "end": true
+     },
+     "help": "You can say: Thank you, you too!"
+    }
+   }
+  }
+ ]
+}

@@ -12570,6 +12570,7 @@ function renderLangModeSelector(){
   const modes=[
     {k:'vocab',  l:'📚 Vocabulaire'},
     {k:'prono',  l:'🎤 Prononciation'},
+    {k:'dialogue',l:'💬 Parler avec Sensei'},
   ];
   modes.forEach(m=>{
     const b=document.createElement('button');
@@ -12580,6 +12581,8 @@ function renderLangModeSelector(){
       APP.langMode=m.k;
       el.querySelectorAll('.ltab').forEach(x=>x.classList.remove('on'));
       b.classList.add('on');
+      if(typeof _dlgStop==='function'&&m.k!=='dialogue')_dlgStop();
+      if(m.k==='dialogue'){openDialogueHome();return;}
       if(m.k==='vocab'){
         // Remettre les boutons de niveau
         renderLangNiveauBtns('all');
@@ -13162,6 +13165,295 @@ function getActivePronoLangs(){
   const all=['EN','ES','DE'];
   const active=(p&&p.langs&&p.langs.length)?p.langs.filter(l=>all.includes(l)):all;
   return active.filter(l=>DATA.prononciation[l]&&DATA.prononciation[l].length);
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+// 💬 DIALOGUE AVEC SENSEI — conversation prédictive (répliques pré-enregistrées)
+// Contenu : data/dialogues/{lang}.json · MP3 : data/dialogues/{lang}.audio.json (auto)
+// Principe : chaque question de Sensei anticipe les réponses probables (intents),
+// avec une réaction enregistrée pour chacune. Relance → aide → on continue : jamais bloqué.
+// Voir docs/langues/dialogue_sensei.md
+// ════════════════════════════════════════════════════════════════════════════
+const _DLG={data:null,audio:{},lang:'EN',sc:null,node:null,miss:0,stars:0,turns:0,last:{},busy:false,src:null,listening:null};
+const _DLG_GIF={talk:'avatars/Sensei_heureux.gif',listen:'avatars/Sensei_reflexion-main-au-menton.gif',bravo:'avatars/Sensei_bravo.gif',oops:'avatars/Sensei_desole-main-au-front.gif',idle:'avatars/Sensei_neutre.gif'};
+
+async function _dlgLoad(lang){
+  const l=lang.toLowerCase();
+  if(_DLG.data&&_DLG.lang===lang)return true;
+  try{
+    const [d,a]=await Promise.all([
+      fetch('data/dialogues/'+l+'.json').then(r=>r.ok?r.json():null),
+      fetch('data/dialogues/'+l+'.audio.json').then(r=>r.ok?r.json():{}).catch(()=>({}))
+    ]);
+    if(!d)return false;
+    _DLG.data=d;_DLG.audio=a||{};_DLG.lang=lang;return true;
+  }catch(e){return false;}
+}
+
+// Choisir une variante différente de la précédente (évite l'effet robot)
+function _dlgPick(arr,key){
+  if(!arr||!arr.length)return '';
+  if(arr.length===1)return arr[0];
+  let i=Math.floor(Math.random()*arr.length);
+  if(_DLG.last[key]===i)i=(i+1)%arr.length;
+  _DLG.last[key]=i;return arr[i];
+}
+
+function _dlgStopAudio(){try{_DLG.src&&_DLG.src.stop();}catch(e){}_DLG.src=null;try{window.speechSynthesis&&speechSynthesis.cancel();}catch(e){}}
+
+// Jouer une réplique de Sensei (MP3 si dispo, sinon voix du téléphone dans la bonne langue)
+function _dlgSpeak(text){
+  return new Promise(res=>{
+    _dlgStopAudio();
+    if(APP&&APP.silent){setTimeout(res,600+text.length*35);return;}
+    const h=_DLG.audio[text];
+    const phone=()=>{
+      try{
+        const u=new SpeechSynthesisUtterance(text);u.lang=_DLG.data.stt||'en-GB';u.rate=0.9;
+        const code=(_DLG.lang||'EN').toUpperCase();if(_ttsVoices&&_ttsVoices[code])u.voice=_ttsVoices[code];
+        let done=false;const fin=()=>{if(!done){done=true;res();}};
+        u.onend=fin;u.onerror=fin;speechSynthesis.speak(u);setTimeout(fin,1500+text.length*90);
+      }catch(e){setTimeout(res,1000);}
+    };
+    if(!h){phone();return;}
+    const ac=getAC();if(!ac){phone();return;}
+    const cached=_audioCache['dlg:'+h];
+    const play=(buf)=>{const s=ac.createBufferSource();s.buffer=buf;s.connect(ac.destination);s.onended=()=>res();s.start(0);_DLG.src=s;};
+    if(cached&&cached.duration){play(cached);return;}
+    fetch(AUDIO_CDN+'/audio/dialogues/'+_DLG.lang.toLowerCase()+'/'+h+'.mp3')
+      .then(r=>{if(!r.ok)throw 0;return r.arrayBuffer();})
+      .then(b=>ac.decodeAudioData(b))
+      .then(buf=>{_audioCache['dlg:'+h]=buf;play(buf);})
+      .catch(()=>phone());
+  });
+}
+// Précharger les MP3 du prochain nœud (réponse instantanée = impression de spontanéité)
+function _dlgPrefetch(node){
+  if(!node)return;const ac=getAC();if(!ac)return;
+  const texts=[...(node.say||[]),...((node.intents||[]).flatMap(i=>i.reply||[])),...((node.any&&node.any.reply)||[])];
+  texts.forEach(t=>{const h=_DLG.audio[t];if(!h||_audioCache['dlg:'+h])return;
+    _audioCache['dlg:'+h]='pending';
+    fetch(AUDIO_CDN+'/audio/dialogues/'+_DLG.lang.toLowerCase()+'/'+h+'.mp3').then(r=>r.arrayBuffer()).then(b=>ac.decodeAudioData(b)).then(buf=>{_audioCache['dlg:'+h]=buf;}).catch(()=>{delete _audioCache['dlg:'+h];});
+  });
+}
+
+// ── Compréhension : la réponse correspond-elle à un mot-clé attendu ? ──
+function _dlgNormAll(alts){
+  return (alts||[]).map(a=>{const n=_sttNorm(a.t);return ' '+_sttFold(_sttCanon(n,_DLG.lang))+' ';}).filter(x=>x.trim());
+}
+function _dlgHas(normAlts,keys){
+  return (keys||[]).some(k=>{
+    const kk=_sttFold(_sttCanon(_sttNorm(k),_DLG.lang));if(!kk)return false;
+    return normAlts.some(a=>{
+      if(a.includes(' '+kk+' '))return true;                       // mot ou expression exacts
+      if(kk.length>=5&&!kk.includes(' '))return a.trim().split(' ').some(w=>_sttSim(w,kk)>=0.8); // tolérance prononciation
+      return false;
+    });
+  });
+}
+
+// ── Interface ──
+function _dlgEl(id){return document.getElementById(id);}
+function _dlgGif(state){const g=_dlgEl('dlg-sensei');if(g&&_DLG_GIF[state]&&!g.src.endsWith(_DLG_GIF[state]))g.src=_DLG_GIF[state];}
+function _dlgBubble(who,text,fr){
+  const log=_dlgEl('dlg-log');if(!log)return;
+  const b=document.createElement('div');
+  const me=who==='me';
+  b.style.cssText='max-width:82%;padding:10px 14px;border-radius:18px;font-size:15px;line-height:1.45;font-weight:700;'+(me?'align-self:flex-end;background:#6C63FF;color:#fff;border-bottom-right-radius:6px':'align-self:flex-start;background:var(--w);color:var(--t);box-shadow:var(--sh);border-bottom-left-radius:6px');
+  b.textContent=text;
+  if(fr&&!me){
+    const f=document.createElement('div');
+    f.style.cssText='font-size:12px;font-weight:600;color:var(--tl);margin-top:6px;display:'+(_DLG.showFr?'block':'none');
+    f.className='dlg-fr';f.textContent='🇫🇷 '+fr;b.appendChild(f);
+  }
+  log.appendChild(b);log.scrollTop=log.scrollHeight;
+}
+function _dlgStatus(html){const s=_dlgEl('dlg-status');if(s)s.innerHTML=html;}
+function _dlgChips(node,force){
+  const z=_dlgEl('dlg-chips');if(!z)return;z.innerHTML='';
+  const show=node&&node.choices&&(force||_DLG.sc.petits||_DLG.miss>=1);
+  if(!show)return;
+  const name=(P()&&P().name)||'Sam';
+  node.choices.forEach(c=>{
+    const t=c.replace('{name}',name);
+    const b=document.createElement('button');
+    b.style.cssText='background:var(--w);border:2px solid #6C63FF;color:#6C63FF;border-radius:20px;padding:8px 14px;font-weight:800;font-size:14px;font-family:var(--f);cursor:pointer';
+    b.textContent=t;
+    b.onclick=()=>{sndTap();if(_DLG.listening)_DLG.listening.stop();_DLG.listening=null;_dlgHandle([{t,c:1}],true);};
+    z.appendChild(b);
+  });
+}
+
+async function openDialogueHome(){
+  const el=document.getElementById('elist');if(!el)return;
+  const st=document.getElementById('stabs');if(st)st.innerHTML='';
+  const lang='EN';
+  el.innerHTML='<div style="text-align:center;padding:40px;color:var(--tl)">Chargement…</div>';
+  const ok=await _dlgLoad(lang);
+  if(!ok){el.innerHTML='<div style="text-align:center;padding:40px;color:var(--tl)">Connexion nécessaire pour charger les dialogues.</div>';return;}
+  const age=_getSliderAge();
+  const list=_DLG.data.scenarios.filter(s=>_globalShowAll||(age>=s.age_min-1&&age<=s.age_max+1));
+  const scs=list.length?list:_DLG.data.scenarios;
+  el.innerHTML=`
+   <div style="padding:0 4px 90px">
+    <div style="display:flex;align-items:center;gap:12px;background:linear-gradient(135deg,#6C63FF,#8F5BFF);border-radius:20px;padding:14px 16px;color:#fff;margin-bottom:14px">
+      <img src="${_DLG_GIF.idle}" alt="Sensei" style="width:64px;height:64px;object-fit:contain">
+      <div><div style="font-weight:900;font-size:16px">Parle avec Sensei 🇬🇧</div>
+      <div style="font-size:12.5px;opacity:.9;line-height:1.4">Une vraie petite conversation en anglais. Sensei t'écoute et te répond !</div></div>
+    </div>
+    <div id="dlg-sc-list" style="display:flex;flex-direction:column;gap:10px"></div>
+   </div>`;
+  const box=_dlgEl('dlg-sc-list');
+  scs.forEach(s=>{
+    const b=document.createElement('button');
+    b.style.cssText='display:flex;align-items:center;gap:12px;text-align:left;background:var(--w);border:none;border-radius:18px;padding:14px;box-shadow:var(--sh);cursor:pointer;font-family:var(--f);color:var(--t)';
+    const ageTxt=s.age_max>=99?s.age_min+' ans et +':s.age_min+'-'+s.age_max+' ans';
+    b.innerHTML=`<span style="font-size:34px">${s.emoji}</span><span style="flex:1"><span style="display:block;font-weight:900;font-size:15px">${s.titre}</span><span style="display:block;font-size:12.5px;color:var(--tl);margin-top:2px">${s.desc}</span></span><span style="font-size:11px;font-weight:800;color:#6C63FF;white-space:nowrap">${ageTxt}</span>`;
+    b.onclick=()=>{sndTap();startDialogue(s.id);};
+    box.appendChild(b);
+  });
+}
+
+function startDialogue(id){
+  const sc=_DLG.data.scenarios.find(s=>s.id===id);if(!sc)return;
+  Object.assign(_DLG,{sc,node:null,miss:0,stars:0,turns:0,last:{},showFr:!!sc.petits});
+  const el=document.getElementById('elist');
+  el.innerHTML=`
+   <div style="display:flex;flex-direction:column;height:calc(100vh - 230px);min-height:420px;padding:0 4px">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+      <button id="dlg-back" style="background:var(--w);border:none;border-radius:12px;padding:8px 12px;font-weight:800;box-shadow:var(--sh);cursor:pointer;font-family:var(--f);color:var(--t)">←</button>
+      <div style="flex:1;font-weight:900;font-size:15px;color:var(--t)">${sc.emoji} ${sc.titre}</div>
+      <div id="dlg-stars" style="font-weight:900;color:#F2A900">⭐ 0</div>
+    </div>
+    <div style="display:flex;justify-content:center"><img id="dlg-sensei" src="${_DLG_GIF.idle}" alt="Sensei" style="width:110px;height:110px;object-fit:contain"></div>
+    <div id="dlg-log" style="flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:8px;padding:8px 2px"></div>
+    <div id="dlg-chips" style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:6px 0"></div>
+    <div id="dlg-status" style="text-align:center;font-weight:800;font-size:14px;color:var(--tl);min-height:22px;margin-bottom:6px"></div>
+    <div style="display:flex;gap:8px;justify-content:center;padding-bottom:10px">
+      <button id="dlg-rep" title="Répéter" style="flex:1;max-width:90px;background:var(--w);border:none;border-radius:16px;padding:12px;font-size:20px;box-shadow:var(--sh);cursor:pointer">🔁</button>
+      <button id="dlg-mic" style="flex:2;max-width:180px;background:#E74C3C;color:#fff;border:none;border-radius:16px;padding:12px;font-size:22px;font-weight:900;cursor:pointer;box-shadow:0 4px 14px #E74C3C55">🎤</button>
+      <button id="dlg-fr" title="Traduction" style="flex:1;max-width:90px;background:var(--w);border:none;border-radius:16px;padding:12px;font-size:20px;box-shadow:var(--sh);cursor:pointer">🇫🇷</button>
+    </div>
+   </div>`;
+  _dlgEl('dlg-back').onclick=()=>{sndTap();_dlgStop();openDialogueHome();};
+  _dlgEl('dlg-rep').onclick=()=>{sndTap();if(_DLG.node&&!_DLG.busy){if(_DLG.listening)_DLG.listening.stop();_DLG.listening=null;_dlgAsk(true);}};
+  _dlgEl('dlg-fr').onclick=()=>{sndTap();_DLG.showFr=!_DLG.showFr;document.querySelectorAll('.dlg-fr').forEach(x=>x.style.display=_DLG.showFr?'block':'none');};
+  _dlgEl('dlg-mic').onclick=()=>{sndTap();if(!_DLG.busy&&!_DLG.listening)_dlgListen();};
+  try{el.scrollIntoView({behavior:'smooth',block:'start'});}catch(e){}
+  _dlgGo(sc.start);
+}
+function _dlgStop(){_dlgStopAudio();if(_DLG.listening){try{_DLG.listening.stop();}catch(e){}}_DLG.listening=null;_DLG.sc=null;}
+
+async function _dlgSay(text,fr){
+  if(!_DLG.sc)return;
+  _DLG.busy=true;_dlgGif('talk');_dlgStatus('');
+  await new Promise(r=>setTimeout(r,250+Math.random()*350)); // petit temps de « réflexion » naturel
+  if(!_DLG.sc)return;
+  _dlgBubble('sensei',text,fr);
+  await _dlgSpeak(text);
+  _DLG.busy=false;
+}
+
+function _dlgGo(id){
+  const n=_DLG.sc&&_DLG.sc.nodes[id];if(!n)return;
+  _DLG.node=n;_DLG.nodeId=id;_DLG.miss=0;
+  _dlgPrefetch(n);
+  _dlgAsk(false);
+}
+async function _dlgAsk(repeat){
+  const n=_DLG.node;
+  await _dlgSay(_dlgPick(n.say,'say:'+_DLG.nodeId),n.fr);
+  if(!_DLG.sc||_DLG.node!==n)return;
+  if(!(n.intents||n.any)){if(n.end)return _dlgEnd();if(n.next)return _dlgGo(n.next);}
+  // pré-charger les nœuds suivants possibles
+  [...(n.intents||[]),n.any].filter(Boolean).forEach(o=>o.next&&_dlgPrefetch(_DLG.sc.nodes[o.next]));
+  _dlgChips(n);
+  _dlgListen();
+}
+
+function _dlgListen(){
+  if(!_DLG.sc)return;
+  _dlgGif('listen');
+  _dlgStatus('<span style="color:#E74C3C">● À toi de parler !</span>');
+  _DLG.listening=sttListen({lang:_DLG.data.stt||'en-GB',alternatives:5,
+    onReady:()=>_dlgStatus('<span style="color:#E74C3C">● Je t\'écoute…</span>'),
+    onResult:(alts)=>{_DLG.listening=null;_dlgHandle(alts,false);},
+    onFail:(err)=>{
+      _DLG.listening=null;
+      if(err==='no-speech')return _dlgMiss('silence');
+      _dlgGif('idle');
+      _dlgStatus(err==='not-allowed'?'⚠️ Autorise le micro, ou touche une réponse':'Touche 🎤 pour parler, ou choisis une réponse');
+      _dlgChips(_DLG.node,true);
+    }});
+  if(!_DLG.listening){_dlgStatus('Choisis une réponse 👇');_dlgChips(_DLG.node,true);}
+}
+
+async function _dlgFiller(){
+  const f=_DLG.data.fillers;
+  if(f&&f.length&&Math.random()<0.35){const t=_dlgPick(f,'filler');_dlgGif('talk');await _dlgSpeak(t);}
+}
+
+async function _dlgHandle(alts,tapped){
+  if(!_DLG.sc||_DLG.busy)return;
+  const n=_DLG.node,g=_DLG.data.global||{};
+  const said=(alts[0]&&alts[0].t||'').trim();
+  _dlgChips(null);
+  if(said)_dlgBubble('me',said);
+  const A=_dlgNormAll(alts);
+  // Demandes universelles : répéter / je ne sais pas / en français
+  if(!tapped&&_dlgHas(A,g.repeat_keys)&&!(n.intents||[]).some(i=>_dlgHas(A,i.keys))){return _dlgAsk(true);}
+  if(_dlgHas(A,g.dontknow_keys)){await _dlgSay(_dlgPick(g.dontknow,'dk'));return _dlgHelp();}
+  if(_dlgHas(A,g.french_keys)){_DLG.showFr=true;document.querySelectorAll('.dlg-fr').forEach(x=>x.style.display='block');_dlgStatus('🇫🇷 '+(n.fr||''));return _dlgHelp();}
+  // Réponses anticipées
+  const hit=(n.intents||[]).find(i=>_dlgHas(A,i.keys));
+  // Question ouverte : toute réponse est acceptée. Question fermée : réponse inattendue acceptée seulement au 2e essai.
+  const out=hit||(said&&n.any&&(n.open||_DLG.miss>=1)?n.any:null);
+  if(!out)return _dlgMiss('retry');
+  _DLG.turns++;_DLG.stars+=(_DLG.miss===0?2:1);
+  const st=_dlgEl('dlg-stars');if(st)st.textContent='⭐ '+_DLG.stars;
+  try{sndOK();}catch(e){}
+  if(!hit)await _dlgFiller();
+  _dlgGif('bravo');
+  await _dlgSay(_dlgPick(out.reply,'r:'+_DLG.nodeId),null);
+  if(!_DLG.sc)return;
+  if(out.end)return _dlgEnd();
+  _dlgGo(out.next);
+}
+
+async function _dlgHelp(){
+  const n=_DLG.node;
+  if(n.help){await _dlgSay(n.help,null);}
+  _dlgChips(n,true);_dlgListen();
+}
+async function _dlgMiss(kind){
+  const n=_DLG.node,g=_DLG.data.global||{};
+  _DLG.miss++;
+  _dlgGif('oops');
+  if(_DLG.miss===1){await _dlgSay(_dlgPick(kind==='silence'?g.silence:g.retry,kind),null);_dlgChips(n);_dlgListen();return;}
+  if(_DLG.miss===2){return _dlgHelp();}
+  // 3e échec : on encourage et on avance (jamais bloqué)
+  await _dlgSay(_dlgPick(g.move_on,'mo'),null);
+  const def=(n.any)||(n.intents||[]).slice(-1)[0];
+  if(!def||def.end)return _dlgEnd();
+  _dlgGo(def.next);
+}
+
+function _dlgEnd(){
+  const sc=_DLG.sc;if(!sc)return;
+  _dlgGif('bravo');_dlgStatus('');
+  try{sndStar();}catch(e){}
+  const p=P();if(p){p.score=(p.score||0)+_DLG.stars;p.dlgDone=p.dlgDone||{};p.dlgDone[sc.id]=Math.max(p.dlgDone[sc.id]||0,_DLG.stars);saveApp();}
+  const log=_dlgEl('dlg-log');
+  if(log){
+    const c=document.createElement('div');
+    c.style.cssText='align-self:center;text-align:center;background:linear-gradient(135deg,#6C63FF,#FF8A3D);color:#fff;border-radius:20px;padding:16px 18px;margin-top:8px;font-weight:800';
+    c.innerHTML=`<div style="font-size:30px">🎉</div><div style="font-size:16px">Bravo ! Tu as parlé ${_DLG.turns} fois en anglais avec Sensei.</div><div style="font-size:14px;margin-top:4px">⭐ ${_DLG.stars} étoiles gagnées</div>`;
+    const again=document.createElement('button');
+    again.style.cssText='margin-top:10px;background:#fff;color:#6C63FF;border:none;border-radius:14px;padding:10px 16px;font-weight:900;font-family:var(--f);cursor:pointer';
+    again.textContent='Autre dialogue →';again.onclick=()=>{sndTap();_dlgStop();openDialogueHome();};
+    c.appendChild(again);log.appendChild(c);log.scrollTop=log.scrollHeight;
+  }
+  _DLG.node=null;
 }
 
 function renderPrononcer(tabMeta){
