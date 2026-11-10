@@ -14491,7 +14491,7 @@ function renderAteliers(){
 function openAtelierDetail(a){
   document.getElementById('atelier-htit').textContent=a.nom;
   const c=document.getElementById('atelier-detail-c');c.innerHTML='';
-  const col={Origami:'#6C63FF',Sciences:'#06D6A0',Bricolage:'#FF9F1C',Peinture:'#FF6B6B'}[a.cat]||'var(--v)';
+  const col={Origami:'#6C63FF',Sciences:'#06D6A0',Bricolage:'#FF9F1C',Peinture:'#FF6B6B',Fiches:'#8B5CF6'}[a.cat]||'#6C63FF'; // toujours un hex : ${col}99 doit rester une couleur valide
 
   // Header
   const hd=document.createElement('div');
@@ -14508,10 +14508,11 @@ function openAtelierDetail(a){
   const mat=document.createElement('div');
   mat.style.cssText='background:var(--w);border-radius:16px;padding:14px 16px;margin:0 14px 14px;box-shadow:var(--sh)';
   mat.innerHTML=`<div style="font-size:13px;font-weight:800;color:var(--tl);margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px">🛒 Matériel</div>
-    ${a.materiel.map(m=>`<div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--bg)"><span style="font-size:16px">•</span><span style="font-size:14px;font-weight:600">${m}</span></div>`).join('')}`;
+    ${a.materiel.map(m=>`<div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--bg)"><span style="font-size:16px">•</span><span style="font-size:14px;font-weight:600;color:var(--t)">${m}</span></div>`).join('')}`;
   c.appendChild(mat);
 
-  // Étapes
+  // Étapes (les fiches PDF n'en ont pas : elles sont dans le PDF)
+  if(a.etapes&&a.etapes.length){
   const etDiv=document.createElement('div');
   etDiv.style.cssText='padding:0 14px 14px';
   etDiv.innerHTML=`<div style="font-size:13px;font-weight:800;color:var(--tl);margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px">📋 Étapes</div>`;
@@ -14519,16 +14520,24 @@ function openAtelierDetail(a){
     const step=document.createElement('div');
     step.style.cssText='background:var(--w);border-radius:14px;padding:14px;margin-bottom:10px;box-shadow:var(--sh);display:flex;gap:12px;align-items:flex-start';
     step.innerHTML=`<div style="background:${col};color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;flex-shrink:0">${i+1}</div>
-      <div style="font-size:14px;font-weight:600;line-height:1.5;padding-top:3px">${et}</div>`;
+      <div style="font-size:14px;font-weight:600;line-height:1.5;padding-top:3px;color:var(--t)">${et}</div>`;
     etDiv.appendChild(step);
   });
   c.appendChild(etDiv);
+  }else if(a.pdf){
+    const note=document.createElement('div');
+    note.style.cssText='background:var(--w);border-radius:16px;padding:14px 16px;margin:0 14px 14px;box-shadow:var(--sh);font-size:14px;font-weight:600;line-height:1.5;color:var(--t)';
+    note.innerHTML='📋 Les étapes illustrées et la zone de dessin sont dans la fiche à imprimer ci-dessous.';
+    c.appendChild(note);
+  }
 
   // Astuce
+  if(a.astuce){
   const ast=document.createElement('div');
   ast.style.cssText='background:#FFF8E7;border:2px solid #FFD166;border-radius:16px;padding:14px 16px;margin:0 14px 16px;font-size:13px;font-weight:600;color:#6B4F00;line-height:1.6';
   ast.innerHTML=`<span style="font-size:16px">💡</span> <strong>Astuce :</strong> ${a.astuce}`;
   c.appendChild(ast);
+  }
 
   // Bouton PDF téléchargeable (Fiches)
   if(a.pdf){
@@ -14538,26 +14547,34 @@ function openAtelierDetail(a){
     const pdfBtn=document.createElement('button');
     pdfBtn.style.cssText='display:flex;align-items:center;justify-content:center;gap:10px;background:#8B5CF6;color:#fff;border-radius:16px;padding:14px;margin:0 14px 10px;font-size:15px;font-weight:800;cursor:pointer;border:none;width:calc(100% - 28px)';
     pdfBtn.innerHTML='📥 Télécharger la fiche PDF';
+    const pdfUrlFR='https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/'+a.pdf.replace('{LANG}','FR');
+    const _reset=()=>setTimeout(()=>{pdfBtn.innerHTML='📥 Télécharger la fiche PDF';pdfBtn.disabled=false;},3000);
     pdfBtn.onclick=async()=>{
       pdfBtn.innerHTML='⏳ Téléchargement…';
       pdfBtn.disabled=true;
-      try{
-        const resp=await fetch(pdfUrl);
-        if(!resp.ok) throw new Error('HTTP '+resp.status);
-        const blob=await resp.blob();
-        const blobUrl=URL.createObjectURL(blob);
-        const a2=document.createElement('a');
-        a2.href=blobUrl;
-        a2.download=pdfFileName;
-        document.body.appendChild(a2);
-        a2.click();
-        setTimeout(()=>{document.body.removeChild(a2);URL.revokeObjectURL(blobUrl);},2000);
-        pdfBtn.innerHTML='✅ Fiche téléchargée !';
-        setTimeout(()=>{pdfBtn.innerHTML='📥 Télécharger la fiche PDF';pdfBtn.disabled=false;},3000);
-      }catch(e){
-        pdfBtn.innerHTML='❌ Erreur — réessayer';
-        pdfBtn.disabled=false;
+      // 1) téléchargement dans l'app (langue du profil, puis FR)
+      for(const [url,name] of [[pdfUrl,pdfFileName],[pdfUrlFR,pdfFileName.replace(/_[A-Z]{2}\.pdf$/,'.pdf')]]){
+        try{
+          const resp=await fetch(url,{mode:'cors',cache:'no-store'});
+          if(!resp.ok) throw new Error('HTTP '+resp.status);
+          const blob=await resp.blob();
+          if(blob.size<500) throw new Error('fichier vide');
+          const blobUrl=URL.createObjectURL(new Blob([blob],{type:'application/pdf'}));
+          const a2=document.createElement('a');
+          a2.href=blobUrl;a2.download=name;a2.rel='noopener';
+          document.body.appendChild(a2);a2.click();
+          setTimeout(()=>{document.body.removeChild(a2);URL.revokeObjectURL(blobUrl);},4000);
+          pdfBtn.innerHTML='✅ Fiche téléchargée !';_reset();
+          return;
+        }catch(e){console.warn('[PDF]',url,e&&e.message);}
       }
+      // 2) secours : ouvrir le PDF directement (le navigateur l'affiche ou le télécharge)
+      // (fiches publiées en FR sur R2 : c'est la version sûre)
+      const lk=document.createElement('a');
+      lk.href=pdfUrlFR;lk.target='_blank';lk.rel='noopener';
+      document.body.appendChild(lk);lk.click();
+      setTimeout(()=>document.body.removeChild(lk),2000);
+      pdfBtn.innerHTML='📄 Fiche ouverte';_reset();
     };
     c.appendChild(pdfBtn);
   }
