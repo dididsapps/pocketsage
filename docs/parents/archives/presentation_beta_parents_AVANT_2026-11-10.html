@@ -1,0 +1,1728 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>PocketSage Academy — Bêta Parents</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap">
+
+<style>
+/* === DESIGN TOKENS — PocketSage Academy Parents ===
+   Layout: hero → thematic sections → formulaires → footer
+   Inspiration: carnet scolaire premium × app store moderne */
+
+:root {
+  /* Palette lumineuse (enfance + sérieux académique) */
+  --sky:    #EEF6FF;
+  --ink:    #0E1B2E;
+  --mid:    #4A6080;
+  --border: #D1DDE8;
+  --white:  #FFFFFF;
+
+  /* Accents par thème pédagogique */
+  --a-maths:    #FF6B6B;
+  --a-logique:  #6C63FF;
+  --a-langue:   #FF9F1C;
+  --a-sciences: #26C6DA;
+  --a-histoire: #C9A227;
+  --a-geo:      #4CAF50;
+  --a-politesse:#06D6A0;
+  --a-venture:  #845EF7;
+  --a-nuit:     #1A237E;
+
+  /* Typographie */
+  --f-display: 'Sora', system-ui, sans-serif;
+  --f-body:    'DM Sans', system-ui, sans-serif;
+
+  /* Surfaces */
+  --bg:     var(--sky);
+  --surface: var(--white);
+  --fg:     var(--ink);
+  --fg-mid: var(--mid);
+  --bdr:    var(--border);
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:      #090F1A;
+    --surface: #111827;
+    --fg:      #E8F0FE;
+    --fg-mid:  #8BA3BF;
+    --bdr:     #1E2D42;
+    --sky:     #090F1A;
+    --white:   #111827;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg:      #090F1A;
+  --surface: #111827;
+  --fg:      #E8F0FE;
+  --fg-mid:  #8BA3BF;
+  --bdr:     #1E2D42;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--f-body);
+  font-size: 16px;
+  line-height: 1.65;
+  background: var(--bg);
+  color: var(--fg);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0;
+}
+
+/* ── UTILITAIRES ── */
+.wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--f-display);
+  text-wrap: balance;
+  margin: 0;
+}
+
+a { color: var(--a-logique); text-underline-offset: 3px; }
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent, var(--a-logique)) 12%, transparent);
+  color: var(--accent, var(--a-logique));
+  border: 1px solid color-mix(in srgb, var(--accent, var(--a-logique)) 25%, transparent);
+}
+
+/* ── HEADER BÊTA ── */
+.beta-banner {
+  background: linear-gradient(135deg, var(--a-venture) 0%, #5B3FD4 100%);
+  color: #fff;
+  text-align: center;
+  padding: 10px max(16px, env(safe-area-inset-left, 0px));
+  font-family: var(--f-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .04em;
+}
+
+/* ── HERO ── */
+.hero {
+  padding-block: 64px 48px;
+}
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.hero-eyebrow {
+  font-family: var(--f-display);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--a-venture);
+}
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  color: var(--fg);
+}
+.hero h1 em {
+  font-style: normal;
+  background: linear-gradient(135deg, var(--a-maths), var(--a-venture));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-lead {
+  font-size: 1.1rem;
+  color: var(--fg-mid);
+  max-width: 560px;
+  font-weight: 300;
+}
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+.stat-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--surface);
+  border: 1px solid var(--bdr);
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.stat-pill strong {
+  font-family: var(--f-display);
+  font-weight: 700;
+  color: var(--fg);
+}
+
+/* ── SECTION GÉNÉRIQUE ── */
+.section {
+  padding-block: 56px;
+  border-top: 1px solid var(--bdr);
+}
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 36px;
+}
+.section-header h2 {
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: -.01em;
+}
+.section-header p {
+  color: var(--fg-mid);
+  font-size: .95rem;
+  max-width: 540px;
+  margin: 0;
+}
+
+/* ── GRILLE MATIÈRES ── */
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+.subject-card {
+  background: var(--surface);
+  border: 1px solid var(--bdr);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform .15s, box-shadow .15s;
+}
+.subject-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--s-color) 20%, transparent);
+}
+.subject-card .s-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background: color-mix(in srgb, var(--s-color) 15%, transparent);
+}
+.subject-card h3 {
+  font-size: .95rem;
+  font-weight: 700;
+}
+.subject-card p {
+  font-size: .82rem;
+  color: var(--fg-mid);
+  margin: 0;
+  line-height: 1.5;
+}
+.method-tag {
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--s-color);
+  padding: 2px 8px;
+  background: color-mix(in srgb, var(--s-color) 10%, transparent);
+  border-radius: 6px;
+  align-self: flex-start;
+}
+
+/* ── MODE AVENTURE ── */
+.adventure-visual {
+  background: linear-gradient(135deg, #1a0a3e 0%, #0d1b4a 50%, #0a2840 100%);
+  border-radius: 20px;
+  padding: 32px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.adventure-visual::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 70% 30%, rgba(132,94,247,.3) 0%, transparent 60%);
+  pointer-events: none;
+}
+.adventure-visual h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.adv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+  position: relative;
+}
+.adv-item {
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.adv-item .ai-icon { font-size: 22px; }
+.adv-item .ai-label { font-size: .8rem; font-weight: 600; color: rgba(255,255,255,.9); }
+.adv-item .ai-desc { font-size: .75rem; color: rgba(255,255,255,.55); line-height: 1.4; }
+
+.span-table {
+  margin-top: 20px;
+  position: relative;
+}
+.span-table h4 {
+  font-size: .85rem;
+  font-weight: 600;
+  color: rgba(255,255,255,.7);
+  margin-bottom: 10px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.spans {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.span-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: .8rem;
+  color: #fff;
+}
+.span-badge strong { font-family: var(--f-display); font-weight: 700; color: var(--a-venture); }
+
+/* ── VOITURE ── */
+.voiture-banner {
+  background: linear-gradient(135deg, #0F5132 0%, #198754 100%);
+  border-radius: 20px;
+  padding: 28px 32px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.voiture-icon { font-size: 48px; flex-shrink: 0; }
+.voiture-text h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.voiture-text p { font-size: .88rem; color: rgba(255,255,255,.8); margin: 0; }
+.voiture-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: .75rem;
+  font-weight: 700;
+  background: rgba(255,255,255,.15);
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 8px;
+  padding: 4px 10px;
+  margin-top: 8px;
+  letter-spacing: .04em;
+}
+
+/* ── RÉCOMPENSES ── */
+.rewards-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+.reward-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--surface);
+  border: 1px solid var(--bdr);
+  border-radius: 14px;
+  padding: 18px;
+}
+.reward-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--a-venture), var(--a-maths));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.reward-text h4 { font-size: .9rem; font-weight: 700; margin-bottom: 4px; }
+.reward-text p { font-size: .8rem; color: var(--fg-mid); margin: 0; line-height: 1.45; }
+
+/* ── JEUX ── */
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 14px;
+}
+.game-card {
+  background: var(--surface);
+  border: 1px solid var(--bdr);
+  border-radius: 14px;
+  padding: 20px 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.game-card .g-icon { font-size: 32px; }
+.game-card h4 { font-size: .9rem; font-weight: 700; }
+.game-card p { font-size: .78rem; color: var(--fg-mid); margin: 0; }
+.game-card .g-benefit {
+  font-size: .72rem;
+  font-weight: 600;
+  color: var(--a-venture);
+  background: color-mix(in srgb, var(--a-venture) 10%, transparent);
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+/* ── NUIT ── */
+.nuit-section {
+  background: linear-gradient(135deg, #0D1B4A 0%, #1A0A3E 100%);
+  border-radius: 20px;
+  padding: 32px;
+  color: #fff;
+}
+.nuit-section h3 { color: #fff; margin-bottom: 12px; }
+.nuit-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+.nuit-type {
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 12px;
+  padding: 16px;
+}
+.nuit-type .nt-icon { font-size: 24px; margin-bottom: 8px; }
+.nuit-type h4 { font-size: .85rem; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.nuit-type p { font-size: .75rem; color: rgba(255,255,255,.55); margin: 0; }
+
+/* ── FORMULAIRES ── */
+.form-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.tab-btn {
+  font-family: var(--f-display);
+  font-size: .85rem;
+  font-weight: 600;
+  padding: 9px 20px;
+  border-radius: 10px;
+  border: 2px solid var(--bdr);
+  background: var(--surface);
+  color: var(--fg-mid);
+  cursor: pointer;
+  transition: all .15s;
+}
+.tab-btn.active {
+  border-color: var(--a-venture);
+  background: color-mix(in srgb, var(--a-venture) 10%, transparent);
+  color: var(--a-venture);
+}
+
+.form-panel { display: none; flex-direction: column; gap: 18px; }
+.form-panel.visible { display: flex; }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 540px) { .form-row { grid-template-columns: 1fr; } }
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.field label {
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--fg);
+}
+.field input, .field select, .field textarea {
+  font-family: var(--f-body);
+  font-size: .9rem;
+  padding: 10px 14px;
+  background: var(--bg);
+  border: 1.5px solid var(--bdr);
+  border-radius: 10px;
+  color: var(--fg);
+  transition: border-color .15s;
+  width: 100%;
+}
+.field input:focus, .field select:focus, .field textarea:focus {
+  outline: none;
+  border-color: var(--a-venture);
+}
+.field textarea { resize: vertical; min-height: 90px; }
+.field .hint { font-size: .75rem; color: var(--fg-mid); }
+
+.stars-row {
+  display: flex;
+  gap: 6px;
+}
+.star-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  opacity: .3;
+  transition: opacity .1s, transform .1s;
+  line-height: 1;
+}
+.star-btn.lit { opacity: 1; }
+.star-btn:hover { transform: scale(1.2); }
+
+.severity-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.severity-btn {
+  font-size: .8rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 2px solid var(--bdr);
+  background: var(--surface);
+  color: var(--fg-mid);
+  cursor: pointer;
+  transition: all .12s;
+}
+.severity-btn[data-sev="1"].sel { border-color: #4CAF50; background: #4CAF5018; color: #4CAF50; }
+.severity-btn[data-sev="2"].sel { border-color: #FF9F1C; background: #FF9F1C18; color: #FF9F1C; }
+.severity-btn[data-sev="3"].sel { border-color: #FF6B6B; background: #FF6B6B18; color: #FF6B6B; }
+
+.submit-btn {
+  font-family: var(--f-display);
+  font-size: .95rem;
+  font-weight: 700;
+  padding: 13px 28px;
+  background: linear-gradient(135deg, var(--a-venture), #5B3FD4);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: transform .12s, box-shadow .12s;
+  letter-spacing: .01em;
+}
+.submit-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(132,94,247,.35); }
+.submit-btn:active { transform: none; }
+
+.feedback-box {
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: .88rem;
+  font-weight: 500;
+  display: none;
+}
+.feedback-box.ok { background: #4CAF5018; border: 1.5px solid #4CAF50; color: #2e7d32; }
+.feedback-box.err { background: #FF6B6B18; border: 1.5px solid #FF6B6B; color: #c62828; }
+
+.copy-area {
+  background: var(--bg);
+  border: 1.5px dashed var(--bdr);
+  border-radius: 12px;
+  padding: 16px;
+  font-size: .82rem;
+  font-family: 'Courier New', monospace;
+  color: var(--fg-mid);
+  white-space: pre-wrap;
+  word-break: break-word;
+  display: none;
+}
+
+.copy-btn {
+  font-family: var(--f-display);
+  font-size: .8rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  background: var(--surface);
+  border: 1.5px solid var(--bdr);
+  border-radius: 8px;
+  color: var(--fg);
+  cursor: pointer;
+  align-self: flex-start;
+  display: none;
+  transition: border-color .1s;
+}
+.copy-btn:hover { border-color: var(--a-venture); color: var(--a-venture); }
+
+/* ── LANG BUTTONS ── */
+.lang-btn {
+  font-family: var(--f-display);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1.5px solid transparent;
+  background: transparent;
+  color: var(--fg);
+  cursor: pointer;
+  transition: all .15s;
+}
+.lang-btn:hover { border-color: var(--a-venture); background: color-mix(in srgb, var(--a-venture) 8%, transparent); }
+.lang-btn.active { border-color: var(--a-venture); background: color-mix(in srgb, var(--a-venture) 15%, transparent); color: var(--a-venture); font-weight: 800; }
+
+.copy-instructions {
+  font-size: .82rem;
+  color: var(--fg-mid);
+  background: color-mix(in srgb, var(--a-venture) 7%, transparent);
+  border: 1px solid color-mix(in srgb, var(--a-venture) 20%, transparent);
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: none;
+}
+
+/* ── FOOTER ── */
+.footer {
+  border-top: 1px solid var(--bdr);
+  padding-block: 32px;
+  text-align: center;
+}
+.footer p {
+  font-size: .8rem;
+  color: var(--fg-mid);
+  margin: 0;
+}
+.footer strong {
+  font-family: var(--f-display);
+  color: var(--fg);
+  font-size: .9rem;
+}
+
+/* ── SPORT COACH ── */
+.coach-banner {
+  background: linear-gradient(135deg, #1A0533 0%, #3D0A1E 50%, #1A0533 100%);
+  border-radius: 20px;
+  padding: 32px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.coach-banner::before {
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 60% 40%,rgba(255,107,107,.25) 0%,transparent 60%);
+  pointer-events:none;
+}
+.coach-age-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+  position: relative;
+}
+.coach-age-card {
+  border-radius: 14px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.coach-age-card .ca-emoji { font-size: 26px; }
+.coach-age-card .ca-label { font-size: .85rem; font-weight: 700; color: #fff; }
+.coach-age-card .ca-dur { font-size: .75rem; color: rgba(255,255,255,.65); }
+.coach-age-card .ca-pattern { font-size: .72rem; color: rgba(255,255,255,.5); line-height: 1.5; margin-top: 4px; }
+.coach-feature-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+.coach-feature-badge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 10px;
+  padding: 9px 14px;
+  font-size: .82rem;
+  color: #fff;
+}
+.coach-feature-badge strong { font-family: var(--f-display); font-weight: 700; color: #FF9F1C; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+  .hero { padding-block: 40px 32px; }
+  .section { padding-block: 40px; }
+  .adventure-visual, .nuit-section { padding: 22px 18px; }
+  .adv-grid, .nuit-types { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 400px) {
+  .adv-grid, .nuit-types { grid-template-columns: 1fr; }
+}
+</style>
+
+<!-- BÊTA BANNER -->
+<div class="beta-banner">
+  🚀 Version bêta — Merci de participer au test de PocketSage Academy !
+</div>
+
+<div class="wrap">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">🎓 PocketSage Academy · Bêta V1</span>
+      <h1>L'apprentissage, <em>réinventé</em> pour vos enfants</h1>
+      <p class="hero-lead">
+        Une application éducative qui s'adapte à l'âge, aux centres d'intérêt et au rythme de concentration de chaque enfant et adulte — de 4 ans à l'âge adulte. Chaque session devient une aventure.
+      </p>
+      <p style="margin-top:14px;font-size:16px;line-height:1.7;color:var(--tx)">
+        📱 <strong>Prêtez votre téléphone en toute sérénité.</strong> PocketSage remplace les jeux inutiles, les vidéos passives et le scrolling infini par une alternative éducative, ludique et variée. Votre enfant explore, apprend et progresse — vous êtes sûr·e qu'il ne voit que du contenu positif et validé. Et pour les adultes aussi, c'est une façon de transformer ce temps d'écran en quelque chose de vraiment enrichissant.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-pill">📚 <strong>7 matières</strong> couvertes</div>
+        <div class="stat-pill">🌍 <strong>Plusieurs langues</strong> disponibles</div>
+        <div class="stat-pill">👶 <strong>4 ans et +</strong> adapté</div>
+        <div class="stat-pill">🤝 <strong>Politesse, dictons</strong> & savoir-vivre</div>
+        <div class="stat-pill">🎙️ <strong>Reconnaissance vocale</strong> STT</div>
+        <div class="stat-pill">🔊 <strong>Voix Sensei</strong> & Narrateur IA</div>
+        <div class="stat-pill">📝 <strong>Des milliers de questions</strong> par niveau</div>
+        <div class="stat-pill">🏋️ <strong>Mode Coach Sport</strong> inclus</div>
+        <div class="stat-pill">✈️ <strong>Mode hors-ligne</strong> disponible</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MATIÈRES + TECHNIQUES -->
+  <section class="section">
+    <div class="section-header">
+      <span class="chip" style="--accent: var(--a-logique)">Pédagogie</span>
+      <h2>Des techniques novatrices pour chaque matière</h2>
+      <p>PocketSage n'utilise pas les mêmes méthodes pour toutes les matières. Chaque domaine a son approche scientifiquement fondée.</p>
+    </div>
+    <div class="subjects-grid">
+
+      <div class="subject-card" style="--s-color: var(--a-maths)">
+        <div class="s-icon">🔢</div>
+        <h3>Mathématiques</h3>
+        <p>Difficulté progressive avec saut adaptatif. L'enfant avance à son rythme, jamais bloqué, jamais en dessous de son niveau.</p>
+        <span class="method-tag">Progression adaptative</span>
+      </div>
+
+      <div class="subject-card" style="--s-color: var(--a-logique)">
+        <div class="s-icon">🧠</div>
+        <h3>Logique & Suites</h3>
+        <p>Entraîne la reconnaissance de patterns et la pensée algorithmique. Fondation pour toutes les disciplines scientifiques.</p>
+        <span class="method-tag">Pensée computationnelle</span>
+      </div>
+
+      <div class="subject-card" style="--s-color: var(--a-langue)">
+        <div class="s-icon">🌍</div>
+        <h3>Langues vivantes</h3>
+        <p>Apprentissage 2.0 des langues par immersion — plusieurs langues disponibles, de nombreuses autres bientôt. L'enfant entend, voit et répond. En CP/CE1, la <strong>reconnaissance vocale</strong> valide la prononciation en temps réel.</p>
+        <span class="method-tag">Immersion + Vocal STT</span>
+      </div>
+
+      <div class="subject-card" style="--s-color: var(--a-sciences)">
+        <div class="s-icon">🔬</div>
+        <h3>Sciences</h3>
+        <p>Questions d'éveil "pourquoi ça marche ?" qui ancrent les concepts dans la curiosité naturelle de l'enfant.</p>
+        <span class="method-tag">Apprentissage par découverte</span>
+      </div>
+
+      <div class="subject-card" style="--s-color: var(--a-histoire)">
+        <div class="s-icon">🏛️</div>
+        <h3>Histoire</h3>
+        <p>Récits chronologiques immersifs. L'enfant reconstruit le fil des événements plutôt que de mémoriser des dates isolées.</p>
+        <span class="method-tag">Narration chronologique</span>
+      </div>
+
+      <div class="subject-card" style="--s-color: var(--a-geo)">
+        <div class="s-icon">🗺️</div>
+        <h3>Géographie</h3>
+        <p>Ancrage spatial visuel. Chaque question contextualise le lieu dans son environnement géographique et culturel.</p>
+        <span class="method-tag">Ancrage spatial</span>
+      </div>
+
+      <div class="subject-card" style="--s-color: var(--a-politesse)">
+        <div class="s-icon">🤝</div>
+        <h3>Vie sociale & Politesse</h3>
+        <p>Mises en situation concrètes du quotidien. Développe l'intelligence émotionnelle et les compétences sociales essentielles.</p>
+        <span class="method-tag">Intelligence émotionnelle</span>
+      </div>
+
+      <div class="subject-card" style="--s-color: #E040FB">
+        <div class="s-icon">🔠</div>
+        <h3>Dénombrement & Intrus</h3>
+        <p>Travaille la discrimination visuelle et la catégorisation. Prépare la lecture et le raisonnement dès la maternelle.</p>
+        <span class="method-tag">Perception visuelle</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MODE AVENTURE -->
+  <section class="section">
+    <div class="section-header">
+      <span class="chip" style="--accent: var(--a-venture)">Mode Aventure</span>
+      <h2>La magie du mode Aventure</h2>
+      <p>Une session complète qui alterne intelligemment entre matières, jeux, vidéos et pauses — adaptée à l'âge de votre enfant.</p>
+    </div>
+
+    <div class="adventure-visual">
+      <h3>⚔️ Comment ça marche ?</h3>
+      <p style="font-size:.9rem; color:rgba(255,255,255,.7); max-width:560px">
+        L'enfant lance une aventure. PocketSage construit automatiquement une séquence personnalisée : questions adaptées à son niveau, pauses au bon moment, récompenses et défis physiques pour garder l'énergie.
+      </p>
+
+      <div class="span-table">
+        <h4>⏱ Plages de concentration par âge (sessions longues)</h4>
+        <div class="spans">
+          <div class="span-badge">4–5 ans <strong>3 questions</strong> puis pause</div>
+          <div class="span-badge">6–7 ans <strong>4 questions</strong> puis pause</div>
+          <div class="span-badge">8–9 ans <strong>5 questions</strong> puis pause</div>
+          <div class="span-badge">10–11 ans <strong>6 questions</strong> puis pause</div>
+          <div class="span-badge">12–13 ans <strong>7 questions</strong> puis pause</div>
+          <div class="span-badge">14+ ans <strong>8 questions</strong> puis pause</div>
+        </div>
+        <p style="font-size:.75rem;color:rgba(255,255,255,.5);margin-top:10px">📶 Mode hors-ligne : les vidéos sont automatiquement sautées si la connexion est absente — l'aventure continue sans interruption.</p>
+      </div>
+
+      <div class="adv-grid">
+        <div class="adv-item">
+          <div class="ai-icon">🔢</div>
+          <div class="ai-label">7 Matières</div>
+          <div class="ai-desc">Toutes les disciplines s'enchaînent avec des pondérations personnalisables</div>
+        </div>
+        <div class="adv-item">
+          <div class="ai-icon">🎬</div>
+          <div class="ai-label">Vidéos éducatives</div>
+          <div class="ai-desc">Intégrées dans le flux pour varier les stimuli</div>
+        </div>
+        <div class="adv-item">
+          <div class="ai-icon">🌿</div>
+          <div class="ai-label">Pauses histoires</div>
+          <div class="ai-desc">Courtes histoires pour souffler entre les séquences</div>
+        </div>
+        <div class="adv-item">
+          <div class="ai-icon">🏃</div>
+          <div class="ai-label">Défis physiques</div>
+          <div class="ai-desc">48 exercices en 4 catégories pour bouger et recharger la concentration</div>
+        </div>
+        <div class="adv-item">
+          <div class="ai-icon">⚙️</div>
+          <div class="ai-label">Matières au choix</div>
+          <div class="ai-desc">Activez ou désactivez chaque matière selon vos préférences</div>
+        </div>
+        <div class="adv-item">
+          <div class="ai-icon">🏆</div>
+          <div class="ai-label">Progression</div>
+          <div class="ai-desc">Le niveau s'adapte automatiquement aux performances</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECONNAISSANCE VOCALE & TTS -->
+  <section class="section">
+    <div class="section-header">
+      <span class="chip" style="--accent: #E040FB">Technologie vocale</span>
+      <h2>Reconnaissance vocale & Voix IA</h2>
+      <p>PocketSage intègre deux technologies vocales avancées pour une expérience immersive et pédagogique.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px">
+
+      <!-- STT -->
+      <div style="background:linear-gradient(135deg,#1a0a3e,#3a1060);border-radius:20px;padding:28px;color:#fff;display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap">
+        <div style="font-size:40px;flex-shrink:0;margin-top:2px">🎙️</div>
+        <div style="flex:1;min-width:220px">
+          <h3 style="color:#fff;font-size:1.05rem;margin-bottom:8px">Reconnaissance vocale (STT)</h3>
+          <p style="font-size:.85rem;color:rgba(255,255,255,.75);line-height:1.6;margin:0 0 14px">En CP et CE1, pour les questions de langue, l'enfant <strong>prononce sa réponse à voix haute</strong>. L'algorithme analyse la prononciation et donne un score instantané :</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border-radius:10px;padding:9px 14px">
+              <span style="font-size:16px">🏆</span><strong style="color:#4ade80;font-size:.82rem">Parfait</strong><span style="font-size:.75rem;color:rgba(255,255,255,.5)">≥ 85%</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border-radius:10px;padding:9px 14px">
+              <span style="font-size:16px">👍</span><strong style="color:#fbbf24;font-size:.82rem">Presque</strong><span style="font-size:.75rem;color:rgba(255,255,255,.5)">55–84%</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border-radius:10px;padding:9px 14px">
+              <span style="font-size:16px">🔄</span><strong style="color:#f87171;font-size:.82rem">Réessaie</strong><span style="font-size:.75rem;color:rgba(255,255,255,.5)">&lt; 55%</span>
+            </div>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px">
+            <span style="padding:4px 12px;border-radius:10px;font-size:11px;font-weight:700;background:rgba(255,255,255,.1);color:rgba(255,255,255,.85)">🌱 Mots simples · 6–8 ans</span>
+            <span style="padding:4px 12px;border-radius:10px;font-size:11px;font-weight:700;background:rgba(255,255,255,.1);color:rgba(255,255,255,.85)">📖 Phrases courtes · 8–10 ans</span>
+            <span style="padding:4px 12px;border-radius:10px;font-size:11px;font-weight:700;background:rgba(255,255,255,.1);color:rgba(255,255,255,.85)">💬 Expressions · 10–12 ans</span>
+            <span style="padding:4px 12px;border-radius:10px;font-size:11px;font-weight:700;background:rgba(255,255,255,.1);color:rgba(255,255,255,.85)">🗣️ Dialogue · 12+ ans</span>
+          </div>
+          <p style="font-size:.75rem;color:rgba(255,255,255,.45);margin-top:12px;margin-bottom:0">Utilise l'API Web Speech — app PocketSage, Chrome (Android/PC) ou Safari (iPhone/iPad). <strong style="color:rgba(255,200,100,.8)">⚠️ Connexion Internet requise</strong> — l'audio est traité par Google/Apple, pas par PocketSage. Non disponible hors ligne.</p>
+        </div>
+      </div>
+
+      <!-- TTS -->
+      <div style="background:linear-gradient(135deg,#0a2840,#0d3d5c);border-radius:20px;padding:28px;color:#fff;display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap">
+        <div style="font-size:40px;flex-shrink:0;margin-top:2px">🔊</div>
+        <div style="flex:1;min-width:220px">
+          <h3 style="color:#fff;font-size:1.05rem;margin-bottom:8px">Synthèse vocale IA (TTS)</h3>
+          <p style="font-size:.85rem;color:rgba(255,255,255,.75);line-height:1.6;margin:0 0 14px">Les questions et consignes sont lues à voix haute par des voix IA naturelles, adaptées à chaque tranche d'âge :</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <div style="background:rgba(255,255,255,.08);border-radius:10px;padding:12px 16px;flex:1;min-width:180px">
+              <div style="font-size:.82rem;font-weight:700;color:#c084fc;margin-bottom:4px">GS / CP / CE1 — Voix Sensei</div>
+              <div style="font-size:.78rem;color:rgba(255,255,255,.65)">Voix douce et chaleureuse, expressive et bienveillante — comme un vrai maître pour les petits</div>
+            </div>
+            <div style="background:rgba(255,255,255,.08);border-radius:10px;padding:12px 16px;flex:1;min-width:180px">
+              <div style="font-size:.82rem;font-weight:700;color:#60a5fa;margin-bottom:4px">CE2 → adulte + Langues — Voix Narrateur</div>
+              <div style="font-size:.78rem;color:rgba(255,255,255,.65)">Voix narrative agréable et réaliste, haute qualité — disponible dans toutes les langues enseignées</div>
+            </div>
+          </div>
+          <p style="font-size:.75rem;color:rgba(255,255,255,.45);margin-top:12px;margin-bottom:0">Audio pré-généré en MP3 — lecture instantanée, zéro latence, 100% hors-ligne. De nombreuses langues supplémentaires bientôt disponibles.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MODE VOITURE -->
+  <section class="section">
+    <div class="section-header">
+      <span class="chip" style="--accent: #198754">Mode Voiture</span>
+      <h2>Les exercices physiques adaptés partout</h2>
+      <p>Les exercices de sport se transforment automatiquement en mouvements de yoga adaptés à la position assise — parfaits pour les longs trajets en voiture.</p>
+    </div>
+    <div class="voiture-banner">
+      <div class="voiture-icon">🚗</div>
+      <div class="voiture-text">
+        <h3>Mode Voiture — Yoga en trajet</h3>
+        <p>
+          En mode voiture, chaque défi physique devient un exercice de yoga assis : respiration, étirements du cou, rotations des épaules, activation des abdominaux sans bouger. L'enfant continue de bouger et de se recentrer, même dans un siège.
+        </p>
+        <span class="voiture-badge">🧘 Adapté à la position assise · Validé pour la sécurité</span>
+      </div>
+    </div>
+    <div style="margin-top:20px; display:grid; grid-template-columns:repeat(auto-fill, minmax(190px, 1fr)); gap:12px;">
+      <div class="reward-item">
+        <div class="reward-icon" style="background: linear-gradient(135deg,#198754,#4CAF50)">🫁</div>
+        <div class="reward-text">
+          <h4>Respiration carrée</h4>
+          <p>4-4-4-4 : inspire, retiens, expire, pause. Idéal pour se recentrer après des questions.</p>
+        </div>
+      </div>
+      <div class="reward-item">
+        <div class="reward-icon" style="background: linear-gradient(135deg,#198754,#4CAF50)">🙆</div>
+        <div class="reward-text">
+          <h4>Étirements du cou</h4>
+          <p>Rotations douces droite-gauche, haut-bas. Libère les tensions de la nuque.</p>
+        </div>
+      </div>
+      <div class="reward-item">
+        <div class="reward-icon" style="background: linear-gradient(135deg,#198754,#4CAF50)">💪</div>
+        <div class="reward-text">
+          <h4>Contractions musculaires</h4>
+          <p>Abdos, fessiers, bras — sans bouger du siège. Maintient l'énergie sur la durée.</p>
+        </div>
+      </div>
+      <div class="reward-item">
+        <div class="reward-icon" style="background: linear-gradient(135deg,#198754,#4CAF50)">🤲</div>
+        <div class="reward-text">
+          <h4>Postures des mains</h4>
+          <p>Mudras simples et pressions inter-doigts. Stimule la concentration et la motricité fine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RÉCOMPENSES & MONDE -->
+  <section class="section">
+    <div class="section-header">
+      <span class="chip" style="--accent: var(--a-maths)">Motivation</span>
+      <h2>Construire son propre monde</h2>
+      <p>Chaque bonne réponse rapporte des crédits. Les crédits financent la construction d'un univers personnel — une motivation durable, intrinsèque.</p>
+    </div>
+    <div class="rewards-list">
+      <div class="reward-item">
+        <div class="reward-icon">✨</div>
+        <div class="reward-text">
+          <h4>Crédits & Monnaie du savoir</h4>
+          <p>Chaque réponse correcte génère des crédits. Plus la question est difficile, plus la récompense est grande.</p>
+        </div>
+      </div>
+      <div class="reward-item">
+        <div class="reward-icon">🏗️</div>
+        <div class="reward-text">
+          <h4>Construction du monde</h4>
+          <p>Les crédits permettent de construire et personnaliser un univers : maisons, jardins, animaux, explorations.</p>
+        </div>
+      </div>
+      <div class="reward-item">
+        <div class="reward-icon">🧑‍🤝‍🧑</div>
+        <div class="reward-text">
+          <h4>Avatars évolutifs</h4>
+          <p>L'avatar de l'enfant grandit avec lui. Déblocages de tenues, accessoires et environnements spéciaux.</p>
+        </div>
+      </div>
+      <div class="reward-item">
+        <div class="reward-icon">🏅</div>
+        <div class="reward-text">
+          <h4>Badges & Titres</h4>
+          <p>Badges thématiques par matière. Des titres comme "Maître des Maths" ou "Explorateur du Monde" valorisent l'effort.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JEUX -->
+  <section class="section">
+    <div class="section-header">
+      <span class="chip" style="--accent: var(--a-sciences)">Mini-Jeux</span>
+      <h2>Des jeux pour développer les capacités</h2>
+      <p>Les mini-jeux de PocketSage entraînent des compétences cognitives réelles, pas juste du divertissement.</p>
+    </div>
+    <div class="games-grid">
+      <div class="game-card">
+        <div class="g-icon">⚡</div>
+        <h4>Speed Quiz</h4>
+        <p>Répondre le plus vite possible sous chrono. Consolide les réponses automatiques.</p>
+        <span class="g-benefit">⏱ Rapidité</span>
+      </div>
+      <div class="game-card">
+        <div class="g-icon">🧩</div>
+        <h4>Puzzle Logique</h4>
+        <p>Reconstituer des patterns visuels. Entraîne la pensée spatiale et l'attention.</p>
+        <span class="g-benefit">🔍 Attention</span>
+      </div>
+      <div class="game-card">
+        <div class="g-icon">🎯</div>
+        <h4>Tir de Précision</h4>
+        <p>Viser la bonne réponse sur un tableau mouvant. Coordination et concentration.</p>
+        <span class="g-benefit">🎯 Précision</span>
+      </div>
+      <div class="game-card">
+        <div class="g-icon">🧠</div>
+        <h4>Mémo+</h4>
+        <p>Retenir des séquences de plus en plus longues. Améliore la mémoire de travail.</p>
+        <span class="g-benefit">🧠 Mémoire</span>
+      </div>
+      <div class="game-card">
+        <div class="g-icon">🗺️</div>
+        <h4>Labyrinthe</h4>
+        <p>Trouver le chemin tout en répondant à des questions. Multitâche et autonomie.</p>
+        <span class="g-benefit">🗺️ Autonomie</span>
+      </div>
+      <div class="game-card">
+        <div class="g-icon">🎲</div>
+        <h4>Défi Famille</h4>
+        <p>Inviter un proche à se mesurer. La compétition saine booste la motivation.</p>
+        <span class="g-benefit">👨‍👩‍👧 Lien familial</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HISTOIRES DE NUIT -->
+  <section class="section">
+    <div class="section-header">
+      <span class="chip" style="--accent: #7986CB">Bien-être</span>
+      <h2>L'espace Nuit & Bien-être</h2>
+      <p>Un espace calme séparé du jeu, dédié à la relaxation, la lecture et les exercices de respiration.</p>
+    </div>
+    <div class="nuit-section">
+      <h3>🌙 Trois formats pour chaque moment</h3>
+      <p style="font-size:.85rem; color:rgba(255,255,255,.65); margin-bottom:4px">
+        L'espace nuit n'est pas une matière de plus — c'est un temps de décompression qui s'adapte à ce dont l'enfant a besoin.
+      </p>
+      <div class="nuit-types">
+        <div class="nuit-type">
+          <div class="nt-icon">📖</div>
+          <h4>Histoires longues</h4>
+          <p>Récits immersifs de 4–5 min pour s'endormir. Texte + narration audio disponible.</p>
+        </div>
+        <div class="nuit-type">
+          <div class="nt-icon">⚡</div>
+          <h4>Histoires courtes</h4>
+          <p>Micro-récits de 1 min à glisser entre deux séquences d'exercices pour souffler.</p>
+        </div>
+        <div class="nuit-type">
+          <div class="nt-icon">🫁</div>
+          <h4>Histoires respirées</h4>
+          <p>Histoires guidées avec exercices de respiration intégrés. Rythme 4-6, 4-8 ou cohérence cardiaque.</p>
+        </div>
+        <div class="nuit-type">
+          <div class="nt-icon">🧘</div>
+          <h4>Méditations</h4>
+          <p>Courtes méditations adaptées à l'âge. Idéales avant de dormir ou après une activité intense.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODE COACH SPORTIF -->
+  <section class="section">
+    <div class="section-header">
+      <span class="chip" style="--accent: #FF6B6B">Sport</span>
+      <h2>Mode Coach Sportif — activité physique guidée</h2>
+      <p>Un entraînement scientifiquement ordonné, adapté à chaque âge. Le coach annonce chaque exercice à voix haute et encourage l'enfant tout au long de la séance.</p>
+    </div>
+    <div class="coach-banner">
+      <h3 style="font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:10px">🏋️ Comment ça marche ?</h3>
+      <p style="font-size:.88rem;color:rgba(255,255,255,.7);max-width:560px">
+        Accessible depuis la section Défis dans l'app, le Mode Coach propose des séances complètes alternant cardio, gainage, étirements et récupération respiratoire — dans un ordre validé par les principes d'entraînement sportif. Chaque exercice est annoncé vocalement. L'enfant (ou l'adulte) choisit son groupe d'âge, puis le coach prend le relais.
+      </p>
+      <div class="coach-age-grid">
+        <div class="coach-age-card" style="background:rgba(173,232,244,.15);border:1px solid rgba(173,232,244,.2)">
+          <div class="ca-emoji">🐣</div>
+          <div class="ca-label">4–6 ans · 20 min</div>
+          <div class="ca-dur">8 exercices · séance douce</div>
+          <div class="ca-pattern">Cardio léger → gainage court → étirements → respiration</div>
+        </div>
+        <div class="coach-age-card" style="background:rgba(183,228,199,.15);border:1px solid rgba(183,228,199,.2)">
+          <div class="ca-emoji">🐸</div>
+          <div class="ca-label">7–10 ans · 30 min</div>
+          <div class="ca-dur">10 exercices · séance équilibrée</div>
+          <div class="ca-pattern">Cardio × 4 → gainage × 3 → étirements × 2 → respiration</div>
+        </div>
+        <div class="coach-age-card" style="background:rgba(255,209,102,.12);border:1px solid rgba(255,209,102,.2)">
+          <div class="ca-emoji">🦅</div>
+          <div class="ca-label">11–14 ans · 35 min</div>
+          <div class="ca-dur">12 exercices · séance intensive</div>
+          <div class="ca-pattern">Cardio × 5 → gainage × 3 → étirements × 3 → respiration</div>
+        </div>
+        <div class="coach-age-card" style="background:rgba(255,107,107,.12);border:1px solid rgba(255,107,107,.2)">
+          <div class="ca-emoji">💪</div>
+          <div class="ca-label">Adulte · 40 min</div>
+          <div class="ca-dur">14 exercices · séance complète</div>
+          <div class="ca-pattern">Cardio × 5 → gainage × 4 → étirements × 4 → respiration</div>
+        </div>
+      </div>
+      <div class="coach-feature-row">
+        <div class="coach-feature-badge">🎙️ <strong>Coach vocal</strong> — annonce chaque exercice et encourage</div>
+        <div class="coach-feature-badge">🔀 <strong>Alternance intelligente</strong> — jamais deux types identiques à la suite</div>
+        <div class="coach-feature-badge">🫁 <strong>Sécurité respiratoire</strong> — exercices intenses jamais enchaînés sans pause</div>
+        <div class="coach-feature-badge">🚗 <strong>Mode Voiture compatible</strong> — exercices adaptés à la position assise</div>
+      </div>
+    </div>
+    <div style="margin-top:20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px">
+      <div class="reward-item">
+        <div class="reward-icon" style="background:linear-gradient(135deg,#FF6B6B,#C9184A)">🔥</div>
+        <div class="reward-text">
+          <h4>Cardio dynamique</h4>
+          <p>Sauts, course sur place, jumping jacks — exercices courts et intenses pour activer le cœur et brûler l'énergie.</p>
+        </div>
+      </div>
+      <div class="reward-item">
+        <div class="reward-icon" style="background:linear-gradient(135deg,#845EF7,#5B3FD4)">💪</div>
+        <div class="reward-text">
+          <h4>Gainage & core</h4>
+          <p>Pompes, planches, squats — renforce la sangle abdominale et les muscles posturaux. Essentiel pour la croissance.</p>
+        </div>
+      </div>
+      <div class="reward-item">
+        <div class="reward-icon" style="background:linear-gradient(135deg,#4CAF50,#2E7D32)">🧘</div>
+        <div class="reward-text">
+          <h4>Étirements & souplesse</h4>
+          <p>Postures douces pour relâcher les muscles après l'effort. Évite les courbatures et améliore la récupération.</p>
+        </div>
+      </div>
+      <div class="reward-item">
+        <div class="reward-icon" style="background:linear-gradient(135deg,#26C6DA,#00838F)">🌬️</div>
+        <div class="reward-text">
+          <h4>Récupération respiratoire</h4>
+          <p>Chaque séance se termine par des exercices de respiration guidés — retour au calme progressif, comme le ferait un vrai coach.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TABLES & PRONONCIATION -->
+  <section class="section">
+    <div class="section-header">
+      <span class="chip" style="--accent:#FF6B35">Maths & Langues</span>
+      <h2>Tables de multiplication & Prononciation</h2>
+      <p>Deux modules phares pour maîtriser les tables et progresser à l'oral en langues vivantes.</p>
+    </div>
+
+    <!-- TABLES DE MULTIPLICATION -->
+    <div style="margin-bottom:32px">
+      <h3 style="font-size:1.1rem;font-weight:800;margin-bottom:16px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:22px">✖️</span> Tables de multiplication — 5 techniques visuelles
+      </h3>
+      <p style="font-size:.9rem;color:var(--fg-mid);margin-bottom:20px;max-width:600px">
+        Les tables de multiplication sont souvent source de stress. PocketSage propose 5 méthodes éprouvées,
+        chacune adaptée à un profil d'apprentissage différent — votre enfant en trouvera forcément une qui lui convient !
+      </p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px">
+
+        <div style="background:var(--surface);border:2px solid #4CAF50;border-radius:16px;padding:18px">
+          <div style="font-size:28px;margin-bottom:8px">🎋</div>
+          <div style="font-size:.95rem;font-weight:800;margin-bottom:4px">Bâtonnets japonais</div>
+          <div style="display:inline-block;font-size:11px;font-weight:700;padding:2px 10px;border-radius:10px;background:rgba(76,175,80,.12);color:#4CAF50;margin-bottom:8px">6–9 ans · CP → CE2</div>
+          <p style="font-size:.82rem;color:var(--fg-mid);margin:0;line-height:1.5">On trace des lignes diagonales et on compte leurs croisements. <strong>Pas besoin de mémoriser</strong> — le résultat se lit visuellement ! Idéal pour les enfants visuels qui découvrent la multiplication.</p>
+          <p style="font-size:.78rem;color:#4CAF50;margin-top:8px;font-style:italic">✅ Aucune mémorisation requise · Développe la pensée spatiale</p>
+        </div>
+
+        <div style="background:var(--surface);border:2px solid #2196F3;border-radius:16px;padding:18px">
+          <div style="font-size:28px;margin-bottom:8px">🏛️</div>
+          <div style="font-size:.95rem;font-weight:800;margin-bottom:4px">Table de Pythagore</div>
+          <div style="display:inline-block;font-size:11px;font-weight:700;padding:2px 10px;border-radius:10px;background:rgba(33,150,243,.12);color:#2196F3;margin-bottom:8px">7–10 ans · CE1 → CM2</div>
+          <p style="font-size:.82rem;color:var(--fg-mid);margin:0;line-height:1.5">La grille interactive 10×10 avec des couleurs par famille de tables. L'enfant découvre les <strong>patterns et la symétrie</strong> (3×7 = 7×3). Un quiz intégré renforce les apprentissages.</p>
+          <p style="font-size:.78rem;color:#2196F3;margin-top:8px;font-style:italic">✅ Comprendre les structures · Vision globale des tables</p>
+        </div>
+
+        <div style="background:var(--surface);border:2px solid #9C27B0;border-radius:16px;padding:18px">
+          <div style="font-size:28px;margin-bottom:8px">🧠</div>
+          <div style="font-size:.95rem;font-weight:800;margin-bottom:4px">Histoires mnémotechniques</div>
+          <div style="display:inline-block;font-size:11px;font-weight:700;padding:2px 10px;border-radius:10px;background:rgba(156,39,176,.12);color:#9C27B0;margin-bottom:8px">7–11 ans · CE1 → CM2</div>
+          <p style="font-size:.82rem;color:var(--fg-mid);margin:0;line-height:1.5">Chaque multiplication difficile a une <strong>histoire et une image mémorable</strong>. Ex : "6 guitaristes jouent 7 notes → 42 mélodies !". Idéal pour les enfants avec une mémoire narrative.</p>
+          <p style="font-size:.78rem;color:#9C27B0;margin-top:8px;font-style:italic">✅ Les faits restent en mémoire longtemps · Plaisir d'apprendre</p>
+        </div>
+
+        <div style="background:var(--surface);border:2px solid #FF9800;border-radius:16px;padding:18px">
+          <div style="font-size:28px;margin-bottom:8px">⚡</div>
+          <div style="font-size:.95rem;font-weight:800;margin-bottom:4px">Méthode Trachtenberg</div>
+          <div style="display:inline-block;font-size:11px;font-weight:700;padding:2px 10px;border-radius:10px;background:rgba(255,152,0,.12);color:#FF9800;margin-bottom:8px">10–15 ans · CM1 → 3ème</div>
+          <p style="font-size:.82rem;color:var(--fg-mid);margin:0;line-height:1.5">Inventée par Jakow Trachtenberg, cette méthode donne des <strong>règles magiques</strong> pour chaque table (×9, ×11, ×12…). Calculer mentalement sans effort, à la vitesse d'un ordinateur !</p>
+          <p style="font-size:.78rem;color:#FF9800;margin-top:8px;font-style:italic">✅ Effet "waouh" garanti · Très efficace au collège</p>
+        </div>
+
+        <div style="background:var(--surface);border:2px solid #E91E63;border-radius:16px;padding:18px">
+          <div style="font-size:28px;margin-bottom:8px">🎯</div>
+          <div style="font-size:.95rem;font-weight:800;margin-bottom:4px">Flash Chrono</div>
+          <div style="display:inline-block;font-size:11px;font-weight:700;padding:2px 10px;border-radius:10px;background:rgba(233,30,99,.12);color:#E91E63;margin-bottom:8px">8–15 ans · CE2 → 3ème</div>
+          <p style="font-size:.82rem;color:var(--fg-mid);margin:0;line-height:1.5">Quiz chronométré (10 secondes par question) sur les multiplications ET les divisions. Score, série de bonnes réponses, difficulté adaptée à l'âge. <strong>Consolide tous les apprentissages</strong>.</p>
+          <p style="font-size:.78rem;color:#E91E63;margin-top:8px;font-style:italic">✅ Automatisation des faits · Compétition saine avec soi-même</p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FORMULAIRES BÊTA -->
+  <section class="section" id="retours">
+    <div class="section-header">
+      <span class="chip" style="--accent: var(--a-venture)">Bêta-test</span>
+      <h2>Vos retours nous sont précieux</h2>
+      <p>Ce formulaire génère un message structuré que vous pouvez envoyer directement. Chaque rapport est traçable et nous permet d'améliorer l'application.</p>
+    </div>
+
+    <div class="form-tabs">
+      <button class="tab-btn active" onclick="switchTab('questionnaire', this)">📊 Questionnaire</button>
+      <button class="tab-btn" onclick="switchTab('bug', this)">🐛 Rapport de bug</button>
+      <button class="tab-btn" onclick="switchTab('suggestion', this)">💡 Suggestion</button>
+    </div>
+
+    <!-- QUESTIONNAIRE -->
+    <div class="form-panel visible" id="panel-questionnaire">
+      <div class="form-row">
+        <div class="field">
+          <label>Prénom de l'enfant (optionnel)</label>
+          <input type="text" id="q-prenom" placeholder="ex. Léa">
+        </div>
+        <div class="field">
+          <label>Âge de l'enfant</label>
+          <select id="q-age">
+            <option value="">— choisir —</option>
+            <option>4–5 ans</option><option>6–7 ans</option><option>8–9 ans</option>
+            <option>10–11 ans</option><option>12–13 ans</option><option>14+ ans</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Impression générale ⭐</label>
+        <div class="stars-row" id="stars-general" data-val="0">
+          <button class="star-btn" data-n="1" onclick="setStar('general',1)">⭐</button>
+          <button class="star-btn" data-n="2" onclick="setStar('general',2)">⭐</button>
+          <button class="star-btn" data-n="3" onclick="setStar('general',3)">⭐</button>
+          <button class="star-btn" data-n="4" onclick="setStar('general',4)">⭐</button>
+          <button class="star-btn" data-n="5" onclick="setStar('general',5)">⭐</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>L'enfant a-t-il aimé utiliser l'application ?</label>
+        <select id="q-enfant-aime">
+          <option value="">— choisir —</option>
+          <option>Oui, beaucoup</option>
+          <option>Oui, un peu</option>
+          <option>Indifférent</option>
+          <option>Non, pas vraiment</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Niveau de difficulté ressenti</label>
+        <select id="q-difficulte">
+          <option value="">— choisir —</option>
+          <option>Trop facile</option>
+          <option>Adapté</option>
+          <option>Un peu difficile</option>
+          <option>Trop difficile</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Quelle(s) matière(s) a-t-il/elle préférées ?</label>
+        <input type="text" id="q-matieres" placeholder="ex. Maths, Langues, Aventure...">
+      </div>
+
+      <div class="field">
+        <label>Mode Aventure : avez-vous testé ?</label>
+        <select id="q-aventure">
+          <option value="">— choisir —</option>
+          <option>Oui, plusieurs fois</option>
+          <option>Oui, une fois</option>
+          <option>Non, pas encore</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Commentaire libre</label>
+        <textarea id="q-comment" placeholder="Qu'est-ce qui vous a surpris ? Qu'est-ce qui manque ?"></textarea>
+      </div>
+
+      <button class="submit-btn" onclick="generateMessage('questionnaire')">📋 Générer le message à envoyer</button>
+      <div class="feedback-box" id="fb-questionnaire"></div>
+      <div class="copy-instructions" id="ci-questionnaire">👆 Copiez le texte ci-dessous et envoyez-le par e-mail ou message :</div>
+      <div class="copy-area" id="ca-questionnaire"></div>
+      <button class="copy-btn" id="cb-questionnaire" onclick="copyText('questionnaire')">📋 Copier</button>
+    </div>
+
+    <!-- BUG REPORT -->
+    <div class="form-panel" id="panel-bug">
+      <div class="form-row">
+        <div class="field">
+          <label>Module concerné <span style="color:var(--a-maths)">*</span></label>
+          <select id="b-module" required>
+            <option value="">— choisir le module —</option>
+            <optgroup label="Écrans principaux">
+              <option>Accueil / Menu</option>
+              <option>Profil enfant</option>
+              <option>Sélection matière</option>
+            </optgroup>
+            <optgroup label="Matières">
+              <option>Maths</option>
+              <option>Logique / Suites</option>
+              <option>Langues</option>
+              <option>Sciences</option>
+              <option>Histoire</option>
+              <option>Géographie</option>
+              <option>Politesse</option>
+              <option>Dénombrement / Intrus</option>
+            </optgroup>
+            <optgroup label="Modes spéciaux">
+              <option>Mode Aventure</option>
+              <option>Mode Voiture</option>
+              <option>Mode Coach Sportif</option>
+              <option>Espace Nuit / Histoires</option>
+              <option>Méditation</option>
+            </optgroup>
+            <optgroup label="Récompenses & Jeux">
+              <option>Crédits / Monde</option>
+              <option>Mini-jeux</option>
+              <option>Défis physiques</option>
+            </optgroup>
+            <optgroup label="Technique">
+              <option>Chargement / Performance</option>
+              <option>Audio / Son</option>
+              <option>Affichage / Mise en page</option>
+              <option>Autre</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="field">
+          <label>Gravité</label>
+          <div class="severity-row" id="sev-row" data-val="">
+            <button class="severity-btn" data-sev="1" onclick="setSev(1)">🟢 Mineur</button>
+            <button class="severity-btn" data-sev="2" onclick="setSev(2)">🟡 Gênant</button>
+            <button class="severity-btn" data-sev="3" onclick="setSev(3)">🔴 Bloquant</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Description du problème <span style="color:var(--a-maths)">*</span></label>
+        <textarea id="b-desc" placeholder="Que s'est-il passé ? Décrivez le comportement inattendu…" required></textarea>
+      </div>
+
+      <div class="field">
+        <label>Comment reproduire (étapes)</label>
+        <textarea id="b-repro" placeholder="1. J'ai appuyé sur…&#10;2. Ensuite…&#10;3. Le problème apparaît quand…" style="min-height:80px"></textarea>
+        <span class="hint">Ces étapes nous aident à retrouver le bug précisément.</span>
+      </div>
+
+      <div class="field">
+        <label>Comportement attendu</label>
+        <input type="text" id="b-expected" placeholder="J'attendais que…">
+      </div>
+
+      <div class="field">
+        <label>Appareil utilisé (optionnel)</label>
+        <input type="text" id="b-device" placeholder="ex. iPhone 13, iPad, Samsung Galaxy…">
+      </div>
+
+      <button class="submit-btn" onclick="generateMessage('bug')">📋 Générer le rapport à envoyer</button>
+      <div class="feedback-box" id="fb-bug"></div>
+      <div class="copy-instructions" id="ci-bug">👆 Copiez ce rapport et envoyez-le par e-mail ou message :</div>
+      <div class="copy-area" id="ca-bug"></div>
+      <button class="copy-btn" id="cb-bug" onclick="copyText('bug')">📋 Copier</button>
+    </div>
+
+    <!-- SUGGESTION -->
+    <div class="form-panel" id="panel-suggestion">
+      <div class="field">
+        <label>Catégorie de suggestion</label>
+        <select id="s-cat">
+          <option value="">— choisir —</option>
+          <option>Nouvelle matière / contenu</option>
+          <option>Amélioration d'une matière existante</option>
+          <option>Mode Aventure</option>
+          <option>Mode Voiture</option>
+          <option>Mode Coach Sportif</option>
+          <option>Récompenses / Monde</option>
+          <option>Mini-jeux</option>
+          <option>Interface / Ergonomie</option>
+          <option>Audio / Son</option>
+          <option>Autre idée</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Votre suggestion <span style="color:var(--a-maths)">*</span></label>
+        <textarea id="s-text" placeholder="Décrivez votre idée. Plus vous êtes précis, mieux nous pouvons l'évaluer !" required style="min-height:100px"></textarea>
+      </div>
+
+      <div class="field">
+        <label>Pourquoi cette idée serait utile ?</label>
+        <textarea id="s-why" placeholder="Quel problème ça résout ? Pour quel type d'enfant ?" style="min-height:70px"></textarea>
+      </div>
+
+      <div class="field">
+        <label>Priorité perçue</label>
+        <div class="stars-row" id="stars-priority" data-val="0">
+          <button class="star-btn" data-n="1" onclick="setStar('priority',1)">⭐</button>
+          <button class="star-btn" data-n="2" onclick="setStar('priority',2)">⭐</button>
+          <button class="star-btn" data-n="3" onclick="setStar('priority',3)">⭐</button>
+          <button class="star-btn" data-n="4" onclick="setStar('priority',4)">⭐</button>
+          <button class="star-btn" data-n="5" onclick="setStar('priority',5)">⭐</button>
+        </div>
+      </div>
+
+      <button class="submit-btn" onclick="generateMessage('suggestion')">📋 Générer la suggestion à envoyer</button>
+      <div class="feedback-box" id="fb-suggestion"></div>
+      <div class="copy-instructions" id="ci-suggestion">👆 Copiez ce texte et envoyez-le par e-mail ou message :</div>
+      <div class="copy-area" id="ca-suggestion"></div>
+      <button class="copy-btn" id="cb-suggestion" onclick="copyText('suggestion')">📋 Copier</button>
+    </div>
+
+  </section><!-- /retours -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <strong>PocketSage Academy</strong>
+    <p style="margin-top:6px">Version bêta · Octobre 2026 · Merci de votre confiance et de votre participation !</p>
+    <p style="margin-top:4px; font-size:.72rem; color:var(--fg-mid)">
+      Vos retours sont traités de façon confidentielle et utilisés uniquement pour améliorer l'application.
+    </p>
+  </footer>
+
+</div><!-- /wrap -->
+
+<script>
+// ── TABS ──
+function switchTab(id, btn) {
+  document.querySelectorAll('.form-panel').forEach(p => p.classList.remove('visible'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('panel-' + id).classList.add('visible');
+  btn.classList.add('active');
+}
+
+// ── STARS ──
+function setStar(group, n) {
+  const row = document.getElementById('stars-' + group);
+  row.dataset.val = n;
+  row.querySelectorAll('.star-btn').forEach(b => {
+    b.classList.toggle('lit', parseInt(b.dataset.n) <= n);
+  });
+}
+
+// ── SEVERITY ──
+function setSev(n) {
+  const row = document.getElementById('sev-row');
+  row.dataset.val = n;
+  row.querySelectorAll('.severity-btn').forEach(b => {
+    b.classList.toggle('sel', parseInt(b.dataset.sev) === n);
+  });
+}
+
+// ── GENERATE MESSAGE ──
+const DATE = new Date().toLocaleDateString('fr-FR', { day:'2-digit', month:'long', year:'numeric' });
+
+function generateMessage(type) {
+  let text = '';
+  const fb = document.getElementById('fb-' + type);
+  const ca = document.getElementById('ca-' + type);
+  const ci = document.getElementById('ci-' + type);
+  const cb = document.getElementById('cb-' + type);
+
+  if (type === 'questionnaire') {
+    const prenom = document.getElementById('q-prenom').value.trim();
+    const age = document.getElementById('q-age').value;
+    const aime = document.getElementById('q-enfant-aime').value;
+    const diff = document.getElementById('q-difficulte').value;
+    const mats = document.getElementById('q-matieres').value.trim();
+    const adv = document.getElementById('q-aventure').value;
+    const comment = document.getElementById('q-comment').value.trim();
+    const stars = document.getElementById('stars-general').dataset.val;
+
+    text = `=== QUESTIONNAIRE BÊTA — PocketSage Academy ===
+Date : ${DATE}
+Enfant : ${prenom || '(non renseigné)'}, ${age || '(âge non renseigné)'}
+Note générale : ${'⭐'.repeat(parseInt(stars)||0)} (${stars||'0'}/5)
+
+📌 L'enfant a aimé l'app : ${aime || 'Non répondu'}
+📌 Niveau de difficulté : ${diff || 'Non répondu'}
+📌 Matières préférées : ${mats || 'Non renseigné'}
+📌 Mode Aventure testé : ${adv || 'Non répondu'}
+
+💬 Commentaire libre :
+${comment || '(aucun)'}
+
+---
+Envoyé via la page de présentation bêta PocketSage.`;
+
+  } else if (type === 'bug') {
+    const module = document.getElementById('b-module').value;
+    const sev = document.getElementById('sev-row').dataset.val;
+    const sevLabels = {'1':'🟢 Mineur','2':'🟡 Gênant','3':'🔴 Bloquant'};
+    const desc = document.getElementById('b-desc').value.trim();
+    const repro = document.getElementById('b-repro').value.trim();
+    const expected = document.getElementById('b-expected').value.trim();
+    const device = document.getElementById('b-device').value.trim();
+
+    if (!module || !desc) {
+      fb.textContent = '⚠️ Module et description du problème sont obligatoires.';
+      fb.className = 'feedback-box err';
+      fb.style.display = 'block';
+      ca.style.display = 'none';
+      ci.style.display = 'none';
+      cb.style.display = 'none';
+      return;
+    }
+
+    text = `=== RAPPORT DE BUG — PocketSage Academy ===
+Date : ${DATE}
+Module : ${module}
+Gravité : ${sevLabels[sev] || '(non renseignée)'}
+
+🐛 Description :
+${desc}
+
+🔄 Étapes pour reproduire :
+${repro || '(non renseignées)'}
+
+✅ Comportement attendu :
+${expected || '(non renseigné)'}
+
+📱 Appareil : ${device || '(non renseigné)'}
+
+---
+Rapport généré via la page bêta PocketSage.`;
+
+  } else if (type === 'suggestion') {
+    const cat = document.getElementById('s-cat').value;
+    const stext = document.getElementById('s-text').value.trim();
+    const why = document.getElementById('s-why').value.trim();
+    const stars = document.getElementById('stars-priority').dataset.val;
+
+    if (!stext) {
+      fb.textContent = '⚠️ Merci de décrire votre suggestion.';
+      fb.className = 'feedback-box err';
+      fb.style.display = 'block';
+      ca.style.display = 'none';
+      ci.style.display = 'none';
+      cb.style.display = 'none';
+      return;
+    }
+
+    text = `=== SUGGESTION — PocketSage Academy ===
+Date : ${DATE}
+Catégorie : ${cat || 'Non renseignée'}
+Priorité : ${'⭐'.repeat(parseInt(stars)||0)} (${stars||'0'}/5)
+
+💡 Suggestion :
+${stext}
+
+🎯 Pourquoi c'est utile :
+${why || '(non renseigné)'}
+
+---
+Suggestion via la page bêta PocketSage.`;
+  }
+
+  ca.textContent = text;
+  ca.style.display = 'block';
+  ci.style.display = 'block';
+  cb.style.display = 'inline-flex';
+  fb.style.display = 'none';
+  ca.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// ── COPY ──
+function copyText(type) {
+  const ca = document.getElementById('ca-' + type);
+  const cb = document.getElementById('cb-' + type);
+  const text = ca.textContent;
+  try {
+    navigator.clipboard.writeText(text).then(() => {
+      cb.textContent = '✅ Copié !';
+      setTimeout(() => { cb.textContent = '📋 Copier'; }, 2000);
+    }).catch(() => selectFallback(ca, cb));
+  } catch(e) {
+    selectFallback(ca, cb);
+  }
+}
+
+function selectFallback(el, btn) {
+  const range = document.createRange();
+  range.selectNodeContents(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  btn.textContent = '📌 Sélectionné — copiez avec Ctrl+C';
+  setTimeout(() => { btn.textContent = '📋 Copier'; }, 3000);
+}
+
+
+// ══════════════════════════════════════
+// I18N — Multilingual support FR/EN/RU/UK
+// ══════════════════════════════════════
+const TRANSLATIONS = {
+  FR: {
+    banner: '🚀 Version bêta — Merci de participer au test de PocketSage Academy !',
+    eyebrow: '🎓 PocketSage Academy · Bêta V1',
+    h1: "L'apprentissage, <em>réinventé</em> pour vos enfants",
+    lead: "Une application éducative qui s'adapte à l'âge, aux centres d'intérêt et au rythme de concentration de chaque enfant et adulte — de 4 à 18 ans et +. Chaque session devient une aventure.",
+    phone: "📱 <strong>Prêtez votre téléphone en toute sérénité.</strong> PocketSage remplace les jeux inutiles, les vidéos passives et le scrolling infini par une alternative éducative, ludique et variée. Votre enfant explore, apprend et progresse — vous êtes sûr·e qu'il ne voit que du contenu positif et validé. Et pour les adultes aussi, c'est une façon de transformer ce temps d'écran en quelque chose de vraiment enrichissant.",
+    stat1: "📚 <strong>7 matières</strong> couvertes",
+    stat2: "🌍 <strong>6 langues</strong> disponibles",
+    stat3: "👶 <strong>4–18 ans et +</strong> adapté",
+    stat4: "🕹️ <strong>Jeux + vidéos</strong> intégrés",
+  },
+  EN: {
+    banner: '🚀 Beta version — Thank you for testing PocketSage Academy!',
+    eyebrow: '🎓 PocketSage Academy · Beta V1',
+    h1: 'Learning, <em>reinvented</em> for your children',
+    lead: 'An educational app that adapts to the age, interests and concentration rhythm of every child and adult — from 4 to 18+ years. Each session becomes an adventure.',
+    phone: '📱 <strong>Lend your phone with peace of mind.</strong> PocketSage replaces pointless games, passive videos and endless scrolling with an educational, fun and varied alternative. Your child explores, learns and progresses — you can be sure they only see positive, validated content. For adults too, it's a way to turn screen time into something truly enriching.',
+    stat1: "📚 <strong>7 subjects</strong> covered",
+    stat2: "🌍 <strong>6 languages</strong> available",
+    stat3: "👶 <strong>Ages 4–18+</strong> adapted",
+    stat4: "🕹️ <strong>Games + videos</strong> included",
+  },
+  RU: {
+    banner: '🚀 Бета-версия — Спасибо за участие в тестировании PocketSage Academy!',
+    eyebrow: '🎓 PocketSage Academy · Бета V1',
+    h1: 'Обучение, <em>переосмысленное</em> для ваших детей',
+    lead: 'Образовательное приложение, которое адаптируется к возрасту, интересам и ритму концентрации каждого ребёнка и взрослого — от 4 до 18 лет и старше. Каждая сессия — настоящее приключение.',
+    phone: '📱 <strong>Одолжите телефон без опасений.</strong> PocketSage заменяет бесполезные игры, пассивные видео и бесконечный скроллинг на образовательную, увлекательную и разнообразную альтернативу. Ваш ребёнок исследует, учится и развивается — вы уверены, что он видит только позитивный и проверенный контент. И для взрослых это способ превратить экранное время в по-настоящему полезное занятие.',
+    stat1: "📚 <strong>7 предметов</strong>",
+    stat2: "🌍 <strong>6 языков</strong>",
+    stat3: "👶 <strong>4–18 лет и старше</strong>",
+    stat4: "🕹️ <strong>Игры + видео</strong>",
+  },
+  UK: {
+    banner: '🚀 Бета-версія — Дякуємо за участь у тестуванні PocketSage Academy!',
+    eyebrow: '🎓 PocketSage Academy · Бета V1',
+    h1: 'Навчання, <em>переосмислене</em> для ваших дітей',
+    lead: 'Освітній застосунок, який адаптується до віку, інтересів і ритму концентрації кожної дитини та дорослого — від 4 до 18 років і старше. Кожна сесія стає справжньою пригодою.',
+    phone: '📱 <strong>Позичте телефон без побоювань.</strong> PocketSage замінює безглузді ігри, пасивні відео та нескінченний скролінг на освітню, цікаву та різноманітну альтернативу. Ваша дитина досліджує, навчається і розвивається — ви впевнені, що вона бачить лише позитивний та перевірений контент. І для дорослих це спосіб перетворити час перед екраном на щось справді корисне.',
+    stat1: "📚 <strong>7 предметів</strong>",
+    stat2: "🌍 <strong>6 мов</strong>",
+    stat3: "👶 <strong>4–18 років і старше</strong>",
+    stat4: "🕹️ <strong>Ігри + відео</strong>",
+  }
+};
+
+let currentLang = 'FR';
+
+function detectLang() {
+  try {
+    const bl = (navigator.language || navigator.userLanguage || 'fr').toLowerCase().split('-')[0];
+    const map = { fr: 'FR', en: 'EN', ru: 'RU', uk: 'UK' };
+    return map[bl] || 'FR';
+  } catch(e) { return 'FR'; }
+}
+
+function setLang(lang) {
+  if (!TRANSLATIONS[lang]) lang = 'FR';
+  currentLang = lang;
+  // Update active button
+  ['FR','EN','RU','UK'].forEach(function(l) {
+    var btn = document.getElementById('lb-' + l);
+    if (btn) btn.classList.toggle('active', l === lang);
+  });
+  // Apply translations
+  var t = TRANSLATIONS[lang];
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    if (t[key] === undefined) return;
+    if (el.getAttribute('data-i18n-html')) {
+      el.innerHTML = t[key];
+    } else {
+      el.textContent = t[key];
+    }
+  });
+  // Save choice
+  try { localStorage.setItem('ps_parents_lang', lang); } catch(e) {}
+  // Update <html lang>
+  document.documentElement.lang = lang.toLowerCase();
+}
+
+// Init on load
+(function() {
+  var saved = '';
+  try { saved = localStorage.getItem('ps_parents_lang') || ''; } catch(e) {}
+  setLang(saved || detectLang());
+})();
+
+</script>
+
+</body></html>
+</body></html>
