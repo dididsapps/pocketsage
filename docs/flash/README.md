@@ -4,10 +4,10 @@ Point d'entrée pour reprendre le travail sur le module Flash. À lire dans l'or
 
 | Fichier | Contenu |
 |---|---|
-| `00_etat_des_lieux.md` | Ce qui existe (151 cartes, code), limites, journal du 09/11, restes à faire |
+| `00_etat_des_lieux.md` | Ce qui existe (201 cartes, code), limites, journaux des 09 et 10/11, restes à faire |
 | `01_concurrents_antiscroll.md` | Applis concurrentes : prix, forces, faiblesses, marché, angles de communication |
 | `02_sources_contenu.md` | Sources de contenu utilisables commercialement, licences, exemples de cartes |
-| `03_procedures_mp3_traductions.md` | Ajouter/modifier des cartes, générer traductions + MP3, automatisation, **sécurité des clés** |
+| `03_procedures_mp3_traductions.md` | **Ajouter/modifier des cartes** (`data/flash/fr.json`), traductions + MP3 automatiques (GitHub Action), révision espacée, **sécurité des clés** |
 | `04_plan_action.md` | Positionnement, fonctionnalités à construire, plan contenu, plan com |
 
 Pour une nouvelle session Claude : « lis `docs/flash/README.md` puis reprends le plan d'action ».

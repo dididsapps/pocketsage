@@ -1,4 +1,4 @@
-# Flash : plan d'action (10/11/2026)
+# Flash : plan d'action (mis à jour le 10/11/2026)
 
 Synthèse de `01_concurrents_antiscroll.md` et `02_sources_contenu.md`. Cocher au fur et à mesure.
 
@@ -15,26 +15,27 @@ Les applis anti-scroll existantes (Deepstash, Headway, Imprint, Nibble, Blinkist
 ## Étape 1 : rendre le Flash « produit » (environ 1 semaine)
 
 Par ordre d'impact :
-1. [ ] **Sortir les cartes de `index.html`** vers `data/flash/fr.json` (lazy-load, comme les langues). C'est la condition pour passer à 1000+ cartes sans alourdir l'app.
-2. [ ] **Nouveau format de carte** : titre / idée / *Essaie aujourd'hui* / question de rappel (QCM 3 choix) / source (nom + URL + licence) / âge. Une version enfant et une version adulte quand c'est utile.
-3. [ ] **Filtre par âge du profil** (le champ `age` existe déjà).
+1. [x] **Sortir les cartes de `index.html`** vers `data/flash/fr.json` (lazy-load, comme les langues). C'est la condition pour passer à 1000+ cartes sans alourdir l'app.
+2. [x] **Nouveau format de carte** : titre / idée / *Essaie aujourd'hui* / question de rappel (QCM 3 choix) / source (nom + URL + licence) / âge. Une version enfant et une version adulte quand c'est utile.
+3. [x] **Filtre par âge du profil** (le champ `age` existe déjà).
 4. [ ] **Swipe vertical plein écran** + tap pour l'audio.
-5. [ ] **Audio MP3 R2** dans `renderFlashCard()`, voix du téléphone en secours, et **affichage traduit** selon la langue du profil.
+5. [x] **Audio MP3 R2** dans `renderFlashCard()`, voix du téléphone en secours, et **affichage traduit** selon la langue du profil.
 6. [ ] **Favoris / collections**, gratuits (contrairement au paywall Deepstash).
-7. [ ] **Rappel espacé** : les cartes vues reviennent sous forme de question à J+2, J+7 et J+21, avec points et réaction de l'avatar. C'est notre principal différenciateur.
+7. [x] **Rappel espacé** : les cartes vues reviennent sous forme de question à J+2, J+7 et J+21, avec points et réaction de l'avatar. C'est notre principal différenciateur.
 8. [ ] **Fin de session volontaire** : après 10 cartes, « Tu as appris 10 choses, défi physique ou pause ? ». C'est le design non addictif, à mettre en avant (DSA).
 9. [ ] **Série quotidienne + ligue familiale** entre profils (mécanique Duolingo/Mimo).
 10. [ ] **Bilan parent** : ce que chaque enfant a vu et retenu cette semaine, plus une question à lui poser au dîner.
 
 ## Étape 2 : contenu (de 151 à 1000+ cartes)
 
-- [ ] Corriger les cartes signalées : CF-001 (power pose : l'effet hormonal n'a pas été reproduit), MO-001 (trop proche de James Clear), EJ-001, EM-002, PS-002 (à nuancer).
-- [ ] Ajouter le champ `source` aux 151 cartes existantes.
+- [x] Corriger les cartes signalées : CF-001 (power pose : l'effet hormonal n'a pas été reproduit), MO-001 (trop proche de James Clear), EJ-001, EM-002, PS-002 (à nuancer).
+- [x] Ajouter le champ `source` aux 151 cartes existantes.
+- [x] Premier lot : 50 cartes (201 au total).
 - [ ] Cycles de 275 cartes (25 × 11 catégories) générées par lots **à partir de faits sourcés**, puis relues (1-2 min par carte). 4 cycles ≈ 1100 cartes.
 - [ ] Nouvelles catégories à envisager : **Parents** (éducation, sommeil, écrans, sans avis médical), **Adultes** (biais, histoire, sciences), **Langues** (une expression par jour, en lien avec le module Langues).
 - [ ] Sources prioritaires : Wikidata (CC0), NASA/NOAA (domaine public US), Smithsonian Open Access (CC0), Wikisource/Gutenberg (citations du domaine public), études scientifiques citées (fait libre, texte réécrit).
 - [ ] À éviter : OpenStax, CK-12, Khan Academy, OMS (pas d'usage commercial) ; copier un texte Wikipedia (ShareAlike) ; résumés de livres récents ; cartes Deepstash.
-- [ ] Après chaque lot : `generate_flash_tts.py` (adapté pour lire le JSON + empreinte du texte), puis push.
+- [x] Pipeline automatique : modifier `data/flash/fr.json` + push → l'Action traduit, vocalise et publie (`03`).
 
 ## Étape 3 : communication
 

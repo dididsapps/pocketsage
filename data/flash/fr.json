@@ -9,27 +9,66 @@
    "texte": "Le cerveau humain produit environ 20 watts en activité normale. C’est autant qu’une ampoule LED standard. Pendant ton sommeil, il ne s’éteint jamais.",
    "tag": "Neurosciences",
    "age": "8+",
-   "couleur": "#6C63FF"
+   "couleur": "#6C63FF",
+   "action": "Essaie aujourd’hui : pose ta main sur ton front et pense : « 20 watts tournent ici, même la nuit ».",
+   "rappel": {
+    "q": "Combien de watts produit le cerveau ?",
+    "choix": [
+     "Environ 20 watts",
+     "Environ 2 000 watts",
+     "Zéro watt"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Raichle & Gusnard, PNAS, 2002 (budget énergétique du cerveau)"
+   }
   },
   {
    "id": "CU-002",
    "cat": "curiosites",
    "emoji": "🐙",
    "titre": "Les pieuvres ont 3 cœurs et un sang bleu",
-   "texte": "Leur hémolymphe contient de la hémocyanine (cuivre) au lieu d’hémoglobine (fer). Deux cœurs s’arrêtent quand elles nagent — elles préfèrent donc marcher sur le fond.",
+   "texte": "Leur sang contient de l’hémocyanine, à base de cuivre, au lieu d’hémoglobine à base de fer : il est bleu. Leur cœur principal s’arrête quand elles nagent, c’est pourquoi elles préfèrent souvent ramper sur le fond.",
    "tag": "Biologie",
    "age": "7+",
-   "couleur": "#06D6A0"
+   "couleur": "#06D6A0",
+   "action": "Essaie aujourd’hui : dessine une pieuvre avec ses 3 cœurs.",
+   "rappel": {
+    "q": "Combien de cœurs a une pieuvre ?",
+    "choix": [
+     "Trois",
+     "Un",
+     "Huit"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Smithsonian Ocean, fiche Octopus"
+   }
   },
   {
    "id": "CU-003",
    "cat": "curiosites",
    "emoji": "🦈",
    "titre": "Les requins existaient avant les arbres",
-   "texte": "Les premiers requins apparaissent il y a 450 millions d’années. Les forêts arrivent 90 millions d’années plus tard. Les requins ont survécu à 5 extinctions de masse.",
+   "texte": "Les premiers requins apparaissent il y a environ 450 millions d’années. Les premiers vrais arbres arrivent environ 60 à 90 millions d’années plus tard. Les requins ont traversé 5 extinctions de masse.",
    "tag": "Géologie",
    "age": "8+",
-   "couleur": "#118AB2"
+   "couleur": "#118AB2",
+   "action": "Essaie aujourd’hui : raconte ce fait à quelqu’un et demande-lui de deviner qui est apparu en premier.",
+   "rappel": {
+    "q": "Qui est apparu en premier ?",
+    "choix": [
+     "Les requins",
+     "Les arbres",
+     "Les dinosaures"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Smithsonian Ocean, Sharks & Rays ; Wikipédia, Archaeopteris"
+   }
   },
   {
    "id": "CU-004",
@@ -39,7 +78,20 @@
    "texte": "L’épaisseur double à chaque pli. Après 42 plis : 440 000 km. La Lune est à 384 000 km. Au pli 103, la feuille aurait le diamètre de l’Univers observable.",
    "tag": "Mathématiques",
    "age": "9+",
-   "couleur": "#FF9F1C"
+   "couleur": "#FF9F1C",
+   "action": "Essaie aujourd’hui : essaie de plier une feuille en deux le plus de fois possible : tu dépasseras rarement 7.",
+   "rappel": {
+    "q": "Que fait l’épaisseur à chaque pli ?",
+    "choix": [
+     "Elle double",
+     "Elle triple",
+     "Elle reste pareille"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Calcul : 0,1 mm × 2⁴² ≈ 440 000 km ; distance Terre-Lune ≈ 384 000 km (NASA)"
+   }
   },
   {
    "id": "CU-005",
@@ -49,57 +101,136 @@
    "texte": "\"Froid\" est l’absence de chaleur, comme l’obscurité est l’absence de lumière. On ne peut pas \"envoyer du froid\" — on retire de la chaleur. Le zéro absolu (-273°C) est la limite.",
    "tag": "Physique",
    "age": "10+",
-   "couleur": "#4ECDC4"
+   "couleur": "#4ECDC4",
+   "action": "Essaie aujourd’hui : touche une cuillère en métal : sens la chaleur de ta main partir dedans.",
+   "rappel": {
+    "q": "Qu’est-ce que le froid ?",
+    "choix": [
+     "Un manque de chaleur",
+     "Une matière invisible",
+     "Un type de lumière"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Thermodynamique de base ; zéro absolu = −273,15 °C (BIPM)"
+   }
   },
   {
    "id": "CU-006",
    "cat": "curiosites",
    "emoji": "🌊",
    "titre": "L’eau chaude peut geler plus vite que l’eau froide",
-   "texte": "L’effet Mpemba : un phénomène réel mais encore non totalement expliqué. Il dépend du contenant, de la dissolution des gaz et des gradients de température.",
+   "texte": "C’est l’effet Mpemba : dans certaines expériences, de l’eau chaude gèle avant de l’eau froide. Les scientifiques débattent encore de quand et pourquoi il se produit : contenant, évaporation, gaz dissous…",
    "tag": "Physique",
    "age": "10+",
-   "couleur": "#118AB2"
+   "couleur": "#118AB2",
+   "action": "Essaie aujourd’hui : demande à un adulte s’il connaît l’effet Mpemba.",
+   "rappel": {
+    "q": "Comment s’appelle cet effet ?",
+    "choix": [
+     "L’effet Mpemba",
+     "L’effet papillon",
+     "L’effet miroir"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Wikipédia, Effet Mpemba",
+    "url": "https://fr.wikipedia.org/wiki/Effet_Mpemba"
+   }
   },
   {
    "id": "CU-007",
    "cat": "curiosites",
    "emoji": "🌍",
-   "titre": "\"Bonjour\" vient d’une prière médiévale",
-   "texte": "\"Bon jour\" signifiait \"que Dieu vous donne un bon jour\". On souhaitait littéralement une bénédiction divine à chaque rencontre. La formule a 800 ans.",
+   "titre": "« Bonjour » était d’abord un souhait",
+   "texte": "« Bonjour » vient de « bon jour » : on souhaitait une bonne journée à la personne rencontrée. Au Moyen Âge, on disait aussi « Dieu vous donne bon jour ». La formule est employée depuis plus de 700 ans.",
    "tag": "Étymologie",
    "age": "8+",
-   "couleur": "#FFD166"
+   "couleur": "#FFD166",
+   "action": "Essaie aujourd’hui : dis « bonjour » à 3 personnes en pensant à son vrai sens.",
+   "rappel": {
+    "q": "De quels mots vient « bonjour » ?",
+    "choix": [
+     "« Bon » et « jour »",
+     "« Bonbon » et « joie »",
+     "Un mot anglais"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "CNRTL, étymologie de « bonjour »"
+   }
   },
   {
    "id": "CU-008",
    "cat": "curiosites",
    "emoji": "🧬",
    "titre": "Tu es composé à 60% d’eau… qui existait avant les dinosaures",
-   "texte": "Les atomes d’hydrogène dans ton corps ont 14 milliards d’ans. L’eau que tu bois a peut-être été bue par un dinosaure, un Romain, ou tombée comme pluie sur les Alpes.",
+   "texte": "Ton corps est fait d’environ 60 % d’eau. Les atomes d’hydrogène de cette eau se sont formés peu après le Big Bang, il y a près de 14 milliards d’années. L’eau que tu bois a déjà fait le tour de la planète des milliers de fois.",
    "tag": "Sciences",
    "age": "8+",
-   "couleur": "#06D6A0"
+   "couleur": "#06D6A0",
+   "action": "Essaie aujourd’hui : en buvant un verre d’eau, imagine tous les voyages qu’elle a faits.",
+   "rappel": {
+    "q": "Quelle part du corps est de l’eau ?",
+    "choix": [
+     "Environ 60 %",
+     "Environ 10 %",
+     "Environ 99 %"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "USGS, The Water in You"
+   }
   },
   {
    "id": "CU-009",
    "cat": "curiosites",
    "emoji": "🐜",
    "titre": "Les fourmis d’Argentine forment une colonie de 6 000 km",
-   "texte": "Des fourmis de Barcelone et d’Italie se reconnaissent et ne s’attaquent pas — elles font partie de la même supercolonie mondiale. C’est la plus grande structure vivante organisée connue.",
+   "texte": "Une supercolonie de fourmis d’Argentine s’étend sur environ 6 000 km le long des côtes de la Méditerranée. Des fourmis venues de lieux très éloignés ne s’attaquent pas : elles se reconnaissent comme une seule grande famille.",
    "tag": "Biologie",
    "age": "9+",
-   "couleur": "#FF6B6B"
+   "couleur": "#FF6B6B",
+   "action": "Essaie aujourd’hui : observe des fourmis dehors : suivent-elles toutes le même chemin ?",
+   "rappel": {
+    "q": "Où s’étend cette supercolonie ?",
+    "choix": [
+     "Le long de la Méditerranée",
+     "Seulement à Paris",
+     "Dans une seule maison"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Giraud et al., PNAS, 2002"
+   }
   },
   {
    "id": "CU-010",
    "cat": "curiosites",
    "emoji": "🎵",
    "titre": "\"Joyeux Anniversaire\" était sous copyright jusqu’en 2016",
-   "texte": "Warner/Chappell Music touchait ~2M$ par an de royalties. Un procès a prouvé que le copyright était frauduleux. La chanson composée en 1893 est maintenant dans le domaine public.",
+   "texte": "Une société touchait environ 2 millions de dollars par an grâce à cette chanson. Un procès a montré que ses droits n’étaient pas valables, et la chanson est libre depuis 2016. Sa mélodie vient d’une chanson pour enfants publiée en 1893.",
    "tag": "Histoire",
    "age": "9+",
-   "couleur": "#9B59B6"
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : chante « Joyeux anniversaire » : tu as le droit, elle est libre !",
+   "rappel": {
+    "q": "Que s’est-il passé en 2016 ?",
+    "choix": [
+     "La chanson est devenue libre",
+     "La chanson a été interdite",
+     "La chanson a été inventée"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Rupa Marya v. Warner/Chappell (2015), règlement en 2016"
+   }
   },
   {
    "id": "CU-011",
@@ -109,47 +240,252 @@
    "texte": "Dans 600 millions d’années, elle sera trop loin pour couvrir le Soleil lors des éclipses totales. Les éclipses parfaites que nous voyons sont un hasard cosmique temporaire.",
    "tag": "Astronomie",
    "age": "10+",
-   "couleur": "#2C3E50"
+   "couleur": "#2C3E50",
+   "action": "Essaie aujourd’hui : ce soir, regarde la Lune et pense qu’elle s’éloigne un tout petit peu.",
+   "rappel": {
+    "q": "De combien la Lune s’éloigne-t-elle par an ?",
+    "choix": [
+     "Environ 3,8 cm",
+     "Environ 3,8 km",
+     "Elle se rapproche"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NASA, mesures laser Apollo (Lunar Laser Ranging)"
+   }
   },
   {
    "id": "CU-012",
    "cat": "curiosites",
    "emoji": "🦋",
    "titre": "Les papillons goûtent avec leurs pattes",
-   "texte": "Leurs capteurs gustatifs sont 200 fois plus sensibles que la langue humaine. En atterrissant sur une plante, ils savent immédiatement si elle convient pour pondre leurs œufs.",
+   "texte": "Les papillons ont des capteurs de goût sur les pattes. En se posant sur une plante, ils savent tout de suite si elle convient pour y pondre leurs œufs.",
    "tag": "Biologie",
    "age": "6+",
-   "couleur": "#E91E63"
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : goûte un aliment les yeux fermés et devine ce que c’est.",
+   "rappel": {
+    "q": "Avec quoi le papillon goûte-t-il ?",
+    "choix": [
+     "Ses pattes",
+     "Ses ailes",
+     "Ses antennes seulement"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Smithsonian, Butterflies taste with their feet"
+   }
   },
   {
    "id": "CU-013",
    "cat": "curiosites",
    "emoji": "🔬",
-   "titre": "Ton corps remplace la quasi-totalité de ses cellules en 7 ans",
-   "texte": "Certaines comme les neurones et les cellules osseuses vivent plus longtemps, mais la plupart se renouvellent constamment. Tu n’es pas le même corps qu’il y a 7 ans.",
+   "titre": "Ton corps renouvelle sans cesse une grande partie de ses cellules",
+   "texte": "La peau, le sang ou l’intestin se renouvellent en quelques jours ou semaines. Mais certaines cellules, comme beaucoup de neurones ou celles du cristallin de l’œil, peuvent durer toute la vie. L’idée « tout est remplacé en 7 ans » est un mythe.",
    "tag": "Biologie",
    "age": "9+",
-   "couleur": "#06D6A0"
+   "couleur": "#06D6A0",
+   "action": "Essaie aujourd’hui : regarde une photo de toi bébé : beaucoup de tes cellules ont changé depuis.",
+   "rappel": {
+    "q": "Quelles cellules durent souvent toute la vie ?",
+    "choix": [
+     "Certains neurones",
+     "La peau",
+     "Le sang"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Spalding, Frisén et al., Cell, 2005"
+   }
   },
   {
    "id": "CU-014",
    "cat": "curiosites",
    "emoji": "⚡",
-   "titre": "La foudre frappe la Terre 100 fois par seconde",
-   "texte": "Soit 8 millions d’éclairs par jour. Un éclair peut atteindre 30 000°C — 5 fois la surface du Soleil. Et pourtant l’air entre les nuages et le sol agit comme un isolant.",
+   "titre": "La foudre frappe la Terre environ 44 fois par seconde",
+   "texte": "Cela fait plus de 3 millions d’éclairs par jour sur la planète. Un éclair peut chauffer l’air à près de 30 000 °C, environ 5 fois la température de la surface du Soleil.",
    "tag": "Physique",
    "age": "7+",
-   "couleur": "#FF9F1C"
+   "couleur": "#FF9F1C",
+   "action": "Essaie aujourd’hui : au prochain orage, compte les secondes entre l’éclair et le tonnerre.",
+   "rappel": {
+    "q": "Combien d’éclairs par seconde sur Terre ?",
+    "choix": [
+     "Environ 44",
+     "Environ 1",
+     "Environ 10 000"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NASA, Lightning Climatology",
+    "url": "https://svs.gsfc.nasa.gov/hyperwall/index/data/events/2012/2012-ams/lightning.txt.html"
+   }
   },
   {
    "id": "CU-015",
    "cat": "curiosites",
    "emoji": "🌱",
    "titre": "Les arbres communiquent sous terre via des champignons",
-   "texte": "Le \"Wood Wide Web\" : les racines échangent nutriments et signaux d’alarme via des réseaux de mycélium. Une forêt est une communauté, pas juste une collection d’arbres.",
+   "texte": "Les racines de nombreux arbres sont reliées à des champignons qui échangent de l’eau et des nutriments. Certains chercheurs pensent que les arbres s’entraident ainsi, mais l’ampleur de ce « Wood Wide Web » est encore débattue.",
    "tag": "Sciences",
    "age": "9+",
-   "couleur": "#2ECC71"
+   "couleur": "#2ECC71",
+   "action": "Essaie aujourd’hui : en forêt ou au parc, regarde les champignons au pied des arbres.",
+   "rappel": {
+    "q": "Par quoi les racines seraient-elles reliées ?",
+    "choix": [
+     "Des champignons",
+     "Des fils électriques",
+     "Des vers de terre"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Simard et al., Nature, 1997 ; Karst et al., Nature Ecology & Evolution, 2023"
+   }
+  },
+  {
+   "id": "CU-016",
+   "cat": "curiosites",
+   "emoji": "🪐",
+   "titre": "Sur Vénus, un jour dure plus longtemps qu’une année",
+   "texte": "Vénus tourne très lentement sur elle-même : environ 243 jours terrestres pour un tour. Mais elle fait le tour du Soleil en 225 jours. Son année est donc plus courte que son jour !",
+   "tag": "Astronomie",
+   "age": "8+",
+   "couleur": "#FF9F1C",
+   "action": "Essaie aujourd’hui : ce soir, cherche Vénus : c’est souvent le point le plus brillant après le coucher du Soleil.",
+   "rappel": {
+    "q": "Sur Vénus, qu’est-ce qui est plus long ?",
+    "choix": [
+     "Le jour",
+     "L’année",
+     "Pareil"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NASA Science, Venus Facts"
+   }
+  },
+  {
+   "id": "CU-017",
+   "cat": "curiosites",
+   "emoji": "🗼",
+   "titre": "La tour Eiffel grandit en été",
+   "texte": "Le fer se dilate quand il fait chaud. Lors des grosses chaleurs, la tour peut prendre une quinzaine de centimètres, et son sommet penche légèrement du côté opposé au Soleil.",
+   "tag": "Physique",
+   "age": "8+",
+   "couleur": "#118AB2",
+   "action": "Essaie aujourd’hui : observe un pont : vois-tu des joints qui laissent le métal bouger ?",
+   "rappel": {
+    "q": "Pourquoi la tour Eiffel grandit-elle en été ?",
+    "choix": [
+     "Le fer se dilate",
+     "Elle pousse",
+     "On l’agrandit"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Futura Sciences, Pourquoi la tour Eiffel change-t-elle de taille ? (2023)",
+    "url": "https://www.futura-sciences.com/planete/questions-reponses/monuments-tour-eiffel-change-t-elle-taille-12124/"
+   }
+  },
+  {
+   "id": "CU-018",
+   "cat": "curiosites",
+   "emoji": "🐝",
+   "titre": "Les abeilles peuvent reconnaître des visages",
+   "texte": "Dans une expérience, des abeilles ont appris à reconnaître une photo de visage humain pour obtenir de l’eau sucrée. Leur cerveau est minuscule, mais très malin !",
+   "tag": "Biologie",
+   "age": "7+",
+   "couleur": "#FFD166",
+   "action": "Essaie aujourd’hui : dessine 3 visages différents et demande à quelqu’un de les reconnaître.",
+   "rappel": {
+    "q": "Qu’ont appris les abeilles de l’expérience ?",
+    "choix": [
+     "À reconnaître un visage",
+     "À parler",
+     "À compter jusqu’à 100"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Dyer, Neumeyer & Chittka, Journal of Experimental Biology, 2005"
+   }
+  },
+  {
+   "id": "CU-019",
+   "cat": "curiosites",
+   "emoji": "🌕",
+   "titre": "L’Australie est plus large que la Lune",
+   "texte": "La Lune mesure environ 3 474 km de diamètre. L’Australie mesure environ 4 000 km d’est en ouest. Un pays plus large qu’un astre entier !",
+   "tag": "Géographie",
+   "age": "9+",
+   "couleur": "#06D6A0",
+   "action": "Essaie aujourd’hui : regarde une carte et trouve l’Australie.",
+   "rappel": {
+    "q": "Qui est le plus large ?",
+    "choix": [
+     "L’Australie",
+     "La Lune",
+     "Pareil"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NASA, Moon Facts ; Geoscience Australia"
+   }
+  },
+  {
+   "id": "CU-020",
+   "cat": "curiosites",
+   "emoji": "🔇",
+   "titre": "Dans l’espace, personne ne t’entend crier",
+   "texte": "Le son a besoin d’air ou d’eau pour voyager. Dans l’espace, il n’y a presque rien : les sons ne passent pas. Les astronautes se parlent par radio.",
+   "tag": "Physique",
+   "age": "8+",
+   "couleur": "#2C3E50",
+   "action": "Essaie aujourd’hui : colle ton oreille sur une table et tapote : le son passe aussi par les objets.",
+   "rappel": {
+    "q": "Pourquoi n’y a-t-il pas de son dans l’espace ?",
+    "choix": [
+     "Il n’y a pas d’air",
+     "Il fait trop froid",
+     "C’est trop loin"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NASA, Can you hear sound in space?"
+   }
+  },
+  {
+   "id": "CU-021",
+   "cat": "curiosites",
+   "emoji": "🐨",
+   "titre": "Les koalas ont des empreintes digitales comme nous",
+   "texte": "Les empreintes des doigts des koalas ressemblent tellement aux nôtres qu’au microscope il est difficile de faire la différence. Pourtant, nos ancêtres sont très éloignés.",
+   "tag": "Biologie",
+   "age": "9+",
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : appuie ton doigt sur une vitre et regarde ton empreinte.",
+   "rappel": {
+    "q": "Quel animal a des empreintes comme les nôtres ?",
+    "choix": [
+     "Le koala",
+     "Le chat",
+     "Le poisson"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Henneberg, Lambert & Leigh, Nature, 1996"
+   }
   },
   {
    "id": "PS-001",
@@ -159,27 +495,66 @@
    "texte": "La mémoire n’est pas un enregistrement. Chaque rappel reconstruit le souvenir et l’altère légèrement. C’est pourquoi deux témoins racontent la même scène différemment.",
    "tag": "Psychologie",
    "age": "11+",
-   "couleur": "#6C63FF"
+   "couleur": "#6C63FF",
+   "action": "Essaie aujourd’hui : raconte un souvenir avec un proche, puis comparez vos versions.",
+   "rappel": {
+    "q": "Que fait le cerveau à chaque rappel ?",
+    "choix": [
+     "Il reconstruit le souvenir",
+     "Il l’efface",
+     "Il le photographie"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Loftus & Palmer, 1974 ; Nader et al., Nature, 2000"
+   }
   },
   {
    "id": "PS-002",
    "cat": "psycho",
    "emoji": "😊",
-   "titre": "Sourire force ton cerveau à ressentir de la joie",
-   "texte": "L’hypothèse du feedback facial : contracter les muscles du sourire active des zones émotionnelles positives dans le cerveau. Même un sourire forcé réduit le stress mesurable.",
+   "titre": "Sourire pourrait légèrement améliorer ton humeur",
+   "texte": "Selon l’hypothèse du « feedback facial », les muscles du visage envoient des signaux au cerveau. Certaines études suggèrent qu’un sourire, même volontaire, améliore un peu l’humeur. L’effet existe mais il est petit, et les chercheurs en discutent encore.",
    "tag": "Neurosciences",
    "age": "8+",
-   "couleur": "#FFD166"
+   "couleur": "#FFD166",
+   "action": "Essaie aujourd’hui : souris 10 secondes devant un miroir et note si ton humeur bouge.",
+   "rappel": {
+    "q": "Que suggèrent certaines études ?",
+    "choix": [
+     "Sourire peut améliorer l’humeur",
+     "Sourire rend triste",
+     "Sourire n’a aucun lien"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Coles et al., Nature Human Behaviour, 2022 (Many Smiles Collaboration)"
+   }
   },
   {
    "id": "PS-003",
    "cat": "psycho",
    "emoji": "💤",
    "titre": "Ton cerveau consolide tes apprentissages pendant le sommeil",
-   "texte": "La nuit, l’hippocampe rejoue les informations de la journée pour les transférer en mémoire à long terme. Dormir après une révision améliore la mémorisation de 20 à 40%.",
+   "texte": "La nuit, l’hippocampe « rejoue » ce que tu as appris dans la journée et aide à le ranger en mémoire à long terme. Dormir après avoir appris aide à mieux s’en souvenir.",
    "tag": "Neurosciences",
    "age": "9+",
-   "couleur": "#9B59B6"
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : relis ta leçon avant de dormir, puis redis-la au réveil.",
+   "rappel": {
+    "q": "Quand le cerveau consolide-t-il les souvenirs ?",
+    "choix": [
+     "Pendant le sommeil",
+     "Pendant les repas",
+     "Jamais"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Diekelmann & Born, Nature Reviews Neuroscience, 2010"
+   }
   },
   {
    "id": "PS-004",
@@ -189,187 +564,526 @@
    "texte": "Les personnes peu compétentes dans un domaine surestiment leurs capacités — parce qu’elles n’ont pas les outils pour mesurer leur propre ignorance. Les vrais experts doutent davantage.",
    "tag": "Psychologie",
    "age": "13+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : choisis un sujet où tu te crois fort et cherche ce que tu ne sais pas encore.",
+   "rappel": {
+    "q": "Qui surestime le plus ses capacités ?",
+    "choix": [
+     "Les débutants",
+     "Les experts",
+     "Personne"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Kruger & Dunning, JPSP, 1999"
+   }
   },
   {
    "id": "PS-005",
    "cat": "psycho",
    "emoji": "🔄",
    "titre": "Prendre une décision fatigue ton cerveau",
-   "texte": "La \"fatigue décisionnelle\" : chaque choix consomme de l’énergie cognitive. Le soir, on fait de moins bonnes décisions. C’est pourquoi Steve Jobs portait toujours la même tenue.",
+   "texte": "Enchaîner beaucoup de choix peut donner une impression de fatigue, et certains chercheurs parlent de « fatigue décisionnelle ». L’effet est débattu, mais réduire les petites décisions (préparer ses affaires la veille, par exemple) libère l’esprit pour ce qui compte.",
    "tag": "Psychologie",
    "age": "12+",
-   "couleur": "#1ABC9C"
+   "couleur": "#1ABC9C",
+   "action": "Essaie aujourd’hui : prépare tes vêtements de demain dès ce soir.",
+   "rappel": {
+    "q": "Que sont les « petites décisions » pour le cerveau ?",
+    "choix": [
+     "Un effort",
+     "Un repos",
+     "Un jeu"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Vohs et al., JPSP, 2008 ; Hagger et al., 2016 (réplication discutée)"
+   }
   },
   {
    "id": "PS-006",
    "cat": "psycho",
    "emoji": "📱",
-   "titre": "Les notifications fragmentent ta concentration pendant 23 minutes",
-   "texte": "Après chaque interruption, il faut en moyenne 23 min pour retrouver un état de concentration profonde (deep work). Vérifier son téléphone toutes les 10 min rend la concentration impossible.",
+   "titre": "Après une interruption, il faut du temps pour se reconcentrer",
+   "texte": "Une étude de Gloria Mark (Université de Californie) a observé qu’il faut en moyenne 23 minutes pour revenir pleinement à une tâche interrompue. Vérifier son téléphone toutes les 10 minutes empêche d’atteindre une concentration profonde.",
    "tag": "Neurosciences",
    "age": "11+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : mets ton téléphone dans une autre pièce pendant 25 minutes de travail.",
+   "rappel": {
+    "q": "Combien de temps pour revenir à une tâche ?",
+    "choix": [
+     "Environ 23 minutes",
+     "Environ 2 secondes",
+     "Environ 3 heures"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Mark, Gudith & Klocke, CHI, 2008"
+   }
   },
   {
    "id": "PS-007",
    "cat": "psycho",
    "emoji": "🌊",
-   "titre": "L’état de flow est mesurable neurologiquement",
-   "texte": "Pendant le \"flow\" (absorption totale), le cortex préfrontal — siège de l’autocritique — se désactive partiellement. Tu penses moins à toi-même, et tes performances augmentent.",
+   "titre": "Le « flow » : quand on oublie le temps",
+   "texte": "Le flow est un état d’absorption totale dans une activité. Selon une hypothèse, l’activité de certaines zones du cortex préfrontal, liées à l’autocritique, diminue alors : on pense moins à soi et on se sent plus efficace.",
    "tag": "Psychologie",
    "age": "13+",
-   "couleur": "#3498DB"
+   "couleur": "#3498DB",
+   "action": "Essaie aujourd’hui : fais une activité que tu aimes 20 minutes sans aucune interruption.",
+   "rappel": {
+    "q": "Que pense-t-on moins pendant le flow ?",
+    "choix": [
+     "À soi-même",
+     "Au plaisir",
+     "À l’activité"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Csikszentmihalyi, Flow, 1990 ; Dietrich, 2004 (hypothèse d’hypofrontalité)"
+   }
   },
   {
    "id": "PS-008",
    "cat": "psycho",
    "emoji": "🤝",
    "titre": "Faire une faveur à quelqu’un le rend plus favorable envers toi",
-   "texte": "L’effet Benjamin Franklin : demander un service crée un lien paradoxal. Le cerveau justifie \"j’ai aidé cette personne, donc je dois l’apprécier\". Plus efficace que de rendre service.",
+   "texte": "L’effet Benjamin Franklin : quand on rend service à quelqu’un, on a tendance à l’apprécier davantage ensuite. Notre cerveau se dit : « Si je l’ai aidé, c’est que je l’aime bien. »",
    "tag": "Psychologie",
    "age": "12+",
-   "couleur": "#FF9F1C"
+   "couleur": "#FF9F1C",
+   "action": "Essaie aujourd’hui : demande un petit service à quelqu’un que tu connais peu.",
+   "rappel": {
+    "q": "Qu’apprécie-t-on souvent après l’avoir aidé ?",
+    "choix": [
+     "La personne aidée",
+     "Personne",
+     "Soi-même seulement"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Jecker & Landy, Human Relations, 1969"
+   }
   },
   {
    "id": "PS-009",
    "cat": "psycho",
    "emoji": "🎨",
-   "titre": "La créativité augmente quand tu es légèrement fatigué",
-   "texte": "Le matin, le cerveau est en mode analytique et filtrant. En soirée, les inhibitions cognitives baissent et les associations inattendues deviennent possibles. Les artistes créent souvent la nuit.",
+   "titre": "Les idées originales arrivent parfois quand on est moins alerte",
+   "texte": "Une étude a montré qu’on résout mieux certains problèmes d’intuition à son moment « non optimal » de la journée (le soir pour les lève-tôt). Le cerveau filtre moins, et des associations inattendues apparaissent.",
    "tag": "Neurosciences",
    "age": "12+",
-   "couleur": "#9B59B6"
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : note une idée bizarre qui te vient quand tu es un peu fatigué.",
+   "rappel": {
+    "q": "Quand trouve-t-on plus d’idées originales ?",
+    "choix": [
+     "Au moment le moins alerte",
+     "Jamais",
+     "Seulement le midi"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Wieth & Zacks, Thinking & Reasoning, 2011"
+   }
   },
   {
    "id": "PS-010",
    "cat": "psycho",
    "emoji": "💪",
-   "titre": "Le cerveau ne fait pas la différence entre imagination et réalité",
-   "texte": "Visualiser un mouvement sportif active les mêmes zones motrices que l’exécuter. Les sportifs de haut niveau s’entraînent mentalement. L’imagination est un vrai entraînement.",
+   "titre": "Imaginer un mouvement active une partie des mêmes zones que le faire",
+   "texte": "Visualiser un geste sportif active en partie les zones motrices utilisées pour le réaliser. C’est pourquoi les sportifs s’entraînent aussi mentalement. Mais imaginer ne remplace pas la pratique : ça la complète.",
    "tag": "Neurosciences",
    "age": "10+",
-   "couleur": "#E91E63"
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : avant un geste sportif, imagine-le en détail 3 fois.",
+   "rappel": {
+    "q": "Que fait le cerveau quand on imagine un geste ?",
+    "choix": [
+     "Il active des zones motrices",
+     "Il s’endort",
+     "Rien du tout"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Jeannerod, NeuroImage, 2001 (imagerie motrice)"
+   }
+  },
+  {
+   "id": "PS-011",
+   "cat": "psycho",
+   "emoji": "📝",
+   "titre": "Se tester bat relire",
+   "texte": "Des étudiants qui s’entraînaient à se rappeler un texte retenaient nettement plus une semaine plus tard que ceux qui le relisaient, même s’ils se sentaient moins sûrs d’eux sur le moment.",
+   "tag": "Psychologie",
+   "age": "10+",
+   "couleur": "#6C63FF",
+   "action": "Essaie aujourd’hui : cache ta leçon et note tout ce dont tu te souviens.",
+   "rappel": {
+    "q": "Qu’est-ce qui fait mieux retenir ?",
+    "choix": [
+     "Se tester",
+     "Relire",
+     "Surligner"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Roediger & Karpicke, Psychological Science, 2006"
+   }
+  },
+  {
+   "id": "PS-012",
+   "cat": "psycho",
+   "emoji": "🔁",
+   "titre": "On aime ce qu’on voit souvent",
+   "texte": "Plus on voit quelque chose, plus on a tendance à l’apprécier, même sans s’en rendre compte. C’est l’effet de simple exposition, et c’est pour ça que les pubs se répètent.",
+   "tag": "Psychologie",
+   "age": "10+",
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : repère une chanson que tu aimes maintenant mais pas la première fois.",
+   "rappel": {
+    "q": "Pourquoi les pubs se répètent-elles ?",
+    "choix": [
+     "On aime ce qu’on revoit",
+     "C’est obligatoire",
+     "Pour remplir l’écran"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Zajonc, JPSP, 1968"
+   }
+  },
+  {
+   "id": "PS-013",
+   "cat": "psycho",
+   "emoji": "🔀",
+   "titre": "Le cerveau ne fait pas vraiment deux choses à la fois",
+   "texte": "Quand on croit faire plusieurs choses en même temps, le cerveau passe en fait très vite de l’une à l’autre. Chaque changement coûte du temps et des erreurs.",
+   "tag": "Neurosciences",
+   "age": "11+",
+   "couleur": "#3498DB",
+   "action": "Essaie aujourd’hui : fais tes devoirs 20 minutes sans aucune autre activité.",
+   "rappel": {
+    "q": "Que fait le cerveau en « multitâche » ?",
+    "choix": [
+     "Il passe d’une tâche à l’autre",
+     "Il fait tout en même temps",
+     "Il s’arrête"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Rubinstein, Meyer & Evans, Journal of Experimental Psychology: HPP, 2001"
+   }
+  },
+  {
+   "id": "PS-014",
+   "cat": "psycho",
+   "emoji": "📖",
+   "titre": "On comprend souvent mieux un texte sur papier",
+   "texte": "Une grande analyse de 54 études montre qu’on comprend un peu mieux les textes informatifs lus sur papier que sur écran, surtout quand on est pressé.",
+   "tag": "Psychologie",
+   "age": "12+",
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : lis ta prochaine leçon importante sur papier.",
+   "rappel": {
+    "q": "Sur quel support comprend-on mieux ?",
+    "choix": [
+     "Le papier",
+     "L’écran",
+     "Pareil toujours"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Delgado et al., Educational Research Review, 2018"
+   }
   },
   {
    "id": "MO-001",
    "cat": "motivation",
    "emoji": "🔥",
-   "titre": "L’identité est plus puissante que la volonté",
-   "texte": "Ne dis pas \"j’essaie d’arrêter le sucre\" mais \"je suis quelqu’un qui mange sainement\". Les actions suivent l’identité, pas les objectifs. Chaque petit choix vote pour qui tu deviens.",
+   "titre": "Se voir comme « quelqu’un qui le fait » aide à tenir",
+   "texte": "Plutôt que « j’essaie de lire plus », pense « je suis un lecteur ». Les psychologues observent qu’on tient mieux un comportement quand il correspond à l’image qu’on a de soi. Chaque petite action renforce cette image.",
    "tag": "Motivation",
    "age": "12+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : choisis une petite action qui ressemble à la personne que tu veux devenir.",
+   "rappel": {
+    "q": "Qu’est-ce qui aide à garder une habitude ?",
+    "choix": [
+     "Se voir comme ce genre",
+     "Compter sur la volonté seule",
+     "Changer d’objectif chaque jour"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Oyserman, identité et motivation (identity-based motivation), 2009"
+   }
   },
   {
    "id": "MO-002",
    "cat": "motivation",
    "emoji": "🪴",
    "titre": "Les petites victoires créent une chaîne de momentum",
-   "texte": "La dopamine libérée par une petite réussite motive l’action suivante. L’effet de progression : progresser même légèrement crée plus de motivation que d’atteindre un grand objectif.",
+   "texte": "Sentir qu’on avance, même un peu, donne envie de continuer. Des chercheuses ont analysé des milliers de journaux de bord : les meilleures journées étaient celles où l’on progressait sur un travail qui compte.",
    "tag": "Motivation",
    "age": "10+",
-   "couleur": "#FF9F1C"
+   "couleur": "#FF9F1C",
+   "action": "Essaie aujourd’hui : termine une toute petite tâche et note-la.",
+   "rappel": {
+    "q": "Qu’est-ce qui motive le plus au quotidien ?",
+    "choix": [
+     "Sentir qu’on progresse",
+     "Les grands objectifs seuls",
+     "Ne rien faire"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Amabile & Kramer, The Progress Principle, 2011"
+   }
   },
   {
    "id": "MO-003",
    "cat": "motivation",
    "emoji": "🌱",
-   "titre": "L’inconfort de la croissance ressemble au danger — c’est faux",
-   "texte": "La résistance avant d’apprendre quelque chose de difficile est neurologique, pas logique. Le cerveau préfère l’efficacité au changement. Ressentir cet inconfort = signal que tu grandis.",
+   "titre": "L’inconfort d’apprendre n’est pas un danger",
+   "texte": "Apprendre quelque chose de difficile donne souvent une sensation désagréable. Les chercheurs parlent de « difficultés désirables » : un effort qui coûte un peu aide en réalité à mieux retenir.",
    "tag": "Motivation",
    "age": "12+",
-   "couleur": "#2ECC71"
+   "couleur": "#2ECC71",
+   "action": "Essaie aujourd’hui : fais 5 minutes d’une chose difficile que tu repousses.",
+   "rappel": {
+    "q": "Que signale souvent l’inconfort d’apprendre ?",
+    "choix": [
+     "Que tu progresses",
+     "Un vrai danger",
+     "Qu’il faut arrêter"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Bjork, « difficultés désirables », 1994"
+   }
   },
   {
    "id": "MO-004",
    "cat": "motivation",
    "emoji": "⏰",
    "titre": "La règle des 2 minutes : si ça prend moins de 2 min, fais-le maintenant",
-   "texte": "Remettre à plus tard une petite tâche consomme plus d’énergie cognitive que la faire. Le cerveau garde un registre ouvert de tout ce qui est non terminé. Vide-le.",
+   "texte": "Si une tâche prend moins de 2 minutes, fais-la maintenant. Les tâches inachevées ont tendance à rester dans un coin de la tête (effet Zeigarnik). Les terminer libère l’esprit.",
    "tag": "Motivation",
    "age": "11+",
-   "couleur": "#1ABC9C"
+   "couleur": "#1ABC9C",
+   "action": "Essaie aujourd’hui : fais tout de suite 3 choses qui prennent moins de 2 minutes.",
+   "rappel": {
+    "q": "Que faire d’une tâche de moins de 2 minutes ?",
+    "choix": [
+     "La faire tout de suite",
+     "La noter pour demain",
+     "L’oublier"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "David Allen, Getting Things Done, 2001 (règle des 2 minutes) ; Zeigarnik, 1927"
+   }
   },
   {
    "id": "MO-005",
    "cat": "motivation",
    "emoji": "🎯",
-   "titre": "Écrire ses objectifs les rend 42 % plus probables",
-   "texte": "L’écriture active un traitement cérébral différent de la pensée. Elle force la clarté, engage l’hémisphère gauche logique, et crée un contrat symbolique avec soi-même.",
+   "titre": "Écrire ses objectifs aide à les atteindre",
+   "texte": "Des objectifs précis et écrits sont plus souvent atteints que des intentions vagues : c’est l’un des résultats les plus solides de la psychologie des objectifs. Écrire force à clarifier ce qu’on veut vraiment.",
    "tag": "Motivation",
    "age": "11+",
-   "couleur": "#9B59B6"
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : écris un objectif précis sur une feuille et affiche-la.",
+   "rappel": {
+    "q": "Qu’est-ce qui aide à atteindre un objectif ?",
+    "choix": [
+     "L’écrire précisément",
+     "Le garder secret",
+     "Le changer souvent"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Locke & Latham, American Psychologist, 2002 ; Matthews, Dominican University, 2015"
+   }
   },
   {
    "id": "MO-006",
    "cat": "motivation",
    "emoji": "💎",
-   "titre": "La persévérance prédit le succès mieux que le talent",
-   "texte": "Angela Duckworth a étudié des milliers d’étudiants, militaires, sportifs. Le grit (ténacité + passion durable) est un meilleur indicateur de réussite que le QI ou le talent inné.",
+   "titre": "La persévérance compte, pas seulement le talent",
+   "texte": "Angela Duckworth a étudié élèves, cadets militaires et concurrents de concours. La ténacité sur le long terme, qu’elle appelle « grit », aide à réussir. D’autres travaux montrent que son effet est réel mais plus modeste que ce qu’on dit souvent.",
    "tag": "Motivation",
    "age": "12+",
-   "couleur": "#E91E63"
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : choisis une chose que tu veux continuer même quand c’est ennuyeux.",
+   "rappel": {
+    "q": "Comment Angela Duckworth appelle-t-elle cette qualité ?",
+    "choix": [
+     "Le grit",
+     "Le talent",
+     "La chance"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Duckworth et al., JPSP, 2007 ; Credé et al., 2017 (méta-analyse)"
+   }
   },
   {
    "id": "MO-007",
    "cat": "motivation",
    "emoji": "🔁",
    "titre": "Une habitude se forme en 66 jours, pas 21",
-   "texte": "La croyance des \"21 jours\" vient d’une mauvaise interprétation d’une étude des années 60. Les vraies recherches montrent 18 à 254 jours selon la complexité.",
+   "texte": "Le mythe des « 21 jours » vient d’une mauvaise lecture d’un livre des années 1960. Une étude de 2010 a trouvé en moyenne 66 jours, avec des écarts de 18 à 254 jours selon la personne et l’habitude.",
    "tag": "Motivation",
    "age": "12+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : choisis une habitude et coche chaque jour où tu la fais.",
+   "rappel": {
+    "q": "Combien de jours en moyenne pour une habitude ?",
+    "choix": [
+     "Environ 66 jours",
+     "Exactement 21 jours",
+     "Une seule journée"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Lally et al., European Journal of Social Psychology, 2010"
+   }
   },
   {
    "id": "MO-008",
    "cat": "motivation",
    "emoji": "🌅",
-   "titre": "Les 5 premières minutes après le réveil programment ta journée",
-   "texte": "Pendant la transition sommeil-veille, le cerveau est très réceptif. Les premières pensées et intentions créent un cadre mental pour les heures qui suivent. Utilise ce moment.",
+   "titre": "Choisir sa priorité du jour dès le matin",
+   "texte": "Il n’y a pas de magie dans les 5 premières minutes, mais décider tôt de ce qui compte aide à s’y tenir. Commencer par une intention claire plutôt que par les notifications évite de laisser les autres décider de ta journée.",
    "tag": "Motivation",
    "age": "13+",
-   "couleur": "#FF9F1C"
+   "couleur": "#FF9F1C",
+   "action": "Essaie aujourd’hui : au réveil, choisis une seule chose importante pour ta journée.",
+   "rappel": {
+    "q": "Que faire au réveil, selon cette carte ?",
+    "choix": [
+     "Choisir une priorité",
+     "Regarder ses notifications",
+     "Se recoucher"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Gollwitzer, intentions de mise en œuvre, 1999"
+   }
   },
   {
    "id": "MO-009",
    "cat": "motivation",
    "emoji": "🏆",
    "titre": "La fierté intérieure motive plus que la récompense externe",
-   "texte": "Les études sur la motivation montrent que la satisfaction de \"j’ai fait quelque chose de difficile\" surpasse sur le long terme l’argent, les notes ou les compliments.",
+   "texte": "Les recherches sur la motivation montrent que faire quelque chose parce qu’on le trouve intéressant ou important tient plus longtemps que de le faire seulement pour une récompense extérieure.",
    "tag": "Motivation",
    "age": "11+",
-   "couleur": "#F39C12"
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : fais une chose juste pour le plaisir de la réussir.",
+   "rappel": {
+    "q": "Quelle motivation dure le plus longtemps ?",
+    "choix": [
+     "Le plaisir de faire",
+     "L’argent seul",
+     "Les compliments seuls"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Deci & Ryan, théorie de l’autodétermination, 1985 ; Deci, Koestner & Ryan, 1999"
+   }
   },
   {
    "id": "MO-010",
    "cat": "motivation",
    "emoji": "🌊",
-   "titre": "L’état d’esprit de croissance change littéralement le cerveau",
-   "texte": "Carol Dweck (Stanford) : croire que les capacités peuvent se développer active différemment le cerveau face à l’erreur. Les gens à growth mindset apprennent plus vite après un échec.",
+   "titre": "Croire qu’on peut progresser aide à apprendre de ses erreurs",
+   "texte": "Carol Dweck (Stanford) a montré que croire que ses capacités peuvent se développer aide à rebondir après un échec. Les grandes études trouvent des effets modestes en moyenne, mais plus nets chez les élèves en difficulté.",
    "tag": "Motivation",
    "age": "11+",
-   "couleur": "#3498DB"
+   "couleur": "#3498DB",
+   "action": "Essaie aujourd’hui : quand tu rates, demande-toi : « Qu’est-ce que j’apprends ? »",
+   "rappel": {
+    "q": "Qui a étudié l’état d’esprit de croissance ?",
+    "choix": [
+     "Carol Dweck",
+     "Albert Einstein",
+     "Marie Curie"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Dweck, Mindset, 2006 ; Yeager et al., Nature, 2019"
+   }
   },
   {
    "id": "MO-011",
    "cat": "motivation",
    "emoji": "🧠",
-   "titre": "La visualisation active les mêmes neurones que l’action réelle",
-   "texte": "Des études en neurosciences montrent que visualiser précisément une performance active presque identiquement le cortex moteur. Les sportifs de haut niveau s’en servent depuis les années 80.",
+   "titre": "S’entraîner dans sa tête aide vraiment",
+   "texte": "Imaginer précisément une performance active en partie les mêmes zones que l’action réelle. Une méta-analyse montre que l’entraînement mental améliore les performances, surtout combiné à la pratique réelle.",
    "tag": "Motivation",
    "age": "12+",
-   "couleur": "#8E44AD"
+   "couleur": "#8E44AD",
+   "action": "Essaie aujourd’hui : visualise un exercice difficile du début à la fin avant de le faire.",
+   "rappel": {
+    "q": "Qui utilise beaucoup la visualisation ?",
+    "choix": [
+     "Les sportifs",
+     "Les plantes",
+     "Personne"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Driskell, Copper & Moran, Journal of Applied Psychology, 1994 (méta-analyse)"
+   }
   },
   {
    "id": "MO-012",
    "cat": "motivation",
    "emoji": "⚡",
    "titre": "L’action vient avant la motivation, pas l’inverse",
-   "texte": "On attend d’être motivé pour agir — c’est un piège. La recherche montre que l’action crée la motivation. Commence par 2 minutes. L’élan vient en faisant.",
+   "texte": "On attend souvent d’être motivé pour agir, mais c’est souvent l’inverse : commencer donne envie de continuer. Lance-toi 2 minutes, l’élan vient en faisant.",
    "tag": "Motivation",
    "age": "11+",
-   "couleur": "#F39C12"
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : commence une tâche juste 2 minutes, sans attendre d’avoir envie.",
+   "rappel": {
+    "q": "Qu’est-ce qui vient souvent en premier ?",
+    "choix": [
+     "L’action",
+     "La motivation",
+     "La récompense"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Principe d’activation comportementale (Jacobson et al., 1996)"
+   }
   },
   {
    "id": "MO-013",
@@ -379,307 +1093,872 @@
    "texte": "L’état de flow (Csikszentmihalyi) survient quand le défi dépasse légèrement tes capacités. Trop facile = ennui. Trop difficile = anxiété. Le sweet spot = croissance maximale.",
    "tag": "Motivation",
    "age": "12+",
-   "couleur": "#E91E63"
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : rends un exercice un peu plus dur que d’habitude, pas beaucoup.",
+   "rappel": {
+    "q": "Que provoque un défi trop facile ?",
+    "choix": [
+     "L’ennui",
+     "L’anxiété",
+     "Le flow"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Csikszentmihalyi, Flow, 1990"
+   }
   },
   {
    "id": "MO-014",
    "cat": "motivation",
    "emoji": "🌙",
    "titre": "Dormir sur un problème n’est pas de la paresse — c’est de la stratégie",
-   "texte": "Le cerveau continue de traiter les problèmes pendant le sommeil. L’hippocampe consolide les informations et crée de nouvelles connexions. Se lever avec une solution est biologique.",
+   "texte": "Dans une expérience, des personnes ayant dormi après un exercice ont deux fois plus souvent découvert une astuce cachée que celles restées éveillées. Le sommeil aide le cerveau à réorganiser ce qu’il a appris.",
    "tag": "Motivation",
    "age": "11+",
-   "couleur": "#2C3E50"
+   "couleur": "#2C3E50",
+   "action": "Essaie aujourd’hui : relis un problème difficile avant de dormir, sans chercher la solution.",
+   "rappel": {
+    "q": "Que fait le cerveau d’un problème la nuit ?",
+    "choix": [
+     "Il continue de le travailler",
+     "Il l’oublie toujours",
+     "Il le résout sans erreur"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Wagner et al., Nature, 2004 (sommeil et intuition)"
+   }
   },
   {
    "id": "MO-015",
    "cat": "motivation",
    "emoji": "🤝",
-   "titre": "Annoncer ses objectifs à quelqu’un les rend 65 % plus probables",
-   "texte": "Avoir un partenaire de responsabilité et fixer des rendez-vous de suivi porte le taux de réalisation à 95 % (American Society of Training). L’engagement social est un moteur puissant.",
+   "titre": "Faire le point avec quelqu’un aide à tenir ses objectifs",
+   "texte": "Une grande méta-analyse montre que suivre ses progrès aide à atteindre ses objectifs, surtout quand on les note ou qu’on les partage. Fixer un rendez-vous de suivi avec quelqu’un rend l’engagement plus concret.",
    "tag": "Motivation",
    "age": "12+",
-   "couleur": "#27AE60"
+   "couleur": "#27AE60",
+   "action": "Essaie aujourd’hui : dis ton objectif à un proche et fixez un moment pour en reparler.",
+   "rappel": {
+    "q": "Qu’est-ce qui aide à tenir un objectif ?",
+    "choix": [
+     "Faire un point régulier",
+     "Le garder secret",
+     "Ne jamais le mesurer"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Harkin et al., Psychological Bulletin, 2016"
+   }
   },
   {
    "id": "MO-016",
    "cat": "motivation",
    "emoji": "🎵",
-   "titre": "La musique énergétique augmente les performances de 15 %",
-   "texte": "Des études sur les sportifs montrent que la musique au bon rythme (120-140 BPM) améliore l’endurance, réduit la perception de l’effort et augmente la puissance.",
+   "titre": "La musique rythmée aide pendant l’effort",
+   "texte": "Une méta-analyse sur la musique et le sport montre qu’elle réduit la sensation d’effort, améliore l’humeur et un peu la performance. Les rythmes d’environ 120 à 140 battements par minute sont souvent utilisés.",
    "tag": "Motivation",
    "age": "10+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : fais 10 minutes d’exercice sur une musique rythmée.",
+   "rappel": {
+    "q": "Que réduit la musique pendant l’effort ?",
+    "choix": [
+     "La sensation d’effort",
+     "La force",
+     "Le souffle"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Terry et al., Psychological Bulletin, 2020 (méta-analyse)"
+   }
   },
   {
    "id": "MO-017",
    "cat": "motivation",
    "emoji": "📏",
-   "titre": "Ce qu’on mesure progresse",
-   "texte": "Peter Drucker — Tenir un journal de ses habitudes améliore les résultats. Voir sa progression visible crée une boucle de renforcement positif. Même un simple tableau suffit.",
+   "titre": "Suivre ses progrès aide à progresser",
+   "texte": "Une méta-analyse de plus de 130 études montre que surveiller ses progrès aide à atteindre ses objectifs. Voir sa progression crée une boucle positive. Même un simple tableau avec des croix suffit.",
    "tag": "Motivation",
    "age": "11+",
-   "couleur": "#118AB2"
+   "couleur": "#118AB2",
+   "action": "Essaie aujourd’hui : dessine un tableau et coche chaque jour une habitude réussie.",
+   "rappel": {
+    "q": "Qu’est-ce qui aide à progresser ?",
+    "choix": [
+     "Suivre ses progrès",
+     "Ne rien noter",
+     "Comparer aux autres"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Harkin et al., Psychological Bulletin, 2016"
+   }
   },
   {
    "id": "MO-018",
    "cat": "motivation",
    "emoji": "🌿",
    "titre": "L’environnement compte plus que la volonté",
-   "texte": "James Clear : au lieu de lutter contre tes impulsions, réarrange ton espace. Mets tes pommes devant les chips. Pose ton livre sur le canapé. L’environnement automatise les bons choix.",
+   "texte": "Plutôt que de lutter contre tes envies, change ton espace : pose les fruits en vue et range les gâteaux. Les recherches sur les habitudes montrent que l’environnement guide beaucoup de nos choix automatiques.",
    "tag": "Motivation",
    "age": "12+",
-   "couleur": "#2ECC71"
+   "couleur": "#2ECC71",
+   "action": "Essaie aujourd’hui : range ton espace pour que la bonne habitude soit la plus facile.",
+   "rappel": {
+    "q": "Qu’est-ce qui aide plus que la volonté ?",
+    "choix": [
+     "Organiser son environnement",
+     "Se forcer plus fort",
+     "Attendre la motivation"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Wood & Neal, habitudes et contexte ; Wood, Good Habits, Bad Habits, 2019"
+   }
   },
   {
    "id": "MO-019",
    "cat": "motivation",
    "emoji": "🔭",
-   "titre": "Le sens donne 3 fois plus d’endurance que l’objectif seul",
-   "texte": "Simon Sinek : les gens supportent presque n’importe quel comment s’ils savent pourquoi. Relier une tâche à un sens plus grand (aider, créer, apprendre) multiplie la résilience.",
+   "titre": "Savoir pourquoi on fait les choses aide à tenir",
+   "texte": "Nietzsche écrivait que celui qui a un « pourquoi » peut supporter presque n’importe quel « comment ». Une étude montre que des élèves qui relient leurs devoirs à un but plus grand (aider, apprendre) persévèrent davantage face à une tâche ennuyeuse.",
    "tag": "Motivation",
    "age": "13+",
-   "couleur": "#9B59B6"
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : écris pourquoi une tâche difficile compte pour toi.",
+   "rappel": {
+    "q": "Qu’est-ce qui aide à persévérer ?",
+    "choix": [
+     "Savoir pourquoi on agit",
+     "Avoir moins de temps",
+     "Faire plus vite"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Nietzsche, Crépuscule des idoles (1889) ; Yeager et al., JPSP, 2014"
+   }
   },
   {
    "id": "MO-020",
    "cat": "motivation",
    "emoji": "🧊",
-   "titre": "L’effet \"si — alors\" double les chances de tenir une résolution",
-   "texte": "\"Si il est 18h, alors je fais 10 minutes de sport.\" Planifier la situation et l’action à l’avance court-circuite l’hésitation au moment critique. Peter Gollwitzer (NYU) a documenté cet effet.",
+   "titre": "La phrase « Si…, alors… » aide à tenir ses résolutions",
+   "texte": "« Si il est 18 h, alors je fais 10 minutes de sport. » Planifier à l’avance la situation et l’action évite d’hésiter au moment venu. Une méta-analyse de 94 études montre un effet net sur l’atteinte des objectifs.",
    "tag": "Motivation",
    "age": "12+",
-   "couleur": "#5DADE2"
+   "couleur": "#5DADE2",
+   "action": "Essaie aujourd’hui : écris une phrase « Si…, alors… » pour une chose que tu repousses.",
+   "rappel": {
+    "q": "Quelle forme de phrase aide à agir ?",
+    "choix": [
+     "« Si…, alors… »",
+     "« Peut-être un jour »",
+     "« Je verrai bien »"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Gollwitzer & Sheeran, Advances in Experimental Social Psychology, 2006"
+   }
+  },
+  {
+   "id": "MO-021",
+   "cat": "motivation",
+   "emoji": "🍅",
+   "titre": "La méthode des 25 minutes",
+   "texte": "Travaille 25 minutes sans téléphone, puis fais 5 minutes de pause. Découper un gros travail en tranches le rend moins effrayant. On l’appelle souvent méthode Pomodoro, du nom d’un minuteur en forme de tomate.",
+   "tag": "Motivation",
+   "age": "10+",
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : fais une tranche de 25 minutes sur un devoir.",
+   "rappel": {
+    "q": "Combien dure une tranche de travail ?",
+    "choix": [
+     "25 minutes",
+     "2 heures",
+     "2 minutes"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Francesco Cirillo, technique dite Pomodoro (marque déposée)"
+   }
+  },
+  {
+   "id": "MO-022",
+   "cat": "motivation",
+   "emoji": "🚶",
+   "titre": "Marcher 20 minutes aide à se concentrer",
+   "texte": "Dans une étude, des enfants qui avaient marché 20 minutes réussissaient mieux un test d’attention et de lecture que ceux restés assis. Bouger réveille le cerveau.",
+   "tag": "Motivation",
+   "age": "10+",
+   "couleur": "#2ECC71",
+   "action": "Essaie aujourd’hui : marche 20 minutes avant de commencer tes devoirs.",
+   "rappel": {
+    "q": "Combien de minutes de marche dans l’étude ?",
+    "choix": [
+     "20 minutes",
+     "2 minutes",
+     "2 heures"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Hillman et al., Neuroscience, 2009"
+   }
+  },
+  {
+   "id": "MO-023",
+   "cat": "motivation",
+   "emoji": "🎧",
+   "titre": "Associer une corvée à un plaisir aide à s’y mettre",
+   "texte": "Des chercheurs ont proposé à des personnes d’écouter leur livre audio préféré seulement à la salle de sport. Elles y sont allées plus souvent. On appelle ça « coupler les tentations ».",
+   "tag": "Motivation",
+   "age": "12+",
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : choisis un plaisir que tu t’autorises seulement pendant une corvée.",
+   "rappel": {
+    "q": "Quand écoutaient-ils leur livre audio ?",
+    "choix": [
+     "Seulement au sport",
+     "Toute la journée",
+     "Jamais"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Milkman, Minson & Volpp, Management Science, 2014"
+   }
+  },
+  {
+   "id": "MO-024",
+   "cat": "motivation",
+   "emoji": "📋",
+   "titre": "Écrire sa liste de demain aide à s’endormir",
+   "texte": "Dans une étude, les personnes qui écrivaient 5 minutes leur liste de choses à faire le lendemain s’endormaient plus vite que celles qui écrivaient ce qu’elles avaient déjà fait.",
+   "tag": "Motivation",
+   "age": "12+",
+   "couleur": "#3498DB",
+   "action": "Essaie aujourd’hui : ce soir, écris 3 choses à faire demain avant de te coucher.",
+   "rappel": {
+    "q": "Qu’écrire avant de dormir ?",
+    "choix": [
+     "Sa liste de demain",
+     "Un roman",
+     "Rien"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Scullin et al., Journal of Experimental Psychology: General, 2018"
+   }
   },
   {
    "id": "CF-001",
    "cat": "confiance",
    "emoji": "💪",
-   "titre": "La posture change ton niveau de cortisol en 2 minutes",
-   "texte": "Amy Cuddy (Harvard) : adopter une posture expansive (\"power pose\") pendant 2 min réduit le cortisol (hormone du stress) et augmente la testostérone. Le corps influence le mental.",
+   "titre": "Se tenir droit peut aider à se sentir plus sûr de soi",
+   "texte": "Adopter une posture ouverte quelques minutes peut donner un sentiment de confiance. En revanche, l’effet sur les hormones du stress annoncé en 2010 n’a pas été confirmé par les études suivantes. Le corps peut aider le moral, mais sans miracle.",
    "tag": "Confiance",
    "age": "12+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : avant un moment stressant, tiens-toi droit 2 minutes, épaules ouvertes.",
+   "rappel": {
+    "q": "Que montrent les études sur la posture ?",
+    "choix": [
+     "On peut se sentir plus confiant",
+     "Les hormones changent fortement",
+     "Rien du tout"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Ranehill et al., Psychological Science, 2015",
+    "url": "https://www.zne.uzh.ch/dam/jcr:e5fc4c3c-d50e-4aa9-96ab-4389e426d20d/Psychological%20Science-2015-Ranehill-0956797614553946.pdf"
+   }
   },
   {
    "id": "CF-002",
    "cat": "confiance",
    "emoji": "🗣️",
    "titre": "La voix intérieure critique n’est pas la tienne",
-   "texte": "Cette voix qui dit \"tu n’es pas capable\" est souvent une intériorisation de voix externes entendues dans l’enfance. Identifier son origine la neutralise. Tu peux choisir ta narration interne.",
+   "texte": "La voix intérieure qui dit « tu n’y arriveras pas » peut reprendre des phrases entendues ailleurs, parfois dans l’enfance. La remarquer et se demander d’où elle vient aide à prendre du recul. Tu peux choisir comment tu te parles.",
    "tag": "Confiance",
    "age": "13+",
-   "couleur": "#9B59B6"
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : quand ta petite voix critique parle, réponds-lui comme à un ami.",
+   "rappel": {
+    "q": "D’où peut venir la voix critique ?",
+    "choix": [
+     "De phrases entendues autrefois",
+     "De ton estomac",
+     "De la météo"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Gilbert, Compassion Focused Therapy, 2009"
+   }
   },
   {
    "id": "CF-003",
    "cat": "confiance",
    "emoji": "🌟",
    "titre": "L’auto-compassion est plus efficace que la critique pour progresser",
-   "texte": "Kristin Neff (Austin) : se traiter avec la même bienveillance qu’un ami après un échec active la résilience. L’autocritique sévère, elle, inhibe la prise de risque et l’apprentissage.",
+   "texte": "Kristin Neff (Université du Texas) étudie l’auto-compassion. Se traiter avec bienveillance après un échec aide à rebondir : dans une étude, des étudiants encouragés à l’auto-compassion ont révisé plus longtemps après un échec.",
    "tag": "Confiance",
    "age": "12+",
-   "couleur": "#1ABC9C"
+   "couleur": "#1ABC9C",
+   "action": "Essaie aujourd’hui : après une erreur, dis-toi ce que tu dirais à un ami.",
+   "rappel": {
+    "q": "Qu’aide le plus après un échec ?",
+    "choix": [
+     "Se traiter avec bienveillance",
+     "Se critiquer durement",
+     "Tout abandonner"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Breines & Chen, Personality and Social Psychology Bulletin, 2012 ; Neff, 2003"
+   }
   },
   {
    "id": "CF-004",
    "cat": "confiance",
    "emoji": "🎭",
-   "titre": "Tout le monde ressent le syndrome de l’imposteur",
-   "texte": "70% des personnes ont vécu l’impression d’être \"moins compétents qu’ils n’y paraissent\". Albert Einstein, Maya Angelou, Neil Armstrong — tous l’ont décrit. C’est un signe d’intelligence.",
+   "titre": "Le syndrome de l’imposteur est très courant",
+   "texte": "Beaucoup de gens ont l’impression d’être moins compétents qu’ils n’en ont l’air. Selon les études, une grande partie de la population le ressent à un moment de sa vie. Des personnes célèbres comme Maya Angelou l’ont aussi décrit.",
    "tag": "Confiance",
    "age": "12+",
-   "couleur": "#E91E63"
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : raconte à quelqu’un un moment où tu t’es senti « pas à ta place ».",
+   "rappel": {
+    "q": "Le syndrome de l’imposteur est-il rare ?",
+    "choix": [
+     "Non, très courant",
+     "Oui, très rare",
+     "Il n’existe pas"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Bravata et al., Journal of General Internal Medicine, 2020 (revue)"
+   }
   },
   {
    "id": "CF-005",
    "cat": "confiance",
    "emoji": "👁️",
    "titre": "Le regard des autres que tu imagines est souvent faux",
-   "texte": "L’effet projecteur : on surestime l’attention que les autres nous portent. Dans une étude, les sujets pensaient que 50% des gens remarquaient un détail gênant. Réalité : moins de 20%.",
+   "texte": "L’effet projecteur : on surestime l’attention que les autres nous portent. Dans une étude, des étudiants portant un T-shirt gênant pensaient qu’environ la moitié de la salle l’avait remarqué. En réalité, c’était environ un quart.",
    "tag": "Confiance",
    "age": "11+",
-   "couleur": "#FF9F1C"
+   "couleur": "#FF9F1C",
+   "action": "Essaie aujourd’hui : fais une petite chose qui te gêne un peu, comme lever la main.",
+   "rappel": {
+    "q": "Les autres nous remarquent-ils autant qu’on le croit ?",
+    "choix": [
+     "Non, beaucoup moins",
+     "Oui, exactement autant",
+     "Bien plus"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Gilovich, Medvec & Savitsky, JPSP, 2000"
+   }
   },
   {
    "id": "CF-006",
    "cat": "confiance",
    "emoji": "🔥",
    "titre": "Agir avant d’être confiant crée la confiance, pas l’inverse",
-   "texte": "On attend d’être prêt pour agir — mais la confiance naît de l’action, pas de sa préparation. Chaque défi relevé, même imparfait, construit une preuve neuronale de compétence.",
+   "texte": "On attend souvent d’être prêt pour agir, mais la confiance naît surtout de l’expérience. Selon Albert Bandura, chaque défi relevé, même imparfaitement, renforce le sentiment d’être capable.",
    "tag": "Confiance",
    "age": "12+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : fais aujourd’hui une chose pour laquelle tu ne te sens pas encore prêt.",
+   "rappel": {
+    "q": "Qu’est-ce qui construit la confiance ?",
+    "choix": [
+     "Agir, même imparfaitement",
+     "Attendre d’être prêt",
+     "Éviter les défis"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Bandura, Self-efficacy, 1977 (expériences de maîtrise)"
+   }
   },
   {
    "id": "CF-007",
    "cat": "confiance",
    "emoji": "🌊",
-   "titre": "Les émotions durent 90 secondes si tu les laisses passer",
-   "texte": "La neurobiologiste Jill Bolte Taylor : une émotion physiologique dure 90 secondes. Ce qui l’entretient, c’est la pensée. Observer une émotion sans la nourrir la dissout naturellement.",
+   "titre": "Une émotion qu’on ne nourrit pas finit par passer",
+   "texte": "Une émotion forte monte puis redescend. Ce qui la fait durer, ce sont souvent les pensées qu’on y ajoute. L’observer sans la juger, en respirant, l’aide à passer plus vite.",
    "tag": "Émotions",
    "age": "12+",
-   "couleur": "#3498DB"
+   "couleur": "#3498DB",
+   "action": "Essaie aujourd’hui : la prochaine fois qu’une émotion forte arrive, observe-la sans la juger.",
+   "rappel": {
+    "q": "Qu’est-ce qui prolonge une émotion ?",
+    "choix": [
+     "Les pensées qui la nourrissent",
+     "Le fait de respirer",
+     "Le fait de la nommer"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Gross, Emotion Regulation, 2015"
+   }
   },
   {
    "id": "CF-008",
    "cat": "confiance",
    "emoji": "💬",
-   "titre": "Nommer une émotion réduit son intensité de moitié",
-   "texte": "\"Affect labeling\" : mettre des mots sur ce qu’on ressent active le cortex préfrontal (raisonnement) et réduit l’activité de l’amygdale (peur/panique). Dire \"je suis anxieux\" calme l’anxiété.",
+   "titre": "Nommer une émotion aide à la calmer",
+   "texte": "Mettre des mots sur ce qu’on ressent (« affect labeling ») active des zones du cerveau qui régulent et diminue l’activité de l’amygdale, liée à l’alarme. Dire « je suis anxieux » aide déjà un peu à se calmer.",
    "tag": "Émotions",
    "age": "10+",
-   "couleur": "#9B59B6"
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : quand tu te sens mal, mets un mot précis sur ton émotion.",
+   "rappel": {
+    "q": "Que fait le fait de nommer une émotion ?",
+    "choix": [
+     "Ça aide à la calmer",
+     "Ça la double",
+     "Rien du tout"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Lieberman et al., Psychological Science, 2007"
+   }
   },
   {
    "id": "CF-009",
    "cat": "confiance",
    "emoji": "🤲",
-   "titre": "La gratitude recâble le cerveau en 21 jours",
-   "texte": "Écrire 3 choses positives chaque soir pendant 21 jours crée de nouvelles connexions neuronales. Le cerveau commence à scanner le monde pour le positif d’abord. Un biais qui se choisit.",
+   "titre": "Noter ce qui va bien entraîne ton attention",
+   "texte": "Écrire chaque soir trois choses positives de sa journée améliore un peu l’humeur au fil des semaines, selon plusieurs études. Le cerveau s’habitue à remarquer aussi ce qui va bien.",
    "tag": "Confiance",
    "age": "10+",
-   "couleur": "#2ECC71"
+   "couleur": "#2ECC71",
+   "action": "Essaie aujourd’hui : ce soir, écris 3 choses positives de ta journée.",
+   "rappel": {
+    "q": "Que faire chaque soir selon cette carte ?",
+    "choix": [
+     "Noter 3 choses positives",
+     "Regarder un écran",
+     "Se plaindre"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Emmons & McCullough, JPSP, 2003 ; Seligman et al., American Psychologist, 2005"
+   }
   },
   {
    "id": "CF-010",
    "cat": "confiance",
    "emoji": "🌈",
-   "titre": "Les personnes optimistes vivent en moyenne 11 ans de plus",
-   "texte": "Une étude sur 70 000 femmes (Harvard) : l’optimisme est lié à une réduction de 30% des maladies coronariennes et de 16% du cancer. L’état d’esprit a un impact physiologique réel.",
+   "titre": "L’optimisme est associé à une vie plus longue",
+   "texte": "Une étude de Harvard sur environ 70 000 femmes et 1 400 hommes a observé que les plus optimistes vivaient en moyenne 11 à 15 % plus longtemps. C’est un lien statistique : il ne prouve pas que l’optimisme en soit la seule cause.",
    "tag": "Confiance",
    "age": "13+",
-   "couleur": "#E91E63"
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : ce soir, imagine une chose qui pourrait bien se passer demain.",
+   "rappel": {
+    "q": "De combien les plus optimistes vivaient-ils plus ?",
+    "choix": [
+     "11 à 15 %",
+     "11 ans exactement",
+     "Pas du tout"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Lee et al., PNAS, 2019"
+   }
+  },
+  {
+   "id": "CF-011",
+   "cat": "confiance",
+   "emoji": "🗣️",
+   "titre": "Parle-toi comme à un ami",
+   "texte": "Se parler en utilisant son prénom (« Léa, tu peux le faire ») plutôt que « je » aide à prendre du recul. Dans des études, cela réduisait l’anxiété avant de parler en public.",
+   "tag": "Confiance",
+   "age": "12+",
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : encourage-toi une fois aujourd’hui avec ton prénom.",
+   "rappel": {
+    "q": "Quel mot utiliser pour se parler avec recul ?",
+    "choix": [
+     "Son prénom",
+     "« Je »",
+     "« Nous »"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Kross et al., JPSP, 2014"
+   }
+  },
+  {
+   "id": "CF-012",
+   "cat": "confiance",
+   "emoji": "💬",
+   "titre": "Les autres t’apprécient plus que tu ne le crois",
+   "texte": "Après une première conversation, les gens sous-estiment presque toujours à quel point l’autre les a appréciés. Les chercheurs appellent ça le « fossé de sympathie ».",
+   "tag": "Confiance",
+   "age": "12+",
+   "couleur": "#1ABC9C",
+   "action": "Essaie aujourd’hui : engage la conversation avec quelqu’un que tu connais peu.",
+   "rappel": {
+    "q": "Que sous-estime-t-on après une conversation ?",
+    "choix": [
+     "À quel point on a plu",
+     "Sa durée",
+     "Le nombre de mots"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Boothby et al., Psychological Science, 2018"
+   }
+  },
+  {
+   "id": "CF-013",
+   "cat": "confiance",
+   "emoji": "🌟",
+   "titre": "Un compliment fait plus plaisir qu’on ne le pense",
+   "texte": "Dans des études, les gens pensaient que leur compliment mettrait l’autre mal à l’aise. En réalité, ceux qui le recevaient étaient bien plus contents que prévu.",
+   "tag": "Confiance",
+   "age": "12+",
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : fais un compliment sincère et précis à quelqu’un aujourd’hui.",
+   "rappel": {
+    "q": "Comment réagit-on à un compliment ?",
+    "choix": [
+     "Mieux que prévu",
+     "Avec gêne surtout",
+     "Avec colère"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Zhao & Epley, Psychological Science, 2021"
+   }
   },
   {
    "id": "EM-001",
    "cat": "emotions",
    "emoji": "😤",
-   "titre": "La colère non exprimée fragilise le système immunitaire",
-   "texte": "Des études longitudinales montrent que réprimer chroniquement la colère augmente les marqueurs inflammatoires. Exprimer ses émotions de façon saine — même négatives — protège la santé.",
+   "titre": "Cacher ses émotions en permanence n’est pas bon pour soi",
+   "texte": "Des études suggèrent que réprimer ses émotions de façon chronique est lié à plus de stress et à des relations moins satisfaisantes. Les exprimer calmement, avec des mots, est une meilleure stratégie.",
    "tag": "Émotions",
    "age": "11+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : dis calmement à quelqu’un une chose qui t’a agacé.",
+   "rappel": {
+    "q": "Que conseille cette carte pour la colère ?",
+    "choix": [
+     "L’exprimer calmement",
+     "La cacher toujours",
+     "Crier fort"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Gross & John, JPSP, 2003 (suppression émotionnelle)"
+   }
   },
   {
    "id": "EM-002",
    "cat": "emotions",
    "emoji": "😭",
-   "titre": "Pleurer libère des hormones de stress dans les larmes",
-   "texte": "Les larmes émotionnelles contiennent du cortisol et de la prolactine. Pleurer est une évacuation biologique du stress — pas une faiblesse. Après les larmes, les niveaux de stress baissent mesurément.",
+   "titre": "Pleurer peut aider à se sentir mieux",
+   "texte": "Certaines études suggèrent que pleurer aide à se calmer et attire le soutien des autres. On a aussi dit que les larmes évacuent des hormones du stress, mais ce n’est pas démontré. Pleurer n’est pas une faiblesse.",
    "tag": "Émotions",
    "age": "10+",
-   "couleur": "#3498DB"
+   "couleur": "#3498DB",
+   "action": "Essaie aujourd’hui : la prochaine fois que tu pleures, remarque comment tu te sens après.",
+   "rappel": {
+    "q": "Que disent les études sur les larmes ?",
+    "choix": [
+     "Elles peuvent apaiser",
+     "Elles sont une faiblesse",
+     "Elles rendent malade"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Gračanin, Bylsma & Vingerhoets, Frontiers in Psychology, 2014"
+   }
   },
   {
    "id": "EM-003",
    "cat": "emotions",
    "emoji": "😰",
-   "titre": "L’anxiété et l’excitation sont neurologiquement identiques",
-   "texte": "Même rythme cardiaque élevé, même flux d’adrénaline. La différence : le récit qu’on se fait. Dire \"je suis excité\" plutôt que \"je suis stressé\" améliore les performances.",
+   "titre": "Le stress et l’excitation se ressemblent beaucoup dans le corps",
+   "texte": "Cœur rapide, adrénaline : le corps réagit presque pareil. La différence vient surtout de ce qu’on se dit. Dans une étude, des personnes qui se disaient « je suis excité » ont mieux réussi leur discours.",
    "tag": "Émotions",
    "age": "12+",
-   "couleur": "#FF9F1C"
+   "couleur": "#FF9F1C",
+   "action": "Essaie aujourd’hui : avant un moment stressant, dis-toi « je suis excité ».",
+   "rappel": {
+    "q": "Quelle phrase aide avant un oral ?",
+    "choix": [
+     "« Je suis excité »",
+     "« Je suis calme »",
+     "« Je vais rater »"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Brooks, Journal of Experimental Psychology: General, 2014"
+   }
   },
   {
    "id": "EM-004",
    "cat": "emotions",
    "emoji": "🤯",
    "titre": "L’empathie peut s’apprendre et se renforcer",
-   "texte": "Le cerveau des personnes très empathiques montre une activité accrue des neurones miroirs. Des études montrent que pratiquer délibérément la perspective d’autrui renforce ces connexions.",
+   "texte": "L’empathie n’est pas fixée à la naissance. Des études montrent qu’on peut l’entraîner, par exemple en s’exerçant à imaginer ce que ressent l’autre et en l’écoutant vraiment.",
    "tag": "Émotions",
    "age": "10+",
-   "couleur": "#9B59B6"
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : imagine une dispute du point de vue de l’autre personne.",
+   "rappel": {
+    "q": "Comment renforcer l’empathie ?",
+    "choix": [
+     "Se mettre à la place d’autrui",
+     "Ne jamais écouter",
+     "Parler plus fort"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Weisz & Zaki, Current Opinion in Psychology, 2018"
+   }
   },
   {
    "id": "EM-005",
    "cat": "emotions",
    "emoji": "😌",
-   "titre": "La respiration contrôlée est le seul levier direct du système nerveux",
-   "texte": "Tu ne peux pas décider de ralentir ton cœur directement — mais tu peux contrôler ta respiration. 4 secondes inspire, 6 secondes expire active le nerf vague et ralentit le rythme cardiaque.",
+   "titre": "Ta respiration est un levier pour te calmer",
+   "texte": "Tu ne peux pas ralentir ton cœur sur commande, mais tu peux contrôler ta respiration. Expirer plus longtemps qu’on inspire (4 secondes, puis 6) active des mécanismes qui aident le corps à ralentir.",
    "tag": "Émotions",
    "age": "9+",
-   "couleur": "#1ABC9C"
+   "couleur": "#1ABC9C",
+   "action": "Essaie aujourd’hui : fais 5 respirations : 4 secondes pour inspirer, 6 pour expirer.",
+   "rappel": {
+    "q": "Quelle partie de la respiration dure le plus ?",
+    "choix": [
+     "L’expiration",
+     "L’inspiration",
+     "La pause"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Zaccaro et al., Frontiers in Human Neuroscience, 2018 (revue)"
+   }
   },
   {
    "id": "EM-006",
    "cat": "emotions",
    "emoji": "🔗",
-   "titre": "La solitude fait autant de mal que fumer 15 cigarettes par jour",
-   "texte": "Une méta-analyse de 350 000 participants (Holt-Lunstad) : l’isolement social augmente la mortalité de 26 %. Le lien social est un besoin biologique, pas un luxe.",
+   "titre": "La solitude pèse sur la santé",
+   "texte": "Des méta-analyses de Julianne Holt-Lunstad portant sur des centaines de milliers de personnes associent l’isolement social à un risque de mortalité plus élevé, comparable selon elle à certains facteurs comme le tabac. Le lien social est un besoin, pas un luxe.",
    "tag": "Émotions",
    "age": "13+",
-   "couleur": "#E91E63"
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : envoie un message à quelqu’un que tu n’as pas contacté depuis longtemps.",
+   "rappel": {
+    "q": "Qu’est-ce que le lien social, selon cette carte ?",
+    "choix": [
+     "Un besoin biologique",
+     "Un luxe",
+     "Une perte de temps"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Holt-Lunstad et al., PLoS Medicine, 2010 ; Perspectives on Psychological Science, 2015"
+   }
   },
   {
    "id": "EM-007",
    "cat": "emotions",
    "emoji": "🎵",
-   "titre": "La musique active plus de zones du cerveau que toute autre activité",
-   "texte": "Jouer d’un instrument mobilise simultanément les cortex visuel, auditif, moteur et émotionnel. Les musiciens ont un cerveau mesurément différent — plus de connexions inter-hémisphériques.",
+   "titre": "Jouer de la musique fait travailler tout le cerveau",
+   "texte": "Jouer d’un instrument mobilise en même temps l’audition, la motricité, la vision et les émotions. Les musiciens qui ont commencé jeunes présentent souvent des différences mesurables dans certaines connexions du cerveau.",
    "tag": "Émotions",
    "age": "9+",
-   "couleur": "#9B59B6"
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : écoute un morceau en essayant de suivre un seul instrument.",
+   "rappel": {
+    "q": "Que mobilise le fait de jouer d’un instrument ?",
+    "choix": [
+     "Plusieurs zones du cerveau",
+     "Une seule zone",
+     "Aucune zone"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Zatorre, Chen & Penhune, Nature Reviews Neuroscience, 2007"
+   }
   },
   {
    "id": "EM-008",
    "cat": "emotions",
    "emoji": "🌿",
    "titre": "20 minutes dans la nature réduisent le cortisol de 21 %",
-   "texte": "Une étude de l’Université du Michigan quantifie l’effet : une marche en nature (sans téléphone) pendant 20 min réduit les hormones du stress. Les villes vertes ont des habitants plus sains.",
+   "texte": "Une étude de l’Université du Michigan a mesuré qu’une sortie de 20 à 30 minutes dans un lieu de nature fait baisser le cortisol, une hormone du stress, plus vite que sa baisse naturelle dans la journée.",
    "tag": "Émotions",
    "age": "9+",
-   "couleur": "#2ECC71"
+   "couleur": "#2ECC71",
+   "action": "Essaie aujourd’hui : marche 20 minutes dehors, sans téléphone.",
+   "rappel": {
+    "q": "Combien de temps dans la nature selon l’étude ?",
+    "choix": [
+     "20 à 30 minutes",
+     "2 minutes",
+     "5 heures"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Hunter, Gillespie & Chen, Frontiers in Psychology, 2019"
+   }
   },
   {
    "id": "EM-009",
    "cat": "emotions",
    "emoji": "🧠",
-   "titre": "Les émotions durent moins de 90 secondes si on ne les alimente pas",
-   "texte": "Jill Bolte Taylor (neuroscientifique) : le circuit chimique d’une émotion dure 90 secondes. Ce qui l’entretient, c’est nos pensées. Observer l’émotion sans juger la laisse passer.",
+   "titre": "Une émotion monte puis redescend",
+   "texte": "Une émotion ressemble à une vague : elle monte, puis retombe si on ne l’entretient pas avec des pensées. Laisser passer quelques secondes avant de réagir évite souvent de regretter ses paroles.",
    "tag": "Émotions",
    "age": "11+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : quand une émotion arrive, respire et compte jusqu’à 10 avant de réagir.",
+   "rappel": {
+    "q": "Que faire avant de réagir à une émotion ?",
+    "choix": [
+     "Respirer et attendre",
+     "Agir tout de suite",
+     "La cacher"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Gross, Emotion Regulation, 2015"
+   }
   },
   {
    "id": "EM-010",
    "cat": "emotions",
    "emoji": "🤝",
    "titre": "La bienveillance envers soi améliore plus les performances que l’autocritique",
-   "texte": "Kristin Neff (Austin) : l’auto-compassion après un échec active les mêmes circuits que la sécurité. Les personnes qui se traitent avec bienveillance reprennent plus vite et apprennent mieux.",
+   "texte": "Kristin Neff (Université du Texas) a montré que les personnes qui se traitent avec bienveillance après un échec reprennent plus facilement et tirent mieux les leçons de leurs erreurs que celles qui se critiquent durement.",
    "tag": "Émotions",
    "age": "12+",
-   "couleur": "#E91E63"
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : écris une phrase gentille que tu te dirais après un échec.",
+   "rappel": {
+    "q": "Qu’est-ce qui aide le plus à rebondir ?",
+    "choix": [
+     "La bienveillance envers soi",
+     "L’autocritique sévère",
+     "L’indifférence"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Neff, Self and Identity, 2003 ; Breines & Chen, 2012"
+   }
   },
   {
    "id": "EM-011",
    "cat": "emotions",
    "emoji": "📝",
-   "titre": "Tenir un journal de gratitude réwire le cerveau en 3 semaines",
-   "texte": "Des études en neurosciences positives : noter 3 choses positives par jour pendant 21 jours augmente durablement l’activité dans les zones liées au bonheur. L’attention façonne la perception.",
+   "titre": "Tenir un journal de gratitude peut améliorer l’humeur",
+   "texte": "Dans une étude, noter chaque soir trois choses qui se sont bien passées a amélioré l’humeur des participants pendant plusieurs mois. L’attention qu’on porte aux choses influence la façon dont on vit sa journée.",
    "tag": "Émotions",
    "age": "10+",
-   "couleur": "#F39C12"
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : écris le nom d’une personne que tu remercies aujourd’hui et pourquoi.",
+   "rappel": {
+    "q": "Combien de choses positives noter par jour ?",
+    "choix": [
+     "Trois",
+     "Trente",
+     "Aucune"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Seligman et al., American Psychologist, 2005"
+   }
   },
   {
    "id": "EM-012",
    "cat": "emotions",
    "emoji": "😶",
-   "titre": "La méditation réduit l’amygdale en 8 semaines",
-   "texte": "Une étude de Harvard (Sara Lazar) : 8 semaines de méditation quotidienne réduisent physiquement le volume de l’amygdale (centre de la peur). Le cerveau change avec la pratique.",
+   "titre": "La méditation peut changer le cerveau",
+   "texte": "Une étude de l’équipe de Sara Lazar (Harvard) a observé qu’après 8 semaines de méditation, la baisse du stress ressenti allait avec une diminution de la densité de l’amygdale, zone liée à la peur. C’était une petite étude, à confirmer.",
    "tag": "Émotions",
    "age": "13+",
-   "couleur": "#8E44AD"
+   "couleur": "#8E44AD",
+   "action": "Essaie aujourd’hui : assieds-toi 3 minutes et observe simplement ta respiration.",
+   "rappel": {
+    "q": "Combien de semaines duraient la pratique étudiée ?",
+    "choix": [
+     "8 semaines",
+     "8 jours",
+     "8 ans"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Hölzel, Lazar et al., Social Cognitive and Affective Neuroscience, 2010"
+   }
   },
   {
    "id": "EM-013",
    "cat": "emotions",
    "emoji": "🤗",
    "titre": "Le contact physique guérit des choses que les mots ne peuvent pas atteindre",
-   "texte": "Les bébés privés de contact physique ne se développent pas normalement même bien nourris. Le toucher libère de l’ocytocine, baisse la tension artérielle et renforce le système immunitaire.",
+   "texte": "Les bébés privés de contact physique se développent moins bien, même bien nourris. Le toucher bienveillant libère de l’ocytocine, aide à se calmer et renforce les liens.",
    "tag": "Émotions",
    "age": "9+",
-   "couleur": "#E91E63"
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : fais un câlin ou une tape amicale à quelqu’un que tu aimes.",
+   "rappel": {
+    "q": "Quelle hormone le toucher libère-t-il ?",
+    "choix": [
+     "L’ocytocine",
+     "L’adrénaline",
+     "L’insuline"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Harlow, 1958 ; Field, Touch, 2014"
+   }
   },
   {
    "id": "EM-014",
@@ -689,17 +1968,43 @@
    "texte": "On est triste pour des choses qui nous importent. L’éviter ne fait que reporter son traitement. L’écouter, identifier ce qu’elle dit (“j’ai perdu quelque chose de précieux”) permet de passer à travers.",
    "tag": "Émotions",
    "age": "10+",
-   "couleur": "#5DADE2"
+   "couleur": "#5DADE2",
+   "action": "Essaie aujourd’hui : quand tu es triste, demande-toi : « Qu’est-ce qui compte pour moi ici ? »",
+   "rappel": {
+    "q": "Que signale souvent la tristesse ?",
+    "choix": [
+     "Ce qui compte pour toi",
+     "Rien d’important",
+     "Qu’il faut l’ignorer"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Keltner & Gross, fonctions des émotions, 1999"
+   }
   },
   {
    "id": "EM-015",
    "cat": "emotions",
    "emoji": "😊",
-   "titre": "Sourire — même forcé — améliore l’humeur en quelques secondes",
-   "texte": "L’hypothèse du feedback facial : les muscles du visage envoient des signaux au cerveau. Tenir un crayon entre les dents (sans les lèvres) active les muscles du sourire et lège l’humeur.",
+   "titre": "Le visage influence un peu les émotions",
+   "texte": "Selon l’hypothèse du feedback facial, les muscles du visage envoient des signaux au cerveau. Une grande étude internationale de 2022 suggère qu’un sourire forcé améliore légèrement l’humeur, mais l’effet est petit et toujours discuté.",
    "tag": "Émotions",
    "age": "10+",
-   "couleur": "#F39C12"
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : tiens un crayon entre tes dents 30 secondes et note si ton humeur change.",
+   "rappel": {
+    "q": "Comment s’appelle cette hypothèse ?",
+    "choix": [
+     "Le feedback facial",
+     "L’effet papillon",
+     "L’effet placebo"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Coles et al., Nature Human Behaviour, 2022"
+   }
   },
   {
    "id": "EM-016",
@@ -709,37 +2014,159 @@
    "texte": "L’étude de Kauai (Emmy Werner) : des enfants en grande difficulté devenaient résilients s’ils avaient au moins un adulte bienveillant de confiance. Un seul. La résilience est relationnelle.",
    "tag": "Émotions",
    "age": "12+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : pense à un adulte qui a compté pour toi, et dis-lui merci.",
+   "rappel": {
+    "q": "Qu’est-ce qui aidait le plus les enfants de Kauai ?",
+    "choix": [
+     "Un adulte de confiance",
+     "Beaucoup d’argent",
+     "Beaucoup de jouets"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Werner & Smith, étude longitudinale de Kauai (1955-1995)"
+   }
   },
   {
    "id": "EM-017",
    "cat": "emotions",
    "emoji": "🌟",
-   "titre": "Écrire sur ses émotions négatives réduit la douleur physique",
-   "texte": "James Pennebaker (Texas) : écrire sur un événement difficile pendant 15-20 min sur 4 jours améliore la santé immunitaire, réduit les visites médicales et augmente le bien-être.",
+   "titre": "Écrire sur ce qui fait mal peut faire du bien",
+   "texte": "James Pennebaker (Texas) a demandé à des étudiants d’écrire 15 à 20 minutes sur un événement difficile, plusieurs jours de suite. Ils sont ensuite allés moins souvent chez le médecin. Les bénéfices sont modestes mais retrouvés dans de nombreuses études.",
    "tag": "Émotions",
    "age": "13+",
-   "couleur": "#8E44AD"
+   "couleur": "#8E44AD",
+   "action": "Essaie aujourd’hui : écris 10 minutes sur ce qui te préoccupe, puis range la feuille.",
+   "rappel": {
+    "q": "Combien de temps écrivaient les participants ?",
+    "choix": [
+     "15 à 20 minutes",
+     "2 heures",
+     "1 minute"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Pennebaker & Beall, Journal of Abnormal Psychology, 1986"
+   }
   },
   {
    "id": "EM-018",
    "cat": "emotions",
    "emoji": "🌊",
    "titre": "L’ennui n’est pas un problème — c’est une boussole",
-   "texte": "La neuroscientifique Sandi Mann : l’ennui est le signal que tes besoins profonds ne sont pas satisfaits. Il pousse à la créativité et à l’exploration. Le tolérer renforce la capacité d’attention.",
+   "texte": "La psychologue Sandi Mann a montré que des personnes qui venaient de faire une tâche ennuyeuse trouvaient ensuite plus d’idées créatives. L’ennui signale qu’on a besoin d’autre chose et peut pousser à explorer.",
    "tag": "Émotions",
    "age": "11+",
-   "couleur": "#118AB2"
+   "couleur": "#118AB2",
+   "action": "Essaie aujourd’hui : reste 5 minutes sans écran et note les idées qui te viennent.",
+   "rappel": {
+    "q": "À quoi l’ennui peut-il pousser ?",
+    "choix": [
+     "À la créativité",
+     "À dormir toujours",
+     "À rien"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Mann & Cadman, Creativity Research Journal, 2014"
+   }
+  },
+  {
+   "id": "EM-019",
+   "cat": "emotions",
+   "emoji": "😴",
+   "titre": "Une nuit blanche rend les émotions plus fortes",
+   "texte": "Après une nuit sans sommeil, l’amygdale, la zone du cerveau qui réagit aux émotions, réagissait environ 60 % plus fort dans une étude. Ce n’est pas toi qui es « trop sensible » : c’est la fatigue.",
+   "tag": "Émotions",
+   "age": "12+",
+   "couleur": "#8E44AD",
+   "action": "Essaie aujourd’hui : ce soir, couche-toi 20 minutes plus tôt.",
+   "rappel": {
+    "q": "Que fait le manque de sommeil aux émotions ?",
+    "choix": [
+     "Il les rend plus fortes",
+     "Il les efface",
+     "Rien"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Yoo et al., Current Biology, 2007"
+   }
+  },
+  {
+   "id": "EM-020",
+   "cat": "emotions",
+   "emoji": "🫂",
+   "titre": "Les émotions se transmettent comme un rhume",
+   "texte": "On imite sans s’en rendre compte les expressions et le ton des autres, et on finit par ressentir un peu la même chose. C’est la contagion émotionnelle : la bonne humeur aussi se transmet.",
+   "tag": "Émotions",
+   "age": "11+",
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : entre dans une pièce avec un grand sourire et observe l’effet.",
+   "rappel": {
+    "q": "Comment s’appelle ce phénomène ?",
+    "choix": [
+     "La contagion émotionnelle",
+     "L’effet miroir magique",
+     "La télépathie"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Hatfield, Cacioppo & Rapson, Emotional Contagion, 1994"
+   }
+  },
+  {
+   "id": "EM-021",
+   "cat": "emotions",
+   "emoji": "✉️",
+   "titre": "Un message de remerciement fait plus d’effet qu’on ne le croit",
+   "texte": "Des chercheurs ont demandé à des gens d’écrire une lettre de remerciement. Ceux qui l’ont reçue étaient beaucoup plus heureux, et moins gênés, que ce qu’avaient imaginé les auteurs.",
+   "tag": "Émotions",
+   "age": "11+",
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : envoie un message de merci précis à quelqu’un.",
+   "rappel": {
+    "q": "Qui sous-estime l’effet d’un merci ?",
+    "choix": [
+     "Celui qui l’écrit",
+     "Celui qui le reçoit",
+     "Personne"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Kumar & Epley, Psychological Science, 2018",
+    "url": "https://news.uchicago.edu/story/people-underestimate-value-sending-letters-appreciation"
+   }
   },
   {
    "id": "SA-001",
    "cat": "sagesse",
    "emoji": "✨",
    "titre": "La politesse est l’art de choisir parmi ses pensées",
-   "texte": "Germaine de Staël — Toutes nos pensées ne méritent pas d’être exprimées. La vraie politesse, c’est choisir celles qui élèvent plutôt que celles qui blessent.",
+   "texte": "Phrase attribuée à Germaine de Staël. Toutes nos pensées ne méritent pas d’être dites. La politesse, c’est choisir celles qui font du bien plutôt que celles qui blessent.",
    "tag": "Sagesse",
    "age": "10+",
-   "couleur": "#9B59B6"
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : avant de dire une critique, demande-toi si elle aide vraiment.",
+   "rappel": {
+    "q": "À qui attribue-t-on cette phrase ?",
+    "choix": [
+     "Germaine de Staël",
+     "Victor Hugo",
+     "Napoléon"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Attribuée à Germaine de Staël"
+   }
   },
   {
    "id": "SA-002",
@@ -749,47 +2176,112 @@
    "texte": "Benjamin Disraeli — Non pas la perfection dans les moyens, mais la fidélité à la direction. La constance dépasse le talent sur la durée. Un cap tenu, même lentement, arrive.",
    "tag": "Sagesse",
    "age": "10+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : choisis un objectif et fais un tout petit pas vers lui aujourd’hui.",
+   "rappel": {
+    "q": "Selon Disraeli, quel est le secret du succès ?",
+    "choix": [
+     "La constance dans le but",
+     "La chance",
+     "La vitesse"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Benjamin Disraeli, discours de 1872"
+   }
   },
   {
    "id": "SA-003",
    "cat": "sagesse",
    "emoji": "🐢",
    "titre": "L’important n’est pas la vitesse, mais de ne pas s’arrêter",
-   "texte": "Confucius — La tortue qui avance sans s’arrêter dépasse le lièvre qui fait des pauses. Le progrès régulier, même infime, surpasse les sprints suivis d’abandon.",
+   "texte": "Pensée attribuée à Confucius. Comme dans la fable d’Ésope, la tortue qui avance sans s’arrêter dépasse le lièvre qui fait des pauses. Un progrès régulier, même petit, vaut mieux que des sprints suivis d’abandons.",
    "tag": "Sagesse",
    "age": "8+",
-   "couleur": "#2ECC71"
+   "couleur": "#2ECC71",
+   "action": "Essaie aujourd’hui : avance aujourd’hui d’un petit pas sur un projet, même minuscule.",
+   "rappel": {
+    "q": "Selon cette pensée, qu’est-ce qui compte ?",
+    "choix": [
+     "Ne pas s’arrêter",
+     "Aller très vite",
+     "Gagner toujours"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Pensée attribuée à Confucius ; Ésope, Le Lièvre et la Tortue"
+   }
   },
   {
    "id": "SA-004",
    "cat": "sagesse",
    "emoji": "💛",
    "titre": "Traite les autres comme tu aimerais être traité",
-   "texte": "Règle d’or universelle — Présente dans toutes les grandes traditions : confucianisme, christianisme, islam, bouddhisme, stoïcisme. 2 500 ans d’humanité convergent vers cette idée.",
+   "texte": "On appelle cette idée la « règle d’or ». On la retrouve sous différentes formes chez Confucius, dans la Bible, le Talmud, l’islam, le bouddhisme et chez les philosophes grecs. Depuis plus de 2 500 ans, beaucoup de traditions arrivent à la même idée.",
    "tag": "Sagesse",
    "age": "6+",
-   "couleur": "#F39C12"
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : fais pour quelqu’un une chose que tu aimerais qu’on fasse pour toi.",
+   "rappel": {
+    "q": "Comment appelle-t-on cette règle ?",
+    "choix": [
+     "La règle d’or",
+     "La règle de trois",
+     "La loi du plus fort"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Règle d’or, présente dans de nombreuses traditions (Confucius, Évangiles, Talmud…)"
+   }
   },
   {
    "id": "SA-005",
    "cat": "sagesse",
    "emoji": "🙏",
    "titre": "La gratitude transforme ce que nous avons en suffisance",
-   "texte": "Proverbe amérindien — La richesse n’est pas d’avoir plus, c’est d’apprécier ce qu’on a. La gratitude est la seule façon de ne jamais manquer de quoi que ce soit.",
+   "texte": "Proverbe populaire. La richesse ne consiste pas à avoir toujours plus, mais à apprécier ce qu’on a. La gratitude aide à ne pas se sentir en manque.",
    "tag": "Sagesse",
    "age": "9+",
-   "couleur": "#1ABC9C"
+   "couleur": "#1ABC9C",
+   "action": "Essaie aujourd’hui : nomme 3 choses que tu as déjà et qui te rendent heureux.",
+   "rappel": {
+    "q": "Qu’est-ce que la vraie richesse ici ?",
+    "choix": [
+     "Apprécier ce qu’on a",
+     "Avoir toujours plus",
+     "Gagner au loto"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Proverbe populaire (origine incertaine)"
+   }
   },
   {
    "id": "SA-006",
    "cat": "sagesse",
    "emoji": "🌟",
    "titre": "Le respect de soi est le commencement de la sagesse",
-   "texte": "Proverbe écossais — On ne peut pas respecter les autres sans d’abord se respecter soi-même. L’estime de soi n’est pas de l’arrogance — c’est la fondation de tout rapport sain.",
+   "texte": "Proverbe populaire. Pour respecter les autres, il faut aussi se respecter soi-même. L’estime de soi n’est pas de l’orgueil : c’est la base de relations saines.",
    "tag": "Sagesse",
    "age": "10+",
-   "couleur": "#9B59B6"
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : dis-toi une qualité que tu as, à voix haute.",
+   "rappel": {
+    "q": "Par quoi commence la sagesse ici ?",
+    "choix": [
+     "Le respect de soi",
+     "La richesse",
+     "La force"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Proverbe populaire"
+   }
   },
   {
    "id": "SA-007",
@@ -799,47 +2291,112 @@
    "texte": "Van Gogh — La cathédrale se construit brique par brique. La maîtrise vient heure par heure. L’impulsion crée l’étincelle ; la discipline construit l’œuvre.",
    "tag": "Sagesse",
    "age": "9+",
-   "couleur": "#E91E63"
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : découpe un gros travail en 3 petites étapes et fais la première.",
+   "rappel": {
+    "q": "À qui attribue-t-on cette phrase ?",
+    "choix": [
+     "Vincent Van Gogh",
+     "Pablo Picasso",
+     "Léonard de Vinci"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Attribuée à Vincent Van Gogh, lettre à son frère Théo (1882)"
+   }
   },
   {
    "id": "SA-008",
    "cat": "sagesse",
    "emoji": "💫",
    "titre": "Ce que tu penses de toi-même est plus important que ce que les autres pensent",
-   "texte": "Sénèque — L’opinion la plus persistante et la plus influente sur ta vie est celle que tu as de toi-même. Elle filtre tout le reste.",
+   "texte": "Pensée attribuée à Sénèque. L’opinion qui influence le plus ta vie est celle que tu as de toi-même : elle filtre tout ce que les autres disent.",
    "tag": "Sagesse",
    "age": "11+",
-   "couleur": "#6C63FF"
+   "couleur": "#6C63FF",
+   "action": "Essaie aujourd’hui : écris une chose que tu penses de bien sur toi.",
+   "rappel": {
+    "q": "À qui attribue-t-on cette pensée ?",
+    "choix": [
+     "Sénèque",
+     "Platon",
+     "Molière"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Pensée attribuée à Sénèque"
+   }
   },
   {
    "id": "SA-009",
    "cat": "sagesse",
    "emoji": "🦅",
    "titre": "L’échec est le fondement de la réussite",
-   "texte": "Lao Tseu — Chaque tentative échouée t’enseigne ce qui ne fonctionne pas. Thomas Edison : \"Je n’ai pas échoué 1 000 fois, j’ai trouvé 1 000 façons qui ne marchent pas.\"",
+   "texte": "Pensée attribuée à Lao Tseu. Chaque tentative ratée montre ce qui ne marche pas. On prête à Thomas Edison cette phrase : « Je n’ai pas échoué, j’ai trouvé 1 000 façons qui ne fonctionnent pas. »",
    "tag": "Sagesse",
    "age": "9+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : repense à une erreur récente et note ce qu’elle t’a appris.",
+   "rappel": {
+    "q": "Qu’apprend-on d’une tentative ratée ?",
+    "choix": [
+     "Ce qui ne marche pas",
+     "Rien du tout",
+     "À abandonner"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Pensée attribuée à Lao Tseu ; phrase attribuée à Thomas Edison"
+   }
   },
   {
    "id": "SA-010",
    "cat": "sagesse",
    "emoji": "🌊",
    "titre": "La seule façon de faire du bon travail est d’aimer ce qu’on fait",
-   "texte": "Steve Jobs — La passion n’est pas un luxe, c’est un carburant. Les gens qui excellent n’ont pas seulement de la discipline — ils ont trouvé quelque chose qui les anime profondément.",
+   "texte": "Steve Jobs, discours à Stanford (2005). L’envie n’est pas un luxe, c’est un carburant. Les gens qui excellent ont de la discipline, mais ils ont aussi trouvé quelque chose qui les passionne.",
    "tag": "Sagesse",
    "age": "12+",
-   "couleur": "#FF9F1C"
+   "couleur": "#FF9F1C",
+   "action": "Essaie aujourd’hui : écris une activité qui te fait oublier l’heure.",
+   "rappel": {
+    "q": "Où Steve Jobs a-t-il dit cela ?",
+    "choix": [
+     "À l’université Stanford",
+     "À la télévision",
+     "Dans un livre"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Steve Jobs, discours à l’université Stanford, 2005"
+   }
   },
   {
    "id": "SA-011",
    "cat": "sagesse",
    "emoji": "🕊",
    "titre": "La paix intérieure commence quand on arrête de vouloir que les choses soient différentes",
-   "texte": "Pema Chödrön — Pas la résignation, mais l’acceptation. La souffrance naît souvent de la résistance à la réalité. Accepter ce qui est libère l’énergie pour changer ce qui peut l’être.",
+   "texte": "Pensée inspirée du bouddhisme. Il ne s’agit pas de se résigner, mais d’accepter ce qui est. La souffrance vient souvent du refus de la réalité. Accepter libère de l’énergie pour changer ce qui peut l’être.",
    "tag": "Sagesse",
    "age": "13+",
-   "couleur": "#3498DB"
+   "couleur": "#3498DB",
+   "action": "Essaie aujourd’hui : pense à une chose que tu ne peux pas changer, et lâche-la pour aujourd’hui.",
+   "rappel": {
+    "q": "D’où vient souvent la souffrance selon cette pensée ?",
+    "choix": [
+     "Refuser la réalité",
+     "Accepter la réalité",
+     "Avoir des amis"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Idée centrale de la tradition bouddhiste et du stoïcisme"
+   }
   },
   {
    "id": "SA-012",
@@ -849,37 +2406,89 @@
    "texte": "Proverbe grec — Les meilleures actions sont souvent celles dont on ne profitera pas. Éduquer, protéger, construire pour ceux qui viennent après. C’est la définition de la civilisation.",
    "tag": "Sagesse",
    "age": "11+",
-   "couleur": "#2ECC71"
+   "couleur": "#2ECC71",
+   "action": "Essaie aujourd’hui : fais une chose utile pour quelqu’un qui viendra après toi.",
+   "rappel": {
+    "q": "Que fait-on en plantant ces arbres ?",
+    "choix": [
+     "Aider ceux qui viennent après",
+     "Gagner de l’argent",
+     "Avoir de l’ombre tout de suite"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Proverbe dit grec (origine incertaine)"
+   }
   },
   {
    "id": "SA-013",
    "cat": "sagesse",
    "emoji": "🧭",
    "titre": "Connais-toi toi-même",
-   "texte": "Socrate — Inscrit au temple de Delphes. La connaissance de soi est la seule qui ne se périme pas. Qui comprend ses forces, ses peurs et ses angles morts navigue mieux dans la vie.",
+   "texte": "Inscrite au temple de Delphes et reprise par Socrate. Se connaître, c’est savoir ce qui nous fait peur, ce qui nous rend fort et ce qu’on ne voit pas de nous-mêmes. Cela aide à mieux choisir.",
    "tag": "Sagesse",
    "age": "11+",
-   "couleur": "#8E44AD"
+   "couleur": "#8E44AD",
+   "action": "Essaie aujourd’hui : écris une de tes forces et une de tes peurs.",
+   "rappel": {
+    "q": "Où était inscrite cette phrase ?",
+    "choix": [
+     "Au temple de Delphes",
+     "Sur la tour Eiffel",
+     "À la Bastille"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Inscription du temple d’Apollon à Delphes, reprise par Socrate (Platon)"
+   }
   },
   {
    "id": "SA-014",
    "cat": "sagesse",
    "emoji": "🤝",
    "titre": "La seule richesse qui grandit en la partageant, c’est la connaissance",
-   "texte": "Francis Bacon — Contrairement à l’argent, le savoir ne diminue pas quand on le donne. Un professeur ne perd rien en enseignant. Un ami qui t’explique quelque chose devient aussi plus clair.",
+   "texte": "Pensée populaire. Contrairement à l’argent, le savoir ne diminue pas quand on le partage. En expliquant quelque chose, on le comprend même mieux soi-même.",
    "tag": "Sagesse",
    "age": "9+",
-   "couleur": "#F39C12"
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : explique à quelqu’un une chose que tu as apprise aujourd’hui.",
+   "rappel": {
+    "q": "Que fait le savoir quand on le donne ?",
+    "choix": [
+     "Il grandit",
+     "Il disparaît",
+     "Il coûte cher"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Pensée populaire (attribution incertaine)"
+   }
   },
   {
    "id": "SA-015",
    "cat": "sagesse",
    "emoji": "⏳",
    "titre": "Ce que nous sommes est le résultat de ce que nous avons pensé",
-   "texte": "Bouddha — L’esprit est un jardin. Les pensées que tu cultives deviennent des habitudes, les habitudes deviennent ton caractère, le caractère devient ton destin.",
+   "texte": "Premier verset du Dhammapada, texte bouddhiste ancien. L’esprit est comme un jardin : les pensées qu’on cultive deviennent des habitudes, et les habitudes façonnent notre caractère.",
    "tag": "Sagesse",
    "age": "11+",
-   "couleur": "#1ABC9C"
+   "couleur": "#1ABC9C",
+   "action": "Essaie aujourd’hui : remarque une pensée qui revient souvent et demande-toi si elle t’aide.",
+   "rappel": {
+    "q": "De quel texte vient cette idée ?",
+    "choix": [
+     "Le Dhammapada",
+     "Les Fables de La Fontaine",
+     "Le Petit Prince"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Dhammapada, verset 1 (texte bouddhiste ancien)"
+   }
   },
   {
    "id": "SA-016",
@@ -889,7 +2498,20 @@
    "texte": "Héraclite — Tout change, rien ne dure. Même toi tu as changé depuis hier. La vraie sagesse, c’est d’accepter le changement plutôt que de le combattre.",
    "tag": "Sagesse",
    "age": "10+",
-   "couleur": "#118AB2"
+   "couleur": "#118AB2",
+   "action": "Essaie aujourd’hui : note une chose qui a changé chez toi depuis l’an dernier.",
+   "rappel": {
+    "q": "Qui a dit cela ?",
+    "choix": [
+     "Héraclite",
+     "Aristote",
+     "Jules César"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Héraclite, fragments (via Platon, Cratyle)"
+   }
   },
   {
    "id": "SA-017",
@@ -899,27 +2521,66 @@
    "texte": "Proverbe chinois — Se plaindre d’une situation ne la change pas. Chercher la plus petite action possible pour l’améliorer, même symbolique, change tout à la fois l’environnement et l’état d’esprit.",
    "tag": "Sagesse",
    "age": "8+",
-   "couleur": "#F39C12"
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : face à un problème, fais la plus petite action possible pour l’améliorer.",
+   "rappel": {
+    "q": "Que vaut-il mieux faire que maudire l’obscurité ?",
+    "choix": [
+     "Allumer une bougie",
+     "Fermer les yeux",
+     "Partir en courant"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Proverbe populaire, souvent dit chinois (origine incertaine)"
+   }
   },
   {
    "id": "SA-018",
    "cat": "sagesse",
    "emoji": "🎯",
    "titre": "Le courage n’est pas l’absence de peur, c’est agir malgré elle",
-   "texte": "Nelson Mandela — Tout le monde a peur. Les braves ne sont pas ceux qui ne ressentent pas la peur — ce sont ceux qui agissent quand même. La peur est l’énergie du courage non transformé.",
+   "texte": "Idée de Nelson Mandela. Tout le monde a peur. Les courageux ne sont pas ceux qui ne ressentent rien, mais ceux qui agissent malgré la peur.",
    "tag": "Sagesse",
    "age": "10+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : fais une chose qui te fait un peu peur mais sans danger.",
+   "rappel": {
+    "q": "Selon Mandela, qu’est-ce que le courage ?",
+    "choix": [
+     "Agir malgré la peur",
+     "Ne jamais avoir peur",
+     "Fuir le danger"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Nelson Mandela, Un long chemin vers la liberté, 1994 (idée paraphrasée)"
+   }
   },
   {
    "id": "SA-019",
    "cat": "sagesse",
    "emoji": "📚",
    "titre": "Les livres sont des amis qui ne trahissent jamais",
-   "texte": "François Mauriac — Un livre est une conversation avec quelqu’un de plus sage que toi, disponible à toute heure, sans jugement. Les meilleurs livres changent ta façon de voir pour toujours.",
+   "texte": "Pensée populaire. Un livre est une conversation avec quelqu’un qui en sait plus, disponible à toute heure et sans jugement. Certains livres changent pour toujours notre façon de voir.",
    "tag": "Sagesse",
    "age": "9+",
-   "couleur": "#9B59B6"
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : lis 10 pages d’un livre qui te plaît.",
+   "rappel": {
+    "q": "Qu’est-ce qu’un livre selon cette pensée ?",
+    "choix": [
+     "Un ami fidèle",
+     "Un objet inutile",
+     "Une punition"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Pensée populaire (souvent attribuée à divers auteurs)"
+   }
   },
   {
    "id": "SA-020",
@@ -929,37 +2590,181 @@
    "texte": "Anaïs Nin — Deux personnes qui vivent le même événement le perçoivent différemment selon leur histoire, leurs peurs, leurs désirs. Changer de perspective change la réalité.",
    "tag": "Sagesse",
    "age": "12+",
-   "couleur": "#2C3E50"
+   "couleur": "#2C3E50",
+   "action": "Essaie aujourd’hui : demande à quelqu’un comment il a vécu un moment que vous avez partagé.",
+   "rappel": {
+    "q": "Comment voyons-nous les choses selon cette idée ?",
+    "choix": [
+     "Comme nous sommes",
+     "Exactement comme elles sont",
+     "Toujours pareil"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Anaïs Nin, La Séduction du Minotaure, 1961 (idée reprise du Talmud)"
+   }
   },
   {
    "id": "SA-021",
    "cat": "sagesse",
    "emoji": "🦋",
    "titre": "La liberté, c’est de choisir ses chaînes",
-   "texte": "Jean-Paul Sartre — Toute vie implique des contraintes. La vraie liberté n’est pas l’absence d’engagement, mais de choisir consciemment ses engagements plutôt que de les subir.",
+   "texte": "Pensée inspirée de Jean-Paul Sartre. Toute vie comporte des contraintes. La liberté n’est pas l’absence d’engagement, c’est choisir consciemment ses engagements plutôt que de les subir.",
    "tag": "Sagesse",
    "age": "13+",
-   "couleur": "#E91E63"
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : choisis un engagement que tu as vraiment décidé, pas subi.",
+   "rappel": {
+    "q": "Qu’est-ce que la liberté selon cette pensée ?",
+    "choix": [
+     "Choisir ses engagements",
+     "N’avoir aucune règle",
+     "Faire n’importe quoi"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Pensée inspirée de l’existentialisme de Jean-Paul Sartre"
+   }
   },
   {
    "id": "SA-022",
    "cat": "sagesse",
    "emoji": "🦁",
-   "titre": "Ce que l’on comprend bien s’énonce clairement",
-   "texte": "Nicolas Boileau — Si tu ne peux pas l’expliquer simplement, c’est que tu ne le comprends pas vraiment. La clarté d’expression est le reflet de la clarté de pensée.",
+   "titre": "Ce que l’on conçoit bien s’énonce clairement",
+   "texte": "Nicolas Boileau, L’Art poétique (1674). Si tu n’arrives pas à expliquer quelque chose simplement, c’est peut-être que tu ne l’as pas encore bien compris. Une pensée claire donne des mots clairs.",
    "tag": "Sagesse",
    "age": "11+",
-   "couleur": "#F39C12"
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : explique une leçon en 3 phrases simples.",
+   "rappel": {
+    "q": "Qui a écrit cette phrase ?",
+    "choix": [
+     "Nicolas Boileau",
+     "Jean de La Fontaine",
+     "Molière"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Nicolas Boileau, L’Art poétique, 1674"
+   }
+  },
+  {
+   "id": "SA-023",
+   "cat": "sagesse",
+   "emoji": "⏰",
+   "titre": "Nous n’avons pas peu de temps, nous en perdons beaucoup",
+   "texte": "Sénèque, De la brièveté de la vie (Ier siècle). « Non exiguum temporis habemus, sed multum perdidimus » : la vie est assez longue si l’on sait à quoi l’employer.",
+   "tag": "Sagesse",
+   "age": "11+",
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : note une activité qui t’a pris du temps sans te faire plaisir.",
+   "rappel": {
+    "q": "Selon Sénèque, quel est le problème ?",
+    "choix": [
+     "Le temps perdu",
+     "Le manque de temps",
+     "Le sommeil"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Sénèque, De brevitate vitae, I (traduction PocketSage depuis le latin)"
+   }
+  },
+  {
+   "id": "SA-024",
+   "cat": "sagesse",
+   "emoji": "⚖️",
+   "titre": "Certaines choses dépendent de toi, d’autres non",
+   "texte": "Épictète, ancien esclave devenu philosophe, commence son Manuel ainsi : nos jugements, nos désirs et nos actes dépendent de nous ; la météo ou l’avis des autres, non. Mets ton énergie dans les premiers.",
+   "tag": "Sagesse",
+   "age": "10+",
+   "couleur": "#1ABC9C",
+   "action": "Essaie aujourd’hui : fais deux colonnes : « dépend de moi » et « ne dépend pas de moi ».",
+   "rappel": {
+    "q": "Où mettre son énergie selon Épictète ?",
+    "choix": [
+     "Dans ce qui dépend de soi",
+     "Dans la météo",
+     "Dans l’avis des autres"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Épictète, Manuel, 1 (traduction PocketSage depuis le grec)"
+   }
+  },
+  {
+   "id": "SA-025",
+   "cat": "sagesse",
+   "emoji": "🐢",
+   "titre": "Rien ne sert de courir ; il faut partir à point",
+   "texte": "Jean de La Fontaine, Le Lièvre et la Tortue (1668). La tortue gagne parce qu’elle part à temps et ne s’arrête pas, pendant que le lièvre, trop sûr de lui, traîne.",
+   "tag": "Sagesse",
+   "age": "8+",
+   "couleur": "#2ECC71",
+   "action": "Essaie aujourd’hui : commence aujourd’hui un petit bout d’un travail prévu pour plus tard.",
+   "rappel": {
+    "q": "Pourquoi la tortue gagne-t-elle ?",
+    "choix": [
+     "Elle part à temps",
+     "Elle court plus vite",
+     "Le lièvre triche"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Jean de La Fontaine, Fables, livre VI, fable 10 (1668)"
+   }
+  },
+  {
+   "id": "SA-026",
+   "cat": "sagesse",
+   "emoji": "🏛️",
+   "titre": "Ne discute plus de ce qu’est quelqu’un de bien : sois-le",
+   "texte": "Marc Aurèle, Pensées pour moi-même (livre X). L’empereur philosophe se rappelait qu’il vaut mieux agir avec bonté que débattre sans fin de la bonté.",
+   "tag": "Sagesse",
+   "age": "12+",
+   "couleur": "#8E44AD",
+   "action": "Essaie aujourd’hui : fais une action gentille au lieu d’en parler.",
+   "rappel": {
+    "q": "Que conseille Marc Aurèle ?",
+    "choix": [
+     "Agir plutôt que discuter",
+     "Discuter longtemps",
+     "Ne rien faire"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Marc Aurèle, Pensées, X, 16 (traduction PocketSage depuis le grec)"
+   }
   },
   {
    "id": "PT-001",
    "cat": "petits",
    "emoji": "🐘",
-   "titre": "Les éléphants se souviennent de tout",
-   "texte": "Un éléphant n’oublie jamais les visages de ses amis ni les chemins qu’il a parcourus. Il peut retrouver un point d’eau visité il y a 10 ans à des centaines de kilomètres.",
+   "titre": "Les éléphants ont une mémoire extraordinaire",
+   "texte": "Un éléphant se souvient longtemps des visages de ses amis et des chemins qu’il a parcourus. Il peut retrouver un point d’eau, même très loin, plusieurs années après.",
    "tag": "Animaux",
    "age": "4+",
-   "couleur": "#9B59B6"
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : ferme les yeux et retrouve le chemin de ta chambre dans ta tête.",
+   "rappel": {
+    "q": "Que retrouve un éléphant des années après ?",
+    "choix": [
+     "Un point d’eau",
+     "Son jouet",
+     "Sa maman seulement"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Smithsonian’s National Zoo, Asian elephant ; McComb et al., Science, 2001"
+   }
   },
   {
    "id": "PT-002",
@@ -969,17 +2774,43 @@
    "texte": "La moitié de leur cerveau dort pendant que l’autre reste éveillée pour respirer et surveiller les dangers. Ils peuvent même nager en dormant !",
    "tag": "Animaux",
    "age": "4+",
-   "couleur": "#3498DB"
+   "couleur": "#3498DB",
+   "action": "Essaie aujourd’hui : ferme un œil, puis l’autre : tu ne peux pas dormir comme un dauphin !",
+   "rappel": {
+    "q": "Comment dorment les dauphins ?",
+    "choix": [
+     "Avec un œil ouvert",
+     "La tête en bas",
+     "Sur la plage"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NOAA Fisheries ; Rattenborg et al., 2000 (sommeil unihémisphérique)"
+   }
   },
   {
    "id": "PT-003",
    "cat": "petits",
    "emoji": "🐌",
-   "titre": "Un escargot a 14 000 dents… sur sa langue !",
-   "texte": "Sa langue s’appelle une radula et est couverte de minuscules dents pour râper les plantes. L’escargot avance si lentement qu’il lui faut 5 jours pour faire 1 kilomètre.",
+   "titre": "Un escargot a des milliers de dents… sur sa langue !",
+   "texte": "Sa langue s’appelle une radula. Elle est couverte de milliers de dents minuscules qui râpent les plantes. Et l’escargot avance tout doucement, laissant un chemin de bave pour glisser.",
    "tag": "Animaux",
    "age": "4+",
-   "couleur": "#2ECC71"
+   "couleur": "#2ECC71",
+   "action": "Essaie aujourd’hui : touche ta langue : elle est douce, pas pleine de dents !",
+   "rappel": {
+    "q": "Où sont les dents de l’escargot ?",
+    "choix": [
+     "Sur sa langue",
+     "Sur sa coquille",
+     "Sur ses yeux"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Encyclopédie, radula des gastéropodes"
+   }
   },
   {
    "id": "PT-004",
@@ -989,27 +2820,66 @@
    "texte": "Du ciel, on le verrait entier en rond. Depuis le sol, la terre cache la moitié. La lumière du soleil se cache dans chaque goutte de pluie et ressort divisée en toutes ses couleurs.",
    "tag": "Sciences",
    "age": "5+",
-   "couleur": "#E91E63"
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : après la pluie, cherche un arc-en-ciel avec le soleil dans ton dos.",
+   "rappel": {
+    "q": "Quelle forme a vraiment un arc-en-ciel ?",
+    "choix": [
+     "Un cercle",
+     "Un carré",
+     "Une étoile"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NOAA SciJinks, rainbows ; optique de base"
+   }
   },
   {
    "id": "PT-005",
    "cat": "petits",
    "emoji": "🌙",
    "titre": "La lune brille mais ne produit pas de lumière",
-   "texte": "Elle renvoie la lumière du soleil, comme un miroir géant. Sans le soleil, la lune serait complètement noire dans le ciel. Elle s’éloigne de la Terre de 3 cm chaque année.",
+   "texte": "Elle renvoie la lumière du Soleil, comme un grand miroir. Sans le Soleil, la Lune serait toute noire dans le ciel. Et elle s’éloigne de la Terre de presque 4 cm chaque année.",
    "tag": "Astronomie",
    "age": "5+",
-   "couleur": "#2C3E50"
+   "couleur": "#2C3E50",
+   "action": "Essaie aujourd’hui : ce soir, regarde la Lune et cherche le côté éclairé par le Soleil.",
+   "rappel": {
+    "q": "D’où vient la lumière de la Lune ?",
+    "choix": [
+     "Du Soleil",
+     "De la Lune elle-même",
+     "Des étoiles"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NASA Science, Moon Facts"
+   }
   },
   {
    "id": "PT-006",
    "cat": "petits",
    "emoji": "🦋",
    "titre": "Les papillons goûtent avec leurs pattes",
-   "texte": "Dès qu’ils se posent sur une fleur, leurs pattes savent si elle est sucrée avant même que leur bouche ne touche quoi que ce soit. 200 fois plus sensibles que notre langue !",
+   "texte": "Dès qu’ils se posent sur une fleur, leurs pattes sentent si elle est bonne, avant même que leur bouche la touche. Ils ont des capteurs de goût au bout des pattes !",
    "tag": "Animaux",
    "age": "5+",
-   "couleur": "#E91E63"
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : goûte un fruit les yeux fermés et devine lequel c’est.",
+   "rappel": {
+    "q": "Avec quoi le papillon goûte-t-il ?",
+    "choix": [
+     "Ses pattes",
+     "Son nez",
+     "Ses ailes"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Smithsonian, Butterflies taste with their feet"
+   }
   },
   {
    "id": "PT-007",
@@ -1019,137 +2889,459 @@
    "texte": "Si tu regardais la Terre depuis l’espace, tu verrais surtout de l’eau bleue. Les océans sont si profonds que la plus haute montagne du monde (l’Everest) rentrerait dedans.",
    "tag": "Géographie",
    "age": "5+",
-   "couleur": "#118AB2"
+   "couleur": "#118AB2",
+   "action": "Essaie aujourd’hui : regarde un globe ou une carte du monde : compte les zones bleues.",
+   "rappel": {
+    "q": "Qu’est-ce qui couvre le plus la Terre ?",
+    "choix": [
+     "L’océan",
+     "Les forêts",
+     "Les villes"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NOAA Ocean Service, How much water is in the ocean? ; fosse des Mariannes (NOAA)"
+   }
   },
   {
    "id": "PT-008",
    "cat": "petits",
    "emoji": "🐦",
-   "titre": "Les flamants roses sont blancs à la naissance",
-   "texte": "Leur couleur rose vient de la nourriture qu’ils mangent : des petites crevettes et algues rouges. Sans cette nourriture, ils redeviendraient blancs. Tu es un peu ce que tu manges aussi !",
+   "titre": "Les flamants roses naissent gris-blanc",
+   "texte": "Les bébés flamants sont gris ou blancs. Leur couleur rose vient de ce qu’ils mangent : des petites crevettes et des algues pleines de pigments. Sans cette nourriture, ils perdraient peu à peu leur couleur.",
    "tag": "Animaux",
    "age": "5+",
-   "couleur": "#E91E63"
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : mange un aliment coloré et dis sa couleur.",
+   "rappel": {
+    "q": "Pourquoi les flamants sont-ils roses ?",
+    "choix": [
+     "À cause de leur nourriture",
+     "Ils se peignent",
+     "Ils naissent roses"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Smithsonian’s National Zoo, American flamingo"
+   }
   },
   {
    "id": "PT-009",
    "cat": "petits",
    "emoji": "⭐",
-   "titre": "Les étoiles que tu vois existaient peut-être plus",
-   "texte": "La lumière d’une étoile met des milliers d’années pour nous arriver. Certaines étoiles que tu vois la nuit ont déjà disparu. Tu regardes dans le passé quand tu regardes le ciel.",
+   "titre": "Quand tu regardes une étoile, tu regardes le passé",
+   "texte": "La lumière d’une étoile met des années, parfois des milliers d’années, pour arriver jusqu’à nous. Tu vois donc l’étoile comme elle était il y a très longtemps.",
    "tag": "Astronomie",
    "age": "6+",
-   "couleur": "#F39C12"
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : ce soir, cherche l’étoile la plus brillante dans le ciel.",
+   "rappel": {
+    "q": "Que voit-on en regardant une étoile ?",
+    "choix": [
+     "Sa lumière d’autrefois",
+     "Sa lumière d’aujourd’hui",
+     "Un avion"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NASA Space Place, light-years"
+   }
   },
   {
    "id": "PT-010",
    "cat": "petits",
    "emoji": "🌳",
    "titre": "Les arbres parlent en silence sous la terre",
-   "texte": "Leurs racines s’envoient des messages via des petits champignons. Un arbre malade reçoit de la nourriture de ses voisins. Une forêt, c’est une grande famille qui prend soin d’elle-même.",
+   "texte": "Sous la terre, les racines des arbres sont reliées par des petits champignons. Ils font passer de l’eau et de la nourriture d’un arbre à l’autre. Les scientifiques étudient encore comment les arbres s’entraident ainsi.",
    "tag": "Sciences",
    "age": "6+",
-   "couleur": "#27AE60"
+   "couleur": "#27AE60",
+   "action": "Essaie aujourd’hui : au parc, touche l’écorce d’un arbre et cherche des champignons au pied.",
+   "rappel": {
+    "q": "Qu’est-ce qui relie les racines des arbres ?",
+    "choix": [
+     "Des petits champignons",
+     "Des fils",
+     "Des oiseaux"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Simard et al., Nature, 1997"
+   }
   },
   {
    "id": "PT-011",
    "cat": "petits",
    "emoji": "🐋",
    "titre": "La baleine bleue est l’animal le plus grand qui ait jamais vécu",
-   "texte": "Plus grand que les dinosaures ! Son cœur est aussi gros qu’une voiture. Son bébé pèse déjà 2 tonnes à la naissance — autant que 30 adultes.",
+   "texte": "Elle est plus grande que tous les dinosaures ! Son cœur est aussi gros qu’une petite voiture. Son bébé pèse déjà 2 à 3 tonnes à la naissance, autant que 30 adultes.",
    "tag": "Animaux",
    "age": "5+",
-   "couleur": "#2980B9"
+   "couleur": "#2980B9",
+   "action": "Essaie aujourd’hui : compte combien d’adultes il faudrait pour peser autant qu’un bébé baleine.",
+   "rappel": {
+    "q": "Quel est le plus grand animal ayant existé ?",
+    "choix": [
+     "La baleine bleue",
+     "L’éléphant",
+     "Le dinosaure T-rex"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NOAA Fisheries, Blue Whale"
+   }
   },
   {
    "id": "PT-012",
    "cat": "petits",
    "emoji": "🍯",
    "titre": "Le miel ne se gâte jamais, même après 3 000 ans",
-   "texte": "Des archéologues ont trouvé du miel dans des tombes égyptiennes vieux de 3 000 ans, encore mangeable ! Le sucre et l’acidité du miel empêchent les microbes de vivre dedans.",
+   "texte": "Des archéologues ont trouvé du miel vieux de plus de 3 000 ans dans des tombes égyptiennes, encore bien conservé ! Le miel a très peu d’eau et il est un peu acide : les microbes n’arrivent pas à y vivre.",
    "tag": "Sciences",
    "age": "6+",
-   "couleur": "#F39C12"
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : regarde un pot de miel et observe comme il est épais.",
+   "rappel": {
+    "q": "Pourquoi le miel se garde-t-il si longtemps ?",
+    "choix": [
+     "Les microbes n’y vivent pas",
+     "Il est froid",
+     "Il est salé"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Smithsonian Magazine, The Science Behind Honey’s Eternal Shelf Life (2013)"
+   }
+  },
+  {
+   "id": "PT-013",
+   "cat": "petits",
+   "emoji": "🦦",
+   "titre": "Les loutres de mer se tiennent la main pour dormir",
+   "texte": "Quand elles dorment sur l’eau, les loutres se tiennent par la patte. Comme ça, les vagues ne les séparent pas. Parfois, elles s’enroulent aussi dans des algues, comme dans une couverture !",
+   "tag": "Animaux",
+   "age": "4+",
+   "couleur": "#3498DB",
+   "action": "Essaie aujourd’hui : fais un câlin de loutre à quelqu’un avant de dormir.",
+   "rappel": {
+    "q": "Pourquoi les loutres se tiennent-elles la patte ?",
+    "choix": [
+     "Pour rester ensemble",
+     "Pour jouer au ballon",
+     "Pour manger"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NOAA Fisheries, Sea Otter ; Monterey Bay Aquarium"
+   }
+  },
+  {
+   "id": "PT-014",
+   "cat": "petits",
+   "emoji": "⭐",
+   "titre": "L’étoile de mer n’a pas de cerveau",
+   "texte": "Elle n’a ni cerveau ni sang ! Des nerfs dans chacun de ses bras l’aident à bouger. Et à la place du sang, elle utilise de l’eau de mer.",
+   "tag": "Animaux",
+   "age": "5+",
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : dessine une étoile de mer et compte ses bras.",
+   "rappel": {
+    "q": "Qu’est-ce que l’étoile de mer n’a pas ?",
+    "choix": [
+     "Un cerveau",
+     "Des bras",
+     "Une couleur"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NOAA Ocean Service, Are starfish really fish?"
+   }
+  },
+  {
+   "id": "PT-015",
+   "cat": "petits",
+   "emoji": "🦐",
+   "titre": "Le cœur de la crevette est dans sa tête",
+   "texte": "Chez la crevette, le cœur se trouve juste derrière les yeux, dans la partie qu’on appelle la tête. Son corps n’est pas rangé comme le nôtre !",
+   "tag": "Animaux",
+   "age": "5+",
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : pose ta main sur ton cœur : il est dans ta poitrine, pas dans ta tête !",
+   "rappel": {
+    "q": "Où est le cœur de la crevette ?",
+    "choix": [
+     "Dans sa tête",
+     "Dans sa queue",
+     "Dans ses pattes"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Encyclopédie, anatomie des crevettes (céphalothorax)"
+   }
+  },
+  {
+   "id": "PT-016",
+   "cat": "petits",
+   "emoji": "🐨",
+   "titre": "Le koala dort presque toute la journée",
+   "texte": "Un koala peut dormir 18 à 22 heures par jour ! Les feuilles d’eucalyptus qu’il mange donnent très peu d’énergie, alors il se repose beaucoup.",
+   "tag": "Animaux",
+   "age": "4+",
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : compte combien d’heures tu dors, et compare avec le koala.",
+   "rappel": {
+    "q": "Combien d’heures dort un koala ?",
+    "choix": [
+     "18 à 22 heures",
+     "2 heures",
+     "Jamais"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "San Diego Zoo Wildlife Alliance, Koala"
+   }
+  },
+  {
+   "id": "PT-017",
+   "cat": "petits",
+   "emoji": "🦒",
+   "titre": "La girafe a autant d’os dans le cou que toi",
+   "texte": "Son cou est immense, mais il a 7 os, comme le tien ! Chez la girafe, chaque os est simplement beaucoup plus long.",
+   "tag": "Animaux",
+   "age": "5+",
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : touche ton cou et imagine qu’il est aussi long qu’une girafe.",
+   "rappel": {
+    "q": "Combien d’os dans le cou d’une girafe ?",
+    "choix": [
+     "Sept",
+     "Cent",
+     "Un seul"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Smithsonian’s National Zoo, Giraffe"
+   }
+  },
+  {
+   "id": "PT-018",
+   "cat": "petits",
+   "emoji": "🐙",
+   "titre": "La pieuvre change de couleur en un clin d’œil",
+   "texte": "Sa peau contient des milliers de petites poches de couleur. Elle peut devenir rouge, blanche ou tachetée en une seconde pour se cacher ou montrer qu’elle n’est pas contente.",
+   "tag": "Animaux",
+   "age": "6+",
+   "couleur": "#2980B9",
+   "action": "Essaie aujourd’hui : joue à cache-cache en te mettant devant une couleur proche de tes habits.",
+   "rappel": {
+    "q": "Pourquoi la pieuvre change-t-elle de couleur ?",
+    "choix": [
+     "Pour se cacher",
+     "Pour dormir",
+     "Pour nager vite"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Smithsonian Ocean, Octopus ; Monterey Bay Aquarium"
+   }
   },
   {
    "id": "EN-001",
    "cat": "enfants",
    "emoji": "🦑",
    "titre": "Le calmar colossal a des yeux de la taille d’une assiette",
-   "texte": "30 cm de diamètre — les plus grands yeux du règne animal. Dans l’obscurité des profondeurs, il capte la moindre lueur de prédateur. On n’en a presque jamais vu vivant.",
+   "texte": "Ses yeux mesurent environ 27 cm : ce sont les plus grands du règne animal. Dans le noir des profondeurs, ils captent la moindre lueur. Il a été filmé vivant pour la première fois seulement en 2025.",
    "tag": "Biologie",
    "age": "8+",
-   "couleur": "#8E44AD"
+   "couleur": "#8E44AD",
+   "action": "Essaie aujourd’hui : dessine un œil de la taille d’une assiette à côté de ton œil.",
+   "rappel": {
+    "q": "Quel animal a les plus grands yeux ?",
+    "choix": [
+     "Le calmar colossal",
+     "La baleine bleue",
+     "L’éléphant"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Euronews, 16/04/2025 ; Te Papa Museum",
+    "url": "https://www.euronews.com/2025/04/16/worlds-most-elusive-squid-scientists-just-filmed-colossal-squid-alive-for-the-first-time"
+   }
   },
   {
    "id": "EN-002",
    "cat": "enfants",
    "emoji": "🏔️",
-   "titre": "L’Everest grandit de 4 mm chaque année",
-   "texte": "Les plaques tectoniques qui le poussent vers le haut n’ont pas arrêté. En même temps, le vent et les pluies l’érodent. Pendant des millions d’années, les deux forces s’équilibrent.",
+   "titre": "L’Everest grandit encore de quelques millimètres par an",
+   "texte": "Les plaques de l’Inde et de l’Asie continuent de se pousser, ce qui soulève l’Himalaya de quelques millimètres par an. En même temps, le vent et la pluie usent la montagne. Les deux forces se battent depuis des millions d’années.",
    "tag": "Géologie",
    "age": "8+",
-   "couleur": "#7F8C8D"
+   "couleur": "#7F8C8D",
+   "action": "Essaie aujourd’hui : mesure 4 mm sur une règle : c’est ce que l’Everest prend par an.",
+   "rappel": {
+    "q": "Qu’est-ce qui pousse l’Everest vers le haut ?",
+    "choix": [
+     "Les plaques tectoniques",
+     "La pluie",
+     "Les arbres"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NASA Earth Observatory ; mesures GPS de l’Himalaya"
+   }
   },
   {
    "id": "EN-003",
    "cat": "enfants",
    "emoji": "🧲",
    "titre": "La Terre est un énorme aimant avec des pôles qui bougent",
-   "texte": "Le pôle nord magnétique se déplace d’environ 55 km par an vers la Russie. Les boussoles de nos grands-parents pointaient vers un endroit légèrement différent du nôtre.",
+   "texte": "Le pôle Nord magnétique se déplace : ces dernières décennies, il a bougé jusqu’à 50 km par an, vers la Russie. Les boussoles de nos grands-parents pointaient donc vers un endroit un peu différent.",
    "tag": "Physique",
    "age": "9+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : fabrique une boussole avec une aiguille aimantée sur un bouchon dans l’eau.",
+   "rappel": {
+    "q": "Qu’est-ce qui se déplace chaque année ?",
+    "choix": [
+     "Le pôle Nord magnétique",
+     "Le Soleil",
+     "L’équateur"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NOAA NCEI, World Magnetic Model"
+   }
   },
   {
    "id": "EN-004",
    "cat": "enfants",
    "emoji": "🦠",
-   "titre": "Il y a 10 fois plus de bactéries dans ton corps que de cellules",
-   "texte": "Environ 38 000 milliards de bactéries vivent en toi — surtout dans les intestins. La plupart sont tes alliées : elles digèrent, fabriquent des vitamines, et entraînent ton système immunitaire.",
+   "titre": "Ton corps contient à peu près autant de bactéries que de cellules",
+   "texte": "Environ 38 000 milliards de bactéries vivent en toi, surtout dans l’intestin, pour environ 30 000 milliards de cellules humaines. On disait autrefois « dix fois plus », mais c’était une erreur. La plupart de ces bactéries t’aident à digérer.",
    "tag": "Biologie",
    "age": "9+",
-   "couleur": "#27AE60"
+   "couleur": "#27AE60",
+   "action": "Essaie aujourd’hui : mange un yaourt et pense aux bonnes bactéries qui vivent en toi.",
+   "rappel": {
+    "q": "Combien de bactéries par cellule humaine ?",
+    "choix": [
+     "À peu près une",
+     "Dix",
+     "Zéro"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Sender, Fuchs & Milo, PLoS Biology, 2016",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/4991899"
+   }
   },
   {
    "id": "EN-005",
    "cat": "enfants",
    "emoji": "🌋",
-   "titre": "Il y a de la lave sous tes pieds à environ 30 km de profondeur",
-   "texte": "La croûte terrestre fait 30 à 70 km d’épaisseur. En dessous, le manteau est si chaud que la roche est pâteuse comme du caramel chaud. Sur les océans, la croûte n’est que 10 km.",
+   "titre": "Sous la croûte, la roche bouge très lentement",
+   "texte": "La croûte terrestre fait de 5 à 70 km d’épaisseur. En dessous, le manteau est très chaud, mais il est surtout solide : il se déforme très lentement, comme de la pâte, sur des millions d’années. Le magma ne se forme qu’à certains endroits.",
    "tag": "Géologie",
    "age": "8+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : fais chauffer une pâte à modeler dans tes mains : elle devient plus molle, comme le manteau sur des millions d’années.",
+   "rappel": {
+    "q": "Comment est surtout le manteau terrestre ?",
+    "choix": [
+     "Solide mais très lent",
+     "Liquide comme de l’eau",
+     "Gelé"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "USGS, Inside the Earth"
+   }
   },
   {
    "id": "EN-006",
    "cat": "enfants",
    "emoji": "🦅",
-   "titre": "L’aigle voit 5 fois mieux que l’humain",
-   "texte": "Il peut repérer un lapin à 3 km de distance. Ses yeux représentent 5 % de la masse de sa tête — si les nôtres étaient proportionnels, ils feraient la taille d’une orange.",
+   "titre": "L’aigle voit 4 à 5 fois mieux que l’humain",
+   "texte": "Il peut repérer un lapin à plus de 3 km. Ses yeux sont énormes pour sa tête : si les nôtres étaient aussi grands en proportion, ils auraient la taille d’une orange.",
    "tag": "Animaux",
    "age": "8+",
-   "couleur": "#E67E22"
+   "couleur": "#E67E22",
+   "action": "Essaie aujourd’hui : regarde au loin et essaie de repérer le plus petit détail possible.",
+   "rappel": {
+    "q": "Combien de fois mieux voit l’aigle ?",
+    "choix": [
+     "4 à 5 fois",
+     "100 fois",
+     "Pareil que nous"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Encyclopædia Britannica, vision des rapaces"
+   }
   },
   {
    "id": "EN-007",
    "cat": "enfants",
    "emoji": "☀️",
    "titre": "Le soleil est si grand que 1,3 million de Terres rentreraient dedans",
-   "texte": "Et pourtant, le soleil est une étoile tout à fait ordinaire parmi les 400 milliards d’étoiles de notre galaxie. Certaines étoiles sont 1 500 fois plus grandes que lui.",
+   "texte": "Et pourtant, le Soleil est une étoile assez ordinaire parmi les 100 à 400 milliards d’étoiles de notre galaxie. Certaines étoiles géantes sont plus de 1 000 fois plus larges que lui.",
    "tag": "Astronomie",
    "age": "8+",
-   "couleur": "#F39C12"
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : compare une bille et un ballon : c’est un peu la Terre à côté du Soleil.",
+   "rappel": {
+    "q": "Combien de Terres rentreraient dans le Soleil ?",
+    "choix": [
+     "Environ 1,3 million",
+     "Environ 10",
+     "Environ 100"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NASA Science, Sun Facts"
+   }
   },
   {
    "id": "EN-008",
    "cat": "enfants",
    "emoji": "💎",
    "titre": "Les diamants viennent du même matériau que le crayon",
-   "texte": "Les deux sont du carbone pur. Dans un diamant, les atomes sont disposés en pyramides très rigides. Dans le graphite du crayon, ils sont en couches glissantes. Même atome, structure différente, résultat opposé.",
+   "texte": "Les deux sont du carbone pur. Dans un diamant, les atomes sont attachés solidement dans toutes les directions. Dans le graphite du crayon, ils forment des couches qui glissent. Mêmes atomes, rangement différent, résultats opposés.",
    "tag": "Chimie",
    "age": "9+",
-   "couleur": "#5DADE2"
+   "couleur": "#5DADE2",
+   "action": "Essaie aujourd’hui : regarde la mine de ton crayon : c’est du carbone, comme un diamant.",
+   "rappel": {
+    "q": "De quoi sont faits diamant et graphite ?",
+    "choix": [
+     "De carbone",
+     "De fer",
+     "De verre"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Encyclopædia Britannica, allotropes du carbone"
+   }
   },
   {
    "id": "EN-009",
@@ -1159,7 +3351,20 @@
    "texte": "Presque tous les matériaux sont plus denses solides que liquides. Pas l’eau. Cette anomalie est vitale : si la glace coulait, les lacs gèleraient de bas en haut et tueraient toute vie aquatique.",
    "tag": "Physique",
    "age": "9+",
-   "couleur": "#AED6F1"
+   "couleur": "#AED6F1",
+   "action": "Essaie aujourd’hui : mets un glaçon dans un verre d’eau et regarde-le flotter.",
+   "rappel": {
+    "q": "Pourquoi la glace flotte-t-elle ?",
+    "choix": [
+     "Moins dense que l’eau",
+     "Elle est creuse",
+     "Elle est magique"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "USGS, Water Density"
+   }
   },
   {
    "id": "EN-010",
@@ -1169,67 +3374,275 @@
    "texte": "Beaucoup de plantes replient leurs feuilles ou fleurs au coucher du soleil — c’est la nyctinastie. Elles ont un rythme circadien comme nous. Certaines peuvent même anticiper l’aube.",
    "tag": "Biologie",
    "age": "8+",
-   "couleur": "#27AE60"
+   "couleur": "#27AE60",
+   "action": "Essaie aujourd’hui : observe une plante d’intérieur le matin et le soir.",
+   "rappel": {
+    "q": "Comment s’appelle ce mouvement nocturne ?",
+    "choix": [
+     "La nyctinastie",
+     "La photosynthèse",
+     "La respiration"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Encyclopédie, nyctinastie ; Darwin, The Power of Movement in Plants, 1880"
+   }
+  },
+  {
+   "id": "EN-011",
+   "cat": "enfants",
+   "emoji": "🌊",
+   "titre": "Une respiration sur deux vient de l’océan",
+   "texte": "De minuscules algues qui flottent dans la mer, le phytoplancton, fabriquent environ la moitié de l’oxygène de la Terre. Une respiration sur deux, tu la dois à l’océan !",
+   "tag": "Biologie",
+   "age": "8+",
+   "couleur": "#5DADE2",
+   "action": "Essaie aujourd’hui : prends 2 grandes respirations et dis merci à l’océan pour la deuxième.",
+   "rappel": {
+    "q": "Qui fabrique la moitié de l’oxygène ?",
+    "choix": [
+     "Le phytoplancton",
+     "Les volcans",
+     "Les voitures"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NOAA Ocean Service, How much oxygen comes from the ocean?",
+    "url": "https://oceanservice.noaa.gov/facts/ocean-oxygen.html"
+   }
+  },
+  {
+   "id": "EN-012",
+   "cat": "enfants",
+   "emoji": "☀️",
+   "titre": "La lumière du Soleil a 8 minutes de retard",
+   "texte": "La lumière met environ 8 minutes et 20 secondes pour venir du Soleil jusqu’à nous. Le Soleil que tu vois, c’est celui d’il y a 8 minutes.",
+   "tag": "Astronomie",
+   "age": "8+",
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : mets un minuteur de 8 minutes : c’est le temps du voyage de la lumière.",
+   "rappel": {
+    "q": "Combien de temps met la lumière du Soleil ?",
+    "choix": [
+     "Environ 8 minutes",
+     "Une seconde",
+     "Un an"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NASA Space Place, How long does sunlight take to reach Earth?"
+   }
+  },
+  {
+   "id": "EN-013",
+   "cat": "enfants",
+   "emoji": "🐝",
+   "titre": "Les abeilles dansent pour donner l’adresse des fleurs",
+   "texte": "En rentrant à la ruche, l’abeille fait une danse en forme de 8. L’angle de la danse indique la direction des fleurs, et sa durée indique la distance.",
+   "tag": "Biologie",
+   "age": "8+",
+   "couleur": "#27AE60",
+   "action": "Essaie aujourd’hui : invente une danse pour montrer à quelqu’un où est caché un objet.",
+   "rappel": {
+    "q": "Qu’indique la danse de l’abeille ?",
+    "choix": [
+     "Où sont les fleurs",
+     "L’heure du repas",
+     "Qu’elle est fatiguée"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Karl von Frisch, prix Nobel 1973"
+   }
+  },
+  {
+   "id": "EN-014",
+   "cat": "enfants",
+   "emoji": "🔴",
+   "titre": "Une journée sur Mars dure 40 minutes de plus",
+   "texte": "Mars tourne sur elle-même en un peu plus de 24 heures et 37 minutes. Les équipes qui pilotent les robots martiens décalent leur réveil chaque jour pour suivre l’heure de Mars !",
+   "tag": "Astronomie",
+   "age": "9+",
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : calcule ce que donnerait ta journée avec 40 minutes de plus.",
+   "rappel": {
+    "q": "Combien dure à peu près un jour sur Mars ?",
+    "choix": [
+     "Un peu plus de 24 heures",
+     "12 heures",
+     "Une semaine"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NASA Science, Mars Facts"
+   }
+  },
+  {
+   "id": "EN-015",
+   "cat": "enfants",
+   "emoji": "🌋",
+   "titre": "Le plus grand volcan du système solaire est sur Mars",
+   "texte": "Olympus Mons mesure plus de 20 km de haut, environ 2,5 fois l’Everest. Il est si large qu’il couvrirait presque toute la France.",
+   "tag": "Astronomie",
+   "age": "9+",
+   "couleur": "#E67E22",
+   "action": "Essaie aujourd’hui : dessine l’Everest et Olympus Mons côte à côte à la bonne échelle.",
+   "rappel": {
+    "q": "Où se trouve le plus grand volcan ?",
+    "choix": [
+     "Sur Mars",
+     "En Islande",
+     "Sur la Lune"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NASA Science, Olympus Mons"
+   }
   },
   {
    "id": "AD-001",
    "cat": "ados",
    "emoji": "🎭",
    "titre": "Les gens préfèrent une mauvaise explication à pas d’explication",
-   "texte": "L’étude \"placebo d’information\" (Langer) : insérer en tête de file en disant \"parce que j’ai besoin de faire des copies\" obéit 93 %. Le mot \"parce que\" déclenche la conformité, peu importe la raison.",
+   "texte": "Dans une expérience célèbre (Ellen Langer, 1978), une personne demandait à passer devant la file de la photocopieuse. Avec une raison vide (« parce que je dois faire des copies »), 93 % acceptaient, contre 60 % sans aucune raison. Le simple « parce que » rassure.",
    "tag": "Psychologie",
    "age": "14+",
-   "couleur": "#8E44AD"
+   "couleur": "#8E44AD",
+   "action": "Essaie aujourd’hui : remarque combien de fois on te donne un « parce que » sans vraie raison.",
+   "rappel": {
+    "q": "Quel mot augmentait l’acceptation ?",
+    "choix": [
+     "« Parce que »",
+     "« S’il vous plaît »",
+     "« Merci »"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Langer, Blank & Chanowitz, JPSP, 1978"
+   }
   },
   {
    "id": "AD-002",
    "cat": "ados",
    "emoji": "💰",
    "titre": "La douleur de perdre 100€ est deux fois plus forte que le plaisir d’en gagner",
-   "texte": "L’aversion à la perte (Kahneman & Tversky) : notre cerveau évalue asymétriquement gains et pertes. C’est pourquoi les publicités disent \"ne ratez pas\" plutôt que \"profitez de\".",
+   "texte": "L’aversion à la perte (Kahneman et Tversky) : perdre une somme fait environ deux fois plus mal que le plaisir de gagner la même somme. C’est pourquoi les pubs disent « ne ratez pas » plutôt que « profitez ».",
    "tag": "Psychologie",
    "age": "14+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : repère une pub qui joue sur la peur de rater quelque chose.",
+   "rappel": {
+    "q": "Comment s’appelle ce biais ?",
+    "choix": [
+     "L’aversion à la perte",
+     "L’effet de halo",
+     "Le biais d’optimisme"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Kahneman & Tversky, Econometrica, 1979"
+   }
   },
   {
    "id": "AD-003",
    "cat": "ados",
    "emoji": "🕰️",
-   "titre": "L’ennui est biologiquement nécessaire au cerveau créatif",
-   "texte": "Le réseau du mode par défaut (DMN) s’active dans l’ennui — c’est lui qui génère les idées, fait des connexions inattendues, et simule l’avenir. Supprimer l’ennui avec le téléphone coupe cette fonction.",
+   "titre": "L’ennui laisse travailler ton cerveau créatif",
+   "texte": "Quand on ne fait rien de précis, un ensemble de zones appelé « réseau du mode par défaut » s’active. Il participe à la rêverie, à imaginer l’avenir et à relier des idées. Remplir chaque minute d’écran lui laisse moins de place.",
    "tag": "Neurosciences",
    "age": "13+",
-   "couleur": "#3498DB"
+   "couleur": "#3498DB",
+   "action": "Essaie aujourd’hui : prends 10 minutes sans téléphone ni musique et laisse ton esprit vagabonder.",
+   "rappel": {
+    "q": "Quel réseau du cerveau s’active dans l’ennui ?",
+    "choix": [
+     "Le mode par défaut",
+     "Le réseau Wi-Fi",
+     "Le cervelet"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Raichle et al., PNAS, 2001 ; Beaty et al., 2016"
+   }
   },
   {
    "id": "AD-004",
    "cat": "ados",
    "emoji": "🗳️",
-   "titre": "La démocratie athénienne excluait 85 % de la population",
-   "texte": "Dans l’Athènes de Périclès, seuls les hommes libres nés de parents athéniens votaient. Les femmes, esclaves et étrangers — 85 % des habitants — en étaient exclus. L’idéal et la pratique ont toujours été différents.",
+   "titre": "La démocratie athénienne excluait la majorité des habitants",
+   "texte": "Dans l’Athènes de Périclès, seuls les hommes adultes nés de parents athéniens votaient. Les femmes, les esclaves et les étrangers, soit la grande majorité de la population, en étaient exclus. L’idéal et la pratique sont souvent différents.",
    "tag": "Histoire",
    "age": "14+",
-   "couleur": "#E67E22"
+   "couleur": "#E67E22",
+   "action": "Essaie aujourd’hui : cherche qui avait le droit de vote en France en 1900.",
+   "rappel": {
+    "q": "Qui votait à Athènes ?",
+    "choix": [
+     "Les hommes citoyens",
+     "Tous les habitants",
+     "Les esclaves"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Encyclopædia Britannica, Athenian democracy"
+   }
   },
   {
    "id": "AD-005",
    "cat": "ados",
    "emoji": "🌐",
-   "titre": "La mondialisation a sorti 1 milliard de personnes de la pauvreté en 30 ans",
-   "texte": "Entre 1990 et 2020, la proportion d’humains vivant sous le seuil d’extrême pauvreté est passée de 36 % à 10 %. C’est la réduction de pauvreté la plus rapide de l’histoire humaine.",
+   "titre": "L’extrême pauvreté a fortement reculé en 30 ans",
+   "texte": "Entre 1990 et 2019, la part de l’humanité vivant dans l’extrême pauvreté est passée d’environ 36 % à moins de 10 %, selon la Banque mondiale. Plus d’un milliard de personnes en sont sorties, en grande partie grâce à la croissance en Asie.",
    "tag": "Société",
    "age": "14+",
-   "couleur": "#27AE60"
+   "couleur": "#27AE60",
+   "action": "Essaie aujourd’hui : va sur Our World in Data et regarde la courbe de l’extrême pauvreté.",
+   "rappel": {
+    "q": "Qu’a fait l’extrême pauvreté depuis 1990 ?",
+    "choix": [
+     "Elle a fortement baissé",
+     "Elle a doublé",
+     "Elle n’a pas bougé"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Our World in Data, Extreme poverty (Banque mondiale)",
+    "url": "https://ourworldindata.org/extreme-poverty"
+   }
   },
   {
    "id": "AD-006",
    "cat": "ados",
    "emoji": "🧬",
    "titre": "99,9 % de ton ADN est identique à celui de n’importe quel humain",
-   "texte": "Les 0,1 % restants font toutes les différences visibles entre individus. Et tu partages 98,7 % de ton ADN avec un chimpanzé, 85 % avec une souris, 60 % avec une banane.",
+   "texte": "Les 0,1 % restants expliquent beaucoup de nos différences. On partage aussi environ 98,8 % de notre ADN avec le chimpanzé. Mais attention aux chiffres viraux comme « 60 % avec une banane » : ils comparent seulement certains gènes, pas tout l’ADN.",
    "tag": "Génétique",
    "age": "13+",
-   "couleur": "#E91E63"
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : compte les différences entre toi et un ami : elles tiennent dans 0,1 % de ton ADN.",
+   "rappel": {
+    "q": "Quelle part de l’ADN partagent deux humains ?",
+    "choix": [
+     "Environ 99,9 %",
+     "Environ 50 %",
+     "Environ 10 %"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "National Human Genome Research Institute ; Chimpanzee Sequencing Consortium, Nature, 2005"
+   }
   },
   {
    "id": "AD-007",
@@ -1239,7 +3652,20 @@
    "texte": "(Celle-ci incluse.) L’outil de pensée critique : demande la source primaire. Une étude menée sur qui, quand, où, par qui financée ? Les chiffres sans source sont de la rhétorique habillée en fait.",
    "tag": "Esprit critique",
    "age": "13+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : pour la prochaine statistique que tu entends, cherche sa source.",
+   "rappel": {
+    "q": "Que demander face à un chiffre ?",
+    "choix": [
+     "Sa source",
+     "Son prix",
+     "Sa couleur"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Blague classique d’esprit critique (chiffre volontairement inventé)"
+   }
   },
   {
    "id": "AD-008",
@@ -1249,27 +3675,181 @@
    "texte": "Les \"Pensées\" n’ont jamais été écrites pour être publiées. Cet empereur tout-puissant s’imposait une discipline intérieure quotidienne. Lire ses doutes montre que même les grands se battent avec eux-mêmes.",
    "tag": "Philosophie",
    "age": "14+",
-   "couleur": "#8E44AD"
+   "couleur": "#8E44AD",
+   "action": "Essaie aujourd’hui : écris 3 lignes à toi-même sur ce que tu veux améliorer.",
+   "rappel": {
+    "q": "Pour qui Marc Aurèle écrivait-il ?",
+    "choix": [
+     "Pour lui-même",
+     "Pour le peuple",
+     "Pour ses soldats"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Marc Aurèle, Pensées pour moi-même (IIᵉ siècle)"
+   }
   },
   {
    "id": "AD-009",
    "cat": "ados",
    "emoji": "🔐",
-   "titre": "L’IA qui bat les humains aux échecs utilise moins d’énergie qu’une ampoule",
-   "texte": "AlphaZero consomme environ 20 watts. Le cerveau humain également. Mais un datacenter entraînant un grand modèle de langage consomme autant d’électricité qu’une ville moyenne pendant plusieurs jours.",
+   "titre": "Ton cerveau est bien plus économe que l’IA",
+   "texte": "Le cerveau humain fonctionne avec environ 20 watts. Pour apprendre à jouer aux échecs, AlphaZero a utilisé des milliers de processeurs spécialisés, et l’entraînement des grands modèles d’IA consomme énormément d’électricité. Côté efficacité, ton cerveau reste un champion.",
    "tag": "Technologie",
    "age": "14+",
-   "couleur": "#2C3E50"
+   "couleur": "#2C3E50",
+   "action": "Essaie aujourd’hui : cherche combien d’énergie utilise ton propre cerveau : 20 watts.",
+   "rappel": {
+    "q": "Quelle puissance utilise le cerveau humain ?",
+    "choix": [
+     "Environ 20 watts",
+     "Environ 20 000 watts",
+     "Zéro watt"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Raichle & Gusnard, PNAS, 2002 ; Silver et al., Science, 2018 (AlphaZero)"
+   }
   },
   {
    "id": "AD-010",
    "cat": "ados",
    "emoji": "🌡️",
    "titre": "1,5°C de plus, ce n’est pas \"léger\" — c’est une transformation planétaire",
-   "texte": "La différence entre l’ère glaciaire et aujourd’hui est de 5°C. Les systèmes climatiques ne réagissent pas linéairement : des seuils (\"tipping points\") déclenchent des changements irréversibles et auto-entretenus.",
+   "texte": "La différence de température moyenne entre la dernière ère glaciaire et aujourd’hui est d’environ 5 à 6 °C. Le climat ne réagit pas de façon simple : certains seuils peuvent déclencher des changements difficiles à inverser.",
    "tag": "Climat",
    "age": "13+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : cherche ce qu’est un « point de bascule » climatique.",
+   "rappel": {
+    "q": "De combien de degrés diffère l’ère glaciaire ?",
+    "choix": [
+     "Environ 5 à 6 °C",
+     "Environ 50 °C",
+     "Environ 0,5 °C"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "GIEC, rapport AR6 (2021) ; Tierney et al., Nature, 2020"
+   }
+  },
+  {
+   "id": "AD-011",
+   "cat": "ados",
+   "emoji": "⚓",
+   "titre": "Le premier chiffre entendu nous piège",
+   "texte": "Si un vendeur annonce d’abord 200 €, un prix de 120 € te semble une affaire, même si l’objet en vaut 60. Le premier chiffre sert d’ancre à ton cerveau : c’est l’effet d’ancrage.",
+   "tag": "Psychologie",
+   "age": "13+",
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : avant de regarder un prix, décide combien tu es prêt à payer.",
+   "rappel": {
+    "q": "Comment s’appelle ce biais ?",
+    "choix": [
+     "L’effet d’ancrage",
+     "L’effet papillon",
+     "L’effet de groupe"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Tversky & Kahneman, Science, 1974"
+   }
+  },
+  {
+   "id": "AD-012",
+   "cat": "ados",
+   "emoji": "☑️",
+   "titre": "L’option par défaut décide souvent pour nous",
+   "texte": "Dans les pays où il faut refuser explicitement le don d’organes, beaucoup plus de gens sont donneurs que là où il faut s’inscrire. On garde souvent ce qui est déjà coché.",
+   "tag": "Psychologie",
+   "age": "14+",
+   "couleur": "#3498DB",
+   "action": "Essaie aujourd’hui : vérifie un réglage « par défaut » de ton téléphone que tu n’as jamais choisi.",
+   "rappel": {
+    "q": "Pourquoi les cases précochées marchent-elles ?",
+    "choix": [
+     "On les garde souvent",
+     "Elles sont obligatoires",
+     "Elles sont plus jolies"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Johnson & Goldstein, Science, 2003"
+   }
+  },
+  {
+   "id": "AD-013",
+   "cat": "ados",
+   "emoji": "⏳",
+   "titre": "On sous-estime presque toujours le temps nécessaire",
+   "texte": "Des étudiants ont estimé le temps pour finir leur mémoire : la plupart ont dépassé même leur prévision « si tout va mal ». C’est l’erreur de planification.",
+   "tag": "Psychologie",
+   "age": "14+",
+   "couleur": "#8E44AD",
+   "action": "Essaie aujourd’hui : prends ta prochaine estimation de temps et ajoute 50 %.",
+   "rappel": {
+    "q": "Comment s’appelle cette erreur ?",
+    "choix": [
+     "L’erreur de planification",
+     "L’erreur de calcul",
+     "L’erreur de mémoire"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Buehler, Griffin & Ross, JPSP, 1994"
+   }
+  },
+  {
+   "id": "AD-014",
+   "cat": "ados",
+   "emoji": "🔍",
+   "titre": "Notre cerveau cherche à avoir raison",
+   "texte": "On cherche plus facilement les preuves qui confirment ce qu’on croit déjà que celles qui le contredisent. C’est le biais de confirmation, et les algorithmes des réseaux l’amplifient.",
+   "tag": "Esprit critique",
+   "age": "13+",
+   "couleur": "#27AE60",
+   "action": "Essaie aujourd’hui : cherche un bon argument contre une idée à laquelle tu tiens.",
+   "rappel": {
+    "q": "Comment s’appelle ce biais ?",
+    "choix": [
+     "Le biais de confirmation",
+     "Le biais d’optimisme",
+     "L’effet de halo"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Wason, Quarterly Journal of Experimental Psychology, 1960 ; Nickerson, 1998"
+   }
+  },
+  {
+   "id": "AD-015",
+   "cat": "ados",
+   "emoji": "❤️",
+   "titre": "Les likes activent le circuit de la récompense",
+   "texte": "Des chercheurs ont montré à des ados de fausses photos Instagram dans un scanner. Les photos avec beaucoup de likes activaient davantage les zones de la récompense, et les ados avaient plus tendance à les liker aussi.",
+   "tag": "Neurosciences",
+   "age": "13+",
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : publie ou regarde une photo sans regarder le nombre de likes.",
+   "rappel": {
+    "q": "Qu’activent les photos très likées ?",
+    "choix": [
+     "Le circuit de la récompense",
+     "La zone du sommeil",
+     "Rien du tout"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Sherman et al., Psychological Science, 2016"
+   }
   },
   {
    "id": "MJ-001",
@@ -1279,7 +3859,20 @@
    "texte": "Quand tu te trompes et que tu comprends pourquoi, de nouvelles connexions se créent dans ton cerveau. Les erreurs ne sont pas des échecs — elles sont les briques de l’apprentissage.",
    "tag": "Motivation",
    "age": "6+",
-   "couleur": "#27AE60"
+   "couleur": "#27AE60",
+   "action": "Essaie aujourd’hui : raconte une erreur que tu as faite et ce que tu as compris.",
+   "rappel": {
+    "q": "Que font les erreurs comprises ?",
+    "choix": [
+     "Elles font apprendre",
+     "Elles rendent bête",
+     "Rien du tout"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Metcalfe, Annual Review of Psychology, 2017 (apprendre de ses erreurs)"
+   }
   },
   {
    "id": "MJ-002",
@@ -1289,7 +3882,20 @@
    "texte": "Le cerveau consolide les apprentissages chaque nuit. Revoir quelque chose plusieurs jours d’affilée le mémorise bien mieux qu’une longue séance unique. Un peu chaque jour, c’est le secret.",
    "tag": "Motivation",
    "age": "7+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : révise 10 minutes aujourd’hui, et encore 10 minutes demain.",
+   "rappel": {
+    "q": "Qu’est-ce qui marche le mieux pour apprendre ?",
+    "choix": [
+     "Un peu chaque jour",
+     "Tout d’un coup",
+     "Jamais réviser"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Cepeda et al., Psychological Bulletin, 2006 (effet d’espacement)"
+   }
   },
   {
    "id": "MJ-003",
@@ -1299,7 +3905,20 @@
    "texte": "Le mot \"encore\" transforme un échec en chemin. \"Je ne sais pas lire\" vs \"je ne sais pas encore lire\" — une seule syllabe qui dit : il y a un futur où je saurai.",
    "tag": "Motivation",
    "age": "5+",
-   "couleur": "#9B59B6"
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : dis une chose que tu ne sais « pas encore » faire.",
+   "rappel": {
+    "q": "Quel petit mot change tout ?",
+    "choix": [
+     "« Encore »",
+     "« Jamais »",
+     "« Non »"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Dweck, travaux sur l’état d’esprit de croissance"
+   }
   },
   {
    "id": "MJ-004",
@@ -1309,27 +3928,66 @@
    "texte": "Les études sur les enfants montrent que se parler à soi-même pendant un défi (\"je peux le faire\", \"réfléchis calmement\") améliore les résultats. Comme avoir son propre coach dans sa tête.",
    "tag": "Motivation",
    "age": "6+",
-   "couleur": "#F39C12"
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : pendant un défi, dis-toi doucement « je peux le faire ».",
+   "rappel": {
+    "q": "Que fait se parler pendant un défi ?",
+    "choix": [
+     "Ça aide à réussir",
+     "Ça fait rater",
+     "Ça endort"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Winsler, Private speech, 2009 ; Hatzigeorgiadis et al., 2011 (méta-analyse)"
+   }
   },
   {
    "id": "MJ-005",
    "cat": "motivationJeune",
    "emoji": "🧩",
-   "titre": "Trouver quelque chose difficile signifie que tu grandis",
-   "texte": "Le cerveau libère de la dopamine quand il surmonte quelque chose de difficile — pas de facile. Les jeux vides sont décevants sur le long terme. Le défi, lui, récompense vraiment.",
+   "titre": "Trouver quelque chose difficile, c’est le signe que tu apprends",
+   "texte": "Quand quelque chose est un peu dur, ton cerveau travaille et grandit. Réussir un vrai défi rend bien plus fier qu’un jeu trop facile. Le défi, c’est ce qui récompense vraiment.",
    "tag": "Motivation",
    "age": "7+",
-   "couleur": "#E91E63"
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : choisis un jeu un peu difficile et essaie jusqu’à réussir.",
+   "rappel": {
+    "q": "Qu’est-ce qui rend le plus fier ?",
+    "choix": [
+     "Réussir un défi difficile",
+     "Un jeu trop facile",
+     "Ne pas essayer"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Csikszentmihalyi, Flow, 1990"
+   }
   },
   {
    "id": "MJ-006",
    "cat": "motivationJeune",
    "emoji": "🐜",
    "titre": "La fourmi ne lâche jamais son grain de blé",
-   "texte": "Chaque fourmi porte 50 fois son poids. Chaque jour. Sans se plaindre. La répétition tranquille construit les grandes choses. Ta fourmi intérieure est plus forte que tu ne crois.",
+   "texte": "Une fourmi peut porter jusqu’à 50 fois son poids, jour après jour. La petite répétition tranquille construit les grandes choses. Ta fourmi intérieure est plus forte que tu ne crois !",
    "tag": "Motivation",
    "age": "5+",
-   "couleur": "#F39C12"
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : porte un objet un peu lourd et pense à la fourmi.",
+   "rappel": {
+    "q": "Combien de fois son poids porte la fourmi ?",
+    "choix": [
+     "Jusqu’à 50 fois",
+     "Une fois",
+     "Mille fois"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Smithsonian, ants ; Nguyen et al., Journal of Biomechanics, 2014"
+   }
   },
   {
    "id": "MJ-007",
@@ -1339,17 +3997,43 @@
    "texte": "Un arbre qu’on agite pousse des racines plus fortes pour tenir. Les difficultés dans ta vie font pareil : elles t’évitent de tomber quand arrive une vraie tempête.",
    "tag": "Motivation",
    "age": "6+",
-   "couleur": "#27AE60"
+   "couleur": "#27AE60",
+   "action": "Essaie aujourd’hui : plante une graine et souffle doucement dessus chaque jour.",
+   "rappel": {
+    "q": "Que fait un arbre secoué par le vent ?",
+    "choix": [
+     "Des racines plus fortes",
+     "Il tombe toujours",
+     "Il s’envole"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Jaffe, 1973 (thigmomorphogenèse)"
+   }
   },
   {
    "id": "MJ-008",
    "cat": "motivationJeune",
    "emoji": "🎈",
    "titre": "Avant d’être bon, tout le monde était débutant",
-   "texte": "Lionel Messi tombait tout le temps quand il était petit. Marie Curie a raté son premier examen. Mozart faisait des fautes. Chaque expert a été nul avant d’être fort.",
+   "texte": "Les grands sportifs, musiciens et scientifiques ont tous commencé par ne rien savoir. Ils sont tombés, se sont trompés, et ont recommencé beaucoup de fois. Chaque expert a d’abord été un débutant.",
    "tag": "Motivation",
    "age": "5+",
-   "couleur": "#3498DB"
+   "couleur": "#3498DB",
+   "action": "Essaie aujourd’hui : demande à un adulte une chose qu’il ne savait pas faire petit.",
+   "rappel": {
+    "q": "Qu’est-ce que tous les champions ont été ?",
+    "choix": [
+     "Des débutants",
+     "Des génies dès la naissance",
+     "Des robots"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Ericsson, Krampe & Tesch-Römer, Psychological Review, 1993 (pratique délibérée)"
+   }
   },
   {
    "id": "MJ-009",
@@ -1359,17 +4043,43 @@
    "texte": "Chaque fois que tu t’entraînes, tu envoies un message à ton cerveau futur. Dans 6 mois, ce qui est dur aujourd’hui sera facile. Et tu te souviendras d’avoir persisté.",
    "tag": "Motivation",
    "age": "6+",
-   "couleur": "#E91E63"
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : entraîne-toi 5 minutes à une chose difficile pour toi.",
+   "rappel": {
+    "q": "Que deviennent les efforts d’aujourd’hui ?",
+    "choix": [
+     "Les forces de demain",
+     "Rien",
+     "De la fatigue"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Ericsson et al., 1993 (pratique)"
+   }
   },
   {
    "id": "MJ-010",
    "cat": "motivationJeune",
    "emoji": "🎀",
-   "titre": "Faire une erreur élève le niveau si tu la comprends",
-   "texte": "Les scientifiques ont mesuré : les cerveaux qui font des erreurs et réfléchissent dessus grandissent plus vite que ceux qui ne se trompent jamais. L’erreur + la réflexion = la clé.",
+   "titre": "Une erreur bien comprise fait progresser",
+   "texte": "Des scientifiques ont observé que le cerveau réagit davantage aux erreurs chez les enfants qui pensent pouvoir progresser, et qu’ils corrigent mieux ensuite. L’erreur, plus la réflexion, c’est la clé !",
    "tag": "Motivation",
    "age": "6+",
-   "couleur": "#9B59B6"
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : quand tu te trompes, demande-toi pourquoi.",
+   "rappel": {
+    "q": "Qu’est-ce qui aide le cerveau après une erreur ?",
+    "choix": [
+     "Réfléchir à l’erreur",
+     "L’oublier vite",
+     "Se fâcher"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Moser et al., Psychological Science, 2011"
+   }
   },
   {
    "id": "MJ-011",
@@ -1379,7 +4089,20 @@
    "texte": "Même les plus grandes créatures ont besoin de pauses. Se reposer n’est pas abandonner — c’est recharger pour mieux plonger. Faire une pause quand c’est dur, c’est malin.",
    "tag": "Motivation",
    "age": "5+",
-   "couleur": "#118AB2"
+   "couleur": "#118AB2",
+   "action": "Essaie aujourd’hui : quand c’est dur, fais une pause de 2 minutes puis reprends.",
+   "rappel": {
+    "q": "Pourquoi la baleine remonte-t-elle ?",
+    "choix": [
+     "Pour respirer",
+     "Pour manger",
+     "Pour dormir"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "NOAA Fisheries, baleines (mammifères marins respirant de l’air)"
+   }
   },
   {
    "id": "MJ-012",
@@ -1389,67 +4112,274 @@
    "texte": "Le velcro est né d’un chercheur qui regardait des graines collées à son manteau. Post-it, téflon, micro-ondes : tous des accidents. Tes idées bizarres valent la peine d’être essayées.",
    "tag": "Motivation",
    "age": "7+",
-   "couleur": "#F39C12"
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : dessine une invention bizarre qui pourrait être utile.",
+   "rappel": {
+    "q": "D’où vient l’idée du velcro ?",
+    "choix": [
+     "Des graines collées au manteau",
+     "D’un robot",
+     "D’un rêve"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Encyclopédie, George de Mestral et le Velcro (1941-1955)"
+   }
+  },
+  {
+   "id": "MJ-013",
+   "cat": "motivationJeune",
+   "emoji": "🌙",
+   "titre": "Ton cerveau range tes leçons pendant que tu dors",
+   "texte": "La nuit, ton cerveau trie ce que tu as appris dans la journée et le range dans ta mémoire. Bien dormir, c’est un peu réviser sans rien faire !",
+   "tag": "Motivation",
+   "age": "6+",
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : redis ta leçon au réveil pour voir ce que ton cerveau a rangé.",
+   "rappel": {
+    "q": "Que fait ton cerveau pendant la nuit ?",
+    "choix": [
+     "Il range tes leçons",
+     "Il oublie tout",
+     "Il s’éteint"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Diekelmann & Born, Nature Reviews Neuroscience, 2010"
+   }
+  },
+  {
+   "id": "MJ-014",
+   "cat": "motivationJeune",
+   "emoji": "👩‍🏫",
+   "titre": "Expliquer, c’est apprendre deux fois",
+   "texte": "Quand tu expliques quelque chose à quelqu’un, tu le comprends mieux toi-même. C’est pour ça que les maîtresses et les maîtres apprennent beaucoup en enseignant !",
+   "tag": "Motivation",
+   "age": "6+",
+   "couleur": "#118AB2",
+   "action": "Essaie aujourd’hui : explique à un parent une chose apprise aujourd’hui.",
+   "rappel": {
+    "q": "Qu’arrive-t-il quand tu expliques une leçon ?",
+    "choix": [
+     "Tu la comprends mieux",
+     "Tu l’oublies",
+     "Rien"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Fiorella & Mayer, Contemporary Educational Psychology, 2013"
+   }
+  },
+  {
+   "id": "MJ-015",
+   "cat": "motivationJeune",
+   "emoji": "🙈",
+   "titre": "Redire sans regarder, c’est le meilleur entraînement",
+   "texte": "Relire sa leçon donne l’impression de la savoir. Mais essayer de la redire sans regarder la fait vraiment entrer dans ta tête.",
+   "tag": "Motivation",
+   "age": "7+",
+   "couleur": "#27AE60",
+   "action": "Essaie aujourd’hui : cache ta leçon et redis 3 choses dont tu te souviens.",
+   "rappel": {
+    "q": "Qu’est-ce qui aide le plus à retenir ?",
+    "choix": [
+     "Redire sans regarder",
+     "Relire dix fois",
+     "Ne rien faire"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Roediger & Karpicke, Psychological Science, 2006"
+   }
+  },
+  {
+   "id": "MJ-016",
+   "cat": "motivationJeune",
+   "emoji": "👶",
+   "titre": "Les bébés tombent 17 fois par heure en apprenant à marcher",
+   "texte": "Des chercheurs ont filmé des bébés qui apprenaient à marcher : ils tombaient en moyenne 17 fois par heure ! Et ils se relevaient à chaque fois. C’est comme ça qu’ils ont appris.",
+   "tag": "Motivation",
+   "age": "5+",
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : pense à une chose que tu as apprise en te trompant plein de fois.",
+   "rappel": {
+    "q": "Combien de chutes par heure pour les bébés ?",
+    "choix": [
+     "Environ 17",
+     "Aucune",
+     "Mille"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Adolph et al., Psychological Science, 2012",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3591461"
+   }
+  },
+  {
+   "id": "MJ-017",
+   "cat": "motivationJeune",
+   "emoji": "☕",
+   "titre": "Une petite pause aide à apprendre",
+   "texte": "Après avoir appris quelque chose, quelques minutes de repos tranquille, les yeux fermés, aident ton cerveau à mieux s’en souvenir. La pause fait partie de l’apprentissage !",
+   "tag": "Motivation",
+   "age": "7+",
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : après tes devoirs, ferme les yeux 3 minutes au calme.",
+   "rappel": {
+    "q": "Que fait une petite pause après une leçon ?",
+    "choix": [
+     "Elle aide à retenir",
+     "Elle efface tout",
+     "Elle fatigue"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Dewar et al., Psychological Science, 2012"
+   }
   },
   {
    "id": "EJ-001",
    "cat": "emotionsJeune",
    "emoji": "😤",
-   "titre": "La colère dure 90 secondes si tu la regardes sans l’alimenter",
-   "texte": "C’est comme une vague : elle monte, puis elle redescend. Si tu penses à ce qui t’énerve, tu refais une nouvelle vague. Mais si tu respires et attends, la première passe toute seule.",
+   "titre": "La colère est comme une vague",
+   "texte": "La colère monte, puis elle redescend. Si tu repenses à ce qui t’énerve, tu fais une nouvelle vague. Mais si tu respires lentement et attends, la vague passe toute seule.",
    "tag": "Émotions",
    "age": "6+",
-   "couleur": "#E74C3C"
+   "couleur": "#E74C3C",
+   "action": "Essaie aujourd’hui : quand tu es en colère, respire lentement et attends que la vague passe.",
+   "rappel": {
+    "q": "À quoi ressemble la colère ?",
+    "choix": [
+     "À une vague",
+     "À un mur",
+     "À un caillou"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Principe de régulation émotionnelle (Gross, 2015)"
+   }
   },
   {
    "id": "EJ-002",
    "cat": "emotionsJeune",
    "emoji": "😮‍💨",
-   "titre": "Souffler lentement calme le cœur en 30 secondes",
-   "texte": "Expire plus longtemps que tu n’inspires : 4 secondes pour rentrer l’air, 6 secondes pour le souffler. Ça active un \"frein\" naturel dans ton corps. Les pompiers et pilotes utilisent cette technique.",
+   "titre": "Souffler lentement calme le corps",
+   "texte": "Souffle plus longtemps que tu n’inspires : 4 secondes pour faire entrer l’air, 6 secondes pour le souffler. Ça active un « frein » naturel dans ton corps et t’aide à te calmer.",
    "tag": "Émotions",
    "age": "5+",
-   "couleur": "#3498DB"
+   "couleur": "#3498DB",
+   "action": "Essaie aujourd’hui : souffle 3 fois comme si tu soufflais une bougie très doucement.",
+   "rappel": {
+    "q": "Que faut-il faire plus longtemps ?",
+    "choix": [
+     "Souffler",
+     "Inspirer",
+     "Retenir l’air"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Zaccaro et al., Frontiers in Human Neuroscience, 2018"
+   }
   },
   {
    "id": "EJ-003",
    "cat": "emotionsJeune",
    "emoji": "😢",
-   "titre": "Pleurer est un nettoyage à l’intérieur",
-   "texte": "Les larmes évacuent de vraies hormones de stress. Après avoir pleuré, le corps se calme mesurément. Pleurer n’est pas une faiblesse — c’est le corps qui fait son travail de réparation.",
+   "titre": "Pleurer, ça peut faire du bien",
+   "texte": "Après avoir pleuré, beaucoup de gens se sentent plus calmes. Les larmes montrent aussi aux autres qu’on a besoin de réconfort. Pleurer n’est pas une faiblesse : c’est une façon de dire ce qu’on ressent.",
    "tag": "Émotions",
    "age": "5+",
-   "couleur": "#5DADE2"
+   "couleur": "#5DADE2",
+   "action": "Essaie aujourd’hui : si tu as envie de pleurer, demande un câlin à quelqu’un.",
+   "rappel": {
+    "q": "Pleurer, est-ce une faiblesse ?",
+    "choix": [
+     "Non, ça peut aider",
+     "Oui, toujours",
+     "C’est interdit"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Gračanin, Bylsma & Vingerhoets, Frontiers in Psychology, 2014"
+   }
   },
   {
    "id": "EJ-004",
    "cat": "emotionsJeune",
    "emoji": "😨",
-   "titre": "Dire le nom de ta peur la rend deux fois plus petite",
-   "texte": "Les scientifiques ont découvert que mettre des mots sur ce qu’on ressent calme la partie du cerveau qui fait peur. \"Je suis inquiet pour demain\" — juste cette phrase réduit l’anxiété mesurément.",
+   "titre": "Dire le nom de ta peur l’aide à rapetisser",
+   "texte": "Les scientifiques ont découvert que mettre des mots sur ce qu’on ressent aide à calmer la partie du cerveau qui fait peur. « Je suis inquiet pour demain » : juste dire cette phrase aide déjà un peu.",
    "tag": "Émotions",
    "age": "6+",
-   "couleur": "#9B59B6"
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : ce soir, dis le nom d’une émotion que tu as eue aujourd’hui.",
+   "rappel": {
+    "q": "Que faire quand on a peur ?",
+    "choix": [
+     "Dire le nom de sa peur",
+     "La cacher",
+     "Crier"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Lieberman et al., Psychological Science, 2007"
+   }
   },
   {
    "id": "EJ-005",
    "cat": "emotionsJeune",
    "emoji": "🤗",
-   "titre": "Un câlin de 20 secondes libère une hormone du bonheur",
-   "texte": "L’ocytocine est libérée après environ 20 secondes de contact physique chaleureux. Elle réduit le stress, renforce la confiance, et crée un sentiment de sécurité. Les câlins sont de la médecine.",
+   "titre": "Un câlin aide à se sentir bien",
+   "texte": "Un câlin chaleureux aide le corps à libérer l’ocytocine, une hormone qui calme et rassure. Les câlins aident à se sentir en sécurité et proche des gens qu’on aime.",
    "tag": "Émotions",
    "age": "5+",
-   "couleur": "#E91E63"
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : fais un long câlin à quelqu’un que tu aimes.",
+   "rappel": {
+    "q": "Que fait un câlin ?",
+    "choix": [
+     "Il calme et rassure",
+     "Il fait peur",
+     "Il fatigue"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Light, Grewen & Amico, Biological Psychology, 2005 ; Cohen et al., Psychological Science, 2015"
+   }
   },
   {
    "id": "EJ-006",
    "cat": "emotionsJeune",
    "emoji": "😴",
    "titre": "Dormir suffit souvent pour réparer une grosse tristesse",
-   "texte": "Le sommeil répare le cerveau émotionnel. Les émotions douloureuses de la veille sont \"retraitées\" pendant la nuit et perdent une partie de leur intensité. D’où le proverbe : la nuit porte conseil.",
+   "texte": "Pendant le sommeil, le cerveau « range » les émotions de la journée. Le lendemain, une grosse tristesse fait souvent un peu moins mal. C’est pour ça qu’on dit : la nuit porte conseil.",
    "tag": "Émotions",
    "age": "5+",
-   "couleur": "#8E44AD"
+   "couleur": "#8E44AD",
+   "action": "Essaie aujourd’hui : ce soir, avant de dormir, pense à un beau moment de ta journée.",
+   "rappel": {
+    "q": "Que fait le sommeil aux émotions ?",
+    "choix": [
+     "Il aide à les apaiser",
+     "Il les double",
+     "Rien"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Walker & van der Helm, Psychological Bulletin, 2009"
+   }
   },
   {
    "id": "EJ-007",
@@ -1459,57 +4389,250 @@
    "texte": "Les nuages noirs arrivent et repartent. La joie, la tristesse, la peur — aucune n’est permanente. Quand tu te sens mal, dis-toi : \"C’est du mauvais temps. Ça passera.\"",
    "tag": "Émotions",
    "age": "5+",
-   "couleur": "#3498DB"
+   "couleur": "#3498DB",
+   "action": "Essaie aujourd’hui : dessine la météo de ton cœur aujourd’hui : soleil, nuage ou pluie ?",
+   "rappel": {
+    "q": "Les émotions durent-elles toujours ?",
+    "choix": [
+     "Non, elles passent",
+     "Oui, pour toujours",
+     "Seulement le soir"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Métaphore pédagogique courante en éducation émotionnelle"
+   }
   },
   {
    "id": "EJ-008",
    "cat": "emotionsJeune",
    "emoji": "🦋",
    "titre": "Dessiner ou colorier calme le cerveau anxieux",
-   "texte": "Les mouvements répétitifs (dessiner, colorier, tricoter) activent la partie du cerveau qui gère la sérénité. C’est pour ça que colorier feel-good. Ton cerveau est en mode \"sécurité\".",
+   "texte": "Les gestes calmes et répétés, comme dessiner ou colorier, aident beaucoup d’enfants et d’adultes à se sentir plus détendus. Ton cerveau peut se reposer de ses soucis.",
    "tag": "Émotions",
    "age": "5+",
-   "couleur": "#E91E63"
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : colorie un dessin pendant 10 minutes en silence.",
+   "rappel": {
+    "q": "Qu’est-ce qui aide le cerveau à se calmer ?",
+    "choix": [
+     "Dessiner ou colorier",
+     "Crier fort",
+     "Courir partout"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Curry & Kasser, Art Therapy, 2005"
+   }
   },
   {
    "id": "EJ-009",
    "cat": "emotionsJeune",
    "emoji": "🐶",
    "titre": "Regarder un animal calme le cœur",
-   "texte": "Des études montrent que caresser un animal réduit la tension artérielle et libère de l’ocytocine en quelques minutes. Même regarder des vidéos de chatons réduit le stress mesurément !",
+   "texte": "Des études montrent que caresser un animal peut faire baisser le stress et aider à se sentir mieux. Même regarder des photos d’animaux mignons met souvent de bonne humeur !",
    "tag": "Émotions",
    "age": "5+",
-   "couleur": "#F39C12"
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : caresse doucement un animal ou regarde une photo d’animal mignon.",
+   "rappel": {
+    "q": "Que fait caresser un animal ?",
+    "choix": [
+     "Ça calme",
+     "Ça énerve",
+     "Ça endort l’animal"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Beetz et al., Frontiers in Psychology, 2012 (revue)"
+   }
   },
   {
    "id": "EJ-010",
    "cat": "emotionsJeune",
    "emoji": "🌻",
    "titre": "Dire merci rend plus heureux que d’avoir plus",
-   "texte": "Des études sur des enfants ont montré que noter 3 belles choses de la journée avant de dormir améliore l’humeur en 2 semaines. Ce n’est pas les événements qui changent — c’est l’attention.",
+   "texte": "Des chercheurs ont demandé à des élèves de noter chaque jour des choses pour lesquelles ils disaient merci. Après quelques semaines, ils se sentaient un peu plus heureux. Ce ne sont pas les événements qui changent, c’est ce qu’on remarque.",
    "tag": "Émotions",
    "age": "6+",
-   "couleur": "#F39C12"
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : ce soir, dis 3 belles choses de ta journée.",
+   "rappel": {
+    "q": "Combien de belles choses noter le soir ?",
+    "choix": [
+     "Trois",
+     "Cent",
+     "Aucune"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Froh, Sefick & Emmons, Journal of School Psychology, 2008"
+   }
   },
   {
    "id": "EJ-011",
    "cat": "emotionsJeune",
    "emoji": "🤝",
    "titre": "Aider quelqu’un te rend heureux aussi",
-   "texte": "Les scientifiques appellent ça le helper’s high. Faire quelque chose de gentil pour un autre libère de la sérotonine dans ton cerveau — exactement comme de recevoir un cadeau.",
+   "texte": "Des scientifiques ont observé que même les tout-petits ont l’air plus heureux quand ils donnent que quand ils reçoivent. Faire quelque chose de gentil pour un autre fait aussi du bien à soi.",
    "tag": "Émotions",
    "age": "5+",
-   "couleur": "#27AE60"
+   "couleur": "#27AE60",
+   "action": "Essaie aujourd’hui : fais une petite gentillesse pour quelqu’un aujourd’hui.",
+   "rappel": {
+    "q": "Qui est heureux quand on aide ?",
+    "choix": [
+     "Les deux personnes",
+     "Personne",
+     "Seulement l’autre"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Aknin et al., PLoS ONE, 2012 (dons chez les tout-petits)"
+   }
   },
   {
    "id": "EJ-012",
    "cat": "emotionsJeune",
    "emoji": "🎶",
    "titre": "Chanter ou fredonner calme le système nerveux",
-   "texte": "Quand tu fredonne ou chante, tu fais vibrer ton nerf vague — le \"chef d’orchestre\" de la sérénité. C’est pour ça qu’on se sent mieux après. Les bébés s’endorment aux berceuses pour la même raison.",
+   "texte": "Quand tu fredonnes ou chantes doucement, ta respiration ralentit et ton corps se détend. C’est aussi pour ça que les berceuses aident les bébés à s’endormir.",
    "tag": "Émotions",
    "age": "4+",
-   "couleur": "#9B59B6"
+   "couleur": "#9B59B6",
+   "action": "Essaie aujourd’hui : fredonne ta chanson préférée tout doucement.",
+   "rappel": {
+    "q": "Que fait fredonner une berceuse ?",
+    "choix": [
+     "Ça aide à se calmer",
+     "Ça réveille",
+     "Ça fait peur"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Trehub, chants pour bébés ; Cirelli et al., 2020"
+   }
+  },
+  {
+   "id": "EJ-013",
+   "cat": "emotionsJeune",
+   "emoji": "🛡️",
+   "titre": "La peur est un garde du corps",
+   "texte": "La peur n’est pas méchante : elle sert à te protéger du danger. Parfois, elle se trompe et sonne pour rien, comme une alarme trop sensible.",
+   "tag": "Émotions",
+   "age": "5+",
+   "couleur": "#3498DB",
+   "action": "Essaie aujourd’hui : pense à une peur et demande-toi : vrai danger ou fausse alarme ?",
+   "rappel": {
+    "q": "À quoi sert la peur ?",
+    "choix": [
+     "À te protéger",
+     "À te punir",
+     "À rien"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Psychologie des émotions : fonction de la peur (LeDoux, 1996)"
+   }
+  },
+  {
+   "id": "EJ-014",
+   "cat": "emotionsJeune",
+   "emoji": "🟦",
+   "titre": "La respiration carrée",
+   "texte": "Inspire en comptant jusqu’à 4, garde l’air en comptant jusqu’à 4, souffle en comptant jusqu’à 4, attends 4. Tu dessines un carré avec ton souffle et ton corps se calme.",
+   "tag": "Émotions",
+   "age": "6+",
+   "couleur": "#5DADE2",
+   "action": "Essaie aujourd’hui : fais 3 carrés de respiration avant de t’endormir.",
+   "rappel": {
+    "q": "Combien de côtés a la respiration carrée ?",
+    "choix": [
+     "Quatre",
+     "Trois",
+     "Six"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Technique de respiration rythmée d’usage courant ; Zaccaro et al., 2018"
+   }
+  },
+  {
+   "id": "EJ-015",
+   "cat": "emotionsJeune",
+   "emoji": "😊",
+   "titre": "Les sourires sont contagieux",
+   "texte": "Quand quelqu’un te sourit, ton visage a tendance à sourire aussi, souvent sans que tu le décides. Les scientifiques l’ont mesuré avec de petits capteurs sur les joues.",
+   "tag": "Émotions",
+   "age": "4+",
+   "couleur": "#F39C12",
+   "action": "Essaie aujourd’hui : souris à 3 personnes et regarde si elles te sourient en retour.",
+   "rappel": {
+    "q": "Que fait souvent ton visage devant un sourire ?",
+    "choix": [
+     "Il sourit aussi",
+     "Il pleure",
+     "Il ne bouge pas"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Dimberg, Thunberg & Elmehed, Psychological Science, 2000"
+   }
+  },
+  {
+   "id": "EJ-016",
+   "cat": "emotionsJeune",
+   "emoji": "🌍",
+   "titre": "Partout dans le monde, on reconnaît la joie sur un visage",
+   "texte": "Un chercheur a montré des photos de visages à des gens très éloignés, même dans des villages sans télévision. Tout le monde reconnaissait la joie, la peur ou la colère. Les émotions sont une langue commune.",
+   "tag": "Émotions",
+   "age": "6+",
+   "couleur": "#27AE60",
+   "action": "Essaie aujourd’hui : mime une émotion et fais deviner laquelle à ta famille.",
+   "rappel": {
+    "q": "Qui reconnaît la joie sur un visage ?",
+    "choix": [
+     "Les gens du monde entier",
+     "Seulement les adultes",
+     "Personne"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Ekman & Friesen, JPSP, 1971"
+   }
+  },
+  {
+   "id": "EJ-017",
+   "cat": "emotionsJeune",
+   "emoji": "🏃",
+   "titre": "Bouger aide quand on est grognon",
+   "texte": "Courir, danser ou sauter fait du bien à l’humeur. Les études sur les enfants montrent que l’activité physique aide à se sentir mieux et moins tendu.",
+   "tag": "Émotions",
+   "age": "5+",
+   "couleur": "#E91E63",
+   "action": "Essaie aujourd’hui : danse 3 minutes sur ta chanson préférée.",
+   "rappel": {
+    "q": "Qu’est-ce qui aide quand on est grognon ?",
+    "choix": [
+     "Bouger son corps",
+     "Rester immobile",
+     "Manger des bonbons"
+    ],
+    "ok": 0
+   },
+   "source": {
+    "nom": "Biddle & Asare, British Journal of Sports Medicine, 2011 (revue)"
+   }
   }
  ]
 }
