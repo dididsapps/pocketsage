@@ -12,7 +12,16 @@ from reportlab.lib.colors import HexColor
 from reportlab.pdfgen import canvas
 
 # ── Config ──────────────────────────────────────────────────────────────────
-API_KEY = "AIzaSyDv7OHs9VsWEsJ1loUT2IUfv2OxMs5Vpz0"
+# Clés : variables d'environnement ou fichier .env à la racine du repo (jamais dans le code — repo public)
+import os as _os, pathlib as _pl
+for _p in (_pl.Path(__file__).resolve().parent / ".env", _pl.Path(__file__).resolve().parent.parent / ".env"):
+    if _p.exists():
+        for _l in _p.read_text(encoding="utf-8").splitlines():
+            if "=" in _l and not _l.strip().startswith("#"):
+                _k, _v = _l.split("=", 1)
+                _os.environ.setdefault(_k.strip(), _v.strip().strip('"').strip("'"))
+
+API_KEY = _os.environ.get("GOOGLE_TTS_API_KEY", "")
 TRANSLATE_URL = f"https://translation.googleapis.com/language/translate/v2?key={API_KEY}"
 
 HOME = os.path.expanduser("~")
@@ -55,20 +64,20 @@ UI_KEYS = {
 }
 
 FOOTER_TEXT = {
-    "FR": "🧠 PocketSage Academy — pocketsage.app — Fiche imprimable gratuite",
-    "EN": "🧠 PocketSage Academy — pocketsage.app — Free printable worksheet",
-    "DE": "🧠 PocketSage Academy — pocketsage.app — Kostenlose Arbeitsblatt",
-    "ES": "🧠 PocketSage Academy — pocketsage.app — Ficha imprimible gratuita",
-    "IT": "🧠 PocketSage Academy — pocketsage.app — Scheda stampabile gratuita",
-    "PT": "🧠 PocketSage Academy — pocketsage.app — Ficha imprimível gratuita",
-    "RU": "🧠 PocketSage Academy — pocketsage.app — Бесплатный рабочий лист",
-    "UK": "🧠 PocketSage Academy — pocketsage.app — Безкоштовний робочий аркуш",
-    "AR": "🧠 PocketSage Academy — pocketsage.app — ورقة عمل مجانية للطباعة",
-    "ZH": "🧠 PocketSage Academy — pocketsage.app — 免费可打印工作表",
-    "PL": "🧠 PocketSage Academy — pocketsage.app — Darmowy arkusz do druku",
-    "RO": "🧠 PocketSage Academy — pocketsage.app — Fișă de lucru gratuită",
-    "HU": "🧠 PocketSage Academy — pocketsage.app — Ingyenes nyomtatható lap",
-    "TR": "🧠 PocketSage Academy — pocketsage.app — Ücretsiz yazdırılabilir çalışma sayfası",
+    "FR": "🧠 PocketSage Academy — pocketsage.org — Fiche imprimable gratuite",
+    "EN": "🧠 PocketSage Academy — pocketsage.org — Free printable worksheet",
+    "DE": "🧠 PocketSage Academy — pocketsage.org — Kostenlose Arbeitsblatt",
+    "ES": "🧠 PocketSage Academy — pocketsage.org — Ficha imprimible gratuita",
+    "IT": "🧠 PocketSage Academy — pocketsage.org — Scheda stampabile gratuita",
+    "PT": "🧠 PocketSage Academy — pocketsage.org — Ficha imprimível gratuita",
+    "RU": "🧠 PocketSage Academy — pocketsage.org — Бесплатный рабочий лист",
+    "UK": "🧠 PocketSage Academy — pocketsage.org — Безкоштовний робочий аркуш",
+    "AR": "🧠 PocketSage Academy — pocketsage.org — ورقة عمل مجانية للطباعة",
+    "ZH": "🧠 PocketSage Academy — pocketsage.org — 免费可打印工作表",
+    "PL": "🧠 PocketSage Academy — pocketsage.org — Darmowy arkusz do druku",
+    "RO": "🧠 PocketSage Academy — pocketsage.org — Fișă de lucru gratuită",
+    "HU": "🧠 PocketSage Academy — pocketsage.org — Ingyenes nyomtatható lap",
+    "TR": "🧠 PocketSage Academy — pocketsage.org — Ücretsiz yazdırılabilir çalışma sayfası",
 }
 
 # ── Cache de traductions ─────────────────────────────────────────────────────
@@ -267,7 +276,7 @@ def draw_footer(c, lang):
     text = FOOTER_TEXT.get(lang, FOOTER_TEXT["FR"])
     # Fallback : sans emojis pour les langues non-latin (evite artefacts)
     if lang in ("AR","ZH"):
-        text = "PocketSage Academy — pocketsage.app"
+        text = "PocketSage Academy — pocketsage.org"
     c.setFillColor(hex_color("#AAAAAA"))
     c.setFont("Helvetica", 7)
     c.drawCentredString(W/2, 0.8*cm, text)

@@ -591,7 +591,7 @@ c.setFillColor(WHITE)
 c.setFont("Helvetica-Bold", 13)
 c.drawCentredString(W/2, y-0.5*cm, "📬 Une question ? Un problème ?")
 c.setFont("Helvetica", 11)
-c.drawCentredString(W/2, y-0.95*cm, "contact@pocketsage.app")
+c.drawCentredString(W/2, y-0.95*cm, "contact@pocketsage.org")
 c.drawCentredString(W/2, y-1.4*cm, "pocketsage.org — Application disponible sur iOS et Android")
 
 c.showPage()

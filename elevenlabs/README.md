@@ -9,7 +9,7 @@
 
 | Clé | Valeur |
 |-----|--------|
-| ElevenLabs API Key | `sk_e920c195b03adac355923ab26527d2d48af72105260a0c00` |
+| ElevenLabs API Key | `(dans .env : ELEVENLABS_API_KEY)` |
 | Voix FR | `GFj5Qf6cNQ3Lgp8VKBwc` (Olivier) |
 | Voix EN | `9mF01VTvwaxuBPjm0hMu` (Charlie Horse) |
 | R2 Bucket | `pocketsage-audio` |

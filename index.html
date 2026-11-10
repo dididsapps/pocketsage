@@ -10351,7 +10351,7 @@ let _ttsPlaying=false;
 let _ttsRate=0.85; // vitesse, modifiable par les boutons nuit
 
 // ── ElevenLabs TTS pour l'onglet Nuit ────────────────────────────────────────
-const _EL_API_KEY='sk_e920c195b03adac355923ab26527d2d48af72105260a0c00';
+const _EL_API_KEY=''; // jamais de clé dans le navigateur : Nuit = MP3 pré-générés sur R2, sinon voix du téléphone
 const _EL_VOICE_FR='GFj5Qf6cNQ3Lgp8VKBwc'; // Olivier (FR)
 let _elCurrentSource=null; // AudioBufferSourceNode en cours (plus utilisé par la Nuit)
 
@@ -10427,6 +10427,7 @@ function _elChunks(txt,maxWords=350){
 async function _elSpeakChunks(chunks,idx,onDone){
   if(!_ttsPlaying||idx>=chunks.length){if(onDone)onDone();return;}
   try{
+    if(!_EL_API_KEY)throw new Error('pas de clé ElevenLabs côté client');
     const ac=getAC();
     const r=await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${_EL_VOICE_FR}`,{
       method:'POST',

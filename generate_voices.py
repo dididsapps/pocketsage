@@ -30,6 +30,13 @@ Usage :
 
 import base64, json, os, re, subprocess, sys, tempfile, time
 from pathlib import Path
+# Clés : variables d'environnement ou fichier .env à la racine du repo (jamais dans le code — repo public)
+_envf = Path(__file__).resolve().parent / ".env"
+if _envf.exists():
+    for _l in _envf.read_text(encoding="utf-8").splitlines():
+        if "=" in _l and not _l.strip().startswith("#"):
+            _k, _v = _l.split("=", 1)
+            os.environ.setdefault(_k.strip(), _v.strip().strip('"').strip("'"))
 
 # ─── Chemins ───────────────────────────────────────────────────────────────
 ROOT         = Path(__file__).parent
@@ -52,13 +59,12 @@ def get_eleven_key():
     p = ROOT / "elevenlabs" / "eleven_api_key.txt"
     if p.exists():
         return p.read_text().strip()
-    # Clé présente dans les anciens scripts (fallback)
-    return "sk_e920c195b03adac355923ab26527d2d48af72105260a0c00"
+    sys.exit("❌ ELEVENLABS_API_KEY manquante (variable d'environnement ou .env)")
 
 def get_google_key():
     key = os.environ.get("GOOGLE_TTS_API_KEY", "").strip()
     if not key:
-        key = "AIzaSyDv7OHs9VsWEsJ1loUT2IUfv2OxMs5Vpz0"
+        sys.exit("❌ GOOGLE_TTS_API_KEY manquante (variable d'environnement ou .env)")
     return key
 
 ELEVEN_KEY = get_eleven_key()

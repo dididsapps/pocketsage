@@ -15,13 +15,22 @@ Les MP3 sont uploadés dans audio/en/, audio/es/, audio/de/ sur R2
 import re, json, os, time
 from pathlib import Path
 
-API_KEY       = "sk_e920c195b03adac355923ab26527d2d48af72105260a0c00"
+# Clés : variables d'environnement ou fichier .env à la racine du repo (jamais dans le code — repo public)
+import os as _os, pathlib as _pl
+for _p in (_pl.Path(__file__).resolve().parent / ".env", _pl.Path(__file__).resolve().parent.parent / ".env"):
+    if _p.exists():
+        for _l in _p.read_text(encoding="utf-8").splitlines():
+            if "=" in _l and not _l.strip().startswith("#"):
+                _k, _v = _l.split("=", 1)
+                _os.environ.setdefault(_k.strip(), _v.strip().strip('"').strip("'"))
+
+API_KEY       = _os.environ.get("ELEVENLABS_API_KEY", "")
 VOICE_EN = "uDsPstFWFBUXjIBimV7s"   # Mr Claus (EN) — tel quel
 VOICE_ES = "GFj5Qf6cNQ3Lgp8VKBwc"   # Olivier (FR) — fallback, à remplacer par voix ES
 VOICE_DE = "CP1kYQLB8eBoe8TavZvQ"   # Nicholas Santa (DE) — tel quel
 
-R2_ACCESS_KEY  = "de8421ae8c94c53e50ffcea2febc93e8"
-R2_SECRET_KEY  = "727932fe1e71c86c9e249479ce2207063867960858be8b3241ac515990a2ca28"
+R2_ACCESS_KEY  = _os.environ.get("R2_ACCESS_KEY", "")
+R2_SECRET_KEY  = _os.environ.get("R2_SECRET_KEY", "")
 R2_ENDPOINT    = "https://8ea67fd06083effd6f76efdefb92092f.r2.cloudflarestorage.com"
 R2_BUCKET      = "pocketsage-audio"
 

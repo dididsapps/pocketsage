@@ -11,7 +11,16 @@ from pathlib import Path
 # ══════════════════════════════════════════
 # CONFIGURATION — modifie ces valeurs
 # ══════════════════════════════════════════
-API_KEY = "sk_e920c195b03adac355923ab26527d2d48af72105260a0c00"
+# Clés : variables d'environnement ou fichier .env à la racine du repo (jamais dans le code — repo public)
+import os as _os, pathlib as _pl
+for _p in (_pl.Path(__file__).resolve().parent / ".env", _pl.Path(__file__).resolve().parent.parent / ".env"):
+    if _p.exists():
+        for _l in _p.read_text(encoding="utf-8").splitlines():
+            if "=" in _l and not _l.strip().startswith("#"):
+                _k, _v = _l.split("=", 1)
+                _os.environ.setdefault(_k.strip(), _v.strip().strip('"').strip("'"))
+
+API_KEY = _os.environ.get("ELEVENLABS_API_KEY", "")
 VOICE_ID_FR = "GFj5Qf6cNQ3Lgp8VKBwc"   # Olivier (FR)
 VOICE_ID_EN = "uDsPstFWFBUXjIBimV7s"   # Mr Claus (EN) — tel quel
 OUTPUT_DIR = Path("audio/fr")

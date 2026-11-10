@@ -63,7 +63,7 @@ audio/
 
 ### Étape 2 — Traduction via Google Translate API
 - API : https://translation.googleapis.com/language/translate/v2
-- Clé : même clé Google (AIzaSyDv7OHs9VsWEsJ1loUT2IUfv2OxMs5Vpz0) — vérifier quota
+- Clé : même clé Google ((dans .env : GOOGLE_TTS_API_KEY)) — vérifier quota
 - Tarif : $20 / 1M caractères → ~500K chars × 17 langues ≈ $170 total (ou ~$50 pour 7 langues)
 - Batch par 128 textes max (limite API)
 - Sauvegarder les traductions dans data/maternelle/{lang}.json avant TTS
@@ -89,7 +89,7 @@ audio/
 | **Total 17L**   |                    | **~$45**    |
 
 ## Clés API disponibles
-- Google Cloud (TTS + Translate) : AIzaSyDv7OHs9VsWEsJ1loUT2IUfv2OxMs5Vpz0
+- Google Cloud (TTS + Translate) : (dans .env : GOOGLE_TTS_API_KEY)
   → Vérifier que l'API Cloud Translation est activée dans la console Google Cloud
   → Console : https://console.cloud.google.com/apis/library/translate.googleapis.com
 
@@ -128,7 +128,7 @@ python3 generate_tts_maternelle.py
 - Durée sync : 1h27min, 253 fichiers transférés
 
 ### Clés API utilisées
-- **Google TTS + Translate** : `AIzaSyDv7OHs9VsWEsJ1loUT2IUfv2OxMs5Vpz0`
+- **Google TTS + Translate** : `(dans .env : GOOGLE_TTS_API_KEY)`
   - APIs activées dans la console : Cloud Text-to-Speech + Cloud Translation API
   - Console credentials : https://console.cloud.google.com/apis/credentials
 
