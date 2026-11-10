@@ -10632,24 +10632,102 @@ const _STT_LANGS={
 let _sttRec=null;
 let _sttActive=false;
 
-function sttStart(targetLang, onResult, onEnd){
-  const SpeechRec=window.SpeechRecognition||window.webkitSpeechRecognition;
-  if(!SpeechRec){if(onEnd)onEnd(null,'not_supported');return;}
-  if(_sttRec){try{_sttRec.stop();}catch(e){}}
-  _sttRec=new SpeechRec();
-  const bcp=_STT_LANGS[targetLang]||'fr-FR';
-  _sttRec.lang=bcp;
-  _sttRec.interimResults=false;
-  _sttRec.maxAlternatives=3;
-  _sttActive=true;
-  _sttRec.onresult=(e)=>{
-    const transcript=e.results[0][0].transcript;
-    const confidence=e.results[0][0].confidence;
-    if(onResult)onResult(transcript,confidence);
+// Normalisation Unicode (accents, cyrillique, arabe, chinois conservés)
+function _sttNorm(s){return (s||'').toLowerCase().normalize('NFC').replace(/[’‘`´]/g,"'").replace(/[^\p{L}\p{N}\s']/gu,' ').replace(/\s+/g,' ').trim();}
+function _sttLev(a,b){const m=a.length,n=b.length;if(!m)return n;if(!n)return m;let prev=Array.from({length:n+1},(_,j)=>j);for(let i=1;i<=m;i++){const cur=[i];for(let j=1;j<=n;j++)cur[j]=a[i-1]===b[j-1]?prev[j-1]:1+Math.min(prev[j],cur[j-1],prev[j-1]);prev=cur;}return prev[n];}
+function _sttSim(a,b){if(!a||!b)return 0;return 1-_sttLev(a,b)/Math.max(a.length,b.length);}
+// Homophones et nombres : le moteur écrit le bon son avec une autre orthographe
+const _STT_HOMO={
+  en:[['one','won','1'],['two','to','too','2'],['three','3'],['four','for','fore','4'],['five','5'],['six','6'],['seven','7'],['eight','ate','8'],['nine','9'],['ten','10'],
+      ['no','know'],['hi','high'],['by','bye','buy'],['i','eye'],['see','sea','c'],['sun','son'],['blue','blew'],['right','write'],['meet','meat'],['here','hear'],
+      ['there','their',"they're"],['red','read'],['night','knight'],['new','knew'],['hour','our'],['flower','flour'],['pear','pair'],['bear','bare'],['tail','tale'],
+      ['week','weak'],['whole','hole'],['wear','where'],['would','wood'],['be','bee','b'],['you','u','ewe'],['why','y'],['tea','tee','t'],['are','r'],['oh','o','owe'],['ok','okay']],
+  es:[['uno','1'],['dos','2'],['tres','3'],['cuatro','4'],['cinco','5'],['seis','6'],['siete','7'],['ocho','8'],['nueve','9'],['diez','10'],['hola','ola'],['vaca','baca'],['vello','bello'],['hay','ay','ahí']],
+  de:[['eins','1'],['zwei','2'],['drei','3'],['vier','4'],['fünf','5'],['sechs','6'],['sieben','7'],['acht','8'],['neun','9'],['zehn','10'],['meer','mehr'],['seite','saite'],['wider','wieder'],['das','dass']]
+};
+function _sttFold(s){return s.normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ß/g,'ss');}
+function _sttCanon(text,lang){
+  const L=(lang||'').slice(0,2).toLowerCase();const groups=_STT_HOMO[L]||[];
+  return text.split(' ').map(w=>{for(const g of groups)if(g.includes(w))return g[0];return w;}).join(' ');
+}
+// Score 0..1 : meilleure correspondance parmi toutes les alternatives du moteur
+function sttScore(alts,target,lang){
+  const s1=_sttScoreRaw(alts,target);
+  const canon=(alts||[]).map(a=>({t:_sttFold(_sttCanon(_sttNorm(a.t),lang)),c:a.c,o:a.t}));
+  const s2=_sttScoreRaw(canon,_sttFold(_sttCanon(_sttNorm(target),lang)));
+  if(s2.s>s1.s){const o=canon.find(x=>x.t===s2.t);return {s:s2.s,t:o?o.o:s2.t};}
+  return s1;
+}
+function _sttScoreRaw(alts,target){
+  const b=_sttNorm(target);const bW=b.split(' ').filter(Boolean);
+  let best={s:0,t:''};
+  (alts||[]).forEach(al=>{
+    const a=_sttNorm(al.t);if(!a)return;
+    const aW=a.split(' ').filter(Boolean);
+    let sc;
+    if(a===b)sc=1;
+    else if(bW.length===1){
+      sc=Math.max(...aW.map(w=>_sttSim(w,b)),_sttSim(a.replace(/ /g,''),b));
+      if(aW.length>3)sc*=0.85; // une phrase entière pour un seul mot = bruit
+    }else{
+      const raw=_sttSim(a,b);
+      const kw=bW.filter(w=>w.length>2);
+      const matched=kw.filter(k=>aW.some(w=>_sttSim(w,k)>=0.75)).length;
+      const cov=kw.length?matched/kw.length:raw;
+      sc=raw*0.4+cov*0.6;
+    }
+    if(sc>best.s)best={s:sc,t:al.t};
+  });
+  return best;
+}
+// Attendre la fin de la voix (TTS) avant d'ouvrir le micro
+function _sttAfterTts(cb,minMs){
+  const t0=Date.now();
+  const tick=()=>{
+    const speaking=(window.speechSynthesis&&window.speechSynthesis.speaking);
+    if((!speaking&&Date.now()-t0>=(minMs||300))||Date.now()-t0>6000){setTimeout(cb,250);return;}
+    setTimeout(tick,120);
   };
-  _sttRec.onerror=(e)=>{_sttActive=false;if(onEnd)onEnd(null,e.error);};
-  _sttRec.onend=()=>{_sttActive=false;if(onEnd)onEnd('end',null);};
-  try{_sttRec.start();}catch(e){_sttActive=false;if(onEnd)onEnd(null,'start_error');}
+  tick();
+}
+// Écoute robuste : résultats partiels conservés (mots très courts), relance silencieuse si rien capté
+function sttListen(o){
+  const SpeechRec=window.SpeechRecognition||window.webkitSpeechRecognition;
+  if(!SpeechRec){o.onFail&&o.onFail('not_supported');return null;}
+  if(_sttRec){try{_sttRec.abort();}catch(e){}}
+  let tries=0,done=false,lastAlts=null;
+  const finish=(alts)=>{if(done)return;done=true;_sttActive=false;o.onResult&&o.onResult(alts);};
+  const fail=(r)=>{if(done)return;done=true;_sttActive=false;o.onFail&&o.onFail(r);};
+  const run=()=>{
+    const rec=new SpeechRec();
+    rec.lang=o.lang;rec.interimResults=true;rec.continuous=false;rec.maxAlternatives=o.alternatives||5;
+    let err=null;
+    rec.onaudiostart=()=>{o.onReady&&o.onReady(tries);};
+    rec.onresult=(e)=>{
+      const r=e.results[e.results.length-1];const alts=[];
+      for(let i=0;i<r.length;i++)alts.push({t:r[i].transcript,c:r[i].confidence||0});
+      if(alts.length&&alts[0].t.trim())lastAlts=alts;
+      if(r.isFinal&&lastAlts){try{rec.stop();}catch(_){}finish(lastAlts);}
+    };
+    rec.onerror=(e)=>{err=e.error;};
+    rec.onend=()=>{
+      if(done)return;
+      if(lastAlts){finish(lastAlts);return;}                     // mot court : on garde le partiel
+      if((err==='no-speech'||err==='aborted'||!err)&&tries<1){tries++;setTimeout(run,120);return;} // 2e chance silencieuse
+      fail(err||'no-speech');
+    };
+    _sttRec=rec;_sttActive=true;
+    try{rec.start();}catch(e){fail('start_error');}
+  };
+  run();
+  return {stop:()=>{try{_sttRec&&_sttRec.stop();}catch(e){}}};
+}
+// Compatibilité : ancienne signature
+function sttStart(targetLang, onResult, onEnd){
+  const bcp=_STT_LANGS[targetLang]||targetLang||'fr-FR';
+  sttListen({lang:bcp,
+    onResult:(alts)=>{if(onResult)onResult(alts[0].t,alts[0].c,alts);if(onEnd)onEnd('end',null);},
+    onFail:(r)=>{if(onEnd)onEnd(null,r);}});
 }
 function sttStop(){
   if(_sttRec){try{_sttRec.stop();}catch(e){}}
@@ -13235,61 +13313,22 @@ function startPronoEval(item,micBtn,feedbackZone,attBar){
   feedbackZone.innerHTML='<div style="display:flex;align-items:center;gap:10px;justify-content:center;font-size:15px;color:var(--tl)"><span style="display:inline-block;width:14px;height:14px;border-radius:50%;background:#E74C3C;animation:pulse 1s infinite"></span> Écoute…</div>';
 
   const langBcp={EN:'en-GB',ES:'es-ES',DE:'de-DE'};
-  const rec=new SpeechRec();
-  rec.lang=langBcp[_pronoState.lang]||'en-GB';
-  rec.interimResults=false;
-  rec.maxAlternatives=5;
-
-  let done=false;
-  rec.onresult=(e)=>{
-    if(done)return;done=true;
-    // Collecter toutes les alternatives
-    const alts=[];
-    for(let i=0;i<e.results[0].length;i++){
-      alts.push({t:e.results[0][i].transcript.toLowerCase().trim(),c:e.results[0][i].confidence||0});
-    }
-    const target=item.mot.toLowerCase().trim();
-    // Score : meilleure correspondance parmi les alternatives
-    let bestScore=0;
-    let bestText='';
-    // Dual algo : mot court → meilleur mot dans le transcript / phrase → Lev+coverage
-    function _lev(a,b){const m=a.length,n=b.length;const d=[];for(let i=0;i<=m;i++)d[i]=[i];for(let j=0;j<=n;j++)d[0][j]=j;for(let i=1;i<=m;i++)for(let j=1;j<=n;j++)d[i][j]=a[i-1]===b[j-1]?d[i-1][j-1]:1+Math.min(d[i-1][j],d[i][j-1],d[i-1][j-1]);return d[m][n];}
-    const _bClean=target.replace(/[^\w\s]/g,'').trim();
-    const _bWords=_bClean.split(/\s+/);
-    alts.forEach(a=>{
-      if(a.t===target){bestScore=1;bestText=a.t;return;}
-      const _aClean=a.t.replace(/[^\w\s]/g,'').trim();
-      const _aWords=_aClean.split(/\s+/);
-      let sim;
-      if(_bWords.length===1){
-        // Mot court : chercher le meilleur mot dans tout le transcript
-        sim=_aWords.reduce((best,w)=>Math.max(best,1-_lev(w,_bClean)/Math.max(w.length,_bClean.length,1)),0);
-      } else {
-        // Phrase : Levenshtein global 40% + couverture mots-clés 60%
-        const raw=1-_lev(_aClean,_bClean)/Math.max(_aClean.length,_bClean.length,1);
-        const kw=_bWords.filter(w=>w.length>2);
-        const matched=kw.filter(k=>_aWords.some(w=>1-_lev(w,k)/Math.max(w.length,k.length,1)>=0.75)).length;
-        const coverage=kw.length>0?matched/kw.length:raw;
-        sim=raw*0.4+coverage*0.6;
-      }
-      if(sim>bestScore){bestScore=sim;bestText=a.t;}
-    });
-    showPronoResult(bestScore,bestText,item,micBtn,feedbackZone,attBar);
-  };
-  rec.onerror=(e)=>{
-    if(done)return;done=true;
-    micBtn.textContent='🎤';micBtn.disabled=false;micBtn.style.opacity='1';
-    const msgs={'not-allowed':'Autorise le micro dans ton navigateur !','no-speech':'Rien entendu, réessaie !','network':'Problème réseau.'};
-    feedbackZone.innerHTML=`<div style="color:#E74C3C;font-size:14px;padding:12px;background:#fdecea;border-radius:12px;">⚠️ ${msgs[e.error]||'Erreur micro : '+e.error}</div>`;
-  };
-  rec.onend=()=>{
-    if(!done){done=true;micBtn.textContent='🎤';micBtn.disabled=false;micBtn.style.opacity='1';
-      feedbackZone.innerHTML='<div style="text-align:center;padding:12px;background:#fdecea;border-radius:12px;color:#E74C3C;font-size:14px;">🎤 Rien capté — parle fort et clairement, puis réessaie !</div>';}
-  };
-  try{rec.start();}catch(ex){
-    micBtn.textContent='🎤';micBtn.disabled=false;micBtn.style.opacity='1';
-    feedbackZone.innerHTML='<div style="color:#E74C3C;font-size:14px;">Impossible de démarrer le micro.</div>';
-  }
+  try{ttsStop();}catch(e){}
+  _sttAfterTts(()=>{
+    sttListen({lang:langBcp[_pronoState.lang]||'en-GB',alternatives:5,
+      onReady:()=>{
+        feedbackZone.innerHTML='<div style="display:flex;align-items:center;gap:10px;justify-content:center;font-size:15px;font-weight:800;color:#E74C3C"><span style="display:inline-block;width:14px;height:14px;border-radius:50%;background:#E74C3C;animation:pulse 1s infinite"></span>Parle maintenant !</div>';
+      },
+      onResult:(alts)=>{
+        const r=sttScore(alts,item.mot,_pronoState.lang);
+        showPronoResult(r.s,r.t,item,micBtn,feedbackZone,attBar);
+      },
+      onFail:(err)=>{
+        micBtn.textContent='🎤';micBtn.disabled=false;micBtn.style.opacity='1';
+        const msgs={'not-allowed':'Autorise le micro dans ton navigateur !','no-speech':'🎤 Rien capté — rapproche le téléphone et parle un peu plus fort !','network':'Problème réseau.','not_supported':'Reconnaissance vocale indisponible ici.'};
+        feedbackZone.innerHTML=`<div style="color:#E74C3C;font-size:14px;padding:12px;background:#fdecea;border-radius:12px;">⚠️ ${msgs[err]||'Erreur micro : '+err}</div>`;
+      }});
+  },200);
 }
 
 // Distance de Levenshtein normalisée (0 = différent, 1 = identique)
@@ -15948,36 +15987,23 @@ function renderAdvQCM(c, typeCfg, typeId){
       ttsRead(repTxt,lang);
       micBtn.innerHTML='⏳ Écoute…';
       micBtn.disabled=true;
-      setTimeout(()=>{
-        micBtn.innerHTML='🔴 Parle maintenant…';
+      _sttAfterTts(()=>{
         sttFeedback.textContent='';
-        sttStart(lang,(transcript)=>{
-          function lev(a,b){const m=a.length,n=b.length;const d=[];for(let i=0;i<=m;i++)d[i]=[i];for(let j=0;j<=n;j++)d[0][j]=j;for(let i=1;i<=m;i++)for(let j=1;j<=n;j++)d[i][j]=a[i-1]===b[j-1]?d[i-1][j-1]:1+Math.min(d[i-1][j],d[i][j-1],d[i-1][j-1]);return d[m][n];}
-          const a=transcript.toLowerCase().replace(/[^\w\s]/g,'').trim();
-          const b=repTxt.toLowerCase().replace(/[^\w\s]/g,'').trim();
-          const aWords=a.split(/\s+/);
-          const bWords=b.split(/\s+/);
-          let score;
-          if(bWords.length===1){
-            // Mot court : chercher le meilleur mot dans le transcript
-            score=aWords.reduce((best,w)=>Math.max(best,1-lev(w,b)/Math.max(w.length,b.length,1)),0);
-          } else {
-            // Phrase : Levenshtein global + couverture des mots-clés
-            const rawScore=1-lev(a,b)/Math.max(a.length,b.length,1);
-            const keyWords=bWords.filter(w=>w.length>2);
-            const matched=keyWords.filter(kw=>aWords.some(w=>1-lev(w,kw)/Math.max(w.length,kw.length,1)>=0.75)).length;
-            const coverage=keyWords.length>0?matched/keyWords.length:rawScore;
-            score=rawScore*0.4+coverage*0.6;
-          }
-          if(score>=0.85){sttFeedback.innerHTML='✅ Parfait !';sttFeedback.style.color='var(--m)';}
-          else if(score>=0.55){sttFeedback.innerHTML='🟡 Presque ! "'+transcript+'"';sttFeedback.style.color='#FF9F1C';}
-          else{sttFeedback.innerHTML='🔴 Réessaie ! "'+transcript+'"';sttFeedback.style.color='var(--c)';}
-          micBtn.innerHTML='🎤 Répète la réponse';micBtn.disabled=false;
-        },(end,err)=>{
-          micBtn.innerHTML='🎤 Répète la réponse';micBtn.disabled=false;
-          if(err&&err!=='end'&&err!=='no-speech')sttFeedback.innerHTML='⚠️ Micro indisponible';
-        });
-      },1400);
+        sttListen({lang:_STT_LANGS[lang]||lang||'fr-FR',
+          onReady:()=>{micBtn.innerHTML='🔴 Parle maintenant…';},
+          onResult:(alts)=>{
+            const r=sttScore(alts,repTxt,lang);const said=_flEsc?_flEsc(r.t):r.t;
+            if(r.s>=0.85){sttFeedback.innerHTML='✅ Parfait !';sttFeedback.style.color='var(--m)';}
+            else if(r.s>=0.55){sttFeedback.innerHTML='🟡 Presque ! "'+said+'"';sttFeedback.style.color='#FF9F1C';}
+            else{sttFeedback.innerHTML='🔴 Réessaie ! "'+said+'"';sttFeedback.style.color='var(--c)';}
+            micBtn.innerHTML='🎤 Répète la réponse';micBtn.disabled=false;
+          },
+          onFail:(err)=>{
+            micBtn.innerHTML='🎤 Répète la réponse';micBtn.disabled=false;
+            sttFeedback.innerHTML=(err==='no-speech')?'🎤 Je n’ai rien entendu, parle un peu plus fort !':(err==='not-allowed'?'⚠️ Autorise le micro':'⚠️ Micro indisponible');
+            sttFeedback.style.color='var(--tl)';
+          }});
+      },800);
     };
     sttWrap.appendChild(micBtn);sttWrap.appendChild(sttFeedback);c.appendChild(sttWrap);
   }
