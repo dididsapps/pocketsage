@@ -29,7 +29,7 @@ Module « anti-scroll » de PocketSage : des cartes courtes (titre + idée) qu'o
 
 ## 2. Limites restantes
 
-1. **Traductions et MP3 pas encore générés** : il faut d'abord ajouter les 3 secrets GitHub (voir `03` §4), puis lancer l'Action une fois. D'ici là : texte en français, voix du téléphone.
+1. ✅ Traductions (10 langues) et 2 010 MP3 générés et publiés le 10/11/2026 ; les prochaines modifications se font automatiquement.
 2. **Volume** : 201 cartes, objectif 1000+ (`02_sources_contenu.md`, `04_plan_action.md`).
 3. Pas encore de favoris/collections, de série quotidienne ni de bilan parent (voir `04`).
 4. La révision est stockée sur l'appareil (pas de synchronisation entre téléphones).
@@ -57,8 +57,8 @@ Fiches imprimables (ateliers sans écran) :
 
 ## 4. Restes à faire
 
-- [ ] **Secrets GitHub** + premier lancement de l'Action (traductions + ~2 000 MP3).
+- [x] Secrets GitHub + première génération complète (10/11).
 - [ ] Régénérer les 35 fiches FR, les relire, les envoyer sur R2 dans `fiches/FR/`, puis ajouter FI-031 à FI-035 dans la liste des fiches de `index.html`.
 - [ ] Le générateur de fiches écrit dans `~/mnt/pocketsage/fiches/{LANG}/` (dossier de ton ordinateur). Le dossier `fiches/` du repo contient d'anciennes versions à plat (FI-001 à FI-030).
 - [x] Clés retirées du code (10/11).
-- [ ] **Révoquer les anciennes clés et en créer de nouvelles** (Google, ElevenLabs, R2), puis secrets GitHub + `.env`.
+- [x] Nouvelles clés créées, anciennes à supprimer chez Google/ElevenLabs/Cloudflare si pas encore fait ; `.env` local et rclone à jour.
