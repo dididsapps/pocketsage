@@ -1336,43 +1336,83 @@ def draw_simon_cards_zone(c, y, lang):
     c.drawString(1.5*cm, top + 0.12*cm, "Decoupe en suivant les pointilles (16 cartes).")
     c.drawString(1.5*cm, top - rows*ch - 0.6*cm, "Record : ____ couleurs memorisees d'affilee")
 
+def _poly(c, pts, fill=None):
+    p = c.beginPath(); p.moveTo(*pts[0])
+    for q in pts[1:]: p.lineTo(*q)
+    p.close()
+    if fill: c.setFillColor(HexColor(fill))
+    c.drawPath(p, fill=1 if fill else 0, stroke=1)
+
+def _origami_frog(c, x, y, w, h):
+    P = lambda u, v: (x + u*w, y + v*h)
+    c.setStrokeColor(colors.black); c.setLineWidth(1.3)
+    _poly(c, [P(.18,.30), P(.82,.30), P(.70,.62), P(.50,.80), P(.30,.62)], "#E8E8E8")   # corps
+    _poly(c, [P(.30,.62), P(.16,.86), P(.40,.70)], "#D0D0D0")                          # patte avant G
+    _poly(c, [P(.70,.62), P(.84,.86), P(.60,.70)], "#D0D0D0")                          # patte avant D
+    _poly(c, [P(.18,.30), P(.04,.12), P(.34,.22)], "#D0D0D0")                          # patte arrière G
+    _poly(c, [P(.82,.30), P(.96,.12), P(.66,.22)], "#D0D0D0")                          # patte arrière D
+    c.setDash([3, 2]); c.line(*P(.25,.42), *P(.75,.42)); c.setDash([])               # pli ressort
+    c.setFillColor(colors.black); c.circle(*P(.44,.66), 2.2, fill=1); c.circle(*P(.56,.66), 2.2, fill=1)
+
+def _origami_boat(c, x, y, w, h):
+    P = lambda u, v: (x + u*w, y + v*h)
+    c.setStrokeColor(colors.black); c.setLineWidth(1.3)
+    _poly(c, [P(.50,.86), P(.28,.40), P(.72,.40)], "#E8E8E8")                          # voile
+    _poly(c, [P(.04,.44), P(.96,.44), P(.78,.20), P(.22,.20)], "#D0D0D0")              # coque
+    c.line(*P(.50,.86), *P(.50,.44))
+    c.setLineWidth(0.8)                                                               # eau
+    for k in range(4):
+        u = .08 + k*.22
+        p = c.beginPath(); p.moveTo(*P(u,.12)); p.curveTo(*P(u+.05,.17), *P(u+.10,.07), *P(u+.15,.12))
+        c.drawPath(p, fill=0, stroke=1)
+
+def _origami_crane(c, x, y, w, h):
+    P = lambda u, v: (x + u*w, y + v*h)
+    c.setStrokeColor(colors.black); c.setLineWidth(1.3)
+    _poly(c, [P(.30,.84), P(.50,.42), P(.40,.40)], "#D0D0D0")                          # aile G
+    _poly(c, [P(.72,.86), P(.50,.42), P(.62,.40)], "#D0D0D0")                          # aile D
+    _poly(c, [P(.36,.40), P(.50,.48), P(.64,.40), P(.50,.24)], "#E8E8E8")              # corps
+    _poly(c, [P(.38,.36), P(.10,.60), P(.14,.62), P(.42,.40)], "#E8E8E8")              # cou
+    _poly(c, [P(.10,.60), P(.03,.54), P(.14,.62)], "#BBBBBB")                          # tête
+    _poly(c, [P(.62,.36), P(.94,.62), P(.58,.40)], "#E8E8E8")                          # queue
+
 def draw_origami_zone(c, y, lang):
     h = _zone_frame(c, y)
-    side = min(8.5*cm, h - 2.0*cm)
-    x0, top = 1.6*cm, y - 0.9*cm
-    c.setFont("Helvetica-Bold", 10); c.setFillColor(colors.black)
-    c.drawString(x0, top + 0.15*cm, "Carre pret a plier (grue, base preliminaire)")
-    by = top - side
-    c.setStrokeColor(colors.black); c.setLineWidth(1.6); c.setDash([1, 2])
-    c.rect(x0, by, side, side, fill=0, stroke=1)                     # trait de découpe (pointillés fins)
-    c.setDash([]); c.setLineWidth(1)
-    c.setDash([5, 3])                                                 # vallées : diagonales
-    c.line(x0, by, x0+side, by+side); c.line(x0, by+side, x0+side, by)
-    c.setDash([7, 2, 1, 2])                                           # montagnes : médianes
-    c.line(x0+side/2, by, x0+side/2, by+side); c.line(x0, by+side/2, x0+side, by+side/2)
-    c.setDash([])
-    lx = x0 + side + 0.9*cm; ly = top
-    c.setFont("Helvetica-Bold", 10); c.drawString(lx, ly, "Legende")
-    c.setLineWidth(1.2)
-    c.setLineWidth(1.6); c.setDash([1, 2]); c.line(lx, ly-0.7*cm, lx+1.4*cm, ly-0.7*cm); c.setLineWidth(1.2)
-    c.setDash([5, 3]); c.line(lx, ly-1.4*cm, lx+1.4*cm, ly-1.4*cm)
-    c.setDash([7, 2, 1, 2]); c.line(lx, ly-2.1*cm, lx+1.4*cm, ly-2.1*cm); c.setDash([])
-    c.setFont("Helvetica", 9)
-    c.drawString(lx+1.7*cm, ly-0.78*cm, "decouper le carre")
-    c.drawString(lx+1.7*cm, ly-1.48*cm, "pli vallee : plier vers toi")
-    c.drawString(lx+1.7*cm, ly-2.18*cm, "pli montagne : plier vers l'arriere")
-    tips = ["Marque bien chaque pli avec l'ongle,",
-            "puis rabats les 4 coins vers le bas :",
-            "tu obtiens la base preliminaire,",
-            "point de depart de la grue.",
-            "",
-            "Pas de carre ? Plie un coin d'une feuille A4",
-            "sur le bord oppose et coupe la bande."]
-    for i, t in enumerate(tips):
-        c.drawString(lx, ly-3.0*cm - i*0.45*cm, t)
-    ry = by - 0.8*cm
-    c.setFont("Helvetica-Oblique", 9); c.setFillColor(HexColor("#555555"))
-    c.drawString(x0, ry, "Records :  grenouille ____ cm   |   bateau ____ min a flot   |   grue en ____ min")
+    items = [
+        ("Niveau 1 - Grenouille sauteuse", _origami_frog,  "Carre de 10 a 15 cm - 8 plis",  "Saut record : ____ cm"),
+        ("Niveau 2 - Bateau a voile",      _origami_boat,  "Feuille A4 - 10 plis",          "A flot pendant : ____ min"),
+        ("Niveau 3 - Grue traditionnelle", _origami_crane, "Carre de 15 cm - 20 plis",      "Pliee en : ____ min"),
+    ]
+    gap = 0.5*cm
+    pw = (W - 3*cm - 2*gap) / 3
+    top = y - 0.5*cm
+    pic = min(pw - 0.6*cm, h - 3.6*cm)
+    for i, (title, fn, paper, rec) in enumerate(items):
+        x = 1.5*cm + i*(pw + gap)
+        c.setStrokeColor(HexColor("#999999")); c.setLineWidth(0.6)
+        c.roundRect(x, top - pic - 2.0*cm, pw, pic + 2.0*cm, 8, fill=0, stroke=1)
+        c.setFillColor(colors.black); c.setFont("Helvetica-Bold", 9.5)
+        c.drawCentredString(x + pw/2, top - 0.35*cm, title)
+        fn(c, x + (pw - pic)/2, top - 0.6*cm - pic, pic, pic)
+        c.setFillColor(HexColor("#444444")); c.setFont("Helvetica", 8.5)
+        c.drawCentredString(x + pw/2, top - 0.95*cm - pic, paper)
+        c.setFont("Helvetica-Oblique", 8.5)
+        c.drawCentredString(x + pw/2, top - 1.55*cm - pic, rec)
+    # Tableau du concours
+    ty = top - pic - 2.6*cm
+    cols_x = [1.5*cm, 6.0*cm, 10.3*cm, 14.6*cm, W - 1.5*cm]
+    heads = ["Joueur", "Grenouille (cm)", "Bateau (min)", "Grue (min)"]
+    nrows = max(2, min(5, int((ty - (y - h + 1.0*cm)) // (0.8*cm)) - 1))
+    c.setStrokeColor(colors.black); c.setLineWidth(0.7)
+    c.setFillColor(colors.black); c.setFont("Helvetica-Bold", 9)
+    for k, hd in enumerate(heads):
+        c.drawString(cols_x[k] + 0.2*cm, ty - 0.55*cm, hd)
+    for r in range(nrows + 2):
+        c.line(cols_x[0], ty - r*0.8*cm, cols_x[-1], ty - r*0.8*cm)
+    for xk in cols_x:
+        c.line(xk, ty, xk, ty - (nrows + 1)*0.8*cm)
+    c.setFillColor(HexColor("#666666")); c.setFont("Helvetica-Oblique", 8)
+    c.drawCentredString(W/2, y - h + 0.4*cm, "Pas de carre ? Plie un coin d'une feuille A4 sur le bord oppose et coupe la bande qui depasse.")
 
 # — Rotation mentale —
 _SHAPES = {"L": [(0,0),(1,0),(2,0),(2,1)], "F": [(1,0),(1,1),(0,1),(1,2),(2,2)],
