@@ -1,0 +1,1515 @@
+{
+ "version": 1,
+ "cards": [
+  {
+   "id": "CU-001",
+   "cat": "curiosites",
+   "emoji": "🧠",
+   "titre": "Ton cerveau génère assez d’énergie pour allumer une ampoule",
+   "texte": "Le cerveau humain produit environ 20 watts en activité normale. C’est autant qu’une ampoule LED standard. Pendant ton sommeil, il ne s’éteint jamais.",
+   "tag": "Neurosciences",
+   "age": "8+",
+   "couleur": "#6C63FF"
+  },
+  {
+   "id": "CU-002",
+   "cat": "curiosites",
+   "emoji": "🐙",
+   "titre": "Les pieuvres ont 3 cœurs et un sang bleu",
+   "texte": "Leur hémolymphe contient de la hémocyanine (cuivre) au lieu d’hémoglobine (fer). Deux cœurs s’arrêtent quand elles nagent — elles préfèrent donc marcher sur le fond.",
+   "tag": "Biologie",
+   "age": "7+",
+   "couleur": "#06D6A0"
+  },
+  {
+   "id": "CU-003",
+   "cat": "curiosites",
+   "emoji": "🦈",
+   "titre": "Les requins existaient avant les arbres",
+   "texte": "Les premiers requins apparaissent il y a 450 millions d’années. Les forêts arrivent 90 millions d’années plus tard. Les requins ont survécu à 5 extinctions de masse.",
+   "tag": "Géologie",
+   "age": "8+",
+   "couleur": "#118AB2"
+  },
+  {
+   "id": "CU-004",
+   "cat": "curiosites",
+   "emoji": "🔢",
+   "titre": "Plier 42 fois une feuille dépasse la Lune",
+   "texte": "L’épaisseur double à chaque pli. Après 42 plis : 440 000 km. La Lune est à 384 000 km. Au pli 103, la feuille aurait le diamètre de l’Univers observable.",
+   "tag": "Mathématiques",
+   "age": "9+",
+   "couleur": "#FF9F1C"
+  },
+  {
+   "id": "CU-005",
+   "cat": "curiosites",
+   "emoji": "🧊",
+   "titre": "Le froid n’existe pas physiquement",
+   "texte": "\"Froid\" est l’absence de chaleur, comme l’obscurité est l’absence de lumière. On ne peut pas \"envoyer du froid\" — on retire de la chaleur. Le zéro absolu (-273°C) est la limite.",
+   "tag": "Physique",
+   "age": "10+",
+   "couleur": "#4ECDC4"
+  },
+  {
+   "id": "CU-006",
+   "cat": "curiosites",
+   "emoji": "🌊",
+   "titre": "L’eau chaude peut geler plus vite que l’eau froide",
+   "texte": "L’effet Mpemba : un phénomène réel mais encore non totalement expliqué. Il dépend du contenant, de la dissolution des gaz et des gradients de température.",
+   "tag": "Physique",
+   "age": "10+",
+   "couleur": "#118AB2"
+  },
+  {
+   "id": "CU-007",
+   "cat": "curiosites",
+   "emoji": "🌍",
+   "titre": "\"Bonjour\" vient d’une prière médiévale",
+   "texte": "\"Bon jour\" signifiait \"que Dieu vous donne un bon jour\". On souhaitait littéralement une bénédiction divine à chaque rencontre. La formule a 800 ans.",
+   "tag": "Étymologie",
+   "age": "8+",
+   "couleur": "#FFD166"
+  },
+  {
+   "id": "CU-008",
+   "cat": "curiosites",
+   "emoji": "🧬",
+   "titre": "Tu es composé à 60% d’eau… qui existait avant les dinosaures",
+   "texte": "Les atomes d’hydrogène dans ton corps ont 14 milliards d’ans. L’eau que tu bois a peut-être été bue par un dinosaure, un Romain, ou tombée comme pluie sur les Alpes.",
+   "tag": "Sciences",
+   "age": "8+",
+   "couleur": "#06D6A0"
+  },
+  {
+   "id": "CU-009",
+   "cat": "curiosites",
+   "emoji": "🐜",
+   "titre": "Les fourmis d’Argentine forment une colonie de 6 000 km",
+   "texte": "Des fourmis de Barcelone et d’Italie se reconnaissent et ne s’attaquent pas — elles font partie de la même supercolonie mondiale. C’est la plus grande structure vivante organisée connue.",
+   "tag": "Biologie",
+   "age": "9+",
+   "couleur": "#FF6B6B"
+  },
+  {
+   "id": "CU-010",
+   "cat": "curiosites",
+   "emoji": "🎵",
+   "titre": "\"Joyeux Anniversaire\" était sous copyright jusqu’en 2016",
+   "texte": "Warner/Chappell Music touchait ~2M$ par an de royalties. Un procès a prouvé que le copyright était frauduleux. La chanson composée en 1893 est maintenant dans le domaine public.",
+   "tag": "Histoire",
+   "age": "9+",
+   "couleur": "#9B59B6"
+  },
+  {
+   "id": "CU-011",
+   "cat": "curiosites",
+   "emoji": "🌙",
+   "titre": "La Lune s’éloigne de 3,8 cm de la Terre chaque année",
+   "texte": "Dans 600 millions d’années, elle sera trop loin pour couvrir le Soleil lors des éclipses totales. Les éclipses parfaites que nous voyons sont un hasard cosmique temporaire.",
+   "tag": "Astronomie",
+   "age": "10+",
+   "couleur": "#2C3E50"
+  },
+  {
+   "id": "CU-012",
+   "cat": "curiosites",
+   "emoji": "🦋",
+   "titre": "Les papillons goûtent avec leurs pattes",
+   "texte": "Leurs capteurs gustatifs sont 200 fois plus sensibles que la langue humaine. En atterrissant sur une plante, ils savent immédiatement si elle convient pour pondre leurs œufs.",
+   "tag": "Biologie",
+   "age": "6+",
+   "couleur": "#E91E63"
+  },
+  {
+   "id": "CU-013",
+   "cat": "curiosites",
+   "emoji": "🔬",
+   "titre": "Ton corps remplace la quasi-totalité de ses cellules en 7 ans",
+   "texte": "Certaines comme les neurones et les cellules osseuses vivent plus longtemps, mais la plupart se renouvellent constamment. Tu n’es pas le même corps qu’il y a 7 ans.",
+   "tag": "Biologie",
+   "age": "9+",
+   "couleur": "#06D6A0"
+  },
+  {
+   "id": "CU-014",
+   "cat": "curiosites",
+   "emoji": "⚡",
+   "titre": "La foudre frappe la Terre 100 fois par seconde",
+   "texte": "Soit 8 millions d’éclairs par jour. Un éclair peut atteindre 30 000°C — 5 fois la surface du Soleil. Et pourtant l’air entre les nuages et le sol agit comme un isolant.",
+   "tag": "Physique",
+   "age": "7+",
+   "couleur": "#FF9F1C"
+  },
+  {
+   "id": "CU-015",
+   "cat": "curiosites",
+   "emoji": "🌱",
+   "titre": "Les arbres communiquent sous terre via des champignons",
+   "texte": "Le \"Wood Wide Web\" : les racines échangent nutriments et signaux d’alarme via des réseaux de mycélium. Une forêt est une communauté, pas juste une collection d’arbres.",
+   "tag": "Sciences",
+   "age": "9+",
+   "couleur": "#2ECC71"
+  },
+  {
+   "id": "PS-001",
+   "cat": "psycho",
+   "emoji": "🧠",
+   "titre": "Ton cerveau réinvente tes souvenirs à chaque fois",
+   "texte": "La mémoire n’est pas un enregistrement. Chaque rappel reconstruit le souvenir et l’altère légèrement. C’est pourquoi deux témoins racontent la même scène différemment.",
+   "tag": "Psychologie",
+   "age": "11+",
+   "couleur": "#6C63FF"
+  },
+  {
+   "id": "PS-002",
+   "cat": "psycho",
+   "emoji": "😊",
+   "titre": "Sourire force ton cerveau à ressentir de la joie",
+   "texte": "L’hypothèse du feedback facial : contracter les muscles du sourire active des zones émotionnelles positives dans le cerveau. Même un sourire forcé réduit le stress mesurable.",
+   "tag": "Neurosciences",
+   "age": "8+",
+   "couleur": "#FFD166"
+  },
+  {
+   "id": "PS-003",
+   "cat": "psycho",
+   "emoji": "💤",
+   "titre": "Ton cerveau consolide tes apprentissages pendant le sommeil",
+   "texte": "La nuit, l’hippocampe rejoue les informations de la journée pour les transférer en mémoire à long terme. Dormir après une révision améliore la mémorisation de 20 à 40%.",
+   "tag": "Neurosciences",
+   "age": "9+",
+   "couleur": "#9B59B6"
+  },
+  {
+   "id": "PS-004",
+   "cat": "psycho",
+   "emoji": "🎯",
+   "titre": "L’effet Dunning-Kruger : les novices se croient experts",
+   "texte": "Les personnes peu compétentes dans un domaine surestiment leurs capacités — parce qu’elles n’ont pas les outils pour mesurer leur propre ignorance. Les vrais experts doutent davantage.",
+   "tag": "Psychologie",
+   "age": "13+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "PS-005",
+   "cat": "psycho",
+   "emoji": "🔄",
+   "titre": "Prendre une décision fatigue ton cerveau",
+   "texte": "La \"fatigue décisionnelle\" : chaque choix consomme de l’énergie cognitive. Le soir, on fait de moins bonnes décisions. C’est pourquoi Steve Jobs portait toujours la même tenue.",
+   "tag": "Psychologie",
+   "age": "12+",
+   "couleur": "#1ABC9C"
+  },
+  {
+   "id": "PS-006",
+   "cat": "psycho",
+   "emoji": "📱",
+   "titre": "Les notifications fragmentent ta concentration pendant 23 minutes",
+   "texte": "Après chaque interruption, il faut en moyenne 23 min pour retrouver un état de concentration profonde (deep work). Vérifier son téléphone toutes les 10 min rend la concentration impossible.",
+   "tag": "Neurosciences",
+   "age": "11+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "PS-007",
+   "cat": "psycho",
+   "emoji": "🌊",
+   "titre": "L’état de flow est mesurable neurologiquement",
+   "texte": "Pendant le \"flow\" (absorption totale), le cortex préfrontal — siège de l’autocritique — se désactive partiellement. Tu penses moins à toi-même, et tes performances augmentent.",
+   "tag": "Psychologie",
+   "age": "13+",
+   "couleur": "#3498DB"
+  },
+  {
+   "id": "PS-008",
+   "cat": "psycho",
+   "emoji": "🤝",
+   "titre": "Faire une faveur à quelqu’un le rend plus favorable envers toi",
+   "texte": "L’effet Benjamin Franklin : demander un service crée un lien paradoxal. Le cerveau justifie \"j’ai aidé cette personne, donc je dois l’apprécier\". Plus efficace que de rendre service.",
+   "tag": "Psychologie",
+   "age": "12+",
+   "couleur": "#FF9F1C"
+  },
+  {
+   "id": "PS-009",
+   "cat": "psycho",
+   "emoji": "🎨",
+   "titre": "La créativité augmente quand tu es légèrement fatigué",
+   "texte": "Le matin, le cerveau est en mode analytique et filtrant. En soirée, les inhibitions cognitives baissent et les associations inattendues deviennent possibles. Les artistes créent souvent la nuit.",
+   "tag": "Neurosciences",
+   "age": "12+",
+   "couleur": "#9B59B6"
+  },
+  {
+   "id": "PS-010",
+   "cat": "psycho",
+   "emoji": "💪",
+   "titre": "Le cerveau ne fait pas la différence entre imagination et réalité",
+   "texte": "Visualiser un mouvement sportif active les mêmes zones motrices que l’exécuter. Les sportifs de haut niveau s’entraînent mentalement. L’imagination est un vrai entraînement.",
+   "tag": "Neurosciences",
+   "age": "10+",
+   "couleur": "#E91E63"
+  },
+  {
+   "id": "MO-001",
+   "cat": "motivation",
+   "emoji": "🔥",
+   "titre": "L’identité est plus puissante que la volonté",
+   "texte": "Ne dis pas \"j’essaie d’arrêter le sucre\" mais \"je suis quelqu’un qui mange sainement\". Les actions suivent l’identité, pas les objectifs. Chaque petit choix vote pour qui tu deviens.",
+   "tag": "Motivation",
+   "age": "12+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "MO-002",
+   "cat": "motivation",
+   "emoji": "🪴",
+   "titre": "Les petites victoires créent une chaîne de momentum",
+   "texte": "La dopamine libérée par une petite réussite motive l’action suivante. L’effet de progression : progresser même légèrement crée plus de motivation que d’atteindre un grand objectif.",
+   "tag": "Motivation",
+   "age": "10+",
+   "couleur": "#FF9F1C"
+  },
+  {
+   "id": "MO-003",
+   "cat": "motivation",
+   "emoji": "🌱",
+   "titre": "L’inconfort de la croissance ressemble au danger — c’est faux",
+   "texte": "La résistance avant d’apprendre quelque chose de difficile est neurologique, pas logique. Le cerveau préfère l’efficacité au changement. Ressentir cet inconfort = signal que tu grandis.",
+   "tag": "Motivation",
+   "age": "12+",
+   "couleur": "#2ECC71"
+  },
+  {
+   "id": "MO-004",
+   "cat": "motivation",
+   "emoji": "⏰",
+   "titre": "La règle des 2 minutes : si ça prend moins de 2 min, fais-le maintenant",
+   "texte": "Remettre à plus tard une petite tâche consomme plus d’énergie cognitive que la faire. Le cerveau garde un registre ouvert de tout ce qui est non terminé. Vide-le.",
+   "tag": "Motivation",
+   "age": "11+",
+   "couleur": "#1ABC9C"
+  },
+  {
+   "id": "MO-005",
+   "cat": "motivation",
+   "emoji": "🎯",
+   "titre": "Écrire ses objectifs les rend 42 % plus probables",
+   "texte": "L’écriture active un traitement cérébral différent de la pensée. Elle force la clarté, engage l’hémisphère gauche logique, et crée un contrat symbolique avec soi-même.",
+   "tag": "Motivation",
+   "age": "11+",
+   "couleur": "#9B59B6"
+  },
+  {
+   "id": "MO-006",
+   "cat": "motivation",
+   "emoji": "💎",
+   "titre": "La persévérance prédit le succès mieux que le talent",
+   "texte": "Angela Duckworth a étudié des milliers d’étudiants, militaires, sportifs. Le grit (ténacité + passion durable) est un meilleur indicateur de réussite que le QI ou le talent inné.",
+   "tag": "Motivation",
+   "age": "12+",
+   "couleur": "#E91E63"
+  },
+  {
+   "id": "MO-007",
+   "cat": "motivation",
+   "emoji": "🔁",
+   "titre": "Une habitude se forme en 66 jours, pas 21",
+   "texte": "La croyance des \"21 jours\" vient d’une mauvaise interprétation d’une étude des années 60. Les vraies recherches montrent 18 à 254 jours selon la complexité.",
+   "tag": "Motivation",
+   "age": "12+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "MO-008",
+   "cat": "motivation",
+   "emoji": "🌅",
+   "titre": "Les 5 premières minutes après le réveil programment ta journée",
+   "texte": "Pendant la transition sommeil-veille, le cerveau est très réceptif. Les premières pensées et intentions créent un cadre mental pour les heures qui suivent. Utilise ce moment.",
+   "tag": "Motivation",
+   "age": "13+",
+   "couleur": "#FF9F1C"
+  },
+  {
+   "id": "MO-009",
+   "cat": "motivation",
+   "emoji": "🏆",
+   "titre": "La fierté intérieure motive plus que la récompense externe",
+   "texte": "Les études sur la motivation montrent que la satisfaction de \"j’ai fait quelque chose de difficile\" surpasse sur le long terme l’argent, les notes ou les compliments.",
+   "tag": "Motivation",
+   "age": "11+",
+   "couleur": "#F39C12"
+  },
+  {
+   "id": "MO-010",
+   "cat": "motivation",
+   "emoji": "🌊",
+   "titre": "L’état d’esprit de croissance change littéralement le cerveau",
+   "texte": "Carol Dweck (Stanford) : croire que les capacités peuvent se développer active différemment le cerveau face à l’erreur. Les gens à growth mindset apprennent plus vite après un échec.",
+   "tag": "Motivation",
+   "age": "11+",
+   "couleur": "#3498DB"
+  },
+  {
+   "id": "MO-011",
+   "cat": "motivation",
+   "emoji": "🧠",
+   "titre": "La visualisation active les mêmes neurones que l’action réelle",
+   "texte": "Des études en neurosciences montrent que visualiser précisément une performance active presque identiquement le cortex moteur. Les sportifs de haut niveau s’en servent depuis les années 80.",
+   "tag": "Motivation",
+   "age": "12+",
+   "couleur": "#8E44AD"
+  },
+  {
+   "id": "MO-012",
+   "cat": "motivation",
+   "emoji": "⚡",
+   "titre": "L’action vient avant la motivation, pas l’inverse",
+   "texte": "On attend d’être motivé pour agir — c’est un piège. La recherche montre que l’action crée la motivation. Commence par 2 minutes. L’élan vient en faisant.",
+   "tag": "Motivation",
+   "age": "11+",
+   "couleur": "#F39C12"
+  },
+  {
+   "id": "MO-013",
+   "cat": "motivation",
+   "emoji": "🎮",
+   "titre": "Le cerveau est conçu pour les défis à la bonne difficulté",
+   "texte": "L’état de flow (Csikszentmihalyi) survient quand le défi dépasse légèrement tes capacités. Trop facile = ennui. Trop difficile = anxiété. Le sweet spot = croissance maximale.",
+   "tag": "Motivation",
+   "age": "12+",
+   "couleur": "#E91E63"
+  },
+  {
+   "id": "MO-014",
+   "cat": "motivation",
+   "emoji": "🌙",
+   "titre": "Dormir sur un problème n’est pas de la paresse — c’est de la stratégie",
+   "texte": "Le cerveau continue de traiter les problèmes pendant le sommeil. L’hippocampe consolide les informations et crée de nouvelles connexions. Se lever avec une solution est biologique.",
+   "tag": "Motivation",
+   "age": "11+",
+   "couleur": "#2C3E50"
+  },
+  {
+   "id": "MO-015",
+   "cat": "motivation",
+   "emoji": "🤝",
+   "titre": "Annoncer ses objectifs à quelqu’un les rend 65 % plus probables",
+   "texte": "Avoir un partenaire de responsabilité et fixer des rendez-vous de suivi porte le taux de réalisation à 95 % (American Society of Training). L’engagement social est un moteur puissant.",
+   "tag": "Motivation",
+   "age": "12+",
+   "couleur": "#27AE60"
+  },
+  {
+   "id": "MO-016",
+   "cat": "motivation",
+   "emoji": "🎵",
+   "titre": "La musique énergétique augmente les performances de 15 %",
+   "texte": "Des études sur les sportifs montrent que la musique au bon rythme (120-140 BPM) améliore l’endurance, réduit la perception de l’effort et augmente la puissance.",
+   "tag": "Motivation",
+   "age": "10+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "MO-017",
+   "cat": "motivation",
+   "emoji": "📏",
+   "titre": "Ce qu’on mesure progresse",
+   "texte": "Peter Drucker — Tenir un journal de ses habitudes améliore les résultats. Voir sa progression visible crée une boucle de renforcement positif. Même un simple tableau suffit.",
+   "tag": "Motivation",
+   "age": "11+",
+   "couleur": "#118AB2"
+  },
+  {
+   "id": "MO-018",
+   "cat": "motivation",
+   "emoji": "🌿",
+   "titre": "L’environnement compte plus que la volonté",
+   "texte": "James Clear : au lieu de lutter contre tes impulsions, réarrange ton espace. Mets tes pommes devant les chips. Pose ton livre sur le canapé. L’environnement automatise les bons choix.",
+   "tag": "Motivation",
+   "age": "12+",
+   "couleur": "#2ECC71"
+  },
+  {
+   "id": "MO-019",
+   "cat": "motivation",
+   "emoji": "🔭",
+   "titre": "Le sens donne 3 fois plus d’endurance que l’objectif seul",
+   "texte": "Simon Sinek : les gens supportent presque n’importe quel comment s’ils savent pourquoi. Relier une tâche à un sens plus grand (aider, créer, apprendre) multiplie la résilience.",
+   "tag": "Motivation",
+   "age": "13+",
+   "couleur": "#9B59B6"
+  },
+  {
+   "id": "MO-020",
+   "cat": "motivation",
+   "emoji": "🧊",
+   "titre": "L’effet \"si — alors\" double les chances de tenir une résolution",
+   "texte": "\"Si il est 18h, alors je fais 10 minutes de sport.\" Planifier la situation et l’action à l’avance court-circuite l’hésitation au moment critique. Peter Gollwitzer (NYU) a documenté cet effet.",
+   "tag": "Motivation",
+   "age": "12+",
+   "couleur": "#5DADE2"
+  },
+  {
+   "id": "CF-001",
+   "cat": "confiance",
+   "emoji": "💪",
+   "titre": "La posture change ton niveau de cortisol en 2 minutes",
+   "texte": "Amy Cuddy (Harvard) : adopter une posture expansive (\"power pose\") pendant 2 min réduit le cortisol (hormone du stress) et augmente la testostérone. Le corps influence le mental.",
+   "tag": "Confiance",
+   "age": "12+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "CF-002",
+   "cat": "confiance",
+   "emoji": "🗣️",
+   "titre": "La voix intérieure critique n’est pas la tienne",
+   "texte": "Cette voix qui dit \"tu n’es pas capable\" est souvent une intériorisation de voix externes entendues dans l’enfance. Identifier son origine la neutralise. Tu peux choisir ta narration interne.",
+   "tag": "Confiance",
+   "age": "13+",
+   "couleur": "#9B59B6"
+  },
+  {
+   "id": "CF-003",
+   "cat": "confiance",
+   "emoji": "🌟",
+   "titre": "L’auto-compassion est plus efficace que la critique pour progresser",
+   "texte": "Kristin Neff (Austin) : se traiter avec la même bienveillance qu’un ami après un échec active la résilience. L’autocritique sévère, elle, inhibe la prise de risque et l’apprentissage.",
+   "tag": "Confiance",
+   "age": "12+",
+   "couleur": "#1ABC9C"
+  },
+  {
+   "id": "CF-004",
+   "cat": "confiance",
+   "emoji": "🎭",
+   "titre": "Tout le monde ressent le syndrome de l’imposteur",
+   "texte": "70% des personnes ont vécu l’impression d’être \"moins compétents qu’ils n’y paraissent\". Albert Einstein, Maya Angelou, Neil Armstrong — tous l’ont décrit. C’est un signe d’intelligence.",
+   "tag": "Confiance",
+   "age": "12+",
+   "couleur": "#E91E63"
+  },
+  {
+   "id": "CF-005",
+   "cat": "confiance",
+   "emoji": "👁️",
+   "titre": "Le regard des autres que tu imagines est souvent faux",
+   "texte": "L’effet projecteur : on surestime l’attention que les autres nous portent. Dans une étude, les sujets pensaient que 50% des gens remarquaient un détail gênant. Réalité : moins de 20%.",
+   "tag": "Confiance",
+   "age": "11+",
+   "couleur": "#FF9F1C"
+  },
+  {
+   "id": "CF-006",
+   "cat": "confiance",
+   "emoji": "🔥",
+   "titre": "Agir avant d’être confiant crée la confiance, pas l’inverse",
+   "texte": "On attend d’être prêt pour agir — mais la confiance naît de l’action, pas de sa préparation. Chaque défi relevé, même imparfait, construit une preuve neuronale de compétence.",
+   "tag": "Confiance",
+   "age": "12+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "CF-007",
+   "cat": "confiance",
+   "emoji": "🌊",
+   "titre": "Les émotions durent 90 secondes si tu les laisses passer",
+   "texte": "La neurobiologiste Jill Bolte Taylor : une émotion physiologique dure 90 secondes. Ce qui l’entretient, c’est la pensée. Observer une émotion sans la nourrir la dissout naturellement.",
+   "tag": "Émotions",
+   "age": "12+",
+   "couleur": "#3498DB"
+  },
+  {
+   "id": "CF-008",
+   "cat": "confiance",
+   "emoji": "💬",
+   "titre": "Nommer une émotion réduit son intensité de moitié",
+   "texte": "\"Affect labeling\" : mettre des mots sur ce qu’on ressent active le cortex préfrontal (raisonnement) et réduit l’activité de l’amygdale (peur/panique). Dire \"je suis anxieux\" calme l’anxiété.",
+   "tag": "Émotions",
+   "age": "10+",
+   "couleur": "#9B59B6"
+  },
+  {
+   "id": "CF-009",
+   "cat": "confiance",
+   "emoji": "🤲",
+   "titre": "La gratitude recâble le cerveau en 21 jours",
+   "texte": "Écrire 3 choses positives chaque soir pendant 21 jours crée de nouvelles connexions neuronales. Le cerveau commence à scanner le monde pour le positif d’abord. Un biais qui se choisit.",
+   "tag": "Confiance",
+   "age": "10+",
+   "couleur": "#2ECC71"
+  },
+  {
+   "id": "CF-010",
+   "cat": "confiance",
+   "emoji": "🌈",
+   "titre": "Les personnes optimistes vivent en moyenne 11 ans de plus",
+   "texte": "Une étude sur 70 000 femmes (Harvard) : l’optimisme est lié à une réduction de 30% des maladies coronariennes et de 16% du cancer. L’état d’esprit a un impact physiologique réel.",
+   "tag": "Confiance",
+   "age": "13+",
+   "couleur": "#E91E63"
+  },
+  {
+   "id": "EM-001",
+   "cat": "emotions",
+   "emoji": "😤",
+   "titre": "La colère non exprimée fragilise le système immunitaire",
+   "texte": "Des études longitudinales montrent que réprimer chroniquement la colère augmente les marqueurs inflammatoires. Exprimer ses émotions de façon saine — même négatives — protège la santé.",
+   "tag": "Émotions",
+   "age": "11+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "EM-002",
+   "cat": "emotions",
+   "emoji": "😭",
+   "titre": "Pleurer libère des hormones de stress dans les larmes",
+   "texte": "Les larmes émotionnelles contiennent du cortisol et de la prolactine. Pleurer est une évacuation biologique du stress — pas une faiblesse. Après les larmes, les niveaux de stress baissent mesurément.",
+   "tag": "Émotions",
+   "age": "10+",
+   "couleur": "#3498DB"
+  },
+  {
+   "id": "EM-003",
+   "cat": "emotions",
+   "emoji": "😰",
+   "titre": "L’anxiété et l’excitation sont neurologiquement identiques",
+   "texte": "Même rythme cardiaque élevé, même flux d’adrénaline. La différence : le récit qu’on se fait. Dire \"je suis excité\" plutôt que \"je suis stressé\" améliore les performances.",
+   "tag": "Émotions",
+   "age": "12+",
+   "couleur": "#FF9F1C"
+  },
+  {
+   "id": "EM-004",
+   "cat": "emotions",
+   "emoji": "🤯",
+   "titre": "L’empathie peut s’apprendre et se renforcer",
+   "texte": "Le cerveau des personnes très empathiques montre une activité accrue des neurones miroirs. Des études montrent que pratiquer délibérément la perspective d’autrui renforce ces connexions.",
+   "tag": "Émotions",
+   "age": "10+",
+   "couleur": "#9B59B6"
+  },
+  {
+   "id": "EM-005",
+   "cat": "emotions",
+   "emoji": "😌",
+   "titre": "La respiration contrôlée est le seul levier direct du système nerveux",
+   "texte": "Tu ne peux pas décider de ralentir ton cœur directement — mais tu peux contrôler ta respiration. 4 secondes inspire, 6 secondes expire active le nerf vague et ralentit le rythme cardiaque.",
+   "tag": "Émotions",
+   "age": "9+",
+   "couleur": "#1ABC9C"
+  },
+  {
+   "id": "EM-006",
+   "cat": "emotions",
+   "emoji": "🔗",
+   "titre": "La solitude fait autant de mal que fumer 15 cigarettes par jour",
+   "texte": "Une méta-analyse de 350 000 participants (Holt-Lunstad) : l’isolement social augmente la mortalité de 26 %. Le lien social est un besoin biologique, pas un luxe.",
+   "tag": "Émotions",
+   "age": "13+",
+   "couleur": "#E91E63"
+  },
+  {
+   "id": "EM-007",
+   "cat": "emotions",
+   "emoji": "🎵",
+   "titre": "La musique active plus de zones du cerveau que toute autre activité",
+   "texte": "Jouer d’un instrument mobilise simultanément les cortex visuel, auditif, moteur et émotionnel. Les musiciens ont un cerveau mesurément différent — plus de connexions inter-hémisphériques.",
+   "tag": "Émotions",
+   "age": "9+",
+   "couleur": "#9B59B6"
+  },
+  {
+   "id": "EM-008",
+   "cat": "emotions",
+   "emoji": "🌿",
+   "titre": "20 minutes dans la nature réduisent le cortisol de 21 %",
+   "texte": "Une étude de l’Université du Michigan quantifie l’effet : une marche en nature (sans téléphone) pendant 20 min réduit les hormones du stress. Les villes vertes ont des habitants plus sains.",
+   "tag": "Émotions",
+   "age": "9+",
+   "couleur": "#2ECC71"
+  },
+  {
+   "id": "EM-009",
+   "cat": "emotions",
+   "emoji": "🧠",
+   "titre": "Les émotions durent moins de 90 secondes si on ne les alimente pas",
+   "texte": "Jill Bolte Taylor (neuroscientifique) : le circuit chimique d’une émotion dure 90 secondes. Ce qui l’entretient, c’est nos pensées. Observer l’émotion sans juger la laisse passer.",
+   "tag": "Émotions",
+   "age": "11+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "EM-010",
+   "cat": "emotions",
+   "emoji": "🤝",
+   "titre": "La bienveillance envers soi améliore plus les performances que l’autocritique",
+   "texte": "Kristin Neff (Austin) : l’auto-compassion après un échec active les mêmes circuits que la sécurité. Les personnes qui se traitent avec bienveillance reprennent plus vite et apprennent mieux.",
+   "tag": "Émotions",
+   "age": "12+",
+   "couleur": "#E91E63"
+  },
+  {
+   "id": "EM-011",
+   "cat": "emotions",
+   "emoji": "📝",
+   "titre": "Tenir un journal de gratitude réwire le cerveau en 3 semaines",
+   "texte": "Des études en neurosciences positives : noter 3 choses positives par jour pendant 21 jours augmente durablement l’activité dans les zones liées au bonheur. L’attention façonne la perception.",
+   "tag": "Émotions",
+   "age": "10+",
+   "couleur": "#F39C12"
+  },
+  {
+   "id": "EM-012",
+   "cat": "emotions",
+   "emoji": "😶",
+   "titre": "La méditation réduit l’amygdale en 8 semaines",
+   "texte": "Une étude de Harvard (Sara Lazar) : 8 semaines de méditation quotidienne réduisent physiquement le volume de l’amygdale (centre de la peur). Le cerveau change avec la pratique.",
+   "tag": "Émotions",
+   "age": "13+",
+   "couleur": "#8E44AD"
+  },
+  {
+   "id": "EM-013",
+   "cat": "emotions",
+   "emoji": "🤗",
+   "titre": "Le contact physique guérit des choses que les mots ne peuvent pas atteindre",
+   "texte": "Les bébés privés de contact physique ne se développent pas normalement même bien nourris. Le toucher libère de l’ocytocine, baisse la tension artérielle et renforce le système immunitaire.",
+   "tag": "Émotions",
+   "age": "9+",
+   "couleur": "#E91E63"
+  },
+  {
+   "id": "EM-014",
+   "cat": "emotions",
+   "emoji": "😪",
+   "titre": "La tristesse signale ce qui compte vraiment pour toi",
+   "texte": "On est triste pour des choses qui nous importent. L’éviter ne fait que reporter son traitement. L’écouter, identifier ce qu’elle dit (“j’ai perdu quelque chose de précieux”) permet de passer à travers.",
+   "tag": "Émotions",
+   "age": "10+",
+   "couleur": "#5DADE2"
+  },
+  {
+   "id": "EM-015",
+   "cat": "emotions",
+   "emoji": "😊",
+   "titre": "Sourire — même forcé — améliore l’humeur en quelques secondes",
+   "texte": "L’hypothèse du feedback facial : les muscles du visage envoient des signaux au cerveau. Tenir un crayon entre les dents (sans les lèvres) active les muscles du sourire et lège l’humeur.",
+   "tag": "Émotions",
+   "age": "10+",
+   "couleur": "#F39C12"
+  },
+  {
+   "id": "EM-016",
+   "cat": "emotions",
+   "emoji": "💪",
+   "titre": "La résilience se construit, elle ne se hérite pas",
+   "texte": "L’étude de Kauai (Emmy Werner) : des enfants en grande difficulté devenaient résilients s’ils avaient au moins un adulte bienveillant de confiance. Un seul. La résilience est relationnelle.",
+   "tag": "Émotions",
+   "age": "12+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "EM-017",
+   "cat": "emotions",
+   "emoji": "🌟",
+   "titre": "Écrire sur ses émotions négatives réduit la douleur physique",
+   "texte": "James Pennebaker (Texas) : écrire sur un événement difficile pendant 15-20 min sur 4 jours améliore la santé immunitaire, réduit les visites médicales et augmente le bien-être.",
+   "tag": "Émotions",
+   "age": "13+",
+   "couleur": "#8E44AD"
+  },
+  {
+   "id": "EM-018",
+   "cat": "emotions",
+   "emoji": "🌊",
+   "titre": "L’ennui n’est pas un problème — c’est une boussole",
+   "texte": "La neuroscientifique Sandi Mann : l’ennui est le signal que tes besoins profonds ne sont pas satisfaits. Il pousse à la créativité et à l’exploration. Le tolérer renforce la capacité d’attention.",
+   "tag": "Émotions",
+   "age": "11+",
+   "couleur": "#118AB2"
+  },
+  {
+   "id": "SA-001",
+   "cat": "sagesse",
+   "emoji": "✨",
+   "titre": "La politesse est l’art de choisir parmi ses pensées",
+   "texte": "Germaine de Staël — Toutes nos pensées ne méritent pas d’être exprimées. La vraie politesse, c’est choisir celles qui élèvent plutôt que celles qui blessent.",
+   "tag": "Sagesse",
+   "age": "10+",
+   "couleur": "#9B59B6"
+  },
+  {
+   "id": "SA-002",
+   "cat": "sagesse",
+   "emoji": "🎯",
+   "titre": "Le secret du succès, c’est la constance dans le but",
+   "texte": "Benjamin Disraeli — Non pas la perfection dans les moyens, mais la fidélité à la direction. La constance dépasse le talent sur la durée. Un cap tenu, même lentement, arrive.",
+   "tag": "Sagesse",
+   "age": "10+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "SA-003",
+   "cat": "sagesse",
+   "emoji": "🐢",
+   "titre": "L’important n’est pas la vitesse, mais de ne pas s’arrêter",
+   "texte": "Confucius — La tortue qui avance sans s’arrêter dépasse le lièvre qui fait des pauses. Le progrès régulier, même infime, surpasse les sprints suivis d’abandon.",
+   "tag": "Sagesse",
+   "age": "8+",
+   "couleur": "#2ECC71"
+  },
+  {
+   "id": "SA-004",
+   "cat": "sagesse",
+   "emoji": "💛",
+   "titre": "Traite les autres comme tu aimerais être traité",
+   "texte": "Règle d’or universelle — Présente dans toutes les grandes traditions : confucianisme, christianisme, islam, bouddhisme, stoïcisme. 2 500 ans d’humanité convergent vers cette idée.",
+   "tag": "Sagesse",
+   "age": "6+",
+   "couleur": "#F39C12"
+  },
+  {
+   "id": "SA-005",
+   "cat": "sagesse",
+   "emoji": "🙏",
+   "titre": "La gratitude transforme ce que nous avons en suffisance",
+   "texte": "Proverbe amérindien — La richesse n’est pas d’avoir plus, c’est d’apprécier ce qu’on a. La gratitude est la seule façon de ne jamais manquer de quoi que ce soit.",
+   "tag": "Sagesse",
+   "age": "9+",
+   "couleur": "#1ABC9C"
+  },
+  {
+   "id": "SA-006",
+   "cat": "sagesse",
+   "emoji": "🌟",
+   "titre": "Le respect de soi est le commencement de la sagesse",
+   "texte": "Proverbe écossais — On ne peut pas respecter les autres sans d’abord se respecter soi-même. L’estime de soi n’est pas de l’arrogance — c’est la fondation de tout rapport sain.",
+   "tag": "Sagesse",
+   "age": "10+",
+   "couleur": "#9B59B6"
+  },
+  {
+   "id": "SA-007",
+   "cat": "sagesse",
+   "emoji": "🎨",
+   "titre": "Les grandes choses se font par une série de petites choses",
+   "texte": "Van Gogh — La cathédrale se construit brique par brique. La maîtrise vient heure par heure. L’impulsion crée l’étincelle ; la discipline construit l’œuvre.",
+   "tag": "Sagesse",
+   "age": "9+",
+   "couleur": "#E91E63"
+  },
+  {
+   "id": "SA-008",
+   "cat": "sagesse",
+   "emoji": "💫",
+   "titre": "Ce que tu penses de toi-même est plus important que ce que les autres pensent",
+   "texte": "Sénèque — L’opinion la plus persistante et la plus influente sur ta vie est celle que tu as de toi-même. Elle filtre tout le reste.",
+   "tag": "Sagesse",
+   "age": "11+",
+   "couleur": "#6C63FF"
+  },
+  {
+   "id": "SA-009",
+   "cat": "sagesse",
+   "emoji": "🦅",
+   "titre": "L’échec est le fondement de la réussite",
+   "texte": "Lao Tseu — Chaque tentative échouée t’enseigne ce qui ne fonctionne pas. Thomas Edison : \"Je n’ai pas échoué 1 000 fois, j’ai trouvé 1 000 façons qui ne marchent pas.\"",
+   "tag": "Sagesse",
+   "age": "9+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "SA-010",
+   "cat": "sagesse",
+   "emoji": "🌊",
+   "titre": "La seule façon de faire du bon travail est d’aimer ce qu’on fait",
+   "texte": "Steve Jobs — La passion n’est pas un luxe, c’est un carburant. Les gens qui excellent n’ont pas seulement de la discipline — ils ont trouvé quelque chose qui les anime profondément.",
+   "tag": "Sagesse",
+   "age": "12+",
+   "couleur": "#FF9F1C"
+  },
+  {
+   "id": "SA-011",
+   "cat": "sagesse",
+   "emoji": "🕊",
+   "titre": "La paix intérieure commence quand on arrête de vouloir que les choses soient différentes",
+   "texte": "Pema Chödrön — Pas la résignation, mais l’acceptation. La souffrance naît souvent de la résistance à la réalité. Accepter ce qui est libère l’énergie pour changer ce qui peut l’être.",
+   "tag": "Sagesse",
+   "age": "13+",
+   "couleur": "#3498DB"
+  },
+  {
+   "id": "SA-012",
+   "cat": "sagesse",
+   "emoji": "🌱",
+   "titre": "Plante des arbres dont tu ne verras jamais l’ombre",
+   "texte": "Proverbe grec — Les meilleures actions sont souvent celles dont on ne profitera pas. Éduquer, protéger, construire pour ceux qui viennent après. C’est la définition de la civilisation.",
+   "tag": "Sagesse",
+   "age": "11+",
+   "couleur": "#2ECC71"
+  },
+  {
+   "id": "SA-013",
+   "cat": "sagesse",
+   "emoji": "🧭",
+   "titre": "Connais-toi toi-même",
+   "texte": "Socrate — Inscrit au temple de Delphes. La connaissance de soi est la seule qui ne se périme pas. Qui comprend ses forces, ses peurs et ses angles morts navigue mieux dans la vie.",
+   "tag": "Sagesse",
+   "age": "11+",
+   "couleur": "#8E44AD"
+  },
+  {
+   "id": "SA-014",
+   "cat": "sagesse",
+   "emoji": "🤝",
+   "titre": "La seule richesse qui grandit en la partageant, c’est la connaissance",
+   "texte": "Francis Bacon — Contrairement à l’argent, le savoir ne diminue pas quand on le donne. Un professeur ne perd rien en enseignant. Un ami qui t’explique quelque chose devient aussi plus clair.",
+   "tag": "Sagesse",
+   "age": "9+",
+   "couleur": "#F39C12"
+  },
+  {
+   "id": "SA-015",
+   "cat": "sagesse",
+   "emoji": "⏳",
+   "titre": "Ce que nous sommes est le résultat de ce que nous avons pensé",
+   "texte": "Bouddha — L’esprit est un jardin. Les pensées que tu cultives deviennent des habitudes, les habitudes deviennent ton caractère, le caractère devient ton destin.",
+   "tag": "Sagesse",
+   "age": "11+",
+   "couleur": "#1ABC9C"
+  },
+  {
+   "id": "SA-016",
+   "cat": "sagesse",
+   "emoji": "🌹",
+   "titre": "On ne se baigne jamais deux fois dans le même fleuve",
+   "texte": "Héraclite — Tout change, rien ne dure. Même toi tu as changé depuis hier. La vraie sagesse, c’est d’accepter le changement plutôt que de le combattre.",
+   "tag": "Sagesse",
+   "age": "10+",
+   "couleur": "#118AB2"
+  },
+  {
+   "id": "SA-017",
+   "cat": "sagesse",
+   "emoji": "🌞",
+   "titre": "Il vaut mieux allumer une bougie que maudire l’obscurité",
+   "texte": "Proverbe chinois — Se plaindre d’une situation ne la change pas. Chercher la plus petite action possible pour l’améliorer, même symbolique, change tout à la fois l’environnement et l’état d’esprit.",
+   "tag": "Sagesse",
+   "age": "8+",
+   "couleur": "#F39C12"
+  },
+  {
+   "id": "SA-018",
+   "cat": "sagesse",
+   "emoji": "🎯",
+   "titre": "Le courage n’est pas l’absence de peur, c’est agir malgré elle",
+   "texte": "Nelson Mandela — Tout le monde a peur. Les braves ne sont pas ceux qui ne ressentent pas la peur — ce sont ceux qui agissent quand même. La peur est l’énergie du courage non transformé.",
+   "tag": "Sagesse",
+   "age": "10+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "SA-019",
+   "cat": "sagesse",
+   "emoji": "📚",
+   "titre": "Les livres sont des amis qui ne trahissent jamais",
+   "texte": "François Mauriac — Un livre est une conversation avec quelqu’un de plus sage que toi, disponible à toute heure, sans jugement. Les meilleurs livres changent ta façon de voir pour toujours.",
+   "tag": "Sagesse",
+   "age": "9+",
+   "couleur": "#9B59B6"
+  },
+  {
+   "id": "SA-020",
+   "cat": "sagesse",
+   "emoji": "🌍",
+   "titre": "Nous ne voyons pas les choses comme elles sont, nous les voyons comme nous sommes",
+   "texte": "Anaïs Nin — Deux personnes qui vivent le même événement le perçoivent différemment selon leur histoire, leurs peurs, leurs désirs. Changer de perspective change la réalité.",
+   "tag": "Sagesse",
+   "age": "12+",
+   "couleur": "#2C3E50"
+  },
+  {
+   "id": "SA-021",
+   "cat": "sagesse",
+   "emoji": "🦋",
+   "titre": "La liberté, c’est de choisir ses chaînes",
+   "texte": "Jean-Paul Sartre — Toute vie implique des contraintes. La vraie liberté n’est pas l’absence d’engagement, mais de choisir consciemment ses engagements plutôt que de les subir.",
+   "tag": "Sagesse",
+   "age": "13+",
+   "couleur": "#E91E63"
+  },
+  {
+   "id": "SA-022",
+   "cat": "sagesse",
+   "emoji": "🦁",
+   "titre": "Ce que l’on comprend bien s’énonce clairement",
+   "texte": "Nicolas Boileau — Si tu ne peux pas l’expliquer simplement, c’est que tu ne le comprends pas vraiment. La clarté d’expression est le reflet de la clarté de pensée.",
+   "tag": "Sagesse",
+   "age": "11+",
+   "couleur": "#F39C12"
+  },
+  {
+   "id": "PT-001",
+   "cat": "petits",
+   "emoji": "🐘",
+   "titre": "Les éléphants se souviennent de tout",
+   "texte": "Un éléphant n’oublie jamais les visages de ses amis ni les chemins qu’il a parcourus. Il peut retrouver un point d’eau visité il y a 10 ans à des centaines de kilomètres.",
+   "tag": "Animaux",
+   "age": "4+",
+   "couleur": "#9B59B6"
+  },
+  {
+   "id": "PT-002",
+   "cat": "petits",
+   "emoji": "🐬",
+   "titre": "Les dauphins dorment avec un seul œil ouvert",
+   "texte": "La moitié de leur cerveau dort pendant que l’autre reste éveillée pour respirer et surveiller les dangers. Ils peuvent même nager en dormant !",
+   "tag": "Animaux",
+   "age": "4+",
+   "couleur": "#3498DB"
+  },
+  {
+   "id": "PT-003",
+   "cat": "petits",
+   "emoji": "🐌",
+   "titre": "Un escargot a 14 000 dents… sur sa langue !",
+   "texte": "Sa langue s’appelle une radula et est couverte de minuscules dents pour râper les plantes. L’escargot avance si lentement qu’il lui faut 5 jours pour faire 1 kilomètre.",
+   "tag": "Animaux",
+   "age": "4+",
+   "couleur": "#2ECC71"
+  },
+  {
+   "id": "PT-004",
+   "cat": "petits",
+   "emoji": "🌈",
+   "titre": "L’arc-en-ciel est en réalité un cercle complet",
+   "texte": "Du ciel, on le verrait entier en rond. Depuis le sol, la terre cache la moitié. La lumière du soleil se cache dans chaque goutte de pluie et ressort divisée en toutes ses couleurs.",
+   "tag": "Sciences",
+   "age": "5+",
+   "couleur": "#E91E63"
+  },
+  {
+   "id": "PT-005",
+   "cat": "petits",
+   "emoji": "🌙",
+   "titre": "La lune brille mais ne produit pas de lumière",
+   "texte": "Elle renvoie la lumière du soleil, comme un miroir géant. Sans le soleil, la lune serait complètement noire dans le ciel. Elle s’éloigne de la Terre de 3 cm chaque année.",
+   "tag": "Astronomie",
+   "age": "5+",
+   "couleur": "#2C3E50"
+  },
+  {
+   "id": "PT-006",
+   "cat": "petits",
+   "emoji": "🦋",
+   "titre": "Les papillons goûtent avec leurs pattes",
+   "texte": "Dès qu’ils se posent sur une fleur, leurs pattes savent si elle est sucrée avant même que leur bouche ne touche quoi que ce soit. 200 fois plus sensibles que notre langue !",
+   "tag": "Animaux",
+   "age": "5+",
+   "couleur": "#E91E63"
+  },
+  {
+   "id": "PT-007",
+   "cat": "petits",
+   "emoji": "🌊",
+   "titre": "L’océan couvre plus de la moitié de la Terre",
+   "texte": "Si tu regardais la Terre depuis l’espace, tu verrais surtout de l’eau bleue. Les océans sont si profonds que la plus haute montagne du monde (l’Everest) rentrerait dedans.",
+   "tag": "Géographie",
+   "age": "5+",
+   "couleur": "#118AB2"
+  },
+  {
+   "id": "PT-008",
+   "cat": "petits",
+   "emoji": "🐦",
+   "titre": "Les flamants roses sont blancs à la naissance",
+   "texte": "Leur couleur rose vient de la nourriture qu’ils mangent : des petites crevettes et algues rouges. Sans cette nourriture, ils redeviendraient blancs. Tu es un peu ce que tu manges aussi !",
+   "tag": "Animaux",
+   "age": "5+",
+   "couleur": "#E91E63"
+  },
+  {
+   "id": "PT-009",
+   "cat": "petits",
+   "emoji": "⭐",
+   "titre": "Les étoiles que tu vois existaient peut-être plus",
+   "texte": "La lumière d’une étoile met des milliers d’années pour nous arriver. Certaines étoiles que tu vois la nuit ont déjà disparu. Tu regardes dans le passé quand tu regardes le ciel.",
+   "tag": "Astronomie",
+   "age": "6+",
+   "couleur": "#F39C12"
+  },
+  {
+   "id": "PT-010",
+   "cat": "petits",
+   "emoji": "🌳",
+   "titre": "Les arbres parlent en silence sous la terre",
+   "texte": "Leurs racines s’envoient des messages via des petits champignons. Un arbre malade reçoit de la nourriture de ses voisins. Une forêt, c’est une grande famille qui prend soin d’elle-même.",
+   "tag": "Sciences",
+   "age": "6+",
+   "couleur": "#27AE60"
+  },
+  {
+   "id": "PT-011",
+   "cat": "petits",
+   "emoji": "🐋",
+   "titre": "La baleine bleue est l’animal le plus grand qui ait jamais vécu",
+   "texte": "Plus grand que les dinosaures ! Son cœur est aussi gros qu’une voiture. Son bébé pèse déjà 2 tonnes à la naissance — autant que 30 adultes.",
+   "tag": "Animaux",
+   "age": "5+",
+   "couleur": "#2980B9"
+  },
+  {
+   "id": "PT-012",
+   "cat": "petits",
+   "emoji": "🍯",
+   "titre": "Le miel ne se gâte jamais, même après 3 000 ans",
+   "texte": "Des archéologues ont trouvé du miel dans des tombes égyptiennes vieux de 3 000 ans, encore mangeable ! Le sucre et l’acidité du miel empêchent les microbes de vivre dedans.",
+   "tag": "Sciences",
+   "age": "6+",
+   "couleur": "#F39C12"
+  },
+  {
+   "id": "EN-001",
+   "cat": "enfants",
+   "emoji": "🦑",
+   "titre": "Le calmar colossal a des yeux de la taille d’une assiette",
+   "texte": "30 cm de diamètre — les plus grands yeux du règne animal. Dans l’obscurité des profondeurs, il capte la moindre lueur de prédateur. On n’en a presque jamais vu vivant.",
+   "tag": "Biologie",
+   "age": "8+",
+   "couleur": "#8E44AD"
+  },
+  {
+   "id": "EN-002",
+   "cat": "enfants",
+   "emoji": "🏔️",
+   "titre": "L’Everest grandit de 4 mm chaque année",
+   "texte": "Les plaques tectoniques qui le poussent vers le haut n’ont pas arrêté. En même temps, le vent et les pluies l’érodent. Pendant des millions d’années, les deux forces s’équilibrent.",
+   "tag": "Géologie",
+   "age": "8+",
+   "couleur": "#7F8C8D"
+  },
+  {
+   "id": "EN-003",
+   "cat": "enfants",
+   "emoji": "🧲",
+   "titre": "La Terre est un énorme aimant avec des pôles qui bougent",
+   "texte": "Le pôle nord magnétique se déplace d’environ 55 km par an vers la Russie. Les boussoles de nos grands-parents pointaient vers un endroit légèrement différent du nôtre.",
+   "tag": "Physique",
+   "age": "9+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "EN-004",
+   "cat": "enfants",
+   "emoji": "🦠",
+   "titre": "Il y a 10 fois plus de bactéries dans ton corps que de cellules",
+   "texte": "Environ 38 000 milliards de bactéries vivent en toi — surtout dans les intestins. La plupart sont tes alliées : elles digèrent, fabriquent des vitamines, et entraînent ton système immunitaire.",
+   "tag": "Biologie",
+   "age": "9+",
+   "couleur": "#27AE60"
+  },
+  {
+   "id": "EN-005",
+   "cat": "enfants",
+   "emoji": "🌋",
+   "titre": "Il y a de la lave sous tes pieds à environ 30 km de profondeur",
+   "texte": "La croûte terrestre fait 30 à 70 km d’épaisseur. En dessous, le manteau est si chaud que la roche est pâteuse comme du caramel chaud. Sur les océans, la croûte n’est que 10 km.",
+   "tag": "Géologie",
+   "age": "8+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "EN-006",
+   "cat": "enfants",
+   "emoji": "🦅",
+   "titre": "L’aigle voit 5 fois mieux que l’humain",
+   "texte": "Il peut repérer un lapin à 3 km de distance. Ses yeux représentent 5 % de la masse de sa tête — si les nôtres étaient proportionnels, ils feraient la taille d’une orange.",
+   "tag": "Animaux",
+   "age": "8+",
+   "couleur": "#E67E22"
+  },
+  {
+   "id": "EN-007",
+   "cat": "enfants",
+   "emoji": "☀️",
+   "titre": "Le soleil est si grand que 1,3 million de Terres rentreraient dedans",
+   "texte": "Et pourtant, le soleil est une étoile tout à fait ordinaire parmi les 400 milliards d’étoiles de notre galaxie. Certaines étoiles sont 1 500 fois plus grandes que lui.",
+   "tag": "Astronomie",
+   "age": "8+",
+   "couleur": "#F39C12"
+  },
+  {
+   "id": "EN-008",
+   "cat": "enfants",
+   "emoji": "💎",
+   "titre": "Les diamants viennent du même matériau que le crayon",
+   "texte": "Les deux sont du carbone pur. Dans un diamant, les atomes sont disposés en pyramides très rigides. Dans le graphite du crayon, ils sont en couches glissantes. Même atome, structure différente, résultat opposé.",
+   "tag": "Chimie",
+   "age": "9+",
+   "couleur": "#5DADE2"
+  },
+  {
+   "id": "EN-009",
+   "cat": "enfants",
+   "emoji": "🧊",
+   "titre": "La glace flotte parce qu’elle est moins dense que l’eau liquide",
+   "texte": "Presque tous les matériaux sont plus denses solides que liquides. Pas l’eau. Cette anomalie est vitale : si la glace coulait, les lacs gèleraient de bas en haut et tueraient toute vie aquatique.",
+   "tag": "Physique",
+   "age": "9+",
+   "couleur": "#AED6F1"
+  },
+  {
+   "id": "EN-010",
+   "cat": "enfants",
+   "emoji": "🌿",
+   "titre": "Les plantes s’endorment la nuit",
+   "texte": "Beaucoup de plantes replient leurs feuilles ou fleurs au coucher du soleil — c’est la nyctinastie. Elles ont un rythme circadien comme nous. Certaines peuvent même anticiper l’aube.",
+   "tag": "Biologie",
+   "age": "8+",
+   "couleur": "#27AE60"
+  },
+  {
+   "id": "AD-001",
+   "cat": "ados",
+   "emoji": "🎭",
+   "titre": "Les gens préfèrent une mauvaise explication à pas d’explication",
+   "texte": "L’étude \"placebo d’information\" (Langer) : insérer en tête de file en disant \"parce que j’ai besoin de faire des copies\" obéit 93 %. Le mot \"parce que\" déclenche la conformité, peu importe la raison.",
+   "tag": "Psychologie",
+   "age": "14+",
+   "couleur": "#8E44AD"
+  },
+  {
+   "id": "AD-002",
+   "cat": "ados",
+   "emoji": "💰",
+   "titre": "La douleur de perdre 100€ est deux fois plus forte que le plaisir d’en gagner",
+   "texte": "L’aversion à la perte (Kahneman & Tversky) : notre cerveau évalue asymétriquement gains et pertes. C’est pourquoi les publicités disent \"ne ratez pas\" plutôt que \"profitez de\".",
+   "tag": "Psychologie",
+   "age": "14+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "AD-003",
+   "cat": "ados",
+   "emoji": "🕰️",
+   "titre": "L’ennui est biologiquement nécessaire au cerveau créatif",
+   "texte": "Le réseau du mode par défaut (DMN) s’active dans l’ennui — c’est lui qui génère les idées, fait des connexions inattendues, et simule l’avenir. Supprimer l’ennui avec le téléphone coupe cette fonction.",
+   "tag": "Neurosciences",
+   "age": "13+",
+   "couleur": "#3498DB"
+  },
+  {
+   "id": "AD-004",
+   "cat": "ados",
+   "emoji": "🗳️",
+   "titre": "La démocratie athénienne excluait 85 % de la population",
+   "texte": "Dans l’Athènes de Périclès, seuls les hommes libres nés de parents athéniens votaient. Les femmes, esclaves et étrangers — 85 % des habitants — en étaient exclus. L’idéal et la pratique ont toujours été différents.",
+   "tag": "Histoire",
+   "age": "14+",
+   "couleur": "#E67E22"
+  },
+  {
+   "id": "AD-005",
+   "cat": "ados",
+   "emoji": "🌐",
+   "titre": "La mondialisation a sorti 1 milliard de personnes de la pauvreté en 30 ans",
+   "texte": "Entre 1990 et 2020, la proportion d’humains vivant sous le seuil d’extrême pauvreté est passée de 36 % à 10 %. C’est la réduction de pauvreté la plus rapide de l’histoire humaine.",
+   "tag": "Société",
+   "age": "14+",
+   "couleur": "#27AE60"
+  },
+  {
+   "id": "AD-006",
+   "cat": "ados",
+   "emoji": "🧬",
+   "titre": "99,9 % de ton ADN est identique à celui de n’importe quel humain",
+   "texte": "Les 0,1 % restants font toutes les différences visibles entre individus. Et tu partages 98,7 % de ton ADN avec un chimpanzé, 85 % avec une souris, 60 % avec une banane.",
+   "tag": "Génétique",
+   "age": "13+",
+   "couleur": "#E91E63"
+  },
+  {
+   "id": "AD-007",
+   "cat": "ados",
+   "emoji": "📊",
+   "titre": "84 % des statistiques citées sont inventées",
+   "texte": "(Celle-ci incluse.) L’outil de pensée critique : demande la source primaire. Une étude menée sur qui, quand, où, par qui financée ? Les chiffres sans source sont de la rhétorique habillée en fait.",
+   "tag": "Esprit critique",
+   "age": "13+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "AD-008",
+   "cat": "ados",
+   "emoji": "🏛️",
+   "titre": "Marc Aurèle écrivait à lui-même pour ne pas être un tyran",
+   "texte": "Les \"Pensées\" n’ont jamais été écrites pour être publiées. Cet empereur tout-puissant s’imposait une discipline intérieure quotidienne. Lire ses doutes montre que même les grands se battent avec eux-mêmes.",
+   "tag": "Philosophie",
+   "age": "14+",
+   "couleur": "#8E44AD"
+  },
+  {
+   "id": "AD-009",
+   "cat": "ados",
+   "emoji": "🔐",
+   "titre": "L’IA qui bat les humains aux échecs utilise moins d’énergie qu’une ampoule",
+   "texte": "AlphaZero consomme environ 20 watts. Le cerveau humain également. Mais un datacenter entraînant un grand modèle de langage consomme autant d’électricité qu’une ville moyenne pendant plusieurs jours.",
+   "tag": "Technologie",
+   "age": "14+",
+   "couleur": "#2C3E50"
+  },
+  {
+   "id": "AD-010",
+   "cat": "ados",
+   "emoji": "🌡️",
+   "titre": "1,5°C de plus, ce n’est pas \"léger\" — c’est une transformation planétaire",
+   "texte": "La différence entre l’ère glaciaire et aujourd’hui est de 5°C. Les systèmes climatiques ne réagissent pas linéairement : des seuils (\"tipping points\") déclenchent des changements irréversibles et auto-entretenus.",
+   "tag": "Climat",
+   "age": "13+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "MJ-001",
+   "cat": "motivationJeune",
+   "emoji": "🌱",
+   "titre": "Les erreurs font pousser ton cerveau",
+   "texte": "Quand tu te trompes et que tu comprends pourquoi, de nouvelles connexions se créent dans ton cerveau. Les erreurs ne sont pas des échecs — elles sont les briques de l’apprentissage.",
+   "tag": "Motivation",
+   "age": "6+",
+   "couleur": "#27AE60"
+  },
+  {
+   "id": "MJ-002",
+   "cat": "motivationJeune",
+   "emoji": "🎯",
+   "titre": "Pratiquer 10 minutes par jour bat 1 heure une fois par semaine",
+   "texte": "Le cerveau consolide les apprentissages chaque nuit. Revoir quelque chose plusieurs jours d’affilée le mémorise bien mieux qu’une longue séance unique. Un peu chaque jour, c’est le secret.",
+   "tag": "Motivation",
+   "age": "7+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "MJ-003",
+   "cat": "motivationJeune",
+   "emoji": "💪",
+   "titre": "Dire \"je ne sais pas encore\" change tout",
+   "texte": "Le mot \"encore\" transforme un échec en chemin. \"Je ne sais pas lire\" vs \"je ne sais pas encore lire\" — une seule syllabe qui dit : il y a un futur où je saurai.",
+   "tag": "Motivation",
+   "age": "5+",
+   "couleur": "#9B59B6"
+  },
+  {
+   "id": "MJ-004",
+   "cat": "motivationJeune",
+   "emoji": "🏆",
+   "titre": "S’encourager soi-même à voix haute ça marche vraiment",
+   "texte": "Les études sur les enfants montrent que se parler à soi-même pendant un défi (\"je peux le faire\", \"réfléchis calmement\") améliore les résultats. Comme avoir son propre coach dans sa tête.",
+   "tag": "Motivation",
+   "age": "6+",
+   "couleur": "#F39C12"
+  },
+  {
+   "id": "MJ-005",
+   "cat": "motivationJeune",
+   "emoji": "🧩",
+   "titre": "Trouver quelque chose difficile signifie que tu grandis",
+   "texte": "Le cerveau libère de la dopamine quand il surmonte quelque chose de difficile — pas de facile. Les jeux vides sont décevants sur le long terme. Le défi, lui, récompense vraiment.",
+   "tag": "Motivation",
+   "age": "7+",
+   "couleur": "#E91E63"
+  },
+  {
+   "id": "MJ-006",
+   "cat": "motivationJeune",
+   "emoji": "🐜",
+   "titre": "La fourmi ne lâche jamais son grain de blé",
+   "texte": "Chaque fourmi porte 50 fois son poids. Chaque jour. Sans se plaindre. La répétition tranquille construit les grandes choses. Ta fourmi intérieure est plus forte que tu ne crois.",
+   "tag": "Motivation",
+   "age": "5+",
+   "couleur": "#F39C12"
+  },
+  {
+   "id": "MJ-007",
+   "cat": "motivationJeune",
+   "emoji": "🌳",
+   "titre": "Les arbres qui résistent au vent ont les racines les plus profondes",
+   "texte": "Un arbre qu’on agite pousse des racines plus fortes pour tenir. Les difficultés dans ta vie font pareil : elles t’évitent de tomber quand arrive une vraie tempête.",
+   "tag": "Motivation",
+   "age": "6+",
+   "couleur": "#27AE60"
+  },
+  {
+   "id": "MJ-008",
+   "cat": "motivationJeune",
+   "emoji": "🎈",
+   "titre": "Avant d’être bon, tout le monde était débutant",
+   "texte": "Lionel Messi tombait tout le temps quand il était petit. Marie Curie a raté son premier examen. Mozart faisait des fautes. Chaque expert a été nul avant d’être fort.",
+   "tag": "Motivation",
+   "age": "5+",
+   "couleur": "#3498DB"
+  },
+  {
+   "id": "MJ-009",
+   "cat": "motivationJeune",
+   "emoji": "🌟",
+   "titre": "Tes efforts d’aujourd’hui sont les superpouvoirs de demain",
+   "texte": "Chaque fois que tu t’entraînes, tu envoies un message à ton cerveau futur. Dans 6 mois, ce qui est dur aujourd’hui sera facile. Et tu te souviendras d’avoir persisté.",
+   "tag": "Motivation",
+   "age": "6+",
+   "couleur": "#E91E63"
+  },
+  {
+   "id": "MJ-010",
+   "cat": "motivationJeune",
+   "emoji": "🎀",
+   "titre": "Faire une erreur élève le niveau si tu la comprends",
+   "texte": "Les scientifiques ont mesuré : les cerveaux qui font des erreurs et réfléchissent dessus grandissent plus vite que ceux qui ne se trompent jamais. L’erreur + la réflexion = la clé.",
+   "tag": "Motivation",
+   "age": "6+",
+   "couleur": "#9B59B6"
+  },
+  {
+   "id": "MJ-011",
+   "cat": "motivationJeune",
+   "emoji": "🐳",
+   "titre": "Même les baleines doivent remonter respirer",
+   "texte": "Même les plus grandes créatures ont besoin de pauses. Se reposer n’est pas abandonner — c’est recharger pour mieux plonger. Faire une pause quand c’est dur, c’est malin.",
+   "tag": "Motivation",
+   "age": "5+",
+   "couleur": "#118AB2"
+  },
+  {
+   "id": "MJ-012",
+   "cat": "motivationJeune",
+   "emoji": "💡",
+   "titre": "Une idée stupide peut devenir une invention géniale",
+   "texte": "Le velcro est né d’un chercheur qui regardait des graines collées à son manteau. Post-it, téflon, micro-ondes : tous des accidents. Tes idées bizarres valent la peine d’être essayées.",
+   "tag": "Motivation",
+   "age": "7+",
+   "couleur": "#F39C12"
+  },
+  {
+   "id": "EJ-001",
+   "cat": "emotionsJeune",
+   "emoji": "😤",
+   "titre": "La colère dure 90 secondes si tu la regardes sans l’alimenter",
+   "texte": "C’est comme une vague : elle monte, puis elle redescend. Si tu penses à ce qui t’énerve, tu refais une nouvelle vague. Mais si tu respires et attends, la première passe toute seule.",
+   "tag": "Émotions",
+   "age": "6+",
+   "couleur": "#E74C3C"
+  },
+  {
+   "id": "EJ-002",
+   "cat": "emotionsJeune",
+   "emoji": "😮‍💨",
+   "titre": "Souffler lentement calme le cœur en 30 secondes",
+   "texte": "Expire plus longtemps que tu n’inspires : 4 secondes pour rentrer l’air, 6 secondes pour le souffler. Ça active un \"frein\" naturel dans ton corps. Les pompiers et pilotes utilisent cette technique.",
+   "tag": "Émotions",
+   "age": "5+",
+   "couleur": "#3498DB"
+  },
+  {
+   "id": "EJ-003",
+   "cat": "emotionsJeune",
+   "emoji": "😢",
+   "titre": "Pleurer est un nettoyage à l’intérieur",
+   "texte": "Les larmes évacuent de vraies hormones de stress. Après avoir pleuré, le corps se calme mesurément. Pleurer n’est pas une faiblesse — c’est le corps qui fait son travail de réparation.",
+   "tag": "Émotions",
+   "age": "5+",
+   "couleur": "#5DADE2"
+  },
+  {
+   "id": "EJ-004",
+   "cat": "emotionsJeune",
+   "emoji": "😨",
+   "titre": "Dire le nom de ta peur la rend deux fois plus petite",
+   "texte": "Les scientifiques ont découvert que mettre des mots sur ce qu’on ressent calme la partie du cerveau qui fait peur. \"Je suis inquiet pour demain\" — juste cette phrase réduit l’anxiété mesurément.",
+   "tag": "Émotions",
+   "age": "6+",
+   "couleur": "#9B59B6"
+  },
+  {
+   "id": "EJ-005",
+   "cat": "emotionsJeune",
+   "emoji": "🤗",
+   "titre": "Un câlin de 20 secondes libère une hormone du bonheur",
+   "texte": "L’ocytocine est libérée après environ 20 secondes de contact physique chaleureux. Elle réduit le stress, renforce la confiance, et crée un sentiment de sécurité. Les câlins sont de la médecine.",
+   "tag": "Émotions",
+   "age": "5+",
+   "couleur": "#E91E63"
+  },
+  {
+   "id": "EJ-006",
+   "cat": "emotionsJeune",
+   "emoji": "😴",
+   "titre": "Dormir suffit souvent pour réparer une grosse tristesse",
+   "texte": "Le sommeil répare le cerveau émotionnel. Les émotions douloureuses de la veille sont \"retraitées\" pendant la nuit et perdent une partie de leur intensité. D’où le proverbe : la nuit porte conseil.",
+   "tag": "Émotions",
+   "age": "5+",
+   "couleur": "#8E44AD"
+  },
+  {
+   "id": "EJ-007",
+   "cat": "emotionsJeune",
+   "emoji": "🐞",
+   "titre": "Les émotions sont comme la météo — elles passent",
+   "texte": "Les nuages noirs arrivent et repartent. La joie, la tristesse, la peur — aucune n’est permanente. Quand tu te sens mal, dis-toi : \"C’est du mauvais temps. Ça passera.\"",
+   "tag": "Émotions",
+   "age": "5+",
+   "couleur": "#3498DB"
+  },
+  {
+   "id": "EJ-008",
+   "cat": "emotionsJeune",
+   "emoji": "🦋",
+   "titre": "Dessiner ou colorier calme le cerveau anxieux",
+   "texte": "Les mouvements répétitifs (dessiner, colorier, tricoter) activent la partie du cerveau qui gère la sérénité. C’est pour ça que colorier feel-good. Ton cerveau est en mode \"sécurité\".",
+   "tag": "Émotions",
+   "age": "5+",
+   "couleur": "#E91E63"
+  },
+  {
+   "id": "EJ-009",
+   "cat": "emotionsJeune",
+   "emoji": "🐶",
+   "titre": "Regarder un animal calme le cœur",
+   "texte": "Des études montrent que caresser un animal réduit la tension artérielle et libère de l’ocytocine en quelques minutes. Même regarder des vidéos de chatons réduit le stress mesurément !",
+   "tag": "Émotions",
+   "age": "5+",
+   "couleur": "#F39C12"
+  },
+  {
+   "id": "EJ-010",
+   "cat": "emotionsJeune",
+   "emoji": "🌻",
+   "titre": "Dire merci rend plus heureux que d’avoir plus",
+   "texte": "Des études sur des enfants ont montré que noter 3 belles choses de la journée avant de dormir améliore l’humeur en 2 semaines. Ce n’est pas les événements qui changent — c’est l’attention.",
+   "tag": "Émotions",
+   "age": "6+",
+   "couleur": "#F39C12"
+  },
+  {
+   "id": "EJ-011",
+   "cat": "emotionsJeune",
+   "emoji": "🤝",
+   "titre": "Aider quelqu’un te rend heureux aussi",
+   "texte": "Les scientifiques appellent ça le helper’s high. Faire quelque chose de gentil pour un autre libère de la sérotonine dans ton cerveau — exactement comme de recevoir un cadeau.",
+   "tag": "Émotions",
+   "age": "5+",
+   "couleur": "#27AE60"
+  },
+  {
+   "id": "EJ-012",
+   "cat": "emotionsJeune",
+   "emoji": "🎶",
+   "titre": "Chanter ou fredonner calme le système nerveux",
+   "texte": "Quand tu fredonne ou chante, tu fais vibrer ton nerf vague — le \"chef d’orchestre\" de la sérénité. C’est pour ça qu’on se sent mieux après. Les bébés s’endorment aux berceuses pour la même raison.",
+   "tag": "Émotions",
+   "age": "4+",
+   "couleur": "#9B59B6"
+  }
+ ]
+}

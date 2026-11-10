@@ -1,293 +1,263 @@
 #!/usr/bin/env python3
 """
-PocketSage — Génération TTS Flash Savant (7 langues)
-======================================================
-Extrait les cartes Flash (MO/SA/EM/CF/CU/PS/MJ/EJ/PT/EN/AD) depuis index.html,
-traduit titre+texte via Google Translate, génère les MP3 Google TTS
-et uploade vers Cloudflare R2 dans audio/flash/{lang}/.
+PocketSage — Flash Savant : traductions + MP3 + upload R2 (automatique)
+======================================================================
+Source unique : data/flash/fr.json  (on n'édite QUE ce fichier)
 
-Usage :
-  python3 generate_flash_tts.py
-  GOOGLE_TTS_API_KEY=xxx python3 generate_flash_tts.py
-  python3 generate_flash_tts.py --langs FR,EN,DE   # subset de langues
+Pour chaque carte, une empreinte `h` est calculée sur le texte FR
+(titre, texte, action, rappel). Seules les cartes NOUVELLES ou MODIFIÉES
+sont retraduites et revocalisées :
 
-Langues disponibles : FR EN DE ES IT PT AR ZH
+  data/flash/fr.json            ← champ `h` ajouté/mis à jour
+  data/flash/{lang}.json        ← cartes traduites (en, de, es, it, pt, ar, zh, ru, uk)
+  data/flash/audio_manifest.json← {"CU-001_FR": "<h>", ...} MP3 déjà publiés
+  R2 audio/flash/{lang}/{ID}_{LANG}.mp3  (l'app ajoute ?v=<h> pour vider le cache)
+
+Lancé automatiquement par .github/workflows/flash-tts.yml à chaque push
+qui modifie data/flash/fr.json. Lancement manuel possible :
+
+  python3 generate_flash_tts.py                 # tout ce qui a changé
+  python3 generate_flash_tts.py --langs FR,EN   # sous-ensemble
+  python3 generate_flash_tts.py --dry-run       # affiche ce qui changerait, sans appel API
+  python3 generate_flash_tts.py --no-upload     # génère sans envoyer sur R2
+  python3 generate_flash_tts.py --no-audio      # traductions seulement
+
+Clés : variables d'environnement (ou fichier .env non commité)
+  GOOGLE_TTS_API_KEY   (TTS + Translation)   GOOGLE_TRANSLATE_KEY (optionnel)
+  R2_ACCESS_KEY, R2_SECRET_KEY, R2_ENDPOINT (optionnel)
 """
 
-import base64, json, os, re, sys, time
+import base64, hashlib, json, os, sys, time, tempfile
 from pathlib import Path
 
-try:
-    import requests
-except ImportError:
-    os.system("pip3 install requests -q")
-    import requests
+ROOT      = Path(__file__).parent
+FLASH_DIR = ROOT / "data" / "flash"
+SRC       = FLASH_DIR / "fr.json"
+AUDIO_MAN = FLASH_DIR / "audio_manifest.json"
+AUDIO_DIR = ROOT / "audio" / "flash"          # copie locale (ignorée par git)
 
-try:
-    import boto3
-    from botocore.config import Config
-except ImportError:
-    os.system("pip3 install boto3 -q")
-    import boto3
-    from botocore.config import Config
+# ─── .env optionnel ──────────────────────────────────────────────────────────
+_env = ROOT / ".env"
+if _env.exists():
+    for line in _env.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if line and not line.startswith("#") and "=" in line:
+            k, v = line.split("=", 1)
+            os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
 
-# ─── Chemins ─────────────────────────────────────────────────────────────────
-ROOT       = Path(__file__).parent
-INDEX_HTML = ROOT / "index.html"
-AUDIO_DIR  = ROOT / "audio" / "flash"
-DATA_DIR   = ROOT / "data" / "flash_translations"
-MANIFEST   = ROOT / "audio" / "manifest_flash.json"
-
-AUDIO_DIR.mkdir(parents=True, exist_ok=True)
-DATA_DIR.mkdir(parents=True, exist_ok=True)
-
-# ─── Clés API ────────────────────────────────────────────────────────────────
-GOOGLE_KEY    = os.environ.get("GOOGLE_TTS_API_KEY", "AIzaSyDv7OHs9VsWEsJ1loUT2IUfv2OxMs5Vpz0")
+GOOGLE_KEY    = os.environ.get("GOOGLE_TTS_API_KEY", "")
 TRANSLATE_KEY = os.environ.get("GOOGLE_TRANSLATE_KEY", GOOGLE_KEY)
+R2_BUCKET     = os.environ.get("R2_BUCKET", "pocketsage-audio")
+R2_ENDPOINT   = os.environ.get("R2_ENDPOINT", "https://8ea67fd06083effd6f76efdefb92092f.r2.cloudflarestorage.com")
+R2_ACCESS     = os.environ.get("R2_ACCESS_KEY", "")
+R2_SECRET     = os.environ.get("R2_SECRET_KEY", "")
 
-# ─── R2 ──────────────────────────────────────────────────────────────────────
-R2_BUCKET   = "pocketsage-audio"
-R2_ENDPOINT = "https://8ea67fd06083effd6f76efdefb92092f.r2.cloudflarestorage.com"
-R2_ACCESS   = os.environ.get("R2_ACCESS_KEY", "de8421ae8c94c53e50ffcea2febc93e8")
-R2_SECRET   = os.environ.get("R2_SECRET_KEY", "727932fe1e71c86c9e249479ce2207063867960858be8b3241ac515990a2ca28")
-
-# ─── Voix Google TTS ─────────────────────────────────────────────────────────
+# ─── Langues ─────────────────────────────────────────────────────────────────
 VOICE_CONFIG = {
-    "FR": {"languageCode": "fr-FR", "name": "fr-FR-Neural2-A"},
-    "EN": {"languageCode": "en-GB", "name": "en-GB-Neural2-B"},
-    "DE": {"languageCode": "de-DE", "name": "de-DE-Neural2-B"},
-    "ES": {"languageCode": "es-ES", "name": "es-ES-Neural2-B"},
-    "IT": {"languageCode": "it-IT", "name": "it-IT-Neural2-C"},
-    "PT": {"languageCode": "pt-BR", "name": "pt-BR-Neural2-B"},
-    "AR": {"languageCode": "ar-XA", "name": "ar-XA-Neural2-B"},
-    "ZH": {"languageCode": "cmn-CN", "name": "cmn-CN-Neural2-B"},
+    "FR": {"languageCode": "fr-FR",  "name": "fr-FR-Neural2-A"},
+    "EN": {"languageCode": "en-GB",  "name": "en-GB-Neural2-B"},
+    "DE": {"languageCode": "de-DE",  "name": "de-DE-Neural2-B"},
+    "ES": {"languageCode": "es-ES",  "name": "es-ES-Neural2-B"},
+    "IT": {"languageCode": "it-IT",  "name": "it-IT-Neural2-C"},
+    "PT": {"languageCode": "pt-BR",  "name": "pt-BR-Neural2-B"},
+    "AR": {"languageCode": "ar-XA",  "name": "ar-XA-Wavenet-B"},
+    "ZH": {"languageCode": "cmn-CN", "name": "cmn-CN-Wavenet-B"},
+    "RU": {"languageCode": "ru-RU",  "name": "ru-RU-Wavenet-B"},
+    "UK": {"languageCode": "uk-UA",  "name": "uk-UA-Wavenet-A"},
 }
+TRANSLATE_CODES = {"EN": "en", "DE": "de", "ES": "es", "IT": "it", "PT": "pt",
+                   "AR": "ar", "ZH": "zh-CN", "RU": "ru", "UK": "uk"}
+LANGS_DEFAULT = list(VOICE_CONFIG)
 
-# Codes Google Translate (source: FR)
-TRANSLATE_CODES = {
-    "EN": "en", "DE": "de", "ES": "es",
-    "IT": "it", "PT": "pt", "AR": "ar", "ZH": "zh-CN",
-}
+# Champs copiés tels quels / champs traduits
+COPY_FIELDS = ["id", "cat", "emoji", "age", "couleur", "source"]
+TEXT_FIELDS = ["titre", "texte", "tag", "action"]
 
-LANGS_DEFAULT = ["FR", "EN", "DE", "ES", "IT", "PT", "AR", "ZH"]
 
-# ─── Extraction Flash depuis index.html ──────────────────────────────────────
-def extract_flash(html: str) -> list:
-    pat = r"\{id:'((?:MO|SA|EM|CF|CU|PS|MJ|EJ|PT|EN|AD)-\d+)',emoji:'[^']*',titre:'((?:[^'\\]|\\.)*)',texte:'((?:[^'\\]|\\.)*)',tag:"
-    items = []
-    for fid, titre, texte in re.findall(pat, html):
-        def unescape(s):
-            try:
-                return s.encode('raw_unicode_escape').decode('unicode_escape')
-            except Exception:
-                return s
-        items.append({"id": fid, "titre": unescape(titre), "texte": unescape(texte)})
-    return items
+# ─── Utilitaires ─────────────────────────────────────────────────────────────
+def load_json(p: Path, default):
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else default
 
-# ─── Traduction Google Translate ─────────────────────────────────────────────
-def translate_batch(texts: list, target_lang: str) -> list:
-    """Traduit une liste de textes vers target_lang. Retourne la liste traduite."""
+def save_json(p: Path, data) -> None:
+    p.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+def card_hash(c: dict) -> str:
+    """Empreinte du contenu traduisible/vocalisé de la carte FR."""
+    payload = {k: c.get(k, "") for k in TEXT_FIELDS}
+    payload["rappel"] = c.get("rappel") or {}
+    raw = json.dumps(payload, ensure_ascii=False, sort_keys=True)
+    return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:8]
+
+def speech_text(c: dict) -> str:
+    parts = [c.get("titre", ""), c.get("texte", ""), c.get("action", "")]
+    return " ".join(p.strip().rstrip(".") + "." for p in parts if p and p.strip())
+
+def validate(cards: list) -> list:
+    errs, seen = [], set()
+    for i, c in enumerate(cards):
+        cid = c.get("id")
+        if not cid:
+            errs.append(f"carte n°{i} : pas d'id"); continue
+        if cid in seen: errs.append(f"{cid} : id en double")
+        seen.add(cid)
+        for k in ("cat", "titre", "texte"):
+            if not c.get(k): errs.append(f"{cid} : champ '{k}' manquant")
+        r = c.get("rappel")
+        if r is not None:
+            ch = r.get("choix", [])
+            if not r.get("q") or len(ch) < 2 or not (0 <= r.get("ok", -1) < len(ch)):
+                errs.append(f"{cid} : rappel invalide (q, choix ≥2, ok)")
+    return errs
+
+
+# ─── Google Translate ────────────────────────────────────────────────────────
+def translate_batch(texts: list, lang: str) -> list:
+    import requests
     url = f"https://translation.googleapis.com/language/translate/v2?key={TRANSLATE_KEY}"
-    # Batch par 128 textes max (limite API)
-    results = []
-    for i in range(0, len(texts), 128):
-        batch = texts[i:i+128]
-        payload = {"q": batch, "source": "fr", "target": TRANSLATE_CODES[target_lang], "format": "text"}
-        r = requests.post(url, json=payload, timeout=30)
-        if r.status_code == 200:
-            translations = r.json()["data"]["translations"]
-            results.extend(t["translatedText"] for t in translations)
-        else:
-            print(f"  ❌ Translate error {r.status_code}: {r.text[:100]}")
-            results.extend(batch)   # fallback: texte FR
+    out = []
+    for i in range(0, len(texts), 100):
+        batch = texts[i:i + 100]
+        r = requests.post(url, json={"q": batch, "source": "fr",
+                                     "target": TRANSLATE_CODES[lang], "format": "text"}, timeout=60)
+        if r.status_code != 200:
+            raise RuntimeError(f"Translate {lang} HTTP {r.status_code}: {r.text[:200]}")
+        out.extend(t["translatedText"] for t in r.json()["data"]["translations"])
         time.sleep(0.1)
-    return results
+    return out
 
-def load_translations(lang: str) -> dict:
-    p = DATA_DIR / f"{lang}.json"
-    if p.exists():
-        return json.loads(p.read_text(encoding="utf-8"))
-    return {}
+def translate_cards(cards: list, lang: str, translator=translate_batch) -> list:
+    """Traduit les champs texte + rappel d'une liste de cartes FR (un seul lot d'appels)."""
+    slots, texts = [], []
+    for ci, c in enumerate(cards):
+        for k in TEXT_FIELDS:
+            if c.get(k):
+                slots.append((ci, k, None)); texts.append(c[k])
+        r = c.get("rappel")
+        if r:
+            slots.append((ci, "rappel.q", None)); texts.append(r["q"])
+            for j, ch in enumerate(r["choix"]):
+                slots.append((ci, "rappel.choix", j)); texts.append(ch)
+    tr = translator(texts, lang) if texts else []
+    res = []
+    for c in cards:
+        t = {k: c[k] for k in COPY_FIELDS if k in c}
+        t["h"] = c["h"]
+        if c.get("rappel"):
+            t["rappel"] = {"q": "", "choix": [""] * len(c["rappel"]["choix"]), "ok": c["rappel"]["ok"]}
+        res.append(t)
+    for (ci, k, j), val in zip(slots, tr):
+        if k == "rappel.q": res[ci]["rappel"]["q"] = val
+        elif k == "rappel.choix": res[ci]["rappel"]["choix"][j] = val
+        else: res[ci][k] = val
+    return res
 
-def save_translations(lang: str, data: dict) -> None:
-    p = DATA_DIR / f"{lang}.json"
-    p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
-def get_translations(items: list, lang: str) -> dict:
-    """Retourne {id: 'titre. texte'} traduit pour la langue donnée."""
-    if lang == "FR":
-        return {item["id"]: f"{item['titre']}. {item['texte']}" for item in items}
-
-    cache = load_translations(lang)
-    missing = [item for item in items if item["id"] not in cache]
-
-    if missing:
-        print(f"  Traduction {lang} : {len(missing)} nouvelles cartes…")
-        texts = [f"{item['titre']}. {item['texte']}" for item in missing]
-        translated = translate_batch(texts, lang)
-        for item, trad in zip(missing, translated):
-            cache[item["id"]] = trad
-        save_translations(lang, cache)
-        print(f"  ✅ {len(missing)} traductions sauvegardées → data/flash_translations/{lang}.json")
-    else:
-        print(f"  ✅ {lang} : {len(cache)} traductions en cache")
-
-    return cache
-
-# ─── Génération MP3 Google TTS ───────────────────────────────────────────────
+# ─── Google TTS ──────────────────────────────────────────────────────────────
 def gen_tts(text: str, lang: str, out_path: Path) -> bool:
-    if out_path.exists():
-        return True
+    import requests
     cfg = VOICE_CONFIG[lang]
-    payload = {
-        "input": {"text": text},
-        "voice": {"languageCode": cfg["languageCode"], "name": cfg["name"]},
-        "audioConfig": {"audioEncoding": "MP3", "speakingRate": 0.85, "pitch": -2.0}
-    }
-    url = f"https://texttospeech.googleapis.com/v1/text:synthesize?key={GOOGLE_KEY}"
-    r = requests.post(url, json=payload, timeout=30)
-    if r.status_code == 200:
-        audio = r.json().get("audioContent", "")
-        if audio:
-            out_path.write_bytes(base64.b64decode(audio))
-            return True
-    print(f"    ✗ TTS {lang} {r.status_code}: {r.text[:80]}")
+    payload = {"input": {"text": text},
+               "voice": {"languageCode": cfg["languageCode"], "name": cfg["name"]},
+               "audioConfig": {"audioEncoding": "MP3", "speakingRate": 0.85, "pitch": -2.0}}
+    r = requests.post(f"https://texttospeech.googleapis.com/v1/text:synthesize?key={GOOGLE_KEY}",
+                      json=payload, timeout=60)
+    if r.status_code == 200 and r.json().get("audioContent"):
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_bytes(base64.b64decode(r.json()["audioContent"]))
+        return True
+    print(f"    ✗ TTS {lang} {r.status_code}: {r.text[:120]}")
     return False
 
-# ─── R2 Upload ───────────────────────────────────────────────────────────────
-def get_r2_client():
-    return boto3.client(
-        "s3",
-        endpoint_url=R2_ENDPOINT,
-        aws_access_key_id=R2_ACCESS,
-        aws_secret_access_key=R2_SECRET,
-        config=Config(region_name="auto", retries={"max_attempts": 3, "mode": "adaptive"})
-    )
+def r2_client():
+    import boto3
+    from botocore.config import Config
+    return boto3.client("s3", endpoint_url=R2_ENDPOINT, aws_access_key_id=R2_ACCESS,
+                        aws_secret_access_key=R2_SECRET,
+                        config=Config(region_name="auto", retries={"max_attempts": 3, "mode": "adaptive"}))
 
-def upload_to_r2(s3, local_path: Path, r2_key: str) -> bool:
-    try:
-        s3.upload_file(str(local_path), R2_BUCKET, r2_key,
-                       ExtraArgs={"ContentType": "audio/mpeg"})
-        return True
-    except Exception as e:
-        print(f"    ✗ R2 upload {r2_key}: {e}")
-        return False
 
 # ─── MAIN ────────────────────────────────────────────────────────────────────
 def main():
     import argparse
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--langs", default=",".join(LANGS_DEFAULT),
-                        help="Langues séparées par virgule (ex: FR,EN,DE)")
-    parser.add_argument("--no-upload", action="store_true", help="Générer sans uploader sur R2")
-    parser.add_argument("--dry-run", action="store_true", help="Simulation complète sans générer")
-    args = parser.parse_args()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--langs", default=",".join(LANGS_DEFAULT))
+    ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--no-upload", action="store_true")
+    ap.add_argument("--no-audio", action="store_true")
+    a = ap.parse_args()
+    langs = [l.strip().upper() for l in a.langs.split(",") if l.strip().upper() in VOICE_CONFIG]
 
-    langs = [l.strip().upper() for l in args.langs.split(",") if l.strip()]
+    src = load_json(SRC, None)
+    if not src or "cards" not in src:
+        sys.exit(f"❌ {SRC} introuvable ou sans clé 'cards'")
+    cards = src["cards"]
+    errs = validate(cards)
+    if errs:
+        print("❌ fr.json invalide :"); [print("   -", e) for e in errs]; sys.exit(1)
 
-    print("═" * 62)
-    print("  PocketSage — Flash Savant TTS (7 langues)")
-    print("═" * 62)
-    print(f"  Langues : {' '.join(langs)}")
+    # 1) Empreintes FR
+    changed_h = 0
+    for c in cards:
+        h = card_hash(c)
+        if c.get("h") != h:
+            c["h"] = h; changed_h += 1
+    print(f"Flash : {len(cards)} cartes, {changed_h} empreinte(s) mise(s) à jour")
+    if not a.dry_run and changed_h:
+        save_json(SRC, src)
+    by_id = {c["id"]: c for c in cards}
 
-    html = INDEX_HTML.read_text(encoding="utf-8")
-    items = extract_flash(html)
-    print(f"  Cartes Flash extraites : {len(items)}")
-    if not items:
-        print("  ❌ Aucune carte trouvée — vérifier le pattern d'extraction")
-        sys.exit(1)
+    need_keys = not a.dry_run
+    if need_keys and not GOOGLE_KEY:
+        sys.exit("❌ GOOGLE_TTS_API_KEY manquante (variable d'environnement ou .env)")
 
-    manifest = json.loads(MANIFEST.read_text(encoding="utf-8")) if MANIFEST.exists() else {}
-
-    s3 = None
-    if not args.no_upload and not args.dry_run:
-        try:
-            s3 = get_r2_client()
-            s3.list_objects_v2(Bucket=R2_BUCKET, MaxKeys=1)
-            print("  R2 : ✅ connecté")
-        except Exception as e:
-            print(f"  R2 : ⚠️  non connecté ({e}) — génération locale uniquement")
-            s3 = None
-
-    total_ok = total_err = total_skip = 0
-
+    # 2) Traductions
     for lang in langs:
-        if lang not in VOICE_CONFIG:
-            print(f"\n⚠️  Langue '{lang}' non configurée — ignorée")
-            continue
+        if lang == "FR": continue
+        p = FLASH_DIR / f"{lang.lower()}.json"
+        old = {c["id"]: c for c in load_json(p, {"cards": []}).get("cards", [])}
+        todo = [c for c in cards if old.get(c["id"], {}).get("h") != c["h"]]
+        removed = [i for i in old if i not in by_id]
+        print(f"  {lang} : {len(todo)} à traduire, {len(removed)} supprimée(s)")
+        if a.dry_run or (not todo and not removed): continue
+        new = {t["id"]: t for t in translate_cards(todo, lang)} if todo else {}
+        merged = [new.get(c["id"]) or old[c["id"]] for c in cards]
+        save_json(p, {"version": 1, "lang": lang, "cards": merged})
 
-        print(f"\n{'─'*62}")
-        print(f"  🌐 {lang}")
+    if a.no_audio:
+        print("Audio ignoré (--no-audio)"); return
 
-        # Traductions
-        if args.dry_run:
-            print(f"  [dry-run] traduction {lang} ignorée")
-            continue
+    # 3) MP3 + upload
+    man = load_json(AUDIO_MAN, {})
+    s3 = None
+    if not a.dry_run and not a.no_upload:
+        if not (R2_ACCESS and R2_SECRET):
+            sys.exit("❌ R2_ACCESS_KEY / R2_SECRET_KEY manquantes (ou utiliser --no-upload)")
+        s3 = r2_client()
+    tmp = Path(tempfile.mkdtemp())
+    total_ok = total_err = 0
+    for lang in langs:
+        lang_cards = cards if lang == "FR" else load_json(FLASH_DIR / f"{lang.lower()}.json", {"cards": []})["cards"]
+        todo = [c for c in lang_cards if c.get("h") and man.get(f"{c['id']}_{lang}") != c["h"]]
+        print(f"  MP3 {lang} : {len(todo)} à générer")
+        if a.dry_run: continue
+        for c in todo:
+            fid = f"{c['id']}_{lang}"
+            out = (AUDIO_DIR if a.no_upload else tmp) / lang.lower() / f"{fid}.mp3"
+            if not gen_tts(speech_text(c), lang, out):
+                total_err += 1; continue
+            if s3:
+                try:
+                    s3.upload_file(str(out), R2_BUCKET, f"audio/flash/{lang.lower()}/{fid}.mp3",
+                                   ExtraArgs={"ContentType": "audio/mpeg", "CacheControl": "public, max-age=31536000"})
+                except Exception as e:
+                    print(f"    ✗ R2 {fid}: {e}"); total_err += 1; continue
+            man[fid] = c["h"]; total_ok += 1
+            if total_ok % 25 == 0: save_json(AUDIO_MAN, man)
+            time.sleep(0.1)
+        save_json(AUDIO_MAN, man)
+    print(f"Terminé : {total_ok} MP3 publiés, {total_err} erreur(s)")
+    if total_err: sys.exit(2)
 
-        translations = get_translations(items, lang)
-
-        lang_dir = AUDIO_DIR / lang.lower()
-        lang_dir.mkdir(parents=True, exist_ok=True)
-
-        ok = err = skip = 0
-        to_upload = []
-
-        for item in items:
-            fid  = item["id"]
-            text = translations.get(fid, f"{item['titre']}. {item['texte']}")
-            file_id = f"{fid}_{lang}"
-            out = lang_dir / f"{file_id}.mp3"
-            r2_key = f"audio/flash/{lang.lower()}/{file_id}.mp3"
-
-            if file_id in manifest:
-                skip += 1
-                continue
-
-            print(f"  [{ok+err+skip+1}/{len(items)}] {file_id:<20}", end=" ", flush=True)
-
-            if out.exists():
-                print("⏭ local")
-                manifest[file_id] = r2_key
-                to_upload.append((out, r2_key))
-                skip += 1
-                continue
-
-            success = gen_tts(text, lang, out)
-            if success:
-                manifest[file_id] = r2_key
-                to_upload.append((out, r2_key))
-                print("✅")
-                ok += 1
-            else:
-                print("❌")
-                err += 1
-            time.sleep(0.15)
-
-        # Upload R2
-        if s3 and to_upload:
-            print(f"\n  ☁️  Upload R2 : {len(to_upload)} fichiers…")
-            u_ok = u_err = 0
-            for local, key in to_upload:
-                if upload_to_r2(s3, local, key):
-                    u_ok += 1
-                else:
-                    u_err += 1
-            print(f"  Upload : ✅ {u_ok}  ❌ {u_err}")
-
-        # Sauvegarde manifest
-        MANIFEST.parent.mkdir(parents=True, exist_ok=True)
-        MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
-
-        total_ok  += ok
-        total_err += err
-        total_skip += skip
-        print(f"  Résultat {lang} : ✅ {ok} générés  ⏭ {skip} déjà faits  ❌ {err} erreurs")
-
-    print(f"\n{'═'*62}")
-    print(f"  ✅ {total_ok} générés  ⏭ {total_skip} déjà faits  ❌ {total_err} erreurs")
-    print(f"  Manifest : {MANIFEST}")
-    print(f"  Audio    : {AUDIO_DIR}")
-    print("═" * 62)
 
 if __name__ == "__main__":
     main()

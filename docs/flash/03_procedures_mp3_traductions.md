@@ -1,75 +1,101 @@
-# Flash : mettre à jour cartes, traductions et MP3
+# Flash : ajouter/modifier des cartes, traductions et MP3 automatiques
 
-Référence générale TTS/i18n de l'app : `PROCESS_TTS_TRADUCTIONS.md` (racine) et `elevenlabs/README.md`. Ce fichier ne couvre que le module Flash.
+Depuis le 10/11/2026, **tout est automatique** : on modifie un seul fichier, on pousse sur GitHub, et les traductions + MP3 se font seuls.
 
-## 1. Ajouter ou modifier des cartes
+Référence générale TTS/i18n du reste de l'app : `PROCESS_TTS_TRADUCTIONS.md` (racine) et `elevenlabs/README.md`.
 
-1. Éditer `FLASH_DATA` dans `index.html` (format dans `00_etat_des_lieux.md`).
-2. ID unique, préfixe de la catégorie, numéro suivant (ex. `CU-016`). Ne jamais réutiliser un ID supprimé.
-3. Pas d'apostrophe droite `'` dans `titre`/`texte` : utiliser `’` (sinon la chaîne JS casse et l'extraction échoue).
-4. Garder l'ordre des champs `id, emoji, titre, texte, tag` : `extract_flash()` dans `generate_flash_tts.py` les lit avec une regex dans cet ordre.
+## 1. Où est le contenu
 
-## 2. Générer traductions + MP3 (commande unique)
+| Fichier | Rôle | Qui l'écrit |
+|---|---|---|
+| `data/flash/fr.json` | **Source unique** des cartes (français) | Toi / Claude |
+| `data/flash/{en,de,es,it,pt,ar,zh,ru,uk}.json` | Cartes traduites | Automatique, ne pas éditer à la main |
+| `data/flash/audio_manifest.json` | MP3 déjà publiés + empreinte | Automatique |
+| R2 `audio/flash/{lang}/{ID}_{LANG}.mp3` | Audio des cartes | Automatique |
+
+L'app charge `data/flash/fr.json` + le fichier de la langue maternelle du profil (repli FR si une carte n'est pas encore traduite).
+
+## 2. Format d'une carte (`data/flash/fr.json` → `cards`)
+
+```json
+{"id":"CU-016","cat":"curiosites","emoji":"🐙","titre":"…","texte":"2-3 phrases","tag":"Biologie",
+ "age":"8+","couleur":"#118AB2",
+ "action":"Essaie aujourd’hui : …",
+ "rappel":{"q":"Question courte ?","choix":["bonne réponse","faux 1","faux 2"],"ok":0},
+ "source":{"nom":"NOAA Ocean Service","url":"https://…"},
+ "h":"(calculé automatiquement)"}
+```
+
+- `cat` : `petits`, `enfants`, `curiosites`, `ados`, `psycho`, `motivationJeune`, `motivation`, `confiance`, `emotionsJeune`, `emotions`, `sagesse` (détermine l'onglet).
+- `id` : préfixe de la catégorie + numéro suivant, jamais réutilisé (`PT`, `EN`, `CU`, `AD`, `PS`, `MJ`, `MO`, `CF`, `EJ`, `EM`, `SA`).
+- `age` : âge minimum (`"8+"`), filtré par le curseur d'âge.
+- `rappel` : obligatoire pour que la carte entre dans la révision espacée. `ok` = index de la bonne réponse (l'app mélange les choix).
+- `h` : ne pas remplir, le script le calcule.
+
+## 3. Ajouter ou modifier des cartes : la procédure
+
+1. Éditer `data/flash/fr.json` (ajout, correction, suppression).
+2. `git commit` + `git push` sur `main`.
+3. La GitHub Action **« Flash — traductions + MP3 automatiques »** (`.github/workflows/flash-tts.yml`) se lance :
+   - vérifie le fichier (id en double, champs manquants, rappel invalide → échec visible dans l'onglet Actions) ;
+   - calcule l'empreinte `h` de chaque carte ;
+   - **retraduit et revocalise uniquement les cartes nouvelles ou modifiées**, dans 9 langues + FR ;
+   - envoie les MP3 sur R2 ;
+   - recommite `data/flash/*.json` → Cloudflare Pages redéploie l'app.
+4. Suivi : GitHub → repo → onglet **Actions**. Relancer à la main : bouton « Run workflow ».
+
+Durée : quelques minutes pour quelques cartes. Coût Google négligeable (une carte ≈ 300 caractères × 10 langues).
+
+L'app ajoute `?v=<h>` à l'URL des MP3 : une carte corrigée n'est jamais servie avec l'ancien audio en cache.
+
+## 4. Mise en route (une seule fois)
+
+Dans GitHub → repo `dididsapps/pocketsage` → Settings → Secrets and variables → Actions → **New repository secret** :
+
+| Nom | Valeur |
+|---|---|
+| `GOOGLE_TTS_API_KEY` | clé Google Cloud (APIs Text-to-Speech + Translation activées) |
+| `R2_ACCESS_KEY` | jeton R2 (Access Key ID) avec écriture sur `pocketsage-audio` |
+| `R2_SECRET_KEY` | jeton R2 (Secret Access Key) |
+
+Tant que ces secrets manquent, l'Action s'arrête proprement avec un avertissement (rien n'est cassé).
+
+Puis lancer une première fois « Run workflow » : elle traduit et vocalise les cartes existantes (≈ 200 cartes × 10 langues ≈ 2 000 MP3, une quinzaine de minutes).
+
+## 5. Lancer à la main (optionnel)
 
 ```bash
 cd ~/pocketsage
-export GOOGLE_TTS_API_KEY=…   # voir §6
-export R2_ACCESS_KEY=… R2_SECRET_KEY=…
-python3 generate_flash_tts.py                    # 8 langues : FR EN DE ES IT PT AR ZH
+# clés dans un fichier .env (ignoré par git) :
+#   GOOGLE_TTS_API_KEY=…
+#   R2_ACCESS_KEY=…
+#   R2_SECRET_KEY=…
+python3 generate_flash_tts.py --dry-run          # voir ce qui changerait, sans appel API
+python3 generate_flash_tts.py                    # tout ce qui a changé, 10 langues
 python3 generate_flash_tts.py --langs FR,EN      # sous-ensemble
-python3 generate_flash_tts.py --no-upload        # générer sans envoyer sur R2
-python3 generate_flash_tts.py --dry-run          # vérifier l'extraction seulement
+python3 generate_flash_tts.py --no-audio         # traductions seulement
+python3 generate_flash_tts.py --no-upload        # MP3 en local dans audio/flash/ (ignoré par git)
 ```
 
-Ce que fait le script :
-- extrait les cartes de `index.html` ;
-- traduit `titre. texte` depuis le FR (Google Translate) → cache `data/flash_translations/{LANG}.json` ;
-- génère les MP3 (Google TTS, `speakingRate 0.85`, `pitch -2.0`) → `audio/flash/{lang}/{ID}_{LANG}.mp3` ;
-- envoie sur R2 (`pocketsage-audio`, clé `audio/flash/{lang}/{ID}_{LANG}.mp3`) ;
-- note ce qui est fait dans `audio/manifest_flash.json` : relancer ne régénère que les **nouvelles** cartes.
+Voix : FR `fr-FR-Neural2-A`, EN `en-GB-Neural2-B`, DE `de-DE-Neural2-B`, ES `es-ES-Neural2-B`, IT `it-IT-Neural2-C`, PT `pt-BR-Neural2-B`, AR `ar-XA-Wavenet-B`, ZH `cmn-CN-Wavenet-B`, RU `ru-RU-Wavenet-B`, UK `uk-UA-Wavenet-A`. Paramètres : `speakingRate 0.85`, `pitch -2.0`. Texte lu : titre + texte + action.
 
-Voix : FR `fr-FR-Neural2-A`, EN `en-GB-Neural2-B`, DE `de-DE-Neural2-B`, ES `es-ES-Neural2-B`, IT `it-IT-Neural2-C`, PT `pt-BR-Neural2-B`, AR `ar-XA-Neural2-B`, ZH `cmn-CN-Neural2-B`.
+## 6. Révision espacée (rappel de fonctionnement)
 
-Ordre de grandeur pour 151 cartes × 8 langues : ~1 200 MP3, quelques minutes, coût Google négligeable (~25 000 caractères par langue).
+Stockée par profil dans `APP.profiles[i].flashL` (`{id: {b: boîte, d: jour du rappel}}`), sur l'appareil :
+- carte vue (avec `rappel`) → boîte 1, question à J+2 ;
+- bonne réponse → boîte 2 (J+7) → boîte 3 (J+21) → boîte 4 = **ancrée** (compteur 🌱) ; +1 étoile par bonne réponse ;
+- mauvaise réponse → boîte 1, question le lendemain.
+Bouton orange « 🧠 N à réviser » en tête des onglets Flash quand des rappels sont dus.
 
-## 3. Piège : une carte MODIFIÉE n'est pas mise à jour
-
-Le cache et le manifest sont indexés par **ID**, pas par contenu. Si tu corriges le texte de `CU-003`, le script garde l'ancienne traduction et l'ancien MP3.
-
-Pour forcer la mise à jour d'une carte aujourd'hui :
-1. retirer `CU-003` de chaque `data/flash_translations/{LANG}.json` ;
-2. retirer les entrées `CU-003_{LANG}` de `audio/manifest_flash.json` ;
-3. supprimer `audio/flash/*/CU-003_*.mp3` ;
-4. relancer le script.
-
-Correctif prévu (pas encore fait) : stocker une empreinte du texte FR (`sha1(titre+texte)[:8]`) dans le cache et le manifest. Si l'empreinte change, retraduire et régénérer automatiquement.
-
-## 4. Automatisation complète (proposée, pas encore en place)
-
-But : tu modifies `FLASH_DATA`, tu pousses sur GitHub, et tout se met à jour sans rien lancer.
-
-- GitHub Action `.github/workflows/flash-tts.yml`, déclenchée sur `push` quand `index.html` change ;
-- elle lance `python3 generate_flash_tts.py` avec les clés lues dans **GitHub Secrets** (jamais dans le code) ;
-- le manifest et le cache des traductions sont recommités par l'action, les MP3 vont seulement sur R2 ;
-- avec l'empreinte du §3, seules les cartes nouvelles ou modifiées coûtent quelque chose.
-
-Prérequis de ton côté : ajouter `GOOGLE_TTS_API_KEY`, `R2_ACCESS_KEY` et `R2_SECRET_KEY` dans GitHub → repo → Settings → Secrets and variables → Actions.
-
-## 5. Brancher dans l'app (pas encore fait)
-
-Dans `renderFlashCard()` :
-- bouton « Écouter » : essayer `https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/audio/flash/{lang}/{ID}_{LANG}.mp3` via `_playMp3()`, sinon `ttsSpeak()` ;
-- texte : si la langue du profil n'est pas FR, charger `data/flash_translations/{LANG}.json` (lazy-load, comme les langues vivantes) et afficher la traduction. Le cache contient `"titre. texte"` en une chaîne : prévoir de stocker titre et texte séparément lors du correctif §3.
-
-## 6. Sécurité : à faire en premier
+## 7. Sécurité : à faire en premier
 
 Le repo `dididsapps/pocketsage` est **public** et contient des clés en clair (constaté le 10/11/2026) :
-- **clé Google API** (TTS + Translate) : `generate_flash_tts.py`, `gen_fiches_multilingue.py`, `generate_voices.py`, `PLAN_TTS_LANGUES_MATERNELLES.md` ;
-- **clés R2** (écriture sur le bucket) : `generate_flash_tts.py`, `gen_prono_mp3.py`, `elevenlabs/generate_prono_mp3.py`, `elevenlabs/r2_credentials.txt` ;
-- **clé ElevenLabs** : `index.html` (donc visible par tout visiteur de pocketsage.org, l'app l'utilise pour `elSpeak()` en direct), plus `generate_tts.py`, `generate_en_tts.py`, `generate_nuit.py`, `generate_voices.py`, `gen_prono_mp3.py`, `generate_new_cp_mp3.py`, `elevenlabs/README.md`, `index.html.bak2`.
+- **clé Google API** : `gen_fiches_multilingue.py`, `generate_voices.py`, `PLAN_TTS_LANGUES_MATERNELLES.md` (retirée de `generate_flash_tts.py`, qui lit désormais l'environnement) ;
+- **clés R2** : `gen_prono_mp3.py`, `elevenlabs/generate_prono_mp3.py`, `elevenlabs/r2_credentials.txt` ;
+- **clé ElevenLabs** : `index.html` (visible par tout visiteur de pocketsage.org, l'app l'utilise pour `elSpeak()` en direct), plus `generate_tts.py`, `generate_en_tts.py`, `generate_nuit.py`, `generate_voices.py`, `gen_prono_mp3.py`, `generate_new_cp_mp3.py`, `elevenlabs/README.md`, `index.html.bak2`.
 
-N'importe qui peut consommer tes crédits Google/ElevenLabs ou modifier/supprimer les fichiers du bucket R2. Actions :
-1. **Toi** : régénérer la clé Google (Google Cloud Console → Identifiants), la clé ElevenLabs (profil → API Keys) et créer un nouveau jeton R2 (Cloudflare → R2 → Manage API Tokens), puis révoquer les anciennes. Les supprimer du code ne suffit pas : elles restent dans l'historique git public.
-2. Restreindre la nouvelle clé Google aux API Text-to-Speech et Translation, et fixer un plafond de budget.
-3. Scripts : lire les clés uniquement depuis l'environnement ou un `.env` listé dans `.gitignore`, sans valeur par défaut.
-4. App : ne plus appeler ElevenLabs depuis le navigateur. Tout pré-générer sur R2 (déjà prévu dans la todo `elSpeak()`), ou passer par un petit Worker Cloudflare qui garde la clé côté serveur.
+Elles restent aussi dans l'**historique git** public. Actions :
+1. **Toi** : régénérer la clé Google (Google Cloud Console → Identifiants), la clé ElevenLabs (profil → API Keys) et créer un nouveau jeton R2 (Cloudflare → R2 → Manage API Tokens), puis révoquer les anciennes. Mettre les nouvelles **uniquement** dans les secrets GitHub (§4) et ton `.env` local.
+2. Restreindre la clé Google aux API Text-to-Speech et Translation, et fixer un plafond de budget.
+3. Retirer les clés des autres scripts (même méthode que `generate_flash_tts.py`).
+4. App : ne plus appeler ElevenLabs depuis le navigateur (tout pré-générer sur R2, ou un petit Worker Cloudflare qui garde la clé côté serveur).

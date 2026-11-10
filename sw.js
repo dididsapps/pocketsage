@@ -1,5 +1,5 @@
 // PocketSage Academy — Service Worker v2
-const CACHE = 'pocketsage-v3';
+const CACHE = 'pocketsage-v4';
 const ASSETS = [
   '/',
   '/index.html',
@@ -25,8 +25,16 @@ self.addEventListener('activate', e => {
 self.addEventListener('fetch', e => {
   // Audio files: network first, cache fallback
   if (e.request.url.includes('/audio/') || e.request.url.includes('/data/')) {
+    // Network first ; les fichiers data/ (ex. data/flash/*.json) sont gardés en cache
+    // pour fonctionner hors-ligne après la première ouverture.
     e.respondWith(
-      fetch(e.request).catch(() => caches.match(e.request))
+      fetch(e.request).then(res => {
+        if (res && res.status === 200 && e.request.url.includes('/data/') && e.request.method === 'GET') {
+          const clone = res.clone();
+          caches.open(CACHE).then(c => c.put(e.request, clone));
+        }
+        return res;
+      }).catch(() => caches.match(e.request))
     );
     return;
   }

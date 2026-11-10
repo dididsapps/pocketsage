@@ -15,7 +15,18 @@ from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_JUSTIFY
 
 W, H = A4
 HOME = os.path.expanduser("~")
-OUT = os.path.join(HOME, "mnt", "pocketsage", "guide_parents.pdf")
+OUT = os.environ.get("GUIDE_OUT", os.path.join(HOME, "mnt", "pocketsage", "guide_parents.pdf"))
+
+import re as _re
+_EMOJI = _re.compile("[\U0001F000-\U0001FAFF\u2600-\u27BF\u2B00-\u2BFF\uFE0F\u200D]")
+def _clean(t):
+    """Helvetica n'affiche pas les émojis (carrés noirs) : on les retire."""
+    return _re.sub(r"\s{2,}", " ", _EMOJI.sub("", str(t))).strip()
+
+class CleanCanvas(canvas.Canvas):
+    def drawString(self, x, y, text, *a, **k):        return super().drawString(x, y, _clean(text), *a, **k)
+    def drawCentredString(self, x, y, text, *a, **k): return super().drawCentredString(x, y, _clean(text), *a, **k)
+    def drawRightString(self, x, y, text, *a, **k):   return super().drawRightString(x, y, _clean(text), *a, **k)
 
 # ── Couleurs ─────────────────────────────────────────────────────────────────
 PRIMARY   = HexColor("#6C63FF")
@@ -76,7 +87,7 @@ def draw_cover(c):
     c.setFillColor(DARK)
     y = H*0.4
     c.setFont("Helvetica-Bold", 14)
-    c.drawCentredString(W/2, y, "pocketsage.app")
+    c.drawCentredString(W/2, y, "pocketsage.org")
 
     # Sections de la table des matières
     c.setFillColor(DARK)
@@ -85,7 +96,8 @@ def draw_cover(c):
         ("2.", "Paramétrer le profil de votre enfant", "p.3"),
         ("3.", "Les langues maternelles et le multilingue", "p.4"),
         ("4.", "Ateliers sans écran", "p.5"),
-        ("5.", "Questions fréquentes", "p.6"),
+        ("5.", "Flash Savant : le scroll qui rend plus malin", "p.6"),
+        ("6.", "Questions fréquentes", "p.7"),
     ]
     y = H*0.33
     for num, title, page in sections:
@@ -154,7 +166,7 @@ def draw_info_box(c, y, title, lines, col=PRIMARY, bg=None):
     return y - total_h - 0.4*cm
 
 # ════════════════════════════════════════════════════════════════════════════
-c = canvas.Canvas(OUT, pagesize=A4)
+c = CleanCanvas(OUT, pagesize=A4)
 
 # ── PAGE 1 : COUVERTURE ───────────────────────────────────────────────────────
 draw_cover(c)
@@ -356,7 +368,7 @@ for line in intro_lines:
     c.setFont("Helvetica", 11)
     c.drawString(1.5*cm, y, line)
     y -= 0.45*cm
-y -= 0.3*cm
+y -= 0.8*cm
 
 y = draw_section_header(c, y, "Les 5 catégories d'ateliers", SECONDARY, "🗂️")
 cats = [
@@ -377,7 +389,7 @@ for cat, desc in cats:
     c.drawRightString(W-1.8*cm, y-0.42*cm, desc)
     y -= 0.75*cm
 
-y -= 0.3*cm
+y -= 0.8*cm
 
 # ── SECTION FICHES IMPRIMABLES (mention principale) ──────────────────────────
 c.setFillColor(PURPLE)
@@ -396,7 +408,7 @@ for line in fiches_lines:
     c.setFont("Helvetica", 11)
     c.drawString(1.5*cm, y, line)
     y -= 0.45*cm
-y -= 0.3*cm
+y -= 0.8*cm
 
 y = draw_section_header(c, y, "Ce que contiennent les fiches", PURPLE, "📋")
 fiches_cats = [
@@ -449,13 +461,82 @@ for s in steps_fiches:
 
 c.showPage()
 
-# ── PAGE 6 : FAQ ──────────────────────────────────────────────────────────────
+# ── PAGE 6 : FLASH SAVANT ────────────────────────────────────────────────────
 draw_page_bg(c, 6)
+y = H - 1.5*cm
+c.setFillColor(PRIMARY)
+c.setFont("Helvetica-Bold", 22)
+c.drawString(1.5*cm, y, "5. Flash Savant : le scroll qui rend plus malin")
+y -= 0.5*cm
+c.setFillColor(GRAY)
+c.line(1.5*cm, y, W-1.5*cm, y)
+y -= 0.6*cm
+
+y = draw_section_header(c, y, "Remplacer le scroll par la curiosité", ACCENT2)
+for b in [
+    "Des cartes d'une minute : une découverte, une idée, un geste à essayer dans la journée",
+    "Contenu adapté à l'âge de chaque profil, de 4 ans à l'adulte",
+    "7 thèmes : Curiosités, Psycho, Motivation, Confiance, Émotions, Sagesse, Mix",
+    "Lu à voix haute dans la langue de l'enfant, chaque fait est accompagné de sa source",
+]:
+    y = draw_bullet(c, y, b, ACCENT2)
+
+y -= 0.7*cm
+y = draw_section_header(c, y, "La révision qui ancre les connaissances", PRIMARY)
+y = draw_text_block(c, y, [
+    "Chaque carte vue revient plus tard sous forme de petite question à 3 choix.",
+    "Se tester fait mieux retenir que relire, et espacer les rappels ancre durablement.",
+], size=10.5, lh=0.45*cm)
+# Schéma des boîtes
+labels = [("Carte vue", "boîte 1"), ("Rappel", "après 2 jours"), ("Rappel", "après 7 jours"), ("Rappel", "après 21 jours"), ("Ancrée", "compteur vert")]
+bw, gap = 2.9*cm, 0.55*cm
+x0 = (W - (5*bw + 4*gap)) / 2
+yb = y - 1.5*cm
+for i, (a, b) in enumerate(labels):
+    x = x0 + i*(bw+gap)
+    col = SECONDARY if i == 4 else (ACCENT2 if i == 0 else PRIMARY)
+    c.setFillColor(col)
+    c.roundRect(x, yb, bw, 1.3*cm, 8, fill=1, stroke=0)
+    c.setFillColor(WHITE)
+    c.setFont("Helvetica-Bold", 10)
+    c.drawCentredString(x + bw/2, yb + 0.75*cm, a)
+    c.setFont("Helvetica", 8.5)
+    c.drawCentredString(x + bw/2, yb + 0.35*cm, b)
+    if i < 4:
+        c.setStrokeColor(GRAY); c.setFillColor(GRAY); c.setLineWidth(1.5)
+        ax = x + bw + 0.08*cm
+        c.line(ax, yb + 0.65*cm, ax + gap - 0.16*cm, yb + 0.65*cm)
+        p = c.beginPath(); p.moveTo(ax + gap - 0.16*cm, yb + 0.65*cm)
+        p.lineTo(ax + gap - 0.36*cm, yb + 0.8*cm); p.lineTo(ax + gap - 0.36*cm, yb + 0.5*cm); p.close()
+        c.drawPath(p, fill=1, stroke=0)
+c.setFillColor(GRAY)
+c.setFont("Helvetica-Oblique", 9)
+c.drawCentredString(W/2, yb - 0.45*cm, "Bonne réponse : la carte passe à l'étape suivante.  Erreur : elle revient le lendemain, sans pénalité.")
+y = yb - 1.7*cm
+
+y = draw_section_header(c, y, "Comment l'utiliser en famille", SECONDARY)
+for b in [
+    "Proposez Flash à la place des réseaux : trajet, salle d'attente, avant les devoirs",
+    "5 à 10 cartes suffisent, puis on fait autre chose",
+    "Le bouton orange « à réviser » : 1 à 2 minutes par jour pour garder les acquis",
+    "Faites ensemble le geste « Essaie aujourd'hui » de la carte",
+    "Au dîner : « Quelle carte t'a le plus surpris aujourd'hui ? »",
+]:
+    y = draw_bullet(c, y, b, SECONDARY)
+
+y -= 0.4*cm
+y = draw_info_box(c, y, "Un écran pensé pour qu'on le pose",
+    ["Pas de pub, pas de réseau social, pas d'algorithme qui pousse à rester.",
+     "Le compteur montre ce que votre enfant a retenu, pas le temps passé."],
+    PRIMARY)
+c.showPage()
+# ── PAGE 7 : FAQ ──────────────────────────────────────────────────────────────
+draw_page_bg(c, 7)
 y = H - 1.5*cm
 
 c.setFillColor(PRIMARY)
 c.setFont("Helvetica-Bold", 22)
-c.drawString(1.5*cm, y, "5. Questions fréquentes")
+c.drawString(1.5*cm, y, "6. Questions fréquentes")
 y -= 0.5*cm
 c.setFillColor(GRAY)
 c.line(1.5*cm, y, W-1.5*cm, y)
@@ -511,7 +592,7 @@ c.setFont("Helvetica-Bold", 13)
 c.drawCentredString(W/2, y-0.5*cm, "📬 Une question ? Un problème ?")
 c.setFont("Helvetica", 11)
 c.drawCentredString(W/2, y-0.95*cm, "contact@pocketsage.app")
-c.drawCentredString(W/2, y-1.4*cm, "pocketsage.app — Application disponible sur iOS et Android")
+c.drawCentredString(W/2, y-1.4*cm, "pocketsage.org — Application disponible sur iOS et Android")
 
 c.showPage()
 c.save()
