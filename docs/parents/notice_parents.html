@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>PocketSage Academy — Notice détaillée pour les parents</title>
+<style>
+/* Notice parents — rendu en PDF A4 par gen_notice_parents.py (Chromium) */
+@page { size: A4; margin: 0; }
+:root{
+  --ink:#1B2333; --mid:#5A6478; --line:#E4E8F0; --bg:#F6F8FC;
+  --violet:#6C63FF; --orange:#FF8A3D; --green:#06A77D; --blue:#1D8FE1;
+  --pink:#E5487B; --teal:#12A4B6; --gold:#D4A017; --night:#2A2F6B; --red:#E5484D;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#fff;color:var(--ink);font-family:"Liberation Sans","DejaVu Sans",Arial,sans-serif;font-size:10.5pt;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;height:297mm;padding:14mm 14mm 12mm;position:relative;overflow:hidden;page-break-after:always;display:flex;flex-direction:column;gap:7mm}
+.page:last-child{page-break-after:auto}
+.foot{position:absolute;bottom:7mm;left:14mm;right:14mm;display:flex;justify-content:space-between;font-size:8pt;color:#9AA3B5;border-top:1px solid var(--line);padding-top:2mm}
+h1,h2,h3{line-height:1.15;letter-spacing:-.01em}
+.emo{font-family:"Noto Color Emoji";font-weight:normal}
+
+/* Couverture */
+.cover{background:linear-gradient(150deg,#6C63FF 0%,#8F5BFF 45%,#FF8A3D 100%);color:#fff;padding:22mm 18mm}
+.cover .brand{font-size:11pt;font-weight:700;letter-spacing:.18em;text-transform:uppercase;opacity:.9}
+.cover h1{font-size:34pt;font-weight:800;margin-top:24mm}
+.cover .lead{font-size:14pt;max-width:150mm;opacity:.95;margin-top:5mm}
+.cover .big{font-size:64pt;margin-top:12mm}
+.cover .pills{display:flex;flex-wrap:wrap;gap:3mm;margin-top:14mm}
+.cover .pill{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);border-radius:20px;padding:2mm 4.5mm;font-size:10pt;font-weight:700}
+.cover .bottom{position:absolute;left:18mm;right:18mm;bottom:16mm;display:flex;justify-content:space-between;align-items:flex-end;font-size:10pt}
+.cover .bottom b{font-size:12pt}
+
+/* En-tête de page */
+.ph{display:flex;align-items:center;gap:4mm;padding-bottom:3mm;border-bottom:2px solid var(--line)}
+.ph .num{width:11mm;height:11mm;border-radius:50%;background:var(--c,var(--violet));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12pt;flex-shrink:0}
+.ph h2{font-size:18pt;font-weight:800}
+.ph p{font-size:9.5pt;color:var(--mid);margin-top:1mm}
+
+/* Sommaire */
+.toc{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
+.toc .it{display:flex;gap:3mm;align-items:center;background:var(--bg);border-radius:4mm;padding:3mm 4mm}
+.toc .it .ic{font-size:16pt;width:9mm;text-align:center}
+.toc .it b{display:block;font-size:10.5pt}
+.toc .it span{font-size:8.5pt;color:var(--mid)}
+
+/* Cartes module */
+.mod{border:1.5px solid var(--line);border-radius:5mm;overflow:hidden;display:flex;flex-direction:column}
+.mod .hd{background:var(--c);color:#fff;padding:3.2mm 5mm;display:flex;align-items:center;gap:3.5mm}
+.mod .hd .ic{font-size:20pt}
+.mod .hd h3{font-size:14pt;font-weight:800}
+.mod .hd .age{margin-left:auto;background:rgba(255,255,255,.22);border-radius:10px;padding:1mm 3mm;font-size:8.5pt;font-weight:700;white-space:nowrap}
+.mod .bd{padding:4.5mm 5.5mm 5mm;display:grid;grid-template-columns:1fr 1fr;gap:3.5mm 7mm}
+.mod .bd .full{grid-column:1/-1}
+.lbl{font-size:7.8pt;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--c);margin-bottom:.8mm}
+.mod p, .mod li{font-size:10.3pt;line-height:1.5}
+.mod ul{padding-left:4.5mm}
+.tip{grid-column:1/-1;background:color-mix(in srgb,var(--c) 9%,#fff);border-left:4px solid var(--c);border-radius:2mm;padding:3mm 4mm;font-size:10pt}
+.tip b{color:var(--c)}
+
+/* Divers */
+.row{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.box{background:var(--bg);border-radius:4mm;padding:4mm 5mm}
+.box h3{font-size:12pt;margin-bottom:2mm}
+.chips{display:flex;flex-wrap:wrap;gap:2mm;margin-top:1.5mm}
+.chip{background:#fff;border:1px solid var(--line);border-radius:10px;padding:.8mm 2.6mm;font-size:8.6pt;font-weight:700}
+table{width:100%;border-collapse:collapse;font-size:10pt}
+th,td{border-bottom:1px solid var(--line);padding:1.8mm 2.5mm;text-align:left;vertical-align:top}
+th{font-size:8pt;text-transform:uppercase;letter-spacing:.06em;color:var(--mid)}
+.steps{display:flex;gap:2mm;align-items:stretch;margin-top:2mm}
+.steps div{flex:1;background:#fff;border:1.5px solid var(--c);border-radius:3mm;text-align:center;padding:2mm 1mm;font-size:8.6pt;font-weight:700}
+.steps div small{display:block;font-weight:400;color:var(--mid)}
+.faq b{display:block;font-size:10pt;margin-top:2.5mm}
+.faq p{font-size:9.4pt;color:#333}
+.contact{background:linear-gradient(135deg,#6C63FF,#FF8A3D);color:#fff;border-radius:5mm;padding:5mm 6mm;display:flex;justify-content:space-between;align-items:center}
+.contact b{font-size:13pt}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ PAGE 1 : COUVERTURE ═══════════ -->
+<section class="page cover">
+  <div class="brand">PocketSage Academy</div>
+  <div class="big emo">🎓</div>
+  <h1>Notice détaillée<br>pour les parents</h1>
+  <p class="lead">Tous les modules de l'application, comment ils fonctionnent, pour quel âge, et comment en tirer le meilleur en famille.</p>
+  <div class="pills">
+    <span class="pill">4 ans → adulte</span><span class="pill">13 modules</span><span class="pill">10 langues</span>
+    <span class="pill">Sans pub</span><span class="pill">Hors-ligne</span><span class="pill">Données sur le téléphone</span>
+  </div>
+  <div class="bottom">
+    <div><b>pocketsage.org</b><br>contact@pocketsage.org</div>
+    <div style="text-align:right">Version bêta<br>Novembre 2026</div>
+  </div>
+</section>
+
+<!-- ═══════════ PAGE 2 : SOMMAIRE + PREMIERS PAS ═══════════ -->
+<section class="page">
+  <div class="ph" style="--c:var(--violet)"><div class="num">1</div><div><h2>Premiers pas</h2><p>Créer les profils et régler l'application en 2 minutes</p></div></div>
+  <div class="row">
+    <div class="box">
+      <h3><span class="emo">👤</span> Les profils</h3>
+      <p>Jusqu'à <b>4 profils</b> par téléphone (enfants et adultes). Pour chacun : prénom, avatar, <b>âge</b> (curseur de 4 à 18 ans et +), <b>langue maternelle</b> et langues à apprendre. Tout le contenu s'adapte ensuite à l'âge choisi.</p>
+    </div>
+    <div class="box">
+      <h3><span class="emo">🌍</span> Langue maternelle</h3>
+      <p>L'interface, les cartes Flash et les fiches suivent la langue de l'enfant : français, anglais, allemand, espagnol, italien, portugais, arabe, chinois, russe, ukrainien, et d'autres via le bouton « Autre ».</p>
+    </div>
+    <div class="box">
+      <h3><span class="emo">🔇</span> Réglages utiles</h3>
+      <p><b>Mode silencieux</b> (sans son), <b>mode nuit</b> (lumière douce le soir) et <b>mode voiture</b> (lecture audio automatique, sport transformé en exercices assis).</p>
+    </div>
+    <div class="box">
+      <h3><span class="emo">🔒</span> Vie privée</h3>
+      <p>Pas de compte, pas de publicité, pas de réseau social. Les profils et les progrès restent <b>sur le téléphone</b>. L'essentiel fonctionne <b>hors-ligne</b> (sauf vidéos et reconnaissance vocale).</p>
+    </div>
+  </div>
+  <h3 style="font-size:12pt;margin-top:1mm">Sommaire</h3>
+  <div class="toc">
+    <div class="it"><span class="ic emo">🗺️</span><div><b>2 · Mode Aventure</b><span>la session idéale, tout enchaîné</span></div></div>
+    <div class="it"><span class="ic emo">⚡</span><div><b>3 · Flash Savant</b><span>l'alternative au scroll</span></div></div>
+    <div class="it"><span class="ic emo">✖️</span><div><b>4 · Maths & tables</b><span>5 techniques visuelles</span></div></div>
+    <div class="it"><span class="ic emo">🧩</span><div><b>5 · Logique</b><span>énigmes, intrus, suites</span></div></div>
+    <div class="it"><span class="ic emo">📚</span><div><b>6 · Savoirs</b><span>sciences, histoire, géographie</span></div></div>
+    <div class="it"><span class="ic emo">汉字</span><div><b>7 · Langues</b><span>9 langues + prononciation</span></div></div>
+    <div class="it"><span class="ic emo">🌸</span><div><b>8 · Politesse</b><span>savoir-vivre et dictons</span></div></div>
+    <div class="it"><span class="ic emo">🏃</span><div><b>9 · Sport & Coach</b><span>bouger entre deux questions</span></div></div>
+    <div class="it"><span class="ic emo">🎨</span><div><b>10 · Ateliers & fiches</b><span>35 fiches à imprimer</span></div></div>
+    <div class="it"><span class="ic emo">🎮</span><div><b>11 · Mini-jeux & vidéos</b><span>pour souffler en apprenant</span></div></div>
+    <div class="it"><span class="ic emo">🌙</span><div><b>12 · Histoires du soir</b><span>histoires et méditations</span></div></div>
+    <div class="it"><span class="ic emo">🏙️</span><div><b>13 · Mon Monde</b><span>récompenses et motivation</span></div></div>
+    <div class="it"><span class="ic emo">👨‍👩‍👧</span><div><b>14 · Espace Parents</b><span>suivi, conseils, questions</span></div></div>
+  </div>
+  <div class="foot"><span>PocketSage Academy — Notice parents</span><span>2</span></div>
+</section>
+
+<!-- ═══════════ PAGE 3 : AVENTURE + FLASH ═══════════ -->
+<section class="page">
+  <div class="mod" style="--c:#7A4DE8">
+    <div class="hd"><span class="ic emo">🗺️</span><h3>2 · Mode Aventure</h3><span class="age">Tous âges</span></div>
+    <div class="bd">
+      <div><div class="lbl">Ce que fait l'enfant</div><p>Il lance une aventure : l'appli enchaîne toute seule maths, logique, langues, sciences et politesse, au bon niveau.</p></div>
+      <div><div class="lbl">Les pauses intégrées</div><p>Un <b>défi physique</b> toutes les 5 questions, une <b>vidéo</b> toutes les 10, une <b>histoire ou méditation</b> toutes les 15, et un bilan avec score à la fin.</p></div>
+      <div class="full"><div class="lbl">Rythme adapté à l'âge (pause après…)</div>
+        <div class="chips"><span class="chip">4–5 ans : 3 questions</span><span class="chip">6–7 ans : 4</span><span class="chip">8–9 ans : 5</span><span class="chip">10–11 ans : 6</span><span class="chip">12–13 ans : 7</span><span class="chip">14 ans et + : 8</span></div></div>
+      <div class="tip"><b>Astuce parent :</b> c'est le meilleur point de départ. Une aventure de 20 étapes dure environ 15 minutes, l'équivalent d'un épisode de dessin animé, mais actif.</div>
+    </div>
+  </div>
+  <div class="mod" style="--c:#F28C00">
+    <div class="hd"><span class="ic emo">⚡</span><h3>3 · Flash Savant</h3><span class="age">4 ans → adulte</span></div>
+    <div class="bd">
+      <div><div class="lbl">Ce que c'est</div><p>Le « scroll qui rend plus malin » : des cartes d'une minute (curiosités, psychologie, motivation, confiance, émotions, sagesse) à faire défiler à la place des réseaux sociaux. Plus de 200 cartes, adaptées à l'âge, lues à voix haute dans la langue de l'enfant.</p></div>
+      <div><div class="lbl">Chaque carte contient</div><ul><li>une découverte expliquée simplement</li><li>un geste « <b>Essaie aujourd'hui</b> » à faire hors écran</li><li>sa <b>source</b> (faits vérifiés)</li></ul></div>
+      <div class="full"><div class="lbl">La révision qui ancre : chaque carte vue revient sous forme de question</div>
+        <div class="steps" style="--c:#F28C00"><div>Carte vue<small>boîte 1</small></div><div>Question<small>après 2 jours</small></div><div>Question<small>après 7 jours</small></div><div>Question<small>après 21 jours</small></div><div>🌱 Ancrée<small>compteur vert</small></div></div>
+        <p style="margin-top:1.5mm">Bonne réponse : la carte passe à l'étape suivante et rapporte une étoile. Erreur : elle revient le lendemain, sans pénalité. Un bouton orange « 🧠 à réviser » apparaît quand des rappels sont prêts.</p></div>
+      <div class="tip"><b>Astuce parent :</b> proposez Flash à la place des réseaux (trajet, salle d'attente). 5 à 10 cartes suffisent, puis 1 à 2 minutes de révision par jour. Au dîner : « Quelle carte t'a surpris aujourd'hui ? »</div>
+    </div>
+  </div>
+  <div class="foot"><span>PocketSage Academy — Notice parents</span><span>3</span></div>
+</section>
+
+<!-- ═══════════ PAGE 4 : MATHS + LOGIQUE ═══════════ -->
+<section class="page">
+  <div class="mod" style="--c:var(--red)">
+    <div class="hd"><span class="ic emo">✖️</span><h3>4 · Maths & tables de multiplication</h3><span class="age">GS → 3ᵉ</span></div>
+    <div class="bd">
+      <div class="full"><div class="lbl">Progression adaptative</div><p>Les questions suivent le niveau scolaire choisi et s'ajustent aux réussites : l'enfant n'est jamais bloqué, jamais en dessous de son niveau.</p></div>
+      <div class="full"><div class="lbl">5 techniques pour les tables (chaque enfant trouve la sienne)</div>
+        <table>
+          <tr><th>Technique</th><th>Âge</th><th>Le principe</th></tr>
+          <tr><td><b>Bâtonnets japonais</b></td><td>6–9 ans</td><td>On trace des traits et on compte les croisements : aucune mémorisation.</td></tr>
+          <tr><td><b>Table de Pythagore</b></td><td>7–10 ans</td><td>Grille 10×10 en couleurs pour voir les familles et la symétrie (3×7 = 7×3).</td></tr>
+          <tr><td><b>Histoires mnémotechniques</b></td><td>7–11 ans</td><td>Une petite histoire par résultat difficile (« 6 guitaristes, 7 notes : 42 »).</td></tr>
+          <tr><td><b>Méthode Trachtenberg</b></td><td>10–15 ans</td><td>Des règles « magiques » pour ×9, ×11, ×12… et calculer de tête très vite.</td></tr>
+          <tr><td><b>Flash Chrono</b></td><td>8–15 ans</td><td>10 secondes par question, multiplications et divisions, pour automatiser.</td></tr>
+        </table></div>
+      <div class="tip"><b>Astuce parent :</b> testez les 5 techniques une fois chacune, puis laissez l'enfant garder sa préférée. 5 minutes par jour valent mieux qu'une heure le dimanche.</div>
+    </div>
+  </div>
+  <div class="mod" style="--c:var(--violet)">
+    <div class="hd"><span class="ic emo">🧩</span><h3>5 · Logique</h3><span class="age">4 ans → adulte</span></div>
+    <div class="bd">
+      <div><div class="lbl">Au programme</div><p>Suites logiques, intrus, dénombrement, énigmes et labyrinthes : la base du raisonnement en maths, en sciences et en programmation.</p></div>
+      <div><div class="lbl">Pour les plus petits</div><p>Dès la maternelle : trouver l'intrus et compter des objets entraînent l'observation et préparent la lecture.</p></div>
+      <div class="tip"><b>Astuce parent :</b> demandez à l'enfant d'expliquer <i>pourquoi</i> c'est la bonne réponse. Verbaliser sa règle double l'effet de l'exercice.</div>
+    </div>
+  </div>
+  <div class="foot"><span>PocketSage Academy — Notice parents</span><span>4</span></div>
+</section>
+
+<!-- ═══════════ PAGE 5 : SAVOIRS + LANGUES + POLITESSE ═══════════ -->
+<section class="page">
+  <div class="mod" style="--c:var(--teal)">
+    <div class="hd"><span class="ic emo">📚</span><h3>6 · Savoirs : sciences, histoire, géographie</h3><span class="age">GS → lycée</span></div>
+    <div class="bd">
+      <div><div class="lbl">Sciences & nature</div><p>Des questions « pourquoi ça marche ? » (le ciel bleu, l'avion qui vole…) qui partent de la curiosité naturelle.</p></div>
+      <div><div class="lbl">Histoire & géographie</div><p>L'histoire racontée comme un fil d'événements, la géographie replacée dans son contexte, avec un indice pour chaque question.</p></div>
+      <div class="tip"><b>Astuce parent :</b> les indices sont des mini-leçons. Lisez-les ensemble quand l'enfant se trompe : c'est là qu'il apprend le plus.</div>
+    </div>
+  </div>
+  <div class="mod" style="--c:var(--orange)">
+    <div class="hd"><span class="ic emo">汉字</span><h3>7 · Langues vivantes & prononciation</h3><span class="age">GS → adulte</span></div>
+    <div class="bd">
+      <div><div class="lbl">9 langues</div><div class="chips"><span class="chip">Anglais</span><span class="chip">Espagnol</span><span class="chip">Allemand</span><span class="chip">Italien</span><span class="chip">Portugais</span><span class="chip">Arabe</span><span class="chip">Chinois</span><span class="chip">Russe</span><span class="chip">Ukrainien</span></div>
+        <p style="margin-top:1.5mm">Par immersion : l'enfant entend, voit et répond. Chaque question est lue par une voix naturelle (voix douce « Sensei » pour les petits, voix « Narrateur » ensuite).</p></div>
+      <div><div class="lbl">Atelier prononciation</div><p>En anglais, espagnol et allemand, l'enfant dit le mot à voix haute et reçoit un retour immédiat : <b>Parfait</b>, <b>Presque</b> ou <b>Réessaie</b> (3 essais). 4 niveaux : mots, phrases, expressions, dialogue.</p><p style="font-size:8.6pt;color:var(--mid);margin-top:1mm">Nécessite Internet et Chrome ou Safari.</p></div>
+      <div class="tip"><b>Astuce parent :</b> faites la prononciation à deux. Les enfants adorent corriger l'accent de leurs parents !</div>
+    </div>
+  </div>
+  <div class="mod" style="--c:var(--green)">
+    <div class="hd"><span class="ic emo">🌸</span><h3>8 · Politesse & savoir-vivre</h3><span class="age">4–12 ans</span></div>
+    <div class="bd">
+      <div><div class="lbl">Au programme</div><p>Des situations du quotidien (dire bonjour, s'excuser, partager, à table…), des dictons et des « secrets des grandes personnes polies ».</p></div>
+      <div><div class="lbl">Pourquoi</div><p>Développe l'empathie et les compétences sociales, celles qui comptent autant que les notes.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>PocketSage Academy — Notice parents</span><span>5</span></div>
+</section>
+
+<!-- ═══════════ PAGE 6 : SPORT + ATELIERS ═══════════ -->
+<section class="page">
+  <div class="mod" style="--c:#E5484D">
+    <div class="hd"><span class="ic emo">🏃</span><h3>9 · Sport, défis & Coach</h3><span class="age">4 ans → adulte</span></div>
+    <div class="bd">
+      <div><div class="lbl">Défis physiques</div><p>48 défis en 4 familles (cardio, gainage, souplesse, respiration), aussi intégrés au Mode Aventure pour relancer l'attention. Bats ton record !</p></div>
+      <div><div class="lbl">Mode Coach</div><p>Une vraie séance guidée à voix haute, dans un ordre sûr : échauffement, cardio, gainage, étirements, retour au calme.</p></div>
+      <div class="full"><table>
+        <tr><th>Âge</th><th>Durée</th><th>Séance</th></tr>
+        <tr><td>4–6 ans</td><td>20 min · 8 exercices</td><td>Douce et ludique</td></tr>
+        <tr><td>7–10 ans</td><td>30 min · 10 exercices</td><td>Équilibrée</td></tr>
+        <tr><td>11–14 ans</td><td>35 min · 12 exercices</td><td>Plus intensive</td></tr>
+        <tr><td>Adulte</td><td>40 min · 14 exercices</td><td>Complète, à faire en famille</td></tr>
+      </table></div>
+      <div class="tip"><b>Mode voiture :</b> en trajet, les exercices deviennent du yoga assis (respiration carrée, nuque, épaules, mains). On bouge et on se recentre sans quitter son siège.</div>
+    </div>
+  </div>
+  <div class="mod" style="--c:#8B5CF6">
+    <div class="hd"><span class="ic emo">🎨</span><h3>10 · Ateliers & fiches à imprimer</h3><span class="age">5 ans → adulte</span></div>
+    <div class="bd">
+      <div><div class="lbl">Activités sans écran</div><p>Origami, sciences (volcan, cristaux…), bricolage et peinture, avec matériel, étapes et astuce.</p></div>
+      <div><div class="lbl">35 fiches PDF à imprimer</div><p>Dessin à 2 mains, labyrinthes, test Stroop, 7 erreurs, Simon dit, origami (avec tutos pas à pas), rotation mentale, mémoire photo, mandalas, jeux en famille, yoga…</p></div>
+      <div class="tip"><b>Astuce parent :</b> imprimez 2 ou 3 fiches à l'avance pour les mercredis pluvieux. Les fiches sont en noir et blanc pour économiser l'encre, sauf celles qui ont besoin de couleur.</div>
+    </div>
+  </div>
+  <div class="foot"><span>PocketSage Academy — Notice parents</span><span>6</span></div>
+</section>
+
+<!-- ═══════════ PAGE 7 : JEUX/VIDÉOS + NUIT + MONDE ═══════════ -->
+<section class="page">
+  <div class="mod" style="--c:var(--blue)">
+    <div class="hd"><span class="ic emo">🎮</span><h3>11 · Mini-jeux & vidéos éducatives</h3><span class="age">4 ans → adulte</span></div>
+    <div class="bd">
+      <div><div class="lbl">Mini-jeux</div><p>Mémoire, serpent, anagrammes… pour battre ses records tout en entraînant mémoire de travail, attention et vocabulaire.</p></div>
+      <div><div class="lbl">Vidéos</div><p>Une sélection de vidéos éducatives choisies une par une, jamais de suggestions automatiques. Sautées automatiquement hors connexion.</p></div>
+    </div>
+  </div>
+  <div class="mod" style="--c:var(--night)">
+    <div class="hd"><span class="ic emo">🌙</span><h3>12 · Histoires du soir & méditations</h3><span class="age">4 ans → adulte</span></div>
+    <div class="bd">
+      <div><div class="lbl">Pour s'endormir</div><p>Histoires longues racontées (4 à 5 min) et méditations guidées adaptées à l'âge.</p></div>
+      <div><div class="lbl">Pour souffler</div><p>Histoires courtes (1 min) et histoires « respirées » avec exercices de respiration intégrés.</p></div>
+      <div class="tip"><b>Astuce parent :</b> activez le mode nuit et posez le téléphone écran retourné : l'histoire s'écoute, elle ne se regarde pas.</div>
+    </div>
+  </div>
+  <div class="mod" style="--c:var(--gold)">
+    <div class="hd"><span class="ic emo">🏙️</span><h3>13 · Mon Monde : les récompenses</h3><span class="age">Tous âges</span></div>
+    <div class="bd">
+      <div><div class="lbl">Comment ça marche</div><p>Chaque bonne réponse rapporte des pièces <span class="emo">🪙</span>. L'enfant les utilise pour construire et faire grandir <b>sa ville</b> : bâtiments, récoltes, rapport de la ville.</p></div>
+      <div><div class="lbl">Pourquoi</div><p>Une motivation durable : on apprend pour construire quelque chose à soi, pas pour un écran de pub. Les avatars réagissent aussi aux réussites.</p></div>
+      <div class="tip"><b>Astuce parent :</b> faites visiter la ville à l'enfant une fois par semaine : c'est un excellent moment pour parler de ce qu'il a appris.</div>
+    </div>
+  </div>
+  <div class="foot"><span>PocketSage Academy — Notice parents</span><span>7</span></div>
+</section>
+
+<!-- ═══════════ PAGE 8 : ESPACE PARENTS + FAQ ═══════════ -->
+<section class="page">
+  <div class="ph" style="--c:var(--violet)"><div class="num">14</div><div><h2>Espace Parents</h2><p>Suivre les progrès et garder un écran utile</p></div></div>
+  <div class="row">
+    <div class="box"><h3><span class="emo">📊</span> Statistiques</h3><p>Dans l'onglet <b>Parents</b> : activité par profil, aujourd'hui, cette semaine et sur les 7 derniers jours.</p></div>
+    <div class="box"><h3><span class="emo">⏱️</span> Un temps d'écran utile</h3><p>Des sessions courtes (10 à 20 min), entrecoupées de mouvement. Mieux vaut un peu chaque jour que longtemps une fois.</p></div>
+    <div class="box"><h3><span class="emo">🤝</span> Apprendre ensemble</h3><p>Une question au dîner, une fiche à imprimer, un défi sport en famille : l'appli donne les idées, le lien fait le reste.</p></div>
+    <div class="box"><h3><span class="emo">📝</span> Vos retours</h3><p>Questionnaire, bug ou idée : utilisez la page de présentation bêta, ou écrivez-nous directement. Chaque retour est lu.</p></div>
+  </div>
+  <div class="box faq" style="background:#fff;border:1.5px solid var(--line)">
+    <h3><span class="emo">❓</span> Questions fréquentes</h3>
+    <b>Mon enfant peut-il tomber sur du contenu inadapté ?</b><p>Non. Tout le contenu est rédigé et choisi pour PocketSage, sans publicité, sans chat et sans recommandations automatiques.</p>
+    <b>Faut-il une connexion Internet ?</b><p>Non pour l'essentiel. Seules les vidéos et la reconnaissance vocale demandent du réseau.</p>
+    <b>Où sont stockées les données ?</b><p>Sur le téléphone uniquement : pas de compte, aucune donnée personnelle envoyée.</p>
+    <b>Plusieurs enfants peuvent-ils l'utiliser ?</b><p>Oui, jusqu'à 4 profils, chacun avec son âge, sa langue et ses progrès.</p>
+    <b>Comment imprimer les fiches ?</b><p>Section Ateliers → Fiches → « Télécharger la fiche PDF ».</p>
+    <b>L'appli convient-elle aux adultes ?</b><p>Oui : Flash, langues, sport et méditations sont pensés aussi pour les grands.</p>
+  </div>
+  <div class="contact"><div><b>Une question, une idée ?</b><br>Nous lisons chaque message.</div><div style="text-align:right"><b>contact@pocketsage.org</b><br>pocketsage.org</div></div>
+  <div class="foot"><span>PocketSage Academy — Notice parents</span><span>8</span></div>
+</section>
+
+</body>
+</html>
