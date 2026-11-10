@@ -14,8 +14,8 @@
 | Voix EN | `9mF01VTvwaxuBPjm0hMu` (Charlie Horse) |
 | R2 Bucket | `pocketsage-audio` |
 | R2 Endpoint | `https://8ea67fd06083effd6f76efdefb92092f.r2.cloudflarestorage.com` |
-| R2 Access Key | `6af471e11db12cb768c57df351e9a6fd` |
-| R2 Secret Key | `4e7b9ad69ef6072024954beb7891fe710f1008719bfbf923341bdb35e1ed4f94` |
+| R2 Access Key | `(dans .env : R2_ACCESS_KEY)` |
+| R2 Secret Key | `(dans .env : R2_SECRET_KEY)` |
 | CDN public | `https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev` |
 
 ---
