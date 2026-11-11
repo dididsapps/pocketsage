@@ -13,3 +13,9 @@
 - `sttListen()` : garde les résultats partiels (mots courts), réécoute une 2e fois si rien capté, micro ouvert après la fin du son modèle.
 - `sttScore()` : meilleure des 5 propositions du moteur, homophones/nombres (EN/ES/DE), accents, Unicode.
 - Limite : le téléphone devine le mot, il ne note pas l'accent. Version précise = option premium Azure (voir `docs/tarification/`).
+
+## Micro et vie privée (RGPD mineurs)
+- Réglage par enfant dans l'Espace Parents (`P().mic = {on, date}`), message clair sur la destination de la voix.
+- `MIC_OPT_IN=false` pendant la bêta (micro autorisé par défaut). **Au lancement public : passer `MIC_OPT_IN` à `true`** → micro coupé tant qu'un parent n'a pas coché (case non pré-cochée).
+- Reconnaissance **100 % sur l'appareil** (`processLocally`) quand le navigateur le permet : le parent clique « Vérifier » dans l'Espace Parents, peut télécharger la langue ; résultat mémorisé (`psa3_micLocal`). Vérification jamais automatique (elle fait planter le Chromium de test sans ce service).
+- Micro coupé → `sttListen` renvoie `mic_off` : l'enfant répond avec les boutons.

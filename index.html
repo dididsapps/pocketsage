@@ -10714,10 +10714,42 @@ function _sttAfterTts(cb,minMs){
   };
   tick();
 }
+// ── Micro & vie privée (RGPD mineurs) ───────────────────────────────────────
+// ⚠️ LANCEMENT PUBLIC : passer MIC_OPT_IN à true → micro désactivé tant qu'un parent
+// n'a pas coché l'autorisation (case NON pré-cochée : une case pré-cochée n'est pas un consentement valable).
+const MIC_OPT_IN=false;
+function micAllowed(p){p=p||(typeof P==='function'?P():null);if(p&&p.mic&&typeof p.mic.on==='boolean')return p.mic.on;return !MIC_OPT_IN;}
+function setMic(on){const p=P();if(!p)return;p.mic={on:!!on,date:new Date().toISOString().slice(0,10)};saveApp();_showParentPanel();}
+// Reconnaissance SUR L'APPAREIL (rien n'est envoyé) quand le navigateur le permet
+// La vérification n'est faite QUE sur demande d'un parent (bouton), puis mémorisée sur l'appareil.
+const _micLocal=(()=>{try{return JSON.parse(localStorage.getItem('psa3_micLocal')||'{}');}catch(e){return {};}})();
+function _micLocalSave(){try{localStorage.setItem('psa3_micLocal',JSON.stringify(_micLocal));}catch(e){}}
+function micLocalSupported(){const SR=window.SpeechRecognition||window.webkitSpeechRecognition;return !!(SR&&typeof SR.available==='function'&&!navigator.webdriver);}
+function micLocalStatus(bcp){
+  const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+  if(!micLocalSupported())return Promise.resolve('unsupported');
+  return SR.available({langs:[bcp],processLocally:true}).then(r=>{_micLocal[bcp]=r;_micLocalSave();return r;}).catch(()=>{_micLocal[bcp]='unsupported';_micLocalSave();return 'unsupported';});
+}
+function micLocalCheck(){
+  const L=['en-GB','es-ES','de-DE'];
+  toast('⏳ Vérification…');
+  Promise.all(L.map(micLocalStatus)).then(()=>_fillMicLocal());
+}
+function micInstall(bcp){
+  const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+  if(!SR||typeof SR.install!=='function'){toast('Pas disponible sur ce téléphone');return;}
+  toast('⏳ Téléchargement de la langue…');
+  SR.install({langs:[bcp],processLocally:true}).then(ok=>{
+    _micLocal[bcp]=ok?'available':'unavailable';_micLocalSave();
+    toast(ok?'✅ Reconnaissance sur l’appareil activée':'❌ Téléchargement impossible pour le moment');
+    _showParentPanel();
+  }).catch(()=>toast('❌ Téléchargement impossible'));
+}
 // Écoute robuste : résultats partiels conservés (mots très courts), relance silencieuse si rien capté
 function sttListen(o){
   const SpeechRec=window.SpeechRecognition||window.webkitSpeechRecognition;
   if(!SpeechRec){o.onFail&&o.onFail('not_supported');return null;}
+  if(!micAllowed()){o.onFail&&o.onFail('mic_off');return null;}
   if(_sttRec){try{_sttRec.abort();}catch(e){}}
   let tries=0,done=false,lastAlts=null;
   const finish=(alts)=>{if(done)return;done=true;_sttActive=false;o.onResult&&o.onResult(alts);};
@@ -10725,6 +10757,7 @@ function sttListen(o){
   const run=()=>{
     const rec=new SpeechRec();
     rec.lang=o.lang;rec.interimResults=true;rec.continuous=false;rec.maxAlternatives=o.alternatives||5;
+    if('processLocally' in rec&&_micLocal[o.lang]==='available')rec.processLocally=true; // 100 % sur l'appareil
     let err=null;
     rec.onaudiostart=()=>{o.onReady&&o.onReady(tries);};
     rec.onresult=(e)=>{
@@ -10733,11 +10766,12 @@ function sttListen(o){
       if(alts.length&&alts[0].t.trim())lastAlts=alts;
       if(r.isFinal&&lastAlts){try{rec.stop();}catch(_){}finish(lastAlts);}
     };
-    rec.onerror=(e)=>{err=e.error;};
+    rec.onerror=(e)=>{err=e.error;
+      if(rec.processLocally&&(err==='language-not-supported'||err==='service-not-allowed')){_micLocal[o.lang]='unavailable';_micLocalSave();}};
     rec.onend=()=>{
       if(done)return;
       if(lastAlts){finish(lastAlts);return;}                     // mot court : on garde le partiel
-      if((err==='no-speech'||err==='aborted'||!err)&&tries<1){tries++;setTimeout(run,120);return;} // 2e chance silencieuse
+      if((err==='no-speech'||err==='aborted'||!err||err==='language-not-supported'||err==='service-not-allowed')&&tries<1){tries++;setTimeout(run,120);return;} // 2e chance silencieuse
       fail(err||'no-speech');
     };
     _sttRec=rec;_sttActive=true;
@@ -13382,7 +13416,7 @@ function _dlgListen(){
       _DLG.listening=null;
       if(err==='no-speech')return _dlgMiss('silence');
       _dlgGif('idle');
-      _dlgStatus(err==='not-allowed'?'⚠️ Autorise le micro, ou touche une réponse':'Touche 🎤 pour parler, ou choisis une réponse');
+      _dlgStatus(err==='mic_off'?'🔇 Micro désactivé : choisis ta réponse 👇':err==='not-allowed'?'⚠️ Autorise le micro, ou touche une réponse':'Touche 🎤 pour parler, ou choisis une réponse');
       _dlgChips(_DLG.node,true);
     }});
   if(!_DLG.listening){_dlgStatus('Choisis une réponse 👇');_dlgChips(_DLG.node,true);}
@@ -13641,7 +13675,7 @@ function startPronoEval(item,micBtn,feedbackZone,attBar){
       },
       onFail:(err)=>{
         micBtn.textContent='🎤';micBtn.disabled=false;micBtn.style.opacity='1';
-        const msgs={'not-allowed':'Autorise le micro dans ton navigateur !','no-speech':'🎤 Rien capté — rapproche le téléphone et parle un peu plus fort !','network':'Problème réseau.','not_supported':'Reconnaissance vocale indisponible ici.'};
+        const msgs={'mic_off':'🔇 Micro désactivé par un parent. Écoute le modèle et répète-le à voix haute !','not-allowed':'Autorise le micro dans ton navigateur !','no-speech':'🎤 Rien capté — rapproche le téléphone et parle un peu plus fort !','network':'Problème réseau.','not_supported':'Reconnaissance vocale indisponible ici.'};
         feedbackZone.innerHTML=`<div style="color:#E74C3C;font-size:14px;padding:12px;background:#fdecea;border-radius:12px;">⚠️ ${msgs[err]||'Erreur micro : '+err}</div>`;
       }});
   },200);
@@ -16308,7 +16342,7 @@ function renderAdvQCM(c, typeCfg, typeId){
           },
           onFail:(err)=>{
             micBtn.innerHTML='🎤 Répète la réponse';micBtn.disabled=false;
-            sttFeedback.innerHTML=(err==='no-speech')?'🎤 Je n’ai rien entendu, parle un peu plus fort !':(err==='not-allowed'?'⚠️ Autorise le micro':'⚠️ Micro indisponible');
+            sttFeedback.innerHTML=(err==='mic_off')?'🔇 Micro désactivé par un parent : répète à voix haute !':(err==='no-speech')?'🎤 Je n’ai rien entendu, parle un peu plus fort !':(err==='not-allowed'?'⚠️ Autorise le micro':'⚠️ Micro indisponible');
             sttFeedback.style.color='var(--tl)';
           }});
       },800);
@@ -17825,6 +17859,17 @@ function _showParentPanel(){
     html+=`</div></div>`;
   });
   html+=`</div>`;
+  // ── Micro & vie privée ──
+  if(p){
+    const micOn=micAllowed(p);
+    html+=`<div style="background:#F6F8FC;border-radius:12px;padding:12px 14px;margin-bottom:14px">`;
+    html+=`<b style="display:block;margin-bottom:6px">🎤 Micro et vie privée</b>`;
+    html+=`<label style="display:flex;gap:8px;align-items:flex-start;font-size:13px;cursor:pointer"><input type="checkbox" ${micOn?'checked':''} onchange="setMic(this.checked)" style="width:18px;height:18px;margin-top:1px;flex-shrink:0"><span>J’autorise <b>${p.name}</b> à utiliser le micro (prononciation, Parler avec Sensei).</span></label>`;
+    html+=`<div style="font-size:11.5px;color:#666;line-height:1.45;margin-top:6px">Quand l’enfant parle, sa voix est transcrite par la reconnaissance vocale du téléphone. Si elle ne fonctionne pas directement sur l’appareil, l’audio est envoyé à Google (Android) ou Apple (iPhone) le temps de la transcription. <b>PocketSage ne reçoit et n’enregistre jamais la voix.</b> Sans micro, l’enfant répond avec les boutons. Vous pouvez changer d’avis à tout moment.</div>`;
+    if(p.mic&&p.mic.date)html+=`<div style="font-size:11px;color:#999;margin-top:4px">Choix enregistré le ${p.mic.date.split('-').reverse().join('/')}</div>`;
+    html+=`<div id="mic-local" style="font-size:12px;margin-top:8px;color:#444"></div>`;
+    html+=`</div>`;
+  }
   // Boutons stats, sauvegarde, PIN, légal
   html+=`<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px">`;
   html+=`<button onclick="showParentStats()" style="flex:1;min-width:120px;padding:10px;border-radius:10px;border:none;background:#EAE9FF;color:#5A52D5;cursor:pointer;font-weight:700">📊 Statistiques</button>`;
@@ -17864,6 +17909,23 @@ function _showParentPanel(){
   }
   overlay.style.display='flex';
   document.getElementById('parent-box').innerHTML=html;
+  _fillMicLocal();
+}
+// État « reconnaissance sur l'appareil » par langue, dans l'Espace Parents
+function _fillMicLocal(){
+  const box=document.getElementById('mic-local');if(!box)return;
+  const L=[['en-GB','🇬🇧 Anglais'],['es-ES','🇪🇸 Espagnol'],['de-DE','🇩🇪 Allemand']];
+  if(!micLocalSupported()){box.innerHTML='📡 Ce téléphone ne permet pas encore la reconnaissance 100 % sur l’appareil : la transcription passe par Google ou Apple.';return;}
+  if(!L.some(([b])=>_micLocal[b])){box.innerHTML=`<button onclick="micLocalCheck()" style="border:none;background:#6C63FF;color:#fff;border-radius:8px;padding:6px 10px;font-size:12px;font-weight:700;cursor:pointer">🔍 Vérifier la reconnaissance sur l’appareil</button> <span style="color:#888">(rien n’est envoyé si elle est disponible)</span>`;return;}
+  Promise.resolve(L.map(([b])=>_micLocal[b]||'unsupported')).then(st=>{
+    if(st.every(x=>x==='unsupported'||x==='unavailable')){box.innerHTML='📡 Ce téléphone ne permet pas encore la reconnaissance 100 % sur l’appareil : la transcription passe par Google ou Apple.';return;}
+    box.innerHTML='<b>Reconnaissance 100 % sur l’appareil</b> (rien n’est envoyé) :<br>'+L.map(([b,n],i)=>{
+      const x=st[i];
+      if(x==='available')return n+' : ✅ active';
+      if(x==='downloadable'||x==='downloading')return n+` : <button onclick="micInstall('${b}')" style="border:none;background:#6C63FF;color:#fff;border-radius:8px;padding:3px 8px;font-size:11px;cursor:pointer">Télécharger</button>`;
+      return n+' : non disponible (Google/Apple)';
+    }).join('<br>');
+  });
 }
 function setParentLimit(mins){
   localStorage.setItem('psa3_limit',String(mins));
