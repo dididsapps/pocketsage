@@ -14,7 +14,7 @@ memory, calcul, quiz, mastermind, paires, anagrammes, motcache, snake, sort (tri
 ## 2. Nouveaux jeux proposés
 | Jeu | Principe | Ce que ça travaille | Âge | Coût |
 |---|---|---|---|---|
-| **Blocs Sensei** (pas « Tetris », marque déposée) | blocs qui tombent, lignes à compléter ; option : un bloc spécial = une question | logique spatiale, anticipation | 6+ | ~1 session |
+| ✅ **Blocs Sensei** (pas « Tetris », marque déposée) | blocs qui tombent, lignes à compléter ; option : un bloc spécial = une question | logique spatiale, anticipation | 6+ | ~1 session |
 | Simon Sensei | répéter une suite de couleurs/sons qui s'allonge | mémoire de travail | 4+ | petit |
 | Grille mémoire | des cases s'allument, les retrouver | mémoire visuelle | 5+ | petit |
 | Réflexes | toucher quand ça devient vert, pas avant | vitesse de réaction, inhibition | 4+ | petit |
@@ -37,4 +37,6 @@ memory, calcul, quiz, mastermind, paires, anagrammes, motcache, snake, sort (tri
 (mis à jour au fil des lots)
 - ✅ **Lot 1 (12/11)** — Memory (cartes dos étoilé + retournement, paire trouvée qui brille), Calcul Éclair (tableau noir + boutons bonbons), Quiz Rapidité (carte question + 4 réponses colorées, barre de temps vert→rouge), Paires (cartes FR/langue avec bandes de couleur, ✓ sur les paires trouvées). Jour et nuit. Fichier `css/jeux.css`.
 - ✅ Bug corrigé : quitter un jeu juste après une réponse faisait réapparaître l'ancien jeu par-dessus le suivant (minuteries de 0,5-1 s non annulées).
-- ⏳ Lot 2 proposé : Snake (fond noir vide), Mastermind, Anagrammes/Bombe de mots, Mot caché.
+- ✅ **12/11** — Snake : terrain herbe + bordure de sable (jour), fond noir (nuit), yeux qui regardent où il va ; **pavé tactile géant** : le terrain est coupé en 4 triangles (toucher n'importe où vers le haut/bas/gauche/droite), grosses flèches transparentes qui s'éclairent au toucher, glisser le doigt marche aussi, flèches du clavier.
+- ✅ **12/11 — Blocs Sensei créé** (13ᵉ jeu) : même pavé + rond central = tourner ; côtés = déplacer (appui long = continue) ; bas = descendre vite ; haut = tout en bas ; ombre de la pièce, pièce suivante, niveaux, vitesse selon l'âge ; **question bonus toutes les 4 lignes** (+20). Marche sur téléphone et tablette (taille calculée selon l'écran).
+- ⏳ Lot 2 proposé : Mastermind, Anagrammes, Bombe de mots, Mot caché.

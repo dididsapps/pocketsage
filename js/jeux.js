@@ -16,6 +16,7 @@ const JEUX_CFG=[
   {id:'sort',       emoji:'✨', title:'Magic Sort',     desc:'Classe les éléments',    min_score:0},
   {id:'taquin',     emoji:'🧩', title:'Puzzle coulissant',desc:'Remets dans l\'ordre', min_score:0},
   {id:'hanoi',      emoji:'🗼', title:'Tour de Hanoï',  desc:'Déplace les disques',    min_score:0},
+  {id:'blocs',      emoji:'🧱', title:'Blocs Sensei',   desc:'Complète des lignes avec les blocs qui tombent',min_score:0},
   {id:'g2048',      emoji:'💣', title:'Bombe de Mots',  desc:'Trouve le mot avant l\'explosion !',min_score:0},
 ];
 const JEUX_DAILY_MAX=20*60*1000; // 20 min en ms
@@ -111,7 +112,32 @@ let _gInts=[];
 function _gInterval(fn,ms){const id=setInterval(fn,ms);_gInts.push(id);return id;}
 let _gTos=[];
 function _gTimeout(fn,ms){const id=setTimeout(fn,ms);_gTos.push(id);return id;}
-function _gClearAll(){_gTos.forEach(clearTimeout);_gTos=[];_gInts.forEach(clearInterval);_gInts=[];if(typeof GAME==='object'&&GAME){if(GAME.timerInt)clearInterval(GAME.timerInt);if(GAME.sessionInt)clearInterval(GAME.sessionInt);}}
+function _gClearAll(){window._gKeyFn=null;_gTos.forEach(clearTimeout);_gTos=[];_gInts.forEach(clearInterval);_gInts=[];if(typeof GAME==='object'&&GAME){if(GAME.timerInt)clearInterval(GAME.timerInt);if(GAME.sessionInt)clearInterval(GAME.sessionInt);}}
+
+// Clavier (tablette avec clavier, ordinateur) — une seule écoute, fonction remplacée par jeu
+document.addEventListener('keydown',e=>{if(window._gKeyFn){if(window._gKeyFn(e)!==false)e.preventDefault();}});
+// Pavé tactile géant : la zone de jeu est coupée en 4 triangles (haut/bas/gauche/droite)
+// + option un rond central (pivot). Grosses flèches transparentes qui s'éclairent au toucher.
+// opts : {center:true|false, on:fn(z) avec z='u'|'d'|'l'|'r'|'m', repeat:['l','r','d'], swipe:true}
+function _gPad(wrap,opts){
+  const ov=document.createElement('div');ov.className='gpad';
+  ov.innerHTML='<span class="gp gp-u">▲</span><span class="gp gp-d">▼</span><span class="gp gp-l">◀</span><span class="gp gp-r">▶</span>'+(opts.center?'<span class="gp gp-m">↻</span>':'');
+  wrap.appendChild(ov);
+  const el={};ov.querySelectorAll('.gp').forEach(x=>{el[x.className.split('gp-')[1]]=x;});
+  function flash(z){const x=el[z];if(!x)return;x.classList.add('on');_gTimeout(()=>x.classList.remove('on'),160);}
+  function zone(e){const r=ov.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+    if(opts.center&&Math.hypot(x*r.width,y*r.height)<Math.min(r.width,r.height)*0.2)return 'm';
+    return Math.abs(x)>Math.abs(y)?(x<0?'l':'r'):(y<0?'u':'d');}
+  let rep=null,rep0=null,sx=0,sy=0,first=null;
+  function stop(){if(rep0){clearTimeout(rep0);rep0=null;}if(rep){clearInterval(rep);rep=null;}}
+  ov.addEventListener('pointerdown',e=>{e.preventDefault();sx=e.clientX;sy=e.clientY;const z=zone(e);first=z;flash(z);opts.on(z);
+    if(opts.repeat&&opts.repeat.includes(z)){stop();rep0=_gTimeout(()=>{rep=_gInterval(()=>opts.on(z),z==='d'?55:85);},230);}});
+  ov.addEventListener('pointerup',e=>{stop();
+    if(opts.swipe){const dx=e.clientX-sx,dy=e.clientY-sy;if(Math.max(Math.abs(dx),Math.abs(dy))>35){const z=Math.abs(dx)>Math.abs(dy)?(dx<0?'l':'r'):(dy<0?'u':'d');if(z!==first){flash(z);opts.on(z);}}}});
+  ov.addEventListener('pointercancel',stop);ov.addEventListener('pointerleave',stop);
+  ov.addEventListener('contextmenu',e=>e.preventDefault());
+  return ov;
+}
 function startGame(id){
   _gClearAll();
   if(isDailyFull(id)){toast('⏰ Limite quotidienne atteinte !');return;}
@@ -126,7 +152,7 @@ function startGame(id){
   const fn={memory:buildMemory,calcul:buildCalcul,quiz:buildQuizRapid,
     mastermind:buildMastermind,paires:buildPaires,anagrammes:buildAnagrammes,
     motcache:buildMotCache,snake:buildSnake,sort:buildSort,
-    taquin:buildTaquin,hanoi:buildHanoi,g2048:build2048}[id];
+    taquin:buildTaquin,hanoi:buildHanoi,g2048:build2048,blocs:buildBlocs}[id];
   if(fn)fn();
 }
 
@@ -566,63 +592,57 @@ function buildMotCache(){
 // GAME 8 — SNAKE QCM
 // ════════════════════════════════════════════
 function buildSnake(){
-  // Terrain plus grand, cellules plus grandes
   const W=22,H=20,CELL=16;
   const CW=W*CELL,CH=H*CELL;
   const inner=document.getElementById('game-inner');
   inner.innerHTML=`
-    <div style="position:relative;display:inline-block;border-radius:18px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.4);margin:0 auto;display:block;width:${CW}px;max-width:100%">
-      <canvas id="snake-canvas" width="${CW}" height="${CH}" style="touch-action:none;display:block;width:100%;height:auto"></canvas>
-      <!-- 4 tap zones invisible overlaid on canvas -->
-      <div id="sn-top"    style="position:absolute;top:0;left:25%;width:50%;height:33%;cursor:pointer;z-index:2" onclick="snDir(0,-1)"></div>
-      <div id="sn-bot"    style="position:absolute;bottom:0;left:25%;width:50%;height:33%;cursor:pointer;z-index:2" onclick="snDir(0,1)"></div>
-      <div id="sn-left"   style="position:absolute;top:0;left:0;width:25%;height:100%;cursor:pointer;z-index:2" onclick="snDir(-1,0)"></div>
-      <div id="sn-right"  style="position:absolute;top:0;right:0;width:25%;height:100%;cursor:pointer;z-index:2" onclick="snDir(1,0)"></div>
+    <div id="sn-wrap" class="g-board" style="width:${CW}px">
+      <canvas id="snake-canvas" width="${CW}" height="${CH}" style="display:block;width:100%;height:auto"></canvas>
     </div>
+    <p class="g-help">Touche le haut, le bas, la gauche ou la droite du terrain pour tourner (ou glisse le doigt).</p>
     <div class="snake-q" id="snake-q" style="display:none"></div>`;
   const canvas=document.getElementById('snake-canvas');const ctx=canvas.getContext('2d');
-  let snake=[{x:5,y:10}],dir={x:1,y:0},nextDir={x:1,y:0};
+  let snake=[{x:5,y:10},{x:4,y:10},{x:3,y:10}],dir={x:1,y:0},nextDir={x:1,y:0};
   let food={x:16,y:10},score=0,loop,paused=false;
   let curQ=null,foodIsQ=false;
   const QUESTIONS=[...QUIZ_DATA].sort(()=>Math.random()-.5);let qIdx=0;
   function getQ(){return QUESTIONS[qIdx%QUESTIONS.length];}
-  function placeFood(){food={x:Math.floor(Math.random()*(W-2))+1,y:Math.floor(Math.random()*(H-2))+1};foodIsQ=Math.random()>.4;}
+  function placeFood(){do{food={x:Math.floor(Math.random()*(W-2))+1,y:Math.floor(Math.random()*(H-2))+1};}while(snake.some(s=>s.x===food.x&&s.y===food.y));foodIsQ=Math.random()>.4;}
   function draw(){
-    // Fond sombre avec grille subtile
-    ctx.fillStyle='#0d1117';ctx.fillRect(0,0,CW,CH);
-    ctx.strokeStyle='rgba(255,255,255,0.04)';ctx.lineWidth=1;
-    for(let x=0;x<=W;x++){ctx.beginPath();ctx.moveTo(x*CELL,0);ctx.lineTo(x*CELL,CH);ctx.stroke();}
-    for(let y=0;y<=H;y++){ctx.beginPath();ctx.moveTo(0,y*CELL);ctx.lineTo(CW,y*CELL);ctx.stroke();}
-    // Indicateurs directionnels (quarts)
-    const qs=[
-      {x:CW/2,y:CH*0.17,t:'▲'},{x:CW/2,y:CH*0.83,t:'▼'},
-      {x:CW*0.125,y:CH/2,t:'◀'},{x:CW*0.875,y:CH/2,t:'▶'}
-    ];
-    ctx.font='bold 16px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';
-    ctx.fillStyle='rgba(255,255,255,0.12)';
-    qs.forEach(q=>ctx.fillText(q.t,q.x,q.y));
-    // Snake
+    const night=document.body.classList.contains('night');
+    if(night){
+      ctx.fillStyle='#0d1117';ctx.fillRect(0,0,CW,CH);
+      ctx.strokeStyle='rgba(255,255,255,0.05)';ctx.lineWidth=1;
+      for(let x=0;x<=W;x++){ctx.beginPath();ctx.moveTo(x*CELL,0);ctx.lineTo(x*CELL,CH);ctx.stroke();}
+      for(let y=0;y<=H;y++){ctx.beginPath();ctx.moveTo(0,y*CELL);ctx.lineTo(CW,y*CELL);ctx.stroke();}
+    }else{
+      // Herbe en damier + bordure de sable
+      for(let y=0;y<H;y++)for(let x=0;x<W;x++){
+        const edge=x===0||y===0||x===W-1||y===H-1;
+        ctx.fillStyle=edge?((x+y)%2?'#F2D49B':'#EBC985'):((x+y)%2?'#8FD16A':'#83C85E');
+        ctx.fillRect(x*CELL,y*CELL,CELL,CELL);
+      }
+      ctx.fillStyle='rgba(255,255,255,.18)';
+      for(let i=0;i<14;i++){const gx=((i*97)%(W-2)+1)*CELL+4,gy=((i*53)%(H-2)+1)*CELL+5;ctx.fillRect(gx,gy,2,5);ctx.fillRect(gx+4,gy+1,2,4);}
+    }
+    // Serpent
     snake.forEach((s,i)=>{
-      const r=CELL-2,rad=i===0?6:4;
-      const gx=s.x*CELL+1,gy=s.y*CELL+1;
-      const g=ctx.createLinearGradient(gx,gy,gx+r,gy+r);
-      g.addColorStop(0,i===0?'#8B7CFF':'#6C63FF');
-      g.addColorStop(1,i===0?'#6C63FF':'#4A43CC');
-      ctx.fillStyle=g;
-      ctx.beginPath();ctx.roundRect(gx,gy,r,r,rad);ctx.fill();
+      const gx=s.x*CELL+1,gy=s.y*CELL+1,r=CELL-2;
+      ctx.fillStyle=i===0?'#5A52D5':(i%2?'#7B73FF':'#6C63FF');
+      ctx.beginPath();ctx.roundRect(gx,gy,r,r,i===0?7:5);ctx.fill();
       if(i===0){
-        ctx.fillStyle='rgba(255,255,255,0.9)';ctx.font='9px sans-serif';
-        ctx.textBaseline='middle';ctx.textAlign='center';
-        ctx.fillText('👾',gx+r/2,gy+r/2);
+        const ex=dir.x,ey=dir.y,cx=gx+r/2,cy=gy+r/2;
+        [[-1],[1]].forEach(([k])=>{const px=cx+ex*3+(ey?k*3:0),py=cy+ey*3+(ex?k*3:0);
+          ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(px,py,2.6,0,7);ctx.fill();
+          ctx.fillStyle='#1b1b2f';ctx.beginPath();ctx.arc(px+ex,py+ey,1.3,0,7);ctx.fill();});
       }
     });
     // Nourriture
-    const fx=food.x*CELL+2,fy=food.y*CELL+2,fs=CELL-4;
-    ctx.fillStyle=foodIsQ?'#FFD166':'#06D6A0';
-    ctx.beginPath();ctx.roundRect(fx,fy,fs,fs,5);ctx.fill();
-    ctx.fillStyle='#fff';ctx.font=`${CELL-4}px sans-serif`;
-    ctx.textAlign='center';ctx.textBaseline='middle';
-    ctx.fillText(foodIsQ?'❓':'🍎',fx+fs/2,fy+fs/2);
+    const fx=food.x*CELL+CELL/2,fy=food.y*CELL+CELL/2;
+    ctx.fillStyle=foodIsQ?'rgba(255,209,102,.45)':'rgba(255,255,255,.35)';
+    ctx.beginPath();ctx.arc(fx,fy,CELL*0.62,0,7);ctx.fill();
+    ctx.font=`${CELL-1}px sans-serif`;ctx.textAlign='center';ctx.textBaseline='middle';
+    ctx.fillText(foodIsQ?'❓':'🍎',fx,fy+1);
   }
   function step(){
     if(paused)return;
@@ -640,21 +660,115 @@ function buildSnake(){
     const qDiv=document.getElementById('snake-q');qDiv.style.display='block';
     qDiv.innerHTML=`<p>${curQ.q}</p><div class="snake-choices">${curQ.c.map(c=>`<button class="snake-choice" onclick="snAns('${c}')">${c}</button>`).join('')}</div>`;
     window.snAns=function(v){
-      if(v===curQ.a){sndOK();score+=15;updateGameScore(score);placeFood();}else{sndKO();snake.pop();}
+      if(v===curQ.a){sndOK();score+=15;updateGameScore(score);placeFood();}else{sndKO();if(snake.length>1)snake.pop();placeFood();}
       qDiv.style.display='none';paused=false;
     };
   }
   window.snDir=function(x,y){if(dir.x===-x&&dir.y===-y)return;nextDir={x,y};};
-  // Swipe sur le canvas (fallback)
-  let _stx,_sty;
-  canvas.addEventListener('touchstart',e=>{_stx=e.touches[0].clientX;_sty=e.touches[0].clientY;e.preventDefault();},{passive:false});
-  canvas.addEventListener('touchend',e=>{
-    const dx=e.changedTouches[0].clientX-_stx,dy=e.changedTouches[0].clientY-_sty;
-    if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>20){snDir(dx>0?1:-1,0);}
-    else if(Math.abs(dy)>20){snDir(0,dy>0?1:-1);}
-    e.preventDefault();
-  },{passive:false});
+  const D={u:[0,-1],d:[0,1],l:[-1,0],r:[1,0]};
+  _gPad(document.getElementById('sn-wrap'),{center:false,swipe:true,on:z=>{if(D[z])snDir(...D[z]);}});
+  window._gKeyFn=e=>{const m={ArrowUp:'u',ArrowDown:'d',ArrowLeft:'l',ArrowRight:'r'}[e.key];if(!m)return false;snDir(...D[m]);};
   placeFood();draw();loop=_gInterval(step,190);
+  document.getElementById('game-timer-disp').style.display='none';
+}
+
+// ════════════════════════════════════════════
+// GAME 13 — BLOCS SENSEI (blocs qui tombent ; pas « Tetris », marque déposée)
+// Centre = tourner · gauche/droite = déplacer · bas = descendre vite · haut = chute directe
+// Toutes les 4 lignes : une petite question bonus.
+// ════════════════════════════════════════════
+function buildBlocs(){
+  const COLS=10,ROWS=18;
+  const inner=document.getElementById('game-inner');
+  const availW=Math.max(200,Math.min((inner.clientWidth||340)-8,420));
+  const availH=Math.max(260,window.innerHeight-300);
+  const CELL=Math.max(14,Math.floor(Math.min(availW/COLS,availH/ROWS)));
+  const BW=COLS*CELL,BH=ROWS*CELL;
+  inner.innerHTML=`
+    <div class="blocs-hud">
+      <div><b id="bl-lines">0</b><span>lignes</span></div>
+      <div><b id="bl-level">1</b><span>niveau</span></div>
+      <div class="blocs-next"><canvas id="bl-next" width="64" height="44"></canvas><span>suivant</span></div>
+    </div>
+    <div id="bl-wrap" class="g-board" style="width:${BW}px"><canvas id="bl-canvas" width="${BW}" height="${BH}" style="display:block;width:100%;height:auto"></canvas></div>
+    <p class="g-help">Rond du milieu : tourner · côtés : déplacer · bas : descendre · haut : tout en bas</p>
+    <div class="snake-q" id="bl-q" style="display:none"></div>`;
+  const cv=document.getElementById('bl-canvas'),ctx=cv.getContext('2d');
+  const nx=document.getElementById('bl-next').getContext('2d');
+  const SH={I:[[0,0],[1,0],[2,0],[3,0]],O:[[0,0],[1,0],[0,1],[1,1]],T:[[0,0],[1,0],[2,0],[1,1]],
+    S:[[1,0],[2,0],[0,1],[1,1]],Z:[[0,0],[1,0],[1,1],[2,1]],J:[[0,0],[0,1],[1,1],[2,1]],L:[[2,0],[0,1],[1,1],[2,1]]};
+  const COL={I:'#3ABEF9',O:'#FFD166',T:'#9B5DE5',S:'#06D6A0',Z:'#FF5C8A',J:'#3A86FF',L:'#FF9F1C'};
+  const grid=Array.from({length:ROWS},()=>Array(COLS).fill(null));
+  const age=(P()&&P().age)||8;
+  let score=0,lines=0,level=1,paused=false,over=false,bag=[];
+  function rnd(){if(!bag.length)bag=Object.keys(SH).sort(()=>Math.random()-.5);return bag.pop();}
+  function mk(t){return{t,c:SH[t].map(p=>[...p]),x:3,y:0};}
+  let cur=mk(rnd()),nxt=mk(rnd());
+  function fits(c,dx,dy){return c.every(([x,y])=>{const X=x+dx,Y=y+dy;return X>=0&&X<COLS&&Y<ROWS&&(Y<0||!grid[Y][X]);});}
+  function rotate(){
+    if(cur.t==='O')return;
+    const cx=cur.c[1][0],cy=cur.c[1][1];
+    const r=cur.c.map(([x,y])=>[cx-(y-cy),cy+(x-cx)]);
+    for(const k of [0,-1,1,-2,2]){if(fits(r,cur.x+k,cur.y)){cur.c=r;cur.x+=k;sndTapSafe();return;}}
+  }
+  function sndTapSafe(){try{if(typeof sndTap==='function')sndTap();}catch(e){}}
+  function move(dx){if(fits(cur.c,cur.x+dx,cur.y))cur.x+=dx;}
+  function down(){if(fits(cur.c,cur.x,cur.y+1)){cur.y++;return true;}lock();return false;}
+  function drop(){let n=0;while(fits(cur.c,cur.x,cur.y+1)){cur.y++;n++;}score+=Math.floor(n/2);lock();}
+  function lock(){
+    cur.c.forEach(([x,y])=>{const Y=y+cur.y;if(Y>=0)grid[Y][x+cur.x]=COL[cur.t];});
+    let cleared=0;
+    for(let y=ROWS-1;y>=0;y--){if(grid[y].every(Boolean)){grid.splice(y,1);grid.unshift(Array(COLS).fill(null));cleared++;y++;}}
+    if(cleared){
+      score+=[0,10,30,60,100][cleared]*level;const before=lines;lines+=cleared;
+      level=1+Math.floor(lines/8);sndOK();
+      document.getElementById('bl-lines').textContent=lines;document.getElementById('bl-level').textContent=level;
+      restart();
+      if(Math.floor(lines/4)>Math.floor(before/4))askQ();
+    }
+    updateGameScore(score);
+    cur=nxt;cur.x=3;cur.y=0;nxt=mk(rnd());drawNext();
+    if(!fits(cur.c,cur.x,cur.y)){over=true;clearInterval(loop);draw();_gTimeout(()=>endGame(score),600);}
+  }
+  const QS=[...QUIZ_DATA].sort(()=>Math.random()-.5);let qi=0;
+  function askQ(){
+    paused=true;const q=QS[qi++%QS.length];const d=document.getElementById('bl-q');d.style.display='block';
+    d.innerHTML=`<p>⭐ Question bonus : ${q.q}</p><div class="snake-choices">${q.c.map(c=>`<button class="snake-choice" onclick="blAns(this,'${String(c).replace(/'/g,"\\'")}')">${c}</button>`).join('')}</div>`;
+    window.blAns=function(btn,v){if(v===q.a){sndOK();score+=20;updateGameScore(score);}else sndKO();d.style.display='none';paused=false;};
+  }
+  function cell(c,x,y,col,a){
+    const g=c===ctx?CELL:11;const px=x*g,py=y*g;
+    c.globalAlpha=a||1;c.fillStyle=col;c.fillRect(px+1,py+1,g-2,g-2);
+    c.fillStyle='rgba(255,255,255,.35)';c.fillRect(px+1,py+1,g-2,Math.max(2,g*.18));c.fillRect(px+1,py+1,Math.max(2,g*.18),g-2);
+    c.fillStyle='rgba(0,0,0,.18)';c.fillRect(px+1,py+g-1-Math.max(2,g*.16),g-2,Math.max(2,g*.16));
+    c.globalAlpha=1;
+  }
+  function draw(){
+    const night=document.body.classList.contains('night');
+    ctx.fillStyle=night?'#0d1117':'#F1EFFF';ctx.fillRect(0,0,BW,BH);
+    ctx.strokeStyle=night?'rgba(255,255,255,.05)':'rgba(108,99,255,.10)';ctx.lineWidth=1;
+    for(let x=1;x<COLS;x++){ctx.beginPath();ctx.moveTo(x*CELL+.5,0);ctx.lineTo(x*CELL+.5,BH);ctx.stroke();}
+    for(let y=1;y<ROWS;y++){ctx.beginPath();ctx.moveTo(0,y*CELL+.5);ctx.lineTo(BW,y*CELL+.5);ctx.stroke();}
+    grid.forEach((row,y)=>row.forEach((c,x)=>{if(c)cell(ctx,x,y,c);}));
+    if(!over){
+      let gy=cur.y;while(fits(cur.c,cur.x,gy+1))gy++;
+      cur.c.forEach(([x,y])=>{if(y+gy>=0)cell(ctx,x+cur.x,y+gy,COL[cur.t],.22);});
+      cur.c.forEach(([x,y])=>{if(y+cur.y>=0)cell(ctx,x+cur.x,y+cur.y,COL[cur.t]);});
+    }
+  }
+  function drawNext(){nx.clearRect(0,0,64,44);const xs=nxt.c.map(p=>p[0]),ys=nxt.c.map(p=>p[1]);
+    const ox=(64/11-(Math.max(...xs)+1))/2,oy=(44/11-(Math.max(...ys)+1))/2;
+    nxt.c.forEach(([x,y])=>cell(nx,x+ox,y+oy,COL[nxt.t]));}
+  function tick(){if(paused||over)return;down();draw();}
+  let loop;
+  function speed(){const base=age<7?950:age<11?800:650;return Math.max(140,base-(level-1)*70);}
+  function restart(){if(loop)clearInterval(loop);loop=_gInterval(tick,speed());}
+  function act(z){if(paused||over)return;
+    if(z==='m')rotate();else if(z==='l')move(-1);else if(z==='r')move(1);else if(z==='d')down();else if(z==='u')drop();
+    draw();}
+  _gPad(document.getElementById('bl-wrap'),{center:true,repeat:['l','r','d'],on:act});
+  window._gKeyFn=e=>{const m={ArrowLeft:'l',ArrowRight:'r',ArrowDown:'d',ArrowUp:'m',' ':'u'}[e.key];if(!m)return false;act(m);};
+  drawNext();draw();restart();
   document.getElementById('game-timer-disp').style.display='none';
 }
 

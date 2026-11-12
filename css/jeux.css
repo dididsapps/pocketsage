@@ -122,3 +122,34 @@ body.night #scr-game .pair-btn:not(.selected):not(.matched){background:#2A1E0A;c
 @keyframes gOk{0%{transform:scale(1)}40%{transform:scale(1.12)}100%{transform:scale(1)}}
 @keyframes gKo{0%,100%{transform:translateX(0)}20%{transform:translateX(-7px)}40%{transform:translateX(7px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}
 @media (prefers-reduced-motion:reduce){#scr-game *{animation:none!important;transition:none!important}}
+
+/* ── Plateau + pavé tactile géant (Snake, Blocs Sensei) ── */
+#scr-game .g-board{position:relative;margin:4px auto 0;max-width:100%;border-radius:16px;overflow:hidden;
+  box-shadow:0 6px 0 rgba(60,50,170,.25),0 12px 28px rgba(0,0,0,.18);touch-action:none}
+#scr-game .g-help{text-align:center;font-size:12px;font-weight:700;color:var(--tl);margin:8px 4px 0;line-height:1.35}
+.gpad{position:absolute;inset:0;z-index:3;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;cursor:pointer}
+.gp{position:absolute;color:#fff;opacity:.2;font-size:clamp(38px,13vw,70px);line-height:1;pointer-events:none;
+  text-shadow:0 0 2px rgba(0,0,0,.55),0 2px 8px rgba(0,0,0,.35);transition:opacity .12s,transform .12s}
+.gp-u{top:3%;left:50%;transform:translateX(-50%)}
+.gp-d{bottom:3%;left:50%;transform:translateX(-50%)}
+.gp-l{left:2%;top:50%;transform:translateY(-50%)}
+.gp-r{right:2%;top:50%;transform:translateY(-50%)}
+.gp-m{left:50%;top:50%;transform:translate(-50%,-50%);width:34%;aspect-ratio:1;border-radius:50%;
+  border:3px dashed rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;font-size:clamp(30px,10vw,56px)}
+.gp.on{opacity:.6}
+.gp-u.on,.gp-d.on{transform:translateX(-50%) scale(1.15)}
+.gp-l.on,.gp-r.on{transform:translateY(-50%) scale(1.15)}
+.gp-m.on{transform:translate(-50%,-50%) scale(1.08)}
+/* Blocs Sensei : sur fond clair, flèches violettes transparentes */
+#bl-wrap .gp{color:#6C63FF;text-shadow:none;opacity:.16}
+#bl-wrap .gp-m{border-color:rgba(108,99,255,.55)}
+#bl-wrap .gp.on{opacity:.5}
+body.night #bl-wrap .gp{color:#fff;opacity:.18}
+body.night #bl-wrap .gp-m{border-color:rgba(255,255,255,.6)}
+#scr-game .blocs-hud{display:flex;justify-content:center;gap:10px;margin:2px 0 8px}
+#scr-game .blocs-hud>div{background:#fff;border-radius:14px;padding:6px 12px;min-width:64px;text-align:center;
+  box-shadow:0 3px 0 rgba(108,99,255,.18);display:flex;flex-direction:column;align-items:center}
+#scr-game .blocs-hud b{font-size:20px;color:#6C63FF;line-height:1.1}
+#scr-game .blocs-hud span{font-size:10px;font-weight:800;color:var(--tl);text-transform:uppercase;letter-spacing:.5px}
+body.night #scr-game .blocs-hud>div{background:#2A1E0A}
+body.night #scr-game .blocs-hud b{color:#FFD166}
