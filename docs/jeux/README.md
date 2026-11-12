@@ -15,15 +15,18 @@ memory, calcul, quiz, mastermind, paires, anagrammes, motcache, snake, sort (tri
 | Jeu | Principe | Ce que ça travaille | Âge | Coût |
 |---|---|---|---|---|
 | ✅ **Blocs Sensei** (pas « Tetris », marque déposée) | blocs qui tombent, lignes à compléter ; option : un bloc spécial = une question | logique spatiale, anticipation | 6+ | ~1 session |
-| Simon Sensei | répéter une suite de couleurs/sons qui s'allonge | mémoire de travail | 4+ | petit |
-| Grille mémoire | des cases s'allument, les retrouver | mémoire visuelle | 5+ | petit |
-| Réflexes | toucher quand ça devient vert, pas avant | vitesse de réaction, inhibition | 4+ | petit |
-| Table de Schulte | toucher 1→25 le plus vite possible | attention, regard | 8+ | petit |
-| Stroop couleurs | dire la couleur de l'encre, pas le mot | concentration | 7+ | petit |
-| Sudoku junior | 4×4 puis 6×6 | logique | 6+ | moyen |
+| ✅ Simon Sensei | répéter une suite de couleurs/sons qui s'allonge | mémoire de travail | 4+ | petit |
+| ✅ Grille mémoire | des cases s'allument, les retrouver | mémoire visuelle | 5+ | petit |
+| ✅ Réflexes | toucher quand ça devient vert, pas avant | vitesse de réaction, inhibition | 4+ | petit |
+| ✅ Table de Schulte | toucher 1→25 le plus vite possible | attention, regard | 8+ | petit |
+| ✅ Couleurs piégées (Stroop) | dire la couleur de l'encre, pas le mot | concentration | 7+ | petit |
+| ✅ Sudoku junior | 4×4 puis 6×6 | logique | 6+ | moyen |
 | Tangram | reconstituer une forme avec 7 pièces | géométrie | 6+ | moyen |
-| Labyrinthe | sortir d'un labyrinthe généré | planification | 4+ | petit |
-| Mots mêlés | retrouver des mots (dans la langue apprise !) | vocabulaire | 7+ | petit |
+| ✅ Labyrinthe | sortir d'un labyrinthe généré | planification | 4+ | petit |
+| ✅ Mots mêlés | retrouver des mots (dans la langue apprise !) | vocabulaire | 7+ | petit |
+
+- ✅ 12/11 : les 8 jeux ci-dessus créés dans `js/jeux-cerveau.js` (adaptés à l'âge : taille de grille, vitesse). Tangram reporté (déplacer/tourner des pièces au doigt = plus long).
+- ⚠️ Limite de temps : aujourd'hui **20 min par jeu**, et il y a maintenant 21 jeux → en théorie 7 h/jour possibles. Proposition : une limite **totale** (ex. 30 à 45 min/jour, réglable par le parent). À décider.
 
 ## 3. Ordre conseillé
 1. Embellir les jeux existants (par lots de 3-4) ← en cours

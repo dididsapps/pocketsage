@@ -152,7 +152,7 @@ function startGame(id){
   const fn={memory:buildMemory,calcul:buildCalcul,quiz:buildQuizRapid,
     mastermind:buildMastermind,paires:buildPaires,anagrammes:buildAnagrammes,
     motcache:buildMotCache,snake:buildSnake,sort:buildSort,
-    taquin:buildTaquin,hanoi:buildHanoi,g2048:build2048,blocs:buildBlocs}[id];
+    taquin:buildTaquin,hanoi:buildHanoi,g2048:build2048,blocs:buildBlocs}[id]||(window.JEUX_EXTRA&&JEUX_EXTRA[id]);
   if(fn)fn();
 }
 

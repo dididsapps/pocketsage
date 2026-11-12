@@ -153,3 +153,65 @@ body.night #bl-wrap .gp-m{border-color:rgba(255,255,255,.6)}
 #scr-game .blocs-hud span{font-size:10px;font-weight:800;color:var(--tl);text-transform:uppercase;letter-spacing:.5px}
 body.night #scr-game .blocs-hud>div{background:#2A1E0A}
 body.night #scr-game .blocs-hud b{color:#FFD166}
+
+/* ── Jeux de réflexion (js/jeux-cerveau.js) ── */
+#scr-game .g-info{text-align:center;font-size:13px;font-weight:700;color:var(--tl);margin:6px 6px 8px;line-height:1.4}
+#scr-game .g-big{text-align:center;font-size:20px;font-weight:900;color:#6C63FF;margin:6px 0 10px;min-height:26px}
+body.night #scr-game .g-big{color:#FFD166}
+/* Simon */
+#scr-game .simon{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:340px;margin:0 auto;aspect-ratio:1}
+#scr-game .simon-b{border:none;border-radius:28px;background:var(--c);opacity:.45;box-shadow:0 7px 0 rgba(0,0,0,.25);touch-action:none;transition:opacity .1s,transform .1s}
+#scr-game .simon-b:nth-child(1){border-top-left-radius:50%}#scr-game .simon-b:nth-child(2){border-top-right-radius:50%}
+#scr-game .simon-b:nth-child(3){border-bottom-left-radius:50%}#scr-game .simon-b:nth-child(4){border-bottom-right-radius:50%}
+#scr-game .simon-b.on{opacity:1;transform:scale(.96);box-shadow:0 0 28px var(--c),0 3px 0 rgba(0,0,0,.25)}
+/* Grilles (mémoire, Schulte) */
+#scr-game .mgrid{display:grid;gap:8px;max-width:360px;margin:0 auto}
+#scr-game .mcell{aspect-ratio:1;border:none;border-radius:14px;background:#fff;box-shadow:0 4px 0 rgba(108,99,255,.2);touch-action:none;transition:background .15s,transform .1s}
+body.night #scr-game .mcell{background:#2A1E0A;box-shadow:0 4px 0 rgba(0,0,0,.4)}
+#scr-game .mcell.lit{background:#3A86FF;box-shadow:0 0 18px rgba(58,134,255,.6)}
+#scr-game .mcell.ok{background:#06D6A0;transform:scale(.95)}
+#scr-game .mcell.ko{background:#E63946;animation:gKo .3s}
+#scr-game .mcell.num{font-size:clamp(18px,6vw,28px);font-weight:900;color:#2D2D44}
+body.night #scr-game .mcell.num{color:#F5E6C8}
+#scr-game .schulte .mcell.ok{background:#D9FBEF;color:#06A77D;transform:none}
+/* Réflexes */
+#scr-game .refl{display:flex;align-items:center;justify-content:center;width:min(78vw,300px);aspect-ratio:1;margin:14px auto;border-radius:50%;border:none;
+  background:#E9E7FF;color:#5A52D5;font-size:18px;font-weight:900;padding:20px;box-shadow:0 8px 0 rgba(0,0,0,.15);touch-action:none}
+#scr-game .refl.red{background:#E63946;color:#fff}
+#scr-game .refl.green{background:#06D6A0;color:#fff;font-size:30px}
+body.night #scr-game .refl:not(.red):not(.green){background:#2A1E0A;color:#FFD166}
+/* Stroop */
+#scr-game .stroop-w{text-align:center;font-size:clamp(40px,14vw,64px);font-weight:900;margin:22px 0;letter-spacing:2px;
+  background:#fff;border-radius:20px;padding:18px 0;box-shadow:0 6px 0 rgba(108,99,255,.15)}
+body.night #scr-game .stroop-w{background:#F5EFE0}
+#scr-game .stroop-c{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:340px;margin:0 auto}
+#scr-game .stroop-b{height:76px;border:none;border-radius:18px;box-shadow:0 6px 0 rgba(0,0,0,.22);touch-action:none}
+#scr-game .stroop-b:active{transform:translateY(3px);box-shadow:0 3px 0 rgba(0,0,0,.22)}
+/* Sudoku */
+#scr-game .sudoku{display:grid;max-width:340px;margin:0 auto;background:#5A52D5;border:3px solid #5A52D5;border-radius:12px;overflow:hidden;gap:1px}
+#scr-game .sd-c{aspect-ratio:1;border:none;background:#fff;font-size:clamp(20px,7vw,30px);font-weight:900;color:#6C63FF}
+#scr-game .sd-c.fx{color:#2D2D44;background:#F1EFFF}
+#scr-game .sd-c.sel{background:#FFE9A8}
+#scr-game .sd-c.br{margin-right:2px}#scr-game .sd-c.bb{margin-bottom:2px}
+#scr-game .sd-c.ko{background:#FFD0D4}
+body.night #scr-game .sd-c{background:#2A1E0A;color:#FFD166}body.night #scr-game .sd-c.fx{background:#1A1205;color:#F5E6C8}
+body.night #scr-game .sd-c.sel{background:#5A4210}
+#scr-game .sd-pad{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:16px auto 0;max-width:360px}
+#scr-game .sd-n{width:56px;height:56px;border:none;border-radius:50%;background:#6C63FF;color:#fff;font-size:24px;font-weight:900;box-shadow:0 5px 0 #463FB8}
+/* Mots mêlés */
+#scr-game .mm{display:grid;gap:3px;max-width:380px;margin:0 auto}
+#scr-game .mm-c{aspect-ratio:1;border:none;border-radius:8px;background:#fff;font-size:clamp(14px,4.6vw,22px);font-weight:900;color:#2D2D44;padding:0;box-shadow:0 2px 0 rgba(108,99,255,.15)}
+body.night #scr-game .mm-c{background:#2A1E0A;color:#F5E6C8}
+#scr-game .mm-c.sel{background:#FFD166}
+#scr-game .mm-c.f0{background:#B9F3E0}#scr-game .mm-c.f1{background:#CFE1FF}#scr-game .mm-c.f2{background:#FFD3E2}#scr-game .mm-c.f3{background:#FFE6BF}#scr-game .mm-c.f4{background:#E4D8FF}
+body.night #scr-game .mm-c[class*=" f"]{color:#1A1205}
+#scr-game .mm-list{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin:12px 0}
+#scr-game .mm-list span{background:#fff;border-radius:14px;padding:5px 10px;font-size:13px;font-weight:800;color:var(--tl);box-shadow:0 2px 0 rgba(108,99,255,.15)}
+#scr-game .mm-list span.ok{background:#D9FBEF;color:#05664A}
+body.night #scr-game .mm-list span{background:#2A1E0A}
+/* correctifs de largeur (les conteneurs centrés rétrécissaient à 0) */
+#scr-game .simon,#scr-game .mgrid,#scr-game .sudoku,#scr-game .mm,#scr-game .stroop-c{width:100%;box-sizing:border-box}
+#scr-game .sudoku{gap:1px}
+#scr-game .sd-c.br{margin-right:0;border-right:3px solid #5A52D5}
+#scr-game .sd-c.bb{margin-bottom:0;border-bottom:3px solid #5A52D5}
+body.night #scr-game .sd-c.br{border-right-color:#C8A040}body.night #scr-game .sd-c.bb{border-bottom-color:#C8A040}
