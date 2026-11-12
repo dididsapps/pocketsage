@@ -16809,6 +16809,57 @@ function markStreakToday(){
 // PARENT DASHBOARD
 // ════════════════════════════════════════════
 function getParentPin(){return localStorage.getItem('psa3_pin')||'1234';}
+// ── Code oublié : barrière parentale (nombre écrit en lettres → réponse en chiffres) ──
+let _pinFails=0,_gateFails=0,_gateLockUntil=0;
+function _nbFr(n){
+  const u=['zéro','un','deux','trois','quatre','cinq','six','sept','huit','neuf','dix','onze','douze','treize','quatorze','quinze','seize','dix-sept','dix-huit','dix-neuf'];
+  const d=['','','vingt','trente','quarante','cinquante','soixante','soixante','quatre-vingt','quatre-vingt'];
+  function b100(n){if(n<20)return u[n];const t=Math.floor(n/10),r=n%10;
+    if(t===7||t===9){const base=d[t];const rest=10+r;return base+(t===7&&r===1?' et ':'-')+u[rest];}
+    if(r===0)return d[t]+(t===8?'s':'');if(r===1&&t!==8)return d[t]+' et un';return d[t]+'-'+u[r];}
+  if(n<100)return b100(n);const c=Math.floor(n/100),r=n%100;
+  const cent=c===1?'cent':u[c]+' cent'+(r===0?'s':'');return r?cent+' '+b100(r):cent;
+}
+function _gateQuestion(){
+  const fr=!P()||!P().native||P().native==='FR';
+  if(fr){const a=200+Math.floor(Math.random()*700),b=11+Math.floor(Math.random()*80);
+    return {q:'Écrivez en chiffres le résultat de :<br><b>'+_nbFr(a)+' moins '+_nbFr(b)+'</b>',a:a-b};}
+  const a=12+Math.floor(Math.random()*80),b=3+Math.floor(Math.random()*7),c=11+Math.floor(Math.random()*80);
+  return {q:'<b>'+a+' × '+b+' + '+c+' = ?</b>',a:a*b+c};
+}
+function pinForgot(){
+  const old=document.getElementById('pin-dlg');if(old)old.remove();
+  const wait=Math.ceil((_gateLockUntil-Date.now())/1000);
+  if(wait>0){toast('⏳ Réessayez dans '+wait+' s');return;}
+  const g=_gateQuestion();
+  const dlg=document.createElement('div');dlg.id='gate-dlg';
+  dlg.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:9995;display:flex;align-items:center;justify-content:center;';
+  dlg.innerHTML=`<div style="background:#fff;border-radius:20px;padding:24px 22px;width:300px;max-width:92vw;text-align:center;box-shadow:0 8px 40px rgba(0,0,0,.3)">
+    <div style="font-size:34px;margin-bottom:6px">🧑‍🤝‍🧑</div>
+    <div style="font-weight:800;font-size:16px;margin-bottom:4px">Code oublié</div>
+    <div style="font-size:12.5px;color:#777;margin-bottom:12px">Vérification réservée à un adulte, puis vous choisirez un nouveau code.</div>
+    <div style="font-size:15px;line-height:1.45;margin-bottom:12px;color:#2D2D44">${g.q}</div>
+    <input id="gate-in" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="5" autocomplete="off"
+      style="width:100%;box-sizing:border-box;font-size:24px;text-align:center;padding:10px;border:2px solid #6C63FF;border-radius:10px;outline:none;margin-bottom:8px">
+    <div id="gate-err" style="color:#CC2222;font-size:13px;min-height:18px;margin-bottom:8px"></div>
+    <div style="display:flex;gap:10px">
+      <button onclick="document.getElementById('gate-dlg').remove()" style="flex:1;padding:10px;border-radius:10px;border:none;background:#eee;font-weight:700">Annuler</button>
+      <button id="gate-ok" style="flex:1;padding:10px;border-radius:10px;border:none;background:#6C63FF;color:#fff;font-weight:700">Valider</button>
+    </div></div>`;
+  document.body.appendChild(dlg);
+  const inp=document.getElementById('gate-in');inp.focus();
+  function check(){
+    if(parseInt(inp.value.replace(/\D/g,''),10)===g.a){_gateFails=0;_pinFails=0;dlg.remove();changePin();
+      setTimeout(()=>{const t=document.querySelector('#pin-change-dlg div[style*="font-weight:800"]');if(t)t.textContent='Choisissez un nouveau code';},0);return;}
+    _gateFails++;sndKO();
+    if(_gateFails>=3){_gateFails=0;_gateLockUntil=Date.now()+30000;dlg.remove();toast('⏳ Trop d\'essais : réessayez dans 30 s');return;}
+    dlg.remove();pinForgot();
+    const e=document.getElementById('gate-err');if(e)e.textContent='❌ Ce n\'est pas ça, voici une autre question';
+  }
+  document.getElementById('gate-ok').onclick=check;
+  inp.onkeydown=e=>{if(e.key==='Enter')check();};
+}
+
 function openParent(){
   sndTap();
   // prompt() bloqué dans les iframes (iOS Safari) — utilisation d'un dialog HTML custom
@@ -16820,7 +16871,8 @@ function openParent(){
   dlg.innerHTML=`<div style="background:#fff;border-radius:20px;padding:28px 24px;width:280px;max-width:90vw;text-align:center;box-shadow:0 8px 40px rgba(0,0,0,.3)">
     <div style="font-size:36px;margin-bottom:8px">🔒</div>
     <div style="font-weight:800;font-size:17px;margin-bottom:4px">Espace Parents</div>
-    <div style="font-size:13px;color:#888;margin-bottom:16px">Code parental (défaut : 1234)</div>
+    <div style="font-size:13px;color:#888;margin-bottom:16px">${localStorage.getItem('psa3_pin')?'Code parental':'Première fois : code 1234 (pensez à le changer)'}</div>
+    <div id="pin-err" style="color:#CC2222;font-size:13px;min-height:18px;margin:-8px 0 8px"></div>
     <input id="pin-input" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="6"
       style="width:100%;box-sizing:border-box;font-size:24px;text-align:center;letter-spacing:6px;padding:10px;border:2px solid #6C63FF;border-radius:10px;outline:none;margin-bottom:14px"
       placeholder="••••">
@@ -16834,8 +16886,13 @@ function openParent(){
   inp.focus();
   function doCheck(){
     const pin=inp.value;
-    dlg.remove();
-    if(pin!==getParentPin()){toast('❌ Code incorrect');return;}
+    if(pin!==getParentPin()){
+      _pinFails++;sndKO();inp.value='';inp.focus();
+      const e=document.getElementById('pin-err');
+      if(e)e.innerHTML='❌ Code incorrect'+(_pinFails>=3?'<br><a href="#" onclick="event.preventDefault();pinForgot()" style="color:#5A52D5;font-weight:800">Code oublié ?</a>':'');
+      return;
+    }
+    _pinFails=0;dlg.remove();
     _showParentPanel();
   }
   document.getElementById('pin-ok').onclick=doCheck;
