@@ -1,5 +1,5 @@
 // PocketSage Academy — Service Worker v2
-const CACHE = 'pocketsage-v21';
+const CACHE = 'pocketsage-v22';
 const ASSETS = [
   '/',
   '/index.html',
@@ -12,7 +12,7 @@ const ASSETS = [
 
 self.addEventListener('install', e => {
   e.waitUntil(
-    caches.open(CACHE).then(c => c.addAll(ASSETS))
+    caches.open(CACHE).then(c => c.addAll(ASSETS.map(u => new Request(u, {cache: 'reload'}))))
   );
   self.skipWaiting();
 });
@@ -39,6 +39,19 @@ self.addEventListener('fetch', e => {
         }
         return res;
       }).catch(() => caches.match(e.request))
+    );
+    return;
+  }
+  // Code de l'appli (page, js, css) : réseau d'abord (toujours la dernière version, page et
+  // scripts ensemble), cache seulement hors ligne — évite « page neuve + vieux script ».
+  const u = new URL(e.request.url);
+  if (e.request.method === 'GET' && u.origin === self.location.origin &&
+      (e.request.mode === 'navigate' || /\/(js|css)\/|\.html$|\/$/.test(u.pathname))) {
+    e.respondWith(
+      fetch(e.request, {cache: 'no-cache'}).then(res => {
+        if (res && res.status === 200) { const clone = res.clone(); caches.open(CACHE).then(c => c.put(e.request, clone)); }
+        return res;
+      }).catch(() => caches.match(e.request, {ignoreSearch: true}))
     );
     return;
   }
