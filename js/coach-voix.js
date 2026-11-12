@@ -26,10 +26,13 @@ const T={
   sayNextLast:'Pour terminer la séance, crie NEXT !',
   end:n=>`Bravo ! Séance complète terminée ! ${n} exercices réussis comme un champion !`,
   left:n=>`Encore ${n} secondes !`,
+  water:"Pause eau ! Bois quelques gorgées d'eau et reprends ton souffle.",
+  rest:["Petite pause. Respire calmement.","On souffle un peu. Inspire par le nez, souffle par la bouche.","Récupère bien, tu l'as mérité.","Pause ! Secoue doucement les bras et les jambes.","Respire profondément, on repart bientôt."],
+  waterEnd:"Et maintenant, bois un grand verre d'eau. Ton corps te dit merci !",
   dayEnd:"Bravo, séance terminée ! Montre à tes parents ce que tu as appris aujourd'hui. À demain !"
 };
 function allTexts(defis,plans,phases,msgs){
-  const out=new Set([T.first,...T.bravo,T.sayGo,T.sayNext,T.sayNextLast,T.dayEnd,...T.count]);
+  const out=new Set([T.first,T.water,T.waterEnd,...T.rest,...T.bravo,T.sayGo,T.sayNext,T.sayNextLast,T.dayEnd,...T.count]);
   for(let n=10;n<=120;n+=10)out.add(T.left(n));
   Object.values(plans).forEach(p=>{out.add(T.intro(p,p.pattern.length));out.add(T.end(p.pattern.length));});
   Object.values(phases).forEach(a=>a.forEach(l=>out.add(T.phase(l))));

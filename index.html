@@ -15402,22 +15402,22 @@ let COACH = { age: null, seq: [], stepIdx: 0, voice: true, timer: null };
 const COACH_PLANS = {
   5:  { // 4-6 ans
     dur: 20,
-    pattern: ['cardio','cardio','gainage','cardio','stretching','stretching','gainage','respiration'],
+    pattern: ['cardio','cardio','gainage','cardio','gainage','stretching','stretching','respiration'],
     label:'4-6 ans', emoji:'🐣'
   },
   9:  { // 7-10 ans
     dur: 30,
-    pattern: ['cardio','cardio','gainage','cardio','gainage','cardio','stretching','stretching','gainage','respiration'],
+    pattern: ['cardio','cardio','gainage','cardio','gainage','cardio','gainage','stretching','stretching','respiration'],
     label:'7-10 ans', emoji:'🐸'
   },
   13: { // 11-14 ans
     dur: 35,
-    pattern: ['cardio','cardio','cardio','gainage','gainage','cardio','cardio','stretching','stretching','gainage','stretching','respiration'],
+    pattern: ['cardio','cardio','cardio','gainage','gainage','cardio','cardio','gainage','stretching','stretching','respiration','respiration'],
     label:'11-14 ans', emoji:'🦅'
   },
   18: { // Adulte
     dur: 40,
-    pattern: ['cardio','cardio','cardio','gainage','gainage','gainage','cardio','cardio','stretching','stretching','gainage','gainage','stretching','respiration'],
+    pattern: ['cardio','cardio','cardio','gainage','gainage','gainage','cardio','cardio','gainage','stretching','stretching','stretching','respiration','respiration'],
     label:'Adulte', emoji:'💪'
   }
 };
@@ -15476,9 +15476,15 @@ function buildCoachSequence(age){
 
   // Pool par catégorie, shufflé
   const pools={};
+  // Exercices adaptés à l'âge (± 1 an de tolérance) ; si trop peu, on prend toute la catégorie
+  const fits=d=>{const a=String(d.age||'');const m=a.match(/^(\d+)\s*-\s*(\d+)$/);if(m)return age>=+m[1]-1&&age<=+m[2]+1;const n=parseInt(a);return isNaN(n)||(a.endsWith('+')?age>=n:true);};
   ['cardio','gainage','stretching','respiration'].forEach(cat=>{
-    pools[cat]=shuffle(all.filter(d=>d.cat===cat));
+    const ok=all.filter(d=>d.cat===cat&&fits(d));
+    pools[cat]=shuffle(ok.length?ok:all.filter(d=>d.cat===cat));
   });
+  // Échauffement : on commence par le cardio le plus doux
+  const warm=pools.cardio.reduce((m,d)=>(d.diff||1)<(m.diff||1)?d:m,pools.cardio[0]);
+  pools.cardio=[warm,...pools.cardio.filter(d=>d!==warm)];
 
   // Compter l'usage par catégorie
   const usageCount={cardio:0,gainage:0,stretching:0,respiration:0};
@@ -15532,7 +15538,7 @@ function startCoachStep(idx){
   if(COACH.voice){
     // On affiche l'exercice tout de suite, le coach l'annonce, puis (mains libres) on écoute « GO »
     renderCoachStep(item, idx, total, true);
-    const parts = idx>0 ? [COACH_TXT.phase(item._phase), coachSpeakTxt(_coachMsg(item.cat)), COACH_TXT.nom(item), COACH_TXT.consigne(item)]
+    const parts = item._pause ? [COACH_TXT.water] : idx>0 ? [COACH_TXT.phase(item._phase), coachSpeakTxt(_coachMsg(item.cat)), COACH_TXT.nom(item), COACH_TXT.consigne(item)]
                         : [COACH_TXT.first, COACH_TXT.nom(item), COACH_TXT.consigne(item)];
     const tok = COACH.tok = (COACH.tok||0)+1;
     coachSayList(parts, ()=>{ if(tok!==COACH.tok)return; if(APP.car){const b=document.getElementById('df-st');if(b)b.click();} else _coachAskGo(item); });
@@ -15557,7 +15563,7 @@ function renderCoachStep(item, stepNum, totalSteps, announced){
   const dur=item._coachDur||item.dur||30;
   let rem=dur, running=false;
 
-  const catInfo={cardio:{l:'❤️ Cardio',e:'🏃'},gainage:{l:'💪 Gainage',e:'🏋️'},stretching:{l:'🧘 Stretching',e:'🤸'},respiration:{l:'🌬️ Respiration',e:'🫁'}};
+  const catInfo={pause:{l:'💧 Pause',e:'💧'},cardio:{l:'❤️ Cardio',e:'🏃'},gainage:{l:'💪 Gainage',e:'🏋️'},stretching:{l:'🧘 Stretching',e:'🤸'},respiration:{l:'🌬️ Respiration',e:'🫁'}};
   const ci=catInfo[item.cat]||{l:'💪 Défi',e:''};
   const emoji=item.nom.match(/\p{Emoji}/u)?.[0]||ci.e||'💪';
 
@@ -15623,14 +15629,14 @@ function renderCoachStep(item, stepNum, totalSteps, announced){
   };
 
   document.getElementById('df-dn').onclick=()=>{
-    const p=P();if(p&&!p.done[item.id]){p.score++;p.done[item.id]=true;saveApp();celebrate();sndStar();}
+    const p=P();if(item._pause)return;if(p&&!p.done[item.id]){p.score++;p.done[item.id]=true;saveApp();celebrate();sndStar();}
     if(p)document.getElementById('df-hsc').textContent='⭐ '+p.score;
   };
 
   document.getElementById('df-nx').onclick=()=>{
     clearInterval(COACH.timer);COACH.timer=null;try{hfStop();}catch(e){}COACH.tok=(COACH.tok||0)+1;coachStopVoice();
     const next=stepNum+1;
-    if(next<totalSteps) startCoachStep(next);
+    if(next<totalSteps) coachRest(next);
     else endCoachSession();
   };
 
@@ -15639,9 +15645,32 @@ function renderCoachStep(item, stepNum, totalSteps, announced){
   if(APP.car && !announced) setTimeout(()=>{ const btn=document.getElementById('df-st');if(btn)btn.click(); },500);
 }
 
+// Petite pause entre deux exercices (10 s de respiration ; 20 s « pause eau » au milieu de la séance)
+function coachRest(next){
+  clearInterval(COACH.timer);COACH.timer=null;try{hfStop();}catch(e){}
+  const water=next===Math.floor(COACH.seq.length/2);
+  const dur=water?20:10;let rem=dur;const tok=COACH.tok=(COACH.tok||0)+1;
+  const c=document.getElementById('df-c');
+  c.innerHTML=`<div class="dcard" style="background:linear-gradient(135deg,${water?'#48CAE4,#0077B6':'#B7E4C7,#52B788'});color:#fff">
+      <div class="de">${water?'💧':'🌬️'}</div>
+      <h2>${water?'Pause eau':'Petite pause'}</h2>
+      <p>${water?'Bois quelques gorgées d’eau et reprends ton souffle.':'Respire calmement : inspire par le nez, souffle par la bouche.'}</p>
+      <div class="tring run" id="rest-ring">${dur}s</div>
+      <p style="font-size:13px;opacity:.9;margin-top:8px">Ensuite : ${COACH.seq[next].nom}</p>
+    </div>
+    <button class="nxtbtn show" id="rest-skip" style="margin-top:12px">Passer la pause ⏭</button>`;
+  document.getElementById('df-htit').textContent=water?'💧 Pause eau':'🌬️ Petite pause';
+  const go=()=>{if(tok!==COACH.tok)return;clearInterval(COACH.timer);COACH.timer=null;startCoachStep(next);};
+  document.getElementById('rest-skip').onclick=()=>{sndTap();COACH.tok++;clearInterval(COACH.timer);COACH.timer=null;coachStopVoice();startCoachStep(next);};
+  if(COACH.voice) coachSay(water?COACH_TXT.water:COACH_TXT.rest[Math.floor(Math.random()*COACH_TXT.rest.length)]);
+  COACH.timer=setInterval(()=>{if(tok!==COACH.tok){clearInterval(COACH.timer);return;}rem--;
+    const r=document.getElementById('rest-ring');if(r)r.textContent=rem+'s';
+    if(rem<=3&&rem>0){try{beep(1046,.09,'sine',.16);}catch(e){}}
+    if(rem<=0)go();},1000);
+}
 function endCoachSession(){
   clearInterval(COACH.timer);COACH.timer=null;coachWakeOff();
-  const total=COACH.seq.length;
+  const total=COACH.seq.filter(x=>!x._pause).length;
   const plan=COACH.plan;
   // Écran de fin coach
   const c=document.getElementById('df-c');
@@ -15655,7 +15684,7 @@ function endCoachSession(){
         <span style="font-size:12px">Cardio · Gainage · Stretching · Respiration</span>
       </div>
       <div style="background:linear-gradient(135deg,#FFD166,#FFA500);border-radius:18px;padding:16px;margin-bottom:20px;color:#5C3100;font-weight:800;font-size:15px">
-        🌟 Ton corps est plus fort qu'hier !
+        🌟 Ton corps est plus fort qu'hier !<br><span style="font-size:13px">💧 Pense à boire un grand verre d'eau.</span>
       </div>
       <button onclick="sndTap();openMod('defis')" style="width:100%;background:linear-gradient(135deg,#FF6B6B,#C9184A);border:none;border-radius:18px;padding:16px;font-family:var(--f);font-size:15px;font-weight:900;color:#fff;cursor:pointer;margin-bottom:10px;touch-action:manipulation">
         🏅 Refaire une séance
@@ -15668,7 +15697,7 @@ function endCoachSession(){
   show('defi');
   celebrate(); sndStar();
   try{hfStop();}catch(e){}
-  if(COACH.voice) setTimeout(()=>coachSay(COACH_TXT.end(total)),300);
+  if(COACH.voice) setTimeout(()=>coachSayList([COACH_TXT.end(total),COACH_TXT.waterEnd]),300);
 }
 
 // ════════════════════════════════════════════
