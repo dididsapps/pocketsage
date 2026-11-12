@@ -55,3 +55,13 @@ Dossier de travail : idées de prix, de formules d'abonnement, et coûts associ�
 - **+ jeux 15 min/jour** ; **sport et fiches PDF libres**.
 - ⚠️ Règle stores (Google Play « Familles », Apple « Enfants ») : **ne jamais pousser l'enfant à acheter**. Côté enfant : « C'est fini pour aujourd'hui, à demain ! ». Proposition d'abonnement **uniquement côté parent** (Espace Parents protégé par PIN, ou message au parent).
 - Option A (module du jour) et option B à départager au moment de créer les abonnements.
+
+## 7. Contacter les parents (12/11/2026 — à faire au lancement, rien codé)
+- Aujourd'hui : aucun compte, aucun email, tout reste sur le téléphone (atout vie privée).
+- **Paiement des abonnements par Google Play / App Store** : ils gèrent le compte parent, le paiement et le contrôle parental → pas besoin de notre côté de données bancaires ni même d'email.
+- **Email du parent facultatif**, demandé **dans l'Espace Parents (PIN)**, jamais à l'enfant ; usage expliqué : **bilan hebdomadaire** des progrès.
+- **Bilans** : envoyés à ceux qui ont donné leur email pour ça (lien « ne plus recevoir » dans chaque email). Pas de publicité appuyée dedans (sinon = email commercial) ; une mention neutre ou un lien vers l'Espace Parents reste acceptable.
+- **Offres / abonnement par email** : seulement avec une **case séparée non cochée** (« Je souhaite recevoir les nouveautés et offres »). Accord préalable obligatoire pour la prospection par email des particuliers.
+- La CNIL juge qu'un simple email ne prouve pas l'accord parental (facile à contourner) → ne pas s'en servir comme « preuve de consentement ».
+- Prestataire email avec données en Europe + contrat de traitement (DPA) ; droit de suppression ; mention dans la politique de confidentialité.
+- Faire relire la politique de confidentialité par un juriste avant le lancement.
