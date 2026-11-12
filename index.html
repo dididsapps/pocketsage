@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=30">
+<link rel="stylesheet" href="css/jeux.css?v=31">
 </head>
 <body>
 
@@ -1442,9 +1442,9 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=30"></script>
-<script src="js/jeux-cerveau.js?v=30"></script>
-<script src="js/coach-voix.js?v=30"></script>
+<script src="js/jeux.js?v=31"></script>
+<script src="js/jeux-cerveau.js?v=31"></script>
+<script src="js/coach-voix.js?v=31"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -12390,6 +12390,16 @@ function levelLabel(a){const n=ageNum(a);
 
 // ── Filtrage par âge ──────────────────────────────────────────
 // Mappe un âge numérique vers les classes scolaires autorisées
+const CLASSES=['GS','CP','CE1','CE2','CM1','CM2','6ème','5ème','4ème','3ème','Lycée'];
+const CLASS_MODS=['savoirs','logique'];   // modules rangés par classe
+function _profClasse(){const n=parseInt(P()&&P().age)||8;return n<=5?'GS':n>=15?'Lycée':CLASSES[n-5];}
+function _selClasse(){const i=CLASSES.indexOf(_profClasse());const j=Math.max(0,Math.min(CLASSES.length-1,i+(APP.classOff||0)));return CLASSES[j];}
+function _classeFits(item,cl){if(item.classe)return item.classe===cl;if(item.age){const r=String(_classeToAgeRange(cl)||'').split('-').map(Number);return !r[0]||_ageMatch(item.age,Math.round((r[0]+(r[1]||r[0]))/2),false);}return true;}
+function _classBarHTML(){
+  const i=CLASSES.indexOf(_profClasse()),off=APP.classOff||0;
+  const opts=[[-1,'↩️ Réviser'],[0,'🎯 Ma classe'],[1,'🚀 En avance']].filter(([o])=>CLASSES[i+o]);
+  return '<div class="sport-grp class-bar">'+opts.map(([o,l])=>`<button class="${o===off?'sel':''}" onclick="sndTap();APP.classOff=${o};openMod(APP.curMod)"><span>${l}</span><b>${CLASSES[i+o]}</b></button>`).join('')+'</div>';
+}
 function _ageToClasses(age){
   // GS=5-6, CP=6-7, CE1=7-8, CE2=8-9, CM1=9-10, CM2=10-11, 6ème=11-12, 5ème=12-13, 4ème=13-14, 3ème=14-15, Lycée=15+
   const n = typeof age === 'string' ? ageNum(age) : (age||6);
@@ -13086,6 +13096,7 @@ async function openMod(mod){
       }
     }catch(e){console.error('subcats error:',e);subs=[];}
     if(!subs||!subs.length){toast('Aucun contenu pour '+cfg.title,'err');return;}
+    if(CLASS_MODS.includes(mod)){const cl=_selClasse();subs=subs.filter(sc=>sc.isTables||!sc.d||!sc.d.length||sc.d.some(i=>_classeFits(i,cl)));}
     try{renderTabs(subs,mod);}catch(e){console.error('renderTabs:',e);}
     // Slider d'âge — injecté dans #mod-age-bar si présent
     try{
@@ -13095,7 +13106,7 @@ async function openMod(mod){
           const ga=_getSliderAge(),grp=_globalShowAll?'all':ga<=6?5:ga<=12?9:15;
           ageBarEl.innerHTML='<p class="sport-warn">Adultes et seniors : adaptez l’intensité et demandez un avis médical en cas de doute.</p><div class="sport-grp">'+[[5,'🐣 4-6 ans'],[9,'🐸 7-12 ans'],[15,'🦅 13 ans et + · adultes'],['all','Tout']].map(([v,l])=>`<button class="${grp===v?'sel':''}" onclick="_sportGroup('${v}')">${l}</button>`).join('')+'</div>';
           window._sportGroup=v=>{if(v==='all'){_globalShowAll=true;}else{_globalShowAll=false;_globalSliderAge=+v;}openMod('defis');};
-        } else if(mod==='langues'){ ageBarEl.innerHTML=''; setTimeout(renderLangLevelBar,0); } else
+        } else if(mod==='langues'){ ageBarEl.innerHTML=''; setTimeout(renderLangLevelBar,0); } else if(CLASS_MODS.includes(mod)){ ageBarEl.innerHTML=_classBarHTML(); } else
         ageBarEl.innerHTML=_globalSliderHTML(_getSliderAge(),_globalShowAll,'mod-age-sl','mod-age-all');
         const sl=document.getElementById('mod-age-sl');
         const cb=document.getElementById('mod-age-all');
@@ -13167,7 +13178,8 @@ function renderList(items,mod,tabMeta){
   if(mod==='savoirs'&&tabMeta&&tabMeta.isTables){renderTables();return;}
   const p=P();
   const _sa=_getSliderAge(),_sAll=_globalShowAll;
-  if(!_sAll&&mod!=='langues') items=items.filter(i=>_ageMatch(i.age||i.classe&&_classeToAgeRange(i.classe),_sa,false));
+  if(CLASS_MODS.includes(mod)){const cl=_selClasse();items=items.filter(i=>_classeFits(i,cl));}
+  else if(!_sAll&&mod!=='langues') items=items.filter(i=>_ageMatch(i.age||i.classe&&_classeToAgeRange(i.classe),_sa,false));
   items.forEach((item,idx)=>{
     const done=p&&p.done&&p.done[item.id];
     const d=document.createElement('div');d.className='ecard'+(done?' done':'');
@@ -15753,8 +15765,9 @@ function _globalSliderHTML(age,showAll,onChangeId,onCheckId){
     <span style="font-size:18px">🎂</span>
     <div style="flex:1">
       <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--tl);margin-bottom:4px">
-        <span>4</span><span style="font-weight:700;color:var(--v)">${age===18?'18 ans et +':age+' ans'}</span><span>18 et +</span>
+        <span>4</span><span>18 et +</span>
       </div>
+      <div style="position:relative;height:16px;margin:-2px 0 2px"><span style="position:absolute;left:calc(${(age-4)/14*100}% - ${(age-4)/14*16}px + 8px);transform:translateX(-50%);font-size:11px;font-weight:800;color:var(--v);white-space:nowrap">${age===18?'18 ans et +':age+' ans'}</span></div>
       <input type="range" min="4" max="18" value="${age}" id="${onChangeId}" style="width:100%;accent-color:var(--v);cursor:pointer">
     </div>
     <label style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--tl);cursor:pointer;white-space:nowrap">

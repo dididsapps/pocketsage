@@ -263,3 +263,8 @@ body.night .coach-len-btn{background:#2A1E0A;color:#F5E6C8}body.night .coach-len
 /* Langues : 4 niveaux sur une seule ligne */
 .sport-grp.lang-niv{display:grid!important;grid-template-columns:repeat(4,1fr);gap:5px}
 .sport-grp.lang-niv button{padding:8px 2px;font-size:11.5px;white-space:normal;line-height:1.2}
+/* Sciences / Logique : choix de la classe */
+.sport-grp.class-bar{display:grid!important;grid-template-columns:repeat(3,1fr);gap:8px;margin:8px 0}
+.sport-grp.class-bar button{display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 4px;border-radius:14px}
+.sport-grp.class-bar button span{font-size:11.5px;font-weight:800}
+.sport-grp.class-bar button b{font-size:15px}
