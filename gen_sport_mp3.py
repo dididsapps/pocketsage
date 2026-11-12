@@ -6,8 +6,11 @@ PocketSage — Coach Sportif : MP3 des phrases du coach (voix Google énergique,
 2. Génère seulement les MP3 nouveaux → R2 audio/sport/fr/{hash}.mp3
 3. Écrit data/sport/fr.audio.json  →  {"texte exact": "hash"} (lu par js/coach-voix.js)
 
-Voix : on essaie d'abord une voix Google « Chirp 3 HD » enjouée (Puck), débit 0,95 ;
-si elle n'est pas disponible, voix Neural2 masculine, débit 0,95, un peu plus aiguë (plus dynamique).
+Voix (12/11/2026) : ElevenLabs pour le français (Olivier) et l'anglais (Mr Claus) — plus drôle et vivant
+pour tous les âges ; Google TTS pour les autres langues. Réglages énergiques, débit 0,95.
+Relecture automatique avant génération (js/coach-voix.js → lint) : les phrases à risque (abréviations,
+MAJUSCULES, mots anglais, « Dis next »…) ne sont PAS générées et sont listées dans
+docs/jeux/sport_textes_a_corriger.md (l'appli utilise alors la voix du téléphone pour elles).
 Lancé par .github/workflows/sport-tts.yml. Manuel : python3 gen_sport_mp3.py [--check]
 """
 import base64, hashlib, json, os, subprocess, sys, tempfile, time
@@ -22,6 +25,9 @@ if _env.exists():
             os.environ.setdefault(_k.strip(), _v.strip().strip('"').strip("'"))
 
 GOOGLE_KEY = os.environ.get("GOOGLE_TTS_API_KEY", "").strip()
+EL_KEY = os.environ.get("ELEVENLABS_API_KEY", "").strip()
+EL_VOICES = {"FR": "GFj5Qf6cNQ3Lgp8VKBwc", "EN": "uDsPstFWFBUXjIBimV7s"}  # Olivier, Mr Claus
+REPORT = ROOT / "docs" / "jeux" / "sport_textes_a_corriger.md"
 R2_ACCESS = os.environ.get("R2_ACCESS_KEY", "").strip()
 R2_SECRET = os.environ.get("R2_SECRET_KEY", "").strip()
 R2_ENDPOINT = os.environ.get("R2_ENDPOINT", "https://8ea67fd06083effd6f76efdefb92092f.r2.cloudflarestorage.com")
@@ -49,24 +55,51 @@ def tts(text, voice, cfg):
     return None
 
 
+def el_tts(text, vid):
+    import requests
+    vs = {"stability": 0.4, "similarity_boost": 0.8, "style": 0.45, "use_speaker_boost": True, "speed": 0.95}
+    for a in range(5):
+        r = requests.post(f"https://api.elevenlabs.io/v1/text-to-speech/{vid}",
+                          headers={"xi-api-key": EL_KEY, "Content-Type": "application/json"},
+                          json={"text": text, "model_id": "eleven_multilingual_v2", "voice_settings": vs}, timeout=60)
+        if r.status_code == 200:
+            return r.content
+        if r.status_code == 422 and "speed" in vs:
+            vs.pop("speed"); continue  # réglage de vitesse non accepté : on réessaie sans
+        if r.status_code in (429, 500, 502, 503):
+            time.sleep(5 * 2 ** a); continue
+        print(f"    ✗ ElevenLabs {r.status_code}: {r.text[:150]}")
+        return None
+    return None
+
+
+def lint_texts():
+    out = subprocess.run(["node", str(ROOT / "tools" / "sport_texts.js"), "--lint"], capture_output=True, text=True)
+    bad, cur = {}, None
+    for line in out.stderr.splitlines():
+        if line.startswith("⚠️"):
+            cur = line[2:].strip()
+        elif line.strip().startswith("«") and cur:
+            bad[line.strip()[1:-1].strip()] = cur
+    return bad
+
+
 def main():
     texts = json.loads(subprocess.check_output(["node", str(ROOT / "tools" / "sport_texts.js")], text=True))
     man = json.loads(MAN.read_text(encoding="utf-8")) if MAN.exists() else {}
     print(f"{len(texts)} phrases du coach")
     if "--check" in sys.argv:
         print(f"{sum(1 for t in texts if t not in man)} sans MP3"); return
-    # choisir la voix (test sur une phrase courte)
-    chosen = None
-    for v, cfg in VOICES:
-        if tts("C'est parti !", v, cfg):
-            chosen = (v, cfg); break
-        print(f"  voix {v} {cfg.get('speakingRate','')} indisponible, essai suivant")
-    if not chosen:
-        print("❌ aucune voix Google disponible"); sys.exit(2)
-    v, cfg = chosen
-    vid = v + ":" + json.dumps(cfg, sort_keys=True)
-    fp = lambda t: hashlib.sha1(f"{t}|{vid}".encode()).hexdigest()[:12]
-    todo = [t for t in texts if man.get(t) != fp(t)]
+    bad = lint_texts()
+    REPORT.parent.mkdir(parents=True, exist_ok=True)
+    REPORT.write_text("# Phrases du coach à corriger avant génération de la voix\n\n" + (
+        "\n".join(f"- {why} : « {t} »" for t, why in sorted(bad.items())) if bad else "✅ Aucune (dernière vérification automatique).") + "\n", encoding="utf-8")
+    if bad:
+        print(f"⚠️ {len(bad)} phrase(s) à corriger, non générées (voir {REPORT.name})")
+    texts_ok = [t for t in texts if t not in bad]
+    if not EL_KEY:
+        print("❌ ELEVENLABS_API_KEY manquante"); sys.exit(2)
+    v, cfg = "eleven:" + EL_VOICES["FR"], {"model": "eleven_multilingual_v2", "style": 0.45, "speed": 0.95}
     print(f"voix : {v} {cfg} — {len(todo)} MP3 à générer ({sum(map(len, todo))} caractères)")
     if todo:
         import boto3
@@ -75,7 +108,7 @@ def main():
                           config=Config(region_name="auto", retries={"max_attempts": 3, "mode": "adaptive"}))
         tmp = Path(tempfile.mkdtemp()); err = 0
         for t in todo:
-            data = tts(t, v, cfg)
+            data = el_tts(t, EL_VOICES["FR"])
             if not data:
                 err += 1; print("  ✗", t[:60]); continue
             h = fp(t); f = tmp / f"{h}.mp3"; f.write_bytes(data)

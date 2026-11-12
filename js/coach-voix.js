@@ -10,7 +10,9 @@ const clean=s=>String(s||'').replace(/[\p{Extended_Pictographic}\uFE0F\u200D]/gu
 const speak=s=>clean(s)
   .replace(/\b1\s?s\b/g,'1 seconde').replace(/(\d+)\s?s\b/g,'$1 secondes')
   .replace(/(\d+)\s?min\b/g,'$1 minutes').replace(/(\d+)\s?x\b/gi,'$1 fois')
-  .replace(/\s*→\s*/g,', puis ').replace(/\s+—\s+/g,', ');
+  .replace(/\s*→\s*/g,', puis ').replace(/\s+—\s+/g,', ')
+  // MOTS EN MAJUSCULES → minuscules (sinon lus lettre par lettre), sauf les commandes GO / NEXT
+  .replace(/\b[A-ZÀ-Ý]{2,}\b/g,w=>/^(GO|NEXT)$/.test(w)?w:w.toLowerCase());
 const T={
   intro:(plan,n)=>`Séance pour ${plan.label} ! ${n} exercices. Prépare-toi !`,
   first:'Premier exercice !',
@@ -18,7 +20,7 @@ const T={
   nom:item=>speak(item.nom)+'.',
   consigne:item=>speak(item.consigne),
   count:['Un !','Deux !','Trois !'],
-  bravo:'Bravo ! Super !',
+  bravo:['Bravo ! Super !','Génial, c\'est réussi !','Trop fort !','Champion !','Excellent travail !','Magnifique, bravo !','Tu as assuré !','Waouh, quelle énergie !','Parfait, bien joué !','Super, tu peux être fier de toi !'],
   sayGo:'Quand tu es prêt, crie GO !',
   sayNext:"Pour l'exercice suivant, crie NEXT !",
   sayNextLast:'Pour terminer la séance, crie NEXT !',
@@ -27,7 +29,7 @@ const T={
   dayEnd:"Bravo, séance terminée ! Montre à tes parents ce que tu as appris aujourd'hui. À demain !"
 };
 function allTexts(defis,plans,phases,msgs){
-  const out=new Set([T.first,T.bravo,T.sayGo,T.sayNext,T.sayNextLast,T.dayEnd,...T.count]);
+  const out=new Set([T.first,...T.bravo,T.sayGo,T.sayNext,T.sayNextLast,T.dayEnd,...T.count]);
   for(let n=10;n<=120;n+=10)out.add(T.left(n));
   Object.values(plans).forEach(p=>{out.add(T.intro(p,p.pattern.length));out.add(T.end(p.pattern.length));});
   Object.values(phases).forEach(a=>a.forEach(l=>out.add(T.phase(l))));
@@ -35,8 +37,18 @@ function allTexts(defis,plans,phases,msgs){
   defis.forEach(d=>{out.add(T.nom(d));out.add(T.consigne(d));});
   return [...out].filter(Boolean).sort();
 }
+// Relecture avant génération : repère ce que la voix risque de mal lire
+function lint(t){const pb=[];
+  if(/\d\s?(s|x|min|m|km|kg)\b/i.test(t))pb.push('abréviation (10s, 5x…) à écrire en toutes lettres');
+  if(/[→/%&+*#@|<>_]/.test(t))pb.push('symbole lu bizarrement');
+  if(/\b(?!GO\b|NEXT\b)[A-ZÀ-Ý]{2,}\b/.test(t))pb.push('mot en MAJUSCULES (lu lettre par lettre)');
+  if(/\b(dis|dites)\s+(go|next)\b/i.test(t))pb.push('« Dis » + mot anglais (prononcé « disse »)');
+  if(/\b(time|boost|core|interval|ok|cool|let's|ready|stop|top|fun|run|jump)\b/i.test(t.replace(/\b(GO|NEXT)\b/g,'')))pb.push('mot anglais dans une phrase française');
+  if(t.length>220)pb.push('phrase très longue (à couper)');
+  return pb;}
+root.coachLint=lint;
 root.COACH_TXT=T;root.coachClean=clean;root.coachSpeakTxt=speak;root.coachAllTexts=allTexts;
-if(typeof module!=='undefined'&&module.exports)module.exports={T,clean,speak,allTexts};
+if(typeof module!=='undefined'&&module.exports)module.exports={T,clean,speak,allTexts,lint};
 if(typeof window==='undefined')return;
 
 // ── Lecture : MP3 Google si dispo, sinon voix du téléphone ─────────────────

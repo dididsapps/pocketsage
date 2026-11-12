@@ -15426,8 +15426,8 @@ const COACH_PLANS = {
 };
 
 const COACH_PHASE_NAMES = {
-  cardio:      ['🔥 Échauffement','🏃 Cardio','💨 Interval','🔥 Boost cardio','⚡ Sprint'],
-  gainage:     ['💪 Gainage','🧱 Core','🏋️ Renforcement','🔩 Stabilisation'],
+  cardio:      ['🔥 Échauffement','🏃 Cardio','💨 Fractionné','🔥 Accélération','⚡ Sprint'],
+  gainage:     ['💪 Gainage','🧱 Abdos','🏋️ Renforcement','🔩 Stabilisation'],
   stretching:  ['🧘 Étirement','🌿 Souplesse','🌸 Flexibilité'],
   respiration: ['🌬️ Récupération','🫁 Respiration','🌊 Retour au calme'],
 };
@@ -15436,12 +15436,13 @@ function _coachPhaseLabel(cat, idx){
   return arr[idx % arr.length];
 }
 
-// Messages d'encouragement vocaux entre exercices
+// Messages d'encouragement vocaux entre exercices (10 par type, tirés au hasard)
+// Règles pour une bonne voix : pas d'abréviations (10s, 5x), pas de mots anglais, pas de MAJUSCULES, pas de « Dis » + mot anglais.
 const COACH_MSGS = {
-  cardio:['Allez, on active le cardio ! Tu peux le faire !','C\'est parti pour booster ton cœur !','Cardio time ! Lève-toi et bouge !','Encore un effort ! Ton corps te remerciera !'],
-  gainage:['Place au gainage ! Tiens bon, c\'est pour les abdos !','Renforce ton core ! Respire et tiens la position.','Gainage ! C\'est là que les champions sont faits !'],
-  stretching:['Maintenant on étire en douceur. Respire profondément.','Étirements ! Prends ton temps, ne force pas.','On assouplit les muscles. Excellent travail jusqu\'ici !'],
-  respiration:['Super travail aujourd\'hui ! Maintenant on récupère.','Dernière étape : la respiration. Tu l\'as mérité !','Respiration finale. Détends-toi et savoure l\'effort.'],
+  cardio:['Allez, on active le cardio ! Tu peux le faire !','C\'est parti pour faire battre ton cœur !','On se réveille, on bouge, on saute !','Encore un effort, ton corps te remerciera !','Montre-moi ton énergie de champion !','On accélère un peu, tu vas adorer !','Plus tu bouges, plus tu deviens fort !','Allez, on chauffe les jambes !','Tu es une vraie fusée aujourd\'hui !','Respire bien et donne tout !'],
+  gainage:['Place au gainage ! Tiens bon !','On renforce le ventre, comme les super-héros !','Respire calmement et tiens la position.','C\'est ici que les champions se construisent !','Reste solide comme un rocher !','Serre le ventre, tu es une statue de fer !','Tiens bon, chaque seconde compte !','Corps bien droit, tu gères !','On ne lâche rien, tu es costaud !','Petit effort, gros résultat !'],
+  stretching:['Maintenant on étire en douceur. Respire profondément.','Étirements ! Prends ton temps, sans forcer.','On assouplit les muscles. Très bon travail jusqu\'ici !','Tout doux, comme un chat qui s\'étire.','On relâche les épaules et on respire.','Va seulement là où c\'est agréable.','Ton corps devient souple comme un élastique !','Doucement, on écoute son corps.','Bravo, on se détend un peu.','Étire-toi lentement, sans à-coups.'],
+  respiration:['Super travail aujourd\'hui ! Maintenant on récupère.','Dernière étape : la respiration. Tu l\'as bien méritée !','Détends-toi et savoure l\'effort.','Inspire le calme, expire la fatigue.','Ferme les yeux si tu veux, et respire lentement.','Ton cœur se calme tout doucement.','Respire comme une vague qui va et qui vient.','Tu as été génial, on souffle un peu.','Laisse ton corps se reposer.','Bravo pour cette belle séance, on respire.'],
 };
 function _coachMsg(cat){ const a=COACH_MSGS[cat]||['C\'est parti !'];return a[Math.floor(Math.random()*a.length)]; }
 
@@ -15619,7 +15620,7 @@ function renderCoachStep(item, stepNum, totalSteps, announced){
         if(pg)pg.style.width='100%';
         const dn=document.getElementById('df-dn');if(dn)dn.style.display='block';
         if(COACH.hf){const dn=document.getElementById('df-dn');if(dn)dn.click();} // mains libres : réussite notée automatiquement
-        if(COACH.voice) coachSay(COACH_TXT.bravo,()=>_coachAskNext(stepNum+1>=totalSteps));
+        if(COACH.voice) coachSay(COACH_TXT.bravo[Math.floor(Math.random()*COACH_TXT.bravo.length)],()=>_coachAskNext(stepNum+1>=totalSteps));
       }
     },1000);
   };
