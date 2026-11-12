@@ -48,3 +48,10 @@ Dossier de travail : idées de prix, de formules d'abonnement, et coûts associ�
 - **Jeux : 15 min/jour** (déjà en place, voir `docs/jeux/README.md`).
 - **Toujours libres, même en gratuit** (idée à valider) : **Sport** (l'écran ne sert qu'aux consignes, l'enfant bouge) et **fiches PDF** (travail sur papier).
 - Abonnés : **Sport sans limite** ; jeux 45 min réglable ; temps d'écran total en option (désactivé par défaut) — à rediscuter.
+
+### Option B (12/11/2026) — Aventure + découverte
+- **Mode Aventure** gratuit chaque jour, durée selon l'âge (ex. 4-6 ans : 10 min · 7-10 ans : 15 min · 11 ans et + : 20 min). L'Aventure mélange déjà les matières → l'enfant goûte à tout.
+- **+ 5 min/jour de découverte** : l'enfant peut ouvrir n'importe quel autre module pour l'essayer.
+- **+ jeux 15 min/jour** ; **sport et fiches PDF libres**.
+- ⚠️ Règle stores (Google Play « Familles », Apple « Enfants ») : **ne jamais pousser l'enfant à acheter**. Côté enfant : « C'est fini pour aujourd'hui, à demain ! ». Proposition d'abonnement **uniquement côté parent** (Espace Parents protégé par PIN, ou message au parent).
+- Option A (module du jour) et option B à départager au moment de créer les abonnements.
