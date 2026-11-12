@@ -72,12 +72,13 @@ function totalDailyMs(){const jp=getJeuxProfile();if(!jp)return 0;const d=(jp.st
 function jeuxLeftMs(){return Math.max(0,jeuxLimitMs()-totalDailyMs());}
 function isDailyFull(gameId){return jeuxLeftMs()<=0;}
 function setJeuxMin(v){const p=P();if(!p)return;p.jeuxMin=+v;saveApp();try{_showParentPanel();}catch(e){}}
+function _jeuxMark(el,left){if(el)el.classList.toggle('jeux-low',left!==Infinity&&left<=5*60000);}
 function _jeuxWarnedToday(set){const jp=getJeuxProfile();if(!jp)return true;const o=jp.st[jp.pid];if(set){o.warned=jp.today;saveJeuxState(jp.st);}return o.warned===jp.today;}
 function _jeuxWatch(){ // toutes les 5 s pendant une partie
   const left=jeuxLeftMs();if(left===Infinity)return;
   if(left<=5*60000&&left>0&&!_jeuxWarnedToday()){_jeuxWarnedToday(true);try{toast('⏰ Plus que 5 minutes de jeu aujourd\'hui !');}catch(e){}try{sndStar();}catch(e){}}
   if(left<=0){GAME.timeUp=true;endGame(GAME.score||0);}
-  else{const el=document.getElementById('game-daily-left');if(el){const m=Math.ceil(left/60000);el.textContent=m+' min de jeu restantes aujourd\'hui';}}
+  else{const el=document.getElementById('game-daily-left');if(el){const m=Math.ceil(left/60000);el.textContent=(left<=5*60000?'⏰ ':'')+m+' min de jeu restantes aujourd\'hui';_jeuxMark(el,left);}}
 }
 // Écran « temps écoulé » : fiche PDF toujours ; histoire et QCM si l'offre le permet.
 function jeuxTimeUpHTML(){
@@ -127,8 +128,8 @@ function openJeux(){
   const banner=document.getElementById('jeux-daily-banner');
   const totalLeft=jeuxLeftMs();
   if(banner){
-    if(totalLeft<=0){banner.style.display='block';banner.innerHTML='⏰ Temps de jeu terminé pour aujourd\'hui ! <button class="tu-inline" onclick="startGame(\'memory\')">Que faire maintenant ?</button>';}
-    else if(totalLeft!==Infinity){banner.style.display='block';banner.textContent='⏱ '+Math.ceil(totalLeft/60000)+' min de jeu restantes aujourd\'hui'+(isFreePlan()?' (offre gratuite : 15 min)':'');}
+    if(totalLeft<=0){banner.style.display='block';_jeuxMark(banner,0);banner.innerHTML='⏰ Temps de jeu terminé pour aujourd\'hui ! <button class="tu-inline" onclick="startGame(\'memory\')">Que faire maintenant ?</button>';}
+    else if(totalLeft!==Infinity){banner.style.display='block';_jeuxMark(banner,totalLeft);banner.textContent='⏱ '+Math.ceil(totalLeft/60000)+' min de jeu restantes aujourd\'hui'+(isFreePlan()?' (offre gratuite : 15 min)':'');}
     else banner.style.display='none';
   }
   }catch(e){console.error('openJeux:',e);toast('Erreur jeux: '+e.message,'err');}
@@ -193,7 +194,7 @@ function startGame(id){
 
 function updateGameDailyLeft(id){
   const left=jeuxLeftMs();
-  document.getElementById('game-daily-left').textContent=left===Infinity?'Temps de jeu illimité':`${Math.ceil(left/60000)} min de jeu restantes aujourd\'hui`;
+  const dl=document.getElementById('game-daily-left');dl.textContent=left===Infinity?'Temps de jeu illimité':`${left<=5*60000?'⏰ ':''}${Math.ceil(left/60000)} min de jeu restantes aujourd\'hui`;_jeuxMark(dl,left);
 }
 
 function updateGameScore(s){
@@ -206,7 +207,7 @@ function endGame(finalScore){
   // Record time played
   const elapsed=GAME.startMs?Date.now()-GAME.startMs:0;
   addDailyMs(GAME.id,elapsed);GAME.startMs=0;
-  if(isDailyFull()){const dl=document.getElementById('game-daily-left');if(dl)dl.textContent='Temps de jeu terminé';}
+  if(isDailyFull()){const dl=document.getElementById('game-daily-left');if(dl){dl.textContent='Temps de jeu terminé';dl.classList.add('jeux-low');}}
   // Highscore
   const prevHs=getHighscore(GAME.id);
   setHighscore(GAME.id,finalScore);

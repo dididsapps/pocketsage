@@ -225,3 +225,8 @@ body.night #scr-game .sd-c.br{border-right-color:#C8A040}body.night #scr-game .s
 #scr-game .jeux-timeup .tu-free{background:#FFF8E7;border-radius:12px;padding:8px;color:#8A5D00;font-weight:700}
 body.night #scr-game .jeux-timeup{background:#2A1E0A}body.night #scr-game .jeux-timeup h3{color:#F5E6C8}
 .tu-inline{border:none;background:#6C63FF;color:#fff;border-radius:10px;padding:4px 10px;font-weight:800;margin-left:6px}
+/* Temps de jeu restant ≤ 5 min : rouge gras, bien visible */
+.jeux-low{color:#E63946!important;font-weight:900!important;animation:jeuxBlink 1.6s ease-in-out infinite}
+body.night .jeux-low{color:#FF6B6B!important}
+@keyframes jeuxBlink{50%{opacity:.55}}
+@media (prefers-reduced-motion:reduce){.jeux-low{animation:none}}
