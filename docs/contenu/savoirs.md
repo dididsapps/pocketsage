@@ -5,3 +5,4 @@
 - Les sous-menus sans question pour la classe choisie sont masqués (ex. Logique au lycée : seulement Suites et Labyrinthes).
 - Curseur des autres modules (Ateliers, Flash, Histoires…) : l'âge affiché suit maintenant le bouton.
 - ⚠️ À revoir : certaines questions sont mal classées (ex. en « 3ème » : théorème de Bayes, rang d'une matrice → niveau lycée/supérieur). Prévoir une relecture du classement. Logique a très peu de contenu au lycée (10 questions).
+- ✅ 13/11 : en changeant de classe (ou de niveau, d'âge, de groupe), on **reste sur le sous-menu choisi** (Intrus reste Intrus, Histoire reste Histoire, Espagnol reste Espagnol) — fonction `_restoreTab`, pour tous les modules.

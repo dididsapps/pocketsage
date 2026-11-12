@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=31">
+<link rel="stylesheet" href="css/jeux.css?v=32">
 </head>
 <body>
 
@@ -1442,9 +1442,9 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=31"></script>
-<script src="js/jeux-cerveau.js?v=31"></script>
-<script src="js/coach-voix.js?v=31"></script>
+<script src="js/jeux.js?v=32"></script>
+<script src="js/jeux-cerveau.js?v=32"></script>
+<script src="js/coach-voix.js?v=32"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -12565,7 +12565,7 @@ function renderLangLevelBar(){
   el.innerHTML='<div class="sport-grp lang-niv">'+LANG_NIVEAUX.map((nv,i)=>`<button class="${nv.k===cur?'sel':''}" data-k="${nv.k}">${langNivName(i)}</button>`).join('')+'</div>';
   el.querySelectorAll('button').forEach(b=>b.onclick=()=>{
     sndTap();APP.langNiveau=b.dataset.k;if(p){p.langNiveau=b.dataset.k;saveApp();}
-    renderLangLevelBar();if(APP.langMode==='dialogue'){openDialogueHome();return;}const subs=getLangSubcats();renderTabs(subs,'langues');renderList(subs[0].d,'langues',subs[0]);
+    renderLangLevelBar();if(APP.langMode==='dialogue'){openDialogueHome();return;}const subs=getLangSubcats();renderTabs(subs,'langues');if(!_restoreTab('langues'))renderList(subs[0].d,'langues',subs[0]);
   });
 }
 function getLangSubcats(){
@@ -13110,13 +13110,13 @@ async function openMod(mod){
         ageBarEl.innerHTML=_globalSliderHTML(_getSliderAge(),_globalShowAll,'mod-age-sl','mod-age-all');
         const sl=document.getElementById('mod-age-sl');
         const cb=document.getElementById('mod-age-all');
-        if(sl)sl.addEventListener('input',e=>{_globalSliderAge=parseInt(e.target.value);const sc=subs[0];renderList(sc&&sc.d||[],mod,sc);});
-        if(cb)cb.addEventListener('change',e=>{_globalShowAll=e.target.checked;const sc=subs[0];renderList(sc&&sc.d||[],mod,sc);});
+        if(sl)sl.addEventListener('input',e=>{_globalSliderAge=parseInt(e.target.value);if(!_restoreTab(mod)){const sc=subs[0];renderList(sc&&sc.d||[],mod,sc);}});
+        if(cb)cb.addEventListener('change',e=>{_globalShowAll=e.target.checked;if(!_restoreTab(mod)){const sc=subs[0];renderList(sc&&sc.d||[],mod,sc);}});
       }
     }catch(e){console.error('mod-age-bar:',e);}
     try{
       const first=subs[0];
-      renderList(first.d,mod,first);
+      if(!_restoreTab(mod))renderList(first.d,mod,first);
     }catch(e){console.error('renderList:',e);}
     // Bouton Mode Coach — uniquement pour les défis
     const coachBtnWrap=document.getElementById('coach-btn-wrap');
@@ -13129,6 +13129,8 @@ async function openMod(mod){
   }catch(e){console.error('openMod:',e);toast('Erreur module: '+e.message,'err');}
 }
 
+// Revenir sur le sous-menu choisi (après un changement de classe, de niveau, d'âge…)
+function _restoreTab(mod){const k=(APP.tabKey||{})[mod];if(!k)return false;const b=document.querySelector('#stabs .stab[data-k="'+k+'"]');if(!b||b.classList.contains('stab-locked'))return false;APP._silentTab=true;try{b.click();}finally{APP._silentTab=false;}return true;}
 function renderTabs(subs,mod){
   const t=document.getElementById('stabs');t.innerHTML='';
   // Bouton Mix — mélange toutes les questions de tous les sous-domaines (sauf tabs spéciaux isProno)
@@ -13138,9 +13140,9 @@ function renderTabs(subs,mod){
     const mix=document.createElement('button');
     mix.className='stab stab-mix';
     mix.innerHTML=mod==='langues'?'🔀 Mix langues':'🔀 Mix';
-    mix.title='Mélanger toutes les questions';
+    mix.title='Mélanger toutes les questions';mix.dataset.k='mix';
     mix.onclick=()=>{
-      sndTap();
+      if(!APP._silentTab)sndTap();(APP.tabKey=APP.tabKey||{})[mod]='mix';
       t.querySelectorAll('.stab').forEach(x=>x.classList.remove('on'));
       mix.classList.add('on');
       const shuffled=[...allItems].sort(()=>Math.random()-.5);
@@ -13152,9 +13154,9 @@ function renderTabs(subs,mod){
     const locked=sc.car&&!APP.car;
     const b=document.createElement('button');
     b.className='stab'+(i===0?' on':'')+(locked?' stab-locked':'');
-    b.innerHTML=sc.l+(locked?' 🔒':'');
+    b.innerHTML=sc.l+(locked?' 🔒':'');b.dataset.k=sc.k||String(i);
     b.onclick=()=>{
-      sndTap();
+      if(!APP._silentTab)sndTap();if(!locked)(APP.tabKey=APP.tabKey||{})[mod]=sc.k||String(i);
       if(locked){toast('Disponible en 🚗 Mode Voiture','info');return;}
       t.querySelectorAll('.stab').forEach(x=>x.classList.remove('on'));
       b.classList.add('on');
