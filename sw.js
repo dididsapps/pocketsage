@@ -1,8 +1,9 @@
 // PocketSage Academy — Service Worker v2
-const CACHE = 'pocketsage-v4';
+const CACHE = 'pocketsage-v5';
 const ASSETS = [
   '/',
   '/index.html',
+  '/js/jeux.js',
   '/manifest.json'
 ];
 
