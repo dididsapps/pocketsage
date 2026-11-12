@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=32">
+<link rel="stylesheet" href="css/jeux.css?v=33">
 </head>
 <body>
 
@@ -1442,9 +1442,9 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=32"></script>
-<script src="js/jeux-cerveau.js?v=32"></script>
-<script src="js/coach-voix.js?v=32"></script>
+<script src="js/jeux.js?v=33"></script>
+<script src="js/jeux-cerveau.js?v=33"></script>
+<script src="js/coach-voix.js?v=33"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -13793,6 +13793,9 @@ function showPronoResult(score,said,item,micBtn,feedbackZone,attBar){
 let _tablesState={technique:'batonnets',op:'x',n1:2,n2:3,score:0,streak:0,flashIdx:0,
   batonSub:'decouverte', pythaFam:0, histSub:'facile', trachtN:9, perleNiveau:0, flashOp:'x'};
 
+// Tables : seulement les méthodes et les tables adaptées à la classe choisie (Réviser / Ma classe / En avance)
+function _tabAgeRange(){const r=String(_classeToAgeRange(_selClasse())||'7-8').split('-').map(Number);const lo=r[0],hi=_selClasse()==='Lycée'?99:(r[1]||r[0]);return [lo,hi];}
+function _tabFits(a){if(!a||/tous/.test(a))return true;const [lo,hi]=_tabAgeRange();const m=String(a).match(/(\d+)(?:\s*-\s*(\d+))?(\+)?/);if(!m)return true;const mn=+m[1],mx=m[3]?99:(m[2]?+m[2]:mn);return mn<=hi&&mx>=lo;}
 function renderTables(){
   const el=document.getElementById('elist');
   el.innerHTML='';
@@ -13808,7 +13811,9 @@ function renderTables(){
     {k:'histoires',  l:'🧠 Histoires',   age:'7-11 ans'},
     {k:'trachtenberg',l:'⚡ Trachtenberg',age:'10-15 ans'},
     {k:'flash',      l:'🎯 Flash',       age:'8-15 ans'},
-  ];
+  ].filter(tk=>_tabFits(tk.age));
+  // Méthode choisie absente pour cette classe → première méthode disponible
+  if(!techniques.some(tk=>tk.k===_tablesState.technique))_tablesState.technique=techniques[0].k;
   const techBar=document.createElement('div');
   techBar.style.cssText='display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;';
   techniques.forEach(tk=>{
@@ -13846,7 +13851,9 @@ function renderTables(){
       b.textContent=l;b.onclick=()=>{sndTap();_tablesState.histSub=k;renderTables();};subBar.appendChild(b);
     });
   } else if(_tablesState.technique==='trachtenberg'){
-    [[2,'×2','8+'],[3,'×3','9+'],[4,'×4','9+'],[5,'×5','8+'],[6,'×6','10+'],[7,'×7','10+'],[8,'×8','10+'],[9,'×9','9+'],[11,'×11','9+'],[12,'×12','10+']].forEach(([n,l,a])=>{
+    const _tt=[[2,'×2','8+'],[3,'×3','9+'],[4,'×4','9+'],[5,'×5','8+'],[6,'×6','10+'],[7,'×7','10+'],[8,'×8','10+'],[9,'×9','9+'],[11,'×11','9+'],[12,'×12','10+']].filter(([n,l,a])=>_tabFits(a));
+    if(_tt.length&&!_tt.some(([n])=>n===_tablesState.trachtN))_tablesState.trachtN=_tt[0][0];
+    _tt.forEach(([n,l,a])=>{
       const b=document.createElement('button');b.className='stab stab-sm'+(_tablesState.trachtN===n?' on':'');
       b.innerHTML=`${l} <span style="font-size:10px;opacity:.6;">${a}</span>`;
       b.onclick=()=>{sndTap();_tablesState.trachtN=n;renderTables();};subBar.appendChild(b);
@@ -13870,8 +13877,8 @@ function renderTables(){
 // ── Mode Mix : pioche aléatoire dans toutes les techniques
 function renderMixTables(wrap){
   const techniques=['batonnets','perles','pythagore','histoires','flash'];
-  const p=P();const age=p?.age||8;
-  // Filtre selon l'âge
+  const _r=_tabAgeRange();const age=Math.min(_r[1],Math.round((_r[0]+_r[1])/2));
+  // Filtre selon la classe choisie
   const avail=techniques.filter(t=>{
     if(t==='perles') return age<=8;
     if(t==='batonnets') return age>=6;

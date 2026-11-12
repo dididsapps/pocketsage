@@ -6,3 +6,4 @@
 - Curseur des autres modules (Ateliers, Flash, Histoires…) : l'âge affiché suit maintenant le bouton.
 - ⚠️ À revoir : certaines questions sont mal classées (ex. en « 3ème » : théorème de Bayes, rang d'une matrice → niveau lycée/supérieur). Prévoir une relecture du classement. Logique a très peu de contenu au lycée (10 questions).
 - ✅ 13/11 : en changeant de classe (ou de niveau, d'âge, de groupe), on **reste sur le sous-menu choisi** (Intrus reste Intrus, Histoire reste Histoire, Espagnol reste Espagnol) — fonction `_restoreTab`, pour tous les modules.
+- ✅ 13/11 : onglet **Tables** filtré aussi par la classe choisie : méthodes (Bâtonnets 6-9, Perles 4-8, Pythagore 7-10, Histoires 7-11, Trachtenberg 10-15, Flash 8-15) et tables ×N (8+, 9+, 10+) affichées seulement si elles conviennent à l'âge de la classe ; si la méthode choisie n'existe pas pour cette classe, on bascule sur la première disponible.
