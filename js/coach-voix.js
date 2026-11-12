@@ -5,18 +5,23 @@
 // - hfListen() écoute « GO », « NEXT », « RÉPÈTE » (mode mains libres, micro autorisé par le parent).
 (function(root){
 'use strict';
-const clean=s=>String(s||'').replace(/[\p{Extended_Pictographic}️‍]/gu,'').replace(/\s+/g,' ').trim();
+const clean=s=>String(s||'').replace(/[\p{Extended_Pictographic}\uFE0F\u200D]/gu,'').replace(/\s+/g,' ').trim();
+// Version « à dire » : abréviations écrites en toutes lettres pour la voix (10s → 10 secondes, 5x → 5 fois, → → puis)
+const speak=s=>clean(s)
+  .replace(/\b1\s?s\b/g,'1 seconde').replace(/(\d+)\s?s\b/g,'$1 secondes')
+  .replace(/(\d+)\s?min\b/g,'$1 minutes').replace(/(\d+)\s?x\b/gi,'$1 fois')
+  .replace(/\s*→\s*/g,', puis ').replace(/\s+—\s+/g,', ');
 const T={
   intro:(plan,n)=>`Séance pour ${plan.label} ! ${n} exercices. Prépare-toi !`,
   first:'Premier exercice !',
   phase:lbl=>clean(lbl)+' !',
-  nom:item=>clean(item.nom)+'.',
-  consigne:item=>clean(item.consigne),
+  nom:item=>speak(item.nom)+'.',
+  consigne:item=>speak(item.consigne),
   count:['Un !','Deux !','Trois !'],
   bravo:'Bravo ! Super !',
-  sayGo:'Dis GO quand tu es prêt !',
-  sayNext:"Dis NEXT pour l'exercice suivant.",
-  sayNextLast:'Dis NEXT pour terminer la séance.',
+  sayGo:'Quand tu es prêt, crie GO !',
+  sayNext:"Pour l'exercice suivant, crie NEXT !",
+  sayNextLast:'Pour terminer la séance, crie NEXT !',
   end:n=>`Bravo ! Séance complète terminée ! ${n} exercices réussis comme un champion !`,
   left:n=>`Encore ${n} secondes !`,
   dayEnd:"Bravo, séance terminée ! Montre à tes parents ce que tu as appris aujourd'hui. À demain !"
@@ -26,12 +31,12 @@ function allTexts(defis,plans,phases,msgs){
   for(let n=10;n<=120;n+=10)out.add(T.left(n));
   Object.values(plans).forEach(p=>{out.add(T.intro(p,p.pattern.length));out.add(T.end(p.pattern.length));});
   Object.values(phases).forEach(a=>a.forEach(l=>out.add(T.phase(l))));
-  Object.values(msgs).forEach(a=>a.forEach(m=>out.add(clean(m))));
+  Object.values(msgs).forEach(a=>a.forEach(m=>out.add(speak(m))));
   defis.forEach(d=>{out.add(T.nom(d));out.add(T.consigne(d));});
   return [...out].filter(Boolean).sort();
 }
-root.COACH_TXT=T;root.coachClean=clean;root.coachAllTexts=allTexts;
-if(typeof module!=='undefined'&&module.exports)module.exports={T,clean,allTexts};
+root.COACH_TXT=T;root.coachClean=clean;root.coachSpeakTxt=speak;root.coachAllTexts=allTexts;
+if(typeof module!=='undefined'&&module.exports)module.exports={T,clean,speak,allTexts};
 if(typeof window==='undefined')return;
 
 // ── Lecture : MP3 Google si dispo, sinon voix du téléphone ─────────────────

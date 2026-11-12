@@ -1182,7 +1182,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
       <span style="font-size:22px">🙌</span>
       <div style="flex:1">
         <div style="font-size:13px;font-weight:800">Mains libres</div>
-        <div id="coach-hf-sub" style="font-size:11px;color:var(--tl);margin-top:1px">Dis « GO » pour démarrer, « NEXT » pour continuer, « RÉPÈTE » pour réécouter (utilise le micro)</div>
+        <div id="coach-hf-sub" style="font-size:11px;color:var(--tl);margin-top:1px">Crie « GO » pour démarrer, « NEXT » pour continuer, « RÉPÈTE » pour réécouter (utilise le micro). L’écran reste allumé pendant la séance.</div>
       </div>
       <input type="checkbox" id="coach-hf-toggle" style="width:22px;height:22px;flex-shrink:0">
     </label>
@@ -11666,7 +11666,7 @@ function P(){return APP.profiles[APP.cur]||null;} // profil courant
 function show(id){
   try{
     if(id!=='game'&&typeof _gClearAll==='function')_gClearAll();
-    if(id!=='defi'&&typeof hfStop==='function'){hfStop();try{coachStopVoice();}catch(e){}}
+    if(id!=='defi'&&typeof hfStop==='function'){hfStop();try{coachStopVoice();coachWakeOff();}catch(e){}}
     // Ne pas appeler ttsStop() ici — speechSynthesis.cancel() gèle sur mobile
     _ttsQueue=[];_ttsPlaying=false;
     // Nettoyer tous les overlays résiduels qui bloqueraient les clics
@@ -15501,6 +15501,11 @@ function buildCoachSequence(age){
   return { seq, plan };
 }
 
+// Garder l'écran allumé pendant la séance (sinon le micro s'arrête quand l'écran s'éteint)
+let _coachWake=null;
+async function coachWakeOn(){try{if('wakeLock' in navigator&&document.visibilityState==='visible'){_coachWake=await navigator.wakeLock.request('screen');_coachWake.addEventListener('release',()=>{_coachWake=null;});}}catch(e){}}
+function coachWakeOff(){try{if(_coachWake)_coachWake.release();}catch(e){}_coachWake=null;COACH.active=false;}
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'&&COACH.active&&!_coachWake)coachWakeOn();});
 function launchCoachSession(){
   sndTap();
   if(!COACH.age){ toast('Choisis un âge !','info'); return; }
@@ -15513,6 +15518,7 @@ function launchCoachSession(){
   COACH.stepIdx = 0;
   COACH.plan = plan;
   closeCoachModal();
+  COACH.active=true; coachWakeOn();
   // Annonce départ
   if(COACH.voice) coachSay(COACH_TXT.intro(plan,plan.pattern.length),()=>startCoachStep(0));
   else setTimeout(()=>startCoachStep(0),200);
@@ -15528,7 +15534,7 @@ function startCoachStep(idx){
   if(COACH.voice){
     // On affiche l'exercice tout de suite, le coach l'annonce, puis (mains libres) on écoute « GO »
     renderCoachStep(item, idx, total, true);
-    const parts = idx>0 ? [COACH_TXT.phase(item._phase), _coachMsg(item.cat), COACH_TXT.nom(item), COACH_TXT.consigne(item)]
+    const parts = idx>0 ? [COACH_TXT.phase(item._phase), coachSpeakTxt(_coachMsg(item.cat)), COACH_TXT.nom(item), COACH_TXT.consigne(item)]
                         : [COACH_TXT.first, COACH_TXT.nom(item), COACH_TXT.consigne(item)];
     const tok = COACH.tok = (COACH.tok||0)+1;
     coachSayList(parts, ()=>{ if(tok!==COACH.tok)return; if(APP.car){const b=document.getElementById('df-st');if(b)b.click();} else _coachAskGo(item); });
@@ -15540,12 +15546,12 @@ function startCoachStep(idx){
 function _coachAskGo(item){
   if(!COACH.hf)return;
   const go=()=>{const b=document.getElementById('df-st');if(b&&b.style.display!=='none')b.click();};
-  coachSay(COACH_TXT.sayGo,()=>hfListen({go, repeat:()=>coachSayList([COACH_TXT.nom(item),COACH_TXT.consigne(item)],()=>_coachAskGo(item))},'Dis « GO »',go));
+  coachSay(COACH_TXT.sayGo,()=>hfListen({go, repeat:()=>coachSayList([COACH_TXT.nom(item),COACH_TXT.consigne(item)],()=>_coachAskGo(item))},'Crie « GO »',go));
 }
 function _coachAskNext(last){
   if(!COACH.hf)return;
   const nx=()=>{const b=document.getElementById('df-nx');if(b)b.click();};
-  coachSay(last?COACH_TXT.sayNextLast:COACH_TXT.sayNext,()=>hfListen({next:nx, go:nx},'Dis « NEXT »',nx));
+  coachSay(last?COACH_TXT.sayNextLast:COACH_TXT.sayNext,()=>hfListen({next:nx, go:nx},'Crie « NEXT »',nx));
 }
 function renderCoachStep(item, stepNum, totalSteps, announced){
   clearInterval(COACH.timer); COACH.timer=null;
@@ -15636,7 +15642,7 @@ function renderCoachStep(item, stepNum, totalSteps, announced){
 }
 
 function endCoachSession(){
-  clearInterval(COACH.timer);COACH.timer=null;
+  clearInterval(COACH.timer);COACH.timer=null;coachWakeOff();
   const total=COACH.seq.length;
   const plan=COACH.plan;
   // Écran de fin coach
