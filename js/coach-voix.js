@@ -30,16 +30,17 @@ const T={
   sayNextLast:'Pour terminer la séance, crie NEXT !',
   end:'Bravo ! Séance complète terminée, comme un vrai champion !',
   left:n=>`Encore ${n} secondes !`,
+  side:'Change de côté !',
   water:"Pause eau ! Bois quelques gorgées d'eau et reprends ton souffle.",
   rest:["Petite pause. Respire calmement.","On souffle un peu. Inspire par le nez, souffle par la bouche.","Récupère bien, tu l'as mérité.","Pause ! Secoue doucement les bras et les jambes.","Respire profondément, on repart bientôt."],
   waterEnd:"Et maintenant, bois un grand verre d'eau. Ton corps te dit merci !",
   dayEnd:"Bravo, séance terminée ! Montre à tes parents ce que tu as appris aujourd'hui. À demain !"
 };
 // Durée estimée d'une séance (minutes) : exercices + petites pauses + pauses eau + annonces du coach
-function estimate(c,len){const R=c.rounds[len];const n=c.warm+c.circuit*R+c.stretch+c.resp;
-  return Math.max(3,Math.round((n*c.work+(n-1)*c.rest+(R-1)*25+n*8)/60));}
+function estimate(c,len){const R=c.rounds[len];const m=c.warm+c.circuit*R,k=c.stretch+c.resp,n=m+k;
+  return Math.max(3,Math.round((m*c.work+k*55+(n-1)*c.rest+(R-1)*25+n*8)/60));}
 function allTexts(defis,plans,phases,msgs){
-  const out=new Set([T.end,T.warmIntro,T.coolIntro,T.sayGoWarm,T.first,T.water,T.waterEnd,...T.rest,...T.bravo,T.sayGo,T.sayNext,T.sayNextLast,T.dayEnd,...T.count]);
+  const out=new Set([T.side,T.end,T.warmIntro,T.coolIntro,T.sayGoWarm,T.first,T.water,T.waterEnd,...T.rest,...T.bravo,T.sayGo,T.sayNext,T.sayNextLast,T.dayEnd,...T.count]);
   for(let n=10;n<=120;n+=10)out.add(T.left(n));
   Object.values(plans).forEach(c=>{[0,1,2].forEach(l=>out.add(T.intro(c.label,estimate(c,l))));c.rounds.forEach(R=>{for(let n=2;n<=R;n++)out.add(T.round(n,R));});});
   Object.values(phases).forEach(a=>a.forEach(l=>out.add(T.phase(l))));
