@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=25">
+<link rel="stylesheet" href="css/jeux.css?v=26">
 </head>
 <body>
 
@@ -1442,9 +1442,9 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=25"></script>
-<script src="js/jeux-cerveau.js?v=25"></script>
-<script src="js/coach-voix.js?v=25"></script>
+<script src="js/jeux.js?v=26"></script>
+<script src="js/jeux-cerveau.js?v=26"></script>
+<script src="js/coach-voix.js?v=26"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -13014,6 +13014,12 @@ const POLITESSE_DATA={
     {a:[3],titre:'Être à l’heure',icon:'⏰',conseil:"Arriver à l'heure montre que tu respectes le temps des autres. En cas de retard, préviens."},
     {a:[3],titre:'Se présenter',icon:'🤝',conseil:"Pour te présenter, regarde la personne, dis ton prénom clairement et souris."},
     {a:[3],titre:'Respecter les avis',icon:'⚖️',conseil:"Tu peux ne pas être d'accord sans être désagréable : critique les idées, jamais les personnes."},
+    {a:[1,2],titre:'Se faire un ami',icon:'🤗',conseil:"Approche-toi, dis ton prénom et demande : « Tu veux jouer avec moi ? » C'est souvent comme ça que commencent les grandes amitiés."},
+    {a:[2,3],titre:'Faire un compliment',icon:'🌟',conseil:"Fais un compliment sincère et précis : « J'adore ton dessin, les couleurs sont superbes ! » Ça fait toujours plaisir."},
+    {a:[2,3],titre:'Écouter un ami',icon:'👂',conseil:"Quand un ami te parle, regarde-le, laisse ton écran de côté et pose-lui des questions sur ce qu'il raconte."},
+    {a:[1,2,3],titre:'Les petites attentions',icon:'🎁',conseil:"Un dessin, un mot gentil, un petit cadeau fait maison : les petites attentions entretiennent l'amitié."},
+    {a:[2,3],titre:'Garder un secret',icon:'🤫',conseil:"Si un ami te confie un secret, garde-le. Sauf si quelqu'un est en danger : là, il faut en parler à un adulte de confiance."},
+    {a:[3],titre:'Retenir les prénoms',icon:'📇',conseil:"Retenir le prénom de quelqu'un et l'utiliser lui montre qu'il compte pour toi."},
     {a:[3],titre:'Recevoir un compliment',icon:'🌷',conseil:"Quand on te fait un compliment, un simple merci suffit. Pas besoin de te justifier."},
   ],
   dictons:[
@@ -13042,7 +13048,15 @@ const POLITESSE_DATA={
     {a:[3],texte:'Qui veut voyager loin ménage sa monture. — Jean Racine',icon:'🐎'},
     {a:[3],texte:"Rien de grand ne s'est accompli dans le monde sans passion. — Hegel",icon:'🔥'},
     {a:[3],texte:"L'éducation est l'arme la plus puissante pour changer le monde. — Nelson Mandela",icon:'📚'},
-    {a:[3],texte:"L'avenir appartient à ceux qui savent l'imaginer, le concevoir et le réaliser. Ce n'est pas quelque chose que l'on attend, mais quelque chose que l'on crée.",icon:'🚀'},
+    {a:[3],texte:"L'avenir appartient à ceux qui savent l'imaginer, le concevoir et le réaliser. Ce n'est pas quelque chose que l'on attend, mais quelque chose que l'on crée. — Cheikh Mohammed bin Rashid Al Maktoum, gravé sur le Musée du Futur à Dubaï",icon:'🚀'},
+    {a:[3],texte:"L'avenir n'attend pas : il peut être imaginé, conçu et construit dès aujourd'hui. — D'après Cheikh Mohammed bin Rashid Al Maktoum, Musée du Futur à Dubaï",icon:'🏛️'},
+    {a:[3],texte:"La vraie richesse d'une nation, c'est son peuple, et surtout son peuple instruit. — D'après Cheikh Zayed bin Sultan Al Nahyan, fondateur des Émirats arabes unis",icon:'🎓'},
+    {a:[1,2,3],texte:"Ne fais pas aux autres ce que tu n'aimerais pas qu'on te fasse. — Confucius",icon:'🪞'},
+    {a:[2,3],texte:"On récolte ce que l'on sème. — Proverbe",icon:'🌾'},
+    {a:[1,2,3],texte:"Les petits cadeaux entretiennent l'amitié. — Proverbe français",icon:'🎁'},
+    {a:[2,3],texte:"Dis-moi qui tu fréquentes, je te dirai qui tu es. — Proverbe",icon:'👥'},
+    {a:[3],texte:"Le seul moyen d'avoir un ami est d'en être un. — Ralph Waldo Emerson",icon:'🤝'},
+    {a:[3],texte:"L'amitié double les joies et réduit de moitié les peines. — Francis Bacon",icon:'💞'},
   ],
   conseils:[
     {a:[1],titre:'Essaie encore',icon:'🔁',texte:"Si c'est difficile, respire et réessaie. Chaque essai te rend plus fort !"},
@@ -13058,6 +13072,9 @@ const POLITESSE_DATA={
     {a:[2,3],titre:'Apprends de tes erreurs',icon:'🧩',texte:"Une erreur n'est pas un échec : c'est une information. Demande-toi ce que tu peux changer la prochaine fois."},
     {a:[2],titre:'Prépare ton cartable',icon:'🎒',texte:"Prépare tes affaires la veille au soir : le matin sera beaucoup plus calme."},
     {a:[2,3],titre:'Ose poser des questions',icon:'❓',texte:"Poser une question, ce n'est pas avoir l'air bête : c'est la meilleure façon d'apprendre."},
+    {a:[1,2],titre:'Pardonner',icon:'🕊️',texte:"Tout le monde fait des erreurs. Pardonner permet de rester amis et de se sentir plus léger."},
+    {a:[2,3],titre:'Être un bon ami',icon:'🤝',texte:"Sois fidèle, encourage tes amis et sois là quand ça ne va pas. C'est comme ça qu'on garde ses amis longtemps."},
+    {a:[2,3],titre:'Le karma',icon:'☯️',texte:"Dans les traditions de l'Inde, le karma dit que chaque action a des conséquences. Sème la gentillesse : elle finit souvent par te revenir."},
     {a:[3],titre:'Entoure-toi bien',icon:'👥',texte:"Les personnes que tu fréquentes influencent tes habitudes. Choisis des amis qui t'encouragent."},
     {a:[3],titre:'Gère ton temps d’écran',icon:'📵',texte:"Garde des moments sans écran pour lire, bouger et discuter. Ton cerveau te remerciera."},
     {a:[3],titre:'Une chose à la fois',icon:'🎯',texte:"Faire plusieurs choses en même temps fait perdre du temps. Concentre-toi sur une tâche, puis passe à la suivante."},
