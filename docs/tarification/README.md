@@ -65,3 +65,12 @@ Dossier de travail : idées de prix, de formules d'abonnement, et coûts associ�
 - La CNIL juge qu'un simple email ne prouve pas l'accord parental (facile à contourner) → ne pas s'en servir comme « preuve de consentement ».
 - Prestataire email avec données en Europe + contrat de traitement (DPA) ; droit de suppression ; mention dans la politique de confidentialité.
 - Faire relire la politique de confidentialité par un juriste avant le lancement.
+
+## 8. Parcours de vente proposé (12/11/2026 — à valider, rien codé)
+- ❌ **Interdit : obliger à cocher la case « offres » pour utiliser le gratuit.** Un consentement doit être libre ; le rendre obligatoire pour accéder au service le rend invalide (RGPD art. 7 §4, sanctions CNIL). Les stores « Enfants / Familles » le refuseraient aussi.
+- Vérifier que c'est « vraiment » un parent : impossible et pas demandé (on ne collecte pas de données sur l'enfant). Les stores exigent seulement une **barrière parentale** (« parental gate ») : une tâche qu'un jeune enfant ne sait pas faire (ex. question écrite en toutes lettres, chiffres à taper) avant tout achat, lien externe ou réglage.
+- **1ʳᵉ ouverture = « À faire par un adulte (2 min) »** : barrière parentale → création du PIN → profils enfants → **proposition d'essai gratuit de 7 jours de l'abonnement Famille** (géré par Google/Apple, rappel avant la fin) → email facultatif pour le bilan hebdo + case séparée non cochée pour les offres. Le parent n'est présent qu'une fois.
+- Côté enfant : jamais de proposition d'achat ni de « demande à tes parents d'acheter » ; message neutre « C'est fini pour aujourd'hui, à demain ! ».
+- Leviers de vente légaux : essai gratuit ; bilan hebdo par email (le parent voit les progrès) ; dans l'Espace Parents, aperçu de ce que l'abonnement débloque ; prix annuel avantageux ; prix famille.
+- Page web parent : pas nécessaire au départ (tout se fait dans l'appli) ; utile plus tard si comptes.
+- Faire relire ce parcours par un juriste avant le lancement.
