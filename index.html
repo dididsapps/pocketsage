@@ -16893,6 +16893,19 @@ function _showParentPanel(){
     html+=`<div id="mic-local" style="font-size:12px;margin-top:8px;color:#444"></div>`;
     html+=`</div>`;
   }
+  // ── Temps de jeu (tous jeux confondus) ──
+  if(p&&typeof jeuxLimitMin==='function'){
+    const cur=jeuxLimitMin(),free=isFreePlan();
+    html+=`<div style="background:#F6F8FC;border-radius:12px;padding:12px 14px;margin-bottom:14px">`;
+    html+=`<b style="display:block;margin-bottom:6px">🎮 Temps de jeu par jour (tous jeux confondus)</b>`;
+    if(free){html+=`<div style="font-size:13px">15 min par jour avec l’offre gratuite. Avec l’abonnement Famille, vous choisissez la durée (jusqu’à illimité).</div>`;}
+    else{
+      html+=`<div style="display:flex;flex-wrap:wrap;gap:6px">`+[15,30,45,60,90,120,0].map(v=>`<button onclick="setJeuxMin(${v})" style="padding:8px 12px;border-radius:10px;border:2px solid ${cur===v?'#5A52D5':'#DDD'};background:${cur===v?'#EAE9FF':'#fff'};color:#333;font-weight:700;cursor:pointer">${v===0?'Illimité':v+' min'}</button>`).join('')+`</div>`;
+      html+=`<div style="font-size:11.5px;color:#666;margin-top:6px">Un message prévient l’enfant 5 minutes avant la fin. Ensuite, l’appli propose une fiche à imprimer, une histoire ou une aventure de questions.</div>`;
+    }
+    const used=Math.round(totalDailyMs()/60000);
+    html+=`<div style="font-size:11px;color:#999;margin-top:4px">Aujourd’hui : ${used} min jouées</div></div>`;
+  }
   // Boutons stats, sauvegarde, PIN, légal
   html+=`<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px">`;
   html+=`<button onclick="showParentStats()" style="flex:1;min-width:120px;padding:10px;border-radius:10px;border:none;background:#EAE9FF;color:#5A52D5;cursor:pointer;font-weight:700">📊 Statistiques</button>`;

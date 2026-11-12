@@ -26,7 +26,12 @@ memory, calcul, quiz, mastermind, paires, anagrammes, motcache, snake, sort (tri
 | ✅ Mots mêlés | retrouver des mots (dans la langue apprise !) | vocabulaire | 7+ | petit |
 
 - ✅ 12/11 : les 8 jeux ci-dessus créés dans `js/jeux-cerveau.js` (adaptés à l'âge : taille de grille, vitesse). Tangram reporté (déplacer/tourner des pièces au doigt = plus long).
-- ⚠️ Limite de temps : aujourd'hui **20 min par jeu**, et il y a maintenant 21 jeux → en théorie 7 h/jour possibles. Proposition : une limite **totale** (ex. 30 à 45 min/jour, réglable par le parent). À décider.
+- ✅ 12/11 — **Limite de jeu TOTALE** (tous jeux confondus), par profil :
+  - Offre **gratuite : 15 min/jour** (fixe). **Abonnés : 45 min par défaut**, réglable par le parent dans l'Espace Parents (15, 30, 45, 60, 90, 120 min ou illimité).
+  - Message « Plus que 5 minutes » une fois par jour ; la partie en cours s'arrête quand le temps est écoulé.
+  - Écran de fin : **fiche PDF à imprimer dans tous les cas** ; **histoire** et **aventure de questions** si l'abonnement le permet (gratuit : message « avec l'abonnement Famille »).
+  - Tant que les abonnements n'existent pas (bêta), tout le monde est traité comme abonné (`psaPlan()` lit `psa3_plan`, défaut « famille »). À brancher sur le vrai abonnement au lancement.
+  - Bug corrigé : le temps d'une partie était compté deux fois si on quittait après l'écran de fin.
 
 ## 3. Ordre conseillé
 1. Embellir les jeux existants (par lots de 3-4) ← en cours

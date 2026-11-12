@@ -60,7 +60,39 @@ function addDailyMs(gameId,ms){
   st[pid].daily[gameId]=(st[pid].daily[gameId]||0)+ms;
   saveJeuxState(st);
 }
-function isDailyFull(gameId){return getDailyMs(gameId)>=JEUX_DAILY_MAX;}
+// ── Limite de jeu TOTALE (tous jeux confondus) ─────────────────────
+// Offre gratuite : 15 min/jour (fixe). Abonnés : 45 min par défaut, réglable par le parent (jusqu'à illimité).
+// Tant que les abonnements n'existent pas (bêta), tout le monde est traité comme abonné.
+function psaPlan(){try{return localStorage.getItem('psa3_plan')||'famille';}catch(e){return 'famille';}}
+function isFreePlan(){return psaPlan()==='gratuit';}
+function jeuxLimitMin(){if(isFreePlan())return 15;const p=P();const v=p&&p.jeuxMin;return (v===0||v>0)?v:45;} // 0 = illimité
+function jeuxLimitMs(){const m=jeuxLimitMin();return m===0?Infinity:m*60000;}
+function totalDailyMs(){const jp=getJeuxProfile();if(!jp)return 0;const d=(jp.st[jp.pid]&&jp.st[jp.pid].daily)||{};
+  let t=Object.values(d).reduce((a,c)=>a+(+c||0),0);if(GAME&&GAME.startMs&&GAME.id)t+=Date.now()-GAME.startMs;return t;}
+function jeuxLeftMs(){return Math.max(0,jeuxLimitMs()-totalDailyMs());}
+function isDailyFull(gameId){return jeuxLeftMs()<=0;}
+function setJeuxMin(v){const p=P();if(!p)return;p.jeuxMin=+v;saveApp();try{_showParentPanel();}catch(e){}}
+function _jeuxWarnedToday(set){const jp=getJeuxProfile();if(!jp)return true;const o=jp.st[jp.pid];if(set){o.warned=jp.today;saveJeuxState(jp.st);}return o.warned===jp.today;}
+function _jeuxWatch(){ // toutes les 5 s pendant une partie
+  const left=jeuxLeftMs();if(left===Infinity)return;
+  if(left<=5*60000&&left>0&&!_jeuxWarnedToday()){_jeuxWarnedToday(true);try{toast('⏰ Plus que 5 minutes de jeu aujourd\'hui !');}catch(e){}try{sndStar();}catch(e){}}
+  if(left<=0){GAME.timeUp=true;endGame(GAME.score||0);}
+  else{const el=document.getElementById('game-daily-left');if(el){const m=Math.ceil(left/60000);el.textContent=m+' min de jeu restantes aujourd\'hui';}}
+}
+// Écran « temps écoulé » : fiche PDF toujours ; histoire et QCM si l'offre le permet.
+function jeuxTimeUpHTML(){
+  const free=isFreePlan();
+  return `<div class="jeux-timeup">
+    <div style="font-size:42px">⏰</div>
+    <h3>C'est fini pour les jeux aujourd'hui !</h3>
+    <p>Tu as bien joué. Et si on continuait autrement ?</p>
+    <button class="go-btn tu-pdf" onclick="openAteliers()">🖨️ Une fiche à imprimer (atelier)</button>
+    ${free?`<p class="tu-free">📚 Histoires et questions en plus : avec l'abonnement Famille.</p>`:
+      `<button class="go-btn tu-story" onclick="openNuit()">🌙 Écouter une histoire</button>
+       <button class="go-btn tu-qcm" onclick="startAdventure()">🗺️ Une aventure de questions</button>`}
+    <button class="go-btn" style="background:var(--bg);color:var(--tl)" onclick="goHome()">🏠 Accueil</button>
+  </div>`;
+}
 
 function openJeux(){
   try{
@@ -72,8 +104,7 @@ function openJeux(){
   JEUX_CFG.forEach(g=>{
     const locked=score<g.min_score;
     const hs=getHighscore(g.id);
-    const dailyMs=getDailyMs(g.id);
-    const pct=Math.min(100,Math.round(dailyMs/JEUX_DAILY_MAX*100));
+    const pct=0;
     const card=document.createElement('button');
     card.className='jeu-card'+(locked?' locked':'');
     card.innerHTML=`<span class="je">${g.emoji}</span>
@@ -81,11 +112,11 @@ function openJeux(){
       <span class="js">${g.desc}</span>
       ${hs>0?`<span class="jhs">🏆 Record : ${hs}</span>`:''}
       ${locked?`<span class="jeu-lock-badge">🔒 ${g.min_score}⭐</span>`:''}
-      <div class="jeu-daily-bar-wrap"><div class="jeu-daily-bar" style="width:${pct}%"></div></div>`;
+      `;
     if(!locked){
       if(isDailyFull(g.id)){
         card.disabled=true;
-        card.querySelector('.js').textContent='Limite atteinte (réinitialise à minuit)';
+        card.querySelector('.js').textContent='Temps de jeu terminé (revient à minuit)';
       } else {
         card.onclick=()=>{sndTap();startGame(g.id);};
       }
@@ -94,9 +125,12 @@ function openJeux(){
   });
   // Daily banner
   const banner=document.getElementById('jeux-daily-banner');
-  const totalLeft=JEUX_CFG.reduce((a,g)=>a+Math.max(0,JEUX_DAILY_MAX-getDailyMs(g.id)),0);
-  if(totalLeft<60000){if(banner){banner.style.display='block';banner.textContent='⏰ Limite de jeu atteinte pour aujourd\'hui ! Revenez demain.';}}
-  else if(banner)banner.style.display='none';
+  const totalLeft=jeuxLeftMs();
+  if(banner){
+    if(totalLeft<=0){banner.style.display='block';banner.innerHTML='⏰ Temps de jeu terminé pour aujourd\'hui ! <button class="tu-inline" onclick="startGame(\'memory\')">Que faire maintenant ?</button>';}
+    else if(totalLeft!==Infinity){banner.style.display='block';banner.textContent='⏱ '+Math.ceil(totalLeft/60000)+' min de jeu restantes aujourd\'hui'+(isFreePlan()?' (offre gratuite : 15 min)':'');}
+    else banner.style.display='none';
+  }
   }catch(e){console.error('openJeux:',e);toast('Erreur jeux: '+e.message,'err');}
 }
 
@@ -140,8 +174,9 @@ function _gPad(wrap,opts){
 }
 function startGame(id){
   _gClearAll();
-  if(isDailyFull(id)){toast('⏰ Limite quotidienne atteinte !');return;}
+  if(isDailyFull(id)){show('game');document.getElementById('game-title').textContent='⏰ Jeux';document.getElementById('game-inner').innerHTML=jeuxTimeUpHTML();return;}
   GAME={id,score:0,startMs:Date.now(),timerInt:null,sessionInt:null};
+  GAME.sessionInt=setInterval(_jeuxWatch,5000);
   const cfg=JEUX_CFG.find(g=>g.id===id);
   document.getElementById('game-title').textContent=cfg?cfg.emoji+' '+cfg.title:'Jeu';
   document.getElementById('game-score').textContent='0';
@@ -157,9 +192,8 @@ function startGame(id){
 }
 
 function updateGameDailyLeft(id){
-  const left=Math.max(0,JEUX_DAILY_MAX-getDailyMs(id));
-  const mins=Math.floor(left/60000);
-  document.getElementById('game-daily-left').textContent=mins>0?`${mins} min restantes aujourd\'hui`:'Dernière partie !';
+  const left=jeuxLeftMs();
+  document.getElementById('game-daily-left').textContent=left===Infinity?'Temps de jeu illimité':`${Math.ceil(left/60000)} min de jeu restantes aujourd\'hui`;
 }
 
 function updateGameScore(s){
@@ -170,8 +204,9 @@ function updateGameScore(s){
 function endGame(finalScore){
   _gClearAll();
   // Record time played
-  const elapsed=Date.now()-GAME.startMs;
-  addDailyMs(GAME.id,elapsed);
+  const elapsed=GAME.startMs?Date.now()-GAME.startMs:0;
+  addDailyMs(GAME.id,elapsed);GAME.startMs=0;
+  if(isDailyFull()){const dl=document.getElementById('game-daily-left');if(dl)dl.textContent='Temps de jeu terminé';}
   // Highscore
   const prevHs=getHighscore(GAME.id);
   setHighscore(GAME.id,finalScore);
@@ -189,8 +224,8 @@ function endGame(finalScore){
     <div class="go-score">Score : ${finalScore}</div>
     <div class="go-hs">${isNew?'🎉 Nouveau record !':'Record : '+getHighscore(GAME.id)}</div>
     ${starsEarned>0?`<div style="color:var(--y);font-weight:800;margin-bottom:12px">+${starsEarned} ⭐</div>`:''}
-    <button class="go-btn" style="background:var(--v);color:#fff" onclick="startGame('${GAME.id}')">🔄 Rejouer</button>
-    <button class="go-btn" style="background:var(--bg);color:var(--tl)" onclick="openJeux()">← Jeux</button>
+    ${isDailyFull()?jeuxTimeUpHTML():`<button class="go-btn" style="background:var(--v);color:#fff" onclick="startGame('${GAME.id}')">🔄 Rejouer</button>
+    <button class="go-btn" style="background:var(--bg);color:var(--tl)" onclick="openJeux()">← Jeux</button>`}
   </div>`;
   if(finalScore>=50){celebrate();sndStar();senseiDance();}
 }

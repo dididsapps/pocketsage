@@ -12,8 +12,8 @@ Dossier de travail : idées de prix, de formules d'abonnement, et coûts associ�
 
 | Formule | Contenu | Prix (à tester) |
 |---|---|---|
-| Gratuite | Découverte : quelques modules / limite quotidienne | 0 € |
-| Famille | Tous les modules, 4 profils, hors-ligne, fiches PDF | ~5-7 €/mois |
+| Gratuite | Découverte : quelques modules / limite quotidienne ; **jeux : 15 min/jour** ; fin de jeu → fiche PDF seulement | 0 € |
+| Famille | Tous les modules, 4 profils, hors-ligne, fiches PDF ; **jeux : 45 min/jour par défaut, réglable par le parent jusqu'à illimité** ; fin de jeu → fiche, histoire ou aventure | ~5-7 €/mois |
 | Famille+ (premium) | Famille + **prononciation évaluée précisément** (voir §3) + futurs services coûteux | à définir |
 
 ## 3. Fonctionnalité premium candidate : évaluation précise de la prononciation

@@ -215,3 +215,13 @@ body.night #scr-game .mm-list span{background:#2A1E0A}
 #scr-game .sd-c.br{margin-right:0;border-right:3px solid #5A52D5}
 #scr-game .sd-c.bb{margin-bottom:0;border-bottom:3px solid #5A52D5}
 body.night #scr-game .sd-c.br{border-right-color:#C8A040}body.night #scr-game .sd-c.bb{border-bottom-color:#C8A040}
+
+/* ── Écran « temps de jeu terminé » ── */
+#scr-game .jeux-timeup{text-align:center;background:#fff;border-radius:20px;padding:18px 14px;margin:10px 0;box-shadow:0 6px 0 rgba(108,99,255,.15)}
+#scr-game .jeux-timeup h3{font-size:19px;margin:6px 0;color:#2D2D44}
+#scr-game .jeux-timeup p{font-size:13px;color:var(--tl);margin:0 0 12px}
+#scr-game .jeux-timeup .go-btn{display:block;width:100%;margin:8px 0;color:#fff;font-weight:800}
+#scr-game .jeux-timeup .tu-pdf{background:#FF9F1C}#scr-game .jeux-timeup .tu-story{background:#3A86FF}#scr-game .jeux-timeup .tu-qcm{background:#06B98A}
+#scr-game .jeux-timeup .tu-free{background:#FFF8E7;border-radius:12px;padding:8px;color:#8A5D00;font-weight:700}
+body.night #scr-game .jeux-timeup{background:#2A1E0A}body.night #scr-game .jeux-timeup h3{color:#F5E6C8}
+.tu-inline{border:none;background:#6C63FF;color:#fff;border-radius:10px;padding:4px 10px;font-weight:800;margin-left:6px}
