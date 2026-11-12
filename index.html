@@ -1178,6 +1178,14 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
         <span onclick="this.previousElementSibling.checked=!this.previousElementSibling.checked" style="position:absolute;inset:0;background:var(--v);border-radius:12px;cursor:pointer;transition:.3s"></span>
       </label>
     </div>
+    <label id="coach-hf-row" style="display:flex;align-items:center;gap:10px;background:#FFF0D6;border-radius:14px;padding:12px 14px;margin:-8px 0 18px;cursor:pointer">
+      <span style="font-size:22px">🙌</span>
+      <div style="flex:1">
+        <div style="font-size:13px;font-weight:800">Mains libres</div>
+        <div id="coach-hf-sub" style="font-size:11px;color:var(--tl);margin-top:1px">Dis « GO » pour démarrer, « NEXT » pour continuer, « RÉPÈTE » pour réécouter (utilise le micro)</div>
+      </div>
+      <input type="checkbox" id="coach-hf-toggle" style="width:22px;height:22px;flex-shrink:0">
+    </label>
     <button id="coach-launch-btn" onclick="launchCoachSession()" style="display:none;width:100%;background:linear-gradient(135deg,#FF6B6B,#C9184A);border:none;border-radius:18px;padding:18px;font-family:var(--f);font-size:16px;font-weight:900;color:#fff;cursor:pointer;box-shadow:0 4px 18px rgba(201,24,74,.4);touch-action:manipulation">
       🏅 Lancer la séance !
     </button>
@@ -1432,6 +1440,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 
 <script src="js/jeux.js"></script>
 <script src="js/jeux-cerveau.js"></script>
+<script src="js/coach-voix.js"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -11657,6 +11666,7 @@ function P(){return APP.profiles[APP.cur]||null;} // profil courant
 function show(id){
   try{
     if(id!=='game'&&typeof _gClearAll==='function')_gClearAll();
+    if(id!=='defi'&&typeof hfStop==='function'){hfStop();try{coachStopVoice();}catch(e){}}
     // Ne pas appeler ttsStop() ici — speechSynthesis.cancel() gèle sur mobile
     _ttsQueue=[];_ttsPlaying=false;
     // Nettoyer tous les overlays résiduels qui bloqueraient les clics
@@ -15437,6 +15447,9 @@ function _coachMsg(cat){ const a=COACH_MSGS[cat]||['C\'est parti !'];return a[Ma
 
 function openCoachModal(){
   sndTap();
+  try{const ok=typeof hfAvailable==='function'&&hfAvailable(),cb=document.getElementById('coach-hf-toggle'),sub=document.getElementById('coach-hf-sub');
+    if(cb){cb.disabled=!ok;cb.checked=ok&&!!(P()&&P().coachHF);}
+    if(sub&&!ok)sub.textContent='Indisponible : micro désactivé dans l’Espace Parents ou non pris en charge par ce navigateur';}catch(e){}
   const overlay=document.getElementById('coach-modal-overlay');
   if(overlay){ overlay.style.display='flex'; COACH.age=null;
     document.querySelectorAll('.coach-age-btn').forEach(b=>b.style.outline='none');
@@ -15492,17 +15505,17 @@ function launchCoachSession(){
   sndTap();
   if(!COACH.age){ toast('Choisis un âge !','info'); return; }
   COACH.voice = document.getElementById('coach-voice-toggle')?.checked !== false;
+  COACH.hf = !!document.getElementById('coach-hf-toggle')?.checked;
+  if(COACH.hf) COACH.voice = true; // mains libres = le coach parle
+  try{const p=P();if(p){p.coachHF=COACH.hf;saveApp();}}catch(e){}
   const {seq, plan} = buildCoachSequence(COACH.age);
   COACH.seq = seq;
   COACH.stepIdx = 0;
   COACH.plan = plan;
   closeCoachModal();
   // Annonce départ
-  if(COACH.voice){
-    const intro=`Séance pour ${plan.label} ! ${plan.pattern.length} exercices. Prépare-toi !`;
-    ttsSpeak(intro,'fr-FR');
-  }
-  setTimeout(()=>startCoachStep(0), COACH.voice?2200:200);
+  if(COACH.voice) coachSay(COACH_TXT.intro(plan,plan.pattern.length),()=>startCoachStep(0));
+  else setTimeout(()=>startCoachStep(0),200);
 }
 
 function startCoachStep(idx){
@@ -15512,21 +15525,29 @@ function startCoachStep(idx){
   const total=COACH.seq.length;
 
   // Message coach vocal avant l'exercice
-  if(COACH.voice && idx>0){
-    const msg=_coachMsg(item.cat);
-    const txt=`${item._phase}. ${msg} ${item.nom.replace(/\p{Emoji}/gu,'').trim()} : ${item.consigne}`;
-    ttsSpeak(txt,'fr-FR');
-    setTimeout(()=>renderCoachStep(item, idx, total), 2800);
-  } else if(COACH.voice && idx===0){
-    const txt=`Premier exercice : ${item.nom.replace(/\p{Emoji}/gu,'').trim()} ! ${item.consigne}`;
-    ttsSpeak(txt,'fr-FR');
-    setTimeout(()=>renderCoachStep(item, idx, total), 2200);
+  if(COACH.voice){
+    // On affiche l'exercice tout de suite, le coach l'annonce, puis (mains libres) on écoute « GO »
+    renderCoachStep(item, idx, total, true);
+    const parts = idx>0 ? [COACH_TXT.phase(item._phase), _coachMsg(item.cat), COACH_TXT.nom(item), COACH_TXT.consigne(item)]
+                        : [COACH_TXT.first, COACH_TXT.nom(item), COACH_TXT.consigne(item)];
+    const tok = COACH.tok = (COACH.tok||0)+1;
+    coachSayList(parts, ()=>{ if(tok!==COACH.tok)return; if(APP.car){const b=document.getElementById('df-st');if(b)b.click();} else _coachAskGo(item); });
   } else {
     renderCoachStep(item, idx, total);
   }
 }
 
-function renderCoachStep(item, stepNum, totalSteps){
+function _coachAskGo(item){
+  if(!COACH.hf)return;
+  const go=()=>{const b=document.getElementById('df-st');if(b&&b.style.display!=='none')b.click();};
+  coachSay(COACH_TXT.sayGo,()=>hfListen({go, repeat:()=>coachSayList([COACH_TXT.nom(item),COACH_TXT.consigne(item)],()=>_coachAskGo(item))},'Dis « GO »',go));
+}
+function _coachAskNext(last){
+  if(!COACH.hf)return;
+  const nx=()=>{const b=document.getElementById('df-nx');if(b)b.click();};
+  coachSay(last?COACH_TXT.sayNextLast:COACH_TXT.sayNext,()=>hfListen({next:nx, go:nx},'Dis « NEXT »',nx));
+}
+function renderCoachStep(item, stepNum, totalSteps, announced){
   clearInterval(COACH.timer); COACH.timer=null;
   APP.curEx={item,mod:'defis',idx:stepNum,list:COACH.seq};
   const dur=item._coachDur||item.dur||30;
@@ -15575,18 +15596,24 @@ function renderCoachStep(item, stepNum, totalSteps){
     if(running)return; running=true;
     document.getElementById('df-st').style.display='none';
     document.getElementById('df-ring').classList.add('run');
-    if(COACH.voice) ttsSpeak(item.consigne,'fr-FR');
+    try{hfStop();}catch(e){}
+    COACH.tok=(COACH.tok||0)+1; coachStopVoice();
+    if(COACH.voice && !COACH.hf && !announced) coachSay(COACH_TXT.consigne(item));
     COACH.timer=setInterval(()=>{rem--;
       const r=document.getElementById('df-ring');if(r)r.textContent=rem+'s';
       const pg=document.getElementById('df-prog');if(pg)pg.style.width=((dur-rem)/dur*100)+'%';
-      // Compte à rebours vocal : 3,2,1
-      if(rem<=3&&rem>0&&COACH.voice) ttsSpeak(String(rem),'fr-FR');
+      // Petit bip chaque seconde (plus aigu sur les 3 dernières)
+      if(rem>0){try{rem<=3?beep(1046,.09,'sine',.16):beep(784,.04,'sine',.07);}catch(e){}}
+      // Temps restant annoncé toutes les 10 s, puis 3, 2, 1
+      if(COACH.voice&&rem>0&&rem%10===0&&rem<dur) coachSay(COACH_TXT.left(rem));
+      if(rem<=3&&rem>0&&COACH.voice) coachSay(COACH_TXT.count[rem-1]);
       if(rem<=0){
         clearInterval(COACH.timer);COACH.timer=null;
         if(r){r.textContent='🎉';r.classList.remove('run');}
         if(pg)pg.style.width='100%';
         const dn=document.getElementById('df-dn');if(dn)dn.style.display='block';
-        if(COACH.voice) ttsSpeak('Bravo ! Super !','fr-FR');
+        if(COACH.hf){const dn=document.getElementById('df-dn');if(dn)dn.click();} // mains libres : réussite notée automatiquement
+        if(COACH.voice) coachSay(COACH_TXT.bravo,()=>_coachAskNext(stepNum+1>=totalSteps));
       }
     },1000);
   };
@@ -15597,7 +15624,7 @@ function renderCoachStep(item, stepNum, totalSteps){
   };
 
   document.getElementById('df-nx').onclick=()=>{
-    clearInterval(COACH.timer);COACH.timer=null;
+    clearInterval(COACH.timer);COACH.timer=null;try{hfStop();}catch(e){}COACH.tok=(COACH.tok||0)+1;coachStopVoice();
     const next=stepNum+1;
     if(next<totalSteps) startCoachStep(next);
     else endCoachSession();
@@ -15605,7 +15632,7 @@ function renderCoachStep(item, stepNum, totalSteps){
 
   show('defi');
   // Auto-démarrage si mode voiture
-  if(APP.car) setTimeout(()=>{ const btn=document.getElementById('df-st');if(btn)btn.click(); },500);
+  if(APP.car && !announced) setTimeout(()=>{ const btn=document.getElementById('df-st');if(btn)btn.click(); },500);
 }
 
 function endCoachSession(){
@@ -15636,7 +15663,8 @@ function endCoachSession(){
   document.getElementById('df-htit').textContent='🏆 Séance terminée !';
   show('defi');
   celebrate(); sndStar();
-  if(COACH.voice) setTimeout(()=>ttsSpeak(`Bravo ! Séance complète terminée ! ${total} exercices réussis comme un champion !`,'fr-FR'),300);
+  try{hfStop();}catch(e){}
+  if(COACH.voice) setTimeout(()=>coachSay(COACH_TXT.end(total)),300);
 }
 
 // ════════════════════════════════════════════

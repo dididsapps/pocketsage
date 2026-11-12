@@ -48,3 +48,10 @@ memory, calcul, quiz, mastermind, paires, anagrammes, motcache, snake, sort (tri
 - ✅ **12/11** — Snake : terrain herbe + bordure de sable (jour), fond noir (nuit), yeux qui regardent où il va ; **pavé tactile géant** : le terrain est coupé en 4 triangles (toucher n'importe où vers le haut/bas/gauche/droite), grosses flèches transparentes qui s'éclairent au toucher, glisser le doigt marche aussi, flèches du clavier.
 - ✅ **12/11 — Blocs Sensei créé** (13ᵉ jeu) : même pavé + rond central = tourner ; côtés = déplacer (appui long = continue) ; bas = descendre vite ; haut = tout en bas ; ombre de la pièce, pièce suivante, niveaux, vitesse selon l'âge ; **question bonus toutes les 4 lignes** (+20). Marche sur téléphone et tablette (taille calculée selon l'écran).
 - ⏳ Lot 2 proposé : Mastermind, Anagrammes, Bombe de mots, Mot caché.
+
+## 5. Sport — Coach Sportif (12/11/2026)
+- ✅ Option **🙌 Mains libres** dans la fenêtre « Mode Coach Sportif » (si le micro est autorisé par le parent) : le coach annonce l'exercice, puis on dit **« GO »** (ou « c'est parti », « partez ») pour lancer, **« NEXT »** (ou « suivant », « continue ») pour passer au suivant, **« RÉPÈTE »** pour réentendre. Pastille rouge « 🎤 Dis « GO » » en haut (on peut aussi la toucher). La réussite est notée automatiquement.
+- ✅ Pendant l'exercice : **petit bip chaque seconde** (plus aigu sur 3-2-1), le coach annonce **« Encore 20 secondes ! »** toutes les 10 s, puis 3, 2, 1.
+- ✅ Phrases du coach en **MP3 voix Google énergique, débit un peu lent (0,95)** : `js/coach-voix.js` (textes) → `tools/sport_texts.js` → `gen_sport_mp3.py` (workflow `sport-tts.yml`, voix Chirp 3 HD « Puck », sinon Neural2-B) → `data/sport/fr.audio.json`. Tant que les MP3 ne sont pas générés : voix du téléphone.
+- ✅ Phrase de fin dite à voix haute (écran « temps de jeu terminé ») : « Bravo, séance terminée ! Montre à tes parents ce que tu as appris aujourd'hui. À demain ! »
+- Limite : sur Android, le micro fait parfois un petit « bip » quand l'écoute redémarre (comportement du téléphone).

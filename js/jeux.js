@@ -83,10 +83,11 @@ function _jeuxWatch(){ // toutes les 5 s pendant une partie
 // Écran « temps écoulé » : fiche PDF toujours ; histoire et QCM si l'offre le permet.
 function jeuxTimeUpHTML(){
   const free=isFreePlan();
+  try{setTimeout(()=>{if(typeof coachSay==='function')coachSay(COACH_TXT.dayEnd);},500);}catch(e){}
   return `<div class="jeux-timeup">
     <div style="font-size:42px">⏰</div>
-    <h3>C'est fini pour les jeux aujourd'hui !</h3>
-    <p>Tu as bien joué. Et si on continuait autrement ?</p>
+    <h3>Bravo, séance terminée !</h3>
+    <p>Montre à tes parents ce que tu as appris aujourd'hui. À demain !<br>Et si on continuait autrement ?</p>
     <button class="go-btn tu-pdf" onclick="openAteliers()">🖨️ Une fiche à imprimer (atelier)</button>
     ${free?`<p class="tu-free">📚 Histoires et questions en plus : avec l'abonnement Famille.</p>`:
       `<button class="go-btn tu-story" onclick="openNuit()">🌙 Écouter une histoire</button>

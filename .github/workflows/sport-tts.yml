@@ -1,0 +1,78 @@
+name: Coach Sportif — MP3 des phrases du coach
+
+# Se lance quand les exercices de sport ou les phrases du coach changent.
+# Génère les MP3 manquants (voix Google énergique) sur R2,
+# puis recommite data/sport/fr.audio.json (table texte → fichier).
+on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "js/coach-voix.js"
+      - "tools/sport_texts.js"
+      - "gen_sport_mp3.py"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sport-tts
+  cancel-in-progress: false
+
+jobs:
+  sport:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Dépendances
+        run: pip install requests boto3
+
+      - name: Vérifier les secrets
+        id: chk
+        env:
+          GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+          R2_ACCESS_KEY: ${{ secrets.R2_ACCESS_KEY }}
+          R2_SECRET_KEY: ${{ secrets.R2_SECRET_KEY }}
+        run: |
+          if [ -z "$GOOGLE_TTS_API_KEY" ] || [ -z "$R2_ACCESS_KEY" ] || [ -z "$R2_SECRET_KEY" ]; then
+            echo "::warning::Secrets GOOGLE_TTS_API_KEY / R2_ACCESS_KEY / R2_SECRET_KEY absents — étape ignorée. Voir docs/flash/03_procedures_mp3_traductions.md"
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: MP3 coach + upload R2
+        if: steps.chk.outputs.ok == 'true'
+        env:
+          GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          R2_ACCESS_KEY: ${{ secrets.R2_ACCESS_KEY }}
+          R2_SECRET_KEY: ${{ secrets.R2_SECRET_KEY }}
+        run: python3 gen_sport_mp3.py
+
+      - name: Recommiter le manifest
+        # Même en cas d'erreur partielle, on garde ce qui a été fait (le manifest évite de refaire).
+        if: always() && steps.chk.outputs.ok == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add data/sport/ || true
+          if git diff --cached --quiet; then
+            echo "Rien à commiter"
+          else
+            # Pas de [skip ci] : Cloudflare Pages doit redéployer avec les traductions.
+            git commit -m "chore(sport): MP3 coach auto"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

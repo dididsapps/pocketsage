@@ -230,3 +230,11 @@ body.night #scr-game .jeux-timeup{background:#2A1E0A}body.night #scr-game .jeux-
 body.night .jeux-low{color:#FF6B6B!important}
 @keyframes jeuxBlink{50%{opacity:.55}}
 @media (prefers-reduced-motion:reduce){.jeux-low{animation:none}}
+
+/* ── Mains libres (Coach Sportif) : pastille « Dis GO / NEXT » ── */
+#hf-badge{position:fixed;left:50%;transform:translateX(-50%);top:calc(64px + env(safe-area-inset-top,0px));z-index:9500;
+  display:flex;align-items:center;gap:8px;border:none;border-radius:30px;padding:12px 20px;font:900 16px var(--f);
+  background:#FF6B6B;color:#fff;box-shadow:0 6px 0 #C9184A,0 10px 24px rgba(0,0,0,.25);cursor:pointer}
+#hf-badge .hf-dot{width:12px;height:12px;border-radius:50%;background:#fff;animation:hfPulse 1s ease-in-out infinite}
+@keyframes hfPulse{0%,100%{transform:scale(.7);opacity:.6}50%{transform:scale(1.25);opacity:1}}
+@media (prefers-reduced-motion:reduce){#hf-badge .hf-dot{animation:none}}
