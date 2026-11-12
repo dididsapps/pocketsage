@@ -252,3 +252,9 @@ body.night .jeux-low{color:#FF6B6B!important}
 .coach-len-btn{border:2px solid transparent;border-radius:14px;padding:12px 4px;background:var(--bg);font:800 13px var(--f);color:var(--t);cursor:pointer}
 .coach-len-btn.sel{border-color:#6C63FF;background:var(--vl);color:#5A52D5}
 body.night .coach-len-btn{background:#2A1E0A;color:#F5E6C8}body.night .coach-len-btn.sel{border-color:#C8A040;color:#FFD166}
+
+/* ── Sport : 3 groupes d'âge ── */
+.sport-grp{display:grid;grid-template-columns:repeat(4,auto);gap:6px;justify-content:center;margin:4px 0 8px}
+.sport-grp button{border:2px solid transparent;border-radius:20px;padding:8px 10px;background:var(--bg);font:800 12.5px var(--f);color:var(--t);cursor:pointer;white-space:nowrap}
+.sport-grp button.sel{border-color:#6C63FF;background:var(--vl);color:#5A52D5}
+@media (max-width:380px){.sport-grp{grid-template-columns:repeat(2,1fr)}}
