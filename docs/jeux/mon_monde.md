@@ -31,3 +31,15 @@
 | 2 | Manèges animés + ponts hauts | ~1 session |
 | 3 | Mode « Ma vie » : déplacement, taxi, jauges, missions, jour/nuit, enfants | ~2 à 3 sessions |
 | 4 | Réglage de l'économie (gains / prix / rentabilité) | ~0,5 session |
+
+## 5. Groupe familial (demande du 12/11) — 5 personnages max
+- Le joueur gère **un groupe de 1 à 5 personnages** : son avatar + jeunes enfants + adultes / grands.
+- **Activités à plusieurs** : parc d'attractions, bateau, cinéma, plage, restaurant → le prix est **par personne** (sortir à 5 coûte plus cher → intérêt de construire et d'investir).
+- **Activités seul** : un adulte ou un grand peut partir **travailler / récolter** seul (ferme, magasin, garage…) → il rapporte un bonus de récolte sur ce bâtiment.
+- Règle simple et logique : **un jeune enfant ne sort jamais seul** — il faut un adulte ou un grand avec lui (école, parc, hôpital).
+- On sélectionne qui part (touche les portraits en bas de l'écran), puis on touche la destination.
+- Recrutement : 1 personnage au départ ; les suivants se débloquent avec la maison (Maison = 3 places, Villa = 5).
+
+## 6. ⚠️ Constat technique (12/11)
+- Le monde est enregistré sous une seule clé (`psa3_world3`) → **tous les profils enfants du téléphone partagent la même ville et les mêmes jetons**. À corriger : un monde par profil.
+- Aujourd'hui les gains sont déséquilibrés : l'apprentissage ne rapporte que **1 🪙 par bonne réponse d'aventure** (rien pour Flash, mini-jeux, dialogues), alors que les bâtiments produisent **toutes les 8 secondes** tant que le monde est ouvert (une maisonnette de 20 🪙 est remboursée en moins d'une minute). Voir l'économie recalibrée dans `economie.md`.
