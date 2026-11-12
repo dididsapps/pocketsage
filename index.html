@@ -1149,23 +1149,29 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
       <button class="coach-age-btn" data-age="5" onclick="selectCoachAge(this)" style="background:linear-gradient(135deg,#ADE8F4,#48CAE4);border:none;border-radius:16px;padding:14px;cursor:pointer;font-family:var(--f)">
         <div style="font-size:28px">🐣</div>
         <div style="font-size:14px;font-weight:900;color:#023E8A;margin-top:4px">4 – 6 ans</div>
-        <div style="font-size:10px;color:#0077B6;margin-top:2px">8 exercices · 20s chacun</div>
+        <div style="font-size:10px;color:#0077B6;margin-top:2px">≈ <span class="coach-min" data-k="5"></span> min</div>
       </button>
       <button class="coach-age-btn" data-age="9" onclick="selectCoachAge(this)" style="background:linear-gradient(135deg,#B7E4C7,#52B788);border:none;border-radius:16px;padding:14px;cursor:pointer;font-family:var(--f)">
         <div style="font-size:28px">🐸</div>
         <div style="font-size:14px;font-weight:900;color:#1B4332;margin-top:4px">7 – 10 ans</div>
-        <div style="font-size:10px;color:#2D6A4F;margin-top:2px">10 exercices · 30s chacun</div>
+        <div style="font-size:10px;color:#2D6A4F;margin-top:2px">≈ <span class="coach-min" data-k="9"></span> min</div>
       </button>
       <button class="coach-age-btn" data-age="13" onclick="selectCoachAge(this)" style="background:linear-gradient(135deg,#FFD166,#FFA500);border:none;border-radius:16px;padding:14px;cursor:pointer;font-family:var(--f)">
         <div style="font-size:28px">🦅</div>
         <div style="font-size:14px;font-weight:900;color:#5C3100;margin-top:4px">11 – 14 ans</div>
-        <div style="font-size:10px;color:#7B4400;margin-top:2px">12 exercices · 35s chacun</div>
+        <div style="font-size:10px;color:#7B4400;margin-top:2px">≈ <span class="coach-min" data-k="13"></span> min</div>
       </button>
       <button class="coach-age-btn" data-age="18" onclick="selectCoachAge(this)" style="background:linear-gradient(135deg,#FF6B6B,#C9184A);border:none;border-radius:16px;padding:14px;cursor:pointer;font-family:var(--f)">
         <div style="font-size:28px">💪</div>
         <div style="font-size:14px;font-weight:900;color:#fff;margin-top:4px">Adulte</div>
-        <div style="font-size:10px;color:rgba(255,255,255,.8);margin-top:2px">14 exercices · 40s chacun</div>
+        <div style="font-size:10px;color:rgba(255,255,255,.8);margin-top:2px">≈ <span class="coach-min" data-k="18"></span> min</div>
       </button>
+    </div>
+    <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--tl);margin-bottom:10px">Durée de la séance</div>
+    <div id="coach-len-btns" style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:18px">
+      <button class="coach-len-btn" data-len="0" onclick="selectCoachLen(0)">⚡ Courte</button>
+      <button class="coach-len-btn sel" data-len="1" onclick="selectCoachLen(1)">⏱ Normale</button>
+      <button class="coach-len-btn" data-len="2" onclick="selectCoachLen(2)">🔥 Longue</button>
     </div>
     <div style="display:flex;align-items:center;gap:10px;background:var(--vl);border-radius:14px;padding:12px 14px;margin-bottom:18px">
       <span style="font-size:22px">🔊</span>
@@ -15399,31 +15405,18 @@ let COACH = { age: null, seq: [], stepIdx: 0, voice: true, timer: null };
 // 3) Jamais gainage juste après respiration
 // 4) Toujours finir par respiration (retour au calme)
 // 5) Alterner cardio/gainage pour éviter l'épuisement localisé
-const COACH_PLANS = {
-  5:  { // 4-6 ans
-    dur: 20,
-    pattern: ['cardio','cardio','gainage','cardio','gainage','stretching','stretching','respiration'],
-    label:'4-6 ans', emoji:'🐣'
-  },
-  9:  { // 7-10 ans
-    dur: 30,
-    pattern: ['cardio','cardio','gainage','cardio','gainage','cardio','gainage','stretching','stretching','respiration'],
-    label:'7-10 ans', emoji:'🐸'
-  },
-  13: { // 11-14 ans
-    dur: 35,
-    pattern: ['cardio','cardio','cardio','gainage','gainage','cardio','cardio','gainage','stretching','stretching','respiration','respiration'],
-    label:'11-14 ans', emoji:'🦅'
-  },
-  18: { // Adulte
-    dur: 40,
-    pattern: ['cardio','cardio','cardio','gainage','gainage','gainage','cardio','cardio','gainage','stretching','stretching','stretching','respiration','respiration'],
-    label:'Adulte', emoji:'💪'
-  }
+// Séance façon coach : échauffement → circuit (plusieurs tours, pause eau entre les tours) → étirements → respiration
+// work = durée d'un exercice (s), rest = petite pause respiration entre deux exercices (s)
+// rounds = nombre de tours du circuit selon la durée choisie [courte, normale, longue]
+const COACH_CFG = {
+  5:  { label:'4-6 ans',  emoji:'🐣', work:20, rest:15, warm:2, circuit:5, rounds:[1,2,3], stretch:2, resp:1 },
+  9:  { label:'7-10 ans', emoji:'🐸', work:30, rest:12, warm:3, circuit:5, rounds:[1,2,3], stretch:3, resp:1 },
+  13: { label:'11-14 ans',emoji:'🦅', work:35, rest:12, warm:3, circuit:6, rounds:[1,2,3], stretch:3, resp:2 },
+  18: { label:'Adulte',   emoji:'💪', work:40, rest:15, warm:3, circuit:6, rounds:[2,3,4], stretch:4, resp:2 }
 };
-
+const COACH_LEN_NAMES=['Courte','Normale','Longue'];
 const COACH_PHASE_NAMES = {
-  cardio:      ['🔥 Échauffement','🏃 Cardio','💨 Fractionné','🔥 Accélération','⚡ Sprint'],
+  cardio:      ['🏃 Cardio','💨 Fractionné','🔥 Accélération','⚡ Sprint'],
   gainage:     ['💪 Gainage','🧱 Abdos','🏋️ Renforcement','🔩 Stabilisation'],
   stretching:  ['🧘 Étirement','🌿 Souplesse','🌸 Flexibilité'],
   respiration: ['🌬️ Récupération','🫁 Respiration','🌊 Retour au calme'],
@@ -15443,8 +15436,14 @@ const COACH_MSGS = {
 };
 function _coachMsg(cat){ const a=COACH_MSGS[cat]||['C\'est parti !'];return a[Math.floor(Math.random()*a.length)]; }
 
+function selectCoachLen(n){
+  try{sndTap();}catch(e){}COACH.len=n;
+  document.querySelectorAll('.coach-len-btn').forEach(b=>b.classList.toggle('sel',+b.dataset.len===n));
+  document.querySelectorAll('.coach-min').forEach(e=>{e.textContent=coachEstimateMin(COACH_CFG[e.dataset.k],n);});
+}
 function openCoachModal(){
   sndTap();
+  if(COACH.len!==0&&COACH.len!==2)COACH.len=1;setTimeout(()=>selectCoachLen(COACH.len),0);
   try{const ok=typeof hfAvailable==='function'&&hfAvailable(),cb=document.getElementById('coach-hf-toggle'),sub=document.getElementById('coach-hf-sub');
     if(cb){cb.disabled=!ok;cb.checked=ok&&!!(P()&&P().coachHF);}
     if(sub&&!ok)sub.textContent='Indisponible : micro désactivé dans l’Espace Parents ou non pris en charge par ce navigateur';}catch(e){}
@@ -15466,42 +15465,32 @@ function selectCoachAge(btn){
   document.getElementById('coach-launch-btn').style.display='block';
 }
 
-function buildCoachSequence(age){
-  // Trouver le plan le plus adapté
-  const keys=[5,9,13,18];
-  let planKey=keys[0];
-  for(const k of keys){ if(age>=k) planKey=k; }
-  const plan=COACH_PLANS[planKey];
+function buildCoachSequence(age,len){
+  const keys=[5,9,13,18];let key=keys[0];
+  for(const k of keys){ if(age>=k) key=k; }
+  const cfg=COACH_CFG[key];len=(len===0||len===2)?len:1;
   const all=DATA.defis;
-
-  // Pool par catégorie, shufflé
-  const pools={};
-  // Exercices adaptés à l'âge (± 1 an de tolérance) ; si trop peu, on prend toute la catégorie
+  // Exercices adaptés à l'âge (± 1 an) ; si aucun, toute la catégorie
   const fits=d=>{const a=String(d.age||'');const m=a.match(/^(\d+)\s*-\s*(\d+)$/);if(m)return age>=+m[1]-1&&age<=+m[2]+1;const n=parseInt(a);return isNaN(n)||(a.endsWith('+')?age>=n:true);};
-  ['cardio','gainage','stretching','respiration'].forEach(cat=>{
-    const ok=all.filter(d=>d.cat===cat&&fits(d));
-    pools[cat]=shuffle(ok.length?ok:all.filter(d=>d.cat===cat));
-  });
-  // Échauffement : on commence par le cardio le plus doux
-  const warm=pools.cardio.reduce((m,d)=>(d.diff||1)<(m.diff||1)?d:m,pools.cardio[0]);
-  pools.cardio=[warm,...pools.cardio.filter(d=>d!==warm)];
-
-  // Compter l'usage par catégorie
-  const usageCount={cardio:0,gainage:0,stretching:0,respiration:0};
-
+  const pools={};
+  ['cardio','gainage','stretching','respiration'].forEach(cat=>{const ok=all.filter(d=>d.cat===cat&&fits(d));pools[cat]=shuffle(ok.length?ok:all.filter(d=>d.cat===cat));});
+  const take=(cat,n,avoid)=>{const p=pools[cat];const pref=p.filter(d=>!avoid.includes(d));const src=pref.length>=n?pref:p;const out=[];for(let k=0;k<n;k++)out.push(src[k%src.length]);return out;};
+  const mk=(d,extra)=>Object.assign({...d,_coachDur:cfg.work,_isCoach:true},extra);
   const seq=[];
-  for(const cat of plan.pattern){
-    const pool=pools[cat];
-    if(!pool||!pool.length) continue;
-    // Cyclique si plus d'items
-    const idx=usageCount[cat]%pool.length;
-    const item={...pool[idx]};
-    item._coachDur=plan.dur; // Override durée pour uniformité
-    item._phase=_coachPhaseLabel(cat, usageCount[cat]);
-    item._isCoach=true;
-    seq.push(item);
-    usageCount[cat]++;
-  }
+  // Échauffement : les cardios les plus doux
+  const warm=[...pools.cardio].sort((a,b)=>(a.diff||1)-(b.diff||1)).slice(0,cfg.warm);
+  warm.forEach((d,k)=>seq.push(mk(d,{_block:'warm',_blockStart:k===0,_phase:'🔥 Échauffement'})));
+  // Circuit : cardio et gainage en alternance, refait à chaque tour
+  const nC=Math.ceil(cfg.circuit/2),nG=Math.floor(cfg.circuit/2);
+  const cs=take('cardio',nC,warm),gs=take('gainage',nG,[]);
+  const circuit=[];for(let k=0;k<cfg.circuit;k++)circuit.push(k%2===0?cs[k/2|0]:gs[k/2|0]);
+  const R=cfg.rounds[len];
+  const used={cardio:0,gainage:0};
+  for(let r=1;r<=R;r++)circuit.forEach((d,k)=>{seq.push(mk(d,{_block:'circuit',_round:r,_roundStart:k===0?r:0,_phase:_coachPhaseLabel(d.cat,used[d.cat]++)}));});
+  // Retour au calme : étirements puis respiration
+  take('stretching',cfg.stretch,[]).forEach((d,k)=>seq.push(mk(d,{_block:'cool',_blockStart:k===0,_phase:_coachPhaseLabel('stretching',k)})));
+  take('respiration',cfg.resp,[]).forEach((d,k)=>seq.push(mk(d,{_block:'cool',_phase:_coachPhaseLabel('respiration',k)})));
+  const plan={label:cfg.label,emoji:cfg.emoji,cfg,len,rounds:R,mins:coachEstimateMin(cfg,len)};
   return { seq, plan };
 }
 
@@ -15517,14 +15506,14 @@ function launchCoachSession(){
   COACH.hf = !!document.getElementById('coach-hf-toggle')?.checked;
   if(COACH.hf) COACH.voice = true; // mains libres = le coach parle
   try{const p=P();if(p){p.coachHF=COACH.hf;saveApp();}}catch(e){}
-  const {seq, plan} = buildCoachSequence(COACH.age);
+  const {seq, plan} = buildCoachSequence(COACH.age, COACH.len);
   COACH.seq = seq;
   COACH.stepIdx = 0;
   COACH.plan = plan;
   closeCoachModal();
   COACH.active=true; coachWakeOn();
   // Annonce départ
-  if(COACH.voice) coachSay(COACH_TXT.intro(plan,plan.pattern.length),()=>startCoachStep(0));
+  if(COACH.voice) coachSay(COACH_TXT.intro(plan.label,plan.mins),()=>startCoachStep(0));
   else setTimeout(()=>startCoachStep(0),200);
 }
 
@@ -15538,8 +15527,11 @@ function startCoachStep(idx){
   if(COACH.voice){
     // On affiche l'exercice tout de suite, le coach l'annonce, puis (mains libres) on écoute « GO »
     renderCoachStep(item, idx, total, true);
-    const parts = item._pause ? [COACH_TXT.water] : idx>0 ? [COACH_TXT.phase(item._phase), coachSpeakTxt(_coachMsg(item.cat)), COACH_TXT.nom(item), COACH_TXT.consigne(item)]
-                        : [COACH_TXT.first, COACH_TXT.nom(item), COACH_TXT.consigne(item)];
+    const head = item._block==='warm'&&item._blockStart ? [COACH_TXT.warmIntro]
+               : item._roundStart ? [COACH_TXT.round(item._roundStart,COACH.plan.rounds)]
+               : item._block==='cool'&&item._blockStart ? [COACH_TXT.coolIntro]
+               : item._block==='warm' ? [] : [COACH_TXT.phase(item._phase), coachSpeakTxt(_coachMsg(item.cat))];
+    const parts = [...head, COACH_TXT.nom(item), COACH_TXT.consigne(item)];
     const tok = COACH.tok = (COACH.tok||0)+1;
     coachSayList(parts, ()=>{ if(tok!==COACH.tok)return; if(APP.car){const b=document.getElementById('df-st');if(b)b.click();} else _coachAskGo(item); });
   } else {
@@ -15550,7 +15542,8 @@ function startCoachStep(idx){
 function _coachAskGo(item){
   if(!COACH.hf)return;
   const go=()=>{const b=document.getElementById('df-st');if(b&&b.style.display!=='none')b.click();};
-  coachSay(COACH_TXT.sayGo,()=>hfListen({go, repeat:()=>coachSayList([COACH_TXT.nom(item),COACH_TXT.consigne(item)],()=>_coachAskGo(item))},'Crie « GO »',go));
+  const warm=item._block==='warm';
+  coachSay(warm?COACH_TXT.sayGoWarm:COACH_TXT.sayGo,()=>hfListen({go, skip:warm?coachSkipWarm:null, repeat:()=>coachSayList([COACH_TXT.nom(item),COACH_TXT.consigne(item)],()=>_coachAskGo(item))},warm?'Crie « GO » (ou « SAUTE »)':'Crie « GO »',go));
 }
 function _coachAskNext(last){
   if(!COACH.hf)return;
@@ -15580,7 +15573,7 @@ function renderCoachStep(item, stepNum, totalSteps, announced){
       <div style="height:100%;background:linear-gradient(90deg,#FF6B6B,#FFD166);border-radius:10px;width:${Math.round((stepNum)/totalSteps*100)}%;transition:width .5s ease"></div>
     </div>
     <div style="text-align:center;font-size:11px;font-weight:700;color:var(--tl);margin-bottom:10px">
-      Étape ${stepNum+1} sur ${totalSteps} · ${item._phase}
+      Étape ${stepNum+1} sur ${totalSteps} · ${item._block==='warm'?'Échauffement':item._block==='cool'?'Retour au calme':'Tour '+item._round+'/'+COACH.plan.rounds} · ${item._phase}
     </div>
     <div class="dcard" data-cat="${item.cat||''}">
       <div class="df-catbadge">${ci.l}</div>
@@ -15595,12 +15588,14 @@ function renderCoachStep(item, stepNum, totalSteps, announced){
     <div style="padding:0 4px 20px">
       <button class="hintbtn" id="df-hb">💡 Astuce</button>
       <div class="hinttxt" id="df-ht">${item.hint||'Vas-y à ton rythme !'}</div>
+      ${item._block==='warm'?'<button class="nxtbtn show" id="df-skipwarm" style="margin-top:10px;background:var(--bg);color:var(--tl)">Déjà chaud ? Sauter l’échauffement ⏭</button>':''}
       <button class="nxtbtn show" id="df-nx" style="margin-top:10px">
         ${stepNum+1<totalSteps?'Exercice suivant →':'🏆 Terminer la séance'}
       </button>
     </div>`;
 
   document.getElementById('df-hb').onclick=()=>{sndTap();document.getElementById('df-ht').classList.toggle('show');};
+  const _sw=document.getElementById('df-skipwarm');if(_sw)_sw.onclick=()=>{sndTap();coachSkipWarm();};
 
   document.getElementById('df-st').onclick=()=>{
     if(running)return; running=true;
@@ -15648,8 +15643,8 @@ function renderCoachStep(item, stepNum, totalSteps, announced){
 // Petite pause entre deux exercices (10 s de respiration ; 20 s « pause eau » au milieu de la séance)
 function coachRest(next){
   clearInterval(COACH.timer);COACH.timer=null;try{hfStop();}catch(e){}
-  const water=next===Math.floor(COACH.seq.length/2);
-  const dur=water?20:10;let rem=dur;const tok=COACH.tok=(COACH.tok||0)+1;
+  const water=!!(COACH.seq[next]&&COACH.seq[next]._roundStart>1);
+  const dur=water?25:((COACH.plan&&COACH.plan.cfg&&COACH.plan.cfg.rest)||10);let rem=dur;const tok=COACH.tok=(COACH.tok||0)+1;
   const c=document.getElementById('df-c');
   c.innerHTML=`<div class="dcard" style="background:linear-gradient(135deg,${water?'#48CAE4,#0077B6':'#B7E4C7,#52B788'});color:#fff">
       <div class="de">${water?'💧':'🌬️'}</div>
@@ -15667,6 +15662,10 @@ function coachRest(next){
     const r=document.getElementById('rest-ring');if(r)r.textContent=rem+'s';
     if(rem<=3&&rem>0){try{beep(1046,.09,'sine',.16);}catch(e){}}
     if(rem<=0)go();},1000);
+}
+function coachSkipWarm(){
+  COACH.tok=(COACH.tok||0)+1;clearInterval(COACH.timer);COACH.timer=null;try{hfStop();}catch(e){}coachStopVoice();
+  const k=COACH.seq.findIndex(x=>x._block!=='warm');startCoachStep(k<0?COACH.seq.length:k);
 }
 function endCoachSession(){
   clearInterval(COACH.timer);COACH.timer=null;coachWakeOff();
@@ -15697,7 +15696,7 @@ function endCoachSession(){
   show('defi');
   celebrate(); sndStar();
   try{hfStop();}catch(e){}
-  if(COACH.voice) setTimeout(()=>coachSayList([COACH_TXT.end(total),COACH_TXT.waterEnd]),300);
+  if(COACH.voice) setTimeout(()=>coachSayList([COACH_TXT.end,COACH_TXT.waterEnd]),300);
 }
 
 // ════════════════════════════════════════════

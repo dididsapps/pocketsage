@@ -12,9 +12,13 @@ const speak=s=>clean(s)
   .replace(/(\d+)\s?min\b/g,'$1 minutes').replace(/(\d+)\s?x\b/gi,'$1 fois')
   .replace(/\s*→\s*/g,', puis ').replace(/\s+—\s+/g,', ')
   // MOTS EN MAJUSCULES → minuscules (sinon lus lettre par lettre), sauf les commandes GO / NEXT
-  .replace(/\b[A-ZÀ-Ý]{2,}\b/g,w=>/^(GO|NEXT)$/.test(w)?w:w.toLowerCase());
+  .replace(/\b[A-ZÀ-Ý]{2,}\b/g,w=>/^(GO|NEXT|SAUTE)$/.test(w)?w:w.toLowerCase());
 const T={
-  intro:(plan,n)=>`Séance pour ${plan.label} ! ${n} exercices. Prépare-toi !`,
+  intro:(label,m)=>`Séance pour ${label} ! Environ ${m} minutes. Prépare-toi !`,
+  warmIntro:"On commence par l'échauffement, tout en douceur.",
+  round:(n,R)=>n>=R?`Dernier tour ! On donne tout !`:`Tour numéro ${n} ! On refait le circuit.`,
+  coolIntro:"Retour au calme. On s'étire tranquillement.",
+  sayGoWarm:'Quand tu es prêt, crie GO ! Ou crie SAUTE pour passer l\'échauffement.',
   first:'Premier exercice !',
   phase:lbl=>clean(lbl)+' !',
   nom:item=>speak(item.nom)+'.',
@@ -24,17 +28,20 @@ const T={
   sayGo:'Quand tu es prêt, crie GO !',
   sayNext:"Pour l'exercice suivant, crie NEXT !",
   sayNextLast:'Pour terminer la séance, crie NEXT !',
-  end:n=>`Bravo ! Séance complète terminée ! ${n} exercices réussis comme un champion !`,
+  end:'Bravo ! Séance complète terminée, comme un vrai champion !',
   left:n=>`Encore ${n} secondes !`,
   water:"Pause eau ! Bois quelques gorgées d'eau et reprends ton souffle.",
   rest:["Petite pause. Respire calmement.","On souffle un peu. Inspire par le nez, souffle par la bouche.","Récupère bien, tu l'as mérité.","Pause ! Secoue doucement les bras et les jambes.","Respire profondément, on repart bientôt."],
   waterEnd:"Et maintenant, bois un grand verre d'eau. Ton corps te dit merci !",
   dayEnd:"Bravo, séance terminée ! Montre à tes parents ce que tu as appris aujourd'hui. À demain !"
 };
+// Durée estimée d'une séance (minutes) : exercices + petites pauses + pauses eau + annonces du coach
+function estimate(c,len){const R=c.rounds[len];const n=c.warm+c.circuit*R+c.stretch+c.resp;
+  return Math.max(3,Math.round((n*c.work+(n-1)*c.rest+(R-1)*25+n*8)/60));}
 function allTexts(defis,plans,phases,msgs){
-  const out=new Set([T.first,T.water,T.waterEnd,...T.rest,...T.bravo,T.sayGo,T.sayNext,T.sayNextLast,T.dayEnd,...T.count]);
+  const out=new Set([T.end,T.warmIntro,T.coolIntro,T.sayGoWarm,T.first,T.water,T.waterEnd,...T.rest,...T.bravo,T.sayGo,T.sayNext,T.sayNextLast,T.dayEnd,...T.count]);
   for(let n=10;n<=120;n+=10)out.add(T.left(n));
-  Object.values(plans).forEach(p=>{out.add(T.intro(p,p.pattern.length));out.add(T.end(p.pattern.length));});
+  Object.values(plans).forEach(c=>{[0,1,2].forEach(l=>out.add(T.intro(c.label,estimate(c,l))));c.rounds.forEach(R=>{for(let n=2;n<=R;n++)out.add(T.round(n,R));});});
   Object.values(phases).forEach(a=>a.forEach(l=>out.add(T.phase(l))));
   Object.values(msgs).forEach(a=>a.forEach(m=>out.add(speak(m))));
   defis.forEach(d=>{out.add(T.nom(d));out.add(T.consigne(d));});
@@ -44,14 +51,14 @@ function allTexts(defis,plans,phases,msgs){
 function lint(t){const pb=[];
   if(/\d\s?(s|x|min|m|km|kg)\b/i.test(t))pb.push('abréviation (10s, 5x…) à écrire en toutes lettres');
   if(/[→/%&+*#@|<>_]/.test(t))pb.push('symbole lu bizarrement');
-  if(/\b(?!GO\b|NEXT\b)[A-ZÀ-Ý]{2,}\b/.test(t))pb.push('mot en MAJUSCULES (lu lettre par lettre)');
+  if(/\b(?!GO\b|NEXT\b|SAUTE\b)[A-ZÀ-Ý]{2,}\b/.test(t))pb.push('mot en MAJUSCULES (lu lettre par lettre)');
   if(/\b(dis|dites)\s+(go|next)\b/i.test(t))pb.push('« Dis » + mot anglais (prononcé « disse »)');
   if(/\b(time|boost|core|interval|ok|cool|let's|ready|stop|top|fun|run|jump)\b/i.test(t.replace(/\b(GO|NEXT)\b/g,'')))pb.push('mot anglais dans une phrase française');
   if(t.length>220)pb.push('phrase très longue (à couper)');
   return pb;}
 root.coachLint=lint;
-root.COACH_TXT=T;root.coachClean=clean;root.coachSpeakTxt=speak;root.coachAllTexts=allTexts;
-if(typeof module!=='undefined'&&module.exports)module.exports={T,clean,speak,allTexts,lint};
+root.coachEstimateMin=estimate;root.COACH_TXT=T;root.coachClean=clean;root.coachSpeakTxt=speak;root.coachAllTexts=allTexts;
+if(typeof module!=='undefined'&&module.exports)module.exports={T,clean,speak,allTexts,lint,estimate};
 if(typeof window==='undefined')return;
 
 // ── Lecture : MP3 Google si dispo, sinon voix du téléphone ─────────────────
@@ -83,7 +90,8 @@ function coachSayList(list,done){const l=list.filter(Boolean);let i=0;const nx=(
 const HF_WORDS={
   go:['go','gogo','partez','c est parti','cest parti','top depart','vas y','on y va'],
   next:['next','nexte','suivant','suivante','continue','continuer','exercice suivant'],
-  repeat:['repete','repeter','repetes','encore une fois','redis']
+  repeat:['repete','repeter','repetes','encore une fois','redis'],
+  skip:['saute','sauter','sautes','je saute','passe','passer']
 };
 function hfMatch(t){
   const s=' '+String(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z ]/g,' ').replace(/\s+/g,' ').trim()+' ';

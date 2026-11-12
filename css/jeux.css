@@ -247,3 +247,8 @@ body.night .jeux-low{color:#FF6B6B!important}
 .ps-switch input:checked+span{background:#6C63FF}
 .ps-switch input:checked+span::before{transform:translateX(22px)}
 .ps-switch input:disabled+span{opacity:.45;cursor:not-allowed}
+
+/* ── Choix de la durée (Coach Sportif) ── */
+.coach-len-btn{border:2px solid transparent;border-radius:14px;padding:12px 4px;background:var(--bg);font:800 13px var(--f);color:var(--t);cursor:pointer}
+.coach-len-btn.sel{border-color:#6C63FF;background:var(--vl);color:#5A52D5}
+body.night .coach-len-btn{background:#2A1E0A;color:#F5E6C8}body.night .coach-len-btn.sel{border-color:#C8A040;color:#FFD166}
