@@ -9,7 +9,7 @@ Pour ne pas perdre le fil : idées, priorités, décisions. Rien n'est codé tan
 memory, calcul, quiz, mastermind, paires, anagrammes, motcache, snake, sort (tri de couleurs), taquin, hanoi, 2048.
 - ✅ 12/11 : minuteurs réparés (Quiz Rapide faisait planter les autres jeux).
 - ✅ 12/11 : jeux sortis de index.html dans `js/jeux.js` (économie de crédits).
-- 🟡 12/11 : embellissement en cours (voir §4).
+- ✅ 12/11 : lot 1 embelli (voir §4).
 
 ## 2. Nouveaux jeux proposés
 | Jeu | Principe | Ce que ça travaille | Âge | Coût |
@@ -35,3 +35,6 @@ memory, calcul, quiz, mastermind, paires, anagrammes, motcache, snake, sort (tri
 
 ## 4. Embellissement des jeux — suivi
 (mis à jour au fil des lots)
+- ✅ **Lot 1 (12/11)** — Memory (cartes dos étoilé + retournement, paire trouvée qui brille), Calcul Éclair (tableau noir + boutons bonbons), Quiz Rapidité (carte question + 4 réponses colorées, barre de temps vert→rouge), Paires (cartes FR/langue avec bandes de couleur, ✓ sur les paires trouvées). Jour et nuit. Fichier `css/jeux.css`.
+- ✅ Bug corrigé : quitter un jeu juste après une réponse faisait réapparaître l'ancien jeu par-dessus le suivant (minuteries de 0,5-1 s non annulées).
+- ⏳ Lot 2 proposé : Snake (fond noir vide), Mastermind, Anagrammes/Bombe de mots, Mot caché.

@@ -1,0 +1,124 @@
+/* PocketSage — habillage des mini-jeux (lot 1 : Memory, Calcul Éclair, Quiz Rapidité, Paires)
+   Chargé après les styles de index.html : les règles #scr-game priment sur les anciennes. */
+
+/* ── Fond de l'écran de jeu ── */
+#scr-game .game-inner{
+  background:
+    radial-gradient(circle at 20% 10%,rgba(108,99,255,.10) 0 40px,transparent 41px),
+    radial-gradient(circle at 85% 30%,rgba(255,209,102,.16) 0 55px,transparent 56px),
+    radial-gradient(circle at 15% 85%,rgba(6,214,160,.10) 0 50px,transparent 51px),
+    linear-gradient(180deg,#F8F7FF 0%,#EFEDFF 100%);
+  border-radius:20px;
+}
+body.night #scr-game .game-inner{
+  background:
+    radial-gradient(circle at 20% 10%,rgba(196,122,0,.12) 0 40px,transparent 41px),
+    radial-gradient(circle at 85% 30%,rgba(108,99,255,.12) 0 55px,transparent 56px),
+    linear-gradient(180deg,#1A1205 0%,#221808 100%);
+}
+
+/* ── Memory : vraies cartes à retourner ── */
+#scr-game .mem-grid,#scr-game [class*="mem-grid"]{perspective:900px}
+#scr-game .mem-card{border-radius:16px;box-shadow:0 5px 0 rgba(60,50,170,.35),0 10px 18px rgba(0,0,0,.12)}
+#scr-game .mem-card-front{
+  border-radius:16px;
+  background:
+    radial-gradient(circle,rgba(255,255,255,.22) 2px,transparent 2.5px) 0 0/14px 14px,
+    linear-gradient(145deg,#7B73FF 0%,#5A52D5 60%,#463FB8 100%);
+  border:3px solid rgba(255,255,255,.55);
+  box-shadow:inset 0 0 0 3px rgba(90,82,213,.9);
+}
+#scr-game .mem-card-front::after{
+  content:'★';color:#FFD166;font-size:clamp(22px,7vw,34px);
+  text-shadow:0 2px 0 #C47A00,0 0 12px rgba(255,209,102,.6);
+}
+#scr-game .mem-card-back{
+  border-radius:16px;border:3px solid #fff;
+  background:radial-gradient(circle at 50% 35%,#FFFFFF 0%,#F1F0FF 70%,#E3E1FF 100%);
+  box-shadow:inset 0 -6px 0 rgba(108,99,255,.12);
+}
+#scr-game .mem-card.matched .mem-card-back{
+  background:radial-gradient(circle at 50% 35%,#FFFFFF 0%,#D9FBEF 70%,#B5F2DD 100%);
+  border-color:#06D6A0;box-shadow:0 0 0 3px rgba(6,214,160,.35),0 0 18px rgba(6,214,160,.45);
+}
+#scr-game .mem-card.matched{opacity:1}
+
+/* ── Calcul Éclair : tableau noir + boutons bonbons ── */
+#scr-game .calc-big{
+  font-family:"Chalkboard SE","Comic Sans MS","Segoe Print",var(--f);
+  color:#F7F5E8;font-size:clamp(38px,12vw,54px);font-weight:700;
+  background:linear-gradient(160deg,#2F5A4A 0%,#234538 100%);
+  border:8px solid #B07A43;border-radius:16px;
+  box-shadow:inset 0 0 30px rgba(0,0,0,.35),0 6px 0 #8A5D30;
+  padding:22px 10px;margin:14px 4px 14px;
+  text-shadow:0 0 1px #fff,0 0 8px rgba(255,255,255,.25);
+  letter-spacing:2px;
+}
+#scr-game .calc-streak{font-size:14px}
+#scr-game .calc-input-row{gap:12px;margin-top:6px}
+#scr-game .calc-btn{
+  width:72px;height:72px;border-radius:50%;border:none;
+  color:#fff;font-size:26px;font-weight:900;
+  text-shadow:0 2px 0 rgba(0,0,0,.18);
+  box-shadow:0 6px 0 rgba(0,0,0,.22),inset 0 -6px 0 rgba(0,0,0,.12),inset 0 6px 10px rgba(255,255,255,.35);
+}
+#scr-game .calc-btn:nth-child(4n+1){background:#6C63FF}
+#scr-game .calc-btn:nth-child(4n+2){background:#FF9F1C}
+#scr-game .calc-btn:nth-child(4n+3){background:#06B98A}
+#scr-game .calc-btn:nth-child(4n+4){background:#FF5C8A}
+#scr-game .calc-btn.ok{background:#06D6A0!important;animation:gOk .45s ease}
+#scr-game .calc-btn.ko{background:#E63946!important;animation:gKo .4s ease}
+#scr-game .calc-input-row:has(.ok) .calc-btn:not(.ok):not(.ko){opacity:.4}
+
+/* ── Quiz Rapidité : carte question + 4 réponses colorées ── */
+#scr-game .quiz-timer-bar-wrap{height:12px;background:rgba(108,99,255,.12);border-radius:12px}
+#scr-game .quiz-timer-bar{
+  background:linear-gradient(90deg,#E63946 0%,#FF9F1C 35%,#06D6A0 70%);
+  background-size:100vw 100%;border-radius:12px;
+  box-shadow:0 0 10px rgba(6,214,160,.45);
+}
+#scr-game .quiz-q{
+  background:#fff;border-radius:18px;padding:22px 14px;margin:12px 2px 16px;
+  font-size:clamp(18px,5.5vw,24px);line-height:1.3;
+  box-shadow:0 6px 0 rgba(108,99,255,.18),0 10px 24px rgba(0,0,0,.06);
+}
+body.night #scr-game .quiz-q{background:#2A1E0A;color:#F5E6C8;box-shadow:0 6px 0 rgba(0,0,0,.4)}
+#scr-game .quiz-choices{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#scr-game .quiz-btn{
+  border:none;color:#fff;font-size:18px;font-weight:900;min-height:64px;
+  border-radius:16px;text-shadow:0 2px 0 rgba(0,0,0,.18);
+  box-shadow:0 6px 0 rgba(0,0,0,.2),inset 0 6px 10px rgba(255,255,255,.25);
+}
+#scr-game .quiz-btn:nth-child(4n+1){background:#6C63FF}
+#scr-game .quiz-btn:nth-child(4n+2){background:#FF9F1C}
+#scr-game .quiz-btn:nth-child(4n+3){background:#06B98A}
+#scr-game .quiz-btn:nth-child(4n+4){background:#FF5C8A}
+#scr-game .quiz-btn.correct{background:#06D6A0!important;color:#fff!important;animation:gOk .45s ease}
+#scr-game .quiz-btn.wrong{background:#E63946!important;color:#fff!important;animation:gKo .4s ease}
+#scr-game .quiz-choices:has(.correct) .quiz-btn:not(.correct):not(.wrong){opacity:.4}
+
+/* ── Paires FR ↔ langue : cartes à relier ── */
+#scr-game .pairs-grid{gap:12px}
+#scr-game .pairs-grid h4{
+  display:inline-block;background:#fff;border-radius:20px;padding:5px 12px;margin:0 0 8px;
+  font-size:13px;box-shadow:0 3px 0 rgba(108,99,255,.15);
+}
+body.night #scr-game .pairs-grid h4{background:#2A1E0A;color:#F5E6C8}
+#scr-game .pair-btn{
+  background:#fff;color:#2D2D44;font-size:16px;font-weight:800;
+  border:none;border-radius:14px;margin-bottom:8px;padding:14px 8px;
+  box-shadow:0 4px 0 rgba(108,99,255,.18),0 6px 12px rgba(0,0,0,.05);
+  position:relative;
+}
+#scr-game .pairs-grid>div:first-child .pair-btn{border-left:6px solid #3A86FF}
+#scr-game .pairs-grid>div:last-child .pair-btn{border-right:6px solid #FF5C8A}
+#scr-game .pair-btn.selected{background:#6C63FF;color:#fff;transform:translateY(-3px);box-shadow:0 7px 0 #463FB8}
+#scr-game .pair-btn.matched{background:#D9FBEF;color:#05664A;opacity:1;box-shadow:0 2px 0 rgba(6,214,160,.4)}
+#scr-game .pair-btn.matched::after{content:' ✓';color:#06B98A}
+#scr-game .pair-btn.wrong{background:#FFE3E5;animation:gKo .4s ease}
+body.night #scr-game .pair-btn:not(.selected):not(.matched){background:#2A1E0A;color:#F5E6C8}
+
+/* ── Animations communes ── */
+@keyframes gOk{0%{transform:scale(1)}40%{transform:scale(1.12)}100%{transform:scale(1)}}
+@keyframes gKo{0%,100%{transform:translateX(0)}20%{transform:translateX(-7px)}40%{transform:translateX(7px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}
+@media (prefers-reduced-motion:reduce){#scr-game *{animation:none!important;transition:none!important}}

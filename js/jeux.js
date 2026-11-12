@@ -109,7 +109,9 @@ let GAME={id:'',score:0,startMs:0,timerInt:null,sessionInt:null};
 // Minuteurs des mini-jeux : tous arrêtés quand on quitte le jeu, qu'on en lance un autre ou qu'on change d'écran
 let _gInts=[];
 function _gInterval(fn,ms){const id=setInterval(fn,ms);_gInts.push(id);return id;}
-function _gClearAll(){_gInts.forEach(clearInterval);_gInts=[];if(typeof GAME==='object'&&GAME){if(GAME.timerInt)clearInterval(GAME.timerInt);if(GAME.sessionInt)clearInterval(GAME.sessionInt);}}
+let _gTos=[];
+function _gTimeout(fn,ms){const id=setTimeout(fn,ms);_gTos.push(id);return id;}
+function _gClearAll(){_gTos.forEach(clearTimeout);_gTos=[];_gInts.forEach(clearInterval);_gInts=[];if(typeof GAME==='object'&&GAME){if(GAME.timerInt)clearInterval(GAME.timerInt);if(GAME.sessionInt)clearInterval(GAME.sessionInt);}}
 function startGame(id){
   _gClearAll();
   if(isDailyFull(id)){toast('⏰ Limite quotidienne atteinte !');return;}
@@ -215,16 +217,16 @@ function buildMemory(){
       const [a,b]=flipped;
       if(cards[a]===cards[b]){
         matched.push(a,b);sndOK();
-        setTimeout(()=>{
+        _gTimeout(()=>{
           document.getElementById('mc'+a).classList.add('matched');
           document.getElementById('mc'+b).classList.add('matched');
         },200);
         score+=10;updateGameScore(score);
         document.getElementById('mem-pairs').textContent=matched.length/2;
         flipped=[];busy=false;
-        if(matched.length===cards.length)setTimeout(()=>endGame(score),700);
+        if(matched.length===cards.length)_gTimeout(()=>endGame(score),700);
       } else {
-        setTimeout(()=>{
+        _gTimeout(()=>{
           document.getElementById('mc'+a).classList.remove('flipped');
           document.getElementById('mc'+b).classList.remove('flipped');
           flipped=[];sndKO();busy=false;
@@ -261,11 +263,11 @@ function buildCalcul(){
     window.calcAns=function(v){
       if(!canClick)return;canClick=false;
       const btns=document.querySelectorAll('.calc-btn');
-      btns.forEach(b=>{if(Number(b.textContent)===q.ans)b.style.background='var(--m)';});
+      btns.forEach(b=>{if(Number(b.textContent)===q.ans)b.classList.add('ok');});
       if(v===q.ans){sndOK();streak++;score+=10+Math.min(streak,5)*2;updateGameScore(score);}
-      else{sndKO();streak=0;btns.forEach(b=>{if(Number(b.textContent)===v)b.style.background='var(--c)';});}
+      else{sndKO();streak=0;btns.forEach(b=>{if(Number(b.textContent)===v)b.classList.add('ko');});}
       remaining--;
-      setTimeout(()=>{canClick=true;if(remaining<=0)endGame(score);else{q=genQ();render();}},700);
+      _gTimeout(()=>{canClick=true;if(remaining<=0)endGame(score);else{q=genQ();render();}},700);
     };
   }
   render();
@@ -312,9 +314,9 @@ function buildQuizRapid(){
         else if(b.textContent===v&&v!==q.a)b.classList.add('wrong');
       });
       if(v===q.a){sndOK();score+=10+Math.max(0,t)*1;updateGameScore(score);}else{sndKO();}
-      setTimeout(()=>{idx++;renderQ();},900);
+      _gTimeout(()=>{idx++;renderQ();},900);
     };
-    barInt=_gInterval(()=>{t--;const _qb=document.getElementById('qtbar');if(!_qb){clearInterval(barInt);return;}_qb.style.width=(t/10*100)+'%';if(t<=0){clearInterval(barInt);if(canClick){canClick=false;sndKO();setTimeout(()=>{idx++;renderQ();},700);}}},1000);
+    barInt=_gInterval(()=>{t--;const _qb=document.getElementById('qtbar');if(!_qb){clearInterval(barInt);return;}_qb.style.width=(t/10*100)+'%';if(t<=0){clearInterval(barInt);if(canClick){canClick=false;sndKO();_gTimeout(()=>{idx++;renderQ();},700);}}},1000);
   }
   renderQ();
   document.getElementById('game-timer-disp').style.display='none';
@@ -424,13 +426,13 @@ function buildPaires(){
           matched.push('fr'+selFr,'en'+i);
           document.getElementById(`pfr${selFr}`).className='pair-btn matched';
           el.className='pair-btn matched';selFr=null;
-          if(matched.length===pairs.length*2)setTimeout(()=>endGame(score),500);
+          if(matched.length===pairs.length*2)_gTimeout(()=>endGame(score),500);
           else render();
         } else {
           sndKO();el.classList.add('wrong');
           document.getElementById(`pfr${selFr}`).className='pair-btn';
           selFr=null;
-          setTimeout(()=>{el.classList.remove('wrong');render();},600);
+          _gTimeout(()=>{el.classList.remove('wrong');render();},600);
         }
       }
     };
@@ -475,8 +477,8 @@ function buildAnagrammes(){
       window.anaRemove=function(i){if(i>=answer.length)return;usedIdx.splice(usedIdx.findIndex((_,j)=>j>=i),1);answer.splice(i,1);render();};
       window.anaClear=function(){answer=[];usedIdx=[];render();};
       window.anaValidate=function(){
-        if(answer.join('')===word){sndOK();score+=20;updateGameScore(score);celebrate();idx++;setTimeout(nextWord,600);}
-        else{sndKO();inner.querySelectorAll('.ana-slot.filled').forEach(e=>e.style.color='var(--c)');setTimeout(()=>{answer=[];usedIdx=[];render();},800);}
+        if(answer.join('')===word){sndOK();score+=20;updateGameScore(score);celebrate();idx++;_gTimeout(nextWord,600);}
+        else{sndKO();inner.querySelectorAll('.ana-slot.filled').forEach(e=>e.style.color='var(--c)');_gTimeout(()=>{answer=[];usedIdx=[];render();},800);}
       };
     }
     render();
@@ -551,7 +553,7 @@ function buildMotCache(){
       if(match&&!foundWords.includes(match.word)){
         foundWords.push(match.word);foundCells.push(...match.cells);
         score+=20;updateGameScore(score);sndOK();
-        if(foundWords.length===words.length)setTimeout(()=>endGame(score),600);
+        if(foundWords.length===words.length)_gTimeout(()=>endGame(score),600);
       }else{sndKO();}
       selCells=[];render();
     };
@@ -792,14 +794,14 @@ function buildSort(){
           }
           moves++;score+=poured*5;updateGameScore(score);sndOK();
           selected=null;
-          setTimeout(()=>{
+          _gTimeout(()=>{
             render();
             if(checkWin()){
               const fs=Math.max(50,300-moves*5);updateGameScore(fs);
-              setTimeout(()=>endGame(fs),700);
+              _gTimeout(()=>endGame(fs),700);
             } else if(isStuck()){
               // Relance auto si bloqué
-              setTimeout(()=>{bottles=makeBottles();selected=null;render();toast('🔄 Puzzle relancé — tu étais bloqué !');},1200);
+              _gTimeout(()=>{bottles=makeBottles();selected=null;render();toast('🔄 Puzzle relancé — tu étais bloqué !');},1200);
             }
           },90);
         } else {
@@ -840,7 +842,7 @@ function buildTaquin(){
       const canMove=(i===z-1&&z%N>0)||(i===z+1&&z%N<N-1)||(i===z-N)||(i===z+N);
       if(!canMove)return;
       [board[z],board[i]]=[board[i],board[z]];moves++;sndTap();render();
-      if(isWin()){score=Math.max(0,200-moves*3);updateGameScore(score);setTimeout(()=>endGame(score),400);}
+      if(isWin()){score=Math.max(0,200-moves*3);updateGameScore(score);_gTimeout(()=>endGame(score),400);}
     };
   }
   render();
@@ -909,7 +911,7 @@ function buildHanoi(){
         if(top<dest){pegs[pi].push(pegs[selected].pop());moves++;sndOK();}
         else{toast('❌ Impossible — disque trop grand !');sndKO();}
         selected=null;render();
-        if(isWin()){const sc=Math.max(0,400-moves*8);updateGameScore(sc);setTimeout(()=>endGame(sc),400);}
+        if(isWin()){const sc=Math.max(0,400-moves*8);updateGameScore(sc);_gTimeout(()=>endGame(sc),400);}
       }
     };
   }
@@ -932,7 +934,7 @@ function build2048(){
   const totalRounds=8;
   function shuffle(s){return s.split('').sort(()=>Math.random()-.5).join('');}
   function nextRound(){
-    if(round>=totalRounds){clearInterval(timer);setTimeout(()=>endGame(score),300);return;}
+    if(round>=totalRounds){clearInterval(timer);_gTimeout(()=>endGame(score),300);return;}
     round++;
     const word=BOMB_WORDS[Math.floor(Math.random()*BOMB_WORDS.length)];
     let scrambled=shuffle(word);
@@ -963,7 +965,7 @@ function build2048(){
           clearInterval(timer);
           const bonus=Math.round(timeLeft*5);score+=10+bonus;updateGameScore(score);
           document.getElementById('bomb-msg').innerHTML=`<span style="color:var(--m)">✅ Bravo ! +${10+bonus} pts (bonus temps : +${bonus})</span>`;
-          setTimeout(nextRound,900);
+          _gTimeout(nextRound,900);
         } else {
           document.getElementById('bomb-msg').innerHTML=`<span style="color:var(--c)">❌ Pas tout à fait…</span>`;
         }
@@ -983,7 +985,7 @@ function build2048(){
       if(timeLeft<=0){
         clearInterval(timer);
         inner.querySelector('#bomb-msg').innerHTML=`<span style="color:var(--c)">💥 Boom ! C'était : <b>${word}</b></span>`;
-        setTimeout(nextRound,1500);
+        _gTimeout(nextRound,1500);
       }
     },1000);
   }
