@@ -238,3 +238,12 @@ body.night .jeux-low{color:#FF6B6B!important}
 #hf-badge .hf-dot{width:12px;height:12px;border-radius:50%;background:#fff;animation:hfPulse 1s ease-in-out infinite}
 @keyframes hfPulse{0%,100%{transform:scale(.7);opacity:.6}50%{transform:scale(1.25);opacity:1}}
 @media (prefers-reduced-motion:reduce){#hf-badge .hf-dot{animation:none}}
+
+/* ── Interrupteur (switch) qui montre vraiment son état ── */
+.ps-switch{position:relative;display:inline-block;width:50px;height:28px;flex-shrink:0}
+.ps-switch input{opacity:0;width:0;height:0;position:absolute}
+.ps-switch>span{position:absolute;inset:0;background:#C9C9D6;border-radius:28px;cursor:pointer;transition:background .2s}
+.ps-switch>span::before{content:'';position:absolute;width:22px;height:22px;left:3px;top:3px;background:#fff;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,.3);transition:transform .2s}
+.ps-switch input:checked+span{background:#6C63FF}
+.ps-switch input:checked+span::before{transform:translateX(22px)}
+.ps-switch input:disabled+span{opacity:.45;cursor:not-allowed}

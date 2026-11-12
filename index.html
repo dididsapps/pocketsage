@@ -1173,19 +1173,16 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
         <div style="font-size:13px;font-weight:800">Coaching vocal</div>
         <div style="font-size:11px;color:var(--tl);margin-top:1px">Le coach annonce chaque exercice et t'encourage</div>
       </div>
-      <label style="position:relative;width:44px;height:24px;flex-shrink:0">
-        <input type="checkbox" id="coach-voice-toggle" checked style="opacity:0;width:0;height:0">
-        <span onclick="this.previousElementSibling.checked=!this.previousElementSibling.checked" style="position:absolute;inset:0;background:var(--v);border-radius:12px;cursor:pointer;transition:.3s"></span>
-      </label>
+      <label class="ps-switch"><input type="checkbox" id="coach-voice-toggle" checked onchange="if(!this.checked){const h=document.getElementById('coach-hf-toggle');if(h)h.checked=false;}"><span></span></label>
     </div>
-    <label id="coach-hf-row" style="display:flex;align-items:center;gap:10px;background:#FFF0D6;border-radius:14px;padding:12px 14px;margin:-8px 0 18px;cursor:pointer">
+    <div id="coach-hf-row" style="display:flex;align-items:center;gap:10px;background:#FFF0D6;border-radius:14px;padding:12px 14px;margin:-8px 0 18px;cursor:pointer">
       <span style="font-size:22px">🙌</span>
       <div style="flex:1">
         <div style="font-size:13px;font-weight:800">Mains libres</div>
         <div id="coach-hf-sub" style="font-size:11px;color:var(--tl);margin-top:1px">Crie « GO » pour démarrer, « NEXT » pour continuer, « RÉPÈTE » pour réécouter (utilise le micro). L’écran reste allumé pendant la séance.</div>
       </div>
-      <input type="checkbox" id="coach-hf-toggle" style="width:22px;height:22px;flex-shrink:0">
-    </label>
+      <label class="ps-switch"><input type="checkbox" id="coach-hf-toggle" onchange="if(this.checked){const v=document.getElementById('coach-voice-toggle');if(v)v.checked=true;}"><span></span></label>
+    </div>
     <button id="coach-launch-btn" onclick="launchCoachSession()" style="display:none;width:100%;background:linear-gradient(135deg,#FF6B6B,#C9184A);border:none;border-radius:18px;padding:18px;font-family:var(--f);font-size:16px;font-weight:900;color:#fff;cursor:pointer;box-shadow:0 4px 18px rgba(201,24,74,.4);touch-action:manipulation">
       🏅 Lancer la séance !
     </button>
