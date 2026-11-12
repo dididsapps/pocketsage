@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=24">
+<link rel="stylesheet" href="css/jeux.css?v=25">
 </head>
 <body>
 
@@ -1442,9 +1442,9 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=24"></script>
-<script src="js/jeux-cerveau.js?v=24"></script>
-<script src="js/coach-voix.js?v=24"></script>
+<script src="js/jeux.js?v=25"></script>
+<script src="js/jeux-cerveau.js?v=25"></script>
+<script src="js/coach-voix.js?v=25"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -12988,35 +12988,89 @@ function flashRevAns(btn,id,i){
   _flScore();
 }
 
+// a = groupes d'âge : 1 = 4-6 ans · 2 = 7-12 ans · 3 = 13 ans et +
+// Citations : auteur seulement quand la source est sûre ; « attribuée à » sinon ; proverbes = vrais proverbes.
 const POLITESSE_DATA={
   manieres:[
-    {titre:'À table',icon:'🍽️',conseil:"Attends que tout le monde soit servi avant de commencer. Dis toujours s'il te plaît et merci."},
-    {titre:'Saluer',icon:'👋',conseil:'Regarde la personne dans les yeux quand tu la salues. Un sourire sincère vaut mille mots.'},
-    {titre:'Écouter',icon:'👂',conseil:"N'interromps pas quand quelqu'un parle. Écouter vraiment, c'est offrir un cadeau."},
-    {titre:'Téléphone',icon:'📵',conseil:'Range ton téléphone lors des repas et conversations. Ta présence est ton plus beau cadeau.'},
-    {titre:'Remercier',icon:'🙏',conseil:"Un merci sincère et spontané crée un lien fort. N'attends pas qu'on te le rappelle."},
-    {titre:"S'excuser",icon:'💬',conseil:"S'excuser sincèrement demande du courage. Je suis désolé dit avec le cœur répare beaucoup."},
+    {a:[1],titre:'Dire bonjour',icon:'👋',conseil:"Quand tu arrives quelque part, dis bonjour avec un sourire. Et au revoir quand tu pars !"},
+    {a:[1,2],titre:'Les mots magiques',icon:'✨',conseil:"« S'il te plaît » et « merci » sont des mots magiques : ils ouvrent toutes les portes."},
+    {a:[1],titre:'Partager',icon:'🧸',conseil:"Prête tes jouets à tour de rôle. Jouer ensemble, c'est encore plus amusant !"},
+    {a:[1,2],titre:'Attendre son tour',icon:'⏳',conseil:"Dans une file ou un jeu, chacun son tour. Patienter, c'est respecter les autres."},
+    {a:[1],titre:'Se laver les mains',icon:'🧼',conseil:"Avant de manger et après les toilettes, lave-toi bien les mains avec du savon."},
+    {a:[1,2],titre:'Ranger',icon:'🧺',conseil:"Quand tu as fini de jouer, range tes affaires. Ta famille te dira merci !"},
+    {a:[1,2],titre:'Tousser dans son coude',icon:'🤧',conseil:"Quand tu tousses ou éternues, mets ton coude devant ta bouche."},
+    {a:[1,2,3],titre:'À table',icon:'🍽️',conseil:"Attends que tout le monde soit servi avant de commencer. Dis toujours « s'il te plaît » et « merci »."},
+    {a:[2,3],titre:'Saluer',icon:'🙂',conseil:'Regarde la personne dans les yeux quand tu la salues. Un sourire sincère vaut mille mots.'},
+    {a:[1,2,3],titre:'Écouter',icon:'👂',conseil:"N'interromps pas quand quelqu'un parle. Écouter vraiment, c'est offrir un cadeau."},
+    {a:[1,2,3],titre:'Remercier',icon:'🙏',conseil:"Un merci sincère et spontané crée un lien fort. N'attends pas qu'on te le rappelle."},
+    {a:[1,2,3],titre:"S'excuser",icon:'💬',conseil:"S'excuser demande du courage. Un « je suis désolé » dit avec le cœur répare beaucoup."},
+    {a:[2],titre:'Frapper avant d’entrer',icon:'🚪',conseil:"Frappe à la porte et attends la réponse avant d'entrer dans une chambre ou un bureau."},
+    {a:[2,3],titre:'Tenir la porte',icon:'🤝',conseil:"Tiens la porte à la personne derrière toi. Un petit geste qui fait toujours plaisir."},
+    {a:[2,3],titre:'Laisser sa place',icon:'🚌',conseil:"Dans le bus, laisse ta place à une personne âgée, enceinte ou qui a du mal à rester debout."},
+    {a:[2],titre:'Inclure les autres',icon:'🫶',conseil:"Si quelqu'un est seul à la récréation, propose-lui de jouer avec toi."},
+    {a:[2,3],titre:'Parler calmement',icon:'🗣️',conseil:"Pas besoin de crier pour te faire entendre : une voix calme est mieux écoutée."},
+    {a:[2,3],titre:'Téléphone',icon:'📵',conseil:'Range ton téléphone pendant les repas et les conversations. Ta présence est ton plus beau cadeau.'},
+    {a:[3],titre:'Messages et réseaux',icon:'📱',conseil:"Avant de publier ou d'envoyer un message, demande-toi : est-ce que je le dirais en face ?"},
+    {a:[3],titre:'Être à l’heure',icon:'⏰',conseil:"Arriver à l'heure montre que tu respectes le temps des autres. En cas de retard, préviens."},
+    {a:[3],titre:'Se présenter',icon:'🤝',conseil:"Pour te présenter, regarde la personne, dis ton prénom clairement et souris."},
+    {a:[3],titre:'Respecter les avis',icon:'⚖️',conseil:"Tu peux ne pas être d'accord sans être désagréable : critique les idées, jamais les personnes."},
+    {a:[3],titre:'Recevoir un compliment',icon:'🌷',conseil:"Quand on te fait un compliment, un simple merci suffit. Pas besoin de te justifier."},
   ],
   dictons:[
-    {texte:'La politesse est l\'art de choisir parmi ses pensées. — Germaine de Staël',icon:'✨'},
-    {texte:'Le secret du succès, c\'est la constance dans le but. — Benjamin Disraeli',icon:'🎯'},
-    {texte:'Peu importe la vitesse à laquelle tu avances, l\'important est de ne pas s\'arrêter. — Confucius',icon:'🐢'},
-    {texte:'Traite les autres comme tu aimerais être traité. — Règle d\'or universelle',icon:'💛'},
-    {texte:'Le respect de soi est le commencement de la sagesse. — Proverbe écossais',icon:'🌟'},
-    {texte:'Un sourire ne coûte rien et vaut pourtant beaucoup. — Proverbe français',icon:'😊'},
-    {texte:'Les grandes choses ne se font pas par impulsion, mais par une série de petites choses. — Van Gogh',icon:'🎨'},
-    {texte:'La gratitude transforme ce que nous avons en suffisamment. — Proverbe amérindien',icon:'🙏'},
+    {a:[1,2],texte:"Petit à petit, l'oiseau fait son nid. — Proverbe français",icon:'🐦'},
+    {a:[1,2],texte:'Un sourire ne coûte rien et rapporte beaucoup. — Proverbe',icon:'😊'},
+    {a:[1,2,3],texte:"Traite les autres comme tu aimerais être traité. — La règle d'or, présente dans de nombreuses cultures",icon:'💛'},
+    {a:[1,2],texte:"On a souvent besoin d'un plus petit que soi. — Jean de La Fontaine",icon:'🐭'},
+    {a:[1,2],texte:'Rien ne sert de courir ; il faut partir à point. — Jean de La Fontaine',icon:'🐢'},
+    {a:[1,2],texte:"L'union fait la force. — Devise de la Belgique",icon:'🤝'},
+    {a:[1,2],texte:'Mieux vaut tard que jamais. — Proverbe',icon:'⏰'},
+    {a:[2,3],texte:"C'est en forgeant qu'on devient forgeron. — Proverbe français",icon:'🔨'},
+    {a:[2,3],texte:'Les petits ruisseaux font les grandes rivières. — Proverbe français',icon:'💧'},
+    {a:[2,3],texte:'Patience et longueur de temps font plus que force ni que rage. — Jean de La Fontaine',icon:'⏳'},
+    {a:[2,3],texte:"Il n'y a pas de sot métier. — Proverbe",icon:'🧑‍🔧'},
+    {a:[2,3],texte:"Peu importe la vitesse à laquelle tu avances, l'important est de ne pas t'arrêter. — Pensée attribuée à Confucius",icon:'🐌'},
+    {a:[2,3],texte:"Ce qui se conçoit bien s'énonce clairement. — Nicolas Boileau",icon:'✍️'},
+    {a:[2,3],texte:"On ne voit bien qu'avec le cœur. L'essentiel est invisible pour les yeux. — Antoine de Saint-Exupéry, Le Petit Prince",icon:'🦊'},
+    {a:[2,3],texte:"Il n'est jamais trop tard pour bien faire. — Proverbe",icon:'🌱'},
+    {a:[2,3],texte:"La vie, c'est comme une bicyclette : il faut avancer pour ne pas perdre l'équilibre. — Albert Einstein",icon:'🚲'},
+    {a:[3],texte:"La politesse est l'art de choisir parmi ses pensées. — Citation attribuée à Madame de Staël",icon:'✨'},
+    {a:[3],texte:"La politesse est à l'esprit ce que la grâce est au visage. — Voltaire",icon:'🌸'},
+    {a:[3],texte:"Le secret du succès, c'est la constance dans le but. — Benjamin Disraeli",icon:'🎯'},
+    {a:[3],texte:'Les grandes choses ne se font pas par impulsion, mais par une série de petites choses réunies. — Vincent van Gogh',icon:'🎨'},
+    {a:[3],texte:'La gratitude fait que ce que nous avons nous suffit. — Melody Beattie, auteure américaine',icon:'🙏'},
+    {a:[3],texte:'Il faut cultiver notre jardin. — Voltaire, Candide',icon:'🌻'},
+    {a:[3],texte:'Qui veut voyager loin ménage sa monture. — Jean Racine',icon:'🐎'},
+    {a:[3],texte:"Rien de grand ne s'est accompli dans le monde sans passion. — Hegel",icon:'🔥'},
+    {a:[3],texte:"L'éducation est l'arme la plus puissante pour changer le monde. — Nelson Mandela",icon:'📚'},
+    {a:[3],texte:"L'avenir appartient à ceux qui savent l'imaginer, le concevoir et le réaliser. Ce n'est pas quelque chose que l'on attend, mais quelque chose que l'on crée.",icon:'🚀'},
   ],
   conseils:[
-    {titre:'Fixe un objectif',icon:'🎯',texte:'Écris ton objectif sur papier. Il devient beaucoup plus probable de le réaliser !'},
-    {titre:'Découpe en petites étapes',icon:'🪜',texte:'Un grand rêve + petites actions quotidiennes = résultats certains. Commence par 5 minutes par jour.'},
-    {titre:'Célèbre tes progrès',icon:'🎉',texte:'Chaque pas compte. Félicite-toi pour les petites victoires — elles construisent la grande.'},
-    {titre:'Entoure-toi bien',icon:'👥',texte:'Tu deviens la moyenne des 5 personnes que tu côtoies le plus. Choisis des gens qui t\'élèvent.'},
-    {titre:'La persévérance',icon:'💪',texte:'Tous les experts ont été des débutants. La différence ? Ils n\'ont pas abandonné.'},
-    {titre:'Sois curieux',icon:'🔍',texte:'Pose des questions, lis, explore. La curiosité est le moteur de tous les grands accomplissements.'},
+    {a:[1],titre:'Essaie encore',icon:'🔁',texte:"Si c'est difficile, respire et réessaie. Chaque essai te rend plus fort !"},
+    {a:[1,2],titre:'Demande de l’aide',icon:'🙋',texte:"Tu peux toujours demander de l'aide à un adulte. Ce n'est pas grave de ne pas savoir."},
+    {a:[1,2],titre:'Dis ce que tu ressens',icon:'💬',texte:"Quand tu es triste ou en colère, dis-le avec des mots. On pourra t'aider."},
+    {a:[1,2],titre:'Bouge chaque jour',icon:'🏃',texte:"Cours, saute, danse : ton corps adore bouger un peu tous les jours !"},
+    {a:[1,2,3],titre:'Dors bien',icon:'😴',texte:"Bien dormir aide ton cerveau à grandir, à se reposer et à retenir ce que tu as appris."},
+    {a:[1,2,3],titre:'Sois curieux',icon:'🔍',texte:"Pose des questions, lis, explore. La curiosité est le moteur des grandes découvertes."},
+    {a:[2,3],titre:'Célèbre tes progrès',icon:'🎉',texte:"Chaque pas compte. Félicite-toi pour les petites victoires : elles construisent la grande."},
+    {a:[2,3],titre:'Fixe un objectif',icon:'🎯',texte:"Écris ton objectif sur papier : ça t'aide à t'en souvenir et à passer à l'action !"},
+    {a:[2,3],titre:'Découpe en petites étapes',icon:'🪜',texte:"Un grand rêve se réalise avec de petites actions chaque jour. Commence par 5 minutes."},
+    {a:[2,3],titre:'La persévérance',icon:'💪',texte:"Tous les experts ont été des débutants. La différence ? Ils n'ont pas abandonné."},
+    {a:[2,3],titre:'Apprends de tes erreurs',icon:'🧩',texte:"Une erreur n'est pas un échec : c'est une information. Demande-toi ce que tu peux changer la prochaine fois."},
+    {a:[2],titre:'Prépare ton cartable',icon:'🎒',texte:"Prépare tes affaires la veille au soir : le matin sera beaucoup plus calme."},
+    {a:[2,3],titre:'Ose poser des questions',icon:'❓',texte:"Poser une question, ce n'est pas avoir l'air bête : c'est la meilleure façon d'apprendre."},
+    {a:[3],titre:'Entoure-toi bien',icon:'👥',texte:"Les personnes que tu fréquentes influencent tes habitudes. Choisis des amis qui t'encouragent."},
+    {a:[3],titre:'Gère ton temps d’écran',icon:'📵',texte:"Garde des moments sans écran pour lire, bouger et discuter. Ton cerveau te remerciera."},
+    {a:[3],titre:'Une chose à la fois',icon:'🎯',texte:"Faire plusieurs choses en même temps fait perdre du temps. Concentre-toi sur une tâche, puis passe à la suivante."},
+    {a:[3],titre:'Prends soin de toi',icon:'🌙',texte:"Sommeil, eau, mouvement : ce sont les bases pour être en forme et bien apprendre."},
+    {a:[3],titre:'Gère ton argent de poche',icon:'🐷',texte:"Mets de côté une petite partie de chaque somme reçue. Les petites économies deviennent de grands projets."},
   ]
 };
-
+// Groupe d'âge affiché (par défaut selon l'âge du profil)
+let _polGrp=null;
+function _polGroupDefault(){const a=parseInt(P()&&P().age)||8;return a<=6?1:a<=12?2:3;}
+function _polList(k){const g=_polGrp||_polGroupDefault();return g==='all'?POLITESSE_DATA[k]:POLITESSE_DATA[k].filter(x=>!x.a||x.a.includes(g));}
+function _polGrpBar(){const g=_polGrp||_polGroupDefault();
+  return '<div class="sport-grp" style="margin:0 0 12px">'+[[1,'🐣 4-6 ans'],[2,'🐸 7-12 ans'],[3,'🦅 13 ans et +'],['all','Tout']].map(([v,l])=>`<button class="${g===v?'sel':''}" onclick="sndTap();_polGrp=${v==='all'?"'all'":v};_polDictonIdx=0;renderPolContent(_polTab)">${l}</button>`).join('')+'</div>';}
 let _polTab=0,_polDictonIdx=0;
 function openPolitesse(){
   try{
@@ -13040,9 +13094,9 @@ function renderPolTabs(){
   });
 }
 function renderPolContent(tab){
-  const c=document.getElementById('pol-content');c.innerHTML='';
+  const c=document.getElementById('pol-content');c.innerHTML=_polGrpBar();
   if(tab===0){
-    POLITESSE_DATA.manieres.forEach(m=>{
+    _polList('manieres').forEach(m=>{
       const card=document.createElement('div');
       card.style.cssText='background:var(--w);border-radius:var(--r);padding:16px;margin-bottom:10px;box-shadow:var(--sh);display:flex;align-items:flex-start;gap:12px';
       const conseil=m.conseil.replace(/'/g,"&#39;");
@@ -13050,10 +13104,11 @@ function renderPolContent(tab){
       c.appendChild(card);
     });
   }else if(tab===1){
-    const d=POLITESSE_DATA.dictons[_polDictonIdx];
+    const _dl=_polList('dictons');if(_polDictonIdx>=_dl.length)_polDictonIdx=0;
+    const d=_dl[_polDictonIdx];
     const nav=document.createElement('div');
     nav.style.cssText='display:flex;align-items:center;gap:10px;margin-bottom:16px';
-    nav.innerHTML=`<button onclick="if(_polDictonIdx>0){_polDictonIdx--;renderPolContent(1);}" style="background:var(--vl);border:none;border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;color:var(--v)">←</button><div style="flex:1;text-align:center;font-size:12px;font-weight:700;color:var(--tl)">${_polDictonIdx+1} / ${POLITESSE_DATA.dictons.length}</div><button onclick="if(_polDictonIdx<POLITESSE_DATA.dictons.length-1){_polDictonIdx++;renderPolContent(1);}" style="background:var(--vl);border:none;border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;color:var(--v)">→</button>`;
+    nav.innerHTML=`<button onclick="if(_polDictonIdx>0){_polDictonIdx--;renderPolContent(1);}" style="background:var(--vl);border:none;border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;color:var(--v)">←</button><div style="flex:1;text-align:center;font-size:12px;font-weight:700;color:var(--tl)">${_polDictonIdx+1} / ${_dl.length}</div><button onclick="if(_polDictonIdx<_dl.length-1){_polDictonIdx++;renderPolContent(1);}" style="background:var(--vl);border:none;border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;color:var(--v)">→</button>`;
     c.appendChild(nav);
     const card=document.createElement('div');
     card.style.cssText='background:linear-gradient(135deg,#6C63FF,#9B93FF);border-radius:22px;padding:28px 20px;text-align:center;color:#fff;margin-bottom:14px;min-height:200px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px';
@@ -13061,7 +13116,7 @@ function renderPolContent(tab){
     card.innerHTML=`<div style="font-size:52px">${d.icon}</div><div style="font-size:16px;font-weight:700;line-height:1.6">${d.texte}</div><button onclick="ttsSpeak(this.dataset.t);sndTap()" data-t="${dt}" style="background:rgba(255,255,255,.2);border:none;border-radius:10px;padding:8px 16px;font-family:var(--f);font-size:12px;font-weight:700;color:#fff;cursor:pointer">🔊 Écouter</button>`;
     c.appendChild(card);
   }else{
-    POLITESSE_DATA.conseils.forEach(cs=>{
+    _polList('conseils').forEach(cs=>{
       const card=document.createElement('div');
       card.style.cssText='background:var(--w);border-radius:var(--r);padding:16px;margin-bottom:10px;box-shadow:var(--sh);display:flex;align-items:flex-start;gap:12px';
       const ct=cs.texte.replace(/'/g,"&#39;");
