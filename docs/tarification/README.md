@@ -74,3 +74,6 @@ Dossier de travail : idées de prix, de formules d'abonnement, et coûts associ�
 - Leviers de vente légaux : essai gratuit ; bilan hebdo par email (le parent voit les progrès) ; dans l'Espace Parents, aperçu de ce que l'abonnement débloque ; prix annuel avantageux ; prix famille.
 - Page web parent : pas nécessaire au départ (tout se fait dans l'appli) ; utile plus tard si comptes.
 - Faire relire ce parcours par un juriste avant le lancement.
+- (12/11) Enfant qui installe seul et passe la barrière parentale : acceptable — la barrière est une mesure raisonnable, pas une preuve ; aucune donnée sur l'enfant n'est collectée ; **l'achat lui-même est protégé par le store** (mot de passe / Face ID du titulaire du compte, « Demander l'autorisation d'achat » Apple, approbation Family Link Google pour les comptes enfants). Dès 15 ans en France, l'ado peut consentir seul au traitement de ses données.
+- Barrière un peu plus dure pour les grands : ex. « Écris en chiffres : trois cent quarante-sept moins vingt-huit » plutôt que « quarante-huit ».
+- **Bouton « S'abonner » dans l'Espace Parents, SANS exiger l'email** (le store gère le paiement ; exiger l'email = donnée non nécessaire + moins de ventes). Email proposé juste après, facultatif, pour le bilan ; case offres séparée non cochée.
