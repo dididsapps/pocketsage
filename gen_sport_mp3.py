@@ -100,6 +100,9 @@ def main():
     if not EL_KEY:
         print("❌ ELEVENLABS_API_KEY manquante"); sys.exit(2)
     v, cfg = "eleven:" + EL_VOICES["FR"], {"model": "eleven_multilingual_v2", "style": 0.45, "speed": 0.95}
+    vid = v + ":" + json.dumps(cfg, sort_keys=True)
+    fp = lambda t: hashlib.sha1(f"{t}|{vid}".encode()).hexdigest()[:12]
+    todo = [t for t in texts_ok if man.get(t) != fp(t)]
     print(f"voix : {v} {cfg} — {len(todo)} MP3 à générer ({sum(map(len, todo))} caractères)")
     if todo:
         import boto3
