@@ -41,3 +41,10 @@ Dossier de travail : idées de prix, de formules d'abonnement, et coûts associ�
 - [ ] Choisir ce qui reste gratuit vs payant.
 - [ ] Estimer l'usage moyen de la prononciation par enfant et par mois → coût premium par abonné.
 - [ ] Tester 2-3 prix auprès des parents bêta (questionnaire).
+
+## 6. Idées pour l'offre gratuite (12/11/2026 — à décider, rien codé)
+- **Un module par jour, 10 min** ; le lendemain un autre module (rotation automatique) → l'enfant découvre tout en environ une semaine.
+- Variante proposée : le parent peut **choisir le module du jour** (ex. Langues la veille d'un contrôle d'anglais).
+- **Jeux : 15 min/jour** (déjà en place, voir `docs/jeux/README.md`).
+- **Toujours libres, même en gratuit** (idée à valider) : **Sport** (l'écran ne sert qu'aux consignes, l'enfant bouge) et **fiches PDF** (travail sur papier).
+- Abonnés : **Sport sans limite** ; jeux 45 min réglable ; temps d'écran total en option (désactivé par défaut) — à rediscuter.
