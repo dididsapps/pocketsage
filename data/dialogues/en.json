@@ -388,7 +388,8 @@
      },
      "help": "You can say: Goodbye, Sensei!"
     }
-   }
+   },
+   "niveau": "debutant"
   },
   {
    "id": "EN-D02",
@@ -616,7 +617,8 @@
      },
      "help": "You can say: Yes, it's delicious!"
     }
-   }
+   },
+   "niveau": "debutant"
   },
   {
    "id": "EN-D03",
@@ -1035,7 +1037,8 @@
      },
      "help": "You can say: Thanks, you too!"
     }
-   }
+   },
+   "niveau": "intermediaire"
   },
   {
    "id": "EN-D04",
@@ -1339,6 +1342,2402 @@
       "end": true
      },
      "help": "You can say: Thank you, you too!"
+    }
+   },
+   "niveau": "avance"
+  },
+  {
+   "id": "EN-D05",
+   "emoji": "🙋",
+   "titre": "Je me présente",
+   "desc": "Dire son prénom, son âge, où on habite et ce qu'on aime.",
+   "niveau": "debutant",
+   "age_min": 4,
+   "age_max": 99,
+   "petits": true,
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "say": [
+      "Hi! I'm Sensei. What's your name?"
+     ],
+     "fr": "Salut ! Je suis Sensei. Comment tu t'appelles ?",
+     "choices": [
+      "My name is Léa",
+      "I'm Tom"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "name",
+        "i'm",
+        "im",
+        "call"
+       ],
+       "reply": [
+        "Nice to meet you!"
+       ],
+       "next": "n2"
+      }
+     ],
+     "help": "You can say: My name is…",
+     "any": {
+      "reply": [
+       "Nice to meet you!"
+      ],
+      "next": "n2"
+     }
+    },
+    "n2": {
+     "say": [
+      "How old are you?"
+     ],
+     "fr": "Quel âge as-tu ?",
+     "choices": [
+      "I'm six",
+      "I'm eight",
+      "I'm ten"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "old",
+        "years",
+        "i'm",
+        "im",
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+        "ten",
+        "eleven",
+        "twelve",
+        "fifteen",
+        "twenty",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+       ],
+       "reply": [
+        "What a great age!"
+       ],
+       "next": "n3"
+      }
+     ],
+     "help": "You can say: I'm eight.",
+     "any": {
+      "reply": [
+       "What a great age!"
+      ],
+      "next": "n3"
+     }
+    },
+    "n3": {
+     "say": [
+      "Where do you live?"
+     ],
+     "fr": "Où habites-tu ?",
+     "choices": [
+      "I live in France",
+      "I live in Monaco"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "live",
+        "france",
+        "monaco",
+        "city",
+        "town",
+        "house"
+       ],
+       "reply": [
+        "What a nice place!"
+       ],
+       "next": "n4"
+      }
+     ],
+     "help": "You can say: I live in France.",
+     "any": {
+      "reply": [
+       "What a nice place!"
+      ],
+      "next": "n4"
+     }
+    },
+    "n4": {
+     "say": [
+      "What do you like?"
+     ],
+     "fr": "Qu'est-ce que tu aimes ?",
+     "choices": [
+      "I like football",
+      "I like drawing",
+      "I like music"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "like",
+        "love",
+        "football",
+        "soccer",
+        "drawing",
+        "music",
+        "games",
+        "dance",
+        "reading"
+       ],
+       "reply": [
+        "Me too! That's fun."
+       ],
+       "next": "n5"
+      }
+     ],
+     "help": "You can say: I like football.",
+     "any": {
+      "reply": [
+       "Cool!"
+      ],
+      "next": "n5"
+     }
+    },
+    "n5": {
+     "say": [
+      "It was nice to talk with you. Goodbye!"
+     ],
+     "fr": "C'était super de parler avec toi. Au revoir !",
+     "choices": [
+      "Goodbye, Sensei!",
+      "Bye!"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "bye",
+        "goodbye",
+        "see you"
+       ],
+       "reply": [
+        "Bye bye! See you soon!"
+       ],
+       "end": true
+      }
+     ],
+     "help": "You can say: Goodbye!",
+     "any": {
+      "reply": [
+       "Bye bye! See you soon!"
+      ],
+      "end": true
+     }
+    }
+   }
+  },
+  {
+   "id": "EN-D06",
+   "emoji": "🎨",
+   "titre": "Les couleurs",
+   "desc": "Reconnaître et dire les couleurs.",
+   "niveau": "debutant",
+   "age_min": 4,
+   "age_max": 99,
+   "petits": true,
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "say": [
+      "Let's play with colours! What colour is the sky?"
+     ],
+     "fr": "Jouons avec les couleurs ! De quelle couleur est le ciel ?",
+     "choices": [
+      "Blue!"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "blue"
+       ],
+       "reply": [
+        "Yes! The sky is blue."
+       ],
+       "next": "n2"
+      }
+     ],
+     "help": "You can say: Blue!",
+     "any": {
+      "reply": [
+       "The sky is blue. Blue!"
+      ],
+      "next": "n2"
+     }
+    },
+    "n2": {
+     "say": [
+      "What colour is a banana?"
+     ],
+     "fr": "De quelle couleur est une banane ?",
+     "choices": [
+      "Yellow!"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "yellow"
+       ],
+       "reply": [
+        "Right! Yellow like the sun."
+       ],
+       "next": "n3"
+      }
+     ],
+     "help": "You can say: Yellow!",
+     "any": {
+      "reply": [
+       "A banana is yellow!"
+      ],
+      "next": "n3"
+     }
+    },
+    "n3": {
+     "say": [
+      "And the grass?"
+     ],
+     "fr": "Et l'herbe ?",
+     "choices": [
+      "Green!"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "green"
+       ],
+       "reply": [
+        "Super! The grass is green."
+       ],
+       "next": "n4"
+      }
+     ],
+     "help": "You can say: Green!",
+     "any": {
+      "reply": [
+       "The grass is green!"
+      ],
+      "next": "n4"
+     }
+    },
+    "n4": {
+     "say": [
+      "What is your favourite colour?"
+     ],
+     "fr": "Quelle est ta couleur préférée ?",
+     "choices": [
+      "Red",
+      "Pink",
+      "Purple",
+      "Orange"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "red",
+        "pink",
+        "purple",
+        "orange",
+        "blue",
+        "green",
+        "yellow",
+        "black",
+        "white",
+        "brown"
+       ],
+       "reply": [
+        "What a beautiful colour!"
+       ],
+       "next": "n5"
+      }
+     ],
+     "help": "You can say: Red!",
+     "any": {
+      "reply": [
+       "What a beautiful colour!"
+      ],
+      "next": "n5"
+     }
+    },
+    "n5": {
+     "say": [
+      "Well done! You know your colours. Goodbye!"
+     ],
+     "fr": "Bravo ! Tu connais tes couleurs. Au revoir !",
+     "choices": [
+      "Goodbye!"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "bye",
+        "goodbye",
+        "thank"
+       ],
+       "reply": [
+        "See you soon, colour champion!"
+       ],
+       "end": true
+      }
+     ],
+     "help": "You can say: Goodbye!",
+     "any": {
+      "reply": [
+       "See you soon!"
+      ],
+      "end": true
+     }
+    }
+   }
+  },
+  {
+   "id": "EN-D07",
+   "emoji": "🐶",
+   "titre": "Les animaux",
+   "desc": "Dire le nom des animaux et parler de son animal.",
+   "niveau": "debutant",
+   "age_min": 4,
+   "age_max": 99,
+   "petits": true,
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "say": [
+      "Let's talk about animals! What says woof woof?"
+     ],
+     "fr": "Parlons des animaux ! Qui fait ouaf ouaf ?",
+     "choices": [
+      "A dog!"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "dog",
+        "puppy"
+       ],
+       "reply": [
+        "Yes, a dog!"
+       ],
+       "next": "n2"
+      }
+     ],
+     "help": "You can say: A dog!",
+     "any": {
+      "reply": [
+       "It's a dog! Woof woof!"
+      ],
+      "next": "n2"
+     }
+    },
+    "n2": {
+     "say": [
+      "What says meow?"
+     ],
+     "fr": "Qui fait miaou ?",
+     "choices": [
+      "A cat!"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "cat",
+        "kitten"
+       ],
+       "reply": [
+        "Yes, a cat!"
+       ],
+       "next": "n3"
+      }
+     ],
+     "help": "You can say: A cat!",
+     "any": {
+      "reply": [
+       "It's a cat! Meow!"
+      ],
+      "next": "n3"
+     }
+    },
+    "n3": {
+     "say": [
+      "Which animal is very big and grey, with a long nose?"
+     ],
+     "fr": "Quel animal est très grand et gris, avec un long nez ?",
+     "choices": [
+      "An elephant!"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "elephant"
+       ],
+       "reply": [
+        "Right! An elephant!"
+       ],
+       "next": "n4"
+      }
+     ],
+     "help": "You can say: An elephant!",
+     "any": {
+      "reply": [
+       "It's an elephant!"
+      ],
+      "next": "n4"
+     }
+    },
+    "n4": {
+     "say": [
+      "Do you have a pet?"
+     ],
+     "fr": "As-tu un animal de compagnie ?",
+     "choices": [
+      "Yes, I have a dog",
+      "Yes, I have a cat",
+      "No, I don't"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "no",
+        "don't",
+        "dont",
+        "not"
+       ],
+       "reply": [
+        "Maybe one day!"
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "yes",
+        "have",
+        "dog",
+        "cat",
+        "fish",
+        "rabbit",
+        "hamster",
+        "bird"
+       ],
+       "reply": [
+        "Lucky you! Pets are great friends."
+       ],
+       "next": "n5"
+      }
+     ],
+     "help": "You can say: Yes, I have a cat.",
+     "any": {
+      "reply": [
+       "Lovely!"
+      ],
+      "next": "n5"
+     }
+    },
+    "n5": {
+     "say": [
+      "What is your favourite animal?"
+     ],
+     "fr": "Quel est ton animal préféré ?",
+     "choices": [
+      "I love lions",
+      "I love horses",
+      "I love rabbits"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "lion",
+        "horse",
+        "rabbit",
+        "dog",
+        "cat",
+        "tiger",
+        "monkey",
+        "panda",
+        "dolphin",
+        "love",
+        "like"
+       ],
+       "reply": [
+        "Great choice! Bye bye, animal friend!"
+       ],
+       "end": true
+      }
+     ],
+     "help": "You can say: I love lions.",
+     "any": {
+      "reply": [
+       "Great choice! Bye bye!"
+      ],
+      "end": true
+     }
+    }
+   }
+  },
+  {
+   "id": "EN-D09",
+   "emoji": "🏫",
+   "titre": "À l'école",
+   "desc": "Parler de l'école, de sa matière préférée et de la récré.",
+   "niveau": "intermediaire",
+   "age_min": 4,
+   "age_max": 99,
+   "petits": false,
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "say": [
+      "Hi! Do you like school?"
+     ],
+     "fr": "Salut ! Tu aimes l'école ?",
+     "choices": [
+      "Yes, I do!",
+      "Not really"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "no",
+        "not",
+        "really"
+       ],
+       "reply": [
+        "School can be hard sometimes. Let's talk about it."
+       ],
+       "next": "n2"
+      },
+      {
+       "keys": [
+        "yes",
+        "do",
+        "love",
+        "like"
+       ],
+       "reply": [
+        "Great!"
+       ],
+       "next": "n2"
+      }
+     ],
+     "help": "You can say: Yes, I do!",
+     "any": {
+      "reply": [
+       "Okay!"
+      ],
+      "next": "n2"
+     }
+    },
+    "n2": {
+     "say": [
+      "What is your favourite subject?"
+     ],
+     "fr": "Quelle est ta matière préférée ?",
+     "choices": [
+      "I like maths",
+      "I like art",
+      "I like sport"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "maths",
+        "math",
+        "art",
+        "sport",
+        "pe",
+        "english",
+        "science",
+        "history",
+        "music",
+        "reading",
+        "geography"
+       ],
+       "reply": [
+        "Interesting!"
+       ],
+       "next": "n3"
+      }
+     ],
+     "help": "You can say: I like maths.",
+     "any": {
+      "reply": [
+       "Interesting!"
+      ],
+      "next": "n3"
+     }
+    },
+    "n3": {
+     "say": [
+      "Why do you like it?"
+     ],
+     "fr": "Pourquoi tu l'aimes ?",
+     "choices": [
+      "Because it's fun",
+      "Because my teacher is nice",
+      "Because I'm good at it"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "because",
+        "fun",
+        "teacher",
+        "nice",
+        "good",
+        "easy",
+        "interesting"
+       ],
+       "reply": [
+        "That's a great reason!"
+       ],
+       "next": "n4"
+      }
+     ],
+     "help": "You can say: Because it's fun.",
+     "any": {
+      "reply": [
+       "That's a great reason!"
+      ],
+      "next": "n4"
+     }
+    },
+    "n4": {
+     "say": [
+      "What do you do at break time?"
+     ],
+     "fr": "Que fais-tu à la récréation ?",
+     "choices": [
+      "I play with my friends",
+      "I talk with my friends",
+      "I eat a snack"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "play",
+        "talk",
+        "friends",
+        "eat",
+        "run",
+        "games",
+        "snack",
+        "football"
+       ],
+       "reply": [
+        "Sounds like fun!"
+       ],
+       "next": "n5"
+      }
+     ],
+     "help": "You can say: I play with my friends.",
+     "any": {
+      "reply": [
+       "Sounds like fun!"
+      ],
+      "next": "n5"
+     }
+    },
+    "n5": {
+     "say": [
+      "Have you got a lot of homework?"
+     ],
+     "fr": "As-tu beaucoup de devoirs ?",
+     "choices": [
+      "Yes, a lot",
+      "No, not much"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "no",
+        "not",
+        "much",
+        "little"
+       ],
+       "reply": [
+        "Lucky you! Enjoy your free time. Bye!"
+       ],
+       "end": true
+      },
+      {
+       "keys": [
+        "yes",
+        "lot",
+        "many"
+       ],
+       "reply": [
+        "Courage! Do a little every day. Bye!"
+       ],
+       "end": true
+      }
+     ],
+     "help": "You can say: Yes, a lot.",
+     "any": {
+      "reply": [
+       "See you soon!"
+      ],
+      "end": true
+     }
+    }
+   }
+  },
+  {
+   "id": "EN-D10",
+   "emoji": "🛒",
+   "titre": "Faire les courses",
+   "desc": "Demander des produits, dire combien, payer.",
+   "niveau": "intermediaire",
+   "age_min": 4,
+   "age_max": 99,
+   "petits": false,
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "say": [
+      "Welcome to the supermarket! What do you need today?"
+     ],
+     "fr": "Bienvenue au supermarché ! De quoi as-tu besoin aujourd'hui ?",
+     "choices": [
+      "I need some apples",
+      "I need bread and milk"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "need",
+        "apple",
+        "apples",
+        "bread",
+        "milk",
+        "eggs",
+        "cheese",
+        "want",
+        "like"
+       ],
+       "reply": [
+        "No problem."
+       ],
+       "next": "n2"
+      }
+     ],
+     "help": "You can say: I need some apples.",
+     "any": {
+      "reply": [
+       "No problem."
+      ],
+      "next": "n2"
+     }
+    },
+    "n2": {
+     "say": [
+      "How many would you like?"
+     ],
+     "fr": "Combien en veux-tu ?",
+     "choices": [
+      "Six, please",
+      "Two, please",
+      "One, please"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+        "ten",
+        "eleven",
+        "twelve",
+        "fifteen",
+        "twenty",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "please",
+        "some"
+       ],
+       "reply": [
+        "Okay!"
+       ],
+       "next": "n3"
+      }
+     ],
+     "help": "You can say: Six, please.",
+     "any": {
+      "reply": [
+       "Okay!"
+      ],
+      "next": "n3"
+     }
+    },
+    "n3": {
+     "say": [
+      "Anything else?"
+     ],
+     "fr": "Autre chose ?",
+     "choices": [
+      "Yes, some cheese",
+      "No, thank you"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "no",
+        "nothing",
+        "all",
+        "thank"
+       ],
+       "reply": [
+        "Perfect. Let's go to the checkout."
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "yes",
+        "cheese",
+        "chocolate",
+        "water",
+        "juice",
+        "some"
+       ],
+       "reply": [
+        "Good idea! Now let's go to the checkout."
+       ],
+       "next": "n4"
+      }
+     ],
+     "help": "You can say: No, thank you.",
+     "any": {
+      "reply": [
+       "Let's go to the checkout."
+      ],
+      "next": "n4"
+     }
+    },
+    "n4": {
+     "say": [
+      "That's eight euros, please. How would you like to pay?"
+     ],
+     "fr": "Ça fait huit euros, s'il te plaît. Comment veux-tu payer ?",
+     "choices": [
+      "By card, please",
+      "In cash"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "card",
+        "cash",
+        "money",
+        "coins",
+        "euros"
+       ],
+       "reply": [
+        "Thank you! Here is your receipt."
+       ],
+       "next": "n5"
+      }
+     ],
+     "help": "You can say: By card, please.",
+     "any": {
+      "reply": [
+       "Thank you! Here is your receipt."
+      ],
+      "next": "n5"
+     }
+    },
+    "n5": {
+     "say": [
+      "Do you need a bag?"
+     ],
+     "fr": "As-tu besoin d'un sac ?",
+     "choices": [
+      "Yes, please",
+      "No, thanks. I have one"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "no",
+        "have",
+        "own"
+       ],
+       "reply": [
+        "Great, good for the planet! Have a nice day!"
+       ],
+       "end": true
+      },
+      {
+       "keys": [
+        "yes",
+        "please"
+       ],
+       "reply": [
+        "Here you are. Have a nice day!"
+       ],
+       "end": true
+      }
+     ],
+     "help": "You can say: No, thanks. I have one.",
+     "any": {
+      "reply": [
+       "Have a nice day!"
+      ],
+      "end": true
+     }
+    }
+   }
+  },
+  {
+   "id": "EN-D11",
+   "emoji": "🗺️",
+   "titre": "Demander son chemin",
+   "desc": "Demander où se trouve un lieu et comprendre la réponse.",
+   "niveau": "intermediaire",
+   "age_min": 4,
+   "age_max": 99,
+   "petits": false,
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "say": [
+      "Hello! You look lost. Can I help you?"
+     ],
+     "fr": "Bonjour ! Tu as l'air perdu. Je peux t'aider ?",
+     "choices": [
+      "Yes, please. Where is the station?",
+      "Where is the museum?"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "station",
+        "train"
+       ],
+       "reply": [
+        "The station? Go straight on, then turn left."
+       ],
+       "next": "n2"
+      },
+      {
+       "keys": [
+        "museum"
+       ],
+       "reply": [
+        "The museum? Go straight on, then turn left."
+       ],
+       "next": "n2"
+      }
+     ],
+     "help": "You can say: Where is the station?",
+     "any": {
+      "reply": [
+       "Sure! Go straight on, then turn left."
+      ],
+      "next": "n2"
+     }
+    },
+    "n2": {
+     "say": [
+      "Do you understand?"
+     ],
+     "fr": "Tu as compris ?",
+     "choices": [
+      "Yes: straight on, then left",
+      "Can you repeat, please?"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "repeat",
+        "again",
+        "sorry",
+        "pardon"
+       ],
+       "reply": [
+        "Of course: straight on, then turn left."
+       ],
+       "next": "n3"
+      },
+      {
+       "keys": [
+        "yes",
+        "straight",
+        "left",
+        "understand"
+       ],
+       "reply": [
+        "Perfect!"
+       ],
+       "next": "n3"
+      }
+     ],
+     "help": "You can say: Yes, straight on, then left.",
+     "any": {
+      "reply": [
+       "Okay!"
+      ],
+      "next": "n3"
+     }
+    },
+    "n3": {
+     "say": [
+      "It's about five minutes on foot. Are you walking or taking the bus?"
+     ],
+     "fr": "C'est à environ cinq minutes à pied. Tu y vas à pied ou en bus ?",
+     "choices": [
+      "I'm walking",
+      "I'm taking the bus"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "walk",
+        "walking",
+        "foot"
+       ],
+       "reply": [
+        "Good exercise!"
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "bus"
+       ],
+       "reply": [
+        "The bus stop is just over there."
+       ],
+       "next": "n4"
+      }
+     ],
+     "help": "You can say: I'm walking.",
+     "any": {
+      "reply": [
+       "Okay!"
+      ],
+      "next": "n4"
+     }
+    },
+    "n4": {
+     "say": [
+      "What do you say when someone helps you?"
+     ],
+     "fr": "Que dit-on quand quelqu'un nous aide ?",
+     "choices": [
+      "Thank you very much!"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "thank",
+        "thanks"
+       ],
+       "reply": [
+        "You're welcome! Have a good day!"
+       ],
+       "end": true
+      }
+     ],
+     "help": "You can say: Thank you very much!",
+     "any": {
+      "reply": [
+       "You're welcome! Good luck!"
+      ],
+      "end": true
+     }
+    }
+   }
+  },
+  {
+   "id": "EN-D12",
+   "emoji": "🩺",
+   "titre": "Chez le médecin",
+   "desc": "Expliquer ce qui ne va pas et comprendre les conseils du médecin.",
+   "niveau": "avance",
+   "age_min": 4,
+   "age_max": 99,
+   "petits": false,
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "say": [
+      "Good morning. Come in and sit down. What's the matter?"
+     ],
+     "fr": "Bonjour. Entre et assieds-toi. Qu'est-ce qui ne va pas ?",
+     "choices": [
+      "I have a headache",
+      "I have a sore throat",
+      "I have a stomach ache"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "head",
+        "headache"
+       ],
+       "reply": [
+        "A headache. I'm sorry to hear that."
+       ],
+       "next": "n2"
+      },
+      {
+       "keys": [
+        "throat"
+       ],
+       "reply": [
+        "A sore throat. Let me have a look."
+       ],
+       "next": "n2"
+      },
+      {
+       "keys": [
+        "stomach",
+        "tummy",
+        "belly"
+       ],
+       "reply": [
+        "A stomach ache. Let's see."
+       ],
+       "next": "n2"
+      }
+     ],
+     "help": "You can say: I have a headache.",
+     "any": {
+      "reply": [
+       "I see. Let's find out what's wrong."
+      ],
+      "next": "n2"
+     }
+    },
+    "n2": {
+     "say": [
+      "How long have you felt like this?"
+     ],
+     "fr": "Depuis combien de temps te sens-tu comme ça ?",
+     "choices": [
+      "Since yesterday",
+      "For two days",
+      "Since this morning"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "since",
+        "for",
+        "days",
+        "yesterday",
+        "morning",
+        "week"
+       ],
+       "reply": [
+        "Okay, thank you."
+       ],
+       "next": "n3"
+      }
+     ],
+     "help": "You can say: Since yesterday.",
+     "any": {
+      "reply": [
+       "Okay, thank you."
+      ],
+      "next": "n3"
+     }
+    },
+    "n3": {
+     "say": [
+      "Do you have a temperature?"
+     ],
+     "fr": "As-tu de la fièvre ?",
+     "choices": [
+      "Yes, a little",
+      "No, I don't think so"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "no",
+        "don't",
+        "dont",
+        "not"
+       ],
+       "reply": [
+        "Good news."
+       ],
+       "next": "n4"
+      },
+      {
+       "keys": [
+        "yes",
+        "little",
+        "hot"
+       ],
+       "reply": [
+        "Then you really need to rest."
+       ],
+       "next": "n4"
+      }
+     ],
+     "help": "You can say: No, I don't think so.",
+     "any": {
+      "reply": [
+       "Okay."
+      ],
+      "next": "n4"
+     }
+    },
+    "n4": {
+     "say": [
+      "You need to rest, drink lots of water and stay at home for two days. Is that clear?"
+     ],
+     "fr": "Tu dois te reposer, boire beaucoup d'eau et rester à la maison deux jours. C'est clair ?",
+     "choices": [
+      "Yes, thank you, doctor",
+      "Can I go to school?"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "school"
+       ],
+       "reply": [
+        "Not this week. Rest first, then school!"
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "yes",
+        "thank",
+        "clear",
+        "okay"
+       ],
+       "reply": [
+        "Good."
+       ],
+       "next": "n5"
+      }
+     ],
+     "help": "You can say: Yes, thank you, doctor.",
+     "any": {
+      "reply": [
+       "Good."
+      ],
+      "next": "n5"
+     }
+    },
+    "n5": {
+     "say": [
+      "Here is your prescription. Get well soon!"
+     ],
+     "fr": "Voici ton ordonnance. Bon rétablissement !",
+     "choices": [
+      "Thank you. Goodbye!"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "thank",
+        "bye",
+        "goodbye"
+       ],
+       "reply": [
+        "Goodbye, take care!"
+       ],
+       "end": true
+      }
+     ],
+     "help": "You can say: Thank you. Goodbye!",
+     "any": {
+      "reply": [
+       "Take care!"
+      ],
+      "end": true
+     }
+    }
+   }
+  },
+  {
+   "id": "EN-D13",
+   "emoji": "🎂",
+   "titre": "Organiser un anniversaire",
+   "desc": "Proposer des idées, choisir la nourriture et les jeux.",
+   "niveau": "avance",
+   "age_min": 4,
+   "age_max": 99,
+   "petits": false,
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "say": [
+      "My birthday is next Saturday! Will you help me organise the party?"
+     ],
+     "fr": "Mon anniversaire est samedi prochain ! Tu m'aides à organiser la fête ?",
+     "choices": [
+      "Of course!",
+      "Sure, what do you need?"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "course",
+        "sure",
+        "yes",
+        "ok",
+        "okay",
+        "need",
+        "help"
+       ],
+       "reply": [
+        "Thank you!"
+       ],
+       "next": "n2"
+      }
+     ],
+     "help": "You can say: Of course!",
+     "any": {
+      "reply": [
+       "Thank you!"
+      ],
+      "next": "n2"
+     }
+    },
+    "n2": {
+     "say": [
+      "How many people should I invite?"
+     ],
+     "fr": "Combien de personnes devrais-je inviter ?",
+     "choices": [
+      "Invite ten friends",
+      "Maybe fifteen"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+        "ten",
+        "eleven",
+        "twelve",
+        "fifteen",
+        "twenty",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "invite",
+        "friends",
+        "people",
+        "maybe"
+       ],
+       "reply": [
+        "Good idea."
+       ],
+       "next": "n3"
+      }
+     ],
+     "help": "You can say: Invite ten friends.",
+     "any": {
+      "reply": [
+       "Good idea."
+      ],
+      "next": "n3"
+     }
+    },
+    "n3": {
+     "say": [
+      "What should we eat?"
+     ],
+     "fr": "Qu'est-ce qu'on mange ?",
+     "choices": [
+      "Pizza and a chocolate cake",
+      "Sandwiches and fruit"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "pizza",
+        "cake",
+        "chocolate",
+        "sandwich",
+        "sandwiches",
+        "fruit",
+        "crisps",
+        "ice"
+       ],
+       "reply": [
+        "Yummy!"
+       ],
+       "next": "n4"
+      }
+     ],
+     "help": "You can say: Pizza and a chocolate cake.",
+     "any": {
+      "reply": [
+       "Yummy!"
+      ],
+      "next": "n4"
+     }
+    },
+    "n4": {
+     "say": [
+      "What games could we play?"
+     ],
+     "fr": "À quels jeux pourrait-on jouer ?",
+     "choices": [
+      "Musical chairs",
+      "A treasure hunt",
+      "Karaoke"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "chairs",
+        "treasure",
+        "hunt",
+        "karaoke",
+        "dance",
+        "hide",
+        "games",
+        "quiz"
+       ],
+       "reply": [
+        "Brilliant! This will be the best party ever."
+       ],
+       "next": "n5"
+      }
+     ],
+     "help": "You can say: A treasure hunt.",
+     "any": {
+      "reply": [
+       "Brilliant!"
+      ],
+      "next": "n5"
+     }
+    },
+    "n5": {
+     "say": [
+      "Will you come to my party?"
+     ],
+     "fr": "Tu viendras à ma fête ?",
+     "choices": [
+      "Yes, I'd love to!",
+      "Sorry, I can't"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "no",
+        "can't",
+        "cant",
+        "sorry"
+       ],
+       "reply": [
+        "Oh, what a shame! Maybe next year."
+       ],
+       "end": true
+      },
+      {
+       "keys": [
+        "yes",
+        "love",
+        "course",
+        "come"
+       ],
+       "reply": [
+        "Fantastic! See you on Saturday!"
+       ],
+       "end": true
+      }
+     ],
+     "help": "You can say: Yes, I'd love to!",
+     "any": {
+      "reply": [
+       "See you on Saturday!"
+      ],
+      "end": true
+     }
+    }
+   }
+  },
+  {
+   "id": "EN-D14",
+   "emoji": "🏨",
+   "titre": "Réserver un hôtel",
+   "desc": "Réserver une chambre au téléphone : nuits, personnes, options.",
+   "niveau": "avance",
+   "age_min": 4,
+   "age_max": 99,
+   "petits": false,
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "say": [
+      "Good evening, Seaside Hotel. How can I help you?"
+     ],
+     "fr": "Bonsoir, hôtel Seaside. Comment puis-je vous aider ?",
+     "choices": [
+      "I'd like to book a room, please"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "book",
+        "room",
+        "reserve",
+        "reservation"
+       ],
+       "reply": [
+        "Certainly."
+       ],
+       "next": "n2"
+      }
+     ],
+     "help": "You can say: I'd like to book a room, please.",
+     "any": {
+      "reply": [
+       "Certainly."
+      ],
+      "next": "n2"
+     }
+    },
+    "n2": {
+     "say": [
+      "For how many nights?"
+     ],
+     "fr": "Pour combien de nuits ?",
+     "choices": [
+      "For three nights",
+      "Just one night"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+        "ten",
+        "eleven",
+        "twelve",
+        "fifteen",
+        "twenty",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "night",
+        "nights"
+       ],
+       "reply": [
+        "Very good."
+       ],
+       "next": "n3"
+      }
+     ],
+     "help": "You can say: For three nights.",
+     "any": {
+      "reply": [
+       "Very good."
+      ],
+      "next": "n3"
+     }
+    },
+    "n3": {
+     "say": [
+      "How many people is it for?"
+     ],
+     "fr": "Pour combien de personnes ?",
+     "choices": [
+      "Two adults and two children",
+      "Just me"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+        "ten",
+        "eleven",
+        "twelve",
+        "fifteen",
+        "twenty",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "adults",
+        "children",
+        "people",
+        "me",
+        "family"
+       ],
+       "reply": [
+        "Perfect."
+       ],
+       "next": "n4"
+      }
+     ],
+     "help": "You can say: Two adults and two children.",
+     "any": {
+      "reply": [
+       "Perfect."
+      ],
+      "next": "n4"
+     }
+    },
+    "n4": {
+     "say": [
+      "Would you like a sea view? It's twenty euros more per night."
+     ],
+     "fr": "Voulez-vous une vue sur la mer ? C'est vingt euros de plus par nuit.",
+     "choices": [
+      "Yes, please",
+      "No, thank you"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "no",
+        "thank"
+       ],
+       "reply": [
+        "No problem, a standard room then."
+       ],
+       "next": "n5"
+      },
+      {
+       "keys": [
+        "yes",
+        "please",
+        "view",
+        "sea"
+       ],
+       "reply": [
+        "Great choice, the view is beautiful!"
+       ],
+       "next": "n5"
+      }
+     ],
+     "help": "You can say: Yes, please.",
+     "any": {
+      "reply": [
+       "Very well."
+      ],
+      "next": "n5"
+     }
+    },
+    "n5": {
+     "say": [
+      "Can I have your name, please?"
+     ],
+     "fr": "Puis-je avoir votre nom, s'il vous plaît ?",
+     "choices": [
+      "My name is…",
+      "It's…"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "name",
+        "it's",
+        "its",
+        "my"
+       ],
+       "reply": [
+        "Thank you. Your room is booked. Have a lovely stay!"
+       ],
+       "end": true
+      }
+     ],
+     "help": "You can say: My name is…",
+     "any": {
+      "reply": [
+       "Thank you. Your room is booked. Have a lovely stay!"
+      ],
+      "end": true
+     }
+    }
+   }
+  },
+  {
+   "id": "EN-D15",
+   "emoji": "💼",
+   "titre": "L'entretien",
+   "desc": "Se présenter et parler de ses qualités pour un petit boulot d'été.",
+   "niveau": "courant",
+   "age_min": 4,
+   "age_max": 99,
+   "petits": false,
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "say": [
+      "Hello, thanks for coming. Please introduce yourself."
+     ],
+     "fr": "Bonjour, merci d'être venu. Présentez-vous, s'il vous plaît.",
+     "choices": [
+      "My name is… and I'm sixteen",
+      "I'm a student who loves working with people"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "name",
+        "i'm",
+        "im",
+        "student",
+        "years",
+        "old"
+       ],
+       "reply": [
+        "Nice to meet you."
+       ],
+       "next": "n2"
+      }
+     ],
+     "help": "You can say: My name is… and I'm sixteen.",
+     "any": {
+      "reply": [
+       "Nice to meet you."
+      ],
+      "next": "n2"
+     }
+    },
+    "n2": {
+     "say": [
+      "Why do you want this summer job?"
+     ],
+     "fr": "Pourquoi voulez-vous ce travail d'été ?",
+     "choices": [
+      "Because I want to gain experience",
+      "Because I enjoy helping customers"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "because",
+        "experience",
+        "learn",
+        "enjoy",
+        "like",
+        "money",
+        "help",
+        "customers"
+       ],
+       "reply": [
+        "That's a good reason."
+       ],
+       "next": "n3"
+      }
+     ],
+     "help": "You can say: Because I want to gain experience.",
+     "any": {
+      "reply": [
+       "I see."
+      ],
+      "next": "n3"
+     }
+    },
+    "n3": {
+     "say": [
+      "What are your strengths?"
+     ],
+     "fr": "Quelles sont vos qualités ?",
+     "choices": [
+      "I'm reliable and hard-working",
+      "I'm good at teamwork"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "reliable",
+        "hard",
+        "working",
+        "team",
+        "teamwork",
+        "organised",
+        "organized",
+        "friendly",
+        "punctual",
+        "motivated",
+        "patient"
+       ],
+       "reply": [
+        "Excellent qualities."
+       ],
+       "next": "n4"
+      }
+     ],
+     "help": "You can say: I'm reliable and hard-working.",
+     "any": {
+      "reply": [
+       "Good."
+      ],
+      "next": "n4"
+     }
+    },
+    "n4": {
+     "say": [
+      "Tell me about a difficult situation and how you handled it."
+     ],
+     "fr": "Parlez-moi d'une situation difficile et de la façon dont vous l'avez gérée.",
+     "choices": [
+      "I had a lot of exams, so I made a plan",
+      "I stayed calm and asked for help"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "plan",
+        "calm",
+        "help",
+        "organised",
+        "solved",
+        "managed",
+        "team",
+        "worked",
+        "stayed",
+        "asked"
+       ],
+       "reply": [
+        "I like how you dealt with that."
+       ],
+       "next": "n5"
+      }
+     ],
+     "help": "You can say: I stayed calm and asked for help.",
+     "any": {
+      "reply": [
+       "Thank you for sharing that."
+      ],
+      "next": "n5"
+     }
+    },
+    "n5": {
+     "say": [
+      "Do you have any questions for me?"
+     ],
+     "fr": "Avez-vous des questions pour moi ?",
+     "choices": [
+      "When does the job start?",
+      "What are the working hours?"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "when",
+        "start",
+        "hours",
+        "time",
+        "pay",
+        "training"
+       ],
+       "reply": [
+        "Good question! We'll send you the details by email. Thank you for your time!"
+       ],
+       "end": true
+      },
+      {
+       "keys": [
+        "no"
+       ],
+       "reply": [
+        "Alright. Thank you for your time, we'll be in touch!"
+       ],
+       "end": true
+      }
+     ],
+     "help": "You can say: When does the job start?",
+     "any": {
+      "reply": [
+       "Thank you for your time!"
+      ],
+      "end": true
+     }
+    }
+   }
+  },
+  {
+   "id": "EN-D16",
+   "emoji": "💬",
+   "titre": "Donner son avis",
+   "desc": "Dire si on est d'accord, donner des raisons, voir les deux côtés.",
+   "niveau": "courant",
+   "age_min": 4,
+   "age_max": 99,
+   "petits": false,
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "say": [
+      "Some people think children should have a phone at ten. What do you think?"
+     ],
+     "fr": "Certains pensent que les enfants devraient avoir un téléphone à dix ans. Qu'en penses-tu ?",
+     "choices": [
+      "I agree, because it's useful",
+      "I disagree, it's too young"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "disagree",
+        "young",
+        "no"
+       ],
+       "reply": [
+        "I see your point."
+       ],
+       "next": "n2"
+      },
+      {
+       "keys": [
+        "agree",
+        "yes",
+        "useful",
+        "safe"
+       ],
+       "reply": [
+        "I see your point."
+       ],
+       "next": "n2"
+      }
+     ],
+     "help": "You can say: I agree, because it's useful.",
+     "any": {
+      "reply": [
+       "I see."
+      ],
+      "next": "n2"
+     }
+    },
+    "n2": {
+     "say": [
+      "Can you give me one reason?"
+     ],
+     "fr": "Peux-tu me donner une raison ?",
+     "choices": [
+      "In my opinion, it helps families stay in touch",
+      "I think screens can be bad for sleep"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "opinion",
+        "think",
+        "because",
+        "reason",
+        "helps",
+        "touch",
+        "sleep",
+        "screens",
+        "safe",
+        "dangerous",
+        "social"
+       ],
+       "reply": [
+        "That's a strong argument."
+       ],
+       "next": "n3"
+      }
+     ],
+     "help": "You can say: In my opinion, …",
+     "any": {
+      "reply": [
+       "Good."
+      ],
+      "next": "n3"
+     }
+    },
+    "n3": {
+     "say": [
+      "And what would people who disagree with you say?"
+     ],
+     "fr": "Et que diraient les personnes qui ne sont pas d'accord avec toi ?",
+     "choices": [
+      "They might say that…",
+      "On the other hand, …"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "might",
+        "other",
+        "hand",
+        "however",
+        "but",
+        "say",
+        "would"
+       ],
+       "reply": [
+        "Well done, you can see both sides."
+       ],
+       "next": "n4"
+      }
+     ],
+     "help": "You can say: On the other hand, …",
+     "any": {
+      "reply": [
+       "Good thinking."
+      ],
+      "next": "n4"
+     }
+    },
+    "n4": {
+     "say": [
+      "So, what is your final opinion?"
+     ],
+     "fr": "Alors, quel est ton avis final ?",
+     "choices": [
+      "Overall, I think…",
+      "To sum up, …"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "overall",
+        "sum",
+        "think",
+        "conclusion",
+        "opinion",
+        "believe",
+        "finally"
+       ],
+       "reply": [
+        "Very well argued! You'd make a great debater."
+       ],
+       "end": true
+      }
+     ],
+     "help": "You can say: Overall, I think…",
+     "any": {
+      "reply": [
+       "Very well argued!"
+      ],
+      "end": true
+     }
+    }
+   }
+  },
+  {
+   "id": "EN-D17",
+   "emoji": "✈️",
+   "titre": "Raconter un voyage",
+   "desc": "Raconter un voyage au passé ou décrire un voyage de rêve.",
+   "niveau": "courant",
+   "age_min": 4,
+   "age_max": 99,
+   "petits": false,
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "say": [
+      "Have you ever travelled abroad?"
+     ],
+     "fr": "Es-tu déjà allé à l'étranger ?",
+     "choices": [
+      "Yes, I went to Spain last year",
+      "No, never"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "no",
+        "never"
+       ],
+       "reply": [
+        "Then tell me about a trip you'd like to take!"
+       ],
+       "next": "n2"
+      },
+      {
+       "keys": [
+        "yes",
+        "went",
+        "been",
+        "travelled",
+        "traveled",
+        "visited"
+       ],
+       "reply": [
+        "Lucky you!"
+       ],
+       "next": "n2"
+      }
+     ],
+     "help": "You can say: Yes, I went to Spain last year.",
+     "any": {
+      "reply": [
+       "Interesting!"
+      ],
+      "next": "n2"
+     }
+    },
+    "n2": {
+     "say": [
+      "Where did you go, or where would you like to go?"
+     ],
+     "fr": "Où es-tu allé, ou où aimerais-tu aller ?",
+     "choices": [
+      "I went to London",
+      "I'd love to visit Japan"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "went",
+        "visit",
+        "go",
+        "love",
+        "london",
+        "japan",
+        "spain",
+        "italy",
+        "america",
+        "paris",
+        "dubai",
+        "country",
+        "city"
+       ],
+       "reply": [
+        "What a great place!"
+       ],
+       "next": "n3"
+      }
+     ],
+     "help": "You can say: I'd love to visit Japan.",
+     "any": {
+      "reply": [
+       "What a great place!"
+      ],
+      "next": "n3"
+     }
+    },
+    "n3": {
+     "say": [
+      "How did you travel there?"
+     ],
+     "fr": "Comment y es-tu allé ?",
+     "choices": [
+      "By plane",
+      "By train",
+      "By car"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "plane",
+        "fly",
+        "flew",
+        "train",
+        "car",
+        "boat",
+        "ferry",
+        "bus"
+       ],
+       "reply": [
+        "Nice."
+       ],
+       "next": "n4"
+      }
+     ],
+     "help": "You can say: By plane.",
+     "any": {
+      "reply": [
+       "Nice."
+      ],
+      "next": "n4"
+     }
+    },
+    "n4": {
+     "say": [
+      "What did you do there? Tell me something you enjoyed."
+     ],
+     "fr": "Qu'as-tu fait là-bas ? Raconte-moi quelque chose que tu as aimé.",
+     "choices": [
+      "We visited museums and ate local food",
+      "I swam in the sea every day"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "visited",
+        "ate",
+        "swam",
+        "saw",
+        "went",
+        "enjoyed",
+        "museum",
+        "beach",
+        "food",
+        "walked",
+        "shopping"
+       ],
+       "reply": [
+        "That sounds amazing!"
+       ],
+       "next": "n5"
+      }
+     ],
+     "help": "You can say: We visited museums.",
+     "any": {
+      "reply": [
+       "That sounds amazing!"
+      ],
+      "next": "n5"
+     }
+    },
+    "n5": {
+     "say": [
+      "Would you go back one day?"
+     ],
+     "fr": "Y retournerais-tu un jour ?",
+     "choices": [
+      "Definitely!",
+      "Maybe, but I'd like to discover new places"
+     ],
+     "intents": [
+      {
+       "keys": [
+        "definitely",
+        "yes",
+        "maybe",
+        "new",
+        "places",
+        "sure",
+        "course",
+        "would"
+       ],
+       "reply": [
+        "Travelling opens the mind. Thanks for sharing your story!"
+       ],
+       "end": true
+      }
+     ],
+     "help": "You can say: Definitely!",
+     "any": {
+      "reply": [
+       "Thanks for sharing your story!"
+      ],
+      "end": true
+     }
     }
    }
   }

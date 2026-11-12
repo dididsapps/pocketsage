@@ -6,3 +6,9 @@
 - Sur chaque question, le **niveau remplace la classe** (« 🌱 Débutant » au lieu de « GS »).
 - Mode Prononciation / Parler avec Sensei : pas de ligne de niveaux (ils ont leur propre logique).
 - Corrigé : badge « undefined » sur les questions de niveau Courant (difficulté 4-5 → affichée « Avancé »).
+
+## Parler avec Sensei (12/11/2026)
+- Conversations choisies **par niveau** (champ `niveau` dans `data/dialogues/en.json`), plus par âge ; la ligne des niveaux s'affiche aussi dans ce mode.
+- **16 conversations anglaises** (avant 4) : Débutant 5 (Bonjour Sensei, Goûter, Je me présente, Les couleurs, Les animaux) · Intermédiaire 4 (Mon week-end, À l'école, Faire les courses, Demander son chemin) · Avancé 4 (Café à Londres, Chez le médecin, Organiser un anniversaire, Réserver un hôtel) · Courant 3 (L'entretien, Donner son avis, Raconter un voyage).
+- **Voix de Sensei** : niveau Débutant = ElevenLabs (Mr Claus) ; autres niveaux = Google TTS (en-GB-Neural2-B). Phrases communes (relances) en ElevenLabs. Règle dans `gen_dialogues_mp3.py`.
+- À faire plus tard : mêmes conversations en espagnol et allemand.

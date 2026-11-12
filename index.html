@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=29">
+<link rel="stylesheet" href="css/jeux.css?v=30">
 </head>
 <body>
 
@@ -1442,9 +1442,9 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=29"></script>
-<script src="js/jeux-cerveau.js?v=29"></script>
-<script src="js/coach-voix.js?v=29"></script>
+<script src="js/jeux.js?v=30"></script>
+<script src="js/jeux-cerveau.js?v=30"></script>
+<script src="js/coach-voix.js?v=30"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -12550,12 +12550,12 @@ function langNivOfClasse(c){const i=LANG_NIVEAUX.findIndex(n=>n.classes.includes
 // Ligne des niveaux (à la place du curseur d'âge) — seulement en mode Vocabulaire
 function renderLangLevelBar(){
   const el=document.getElementById('mod-age-bar');if(!el||APP.curMod!=='langues')return;
-  if(APP.langMode&&APP.langMode!=='vocab'){el.innerHTML='';return;}
+  if(APP.langMode&&APP.langMode!=='vocab'&&APP.langMode!=='dialogue'){el.innerHTML='';return;}
   const p=P();const cur=(p&&p.langNiveau)||APP.langNiveau||'debutant';
   el.innerHTML='<div class="sport-grp lang-niv">'+LANG_NIVEAUX.map((nv,i)=>`<button class="${nv.k===cur?'sel':''}" data-k="${nv.k}">${langNivName(i)}</button>`).join('')+'</div>';
   el.querySelectorAll('button').forEach(b=>b.onclick=()=>{
     sndTap();APP.langNiveau=b.dataset.k;if(p){p.langNiveau=b.dataset.k;saveApp();}
-    renderLangLevelBar();const subs=getLangSubcats();renderTabs(subs,'langues');renderList(subs[0].d,'langues',subs[0]);
+    renderLangLevelBar();if(APP.langMode==='dialogue'){openDialogueHome();return;}const subs=getLangSubcats();renderTabs(subs,'langues');renderList(subs[0].d,'langues',subs[0]);
   });
 }
 function getLangSubcats(){
@@ -13328,8 +13328,9 @@ async function openDialogueHome(){
   el.innerHTML='<div style="text-align:center;padding:40px;color:var(--tl)">Chargement…</div>';
   const ok=await _dlgLoad(lang);
   if(!ok){el.innerHTML='<div style="text-align:center;padding:40px;color:var(--tl)">Connexion nécessaire pour charger les dialogues.</div>';return;}
-  const age=_getSliderAge();
-  const list=_DLG.data.scenarios.filter(s=>_globalShowAll||(age>=s.age_min-1&&age<=s.age_max+1));
+  // Conversations choisies par NIVEAU (comme le reste du module Langues)
+  const _p=P();const niv=(_p&&_p.langNiveau)||APP.langNiveau||'debutant';
+  const list=_DLG.data.scenarios.filter(s=>(s.niveau||'debutant')===niv);
   const scs=list.length?list:_DLG.data.scenarios;
   el.innerHTML=`
    <div style="padding:0 4px 90px">
@@ -13344,7 +13345,7 @@ async function openDialogueHome(){
   scs.forEach(s=>{
     const b=document.createElement('button');
     b.style.cssText='display:flex;align-items:center;gap:12px;text-align:left;background:var(--w);border:none;border-radius:18px;padding:14px;box-shadow:var(--sh);cursor:pointer;font-family:var(--f);color:var(--t)';
-    const ageTxt=s.age_max>=99?s.age_min+' ans et +':s.age_min+'-'+s.age_max+' ans';
+    const _ni=LANG_NIVEAUX.findIndex(n=>n.k===(s.niveau||'debutant'));const ageTxt=_ni<0?'':langNivName(_ni);
     b.innerHTML=`<span style="font-size:34px">${s.emoji}</span><span style="flex:1"><span style="display:block;font-weight:900;font-size:15px">${s.titre}</span><span style="display:block;font-size:12.5px;color:var(--tl);margin-top:2px">${s.desc}</span></span><span style="font-size:11px;font-weight:800;color:#6C63FF;white-space:nowrap">${ageTxt}</span>`;
     b.onclick=()=>{sndTap();startDialogue(s.id);};
     box.appendChild(b);

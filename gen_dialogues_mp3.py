@@ -58,31 +58,40 @@ def check(d):
 
 
 def lines(d):
-    out = set(d.get("fillers", []))
+    """Toutes les répliques de Sensei → {texte: True si niveau Débutant (voix ElevenLabs)}.
+    Règle (12/11/2026) : niveau Débutant = ElevenLabs (plus vivant pour les petits) ; autres niveaux = Google TTS.
+    Les phrases communes (relances, fillers) sont aussi entendues par les débutants → ElevenLabs."""
+    out = {}
+    def add(t, beg):
+        if t and t.strip(): out[t] = out.get(t, False) or beg
+    for t in d.get("fillers", []): add(t, True)
     g = d.get("global", {})
     for k in ("retry", "silence", "move_on", "dontknow"):
-        out.update(g.get(k, []))
+        for t in g.get(k, []): add(t, True)
     for sc in d["scenarios"]:
+        beg = sc.get("niveau", "debutant") == "debutant"
         for n in sc["nodes"].values():
-            out.update(n.get("say", []))
-            if n.get("help"): out.add(n["help"])
+            for t in n.get("say", []): add(t, beg)
+            add(n.get("help"), beg)
             for o in n.get("intents", []) + ([n["any"]] if n.get("any") else []):
-                out.update(o.get("reply", []))
-    return sorted(t for t in out if t.strip())
+                for t in o.get("reply", []): add(t, beg)
+    return out
 
 
-def voice(lang):
-    return ("el", SENSEI_EL[lang]) if lang in SENSEI_EL else ("google", SENSEI_G[lang][1])
+def voice(lang, beginner=True):
+    if beginner and lang in SENSEI_EL:
+        return ("el", SENSEI_EL[lang])
+    return ("google", SENSEI_G[lang][1])
 
 
-def fp(text, lang):
-    v = voice(lang)
+def fp(text, lang, beginner=True):
+    v = voice(lang, beginner)
     return hashlib.sha1(f"{text}|{v[0]}:{v[1]}".encode()).hexdigest()[:12]
 
 
-def tts(text, lang, out):
+def tts(text, lang, out, beginner=True):
     import requests
-    kind, vid = voice(lang)
+    kind, vid = voice(lang, beginner)
     for a in range(4):
         if kind == "el":
             r = requests.post(f"https://api.elevenlabs.io/v1/text-to-speech/{vid}",
@@ -115,7 +124,7 @@ def main():
         L = lines(d)
         amap_path = DLG_DIR / f"{lang.lower()}.audio.json"
         amap = json.loads(amap_path.read_text(encoding="utf-8")) if amap_path.exists() else {}
-        todo = [t for t in L if amap.get(t) != fp(t, lang)]
+        todo = [t for t in L if amap.get(t) != fp(t, lang, L[t])]
         print(f"{f.name} : {len(d['scenarios'])} scénarios, {len(L)} répliques, {len(todo)} MP3 à générer "
               f"({sum(len(t) for t in todo)} caractères)")
         if only_check or not todo:
@@ -128,8 +137,8 @@ def main():
                           config=Config(region_name="auto", retries={"max_attempts": 3, "mode": "adaptive"}))
         tmp = Path(tempfile.mkdtemp())
         for i, t in enumerate(todo, 1):
-            h = fp(t, lang); out = tmp / f"{h}.mp3"
-            if tts(t, lang, out):
+            h = fp(t, lang, L[t]); out = tmp / f"{h}.mp3"
+            if tts(t, lang, out, L[t]):
                 try:
                     s3.upload_file(str(out), R2_BUCKET, f"audio/dialogues/{lang.lower()}/{h}.mp3",
                                    ExtraArgs={"ContentType": "audio/mpeg", "CacheControl": "public, max-age=31536000, immutable"})
