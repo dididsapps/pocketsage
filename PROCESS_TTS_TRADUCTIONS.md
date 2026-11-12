@@ -228,3 +228,33 @@ Les boutons TTS des langues vivantes sont toujours présents, dans la langue cib
 | TTS RU/AR/ZH         | ~3×1600   | ~300 MB        |
 | Maternelle (7 langues) | 99 268  | ~4 GB          |
 | **Total R2**         | **~110 000** | **~5 GB**   |
+
+---
+
+## 11. Qualité des voix et des traductions par langue (noté le 12/11/2026)
+
+À ressortir si un parent, un testeur ou un store pose la question.
+
+### État des MP3 sur R2 (vérifié le 12/11/2026 avec `rclone check`)
+- IT, PT, UK : complets (3 995 fichiers chacun) — maternelle : complète (100 275 fichiers).
+- **AR et ZH : absents de R2 jusqu'au 12/11/2026** (générés sur le Mac mais jamais envoyés) → envoyés ce jour (3 995 + 3 996). Avant cette date, l'arabe et le chinois n'avaient aucune voix enregistrée.
+- **RU : 1 354 fichiers manquaient** (envoi interrompu) → complétés ce jour.
+- Attention : `upload_r2.py` n'envoie que fr/en/de/es/nuit/flash. Les autres langues se sont envoyées à la main avec rclone → toujours vérifier avec :
+  `rclone check audio/XX r2:pocketsage-audio/audio/XX --one-way --size-only`
+  et compléter avec `rclone copy … --ignore-existing` (n'écrase rien).
+- **Ne jamais renvoyer `audio/prono` depuis le Mac** : les voix de prononciation sont regénérées par GitHub (`gen_prono_mp3.py`) ; les copies du Mac sont d'anciennes versions (113 différences = corrections ID en double + espagnol lu par la voix FR).
+
+### Voix utilisées (Google TTS, voix natives — pas une voix française qui imite)
+| Langue | Voix | Remarque |
+|---|---|---|
+| IT | it-IT-Neural2-C | très bonne |
+| PT | pt-BR-Neural2-B | accent **brésilien** — option à décider : pt-PT (Portugal) pour le public européen |
+| RU | ru-RU-Wavenet-B | bonne |
+| UK | uk-UA-Wavenet-A | bonne, peu de voix disponibles |
+| AR | ar-XA (Neural2-B dans certains scripts, Wavenet-B dans generate_flash_tts.py) | arabe standard moderne ; **à vérifier quelle voix a réellement servi** |
+| ZH | cmn-CN (Neural2-B / Wavenet-B selon le script) | mandarin ; même vérification |
+
+### Limites connues (réponse honnête si on nous en parle)
+- Personne n'a encore écouté les MP3 AR / ZH / RU / UK : faire écouter 2-3 fichiers par langue.
+- Le risque principal est la **traduction automatique** (phrases maladroites), plus que la voix.
+- Idée : demander à un parent bêta natif de chaque langue de relire/écouter 10 minutes, et corriger les textes sources (les MP3 se regénèrent automatiquement).
