@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=23">
+<link rel="stylesheet" href="css/jeux.css?v=24">
 </head>
 <body>
 
@@ -1442,9 +1442,9 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=23"></script>
-<script src="js/jeux-cerveau.js?v=23"></script>
-<script src="js/coach-voix.js?v=23"></script>
+<script src="js/jeux.js?v=24"></script>
+<script src="js/jeux-cerveau.js?v=24"></script>
+<script src="js/coach-voix.js?v=24"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -15565,7 +15565,7 @@ function _coachAskNext(last){
   coachSay(last?COACH_TXT.sayNextLast:COACH_TXT.sayNext,()=>hfListen({next:nx, go:nx},'Crie « NEXT »',nx));
 }
 function renderCoachStep(item, stepNum, totalSteps, announced){
-  clearInterval(COACH.timer); COACH.timer=null;
+  clearInterval(COACH.timer); COACH.timer=null; COACH.stepDone=false;
   APP.curEx={item,mod:'defis',idx:stepNum,list:COACH.seq};
   const dur=item._coachDur||item.dur||30;
   let rem=dur, running=false;
@@ -15632,6 +15632,7 @@ function renderCoachStep(item, stepNum, totalSteps, announced){
         if(r){r.textContent='🎉';r.classList.remove('run');}
         if(pg)pg.style.width='100%';
         const dn=document.getElementById('df-dn');if(dn)dn.style.display='block';
+        COACH.stepDone=true;
         if(COACH.hf){const dn=document.getElementById('df-dn');if(dn)dn.click();} // mains libres : réussite notée automatiquement
         if(COACH.voice) coachSay(COACH_TXT.bravo[Math.floor(Math.random()*COACH_TXT.bravo.length)],()=>_coachAskNext(stepNum+1>=totalSteps));
       }
@@ -15646,7 +15647,8 @@ function renderCoachStep(item, stepNum, totalSteps, announced){
   document.getElementById('df-nx').onclick=()=>{
     clearInterval(COACH.timer);COACH.timer=null;try{hfStop();}catch(e){}COACH.tok=(COACH.tok||0)+1;coachStopVoice();
     const next=stepNum+1;
-    if(next<totalSteps) coachRest(next);
+    // Pause respiration seulement après un exercice terminé ; si on le passe, on va directement au suivant
+    if(next<totalSteps){ if(COACH.stepDone||COACH.seq[next]._roundStart>1) coachRest(next); else startCoachStep(next); }
     else endCoachSession();
   };
 
