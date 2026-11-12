@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=26">
+<link rel="stylesheet" href="css/jeux.css?v=28">
 </head>
 <body>
 
@@ -1442,9 +1442,9 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=26"></script>
-<script src="js/jeux-cerveau.js?v=26"></script>
-<script src="js/coach-voix.js?v=26"></script>
+<script src="js/jeux.js?v=28"></script>
+<script src="js/jeux-cerveau.js?v=28"></script>
+<script src="js/coach-voix.js?v=28"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -12536,6 +12536,28 @@ const LANG_NIVEAUX=[
   {k:'courant',     l:'🎯 Courant',      classes:['6ème','5ème','4ème','3ème','Lycée']},
 ];
 
+// Noms des niveaux dans la langue maternelle du profil (utile pour un débutant)
+const LANG_NIV_I18N={
+  FR:['Débutant','Intermédiaire','Avancé','Courant'], EN:['Beginner','Intermediate','Advanced','Fluent'],
+  ES:['Principiante','Intermedio','Avanzado','Fluido'], DE:['Anfänger','Mittelstufe','Fortgeschritten','Fließend'],
+  IT:['Principiante','Intermedio','Avanzato','Fluente'], PT:['Iniciante','Intermediário','Avançado','Fluente'],
+  AR:['مبتدئ','متوسط','متقدم','طليق'], ZH:['初级','中级','高级','流利'],
+  RU:['Начинающий','Средний','Продвинутый','Свободный'], UK:['Початківець','Середній','Просунутий','Вільний']
+};
+const LANG_NIV_ICON=['🌱','📗','🚀','🎯'];
+function langNivName(i){const n=(P()&&P().native)||'FR';const t=LANG_NIV_I18N[n]||LANG_NIV_I18N.FR;return LANG_NIV_ICON[i]+' '+t[i];}
+function langNivOfClasse(c){const i=LANG_NIVEAUX.findIndex(n=>n.classes.includes(c));return i<0?'':langNivName(i);}
+// Ligne des niveaux (à la place du curseur d'âge) — seulement en mode Vocabulaire
+function renderLangLevelBar(){
+  const el=document.getElementById('mod-age-bar');if(!el||APP.curMod!=='langues')return;
+  if(APP.langMode&&APP.langMode!=='vocab'){el.innerHTML='';return;}
+  const p=P();const cur=(p&&p.langNiveau)||APP.langNiveau||'debutant';
+  el.innerHTML='<div class="sport-grp lang-niv">'+LANG_NIVEAUX.map((nv,i)=>`<button class="${nv.k===cur?'sel':''}" data-k="${nv.k}">${langNivName(i)}</button>`).join('')+'</div>';
+  el.querySelectorAll('button').forEach(b=>b.onclick=()=>{
+    sndTap();APP.langNiveau=b.dataset.k;if(p){p.langNiveau=b.dataset.k;saveApp();}
+    renderLangLevelBar();const subs=getLangSubcats();renderTabs(subs,'langues');renderList(subs[0].d,'langues',subs[0]);
+  });
+}
 function getLangSubcats(){
   const p=P();
   const codes={EN:DATA.langues.EN,ES:DATA.langues.ES,DE:DATA.langues.DE,AR:DATA.langues.AR,IT:DATA.langues.IT,ZH:DATA.langues.ZH,PT:DATA.langues.PT,RU:DATA.langues.RU||[],UK:DATA.langues.UK||[]};
@@ -12586,33 +12608,7 @@ function getLangNiveauTabs(currentLangKey){
 }
 
 // Affiche les 4 boutons de niveau dans la barre #video-lang-tabs pour le module Langues
-function renderLangNiveauBtns(currentLangKey){
-  const el=document.getElementById('video-lang-tabs');
-  if(!el)return;
-  el.innerHTML='';
-  const p=P();
-  const curNiveau=(p&&p.langNiveau)||APP.langNiveau||'debutant';
-  LANG_NIVEAUX.forEach(nv=>{
-    const b=document.createElement('button');
-    b.className='ltab'+(nv.k===curNiveau?' on':'');
-    b.textContent=nv.l;
-    b.title=nv.classes.join(' · ');
-    b.onclick=()=>{
-      sndTap();
-      // Sauvegarder le niveau choisi
-      APP.langNiveau=nv.k;
-      if(p){p.langNiveau=nv.k;saveApp();}
-      // Mettre à jour l'UI
-      el.querySelectorAll('.ltab').forEach(x=>x.classList.remove('on'));
-      b.classList.add('on');
-      // Recharger les onglets langue avec le nouveau niveau
-      const subs=getLangSubcats();
-      renderTabs(subs,'langues');
-      renderList(subs[0].d,'langues',subs[0]);
-    };
-    el.appendChild(b);
-  });
-}
+function renderLangNiveauBtns(currentLangKey){ renderLangLevelBar(); }
 
 // Sélecteur de MODE dans le module langues : Vocabulaire | Prononciation
 // Affiché dans la barre #video-lang-tabs (repurposée)
@@ -12636,6 +12632,7 @@ function renderLangModeSelector(){
       el.querySelectorAll('.ltab').forEach(x=>x.classList.remove('on'));
       b.classList.add('on');
       if(typeof _dlgStop==='function'&&m.k!=='dialogue')_dlgStop();
+      renderLangLevelBar();
       if(m.k==='dialogue'){openDialogueHome();return;}
       if(m.k==='vocab'){
         // Remettre les boutons de niveau
@@ -12652,37 +12649,7 @@ function renderLangModeSelector(){
     };
     el.appendChild(b);
   });
-  // Si mode vocab, ajouter aussi les boutons de niveau après les modes
-  if(APP.langMode==='vocab'||!APP.langMode){
-    // Séparateur visuel
-    const sep=document.createElement('span');
-    sep.style.cssText='width:1px;height:28px;background:var(--tl);opacity:.2;margin:0 4px;align-self:center;';
-    el.appendChild(sep);
-    // Boutons de niveau inline
-    const p=P();
-    const curNiveau=(p&&p.langNiveau)||APP.langNiveau||'debutant';
-    LANG_NIVEAUX.forEach(nv=>{
-      const b=document.createElement('button');
-      b.className='ltab'+(nv.k===curNiveau?' on':'');
-      b.textContent=nv.l;
-      b.title=nv.classes.join(' · ');
-      b.onclick=()=>{
-        sndTap();
-        APP.langNiveau=nv.k;
-        if(p){p.langNiveau=nv.k;saveApp();}
-        el.querySelectorAll('.ltab').forEach(x=>x.classList.remove('on'));
-        // Remettre le bon état sur les 2 premiers boutons (modes)
-        el.querySelectorAll('.ltab').forEach((btn,i)=>{
-          if(i===0)btn.classList.add('on'); // vocab toujours actif ici
-        });
-        b.classList.add('on');
-        const subs=getLangSubcats();
-        renderTabs(subs,'langues');
-        renderList(subs[0].d,'langues',subs[0]);
-      };
-      el.appendChild(b);
-    });
-  }
+  renderLangLevelBar();
 }
 
 // ── Video language filter state ──────────────
@@ -13193,7 +13160,7 @@ async function openMod(mod){
           const ga=_getSliderAge(),grp=_globalShowAll?'all':ga<=6?5:ga<=12?9:15;
           ageBarEl.innerHTML='<p class="sport-warn">Adultes et seniors : adaptez l’intensité et demandez un avis médical en cas de doute.</p><div class="sport-grp">'+[[5,'🐣 4-6 ans'],[9,'🐸 7-12 ans'],[15,'🦅 13 ans et + · adultes'],['all','Tout']].map(([v,l])=>`<button class="${grp===v?'sel':''}" onclick="_sportGroup('${v}')">${l}</button>`).join('')+'</div>';
           window._sportGroup=v=>{if(v==='all'){_globalShowAll=true;}else{_globalShowAll=false;_globalSliderAge=+v;}openMod('defis');};
-        } else
+        } else if(mod==='langues'){ ageBarEl.innerHTML=''; setTimeout(renderLangLevelBar,0); } else
         ageBarEl.innerHTML=_globalSliderHTML(_getSliderAge(),_globalShowAll,'mod-age-sl','mod-age-all');
         const sl=document.getElementById('mod-age-sl');
         const cb=document.getElementById('mod-age-all');
@@ -13265,14 +13232,14 @@ function renderList(items,mod,tabMeta){
   if(mod==='savoirs'&&tabMeta&&tabMeta.isTables){renderTables();return;}
   const p=P();
   const _sa=_getSliderAge(),_sAll=_globalShowAll;
-  if(!_sAll) items=items.filter(i=>_ageMatch(i.age||i.classe&&_classeToAgeRange(i.classe),_sa,false));
+  if(!_sAll&&mod!=='langues') items=items.filter(i=>_ageMatch(i.age||i.classe&&_classeToAgeRange(i.classe),_sa,false));
   items.forEach((item,idx)=>{
     const done=p&&p.done&&p.done[item.id];
     const d=document.createElement('div');d.className='ecard'+(done?' done':'');
-    const diff=item.diff||1;
+    const diff=Math.min(3,Math.max(1,parseInt(item.diff)||1));
     const t2=item.enonce||item.situation||item.nom||item.titre||'Exercice';
     const short=t2.length>58?t2.slice(0,55)+'…':t2;
-    d.innerHTML=`<div class="ecl"><div class="ecn">${item.type||item.cat||''} · ${item.age?ageLbl(item.age):item.classe||''}</div><div class="ect">${short}</div><div class="ecb"><span class="bd bd${diff}">${['','Facile','Intermédiaire','Avancé'][diff]}</span></div></div><div>${done?'✅':'▶️'}</div>`;
+    d.innerHTML=`<div class="ecl"><div class="ecn">${item.type||item.cat||''} · ${mod==='langues'&&item.classe?langNivOfClasse(item.classe):item.age?ageLbl(item.age):item.classe||''}</div><div class="ect">${short}</div><div class="ecb"><span class="bd bd${diff}">${['','Facile','Intermédiaire','Avancé'][diff]}</span></div></div><div>${done?'✅':'▶️'}</div>`;
     d.onclick=()=>{sndTap();startEx(item,mod,idx,items);};
     el.appendChild(d);
   });
