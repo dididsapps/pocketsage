@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=36">
+<link rel="stylesheet" href="css/jeux.css?v=38">
 </head>
 <body>
 
@@ -1442,9 +1442,9 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=36"></script>
-<script src="js/jeux-cerveau.js?v=36"></script>
-<script src="js/coach-voix.js?v=36"></script>
+<script src="js/jeux.js?v=38"></script>
+<script src="js/jeux-cerveau.js?v=38"></script>
+<script src="js/coach-voix.js?v=38"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -17422,7 +17422,7 @@ let W3 = {
 function w3Key(c,r){ return c+','+r; }
 function w3Save(){
   try{
-    const s={coins:W3.coins,grid:W3.grid,cars:W3.cars.map(c=>({...c})),boats:W3.boats.map(b=>({...b})),anchoredBoats:W3.anchoredBoats||{},harvestTotal:W3.harvestTotal,stats:W3.stats,earnings:W3.earnings};
+    const s={life:W3.life?{faim:W3.life.faim,energie:W3.life.energie,joie:W3.life.joie,day:W3.life.day,missions:W3.life.missions,bonus:W3.life.bonus,pos:W3.life.pos,libre:W3.life.libre}:null,coins:W3.coins,grid:W3.grid,cars:W3.cars.map(c=>({...c})),boats:W3.boats.map(b=>({...b})),anchoredBoats:W3.anchoredBoats||{},harvestTotal:W3.harvestTotal,stats:W3.stats,earnings:W3.earnings};
     localStorage.setItem('psa3_world3',JSON.stringify(s));
   }catch(e){}
 }
@@ -17431,6 +17431,7 @@ function w3Load(){
     const s=JSON.parse(localStorage.getItem('psa3_world3')||'null');
     if(!s)return;
     W3.coins=s.coins||500;
+    if(s.life)W3.life=s.life;
     const rawGrid=s.grid||{};
     // Nettoyer les cases avec id inconnu (corrompu ou ancien format)
     const validIds=new Set(CATALOG.map(c=>c.id));
@@ -17746,6 +17747,7 @@ function w3Draw(){
   ctx.fillStyle=grad;
   ctx.fillRect(0,0,cw,ch);
 
+  ctx.setTransform(W3.dpr||1,0,0,W3.dpr||1,0,0);
   ctx.save();
   ctx.translate(W3.cam.x, W3.cam.y);
   ctx.scale(W3.cam.zoom, W3.cam.zoom);
@@ -18279,6 +18281,9 @@ function w3Draw(){
     }
   });
 
+  // Avatar (mode Ma vie)
+  if(W3.mode==='life'){lifeTick();lifeDraw(ctx);}
+
   // Voitures
   updateCars();
   W3.cars.forEach(car=>{
@@ -18394,14 +18399,18 @@ function buildWorldScreen(){
     <span>🏡 Ma Ville</span>
     <span id="w3-coins-hud">🪙 ${W3.coins}</span>
     <span id="w3-harvest-total">Récolté: ${W3.harvestTotal}🪙</span>
-    <button onclick="w3ShowReport()" style="background:#f4c430;border:none;border-radius:8px;padding:4px 10px;font-size:12px;cursor:pointer;">📊 Bilan</button>
+<button id="w3-mode-btn" onclick="w3ToggleLife()" style="background:#06d6a0;border:none;border-radius:8px;padding:4px 10px;font-size:12px;font-weight:800;cursor:pointer;">🚶 Ma vie</button>
+    <button onclick="w3ShowReport()" style="background:#f4c430;border:none;border-radius:8px;padding:4px 10px;font-size:12px;cursor:pointer;">📊</button>
   </div>
   <!-- Canvas -->
   <canvas id="world3-canvas" style="flex:1;display:block;touch-action:none;"></canvas>
   <!-- Toolbar bas -->
   <div id="w3-toolbar-div" style="background:rgba(20,20,40,0.9);padding:6px 8px;z-index:10;flex-shrink:0;">
+    <div id="w3-life" style="display:none"></div>
+    <div id="w3-build-tools">
     <div id="w3-cats" style="display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;"></div>
     <div id="w3-items" style="display:flex;gap:6px;overflow-x:auto;margin-top:4px;"></div>
+    </div>
     <div style="display:flex;gap:8px;margin-top:6px;align-items:center;">
       <button id="w3-harvest-btn" onclick="w3HarvestAll()" style="flex:1;padding:8px;background:#2d6a4f;color:#fff;border:none;border-radius:10px;font-size:13px;cursor:pointer;opacity:0.4;">🌾 Récolter</button>
       <button onclick="w3ResetCam()" style="padding:8px 12px;background:#333;color:#fff;border:none;border-radius:10px;font-size:12px;cursor:pointer;">🗺️</button>
@@ -18430,14 +18439,20 @@ function buildWorldScreen(){
     const hud = document.getElementById('w3-hud-div');
     const toolbarH = toolbar ? toolbar.offsetHeight : 100;
     const hudH = hud ? hud.offsetHeight : 40;
-    canvas.width = wrap ? wrap.offsetWidth : window.innerWidth;
-    canvas.height = Math.max(200, (wrap ? wrap.offsetHeight : window.innerHeight) - toolbarH - hudH);
+    const bn=document.querySelector('.bnav');const bnH=bn&&getComputedStyle(bn).display!=='none'?bn.offsetHeight:0;
+    if(wrap)wrap.style.height=(window.innerHeight-bnH)+'px';
+    const cssW=wrap ? wrap.offsetWidth : window.innerWidth;
+    const cssH=Math.max(200, (wrap ? wrap.offsetHeight : window.innerHeight) - toolbarH - hudH);
+    const dpr=Math.min(2,window.devicePixelRatio||1);W3.dpr=dpr;
+    canvas.width=Math.round(cssW*dpr);canvas.height=Math.round(cssH*dpr);
+    canvas.style.width=cssW+'px';canvas.style.height=cssH+'px';canvas.style.flex='none';
     // Recompute iso origin so grid[0][0] is top-centre
-    ISO_ORIGIN_X = canvas.width / 2;
+    ISO_ORIGIN_X = cssW / 2;
     ISO_ORIGIN_Y = 30;
     w3ResetCam();
   }
   // Delay resize until layout is painted
+  W3.resize=resize;
   setTimeout(resize, 50);
   window.addEventListener('resize', resize);
 
@@ -18480,7 +18495,7 @@ function buildWorldScreen(){
     }
     if(!drag.active||pinchActive)return;
     const dx=e.clientX-drag.sx, dy=e.clientY-drag.sy;
-    if(Math.abs(dx)+Math.abs(dy)>10)drag.moved=true;
+    if(Math.abs(dx)+Math.abs(dy)>10){drag.moved=true;W3.userPan=Date.now();}
     if(drag.moved){
       W3.cam.x=drag.camx+dx;
       W3.cam.y=drag.camy+dy;
@@ -18569,17 +18584,175 @@ function buildWorldScreen(){
 function w3ResetCam(){
   // Centre on starter area (around col=9, row=9)
   const canvas=W3.canvas;
-  const cw=canvas?canvas.width:400;
-  const ch=canvas?canvas.height:500;
+  const cw=canvas?(canvas.clientWidth||canvas.width):400;
+  const ch=canvas?(canvas.clientHeight||canvas.height):500;
   const {x:cx,y:cy}=toIso(9,9);
   W3.cam.x=cw/2-cx;
   W3.cam.y=ch/3-cy;
   W3.cam.zoom=1.5;
 }
 
+
+// ══════════════════════════════════════════════════════════════════
+// MODE « MA VIE » — l'avatar vit dans la ville (13/11/2026)
+// Toucher un bâtiment → l'avatar y va (plus court chemin) et y fait une action.
+// 3 jauges (faim, énergie, joie) qui baissent doucement → envies (bulle au-dessus).
+// 3 missions du jour proposées par Sensei (selon les bâtiments construits) → récompense.
+// ══════════════════════════════════════════════════════════════════
+const LIFE_ACT={ // id → action à l'arrivée
+  house1:{t:'Dodo 😴',e:40},house2:{t:'Dodo 😴',e:40},house3:{t:'Dodo 😴',e:45},
+  resto:{t:'Repas 🍔',f:45,c:10},icecream:{t:'Glace 🍦',f:15,j:10,c:5},popcorn:{t:'Popcorn 🍿',f:12,j:8,c:4},
+  shop:{t:'Shopping 👗',j:20,c:10},pharmacy:{t:'Vitamines 💊',e:15,c:6},hospital:{t:'Soins 🏥',f:15,e:25,j:10,c:15},
+  school:{t:'Apprendre 📚',j:5,e:-5},garage:{t:'Lavage auto 🚿',j:8,c:5},
+  park:{t:'Grande roue 🎡',j:35,c:10},carousel:{t:'Carrousel 🎠',j:25,c:6},coaster1:{t:'Grand 8 🎢',j:35,c:12},coaster2:{t:'Grand 8 🎢',j:40,c:12},coaster3:{t:'Grand 8 🎢',j:45,c:15},
+  waterpark:{t:'Toboggans 🏄',j:35,c:12},zoo:{t:'Zoo 🦁',j:30,c:10},cinema:{t:'Cinéma 🎬',j:30,c:10},casino:{t:'Jeux d\'arcade 🕹️',j:25,c:8},beach:{t:'Plage 🏖️',j:30,e:5},
+  farm:{t:'Récolte 🥕',work:1,e:-8},chicken:{t:'Ramasser les œufs 🥚',work:1,e:-6},cow:{t:'Traire les vaches 🥛',work:1,e:-8},mill:{t:'Moudre le grain ⚙️',work:1,e:-8}
+};
+const LIFE_MISSIONS=[ // missions possibles (seulement si le bâtiment existe)
+  ['resto','Va manger au restaurant 🍔'],['icecream','Achète une glace 🍦'],['park','Fais un tour de grande roue 🎡'],
+  ['farm','Récolte les légumes du potager 🥕'],['chicken','Ramasse les œufs du poulailler 🥚'],['cow','Va traire les vaches 🥛'],
+  ['school','Va apprendre à l\'école 📚'],['shop','Fais un peu de shopping 👗'],['cinema','Regarde un film au cinéma 🎬'],
+  ['zoo','Va voir les animaux du zoo 🦁'],['carousel','Fais un tour de carrousel 🎠'],['beach','Va te détendre à la plage 🏖️'],
+  ['coaster1','Ose le grand 8 🎢'],['hospital','Va faire un contrôle à l\'hôpital 🏥'],['pharmacy','Passe à la pharmacie 💊']
+];
+const LIFE_WALK=new Set(['road','parking','bridge_h','bridge_v','tree']); // cases traversables (en plus de l'herbe vide)
+function lifeToday(){const d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();}
+function lifeInit(){
+  const L=W3.life||(W3.life={});
+  ['faim','energie','joie'].forEach(k=>{if(typeof L[k]!=='number')L[k]=80;});
+  if(L.day!==lifeToday()){ // nouvelles missions chaque jour
+    L.day=lifeToday();
+    const have=new Set(Object.values(W3.grid).map(c=>c.id));
+    const pool=LIFE_MISSIONS.filter(m=>have.has(m[0])).sort(()=>Math.random()-.5);
+    L.missions=pool.slice(0,3).map(m=>({id:m[0],t:m[1],ok:false}));
+    while(L.missions.length<3){const b=['resto','park','school'][L.missions.length];L.missions.push({id:b,t:'Construis : '+((CATALOG.find(c=>c.id===b)||{}).label||b),ok:false,build:true});}
+    L.bonus=false;
+  }
+  if(!L.pos||!L.pos.col&&L.pos.col!==0){
+    const home=Object.keys(W3.grid).find(k=>/^house/.test(W3.grid[k].id));
+    const [c,r]=(home||'10,10').split(',').map(Number);L.pos={col:c,row:r+1};
+  }
+  L.path=[];L.t=0;L.lastDecay=Date.now();
+}
+function lifeWalkable(c,r,dest){
+  if(c<0||r<0||c>=GRID_W||r>=GRID_H)return false;
+  if(dest&&c===dest.col&&r===dest.row)return true;
+  const g=W3.grid[w3Key(c,r)];return !g||LIFE_WALK.has(g.id);
+}
+function lifePath(from,to){ // largeur d'abord sur la grille (4 directions)
+  const key=(c,r)=>c+','+r,q=[[from.col,from.row]],prev={[key(from.col,from.row)]:null};
+  while(q.length){const [c,r]=q.shift();if(c===to.col&&r===to.row)break;
+    for(const [dc,dr] of [[1,0],[-1,0],[0,1],[0,-1]]){const nc=c+dc,nr=r+dr,k=key(nc,nr);
+      if(k in prev||!lifeWalkable(nc,nr,to))continue;prev[k]=[c,r];q.push([nc,nr]);}
+    if(Object.keys(prev).length>4000)break;}
+  if(!(key(to.col,to.row) in prev))return null;
+  const path=[];let cur=[to.col,to.row];while(cur){path.unshift({col:cur[0],row:cur[1]});cur=prev[key(cur[0],cur[1])];}
+  return path.slice(1);
+}
+function lifeGo(col,row){
+  const L=W3.life;const g=W3.grid[w3Key(col,row)];
+  const p=lifePath(L.pos,{col,row});
+  if(!p){w3Msg('Je ne trouve pas de chemin jusque-là 🤔');return;}
+  L.path=p;L.t=0;L.target=g?{col,row,id:g.id}:null;L.idle=0;
+}
+function lifeArrive(){
+  const L=W3.life,T=L.target;L.target=null;if(!T)return;
+  const a=LIFE_ACT[T.id];if(!a){w3Msg('Tu visites : '+((CATALOG.find(c=>c.id===T.id)||{}).label||T.id));return;}
+  if(a.c&&W3.coins<a.c){w3Msg('Pas assez de 🪙 pour : '+a.t+' ('+a.c+'🪙)');return;}
+  if(a.c){W3.coins-=a.c;}
+  if(a.work){const cell=W3.grid[w3Key(T.col,T.row)];if(cell&&cell.harvest){cell.harvest=Math.ceil(cell.harvest*1.25);harvestCell(T.col,T.row);}}
+  const cl=v=>Math.max(0,Math.min(100,v));
+  if(a.f)L.faim=cl(L.faim+a.f);if(a.e)L.energie=cl(L.energie+a.e);if(a.j)L.joie=cl(L.joie+a.j);
+  const pos=toIso(L.pos.col,L.pos.row);W3.floats.push({x:pos.x,y:pos.y-30,text:a.t+(a.c?' −'+a.c+'🪙':''),life:90,dy:-0.4});
+  // missions
+  const m=(L.missions||[]).find(x=>!x.ok&&!x.build&&x.id===T.id);
+  if(m){m.ok=true;W3.coins+=20;W3.floats.push({x:pos.x,y:pos.y-50,text:'Mission réussie ! +20🪙',life:110,dy:-0.35});try{sndStar();}catch(e){}
+    if(!L.bonus&&L.missions.every(x=>x.ok)){L.bonus=true;W3.coins+=30;w3Msg('🏆 Les 3 missions du jour sont réussies ! +30🪙');}}
+  w3UpdateHUD();w3Save();lifePanel();
+}
+function lifeNeed(){const L=W3.life;if(L.faim<30)return ['faim','🍔',['resto','icecream','popcorn']];if(L.energie<30)return ['energie','😴',['house3','house2','house1','pharmacy']];if(L.joie<30)return ['joie','🎈',['park','carousel','coaster1','cinema','zoo','beach','casino','shop']];return null;}
+function lifeNearest(ids){const L=W3.life;let best=null,bd=1e9;Object.entries(W3.grid).forEach(([k,c])=>{if(!ids.includes(c.id))return;const [cc,rr]=k.split(',').map(Number);const d=Math.abs(cc-L.pos.col)+Math.abs(rr-L.pos.row);if(d<bd){bd=d;best={col:cc,row:rr};}});return best;}
+function lifeTick(){
+  const L=W3.life;if(!L)return;
+  const now=Date.now();
+  if(now-L.lastDecay>20000){ // toutes les 20 s : les jauges baissent un peu
+    const k=(now-L.lastDecay)/60000;L.faim=Math.max(0,L.faim-3*k);L.energie=Math.max(0,L.energie-1.5*k);L.joie=Math.max(0,L.joie-2*k);L.lastDecay=now;lifePanel();
+  }
+  if(L.path&&L.path.length){
+    L.t+=0.06;
+    if(L.t>=1){L.t=0;L.from=L.pos;L.pos=L.path.shift();if(!L.path.length)lifeArrive();}
+  } else if(L.libre){ // quartier libre : l'avatar choisit lui-même
+    L.idle=(L.idle||0)+1;
+    if(L.idle>240){L.idle=0;const n=lifeNeed();const t=n?lifeNearest(n[2]):null;
+      const ks=Object.keys(W3.grid).filter(k=>LIFE_ACT[W3.grid[k].id]);
+      const dest=t||(ks.length?(([c,r])=>({col:c,row:r}))(ks[Math.floor(Math.random()*ks.length)].split(',').map(Number)):null);
+      if(dest)lifeGo(dest.col,dest.row);}
+  }
+  // la caméra suit l'avatar
+  const cv=W3.canvas;if(cv&&!(W3.userPan&&Date.now()-W3.userPan<4000)){const p=lifeScreenPos();const W=(cv.clientWidth||cv.width),H=(cv.clientHeight||cv.height);
+    W3.cam.x+=((W/2-p.x*W3.cam.zoom)-W3.cam.x)*0.08;W3.cam.y+=((H*0.55-p.y*W3.cam.zoom)-W3.cam.y)*0.08;}
+}
+function lifeScreenPos(){const L=W3.life;const a=toIso(L.pos.col,L.pos.row);
+  if(L.path&&L.path.length&&L.t>0){const b=toIso(L.path[0].col,L.path[0].row);return {x:a.x+(b.x-a.x)*L.t,y:a.y+(b.y-a.y)*L.t+TILE_H/2};}
+  return {x:a.x,y:a.y+TILE_H/2};}
+function lifeAvatarEl(){
+  let av=document.getElementById('w3-av');const wrap=document.getElementById('world3-wrap');if(!wrap)return null;
+  if(!av){av=document.createElement('img');av.id='w3-av';av.alt='';av.style.cssText='position:absolute;z-index:5;pointer-events:none;display:none;width:auto';
+    let src=null;try{const p=P();if(p&&p.avatarId){if(p.avatarId==='boy1')src=IMG_AVATAR_BOY1;else{const a=PNG_AVATARS.find(x=>x.id===p.avatarId);if(a)src=_GH+a.f;}}}catch(e){}
+    if(src){av.onload=()=>{av.dataset.ok='1';};av.src=src;}wrap.appendChild(av);}
+  return av;
+}
+function lifeDraw(ctx){
+  const L=W3.life;if(!L)return;const p=lifeScreenPos();const moving=L.path&&L.path.length;
+  const bob=moving?Math.abs(Math.sin(W3.t*0.3))*3:0;
+  ctx.save();ctx.fillStyle='rgba(0,0,0,.25)';ctx.beginPath();ctx.ellipse(p.x,p.y+2,9,4,0,0,7);ctx.fill();
+  const av=document.getElementById('w3-av');
+  if(av&&av.dataset.ok){const cv=W3.canvas;const z=W3.cam.zoom;const h=Math.round(44*z);
+    av.style.height=h+'px';av.style.left=(cv.offsetLeft+W3.cam.x+p.x*z)+'px';av.style.top=(cv.offsetTop+W3.cam.y+(p.y-bob+2)*z-h)+'px';av.style.display='block';
+    av.style.transform='translateX(-50%)'+((L.path&&L.path.length&&L.path[0].col<L.pos.col)||(L.path&&L.path.length&&L.path[0].row>L.pos.row)?' scaleX(-1)':'');}
+  else{ctx.fillStyle='#000';ctx.font='26px serif';ctx.textAlign='center';ctx.fillText('🧒',p.x,p.y-12-bob);}
+  // bulle d'envie
+  const n=lifeNeed();
+  if(n&&!moving){ctx.fillStyle='#fff';ctx.strokeStyle='rgba(0,0,0,.2)';ctx.beginPath();ctx.roundRect(p.x+6,p.y-62,26,24,8);ctx.fill();ctx.stroke();
+    ctx.font='15px serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(n[1],p.x+19,p.y-50);}
+  // cible
+  if(L.target){const t=toIso(L.target.col,L.target.row);ctx.strokeStyle='rgba(255,209,102,.95)';ctx.lineWidth=2.5;ctx.setLineDash([5,3]);ctx.beginPath();
+    ctx.moveTo(t.x,t.y);ctx.lineTo(t.x+TILE_W/2,t.y+TILE_H/2);ctx.lineTo(t.x,t.y+TILE_H);ctx.lineTo(t.x-TILE_W/2,t.y+TILE_H/2);ctx.closePath();ctx.stroke();ctx.setLineDash([]);}
+  ctx.restore();
+}
+function lifeTap(col,row){
+  const L=W3.life;
+  // toucher la bulle d'envie → aller au bon endroit
+  const g=W3.grid[w3Key(col,row)];
+  if(g&&!LIFE_WALK.has(g.id)){lifeGo(col,row);return;}
+  if(lifeWalkable(col,row)){const p=lifePath(L.pos,{col,row});if(p){L.path=p;L.t=0;L.target=null;}}
+}
+function lifePanel(){
+  const el=document.getElementById('w3-life');if(!el||!W3.life)return;const L=W3.life;
+  const bar=(k,ic,lb)=>{const v=Math.round(L[k]);const col=v<30?'#e63946':v<60?'#f4a261':'#06d6a0';
+    return `<div class="lf-bar"><span>${ic} ${lb}</span><div><i style="width:${v}%;background:${col}"></i></div></div>`;};
+  const n=lifeNeed();
+  el.innerHTML=`<div class="lf-bars">${bar('faim','😋','Faim')}${bar('energie','⚡','Énergie')}${bar('joie','😊','Joie')}</div>
+    ${n?`<button class="lf-need" onclick="w3LifeNeed()">${n[1]} ${n[0]==='faim'?'J\'ai faim ! Aller manger':n[0]==='energie'?'Je suis fatigué ! Aller dormir':'Je m\'ennuie ! Aller m\'amuser'}</button>`:''}
+    <div class="lf-mis"><b>🥋 Missions de Sensei</b>${(L.missions||[]).map(m=>`<div class="${m.ok?'lf-ok':''}">${m.ok?'✅':'⬜'} ${m.t}${m.ok?'':' <em>+20🪙</em>'}</div>`).join('')}</div>
+    <label class="lf-libre"><input type="checkbox" ${L.libre?'checked':''} onchange="w3LifeLibre(this.checked)"> 🎲 Quartier libre (l'avatar choisit seul)</label>
+    <div class="lf-tip">Touche un bâtiment pour y aller.</div>`;
+}
+window.w3LifeNeed=function(){const n=lifeNeed();if(!n)return;const t=lifeNearest(n[2]);if(t)lifeGo(t.col,t.row);else w3Msg('Construis d\'abord : '+n[2].slice(0,2).map(i=>(CATALOG.find(c=>c.id===i)||{}).label||i).join(' ou '));};
+window.w3LifeLibre=function(v){W3.life.libre=!!v;w3Save();};
+window.__w3={get W3(){return W3;},go:(c,r)=>lifeGo(c,r)}; // aide aux tests
+window.w3ToggleLife=function(){
+  W3.mode=W3.mode==='life'?'build':'life';
+  const tb=document.getElementById('w3-build-tools'),lf=document.getElementById('w3-life'),bt=document.getElementById('w3-mode-btn');
+  if(W3.mode==='life'){lifeInit();lifeAvatarEl();W3.selectedTool=null;if(W3.cam.zoom<1.3)W3.cam.zoom=1.4;if(tb)tb.style.display='none';if(lf)lf.style.display='block';if(bt)bt.textContent='🏗️ Construire';lifePanel();}
+  else{if(tb)tb.style.display='';if(lf)lf.style.display='none';if(bt)bt.textContent='🚶 Ma vie';const av=document.getElementById('w3-av');if(av)av.style.display='none';}
+  if(W3.resize)setTimeout(W3.resize,30);
+  w3Save();
+};
 function w3HandleTap(px,py){
   const {col,row}=fromIso(px,py);
   if(col<0||row<0||col>=GRID_W||row>=GRID_H)return;
+  if(W3.mode==='life'){lifeTap(col,row);return;}
   const key=w3Key(col,row);
 
   // Outil gomme → effacer

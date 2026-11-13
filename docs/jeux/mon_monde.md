@@ -1,4 +1,4 @@
-# Mon Monde — conception v2 (12/11/2026, en discussion, rien codé)
+# Mon Monde — conception v2 (12/11/2026)
 
 ## 1. Visuels (demandes du 12/11)
 - Bâtiments en vrai volume 3D façon packs Kenney, **posés pile sur leur case** (pas de travers). 3-4 styles de maisons (maisonnette, maison, villa + immeuble).
@@ -43,3 +43,15 @@
 ## 6. ⚠️ Constat technique (12/11)
 - Le monde est enregistré sous une seule clé (`psa3_world3`) → **tous les profils enfants du téléphone partagent la même ville et les mêmes jetons**. À corriger : un monde par profil.
 - Aujourd'hui les gains sont déséquilibrés : l'apprentissage ne rapporte que **1 🪙 par bonne réponse d'aventure** (rien pour Flash, mini-jeux, dialogues), alors que les bâtiments produisent **toutes les 8 secondes** tant que le monde est ouvert (une maisonnette de 20 🪙 est remboursée en moins d'une minute). Voir l'économie recalibrée dans `economie.md`.
+
+## 7. ✅ Fait le 13/11/2026 (phase 1 + mode « Ma vie » sans famille)
+- Dessins Kenney posés pile sur la case (`assets/monde/*.png`, composés par script depuis les packs) : maisonnette, maison, villa (toits en pente), magasin, restaurant, pharmacie, école, cinéma, salle d'arcade, **hôpital, garage** (nouveaux), potager, poulailler, enclos vaches (animaux animés par-dessus). Panneaux lisibles (✚ pharmacie verte, ✚ hôpital rouge, 🔧, 🎬, 🕹️, 👗, 🍔, P).
+- **Parking** (nouveau), **routes** avec marquage pointillé dans le sens de la route, **voitures orientées** (taxi, police, ambulance — plus de voitures « en crabe »).
+- Casino → **Salle d'arcade 🕹️**.
+- Image nette sur écran haute densité ; la barre d'outils n'est plus cachée par la barre du bas.
+- **Mode « 🚶 Ma vie »** (bouton en haut) : l'avatar du profil vit dans la ville. Toucher un bâtiment → il y va (plus court chemin à pied, par les routes et l'herbe) et fait l'action : repas (−10 🪙, faim), dodo (énergie), manèges/cinéma/zoo (joie, payant), récolte/traite/œufs (« travailler » : récolte +25 %), soins…
+- **3 jauges** faim / énergie / joie qui baissent doucement ; sous 30 → bulle d'envie au-dessus de l'avatar + bouton « J'ai faim ! Aller manger ».
+- **3 missions de Sensei par jour** choisies parmi les bâtiments construits (+20 🪙 chacune, +30 🪙 bonus les 3) ; s'il manque des bâtiments : « Construis… ».
+- **Quartier libre** : l'avatar choisit seul où aller (en priorité selon ses envies).
+- La caméra suit l'avatar (on peut quand même déplacer la vue au doigt).
+- Reste à faire : manèges plus distinctifs et animés, ponts hauts (bateaux dessous), cultures variées (carottes, salades, tomates, arbres fruitiers), familles (5 personnages), économie recalibrée, un monde par profil.
