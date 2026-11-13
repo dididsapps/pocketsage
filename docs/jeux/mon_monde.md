@@ -54,4 +54,10 @@
 - **3 missions de Sensei par jour** choisies parmi les bâtiments construits (+20 🪙 chacune, +30 🪙 bonus les 3) ; s'il manque des bâtiments : « Construis… ».
 - **Quartier libre** : l'avatar choisit seul où aller (en priorité selon ses envies).
 - La caméra suit l'avatar (on peut quand même déplacer la vue au doigt).
-- Reste à faire : manèges plus distinctifs et animés, ponts hauts (bateaux dessous), cultures variées (carottes, salades, tomates, arbres fruitiers), familles (5 personnages), économie recalibrée, un monde par profil.
+
+## 8. ✅ Fait le 13/11/2026 (suite)
+- **Manèges animés** sur une place pavée : grande roue (nacelles qui restent droites, ampoules qui clignotent), carrousel (toit rayé qui tourne, chevaux qui montent et descendent), 3 grands 8 avec un vrai petit train qui suit les rails (8 à bosses ; ovale avec looping ; montée lente puis spirale), toboggans aquatiques (glisseurs + éclaboussures).
+- **Ponts hauts** : tablier surélevé avec rampes d'accès, piles en pierre, arche, garde-corps et lampadaire. Les bateaux passent dessous ; voitures et avatar montent dessus.
+- **Cultures variées** (Production) : salades, carottes, blé, tomates, fraises, citrouilles, pommier (+ maïs = ancien « Potager »). Elles poussent pendant le cycle de récolte et sont mûres quand le 💰 apparaît. Actions et missions « Ma vie » associées.
+- Correctif : après rechargement de la page, les revenus reprenaient seulement après un long moment (compteur de temps remis à zéro) → corrigé.
+- Reste à faire : familles (5 personnages), économie recalibrée, un monde par profil.
