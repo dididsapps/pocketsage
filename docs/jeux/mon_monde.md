@@ -66,4 +66,6 @@
 - Pose : la case touchée est mise au centre du bâtiment ; s'il manque de la place → « Il faut 3×2 cases libres ». La gomme efface tout le bâtiment ; l'avatar y entre par la case la plus proche.
 - Anciennes sauvegardes : une villa/hôpital/cinéma déjà posé prend sa nouvelle taille si les cases autour sont libres, sinon il garde son ancien dessin sur 1 case.
 - **Enclos vaches et poulaillers reliés** : les cases posées côte à côte forment un seul enclos, la clôture fait le tour du groupe (comme les routes qui se raccordent), avec une botte de foin (vaches) ou une cabane (poules) au milieu.
+- **Zoo 10×10** (1000 🪙, +150) : prairie, étang avec flamants roses, rochers, arbres, chemin de sable, clôture tout autour avec portail « ZOO » ; lions, girafes, éléphants, zèbres, flamants qui se promènent.
+- **Immeubles 3×3** (Habitat) : Immeuble 3 étages (briques, balcons, toit en pente — 300 🪙), Immeuble 10 étages (réservoir d'eau, antenne — 700 🪙), Tour moderne vitrée rectangulaire avec reflets (900 🪙), Burj Khalifa ~4× plus haut, à étages en retrait, flèche et fontaine (3000 🪙, +400).
 - Reste à faire : familles (5 personnages), économie recalibrée, un monde par profil.
