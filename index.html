@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=54">
+<link rel="stylesheet" href="css/jeux.css?v=55">
 </head>
 <body>
 
@@ -1442,11 +1442,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=54"></script>
-<script src="js/jeux-cerveau.js?v=54"></script>
-<script src="js/coach-voix.js?v=54"></script>
-<script src="js/monde-interieur.js?v=54"></script>
-<script src="js/monde-plus.js?v=54"></script>
+<script src="js/jeux.js?v=55"></script>
+<script src="js/jeux-cerveau.js?v=55"></script>
+<script src="js/coach-voix.js?v=55"></script>
+<script src="js/monde-interieur.js?v=55"></script>
+<script src="js/monde-plus.js?v=55"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -10594,19 +10594,19 @@ const _PARLE_M={
  FR:{'×':' fois ','÷':' divisé par ','≠':' différent de ','≤':' inférieur ou égal à ','≥':' supérieur ou égal à ','±':' plus ou moins ','≈':' environ ','−':' moins ','=':' égale ','+':' plus ','<':' inférieur à ','>':' supérieur à ','²':' au carré','³':' au cube','√':'racine carrée de ','%':' pour cent','km²':' kilomètres carrés','m²':' mètres carrés','cm²':' centimètres carrés','m³':' mètres cubes','cm³':' centimètres cubes','?':'combien','___':'combien'},
  EN:{'×':' times ','÷':' divided by ','≠':' is not equal to ','≤':' is less than or equal to ','≥':' is greater than or equal to ','±':' plus or minus ','≈':' about ','−':' minus ','=':' equals ','+':' plus ','<':' is less than ','>':' is greater than ','²':' squared','³':' cubed','√':'the square root of ','%':' percent','km²':' square kilometres','m²':' square metres','cm²':' square centimetres','m³':' cubic metres','cm³':' cubic centimetres','?':'what','___':'what'},
  ES:{'×':' por ','÷':' dividido entre ','≠':' distinto de ','≤':' menor o igual que ','≥':' mayor o igual que ','±':' más o menos ','≈':' aproximadamente ','−':' menos ','=':' igual a ','+':' más ','<':' menor que ','>':' mayor que ','²':' al cuadrado','³':' al cubo','√':'la raíz cuadrada de ','%':' por ciento','km²':' kilómetros cuadrados','m²':' metros cuadrados','cm²':' centímetros cuadrados','m³':' metros cúbicos','cm³':' centímetros cúbicos','?':'cuánto','___':'cuánto'}};
-const _PARLE_SYM=/[×÷≠≤≥√²³−±≈]/;
+const _PARLE_SYM=/[×÷≠≤≥√²³−±≈]|_{2,}|(?<=[\p{L}\p{N}_)])\s+-\s+(?=[\p{L}\p{N}_(])/u;
 function _ttsParle(t,lang){
   if(!t||!(_PARLE_SYM.test(t)||/\d\s*[=+<>]\s*[\d?_]/.test(t)))return t;
   const M=_PARLE_M[String(lang||'FR').slice(0,2).toUpperCase()]||_PARLE_M.FR;
   let s=t;
   s=s.replace(/(\d)\s*(km|cm|m)([²³])/g,(_,a,u,e)=>a+M[u+e]);
-  s=s.replace(/_{2,}/g,' '+M['___']+' ');
+  const _math=/\d|=/.test(s);s=s.replace(/_{2,}/g,_math?' '+M['___']+' ':' … ');
   s=s.replace(/=\s*\?/g,' '+M['='].trim()+' '+M['?']+' ?');
   s=s.replace(/√\s*\(?([\p{L}\p{N}_]+)\)?/gu,(_,x)=>M['√']+x);
   for(const k of ['×','÷','≠','≤','≥','±','≈','−','²','³'])s=s.split(k).join(M[k]);
   s=s.replace(/(?<=[\p{L}\p{N}_)])\s*=\s*/gu,M['=']);
   s=s.replace(/(?<=[\p{L}\p{N}_)²])\s*\+\s*(?=[\p{L}\p{N}_(])/gu,M['+']);
-  s=s.replace(/(?<=[\p{L}\p{N}_)²])\s+-\s+(?=[\p{L}\p{N}_(])|(?<=\d)-(?=\d)/gu,M['−']);
+  s=s.replace(/(?<=[\p{L}\p{N}_)²])\s+-\s+(?=[\p{L}\p{N}_(])/gu,M['−']);
   s=s.replace(/(?<=[\p{L}\p{N}_)])\s*<\s*(?=[\p{L}\p{N}_(])/gu,M['<']);
   s=s.replace(/(?<=[\p{L}\p{N}_)])\s*>\s*(?=[\p{L}\p{N}_(])/gu,M['>']);
   s=s.replace(/(?<=\d)\s*%/g,M['%']);

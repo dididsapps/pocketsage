@@ -3,6 +3,8 @@ Même logique que _ttsParle / _atxHash dans index.html : garder les deux synchro
 import re, unicodedata
 
 SYMB = re.compile(r'[×÷≠≤≥√²³−±≈]')
+# Textes à réenregistrer : symboles, trous « ___ » (lus « tiret bas »), soustraction « 7 - 4 » (le « - » est muet)
+REDIRE = re.compile(r'[×÷≠≤≥√²³−±≈]|_{2,}|(?<=[\w)])\s+-\s+(?=[\w(])')
 
 MOTS = {
     'FR': {'×': ' fois ', '÷': ' divisé par ', '≠': ' différent de ', '≤': ' inférieur ou égal à ', '≥': ' supérieur ou égal à ',
@@ -20,19 +22,20 @@ MOTS = {
 }
 
 def parle(t: str, lang: str = 'FR') -> str:
-    if not t or not (SYMB.search(t) or re.search(r'\d\s*[=+<>]\s*[\d?_]', t)):
+    if not t or not (REDIRE.search(t) or re.search(r'\d\s*[=+<>]\s*[\d?_]', t)):
         return t
     M = MOTS.get((lang or 'FR')[:2].upper(), MOTS['FR'])
     s = t
     s = re.sub(r'(\d)\s*(km|cm|m)([²³])', lambda m: m.group(1) + M[m.group(2) + m.group(3)], s)
-    s = re.sub(r'_{2,}', ' ' + M['___'] + ' ', s)
+    maths = bool(re.search(r'\d|=', s))
+    s = re.sub(r'_{2,}', (' ' + M['___'] + ' ') if maths else ' … ', s)   # trou : « combien » en calcul, sinon une pause
     s = re.sub(r'=\s*\?', ' ' + M['='].strip() + ' ' + M['?'] + ' ?', s)        # « = ? » -> « égale combien ? »
     s = re.sub(r'√\s*\(?([\w]+)\)?', lambda m: M['√'] + m.group(1), s)
     for k in ('×', '÷', '≠', '≤', '≥', '±', '≈', '−', '²', '³'):
         s = s.replace(k, M[k])
     s = re.sub(r'(?<=[\w)])\s*=\s*', M['='], s)
     s = re.sub(r'(?<=[\w)²])\s*\+\s*(?=[\w(])', M['+'], s)
-    s = re.sub(r'(?<=[\w)²])\s+-\s+(?=[\w(])|(?<=\d)-(?=\d)', M['−'], s)
+    s = re.sub(r'(?<=[\w)²])\s+-\s+(?=[\w(])', M['−'], s)   # « 3-8-1-20 » (code) reste tel quel
     s = re.sub(r'(?<=[\w)])\s*<\s*(?=[\w(])', M['<'], s)
     s = re.sub(r'(?<=[\w)])\s*>\s*(?=[\w(])', M['>'], s)
     s = re.sub(r'(?<=\d)\s*%', M['%'], s)
@@ -50,5 +53,6 @@ def empreinte(t: str) -> str:
 
 if __name__ == '__main__':
     for x in ["2 × 3 = ? (Attention : ≠ 2 + 3 !)", "Complète : 3 × 7 = ___", "Résous : √x = 5", "200 000 km²",
-              "Si x = 3, quelle est la valeur de 2x² - 3x + 1 ?", "10² × 10³", "12 ÷ 4 = ?", "Quel est le plus grand entier n tel que n² < 200 ?"]:
+              "Si x = 3, quelle est la valeur de 2x² - 3x + 1 ?", "10² × 10³", "12 ÷ 4 = ?", "Quel est le plus grand entier n tel que n² < 200 ?",
+              "Combien font 10 - 5 ?", "Complète : 'Je ___ à l'école.'", "Complète : ___ + 45 = 100", "Si le code de CHAT est 3-8-1-20"]:
         print(x, '→', parle(x))

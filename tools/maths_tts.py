@@ -15,7 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'tools'))
-from parle import parle, empreinte, SYMB  # noqa: E402
+from parle import parle, empreinte, REDIRE as SYMB  # noqa: E402
 
 _env = ROOT / '.env'
 if _env.exists():
