@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=51">
+<link rel="stylesheet" href="css/jeux.css?v=52">
 </head>
 <body>
 
@@ -1442,11 +1442,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=51"></script>
-<script src="js/jeux-cerveau.js?v=51"></script>
-<script src="js/coach-voix.js?v=51"></script>
-<script src="js/monde-interieur.js?v=51"></script>
-<script src="js/monde-plus.js?v=51"></script>
+<script src="js/jeux.js?v=52"></script>
+<script src="js/jeux-cerveau.js?v=52"></script>
+<script src="js/coach-voix.js?v=52"></script>
+<script src="js/monde-interieur.js?v=52"></script>
+<script src="js/monde-plus.js?v=52"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -10611,6 +10611,7 @@ function ttsSpeak(txt,lang){
 }
 
 function ttsStop(){
+  _atxTok++;
   try{_prStop();}catch(e){}
   _ttsPlaying=false;
   _ttsQueue=[];
@@ -10632,8 +10633,37 @@ function _ttsUnlock(){
   }catch(e){}
 }
 
+// ── Voix enregistrées (MP3 R2) pour tout texte affiché ─────────────────────
+// data/audio_textes.json : empreinte du texte exact → fichier MP3. Si le texte a été
+// modifié depuis l'enregistrement, l'empreinte ne correspond plus → voix du téléphone.
+let _atxP=null,_atxTok=0;const _atxBuf=new Map();
+function _atxMan(){if(!_atxP)_atxP=fetch('data/audio_textes.json').then(r=>r.ok?r.json():{}).catch(()=>({}));return _atxP;}
+setTimeout(()=>{try{_atxMan();}catch(e){}},4000);
+function _atxNorm(t){return String(t||'').normalize('NFC').toLowerCase().replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim();}
+function _atxHash(t){let a=0x811c9dc5,b=5381;for(const ch of t){const c=ch.codePointAt(0);a=Math.imul(a^c,0x01000193)>>>0;b=((Math.imul(b,33)>>>0)^c)>>>0;}return a.toString(16)+b.toString(16);}
+function _atxFind(man,txt,lang){
+  const h=_atxHash(_atxNorm(txt));const L=String(lang||'').slice(0,2).toUpperCase();
+  const order=L==='EN'?['en','fr','es']:L==='ES'?['es','fr','en']:['fr','en','es'];
+  for(const f of order){const k=man&&man[f]&&man[f][h];if(k)return f+'/'+k;}
+  return null;
+}
+function _atxPlay(key,txt,lang){
+  ttsStop();const tok=++_atxTok;_ttsPlaying=true;
+  const ac=getAC();if(!ac){ttsSpeak(txt,lang);return;}
+  const go=buf=>{if(tok!==_atxTok)return;_prStop();const src=ac.createBufferSource();src.buffer=buf;src.connect(ac.destination);
+    src.onended=()=>{if(tok===_atxTok)_ttsPlaying=false;};src.start(0);_prSrc=src;};
+  if(_atxBuf.has(key)){go(_atxBuf.get(key));return;}
+  fetch(`${AUDIO_CDN}/audio/${key}.mp3`).then(r=>{if(!r.ok)throw new Error(r.status);return r.arrayBuffer();})
+    .then(b=>ac.decodeAudioData(b)).then(buf=>{if(_atxBuf.size>40)_atxBuf.delete(_atxBuf.keys().next().value);_atxBuf.set(key,buf);go(buf);})
+    .catch(e=>{console.warn('[TTS] MP3 indisponible',key,e&&e.message);if(tok===_atxTok)ttsSpeak(txt,lang);});
+}
 function ttsRead(txt,lang){
-  console.log('ttsRead called',{txt:txt&&txt.substring(0,30),lang,id:_ttsCurrentId,cache:_audioCache[_ttsCurrentId]});
+  if(txt&&!(APP&&APP.silent)){
+    const l=lang||_detectLang(txt);const tok=++_atxTok;
+    _atxMan().then(man=>{if(tok!==_atxTok)return;const k=_atxFind(man,txt,l);
+      if(k)_atxPlay(k,txt,l);else{_ttsUnlock();ttsSpeak(txt,l);}});
+    return;
+  }
   // MP3 CDN uniquement si aucun texte explicite (auto-lecture mode voiture)
   // Si txt fourni → ttsSpeak direct (évite de jouer un MP3 obsolète)
   if(!txt&&_ttsCurrentId&&_audioCache[_ttsCurrentId]!=='miss'){
@@ -11697,7 +11727,7 @@ function toast(msg,type='info'){
   try{
     let t=document.getElementById('toast-el');
     if(!t){t=document.createElement('div');t.id='toast-el';
-      t.style.cssText='position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#2D2D44;color:#fff;padding:10px 20px;border-radius:20px;font-size:13px;font-weight:700;z-index:9999;transition:opacity .3s;max-width:320px;text-align:center';
+      t.style.cssText='position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#2D2D44;color:#fff;padding:10px 20px;border-radius:20px;font-size:13px;font-weight:700;z-index:9999;transition:opacity .3s;max-width:320px;text-align:center;pointer-events:none';
       document.body.appendChild(t);}
     t.style.background=type==='err'?'#C62828':'#2D2D44';
     t.textContent=msg;t.style.opacity='1';
