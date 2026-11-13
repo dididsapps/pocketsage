@@ -1,0 +1,27 @@
+name: Vérif voix — écoute des MP3 à risque (Whisper)
+
+# Transcrit les MP3 dont le texte contient symboles, fractions, %, unités,
+# pour vérifier ce que la voix dit vraiment. Rapport CSV en artefact.
+on:
+  workflow_dispatch:
+    inputs:
+      max:
+        description: "Nombre max de fichiers (0 = tous)"
+        default: "0"
+
+jobs:
+  verif:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install faster-whisper requests
+      - run: python3 tools/verif_voix.py --max ${{ github.event.inputs.max || 0 }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rapport-voix
+          path: rapport_voix.csv
