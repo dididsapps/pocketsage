@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=49">
+<link rel="stylesheet" href="css/jeux.css?v=50">
 </head>
 <body>
 
@@ -1442,10 +1442,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=49"></script>
-<script src="js/jeux-cerveau.js?v=49"></script>
-<script src="js/coach-voix.js?v=49"></script>
-<script src="js/monde-interieur.js?v=49"></script>
+<script src="js/jeux.js?v=50"></script>
+<script src="js/jeux-cerveau.js?v=50"></script>
+<script src="js/coach-voix.js?v=50"></script>
+<script src="js/monde-interieur.js?v=50"></script>
+<script src="js/monde-plus.js?v=50"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -17387,6 +17388,10 @@ const CATALOG = [
   { id:'resto',    label:'Restaurant 🍔', cat:'service',  cost:100, income:18,  size:1, color:'#f15bb5', emoji:'🍔' },
   { id:'hospital', label:'Hôpital 🏥',    cat:'service',  cost:300, income:45,  size:1, color:'#ffffff', emoji:'🏥' },
   { id:'supermarket',label:'Supermarché 🛒',cat:'service', cost:250, income:38,  size:6, color:'#2b9348', emoji:'🛒' },
+  { id:'bakery',   label:'Boulangerie 🥐',cat:'service',  cost:120, income:18,  size:1, color:'#e9c46a', emoji:'🥐' },
+  { id:'dairy',    label:'Laiterie 🧀',   cat:'prod',     cost:110, income:16,  size:1, color:'#90e0ef', emoji:'🧀' },
+  { id:'pizzeria', label:'Pizzeria 🍕',   cat:'service',  cost:150, income:22,  size:1, color:'#e63946', emoji:'🍕' },
+  { id:'florist',  label:'Fleuriste 💐',  cat:'service',  cost:90,  income:12,  size:1, color:'#f78fb3', emoji:'💐' },
   { id:'garage',   label:'Garage 🔧',     cat:'service',  cost:150, income:22,  size:1, color:'#adb5bd', emoji:'🔧' },
   // Loisirs
   { id:'park',      label:'Grande Roue 🎡',   cat:'loisir', cost:200, income:30,  size:2, color:'#00b4d8', emoji:'🎡' },
@@ -17412,6 +17417,8 @@ const CATALOG = [
   { id:'hotel_lagoon',  label:'Hôtel lagon (bungalows)', cat:'hotel', cost:2500,income:350,size:100,color:'#2fb5c8', emoji:'🏝️' },
   { id:'hotel_sail',    label:'Hôtel Voile',            cat:'hotel', cost:2000,income:280,size:9,  color:'#dbe4ec', emoji:'⛵' },
   { id:'hotel_atlantis',label:'Hôtel Atlantis',         cat:'hotel', cost:3500,income:480,size:25, color:'#f2c6a8', emoji:'🏨' },
+  { id:'xmas',     label:'Sapin de Noël 🎄',   cat:'nature', cost:30, income:0, size:1, color:'#2d6a4f', emoji:'🎄' },
+  { id:'lanterns', label:'Lanternes 🏮',       cat:'nature', cost:20, income:0, size:1, color:'#d62828', emoji:'🏮' },
   // Transport
   { id:'road',     label:'Route 🛣️',      cat:'infra',    cost:5,   income:0,   size:1, color:'#6b6b6b', emoji:'🛣️' },
   { id:'parking',  label:'Parking 🅿️',    cat:'infra',    cost:40,  income:6,   size:1, color:'#5f6670', emoji:'🅿️' },
@@ -17449,13 +17456,13 @@ let W3 = {
 function w3Key(c,r){ return c+','+r; }
 function w3Save(){
   try{
-    const s={life:W3.life?{faim:W3.life.faim,energie:W3.life.energie,joie:W3.life.joie,day:W3.life.day,missions:W3.life.missions,bonus:W3.life.bonus,pos:W3.life.pos,libre:W3.life.libre}:null,coins:W3.coins,grid:W3.grid,cars:W3.cars.map(c=>({...c})),boats:W3.boats.map(b=>({...b})),anchoredBoats:W3.anchoredBoats||{},harvestTotal:W3.harvestTotal,stats:W3.stats,earnings:W3.earnings};
+    const s={life:W3.life?{faim:W3.life.faim,energie:W3.life.energie,joie:W3.life.joie,day:W3.life.day,missions:W3.life.missions,bonus:W3.life.bonus,pos:W3.life.pos,libre:W3.life.libre}:null,coins:W3.coins,grid:W3.grid,cars:W3.cars.map(c=>({...c})),boats:W3.boats.map(b=>({...b})),anchoredBoats:W3.anchoredBoats||{},harvestTotal:W3.harvestTotal,stats:W3.stats,earnings:W3.earnings,extra:W3.extra||{}};
     localStorage.setItem('psa3_world3',JSON.stringify(s));
   }catch(e){}
 }
 function w3Load(){
   try{
-    const s=JSON.parse(localStorage.getItem('psa3_world3')||'null');
+    const s=JSON.parse(localStorage.getItem('psa3_world3')||'null');W3.extra=(s&&s.extra)||{};
     if(!s)return;
     W3.coins=s.coins||500;
     if(s.life)W3.life=s.life;
@@ -17659,7 +17666,7 @@ function harvestCell(col,row){
   W3.harvestTotal+=amount;
   if(!W3.earnings[cell.id])W3.earnings[cell.id]=0;
   W3.earnings[cell.id]+=amount;
-  cell.earned=(cell.earned||0)+amount;if(!cell.since)cell.since=new Date().toISOString().slice(0,10);
+  cell.earned=(cell.earned||0)+amount;try{window.w3OnHarvest&&w3OnHarvest(cell,col,row,amount);}catch(e){}if(!cell.since)cell.since=new Date().toISOString().slice(0,10);
   // Float text
   const pos=toIso(col,row);
   W3.floats.push({x:pos.x,y:pos.y-20,text:'+'+amount+'🪙',life:80,dy:-0.5});
@@ -18520,6 +18527,29 @@ function drawSilo(ctx,col,row,cell){
 }
 Object.assign(W3_DRAW,{barn:drawBarn,silo:drawSilo});
 
+// ── Petits commerces (boulangerie, laiterie, pizzeria, fleuriste) + décor de saison ──
+function drawShopSmall(ctx,col,row,cell,o){
+  const P=w3P(col,row);isoGround(ctx,P,1,1,'#d9d4cc');
+  isoBox(ctx,P,.12,.88,.15,.85,0,26,o.top,o.wl,o.wr,'rgba(0,0,0,.1)');
+  winL(ctx,P,.85,.2,.62,2,15,'#cfe8f7');winL(ctx,P,.85,.66,.82,0,14,o.door||'#6b4226');winR(ctx,P,.88,.25,.75,6,17,'#bcd9ea');
+  for(let k=0;k<6;k++){const a=.12+.76*k/6,b=.12+.76*(k+1)/6;w3Poly(ctx,[P(a,.85,18),P(b,.85,18),P(b,1.02,13),P(a,1.02,13)],k%2?'#fff':o.aw);}
+  isoBox(ctx,P,.2,.8,.8,.86,26,34,o.aw,o.aw,o.aw);faceText(ctx,P,'L',.5,.86,30,o.sign,'bold 5.5px sans-serif','#fff');
+  const t=P(.5,.5,34);ctx.font='13px serif';ctx.textAlign='center';ctx.fillText(o.em,t[0],t[1]-2);return {x:P(.5,.5,0)[0],top:t[1]-14};}
+function drawXmas(ctx,col,row){const P=w3P(col,row),b=P(.5,.5,0);ctx.fillStyle='#7f5539';ctx.fillRect(b[0]-2,b[1]-8,4,8);
+  [[30,16],[22,13],[14,10]].forEach(([h,w],i)=>{ctx.fillStyle=i%2?'#2d6a4f':'#1b4332';ctx.beginPath();ctx.moveTo(b[0],b[1]-8-h-6);ctx.lineTo(b[0]-w,b[1]-8-h+12);ctx.lineTo(b[0]+w,b[1]-8-h+12);ctx.fill();});
+  const bl=Math.floor(W3.t/15);['#ffd166','#e63946','#4cc9f0','#ffd166','#f72585','#fff'].forEach((c,i)=>{ctx.fillStyle=(i+bl)%3?c:'#ffffff88';ctx.beginPath();ctx.arc(b[0]+[-8,6,-4,9,-10,3][i],b[1]-14-[2,8,16,20,26,30][i],1.8,0,7);ctx.fill();});
+  ctx.font='9px serif';ctx.textAlign='center';ctx.fillText('⭐',b[0],b[1]-48);return {x:b[0],top:b[1]-54};}
+function drawLanterns(ctx,col,row){const P=w3P(col,row),a=P(.1,.5,24),b=P(.9,.5,24);ctx.strokeStyle='#5c3d2e';ctx.lineWidth=1.5;[P(.1,.5,0),P(.9,.5,0)].forEach(p=>{ctx.beginPath();ctx.moveTo(p[0],p[1]);ctx.lineTo(p[0],p[1]-26);ctx.stroke();});
+  ctx.beginPath();ctx.moveTo(a[0],a[1]-2);ctx.quadraticCurveTo((a[0]+b[0])/2,(a[1]+b[1])/2+6,b[0],b[1]-2);ctx.stroke();
+  for(let k=1;k<4;k++){const t=k/4,x=a[0]+(b[0]-a[0])*t,y=a[1]+(b[1]-a[1])*t+5*Math.sin(Math.PI*t)+Math.sin(W3.t*0.05+k);ctx.fillStyle='rgba(255,180,60,.35)';ctx.beginPath();ctx.arc(x,y+6,7,0,7);ctx.fill();
+    ctx.fillStyle=k%2?'#d62828':'#f77f00';ctx.beginPath();ctx.ellipse(x,y+6,4,5,0,0,7);ctx.fill();ctx.fillStyle='#ffd166';ctx.fillRect(x-2,y,4,1.5);}return {x:(a[0]+b[0])/2,top:a[1]-30};}
+Object.assign(W3_DRAW,{
+  bakery:(c,a,b,cell)=>drawShopSmall(c,a,b,cell,{top:'#f3e3c3',wl:'#f6e7c8',wr:'#e3cfa6',aw:'#c98b3a',sign:'BOULANGERIE',em:'🥐'}),
+  dairy:(c,a,b,cell)=>drawShopSmall(c,a,b,cell,{top:'#e8f6fb',wl:'#f4fbfd',wr:'#d6eef6',aw:'#3a86ff',sign:'LAITERIE',em:'🧀'}),
+  pizzeria:(c,a,b,cell)=>drawShopSmall(c,a,b,cell,{top:'#f6e3d3',wl:'#fbeee2',wr:'#e9d2bd',aw:'#2b9348',sign:'PIZZERIA',em:'🍕',door:'#7a2219'}),
+  florist:(c,a,b,cell)=>drawShopSmall(c,a,b,cell,{top:'#fde4ef',wl:'#fff0f6',wr:'#f5d5e3',aw:'#e05a9c',sign:'FLEURS',em:'💐'}),
+  xmas:drawXmas,lanterns:drawLanterns});
+
 
 function drawTile(ctx,col,row,fillColor,strokeColor){
   const {x,y}=toIso(col,row);
@@ -18989,6 +19019,7 @@ function w3Draw(){
 
   // Avatar (mode Ma vie)
   if(W3.mode==='life'){lifeTick();lifeDraw(ctx);}
+  if(window.w3Hooks)w3Hooks.draw.forEach(f=>{try{f(ctx);}catch(e){}});
 
   // Voitures
   updateCars();
@@ -19021,6 +19052,7 @@ function w3Draw(){
     ctx.globalAlpha=1;
     return f.life>0;
   });
+  if(window.w3Hooks)w3Hooks.overlay.forEach(f=>{try{f(ctx,W3.canvas);}catch(e){}});
 
   // Curseur de survol : contour blanc sur la case ciblée (uniquement si vide)
   if(W3.selectedTool && W3.selectedTool!=='eraser' && W3.hover.col>=0 && W3.hover.row>=0){
@@ -19274,7 +19306,7 @@ function w3ResetCam(){
 // 3 missions du jour proposées par Sensei (selon les bâtiments construits) → récompense.
 // ══════════════════════════════════════════════════════════════════
 const LIFE_ACT={ // id → action à l'arrivée
-  house1:{t:'Dodo 😴',e:40},house2:{t:'Dodo 😴',e:40},house3:{t:'Dodo 😴',e:45},tennis:{t:'Match de tennis 🎾',j:20,e:-10},padel:{t:'Partie de padel 🏓',j:20,e:-10},foot:{t:'Match de foot ⚽',j:25,e:-12},athletics:{t:'Course à pied 🏃',j:15,e:-12},baseball:{t:'Match de baseball ⚾',j:20,e:-10},stadium:{t:'Grand match au stade 🏟️',j:40,c:15},hotel_lagoon:{t:'Séjour au lagon 🏝️',e:50,j:30,c:25},hotel_sail:{t:'Nuit à l\'hôtel Voile ⛵',e:50,j:25,c:20},hotel_atlantis:{t:'Séjour à l\'Atlantis 🐠',e:50,j:30,c:25},apt3:{t:'Dodo 😴',e:40},tower10:{t:'Dodo 😴',e:42},tower_mod:{t:'Dodo 😴',e:45},burj:{t:'Vue du sommet 🌇',j:40,c:15},castle:{t:'Nuit au château 👑',e:50,j:15},supermarket:{t:'Courses 🛒',f:35,c:8},
+  house1:{t:'Dodo 😴',e:40},house2:{t:'Dodo 😴',e:40},house3:{t:'Dodo 😴',e:45},bakery:{t:'Un croissant tout chaud 🥐',f:25,c:3},dairy:{t:'Un verre de lait 🥛',f:15,c:2},pizzeria:{t:'Une part de pizza 🍕',f:35,c:6},florist:{t:'Sentir les fleurs 💐',j:12},tennis:{t:'Match de tennis 🎾',j:20,e:-10},padel:{t:'Partie de padel 🏓',j:20,e:-10},foot:{t:'Match de foot ⚽',j:25,e:-12},athletics:{t:'Course à pied 🏃',j:15,e:-12},baseball:{t:'Match de baseball ⚾',j:20,e:-10},stadium:{t:'Grand match au stade 🏟️',j:40,c:15},hotel_lagoon:{t:'Séjour au lagon 🏝️',e:50,j:30,c:25},hotel_sail:{t:'Nuit à l\'hôtel Voile ⛵',e:50,j:25,c:20},hotel_atlantis:{t:'Séjour à l\'Atlantis 🐠',e:50,j:30,c:25},apt3:{t:'Dodo 😴',e:40},tower10:{t:'Dodo 😴',e:42},tower_mod:{t:'Dodo 😴',e:45},burj:{t:'Vue du sommet 🌇',j:40,c:15},castle:{t:'Nuit au château 👑',e:50,j:15},supermarket:{t:'Courses 🛒',f:35,c:8},
   resto:{t:'Repas 🍔',f:45,c:10},icecream:{t:'Glace 🍦',f:15,j:10,c:5},popcorn:{t:'Popcorn 🍿',f:12,j:8,c:4},
   shop:{t:'Shopping 👗',j:20,c:10},pharmacy:{t:'Vitamines 💊',e:15,c:6},hospital:{t:'Soins 🏥',f:15,e:25,j:10,c:15},
   school:{t:'Apprendre 📚',j:5,e:-5},garage:{t:'Lavage auto 🚿',j:8,c:5},
@@ -19366,7 +19398,7 @@ function lifeTick(){
   }
   if(L.path&&L.path.length){
     L.t+=0.06;
-    if(L.t>=1){L.t=0;L.from=L.pos;L.pos=L.path.shift();if(!L.path.length)lifeArrive();}
+    if(L.t>=1){L.t=0;L.from=L.pos;L.pos=L.path.shift();try{window.w3OnStep&&w3OnStep(L.pos);}catch(e){}if(!L.path.length)lifeArrive();}
   } else if(L.libre){ // quartier libre : l'avatar choisit lui-même
     L.idle=(L.idle||0)+1;
     if(L.idle>240){L.idle=0;const n=lifeNeed();const t=n?lifeNearest(n[2]):null;
@@ -19411,6 +19443,8 @@ function lifeDraw(ctx){
 }
 function lifeTap(col,row){
   const L=W3.life;
+  if(window.w3TapPeople&&w3TapPeople(col,row))return;
+  {const gw=W3.grid[w3Key(col,row)];if(gw&&(gw.id==='river'||gw.id==='lake')&&window.w3Fish){w3Fish(col,row);return;}}
   // toucher la bulle d'envie → aller au bon endroit
   const ak=w3Anchor(w3Key(col,row)),g=W3.grid[ak];
   if(g&&!LIFE_WALK.has(g.id)){if(W3.sel===ak){w3Select(null);lifeGo(col,row,true);}else w3Select(ak);return;}
@@ -19430,7 +19464,7 @@ function lifePanel(){
 }
 window.w3LifeNeed=function(){const n=lifeNeed();if(!n)return;const t=lifeNearest(n[2]);if(t)lifeGo(t.col,t.row);else w3Msg('Construis d\'abord : '+n[2].slice(0,2).map(i=>(CATALOG.find(c=>c.id===i)||{}).label||i).join(' ou '));};
 window.w3LifeLibre=function(v){W3.life.libre=!!v;w3Save();};
-window.__w3={get W3(){return W3;},go:(c,r,m)=>lifeGo(c,r,m),iso:(c,r)=>toIso(c,r),tap:(x,y)=>w3HandleTap(x,y),save:()=>w3Save(),hud:()=>w3UpdateHUD(),msg:t=>w3Msg(t),panel:()=>lifePanel()}; // aide aux tests
+window.__w3={get W3(){return W3;},go:(c,r,m)=>lifeGo(c,r,m),iso:(c,r)=>toIso(c,r),tap:(x,y)=>w3HandleTap(x,y),save:()=>w3Save(),hud:()=>w3UpdateHUD(),msg:t=>w3Msg(t),panel:()=>lifePanel(),toIso:(c,r)=>toIso(c,r),key:(c,r)=>w3Key(c,r),walk:(c,r)=>lifeWalkable(c,r),path:(a,b)=>lifePath(a,b),catalog:CATALOG,select:k=>w3Select(k),card:()=>w3Card(),focus:k=>w3Focus(k),fp:W3_FP}; // aide aux tests
 window.w3ToggleLife=function(){
   W3.mode=W3.mode==='life'?'build':'life';
   const tb=document.getElementById('w3-build-tools'),lf=document.getElementById('w3-life'),bt=document.getElementById('w3-mode-btn');
@@ -19552,10 +19586,11 @@ function w3Card(){
    <div class="wc-l">📈 Depuis le ${w3Fmt(cell.since)} : <b>${Math.floor(cell.earned||0)}🪙</b> gagnés</div>
    ${cell.harvest>0?`<div class="wc-l">⏳ À récolter : <b>${Math.ceil(cell.harvest)}🪙</b></div>`:''}
    ${nDeco?`<div class="wc-l">🛋️ Décorée : ${nDeco} meuble${nDeco>1?'s':''} ajouté${nDeco>1?'s':''}</div>`:''}
-   <div class="wc-b">${cell.harvest>0?'<button data-a="harvest">💰 Récolter</button>':''}${inter?'<button data-a="enter" class="wc-main">🚪 Entrer</button>':''}<button data-a="go">🚶 Y aller</button>${hab?`<button data-a="home">${cell.home?'⭐ Ma maison':'☆ C’est ma maison'}</button>`:''}<button data-a="name">✏️ Nom</button></div>
+   <div class="wc-b">${cell.harvest>0?'<button data-a="harvest">💰 Récolter</button>':''}${inter?'<button data-a="enter" class="wc-main">🚪 Entrer</button>':''}<button data-a="go">🚶 Y aller</button>${hab?`<button data-a="home">${cell.home?'⭐ Ma maison':'☆ C’est ma maison'}</button>`:''}<button data-a="name">✏️ Nom</button>${window.w3CardExtra?w3CardExtra(cell,k):''}</div>
    <div class="wc-tip">${life?'Touche encore le bâtiment pour y aller':'Touche encore le bâtiment pour récolter'}</div>`;
   el.querySelectorAll('[data-a]').forEach(b=>b.onclick=e=>{e.stopPropagation();const a=b.dataset.a;
     if(a==='x'){w3Select(null);return;}
+    if(a.startsWith('plus:')){window.w3CardAction&&w3CardAction(a.slice(5),cell,k);return;}
     if(a==='harvest'){harvestCell(c,r);w3Card();return;}
     if(a==='go'||a==='enter'){if(W3.mode!=='life')w3ToggleLife();w3Select(null);lifeGo(c,r,a==='enter');return;}
     if(a==='home'){Object.values(W3.grid).forEach(x=>{if(x.home)delete x.home;});cell.home=1;w3Save();w3Card();w3Msg('⭐ C’est ta maison ! Andrew y dormira.');return;}
@@ -19631,6 +19666,7 @@ function w3HarvestAll(){
       total+=amount;
       if(!W3.earnings[cell.id])W3.earnings[cell.id]=0;
       W3.earnings[cell.id]+=amount;
+      cell.earned=(cell.earned||0)+amount;try{window.w3OnHarvest&&w3OnHarvest(cell,col,row,amount);}catch(e){}
       cell.harvest=0;
       const pos=toIso(col,row);
       W3.floats.push({x:pos.x,y:pos.y-20,text:'+'+amount+'🪙',life:60,dy:-0.7});

@@ -82,4 +82,17 @@
 - École : les élèves regardent le tableau (tableau transparent sur le mur avant, côté bas-gauche).
 - **Fiche bâtiment** : 1er toucher = surbrillance + fiche (rapport par récolte et par minute, gains depuis la construction, à récolter, meubles ajoutés) avec 💰 Récolter / 🚪 Entrer / 🚶 Y aller / ⭐ C'est ma maison / ✏️ Nom ; 2e toucher = récolter (mode Construire) ou y aller et entrer (mode Ma vie). Badges ⭐ (ma maison, Andrew y va dormir) et 🛋️ (décorée). Liste « 🏘️ Mes bâtiments » dans le 📊 avec bouton 👁️ Voir. Compteur de gains par bâtiment à partir du 13/11/2026.
 - **Intérieurs de luxe** : Villa (blanc/noir/or, baies vitrées, piano, piscine intérieure, palmier), Suite royale des hôtels Voile/Burj (marbre noir veiné d'or, velours, lustres en cristal, vue mer), Palais des mers de l'Atlantis (baroque : papier peint damassé, damier, colonnes, cheminée, tableaux, miroir doré, **aquarium géant animé**), Château (baroque bleu royal, parquet en chevrons, cheminée, bibliothèques dorées ; décorable), Bungalow du lagon (teck, rotin, baies sur le lagon, **plancher de verre avec poissons**). Styles de matières : or, blanc, noir, velours, royal, rotin (recoloration des modèles 3D).
-- Reste à faire : planches des autres avatars, étages pour immeubles/hôtels, familles, économie recalibrée, un monde par profil.
+
+## 11. ✅ Jeux dans la ville (13/11/2026) — `js/monde-plus.js`
+- Boutons sur la carte (à droite) : 📋 Commandes · 📖 Album · 👨‍👩‍👧 Famille · 🐾 Animal · 📸 Photo.
+- **Stock** : chaque récolte de champ/enclos donne des produits (🌽🌾🥕🍅🥬🍓🎃🍎🥛🥚).
+- **Commandes à livrer** (style Hay Day) : 3 clients, livrer puis répondre à « Combien vaut la commande ? » (≥7 ans : prix × quantités ; <7 ans : nombre d'objets) → bonus.
+- **Fabrication** (fiche du bâtiment → 🏭) : moulin (farine), boulangerie (pain, croissant, gâteau), laiterie (beurre, fromage), pizzeria (pizza), glacier (glace), popcorn. Minuteurs de 20 à 60 s, ⏳/✅ au-dessus du bâtiment.
+- **Nouveaux commerces** : Boulangerie, Laiterie, Pizzeria, Fleuriste ; décor de saison : Sapin de Noël, Lanternes.
+- **Ateliers-métiers** (fiche → 🎯 Travailler, salaire) : Pizzaïolo (pizza vue de dessus, compter les garnitures), Cuisinier (burger dans l'ordre), Pâtissier (bougies = âge du client), Glacier (boules), Fleuriste (bouquet), Caissier (rendre la monnaie). Difficulté selon l'âge, bouton 🔊 pour écouter la commande.
+- **Album** : pêche (toucher l'eau en Ma vie, tirer quand ça mord), insectes et fleurs trouvés en marchant dans l'herbe ; noms en 5 langues avec 🔊 ; onglet 📸 Photos (6 dernières).
+- **Saisons / météo / jour-nuit** : heure réelle (soir orangé, nuit bleutée), pluie ou neige du jour (neige en hiver), sol légèrement blanchi en hiver.
+- **Animal** : chien ou chat nommé, suit Andrew, à nourrir/caresser/jouer ; 🦴 quand il a faim.
+- **Famille** (5 max) : rôle + prénom + image d'avatar ; ils se promènent autour de la maison ⭐ ; toucher = câlin / bonjour / aider.
+- **Niveaux** : XP comptée en silence, interrupteur `LEVELS_ON=false` (à activer avant TestFlight).
+- Reste à faire : planches des autres avatars, étages pour immeubles/hôtels, économie recalibrée, un monde par profil, renommer les lieux réels avant les stores.
