@@ -82,7 +82,7 @@ function ui(){
   window.addEventListener('resize',resize);
   bars();
 }
-function resize(){if(!ST||!ST.cv)return;const cv=ST.cv,dpr=Math.min(2,window.devicePixelRatio||1),w=cv.clientWidth,h=cv.clientHeight;cv.width=w*dpr;cv.height=h*dpr;ST.dpr=dpr;}
+function resize(){if(!ST||!ST.cv)return;const cv=ST.cv,dpr=Math.min(2,window.devicePixelRatio||1),w=cv.clientWidth,h=cv.clientHeight;cv.width=Math.round(w*dpr);cv.height=Math.round(h*dpr);ST.dpr=dpr;}
 function bounds(u0,v0,u1,v1){const pts=[P(u0,v0,WALL),P(u1,v0,WALL),P(u0,v1,WALL),P(u1,v1,0),P(u0,v1,0),P(u1,v0,0)];
   return [Math.min(...pts.map(p=>p[0])),Math.min(...pts.map(p=>p[1])),Math.max(...pts.map(p=>p[0])),Math.max(...pts.map(p=>p[1]))];}
 function frame(b,maxZ){const cv=ST.cv,w=cv.clientWidth,h=cv.clientHeight;const z=Math.max(.6,Math.min(maxZ||2.4,Math.min((w-24)/(b[2]-b[0]),(h-24)/(b[3]-b[1]))));
@@ -175,6 +175,9 @@ function update(){
 function floorCol(L,c,r){let t='bois';(L.sols||[]).forEach(([u0,v0,u1,v1,k])=>{if(c>=u0&&c<u1&&r>=v0&&r<v1)t=k;});const s=SOLS[t]||SOLS.bois;return {t,col:s[(c+r)%2]};}
 function draw(){
   const cv=ST.cv,c=cv.getContext('2d'),S=ST.S,L=S.L,dpr=ST.dpr||1;
+  // Le panneau Déco / la bulle d'aide changent la hauteur du dessin sans « resize » de la fenêtre :
+  // sans ça l'image est écrasée et le doigt ne tombe plus sur la bonne case
+  {const d=Math.min(2,window.devicePixelRatio||1);if(cv.width!==Math.round(cv.clientWidth*d)||cv.height!==Math.round(cv.clientHeight*d))resize();}
   c.setTransform(1,0,0,1,0,0);c.fillStyle='#1d2433';c.fillRect(0,0,cv.width,cv.height);
   c.setTransform(dpr*ST.cam.z,0,0,dpr*ST.cam.z,dpr*ST.cam.x,dpr*ST.cam.y);
   // sol
