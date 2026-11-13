@@ -60,4 +60,10 @@
 - **Ponts hauts** : tablier surélevé avec rampes d'accès, piles en pierre, arche, garde-corps et lampadaire. Les bateaux passent dessous ; voitures et avatar montent dessus.
 - **Cultures variées** (Production) : salades, carottes, blé, tomates, fraises, citrouilles, pommier (+ maïs = ancien « Potager »). Elles poussent pendant le cycle de récolte et sont mûres quand le 💰 apparaît. Actions et missions « Ma vie » associées.
 - Correctif : après rechargement de la page, les revenus reprenaient seulement après un long moment (compteur de temps remis à zéro) → corrigé.
+
+## 9. ✅ Fait le 13/11/2026 (grands bâtiments + enclos)
+- **Bâtiments sur plusieurs cases** (vraiment occupées, effet 3D droit) : Château 2×2 (nouveau, 500 🪙, +75), Villa californienne 2×1 (toits plats, baies vitrées, piscine, palmiers), Hôpital 3×2 (héliport, auvent, ambulance), Cinéma 3×2 (marquise lumineuse, affiches, enseigne verticale, projecteurs), Supermarché 3×2 (nouveau, auvent rayé, caddies).
+- Pose : la case touchée est mise au centre du bâtiment ; s'il manque de la place → « Il faut 3×2 cases libres ». La gomme efface tout le bâtiment ; l'avatar y entre par la case la plus proche.
+- Anciennes sauvegardes : une villa/hôpital/cinéma déjà posé prend sa nouvelle taille si les cases autour sont libres, sinon il garde son ancien dessin sur 1 case.
+- **Enclos vaches et poulaillers reliés** : les cases posées côte à côte forment un seul enclos, la clôture fait le tour du groupe (comme les routes qui se raccordent), avec une botte de foin (vaches) ou une cabane (poules) au milieu.
 - Reste à faire : familles (5 personnages), économie recalibrée, un monde par profil.
