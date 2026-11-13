@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=43">
+<link rel="stylesheet" href="css/jeux.css?v=44">
 </head>
 <body>
 
@@ -1442,9 +1442,9 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=43"></script>
-<script src="js/jeux-cerveau.js?v=43"></script>
-<script src="js/coach-voix.js?v=43"></script>
+<script src="js/jeux.js?v=44"></script>
+<script src="js/jeux-cerveau.js?v=44"></script>
+<script src="js/coach-voix.js?v=44"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -17561,7 +17561,7 @@ function updateCars(){
 // Une seule source de vérité : getWaterCells + tickBoats + renderBoats
 function getWaterCells(){
   return Object.entries(W3.grid)
-    .filter(([k,v])=>{if(v.id==='river'||v.id==='lake')return true;if(!W3_BRIDGE(v.id))return false;const [c,r]=k.split(',').map(Number);return w3NearWater(c,r);})
+    .filter(([k,v])=>{if(v.id==='river'||v.id==='lake')return true;if(!W3_BRIDGE(v.id))return false;if(v.under)return true;const [c,r]=k.split(',').map(Number);return w3NearWater(c,r);})
     .map(([k,v])=>{ const [c,r]=k.split(',').map(Number); return {col:c,row:r}; });
 }
 
@@ -18897,7 +18897,7 @@ function w3Draw(){
   // 1) sols plats (routes, eau ; eau sous les ponts)  2) bateaux  3) tout le reste (ponts hauts, bâtiments…) par profondeur
   const W3_FLAT=new Set(['road','parking','river','lake']);
   sorted.forEach(e=>{if(W3_FLAT.has(e[1].id))drawCell(e);
-    else if(W3_BRIDGE(e[1].id)){const [c,r]=e[0].split(',').map(Number);if(w3NearWater(c,r))drawTile(ctx,c,r,'rgba(72,202,228,.95)','#0077b6');}});
+    else if(W3_BRIDGE(e[1].id)){const [c,r]=e[0].split(',').map(Number);if(e[1].under||w3NearWater(c,r))drawTile(ctx,c,r,'rgba(72,202,228,.95)','#0077b6');}});
   // Bateaux sur l'eau — logique dans tickBoats(), ici rendu pur
   tickBoats();
   W3.boats.forEach(boat=>{
@@ -19387,6 +19387,7 @@ function w3HandleTap(px,py){
       const refund=catDef?Math.floor(catDef.cost*0.5):0;
       if(refund>0){W3.coins+=refund;}
       w3RemoveItem(key);
+      if(cell.under)W3.grid[key]={id:cell.under,anim:1,harvest:0}; // l'eau revient sous un pont effacé
       if(W3.stats[cell.id])W3.stats[cell.id]=Math.max(0,W3.stats[cell.id]-1);
       const pos=toIso(col,row);
       W3.floats.push({x:pos.x,y:pos.y-20,text:refund>0?'+'+refund+'🪙 (remb.)':'Effacé',life:60,dy:-0.5});
@@ -19406,6 +19407,18 @@ function w3HandleTap(px,py){
       if(!an){w3Msg('Il faut '+f[0]+'×'+f[1]+' cases libres ('+(f[0]*f[1])+' cases) ! 📐');return;}
       if(W3.coins<cat.cost){w3Msg('Pas assez de 🪙 ! ('+cat.cost+' requis)');return;}
       W3.coins-=cat.cost;placeItem(an[0],an[1],cat.id);w3Claim(an[0],an[1],cat.id);w3UpdateHUD();w3Save();return;
+    }
+    // Ponts : se posent SUR l'eau ; la case touchée + toute la largeur d'eau dans le sens du pont (8 cases max)
+    if(W3_BRIDGE(cat.id)){
+      const isW=g=>!!(g&&(g.id==='river'||g.id==='lake'));
+      if(!isW(W3.grid[key])){w3Msg('Touche l\'eau 🌊 : le pont se pose au-dessus de la rivière');return;}
+      const [dc,dr]=cat.id==='bridge_h'?[1,0]:[0,1],cells=[[col,row]];
+      for(const sg of [1,-1]){let c=col+dc*sg,r=row+dr*sg;while(cells.length<8&&isW(W3.grid[w3Key(c,r)])){cells.push([c,r]);c+=dc*sg;r+=dr*sg;}}
+      const cost=cat.cost*cells.length;
+      if(W3.coins<cost){w3Msg('Pas assez de 🪙 ! ('+cost+' requis pour '+cells.length+' cases)');return;}
+      W3.coins-=cost;
+      cells.forEach(([c,r])=>{const k=w3Key(c,r),under=W3.grid[k].id;placeItem(c,r,cat.id);W3.grid[k].under=under;});
+      w3Msg('🌉 Pont de '+cells.length+' case'+(cells.length>1?'s':'')+' posé ('+cost+' 🪙)');w3UpdateHUD();w3Save();return;
     }
     const existing=W3.grid[key];
     // Les bateaux peuvent être posés sur une case eau (river/lake)
