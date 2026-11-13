@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=34">
+<link rel="stylesheet" href="css/jeux.css?v=35">
 </head>
 <body>
 
@@ -1442,9 +1442,9 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=34"></script>
-<script src="js/jeux-cerveau.js?v=34"></script>
-<script src="js/coach-voix.js?v=34"></script>
+<script src="js/jeux.js?v=35"></script>
+<script src="js/jeux-cerveau.js?v=35"></script>
+<script src="js/coach-voix.js?v=35"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -12515,7 +12515,7 @@ function buildHome(){try{applyLang();}catch(e){}
             else if(m.nav==='videos')openMod('recompenses');
             else if(m.nav==='ateliers')openAteliers();
             else if(m.nav==='defis')openMod('defis');
-            else if(m.nav==='maths'){(APP.tabKey=APP.tabKey||{}).savoirs='tables';openMod('savoirs');}  // raccourci : Sciences, onglet Tables
+            else if(m.nav==='maths'){(APP.tabKey=APP.tabKey||{}).savoirs='maths';openMod('savoirs');}  // raccourci : Sciences, onglet Maths
             else openMod(m.nav==='savoirs'?'savoirs':m.nav==='langues'?'langues':'logique');
           }catch(e){console.error('hmod nav error:',e);toast('Erreur: '+e.message,'err');}
         };
