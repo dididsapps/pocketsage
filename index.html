@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=48">
+<link rel="stylesheet" href="css/jeux.css?v=49">
 </head>
 <body>
 
@@ -1442,10 +1442,10 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=48"></script>
-<script src="js/jeux-cerveau.js?v=48"></script>
-<script src="js/coach-voix.js?v=48"></script>
-<script src="js/monde-interieur.js?v=48"></script>
+<script src="js/jeux.js?v=49"></script>
+<script src="js/jeux-cerveau.js?v=49"></script>
+<script src="js/coach-voix.js?v=49"></script>
+<script src="js/monde-interieur.js?v=49"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -17375,6 +17375,8 @@ const CATALOG = [
   { id:'strawberry',label:'Fraises 🍓',   cat:'prod',     cost:50,  income:12,  size:1, color:'#d00000', emoji:'🍓' },
   { id:'pumpkin',  label:'Citrouilles 🎃',cat:'prod',     cost:60,  income:14,  size:1, color:'#f48c06', emoji:'🎃' },
   { id:'orchard',  label:'Pommier 🍎',    cat:'prod',     cost:90,  income:20,  size:1, color:'#6a994e', emoji:'🍎' },
+  { id:'barn',     label:'Grange',        cat:'prod',     cost:120, income:20,  size:4, color:'#b23a2e', emoji:'🛖' },
+  { id:'silo',     label:'Silo',          cat:'prod',     cost:70,  income:10,  size:1, color:'#c0c6cc', emoji:'🛢️' },
   { id:'mill',     label:'Moulin 💨',     cat:'prod',     cost:60,  income:14,  size:1, color:'#b5885c', emoji:'⚙️' },
   { id:'cow',      label:'Enclos vaches', cat:'prod',     cost:80,  income:18,  size:2, color:'#d4a96a', emoji:'🐄' },
   { id:'chicken',  label:'Poulailler 🐔', cat:'prod',     cost:35,  income:8,   size:1, color:'#e8c07a', emoji:'🐔' },
@@ -18476,6 +18478,48 @@ function drawAthletics(ctx,col,row,cell){
 }
 Object.assign(W3_DRAW,{tennis:drawTennis,padel:drawPadel,foot:drawFoot,stadium:drawStadium,baseball:drawBaseball,athletics:drawAthletics});
 
+// ── Ferme : grange rouge 2×2 (toit à deux pentes cassées, grenier à foin) + silo ──
+Object.assign(W3_FP,{barn:[2,2]});
+function drawBarn(ctx,col,row,cell){
+  if(!cell.fp)return w3Small(ctx,col,row,cell);
+  const P=w3P(col,row),R='#b23a2e',RL='#c4473a',RD='#8f2c22',W='#fbf6ee';
+  isoGround(ctx,P,2,2,'#c9a66b');
+  // bottes de foin et sacs devant
+  isoBox(ctx,P,1.55,1.95,1.55,1.85,0,8,'#f4d58d','#e9c46a','#c9a227');isoBox(ctx,P,1.6,1.9,1.6,1.8,8,14,'#f4d58d','#e9c46a','#c9a227');
+  isoBox(ctx,P,.15,1.55,.2,1.5,0,30,null,RL,RD);
+  // planches verticales
+  ctx.strokeStyle='rgba(0,0,0,.14)';ctx.lineWidth=.8;ctx.beginPath();
+  for(let u=.25;u<1.55;u+=.12){const a=P(u,1.5,0),b=P(u,1.5,30);ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);}
+  for(let v=.3;v<1.5;v+=.12){const a=P(1.55,v,0),b=P(1.55,v,30);ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);}ctx.stroke();
+  // grande porte avec croix blanche (face avant gauche)
+  const d0=.55,d1=1.15;winL(ctx,P,1.5,d0,d1,0,22,'#7a2219');
+  ctx.strokeStyle=W;ctx.lineWidth=2;ctx.beginPath();[[d0,0,d1,22],[d0,22,d1,0]].forEach(([a,z0,b,z1])=>{const p=P(a,1.5,z0),q=P(b,1.5,z1);ctx.moveTo(p[0],p[1]);ctx.lineTo(q[0],q[1]);});
+  [[d0,0,d0,22],[d1,0,d1,22],[d0,22,d1,22],[(d0+d1)/2,0,(d0+d1)/2,22]].forEach(([a,z0,b,z1])=>{const p=P(a,1.5,z0),q=P(b,1.5,z1);ctx.moveTo(p[0],p[1]);ctx.lineTo(q[0],q[1]);});ctx.stroke();
+  // fenêtre du grenier sur le pignon (face droite) + encadrements blancs
+  winR(ctx,P,1.55,.7,1.0,18,27,'#5a1c15');
+  ctx.strokeStyle=W;ctx.lineWidth=1.6;ctx.beginPath();[[.15,1.5,0,.15,1.5,30],[1.55,1.5,0,1.55,1.5,30],[1.55,.2,0,1.55,.2,30]].forEach(([a,b,z0,c,d,z1])=>{const p=P(a,b,z0),q=P(c,d,z1);ctx.moveTo(p[0],p[1]);ctx.lineTo(q[0],q[1]);});ctx.stroke();
+  // toit « mansardé » (deux pentes de chaque côté), crête le long des colonnes
+  const z=30,v0=.12,v1=1.58,vm=.85;
+  w3Poly(ctx,[P(.08,v0,z),P(1.62,v0,z),P(1.62,.45,z+12),P(.08,.45,z+12)],'#4a4e57');
+  w3Poly(ctx,[P(.08,.45,z+12),P(1.62,.45,z+12),P(1.62,vm,z+19),P(.08,vm,z+19)],'#3d4048');
+  w3Poly(ctx,[P(.08,v1,z),P(1.62,v1,z),P(1.62,1.25,z+12),P(.08,1.25,z+12)],'#5c616b','rgba(0,0,0,.2)');
+  w3Poly(ctx,[P(.08,1.25,z+12),P(1.62,1.25,z+12),P(1.62,vm,z+19),P(.08,vm,z+19)],'#686e79','rgba(0,0,0,.2)');
+  // pignon (face droite, sous le toit)
+  w3Poly(ctx,[P(1.55,.2,z),P(1.55,1.5,z),P(1.55,1.25,z+12),P(1.55,vm,z+19),P(1.55,.45,z+12)],RD);
+  const g=P(1.55,vm,z+8);ctx.fillStyle='#f4d58d';ctx.beginPath();ctx.moveTo(g[0]-5,g[1]+3);ctx.lineTo(g[0]+5,g[1]-2);ctx.lineTo(g[0]+5,g[1]+6);ctx.lineTo(g[0]-5,g[1]+11);ctx.fill();
+  // girouette
+  const t=P(.8,vm,z+19);ctx.strokeStyle='#333';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(t[0],t[1]);ctx.lineTo(t[0],t[1]-12);ctx.stroke();ctx.font='9px serif';ctx.textAlign='center';ctx.fillText('🐓',t[0]+Math.sin(W3.t*0.03)*1.5,t[1]-14);
+  return {x:P(1,1,0)[0],top:t[1]-26};
+}
+function drawSilo(ctx,col,row,cell){
+  const P=w3P(col,row);isoGround(ctx,P,1,1,'#c9a66b');
+  const top=isoTower(ctx,P,.5,.5,.3,0,58,'#e9eef2','#9aa5b1',null,0);
+  ctx.strokeStyle='rgba(0,0,0,.12)';ctx.lineWidth=1;for(let z=8;z<58;z+=10){const a=P(.5,.5,z),rx=.3*W3_K;ctx.beginPath();ctx.ellipse(a[0],a[1],rx,rx/2,0,0,Math.PI);ctx.stroke();}
+  const b=P(.5,.5,58),rx=.3*W3_K;ctx.fillStyle='#b23a2e';ctx.beginPath();ctx.moveTo(b[0]-rx,b[1]);ctx.quadraticCurveTo(b[0],b[1]-26,b[0]+rx,b[1]);ctx.ellipse(b[0],b[1],rx,rx/2,0,0,Math.PI);ctx.fill();
+  return {x:b[0],top:b[1]-30};
+}
+Object.assign(W3_DRAW,{barn:drawBarn,silo:drawSilo});
+
 
 function drawTile(ctx,col,row,fillColor,strokeColor){
   const {x,y}=toIso(col,row);
@@ -19236,7 +19280,7 @@ const LIFE_ACT={ // id → action à l'arrivée
   school:{t:'Apprendre 📚',j:5,e:-5},garage:{t:'Lavage auto 🚿',j:8,c:5},
   park:{t:'Grande roue 🎡',j:35,c:10},carousel:{t:'Carrousel 🎠',j:25,c:6},coaster1:{t:'Grand 8 🎢',j:35,c:12},coaster2:{t:'Grand 8 🎢',j:40,c:12},coaster3:{t:'Grand 8 🎢',j:45,c:15},
   waterpark:{t:'Toboggans 🏄',j:35,c:12},zoo:{t:'Zoo 🦁',j:30,c:10},cinema:{t:'Cinéma 🎬',j:30,c:10},casino:{t:'Jeux d\'arcade 🕹️',j:25,c:8},beach:{t:'Plage 🏖️',j:30,e:5},
-  farm:{t:'Récolte du maïs 🌽',work:1,e:-8},salad:{t:'Cueillette 🥬',work:1,e:-5},carrot:{t:'Arracher les carottes 🥕',work:1,e:-6},wheat:{t:'Moisson 🌾',work:1,e:-8},tomato:{t:'Cueillette 🍅',work:1,e:-6},strawberry:{t:'Cueillette 🍓',work:1,f:5,e:-5},pumpkin:{t:'Récolte 🎃',work:1,e:-8},orchard:{t:'Cueillir des pommes 🍎',work:1,f:5,e:-6},chicken:{t:'Ramasser les œufs 🥚',work:1,e:-6},cow:{t:'Traire les vaches 🥛',work:1,e:-8},mill:{t:'Moudre le grain ⚙️',work:1,e:-8}
+  farm:{t:'Récolte du maïs 🌽',work:1,e:-8},barn:{t:'Ranger le foin dans la grange 🌾',work:1,e:-8},silo:{t:'Remplir le silo 🌽',work:1,e:-5},salad:{t:'Cueillette 🥬',work:1,e:-5},carrot:{t:'Arracher les carottes 🥕',work:1,e:-6},wheat:{t:'Moisson 🌾',work:1,e:-8},tomato:{t:'Cueillette 🍅',work:1,e:-6},strawberry:{t:'Cueillette 🍓',work:1,f:5,e:-5},pumpkin:{t:'Récolte 🎃',work:1,e:-8},orchard:{t:'Cueillir des pommes 🍎',work:1,f:5,e:-6},chicken:{t:'Ramasser les œufs 🥚',work:1,e:-6},cow:{t:'Traire les vaches 🥛',work:1,e:-8},mill:{t:'Moudre le grain ⚙️',work:1,e:-8}
 };
 const LIFE_MISSIONS=[ // missions possibles (seulement si le bâtiment existe)
   ['resto','Va manger au restaurant 🍔'],['icecream','Achète une glace 🍦'],['park','Fais un tour de grande roue 🎡'],
