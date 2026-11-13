@@ -77,4 +77,7 @@
 - Plans + actions : `data/interieurs.json` (généré par `layouts.py`). Chaque meuble peut avoir une action (faim/énergie/joie/pièces, pose, durée). Le bureau et les pupitres proposent d'ouvrir une activité (Maths, Sciences, Langues, Politesse).
 - Avatar Andrew : planches ChatGPT découpées (fond retiré, pieds alignés) → `assets/interieur/andrew_walk_front|walk_back|poses.webp`, 4 directions par miroir, poses assis/dodo/manger/coucou/saut. Utilisé aussi dans la ville. Les autres avatars : image fixe en attendant leurs planches.
 - Moteur : `js/monde-interieur.js`.
-- Reste à faire : planches des autres avatars, mode déco (acheter/placer ses meubles), étages pour immeubles/hôtels, familles, économie recalibrée, un monde par profil.
+- **Mode Déco** (maison) : bouton 🛋️ Déco → catalogue (Salon, Cuisine, Chambre, Salle de bain ; ~50 meubles), 5 couleurs pour canapés/fauteuils/lits/tapis, poser au sol ou SUR un meuble (télé sur le meuble TV, ordinateur sur le bureau, lampe sur la table de nuit…), ↻ tourner, ✋ déplacer, 🗑️ vendre (moitié du prix). La déco est gardée par maison (dans la sauvegarde de la ville).
+- Toucher un bâtiment : en mode 🏗️ Construire = ramasser l'argent ; en mode 🚶 Ma vie = Andrew y va et entre (l'argent est ramassé automatiquement en entrant).
+- École : les élèves regardent le tableau (tableau transparent sur le mur avant, côté bas-gauche).
+- Reste à faire : planches des autres avatars, étages pour immeubles/hôtels, familles, économie recalibrée, un monde par profil.

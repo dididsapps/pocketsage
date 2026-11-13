@@ -2,6 +2,7 @@
 "interieurs": {
 "maison": {
 "nom": "Ma maison",
+"deco": 1,
 "w": 8,
 "h": 7,
 "mur": "#f4efe6",
@@ -99,8 +100,21 @@
 "flat": 1
 },
 {
-"m": "loungeDesignSofa",
+"m": "loungeSofa",
 "c": 1,
+"r": 0,
+"rot": 0,
+"act": {
+"t": "Se détendre sur le canapé 🛋️",
+"j": 15,
+"e": 5,
+"pose": "sit",
+"dur": 3
+}
+},
+{
+"m": "loungeSofa",
+"c": 2,
 "r": 0,
 "rot": 0,
 "act": {
@@ -1545,8 +1559,21 @@
 "flat": 1
 },
 {
-"m": "loungeDesignSofa",
+"m": "loungeSofa~bleu",
 "c": 1,
+"r": 5,
+"rot": 2,
+"act": {
+"t": "Se détendre sur le canapé 🛋️",
+"j": 15,
+"e": 5,
+"pose": "sit",
+"dur": 3
+}
+},
+{
+"m": "loungeSofa~bleu",
+"c": 2,
 "r": 5,
 "rot": 2,
 "act": {
@@ -1690,9 +1717,12 @@
 "murHaut": "#f4a261",
 "porte": [
 0,
-5
+1
 ],
-"tableau": 1,
+"tableauAvant": [
+2,
+6
+],
 "sols": [
 [
 0,
@@ -1712,10 +1742,140 @@
 ],
 "items": [
 {
-"m": "desk",
-"c": 3,
+"m": "chairDesk",
+"c": 2,
 "r": 1,
+"rot": 0
+},
+{
+"m": "desk",
+"c": 2,
+"r": 2,
 "rot": 0,
+"act": {
+"t": "Faire une activité ✏️",
+"j": 10,
+"pose": "sit",
+"dur": 2,
+"module": 1
+}
+},
+{
+"m": "chairDesk",
+"c": 4,
+"r": 1,
+"rot": 0
+},
+{
+"m": "desk",
+"c": 4,
+"r": 2,
+"rot": 0,
+"act": {
+"t": "Faire une activité ✏️",
+"j": 10,
+"pose": "sit",
+"dur": 2,
+"module": 1
+}
+},
+{
+"m": "chairDesk",
+"c": 6,
+"r": 1,
+"rot": 0
+},
+{
+"m": "desk",
+"c": 6,
+"r": 2,
+"rot": 0,
+"act": {
+"t": "Faire une activité ✏️",
+"j": 10,
+"pose": "sit",
+"dur": 2,
+"module": 1
+}
+},
+{
+"m": "chairDesk",
+"c": 2,
+"r": 3,
+"rot": 0
+},
+{
+"m": "desk",
+"c": 2,
+"r": 4,
+"rot": 0,
+"act": {
+"t": "Faire une activité ✏️",
+"j": 10,
+"pose": "sit",
+"dur": 2,
+"module": 1
+}
+},
+{
+"m": "chairDesk",
+"c": 4,
+"r": 3,
+"rot": 0
+},
+{
+"m": "desk",
+"c": 4,
+"r": 4,
+"rot": 0,
+"act": {
+"t": "Faire une activité ✏️",
+"j": 10,
+"pose": "sit",
+"dur": 2,
+"module": 1
+}
+},
+{
+"m": "chairDesk",
+"c": 6,
+"r": 3,
+"rot": 0
+},
+{
+"m": "desk",
+"c": 6,
+"r": 4,
+"rot": 0,
+"act": {
+"t": "Faire une activité ✏️",
+"j": 10,
+"pose": "sit",
+"dur": 2,
+"module": 1
+}
+},
+{
+"m": "laptop",
+"c": 4,
+"r": 2,
+"rot": 0,
+"z": 0.38,
+"deco": 1
+},
+{
+"m": "food:apple",
+"c": 2,
+"r": 4,
+"rot": 0,
+"z": 0.38,
+"deco": 1
+},
+{
+"m": "desk",
+"c": 5,
+"r": 6,
+"rot": 2,
 "act": {
 "t": "Parler à Sensei 🥋",
 "j": 8,
@@ -1724,137 +1884,15 @@
 }
 },
 {
-"m": "chairDesk",
-"c": 3,
-"r": 0,
+"m": "shop:character-employee",
+"c": 5,
+"r": 5,
 "rot": 0
 },
 {
-"m": "desk",
-"c": 2,
-"r": 3,
-"rot": 2,
-"act": {
-"t": "Faire une activité ✏️",
-"j": 10,
-"pose": "sit",
-"dur": 2,
-"module": 1
-}
-},
-{
-"m": "chairDesk",
-"c": 2,
-"r": 4,
-"rot": 2
-},
-{
-"m": "desk",
-"c": 4,
-"r": 3,
-"rot": 2,
-"act": {
-"t": "Faire une activité ✏️",
-"j": 10,
-"pose": "sit",
-"dur": 2,
-"module": 1
-}
-},
-{
-"m": "chairDesk",
-"c": 4,
-"r": 4,
-"rot": 2
-},
-{
-"m": "desk",
-"c": 6,
-"r": 3,
-"rot": 2,
-"act": {
-"t": "Faire une activité ✏️",
-"j": 10,
-"pose": "sit",
-"dur": 2,
-"module": 1
-}
-},
-{
-"m": "chairDesk",
-"c": 6,
-"r": 4,
-"rot": 2
-},
-{
-"m": "desk",
-"c": 2,
-"r": 5,
-"rot": 2,
-"act": {
-"t": "Faire une activité ✏️",
-"j": 10,
-"pose": "sit",
-"dur": 2,
-"module": 1
-}
-},
-{
-"m": "chairDesk",
-"c": 2,
-"r": 6,
-"rot": 2
-},
-{
-"m": "desk",
-"c": 4,
-"r": 5,
-"rot": 2,
-"act": {
-"t": "Faire une activité ✏️",
-"j": 10,
-"pose": "sit",
-"dur": 2,
-"module": 1
-}
-},
-{
-"m": "chairDesk",
-"c": 4,
-"r": 6,
-"rot": 2
-},
-{
-"m": "desk",
-"c": 6,
-"r": 5,
-"rot": 2,
-"act": {
-"t": "Faire une activité ✏️",
-"j": 10,
-"pose": "sit",
-"dur": 2,
-"module": 1
-}
-},
-{
-"m": "chairDesk",
-"c": 6,
-"r": 6,
-"rot": 2
-},
-{
-"m": "laptop",
-"c": 2,
-"r": 3,
-"rot": 2,
-"z": 0.38,
-"deco": 1
-},
-{
 "m": "food:apple",
-"c": 3,
-"r": 1,
+"c": 5,
+"r": 6,
 "rot": 0,
 "z": 0.38,
 "deco": 1
@@ -1862,7 +1900,7 @@
 {
 "m": "bookcaseOpen",
 "c": 0,
-"r": 0,
+"r": 3,
 "rot": 1,
 "act": {
 "t": "Lire un livre 📚",
@@ -1874,7 +1912,7 @@
 {
 "m": "bookcaseOpen",
 "c": 0,
-"r": 1,
+"r": 4,
 "rot": 1,
 "act": {
 "t": "Lire un livre 📚",
@@ -1886,7 +1924,7 @@
 {
 "m": "bookcaseClosedWide",
 "c": 0,
-"r": 2,
+"r": 5,
 "rot": 1,
 "act": {
 "t": "Lire un livre 📚",
@@ -1903,9 +1941,9 @@
 },
 {
 "m": "shop:gacha-machine",
-"c": 7,
-"r": 6,
-"rot": 3
+"c": 0,
+"r": 0,
+"rot": 1
 }
 ]
 },
@@ -2071,5 +2109,503 @@
 "hotel_sail": "hotel",
 "hotel_atlantis": "hotel",
 "burj": "hotel"
+},
+"catalogue": [
+[
+"loungeSofa",
+"Canapé",
+40,
+"Salon",
+{
+"c": 1
+}
+],
+[
+"loungeSofaCorner",
+"Canapé d’angle",
+60,
+"Salon",
+{
+"c": 1
+}
+],
+[
+"loungeChair",
+"Fauteuil",
+25,
+"Salon",
+{
+"c": 1
+}
+],
+[
+"loungeChairRelax",
+"Fauteuil relax",
+35,
+"Salon",
+{
+"c": 1
+}
+],
+[
+"tableCoffee",
+"Table basse",
+15,
+"Salon",
+{}
+],
+[
+"tableCoffeeGlass",
+"Table basse verre",
+20,
+"Salon",
+{}
+],
+[
+"cabinetTelevision",
+"Meuble TV",
+20,
+"Salon",
+{}
+],
+[
+"televisionModern",
+"Télé",
+50,
+"Salon",
+{
+"s": 1
+}
+],
+[
+"televisionVintage",
+"Vieille télé",
+30,
+"Salon",
+{
+"s": 1
+}
+],
+[
+"bookcaseOpen",
+"Étagère",
+25,
+"Salon",
+{}
+],
+[
+"bookcaseClosedWide",
+"Bibliothèque",
+35,
+"Salon",
+{}
+],
+[
+"lampRoundFloor",
+"Lampadaire",
+12,
+"Salon",
+{}
+],
+[
+"speaker",
+"Enceinte",
+20,
+"Salon",
+{}
+],
+[
+"radio",
+"Radio",
+10,
+"Salon",
+{
+"s": 1
+}
+],
+[
+"pottedPlant",
+"Grande plante",
+8,
+"Salon",
+{}
+],
+[
+"plantSmall1",
+"Petite plante",
+4,
+"Salon",
+{
+"s": 1
+}
+],
+[
+"rugRound",
+"Tapis rond",
+10,
+"Salon",
+{
+"c": 1,
+"flat": 1
+}
+],
+[
+"rugRectangle",
+"Grand tapis",
+15,
+"Salon",
+{
+"c": 1,
+"flat": 1
+}
+],
+[
+"bear",
+"Nounours",
+10,
+"Salon",
+{}
+],
+[
+"kitchenFridgeLarge",
+"Grand frigo",
+50,
+"Cuisine",
+{}
+],
+[
+"kitchenFridge",
+"Frigo",
+40,
+"Cuisine",
+{}
+],
+[
+"kitchenStove",
+"Cuisinière",
+35,
+"Cuisine",
+{}
+],
+[
+"kitchenSink",
+"Évier",
+25,
+"Cuisine",
+{}
+],
+[
+"kitchenCabinetDrawer",
+"Meuble de cuisine",
+15,
+"Cuisine",
+{}
+],
+[
+"kitchenBar",
+"Comptoir",
+15,
+"Cuisine",
+{}
+],
+[
+"kitchenCoffeeMachine",
+"Machine à café",
+12,
+"Cuisine",
+{
+"s": 1
+}
+],
+[
+"kitchenMicrowave",
+"Micro-ondes",
+12,
+"Cuisine",
+{
+"s": 1
+}
+],
+[
+"table",
+"Table",
+25,
+"Cuisine",
+{}
+],
+[
+"tableRound",
+"Table ronde",
+25,
+"Cuisine",
+{}
+],
+[
+"chair",
+"Chaise",
+8,
+"Cuisine",
+{}
+],
+[
+"chairCushion",
+"Chaise coussin",
+10,
+"Cuisine",
+{
+"c": 1
+}
+],
+[
+"stoolBar",
+"Tabouret",
+8,
+"Cuisine",
+{}
+],
+[
+"bedSingle",
+"Lit",
+40,
+"Chambre",
+{
+"c": 1
+}
+],
+[
+"bedDouble",
+"Grand lit",
+70,
+"Chambre",
+{
+"c": 1
+}
+],
+[
+"bedBunk",
+"Lits superposés",
+60,
+"Chambre",
+{
+"c": 1
+}
+],
+[
+"cabinetBedDrawer",
+"Table de nuit",
+12,
+"Chambre",
+{}
+],
+[
+"lampSquareTable",
+"Lampe de chevet",
+6,
+"Chambre",
+{
+"s": 1
+}
+],
+[
+"desk",
+"Bureau",
+25,
+"Chambre",
+{}
+],
+[
+"chairDesk",
+"Chaise de bureau",
+15,
+"Chambre",
+{}
+],
+[
+"laptop",
+"Ordinateur portable",
+30,
+"Chambre",
+{
+"s": 1
+}
+],
+[
+"computerScreen",
+"Écran",
+25,
+"Chambre",
+{
+"s": 1
+}
+],
+[
+"bookcaseClosed",
+"Armoire",
+25,
+"Chambre",
+{}
+],
+[
+"coatRackStanding",
+"Portemanteau",
+8,
+"Chambre",
+{}
+],
+[
+"bathtub",
+"Baignoire",
+50,
+"Salle de bain",
+{}
+],
+[
+"showerRound",
+"Douche",
+45,
+"Salle de bain",
+{}
+],
+[
+"toilet",
+"Toilettes",
+20,
+"Salle de bain",
+{}
+],
+[
+"bathroomSinkSquare",
+"Lavabo",
+15,
+"Salle de bain",
+{}
+],
+[
+"washer",
+"Lave-linge",
+30,
+"Salle de bain",
+{}
+],
+[
+"dryer",
+"Sèche-linge",
+30,
+"Salle de bain",
+{}
+],
+[
+"trashcan",
+"Poubelle",
+4,
+"Salle de bain",
+{}
+]
+],
+"couleurs": {
+"bleu": "#3a6ea5",
+"vert": "#52b788",
+"jaune": "#f4c430",
+"rose": "#f78fb3"
+},
+"surfaces": [
+"tableCoffee",
+"tableCoffeeGlass",
+"cabinetTelevision",
+"kitchenCabinetDrawer",
+"kitchenCabinet",
+"kitchenBar",
+"table",
+"tableRound",
+"tableCloth",
+"cabinetBedDrawer",
+"cabinetBed",
+"desk",
+"deskCorner",
+"sideTable"
+],
+"actions": {
+"SOFA": {
+"t": "Se détendre sur le canapé 🛋️",
+"j": 15,
+"e": 5,
+"pose": "sit",
+"dur": 3
+},
+"TV": {
+"t": "Regarder la télé 📺",
+"j": 20,
+"pose": "sit",
+"dur": 3
+},
+"FRIDGE": {
+"t": "Prendre un goûter 🍎",
+"f": 20,
+"pose": "eat",
+"dur": 2.5
+},
+"STOVE": {
+"t": "Cuisiner un bon plat 🍳",
+"f": 30,
+"pose": "idle",
+"dur": 3
+},
+"EAT": {
+"t": "Manger à table 🍽️",
+"f": 35,
+"pose": "eat",
+"dur": 3
+},
+"BED": {
+"t": "Faire dodo 😴",
+"e": 60,
+"pose": "sleep",
+"dur": 4
+},
+"DESK": {
+"t": "Faire une activité ✏️",
+"j": 10,
+"pose": "sit",
+"dur": 2,
+"module": 1
+},
+"READ": {
+"t": "Lire un livre 📚",
+"j": 12,
+"pose": "idle",
+"dur": 3
+},
+"BATH": {
+"t": "Prendre un bain 🛁",
+"j": 10,
+"e": 10,
+"pose": "idle",
+"dur": 3
+},
+"WC": {
+"t": "Passer aux toilettes 🚽",
+"j": 3,
+"pose": "idle",
+"dur": 1.5
+},
+"WASH": {
+"t": "Se laver les mains 🧼",
+"j": 3,
+"pose": "idle",
+"dur": 1.5
+},
+"TOY": {
+"t": "Jouer avec le nounours 🧸",
+"j": 18,
+"pose": "jump",
+"dur": 2.5
+},
+"MUSIC": {
+"t": "Danser en musique 🎵",
+"j": 15,
+"e": -5,
+"pose": "jump",
+"dur": 3
+}
 }
 }

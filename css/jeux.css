@@ -302,3 +302,20 @@ body.night .coach-len-btn{background:#2A1E0A;color:#F5E6C8}body.night .coach-len
 #int-ov .int-mod div{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
 #int-ov .int-mod button{border:0;border-radius:12px;padding:10px;font-weight:800;font-size:15px;background:#e9f5ff}
 #int-ov .int-mod .int-x{background:#eee;font-size:13px;padding:7px 14px}
+#int-ov .int-deco{background:#9b5de5;color:#fff;border:0;border-radius:12px;padding:8px 10px;font-weight:800;font-size:14px}
+#int-ov .int-deco.on{background:#2b9348}
+#int-ov .int-dp{background:#262f42;padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px));border-top:2px solid #9b5de5}
+#int-ov .dp-cats,#int-ov .dp-items{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}
+#int-ov .dp-cats button{flex:0 0 auto;border:0;border-radius:12px;padding:5px 10px;background:rgba(255,255,255,.12);color:#fff;font-weight:700;font-size:13px}
+#int-ov .dp-cats button.on{background:#ffd166;color:#3d2b00}
+#int-ov .dp-cols{display:flex;gap:8px;align-items:center;font-size:14px;margin:4px 0 6px}
+#int-ov .dp-cols button{width:24px;height:24px;border-radius:50%;border:2px solid rgba(255,255,255,.35)}
+#int-ov .dp-cols button.on{border:3px solid #fff;transform:scale(1.15)}
+#int-ov .dp-items button{flex:0 0 78px;border:0;border-radius:12px;background:#fff;color:#222;padding:4px;display:flex;flex-direction:column;align-items:center;gap:1px}
+#int-ov .dp-items button.on{outline:3px solid #ffd166;background:#fff6d6}
+#int-ov .dp-items img{height:42px;max-width:70px;object-fit:contain}
+#int-ov .dp-items span{font-size:10.5px;font-weight:700;line-height:1.1;text-align:center}
+#int-ov .dp-items em{font-style:normal;font-size:11px;color:#b5651d;font-weight:800}
+#int-ov .dp-sel{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+#int-ov .dp-sel b{flex:1 0 100%;font-size:14px}
+#int-ov .dp-sel button{border:0;border-radius:12px;padding:8px 10px;background:#fff;color:#222;font-weight:800;font-size:13px}

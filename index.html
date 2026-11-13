@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=46">
+<link rel="stylesheet" href="css/jeux.css?v=47">
 </head>
 <body>
 
@@ -1442,10 +1442,10 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=46"></script>
-<script src="js/jeux-cerveau.js?v=46"></script>
-<script src="js/coach-voix.js?v=46"></script>
-<script src="js/monde-interieur.js?v=46"></script>
+<script src="js/jeux.js?v=47"></script>
+<script src="js/jeux-cerveau.js?v=47"></script>
+<script src="js/coach-voix.js?v=47"></script>
+<script src="js/monde-interieur.js?v=47"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -19288,7 +19288,8 @@ function lifeArrive(){
     const pos=toIso(L.pos.col,L.pos.row),m=(L.missions||[]).find(x=>!x.ok&&!x.build&&x.id===T.id);
     if(m){m.ok=true;W3.coins+=20;W3.floats.push({x:pos.x,y:pos.y-50,text:'Mission réussie ! +20🪙',life:110,dy:-0.35});try{sndStar();}catch(e){}
       if(!L.bonus&&L.missions.every(x=>x.ok)){L.bonus=true;W3.coins+=30;w3Msg('🏆 Les 3 missions du jour sont réussies ! +30🪙');}}
-    w3UpdateHUD();w3Save();lifePanel();w3IntOpen(T.id);return;
+    const hc=W3.grid[w3Key(T.col,T.row)];if(hc&&hc.harvest>0)harvestCell(T.col,T.row); // l'argent du bâtiment est ramassé en entrant
+    w3UpdateHUD();w3Save();lifePanel();w3IntOpen(T.id,w3Key(T.col,T.row));return;
   }
   const a=LIFE_ACT[T.id];if(!a){w3Msg('Tu visites : '+((CATALOG.find(c=>c.id===T.id)||{}).label||T.id));return;}
   if(a.c&&W3.coins<a.c){w3Msg('Pas assez de 🪙 pour : '+a.t+' ('+a.c+'🪙)');return;}

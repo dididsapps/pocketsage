@@ -18,9 +18,12 @@ function has(id){return !!(DATA&&DATA.batiments[id]);}
 function P(u,v,z){return [(u-v)*TW/2,(u+v)*TH/2-(z||0)];}
 function poly(c,pts,fill,stroke,lw){c.beginPath();pts.forEach((p,i)=>i?c.lineTo(p[0],p[1]):c.moveTo(p[0],p[1]));c.closePath();if(fill){c.fillStyle=fill;c.fill();}if(stroke){c.strokeStyle=stroke;c.lineWidth=lw||1;c.stroke();}}
 function key(c,r){return c+','+r;}
-function build(L){
-  const S={L,items:[],block:{},seats:{},walls:new Set(),w:L.w,h:L.h};
-  L.items.forEach((it,i)=>{const sp=SPR[it.m+'|'+it.rot];if(!sp)return;const o={...it,sp,fw:sp[3],fh:sp[4],i};S.items.push(o);img(sp[0]);
+const ACT_RULES=[[/Sofa|loungeChair|bench/i,'SOFA'],[/^bed/i,'BED'],[/Fridge/i,'FRIDGE'],[/Stove/i,'STOVE'],[/^table(?!Coffee)/i,'EAT'],[/television/i,'TV'],[/^bookcase/i,'READ'],
+  [/^desk/i,'DESK'],[/bathtub|shower/i,'BATH'],[/^toilet/i,'WC'],[/Sink/i,'WASH'],[/^bear/i,'TOY'],[/speaker|radio/i,'MUSIC'],[/laptop|computerScreen/i,'DESK']];
+function autoAct(m){const b=m.split('~')[0];for(const [re,k] of ACT_RULES)if(re.test(b))return DATA.actions[k];return null;}
+function build(L,list){
+  const S={L,items:[],block:{},seats:{},walls:new Set(),w:L.w,h:L.h,list};
+  list.forEach((it,i)=>{const sp=SPR[it.m+'|'+it.rot];if(!sp)return;const o={...it,act:it.act||(it.buy?autoAct(it.m):null),sp,fw:sp[3],fh:sp[4],i};S.items.push(o);img(sp[0]);
     o.seat=/^(chair|stool)/i.test(it.m);if(o.seat)S.seats[key(it.c,it.r)]=o;
     if(!it.flat&&!it.deco&&!o.seat&&!/^plantSmall/.test(it.m))for(let a=0;a<o.fw;a++)for(let b=0;b<o.fh;b++)S.block[key(it.c+a,it.r+b)]=o;});
   (L.cloisons||[]).forEach(([ax,k,f,t,doors])=>{for(let x=f;x<t;x++){if(doors.includes(x))continue;
@@ -34,11 +37,13 @@ function bfs(S,from,goal){ // goal(c,r) -> bool
     for(const [dc,dr] of [[1,0],[-1,0],[0,1],[0,-1]]){const n=[c+dc,r+dr],nk=key(n[0],n[1]);if(nk in prev||!free(S,n[0],n[1])||wallBetween(S,[c,r],n))continue;prev[nk]=key(c,r);q.push(n);}}
   return null;}
 // ── ouverture / fermeture ──
-function open(bid){
+function open(bid,bk){
   return load().then(()=>{
     const lid=DATA.batiments[bid];if(!lid)return false;const L=DATA.interieurs[lid];
-    const S=build(L);const p=L.porte||[0,0];
-    ST={S,bid,lid,pos:{c:p[0],r:p[1]},path:[],t:0,dir:[0,1],walk:0,busy:null,floats:[],cam:{x:0,y:0,z:1},sel:null};
+    const W=W3(),cell=bk&&W&&W.grid[bk];
+    const list=(L.deco&&cell&&Array.isArray(cell.deco))?cell.deco.map(x=>({...x})):L.items.map(x=>({...x}));
+    const S=build(L,list);const p=L.porte||[0,0];
+    ST={S,bid,lid,bk,cell,pos:{c:p[0],r:p[1]},path:[],t:0,dir:[0,1],walk:0,busy:null,floats:[],cam:{x:0,y:0,z:1},sel:null,deco:false,pick:null,moving:false};
     ui();fit();loop();return true;});
 }
 function close(){if(!ST)return;ST=null;const o=document.getElementById('int-ov');if(o)o.remove();try{window.__w3.save();window.__w3.hud();}catch(e){}}
@@ -46,13 +51,14 @@ function ui(){
   let o=document.getElementById('int-ov');if(o)o.remove();
   o=document.createElement('div');o.id='int-ov';
   const L=ST.S.L;
-  o.innerHTML=`<div class="int-top"><button class="int-out" id="int-out">⬅ Sortir</button><b class="int-nom">${L.nom}</b><span class="int-coins" id="int-coins"></span></div>
+  o.innerHTML=`<div class="int-top"><button class="int-out" id="int-out">⬅ Sortir</button><b class="int-nom">${L.nom}</b><span class="int-coins" id="int-coins"></span>${L.deco?'<button class="int-deco" id="int-deco">🛋️ Déco</button>':''}</div>
   <div class="int-bars" id="int-bars"></div>
   <div class="int-rooms" id="int-rooms"><button data-room="-1" class="on">🏠 Tout</button>${(L.pieces||[]).map((p,i)=>`<button data-room="${i}">${p[0]}</button>`).join('')}</div>
   <canvas id="int-cv"></canvas>
   <div class="int-tip" id="int-tip">Touche un meuble pour agir 👆 ou le sol pour te déplacer</div>`;
   document.body.appendChild(o);
   o.querySelector('#int-out').onclick=close;
+  const db=o.querySelector('#int-deco');if(db)db.onclick=()=>decoMode(!ST.deco);
   o.querySelectorAll('[data-room]').forEach(b=>b.onclick=()=>{o.querySelectorAll('[data-room]').forEach(x=>x.classList.remove('on'));b.classList.add('on');const i=+b.dataset.room;if(i<0)fit();else zoomRoom(L.pieces[i]);});
   const cv=o.querySelector('#int-cv');ST.cv=cv;resize();
   let down=null,moved=false,pinch=null;
@@ -76,13 +82,14 @@ function zoomRoom(p){const u=p[1],v=p[2];frame(bounds(Math.max(0,u-2),Math.max(0
 function zoomAt(z){const cv=ST.cv,w=cv.clientWidth/2,h=cv.clientHeight/2;const wx=(w-ST.cam.x)/ST.cam.z,wy=(h-ST.cam.y)/ST.cam.z;ST.cam.z=z;ST.cam.x=w-wx*z;ST.cam.y=h-wy*z;}
 // ── écran → case ──
 function toCell(sx,sy){const x=(sx-ST.cam.x)/ST.cam.z,y=(sy-ST.cam.y)/ST.cam.z;const u=(x/(TW/2)+y/(TH/2))/2,v=(y/(TH/2)-x/(TW/2))/2;return {c:Math.floor(u),r:Math.floor(v),u,v};}
-function itemAt(sx,sy){ // priorité : objet dessiné sous le doigt (le plus en avant)
+function itemAt(sx,sy,any){ // priorité : objet dessiné sous le doigt (le plus en avant)
   const x=(sx-ST.cam.x)/ST.cam.z,y=(sy-ST.cam.y)/ST.cam.z;let best=null;
-  ST.S.items.forEach(o=>{if(!o.act||o.flat)return;const sp=o.sp,im=IMG[sp[0]];if(!im||!im.ok)return;const p=P(o.c,o.r,(o.z||0)*VZ),x0=p[0]-sp[1]/2,y0=p[1]-sp[2]/2,w=im.width/2,h=im.height/2;
+  ST.S.items.forEach(o=>{if((!o.act&&!any)||o.flat)return;const sp=o.sp,im=IMG[sp[0]];if(!im||!im.ok)return;const p=P(o.c,o.r,(o.z||0)*VZ),x0=p[0]-sp[1]/2,y0=p[1]-sp[2]/2,w=im.width/2,h=im.height/2;
     if(x>=x0&&x<=x0+w&&y>=y0&&y<=y0+h){const d=o.c+o.r+(o.fw+o.fh)/2+(o.deco?.5:0);if(!best||d>best.d)best={o,d};}});
   return best&&best.o;}
 function tap(sx,sy){
   if(!ST||ST.busy)return;
+  if(ST.deco){decoTap(sx,sy);return;}
   const o=itemAt(sx,sy);
   if(o){goItem(o);return;}
   const {c,r}=toCell(sx,sy);if(!free(ST.S,c,r))return;
@@ -136,10 +143,11 @@ const AVS={};function avSheet(n){if(!AVS[n]){const i=new Image();i.onload=()=>{i
 function useSprites(){try{const p=window.P&&window.P();return !p||!p.avatarId||p.avatarId==='boy1';}catch(e){return true;}}
 let FALL=null;function fallback(){if(FALL)return FALL;const i=new Image();try{const p=window.P();let src=null;if(p&&p.avatarId){if(p.avatarId==='boy1')src=IMG_AVATAR_BOY1;else{const a=PNG_AVATARS.find(x=>x.id===p.avatarId);if(a)src=_GH+a.f;}}if(src){i.onload=()=>{i.ok=1;};i.src=src;}}catch(e){}FALL=i;return i;}
 function drawAvatar(c,x,y,pose,frameIdx,flip,lift){
-  c.save();c.fillStyle='rgba(0,0,0,.22)';c.beginPath();c.ellipse(x,y,10,4.5,0,0,7);c.fill();c.restore();
+  if(pose!=='sleep'){c.save();c.fillStyle='rgba(0,0,0,.22)';c.beginPath();c.ellipse(x,y,10,4.5,0,0,7);c.fill();c.restore();}
   if(useSprites()){const sheet=pose==='walkF'?avSheet('walk_front'):pose==='walkB'?avSheet('walk_back'):avSheet('poses');
     const fi=pose==='walkF'||pose==='walkB'?frameIdx%6:{idle:0,sit:1,sleep:2,eat:3,wave:4,jump:5}[pose]||0;
-    if(sheet.ok){const s=pose==='sleep'?AV*1.25:AV;c.save();c.translate(x,y-(lift||0));if(flip)c.scale(-1,1);c.drawImage(sheet,fi*256,0,256,256,-s/2,-s*246/256,s,s);c.restore();return;}}
+    if(sheet.ok){if(pose==='sleep'){const s=AV*.9;c.save();c.translate(x,y-(lift||0));if(flip)c.scale(-1,1);c.drawImage(sheet,fi*256,0,256,256,-s*128/256,-s*160/256,s,s);c.restore();return;}
+      c.save();c.translate(x,y-(lift||0));if(flip)c.scale(-1,1);c.drawImage(sheet,fi*256,0,256,256,-AV/2,-AV*246/256,AV,AV);c.restore();return;}}
   const f=fallback();if(f.ok){const h=AV*.95,w=h*f.width/f.height;c.save();c.translate(x,y-(lift||0)-Math.abs(Math.sin(frameIdx*1.05))*2);if(flip)c.scale(-1,1);c.drawImage(f,-w/2,-h,w,h);c.restore();}
   else{c.font='26px serif';c.textAlign='center';c.fillStyle='#000';c.fillText('🧒',x,y-(lift||0));}
 }
@@ -182,8 +190,8 @@ function draw(){
   let dk=ax+ay-1+.15;
   if(ST.busy){pose=ST.busy.pose;const b=ST.busy.o;
     if(pose==='sit'&&/Sofa|Chair|bench|stool|chair/i.test(b.m)){ax=b.c+b.fw/2;ay=b.r+b.fh/2;lift=11;dk=b.c+b.r+(b.fw+b.fh)/2-1+.2;flip=b.rot===1||b.rot===2;}
-    else if(pose==='sleep'&&/bed/i.test(b.m)){ax=b.c+b.fw/2+.1;ay=b.r+b.fh/2+.1;lift=5;dk=b.c+b.r+(b.fw+b.fh)/2-1+.2;}
-    else if((pose==='sit'||pose==='eat')&&ST.S.seats[key(ST.pos.c,ST.pos.r)]){const ch=ST.S.seats[key(ST.pos.c,ST.pos.r)];pose='sit';lift=9;dk=ch.c+ch.r-1+.25;}
+    else if(pose==='sleep'&&/bed/i.test(b.m)){ax=b.c+b.fw/2;ay=b.r+b.fh/2;lift=(b.sp[5]||.38)*VZ-2;flip=b.rot===1||b.rot===3;dk=b.c+b.r+(b.fw+b.fh)/2-1+.2;}
+    else if((pose==='sit'||pose==='eat')&&ST.S.seats[key(ST.pos.c,ST.pos.r)]){const ch=ST.S.seats[key(ST.pos.c,ST.pos.r)];pose='sit';lift=9;dk=ch.c+ch.r-1+.25;flip=ch.rot===1;}
     else if(pose==='sit')pose='idle';
     if(pose==='jump')lift=Math.abs(Math.sin(performance.now()/180))*8;}
   const fr=Math.floor(ST.walk);
@@ -191,6 +199,10 @@ function draw(){
     if(ST.busy){const k=Math.min(1,(performance.now()-ST.busy.t0)/ST.busy.dur);const q=[p[0],p[1]-AV-14];c.fillStyle='rgba(255,255,255,.92)';c.beginPath();c.roundRect(q[0]-22,q[1]-7,44,9,4);c.fill();
       c.fillStyle='#2b9348';c.beginPath();c.roundRect(q[0]-20,q[1]-5,40*k,5,3);c.fill();}}]);
   D.sort((a,b)=>a[0]-b[0]).forEach(d=>d[1]());
+  // tableau de classe « fantôme » sur le mur avant (on voit au travers)
+  if(L.tableauAvant){const [a,b]=L.tableauAvant,hh=S.h;c.globalAlpha=.42;poly(c,[P(a,hh,14),P(b,hh,14),P(b,hh,48),P(a,hh,48)],'#1b4332','#8d6e63',2);c.globalAlpha=1;
+    const o=P((a+b)/2,hh,33);c.save();c.transform(.894,.447,0,1,o[0],o[1]);c.font='bold 8px sans-serif';c.fillStyle='rgba(255,255,255,.85)';c.textAlign='center';c.fillText('2 + 3 = 5   Bonjour !',0,0);c.restore();}
+  if(ST.deco)decoDraw(c);
   // textes flottants
   ST.floats.forEach(f=>{c.globalAlpha=Math.min(1,f.life/40);c.font='bold 9px sans-serif';c.textAlign='center';c.lineWidth=3;c.strokeStyle='rgba(0,0,0,.55)';c.strokeText(f.text,f.x,f.y);c.fillStyle='#fff';c.fillText(f.text,f.x,f.y);c.globalAlpha=1;});
 }
@@ -225,6 +237,60 @@ function shade(hex,d){const n=parseInt(hex.slice(1),16);const f=x=>Math.max(0,Ma
 // utilisé aussi par la ville (mode Ma vie) : renvoie false si les sprites ne sont pas prêts
 window.w3DrawAvatar=(c,x,y,pose,fr,flip)=>{if(!useSprites())return false;const sh=pose==='walkF'?avSheet('walk_front'):pose==='walkB'?avSheet('walk_back'):avSheet('poses');if(!sh.ok)return false;
   const fi=pose==='walkF'||pose==='walkB'?fr%6:0;c.save();c.translate(x,y);if(flip)c.scale(-1,1);c.drawImage(sh,fi*256,0,256,256,-AV/2,-AV*246/256,AV,AV);c.restore();return true;};
+// ── Mode déco (maison) : acheter, placer, tourner, déplacer, vendre ──
+function decoMode(on){ST.deco=on;ST.pick=null;ST.sel=null;ST.moving=false;ST.path=[];
+  const b=document.getElementById('int-deco');if(b){b.textContent=on?'✅ Terminé':'🛋️ Déco';b.classList.toggle('on',on);}
+  let p=document.getElementById('int-dp');if(p)p.remove();
+  if(on){p=document.createElement('div');p.id='int-dp';p.className='int-dp';document.getElementById('int-ov').appendChild(p);ST.dcat=ST.dcat||'Salon';decoPanel();setTip('Choisis un meuble puis touche le sol pour le poser');}
+  else setTip('Touche un meuble pour agir 👆 ou le sol pour te déplacer');}
+function decoPanel(){
+  const p=document.getElementById('int-dp');if(!p)return;const cats=[...new Set(DATA.catalogue.map(x=>x[3]))];
+  if(ST.sel!=null){const o=ST.S.items[ST.sel];const it=DATA.catalogue.find(x=>x[0]===o.m.split('~')[0]);
+    p.innerHTML=`<div class="dp-sel"><b>${it?it[1]:'Meuble'}</b><button data-a="rot">↻ Tourner</button><button data-a="move">✋ Déplacer</button><button data-a="sell">🗑️ Vendre (+${Math.ceil((it?it[2]:10)/2)}🪙)</button><button data-a="x">✖</button></div>`;
+    p.querySelectorAll('[data-a]').forEach(b=>b.onclick=()=>decoAction(b.dataset.a));return;}
+  const col=ST.dcol||'';
+  p.innerHTML=`<div class="dp-cats">${cats.map(k=>`<button data-c="${k}" class="${k===ST.dcat?'on':''}">${k}</button>`).join('')}</div>
+   <div class="dp-cols">🎨 ${['','bleu','vert','jaune','rose'].map(k=>`<button data-col="${k}" class="${k===col?'on':''}" style="background:${k?DATA.couleurs[k]:'#e5534b'}"></button>`).join('')}</div>
+   <div class="dp-items">${DATA.catalogue.filter(x=>x[3]===ST.dcat).map(x=>{const m=x[4].c&&col?x[0]+'~'+col:x[0];const sp=SPR[m+'|0'];
+     return `<button data-m="${m}" class="${ST.pick===m?'on':''}"><img src="assets/interieur/${sp?sp[0]:''}.webp?v=${VER}" alt=""><span>${x[1]}</span><em>${x[2]}🪙</em></button>`;}).join('')}</div>`;
+  p.querySelectorAll('[data-c]').forEach(b=>b.onclick=()=>{ST.dcat=b.dataset.c;decoPanel();});
+  p.querySelectorAll('[data-col]').forEach(b=>b.onclick=()=>{ST.dcol=b.dataset.col;if(ST.pick){const base=ST.pick.split('~')[0];const it=DATA.catalogue.find(x=>x[0]===base);ST.pick=it&&it[4].c&&ST.dcol?base+'~'+ST.dcol:base;}decoPanel();});
+  p.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>{ST.pick=ST.pick===b.dataset.m?null:b.dataset.m;ST.sel=null;decoPanel();setTip(ST.pick?'Touche le sol (ou un meuble pour poser dessus) 👇':'Choisis un meuble');});
+}
+function catOf(m){return DATA.catalogue.find(x=>x[0]===m.split('~')[0]);}
+function fits(m,rot,c,r,ignore){const sp=SPR[m+'|'+rot];if(!sp)return null;const fw=sp[3],fh=sp[4],flat=!!(catOf(m)||[0,0,0,0,{}])[4].flat;
+  const door=(ST.S.L.porte||[-1,-1]);
+  for(let a=0;a<fw;a++)for(let b=0;b<fh;b++){const cc=c+a,rr=r+b;if(cc<0||rr<0||cc>=ST.S.w||rr>=ST.S.h)return null;if(cc===door[0]&&rr===door[1])return null;
+    if(!flat){const bl=ST.S.block[key(cc,rr)];if(bl&&bl.i!==ignore)return null;if(cc===ST.pos.c&&rr===ST.pos.r)return null;}
+    if(a>0&&wallBetween(ST.S,[cc-1,rr],[cc,rr]))return null;if(b>0&&wallBetween(ST.S,[cc,rr-1],[cc,rr]))return null;}
+  return {fw,fh,flat};}
+function rebuild(){const list=ST.S.items.map(o=>{const x={m:o.m,c:o.c,r:o.r,rot:o.rot};if(o.z)x.z=o.z;if(o.deco)x.deco=1;if(o.flat)x.flat=1;if(o.buy)x.buy=1;if(o.act&&!o.buy)x.act=o.act;return x;});
+  ST.S=build(ST.S.L,list);if(ST.cell){ST.cell.deco=list;try{window.__w3.save();}catch(e){}}bars();}
+function decoTap(sx,sy){
+  const W=W3();const {c,r}=toCell(sx,sy);
+  if(ST.moving&&ST.sel!=null){const o=ST.S.items[ST.sel];if(fits(o.m,o.rot,c,r,o.i)){const dc=c-o.c,dr=r-o.r;ST.S.items.forEach(x=>{if(x.deco&&x.c===o.c&&x.r===o.r&&x!==o){x.c+=dc;x.r+=dr;}});o.c=c;o.r=r;ST.moving=false;rebuild();ST.sel=null;decoPanel();setTip('Déplacé ! ✨');}else setTip('Pas de place ici 🙅');return;}
+  if(ST.pick){const m=ST.pick,it=catOf(m);if(!it)return;if(W&&W.coins<it[2]){setTip('Pas assez de 🪙 ('+it[2]+'🪙)');return;}
+    let x=null;const base=ST.S.block[key(c,r)];
+    if(it[4].s&&base&&DATA.surfaces.includes(base.m.split('~')[0])){x={m,c:base.c,r:base.r,rot:base.rot,z:base.sp[5]||.4,deco:1,buy:1};}
+    else if(fits(m,0,c,r,-1)){x={m,c,r,rot:0,buy:1};if(it[4].flat)x.flat=1;}
+    if(!x){setTip('Pas de place ici 🙅 (essaie une case libre)');return;}
+    if(W)W.coins-=it[2];ST.S.items.push({...x,sp:SPR[x.m+'|'+x.rot],i:ST.S.items.length});rebuild();try{sndTap();}catch(e){}
+    const p=P(x.c+.5,x.r+.5,30);ST.floats.push({x:p[0],y:p[1],text:'−'+it[2]+'🪙',life:70});setTip(it[1]+' posé ! Touche-le pour le tourner ou le déplacer');return;}
+  const o=itemAtCell(c,r)||itemAt(sx,sy,true);if(o){ST.sel=o.i;ST.moving=false;decoPanel();setTip('Que veux-tu faire avec ce meuble ?');}
+}
+function itemAtCell(c,r){let best=null;ST.S.items.forEach(o=>{if(c>=o.c&&c<o.c+o.fw&&r>=o.r&&r<o.r+o.fh){if(!best||(o.deco&&!best.deco)||(best.flat&&!o.flat))best=o;}});return best;}
+function decoAction(a){const o=ST.S.items[ST.sel];if(!o)return;const W=W3();
+  if(a==='x'){ST.sel=null;ST.moving=false;decoPanel();return;}
+  if(a==='rot'){for(let k=1;k<4;k++){const nr=(o.rot+k)%4;if(SPR[o.m+'|'+nr]&&fits(o.m,nr,o.c,o.r,o.i)){o.rot=nr;ST.S.items.forEach(x=>{if(x.deco&&x.c===o.c&&x.r===o.r&&x!==o&&SPR[x.m+'|'+nr])x.rot=nr;});rebuild();ST.sel=ST.S.items.findIndex(x=>x.c===o.c&&x.r===o.r&&x.m===o.m);decoPanel();return;}}setTip('Pas la place pour le tourner 🙅');return;}
+  if(a==='move'){ST.moving=true;setTip('Touche la case où le mettre 👇');return;}
+  if(a==='sell'){const it=catOf(o.m);const back=Math.ceil((it?it[2]:10)/2);if(W)W.coins+=back;
+    ST.S.items=ST.S.items.filter(x=>x!==o&&!(x.deco&&!o.deco&&x.c===o.c&&x.r===o.r));rebuild();ST.sel=null;decoPanel();setTip('Vendu ! +'+back+'🪙');}
+}
+function decoDraw(c){
+  const o=ST.sel!=null?ST.S.items[ST.sel]:null;
+  if(o){c.save();c.setLineDash([4,3]);poly(c,[P(o.c,o.r),P(o.c+o.fw,o.r),P(o.c+o.fw,o.r+o.fh),P(o.c,o.r+o.fh)],'rgba(255,209,102,.25)','#ffd166',2);c.restore();}
+  if(ST.pick||ST.moving){c.save();c.globalAlpha=.25;for(let r=0;r<ST.S.h;r++)for(let k=0;k<ST.S.w;k++)if(!ST.S.block[key(k,r)])poly(c,[P(k+.08,r+.08),P(k+.92,r+.08),P(k+.92,r+.92),P(k+.08,r+.92)],null,'#4cc9f0',1);c.restore();}
+}
 window.w3IntHas=id=>has(id);window.w3IntOpen=open;window.w3IntClose=close;window.w3IntLoad=load;
 window.__int={get ST(){return ST;},tap:(x,y)=>tap(x,y),goItem:i=>ST&&goItem(ST.S.items[i])};
 load().catch(()=>{});['walk_front','walk_back','poses'].forEach(avSheet);

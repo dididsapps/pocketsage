@@ -28,13 +28,13 @@ MUSIC = {'t': 'Danser en musique 🎵', 'j': 15, 'e': -5, 'pose': 'jump', 'dur':
 L = {}
 # ── Maison (salon, cuisine, chambre, salle de bain) ──────────────────────
 L['maison'] = {
-    'nom': 'Ma maison', 'w': 8, 'h': 7, 'mur': '#f4efe6', 'murHaut': '#e2a56b', 'porte': [0, 2],
+    'nom': 'Ma maison', 'deco': 1, 'w': 8, 'h': 7, 'mur': '#f4efe6', 'murHaut': '#e2a56b', 'porte': [0, 2],
     'sols': [[0, 0, 4, 4, 'bois'], [4, 0, 8, 4, 'carreau'], [0, 4, 4, 7, 'moquette'], [4, 4, 8, 7, 'carreauBleu']],
     'cloisons': [['c', 4, 0, 4, [2]], ['r', 4, 0, 8, [2, 6]], ['c', 4, 4, 7, []]],
     'pieces': [['Salon', 2, 2], ['Cuisine', 6, 1.5], ['Chambre', 2, 5.5], ['Salle de bain', 6, 5.5]],
     'items': [
         I('rugRound', 1, 1, flat=True),
-        I('loungeDesignSofa', 1, 0, 0, act=SOFA), I('tableCoffee', 1, 1), I('pottedPlant', 0, 0), I('lampRoundFloor', 3, 0),
+        I('loungeSofa', 1, 0, 0, act=SOFA), I('loungeSofa', 2, 0, 0, act=SOFA), I('tableCoffee', 1, 1), I('pottedPlant', 0, 0), I('lampRoundFloor', 3, 0),
         I('bookcaseOpen', 0, 1, 1, act=READ), I('loungeChair', 3, 1, 3, act=SOFA),
         I('cabinetTelevision', 1, 3, 2), I('televisionModern', 1, 3, 2, z=0.31, deco=True, act=TV), I('speaker', 3, 3, 2, act=MUSIC),
         I('kitchenFridgeLarge', 4, 0, 0, act=FRIDGE), I('kitchenCabinetDrawer', 5, 0), I('kitchenStove', 6, 0, 0, act=STOVE), I('kitchenSink', 7, 0, 0, act=WASH),
@@ -118,21 +118,21 @@ L['hotel'] = {
     'pieces': [['Suite', 2.5, 3.5], ['Salle de bain', 6.5, 3.5]],
     'items': [
         I('bedDouble', 1, 0, 0, act=BED), I('cabinetBedDrawer', 0, 0), I('cabinetBedDrawer', 3, 0), I('lampSquareTable', 0, 0, 0, z=0.26, deco=True), I('lampSquareTable', 3, 0, 0, z=0.26, deco=True),
-        I('rugRectangle', 1, 3, 0, flat=True), I('loungeDesignSofa', 1, 5, 2, act=SOFA), I('tableCoffeeGlass', 1, 4, 0, act=ROOM), I('food:cake', 1, 4, 0, z=0.23, deco=True),
+        I('rugRectangle', 1, 3, 0, flat=True), I('loungeSofa~bleu', 1, 5, 2, act=SOFA), I('loungeSofa~bleu', 2, 5, 2, act=SOFA), I('tableCoffeeGlass', 1, 4, 0, act=ROOM), I('food:cake', 1, 4, 0, z=0.23, deco=True),
         I('cabinetTelevision', 4, 3, 3), I('televisionModern', 4, 3, 3, z=0.31, deco=True, act=TV), I('loungeChairRelax', 0, 4, 1, act=SOFA), I('pottedPlant', 4, 6), I('pottedPlant', 0, 6),
         I('bathtub', 5, 0, 0, act=BATH), I('showerRound', 7, 1, 3, act=BATH), I('bathroomSinkSquare', 5, 5, 1, act=WASH), I('toilet', 7, 5, 3, act=WC), I('plantSmall2', 7, 6),
     ]}
 # ── École ─────────────────────────────────────────────────────────────
 PROF = {'t': 'Parler à Sensei 🥋', 'j': 8, 'pose': 'wave', 'dur': 2}
 L['ecole'] = {
-    'nom': "L'école", 'w': 8, 'h': 7, 'mur': '#fff8e7', 'murHaut': '#f4a261', 'porte': [0, 5], 'tableau': 1,
+    'nom': "L'école", 'w': 8, 'h': 7, 'mur': '#fff8e7', 'murHaut': '#f4a261', 'porte': [0, 1], 'tableauAvant': [2, 6],
     'sols': [[0, 0, 8, 7, 'bois']], 'cloisons': [], 'pieces': [['Classe', 4, 3.5]],
     'items': [
-        I('desk', 3, 1, 0, act=PROF), I('chairDesk', 3, 0, 0),
-        I('desk', 2, 3, 2, act=DESK), I('chairDesk', 2, 4, 2), I('desk', 4, 3, 2, act=DESK), I('chairDesk', 4, 4, 2), I('desk', 6, 3, 2, act=DESK), I('chairDesk', 6, 4, 2),
-        I('desk', 2, 5, 2, act=DESK), I('chairDesk', 2, 6, 2), I('desk', 4, 5, 2, act=DESK), I('chairDesk', 4, 6, 2), I('desk', 6, 5, 2, act=DESK), I('chairDesk', 6, 6, 2),
-        I('laptop', 2, 3, 2, z=0.38, deco=True), I('food:apple', 3, 1, 0, z=0.38, deco=True),
-        I('bookcaseOpen', 0, 0, 1, act=READ), I('bookcaseOpen', 0, 1, 1, act=READ), I('bookcaseClosedWide', 0, 2, 1, act=READ), I('pottedPlant', 7, 0), I('shop:gacha-machine', 7, 6, 3),
+        I('chairDesk', 2, 1, 0), I('desk', 2, 2, 0, act=DESK), I('chairDesk', 4, 1, 0), I('desk', 4, 2, 0, act=DESK), I('chairDesk', 6, 1, 0), I('desk', 6, 2, 0, act=DESK),
+        I('chairDesk', 2, 3, 0), I('desk', 2, 4, 0, act=DESK), I('chairDesk', 4, 3, 0), I('desk', 4, 4, 0, act=DESK), I('chairDesk', 6, 3, 0), I('desk', 6, 4, 0, act=DESK),
+        I('laptop', 4, 2, 0, z=0.38, deco=True), I('food:apple', 2, 4, 0, z=0.38, deco=True),
+        I('desk', 5, 6, 2, act=PROF), I('shop:character-employee', 5, 5, 0), I('food:apple', 5, 6, 0, z=0.38, deco=True),
+        I('bookcaseOpen', 0, 3, 1, act=READ), I('bookcaseOpen', 0, 4, 1, act=READ), I('bookcaseClosedWide', 0, 5, 1, act=READ), I('pottedPlant', 7, 0), I('shop:gacha-machine', 0, 0, 1),
     ]}
 # ── Pharmacie ─────────────────────────────────────────────────────────
 VITA = {'t': 'Acheter des vitamines 💊', 'e': 10, 'j': 5, 'c': 5, 'pose': 'idle', 'dur': 2}
@@ -144,11 +144,32 @@ L['pharmacie'] = {
         I('kitchenBar', 2, 2, 0), I('kitchenBar', 3, 2, 0), I('shop:cash-register', 4, 2, 0), I('shop:character-employee', 3, 1, 0),
         I('shop:display-small', 5, 3, 3, act=VITA), I('benchCushion', 1, 4, 2, act=SOFA), I('pottedPlant', 5, 0),
     ]}
+COUL = {'bleu': '#3a6ea5', 'vert': '#52b788', 'jaune': '#f4c430', 'rose': '#f78fb3'}
+CATALOGUE = [
+  # [modèle, nom, prix, catégorie, options]
+  ['loungeSofa', 'Canapé', 40, 'Salon', {'c': 1}], ['loungeSofaCorner', 'Canapé d’angle', 60, 'Salon', {'c': 1}], ['loungeChair', 'Fauteuil', 25, 'Salon', {'c': 1}],
+  ['loungeChairRelax', 'Fauteuil relax', 35, 'Salon', {'c': 1}], ['tableCoffee', 'Table basse', 15, 'Salon', {}], ['tableCoffeeGlass', 'Table basse verre', 20, 'Salon', {}],
+  ['cabinetTelevision', 'Meuble TV', 20, 'Salon', {}], ['televisionModern', 'Télé', 50, 'Salon', {'s': 1}], ['televisionVintage', 'Vieille télé', 30, 'Salon', {'s': 1}],
+  ['bookcaseOpen', 'Étagère', 25, 'Salon', {}], ['bookcaseClosedWide', 'Bibliothèque', 35, 'Salon', {}], ['lampRoundFloor', 'Lampadaire', 12, 'Salon', {}],
+  ['speaker', 'Enceinte', 20, 'Salon', {}], ['radio', 'Radio', 10, 'Salon', {'s': 1}], ['pottedPlant', 'Grande plante', 8, 'Salon', {}], ['plantSmall1', 'Petite plante', 4, 'Salon', {'s': 1}],
+  ['rugRound', 'Tapis rond', 10, 'Salon', {'c': 1, 'flat': 1}], ['rugRectangle', 'Grand tapis', 15, 'Salon', {'c': 1, 'flat': 1}], ['bear', 'Nounours', 10, 'Salon', {}],
+  ['kitchenFridgeLarge', 'Grand frigo', 50, 'Cuisine', {}], ['kitchenFridge', 'Frigo', 40, 'Cuisine', {}], ['kitchenStove', 'Cuisinière', 35, 'Cuisine', {}],
+  ['kitchenSink', 'Évier', 25, 'Cuisine', {}], ['kitchenCabinetDrawer', 'Meuble de cuisine', 15, 'Cuisine', {}], ['kitchenBar', 'Comptoir', 15, 'Cuisine', {}],
+  ['kitchenCoffeeMachine', 'Machine à café', 12, 'Cuisine', {'s': 1}], ['kitchenMicrowave', 'Micro-ondes', 12, 'Cuisine', {'s': 1}], ['table', 'Table', 25, 'Cuisine', {}],
+  ['tableRound', 'Table ronde', 25, 'Cuisine', {}], ['chair', 'Chaise', 8, 'Cuisine', {}], ['chairCushion', 'Chaise coussin', 10, 'Cuisine', {'c': 1}], ['stoolBar', 'Tabouret', 8, 'Cuisine', {}],
+  ['bedSingle', 'Lit', 40, 'Chambre', {'c': 1}], ['bedDouble', 'Grand lit', 70, 'Chambre', {'c': 1}], ['bedBunk', 'Lits superposés', 60, 'Chambre', {'c': 1}],
+  ['cabinetBedDrawer', 'Table de nuit', 12, 'Chambre', {}], ['lampSquareTable', 'Lampe de chevet', 6, 'Chambre', {'s': 1}], ['desk', 'Bureau', 25, 'Chambre', {}],
+  ['chairDesk', 'Chaise de bureau', 15, 'Chambre', {}], ['laptop', 'Ordinateur portable', 30, 'Chambre', {'s': 1}], ['computerScreen', 'Écran', 25, 'Chambre', {'s': 1}],
+  ['bookcaseClosed', 'Armoire', 25, 'Chambre', {}], ['coatRackStanding', 'Portemanteau', 8, 'Chambre', {}],
+  ['bathtub', 'Baignoire', 50, 'Salle de bain', {}], ['showerRound', 'Douche', 45, 'Salle de bain', {}], ['toilet', 'Toilettes', 20, 'Salle de bain', {}],
+  ['bathroomSinkSquare', 'Lavabo', 15, 'Salle de bain', {}], ['washer', 'Lave-linge', 30, 'Salle de bain', {}], ['dryer', 'Sèche-linge', 30, 'Salle de bain', {}], ['trashcan', 'Poubelle', 4, 'Salle de bain', {}],
+]
+SURFACES = ['tableCoffee', 'tableCoffeeGlass', 'cabinetTelevision', 'kitchenCabinetDrawer', 'kitchenCabinet', 'kitchenBar', 'table', 'tableRound', 'tableCloth', 'cabinetBedDrawer', 'cabinetBed', 'desk', 'deskCorner', 'sideTable']
 # bâtiments de la ville -> intérieur
 BAT = {'house1': 'maison', 'house2': 'maison', 'house3': 'maison', 'apt3': 'maison', 'tower10': 'maison', 'tower_mod': 'maison', 'castle': 'maison',
        'resto': 'resto', 'shop': 'boutique', 'supermarket': 'supermarche', 'hospital': 'hopital', 'pharmacy': 'pharmacie', 'school': 'ecole',
        'hotel_lagoon': 'hotel', 'hotel_sail': 'hotel', 'hotel_atlantis': 'hotel', 'burj': 'hotel'}
 if __name__ == '__main__':
     import sys
-    json.dump({'interieurs': L, 'batiments': BAT}, open(sys.argv[1], 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+    json.dump({'interieurs': L, 'batiments': BAT, 'catalogue': CATALOGUE, 'couleurs': COUL, 'surfaces': SURFACES, 'actions': {'SOFA': SOFA, 'TV': TV, 'FRIDGE': FRIDGE, 'STOVE': STOVE, 'EAT': EAT, 'BED': BED, 'DESK': DESK, 'READ': READ, 'BATH': BATH, 'WC': WC, 'WASH': WASH, 'TOY': TOY, 'MUSIC': MUSIC}}, open(sys.argv[1], 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
     print('ok', len(L))
