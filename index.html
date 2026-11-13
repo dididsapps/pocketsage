@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=35">
+<link rel="stylesheet" href="css/jeux.css?v=36">
 </head>
 <body>
 
@@ -1442,9 +1442,9 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=35"></script>
-<script src="js/jeux-cerveau.js?v=35"></script>
-<script src="js/coach-voix.js?v=35"></script>
+<script src="js/jeux.js?v=36"></script>
+<script src="js/jeux-cerveau.js?v=36"></script>
+<script src="js/coach-voix.js?v=36"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -17370,6 +17370,8 @@ const CATALOG = [
   { id:'pharmacy', label:'Pharmacie 💊',  cat:'service',  cost:90,  income:16,  size:1, color:'#e63946', emoji:'💊' },
   { id:'shop',     label:'Magasin 👗',    cat:'service',  cost:80,  income:14,  size:1, color:'#9b5de5', emoji:'👗' },
   { id:'resto',    label:'Restaurant 🍔', cat:'service',  cost:100, income:18,  size:1, color:'#f15bb5', emoji:'🍔' },
+  { id:'hospital', label:'Hôpital 🏥',    cat:'service',  cost:200, income:30,  size:1, color:'#ffffff', emoji:'🏥' },
+  { id:'garage',   label:'Garage 🔧',     cat:'service',  cost:150, income:22,  size:1, color:'#adb5bd', emoji:'🔧' },
   // Loisirs
   { id:'park',      label:'Grande Roue 🎡',   cat:'loisir', cost:200, income:30,  size:2, color:'#00b4d8', emoji:'🎡' },
   { id:'coaster1',  label:'Grand 8 🎢',        cat:'loisir', cost:250, income:35,  size:2, color:'#e63946', emoji:'🎢' },
@@ -17380,11 +17382,12 @@ const CATALOG = [
   { id:'icecream',  label:'Glacier 🍦',         cat:'loisir', cost:80,  income:12,  size:1, color:'#ffe8d6', emoji:'🍦' },
   { id:'popcorn',   label:'Popcorn 🍿',         cat:'loisir', cost:50,  income:8,   size:1, color:'#ffd166', emoji:'🍿' },
   { id:'beach',     label:'Plage 🏖️',          cat:'loisir', cost:120, income:18,  size:2, color:'#f9c74f', emoji:'🏖️' },
-  { id:'casino',    label:'Casino 🎰',          cat:'loisir', cost:300, income:55,  size:2, color:'#6a0572', emoji:'🎰' },
+  { id:'casino',    label:"Salle d'arcade 🕹️",  cat:'loisir', cost:300, income:55,  size:2, color:'#6a0572', emoji:'🕹️' },
   { id:'cinema',    label:'Cinéma 🎬',          cat:'loisir', cost:180, income:28,  size:2, color:'#1d3557', emoji:'🎬' },
   { id:'zoo',       label:'Zoo 🦁',             cat:'loisir', cost:250, income:40,  size:2, color:'#52b788', emoji:'🦁' },
   // Transport
   { id:'road',     label:'Route 🛣️',      cat:'infra',    cost:5,   income:0,   size:1, color:'#6b6b6b', emoji:'🛣️' },
+  { id:'parking',  label:'Parking 🅿️',    cat:'infra',    cost:40,  income:6,   size:1, color:'#5f6670', emoji:'🅿️' },
   { id:'bridge_h', label:'Pont → 🌉',     cat:'infra',    cost:25,  income:0,   size:1, color:'#8B7355', emoji:'🌉' },
   { id:'bridge_v', label:'Pont ↓ 🌉',     cat:'infra',    cost:25,  income:0,   size:1, color:'#8B7355', emoji:'🌉' },
   { id:'boat1',    label:'Voilier ⛵',     cat:'bateau',   cost:30,  income:5,   size:1, color:'#ffffff', emoji:'⛵' },
@@ -17449,6 +17452,7 @@ function w3Load(){
 
 // ── Initialisation ───────────────────────────────────────────────
 function w3Init(){
+  w3LoadSprites();
   w3Load();
   if(Object.keys(W3.grid).length===0){
     // Terrain de départ
@@ -17631,6 +17635,32 @@ function harvestCell(col,row){
 }
 
 // ── Dessin ───────────────────────────────────────────────────────
+// ── Dessins Kenney (assets/monde/*.png, composés depuis les packs Kenney CC0) ──
+const W3S={};const W3_SPRITES=['house1','house2','house3','shop','resto','pharmacy','school','hospital','garage','cinema','casino','farm','chicken','cow'];
+const W3_SIGN={pharmacy:['✚','#2b9348'],hospital:['✚','#d62828'],garage:['🔧',null],school:['🏫',null],cinema:['🎬',null],casino:['🕹️',null],shop:['👗',null],resto:['🍔',null],parking:['P','#1d4ed8']};
+const W3_CARS={};
+function w3LoadSprites(){
+  if(W3S._done)return;W3S._done=true;const v='?v=1';
+  W3_SPRITES.forEach(id=>{const im=new Image();im.src='assets/monde/'+id+'.png'+v;W3S[id]=im;});
+  ['taxi','police','ambulance'].forEach(t=>['NE','NW','SE','SW'].forEach(d=>{const im=new Image();im.src='assets/monde/car_'+t+'_'+d+'.png'+v;W3_CARS[t+'_'+d]=im;}));
+}
+function w3SpriteOk(id){const im=W3S[id];return im&&im.complete&&im.naturalWidth>0;}
+// Dessin posé pile sur la case : bas de l'image = pointe basse de la case
+function drawSprite(ctx,col,row,id,anim){
+  const im=W3S[id];const {x,y}=toIso(col,row);
+  const w=TILE_W,h=im.naturalHeight*(TILE_W/im.naturalWidth);
+  const sc=anim<1?(0.4+0.6*anim):1;
+  ctx.save();ctx.translate(x,y+TILE_H);ctx.scale(sc,sc);ctx.drawImage(im,-w/2,-h,w,h);ctx.restore();
+  return {top:y+TILE_H-h*sc};
+}
+function drawSign(ctx,x,y,id){
+  const sg=W3_SIGN[id];if(!sg)return;
+  ctx.save();ctx.fillStyle='#fff';ctx.strokeStyle='rgba(0,0,0,.25)';ctx.lineWidth=1;
+  ctx.beginPath();ctx.roundRect(x-9,y-9,18,18,5);ctx.fill();ctx.stroke();
+  ctx.textAlign='center';ctx.textBaseline='middle';
+  if(sg[1]){ctx.fillStyle=sg[1];ctx.font='bold 14px sans-serif';}else ctx.font='12px serif';
+  ctx.fillText(sg[0],x,y+1);ctx.restore();
+}
 function drawTile(ctx,col,row,fillColor,strokeColor){
   const {x,y}=toIso(col,row);
   ctx.beginPath();
@@ -17745,8 +17775,29 @@ function w3Draw(){
 
     const {x,y}=toIso(col,row);
 
-    if(cell.id==='road'){
-      drawTile(ctx,col,row,'#7a7a7a','#555');
+    if(w3SpriteOk(cell.id)){
+      const r=drawSprite(ctx,col,row,cell.id,cell.anim);
+      if(cell.id==='cow'||cell.id==='chicken'){
+        const bob=Math.sin(W3.t*0.06+col)*2;ctx.font=(cell.id==='cow'?'20px':'16px')+' serif';ctx.textAlign='center';ctx.textBaseline='middle';
+        ctx.fillText(cell.id==='cow'?'🐄':'🐔',x-8+Math.sin(W3.t*0.02+row)*6,y+TILE_H/2+bob);
+        if(cell.id==='chicken')ctx.fillText('🐔',x+10,y+TILE_H/2+4-bob);
+      }
+      drawSign(ctx,x+14,r.top+12,cell.id);
+      if(cell.harvest>0){ctx.font='15px serif';ctx.textAlign='center';ctx.fillText('💰',x,r.top-6+Math.sin(W3.t*0.08)*3);}
+    } else if(cell.id==='road'||cell.id==='parking'){
+      drawTile(ctx,col,row,'#5f6670','#4a5058');
+      const R=(c,r)=>{const g=W3.grid[w3Key(c,r)];return g&&(g.id==='road'||g.id==='bridge_h'||g.id==='bridge_v');};
+      ctx.save();ctx.strokeStyle='rgba(255,255,255,.85)';ctx.lineWidth=1.5;ctx.setLineDash([4,4]);ctx.beginPath();
+      if(cell.id==='road'){
+        const alongCol=R(col-1,row)||R(col+1,row),alongRow=R(col,row-1)||R(col,row+1);
+        if(alongCol||!alongRow){ctx.moveTo(x-TILE_W/4,y+TILE_H/4);ctx.lineTo(x+TILE_W/4,y+TILE_H*3/4);}
+        if(alongRow){ctx.moveTo(x+TILE_W/4,y+TILE_H/4);ctx.lineTo(x-TILE_W/4,y+TILE_H*3/4);}
+        ctx.stroke();
+      } else {
+        ctx.setLineDash([]);for(let k=-1;k<=1;k++){ctx.moveTo(x+k*12-6,y+TILE_H/2-3);ctx.lineTo(x+k*12+6,y+TILE_H/2+3);}ctx.stroke();
+        drawSign(ctx,x,y+4,'parking');
+      }
+      ctx.restore();
     } else if(cell.id==='river'){
       // Eau animée
       const wave=Math.sin(W3.t*0.05+col*0.5+row*0.3)*0.15+0.85;
@@ -18235,8 +18286,12 @@ function w3Draw(){
     const {x:x1,y:y1}=toIso(car.pCol||car.col,car.pRow||car.row);
     const {x:x2,y:y2}=toIso(car.col,car.row);
     const cx=x1+(x2-x1)*t, cy=y1+(y2-y1)*t;
-    ctx.font='16px serif';ctx.textAlign='center';ctx.fillStyle='#000';
-    ctx.fillText(car.emoji, cx, cy+TILE_H/2-4);
+    const dc=car.col-(car.pCol??car.col),dr=car.row-(car.pRow??car.row);
+    const dir=dc>0?'SE':dc<0?'NW':dr>0?'SW':dr<0?'NE':(car.lastDir||'SE');car.lastDir=dir;
+    const kind=car.kind||(car.kind=['taxi','taxi','police','ambulance'][Math.floor(Math.random()*4)]);
+    const im=W3_CARS[kind+'_'+dir];
+    if(im&&im.complete&&im.naturalWidth){const w=24,h=im.naturalHeight*24/im.naturalWidth;ctx.drawImage(im,cx-w/2,cy+TILE_H/2-h+4,w,h);}
+    else{ctx.font='16px serif';ctx.textAlign='center';ctx.fillStyle='#000';ctx.fillText(car.emoji, cx, cy+TILE_H/2-4);}
   });
 
   // Bateaux sur l'eau — logique dans tickBoats(), ici rendu pur
