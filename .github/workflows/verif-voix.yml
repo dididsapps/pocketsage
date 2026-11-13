@@ -21,7 +21,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install faster-whisper requests
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: pip install faster-whisper requests numpy
       - run: python3 tools/verif_voix.py --max ${{ github.event.inputs.max || 0 }}
       - name: Publier le rapport (branche rapport-voix)
         if: always()
