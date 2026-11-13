@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=45">
+<link rel="stylesheet" href="css/jeux.css?v=46">
 </head>
 <body>
 
@@ -1442,9 +1442,10 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=45"></script>
-<script src="js/jeux-cerveau.js?v=45"></script>
-<script src="js/coach-voix.js?v=45"></script>
+<script src="js/jeux.js?v=46"></script>
+<script src="js/jeux-cerveau.js?v=46"></script>
+<script src="js/coach-voix.js?v=46"></script>
+<script src="js/monde-interieur.js?v=46"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -19272,15 +19273,23 @@ function lifePath(from,to){ // largeur d'abord sur la grille (4 directions)
   const path=[];let cur=end;while(cur){path.unshift({col:cur[0],row:cur[1]});cur=prev[key(cur[0],cur[1])];}
   return path.slice(1);
 }
-function lifeGo(col,row){
+function lifeGo(col,row,manual){
   const L=W3.life;[col,row]=w3Anchor(w3Key(col,row)).split(',').map(Number);const g=W3.grid[w3Key(col,row)];
   const to={col,row};if(g&&g.fp&&W3_FP[g.id])to.cells=new Set(w3FpCells(col,row,g.id).map(x=>x[0]+','+x[1]));
   const p=lifePath(L.pos,to);
   if(!p){w3Msg('Je ne trouve pas de chemin jusque-là 🤔');return;}
-  L.path=p;L.t=0;L.target=g?{col,row,id:g.id}:null;L.idle=0;
+  L.path=p;L.t=0;L.target=g?{col,row,id:g.id,manual:!!manual}:null;L.idle=0;
+  if(!p.length)lifeArrive();
 }
 function lifeArrive(){
   const L=W3.life,T=L.target;L.target=null;if(!T)return;
+  // bâtiment avec intérieur (choisi par l'enfant) → on entre ! (la mission compte dès l'entrée)
+  if(T.manual&&window.w3IntHas&&w3IntHas(T.id)){
+    const pos=toIso(L.pos.col,L.pos.row),m=(L.missions||[]).find(x=>!x.ok&&!x.build&&x.id===T.id);
+    if(m){m.ok=true;W3.coins+=20;W3.floats.push({x:pos.x,y:pos.y-50,text:'Mission réussie ! +20🪙',life:110,dy:-0.35});try{sndStar();}catch(e){}
+      if(!L.bonus&&L.missions.every(x=>x.ok)){L.bonus=true;W3.coins+=30;w3Msg('🏆 Les 3 missions du jour sont réussies ! +30🪙');}}
+    w3UpdateHUD();w3Save();lifePanel();w3IntOpen(T.id);return;
+  }
   const a=LIFE_ACT[T.id];if(!a){w3Msg('Tu visites : '+((CATALOG.find(c=>c.id===T.id)||{}).label||T.id));return;}
   if(a.c&&W3.coins<a.c){w3Msg('Pas assez de 🪙 pour : '+a.t+' ('+a.c+'🪙)');return;}
   if(a.c){W3.coins-=a.c;}
@@ -19331,7 +19340,10 @@ function lifeDraw(ctx){
   const bob=moving?Math.abs(Math.sin(W3.t*0.3))*3:0;
   ctx.save();ctx.fillStyle='rgba(0,0,0,.25)';ctx.beginPath();ctx.ellipse(p.x,p.y+2,9,4,0,0,7);ctx.fill();
   const av=document.getElementById('w3-av');
-  if(av&&av.dataset.ok){const cv=W3.canvas;const z=W3.cam.zoom;const h=Math.round(44*z);
+  // Andrew : vrais sprites animés (4 directions) dessinés sur la carte
+  const dc=moving?L.path[0].col-L.pos.col:0,dr=moving?L.path[0].row-L.pos.row:0;
+  if(window.w3DrawAvatar&&w3DrawAvatar(ctx,p.x,p.y+2,moving?((dc<0||dr<0)?'walkB':'walkF'):'idle',Math.floor(W3.t*0.18),dc>0||dr<0)){if(av)av.style.display='none';}
+  else if(av&&av.dataset.ok){const cv=W3.canvas;const z=W3.cam.zoom;const h=Math.round(44*z);
     av.style.height=h+'px';av.style.left=(cv.offsetLeft+W3.cam.x+p.x*z)+'px';av.style.top=(cv.offsetTop+W3.cam.y+(p.y-bob+2)*z-h)+'px';av.style.display='block';
     av.style.transform='translateX(-50%)'+((L.path&&L.path.length&&L.path[0].col<L.pos.col)||(L.path&&L.path.length&&L.path[0].row>L.pos.row)?' scaleX(-1)':'');}
   else{ctx.fillStyle='#000';ctx.font='26px serif';ctx.textAlign='center';ctx.fillText('🧒',p.x,p.y-12-bob);}
@@ -19348,7 +19360,7 @@ function lifeTap(col,row){
   const L=W3.life;
   // toucher la bulle d'envie → aller au bon endroit
   const g=W3.grid[w3Anchor(w3Key(col,row))];
-  if(g&&!LIFE_WALK.has(g.id)){lifeGo(col,row);return;}
+  if(g&&!LIFE_WALK.has(g.id)){lifeGo(col,row,true);return;}
   if(lifeWalkable(col,row)){const p=lifePath(L.pos,{col,row});if(p){L.path=p;L.t=0;L.target=null;}}
 }
 function lifePanel(){
@@ -19360,11 +19372,11 @@ function lifePanel(){
     ${n?`<button class="lf-need" onclick="w3LifeNeed()">${n[1]} ${n[0]==='faim'?'J\'ai faim ! Aller manger':n[0]==='energie'?'Je suis fatigué ! Aller dormir':'Je m\'ennuie ! Aller m\'amuser'}</button>`:''}
     <div class="lf-mis"><b>🥋 Missions de Sensei</b>${(L.missions||[]).map(m=>`<div class="${m.ok?'lf-ok':''}">${m.ok?'✅':'⬜'} ${m.t}${m.ok?'':' <em>+20🪙</em>'}</div>`).join('')}</div>
     <label class="lf-libre"><input type="checkbox" ${L.libre?'checked':''} onchange="w3LifeLibre(this.checked)"> 🎲 Quartier libre (l'avatar choisit seul)</label>
-    <div class="lf-tip">Touche un bâtiment pour y aller.</div>`;
+    <div class="lf-tip">Touche un bâtiment pour y aller. 🚪 Maison, resto, magasins, école, hôpital, hôtel : on peut entrer dedans !</div>`;
 }
 window.w3LifeNeed=function(){const n=lifeNeed();if(!n)return;const t=lifeNearest(n[2]);if(t)lifeGo(t.col,t.row);else w3Msg('Construis d\'abord : '+n[2].slice(0,2).map(i=>(CATALOG.find(c=>c.id===i)||{}).label||i).join(' ou '));};
 window.w3LifeLibre=function(v){W3.life.libre=!!v;w3Save();};
-window.__w3={get W3(){return W3;},go:(c,r)=>lifeGo(c,r),iso:(c,r)=>toIso(c,r),tap:(x,y)=>w3HandleTap(x,y)}; // aide aux tests
+window.__w3={get W3(){return W3;},go:(c,r,m)=>lifeGo(c,r,m),iso:(c,r)=>toIso(c,r),tap:(x,y)=>w3HandleTap(x,y),save:()=>w3Save(),hud:()=>w3UpdateHUD(),msg:t=>w3Msg(t),panel:()=>lifePanel()}; // aide aux tests
 window.w3ToggleLife=function(){
   W3.mode=W3.mode==='life'?'build':'life';
   const tb=document.getElementById('w3-build-tools'),lf=document.getElementById('w3-life'),bt=document.getElementById('w3-mode-btn');

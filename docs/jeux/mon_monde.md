@@ -70,4 +70,11 @@
 - **Immeubles 3×3** (Habitat) : Immeuble 3 étages (briques, balcons, toit en pente — 300 🪙), Immeuble 10 étages (réservoir d'eau, antenne — 700 🪙), Tour moderne vitrée rectangulaire avec reflets (900 🪙), Burj Khalifa ~4× plus haut, à étages en retrait, flèche et fontaine (3000 🪙, +400).
 - **Hôtels** (nouvel onglet) : Hôtel lagon 10×10 (bungalows sur pilotis reliés par un ponton, lagon turquoise, lodge au toit de paille, piscine, palmiers, parasols, kayak — 2500 🪙), Hôtel Voile 3×3 (gratte-ciel en forme de voile sur son île, héliport — 2000 🪙), Hôtel Atlantis 5×5 (2 tours roses reliées par une arche, dômes dorés, ailes basses, piscine, plage — 3500 🪙).
 - **Sport** (nouvel onglet) : Tennis 2×1 et Padel 2×1 (grillage autour de chaque terrain, vitres au fond du padel, échange animé), Terrain de foot 4×2 avec tribune et spectateurs, Grand stade 6×6 type Stade de France (gradins bleu-blanc-rouge, toit, match en cours), Baseball 4×4 (losange, monticule, lancer animé), Piste d'athlétisme 4×3 (6 couloirs, coureurs).
-- Reste à faire : familles (5 personnages), économie recalibrée, un monde par profil.
+
+## 10. ✅ Intérieurs (13/11/2026) — « 3 couches » : ville → bâtiment en coupe → pièce
+- En mode « Ma vie », toucher une maison/immeuble, le resto, la boutique, le supermarché, l'hôpital, la pharmacie, l'école ou un hôtel : l'avatar y va et **entre**. Vue en coupe façon Les Sims (murs du fond, cloisons coupées), boutons de pièces pour zoomer (Salon, Cuisine, Chambre…), pincer/glisser pour zoomer/déplacer.
+- Meubles : Kenney Furniture Kit, Mini Shop, Food Kit (CC0) **rendus en isométrique par notre propre script** (`render3d.py`, scratchpad) à partir des modèles 3D → `assets/interieur/*.webp` (~200 Ko) + `sprites.json` (ancre, emprise). Recolorable à volonté.
+- Plans + actions : `data/interieurs.json` (généré par `layouts.py`). Chaque meuble peut avoir une action (faim/énergie/joie/pièces, pose, durée). Le bureau et les pupitres proposent d'ouvrir une activité (Maths, Sciences, Langues, Politesse).
+- Avatar Andrew : planches ChatGPT découpées (fond retiré, pieds alignés) → `assets/interieur/andrew_walk_front|walk_back|poses.webp`, 4 directions par miroir, poses assis/dodo/manger/coucou/saut. Utilisé aussi dans la ville. Les autres avatars : image fixe en attendant leurs planches.
+- Moteur : `js/monde-interieur.js`.
+- Reste à faire : planches des autres avatars, mode déco (acheter/placer ses meubles), étages pour immeubles/hôtels, familles, économie recalibrée, un monde par profil.
