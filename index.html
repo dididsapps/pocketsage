@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=53">
+<link rel="stylesheet" href="css/jeux.css?v=54">
 </head>
 <body>
 
@@ -1442,11 +1442,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=53"></script>
-<script src="js/jeux-cerveau.js?v=53"></script>
-<script src="js/coach-voix.js?v=53"></script>
-<script src="js/monde-interieur.js?v=53"></script>
-<script src="js/monde-plus.js?v=53"></script>
+<script src="js/jeux.js?v=54"></script>
+<script src="js/jeux-cerveau.js?v=54"></script>
+<script src="js/coach-voix.js?v=54"></script>
+<script src="js/monde-interieur.js?v=54"></script>
+<script src="js/monde-plus.js?v=54"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -17576,6 +17576,7 @@ function w3Init(){
 function placeItem(col,row,id){
   const key=w3Key(col,row);
   W3.grid[key]={id,anim:0,harvest:0,buildTime:W3.t,since:new Date().toISOString().slice(0,10),earned:0};
+  const _bs=w3BuildSec(id);if(_bs)W3.grid[key].bUntil=Date.now()+_bs*1000;
   if(!W3.stats[id])W3.stats[id]=0;
   W3.stats[id]++;
 }
@@ -17682,6 +17683,15 @@ function tickBoats(){
 }
 
 // ── Revenus / Récolte ────────────────────────────────────────────
+// Plus un bâtiment coûte cher (rare, rapporte gros), plus il faut attendre pour récolter
+// et plus son chantier est long. W3.t avance d'1 par image (~60/s).
+function w3CycleSec(id){const c=(CATALOG.find(x=>x.id===id)||{}).cost||0;return c<60?10:c<150?20:c<400?40:c<1000?75:c<2500?150:300;}
+function w3Cycle(id){return w3CycleSec(id)*60;}
+const W3_NO_CHANTIER=new Set(['road','parking','river','lake','bridge_h','bridge_v','tree','flowers','fence','pen','_occ']);
+function w3BuildSec(id){const cat=CATALOG.find(x=>x.id===id);if(!cat||W3_NO_CHANTIER.has(id)||cat.cat==='nature'||cat.cat==='bateau'||(cat.cost||0)<20)return 0;
+  const c=cat.cost;return c<60?5:c<150?10:c<400?20:c<1000?40:c<2500?75:120;}
+function w3Building(cell){return !!(cell&&cell.bUntil&&Date.now()<cell.bUntil);}
+function w3Dur(sec){sec=Math.max(0,Math.ceil(sec));return sec>=60?Math.floor(sec/60)+' min '+String(sec%60).padStart(2,'0'):sec+' s';}
 function getIncome(id){
   return CATALOG.find(c=>c.id===id)?.income||0;
 }
@@ -17690,11 +17700,12 @@ function tickHarvest(){
   // Grille normale
   Object.entries(W3.grid).forEach(([key,cell])=>{
     const inc=getIncome(cell.id);
+    if(inc>0&&w3Building(cell)){cell.lastTick=now;return;}   // chantier : pas encore de revenus
     if(inc>0){
-      const cycles=Math.floor((now-(cell.lastTick||cell.buildTime||0))/480);
+      const cy=w3Cycle(cell.id),cycles=Math.floor((now-(cell.lastTick||cell.buildTime||0))/cy);
       if(cycles>0){
         cell.harvest=(cell.harvest||0)+inc*cycles;
-        cell.lastTick=(cell.lastTick||0)+cycles*480;
+        cell.lastTick=(cell.lastTick||0)+cycles*cy;
         if(cell.harvest>inc*10)cell.harvest=inc*10;
       }
     }
@@ -17705,10 +17716,10 @@ function tickHarvest(){
       const cat=CATALOG.find(d=>d.id===ab.id);
       const inc=cat?cat.income:0;
       if(inc>0){
-        const cycles=Math.floor((now-(ab.lastTick||ab.buildTime||0))/480);
+        const cy=w3Cycle(ab.id),cycles=Math.floor((now-(ab.lastTick||ab.buildTime||0))/cy);
         if(cycles>0){
           ab.harvest=(ab.harvest||0)+inc*cycles;
-          ab.lastTick=(ab.lastTick||0)+cycles*480;
+          ab.lastTick=(ab.lastTick||0)+cycles*cy;
           if(ab.harvest>inc*10)ab.harvest=inc*10;
         }
       }
@@ -17945,7 +17956,7 @@ function drawWaterpark(ctx,col,row){
 }
 
 // ── Cultures (stade de pousse = avancement du cycle de récolte) ─────────
-function w3CropStage(cell){if(cell.harvest>0)return 1;const t0=cell.lastTick||cell.buildTime||0,d=W3.t-t0;return d<0?1:Math.max(0.2,Math.min(1,(d%480)/480));}
+function w3CropStage(cell){if(cell.harvest>0)return 1;const t0=cell.lastTick||cell.buildTime||0,d=W3.t-t0,cy=w3Cycle(cell.id);return d<0?1:Math.max(0.2,Math.min(1,(d%cy)/cy));}
 function w3Soil(ctx,col,row,grass){
   const {x,y}=toIso(col,row),h=3,top=grass?'#7fb85a':'#8b5a2b',side=grass?'#5e8f3e':'#5c3a1a';
   w3Poly(ctx,[[x-TILE_W/2,y+TILE_H/2-h],[x,y+TILE_H-h],[x,y+TILE_H],[x-TILE_W/2,y+TILE_H/2]],side);
@@ -18014,6 +18025,30 @@ function w3FitAnchor(col,row,id){const f=W3_FP[id];if(!f)return null;
   for(const [i,j] of offs){if(w3FreeFp(col-i,row-j,id))return [col-i,row-j];}return null;}
 function w3RemoveItem(key){const g=W3.grid[key];if(!g)return;delete W3.grid[key];
   Object.keys(W3.grid).forEach(k=>{const o=W3.grid[k];if(o.id==='_occ'&&o.ref===key)delete W3.grid[k];});}
+function w3DrawCar(ctx,car){
+    const t=car.t;
+    const {x:x1,y:y1}=toIso(car.pCol||car.col,car.pRow||car.row);
+    const {x:x2,y:y2}=toIso(car.col,car.row);
+    const lf0=w3Lift(car.pCol??car.col,car.pRow??car.row);
+    const cx=x1+(x2-x1)*t, cy=y1+(y2-y1)*t-(lf0+(w3Lift(car.col,car.row)-lf0)*t);
+    const dc=car.col-(car.pCol??car.col),dr=car.row-(car.pRow??car.row);
+    const dir=dc>0?'SE':dc<0?'NW':dr>0?'SW':dr<0?'NE':(car.lastDir||'SE');car.lastDir=dir;
+    const kind=car.kind||(car.kind=['taxi','taxi','police','ambulance'][Math.floor(Math.random()*4)]);
+    const im=W3_CARS[kind+'_'+dir];
+    if(im&&im.complete&&im.naturalWidth){const w=24,h=im.naturalHeight*24/im.naturalWidth;ctx.drawImage(im,cx-w/2,cy+TILE_H/2-h+4,w,h);}
+    else{ctx.font='16px serif';ctx.textAlign='center';ctx.fillStyle='#000';ctx.fillText(car.emoji, cx, cy+TILE_H/2-4);}
+  }
+// Chantier : échafaudage + barre de progression + temps restant
+function w3DrawChantier(ctx,B){const cell=B.e[1],tot=w3BuildSec(cell.id)*1000||1,left=Math.max(0,cell.bUntil-Date.now()),pr=1-left/tot;
+  const P=w3P(B.c,B.r),base=P(B.fw/2,B.fh/2,0),h=26+8*Math.max(B.fw,B.fh);
+  ctx.save();ctx.strokeStyle='#e9a23b';ctx.lineWidth=1.6;
+  [[0,0],[B.fw,0],[B.fw,B.fh],[0,B.fh]].forEach(([u,v])=>{const a=P(u,v,0);ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(a[0],a[1]-h);ctx.stroke();});
+  for(let z=10;z<h;z+=12){ctx.beginPath();[[0,B.fh],[B.fw,B.fh],[B.fw,0]].forEach(([u,v],i)=>{const a=P(u,v,0);i?ctx.lineTo(a[0],a[1]-z):ctx.moveTo(a[0],a[1]-z);});ctx.stroke();}
+  const y=base[1]-h-14,w=Math.max(34,14*Math.max(B.fw,B.fh));
+  ctx.fillStyle='rgba(0,0,0,.55)';ctx.beginPath();ctx.roundRect(base[0]-w/2,y,w,7,4);ctx.fill();
+  ctx.fillStyle='#ffd166';ctx.beginPath();ctx.roundRect(base[0]-w/2+1,y+1,(w-2)*pr,5,3);ctx.fill();
+  ctx.font='bold 10px sans-serif';ctx.textAlign='center';ctx.textBaseline='bottom';ctx.lineWidth=3;ctx.strokeStyle='rgba(0,0,0,.6)';
+  const t='🏗️ '+w3Dur(left/1000);ctx.strokeText(t,base[0],y-2);ctx.fillStyle='#fff';ctx.fillText(t,base[0],y-2);ctx.restore();}
 function w3Depth(k,cell){const [c,r]=k.split(',').map(Number);const f=cell.fp&&W3_FP[cell.id];return f?c+r+(f[0]+f[1])/2-1:c+r;}
 
 // Projection d'un point (u le long des colonnes, v le long des lignes, z hauteur en px) depuis la case (c0,r0)
@@ -19054,8 +19089,8 @@ function w3Draw(){
       const cat=CATALOG.find(d=>d.id===cell.id);
       if(!cat)return;
       // Tick harvest
-      const cycles=Math.floor((W3.t-(cell.lastTick||cell.buildTime||0))/480);
-      if(cycles>0){cell.harvest+=(cell.income||cat.income||0)*cycles;cell.lastTick=(cell.lastTick||cell.buildTime||0)+cycles*480;}
+      const _cy=w3Cycle(cell.id),cycles=Math.floor((W3.t-(cell.lastTick||cell.buildTime||0))/_cy);
+      if(cycles>0){cell.harvest+=(cell.income||cat.income||0)*cycles;cell.lastTick=(cell.lastTick||cell.buildTime||0)+cycles*_cy;}
       const wave=Math.sin(W3.t*0.04+c)*1.5;
       const sc=cell.anim<1?(0.4+0.6*Math.min(1,cell.anim+0.05)):1;
       cell.anim=Math.min(1,cell.anim+0.05);
@@ -19067,7 +19102,19 @@ function w3Draw(){
     });
   }
 
-  sorted.forEach(e=>{if(!W3_FLAT.has(e[1].id))drawCell(e);});
+  // Voitures triées avec les bâtiments : un bâtiment devant la route cache la voiture
+  updateCars();
+  // (on dessine la voiture juste avant le 1er bâtiment devant lequel elle passe « derrière »)
+  const _solid=sorted.filter(e=>!W3_FLAT.has(e[1].id)).map(e=>{const [c,r]=e[0].split(',').map(Number),f=(e[1].fp&&W3_FP[e[1].id])||[1,1];return {e,c,r,fw:f[0],fh:f[1]};});
+  const _before=new Map();const _end=[];
+  W3.cars.forEach(car=>{const t=car.t||0,pc=car.pCol??car.col,pr=car.pRow??car.row;
+    const cc=Math.round(pc+(car.col-pc)*t),cr=Math.round(pr+(car.row-pr)*t);
+    const k=_solid.findIndex(B=>!(B.c===cc&&B.r===cr&&B.fw===1&&B.fh===1)&&cc<B.c+B.fw&&cr<B.r+B.fh&&cc+cr<B.c+B.r+B.fw+B.fh-1
+      &&Math.abs((B.c+B.fw/2)-(B.r+B.fh/2)-(cc+.5-(cr+.5)))<=(B.fw+B.fh)/2+.6&&(B.c+B.fw/2+B.r+B.fh/2)-(cc+cr+1)<=B.fw+B.fh+4);
+    if(k<0)_end.push(car);else{if(!_before.has(k))_before.set(k,[]);_before.get(k).push(car);}});
+  _solid.forEach((B,i)=>{const l=_before.get(i);if(l)l.forEach(car=>w3DrawCar(ctx,car));
+    if(w3Building(B.e[1])){ctx.save();ctx.globalAlpha=.45;drawCell(B.e);ctx.restore();w3DrawChantier(ctx,B);}else drawCell(B.e);});
+  _end.forEach(car=>w3DrawCar(ctx,car));
   // bâtiment choisi (surbrillance) + badges ⭐ ma maison / 🛋️ décorée
   if(W3.sel&&W3.grid[W3.sel]){const g=W3.grid[W3.sel],[sc,sr]=W3.sel.split(',').map(Number),f=(g.fp&&W3_FP[g.id])||[1,1],a=.55+.45*Math.sin(W3.t*0.12);
     const Pq=w3P(sc,sr);ctx.save();ctx.setLineDash([6,4]);ctx.lineDashOffset=-W3.t*0.6;w3Poly(ctx,[Pq(0,0),Pq(f[0],0),Pq(f[0],f[1]),Pq(0,f[1])],`rgba(255,209,102,${.18*a})`,`rgba(255,209,102,${a})`,3);ctx.restore();}
@@ -19079,22 +19126,6 @@ function w3Draw(){
   // Avatar (mode Ma vie)
   if(W3.mode==='life'){lifeTick();lifeDraw(ctx);}
   if(window.w3Hooks)w3Hooks.draw.forEach(f=>{try{f(ctx);}catch(e){}});
-
-  // Voitures
-  updateCars();
-  W3.cars.forEach(car=>{
-    const t=car.t;
-    const {x:x1,y:y1}=toIso(car.pCol||car.col,car.pRow||car.row);
-    const {x:x2,y:y2}=toIso(car.col,car.row);
-    const lf0=w3Lift(car.pCol??car.col,car.pRow??car.row);
-    const cx=x1+(x2-x1)*t, cy=y1+(y2-y1)*t-(lf0+(w3Lift(car.col,car.row)-lf0)*t);
-    const dc=car.col-(car.pCol??car.col),dr=car.row-(car.pRow??car.row);
-    const dir=dc>0?'SE':dc<0?'NW':dr>0?'SW':dr<0?'NE':(car.lastDir||'SE');car.lastDir=dir;
-    const kind=car.kind||(car.kind=['taxi','taxi','police','ambulance'][Math.floor(Math.random()*4)]);
-    const im=W3_CARS[kind+'_'+dir];
-    if(im&&im.complete&&im.naturalWidth){const w=24,h=im.naturalHeight*24/im.naturalWidth;ctx.drawImage(im,cx-w/2,cy+TILE_H/2-h+4,w,h);}
-    else{ctx.font='16px serif';ctx.textAlign='center';ctx.fillStyle='#000';ctx.fillText(car.emoji, cx, cy+TILE_H/2-4);}
-  });
 
   // Floats
   W3.floats=W3.floats.filter(f=>{
@@ -19427,6 +19458,7 @@ function lifeGo(col,row,manual){
 function lifeArrive(){
   const L=W3.life,T=L.target;L.target=null;if(!T)return;
   // bâtiment avec intérieur (choisi par l'enfant) → on entre ! (la mission compte dès l'entrée)
+  if(T.manual&&w3Building(W3.grid[w3Key(T.col,T.row)])){w3Msg('🏗️ Ce bâtiment est encore en construction !');return;}
   if(T.manual&&window.w3IntHas&&w3IntHas(T.id)){
     const pos=toIso(L.pos.col,L.pos.row),m=(L.missions||[]).find(x=>!x.ok&&!x.build&&x.id===T.id);
     if(m){m.ok=true;W3.coins+=20;W3.floats.push({x:pos.x,y:pos.y-50,text:'Mission réussie ! +20🪙',life:110,dy:-0.35});try{sndStar();}catch(e){}
@@ -19638,15 +19670,16 @@ function w3Card(){
   if(!cell||cell.id==='_occ'){if(el)el.remove();W3.sel=null;return;}
   const cat=CATALOG.find(c=>c.id===cell.id)||{},[c,r]=k.split(',').map(Number);
   if(!el){el=document.createElement('div');el.id='w3-card';(document.getElementById('world3-wrap')||document.body).appendChild(el);}
-  const perMin=cat.income?Math.round(cat.income*3600/480):0,inter=window.w3IntHas&&w3IntHas(cell.id),hab=cat.cat==='habitat',life=W3.mode==='life';
+  const perMin=cat.income?Math.round(cat.income*60/w3CycleSec(cell.id)):0,_bld=w3Building(cell),_wait=cat.income&&!(cell.harvest>0)?(w3Cycle(cell.id)-((W3.t-(cell.lastTick||cell.buildTime||0))%w3Cycle(cell.id)))/60:0,inter=window.w3IntHas&&w3IntHas(cell.id),hab=cat.cat==='habitat',life=W3.mode==='life';
   const nDeco=Array.isArray(cell.deco)?cell.deco.filter(x=>x.buy).length:0;
+  clearTimeout(W3._cardT);if(_bld||_wait)W3._cardT=setTimeout(()=>{if(W3.sel===k&&document.getElementById('w3-card'))w3Card();},1000);
   el.innerHTML=`<div class="wc-h"><span class="wc-e">${cat.emoji||'🏠'}</span><b class="wc-n">${w3Esc(cell.nom||cat.label||cell.id)}</b>${cell.home?'<span class="wc-star">⭐</span>':''}<button class="wc-x" data-a="x">✖</button></div>
    <div class="wc-l">${cat.income?`💰 Rapporte <b>+${cat.income}🪙</b> par récolte <small>(≈ ${perMin}🪙 par minute de jeu)</small>`:'🏡 Ne rapporte pas d’argent'}</div>
    <div class="wc-l">📈 Depuis le ${w3Fmt(cell.since)} : <b>${Math.floor(cell.earned||0)}🪙</b> gagnés</div>
-   ${cell.harvest>0?`<div class="wc-l">⏳ À récolter : <b>${Math.ceil(cell.harvest)}🪙</b></div>`:''}
+   ${_bld?`<div class="wc-l">🏗️ En construction… prêt dans <b>${w3Dur((cell.bUntil-Date.now())/1000)}</b></div>`:cell.harvest>0?`<div class="wc-l">💰 À récolter : <b>${Math.ceil(cell.harvest)}🪙</b></div>`:cat.income?`<div class="wc-l">⏳ Prochaine récolte dans <b>${w3Dur(_wait)}</b> <small>(toutes les ${w3Dur(w3CycleSec(cell.id))})</small></div>`:''}
    ${nDeco?`<div class="wc-l">🛋️ Décorée : ${nDeco} meuble${nDeco>1?'s':''} ajouté${nDeco>1?'s':''}</div>`:''}
-   <div class="wc-b">${cell.harvest>0?'<button data-a="harvest">💰 Récolter</button>':''}${inter?'<button data-a="enter" class="wc-main">🚪 Entrer</button>':''}<button data-a="go">🚶 Y aller</button>${hab?`<button data-a="home">${cell.home?'⭐ Ma maison':'☆ C’est ma maison'}</button>`:''}<button data-a="name">✏️ Nom</button>${window.w3CardExtra?w3CardExtra(cell,k):''}</div>
-   <div class="wc-tip">${life?'Touche encore le bâtiment pour y aller':'Touche encore le bâtiment pour récolter'}</div>`;
+   <div class="wc-b">${cell.harvest>0?'<button data-a="harvest">💰 Récolter</button>':''}${inter&&!_bld?'<button data-a="enter" class="wc-main">🚪 Entrer</button>':''}<button data-a="go">🚶 Y aller</button>${hab?`<button data-a="home">${cell.home?'⭐ Ma maison':'☆ C’est ma maison'}</button>`:''}<button data-a="name">✏️ Nom</button>${window.w3CardExtra?w3CardExtra(cell,k):''}</div>
+   <div class="wc-tip">${life?'Touche encore le bâtiment pour y aller':cell.harvest>0?'Touche encore le bâtiment pour récolter':''}</div>`;
   el.querySelectorAll('[data-a]').forEach(b=>b.onclick=e=>{e.stopPropagation();const a=b.dataset.a;
     if(a==='x'){w3Select(null);return;}
     if(a.startsWith('plus:')){window.w3CardAction&&w3CardAction(a.slice(5),cell,k);return;}

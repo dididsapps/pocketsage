@@ -37,11 +37,21 @@ function bfs(S,from,goal){ // goal(c,r) -> bool
     for(const [dc,dr] of [[1,0],[-1,0],[0,1],[0,-1]]){const n=[c+dc,r+dr],nk=key(n[0],n[1]);if(nk in prev||!free(S,n[0],n[1])||wallBetween(S,[c,r],n))continue;prev[nk]=key(c,r);q.push(n);}}
   return null;}
 // ── ouverture / fermeture ──
+// Maisons de l'enfant : au départ seulement l'essentiel (lit, cuisine, salle de bain, canapé, table…)
+// pour laisser de la place à SA déco. Les bâtiments « métier » (hôtels, magasins…) restent meublés.
+const MAISONS_LEGERES=['maison','villa','chateau'];
+function leger(list){
+  const ESS=/^(@piscine|kitchenSink|hood|toilet|bathtub|shower|bathroomSink|chair|stool)/;
+  const keep=list.filter(x=>x.act||ESS.test(x.m));
+  // garder le meuble-support sous un objet conservé (ex. meuble télé sous la télé)
+  keep.filter(x=>x.z).forEach(t=>{const b=list.find(y=>!y.z&&y.c===t.c&&y.r===t.r);if(b&&!keep.includes(b))keep.push(b);});
+  return list.filter(x=>keep.includes(x));}
 function open(bid,bk){
   return load().then(()=>{
     const lid=DATA.batiments[bid];if(!lid)return false;const L=DATA.interieurs[lid];
     const W=W3(),cell=bk&&W&&W.grid[bk];
-    const list=(L.deco&&cell&&Array.isArray(cell.deco))?cell.deco.map(x=>({...x})):L.items.map(x=>({...x}));
+    let list=(L.deco&&cell&&Array.isArray(cell.deco))?cell.deco.map(x=>({...x})):L.items.map(x=>({...x}));
+    if(L.deco&&!(cell&&Array.isArray(cell.deco))&&MAISONS_LEGERES.includes(lid))list=leger(list);
     const S=build(L,list);const p=L.porte||[0,0];
     ST={S,bid,lid,bk,cell,pos:{c:p[0],r:p[1]},path:[],t:0,dir:[0,1],walk:0,busy:null,floats:[],cam:{x:0,y:0,z:1},sel:null,deco:false,pick:null,moving:false};
     ui();fit();loop();return true;});
@@ -264,7 +274,7 @@ function decoPanel(){
      return `<button data-m="${m}" class="${ST.pick===m?'on':''}"><img src="assets/interieur/${sp?sp[0]:''}.webp?v=${VER}" alt=""><span>${x[1]}</span><em>${x[2]}🪙</em></button>`;}).join('')}</div>`;
   p.querySelectorAll('[data-c]').forEach(b=>b.onclick=()=>{ST.dcat=b.dataset.c;decoPanel();});
   p.querySelectorAll('[data-col]').forEach(b=>b.onclick=()=>{ST.dcol=b.dataset.col;if(ST.pick){const base=ST.pick.split('~')[0];const it=DATA.catalogue.find(x=>x[0]===base);ST.pick=it&&it[4].c&&ST.dcol?base+'~'+ST.dcol:base;}decoPanel();});
-  p.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>{ST.pick=ST.pick===b.dataset.m?null:b.dataset.m;ST.sel=null;decoPanel();setTip(ST.pick?'Touche le sol (ou un meuble pour poser dessus) 👇':'Choisis un meuble');});
+  p.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>{ST.pick=ST.pick===b.dataset.m?null:b.dataset.m;ST.sel=null;ST.ghost=null;decoPanel();setTip(ST.pick?'Touche le sol (ou un meuble pour poser dessus) 👇':'Choisis un meuble');});
 }
 function catOf(m){return DATA.catalogue.find(x=>x[0]===m.split('~')[0]);}
 function fits(m,rot,c,r,ignore){const sp=SPR[m+'|'+rot];if(!sp)return null;const fw=sp[3],fh=sp[4],flat=!!(catOf(m)||[0,0,0,0,{}])[4].flat;
@@ -279,14 +289,28 @@ function decoTap(sx,sy){
   const W=W3();const {c,r}=toCell(sx,sy);
   if(ST.moving&&ST.sel!=null){const o=ST.S.items[ST.sel];if(fits(o.m,o.rot,c,r,o.i)){const dc=c-o.c,dr=r-o.r;ST.S.items.forEach(x=>{if(x.deco&&x.c===o.c&&x.r===o.r&&x!==o){x.c+=dc;x.r+=dr;}});o.c=c;o.r=r;ST.moving=false;rebuild();ST.sel=null;decoPanel();setTip('Déplacé ! ✨');}else setTip('Pas de place ici 🙅');return;}
   if(ST.pick){const m=ST.pick,it=catOf(m);if(!it)return;if(W&&W.coins<it[2]){setTip('Pas assez de 🪙 ('+it[2]+'🪙)');return;}
-    let x=null;const base=ST.S.block[key(c,r)];
-    if(it[4].s&&base&&DATA.surfaces.includes(base.m.split('~')[0])){x={m,c:base.c,r:base.r,rot:base.rot,z:base.sp[5]||.4,deco:1,buy:1};}
-    else if(fits(m,0,c,r,-1)){x={m,c,r,rot:0,buy:1};if(it[4].flat)x.flat=1;}
-    if(!x){setTip('Pas de place ici 🙅 (essaie une case libre)');return;}
+    let x=null;
+    if(it[4].s){const base=surfaceAt(sx,sy,c,r);if(base)x={m,c:base.c,r:base.r,rot:base.rot,z:base.sp[5]||.4,deco:1,buy:1};}
+    if(!x&&fits(m,0,c,r,-1)){x={m,c,r,rot:0,buy:1};if(it[4].flat)x.flat=1;}
+    // 1er toucher = aperçu (vert = ok, rouge = pas de place) ; 2e toucher au même endroit = on pose
+    const g=ST.ghost,same=g&&g.m===m&&x&&g.ok&&g.c===x.c&&g.r===x.r&&!!g.z===!!x.z;
+    if(!same){ST.ghost=x?{...x,ok:true,sp:SPR[x.m+'|'+x.rot]}:{m,c,r,ok:false};if(ST.ghost.sp)img(ST.ghost.sp[0]);
+      setTip(x?(x.z?'Sur le meuble 👍 Touche encore pour poser ✅':'Touche encore ici pour poser ✅ (ou touche une autre case)'):(it[4].s?'Touche un meuble (table, meuble télé…) ou une case libre 🙅':'Pas de place ici 🙅 (les cases bleues sont libres)'));return;}
+    ST.ghost=null;
     if(W)W.coins-=it[2];ST.S.items.push({...x,sp:SPR[x.m+'|'+x.rot],i:ST.S.items.length});rebuild();try{sndTap();}catch(e){}
-    const p=P(x.c+.5,x.r+.5,30);ST.floats.push({x:p[0],y:p[1],text:'−'+it[2]+'🪙',life:70});setTip(it[1]+' posé ! Touche-le pour le tourner ou le déplacer');return;}
+    const p=P(x.c+.5,x.r+.5,30);ST.floats.push({x:p[0],y:p[1],text:'−'+it[2]+'🪙',life:70});setTip('✅ '+it[1]+' : c\'est posé ! Touche-le pour le tourner ou le déplacer');return;}
   const o=itemAtCell(c,r)||itemAt(sx,sy,true);if(o){ST.sel=o.i;ST.moving=false;decoPanel();setTip('Que veux-tu faire avec ce meuble ?');}
 }
+// Meuble-support sous le doigt (table, meuble télé…) : on regarde d'abord le dessin touché,
+// puis la case et ses voisines (le dessus d'un meuble est dessiné plus haut que sa case au sol)
+function surfaceAt(sx,sy,c,r){
+  const isS=o=>o&&!o.deco&&DATA.surfaces.includes(o.m.split('~')[0])&&!ST.S.items.some(x=>x.deco&&x.c===o.c&&x.r===o.r);
+  const x=(sx-ST.cam.x)/ST.cam.z,y=(sy-ST.cam.y)/ST.cam.z;let best=null;
+  ST.S.items.forEach(o=>{if(!isS(o))return;const sp=o.sp,im=IMG[sp[0]];if(!im||!im.ok)return;const p=P(o.c,o.r,(o.z||0)*VZ),x0=p[0]-sp[1]/2,y0=p[1]-sp[2]/2;
+    if(x>=x0&&x<=x0+im.width/2&&y>=y0&&y<=y0+im.height/2){const d=o.c+o.r;if(!best||d>best.d)best={o,d};}});
+  if(best)return best.o;
+  for(const [dc,dr] of [[0,0],[1,0],[0,1],[1,1]]){const b=ST.S.block[key(c+dc,r+dr)];const o=b&&ST.S.items.find(z=>z.c===b.c&&z.r===b.r&&!z.deco);if(isS(o))return o;}
+  return null;}
 function itemAtCell(c,r){let best=null;ST.S.items.forEach(o=>{if(c>=o.c&&c<o.c+o.fw&&r>=o.r&&r<o.r+o.fh){if(!best||(o.deco&&!best.deco)||(best.flat&&!o.flat))best=o;}});return best;}
 function decoAction(a){const o=ST.S.items[ST.sel];if(!o)return;const W=W3();
   if(a==='x'){ST.sel=null;ST.moving=false;decoPanel();return;}
@@ -298,6 +322,10 @@ function decoAction(a){const o=ST.S.items[ST.sel];if(!o)return;const W=W3();
 function decoDraw(c){
   const o=ST.sel!=null?ST.S.items[ST.sel]:null;
   if(o){c.save();c.setLineDash([4,3]);poly(c,[P(o.c,o.r),P(o.c+o.fw,o.r),P(o.c+o.fw,o.r+o.fh),P(o.c,o.r+o.fh)],'rgba(255,209,102,.25)','#ffd166',2);c.restore();}
+  const g=ST.pick&&ST.ghost;
+  if(g){c.save();const fw=g.sp?g.sp[3]:1,fh=g.sp?g.sp[4]:1,z=(g.z||0)*VZ;
+    poly(c,[P(g.c,g.r,z),P(g.c+fw,g.r,z),P(g.c+fw,g.r+fh,z),P(g.c,g.r+fh,z)],g.ok?'rgba(6,214,160,.35)':'rgba(239,71,111,.35)',g.ok?'#06d6a0':'#ef476f',2);
+    if(g.ok&&g.sp){c.globalAlpha=.7;try{sprite(c,g);}catch(e){}}c.restore();}
   if(ST.pick||ST.moving){c.save();c.globalAlpha=.25;for(let r=0;r<ST.S.h;r++)for(let k=0;k<ST.S.w;k++)if(!ST.S.block[key(k,r)])poly(c,[P(k+.08,r+.08),P(k+.92,r+.08),P(k+.92,r+.92),P(k+.08,r+.92)],null,'#4cc9f0',1);c.restore();}
 }
 // ── Objets dessinés à la main (luxe) ──
@@ -365,6 +393,6 @@ function lustres(c,L){(L.lustres||[]).forEach(([u,v,t])=>{const z=WALL+4,p=P(u,v
     c.fillStyle='rgba(220,240,255,.85)';c.beginPath();c.moveTo(cx,cy+1);c.lineTo(cx+1.5,cy+4);c.lineTo(cx,cy+7);c.lineTo(cx-1.5,cy+4);c.fill();}
   c.fillStyle='rgba(220,240,255,.9)';c.beginPath();c.moveTo(x,y+14);c.lineTo(x+3,y+19);c.lineTo(x,y+24);c.lineTo(x-3,y+19);c.fill();});}
 window.w3IntHas=id=>has(id);window.w3IntOpen=open;window.w3IntClose=close;window.w3IntLoad=load;
-window.__int={get ST(){return ST;},tap:(x,y)=>tap(x,y),goItem:i=>ST&&goItem(ST.S.items[i])};
+window.__int={get ST(){return ST;},tap:(x,y)=>tap(x,y),P:(u,v,z)=>P(u,v,z),goItem:i=>ST&&goItem(ST.S.items[i])};
 load().catch(()=>{});['walk_front','walk_back','poses'].forEach(avSheet);
 })();
