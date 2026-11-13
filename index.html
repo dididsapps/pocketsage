@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=52">
+<link rel="stylesheet" href="css/jeux.css?v=53">
 </head>
 <body>
 
@@ -1442,11 +1442,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=52"></script>
-<script src="js/jeux-cerveau.js?v=52"></script>
-<script src="js/coach-voix.js?v=52"></script>
-<script src="js/monde-interieur.js?v=52"></script>
-<script src="js/monde-plus.js?v=52"></script>
+<script src="js/jeux.js?v=53"></script>
+<script src="js/jeux-cerveau.js?v=53"></script>
+<script src="js/coach-voix.js?v=53"></script>
+<script src="js/monde-interieur.js?v=53"></script>
+<script src="js/monde-plus.js?v=53"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -10589,6 +10589,29 @@ function _ttsNext(){
   }catch(e){_ttsNext();}
 }
 
+// ── Symboles maths → mots pour la voix (même logique que tools/parle.py) ──
+const _PARLE_M={
+ FR:{'×':' fois ','÷':' divisé par ','≠':' différent de ','≤':' inférieur ou égal à ','≥':' supérieur ou égal à ','±':' plus ou moins ','≈':' environ ','−':' moins ','=':' égale ','+':' plus ','<':' inférieur à ','>':' supérieur à ','²':' au carré','³':' au cube','√':'racine carrée de ','%':' pour cent','km²':' kilomètres carrés','m²':' mètres carrés','cm²':' centimètres carrés','m³':' mètres cubes','cm³':' centimètres cubes','?':'combien','___':'combien'},
+ EN:{'×':' times ','÷':' divided by ','≠':' is not equal to ','≤':' is less than or equal to ','≥':' is greater than or equal to ','±':' plus or minus ','≈':' about ','−':' minus ','=':' equals ','+':' plus ','<':' is less than ','>':' is greater than ','²':' squared','³':' cubed','√':'the square root of ','%':' percent','km²':' square kilometres','m²':' square metres','cm²':' square centimetres','m³':' cubic metres','cm³':' cubic centimetres','?':'what','___':'what'},
+ ES:{'×':' por ','÷':' dividido entre ','≠':' distinto de ','≤':' menor o igual que ','≥':' mayor o igual que ','±':' más o menos ','≈':' aproximadamente ','−':' menos ','=':' igual a ','+':' más ','<':' menor que ','>':' mayor que ','²':' al cuadrado','³':' al cubo','√':'la raíz cuadrada de ','%':' por ciento','km²':' kilómetros cuadrados','m²':' metros cuadrados','cm²':' centímetros cuadrados','m³':' metros cúbicos','cm³':' centímetros cúbicos','?':'cuánto','___':'cuánto'}};
+const _PARLE_SYM=/[×÷≠≤≥√²³−±≈]/;
+function _ttsParle(t,lang){
+  if(!t||!(_PARLE_SYM.test(t)||/\d\s*[=+<>]\s*[\d?_]/.test(t)))return t;
+  const M=_PARLE_M[String(lang||'FR').slice(0,2).toUpperCase()]||_PARLE_M.FR;
+  let s=t;
+  s=s.replace(/(\d)\s*(km|cm|m)([²³])/g,(_,a,u,e)=>a+M[u+e]);
+  s=s.replace(/_{2,}/g,' '+M['___']+' ');
+  s=s.replace(/=\s*\?/g,' '+M['='].trim()+' '+M['?']+' ?');
+  s=s.replace(/√\s*\(?([\p{L}\p{N}_]+)\)?/gu,(_,x)=>M['√']+x);
+  for(const k of ['×','÷','≠','≤','≥','±','≈','−','²','³'])s=s.split(k).join(M[k]);
+  s=s.replace(/(?<=[\p{L}\p{N}_)])\s*=\s*/gu,M['=']);
+  s=s.replace(/(?<=[\p{L}\p{N}_)²])\s*\+\s*(?=[\p{L}\p{N}_(])/gu,M['+']);
+  s=s.replace(/(?<=[\p{L}\p{N}_)²])\s+-\s+(?=[\p{L}\p{N}_(])|(?<=\d)-(?=\d)/gu,M['−']);
+  s=s.replace(/(?<=[\p{L}\p{N}_)])\s*<\s*(?=[\p{L}\p{N}_(])/gu,M['<']);
+  s=s.replace(/(?<=[\p{L}\p{N}_)])\s*>\s*(?=[\p{L}\p{N}_(])/gu,M['>']);
+  s=s.replace(/(?<=\d)\s*%/g,M['%']);
+  return s.replace(/\s+/g,' ').trim();
+}
 function ttsSpeak(txt,lang){
   if(APP&&APP.silent)return;
   if(!txt)return;
@@ -10599,6 +10622,7 @@ function ttsSpeak(txt,lang){
   try{if(window.speechSynthesis)window.speechSynthesis.cancel();}catch(e){}
   const useLang=lang||(APP&&APP.cur&&APP.cur.nativeLang)||'FR';
   _ttsPlaying=true;
+  txt=_ttsParle(txt,useLang);
   const paras=(txt||'').split(/\n+/).map(s=>s.trim()).filter(Boolean);
   if(!paras.length)return;
   paras.forEach((p,i)=>{
@@ -10637,7 +10661,8 @@ function _ttsUnlock(){
 // data/audio_textes.json : empreinte du texte exact → fichier MP3. Si le texte a été
 // modifié depuis l'enregistrement, l'empreinte ne correspond plus → voix du téléphone.
 let _atxP=null,_atxTok=0;const _atxBuf=new Map();
-function _atxMan(){if(!_atxP)_atxP=fetch('data/audio_textes.json').then(r=>r.ok?r.json():{}).catch(()=>({}));return _atxP;}
+function _atxMan(){if(!_atxP){const g=u=>fetch(u).then(r=>r.ok?r.json():{}).catch(()=>({}));
+  _atxP=Promise.all([g('data/audio_textes.json'),g('data/audio_maths.json')]).then(([a,m])=>{for(const f in (m||{})){a[f]=Object.assign(a[f]||{},m[f]);}return a;});}return _atxP;}
 setTimeout(()=>{try{_atxMan();}catch(e){}},4000);
 function _atxNorm(t){return String(t||'').normalize('NFC').toLowerCase().replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim();}
 function _atxHash(t){let a=0x811c9dc5,b=5381;for(const ch of t){const c=ch.codePointAt(0);a=Math.imul(a^c,0x01000193)>>>0;b=((Math.imul(b,33)>>>0)^c)>>>0;}return a.toString(16)+b.toString(16);}
@@ -10650,7 +10675,7 @@ function _atxFind(man,txt,lang){
 function _atxPlay(key,txt,lang){
   ttsStop();const tok=++_atxTok;_ttsPlaying=true;
   const ac=getAC();if(!ac){ttsSpeak(txt,lang);return;}
-  const go=buf=>{if(tok!==_atxTok)return;_prStop();const src=ac.createBufferSource();src.buffer=buf;src.connect(ac.destination);
+  const go=buf=>{if(tok!==_atxTok)return;_prStop();try{if(ac.state!=='running')ac.resume();}catch(e){}const src=ac.createBufferSource();src.buffer=buf;src.connect(ac.destination);
     src.onended=()=>{if(tok===_atxTok)_ttsPlaying=false;};src.start(0);_prSrc=src;};
   if(_atxBuf.has(key)){go(_atxBuf.get(key));return;}
   fetch(`${AUDIO_CDN}/audio/${key}.mp3`).then(r=>{if(!r.ok)throw new Error(r.status);return r.arrayBuffer();})
@@ -16311,7 +16336,7 @@ function stopAdvMedia(){
   // Stopper le TTS (histoires lues)
   if(window.speechSynthesis) window.speechSynthesis.cancel();
   // Stopper tout AudioContext actif
-  if(window.AC && AC.state!=='closed'){try{AC.suspend();}catch(e){}}
+  try{ttsStop();}catch(e){}
 }
 
 function renderAdvStep(){

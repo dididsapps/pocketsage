@@ -1,5 +1,5 @@
 // PocketSage Academy — Service Worker v2
-const CACHE = 'pocketsage-v52';
+const CACHE = 'pocketsage-v53';
 const ASSETS = [
   '/',
   '/index.html',
