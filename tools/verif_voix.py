@@ -83,9 +83,17 @@ def main():
             if r.status_code != 200:
                 w.writerow([srcn, lang, k, t, f'<<MP3 absent {r.status_code}>>']); continue
             p = tmp / 'a.mp3'; p.write_bytes(r.content)
-            segs, _ = model.transcribe(str(p), language=CODES[lang], beam_size=5, vad_filter=False,
-                                       initial_prompt=None, condition_on_previous_text=False)
-            w.writerow([srcn, lang, k, t, ' '.join(s.text.strip() for s in segs)])
+            try:
+                import numpy as np, subprocess
+                raw = subprocess.run(['ffmpeg', '-v', 'quiet', '-i', str(p), '-f', 's16le', '-ac', '1', '-ar', '16000', '-'],
+                                     capture_output=True, check=True).stdout
+                audio = np.frombuffer(raw, np.int16).astype(np.float32) / 32768.0
+                segs, _ = model.transcribe(audio, language=CODES[lang], beam_size=5, vad_filter=False,
+                                           condition_on_previous_text=False)
+                w.writerow([srcn, lang, k, t, ' '.join(s.text.strip() for s in segs)])
+            except Exception as e:
+                w.writerow([srcn, lang, k, t, f'<<erreur {e}>>'])
+            fh.flush()
             if i % 50 == 0:
                 print(f'{i + 1}/{len(cs)}', flush=True)
     print('✅', out)

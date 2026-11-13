@@ -9,6 +9,9 @@ on:
         description: "Nombre max de fichiers (0 = tous)"
         default: "0"
 
+permissions:
+  contents: write
+
 jobs:
   verif:
     runs-on: ubuntu-latest
@@ -20,8 +23,14 @@ jobs:
           python-version: "3.12"
       - run: pip install faster-whisper requests
       - run: python3 tools/verif_voix.py --max ${{ github.event.inputs.max || 0 }}
-      - uses: actions/upload-artifact@v4
+      - name: Publier le rapport (branche rapport-voix)
         if: always()
-        with:
-          name: rapport-voix
-          path: rapport_voix.csv
+        run: |
+          [ -f rapport_voix.csv ] || exit 0
+          cp rapport_voix.csv /tmp/r.csv
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan rapport-voix
+          git rm -rq --cached . && git clean -fdq -e /tmp
+          cp /tmp/r.csv rapport_voix.csv && git add rapport_voix.csv
+          git commit -qm "Rapport voix" && git push -f origin rapport-voix
