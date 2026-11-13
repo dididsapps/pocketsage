@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Mon Monde — présentation</title>
+<style>
+/* Présentation « Mon Monde » — rendue en PDF paysage par gen_presentation_monde.py */
+@page{size:297mm 167mm;margin:0}
+:root{--ink:#1B2333;--mid:#5A6478;--line:#E4E8F0;--bg:#F6F8FC;--violet:#6C63FF;--orange:#FF8A3D;--green:#06A77D;--blue:#1D8FE1;--pink:#E5487B;--gold:#D4A017;--night:#232a4a}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{font-family:"Liberation Sans","DejaVu Sans",Arial,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.s{width:297mm;height:167mm;position:relative;overflow:hidden;page-break-after:always;padding:12mm 14mm;display:flex;gap:9mm;background:#fff}
+.s:last-child{page-break-after:auto}
+.emo{font-family:"Noto Color Emoji";font-weight:normal}
+.txt{flex:1 1 0;display:flex;flex-direction:column;gap:3.2mm;min-width:0}
+.kick{font-size:9pt;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--c,var(--violet))}
+h1{font-size:30pt;line-height:1.05;font-weight:900}
+h2{font-size:21pt;line-height:1.1;font-weight:900}
+p{font-size:11pt;line-height:1.45;color:#2c3446}
+ul{list-style:none;display:flex;flex-direction:column;gap:2.2mm}
+li{font-size:10.6pt;line-height:1.38;padding-left:7mm;position:relative}
+li .emo:first-child{position:absolute;left:0;top:0}
+.edu{margin-top:auto;background:#eefaf4;border-left:4px solid var(--green);border-radius:3mm;padding:3mm 4mm;font-size:10pt;line-height:1.4}
+.edu b{color:var(--green)}
+.pics{flex:0 0 46%;display:grid;gap:3mm;align-content:center}
+.pics img{width:100%;border-radius:4mm;box-shadow:0 2mm 6mm rgba(20,30,60,.18);display:block;object-fit:cover}
+.p1 img{height:143mm;object-fit:cover;object-position:center 30%}
+.p2{grid-template-columns:1fr 1fr}.p2 img{height:120mm;object-position:center 35%}
+.p3{grid-template-columns:1fr 1fr 1fr}.p3 img{height:110mm;object-position:center 40%}
+.foot{position:absolute;bottom:5mm;left:14mm;right:14mm;display:flex;justify-content:space-between;font-size:7.5pt;color:#9AA3B5}
+/* couverture */
+.cover{background:linear-gradient(140deg,#3c3fa8 0%,#6C63FF 40%,#FF8A3D 100%);color:#fff}
+.cover p{color:#fff;opacity:.95;font-size:13pt}.cover .kick{color:#ffd88f}
+.pills{display:flex;flex-wrap:wrap;gap:2.5mm;margin-top:3mm}.pill{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.4);border-radius:20px;padding:1.6mm 4mm;font-size:9.5pt;font-weight:800}
+/* boucle */
+.loop{display:flex;align-items:center;gap:3mm;margin:4mm 0}
+.step{flex:1;background:var(--bg);border-radius:4mm;padding:4mm 3mm;text-align:center;font-size:10pt;font-weight:700;line-height:1.3}
+.step .emo{display:block;font-size:22pt;margin-bottom:1.5mm}.arr{font-size:16pt;color:#b0b7c8;font-weight:900}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm}
+.card{background:var(--bg);border-radius:4mm;padding:3.5mm;font-size:9.6pt;line-height:1.35}
+.card b{display:block;font-size:10.5pt;margin-bottom:1mm}.card .emo{font-size:16pt}
+.night{background:var(--night);color:#fff}.night p,.night li{color:#e8ecff}.night .kick{color:#ffd166}
+</style>
+</head>
+<body>
+
+<!-- 1. Couverture -->
+<section class="s cover">
+  <div class="txt" style="justify-content:center">
+    <div class="kick">PocketSage Academy · le jeu</div>
+    <h1><span class="emo">🏙️</span> Mon Monde</h1>
+    <p>La ville qui grandit quand l’enfant apprend.<br>On gagne des pièces en apprenant, on construit sa ville, on y vit avec son avatar… et on y apprend encore.</p>
+    <div class="pills"><span class="pill">4 – 18 ans</span><span class="pill">Sans pub</span><span class="pill">Sans achat surprise</span><span class="pill">Hors connexion</span><span class="pill">Maths · Langues · Vie pratique</span></div>
+  </div>
+  <div class="pics p1"><img src="ville.jpg" alt=""></div>
+</section>
+
+<!-- 2. Le principe -->
+<section class="s" style="--c:var(--violet)">
+  <div class="txt">
+    <div class="kick">Le principe</div>
+    <h2>Apprendre pour construire quelque chose à soi</h2>
+    <div class="loop">
+      <div class="step"><span class="emo">📚</span>L’enfant apprend dans les modules</div><div class="arr">→</div>
+      <div class="step"><span class="emo">🪙</span>Il gagne des pièces</div><div class="arr">→</div>
+      <div class="step"><span class="emo">🏗️</span>Il construit sa ville</div><div class="arr">→</div>
+      <div class="step"><span class="emo">🎯</span>Dans la ville, il pratique encore</div>
+    </div>
+    <p>La récompense n’est pas un écran de victoire qu’on oublie : c’est une ville qui lui appartient, qui grandit au fil des semaines et qu’il a envie de montrer.</p>
+    <div class="edu"><b>Pour les parents :</b> faites-vous visiter la ville une fois par semaine. C’est un excellent moment pour parler de ce qu’il a appris.</div>
+  </div>
+  <div class="pics p1"><img src="vie.jpg" alt=""></div>
+  <div class="foot"><span>Mon Monde — présentation</span><span>2</span></div>
+</section>
+
+<!-- 3. Construire -->
+<section class="s" style="--c:var(--orange)">
+  <div class="txt">
+    <div class="kick">Construire</div>
+    <h2>Plus de 100 bâtiments en 3D, du potager au gratte-ciel</h2>
+    <ul>
+      <li><span class="emo">🏡</span><b>Habitat</b> : maisonnettes, villa californienne, immeubles, tours, château.</li>
+      <li><span class="emo">🌾</span><b>Ferme</b> : grange, silos, champs qui poussent, enclos reliés, moulin.</li>
+      <li><span class="emo">🏥</span><b>Services</b> : école, hôpital, pharmacie, supermarché, boulangerie, pizzeria…</li>
+      <li><span class="emo">🎡</span><b>Loisirs et sport</b> : grande roue, grands 8, zoo, stade, tennis, piscine…</li>
+      <li><span class="emo">🏨</span><b>Hôtels</b> : bungalows sur pilotis, palais, tour en forme de voile.</li>
+      <li><span class="emo">🌉</span><b>Routes et ponts</b> : voitures, bateaux qui passent sous les ponts.</li>
+    </ul>
+    <div class="edu"><b>Ce que l’enfant travaille :</b> gérer un budget, comparer des prix, planifier l’espace (un hôpital prend 3×2 cases, un zoo 10×10).</div>
+  </div>
+  <div class="pics p2"><img src="manege.jpg" alt=""><img src="ferme.jpg" alt=""></div>
+  <div class="foot"><span>Mon Monde — présentation</span><span>3</span></div>
+</section>
+
+<!-- 4. Ma vie -->
+<section class="s" style="--c:var(--green)">
+  <div class="txt">
+    <div class="kick">Le mode « Ma vie »</div>
+    <h2>L’avatar de l’enfant vit dans sa ville</h2>
+    <ul>
+      <li><span class="emo">🚶</span>On touche un bâtiment : l’avatar s’y rend à pied par le plus court chemin.</li>
+      <li><span class="emo">🍔</span><b>Faim, énergie, joie</b> : trois jauges à équilibrer (manger, dormir, se divertir).</li>
+      <li><span class="emo">🥋</span><b>Trois missions de Sensei par jour</b>, avec une récompense.</li>
+      <li><span class="emo">📋</span><b>Fiche du bâtiment</b> au premier toucher : ce qu’il rapporte, depuis quand, son nom. On choisit <b>sa maison ⭐</b>.</li>
+    </ul>
+    <div class="edu"><b>Ce que l’enfant travaille :</b> prendre soin de soi (manger, dormir, bouger), s’organiser, se repérer dans un plan.</div>
+  </div>
+  <div class="pics p2"><img src="fiche.jpg" alt=""><img src="vie.jpg" alt=""></div>
+  <div class="foot"><span>Mon Monde — présentation</span><span>4</span></div>
+</section>
+
+<!-- 5. Intérieurs -->
+<section class="s" style="--c:var(--blue)">
+  <div class="txt">
+    <div class="kick">Entrer dans les bâtiments</div>
+    <h2>La ville, puis le bâtiment en coupe, puis la pièce</h2>
+    <p>Maison, école, restaurant, magasins, hôpital, hôtels : on entre, on voit tout l’étage façon maison de poupée, puis on zoome sur une pièce.</p>
+    <ul>
+      <li><span class="emo">🛋️</span>Chaque meuble a son action : s’asseoir, dormir, cuisiner, lire, se laver…</li>
+      <li><span class="emo">✏️</span>Le <b>bureau</b> et les <b>pupitres de l’école</b> ouvrent une vraie activité (maths, sciences, langues, politesse).</li>
+      <li><span class="emo">✨</span>Intérieurs de luxe : villa avec piscine, suite royale, palais avec aquarium géant, château baroque.</li>
+    </ul>
+  </div>
+  <div class="pics p2"><img src="maison.jpg" alt=""><img src="ecole.jpg" alt=""></div>
+  <div class="foot"><span>Mon Monde — présentation</span><span>5</span></div>
+</section>
+
+<!-- 6. Luxe + déco -->
+<section class="s" style="--c:var(--pink)">
+  <div class="txt">
+    <div class="kick">Décorer</div>
+    <h2>Sa chambre, sa maison, son style</h2>
+    <ul>
+      <li><span class="emo">🛒</span>Une cinquantaine de meubles à acheter avec ses pièces, dans 5 couleurs.</li>
+      <li><span class="emo">↻</span>Poser, tourner, déplacer, revendre ; poser une télé sur un meuble, une lampe sur la table de nuit.</li>
+      <li><span class="emo">💾</span>La décoration est gardée pour chaque maison.</li>
+    </ul>
+    <div class="edu"><b>Ce que l’enfant travaille :</b> créativité, organisation de l’espace, gestion d’un budget.</div>
+  </div>
+  <div class="pics p2"><img src="deco.jpg" alt=""><img src="luxe.jpg" alt="" style="object-position:left 30%"></div>
+  <div class="foot"><span>Mon Monde — présentation</span><span>6</span></div>
+</section>
+
+<!-- 7. Commandes & fabrication -->
+<section class="s" style="--c:var(--gold)">
+  <div class="txt">
+    <div class="kick">Produire et livrer</div>
+    <h2>Une vraie petite économie</h2>
+    <ul>
+      <li><span class="emo">🥕</span>Les récoltes remplissent le <b>stock</b> : légumes, fruits, lait, œufs.</li>
+      <li><span class="emo">🏭</span><b>Fabriquer</b> : le blé devient farine au moulin, puis pain ou gâteau à la boulangerie ; le lait devient fromage ; tout finit en pizza.</li>
+      <li><span class="emo">🚚</span><b>Livrer des commandes</b> à des clients, puis répondre à « Combien vaut la commande ? » pour gagner un bonus.</li>
+    </ul>
+    <div class="edu"><b>Ce que l’enfant travaille :</b> multiplier et additionner (3 × 4 + 2 × 3), compter, anticiper une chaîne de production.</div>
+  </div>
+  <div class="pics p1"><img src="commandes.jpg" alt="" style="object-position:center 60%"></div>
+  <div class="foot"><span>Mon Monde — présentation</span><span>7</span></div>
+</section>
+
+<!-- 8. Ateliers -->
+<section class="s" style="--c:var(--orange)">
+  <div class="txt">
+    <div class="kick">Les petits métiers</div>
+    <h2>Travailler dans les commerces… en apprenant</h2>
+    <div class="grid4">
+      <div class="card"><span class="emo">🍕</span><b>Pizzaïolo</b>Poser exactement 3 champignons et 6 tomates.</div>
+      <div class="card"><span class="emo">🍔</span><b>Cuisinier</b>Monter un burger dans le bon ordre.</div>
+      <div class="card"><span class="emo">🎂</span><b>Pâtissier</b>Autant de bougies que l’âge du client.</div>
+      <div class="card"><span class="emo">🧾</span><b>Caissier</b>Rendre la monnaie avec des pièces.</div>
+      <div class="card"><span class="emo">🍦</span><b>Glacier</b>Les bonnes boules, les bons parfums.</div>
+      <div class="card"><span class="emo">💐</span><b>Fleuriste</b>Composer le bouquet demandé.</div>
+    </div>
+    <div class="edu"><b>Adapté à l’âge :</b> petits nombres pour les plus jeunes, plus de calcul ensuite. La commande peut être lue à voix haute, et en cas d’erreur un indice aide à recompter. Un salaire récompense chaque client servi.</div>
+  </div>
+  <div class="pics p3"><img src="pizza.jpg" alt=""><img src="burger.jpg" alt=""><img src="caisse.jpg" alt=""></div>
+  <div class="foot"><span>Mon Monde — présentation</span><span>8</span></div>
+</section>
+
+<!-- 9. Album, saisons, photo -->
+<section class="s night">
+  <div class="txt">
+    <div class="kick">Explorer</div>
+    <h2>Pêcher, collectionner, voir passer les saisons</h2>
+    <ul>
+      <li><span class="emo">🎣</span><b>Pêche</b> à la rivière et au lac : il faut tirer au bon moment.</li>
+      <li><span class="emo">🐞</span><b>Insectes et fleurs</b> trouvés en se promenant dans l’herbe.</li>
+      <li><span class="emo">📖</span><b>L’album</b> donne chaque nom en 5 langues (français, anglais, espagnol, allemand, italien), à écouter.</li>
+      <li><span class="emo">🌙</span>La ville suit l’heure réelle (soir, nuit), la pluie, la neige en hiver.</li>
+      <li><span class="emo">📸</span><b>Mode photo</b> pour garder un souvenir de sa ville.</li>
+    </ul>
+  </div>
+  <div class="pics p1"><img src="album.jpg" alt="" style="object-position:center 70%"></div>
+  <div class="foot"><span>Mon Monde — présentation</span><span>9</span></div>
+</section>
+
+<!-- 10. Famille & animal -->
+<section class="s" style="--c:var(--pink)">
+  <div class="txt">
+    <div class="kick">Une ville habitée</div>
+    <h2>Sa famille et son compagnon</h2>
+    <ul>
+      <li><span class="emo">👨‍👩‍👧</span>Jusqu’à <b>5 membres de la famille</b> : rôle, prénom, avatar. Ils se promènent autour de la maison.</li>
+      <li><span class="emo">🤗</span>Les toucher pour un câlin, dire bonjour ou leur rendre service.</li>
+      <li><span class="emo">🐕</span><b>Un chien ou un chat</b> qui suit l’avatar : il faut le nourrir et jouer avec lui.</li>
+    </ul>
+    <div class="edu"><b>Ce que l’enfant travaille :</b> l’attention aux autres, la responsabilité (s’occuper d’un animal), le vocabulaire de la famille.</div>
+  </div>
+  <div class="pics p1"><img src="vie.jpg" alt="" style="object-position:center 40%"></div>
+  <div class="foot"><span>Mon Monde — présentation</span><span>10</span></div>
+</section>
+
+<!-- 11. Sûr et éducatif -->
+<section class="s" style="--c:var(--green)">
+  <div class="txt">
+    <div class="kick">Nos engagements</div>
+    <h2>Un jeu pensé pour les enfants… et pour leurs parents</h2>
+    <div class="grid4">
+      <div class="card"><span class="emo">🚫</span><b>Aucune publicité</b>Ni bannière, ni vidéo imposée.</div>
+      <div class="card"><span class="emo">🎁</span><b>Pas de coffres surprises</b>On sait toujours ce qu’on obtient.</div>
+      <div class="card"><span class="emo">⏳</span><b>Pas de pression</b>Pas de « séries » culpabilisantes, pas de minuteurs à payer.</div>
+      <div class="card"><span class="emo">🔒</span><b>Données sur le téléphone</b>Pas de compte, pas de chat avec des inconnus.</div>
+      <div class="card"><span class="emo">🎓</span><b>Toujours éducatif</b>Chaque activité de la ville fait pratiquer quelque chose.</div>
+      <div class="card"><span class="emo">👪</span><b>Parents aux commandes</b>Temps de jeu, micro et achats protégés par code.</div>
+      <div class="card"><span class="emo">📶</span><b>Hors connexion</b>La ville fonctionne sans Internet.</div>
+      <div class="card"><span class="emo">🎨</span><b>Graphismes libres de droits</b>Dessinés pour PocketSage ou sous licence libre (CC0).</div>
+    </div>
+  </div>
+  <div class="pics p1" style="flex-basis:34%"><img src="chateau.jpg" alt=""></div>
+  <div class="foot"><span>Mon Monde — présentation</span><span>11</span></div>
+</section>
+
+</body>
+</html>
