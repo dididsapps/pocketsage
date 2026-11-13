@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=47">
+<link rel="stylesheet" href="css/jeux.css?v=48">
 </head>
 <body>
 
@@ -1442,10 +1442,10 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=47"></script>
-<script src="js/jeux-cerveau.js?v=47"></script>
-<script src="js/coach-voix.js?v=47"></script>
-<script src="js/monde-interieur.js?v=47"></script>
+<script src="js/jeux.js?v=48"></script>
+<script src="js/jeux-cerveau.js?v=48"></script>
+<script src="js/coach-voix.js?v=48"></script>
+<script src="js/monde-interieur.js?v=48"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -17477,7 +17477,7 @@ function w3Load(){
     W3.stats=s.stats||{};
     W3.earnings=s.earnings||{};
     // reset anim states
-    Object.values(W3.grid).forEach(cell=>{ cell.anim=1; cell.harvest=cell.harvest||0; cell.lastTick=0; cell.buildTime=0; });
+    const _td=new Date().toISOString().slice(0,10);Object.values(W3.grid).forEach(cell=>{ cell.anim=1; cell.harvest=cell.harvest||0; cell.lastTick=0; cell.buildTime=0; if(cell.id!=='_occ'&&!cell.since)cell.since=_td; });
   }catch(e){}
 }
 
@@ -17507,7 +17507,7 @@ function w3Init(){
 
 function placeItem(col,row,id){
   const key=w3Key(col,row);
-  W3.grid[key]={id,anim:0,harvest:0,buildTime:W3.t};
+  W3.grid[key]={id,anim:0,harvest:0,buildTime:W3.t,since:new Date().toISOString().slice(0,10),earned:0};
   if(!W3.stats[id])W3.stats[id]=0;
   W3.stats[id]++;
 }
@@ -17657,6 +17657,7 @@ function harvestCell(col,row){
   W3.harvestTotal+=amount;
   if(!W3.earnings[cell.id])W3.earnings[cell.id]=0;
   W3.earnings[cell.id]+=amount;
+  cell.earned=(cell.earned||0)+amount;if(!cell.since)cell.since=new Date().toISOString().slice(0,10);
   // Float text
   const pos=toIso(col,row);
   W3.floats.push({x:pos.x,y:pos.y-20,text:'+'+amount+'🪙',life:80,dy:-0.5});
@@ -18934,6 +18935,13 @@ function w3Draw(){
   }
 
   sorted.forEach(e=>{if(!W3_FLAT.has(e[1].id))drawCell(e);});
+  // bâtiment choisi (surbrillance) + badges ⭐ ma maison / 🛋️ décorée
+  if(W3.sel&&W3.grid[W3.sel]){const g=W3.grid[W3.sel],[sc,sr]=W3.sel.split(',').map(Number),f=(g.fp&&W3_FP[g.id])||[1,1],a=.55+.45*Math.sin(W3.t*0.12);
+    const Pq=w3P(sc,sr);ctx.save();ctx.setLineDash([6,4]);ctx.lineDashOffset=-W3.t*0.6;w3Poly(ctx,[Pq(0,0),Pq(f[0],0),Pq(f[0],f[1]),Pq(0,f[1])],`rgba(255,209,102,${.18*a})`,`rgba(255,209,102,${a})`,3);ctx.restore();}
+  sorted.forEach(([k,g])=>{if(!g.home&&!(Array.isArray(g.deco)&&g.deco.some(x=>x.buy)))return;const [bc,br]=k.split(',').map(Number),f=(g.fp&&W3_FP[g.id])||[1,1],p=w3P(bc,br)(f[0]/2,f[1]/2,0);
+    const y=p[1]-58-Math.max(f[0],f[1])*10;ctx.font='15px serif';ctx.textAlign='center';ctx.textBaseline='middle';
+    ctx.fillStyle='rgba(255,255,255,.92)';ctx.beginPath();ctx.roundRect(p[0]-(g.home&&g.deco?20:11),y-11,g.home&&g.deco?40:22,22,10);ctx.fill();
+    ctx.fillStyle='#000';ctx.fillText((g.home?'⭐':'')+(Array.isArray(g.deco)&&g.deco.some(x=>x.buy)?'🛋️':''),p[0],y+1);});
 
   // Avatar (mode Ma vie)
   if(W3.mode==='life'){lifeTick();lifeDraw(ctx);}
@@ -19304,7 +19312,7 @@ function lifeArrive(){
     if(!L.bonus&&L.missions.every(x=>x.ok)){L.bonus=true;W3.coins+=30;w3Msg('🏆 Les 3 missions du jour sont réussies ! +30🪙');}}
   w3UpdateHUD();w3Save();lifePanel();
 }
-function lifeNeed(){const L=W3.life;if(L.faim<30)return ['faim','🍔',['resto','supermarket','icecream','popcorn']];if(L.energie<30)return ['energie','😴',['castle','house3','tower_mod','tower10','apt3','house2','house1','pharmacy']];if(L.joie<30)return ['joie','🎈',['park','carousel','coaster1','cinema','zoo','beach','casino','shop']];return null;}
+function lifeNeed(){const L=W3.life;if(L.faim<30)return ['faim','🍔',['resto','supermarket','icecream','popcorn']];if(L.energie<30){const hk=Object.keys(W3.grid).find(k=>W3.grid[k].home);if(hk)return ['energie','😴',[W3.grid[hk].id]];}if(L.energie<30)return ['energie','😴',['castle','house3','tower_mod','tower10','apt3','house2','house1','pharmacy']];if(L.joie<30)return ['joie','🎈',['park','carousel','coaster1','cinema','zoo','beach','casino','shop']];return null;}
 function lifeNearest(ids){const L=W3.life;let best=null,bd=1e9;Object.entries(W3.grid).forEach(([k,c])=>{if(!ids.includes(c.id))return;const [cc,rr]=k.split(',').map(Number);const d=Math.abs(cc-L.pos.col)+Math.abs(rr-L.pos.row);if(d<bd){bd=d;best={col:cc,row:rr};}});return best;}
 function lifeTick(){
   const L=W3.life;if(!L)return;
@@ -19360,8 +19368,9 @@ function lifeDraw(ctx){
 function lifeTap(col,row){
   const L=W3.life;
   // toucher la bulle d'envie → aller au bon endroit
-  const g=W3.grid[w3Anchor(w3Key(col,row))];
-  if(g&&!LIFE_WALK.has(g.id)){lifeGo(col,row,true);return;}
+  const ak=w3Anchor(w3Key(col,row)),g=W3.grid[ak];
+  if(g&&!LIFE_WALK.has(g.id)){if(W3.sel===ak){w3Select(null);lifeGo(col,row,true);}else w3Select(ak);return;}
+  if(W3.sel)w3Select(null);
   if(lifeWalkable(col,row)){const p=lifePath(L.pos,{col,row});if(p){L.path=p;L.t=0;L.target=null;}}
 }
 function lifePanel(){
@@ -19477,10 +19486,43 @@ function w3HandleTap(px,py){
         ab.harvest=0; w3UpdateHUD(); w3Save();
       }
     } else if(W3.grid[key]){
-      harvestCell(col,row);
-    }
+      const gc=W3.grid[key],cd=CATALOG.find(c=>c.id===gc.id)||{};
+      if(LIFE_WALK.has(gc.id)||(!cd.income&&cd.cat!=='habitat')){harvestCell(col,row);return;}
+      if(W3.sel===key)harvestCell(col,row);w3Select(key);
+    } else if(W3.sel){w3Select(null);}
   }
 }
+// ── Fiche d'un bâtiment (1er toucher : surbrillance + infos ; 2e toucher : y aller / récolter) ──
+function w3Esc(t){return String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function w3Fmt(d){const p=(d||'').split('-');return p.length===3?p[2]+'/'+p[1]+'/'+p[0]:'—';}
+function w3Select(k){W3.sel=k||null;w3Card();}
+function w3Card(){
+  let el=document.getElementById('w3-card');const k=W3.sel,cell=k&&W3.grid[k];
+  if(!cell||cell.id==='_occ'){if(el)el.remove();W3.sel=null;return;}
+  const cat=CATALOG.find(c=>c.id===cell.id)||{},[c,r]=k.split(',').map(Number);
+  if(!el){el=document.createElement('div');el.id='w3-card';(document.getElementById('world3-wrap')||document.body).appendChild(el);}
+  const perMin=cat.income?Math.round(cat.income*3600/480):0,inter=window.w3IntHas&&w3IntHas(cell.id),hab=cat.cat==='habitat',life=W3.mode==='life';
+  const nDeco=Array.isArray(cell.deco)?cell.deco.filter(x=>x.buy).length:0;
+  el.innerHTML=`<div class="wc-h"><span class="wc-e">${cat.emoji||'🏠'}</span><b class="wc-n">${w3Esc(cell.nom||cat.label||cell.id)}</b>${cell.home?'<span class="wc-star">⭐</span>':''}<button class="wc-x" data-a="x">✖</button></div>
+   <div class="wc-l">${cat.income?`💰 Rapporte <b>+${cat.income}🪙</b> par récolte <small>(≈ ${perMin}🪙 par minute de jeu)</small>`:'🏡 Ne rapporte pas d’argent'}</div>
+   <div class="wc-l">📈 Depuis le ${w3Fmt(cell.since)} : <b>${Math.floor(cell.earned||0)}🪙</b> gagnés</div>
+   ${cell.harvest>0?`<div class="wc-l">⏳ À récolter : <b>${Math.ceil(cell.harvest)}🪙</b></div>`:''}
+   ${nDeco?`<div class="wc-l">🛋️ Décorée : ${nDeco} meuble${nDeco>1?'s':''} ajouté${nDeco>1?'s':''}</div>`:''}
+   <div class="wc-b">${cell.harvest>0?'<button data-a="harvest">💰 Récolter</button>':''}${inter?'<button data-a="enter" class="wc-main">🚪 Entrer</button>':''}<button data-a="go">🚶 Y aller</button>${hab?`<button data-a="home">${cell.home?'⭐ Ma maison':'☆ C’est ma maison'}</button>`:''}<button data-a="name">✏️ Nom</button></div>
+   <div class="wc-tip">${life?'Touche encore le bâtiment pour y aller':'Touche encore le bâtiment pour récolter'}</div>`;
+  el.querySelectorAll('[data-a]').forEach(b=>b.onclick=e=>{e.stopPropagation();const a=b.dataset.a;
+    if(a==='x'){w3Select(null);return;}
+    if(a==='harvest'){harvestCell(c,r);w3Card();return;}
+    if(a==='go'||a==='enter'){if(W3.mode!=='life')w3ToggleLife();w3Select(null);lifeGo(c,r,a==='enter');return;}
+    if(a==='home'){Object.values(W3.grid).forEach(x=>{if(x.home)delete x.home;});cell.home=1;w3Save();w3Card();w3Msg('⭐ C’est ta maison ! Andrew y dormira.');return;}
+    if(a==='name'){const n=el.querySelector('.wc-n');n.outerHTML=`<input class="wc-in" maxlength="28" value="${w3Esc(cell.nom||cat.label||'')}"><button class="wc-ok">OK</button>`;
+      const inp=el.querySelector('.wc-in');inp.focus();inp.select();const ok=()=>{const v=inp.value.trim();if(v)cell.nom=v;else delete cell.nom;w3Save();w3Card();};
+      el.querySelector('.wc-ok').onclick=ok;inp.onkeydown=ev=>{if(ev.key==='Enter')ok();};}
+  });
+}
+function w3Focus(k){const [c,r]=k.split(',').map(Number),p=toIso(c,r),cv=W3.canvas,z=W3.cam.zoom;W3.cam.x=cv.clientWidth/2-p.x*z;W3.cam.y=cv.clientHeight/2-(p.y+TILE_H/2)*z;W3.userPan=Date.now();
+  const rp=document.getElementById('w3-report');if(rp)rp.style.display='none';w3Select(k);}
+window.w3Focus=w3Focus;
 
 function w3BuildCats(){
   const div=document.getElementById('w3-cats');
@@ -19609,6 +19651,10 @@ function w3ShowReport(){
     <b>Bâtiments :</b> ${Object.values(W3.grid).filter(c=>c.id!=='_occ').length}<br>
     <b>Voitures :</b> ${W3.cars.length}
   </div>`;
+  const mine=Object.entries(W3.grid).filter(([k,g])=>{const c=CATALOG.find(x=>x.id===g.id);return c&&(c.income>0||c.cat==='habitat');}).sort((a,b)=>(b[1].earned||0)-(a[1].earned||0)).slice(0,40);
+  if(mine.length){html+='<div style="margin-top:12px;color:#f4c430;font-weight:800">🏘️ Mes bâtiments</div><div style="max-height:40vh;overflow:auto;margin-top:6px">';
+    mine.forEach(([k,g])=>{const c=CATALOG.find(x=>x.id===g.id);html+=`<div style="display:flex;align-items:center;gap:8px;padding:6px 4px;border-top:1px solid rgba(255,255,255,.08);font-size:12.5px"><span style="font-size:18px">${c.emoji}</span><span style="flex:1"><b>${w3Esc(g.nom||c.label)}</b>${g.home?' ⭐':''}${Array.isArray(g.deco)&&g.deco.some(x=>x.buy)?' 🛋️':''}<br><small style="opacity:.7">depuis le ${w3Fmt(g.since)} · ${Math.floor(g.earned||0)}🪙 gagnés</small></span><button onclick="w3Focus('${k}')" style="border:0;border-radius:10px;padding:6px 9px;background:#4cc9f0;font-weight:800">👁️ Voir</button></div>`;});
+    html+='</div>';}
   body.innerHTML=html;
   div.style.display='flex';
 }
