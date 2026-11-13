@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=50">
+<link rel="stylesheet" href="css/jeux.css?v=51">
 </head>
 <body>
 
@@ -1442,11 +1442,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=50"></script>
-<script src="js/jeux-cerveau.js?v=50"></script>
-<script src="js/coach-voix.js?v=50"></script>
-<script src="js/monde-interieur.js?v=50"></script>
-<script src="js/monde-plus.js?v=50"></script>
+<script src="js/jeux.js?v=51"></script>
+<script src="js/jeux-cerveau.js?v=51"></script>
+<script src="js/coach-voix.js?v=51"></script>
+<script src="js/monde-interieur.js?v=51"></script>
+<script src="js/monde-plus.js?v=51"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -16578,14 +16578,15 @@ function renderAdvRest(c, typeCfg){
   const tbar=document.createElement('div');tbar.style.cssText='display:flex;gap:8px;margin-bottom:12px';
   const _ttsStyle='background:#6C63FF;border:none;color:#fff;border-radius:10px;padding:8px 14px;font-family:var(--f);font-size:12px;font-weight:700;cursor:pointer';
   const _ttsStopStyle='background:rgba(0,0,0,.12);border:none;color:var(--t);border-radius:10px;padding:8px 14px;font-family:var(--f);font-size:12px;font-weight:700;cursor:pointer';
-  tbar.innerHTML=`<button style="${_ttsStyle}" onclick="ttsSpeak('${(item.texte||'').replace(/'/g,"\\'").replace(/\n/g,' ')}','fr-FR')">🔊 Lire à voix haute</button>
+  window._advRestItem=item;
+  tbar.innerHTML=`<button style="${_ttsStyle}" onclick="elPlayNuit(_advRestItem.id,_advRestItem.titre+'. '+_advRestItem.texte)">🔊 Lire à voix haute</button>
     <button style="${_ttsStopStyle}" onclick="ttsStop()">⏹ Stop</button>`;
   c.appendChild(tbar);
   // Bouton Passer (toujours visible) + bouton Reprendre
   const skipNb=document.createElement('button');skipNb.className='nxtbtn show';skipNb.style.cssText='background:var(--vl);color:var(--v);border:2px solid var(--v);margin-bottom:8px;font-size:13px';skipNb.textContent='⏭ Passer →';
   skipNb.onclick=()=>{ttsStop();advNextStep();};c.appendChild(skipNb);
   if(APP.car||ageNum((P()||{}).age||'8')<=8)
-    setTimeout(()=>ttsSpeak(item.titre+'. '+item.texte,'fr-FR'),500);
+    setTimeout(()=>elPlayNuit(item.id,item.titre+'. '+item.texte),500);
 }
 
 function renderAdvDefi(c, typeCfg){
@@ -17279,9 +17280,12 @@ function checkSessionLimit(){
     }
   }catch(e){}
   if(elapsed>=_sessionLimit){
-    ttsStop();
-    toast('⏰ Temps de session écoulé ! Fais une pause 🌟');
-    markStreakToday();
+    // On ne coupe jamais la voix (histoire, méditation…) : simple rappel, une fois puis toutes les 10 minutes
+    const now=Date.now();
+    if(!window._sessWarnAt||now-window._sessWarnAt>=600000){window._sessWarnAt=now;
+      if(!(typeof _ttsPlaying!=='undefined'&&_ttsPlaying))toast('⏰ Temps de session écoulé ! Fais une pause 🌟');
+      else window._sessWarnAt=now-540000; // réessayer dans ~1 min, une fois la lecture finie
+      markStreakToday();}
   }
 }
 setInterval(checkSessionLimit,30000);
