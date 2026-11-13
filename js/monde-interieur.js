@@ -150,14 +150,18 @@ function bars(){const W=W3();const L=W&&W.life;const el=document.getElementById(
   el.innerHTML=L?b('🍔',L.faim,'#f4a261')+b('⚡',L.energie,'#4cc9f0')+b('😊',L.joie,'#ffd166'):'';
   const c=document.getElementById('int-coins');if(c&&W)c.textContent='🪙 '+Math.floor(W.coins);}
 // ── avatar ──
+// Sens de l'enfant assis selon la rotation du siège (rot 0/1 = dos à l'écran, 2/3 = face à l'écran)
+const SIT_DOS=b=>b.rot===0||b.rot===1;
+let SIT_FLIP=b=>b.rot===1||b.rot===2,SIT_FLIP_DOS=b=>b.rot===0;
 const AVS={};function avSheet(n){if(!AVS[n]){const i=new Image();i.onload=()=>{i.ok=1;};i.src='assets/interieur/andrew_'+n+'.webp?v='+VER;AVS[n]=i;}return AVS[n];}
 function useSprites(){try{const p=window.P&&window.P();return !p||!p.avatarId||p.avatarId==='boy1';}catch(e){return true;}}
 let FALL=null;function fallback(){if(FALL)return FALL;const i=new Image();try{const p=window.P();let src=null;if(p&&p.avatarId){if(p.avatarId==='boy1')src=IMG_AVATAR_BOY1;else{const a=PNG_AVATARS.find(x=>x.id===p.avatarId);if(a)src=_GH+a.f;}}if(src){i.onload=()=>{i.ok=1;};i.src=src;}}catch(e){}FALL=i;return i;}
 function drawAvatar(c,x,y,pose,frameIdx,flip,lift){
   if(pose!=='sleep'){c.save();c.fillStyle='rgba(0,0,0,.22)';c.beginPath();c.ellipse(x,y,10,4.5,0,0,7);c.fill();c.restore();}
-  if(useSprites()){const sheet=pose==='walkF'?avSheet('walk_front'):pose==='walkB'?avSheet('walk_back'):avSheet('poses');
-    const fi=pose==='walkF'||pose==='walkB'?frameIdx%6:{idle:0,sit:1,sleep:2,eat:3,wave:4,jump:5}[pose]||0;
+  if(useSprites()){const sheet=pose==='walkF'?avSheet('walk_front'):pose==='walkB'||pose==='sitB'?avSheet('walk_back'):avSheet('poses');
+    const fi=pose==='sitB'?0:pose==='walkF'||pose==='walkB'?frameIdx%6:{idle:0,sit:1,sleep:2,eat:3,wave:4,jump:5}[pose]||0;
     if(sheet.ok){if(pose==='sleep'){const s=AV*.9;c.save();c.translate(x,y-(lift||0));if(flip)c.scale(-1,1);c.drawImage(sheet,fi*256,0,256,256,-s*128/256,-s*160/256,s,s);c.restore();return;}
+      if(pose==='sitB'){const k=.6;c.save();c.translate(x,y-(lift||0));if(flip)c.scale(-1,1);c.drawImage(sheet,fi*256,0,256,256*k,-AV/2,-AV*246/256,AV,AV*k);c.restore();return;} // de dos : seulement le haut du corps
       c.save();c.translate(x,y-(lift||0));if(flip)c.scale(-1,1);c.drawImage(sheet,fi*256,0,256,256,-AV/2,-AV*246/256,AV,AV);c.restore();return;}}
   const f=fallback();if(f.ok){const h=AV*.95,w=h*f.width/f.height;c.save();c.translate(x,y-(lift||0)-Math.abs(Math.sin(frameIdx*1.05))*2);if(flip)c.scale(-1,1);c.drawImage(f,-w/2,-h,w,h);c.restore();}
   else{c.font='26px serif';c.textAlign='center';c.fillStyle='#000';c.fillText('🧒',x,y-(lift||0));}
@@ -208,9 +212,11 @@ function draw(){
   if(ST.path.length&&!ST.busy)pose=back?'walkB':'walkF';
   let dk=ax+ay-1+.15;
   if(ST.busy){pose=ST.busy.pose;const b=ST.busy.o;
-    if(pose==='sit'&&/Sofa|Chair|bench|stool|chair/i.test(b.m)){ax=b.c+b.fw/2;ay=b.r+b.fh/2;lift=11;dk=b.c+b.r+(b.fw+b.fh)/2-1+.2;flip=b.rot===1||b.rot===2;}
+    if(pose==='sit'&&/Sofa|Chair|bench|stool|chair/i.test(b.m)){ax=b.c+b.fw/2;ay=b.r+b.fh/2;const sd=b.c+b.r+(b.fw+b.fh)/2-1;
+      // le siège tourne le dos à l'écran (rot 0/1) → on voit l'enfant de dos, caché en bas par le dossier
+      if(SIT_DOS(b)){pose='sitB';lift=-2;dk=sd-.05;flip=SIT_FLIP_DOS(b);}else{lift=11;dk=sd+.2;flip=SIT_FLIP(b);}}
     else if(pose==='sleep'&&/bed/i.test(b.m)){ax=b.c+b.fw/2;ay=b.r+b.fh/2;lift=(b.sp[5]||.38)*VZ-2;flip=b.rot===1||b.rot===3;dk=b.c+b.r+(b.fw+b.fh)/2-1+.2;}
-    else if((pose==='sit'||pose==='eat')&&ST.S.seats[key(ST.pos.c,ST.pos.r)]){const ch=ST.S.seats[key(ST.pos.c,ST.pos.r)];pose='sit';lift=9;dk=ch.c+ch.r-1+.25;flip=ch.rot===1;}
+    else if((pose==='sit'||pose==='eat')&&ST.S.seats[key(ST.pos.c,ST.pos.r)]){const ch=ST.S.seats[key(ST.pos.c,ST.pos.r)];if(SIT_DOS(ch)){pose='sitB';lift=-2;dk=ch.c+ch.r-1-.05;flip=SIT_FLIP_DOS(ch);}else{pose='sit';lift=9;dk=ch.c+ch.r-1+.25;flip=SIT_FLIP(ch);}}
     else if(pose==='sit')pose='idle';
     if(pose==='jump')lift=Math.abs(Math.sin(performance.now()/180))*8;}
   const fr=Math.floor(ST.walk);
@@ -396,6 +402,6 @@ function lustres(c,L){(L.lustres||[]).forEach(([u,v,t])=>{const z=WALL+4,p=P(u,v
     c.fillStyle='rgba(220,240,255,.85)';c.beginPath();c.moveTo(cx,cy+1);c.lineTo(cx+1.5,cy+4);c.lineTo(cx,cy+7);c.lineTo(cx-1.5,cy+4);c.fill();}
   c.fillStyle='rgba(220,240,255,.9)';c.beginPath();c.moveTo(x,y+14);c.lineTo(x+3,y+19);c.lineTo(x,y+24);c.lineTo(x-3,y+19);c.fill();});}
 window.w3IntHas=id=>has(id);window.w3IntOpen=open;window.w3IntClose=close;window.w3IntLoad=load;
-window.__int={get ST(){return ST;},tap:(x,y)=>tap(x,y),P:(u,v,z)=>P(u,v,z),goItem:i=>ST&&goItem(ST.S.items[i])};
+window.__int={get ST(){return ST;},act:a=>decoAction(a),setRot:(i,r)=>{const o=ST.S.items[i];if(!SPR[o.m+'|'+r])return false;o.rot=r;rebuild();return true;},sitFlip:(f,g)=>{SIT_FLIP=f;SIT_FLIP_DOS=g;},tap:(x,y)=>tap(x,y),P:(u,v,z)=>P(u,v,z),goItem:i=>ST&&goItem(ST.S.items[i])};
 load().catch(()=>{});['walk_front','walk_back','poses'].forEach(avSheet);
 })();
