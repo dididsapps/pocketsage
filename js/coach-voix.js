@@ -31,17 +31,22 @@ const T={
   end:'Bravo ! Séance complète terminée, comme un vrai champion !',
   left:n=>`Encore ${n} secondes !`,
   side:'Change de côté !',
+  otherSide:"De l'autre côté !",
+  firstMove:'Premier mouvement !',
+  warmGuide:(n,seg)=>`${n} mouvements doux de ${seg} secondes chacun. Je te dis quand changer !`,
+  nextMove:'Mouvement suivant !',
   water:"Pause eau ! Bois quelques gorgées d'eau et reprends ton souffle.",
   rest:["Petite pause. Respire calmement.","On souffle un peu. Inspire par le nez, souffle par la bouche.","Récupère bien, tu l'as mérité.","Pause ! Secoue doucement les bras et les jambes.","Respire profondément, on repart bientôt."],
   waterEnd:"Et maintenant, bois un grand verre d'eau. Ton corps te dit merci !",
   dayEnd:"Bravo, séance terminée ! Montre à tes parents ce que tu as appris aujourd'hui. À demain !"
 };
 // Durée estimée d'une séance (minutes) : exercices + petites pauses + pauses eau + annonces du coach
-function estimate(c,len){const R=c.rounds[len];const m=c.warm+c.circuit*R,k=c.stretch+c.resp,n=m+k;
-  return Math.max(3,Math.round((m*c.work+k*55+(n-1)*c.rest+(R-1)*25+n*8)/60));}
+function estimate(c,len){const R=c.rounds[len];const m=c.circuit*R,k=c.stretch+c.resp,n=m+k+1,w=(c.warm+3)*(c.work<=20?20:30);
+  return Math.max(3,Math.round((w+m*c.work+k*55+(n-1)*c.rest+(R-1)*25+n*8)/60));}
 function allTexts(defis,plans,phases,msgs){
-  const out=new Set([T.side,T.end,T.warmIntro,T.coolIntro,T.sayGoWarm,T.first,T.water,T.waterEnd,...T.rest,...T.bravo,T.sayGo,T.sayNext,T.sayNextLast,T.dayEnd,...T.count]);
+  const out=new Set([T.otherSide,T.firstMove,T.nextMove,T.side,T.end,T.warmIntro,T.coolIntro,T.sayGoWarm,T.first,T.water,T.waterEnd,...T.rest,...T.bravo,T.sayGo,T.sayNext,T.sayNextLast,T.dayEnd,...T.count]);
   for(let n=10;n<=120;n+=10)out.add(T.left(n));
+  for(let n=3;n<=8;n++)[20,30].forEach(g=>out.add(T.warmGuide(n,g)));out.add('Échauffement guidé.');
   Object.values(plans).forEach(c=>{[0,1,2].forEach(l=>out.add(T.intro(c.label,estimate(c,l))));c.rounds.forEach(R=>{for(let n=2;n<=R;n++)out.add(T.round(n,R));});});
   Object.values(phases).forEach(a=>a.forEach(l=>out.add(T.phase(l))));
   Object.values(msgs).forEach(a=>a.forEach(m=>out.add(speak(m))));
@@ -89,8 +94,8 @@ function coachSayList(list,done){const l=list.filter(Boolean);let i=0;const nx=(
 
 // ── Mains libres : écoute de « GO », « NEXT », « RÉPÈTE » ──────────────────
 const HF_WORDS={
-  go:['go','gogo','partez','c est parti','cest parti','top depart','vas y','on y va'],
-  next:['next','nexte','suivant','suivante','continue','continuer','exercice suivant'],
+  go:['go','gogo','gau','gaux','goh','gogh','ego','got','gaud','partez','c est parti','cest parti','top depart','vas y','vasy','on y va','allez','ok'],
+  next:['next','nexte','nest','neste','necks','nex','nexe','texte','suivant','suivante','continue','continuer','exercice suivant','apres','d accord'],
   repeat:['repete','repeter','repetes','encore une fois','redis'],
   skip:['saute','sauter','sautes','je saute','passe','passer']
 };
@@ -120,9 +125,13 @@ function hfListen(cmds,label,tap){
     st.rec=rec;rec.lang='fr-FR';rec.continuous=true;rec.interimResults=true;rec.maxAlternatives=3;
     try{if('processLocally' in rec&&typeof _micLocal!=='undefined'&&_micLocal['fr-FR']==='available')rec.processLocally=true;}catch(e){}
     rec.onresult=e=>{
-      for(let i=e.resultIndex;i<e.results.length;i++)for(let k=0;k<e.results[i].length;k++){
-        const c=hfMatch(e.results[i][k].transcript);
-        if(c&&cmds[c]){st.stopped=true;try{rec.abort();}catch(_){}if(_hf===st)_hf=null;hfBadge(null);try{sndTap();}catch(_){}cmds[c]();return;}
+      const fire=f=>{st.stopped=true;try{rec.abort();}catch(_){}if(_hf===st)_hf=null;hfBadge(null);try{sndTap();}catch(_){}f();};
+      for(let i=e.resultIndex;i<e.results.length;i++){
+        for(let k=0;k<e.results[i].length;k++){const c=hfMatch(e.results[i][k].transcript);if(c&&cmds[c]){fire(cmds[c]);return;}}
+        // Mot crié mais mal compris (« go » entendu « gros », « oh »…) : toute parole courte finale
+        // déclenche l'action principale (GO ou NEXT) — c'est la seule attendue à ce moment-là.
+        const t=(e.results[i][0]&&e.results[i][0].transcript||'').trim();
+        if(e.results[i].isFinal&&t&&t.split(/\s+/).length<=3){const d=cmds.go||cmds.next;if(d){fire(d);return;}}
       }
     };
     rec.onerror=e=>{if(e.error==='not-allowed'||e.error==='service-not-allowed'){st.stopped=true;hfBadge(null);try{toast('🎤 Micro non autorisé : utilise les boutons.');}catch(_){}}};
