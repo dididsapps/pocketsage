@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=61">
+<link rel="stylesheet" href="css/jeux.css?v=62">
 </head>
 <body>
 
@@ -1442,11 +1442,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=61"></script>
-<script src="js/jeux-cerveau.js?v=61"></script>
-<script src="js/coach-voix.js?v=61"></script>
-<script src="js/monde-interieur.js?v=61"></script>
-<script src="js/monde-plus.js?v=61"></script>
+<script src="js/jeux.js?v=62"></script>
+<script src="js/jeux-cerveau.js?v=62"></script>
+<script src="js/coach-voix.js?v=62"></script>
+<script src="js/monde-interieur.js?v=62"></script>
+<script src="js/monde-plus.js?v=62"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -12503,7 +12503,12 @@ function ageLbl(a){if(a===undefined||a===null||a==='')return '';const t=String(a
 function filterByAge(items, profileAge){
   if(!items || !items.length) return items;
   const n = typeof profileAge === 'string' ? ageNum(profileAge) : (profileAge||6);
-  const allowed = _ageToClasses(n);
+  // Sa classe + la précédente (révision) ; on remonte plus bas seulement s'il y a trop peu de questions.
+  // (Avant : toutes les classes depuis la GS → un ado de 17 ans recevait surtout des questions de primaire.)
+  const ci=CLASSES.indexOf(n<=5?'GS':n>=15?'Lycée':CLASSES[n-5]);
+  let allowed=CLASSES.slice(Math.max(0,ci-1),ci+1);
+  const avecClasse=items.filter(it=>it.classe);
+  for(let k=ci-2;k>=0&&avecClasse.filter(it=>allowed.includes(it.classe)).length<40;k--)allowed.unshift(CLASSES[k]);
   // Items avec classe : filtrer strictement
   // Items avec age range (ex: "4-6") : vérifier si l'âge du profil est dans la plage
   return items.filter(item => {
