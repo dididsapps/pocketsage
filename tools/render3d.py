@@ -3,6 +3,7 @@ Projection : P(u,v,h) = ((u-v)*A, (u+v)*A/2 - h*VZ)  avec A = 32*R px par unité
 Sortie à R=2 (écran haute densité), suréchantillonnage SS puis réduction.
 """
 import numpy as np, os, json, sys
+TOL = float(os.environ.get('RENDER_TOL', '0.03'))
 from PIL import Image
 
 def load_obj(path, recolor=None):
@@ -52,7 +53,8 @@ def render(path, out_png, origin='corner', rot=0, R=2, SS=3, recolor=None, scale
     # (x,y,z) Kenney -> (u,v,h) : centré en largeur, dos collé au fond de la case si le modèle part de z=0
     x, z = V[:, 0], V[:, 2]
     xs = x.max() - x.min(); zs = z.max() - z.min()
-    fw = max(1, int(np.ceil(xs - 0.03))); fh = max(1, int(np.ceil(zs - 0.03)))
+    # emprise : on tolère un léger dépassement (TOL) pour qu'un meuble de 1,2 case ne bloque pas 2 cases
+    fw = max(1, int(np.ceil(xs - TOL))); fh = max(1, int(np.ceil(zs - TOL)))
     U = x - x.min() + (fw - xs) / 2
     Vv = (z - z.min()) if z.min() >= -0.02 and origin == 'corner' else (z - z.min() + (fh - zs) / 2)
     H = V[:, 1]

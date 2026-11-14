@@ -34,16 +34,16 @@ L['maison'] = {
     'pieces': [['Salon', 2, 2], ['Cuisine', 6, 1.5], ['Chambre', 2, 5.5], ['Salle de bain', 6, 5.5]],
     'items': [
         I('rugRound', 1, 1, flat=True),
-        I('loungeSofa', 1, 0, 0, act=SOFA), I('loungeSofa', 2, 0, 0, act=SOFA), I('tableCoffee', 1, 1), I('pottedPlant', 0, 0), I('lampRoundFloor', 3, 0),
+        I('loungeSofa', 1, 0, 0, act=SOFA), I('tableCoffee', 1, 1), I('pottedPlant', 0, 0), I('lampRoundFloor', 3, 0),
         I('bookcaseOpen', 0, 1, 1, act=READ), I('loungeChair', 3, 1, 3, act=SOFA),
-        I('cabinetTelevision', 1, 3, 2), I('televisionModern', 1, 3, 2, z=0.31, deco=True, act=TV), I('speaker', 3, 3, 2, act=MUSIC),
+        I('cabinetTelevision', 0, 3, 2), I('televisionModern', 0, 3, 2, z=0.53, deco=True, act=TV), I('speaker', 3, 3, 2, act=MUSIC),
         I('kitchenFridgeLarge', 4, 0, 0, act=FRIDGE), I('kitchenCabinetDrawer', 5, 0), I('kitchenStove', 6, 0, 0, act=STOVE), I('kitchenSink', 7, 0, 0, act=WASH),
-        I('kitchenCoffeeMachine', 5, 0, 0, z=0.45, deco=True), I('hoodModern', 6, 0, 0, z=0.95, deco=True),
-        I('table', 5, 2, 0, act=EAT), I('chair', 5, 1, 0), I('chair', 5, 3, 2), I('chair', 6, 2, 3),
-        I('food:bowl-cereal', 5, 2, 0, z=0.33, deco=True), I('food:apple', 5, 2, 0, z=0.33, deco=True),
-        I('bedSingle', 0, 4, 0, act=BED), I('cabinetBedDrawer', 1, 4), I('lampSquareTable', 1, 4, 0, z=0.26, deco=True),
+        I('kitchenCoffeeMachine', 5, 0, 0, z=0.77, deco=True), I('hoodModern', 6, 0, 0, z=1.6, deco=True),
+        I('table', 5, 2, 0, act=EAT), I('chair', 5, 1, 0), I('chair', 6, 3, 2), I('chair', 7, 2, 3),
+        I('food:bowl-cereal', 5, 2, 0, z=0.56, deco=True),
+        I('bedSingle', 0, 4, 0, act=BED), I('cabinetBedDrawer', 1, 4), I('lampSquareTable', 1, 4, 0, z=0.44, deco=True),
         I('rugRounded', 1, 5, 0, flat=True), I('bear', 1, 6, 0, act=TOY),
-        I('desk', 3, 5, 3, act=DESK), I('chairDesk', 2, 5, 1), I('laptop', 3, 5, 3, z=0.38, deco=True), I('bookcaseClosed', 3, 4, 0, act=READ),
+        I('desk', 3, 5, 3, act=DESK), I('chairDesk', 2, 5, 1), I('laptop', 3, 5, 3, z=0.65, deco=True), I('bookcaseClosed', 3, 4, 0, act=READ),
         I('bathtub', 4, 4, 0, act=BATH), I('showerRound', 7, 4, 0, act=BATH), I('toilet', 4, 5, 1, act=WC),
         I('bathroomSinkSquare', 4, 6, 1, act=WASH), I('washer', 7, 6, 3), I('plantSmall1', 7, 5, 0),
     ]}
@@ -56,14 +56,14 @@ L['resto'] = {
     'cloisons': [],
     'pieces': [['Cuisine', 5.5, 0.6], ['Salle', 3, 3.5]],
     'items': [
-        I('kitchenStove', 4, 0), I('kitchenStove', 5, 0), I('kitchenFridgeLarge', 7, 0), I('kitchenSink', 6, 0), I('hoodModern', 4, 0, 0, z=0.95, deco=True), I('hoodModern', 5, 0, 0, z=0.95, deco=True),
+        I('kitchenStove', 4, 0), I('kitchenStove', 5, 0), I('kitchenFridgeLarge', 7, 0), I('kitchenSink', 6, 0), I('hoodModern', 4, 0, 0, z=1.6, deco=True), I('hoodModern', 5, 0, 0, z=1.6, deco=True),
         I('kitchenBar', 4, 1, 2), I('kitchenBar', 5, 1, 2), I('kitchenBar', 6, 1, 2), I('kitchenBar', 7, 1, 2),
-        I('food:burger', 5, 1, 0, z=0.42, deco=True), I('food:fries', 6, 1, 0, z=0.42, deco=True),
+        I('food:burger', 5, 1, 0, z=0.71, deco=True), I('food:fries', 6, 1, 0, z=0.71, deco=True),
         I('stoolBar', 4, 2, 2, act=JUS), I('stoolBar', 5, 2, 2, act=JUS), I('stoolBar', 6, 2, 2, act=JUS),
         I('shop:character-employee', 1, 0, 0, deco=False), I('shop:cash-register', 2, 0, 0),
-        I('tableCloth', 1, 3, 0, act=RESTO), I('chair', 1, 2, 0), I('chair', 1, 4, 2), I('food:pizza', 1, 3, 0, z=0.33, deco=True),
-        I('tableCloth', 3, 4, 0, act=RESTO), I('chair', 3, 3, 0), I('chair', 3, 5, 2), I('food:burger-cheese', 3, 4, 0, z=0.33, deco=True),
-        I('tableRound', 6, 4, 0, act=RESTO), I('chair', 5, 4, 1), I('chair', 7, 4, 3), I('food:cake', 6, 4, 0, z=0.1, deco=True),
+        I('tableCloth', 1, 3, 0, act=RESTO), I('chair', 1, 2, 0), I('chair', 2, 4, 2), I('food:pizza', 1, 3, 0, z=0.56, deco=True),
+        I('tableCloth', 4, 4, 0, act=RESTO), I('chair', 4, 3, 0), I('chair', 5, 5, 2), I('food:burger-cheese', 4, 4, 0, z=0.56, deco=True),
+        I('tableRound', 7, 3, 0, act=RESTO), I('chair', 6, 3, 1), I('chair', 6, 4, 1), I('food:cake', 7, 3, 0, z=0.17, deco=True),
         I('pottedPlant', 0, 5), I('pottedPlant', 7, 5), I('rugDoormat', 0, 4, 1, flat=True),
     ]}
 # ── Boutique de vêtements ──────────────────────────────────────────────
@@ -103,11 +103,11 @@ L['hopital'] = {
     'cloisons': [['c', 4, 0, 7, [4]], ['r', 3, 4, 9, [6]]],
     'pieces': [['Accueil', 2, 3], ['Chambres', 6.5, 1.3], ['Soins', 6.5, 5]],
     'items': [
-        I('deskCorner', 1, 1, 0, act=ACCUEIL), I('computerScreen', 1, 1, 0, z=0.38, deco=True), I('chairDesk', 1, 0, 0), I('shop:character-employee', 2, 0, 0),
+        I('deskCorner', 1, 1, 0, act=ACCUEIL), I('computerScreen', 1, 1, 0, z=0.65, deco=True), I('chairDesk', 1, 0, 0), I('shop:character-employee', 2, 0, 0),
         I('benchCushion', 0, 3, 1, act=SOFA), I('benchCushion', 0, 4, 1, act=SOFA), I('pottedPlant', 3, 0), I('shop:gacha-machine', 3, 6),
         I('bedSingle', 4, 0, 0, act=SOIN), I('sideTable', 5, 0), I('bedSingle', 6, 0, 0, act=SOIN), I('sideTable', 7, 0), I('bedSingle', 8, 0, 0, act=SOIN),
-        I('lampSquareTable', 5, 0, 0, z=0.38, deco=True), I('food:apple', 7, 0, 0, z=0.38, deco=True),
-        I('bedSingle', 4, 4, 0, act=SOIN), I('computerScreen', 5, 4, 0), I('desk', 7, 4, 0), I('chairDesk', 7, 5, 2), I('bathroomSinkSquare', 8, 4, 0, act=WASH),
+        I('lampSquareTable', 5, 0, 0, z=0.65, deco=True), I('food:apple', 7, 0, 0, z=0.65, deco=True),
+        I('bedSingle', 5, 5, 0, act=SOIN), I('desk', 7, 3, 0), I('computerScreen', 7, 3, 0, z=0.65, deco=True), I('chairDesk', 7, 4, 2), I('bathroomSinkSquare', 8, 3, 0, act=WASH),
     ]}
 # ── Hôtel (suite) ─────────────────────────────────────────────────────
 ROOM = {'t': 'Room service 🍽️', 'f': 40, 'j': 10, 'c': 8, 'pose': 'eat', 'dur': 3}
@@ -117,9 +117,9 @@ L['hotel'] = {
     'cloisons': [['c', 5, 0, 7, [3]]],
     'pieces': [['Suite', 2.5, 3.5], ['Salle de bain', 6.5, 3.5]],
     'items': [
-        I('bedDouble', 1, 0, 0, act=BED), I('cabinetBedDrawer', 0, 0), I('cabinetBedDrawer', 3, 0), I('lampSquareTable', 0, 0, 0, z=0.26, deco=True), I('lampSquareTable', 3, 0, 0, z=0.26, deco=True),
-        I('rugRectangle', 1, 3, 0, flat=True), I('loungeSofa~bleu', 1, 5, 2, act=SOFA), I('loungeSofa~bleu', 2, 5, 2, act=SOFA), I('tableCoffeeGlass', 1, 4, 0, act=ROOM), I('food:cake', 1, 4, 0, z=0.23, deco=True),
-        I('cabinetTelevision', 4, 3, 3), I('televisionModern', 4, 3, 3, z=0.31, deco=True, act=TV), I('loungeChairRelax', 0, 4, 1, act=SOFA), I('pottedPlant', 4, 6), I('pottedPlant', 0, 6),
+        I('bedDouble', 1, 0, 0, act=BED), I('cabinetBedDrawer', 0, 0), I('cabinetBedDrawer', 3, 0), I('lampSquareTable', 0, 0, 0, z=0.44, deco=True), I('lampSquareTable', 3, 0, 0, z=0.44, deco=True),
+        I('rugRectangle', 1, 3, 0, flat=True), I('loungeSofa~bleu', 1, 5, 2, act=SOFA), I('tableCoffeeGlass', 1, 4, 0, act=ROOM), I('food:cake', 1, 4, 0, z=0.39, deco=True),
+        I('cabinetTelevision', 4, 4, 3), I('televisionModern', 4, 4, 3, z=0.53, deco=True, act=TV), I('loungeChairRelax', 0, 4, 1, act=SOFA), I('pottedPlant', 4, 6), I('pottedPlant', 0, 6),
         I('bathtub', 5, 0, 0, act=BATH), I('showerRound', 7, 1, 3, act=BATH), I('bathroomSinkSquare', 5, 5, 1, act=WASH), I('toilet', 7, 5, 3, act=WC), I('plantSmall2', 7, 6),
     ]}
 # ── École ─────────────────────────────────────────────────────────────
@@ -130,8 +130,8 @@ L['ecole'] = {
     'items': [
         I('chairDesk', 2, 1, 0), I('desk', 2, 2, 0, act=DESK), I('chairDesk', 4, 1, 0), I('desk', 4, 2, 0, act=DESK), I('chairDesk', 6, 1, 0), I('desk', 6, 2, 0, act=DESK),
         I('chairDesk', 2, 3, 0), I('desk', 2, 4, 0, act=DESK), I('chairDesk', 4, 3, 0), I('desk', 4, 4, 0, act=DESK), I('chairDesk', 6, 3, 0), I('desk', 6, 4, 0, act=DESK),
-        I('laptop', 4, 2, 0, z=0.38, deco=True), I('food:apple', 2, 4, 0, z=0.38, deco=True),
-        I('desk', 5, 6, 2, act=PROF), I('shop:character-employee', 5, 5, 0), I('food:apple', 5, 6, 0, z=0.38, deco=True),
+        I('laptop', 4, 2, 0, z=0.65, deco=True), I('food:apple', 2, 4, 0, z=0.65, deco=True),
+        I('desk', 5, 6, 2, act=PROF), I('shop:character-employee', 5, 5, 0), I('food:apple', 5, 6, 0, z=0.65, deco=True),
         I('bookcaseOpen', 0, 3, 1, act=READ), I('bookcaseOpen', 0, 4, 1, act=READ), I('bookcaseClosedWide', 0, 5, 1, act=READ), I('pottedPlant', 7, 0), I('shop:gacha-machine', 0, 0, 1),
     ]}
 # ── Pharmacie ─────────────────────────────────────────────────────────
@@ -141,8 +141,8 @@ L['pharmacie'] = {
     'sols': [[0, 0, 6, 5, 'blancBleu']], 'cloisons': [], 'pieces': [['Pharmacie', 3, 2.5]],
     'items': [
         I('shop:shelf-boxes', 1, 0, act=VITA), I('shop:shelf-boxes', 2, 0, act=VITA), I('shop:shelf-bags', 3, 0, act=VITA), I('shop:shelf-boxes', 4, 0, act=VITA),
-        I('kitchenBar', 2, 2, 0), I('kitchenBar', 3, 2, 0), I('shop:cash-register', 4, 2, 0), I('shop:character-employee', 3, 1, 0),
-        I('shop:display-small', 5, 3, 3, act=VITA), I('benchCushion', 1, 4, 2, act=SOFA), I('pottedPlant', 5, 0),
+        I('kitchenBar', 2, 2, 0), I('kitchenBar', 3, 2, 0), I('shop:cash-register', 4, 2, 0), I('shop:character-employee', 4, 1, 0),
+        I('shop:display-small', 5, 4, 3, act=VITA), I('benchCushion', 1, 4, 2, act=SOFA), I('pottedPlant', 0, 0),
     ]}
 COUL = {'bleu': '#3a6ea5', 'vert': '#52b788', 'jaune': '#f4c430', 'rose': '#f78fb3'}
 CATALOGUE = [
@@ -193,16 +193,16 @@ L['villa'] = {
     'lustres': [[2.5, 2, 'moderne'], [7.2, 2, 'moderne']],
     'items': [
         I('rugRectangle~noir', 1, 1, flat=True),
-        I('loungeSofa~blanc', 1, 0, 0, act=SOFA), I('loungeSofa~blanc', 2, 0, 0, act=SOFA), I('loungeSofa~blanc', 3, 0, 0, act=SOFA),
-        I('tableCoffeeGlass', 2, 1, 0, act=COCKTAIL), I('food:cocktail', 2, 1, 0, z=0.23, deco=True), I('loungeChairRelax~noir', 4, 1, 3, act=SOFA),
-        I('cabinetTelevision~noir', 2, 3, 2), I('televisionModern', 2, 3, 2, z=0.31, deco=True, act=TV), I('lampSquareFloor~or', 0, 0), I('pottedPlant', 0, 3), I('pottedPlant', 4, 0),
-        P_('piano', 4, 3, act=PIANO),
-        I('kitchenSink~noir', 6, 0, 0, act=WASH), I('kitchenStove~noir', 7, 0, 0, act=STOVE), I('kitchenFridgeLarge', 8, 0, 0, act=FRIDGE), I('hoodModern~noir', 7, 0, 0, z=0.95, deco=True),
-        I('kitchenBar~noir', 6, 2, 2, act=EAT), I('kitchenBar~noir', 7, 2, 2, act=EAT), I('kitchenBar~noir', 8, 2, 2), I('food:pineapple', 7, 2, 0, z=0.42, deco=True), I('food:cocktail', 6, 2, 0, z=0.42, deco=True),
+        I('loungeSofa~blanc', 1, 0, 2, act=SOFA), I('loungeSofa~blanc', 3, 0, 2, act=SOFA),
+        I('tableCoffeeGlass', 2, 1, 0, act=COCKTAIL), I('food:cocktail', 2, 1, 0, z=0.39, deco=True), I('loungeChairRelax~noir', 4, 1, 3, act=SOFA),
+        I('cabinetTelevision~noir', 0, 3, 2), I('televisionModern', 0, 3, 2, z=0.53, deco=True, act=TV), I('lampSquareFloor~or', 0, 0), I('pottedPlant', 0, 1),
+        P_('piano', 4, 2, act=PIANO),
+        I('kitchenSink~noir', 6, 0, 0, act=WASH), I('kitchenStove~noir', 7, 0, 0, act=STOVE), I('kitchenFridgeLarge', 8, 0, 0, act=FRIDGE), I('hoodModern~noir', 7, 0, 0, z=1.6, deco=True),
+        I('kitchenBar~noir', 6, 2, 2, act=EAT), I('kitchenBar~noir', 7, 2, 2, act=EAT), I('kitchenBar~noir', 8, 2, 2), I('food:pineapple', 7, 2, 0, z=0.71, deco=True), I('food:cocktail', 6, 2, 0, z=0.71, deco=True),
         I('stoolBar~or', 6, 3, 2), I('stoolBar~or', 7, 3, 2), I('stoolBar~or', 8, 3, 2),
-        I('bedDouble~blanc', 1, 4, 0, act=BED), I('cabinetBedDrawer~blanc', 0, 4), I('cabinetBedDrawer~blanc', 2, 4), I('lampSquareTable~or', 0, 4, 0, z=0.26, deco=True), I('lampSquareTable~or', 2, 4, 0, z=0.26, deco=True),
-        I('rugRound~noir', 2, 6, flat=True), I('desk~blanc', 4, 6, 3, act=DESK), I('chairDesk', 3, 6, 1), I('laptop', 4, 6, 3, z=0.38, deco=True), I('bookcaseClosed~blanc', 4, 4, 0, act=READ),
-        P_('piscine', 5, 5, 3, 2, act=BAIN), I('loungeChairRelax~blanc', 8, 5, 3, act=SOFA), I('loungeChairRelax~blanc', 8, 6, 3, act=SOFA), P_('palmier', 8, 4),
+        I('bedDouble~blanc', 0, 4, 0, act=BED), I('cabinetBedDrawer~blanc', 0, 6), I('lampSquareTable~or', 0, 6, 0, z=0.44, deco=True),
+        I('rugRound~noir', 2, 5, flat=True), I('desk~blanc', 4, 6, 3, act=DESK), I('chairDesk', 3, 6, 1), I('laptop', 4, 6, 3, z=0.65, deco=True), I('bookcaseClosed~blanc', 3, 4, 0, act=READ),
+        P_('piscine', 5, 5, 3, 2, act=BAIN), I('loungeChairRelax~blanc', 6, 4, 0, act=SOFA), I('loungeChairRelax~blanc', 7, 4, 0, act=SOFA), P_('palmier', 8, 4),
     ]}
 # ── Suite royale (hôtel Voile / Burj) : noir, or, velours ──
 L['hotel_luxe'] = {
@@ -214,10 +214,10 @@ L['hotel_luxe'] = {
     'lustres': [[2.5, 2.5, 'cristal'], [6.5, 3.5, 'cristal']],
     'items': [
         I('rugRound~velours', 1, 4, flat=True),
-        I('bedDouble~or', 1, 0, 0, act=BED), I('cabinetBedDrawer~noir', 0, 0), I('cabinetBedDrawer~noir', 2, 0), I('lampSquareTable~or', 0, 0, 0, z=0.26, deco=True), I('lampSquareTable~or', 2, 0, 0, z=0.26, deco=True),
-        I('loungeSofa~velours', 1, 6, 2, act=SOFA), I('loungeSofa~velours', 2, 6, 2, act=SOFA), I('tableCoffeeGlass', 1, 5, 0, act=COCKTAIL), I('food:cocktail', 1, 5, 0, z=0.23, deco=True),
-        I('loungeChairRelax~velours', 3, 2, 3, act=SOFA), I('cabinetTelevision~noir', 4, 4, 3), I('televisionModern', 4, 4, 3, z=0.31, deco=True, act=TV),
-        P_('piano', 3, 0, act=PIANO), P_('statue', 4, 6), I('pottedPlant', 0, 6),
+        I('bedDouble~or', 1, 0, 0, act=BED), I('cabinetBedDrawer~noir', 0, 0), I('cabinetBedDrawer~noir', 3, 0), I('lampSquareTable~or', 0, 0, 0, z=0.44, deco=True), I('lampSquareTable~or', 3, 0, 0, z=0.44, deco=True),
+        I('loungeSofa~velours', 1, 6, 2, act=SOFA), I('tableCoffeeGlass', 1, 5, 0, act=COCKTAIL), I('food:cocktail', 1, 5, 0, z=0.39, deco=True),
+        I('loungeChairRelax~velours', 3, 2, 3, act=SOFA), I('cabinetTelevision~noir', 4, 4, 3), I('televisionModern', 4, 4, 3, z=0.53, deco=True, act=TV),
+        P_('piano', 4, 0, act=PIANO), P_('statue', 4, 6), I('pottedPlant', 0, 6),
         I('bathtub~or', 5, 0, 0, act=BATH), I('showerRound', 7, 2, 3, act=BATH), I('bathroomSinkSquare~or', 5, 5, 1, act=WASH), I('toilet', 7, 5, 3, act=WC), P_('palmier', 7, 6),
     ]}
 # ── Palais baroque avec aquarium géant (hôtel des mers) ──
@@ -230,11 +230,11 @@ L['hotel_baroque'] = {
     'lustres': [[2, 2, 'cristal'], [6.5, 3.5, 'cristal']],
     'items': [
         I('rugRectangle~velours', 5, 4, flat=True),
-        I('bedDouble~velours', 1, 0, 0, act=BED), I('cabinetBedDrawer~or', 0, 0), I('cabinetBedDrawer~or', 2, 0), I('lampSquareTable~or', 0, 0, 0, z=0.26, deco=True), I('lampSquareTable~or', 2, 0, 0, z=0.26, deco=True),
-        I('loungeSofa~velours', 5, 3, 2, act=AQUA), I('loungeSofa~velours', 6, 3, 2, act=AQUA), I('loungeSofa~velours', 7, 3, 2, act=AQUA), I('tableCoffee~or', 6, 2, 0, act=COCKTAIL), I('food:cocktail', 6, 2, 0, z=0.23, deco=True),
-        I('loungeChairRelax~velours', 4, 5, 2, act=SOFA), I('loungeChairRelax~velours', 7, 5, 2, act=SOFA),
+        I('bedDouble~velours', 1, 0, 0, act=BED), I('cabinetBedDrawer~or', 0, 0), I('cabinetBedDrawer~or', 3, 0), I('lampSquareTable~or', 0, 0, 0, z=0.44, deco=True), I('lampSquareTable~or', 3, 0, 0, z=0.44, deco=True),
+        I('loungeSofa~velours', 5, 3, 2, act=AQUA), I('loungeSofa~velours', 7, 3, 2, act=AQUA), I('tableCoffee~or', 6, 2, 0, act=COCKTAIL), I('food:cocktail', 6, 2, 0, z=0.39, deco=True),
+        I('loungeChairRelax~velours', 4, 5, 2, act=SOFA), I('loungeChairRelax~velours', 8, 5, 2, act=SOFA),
         P_('cheminee', 0, 5, act=FEU), I('loungeChair~velours', 1, 4, 1, act=FEU), I('loungeChair~velours', 1, 6, 1, act=FEU),
-        P_('colonne', 3, 0), P_('colonne', 3, 3), P_('colonne', 8, 6), P_('piano', 3, 6, act=PIANO), P_('statue', 8, 0), I('pottedPlant', 4, 0),
+        P_('colonne', 4, 0), P_('colonne', 3, 3), P_('colonne', 8, 6), P_('piano', 3, 6, act=PIANO), P_('statue', 8, 0),
     ]}
 # ── Château (maison du joueur) : baroque bleu royal, parquet, cheminée ──
 L['chateau'] = {
@@ -246,10 +246,10 @@ L['chateau'] = {
     'lustres': [[2.5, 3, 'cristal'], [7, 3, 'cristal']],
     'items': [
         I('rugRectangle~royal', 1, 2, flat=True),
-        P_('cheminee', 0, 1, act=FEU), I('loungeSofa~royal', 1, 4, 2, act=SOFA), I('loungeSofa~royal', 2, 4, 2, act=SOFA), I('loungeChair~royal', 3, 2, 3, act=SOFA), I('tableCoffee~or', 2, 2, 0, act=COCKTAIL),
+        P_('cheminee', 0, 1, act=FEU), I('loungeSofa~royal', 1, 4, 2, act=SOFA), I('loungeChair~royal', 3, 2, 3, act=SOFA), I('tableCoffee~or', 2, 2, 0, act=COCKTAIL),
         I('bookcaseOpen~or', 1, 0, 0, act=READ), I('bookcaseOpen~or', 2, 0, 0, act=READ), P_('piano', 3, 5, act=PIANO), P_('colonne', 4, 0), P_('colonne', 4, 6), P_('statue', 0, 6),
-        I('bedDouble~royal', 6, 0, 0, act=BED), I('cabinetBedDrawer~or', 5, 0), I('cabinetBedDrawer~or', 7, 0), I('lampSquareTable~or', 5, 0, 0, z=0.26, deco=True),
-        I('bathtub~or', 7, 6, 3, act=BATH), I('desk~or', 8, 3, 3, act=DESK), I('chairCushion~royal', 7, 3, 1), I('pottedPlant', 8, 0), I('rugRound~royal', 6, 3, flat=True),
+        I('bedDouble~royal', 6, 0, 0, act=BED), I('cabinetBedDrawer~or', 5, 0), I('cabinetBedDrawer~or', 8, 0), I('lampSquareTable~or', 5, 0, 0, z=0.44, deco=True),
+        I('bathtub~or', 8, 5, 3, act=BATH), I('desk~or', 8, 3, 3, act=DESK), I('chairCushion~royal', 7, 3, 1), I('pottedPlant', 8, 2), I('rugRound~royal', 6, 3, flat=True),
     ]}
 # ── Bungalow sur pilotis (hôtel lagon) : bois clair, rotin, plancher de verre ──
 L['hotel_lagon'] = {
@@ -259,9 +259,9 @@ L['hotel_lagon'] = {
     'pieces': [['Bungalow', 3, 3], ['Douche', 7, 3.5]],
     'murDeco': [['baie', 'r', 0.5, 5.6, {'lagon': 1}], ['baie', 'c', 3.6, 6.6, {'lagon': 1}]],
     'items': [
-        I('bedDouble~rotin', 1, 0, 0, act=BED), I('cabinetBedDrawer~rotin', 0, 0), I('cabinetBedDrawer~rotin', 2, 0), I('lampSquareTable~or', 0, 0, 0, z=0.26, deco=True),
-        I('ceilingFan', 2, 2, 0, z=1.25, deco=True),
-        I('loungeSofa~rotin', 1, 5, 2, act=SOFA), I('loungeSofa~rotin', 2, 5, 2, act=SOFA), I('tableCoffee~rotin', 1, 4, 0, act=COCKTAIL), I('food:coconut', 1, 4, 0, z=0.23, deco=True), I('food:pineapple', 2, 4, 0, z=0.23, deco=True),
+        I('bedDouble~rotin', 1, 0, 0, act=BED), I('cabinetBedDrawer~rotin', 0, 0), I('cabinetBedDrawer~rotin', 3, 0), I('lampSquareTable~or', 0, 0, 0, z=0.44, deco=True),
+        I('ceilingFan', 2, 2, 0, z=2.1, deco=True),
+        I('loungeSofa~rotin', 1, 5, 2, act=SOFA), I('tableCoffee~rotin', 1, 4, 0, act=COCKTAIL), I('food:coconut', 1, 4, 0, z=0.39, deco=True),
         I('loungeChairRelax~rotin', 5, 1, 3, act=SOFA), I('loungeChairRelax~rotin', 5, 5, 3, act=SOFA), P_('palmier', 0, 6), P_('palmier', 5, 0),
         I('showerRound', 7, 0, 3, act=BATH), I('bathroomSinkSquare~rotin', 6, 5, 1, act=WASH), I('toilet', 7, 6, 3, act=WC), I('plantSmall2', 7, 4),
     ]}

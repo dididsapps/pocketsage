@@ -113,19 +113,6 @@
 }
 },
 {
-"m": "loungeSofa",
-"c": 2,
-"r": 0,
-"rot": 0,
-"act": {
-"t": "Se détendre sur le canapé 🛋️",
-"j": 15,
-"e": 5,
-"pose": "sit",
-"dur": 3
-}
-},
-{
 "m": "tableCoffee",
 "c": 1,
 "r": 1,
@@ -170,16 +157,16 @@
 },
 {
 "m": "cabinetTelevision",
-"c": 1,
+"c": 0,
 "r": 3,
 "rot": 2
 },
 {
 "m": "televisionModern",
-"c": 1,
+"c": 0,
 "r": 3,
 "rot": 2,
-"z": 0.31,
+"z": 0.53,
 "act": {
 "t": "Regarder la télé 📺",
 "j": 20,
@@ -248,7 +235,7 @@
 "c": 5,
 "r": 0,
 "rot": 0,
-"z": 0.45,
+"z": 0.77,
 "deco": 1
 },
 {
@@ -256,7 +243,7 @@
 "c": 6,
 "r": 0,
 "rot": 0,
-"z": 0.95,
+"z": 1.6,
 "deco": 1
 },
 {
@@ -279,13 +266,13 @@
 },
 {
 "m": "chair",
-"c": 5,
+"c": 6,
 "r": 3,
 "rot": 2
 },
 {
 "m": "chair",
-"c": 6,
+"c": 7,
 "r": 2,
 "rot": 3
 },
@@ -294,15 +281,7 @@
 "c": 5,
 "r": 2,
 "rot": 0,
-"z": 0.33,
-"deco": 1
-},
-{
-"m": "food:apple",
-"c": 5,
-"r": 2,
-"rot": 0,
-"z": 0.33,
+"z": 0.56,
 "deco": 1
 },
 {
@@ -328,7 +307,7 @@
 "c": 1,
 "r": 4,
 "rot": 0,
-"z": 0.26,
+"z": 0.44,
 "deco": 1
 },
 {
@@ -374,7 +353,7 @@
 "c": 3,
 "r": 5,
 "rot": 3,
-"z": 0.38,
+"z": 0.65,
 "deco": 1
 },
 {
@@ -522,7 +501,7 @@
 "c": 4,
 "r": 0,
 "rot": 0,
-"z": 0.95,
+"z": 1.6,
 "deco": 1
 },
 {
@@ -530,7 +509,7 @@
 "c": 5,
 "r": 0,
 "rot": 0,
-"z": 0.95,
+"z": 1.6,
 "deco": 1
 },
 {
@@ -562,7 +541,7 @@
 "c": 5,
 "r": 1,
 "rot": 0,
-"z": 0.42,
+"z": 0.71,
 "deco": 1
 },
 {
@@ -570,7 +549,7 @@
 "c": 6,
 "r": 1,
 "rot": 0,
-"z": 0.42,
+"z": 0.71,
 "deco": 1
 },
 {
@@ -649,7 +628,7 @@
 },
 {
 "m": "chair",
-"c": 1,
+"c": 2,
 "r": 4,
 "rot": 2
 },
@@ -658,12 +637,12 @@
 "c": 1,
 "r": 3,
 "rot": 0,
-"z": 0.33,
+"z": 0.56,
 "deco": 1
 },
 {
 "m": "tableCloth",
-"c": 3,
+"c": 4,
 "r": 4,
 "rot": 0,
 "act": {
@@ -677,28 +656,28 @@
 },
 {
 "m": "chair",
-"c": 3,
+"c": 4,
 "r": 3,
 "rot": 0
 },
 {
 "m": "chair",
-"c": 3,
+"c": 5,
 "r": 5,
 "rot": 2
 },
 {
 "m": "food:burger-cheese",
-"c": 3,
+"c": 4,
 "r": 4,
 "rot": 0,
-"z": 0.33,
+"z": 0.56,
 "deco": 1
 },
 {
 "m": "tableRound",
-"c": 6,
-"r": 4,
+"c": 7,
+"r": 3,
 "rot": 0,
 "act": {
 "t": "Manger au restaurant 🍔",
@@ -711,22 +690,22 @@
 },
 {
 "m": "chair",
-"c": 5,
-"r": 4,
+"c": 6,
+"r": 3,
 "rot": 1
 },
 {
 "m": "chair",
-"c": 7,
+"c": 6,
 "r": 4,
-"rot": 3
+"rot": 1
 },
 {
 "m": "food:cake",
-"c": 6,
-"r": 4,
+"c": 7,
+"r": 3,
 "rot": 0,
-"z": 0.1,
+"z": 0.17,
 "deco": 1
 },
 {
@@ -1296,7 +1275,7 @@
 "c": 1,
 "r": 1,
 "rot": 0,
-"z": 0.38,
+"z": 0.65,
 "deco": 1
 },
 {
@@ -1405,7 +1384,7 @@
 "c": 5,
 "r": 0,
 "rot": 0,
-"z": 0.38,
+"z": 0.65,
 "deco": 1
 },
 {
@@ -1413,13 +1392,13 @@
 "c": 7,
 "r": 0,
 "rot": 0,
-"z": 0.38,
+"z": 0.65,
 "deco": 1
 },
 {
 "m": "bedSingle",
-"c": 4,
-"r": 4,
+"c": 5,
+"r": 5,
 "rot": 0,
 "act": {
 "t": "Se faire soigner 🩺",
@@ -1430,27 +1409,29 @@
 }
 },
 {
-"m": "computerScreen",
-"c": 5,
-"r": 4,
+"m": "desk",
+"c": 7,
+"r": 3,
 "rot": 0
 },
 {
-"m": "desk",
+"m": "computerScreen",
 "c": 7,
-"r": 4,
-"rot": 0
+"r": 3,
+"rot": 0,
+"z": 0.65,
+"deco": 1
 },
 {
 "m": "chairDesk",
 "c": 7,
-"r": 5,
+"r": 4,
 "rot": 2
 },
 {
 "m": "bathroomSinkSquare",
 "c": 8,
-"r": 4,
+"r": 3,
 "rot": 0,
 "act": {
 "t": "Se laver les mains 🧼",
@@ -1540,7 +1521,7 @@
 "c": 0,
 "r": 0,
 "rot": 0,
-"z": 0.26,
+"z": 0.44,
 "deco": 1
 },
 {
@@ -1548,7 +1529,7 @@
 "c": 3,
 "r": 0,
 "rot": 0,
-"z": 0.26,
+"z": 0.44,
 "deco": 1
 },
 {
@@ -1561,19 +1542,6 @@
 {
 "m": "loungeSofa~bleu",
 "c": 1,
-"r": 5,
-"rot": 2,
-"act": {
-"t": "Se détendre sur le canapé 🛋️",
-"j": 15,
-"e": 5,
-"pose": "sit",
-"dur": 3
-}
-},
-{
-"m": "loungeSofa~bleu",
-"c": 2,
 "r": 5,
 "rot": 2,
 "act": {
@@ -1603,21 +1571,21 @@
 "c": 1,
 "r": 4,
 "rot": 0,
-"z": 0.23,
+"z": 0.39,
 "deco": 1
 },
 {
 "m": "cabinetTelevision",
 "c": 4,
-"r": 3,
+"r": 4,
 "rot": 3
 },
 {
 "m": "televisionModern",
 "c": 4,
-"r": 3,
+"r": 4,
 "rot": 3,
-"z": 0.31,
+"z": 0.53,
 "act": {
 "t": "Regarder la télé 📺",
 "j": 20,
@@ -1860,7 +1828,7 @@
 "c": 4,
 "r": 2,
 "rot": 0,
-"z": 0.38,
+"z": 0.65,
 "deco": 1
 },
 {
@@ -1868,7 +1836,7 @@
 "c": 2,
 "r": 4,
 "rot": 0,
-"z": 0.38,
+"z": 0.65,
 "deco": 1
 },
 {
@@ -1894,7 +1862,7 @@
 "c": 5,
 "r": 6,
 "rot": 0,
-"z": 0.38,
+"z": 0.65,
 "deco": 1
 },
 {
@@ -2051,14 +2019,14 @@
 },
 {
 "m": "shop:character-employee",
-"c": 3,
+"c": 4,
 "r": 1,
 "rot": 0
 },
 {
 "m": "shop:display-small",
 "c": 5,
-"r": 3,
+"r": 4,
 "rot": 3,
 "act": {
 "t": "Acheter des vitamines 💊",
@@ -2084,7 +2052,7 @@
 },
 {
 "m": "pottedPlant",
-"c": 5,
+"c": 0,
 "r": 0,
 "rot": 0
 }
@@ -2209,20 +2177,7 @@
 "m": "loungeSofa~blanc",
 "c": 1,
 "r": 0,
-"rot": 0,
-"act": {
-"t": "Se détendre sur le canapé 🛋️",
-"j": 15,
-"e": 5,
-"pose": "sit",
-"dur": 3
-}
-},
-{
-"m": "loungeSofa~blanc",
-"c": 2,
-"r": 0,
-"rot": 0,
+"rot": 2,
 "act": {
 "t": "Se détendre sur le canapé 🛋️",
 "j": 15,
@@ -2235,7 +2190,7 @@
 "m": "loungeSofa~blanc",
 "c": 3,
 "r": 0,
-"rot": 0,
+"rot": 2,
 "act": {
 "t": "Se détendre sur le canapé 🛋️",
 "j": 15,
@@ -2263,7 +2218,7 @@
 "c": 2,
 "r": 1,
 "rot": 0,
-"z": 0.23,
+"z": 0.39,
 "deco": 1
 },
 {
@@ -2281,16 +2236,16 @@
 },
 {
 "m": "cabinetTelevision~noir",
-"c": 2,
+"c": 0,
 "r": 3,
 "rot": 2
 },
 {
 "m": "televisionModern",
-"c": 2,
+"c": 0,
 "r": 3,
 "rot": 2,
-"z": 0.31,
+"z": 0.53,
 "act": {
 "t": "Regarder la télé 📺",
 "j": 20,
@@ -2308,19 +2263,13 @@
 {
 "m": "pottedPlant",
 "c": 0,
-"r": 3,
-"rot": 0
-},
-{
-"m": "pottedPlant",
-"c": 4,
-"r": 0,
+"r": 1,
 "rot": 0
 },
 {
 "m": "@piano",
 "c": 4,
-"r": 3,
+"r": 2,
 "rot": 0,
 "fw": 1,
 "fh": 1,
@@ -2372,7 +2321,7 @@
 "c": 7,
 "r": 0,
 "rot": 0,
-"z": 0.95,
+"z": 1.6,
 "deco": 1
 },
 {
@@ -2410,7 +2359,7 @@
 "c": 7,
 "r": 2,
 "rot": 0,
-"z": 0.42,
+"z": 0.71,
 "deco": 1
 },
 {
@@ -2418,7 +2367,7 @@
 "c": 6,
 "r": 2,
 "rot": 0,
-"z": 0.42,
+"z": 0.71,
 "deco": 1
 },
 {
@@ -2441,7 +2390,7 @@
 },
 {
 "m": "bedDouble~blanc",
-"c": 1,
+"c": 0,
 "r": 4,
 "rot": 0,
 "act": {
@@ -2454,35 +2403,21 @@
 {
 "m": "cabinetBedDrawer~blanc",
 "c": 0,
-"r": 4,
-"rot": 0
-},
-{
-"m": "cabinetBedDrawer~blanc",
-"c": 2,
-"r": 4,
+"r": 6,
 "rot": 0
 },
 {
 "m": "lampSquareTable~or",
 "c": 0,
-"r": 4,
+"r": 6,
 "rot": 0,
-"z": 0.26,
-"deco": 1
-},
-{
-"m": "lampSquareTable~or",
-"c": 2,
-"r": 4,
-"rot": 0,
-"z": 0.26,
+"z": 0.44,
 "deco": 1
 },
 {
 "m": "rugRound~noir",
 "c": 2,
-"r": 6,
+"r": 5,
 "rot": 0,
 "flat": 1
 },
@@ -2510,12 +2445,12 @@
 "c": 4,
 "r": 6,
 "rot": 3,
-"z": 0.38,
+"z": 0.65,
 "deco": 1
 },
 {
 "m": "bookcaseClosed~blanc",
-"c": 4,
+"c": 3,
 "r": 4,
 "rot": 0,
 "act": {
@@ -2542,9 +2477,9 @@
 },
 {
 "m": "loungeChairRelax~blanc",
-"c": 8,
-"r": 5,
-"rot": 3,
+"c": 6,
+"r": 4,
+"rot": 0,
 "act": {
 "t": "Se détendre sur le canapé 🛋️",
 "j": 15,
@@ -2555,9 +2490,9 @@
 },
 {
 "m": "loungeChairRelax~blanc",
-"c": 8,
-"r": 6,
-"rot": 3,
+"c": 7,
+"r": 4,
+"rot": 0,
 "act": {
 "t": "Se détendre sur le canapé 🛋️",
 "j": 15,
@@ -2694,7 +2629,7 @@
 },
 {
 "m": "cabinetBedDrawer~noir",
-"c": 2,
+"c": 3,
 "r": 0,
 "rot": 0
 },
@@ -2703,33 +2638,20 @@
 "c": 0,
 "r": 0,
 "rot": 0,
-"z": 0.26,
+"z": 0.44,
 "deco": 1
 },
 {
 "m": "lampSquareTable~or",
-"c": 2,
+"c": 3,
 "r": 0,
 "rot": 0,
-"z": 0.26,
+"z": 0.44,
 "deco": 1
 },
 {
 "m": "loungeSofa~velours",
 "c": 1,
-"r": 6,
-"rot": 2,
-"act": {
-"t": "Se détendre sur le canapé 🛋️",
-"j": 15,
-"e": 5,
-"pose": "sit",
-"dur": 3
-}
-},
-{
-"m": "loungeSofa~velours",
-"c": 2,
 "r": 6,
 "rot": 2,
 "act": {
@@ -2759,7 +2681,7 @@
 "c": 1,
 "r": 5,
 "rot": 0,
-"z": 0.23,
+"z": 0.39,
 "deco": 1
 },
 {
@@ -2786,7 +2708,7 @@
 "c": 4,
 "r": 4,
 "rot": 3,
-"z": 0.31,
+"z": 0.53,
 "act": {
 "t": "Regarder la télé 📺",
 "j": 20,
@@ -2797,7 +2719,7 @@
 },
 {
 "m": "@piano",
-"c": 3,
+"c": 4,
 "r": 0,
 "rot": 0,
 "fw": 1,
@@ -2998,7 +2920,7 @@
 },
 {
 "m": "cabinetBedDrawer~or",
-"c": 2,
+"c": 3,
 "r": 0,
 "rot": 0
 },
@@ -3007,32 +2929,20 @@
 "c": 0,
 "r": 0,
 "rot": 0,
-"z": 0.26,
+"z": 0.44,
 "deco": 1
 },
 {
 "m": "lampSquareTable~or",
-"c": 2,
+"c": 3,
 "r": 0,
 "rot": 0,
-"z": 0.26,
+"z": 0.44,
 "deco": 1
 },
 {
 "m": "loungeSofa~velours",
 "c": 5,
-"r": 3,
-"rot": 2,
-"act": {
-"t": "Admirer les poissons 🐠",
-"j": 20,
-"pose": "wave",
-"dur": 3
-}
-},
-{
-"m": "loungeSofa~velours",
-"c": 6,
 "r": 3,
 "rot": 2,
 "act": {
@@ -3073,7 +2983,7 @@
 "c": 6,
 "r": 2,
 "rot": 0,
-"z": 0.23,
+"z": 0.39,
 "deco": 1
 },
 {
@@ -3091,7 +3001,7 @@
 },
 {
 "m": "loungeChairRelax~velours",
-"c": 7,
+"c": 8,
 "r": 5,
 "rot": 2,
 "act": {
@@ -3145,7 +3055,7 @@
 },
 {
 "m": "@colonne",
-"c": 3,
+"c": 4,
 "r": 0,
 "rot": 0,
 "fw": 1,
@@ -3188,12 +3098,6 @@
 "rot": 0,
 "fw": 1,
 "fh": 1
-},
-{
-"m": "pottedPlant",
-"c": 4,
-"r": 0,
-"rot": 0
 }
 ]
 },
@@ -3325,19 +3229,6 @@
 }
 },
 {
-"m": "loungeSofa~royal",
-"c": 2,
-"r": 4,
-"rot": 2,
-"act": {
-"t": "Se détendre sur le canapé 🛋️",
-"j": 15,
-"e": 5,
-"pose": "sit",
-"dur": 3
-}
-},
-{
 "m": "loungeChair~royal",
 "c": 3,
 "r": 2,
@@ -3446,7 +3337,7 @@
 },
 {
 "m": "cabinetBedDrawer~or",
-"c": 7,
+"c": 8,
 "r": 0,
 "rot": 0
 },
@@ -3455,13 +3346,13 @@
 "c": 5,
 "r": 0,
 "rot": 0,
-"z": 0.26,
+"z": 0.44,
 "deco": 1
 },
 {
 "m": "bathtub~or",
-"c": 7,
-"r": 6,
+"c": 8,
+"r": 5,
 "rot": 3,
 "act": {
 "t": "Prendre un bain 🛁",
@@ -3493,7 +3384,7 @@
 {
 "m": "pottedPlant",
 "c": 8,
-"r": 0,
+"r": 2,
 "rot": 0
 },
 {
@@ -3595,7 +3486,7 @@
 },
 {
 "m": "cabinetBedDrawer~rotin",
-"c": 2,
+"c": 3,
 "r": 0,
 "rot": 0
 },
@@ -3604,7 +3495,7 @@
 "c": 0,
 "r": 0,
 "rot": 0,
-"z": 0.26,
+"z": 0.44,
 "deco": 1
 },
 {
@@ -3612,25 +3503,12 @@
 "c": 2,
 "r": 2,
 "rot": 0,
-"z": 1.25,
+"z": 2.1,
 "deco": 1
 },
 {
 "m": "loungeSofa~rotin",
 "c": 1,
-"r": 5,
-"rot": 2,
-"act": {
-"t": "Se détendre sur le canapé 🛋️",
-"j": 15,
-"e": 5,
-"pose": "sit",
-"dur": 3
-}
-},
-{
-"m": "loungeSofa~rotin",
-"c": 2,
 "r": 5,
 "rot": 2,
 "act": {
@@ -3660,15 +3538,7 @@
 "c": 1,
 "r": 4,
 "rot": 0,
-"z": 0.23,
-"deco": 1
-},
-{
-"m": "food:pineapple",
-"c": 2,
-"r": 4,
-"rot": 0,
-"z": 0.23,
+"z": 0.39,
 "deco": 1
 },
 {

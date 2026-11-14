@@ -4,7 +4,7 @@
 // Données : data/interieurs.json (plans, meubles, actions). L'avatar marche (BFS), s'assoit, dort, mange…
 (function(){
 'use strict';
-const TW=64,TH=32,VZ=39.19,WALL=58,CUT=20,AV=46; // px (zoom 1) : case, hauteur d'une unité, mur du fond, cloison coupée, taille avatar
+const TW=64,TH=32,VZ=39.19,WALL=76,CUT=24,AV=52; // px (zoom 1) : case, hauteur d'une unité, mur du fond, cloison coupée, taille avatar
 const VER=(document.querySelector('script[src*="monde-interieur"]')||{src:''}).src.split('v=')[1]||'1';
 let DATA=null,SPR=null;const IMG={};let ST=null;
 const SOLS={bois:['#d9a066','#cf955a'],boisFonce:['#8c5a3c','#7d4f34'],carreau:['#ece6da','#d8d0c0'],carreauBleu:['#d4ecf3','#bfe0ea'],moquette:['#b9c7ea','#b0bee2'],
@@ -50,6 +50,11 @@ function open(bid,bk){
   return load().then(()=>{
     const lid=DATA.batiments[bid];if(!lid)return false;const L=DATA.interieurs[lid];
     const W=W3(),cell=bk&&W&&W.grid[bk];
+    // meubles agrandis (plans v2) : une ancienne déco ne rentre plus → on repart du plan et on rembourse les achats
+    let rembourse=0;
+    if(cell&&Array.isArray(cell.deco)&&cell.decoV!==DECO_V){rembourse=cell.deco.filter(x=>x.buy).reduce((t,x)=>t+((catOf(x.m)||[0,0,0])[2]||0),0);
+      delete cell.deco;if(rembourse&&W)W.coins+=rembourse;try{window.__w3.save();}catch(e){}}
+    if(rembourse)setTimeout(()=>{try{msg('🏠 Nouveaux meubles plus grands ! Ta déco repart à zéro : +'+rembourse+'🪙 remboursés');}catch(e){}},1200);
     let list=(L.deco&&cell&&Array.isArray(cell.deco))?cell.deco.map(x=>({...x})):L.items.map(x=>({...x}));
     if(L.deco&&!(cell&&Array.isArray(cell.deco))&&MAISONS_LEGERES.includes(lid))list=leger(list);
     // ancienne sauvegarde : la piscine (et autres objets dessinés) avait perdu sa taille → on la reprend du plan
@@ -153,8 +158,10 @@ function bars(){const W=W3();const L=W&&W.life;const el=document.getElementById(
   const c=document.getElementById('int-coins');if(c&&W)c.textContent='🪙 '+Math.floor(W.coins);}
 // ── avatar ──
 // Sens de l'enfant assis selon la rotation du siège (rot 0/1 = dos à l'écran, 2/3 = face à l'écran)
-const SIT_DOS=b=>b.rot===0||b.rot===1;
-let SIT_FLIP=b=>b.rot===1||b.rot===2,SIT_FLIP_DOS=b=>b.rot===0;
+const SIT_DOS=b=>b.rot===2||b.rot===3;
+let SIT_FLIP=b=>b.rot===0,SIT_FLIP_DOS=b=>b.rot===2;
+// hauteur d'assise (px) d'après la hauteur du modèle : tabouret = dessus, chaise/canapé ≈ 55 % (dossier)
+const SEAT=b=>{const t=(b.sp&&b.sp[5])||.45;return /^stool|bench/i.test(b.m)?t*VZ-3:t*.47*VZ;};
 const AVS={};function avSheet(n){if(!AVS[n]){const i=new Image();i.onload=()=>{i.ok=1;};i.src='assets/interieur/andrew_'+n+'.webp?v='+VER;AVS[n]=i;}return AVS[n];}
 function useSprites(){try{const p=window.P&&window.P();return !p||!p.avatarId||p.avatarId==='boy1';}catch(e){return true;}}
 let FALL=null;function fallback(){if(FALL)return FALL;const i=new Image();try{const p=window.P();let src=null;if(p&&p.avatarId){if(p.avatarId==='boy1')src=IMG_AVATAR_BOY1;else{const a=PNG_AVATARS.find(x=>x.id===p.avatarId);if(a)src=_GH+a.f;}}if(src){i.onload=()=>{i.ok=1;};i.src=src;}}catch(e){}FALL=i;return i;}
@@ -216,9 +223,9 @@ function draw(){
   if(ST.busy){pose=ST.busy.pose;const b=ST.busy.o;
     if(pose==='sit'&&/Sofa|Chair|bench|stool|chair/i.test(b.m)){ax=b.c+b.fw/2;ay=b.r+b.fh/2;const sd=b.c+b.r+(b.fw+b.fh)/2-1;
       // le siège tourne le dos à l'écran (rot 0/1) → on voit l'enfant de dos, caché en bas par le dossier
-      if(SIT_DOS(b)){pose='sitB';lift=-2;dk=sd-.05;flip=SIT_FLIP_DOS(b);}else{lift=11;dk=sd+.2;flip=SIT_FLIP(b);}}
+      if(SIT_DOS(b)){pose='sitB';lift=SEAT(b)-13;dk=sd-.05;flip=SIT_FLIP_DOS(b);}else{lift=SEAT(b);dk=sd+.2;flip=SIT_FLIP(b);}}
     else if(pose==='sleep'&&/bed/i.test(b.m)){ax=b.c+b.fw/2;ay=b.r+b.fh/2;lift=(b.sp[5]||.38)*VZ-2;flip=b.rot===1||b.rot===3;dk=b.c+b.r+(b.fw+b.fh)/2-1+.2;}
-    else if((pose==='sit'||pose==='eat')&&ST.S.seats[key(ST.pos.c,ST.pos.r)]){const ch=ST.S.seats[key(ST.pos.c,ST.pos.r)];if(SIT_DOS(ch)){pose='sitB';lift=-2;dk=ch.c+ch.r-1-.05;flip=SIT_FLIP_DOS(ch);}else{pose='sit';lift=9;dk=ch.c+ch.r-1+.25;flip=SIT_FLIP(ch);}}
+    else if((pose==='sit'||pose==='eat')&&ST.S.seats[key(ST.pos.c,ST.pos.r)]){const ch=ST.S.seats[key(ST.pos.c,ST.pos.r)];if(SIT_DOS(ch)){pose='sitB';lift=SEAT(ch)-13;dk=ch.c+ch.r-.5;flip=SIT_FLIP_DOS(ch);}else{pose='sit';lift=SEAT(ch);dk=ch.c+ch.r+.2;flip=SIT_FLIP(ch);}}
     else if(pose==='sit')pose='idle';
     if(b.m==='@piscine'){const k=Math.min(1,(performance.now()-ST.busy.t0)/ST.busy.dur),sx=ST.pos.c+.5,sy=ST.pos.r+.5,tx=b.c+b.fw/2,ty=b.r+b.fh/2,pd=b.c+b.r+(b.fw+b.fh)/2;
       if(k<.22){const q=k/.22;ax=sx+(tx-sx)*q;ay=sy+(ty-sy)*q;lift=Math.sin(Math.PI*q)*30-q*6;pose='jump';dk=pd+.3;}
@@ -249,8 +256,10 @@ function bbox(im){if(BB.has(im))return BB.get(im);let r=null;try{const cv=docume
   const d=g.getImageData(0,0,im.width,im.height).data;let x0=1e9,y0=1e9,x1=-1,y1=-1;
   for(let y=0;y<im.height;y++)for(let x=0;x<im.width;x++)if(d[(y*im.width+x)*4+3]>40){if(x<x0)x0=x;if(x>x1)x1=x;if(y<y0)y0=y;if(y>y1)y1=y;}
   if(x1>=0)r={x0,y0,x1,y1};}catch(e){}BB.set(im,r);return r;}
-function sprite(c,o){if(o.m[0]==='@'){const f=PROC[o.m.slice(1)];if(f)f(c,o);return;}const sp=o.sp,im=IMG[sp[0]];if(!im||!im.ok)return;
-  if(o.deco&&o.z&&o.buy){const b=ST.S.items.find(x=>!x.deco&&x.c===o.c&&x.r===o.r&&x.sp&&x.sp[0]),bi=b&&IMG[b.sp[0]];
+const PROC_ECH={piano:1.5,statue:1.5,palmier:1.4,cheminee:1.45}; // objets dessinés à la main : même échelle que les meubles 3D
+function sprite(c,o){if(o.m[0]==='@'){const n=o.m.slice(1),f=PROC[n];if(!f)return;const k=PROC_ECH[n];
+    if(k){const b=n==='cheminee'?P(o.c,o.r+.5,0):P(o.c+o.fw/2,o.r+o.fh/2,0);c.save();c.translate(b[0],b[1]);c.scale(k,k);c.translate(-b[0],-b[1]);f(c,o);c.restore();}else f(c,o);return;}const sp=o.sp,im=IMG[sp[0]];if(!im||!im.ok)return;
+  if(o.deco&&o.z){const b=ST.S.items.find(x=>!x.deco&&x.c===o.c&&x.r===o.r&&x.sp&&x.sp[0]),bi=b&&IMG[b.sp[0]];
     if(bi&&bi.ok){const bb=bbox(bi),db=bbox(im);if(bb&&db){const pb=P(b.c,b.r,(b.z||0)*VZ),bx=pb[0]-b.sp[1]/2,by=pb[1]-b.sp[2]/2;
       const cx=bx+(bb.x0+bb.x1)/4,yb=by+bb.y0/2+(bb.x1-bb.x0)/8+(db.x1-db.x0)/8;
       c.drawImage(im,cx-(db.x0+db.x1)/4,yb-db.y1/2,im.width/2,im.height/2);return;}}}
@@ -314,8 +323,9 @@ function fits(m,rot,c,r,ignore){const sp=SPR[m+'|'+rot];if(!sp)return null;const
     if(!flat){const bl=ST.S.block[key(cc,rr)];if(bl&&bl.i!==ignore)return null;if(cc===ST.pos.c&&rr===ST.pos.r)return null;}
     if(a>0&&wallBetween(ST.S,[cc-1,rr],[cc,rr]))return null;if(b>0&&wallBetween(ST.S,[cc,rr-1],[cc,rr]))return null;}
   return {fw,fh,flat};}
+const DECO_V=2;
 function rebuild(){const list=ST.S.items.map(o=>{const x={m:o.m,c:o.c,r:o.r,rot:o.rot};if(o.m[0]==='@'){x.fw=o.fw;x.fh=o.fh;}if(o.z)x.z=o.z;if(o.deco)x.deco=1;if(o.flat)x.flat=1;if(o.buy)x.buy=1;if(o.act&&!o.buy)x.act=o.act;return x;});
-  ST.S=build(ST.S.L,list);if(ST.cell){ST.cell.deco=list;try{window.__w3.save();}catch(e){}}bars();}
+  ST.S=build(ST.S.L,list);if(ST.cell){ST.cell.deco=list;ST.cell.decoV=DECO_V;try{window.__w3.save();}catch(e){}}bars();}
 function decoTap(sx,sy){
   const W=W3();const {c,r}=toCell(sx,sy);
   if(ST.moving&&ST.sel!=null){const o=ST.S.items[ST.sel];if(fits(o.m,o.rot,c,r,o.i)){const dc=c-o.c,dr=r-o.r;ST.S.items.forEach(x=>{if(x.deco&&x.c===o.c&&x.r===o.r&&x!==o){x.c+=dc;x.r+=dr;}});o.c=c;o.r=r;ST.moving=false;rebuild();ST.sel=null;decoPanel();setTip('Déplacé ! ✨');}else setTip('Pas de place ici 🙅');return;}
