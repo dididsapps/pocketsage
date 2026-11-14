@@ -26,7 +26,8 @@ def cibles():
     man = json.loads((ROOT / 'data/audio_textes.json').read_text())
     for f, m in json.loads((ROOT / 'data/audio_maths.json').read_text()).items():
         man.setdefault(f, {}).update(m)
-    src = (ROOT / 'index.html').read_text(encoding='utf-8')
+    from qparse import texte_questions
+    src = texte_questions()
     vus = set()
     for m in re.finditer(r'\{id:["\']([A-Z0-9]+(?:-[A-Za-z0-9]+)+)["\'],[^\n]*', src):
         line = m.group(0)

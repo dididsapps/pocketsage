@@ -16,6 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'tools'))
 from parle import parle, empreinte, REDIRE as SYMB  # noqa: E402
+from qparse import texte_questions  # noqa: E402
 
 _env = ROOT / '.env'
 if _env.exists():
@@ -38,7 +39,12 @@ def js_str(x):
 
 
 def questions():
-    src = (ROOT / 'index.html').read_text(encoding='utf-8')
+    src = texte_questions()
+    deja = set()
+    for f in ('audio_textes.json',):
+        p = ROOT / 'data' / f
+        if p.exists():
+            for v in json.loads(p.read_text()).values(): deja.update(v.keys())
     vus = set()
     for m in re.finditer(r'\{id:["\']([A-Z0-9]+(?:-[A-Za-z0-9]+)+)["\'],[^\n]*', src):
         iid, line = m.group(1), m.group(0)
@@ -51,11 +57,16 @@ def questions():
         if e:
             parts.append(('enonce', js_str(e.group(1))))
         if c:
-            for i, (a, b) in enumerate(re.findall(r'"((?:[^"\\]|\\.)*)"|\'((?:[^\'\\]|\\.)*)\'', c.group(1))):
-                parts.append((f'choix_{i}', js_str(a or b)))
+            from qparse import arr as _arr
+            for i, t in enumerate(_arr(line, 'choix') or []):
+                parts.append((f'choix_{i}', t))
+        x = re.search(r'expl:"((?:[^"\\]|\\.)*)"', line)
+        if x:
+            parts.append(('expl', js_str(x.group(1))))
         lang = 'en' if iid.startswith('AN-') else 'es' if re.match(r'ES-(GS|CP|CE|CM|\d|LY)', iid) else 'fr'
         for p, t in parts:
-            if t and SYMB.search(t):
+            # à enregistrer : texte avec symboles (lu en mots) OU texte sans aucun enregistrement
+            if t and (SYMB.search(t) or empreinte(t) not in deja):
                 yield iid, p, t, lang
 
 
@@ -83,6 +94,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--no-upload', action='store_true')
+    ap.add_argument('--max', type=int, default=6000)
     a = ap.parse_args()
     etat = json.loads(ETAT.read_text()) if ETAT.exists() else {}
     todo, man = [], {}
@@ -92,7 +104,8 @@ def main():
         man.setdefault(lang, {})[h] = key
         if etat.get(f'{lang}/{key}') != h:
             todo.append((iid, part, txt, lang, key, h))
-    print(f'{sum(len(v) for v in man.values())} textes avec symboles, {len(todo)} à (ré)enregistrer')
+    print(f'{sum(len(v) for v in man.values())} textes suivis, {len(todo)} à (ré)enregistrer (max {a.max} par passage)')
+    todo = todo[:a.max]
     if a.dry_run:
         for t in todo[:20]:
             print(' ', t[0], t[1], '→', parle(t[2], t[3].upper()))

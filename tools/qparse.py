@@ -24,3 +24,10 @@ def field(l,key):
 def items(s):
     for m in re.finditer(r'\{id:"([A-Z]{2}-[A-Z0-9]+-\d+)",([^\n]*)',s):
         yield m.group(1),m.group(2),m.start(),m.end()
+
+import os as _os
+_ROOT=_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
+SOURCES=['index.html','js/questions-plus-data.js']
+def texte_questions():
+    """Toutes les sources de questions (index.html + compléments)."""
+    return '\n'.join(open(_os.path.join(_ROOT,f),encoding='utf-8').read() for f in SOURCES if _os.path.exists(_os.path.join(_ROOT,f)))

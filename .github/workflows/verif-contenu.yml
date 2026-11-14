@@ -1,0 +1,24 @@
+name: Vérif contenu (moulinette automatique)
+
+# À chaque ajout/modification de questions ou d'intérieurs : contrôles automatiques
+# (bonne réponse présente dans les choix, identifiants uniques, plans d'intérieurs valides).
+# La vérification « intelligente » (exactitude, niveau) est faite par un agent relecteur
+# indépendant avant l'ajout — voir docs/contenu/PROCESS_CONTENU.md.
+on:
+  push:
+    paths:
+      - "index.html"
+      - "js/questions-plus-data.js"
+      - "data/interieurs.json"
+  workflow_dispatch: {}
+
+jobs:
+  verif:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 tools/verif_questions.py
+      - run: python3 tools/verif_interieurs.py

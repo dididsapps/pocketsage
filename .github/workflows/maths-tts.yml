@@ -1,4 +1,4 @@
-name: Maths — MP3 avec symboles dits en mots
+name: Quiz — MP3 manquants (et symboles dits en mots)
 
 # Réenregistre (Google TTS) les questions/réponses contenant ×, ÷, ≠, ², √…
 # en lisant les symboles en mots, les envoie sur R2 et met à jour data/audio_maths.json.
@@ -10,6 +10,7 @@ on:
       - "index.html"
       - "tools/maths_tts.py"
       - "tools/parle.py"
+      - "js/questions-plus-data.js"
   workflow_dispatch: {}
 
 permissions:
@@ -22,7 +23,7 @@ concurrency:
 jobs:
   maths:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
