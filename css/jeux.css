@@ -402,3 +402,6 @@ body.night .coach-len-btn{background:#2A1E0A;color:#F5E6C8}body.night .coach-len
 .fam-avs{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;max-height:190px;overflow:auto;margin-bottom:10px}.fam-avs button{border:2px solid transparent;border-radius:12px;background:#f7f7fb;padding:2px;height:64px}
 .fam-avs button.on{border-color:#ffd166}.fam-avs img{height:58px;max-width:100%;object-fit:contain}
 .mp-main{display:block;width:100%;background:#2b9348;color:#fff;border:0}
+/* micro en train de redémarrer : point gris, pas de pulsation */
+#hf-badge.hf-off .hf-dot{background:#9aa3b2;animation:none}
+#hf-badge.hf-off{opacity:.85}

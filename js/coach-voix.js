@@ -94,8 +94,8 @@ function coachSayList(list,done){const l=list.filter(Boolean);let i=0;const nx=(
 
 // ── Mains libres : écoute de « GO », « NEXT », « RÉPÈTE » ──────────────────
 const HF_WORDS={
-  go:['go','gogo','gau','gaux','goh','gogh','ego','got','gaud','partez','c est parti','cest parti','top depart','vas y','vasy','on y va','allez','ok'],
-  next:['next','nexte','nest','neste','necks','nex','nexe','texte','suivant','suivante','continue','continuer','exercice suivant','apres','d accord'],
+  go:['go','gogo','gau','gaux','goh','gogh','ego','got','gaud','partez','c est parti','cest parti','top depart','vas y','vasy','on y va','allez'],
+  next:['next','nexte','nest','neste','necks','nex','nexe','nexus','suivant','suivante','continue','continuer','exercice suivant'],
   repeat:['repete','repeter','repetes','encore une fois','redis'],
   skip:['saute','sauter','sautes','je saute','passe','passer']
 };
@@ -111,7 +111,7 @@ function hfBadge(label,onTap){
   if(!b){b=document.createElement('button');b.id='hf-badge';document.body.appendChild(b);}
   b.innerHTML='<span class="hf-dot"></span>🎤 '+label;b.onclick=onTap||null;
 }
-function hfStop(){if(_hf){_hf.stopped=true;try{_hf.rec&&_hf.rec.abort();}catch(e){}_hf=null;}hfBadge(null);}
+function hfStop(){if(_hf){_hf.stopped=true;clearInterval(_hf.wd);try{_hf.rec&&_hf.rec.abort();}catch(e){}_hf=null;}hfBadge(null);}
 function hfAvailable(){const SR=window.SpeechRecognition||window.webkitSpeechRecognition;return !!SR&&(typeof micAllowed!=='function'||micAllowed());}
 // cmds : {go:fn, next:fn, repeat:fn} ; label : texte du badge ; tap : action si on touche le badge
 function hfListen(cmds,label,tap){
@@ -119,24 +119,28 @@ function hfListen(cmds,label,tap){
   const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
   if(!hfAvailable())return false;
   const st={stopped:false};_hf=st;hfBadge(label,tap?()=>{hfStop();tap();}:null);
+  const android=/Android/i.test(navigator.userAgent);
+  const etat=on=>{const b=document.getElementById('hf-badge');if(b)b.classList.toggle('hf-off',!on);};
+  st.wd=setInterval(()=>{if(st.stopped){clearInterval(st.wd);return;}
+    // chien de garde : si l'écoute est coupée depuis plus de 2 s, on la relance
+    if(!st.on&&Date.now()-(st.fin||0)>2000)run();
+    // sécurité : on renouvelle l'écoute toutes les 20 s (certains téléphones la coupent sans prévenir)
+    else if(st.on&&Date.now()-st.debut>20000){try{st.rec.stop();}catch(_){}}},1000);
   const run=()=>{
-    if(st.stopped)return;
+    if(st.stopped||st.on)return;
     let rec;try{rec=new SR();}catch(e){return;}
-    st.rec=rec;rec.lang='fr-FR';rec.continuous=true;rec.interimResults=true;rec.maxAlternatives=3;
+    st.rec=rec;rec.lang='fr-FR';rec.continuous=!android;rec.interimResults=true;rec.maxAlternatives=5;
+    rec.onstart=()=>{st.on=true;st.debut=Date.now();etat(true);};
     try{if('processLocally' in rec&&typeof _micLocal!=='undefined'&&_micLocal['fr-FR']==='available')rec.processLocally=true;}catch(e){}
     rec.onresult=e=>{
-      const fire=f=>{st.stopped=true;try{rec.abort();}catch(_){}if(_hf===st)_hf=null;hfBadge(null);try{sndTap();}catch(_){}f();};
+      const fire=f=>{st.stopped=true;clearInterval(st.wd);try{rec.abort();}catch(_){}if(_hf===st)_hf=null;hfBadge(null);try{sndTap();}catch(_){}f();};
       for(let i=e.resultIndex;i<e.results.length;i++){
         for(let k=0;k<e.results[i].length;k++){const c=hfMatch(e.results[i][k].transcript);if(c&&cmds[c]){fire(cmds[c]);return;}}
-        // Mot crié mais mal compris (« go » entendu « gros », « oh »…) : toute parole courte finale
-        // déclenche l'action principale (GO ou NEXT) — c'est la seule attendue à ce moment-là.
-        const t=(e.results[i][0]&&e.results[i][0].transcript||'').trim();
-        if(e.results[i].isFinal&&t&&t.split(/\s+/).length<=3){const d=cmds.go||cmds.next;if(d){fire(d);return;}}
       }
     };
-    rec.onerror=e=>{if(e.error==='not-allowed'||e.error==='service-not-allowed'){st.stopped=true;hfBadge(null);try{toast('🎤 Micro non autorisé : utilise les boutons.');}catch(_){}}};
-    rec.onend=()=>{if(!st.stopped)setTimeout(run,250);};
-    try{rec.start();}catch(e){setTimeout(run,600);}
+    rec.onerror=e=>{if(e.error==='not-allowed'||e.error==='service-not-allowed'){st.stopped=true;clearInterval(st.wd);hfBadge(null);try{toast('🎤 Micro non autorisé : utilise les boutons.');}catch(_){}}};
+    rec.onend=()=>{st.on=false;st.fin=Date.now();etat(false);if(!st.stopped)setTimeout(run,120);};
+    try{rec.start();}catch(e){st.on=false;st.fin=Date.now();}
   };
   run();return true;
 }
