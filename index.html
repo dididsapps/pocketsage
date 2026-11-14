@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=59">
+<link rel="stylesheet" href="css/jeux.css?v=60">
 </head>
 <body>
 
@@ -1442,11 +1442,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=59"></script>
-<script src="js/jeux-cerveau.js?v=59"></script>
-<script src="js/coach-voix.js?v=59"></script>
-<script src="js/monde-interieur.js?v=59"></script>
-<script src="js/monde-plus.js?v=59"></script>
+<script src="js/jeux.js?v=60"></script>
+<script src="js/jeux-cerveau.js?v=60"></script>
+<script src="js/coach-voix.js?v=60"></script>
+<script src="js/monde-interieur.js?v=60"></script>
+<script src="js/monde-plus.js?v=60"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -15245,7 +15245,7 @@ function _mkChoiceRow(ch, cls, onTap, lang, idx){
   const txt=String(ch);
   const ci=(idx!==undefined?idx:_choiceIdx++)%4;
   const wrap=document.createElement('div');wrap.style.cssText='display:flex;align-items:center;gap:6px';
-  const b=document.createElement('button');b.className=cls;b.style.flex='1';
+  const b=document.createElement('button');b.className=cls;b.style.flex='1';b.dataset.v=txt;
   b.style.cssText+=(b.style.cssText?';':'')+'border-left:4px solid '+_CHOICE_BORDERS[ci]+';background:'+_CHOICE_COLORS[ci];
   b.innerHTML=`<span style="display:inline-block;background:${_CHOICE_BORDERS[ci]};color:#fff;border-radius:5px;width:20px;height:20px;line-height:20px;text-align:center;font-size:11px;font-weight:900;margin-right:8px;flex-shrink:0">${_CHOICE_LETTERS[ci]}</span>${txt}`;
   b.onclick=onTap;
@@ -15341,7 +15341,8 @@ function ans(ok,btn,cont,item,c){
   cont.querySelectorAll('button').forEach(b=>{if(String(b.textContent)===String(item.rep))b.classList.add('ok');});
   if(!ok){btn.classList.add('ko');sndKO();senseiKO();}
   else{sndOK();senseiOK();}
-  markDone(item,ok,c);
+  qStat(item,ok,btn&&(btn.dataset.v||btn.textContent));
+  markDone(item,ok,c);qAvisRow(item,c);
   if(APP.car&&ok)setTimeout(()=>ttsSpeak('Bravo ! Bonne réponse !'),300);
   if(APP.car&&!ok)setTimeout(()=>ttsSpeak('Pas tout à fait. Essaie encore !'),300);
 }
@@ -15353,6 +15354,7 @@ function ansPol(ch,btn,cont,item,c){
     else b.classList.add('bad-r');
   });
   if(ch.s){sndOK();senseiOK();}else{sndKO();senseiKO();}
+  qStat(item,ch.s,ch.t);
   markDone(item,ch.s,c);
   if(ch.s){
     const ex=document.createElement('div');
@@ -15362,6 +15364,40 @@ function ansPol(ch,btn,cont,item,c){
   if(APP.car)setTimeout(()=>ttsSpeak(ch.s?'Bravo sage !':'Pas tout à fait. La réponse sage est : '+item.sage),300);
 }
 
+// ── Compteur ANONYME d'erreurs par question ─────────────────────────────
+// Sert à repérer les questions qui piègent vraiment (et la mauvaise réponse la plus choisie),
+// pour savoir où une explication est utile. Envoi groupé : identifiant de question + nombres
+// seulement (aucun prénom, âge, profil ni identifiant d'appareil). Copie locale pour les parents.
+const QST_KEY='psa3_qstats',QST_PEND='psa3_qstats_envoi';let _qstT=null;
+function _qstGet(k){try{return JSON.parse(localStorage.getItem(k)||'{}')||{};}catch(e){return {};}}
+function _qstAdd(o,id,ok,wi){const v=o[id]||(o[id]=[0,0,{}]);if(ok===null)return v;v[0]++;if(!ok){v[1]++;if(wi>=0)v[2][wi]=(v[2][wi]||0)+1;}}
+function qStat(item,ok,chosen){
+  try{if(!item||!item.id||!Array.isArray(item.choix))return;
+    let wi=-1;if(!ok&&chosen!=null){const t=String(chosen).trim();wi=item.choix.findIndex(x=>String(x&&x.t!==undefined?x.t:x).trim()===t);}
+    const loc=_qstGet(QST_KEY);_qstAdd(loc,item.id,ok,wi);localStorage.setItem(QST_KEY,JSON.stringify(loc));
+    const pend=_qstGet(QST_PEND);_qstAdd(pend,item.id,ok,wi);localStorage.setItem(QST_PEND,JSON.stringify(pend));
+    clearTimeout(_qstT);_qstT=setTimeout(qStatEnvoi,Object.keys(pend).length>=40?500:30000);
+  }catch(e){}}
+function qStatEnvoi(){
+  try{const pend=_qstGet(QST_PEND),ids=Object.keys(pend);if(!ids.length||!navigator.onLine||location.protocol==='file:')return;
+    const lot={},reste={};ids.forEach((id,i)=>{(i<80?lot:reste)[id]=pend[id].map(x=>typeof x==='number'?Math.min(20,x):x);});
+    const body=JSON.stringify({v:1,q:lot});
+    const ok=navigator.sendBeacon?navigator.sendBeacon('/api/stats',new Blob([body],{type:'application/json'})):(fetch('/api/stats',{method:'POST',body,keepalive:true,headers:{'content-type':'application/json'}}),true);
+    if(ok)localStorage.setItem(QST_PEND,JSON.stringify(reste));
+  }catch(e){}}
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden')qStatEnvoi();});
+// Avis des bêta-testeurs sur une question (à couper au lancement : BETA_AVIS=false)
+const BETA_AVIS=true;
+function qAvisRow(item,c){
+  try{if(!BETA_AVIS||!item||!item.id||!Array.isArray(item.choix)||!c||c.querySelector('.q-avis'))return;
+    const r=document.createElement('div');r.className='q-avis';
+    r.style.cssText='display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:center;margin:10px 0 2px;font-size:12px;color:#6b7280';
+    r.innerHTML='<span>Cette question était :</span>'+[['f','😴 Trop facile'],['d','🤯 Trop dure'],['p','🤔 Pas claire']].map(([k,t])=>`<button data-k="${k}" style="border:1px solid #d6dbe6;background:#fff;border-radius:14px;padding:4px 10px;font-size:12px;font-weight:700;color:#374151">${t}</button>`).join('');
+    r.querySelectorAll('button').forEach(b=>b.onclick=e=>{e.stopPropagation();
+      const pend=_qstGet(QST_PEND),v=_qstAdd(pend,item.id,null,-1);v[3]=v[3]||{};v[3][b.dataset.k]=(v[3][b.dataset.k]||0)+1;localStorage.setItem(QST_PEND,JSON.stringify(pend));
+      const loc=_qstGet(QST_KEY),w=_qstAdd(loc,item.id,null,-1);w[3]=w[3]||{};w[3][b.dataset.k]=(w[3][b.dataset.k]||0)+1;localStorage.setItem(QST_KEY,JSON.stringify(loc));
+      r.innerHTML='<span>Merci, c\'est noté ! 🙏</span>';clearTimeout(_qstT);_qstT=setTimeout(qStatEnvoi,30000);});
+    c.appendChild(r);}catch(e){}}
 function markDone(item,ok,c){
   const p=P();
   if(ok&&p&&!p.done[item.id]){p.score++;p.done[item.id]=true;saveApp();celebrate();sndStar();senseiOK(true);setTimeout(function(){showReactOverlay(true);},300);}
@@ -16534,6 +16570,7 @@ function advHandleAnswer(ok, btn, container, item, c, isPol){
   }
   if(ok){sndOK();senseiOK();ADV.correct++;setTimeout(()=>showReactOverlay(true),300);}
   else{sndKO();senseiKO();setTimeout(()=>showReactOverlay(false),300);}
+  if(!isPol){qStat(item,ok,btn&&(btn.dataset&&btn.dataset.v||btn.textContent));qAvisRow(item,c);}
   // Sauvegarder
   const p=P();
   if(ok&&p&&!p.done[item.id]){p.score++;p.done[item.id]=true;saveApp();celebrate();sndStar();}

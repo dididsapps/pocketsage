@@ -1,5 +1,5 @@
 // PocketSage Academy — Service Worker v2
-const CACHE = 'pocketsage-v59';
+const CACHE = 'pocketsage-v60';
 const ASSETS = [
   '/',
   '/index.html',
@@ -27,6 +27,8 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
+  // Compteur anonyme de réponses : jamais de cache
+  if (e.request.method !== 'GET' || e.request.url.includes('/api/')) return;
   // Audio files: network first, cache fallback
   if (e.request.url.includes('/audio/') || e.request.url.includes('/data/')) {
     // Network first ; les fichiers data/ (ex. data/flash/*.json) sont gardés en cache
