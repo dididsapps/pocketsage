@@ -60,12 +60,12 @@ def main():
     if a.dry_run or not todo:
         for k, l, t in todo[:2]: print(k, '→', t[:300])
         return
-    key = os.environ.get('ELEVENLABS_API_KEY', '')
+    key = os.environ.get('ELEVENLABS_API_KEY', '').strip()
     if not key: sys.exit('❌ ELEVENLABS_API_KEY manquante')
     import boto3
     from botocore.config import Config
     s3 = boto3.client('s3', endpoint_url='https://8ea67fd06083effd6f76efdefb92092f.r2.cloudflarestorage.com',
-                      aws_access_key_id=os.environ.get('R2_ACCESS_KEY', ''), aws_secret_access_key=os.environ.get('R2_SECRET_KEY', ''),
+                      aws_access_key_id=os.environ.get('R2_ACCESS_KEY', '').strip(), aws_secret_access_key=os.environ.get('R2_SECRET_KEY', '').strip(),
                       config=Config(region_name='auto'))
     tmp = Path(tempfile.mkdtemp()); n = 0
     for k, lang, txt in todo:
