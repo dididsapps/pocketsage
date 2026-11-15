@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=68">
+<link rel="stylesheet" href="css/jeux.css?v=69">
 </head>
 <body>
 
@@ -1025,11 +1025,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <div class="sc2" id="age-card">
     <h3>🎂 Ton âge : <span id="age-display" style="color:var(--v);font-size:20px;font-weight:900">8</span> ans</h3>
     <div style="padding:10px 4px 4px">
-      <input type="range" id="age-slider" min="4" max="18" value="8" step="1"
+      <input type="range" id="age-slider" min="4" max="19" value="8" step="1"
         style="width:100%;height:10px;border-radius:5px;outline:none;cursor:pointer;accent-color:#6C63FF;-webkit-appearance:none;appearance:none;touch-action:pan-x"
         oninput="updateAgeSlider(this.value)" onchange="updateAgeSlider(this.value)">
       <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--tl);font-weight:700;margin-top:8px;padding:0 2px">
-        <span>4</span><span>7</span><span>10</span><span>13</span><span>16</span><span>18+</span>
+        <span>4</span><span>7</span><span>10</span><span>13</span><span>16</span><span>18</span><span>🎓 Adulte</span>
       </div>
     </div>
     <div id="age-level-badge" style="display:inline-block;margin-top:8px;background:var(--vl);color:var(--v);border-radius:20px;padding:5px 16px;font-size:13px;font-weight:800">🌱 Explorateur</div>
@@ -1442,11 +1442,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=68"></script>
-<script src="js/jeux-cerveau.js?v=68"></script>
-<script src="js/coach-voix.js?v=68"></script>
-<script src="js/monde-interieur.js?v=68"></script>
-<script src="js/monde-plus.js?v=68"></script>
+<script src="js/jeux.js?v=69"></script>
+<script src="js/jeux-cerveau.js?v=69"></script>
+<script src="js/coach-voix.js?v=69"></script>
+<script src="js/monde-interieur.js?v=69"></script>
+<script src="js/monde-plus.js?v=69"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -11296,7 +11296,7 @@ function ageToTranche(ageVal){
   if(isNaN(n)||ageVal==='18+')return '18+';
   if(n<=8)return '4-8';
   if(n<=13)return '9-13';
-  if(n<=17)return '14-18';
+  if(n<=18)return '14-18';
   return '18+';
 }
 function buildAvatarGrid(){
@@ -11930,23 +11930,23 @@ function ageLevelLabel(n){
   if(n<=9)return'🗺️ Aventurier (7-9 ans)';
   if(n<=12)return'🏆 Champion (10-12 ans)';
   if(n<=15)return'🔬 Expert (13-15 ans)';
-  if(n<=17)return'🎓 Maître (16-17 ans)';
-  return'⚡ Sage suprême (18+ ans)';
+  if(n<=18)return'🎓 Maître (16-18 ans · lycée)';
+  return'🏛️ Sage suprême (adulte · université)';
 }
 function updateAgeSlider(val){
   const n=parseInt(val);
-  _setupAge=n===18?'18+':String(n);
+  _setupAge=n>=19?'18+':String(n);   // 19 = cran « Adulte / Université » (après 18 ans)
   const disp=document.getElementById('age-display');
   const badge=document.getElementById('age-level-badge');
   const slider=document.getElementById('age-slider');
-  if(disp)disp.textContent=n===18?'18+':n;
+  if(disp)disp.textContent=n>=19?'18+':n;
   if(badge)badge.textContent=ageLevelLabel(n);
   // gradient fill dynamique
-  const pct=Math.round((n-4)/(18-4)*100);
+  const pct=Math.round((n-4)/(19-4)*100);
   if(slider)slider.style.background=`linear-gradient(90deg,#6C63FF ${pct}%,#EAE9FF ${pct}%)`;
   // Sensei réagit à l'âge
   if(n<=6)senseiAnim('sensei-bravo',600,'🌱');
-  else if(n>=18)senseiAnim('sensei-dance',1000,'⚡');
+  else if(n>=19)senseiAnim('sensei-dance',1000,'⚡');
   // Mettre à jour la grille d'avatars selon la tranche d'âge
   buildAvatarGrid();
 }
@@ -12414,7 +12414,7 @@ function addProfile(){
 // ════════════════════════════════════════════
 // HOME
 // ════════════════════════════════════════════
-function ageNum(a){return a==='18+'?18:parseInt(a)||6;}
+function ageNum(a){return a==='18+'?19:parseInt(a)||6;}   // '18+' = adulte / université
 function levelLabel(a){const n=ageNum(a);
   if(n<=6)return t('level_1');if(n<=9)return t('level_2');
   if(n<=12)return t('level_3');if(n<=15)return t('level_4');return t('level_5');}
@@ -12427,7 +12427,7 @@ const CLASSE_NOM={Sup:'Adulte'};
 function _estSup(item){return item&&(item.classe==='Sup'||(window.QUESTIONS_SUP_EXTRA&&window.QUESTIONS_SUP_EXTRA.includes(item.id)));}
 const CLASS_MODS=['savoirs','logique'];   // modules rangés par classe
 // (niveau Adulte activé seulement quand ses questions ont été vérifiées : window.SUP_ACTIF)
-function _profClasse(){const n=parseInt(P()&&P().age)||8;return n<=5?'GS':(n>=18&&window.SUP_ACTIF)?'Sup':n>=15?'Lycée':CLASSES[n-5];}
+function _profClasse(){const n=ageNum((P()&&P().age)||'8');return n<=5?'GS':(n>=19&&window.SUP_ACTIF)?'Sup':n>=15?'Lycée':CLASSES[n-5];}
 function _selClasse(){const i=CLASSES.indexOf(_profClasse());const j=Math.max(0,Math.min(CLASSES.length-1,i+(APP.classOff||0)));return CLASSES[j];}
 function _classeFits(item,cl){if(cl==='Sup'&&_estSup(item))return true;if(item.classe)return item.classe===cl;if(item.age){const r=String(_classeToAgeRange(cl)||'').split('-').map(Number);return !r[0]||_ageMatch(item.age,Math.round((r[0]+(r[1]||r[0]))/2),false);}return true;}
 function _classBarHTML(){
@@ -12484,7 +12484,7 @@ function filterByAge(items, profileAge, mini){
   const n = typeof profileAge === 'string' ? ageNum(profileAge) : (profileAge||6);
   // Sa classe + la précédente (révision) ; on remonte plus bas seulement s'il y a trop peu de questions.
   // (Avant : toutes les classes depuis la GS → un ado de 17 ans recevait surtout des questions de primaire.)
-  const ci=CLASSES.indexOf(n<=5?'GS':(n>=18&&window.SUP_ACTIF)?'Sup':n>=15?'Lycée':CLASSES[n-5]);
+  const ci=CLASSES.indexOf(n<=5?'GS':(n>=19&&window.SUP_ACTIF)?'Sup':n>=15?'Lycée':CLASSES[n-5]);
   // Adulte : questions universitaires + les plus difficiles du lycée (pas tout le lycée)
   if(CLASSES[ci]==='Sup'){const sup=items.filter(_estSup);if(sup.length>=mini)return sup;}
   let allowed=CLASSES.slice(Math.max(0,ci-1),ci+1);
@@ -19913,8 +19913,8 @@ window.transferCoinsToWorld=function(n){
 
 })();
 </script>
-<script src="js/questions-plus-data.js?v=68"></script>
-<script src="js/questions-plus.js?v=68"></script>
+<script src="js/questions-plus-data.js?v=69"></script>
+<script src="js/questions-plus.js?v=69"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
