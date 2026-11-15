@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=65">
+<link rel="stylesheet" href="css/jeux.css?v=66">
 </head>
 <body>
 
@@ -1442,11 +1442,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=65"></script>
-<script src="js/jeux-cerveau.js?v=65"></script>
-<script src="js/coach-voix.js?v=65"></script>
-<script src="js/monde-interieur.js?v=65"></script>
-<script src="js/monde-plus.js?v=65"></script>
+<script src="js/jeux.js?v=66"></script>
+<script src="js/jeux-cerveau.js?v=66"></script>
+<script src="js/coach-voix.js?v=66"></script>
+<script src="js/monde-interieur.js?v=66"></script>
+<script src="js/monde-plus.js?v=66"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -12463,12 +12463,13 @@ const CLASSES=['GS','CP','CE1','CE2','CM1','CM2','6ème','5ème','4ème','3ème'
 const CLASSE_NOM={Sup:'Adulte'};
 function _estSup(item){return item&&(item.classe==='Sup'||(window.QUESTIONS_SUP_EXTRA&&window.QUESTIONS_SUP_EXTRA.includes(item.id)));}
 const CLASS_MODS=['savoirs','logique'];   // modules rangés par classe
-function _profClasse(){const n=parseInt(P()&&P().age)||8;return n<=5?'GS':n>=18?'Sup':n>=15?'Lycée':CLASSES[n-5];}
+// (niveau Adulte activé seulement quand ses questions ont été vérifiées : window.SUP_ACTIF)
+function _profClasse(){const n=parseInt(P()&&P().age)||8;return n<=5?'GS':(n>=18&&window.SUP_ACTIF)?'Sup':n>=15?'Lycée':CLASSES[n-5];}
 function _selClasse(){const i=CLASSES.indexOf(_profClasse());const j=Math.max(0,Math.min(CLASSES.length-1,i+(APP.classOff||0)));return CLASSES[j];}
 function _classeFits(item,cl){if(cl==='Sup'&&_estSup(item))return true;if(item.classe)return item.classe===cl;if(item.age){const r=String(_classeToAgeRange(cl)||'').split('-').map(Number);return !r[0]||_ageMatch(item.age,Math.round((r[0]+(r[1]||r[0]))/2),false);}return true;}
 function _classBarHTML(){
   const i=CLASSES.indexOf(_profClasse()),off=APP.classOff||0;
-  const opts=[[-1,'↩️ Réviser'],[0,'🎯 Ma classe'],[1,'🚀 En avance']].filter(([o])=>CLASSES[i+o]);
+  const opts=[[-1,'↩️ Réviser'],[0,'🎯 Ma classe'],[1,'🚀 En avance']].filter(([o])=>CLASSES[i+o]&&(CLASSES[i+o]!=='Sup'||window.SUP_ACTIF));
   return '<div class="sport-grp class-bar">'+opts.map(([o,l])=>`<button class="${o===off?'sel':''}" onclick="sndTap();APP.classOff=${o};openMod(APP.curMod)"><span>${l}</span><b>${CLASSE_NOM[CLASSES[i+o]]||CLASSES[i+o]}</b></button>`).join('')+'</div>';
 }
 function _ageToClasses(age){
@@ -12519,7 +12520,7 @@ function filterByAge(items, profileAge){
   const n = typeof profileAge === 'string' ? ageNum(profileAge) : (profileAge||6);
   // Sa classe + la précédente (révision) ; on remonte plus bas seulement s'il y a trop peu de questions.
   // (Avant : toutes les classes depuis la GS → un ado de 17 ans recevait surtout des questions de primaire.)
-  const ci=CLASSES.indexOf(n<=5?'GS':n>=18?'Sup':n>=15?'Lycée':CLASSES[n-5]);
+  const ci=CLASSES.indexOf(n<=5?'GS':(n>=18&&window.SUP_ACTIF)?'Sup':n>=15?'Lycée':CLASSES[n-5]);
   // Adulte : questions universitaires + les plus difficiles du lycée (pas tout le lycée)
   if(CLASSES[ci]==='Sup'){const sup=items.filter(_estSup);if(sup.length>=40)return sup;}
   let allowed=CLASSES.slice(Math.max(0,ci-1),ci+1);
@@ -19947,8 +19948,8 @@ window.transferCoinsToWorld=function(n){
 
 })();
 </script>
-<script src="js/questions-plus-data.js?v=65"></script>
-<script src="js/questions-plus.js?v=65"></script>
+<script src="js/questions-plus-data.js?v=66"></script>
+<script src="js/questions-plus.js?v=66"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
