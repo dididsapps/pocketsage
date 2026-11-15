@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=70">
+<link rel="stylesheet" href="css/jeux.css?v=71">
 </head>
 <body>
 
@@ -1442,11 +1442,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=70"></script>
-<script src="js/jeux-cerveau.js?v=70"></script>
-<script src="js/coach-voix.js?v=70"></script>
-<script src="js/monde-interieur.js?v=70"></script>
-<script src="js/monde-plus.js?v=70"></script>
+<script src="js/jeux.js?v=71"></script>
+<script src="js/jeux-cerveau.js?v=71"></script>
+<script src="js/coach-voix.js?v=71"></script>
+<script src="js/monde-interieur.js?v=71"></script>
+<script src="js/monde-plus.js?v=71"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -19503,8 +19503,13 @@ function lifePath(from,to){ // largeur d'abord sur la grille (4 directions)
 function lifeGo(col,row,manual){
   const L=W3.life;[col,row]=w3Anchor(w3Key(col,row)).split(',').map(Number);const g=W3.grid[w3Key(col,row)];
   const to={col,row};if(g&&g.fp&&W3_FP[g.id])to.cells=new Set(w3FpCells(col,row,g.id).map(x=>x[0]+','+x[1]));
-  const p=lifePath(L.pos,to);
-  if(!p){if(manual&&g&&window.w3IntHas&&w3IntHas(g.id)){L.path=[];L.target={col,row,id:g.id,manual:true};lifeArrive();return;}   // pas de chemin à pied : on entre quand même
+  let p=lifePath(L.pos,to);
+  if(!p){ // coincé (entouré de déco, sorti d'un bâtiment…) : on le pose sur la case libre la plus proche qui mène à la destination
+    const cand=[];for(let c=0;c<GRID_W;c++)for(let r=0;r<GRID_H;r++){const gg=W3.grid[w3Key(c,r)];if((!gg||LIFE_WALK.has(gg.id))&&!(c===L.pos.col&&r===L.pos.row))cand.push([Math.abs(c-L.pos.col)+Math.abs(r-L.pos.row),c,r]);}
+    cand.sort((x,y)=>x[0]-y[0]);
+    for(const [,c,r] of cand.slice(0,60)){const q=lifePath({col:c,row:r},to);if(q){L.pos={col:c,row:r};p=q;break;}}
+  }
+  if(!p){if(manual&&g&&window.w3IntHas&&w3IntHas(g.id)){L.path=[];L.target={col,row,id:g.id,manual:true};lifeArrive();return;}   // vraiment aucun chemin : on entre quand même
     w3Msg('Je ne trouve pas de chemin jusque-là 🤔');return;}
   L.path=p;L.t=0;L.target=g?{col,row,id:g.id,manual:!!manual}:null;L.idle=0;
   if(!p.length)lifeArrive();
@@ -19914,8 +19919,8 @@ window.transferCoinsToWorld=function(n){
 
 })();
 </script>
-<script src="js/questions-plus-data.js?v=70"></script>
-<script src="js/questions-plus.js?v=70"></script>
+<script src="js/questions-plus-data.js?v=71"></script>
+<script src="js/questions-plus.js?v=71"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
