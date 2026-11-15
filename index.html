@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=67">
+<link rel="stylesheet" href="css/jeux.css?v=68">
 </head>
 <body>
 
@@ -1442,11 +1442,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=67"></script>
-<script src="js/jeux-cerveau.js?v=67"></script>
-<script src="js/coach-voix.js?v=67"></script>
-<script src="js/monde-interieur.js?v=67"></script>
-<script src="js/monde-plus.js?v=67"></script>
+<script src="js/jeux.js?v=68"></script>
+<script src="js/jeux-cerveau.js?v=68"></script>
+<script src="js/coach-voix.js?v=68"></script>
+<script src="js/monde-interieur.js?v=68"></script>
+<script src="js/monde-plus.js?v=68"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -12478,17 +12478,19 @@ function ageDistFromProfile(item, profileAge){
 }
 // Affichage d'un âge : « 4-18 » → « 4-18 ans et + » (les adultes sont aussi concernés)
 function ageLbl(a){if(a===undefined||a===null||a==='')return '';const t=String(a).trim();return /(^|-)18\+?$/.test(t)?t.replace(/\+$/,'')+' ans et +':t+' ans';}
-function filterByAge(items, profileAge){
+function filterByAge(items, profileAge, mini){
+  mini=mini||40;
   if(!items || !items.length) return items;
   const n = typeof profileAge === 'string' ? ageNum(profileAge) : (profileAge||6);
   // Sa classe + la précédente (révision) ; on remonte plus bas seulement s'il y a trop peu de questions.
   // (Avant : toutes les classes depuis la GS → un ado de 17 ans recevait surtout des questions de primaire.)
   const ci=CLASSES.indexOf(n<=5?'GS':(n>=18&&window.SUP_ACTIF)?'Sup':n>=15?'Lycée':CLASSES[n-5]);
   // Adulte : questions universitaires + les plus difficiles du lycée (pas tout le lycée)
-  if(CLASSES[ci]==='Sup'){const sup=items.filter(_estSup);if(sup.length>=40)return sup;}
+  if(CLASSES[ci]==='Sup'){const sup=items.filter(_estSup);if(sup.length>=mini)return sup;}
   let allowed=CLASSES.slice(Math.max(0,ci-1),ci+1);
   const avecClasse=items.filter(it=>it.classe);
-  for(let k=ci-2;k>=0&&avecClasse.filter(it=>allowed.includes(it.classe)).length<40;k--)allowed.unshift(CLASSES[k]);
+  const plancher=(mini>40&&ci>=8)?6:0; // langues : pas de questions de primaire au-delà de la 5e
+  for(let k=ci-2;k>=plancher&&avecClasse.filter(it=>allowed.includes(it.classe)).length<mini;k--)allowed.unshift(CLASSES[k]);
   // Items avec classe : filtrer strictement
   // Items avec age range (ex: "4-6") : vérifier si l'âge du profil est dans la plage
   return items.filter(item => {
@@ -16141,7 +16143,7 @@ function celebrate(){
 const ADV_TYPES = [
   {id:'maths',    label:'Maths',      emoji:'🔢', color:'#FF6B6B', bg:'linear-gradient(135deg,#FF6B6B,#FF9999)', pool:()=>filterByAge(DATA.maths, P()?.age)},
   {id:'logique',  label:'Logique',    emoji:'🧠', color:'#6C63FF', bg:'linear-gradient(135deg,#6C63FF,#9B93FF)', pool:()=>filterByAge(DATA.suites, P()?.age)},
-  {id:'langue',   label:'Langues',    emoji:'🌍', color:'#FF9F1C', bg:'linear-gradient(135deg,#FF9F1C,#FFD166)', pool:()=>{const p=P();const langs=(p&&p.langs&&p.langs.length)?p.langs:['EN'];const all=[];langs.forEach(l=>{if(DATA.langues&&DATA.langues[l])all.push(...DATA.langues[l]);});return filterByAge(all.length?all:(DATA.langues.EN||[]), p?.age);}},
+  {id:'langue',   label:'Langues',    emoji:'🌍', color:'#FF9F1C', bg:'linear-gradient(135deg,#FF9F1C,#FFD166)', pool:()=>{const p=P();const langs=(p&&p.langs&&p.langs.length)?p.langs:['EN'];const all=[];langs.forEach(l=>{if(DATA.langues&&DATA.langues[l])all.push(...DATA.langues[l]);});return filterByAge(all.length?all:(DATA.langues.EN||[]), p?.age, 100);}},
   {id:'sciences', label:'Sciences',   emoji:'🔬', color:'#26C6DA', bg:'linear-gradient(135deg,#26C6DA,#0097A7)', pool:()=>filterByAge(DATA.sciences, P()?.age)},
   {id:'histoire', label:'Histoire',   emoji:'🏛️', color:'#8B6914', bg:'linear-gradient(135deg,#C9A227,#8B6914)', pool:()=>filterByAge(DATA.histoire, P()?.age)},
   {id:'francais', label:'Langue Maternelle 📚', emoji:'📚', color:'#E91E8C', bg:'linear-gradient(135deg,#E91E8C,#AD1457)', pool:()=>filterByAge(DATA.francais, P()?.age)},
@@ -19911,8 +19913,8 @@ window.transferCoinsToWorld=function(n){
 
 })();
 </script>
-<script src="js/questions-plus-data.js?v=67"></script>
-<script src="js/questions-plus.js?v=67"></script>
+<script src="js/questions-plus-data.js?v=68"></script>
+<script src="js/questions-plus.js?v=68"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
