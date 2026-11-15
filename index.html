@@ -902,7 +902,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=69">
+<link rel="stylesheet" href="css/jeux.css?v=70">
 </head>
 <body>
 
@@ -1442,11 +1442,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=69"></script>
-<script src="js/jeux-cerveau.js?v=69"></script>
-<script src="js/coach-voix.js?v=69"></script>
-<script src="js/monde-interieur.js?v=69"></script>
-<script src="js/monde-plus.js?v=69"></script>
+<script src="js/jeux.js?v=70"></script>
+<script src="js/jeux-cerveau.js?v=70"></script>
+<script src="js/coach-voix.js?v=70"></script>
+<script src="js/monde-interieur.js?v=70"></script>
+<script src="js/monde-plus.js?v=70"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -19504,7 +19504,8 @@ function lifeGo(col,row,manual){
   const L=W3.life;[col,row]=w3Anchor(w3Key(col,row)).split(',').map(Number);const g=W3.grid[w3Key(col,row)];
   const to={col,row};if(g&&g.fp&&W3_FP[g.id])to.cells=new Set(w3FpCells(col,row,g.id).map(x=>x[0]+','+x[1]));
   const p=lifePath(L.pos,to);
-  if(!p){w3Msg('Je ne trouve pas de chemin jusque-là 🤔');return;}
+  if(!p){if(manual&&g&&window.w3IntHas&&w3IntHas(g.id)){L.path=[];L.target={col,row,id:g.id,manual:true};lifeArrive();return;}   // pas de chemin à pied : on entre quand même
+    w3Msg('Je ne trouve pas de chemin jusque-là 🤔');return;}
   L.path=p;L.t=0;L.target=g?{col,row,id:g.id,manual:!!manual}:null;L.idle=0;
   if(!p.length)lifeArrive();
 }
@@ -19517,7 +19518,7 @@ function lifeArrive(){
     if(m){m.ok=true;W3.coins+=20;W3.floats.push({x:pos.x,y:pos.y-50,text:'Mission réussie ! +20🪙',life:110,dy:-0.35});try{sndStar();}catch(e){}
       if(!L.bonus&&L.missions.every(x=>x.ok)){L.bonus=true;W3.coins+=30;w3Msg('🏆 Les 3 missions du jour sont réussies ! +30🪙');}}
     const hc=W3.grid[w3Key(T.col,T.row)];if(hc&&hc.harvest>0)harvestCell(T.col,T.row); // l'argent du bâtiment est ramassé en entrant
-    w3UpdateHUD();w3Save();lifePanel();w3IntOpen(T.id,w3Key(T.col,T.row));return;
+    w3UpdateHUD();w3Save();lifePanel();Promise.resolve(w3IntOpen(T.id,w3Key(T.col,T.row))).then(ok=>{if(ok===false)w3Msg('Ce bâtiment n’a pas encore d’intérieur');}).catch(e=>{console.error(e);w3Msg('😕 Impossible d’ouvrir l’intérieur (connexion ?) — réessaie');});return;
   }
   const a=LIFE_ACT[T.id];if(!a){w3Msg('Tu visites : '+((CATALOG.find(c=>c.id===T.id)||{}).label||T.id));return;}
   if(a.c&&W3.coins<a.c){w3Msg('Pas assez de 🪙 pour : '+a.t+' ('+a.c+'🪙)');return;}
@@ -19737,7 +19738,7 @@ function w3Card(){
     if(a==='x'){w3Select(null);return;}
     if(a.startsWith('plus:')){window.w3CardAction&&w3CardAction(a.slice(5),cell,k);return;}
     if(a==='harvest'){harvestCell(c,r);w3Card();return;}
-    if(a==='go'||a==='enter'){if(W3.mode!=='life')w3ToggleLife();w3Select(null);lifeGo(c,r,a==='enter');return;}
+    if(a==='go'||a==='enter'){if(W3.mode!=='life')w3ToggleLife();w3Select(null);lifeGo(c,r,a==='enter'||!!(window.w3IntHas&&w3IntHas(cell.id)));return;}   // « Y aller » vers un bâtiment qui a un intérieur = on y entre
     if(a==='home'){Object.values(W3.grid).forEach(x=>{if(x.home)delete x.home;});cell.home=1;w3Save();w3Card();w3Msg('⭐ C’est ta maison ! Andrew y dormira.');return;}
     if(a==='name'){const n=el.querySelector('.wc-n');n.outerHTML=`<input class="wc-in" maxlength="28" value="${w3Esc(cell.nom||cat.label||'')}"><button class="wc-ok">OK</button>`;
       const inp=el.querySelector('.wc-in');inp.focus();inp.select();const ok=()=>{const v=inp.value.trim();if(v)cell.nom=v;else delete cell.nom;w3Save();w3Card();};
@@ -19913,8 +19914,8 @@ window.transferCoinsToWorld=function(n){
 
 })();
 </script>
-<script src="js/questions-plus-data.js?v=69"></script>
-<script src="js/questions-plus.js?v=69"></script>
+<script src="js/questions-plus-data.js?v=70"></script>
+<script src="js/questions-plus.js?v=70"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
