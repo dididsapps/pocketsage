@@ -10429,6 +10429,7 @@ function _nuitRateBar(){
 }
 // Durée estimée : ~135 mots/min à vitesse d'origine (mesuré sur HS-001)
 function nuitMin(item){
+  if(item.min)return Math.round(item.min/_nuitRate);   // séances enregistrées : durée réelle
   const w=((item.titre||'')+' '+(item.texte||'')).split(/\s+/).filter(Boolean).length;
   return Math.max(1,Math.round(w/(135*_nuitRate)));
 }
@@ -15995,7 +15996,7 @@ function openReader(item,type){
   const txt=document.createElement('div');txt.className='reader-txt'+(isAudio?' reader-txt-audio':'');
   if(isAudio)txt.id='reader-full-txt';
   // Mettre en valeur les instructions de respiration
-  txt.innerHTML=(item.texte||'').split('\n').map(l=>{
+  txt.innerHTML=(item.texte||'').replace(/\s*\[P\d+\]\s*/g,' ').split('\n').map(l=>{   // [P3] = pause pour la voix, invisible à l'écran
     if(!l)return'';
     const isBreath=/(inspire|expire|souffle|retiens|respir)/i.test(l);
     return`<p style="margin-bottom:18px${isBreath?';background:#EAE9FF;border-radius:10px;padding:10px 14px;font-weight:700;color:#5A52D5;font-size:14px':''}">${l}</p>`;
