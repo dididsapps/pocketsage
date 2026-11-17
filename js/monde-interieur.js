@@ -162,8 +162,11 @@ const SIT_DOS=b=>b.rot===2||b.rot===3;
 let SIT_FLIP=b=>b.rot===0,SIT_FLIP_DOS=b=>b.rot===2;
 // hauteur d'assise (px) d'après la hauteur du modèle : tabouret = dessus, chaise/canapé ≈ 55 % (dossier)
 const SEAT=b=>{const t=(b.sp&&b.sp[5])||.45;return /^stool|bench/i.test(b.m)?t*VZ-3:t*.47*VZ;};
-const AVS={};function avSheet(n){if(!AVS[n]){const i=new Image();i.onload=()=>{i.ok=1;};i.src='assets/interieur/andrew_'+n+'.webp?v='+VER;AVS[n]=i;}return AVS[n];}
-function useSprites(){try{const p=window.P&&window.P();return !p||!p.avatarId||p.avatarId==='boy1';}catch(e){return true;}}
+// Planches isométriques : Andrew (avatar par défaut) + les 64 avatars de profil (4-8, 9-13, 14-18, adultes ; taille selon l'âge)
+const AV_ISO=/^avatar-\d\d_(4-8-ans|9-13-ans|14-18-ans|18-et-plus)$/;
+function avId(){try{const p=window.P&&window.P();if(!p||!p.avatarId||p.avatarId==='boy1')return 'andrew';return AV_ISO.test(p.avatarId)?p.avatarId:null;}catch(e){return 'andrew';}}
+const AVS={};function avSheet(n){const id=avId()||'andrew',k=id+'|'+n;if(!AVS[k]){const i=new Image();i.onload=()=>{i.ok=1;};i.src=(id==='andrew'?'assets/interieur/andrew_'+n:'assets/interieur/av/'+id+'_'+n)+'.webp?v='+VER;AVS[k]=i;}return AVS[k];}
+function useSprites(){return avId()!==null;}
 let FALL=null;function fallback(){if(FALL)return FALL;const i=new Image();try{const p=window.P();let src=null;if(p&&p.avatarId){if(p.avatarId==='boy1')src=IMG_AVATAR_BOY1;else{const a=PNG_AVATARS.find(x=>x.id===p.avatarId);if(a)src=_GH+a.f;}}if(src){i.onload=()=>{i.ok=1;};i.src=src;}}catch(e){}FALL=i;return i;}
 function drawAvatar(c,x,y,pose,frameIdx,flip,lift){
   if(pose!=='sleep'){c.save();c.fillStyle='rgba(0,0,0,.22)';c.beginPath();c.ellipse(x,y,10,4.5,0,0,7);c.fill();c.restore();}
