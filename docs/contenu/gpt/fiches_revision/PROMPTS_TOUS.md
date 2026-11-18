@@ -28,12 +28,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -88,12 +89,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -148,12 +150,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -208,12 +211,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -270,12 +274,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -330,12 +335,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -390,12 +396,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -450,12 +457,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -512,12 +520,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -572,12 +581,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -632,12 +642,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -692,12 +703,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -754,12 +766,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -814,12 +827,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -874,12 +888,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -934,12 +949,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -996,12 +1012,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -1056,12 +1073,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -1116,12 +1134,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -1176,12 +1195,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -1236,12 +1256,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -1296,12 +1317,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -1358,12 +1380,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -1418,12 +1441,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -1478,12 +1502,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -1538,12 +1563,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -1598,12 +1624,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -1658,12 +1685,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -1720,12 +1748,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -1780,12 +1809,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -1840,12 +1870,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -1900,12 +1931,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -1960,12 +1992,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -2020,12 +2053,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -2082,12 +2116,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -2142,12 +2177,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -2202,12 +2238,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -2262,12 +2299,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -2322,12 +2360,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -2382,12 +2421,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -2442,12 +2482,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -2502,12 +2543,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -2562,12 +2604,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -2624,12 +2667,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -2684,12 +2728,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -2744,12 +2789,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -2804,12 +2850,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -2864,12 +2911,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -2924,12 +2972,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -2984,12 +3033,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -3044,12 +3094,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -3104,12 +3155,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -3166,12 +3218,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -3226,12 +3279,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -3286,12 +3340,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -3346,12 +3401,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -3406,12 +3462,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -3466,12 +3523,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -3526,12 +3584,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -3586,12 +3645,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -3646,12 +3706,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -3708,12 +3769,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -3768,12 +3830,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -3828,12 +3891,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -3888,12 +3952,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -3948,12 +4013,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -4008,12 +4074,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -4068,12 +4135,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -4128,12 +4196,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -4188,12 +4257,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -4250,12 +4320,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -4310,12 +4381,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -4370,12 +4442,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -4430,12 +4503,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -4490,12 +4564,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -4550,12 +4625,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -4610,12 +4686,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -4670,12 +4747,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -4730,12 +4808,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -4790,12 +4869,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -4850,12 +4930,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -4912,12 +4993,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -4972,12 +5054,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -5032,12 +5115,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -5092,12 +5176,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -5152,12 +5237,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -5212,12 +5298,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -5272,12 +5359,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -5332,12 +5420,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -5392,12 +5481,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -5452,12 +5542,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
@@ -5512,12 +5603,13 @@ PÉDAGOGIE (la fiche doit faire COMPRENDRE, pas seulement réviser) — appuie-t
 
 RÈGLES (toutes obligatoires)
 - Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Couvre TOUT le programme de l'année : avant d'écrire, liste pour toi les attendus de fin d'année de cette classe, puis donne une fiche à CHAQUE notion importante (en général 10 à 16 fiches par matière), rangées par grand axe dans l'ordre où ils sont vus.
+- Ne recopie jamais une fiche d'une autre classe : chaque fiche est écrite pour SA classe.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève. En GS et CP, la fiche est écoutée ou lue par un adulte : phrases très courtes (10 mots environ), quiz possible à l'oral.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
-- Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
+- Mini-quiz (sans préfixe du type « Sans regarder la fiche ») : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
 - Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
