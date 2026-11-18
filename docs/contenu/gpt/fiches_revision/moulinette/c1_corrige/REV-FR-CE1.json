@@ -1,0 +1,436 @@
+{
+ "classe": "CE1",
+ "niveau_appli": "CE1",
+ "age": "7-8 ans",
+ "matiere": "Français",
+ "code": "FR",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Vocabulaire",
+   "titre": "Ranger par ordre alphabétique",
+   "emoji": "📚",
+   "en_une_phrase": "L’ordre alphabétique suit l’ordre des lettres de l’alphabet.",
+   "comprendre": "Tu connais la suite des lettres. Les mots peuvent être rangés dans cet ordre. Cela aide à les retrouver dans un dictionnaire.",
+   "essentiel": [
+    "Compare d’abord les premières lettres.",
+    "Si elles sont identiques, regarde les suivantes.",
+    "A vient avant B dans l’alphabet."
+   ],
+   "image_mentale": "Imagine des livres rangés de A à Z.",
+   "regle_ou_methode": "Compare les lettres de gauche à droite jusqu’à une différence.",
+   "exemples": [
+    "Pour « chat » et « chien », les deux premières lettres sont C et H. Compare A et I. A vient avant I : « chat » vient avant « chien ».",
+    "« Arbre » vient avant « vélo », car A vient avant V."
+   ],
+   "piege": "Quand les premières lettres sont égales, continue la comparaison.",
+   "astuce_memoire": "Même début ? Regarde la lettre suivante.",
+   "quiz": [
+    {
+     "q": "Quel mot vient en premier ?",
+     "choix": [
+      "vélo",
+      "zèbre",
+      "arbre"
+     ],
+     "rep": "arbre",
+     "expl": "A vient avant V et Z."
+    },
+    {
+     "q": "Après CH, quelle lettre compare-t-on dans chat et chien ?",
+     "choix": [
+      "A et I",
+      "C et H",
+      "T et N"
+     ],
+     "rep": "A et I",
+     "expl": "Les deux premières lettres sont identiques."
+    },
+    {
+     "q": "Quel ordre est alphabétique ?",
+     "choix": [
+      "chien, chat",
+      "chat, chien",
+      "chien, arbre"
+     ],
+     "rep": "chat, chien",
+     "expl": "A vient avant I après CH."
+    }
+   ],
+   "id": "REV-FR-CE1-20"
+  },
+  {
+   "axe": "Vocabulaire",
+   "titre": "Chercher dans le dictionnaire",
+   "emoji": "🔎",
+   "en_une_phrase": "Un dictionnaire aide à trouver le sens et l’orthographe d’un mot.",
+   "comprendre": "Tu connais l’ordre alphabétique. Les mots du dictionnaire suivent cet ordre. Tu peux y trouver une explication et un exemple.",
+   "essentiel": [
+    "Cherche le début du mot.",
+    "Suis l’ordre alphabétique.",
+    "Lis la définition et l’exemple."
+   ],
+   "image_mentale": "Imagine des pages repérées par leurs lettres.",
+   "regle_ou_methode": "Cherche les premières lettres, puis lis l’article du mot.",
+   "exemples": [
+    "Pour chercher « vélo », ouvre à la lettre V. Puis cherche VÉ. Lis la définition de « vélo ».",
+    "Pour chercher « jardin », commence à la lettre J."
+   ],
+   "piege": "Un même son peut s’écrire de plusieurs façons : « cerise » se cherche à C, pas à S. Vérifie l’écriture du mot.",
+   "astuce_memoire": "Premier indice : la première lettre.",
+   "quiz": [
+    {
+     "q": "À quelle lettre cherches-tu « jardin » ?",
+     "choix": [
+      "J",
+      "G",
+      "V"
+     ],
+     "rep": "J",
+     "expl": "Le mot commence par J."
+    },
+    {
+     "q": "Que peut donner un dictionnaire ?",
+     "choix": [
+      "La date du jour seulement",
+      "La définition d’un mot",
+      "Le dessin de toutes les histoires"
+     ],
+     "rep": "La définition d’un mot",
+     "expl": "Une définition explique le sens du mot."
+    },
+    {
+     "q": "Pour trouver « vélo », où commences-tu ?",
+     "choix": [
+      "À la lettre L",
+      "À la lettre Z",
+      "À la lettre V"
+     ],
+     "rep": "À la lettre V",
+     "expl": "« Vélo » commence par V."
+    }
+   ],
+   "id": "REV-FR-CE1-21"
+  },
+  {
+   "axe": "Vocabulaire",
+   "titre": "Des mots synonymes",
+   "emoji": "🔁",
+   "en_une_phrase": "Des synonymes ont un sens proche dans un contexte donné.",
+   "comprendre": "Tu sais qu’on peut dire une même idée avec des mots différents. « Content » et « heureux » ont souvent un sens proche. Cela aide à varier ses phrases.",
+   "essentiel": [
+    "Les synonymes ont des sens proches.",
+    "Ils ne s’utilisent pas toujours exactement pareil.",
+    "Vérifie le sens dans la phrase."
+   ],
+   "image_mentale": "Imagine deux chemins qui mènent à une idée proche.",
+   "regle_ou_methode": "Remplace un mot et vérifie que la phrase garde son sens.",
+   "exemples": [
+    "« L’enfant est content. » Remplace « content » par « heureux ». La phrase garde une idée proche.",
+    "« Petit » peut être proche de « minuscule » selon le contexte."
+   ],
+   "piege": "Un synonyme ne convient pas forcément dans toutes les phrases.",
+   "astuce_memoire": "Sens proche, phrase à vérifier.",
+   "quiz": [
+    {
+     "q": "Quel mot est proche de « heureux » ?",
+     "choix": [
+      "triste",
+      "content",
+      "froid"
+     ],
+     "rep": "content",
+     "expl": "Content et heureux ont un sens proche."
+    },
+    {
+     "q": "Quel mot peut être proche de « petit » ?",
+     "choix": [
+      "immense",
+      "bruyant",
+      "minuscule"
+     ],
+     "rep": "minuscule",
+     "expl": "Minuscule décrit une très petite taille."
+    },
+    {
+     "q": "« Elle est heureuse. » Quel mot garde une idée proche ?",
+     "choix": [
+      "contente",
+      "triste",
+      "fatiguée"
+     ],
+     "rep": "contente",
+     "expl": "Contente a ici un sens proche de heureuse."
+    }
+   ],
+   "id": "REV-FR-CE1-22"
+  },
+  {
+   "axe": "Grammaire et orthographe",
+   "titre": "Le nom et son déterminant",
+   "emoji": "🏷️",
+   "en_une_phrase": "Un déterminant accompagne souvent un nom.",
+   "comprendre": "Tu sais nommer des objets et des animaux. Un petit mot peut accompagner leur nom. Il aide notamment à indiquer si on parle d’un ou de plusieurs.",
+   "essentiel": [
+    "« Chat » est un nom.",
+    "« Le » et « des » sont des déterminants.",
+    "Le déterminant accompagne le nom."
+   ],
+   "image_mentale": "Imagine une étiquette devant le nom.",
+   "regle_ou_methode": "Cherche le petit mot placé devant le nom.",
+   "exemples": [
+    "Dans « le chat », « chat » nomme un animal. « Le » l’accompagne : c’est le déterminant.",
+    "Dans « des vélos », « des » accompagne le nom « vélos »."
+   ],
+   "piege": "Le déterminant ne désigne pas l’objet à lui seul : observe le groupe.",
+   "astuce_memoire": "Déterminant puis nom.",
+   "quiz": [
+    {
+     "q": "Dans « le chat », quel est le nom ?",
+     "choix": [
+      "le",
+      "dort",
+      "chat"
+     ],
+     "rep": "chat",
+     "expl": "« Chat » nomme un animal."
+    },
+    {
+     "q": "Dans « des vélos », quel est le déterminant ?",
+     "choix": [
+      "des",
+      "vélos",
+      "roulent"
+     ],
+     "rep": "des",
+     "expl": "« Des » accompagne le nom."
+    },
+    {
+     "q": "Dans « une pomme », quel mot accompagne le nom ?",
+     "choix": [
+      "pomme",
+      "une",
+      "mange"
+     ],
+     "rep": "une",
+     "expl": "« Une » accompagne le nom « pomme »."
+    }
+   ],
+   "id": "REV-FR-CE1-23"
+  },
+  {
+   "axe": "Grammaire et orthographe",
+   "titre": "L’adjectif et le nom",
+   "emoji": "🎨",
+   "en_une_phrase": "Un adjectif donne une précision sur un nom.",
+   "comprendre": "Tu sais dire qu’un sac est petit ou grand. Ces mots décrivent le sac. Ils peuvent s’accorder avec le nom.",
+   "essentiel": [
+    "Un adjectif précise un nom.",
+    "« Petit » peut devenir « petite ».",
+    "Au pluriel, un s s’ajoute souvent."
+   ],
+   "image_mentale": "Imagine un nom avec une étiquette de description.",
+   "regle_ou_methode": "Trouve le nom puis vérifie le genre et le nombre de l’adjectif.",
+   "exemples": [
+    "Dans « une petite chienne », le nom est « chienne ». « Petite » le décrit et prend un e.",
+    "« Des petits chats » prend un s à « petits » et à « chats »."
+   ],
+   "piege": "Ne choisis pas la fin de l’adjectif sans regarder le nom.",
+   "astuce_memoire": "Le nom guide l’adjectif.",
+   "quiz": [
+    {
+     "q": "Dans « un sac rouge », quel mot décrit le sac ?",
+     "choix": [
+      "rouge",
+      "sac",
+      "un"
+     ],
+     "rep": "rouge",
+     "expl": "« Rouge » précise la couleur du sac."
+    },
+    {
+     "q": "Complète : « une petite … »",
+     "choix": [
+      "chien",
+      "chienne",
+      "chiens"
+     ],
+     "rep": "chienne",
+     "expl": "« Petite » convient ici au nom féminin singulier « chienne »."
+    },
+    {
+     "q": "Quelle écriture convient pour plusieurs petits chats ?",
+     "choix": [
+      "des petit chats",
+      "des petits chat",
+      "des petits chats"
+     ],
+     "rep": "des petits chats",
+     "expl": "Le déterminant indique ici le pluriel du nom et de l’adjectif."
+    }
+   ],
+   "id": "REV-FR-CE1-24"
+  },
+  {
+   "axe": "Grammaire et orthographe",
+   "titre": "Le sujet commande le verbe",
+   "emoji": "🔗",
+   "en_une_phrase": "La forme écrite du verbe dépend de son sujet.",
+   "comprendre": "Tu sais dire « le chat saute ». Si plusieurs chats sautent, le sujet change. La terminaison du verbe change aussi à l’écrit.",
+   "essentiel": [
+    "Cherche le verbe.",
+    "Repère qui fait l’action.",
+    "Accorde le verbe avec son sujet."
+   ],
+   "image_mentale": "Imagine un lien entre le sujet et la fin du verbe.",
+   "regle_ou_methode": "Trouve le sujet, puis choisis la terminaison du verbe.",
+   "exemples": [
+    "« Le chat saute. » Un chat : « saute ». « Les chats sautent. » Plusieurs chats : on écrit « sautent ».",
+    "« La fille joue » devient « Les filles jouent »."
+   ],
+   "piege": "Le « ent » de « sautent » est muet : vérifie l’accord à l’écrit.",
+   "astuce_memoire": "Le sujet aide à choisir la fin.",
+   "quiz": [
+    {
+     "q": "Quel est le sujet de « Le chat saute » ?",
+     "choix": [
+      "saute",
+      "Le chat",
+      "chat saute"
+     ],
+     "rep": "Le chat",
+     "expl": "Le groupe « Le chat » indique qui saute."
+    },
+    {
+     "q": "Complète : « Les chats … »",
+     "choix": [
+      "saute",
+      "sautes",
+      "sautent"
+     ],
+     "rep": "sautent",
+     "expl": "Le sujet pluriel demande ici « sautent »."
+    },
+    {
+     "q": "« La fille joue » devient au pluriel :",
+     "choix": [
+      "Les filles jouent",
+      "Les filles joue",
+      "La filles jouent"
+     ],
+     "rep": "Les filles jouent",
+     "expl": "Le sujet et le verbe sont au pluriel."
+    }
+   ],
+   "id": "REV-FR-CE1-25"
+  },
+  {
+   "axe": "Grammaire et orthographe",
+   "titre": "Être et avoir au présent",
+   "emoji": "⏱️",
+   "en_une_phrase": "Au présent, les verbes être et avoir changent selon le sujet.",
+   "comprendre": "Tu dis « je suis » et « nous sommes ». Ces formes parlent du verbe être. Le verbe avoir change aussi avec la personne.",
+   "essentiel": [
+    "Être : je suis, tu es, il ou elle est.",
+    "Être : nous sommes, vous êtes, ils ou elles sont.",
+    "Avoir : j’ai, tu as, il ou elle a.",
+    "Avoir : nous avons, vous avez, ils ou elles ont."
+   ],
+   "image_mentale": "Imagine deux colonnes : être et avoir.",
+   "regle_ou_methode": "Repère le sujet et choisis la forme correspondante.",
+   "exemples": [
+    "Avec « nous » et le verbe être, choisis « sommes ». Écris : « Nous sommes prêts. »",
+    "Avec « tu » et avoir, écris « tu as »."
+   ],
+   "piege": "« Ils sont » vient de être ; « ils ont » vient de avoir.",
+   "astuce_memoire": "Je suis ; j’ai.",
+   "quiz": [
+    {
+     "q": "Complète : « Nous … prêts. »",
+     "choix": [
+      "suis",
+      "êtes",
+      "sommes"
+     ],
+     "rep": "sommes",
+     "expl": "Avec nous, être devient « sommes »."
+    },
+    {
+     "q": "Complète : « Tu … un livre. »",
+     "choix": [
+      "as",
+      "ai",
+      "avons"
+     ],
+     "rep": "as",
+     "expl": "Avec tu, avoir devient « as »."
+    },
+    {
+     "q": "Quel groupe utilise le verbe avoir ?",
+     "choix": [
+      "ils sont",
+      "ils ont",
+      "nous sommes"
+     ],
+     "rep": "ils ont",
+     "expl": "« Ont » est une forme du verbe avoir."
+    }
+   ],
+   "id": "REV-FR-CE1-26"
+  },
+  {
+   "axe": "Grammaire et orthographe",
+   "titre": "Les verbes en -er au présent",
+   "emoji": "🌱",
+   "en_une_phrase": "Au présent, les verbes réguliers en -er changent de terminaison selon le sujet.",
+   "comprendre": "Tu connais le verbe « chanter ». Pour dire qui chante maintenant, on change sa fin. Le début du mot reste ici le même.",
+   "essentiel": [
+    "Je chante, tu chantes, il ou elle chante.",
+    "Nous chantons, vous chantez, ils ou elles chantent.",
+    "La terminaison dépend du sujet."
+   ],
+   "image_mentale": "Imagine le début « chant » et des fins interchangeables.",
+   "regle_ou_methode": "Repère le sujet et ajoute la terminaison qui convient.",
+   "exemples": [
+    "Avec « nous », prends le début « chant ». Ajoute « ons ». Tu écris « nous chantons ».",
+    "Avec « ils », écris « ils chantent ».",
+    "Avec « tu », écris « tu chantes » : le s ne s’entend pas."
+   ],
+   "piege": "Les lettres « ent » de « chantent » ne s’entendent pas ici.",
+   "astuce_memoire": "Nous : ons ; vous : ez ; ils : ent.",
+   "quiz": [
+    {
+     "q": "Complète : « Nous … »",
+     "choix": [
+      "chantons",
+      "chantez",
+      "chantent"
+     ],
+     "rep": "chantons",
+     "expl": "Avec nous, on écrit « chantons »."
+    },
+    {
+     "q": "Complète : « Vous … »",
+     "choix": [
+      "chantons",
+      "chantez",
+      "chante"
+     ],
+     "rep": "chantez",
+     "expl": "Avec vous, on écrit « chantez »."
+    },
+    {
+     "q": "Plusieurs enfants chantent. Quelle forme convient ?",
+     "choix": [
+      "ils chante",
+      "ils chantes",
+      "ils chantent"
+     ],
+     "rep": "ils chantent",
+     "expl": "Le sujet « ils » demande ici la terminaison « ent »."
+    }
+   ],
+   "id": "REV-FR-CE1-27"
+  }
+ ]
+}

@@ -1,0 +1,381 @@
+{
+ "classe": "CE2",
+ "niveau_appli": "CE2",
+ "age": "8-9 ans",
+ "matiere": "Mathématiques",
+ "code": "MA",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Nombres, calcul et résolution de problèmes",
+   "titre": "Soustraire avec échange",
+   "emoji": "➖",
+   "en_une_phrase": "Une dizaine peut être échangée contre dix unités pour soustraire.",
+   "comprendre": "Tu sais que dix unités font une dizaine. Si les unités ne suffisent pas, transforme une dizaine en dix unités. La quantité de départ ne change pas.",
+   "essentiel": [
+    "Aligne les chiffres de même rang.",
+    "Échange une dizaine contre dix unités si nécessaire.",
+    "Soustrais les unités puis les dizaines."
+   ],
+   "image_mentale": "Imagine un paquet de dix crayons ouvert en crayons séparés.",
+   "regle_ou_methode": "Effectue l’échange puis soustrais chaque colonne.",
+   "exemples": [
+    "Pour 52 − 27, transforme 52 en 4 dizaines et 12 unités. Calcule 12 − 7 = 5 puis 4 − 2 = 2. Le résultat est 25.",
+    "Pour 73 − 38 : 13 − 8 = 5 et 6 − 3 = 3, donc 35."
+   ],
+   "piege": "Après l’échange, n’oublie pas d’enlever une dizaine.",
+   "astuce_memoire": "Une dizaine échangée donne dix unités.",
+   "quiz": [
+    {
+     "q": "Combien font 52 − 27 ?",
+     "choix": [
+      "35",
+      "29",
+      "25"
+     ],
+     "rep": "25",
+     "expl": "Après échange, 12 − 7 = 5 et 4 − 2 = 2."
+    },
+    {
+     "q": "Combien font 73 − 38 ?",
+     "choix": [
+      "35",
+      "45",
+      "41"
+     ],
+     "rep": "35",
+     "expl": "Après échange, 13 − 8 = 5 et 6 − 3 = 3."
+    },
+    {
+     "q": "Dans 52, tu échanges une dizaine. Combien en reste-t-il ?",
+     "choix": [
+      "5",
+      "4",
+      "3"
+     ],
+     "rep": "4",
+     "expl": "Cinq dizaines moins la dizaine échangée font quatre dizaines."
+    }
+   ],
+   "id": "REV-MA-CE2-20"
+  },
+  {
+   "axe": "Nombres, calcul et résolution de problèmes",
+   "titre": "Utiliser les tables",
+   "emoji": "✖️",
+   "en_une_phrase": "Les tables de multiplication donnent le total de groupes égaux.",
+   "comprendre": "Tu sais additionner des groupes identiques. Une multiplication donne ce total plus vite quand son résultat est connu. Tu peux vérifier avec des groupes.",
+   "essentiel": [
+    "4 × 3 signifie quatre groupes de trois.",
+    "4 × 3 = 12.",
+    "L’ordre des facteurs peut être échangé."
+   ],
+   "image_mentale": "Imagine quatre boîtes avec trois jetons chacune.",
+   "regle_ou_methode": "Rappelle la table ou additionne les groupes pour vérifier.",
+   "exemples": [
+    "Pour 4 × 3, compte 3 + 3 + 3 + 3. Tu obtiens 12. Donc 4 × 3 = 12.",
+    "5 × 4 = 20."
+   ],
+   "piege": "4 × 3 ne signifie pas 4 + 3 : il y a quatre groupes de trois.",
+   "astuce_memoire": "Groupes égaux, addition répétée.",
+   "quiz": [
+    {
+     "q": "Combien font 4 × 3 ?",
+     "choix": [
+      "12",
+      "7",
+      "16"
+     ],
+     "rep": "12",
+     "expl": "Quatre groupes de trois font douze."
+    },
+    {
+     "q": "Combien font 5 × 4 ?",
+     "choix": [
+      "9",
+      "20",
+      "25"
+     ],
+     "rep": "20",
+     "expl": "Cinq groupes de quatre font vingt."
+    },
+    {
+     "q": "Trois sachets contiennent chacun 4 billes. Combien de billes ?",
+     "choix": [
+      "7",
+      "16",
+      "12"
+     ],
+     "rep": "12",
+     "expl": "Trois groupes de quatre font douze."
+    }
+   ],
+   "id": "REV-MA-CE2-21"
+  },
+  {
+   "axe": "Nombres, calcul et résolution de problèmes",
+   "titre": "Multiplier en colonnes",
+   "emoji": "🧮",
+   "en_une_phrase": "Une multiplication posée permet de calculer par rang.",
+   "comprendre": "Tu sais multiplier des unités et des dizaines. Les colonnes gardent ces rangs bien alignés. Une retenue permet de regrouper dix unités en une dizaine.",
+   "essentiel": [
+    "Aligne les chiffres par rang.",
+    "Multiplie d’abord les unités.",
+    "Reporte la retenue dans la colonne suivante."
+   ],
+   "image_mentale": "Imagine deux colonnes : dizaines et unités.",
+   "regle_ou_methode": "Multiplie les unités, reporte la dizaine puis multiplie les dizaines.",
+   "exemples": [
+    "Pour 24 × 3, calcule 4 × 3 = 12. Écris 2 unités et retiens 1 dizaine. Puis 2 × 3 + 1 = 7 dizaines : le résultat est 72.",
+    "12 × 4 = 48."
+   ],
+   "piege": "La retenue correspond à une dizaine : ajoute-la aux dizaines.",
+   "astuce_memoire": "Unités, retenue, dizaines.",
+   "quiz": [
+    {
+     "q": "Combien font 24 × 3 ?",
+     "choix": [
+      "62",
+      "72",
+      "82"
+     ],
+     "rep": "72",
+     "expl": "Trois fois quatre font douze ; les dizaines donnent sept dizaines."
+    },
+    {
+     "q": "Combien font 12 × 4 ?",
+     "choix": [
+      "36",
+      "16",
+      "48"
+     ],
+     "rep": "48",
+     "expl": "Quatre fois douze font quarante-huit."
+    },
+    {
+     "q": "Dans 24 × 3, pourquoi retient-on 1 ?",
+     "choix": [
+      "12 unités contiennent 1 dizaine",
+      "3 unités font 1 dizaine",
+      "Le 2 vaut une unité"
+     ],
+     "rep": "12 unités contiennent 1 dizaine",
+     "expl": "Douze unités contiennent une dizaine et deux unités."
+    }
+   ],
+   "id": "REV-MA-CE2-22"
+  },
+  {
+   "axe": "Grandeurs et mesures",
+   "titre": "Grammes et kilogrammes",
+   "emoji": "⚖️",
+   "en_une_phrase": "Un kilogramme vaut mille grammes.",
+   "comprendre": "Tu sais qu’une balance mesure une masse. Les grammes et les kilogrammes permettent de comparer des objets. Il faut utiliser la même unité.",
+   "essentiel": [
+    "Le gramme s’écrit g.",
+    "Le kilogramme s’écrit kg.",
+    "1 kg = 1 000 g."
+   ],
+   "image_mentale": "Imagine un paquet de 1 kg et mille petits grammes.",
+   "regle_ou_methode": "Convertis dans la même unité avant de comparer.",
+   "exemples": [
+    "Un paquet de 1 kg pèse 1 000 g. Un autre pèse 750 g. Le premier est plus lourd.",
+    "2 kg correspondent à 2 000 g."
+   ],
+   "piege": "Ne compare pas seulement les chiffres : vérifie les unités.",
+   "astuce_memoire": "Un kilogramme, mille grammes.",
+   "quiz": [
+    {
+     "q": "1 kg vaut combien ?",
+     "choix": [
+      "100 g",
+      "10 g",
+      "1 000 g"
+     ],
+     "rep": "1 000 g",
+     "expl": "Un kilogramme vaut mille grammes."
+    },
+    {
+     "q": "Quelle masse est la plus grande ?",
+     "choix": [
+      "1 kg",
+      "750 g",
+      "Elles sont égales"
+     ],
+     "rep": "1 kg",
+     "expl": "1 kg vaut 1 000 g, donc plus que 750 g."
+    },
+    {
+     "q": "Combien de grammes dans 2 kg ?",
+     "choix": [
+      "200 g",
+      "2 000 g",
+      "20 g"
+     ],
+     "rep": "2 000 g",
+     "expl": "Deux fois mille grammes font deux mille grammes."
+    }
+   ],
+   "id": "REV-MA-CE2-23"
+  },
+  {
+   "axe": "Grandeurs et mesures",
+   "titre": "Litres et centilitres",
+   "emoji": "🧴",
+   "en_une_phrase": "Un litre vaut cent centilitres.",
+   "comprendre": "Tu as déjà versé de l’eau dans une bouteille. Le litre et le centilitre mesurent une contenance. Ils permettent de comparer des récipients.",
+   "essentiel": [
+    "Le litre s’écrit L.",
+    "Le centilitre s’écrit cL.",
+    "1 L = 100 cL."
+   ],
+   "image_mentale": "Imagine un litre partagé en cent petits centilitres.",
+   "regle_ou_methode": "Convertis les contenances dans la même unité.",
+   "exemples": [
+    "Une bouteille contient 1 L, soit 100 cL. Un verre contient 20 cL. La bouteille contient davantage.",
+    "Deux bouteilles de 1 L contiennent 2 L."
+   ],
+   "piege": "Un litre ne vaut pas dix centilitres : il en vaut cent.",
+   "astuce_memoire": "Cent centilitres pour un litre.",
+   "quiz": [
+    {
+     "q": "1 L vaut combien ?",
+     "choix": [
+      "100 cL",
+      "10 cL",
+      "1 cL"
+     ],
+     "rep": "100 cL",
+     "expl": "Un litre vaut cent centilitres."
+    },
+    {
+     "q": "Quelle contenance est la plus grande ?",
+     "choix": [
+      "20 cL",
+      "1 L",
+      "Elles sont égales"
+     ],
+     "rep": "1 L",
+     "expl": "1 L vaut 100 cL, plus que 20 cL."
+    },
+    {
+     "q": "Deux bouteilles de 1 L contiennent combien ?",
+     "choix": [
+      "1 L",
+      "20 cL",
+      "2 L"
+     ],
+     "rep": "2 L",
+     "expl": "Un litre plus un litre font deux litres."
+    }
+   ],
+   "id": "REV-MA-CE2-24"
+  },
+  {
+   "axe": "Espace et géométrie",
+   "titre": "Construire une symétrie",
+   "emoji": "🪞",
+   "en_une_phrase": "Deux points symétriques sont à la même distance de part et d’autre de l’axe.",
+   "comprendre": "Tu sais vérifier une symétrie par pliage. Sur un quadrillage, tu peux aussi compter les cases. Le point obtenu doit être en face de l’autre.",
+   "essentiel": [
+    "L’axe est la ligne de pliage.",
+    "Les points sont de part et d’autre de l’axe.",
+    "Ils sont à la même distance de l’axe."
+   ],
+   "image_mentale": "Imagine une feuille pliée sur une ligne verticale.",
+   "regle_ou_methode": "Compte les cases jusqu’à l’axe, puis autant de l’autre côté.",
+   "exemples": [
+    "Un point est à deux cases à gauche de l’axe. Compte deux cases à droite, sur la même ligne. Place le point symétrique.",
+    "Un point situé sur l’axe reste au même endroit après pliage."
+   ],
+   "piege": "Ne compte pas seulement les cases : reste aussi en face du point.",
+   "astuce_memoire": "Même distance, de l’autre côté.",
+   "quiz": [
+    {
+     "q": "Un point est à deux cases à gauche de l’axe. Où placer son symétrique ?",
+     "choix": [
+      "À une case à droite",
+      "À deux cases à droite, en face",
+      "À deux cases à gauche"
+     ],
+     "rep": "À deux cases à droite, en face",
+     "expl": "Les deux points sont à égale distance de part et d’autre de l’axe."
+    },
+    {
+     "q": "Que devient un point placé sur l’axe ?",
+     "choix": [
+      "Il va à deux cases",
+      "Il disparaît",
+      "Il reste à la même place"
+     ],
+     "rep": "Il reste à la même place",
+     "expl": "Le pli laisse les points de l’axe à leur place."
+    },
+    {
+     "q": "Deux points sont de part et d’autre de l’axe mais pas en face. Sont-ils forcément symétriques ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement s’ils sont rouges"
+     ],
+     "rep": "Non",
+     "expl": "Ils doivent aussi être en face à la même distance."
+    }
+   ],
+   "id": "REV-MA-CE2-25"
+  },
+  {
+   "axe": "Espace et géométrie",
+   "titre": "Cube et pavé droit",
+   "emoji": "🧊",
+   "en_une_phrase": "Le cube et le pavé droit sont des solides à six faces.",
+   "comprendre": "Tu connais des boîtes et des dés. Ces objets ont plusieurs faces. Leur forme aide à reconnaître les solides.",
+   "essentiel": [
+    "Le cube a six faces carrées.",
+    "Le pavé droit a six faces rectangulaires.",
+    "Un carré est aussi un rectangle particulier."
+   ],
+   "image_mentale": "Imagine un dé et une boîte rectangulaire.",
+   "regle_ou_methode": "Observe les faces et compare leurs formes.",
+   "exemples": [
+    "Un dé a six faces carrées de même taille : il a la forme d’un cube.",
+    "Une boîte à chaussures peut avoir la forme d’un pavé droit."
+   ],
+   "piege": "Un cube est un pavé droit particulier : ses faces sont toutes carrées.",
+   "astuce_memoire": "Cube : six carrés.",
+   "quiz": [
+    {
+     "q": "Combien de faces a un cube ?",
+     "choix": [
+      "Quatre",
+      "Huit",
+      "Six"
+     ],
+     "rep": "Six",
+     "expl": "Un cube a six faces."
+    },
+    {
+     "q": "Quelle forme ont les faces d’un cube ?",
+     "choix": [
+      "Des carrés",
+      "Des triangles",
+      "Des cercles"
+     ],
+     "rep": "Des carrés",
+     "expl": "Les faces du cube sont carrées."
+    },
+    {
+     "q": "Un solide a six faces carrées : que peut-il être ?",
+     "choix": [
+      "Une boule",
+      "Un cube",
+      "Un cylindre"
+     ],
+     "rep": "Un cube",
+     "expl": "Un cube possède six faces carrées."
+    }
+   ],
+   "id": "REV-MA-CE2-26"
+  }
+ ]
+}
