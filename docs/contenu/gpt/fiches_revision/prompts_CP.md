@@ -1,31 +1,37 @@
-# Prompts fiches de révision — CP (6-7 ans)
+# Prompts fiches de révision — CP
 
 ## CP (6-7 ans)
 ### Français — fichier `REV-FR-CP.json`
 
 ```
-Tu es un professeur expérimenté de CP (6-7 ans) et un auteur de manuels scolaires. Écris les FICHES DE RÉVISION de **Français** pour la classe de **CP (6-7 ans)**, pour l'application éducative PocketSage (les fiches seront lues sur téléphone, lues à voix haute et imprimées).
+Tu es un professeur expérimenté de CP et un auteur de manuels. Écris les FICHES DE RÉVISION de **Français** pour la classe de **CP** (6-7 ans), pour l'application éducative PocketSage (lues sur téléphone, à voix haute, imprimées).
+Valeurs à mettre : classe = CP, niveau_appli = CP, age = 6-7, matiere = Français, code = FR.
+
+NOMMAGE (obligatoire, pour que chaque fiche soit retrouvée automatiquement)
+- Fichier : REV-<code matière>-<code classe>.json (ex. REV-MA-CM1.json, REV-HGG-TLE.json).
+- Fiche : "id" = REV-<code matière>-<code classe>-NN, NN = 01, 02… dans l'ordre du programme.
+- "axe" = le nom EXACT du grand axe (thème, chapitre ou partie) tel qu'écrit dans le programme officiel ;
+  toutes les fiches d'un même axe portent exactement le même texte d'axe.
 
 RÈGLES (toutes obligatoires)
-- Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe.
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 12 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
+- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
 - Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
-- Pour les langues : l'essentiel en français, exemples dans la langue étudiée avec leur traduction.
+- Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
-FORMAT DE SORTIE : UNIQUEMENT un JSON valide (aucun texte avant ou après), exactement de cette forme :
+FORMAT DE SORTIE : UNIQUEMENT un JSON valide, exactement de cette forme :
 {
-  "classe": "CP",
-  "matiere": "Français",
-  "code": "FR",
+  "classe": "<code classe>", "niveau_appli": "<classe dans l'appli>", "age": "<âge>",
+  "matiere": "<matière>", "code": "<code matière>", "langue": "fr",
   "fiches": [
     {
-      "id": "REV-FR-CP-01",
-      "axe": "nom du grand axe du programme",
+      "id": "REV-<code matière>-<code classe>-01",
+      "axe": "nom exact du grand axe du programme",
       "titre": "titre court de la fiche",
       "emoji": "un seul emoji",
       "essentiel": ["3 à 6 phrases courtes : ce qu'il faut retenir"],
@@ -39,33 +45,39 @@ FORMAT DE SORTIE : UNIQUEMENT un JSON valide (aucun texte avant ou après), exac
     }
   ]
 }
-Numérote les id 01, 02, 03… dans l'ordre des fiches. Vérifie toi-même avant de répondre : JSON valide, 3 questions par fiche, "rep" présent dans "choix".
+Vérifie toi-même avant de répondre : JSON valide, 3 questions par fiche, "rep" présent dans "choix".
 ```
 ### Mathématiques — fichier `REV-MA-CP.json`
 
 ```
-Tu es un professeur expérimenté de CP (6-7 ans) et un auteur de manuels scolaires. Écris les FICHES DE RÉVISION de **Mathématiques** pour la classe de **CP (6-7 ans)**, pour l'application éducative PocketSage (les fiches seront lues sur téléphone, lues à voix haute et imprimées).
+Tu es un professeur expérimenté de CP et un auteur de manuels. Écris les FICHES DE RÉVISION de **Mathématiques** pour la classe de **CP** (6-7 ans), pour l'application éducative PocketSage (lues sur téléphone, à voix haute, imprimées).
+Valeurs à mettre : classe = CP, niveau_appli = CP, age = 6-7, matiere = Mathématiques, code = MA.
+
+NOMMAGE (obligatoire, pour que chaque fiche soit retrouvée automatiquement)
+- Fichier : REV-<code matière>-<code classe>.json (ex. REV-MA-CM1.json, REV-HGG-TLE.json).
+- Fiche : "id" = REV-<code matière>-<code classe>-NN, NN = 01, 02… dans l'ordre du programme.
+- "axe" = le nom EXACT du grand axe (thème, chapitre ou partie) tel qu'écrit dans le programme officiel ;
+  toutes les fiches d'un même axe portent exactement le même texte d'axe.
 
 RÈGLES (toutes obligatoires)
-- Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe.
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 12 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
+- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
 - Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
-- Pour les langues : l'essentiel en français, exemples dans la langue étudiée avec leur traduction.
+- Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
-FORMAT DE SORTIE : UNIQUEMENT un JSON valide (aucun texte avant ou après), exactement de cette forme :
+FORMAT DE SORTIE : UNIQUEMENT un JSON valide, exactement de cette forme :
 {
-  "classe": "CP",
-  "matiere": "Mathématiques",
-  "code": "MA",
+  "classe": "<code classe>", "niveau_appli": "<classe dans l'appli>", "age": "<âge>",
+  "matiere": "<matière>", "code": "<code matière>", "langue": "fr",
   "fiches": [
     {
-      "id": "REV-MA-CP-01",
-      "axe": "nom du grand axe du programme",
+      "id": "REV-<code matière>-<code classe>-01",
+      "axe": "nom exact du grand axe du programme",
       "titre": "titre court de la fiche",
       "emoji": "un seul emoji",
       "essentiel": ["3 à 6 phrases courtes : ce qu'il faut retenir"],
@@ -79,33 +91,39 @@ FORMAT DE SORTIE : UNIQUEMENT un JSON valide (aucun texte avant ou après), exac
     }
   ]
 }
-Numérote les id 01, 02, 03… dans l'ordre des fiches. Vérifie toi-même avant de répondre : JSON valide, 3 questions par fiche, "rep" présent dans "choix".
+Vérifie toi-même avant de répondre : JSON valide, 3 questions par fiche, "rep" présent dans "choix".
 ```
 ### Questionner le monde — fichier `REV-QM-CP.json`
 
 ```
-Tu es un professeur expérimenté de CP (6-7 ans) et un auteur de manuels scolaires. Écris les FICHES DE RÉVISION de **Questionner le monde** pour la classe de **CP (6-7 ans)**, pour l'application éducative PocketSage (les fiches seront lues sur téléphone, lues à voix haute et imprimées).
+Tu es un professeur expérimenté de CP et un auteur de manuels. Écris les FICHES DE RÉVISION de **Questionner le monde** pour la classe de **CP** (6-7 ans), pour l'application éducative PocketSage (lues sur téléphone, à voix haute, imprimées).
+Valeurs à mettre : classe = CP, niveau_appli = CP, age = 6-7, matiere = Questionner le monde, code = QM.
+
+NOMMAGE (obligatoire, pour que chaque fiche soit retrouvée automatiquement)
+- Fichier : REV-<code matière>-<code classe>.json (ex. REV-MA-CM1.json, REV-HGG-TLE.json).
+- Fiche : "id" = REV-<code matière>-<code classe>-NN, NN = 01, 02… dans l'ordre du programme.
+- "axe" = le nom EXACT du grand axe (thème, chapitre ou partie) tel qu'écrit dans le programme officiel ;
+  toutes les fiches d'un même axe portent exactement le même texte d'axe.
 
 RÈGLES (toutes obligatoires)
-- Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe.
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 12 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
+- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
 - Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
-- Pour les langues : l'essentiel en français, exemples dans la langue étudiée avec leur traduction.
+- Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
-FORMAT DE SORTIE : UNIQUEMENT un JSON valide (aucun texte avant ou après), exactement de cette forme :
+FORMAT DE SORTIE : UNIQUEMENT un JSON valide, exactement de cette forme :
 {
-  "classe": "CP",
-  "matiere": "Questionner le monde",
-  "code": "QM",
+  "classe": "<code classe>", "niveau_appli": "<classe dans l'appli>", "age": "<âge>",
+  "matiere": "<matière>", "code": "<code matière>", "langue": "fr",
   "fiches": [
     {
-      "id": "REV-QM-CP-01",
-      "axe": "nom du grand axe du programme",
+      "id": "REV-<code matière>-<code classe>-01",
+      "axe": "nom exact du grand axe du programme",
       "titre": "titre court de la fiche",
       "emoji": "un seul emoji",
       "essentiel": ["3 à 6 phrases courtes : ce qu'il faut retenir"],
@@ -119,33 +137,39 @@ FORMAT DE SORTIE : UNIQUEMENT un JSON valide (aucun texte avant ou après), exac
     }
   ]
 }
-Numérote les id 01, 02, 03… dans l'ordre des fiches. Vérifie toi-même avant de répondre : JSON valide, 3 questions par fiche, "rep" présent dans "choix".
+Vérifie toi-même avant de répondre : JSON valide, 3 questions par fiche, "rep" présent dans "choix".
 ```
 ### Anglais — fichier `REV-AN-CP.json`
 
 ```
-Tu es un professeur expérimenté de CP (6-7 ans) et un auteur de manuels scolaires. Écris les FICHES DE RÉVISION de **Anglais** pour la classe de **CP (6-7 ans)**, pour l'application éducative PocketSage (les fiches seront lues sur téléphone, lues à voix haute et imprimées).
+Tu es un professeur expérimenté de CP et un auteur de manuels. Écris les FICHES DE RÉVISION de **Anglais** pour la classe de **CP** (6-7 ans), pour l'application éducative PocketSage (lues sur téléphone, à voix haute, imprimées).
+Valeurs à mettre : classe = CP, niveau_appli = CP, age = 6-7, matiere = Anglais, code = AN.
+
+NOMMAGE (obligatoire, pour que chaque fiche soit retrouvée automatiquement)
+- Fichier : REV-<code matière>-<code classe>.json (ex. REV-MA-CM1.json, REV-HGG-TLE.json).
+- Fiche : "id" = REV-<code matière>-<code classe>-NN, NN = 01, 02… dans l'ordre du programme.
+- "axe" = le nom EXACT du grand axe (thème, chapitre ou partie) tel qu'écrit dans le programme officiel ;
+  toutes les fiches d'un même axe portent exactement le même texte d'axe.
 
 RÈGLES (toutes obligatoires)
-- Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe.
-- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 12 fiches selon la matière), dans l'ordre où ils sont généralement vus.
+- Programme officiel de l'Éducation nationale française EN VIGUEUR pour l'année scolaire 2026-2027 (tiens compte des nouveaux programmes entrés en vigueur depuis 2024-2025 quand ils existent). Ne sors jamais du programme de cette classe. En Première et Terminale, vise ce qui tombe au bac (épreuves anticipées de français en Première ; philosophie, spécialités et grand oral en Terminale).
+- Découpe la matière en ses GRANDS AXES de l'année (entre 6 et 14 fiches selon la matière), dans l'ordre où ils sont généralement vus.
 - Une fiche = UNE notion, tenant sur un écran de téléphone et sur une page A4 : court, clair, sans jargon inutile.
 - Contenu exact et vérifiable. Pas d'opinion. Pas de date ou de chiffre douteux : en cas de doute, ne le mets pas.
 - Vocabulaire adapté à l'âge ; phrases courtes ; tutoiement de l'élève.
 - Exemples concrets du quotidien. Aucune marque, aucune personne réelle vivante, aucun lien.
 - Mini-quiz : 3 questions à choix multiples, une SEULE bonne réponse, la bonne réponse écrite EXACTEMENT comme dans les choix, des pièges plausibles.
-- Pour les langues : l'essentiel en français, exemples dans la langue étudiée avec leur traduction.
+- Écris TOUT en français (c'est la langue de référence ; l'application traduira ensuite dans ses autres langues). Pour l'anglais et l'espagnol : explications en français, exemples dans la langue étudiée avec leur traduction.
 - Pas d'emoji dans les textes (sauf le champ "emoji"), pas de mise en forme Markdown dans les valeurs JSON.
 
-FORMAT DE SORTIE : UNIQUEMENT un JSON valide (aucun texte avant ou après), exactement de cette forme :
+FORMAT DE SORTIE : UNIQUEMENT un JSON valide, exactement de cette forme :
 {
-  "classe": "CP",
-  "matiere": "Anglais",
-  "code": "AN",
+  "classe": "<code classe>", "niveau_appli": "<classe dans l'appli>", "age": "<âge>",
+  "matiere": "<matière>", "code": "<code matière>", "langue": "fr",
   "fiches": [
     {
-      "id": "REV-AN-CP-01",
-      "axe": "nom du grand axe du programme",
+      "id": "REV-<code matière>-<code classe>-01",
+      "axe": "nom exact du grand axe du programme",
       "titre": "titre court de la fiche",
       "emoji": "un seul emoji",
       "essentiel": ["3 à 6 phrases courtes : ce qu'il faut retenir"],
@@ -159,5 +183,5 @@ FORMAT DE SORTIE : UNIQUEMENT un JSON valide (aucun texte avant ou après), exac
     }
   ]
 }
-Numérote les id 01, 02, 03… dans l'ordre des fiches. Vérifie toi-même avant de répondre : JSON valide, 3 questions par fiche, "rep" présent dans "choix".
+Vérifie toi-même avant de répondre : JSON valide, 3 questions par fiche, "rep" présent dans "choix".
 ```

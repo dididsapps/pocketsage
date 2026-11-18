@@ -11,7 +11,7 @@ Toute création ou modification passe par la moulinette (docs/contenu/PROCESS_CO
    Format : 1-2 phrases (≤ 35 mots), adaptées à l'âge ; puis affichage « 💡 Pourquoi ? » + voix.
    (Les 1 059 questions ajoutées le 14-15/11 ont déjà leur `expl`.)
 
-4. **Fiches de révision** (nouveau, 18/11) : 70 prompts prêts dans `docs/contenu/gpt/fiches_revision/`
+4. **Fiches de révision** (nouveau, 18/11) : prompts prêts (GS → Terminale) dans `docs/contenu/gpt/fiches_revision/`
    (une conversation ChatGPT par classe × matière). Déposer chaque JSON dans `reponses/`, Claude fait la
    moulinette puis l'intégration (onglet « 📄 Fiches » dans chaque matière + PDF).
 
