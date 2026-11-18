@@ -382,6 +382,34 @@ body.soir #nuit-c span{color:#E0B080}
 .lum-bar b{font-size:12px;color:var(--nt2,#E0B080);font-weight:700;min-width:62px}
 .lum-bar input{flex:1;accent-color:#F2A65A;height:28px}
 #veilleuse .lum-bar{width:100%;max-width:340px;margin:0}
+/* 💪 Mes super-pouvoirs */
+.pc-tabs{display:flex;gap:8px;overflow-x:auto;padding:12px 14px 6px;scrollbar-width:none}
+.pc-tab{flex-shrink:0;padding:8px 13px;border-radius:20px;border:2px solid var(--pc,#6C63FF);background:#fff;color:var(--pc,#6C63FF);font-family:var(--f);font-size:12.5px;font-weight:800;cursor:pointer;white-space:nowrap}
+.pc-tab.on{background:var(--pc,#6C63FF);color:#fff}
+.pc-head{margin:6px 14px 12px;padding:16px;border-radius:20px;background:linear-gradient(135deg,var(--pc),color-mix(in srgb,var(--pc) 60%,#000));color:#fff;font-family:var(--f)}
+.pc-h1{font-size:20px;font-weight:900}.pc-h2{font-size:13px;opacity:.92;margin:6px 0 10px;line-height:1.45}.pc-h3{font-size:12px;font-weight:700;margin-top:6px}
+.pc-prog{height:8px;border-radius:6px;background:rgba(255,255,255,.3);overflow:hidden}.pc-prog div{height:100%;background:#fff;border-radius:6px}
+.pc-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.pc-btn2{background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.5);color:#fff;border-radius:12px;padding:7px 11px;font-family:var(--f);font-size:12.5px;font-weight:800;cursor:pointer}
+.pc-we{margin:0 14px 12px;padding:12px 14px;border-radius:14px;background:#FFF7E6;color:#6B4600;font-size:13.5px;line-height:1.5}
+.pc-day{margin:0 14px 10px;border-radius:16px;background:var(--w,#fff);box-shadow:var(--sh);border-left:5px solid var(--pc);overflow:hidden}
+.pc-day.fait{opacity:.85}.pc-day.auj{box-shadow:0 0 0 2px var(--pc),var(--sh)}
+.pc-dh{display:flex;align-items:center;gap:10px;width:100%;padding:13px 14px;background:none;border:none;font-family:var(--f);text-align:left;cursor:pointer;color:var(--t)}
+.pc-dn{font-size:13px;font-weight:900;color:var(--pc);min-width:86px}.pc-dt{flex:1;font-size:14px;font-weight:800}.pc-chev{font-size:11px;color:#999}
+.pc-db{padding:0 14px 14px}
+.pc-step{display:flex;gap:10px;margin-top:12px}.pc-sn{width:26px;height:26px;border-radius:50%;background:var(--pc);color:#fff;font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.pc-sc{flex:1;min-width:0;font-size:14px;color:var(--t);line-height:1.45}.pc-small{font-size:12px;color:var(--tl,#666);font-weight:600}
+.pc-btn{margin-top:7px;padding:9px 14px;border-radius:12px;border:none;background:var(--pc);color:#fff;font-family:var(--f);font-size:13.5px;font-weight:800;cursor:pointer}
+.pc-voix.on{animation:pcpulse 1.2s infinite}.pc-voix.on::after{content:' · touche pour arrêter';font-weight:600}
+@keyframes pcpulse{50%{opacity:.7}}
+.pc-det{margin-top:8px;font-size:13px}.pc-det summary{cursor:pointer;color:var(--pc);font-weight:700}.pc-det p{margin:6px 0;line-height:1.55}
+.pc-var{margin-top:8px;font-size:12.5px;line-height:1.5;color:var(--t)}
+.pc-ok{display:flex;gap:8px;align-items:center;margin-top:14px;padding:10px 12px;border-radius:12px;background:color-mix(in srgb,var(--pc) 12%,#fff);font-weight:800;font-size:13.5px;cursor:pointer;color:var(--t)}
+.pc-ok input{width:20px;height:20px;accent-color:var(--pc)}
+.pc-mix{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:12px 14px}.pc-mix .pc-btn{margin:0;flex-shrink:0}
+.pc-q{margin:10px 0;font-size:13.5px;color:#333;line-height:1.4}.pc-qr{display:flex;gap:6px;margin-top:6px}
+.pc-qr button{flex:1;margin:0!important;padding:8px 4px!important;font-size:12.5px!important;background:#F0EFFF!important;color:#5A52D5!important;border-radius:10px!important}
+.pc-qr button.on{background:#6C63FF!important;color:#fff!important}
 /* Pause des yeux 20-20-20 et couvre-feu */
 .ps-modal{position:fixed;inset:0;z-index:9998;background:rgba(10,10,25,.82);display:flex;align-items:center;justify-content:center;padding:20px}
 .ps-modal .pm-box{background:#fff;border-radius:22px;padding:22px 20px;max-width:340px;width:100%;text-align:center;font-family:var(--f);box-shadow:0 10px 40px rgba(0,0,0,.35)}
@@ -971,7 +999,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=79">
+<link rel="stylesheet" href="css/jeux.css?v=80">
 </head>
 <body>
 
@@ -1413,12 +1441,20 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <div class="sc" id="flash-content"></div>
 </div>
 
+<div class="scr" id="scr-parcours">
+  <div class="hdr">
+    <button class="hbk" onclick="goHome()"></button>
+    <div class="htit">💪 Mes super-pouvoirs</div>
+  </div>
+  <div class="sc" id="parcours-c"></div>
+</div>
 <div class="scr" id="scr-politesse">
   <div class="hdr">
     <button class="hbk" onclick="goHome()"></button>
     <div class="htit">🌸 Politesse & Savoir-vivre</div>
     <div class="hsc" id="pol-hsc">⭐ 0</div>
   </div>
+  <button onclick="openParcours('PC-EMO')" style="margin:8px 14px 0;padding:9px 12px;border-radius:14px;border:2px solid #F59E0B;background:#FFF7E6;color:#8A5300;font-family:var(--f);font-size:13px;font-weight:800;cursor:pointer;flex-shrink:0;text-align:left">🌈 Mes émotions : la météo du cœur et la boîte à calme →</button>
   <div class="stabs" id="pol-tabs" style="padding:8px 14px 0;flex-shrink:0"></div>
   <div class="sc" id="pol-content"></div>
 </div>
@@ -1511,11 +1547,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=79"></script>
-<script src="js/jeux-cerveau.js?v=79"></script>
-<script src="js/coach-voix.js?v=79"></script>
-<script src="js/monde-interieur.js?v=79"></script>
-<script src="js/monde-plus.js?v=79"></script>
+<script src="js/jeux.js?v=80"></script>
+<script src="js/jeux-cerveau.js?v=80"></script>
+<script src="js/coach-voix.js?v=80"></script>
+<script src="js/monde-interieur.js?v=80"></script>
+<script src="js/monde-plus.js?v=80"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -12486,6 +12522,7 @@ const HOME_MODS=[
   {id:'logique',icon:'🧩',name:t('m_logique'),desc:t('m_logique_d'),color:'linear-gradient(135deg,#6C63FF,#9B93FF)',nav:'logique'},
   {id:'langues',icon:'🌍',name:t('m_langues'),desc:t('m_langues_d'),color:'linear-gradient(135deg,#FF6B6B,#FF9999)',nav:'langues'},
   {id:'sciences',icon:'🔬',name:t('m_sciences'),desc:t('m_sciences_d'),color:'linear-gradient(135deg,#06D6A0,#00B884)',nav:'savoirs'},
+  {id:'parcours',icon:'💪',name:'Mes super-pouvoirs',desc:'Concentration, mémoire, calme, émotions, persévérance : 10 min par jour, avec des jeux sans écran guidés à la voix',color:'linear-gradient(135deg,#7C3AED,#EC4899)',nav:'parcours'},
   {id:'politesse',icon:'🌸',name:t('m_politesse'),desc:t('m_politesse_d'),color:'linear-gradient(135deg,#FF9F1C,#FF6B35)',nav:'politesse'},
   {id:'videos',icon:'🎬',name:t('m_videos'),desc:t('m_videos_d'),color:'linear-gradient(135deg,#E040FB,#AB47BC)',nav:'videos'},
   {id:'ateliers',icon:'🎨',name:t('m_ateliers'),desc:t('m_ateliers_d'),color:'linear-gradient(135deg,#FF6B6B,#FF9F1C)',nav:'ateliers'},
@@ -12782,6 +12819,7 @@ function buildHome(){try{applyLang();}catch(e){}
           try{
             if(m.nav==='flash')openFlash();
             else if(m.nav==='politesse')openPolitesse();
+            else if(m.nav==='parcours')openParcours();
             else if(m.nav==='nuit')openNuit();
             else if(m.nav==='jeux')openJeux();
             else if(m.nav==='videos')openMod('recompenses');
@@ -20170,8 +20208,10 @@ window.transferCoinsToWorld=function(n){
 
 })();
 </script>
-<script src="js/questions-plus-data.js?v=79"></script>
-<script src="js/questions-plus.js?v=79"></script>
+<script src="js/questions-plus-data.js?v=80"></script>
+<script src="js/questions-plus.js?v=80"></script>
+<script src="js/parcours-data.js?v=80"></script>
+<script src="js/parcours.js?v=80"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {

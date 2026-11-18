@@ -17,7 +17,7 @@
         "titre": "Le jeu de Kim",
         "duree_min": 3,
         "materiel": "5 objets de la maison pas trop petits (cuillère, chaussette, crayon, livre, peluche)",
-        "script": "Bonjour, Super-Mémoire ! Aujourd'hui, on joue au jeu de Kim. Va chercher cinq objets dans ta chambre ou ton salon. Par exemple une chaussette, un crayon, une peluche, un livre et une cuillère. [P5] [P5] [P5] Pose-les devant toi, bien alignés. [P3] Maintenant, regarde-les très fort. Dis le nom de chaque objet à voix haute. [P5] Encore une fois, en les touchant du doigt. [P5] Super. Maintenant, tourne-toi, dos aux objets. Pas de triche ! [P3] Dis-moi tous les objets dont tu te souviens. Compte sur tes doigts. [P5] [P3] Retourne-toi et vérifie. [P3] Tu les avais tous ? Bravo ! Il en manquait un ? Pas grave, c'est drôle, on recommence. Change un objet de place, regarde encore, tourne-toi, et redis la liste. [P5] [P5] Tu as une mémoire de champion !",
+        "script": "Bonjour, Super-Mémoire ! Aujourd'hui, on joue au jeu de Kim. Va chercher cinq objets dans ta chambre ou ton salon. Par exemple une chaussette, un crayon, une peluche, un livre et une cuillère. Tu peux demander de l'aide à un grand. [P5] [P5] [P5] [P5] Pose-les devant toi, bien alignés. [P3] Maintenant, regarde-les très fort. Dis le nom de chaque objet à voix haute. [P5] Encore une fois, en les touchant du doigt. [P5] Super. Maintenant, tourne-toi, dos aux objets. Pas de triche ! [P3] Dis-moi tous les objets dont tu te souviens. Compte sur tes doigts. [P5] [P3] Retourne-toi et vérifie. [P3] Tu les avais tous ? Bravo ! Il en manquait un ? Pas grave, c'est drôle, on recommence. Change un objet de place. [P3] Regarde encore tous les objets. [P5] Tourne-toi. [P2] Et redis la liste. [P5] [P3] Tu as une mémoire de champion !",
         "petits": "Avec 3 objets seulement, et on peut les nommer ensemble avant de se retourner.",
         "grands": "Avec 7 ou 8 objets, et redis-les dans l'ordre où ils sont posés, de gauche à droite.",
         "a_deux": "Pendant que l'enfant cache ses yeux avec ses mains, le parent retire un objet : lequel a disparu ?"
@@ -65,25 +65,25 @@
         "a_deux": "L'enfant invente à son tour une suite de gestes que le parent doit répéter sans se tromper."
       },
       "calme": {
-        "script": "Assieds-toi tranquillement. Pose tes mains sur ton ventre. [P2] Inspire doucement par le nez, ton ventre se gonfle comme un ballon. [P3] Souffle lentement par la bouche, le ballon se dégonfle. [P3] Encore une fois : inspire. [P3] Souffle. [P3] Une dernière fois, inspire. [P3] Et souffle tout doucement. [P3] Tes gestes se reposent. Bravo, Super-Mémoire."
+        "ref": "HR-002"
       }
     },
     {
       "jour": "Jeudi",
-      "theme": "Retenir et raconter",
+      "theme": "Retenir une histoire",
       "jeu": {
         "id": "mastermind",
-        "pourquoi": "Pour trouver le code, il faut se souvenir de ses essais précédents : un bon entraînement avant la liste de courses."
+        "pourquoi": "Pour trouver le code, il faut se souvenir de ses essais précédents : un bon entraînement avant de retenir les détails d'une histoire."
       },
       "activite": {
         "id": "PC-MEM-J4",
-        "titre": "La liste de courses",
+        "titre": "L'histoire à retenir",
         "duree_min": 3,
-        "materiel": "aucun (papier et crayon facultatifs pour les grands)",
-        "script": "Super-Mémoire, on va faire les courses au magasin imaginaire. Mais attention, pas de papier : la liste, on la garde dans la tête ! Écoute bien. Il faut acheter des pommes, du pain, du lait et des bananes. [P2] Pour bien retenir, imagine chaque chose. Des pommes rouges et brillantes. [P2] Un gros pain tout chaud. [P2] Une bouteille de lait. [P2] Des bananes jaunes. [P2] Maintenant, marche sur place, tu vas au magasin. [P5] Tu es arrivé ! Dis-moi tout ce qu'il faut acheter. [P5] Bravo ! Tu as oublié quelque chose ? Pas grave, on relit la liste dans sa tête : pommes, pain, lait, bananes. [P3] Ah, j'ai oublié ! Il faut aussi du fromage. Redis toute la liste avec le fromage. [P5] Super, ton panier est plein !",
-        "petits": "La liste fait 3 choses, et l'enfant peut les mimer : croquer la pomme, boire le lait.",
-        "grands": "La liste fait 6 choses, puis redis-la à l'envers, de la dernière à la première, et écris-la ensuite pour vérifier.",
-        "a_deux": "Le parent joue le marchand : l'enfant lui demande toute la liste, et le marchand fait semblant de donner chaque chose."
+        "materiel": "aucun",
+        "script": "Super-Mémoire, assieds-toi bien confortablement. Je vais te raconter une toute petite histoire. Écoute bien, car après, c'est toi qui vas me la raconter. [P2] Il était une fois un petit écureuil qui s'appelait Noisette. Noisette avait un bonnet rouge. [P2] Un matin, il a trouvé trois glands sous un arbre. [P2] Il les a donnés à son amie la tortue. [P2] Puis il s'est mis à pleuvoir, et ils se sont cachés sous un gros champignon. [P3] Fin de l'histoire. Ferme les yeux et imagine Noisette avec son bonnet rouge. [P3] Première question. De quelle couleur était le bonnet de Noisette ? Dis-le à voix haute. [P3] Rouge, bravo ! Deuxième question. Combien de glands a-t-il trouvés ? [P3] Trois ! Troisième question. À qui les a-t-il donnés ? [P3] À la tortue. Dernière question. Où se sont-ils cachés quand il a plu ? [P3] Sous un gros champignon. Tu as oublié une réponse ? Pas grave, c'est drôle, on écoute encore. Maintenant, raconte toute l'histoire à voix haute, depuis le début. [P5] [P5] [P5] Bravo, tu es un super conteur !",
+        "petits": "On pose seulement deux questions, et l'enfant peut mimer l'écureuil, le bonnet et la pluie pendant l'histoire.",
+        "grands": "Les grands ajoutent un détail inventé à la fin de l'histoire, puis la racontent à l'envers, de la pluie jusqu'au bonnet.",
+        "a_deux": "Le parent raconte à son tour une petite histoire de quatre phrases, et l'enfant lui pose des questions pour le piéger."
       },
       "calme": {
         "ref": "MED-002"
@@ -101,7 +101,7 @@
         "titre": "Le chemin secret",
         "duree_min": 4,
         "materiel": "un coussin ou une peluche",
-        "script": "Super-Mémoire, dernière mission de la semaine : le chemin secret ! Prends un coussin ou une peluche. C'est le trésor. [P3] Écoute le chemin, sans bouger. En marchant doucement, tu vas aller jusqu'à la porte de la pièce. [P2] Ensuite, tu touches une chaise ou un fauteuil. [P2] Puis tu poses le trésor près d'une fenêtre ou d'un mur. [P2] Et tu reviens à ta place. [P2] Redis le chemin à voix haute : porte, chaise, trésor, retour. [P5] Bravo ! Maintenant, fais le chemin en marchant doucement, sans courir. [P5] [P5] [P5] Tu es revenu ? Super ! Maintenant, le chemin à l'envers : va chercher le trésor, touche la chaise, va à la porte, et reviens. Doucement ! [P5] [P5] [P5] Tu t'es trompé de chemin ? C'est ça, l'aventure ! On recommence. Bravo, tu as une Super-Mémoire !",
+        "script": "Super-Mémoire, dernière mission de la semaine : le chemin secret ! Prends un coussin ou une peluche. C'est le trésor. [P3] Écoute le chemin, sans bouger. En marchant doucement, tu vas aller jusqu'à la porte de la pièce. [P2] Ensuite, tu touches une chaise ou un fauteuil. [P2] Puis tu poses le trésor par terre, au pied d'un mur. [P2] Et tu reviens à ta place. [P2] Redis le chemin à voix haute : porte, chaise, trésor, retour. [P5] Bravo ! Maintenant, fais le chemin en marchant doucement, sans courir. [P5] [P5] [P5] Tu es revenu ? Super ! Maintenant, le chemin à l'envers : va chercher le trésor, touche la chaise, va à la porte, et reviens. Doucement ! [P5] [P5] [P5] Tu t'es trompé de chemin ? C'est ça, l'aventure ! On recommence. Bravo, tu as une Super-Mémoire !",
         "petits": "Le chemin a 2 étapes seulement : la porte, puis le trésor posé sur le lit ou le canapé.",
         "grands": "Le chemin a 5 étapes ou plus, et c'est l'enfant qui invente un nouveau chemin à faire retenir.",
         "a_deux": "L'enfant invente un chemin secret et le dit une seule fois : le parent doit le suivre sans se tromper."

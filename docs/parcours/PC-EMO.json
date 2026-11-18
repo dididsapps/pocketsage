@@ -1,110 +1,118 @@
 {
-  "id": "PC-EMO",
-  "nom_enfant": "🌈 La météo du cœur",
-  "nom_parent": "Émotions",
-  "accroche_parent": "Une semaine pour jouer à reconnaître, nommer et accueillir ce que l'on ressent, et pour découvrir quelques petits trucs qui aident à retrouver son calme. Ici, aucune émotion n'est « mauvaise » : toutes ont le droit d'exister, on s'entraîne simplement à les écouter.",
-  "pour_qui": "4-12 ans",
-  "jours": [
-    {
-      "jour": "Lundi",
-      "theme": "Quel temps fait-il dans mon cœur ?",
-      "jeu": {
-        "id": "sort",
-        "pourquoi": "Classer des objets par familles prépare l'idée du jour : nos émotions aussi ont des familles, et on peut apprendre à leur donner un nom."
-      },
-      "activite": {
-        "id": "PC-EMO-J1",
-        "titre": "La météo du cœur",
-        "duree_min": 3,
-        "materiel": "aucun",
-        "script": "Bonjour ! Aujourd'hui, tu deviens présentateur ou présentatrice de la météo. Mais pas la météo du ciel : la météo du cœur. Lève-toi, s'il te plaît. [P3] Quand je dis soleil, ouvre grand les bras et fais ton plus beau sourire. C'est la joie. Soleil ! [P3] Bravo, ça brille ! Quand je dis nuage, laisse tomber tes épaules, tout doucement, comme un nuage un peu lourd. C'est la tristesse. Nuage. [P3] Très bien. Le nuage a le droit d'être là. Quand je dis orage, serre les poings et tape des pieds sur place, sans bouger de ta place. C'est la colère. Orage ! [P3] Waouh, quel orage ! Maintenant, brouillard : cache tes yeux avec tes mains, et regarde entre tes doigts. C'est la peur, quand on ne sait pas ce qui va arriver. Brouillard. [P3] Et pour finir, arc-en-ciel : dessine un grand arc dans l'air avec ton bras. C'est la surprise. Arc-en-ciel ! [P3] Maintenant, je vais aller plus vite. Prêt ? Soleil ! [P2] Orage ! [P2] Nuage ! [P2] Arc-en-ciel ! [P2] Brouillard ! [P2] Soleil ! [P2] Si tu t'es trompé, ce n'est pas grave, c'est même rigolo. Dernière question, la plus importante. Pose ta main sur ton cœur. [P2] Quel temps fait-il dans ton cœur, maintenant ? Soleil, nuage, orage, brouillard ou arc-en-ciel ? Dis-le à voix haute. [P5] Merci. Toutes les météos sont bienvenues. Le ciel change tout le temps, et nos émotions aussi.",
-        "petits": "Gardez seulement trois météos (soleil, nuage, orage) et répétez-les lentement.",
-        "grands": "Ajoutez une météo inventée par l'enfant, avec son geste et l'émotion qui va avec.",
-        "a_deux": "Le parent fait la météo à son tour et l'enfant devine l'émotion, puis chacun dit sa météo du jour."
-      },
-      "calme": { "ref": "MED-002" }
-    },
-    {
-      "jour": "Mardi",
-      "theme": "Les visages nous parlent",
-      "jeu": {
-        "id": "memory",
-        "pourquoi": "Retrouver des paires demande d'observer les détails : c'est l'œil du détective dont on a besoin aujourd'hui pour lire les visages."
-      },
-      "activite": {
-        "id": "PC-EMO-J2",
-        "titre": "Le détective des visages",
-        "duree_min": 3,
-        "materiel": "aucun",
-        "script": "Bonjour, détective ! Aujourd'hui, ta mission est d'enquêter sur les visages. Et le premier visage, c'est le tien. Assieds-toi confortablement. [P3] Fais une tête toute joyeuse. [P3] Avec le bout de tes doigts, touche ta bouche. Est-ce qu'elle monte ou est-ce qu'elle descend ? [P3] Elle monte ! Indice numéro un : quand on est joyeux, la bouche monte. Maintenant, fais une tête toute surprise. [P3] Touche tes sourcils. Ils sont montés tout en haut ! Et ta bouche fait un rond. Indice numéro deux. [P3] Maintenant, une tête de colère. [P3] Touche le milieu de ton front. Tes sourcils se rapprochent, comme deux petits nuages fâchés. Indice numéro trois. [P3] Maintenant, une tête triste. [P3] Ta bouche descend, et tes yeux regardent un peu vers le bas. Indice numéro quatre. [P3] Et enfin, une tête qui a peur. [P3] Tes yeux deviennent tout ronds, et tes épaules montent vers tes oreilles. Indice numéro cinq. [P3] Super enquête ! Maintenant, secoue ta tête doucement pour tout effacer. [P2] Dernière mission. Je dis une petite histoire, et tu fais la tête qui va avec. Ton ami te prête son jouet préféré. [P3] Ta tour de cubes tombe juste avant la fin. [P3] Tu entends un grand bruit bizarre. [P3] Tu reçois une surprise. [P3] Bravo, détective ! Tu sais maintenant que le visage nous donne des indices. Et quand tu n'es pas sûr, tu peux toujours demander : comment tu te sens ?",
-        "petits": "Gardez trois visages seulement (joie, tristesse, colère) et faites-les ensemble en vous regardant.",
-        "grands": "Proposez des émotions plus fines à mimer, comme la fierté, la gêne ou l'ennui, et cherchez les indices ensemble.",
-        "a_deux": "Le parent mime une émotion sans parler et l'enfant détective doit la deviner, puis on échange les rôles."
-      },
-      "calme": { "ref": "HR-001" }
-    },
-    {
-      "jour": "Mercredi",
-      "theme": "Où est-ce que je sens mon émotion ?",
-      "jeu": {
-        "id": "simon",
-        "pourquoi": "Simon demande d'écouter et de suivre attentivement : aujourd'hui, l'enfant va écouter de la même façon ce que son corps lui raconte."
-      },
-      "activite": {
-        "id": "PC-EMO-J3",
-        "titre": "Le corps qui parle",
-        "duree_min": 3,
-        "materiel": "aucun",
-        "script": "Bonjour ! Tu savais que ton corps sait parler ? Il ne parle pas avec des mots, il parle avec des sensations. Aujourd'hui, on va l'écouter. Mets-toi debout, bien droit, comme un arbre. [P3] Imagine que tu as une grande joie. Ton anniversaire, par exemple. Où est-ce que tu la sens, cette joie ? Dans tes jambes qui ont envie de sauter ? Dans ton ventre qui fait des bulles ? Pose tes mains à cet endroit. [P5] Super. Maintenant, imagine que quelqu'un a cassé ton dessin. Grrr, la colère arrive. Où est-ce que tu la sens ? Dans tes poings qui serrent ? Dans tes joues qui chauffent ? Dans ton ventre ? Pose tes mains à cet endroit. [P5] Très bien. La colère a le droit d'être là. Elle te dit : quelque chose n'est pas juste pour moi. Maintenant, imagine que tu entends un bruit dans le noir. La peur arrive. Où est-ce que tu la sens ? Dans ton cœur qui tape vite ? Dans tes jambes toutes molles ? Pose tes mains à cet endroit. [P5] Bravo. La peur a le droit d'être là. Elle te dit : attention, je veux être en sécurité. Et maintenant, imagine que ton copain est parti en vacances. Un peu de tristesse arrive. Où est-ce que tu la sens ? Dans ta gorge ? Dans tes yeux ? Pose tes mains à cet endroit. [P5] Merci. La tristesse a le droit d'être là. Elle te dit : cette personne compte pour moi. Il n'y a pas de mauvaise réponse. Chacun sent ses émotions à sa façon. Pour finir, secoue tes mains, secoue tes bras, secoue tes jambes, une à une, pour remercier ton corps. [P5] Merci, mon corps, de me parler !",
-        "petits": "Montrez vous-même un endroit possible pour chaque émotion, puis laissez l'enfant choisir le sien.",
-        "grands": "Demandez à l'enfant de décrire la sensation avec un mot : chaud, serré, lourd, qui pique, qui bouge.",
-        "a_deux": "Chacun montre où il sent l'émotion, et on découvre que ce n'est pas toujours au même endroit."
-      },
-      "calme": { "ref": "MED-003" }
-    },
-    {
-      "jour": "Jeudi",
-      "theme": "Quand ça monte, je choisis un truc calme",
-      "jeu": {
-        "id": "stroop",
-        "pourquoi": "Les couleurs piégées peuvent un peu agacer : c'est l'occasion de remarquer quand ça monte, de souffler, et de recommencer tranquillement."
-      },
-      "activite": {
-        "id": "PC-EMO-J4",
-        "titre": "La boîte à calme",
-        "duree_min": 4,
-        "materiel": "une feuille, des crayons, un coussin ou un doudou",
-        "script": "Bonjour ! Parfois, une émotion monte très fort, comme une vague. Ce n'est pas mal. Mais on peut avoir besoin de trucs pour retrouver son calme. Aujourd'hui, on remplit ta boîte à calme. Une boîte imaginaire, avec plein de trucs dedans. On les essaie tous. Truc numéro un : la bougie. Lève un doigt devant toi, c'est une bougie. Souffle dessus, tout doucement, pour faire danser la flamme sans l'éteindre. [P5] Encore une fois. [P5] Truc numéro deux : le câlin. Prends ton coussin ou ton doudou, et serre-le fort, fort, fort. [P3] Et relâche. [P2] Encore une fois, serre fort. [P3] Et relâche. [P2] Truc numéro trois : le chien mouillé. Debout, sur place, secoue-toi comme un chien qui sort de l'eau. Les mains, les bras, les épaules ! [P5] Et stop, immobile. [P2] Truc numéro quatre : les yeux détectives. Regarde autour de toi et trouve trois choses bleues. [P5] Maintenant, trouve deux choses rondes. [P5] Bravo. Truc numéro cinq : la phrase magique. Répète après moi, doucement : j'ai le droit d'être en colère, et je peux me calmer. [P3] Ça marche aussi avec triste, ou avec peur. Maintenant, prends ta feuille. Dessine une grande boîte. [P5] Dedans, dessine les deux trucs que tu as préférés. La bougie, le câlin, le chien mouillé, les yeux détectives, ou la phrase magique. Prends ton temps. [P5] [P5] [P5] Ta boîte à calme est prête ! La prochaine fois qu'une vague monte, tu sauras quoi faire. Et tu peux toujours demander de l'aide à un grand.",
-        "petits": "Essayez seulement la bougie, le câlin et le chien mouillé, et l'enfant montre son préféré du doigt au lieu de le dessiner.",
-        "grands": "L'enfant ajoute un truc à lui dans la boîte et écrit à côté de chaque dessin quand il pourrait l'utiliser.",
-        "a_deux": "Le parent dessine aussi sa propre boîte à calme, et chacun explique ses deux trucs préférés à l'autre."
-      },
-      "calme": { "ref": "HR-005" }
-    },
-    {
-      "jour": "Vendredi",
-      "theme": "J'écris ou je dessine à mon émotion",
-      "jeu": {
-        "id": "laby",
-        "pourquoi": "Dans le labyrinthe, on avance pas à pas et on peut revenir en arrière sans souci : une jolie image pour terminer la semaine en douceur."
-      },
-      "activite": {
-        "id": "PC-EMO-J5",
-        "titre": "La lettre à mon émotion",
-        "duree_min": 4,
-        "materiel": "une feuille et des crayons de couleur",
-        "script": "Bonjour ! Cette semaine, tu as rencontré beaucoup d'émotions. La joie, la tristesse, la colère, la peur, la surprise. Aujourd'hui, tu vas en choisir une, et lui faire un cadeau : un dessin ou une lettre. Ferme les yeux si tu veux, et pense à une émotion que tu as sentie cette semaine. [P5] Ça y est, tu l'as choisie ? Dis son nom à voix haute. [P3] Maintenant, imagine que cette émotion est un petit personnage. De quelle couleur est-il ? [P3] Il est grand ou petit ? [P3] Il est tout rond, tout pointu, tout doux ? [P3] Prends tes crayons et dessine ton personnage émotion. [P5] [P5] [P5] Super. Maintenant, on va lui parler. Tu peux écrire, ou dessiner, ou juste lui dire à voix haute. Dis-lui bonjour. [P3] Dis-lui quand il est venu te voir cette semaine. [P5] Et maintenant, dis-lui merci. Merci de m'avoir prévenu. [P3] Souviens-toi : aucune émotion n'est mauvaise. Elles viennent toutes nous dire quelque chose, puis elles repartent, comme les nuages. Pour finir, donne un nom rigolo à ton personnage, et écris-le en haut de ta feuille, ou demande à un grand de t'aider. [P5] Bravo ! Tu as le super-pouvoir de la météo du cœur. Tu sais reconnaître tes émotions, les nommer, et les accueillir.",
-        "petits": "L'enfant dessine seulement le personnage et lui parle à voix haute, le parent peut écrire ses mots en dessous.",
-        "grands": "L'enfant écrit une vraie petite lettre de trois ou quatre phrases à son émotion, en commençant par Chère ou Cher.",
-        "a_deux": "Le parent écrit aussi une lettre à une de ses émotions de la semaine, et on peut se les lire si chacun le souhaite."
-      },
-      "calme": {
-        "script": "Assieds-toi tranquillement et pose tes mains sur ton ventre. [P2] Imagine un ciel avec un petit nuage. Inspire doucement par le nez, le nuage se gonfle. [P3] Souffle doucement par la bouche, le nuage s'en va plus loin. [P3] Encore une fois. Inspire, le nuage se gonfle. [P3] Souffle, il s'éloigne. [P3] Une dernière fois. Inspire. [P3] Souffle. [P3] Le ciel est tout bleu maintenant. Les nuages viennent, les nuages passent, et toi tu restes là, bien tranquille. Bravo pour ta semaine."
-      }
-    }
-  ],
-  "fiche": {
-    "titre": "Mon programme de la semaine — La météo du cœur",
-    "defi_bonus": "Ce week-end, chaque soir au dîner, chacun dit sa météo du cœur de la journée (soleil, nuage, orage, brouillard ou arc-en-ciel) et raconte un moment qui l'explique."
+ "id": "PC-EMO",
+ "nom_enfant": "🌈 La météo du cœur",
+ "nom_parent": "Émotions",
+ "accroche_parent": "Une semaine pour jouer à reconnaître, nommer et accueillir ce que l'on ressent, et pour découvrir quelques petits trucs qui aident à retrouver son calme. Ici, aucune émotion n'est « mauvaise » : toutes ont le droit d'exister, on s'entraîne simplement à les écouter.",
+ "pour_qui": "4-12 ans",
+ "jours": [
+  {
+   "jour": "Lundi",
+   "theme": "Quel temps fait-il dans mon cœur ?",
+   "jeu": {
+    "id": "sort",
+    "pourquoi": "Classer des objets par familles prépare l'idée du jour : nos émotions aussi ont des familles, et on peut apprendre à leur donner un nom."
+   },
+   "activite": {
+    "id": "PC-EMO-J1",
+    "titre": "La météo du cœur",
+    "duree_min": 3,
+    "materiel": "aucun",
+    "script": "Bonjour ! Aujourd'hui, tu deviens présentateur ou présentatrice de la météo. Mais pas la météo du ciel : la météo du cœur. Pose le téléphone et lève-toi. [P3] Quand je dis soleil, ouvre grand les bras et fais ton plus beau sourire. C'est la joie. Soleil ! [P3] Bravo, ça brille ! Quand je dis nuage, laisse tomber tes épaules, tout doucement, comme un nuage un peu lourd. C'est la tristesse. Nuage. [P3] Très bien. Le nuage a le droit d'être là. Quand je dis orage, serre les poings et tape des pieds sur place, sans bouger de ta place. C'est la colère. Orage ! [P3] Waouh, quel orage ! Maintenant, brouillard : cache tes yeux avec tes mains, et regarde entre tes doigts. C'est la peur, quand on ne sait pas ce qui va arriver. Brouillard. [P3] Et pour finir, arc-en-ciel : dessine un grand arc dans l'air avec ton bras. C'est la surprise. Arc-en-ciel ! [P3] Maintenant, je vais aller plus vite. Prêt ? Soleil ! [P2] Orage ! [P2] Nuage ! [P2] Arc-en-ciel ! [P2] Brouillard ! [P2] Soleil ! [P2] Si tu t'es trompé, ce n'est pas grave, c'est même rigolo. Dernière question, la plus importante. Pose ta main sur ton cœur. [P2] Quel temps fait-il dans ton cœur, maintenant ? Soleil, nuage, orage, brouillard ou arc-en-ciel ? Dis-le à voix haute. [P5] Merci. Toutes les météos sont bienvenues. Le ciel change tout le temps, et nos émotions aussi.",
+    "petits": "Gardez seulement trois météos (soleil, nuage, orage) et répétez-les lentement.",
+    "grands": "Ajoutez une météo inventée par l'enfant, avec son geste et l'émotion qui va avec.",
+    "a_deux": "Le parent fait la météo à son tour et l'enfant devine l'émotion, puis chacun dit sa météo du jour."
+   },
+   "calme": {
+    "ref": "MED-002"
+   }
+  },
+  {
+   "jour": "Mardi",
+   "theme": "Les visages nous parlent",
+   "jeu": {
+    "id": "memory",
+    "pourquoi": "Retrouver des paires demande d'observer les détails : c'est l'œil du détective dont on a besoin aujourd'hui pour lire les visages."
+   },
+   "activite": {
+    "id": "PC-EMO-J2",
+    "titre": "Le détective des visages",
+    "duree_min": 3,
+    "materiel": "aucun",
+    "script": "Bonjour, détective ! Aujourd'hui, ta mission est d'enquêter sur les visages. Et le premier visage, c'est le tien. Assieds-toi confortablement. [P3] Fais une tête toute joyeuse. [P3] Avec le bout de tes doigts, touche ta bouche. Est-ce qu'elle monte ou est-ce qu'elle descend ? [P3] Elle monte ! Indice numéro un : quand on est joyeux, la bouche monte. Maintenant, fais une tête toute surprise. [P3] Touche tes sourcils. Ils sont montés tout en haut ! Et ta bouche fait un rond. Indice numéro deux. [P3] Maintenant, une tête de colère. [P3] Touche le milieu de ton front. Tes sourcils se rapprochent, comme deux petits nuages fâchés. Indice numéro trois. [P3] Maintenant, une tête triste. [P3] Ta bouche descend, et tes yeux regardent un peu vers le bas. Indice numéro quatre. [P3] Et enfin, une tête qui a peur. [P3] Tes yeux deviennent tout ronds, et tes épaules montent vers tes oreilles. Indice numéro cinq. [P3] Super enquête ! Maintenant, secoue ta tête doucement pour tout effacer. [P2] Dernière mission. Je dis une petite histoire, et tu fais la tête qui va avec. Ton ami te prête son jouet préféré. [P3] Ta tour de cubes tombe juste avant la fin. [P3] Tu entends un grand bruit bizarre. [P3] Tu reçois une surprise. [P3] Bravo, détective ! Tu sais maintenant que le visage nous donne des indices. Et quand tu n'es pas sûr, tu peux toujours demander : comment tu te sens ?",
+    "petits": "Gardez trois visages seulement (joie, tristesse, colère) et faites-les ensemble en vous regardant.",
+    "grands": "Proposez des émotions plus fines à mimer, comme la fierté, la gêne ou l'ennui, et cherchez les indices ensemble.",
+    "a_deux": "Le parent mime une émotion sans parler et l'enfant détective doit la deviner, puis on échange les rôles."
+   },
+   "calme": {
+    "ref": "HR-001"
+   }
+  },
+  {
+   "jour": "Mercredi",
+   "theme": "Où est-ce que je sens mon émotion ?",
+   "jeu": {
+    "id": "taquin",
+    "pourquoi": "Remettre un puzzle dans l'ordre, calmement, pièce par pièce : on prend son temps, même quand ça résiste."
+   },
+   "activite": {
+    "id": "PC-EMO-J3",
+    "titre": "Le corps qui parle",
+    "duree_min": 3,
+    "materiel": "aucun",
+    "script": "Bonjour ! Tu savais que ton corps sait parler ? Il ne parle pas avec des mots, il parle avec des sensations. Aujourd'hui, on va l'écouter. Mets-toi debout, bien droit, comme un arbre. [P3] Imagine que tu as une grande joie. Ton anniversaire, par exemple. Où est-ce que tu la sens, cette joie ? Dans tes jambes qui ont envie de sauter ? Dans ton ventre qui fait des bulles ? Pose tes mains à cet endroit. [P5] Super. Maintenant, imagine que quelqu'un a cassé ton dessin. Oh non, la colère arrive. Où est-ce que tu la sens ? Dans tes poings qui serrent ? Dans tes joues qui chauffent ? Dans ton ventre ? Pose tes mains à cet endroit. [P5] Très bien. La colère a le droit d'être là. Elle te dit : quelque chose n'est pas juste pour moi. Maintenant, imagine qu'un très gros bruit arrive, tout d'un coup. La peur arrive. Où est-ce que tu la sens ? Dans ton cœur qui tape vite ? Dans tes jambes toutes molles ? Pose tes mains à cet endroit. [P5] Bravo. La peur a le droit d'être là. Elle te dit : attention, je veux être en sécurité. Et maintenant, imagine que ton copain est parti en vacances. Un peu de tristesse arrive. Où est-ce que tu la sens ? Dans ta gorge ? Dans tes yeux ? Pose tes mains à cet endroit. [P5] Merci. La tristesse a le droit d'être là. Elle te dit : cette personne compte pour moi. Il n'y a pas de mauvaise réponse. Chacun sent ses émotions à sa façon. Pour finir, secoue tes mains, secoue tes bras, secoue tes jambes, une à une, pour remercier ton corps. [P5] Merci, mon corps, de me parler !",
+    "petits": "Montrez vous-même un endroit possible pour chaque émotion, puis laissez l'enfant choisir le sien.",
+    "grands": "Demandez à l'enfant de décrire la sensation avec un mot : chaud, serré, lourd, qui pique, qui bouge.",
+    "a_deux": "Chacun montre où il sent l'émotion, et on découvre que ce n'est pas toujours au même endroit."
+   },
+   "calme": {
+    "ref": "MED-003"
+   }
+  },
+  {
+   "jour": "Jeudi",
+   "theme": "Quand ça monte, je choisis un truc calme",
+   "jeu": {
+    "id": "stroop",
+    "pourquoi": "Les couleurs piégées peuvent un peu agacer : c'est l'occasion de remarquer quand ça monte, de souffler, et de recommencer tranquillement."
+   },
+   "activite": {
+    "id": "PC-EMO-J4",
+    "titre": "La boîte à calme",
+    "duree_min": 4,
+    "materiel": "une feuille, des crayons, un coussin ou un doudou",
+    "script": "Bonjour ! Parfois, une émotion monte très fort, comme une vague. C'est normal. Mais on peut avoir besoin de trucs pour retrouver son calme. Aujourd'hui, on remplit ta boîte à calme. Une boîte imaginaire, avec plein de trucs dedans. On les essaie tous. Truc numéro un : la bougie. Lève un doigt devant toi, c'est une bougie. Souffle dessus, tout doucement, pour faire danser la flamme sans l'éteindre. [P5] Encore une fois. [P5] Truc numéro deux : le câlin. Prends ton coussin ou ton doudou, et serre-le fort, fort, fort. [P3] Et relâche. [P2] Encore une fois, serre fort. [P3] Et relâche. [P2] Truc numéro trois : le chien mouillé. Debout, sur place, secoue-toi comme un chien qui sort de l'eau. Les mains, les bras, les épaules ! [P5] Et stop, immobile. [P2] Truc numéro quatre : les yeux détectives. Regarde autour de toi et trouve trois choses rondes. [P5] Maintenant, trouve deux choses douces. [P5] Bravo. Truc numéro cinq : la phrase magique. Répète après moi, doucement : j'ai le droit d'être en colère, et je peux me calmer. [P3] Ça marche aussi avec triste, ou avec peur. Maintenant, prends ta feuille. Dessine une grande boîte. [P5] Dedans, dessine les deux trucs que tu as préférés. La bougie, le câlin, le chien mouillé, les yeux détectives, ou la phrase magique. Prends ton temps. [P5] [P5] [P5] Ta boîte à calme est prête ! La prochaine fois qu'une vague monte, tu sauras quoi faire. Et tu peux toujours demander de l'aide à un grand.",
+    "petits": "Essayez seulement la bougie, le câlin et le chien mouillé, et l'enfant montre son préféré du doigt au lieu de le dessiner.",
+    "grands": "L'enfant ajoute un truc à lui dans la boîte et écrit à côté de chaque dessin quand il pourrait l'utiliser.",
+    "a_deux": "Le parent dessine aussi sa propre boîte à calme, et chacun explique ses deux trucs préférés à l'autre."
+   },
+   "calme": {
+    "ref": "HR-005"
+   }
+  },
+  {
+   "jour": "Vendredi",
+   "theme": "J'écris ou je dessine à mon émotion",
+   "jeu": {
+    "id": "laby",
+    "pourquoi": "Dans le labyrinthe, on avance pas à pas et on peut revenir en arrière sans souci : une jolie image pour terminer la semaine en douceur."
+   },
+   "activite": {
+    "id": "PC-EMO-J5",
+    "titre": "La lettre à mon émotion",
+    "duree_min": 4,
+    "materiel": "une feuille et des crayons de couleur",
+    "script": "Bonjour ! Cette semaine, tu as rencontré beaucoup d'émotions. La joie, la tristesse, la colère, la peur, la surprise. Aujourd'hui, tu vas en choisir une, et lui faire un cadeau : un dessin ou une lettre. Ferme les yeux si tu veux, et pense à une émotion que tu as sentie cette semaine. [P5] Ça y est, tu l'as choisie ? Dis son nom à voix haute. [P3] Maintenant, imagine que cette émotion est un petit personnage. De quelle couleur est-il ? [P3] Il est grand ou petit ? [P3] Il est tout rond, tout pointu, tout doux ? [P3] Prends tes crayons et dessine ton personnage émotion. [P5] [P5] [P5] Super. Maintenant, on va lui parler. Tu peux écrire, ou dessiner, ou juste lui dire à voix haute. Dis-lui bonjour. [P3] Dis-lui quand il est venu te voir cette semaine. [P5] Et maintenant, dis-lui merci. Merci de m'avoir prévenu. [P3] Souviens-toi : aucune émotion n'est mauvaise. Elles viennent toutes nous dire quelque chose, puis elles repartent, comme les nuages. Pour finir, donne un nom rigolo à ton personnage, et écris-le en haut de ta feuille, ou demande à un grand de t'aider. [P5] Bravo ! Tu as le super-pouvoir de la météo du cœur. Tu sais reconnaître tes émotions, les nommer, et les accueillir.",
+    "petits": "L'enfant dessine seulement le personnage et lui parle à voix haute, le parent peut écrire ses mots en dessous.",
+    "grands": "L'enfant écrit une vraie petite lettre de trois ou quatre phrases à son émotion, en commençant par Chère ou Cher.",
+    "a_deux": "Le parent écrit aussi une lettre à une de ses émotions de la semaine, et on peut se les lire si chacun le souhaite."
+   },
+   "calme": {
+    "script": "Assieds-toi tranquillement et pose tes mains sur ton ventre. [P2] Imagine un ciel avec un petit nuage. Inspire doucement par le nez, le nuage se gonfle. [P3] Souffle doucement par la bouche, le nuage s'en va plus loin. [P3] Encore une fois. Inspire, le nuage se gonfle. [P3] Souffle, il s'éloigne. [P3] Une dernière fois. Inspire. [P3] Souffle. [P3] Le ciel est tout bleu maintenant. Les nuages viennent, les nuages passent, et toi tu restes là, bien tranquille. Bravo pour ta semaine."
+   }
   }
+ ],
+ "fiche": {
+  "titre": "Mon programme de la semaine — La météo du cœur",
+  "defi_bonus": "Ce week-end, chaque soir au dîner, chacun dit sa météo du cœur de la journée (soleil, nuage, orage, brouillard ou arc-en-ciel) et raconte un moment qui l'explique."
+ }
 }

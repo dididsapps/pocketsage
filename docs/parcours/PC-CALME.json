@@ -14,13 +14,13 @@
       },
       "activite": {
         "id": "PC-CALME-J1",
-        "titre": "Un, deux, trois, statue",
+        "titre": "La fusée qui attend",
         "duree_min": 3,
         "materiel": "aucun",
-        "script": "Bonjour, c'est l'heure du jeu de la statue. Pose le téléphone et mets-toi debout. [P3] Tu vas marcher sur place, tout doucement, comme un chat. Quand je dis statue, tu t'arrêtes et tu ne bouges plus du tout. Prêt ? [P2] Un, deux, trois, tu marches. [P5] Statue ! [P3] Bravo, tu es une vraie statue. On recommence. Tu marches sur place. [P3] Un, deux, trois, statue ! [P3] Attention, maintenant je vais essayer de te piéger. Tu marches. [P3] Un, deux, trois, sta... tapis ! [P2] Si tu t'es arrêté, ce n'est pas grave, c'est drôle. On reprend. Tu marches. [P5] Un, deux, trois, statue ! [P5] Et maintenant, une statue rigolote. Tu marches en faisant une grimace. [P3] Statue ! Garde ta grimace. [P5] Super. Dernière fois, la statue la plus longue du monde. Tu marches. [P3] Statue ! [P5] Encore un peu. [P3] Tu as tenu. Tu peux bouger, secoue-toi comme un chien mouillé. [P3] Bravo, tu as le pouvoir de la statue.",
-        "petits": "Faire des statues courtes de deux ou trois secondes et applaudir à chaque arrêt.",
-        "grands": "Tenir la statue sur un pied ou dans une pose difficile choisie par l'enfant.",
-        "a_deux": "Le parent marche aussi sur place et celui qui bouge pendant la statue fait rire l'autre avec une grimace."
+        "script": "Bonjour, c'est l'heure de la fusée. Pose le téléphone et accroupis-toi par terre, tout en boule. Tu es une fusée sur sa base. [P3] La fusée attend le mot décollage. Quand je dis décollage, tu te lèves tout doucement, les bras en l'air, comme une fusée qui monte. Mais attention, avant décollage, tu ne bouges pas. Prêt ? [P2] Trois, deux, un. [P2] Décollage ! [P5] Bravo, la fusée est dans l'espace. Accroupis-toi, on recommence. [P3] Trois, deux, un. [P2] Déco, déjeuner ! [P3] Oh, déjeuner, ce n'est pas décollage. Si tu es parti, ce n'est pas grave, c'est drôle. Reviens en boule. [P3] Trois, deux, un. [P3] Décollage ! [P5] Super. Encore une fois, et cette fois, j'attends plus longtemps. Accroupis-toi. [P3] Trois, deux, un. [P2] Attends. [P3] Attends encore. [P3] Décollage ! [P5] Bravo, tu as attendu jusqu'au bout. Dernier piège. Accroupis-toi. [P3] Trois, deux, un. [P2] Décoration ! [P3] Tu es resté sur ta base ? Bravo. Trois, deux, un. [P2] Décollage ! [P5] Maintenant, la fusée se pose. Descends tout doucement et assieds-toi. [P3] Bravo, tu sais attendre le bon signal.",
+        "petits": "Supprimer les pièges et allonger seulement un peu l'attente avant décollage, en applaudissant chaque départ réussi.",
+        "grands": "L'enfant reste accroupi immobile pendant tout le compte à rebours, sans bouger les mains, et invente lui-même des mots pièges.",
+        "a_deux": "Le parent est une deuxième fusée et celui qui part trop tôt fait rire l'autre avec une grimace."
       },
       "calme": {
         "ref": "MED-003"
@@ -94,14 +94,14 @@
       "theme": "Faire l'inverse et attendre son tour",
       "jeu": {
         "id": "memory",
-        "pourquoi": "On retourne deux cartes, puis on attend avant de rejouer : à deux, c'est parfait pour s'entraîner à laisser jouer l'autre."
+        "pourquoi": "On retourne deux cartes, on regarde, puis on recommence : en jouant à tour de rôle avec un adulte sur le même téléphone, on s'entraîne aussi à laisser jouer l'autre."
       },
       "activite": {
         "id": "PC-CALME-J5",
         "titre": "Le jeu de l'inverse",
         "duree_min": 4,
         "materiel": "aucun",
-        "script": "Dernier jeu de la semaine, le plus farceur. Mets-toi debout. [P3] Je dis un mot et tu fais le contraire. Mais attention, tu attends que je dise à toi avant de bouger. Essayons. Je dis haut. [P2] À toi. [P3] Bravo, tu as mis les mains en bas. Je dis grand. [P2] À toi. [P3] Tu t'es fait tout petit. Je dis vite. [P2] À toi. [P5] Tu bouges au ralenti, parfait. Je dis bruit. [P2] À toi. [P3] Chut, tu es tout silencieux. Je dis ouvre les bras. [P2] Attends. [P2] Encore un peu. [P2] À toi. [P3] Tu as attendu ton tour, bravo. Si tu as bougé trop tôt, ce n'est pas grave, on recommence. Je dis assis. [P2] À toi. [P3] Debout, bravo. Je dis triste. [P2] À toi. [P3] Quel grand sourire. Je dis bouge. [P2] À toi. [P5] Tu es une statue. Bravo. Cette semaine, tu as appris à attendre, à t'arrêter et à faire l'inverse. Tu as le pouvoir de la statue.",
+        "script": "Dernier jeu de la semaine, le plus farceur. Mets-toi debout. [P3] Je dis un mot et tu fais le contraire. Mais attention, tu attends que je dise à toi avant de bouger. Essayons. Je dis haut. [P2] À toi. [P3] Bravo, tu as mis les mains en bas. Je dis grand. [P2] À toi. [P3] Tu t'es fait tout petit. Je dis vite. [P2] À toi. [P5] Tu bouges au ralenti, parfait. Je dis bruit. [P2] À toi. [P3] Chut, tu es tout silencieux. Je dis ouvre les bras. [P2] Attends. [P2] Encore un peu. [P2] À toi. [P3] Tu as croisé les bras et tu as attendu ton tour, bravo. Si tu as bougé trop tôt, ce n'est pas grave, on recommence. Je dis assis. [P2] À toi. [P3] Debout, bravo. Je dis yeux fermés. [P2] À toi. [P3] Tes yeux sont grands ouverts, bravo. Je dis bouge. [P2] À toi. [P5] Tu es une statue. Bravo. Cette semaine, tu as appris à attendre, à t'arrêter et à faire l'inverse. Tu as le pouvoir de la statue.",
         "petits": "Utiliser seulement des contraires faciles comme haut et bas, grand et petit, avec un à toi tout de suite.",
         "grands": "Allonger l'attente avant le à toi et proposer des contraires plus fins comme lourd et léger ou chaud et froid.",
         "a_deux": "Le parent et l'enfant donnent les mots chacun leur tour, et chacun attend le à toi de l'autre."
