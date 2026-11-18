@@ -1,0 +1,40 @@
+name: Surlignage — horodatage des mots (Whisper)
+
+# Calcule l'heure de chaque mot dans les MP3 (histoires du soir, questions GS→CE2, langues) pour surligner le texte
+# pendant la lecture. Ne refait que le nouveau / modifié. Résultat sur R2 : audio/align/…
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/aligner.py"
+      - "data/audio_textes.json"
+      - "data/audio_maths.json"
+  workflow_dispatch:
+    inputs:
+      langues:
+        description: "Inclure les questions d'anglais / espagnol (oui/non)"
+        default: "oui"
+
+concurrency:
+  group: aligner
+  cancel-in-progress: false
+
+jobs:
+  aligner:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix:
+        part: [0, 1, 2, 3]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: pip install faster-whisper requests numpy boto3
+      - env:
+          R2_ACCESS_KEY: ${{ secrets.R2_ACCESS_KEY }}
+          R2_SECRET_KEY: ${{ secrets.R2_SECRET_KEY }}
+        run: python3 tools/aligner.py --shard ${{ matrix.part }} --of 4 ${{ (github.event.inputs.langues || 'oui') == 'oui' && '--langues' || '' }}
