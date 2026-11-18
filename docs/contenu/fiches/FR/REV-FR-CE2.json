@@ -272,6 +272,165 @@
    "id": "REV-FR-CE2-05"
   },
   {
+   "axe": "Vocabulaire",
+   "titre": "Chercher un mot dans le dictionnaire",
+   "emoji": "📚",
+   "en_une_phrase": "Le dictionnaire classe les mots par ordre alphabétique.",
+   "comprendre": "Tu connais l’alphabet. Pour retrouver un mot, compare ses lettres dans l’ordre. Son article indique notamment son sens.",
+   "essentiel": [
+    "Compare les premières lettres.",
+    "Si elles sont identiques, compare les suivantes.",
+    "Cherche un verbe à l’infinitif."
+   ],
+   "image_mentale": "Imagine des pages repérées de A à Z.",
+   "regle_ou_methode": "Ramène le mot à sa forme de recherche et suis l’ordre alphabétique.",
+   "exemples": [
+    "Pour « chantons », cherche l’infinitif « chanter ». Ouvre à CH. Lis la définition de « chanter ».",
+    "Pour « chiens », cherche le nom singulier « chien »."
+   ],
+   "piege": "Ne cherche pas toujours une forme conjuguée comme entrée : cherche l’infinitif.",
+   "astuce_memoire": "Verbe : infinitif ; nom : singulier.",
+   "quiz": [
+    {
+     "q": "Quel mot cherches-tu pour « chantons » ?",
+     "choix": [
+      "chantons",
+      "chantait",
+      "chanter"
+     ],
+     "rep": "chanter",
+     "expl": "On cherche le verbe à l’infinitif."
+    },
+    {
+     "q": "Quel mot cherches-tu pour « chiens » ?",
+     "choix": [
+      "chien",
+      "chiens",
+      "chienne"
+     ],
+     "rep": "chien",
+     "expl": "On cherche généralement le nom au singulier."
+    },
+    {
+     "q": "Entre « chat » et « chien », lequel vient en premier ?",
+     "choix": [
+      "chien",
+      "chat",
+      "Ils sont à la même place"
+     ],
+     "rep": "chat",
+     "expl": "Après CH, A vient avant I."
+    }
+   ],
+   "id": "REV-FR-CE2-20"
+  },
+  {
+   "axe": "Vocabulaire",
+   "titre": "Ajouter un préfixe",
+   "emoji": "🧩",
+   "en_une_phrase": "Un préfixe se place au début d’un mot et modifie son sens.",
+   "comprendre": "Tu connais le verbe « faire ». On peut lui ajouter « dé » au début. Le nouveau mot est lié au premier, mais son sens change.",
+   "essentiel": [
+    "Le préfixe se place devant le mot.",
+    "« Défaire » est lié à « faire ».",
+    "Le préfixe peut exprimer une action inverse."
+   ],
+   "image_mentale": "Imagine un petit bloc ajouté devant un mot.",
+   "regle_ou_methode": "Repère le début ajouté et vérifie le sens du nouveau mot.",
+   "exemples": [
+    "Pars de « faire ». Ajoute « dé » devant : tu obtiens « défaire ». Défaire un nœud, c’est le dénouer.",
+    "« Relire » signifie lire de nouveau."
+   ],
+   "piege": "Un début qui se ressemble n’est pas toujours un préfixe : vérifie le sens.",
+   "astuce_memoire": "Préfixe : pré- vient avant.",
+   "quiz": [
+    {
+     "q": "Où se place un préfixe ?",
+     "choix": [
+      "Au début",
+      "À la fin",
+      "Entre deux phrases"
+     ],
+     "rep": "Au début",
+     "expl": "Le préfixe se place devant le mot."
+    },
+    {
+     "q": "Que signifie « relire » ?",
+     "choix": [
+      "Cesser de lire forcément",
+      "Lire de nouveau",
+      "Écrire sans lire"
+     ],
+     "rep": "Lire de nouveau",
+     "expl": "Le préfixe re- indique ici une répétition."
+    },
+    {
+     "q": "Quel mot signifie faire l’action inverse de « faire » ?",
+     "choix": [
+      "refaire",
+      "faire",
+      "défaire"
+     ],
+     "rep": "défaire",
+     "expl": "« Défaire » peut signifier annuler ce qui a été fait."
+    }
+   ],
+   "id": "REV-FR-CE2-21"
+  },
+  {
+   "axe": "Vocabulaire",
+   "titre": "Ajouter un suffixe",
+   "emoji": "🌱",
+   "en_une_phrase": "Un suffixe se place à la fin d’un mot pour en former un autre.",
+   "comprendre": "Tu connais « jardin ». Le mot « jardinier » est formé à partir de ce mot. La fin ajoutée aide à former un nouveau mot.",
+   "essentiel": [
+    "Le suffixe se place après une base.",
+    "« Jardinier » est lié à « jardin ».",
+    "Le sens du mot formé dépend du suffixe et du contexte."
+   ],
+   "image_mentale": "Imagine un petit bloc ajouté après le mot.",
+   "regle_ou_methode": "Repère la base et la fin ajoutée.",
+   "exemples": [
+    "Pars de « jardin ». Ajoute « ier ». Tu obtiens « jardinier », une personne qui s’occupe d’un jardin.",
+    "« Fillette » est lié à « fille » avec la fin « ette »."
+   ],
+   "piege": "Un suffixe se place à la fin, tandis qu’un préfixe se place au début.",
+   "astuce_memoire": "Suffixe : après le mot.",
+   "quiz": [
+    {
+     "q": "Où se place un suffixe ?",
+     "choix": [
+      "Au début",
+      "À la fin",
+      "Dans une autre phrase"
+     ],
+     "rep": "À la fin",
+     "expl": "Le suffixe se place après la base."
+    },
+    {
+     "q": "Quel mot est lié à « jardin » ?",
+     "choix": [
+      "journal",
+      "jaune",
+      "jardinier"
+     ],
+     "rep": "jardinier",
+     "expl": "« Jardinier » est formé sur « jardin »."
+    },
+    {
+     "q": "Dans « jardinier », quelle partie est ajoutée après « jardin » ?",
+     "choix": [
+      "ier",
+      "re",
+      "dé"
+     ],
+     "rep": "ier",
+     "expl": "La fin « ier » forme ici un nouveau mot."
+    }
+   ],
+   "id": "REV-FR-CE2-22"
+  },
+  {
    "axe": "Grammaire et orthographe",
    "titre": "Trouver le sujet",
    "emoji": "👤",
@@ -429,6 +588,437 @@
     }
    ],
    "id": "REV-FR-CE2-08"
+  },
+  {
+   "axe": "Grammaire et orthographe",
+   "titre": "Le futur des verbes en -er",
+   "emoji": "🚀",
+   "en_une_phrase": "Au futur, le verbe peut indiquer une action à venir.",
+   "comprendre": "Tu sais dire ce que tu feras demain. Pour un verbe régulier comme « chanter », on garde l’infinitif et on ajoute une terminaison. Le sujet aide à choisir cette fin.",
+   "essentiel": [
+    "Je chanterai ; tu chanteras ; il ou elle chantera.",
+    "Nous chanterons ; vous chanterez ; ils ou elles chanteront.",
+    "Le futur peut indiquer une action à venir.",
+    "Être et avoir sont irréguliers : je serai ; j’aurai."
+   ],
+   "image_mentale": "Imagine « chanter » suivi d’une petite étiquette de personne.",
+   "regle_ou_methode": "Repère le sujet, garde l’infinitif puis ajoute la terminaison.",
+   "exemples": [
+    "Pour « nous », garde « chanter ». Ajoute « ons » : « nous chanterons ».",
+    "Avec « je » : « demain, je chanterai ».",
+    "« Demain, je serai prêt et j’aurai mon sac. »"
+   ],
+   "piege": "Ne confonds pas « je chanterai » avec « je chantais » à l’imparfait.",
+   "astuce_memoire": "Futur de chanter : infinitif puis terminaison.",
+   "quiz": [
+    {
+     "q": "Complète : « Demain, nous … »",
+     "choix": [
+      "chantons",
+      "chantions",
+      "chanterons"
+     ],
+     "rep": "chanterons",
+     "expl": "Au futur, avec nous : « chanterons »."
+    },
+    {
+     "q": "Quelle forme est au futur ?",
+     "choix": [
+      "je chanterai",
+      "je chantais",
+      "je chante"
+     ],
+     "rep": "je chanterai",
+     "expl": "« Chanterai » indique ici le futur."
+    },
+    {
+     "q": "Complète : « Demain, tu … une chanson. »",
+     "choix": [
+      "chantais",
+      "chanteras",
+      "chantes"
+     ],
+     "rep": "chanteras",
+     "expl": "Avec tu au futur, on écrit « chanteras »."
+    }
+   ],
+   "id": "REV-FR-CE2-23"
+  },
+  {
+   "axe": "Grammaire et orthographe",
+   "titre": "L’imparfait des verbes en -er",
+   "emoji": "🕰️",
+   "en_une_phrase": "L’imparfait sert souvent à décrire une action passée ou habituelle.",
+   "comprendre": "Tu racontes parfois ce que tu faisais souvent. L’imparfait permet de parler de ces habitudes passées. Il change selon le sujet.",
+   "essentiel": [
+    "Je chantais, tu chantais, il ou elle chantait.",
+    "Nous chantions, vous chantiez, ils ou elles chantaient.",
+    "L’imparfait situe ici l’action dans le passé.",
+    "Être et avoir : j’étais ; j’avais."
+   ],
+   "image_mentale": "Imagine une scène répétée dans un vieux calendrier.",
+   "regle_ou_methode": "Repère le sujet puis choisis la terminaison de l’imparfait.",
+   "exemples": [
+    "Avec « nous » et « chanter », prends « chant ». Ajoute « ions » : « nous chantions ».",
+    "« Avant, elle chantait chaque soir. »",
+    "« Avant, j’étais petit et j’avais un vélo. »"
+   ],
+   "piege": "« Nous chantions » parle ici du passé ; « nous chanterons » parle du futur.",
+   "astuce_memoire": "Nous : ions ; vous : iez.",
+   "quiz": [
+    {
+     "q": "Complète : « Avant, nous … »",
+     "choix": [
+      "chantions",
+      "chanterons",
+      "chantons"
+     ],
+     "rep": "chantions",
+     "expl": "« Chantions » est à l’imparfait."
+    },
+    {
+     "q": "Quelle forme est à l’imparfait ?",
+     "choix": [
+      "elle chante",
+      "elle chantait",
+      "elle chantera"
+     ],
+     "rep": "elle chantait",
+     "expl": "« Chantait » est une forme passée à l’imparfait."
+    },
+    {
+     "q": "Complète : « Autrefois, vous … ici. »",
+     "choix": [
+      "chantez",
+      "chanterez",
+      "chantiez"
+     ],
+     "rep": "chantiez",
+     "expl": "Avec vous à l’imparfait, on écrit « chantiez »."
+    }
+   ],
+   "id": "REV-FR-CE2-24"
+  },
+  {
+   "axe": "Grammaire et orthographe",
+   "titre": "Le passé composé avec avoir",
+   "emoji": "⏪",
+   "en_une_phrase": "Le passé composé peut raconter une action terminée.",
+   "comprendre": "Tu racontes ce que tu as fait hier. Une forme du verbe avoir et un autre mot peuvent former le passé composé. Ensemble, ils situent ici l’action dans le passé.",
+   "essentiel": [
+    "« J’ai chanté » est au passé composé.",
+    "« Ai » vient du verbe avoir.",
+    "« Chanté » est le participe passé.",
+    "Avec être ou avoir : « j’ai été » ; « j’ai eu »."
+   ],
+   "image_mentale": "Imagine deux wagons : avoir puis le participe passé.",
+   "regle_ou_methode": "Conjugue avoir au présent et ajoute le participe passé.",
+   "exemples": [
+    "Avec « nous » et « chanter », écris « nous avons ». Ajoute « chanté ». Tu obtiens « nous avons chanté ».",
+    "« Elle a joué » raconte une action passée.",
+    "« Hier, j’ai eu une idée. »"
+   ],
+   "piege": "Ne laisse pas le premier mot seul : les deux mots forment ici le temps composé.",
+   "astuce_memoire": "Avoir au présent + participe passé.",
+   "quiz": [
+    {
+     "q": "Quelle forme est au passé composé ?",
+     "choix": [
+      "nous chantons",
+      "nous avons chanté",
+      "nous chanterons"
+     ],
+     "rep": "nous avons chanté",
+     "expl": "« Avons chanté » est formé de deux mots."
+    },
+    {
+     "q": "Dans « elle a joué », quel mot vient de avoir ?",
+     "choix": [
+      "joué",
+      "elle",
+      "a"
+     ],
+     "rep": "a",
+     "expl": "« A » est une forme du verbe avoir."
+    },
+    {
+     "q": "Complète : « Hier, nous … joué. »",
+     "choix": [
+      "avons",
+      "sommes",
+      "jouons"
+     ],
+     "rep": "avons",
+     "expl": "« Nous avons joué » forme ici le passé composé."
+    }
+   ],
+   "id": "REV-FR-CE2-25"
+  },
+  {
+   "axe": "Grammaire et orthographe",
+   "titre": "Distinguer a et à",
+   "emoji": "✏️",
+   "en_une_phrase": "« A » est une forme du verbe avoir ; « à » est un autre mot.",
+   "comprendre": "Tu connais la phrase « Elle a un sac ». Si tu peux dire « avait », il s’agit du verbe avoir. Dans d’autres phrases, « à » indique notamment un lieu.",
+   "essentiel": [
+    "« A » sans accent vient de avoir.",
+    "On peut souvent le remplacer par « avait ».",
+    "« À » avec accent ne se remplace pas par « avait »."
+   ],
+   "image_mentale": "Imagine un accent posé sur « à » quand on va à un lieu.",
+   "regle_ou_methode": "Essaie de remplacer le mot par « avait ».",
+   "exemples": [
+    "« Elle a un livre. » On peut dire « Elle avait un livre ». Écris « a » sans accent.",
+    "« Elle va à l’école. » On ne dit pas « va avait l’école » : écris « à »."
+   ],
+   "piege": "Ne choisis pas seulement à l’oreille : les deux mots se prononcent pareil.",
+   "astuce_memoire": "A sans accent peut devenir avait.",
+   "quiz": [
+    {
+     "q": "Complète : « Elle … un sac. »",
+     "choix": [
+      "à",
+      "ont",
+      "a"
+     ],
+     "rep": "a",
+     "expl": "On peut dire « elle avait un sac »."
+    },
+    {
+     "q": "Complète : « Il va … l’école. »",
+     "choix": [
+      "à",
+      "a",
+      "est"
+     ],
+     "rep": "à",
+     "expl": "On ne peut pas remplacer ce mot par « avait »."
+    },
+    {
+     "q": "Quelle phrase permet de dire « avait » à la place ?",
+     "choix": [
+      "Elle va à l’école",
+      "Elle a un livre",
+      "Il parle à Sam"
+     ],
+     "rep": "Elle a un livre",
+     "expl": "« Elle avait un livre » garde un sens correct."
+    }
+   ],
+   "id": "REV-FR-CE2-26"
+  },
+  {
+   "axe": "Grammaire et orthographe",
+   "titre": "Distinguer et et est",
+   "emoji": "➕",
+   "en_une_phrase": "« Et » relie des mots ; « est » est une forme du verbe être.",
+   "comprendre": "Tu connais « le chat et le chien ». Le mot « et » relie deux groupes. « Est » vient du verbe être et peut souvent devenir « était ».",
+   "essentiel": [
+    "« Et » relie des mots.",
+    "« Est » vient de être.",
+    "« Est » peut souvent être remplacé par « était »."
+   ],
+   "image_mentale": "Imagine un petit pont « et » entre deux mots.",
+   "regle_ou_methode": "Essaie de remplacer le mot par « était ».",
+   "exemples": [
+    "« Le chat est calme. » On peut dire « était calme » : écris « est ».",
+    "« Le chat et le chien » relie deux animaux : écris « et »."
+   ],
+   "piege": "Les deux mots se prononcent pareil : vérifie leur rôle.",
+   "astuce_memoire": "Est peut devenir était.",
+   "quiz": [
+    {
+     "q": "Complète : « Le chat … calme. »",
+     "choix": [
+      "est",
+      "et",
+      "a"
+     ],
+     "rep": "est",
+     "expl": "On peut dire « le chat était calme »."
+    },
+    {
+     "q": "Complète : « Le chat … le chien ».",
+     "choix": [
+      "est",
+      "et",
+      "à"
+     ],
+     "rep": "et",
+     "expl": "« Et » relie ici les deux animaux."
+    },
+    {
+     "q": "Quel mot peut devenir « était » ?",
+     "choix": [
+      "et",
+      "les",
+      "est"
+     ],
+     "rep": "est",
+     "expl": "« Est » est une forme du verbe être."
+    }
+   ],
+   "id": "REV-FR-CE2-27"
+  },
+  {
+   "axe": "Grammaire et orthographe",
+   "titre": "Distinguer son et sont",
+   "emoji": "🎒",
+   "en_une_phrase": "« Son » accompagne un nom ; « sont » est une forme de être.",
+   "comprendre": "Tu connais « son cartable ». Le mot « son » accompagne le nom. « Sont » vient du verbe être : il indique un état de plusieurs personnes ou choses.",
+   "essentiel": [
+    "« Son » accompagne souvent un nom.",
+    "« Sont » vient de être.",
+    "« Sont » peut souvent devenir « étaient »."
+   ],
+   "image_mentale": "Imagine un cartable étiqueté « son » et deux enfants « sont ».",
+   "regle_ou_methode": "Essaie de remplacer le mot par « étaient ».",
+   "exemples": [
+    "« Les sacs sont lourds. » On peut dire « étaient lourds » : écris « sont ».",
+    "« Son sac est lourd. » « Son » accompagne « sac »."
+   ],
+   "piege": "À l’oral, les deux mots se ressemblent : regarde leur rôle.",
+   "astuce_memoire": "Sont peut devenir étaient.",
+   "quiz": [
+    {
+     "q": "Complète : « Les sacs … lourds. »",
+     "choix": [
+      "son",
+      "sont",
+      "est"
+     ],
+     "rep": "sont",
+     "expl": "On peut dire « les sacs étaient lourds »."
+    },
+    {
+     "q": "Complète : « … cartable est bleu. »",
+     "choix": [
+      "Sont",
+      "Ont",
+      "Son"
+     ],
+     "rep": "Son",
+     "expl": "« Son » accompagne le nom « cartable »."
+    },
+    {
+     "q": "Quel mot peut devenir « étaient » ?",
+     "choix": [
+      "sont",
+      "son",
+      "ses"
+     ],
+     "rep": "sont",
+     "expl": "« Sont » est une forme du verbe être."
+    }
+   ],
+   "id": "REV-FR-CE2-28"
+  },
+  {
+   "axe": "Grammaire et orthographe",
+   "titre": "Distinguer on et ont",
+   "emoji": "👥",
+   "en_une_phrase": "« On » est un pronom ; « ont » est une forme du verbe avoir.",
+   "comprendre": "Tu connais « on joue » et « ils ont joué ». Le premier mot remplace ici des personnes. Le second appartient au verbe avoir.",
+   "essentiel": [
+    "« On » est un pronom sujet.",
+    "« Ont » vient de avoir.",
+    "« Ont » peut souvent devenir « avaient »."
+   ],
+   "image_mentale": "Imagine « on » devant une action et « ont » dans la colonne avoir.",
+   "regle_ou_methode": "Essaie de remplacer le mot par « avaient ».",
+   "exemples": [
+    "« Ils ont un chat. » On peut dire « ils avaient un chat » : écris « ont ».",
+    "« On joue. » On peut dire « nous jouons » : écris « on »."
+   ],
+   "piege": "Ne choisis pas à l’oreille : les deux mots se prononcent pareil.",
+   "astuce_memoire": "Ont peut devenir avaient.",
+   "quiz": [
+    {
+     "q": "Complète : « Ils … faim. »",
+     "choix": [
+      "on",
+      "sont",
+      "ont"
+     ],
+     "rep": "ont",
+     "expl": "On peut dire « ils avaient faim »."
+    },
+    {
+     "q": "Complète : « … joue ensemble. »",
+     "choix": [
+      "On",
+      "Ont",
+      "A"
+     ],
+     "rep": "On",
+     "expl": "« On » est ici le sujet du verbe."
+    },
+    {
+     "q": "Quel mot peut devenir « avaient » ?",
+     "choix": [
+      "on",
+      "ont",
+      "est"
+     ],
+     "rep": "ont",
+     "expl": "« Ont » est une forme de avoir."
+    }
+   ],
+   "id": "REV-FR-CE2-29"
+  },
+  {
+   "axe": "Grammaire et orthographe",
+   "titre": "Accorder dans le groupe nominal",
+   "emoji": "🧸",
+   "en_une_phrase": "Le déterminant, le nom et l’adjectif s’accordent en genre et en nombre.",
+   "comprendre": "Tu sais distinguer un chat de plusieurs chats. Dans un groupe nominal, plusieurs mots indiquent ensemble cette différence. Le nom guide l’accord.",
+   "essentiel": [
+    "Repère le nom et son déterminant.",
+    "Un groupe peut être masculin ou féminin.",
+    "Un groupe peut être singulier ou pluriel.",
+    "L’adjectif prend souvent e au féminin et s au pluriel."
+   ],
+   "image_mentale": "Imagine une chaîne reliant le déterminant, le nom et l’adjectif.",
+   "regle_ou_methode": "Cherche le genre et le nombre du nom, puis vérifie les autres mots.",
+   "exemples": [
+    "Pars de « un petit chat ». Pour plusieurs, écris « des petits chats ». Le déterminant, l’adjectif et le nom indiquent le pluriel.",
+    "« Une petite chienne » est au féminin singulier."
+   ],
+   "piege": "Un s muet peut être oublié : vérifie chaque mot concerné.",
+   "astuce_memoire": "Déterminant, nom, adjectif : même accord.",
+   "quiz": [
+    {
+     "q": "Quel groupe est au pluriel ?",
+     "choix": [
+      "des petits chats",
+      "un petit chat",
+      "une petite chienne"
+     ],
+     "rep": "des petits chats",
+     "expl": "Le déterminant et les marques indiquent le pluriel."
+    },
+    {
+     "q": "Quel groupe est au féminin singulier ?",
+     "choix": [
+      "des petits chats",
+      "une petite chienne",
+      "un petit chat"
+     ],
+     "rep": "une petite chienne",
+     "expl": "« Une petite chienne » est féminin singulier."
+    },
+    {
+     "q": "Choisis la bonne écriture pour plusieurs petites chiennes.",
+     "choix": [
+      "des petite chienne",
+      "une petites chiennes",
+      "des petites chiennes"
+     ],
+     "rep": "des petites chiennes",
+     "expl": "Chaque mot concerné porte ici la marque du pluriel."
+    }
+   ],
+   "id": "REV-FR-CE2-30"
   }
  ]
 }

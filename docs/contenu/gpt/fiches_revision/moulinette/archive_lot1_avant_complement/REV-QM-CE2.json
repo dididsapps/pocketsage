@@ -1,0 +1,434 @@
+{
+ "classe": "CE2",
+ "niveau_appli": "CE2",
+ "age": "8-9 ans",
+ "matiere": "Questionner le monde",
+ "code": "QM",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Questionner le monde du vivant, de la matière et des objets",
+   "titre": "L’eau dans la nature",
+   "emoji": "💧",
+   "en_une_phrase": "L’eau peut changer d’état et circuler dans la nature.",
+   "comprendre": "Tu as vu de l’eau liquide, de la glace et des nuages. L’eau passe d’un état à un autre selon les conditions. Ces changements participent à sa circulation.",
+   "essentiel": [
+    "L’eau liquide peut s’évaporer en vapeur d’eau.",
+    "La vapeur d’eau est un gaz invisible.",
+    "En se refroidissant, elle peut former des gouttelettes."
+   ],
+   "image_mentale": "Imagine une flèche de la mer vers l’air, puis vers les nuages.",
+   "regle_ou_methode": "Repère l’état de l’eau avant et après le changement.",
+   "exemples": [
+    "De l’eau liquide s’évapore : elle devient de la vapeur d’eau dans l’air. En refroidissant, cette vapeur peut former des gouttelettes. Ces gouttelettes peuvent former un nuage.",
+    "Une flaque peut diminuer quand son eau s’évapore."
+   ],
+   "piege": "Un nuage visible est constitué de fines gouttelettes d’eau ou de cristaux de glace, pas de vapeur visible.",
+   "astuce_memoire": "Liquide, vapeur invisible, puis gouttelettes.",
+   "quiz": [
+    {
+     "q": "Que devient l’eau liquide lors de l’évaporation ?",
+     "choix": [
+      "De la glace",
+      "De la vapeur d’eau",
+      "De la neige"
+     ],
+     "rep": "De la vapeur d’eau",
+     "expl": "L’eau liquide devient de la vapeur d’eau, un gaz."
+    },
+    {
+     "q": "La vapeur d’eau est-elle visible ?",
+     "choix": [
+      "Oui, toujours sous forme de nuage",
+      "Oui, comme de la glace",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "La vapeur d’eau est un gaz invisible."
+    },
+    {
+     "q": "Des gouttelettes apparaissent lorsque de la vapeur se refroidit. Quel changement observe-t-on ?",
+     "choix": [
+      "Le passage du gaz au liquide",
+      "Le passage du solide au gaz",
+      "La disparition de toute l’eau"
+     ],
+     "rep": "Le passage du gaz au liquide",
+     "expl": "La vapeur forme des gouttelettes liquides."
+    }
+   ],
+   "id": "REV-QM-CE2-01"
+  },
+  {
+   "axe": "Questionner le monde du vivant, de la matière et des objets",
+   "titre": "Une chaîne alimentaire",
+   "emoji": "🌿",
+   "en_une_phrase": "Une chaîne alimentaire montre qui mange qui.",
+   "comprendre": "Tu sais que le lapin mange des plantes. Un autre animal peut manger le lapin. Les flèches d’une chaîne montrent ces liens alimentaires.",
+   "essentiel": [
+    "La plante est mangée par un animal.",
+    "Un animal peut en manger un autre.",
+    "La flèche va de l’être vivant mangé vers celui qui le mange."
+   ],
+   "image_mentale": "Imagine une herbe, un lapin, puis un renard, reliés par des flèches.",
+   "regle_ou_methode": "Pars de l’aliment et trace une flèche vers l’animal qui le mange.",
+   "exemples": [
+    "L’herbe est mangée par le lapin. Le lapin peut être mangé par le renard. On écrit : herbe vers lapin vers renard.",
+    "Une feuille peut être mangée par une chenille."
+   ],
+   "piege": "Ne dirige pas la flèche du mangeur vers son aliment : ici, elle signifie « est mangé par ».",
+   "astuce_memoire": "La flèche signifie : est mangé par.",
+   "quiz": [
+    {
+     "q": "Dans herbe vers lapin, qui mange l’herbe ?",
+     "choix": [
+      "Le renard",
+      "La pierre",
+      "Le lapin"
+     ],
+     "rep": "Le lapin",
+     "expl": "La flèche va de l’herbe vers le lapin qui la mange."
+    },
+    {
+     "q": "Que signifie la flèche dans cette fiche ?",
+     "choix": [
+      "Est mangé par",
+      "Mange toujours",
+      "Est plus grand que"
+     ],
+     "rep": "Est mangé par",
+     "expl": "Elle part de l’aliment vers celui qui le mange."
+    },
+    {
+     "q": "Un renard mange un lapin. Quelle flèche convient ?",
+     "choix": [
+      "Renard vers lapin",
+      "Lapin vers renard",
+      "Herbe vers pierre"
+     ],
+     "rep": "Lapin vers renard",
+     "expl": "La flèche va du lapin mangé vers le renard."
+    }
+   ],
+   "id": "REV-QM-CE2-02"
+  },
+  {
+   "axe": "Questionner le monde du vivant, de la matière et des objets",
+   "titre": "Les étapes de la vie",
+   "emoji": "🦋",
+   "en_une_phrase": "Un être vivant grandit et passe par plusieurs étapes au cours de sa vie.",
+   "comprendre": "Tu as grandi depuis ta naissance. Les animaux et les plantes ont aussi des étapes de vie. Observer dans l’ordre aide à comprendre leurs changements.",
+   "essentiel": [
+    "Un être vivant naît ou germe.",
+    "Il grandit et peut devenir adulte.",
+    "Les étapes varient selon l’espèce."
+   ],
+   "image_mentale": "Imagine quatre images : œuf, chenille, chrysalide, papillon.",
+   "regle_ou_methode": "Observe le même être vivant à plusieurs moments et classe les étapes.",
+   "exemples": [
+    "Un papillon commence sa vie dans un œuf. La chenille grandit, puis devient une chrysalide. Un papillon adulte en sort.",
+    "Une graine peut germer et devenir une jeune plante."
+   ],
+   "piege": "Tous les animaux ne passent pas par une chrysalide : seuls certains insectes, comme le papillon, en forment une.",
+   "astuce_memoire": "Pour le papillon : œuf, chenille, chrysalide, adulte.",
+   "quiz": [
+    {
+     "q": "Quelle étape vient après l’œuf chez le papillon ?",
+     "choix": [
+      "La chenille",
+      "La graine",
+      "Le nid"
+     ],
+     "rep": "La chenille",
+     "expl": "Une chenille sort de l’œuf."
+    },
+    {
+     "q": "Quel être vivant peut germer ?",
+     "choix": [
+      "Un caillou",
+      "Une graine",
+      "Une tasse"
+     ],
+     "rep": "Une graine",
+     "expl": "Une graine peut germer et donner une plante."
+    },
+    {
+     "q": "Quel ordre convient pour le papillon ?",
+     "choix": [
+      "Adulte, chrysalide, œuf, chenille",
+      "Graine, fleur, poisson, œuf",
+      "Œuf, chenille, chrysalide, adulte"
+     ],
+     "rep": "Œuf, chenille, chrysalide, adulte",
+     "expl": "Ces étapes suivent le développement du papillon."
+    }
+   ],
+   "id": "REV-QM-CE2-03"
+  },
+  {
+   "axe": "Questionner le monde du vivant, de la matière et des objets",
+   "titre": "Le circuit et l’interrupteur",
+   "emoji": "💡",
+   "en_une_phrase": "Un interrupteur ouvre ou ferme un circuit électrique.",
+   "comprendre": "Tu utilises un interrupteur pour allumer une lampe. Dans un circuit simple, il agit comme une porte sur un chemin. Fermé, il permet au courant de circuler si le reste du circuit est complet.",
+   "essentiel": [
+    "Un circuit doit être fermé pour fonctionner.",
+    "Un interrupteur ouvert coupe le circuit.",
+    "Une pile peut alimenter un circuit simple."
+   ],
+   "image_mentale": "Imagine une boucle avec une porte ouverte ou fermée.",
+   "regle_ou_methode": "Avec du matériel à pile adapté, ferme puis ouvre l’interrupteur.",
+   "exemples": [
+    "Relie une pile, une lampe et un interrupteur en boucle. Ferme l’interrupteur : la lampe brille si les connexions sont correctes. Ouvre-le : elle s’éteint.",
+    "Un fil débranché ouvre aussi le circuit."
+   ],
+   "piege": "Un interrupteur fermé ne peut pas compenser un fil débranché ailleurs.",
+   "astuce_memoire": "Circuit fermé : boucle complète.",
+   "quiz": [
+    {
+     "q": "Quel élément fournit de l’énergie dans cet exemple ?",
+     "choix": [
+      "La lampe",
+      "La pile",
+      "L’interrupteur"
+     ],
+     "rep": "La pile",
+     "expl": "La pile alimente le circuit."
+    },
+    {
+     "q": "Que fait un interrupteur ouvert ?",
+     "choix": [
+      "Il ferme la boucle",
+      "Il remplace la pile",
+      "Il coupe le circuit"
+     ],
+     "rep": "Il coupe le circuit",
+     "expl": "L’ouverture interrompt le trajet du courant."
+    },
+    {
+     "q": "L’interrupteur est fermé mais un fil est débranché. La lampe brille-t-elle ?",
+     "choix": [
+      "Non, le circuit est ouvert",
+      "Oui, toujours",
+      "Oui, si le fil est rouge"
+     ],
+     "rep": "Non, le circuit est ouvert",
+     "expl": "Le fil débranché interrompt la boucle."
+    }
+   ],
+   "id": "REV-QM-CE2-04"
+  },
+  {
+   "axe": "Questionner l’espace et le temps",
+   "titre": "Repérer les points cardinaux",
+   "emoji": "🧭",
+   "en_une_phrase": "Les points cardinaux permettent d’indiquer des directions.",
+   "comprendre": "Tu sais dire à droite ou à gauche. Pour se repérer sur une carte, on utilise aussi le nord, le sud, l’est et l’ouest. Une rose des vents montre ces directions.",
+   "essentiel": [
+    "Le nord, le sud, l’est et l’ouest sont des directions.",
+    "Sur de nombreuses cartes, le nord est indiqué en haut.",
+    "Vérifie toujours l’orientation de la carte."
+   ],
+   "image_mentale": "Imagine une croix : nord, sud, est et ouest.",
+   "regle_ou_methode": "Cherche la flèche du nord avant de lire les directions.",
+   "exemples": [
+    "Une carte indique le nord vers le haut. Le sud est alors vers le bas. Si tu regardes vers le nord, l’est est à ta droite.",
+    "Sur une autre carte, suis la flèche d’orientation même si elle ne pointe pas vers le haut."
+   ],
+   "piege": "Le haut d’une carte n’est pas toujours le nord : vérifie sa flèche.",
+   "astuce_memoire": "Nord et sud sont opposés ; est et ouest aussi.",
+   "quiz": [
+    {
+     "q": "Quelle direction est opposée au nord ?",
+     "choix": [
+      "L’est",
+      "L’ouest",
+      "Le sud"
+     ],
+     "rep": "Le sud",
+     "expl": "Le nord et le sud sont opposés."
+    },
+    {
+     "q": "Si tu regardes vers le nord, où se trouve l’est ?",
+     "choix": [
+      "À droite",
+      "À gauche",
+      "Derrière"
+     ],
+     "rep": "À droite",
+     "expl": "Face au nord, l’est se trouve à droite."
+    },
+    {
+     "q": "Une carte indique le nord par une flèche vers la gauche. Où est le nord sur cette carte ?",
+     "choix": [
+      "Toujours en haut",
+      "Vers la gauche",
+      "Vers la droite"
+     ],
+     "rep": "Vers la gauche",
+     "expl": "Il faut suivre la flèche indiquée sur cette carte."
+    }
+   ],
+   "id": "REV-QM-CE2-05"
+  },
+  {
+   "axe": "Questionner l’espace et le temps",
+   "titre": "Se repérer sur une frise",
+   "emoji": "📜",
+   "en_une_phrase": "Une frise chronologique place des événements dans l’ordre du temps.",
+   "comprendre": "Tu sais raconter ce qui s’est passé avant et après. Une frise met ces événements sur une ligne. Elle aide à comparer leur ordre et parfois leur éloignement dans le temps.",
+   "essentiel": [
+    "Les événements sont placés selon leur date.",
+    "La flèche indique le sens du temps sur la frise.",
+    "Un événement ancien précède un événement plus récent."
+   ],
+   "image_mentale": "Imagine une ligne fléchée avec des étiquettes de dates.",
+   "regle_ou_methode": "Lis la flèche, puis compare les dates des événements.",
+   "exemples": [
+    "Une frise va de gauche à droite vers le présent. Place une photo de 2000 avant une photo de 2010. La photo de 2000 est plus ancienne.",
+    "Sur cette frise, 2015 vient après 2010."
+   ],
+   "piege": "Ne suppose pas le sens sans regarder la flèche.",
+   "astuce_memoire": "Dates et flèche donnent l’ordre.",
+   "quiz": [
+    {
+     "q": "Quel événement est le plus ancien ?",
+     "choix": [
+      "Celui de 2000",
+      "Celui de 2010",
+      "Celui de 2015"
+     ],
+     "rep": "Celui de 2000",
+     "expl": "2000 précède 2010 et 2015."
+    },
+    {
+     "q": "À quoi sert la flèche d’une frise ?",
+     "choix": [
+      "À peser les événements",
+      "À indiquer le sens du temps",
+      "À changer les dates"
+     ],
+     "rep": "À indiquer le sens du temps",
+     "expl": "Elle montre dans quel sens le temps avance."
+    },
+    {
+     "q": "Sur une frise allant vers le présent à droite, où placer 2010 par rapport à 2000 ?",
+     "choix": [
+      "À gauche de 2000",
+      "Au même endroit",
+      "À droite de 2000"
+     ],
+     "rep": "À droite de 2000",
+     "expl": "2010 est plus récent que 2000."
+    }
+   ],
+   "id": "REV-QM-CE2-06"
+  },
+  {
+   "axe": "Explorer les organisations du monde",
+   "titre": "Les paysages et les activités",
+   "emoji": "🏞️",
+   "en_une_phrase": "Un paysage est transformé par des activités humaines et des phénomènes naturels.",
+   "comprendre": "Tu as déjà vu des champs, des routes ou des maisons. Ces éléments montrent comment un lieu est utilisé. Les comparer aide à comprendre différents paysages.",
+   "essentiel": [
+    "Un champ est un espace cultivé.",
+    "Des routes relient des lieux.",
+    "Un paysage peut changer au fil du temps."
+   ],
+   "image_mentale": "Imagine un village avec des champs et une route.",
+   "regle_ou_methode": "Observe les éléments, puis cherche à quels usages ils correspondent.",
+   "exemples": [
+    "Sur une photo, repère des champs et une route. Les champs servent notamment à cultiver. La route permet de se déplacer.",
+    "La construction d’un nouveau bâtiment transforme le paysage."
+   ],
+   "piege": "Un paysage ne reste pas forcément identique au fil des années.",
+   "astuce_memoire": "Je vois, je nomme, je cherche l’usage.",
+   "quiz": [
+    {
+     "q": "À quoi peut servir un champ cultivé ?",
+     "choix": [
+      "À remplacer toutes les routes",
+      "À produire des végétaux",
+      "À mesurer le temps"
+     ],
+     "rep": "À produire des végétaux",
+     "expl": "Un champ cultivé sert à faire pousser des végétaux."
+    },
+    {
+     "q": "Quel élément permet notamment de se déplacer ?",
+     "choix": [
+      "Un nuage",
+      "Une montagne",
+      "Une route"
+     ],
+     "rep": "Une route",
+     "expl": "Une route relie des lieux et permet des déplacements."
+    },
+    {
+     "q": "Deux photos montrent un nouveau bâtiment à la même place. Que peux-tu conclure ?",
+     "choix": [
+      "Le paysage a changé",
+      "Le paysage est forcément resté identique",
+      "Le bâtiment est un nuage"
+     ],
+     "rep": "Le paysage a changé",
+     "expl": "La présence du nouveau bâtiment montre une transformation."
+    }
+   ],
+   "id": "REV-QM-CE2-07"
+  },
+  {
+   "axe": "Explorer les organisations du monde",
+   "titre": "Comparer des modes de vie",
+   "emoji": "🏠",
+   "en_une_phrase": "Les façons de vivre peuvent varier selon les lieux et les époques.",
+   "comprendre": "Tu connais ton logement et tes déplacements. D’autres personnes vivent dans des lieux différents ou vivaient autrement autrefois. Comparer des documents aide à repérer des ressemblances et des changements.",
+   "essentiel": [
+    "On peut comparer les logements ou les transports.",
+    "Un document montre un lieu et un moment précis.",
+    "Une différence observée ne décrit pas toutes les personnes."
+   ],
+   "image_mentale": "Imagine deux images de rues prises à des époques différentes.",
+   "regle_ou_methode": "Identifie la date et le lieu de chaque document, puis compare.",
+   "exemples": [
+    "Une photo ancienne montre une rue sans voitures. Une photo récente du même lieu en montre plusieurs. Le moyen de transport visible a changé.",
+    "Deux maisons peuvent être construites avec des matériaux différents."
+   ],
+   "piege": "Une seule photo ne suffit pas à décrire toutes les vies d’une époque.",
+   "astuce_memoire": "Même question, deux documents, puis comparaison.",
+   "quiz": [
+    {
+     "q": "Que faut-il repérer sur un document ?",
+     "choix": [
+      "Sa couleur préférée",
+      "Le nom de tous les habitants",
+      "Son lieu et sa date"
+     ],
+     "rep": "Son lieu et sa date",
+     "expl": "Le lieu et la date aident à situer ce que montre le document."
+    },
+    {
+     "q": "Que peut-on comparer entre deux époques ?",
+     "choix": [
+      "Des moyens de transport",
+      "La valeur de toutes les personnes",
+      "La taille de la planète seulement"
+     ],
+     "rep": "Des moyens de transport",
+     "expl": "Les moyens de transport peuvent changer avec le temps."
+    },
+    {
+     "q": "Une photo montre une rue sans voiture. Prouve-t-elle qu’il n’y avait de voiture nulle part à cette époque ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement si elle est ancienne"
+     ],
+     "rep": "Non",
+     "expl": "Une image montre un lieu et un moment précis."
+    }
+   ],
+   "id": "REV-QM-CE2-08"
+  }
+ ]
+}

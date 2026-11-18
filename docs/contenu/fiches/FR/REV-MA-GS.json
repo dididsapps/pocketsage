@@ -113,6 +113,218 @@
    "id": "REV-MA-GS-02"
   },
   {
+   "axe": "Découvrir les nombres",
+   "titre": "Séparer et réunir",
+   "emoji": "🧩",
+   "en_une_phrase": "Une quantité peut être séparée en deux groupes puis réunie.",
+   "comprendre": "Tu sais compter des objets. Tu peux les répartir en deux tas. Les réunir redonne la quantité du départ.",
+   "essentiel": [
+    "Trois et deux font cinq.",
+    "Cinq et trois font huit.",
+    "Déplacer un objet ne change pas le total."
+   ],
+   "image_mentale": "Imagine cinq jetons partagés entre deux mains.",
+   "regle_ou_methode": "Compte les deux tas, puis réunis les objets.",
+   "exemples": [
+    "Prends cinq jetons. Mets trois jetons dans une main et deux dans l’autre. Ensemble, cela fait toujours cinq.",
+    "Huit, c’est cinq et encore trois."
+   ],
+   "piege": "Deux groupes séparés comptent toujours tous les objets : ne regarde pas un seul tas.",
+   "astuce_memoire": "Je sépare puis je réunis.",
+   "quiz": [
+    {
+     "q": "Trois et deux font combien ?",
+     "choix": [
+      "Quatre",
+      "Six",
+      "Cinq"
+     ],
+     "rep": "Cinq",
+     "expl": "Trois jetons et deux jetons font cinq."
+    },
+    {
+     "q": "Cinq et trois font combien ?",
+     "choix": [
+      "Huit",
+      "Sept",
+      "Neuf"
+     ],
+     "rep": "Huit",
+     "expl": "Cinq et trois font huit."
+    },
+    {
+     "q": "Tu sépares cinq jetons en trois et deux. Combien en as-tu en tout ?",
+     "choix": [
+      "Trois",
+      "Cinq",
+      "Deux"
+     ],
+     "rep": "Cinq",
+     "expl": "Les deux groupes réunis gardent cinq jetons."
+    }
+   ],
+   "id": "REV-MA-GS-20"
+  },
+  {
+   "axe": "Découvrir les nombres",
+   "titre": "Faire dix avec deux groupes",
+   "emoji": "🧩",
+   "en_une_phrase": "Dix objets peuvent être partagés en deux groupes.",
+   "comprendre": "Tu sais compter des jetons. Tu peux les répartir en deux petits tas. Ensemble, les tas gardent la même quantité.",
+   "essentiel": [
+    "Six et quatre font dix.",
+    "Cinq et cinq font dix.",
+    "Les deux groupes réunis font dix."
+   ],
+   "image_mentale": "Imagine dix jetons partagés en deux mains.",
+   "regle_ou_methode": "Compte les deux groupes, puis réunis-les.",
+   "exemples": [
+    "Prends dix jetons. Mets six dans une main et quatre dans l’autre. Six et quatre font dix.",
+    "Sept et trois font aussi dix."
+   ],
+   "piege": "Si tu déplaces un jeton sans l’enlever, le total ne change pas.",
+   "astuce_memoire": "Deux groupes, un même total.",
+   "quiz": [
+    {
+     "q": "Six et quatre font combien ?",
+     "choix": [
+      "Dix",
+      "Neuf",
+      "Onze"
+     ],
+     "rep": "Dix",
+     "expl": "Six et quatre font dix."
+    },
+    {
+     "q": "Cinq et cinq font combien ?",
+     "choix": [
+      "Huit",
+      "Dix",
+      "Neuf"
+     ],
+     "rep": "Dix",
+     "expl": "Cinq et cinq font dix."
+    },
+    {
+     "q": "Tu as sept jetons. Combien en faut-il encore pour dix ?",
+     "choix": [
+      "Deux",
+      "Quatre",
+      "Trois"
+     ],
+     "rep": "Trois",
+     "expl": "Sept et trois font dix."
+    }
+   ],
+   "id": "REV-MA-GS-21"
+  },
+  {
+   "axe": "Découvrir les nombres",
+   "titre": "Plus, moins, autant",
+   "emoji": "⚖️",
+   "en_une_phrase": "On peut comparer deux collections en associant les objets un par un.",
+   "comprendre": "Tu as peut-être distribué une assiette à chaque personne. Si chacun a une assiette et qu’il n’en reste pas, il y en a autant. Sinon, une collection peut en avoir plus.",
+   "essentiel": [
+    "Associe un objet à un autre.",
+    "S’il n’en reste aucun, il y en a autant.",
+    "S’il en reste dans un groupe, ce groupe en a plus."
+   ],
+   "image_mentale": "Imagine une tasse devant chaque assiette.",
+   "regle_ou_methode": "Mets les objets deux par deux et regarde ce qui reste.",
+   "exemples": [
+    "Associe trois tasses à trois assiettes. Aucune ne reste seule. Il y a autant de tasses que d’assiettes.",
+    "Quatre billes, c’est plus que deux billes."
+   ],
+   "piege": "Un grand objet ne compte pas pour plusieurs : compte les objets.",
+   "astuce_memoire": "Une paire, encore une paire.",
+   "quiz": [
+    {
+     "q": "Trois tasses et trois assiettes : que peux-tu dire ?",
+     "choix": [
+      "Il y a plus de tasses",
+      "Il y en a autant",
+      "Il y a moins de tasses"
+     ],
+     "rep": "Il y en a autant",
+     "expl": "Trois et trois représentent la même quantité."
+    },
+    {
+     "q": "Quel groupe contient le plus d’objets ?",
+     "choix": [
+      "Deux billes",
+      "Ils sont égaux",
+      "Quatre billes"
+     ],
+     "rep": "Quatre billes",
+     "expl": "Quatre est plus grand que deux."
+    },
+    {
+     "q": "Chaque tasse a une assiette et aucune ne reste. Que sais-tu ?",
+     "choix": [
+      "Il y a autant de tasses que d’assiettes",
+      "Il y a plus de tasses",
+      "Il y a plus d’assiettes"
+     ],
+     "rep": "Il y a autant de tasses que d’assiettes",
+     "expl": "Les objets se correspondent un à un sans reste."
+    }
+   ],
+   "id": "REV-MA-GS-22"
+  },
+  {
+   "axe": "Découvrir les nombres",
+   "titre": "Écrire les nombres jusqu’à dix",
+   "emoji": "🔟",
+   "en_une_phrase": "Les chiffres permettent d’écrire les nombres.",
+   "comprendre": "Tu sais montrer des objets avec tes doigts. Une écriture permet aussi de dire combien il y en a. Le nombre dix s’écrit avec deux chiffres.",
+   "essentiel": [
+    "1, 2, 3, 4, 5 : un, deux, trois, quatre, cinq.",
+    "6, 7, 8, 9, 10 : six, sept, huit, neuf, dix.",
+    "Dix s’écrit avec les chiffres 1 et 0."
+   ],
+   "image_mentale": "Imagine dix jetons à côté de l’écriture 10.",
+   "regle_ou_methode": "Compte les objets puis choisis l’écriture du nombre.",
+   "exemples": [
+    "Compte trois cubes : un, deux, trois. Écris 3.",
+    "Dix jetons se notent 10."
+   ],
+   "piege": "10 contient deux chiffres mais désigne une seule quantité : dix.",
+   "astuce_memoire": "Je compte, puis j’écris.",
+   "quiz": [
+    {
+     "q": "Quel chiffre écrit trois ?",
+     "choix": [
+      "8",
+      "10",
+      "3"
+     ],
+     "rep": "3",
+     "expl": "Le nombre trois s’écrit 3."
+    },
+    {
+     "q": "Quelle écriture indique dix ?",
+     "choix": [
+      "10",
+      "1",
+      "8"
+     ],
+     "rep": "10",
+     "expl": "Le nombre dix s’écrit 10."
+    },
+    {
+     "q": "Tu comptes huit billes. Quelle écriture choisis-tu ?",
+     "choix": [
+      "3",
+      "8",
+      "10"
+     ],
+     "rep": "8",
+     "expl": "Le nombre huit s’écrit 8."
+    }
+   ],
+   "id": "REV-MA-GS-23"
+  },
+  {
    "axe": "Utiliser les nombres pour résoudre des problèmes",
    "titre": "Ajouter une quantité",
    "emoji": "➕",
@@ -217,6 +429,59 @@
     }
    ],
    "id": "REV-MA-GS-04"
+  },
+  {
+   "axe": "Explorer les solides et les formes planes",
+   "titre": "Cube, boule et cylindre",
+   "emoji": "🧊",
+   "en_une_phrase": "Les solides ont des formes que l’on peut observer et manipuler.",
+   "comprendre": "Tu connais les dés et les ballons. Leurs formes ne sont pas pareilles. Observer leurs faces aide à les nommer.",
+   "essentiel": [
+    "Un cube a des faces carrées.",
+    "Une boule peut rouler dans toutes les directions.",
+    "Un cylindre a deux faces planes rondes."
+   ],
+   "image_mentale": "Imagine un dé, un ballon et une boîte ronde.",
+   "regle_ou_methode": "Observe les faces et essaie de faire rouler l’objet.",
+   "exemples": [
+    "Un dé présente des faces carrées. Il ressemble à un cube.",
+    "Un ballon rond ressemble à une boule."
+   ],
+   "piege": "Un carré dessiné est plat ; un cube occupe de la place.",
+   "astuce_memoire": "Dé : cube ; ballon : boule.",
+   "quiz": [
+    {
+     "q": "Quel solide ressemble à un dé ?",
+     "choix": [
+      "Un cube",
+      "Une boule",
+      "Un cercle"
+     ],
+     "rep": "Un cube",
+     "expl": "Le dé ressemble à un cube."
+    },
+    {
+     "q": "Quel solide ressemble à un ballon rond ?",
+     "choix": [
+      "Un cube",
+      "Une boule",
+      "Un carré"
+     ],
+     "rep": "Une boule",
+     "expl": "Le ballon ressemble à une boule."
+    },
+    {
+     "q": "Quel solide a deux faces planes rondes ?",
+     "choix": [
+      "Une boule",
+      "Un triangle",
+      "Un cylindre"
+     ],
+     "rep": "Un cylindre",
+     "expl": "Le cylindre possède deux faces planes rondes."
+    }
+   ],
+   "id": "REV-MA-GS-24"
   },
   {
    "axe": "Explorer des grandeurs : la longueur, la masse",
