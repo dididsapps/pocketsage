@@ -349,6 +349,29 @@ Appels à l'action (un par vidéo) :
 
 ---
 
+## 7 bis. Angle « École sereine » : répondre aux pubs « cerveau » sans leurs promesses (18/11)
+
+Contexte : beaucoup de pubs (Calm Kids, Regulated Child…) captent les parents inquiets de devoirs difficiles,
+de crises ou d'oublis, avec des promesses non prouvées (« active le cerveau », « régule le système nerveux »,
+« fenêtre 3-10 ans »). On parle du **même besoin**, mais avec des **faits** sur ce que fait l'appli.
+
+**Interdits** : diagnostic, troubles (TDAH, « dys »…), cerveau, système nerveux, promesse de résultat ou de santé,
+conseil de spécialiste. Seule orientation : « En cas de doute, parlez-en à l'enseignant ou au médecin. »
+Pubs adressées aux parents uniquement.
+
+| Difficulté du parent | Ce qu'on montre (déjà dans l'appli ou à venir) | Accroche possible |
+|---|---|---|
+| Devoirs interminables | Minuteur de devoirs en petits blocs + pause *(à venir)* | « 15 minutes, une pause, c'est fini. » |
+| Contrôle demain, panique | « Contrôle de demain » + fiches de révision par classe *(à venir)* | « La veille du contrôle, 10 minutes suffisent pour revoir l'essentiel. » |
+| Il oublie, se disperse | Parcours « Mes super-pouvoirs » Concentration et Mémoire (5 jours, fiches à imprimer) | « Un petit défi par jour, une semaine, et on en reparle. » |
+| Crises, émotions | Parcours Émotions + Politesse et savoir-vivre | « Mettre des mots sur ce qu'on ressent, en jouant. » |
+| Écrans le soir, coucher difficile | Soirée ambre, couvre-feu doux, voyages du sommeil, veilleuse | « Le soir, l'appli se calme toute seule. » |
+| Le parent ne sait pas où il en est | Journal des progrès + fiche de liaison enseignant *(à venir)* | « Voyez ce qu'il a fait cette semaine, sans note. » |
+
+Formats : vidéo courte « une soirée de devoirs avant/après » (situation jouée, sans promesse chiffrée),
+carrousel « 5 routines du soir », post « ce qu'on ne vous promettra jamais » (pas de miracle, juste des routines).
+À faire relire avec le skill *claims-proof-audit* avant publication.
+
 ## 7. Tableau de bord : 5 indicateurs à suivre chaque semaine
 
 | # | Indicateur | Définition | Source (sans données personnelles) | Cible S8+ | Alerte |
