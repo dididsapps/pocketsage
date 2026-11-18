@@ -355,6 +355,31 @@ body.nuit-on .nb .nl{color:rgba(243,233,214,.6)}
 #nuit-noir{position:fixed;inset:0;background:#000;z-index:9999;display:flex;align-items:flex-end;justify-content:center;padding-bottom:calc(40px + env(safe-area-inset-bottom,0px));cursor:pointer}
 #nuit-noir span{color:rgba(243,233,214,.18);font-size:13px;font-weight:600;font-family:var(--f)}
 /* 🌙 Veilleuse : lueur chaude (sans bleu) qui suit la voix, puis s'éteint très lentement */
+/* 🌅 Soirée ambre : filtre multiplicatif (retire le bleu) + voile sombre, au-dessus de tout, sans bloquer le doigt */
+#soir-f,#soir-d{position:fixed;inset:0;pointer-events:none;z-index:2147483000;display:none}
+#soir-f{mix-blend-mode:multiply}
+body.soir #scr-nuit,body.soir #scr-reader,body.soir #nuit-c{background:#000}
+body.soir #scr-nuit,body.soir #scr-reader{--nt:#FFD2A0;--nt2:#E0B080;--nbox:rgba(255,150,60,.07);--nline:rgba(255,160,80,.16);--namb:#FF9F5A}
+body.soir #scr-reader .reader-txt,body.soir #scr-reader .reader-tit{color:var(--nt)}
+body.soir .ncard{background:rgba(255,150,60,.06)!important;border-color:rgba(255,150,60,.16)!important}
+body.soir .ncard-audio{background:rgba(255,120,50,.10)!important}
+body.soir #scr-reader .hlw.hl-on{background:rgba(255,140,60,.35);color:#FFE2C0}
+body.soir .nuit-sct,body.soir .nuit-sct div{color:#E0B080!important}
+/* thème nuit : cartes de l'accueil en brun foncé lisible (blanc sur orange vif illisible une fois filtré) */
+body.night .hmod-card{background:#3A2616!important;box-shadow:0 2px 10px rgba(0,0,0,.5)!important}
+body.night .hmod-card span{color:#FFD2A0!important}
+body.night .nb .nl{color:#D9A070!important}
+/* bascule du thème en fondu plutôt qu'en un coup */
+.scr,.bnav,.hmod-card,.ncard,#scr-nuit,#scr-reader{transition:background-color 4s ease,color 4s ease,border-color 4s ease}
+/* Pause des yeux 20-20-20 et couvre-feu */
+.ps-modal{position:fixed;inset:0;z-index:9998;background:rgba(10,10,25,.82);display:flex;align-items:center;justify-content:center;padding:20px}
+.ps-modal .pm-box{background:#fff;border-radius:22px;padding:22px 20px;max-width:340px;width:100%;text-align:center;font-family:var(--f);box-shadow:0 10px 40px rgba(0,0,0,.35)}
+.ps-modal .pm-ico{font-size:52px;margin-bottom:6px}
+.ps-modal .pm-t{font-size:19px;font-weight:900;color:#2D2B55;margin-bottom:8px}
+.ps-modal .pm-x{font-size:14.5px;color:#4A4870;line-height:1.55;margin-bottom:14px}
+.ps-modal .pm-n{font-size:44px;font-weight:900;color:#6C63FF;margin:4px 0 12px}
+.ps-modal button{display:block;width:100%;border:none;border-radius:14px;padding:12px;font-family:var(--f);font-size:15px;font-weight:800;cursor:pointer;margin-top:8px}
+.ps-modal .pm-a{background:#6C63FF;color:#fff}.ps-modal .pm-b{background:#F0EFFF;color:#5A52D5}
 /* Surlignage du mot lu (GS→CE2 et langues) */
 .hlw{border-radius:4px;transition:background .12s,box-shadow .12s}
 .hlw.hl-on{background:#FFE27A;color:#3A2A00;box-shadow:0 0 0 2px #FFE27A}
@@ -935,7 +960,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=76">
+<link rel="stylesheet" href="css/jeux.css?v=77">
 </head>
 <body>
 
@@ -1475,11 +1500,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=76"></script>
-<script src="js/jeux-cerveau.js?v=76"></script>
-<script src="js/coach-voix.js?v=76"></script>
-<script src="js/monde-interieur.js?v=76"></script>
-<script src="js/monde-plus.js?v=76"></script>
+<script src="js/jeux.js?v=77"></script>
+<script src="js/jeux-cerveau.js?v=77"></script>
+<script src="js/coach-voix.js?v=77"></script>
+<script src="js/monde-interieur.js?v=77"></script>
+<script src="js/monde-plus.js?v=77"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -10566,6 +10591,60 @@ function nuitNoir(id,txt){
   d.onclick=()=>d.remove();document.body.appendChild(d);
   setTimeout(()=>{const sp=d.querySelector('span');if(sp)sp.style.opacity='0';},5000);
 }
+// ═══ 🌅 Soirée ambre · couvre-feu doux · écoute seule · pause des yeux (réglages par enfant, Espace Parents) ═══
+function soirCfg(p){p=p||P();const a=p?ageNum(p.age):8;const def={on:true,debut:'19:30',coucher:a<=6?'20:00':a<=9?'20:30':a<=12?'21:00':a<=17?'22:00':'22:30',couvre:a<=12,ecoute:'veilleuse',yeux:true};
+  return Object.assign(def,(p&&p.soir)||{});}
+function setSoir(k,v){const p=P();if(!p)return;p.soir=Object.assign(soirCfg(p),{[k]:v});saveApp();_soirTick(true);_showParentPanel();}
+const _hm=t=>{const[a,b]=String(t).split(':').map(Number);return a*60+b;};
+// 0 = journée, 0→1 = de l'heure de début jusqu'au coucher, 1 = après le coucher (jusqu'à 6 h)
+function soirK(){const so=soirCfg();if(!so.on)return 0;const d=new Date(),n=d.getHours()*60+d.getMinutes(),a=_hm(so.debut),c=Math.max(_hm(so.coucher),a+15);
+  if(n<360)return 1;if(n<a)return 0;return Math.min(1,(n-a)/Math.max(10,c-10-a));}   // maximum atteint 10 min avant le coucher
+function apresCoucher(){const so=soirCfg();if(!so.couvre)return false;const d=new Date(),n=d.getHours()*60+d.getMinutes();
+  const p=P();if(p&&p._sursis&&Date.now()<p._sursis)return false;return n<360||n>=_hm(so.coucher);}
+let _soirLast=-1;
+function _soirTick(force){let k=0;try{k=soirK();}catch(e){}
+  if(!force&&Math.abs(k-_soirLast)<.01)return;_soirLast=k;
+  let f=document.getElementById('soir-f'),d=document.getElementById('soir-d');
+  if(!f){f=document.createElement('div');f.id='soir-f';d=document.createElement('div');d.id='soir-d';document.body.appendChild(f);document.body.appendChild(d);}
+  if(k<=0){f.style.display=d.style.display='none';document.body.classList.remove('soir');if(!APP.night)document.body.classList.remove('night');return;}
+  const e=Math.pow(k,.7);   // perceptible jusqu'au bout
+  // multiplicatif jusqu'à rgb(255,200,130) : moins de bleu, couleurs encore lisibles ; voile sombre 15 % max,
+  // et aucun voile dans l'onglet Nuit (fond déjà noir : le voile ne ferait que foncer le texte)
+  const nuit=document.body.classList.contains('nuit-on');
+  f.style.background=`rgb(255,${Math.round(255-55*e)},${Math.round(255-125*e)})`;f.style.display='block';
+  d.style.background=`rgba(0,0,0,${(nuit?0:.15*e).toFixed(3)})`;d.style.display='block';
+  document.body.classList.toggle('soir',e>.5);
+  if(e>.5)document.body.classList.add('night');else if(!APP.night)document.body.classList.remove('night');}
+setInterval(()=>{try{_soirTick();_yeuxTick();}catch(e){}},30000);setTimeout(()=>{try{_soirTick(true);}catch(e){}},1500);
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')try{_soirTick(true);}catch(e){}});
+// Couvre-feu doux : après l'heure du coucher, seuls les écrans du soir restent ouverts
+const _SOIR_OK=['nuit','reader','profil','legal','setup','home','stats'];
+function soirBloque(id){try{if(_SOIR_OK.includes(id)||!apresCoucher())return false;}catch(e){return false;}
+  if(document.querySelector('.ps-modal'))return true;const p=P();
+  const m=document.createElement('div');m.className='ps-modal';
+  m.innerHTML=`<div class="pm-box"><div class="pm-ico">🌙</div><div class="pm-t">C’est l’heure de dormir${p&&p.name?', '+p.name:''}</div><div class="pm-x">Le Senseï range les jeux et les quiz pour ce soir. Une histoire, une veilleuse… et au lit !</div>
+    <button class="pm-a">📖 Histoires du soir</button><button class="pm-b">🔐 Parent : 30 min de plus</button></div>`;
+  m.querySelector('.pm-a').onclick=()=>{m.remove();openNuit();};
+  m.querySelector('.pm-b').onclick=()=>{m.remove();showPin('🔐 Code parental','30 minutes de plus ce soir',()=>{const q=P();if(q){q._sursis=Date.now()+30*60000;saveApp();}toast('⏰ 30 minutes de plus');},null);};
+  m.addEventListener('click',e=>{if(e.target===m)m.remove();});document.body.appendChild(m);return true;}
+// Écoute seule : le soir, quelques secondes après le début d'une histoire à écouter, on passe en veilleuse / écran noir
+let _soirAudT=null;
+function _soirEcoute(id,txt){clearTimeout(_soirAudT);let so;try{if(soirK()<=0)return;so=soirCfg();}catch(e){return;}if(so.ecoute==='rien')return;
+  _soirAudT=setTimeout(()=>{if(!_ttsPlaying||document.getElementById('veilleuse')||document.getElementById('nuit-noir'))return;
+    toast(so.ecoute==='noir'?'🌑 L’écran s’éteint, la voix continue…':'🌙 La veilleuse s’allume, la voix continue…');
+    setTimeout(()=>{if(!_ttsPlaying)return;if(so.ecoute==='noir')nuitNoir(null);else nuitVeilleuse(id,txt);},2500);},12000);}
+// 👀 Pause des yeux 20-20-20 : 20 min d'écran actif → regarder au loin 20 s
+let _yeuxMs=0,_yeuxT0=Date.now(),_yeuxN=0;
+function _yeuxTick(){const now=Date.now(),dt=now-_yeuxT0;_yeuxT0=now;let so;try{so=soirCfg();}catch(e){return;}
+  const actif=document.visibilityState==='visible'&&!document.body.classList.contains('nuit-on')&&!document.getElementById('veilleuse')&&!document.getElementById('nuit-noir');
+  if(!so.yeux||!actif||dt>90000){if(dt>300000)_yeuxMs=0;return;}
+  _yeuxMs+=dt;if(_yeuxMs<20*60000||document.querySelector('.ps-modal'))return;_yeuxMs=0;_yeuxN++;
+  const conseil=_yeuxN%3===0?'Et garde l’écran à la distance de ton avant-bras, coude plié 💪':_yeuxN%3===2?'Et aujourd’hui, as-tu joué dehors ? La lumière du jour, c’est super pour les yeux ☀️':'Cherche l’objet le plus loin possible : un arbre, un nuage, une fenêtre…';
+  const m=document.createElement('div');m.className='ps-modal';
+  m.innerHTML=`<div class="pm-box"><div class="pm-ico">👀</div><div class="pm-t">Pause des yeux !</div><div class="pm-x">Regarde au loin pendant 20 secondes, par la fenêtre si tu peux.<br>${conseil}</div><div class="pm-n">20</div><button class="pm-b">C’est fait ✅</button></div>`;
+  document.body.appendChild(m);try{if(!APP.silent)ttsSpeak('Pause des yeux ! Regarde au loin pendant vingt secondes.','FR');}catch(e){}
+  let n=20;const el=m.querySelector('.pm-n');const iv=setInterval(()=>{n--;el.textContent=n;if(n<=0){clearInterval(iv);m.remove();try{sndOK&&sndOK();}catch(e){}}},1000);
+  m.querySelector('.pm-b').onclick=()=>{clearInterval(iv);m.remove();};}
 // 🌙 Veilleuse : lumière chaude qui « respire » et suit l'intensité de la voix (enveloppe précalculée, sans micro ni Web Audio),
 // puis reste allumée N minutes après la fin en baissant très lentement (pas d'extinction brutale qui réveille).
 const _vlEnv={};
@@ -10633,6 +10712,7 @@ function elPlayNuit(id,txt){
   const lang=(APP&&APP.lang&&APP.lang!=='FR')?`_${APP.lang}`:"";const url=`${AUDIO_CDN}/audio/nuit/${id}${lang}.mp3`;
   console.log('[Nuit] R2',url,'vitesse',_nuitRate);
   _ttsPlaying=true;
+  try{_soirEcoute(id,txt);}catch(e){}
   if(_hlWanted(APP&&APP.lang)){const rc=document.getElementById('reader-c');if(rc&&rc.dataset.item===id)_hlGet(`nuit/${id}${lang}`).then(st=>{if(!st||rc.dataset.item!==id)return;
     _hlStart([rc.querySelector('.reader-tit'),rc.querySelector('.reader-txt')],st,()=>{const a=_nuitAudio;return a&&!a.ended&&(a.src||'').indexOf('/'+id)>=0&&(_ttsPlaying||!a.paused)?a.currentTime:null;},true);});}
   _nuitPlay(url,()=>{_nuitCache[id]='hit';_ttsPlaying=false;_nuitResetPlayBtn();},e=>{
@@ -11826,7 +11906,8 @@ function P(){return APP.profiles[APP.cur]||null;} // profil courant
 // ════════════════════════════════════════════
 function show(id){
   try{
-    document.body.classList.toggle('nuit-on',id==='nuit'||(id==='reader'&&!!document.querySelector('#scr-reader')));
+    if(typeof soirBloque==='function'&&soirBloque(id))return;
+    document.body.classList.toggle('nuit-on',id==='nuit'||(id==='reader'&&!!document.querySelector('#scr-reader')));try{_soirTick(true);}catch(e){}
     if(id!=='game'&&typeof _gClearAll==='function')_gClearAll();
     if(id!=='defi'&&typeof hfStop==='function'){hfStop();try{coachStopVoice();coachWakeOff();}catch(e){}}
     // Ne pas appeler ttsStop() ici — speechSynthesis.cancel() gèle sur mobile
@@ -17272,6 +17353,18 @@ function _showParentPanel(){
     html+=`<div id="mic-local" style="font-size:12px;margin-top:8px;color:#444"></div>`;
     html+=`</div>`;
   }
+  // ── Soirée, sommeil et yeux ──
+  if(p){const so=soirCfg(p);const sel=(k,v,l)=>`<button onclick="setSoir('${k}',${typeof v==='string'?`'${v}'`:v})" style="padding:7px 10px;border-radius:10px;border:2px solid ${so[k]===v?'#5A52D5':'#DDD'};background:${so[k]===v?'#EAE9FF':'#fff'};color:#333;font-weight:700;font-size:12.5px;cursor:pointer">${l}</button>`;
+    html+=`<div style="background:#FFF6EC;border-radius:12px;padding:12px 14px;margin-bottom:14px">`;
+    html+=`<b style="display:block;margin-bottom:4px">🌅 Soirée, sommeil et yeux</b>`;
+    html+=`<label style="display:flex;gap:8px;align-items:center;font-size:13px;cursor:pointer;margin:6px 0"><input type="checkbox" ${so.on?'checked':''} onchange="setSoir('on',this.checked)" style="width:18px;height:18px"><span><b>Soirée ambre</b> : l’appli retire le bleu et baisse sa lumière progressivement jusqu’au coucher</span></label>`;
+    html+=`<div style="font-size:12px;color:#666;margin:6px 0 4px">Début de la soirée</div><div style="display:flex;flex-wrap:wrap;gap:6px">${['18:30','19:00','19:30','20:00','20:30'].map(v=>sel('debut',v,v.replace(':','h'))).join('')}</div>`;
+    html+=`<div style="font-size:12px;color:#666;margin:10px 0 4px">Heure du coucher de ${p.name||'l’enfant'}</div><div style="display:flex;flex-wrap:wrap;gap:6px">${['19:30','20:00','20:30','21:00','21:30','22:00','22:30'].map(v=>sel('coucher',v,v.replace(':','h'))).join('')}</div>`;
+    html+=`<label style="display:flex;gap:8px;align-items:center;font-size:13px;cursor:pointer;margin:12px 0 4px"><input type="checkbox" ${so.couvre?'checked':''} onchange="setSoir('couvre',this.checked)" style="width:18px;height:18px"><span><b>Couvre-feu doux</b> : après l’heure du coucher, seules les histoires du soir restent ouvertes (le code parental permet 30 min de plus)</span></label>`;
+    html+=`<div style="font-size:12px;color:#666;margin:10px 0 4px">Le soir, pendant une histoire à écouter</div><div style="display:flex;flex-wrap:wrap;gap:6px">${sel('ecoute','veilleuse','🌙 Veilleuse')}${sel('ecoute','noir','🌑 Écran noir')}${sel('ecoute','rien','Écran normal')}</div>`;
+    html+=`<label style="display:flex;gap:8px;align-items:center;font-size:13px;cursor:pointer;margin:12px 0 0"><input type="checkbox" ${so.yeux?'checked':''} onchange="setSoir('yeux',this.checked)" style="width:18px;height:18px"><span><b>Pause des yeux</b> : toutes les 20 minutes d’écran, le Senseï propose de regarder au loin pendant 20 secondes</span></label>`;
+    html+=`<div style="font-size:11.5px;color:#888;line-height:1.45;margin-top:8px">Pourquoi : le soir, c’est surtout la quantité de lumière et l’usage de l’écran qui comptent. L’appli baisse sa lumière, retire le bleu, puis passe à l’écoute seule. Ces réglages ne remplacent pas un avis médical.</div></div>`;
+  }
   // ── Temps de jeu (tous jeux confondus) ──
   if(p&&typeof jeuxLimitMin==='function'){
     const cur=jeuxLimitMin(),free=isFreePlan();
@@ -20055,8 +20148,8 @@ window.transferCoinsToWorld=function(n){
 
 })();
 </script>
-<script src="js/questions-plus-data.js?v=76"></script>
-<script src="js/questions-plus.js?v=76"></script>
+<script src="js/questions-plus-data.js?v=77"></script>
+<script src="js/questions-plus.js?v=77"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
