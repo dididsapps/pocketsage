@@ -342,3 +342,30 @@ Effort pour une petite équipe : **F** = faible (≤ 1 semaine), **M** = moyen (
 - [Lignes directrices DSA pour les mineurs (e-Enfance)](https://e-enfance.org/en/the-new-dsa-guidelines-to-protect-children-on-the-internet/)
 
 *Cités de mémoire, à faire vérifier par le juriste : directive 2005/29/CE annexe I point 28 ; art. L121-2 et L122-1 du Code de la consommation ; loi n° 2020-1266 du 19/10/2020 (image des enfants de moins de 16 ans) ; loi n° 2023-451 du 9/06/2023 (influenceurs) ; DSA art. 28.*
+
+---
+
+## Ajout du 18/11/2026 — Tikino (tikino.fr)
+
+**Ce que c'est** : pas une appli éducative, mais un **petit projecteur pour enfants de 3 à 10 ans** qui projette au mur des histoires animées (400+ titres : contes, documentaires, animations, musique classique). L'appli ne sert qu'aux parents (connexion du projecteur, catalogue, bibliothèque). Créé par trois mamans, soutenu par Bpifrance, CNC, Paris&Co, Wilco.
+
+**Positionnement** : « l'alternative à l'écran » — lumière douce indirecte, pas de lumière bleue directe, pas de pub, pas d'algorithme, animation lente, visionnage partagé en famille. Catalogues par âge (3 ans / 4-5 ans / 6+), chaque histoire avec âge, résumé et « mot de l'équipe ».
+
+**Modèle** : vente du projecteur + histoires (prix non publiés sur les pages consultées), boutique avec **carte cadeau**, parrainage, fidélité, **sélection écoles**.
+
+**Ce qu'on en retient pour PocketSage**
+| Idée | Statut |
+|---|---|
+| Mode « écran noir » le soir : la voix seule, écran éteint (un tap rallume) | ✅ fait le 18/11 (v74) |
+| Envoi du son sur enceinte / TV (AirPlay, Chromecast) | ✅ fait le 18/11 (v74) |
+| Nuit relookée lisible : texte crème chaud, aucun bloc clair éblouissant | ✅ fait le 18/11 (v74) |
+| « Mot de l'équipe » + âge + bénéfice sur chaque histoire | à faire (peu coûteux, rassure les parents) |
+| Mode famille sur la TV (quiz / histoire en grand via recopie d'écran) | à faire |
+| Carte cadeau, sélection écoles, parrainage | voir `04_carte_cadeau.md` |
+| Raconter l'histoire du fondateur (papa à Monaco + enfants bêta-testeurs) | à intégrer aux vidéos |
+
+**Non concurrent direct** (matériel, 3-10 ans, pas de quiz ni de langues) mais **même cible de parents** « moins d'écran, plus de qualité » → **partenariat possible** plus tard (offre croisée, coffret Noël).
+
+Message utilisable (honnête) : « Le soir, l'écran s'éteint : seule la voix reste. » — ne pas promettre d'effet santé (lumière bleue, sommeil) sans source solide.
+
+Sources : [Tikino — App Store](https://apps.apple.com/mx/app/tikino/id1568435696) · [Tikino — notre histoire](https://tikino.fr/en/pages/notre-histoire)

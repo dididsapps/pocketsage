@@ -335,9 +335,29 @@ body.car .dcard p{font-size:17px}
 .ncard-audio{background:linear-gradient(135deg,rgba(108,99,255,.25),rgba(26,58,110,.4));border-color:rgba(108,99,255,.4)}
 .defi-invite{background:#FFF8E7;border:2px solid #FFD166;border-radius:14px;padding:12px 14px;
   margin:0 0 14px;font-size:13px;font-weight:600;color:#6B4F00;line-height:1.6}
-.reader-txt-audio p{font-size:15px}
-.nuit-sct{font-size:13px;font-weight:800;color:rgba(255,255,255,.6);text-transform:uppercase;
-  letter-spacing:.5px;margin-bottom:10px;padding:0 4px;display:flex;align-items:center;gap:6px}
+.reader-txt-audio p{font-size:17px}
+/* Nuit lisible (16/11) : texte crème chaud, contrastes ≥ 7:1, aucun bloc clair éblouissant */
+#scr-nuit,#scr-reader{--nt:#F3E9D6;--nt2:rgba(243,233,214,.78);--nbox:rgba(255,255,255,.06);--nline:rgba(243,233,214,.14);--namb:#F2C98A}
+#scr-reader .reader-tit{color:var(--nt);font-size:22px}
+#scr-reader .reader-txt{color:var(--nt);font-size:18px;font-weight:500;line-height:1.8;max-width:34em}
+#scr-reader .reader-txt p{margin-bottom:16px!important}
+#scr-reader .reader-txt p.breath{background:rgba(242,201,138,.10)!important;border-left:3px solid var(--namb);border-radius:8px;padding:10px 14px!important;color:var(--namb)!important;font-weight:600!important;font-size:17px!important}
+.nuit-tip{background:var(--nbox);border:1px solid var(--nline);border-radius:12px;padding:12px 14px;margin-bottom:16px;font-size:14px;color:var(--nt2);font-weight:500;line-height:1.6}
+.nuit-tip strong{color:var(--nt)}
+.ncard .nct{color:var(--nt)!important;font-size:15px!important}
+.ncard .ncs{color:var(--nt2)!important;font-size:12.5px!important}
+.nuit-tit{color:var(--nt)!important}
+.nuit-rate span{color:var(--nt2)!important;font-size:12px!important}
+.nuit-tb{font-size:13px!important}
+body.nuit-on .bnav{background:#0B0B1A;border-top-color:#22223a}
+body.nuit-on .nb .nl{color:rgba(243,233,214,.6)}
+/* Écran noir : seule la voix reste, un tap rallume */
+#nuit-noir{position:fixed;inset:0;background:#000;z-index:9999;display:flex;align-items:flex-end;justify-content:center;padding-bottom:calc(40px + env(safe-area-inset-bottom,0px));cursor:pointer}
+#nuit-noir span{color:rgba(243,233,214,.18);font-size:13px;font-weight:600;font-family:var(--f)}
+.nuit-sct{font-size:13px;font-weight:800;color:rgba(243,233,214,.85);text-transform:uppercase;
+  letter-spacing:.5px;margin-bottom:10px;padding:0 4px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.nuit-sct span{text-transform:none;letter-spacing:0}
+.nuit-sct div{text-transform:none;letter-spacing:0;flex-basis:100%;font-size:13px!important;font-weight:500!important;color:rgba(243,233,214,.75)!important;margin-top:2px!important;line-height:1.5}
 
 /* ── READER ── */
 #scr-reader{background:#090920}
@@ -902,7 +922,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=73">
+<link rel="stylesheet" href="css/jeux.css?v=74">
 </head>
 <body>
 
@@ -1442,11 +1462,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=73"></script>
-<script src="js/jeux-cerveau.js?v=73"></script>
-<script src="js/coach-voix.js?v=73"></script>
-<script src="js/monde-interieur.js?v=73"></script>
-<script src="js/monde-plus.js?v=73"></script>
+<script src="js/jeux.js?v=74"></script>
+<script src="js/jeux-cerveau.js?v=74"></script>
+<script src="js/coach-voix.js?v=74"></script>
+<script src="js/monde-interieur.js?v=74"></script>
+<script src="js/monde-plus.js?v=74"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -10525,6 +10545,26 @@ function elSpeak(txt){
 // crédits ElevenLabs quand le fichier existe déjà. Fallback sur elSpeak() si
 // le fichier n'existe pas encore sur R2 (nouveaux contenus).
 const _nuitCache={};
+// 🌑 Écran noir : lance la voix si besoin, couvre l'écran de noir (pas de lumière le soir), un tap rallume
+function nuitNoir(id,txt){
+  if(!_ttsPlaying&&id)elPlayNuit(id,txt||'');
+  if(document.getElementById('nuit-noir'))return;
+  const d=document.createElement('div');d.id='nuit-noir';d.innerHTML='<span>Touchez pour rallumer l’écran</span>';
+  d.onclick=()=>d.remove();document.body.appendChild(d);
+  setTimeout(()=>{const sp=d.querySelector('span');if(sp)sp.style.opacity='0';},5000);
+}
+// 📡 Envoyer le son sur une enceinte / TV : AirPlay (iPhone, iPad, Mac) ou Chromecast (Chrome Android)
+function nuitCast(id){
+  const a=_nuitEl();a.setAttribute('x-webkit-airplay','allow');
+  const lang=(APP&&APP.lang&&APP.lang!=='FR')?`_${APP.lang}`:'';const url=`${AUDIO_CDN}/audio/nuit/${id}${lang}.mp3`;
+  if(!a.src||a.src.indexOf('/'+id)<0){a.src=url;try{a.load();}catch(e){}}
+  const aide=()=>toast('📡 Pour envoyer le son sur une enceinte ou la TV : iPhone → Centre de contrôle → AirPlay ; Android → réglages rapides → Caster / Smart View.');
+  try{
+    if(typeof a.webkitShowPlaybackTargetPicker==='function'){a.webkitShowPlaybackTargetPicker();return;}
+    if(a.remote&&typeof a.remote.prompt==='function'){a.remote.prompt().then(()=>{if(a.paused)elPlayNuit(id,'');}).catch(e=>{if(!e||e.name!=='AbortError')aide();});return;}
+  }catch(e){}
+  aide();
+}
 function elPlayNuit(id,txt){
   if(APP&&APP.silent)return;
   if(!id){elSpeak(txt);return;}
@@ -11706,6 +11746,7 @@ function P(){return APP.profiles[APP.cur]||null;} // profil courant
 // ════════════════════════════════════════════
 function show(id){
   try{
+    document.body.classList.toggle('nuit-on',id==='nuit'||(id==='reader'&&!!document.querySelector('#scr-reader')));
     if(id!=='game'&&typeof _gClearAll==='function')_gClearAll();
     if(id!=='defi'&&typeof hfStop==='function'){hfStop();try{coachStopVoice();coachWakeOff();}catch(e){}}
     // Ne pas appeler ttsStop() ici — speechSynthesis.cancel() gèle sur mobile
@@ -15969,10 +16010,14 @@ function openReader(item,type){
       <div style="font-size:12px;opacity:.7;margin-bottom:14px">⏱ <span id="reader-dur">${nuitMin(item)} min</span> · ${item.sous||'Respiration guidée'} · ${item.age} ans</div>
       <button id="audio-play-btn" onclick="elPlayNuit('${item.id}',document.getElementById('reader-full-txt').innerText);this.textContent='⏸ En cours…';this.style.opacity='.7'" style="background:#6C63FF;border:none;color:#fff;border-radius:14px;padding:12px 24px;font-family:var(--f);font-size:15px;font-weight:900;cursor:pointer;width:100%;margin-bottom:8px">▶ Écouter l'histoire</button>
       <button onclick="ttsStop();_nuitResetPlayBtn();" style="background:rgba(255,255,255,.15);border:none;color:#fff;border-radius:14px;padding:10px 24px;font-family:var(--f);font-size:13px;font-weight:700;cursor:pointer;width:100%;margin-bottom:12px">⏹ Arrêter</button>
-      ${_nuitRateBar()}`;
+      ${_nuitRateBar()}
+      <div style="display:flex;gap:8px;justify-content:center;margin-top:12px;flex-wrap:wrap">
+        <button class="nuit-tb" onclick="nuitNoir('${item.id}')">🌑 Écran noir</button>
+        <button class="nuit-tb" onclick="nuitCast('${item.id}')">📡 AirPlay / Cast</button>
+      </div>`;
     c.appendChild(aBanner);
     const tip=document.createElement('div');
-    tip.style.cssText='background:#EAE9FF;border-radius:12px;padding:12px 14px;margin-bottom:14px;font-size:12px;color:#5A52D5;font-weight:600;line-height:1.6';
+    tip.className='nuit-tip';
     tip.innerHTML='💡 <strong>Conseil :</strong> Éteins la lumière, allonge-toi confortablement et ferme les yeux. Laisse la voix te guider. Les pauses de respiration sont indiquées dans le texte.';
     c.appendChild(tip);
   }
@@ -15993,7 +16038,9 @@ function openReader(item,type){
     _nuitBtn.onclick=()=>elPlayNuit(item.id,_nuitTxt);
     const _nuitStop=document.createElement('button');_nuitStop.className='nuit-tb';
     _nuitStop.textContent='⏹ Stop';_nuitStop.onclick=ttsStop;
-    tbar.appendChild(_nuitBtn);tbar.appendChild(_nuitStop);
+    const _nuitNoirB=document.createElement('button');_nuitNoirB.className='nuit-tb';_nuitNoirB.textContent='🌑 Écran noir';_nuitNoirB.onclick=()=>nuitNoir(item.id,_nuitTxt);
+    const _nuitCastB=document.createElement('button');_nuitCastB.className='nuit-tb';_nuitCastB.textContent='📡 AirPlay / Cast';_nuitCastB.onclick=()=>nuitCast(item.id);
+    tbar.appendChild(_nuitBtn);tbar.appendChild(_nuitStop);tbar.appendChild(_nuitNoirB);tbar.appendChild(_nuitCastB);
     c.appendChild(tbar);
     const _rb=document.createElement('div');_rb.innerHTML=_nuitRateBar();c.appendChild(_rb.firstChild);
   }
@@ -16005,7 +16052,7 @@ function openReader(item,type){
   txt.innerHTML=(item.texte||'').replace(/\s*\[P\d+\]\s*/g,' ').split('\n').map(l=>{   // [P3] = pause pour la voix, invisible à l'écran
     if(!l)return'';
     const isBreath=/(inspire|expire|souffle|retiens|respir)/i.test(l);
-    return`<p style="margin-bottom:18px${isBreath?';background:#EAE9FF;border-radius:10px;padding:10px 14px;font-weight:700;color:#5A52D5;font-size:14px':''}">${l}</p>`;
+    return`<p${isBreath?' class="breath"':''}>${l.replace(/\[(RESPIRE|BREATHE)\]\s*/g,'🌬️ ')}</p>`;
   }).join('');
   c.appendChild(txt);
 
@@ -19926,8 +19973,8 @@ window.transferCoinsToWorld=function(n){
 
 })();
 </script>
-<script src="js/questions-plus-data.js?v=73"></script>
-<script src="js/questions-plus.js?v=73"></script>
+<script src="js/questions-plus-data.js?v=74"></script>
+<script src="js/questions-plus.js?v=74"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
