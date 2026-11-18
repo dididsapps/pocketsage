@@ -376,6 +376,12 @@ body.night .hmod-card span[style*="border-radius:20px"]{background:transparent!i
 body.soir #nuit-c span{color:#E0B080}
 /* bascule du thème en fondu plutôt qu'en un coup */
 .scr,.bnav,.hmod-card,.ncard,#scr-nuit,#scr-reader{transition:background-color 4s ease,color 4s ease,border-color 4s ease}
+/* ☀️ Barre « Lumière » (soir, onglet Nuit, veilleuse) */
+.lum-bar{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,210,160,.18);border-radius:14px;padding:8px 12px;margin:0 0 12px;font-family:var(--f)}
+.lum-bar span{font-size:16px;line-height:1}
+.lum-bar b{font-size:12px;color:var(--nt2,#E0B080);font-weight:700;min-width:62px}
+.lum-bar input{flex:1;accent-color:#F2A65A;height:28px}
+#veilleuse .lum-bar{width:100%;max-width:340px;margin:0}
 /* Pause des yeux 20-20-20 et couvre-feu */
 .ps-modal{position:fixed;inset:0;z-index:9998;background:rgba(10,10,25,.82);display:flex;align-items:center;justify-content:center;padding:20px}
 .ps-modal .pm-box{background:#fff;border-radius:22px;padding:22px 20px;max-width:340px;width:100%;text-align:center;font-family:var(--f);box-shadow:0 10px 40px rgba(0,0,0,.35)}
@@ -965,7 +971,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=78">
+<link rel="stylesheet" href="css/jeux.css?v=79">
 </head>
 <body>
 
@@ -1505,11 +1511,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=78"></script>
-<script src="js/jeux-cerveau.js?v=78"></script>
-<script src="js/coach-voix.js?v=78"></script>
-<script src="js/monde-interieur.js?v=78"></script>
-<script src="js/monde-plus.js?v=78"></script>
+<script src="js/jeux.js?v=79"></script>
+<script src="js/jeux-cerveau.js?v=79"></script>
+<script src="js/coach-voix.js?v=79"></script>
+<script src="js/monde-interieur.js?v=79"></script>
+<script src="js/monde-plus.js?v=79"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -10607,17 +10613,25 @@ function soirK(){const so=soirCfg();if(!so.on)return 0;const d=new Date(),n=d.ge
 function apresCoucher(){const so=soirCfg();if(!so.couvre)return false;const d=new Date(),n=d.getHours()*60+d.getMinutes();
   const p=P();if(p&&p._sursis&&Date.now()<p._sursis)return false;return n<360||n>=_hm(so.coucher);}
 let _soirLast=-1;
+// ☀️ Lumière : 20 % → 100 % (100 % = rien de plus). Agit sur tout l'écran le soir, dans l'onglet Nuit, et sur la force de la veilleuse.
+function lumNiv(){try{const so=soirCfg();return Math.max(.2,Math.min(1,so.lum==null?1:so.lum));}catch(e){return 1;}}
+let _lumSave=null;
+function setLum(v){const p=P();if(!p)return;p.soir=Object.assign(soirCfg(p),{lum:Math.max(.2,Math.min(1,v/100))});_soirLast=-1;_soirTick(true);
+  document.querySelectorAll('.lum-bar b').forEach(b=>b.textContent='Lumière '+Math.round(lumNiv()*100)+' %');clearTimeout(_lumSave);_lumSave=setTimeout(()=>{try{saveApp();}catch(e){}},600);}
+function lumBarHTML(){const v=Math.round(lumNiv()*100);return `<div class="lum-bar"><span>🔅</span><b>Lumière ${v} %</b><input type="range" min="20" max="100" step="5" value="${v}" oninput="setLum(this.value)" aria-label="Lumière de l'écran"><span>🔆</span></div>`;}
 function _soirTick(force){let k=0;try{k=soirK();}catch(e){}
   if(!force&&Math.abs(k-_soirLast)<.01)return;_soirLast=k;
   let f=document.getElementById('soir-f'),d=document.getElementById('soir-d');
   if(!f){f=document.createElement('div');f.id='soir-f';d=document.createElement('div');d.id='soir-d';document.body.appendChild(f);document.body.appendChild(d);}
-  if(k<=0){f.style.display=d.style.display='none';document.body.classList.remove('soir');if(!APP.night)document.body.classList.remove('night');return;}
+  if(k<=0){f.style.display='none';document.body.classList.remove('soir');if(!APP.night)document.body.classList.remove('night');
+    const a2=document.body.classList.contains('nuit-on')?(1-lumNiv())*.7:0;d.style.background=`rgba(0,0,0,${a2.toFixed(3)})`;d.style.display=a2>0?'block':'none';return;}
   const e=Math.pow(k,.7);   // perceptible jusqu'au bout
   // multiplicatif jusqu'à rgb(255,200,130) : moins de bleu, couleurs encore lisibles ; voile sombre 15 % max,
   // et aucun voile dans l'onglet Nuit (fond déjà noir : le voile ne ferait que foncer le texte)
   const nuit=document.body.classList.contains('nuit-on');
   f.style.background=`rgb(255,${Math.round(255-55*e)},${Math.round(255-125*e)})`;f.style.display='block';
-  d.style.background=`rgba(0,0,0,${(nuit?0:.15*e).toFixed(3)})`;d.style.display='block';
+  const a1=nuit?0:.15*e,a2=(1-lumNiv())*.7,a=1-(1-a1)*(1-a2);   // + barre « Lumière » : jusqu'à 70 % plus sombre
+  d.style.background=`rgba(0,0,0,${a.toFixed(3)})`;d.style.display='block';
   document.body.classList.toggle('soir',e>.5);
   if(e>.5)document.body.classList.add('night');else if(!APP.night)document.body.classList.remove('night');}
 setInterval(()=>{try{_soirTick();_yeuxTick();}catch(e){}},30000);setTimeout(()=>{try{_soirTick(true);}catch(e){}},1500);
@@ -10664,10 +10678,11 @@ function nuitVeilleuse(id,txt){
   const d=document.createElement('div');d.id='veilleuse';
   d.innerHTML=`<div class="vl-glow"></div><div class="vl-ui"><div class="vl-l">Après l'histoire, la veilleuse reste allumée puis baisse tout doucement</div>
     <div class="vl-row">${[5,10,20,30].map(m=>`<button data-m="${m}" class="${m===apres?'on':''}">${m} min</button>`).join('')}</div>
-    <div class="vl-row"><button data-x="1">✕ Quitter la veilleuse</button></div></div>`;
+    ${lumBarHTML()}<div class="vl-row"><button data-x="1">✕ Quitter la veilleuse</button></div></div>`;
   document.body.appendChild(d);
   const ui=d.querySelector('.vl-ui'),glow=d.querySelector('.vl-glow');let uiT=null;
   const montre=()=>{ui.classList.remove('off');clearTimeout(uiT);uiT=setTimeout(()=>ui.classList.add('off'),4000);};montre();
+  d.addEventListener('input',()=>montre());
   d.addEventListener('click',e=>{const b=e.target.closest('button');
     if(b&&b.dataset.m){apres=parseInt(b.dataset.m);try{localStorage.setItem('ps_veil_min',apres);}catch(x){}d.querySelectorAll('[data-m]').forEach(x=>x.classList.toggle('on',x===b));if(_vl&&_vl.fin)_vl.fin=performance.now();montre();return;}
     if(b&&b.dataset.x){nuitVeilleuseStop();return;}montre();});
@@ -10687,7 +10702,7 @@ function nuitVeilleuse(id,txt){
     // après la fin : la lumière baisse lentement sur la durée choisie (courbe douce), puis noir
     let k=1;if(_vl.fin){const p=Math.min(1,(now-_vl.fin)/(apres*60000));k=Math.pow(1-p,1.6);if(p>=1){glow.style.opacity='0';const w=_vl.wl();if(w){try{w.release();}catch(e){}}cancelAnimationFrame(_vl.raf);_vl.raf=0;return;}}
     const hue=(360+12+30*Math.sin(t/37)+14*_vl.s)%360,hue2=(hue+25)%360;      // ambre ↔ orange ↔ rose : pas de bleu
-    const A=(.30+.40*_vl.s+.06*Math.sin(t*2*Math.PI/6))*k,R=50+14*_vl.s;
+    const A=Math.min(.95,(.30+.40*_vl.s+.06*Math.sin(t*2*Math.PI/6))*k*(.35+.9*lumNiv())),R=50+14*_vl.s;
     glow.style.background=`radial-gradient(circle at 50% 56%, hsla(${hue},90%,62%,${A.toFixed(3)}) 0%, hsla(${hue2},75%,40%,${(A*.55).toFixed(3)}) ${R.toFixed(0)}%, rgba(0,0,0,0) 78%)`;
     _vl.raf=requestAnimationFrame(loop);};
   _vl.raf=requestAnimationFrame(loop);
@@ -16110,6 +16125,7 @@ function _globalSliderHTML(age,showAll,onChangeId,onCheckId){
 function openNuit(){
   try{
   const c=document.getElementById('nuit-c');if(!c){show('nuit');return;}c.innerHTML='';
+  {const lb=document.createElement('div');lb.innerHTML=lumBarHTML();c.appendChild(lb.firstChild);}
   // Sync avec slider global
   if(_globalSliderAge!==null)_nuitSliderAge=_globalSliderAge;
   else if(_nuitSliderAge===null){_nuitSliderAge=Math.min(18,Math.max(4,parseInt(P()&&P().age||8)||8));}
@@ -16165,6 +16181,7 @@ function openReader(item,type){
   document.getElementById('reader-htit').textContent=isMed?'🧘 Méditation':isAudio?'🎧 Histoire respirée':'📖 Histoire';
   document.getElementById('reader-back').onclick=()=>{ttsStop();openNuit();};
   const c=document.getElementById('reader-c');c.innerHTML='';c.dataset.item=item.id||'';
+  {const lb=document.createElement('div');lb.innerHTML=lumBarHTML();c.appendChild(lb.firstChild);}
   const p=P();const autoTTS=p&&ageNum(p.age)<=8;
 
   // Header spécial histoires audio
@@ -20153,8 +20170,8 @@ window.transferCoinsToWorld=function(n){
 
 })();
 </script>
-<script src="js/questions-plus-data.js?v=78"></script>
-<script src="js/questions-plus.js?v=78"></script>
+<script src="js/questions-plus-data.js?v=79"></script>
+<script src="js/questions-plus.js?v=79"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
