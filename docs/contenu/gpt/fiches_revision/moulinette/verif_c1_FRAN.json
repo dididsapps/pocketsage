@@ -1,0 +1,543 @@
+{
+ "fiches": [
+  {
+   "id": "REV-FR-GS-20",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-GS-21",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-GS-22",
+   "action": "corriger",
+   "corrections": {
+    "en_une_phrase": "Un son peut se trouver au début, au milieu ou à la fin d’un mot."
+   },
+   "note": "Phrase-clé incohérente avec la fiche (oubli du milieu, pourtant testé au quiz)."
+  },
+  {
+   "id": "REV-FR-GS-23",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-CP-20",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-CP-21",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-CP-22",
+   "action": "corriger",
+   "corrections": {
+    "quiz": [
+     {
+      "q": "Quel mot est « le » ?",
+      "choix": [
+       "la",
+       "le",
+       "un"
+      ],
+      "rep": "le",
+      "expl": "Le mot « le » contient L puis E."
+     },
+     {
+      "q": "Quel petit mot vois-tu dans « un sac » ?",
+      "choix": [
+       "le",
+       "dans",
+       "un"
+      ],
+      "rep": "un",
+      "expl": "« Un » est le premier mot du groupe « un sac »."
+     },
+     {
+      "q": "Pour reconnaître « le », que faut-il regarder ?",
+      "choix": [
+       "L et E dans l’ordre",
+       "Seulement L",
+       "La couleur du papier"
+      ],
+      "rep": "L et E dans l’ordre",
+      "expl": "Les deux lettres permettent de reconnaître « le »."
+     }
+    ]
+   },
+   "note": "Explication fausse : « un sac » n’est pas une phrase."
+  },
+  {
+   "id": "REV-FR-CP-23",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-CP-24",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-CP-25",
+   "action": "corriger",
+   "corrections": {
+    "quiz": [
+     {
+      "q": "Que fais-tu après avoir copié ?",
+      "choix": [
+       "Je ferme les yeux",
+       "Je compare au modèle",
+       "Je change le mot"
+      ],
+      "rep": "Je compare au modèle",
+      "expl": "La comparaison aide à repérer un oubli."
+     },
+     {
+      "q": "Quelle copie de « chat » est juste ?",
+      "choix": [
+       "chta",
+       "cha",
+       "chat"
+      ],
+      "rep": "chat",
+      "expl": "Les lettres restent dans le même ordre."
+     },
+     {
+      "q": "Pour copier « vélo », que vérifies-tu ?",
+      "choix": [
+       "Les lettres et l’accent",
+       "Seulement la couleur",
+       "La taille de la table"
+      ],
+      "rep": "Les lettres et l’accent",
+      "expl": "Les lettres et l’accent font partie du modèle."
+     }
+    ]
+   },
+   "note": "Question mal formulée (« Quel mot copie « chat » ? »)."
+  },
+  {
+   "id": "REV-FR-CP-26",
+   "action": "corriger",
+   "corrections": {
+    "comprendre": "Tu sais dire « un chien » ou « une chienne ». Les petits mots « un » et « une » accompagnent les noms. Ils donnent un indice sur leur genre.",
+    "exemples": [
+     "Dans « une chienne », « une » indique ici le féminin. Dans « un chien », « un » indique le masculin.",
+     "« Une pomme » est féminin ; « un vélo » est masculin."
+    ],
+    "quiz": [
+     {
+      "q": "Quel groupe est féminin ?",
+      "choix": [
+       "un vélo",
+       "un chat",
+       "une pomme"
+      ],
+      "rep": "une pomme",
+      "expl": "« Une » accompagne ici le nom féminin « pomme »."
+     },
+     {
+      "q": "Quel groupe est masculin ?",
+      "choix": [
+       "un vélo",
+       "une pomme",
+       "une chienne"
+      ],
+      "rep": "un vélo",
+      "expl": "« Un » accompagne ici le nom masculin « vélo »."
+     },
+     {
+      "q": "Quel déterminant convient avec « chienne » ?",
+      "choix": [
+       "un",
+       "une",
+       "le"
+      ],
+      "rep": "une",
+      "expl": "On dit « une chienne » : le nom est féminin."
+     }
+    ]
+   },
+   "note": "Exemple « chatte » à éviter dans une appli pour enfants (double sens) : remplacé par « chienne » ; distracteur « des seulement » remplacé."
+  },
+  {
+   "id": "REV-FR-CE1-20",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-CE1-21",
+   "action": "corriger",
+   "corrections": {
+    "piege": "Un même son peut s’écrire de plusieurs façons : « cerise » se cherche à C, pas à S. Vérifie l’écriture du mot."
+   },
+   "note": "Piège faux/incompréhensible : V et B n’écrivent pas le même son ; remplacé par un vrai piège (son écrit de plusieurs façons)."
+  },
+  {
+   "id": "REV-FR-CE1-22",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-CE1-23",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-CE1-24",
+   "action": "corriger",
+   "corrections": {
+    "exemples": [
+     "Dans « une petite chienne », le nom est « chienne ». « Petite » le décrit et prend un e.",
+     "« Des petits chats » prend un s à « petits » et à « chats »."
+    ],
+    "quiz": [
+     {
+      "q": "Dans « un sac rouge », quel mot décrit le sac ?",
+      "choix": [
+       "rouge",
+       "sac",
+       "un"
+      ],
+      "rep": "rouge",
+      "expl": "« Rouge » précise la couleur du sac."
+     },
+     {
+      "q": "Complète : « une petite … »",
+      "choix": [
+       "chien",
+       "chienne",
+       "chiens"
+      ],
+      "rep": "chienne",
+      "expl": "« Petite » convient ici au nom féminin singulier « chienne »."
+     },
+     {
+      "q": "Quelle écriture convient pour plusieurs petits chats ?",
+      "choix": [
+       "des petit chats",
+       "des petits chat",
+       "des petits chats"
+      ],
+      "rep": "des petits chats",
+      "expl": "Le déterminant indique ici le pluriel du nom et de l’adjectif."
+     }
+    ]
+   },
+   "note": "Exemple « chatte » à éviter dans une appli pour enfants (double sens) : remplacé par « chienne »."
+  },
+  {
+   "id": "REV-FR-CE1-25",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-CE1-26",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-CE1-27",
+   "action": "corriger",
+   "corrections": {
+    "essentiel": [
+     "Je chante, tu chantes, il ou elle chante.",
+     "Nous chantons, vous chantez, ils ou elles chantent.",
+     "La terminaison dépend du sujet."
+    ],
+    "exemples": [
+     "Avec « nous », prends le début « chant ». Ajoute « ons ». Tu écris « nous chantons ».",
+     "Avec « ils », écris « ils chantent ».",
+     "Avec « tu », écris « tu chantes » : le s ne s’entend pas."
+    ]
+   },
+   "note": "Erreur : « je vais » (verbe aller, irrégulier) présenté dans une fiche sur les verbes réguliers en -er ; retiré."
+  },
+  {
+   "id": "REV-FR-CE2-20",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-CE2-21",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-CE2-22",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-CE2-23",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-CE2-24",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-CE2-25",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-CE2-26",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-CE2-27",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-CE2-28",
+   "action": "corriger",
+   "corrections": {
+    "comprendre": "Tu connais « son cartable ». Le mot « son » accompagne le nom. « Sont » vient du verbe être : il indique un état de plusieurs personnes ou choses."
+   },
+   "note": "« Sont » (être) exprime un état, pas une action."
+  },
+  {
+   "id": "REV-FR-CE2-29",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-FR-CE2-30",
+   "action": "corriger",
+   "corrections": {
+    "exemples": [
+     "Pars de « un petit chat ». Pour plusieurs, écris « des petits chats ». Le déterminant, l’adjectif et le nom indiquent le pluriel.",
+     "« Une petite chienne » est au féminin singulier."
+    ],
+    "quiz": [
+     {
+      "q": "Quel groupe est au pluriel ?",
+      "choix": [
+       "des petits chats",
+       "un petit chat",
+       "une petite chienne"
+      ],
+      "rep": "des petits chats",
+      "expl": "Le déterminant et les marques indiquent le pluriel."
+     },
+     {
+      "q": "Quel groupe est au féminin singulier ?",
+      "choix": [
+       "des petits chats",
+       "une petite chienne",
+       "un petit chat"
+      ],
+      "rep": "une petite chienne",
+      "expl": "« Une petite chienne » est féminin singulier."
+     },
+     {
+      "q": "Choisis la bonne écriture pour plusieurs petites chiennes.",
+      "choix": [
+       "des petite chienne",
+       "une petites chiennes",
+       "des petites chiennes"
+      ],
+      "rep": "des petites chiennes",
+      "expl": "Chaque mot concerné porte ici la marque du pluriel."
+     }
+    ]
+   },
+   "note": "Exemple « chatte » à éviter dans une appli pour enfants (double sens) : remplacé par « chienne »."
+  },
+  {
+   "id": "REV-AN-GS-20",
+   "action": "corriger",
+   "corrections": {
+    "axe": "Mobiliser le langage : éveil à la diversité linguistique"
+   },
+   "note": "Axe incorrect (axe de français GS) : remplacé par l’axe existant du fichier d’anglais GS."
+  },
+  {
+   "id": "REV-AN-GS-21",
+   "action": "corriger",
+   "corrections": {
+    "axe": "Mobiliser le langage : éveil à la diversité linguistique"
+   },
+   "note": "Axe incorrect (axe de français GS) : remplacé par l’axe existant du fichier d’anglais GS."
+  },
+  {
+   "id": "REV-AN-GS-22",
+   "action": "corriger",
+   "corrections": {
+    "axe": "Mobiliser le langage : éveil à la diversité linguistique"
+   },
+   "note": "Axe incorrect (axe de français GS) : remplacé par l’axe existant du fichier d’anglais GS."
+  },
+  {
+   "id": "REV-AN-GS-23",
+   "action": "corriger",
+   "corrections": {
+    "axe": "Mobiliser le langage : éveil à la diversité linguistique"
+   },
+   "note": "Axe incorrect (axe de français GS) : remplacé par l’axe existant du fichier d’anglais GS."
+  },
+  {
+   "id": "REV-AN-CP-20",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-AN-CP-21",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-AN-CP-22",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-AN-CP-23",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-AN-CP-24",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-AN-CE1-20",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-AN-CE1-21",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-AN-CE1-22",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-AN-CE1-23",
+   "action": "corriger",
+   "corrections": {
+    "axe": "Comprendre l’oral"
+   },
+   "note": "Notion d’écoute/reconnaissance : axe « Comprendre l’oral » plutôt que « S’exprimer oralement en continu »."
+  },
+  {
+   "id": "REV-AN-CE1-24",
+   "action": "corriger",
+   "corrections": {
+    "exemples": [
+     "Pour LOU, montre L, puis O, puis U. Nomme ces trois lettres en anglais. Le prénom reste LOU.",
+     "Pour le prénom imaginaire SAM, nomme S, A, M : leurs noms anglais ressemblent à « ès », « éï », « èm »."
+    ]
+   },
+   "note": "Espace parasite en fin d’exemple."
+  },
+  {
+   "id": "REV-AN-CE1-25",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-AN-CE1-26",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-AN-CE2-20",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-AN-CE2-21",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-AN-CE2-22",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-AN-CE2-23",
+   "action": "corriger",
+   "corrections": {
+    "en_une_phrase": "Des mots anglais permettent de décrire les cheveux et les yeux."
+   },
+   "note": "La phrase-clé ne parlait que des cheveux alors que la fiche traite aussi des yeux."
+  },
+  {
+   "id": "REV-AN-CE2-24",
+   "action": "corriger",
+   "corrections": {
+    "axe": "Comprendre l’oral"
+   },
+   "note": "Reconnaître/copier un mot n’est pas de l’expression orale en continu ; le cycle 2 n’a pas d’axe écrit propre : rattaché à « Comprendre l’oral » (lien oral-écrit d’un mot entendu)."
+  },
+  {
+   "id": "REV-AN-CE2-25",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-AN-CE2-26",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  },
+  {
+   "id": "REV-AN-CE2-27",
+   "action": "ok",
+   "corrections": {},
+   "note": "RAS ; pas de doublon avec les fiches validées."
+  }
+ ],
+ "couverture": []
+}
