@@ -1,0 +1,118 @@
+{
+  "id": "PC-CONC",
+  "nom_enfant": "🎯 Le super-pouvoir du Laser",
+  "nom_parent": "Concentration",
+  "accroche_parent": "Une semaine de petits jeux pour s'entraîner à écouter, regarder et rester sur une consigne quelques minutes, avec et sans écran. Dix minutes par jour, sans pression : l'erreur fait partie du jeu et on recommence en riant.",
+  "pour_qui": "4-12 ans",
+  "jours": [
+    {
+      "jour": "Lundi",
+      "theme": "Ouvrir grand les oreilles",
+      "jeu": {
+        "id": "simon",
+        "pourquoi": "Simon demande d'écouter et de regarder une suite jusqu'au bout avant de répondre : une bonne mise en route pour une journée consacrée à l'écoute."
+      },
+      "activite": {
+        "id": "PC-CONC-J1",
+        "titre": "Les oreilles de lynx",
+        "duree_min": 3,
+        "materiel": "aucun",
+        "script": "Bonjour, super-héros ! Aujourd'hui, tu vas avoir des oreilles de lynx. Le lynx est un chat sauvage qui entend tout, même les plus petits bruits. Pose le téléphone. Assieds-toi bien confortablement. [P3] Maintenant, ferme les yeux, ou regarde juste le sol. Ne bouge plus, comme une statue. Et écoute très fort. Quels bruits entends-tu dans la maison ? [P5] [P5] Ouvre les yeux. Compte sur tes doigts tous les bruits que tu as entendus. Un frigo qui ronronne ? Une voiture dehors ? Un oiseau ? Ta propre respiration ? [P5] Bravo ! On recommence, et cette fois, essaie de trouver un bruit tout petit, que tu n'avais pas remarqué. Ferme les yeux. Écoute. [P5] [P5] Alors, tu as trouvé un nouveau bruit ? Dis-le à voix haute ! [P3] Dernier défi. Trouve le bruit le plus loin de toi. Très très loin. Écoute. [P5] [P5] Super ! Tu as des oreilles de lynx. Tu peux t'étirer comme un chat. [P3]",
+        "petits": "Les petits peuvent juste lever un doigt à chaque bruit entendu, sans avoir besoin de le nommer.",
+        "grands": "Les grands essaient de classer les bruits : ceux de dedans, ceux de dehors, ceux qui viennent de leur propre corps.",
+        "a_deux": "Le parent écoute aussi, puis chacun dit sa liste : qui a trouvé un bruit que l'autre n'avait pas entendu ?"
+      },
+      "calme": {
+        "ref": "HR-001"
+      }
+    },
+    {
+      "jour": "Mardi",
+      "theme": "Suivre le rythme",
+      "jeu": {
+        "id": "reflexes",
+        "pourquoi": "Toucher l'écran uniquement quand c'est vert, c'est attendre le bon signal : exactement ce qu'on va faire ensuite avec les mains, en rythme."
+      },
+      "activite": {
+        "id": "PC-CONC-J2",
+        "titre": "Le chef d'orchestre",
+        "duree_min": 4,
+        "materiel": "aucun (une table ou ses genoux pour taper)",
+        "script": "Aujourd'hui, c'est moi le chef d'orchestre, et toi, tu es le musicien. Pose le téléphone. Mets tes mains sur tes genoux, ou sur une table. Je tape un rythme avec ma voix, et toi, tu le tapes avec tes mains, juste après moi. Écoute bien. Tap. Tap. [P3] À toi ! [P3] Bravo. Un peu plus long. Tap. Tap. Tap. [P3] À toi ! [P3] Maintenant, attention, il y a un silence au milieu. Tap. Tap. Silence. Tap. [P3] À toi ! [P5] Si tu t'es trompé, ce n'est pas grave, les musiciens aussi recommencent. On essaie un rythme rapide. Tap tap tap. Tap. [P3] À toi ! [P5] Et un rythme lent. Taaap. Taaap. Taaap. [P3] À toi ! [P5] Dernier défi du chef. Quand je dis stop, tes mains s'arrêtent tout de suite et restent posées. Tape doucement sur tes genoux, comme de la pluie. [P5] Stop ! [P2] Parfait. Tu es un super musicien. Salue ton public ! [P3]",
+        "petits": "Les petits peuvent taper seulement deux ou trois coups, et c'est déjà un très beau rythme.",
+        "grands": "Les grands inventent ensuite un rythme de cinq coups avec un silence, et le refont deux fois de suite à l'identique.",
+        "a_deux": "Le parent devient le chef d'orchestre et tape un rythme, puis on échange les rôles."
+      },
+      "calme": {
+        "ref": "MED-003"
+      }
+    },
+    {
+      "jour": "Mercredi",
+      "theme": "Des yeux qui cherchent",
+      "jeu": {
+        "id": "stroop",
+        "pourquoi": "Dans les couleurs piégées, il faut regarder la couleur de l'encre et ignorer le mot : un bon échauffement avant de partir à la chasse aux couleurs dans la pièce."
+      },
+      "activite": {
+        "id": "PC-CONC-J3",
+        "titre": "La chasse aux couleurs",
+        "duree_min": 4,
+        "materiel": "aucun (les objets de la pièce)",
+        "script": "Aujourd'hui, tu es un chasseur de couleurs. Pose le téléphone. Reste dans la pièce où tu es. On marche doucement, on ne court pas. La couleur à chercher est le rouge. Trouve cinq objets rouges. Tu peux les toucher du doigt, ou juste les montrer. Pas besoin de les prendre. C'est parti ! [P5] [P5] [P5] [P5] Stop ! Combien en as-tu trouvé ? Compte sur tes doigts. [P3] Si tu n'en as pas cinq, ce n'est pas grave, le rouge se cache bien ! Regarde encore partout : en haut, en bas, sur les vêtements. [P5] [P5] Bravo ! Maintenant, une nouvelle couleur : le bleu. Cinq objets bleus. Marche doucement. [P5] [P5] [P5] [P5] Stop ! Dis à voix haute un objet bleu que tu as trouvé. [P3] Dernier défi. Ferme les yeux. Peux-tu te souvenir d'un objet rouge et d'un objet bleu, sans regarder ? Dis-les. [P5] Ouvre les yeux, vérifie. Tu avais raison ? Super chasseur ! [P3]",
+        "petits": "Les petits cherchent trois objets au lieu de cinq, avec une couleur bien visible comme le rouge.",
+        "grands": "Les grands cherchent cinq objets d'une couleur plus difficile, comme le violet ou le gris, sans en citer deux pareils.",
+        "a_deux": "Le parent choisit la couleur en secret et dit seulement : je vois quelque chose de... ; l'enfant devine l'objet."
+      },
+      "calme": {
+        "script": "Assieds-toi tranquillement. Pose une main sur ton ventre. Imagine une couleur douce, ta couleur préférée. Quand tu respires, la couleur entre dans ton ventre. [P3] Quand tu souffles, elle se répand partout dans la pièce, tout doucement. [P3] Encore une fois. On inspire la couleur. [P3] On souffle la couleur. [P3] Une dernière fois, très lentement. [P5] Bravo. Ta pièce est toute colorée et toute calme."
+      }
+    },
+    {
+      "jour": "Jeudi",
+      "theme": "Écouter puis faire",
+      "jeu": {
+        "id": "grille",
+        "pourquoi": "La grille mémoire demande de garder en tête où les cases se sont allumées : comme garder en tête une consigne pendant qu'on dessine."
+      },
+      "activite": {
+        "id": "PC-CONC-J4",
+        "titre": "Le dessin mystère",
+        "duree_min": 4,
+        "materiel": "une feuille et un crayon",
+        "script": "Aujourd'hui, on fait un dessin mystère. Tu ne sais pas encore ce que tu vas dessiner. Prends une feuille et un crayon, et pose le téléphone. Écoute chaque consigne jusqu'au bout avant de dessiner. Prêt ? Au milieu de la feuille, dessine un grand rond. [P5] [P3] Dans le rond, en haut, dessine deux petits ronds, l'un à côté de l'autre. [P5] [P3] Sous les deux petits ronds, dessine un petit triangle, la pointe en bas. [P5] [P3] Sur le haut du grand rond, dessine deux triangles pointus, un à gauche et un à droite. [P5] [P3] De chaque côté du petit triangle, dessine trois traits qui partent vers l'extérieur. [P5] [P5] Regarde ton dessin. Qu'est-ce que c'est ? [P3] C'est un chat ! Il est peut-être un peu rigolo, et c'est très bien comme ça. Chaque chat est unique. [P3] Dernière consigne : dessine une queue au chat, en bas, du côté que tu veux. [P5] [P3] Bravo, artiste ! Tu as écouté et dessiné en même temps. [P2]",
+        "petits": "Les petits peuvent faire seulement le grand rond, les yeux et les oreilles ; un adulte peut répéter la consigne si besoin.",
+        "grands": "Les grands essaient d'attendre la fin de chaque consigne avant de poser le crayon, puis ajoutent trois détails de leur choix.",
+        "a_deux": "Le parent dessine aussi sans regarder la feuille de l'enfant, puis on compare les deux chats."
+      },
+      "calme": {
+        "ref": "HR-002"
+      }
+    },
+    {
+      "jour": "Vendredi",
+      "theme": "Rester attentif jusqu'au bout",
+      "jeu": {
+        "id": "schulte",
+        "pourquoi": "Dans la table de Schulte, on suit les nombres un par un sans se laisser distraire : une belle façon de finir la semaine avant le grand défi de l'écoute."
+      },
+      "activite": {
+        "id": "PC-CONC-J5",
+        "titre": "Le détecteur de bip",
+        "duree_min": 3,
+        "materiel": "aucun",
+        "script": "Aujourd'hui, tu deviens un détecteur. Pose le téléphone. Je vais raconter une petite histoire. Dans l'histoire, il y a des bip. À chaque bip, lève un doigt. À la fin, tu me diras combien de bip tu as entendu. Prêt ? Écoute bien. [P2] Il était une fois un petit robot qui s'appelait Pico. Un matin, Pico se réveille. Bip. Il ouvre la porte de sa maison. [P2] Dehors, le soleil brille. Bip. Pico voit un chat, il lui dit bonjour. Bip. [P2] Puis Pico marche jusqu'au parc. Il voit des fleurs jaunes, et un papillon. Bip. [P2] Le soir, Pico rentre chez lui, très fatigué. Il ferme les yeux. Bip. [P3] Fin de l'histoire ! Combien de doigts as-tu levés ? [P3] Il y avait cinq bip. Si tu as trouvé cinq, bravo ! Si tu as trouvé un autre nombre, ce n'est pas grave, les bip sont malins. On en fait une deuxième, plus courte. [P2] Pico mange une pomme. Bip. Il boit de l'eau. Il chante une chanson. Bip. Bip. Il s'endort. [P3] Combien de bip ? [P3] Il y en avait trois. Super détecteur ! Tu as écouté jusqu'au bout. [P2]",
+        "petits": "Les petits frappent dans leurs mains à chaque bip au lieu de compter, l'adulte compte avec eux.",
+        "grands": "Les grands comptent dans leur tête sans lever les doigts, et retiennent aussi ce que faisait Pico juste avant chaque bip.",
+        "a_deux": "Le parent invente à son tour une petite histoire avec des bip, et l'enfant compte."
+      },
+      "calme": {
+        "ref": "MED-001"
+      }
+    }
+  ],
+  "fiche": {
+    "titre": "Mon programme de la semaine — Le super-pouvoir du Laser",
+    "defi_bonus": "Pendant une promenade ou un repas du week-end, jouez aux oreilles de lynx : chacun écoute une minute en silence, puis on compare les bruits trouvés. Bonus : inventez ensemble une histoire à bip pour un frère, une sœur ou un grand-parent."
+  }
+}

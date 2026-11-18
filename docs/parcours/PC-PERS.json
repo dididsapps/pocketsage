@@ -1,0 +1,118 @@
+{
+  "id": "PC-PERS",
+  "nom_enfant": "🔁 Le super-pouvoir Encore une fois",
+  "nom_parent": "Persévérance",
+  "accroche_parent": "Cinq jeux courts pour s'entraîner à essayer, rater, en rire et recommencer. Ici, on félicite les essais et l'effort, jamais le talent : une erreur devient simplement l'étape d'avant.",
+  "pour_qui": "4-12 ans",
+  "jours": [
+    {
+      "jour": "Lundi",
+      "theme": "Ça tombe ? On reconstruit !",
+      "jeu": {
+        "id": "blocs",
+        "pourquoi": "Dans ce jeu, la partie finit toujours par s'arrêter, et on relance aussitôt : un bon échauffement pour voir que recommencer fait partie du jeu."
+      },
+      "activite": {
+        "id": "PC-PERS-J1",
+        "titre": "La tour de coussins",
+        "duree_min": 4,
+        "materiel": "4 à 8 coussins ou oreillers",
+        "script": "Bonjour, c'est le Senseï. Aujourd'hui, on construit une tour. Pose le téléphone et va chercher des coussins. [P5] Tu les as ? Super. Pose un premier coussin par terre, bien à plat. [P3] Pose un deuxième coussin dessus, doucement. [P3] Et un troisième. [P3] Continue, coussin par coussin, aussi haut que tu peux. [P5] [P5] Oh, elle penche ? Elle est tombée ? Ce n'est pas grave du tout. Une tour qui tombe, ça nous apprend quelque chose. Regarde les coussins par terre. Lequel était trop mou ? Lequel était trop petit ? [P3] Maintenant, reconstruis-la. Mets les plus gros coussins en bas cette fois. [P5] [P5] Bravo. Tu as essayé, tu as cherché, et tu as recommencé. C'est ça, le super-pouvoir Encore une fois. Dernier essai : construis-la encore, en allant tout doucement. [P5] [P5] Compte tes coussins à voix haute. [P3] Quel que soit le nombre, tu as fait un vrai travail de bâtisseur. Range les coussins avec moi : un, deux, trois, rangé.",
+        "petits": "Les petits visent une tour de trois coussins, et ont le droit de la faire tomber exprès une fois en criant patatras avant de la reconstruire.",
+        "grands": "Les grands essaient trois façons différentes de construire et disent à voix haute laquelle a tenu le mieux et pourquoi.",
+        "a_deux": "Construisez chacun votre tour côte à côte et, quand la vôtre tombe, dites en souriant : intéressant, je réessaie."
+      },
+      "calme": {
+        "ref": "MED-003"
+      }
+    },
+    {
+      "jour": "Mardi",
+      "theme": "Chaque essai rend meilleur",
+      "jeu": {
+        "id": "laby",
+        "pourquoi": "Dans un labyrinthe, une impasse n'est pas un échec : on revient en arrière et on tente un autre chemin, exactement l'idée du jour."
+      },
+      "activite": {
+        "id": "PC-PERS-J2",
+        "titre": "L'avion qui s'améliore",
+        "duree_min": 4,
+        "materiel": "1 ou 2 feuilles de papier",
+        "script": "C'est le Senseï. Aujourd'hui, tu deviens ingénieur d'avions. Prends une feuille de papier. [P3] Plie-la en deux, dans la longueur, puis ouvre-la. [P3] Replie les deux coins du haut vers le pli du milieu, comme un toit de maison. [P5] Replie encore les bords vers le milieu. [P5] Referme ton avion en deux et rabats les ailes de chaque côté. [P5] Ton avion est prêt. Mets-toi debout, regarde devant toi : personne sur le chemin ? Lance-le doucement, droit devant. [P3] Il est allé loin ? Il a piqué du nez ? Il a fait un tour bizarre ? Tout est bien, c'est le premier essai. Un ingénieur regarde et change une seule chose. Tu peux replier un peu le bout des ailes vers le haut. [P5] Lance encore. [P3] C'était mieux ? Différent ? [P2] Change encore une petite chose, et relance. [P5] [P3] Bravo pour tous ces essais. Chaque lancer t'a appris quelque chose sur ton avion. Pose-le à côté de toi, il a bien travaillé.",
+        "petits": "Pour les petits, un adulte plie l'avion ou on froisse simplement la feuille en boule pour une fusée, et l'enfant cherche la meilleure façon de la lancer.",
+        "grands": "Les grands marquent l'endroit d'arrivée de chaque essai avec une chaussette et notent sur un papier ce qu'ils ont changé à chaque fois.",
+        "a_deux": "Fabriquez chacun un avion, puis échangez-les pour améliorer celui de l'autre."
+      },
+      "calme": {
+        "script": "Assieds-toi par terre, bien tranquille. Imagine que tu es un petit avion qui se pose tout doucement. Inspire par le nez, ton avion monte un peu dans le ciel. [P3] Souffle par la bouche, ton avion descend doucement. [P3] Encore une fois, tu montes. [P3] Et tu descends. [P3] Une dernière fois, tu montes. [P3] Et tu te poses, tout en douceur, sur la piste. [P3] Ton avion est arrivé. Bravo."
+      }
+    },
+    {
+      "jour": "Mercredi",
+      "theme": "Presque, c'est déjà beaucoup",
+      "jeu": {
+        "id": "reflexes",
+        "pourquoi": "Un jeu où l'on rate parfois de très peu : parfait pour s'amuser du presque et retenter tout de suite."
+      },
+      "activite": {
+        "id": "PC-PERS-J3",
+        "titre": "Presque !",
+        "duree_min": 4,
+        "materiel": "3 paires de chaussettes roulées en boule, un panier ou un bac",
+        "script": "C'est le Senseï. Aujourd'hui, on joue à Presque. Roule des chaussettes en boule et pose un panier par terre. [P5] Mets-toi tout près du panier, à un petit pas. Lance une chaussette dedans. [P3] Dedans ? Bravo. Ramasse-la. [P3] Maintenant, fais un pas en arrière, en regardant derrière toi. [P2] Lance. [P3] Si elle tombe à côté, tu cries : presque ! Et tu réessaies. [P3] Encore un pas en arrière, doucement. [P2] Lance. [P3] Presque ? Super, ça veut dire que tu t'approches. Réessaie. [P3] Réessaie encore. [P3] Tu vois, presque, ce n'est pas raté. Presque, c'est le chemin. Fais encore un pas en arrière, si tu as de la place. [P2] Lance tes trois chaussettes, une par une. [P5] [P3] Combien d'essais as-tu faits aujourd'hui ? Beaucoup. Et chacun t'a aidé à viser mieux. Bravo pour ton entraînement.",
+        "petits": "Les petits restent près du panier et reculent d'un tout petit pas seulement quand ils en ont envie.",
+        "grands": "Les grands comptent leurs essais à chaque distance et cherchent leur meilleure façon de lancer : par-dessous, par-dessus, doucement.",
+        "a_deux": "Lancez à tour de rôle et criez presque ensemble à chaque raté, en riant."
+      },
+      "calme": {
+        "ref": "HR-003"
+      }
+    },
+    {
+      "jour": "Jeudi",
+      "theme": "Le mot magique : pas encore",
+      "jeu": {
+        "id": "hanoi",
+        "pourquoi": "La tour de Hanoï demande plusieurs essais avant de trouver la bonne suite de gestes : on ne sait pas encore, puis on y arrive."
+      },
+      "activite": {
+        "id": "PC-PERS-J4",
+        "titre": "Le pouvoir du pas encore",
+        "duree_min": 3,
+        "materiel": "aucun",
+        "script": "C'est le Senseï. Aujourd'hui, je te donne un mot magique. Ce mot, c'est : pas encore. Répète avec moi : pas encore. [P2] Quand tu dis je ne sais pas faire, tu ajoutes : pas encore. Essayons. Peux-tu toucher ton nez avec ta langue ? [P3] Non ? Alors on dit : pas encore. [P2] Peux-tu tenir sur un pied en comptant jusqu'à cinq ? Essaie, près d'un mur si tu veux. [P5] Tu as posé le pied ? On dit : pas encore. Et on réessaie. [P5] Bravo pour l'essai. Peux-tu taper dans tes mains en même temps que tu tapes du pied ? Essaie. [P5] C'est difficile ? Pas encore facile. Réessaie, plus lentement. [P5] Tu vois, chaque essai rapproche ton corps du but. Maintenant, pense à une chose que tu ne sais pas encore faire. Faire tes lacets, nager, lire un livre, siffler. [P3] Dis-la à voix haute, et termine par : pas encore. [P3] Super. Ce mot, tu peux le garder dans ta poche toute la semaine.",
+        "petits": "Les petits essaient seulement le pied levé et le tape-mains, et crient pas encore avec une grosse voix de géant.",
+        "grands": "Les grands trouvent trois choses qu'ils ne savent pas encore faire et choisissent un petit premier pas pour l'une d'elles.",
+        "a_deux": "Dites à votre tour une chose que vous ne savez pas encore faire, cela montre que les adultes apprennent aussi."
+      },
+      "calme": {
+        "ref": "MED-001"
+      }
+    },
+    {
+      "jour": "Vendredi",
+      "theme": "L'erreur, on en rit et on corrige",
+      "jeu": {
+        "id": "mastermind",
+        "pourquoi": "Au Mastermind, chaque mauvaise proposition donne un indice : les erreurs servent à trouver le code."
+      },
+      "activite": {
+        "id": "PC-PERS-J5",
+        "titre": "La mission erreur",
+        "duree_min": 3,
+        "materiel": "aucun",
+        "script": "C'est le Senseï. Aujourd'hui, tu as une mission très spéciale : faire des erreurs exprès. Oui, exprès. Première mission. Mets ta main sur ta tête, et dis : voici mon pied. [P3] Ha, erreur ! Corrige : mets ta main sur ton pied. [P3] Bravo, corrigé. Deuxième mission. Compte jusqu'à cinq, mais oublie un nombre exprès. [P5] Erreur repérée ! Maintenant compte jusqu'à cinq sans en oublier. [P5] Corrigé. Troisième mission. Fais le cri d'un chat, mais avec le cri d'une vache. [P3] Quelle drôle d'erreur ! Corrige : fais le vrai cri du chat. [P3] Dernière mission. Invente toi-même une erreur rigolote, montre-la, puis corrige-la. [P5] [P5] Bravo. Tu as vu ? Une erreur, ce n'est pas la fin. On la regarde, on peut en rire, et on corrige. Cette semaine, tu as reconstruit une tour, amélioré un avion, dit presque et pas encore. Tu t'es entraîné à recommencer. Bravo pour tous tes efforts.",
+        "petits": "Les petits font seulement les erreurs de la main sur la tête et du cri d'animal, puis inventent une erreur avec l'aide de l'adulte.",
+        "grands": "Les grands inventent trois erreurs rigolotes à faire deviner à quelqu'un, qui doit trouver la correction.",
+        "a_deux": "Faites vous aussi une erreur exprès et laissez votre enfant vous corriger, il adorera."
+      },
+      "calme": {
+        "script": "Assieds-toi tranquillement et pose tes mains sur ton ventre. Cette semaine, tu as essayé beaucoup de fois. Inspire doucement par le nez, et pense : j'ai essayé. [P3] Souffle doucement, et pense : j'ai recommencé. [P3] Inspire encore. [P3] Souffle encore, tout lentement. [P3] Une dernière fois, inspire. [P3] Et souffle, comme pour faire bouger une plume. [P3] Tu peux être fier de tous tes essais."
+      }
+    }
+  ],
+  "fiche": {
+    "titre": "Mon programme de la semaine — Persévérance",
+    "defi_bonus": "L'échelle des défis : dessinez une échelle de 4 barreaux sur une feuille. Sur chaque barreau, écrivez ou dessinez un défi un peu plus dur que le précédent (par exemple sauter à pieds joints 3 fois, puis 5 fois, puis sur un pied, puis en tournant). L'enfant colorie un barreau à chaque fois qu'il a essayé, réussi ou pas encore, et on fête chaque essai."
+  }
+}

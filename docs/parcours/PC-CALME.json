@@ -1,0 +1,118 @@
+{
+  "id": "PC-CALME",
+  "nom_enfant": "🛑 Le pouvoir de la statue",
+  "nom_parent": "Contrôle de soi",
+  "accroche_parent": "Cinq jours de jeux pour s'entraîner à attendre, à s'arrêter au signal et à laisser passer son tour, en bougeant et en riant. Dix minutes par jour, sans pression : se tromper fait partie du jeu.",
+  "pour_qui": "4-12 ans",
+  "jours": [
+    {
+      "jour": "Lundi",
+      "theme": "Attendre le bon signal",
+      "jeu": {
+        "id": "reflexes",
+        "pourquoi": "Pour toucher au bon moment, il faut d'abord attendre le vert sans appuyer trop tôt : une bonne entrée en matière pour une semaine sur l'attente."
+      },
+      "activite": {
+        "id": "PC-CALME-J1",
+        "titre": "Un, deux, trois, statue",
+        "duree_min": 3,
+        "materiel": "aucun",
+        "script": "Bonjour, c'est l'heure du jeu de la statue. Pose le téléphone et mets-toi debout. [P3] Tu vas marcher sur place, tout doucement, comme un chat. Quand je dis statue, tu t'arrêtes et tu ne bouges plus du tout. Prêt ? [P2] Un, deux, trois, tu marches. [P5] Statue ! [P3] Bravo, tu es une vraie statue. On recommence. Tu marches sur place. [P3] Un, deux, trois, statue ! [P3] Attention, maintenant je vais essayer de te piéger. Tu marches. [P3] Un, deux, trois, sta... tapis ! [P2] Si tu t'es arrêté, ce n'est pas grave, c'est drôle. On reprend. Tu marches. [P5] Un, deux, trois, statue ! [P5] Et maintenant, une statue rigolote. Tu marches en faisant une grimace. [P3] Statue ! Garde ta grimace. [P5] Super. Dernière fois, la statue la plus longue du monde. Tu marches. [P3] Statue ! [P5] Encore un peu. [P3] Tu as tenu. Tu peux bouger, secoue-toi comme un chien mouillé. [P3] Bravo, tu as le pouvoir de la statue.",
+        "petits": "Faire des statues courtes de deux ou trois secondes et applaudir à chaque arrêt.",
+        "grands": "Tenir la statue sur un pied ou dans une pose difficile choisie par l'enfant.",
+        "a_deux": "Le parent marche aussi sur place et celui qui bouge pendant la statue fait rire l'autre avec une grimace."
+      },
+      "calme": {
+        "ref": "MED-003"
+      }
+    },
+    {
+      "jour": "Mardi",
+      "theme": "S'arrêter quand la musique s'arrête",
+      "jeu": {
+        "id": "stroop",
+        "pourquoi": "Dire la couleur de l'encre et pas le mot écrit demande de freiner sa première idée : c'est le même petit frein qu'on va utiliser en dansant."
+      },
+      "activite": {
+        "id": "PC-CALME-J2",
+        "titre": "La statue musicale",
+        "duree_min": 3,
+        "materiel": "aucun",
+        "script": "Aujourd'hui, c'est toi qui fais la musique. Mets-toi debout, dans un endroit sans meuble autour de toi. [P3] Tu vas chanter la la la et danser sur place. Quand je dis stop, tu te tais et tu deviens une statue. Prêt ? Musique ! [P5] Stop ! [P3] Plus un bruit, plus un geste. Bravo. Musique ! Danse comme un robot. [P5] Stop ! [P3] Très bien. Musique ! Danse comme une méduse toute molle. [P5] Stop ! [P5] Attention, petit piège. Musique ! [P3] Stoc ! [P2] Stoc, ce n'est pas stop. Si tu t'es arrêté, rigole et continue de danser. [P3] Stop ! [P3] Bravo. Dernière danse, la plus folle. Musique ! [P5] Stop ! [P5] Tu es resté immobile, c'est magnifique. Maintenant, tu peux t'asseoir doucement par terre. [P3] Bravo, champion de la statue musicale.",
+        "petits": "Fredonner une chanson connue et tenir la statue juste le temps de compter jusqu'à trois.",
+        "grands": "Ajouter une règle : à chaque stop, la statue doit prendre la forme d'un animal différent.",
+        "a_deux": "Le parent chante la musique et décide lui-même des stops, puis on échange les rôles."
+      },
+      "calme": {
+        "ref": "MED-001"
+      }
+    },
+    {
+      "jour": "Mercredi",
+      "theme": "Accélérer, ralentir, s'arrêter",
+      "jeu": {
+        "id": "simon",
+        "pourquoi": "Au Simon, on regarde toute la suite jusqu'au bout avant d'appuyer : on s'entraîne à attendre son tour face à l'écran."
+      },
+      "activite": {
+        "id": "PC-CALME-J3",
+        "titre": "Le feu tricolore",
+        "duree_min": 3,
+        "materiel": "aucun",
+        "script": "Tu es une petite voiture et moi, je suis le feu. Mets-toi debout. [P3] Vert, tu marches sur place. Orange, tu marches au ralenti, tout doucement. Rouge, tu t'arrêtes. Prêt ? Vert ! [P5] Orange ! [P5] Rouge ! [P3] Bravo, la voiture est bien arrêtée. Vert ! [P3] Rouge ! [P3] Orange ! [P5] Vert ! [P3] Rouge ! [P3] Très bien. Maintenant, c'est plus difficile. On change les règles. Rouge, tu marches. Vert, tu t'arrêtes. C'est le monde à l'envers. Rouge ! [P3] Vert ! [P3] Orange ! [P5] Rouge ! [P3] Vert ! [P3] Si tu t'es trompé, c'est normal, c'est un jeu farceur. On fait un dernier tour. Rouge ! [P3] Vert ! [P5] Bravo. La voiture rentre au garage. Assieds-toi et coupe le moteur en soufflant doucement. [P3] Bravo, tu as conduit comme un chef.",
+        "petits": "Garder seulement vert et rouge, sans les règles à l'envers.",
+        "grands": "Ajouter un feu clignotant : tourner sur soi-même une fois, lentement, puis s'arrêter.",
+        "a_deux": "Le parent fait le feu en levant un objet de couleur, l'enfant conduit, puis on inverse."
+      },
+      "calme": {
+        "ref": "HR-003"
+      }
+    },
+    {
+      "jour": "Jeudi",
+      "theme": "Bouger seulement quand c'est le bon mot",
+      "jeu": {
+        "id": "grille",
+        "pourquoi": "Il faut laisser les cases s'allumer jusqu'au bout avant de toucher : attendre pour mieux réussir."
+      },
+      "activite": {
+        "id": "PC-CALME-J4",
+        "titre": "Le robot télécommandé",
+        "duree_min": 4,
+        "materiel": "aucun",
+        "script": "Aujourd'hui, tu es un robot. Mets-toi debout et prends une voix de robot. Dis bip bip. [P3] Un robot obéit seulement quand on dit le mot robot avant. Si je dis robot, lève un bras, tu le fais. Si je dis seulement lève un bras, tu ne bouges pas. Prêt ? Robot, lève un bras. [P3] Robot, baisse le bras. [P3] Robot, tourne la tête à droite. [P3] Tourne la tête à gauche. [P3] Oh, tu n'as pas bougé ? Bravo, je n'avais pas dit robot. Robot, marche sur place tout doucement. [P5] Robot, tape dans tes mains. [P3] Tape sur ta tête. [P3] Si tu as tapé, ce n'est pas grave, le robot fait une petite réparation. Dis bip bip. [P2] On continue. Robot, accroupis-toi. [P3] Robot, relève-toi très lentement. [P5] Saute ! [P3] Pas de robot, pas de saut. Robot, mets les mains sur les hanches. [P3] Robot, éteins-toi. Ferme les yeux et ne bouge plus. [P5] Robot, rallume-toi. [P2] Bravo, tu es un robot très bien programmé.",
+        "petits": "Donner des ordres très simples, un seul geste à la fois, et ne tendre qu'un piège sur trois.",
+        "grands": "Enchaîner deux ordres dans la même phrase, par exemple robot, touche ton nez puis ton genou.",
+        "a_deux": "L'enfant devient la télécommande et essaie de piéger le parent robot."
+      },
+      "calme": {
+        "script": "Le robot se repose. Assieds-toi confortablement. [P2] Pose tes mains sur ton ventre. [P2] Inspire par le nez, ton ventre se gonfle comme un ballon. [P3] Souffle doucement par la bouche, le ballon se dégonfle. [P3] Encore une fois. Inspire. [P3] Souffle. [P3] Une dernière fois, très lentement. Inspire. [P3] Souffle. [P5] Tes batteries sont rechargées. Bravo."
+      }
+    },
+    {
+      "jour": "Vendredi",
+      "theme": "Faire l'inverse et attendre son tour",
+      "jeu": {
+        "id": "memory",
+        "pourquoi": "On retourne deux cartes, puis on attend avant de rejouer : à deux, c'est parfait pour s'entraîner à laisser jouer l'autre."
+      },
+      "activite": {
+        "id": "PC-CALME-J5",
+        "titre": "Le jeu de l'inverse",
+        "duree_min": 4,
+        "materiel": "aucun",
+        "script": "Dernier jeu de la semaine, le plus farceur. Mets-toi debout. [P3] Je dis un mot et tu fais le contraire. Mais attention, tu attends que je dise à toi avant de bouger. Essayons. Je dis haut. [P2] À toi. [P3] Bravo, tu as mis les mains en bas. Je dis grand. [P2] À toi. [P3] Tu t'es fait tout petit. Je dis vite. [P2] À toi. [P5] Tu bouges au ralenti, parfait. Je dis bruit. [P2] À toi. [P3] Chut, tu es tout silencieux. Je dis ouvre les bras. [P2] Attends. [P2] Encore un peu. [P2] À toi. [P3] Tu as attendu ton tour, bravo. Si tu as bougé trop tôt, ce n'est pas grave, on recommence. Je dis assis. [P2] À toi. [P3] Debout, bravo. Je dis triste. [P2] À toi. [P3] Quel grand sourire. Je dis bouge. [P2] À toi. [P5] Tu es une statue. Bravo. Cette semaine, tu as appris à attendre, à t'arrêter et à faire l'inverse. Tu as le pouvoir de la statue.",
+        "petits": "Utiliser seulement des contraires faciles comme haut et bas, grand et petit, avec un à toi tout de suite.",
+        "grands": "Allonger l'attente avant le à toi et proposer des contraires plus fins comme lourd et léger ou chaud et froid.",
+        "a_deux": "Le parent et l'enfant donnent les mots chacun leur tour, et chacun attend le à toi de l'autre."
+      },
+      "calme": {
+        "ref": "HR-005"
+      }
+    }
+  ],
+  "fiche": {
+    "titre": "Mon programme de la semaine — Le pouvoir de la statue",
+    "defi_bonus": "Pendant un repas du week-end, jouer à la statue surprise : quand quelqu'un dit statue, toute la famille s'arrête trois secondes, puis tout le monde reprend en riant."
+  }
+}

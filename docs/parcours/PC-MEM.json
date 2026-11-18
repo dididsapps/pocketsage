@@ -1,0 +1,118 @@
+{
+  "id": "PC-MEM",
+  "nom_enfant": "🧠 Super-Mémoire",
+  "nom_parent": "Mémoire",
+  "accroche_parent": "Une semaine de petits jeux pour s'entraîner à retenir des objets, des mots, des gestes et un chemin, surtout loin de l'écran. 10 minutes par jour, dans la bonne humeur : oublier fait partie du jeu, on rit et on recommence.",
+  "pour_qui": "4-12 ans",
+  "jours": [
+    {
+      "jour": "Lundi",
+      "theme": "Retenir ce que l'on voit",
+      "jeu": {
+        "id": "memory",
+        "pourquoi": "Retrouver des paires, c'est jouer à se souvenir de l'endroit où l'on a vu une image : une bonne mise en route avant le jeu de Kim."
+      },
+      "activite": {
+        "id": "PC-MEM-J1",
+        "titre": "Le jeu de Kim",
+        "duree_min": 3,
+        "materiel": "5 objets de la maison pas trop petits (cuillère, chaussette, crayon, livre, peluche)",
+        "script": "Bonjour, Super-Mémoire ! Aujourd'hui, on joue au jeu de Kim. Va chercher cinq objets dans ta chambre ou ton salon. Par exemple une chaussette, un crayon, une peluche, un livre et une cuillère. [P5] [P5] [P5] Pose-les devant toi, bien alignés. [P3] Maintenant, regarde-les très fort. Dis le nom de chaque objet à voix haute. [P5] Encore une fois, en les touchant du doigt. [P5] Super. Maintenant, tourne-toi, dos aux objets. Pas de triche ! [P3] Dis-moi tous les objets dont tu te souviens. Compte sur tes doigts. [P5] [P3] Retourne-toi et vérifie. [P3] Tu les avais tous ? Bravo ! Il en manquait un ? Pas grave, c'est drôle, on recommence. Change un objet de place, regarde encore, tourne-toi, et redis la liste. [P5] [P5] Tu as une mémoire de champion !",
+        "petits": "Avec 3 objets seulement, et on peut les nommer ensemble avant de se retourner.",
+        "grands": "Avec 7 ou 8 objets, et redis-les dans l'ordre où ils sont posés, de gauche à droite.",
+        "a_deux": "Pendant que l'enfant cache ses yeux avec ses mains, le parent retire un objet : lequel a disparu ?"
+      },
+      "calme": {
+        "ref": "MED-001"
+      }
+    },
+    {
+      "jour": "Mardi",
+      "theme": "Retenir une liste de mots",
+      "jeu": {
+        "id": "simon",
+        "pourquoi": "Simon demande de retenir une suite qui s'allonge, exactement comme la valise de l'activité du jour."
+      },
+      "activite": {
+        "id": "PC-MEM-J2",
+        "titre": "La valise magique",
+        "duree_min": 3,
+        "materiel": "aucun",
+        "script": "Super-Mémoire, on part en voyage ! Mais d'abord, il faut faire la valise magique. Je commence. Dans ma valise, je mets un maillot de bain. [P2] À toi de répéter : dans ma valise, je mets un maillot de bain. [P3] Bravo. J'ajoute quelque chose. Dans ma valise, je mets un maillot de bain et une brosse à dents. Répète ! [P5] Encore un. Dans ma valise, je mets un maillot de bain, une brosse à dents et un ballon. Répète tout ! [P5] Maintenant, c'est toi qui ajoutes un objet rigolo. Un éléphant ? Un gâteau géant ? Redis toute la valise avec ton objet à la fin. [P5] [P3] Et encore un objet à toi ! Redis toute la valise. [P5] [P5] Tu as oublié un objet ? La valise est trop pleine, ce n'est pas grave. On la vide et on recommence ! [P3] Bravo, ta valise est prête pour le voyage !",
+        "petits": "On s'arrête à 3 objets, et on peut mimer chaque objet pour mieux s'en souvenir.",
+        "grands": "On continue jusqu'à 8 objets, puis on essaie de redire la valise en partant du dernier objet.",
+        "a_deux": "Chacun ajoute un objet à tour de rôle et redit toute la valise : le premier qui oublie choisit le prochain objet rigolo."
+      },
+      "calme": {
+        "ref": "HR-003"
+      }
+    },
+    {
+      "jour": "Mercredi",
+      "theme": "Retenir des gestes",
+      "jeu": {
+        "id": "grille",
+        "pourquoi": "Retrouver les cases allumées, c'est retenir des positions : aujourd'hui, on fera pareil avec son corps."
+      },
+      "activite": {
+        "id": "PC-MEM-J3",
+        "titre": "Le miroir des gestes",
+        "duree_min": 3,
+        "materiel": "aucun",
+        "script": "Lève-toi, Super-Mémoire ! Aujourd'hui, tu deviens le miroir des gestes. Écoute bien et fais comme moi. Geste numéro un : touche ta tête. [P2] Geste numéro deux : tape dans tes mains. [P2] Maintenant, fais les deux à la suite : tête, mains. [P3] Bravo ! Geste numéro trois : touche tes genoux. [P2] Fais les trois : tête, mains, genoux. [P3] Geste numéro quatre : saute une fois, sur place, doucement. [P2] Maintenant, sans que je les dise, fais les quatre gestes dans l'ordre. [P5] Bravo ! On ajoute un dernier geste : fais une grimace rigolote. [P2] Fais toute la suite, du début jusqu'à la grimace. [P5] [P3] Tu t'es trompé ? Ça arrive même aux miroirs ! On recommence depuis la tête. [P5] Super, tu es un miroir magique !",
+        "petits": "On garde 3 gestes, et on dit le nom du geste en le faisant.",
+        "grands": "Après les 5 gestes, refais toute la suite à l'envers, de la grimace jusqu'à la tête.",
+        "a_deux": "L'enfant invente à son tour une suite de gestes que le parent doit répéter sans se tromper."
+      },
+      "calme": {
+        "script": "Assieds-toi tranquillement. Pose tes mains sur ton ventre. [P2] Inspire doucement par le nez, ton ventre se gonfle comme un ballon. [P3] Souffle lentement par la bouche, le ballon se dégonfle. [P3] Encore une fois : inspire. [P3] Souffle. [P3] Une dernière fois, inspire. [P3] Et souffle tout doucement. [P3] Tes gestes se reposent. Bravo, Super-Mémoire."
+      }
+    },
+    {
+      "jour": "Jeudi",
+      "theme": "Retenir et raconter",
+      "jeu": {
+        "id": "mastermind",
+        "pourquoi": "Pour trouver le code, il faut se souvenir de ses essais précédents : un bon entraînement avant la liste de courses."
+      },
+      "activite": {
+        "id": "PC-MEM-J4",
+        "titre": "La liste de courses",
+        "duree_min": 3,
+        "materiel": "aucun (papier et crayon facultatifs pour les grands)",
+        "script": "Super-Mémoire, on va faire les courses au magasin imaginaire. Mais attention, pas de papier : la liste, on la garde dans la tête ! Écoute bien. Il faut acheter des pommes, du pain, du lait et des bananes. [P2] Pour bien retenir, imagine chaque chose. Des pommes rouges et brillantes. [P2] Un gros pain tout chaud. [P2] Une bouteille de lait. [P2] Des bananes jaunes. [P2] Maintenant, marche sur place, tu vas au magasin. [P5] Tu es arrivé ! Dis-moi tout ce qu'il faut acheter. [P5] Bravo ! Tu as oublié quelque chose ? Pas grave, on relit la liste dans sa tête : pommes, pain, lait, bananes. [P3] Ah, j'ai oublié ! Il faut aussi du fromage. Redis toute la liste avec le fromage. [P5] Super, ton panier est plein !",
+        "petits": "La liste fait 3 choses, et l'enfant peut les mimer : croquer la pomme, boire le lait.",
+        "grands": "La liste fait 6 choses, puis redis-la à l'envers, de la dernière à la première, et écris-la ensuite pour vérifier.",
+        "a_deux": "Le parent joue le marchand : l'enfant lui demande toute la liste, et le marchand fait semblant de donner chaque chose."
+      },
+      "calme": {
+        "ref": "MED-002"
+      }
+    },
+    {
+      "jour": "Vendredi",
+      "theme": "Retenir un chemin",
+      "jeu": {
+        "id": "laby",
+        "pourquoi": "Le labyrinthe fait chercher et retenir un trajet : juste avant de mémoriser un vrai chemin dans la maison."
+      },
+      "activite": {
+        "id": "PC-MEM-J5",
+        "titre": "Le chemin secret",
+        "duree_min": 4,
+        "materiel": "un coussin ou une peluche",
+        "script": "Super-Mémoire, dernière mission de la semaine : le chemin secret ! Prends un coussin ou une peluche. C'est le trésor. [P3] Écoute le chemin, sans bouger. En marchant doucement, tu vas aller jusqu'à la porte de la pièce. [P2] Ensuite, tu touches une chaise ou un fauteuil. [P2] Puis tu poses le trésor près d'une fenêtre ou d'un mur. [P2] Et tu reviens à ta place. [P2] Redis le chemin à voix haute : porte, chaise, trésor, retour. [P5] Bravo ! Maintenant, fais le chemin en marchant doucement, sans courir. [P5] [P5] [P5] Tu es revenu ? Super ! Maintenant, le chemin à l'envers : va chercher le trésor, touche la chaise, va à la porte, et reviens. Doucement ! [P5] [P5] [P5] Tu t'es trompé de chemin ? C'est ça, l'aventure ! On recommence. Bravo, tu as une Super-Mémoire !",
+        "petits": "Le chemin a 2 étapes seulement : la porte, puis le trésor posé sur le lit ou le canapé.",
+        "grands": "Le chemin a 5 étapes ou plus, et c'est l'enfant qui invente un nouveau chemin à faire retenir.",
+        "a_deux": "L'enfant invente un chemin secret et le dit une seule fois : le parent doit le suivre sans se tromper."
+      },
+      "calme": {
+        "ref": "HR-004"
+      }
+    }
+  ],
+  "fiche": {
+    "titre": "Mon programme de la semaine — Super-Mémoire",
+    "defi_bonus": "L'histoire à l'envers : ce week-end, raconte ta journée ou ton histoire préférée en partant de la fin jusqu'au début, à quelqu'un de ta famille."
+  }
+}
