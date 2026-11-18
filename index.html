@@ -355,6 +355,10 @@ body.nuit-on .nb .nl{color:rgba(243,233,214,.6)}
 #nuit-noir{position:fixed;inset:0;background:#000;z-index:9999;display:flex;align-items:flex-end;justify-content:center;padding-bottom:calc(40px + env(safe-area-inset-bottom,0px));cursor:pointer}
 #nuit-noir span{color:rgba(243,233,214,.18);font-size:13px;font-weight:600;font-family:var(--f)}
 /* 🌙 Veilleuse : lueur chaude (sans bleu) qui suit la voix, puis s'éteint très lentement */
+/* Surlignage du mot lu (GS→CE2 et langues) */
+.hlw{border-radius:4px;transition:background .12s,box-shadow .12s}
+.hlw.hl-on{background:#FFE27A;color:#3A2A00;box-shadow:0 0 0 2px #FFE27A}
+#scr-reader .hlw.hl-on{background:rgba(242,201,138,.38);color:#fff;box-shadow:0 0 0 2px rgba(242,201,138,.38)}
 #veilleuse{position:fixed;inset:0;background:#000;z-index:9999;overflow:hidden;cursor:pointer;touch-action:manipulation}
 #veilleuse .vl-glow{position:absolute;inset:-25%;filter:blur(28px);will-change:background,opacity}
 #veilleuse .vl-ui{position:absolute;left:0;right:0;bottom:0;padding:18px 16px calc(26px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;align-items:center;gap:10px;transition:opacity .6s;font-family:var(--f)}
@@ -931,7 +935,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=75">
+<link rel="stylesheet" href="css/jeux.css?v=76">
 </head>
 <body>
 
@@ -1471,11 +1475,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=75"></script>
-<script src="js/jeux-cerveau.js?v=75"></script>
-<script src="js/coach-voix.js?v=75"></script>
-<script src="js/monde-interieur.js?v=75"></script>
-<script src="js/monde-plus.js?v=75"></script>
+<script src="js/jeux.js?v=76"></script>
+<script src="js/jeux-cerveau.js?v=76"></script>
+<script src="js/coach-voix.js?v=76"></script>
+<script src="js/monde-interieur.js?v=76"></script>
+<script src="js/monde-plus.js?v=76"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -10629,6 +10633,8 @@ function elPlayNuit(id,txt){
   const lang=(APP&&APP.lang&&APP.lang!=='FR')?`_${APP.lang}`:"";const url=`${AUDIO_CDN}/audio/nuit/${id}${lang}.mp3`;
   console.log('[Nuit] R2',url,'vitesse',_nuitRate);
   _ttsPlaying=true;
+  if(_hlWanted(APP&&APP.lang)){const rc=document.getElementById('reader-c');if(rc&&rc.dataset.item===id)_hlGet(`nuit/${id}${lang}`).then(st=>{if(!st||rc.dataset.item!==id)return;
+    _hlStart([rc.querySelector('.reader-tit'),rc.querySelector('.reader-txt')],st,()=>{const a=_nuitAudio;return a&&!a.ended&&(a.src||'').indexOf('/'+id)>=0&&(_ttsPlaying||!a.paused)?a.currentTime:null;},true);});}
   _nuitPlay(url,()=>{_nuitCache[id]='hit';_ttsPlaying=false;_nuitResetPlayBtn();},e=>{
     _nuitCache[id]='miss';
     console.warn('[Nuit] R2 miss',id,'→ API temps réel');
@@ -10707,7 +10713,7 @@ function ttsSpeak(txt,lang){
 }
 
 function ttsStop(){
-  _atxTok++;
+  _atxTok++;try{_hlStop();}catch(e){}
   try{_prStop();}catch(e){}
   _ttsPlaying=false;
   _ttsQueue=[];
@@ -10744,11 +10750,33 @@ function _atxFind(man,txt,lang){
   for(const f of order){const k=man&&man[f]&&man[f][h];if(k)return f+'/'+k;}
   return null;
 }
+// ── Surlignage du mot prononcé : heure de chaque mot calculée à l'avance (tools/aligner.py → audio/align/…) ──
+const _hlAl=new Map(),_HL_RE=/[\p{L}\p{N}]/u;let _hlRun=null;
+function _hlWanted(lang){try{const L=String(lang||'FR').slice(0,2).toUpperCase();if(L!=='FR')return true;const p=P();return !p||ageNum(p.age)<=8;}catch(e){return false;}}
+function _hlGet(k){if(!_hlAl.has(k))_hlAl.set(k,fetch(`${AUDIO_CDN}/audio/align/${k}.json`).then(r=>r.ok?r.json():null).then(j=>j&&Array.isArray(j.s)?j.s:null).catch(()=>null));return _hlAl.get(k);}
+function _hlWrap(el){if(el._hlw&&el._hlw.length&&el.contains(el._hlw[0]))return el._hlw;const out=[];
+  const walk=n=>{if(n.nodeType===3){const parts=n.textContent.split(/(\s+)/);if(!parts.some(x=>_HL_RE.test(x)))return;const fr=document.createDocumentFragment();
+      parts.forEach(x=>{if(x&&!/\s/.test(x)&&_HL_RE.test(x)){const sp=document.createElement('span');sp.className='hlw';sp.textContent=x;fr.appendChild(sp);out.push(sp);}else if(x)fr.appendChild(document.createTextNode(x));});
+      n.parentNode.replaceChild(fr,n);}
+    else if(n.nodeType===1&&!/^(BUTTON|SCRIPT|STYLE|INPUT|SVG|svg)$/.test(n.tagName)&&!(n.classList&&n.classList.contains('hlw')))[...n.childNodes].forEach(walk);};
+  walk(el);el._hlw=out;return out;}
+function _hlStop(){if(_hlRun){cancelAnimationFrame(_hlRun.raf);_hlRun.spans.forEach(x=>x.classList.remove('hl-on'));_hlRun=null;}}
+function _hlStart(els,st,clock,scroll){_hlStop();const spans=[].concat(...els.filter(Boolean).map(_hlWrap));if(!spans.length||!st||!st.length)return;
+  const n=spans.length,m=st.length,map=i=>m===n?i:Math.min(n-1,Math.round(i*(n-1)/Math.max(1,m-1)));let cur=-1;const run={spans,raf:0};_hlRun=run;
+  const loop=()=>{if(_hlRun!==run)return;const t=clock();if(t==null){_hlStop();return;}
+    let lo=0,hi=m-1,i=-1;while(lo<=hi){const md=(lo+hi)>>1;if(st[md]<=t+.06){i=md;lo=md+1;}else hi=md-1;}
+    const j=i<0?-1:map(i);if(j!==cur){if(cur>=0)spans[cur].classList.remove('hl-on');if(j>=0){spans[j].classList.add('hl-on');
+      if(scroll){const r=spans[j].getBoundingClientRect();if(r.top<90||r.bottom>window.innerHeight-170)spans[j].scrollIntoView({block:'center',behavior:'smooth'});}}cur=j;}
+    run.raf=requestAnimationFrame(loop);};run.raf=requestAnimationFrame(loop);}
+// retrouve à l'écran l'élément qui affiche ce texte (question, choix, consigne…)
+function _hlFind(txt){const n=_atxNorm(txt);if(!n)return null;const root=document.querySelector('.scr.on')||document.body;let best=null;
+  root.querySelectorAll('div,p,span,h1,h2,h3,button,label,li').forEach(e=>{if(e.classList.contains('hlw'))return;const t=_atxNorm(e.textContent);if(t.includes(n)&&t.length<=n.length+12){if(!best||best.contains(e))best=e;}});return best;}
 function _atxPlay(key,txt,lang){
   ttsStop();const tok=++_atxTok;_ttsPlaying=true;
   const ac=getAC();if(!ac){ttsSpeak(txt,lang);return;}
   const go=buf=>{if(tok!==_atxTok)return;_prStop();try{if(ac.state!=='running')ac.resume();}catch(e){}const src=ac.createBufferSource();src.buffer=buf;src.connect(ac.destination);
-    src.onended=()=>{if(tok===_atxTok)_ttsPlaying=false;};src.start(0);_prSrc=src;};
+    src.onended=()=>{if(tok===_atxTok)_ttsPlaying=false;};src.start(0);_prSrc=src;
+    if(_hlWanted(lang)){const t0=ac.currentTime,el=_hlFind(txt);if(el)_hlGet(key).then(st=>{if(tok!==_atxTok||!st)return;_hlStart([el],st,()=>(tok===_atxTok&&_ttsPlaying)?ac.currentTime-t0:null,false);});}};
   if(_atxBuf.has(key)){go(_atxBuf.get(key));return;}
   fetch(`${AUDIO_CDN}/audio/${key}.mp3`).then(r=>{if(!r.ok)throw new Error(r.status);return r.arrayBuffer();})
     .then(b=>ac.decodeAudioData(b)).then(buf=>{if(_atxBuf.size>40)_atxBuf.delete(_atxBuf.keys().next().value);_atxBuf.set(key,buf);go(buf);})
@@ -16050,7 +16078,7 @@ function openReader(item,type){
   const isMed=type==='med';
   document.getElementById('reader-htit').textContent=isMed?'🧘 Méditation':isAudio?'🎧 Histoire respirée':'📖 Histoire';
   document.getElementById('reader-back').onclick=()=>{ttsStop();openNuit();};
-  const c=document.getElementById('reader-c');c.innerHTML='';
+  const c=document.getElementById('reader-c');c.innerHTML='';c.dataset.item=item.id||'';
   const p=P();const autoTTS=p&&ageNum(p.age)<=8;
 
   // Header spécial histoires audio
@@ -20027,8 +20055,8 @@ window.transferCoinsToWorld=function(n){
 
 })();
 </script>
-<script src="js/questions-plus-data.js?v=75"></script>
-<script src="js/questions-plus.js?v=75"></script>
+<script src="js/questions-plus-data.js?v=76"></script>
+<script src="js/questions-plus.js?v=76"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
