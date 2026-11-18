@@ -9,6 +9,15 @@ Option sans copier-coller : donne ce même bloc à **Codex** (onglet Code de Cha
 GitHub pocketsage) en ajoutant « écris chaque JSON dans docs/contenu/gpt/fiches_revision/reponses/ ».
 Il produit tous les fichiers d'un coup ; Claude n'est pas connecté à GPT, il relit juste les fichiers.
 
+## Variante « fais tout seul, je télécharge à la fin »
+Ajoute ce paragraphe tout en haut du bloc ci-dessous :
+
+> MODE AUTONOME : ne m'attends pas entre les matières. Fais-les une par une en prenant ton temps et en
+> vérifiant chacune. Enregistre chaque JSON dans un fichier (outil Python / fichiers) sous son nom
+> REV-XX-YY.json. Si tu dois t'arrêter, dis seulement « je continue ? » et reprends où tu en étais.
+> À la fin, vérifie que les 70 fichiers sont valides et donne-moi UN fichier fiches_revision.zip à télécharger.
+> (Codex : écris les fichiers dans docs/contenu/gpt/fiches_revision/reponses/ et ouvre une pull request.)
+
 ```
 Tu es un professeur expérimenté et un auteur de manuels scolaires. Tu vas écrire les FICHES DE RÉVISION
 de l'application éducative PocketSage (lues sur téléphone, lues à voix haute, imprimées),
