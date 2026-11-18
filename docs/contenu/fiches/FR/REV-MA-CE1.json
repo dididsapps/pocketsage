@@ -1,0 +1,328 @@
+{
+ "classe": "CE1",
+ "niveau_appli": "CE1",
+ "age": "7-8 ans",
+ "matiere": "Mathématiques",
+ "code": "MA",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Nombres, calcul et résolution de problèmes",
+   "titre": "Centaines, dizaines, unités",
+   "emoji": "🔢",
+   "en_une_phrase": "Une centaine vaut dix dizaines ou cent unités.",
+   "comprendre": "Tu sais grouper dix unités en une dizaine. En regroupant dix dizaines, tu obtiens une centaine. Ces groupes aident à lire les nombres.",
+   "essentiel": [
+    "Une centaine vaut 100 unités.",
+    "Une dizaine vaut 10 unités.",
+    "La position d’un chiffre indique sa valeur."
+   ],
+   "image_mentale": "Imagine une grande boîte contenant dix paquets de dix.",
+   "regle_ou_methode": "Lis les centaines, puis les dizaines et les unités.",
+   "exemples": [
+    "Dans 236, 2 indique deux centaines : 200. Le 3 indique trois dizaines : 30. Le 6 indique six unités.",
+    "Dans 104, il y a une centaine, aucune dizaine et quatre unités."
+   ],
+   "piege": "Dans 236, le 3 vaut trente, pas trois.",
+   "astuce_memoire": "Centaines, dizaines, unités : chaque place compte.",
+   "quiz": [
+    {
+     "q": "Combien d’unités dans une centaine ?",
+     "choix": [
+      "10",
+      "100",
+      "1"
+     ],
+     "rep": "100",
+     "expl": "Une centaine vaut cent unités."
+    },
+    {
+     "q": "Quel est le chiffre des dizaines dans 236 ?",
+     "choix": [
+      "6",
+      "2",
+      "3"
+     ],
+     "rep": "3",
+     "expl": "Le chiffre des dizaines est 3."
+    },
+    {
+     "q": "Deux centaines, quatre dizaines et cinq unités forment quel nombre ?",
+     "choix": [
+      "245",
+      "254",
+      "425"
+     ],
+     "rep": "245",
+     "expl": "200 et 40 et 5 forment 245."
+    }
+   ],
+   "id": "REV-MA-CE1-01"
+  },
+  {
+   "axe": "Nombres, calcul et résolution de problèmes",
+   "titre": "Partager en deux parts égales",
+   "emoji": "🍰",
+   "en_une_phrase": "La moitié est une des deux parts égales d’un tout.",
+   "comprendre": "Tu as déjà partagé un goûter. Pour faire deux moitiés, les parts doivent être égales. Chaque part représente alors la moitié du tout.",
+   "essentiel": [
+    "On partage le tout en deux parts égales.",
+    "Chaque part est une moitié.",
+    "Deux moitiés forment le tout."
+   ],
+   "image_mentale": "Imagine une pomme coupée en deux parts égales.",
+   "regle_ou_methode": "Vérifie que les deux parts sont de même taille.",
+   "exemples": [
+    "Une bande est partagée en deux morceaux égaux. Un morceau est une moitié. Deux morceaux reconstituent la bande.",
+    "La moitié de 8 biscuits est 4 biscuits : 4 et 4 font 8."
+   ],
+   "piege": "Deux morceaux inégaux ne sont pas deux moitiés.",
+   "astuce_memoire": "Deux parts égales, une moitié chacune.",
+   "quiz": [
+    {
+     "q": "Combien de moitiés forment un tout ?",
+     "choix": [
+      "Trois",
+      "Quatre",
+      "Deux"
+     ],
+     "rep": "Deux",
+     "expl": "Deux moitiés égales reconstituent le tout."
+    },
+    {
+     "q": "Quelle est la moitié de 8 ?",
+     "choix": [
+      "4",
+      "2",
+      "6"
+     ],
+     "rep": "4",
+     "expl": "Quatre et quatre font huit."
+    },
+    {
+     "q": "Une bande est partagée en deux parties inégales. Chacune est-elle une moitié ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement la grande"
+     ],
+     "rep": "Non",
+     "expl": "Les deux parts doivent être égales."
+    }
+   ],
+   "id": "REV-MA-CE1-02"
+  },
+  {
+   "axe": "Nombres, calcul et résolution de problèmes",
+   "titre": "Multiplier par groupes égaux",
+   "emoji": "✖️",
+   "en_une_phrase": "Une multiplication donne le total de plusieurs groupes égaux.",
+   "comprendre": "Tu sais additionner plusieurs quantités. Quand les groupes sont égaux, la multiplication écrit cette addition plus simplement.",
+   "essentiel": [
+    "Les groupes doivent avoir la même quantité.",
+    "Trois groupes de 2 font 2 + 2 + 2.",
+    "On peut écrire 3 × 2 = 6."
+   ],
+   "image_mentale": "Imagine trois assiettes avec deux biscuits chacune.",
+   "regle_ou_methode": "Compte les groupes et la quantité de chaque groupe.",
+   "exemples": [
+    "Il y a 3 sachets de 2 billes. Additionne 2 + 2 + 2 = 6. Donc 3 × 2 = 6.",
+    "Deux paquets de 5 crayons font 10 crayons."
+   ],
+   "piege": "Ne confonds pas le nombre de groupes et le total des objets.",
+   "astuce_memoire": "Même quantité répétée : pense aux groupes.",
+   "quiz": [
+    {
+     "q": "Trois groupes de 2 font combien ?",
+     "choix": [
+      "6",
+      "5",
+      "3"
+     ],
+     "rep": "6",
+     "expl": "Deux plus deux plus deux font six."
+    },
+    {
+     "q": "Deux paquets de 5 crayons contiennent combien de crayons ?",
+     "choix": [
+      "7",
+      "10",
+      "5"
+     ],
+     "rep": "10",
+     "expl": "Cinq plus cinq font dix."
+    },
+    {
+     "q": "Quatre assiettes portent chacune 2 biscuits. Combien de biscuits ?",
+     "choix": [
+      "6",
+      "4",
+      "8"
+     ],
+     "rep": "8",
+     "expl": "Quatre groupes de deux font huit."
+    }
+   ],
+   "id": "REV-MA-CE1-03"
+  },
+  {
+   "axe": "Nombres, calcul et résolution de problèmes",
+   "titre": "Résoudre un problème",
+   "emoji": "🧩",
+   "en_une_phrase": "Pour résoudre un problème, cherche ce que tu connais et ce que tu dois trouver.",
+   "comprendre": "Tu sais compter des objets dans un jeu. Dans un problème, une petite histoire décrit une situation. Un dessin peut aider à choisir le calcul.",
+   "essentiel": [
+    "Lis ou écoute l’histoire.",
+    "Repère les quantités et la question.",
+    "Choisis une opération et vérifie la réponse."
+   ],
+   "image_mentale": "Imagine des jetons pour représenter les objets.",
+   "regle_ou_methode": "Dessine la situation, calcule et réponds avec une phrase.",
+   "exemples": [
+    "Lila a 7 billes. Elle en reçoit 3. Il faut réunir : 7 + 3 = 10. Elle a 10 billes.",
+    "Sam a 9 billes et en donne 2 : il lui reste 7 billes."
+   ],
+   "piege": "Ne choisis pas une opération sans comprendre l’histoire.",
+   "astuce_memoire": "Je comprends, je représente, je calcule, je réponds.",
+   "quiz": [
+    {
+     "q": "Sept billes et trois billes font combien ?",
+     "choix": [
+      "4",
+      "10",
+      "7"
+     ],
+     "rep": "10",
+     "expl": "Sept plus trois font dix."
+    },
+    {
+     "q": "Neuf billes, deux données : combien reste-t-il ?",
+     "choix": [
+      "11",
+      "2",
+      "7"
+     ],
+     "rep": "7",
+     "expl": "Neuf moins deux font sept."
+    },
+    {
+     "q": "Tu as 8 cartes et tu en reçois 2. Quel calcul convient ?",
+     "choix": [
+      "8 + 2",
+      "8 − 2",
+      "8 − 8"
+     ],
+     "rep": "8 + 2",
+     "expl": "Recevoir deux cartes ajoute deux cartes."
+    }
+   ],
+   "id": "REV-MA-CE1-04"
+  },
+  {
+   "axe": "Grandeurs et mesures",
+   "titre": "Mesurer en mètres et centimètres",
+   "emoji": "📏",
+   "en_une_phrase": "Un mètre vaut cent centimètres.",
+   "comprendre": "Tu as déjà mesuré de petits objets avec une règle. Pour une longueur plus grande, le mètre est pratique. Le mètre et le centimètre mesurent la même grandeur.",
+   "essentiel": [
+    "Le centimètre s’écrit cm.",
+    "Le mètre s’écrit m.",
+    "1 m correspond à 100 cm."
+   ],
+   "image_mentale": "Imagine une bande d’un mètre découpée en cent petits centimètres.",
+   "regle_ou_methode": "Choisis l’unité adaptée et aligne le zéro sur le départ.",
+   "exemples": [
+    "Une bande mesure 1 m. Elle mesure aussi 100 cm. Les deux écritures décrivent la même longueur.",
+    "Une table peut mesurer environ 1 m de long."
+   ],
+   "piege": "1 m n’est pas 10 cm : il vaut 100 cm.",
+   "astuce_memoire": "Un mètre, cent centimètres.",
+   "quiz": [
+    {
+     "q": "Un mètre vaut combien de centimètres ?",
+     "choix": [
+      "10 cm",
+      "1 cm",
+      "100 cm"
+     ],
+     "rep": "100 cm",
+     "expl": "Un mètre correspond à cent centimètres."
+    },
+    {
+     "q": "Quelle unité convient pour une petite gomme ?",
+     "choix": [
+      "Le centimètre",
+      "Le jour",
+      "L’euro"
+     ],
+     "rep": "Le centimètre",
+     "expl": "Le centimètre convient à une petite longueur."
+    },
+    {
+     "q": "Une bande mesure 100 cm. Quelle autre écriture convient ?",
+     "choix": [
+      "10 m",
+      "1 m",
+      "1 cm"
+     ],
+     "rep": "1 m",
+     "expl": "Cent centimètres correspondent à un mètre."
+    }
+   ],
+   "id": "REV-MA-CE1-05"
+  },
+  {
+   "axe": "Espace et géométrie",
+   "titre": "L’angle droit",
+   "emoji": "📐",
+   "en_une_phrase": "Un angle droit a la même ouverture que le coin d’un carré.",
+   "comprendre": "Tu connais les coins d’une feuille rectangulaire. Ces coins sont des angles droits. Une équerre aide à vérifier une figure.",
+   "essentiel": [
+    "Un carré a quatre angles droits.",
+    "Une équerre possède un angle droit.",
+    "La longueur des côtés ne change pas l’ouverture."
+   ],
+   "image_mentale": "Imagine le coin d’une feuille posé sur un coin de figure.",
+   "regle_ou_methode": "Place le coin droit de l’équerre sur le sommet et aligne les côtés.",
+   "exemples": [
+    "Place le coin droit de l’équerre sur un angle. Les deux côtés suivent ceux de l’équerre. L’angle est droit.",
+    "Chaque coin d’un rectangle est un angle droit."
+   ],
+   "piege": "Un angle avec de longs côtés n’est pas forcément plus ouvert.",
+   "astuce_memoire": "Le coin de l’équerre sert de modèle.",
+   "quiz": [
+    {
+     "q": "Quel outil aide à vérifier un angle droit ?",
+     "choix": [
+      "Une équerre",
+      "Une montre",
+      "Une balance"
+     ],
+     "rep": "Une équerre",
+     "expl": "On compare l’angle au coin droit de l’équerre."
+    },
+    {
+     "q": "Combien d’angles droits a un rectangle ?",
+     "choix": [
+      "Trois",
+      "Quatre",
+      "Aucun"
+     ],
+     "rep": "Quatre",
+     "expl": "Les quatre angles d’un rectangle sont droits."
+    },
+    {
+     "q": "On allonge les côtés d’un angle droit sans changer leur direction. Que devient l’angle ?",
+     "choix": [
+      "Il disparaît",
+      "Il devient forcément plus ouvert",
+      "Il reste droit"
+     ],
+     "rep": "Il reste droit",
+     "expl": "L’ouverture ne change pas quand on allonge les côtés."
+    }
+   ],
+   "id": "REV-MA-CE1-06"
+  }
+ ]
+}

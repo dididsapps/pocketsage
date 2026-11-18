@@ -1,0 +1,328 @@
+{
+  "classe": "CE1",
+  "niveau_appli": "CE1",
+  "age": "7-8 ans",
+  "matiere": "Français",
+  "code": "FR",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Lecture",
+      "titre": "Comprendre les indices",
+      "emoji": "🔍",
+      "en_une_phrase": "Pour comprendre un texte, relie ses indices à ce que tu sais.",
+      "comprendre": "Tu devines parfois ce qui se passe en observant une scène. Un texte donne aussi des indices. Les relier aide à comprendre ce qui n’est pas dit directement.",
+      "essentiel": [
+        "Lis ou écoute tout le passage.",
+        "Repère les détails utiles.",
+        "Relie-les à ce que tu connais."
+      ],
+      "image_mentale": "Imagine une loupe posée sur deux indices.",
+      "regle_ou_methode": "Cherche les indices, puis explique ce qu’ils permettent de déduire.",
+      "exemples": [
+        "« Le sol est mouillé. Lila ferme son parapluie. » Le sol est mouillé et le parapluie est ouvert ou vient d’être fermé. Il a probablement plu.",
+        "« Sam met un bonnet et des gants. » Il fait probablement froid."
+      ],
+      "piege": "Une idée doit s’appuyer sur des indices : ne devine pas au hasard.",
+      "astuce_memoire": "Indice plus ce que je sais.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Que montre un sol mouillé après la pluie ?",
+          "choix": [
+            "Une preuve qu’il neige encore",
+            "Une trace d’eau",
+            "Une chaussure sèche"
+          ],
+          "rep": "Une trace d’eau",
+          "expl": "Un sol mouillé porte de l’eau."
+        },
+        {
+          "q": "Dans « Sam met son bonnet car il neige », pourquoi met-il son bonnet ?",
+          "choix": [
+            "Il se baigne",
+            "Il fait nuit forcément",
+            "Il neige"
+          ],
+          "rep": "Il neige",
+          "expl": "La phrase donne la raison : il neige."
+        },
+        {
+          "q": "« Le sol est mouillé. Lila ferme son parapluie. » Que peut-on penser ?",
+          "choix": [
+            "Il a probablement plu",
+            "Le sol est forcément sec",
+            "Lila est sous l’eau"
+          ],
+          "rep": "Il a probablement plu",
+          "expl": "Le sol mouillé et le parapluie sont des indices de pluie."
+        }
+      ],
+      "id": "REV-FR-CE1-01"
+    },
+    {
+      "axe": "Écriture",
+      "titre": "Relire sa phrase",
+      "emoji": "✍️",
+      "en_une_phrase": "Relire une phrase aide à vérifier si elle dit ce que tu voulais.",
+      "comprendre": "Tu sais raconter une idée à l’oral. À l’écrit, le lecteur ne t’entend pas. La relecture aide à rendre ton message clair.",
+      "essentiel": [
+        "Relis lentement.",
+        "Vérifie les mots et leur ordre.",
+        "Vérifie la majuscule et le point."
+      ],
+      "image_mentale": "Imagine que tu donnes ta phrase à une personne absente.",
+      "regle_ou_methode": "Lis la phrase, corrige les oublis, puis vérifie la ponctuation.",
+      "exemples": [
+        "Tu as écrit « Le chat dort ». Relis : la phrase raconte bien. Ajoute le point : « Le chat dort. »",
+        "Dans « Le lapin mange carotte. », ajoute « une » : « Le lapin mange une carotte. »"
+      ],
+      "piege": "Une phrase peut avoir une majuscule et un point mais oublier un mot.",
+      "astuce_memoire": "Je relis pour le sens, puis pour les signes.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Quel signe termine une phrase qui raconte ?",
+          "choix": [
+            "Un chiffre",
+            "Un trait au hasard",
+            "Un point"
+          ],
+          "rep": "Un point",
+          "expl": "Le point termine une phrase déclarative."
+        },
+        {
+          "q": "Que manque-t-il dans « Le chat dort » ?",
+          "choix": [
+            "Le point final",
+            "Le mot chat",
+            "La majuscule"
+          ],
+          "rep": "Le point final",
+          "expl": "Un point termine la phrase écrite."
+        },
+        {
+          "q": "Que peux-tu ajouter à « Le lapin mange carotte. » ?",
+          "choix": [
+            "un point avant Le",
+            "une avant carotte",
+            "un mot après le point"
+          ],
+          "rep": "une avant carotte",
+          "expl": "« Une carotte » rend la phrase complète."
+        }
+      ],
+      "id": "REV-FR-CE1-02"
+    },
+    {
+      "axe": "Oral",
+      "titre": "Reformuler une histoire",
+      "emoji": "🗣️",
+      "en_une_phrase": "Reformuler, c’est raconter avec ses mots en gardant le sens.",
+      "comprendre": "Tu as déjà raconté un jeu à quelqu’un. Après une histoire, tu peux aussi dire ce que tu as compris. Tu gardes les événements importants et leur ordre.",
+      "essentiel": [
+        "Écoute l’histoire entière.",
+        "Repère qui agit et ce qui arrive.",
+        "Raconte avec tes mots dans l’ordre."
+      ],
+      "image_mentale": "Imagine trois images : début, suite, fin.",
+      "regle_ou_methode": "Nomme le personnage, puis raconte les étapes principales.",
+      "exemples": [
+        "Une souris trouve une graine puis la cache. Redis : « La souris découvre une graine et la met à l’abri. » Le sens reste le même.",
+        "Un chat grimpe puis descend : raconte les deux actions dans cet ordre."
+      ],
+      "piege": "Reformuler ne veut pas dire inventer une autre fin.",
+      "astuce_memoire": "Je garde le sens et l’ordre.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Que faut-il garder en reformulant ?",
+          "choix": [
+            "Le sens de l’histoire",
+            "Tous les mots exactement",
+            "Une autre fin inventée"
+          ],
+          "rep": "Le sens de l’histoire",
+          "expl": "On peut changer les mots tout en gardant le sens."
+        },
+        {
+          "q": "Le chat grimpe puis descend. Que fait-il d’abord ?",
+          "choix": [
+            "Il descend",
+            "Il grimpe",
+            "Il nage"
+          ],
+          "rep": "Il grimpe",
+          "expl": "Grimper vient avant descendre."
+        },
+        {
+          "q": "La souris trouve puis cache une graine. Quelle reformulation convient ?",
+          "choix": [
+            "Elle mange un fromage",
+            "Elle perd un ballon",
+            "Elle découvre une graine et la met à l’abri"
+          ],
+          "rep": "Elle découvre une graine et la met à l’abri",
+          "expl": "Les deux actions et leur ordre sont conservés."
+        }
+      ],
+      "id": "REV-FR-CE1-03"
+    },
+    {
+      "axe": "Vocabulaire",
+      "titre": "Les mots de même famille",
+      "emoji": "🌳",
+      "en_une_phrase": "Des mots de la même famille partagent une partie et une idée.",
+      "comprendre": "Tu connais « jardin ». D’autres mots parlent aussi du jardin. Leur partie commune aide à comprendre leur lien.",
+      "essentiel": [
+        "Des mots de la même famille ont un lien de sens.",
+        "Ils partagent souvent une partie écrite.",
+        "Le jardinier travaille dans un jardin."
+      ],
+      "image_mentale": "Imagine un arbre dont les branches portent des mots liés.",
+      "regle_ou_methode": "Cherche une partie commune et vérifie le lien de sens.",
+      "exemples": [
+        "Observe jardin et jardinier. Ils partagent « jardin ». Le jardinier travaille dans un jardin.",
+        "Dent et dentiste sont liés à l’idée de dent."
+      ],
+      "piege": "Deux mots qui se ressemblent sans lien de sens ne sont pas forcément de la même famille.",
+      "astuce_memoire": "Une famille de mots partage une idée.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Quel mot est de la famille de jardin ?",
+          "choix": [
+            "journal",
+            "jardinier",
+            "jaune"
+          ],
+          "rep": "jardinier",
+          "expl": "Le jardinier travaille dans un jardin."
+        },
+        {
+          "q": "Quel mot est lié à dent ?",
+          "choix": [
+            "danse",
+            "temps",
+            "dentiste"
+          ],
+          "rep": "dentiste",
+          "expl": "Le dentiste soigne notamment les dents."
+        },
+        {
+          "q": "Pour vérifier une famille de mots, que regardes-tu ?",
+          "choix": [
+            "Leur forme et leur sens",
+            "Seulement leur couleur",
+            "Seulement leur longueur"
+          ],
+          "rep": "Leur forme et leur sens",
+          "expl": "La ressemblance doit aller avec un lien de sens."
+        }
+      ],
+      "id": "REV-FR-CE1-04"
+    },
+    {
+      "axe": "Grammaire et orthographe",
+      "titre": "Reconnaître le verbe",
+      "emoji": "🏃",
+      "en_une_phrase": "Dans une phrase simple, le verbe indique souvent une action.",
+      "comprendre": "Tu connais des actions comme courir ou dormir. Dans une phrase, un mot peut dire ce que fait le personnage. C’est souvent le verbe.",
+      "essentiel": [
+        "Une phrase peut raconter une action.",
+        "Le verbe peut nommer cette action.",
+        "Changer le temps peut aider à trouver le verbe."
+      ],
+      "image_mentale": "Imagine le personnage qui fait le mouvement.",
+      "regle_ou_methode": "Cherche ce qui se passe et essaie de changer le temps.",
+      "exemples": [
+        "« Le chat dort. » Que fait-il ? Il dort. Si on dit « Demain, le chat dormira », le mot change : dort est le verbe.",
+        "« Le chien court. » Le verbe est « court »."
+      ],
+      "piege": "Le personnage qui agit n’est pas le verbe : cherche l’action.",
+      "astuce_memoire": "Que fait-il ? Cherche le mot qui change avec le temps.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Dans « Le chat dort », quel mot est le verbe ?",
+          "choix": [
+            "chat",
+            "Le",
+            "dort"
+          ],
+          "rep": "dort",
+          "expl": "« Dort » dit ce que fait le chat."
+        },
+        {
+          "q": "Dans « Le chien court », quelle action fait le chien ?",
+          "choix": [
+            "Il court",
+            "Il aboie forcément",
+            "Il dort"
+          ],
+          "rep": "Il court",
+          "expl": "La phrase indique que le chien court."
+        },
+        {
+          "q": "Dans « La fille saute », quel mot peut devenir « sautera » demain ?",
+          "choix": [
+            "fille",
+            "saute",
+            "La"
+          ],
+          "rep": "saute",
+          "expl": "Le verbe saute change en sautera au futur."
+        }
+      ],
+      "id": "REV-FR-CE1-05"
+    },
+    {
+      "axe": "Grammaire et orthographe",
+      "titre": "Accorder le nom au pluriel",
+      "emoji": "📚",
+      "en_une_phrase": "Dans beaucoup de groupes, le nom prend un s quand il désigne plusieurs choses.",
+      "comprendre": "Tu sais distinguer un livre et plusieurs livres. À l’écrit, on montre souvent cette différence à la fin du nom. Le déterminant donne aussi un indice.",
+      "essentiel": [
+        "Un livre désigne un seul livre.",
+        "Des livres désigne plusieurs livres.",
+        "Souvent, le nom pluriel prend un s."
+      ],
+      "image_mentale": "Imagine une boîte avec un livre, puis une boîte avec plusieurs livres.",
+      "regle_ou_methode": "Repère le déterminant et vérifie la fin du nom.",
+      "exemples": [
+        "« Des chat » parle de plusieurs chats. Ajoute s au nom : « des chats ».",
+        "« Le vélo » devient « les vélos »."
+      ],
+      "piege": "Le s final ne s’entend pas toujours : pense à le vérifier.",
+      "astuce_memoire": "Des ou les peuvent annoncer plusieurs.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Comment écrit-on plusieurs chats ?",
+          "choix": [
+            "des chats",
+            "des chat",
+            "un chats"
+          ],
+          "rep": "des chats",
+          "expl": "Le nom prend ici un s au pluriel."
+        },
+        {
+          "q": "Quel groupe désigne un seul vélo ?",
+          "choix": [
+            "les vélos",
+            "le vélo",
+            "des vélos"
+          ],
+          "rep": "le vélo",
+          "expl": "Le groupe « le vélo » est au singulier."
+        },
+        {
+          "q": "Complète : « Les lapin… dorment. »",
+          "choix": [
+            "lapin",
+            "lapinn",
+            "lapins"
+          ],
+          "rep": "lapins",
+          "expl": "Le nom lapins prend ici un s au pluriel."
+        }
+      ],
+      "id": "REV-FR-CE1-06"
+    }
+  ]
+}

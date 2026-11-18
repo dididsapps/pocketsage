@@ -1,0 +1,328 @@
+{
+  "classe": "CP",
+  "niveau_appli": "CP",
+  "age": "6-7 ans",
+  "matiere": "Mathématiques",
+  "code": "MA",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Dizaines et unités",
+      "emoji": "🔟",
+      "en_une_phrase": "Une dizaine contient dix unités.",
+      "comprendre": "Tu sais compter des objets un par un. On peut les ranger par paquets de dix. Cela rend les grandes collections plus faciles à compter.",
+      "essentiel": [
+        "Dix unités font une dizaine.",
+        "Un nombre peut contenir des dizaines et des unités.",
+        "Les unités restantes ne forment pas une dizaine."
+      ],
+      "image_mentale": "Imagine des paquets de dix crayons et des crayons seuls.",
+      "regle_ou_methode": "Compte les paquets de dix, puis les unités seules.",
+      "exemples": [
+        "Dans 24, le 2 indique deux dizaines : vingt. Le 4 indique quatre unités. Cela fait vingt-quatre.",
+        "Dans 13, il y a une dizaine et trois unités."
+      ],
+      "piege": "Dans 24, le 2 représente deux dizaines, pas deux unités.",
+      "astuce_memoire": "Un paquet de dix, c’est une dizaine.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Combien d’unités dans une dizaine ?",
+          "choix": [
+            "Deux",
+            "Dix",
+            "Cent"
+          ],
+          "rep": "Dix",
+          "expl": "Une dizaine contient dix unités."
+        },
+        {
+          "q": "Dans 24, combien y a-t-il de dizaines ?",
+          "choix": [
+            "Quatre",
+            "Vingt-quatre",
+            "Deux"
+          ],
+          "rep": "Deux",
+          "expl": "Le chiffre 2 indique deux dizaines."
+        },
+        {
+          "q": "Deux dizaines et trois unités font combien ?",
+          "choix": [
+            "23",
+            "32",
+            "5"
+          ],
+          "rep": "23",
+          "expl": "Deux dizaines valent vingt, plus trois font vingt-trois."
+        }
+      ],
+      "id": "REV-MA-CP-01"
+    },
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Additionner en avançant",
+      "emoji": "➕",
+      "en_une_phrase": "Additionner peut servir à réunir ou à ajouter.",
+      "comprendre": "Tu sais avancer dans la suite des nombres. Pour ajouter quelques objets, tu peux partir de ceux que tu as déjà. Avancer permet de compter les nouveaux.",
+      "essentiel": [
+        "L’addition réunit des quantités.",
+        "Le signe plus indique une addition.",
+        "Le résultat est la somme."
+      ],
+      "image_mentale": "Imagine des cases numérotées sur un chemin.",
+      "regle_ou_methode": "Pars du premier nombre et avance du nombre ajouté.",
+      "exemples": [
+        "Pour 5 + 3, pars de 5. Avance : 6, 7, 8. Le résultat est 8.",
+        "Pour 4 + 2, avance à 5 puis 6 : le résultat est 6."
+      ],
+      "piege": "Ne compte pas 5 comme premier pas : commence après 5.",
+      "astuce_memoire": "On part du premier nombre, puis on avance.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Combien font 5 + 3 ?",
+          "choix": [
+            "7",
+            "9",
+            "8"
+          ],
+          "rep": "8",
+          "expl": "Trois pas après 5 mènent à 8."
+        },
+        {
+          "q": "Combien font 4 + 2 ?",
+          "choix": [
+            "6",
+            "5",
+            "7"
+          ],
+          "rep": "6",
+          "expl": "Deux pas après 4 mènent à 6."
+        },
+        {
+          "q": "Tu as 6 billes et tu en reçois 2. Combien en as-tu ?",
+          "choix": [
+            "4",
+            "8",
+            "7"
+          ],
+          "rep": "8",
+          "expl": "Six billes et deux billes font huit."
+        }
+      ],
+      "id": "REV-MA-CP-02"
+    },
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Retirer pour trouver le reste",
+      "emoji": "🧺",
+      "en_une_phrase": "Une soustraction peut servir à chercher combien il reste.",
+      "comprendre": "Tu sais qu’un panier peut contenir des pommes. Si on en prend, il y en a moins. La soustraction aide à trouver le reste.",
+      "essentiel": [
+        "On part de la quantité de départ.",
+        "On retire la quantité prise.",
+        "On cherche ce qui reste."
+      ],
+      "image_mentale": "Imagine un panier dont on enlève des pommes.",
+      "regle_ou_methode": "Enlève les objets pris, puis compte ceux qui restent.",
+      "exemples": [
+        "Il y a 7 pommes. On en prend 2. Il reste 5 pommes : 7 − 2 = 5.",
+        "Avec 6 cubes, si tu en retires 1, il en reste 5."
+      ],
+      "piege": "Le reste n’est pas la quantité retirée : compte ce qui est encore là.",
+      "astuce_memoire": "Retirer, puis compter ce qui reste.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Combien font 7 − 2 ?",
+          "choix": [
+            "5",
+            "9",
+            "2"
+          ],
+          "rep": "5",
+          "expl": "Si on retire deux de sept, il reste cinq."
+        },
+        {
+          "q": "Six cubes, on en retire un. Combien reste-t-il ?",
+          "choix": [
+            "Sept",
+            "Cinq",
+            "Un"
+          ],
+          "rep": "Cinq",
+          "expl": "Six moins un égale cinq."
+        },
+        {
+          "q": "Il y a 8 billes. Tu en prends 3. Combien reste-t-il ?",
+          "choix": [
+            "11",
+            "3",
+            "5"
+          ],
+          "rep": "5",
+          "expl": "Huit moins trois égale cinq."
+        }
+      ],
+      "id": "REV-MA-CP-03"
+    },
+    {
+      "axe": "Grandeurs et mesures",
+      "titre": "Comparer les longueurs",
+      "emoji": "📏",
+      "en_une_phrase": "Le centimètre permet de mesurer et comparer des longueurs.",
+      "comprendre": "Tu sais comparer deux crayons en les alignant. Une règle graduée permet aussi de donner une mesure. Les centimètres servent d’unités communes.",
+      "essentiel": [
+        "Place le début de l’objet au zéro.",
+        "Lis la graduation à l’autre bout.",
+        "Le centimètre s’écrit cm."
+      ],
+      "image_mentale": "Imagine une règle placée sous un crayon.",
+      "regle_ou_methode": "Aligne une extrémité avec zéro et lis l’autre extrémité.",
+      "exemples": [
+        "Le crayon commence au zéro. Il finit à la graduation 5. Il mesure 5 cm.",
+        "Un trait du zéro au 3 mesure 3 cm."
+      ],
+      "piege": "Ne place pas le début au bord de la règle si le zéro est décalé.",
+      "astuce_memoire": "Le zéro est le point de départ.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Quelle unité peut servir à mesurer un crayon ?",
+          "choix": [
+            "Le jour",
+            "Le centimètre",
+            "L’euro"
+          ],
+          "rep": "Le centimètre",
+          "expl": "Le centimètre mesure une longueur."
+        },
+        {
+          "q": "Un trait va de zéro à 5 sur une règle en centimètres. Quelle est sa longueur ?",
+          "choix": [
+            "3 cm",
+            "10 cm",
+            "5 cm"
+          ],
+          "rep": "5 cm",
+          "expl": "Cinq intervalles de un centimètre font 5 cm."
+        },
+        {
+          "q": "Deux crayons mesurent 4 cm et 7 cm. Lequel est le plus long ?",
+          "choix": [
+            "Celui de 7 cm",
+            "Celui de 4 cm",
+            "Ils ont la même longueur"
+          ],
+          "rep": "Celui de 7 cm",
+          "expl": "Sept centimètres est plus grand que quatre centimètres."
+        }
+      ],
+      "id": "REV-MA-CP-04"
+    },
+    {
+      "axe": "Grandeurs et mesures",
+      "titre": "Utiliser les euros",
+      "emoji": "🪙",
+      "en_une_phrase": "Des pièces peuvent être réunies pour payer une somme.",
+      "comprendre": "Tu as peut-être déjà vu des pièces. Chaque pièce a une valeur. On additionne leurs valeurs pour connaître la somme.",
+      "essentiel": [
+        "La valeur est écrite sur la pièce.",
+        "Des pièces de valeurs différentes existent.",
+        "On peut réunir plusieurs pièces."
+      ],
+      "image_mentale": "Imagine des pièces posées sur une table.",
+      "regle_ou_methode": "Lis chaque valeur et additionne les euros.",
+      "exemples": [
+        "Une pièce vaut 2 euros. Une autre vaut 1 euro. Ensemble, elles font 3 euros.",
+        "Deux pièces de 2 euros valent ensemble 4 euros."
+      ],
+      "piege": "Le nombre de pièces n’est pas toujours leur valeur totale.",
+      "astuce_memoire": "Additionne les valeurs, pas seulement les pièces.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Une pièce de 2 euros et une de 1 euro valent combien ?",
+          "choix": [
+            "2 euros",
+            "1 euro",
+            "3 euros"
+          ],
+          "rep": "3 euros",
+          "expl": "Deux plus un font trois euros."
+        },
+        {
+          "q": "Deux pièces de 2 euros valent combien ?",
+          "choix": [
+            "4 euros",
+            "2 euros",
+            "3 euros"
+          ],
+          "rep": "4 euros",
+          "expl": "Deux plus deux font quatre euros."
+        },
+        {
+          "q": "Tu as 2 euros et 2 euros. Quel objet peux-tu payer exactement ?",
+          "choix": [
+            "Un objet à 3 euros",
+            "Un objet à 4 euros",
+            "Un objet à 5 euros"
+          ],
+          "rep": "Un objet à 4 euros",
+          "expl": "Les deux pièces valent ensemble quatre euros."
+        }
+      ],
+      "id": "REV-MA-CP-05"
+    },
+    {
+      "axe": "Espace et géométrie",
+      "titre": "Carré et rectangle",
+      "emoji": "📐",
+      "en_une_phrase": "Un carré et un rectangle ont quatre côtés droits et quatre angles droits.",
+      "comprendre": "Tu as déjà vu des fenêtres et des carreaux. Leurs contours peuvent ressembler à des rectangles ou à des carrés. Leurs côtés et leurs coins aident à les reconnaître.",
+      "essentiel": [
+        "Les deux figures ont quatre côtés.",
+        "Leurs quatre angles sont droits.",
+        "Le carré a quatre côtés de même longueur."
+      ],
+      "image_mentale": "Imagine une fenêtre rectangulaire et un carreau carré.",
+      "regle_ou_methode": "Compte les côtés et vérifie les angles avec un gabarit.",
+      "exemples": [
+        "Une figure a quatre angles droits et quatre côtés égaux. C’est un carré.",
+        "Une figure à quatre angles droits peut être un rectangle."
+      ],
+      "piege": "Une figure à quatre côtés n’a pas forcément quatre angles droits.",
+      "astuce_memoire": "Quatre coins droits ; pour le carré, quatre côtés égaux.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Combien de côtés a un carré ?",
+          "choix": [
+            "Quatre",
+            "Trois",
+            "Cinq"
+          ],
+          "rep": "Quatre",
+          "expl": "Un carré a quatre côtés."
+        },
+        {
+          "q": "Les côtés d’un carré ont-ils la même longueur ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Seulement deux"
+          ],
+          "rep": "Oui",
+          "expl": "Les quatre côtés d’un carré sont égaux."
+        },
+        {
+          "q": "Une figure a trois côtés droits. Est-ce un carré ?",
+          "choix": [
+            "Oui",
+            "Seulement si elle est tournée",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Un carré possède quatre côtés."
+        }
+      ],
+      "id": "REV-MA-CP-06"
+    }
+  ]
+}

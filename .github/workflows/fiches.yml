@@ -1,0 +1,37 @@
+name: Fiches de révision — voix, surlignage et PDF
+
+# Enregistre la voix des fiches GS → CE2 (Google TTS), envoie les PDF sur R2,
+# puis calcule l'heure de chaque mot (Whisper) pour le surlignage pendant la lecture.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/contenu/fiches/**"
+      - "fiches/**/REV-*.pdf"
+      - "tools/fiches_tts.py"
+  workflow_dispatch: {}
+
+concurrency:
+  group: fiches
+  cancel-in-progress: false
+
+jobs:
+  fiches:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg && pip install requests boto3 faster-whisper numpy
+      - name: Voix et PDF
+        env:
+          GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+          R2_ACCESS_KEY: ${{ secrets.R2_ACCESS_KEY }}
+          R2_SECRET_KEY: ${{ secrets.R2_SECRET_KEY }}
+        run: python3 tools/fiches_tts.py
+      - name: Surlignage
+        env:
+          R2_ACCESS_KEY: ${{ secrets.R2_ACCESS_KEY }}
+          R2_SECRET_KEY: ${{ secrets.R2_SECRET_KEY }}
+        run: python3 tools/aligner.py --fiches

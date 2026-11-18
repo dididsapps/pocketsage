@@ -1,0 +1,487 @@
+{
+  "classe": "CP",
+  "niveau_appli": "CP",
+  "age": "6-7 ans",
+  "matiere": "Questionner le monde",
+  "code": "QM",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Thème 1 : Les manifestations naturelles du temps",
+      "titre": "Jour et nuit",
+      "emoji": "🌞",
+      "en_une_phrase": "Le jour et la nuit se succèdent régulièrement.",
+      "comprendre": "Tu connais le matin et le soir. Entre eux, la lumière change. L’alternance du jour et de la nuit aide à repérer le temps.",
+      "essentiel": [
+        "Le jour, le Soleil éclaire le ciel.",
+        "La nuit, le Soleil n’éclaire pas directement le lieu où tu te trouves.",
+        "Le jour et la nuit se succèdent."
+      ],
+      "image_mentale": "Imagine une frise : jour, nuit, jour.",
+      "regle_ou_methode": "Observe la suite des moments, sans regarder directement le Soleil.",
+      "exemples": [
+        "Après une nuit vient un nouveau jour. Puis vient une autre nuit. La suite recommence.",
+        "Une journée comprend des moments éclairés puis une nuit."
+      ],
+      "piege": "La nuit n’efface pas le Soleil : il éclaire alors d’autres lieux.",
+      "astuce_memoire": "Jour, nuit, puis jour.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Après une nuit vient normalement quoi ?",
+          "choix": [
+            "Une autre nuit sans jour",
+            "Un jour",
+            "Une semaine entière"
+          ],
+          "rep": "Un jour",
+          "expl": "Le jour et la nuit se succèdent."
+        },
+        {
+          "q": "La nuit, le Soleil a-t-il disparu ?",
+          "choix": [
+            "Oui",
+            "Seulement en hiver",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Il éclaire alors d’autres lieux."
+        },
+        {
+          "q": "Quelle suite respecte l’alternance ?",
+          "choix": [
+            "Jour, nuit, jour",
+            "Jour, jour, nuit sans interruption",
+            "Nuit, nuit, nuit sans jour"
+          ],
+          "rep": "Jour, nuit, jour",
+          "expl": "La suite alterne jour et nuit."
+        }
+      ],
+      "id": "REV-QM-CP-01"
+    },
+    {
+      "axe": "Thème 2 : Les représentations humaines du temps",
+      "titre": "Lire un calendrier",
+      "emoji": "🗓️",
+      "en_une_phrase": "Un calendrier permet de repérer les jours et les mois.",
+      "comprendre": "Tu sais que les jours se suivent. Un calendrier les montre dans l’ordre. Il aide à retrouver une date et à prévoir un événement.",
+      "essentiel": [
+        "Une semaine compte sept jours.",
+        "Les jours sont rangés dans l’ordre.",
+        "Une date indique notamment le jour et le mois."
+      ],
+      "image_mentale": "Imagine une grille de cases, une case pour chaque jour.",
+      "regle_ou_methode": "Trouve le mois, puis le numéro du jour.",
+      "exemples": [
+        "Sur un calendrier de mai, cherche la case 12. Elle indique le 12 mai. Tu peux y marquer une sortie.",
+        "La case du 13 mai suit celle du 12 mai."
+      ],
+      "piege": "Le numéro du jour seul ne suffit pas à préciser le mois.",
+      "astuce_memoire": "Mois, puis numéro du jour.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Combien de jours compte une semaine ?",
+          "choix": [
+            "Cinq",
+            "Dix",
+            "Sept"
+          ],
+          "rep": "Sept",
+          "expl": "Une semaine compte sept jours."
+        },
+        {
+          "q": "Après le 12 mai vient quelle date ?",
+          "choix": [
+            "Le 13 mai",
+            "Le 11 mai",
+            "Le 12 juin"
+          ],
+          "rep": "Le 13 mai",
+          "expl": "Le numéro du jour avance de un."
+        },
+        {
+          "q": "Pour trouver le 12 mai, que cherches-tu ?",
+          "choix": [
+            "La case 12 de n’importe quel mois",
+            "Le mois de mai puis la case 12",
+            "La case 5 de mai"
+          ],
+          "rep": "Le mois de mai puis la case 12",
+          "expl": "La date combine le mois et le numéro du jour."
+        }
+      ],
+      "id": "REV-QM-CP-02"
+    },
+    {
+      "axe": "Thème 3 : Situer des évènements dans le temps",
+      "titre": "Hier, aujourd’hui, demain",
+      "emoji": "📆",
+      "en_une_phrase": "Hier est passé, aujourd’hui est en cours et demain est à venir.",
+      "comprendre": "Tu racontes ce que tu as fait à l’école. Tu peux aussi parler d’une sortie à venir. Ces mots aident à placer les événements dans le temps.",
+      "essentiel": [
+        "Hier est le jour avant aujourd’hui.",
+        "Aujourd’hui est le jour présent.",
+        "Demain est le jour après aujourd’hui."
+      ],
+      "image_mentale": "Imagine trois cases : hier, aujourd’hui et demain.",
+      "regle_ou_methode": "Choisis le jour présent, puis situe le jour avant et le jour après.",
+      "exemples": [
+        "Aujourd’hui nous sommes mardi. Hier, c’était lundi. Demain, ce sera mercredi.",
+        "Si une sortie a lieu le jour suivant, elle aura lieu demain."
+      ],
+      "piege": "Demain n’est pas hier : il vient après aujourd’hui.",
+      "astuce_memoire": "Hier, aujourd’hui, demain.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Quel jour vient après aujourd’hui ?",
+          "choix": [
+            "Demain",
+            "Hier",
+            "Avant-hier"
+          ],
+          "rep": "Demain",
+          "expl": "Demain est le jour suivant."
+        },
+        {
+          "q": "Aujourd’hui est mardi. Quel jour était hier ?",
+          "choix": [
+            "Mercredi",
+            "Lundi",
+            "Jeudi"
+          ],
+          "rep": "Lundi",
+          "expl": "Lundi vient juste avant mardi."
+        },
+        {
+          "q": "Aujourd’hui est mardi. Quel jour sera demain ?",
+          "choix": [
+            "Lundi",
+            "Mardi",
+            "Mercredi"
+          ],
+          "rep": "Mercredi",
+          "expl": "Mercredi vient juste après mardi."
+        }
+      ],
+      "id": "REV-QM-CP-03"
+    },
+    {
+      "axe": "Thème 1 : Autour de l’école",
+      "titre": "Lire un plan simple",
+      "emoji": "🗺️",
+      "en_une_phrase": "Un plan représente un lieu vu de dessus.",
+      "comprendre": "Tu connais ta classe et ses meubles. On peut les dessiner comme si on les voyait d’en haut. Le plan aide à retrouver leur place.",
+      "essentiel": [
+        "Le plan représente un espace.",
+        "Des formes représentent des objets ou des lieux.",
+        "Une légende explique certains signes."
+      ],
+      "image_mentale": "Imagine que tu regardes la classe depuis le plafond.",
+      "regle_ou_methode": "Repère l’entrée, puis les éléments dessinés.",
+      "exemples": [
+        "Sur un plan, un rectangle représente une table. La porte est à côté. Le plan aide à situer la table près de la porte.",
+        "Un carré peut représenter un meuble si la légende le précise."
+      ],
+      "piege": "Une forme dessinée n’est pas l’objet : elle le représente.",
+      "astuce_memoire": "Le plan montre le lieu de dessus.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : De quel point de vue voit-on un plan ?",
+          "choix": [
+            "De dessous la table",
+            "De dessus",
+            "Seulement de face"
+          ],
+          "rep": "De dessus",
+          "expl": "Le plan représente le lieu vu de dessus."
+        },
+        {
+          "q": "À quoi sert une légende ?",
+          "choix": [
+            "À déplacer les meubles",
+            "À effacer le plan",
+            "À expliquer les signes"
+          ],
+          "rep": "À expliquer les signes",
+          "expl": "La légende indique ce que représentent les signes."
+        },
+        {
+          "q": "Une table est dessinée près de la porte. Où la cherches-tu ?",
+          "choix": [
+            "Près de la porte",
+            "Dans une autre école forcément",
+            "Sous le plan"
+          ],
+          "rep": "Près de la porte",
+          "expl": "Le plan indique la table près de la porte."
+        }
+      ],
+      "id": "REV-QM-CP-04"
+    },
+    {
+      "axe": "Thème 2 : Des représentations du monde",
+      "titre": "Globe et planisphère",
+      "emoji": "🌍",
+      "en_une_phrase": "Le globe et le planisphère représentent la Terre de deux façons.",
+      "comprendre": "Tu connais une balle ronde et une feuille plate. Le globe ressemble à une boule. Le planisphère montre la Terre sur une surface plate.",
+      "essentiel": [
+        "Un globe représente la Terre en volume.",
+        "Un planisphère représente la Terre à plat.",
+        "Les océans sont de grandes étendues d’eau."
+      ],
+      "image_mentale": "Imagine une boule terrestre et une carte du monde dépliée.",
+      "regle_ou_methode": "Observe si la représentation est ronde ou plate.",
+      "exemples": [
+        "Tu observes une boule sur laquelle sont dessinés les continents et les océans. C’est un globe. La carte du monde à plat est un planisphère.",
+        "Sur un planisphère, un océan représente une grande étendue d’eau."
+      ],
+      "piege": "Une carte du monde est plate ; la Terre n’est pas plate.",
+      "astuce_memoire": "Globe en boule, planisphère à plat.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Quelle représentation de la Terre est en forme de boule ?",
+          "choix": [
+            "Le planisphère",
+            "Le calendrier",
+            "Le globe"
+          ],
+          "rep": "Le globe",
+          "expl": "Le globe représente la Terre en volume."
+        },
+        {
+          "q": "Que représente un océan ?",
+          "choix": [
+            "Une grande étendue d’eau",
+            "Une montagne",
+            "Une route"
+          ],
+          "rep": "Une grande étendue d’eau",
+          "expl": "Un océan est une vaste étendue d’eau."
+        },
+        {
+          "q": "Tu cherches une carte du monde à plat. Que choisis-tu ?",
+          "choix": [
+            "Un globe",
+            "Un planisphère",
+            "Un sablier"
+          ],
+          "rep": "Un planisphère",
+          "expl": "Le planisphère représente la Terre à plat."
+        }
+      ],
+      "id": "REV-QM-CP-05"
+    },
+    {
+      "axe": "La matière, les mesures, l’électricité",
+      "titre": "L’eau et la glace",
+      "emoji": "💧",
+      "en_une_phrase": "L’eau liquide peut devenir de la glace quand elle refroidit assez.",
+      "comprendre": "Tu as peut-être déjà vu des glaçons. Ils sont faits d’eau devenue solide. Si la glace se réchauffe, elle peut redevenir liquide.",
+      "essentiel": [
+        "L’eau peut être liquide.",
+        "La glace est de l’eau solide.",
+        "La glace peut fondre."
+      ],
+      "image_mentale": "Imagine un glaçon qui devient une petite flaque.",
+      "regle_ou_methode": "Observe l’eau avant et après refroidissement ou réchauffement.",
+      "exemples": [
+        "On met de l’eau au congélateur. Elle refroidit et devient un glaçon. En se réchauffant, le glaçon fond.",
+        "Un glaçon laissé à température ambiante peut devenir de l’eau liquide."
+      ],
+      "piege": "Un glaçon n’est pas une autre matière : c’est de l’eau solide.",
+      "astuce_memoire": "Glace solide, eau liquide.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Un glaçon est fait de quoi ?",
+          "choix": [
+            "D’eau",
+            "De lait",
+            "De jus de fruit"
+          ],
+          "rep": "D’eau",
+          "expl": "La glace est de l’eau à l’état solide."
+        },
+        {
+          "q": "Quand un glaçon fond, que devient-il ?",
+          "choix": [
+            "De la vapeur directement",
+            "De l’eau liquide",
+            "De la neige"
+          ],
+          "rep": "De l’eau liquide",
+          "expl": "La glace fondue devient de l’eau liquide."
+        },
+        {
+          "q": "On refroidit assez de l’eau liquide. Que peut-elle devenir ?",
+          "choix": [
+            "De l’eau plus chaude",
+            "De la vapeur d’eau",
+            "De la glace"
+          ],
+          "rep": "De la glace",
+          "expl": "En refroidissant assez, l’eau peut geler."
+        }
+      ],
+      "id": "REV-QM-CP-06"
+    },
+    {
+      "axe": "Les êtres vivants dans leur environnement",
+      "titre": "La plante grandit",
+      "emoji": "🌱",
+      "en_une_phrase": "Une plante est vivante et grandit au cours de sa vie.",
+      "comprendre": "Tu as déjà grandi depuis que tu es bébé. Une plante change aussi au fil du temps. On peut observer ses étapes.",
+      "essentiel": [
+        "Une graine peut germer.",
+        "Une jeune plante peut grandir.",
+        "Une plante a besoin d’eau et de lumière."
+      ],
+      "image_mentale": "Imagine une graine, puis une pousse, puis une plante.",
+      "regle_ou_methode": "Observe la même plante à plusieurs moments.",
+      "exemples": [
+        "On plante une graine de haricot et on l’arrose. Une pousse apparaît. Elle grandit et forme des feuilles.",
+        "Une jeune plante peut devenir une plante plus grande."
+      ],
+      "piege": "Une plante est vivante même si elle ne marche pas.",
+      "astuce_memoire": "Graine, pousse, plante.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Que peut donner une graine de haricot ?",
+          "choix": [
+            "Un plant de tomate",
+            "Une plante de haricot",
+            "Un arbre fruitier"
+          ],
+          "rep": "Une plante de haricot",
+          "expl": "La graine peut germer et donner une plante."
+        },
+        {
+          "q": "De quoi une plante a-t-elle notamment besoin ?",
+          "choix": [
+            "Seulement de lumière",
+            "Seulement d’eau",
+            "D’eau et de lumière"
+          ],
+          "rep": "D’eau et de lumière",
+          "expl": "L’eau et la lumière aident la plante à vivre."
+        },
+        {
+          "q": "Une plante ne marche pas. Peut-elle être vivante ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "Seulement si elle marche"
+          ],
+          "rep": "Oui",
+          "expl": "Une plante est vivante même si elle ne marche pas."
+        }
+      ],
+      "id": "REV-QM-CP-07"
+    },
+    {
+      "axe": "Le corps humain et la santé",
+      "titre": "Prendre soin de ses dents",
+      "emoji": "🪥",
+      "en_une_phrase": "Se brosser les dents aide à garder une bouche propre.",
+      "comprendre": "Après un repas, de petits restes peuvent rester sur les dents. La brosse aide à les enlever. Un adulte peut t’accompagner.",
+      "essentiel": [
+        "Utilise une brosse à dents.",
+        "Brosse toutes les faces des dents.",
+        "Demande de l’aide à un adulte si besoin."
+      ],
+      "image_mentale": "Imagine une petite brosse qui passe sur chaque dent.",
+      "regle_ou_methode": "Avec l’aide d’un adulte, brosse chaque face doucement.",
+      "exemples": [
+        "Après le repas, prends ta brosse. Passe-la sur les dents du haut et du bas. Pense aux faces intérieures et extérieures.",
+        "Le soir, prends le temps de brosser tes dents avant de dormir."
+      ],
+      "piege": "Frotter seulement les dents de devant ne nettoie pas toutes les dents.",
+      "astuce_memoire": "Dessus, dehors, dedans.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Quel objet sert à brosser les dents ?",
+          "choix": [
+            "Un peigne",
+            "Une cuillère",
+            "Une brosse à dents"
+          ],
+          "rep": "Une brosse à dents",
+          "expl": "La brosse à dents sert à nettoyer les dents."
+        },
+        {
+          "q": "Quelles dents faut-il brosser ?",
+          "choix": [
+            "Celles du haut et du bas",
+            "Seulement celles de devant",
+            "Seulement celles du haut"
+          ],
+          "rep": "Celles du haut et du bas",
+          "expl": "Toutes les dents ont besoin d’être brossées."
+        },
+        {
+          "q": "Tu as brossé le devant de tes dents. Que reste-t-il à faire ?",
+          "choix": [
+            "Ranger sans rien faire",
+            "Brosser aussi les autres faces",
+            "Brosser seulement la brosse"
+          ],
+          "rep": "Brosser aussi les autres faces",
+          "expl": "Les autres faces doivent aussi être nettoyées."
+        }
+      ],
+      "id": "REV-QM-CP-08"
+    },
+    {
+      "axe": "Les objets techniques au cœur de la société",
+      "titre": "Choisir un objet utile",
+      "emoji": "🥄",
+      "en_une_phrase": "Un objet peut servir à faire une action précise.",
+      "comprendre": "Tu utilises des objets pour manger ou dessiner. Leur forme aide souvent à comprendre leur usage. Tu choisis selon ce que tu veux faire.",
+      "essentiel": [
+        "Observe l’objet.",
+        "Demande-toi à quoi il sert.",
+        "Choisis l’objet adapté à ton action."
+      ],
+      "image_mentale": "Imagine une cuillère creuse qui transporte la soupe.",
+      "regle_ou_methode": "Dis ton action, puis choisis l’objet utile.",
+      "exemples": [
+        "Tu veux manger une soupe. Choisis un objet qui peut la retenir. La cuillère convient.",
+        "Pour dessiner sur une feuille, tu peux utiliser un crayon."
+      ],
+      "piege": "Tous les objets ne servent pas au même usage : regarde leur forme.",
+      "astuce_memoire": "Une action, un objet utile.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Quel objet permet de manger une soupe ?",
+          "choix": [
+            "Une cuillère",
+            "Une fourchette",
+            "Un couteau"
+          ],
+          "rep": "Une cuillère",
+          "expl": "La cuillère peut contenir un peu de soupe."
+        },
+        {
+          "q": "Quel objet laisse une trace pour dessiner ?",
+          "choix": [
+            "Une gomme",
+            "Un crayon",
+            "Une règle"
+          ],
+          "rep": "Un crayon",
+          "expl": "Le crayon laisse une trace sur la feuille."
+        },
+        {
+          "q": "Tu veux transporter un peu d’eau. Quel objet convient ?",
+          "choix": [
+            "Un mouchoir",
+            "Une feuille de papier",
+            "Un verre"
+          ],
+          "rep": "Un verre",
+          "expl": "Le verre peut contenir de l’eau."
+        }
+      ],
+      "id": "REV-QM-CP-09"
+    }
+  ]
+}

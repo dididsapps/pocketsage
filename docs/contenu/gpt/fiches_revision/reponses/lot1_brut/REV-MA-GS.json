@@ -1,0 +1,328 @@
+{
+  "classe": "GS",
+  "niveau_appli": "GS",
+  "age": "5-6 ans",
+  "matiere": "Nombres et formes",
+  "code": "MA",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Découvrir les nombres",
+      "titre": "Compter sans oublier",
+      "emoji": "🔢",
+      "en_une_phrase": "Le dernier nombre dit indique combien il y a d’objets.",
+      "comprendre": "Tu peux compter les jouets rangés devant toi. Chaque objet reçoit un seul nombre. Le dernier nombre donne la quantité de tous les objets.",
+      "essentiel": [
+        "Pointe chaque objet une fois.",
+        "Dis la suite des nombres.",
+        "Le dernier nombre donne la quantité."
+      ],
+      "image_mentale": "Imagine les objets qui passent un par un dans une boîte.",
+      "regle_ou_methode": "Déplace chaque objet compté, si tu peux.",
+      "exemples": [
+        "Trois jetons sont devant toi. Déplace-les en disant : un, deux, trois. Il y a trois jetons.",
+        "Quatre pommes comptées une à une : il y a quatre pommes."
+      ],
+      "piege": "Ne compte pas deux fois le même objet.",
+      "astuce_memoire": "Un objet, un nombre.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Tu comptes un, deux, trois. Combien y a-t-il d’objets ?",
+          "choix": [
+            "Deux",
+            "Trois",
+            "Un"
+          ],
+          "rep": "Trois",
+          "expl": "Le dernier nombre indique la quantité."
+        },
+        {
+          "q": "Pour compter des jetons, combien de fois pointes-tu chacun ?",
+          "choix": [
+            "Deux fois",
+            "Jamais",
+            "Une fois"
+          ],
+          "rep": "Une fois",
+          "expl": "Chaque jeton est compté une fois."
+        },
+        {
+          "q": "Tu écartes trois cailloux déjà comptés, puis deux autres. Combien en tout ?",
+          "choix": [
+            "Cinq",
+            "Trois",
+            "Deux"
+          ],
+          "rep": "Cinq",
+          "expl": "Trois et encore deux font cinq."
+        }
+      ],
+      "id": "REV-MA-GS-01"
+    },
+    {
+      "axe": "Découvrir les nombres",
+      "titre": "Une place dans la file",
+      "emoji": "🚶",
+      "en_une_phrase": "Un nombre peut indiquer une place dans une file.",
+      "comprendre": "Tu as déjà attendu ton tour. Dans une file, on peut dire premier ou deuxième. Cela indique une place, pas une quantité.",
+      "essentiel": [
+        "Repère le début de la file.",
+        "Le premier est au début.",
+        "Le deuxième vient juste après."
+      ],
+      "image_mentale": "Imagine trois enfants alignés devant une porte.",
+      "regle_ou_methode": "Pars du début indiqué et compte les places.",
+      "exemples": [
+        "La porte est devant. Le chat arrive d’abord, puis le lapin. Le lapin est deuxième.",
+        "Si le lapin est seul devant la porte, il est premier."
+      ],
+      "piege": "Deuxième indique une place ; cela ne veut pas dire deux lapins.",
+      "astuce_memoire": "Premier, puis deuxième, puis troisième.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Dans une file, qui vient avant le deuxième ?",
+          "choix": [
+            "Le troisième",
+            "Le deuxième",
+            "Le premier"
+          ],
+          "rep": "Le premier",
+          "expl": "Le premier est juste avant le deuxième."
+        },
+        {
+          "q": "Chat, lapin, ours : qui est deuxième ?",
+          "choix": [
+            "Le lapin",
+            "Le chat",
+            "L’ours"
+          ],
+          "rep": "Le lapin",
+          "expl": "Le lapin vient après le chat."
+        },
+        {
+          "q": "Si l’ours passe devant le chat et le lapin, quelle est sa place ?",
+          "choix": [
+            "Deuxième",
+            "Premier",
+            "Troisième"
+          ],
+          "rep": "Premier",
+          "expl": "L’ours est maintenant devant tous les autres."
+        }
+      ],
+      "id": "REV-MA-GS-02"
+    },
+    {
+      "axe": "Utiliser les nombres pour résoudre des problèmes",
+      "titre": "Ajouter une quantité",
+      "emoji": "➕",
+      "en_une_phrase": "Ajouter, c’est réunir pour avoir une nouvelle quantité.",
+      "comprendre": "Tu as peut-être reçu d’autres billes pour jouer. Tu réunis les anciennes et les nouvelles. La quantité obtenue comprend les deux groupes.",
+      "essentiel": [
+        "Garde les premiers objets.",
+        "Ajoute les nouveaux.",
+        "Compte tous les objets réunis."
+      ],
+      "image_mentale": "Imagine deux petits tas qui se rejoignent.",
+      "regle_ou_methode": "Réunis les groupes, puis compte les objets.",
+      "exemples": [
+        "Tu as deux cubes. Tu ajoutes trois cubes. Compte : un, deux, trois, quatre, cinq. Tu as cinq cubes.",
+        "Trois billes et une bille font quatre billes."
+      ],
+      "piege": "Ne compte pas seulement les objets ajoutés : compte aussi les premiers.",
+      "astuce_memoire": "Deux tas deviennent un seul tas.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Deux cubes et trois cubes font combien ?",
+          "choix": [
+            "Cinq",
+            "Trois",
+            "Deux"
+          ],
+          "rep": "Cinq",
+          "expl": "Les deux groupes réunis font cinq cubes."
+        },
+        {
+          "q": "Trois billes et une bille font combien ?",
+          "choix": [
+            "Trois",
+            "Quatre",
+            "Deux"
+          ],
+          "rep": "Quatre",
+          "expl": "Trois et encore une font quatre."
+        },
+        {
+          "q": "Tu as quatre crayons et tu en reçois un. Combien en as-tu ?",
+          "choix": [
+            "Quatre",
+            "Trois",
+            "Cinq"
+          ],
+          "rep": "Cinq",
+          "expl": "Un de plus que quatre donne cinq."
+        }
+      ],
+      "id": "REV-MA-GS-03"
+    },
+    {
+      "axe": "Explorer les solides et les formes planes",
+      "titre": "Reconnaître un triangle",
+      "emoji": "🔺",
+      "en_une_phrase": "Un triangle est une figure fermée avec trois côtés droits.",
+      "comprendre": "Tu connais des formes dessinées sur les objets. On reconnaît un triangle en regardant ses côtés. Sa position ou sa taille peuvent changer.",
+      "essentiel": [
+        "Le triangle est fermé.",
+        "Il a trois côtés droits.",
+        "Il a trois sommets."
+      ],
+      "image_mentale": "Imagine trois bâtonnets attachés bout à bout.",
+      "regle_ou_methode": "Suis le contour et compte les côtés droits.",
+      "exemples": [
+        "Suis les côtés : un, deux, trois. Le contour est fermé. C’est un triangle.",
+        "Un triangle tourné sur une pointe reste un triangle."
+      ],
+      "piege": "Un triangle n’a pas besoin de reposer sur un côté horizontal.",
+      "astuce_memoire": "Triangle : trois côtés.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Combien de côtés droits a un triangle ?",
+          "choix": [
+            "Quatre",
+            "Trois",
+            "Deux"
+          ],
+          "rep": "Trois",
+          "expl": "Un triangle possède trois côtés."
+        },
+        {
+          "q": "Un triangle tourné est-il toujours un triangle ?",
+          "choix": [
+            "Non",
+            "Seulement s’il est grand",
+            "Oui"
+          ],
+          "rep": "Oui",
+          "expl": "Tourner la figure ne change pas ses côtés."
+        },
+        {
+          "q": "Une forme fermée a quatre côtés droits. Est-ce un triangle ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Seulement si elle est petite"
+          ],
+          "rep": "Non",
+          "expl": "Un triangle a trois côtés."
+        }
+      ],
+      "id": "REV-MA-GS-04"
+    },
+    {
+      "axe": "Explorer des grandeurs : la longueur, la masse",
+      "titre": "Comparer des longueurs",
+      "emoji": "📏",
+      "en_une_phrase": "Pour comparer deux longueurs, aligne une extrémité des objets.",
+      "comprendre": "Tu connais des crayons longs et courts. Si leurs bouts sont alignés, tu vois lequel dépasse. Cela aide à comparer leur longueur.",
+      "essentiel": [
+        "Place les objets côte à côte.",
+        "Aligne un bout de chaque objet.",
+        "Regarde lequel va le plus loin."
+      ],
+      "image_mentale": "Imagine deux crayons posés contre le même mur.",
+      "regle_ou_methode": "Aligne un bout, puis regarde l’autre bout.",
+      "exemples": [
+        "Aligne deux crayons à gauche. Le rouge dépasse à droite. Le rouge est plus long.",
+        "Si les deux crayons finissent au même endroit, ils ont la même longueur."
+      ],
+      "piege": "Des crayons décalés peuvent tromper ton regard : aligne-les.",
+      "astuce_memoire": "Même départ, on regarde l’arrivée.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Que faut-il aligner pour comparer deux crayons ?",
+          "choix": [
+            "Le milieu des crayons",
+            "Leur couleur",
+            "Un bout de chaque crayon"
+          ],
+          "rep": "Un bout de chaque crayon",
+          "expl": "Un départ commun permet de voir lequel dépasse."
+        },
+        {
+          "q": "Deux crayons partent du même point et finissent au même endroit. Sont-ils aussi longs ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "On ne peut pas les comparer"
+          ],
+          "rep": "Oui",
+          "expl": "Avec le même départ et la même fin, les longueurs sont égales."
+        },
+        {
+          "q": "Un crayon rouge et un bleu partent du même endroit. Le bleu dépasse. Lequel est le plus long ?",
+          "choix": [
+            "Le rouge",
+            "Le bleu",
+            "Ils sont égaux"
+          ],
+          "rep": "Le bleu",
+          "expl": "Le bleu va plus loin à partir du même point."
+        }
+      ],
+      "id": "REV-MA-GS-05"
+    },
+    {
+      "axe": "Se familiariser avec les motifs organisés",
+      "titre": "Continuer un motif",
+      "emoji": "🟦",
+      "en_une_phrase": "Un motif répété suit toujours le même ordre.",
+      "comprendre": "Tu as déjà vu des perles enfilées. Leurs couleurs peuvent suivre une règle. Chercher ce qui se répète permet de continuer la suite.",
+      "essentiel": [
+        "Observe plusieurs éléments.",
+        "Trouve le petit groupe qui revient.",
+        "Répète ce groupe dans le même ordre."
+      ],
+      "image_mentale": "Imagine un collier : rouge, bleu, rouge, bleu.",
+      "regle_ou_methode": "Dis le groupe qui se répète avant de continuer.",
+      "exemples": [
+        "Observe : rouge, bleu, rouge, bleu. Le groupe est rouge puis bleu. Après le dernier bleu vient rouge.",
+        "Rond, carré, rond, carré : le suivant est un rond."
+      ],
+      "piege": "Ne choisis pas une couleur au hasard : garde l’ordre.",
+      "astuce_memoire": "Repère le groupe, puis recommence.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Après rouge, bleu, rouge, bleu, quelle couleur vient ?",
+          "choix": [
+            "Rouge",
+            "Bleu",
+            "Vert"
+          ],
+          "rep": "Rouge",
+          "expl": "Le groupe rouge puis bleu recommence."
+        },
+        {
+          "q": "Dans rond, carré, rond, carré, quel groupe se répète ?",
+          "choix": [
+            "Carré, carré",
+            "Rond, carré",
+            "Rond, rond"
+          ],
+          "rep": "Rond, carré",
+          "expl": "Rond puis carré revient dans cet ordre."
+        },
+        {
+          "q": "Une suite est rouge, rouge, bleu, rouge, rouge, bleu. Que vient-il ensuite ?",
+          "choix": [
+            "Bleu",
+            "Vert",
+            "Rouge"
+          ],
+          "rep": "Rouge",
+          "expl": "Le groupe rouge, rouge, bleu recommence."
+        }
+      ],
+      "id": "REV-MA-GS-06"
+    }
+  ]
+}

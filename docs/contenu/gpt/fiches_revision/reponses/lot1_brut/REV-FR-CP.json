@@ -1,0 +1,328 @@
+{
+  "classe": "CP",
+  "niveau_appli": "CP",
+  "age": "6-7 ans",
+  "matiere": "Français",
+  "code": "FR",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Lecture",
+      "titre": "Assembler les sons",
+      "emoji": "🔤",
+      "en_une_phrase": "Pour lire une syllabe, assemble les sons des lettres.",
+      "comprendre": "Tu sais écouter les sons des mots. Les lettres peuvent représenter ces sons. En les assemblant, tu lis une syllabe.",
+      "essentiel": [
+        "Observe les lettres.",
+        "Dis les sons dans l’ordre.",
+        "Assemble-les sans les séparer."
+      ],
+      "image_mentale": "Imagine deux wagons qui se rejoignent.",
+      "regle_ou_methode": "Lis les sons de gauche à droite et assemble-les.",
+      "exemples": [
+        "Dans « ma », m donne le son m et a donne le son a. Assemble : ma.",
+        "Dans « lu », l et u donnent ensemble « lu »."
+      ],
+      "piege": "Ne dis pas seulement le nom des lettres : assemble leurs sons.",
+      "astuce_memoire": "Les sons s’accrochent comme des wagons.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Que lit-on avec m et a ?",
+          "choix": [
+            "la",
+            "ma",
+            "mi"
+          ],
+          "rep": "ma",
+          "expl": "Les sons m et a donnent ma."
+        },
+        {
+          "q": "Que lit-on avec l et u ?",
+          "choix": [
+            "la",
+            "mu",
+            "lu"
+          ],
+          "rep": "lu",
+          "expl": "Les sons l et u donnent lu."
+        },
+        {
+          "q": "Tu lis s puis a. Quelle syllabe obtiens-tu ?",
+          "choix": [
+            "sa",
+            "as",
+            "si"
+          ],
+          "rep": "sa",
+          "expl": "En gardant cet ordre, les sons forment sa."
+        }
+      ],
+      "id": "REV-FR-CP-01"
+    },
+    {
+      "axe": "Lecture",
+      "titre": "Comprendre qui agit",
+      "emoji": "📖",
+      "en_une_phrase": "Pour comprendre une phrase, cherche qui fait l’action.",
+      "comprendre": "Tu sais raconter ce que fait un ami. Une phrase écrite peut raconter une action. Chercher qui agit aide à comprendre la scène.",
+      "essentiel": [
+        "Lis ou écoute la phrase.",
+        "Cherche l’action.",
+        "Demande-toi qui fait cette action."
+      ],
+      "image_mentale": "Imagine une scène avec son personnage en mouvement.",
+      "regle_ou_methode": "Demande-toi : qui fait quoi ?",
+      "exemples": [
+        "« Le chat dort. » L’action est dormir. Qui dort ? Le chat.",
+        "« Le chien court. » C’est le chien qui court."
+      ],
+      "piege": "Un objet cité dans la phrase n’est pas toujours celui qui agit.",
+      "astuce_memoire": "Qui ? Puis que fait-il ?",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Dans « le chat dort », qui dort ?",
+          "choix": [
+            "Le panier",
+            "Le chien",
+            "Le chat"
+          ],
+          "rep": "Le chat",
+          "expl": "La phrase dit que le chat dort."
+        },
+        {
+          "q": "Dans « le chien court », que fait le chien ?",
+          "choix": [
+            "Il court",
+            "Il dort",
+            "Il mange"
+          ],
+          "rep": "Il court",
+          "expl": "La phrase dit qu’il court."
+        },
+        {
+          "q": "« Le chat regarde le chien. » Qui regarde ?",
+          "choix": [
+            "Le chien",
+            "Le chat",
+            "Le panier"
+          ],
+          "rep": "Le chat",
+          "expl": "Le chat fait l’action de regarder."
+        }
+      ],
+      "id": "REV-FR-CP-02"
+    },
+    {
+      "axe": "Écriture",
+      "titre": "Écrire une phrase",
+      "emoji": "✏️",
+      "en_une_phrase": "Une phrase écrite commence par une majuscule et finit par un signe de ponctuation.",
+      "comprendre": "Tu dis déjà des phrases pour raconter. À l’écrit, des signes montrent où la phrase commence et finit. Cela aide le lecteur à la suivre.",
+      "essentiel": [
+        "Commence par une majuscule.",
+        "Sépare les mots par des espaces.",
+        "Termine par un point si tu racontes."
+      ],
+      "image_mentale": "Imagine une porte pour entrer et une barrière pour finir.",
+      "regle_ou_methode": "Relis et vérifie la majuscule, les espaces et le point.",
+      "exemples": [
+        "Tu veux écrire que le chat dort. Écris « Le chat dort. » Vérifie la majuscule et le point.",
+        "« Le lapin saute. » est une phrase qui raconte."
+      ],
+      "piege": "Ne colle pas tous les mots : laisse des espaces.",
+      "astuce_memoire": "Majuscule au départ, point à l’arrivée.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Quel signe termine « Le chat dort. » ?",
+          "choix": [
+            "Un point",
+            "Une virgule",
+            "Une lettre"
+          ],
+          "rep": "Un point",
+          "expl": "Le point termine cette phrase."
+        },
+        {
+          "q": "Comment commence une phrase écrite ?",
+          "choix": [
+            "Par un point",
+            "Par une majuscule",
+            "Par une virgule"
+          ],
+          "rep": "Par une majuscule",
+          "expl": "La phrase commence par une majuscule."
+        },
+        {
+          "q": "Quelle phrase a une majuscule, des espaces et un point ?",
+          "choix": [
+            "Lechatdort.",
+            "le chat dort",
+            "Le chat dort."
+          ],
+          "rep": "Le chat dort.",
+          "expl": "Elle a des espaces, une majuscule et un point."
+        }
+      ],
+      "id": "REV-FR-CP-03"
+    },
+    {
+      "axe": "Oral",
+      "titre": "Écouter une consigne",
+      "emoji": "👂",
+      "en_une_phrase": "Pour réussir une consigne, écoute ce qu’il faut faire et dans quel ordre.",
+      "comprendre": "Tu connais des jeux avec des règles. Une consigne dit aussi quoi faire. Écouter chaque étape aide à ne rien oublier.",
+      "essentiel": [
+        "Écoute jusqu’au bout.",
+        "Repère les actions demandées.",
+        "Fais les actions dans l’ordre."
+      ],
+      "image_mentale": "Imagine deux cases : première action, puis deuxième action.",
+      "regle_ou_methode": "Redis la consigne avec tes mots avant de commencer.",
+      "exemples": [
+        "« Prends le crayon, puis dessine un rond. » Prends le crayon. Ensuite, dessine un rond.",
+        "« Ouvre le livre, puis montre le chat. » Ouvre d’abord le livre."
+      ],
+      "piege": "Ne commence pas avant la fin si tu risques de manquer une étape.",
+      "astuce_memoire": "J’écoute, je redis, j’agis.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Dans « prends le crayon, puis dessine », que fais-tu d’abord ?",
+          "choix": [
+            "Tu dessines",
+            "Tu prends le crayon",
+            "Tu ranges le livre"
+          ],
+          "rep": "Tu prends le crayon",
+          "expl": "Prendre le crayon est la première étape."
+        },
+        {
+          "q": "Pourquoi redire une consigne ?",
+          "choix": [
+            "Pour changer ses mots au hasard",
+            "Pour ne pas écouter",
+            "Pour vérifier qu’on l’a comprise"
+          ],
+          "rep": "Pour vérifier qu’on l’a comprise",
+          "expl": "La reformulation aide à vérifier les étapes."
+        },
+        {
+          "q": "« Ouvre le livre, puis montre le chat. » Quelle est la deuxième action ?",
+          "choix": [
+            "Montrer le chat",
+            "Ouvrir le livre",
+            "Fermer les yeux"
+          ],
+          "rep": "Montrer le chat",
+          "expl": "Montrer le chat vient après ouvrir le livre."
+        }
+      ],
+      "id": "REV-FR-CP-04"
+    },
+    {
+      "axe": "Vocabulaire",
+      "titre": "Les mots de sens contraire",
+      "emoji": "↔️",
+      "en_une_phrase": "Deux mots contraires expriment des idées opposées.",
+      "comprendre": "Tu connais les mots chaud et froid. Ils disent des choses opposées. Les mots contraires aident à décrire les différences.",
+      "essentiel": [
+        "Chaud et froid sont contraires.",
+        "Grand et petit peuvent être contraires.",
+        "Le contexte aide à choisir le bon mot."
+      ],
+      "image_mentale": "Imagine deux flèches qui partent en sens opposés.",
+      "regle_ou_methode": "Cherche le mot qui dit l’idée opposée.",
+      "exemples": [
+        "Une soupe chaude n’est pas froide. Le contraire de chaud est froid.",
+        "Un petit sac peut être opposé à un grand sac."
+      ],
+      "piege": "Deux mots différents ne sont pas forcément contraires : pense à leur sens.",
+      "astuce_memoire": "Les contraires regardent dans deux directions.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Quel est le contraire de chaud ?",
+          "choix": [
+            "Rouge",
+            "Soupe",
+            "Froid"
+          ],
+          "rep": "Froid",
+          "expl": "Froid exprime l’idée opposée à chaud."
+        },
+        {
+          "q": "Quel mot est contraire de grand ?",
+          "choix": [
+            "Petit",
+            "Rapide",
+            "Sac"
+          ],
+          "rep": "Petit",
+          "expl": "Petit est l’opposé de grand dans cet exemple."
+        },
+        {
+          "q": "Le sac est petit. Quel mot décrit le sac contraire ?",
+          "choix": [
+            "Bleu",
+            "Grand",
+            "Lourd"
+          ],
+          "rep": "Grand",
+          "expl": "Grand exprime l’idée opposée à petit."
+        }
+      ],
+      "id": "REV-FR-CP-05"
+    },
+    {
+      "axe": "Grammaire et orthographe",
+      "titre": "Un ou plusieurs",
+      "emoji": "🧸",
+      "en_une_phrase": "Dans beaucoup de noms, un s final indique plusieurs choses.",
+      "comprendre": "Tu peux avoir un livre ou plusieurs livres. À l’écrit, le nom change souvent pour montrer cette différence. Le petit s final aide le lecteur.",
+      "essentiel": [
+        "Un livre : il y en a un.",
+        "Des livres : il y en a plusieurs.",
+        "Souvent, on ajoute s au nom au pluriel."
+      ],
+      "image_mentale": "Imagine un livre, puis plusieurs livres avec un s.",
+      "regle_ou_methode": "Cherche si l’on parle d’un ou de plusieurs. Vérifie le nom.",
+      "exemples": [
+        "Un chat devient plusieurs chats. On ajoute s à chat. On écrit « des chats ».",
+        "Un vélo devient plusieurs vélos."
+      ],
+      "piege": "Le s ne s’entend pas toujours : vérifie-le à l’écrit.",
+      "astuce_memoire": "Plusieurs chats : pense au s.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Comment écrit-on plusieurs chats ?",
+          "choix": [
+            "des chats",
+            "des chat",
+            "un chats"
+          ],
+          "rep": "des chats",
+          "expl": "Le nom chats prend un s au pluriel."
+        },
+        {
+          "q": "Quel groupe parle d’un seul vélo ?",
+          "choix": [
+            "des vélos",
+            "un vélo",
+            "les vélos"
+          ],
+          "rep": "un vélo",
+          "expl": "Un vélo désigne un seul vélo."
+        },
+        {
+          "q": "Tu écris « trois livre ». Que faut-il corriger ?",
+          "choix": [
+            "trois livre",
+            "trois livress",
+            "trois livres"
+          ],
+          "rep": "trois livres",
+          "expl": "Livres prend un s pour ces trois livres."
+        }
+      ],
+      "id": "REV-FR-CP-06"
+    }
+  ]
+}

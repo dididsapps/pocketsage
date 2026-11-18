@@ -1,0 +1,434 @@
+{
+  "classe": "CE2",
+  "niveau_appli": "CE2",
+  "age": "8-9 ans",
+  "matiere": "Mathématiques",
+  "code": "MA",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Lire les nombres jusqu’à 10 000",
+      "emoji": "🔢",
+      "en_une_phrase": "Dans un nombre, la position d’un chiffre détermine sa valeur.",
+      "comprendre": "Tu connais les centaines et les dizaines. Mille unités forment un millier. Les rangs permettent de décomposer un nombre comme des boîtes de tailles différentes.",
+      "essentiel": [
+        "Un millier vaut 1 000 unités.",
+        "Une centaine vaut 100 unités.",
+        "La position du chiffre indique sa valeur."
+      ],
+      "image_mentale": "Imagine des boîtes pour les milliers, centaines, dizaines et unités.",
+      "regle_ou_methode": "Repère chaque chiffre et multiplie-le par la valeur de son rang.",
+      "exemples": [
+        "Dans 3 245, le 3 vaut 3 000, le 2 vaut 200, le 4 vaut 40 et le 5 vaut 5. Ensemble, cela fait 3 245.",
+        "Dans 4 018, il y a 4 milliers, 0 centaine, 1 dizaine et 8 unités."
+      ],
+      "piege": "Le zéro garde une place même s’il n’y a aucun groupe de ce rang.",
+      "astuce_memoire": "Milliers, centaines, dizaines, unités.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Combien vaut le 3 dans 3 245 ?",
+          "choix": [
+            "300",
+            "3 000",
+            "3"
+          ],
+          "rep": "3 000",
+          "expl": "Le 3 est au rang des milliers."
+        },
+        {
+          "q": "Combien y a-t-il de centaines dans la décomposition de 4 018 ?",
+          "choix": [
+            "1",
+            "4",
+            "0"
+          ],
+          "rep": "0",
+          "expl": "Le chiffre des centaines est zéro."
+        },
+        {
+          "q": "Deux milliers, trois centaines et cinq unités : quel nombre ?",
+          "choix": [
+            "2 305",
+            "2 350",
+            "2 035"
+          ],
+          "rep": "2 305",
+          "expl": "2 000 + 300 + 5 = 2 305."
+        }
+      ],
+      "id": "REV-MA-CE2-01"
+    },
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Une fraction comme mesure",
+      "emoji": "📏",
+      "en_une_phrase": "Un demi est une des deux parts égales d’une unité.",
+      "comprendre": "Tu sais partager une bande en deux parts égales. Chaque part mesure un demi de la bande entière. On peut utiliser cette part pour mesurer des longueurs.",
+      "essentiel": [
+        "1/2 se lit « un demi ».",
+        "Deux demis font une unité entière.",
+        "L’unité doit être partagée en deux parts égales."
+      ],
+      "image_mentale": "Imagine une bande unité coupée en deux morceaux égaux.",
+      "regle_ou_methode": "Choisis l’unité, partage-la en deux et compte les moitiés.",
+      "exemples": [
+        "Une bande unité est partagée en deux parts égales. Une part mesure 1/2 unité. Les deux parts réunies mesurent une unité.",
+        "Une bande partagée en quatre parts égales : deux quarts mesurent une demi-unité."
+      ],
+      "piege": "Deux morceaux inégaux ne sont pas deux moitiés.",
+      "astuce_memoire": "Deux demis reconstituent un entier.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Comment lit-on 1/2 ?",
+          "choix": [
+            "Deux entiers",
+            "Un quart",
+            "Un demi"
+          ],
+          "rep": "Un demi",
+          "expl": "1/2 se lit « un demi »."
+        },
+        {
+          "q": "Combien de demis forment une unité ?",
+          "choix": [
+            "Deux",
+            "Trois",
+            "Quatre"
+          ],
+          "rep": "Deux",
+          "expl": "Deux parts égales de 1/2 forment une unité."
+        },
+        {
+          "q": "Une bande est partagée en quatre parts égales. Combien de quarts font une moitié ?",
+          "choix": [
+            "Un",
+            "Deux",
+            "Trois"
+          ],
+          "rep": "Deux",
+          "expl": "Deux quarts couvrent la moitié de la bande."
+        }
+      ],
+      "id": "REV-MA-CE2-02"
+    },
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Additionner en décomposant",
+      "emoji": "➕",
+      "en_une_phrase": "On peut additionner les dizaines puis les unités.",
+      "comprendre": "Tu sais qu’un nombre contient des dizaines et des unités. En séparant ces parties, un calcul peut devenir plus simple. On rassemble ensuite les résultats.",
+      "essentiel": [
+        "Décompose chaque nombre.",
+        "Additionne les dizaines et les unités.",
+        "Réunis les résultats."
+      ],
+      "image_mentale": "Imagine deux boîtes : dizaines et unités.",
+      "regle_ou_methode": "Décompose, calcule chaque partie, puis rassemble.",
+      "exemples": [
+        "Pour 34 + 25, calcule 30 + 20 = 50. Puis 4 + 5 = 9. Le total est 59.",
+        "42 + 16 = 40 + 10 + 2 + 6 = 58."
+      ],
+      "piege": "Ne confonds pas 20 avec 2 : respecte la valeur des chiffres.",
+      "astuce_memoire": "Dizaines ensemble, unités ensemble.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Combien font 34 + 25 ?",
+          "choix": [
+            "59",
+            "49",
+            "69"
+          ],
+          "rep": "59",
+          "expl": "30 + 20 + 4 + 5 = 59."
+        },
+        {
+          "q": "Combien font 42 + 16 ?",
+          "choix": [
+            "48",
+            "58",
+            "68"
+          ],
+          "rep": "58",
+          "expl": "40 + 10 + 2 + 6 = 58."
+        },
+        {
+          "q": "Pour 63 + 24, quel calcul est correct ?",
+          "choix": [
+            "6 + 2 + 3 + 4",
+            "60 + 2 + 3 + 4",
+            "60 + 20 + 3 + 4"
+          ],
+          "rep": "60 + 20 + 3 + 4",
+          "expl": "Cette décomposition respecte les dizaines et les unités."
+        }
+      ],
+      "id": "REV-MA-CE2-03"
+    },
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Multiplier en décomposant",
+      "emoji": "✖️",
+      "en_une_phrase": "On peut décomposer un nombre pour faciliter une multiplication.",
+      "comprendre": "Tu sais calculer avec des groupes égaux. Si un groupe contient des dizaines et des unités, on peut compter séparément chaque partie. Puis on réunit les résultats.",
+      "essentiel": [
+        "Décompose un nombre en dizaines et unités.",
+        "Multiplie chaque partie.",
+        "Additionne les résultats."
+      ],
+      "image_mentale": "Imagine trois boîtes contenant chacune dix objets et deux objets seuls.",
+      "regle_ou_methode": "Multiplie les dizaines puis les unités et additionne.",
+      "exemples": [
+        "Pour 3 × 12, décompose 12 en 10 + 2. Calcule 3 × 10 = 30 et 3 × 2 = 6. Donc 3 × 12 = 36.",
+        "2 × 14 = 2 × 10 + 2 × 4 = 28."
+      ],
+      "piege": "N’oublie pas de multiplier aussi les unités.",
+      "astuce_memoire": "Chaque partie est multipliée.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Combien font 3 × 12 ?",
+          "choix": [
+            "32",
+            "36",
+            "15"
+          ],
+          "rep": "36",
+          "expl": "Trois dizaines et six unités font trente-six."
+        },
+        {
+          "q": "Combien font 2 × 14 ?",
+          "choix": [
+            "24",
+            "16",
+            "28"
+          ],
+          "rep": "28",
+          "expl": "Deux dizaines et huit unités font vingt-huit."
+        },
+        {
+          "q": "Pour calculer 4 × 12, quelle décomposition convient ?",
+          "choix": [
+            "4 × 10 + 4 × 2",
+            "4 × 10 + 2",
+            "4 + 10 + 2"
+          ],
+          "rep": "4 × 10 + 4 × 2",
+          "expl": "On multiplie les deux parties de douze par quatre."
+        }
+      ],
+      "id": "REV-MA-CE2-04"
+    },
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Partager avec un reste",
+      "emoji": "🧺",
+      "en_une_phrase": "Une division partage équitablement et peut laisser un reste.",
+      "comprendre": "Tu as déjà distribué des objets entre amis. Parfois, après une distribution égale, il reste des objets. Le reste doit être trop petit pour donner un objet de plus à chacun.",
+      "essentiel": [
+        "Chaque groupe reçoit la même quantité.",
+        "Le reste indique ce qui n’est pas distribué.",
+        "Le reste est plus petit que le nombre de groupes."
+      ],
+      "image_mentale": "Imagine des billes distribuées une par une dans trois boîtes.",
+      "regle_ou_methode": "Distribue équitablement, puis compte ce que chaque groupe reçoit et le reste.",
+      "exemples": [
+        "Partage 14 billes entre 3 enfants. Chacun reçoit 4 billes : 3 × 4 = 12. Il reste 2 billes.",
+        "Partage 10 billes entre 2 enfants : chacun reçoit 5 billes et il ne reste rien."
+      ],
+      "piege": "Avec 3 enfants, un reste de 3 pourrait encore être distribué : il est donc trop grand.",
+      "astuce_memoire": "Le reste est plus petit que le nombre de groupes.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : 14 billes partagées entre 3 enfants : combien chacun reçoit-il ?",
+          "choix": [
+            "3",
+            "5",
+            "4"
+          ],
+          "rep": "4",
+          "expl": "Trois groupes de quatre utilisent douze billes."
+        },
+        {
+          "q": "Dans ce partage de 14 entre 3, combien reste-t-il ?",
+          "choix": [
+            "2",
+            "3",
+            "4"
+          ],
+          "rep": "2",
+          "expl": "14 − 12 = 2."
+        },
+        {
+          "q": "10 billes partagées entre 2 enfants : quel est le reste ?",
+          "choix": [
+            "2",
+            "0",
+            "5"
+          ],
+          "rep": "0",
+          "expl": "Deux groupes de cinq utilisent les dix billes."
+        }
+      ],
+      "id": "REV-MA-CE2-05"
+    },
+    {
+      "axe": "Grandeurs et mesures",
+      "titre": "Lire une durée",
+      "emoji": "⏱️",
+      "en_une_phrase": "Une durée est le temps écoulé entre deux moments.",
+      "comprendre": "Tu sais lire une heure sur une horloge. Pour connaître la durée d’une activité, cherche le temps entre son début et sa fin. Une heure vaut 60 minutes.",
+      "essentiel": [
+        "Une heure contient 60 minutes.",
+        "Une demi-heure contient 30 minutes.",
+        "La durée relie un début et une fin."
+      ],
+      "image_mentale": "Imagine une ligne du temps entre deux horaires.",
+      "regle_ou_methode": "Avance du début à la fin en comptant les minutes.",
+      "exemples": [
+        "Le jeu commence à 14 h 15 et finit à 14 h 45. De 15 à 45, il s’écoule 30 minutes. Le jeu dure une demi-heure.",
+        "De 9 h à 10 h, il s’écoule une heure."
+      ],
+      "piege": "L’heure de fin n’est pas la durée : calcule l’écart.",
+      "astuce_memoire": "Début, fin, temps écoulé.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Combien de minutes dans une heure ?",
+          "choix": [
+            "60",
+            "100",
+            "30"
+          ],
+          "rep": "60",
+          "expl": "Une heure contient soixante minutes."
+        },
+        {
+          "q": "De 14 h 15 à 14 h 45, combien de temps ?",
+          "choix": [
+            "15 minutes",
+            "30 minutes",
+            "45 minutes"
+          ],
+          "rep": "30 minutes",
+          "expl": "45 − 15 = 30 minutes."
+        },
+        {
+          "q": "Un jeu va de 9 h à 10 h 30. Combien dure-t-il ?",
+          "choix": [
+            "30 minutes",
+            "2 heures",
+            "1 h 30"
+          ],
+          "rep": "1 h 30",
+          "expl": "De 9 h à 10 h, il y a une heure, puis trente minutes."
+        }
+      ],
+      "id": "REV-MA-CE2-06"
+    },
+    {
+      "axe": "Grandeurs et mesures",
+      "titre": "Périmètre d’une figure",
+      "emoji": "📐",
+      "en_une_phrase": "Le périmètre est la longueur du contour d’une figure.",
+      "comprendre": "Tu peux entourer un jardin avec une ficelle. La longueur de cette ficelle suit le contour du jardin. Cette longueur est son périmètre.",
+      "essentiel": [
+        "Le périmètre mesure un contour.",
+        "On additionne les longueurs de tous les côtés.",
+        "Toutes les longueurs doivent utiliser la même unité."
+      ],
+      "image_mentale": "Imagine une ficelle qui fait le tour de la figure.",
+      "regle_ou_methode": "Additionne les longueurs de chaque côté.",
+      "exemples": [
+        "Un rectangle a deux côtés de 4 cm et deux côtés de 3 cm. Son périmètre est 4 + 3 + 4 + 3 = 14 cm.",
+        "Un carré de côté 2 cm a pour périmètre 2 + 2 + 2 + 2 = 8 cm."
+      ],
+      "piege": "Ne confonds pas le contour avec la surface à l’intérieur.",
+      "astuce_memoire": "Périmètre : je fais le tour.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Que mesure le périmètre ?",
+          "choix": [
+            "La surface intérieure",
+            "Le contour",
+            "La longueur d’un seul côté"
+          ],
+          "rep": "Le contour",
+          "expl": "Le périmètre est la longueur du contour."
+        },
+        {
+          "q": "Quel est le périmètre d’un carré de côté 2 cm ?",
+          "choix": [
+            "4 cm",
+            "6 cm",
+            "8 cm"
+          ],
+          "rep": "8 cm",
+          "expl": "Ses quatre côtés mesurent chacun deux centimètres."
+        },
+        {
+          "q": "Un rectangle mesure 4 cm par 3 cm. Quel est son périmètre ?",
+          "choix": [
+            "14 cm",
+            "7 cm",
+            "12 cm"
+          ],
+          "rep": "14 cm",
+          "expl": "4 + 3 + 4 + 3 = 14 cm."
+        }
+      ],
+      "id": "REV-MA-CE2-07"
+    },
+    {
+      "axe": "Espace et géométrie",
+      "titre": "Reconnaître un angle droit",
+      "emoji": "📐",
+      "en_une_phrase": "Un angle droit a la même ouverture que le coin droit d’une équerre.",
+      "comprendre": "Tu connais le coin d’un carré. On peut comparer un angle à ce coin. Une équerre permet de vérifier précisément cette ouverture.",
+      "essentiel": [
+        "Un carré possède quatre angles droits.",
+        "Un rectangle possède quatre angles droits.",
+        "La longueur des côtés ne change pas l’ouverture de l’angle."
+      ],
+      "image_mentale": "Imagine le coin de l’équerre posé exactement sur le sommet.",
+      "regle_ou_methode": "Place le coin droit de l’équerre sur le sommet et aligne ses deux côtés.",
+      "exemples": [
+        "Pose le coin droit de l’équerre sur un angle. Si les deux côtés suivent ceux de l’équerre, l’angle est droit.",
+        "Chaque angle d’un rectangle est droit."
+      ],
+      "piege": "Des côtés plus longs ne rendent pas l’angle plus ouvert.",
+      "astuce_memoire": "Le coin droit de l’équerre est le modèle.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Quel outil permet de vérifier un angle droit ?",
+          "choix": [
+            "Une balance",
+            "Un thermomètre",
+            "Une équerre"
+          ],
+          "rep": "Une équerre",
+          "expl": "On compare l’angle au coin droit de l’équerre."
+        },
+        {
+          "q": "Combien d’angles droits possède un rectangle ?",
+          "choix": [
+            "Quatre",
+            "Deux",
+            "Trois"
+          ],
+          "rep": "Quatre",
+          "expl": "Les quatre angles d’un rectangle sont droits."
+        },
+        {
+          "q": "On prolonge les côtés d’un angle droit sans changer leur direction. Que devient l’angle ?",
+          "choix": [
+            "Il devient forcément plus ouvert",
+            "Il reste droit",
+            "Il disparaît"
+          ],
+          "rep": "Il reste droit",
+          "expl": "L’ouverture reste la même."
+        }
+      ],
+      "id": "REV-MA-CE2-08"
+    }
+  ]
+}

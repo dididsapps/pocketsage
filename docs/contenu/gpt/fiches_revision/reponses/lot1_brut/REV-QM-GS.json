@@ -1,0 +1,328 @@
+{
+  "classe": "GS",
+  "niveau_appli": "GS",
+  "age": "5-6 ans",
+  "matiere": "Explorer le monde",
+  "code": "QM",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Se repérer dans le temps",
+      "titre": "Avant et après",
+      "emoji": "⏳",
+      "en_une_phrase": "Avant et après indiquent l’ordre des événements.",
+      "comprendre": "Tu connais les moments de ta journée. Certains arrivent avant les autres. Ces mots aident à raconter leur ordre.",
+      "essentiel": [
+        "Avant indique ce qui vient en premier.",
+        "Après indique ce qui vient ensuite.",
+        "Une histoire suit un ordre."
+      ],
+      "image_mentale": "Imagine des images posées l’une après l’autre.",
+      "regle_ou_methode": "Choisis un événement. Cherche ce qui arrive avant ou après.",
+      "exemples": [
+        "Tu te savonnes, puis tu rinces. Se savonner vient avant rincer. Rincer vient après se savonner.",
+        "Après avoir mis tes chaussures, tu peux sortir."
+      ],
+      "piege": "Après ne veut pas dire avant : imagine les étapes.",
+      "astuce_memoire": "Avant, puis après.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Que fait-on avant de rincer des mains savonnées ?",
+          "choix": [
+            "On les sèche",
+            "On les savonne",
+            "On les cache"
+          ],
+          "rep": "On les savonne",
+          "expl": "On met le savon avant de le rincer."
+        },
+        {
+          "q": "Tu plantes puis tu arroses. Que fais-tu après avoir planté ?",
+          "choix": [
+            "Tu plantes",
+            "Tu prends la graine avant de planter",
+            "Tu arroses"
+          ],
+          "rep": "Tu arroses",
+          "expl": "L’arrosage vient après la plantation ici."
+        },
+        {
+          "q": "Une graine est plantée, puis pousse. Que se passe-t-il avant la pousse ?",
+          "choix": [
+            "La graine est plantée",
+            "La plante a déjà grandi",
+            "La fleur est déjà fanée"
+          ],
+          "rep": "La graine est plantée",
+          "expl": "La graine est plantée avant de pousser dans cet exemple."
+        }
+      ],
+      "id": "REV-QM-GS-01"
+    },
+    {
+      "axe": "Se repérer dans l’espace",
+      "titre": "Devant et derrière",
+      "emoji": "📍",
+      "en_une_phrase": "Devant et derrière indiquent une position par rapport à un repère.",
+      "comprendre": "Tu peux te placer devant une porte. Tu peux aussi te placer derrière une personne. Il faut savoir par rapport à quoi on se situe.",
+      "essentiel": [
+        "Choisis un repère.",
+        "Devant indique un côté.",
+        "Derrière indique l’autre côté."
+      ],
+      "image_mentale": "Imagine un train : une locomotive devant, des wagons derrière.",
+      "regle_ou_methode": "Nomme le repère, puis décris la place.",
+      "exemples": [
+        "Dans le train, la locomotive est en tête. Un wagon la suit. Le wagon est derrière la locomotive.",
+        "Un enfant placé face à une porte peut être devant cette porte."
+      ],
+      "piege": "Devant quoi ? N’oublie pas de nommer le repère.",
+      "astuce_memoire": "Dans le train, les wagons suivent la locomotive.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Un wagon suit la locomotive. Où est-il ?",
+          "choix": [
+            "Devant la locomotive",
+            "Dans la locomotive",
+            "Derrière la locomotive"
+          ],
+          "rep": "Derrière la locomotive",
+          "expl": "Le wagon suit la locomotive."
+        },
+        {
+          "q": "Pour dire devant ou derrière, que faut-il connaître ?",
+          "choix": [
+            "Le repère",
+            "La couleur",
+            "Le nombre de roues"
+          ],
+          "rep": "Le repère",
+          "expl": "La position est donnée par rapport à quelque chose."
+        },
+        {
+          "q": "Une locomotive est suivie de deux wagons. Que trouve-t-on devant les wagons ?",
+          "choix": [
+            "Une autre locomotive forcément",
+            "La locomotive",
+            "La fin du train"
+          ],
+          "rep": "La locomotive",
+          "expl": "La locomotive est en tête dans cet exemple."
+        }
+      ],
+      "id": "REV-QM-GS-02"
+    },
+    {
+      "axe": "Découvrir le monde du vivant",
+      "titre": "La plante grandit",
+      "emoji": "🌱",
+      "en_une_phrase": "Une plante est vivante et grandit au cours de sa vie.",
+      "comprendre": "Tu as déjà grandi depuis que tu es bébé. Une plante change aussi au fil du temps. On peut observer ses étapes.",
+      "essentiel": [
+        "Une graine peut germer.",
+        "Une jeune plante peut grandir.",
+        "Une plante a besoin d’eau et de lumière."
+      ],
+      "image_mentale": "Imagine une graine, puis une pousse, puis une plante.",
+      "regle_ou_methode": "Observe la même plante à plusieurs moments.",
+      "exemples": [
+        "On plante une graine de haricot et on l’arrose. Une pousse apparaît. Elle grandit et forme des feuilles.",
+        "Une jeune plante peut devenir une plante plus grande."
+      ],
+      "piege": "Une plante est vivante même si elle ne marche pas.",
+      "astuce_memoire": "Graine, pousse, plante.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Que peut donner une graine de haricot ?",
+          "choix": [
+            "Une plante de haricot",
+            "Un plant de tomate",
+            "Un arbre fruitier"
+          ],
+          "rep": "Une plante de haricot",
+          "expl": "La graine peut germer et donner une plante."
+        },
+        {
+          "q": "De quoi une plante a-t-elle notamment besoin ?",
+          "choix": [
+            "Seulement de lumière",
+            "D’eau et de lumière",
+            "Seulement d’eau"
+          ],
+          "rep": "D’eau et de lumière",
+          "expl": "L’eau et la lumière aident la plante à vivre."
+        },
+        {
+          "q": "Une plante ne marche pas. Peut-elle être vivante ?",
+          "choix": [
+            "Non",
+            "Seulement si elle marche",
+            "Oui"
+          ],
+          "rep": "Oui",
+          "expl": "Une plante est vivante même si elle ne marche pas."
+        }
+      ],
+      "id": "REV-QM-GS-03"
+    },
+    {
+      "axe": "Découvrir le monde du vivant",
+      "titre": "Prendre soin de ses dents",
+      "emoji": "🪥",
+      "en_une_phrase": "Se brosser les dents aide à garder une bouche propre.",
+      "comprendre": "Après un repas, de petits restes peuvent rester sur les dents. La brosse aide à les enlever. Un adulte peut t’accompagner.",
+      "essentiel": [
+        "Utilise une brosse à dents.",
+        "Brosse toutes les faces des dents.",
+        "Demande de l’aide à un adulte si besoin."
+      ],
+      "image_mentale": "Imagine une petite brosse qui passe sur chaque dent.",
+      "regle_ou_methode": "Avec l’aide d’un adulte, brosse chaque face doucement.",
+      "exemples": [
+        "Après le repas, prends ta brosse. Passe-la sur les dents du haut et du bas. Pense aux faces intérieures et extérieures.",
+        "Le soir, prends le temps de brosser tes dents avant de dormir."
+      ],
+      "piege": "Frotter seulement les dents de devant ne nettoie pas toutes les dents.",
+      "astuce_memoire": "Dessus, dehors, dedans.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Quel objet sert à brosser les dents ?",
+          "choix": [
+            "Un peigne",
+            "Une brosse à dents",
+            "Une cuillère"
+          ],
+          "rep": "Une brosse à dents",
+          "expl": "La brosse à dents sert à nettoyer les dents."
+        },
+        {
+          "q": "Quelles dents faut-il brosser ?",
+          "choix": [
+            "Seulement celles de devant",
+            "Seulement celles du haut",
+            "Celles du haut et du bas"
+          ],
+          "rep": "Celles du haut et du bas",
+          "expl": "Toutes les dents ont besoin d’être brossées."
+        },
+        {
+          "q": "Tu as brossé le devant de tes dents. Que reste-t-il à faire ?",
+          "choix": [
+            "Brosser aussi les autres faces",
+            "Ranger sans rien faire",
+            "Brosser seulement la brosse"
+          ],
+          "rep": "Brosser aussi les autres faces",
+          "expl": "Les autres faces doivent aussi être nettoyées."
+        }
+      ],
+      "id": "REV-QM-GS-04"
+    },
+    {
+      "axe": "Découvrir le monde de la matière et des objets",
+      "titre": "L’eau et la glace",
+      "emoji": "💧",
+      "en_une_phrase": "L’eau liquide peut devenir de la glace quand elle refroidit assez.",
+      "comprendre": "Tu as peut-être déjà vu des glaçons. Ils sont faits d’eau devenue solide. Si la glace se réchauffe, elle peut redevenir liquide.",
+      "essentiel": [
+        "L’eau peut être liquide.",
+        "La glace est de l’eau solide.",
+        "La glace peut fondre."
+      ],
+      "image_mentale": "Imagine un glaçon qui devient une petite flaque.",
+      "regle_ou_methode": "Observe l’eau avant et après refroidissement ou réchauffement.",
+      "exemples": [
+        "On met de l’eau au congélateur. Elle refroidit et devient un glaçon. En se réchauffant, le glaçon fond.",
+        "Un glaçon laissé à température ambiante peut devenir de l’eau liquide."
+      ],
+      "piege": "Un glaçon n’est pas une autre matière : c’est de l’eau solide.",
+      "astuce_memoire": "Glace solide, eau liquide.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Un glaçon est fait de quoi ?",
+          "choix": [
+            "De lait",
+            "De jus de fruit",
+            "D’eau"
+          ],
+          "rep": "D’eau",
+          "expl": "La glace est de l’eau à l’état solide."
+        },
+        {
+          "q": "Quand un glaçon fond, que devient-il ?",
+          "choix": [
+            "De l’eau liquide",
+            "De la vapeur directement",
+            "De la neige"
+          ],
+          "rep": "De l’eau liquide",
+          "expl": "La glace fondue devient de l’eau liquide."
+        },
+        {
+          "q": "On refroidit assez de l’eau liquide. Que peut-elle devenir ?",
+          "choix": [
+            "De l’eau plus chaude",
+            "De la glace",
+            "De la vapeur d’eau"
+          ],
+          "rep": "De la glace",
+          "expl": "En refroidissant assez, l’eau peut geler."
+        }
+      ],
+      "id": "REV-QM-GS-05"
+    },
+    {
+      "axe": "Découvrir le monde de la matière et des objets",
+      "titre": "Choisir un objet utile",
+      "emoji": "🥄",
+      "en_une_phrase": "Un objet peut servir à faire une action précise.",
+      "comprendre": "Tu utilises des objets pour manger ou dessiner. Leur forme aide souvent à comprendre leur usage. Tu choisis selon ce que tu veux faire.",
+      "essentiel": [
+        "Observe l’objet.",
+        "Demande-toi à quoi il sert.",
+        "Choisis l’objet adapté à ton action."
+      ],
+      "image_mentale": "Imagine une cuillère creuse qui transporte la soupe.",
+      "regle_ou_methode": "Dis ton action, puis choisis l’objet utile.",
+      "exemples": [
+        "Tu veux manger une soupe. Choisis un objet qui peut la retenir. La cuillère convient.",
+        "Pour dessiner sur une feuille, tu peux utiliser un crayon."
+      ],
+      "piege": "Tous les objets ne servent pas au même usage : regarde leur forme.",
+      "astuce_memoire": "Une action, un objet utile.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Quel objet permet de manger une soupe ?",
+          "choix": [
+            "Une cuillère",
+            "Une fourchette",
+            "Un couteau"
+          ],
+          "rep": "Une cuillère",
+          "expl": "La cuillère peut contenir un peu de soupe."
+        },
+        {
+          "q": "Quel objet laisse une trace pour dessiner ?",
+          "choix": [
+            "Une gomme",
+            "Un crayon",
+            "Une règle"
+          ],
+          "rep": "Un crayon",
+          "expl": "Le crayon laisse une trace sur la feuille."
+        },
+        {
+          "q": "Tu veux transporter un peu d’eau. Quel objet convient ?",
+          "choix": [
+            "Un mouchoir",
+            "Une feuille de papier",
+            "Un verre"
+          ],
+          "rep": "Un verre",
+          "expl": "Le verre peut contenir de l’eau."
+        }
+      ],
+      "id": "REV-QM-GS-06"
+    }
+  ]
+}

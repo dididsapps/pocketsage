@@ -1,0 +1,434 @@
+{
+  "classe": "CE1",
+  "niveau_appli": "CE1",
+  "age": "7-8 ans",
+  "matiere": "Questionner le monde",
+  "code": "QM",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Questionner le monde du vivant, de la matière et des objets",
+      "titre": "L’eau change d’état",
+      "emoji": "💧",
+      "en_une_phrase": "L’eau peut être liquide ou solide selon les conditions.",
+      "comprendre": "Tu as déjà observé de l’eau et des glaçons. Le glaçon est de l’eau à l’état solide. En le réchauffant, il fond et devient liquide.",
+      "essentiel": [
+        "La glace est de l’eau solide.",
+        "La fusion transforme la glace en eau liquide.",
+        "La solidification transforme l’eau liquide en glace."
+      ],
+      "image_mentale": "Imagine une flèche du glaçon vers une flaque.",
+      "regle_ou_methode": "Observe l’eau avant et après refroidissement ou réchauffement.",
+      "exemples": [
+        "Place de l’eau au congélateur. Elle refroidit puis devient de la glace : c’est la solidification.",
+        "Un glaçon qui fond donne de l’eau liquide : c’est la fusion."
+      ],
+      "piege": "La glace et l’eau liquide sont la même matière dans deux états.",
+      "astuce_memoire": "Fusion : le glaçon fond.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Que devient un glaçon quand il fond ?",
+          "choix": [
+            "De la vapeur directement",
+            "De l’eau liquide",
+            "De la neige"
+          ],
+          "rep": "De l’eau liquide",
+          "expl": "La glace fondue devient de l’eau liquide."
+        },
+        {
+          "q": "Comment appelle-t-on le passage de l’eau liquide à la glace ?",
+          "choix": [
+            "La fusion",
+            "L’évaporation",
+            "La solidification"
+          ],
+          "rep": "La solidification",
+          "expl": "L’eau devient solide lors de la solidification."
+        },
+        {
+          "q": "On réchauffe un glaçon et on obtient une flaque. Que s’est-il produit ?",
+          "choix": [
+            "Une fusion",
+            "Une solidification",
+            "Une évaporation"
+          ],
+          "rep": "Une fusion",
+          "expl": "Le passage de la glace à l’eau liquide est une fusion."
+        }
+      ],
+      "id": "REV-QM-CE1-01"
+    },
+    {
+      "axe": "Questionner le monde du vivant, de la matière et des objets",
+      "titre": "Les besoins d’une plante",
+      "emoji": "🌱",
+      "en_une_phrase": "Une plante verte a besoin notamment d’eau et de lumière pour vivre.",
+      "comprendre": "Tu as vu des plantes dans des pots. Elles grandissent quand leurs besoins sont satisfaits. Pour comprendre ces besoins, on peut comparer des plantations.",
+      "essentiel": [
+        "Une plante verte a besoin d’eau.",
+        "Elle a aussi besoin de lumière.",
+        "Une expérience compare des conditions."
+      ],
+      "image_mentale": "Imagine deux pots identiques : un arrosé et un non arrosé.",
+      "regle_ou_methode": "Change un seul élément à la fois et observe les plantes.",
+      "exemples": [
+        "Place deux plantes semblables au même endroit. Arrose seulement la première. Observe leurs différences au fil des jours.",
+        "Une plante placée près d’une fenêtre peut recevoir de la lumière."
+      ],
+      "piege": "Si plusieurs conditions changent à la fois, on ne sait pas laquelle explique la différence.",
+      "astuce_memoire": "Pour comparer, change un élément à la fois.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Quel élément aide une plante verte à vivre ?",
+          "choix": [
+            "Une chaussure",
+            "Un jouet",
+            "La lumière"
+          ],
+          "rep": "La lumière",
+          "expl": "Une plante verte a besoin de lumière."
+        },
+        {
+          "q": "Dans une expérience sur l’arrosage, que change-t-on ?",
+          "choix": [
+            "La quantité d’eau",
+            "Le pot et la plante et la lumière en même temps",
+            "Le nom de la plante seulement"
+          ],
+          "rep": "La quantité d’eau",
+          "expl": "On change l’eau pour étudier son effet."
+        },
+        {
+          "q": "Deux plantes sont identiques et reçoivent la même lumière. Une seule est arrosée. Que compare-t-on ?",
+          "choix": [
+            "L’effet du nom des pots",
+            "L’effet de l’eau",
+            "L’effet de deux espèces différentes"
+          ],
+          "rep": "L’effet de l’eau",
+          "expl": "L’arrosage est la condition qui change."
+        }
+      ],
+      "id": "REV-QM-CE1-02"
+    },
+    {
+      "axe": "Questionner le monde du vivant, de la matière et des objets",
+      "titre": "Les régimes alimentaires",
+      "emoji": "🐇",
+      "en_une_phrase": "Les animaux ne mangent pas tous les mêmes aliments.",
+      "comprendre": "Tu sais que certains animaux mangent des plantes. D’autres mangent des animaux, ou les deux. Leur alimentation est liée à leur milieu de vie.",
+      "essentiel": [
+        "Un herbivore mange surtout des végétaux.",
+        "Un carnivore mange surtout des animaux.",
+        "Un omnivore mange des aliments d’origine végétale et animale."
+      ],
+      "image_mentale": "Imagine trois assiettes : plantes, animaux, puis les deux.",
+      "regle_ou_methode": "Observe ce que l’animal mange pour décrire son régime.",
+      "exemples": [
+        "Le lapin mange des végétaux. Son régime est herbivore.",
+        "La poule mange notamment des graines et de petits animaux : son régime est omnivore."
+      ],
+      "piege": "Un animal ne se classe pas selon sa taille, mais selon son alimentation.",
+      "astuce_memoire": "Herbivore : surtout des végétaux.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Que mange surtout un herbivore ?",
+          "choix": [
+            "Des végétaux",
+            "Des animaux",
+            "Des végétaux et des animaux autant"
+          ],
+          "rep": "Des végétaux",
+          "expl": "Un herbivore mange principalement des végétaux."
+        },
+        {
+          "q": "Que mange un omnivore ?",
+          "choix": [
+            "Seulement des végétaux",
+            "Des aliments d’origine végétale et animale",
+            "Seulement des animaux"
+          ],
+          "rep": "Des aliments d’origine végétale et animale",
+          "expl": "Un omnivore consomme des aliments de ces deux origines."
+        },
+        {
+          "q": "Un animal mange des graines et de petits animaux. Quel régime cela indique-t-il ?",
+          "choix": [
+            "Uniquement herbivore",
+            "Uniquement carnivore",
+            "Omnivore"
+          ],
+          "rep": "Omnivore",
+          "expl": "Il mange des aliments d’origine végétale et animale."
+        }
+      ],
+      "id": "REV-QM-CE1-03"
+    },
+    {
+      "axe": "Questionner le monde du vivant, de la matière et des objets",
+      "titre": "Les articulations",
+      "emoji": "🦴",
+      "en_une_phrase": "Les articulations permettent à certaines parties du corps de bouger l’une par rapport à l’autre.",
+      "comprendre": "Tu plies ton bras pour porter un verre. Le coude relie des parties du bras. Cette articulation permet de les faire bouger.",
+      "essentiel": [
+        "Le coude est une articulation.",
+        "Le genou est une articulation.",
+        "Des muscles participent aux mouvements."
+      ],
+      "image_mentale": "Imagine une charnière entre deux morceaux de bras.",
+      "regle_ou_methode": "Repère les parties du corps qui bougent quand tu plies un membre.",
+      "exemples": [
+        "Plie puis tends ton bras. Le mouvement se fait notamment au coude. Le coude est une articulation.",
+        "Quand tu plies la jambe, le genou est une articulation."
+      ],
+      "piege": "Une articulation n’est pas un os isolé : elle se trouve à la jonction de parties du squelette.",
+      "astuce_memoire": "Coude et genou sont des endroits qui plient.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Quelle articulation permet de plier le bras ?",
+          "choix": [
+            "Le nez",
+            "Le coude",
+            "L’oreille"
+          ],
+          "rep": "Le coude",
+          "expl": "Le coude permet notamment de plier le bras."
+        },
+        {
+          "q": "Quelle articulation se trouve à la jambe ?",
+          "choix": [
+            "Le coude",
+            "Le poignet",
+            "Le genou"
+          ],
+          "rep": "Le genou",
+          "expl": "Le genou relie les parties de la jambe au niveau du pli."
+        },
+        {
+          "q": "Pour porter une tasse à ta bouche, quelle articulation du bras plies-tu notamment ?",
+          "choix": [
+            "Le coude",
+            "Le genou",
+            "La cheville"
+          ],
+          "rep": "Le coude",
+          "expl": "Le coude permet de rapprocher la main du visage."
+        }
+      ],
+      "id": "REV-QM-CE1-04"
+    },
+    {
+      "axe": "Questionner le monde du vivant, de la matière et des objets",
+      "titre": "Un circuit électrique simple",
+      "emoji": "🔦",
+      "en_une_phrase": "Une lampe alimentée par une pile peut briller dans un circuit fermé.",
+      "comprendre": "Tu connais une lampe qui fonctionne avec une pile. Le courant circule si les éléments sont reliés dans une boucle fermée. Une coupure interrompt cette boucle.",
+      "essentiel": [
+        "Une pile fournit l’énergie au circuit.",
+        "Les fils relient la pile à la lampe.",
+        "Le circuit doit être fermé pour que la lampe brille."
+      ],
+      "image_mentale": "Imagine un chemin en boucle entre la pile et la lampe.",
+      "regle_ou_methode": "Avec du matériel de classe, relie les bornes de la pile aux deux contacts de la lampe.",
+      "exemples": [
+        "Relie chaque borne de la pile à un contact différent de la lampe. La boucle est fermée. La lampe peut briller.",
+        "Si un fil est débranché, la boucle est ouverte et la lampe s’éteint."
+      ],
+      "piege": "Un seul fil ne suffit pas à fermer le circuit. Manipule seulement du matériel à pile adapté.",
+      "astuce_memoire": "Pour briller, la boucle doit être fermée.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Quel élément fournit l’énergie dans cet exemple ?",
+          "choix": [
+            "Le papier",
+            "La règle",
+            "La pile"
+          ],
+          "rep": "La pile",
+          "expl": "La pile fournit l’énergie du circuit."
+        },
+        {
+          "q": "Que se passe-t-il si un fil est débranché ?",
+          "choix": [
+            "La lampe s’éteint",
+            "La boucle reste fermée",
+            "La pile devient une lampe"
+          ],
+          "rep": "La lampe s’éteint",
+          "expl": "La coupure ouvre le circuit."
+        },
+        {
+          "q": "La lampe ne brille pas et un fil est débranché. Que peux-tu vérifier ?",
+          "choix": [
+            "La couleur de la table",
+            "La fermeture de la boucle",
+            "Le nom du cahier"
+          ],
+          "rep": "La fermeture de la boucle",
+          "expl": "Un fil débranché peut empêcher le courant de circuler."
+        }
+      ],
+      "id": "REV-QM-CE1-05"
+    },
+    {
+      "axe": "Questionner l’espace et le temps",
+      "titre": "Lire un plan et sa légende",
+      "emoji": "🗺️",
+      "en_une_phrase": "Un plan représente un lieu vu de dessus avec des signes.",
+      "comprendre": "Tu connais le trajet entre ta classe et la cour. Sur un plan, des signes représentent les lieux. La légende aide à comprendre ces signes.",
+      "essentiel": [
+        "Un plan montre un espace vu de dessus.",
+        "Un signe représente un lieu ou un objet.",
+        "La légende explique les signes."
+      ],
+      "image_mentale": "Imagine la cour et la classe dessinées depuis le plafond.",
+      "regle_ou_methode": "Lis la légende, repère ton départ, puis suis le trajet.",
+      "exemples": [
+        "La légende indique que le carré représente la classe. Repère ce carré. Suis le chemin dessiné jusqu’à la cour.",
+        "Un trait peut représenter un chemin si la légende le précise."
+      ],
+      "piege": "Une couleur n’a pas toujours le même sens sur tous les plans : lis la légende.",
+      "astuce_memoire": "D’abord la légende, puis le trajet.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : À quoi sert la légende ?",
+          "choix": [
+            "À expliquer les signes",
+            "À agrandir la cour",
+            "À effacer les chemins"
+          ],
+          "rep": "À expliquer les signes",
+          "expl": "La légende indique le sens des signes."
+        },
+        {
+          "q": "Un plan représente un lieu vu comment ?",
+          "choix": [
+            "Seulement de dessous",
+            "De dessus",
+            "À travers une fenêtre forcément"
+          ],
+          "rep": "De dessus",
+          "expl": "Le plan montre l’espace comme vu d’en haut."
+        },
+        {
+          "q": "La légende indique qu’un carré représente la classe. Que cherches-tu pour trouver la classe ?",
+          "choix": [
+            "Une couleur choisie au hasard",
+            "Le titre seulement",
+            "Le carré"
+          ],
+          "rep": "Le carré",
+          "expl": "Le carré représente la classe dans ce plan."
+        }
+      ],
+      "id": "REV-QM-CE1-06"
+    },
+    {
+      "axe": "Questionner l’espace et le temps",
+      "titre": "Comparer des durées",
+      "emoji": "⏱️",
+      "en_une_phrase": "Une durée indique le temps écoulé entre un début et une fin.",
+      "comprendre": "Tu connais le début et la fin d’un jeu. La durée indique le temps entre les deux. Une horloge ou un minuteur peut aider à la mesurer.",
+      "essentiel": [
+        "Une heure contient 60 minutes.",
+        "Une durée commence à un moment et finit à un autre.",
+        "La durée n’est pas l’heure de départ."
+      ],
+      "image_mentale": "Imagine une ligne entre le départ et l’arrivée.",
+      "regle_ou_methode": "Repère le début et la fin, puis calcule le temps écoulé.",
+      "exemples": [
+        "Le jeu commence à 14 h et finit à 15 h. Une heure s’est écoulée. La durée est d’une heure.",
+        "Une activité de 10 h à 10 h 30 dure 30 minutes."
+      ],
+      "piege": "14 h est un moment ; une heure est une durée.",
+      "astuce_memoire": "La durée est le temps entre les deux moments.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Combien de minutes dans une heure ?",
+          "choix": [
+            "10",
+            "60",
+            "100"
+          ],
+          "rep": "60",
+          "expl": "Une heure contient soixante minutes."
+        },
+        {
+          "q": "Un jeu dure de 14 h à 15 h. Quelle est sa durée ?",
+          "choix": [
+            "Quatorze heures",
+            "Une minute",
+            "Une heure"
+          ],
+          "rep": "Une heure",
+          "expl": "Une heure sépare 14 h de 15 h."
+        },
+        {
+          "q": "Un dessin commence à 10 h et finit à 10 h 30. Combien dure-t-il ?",
+          "choix": [
+            "30 minutes",
+            "10 minutes",
+            "Une journée"
+          ],
+          "rep": "30 minutes",
+          "expl": "Une demi-heure sépare ces deux moments."
+        }
+      ],
+      "id": "REV-QM-CE1-07"
+    },
+    {
+      "axe": "Explorer les organisations du monde",
+      "titre": "Un paysage organisé",
+      "emoji": "🏘️",
+      "en_une_phrase": "Un paysage montre des éléments naturels et des constructions humaines.",
+      "comprendre": "Tu connais les maisons et les arbres de ton quartier. Dans un paysage, certains éléments sont naturels et d’autres ont été construits. Les observer aide à comprendre comment l’espace est utilisé.",
+      "essentiel": [
+        "Une rivière est un élément naturel.",
+        "Une route est une construction humaine.",
+        "Un paysage peut contenir les deux."
+      ],
+      "image_mentale": "Imagine une rivière, un pont et des maisons.",
+      "regle_ou_methode": "Observe les éléments et demande-toi comment ils ont été faits.",
+      "exemples": [
+        "Dans une image, repère une rivière et un pont. La rivière est naturelle. Le pont est construit pour la traverser.",
+        "Une route relie des lieux où les personnes vivent ou travaillent."
+      ],
+      "piege": "Un paysage n’est pas forcément entièrement naturel : il peut être aménagé.",
+      "astuce_memoire": "Rivière naturelle, pont construit.",
+      "quiz": [
+        {
+          "q": "Sans regarder la fiche : Quel élément est construit par les humains ?",
+          "choix": [
+            "Une rivière",
+            "Une montagne",
+            "Un pont"
+          ],
+          "rep": "Un pont",
+          "expl": "Le pont est une construction humaine."
+        },
+        {
+          "q": "Quel élément est naturel ?",
+          "choix": [
+            "Une rivière",
+            "Une route",
+            "Une maison"
+          ],
+          "rep": "Une rivière",
+          "expl": "Une rivière est un cours d’eau naturel."
+        },
+        {
+          "q": "Un paysage contient une rivière et un pont. Pourquoi y a-t-il deux types d’éléments ?",
+          "choix": [
+            "Les deux sont forcément naturels",
+            "La rivière est naturelle et le pont est construit",
+            "Les deux sont des animaux"
+          ],
+          "rep": "La rivière est naturelle et le pont est construit",
+          "expl": "Le pont est un aménagement construit au-dessus de la rivière."
+        }
+      ],
+      "id": "REV-QM-CE1-08"
+    }
+  ]
+}

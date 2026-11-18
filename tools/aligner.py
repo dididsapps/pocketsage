@@ -1,5 +1,5 @@
 """Surlignage du texte pendant la lecture : heure de début de chaque mot dans les MP3 (Whisper, horodatage par mot).
-Cibles : histoires de l'onglet Nuit (FR + EN) et énoncés des questions GS → CE2 (FR) [+ --langues : questions AN-/ES-].
+Cibles : fiches de révision GS → CE2 (--fiches : elles seules), histoires de l'onglet Nuit (FR + EN) et énoncés des questions GS → CE2 (FR) [+ --langues : questions AN-/ES-].
 Sortie R2 : audio/align/{clé}.json = {"s":[début du mot 1, du mot 2, …]} — un nombre par mot AFFICHÉ
 (mot = suite non vide contenant une lettre ou un chiffre ; même découpage que _hlTok dans index.html).
   python3 tools/aligner.py [--shard 0 --of 4] [--langues] [--max N] [--liste]
@@ -32,8 +32,19 @@ def nuit_affiche(titre, texte):
     return titre + ' ' + t
 
 
-def cibles(langues=False):
+def cibles_fiches():
+    from fiches_build import fiche_lue
     out = []
+    for f in sorted((ROOT / 'docs/contenu/fiches/FR').glob('REV-*.json')):
+        _, code, cl = f.stem.split('-')
+        if cl not in PETITS or code in ('AN', 'ES'): continue
+        for x in json.loads(f.read_text(encoding='utf-8'))['fiches']:
+            out.append((f"fiches/{x['id']}", f"{CDN}/audio/fiches/{x['id']}.mp3", ' '.join(fiche_lue(x)), 'fr'))
+    return out
+
+
+def cibles(langues=False):
+    out = cibles_fiches()
     for base, lang, ti, tx in nuit_items():
         k = 'nuit/' + base + ('' if lang == 'FR' else '_' + lang)
         out.append((k, f'{CDN}/audio/nuit/{k[5:]}.mp3', nuit_affiche(ti, tx), lang.lower()))
@@ -87,9 +98,9 @@ def aligner(model, mp3, texte, lang):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--shard', type=int, default=0); ap.add_argument('--of', type=int, default=1)
-    ap.add_argument('--langues', action='store_true'); ap.add_argument('--max', type=int, default=0); ap.add_argument('--liste', action='store_true')
+    ap.add_argument('--langues', action='store_true'); ap.add_argument('--max', type=int, default=0); ap.add_argument('--liste', action='store_true'); ap.add_argument('--fiches', action='store_true')
     a = ap.parse_args()
-    cs = cibles(a.langues)[a.shard::a.of]
+    cs = (cibles_fiches() if a.fiches else cibles(a.langues))[a.shard::a.of]
     print(len(cs), 'cibles (part', a.shard, '/', a.of, ')')
     if a.liste:
         for c in cs[:10]: print(c)
