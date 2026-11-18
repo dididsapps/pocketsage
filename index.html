@@ -354,6 +354,15 @@ body.nuit-on .nb .nl{color:rgba(243,233,214,.6)}
 /* Écran noir : seule la voix reste, un tap rallume */
 #nuit-noir{position:fixed;inset:0;background:#000;z-index:9999;display:flex;align-items:flex-end;justify-content:center;padding-bottom:calc(40px + env(safe-area-inset-bottom,0px));cursor:pointer}
 #nuit-noir span{color:rgba(243,233,214,.18);font-size:13px;font-weight:600;font-family:var(--f)}
+/* 🌙 Veilleuse : lueur chaude (sans bleu) qui suit la voix, puis s'éteint très lentement */
+#veilleuse{position:fixed;inset:0;background:#000;z-index:9999;overflow:hidden;cursor:pointer;touch-action:manipulation}
+#veilleuse .vl-glow{position:absolute;inset:-25%;filter:blur(28px);will-change:background,opacity}
+#veilleuse .vl-ui{position:absolute;left:0;right:0;bottom:0;padding:18px 16px calc(26px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;align-items:center;gap:10px;transition:opacity .6s;font-family:var(--f)}
+#veilleuse .vl-ui.off{opacity:0;pointer-events:none}
+#veilleuse .vl-l{color:rgba(243,233,214,.55);font-size:13px;font-weight:600;text-align:center}
+#veilleuse .vl-row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+#veilleuse button{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:rgba(243,233,214,.8);border-radius:10px;padding:8px 13px;font-family:var(--f);font-size:13px;font-weight:700;cursor:pointer}
+#veilleuse button.on{background:rgba(242,170,90,.28);border-color:rgba(242,170,90,.6)}
 .nuit-sct{font-size:13px;font-weight:800;color:rgba(243,233,214,.85);text-transform:uppercase;
   letter-spacing:.5px;margin-bottom:10px;padding:0 4px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
 .nuit-sct span{text-transform:none;letter-spacing:0}
@@ -922,7 +931,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=74">
+<link rel="stylesheet" href="css/jeux.css?v=75">
 </head>
 <body>
 
@@ -1462,11 +1471,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=74"></script>
-<script src="js/jeux-cerveau.js?v=74"></script>
-<script src="js/coach-voix.js?v=74"></script>
-<script src="js/monde-interieur.js?v=74"></script>
-<script src="js/monde-plus.js?v=74"></script>
+<script src="js/jeux.js?v=75"></script>
+<script src="js/jeux-cerveau.js?v=75"></script>
+<script src="js/coach-voix.js?v=75"></script>
+<script src="js/monde-interieur.js?v=75"></script>
+<script src="js/monde-plus.js?v=75"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -10553,6 +10562,49 @@ function nuitNoir(id,txt){
   d.onclick=()=>d.remove();document.body.appendChild(d);
   setTimeout(()=>{const sp=d.querySelector('span');if(sp)sp.style.opacity='0';},5000);
 }
+// 🌙 Veilleuse : lumière chaude qui « respire » et suit l'intensité de la voix (enveloppe précalculée, sans micro ni Web Audio),
+// puis reste allumée N minutes après la fin en baissant très lentement (pas d'extinction brutale qui réveille).
+const _vlEnv={};
+function _vlLoadEnv(id){const lang=(APP&&APP.lang&&APP.lang!=='FR')?`_${APP.lang}`:'';const k=id+lang;if(_vlEnv[k]!==undefined)return;_vlEnv[k]=null;
+  fetch(`${AUDIO_CDN}/audio/nuit/env/${k}.json`).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.v)_vlEnv[k]=j;}).catch(()=>{});}
+let _vl=null;
+function nuitVeilleuse(id,txt){
+  if(document.getElementById('veilleuse'))return;
+  if(id&&!_ttsPlaying)elPlayNuit(id,txt||'');
+  if(id)_vlLoadEnv(id);
+  let apres=10;try{apres=parseInt(localStorage.getItem('ps_veil_min'))||10;}catch(e){}
+  const d=document.createElement('div');d.id='veilleuse';
+  d.innerHTML=`<div class="vl-glow"></div><div class="vl-ui"><div class="vl-l">Après l'histoire, la veilleuse reste allumée puis baisse tout doucement</div>
+    <div class="vl-row">${[5,10,20,30].map(m=>`<button data-m="${m}" class="${m===apres?'on':''}">${m} min</button>`).join('')}</div>
+    <div class="vl-row"><button data-x="1">✕ Quitter la veilleuse</button></div></div>`;
+  document.body.appendChild(d);
+  const ui=d.querySelector('.vl-ui'),glow=d.querySelector('.vl-glow');let uiT=null;
+  const montre=()=>{ui.classList.remove('off');clearTimeout(uiT);uiT=setTimeout(()=>ui.classList.add('off'),4000);};montre();
+  d.addEventListener('click',e=>{const b=e.target.closest('button');
+    if(b&&b.dataset.m){apres=parseInt(b.dataset.m);try{localStorage.setItem('ps_veil_min',apres);}catch(x){}d.querySelectorAll('[data-m]').forEach(x=>x.classList.toggle('on',x===b));if(_vl&&_vl.fin)_vl.fin=performance.now();montre();return;}
+    if(b&&b.dataset.x){nuitVeilleuseStop();return;}montre();});
+  let wl=null;const wake=()=>{try{if(navigator.wakeLock)navigator.wakeLock.request('screen').then(w=>{wl=w;}).catch(()=>{});}catch(e){}};wake();
+  const onVis=()=>{if(document.visibilityState==='visible'&&_vl&&!wl)wake();};document.addEventListener('visibilitychange',onVis);
+  const lang=(APP&&APP.lang&&APP.lang!=='FR')?`_${APP.lang}`:'';
+  _vl={id,k:id+lang,s:0,vu:false,stopT:0,fin:0,raf:0,wl:()=>wl,onVis,a0:null};
+  const loop=()=>{if(!_vl)return;const now=performance.now(),t=now/1000;
+    const a=_nuitAudio,joue=!!(_ttsPlaying||(a&&!a.paused&&!a.ended));
+    if(joue){_vl.vu=true;_vl.stopT=0;}else if(_vl.vu&&!_vl.fin){if(!_vl.stopT)_vl.stopT=now;else if(now-_vl.stopT>2500)_vl.fin=now;}
+    if(!_vl.vu&&now-(_vl.t0||(_vl.t0=now))>20000&&!_vl.fin)_vl.fin=now;   // rien ne joue (silencieux…) : on passe directement au fondu
+    // intensité de la voix : enveloppe précalculée (10 valeurs/s, 0-9) à l'instant de lecture, sinon douce respiration
+    let lv=.35+.15*Math.sin(t*2*Math.PI/7);
+    const env=_vlEnv[_vl.k];if(joue&&env&&a&&a.src&&a.src.indexOf('/'+_vl.id)>=0){const i=Math.floor(a.currentTime*(env.hz||10));const c=env.v.charCodeAt(Math.min(env.v.length-1,i))-48;if(c>=0&&c<=9)lv=c/9;}
+    else if(joue)lv=.45+.2*Math.sin(t*2*Math.PI/4.5);
+    _vl.s+=(lv-_vl.s)*.06;
+    // après la fin : la lumière baisse lentement sur la durée choisie (courbe douce), puis noir
+    let k=1;if(_vl.fin){const p=Math.min(1,(now-_vl.fin)/(apres*60000));k=Math.pow(1-p,1.6);if(p>=1){glow.style.opacity='0';const w=_vl.wl();if(w){try{w.release();}catch(e){}}cancelAnimationFrame(_vl.raf);_vl.raf=0;return;}}
+    const hue=(360+12+30*Math.sin(t/37)+14*_vl.s)%360,hue2=(hue+25)%360;      // ambre ↔ orange ↔ rose : pas de bleu
+    const A=(.30+.40*_vl.s+.06*Math.sin(t*2*Math.PI/6))*k,R=50+14*_vl.s;
+    glow.style.background=`radial-gradient(circle at 50% 56%, hsla(${hue},90%,62%,${A.toFixed(3)}) 0%, hsla(${hue2},75%,40%,${(A*.55).toFixed(3)}) ${R.toFixed(0)}%, rgba(0,0,0,0) 78%)`;
+    _vl.raf=requestAnimationFrame(loop);};
+  _vl.raf=requestAnimationFrame(loop);
+}
+function nuitVeilleuseStop(){if(!_vl)return;cancelAnimationFrame(_vl.raf);const w=_vl.wl();if(w){try{w.release();}catch(e){}}document.removeEventListener('visibilitychange',_vl.onVis);_vl=null;const d=document.getElementById('veilleuse');if(d)d.remove();}
 // 📡 Envoyer le son sur une enceinte / TV : AirPlay (iPhone, iPad, Mac) ou Chromecast (Chrome Android)
 function nuitCast(id){
   const a=_nuitEl();a.setAttribute('x-webkit-airplay','allow');
@@ -16012,6 +16064,7 @@ function openReader(item,type){
       <button onclick="ttsStop();_nuitResetPlayBtn();" style="background:rgba(255,255,255,.15);border:none;color:#fff;border-radius:14px;padding:10px 24px;font-family:var(--f);font-size:13px;font-weight:700;cursor:pointer;width:100%;margin-bottom:12px">⏹ Arrêter</button>
       ${_nuitRateBar()}
       <div style="display:flex;gap:8px;justify-content:center;margin-top:12px;flex-wrap:wrap">
+        <button class="nuit-tb" onclick="nuitVeilleuse('${item.id}')">🌙 Veilleuse</button>
         <button class="nuit-tb" onclick="nuitNoir('${item.id}')">🌑 Écran noir</button>
         <button class="nuit-tb" onclick="nuitCast('${item.id}')">📡 AirPlay / Cast</button>
       </div>`;
@@ -16040,7 +16093,8 @@ function openReader(item,type){
     _nuitStop.textContent='⏹ Stop';_nuitStop.onclick=ttsStop;
     const _nuitNoirB=document.createElement('button');_nuitNoirB.className='nuit-tb';_nuitNoirB.textContent='🌑 Écran noir';_nuitNoirB.onclick=()=>nuitNoir(item.id,_nuitTxt);
     const _nuitCastB=document.createElement('button');_nuitCastB.className='nuit-tb';_nuitCastB.textContent='📡 AirPlay / Cast';_nuitCastB.onclick=()=>nuitCast(item.id);
-    tbar.appendChild(_nuitBtn);tbar.appendChild(_nuitStop);tbar.appendChild(_nuitNoirB);tbar.appendChild(_nuitCastB);
+    const _nuitVeilB=document.createElement('button');_nuitVeilB.className='nuit-tb';_nuitVeilB.textContent='🌙 Veilleuse';_nuitVeilB.onclick=()=>nuitVeilleuse(item.id,_nuitTxt);
+    tbar.appendChild(_nuitBtn);tbar.appendChild(_nuitStop);tbar.appendChild(_nuitVeilB);tbar.appendChild(_nuitNoirB);tbar.appendChild(_nuitCastB);
     c.appendChild(tbar);
     const _rb=document.createElement('div');_rb.innerHTML=_nuitRateBar();c.appendChild(_rb.firstChild);
   }
@@ -19973,8 +20027,8 @@ window.transferCoinsToWorld=function(n){
 
 })();
 </script>
-<script src="js/questions-plus-data.js?v=74"></script>
-<script src="js/questions-plus.js?v=74"></script>
+<script src="js/questions-plus-data.js?v=75"></script>
+<script src="js/questions-plus.js?v=75"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
