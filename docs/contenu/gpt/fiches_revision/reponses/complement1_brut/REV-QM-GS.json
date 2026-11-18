@@ -1,0 +1,328 @@
+{
+  "classe": "GS",
+  "niveau_appli": "GS",
+  "age": "5-6 ans",
+  "matiere": "Explorer le monde",
+  "code": "QM",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Se repérer dans le temps",
+      "titre": "Les jours de la semaine",
+      "emoji": "📆",
+      "en_une_phrase": "Les jours de la semaine reviennent toujours dans le même ordre.",
+      "comprendre": "Tu connais des moments de ta semaine. Chaque jour a un nom. Après le dernier jour, une nouvelle semaine commence.",
+      "essentiel": [
+        "Lundi, mardi, mercredi, jeudi, vendredi.",
+        "Puis viennent samedi et dimanche.",
+        "Après dimanche revient lundi."
+      ],
+      "image_mentale": "Imagine une roue avec les sept jours.",
+      "regle_ou_methode": "Récite les jours et repère celui qui suit.",
+      "exemples": [
+        "Aujourd’hui est lundi. Le jour suivant est mardi. Puis vient mercredi.",
+        "Après dimanche, une nouvelle semaine commence avec lundi."
+      ],
+      "piege": "Une semaine compte sept jours, pas cinq.",
+      "astuce_memoire": "Lundi à dimanche, puis lundi.",
+      "quiz": [
+        {
+          "q": "Quel jour suit lundi ?",
+          "choix": [
+            "Dimanche",
+            "Jeudi",
+            "Mardi"
+          ],
+          "rep": "Mardi",
+          "expl": "Mardi vient après lundi."
+        },
+        {
+          "q": "Combien de jours dans une semaine ?",
+          "choix": [
+            "Sept",
+            "Cinq",
+            "Dix"
+          ],
+          "rep": "Sept",
+          "expl": "Une semaine compte sept jours."
+        },
+        {
+          "q": "Après dimanche, quel jour revient ?",
+          "choix": [
+            "Vendredi",
+            "Lundi",
+            "Samedi"
+          ],
+          "rep": "Lundi",
+          "expl": "Une nouvelle semaine commence avec lundi."
+        }
+      ],
+      "id": "REV-QM-GS-20"
+    },
+    {
+      "axe": "Se repérer dans le temps",
+      "titre": "Les saisons",
+      "emoji": "🍂",
+      "en_une_phrase": "Les saisons se suivent et reviennent au fil de l’année.",
+      "comprendre": "Tu observes parfois des feuilles tomber. Dans l’année, plusieurs saisons se succèdent. Le temps peut varier chaque jour.",
+      "essentiel": [
+        "Le printemps précède l’été.",
+        "L’automne suit l’été.",
+        "L’hiver suit l’automne."
+      ],
+      "image_mentale": "Imagine une roue avec quatre dessins.",
+      "regle_ou_methode": "Dis les saisons dans l’ordre.",
+      "exemples": [
+        "Après le printemps vient l’été. Puis arrive l’automne. Ensuite vient l’hiver.",
+        "Après l’hiver, le printemps revient."
+      ],
+      "piege": "Une saison ne donne pas exactement le même temps chaque jour.",
+      "astuce_memoire": "Printemps, été, automne, hiver.",
+      "quiz": [
+        {
+          "q": "Quelle saison suit l’été ?",
+          "choix": [
+            "L’automne",
+            "Le printemps",
+            "L’hiver"
+          ],
+          "rep": "L’automne",
+          "expl": "L’automne vient après l’été."
+        },
+        {
+          "q": "Quelle saison suit l’automne ?",
+          "choix": [
+            "L’été",
+            "L’hiver",
+            "Le printemps"
+          ],
+          "rep": "L’hiver",
+          "expl": "L’hiver suit l’automne."
+        },
+        {
+          "q": "Quelle saison revient après l’hiver ?",
+          "choix": [
+            "L’automne",
+            "L’été",
+            "Le printemps"
+          ],
+          "rep": "Le printemps",
+          "expl": "Le printemps suit l’hiver."
+        }
+      ],
+      "id": "REV-QM-GS-21"
+    },
+    {
+      "axe": "Découvrir le monde du vivant",
+      "titre": "Les parties du corps",
+      "emoji": "🧍",
+      "en_une_phrase": "Ton corps a plusieurs parties que tu peux nommer.",
+      "comprendre": "Tu utilises tes bras pour attraper. Tu utilises tes jambes pour te déplacer. Nommer ces parties aide à décrire tes gestes.",
+      "essentiel": [
+        "La tête est en haut du corps.",
+        "Les bras sont reliés au tronc.",
+        "Les jambes aident à se déplacer."
+      ],
+      "image_mentale": "Imagine un bonhomme avec une tête, des bras et des jambes.",
+      "regle_ou_methode": "Montre la partie nommée sur toi ou sur un dessin.",
+      "exemples": [
+        "Montre ta tête. Puis montre un bras. Ton bras peut t’aider à attraper un livre.",
+        "Une jambe aide à marcher."
+      ],
+      "piege": "Le bras et la jambe sont deux parties différentes.",
+      "astuce_memoire": "Tête, bras, jambes.",
+      "quiz": [
+        {
+          "q": "Quelle partie aide à attraper un livre ?",
+          "choix": [
+            "Un genou seulement",
+            "Un bras",
+            "Un pied seulement"
+          ],
+          "rep": "Un bras",
+          "expl": "Le bras et la main peuvent aider à attraper."
+        },
+        {
+          "q": "Quelle partie aide à marcher ?",
+          "choix": [
+            "Une oreille",
+            "Un coude",
+            "Une jambe"
+          ],
+          "rep": "Une jambe",
+          "expl": "Les jambes participent à la marche."
+        },
+        {
+          "q": "Tu montres la partie avec les yeux et le nez. Que montres-tu ?",
+          "choix": [
+            "La tête",
+            "Le bras",
+            "La jambe"
+          ],
+          "rep": "La tête",
+          "expl": "Les yeux et le nez se trouvent sur la tête."
+        }
+      ],
+      "id": "REV-QM-GS-22"
+    },
+    {
+      "axe": "Découvrir le monde du vivant",
+      "titre": "Le corps et les sens",
+      "emoji": "👂",
+      "en_une_phrase": "Ton corps t’aide à percevoir le monde et à bouger.",
+      "comprendre": "Tu entends peut-être une cloche. Tes oreilles participent à l’écoute. Tes yeux, ton nez, ta langue et ta peau t’aident aussi à percevoir.",
+      "essentiel": [
+        "Les oreilles aident à entendre.",
+        "Les yeux aident à voir ; le nez à sentir.",
+        "La langue aide à goûter ; la peau à toucher."
+      ],
+      "image_mentale": "Imagine une cloche, une fleur et un tissu doux.",
+      "regle_ou_methode": "Choisis l’organe qui aide dans chaque situation.",
+      "exemples": [
+        "Une cloche sonne. Tu l’entends avec tes oreilles. Les oreilles aident à entendre.",
+        "Tu peux sentir l’odeur d’une fleur avec ton nez."
+      ],
+      "piege": "Ne goûte jamais une chose inconnue.",
+      "astuce_memoire": "Voir, entendre, sentir, goûter, toucher.",
+      "quiz": [
+        {
+          "q": "Avec quoi entends-tu une cloche ?",
+          "choix": [
+            "Les yeux",
+            "Les genoux",
+            "Les oreilles"
+          ],
+          "rep": "Les oreilles",
+          "expl": "Les oreilles participent à l’audition."
+        },
+        {
+          "q": "Avec quoi sens-tu une odeur ?",
+          "choix": [
+            "Le nez",
+            "Le coude",
+            "Le pied"
+          ],
+          "rep": "Le nez",
+          "expl": "Le nez participe à l’odorat."
+        },
+        {
+          "q": "Tu touches un tissu doux. Quel sens utilises-tu ?",
+          "choix": [
+            "L’ouïe",
+            "Le toucher",
+            "L’odorat"
+          ],
+          "rep": "Le toucher",
+          "expl": "La peau aide à percevoir le contact."
+        }
+      ],
+      "id": "REV-QM-GS-23"
+    },
+    {
+      "axe": "Découvrir le monde du vivant",
+      "titre": "Les animaux grandissent",
+      "emoji": "🐣",
+      "en_une_phrase": "Un animal naît, grandit et a besoin de se nourrir.",
+      "comprendre": "Tu as grandi depuis que tu es bébé. Un petit animal grandit aussi. Il a besoin de nourriture et d’eau.",
+      "essentiel": [
+        "Un poussin sort d’un œuf.",
+        "Il grandit et devient adulte.",
+        "Un animal a besoin d’eau et de nourriture."
+      ],
+      "image_mentale": "Imagine un œuf, un poussin puis une poule.",
+      "regle_ou_methode": "Observe les images et raconte les étapes dans l’ordre.",
+      "exemples": [
+        "Un poussin sort d’un œuf. Il grandit. Il devient une poule ou un coq adulte.",
+        "Un chaton grandit et devient un chat."
+      ],
+      "piege": "Tous les animaux ne naissent pas de la même manière.",
+      "astuce_memoire": "Naître, grandir, se nourrir.",
+      "quiz": [
+        {
+          "q": "Que devient un chaton ?",
+          "choix": [
+            "Un chat adulte",
+            "Une graine",
+            "Une pierre"
+          ],
+          "rep": "Un chat adulte",
+          "expl": "Le chaton grandit et devient un chat."
+        },
+        {
+          "q": "De quoi un animal a-t-il besoin ?",
+          "choix": [
+            "Seulement de jouets",
+            "D’eau et de nourriture",
+            "Seulement de cailloux"
+          ],
+          "rep": "D’eau et de nourriture",
+          "expl": "L’eau et la nourriture font partie de ses besoins."
+        },
+        {
+          "q": "Quel ordre convient ?",
+          "choix": [
+            "Poule adulte, œuf d’où elle est sortie, poussin",
+            "Poussin, œuf d’où il est sorti, adulte",
+            "Œuf, poussin, poule adulte"
+          ],
+          "rep": "Œuf, poussin, poule adulte",
+          "expl": "Le poussin sort de l’œuf puis grandit."
+        }
+      ],
+      "id": "REV-QM-GS-24"
+    },
+    {
+      "axe": "Découvrir le monde du vivant",
+      "titre": "Vivant ou non-vivant",
+      "emoji": "🌱",
+      "en_une_phrase": "Un être vivant grandit et a des besoins au cours de sa vie.",
+      "comprendre": "Tu vois des plantes et des cailloux. Une plante grandit et a besoin d’eau. Un caillou ne grandit pas comme un être vivant.",
+      "essentiel": [
+        "Une plante est vivante.",
+        "Un animal est vivant.",
+        "Un caillou n’est pas vivant."
+      ],
+      "image_mentale": "Imagine une plante à côté d’un caillou.",
+      "regle_ou_methode": "Observe les changements et les besoins de l’être étudié.",
+      "exemples": [
+        "Une graine de haricot germe. Une plante grandit et a besoin d’eau. Elle est vivante.",
+        "Un caillou ne se nourrit pas et ne grandit pas comme une plante."
+      ],
+      "piege": "Une plante est vivante même si elle ne marche pas.",
+      "astuce_memoire": "Je regarde si l’être grandit et a des besoins.",
+      "quiz": [
+        {
+          "q": "Quel élément est vivant ?",
+          "choix": [
+            "Un caillou",
+            "Une plante",
+            "Une tasse"
+          ],
+          "rep": "Une plante",
+          "expl": "Une plante est un être vivant."
+        },
+        {
+          "q": "Une plante peut-elle être vivante sans marcher ?",
+          "choix": [
+            "Non",
+            "Seulement si elle court",
+            "Oui"
+          ],
+          "rep": "Oui",
+          "expl": "Une plante est vivante même si elle ne marche pas."
+        },
+        {
+          "q": "Une graine germe et donne une plante. Que peut-on dire de la plante ?",
+          "choix": [
+            "Elle est vivante",
+            "C’est un caillou",
+            "C’est un jouet"
+          ],
+          "rep": "Elle est vivante",
+          "expl": "La plante est un être vivant qui grandit."
+        }
+      ],
+      "id": "REV-QM-GS-25"
+    }
+  ]
+}

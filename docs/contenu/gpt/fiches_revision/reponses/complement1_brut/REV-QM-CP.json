@@ -1,0 +1,328 @@
+{
+  "classe": "CP",
+  "niveau_appli": "CP",
+  "age": "6-7 ans",
+  "matiere": "Questionner le monde",
+  "code": "QM",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Thème 1 : Les manifestations naturelles du temps",
+      "titre": "Les quatre saisons",
+      "emoji": "🍂",
+      "en_une_phrase": "Les saisons se succèdent au fil de l’année.",
+      "comprendre": "Tu observes des changements dehors. En France métropolitaine, quatre saisons reviennent dans le même ordre. Le temps peut varier pendant une saison.",
+      "essentiel": [
+        "Le printemps vient après l’hiver.",
+        "L’été vient après le printemps.",
+        "L’automne vient après l’été, puis revient l’hiver."
+      ],
+      "image_mentale": "Imagine une roue avec quatre cases.",
+      "regle_ou_methode": "Suis l’ordre des saisons autour de la roue.",
+      "exemples": [
+        "Après le printemps vient l’été. Après l’été vient l’automne. Puis vient l’hiver.",
+        "Après l’hiver, le printemps revient."
+      ],
+      "piege": "Il ne fait pas exactement le même temps tous les jours d’une saison.",
+      "astuce_memoire": "Printemps, été, automne, hiver.",
+      "quiz": [
+        {
+          "q": "Quelle saison suit le printemps ?",
+          "choix": [
+            "L’hiver",
+            "L’automne",
+            "L’été"
+          ],
+          "rep": "L’été",
+          "expl": "L’été vient après le printemps."
+        },
+        {
+          "q": "Quelle saison suit l’automne ?",
+          "choix": [
+            "L’hiver",
+            "L’été",
+            "Le printemps"
+          ],
+          "rep": "L’hiver",
+          "expl": "L’hiver vient après l’automne."
+        },
+        {
+          "q": "Après l’hiver, quelle saison revient ?",
+          "choix": [
+            "L’automne",
+            "Le printemps",
+            "L’été"
+          ],
+          "rep": "Le printemps",
+          "expl": "Le printemps suit l’hiver."
+        }
+      ],
+      "id": "REV-QM-CP-20"
+    },
+    {
+      "axe": "Thème 3 : Situer des évènements dans le temps",
+      "titre": "Les générations de la famille",
+      "emoji": "👪",
+      "en_une_phrase": "Les générations situent les liens entre enfants, parents et grands-parents.",
+      "comprendre": "Tu connais peut-être des personnes de plusieurs âges dans ta famille. Un enfant a des parents. Les parents ont eux aussi des parents.",
+      "essentiel": [
+        "Un enfant appartient à une génération.",
+        "Ses parents appartiennent à la génération précédente.",
+        "Ses grands-parents appartiennent à une génération plus ancienne."
+      ],
+      "image_mentale": "Imagine trois rangées : grands-parents, parents, enfants.",
+      "regle_ou_methode": "Suis les liens entre les générations.",
+      "exemples": [
+        "Dans une famille imaginaire, une grand-mère a une fille. Cette fille a un enfant. Cela fait trois générations.",
+        "Un parent et son enfant appartiennent à deux générations."
+      ],
+      "piege": "Toutes les familles n’ont pas la même forme.",
+      "astuce_memoire": "Grands-parents, parents, enfants.",
+      "quiz": [
+        {
+          "q": "Qui appartient à une génération avant l’enfant ?",
+          "choix": [
+            "Son parent",
+            "Son enfant",
+            "Son jouet"
+          ],
+          "rep": "Son parent",
+          "expl": "Le parent appartient à une génération précédente."
+        },
+        {
+          "q": "Combien de générations : grand-parent, parent, enfant ?",
+          "choix": [
+            "Deux",
+            "Trois",
+            "Quatre"
+          ],
+          "rep": "Trois",
+          "expl": "Les trois niveaux représentent trois générations."
+        },
+        {
+          "q": "Les parents de ton parent sont tes…",
+          "choix": [
+            "enfants",
+            "camarades forcément",
+            "grands-parents"
+          ],
+          "rep": "grands-parents",
+          "expl": "Les parents de ton parent sont tes grands-parents."
+        }
+      ],
+      "id": "REV-QM-CP-21"
+    },
+    {
+      "axe": "Les êtres vivants dans leur environnement",
+      "titre": "Un animal grandit",
+      "emoji": "🐣",
+      "en_une_phrase": "Un animal est vivant : il peut naître et grandir.",
+      "comprendre": "Tu grandis depuis que tu es bébé. Un jeune animal grandit aussi. On peut observer ses changements.",
+      "essentiel": [
+        "Un animal est vivant.",
+        "Un petit peut grandir.",
+        "Les animaux ont des besoins."
+      ],
+      "image_mentale": "Imagine un poussin, puis une poule adulte.",
+      "regle_ou_methode": "Observe le même animal à différents moments.",
+      "exemples": [
+        "Un poussin sort d’un œuf. Il grandit. Il devient une poule ou un coq adulte.",
+        "Un chaton grandit et devient un chat adulte."
+      ],
+      "piege": "Un animal ne reste pas forcément petit toute sa vie.",
+      "astuce_memoire": "Petit, puis adulte.",
+      "quiz": [
+        {
+          "q": "Que devient un chaton en grandissant ?",
+          "choix": [
+            "Une plante",
+            "Un chat adulte",
+            "Un œuf"
+          ],
+          "rep": "Un chat adulte",
+          "expl": "Le chaton grandit et devient un chat."
+        },
+        {
+          "q": "Le poussin est-il vivant ?",
+          "choix": [
+            "Non",
+            "Seulement quand il court",
+            "Oui"
+          ],
+          "rep": "Oui",
+          "expl": "Le poussin est un animal vivant."
+        },
+        {
+          "q": "Quel ordre convient ?",
+          "choix": [
+            "Œuf, poussin, poule adulte",
+            "Poule adulte, œuf d’où elle est sortie, poussin",
+            "Poussin, œuf d’où il est sorti, adulte"
+          ],
+          "rep": "Œuf, poussin, poule adulte",
+          "expl": "Le poussin sort de l’œuf puis grandit."
+        }
+      ],
+      "id": "REV-QM-CP-22"
+    },
+    {
+      "axe": "Les êtres vivants dans leur environnement",
+      "titre": "Les animaux se nourrissent",
+      "emoji": "🐇",
+      "en_une_phrase": "Un animal a besoin de se nourrir pour vivre.",
+      "comprendre": "Tu manges chaque jour. Les animaux ont aussi besoin de nourriture. Tous ne mangent pas les mêmes aliments.",
+      "essentiel": [
+        "Les animaux se nourrissent.",
+        "Le lapin mange des végétaux.",
+        "L’eau fait partie de leurs besoins."
+      ],
+      "image_mentale": "Imagine un lapin devant du foin et de l’eau.",
+      "regle_ou_methode": "Observe l’animal et les aliments qu’il consomme.",
+      "exemples": [
+        "Un lapin mange du foin. Il a aussi besoin d’eau. On observe qu’il se nourrit.",
+        "Une poule peut manger des graines."
+      ],
+      "piege": "Ne donne pas un aliment à un animal sans demander à un adulte.",
+      "astuce_memoire": "Nourriture et eau pour vivre.",
+      "quiz": [
+        {
+          "q": "Que mange le lapin dans cet exemple ?",
+          "choix": [
+            "Des cailloux",
+            "Du plastique",
+            "Du foin"
+          ],
+          "rep": "Du foin",
+          "expl": "Le foin est une nourriture adaptée au lapin."
+        },
+        {
+          "q": "De quoi un animal a-t-il aussi besoin ?",
+          "choix": [
+            "D’eau",
+            "De jouets uniquement",
+            "De papier"
+          ],
+          "rep": "D’eau",
+          "expl": "Les animaux ont besoin d’eau."
+        },
+        {
+          "q": "Pour savoir ce que mange un animal étudié, que peux-tu faire ?",
+          "choix": [
+            "Regarder sa couleur seulement",
+            "Observer ses aliments",
+            "Deviner sans observer"
+          ],
+          "rep": "Observer ses aliments",
+          "expl": "Observer permet de connaître ce qu’il mange."
+        }
+      ],
+      "id": "REV-QM-CP-23"
+    },
+    {
+      "axe": "Le corps humain et la santé",
+      "titre": "Les parties du corps",
+      "emoji": "🧍",
+      "en_une_phrase": "Le corps comporte plusieurs parties qui permettent de bouger.",
+      "comprendre": "Tu peux plier ton bras pour attraper un objet. Le coude se trouve à l’endroit où le bras plie. Nommer ces parties aide à décrire le mouvement.",
+      "essentiel": [
+        "La tête, le tronc et les membres font partie du corps.",
+        "Le coude est une articulation du bras.",
+        "Le genou est une articulation de la jambe."
+      ],
+      "image_mentale": "Imagine un personnage qui plie le bras.",
+      "regle_ou_methode": "Montre la partie nommée puis décris son mouvement.",
+      "exemples": [
+        "Plie le bras. Repère le coude. Il permet au bras de se plier.",
+        "Le genou permet de plier la jambe."
+      ],
+      "piege": "Le coude est au bras ; le genou est à la jambe.",
+      "astuce_memoire": "Coude : bras ; genou : jambe.",
+      "quiz": [
+        {
+          "q": "Quelle articulation plie le bras ?",
+          "choix": [
+            "Le coude",
+            "Le genou",
+            "La cheville"
+          ],
+          "rep": "Le coude",
+          "expl": "Le coude est une articulation du bras."
+        },
+        {
+          "q": "Quelle articulation se trouve à la jambe ?",
+          "choix": [
+            "Le coude",
+            "Le genou",
+            "Le poignet"
+          ],
+          "rep": "Le genou",
+          "expl": "Le genou est une articulation de la jambe."
+        },
+        {
+          "q": "Tu plies le bras pour porter un livre. Quelle articulation bouge notamment ?",
+          "choix": [
+            "Le genou",
+            "La cheville",
+            "Le coude"
+          ],
+          "rep": "Le coude",
+          "expl": "Le coude permet notamment de plier le bras."
+        }
+      ],
+      "id": "REV-QM-CP-24"
+    },
+    {
+      "axe": "Le corps humain et la santé",
+      "titre": "Retrouver les cinq sens",
+      "emoji": "👂",
+      "en_une_phrase": "Les sens nous aident à percevoir ce qui nous entoure.",
+      "comprendre": "Tu as déjà exploré le monde avec ton corps. Les yeux, les oreilles, le nez, la langue et la peau reçoivent des informations. Les personnes peuvent percevoir de façons différentes.",
+      "essentiel": [
+        "Les yeux aident à voir ; les oreilles à entendre.",
+        "Le nez aide à sentir ; la langue à goûter.",
+        "La peau permet notamment de sentir le contact."
+      ],
+      "image_mentale": "Imagine une fleur, une cloche et une étoffe douce.",
+      "regle_ou_methode": "Choisis l’organe utilisé dans la situation décrite.",
+      "exemples": [
+        "Une cloche sonne. Tu l’entends avec tes oreilles. L’ouïe permet de percevoir le son.",
+        "Tu sens une odeur avec ton nez."
+      ],
+      "piege": "Ne goûte jamais une substance inconnue.",
+      "astuce_memoire": "Voir, entendre, sentir, goûter, toucher.",
+      "quiz": [
+        {
+          "q": "Avec quoi entends-tu un son ?",
+          "choix": [
+            "Les yeux",
+            "Les oreilles",
+            "Le nez"
+          ],
+          "rep": "Les oreilles",
+          "expl": "Les oreilles participent à l’audition."
+        },
+        {
+          "q": "Quel organe aide à sentir une odeur ?",
+          "choix": [
+            "La main",
+            "Le genou",
+            "Le nez"
+          ],
+          "rep": "Le nez",
+          "expl": "Le nez participe à l’odorat."
+        },
+        {
+          "q": "Tu reconnais la douceur d’un tissu en le touchant. Quel sens utilises-tu ?",
+          "choix": [
+            "Le toucher",
+            "L’ouïe",
+            "La vue seulement"
+          ],
+          "rep": "Le toucher",
+          "expl": "La peau permet de percevoir le contact."
+        }
+      ],
+      "id": "REV-QM-CP-25"
+    }
+  ]
+}

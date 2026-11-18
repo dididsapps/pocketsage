@@ -1,0 +1,328 @@
+{
+  "classe": "CP",
+  "niveau_appli": "CP",
+  "age": "6-7 ans",
+  "matiere": "Mathématiques",
+  "code": "MA",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Comparer jusqu’à cent",
+      "emoji": "🔢",
+      "en_une_phrase": "Pour comparer deux nombres, on peut comparer leurs dizaines puis leurs unités.",
+      "comprendre": "Tu sais que dix unités forment une dizaine. Un nombre avec plus de dizaines est plus grand. Si les dizaines sont égales, regarde les unités.",
+      "essentiel": [
+        "Compare les dizaines.",
+        "Si elles sont égales, compare les unités.",
+        "Le plus grand nombre représente la plus grande quantité."
+      ],
+      "image_mentale": "Imagine des paquets de dix et des jetons seuls.",
+      "regle_ou_methode": "Compare les dizaines, puis les unités si besoin.",
+      "exemples": [
+        "Compare 34 et 37. Les deux ont trois dizaines. Sept unités sont plus que quatre : 37 est plus grand.",
+        "42 est plus grand que 29 : quatre dizaines sont plus que deux."
+      ],
+      "piege": "Ne compare pas seulement les unités quand les dizaines sont différentes.",
+      "astuce_memoire": "Dizaines d’abord, unités ensuite.",
+      "quiz": [
+        {
+          "q": "Quel nombre est le plus grand ?",
+          "choix": [
+            "34",
+            "Ils sont égaux",
+            "37"
+          ],
+          "rep": "37",
+          "expl": "Les dizaines sont égales et 7 est plus grand que 4."
+        },
+        {
+          "q": "Quel nombre est le plus petit ?",
+          "choix": [
+            "29",
+            "42",
+            "Ils sont égaux"
+          ],
+          "rep": "29",
+          "expl": "Deux dizaines sont moins que quatre dizaines."
+        },
+        {
+          "q": "Quel ordre va du plus petit au plus grand ?",
+          "choix": [
+            "39, 32, 24",
+            "24, 32, 39",
+            "32, 24, 39"
+          ],
+          "rep": "24, 32, 39",
+          "expl": "24 est plus petit que 32, lui-même plus petit que 39."
+        }
+      ],
+      "id": "REV-MA-CP-20"
+    },
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Compléter à dix",
+      "emoji": "🔟",
+      "en_une_phrase": "Deux nombres peuvent s’assembler pour faire dix.",
+      "comprendre": "Tu sais compter dix doigts. Si certains sont levés, les autres complètent dix. Ces couples aident à calculer.",
+      "essentiel": [
+        "6 et 4 font 10.",
+        "7 et 3 font 10.",
+        "8 et 2 font 10."
+      ],
+      "image_mentale": "Imagine dix doigts, dont certains sont levés.",
+      "regle_ou_methode": "Pars du premier nombre et cherche combien manque jusqu’à dix.",
+      "exemples": [
+        "Pour compléter 6 à 10, compte 7, 8, 9, 10. Tu avances de quatre. Donc 6 + 4 = 10.",
+        "8 + 2 = 10."
+      ],
+      "piege": "Le complément est ce qu’il manque, pas le total dix.",
+      "astuce_memoire": "Six et quatre font dix.",
+      "quiz": [
+        {
+          "q": "Combien manque-t-il à 6 pour faire 10 ?",
+          "choix": [
+            "4",
+            "3",
+            "6"
+          ],
+          "rep": "4",
+          "expl": "Six et quatre font dix."
+        },
+        {
+          "q": "Combien manque-t-il à 8 pour faire 10 ?",
+          "choix": [
+            "3",
+            "2",
+            "8"
+          ],
+          "rep": "2",
+          "expl": "Huit et deux font dix."
+        },
+        {
+          "q": "Une boîte a 7 crayons et peut en contenir 10. Combien manque-t-il ?",
+          "choix": [
+            "7",
+            "4",
+            "3"
+          ],
+          "rep": "3",
+          "expl": "Sept et trois font dix."
+        }
+      ],
+      "id": "REV-MA-CP-21"
+    },
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Doubles et moitiés",
+      "emoji": "🪞",
+      "en_une_phrase": "Le double réunit deux quantités égales ; la moitié partage en deux parts égales.",
+      "comprendre": "Tu sais faire deux tas de jetons. Deux tas de trois font le double de trois. Un partage en deux parts égales permet de retrouver la moitié.",
+      "essentiel": [
+        "Le double de 3 est 6.",
+        "La moitié de 6 est 3.",
+        "Les deux parts doivent être égales."
+      ],
+      "image_mentale": "Imagine deux mains avec trois doigts levés chacune.",
+      "regle_ou_methode": "Pour doubler, réunis deux groupes égaux. Pour partager, fais deux parts égales.",
+      "exemples": [
+        "Le double de 4 : 4 + 4 = 8. La moitié de 8 est 4.",
+        "Le double de 3 est 6."
+      ],
+      "piege": "Deux parts inégales ne sont pas des moitiés.",
+      "astuce_memoire": "Double : deux fois ; moitié : deux parts égales.",
+      "quiz": [
+        {
+          "q": "Quel est le double de 4 ?",
+          "choix": [
+            "6",
+            "8",
+            "4"
+          ],
+          "rep": "8",
+          "expl": "Quatre et quatre font huit."
+        },
+        {
+          "q": "Quelle est la moitié de 6 ?",
+          "choix": [
+            "2",
+            "4",
+            "3"
+          ],
+          "rep": "3",
+          "expl": "Trois et trois font six."
+        },
+        {
+          "q": "Deux parts égales contiennent 5 billes chacune. Combien de billes ?",
+          "choix": [
+            "10",
+            "5",
+            "7"
+          ],
+          "rep": "10",
+          "expl": "Cinq et cinq font dix."
+        }
+      ],
+      "id": "REV-MA-CP-22"
+    },
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Demi et quart",
+      "emoji": "🍎",
+      "en_une_phrase": "Un demi et un quart viennent d’un partage en parts égales.",
+      "comprendre": "Tu as déjà partagé un goûter. En deux parts égales, chaque part est un demi. En quatre parts égales, chaque part est un quart.",
+      "essentiel": [
+        "Deux moitiés égales forment un tout.",
+        "Quatre quarts égaux forment un tout.",
+        "Les parts d’un même partage doivent être égales."
+      ],
+      "image_mentale": "Imagine une pomme coupée en deux, puis une autre en quatre parts égales.",
+      "regle_ou_methode": "Compte le nombre de parts égales du tout.",
+      "exemples": [
+        "Partage une bande en deux parts égales. Chaque part est un demi. Réunis-les : tu retrouves la bande entière.",
+        "Une bande partagée en quatre parts égales donne quatre quarts."
+      ],
+      "piege": "Deux morceaux de tailles différentes ne sont pas deux moitiés.",
+      "astuce_memoire": "Demi : deux parts ; quart : quatre parts.",
+      "quiz": [
+        {
+          "q": "Combien de moitiés forment un tout ?",
+          "choix": [
+            "Trois",
+            "Quatre",
+            "Deux"
+          ],
+          "rep": "Deux",
+          "expl": "Deux moitiés égales reconstituent le tout."
+        },
+        {
+          "q": "Combien de quarts forment un tout ?",
+          "choix": [
+            "Quatre",
+            "Deux",
+            "Trois"
+          ],
+          "rep": "Quatre",
+          "expl": "Quatre quarts égaux reconstituent le tout."
+        },
+        {
+          "q": "Une bande est coupée en deux parts inégales. Sont-ce deux moitiés ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "Seulement la plus grande"
+          ],
+          "rep": "Non",
+          "expl": "Les moitiés doivent être égales."
+        }
+      ],
+      "id": "REV-MA-CP-23"
+    },
+    {
+      "axe": "Espace et géométrie",
+      "titre": "Se déplacer sur un quadrillage",
+      "emoji": "🟦",
+      "en_une_phrase": "Un déplacement sur un quadrillage suit des cases et des directions.",
+      "comprendre": "Tu connais les déplacements à droite et à gauche. Sur un quadrillage, tu avances de case en case. Les consignes indiquent le chemin.",
+      "essentiel": [
+        "Une flèche peut indiquer une direction.",
+        "Compte chaque case parcourue.",
+        "Droite et gauche dépendent du sens demandé."
+      ],
+      "image_mentale": "Imagine un pion sur des carreaux.",
+      "regle_ou_methode": "Pars de la case indiquée puis suis les déplacements dans l’ordre.",
+      "exemples": [
+        "Place un pion dans une case. Avance de deux cases à droite : compte une, puis deux. Le pion arrive deux cases plus loin.",
+        "Une case en haut puis une à droite forment un trajet en deux étapes."
+      ],
+      "piege": "Ne compte pas la case de départ comme un déplacement.",
+      "astuce_memoire": "Une case parcourue, un pas.",
+      "quiz": [
+        {
+          "q": "Tu avances de deux cases. Combien de cases parcours-tu ?",
+          "choix": [
+            "Deux",
+            "Une",
+            "Trois"
+          ],
+          "rep": "Deux",
+          "expl": "Chaque pas fait parcourir une case."
+        },
+        {
+          "q": "Que fais-tu d’abord pour suivre un trajet ?",
+          "choix": [
+            "Je change la règle",
+            "Je repère le départ",
+            "Je compte les couleurs"
+          ],
+          "rep": "Je repère le départ",
+          "expl": "Il faut partir de la case indiquée."
+        },
+        {
+          "q": "Un pion avance de une case à droite puis une en haut. Combien de déplacements ?",
+          "choix": [
+            "Un",
+            "Trois",
+            "Deux"
+          ],
+          "rep": "Deux",
+          "expl": "Il effectue deux étapes."
+        }
+      ],
+      "id": "REV-MA-CP-24"
+    },
+    {
+      "axe": "Espace et géométrie",
+      "titre": "Reconnaître des solides",
+      "emoji": "🧊",
+      "en_une_phrase": "Un solide occupe de la place et peut avoir des faces.",
+      "comprendre": "Tu connais les boîtes et les ballons. Ils ont des formes différentes. Certaines roulent ; d’autres peuvent s’empiler.",
+      "essentiel": [
+        "Le cube a des faces carrées.",
+        "La boule peut rouler.",
+        "Le cylindre peut avoir deux faces planes rondes."
+      ],
+      "image_mentale": "Imagine un dé, un ballon et une boîte cylindrique.",
+      "regle_ou_methode": "Observe les faces et essaie de faire rouler l’objet.",
+      "exemples": [
+        "Un dé a des faces carrées. Il ressemble à un cube.",
+        "Un ballon rond ressemble à une boule."
+      ],
+      "piege": "Un dessin de carré est plat ; un cube est un solide.",
+      "astuce_memoire": "Cube : faces carrées ; boule : roule.",
+      "quiz": [
+        {
+          "q": "Quel solide ressemble à un dé ?",
+          "choix": [
+            "Une boule",
+            "Un cube",
+            "Un cercle"
+          ],
+          "rep": "Un cube",
+          "expl": "Un dé a souvent la forme d’un cube."
+        },
+        {
+          "q": "Quel solide ressemble à un ballon rond ?",
+          "choix": [
+            "Un carré",
+            "Un triangle",
+            "Une boule"
+          ],
+          "rep": "Une boule",
+          "expl": "Un ballon rond ressemble à une boule."
+        },
+        {
+          "q": "Un objet a deux faces planes rondes et peut rouler sur le côté. Quel solide évoque-t-il ?",
+          "choix": [
+            "Un cylindre",
+            "Une boule",
+            "Un carré"
+          ],
+          "rep": "Un cylindre",
+          "expl": "Le cylindre a deux faces planes rondes."
+        }
+      ],
+      "id": "REV-MA-CP-25"
+    }
+  ]
+}

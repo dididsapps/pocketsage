@@ -1,8 +1,10 @@
-"""Applique les sorties de la moulinette aux fiches : python3 tools/fiches_appliquer.py <dossier_source> <verif1.json> [...]
+"""Applique les sorties de la moulinette aux fiches : python3 tools/fiches_appliquer.py <dossier_source> <verif1.json> [...] [--out dossier]
 Écrit les fiches validées dans docs/contenu/fiches/FR/. Retire aussi le préfixe « Sans regarder la fiche : »."""
 import json,sys,re,glob,os
 from pathlib import Path
-R=Path(__file__).resolve().parent.parent;OUT=R/'docs/contenu/fiches/FR';OUT.mkdir(parents=True,exist_ok=True)
+R=Path(__file__).resolve().parent.parent;OUT=R/'docs/contenu/fiches/FR'
+if '--out' in sys.argv:i=sys.argv.index('--out');OUT=Path(sys.argv[i+1]);del sys.argv[i:i+2]
+OUT.mkdir(parents=True,exist_ok=True)
 src=Path(sys.argv[1]);corr={};suppr=set();vraies=[]
 for v in sys.argv[2:]:
     for x in json.load(open(v,encoding='utf-8')).get('fiches',[]):

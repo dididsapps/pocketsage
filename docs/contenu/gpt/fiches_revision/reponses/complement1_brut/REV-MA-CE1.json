@@ -1,0 +1,487 @@
+{
+  "classe": "CE1",
+  "niveau_appli": "CE1",
+  "age": "7-8 ans",
+  "matiere": "Mathématiques",
+  "code": "MA",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Soustraire mentalement",
+      "emoji": "➖",
+      "en_une_phrase": "Soustraire permet notamment de trouver ce qui reste.",
+      "comprendre": "Tu sais enlever des objets d’un tas. Tu peux aussi reculer dans la suite des nombres. Chaque pas en arrière retire une unité.",
+      "essentiel": [
+        "Pars du nombre de départ.",
+        "Recule du nombre retiré.",
+        "Le résultat est la différence."
+      ],
+      "image_mentale": "Imagine une ligne de nombres et des pas en arrière.",
+      "regle_ou_methode": "Pars du premier nombre et recule.",
+      "exemples": [
+        "Pour 14 − 3, pars de 14. Recule : 13, 12, 11. Le résultat est 11.",
+        "18 − 2 = 16."
+      ],
+      "piege": "Ne compte pas 14 comme premier pas : commence à 13.",
+      "astuce_memoire": "Retirer, c’est reculer.",
+      "quiz": [
+        {
+          "q": "Combien font 14 − 3 ?",
+          "choix": [
+            "12",
+            "17",
+            "11"
+          ],
+          "rep": "11",
+          "expl": "Trois pas après 14 en reculant mènent à 11."
+        },
+        {
+          "q": "Combien font 18 − 2 ?",
+          "choix": [
+            "16",
+            "20",
+            "15"
+          ],
+          "rep": "16",
+          "expl": "Dix-huit moins deux font seize."
+        },
+        {
+          "q": "Tu as 15 billes et tu en donnes 4. Combien en reste-t-il ?",
+          "choix": [
+            "19",
+            "11",
+            "12"
+          ],
+          "rep": "11",
+          "expl": "Quinze moins quatre font onze."
+        }
+      ],
+      "id": "REV-MA-CE1-20"
+    },
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Soustraire en colonnes",
+      "emoji": "🧮",
+      "en_une_phrase": "Dans une soustraction posée, on aligne les chiffres de même rang.",
+      "comprendre": "Tu sais qu’un nombre contient dizaines et unités. Les colonnes gardent ensemble les chiffres de même rang. On commence par les unités.",
+      "essentiel": [
+        "Aligne unités sous unités et dizaines sous dizaines.",
+        "Soustrais d’abord les unités.",
+        "Puis soustrais les dizaines."
+      ],
+      "image_mentale": "Imagine deux colonnes marquées D pour dizaines et U pour unités.",
+      "regle_ou_methode": "Aligne les nombres puis soustrais colonne par colonne.",
+      "exemples": [
+        "Pour 57 − 23, place 23 sous 57. Calcule 7 − 3 = 4 unités. Puis 5 − 2 = 3 dizaines : le résultat est 34.",
+        "68 − 14 = 54."
+      ],
+      "piege": "Ne place pas une unité sous une dizaine : vérifie les colonnes.",
+      "astuce_memoire": "Unités sous unités, dizaines sous dizaines.",
+      "quiz": [
+        {
+          "q": "Combien font 57 − 23 ?",
+          "choix": [
+            "34",
+            "44",
+            "30"
+          ],
+          "rep": "34",
+          "expl": "Sept moins trois font quatre ; cinq dizaines moins deux font trois dizaines."
+        },
+        {
+          "q": "Combien font 68 − 14 ?",
+          "choix": [
+            "52",
+            "54",
+            "74"
+          ],
+          "rep": "54",
+          "expl": "Huit moins quatre font quatre ; six dizaines moins une font cinq dizaines."
+        },
+        {
+          "q": "Dans 57 − 23, où places-tu le 3 ?",
+          "choix": [
+            "Sous le 5",
+            "À gauche du 5",
+            "Sous le 7"
+          ],
+          "rep": "Sous le 7",
+          "expl": "Le 3 et le 7 représentent des unités."
+        }
+      ],
+      "id": "REV-MA-CE1-21"
+    },
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Échanger une dizaine",
+      "emoji": "🔄",
+      "en_une_phrase": "Une dizaine peut être échangée contre dix unités pour soustraire.",
+      "comprendre": "Tu sais que dix unités font une dizaine. Si les unités ne suffisent pas, transforme une dizaine en dix unités. La quantité totale ne change pas.",
+      "essentiel": [
+        "Une dizaine vaut dix unités.",
+        "Après l’échange, il reste une dizaine de moins.",
+        "Soustrais les unités puis les dizaines."
+      ],
+      "image_mentale": "Imagine un paquet de dix crayons ouvert en dix crayons seuls.",
+      "regle_ou_methode": "Échange une dizaine, puis soustrais colonne par colonne.",
+      "exemples": [
+        "Pour 52 − 27, échange une dizaine de 52 : il reste 4 dizaines et 12 unités. Calcule 12 − 7 = 5, puis 4 − 2 = 2. Le résultat est 25.",
+        "Pour 31 − 12, échange une dizaine : 11 − 2 = 9 et 2 − 1 = 1, soit 19."
+      ],
+      "piege": "Après l’échange, n’oublie pas de diminuer les dizaines.",
+      "astuce_memoire": "Une dizaine devient dix unités.",
+      "quiz": [
+        {
+          "q": "Combien font 52 − 27 ?",
+          "choix": [
+            "35",
+            "25",
+            "35 unités et 2 dizaines"
+          ],
+          "rep": "25",
+          "expl": "Après échange, 12 − 7 = 5 et 4 − 2 = 2."
+        },
+        {
+          "q": "Combien font 31 − 12 ?",
+          "choix": [
+            "29",
+            "21",
+            "19"
+          ],
+          "rep": "19",
+          "expl": "Après échange, 11 − 2 = 9 et 2 − 1 = 1."
+        },
+        {
+          "q": "Dans 52, on échange une dizaine. Combien reste-t-il de dizaines ?",
+          "choix": [
+            "4",
+            "5",
+            "3"
+          ],
+          "rep": "4",
+          "expl": "Cinq dizaines moins la dizaine échangée font quatre dizaines."
+        }
+      ],
+      "id": "REV-MA-CE1-22"
+    },
+    {
+      "axe": "Grandeurs et mesures",
+      "titre": "Lire les heures et demi-heures",
+      "emoji": "🕒",
+      "en_une_phrase": "La petite aiguille indique les heures et la grande les minutes.",
+      "comprendre": "Tu connais les moments de la journée. Une horloge à aiguilles aide à les situer. Quand la grande aiguille a fait un demi-tour, trente minutes sont passées.",
+      "essentiel": [
+        "La petite aiguille indique l’heure.",
+        "La grande aiguille sur 12 indique zéro minute.",
+        "La grande aiguille sur 6 indique trente minutes."
+      ],
+      "image_mentale": "Imagine une horloge coupée en deux du 12 au 6.",
+      "regle_ou_methode": "Lis l’heure avec la petite aiguille puis regarde la grande.",
+      "exemples": [
+        "La petite aiguille est sur 3 et la grande sur 12. Il est 3 heures.",
+        "La grande aiguille est sur 6 et la petite entre 3 et 4 : il est 3 h 30."
+      ],
+      "piege": "À 3 h 30, la petite aiguille avance entre 3 et 4 : elle ne reste pas sur 3.",
+      "astuce_memoire": "Grande sur 12 : pile ; grande sur 6 : et demie.",
+      "quiz": [
+        {
+          "q": "Grande aiguille sur 12, petite sur 3 : quelle heure ?",
+          "choix": [
+            "6 h",
+            "12 h",
+            "3 h"
+          ],
+          "rep": "3 h",
+          "expl": "La grande aiguille sur 12 indique une heure pile."
+        },
+        {
+          "q": "Combien de minutes dans une demi-heure ?",
+          "choix": [
+            "30",
+            "60",
+            "15"
+          ],
+          "rep": "30",
+          "expl": "Une demi-heure vaut trente minutes."
+        },
+        {
+          "q": "Grande aiguille sur 6, petite entre 3 et 4 : quelle heure ?",
+          "choix": [
+            "3 h",
+            "3 h 30",
+            "6 h"
+          ],
+          "rep": "3 h 30",
+          "expl": "La grande aiguille sur 6 indique trente minutes."
+        }
+      ],
+      "id": "REV-MA-CE1-23"
+    },
+    {
+      "axe": "Grandeurs et mesures",
+      "titre": "Comparer des masses",
+      "emoji": "⚖️",
+      "en_une_phrase": "Le gramme et le kilogramme servent à mesurer une masse.",
+      "comprendre": "Tu as déjà soupesé un cartable. Pour comparer des masses, on utilise des unités communes. Un kilogramme vaut mille grammes.",
+      "essentiel": [
+        "Le gramme s’écrit g.",
+        "Le kilogramme s’écrit kg.",
+        "1 kg = 1 000 g."
+      ],
+      "image_mentale": "Imagine une balance avec un paquet de 1 kg.",
+      "regle_ou_methode": "Choisis l’unité et compare les masses dans la même unité.",
+      "exemples": [
+        "Un paquet pèse 1 kg. Cela correspond à 1 000 g. Un objet de 500 g est donc moins lourd.",
+        "Deux paquets de 1 kg ont une masse de 2 kg."
+      ],
+      "piege": "Une masse en g ne se compare pas directement au chiffre en kg sans conversion.",
+      "astuce_memoire": "Un kilogramme : mille grammes.",
+      "quiz": [
+        {
+          "q": "Combien de grammes dans 1 kg ?",
+          "choix": [
+            "1 000 g",
+            "100 g",
+            "10 g"
+          ],
+          "rep": "1 000 g",
+          "expl": "Un kilogramme vaut mille grammes."
+        },
+        {
+          "q": "Quel objet a la masse la plus grande ?",
+          "choix": [
+            "500 g",
+            "1 kg",
+            "Ils ont la même masse"
+          ],
+          "rep": "1 kg",
+          "expl": "1 kg vaut 1 000 g, plus que 500 g."
+        },
+        {
+          "q": "Deux paquets de 1 kg pèsent ensemble combien ?",
+          "choix": [
+            "1 kg",
+            "200 g",
+            "2 kg"
+          ],
+          "rep": "2 kg",
+          "expl": "Un kilogramme plus un kilogramme font deux kilogrammes."
+        }
+      ],
+      "id": "REV-MA-CE1-24"
+    },
+    {
+      "axe": "Grandeurs et mesures",
+      "titre": "Euros et centimes",
+      "emoji": "🪙",
+      "en_une_phrase": "Un euro vaut cent centimes.",
+      "comprendre": "Tu connais les pièces en euros. Les centimes permettent de payer des sommes plus petites qu’un euro. On peut les rassembler.",
+      "essentiel": [
+        "1 euro = 100 centimes.",
+        "Deux pièces de 50 centimes valent 1 euro.",
+        "Additionne les valeurs des pièces."
+      ],
+      "image_mentale": "Imagine cent petits centimes réunis en un euro.",
+      "regle_ou_methode": "Convertis si besoin puis additionne les valeurs.",
+      "exemples": [
+        "Une pièce vaut 50 centimes. Une autre vaut 50 centimes. Ensemble, elles valent 100 centimes, soit 1 euro.",
+        "1 euro et 20 centimes font 1 euro 20 centimes."
+      ],
+      "piege": "Deux pièces ne valent pas forcément 2 euros : lis leurs valeurs.",
+      "astuce_memoire": "Cent centimes pour un euro.",
+      "quiz": [
+        {
+          "q": "Combien de centimes dans un euro ?",
+          "choix": [
+            "10",
+            "100",
+            "50"
+          ],
+          "rep": "100",
+          "expl": "Un euro vaut cent centimes."
+        },
+        {
+          "q": "Deux pièces de 50 centimes valent combien ?",
+          "choix": [
+            "50 centimes",
+            "2 euros",
+            "1 euro"
+          ],
+          "rep": "1 euro",
+          "expl": "50 et 50 centimes font 100 centimes."
+        },
+        {
+          "q": "Tu as 1 euro et 20 centimes. Quelle somme as-tu ?",
+          "choix": [
+            "1 euro 20 centimes",
+            "2 euros",
+            "20 centimes"
+          ],
+          "rep": "1 euro 20 centimes",
+          "expl": "On réunit les deux valeurs."
+        }
+      ],
+      "id": "REV-MA-CE1-25"
+    },
+    {
+      "axe": "Espace et géométrie",
+      "titre": "Triangle et cercle",
+      "emoji": "📐",
+      "en_une_phrase": "Le triangle a trois côtés droits ; le cercle est une ligne courbe fermée.",
+      "comprendre": "Tu connais des formes dessinées sur les objets. Le contour du triangle est fait de segments. Celui du cercle est courbe.",
+      "essentiel": [
+        "Un triangle a trois côtés.",
+        "Le cercle est un contour courbe fermé.",
+        "Un cercle n’a pas de côtés droits."
+      ],
+      "image_mentale": "Imagine trois bâtonnets, puis le contour d’une roue.",
+      "regle_ou_methode": "Suis le contour et compte les côtés droits.",
+      "exemples": [
+        "Une figure fermée a trois côtés droits. Compte : un, deux, trois. C’est un triangle.",
+        "Le contour d’une pièce ronde peut faire penser à un cercle."
+      ],
+      "piege": "Un disque est la surface à l’intérieur du cercle, pas seulement son contour.",
+      "astuce_memoire": "Triangle : trois côtés ; cercle : contour courbe.",
+      "quiz": [
+        {
+          "q": "Combien de côtés a un triangle ?",
+          "choix": [
+            "Deux",
+            "Quatre",
+            "Trois"
+          ],
+          "rep": "Trois",
+          "expl": "Un triangle possède trois côtés."
+        },
+        {
+          "q": "Quel contour est courbe et fermé ?",
+          "choix": [
+            "Le cercle",
+            "Le triangle",
+            "Le segment"
+          ],
+          "rep": "Le cercle",
+          "expl": "Le cercle est une ligne courbe fermée."
+        },
+        {
+          "q": "Une figure fermée a trois côtés droits. Que reconnais-tu ?",
+          "choix": [
+            "Un cercle",
+            "Un triangle",
+            "Un carré"
+          ],
+          "rep": "Un triangle",
+          "expl": "Trois côtés droits forment un triangle."
+        }
+      ],
+      "id": "REV-MA-CE1-26"
+    },
+    {
+      "axe": "Espace et géométrie",
+      "titre": "La symétrie par pliage",
+      "emoji": "🪞",
+      "en_une_phrase": "Deux parties sont symétriques si elles se superposent par pliage sur l’axe.",
+      "comprendre": "Tu as peut-être plié une feuille. Si les deux dessins se recouvrent, ils sont symétriques par rapport au pli. Le pli est l’axe de symétrie.",
+      "essentiel": [
+        "L’axe indique la ligne de pliage.",
+        "Les deux parties se superposent après pliage.",
+        "Un miroir posé sur l’axe peut aider à vérifier."
+      ],
+      "image_mentale": "Imagine un papillon plié sur le milieu de son corps.",
+      "regle_ou_methode": "Plie sur l’axe et vérifie la superposition.",
+      "exemples": [
+        "Dessine deux moitiés de cœur de part et d’autre d’un pli. Plie : les contours se recouvrent. Elles sont symétriques.",
+        "Un carré possède des axes de symétrie."
+      ],
+      "piege": "Deux formes identiques ne sont pas forcément symétriques par rapport au pli choisi.",
+      "astuce_memoire": "Je plie, les contours se superposent.",
+      "quiz": [
+        {
+          "q": "Que représente le pli ?",
+          "choix": [
+            "L’axe de symétrie",
+            "La couleur du dessin",
+            "Le centre de la feuille forcément"
+          ],
+          "rep": "L’axe de symétrie",
+          "expl": "Le pli sert ici d’axe de symétrie."
+        },
+        {
+          "q": "Que doivent faire les parties par pliage ?",
+          "choix": [
+            "Se toucher seulement",
+            "Se superposer",
+            "Changer de couleur"
+          ],
+          "rep": "Se superposer",
+          "expl": "La superposition permet de vérifier la symétrie."
+        },
+        {
+          "q": "Deux dessins ne se recouvrent pas quand tu plies sur la ligne. Sont-ils symétriques par rapport à cette ligne ?",
+          "choix": [
+            "Oui",
+            "Seulement s’ils sont colorés",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Ils devraient se superposer après pliage."
+        }
+      ],
+      "id": "REV-MA-CE1-27"
+    },
+    {
+      "axe": "Espace et géométrie",
+      "titre": "Se repérer sur un quadrillage",
+      "emoji": "🟦",
+      "en_une_phrase": "Un quadrillage permet de repérer une case avec sa ligne et sa colonne.",
+      "comprendre": "Tu connais les cases d’un jeu. Les lignes et les colonnes aident à retrouver une case précise. On peut utiliser des lettres et des nombres.",
+      "essentiel": [
+        "Une ligne traverse le quadrillage.",
+        "Une colonne le parcourt dans l’autre sens.",
+        "Une case est à la rencontre d’une ligne et d’une colonne."
+      ],
+      "image_mentale": "Imagine un tableau avec A, B en haut et 1, 2 sur le côté.",
+      "regle_ou_methode": "Cherche d’abord la colonne indiquée, puis la ligne.",
+      "exemples": [
+        "Pour la case B2, cherche la colonne B. Descends à la ligne 2. La case rencontrée est B2.",
+        "La case A1 est à la rencontre de la colonne A et de la ligne 1."
+      ],
+      "piege": "Ne confonds pas le nom de la ligne avec celui de la colonne.",
+      "astuce_memoire": "Colonne, puis ligne.",
+      "quiz": [
+        {
+          "q": "Où se trouve B2 ?",
+          "choix": [
+            "Colonne A, ligne 2",
+            "Colonne B, ligne 2",
+            "Colonne B, ligne 1"
+          ],
+          "rep": "Colonne B, ligne 2",
+          "expl": "B indique la colonne et 2 la ligne dans cet exemple."
+        },
+        {
+          "q": "Quelle case est colonne A, ligne 1 ?",
+          "choix": [
+            "B1",
+            "A2",
+            "A1"
+          ],
+          "rep": "A1",
+          "expl": "A1 combine la colonne A et la ligne 1."
+        },
+        {
+          "q": "Tu passes de A1 à B1. Que changes-tu ?",
+          "choix": [
+            "La colonne",
+            "La ligne",
+            "La ligne et la colonne"
+          ],
+          "rep": "La colonne",
+          "expl": "La lettre change et le numéro reste 1."
+        }
+      ],
+      "id": "REV-MA-CE1-28"
+    }
+  ]
+}
