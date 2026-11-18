@@ -11,6 +11,10 @@ Toute création ou modification passe par la moulinette (docs/contenu/PROCESS_CO
    Format : 1-2 phrases (≤ 35 mots), adaptées à l'âge ; puis affichage « 💡 Pourquoi ? » + voix.
    (Les 1 059 questions ajoutées le 14-15/11 ont déjà leur `expl`.)
 
+4. **Fiches de révision** (nouveau, 18/11) : 70 prompts prêts dans `docs/contenu/gpt/fiches_revision/`
+   (une conversation ChatGPT par classe × matière). Déposer chaque JSON dans `reponses/`, Claude fait la
+   moulinette puis l'intégration (onglet « 📄 Fiches » dans chaque matière + PDF).
+
 ## Fait par Claude (15/11)
 - Correction des erreurs des anciennes questions (`docs/contenu/problemes_questions.csv`).
 - Niveau « Adulte / Université » (classe `Sup`) : questions universitaires vérifiées + les plus difficiles du lycée.
@@ -19,3 +23,13 @@ Toute création ou modification passe par la moulinette (docs/contenu/PROCESS_CO
 - Doublons restants (236 signalés) et niveaux à affiner avec les vrais chiffres du compteur
   (`/api/stats`, base D1 `STATS` à lier dans Cloudflare + secret `STATS_TOKEN`).
 - Retirer l'avis bêta (BETA_AVIS) et renommer les lieux réels (Burj, Atlantis…) avant les stores.
+
+## Idées « École sereine » (pas urgent, 18/11) — voir le rapport Claude Doc
+Règle : aucun conseil de spécialiste, aucun diagnostic, aucune promesse de santé. Seule phrase autorisée
+pour orienter : « En cas de doute, parlez-en à l'enseignant ou au médecin. »
+- [ ] Minuteur de devoirs (petits blocs + pause, réglable par le parent)
+- [ ] « Contrôle de demain » : révision express ciblée sur une notion choisie
+- [ ] Quiz parent élargi (orienter vers le bon parcours « Mes super-pouvoirs »)
+- [ ] Journal des progrès (ce qui a été fait cette semaine, sans note ni comparaison)
+- [ ] Fiche de liaison parent ↔ enseignant à imprimer (ce qu'on travaille à la maison)
+- [ ] Communication : parler d'organisation, de routine et de confiance, jamais de cerveau ni de troubles
