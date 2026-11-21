@@ -383,6 +383,11 @@ body.soir #nuit-c span{color:#E0B080}
 .lum-bar input{flex:1;accent-color:#F2A65A;height:28px}
 #veilleuse .lum-bar{width:100%;max-width:340px;margin:0}
 /* 💪 Mes super-pouvoirs */
+.yg-intro{margin:0 0 12px;padding:12px 14px;border-radius:16px;background:linear-gradient(135deg,#E9F7EF,#E8F0FE);display:flex;flex-direction:column;gap:4px;font-family:var(--f);color:#1F3B2D}
+.yg-intro b{font-size:15px}.yg-intro span{font-size:13px;line-height:1.45}
+.yg-seance{display:flex;align-items:center;gap:12px;width:100%;margin:0 0 9px;padding:13px 14px;border:none;border-radius:16px;background:linear-gradient(135deg,#43B581,#2E86AB);color:#fff;font-family:var(--f);text-align:left;cursor:pointer;box-shadow:var(--sh)}
+.yg-se{font-size:28px}.yg-st{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}.yg-st b{font-size:15px}.yg-st small{font-size:12px;opacity:.92}.yg-go{font-size:20px;font-weight:900}
+.yg-sep{font-family:var(--f);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;color:var(--tl,#666);margin:10px 2px 8px}
 .fi-cls,.fi-mats{display:flex;gap:7px;overflow-x:auto;padding:12px 14px 4px;scrollbar-width:none}.fi-mats{flex-wrap:wrap;overflow:visible}
 .fi-cl{flex-shrink:0;padding:7px 12px;border-radius:18px;border:2px solid var(--v);background:var(--w,#fff);color:var(--v);font-family:var(--f);font-size:12.5px;font-weight:800;cursor:pointer}
 .fi-cl.on{background:var(--v);color:#fff}.fi-cl.off{opacity:.4;border-style:dashed}
@@ -2939,7 +2944,41 @@ defis:[
 {id:"DF-057",cat:"cardio",zone:"bras",nom:"Le Nageur 🏊",consigne:"Debout, fais le crawl avec tes bras, le plus vite possible, en restant bien droit. Jusqu'au bip !",dur:30,diff:1,age:"4-18",hint:"Grands mouvements, comme dans une piscine !",invite:"Course de nage sans eau en famille !"},
 {id:"DF-058",cat:"cardio",zone:"bras",nom:"Pompes au mur 🧱",consigne:"Mains contre un mur, corps bien droit. Plie les coudes pour approcher le nez du mur, puis pousse. Enchaîne jusqu'au bip !",dur:30,diff:1,age:"5-18",hint:"Plus tes pieds sont loin du mur, plus c'est dur.",invite:"Qui en fait le plus ?"},
 {id:"DF-059",cat:"cardio",zone:"bras",nom:"Les Moulins à vent 🌬️",consigne:"Bras tendus, fais de grands cercles rapides vers l'avant, puis vers l'arrière, jusqu'au bip !",dur:30,diff:1,age:"4-18",hint:"Les bras frôlent tes oreilles à chaque tour.",invite:"Le moulin le plus rapide de la maison !"},
-{id:"DF-048",cat:"respiration",nom:"Respiration des Super-Héros 🦸",consigne:"Inspire fort et lève les bras comme tu décoles. Retiens 3s, poings fermés. Expire PUISSAMMENT en ramenant les poings vers toi. 5 fois !",dur:45,diff:1,age:"4-10",hint:"Imagine que tu charges tes pouvoirs à chaque inspiration !",invite:"Le rituel du matin pour se sentir invincible — toute la famille peut le faire !"}
+{id:"DF-048",cat:"respiration",nom:"Respiration des Super-Héros 🦸",consigne:"Inspire fort et lève les bras comme tu décoles. Retiens 3s, poings fermés. Expire PUISSAMMENT en ramenant les poings vers toi. 5 fois !",dur:45,diff:1,age:"4-10",hint:"Imagine que tu charges tes pouvoirs à chaque inspiration !",invite:"Le rituel du matin pour se sentir invincible — toute la famille peut le faire !"},
+// ── YOGA (généré par tools/yoga_build.py depuis docs/contenu/sport/yoga.json) ──
+{"id": "YG-001", "cat": "yoga", "nom": "La Montagne ⛰️", "consigne": "Debout, pieds serrés, bras le long du corps. Grandis-toi comme une montagne et respire calmement par le nez.", "dur": 20, "diff": 1, "age": "4-18", "hint": "Imagine un fil qui tire le haut de ta tête vers le ciel.", "invite": "Qui fait la montagne la plus immobile ?"},
+{"id": "YG-002", "cote": 1, "cat": "yoga", "nom": "L'Arbre 🌳", "consigne": "Debout sur un pied, pose l'autre pied contre ta cheville ou ton mollet, jamais sur le genou. Lève les bras comme des branches. Change de pied quand le coach le dit.", "dur": 30, "diff": 1, "age": "4-18", "hint": "Regarde un point fixe devant toi, ça aide à garder l'équilibre.", "invite": "Faites une forêt entière avec toute la famille !"},
+{"id": "YG-003", "cat": "yoga", "nom": "Le Chat et la Vache 🐱", "consigne": "À quatre pattes. Inspire en creusant le dos et en levant la tête, comme une vache. Souffle en arrondissant le dos, comme un chat. Continue tout doucement.", "dur": 30, "diff": 1, "age": "4-18", "hint": "Fais un petit miaou quand tu arrondis le dos !", "invite": "Montre ce mouvement à un adulte, il va adorer."},
+{"id": "YG-004", "cat": "yoga", "nom": "Le Chien tête en bas 🐶", "consigne": "Mains et pieds au sol, lève les fesses vers le ciel pour faire un grand V à l'envers. Laisse ta tête pendre. Tu peux plier un peu les genoux.", "dur": 20, "diff": 1, "age": "4-18", "hint": "Appuie bien sur tes mains, doigts écartés.", "invite": "Remuez la queue comme des chiens contents !"},
+{"id": "YG-005", "cat": "yoga", "nom": "Le Cobra 🐍", "consigne": "Allongé sur le ventre, mains sous les épaules. Soulève doucement la poitrine, coudes un peu pliés, et siffle comme un serpent.", "dur": 20, "diff": 1, "age": "4-18", "hint": "Garde les épaules loin des oreilles et ne force pas dans le dos.", "invite": "Qui fait le sifflement de serpent le plus long ?"},
+{"id": "YG-006", "cat": "yoga", "nom": "La Petite Graine 🌱", "consigne": "À genoux, assieds-toi sur tes talons et pose le front au sol, bras le long du corps. Tu es une petite graine qui se repose sous la terre.", "dur": 30, "diff": 1, "age": "4-18", "hint": "Si ton front ne touche pas le sol, pose-le sur tes poings.", "invite": "Proposez cette posture à quelqu'un de fatigué."},
+{"id": "YG-007", "cat": "yoga", "nom": "Le Papillon 🦋", "consigne": "Assis, colle tes plantes de pieds l'une contre l'autre, genoux ouverts. Tiens tes pieds et bats doucement des ailes avec tes genoux.", "dur": 30, "diff": 1, "age": "4-18", "hint": "Garde le dos bien droit, comme un papillon fier.", "invite": "Où va voler ton papillon ? Raconte-le à ta famille."},
+{"id": "YG-008", "cote": 1, "cat": "yoga", "nom": "Le Guerrier 🛡️", "consigne": "Fais un grand pas de côté, pied avant tourné vers l'extérieur. Plie le genou avant au-dessus de la cheville, bras tendus à l'horizontale, et regarde ta main avant.", "dur": 30, "diff": 2, "age": "6-18", "hint": "Ton genou ne doit pas dépasser ta cheville.", "invite": "Faites une armée de guerriers calmes et forts !"},
+{"id": "YG-009", "cat": "yoga", "nom": "L'Étoile ⭐", "consigne": "Debout, écarte grand les jambes et les bras pour faire une étoile à cinq branches. Étire-toi du bout des doigts jusqu'aux orteils.", "dur": 20, "diff": 1, "age": "4-18", "hint": "Ta tête est la cinquième branche de l'étoile.", "invite": "Toute la famille en étoiles, c'est une constellation !"},
+{"id": "YG-010", "cat": "yoga", "nom": "Le Bateau ⛵", "consigne": "Assis, genoux pliés, penche-toi un peu en arrière et décolle les pieds du sol. Bras tendus devant toi, garde le dos bien droit.", "dur": 15, "diff": 2, "age": "6-18", "hint": "Si c'est trop dur, garde la pointe des pieds au sol.", "invite": "Qui garde son bateau à flot le plus longtemps ?"},
+{"id": "YG-011", "cat": "yoga", "nom": "Le Pont 🌉", "consigne": "Allongé sur le dos, genoux pliés, pieds à plat. Pousse sur tes pieds et soulève les fesses pour faire un pont. Redescends tout doucement.", "dur": 20, "diff": 2, "age": "6-18", "hint": "Garde la tête bien posée au sol, sans la tourner.", "invite": "Une petite voiture peut-elle passer sous ton pont ?"},
+{"id": "YG-012", "cat": "yoga", "nom": "La Grenouille 🐸", "consigne": "Accroupis-toi, pieds écartés, mains au sol entre les genoux. Fais un petit saut de grenouille et reviens en douceur. Recommence jusqu'au bip.", "dur": 20, "diff": 1, "age": "4-10", "hint": "Atterris en douceur, comme sur un nénuphar.", "invite": "Faites la course des grenouilles dans le salon !"},
+{"id": "YG-013", "cat": "yoga", "nom": "Le Lion 🦁", "consigne": "Assis sur les talons, mains sur les genoux. Inspire par le nez, puis ouvre grand la bouche, tire la langue et souffle fort comme un lion qui rugit.", "dur": 20, "diff": 1, "age": "4-12", "hint": "Écarte bien les doigts comme des griffes !", "invite": "Qui fait le rugissement le plus drôle ?"},
+{"id": "YG-014", "cote": 1, "cat": "yoga", "nom": "Le Flamant rose 🦩", "consigne": "Debout sur une jambe, lève l'autre genou devant toi et ouvre les bras comme des ailes. Change de jambe quand le coach le dit.", "dur": 20, "diff": 1, "age": "4-18", "hint": "Fixe un point devant toi pour ne pas tomber.", "invite": "Le flamant qui tient le plus longtemps a gagné !"},
+{"id": "YG-015", "cat": "yoga", "nom": "La Chaise 🪑", "consigne": "Pieds serrés, plie les genoux comme pour t'asseoir sur une chaise invisible, et lève les bras vers le ciel. Garde le poids sur les talons.", "dur": 20, "diff": 2, "age": "6-18", "hint": "Tu dois pouvoir voir tes orteils devant tes genoux.", "invite": "Toute la famille sur des chaises invisibles !"},
+{"id": "YG-016", "cat": "yoga", "nom": "Le Bébé heureux 👶", "consigne": "Allongé sur le dos, attrape tes pieds, genoux vers les côtés, et balance-toi doucement de droite à gauche.", "dur": 20, "diff": 1, "age": "4-18", "hint": "Garde le dos et la tête bien posés au sol.", "invite": "Essayez de ne pas rire, c'est très difficile !"},
+{"id": "YG-017", "cat": "yoga", "nom": "L'Étoile de mer 🌊", "consigne": "Allongé sur le dos, bras et jambes un peu écartés, yeux fermés. Laisse ton corps devenir tout lourd et écoute ta respiration.", "dur": 60, "diff": 1, "age": "4-18", "hint": "Imagine que tu flottes sur une mer tiède.", "invite": "Terminez la journée ensemble avec cette posture."},
+{"id": "YG-018", "cat": "yoga", "nom": "Le Salut au soleil ☀️", "consigne": "Enchaîne lentement : montagne, bras au ciel, penché en avant, planche, cobra, chien tête en bas, puis remonte en montagne. Une respiration par mouvement.", "dur": 60, "diff": 2, "age": "10-18", "hint": "Va doucement : la précision compte plus que la vitesse.", "invite": "Montrez l'enchaînement à toute la famille."},
+{"id": "YF-001", "cote": 1, "cat": "yogafam", "nom": "L'Arbre à deux 🌳", "consigne": "Côte à côte, tenez-vous par la taille. Chacun pose le pied extérieur contre sa cheville ou son mollet et lève le bras libre. Vous êtes une seule grande forêt.", "dur": 30, "diff": 1, "age": "4-18", "hint": "Appuyez-vous un peu l'un sur l'autre, c'est plus facile à deux.", "invite": "Un adulte et un enfant, ou deux enfants : tout le monde peut le faire."},
+{"id": "YF-002", "cat": "yogafam", "nom": "Le Bateau à deux ⛵", "consigne": "Assis face à face, genoux pliés, tenez-vous les mains. Collez vos plantes de pieds, puis levez les jambes ensemble pour faire un bateau. Gardez le dos droit.", "dur": 20, "diff": 2, "age": "6-18", "hint": "Si c'est trop dur, gardez une seule jambe levée chacun.", "invite": "Comptez ensemble jusqu'à dix sans faire chavirer le bateau !"},
+{"id": "YF-003", "cat": "yogafam", "nom": "Dos à dos qui respire 🫁", "consigne": "Assis en tailleur, dos contre dos. Fermez les yeux et sentez le dos de l'autre bouger quand il respire. Essayez de respirer au même rythme.", "dur": 40, "diff": 1, "age": "4-18", "hint": "Respirez lentement par le nez.", "invite": "Idéal avant de dormir ou après une journée chargée."},
+{"id": "YF-004", "cote": 1, "cat": "yogafam", "nom": "La Torsion à deux 🌀", "consigne": "Assis en tailleur, dos à dos. Tournez-vous tous les deux du même côté : une main sur votre genou, l'autre main sur le genou de votre partenaire. Changez de côté quand le coach le dit.", "dur": 30, "diff": 1, "age": "5-18", "hint": "Tournez doucement en grandissant le dos, sans forcer.", "invite": "Parlez-vous sans vous voir pendant la torsion !"},
+{"id": "YF-005", "cat": "yogafam", "nom": "La Chaise dos à dos 🪑", "consigne": "Debout dos contre dos, accrochez vos bras. Avancez un peu les pieds et pliez les genoux en même temps, comme deux chaises qui se tiennent. Remontez ensemble doucement.", "dur": 20, "diff": 2, "age": "8-18", "hint": "Sur un sol qui ne glisse pas, avec deux partenaires de taille proche.", "invite": "Arriverez-vous à descendre et remonter sans vous lâcher ?"},
+{"id": "YF-006", "cat": "yogafam", "nom": "Le Tunnel 🚇", "consigne": "L'adulte fait le chien tête en bas, bien solide. L'enfant passe à quatre pattes sous le tunnel, puis fait demi-tour et repasse.", "dur": 30, "diff": 1, "age": "4-10", "hint": "L'adulte reste immobile pendant que l'enfant passe.", "invite": "Le tunnel peut devenir un pont : à vous d'inventer !"},
+{"id": "YF-007", "cat": "yogafam", "nom": "Le Lézard sur le rocher 🦎", "consigne": "L'adulte se met en petite graine, front au sol. L'enfant s'allonge doucement sur le dos de l'adulte, dos contre dos, bras ouverts, comme un lézard au soleil.", "dur": 30, "diff": 1, "age": "4-8", "hint": "Seulement avec un enfant petit et léger. L'adulte dit stop s'il est gêné, puis se relève doucement en aidant l'enfant.", "invite": "Un moment tout calme, parfait pour finir la séance."},
+{"id": "YF-008", "cat": "yogafam", "nom": "La Balançoire 🎠", "consigne": "Assis face à face, jambes tendues et écartées, pieds contre pieds, tenez-vous les mains. L'un se penche en avant pendant que l'autre se penche en arrière, doucement, comme une balançoire.", "dur": 30, "diff": 1, "age": "4-18", "hint": "Allez lentement et ne tirez pas fort sur les bras.", "invite": "Chantez une comptine en vous balançant !"},
+{"id": "YF-009", "cat": "yogafam", "nom": "Les Papillons jumeaux 🦋", "consigne": "Assis face à face en papillon, genoux ouverts, plantes de pieds collées. Tenez-vous les mains et battez des ailes ensemble.", "dur": 30, "diff": 1, "age": "4-18", "hint": "Si vos pieds ne se touchent pas, chacun colle ses propres pieds.", "invite": "Inventez le nom de votre espèce de papillon !"},
+{"id": "YF-010", "cote": 1, "cat": "yogafam", "nom": "Le Miroir 🪞", "consigne": "Debout face à face. L'un fait des postures très lentement, l'autre l'imite comme un miroir. Changez de chef quand le coach le dit.", "dur": 60, "diff": 1, "age": "4-18", "hint": "Plus c'est lent, plus le miroir est parfait.", "invite": "Toute la famille peut jouer, avec un chef à tour de rôle."},
+{"id": "YF-011", "cat": "yogafam", "nom": "Le Double chien 🐶", "consigne": "Côte à côte, faites le chien tête en bas en même temps. Regardez-vous entre vos jambes et faites une grimace !", "dur": 20, "diff": 1, "age": "4-18", "hint": "Pliez un peu les genoux si l'arrière des jambes tire.", "invite": "Le premier qui rit a perdu !"},
+{"id": "YF-012", "cat": "yogafam", "nom": "Le Ballon à deux 🎈", "consigne": "Debout face à face, mains jointes. Inspirez en levant les bras ensemble au-dessus de la tête, comme un ballon qui gonfle. Soufflez en redescendant les bras.", "dur": 40, "diff": 1, "age": "4-18", "hint": "Gardez le même rythme que votre partenaire.", "invite": "Parfait pour commencer la séance tout en douceur."},
+{"id": "YF-013", "cote": 1, "cat": "yogafam", "nom": "Le Guerrier à deux 🛡️", "consigne": "Côte à côte, hanche contre hanche, faites chacun le guerrier en regardant vers l'extérieur. Vos mains du milieu se touchent. Changez de côté quand le coach le dit.", "dur": 30, "diff": 2, "age": "6-18", "hint": "Le genou plié reste au-dessus de la cheville.", "invite": "Deux guerriers, une seule équipe !"},
+{"id": "YF-014", "cat": "yogafam", "nom": "Les Étoiles de mer à deux 🌊", "consigne": "Allongés sur le dos, tête contre tête, tenez-vous les mains. Fermez les yeux et laissez tout votre corps se relâcher.", "dur": 60, "diff": 1, "age": "4-18", "hint": "Écoutez la respiration de l'autre.", "invite": "Racontez-vous ensuite votre moment préféré de la séance."}
+// ── FIN YOGA ──
 ],
 maths:[
 {id:"MA-GS-001",classe:"GS",cat:"🔢",enonce:"Tu as 2 pommes dans une main et 1 pomme dans l'autre. Combien as-tu de pommes en tout ?",rep:"3",choix:["2","3","4"],diff:1,hint:"Compte sur tes doigts : lève 2 doigts, puis 1 de plus."},
@@ -13083,12 +13122,15 @@ const MCFG={
       const gainage=all.filter(d=>d.cat==='gainage');
       const stretch=all.filter(d=>d.cat==='stretching');
       const respi=all.filter(d=>d.cat==='respiration');
+      const yoga=all.filter(d=>d.cat==='yoga'),yfam=all.filter(d=>d.cat==='yogafam');
       return [
-        {k:'df',    l:'🏃 Tout',        d:all},
+        {k:'df',    l:'🏃 Tout',        d:all.filter(d=>!String(d.cat).startsWith('yoga'))},
         {k:'cardio',l:'❤️ Cardio',       d:cardio},
         {k:'gain',  l:'💪 Gainage',      d:gainage},
         {k:'str',   l:'🧘 Stretching',   d:stretch},
         {k:'respi', l:'🌬️ Respiration',  d:respi},
+        {k:'yoga',  l:'🧘 Yoga',         d:yoga},
+        {k:'yogafam',l:'👨‍👩‍👧 Family Yoga', d:yfam},
       ];
     }},
   langues:{emoji:'🌍',get title(){return t('m_langues');},desc:'Apprends les langues du monde !',bg:'linear-gradient(135deg,#FF9F1C,#FF6B35)',
@@ -15419,10 +15461,30 @@ function openAtelierDetail(a){
   show('atelier-detail');
 }
 
+const YOGA_SEANCES=[{"id": "SY-1", "cat": "yoga", "nom": "Le Safari 🦁", "desc": "Une balade d'animal en animal", "age": "4-8", "ids": ["YG-001", "YG-013", "YG-012", "YG-014", "YG-005", "YG-003", "YG-007", "YG-006", "YG-017"]}, {"id": "SY-2", "cat": "yoga", "nom": "Réveil en douceur ☀️", "desc": "Pour bien démarrer la journée", "age": "6-18", "ids": ["YG-001", "YG-009", "YG-002", "YG-008", "YG-015", "YG-004", "YG-005", "YG-006"]}, {"id": "SY-3", "cat": "yoga", "nom": "Yoga du soir 🌙", "desc": "Des postures calmes avant de dormir", "age": "4-18", "ids": ["YG-007", "YG-003", "YG-006", "YG-011", "YG-016", "YG-017"]}, {"id": "SY-4", "cat": "yoga", "nom": "Le Grand soleil 🌞", "desc": "Pour les plus grands", "age": "10-18", "ids": ["YG-001", "YG-018", "YG-008", "YG-002", "YG-010", "YG-011", "YG-006", "YG-017"]}, {"id": "SF-1", "cat": "yogafam", "nom": "Duo complice 🤝", "desc": "Équilibre, jeu et rires à deux", "age": "4-18", "ids": ["YF-012", "YF-003", "YF-001", "YF-010", "YF-011", "YF-009", "YF-014"]}, {"id": "SF-2", "cat": "yogafam", "nom": "Duo du soir 🌙", "desc": "Tout en douceur avant le coucher", "age": "4-10", "ids": ["YF-012", "YF-004", "YF-008", "YF-007", "YF-003", "YF-014"]}, {"id": "SF-3", "cat": "yogafam", "nom": "Duo des grands 💪", "desc": "Plus de force et d'équilibre", "age": "8-18", "ids": ["YF-012", "YF-013", "YF-002", "YF-005", "YF-004", "YF-009", "YF-014"]}];
+// 🧘 Séances de yoga enchaînées (voix du coach, chrono et passage automatique)
+function _yogaSeancesHTML(el,items){
+  if(!items.length||!items.every(i=>String(i.cat).startsWith('yoga')))return;
+  const cat=items[0].cat,g=_getSliderAge();
+  const fits=a=>{if(_globalShowAll)return true;const m=String(a||'4-18').split('-').map(Number),mn=m[0],mx=m[1]||99;return g<=6?mn<=6:g<=12?(mn<=12&&mx>=7):mx>=13;};
+  const S=(typeof YOGA_SEANCES!=='undefined'?YOGA_SEANCES:[]).filter(x=>x.cat===cat&&fits(x.age));
+  const intro=document.createElement('div');intro.className='yg-intro';
+  intro.innerHTML=cat==='yogafam'?'<b>👨‍👩‍👧 Yoga en famille</b><span>Des postures à faire à deux : un adulte et un enfant, ou deux enfants. Sur un tapis ou un sol qui ne glisse pas, sans jamais forcer.</span>'
+    :'<b>🧘 Yoga</b><span>Des postures d’animaux et de nature, guidées par le coach. On respire par le nez, on va doucement, et une posture ne doit jamais faire mal.</span>';
+  el.appendChild(intro);
+  S.forEach(x=>{const list=x.ids.map(id=>DATA.defis.find(d=>d.id===id)).filter(Boolean);if(!list.length)return;
+    const min=Math.max(1,Math.round(list.reduce((a,d)=>a+(d.dur||30)+12,0)/60));
+    const b=document.createElement('button');b.className='yg-seance';
+    b.innerHTML=`<span class="yg-se">${(x.nom.match(/\p{Emoji_Presentation}/u)||['🧘'])[0]}</span><span class="yg-st"><b>${x.nom.replace(/\p{Emoji_Presentation}/gu,'').trim()}</b><small>${x.desc} · ${list.length} postures · ${min} min</small></span><span class="yg-go">▶</span>`;
+    b.onclick=()=>{sndTap();APP.defiSeance=x.nom.replace(/\p{Emoji_Presentation}/gu,'').trim();startDefi(list[0],0,list,true);};
+    el.appendChild(b);});
+  if(S.length){const h=document.createElement('div');h.className='yg-sep';h.textContent='Ou choisis une posture :';el.appendChild(h);}
+}
 function renderDefis(items){
   const el=document.getElementById('elist');el.innerHTML='';
   const p=P();
-  const catLabel={cardio:'❤️ Cardio',gainage:'💪 Gainage',stretching:'🧘 Stretching',respiration:'🌬️ Respiration'};
+  const catLabel={cardio:'❤️ Cardio',gainage:'💪 Gainage',stretching:'🧘 Stretching',respiration:'🌬️ Respiration',yoga:'🧘 Yoga',yogafam:'👨‍👩‍👧 À deux'};
+  _yogaSeancesHTML(el,items);
   items.forEach((item,idx)=>{
     const done=p&&p.done&&p.done[item.id];
     const d=document.createElement('div');d.className='ecard'+(done?' done':'');
@@ -15765,13 +15827,15 @@ function showFinal(list,mod){
 // ════════════════════════════════════════════
 // DÉFIS
 // ════════════════════════════════════════════
-function startDefi(item,idx,list){
+function startDefi(item,idx,list,auto){
   APP.curEx={item,mod:'defis',idx,list};
-  document.getElementById('df-htit').textContent=item.nom;
+  try{coachStopVoice();}catch(e){}
+  const _yoga=String(item.cat).startsWith('yoga');
+  document.getElementById('df-htit').textContent=auto&&APP.defiSeance?`${APP.defiSeance} · ${idx+1}/${list.length}`:item.nom;
   document.getElementById('df-hsc').textContent='⭐ '+(P()?P().score:0);
   const dur=item.dur||30;let rem=dur,running=false;
   const c=document.getElementById('df-c');
-  const catInfo={cardio:{l:'❤️ Cardio',e:'🏃'},gainage:{l:'💪 Gainage',e:'🏋️'},stretching:{l:'🧘 Stretching',e:'🤸'},respiration:{l:'🌬️ Respiration',e:'🫁'}};
+  const catInfo={cardio:{l:'❤️ Cardio',e:'🏃'},gainage:{l:'💪 Gainage',e:'🏋️'},stretching:{l:'🧘 Stretching',e:'🤸'},respiration:{l:'🌬️ Respiration',e:'🫁'},yoga:{l:'🧘 Yoga',e:'🧘'},yogafam:{l:'👨‍👩‍👧 Yoga à deux',e:'🤝'}};
   const ci=catInfo[item.cat]||{l:'💪 Défi',e:''};
   const emoji=item.nom.match(/\p{Emoji}/u)?.[0]||ci.e||'💪';
   c.innerHTML=`
@@ -15806,16 +15870,20 @@ function startDefi(item,idx,list){
         if(r){r.textContent='🎉';r.classList.remove('run');}
         if(pg)pg.style.width='100%';
         const dn=document.getElementById('df-dn');if(dn)dn.style.display='block';
-        if(APP.car)ttsSpeak('Temps écoulé ! Appuie sur J\'ai réussi si tu l\'as fait !');
+        if(auto){const me=APP.curEx;setTimeout(()=>{if(APP.curEx!==me)return;const p=P();if(p&&!p.done[item.id]){p.score++;p.done[item.id]=true;saveApp();}
+          if(idx+1<list.length)startDefi(list[idx+1],idx+1,list,true);else{try{celebrate();sndStar();}catch(e){}try{coachSay(COACH_TXT.end);}catch(e){}APP.defiSeance=null;setTimeout(()=>{if(APP.curEx===me)backMod();},2500);}},2500);}
+        else if(APP.car)ttsSpeak('Temps écoulé ! Appuie sur J\'ai réussi si tu l\'as fait !');
       }},1000);
   };
   document.getElementById('df-dn').onclick=()=>{
     const p=P();if(p&&!p.done[item.id]){p.score++;p.done[item.id]=true;saveApp();celebrate();sndStar();}
     if(p)document.getElementById('df-hsc').textContent='⭐ '+p.score;
   };
-  document.getElementById('df-nx').onclick=()=>{clearTimer();if(idx+1<list.length)startDefi(list[idx+1],idx+1,list);else backMod();};
+  document.getElementById('df-nx').onclick=()=>{clearTimer();try{coachStopVoice();}catch(e){}if(idx+1<list.length)startDefi(list[idx+1],idx+1,list,auto);else{APP.defiSeance=null;backMod();}};
   show('defi');
-  if(APP.car)setTimeout(()=>ttsSpeak(item.nom.replace(/\p{Emoji}/gu,'').trim()+'. '+item.consigne),400);
+  if(auto||(_yoga&&!APP.car)){const me=APP.curEx;setTimeout(()=>{if(APP.curEx!==me)return;
+    coachSayList([COACH_TXT.nom(item),COACH_TXT.consigne(item)],()=>{if(auto&&APP.curEx===me){const b=document.getElementById('df-st');if(b)b.click();}});},350);}
+  else if(APP.car)setTimeout(()=>ttsSpeak(item.nom.replace(/\p{Emoji}/gu,'').trim()+'. '+item.consigne),400);
 }
 
 // ════════════════════════════════════════════

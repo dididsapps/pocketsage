@@ -1,0 +1,308 @@
+{
+ "postures": [
+  {
+   "id": "YG-001",
+   "action": "ok",
+   "corrections": {},
+   "note": "Posture exacte, sûre et adaptée."
+  },
+  {
+   "id": "YG-002",
+   "action": "ok",
+   "corrections": {},
+   "note": "Posture exacte, sûre et adaptée."
+  },
+  {
+   "id": "YG-003",
+   "action": "ok",
+   "corrections": {},
+   "note": "Posture exacte, sûre et adaptée."
+  },
+  {
+   "id": "YG-004",
+   "action": "ok",
+   "corrections": {},
+   "note": "Posture exacte, sûre et adaptée."
+  },
+  {
+   "id": "YG-005",
+   "action": "ok",
+   "corrections": {},
+   "note": "Posture exacte, sûre et adaptée."
+  },
+  {
+   "id": "YG-006",
+   "action": "ok",
+   "corrections": {},
+   "note": "Posture exacte, sûre et adaptée."
+  },
+  {
+   "id": "YG-007",
+   "action": "ok",
+   "corrections": {},
+   "note": "Posture exacte, sûre et adaptée."
+  },
+  {
+   "id": "YG-008",
+   "action": "corriger",
+   "corrections": {
+    "consigne": "Écarte grand les jambes et tourne un pied vers l'extérieur. Plie ce genou au-dessus de la cheville, bras tendus à l'horizontale, et regarde la main du côté du genou plié.",
+    "hint": "Ton genou reste au-dessus de la cheville et pointe vers tes orteils, sans rentrer vers l'intérieur."
+   },
+   "note": "« Pied avant » est ambigu après un pas de côté ; ajout de l'alignement genou-orteils, point clé pour protéger le genou."
+  },
+  {
+   "id": "YG-009",
+   "action": "ok",
+   "corrections": {},
+   "note": "Posture exacte, sûre et adaptée."
+  },
+  {
+   "id": "YG-010",
+   "action": "ok",
+   "corrections": {},
+   "note": "Posture exacte, sûre et adaptée."
+  },
+  {
+   "id": "YG-011",
+   "action": "corriger",
+   "corrections": {
+    "age": "4-18",
+    "diff": 1
+   },
+   "note": "Le pont simple sur les épaules est classique et sûr dès 4 ans ; corrige l'incohérence avec la séance SY-3 (4-18)."
+  },
+  {
+   "id": "YG-012",
+   "action": "corriger",
+   "corrections": {
+    "invite": "Qui fait le saut de grenouille le plus silencieux ?"
+   },
+   "note": "Une course de sauts dans le salon expose aux glissades et collisions ; l'invitation au silence pousse aussi à atterrir en douceur."
+  },
+  {
+   "id": "YG-013",
+   "action": "ok",
+   "corrections": {},
+   "note": "Posture exacte, sûre et adaptée."
+  },
+  {
+   "id": "YG-014",
+   "action": "ok",
+   "corrections": {},
+   "note": "Posture exacte, sûre et adaptée."
+  },
+  {
+   "id": "YG-015",
+   "action": "ok",
+   "corrections": {},
+   "note": "Posture exacte, sûre et adaptée."
+  },
+  {
+   "id": "YG-016",
+   "action": "corriger",
+   "corrections": {
+    "consigne": "Allongé sur le dos, ramène tes genoux vers ton ventre et attrape tes pieds par l'extérieur, plantes de pieds vers le plafond. Balance-toi doucement de droite à gauche."
+   },
+   "note": "« Genoux vers les côtés » ne décrit pas la posture : genoux vers les aisselles, plantes de pieds vers le plafond."
+  },
+  {
+   "id": "YG-017",
+   "action": "ok",
+   "corrections": {},
+   "note": "Posture exacte, sûre et adaptée."
+  },
+  {
+   "id": "YG-018",
+   "action": "corriger",
+   "corrections": {
+    "consigne": "Enchaîne lentement : montagne, bras au ciel, penche-toi en avant, planche, pose-toi au sol, cobra, chien tête en bas, marche vers tes mains, remonte bras au ciel. Une respiration par mouvement.",
+    "age": "8-18"
+   },
+   "note": "Il manquait la descente au sol entre planche et cobra et le retour par la flexion avant ; « penché » corrigé en « penche-toi ». Accessible dès 8 ans en version lente."
+  },
+  {
+   "id": "YF-001",
+   "action": "corriger",
+   "corrections": {
+    "consigne": "Côte à côte, tenez-vous par la taille ou par l'épaule. Chacun pose le pied extérieur contre sa cheville ou son mollet, jamais sur le genou, et lève le bras libre. Au bip, changez de place."
+   },
+   "note": "Ajout de « jamais sur le genou » comme en YG-002, de l'épaule pour les grandes différences de taille, et de la consigne du changement de côté (cote 1)."
+  },
+  {
+   "id": "YF-002",
+   "action": "corriger",
+   "corrections": {
+    "hint": "L'adulte plie davantage les genoux. Si c'est trop dur, gardez une seule jambe levée chacun."
+   },
+   "note": "Avec un adulte et un enfant, les jambes n'ont pas la même longueur."
+  },
+  {
+   "id": "YF-003",
+   "action": "ok",
+   "corrections": {},
+   "note": "Posture exacte, sûre et adaptée."
+  },
+  {
+   "id": "YF-004",
+   "action": "corriger",
+   "corrections": {
+    "consigne": "Assis en tailleur, dos à dos. Tournez-vous tous les deux vers votre droite : main gauche sur votre genou droit, main droite sur le genou de votre partenaire. Au bip, tournez vers la gauche.",
+    "age": "4-18"
+   },
+   "note": "« Une main sur votre genou, l'autre sur le genou du partenaire » était ambigu ; torsion assise douce possible dès 4 ans (cohérence avec SF-2)."
+  },
+  {
+   "id": "YF-005",
+   "action": "corriger",
+   "corrections": {
+    "consigne": "Debout dos contre dos, accrochez vos bras. Avancez un peu les pieds et pliez les genoux en même temps, à mi-hauteur seulement, comme deux chaises qui se tiennent. Remontez ensemble doucement."
+   },
+   "note": "Limiter la descente protège les genoux et évite la chute en arrière."
+  },
+  {
+   "id": "YF-006",
+   "action": "ok",
+   "corrections": {},
+   "note": "Posture exacte, sûre et adaptée."
+  },
+  {
+   "id": "YF-007",
+   "action": "corriger",
+   "corrections": {
+    "consigne": "L'adulte se met en petite graine, front au sol. L'enfant s'assoit sur le bas du dos de l'adulte, près des fesses, puis s'allonge doucement en arrière, dos contre dos, bras ouverts.",
+    "hint": "Seulement avec un enfant léger et un adulte sans mal de dos. L'adulte dit stop s'il est gêné. Pour descendre, l'enfant roule doucement sur le côté."
+   },
+   "note": "Le poids doit reposer sur le bassin de l'adulte, pas au milieu du dos ; précision de la sortie de posture. Duo classique, poids raisonnable pour 4-8 ans."
+  },
+  {
+   "id": "YF-008",
+   "action": "ok",
+   "corrections": {},
+   "note": "Posture exacte, sûre et adaptée."
+  },
+  {
+   "id": "YF-009",
+   "action": "corriger",
+   "corrections": {
+    "consigne": "Assis face à face, chacun fait le papillon, plantes de pieds collées. Approchez-vous jusqu'à ce que vos orteils se touchent, tenez-vous les mains et battez des ailes ensemble.",
+    "hint": "Si vos mains ne se touchent pas, reculez un peu les pieds ou tenez un foulard."
+   },
+   "note": "La consigne laissait croire que les plantes de pieds des deux partenaires se collent, ce qui est impossible en papillon."
+  },
+  {
+   "id": "YF-010",
+   "action": "ok",
+   "corrections": {},
+   "note": "Posture exacte, sûre et adaptée."
+  },
+  {
+   "id": "YF-011",
+   "action": "corriger",
+   "corrections": {
+    "consigne": "Dos à dos, un grand pas l'un de l'autre, faites le chien tête en bas en même temps. Regardez-vous entre vos jambes et faites une grimace !"
+   },
+   "note": "Côte à côte, on ne peut pas se voir entre ses jambes ; il faudrait tourner la tête tête en bas, mauvais pour la nuque."
+  },
+  {
+   "id": "YF-012",
+   "action": "ok",
+   "corrections": {},
+   "note": "Posture exacte, sûre et adaptée."
+  },
+  {
+   "id": "YF-013",
+   "action": "corriger",
+   "corrections": {
+    "consigne": "Côte à côte, regardez dans la même direction. Chacun fait le guerrier vers l'extérieur, pieds arrière presque collés. Tenez-vous par la main du milieu. Au bip, changez de place."
+   },
+   "note": "« Hanche contre hanche » est impossible jambes écartées ; ajout du changement de côté (cote 1)."
+  },
+  {
+   "id": "YF-014",
+   "action": "ok",
+   "corrections": {},
+   "note": "Posture exacte, sûre et adaptée."
+  }
+ ],
+ "seances": [
+  {
+   "id": "SY-1",
+   "action": "ok",
+   "corrections": {},
+   "note": "Enchaînement debout puis sol puis relaxation, âges cohérents."
+  },
+  {
+   "id": "SY-2",
+   "action": "ok",
+   "corrections": {},
+   "note": "Démarrage doux, cobra compensé par la petite graine."
+  },
+  {
+   "id": "SY-3",
+   "action": "ok",
+   "corrections": {},
+   "note": "Cohérent une fois l'âge du pont YG-011 passé à 4-18."
+  },
+  {
+   "id": "SY-4",
+   "action": "ok",
+   "corrections": {},
+   "note": "Cohérent, âges compatibles."
+  },
+  {
+   "id": "SF-1",
+   "action": "corriger",
+   "corrections": {
+    "ids": [
+     "YF-012",
+     "YF-001",
+     "YF-010",
+     "YF-011",
+     "YF-009",
+     "YF-003",
+     "YF-014"
+    ]
+   },
+   "note": "Le dos à dos qui respire, posture calme assise, passe vers la fin, avant la relaxation."
+  },
+  {
+   "id": "SF-2",
+   "action": "corriger",
+   "corrections": {
+    "age": "4-8",
+    "ids": [
+     "YF-012",
+     "YF-008",
+     "YF-004",
+     "YF-007",
+     "YF-003",
+     "YF-014"
+    ]
+   },
+   "note": "Le lézard sur le rocher est limité à 4-8 ans (poids de l'enfant) : la séance ne peut pas aller jusqu'à 10 ans. Torsion placée après la balançoire, qui échauffe le dos."
+  },
+  {
+   "id": "SF-3",
+   "action": "corriger",
+   "corrections": {
+    "ids": [
+     "YF-012",
+     "YF-013",
+     "YF-005",
+     "YF-002",
+     "YF-004",
+     "YF-009",
+     "YF-014"
+    ]
+   },
+   "note": "Regroupe les postures debout puis assises au lieu d'alterner."
+  }
+ ],
+ "manques": [
+  "La Pince : assis jambes tendues, penche-toi vers tes pieds, genoux pliés si besoin (flexion avant assise, 4-18)",
+  "La Torsion allongée : sur le dos, genoux pliés qui tombent d'un côté, cote 1 (posture calme de fin, 4-18)",
+  "Le Triangle : jambes écartées, une main descend vers le tibia, l'autre vers le ciel, cote 1 (6-18)",
+  "Le Triangle à deux : dos à dos, chacun penché du même côté, mains qui se touchent en haut, cote 1 (6-18)"
+ ]
+}
