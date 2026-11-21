@@ -1,0 +1,858 @@
+{
+ "classe": "5E",
+ "niveau_appli": "5ème",
+ "age": "12-13 ans",
+ "matiere": "Mathématiques",
+ "code": "MA",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Nombres et calculs",
+   "titre": "Priorités opératoires",
+   "emoji": "🔢",
+   "en_une_phrase": "Les parenthèses puis les multiplications et divisions déterminent l’ordre des calculs.",
+   "comprendre": "Une expression peut comporter plusieurs opérations. Pour que chacun obtienne le même résultat, des règles fixent leur ordre. Les parenthèses indiquent une partie à calculer d’abord.",
+   "essentiel": [
+    "Calcule d’abord les parenthèses.",
+    "Sans parenthèses, effectue multiplications et divisions avant additions et soustractions.",
+    "Pour des opérations de même priorité, calcule de gauche à droite."
+   ],
+   "image_mentale": "Imagine des boîtes de calcul à ouvrir dans un ordre précis.",
+   "regle_ou_methode": "Repère les parenthèses puis les opérations prioritaires.",
+   "exemples": [
+    "Pour 3 + 4 × 2, calcule 4 × 2 = 8. Ajoute 3 : le résultat est 11.",
+    "Pour (3 + 4) × 2, calcule 7 puis multiplie par 2 : le résultat est 14."
+   ],
+   "piege": "Ne calcule pas systématiquement de gauche à droite avant de vérifier les priorités.",
+   "astuce_memoire": "Parenthèses, multiplications et divisions, puis additions et soustractions.",
+   "quiz": [
+    {
+     "q": "Combien vaut 3 + 4 × 2 ?",
+     "choix": [
+      "14",
+      "11",
+      "10"
+     ],
+     "rep": "11",
+     "expl": "La multiplication donne 8 puis on ajoute 3."
+    },
+    {
+     "q": "Combien vaut (3 + 4) × 2 ?",
+     "choix": [
+      "11",
+      "9",
+      "14"
+     ],
+     "rep": "14",
+     "expl": "La parenthèse donne 7 puis 7 × 2 = 14."
+    },
+    {
+     "q": "Que calcule-t-on d’abord dans (5 − 2) × 3 ?",
+     "choix": [
+      "5 − 2",
+      "2 × 3",
+      "5 × 3"
+     ],
+     "rep": "5 − 2",
+     "expl": "La parenthèse est prioritaire."
+    }
+   ],
+   "id": "REV-MA-5E-01"
+  },
+  {
+   "axe": "Nombres et calculs",
+   "titre": "Comparer les nombres relatifs",
+   "emoji": "🌡️",
+   "en_une_phrase": "Sur une droite graduée, un nombre situé plus à droite est plus grand.",
+   "comprendre": "Une température peut être au-dessus ou au-dessous de zéro. Les nombres relatifs permettent de noter ces situations. Sur une droite graduée croissante, l’ordre se lit de gauche à droite.",
+   "essentiel": [
+    "Un nombre négatif est inférieur ou égal à zéro.",
+    "Deux nombres opposés sont à la même distance de zéro de part et d’autre.",
+    "Parmi deux nombres négatifs, le plus éloigné de zéro est le plus petit."
+   ],
+   "image_mentale": "Imagine un thermomètre gradué autour de zéro.",
+   "regle_ou_methode": "Place les nombres sur la droite puis compare leur position.",
+   "exemples": [
+    "−5 est à gauche de −2. Donc −5 < −2.",
+    "L’opposé de −3 est +3."
+   ],
+   "piege": "−5 est inférieur à −2 même si 5 est supérieur à 2.",
+   "astuce_memoire": "Sur la droite, plus à droite signifie plus grand.",
+   "quiz": [
+    {
+     "q": "Quel nombre est le plus petit ?",
+     "choix": [
+      "−2",
+      "0",
+      "−5"
+     ],
+     "rep": "−5",
+     "expl": "−5 se situe à gauche de −2."
+    },
+    {
+     "q": "Quel est l’opposé de −3 ?",
+     "choix": [
+      "+3",
+      "−3",
+      "0"
+     ],
+     "rep": "+3",
+     "expl": "+3 et −3 sont à la même distance de zéro."
+    },
+    {
+     "q": "Quel nombre est le plus grand ?",
+     "choix": [
+      "−4",
+      "−1",
+      "Ils sont égaux"
+     ],
+     "rep": "−1",
+     "expl": "−1 est situé à droite de −4."
+    }
+   ],
+   "id": "REV-MA-5E-02"
+  },
+  {
+   "axe": "Nombres et calculs",
+   "titre": "Additionner des relatifs",
+   "emoji": "➕",
+   "en_une_phrase": "Pour additionner des relatifs, on combine leurs signes et leurs distances à zéro.",
+   "comprendre": "Un déplacement vers la droite peut être positif et un déplacement vers la gauche négatif. Deux déplacements de même sens s’ajoutent. S’ils sont de sens opposés, on compare leurs longueurs.",
+   "essentiel": [
+    "Deux nombres de même signe donnent une somme de ce signe.",
+    "Pour des signes opposés, soustrais les distances à zéro.",
+    "Le signe est celui du nombre de plus grande distance à zéro."
+   ],
+   "image_mentale": "Imagine une droite graduée avec des déplacements à gauche et à droite.",
+   "regle_ou_methode": "Compare les signes puis ajoute ou soustrais les distances.",
+   "exemples": [
+    "Pour −5 + 3, pars de −5 et avance de 3 vers la droite. Tu arrives à −2.",
+    "−2 + (−4) = −6."
+   ],
+   "piege": "Ne donne pas toujours à la somme le signe positif.",
+   "astuce_memoire": "Même signe : j’ajoute ; signes opposés : je compare.",
+   "quiz": [
+    {
+     "q": "Combien vaut −5 + 3 ?",
+     "choix": [
+      "−2",
+      "2",
+      "−8"
+     ],
+     "rep": "−2",
+     "expl": "Trois pas à droite depuis −5 conduisent à −2."
+    },
+    {
+     "q": "Combien vaut −2 + (−4) ?",
+     "choix": [
+      "2",
+      "−6",
+      "6"
+     ],
+     "rep": "−6",
+     "expl": "Les deux termes négatifs donnent une somme négative de distance 6."
+    },
+    {
+     "q": "Combien vaut 7 + (−7) ?",
+     "choix": [
+      "14",
+      "−14",
+      "0"
+     ],
+     "rep": "0",
+     "expl": "Deux nombres opposés ont une somme nulle."
+    }
+   ],
+   "id": "REV-MA-5E-03"
+  },
+  {
+   "axe": "Nombres et calculs",
+   "titre": "Soustraire un relatif",
+   "emoji": "➖",
+   "en_une_phrase": "Soustraire un nombre revient à ajouter son opposé.",
+   "comprendre": "Tu connais la soustraction de nombres positifs. Avec les relatifs, la relation reste valable en remplaçant le nombre soustrait par son opposé. Cela transforme la soustraction en addition.",
+   "essentiel": [
+    "L’opposé de +3 est −3.",
+    "L’opposé de −3 est +3.",
+    "a − b = a + l’opposé de b."
+   ],
+   "image_mentale": "Imagine une instruction « enlever une dette » remplacée par son effet positif.",
+   "regle_ou_methode": "Remplace la soustraction par l’addition de l’opposé puis calcule.",
+   "exemples": [
+    "Pour 2 − (−3), l’opposé de −3 est +3. On calcule 2 + 3 = 5.",
+    "Pour −2 − 4, on calcule −2 + (−4) = −6."
+   ],
+   "piege": "Ne confonds pas l’opposé de −3 avec −3 lui-même.",
+   "astuce_memoire": "Soustraire, c’est ajouter l’opposé.",
+   "quiz": [
+    {
+     "q": "Combien vaut 2 − (−3) ?",
+     "choix": [
+      "−1",
+      "5",
+      "−5"
+     ],
+     "rep": "5",
+     "expl": "Soustraire −3 revient à ajouter 3."
+    },
+    {
+     "q": "Combien vaut −2 − 4 ?",
+     "choix": [
+      "2",
+      "6",
+      "−6"
+     ],
+     "rep": "−6",
+     "expl": "−2 + (−4) = −6."
+    },
+    {
+     "q": "Quel est l’opposé de +3 ?",
+     "choix": [
+      "−3",
+      "+3",
+      "0"
+     ],
+     "rep": "−3",
+     "expl": "L’opposé de +3 est −3."
+    }
+   ],
+   "id": "REV-MA-5E-04"
+  },
+  {
+   "axe": "Nombres et calculs",
+   "titre": "Fractions équivalentes",
+   "emoji": "🍕",
+   "en_une_phrase": "Multiplier ou diviser le numérateur et le dénominateur par un même nombre non nul conserve la fraction.",
+   "comprendre": "Une quantité peut être partagée en parts de tailles différentes. Si chaque part est coupée en deux, il faut deux fois plus de parts pour représenter la même quantité. La valeur de la fraction reste identique.",
+   "essentiel": [
+    "Le numérateur compte les parts prises.",
+    "Le dénominateur indique le partage.",
+    "On multiplie ou divise les deux termes par un même nombre non nul."
+   ],
+   "image_mentale": "Imagine une moitié découpée en deux quarts.",
+   "regle_ou_methode": "Applique la même opération au numérateur et au dénominateur.",
+   "exemples": [
+    "Pour 1/2, multiplie le haut et le bas par 2. Tu obtiens 2/4 : la quantité est la même.",
+    "6/9 = 2/3 en divisant les deux termes par 3."
+   ],
+   "piege": "Changer seulement le dénominateur change généralement la valeur.",
+   "astuce_memoire": "Même opération en haut et en bas.",
+   "quiz": [
+    {
+     "q": "Quelle fraction vaut 1/2 ?",
+     "choix": [
+      "1/4",
+      "2/2",
+      "2/4"
+     ],
+     "rep": "2/4",
+     "expl": "Multiplier les deux termes par 2 donne 2/4."
+    },
+    {
+     "q": "Quelle fraction vaut 6/9 ?",
+     "choix": [
+      "2/3",
+      "6/3",
+      "3/9"
+     ],
+     "rep": "2/3",
+     "expl": "Diviser les deux termes par 3 donne 2/3."
+    },
+    {
+     "q": "Que faut-il multiplier pour obtenir une fraction équivalente ?",
+     "choix": [
+      "Le numérateur seulement",
+      "Le numérateur et le dénominateur par le même nombre non nul",
+      "Le dénominateur seulement"
+     ],
+     "rep": "Le numérateur et le dénominateur par le même nombre non nul",
+     "expl": "Les deux termes doivent être modifiés de la même façon."
+    }
+   ],
+   "id": "REV-MA-5E-05"
+  },
+  {
+   "axe": "Nombres et calculs",
+   "titre": "Additionner des fractions",
+   "emoji": "🧩",
+   "en_une_phrase": "Pour additionner des fractions, on utilise des parts de même taille.",
+   "comprendre": "On peut additionner des quarts avec des quarts. Si les dénominateurs diffèrent, on cherche des écritures équivalentes avec un même dénominateur. On additionne ensuite les numérateurs.",
+   "essentiel": [
+    "Avec le même dénominateur, additionne les numérateurs.",
+    "Le dénominateur commun reste le même.",
+    "Des fractions équivalentes permettent d’obtenir des parts communes."
+   ],
+   "image_mentale": "Imagine une moitié découpée en deux quarts, puis un quart ajouté.",
+   "regle_ou_methode": "Mets au même dénominateur puis additionne les numérateurs.",
+   "exemples": [
+    "1/2 + 1/4 = 2/4 + 1/4. Cela donne 3/4.",
+    "2/5 + 1/5 = 3/5."
+   ],
+   "piege": "N’additionne pas séparément les dénominateurs.",
+   "astuce_memoire": "Même taille de parts, puis somme des parts.",
+   "quiz": [
+    {
+     "q": "Combien vaut 1/2 + 1/4 ?",
+     "choix": [
+      "3/4",
+      "2/6",
+      "1/6"
+     ],
+     "rep": "3/4",
+     "expl": "1/2 = 2/4, donc la somme vaut 3/4."
+    },
+    {
+     "q": "Combien vaut 2/5 + 1/5 ?",
+     "choix": [
+      "3/10",
+      "3/5",
+      "2/10"
+     ],
+     "rep": "3/5",
+     "expl": "On additionne les numérateurs en gardant les cinquièmes."
+    },
+    {
+     "q": "Pourquoi écrire 1/2 comme 2/4 ?",
+     "choix": [
+      "Pour changer sa valeur",
+      "Pour supprimer le numérateur",
+      "Pour utiliser des parts de même taille"
+     ],
+     "rep": "Pour utiliser des parts de même taille",
+     "expl": "Les deux fractions valent la même quantité mais utilisent des quarts."
+    }
+   ],
+   "id": "REV-MA-5E-06"
+  },
+  {
+   "axe": "Nombres et calculs",
+   "titre": "Puissances entières simples",
+   "emoji": "🔋",
+   "en_une_phrase": "Une puissance exprime la multiplication répétée d’un même nombre.",
+   "comprendre": "Au lieu d’écrire plusieurs fois le même facteur, on utilise un exposant. L’exposant indique le nombre de facteurs. Le carré correspond à deux facteurs identiques.",
+   "essentiel": [
+    "2³ = 2 × 2 × 2.",
+    "3² = 3 × 3.",
+    "L’exposant compte les facteurs."
+   ],
+   "image_mentale": "Imagine trois cases contenant chacune le nombre 2, reliées par des multiplications.",
+   "regle_ou_methode": "Écris le nombre de facteurs indiqué puis effectue le produit.",
+   "exemples": [
+    "2³ = 2 × 2 × 2 = 8. Il y a trois facteurs égaux à 2.",
+    "3² = 3 × 3 = 9."
+   ],
+   "piege": "2³ ne signifie pas 2 × 3.",
+   "astuce_memoire": "Exposant : nombre de facteurs.",
+   "quiz": [
+    {
+     "q": "Combien vaut 2³ ?",
+     "choix": [
+      "6",
+      "8",
+      "9"
+     ],
+     "rep": "8",
+     "expl": "2 × 2 × 2 = 8."
+    },
+    {
+     "q": "Combien vaut 3² ?",
+     "choix": [
+      "6",
+      "5",
+      "9"
+     ],
+     "rep": "9",
+     "expl": "3 × 3 = 9."
+    },
+    {
+     "q": "Combien de facteurs 2 dans 2³ ?",
+     "choix": [
+      "Trois",
+      "Deux",
+      "Six"
+     ],
+     "rep": "Trois",
+     "expl": "L’exposant 3 indique trois facteurs."
+    }
+   ],
+   "id": "REV-MA-5E-07"
+  },
+  {
+   "axe": "Nombres et calculs",
+   "titre": "Calculer avec une lettre",
+   "emoji": "🔤",
+   "en_une_phrase": "Une lettre peut représenter un nombre variable dans une expression.",
+   "comprendre": "Une formule permet de décrire plusieurs situations avec les mêmes règles. La lettre remplace le nombre choisi. Pour calculer, on remplace la lettre puis on respecte les priorités.",
+   "essentiel": [
+    "Une lettre peut représenter un nombre.",
+    "3x signifie 3 × x.",
+    "On remplace la lettre par la valeur donnée."
+   ],
+   "image_mentale": "Imagine une boîte marquée x où l’on place un nombre.",
+   "regle_ou_methode": "Remplace x, puis effectue les opérations.",
+   "exemples": [
+    "Pour 3x + 2 avec x = 4, remplace x par 4. Calcule 3 × 4 + 2 = 14.",
+    "Avec x = 2, 3x + 2 vaut 8."
+   ],
+   "piege": "3x signifie 3 multiplié par x, pas 3 + x.",
+   "astuce_memoire": "Je remplace puis je calcule.",
+   "quiz": [
+    {
+     "q": "Que signifie 3x ?",
+     "choix": [
+      "3 + x",
+      "x − 3",
+      "3 × x"
+     ],
+     "rep": "3 × x",
+     "expl": "L’écriture 3x désigne un produit."
+    },
+    {
+     "q": "Combien vaut 3x + 2 pour x = 4 ?",
+     "choix": [
+      "14",
+      "9",
+      "24"
+     ],
+     "rep": "14",
+     "expl": "3 × 4 + 2 = 14."
+    },
+    {
+     "q": "Combien vaut 3x + 2 pour x = 2 ?",
+     "choix": [
+      "7",
+      "8",
+      "12"
+     ],
+     "rep": "8",
+     "expl": "3 × 2 + 2 = 8."
+    }
+   ],
+   "id": "REV-MA-5E-08"
+  },
+  {
+   "axe": "Espace et géométrie",
+   "titre": "Repérer un point dans le plan",
+   "emoji": "📍",
+   "en_une_phrase": "Un point dans un repère se décrit par deux coordonnées ordonnées.",
+   "comprendre": "Comme pour retrouver une case sur un plan, on utilise deux directions. L’abscisse se lit sur l’axe horizontal et l’ordonnée sur l’axe vertical. L’ordre des deux nombres est essentiel.",
+   "essentiel": [
+    "L’abscisse est la première coordonnée.",
+    "L’ordonnée est la seconde.",
+    "Les axes se croisent à l’origine."
+   ],
+   "image_mentale": "Imagine deux axes gradués perpendiculaires.",
+   "regle_ou_methode": "Pars de l’origine, repère l’abscisse puis l’ordonnée.",
+   "exemples": [
+    "Pour placer A(2 ; 3), avance jusqu’à 2 sur l’axe horizontal. Monte ensuite jusqu’à 3 sur l’axe vertical.",
+    "B(−1 ; 2) a pour abscisse −1 et pour ordonnée 2."
+   ],
+   "piege": "A(2 ; 3) et A(3 ; 2) ne désignent pas le même point : l’ordre des coordonnées compte.",
+   "astuce_memoire": "Abscisse d’abord, ordonnée ensuite.",
+   "quiz": [
+    {
+     "q": "Quelle est l’abscisse de A(2 ; 3) ?",
+     "choix": [
+      "2",
+      "3",
+      "5"
+     ],
+     "rep": "2",
+     "expl": "L’abscisse est la première coordonnée."
+    },
+    {
+     "q": "Quelle est l’ordonnée de B(−1 ; 2) ?",
+     "choix": [
+      "−1",
+      "2",
+      "1"
+     ],
+     "rep": "2",
+     "expl": "L’ordonnée est la seconde coordonnée."
+    },
+    {
+     "q": "Les points (2 ; 3) et (3 ; 2) sont-ils le même point ?",
+     "choix": [
+      "Oui",
+      "Seulement si l’origine est au centre",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "L’ordre des coordonnées change le point."
+    }
+   ],
+   "id": "REV-MA-5E-09"
+  },
+  {
+   "axe": "Espace et géométrie",
+   "titre": "Symétrie centrale",
+   "emoji": "🔄",
+   "en_une_phrase": "La symétrie centrale correspond à un demi-tour autour d’un centre.",
+   "comprendre": "Tu connais la symétrie par pliage autour d’un axe. La symétrie centrale utilise un point comme centre. Un demi-tour envoie chaque point sur son image.",
+   "essentiel": [
+    "Le centre est le milieu du segment reliant un point à son image.",
+    "Un demi-tour correspond à 180°.",
+    "La symétrie centrale conserve les longueurs."
+   ],
+   "image_mentale": "Imagine une figure qui tourne d’un demi-tour autour d’une punaise.",
+   "regle_ou_methode": "Relie le point au centre puis reporte la même distance de l’autre côté.",
+   "exemples": [
+    "Un point A est à 3 cm de O. Son image A’ est sur la droite AO, de l’autre côté de O, à 3 cm. O est le milieu de [AA’].",
+    "Un segment de 4 cm a une image de 4 cm."
+   ],
+   "piege": "Le centre n’est pas forcément sur la figure.",
+   "astuce_memoire": "Demi-tour autour du centre.",
+   "quiz": [
+    {
+     "q": "Quel angle correspond à un demi-tour ?",
+     "choix": [
+      "90°",
+      "180°",
+      "360°"
+     ],
+     "rep": "180°",
+     "expl": "Un demi-tour mesure 180 degrés."
+    },
+    {
+     "q": "O est le milieu de [AA’]. Que peut-on dire des longueurs OA et OA’ ?",
+     "choix": [
+      "OA = OA’",
+      "OA = 2 × OA’",
+      "OA est plus grande que OA’"
+     ],
+     "rep": "OA = OA’",
+     "expl": "Le milieu est à égale distance des deux extrémités du segment."
+    },
+    {
+     "q": "Que devient la longueur d’un segment par symétrie centrale ?",
+     "choix": [
+      "Elle est conservée",
+      "Elle est doublée systématiquement",
+      "Elle devient nulle"
+     ],
+     "rep": "Elle est conservée",
+     "expl": "La symétrie centrale conserve les longueurs."
+    }
+   ],
+   "id": "REV-MA-5E-10"
+  },
+  {
+   "axe": "Espace et géométrie",
+   "titre": "Somme des angles d’un triangle",
+   "emoji": "🔺",
+   "en_une_phrase": "La somme des angles d’un triangle est égale à 180°.",
+   "comprendre": "Un triangle possède trois angles. Si l’on connaît deux mesures, la somme totale permet de trouver la troisième. Il faut soustraire les deux angles connus de 180°.",
+   "essentiel": [
+    "Un triangle possède trois angles.",
+    "La somme de leurs mesures est 180°.",
+    "L’angle manquant vaut 180° moins les deux autres."
+   ],
+   "image_mentale": "Imagine les trois angles réunis pour former un angle plat.",
+   "regle_ou_methode": "Additionne les angles connus puis soustrais leur somme à 180°.",
+   "exemples": [
+    "Deux angles mesurent 50° et 60°. Leur somme est 110°. Le troisième vaut 180° − 110° = 70°.",
+    "Un triangle ayant 90° et 40° possède un troisième angle de 50°."
+   ],
+   "piege": "La somme des angles ne dépend pas de la taille du dessin.",
+   "astuce_memoire": "Trois angles : total 180°.",
+   "quiz": [
+    {
+     "q": "Angles de 50° et 60° : quel est le troisième ?",
+     "choix": [
+      "110°",
+      "180°",
+      "70°"
+     ],
+     "rep": "70°",
+     "expl": "180 − 50 − 60 = 70."
+    },
+    {
+     "q": "Angles de 90° et 40° : quel est le troisième ?",
+     "choix": [
+      "50°",
+      "130°",
+      "40°"
+     ],
+     "rep": "50°",
+     "expl": "180 − 90 − 40 = 50."
+    },
+    {
+     "q": "Quelle est la somme des angles d’un triangle ?",
+     "choix": [
+      "90°",
+      "180°",
+      "360°"
+     ],
+     "rep": "180°",
+     "expl": "La somme des trois angles est 180°."
+    }
+   ],
+   "id": "REV-MA-5E-11"
+  },
+  {
+   "axe": "Espace et géométrie",
+   "titre": "Le parallélogramme",
+   "emoji": "🟪",
+   "en_une_phrase": "Un parallélogramme possède des côtés opposés parallèles.",
+   "comprendre": "Tu connais les quadrilatères, figures à quatre côtés. Dans un parallélogramme, les côtés opposés sont parallèles deux à deux. Ses diagonales se coupent en leur milieu.",
+   "essentiel": [
+    "Un parallélogramme est un quadrilatère.",
+    "Ses côtés opposés sont parallèles.",
+    "Ses diagonales ont le même milieu."
+   ],
+   "image_mentale": "Imagine un quadrilatère incliné dont les côtés opposés restent parallèles.",
+   "regle_ou_methode": "Observe les côtés opposés ou vérifie le milieu des diagonales.",
+   "exemples": [
+    "Si les deux paires de côtés opposés sont parallèles, le quadrilatère est un parallélogramme.",
+    "Un rectangle est un parallélogramme particulier : ses côtés opposés sont parallèles."
+   ],
+   "piege": "Un parallélogramme n’a pas nécessairement quatre angles droits.",
+   "astuce_memoire": "Côtés opposés parallèles, diagonales de même milieu.",
+   "quiz": [
+    {
+     "q": "Combien de côtés possède un parallélogramme ?",
+     "choix": [
+      "Quatre",
+      "Trois",
+      "Cinq"
+     ],
+     "rep": "Quatre",
+     "expl": "C’est un quadrilatère."
+    },
+    {
+     "q": "Comment sont ses côtés opposés ?",
+     "choix": [
+      "Toujours perpendiculaires",
+      "Parallèles deux à deux",
+      "De longueurs nulles"
+     ],
+     "rep": "Parallèles deux à deux",
+     "expl": "Les côtés opposés sont parallèles."
+    },
+    {
+     "q": "Un parallélogramme a-t-il forcément quatre angles droits ?",
+     "choix": [
+      "Oui",
+      "Seulement s’il est incliné",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Le rectangle est un cas particulier, mais tous n’ont pas quatre angles droits."
+    }
+   ],
+   "id": "REV-MA-5E-12"
+  },
+  {
+   "axe": "Organisation et gestion de données et probabilités",
+   "titre": "Calculer une moyenne",
+   "emoji": "📊",
+   "en_une_phrase": "La moyenne d’une série est la somme des valeurs divisée par leur nombre.",
+   "comprendre": "La moyenne répartit la somme totale en parts égales. Elle résume une série par une seule valeur. Elle ne suffit pas à décrire toutes les différences entre les valeurs.",
+   "essentiel": [
+    "Additionne les valeurs.",
+    "Compte le nombre de valeurs.",
+    "Divise la somme par cet effectif."
+   ],
+   "image_mentale": "Imagine des objets répartis également entre plusieurs boîtes.",
+   "regle_ou_methode": "Calcule la somme puis divise par le nombre de valeurs.",
+   "exemples": [
+    "Pour 4, 6 et 8, la somme est 18. Il y a 3 valeurs. La moyenne est 18 ÷ 3 = 6.",
+    "La moyenne de 2 et 10 est 6."
+   ],
+   "piege": "La moyenne peut être égale à une valeur de la série ou différente de toutes.",
+   "astuce_memoire": "Somme divisée par effectif.",
+   "quiz": [
+    {
+     "q": "Quelle est la moyenne de 4, 6 et 8 ?",
+     "choix": [
+      "18",
+      "6",
+      "3"
+     ],
+     "rep": "6",
+     "expl": "La somme 18 divisée par 3 vaut 6."
+    },
+    {
+     "q": "Quelle est la moyenne de 2 et 10 ?",
+     "choix": [
+      "12",
+      "5",
+      "6"
+     ],
+     "rep": "6",
+     "expl": "(2 + 10) ÷ 2 = 6."
+    },
+    {
+     "q": "Que faut-il compter après avoir additionné les valeurs ?",
+     "choix": [
+      "Le nombre de valeurs",
+      "La plus grande valeur",
+      "La plus petite valeur"
+     ],
+     "rep": "Le nombre de valeurs",
+     "expl": "On divise la somme par le nombre de valeurs."
+    }
+   ],
+   "id": "REV-MA-5E-13"
+  },
+  {
+   "axe": "Organisation et gestion de données et probabilités",
+   "titre": "Fréquence et probabilité",
+   "emoji": "🎲",
+   "en_une_phrase": "La fréquence observée dépend des essais ; une probabilité décrit un modèle de hasard.",
+   "comprendre": "Quand on lance un dé, les résultats varient d’une série à l’autre. La fréquence d’un résultat est son nombre d’apparitions divisé par le nombre d’essais. Pour un dé équilibré, la probabilité de chaque face est 1/6.",
+   "essentiel": [
+    "Fréquence = nombre d’apparitions ÷ nombre d’essais.",
+    "La fréquence observée peut varier selon la série.",
+    "Un dé équilibré donne la probabilité 1/6 à chaque face."
+   ],
+   "image_mentale": "Imagine dix lancers notés dans un tableau.",
+   "regle_ou_methode": "Compte les apparitions puis divise par le nombre d’essais.",
+   "exemples": [
+    "La face 6 apparaît 2 fois en 10 lancers. Sa fréquence est 2/10, soit 0,2.",
+    "Dans le modèle d’un dé équilibré, la probabilité d’obtenir 6 reste 1/6."
+   ],
+   "piege": "Une fréquence de 2/10 ne prouve pas que la probabilité théorique vaut 2/10.",
+   "astuce_memoire": "Observer une fréquence, modéliser une probabilité.",
+   "quiz": [
+    {
+     "q": "Deux succès en dix essais : quelle fréquence ?",
+     "choix": [
+      "10/2",
+      "1/6 forcément",
+      "2/10"
+     ],
+     "rep": "2/10",
+     "expl": "La fréquence est 2 divisé par 10."
+    },
+    {
+     "q": "Quelle est la probabilité d’une face d’un dé équilibré ?",
+     "choix": [
+      "1/6",
+      "1/10",
+      "6"
+     ],
+     "rep": "1/6",
+     "expl": "Chaque face a une chance sur six."
+    },
+    {
+     "q": "La fréquence peut-elle varier entre deux séries ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement si le dé est truqué"
+     ],
+     "rep": "Oui",
+     "expl": "Les résultats aléatoires peuvent varier."
+    }
+   ],
+   "id": "REV-MA-5E-14"
+  },
+  {
+   "axe": "Proportionnalité, fonctions",
+   "titre": "Appliquer un pourcentage",
+   "emoji": "💯",
+   "en_une_phrase": "Appliquer un pourcentage revient à prendre une fraction sur cent de la quantité.",
+   "comprendre": "Un pourcentage permet de comparer ou de calculer une part. Pour 20 %, on cherche 20 centièmes de la quantité. On peut utiliser des parts simples pour calculer.",
+   "essentiel": [
+    "20 % = 20/100.",
+    "10 % est un dixième.",
+    "La quantité de départ doit être clairement identifiée."
+   ],
+   "image_mentale": "Imagine une somme partagée en dix parts égales.",
+   "regle_ou_methode": "Calcule une part connue puis multiplie si nécessaire.",
+   "exemples": [
+    "Pour calculer 20 % de 50 euros, trouve 10 % : 50 ÷ 10 = 5 euros. Double : 20 % vaut 10 euros.",
+    "25 % de 40 vaut un quart de 40, soit 10."
+   ],
+   "piege": "20 % ne signifie pas toujours ajouter 20 unités.",
+   "astuce_memoire": "10 % : diviser par 10 ; 20 % : doubler ce résultat.",
+   "quiz": [
+    {
+     "q": "Combien valent 20 % de 50 ?",
+     "choix": [
+      "10",
+      "20",
+      "5"
+     ],
+     "rep": "10",
+     "expl": "10 % de 50 vaut 5, donc 20 % vaut 10."
+    },
+    {
+     "q": "Combien valent 25 % de 40 ?",
+     "choix": [
+      "25",
+      "10",
+      "20"
+     ],
+     "rep": "10",
+     "expl": "25 % représente un quart et 40 ÷ 4 = 10."
+    },
+    {
+     "q": "Quel nombre représente 10 % de 70 ?",
+     "choix": [
+      "10",
+      "70",
+      "7"
+     ],
+     "rep": "7",
+     "expl": "70 ÷ 10 = 7."
+    }
+   ],
+   "id": "REV-MA-5E-15"
+  },
+  {
+   "axe": "La pensée informatique",
+   "titre": "Conditions et boucles",
+   "emoji": "💻",
+   "en_une_phrase": "Un algorithme peut répéter des actions ou choisir une action selon une condition.",
+   "comprendre": "Une recette peut dire de répéter une étape ou d’agir seulement si une condition est remplie. Un programme utilise les mêmes idées avec des instructions précises. Un essai permet de contrôler le résultat.",
+   "essentiel": [
+    "Une boucle répète des instructions.",
+    "Une condition choisit une action selon un test.",
+    "L’ordre des instructions compte."
+   ],
+   "image_mentale": "Imagine une boucle de trois tours et une bifurcation « si ».",
+   "regle_ou_methode": "Lis la condition, détermine si elle est vraie puis exécute les instructions.",
+   "exemples": [
+    "Si le score est supérieur à 5, afficher gagné. Pour un score de 7, la condition est vraie : le programme affiche gagné.",
+    "Répéter trois fois « ajouter 2 » à partir de 0 donne 6."
+   ],
+   "piege": "Un test supérieur à 5 est faux pour la valeur 5.",
+   "astuce_memoire": "Si : je teste ; répéter : je recommence.",
+   "quiz": [
+    {
+     "q": "Le score vaut 7. « Si score > 5, afficher gagné » : que se passe-t-il ?",
+     "choix": [
+      "Rien ne peut être décidé",
+      "Gagné est affiché",
+      "Le score devient automatiquement 5"
+     ],
+     "rep": "Gagné est affiché",
+     "expl": "7 est supérieur à 5."
+    },
+    {
+     "q": "Le score vaut 5. Le test score > 5 est-il vrai ?",
+     "choix": [
+      "Oui",
+      "Seulement si le score est négatif",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "5 n’est pas strictement supérieur à 5."
+    },
+    {
+     "q": "Ajouter 2 trois fois à partir de 0 donne…",
+     "choix": [
+      "6",
+      "5",
+      "3"
+     ],
+     "rep": "6",
+     "expl": "0 + 2 + 2 + 2 = 6."
+    }
+   ],
+   "id": "REV-MA-5E-16"
+  }
+ ]
+}

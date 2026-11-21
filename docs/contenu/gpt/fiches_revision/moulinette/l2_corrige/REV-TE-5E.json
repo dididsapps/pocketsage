@@ -1,0 +1,540 @@
+{
+ "classe": "5E",
+ "niveau_appli": "5ème",
+ "age": "12-13 ans",
+ "matiere": "Technologie",
+ "code": "TE",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Les objets et les systèmes techniques : leurs usages et leurs interactions à découvrir et analyser",
+   "titre": "Besoin et fonction d’usage",
+   "emoji": "🎯",
+   "en_une_phrase": "Un objet technique est conçu pour répondre à un besoin.",
+   "comprendre": "Tu utilises des objets pour transporter, éclairer ou protéger. Le besoin décrit ce que l’utilisateur cherche à faire. La fonction d’usage indique à quoi sert l’objet.",
+   "essentiel": [
+    "Le besoin est lié à une situation.",
+    "La fonction d’usage décrit le service rendu.",
+    "Plusieurs objets peuvent répondre au même besoin."
+   ],
+   "image_mentale": "Imagine une lampe et une fenêtre qui éclairent une pièce de façons différentes.",
+   "regle_ou_methode": "Exprime le besoin puis indique le service rendu par l’objet.",
+   "exemples": [
+    "Le besoin est de transporter de l’eau. Une gourde rend le service de contenir et transporter une boisson.",
+    "Un sac peut répondre au besoin de transporter des affaires."
+   ],
+   "piege": "La couleur de l’objet ne décrit pas forcément sa fonction d’usage.",
+   "astuce_memoire": "Besoin : pourquoi ; fonction : à quoi sert l’objet.",
+   "quiz": [
+    {
+     "q": "Quel besoin une gourde peut-elle satisfaire ?",
+     "choix": [
+      "Mesurer le temps",
+      "Transporter une boisson",
+      "Faire pousser un arbre immédiatement"
+     ],
+     "rep": "Transporter une boisson",
+     "expl": "La gourde permet de transporter une boisson."
+    },
+    {
+     "q": "Que décrit la fonction d’usage ?",
+     "choix": [
+      "Seulement la couleur",
+      "Le prénom du concepteur",
+      "Le service rendu"
+     ],
+     "rep": "Le service rendu",
+     "expl": "Elle indique à quoi sert l’objet."
+    },
+    {
+     "q": "Plusieurs objets peuvent-ils répondre au même besoin ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement s’ils sont de la même couleur"
+     ],
+     "rep": "Oui",
+     "expl": "Des solutions différentes peuvent répondre à un même besoin."
+    }
+   ],
+   "id": "REV-TE-5E-01"
+  },
+  {
+   "axe": "Les objets et les systèmes techniques : leurs usages et leurs interactions à découvrir et analyser",
+   "titre": "Usagers et environnement",
+   "emoji": "👥",
+   "en_une_phrase": "Un objet technique interagit avec des utilisateurs et des éléments de son environnement.",
+   "comprendre": "Une porte automatique détecte une personne et agit dans un lieu fréquenté. Pour comprendre le système, il faut observer ses échanges avec les personnes et son milieu. La sécurité fait partie des éléments à examiner.",
+   "essentiel": [
+    "Un usager utilise ou rencontre le système.",
+    "L’environnement comprend les éléments extérieurs au système.",
+    "Les interactions peuvent concerner énergie, information ou mouvement."
+   ],
+   "image_mentale": "Imagine une porte automatique, une personne et un capteur.",
+   "regle_ou_methode": "Repère le système, les personnes et les éléments extérieurs avec lesquels il interagit.",
+   "exemples": [
+    "Une personne approche d’une porte automatique. Un capteur détecte sa présence et la porte peut s’ouvrir.",
+    "Le système reçoit de l’énergie pour actionner le mécanisme."
+   ],
+   "piege": "Le système ne se limite pas à l’utilisateur : il échange aussi avec son environnement.",
+   "astuce_memoire": "Système, usagers, environnement, échanges.",
+   "quiz": [
+    {
+     "q": "Qui est un usager de la porte ?",
+     "choix": [
+      "Une planète lointaine",
+      "Une date",
+      "Une personne qui la traverse"
+     ],
+     "rep": "Une personne qui la traverse",
+     "expl": "La personne utilise la porte."
+    },
+    {
+     "q": "Quel élément peut détecter une présence ?",
+     "choix": [
+      "Un capteur",
+      "Une feuille blanche seule",
+      "Un nom"
+     ],
+     "rep": "Un capteur",
+     "expl": "Un capteur peut détecter une présence."
+    },
+    {
+     "q": "La porte a-t-elle besoin d’énergie pour son mécanisme ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement lorsqu’elle est dessinée"
+     ],
+     "rep": "Oui",
+     "expl": "Le mécanisme utilise de l’énergie."
+    }
+   ],
+   "id": "REV-TE-5E-02"
+  },
+  {
+   "axe": "Les objets et les systèmes techniques : leurs usages et leurs interactions à découvrir et analyser",
+   "titre": "Cycle de vie et choix",
+   "emoji": "♻️",
+   "en_une_phrase": "Le cycle de vie d’un objet comprend les étapes de sa production à sa fin de vie.",
+   "comprendre": "Un objet mobilise des ressources avant son utilisation. Son transport, sa durée d’usage et son traitement en fin de vie ont aussi des effets. Comparer ces étapes aide à faire des choix plus raisonnés.",
+   "essentiel": [
+    "La fabrication utilise des matériaux et de l’énergie.",
+    "L’entretien et la réparation peuvent prolonger l’usage.",
+    "La fin de vie comprend collecte et traitements possibles."
+   ],
+   "image_mentale": "Imagine une frise : ressources, fabrication, usage, fin de vie.",
+   "regle_ou_methode": "Identifie les étapes et examine où une amélioration est possible.",
+   "exemples": [
+    "Une lampe est fabriquée, transportée puis utilisée. Si une pièce peut être remplacée, on peut parfois prolonger son usage.",
+    "En fin de vie, certains composants peuvent être collectés pour être traités."
+   ],
+   "piege": "Recycler ne supprime pas tous les impacts de fabrication ou de transport.",
+   "astuce_memoire": "Observer toutes les étapes.",
+   "quiz": [
+    {
+     "q": "Quelle étape précède l’utilisation ?",
+     "choix": [
+      "La fabrication",
+      "La fin de l’univers",
+      "La disparition des matières premières"
+     ],
+     "rep": "La fabrication",
+     "expl": "L’objet est fabriqué avant son usage."
+    },
+    {
+     "q": "Que peut permettre une réparation ?",
+     "choix": [
+      "Supprimer toutes les ressources nécessaires",
+      "Prolonger l’usage",
+      "Créer un deuxième Soleil"
+     ],
+     "rep": "Prolonger l’usage",
+     "expl": "Réparer peut prolonger la durée d’utilisation."
+    },
+    {
+     "q": "Recycler efface-t-il tous les impacts précédents ?",
+     "choix": [
+      "Oui",
+      "Seulement pour un objet vert",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "La fabrication et le transport ont déjà eu des effets."
+    }
+   ],
+   "id": "REV-TE-5E-03"
+  },
+  {
+   "axe": "Structure, fonctionnement, comportement : des objets et des systèmes techniques à comprendre",
+   "titre": "Fonction technique et solution",
+   "emoji": "⚙️",
+   "en_une_phrase": "Une fonction technique décrit une action nécessaire au fonctionnement ; une solution est le moyen choisi.",
+   "comprendre": "Un objet peut rendre un service grâce à plusieurs éléments. Une fermeture doit par exemple maintenir un contenant fermé. Un bouchon vissé est une solution possible pour assurer cette fonction.",
+   "essentiel": [
+    "Une fonction technique décrit une action à réaliser.",
+    "Une solution technique est un moyen concret de l’assurer.",
+    "Plusieurs solutions peuvent remplir la même fonction."
+   ],
+   "image_mentale": "Imagine une gourde avec un bouchon vissé.",
+   "regle_ou_methode": "Nomme l’action attendue puis l’élément qui la réalise.",
+   "exemples": [
+    "La fonction est de fermer une gourde. Un bouchon vissé assure cette fonction.",
+    "Un couvercle à clip peut être une autre solution pour fermer une boîte."
+   ],
+   "piege": "Le nom de la pièce et l’action qu’elle accomplit ne sont pas la même chose.",
+   "astuce_memoire": "Fonction : fermer ; solution : bouchon.",
+   "quiz": [
+    {
+     "q": "Quelle est la fonction du bouchon ?",
+     "choix": [
+      "Mesurer le temps",
+      "Fermer le récipient",
+      "Faire voler la gourde"
+     ],
+     "rep": "Fermer le récipient",
+     "expl": "Le bouchon assure la fermeture."
+    },
+    {
+     "q": "Quel élément est une solution technique ?",
+     "choix": [
+      "Fermer",
+      "Transporter uniquement comme besoin",
+      "Un bouchon vissé"
+     ],
+     "rep": "Un bouchon vissé",
+     "expl": "Le bouchon est un moyen concret de fermer."
+    },
+    {
+     "q": "Une même fonction peut-elle avoir plusieurs solutions ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement sur une image"
+     ],
+     "rep": "Oui",
+     "expl": "Un bouchon vissé et un couvercle à clip sont deux solutions possibles."
+    }
+   ],
+   "id": "REV-TE-5E-04"
+  },
+  {
+   "axe": "Structure, fonctionnement, comportement : des objets et des systèmes techniques à comprendre",
+   "titre": "Chaîne d’énergie",
+   "emoji": "⚡",
+   "en_une_phrase": "Une chaîne d’énergie décrit les étapes qui permettent d’alimenter et d’actionner un système.",
+   "comprendre": "Un petit véhicule électrique reçoit une énergie et produit un mouvement. Des composants assurent l’alimentation, la commande et la conversion. Les relier aide à comprendre le fonctionnement.",
+   "essentiel": [
+    "Une source fournit et alimente le système en énergie.",
+    "Un élément de commande distribue l’énergie (par exemple un interrupteur).",
+    "Un moteur convertit l’énergie électrique en mouvement, transmis ensuite aux roues."
+   ],
+   "image_mentale": "Imagine pile, moteur puis roues reliés par des flèches.",
+   "regle_ou_methode": "Repère la source, le moteur et l’action produite.",
+   "exemples": [
+    "Une pile alimente un moteur. Le moteur entraîne les roues. Le véhicule se déplace.",
+    "Si la pile est déchargée, l’alimentation du moteur peut être insuffisante."
+   ],
+   "piege": "Une roue ne constitue pas à elle seule la source d’énergie.",
+   "astuce_memoire": "Alimenter, distribuer, convertir, transmettre.",
+   "quiz": [
+    {
+     "q": "Quelle partie peut alimenter le moteur ?",
+     "choix": [
+      "Une roue seule",
+      "Une étiquette",
+      "Une pile"
+     ],
+     "rep": "Une pile",
+     "expl": "La pile fournit l’énergie au circuit."
+    },
+    {
+     "q": "Que peut entraîner un moteur ?",
+     "choix": [
+      "Des roues",
+      "Le nom du véhicule",
+      "La date"
+     ],
+     "rep": "Des roues",
+     "expl": "Le moteur peut entraîner les roues."
+    },
+    {
+     "q": "Une pile déchargée peut-elle empêcher le fonctionnement ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement si elle change de couleur"
+     ],
+     "rep": "Oui",
+     "expl": "Une alimentation insuffisante peut empêcher le moteur de fonctionner."
+    }
+   ],
+   "id": "REV-TE-5E-05"
+  },
+  {
+   "axe": "Structure, fonctionnement, comportement : des objets et des systèmes techniques à comprendre",
+   "titre": "Capteur et actionneur",
+   "emoji": "📡",
+   "en_une_phrase": "Un capteur acquiert une information ; un actionneur produit une action.",
+   "comprendre": "Dans un système automatique, une information sur l’environnement peut déclencher une réponse. Un capteur la détecte. Un actionneur réalise ensuite l’action commandée.",
+   "essentiel": [
+    "Un capteur détecte une grandeur ou un état.",
+    "Un programme traite une information selon des instructions.",
+    "Un actionneur agit sur le système ou l’environnement."
+   ],
+   "image_mentale": "Imagine un capteur de lumière commandant une lampe.",
+   "regle_ou_methode": "Repère ce qui détecte, ce qui traite et ce qui agit.",
+   "exemples": [
+    "Un capteur détecte une faible luminosité. Le programme donne un ordre. La lampe s’allume.",
+    "Un moteur peut être un actionneur qui fait bouger une barrière."
+   ],
+   "piege": "Le capteur ne réalise pas forcément lui-même le mouvement final.",
+   "astuce_memoire": "Capteur : acquérir ; actionneur : agir.",
+   "quiz": [
+    {
+     "q": "Quel élément détecte la luminosité ?",
+     "choix": [
+      "Un capteur de lumière",
+      "Une roue",
+      "Une étiquette"
+     ],
+     "rep": "Un capteur de lumière",
+     "expl": "Le capteur mesure ou détecte la luminosité."
+    },
+    {
+     "q": "Quel élément peut faire bouger une barrière ?",
+     "choix": [
+      "Un titre de page",
+      "Un moteur",
+      "Une carte papier seule"
+     ],
+     "rep": "Un moteur",
+     "expl": "Un moteur peut agir comme actionneur."
+    },
+    {
+     "q": "Le capteur effectue-t-il toujours lui-même l’action finale ?",
+     "choix": [
+      "Oui",
+      "Seulement en journée",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Le capteur fournit une information utilisée par le système."
+    }
+   ],
+   "id": "REV-TE-5E-06"
+  },
+  {
+   "axe": "Structure, fonctionnement, comportement : des objets et des systèmes techniques à comprendre",
+   "titre": "Diagnostiquer une panne",
+   "emoji": "🔍",
+   "en_une_phrase": "Un diagnostic consiste à chercher méthodiquement la cause possible d’un dysfonctionnement.",
+   "comprendre": "Si une lampe ne s’allume pas, plusieurs causes sont possibles. On vérifie les éléments un par un en respectant les consignes de sécurité. Le résultat de chaque test aide à éliminer une hypothèse.",
+   "essentiel": [
+    "Un symptôme décrit ce qui ne fonctionne pas.",
+    "Une hypothèse est une cause possible à vérifier.",
+    "Un test compare l’hypothèse au résultat observé."
+   ],
+   "image_mentale": "Imagine une liste de vérifications : alimentation, connexion, lampe.",
+   "regle_ou_methode": "Décris le symptôme, propose une cause puis réalise une vérification adaptée et sûre.",
+   "exemples": [
+    "Une lampe à pile ne s’allume pas. On vérifie d’abord que la pile est correctement installée. Si elle est mal placée, on la remet correctement et on teste.",
+    "Si le problème persiste, un adulte peut aider à vérifier une autre cause."
+   ],
+   "piege": "Ne conclus pas à une seule panne avant d’avoir vérifié.",
+   "astuce_memoire": "Symptôme, hypothèse, test.",
+   "quiz": [
+    {
+     "q": "Quel est le symptôme ?",
+     "choix": [
+      "La pile est forcément cassée",
+      "La lampe ne s’allume pas",
+      "Le test est terminé"
+     ],
+     "rep": "La lampe ne s’allume pas",
+     "expl": "Le symptôme est ce qui est observé."
+    },
+    {
+     "q": "À quoi sert un test ?",
+     "choix": [
+      "À créer une panne volontairement",
+      "À changer le besoin",
+      "À vérifier une hypothèse"
+     ],
+     "rep": "À vérifier une hypothèse",
+     "expl": "Le test aide à confirmer ou écarter une cause."
+    },
+    {
+     "q": "Plusieurs causes peuvent-elles expliquer une panne ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement pour les objets bleus"
+     ],
+     "rep": "Oui",
+     "expl": "Une alimentation ou une connexion peuvent par exemple être en cause."
+    }
+   ],
+   "id": "REV-TE-5E-07"
+  },
+  {
+   "axe": "Création, conception, réalisation, innovations : des objets à concevoir et à réaliser",
+   "titre": "Du besoin au prototype",
+   "emoji": "🧰",
+   "en_une_phrase": "Un prototype permet d’essayer une solution avant sa réalisation définitive.",
+   "comprendre": "Pour résoudre un problème, on peut dessiner puis fabriquer une première version. Le prototype sert à vérifier si la solution répond aux critères. Les essais conduisent parfois à modifier la conception.",
+   "essentiel": [
+    "Le besoin précise le problème à résoudre.",
+    "Un prototype est une première réalisation d’essai.",
+    "Les tests servent à améliorer la solution."
+   ],
+   "image_mentale": "Imagine un croquis puis une première maquette testée.",
+   "regle_ou_methode": "Définis le besoin, imagine une solution, fabrique un prototype puis teste-le.",
+   "exemples": [
+    "Pour protéger un petit objet, une équipe dessine une boîte. Elle construit un prototype puis vérifie que l’objet y entre et que la boîte ferme.",
+    "Si la boîte est trop petite, l’équipe modifie ses dimensions."
+   ],
+   "piege": "Un prototype n’est pas forcément la version définitive.",
+   "astuce_memoire": "Imaginer, fabriquer, tester, améliorer.",
+   "quiz": [
+    {
+     "q": "À quoi sert un prototype ?",
+     "choix": [
+      "À éviter tous les tests",
+      "À supprimer le besoin",
+      "À essayer une solution"
+     ],
+     "rep": "À essayer une solution",
+     "expl": "Il permet de vérifier une première solution."
+    },
+    {
+     "q": "La boîte est trop petite. Que peut-on modifier ?",
+     "choix": [
+      "Ses dimensions",
+      "La date de naissance",
+      "Le nom de la planète"
+     ],
+     "rep": "Ses dimensions",
+     "expl": "Agrandir les dimensions peut permettre d’accueillir l’objet."
+    },
+    {
+     "q": "Le prototype est-il forcément définitif ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement s’il est en carton"
+     ],
+     "rep": "Non",
+     "expl": "Les essais peuvent conduire à le modifier."
+    }
+   ],
+   "id": "REV-TE-5E-08"
+  },
+  {
+   "axe": "Création, conception, réalisation, innovations : des objets à concevoir et à réaliser",
+   "titre": "Critères et contraintes",
+   "emoji": "📋",
+   "en_une_phrase": "Une solution technique doit respecter des critères et des contraintes définis.",
+   "comprendre": "Tu peux comparer plusieurs objets selon leur taille ou leur capacité. Un critère permet d’évaluer une caractéristique. Une contrainte impose une limite à respecter.",
+   "essentiel": [
+    "Un critère sert à évaluer une solution.",
+    "Une contrainte fixe une condition à respecter.",
+    "Les critères peuvent être mesurés ou observés."
+   ],
+   "image_mentale": "Imagine deux boîtes comparées selon leur longueur et leur masse.",
+   "regle_ou_methode": "Liste les critères, fixe les limites puis vérifie chaque solution.",
+   "exemples": [
+    "Une boîte doit contenir un objet de 15 cm. Une longueur intérieure de 12 cm ne respecte pas cette contrainte.",
+    "Une boîte de 18 cm peut satisfaire la contrainte de longueur, sous réserve des autres critères."
+   ],
+   "piege": "Respecter un critère ne garantit pas que tous les autres le sont.",
+   "astuce_memoire": "Critères, limites, vérification.",
+   "quiz": [
+    {
+     "q": "Une boîte de 12 cm peut-elle contenir en longueur un objet rigide de 15 cm ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement si on change l’unité sans mesurer"
+     ],
+     "rep": "Non",
+     "expl": "12 cm est inférieur à 15 cm."
+    },
+    {
+     "q": "À quoi sert un critère ?",
+     "choix": [
+      "À empêcher toute comparaison",
+      "À évaluer une solution",
+      "À modifier la météo"
+     ],
+     "rep": "À évaluer une solution",
+     "expl": "Un critère permet de comparer ou vérifier une caractéristique."
+    },
+    {
+     "q": "Une boîte assez longue satisfait-elle forcément toutes les contraintes ?",
+     "choix": [
+      "Oui",
+      "Seulement le lundi",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Elle peut ne pas respecter d’autres contraintes."
+    }
+   ],
+   "id": "REV-TE-5E-09"
+  },
+  {
+   "axe": "Création, conception, réalisation, innovations : des objets à concevoir et à réaliser",
+   "titre": "Tester un programme",
+   "emoji": "💻",
+   "en_une_phrase": "Tester un programme permet de comparer son comportement au résultat attendu.",
+   "comprendre": "Un système suit les instructions de son programme. Une erreur dans une condition ou dans l’ordre peut produire un résultat inattendu. Un test précis aide à repérer puis corriger l’erreur.",
+   "essentiel": [
+    "Un programme est une suite d’instructions.",
+    "Un test utilise une situation et un résultat attendu.",
+    "On corrige puis on teste de nouveau."
+   ],
+   "image_mentale": "Imagine un robot et une liste d’instructions à vérifier.",
+   "regle_ou_methode": "Prévois le résultat, exécute le programme, compare puis corrige.",
+   "exemples": [
+    "Un robot doit avancer de deux cases. Le programme ne lui en fait avancer qu’une. On ajoute une instruction ou on modifie le nombre de répétitions, puis on teste de nouveau.",
+    "Un test de capteur vérifie si l’action attendue se déclenche quand la condition est remplie."
+   ],
+   "piege": "Un programme qui fonctionne dans un cas n’a pas forcément été vérifié dans tous les cas utiles.",
+   "astuce_memoire": "Prévoir, tester, comparer, corriger.",
+   "quiz": [
+    {
+     "q": "Que compare un test ?",
+     "choix": [
+      "Seulement les couleurs du robot",
+      "Le résultat obtenu au résultat attendu",
+      "Deux dates sans rapport"
+     ],
+     "rep": "Le résultat obtenu au résultat attendu",
+     "expl": "Le test révèle un éventuel écart."
+    },
+    {
+     "q": "Le robot avance une case au lieu de deux. Que faire ?",
+     "choix": [
+      "Ignorer la différence",
+      "Changer le nom du robot uniquement",
+      "Vérifier et modifier les instructions"
+     ],
+     "rep": "Vérifier et modifier les instructions",
+     "expl": "Le programme doit être ajusté puis testé."
+    },
+    {
+     "q": "Après correction, que faut-il faire ?",
+     "choix": [
+      "Tester de nouveau",
+      "Supposer que tout fonctionne toujours",
+      "Effacer le besoin"
+     ],
+     "rep": "Tester de nouveau",
+     "expl": "Un nouveau test vérifie la correction."
+    }
+   ],
+   "id": "REV-TE-5E-10"
+  }
+ ]
+}

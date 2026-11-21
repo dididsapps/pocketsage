@@ -1,0 +1,911 @@
+{
+ "classe": "CM2",
+ "niveau_appli": "CM2",
+ "age": "10-11 ans",
+ "matiere": "Mathématiques",
+ "code": "MA",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Nombres, calcul et résolution de problèmes",
+   "titre": "Lire les grands nombres",
+   "emoji": "🔢",
+   "en_une_phrase": "La valeur d’un chiffre dépend de sa position dans le nombre.",
+   "comprendre": "Tu sais lire des centaines et des milliers. Les grands nombres regroupent aussi les chiffres par classes de trois. Chaque classe indique si l’on parle d’unités, de milliers ou de millions.",
+   "essentiel": [
+    "Dix unités d’un rang forment une unité du rang suivant.",
+    "Les classes de trois chiffres facilitent la lecture.",
+    "Un million vaut mille milliers."
+   ],
+   "image_mentale": "Imagine des boîtes de trois chiffres : millions, milliers, unités.",
+   "regle_ou_methode": "Sépare les classes puis lis de gauche à droite.",
+   "exemples": [
+    "Dans 4 205 018, lis 4 millions, 205 milliers et 18 unités. Le nombre se lit quatre millions deux cent cinq mille dix-huit.",
+    "Dans 6 000 000, le chiffre 6 représente six millions."
+   ],
+   "piege": "Un zéro peut garder une place même s’il ne se lit pas.",
+   "astuce_memoire": "Des groupes de trois chiffres.",
+   "quiz": [
+    {
+     "q": "Que vaut le 4 dans 4 205 018 ?",
+     "choix": [
+      "4 milliers",
+      "4 millions",
+      "4 unités"
+     ],
+     "rep": "4 millions",
+     "expl": "Le 4 est au rang des millions."
+    },
+    {
+     "q": "Combien de milliers dans un million ?",
+     "choix": [
+      "100",
+      "10",
+      "1 000"
+     ],
+     "rep": "1 000",
+     "expl": "Mille milliers forment un million."
+    },
+    {
+     "q": "Quel nombre représente six millions ?",
+     "choix": [
+      "6 000 000",
+      "600 000",
+      "6 000"
+     ],
+     "rep": "6 000 000",
+     "expl": "Le 6 est ici au rang des millions."
+    }
+   ],
+   "id": "REV-MA-CM2-01"
+  },
+  {
+   "axe": "Nombres, calcul et résolution de problèmes",
+   "titre": "Comparer les fractions",
+   "emoji": "🍰",
+   "en_une_phrase": "Pour comparer deux fractions de même dénominateur, compare leurs numérateurs.",
+   "comprendre": "Une fraction partage une unité en parts égales. Si les parts ont la même taille, celle qui en contient le plus est la plus grande. Le dénominateur indique la taille des parts.",
+   "essentiel": [
+    "Le dénominateur indique le nombre de parts égales de l’unité.",
+    "Le numérateur indique combien de parts sont prises.",
+    "À dénominateur égal, le plus grand numérateur donne la plus grande fraction."
+   ],
+   "image_mentale": "Imagine deux bandes partagées chacune en huit parts égales.",
+   "regle_ou_methode": "Vérifie que les dénominateurs sont égaux puis compare les numérateurs.",
+   "exemples": [
+    "Pour comparer 3/8 et 5/8, les parts sont des huitièmes. Cinq parts dépassent trois parts : 5/8 est plus grand.",
+    "7/10 est plus grand que 4/10."
+   ],
+   "piege": "Comparer seulement les numérateurs ne fonctionne pas si les parts ont des tailles différentes.",
+   "astuce_memoire": "Même dénominateur : compare le nombre de parts.",
+   "quiz": [
+    {
+     "q": "Quelle fraction est plus grande ?",
+     "choix": [
+      "3/8",
+      "Elles sont égales",
+      "5/8"
+     ],
+     "rep": "5/8",
+     "expl": "Cinq huitièmes dépassent trois huitièmes."
+    },
+    {
+     "q": "Que désigne le 8 dans 3/8 ?",
+     "choix": [
+      "Le nombre de parts égales de l’unité",
+      "Le nombre de parts prises",
+      "Le nombre entier trois"
+     ],
+     "rep": "Le nombre de parts égales de l’unité",
+     "expl": "Le dénominateur indique le partage en huit parts."
+    },
+    {
+     "q": "Quelle fraction est plus petite ?",
+     "choix": [
+      "7/10",
+      "4/10",
+      "Elles sont égales"
+     ],
+     "rep": "4/10",
+     "expl": "Quatre dixièmes sont moins que sept dixièmes."
+    }
+   ],
+   "id": "REV-MA-CM2-02"
+  },
+  {
+   "axe": "Nombres, calcul et résolution de problèmes",
+   "titre": "Fractions et unités",
+   "emoji": "🧩",
+   "en_une_phrase": "Une fraction peut dépasser une unité et se décomposer.",
+   "comprendre": "Une unité peut être partagée en parts égales. Lorsque l’on prend assez de parts pour reconstituer l’unité, les parts restantes forment une autre fraction. Cela aide à placer une fraction sur une droite graduée.",
+   "essentiel": [
+    "4/4 vaut 1.",
+    "Une fraction peut être plus grande que 1.",
+    "On peut séparer une ou plusieurs unités et les parts restantes."
+   ],
+   "image_mentale": "Imagine une bande entière en quatre parts puis une part supplémentaire.",
+   "regle_ou_methode": "Regroupe les parts qui forment une unité puis compte le reste.",
+   "exemples": [
+    "Dans 5/4, quatre quarts forment 1. Il reste un quart : 5/4 = 1 + 1/4.",
+    "7/4 = 1 + 3/4."
+   ],
+   "piege": "Une fraction n’est pas toujours inférieure à 1.",
+   "astuce_memoire": "Quatre quarts font une unité.",
+   "quiz": [
+    {
+     "q": "Combien vaut 4/4 ?",
+     "choix": [
+      "1",
+      "4",
+      "1/4"
+     ],
+     "rep": "1",
+     "expl": "Quatre quarts reconstituent l’unité."
+    },
+    {
+     "q": "Quelle décomposition convient pour 5/4 ?",
+     "choix": [
+      "1 + 4/5",
+      "1 + 1/4",
+      "5 + 1/4"
+     ],
+     "rep": "1 + 1/4",
+     "expl": "Quatre quarts font 1 et il reste un quart."
+    },
+    {
+     "q": "7/4 est-il plus grand que 1 ?",
+     "choix": [
+      "Non",
+      "Il est égal à 1",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Sept quarts dépassent les quatre quarts qui forment 1."
+    }
+   ],
+   "id": "REV-MA-CM2-03"
+  },
+  {
+   "axe": "Nombres, calcul et résolution de problèmes",
+   "titre": "Lire les nombres décimaux",
+   "emoji": "🔟",
+   "en_une_phrase": "Un nombre décimal peut représenter des unités et des parts de l’unité.",
+   "comprendre": "Tu connais les euros et les centimes. Dans un nombre décimal, les chiffres après la virgule indiquent notamment des dixièmes, des centièmes et des millièmes. Leur position change leur valeur.",
+   "essentiel": [
+    "Un dixième vaut 1/10.",
+    "Un centième vaut 1/100.",
+    "Un millième vaut 1/1 000."
+   ],
+   "image_mentale": "Imagine une unité partagée en dix, cent puis mille parts égales.",
+   "regle_ou_methode": "Repère la position de chaque chiffre après la virgule.",
+   "exemples": [
+    "Dans 2,35, le 3 indique trois dixièmes et le 5 cinq centièmes. Le nombre vaut 2 + 3/10 + 5/100.",
+    "Dans 0,007, le 7 indique sept millièmes."
+   ],
+   "piege": "0,7 et 0,07 ne représentent pas la même quantité.",
+   "astuce_memoire": "Dixièmes, centièmes, millièmes.",
+   "quiz": [
+    {
+     "q": "Que vaut le 5 dans 2,35 ?",
+     "choix": [
+      "5 dixièmes",
+      "5 centièmes",
+      "5 unités"
+     ],
+     "rep": "5 centièmes",
+     "expl": "Le 5 est au rang des centièmes."
+    },
+    {
+     "q": "Quel nombre représente sept millièmes ?",
+     "choix": [
+      "0,07",
+      "0,7",
+      "0,007"
+     ],
+     "rep": "0,007",
+     "expl": "Le 7 est au troisième rang après la virgule."
+    },
+    {
+     "q": "Quel nombre est le plus grand ?",
+     "choix": [
+      "0,7",
+      "0,07",
+      "Ils sont égaux"
+     ],
+     "rep": "0,7",
+     "expl": "Sept dixièmes dépassent sept centièmes."
+    }
+   ],
+   "id": "REV-MA-CM2-04"
+  },
+  {
+   "axe": "Nombres, calcul et résolution de problèmes",
+   "titre": "Comparer des décimaux",
+   "emoji": "📏",
+   "en_une_phrase": "Pour comparer des décimaux, compare d’abord leurs parties entières puis leurs chiffres de même rang.",
+   "comprendre": "Deux nombres décimaux peuvent avoir des écritures de longueurs différentes. Ajouter des zéros à droite de la partie décimale ne change pas leur valeur. On peut ainsi comparer les rangs facilement.",
+   "essentiel": [
+    "Compare d’abord les parties entières.",
+    "Si elles sont égales, compare dixièmes puis centièmes et millièmes.",
+    "2,5 = 2,50."
+   ],
+   "image_mentale": "Imagine deux règles où les dixièmes sont alignés.",
+   "regle_ou_methode": "Aligne les virgules, complète au besoin avec des zéros puis compare.",
+   "exemples": [
+    "Pour comparer 3,7 et 3,68, écris 3,70 et 3,68. Les dixièmes 7 et 6 montrent que 3,70 est plus grand.",
+    "2,5 et 2,50 sont égaux."
+   ],
+   "piege": "Le nombre qui a le plus de chiffres après la virgule n’est pas forcément le plus grand.",
+   "astuce_memoire": "Même rang face au même rang.",
+   "quiz": [
+    {
+     "q": "Quel nombre est le plus grand ?",
+     "choix": [
+      "3,68",
+      "Ils sont égaux",
+      "3,7"
+     ],
+     "rep": "3,7",
+     "expl": "3,7 = 3,70 qui dépasse 3,68."
+    },
+    {
+     "q": "Quel nombre est égal à 2,5 ?",
+     "choix": [
+      "2,50",
+      "2,05",
+      "25"
+     ],
+     "rep": "2,50",
+     "expl": "Un zéro ajouté à droite ne change pas la valeur."
+    },
+    {
+     "q": "Quel nombre est plus petit ?",
+     "choix": [
+      "4,9",
+      "4,09",
+      "Ils sont égaux"
+     ],
+     "rep": "4,09",
+     "expl": "4,09 est inférieur à 4,90."
+    }
+   ],
+   "id": "REV-MA-CM2-05"
+  },
+  {
+   "axe": "Nombres, calcul et résolution de problèmes",
+   "titre": "Additionner et soustraire des décimaux",
+   "emoji": "➕",
+   "en_une_phrase": "Pour additionner ou soustraire des décimaux, aligne les chiffres de même rang.",
+   "comprendre": "Tu sais calculer avec des unités et des dizaines. Les dixièmes et les centièmes se regroupent eux aussi par rang. Aligner les virgules aide à éviter de mélanger les valeurs.",
+   "essentiel": [
+    "Les unités sont sous les unités.",
+    "Les dixièmes sont sous les dixièmes.",
+    "On peut ajouter des zéros à droite si nécessaire."
+   ],
+   "image_mentale": "Imagine deux prix écrits l’un sous l’autre avec les virgules alignées.",
+   "regle_ou_methode": "Aligne les virgules, complète avec des zéros puis calcule.",
+   "exemples": [
+    "Pour 3,5 + 1,25, écris 3,50 + 1,25. Les centièmes donnent 75 et les unités 4 : le résultat est 4,75.",
+    "5,00 − 2,30 = 2,70."
+   ],
+   "piege": "N’aligne pas seulement les derniers chiffres si les rangs sont différents.",
+   "astuce_memoire": "Virgule sous virgule.",
+   "quiz": [
+    {
+     "q": "Combien font 3,5 + 1,25 ?",
+     "choix": [
+      "4,75",
+      "4,30",
+      "15,0"
+     ],
+     "rep": "4,75",
+     "expl": "3,50 + 1,25 = 4,75."
+    },
+    {
+     "q": "Combien font 5,00 − 2,30 ?",
+     "choix": [
+      "3,30",
+      "2,70",
+      "2,30"
+     ],
+     "rep": "2,70",
+     "expl": "5,00 − 2,30 = 2,70."
+    },
+    {
+     "q": "Que faut-il aligner ?",
+     "choix": [
+      "Les derniers chiffres seulement",
+      "Les premiers chiffres à gauche",
+      "Les chiffres de même rang"
+     ],
+     "rep": "Les chiffres de même rang",
+     "expl": "Les unités et les fractions d’unité doivent être alignées."
+    }
+   ],
+   "id": "REV-MA-CM2-06"
+  },
+  {
+   "axe": "Nombres, calcul et résolution de problèmes",
+   "titre": "Multiplier et diviser",
+   "emoji": "✖️",
+   "en_une_phrase": "La multiplication regroupe des quantités égales et la division permet de partager ou de grouper.",
+   "comprendre": "Tu sais additionner plusieurs quantités identiques. La multiplication écrit cette répétition plus rapidement. La division permet notamment de retrouver le nombre de groupes ou la taille d’un partage.",
+   "essentiel": [
+    "4 × 3 signifie quatre groupes de trois.",
+    "La division peut donner un quotient et un reste.",
+    "Le reste est inférieur au diviseur."
+   ],
+   "image_mentale": "Imagine des objets répartis dans des boîtes de même taille.",
+   "regle_ou_methode": "Choisis l’opération, calcule puis vérifie avec la situation.",
+   "exemples": [
+    "On partage 17 billes entre 4 enfants : 4 × 4 = 16. Chacun reçoit 4 billes et il en reste 1.",
+    "Six paquets de 8 crayons contiennent 6 × 8 = 48 crayons."
+   ],
+   "piege": "Un reste de 4 dans une division par 4 signifie qu’on peut encore former un groupe.",
+   "astuce_memoire": "Groupes égaux : multiplie ou partage.",
+   "quiz": [
+    {
+     "q": "17 partagé entre 4 donne quel quotient et quel reste ?",
+     "choix": [
+      "3 et reste 5",
+      "4 et reste 1",
+      "4 et reste 4"
+     ],
+     "rep": "4 et reste 1",
+     "expl": "17 = 4 × 4 + 1."
+    },
+    {
+     "q": "Combien font 6 × 8 ?",
+     "choix": [
+      "42",
+      "54",
+      "48"
+     ],
+     "rep": "48",
+     "expl": "Six groupes de huit font 48."
+    },
+    {
+     "q": "Dans une division par 4, quel reste est possible ?",
+     "choix": [
+      "3",
+      "4",
+      "7"
+     ],
+     "rep": "3",
+     "expl": "Le reste doit être inférieur au diviseur."
+    }
+   ],
+   "id": "REV-MA-CM2-07"
+  },
+  {
+   "axe": "Nombres, calcul et résolution de problèmes",
+   "titre": "Chercher une valeur manquante",
+   "emoji": "❓",
+   "en_une_phrase": "On peut trouver un nombre inconnu en utilisant la relation entre les opérations.",
+   "comprendre": "Une égalité ressemble à une balance : les deux côtés ont la même valeur. Si une case manque, cherche ce qu’il faut ajouter ou retirer. Vérifie ensuite en remplaçant la case.",
+   "essentiel": [
+    "Une égalité indique que deux quantités sont égales.",
+    "La soustraction aide à retrouver un terme d’une addition.",
+    "Une vérification confirme la valeur trouvée."
+   ],
+   "image_mentale": "Imagine une balance avec une boîte fermée.",
+   "regle_ou_methode": "Isole la quantité manquante puis vérifie l’égalité.",
+   "exemples": [
+    "Pour □ + 8 = 21, calcule 21 − 8 = 13. Vérifie : 13 + 8 = 21.",
+    "Pour □ × 4 = 28, le nombre manquant est 7 car 7 × 4 = 28."
+   ],
+   "piege": "Le signe égal ne veut pas dire « écris la réponse » seulement : il indique une égalité.",
+   "astuce_memoire": "Je cherche puis je vérifie.",
+   "quiz": [
+    {
+     "q": "Quel nombre complète □ + 8 = 21 ?",
+     "choix": [
+      "29",
+      "11",
+      "13"
+     ],
+     "rep": "13",
+     "expl": "21 − 8 = 13."
+    },
+    {
+     "q": "Quel nombre complète □ × 4 = 28 ?",
+     "choix": [
+      "7",
+      "6",
+      "8"
+     ],
+     "rep": "7",
+     "expl": "7 × 4 = 28."
+    },
+    {
+     "q": "Comment vérifier une valeur trouvée ?",
+     "choix": [
+      "Changer les nombres",
+      "La remplacer dans l’égalité",
+      "Effacer le signe égal"
+     ],
+     "rep": "La remplacer dans l’égalité",
+     "expl": "Le remplacement permet de vérifier les deux côtés."
+    }
+   ],
+   "id": "REV-MA-CM2-08"
+  },
+  {
+   "axe": "Grandeurs et mesures",
+   "titre": "Aire d’un rectangle",
+   "emoji": "🟦",
+   "en_une_phrase": "L’aire d’un rectangle se calcule en multipliant sa longueur par sa largeur.",
+   "comprendre": "L’aire mesure une surface, comme le nombre de carreaux qui recouvrent un sol. Dans un rectangle, les carreaux forment des rangées de même longueur. Multiplier le nombre de rangées par celui de carreaux par rangée donne l’aire.",
+   "essentiel": [
+    "L’aire mesure une surface.",
+    "Aire du rectangle = longueur × largeur.",
+    "Les deux longueurs doivent être exprimées dans la même unité."
+   ],
+   "image_mentale": "Imagine trois rangées de cinq carreaux carrés.",
+   "regle_ou_methode": "Convertis si nécessaire puis multiplie longueur et largeur.",
+   "exemples": [
+    "Un rectangle mesure 5 cm sur 3 cm. Il contient 5 × 3 = 15 carrés de 1 cm². Son aire est 15 cm².",
+    "Un carré de côté 4 cm a une aire de 4 × 4 = 16 cm²."
+   ],
+   "piege": "L’aire en cm² et le périmètre en cm mesurent deux choses différentes.",
+   "astuce_memoire": "Rectangle : longueur fois largeur.",
+   "quiz": [
+    {
+     "q": "Quelle est l’aire d’un rectangle de 5 cm sur 3 cm ?",
+     "choix": [
+      "15 cm²",
+      "16 cm",
+      "8 cm²"
+     ],
+     "rep": "15 cm²",
+     "expl": "5 × 3 = 15 cm²."
+    },
+    {
+     "q": "Quelle est l’aire d’un carré de côté 4 cm ?",
+     "choix": [
+      "8 cm²",
+      "16 cm²",
+      "12 cm"
+     ],
+     "rep": "16 cm²",
+     "expl": "4 × 4 = 16 cm²."
+    },
+    {
+     "q": "Quelle unité peut mesurer une aire ?",
+     "choix": [
+      "La minute",
+      "Le litre",
+      "Le centimètre carré"
+     ],
+     "rep": "Le centimètre carré",
+     "expl": "Le centimètre carré mesure une surface."
+    }
+   ],
+   "id": "REV-MA-CM2-09"
+  },
+  {
+   "axe": "Grandeurs et mesures",
+   "titre": "Les angles et le degré",
+   "emoji": "📐",
+   "en_une_phrase": "Un angle mesure une ouverture, et l’angle droit mesure 90 degrés.",
+   "comprendre": "Tu reconnais l’angle d’un coin de feuille. Cet angle est droit. Une ouverture plus petite est aiguë et une ouverture plus grande, jusqu’à l’angle plat, est obtuse.",
+   "essentiel": [
+    "L’angle droit mesure 90°.",
+    "Un angle aigu est inférieur à 90°.",
+    "Un angle obtus est supérieur à 90° et inférieur à 180°."
+   ],
+   "image_mentale": "Imagine un livre qui s’ouvre plus ou moins autour de sa reliure.",
+   "regle_ou_methode": "Compare l’ouverture à un angle droit.",
+   "exemples": [
+    "Un angle de 45° est inférieur à 90° : il est aigu.",
+    "Un angle de 120° est supérieur à 90° et inférieur à 180° : il est obtus."
+   ],
+   "piege": "La longueur des côtés dessinés ne détermine pas l’ouverture de l’angle.",
+   "astuce_memoire": "Aigu plus petit que droit ; obtus plus grand.",
+   "quiz": [
+    {
+     "q": "Combien mesure un angle droit ?",
+     "choix": [
+      "45°",
+      "90°",
+      "180°"
+     ],
+     "rep": "90°",
+     "expl": "Un angle droit mesure 90 degrés."
+    },
+    {
+     "q": "Quel type d’angle mesure 45° ?",
+     "choix": [
+      "Droit",
+      "Obtus",
+      "Aigu"
+     ],
+     "rep": "Aigu",
+     "expl": "45° est inférieur à 90°."
+    },
+    {
+     "q": "Quel type d’angle mesure 120° ?",
+     "choix": [
+      "Obtus",
+      "Aigu",
+      "Droit"
+     ],
+     "rep": "Obtus",
+     "expl": "120° est entre 90° et 180°."
+    }
+   ],
+   "id": "REV-MA-CM2-10"
+  },
+  {
+   "axe": "Grandeurs et mesures",
+   "titre": "Calculer une durée",
+   "emoji": "⏰",
+   "en_une_phrase": "Une durée mesure le temps écoulé entre deux instants.",
+   "comprendre": "Une horloge indique des instants, par exemple l’heure de départ et l’heure d’arrivée. Pour connaître le temps écoulé, on peut compter par étapes. Une heure contient 60 minutes.",
+   "essentiel": [
+    "Une heure vaut 60 minutes.",
+    "Une durée relie deux instants.",
+    "On peut passer par l’heure entière suivante."
+   ],
+   "image_mentale": "Imagine une horloge avançant du départ à l’arrivée.",
+   "regle_ou_methode": "Compte jusqu’à l’heure suivante puis ajoute le temps restant.",
+   "exemples": [
+    "De 14 h 45 à 15 h, il y a 15 min. De 15 h à 15 h 20, il y a 20 min. La durée totale est 35 min.",
+    "De 9 h à 10 h 30, il s’écoule 1 h 30 min."
+   ],
+   "piege": "Ne traite pas les minutes comme des centièmes d’heure.",
+   "astuce_memoire": "Une heure = 60 minutes.",
+   "quiz": [
+    {
+     "q": "De 14 h 45 à 15 h 20, combien de temps ?",
+     "choix": [
+      "25 min",
+      "75 min",
+      "35 min"
+     ],
+     "rep": "35 min",
+     "expl": "15 min puis 20 min donnent 35 min."
+    },
+    {
+     "q": "Combien de minutes dans une heure ?",
+     "choix": [
+      "60",
+      "100",
+      "30"
+     ],
+     "rep": "60",
+     "expl": "Une heure contient 60 minutes."
+    },
+    {
+     "q": "De 9 h à 10 h 30, quelle durée ?",
+     "choix": [
+      "30 min",
+      "1 h 30 min",
+      "2 h 30 min"
+     ],
+     "rep": "1 h 30 min",
+     "expl": "Une heure puis trente minutes se sont écoulées."
+    }
+   ],
+   "id": "REV-MA-CM2-11"
+  },
+  {
+   "axe": "Espace et géométrie",
+   "titre": "Construire un triangle",
+   "emoji": "📐",
+   "en_une_phrase": "Trois longueurs peuvent déterminer un triangle si elles permettent de se rejoindre.",
+   "comprendre": "Un triangle possède trois côtés et trois sommets. Pour le construire avec une règle et un compas, on trace un côté puis les distances aux deux extrémités. Leur intersection donne le troisième sommet.",
+   "essentiel": [
+    "Un triangle a trois côtés.",
+    "Le compas reporte une longueur.",
+    "Les arcs se croisent au troisième sommet recherché."
+   ],
+   "image_mentale": "Imagine deux arcs tracés depuis les extrémités d’un segment.",
+   "regle_ou_methode": "Trace un côté, reporte les deux autres longueurs puis relie l’intersection.",
+   "exemples": [
+    "Trace un segment de 4 cm. Depuis ses extrémités, trace deux arcs de rayon 3 cm. Relie leur intersection aux extrémités : les côtés mesurent 3, 3 et 4 cm.",
+    "Un triangle dont les trois côtés mesurent 4 cm est équilatéral."
+   ],
+   "piege": "Le point de rencontre des arcs doit être relié aux deux extrémités.",
+   "astuce_memoire": "Un côté, deux arcs, deux segments.",
+   "quiz": [
+    {
+     "q": "Combien de côtés possède un triangle ?",
+     "choix": [
+      "Trois",
+      "Quatre",
+      "Deux"
+     ],
+     "rep": "Trois",
+     "expl": "Un triangle a trois côtés."
+    },
+    {
+     "q": "À quoi sert le compas ici ?",
+     "choix": [
+      "À mesurer une masse",
+      "À reporter des longueurs",
+      "À lire une durée"
+     ],
+     "rep": "À reporter des longueurs",
+     "expl": "Le compas trace des arcs de rayon choisi."
+    },
+    {
+     "q": "Comment s’appelle un triangle de trois côtés égaux ?",
+     "choix": [
+      "Rectangle obligatoirement",
+      "Cercle",
+      "Équilatéral"
+     ],
+     "rep": "Équilatéral",
+     "expl": "Un triangle équilatéral possède trois côtés égaux."
+    }
+   ],
+   "id": "REV-MA-CM2-12"
+  },
+  {
+   "axe": "Espace et géométrie",
+   "titre": "La symétrie axiale",
+   "emoji": "🪞",
+   "en_une_phrase": "Deux figures symétriques se superposent par pliage sur un axe.",
+   "comprendre": "Tu as peut-être plié une feuille pour découper une forme. Les deux parties se correspondent de part et d’autre du pli. Chaque point et son image sont à la même distance de l’axe.",
+   "essentiel": [
+    "L’axe est la droite du pliage.",
+    "Un point et son image sont à la même distance de l’axe.",
+    "Le segment qui les relie est perpendiculaire à l’axe."
+   ],
+   "image_mentale": "Imagine une feuille pliée selon une droite.",
+   "regle_ou_methode": "Depuis le point, trace la perpendiculaire à l’axe puis reporte la même distance de l’autre côté.",
+   "exemples": [
+    "Un point est à 2 cm d’un axe. Son image est à 2 cm de l’autre côté, sur la perpendiculaire.",
+    "Un point situé sur l’axe est sa propre image."
+   ],
+   "piege": "La même distance doit être mesurée perpendiculairement à l’axe.",
+   "astuce_memoire": "Même distance, de part et d’autre.",
+   "quiz": [
+    {
+     "q": "À quelle distance de l’axe se trouve l’image d’un point situé à 2 cm ?",
+     "choix": [
+      "À 4 cm",
+      "À 2 cm",
+      "À 1 cm"
+     ],
+     "rep": "À 2 cm",
+     "expl": "Le point et son image sont à la même distance de l’axe."
+    },
+    {
+     "q": "Que devient un point placé sur l’axe ?",
+     "choix": [
+      "Il disparaît",
+      "Il va à 2 cm",
+      "Il est sa propre image"
+     ],
+     "rep": "Il est sa propre image",
+     "expl": "Le pli laisse les points de l’axe à leur place."
+    },
+    {
+     "q": "Comment le segment reliant un point à son image coupe-t-il l’axe ?",
+     "choix": [
+      "Perpendiculairement",
+      "Toujours parallèlement",
+      "Sans le rencontrer"
+     ],
+     "rep": "Perpendiculairement",
+     "expl": "L’axe est perpendiculaire au segment reliant les points correspondants."
+    }
+   ],
+   "id": "REV-MA-CM2-13"
+  },
+  {
+   "axe": "Organisation et gestion de données et probabilités",
+   "titre": "Lire et organiser des données",
+   "emoji": "📊",
+   "en_une_phrase": "Un tableau ou un diagramme rend des données plus faciles à comparer.",
+   "comprendre": "Tu peux compter des objets ou des réponses. Les ranger dans un tableau permet de retrouver chaque quantité. Un diagramme peut ensuite montrer les écarts.",
+   "essentiel": [
+    "Le titre indique ce que représentent les données.",
+    "Une catégorie est associée à une quantité.",
+    "La graduation doit être lue avant de comparer des barres."
+   ],
+   "image_mentale": "Imagine trois barres de hauteurs différentes.",
+   "regle_ou_methode": "Lis le titre, les catégories et l’échelle puis compare.",
+   "exemples": [
+    "Une classe compte 4 lecteurs de bandes dessinées et 7 lecteurs de contes. 7 dépasse 4 de 3.",
+    "Si une graduation vaut deux objets, une barre de trois graduations représente six objets."
+   ],
+   "piege": "Une barre ne se lit pas sans vérifier l’échelle.",
+   "astuce_memoire": "Titre, catégories, échelle.",
+   "quiz": [
+    {
+     "q": "Quelle différence entre 7 et 4 ?",
+     "choix": [
+      "11",
+      "4",
+      "3"
+     ],
+     "rep": "3",
+     "expl": "7 − 4 = 3."
+    },
+    {
+     "q": "Une graduation vaut 2 objets. Combien valent 3 graduations ?",
+     "choix": [
+      "6 objets",
+      "3 objets",
+      "5 objets"
+     ],
+     "rep": "6 objets",
+     "expl": "3 × 2 = 6."
+    },
+    {
+     "q": "Que faut-il lire avant de comparer les barres ?",
+     "choix": [
+      "La couleur des barres",
+      "L’échelle",
+      "La largeur des barres"
+     ],
+     "rep": "L’échelle",
+     "expl": "L’échelle donne la valeur des graduations."
+    }
+   ],
+   "id": "REV-MA-CM2-14"
+  },
+  {
+   "axe": "Organisation et gestion de données et probabilités",
+   "titre": "Comparer des chances",
+   "emoji": "🎲",
+   "en_une_phrase": "Dans une expérience aléatoire, certaines issues peuvent être plus probables que d’autres.",
+   "comprendre": "Avant un tirage, on ne sait pas toujours quelle issue se produira. Si des objets sont tirés au hasard avec les mêmes chances d’être choisis, une couleur plus présente a plus de chances de sortir. Plusieurs essais peuvent donner des résultats différents.",
+   "essentiel": [
+    "Une issue est un résultat possible.",
+    "Plus de boules d’une couleur peuvent donner plus de chances de la tirer.",
+    "Une issue possible n’est pas certaine."
+   ],
+   "image_mentale": "Imagine un sac de trois boules rouges et une boule bleue.",
+   "regle_ou_methode": "Compte les objets de chaque couleur et compare leurs chances.",
+   "exemples": [
+    "Dans un sac de trois rouges et une bleue, chaque boule ayant la même chance d’être tirée, le rouge est plus probable.",
+    "Dans un sac de boules toutes rouges, tirer une rouge est certain."
+   ],
+   "piege": "Plus probable ne signifie pas certain.",
+   "astuce_memoire": "Plus de possibilités favorables, plus de chances.",
+   "quiz": [
+    {
+     "q": "Trois boules rouges et une bleue : quelle couleur est la plus probable ?",
+     "choix": [
+      "Rouge",
+      "Bleu",
+      "Les deux sont forcément impossibles"
+     ],
+     "rep": "Rouge",
+     "expl": "Trois boules sur quatre sont rouges."
+    },
+    {
+     "q": "Avec seulement des boules rouges, tirer rouge est…",
+     "choix": [
+      "impossible",
+      "certain",
+      "moins probable que bleu"
+     ],
+     "rep": "certain",
+     "expl": "Toutes les boules sont rouges."
+    },
+    {
+     "q": "Une boule bleue est présente avec trois rouges. Peut-elle sortir ?",
+     "choix": [
+      "Non",
+      "Seulement si elle devient rouge",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "La boule bleue reste une issue possible."
+    }
+   ],
+   "id": "REV-MA-CM2-15"
+  },
+  {
+   "axe": "La proportionnalité",
+   "titre": "Raisonner avec des quantités proportionnelles",
+   "emoji": "⚖️",
+   "en_une_phrase": "Dans une situation proportionnelle, multiplier une quantité multiplie l’autre dans la même mesure.",
+   "comprendre": "Si les objets identiques ont le même prix unitaire, acheter deux fois plus coûte deux fois plus. On peut s’appuyer sur cette relation pour calculer sans apprendre une formule. Il faut d’abord vérifier que la situation convient.",
+   "essentiel": [
+    "Les quantités varient ensemble dans la même proportion.",
+    "Si on double la quantité, on double le prix dans cette situation.",
+    "Toutes les situations ne sont pas proportionnelles."
+   ],
+   "image_mentale": "Imagine deux paquets identiques et leur prix.",
+   "regle_ou_methode": "Vérifie la situation puis multiplie ou additionne les quantités connues.",
+   "exemples": [
+    "Deux cahiers identiques coûtent 6 euros. Quatre cahiers, deux fois plus nombreux, coûtent 12 euros.",
+    "Si trois stylos coûtent 9 euros, six stylos identiques coûtent 18 euros."
+   ],
+   "piege": "Une augmentation de l’âge ne double pas automatiquement la taille d’une personne.",
+   "astuce_memoire": "Deux fois plus, deux fois plus dans une situation proportionnelle.",
+   "quiz": [
+    {
+     "q": "Deux cahiers coûtent 6 euros. Combien coûtent quatre cahiers identiques ?",
+     "choix": [
+      "8 euros",
+      "12 euros",
+      "24 euros"
+     ],
+     "rep": "12 euros",
+     "expl": "Quatre cahiers sont deux fois plus nombreux, donc coûtent deux fois plus."
+    },
+    {
+     "q": "Trois stylos coûtent 9 euros. Combien coûtent six stylos identiques ?",
+     "choix": [
+      "12 euros",
+      "27 euros",
+      "18 euros"
+     ],
+     "rep": "18 euros",
+     "expl": "Six est le double de trois : le prix double."
+    },
+    {
+     "q": "L’âge et la taille sont-ils toujours proportionnels ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, jusqu’à 10 ans"
+     ],
+     "rep": "Non",
+     "expl": "La taille ne double pas chaque fois que l’âge double."
+    }
+   ],
+   "id": "REV-MA-CM2-16"
+  },
+  {
+   "axe": "Initiation à la pensée informatique",
+   "titre": "Répéter une instruction",
+   "emoji": "🤖",
+   "en_une_phrase": "Une boucle répète une suite d’instructions un nombre de fois indiqué.",
+   "comprendre": "Un trajet peut comporter plusieurs fois la même action. Plutôt que de l’écrire plusieurs fois, on peut demander de la répéter. Il faut lire le nombre de répétitions et le contenu de la boucle.",
+   "essentiel": [
+    "Une instruction indique une action.",
+    "Une boucle répète une ou plusieurs instructions.",
+    "L’ordre des instructions dans la boucle compte."
+   ],
+   "image_mentale": "Imagine trois flèches identiques regroupées sous « répéter trois fois ».",
+   "regle_ou_methode": "Lis le nombre de répétitions puis exécute chaque action dans l’ordre.",
+   "exemples": [
+    "Répéter trois fois « avance d’une case » fait avancer de trois cases.",
+    "Répéter deux fois « avance d’une case puis tourne à droite » réalise deux fois toute la suite."
+   ],
+   "piege": "Répéter trois fois une suite ne signifie pas répéter seulement sa dernière action.",
+   "astuce_memoire": "Je répète toute la suite indiquée.",
+   "quiz": [
+    {
+     "q": "Répéter trois fois « avance d’une case » fait avancer de combien ?",
+     "choix": [
+      "Une case",
+      "Quatre cases",
+      "Trois cases"
+     ],
+     "rep": "Trois cases",
+     "expl": "Une case répétée trois fois donne trois cases."
+    },
+    {
+     "q": "Que répète une boucle ?",
+     "choix": [
+      "Les instructions placées dans la boucle",
+      "Seulement le titre",
+      "Toujours toutes les actions possibles"
+     ],
+     "rep": "Les instructions placées dans la boucle",
+     "expl": "La boucle répète les instructions qu’elle contient."
+    },
+    {
+     "q": "Deux répétitions de « avance puis tourne » comprennent combien de tours ?",
+     "choix": [
+      "Un",
+      "Deux",
+      "Quatre"
+     ],
+     "rep": "Deux",
+     "expl": "Chaque répétition comprend un tour."
+    }
+   ],
+   "id": "REV-MA-CM2-17"
+  }
+ ]
+}
