@@ -1,0 +1,903 @@
+{
+ "fiches": [
+  {
+   "id": "REV-MA-CM1-01",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM1-02",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM1-03",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM1-04",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM1-05",
+   "action": "corriger",
+   "corrections": {
+    "piege": "Le chiffre juste après la virgule ne compte jamais des unités entières : il compte des dixièmes."
+   },
+   "note": "Piège faux : « pas toujours » laissait croire que le chiffre après la virgule peut compter des unités."
+  },
+  {
+   "id": "REV-MA-CM1-06",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM1-07",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM1-08",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM1-09",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM1-10",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM1-11",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM1-12",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM1-13",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM1-14",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM1-15",
+   "action": "corriger",
+   "corrections": {
+    "essentiel": [
+     "L’aire mesure une surface.",
+     "Un carré de 1 cm de côté a une aire de 1 cm².",
+     "Pour un rectangle quadrillé, aire = nombre de rangées × nombre de carrés par rangée."
+    ],
+    "regle_ou_methode": "Compte les carrés de 1 cm² d’une rangée et le nombre de rangées, puis multiplie."
+   },
+   "note": "Programme 2025 : au CM1 on détermine des aires par pavage/quadrillage ; la formule de l’aire du rectangle n’est attendue qu’en 6e."
+  },
+  {
+   "id": "REV-MA-CM1-16",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM1-17",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM1-18",
+   "action": "corriger",
+   "corrections": {
+    "quiz": [
+     {
+      "q": "Un point sur l’axe a quel symétrique ?",
+      "choix": [
+       "Lui-même",
+       "Un point toujours à deux carreaux",
+       "Aucun point"
+      ],
+      "rep": "Lui-même",
+      "expl": "Il reste à sa place lors du pliage."
+     },
+     {
+      "q": "Un point est à trois carreaux à gauche. Où est son image ?",
+      "choix": [
+       "À deux carreaux à droite",
+       "À trois carreaux à droite, en face",
+       "À trois carreaux à gauche"
+      ],
+      "rep": "À trois carreaux à droite, en face",
+      "expl": "Les distances à l’axe sont égales et les points sont en face."
+     },
+     {
+      "q": "Deux points sont à égale distance de l’axe mais décalés vers le haut. Sont-ils forcément symétriques ?",
+      "choix": [
+       "Oui",
+       "Seulement s’ils sont près de l’axe",
+       "Non"
+      ],
+      "rep": "Non",
+      "expl": "Ils doivent aussi être en face l’un de l’autre."
+     }
+    ]
+   },
+   "note": "Distracteur absurde remplacé."
+  },
+  {
+   "id": "REV-MA-CM1-19",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM1-20",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM1-21",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM1-22",
+   "action": "corriger",
+   "corrections": {
+    "quiz": [
+     {
+      "q": "Deux cahiers identiques coûtent 6 euros. Combien coûtent quatre cahiers au même prix unitaire ?",
+      "choix": [
+       "8 euros",
+       "12 euros",
+       "18 euros"
+      ],
+      "rep": "12 euros",
+      "expl": "Quatre cahiers représentent deux fois deux cahiers."
+     },
+     {
+      "q": "Si 3 m coûtent 9 euros au même prix par mètre, combien coûtent 6 m ?",
+      "choix": [
+       "12 euros",
+       "15 euros",
+       "18 euros"
+      ],
+      "rep": "18 euros",
+      "expl": "Six mètres correspondent au double de trois mètres."
+     },
+     {
+      "q": "La taille d’un enfant est-elle toujours proportionnelle à son âge ?",
+      "choix": [
+       "Non",
+       "Oui, toujours",
+       "Oui, jusqu’à 10 ans"
+      ],
+      "rep": "Non",
+      "expl": "La taille ne double pas nécessairement quand l’âge double."
+     }
+    ]
+   },
+   "note": "Distracteur absurde remplacé."
+  },
+  {
+   "id": "REV-MA-CM1-23",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM2-01",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM2-02",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM2-03",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM2-04",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM2-05",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM2-06",
+   "action": "corriger",
+   "corrections": {
+    "quiz": [
+     {
+      "q": "Combien font 3,5 + 1,25 ?",
+      "choix": [
+       "4,75",
+       "4,30",
+       "15,0"
+      ],
+      "rep": "4,75",
+      "expl": "3,50 + 1,25 = 4,75."
+     },
+     {
+      "q": "Combien font 5,00 − 2,30 ?",
+      "choix": [
+       "3,30",
+       "2,70",
+       "2,30"
+      ],
+      "rep": "2,70",
+      "expl": "5,00 − 2,30 = 2,70."
+     },
+     {
+      "q": "Que faut-il aligner ?",
+      "choix": [
+       "Les derniers chiffres seulement",
+       "Les premiers chiffres à gauche",
+       "Les chiffres de même rang"
+      ],
+      "rep": "Les chiffres de même rang",
+      "expl": "Les unités et les fractions d’unité doivent être alignées."
+     }
+    ]
+   },
+   "note": "Distracteur absurde remplacé."
+  },
+  {
+   "id": "REV-MA-CM2-07",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM2-08",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM2-09",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM2-10",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM2-11",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM2-12",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM2-13",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM2-14",
+   "action": "corriger",
+   "corrections": {
+    "quiz": [
+     {
+      "q": "Quelle différence entre 7 et 4 ?",
+      "choix": [
+       "11",
+       "4",
+       "3"
+      ],
+      "rep": "3",
+      "expl": "7 − 4 = 3."
+     },
+     {
+      "q": "Une graduation vaut 2 objets. Combien valent 3 graduations ?",
+      "choix": [
+       "6 objets",
+       "3 objets",
+       "5 objets"
+      ],
+      "rep": "6 objets",
+      "expl": "3 × 2 = 6."
+     },
+     {
+      "q": "Que faut-il lire avant de comparer les barres ?",
+      "choix": [
+       "La couleur des barres",
+       "L’échelle",
+       "La largeur des barres"
+      ],
+      "rep": "L’échelle",
+      "expl": "L’échelle donne la valeur des graduations."
+     }
+    ]
+   },
+   "note": "Distracteurs absurdes remplacés."
+  },
+  {
+   "id": "REV-MA-CM2-15",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-CM2-16",
+   "action": "corriger",
+   "corrections": {
+    "quiz": [
+     {
+      "q": "Deux cahiers coûtent 6 euros. Combien coûtent quatre cahiers identiques ?",
+      "choix": [
+       "8 euros",
+       "12 euros",
+       "24 euros"
+      ],
+      "rep": "12 euros",
+      "expl": "Quatre cahiers sont deux fois plus nombreux, donc coûtent deux fois plus."
+     },
+     {
+      "q": "Trois stylos coûtent 9 euros. Combien coûtent six stylos identiques ?",
+      "choix": [
+       "12 euros",
+       "27 euros",
+       "18 euros"
+      ],
+      "rep": "18 euros",
+      "expl": "Six est le double de trois : le prix double."
+     },
+     {
+      "q": "L’âge et la taille sont-ils toujours proportionnels ?",
+      "choix": [
+       "Non",
+       "Oui",
+       "Oui, jusqu’à 10 ans"
+      ],
+      "rep": "Non",
+      "expl": "La taille ne double pas chaque fois que l’âge double."
+     }
+    ]
+   },
+   "note": "Distracteur absurde remplacé."
+  },
+  {
+   "id": "REV-MA-CM2-17",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-6E-01",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-6E-02",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-6E-03",
+   "action": "corriger",
+   "corrections": {
+    "piege": "Multiplier un nombre positif par un nombre inférieur à 1 donne un résultat plus petit, pas plus grand."
+   },
+   "note": "Piège faux : « ne rend pas toujours plus grand » suggérait que le produit peut grandir ; il diminue toujours (nombres positifs)."
+  },
+  {
+   "id": "REV-MA-6E-04",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-6E-05",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-6E-06",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-6E-07",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-6E-08",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-6E-09",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-6E-10",
+   "action": "corriger",
+   "corrections": {
+    "quiz": [
+     {
+      "q": "Un triangle de côtés 5, 5 et 6 cm est…",
+      "choix": [
+       "équilatéral",
+       "isocèle",
+       "rectangle"
+      ],
+      "rep": "isocèle",
+      "expl": "Deux de ses côtés sont égaux."
+     },
+     {
+      "q": "Un triangle de trois côtés égaux est…",
+      "choix": [
+       "rectangle",
+       "quelconque",
+       "équilatéral"
+      ],
+      "rep": "équilatéral",
+      "expl": "Ses trois côtés ont la même longueur."
+     },
+     {
+      "q": "Quelle propriété définit un triangle rectangle ?",
+      "choix": [
+       "Un angle droit",
+       "Trois côtés égaux",
+       "Quatre côtés"
+      ],
+      "rep": "Un angle droit",
+      "expl": "Un triangle rectangle possède un angle droit."
+     }
+    ]
+   },
+   "note": "Distracteurs absurdes (cercle, carré, sans sommet) remplacés."
+  },
+  {
+   "id": "REV-MA-6E-11",
+   "action": "corriger",
+   "corrections": {
+    "quiz": [
+     {
+      "q": "Une graduation vaut 2 élèves. Quatre graduations représentent…",
+      "choix": [
+       "4 élèves",
+       "6 élèves",
+       "8 élèves"
+      ],
+      "rep": "8 élèves",
+      "expl": "4 × 2 = 8."
+     },
+     {
+      "q": "Quelle différence entre 6 et 4 élèves ?",
+      "choix": [
+       "2 élèves",
+       "10 élèves",
+       "4 élèves"
+      ],
+      "rep": "2 élèves",
+      "expl": "6 − 4 = 2."
+     },
+     {
+      "q": "Que faut-il vérifier pour lire une barre ?",
+      "choix": [
+       "La couleur des barres",
+       "L’échelle",
+       "La largeur des barres"
+      ],
+      "rep": "L’échelle",
+      "expl": "L’échelle donne la valeur de chaque graduation."
+     }
+    ]
+   },
+   "note": "Distracteurs absurdes remplacés."
+  },
+  {
+   "id": "REV-MA-6E-12",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-6E-13",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-6E-14",
+   "action": "corriger",
+   "corrections": {
+    "quiz": [
+     {
+      "q": "Avec 4, ajoute 3 puis multiplie par 2. Quel résultat ?",
+      "choix": [
+       "11",
+       "10",
+       "14"
+      ],
+      "rep": "14",
+      "expl": "4 + 3 = 7 puis 7 × 2 = 14."
+     },
+     {
+      "q": "Avec 5, quel résultat donne le même programme ?",
+      "choix": [
+       "16",
+       "13",
+       "10"
+      ],
+      "rep": "16",
+      "expl": "5 + 3 = 8 puis 8 × 2 = 16."
+     },
+     {
+      "q": "L’ordre des étapes peut-il changer le résultat ?",
+      "choix": [
+       "Non",
+       "Oui",
+       "Seulement avec des nombres pairs"
+      ],
+      "rep": "Oui",
+      "expl": "Les opérations successives dépendent de leur ordre."
+     }
+    ]
+   },
+   "note": "Distracteur absurde remplacé."
+  },
+  {
+   "id": "REV-MA-5E-01",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-5E-02",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-5E-03",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-5E-04",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-5E-05",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-5E-06",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-5E-07",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-5E-08",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-5E-09",
+   "action": "corriger",
+   "corrections": {
+    "piege": "A(2 ; 3) et A(3 ; 2) ne désignent pas le même point : l’ordre des coordonnées compte.",
+    "quiz": [
+     {
+      "q": "Quelle est l’abscisse de A(2 ; 3) ?",
+      "choix": [
+       "2",
+       "3",
+       "5"
+      ],
+      "rep": "2",
+      "expl": "L’abscisse est la première coordonnée."
+     },
+     {
+      "q": "Quelle est l’ordonnée de B(−1 ; 2) ?",
+      "choix": [
+       "−1",
+       "2",
+       "1"
+      ],
+      "rep": "2",
+      "expl": "L’ordonnée est la seconde coordonnée."
+     },
+     {
+      "q": "Les points (2 ; 3) et (3 ; 2) sont-ils le même point ?",
+      "choix": [
+       "Oui",
+       "Seulement si l’origine est au centre",
+       "Non"
+      ],
+      "rep": "Non",
+      "expl": "L’ordre des coordonnées change le point."
+     }
+    ]
+   },
+   "note": "« généralement » faux : (2 ; 3) et (3 ; 2) sont toujours deux points distincts."
+  },
+  {
+   "id": "REV-MA-5E-10",
+   "action": "corriger",
+   "corrections": {
+    "quiz": [
+     {
+      "q": "Quel angle correspond à un demi-tour ?",
+      "choix": [
+       "90°",
+       "180°",
+       "360°"
+      ],
+      "rep": "180°",
+      "expl": "Un demi-tour mesure 180 degrés."
+     },
+     {
+      "q": "O est le milieu de [AA’]. Que peut-on dire des longueurs OA et OA’ ?",
+      "choix": [
+       "OA = OA’",
+       "OA = 2 × OA’",
+       "OA est plus grande que OA’"
+      ],
+      "rep": "OA = OA’",
+      "expl": "Le milieu est à égale distance des deux extrémités du segment."
+     },
+     {
+      "q": "Que devient la longueur d’un segment par symétrie centrale ?",
+      "choix": [
+       "Elle est conservée",
+       "Elle est doublée systématiquement",
+       "Elle devient nulle"
+      ],
+      "rep": "Elle est conservée",
+      "expl": "La symétrie centrale conserve les longueurs."
+     }
+    ]
+   },
+   "note": "Question 2 mal formulée (« Que compare-t-on ? ») et distracteurs absurdes : réécrite."
+  },
+  {
+   "id": "REV-MA-5E-11",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-5E-12",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-5E-13",
+   "action": "corriger",
+   "corrections": {
+    "quiz": [
+     {
+      "q": "Quelle est la moyenne de 4, 6 et 8 ?",
+      "choix": [
+       "18",
+       "6",
+       "3"
+      ],
+      "rep": "6",
+      "expl": "La somme 18 divisée par 3 vaut 6."
+     },
+     {
+      "q": "Quelle est la moyenne de 2 et 10 ?",
+      "choix": [
+       "12",
+       "5",
+       "6"
+      ],
+      "rep": "6",
+      "expl": "(2 + 10) ÷ 2 = 6."
+     },
+     {
+      "q": "Que faut-il compter après avoir additionné les valeurs ?",
+      "choix": [
+       "Le nombre de valeurs",
+       "La plus grande valeur",
+       "La plus petite valeur"
+      ],
+      "rep": "Le nombre de valeurs",
+      "expl": "On divise la somme par le nombre de valeurs."
+     }
+    ]
+   },
+   "note": "Distracteurs absurdes remplacés."
+  },
+  {
+   "id": "REV-MA-5E-14",
+   "action": "corriger",
+   "corrections": {
+    "quiz": [
+     {
+      "q": "Deux succès en dix essais : quelle fréquence ?",
+      "choix": [
+       "10/2",
+       "1/6 forcément",
+       "2/10"
+      ],
+      "rep": "2/10",
+      "expl": "La fréquence est 2 divisé par 10."
+     },
+     {
+      "q": "Quelle est la probabilité d’une face d’un dé équilibré ?",
+      "choix": [
+       "1/6",
+       "1/10",
+       "6"
+      ],
+      "rep": "1/6",
+      "expl": "Chaque face a une chance sur six."
+     },
+     {
+      "q": "La fréquence peut-elle varier entre deux séries ?",
+      "choix": [
+       "Non",
+       "Oui",
+       "Seulement si le dé est truqué"
+      ],
+      "rep": "Oui",
+      "expl": "Les résultats aléatoires peuvent varier."
+     }
+    ]
+   },
+   "note": "Distracteur absurde remplacé."
+  },
+  {
+   "id": "REV-MA-5E-15",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits, exact et au niveau."
+  },
+  {
+   "id": "REV-MA-5E-16",
+   "action": "corriger",
+   "corrections": {
+    "quiz": [
+     {
+      "q": "Le score vaut 7. « Si score > 5, afficher gagné » : que se passe-t-il ?",
+      "choix": [
+       "Rien ne peut être décidé",
+       "Gagné est affiché",
+       "Le score devient automatiquement 5"
+      ],
+      "rep": "Gagné est affiché",
+      "expl": "7 est supérieur à 5."
+     },
+     {
+      "q": "Le score vaut 5. Le test score > 5 est-il vrai ?",
+      "choix": [
+       "Oui",
+       "Seulement si le score est négatif",
+       "Non"
+      ],
+      "rep": "Non",
+      "expl": "5 n’est pas strictement supérieur à 5."
+     },
+     {
+      "q": "Ajouter 2 trois fois à partir de 0 donne…",
+      "choix": [
+       "6",
+       "5",
+       "3"
+      ],
+      "rep": "6",
+      "expl": "0 + 2 + 2 + 2 = 6."
+     }
+    ]
+   },
+   "note": "Distracteur absurde remplacé."
+  }
+ ],
+ "couverture": [
+  {
+   "fichier": "REV-MA-CM1.json",
+   "manques": [
+    "Techniques opératoires posées (multiplication à deux chiffres, division posée)",
+    "Périmètre d’un polygone",
+    "Droites perpendiculaires et polygones usuels (carré, rectangle, losange, triangles)",
+    "Placer fractions et décimaux sur une droite graduée"
+   ]
+  },
+  {
+   "fichier": "REV-MA-CM2.json",
+   "manques": [
+    "Division décimale / multiplication d’un décimal par un entier",
+    "Multiplier et diviser par 10, 100, 1 000",
+    "Conversions d’unités d’aire (cm², dm², m²) et périmètre",
+    "Cercle (centre, rayon, diamètre) et solides"
+   ]
+  },
+  {
+   "fichier": "REV-MA-6E.json",
+   "manques": [
+    "Division d’un décimal par un entier à deux chiffres et sens de la division",
+    "Angles particuliers et somme des angles d’un triangle (au programme 6e 2025)",
+    "Médiatrice / symétrie axiale et cercle",
+    "Fractions : égalité, comparaison, fraction d’une quantité"
+   ]
+  },
+  {
+   "fichier": "REV-MA-5E.json",
+   "manques": [
+    "Équations simples / tester une égalité (calcul littéral)",
+    "Aire du triangle et hauteurs, médiatrices",
+    "Coefficient de proportionnalité, tableau et graphique",
+    "Multiples, diviseurs et critères de divisibilité"
+   ]
+  }
+ ]
+}
