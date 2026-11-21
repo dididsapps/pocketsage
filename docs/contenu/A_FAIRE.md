@@ -33,3 +33,13 @@ pour orienter : « En cas de doute, parlez-en à l'enseignant ou au médecin. »
 - [ ] Journal des progrès (ce qui a été fait cette semaine, sans note ni comparaison)
 - [ ] Fiche de liaison parent ↔ enseignant à imprimer (ce qu'on travaille à la maison)
 - [ ] Communication : parler d'organisation, de routine et de confiance, jamais de cerveau ni de troubles
+
+## Voix, traductions et coûts Google (21/11)
+Constat novembre (1-21) : 74,67 € — Translate 42,99 € (ateliers + flashcards, 6-10/11), Text-to-Speech 31,68 € (voyages du sommeil surtout ; gratuit Neural2 dépassé).
+- [ ] **Côté utilisateur :** alerte budget Google Cloud (Facturation → Budgets et alertes) : 80 € pour novembre, puis 10 €/mois dès décembre
+- [ ] **Aucune nouvelle voix avant le 1er décembre** (Neural2 payant ce mois-ci)
+- [ ] **1er décembre :** MP3 français de TOUTES les fiches de révision (GS → Terminale, ~1 M caractères, Neural2-D, dans le gratuit) + surlignage
+- [ ] Fiches de révision traduites dans les 9 langues **par Claude** (pas d'API Translate), relues par un agent ; bouton « FR / ma langue » sur chaque fiche
+- [ ] MP3 des autres langues en **WaveNet** (4 M gratuits/mois, puis 4 $/M), étalés sur ~3 mois ; d'abord les langues les plus utilisées (statistiques)
+- [ ] Décider : couper l'appel Google Translate du workflow flashcards (flash-tts.yml)
+- [ ] Recevoir et passer à la moulinette les lots 3 (4e → Première) et 4 (Terminale)
