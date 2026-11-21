@@ -1,0 +1,646 @@
+{
+ "classe": "6E",
+ "niveau_appli": "6ème",
+ "age": "11-12 ans",
+ "matiere": "Sciences et technologie",
+ "code": "SC",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Matière, mouvement, énergie, information",
+   "titre": "Comparer des masses à volume égal",
+   "emoji": "⚖️",
+   "en_une_phrase": "À volume égal, des matières différentes peuvent avoir des masses différentes.",
+   "comprendre": "Deux récipients identiques peuvent contenir le même volume de liquides différents. Une balance permet de comparer leur masse. Il faut retirer la masse des récipients si elle est incluse.",
+   "essentiel": [
+    "La masse se mesure avec une balance.",
+    "Le volume se mesure avec un récipient gradué.",
+    "La comparaison est faite à volume égal."
+   ],
+   "image_mentale": "Imagine deux éprouvettes identiques remplies jusqu’à la même graduation.",
+   "regle_ou_methode": "Mesure le même volume des deux matières puis compare leurs masses.",
+   "exemples": [
+    "Prends 100 mL de chaque liquide. Après avoir tenu compte des récipients, le premier a une masse de 100 g et le second de 80 g. À volume égal, le premier est plus massif.",
+    "Deux cubes de même volume peuvent avoir des masses différentes."
+   ],
+   "piege": "Comparer des masses pour des volumes différents ne suffit pas à conclure.",
+   "astuce_memoire": "Même volume, masses comparées.",
+   "quiz": [
+    {
+     "q": "Que faut-il rendre égal pour cette comparaison ?",
+     "choix": [
+      "La couleur",
+      "Le volume",
+      "Le nom"
+     ],
+     "rep": "Le volume",
+     "expl": "On compare ici les masses à volume égal."
+    },
+    {
+     "q": "Quel instrument mesure la masse ?",
+     "choix": [
+      "Un thermomètre",
+      "Une règle",
+      "Une balance"
+     ],
+     "rep": "Une balance",
+     "expl": "La balance mesure une masse."
+    },
+    {
+     "q": "À volume égal, 100 g et 80 g : lequel est le plus massif ?",
+     "choix": [
+      "100 g",
+      "80 g",
+      "Ils ont la même masse"
+     ],
+     "rep": "100 g",
+     "expl": "100 g est supérieur à 80 g."
+    }
+   ],
+   "id": "REV-SC-6E-01"
+  },
+  {
+   "axe": "Matière, mouvement, énergie, information",
+   "titre": "La saturation d’une solution",
+   "emoji": "🧪",
+   "en_une_phrase": "À une température donnée, une quantité d’eau ne peut dissoudre qu’une quantité limitée de certaines substances.",
+   "comprendre": "Tu peux dissoudre du sucre dans de l’eau. Si tu en ajoutes progressivement, une partie peut finir par rester au fond malgré l’agitation. La solution est alors saturée dans ces conditions.",
+   "essentiel": [
+    "Une substance dissoute reste dans le mélange.",
+    "La quantité maximale dissoute dépend des conditions.",
+    "Un excès peut rester solide au fond."
+   ],
+   "image_mentale": "Imagine un verre dans lequel quelques grains restent au fond.",
+   "regle_ou_methode": "Ajoute la substance petit à petit, mélange puis observe ce qui reste.",
+   "exemples": [
+    "Ajoute du sucre à de l’eau et mélange. Lorsque des grains persistent malgré l’agitation, tout le sucre ajouté ne se dissout plus dans ces conditions.",
+    "Changer la température peut modifier la quantité qui se dissout."
+   ],
+   "piege": "Une substance dissoute n’a pas disparu.",
+   "astuce_memoire": "Saturation : une partie ajoutée ne se dissout plus.",
+   "quiz": [
+    {
+     "q": "Que peut-on observer en ajoutant trop de sucre ?",
+     "choix": [
+      "La matière disparaît",
+      "Le verre devient vide",
+      "Des grains restent au fond"
+     ],
+     "rep": "Des grains restent au fond",
+     "expl": "L’excès peut rester non dissous."
+    },
+    {
+     "q": "Le sucre dissous est-il encore présent ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement s’il est visible"
+     ],
+     "rep": "Oui",
+     "expl": "Il reste dans la solution."
+    },
+    {
+     "q": "Que faut-il préciser lorsqu’on compare une quantité dissoute maximale ?",
+     "choix": [
+      "La couleur du cahier",
+      "Les conditions comme la température",
+      "Le jour de la semaine uniquement"
+     ],
+     "rep": "Les conditions comme la température",
+     "expl": "La quantité dissoute peut dépendre des conditions."
+    }
+   ],
+   "id": "REV-SC-6E-02"
+  },
+  {
+   "axe": "Matière, mouvement, énergie, information",
+   "titre": "Transformation chimique",
+   "emoji": "🧫",
+   "en_une_phrase": "Une transformation chimique produit de nouvelles substances à partir de réactifs.",
+   "comprendre": "Certaines substances mélangées réagissent et leur aspect change. Une production de gaz ou un changement de couleur peut être un indice. Pour conclure, on étudie les substances avant et après.",
+   "essentiel": [
+    "Les réactifs sont les substances consommées lors de la transformation.",
+    "Des produits sont formés.",
+    "Un changement observé est un indice à interpréter."
+   ],
+   "image_mentale": "Imagine deux ingrédients qui produisent des bulles au mélange.",
+   "regle_ou_methode": "Décris les substances initiales puis cherche les produits formés.",
+   "exemples": [
+    "Dans une expérience encadrée, un mélange produit un gaz. Les bulles sont un indice de transformation à étudier.",
+    "La rouille se forme lorsque le fer réagit avec son environnement dans certaines conditions."
+   ],
+   "piege": "Un changement visible seul ne suffit pas toujours à identifier toutes les substances formées.",
+   "astuce_memoire": "Réactifs consommés, produits formés.",
+   "quiz": [
+    {
+     "q": "Comment nomme-t-on les substances consommées ?",
+     "choix": [
+      "Les réactifs",
+      "Les instruments",
+      "Les unités"
+     ],
+     "rep": "Les réactifs",
+     "expl": "Les réactifs sont consommés lors de la transformation."
+    },
+    {
+     "q": "Que peut être une production de bulles ?",
+     "choix": [
+      "Une preuve que toute matière a disparu",
+      "Un indice de formation de gaz",
+      "Une mesure de masse"
+     ],
+     "rep": "Un indice de formation de gaz",
+     "expl": "Les bulles peuvent révéler un gaz."
+    },
+    {
+     "q": "Que faut-il comparer pour étudier une transformation ?",
+     "choix": [
+      "La couleur du bureau seulement",
+      "Le prénom de l’élève",
+      "Les substances avant et après"
+     ],
+     "rep": "Les substances avant et après",
+     "expl": "La comparaison aide à identifier réactifs et produits."
+    }
+   ],
+   "id": "REV-SC-6E-03"
+  },
+  {
+   "axe": "Matière, mouvement, énergie, information",
+   "titre": "Calculer une vitesse",
+   "emoji": "🚴",
+   "en_une_phrase": "Pour un mouvement uniforme, la vitesse se calcule en divisant la distance parcourue par la durée.",
+   "comprendre": "Tu peux comparer deux trajets en mesurant leur longueur et leur durée. Si la vitesse reste constante, la distance parcourue augmente régulièrement. Le quotient distance divisée par durée donne la vitesse.",
+   "essentiel": [
+    "Vitesse = distance ÷ durée.",
+    "Avec des mètres et des secondes, la vitesse s’exprime en m/s.",
+    "Il faut préciser le point de vue du mouvement."
+   ],
+   "image_mentale": "Imagine un cycliste parcourant une ligne mesurée.",
+   "regle_ou_methode": "Note distance et durée avec leurs unités puis divise.",
+   "exemples": [
+    "Un objet parcourt 20 m en 5 s à vitesse constante. 20 ÷ 5 = 4. Sa vitesse est 4 m/s.",
+    "Pour 30 m en 10 s, la vitesse est 3 m/s."
+   ],
+   "piege": "Ne confonds pas la durée en secondes et la distance en mètres.",
+   "astuce_memoire": "Distance divisée par durée.",
+   "quiz": [
+    {
+     "q": "20 m parcourus en 5 s : quelle vitesse ?",
+     "choix": [
+      "25 m/s",
+      "4 m/s",
+      "0,25 m/s"
+     ],
+     "rep": "4 m/s",
+     "expl": "20 ÷ 5 = 4 m/s."
+    },
+    {
+     "q": "30 m parcourus en 10 s : quelle vitesse ?",
+     "choix": [
+      "20 m/s",
+      "40 m/s",
+      "3 m/s"
+     ],
+     "rep": "3 m/s",
+     "expl": "30 ÷ 10 = 3 m/s."
+    },
+    {
+     "q": "Quelle unité convient ici ?",
+     "choix": [
+      "m/s",
+      "kg",
+      "°C"
+     ],
+     "rep": "m/s",
+     "expl": "Les mètres divisés par les secondes donnent des m/s."
+    }
+   ],
+   "id": "REV-SC-6E-04"
+  },
+  {
+   "axe": "Matière, mouvement, énergie, information",
+   "titre": "Décrire un mouvement relativement",
+   "emoji": "🚆",
+   "en_une_phrase": "Un mouvement se décrit toujours par rapport à un objet de référence.",
+   "comprendre": "Dans un train, une passagère assise garde la même place par rapport au siège. Pourtant, elle change de position par rapport au quai lorsque le train roule. Les deux descriptions sont justes car elles utilisent des références différentes.",
+   "essentiel": [
+    "La référence précise le point de vue.",
+    "Un objet peut être immobile par rapport à un autre.",
+    "Le même objet peut être en mouvement par rapport à une autre référence."
+   ],
+   "image_mentale": "Imagine une personne assise dans un train qui passe devant une gare.",
+   "regle_ou_methode": "Indique l’objet observé et la référence avant de décrire le mouvement.",
+   "exemples": [
+    "Une passagère assise ne change pas de place par rapport au siège. Elle est immobile par rapport à ce siège.",
+    "Elle se déplace par rapport au quai si le train roule."
+   ],
+   "piege": "Dire seulement « elle bouge » sans préciser par rapport à quoi peut être ambigu.",
+   "astuce_memoire": "Toujours préciser « par rapport à ».",
+   "quiz": [
+    {
+     "q": "La passagère assise change-t-elle de place par rapport à son siège ?",
+     "choix": [
+      "Oui",
+      "Seulement au départ",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Elle garde sa place par rapport au siège."
+    },
+    {
+     "q": "Se déplace-t-elle par rapport au quai si le train roule ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement si elle marche dans le train"
+     ],
+     "rep": "Oui",
+     "expl": "Le train et la passagère se déplacent par rapport au quai."
+    },
+    {
+     "q": "Que faut-il préciser pour décrire le mouvement ?",
+     "choix": [
+      "La couleur des chaussures",
+      "La référence",
+      "Le prénom de l’observateur"
+     ],
+     "rep": "La référence",
+     "expl": "La référence définit le point de vue."
+    }
+   ],
+   "id": "REV-SC-6E-05"
+  },
+  {
+   "axe": "Le vivant, sa diversité et les fonctions qui le caractérisent",
+   "titre": "Les cellules du vivant",
+   "emoji": "🔬",
+   "en_une_phrase": "Les êtres vivants sont constitués d’une ou plusieurs cellules.",
+   "comprendre": "Un microscope permet d’observer des éléments trop petits pour l’œil nu. Une cellule est une unité d’organisation du vivant. Certains êtres vivants sont constitués d’une seule cellule, d’autres de nombreuses cellules.",
+   "essentiel": [
+    "Une cellule est une unité d’organisation du vivant.",
+    "Un être unicellulaire possède une cellule.",
+    "Un être pluricellulaire possède plusieurs cellules."
+   ],
+   "image_mentale": "Imagine une construction formée de petites unités observées au microscope.",
+   "regle_ou_methode": "Observe le document et compte si l’être vivant comporte une ou plusieurs cellules.",
+   "exemples": [
+    "Une levure observée est un organisme unicellulaire : une cellule constitue l’être vivant.",
+    "Un humain est pluricellulaire : son corps contient de très nombreuses cellules."
+   ],
+   "piege": "Une cellule est vivante dans l’organisme : ce n’est pas une simple brique inerte.",
+   "astuce_memoire": "Une cellule ou plusieurs cellules.",
+   "quiz": [
+    {
+     "q": "Que signifie unicellulaire ?",
+     "choix": [
+      "Constitué d’une cellule",
+      "Constitué uniquement de pierre",
+      "Toujours visible à l’œil nu"
+     ],
+     "rep": "Constitué d’une cellule",
+     "expl": "Unicellulaire signifie formé d’une cellule."
+    },
+    {
+     "q": "Quel instrument aide à observer des cellules ?",
+     "choix": [
+      "Une boussole",
+      "Un microscope",
+      "Un pluviomètre"
+     ],
+     "rep": "Un microscope",
+     "expl": "Le microscope permet d’observer de petits éléments."
+    },
+    {
+     "q": "Un humain est-il unicellulaire ?",
+     "choix": [
+      "Oui",
+      "Il ne possède aucune cellule",
+      "Non, il est pluricellulaire"
+     ],
+     "rep": "Non, il est pluricellulaire",
+     "expl": "Le corps humain contient de nombreuses cellules."
+    }
+   ],
+   "id": "REV-SC-6E-06"
+  },
+  {
+   "axe": "Le vivant, sa diversité et les fonctions qui le caractérisent",
+   "titre": "La pollinisation",
+   "emoji": "🌼",
+   "en_une_phrase": "La pollinisation est le transport du pollen des étamines vers le pistil d’une fleur.",
+   "comprendre": "Les fleurs de nombreuses plantes produisent du pollen. Le vent ou des animaux peuvent le transporter. Ce transport permet ensuite, si les conditions conviennent, la reproduction et la formation de graines.",
+   "essentiel": [
+    "Le pollen est produit par les étamines de la fleur.",
+    "Des animaux ou le vent peuvent transporter le pollen jusqu’au pistil.",
+    "La pollinisation peut permettre la formation de graines après fécondation."
+   ],
+   "image_mentale": "Imagine un insecte passant d’une fleur à une autre avec du pollen.",
+   "regle_ou_methode": "Repère la source du pollen, son transport et son arrivée sur une fleur.",
+   "exemples": [
+    "Une abeille visite une fleur et transporte du pollen. En visitant une autre fleur compatible, elle peut y déposer ce pollen.",
+    "Le vent transporte le pollen de certaines plantes."
+   ],
+   "piege": "La visite d’une fleur ne garantit pas à elle seule la formation d’une graine.",
+   "astuce_memoire": "Pollen transporté, reproduction possible.",
+   "quiz": [
+    {
+     "q": "Qu’est-ce qui peut transporter le pollen ?",
+     "choix": [
+      "Une règle posée immobile",
+      "Un insecte",
+      "Un cahier fermé"
+     ],
+     "rep": "Un insecte",
+     "expl": "Des insectes transportent le pollen entre des fleurs."
+    },
+    {
+     "q": "Le vent peut-il transporter du pollen ?",
+     "choix": [
+      "Non",
+      "Seulement dans une boîte fermée",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Le vent transporte le pollen de certaines plantes."
+    },
+    {
+     "q": "La pollinisation garantit-elle à elle seule une graine ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement si la fleur est rouge"
+     ],
+     "rep": "Non",
+     "expl": "D’autres étapes et conditions sont nécessaires."
+    }
+   ],
+   "id": "REV-SC-6E-07"
+  },
+  {
+   "axe": "Le vivant, sa diversité et les fonctions qui le caractérisent",
+   "titre": "Conserver les aliments",
+   "emoji": "🧊",
+   "en_une_phrase": "La conservation limite la multiplication de certains micro-organismes et les risques d’altération.",
+   "comprendre": "Les aliments peuvent se dégrader sous l’action de micro-organismes. Le froid ralentit la multiplication de beaucoup d’entre eux. D’autres méthodes, comme le séchage, limitent les conditions favorables à leur développement.",
+   "essentiel": [
+    "Le froid ralentit de nombreux micro-organismes sans forcément les détruire.",
+    "Le séchage retire une partie de l’eau disponible.",
+    "Les consignes de conservation sont à respecter."
+   ],
+   "image_mentale": "Imagine le même aliment laissé au chaud ou placé au froid selon les consignes.",
+   "regle_ou_methode": "Identifie la méthode et explique comment elle limite l’altération.",
+   "exemples": [
+    "Un aliment est placé au réfrigérateur selon ses consignes. Le froid ralentit la multiplication de nombreux micro-organismes.",
+    "Le séchage réduit l’eau disponible pour certains micro-organismes."
+   ],
+   "piege": "Le réfrigérateur ne détruit pas tous les microbes.",
+   "astuce_memoire": "Froid : ralentir ; séchage : moins d’eau disponible.",
+   "quiz": [
+    {
+     "q": "Que fait le froid sur de nombreux micro-organismes ?",
+     "choix": [
+      "Il les détruit tous instantanément",
+      "Il les transforme tous en aliments",
+      "Il ralentit leur multiplication"
+     ],
+     "rep": "Il ralentit leur multiplication",
+     "expl": "Le froid ralentit souvent leur multiplication."
+    },
+    {
+     "q": "Que réduit le séchage ?",
+     "choix": [
+      "L’eau disponible",
+      "La taille de la planète",
+      "Le nombre de lettres"
+     ],
+     "rep": "L’eau disponible",
+     "expl": "Il retire une partie de l’eau disponible."
+    },
+    {
+     "q": "Pourquoi suivre les consignes de conservation ?",
+     "choix": [
+      "Pour changer le nom du produit",
+      "Pour limiter les risques d’altération",
+      "Pour empêcher toute transformation dans l’univers"
+     ],
+     "rep": "Pour limiter les risques d’altération",
+     "expl": "Les consignes contribuent à limiter les risques."
+    }
+   ],
+   "id": "REV-SC-6E-08"
+  },
+  {
+   "axe": "Les objets techniques au cœur de la société",
+   "titre": "Choisir un matériau",
+   "emoji": "🛠️",
+   "en_une_phrase": "Le choix d’un matériau dépend des fonctions de l’objet et des contraintes.",
+   "comprendre": "Un objet doit résister ou protéger selon son usage. Les matériaux ne conduisent pas tous l’électricité ou la chaleur de la même façon. Tester leurs propriétés permet de choisir une solution adaptée.",
+   "essentiel": [
+    "Une propriété décrit le comportement d’un matériau.",
+    "Un conducteur électrique laisse passer le courant dans des conditions adaptées.",
+    "Le choix dépend aussi des contraintes d’usage."
+   ],
+   "image_mentale": "Imagine une poignée qui protège la main de la chaleur.",
+   "regle_ou_methode": "Identifie la fonction, puis compare les propriétés des matériaux envisagés.",
+   "exemples": [
+    "Pour une poignée, on cherche un matériau qui limite le transfert de chaleur vers la main. On compare donc les propriétés thermiques.",
+    "Un fil électrique comporte une partie conductrice et une enveloppe isolante."
+   ],
+   "piege": "Un matériau adapté à une fonction ne convient pas forcément à toutes.",
+   "astuce_memoire": "Fonction, propriété, choix.",
+   "quiz": [
+    {
+     "q": "Que faut-il comparer pour une poignée protégeant de la chaleur ?",
+     "choix": [
+      "Les propriétés thermiques",
+      "Les noms des mois",
+      "La météo de la veille uniquement"
+     ],
+     "rep": "Les propriétés thermiques",
+     "expl": "La transmission de chaleur compte pour cette fonction."
+    },
+    {
+     "q": "Quel rôle joue l’enveloppe isolante d’un fil ?",
+     "choix": [
+      "Produire de la nourriture",
+      "Limiter le contact avec la partie conductrice",
+      "Faire pousser le fil"
+     ],
+     "rep": "Limiter le contact avec la partie conductrice",
+     "expl": "L’enveloppe limite le contact avec le conducteur."
+    },
+    {
+     "q": "Un même matériau convient-il forcément à tous les usages ?",
+     "choix": [
+      "Oui",
+      "Seulement s’il est bleu",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Le choix dépend des propriétés et de l’usage."
+    }
+   ],
+   "id": "REV-SC-6E-09"
+  },
+  {
+   "axe": "Les objets techniques au cœur de la société",
+   "titre": "Capteur et programme",
+   "emoji": "🤖",
+   "en_une_phrase": "Un système programmé peut utiliser une information fournie par un capteur.",
+   "comprendre": "Une lampe automatique peut réagir à la luminosité. Un capteur mesure une condition et le programme décide de l’action prévue. On teste le système pour vérifier sa réponse.",
+   "essentiel": [
+    "Un capteur fournit une information sur une grandeur ou un état.",
+    "Un programme définit des actions selon des instructions.",
+    "Un test vérifie le comportement obtenu."
+   ],
+   "image_mentale": "Imagine un capteur de lumière relié à une lampe commandée.",
+   "regle_ou_methode": "Repère la condition mesurée, la règle et l’action.",
+   "exemples": [
+    "Le programme dit : si la lumière est faible, allumer la lampe. Le capteur indique une faible luminosité. La lampe s’allume selon cette règle.",
+    "Si la lumière est suffisante et que le programme prévoit l’extinction, la lampe reste éteinte."
+   ],
+   "piege": "Un capteur transmet une information : il ne remplace pas à lui seul toutes les instructions.",
+   "astuce_memoire": "Mesurer, décider selon la règle, agir.",
+   "quiz": [
+    {
+     "q": "Que mesure ici le capteur ?",
+     "choix": [
+      "La longueur du cahier",
+      "La luminosité",
+      "Le prénom du voisin"
+     ],
+     "rep": "La luminosité",
+     "expl": "Le capteur choisi mesure la lumière."
+    },
+    {
+     "q": "Que fait la lampe si la lumière est faible selon la règle ?",
+     "choix": [
+      "Elle disparaît",
+      "Elle pousse comme une plante",
+      "Elle s’allume"
+     ],
+     "rep": "Elle s’allume",
+     "expl": "La règle prévoit son allumage."
+    },
+    {
+     "q": "Pourquoi tester le système ?",
+     "choix": [
+      "Pour vérifier sa réponse",
+      "Pour changer la météo",
+      "Pour supprimer le capteur forcément"
+     ],
+     "rep": "Pour vérifier sa réponse",
+     "expl": "Un essai permet de vérifier le comportement."
+    }
+   ],
+   "id": "REV-SC-6E-10"
+  },
+  {
+   "axe": "La Terre, une planète peuplée par des êtres vivants",
+   "titre": "Le réchauffement climatique récent",
+   "emoji": "🌡️",
+   "en_une_phrase": "Les mesures montrent un réchauffement climatique global récent lié aux activités humaines.",
+   "comprendre": "Des scientifiques comparent les températures sur de longues périodes. Ils observent une hausse de la température moyenne mondiale. Les activités humaines augmentent la quantité de certains gaz à effet de serre, ce qui renforce le réchauffement.",
+   "essentiel": [
+    "Le climat se décrit sur de longues durées.",
+    "Les mesures indiquent une hausse de la température moyenne mondiale.",
+    "Les gaz à effet de serre supplémentaires issus des activités humaines jouent un rôle majeur."
+   ],
+   "image_mentale": "Imagine une courbe de température moyenne observée sur de nombreuses années.",
+   "regle_ou_methode": "Examine des mesures sur une longue durée puis relie-les aux causes étudiées.",
+   "exemples": [
+    "Une série de relevés sur plusieurs décennies montre une tendance à la hausse malgré des variations d’une année à l’autre.",
+    "La combustion de charbon, de pétrole ou de gaz rejette du dioxyde de carbone, un gaz à effet de serre."
+   ],
+   "piege": "Une journée froide ne contredit pas à elle seule une tendance mondiale de long terme.",
+   "astuce_memoire": "Données longues, tendance globale, causes humaines.",
+   "quiz": [
+    {
+     "q": "Quelle durée faut-il étudier pour caractériser le climat ?",
+     "choix": [
+      "Une seule heure",
+      "Un seul après-midi",
+      "Une longue période"
+     ],
+     "rep": "Une longue période",
+     "expl": "Le climat s’étudie sur de longues périodes."
+    },
+    {
+     "q": "Quel gaz est notamment rejeté par la combustion des énergies fossiles ?",
+     "choix": [
+      "Le dioxyde de carbone",
+      "Uniquement de l’oxygène pur",
+      "Le sable"
+     ],
+     "rep": "Le dioxyde de carbone",
+     "expl": "La combustion rejette notamment du dioxyde de carbone."
+    },
+    {
+     "q": "Un jour froid suffit-il à réfuter une tendance mondiale de long terme ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement en hiver"
+     ],
+     "rep": "Non",
+     "expl": "Un événement local et bref ne résume pas une tendance climatique mondiale."
+    }
+   ],
+   "id": "REV-SC-6E-11"
+  },
+  {
+   "axe": "La Terre, une planète peuplée par des êtres vivants",
+   "titre": "Les relations dans un écosystème",
+   "emoji": "🕸️",
+   "en_une_phrase": "Un écosystème associe un milieu, ses êtres vivants et leurs interactions.",
+   "comprendre": "Dans une mare, la lumière et l’eau influencent les conditions de vie. Les plantes et les animaux entretiennent aussi des relations alimentaires. Une modification du milieu peut avoir des conséquences sur plusieurs espèces.",
+   "essentiel": [
+    "Un écosystème comprend un milieu et des êtres vivants.",
+    "Les êtres vivants entretiennent des relations.",
+    "Un changement peut modifier l’équilibre des populations."
+   ],
+   "image_mentale": "Imagine une mare avec des plantes, des insectes et des oiseaux.",
+   "regle_ou_methode": "Identifie les éléments du milieu, les espèces puis une relation entre elles.",
+   "exemples": [
+    "Une larve mange une plante aquatique et un poisson mange la larve. Ces relations forment une chaîne alimentaire.",
+    "Si la mare s’assèche, les conditions de vie changent pour plusieurs espèces."
+   ],
+   "piege": "Une conséquence sur une espèce n’est pas toujours immédiate ou identique pour toutes.",
+   "astuce_memoire": "Milieu, êtres vivants, interactions.",
+   "quiz": [
+    {
+     "q": "Que comprend un écosystème ?",
+     "choix": [
+      "Un milieu, des êtres vivants et leurs relations",
+      "Seulement des animaux",
+      "Seulement des rochers"
+     ],
+     "rep": "Un milieu, des êtres vivants et leurs relations",
+     "expl": "Ces éléments et leurs interactions font partie de l’écosystème."
+    },
+    {
+     "q": "Que peut modifier l’assèchement d’une mare ?",
+     "choix": [
+      "Le nom de toutes les planètes",
+      "Les conditions de vie",
+      "La date du calendrier"
+     ],
+     "rep": "Les conditions de vie",
+     "expl": "La diminution de l’eau change le milieu."
+    },
+    {
+     "q": "Une relation alimentaire relie…",
+     "choix": [
+      "Deux nombres sans contexte",
+      "Une date et un prénom",
+      "Un être mangé et un mangeur"
+     ],
+     "rep": "Un être mangé et un mangeur",
+     "expl": "Elle décrit qui mange qui."
+    }
+   ],
+   "id": "REV-SC-6E-12"
+  }
+ ]
+}

@@ -1,0 +1,805 @@
+{
+ "classe": "CM2",
+ "niveau_appli": "CM2",
+ "age": "10-11 ans",
+ "matiere": "Français",
+ "code": "FR",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Lecture",
+   "titre": "Comprendre l’implicite",
+   "emoji": "🔎",
+   "en_une_phrase": "Pour comprendre ce qui n’est pas dit, relie les indices à tes connaissances.",
+   "comprendre": "Un récit ne dit pas toujours directement ce que ressent un personnage. Comme un détective, tu rassembles les indices du texte. Tu proposes une explication qui respecte ces indices.",
+   "essentiel": [
+    "L’implicite est ce que le texte laisse comprendre sans le dire directement.",
+    "Un indice est un détail présent dans le texte.",
+    "Une interprétation doit être justifiée."
+   ],
+   "image_mentale": "Imagine une loupe qui relie plusieurs indices.",
+   "regle_ou_methode": "Relève les indices puis explique ce qu’ils permettent de déduire.",
+   "exemples": [
+    "« Lina tremble et serre son manteau. » Les indices sont tremble et manteau. On peut déduire qu’elle a froid.",
+    "« Le sol est mouillé et les parapluies sont ouverts. » On peut déduire qu’il pleut ou vient de pleuvoir."
+   ],
+   "piege": "N’invente pas une explication qui contredit les indices.",
+   "astuce_memoire": "Indices + connaissances = déduction.",
+   "quiz": [
+    {
+     "q": "« Il bâille et ferme les yeux. » Que peut-on déduire ?",
+     "choix": [
+      "Il nage dans la mer",
+      "Il est probablement fatigué",
+      "Il est certainement en colère"
+     ],
+     "rep": "Il est probablement fatigué",
+     "expl": "Bâiller et fermer les yeux suggèrent la fatigue."
+    },
+    {
+     "q": "À quoi sert un indice ?",
+     "choix": [
+      "À changer le texte",
+      "À remplacer toute lecture",
+      "À justifier une déduction"
+     ],
+     "rep": "À justifier une déduction",
+     "expl": "Un indice appuie une interprétation."
+    },
+    {
+     "q": "« Le sol est mouillé et des parapluies sont ouverts. » Quelle explication convient ?",
+     "choix": [
+      "Il pleut ou vient de pleuvoir",
+      "Il neige forcément dans la classe",
+      "Le sol est nécessairement sec"
+     ],
+     "rep": "Il pleut ou vient de pleuvoir",
+     "expl": "Les deux indices rendent la pluie plausible."
+    }
+   ],
+   "id": "REV-FR-CM2-01"
+  },
+  {
+   "axe": "Lecture",
+   "titre": "Suivre les personnages",
+   "emoji": "🧩",
+   "en_une_phrase": "Les pronoms et groupes nominaux peuvent désigner une personne déjà nommée.",
+   "comprendre": "Dans une histoire, répéter toujours le même nom serait lourd. L’auteur utilise des mots de remplacement. Pour comprendre, tu cherches à qui ils renvoient.",
+   "essentiel": [
+    "Un pronom peut remplacer un groupe nominal.",
+    "Le sens de la phrase aide à retrouver la personne désignée.",
+    "Il faut vérifier que le remplacement rend la phrase cohérente."
+   ],
+   "image_mentale": "Imagine une flèche du pronom vers le personnage nommé avant.",
+   "regle_ou_methode": "Repère le mot de remplacement et teste la personne qu’il désigne.",
+   "exemples": [
+    "« La tortue avance. Elle traverse le chemin. » Elle remplace la tortue. La tortue traverse donc le chemin.",
+    "« Les enfants rient. Ils jouent. » Ils désigne les enfants."
+   ],
+   "piege": "Un pronom ne renvoie pas toujours au nom le plus proche : vérifie le sens.",
+   "astuce_memoire": "Je relie le pronom à ce qu’il remplace.",
+   "quiz": [
+    {
+     "q": "« La chatte dort. Elle rêve. » Qui rêve ?",
+     "choix": [
+      "La chaise",
+      "La voisine",
+      "La chatte"
+     ],
+     "rep": "La chatte",
+     "expl": "Elle désigne la chatte."
+    },
+    {
+     "q": "« Les enfants lisent. Ils sourient. » Qui sourit ?",
+     "choix": [
+      "Les enfants",
+      "Le livre",
+      "Le tableau"
+     ],
+     "rep": "Les enfants",
+     "expl": "Ils reprend les enfants."
+    },
+    {
+     "q": "Que vérifies-tu pour retrouver un personnage ?",
+     "choix": [
+      "La couleur de la page seulement",
+      "Le sens et les mots de la phrase",
+      "Le nombre de lignes uniquement"
+     ],
+     "rep": "Le sens et les mots de la phrase",
+     "expl": "Le contexte permet de vérifier le remplacement."
+    }
+   ],
+   "id": "REV-FR-CM2-02"
+  },
+  {
+   "axe": "Culture littéraire et artistique",
+   "titre": "Comprendre une morale",
+   "emoji": "📖",
+   "en_une_phrase": "Une morale invite à réfléchir à une conduite ou à une situation.",
+   "comprendre": "Dans certaines histoires, les actes des personnages ont des conséquences. Le lecteur peut en tirer une leçon. Cette leçon peut être écrite ou suggérée.",
+   "essentiel": [
+    "Une morale peut être explicite ou implicite.",
+    "Les actions et leurs conséquences donnent des indices.",
+    "Une même histoire peut susciter une discussion."
+   ],
+   "image_mentale": "Imagine une chaîne entre un choix et sa conséquence.",
+   "regle_ou_methode": "Repère le choix, sa conséquence et la leçon possible.",
+   "exemples": [
+    "Un personnage ment et ses amis ne le croient plus. Le lien entre mensonge et perte de confiance suggère une leçon.",
+    "Un personnage partage son repas avec un camarade : l’histoire peut faire réfléchir à l’entraide."
+   ],
+   "piege": "Une morale ne se réduit pas au résumé des actions.",
+   "astuce_memoire": "Action, conséquence, réflexion.",
+   "quiz": [
+    {
+     "q": "Que fait une morale ?",
+     "choix": [
+      "Elle invite à réfléchir à une conduite",
+      "Elle indique seulement la date",
+      "Elle décrit une carte routière"
+     ],
+     "rep": "Elle invite à réfléchir à une conduite",
+     "expl": "La morale propose une réflexion sur une situation."
+    },
+    {
+     "q": "Où chercher une morale implicite ?",
+     "choix": [
+      "Seulement dans le titre",
+      "Dans les actions et leurs conséquences",
+      "Dans la couleur du papier"
+     ],
+     "rep": "Dans les actions et leurs conséquences",
+     "expl": "Le récit peut suggérer une leçon par les événements."
+    },
+    {
+     "q": "Un mensonge détruit la confiance. Quelle leçon est plausible ?",
+     "choix": [
+      "Les arbres poussent sous la mer",
+      "Il faut toujours arriver en retard",
+      "Mentir peut abîmer la confiance"
+     ],
+     "rep": "Mentir peut abîmer la confiance",
+     "expl": "La conséquence du mensonge concerne la confiance."
+    }
+   ],
+   "id": "REV-FR-CM2-03"
+  },
+  {
+   "axe": "Écriture",
+   "titre": "Organiser un récit",
+   "emoji": "✍️",
+   "en_une_phrase": "Un récit devient plus clair lorsque ses événements suivent un ordre compréhensible.",
+   "comprendre": "Avant d’écrire, tu peux imaginer le début, le problème et la fin. Des mots de liaison aident le lecteur à suivre le temps. Relire permet de corriger les oublis.",
+   "essentiel": [
+    "Prépare les personnages et le lieu.",
+    "Organise les événements dans un ordre.",
+    "Utilise des mots comme puis et enfin."
+   ],
+   "image_mentale": "Imagine trois cases : début, événement, fin.",
+   "regle_ou_methode": "Note les étapes, rédige puis relis.",
+   "exemples": [
+    "Une élève perd sa clé. Puis elle cherche sous le banc. Enfin elle la retrouve : les étapes sont ordonnées.",
+    "Un début présente un personnage ; la suite raconte ce qui lui arrive."
+   ],
+   "piege": "N’ajoute pas enfin avant une action qui vient en premier.",
+   "astuce_memoire": "Je prépare, j’écris, je relis.",
+   "quiz": [
+    {
+     "q": "Quel mot annonce souvent la dernière étape ?",
+     "choix": [
+      "D’abord",
+      "Enfin",
+      "Hier uniquement"
+     ],
+     "rep": "Enfin",
+     "expl": "Enfin introduit souvent la dernière étape."
+    },
+    {
+     "q": "Que faire avant de rédiger ?",
+     "choix": [
+      "Effacer toutes les idées",
+      "Choisir une fin sans début nécessairement",
+      "Préparer les étapes"
+     ],
+     "rep": "Préparer les étapes",
+     "expl": "Un plan simple aide à organiser le récit."
+    },
+    {
+     "q": "Quel ordre convient ?",
+     "choix": [
+      "Perdre la clé, chercher, retrouver",
+      "Retrouver, perdre, chercher",
+      "Chercher, retrouver, perdre"
+     ],
+     "rep": "Perdre la clé, chercher, retrouver",
+     "expl": "La recherche suit la perte et précède la découverte."
+    }
+   ],
+   "id": "REV-FR-CM2-04"
+  },
+  {
+   "axe": "Oral",
+   "titre": "Expliquer à l’oral",
+   "emoji": "🗣️",
+   "en_une_phrase": "Pour être compris, organise ton explication et parle clairement.",
+   "comprendre": "Quand tu expliques une idée, les autres ne voient pas ce que tu penses. Une phrase d’annonce puis un exemple rendent ton propos plus facile à suivre. Écouter les questions permet de préciser.",
+   "essentiel": [
+    "Annonce le sujet.",
+    "Donne une explication et un exemple.",
+    "Parle assez distinctement et écoute les questions."
+   ],
+   "image_mentale": "Imagine un panneau avec une idée puis un exemple.",
+   "regle_ou_methode": "Annonce, explique, illustre puis réponds aux questions.",
+   "exemples": [
+    "Pour expliquer le tri, annonce le sujet. Montre ensuite dans quel bac va une bouteille. Termine en vérifiant que l’auditoire a compris.",
+    "Si une question reste floue, reformule ton explication."
+   ],
+   "piege": "Parler vite ne garantit pas que les autres comprennent.",
+   "astuce_memoire": "Une idée claire, un exemple, une réponse.",
+   "quiz": [
+    {
+     "q": "Que donne un exemple ?",
+     "choix": [
+      "Une raison de ne pas écouter",
+      "Un bruit inutile",
+      "Une illustration de l’idée"
+     ],
+     "rep": "Une illustration de l’idée",
+     "expl": "Un exemple rend l’idée plus concrète."
+    },
+    {
+     "q": "Que faire si une personne ne comprend pas ?",
+     "choix": [
+      "Reformuler",
+      "Parler sans pause plus vite",
+      "Ignorer sa question"
+     ],
+     "rep": "Reformuler",
+     "expl": "Reformuler peut éclaircir le propos."
+    },
+    {
+     "q": "Quel ordre facilite l’écoute ?",
+     "choix": [
+      "Illustrer sans sujet puis partir",
+      "Annoncer, expliquer, illustrer",
+      "Répéter un mot sans expliquer"
+     ],
+     "rep": "Annoncer, expliquer, illustrer",
+     "expl": "Cet ordre organise le propos."
+    }
+   ],
+   "id": "REV-FR-CM2-05"
+  },
+  {
+   "axe": "Vocabulaire",
+   "titre": "Les familles de mots",
+   "emoji": "🌱",
+   "en_une_phrase": "Des mots de la même famille partagent une base et une idée commune.",
+   "comprendre": "Comme les membres d’une famille, certains mots se ressemblent et sont liés par le sens. Un préfixe ou un suffixe peut former un nouveau mot. La ressemblance seule ne suffit pas : vérifie aussi le sens.",
+   "essentiel": [
+    "Le radical est une base commune.",
+    "Un préfixe se place avant la base.",
+    "Un suffixe se place après la base."
+   ],
+   "image_mentale": "Imagine un tronc commun et plusieurs branches de mots.",
+   "regle_ou_methode": "Repère la base commune puis vérifie le lien de sens.",
+   "exemples": [
+    "Chanter, chanteur et chanson évoquent le chant. Ils appartiennent à une même famille.",
+    "Dans refaire, re- est placé avant faire et indique ici une répétition."
+   ],
+   "piege": "Des mots qui se ressemblent sans lien de sens ne forment pas forcément une famille.",
+   "astuce_memoire": "Une base et une idée communes.",
+   "quiz": [
+    {
+     "q": "Quel mot appartient à la famille de chanter ?",
+     "choix": [
+      "Chanteur",
+      "Chapeau",
+      "Chat"
+     ],
+     "rep": "Chanteur",
+     "expl": "Chanteur est lié au chant."
+    },
+    {
+     "q": "Où se place un préfixe ?",
+     "choix": [
+      "Après le point final",
+      "Avant la base",
+      "Au hasard dans une autre phrase"
+     ],
+     "rep": "Avant la base",
+     "expl": "Un préfixe précède la base."
+    },
+    {
+     "q": "Que signifie refaire ici ?",
+     "choix": [
+      "Ne jamais faire",
+      "Faire hier uniquement",
+      "Faire de nouveau"
+     ],
+     "rep": "Faire de nouveau",
+     "expl": "Le préfixe re- indique ici la répétition."
+    }
+   ],
+   "id": "REV-FR-CM2-06"
+  },
+  {
+   "axe": "Vocabulaire",
+   "titre": "Le sens d’un mot selon le contexte",
+   "emoji": "🧠",
+   "en_une_phrase": "Un même mot peut avoir plusieurs sens selon la phrase.",
+   "comprendre": "Tu connais des mots utilisés dans des situations différentes. Pour trouver leur sens, observe les mots autour. Le dictionnaire propose plusieurs définitions parmi lesquelles choisir.",
+   "essentiel": [
+    "Un mot peut avoir plusieurs sens.",
+    "Le contexte aide à choisir le bon sens.",
+    "Un dictionnaire présente des définitions."
+   ],
+   "image_mentale": "Imagine plusieurs chemins qui partent d’un même mot.",
+   "regle_ou_methode": "Lis la phrase entière puis choisis le sens qui convient.",
+   "exemples": [
+    "« La souris mange du fromage. » Ici, souris désigne un animal.",
+    "« La souris déplace le curseur. » Ici, souris désigne un accessoire d’ordinateur."
+   ],
+   "piege": "Ne choisis pas toujours le premier sens connu.",
+   "astuce_memoire": "Un mot, plusieurs sens : le contexte décide.",
+   "quiz": [
+    {
+     "q": "Dans « la souris mange », que désigne souris ?",
+     "choix": [
+      "Un accessoire informatique",
+      "Un animal",
+      "Une couleur"
+     ],
+     "rep": "Un animal",
+     "expl": "Le verbe mange indique ici l’animal."
+    },
+    {
+     "q": "Dans « la souris déplace le curseur », de quoi parle-t-on ?",
+     "choix": [
+      "D’un fruit",
+      "D’un animal qui cuisine",
+      "D’un accessoire informatique"
+     ],
+     "rep": "D’un accessoire informatique",
+     "expl": "Le curseur indique l’accessoire informatique."
+    },
+    {
+     "q": "Que faut-il lire pour choisir le sens ?",
+     "choix": [
+      "La phrase entière",
+      "Le mot isolé seulement",
+      "La dernière lettre uniquement"
+     ],
+     "rep": "La phrase entière",
+     "expl": "Le contexte apporte les indices nécessaires."
+    }
+   ],
+   "id": "REV-FR-CM2-07"
+  },
+  {
+   "axe": "Grammaire et orthographe grammaticale",
+   "titre": "Sujet et verbe",
+   "emoji": "🔗",
+   "en_une_phrase": "Le verbe s’accorde avec son sujet, même si plusieurs mots les séparent.",
+   "comprendre": "Dans une phrase, le sujet indique de qui ou de quoi on parle. Le verbe change selon ce sujet. Comme un lien entre deux wagons, l’accord relie le sujet à son verbe.",
+   "essentiel": [
+    "Le sujet commande l’accord du verbe.",
+    "Un groupe sujet peut contenir plusieurs mots.",
+    "Un complément peut séparer le sujet et le verbe."
+   ],
+   "image_mentale": "Imagine une flèche qui relie le groupe sujet au verbe.",
+   "regle_ou_methode": "Repère le verbe, demande qui fait l’action puis accorde.",
+   "exemples": [
+    "« Les enfants de la voisine jouent. » Qui joue ? Les enfants. Le sujet est pluriel : on écrit jouent.",
+    "« Le chat des voisins dort. » Le sujet est le chat, singulier : dort."
+   ],
+   "piege": "N’accorde pas le verbe automatiquement avec le nom le plus proche.",
+   "astuce_memoire": "Je cherche le sujet entier.",
+   "quiz": [
+    {
+     "q": "« Les enfants du voisin … » Quelle forme convient ?",
+     "choix": [
+      "joue",
+      "joues",
+      "jouent"
+     ],
+     "rep": "jouent",
+     "expl": "Le sujet les enfants est pluriel."
+    },
+    {
+     "q": "« Le chat des voisins … » Quelle forme convient ?",
+     "choix": [
+      "dort",
+      "dorment",
+      "dormons"
+     ],
+     "rep": "dort",
+     "expl": "Le sujet le chat est singulier."
+    },
+    {
+     "q": "Que cherche-t-on pour accorder le verbe ?",
+     "choix": [
+      "Le mot le plus long",
+      "Son sujet",
+      "Le dernier mot seulement"
+     ],
+     "rep": "Son sujet",
+     "expl": "Le verbe s’accorde avec son sujet."
+    }
+   ],
+   "id": "REV-FR-CM2-08"
+  },
+  {
+   "axe": "Grammaire et orthographe grammaticale",
+   "titre": "Les compléments du verbe",
+   "emoji": "🎯",
+   "en_une_phrase": "Un complément du verbe précise ce qui est concerné par l’action.",
+   "comprendre": "Tu sais repérer le verbe et son sujet. Certains verbes sont accompagnés d’un complément qui dépend d’eux. Ce complément peut être relié directement au verbe ou par une préposition.",
+   "essentiel": [
+    "Le COD est relié directement au verbe.",
+    "Le COI est introduit par une préposition.",
+    "Le complément dépend du verbe."
+   ],
+   "image_mentale": "Imagine une flèche du verbe vers son complément.",
+   "regle_ou_methode": "Repère le verbe et observe comment son complément est relié.",
+   "exemples": [
+    "« Léa range son livre. » Elle range quoi ? Son livre : ce groupe est un COD.",
+    "« Léa parle à son ami. » Le groupe à son ami est relié au verbe par à : c’est un COI."
+   ],
+   "piege": "Ne confonds pas le complément avec le sujet qui commande le verbe.",
+   "astuce_memoire": "Direct sans préposition ; indirect avec préposition.",
+   "quiz": [
+    {
+     "q": "Dans « Léa range son livre », quel groupe est COD ?",
+     "choix": [
+      "Son livre",
+      "Léa",
+      "Range"
+     ],
+     "rep": "Son livre",
+     "expl": "Son livre complète directement le verbe range."
+    },
+    {
+     "q": "Dans « Léa parle à son ami », quel groupe est COI ?",
+     "choix": [
+      "Léa",
+      "À son ami",
+      "Parle"
+     ],
+     "rep": "À son ami",
+     "expl": "À son ami complète le verbe avec la préposition à."
+    },
+    {
+     "q": "Quel mot introduit le COI dans « elle pense à son ami » ?",
+     "choix": [
+      "Elle",
+      "Pense",
+      "À"
+     ],
+     "rep": "À",
+     "expl": "La préposition à relie ici le complément au verbe."
+    }
+   ],
+   "id": "REV-FR-CM2-09"
+  },
+  {
+   "axe": "Grammaire et orthographe grammaticale",
+   "titre": "Les compléments circonstanciels",
+   "emoji": "📍",
+   "en_une_phrase": "Un complément circonstanciel précise notamment le lieu, le temps ou la cause.",
+   "comprendre": "Une phrase peut indiquer où, quand ou pourquoi une action se produit. Certains groupes peuvent être déplacés ou supprimés sans rendre la phrase de base incorrecte. Ces manipulations aident à les repérer.",
+   "essentiel": [
+    "Un complément circonstanciel de lieu indique où.",
+    "Un complément circonstanciel de temps indique quand.",
+    "Un complément circonstanciel de cause indique pourquoi."
+   ],
+   "image_mentale": "Imagine une scène avec des étiquettes où, quand et pourquoi.",
+   "regle_ou_methode": "Repère le groupe puis essaie de le déplacer ou de le supprimer.",
+   "exemples": [
+    "« Demain, Lina part. » Demain indique quand. On peut écrire « Lina part demain ».",
+    "« Lina joue dans le jardin. » Dans le jardin indique où elle joue."
+   ],
+   "piege": "Le déplacement et la suppression sont des indices, à vérifier avec le sens.",
+   "astuce_memoire": "Où ? Quand ? Pourquoi ?",
+   "quiz": [
+    {
+     "q": "Dans « Demain, Lina part », quel groupe indique le temps ?",
+     "choix": [
+      "Lina",
+      "Demain",
+      "Part"
+     ],
+     "rep": "Demain",
+     "expl": "Demain indique quand elle part."
+    },
+    {
+     "q": "Dans « Elle joue dans le jardin », quel groupe indique le lieu ?",
+     "choix": [
+      "Elle",
+      "Joue",
+      "Dans le jardin"
+     ],
+     "rep": "Dans le jardin",
+     "expl": "Dans le jardin indique où elle joue."
+    },
+    {
+     "q": "Quel déplacement conserve le sens de « Demain, Lina part » ?",
+     "choix": [
+      "Lina part demain.",
+      "Demain part Lina le jardin.",
+      "Part demain est une maison."
+     ],
+     "rep": "Lina part demain.",
+     "expl": "Le complément de temps peut être placé après le verbe."
+    }
+   ],
+   "id": "REV-FR-CM2-10"
+  },
+  {
+   "axe": "Grammaire et orthographe grammaticale",
+   "titre": "Le groupe nominal et ses accords",
+   "emoji": "🧵",
+   "en_une_phrase": "Dans le groupe nominal, les déterminants et adjectifs s’accordent avec le nom.",
+   "comprendre": "Le nom donne le genre et le nombre du groupe nominal. Les mots qui l’accompagnent portent souvent des marques correspondantes. Pour vérifier, pars du nom puis observe ses compagnons.",
+   "essentiel": [
+    "Le déterminant accompagne le nom.",
+    "L’adjectif décrit le nom.",
+    "Les marques varient selon le genre et le nombre."
+   ],
+   "image_mentale": "Imagine le nom comme le chef d’une petite équipe.",
+   "regle_ou_methode": "Repère le nom, son genre et son nombre puis accorde les mots liés.",
+   "exemples": [
+    "« Une petite chatte noire » : chatte est féminin singulier. Petite et noire prennent les marques correspondantes.",
+    "« Des petits chats noirs » : chats est masculin pluriel ; petits et noirs portent le pluriel."
+   ],
+   "piege": "La lettre finale ne s’entend pas toujours : vérifie les accords à l’écrit.",
+   "astuce_memoire": "Je pars du nom et j’accorde autour.",
+   "quiz": [
+    {
+     "q": "Quelle forme convient ?",
+     "choix": [
+      "Des petit maison",
+      "Un petites maisons",
+      "Des petites maisons"
+     ],
+     "rep": "Des petites maisons",
+     "expl": "Maisons est féminin pluriel : petites et des conviennent."
+    },
+    {
+     "q": "Quel mot est le nom dans « les grands arbres » ?",
+     "choix": [
+      "Arbres",
+      "Grands",
+      "Les"
+     ],
+     "rep": "Arbres",
+     "expl": "Arbres est le nom du groupe."
+    },
+    {
+     "q": "Quelle forme convient au singulier féminin ?",
+     "choix": [
+      "Une chat noirs",
+      "Une chatte noire",
+      "Des chatte noir"
+     ],
+     "rep": "Une chatte noire",
+     "expl": "Chatte est féminin singulier comme une et noire."
+    }
+   ],
+   "id": "REV-FR-CM2-11"
+  },
+  {
+   "axe": "Grammaire et orthographe grammaticale",
+   "titre": "Phrase simple et phrase complexe",
+   "emoji": "🧱",
+   "en_une_phrase": "Une phrase peut contenir un seul verbe conjugué ou plusieurs.",
+   "comprendre": "Une phrase simple contient un verbe conjugué. Une phrase complexe en contient plusieurs. Les verbes t’aident à repérer les propositions.",
+   "essentiel": [
+    "Une phrase simple possède un verbe conjugué.",
+    "Une phrase complexe possède plusieurs verbes conjugués.",
+    "Les propositions peuvent être reliées par un mot ou une ponctuation."
+   ],
+   "image_mentale": "Imagine une phrase comme un train avec une ou plusieurs parties.",
+   "regle_ou_methode": "Entoure les verbes conjugués et compte-les.",
+   "exemples": [
+    "« Le vent souffle. » Souffle est le seul verbe conjugué : la phrase est simple.",
+    "« Le vent souffle et la pluie tombe. » Souffle et tombe sont conjugués : la phrase est complexe."
+   ],
+   "piege": "Un infinitif ne compte pas comme un verbe conjugué.",
+   "astuce_memoire": "Je compte les verbes conjugués.",
+   "quiz": [
+    {
+     "q": "Combien de verbes conjugués dans « Le vent souffle » ?",
+     "choix": [
+      "Un",
+      "Deux",
+      "Trois"
+     ],
+     "rep": "Un",
+     "expl": "Souffle est le seul verbe conjugué."
+    },
+    {
+     "q": "Quelle phrase est complexe ?",
+     "choix": [
+      "Le vent souffle.",
+      "Le vent souffle et la pluie tombe.",
+      "Le grand vent froid."
+     ],
+     "rep": "Le vent souffle et la pluie tombe.",
+     "expl": "Elle contient souffle et tombe."
+    },
+    {
+     "q": "« Je veux partir. » Combien de verbes conjugués ?",
+     "choix": [
+      "Deux",
+      "Aucun",
+      "Un"
+     ],
+     "rep": "Un",
+     "expl": "Veux est conjugué ; partir est à l’infinitif."
+    }
+   ],
+   "id": "REV-FR-CM2-12"
+  },
+  {
+   "axe": "Grammaire et orthographe grammaticale",
+   "titre": "Le présent de l’indicatif",
+   "emoji": "⏱️",
+   "en_une_phrase": "Au présent, la terminaison du verbe dépend de son sujet.",
+   "comprendre": "Tu sais que le verbe change selon la personne. Le présent peut servir à parler de ce qui se passe maintenant ou de ce qui est habituel. Des terminaisons régulières aident à écrire les verbes.",
+   "essentiel": [
+    "Le sujet indique la personne et le nombre.",
+    "Pour chanter : je chante, nous chantons, ils chantent.",
+    "Certains verbes ont des formes particulières, comme être et avoir."
+   ],
+   "image_mentale": "Imagine une étiquette de personne attachée à la terminaison.",
+   "regle_ou_methode": "Repère l’infinitif et le sujet puis choisis la forme.",
+   "exemples": [
+    "« Nous chantons. » Le sujet est nous ; la terminaison est -ons.",
+    "« Ils ont un ballon. » Avoir au présent avec ils s’écrit ont."
+   ],
+   "piege": "Ne confonds pas « ils ont » avec « on ».",
+   "astuce_memoire": "Nous chantons ; ils chantent.",
+   "quiz": [
+    {
+     "q": "Quelle forme convient avec nous ?",
+     "choix": [
+      "Nous chante",
+      "Nous chantons",
+      "Nous chantent"
+     ],
+     "rep": "Nous chantons",
+     "expl": "Avec nous, chanter prend -ons."
+    },
+    {
+     "q": "Quelle forme convient ?",
+     "choix": [
+      "Ils a",
+      "Ils as",
+      "Ils ont"
+     ],
+     "rep": "Ils ont",
+     "expl": "Avoir au présent donne ils ont."
+    },
+    {
+     "q": "Dans « chaque matin, elle lit », le présent exprime ici…",
+     "choix": [
+      "Une habitude",
+      "Une action forcément future",
+      "Un ordre à plusieurs personnes"
+     ],
+     "rep": "Une habitude",
+     "expl": "Chaque matin indique une habitude."
+    }
+   ],
+   "id": "REV-FR-CM2-13"
+  },
+  {
+   "axe": "Grammaire et orthographe grammaticale",
+   "titre": "Imparfait et futur",
+   "emoji": "⌛",
+   "en_une_phrase": "L’imparfait situe une action dans le passé ; le futur la situe dans l’avenir.",
+   "comprendre": "Tu peux raconter hier ou parler de demain. L’imparfait utilise notamment les terminaisons -ais, -ait et -aient. Au futur, pour les verbes comme jouer, on garde l’infinitif et on ajoute des terminaisons comme -ai ou -ons : je jouerai, nous jouerons.",
+   "essentiel": [
+    "L’imparfait situe une action passée.",
+    "Le futur situe une action à venir.",
+    "Le sujet commande la terminaison."
+   ],
+   "image_mentale": "Imagine une frise : hier à gauche, demain à droite.",
+   "regle_ou_methode": "Repère le moment puis choisis le temps et la personne.",
+   "exemples": [
+    "Hier, nous jouions : jouions est à l’imparfait.",
+    "Demain, nous jouerons : jouerons est au futur."
+   ],
+   "piege": "Ne confonds pas je jouais avec je jouerai.",
+   "astuce_memoire": "Hier : jouais ; demain : jouerai.",
+   "quiz": [
+    {
+     "q": "Quelle forme convient pour demain ?",
+     "choix": [
+      "Nous jouions",
+      "Nous jouons hier",
+      "Nous jouerons"
+     ],
+     "rep": "Nous jouerons",
+     "expl": "Jouerons est au futur."
+    },
+    {
+     "q": "Quelle forme est à l’imparfait ?",
+     "choix": [
+      "Elle chantait",
+      "Elle chantera",
+      "Elle chante demain"
+     ],
+     "rep": "Elle chantait",
+     "expl": "Chantait est à l’imparfait."
+    },
+    {
+     "q": "Quelle phrase convient avec hier ?",
+     "choix": [
+      "Je jouerai hier.",
+      "Je jouais hier.",
+      "Je jouerons hier."
+     ],
+     "rep": "Je jouais hier.",
+     "expl": "Jouais situe ici l’action dans le passé."
+    }
+   ],
+   "id": "REV-FR-CM2-14"
+  },
+  {
+   "axe": "Grammaire et orthographe grammaticale",
+   "titre": "Le passé composé",
+   "emoji": "🕰️",
+   "en_une_phrase": "Le passé composé associe un auxiliaire au présent et un participe passé.",
+   "comprendre": "Pour raconter un événement passé, tu peux utiliser une forme en deux mots. L’auxiliaire est être ou avoir. Le deuxième mot est le participe passé.",
+   "essentiel": [
+    "Le passé composé est un temps composé.",
+    "Il utilise être ou avoir comme auxiliaire.",
+    "Avec être, le participe passé s’accorde généralement avec le sujet."
+   ],
+   "image_mentale": "Imagine deux pièces assemblées : auxiliaire et participe passé.",
+   "regle_ou_methode": "Trouve l’auxiliaire puis le participe passé et vérifie l’accord avec être.",
+   "exemples": [
+    "« Elles sont arrivées. » Sont est l’auxiliaire être. Arrivées s’accorde au féminin pluriel avec elles.",
+    "« Nous avons joué. » Avons est l’auxiliaire avoir et joué est le participe passé."
+   ],
+   "piege": "Dans « elles sont arrivées », ne laisse pas le participe sans les marques du féminin pluriel.",
+   "astuce_memoire": "Auxiliaire + participe passé.",
+   "quiz": [
+    {
+     "q": "Quelle phrase est au passé composé ?",
+     "choix": [
+      "Nous avons joué.",
+      "Nous jouerons.",
+      "Nous jouions."
+     ],
+     "rep": "Nous avons joué.",
+     "expl": "Avons joué associe un auxiliaire et un participe passé."
+    },
+    {
+     "q": "Quelle forme convient ?",
+     "choix": [
+      "Elles sont arrivé.",
+      "Elles sont arrivées.",
+      "Elles est arrivée."
+     ],
+     "rep": "Elles sont arrivées.",
+     "expl": "Avec être, arrivées s’accorde ici avec elles."
+    },
+    {
+     "q": "Dans « il a fini », quel est l’auxiliaire ?",
+     "choix": [
+      "Fini",
+      "Il",
+      "A"
+     ],
+     "rep": "A",
+     "expl": "A est une forme de l’auxiliaire avoir."
+    }
+   ],
+   "id": "REV-FR-CM2-15"
+  }
+ ]
+}

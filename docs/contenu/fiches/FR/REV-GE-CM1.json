@@ -1,0 +1,699 @@
+{
+ "classe": "CM1",
+ "niveau_appli": "CM1",
+ "age": "9-10 ans",
+ "matiere": "Géographie",
+ "code": "GE",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Thème 1 : Se nourrir (1 ou 2 périodes au choix)",
+   "titre": "Des façons variées de se nourrir",
+   "emoji": "🍲",
+   "en_une_phrase": "Les habitudes alimentaires varient selon les lieux et les personnes.",
+   "comprendre": "Les repas ne se composent pas partout des mêmes aliments. Les produits disponibles, les traditions et les moyens des familles jouent un rôle. Dans un même pays, les pratiques sont elles aussi diverses.",
+   "essentiel": [
+    "Les habitudes varient entre les régions et les familles.",
+    "Les ressources et les traditions influencent les repas.",
+    "On ne peut pas décrire tous les habitants d’un pays par un seul repas."
+   ],
+   "image_mentale": "Imagine plusieurs tables avec des plats différents.",
+   "regle_ou_methode": "Compare les ingrédients et cherche ce qui peut expliquer leurs différences.",
+   "exemples": [
+    "Une famille prépare du riz et des légumes ; une autre mange du pain et du fromage. Leurs repas sont différents.",
+    "Deux familles d’une même ville peuvent aussi manger des plats différents."
+   ],
+   "piege": "Ne suppose pas que tout un pays mange toujours la même chose.",
+   "astuce_memoire": "Diversité entre les pays et à l’intérieur des pays.",
+   "quiz": [
+    {
+     "q": "Les repas sont-ils identiques partout ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement le soir"
+     ],
+     "rep": "Non",
+     "expl": "Les habitudes alimentaires sont diverses."
+    },
+    {
+     "q": "Qu’est-ce qui peut influencer un repas ?",
+     "choix": [
+      "La couleur du cahier",
+      "Le nom de la planète",
+      "Les produits disponibles"
+     ],
+     "rep": "Les produits disponibles",
+     "expl": "La disponibilité des produits influence les choix."
+    },
+    {
+     "q": "Deux familles d’une même ville peuvent-elles manger différemment ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement si elles vivent sur deux continents"
+     ],
+     "rep": "Oui",
+     "expl": "Les pratiques varient aussi dans un même lieu."
+    }
+   ],
+   "id": "REV-GE-CM1-01"
+  },
+  {
+   "axe": "Thème 1 : Se nourrir (1 ou 2 périodes au choix)",
+   "titre": "Du produit agricole à l’aliment",
+   "emoji": "🌾",
+   "en_une_phrase": "Un produit agricole peut être transformé avant d’être consommé.",
+   "comprendre": "Certains aliments sont récoltés puis consommés presque directement. D’autres passent par plusieurs étapes de fabrication. Le blé, par exemple, peut devenir de la farine puis du pain.",
+   "essentiel": [
+    "Un produit agricole provient de l’agriculture ou de l’élevage.",
+    "Un produit transformé a subi une ou plusieurs opérations.",
+    "La transformation peut changer la forme ou mélanger des ingrédients."
+   ],
+   "image_mentale": "Imagine du blé, de la farine et une miche de pain.",
+   "regle_ou_methode": "Repère le produit de départ et classe les étapes dans l’ordre.",
+   "exemples": [
+    "On récolte du blé, on le moud en farine, puis on fabrique du pain. Le pain est un produit transformé.",
+    "Une pomme récoltée et mangée telle quelle est un produit agricole : elle n’est pas transformée."
+   ],
+   "piege": "Le pain ne pousse pas directement dans un champ.",
+   "astuce_memoire": "Blé, farine, pain.",
+   "quiz": [
+    {
+     "q": "Quel produit peut être fabriqué à partir du blé ?",
+     "choix": [
+      "Le verre",
+      "Le fer",
+      "La farine"
+     ],
+     "rep": "La farine",
+     "expl": "On moud le blé pour obtenir de la farine."
+    },
+    {
+     "q": "Quel produit est transformé ?",
+     "choix": [
+      "Le pain",
+      "Une pomme tout juste cueillie",
+      "Un épi encore dans le champ"
+     ],
+     "rep": "Le pain",
+     "expl": "Le pain résulte de plusieurs étapes de fabrication."
+    },
+    {
+     "q": "Quel ordre est correct ?",
+     "choix": [
+      "Pain, blé, farine",
+      "Blé, farine, pain",
+      "Farine, champ, blé"
+     ],
+     "rep": "Blé, farine, pain",
+     "expl": "On récolte le blé, on le moud puis on fabrique le pain."
+    }
+   ],
+   "id": "REV-GE-CM1-02"
+  },
+  {
+   "axe": "Thème 1 : Se nourrir (1 ou 2 périodes au choix)",
+   "titre": "Le trajet d’un aliment",
+   "emoji": "🥛",
+   "en_une_phrase": "Un aliment peut parcourir plusieurs étapes entre production et consommation.",
+   "comprendre": "Pour manger un yaourt, il faut d’abord produire du lait. Le lait est ensuite transformé et le yaourt est distribué. Chaque étape mobilise des personnes et parfois des transports.",
+   "essentiel": [
+    "La production fournit la matière première.",
+    "La transformation fabrique l’aliment.",
+    "La distribution permet d’acheminer et de vendre le produit."
+   ],
+   "image_mentale": "Imagine une ferme, un atelier puis un magasin.",
+   "regle_ou_methode": "Suis le produit depuis son origine jusqu’au repas.",
+   "exemples": [
+    "Une ferme produit du lait. Une laiterie le transforme en yaourt. Un magasin vend le yaourt.",
+    "Un fruit peut être récolté, transporté puis vendu avant d’être mangé."
+   ],
+   "piege": "Le magasin ne produit pas nécessairement les aliments qu’il vend.",
+   "astuce_memoire": "Produire, transformer si nécessaire, distribuer, consommer.",
+   "quiz": [
+    {
+     "q": "Quel produit sert à fabriquer un yaourt ?",
+     "choix": [
+      "Le lait",
+      "Le sable",
+      "Le bois"
+     ],
+     "rep": "Le lait",
+     "expl": "Le yaourt est fabriqué à partir de lait."
+    },
+    {
+     "q": "Quelle étape vient après la fabrication et avant l’achat ?",
+     "choix": [
+      "La naissance du Soleil",
+      "La distribution",
+      "La culture du métal"
+     ],
+     "rep": "La distribution",
+     "expl": "La distribution achemine le produit vers les lieux de vente."
+    },
+    {
+     "q": "Que fait la ferme dans cet exemple ?",
+     "choix": [
+      "Elle imprime la monnaie",
+      "Elle conduit une fusée",
+      "Elle produit le lait"
+     ],
+     "rep": "Elle produit le lait",
+     "expl": "La ferme fournit la matière première."
+    }
+   ],
+   "id": "REV-GE-CM1-03"
+  },
+  {
+   "axe": "Thème 1 : Se nourrir (1 ou 2 périodes au choix)",
+   "titre": "La sous-nutrition",
+   "emoji": "🍚",
+   "en_une_phrase": "Certaines personnes n’ont pas assez à manger de façon durable.",
+   "comprendre": "Dans le monde, l’accès à une alimentation suffisante est inégal. La pauvreté, les conflits ou les catastrophes peuvent rendre l’approvisionnement difficile. La sous-nutrition désigne une alimentation insuffisante en quantité sur la durée.",
+   "essentiel": [
+    "La sous-nutrition concerne un manque durable de nourriture suffisante.",
+    "Ses causes peuvent être multiples.",
+    "Elle peut affecter la santé et la croissance."
+   ],
+   "image_mentale": "Imagine une famille qui ne peut pas obtenir assez de nourriture chaque jour.",
+   "regle_ou_methode": "Cherche les obstacles à l’accès aux aliments sans généraliser à toute une population.",
+   "exemples": [
+    "Une récolte est perdue et une famille ne peut pas acheter assez de nourriture pendant longtemps. Elle risque la sous-nutrition.",
+    "Un conflit peut perturber le transport et la vente des aliments."
+   ],
+   "piege": "Avoir faim avant un repas ne suffit pas à définir une sous-nutrition durable.",
+   "astuce_memoire": "Sous-nutrition : manque durable de nourriture suffisante.",
+   "quiz": [
+    {
+     "q": "La sous-nutrition concerne quel problème ?",
+     "choix": [
+      "Un repas pris plus tôt",
+      "Un manque durable de nourriture suffisante",
+      "Une préférence pour un fruit"
+     ],
+     "rep": "Un manque durable de nourriture suffisante",
+     "expl": "Elle désigne une alimentation insuffisante sur la durée."
+    },
+    {
+     "q": "Qu’est-ce qui peut compliquer l’accès à la nourriture ?",
+     "choix": [
+      "Une carte du monde",
+      "Un cahier neuf",
+      "Un conflit"
+     ],
+     "rep": "Un conflit",
+     "expl": "Un conflit peut perturber la production et la distribution."
+    },
+    {
+     "q": "Toutes les personnes d’un même pays ont-elles nécessairement la même alimentation ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement les jours de pluie"
+     ],
+     "rep": "Non",
+     "expl": "Les situations peuvent varier à l’intérieur d’un pays."
+    }
+   ],
+   "id": "REV-GE-CM1-04"
+  },
+  {
+   "axe": "Thème 2 : Les inégalités dans le monde (1 ou 2 périodes au choix)",
+   "titre": "Comprendre les inégalités",
+   "emoji": "⚖️",
+   "en_une_phrase": "Les conditions de vie et l’accès aux services diffèrent selon les lieux et les personnes.",
+   "comprendre": "Certaines familles disposent de davantage de ressources que d’autres. Les différences concernent aussi l’accès à l’eau, aux soins ou à l’école. Elles existent entre pays et à l’intérieur d’un même pays.",
+   "essentiel": [
+    "Une inégalité est une différence d’accès ou de situation.",
+    "Elle peut concerner les revenus ou les services.",
+    "Les situations varient aussi au sein d’un pays."
+   ],
+   "image_mentale": "Imagine deux quartiers dont les habitants n’ont pas les mêmes services proches.",
+   "regle_ou_methode": "Choisis un critère et compare des situations précises.",
+   "exemples": [
+    "Dans un quartier, une école est proche ; dans un autre, le trajet est beaucoup plus long. L’accès à l’école diffère.",
+    "Deux familles d’un même pays peuvent avoir des revenus différents."
+   ],
+   "piege": "Un pays n’a pas une seule situation identique pour tous ses habitants.",
+   "astuce_memoire": "Comparer un critère précis.",
+   "quiz": [
+    {
+     "q": "Quel exemple décrit une inégalité d’accès ?",
+     "choix": [
+      "Deux cahiers de couleurs différentes",
+      "Deux noms de rue",
+      "Une école proche ici et très éloignée ailleurs"
+     ],
+     "rep": "Une école proche ici et très éloignée ailleurs",
+     "expl": "La distance à l’école peut créer une différence d’accès."
+    },
+    {
+     "q": "Des inégalités existent-elles dans un même pays ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement entre deux planètes"
+     ],
+     "rep": "Oui",
+     "expl": "Les conditions de vie varient à l’intérieur des pays."
+    },
+    {
+     "q": "Quel critère peut-on comparer ?",
+     "choix": [
+      "La forme des lettres d’un prénom",
+      "L’accès aux soins",
+      "La couleur préférée"
+     ],
+     "rep": "L’accès aux soins",
+     "expl": "L’accès aux soins est un critère de conditions de vie."
+    }
+   ],
+   "id": "REV-GE-CM1-05"
+  },
+  {
+   "axe": "Thème 2 : Les inégalités dans le monde (1 ou 2 périodes au choix)",
+   "titre": "L’accès à l’eau potable",
+   "emoji": "🚰",
+   "en_une_phrase": "L’eau potable n’est pas accessible aussi facilement à tous.",
+   "comprendre": "L’eau potable est une eau que l’on peut boire sans danger dans les conditions prévues. Selon les lieux, elle arrive au robinet ou doit être cherchée plus loin. Les réseaux et les équipements jouent un rôle important.",
+   "essentiel": [
+    "L’eau potable est destinée à être bue sans danger.",
+    "Les réseaux ne desservent pas tous les lieux de la même manière.",
+    "Une longue distance peut rendre l’approvisionnement plus difficile."
+   ],
+   "image_mentale": "Imagine un robinet dans une maison et un point d’eau éloigné.",
+   "regle_ou_methode": "Compare la disponibilité, la qualité et la distance.",
+   "exemples": [
+    "Une famille dispose d’eau potable au robinet. Une autre marche jusqu’à un point d’eau : les conditions d’accès diffèrent.",
+    "Une eau qui paraît claire n’est pas forcément potable."
+   ],
+   "piege": "La transparence de l’eau ne prouve pas qu’elle peut être bue sans danger.",
+   "astuce_memoire": "Accès : disponibilité, distance et qualité.",
+   "quiz": [
+    {
+     "q": "Une eau transparente est-elle forcément potable ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement dans un verre"
+     ],
+     "rep": "Non",
+     "expl": "La transparence ne garantit pas la qualité de l’eau."
+    },
+    {
+     "q": "Quel équipement peut apporter l’eau à domicile ?",
+     "choix": [
+      "Une piste de danse",
+      "Un réseau de distribution",
+      "Un tableau d’école"
+     ],
+     "rep": "Un réseau de distribution",
+     "expl": "Un réseau peut alimenter les habitations."
+    },
+    {
+     "q": "Que peut rendre difficile un point d’eau éloigné ?",
+     "choix": [
+      "Le lever du Soleil",
+      "La lecture d’une carte",
+      "L’approvisionnement quotidien"
+     ],
+     "rep": "L’approvisionnement quotidien",
+     "expl": "Il faut consacrer davantage de temps au trajet."
+    }
+   ],
+   "id": "REV-GE-CM1-06"
+  },
+  {
+   "axe": "Thème 2 : Les inégalités dans le monde (1 ou 2 périodes au choix)",
+   "titre": "Se repérer dans le monde",
+   "emoji": "🗺️",
+   "en_une_phrase": "Un planisphère représente l’ensemble de la Terre à plat.",
+   "comprendre": "Pour comparer des lieux, il faut savoir les situer. Les continents et les grandes régions servent de repères. La légende explique les couleurs et les symboles utilisés sur une carte.",
+   "essentiel": [
+    "Un planisphère représente le monde à plat.",
+    "L’Afrique, l’Asie et l’Europe sont des continents.",
+    "La légende donne le sens des symboles."
+   ],
+   "image_mentale": "Imagine une carte du monde avec son titre et sa légende.",
+   "regle_ou_methode": "Lis le titre, repère le lieu et consulte la légende.",
+   "exemples": [
+    "Une carte montre des zones colorées. La légende précise ce que signifie chaque couleur : on peut alors comparer les lieux.",
+    "Le Maghreb se situe dans le nord de l’Afrique."
+   ],
+   "piege": "Une couleur ne donne pas son sens sans la légende.",
+   "astuce_memoire": "Titre, localisation, légende.",
+   "quiz": [
+    {
+     "q": "Que montre un planisphère ?",
+     "choix": [
+      "Une seule salle de classe",
+      "Le monde à plat",
+      "Une recette"
+     ],
+     "rep": "Le monde à plat",
+     "expl": "Un planisphère représente la surface terrestre à plat."
+    },
+    {
+     "q": "Où se situe le Maghreb ?",
+     "choix": [
+      "Au milieu de l’océan Atlantique",
+      "Au pôle Sud",
+      "Au nord de l’Afrique"
+     ],
+     "rep": "Au nord de l’Afrique",
+     "expl": "Le Maghreb est une région du nord de l’Afrique."
+    },
+    {
+     "q": "Où trouver le sens des couleurs d’une carte ?",
+     "choix": [
+      "Dans la légende",
+      "Dans une chaussure",
+      "Dans le nom de l’auteur uniquement"
+     ],
+     "rep": "Dans la légende",
+     "expl": "La légende explique les symboles et couleurs."
+    }
+   ],
+   "id": "REV-GE-CM1-07"
+  },
+  {
+   "axe": "Thème 3 : Se déplacer (1 période)",
+   "titre": "Choisir un mode de déplacement",
+   "emoji": "🚶",
+   "en_une_phrase": "On choisit un déplacement selon le trajet et les possibilités disponibles.",
+   "comprendre": "Marcher, pédaler ou prendre un véhicule permet de rejoindre un lieu. La distance, le temps et les transports disponibles influencent le choix. Une personne peut utiliser plusieurs moyens sur un même trajet.",
+   "essentiel": [
+    "La marche est un mode de déplacement.",
+    "La distance mesure l’éloignement parcouru.",
+    "La durée mesure le temps nécessaire."
+   ],
+   "image_mentale": "Imagine un trajet à pied puis en train.",
+   "regle_ou_methode": "Repère le départ, l’arrivée, la distance et les moyens possibles.",
+   "exemples": [
+    "Pour aller à une école proche, un enfant peut marcher. Pour un trajet plus long, il peut utiliser un bus si une ligne existe.",
+    "Une personne marche jusqu’à la gare puis prend le train : elle utilise deux modes."
+   ],
+   "piege": "Le trajet le plus court en distance n’est pas toujours le plus rapide.",
+   "astuce_memoire": "Distance, durée et moyens disponibles.",
+   "quiz": [
+    {
+     "q": "Quel déplacement ne nécessite pas de véhicule ?",
+     "choix": [
+      "Le train",
+      "L’avion",
+      "La marche"
+     ],
+     "rep": "La marche",
+     "expl": "On peut marcher sans véhicule."
+    },
+    {
+     "q": "Quelle grandeur mesure le temps d’un trajet ?",
+     "choix": [
+      "La durée",
+      "La masse",
+      "La température"
+     ],
+     "rep": "La durée",
+     "expl": "La durée mesure le temps écoulé."
+    },
+    {
+     "q": "Marcher puis prendre le train correspond à combien de modes ?",
+     "choix": [
+      "Un seul",
+      "Deux",
+      "Aucun"
+     ],
+     "rep": "Deux",
+     "expl": "La marche et le train sont deux modes de déplacement."
+    }
+   ],
+   "id": "REV-GE-CM1-08"
+  },
+  {
+   "axe": "Thème 3 : Se déplacer (1 période)",
+   "titre": "Transports et infrastructures",
+   "emoji": "🚆",
+   "en_une_phrase": "Les moyens de transport utilisent des lieux et des voies adaptés.",
+   "comprendre": "Un train circule sur des rails et dessert des gares. Un avion utilise un aéroport et un bateau peut rejoindre un port. Ces aménagements rendent les déplacements possibles.",
+   "essentiel": [
+    "Train et gare vont ensemble.",
+    "Avion et aéroport vont ensemble.",
+    "Bateau et port vont ensemble."
+   ],
+   "image_mentale": "Imagine une gare, un port et un aéroport sur une carte.",
+   "regle_ou_methode": "Associe chaque véhicule au lieu ou à la voie qui lui convient.",
+   "exemples": [
+    "Un train arrive en gare : les voyageurs peuvent y monter ou en descendre.",
+    "Un bateau rejoint un port pour embarquer ou débarquer."
+   ],
+   "piege": "Une gare n’est pas un aéroport.",
+   "astuce_memoire": "Train-gare, avion-aéroport, bateau-port.",
+   "quiz": [
+    {
+     "q": "Où prend-on généralement le train ?",
+     "choix": [
+      "À la gare",
+      "Au port",
+      "À la boulangerie"
+     ],
+     "rep": "À la gare",
+     "expl": "Les voyageurs prennent le train à la gare."
+    },
+    {
+     "q": "Quel lieu accueille les avions ?",
+     "choix": [
+      "Une gare ferroviaire",
+      "Un aéroport",
+      "Un champ de blé"
+     ],
+     "rep": "Un aéroport",
+     "expl": "Les avions utilisent les aéroports."
+    },
+    {
+     "q": "Quel lieu associe-t-on au bateau ?",
+     "choix": [
+      "Une station de métro uniquement",
+      "Un sommet de montagne",
+      "Un port"
+     ],
+     "rep": "Un port",
+     "expl": "Un port accueille notamment les bateaux."
+    }
+   ],
+   "id": "REV-GE-CM1-09"
+  },
+  {
+   "axe": "Thème 3 : Se déplacer (1 période)",
+   "titre": "Lire un trajet",
+   "emoji": "📍",
+   "en_une_phrase": "Une carte ou un plan permet de décrire un itinéraire.",
+   "comprendre": "Un itinéraire relie un point de départ à un point d’arrivée. On peut y repérer des étapes et des changements de transport. La légende aide à comprendre les symboles du plan.",
+   "essentiel": [
+    "Un trajet possède un départ et une arrivée.",
+    "Il peut comporter des étapes.",
+    "La légende explique les signes du plan."
+   ],
+   "image_mentale": "Imagine un trajet de la maison à la gare puis à l’école.",
+   "regle_ou_methode": "Suis les étapes dans l’ordre et nomme les lieux traversés.",
+   "exemples": [
+    "Le trajet va de la maison à la gare puis à l’école. La gare est une étape intermédiaire.",
+    "Un symbole de station est expliqué dans la légende : on peut le retrouver sur le plan."
+   ],
+   "piege": "Une étape intermédiaire n’est pas forcément le point d’arrivée.",
+   "astuce_memoire": "Départ, étapes, arrivée.",
+   "quiz": [
+    {
+     "q": "Dans maison-gare-école, quel est le départ ?",
+     "choix": [
+      "La gare",
+      "La maison",
+      "L’école"
+     ],
+     "rep": "La maison",
+     "expl": "La maison est le premier lieu du trajet."
+    },
+    {
+     "q": "Dans maison-gare-école, quelle est l’étape intermédiaire ?",
+     "choix": [
+      "La maison",
+      "L’école",
+      "La gare"
+     ],
+     "rep": "La gare",
+     "expl": "La gare est entre le départ et l’arrivée."
+    },
+    {
+     "q": "Que faut-il consulter pour comprendre un symbole ?",
+     "choix": [
+      "La légende",
+      "Le cartable",
+      "Le calendrier seulement"
+     ],
+     "rep": "La légende",
+     "expl": "La légende explique les signes du plan."
+    }
+   ],
+   "id": "REV-GE-CM1-10"
+  },
+  {
+   "axe": "Thème 4 : Communiquer dans le monde avec Internet (1 période)",
+   "titre": "Internet, un réseau mondial",
+   "emoji": "🌐",
+   "en_une_phrase": "Internet relie des appareils et des réseaux dans le monde.",
+   "comprendre": "Un message peut passer d’un appareil à un autre en empruntant des réseaux. Ceux-ci s’appuient sur des câbles, y compris sous les océans, et parfois des satellites. Les connexions rendent possibles de nombreux échanges.",
+   "essentiel": [
+    "Internet est un réseau de réseaux.",
+    "Des câbles terrestres et sous-marins relient des lieux.",
+    "Des satellites participent aussi à certaines connexions."
+   ],
+   "image_mentale": "Imagine des points reliés par des lignes sur plusieurs continents.",
+   "regle_ou_methode": "Suis le trajet possible de l’information et identifie les équipements.",
+   "exemples": [
+    "Un message part d’un ordinateur et traverse plusieurs réseaux avant d’atteindre son destinataire.",
+    "Des câbles sous-marins relient des territoires séparés par un océan."
+   ],
+   "piege": "Internet ne se limite pas aux satellites : les câbles jouent un rôle majeur.",
+   "astuce_memoire": "Des appareils reliés par des réseaux.",
+   "quiz": [
+    {
+     "q": "Que relient des câbles sous-marins ?",
+     "choix": [
+      "Seulement les pièces d’un cahier",
+      "Des planètes uniquement",
+      "Des territoires séparés par la mer"
+     ],
+     "rep": "Des territoires séparés par la mer",
+     "expl": "Ces câbles relient des territoires à travers les mers et océans."
+    },
+    {
+     "q": "Qu’est-ce qu’Internet ?",
+     "choix": [
+      "Un réseau de réseaux",
+      "Un seul ordinateur",
+      "Un livre imprimé"
+     ],
+     "rep": "Un réseau de réseaux",
+     "expl": "Internet relie de nombreux réseaux."
+    },
+    {
+     "q": "Quel équipement peut aussi participer à une connexion ?",
+     "choix": [
+      "Une casserole",
+      "Un satellite",
+      "Un crayon seul"
+     ],
+     "rep": "Un satellite",
+     "expl": "Certains réseaux utilisent des satellites."
+    }
+   ],
+   "id": "REV-GE-CM1-11"
+  },
+  {
+   "axe": "Thème 4 : Communiquer dans le monde avec Internet (1 période)",
+   "titre": "Les usages d’Internet",
+   "emoji": "💬",
+   "en_une_phrase": "Internet permet de communiquer et d’accéder à des informations.",
+   "comprendre": "Des personnes utilisent Internet pour envoyer des messages, chercher des renseignements ou suivre une activité. Ces usages nécessitent un appareil et une connexion. Une information trouvée en ligne doit être vérifiée.",
+   "essentiel": [
+    "Un message peut relier des personnes éloignées.",
+    "Un appareil connecté donne accès à des services.",
+    "Il faut examiner la source d’une information."
+   ],
+   "image_mentale": "Imagine deux personnes échangeant un message à distance.",
+   "regle_ou_methode": "Identifie le besoin, le service utilisé et la source des informations.",
+   "exemples": [
+    "Une élève envoie un message à sa classe : elle communique à distance.",
+    "Pour un exposé, elle compare une information à une source fiable avant de l’utiliser."
+   ],
+   "piege": "Une information présente en ligne n’est pas forcément vraie.",
+   "astuce_memoire": "Communiquer, chercher, vérifier.",
+   "quiz": [
+    {
+     "q": "Quel usage permet de communiquer à distance ?",
+     "choix": [
+      "Envoyer un message",
+      "Ranger une chaussure",
+      "Fermer un cahier"
+     ],
+     "rep": "Envoyer un message",
+     "expl": "Un message peut être envoyé à une personne éloignée."
+    },
+    {
+     "q": "Une information en ligne est-elle toujours vraie ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement si elle est colorée"
+     ],
+     "rep": "Non",
+     "expl": "Il faut vérifier la source et recouper les informations."
+    },
+    {
+     "q": "Que faut-il pour accéder à un service en ligne ?",
+     "choix": [
+      "Seulement une feuille blanche",
+      "Une boussole uniquement",
+      "Un appareil et une connexion"
+     ],
+     "rep": "Un appareil et une connexion",
+     "expl": "Un appareil et une connexion permettent l’accès au service."
+    }
+   ],
+   "id": "REV-GE-CM1-12"
+  },
+  {
+   "axe": "Thème 4 : Communiquer dans le monde avec Internet (1 période)",
+   "titre": "L’inégal accès à Internet",
+   "emoji": "📶",
+   "en_une_phrase": "L’accès à Internet varie selon les territoires et les moyens disponibles.",
+   "comprendre": "Certains lieux disposent de réseaux rapides et d’autres sont moins bien desservis. Une connexion dépend aussi de l’équipement et du coût pour les personnes. Les différences existent dans le monde et au sein d’un pays.",
+   "essentiel": [
+    "La qualité du réseau varie selon les lieux.",
+    "L’équipement et le coût influencent aussi l’accès.",
+    "Une carte peut montrer des différences entre territoires."
+   ],
+   "image_mentale": "Imagine deux zones : l’une bien reliée et l’autre peu couverte.",
+   "regle_ou_methode": "Compare la couverture et les moyens nécessaires pour se connecter.",
+   "exemples": [
+    "Dans une zone, un réseau est disponible ; dans une autre, la connexion manque. Les habitants n’ont pas les mêmes possibilités.",
+    "Même dans une zone couverte, une famille peut manquer d’appareil adapté."
+   ],
+   "piege": "La présence d’un réseau ne garantit pas que chacun possède un appareil.",
+   "astuce_memoire": "Réseau, équipement et coût comptent.",
+   "quiz": [
+    {
+     "q": "L’accès à Internet est-il identique partout ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement la nuit"
+     ],
+     "rep": "Non",
+     "expl": "La couverture et les moyens varient selon les lieux."
+    },
+    {
+     "q": "Quel facteur peut limiter l’accès ?",
+     "choix": [
+      "La couleur du mur",
+      "Le jour de naissance",
+      "L’absence d’appareil adapté"
+     ],
+     "rep": "L’absence d’appareil adapté",
+     "expl": "Il faut un équipement utilisable pour se connecter."
+    },
+    {
+     "q": "Des différences existent-elles à l’intérieur d’un pays ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement entre les continents"
+     ],
+     "rep": "Oui",
+     "expl": "La couverture et les moyens peuvent varier dans un même pays."
+    }
+   ],
+   "id": "REV-GE-CM1-13"
+  }
+ ]
+}
