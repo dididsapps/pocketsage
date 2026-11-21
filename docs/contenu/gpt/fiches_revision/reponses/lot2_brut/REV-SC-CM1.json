@@ -1,0 +1,911 @@
+{
+  "classe": "CM1",
+  "niveau_appli": "CM1",
+  "age": "9-10 ans",
+  "matiere": "Sciences et technologie",
+  "code": "SC",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "La matière, les mouvements et les signaux",
+      "titre": "Mesurer la masse d’un liquide",
+      "emoji": "⚖️",
+      "en_une_phrase": "La masse d’un liquide se mesure en tenant compte de son récipient.",
+      "comprendre": "Tu sais utiliser une balance pour peser un objet. Un liquide doit être placé dans un récipient. Il faut donc retirer la masse du récipient pour connaître celle du liquide seul.",
+      "essentiel": [
+        "Une balance mesure une masse.",
+        "La tare permet de remettre l’affichage à zéro avec le récipient vide.",
+        "Sans tare, on soustrait la masse du récipient vide."
+      ],
+      "image_mentale": "Imagine une balance portant un verre vide, puis le même verre rempli.",
+      "regle_ou_methode": "Mesure le récipient vide, puis le récipient plein et calcule la différence.",
+      "exemples": [
+        "Le récipient vide pèse 100 g. Avec le liquide, il pèse 350 g. La masse du liquide est 350 − 100 = 250 g.",
+        "Si la balance est tarée avec le verre vide, elle peut afficher directement 250 g pour le liquide ajouté."
+      ],
+      "piege": "La masse affichée sans tare comprend aussi celle du récipient.",
+      "astuce_memoire": "Plein moins vide.",
+      "quiz": [
+        {
+          "q": "Récipient vide : 100 g ; plein : 350 g. Quelle est la masse du liquide ?",
+          "choix": [
+            "350 g",
+            "250 g",
+            "450 g"
+          ],
+          "rep": "250 g",
+          "expl": "350 − 100 = 250 g."
+        },
+        {
+          "q": "À quoi sert la tare ?",
+          "choix": [
+            "À changer la masse du liquide",
+            "À mesurer la température",
+            "À remettre l’affichage à zéro avec le récipient"
+          ],
+          "rep": "À remettre l’affichage à zéro avec le récipient",
+          "expl": "La tare permet de ne mesurer que ce qui est ajouté ensuite."
+        },
+        {
+          "q": "Un récipient vide pèse 80 g et plein 280 g. Quelle est la masse du liquide ?",
+          "choix": [
+            "200 g",
+            "280 g",
+            "360 g"
+          ],
+          "rep": "200 g",
+          "expl": "280 − 80 = 200 g."
+        }
+      ],
+      "id": "REV-SC-CM1-01"
+    },
+    {
+      "axe": "La matière, les mouvements et les signaux",
+      "titre": "Distinguer des mélanges",
+      "emoji": "🧪",
+      "en_une_phrase": "Un mélange est homogène si on ne distingue pas ses constituants à l’œil nu.",
+      "comprendre": "Tu as déjà mélangé du sable et de l’eau. Les grains peuvent rester visibles. D’autres mélanges semblent uniformes, comme de l’eau salée bien mélangée.",
+      "essentiel": [
+        "Un mélange contient plusieurs constituants.",
+        "Un mélange hétérogène présente plusieurs parties visibles.",
+        "Un mélange homogène paraît uniforme à l’œil nu."
+      ],
+      "image_mentale": "Imagine deux verres : l’un trouble, l’autre transparent et salé.",
+      "regle_ou_methode": "Observe le mélange et cherche si ses constituants sont visibles.",
+      "exemples": [
+        "Mélange du sable à de l’eau. Les grains restent visibles : le mélange est hétérogène.",
+        "Du sel entièrement dissous dans l’eau forme un mélange homogène à l’œil nu."
+      ],
+      "piege": "Un mélange transparent peut contenir une substance dissoute.",
+      "astuce_memoire": "Homogène : aspect uniforme à l’œil nu.",
+      "quiz": [
+        {
+          "q": "Un mélange eau-sable avec des grains visibles est…",
+          "choix": [
+            "homogène",
+            "un corps unique",
+            "hétérogène"
+          ],
+          "rep": "hétérogène",
+          "expl": "Plusieurs constituants sont visibles."
+        },
+        {
+          "q": "Du sel entièrement dissous dans l’eau forme un mélange…",
+          "choix": [
+            "homogène à l’œil nu",
+            "hétérogène avec des grains visibles",
+            "sans sel"
+          ],
+          "rep": "homogène à l’œil nu",
+          "expl": "Le mélange paraît uniforme même si le sel est présent."
+        },
+        {
+          "q": "Une eau claire peut-elle contenir du sel dissous ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Seulement si les grains sont visibles"
+          ],
+          "rep": "Oui",
+          "expl": "Un constituant dissous peut ne pas être visible."
+        }
+      ],
+      "id": "REV-SC-CM1-02"
+    },
+    {
+      "axe": "La matière, les mouvements et les signaux",
+      "titre": "Séparer un mélange",
+      "emoji": "🫗",
+      "en_une_phrase": "La filtration sépare un liquide de certains solides non dissous.",
+      "comprendre": "Tu connais peut-être une passoire qui retient des pâtes. Un filtre agit de façon comparable pour certains petits solides. Le liquide passe et le solide retenu reste dans le filtre.",
+      "essentiel": [
+        "Un filtre retient certains solides non dissous.",
+        "Le liquide qui passe est le filtrat.",
+        "Un solide dissous traverse généralement le filtre avec le liquide."
+      ],
+      "image_mentale": "Imagine de l’eau et du sable traversant un filtre.",
+      "regle_ou_methode": "Choisis un filtre adapté puis observe ce qui reste et ce qui passe.",
+      "exemples": [
+        "Verse un mélange d’eau et de sable dans un filtre. Le sable est retenu. L’eau recueillie passe à travers le filtre.",
+        "Filtrer de l’eau salée ne retient pas le sel dissous."
+      ],
+      "piege": "Une eau filtrée n’est pas nécessairement potable : le filtre ne retire pas tout.",
+      "astuce_memoire": "Solide retenu, liquide recueilli.",
+      "quiz": [
+        {
+          "q": "Que retient le filtre dans un mélange eau-sable ?",
+          "choix": [
+            "Le sable",
+            "L’eau uniquement",
+            "Le sel dissous"
+          ],
+          "rep": "Le sable",
+          "expl": "Le sable non dissous peut rester dans le filtre."
+        },
+        {
+          "q": "Le sel dissous est-il retenu par un filtre ordinaire ?",
+          "choix": [
+            "Oui, toujours",
+            "Non",
+            "Seulement si l’eau est claire"
+          ],
+          "rep": "Non",
+          "expl": "Le sel dissous passe avec l’eau."
+        },
+        {
+          "q": "Une eau filtrée est-elle forcément potable ?",
+          "choix": [
+            "Oui",
+            "Oui si elle est transparente",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Une eau claire peut contenir des substances ou des microbes."
+        }
+      ],
+      "id": "REV-SC-CM1-03"
+    },
+    {
+      "axe": "La matière, les mouvements et les signaux",
+      "titre": "La dissolution",
+      "emoji": "💧",
+      "en_une_phrase": "Une substance dissoute reste présente même si on ne la voit plus.",
+      "comprendre": "Tu as peut-être mélangé du sucre à de l’eau. Les grains finissent par ne plus être visibles. Cela ne veut pas dire que le sucre a disparu.",
+      "essentiel": [
+        "Le sucre peut se dissoudre dans l’eau.",
+        "Une substance dissoute reste dans le mélange.",
+        "Au-delà d’une certaine quantité, tout ne se dissout plus dans des conditions données."
+      ],
+      "image_mentale": "Imagine des grains qui deviennent invisibles dans un verre d’eau.",
+      "regle_ou_methode": "Ajoute progressivement la substance puis observe si des grains restent.",
+      "exemples": [
+        "Ajoute un peu de sucre à de l’eau et mélange. Les grains disparaissent à l’œil nu : le sucre est dissous.",
+        "Si tu ajoutes trop de sucre pour cette quantité d’eau, une partie peut rester au fond."
+      ],
+      "piege": "Dissoudre ne signifie pas faire disparaître la matière.",
+      "astuce_memoire": "Invisible ne veut pas dire absent.",
+      "quiz": [
+        {
+          "q": "Que devient le sucre dissous ?",
+          "choix": [
+            "Il disparaît de la matière",
+            "Il reste présent dans l’eau",
+            "Il devient du sable"
+          ],
+          "rep": "Il reste présent dans l’eau",
+          "expl": "Le sucre est toujours présent dans le mélange."
+        },
+        {
+          "q": "Que peut-il se passer si on ajoute trop de sucre ?",
+          "choix": [
+            "Tout disparaît toujours",
+            "L’eau devient du bois",
+            "Une partie reste non dissoute"
+          ],
+          "rep": "Une partie reste non dissoute",
+          "expl": "La quantité dissoute est limitée dans des conditions données."
+        },
+        {
+          "q": "Un mélange est clair après ajout de sucre. Peut-il encore contenir du sucre ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "Seulement si les grains sont visibles"
+          ],
+          "rep": "Oui",
+          "expl": "Le sucre dissous peut être invisible à l’œil nu."
+        }
+      ],
+      "id": "REV-SC-CM1-04"
+    },
+    {
+      "axe": "La matière, les mouvements et les signaux",
+      "titre": "Décrire un déplacement",
+      "emoji": "🚲",
+      "en_une_phrase": "La distance et la durée permettent de décrire un déplacement.",
+      "comprendre": "Tu peux parcourir le trajet entre deux endroits. Pour le décrire, mesure la distance et le temps écoulé. Les deux informations sont différentes.",
+      "essentiel": [
+        "La distance mesure la longueur parcourue.",
+        "La durée mesure le temps écoulé.",
+        "Un mètre et un chronomètre servent à des mesures différentes."
+      ],
+      "image_mentale": "Imagine une ligne entre départ et arrivée et un chronomètre.",
+      "regle_ou_methode": "Repère le départ et l’arrivée, mesure la distance puis la durée.",
+      "exemples": [
+        "Une petite voiture parcourt 4 mètres. Le chronomètre indique 5 secondes entre départ et arrivée. Sa distance est 4 m et sa durée 5 s.",
+        "Une marche de 10 m peut durer 8 s."
+      ],
+      "piege": "Ne confonds pas l’instant d’arrivée avec la durée écoulée.",
+      "astuce_memoire": "Mètres pour la distance, secondes pour la durée.",
+      "quiz": [
+        {
+          "q": "Quelle unité peut mesurer une distance ?",
+          "choix": [
+            "La seconde",
+            "Le kilogramme",
+            "Le mètre"
+          ],
+          "rep": "Le mètre",
+          "expl": "Le mètre mesure une longueur."
+        },
+        {
+          "q": "Quelle unité peut mesurer une durée ?",
+          "choix": [
+            "La seconde",
+            "Le mètre",
+            "Le litre"
+          ],
+          "rep": "La seconde",
+          "expl": "La seconde mesure une durée."
+        },
+        {
+          "q": "Départ à 3 s, arrivée à 8 s : quelle durée ?",
+          "choix": [
+            "8 s",
+            "5 s",
+            "11 s"
+          ],
+          "rep": "5 s",
+          "expl": "8 − 3 = 5 secondes."
+        }
+      ],
+      "id": "REV-SC-CM1-05"
+    },
+    {
+      "axe": "La matière, les mouvements et les signaux",
+      "titre": "L’ombre portée",
+      "emoji": "🔦",
+      "en_une_phrase": "Une ombre apparaît lorsqu’un objet opaque bloque une partie de la lumière.",
+      "comprendre": "Tu as peut-être vu ton ombre sur le sol. La lumière ne traverse pas ton corps comme elle traverse une vitre transparente. Derrière l’obstacle, une zone reçoit moins de lumière.",
+      "essentiel": [
+        "Une source émet de la lumière.",
+        "Un objet opaque bloque une partie de cette lumière.",
+        "L’ombre portée se forme sur une surface."
+      ],
+      "image_mentale": "Imagine une lampe, une balle opaque puis un mur sombre derrière elle.",
+      "regle_ou_methode": "Repère la source, l’obstacle et l’écran où apparaît l’ombre.",
+      "exemples": [
+        "Place une balle opaque entre une lampe et un mur. Allume la lampe. Une ombre se forme sur le mur derrière la balle.",
+        "Si l’obstacle n’est plus entre la lampe et le mur, cette ombre disparaît de cet emplacement."
+      ],
+      "piege": "L’ombre n’est pas une matière noire projetée : c’est une zone moins éclairée.",
+      "astuce_memoire": "Source, obstacle, ombre.",
+      "quiz": [
+        {
+          "q": "Quel objet bloque la lumière dans cet exemple ?",
+          "choix": [
+            "La balle opaque",
+            "La lampe",
+            "Le mur éclairé"
+          ],
+          "rep": "La balle opaque",
+          "expl": "La balle opaque joue le rôle d’obstacle."
+        },
+        {
+          "q": "Où se forme l’ombre portée ?",
+          "choix": [
+            "À l’intérieur de la lampe",
+            "Sur une surface",
+            "Seulement dans l’objet"
+          ],
+          "rep": "Sur une surface",
+          "expl": "L’ombre portée apparaît sur le mur ou une autre surface."
+        },
+        {
+          "q": "On retire la balle située entre la lampe et le mur. Que devient son ombre sur ce mur ?",
+          "choix": [
+            "Elle reste identique",
+            "Elle devient une source lumineuse",
+            "Elle disparaît à cet emplacement"
+          ],
+          "rep": "Elle disparaît à cet emplacement",
+          "expl": "Sans l’obstacle, cette ombre portée ne se forme plus."
+        }
+      ],
+      "id": "REV-SC-CM1-06"
+    },
+    {
+      "axe": "La matière, les mouvements et les signaux",
+      "titre": "Les phases de la Lune",
+      "emoji": "🌙",
+      "en_une_phrase": "L’aspect de la Lune change au cours d’un cycle de phases.",
+      "comprendre": "Tu as peut-être vu un croissant puis une Lune ronde. La Lune est éclairée par le Soleil. Depuis la Terre, nous voyons des portions différentes de sa partie éclairée.",
+      "essentiel": [
+        "La Lune ne produit pas sa propre lumière visible.",
+        "Ses phases se répètent selon un cycle.",
+        "Un croissant et la pleine Lune sont deux aspects observables."
+      ],
+      "image_mentale": "Imagine une balle éclairée par une lampe, observée sous plusieurs angles.",
+      "regle_ou_methode": "Observe la Lune à plusieurs dates et compare sa forme éclairée.",
+      "exemples": [
+        "Une semaine, tu dessines un croissant. Plus tard, tu observes un disque plus éclairé. Tu constates que son aspect apparent a changé.",
+        "À la pleine Lune, le disque visible est entièrement éclairé."
+      ],
+      "piege": "Les phases habituelles ne sont pas dues à l’ombre de la Terre sur la Lune.",
+      "astuce_memoire": "Même Lune, portion éclairée visible différente.",
+      "quiz": [
+        {
+          "q": "Quelle source éclaire la Lune ?",
+          "choix": [
+            "La Terre comme une lampe",
+            "Le Soleil",
+            "La Lune elle-même"
+          ],
+          "rep": "Le Soleil",
+          "expl": "La Lune réfléchit la lumière du Soleil."
+        },
+        {
+          "q": "Que peut-on observer au fil des jours ?",
+          "choix": [
+            "Une nouvelle Lune fabriquée chaque nuit",
+            "Le Soleil qui tourne autour de la Lune",
+            "Des aspects différents de la Lune"
+          ],
+          "rep": "Des aspects différents de la Lune",
+          "expl": "La portion éclairée visible depuis la Terre change."
+        },
+        {
+          "q": "Un croissant devient plus éclairé quelques jours plus tard. Que change-t-on en comparant ?",
+          "choix": [
+            "La date d’observation",
+            "La nature de la Lune",
+            "La présence du Soleil"
+          ],
+          "rep": "La date d’observation",
+          "expl": "On observe la même Lune à des moments différents."
+        }
+      ],
+      "id": "REV-SC-CM1-07"
+    },
+    {
+      "axe": "Les êtres vivants dans leur environnement",
+      "titre": "Classer les êtres vivants",
+      "emoji": "🌿",
+      "en_une_phrase": "On classe les espèces à partir de caractères qu’elles partagent.",
+      "comprendre": "Tu sais trier des objets selon leur forme. Pour les êtres vivants, on observe des caractères communs. Des groupes emboîtés aident à représenter des parentés.",
+      "essentiel": [
+        "Un caractère est un élément observable choisi pour comparer.",
+        "Un groupe réunit les espèces qui partagent un caractère.",
+        "Des groupes peuvent être inclus dans d’autres."
+      ],
+      "image_mentale": "Imagine de grandes boîtes contenant des boîtes plus petites.",
+      "regle_ou_methode": "Observe les caractères, regroupe les espèces puis vérifie les caractères partagés.",
+      "exemples": [
+        "Dans une collection, place ensemble les animaux ayant un squelette interne. Parmi eux, regroupe ceux qui possèdent des poils. Ces groupes sont emboîtés.",
+        "Un chat et un chien partagent notamment le caractère « poils »."
+      ],
+      "piege": "On classe à partir de caractères présents, pas seulement de l’absence d’un caractère.",
+      "astuce_memoire": "Caractères partagés, groupes emboîtés.",
+      "quiz": [
+        {
+          "q": "Sur quoi s’appuie ce classement ?",
+          "choix": [
+            "La taille du nom",
+            "La couleur préférée de l’observateur",
+            "Des caractères partagés"
+          ],
+          "rep": "Des caractères partagés",
+          "expl": "La classification utilise des caractères observables partagés."
+        },
+        {
+          "q": "Quel caractère partagent un chat et un chien ?",
+          "choix": [
+            "Des poils",
+            "Des plumes",
+            "Des écailles de poisson"
+          ],
+          "rep": "Des poils",
+          "expl": "Chat et chien possèdent des poils."
+        },
+        {
+          "q": "Deux espèces partagent un squelette interne et des poils. Où peut-on les placer ?",
+          "choix": [
+            "Dans deux groupes sans caractère commun",
+            "Dans le groupe des animaux à poils inclus dans celui à squelette interne",
+            "Dans le groupe des animaux à plumes uniquement"
+          ],
+          "rep": "Dans le groupe des animaux à poils inclus dans celui à squelette interne",
+          "expl": "Le groupe à poils est inclus ici dans celui à squelette interne."
+        }
+      ],
+      "id": "REV-SC-CM1-08"
+    },
+    {
+      "axe": "Les êtres vivants dans leur environnement",
+      "titre": "Développement d’un animal",
+      "emoji": "🐣",
+      "en_une_phrase": "Après la fécondation, un embryon se développe avant la naissance ou l’éclosion.",
+      "comprendre": "Tu connais les œufs de poule et les petits des animaux. Selon l’espèce, l’embryon se développe dans un œuf pondu ou dans le corps de la mère. Le jeune grandit ensuite.",
+      "essentiel": [
+        "La fécondation précède le développement de l’embryon.",
+        "Un animal ovipare pond des œufs.",
+        "Chez un animal vivipare, le jeune se développe dans le corps de la mère avant la naissance."
+      ],
+      "image_mentale": "Imagine deux chemins : œuf pondu ou développement dans le corps.",
+      "regle_ou_methode": "Repère où se développe l’embryon puis l’arrivée du jeune.",
+      "exemples": [
+        "Chez la poule, après fécondation, l’embryon se développe dans un œuf. L’œuf est pondu. Le poussin éclot.",
+        "Chez le chat, le jeune se développe dans le corps de la mère avant la naissance."
+      ],
+      "piege": "Pondre un œuf et mettre bas sont des modes de développement différents.",
+      "astuce_memoire": "Ovipare : œuf pondu ; vivipare : naissance d’un jeune.",
+      "quiz": [
+        {
+          "q": "Quel animal pond des œufs ?",
+          "choix": [
+            "La poule",
+            "Le chat",
+            "Le cheval"
+          ],
+          "rep": "La poule",
+          "expl": "La poule est ovipare."
+        },
+        {
+          "q": "Où se développe le jeune chat avant la naissance ?",
+          "choix": [
+            "Dans un œuf pondu",
+            "Dans le corps de sa mère",
+            "Dans une graine"
+          ],
+          "rep": "Dans le corps de sa mère",
+          "expl": "Le chat est vivipare."
+        },
+        {
+          "q": "Quel ordre convient pour la poule ?",
+          "choix": [
+            "Éclosion, fécondation, œuf",
+            "Développement, naissance, fécondation",
+            "Fécondation, développement dans l’œuf, éclosion"
+          ],
+          "rep": "Fécondation, développement dans l’œuf, éclosion",
+          "expl": "La fécondation précède le développement puis l’éclosion."
+        }
+      ],
+      "id": "REV-SC-CM1-09"
+    },
+    {
+      "axe": "Les êtres vivants dans leur environnement",
+      "titre": "Un écosystème",
+      "emoji": "🌳",
+      "en_une_phrase": "Un écosystème réunit des êtres vivants, leur milieu et leurs relations.",
+      "comprendre": "Tu peux observer une mare ou un jardin. Des animaux et des plantes y vivent dans certaines conditions. Ils interagissent aussi entre eux et avec leur milieu.",
+      "essentiel": [
+        "Un milieu possède des caractéristiques comme l’humidité et la lumière.",
+        "Des êtres vivants y trouvent des ressources.",
+        "Les relations entre espèces font partie de l’écosystème."
+      ],
+      "image_mentale": "Imagine une mare avec de l’eau, des plantes et des animaux.",
+      "regle_ou_methode": "Observe le milieu, identifie les êtres vivants et décris leurs relations.",
+      "exemples": [
+        "Dans une mare, repère l’eau et la lumière. Observe une plante et un insecte. Leur milieu et leurs relations forment une partie de l’écosystème.",
+        "Une forêt associe également des êtres vivants et des conditions de milieu."
+      ],
+      "piege": "Un écosystème n’est pas seulement une liste d’animaux : il comprend aussi le milieu et les relations.",
+      "astuce_memoire": "Milieu + êtres vivants + relations.",
+      "quiz": [
+        {
+          "q": "Que comprend un écosystème ?",
+          "choix": [
+            "Seulement les animaux",
+            "Des êtres vivants, leur milieu et leurs relations",
+            "Seulement l’eau"
+          ],
+          "rep": "Des êtres vivants, leur milieu et leurs relations",
+          "expl": "Un écosystème associe ces trois éléments."
+        },
+        {
+          "q": "Quelle caractéristique décrit un milieu ?",
+          "choix": [
+            "Le nombre de lettres de son nom",
+            "La couleur d’un cahier",
+            "L’humidité"
+          ],
+          "rep": "L’humidité",
+          "expl": "L’humidité est une caractéristique du milieu."
+        },
+        {
+          "q": "Une mare s’assèche. Quel élément de l’écosystème change directement ?",
+          "choix": [
+            "Le milieu de vie",
+            "Le nom de toutes les espèces",
+            "La forme de la planète"
+          ],
+          "rep": "Le milieu de vie",
+          "expl": "La quantité d’eau du milieu diminue."
+        }
+      ],
+      "id": "REV-SC-CM1-10"
+    },
+    {
+      "axe": "Les êtres vivants dans leur environnement",
+      "titre": "Les liens alimentaires",
+      "emoji": "🕸️",
+      "en_une_phrase": "Un réseau alimentaire relie plusieurs relations entre êtres vivants.",
+      "comprendre": "Tu sais qu’un animal peut manger une plante. Un autre animal peut manger le premier. Plusieurs chaînes reliées forment un réseau.",
+      "essentiel": [
+        "La flèche va de l’être mangé vers le mangeur.",
+        "Un être vivant peut avoir plusieurs sources de nourriture.",
+        "Une variation d’effectif peut avoir des conséquences sur d’autres espèces."
+      ],
+      "image_mentale": "Imagine plusieurs flèches reliant plantes, insectes et oiseaux.",
+      "regle_ou_methode": "Repère qui est mangé, puis trace une flèche vers le mangeur.",
+      "exemples": [
+        "Une chenille mange une feuille. Trace une flèche de la feuille vers la chenille. Un oiseau mange la chenille : ajoute une flèche vers l’oiseau.",
+        "Un oiseau peut aussi manger des graines dans un autre lien alimentaire."
+      ],
+      "piege": "La flèche ne va pas du mangeur vers sa nourriture dans cette représentation.",
+      "astuce_memoire": "La flèche signifie ici « est mangé par ».",
+      "quiz": [
+        {
+          "q": "Dans feuille vers chenille, qui mange la feuille ?",
+          "choix": [
+            "La feuille",
+            "Le sol",
+            "La chenille"
+          ],
+          "rep": "La chenille",
+          "expl": "La flèche va de l’aliment vers le mangeur."
+        },
+        {
+          "q": "Que signifie la flèche ?",
+          "choix": [
+            "Est mangé par",
+            "Mange toujours",
+            "Est plus grand que"
+          ],
+          "rep": "Est mangé par",
+          "expl": "Elle relie ici le mangé au mangeur."
+        },
+        {
+          "q": "Un oiseau mange une chenille. Quelle flèche convient ?",
+          "choix": [
+            "Oiseau vers chenille",
+            "Chenille vers oiseau",
+            "Feuille vers sol"
+          ],
+          "rep": "Chenille vers oiseau",
+          "expl": "La flèche va de la chenille mangée vers l’oiseau."
+        }
+      ],
+      "id": "REV-SC-CM1-11"
+    },
+    {
+      "axe": "Les êtres vivants dans leur environnement",
+      "titre": "Mesurer la météo",
+      "emoji": "🌧️",
+      "en_une_phrase": "La météorologie décrit le temps observé à un lieu et à un moment.",
+      "comprendre": "Tu peux dire s’il pleut aujourd’hui. Les instruments permettent de préciser cette observation. Des mesures répétées montrent les variations au fil des jours.",
+      "essentiel": [
+        "Le thermomètre mesure la température.",
+        "Le pluviomètre mesure la quantité de pluie recueillie.",
+        "L’anémomètre mesure la vitesse du vent."
+      ],
+      "image_mentale": "Imagine trois instruments près d’une école.",
+      "regle_ou_methode": "Mesure toujours en notant la date, le lieu et l’unité.",
+      "exemples": [
+        "Chaque matin, relève la température avec un thermomètre. Note la date et le résultat en degrés Celsius. Compare ensuite les jours.",
+        "Un pluviomètre recueille la pluie pour en mesurer la quantité."
+      ],
+      "piege": "La météo d’une journée ne décrit pas à elle seule le climat.",
+      "astuce_memoire": "Météo : lieu et moment précis.",
+      "quiz": [
+        {
+          "q": "Quel instrument mesure la température ?",
+          "choix": [
+            "Le thermomètre",
+            "Le pluviomètre",
+            "La règle"
+          ],
+          "rep": "Le thermomètre",
+          "expl": "Le thermomètre mesure la température."
+        },
+        {
+          "q": "Quel instrument mesure la vitesse du vent ?",
+          "choix": [
+            "La balance",
+            "L’anémomètre",
+            "Le chronomètre seul"
+          ],
+          "rep": "L’anémomètre",
+          "expl": "L’anémomètre mesure la vitesse du vent."
+        },
+        {
+          "q": "Pourquoi noter la date et le lieu d’une mesure météo ?",
+          "choix": [
+            "Pour changer le résultat",
+            "Pour éviter d’utiliser une unité",
+            "Pour savoir quand et où elle a été faite"
+          ],
+          "rep": "Pour savoir quand et où elle a été faite",
+          "expl": "La mesure correspond à des conditions de lieu et de temps."
+        }
+      ],
+      "id": "REV-SC-CM1-12"
+    },
+    {
+      "axe": "Le corps humain et la santé",
+      "titre": "Le rôle du cerveau",
+      "emoji": "🧠",
+      "en_une_phrase": "Le cerveau participe à la perception, aux mouvements et aux apprentissages.",
+      "comprendre": "Tu reconnais des sons et tu peux décider de bouger. Le cerveau reçoit et traite des informations. Il participe aussi à la mémoire et au langage.",
+      "essentiel": [
+        "Le cerveau se trouve dans la tête.",
+        "Il participe au traitement des informations sensorielles.",
+        "Il intervient dans les mouvements et la mémorisation."
+      ],
+      "image_mentale": "Imagine des informations qui arrivent au cerveau puis une consigne vers la main.",
+      "regle_ou_methode": "Relie une situation à une fonction du cerveau.",
+      "exemples": [
+        "Tu vois un crayon et tu décides de le prendre. Des informations visuelles sont traitées et une commande de mouvement est élaborée. Ta main peut saisir le crayon.",
+        "Quand tu apprends un mot, le cerveau participe à sa mémorisation."
+      ],
+      "piege": "Le cerveau ne travaille pas seul : il échange des informations avec le reste du corps.",
+      "astuce_memoire": "Percevoir, agir, apprendre.",
+      "quiz": [
+        {
+          "q": "Où se trouve le cerveau ?",
+          "choix": [
+            "Dans le genou",
+            "Dans la tête",
+            "Dans la chaussure"
+          ],
+          "rep": "Dans la tête",
+          "expl": "Le cerveau se trouve dans la tête."
+        },
+        {
+          "q": "À quelle fonction le cerveau participe-t-il ?",
+          "choix": [
+            "La couleur du cahier",
+            "La fabrication des chaussures",
+            "La mémorisation"
+          ],
+          "rep": "La mémorisation",
+          "expl": "Le cerveau intervient dans les apprentissages et la mémoire."
+        },
+        {
+          "q": "Tu vois un crayon puis le saisis. Quelles fonctions sont mobilisées ?",
+          "choix": [
+            "Perception et mouvement",
+            "Seulement la couleur du crayon",
+            "Aucune information sensorielle"
+          ],
+          "rep": "Perception et mouvement",
+          "expl": "La perception et la commande du mouvement interviennent."
+        }
+      ],
+      "id": "REV-SC-CM1-13"
+    },
+    {
+      "axe": "Le corps humain et la santé",
+      "titre": "Les changements de la puberté",
+      "emoji": "🌱",
+      "en_une_phrase": "À la puberté, le corps change à un rythme propre à chaque personne.",
+      "comprendre": "Tu as grandi depuis la petite enfance. Plus tard, la croissance peut s’accélérer et d’autres changements apparaissent. Leur moment et leur rythme varient selon les personnes.",
+      "essentiel": [
+        "La taille et la corpulence peuvent changer rapidement.",
+        "La pilosité peut se développer.",
+        "Les changements n’arrivent pas au même âge pour tout le monde."
+      ],
+      "image_mentale": "Imagine des courbes de croissance qui ne montent pas toutes au même moment.",
+      "regle_ou_methode": "Observe les changements sans comparer une personne à une norme unique.",
+      "exemples": [
+        "Deux enfants du même âge grandissent à des rythmes différents. Le premier change plus tôt, le second plus tard. Cette différence de rythme est habituelle.",
+        "La pilosité peut apparaître ou devenir plus visible."
+      ],
+      "piege": "Être plus tôt ou plus tard que quelqu’un d’autre ne signifie pas être anormal.",
+      "astuce_memoire": "Chaque corps a son rythme.",
+      "quiz": [
+        {
+          "q": "La puberté commence-t-elle au même moment pour tous ?",
+          "choix": [
+            "Oui, toujours",
+            "Seulement le même jour dans une classe",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Le moment varie selon les personnes."
+        },
+        {
+          "q": "Quel changement peut se produire ?",
+          "choix": [
+            "Une croissance plus rapide",
+            "La disparition de tous les os",
+            "Un corps toujours identique"
+          ],
+          "rep": "Une croissance plus rapide",
+          "expl": "La croissance peut s’accélérer."
+        },
+        {
+          "q": "Deux enfants changent à des moments différents. Que peut-on en conclure ?",
+          "choix": [
+            "L’un est forcément anormal",
+            "Leurs rythmes sont différents",
+            "Le plus grand a toujours le même âge que l’autre"
+          ],
+          "rep": "Leurs rythmes sont différents",
+          "expl": "Les rythmes de développement varient."
+        }
+      ],
+      "id": "REV-SC-CM1-14"
+    },
+    {
+      "axe": "Les objets techniques au cœur de la société",
+      "titre": "Besoin et objet technique",
+      "emoji": "🛠️",
+      "en_une_phrase": "Un objet technique répond à un besoin grâce à ses éléments.",
+      "comprendre": "Tu utilises peut-être une gourde pour transporter de l’eau. Sa forme et son bouchon répondent à cette fonction. Observer les pièces permet de comprendre le choix de conception.",
+      "essentiel": [
+        "Un besoin décrit ce que l’on veut faire.",
+        "La fonction d’usage indique à quoi sert l’objet.",
+        "Les éléments de l’objet assurent des fonctions techniques."
+      ],
+      "image_mentale": "Imagine une gourde avec son récipient et son bouchon.",
+      "regle_ou_methode": "Identifie le besoin puis observe le rôle de chaque élément.",
+      "exemples": [
+        "Le besoin est de transporter de l’eau. La gourde contient l’eau. Son bouchon aide à fermer le récipient.",
+        "Une boîte protège et contient de petits objets."
+      ],
+      "piege": "Le nom de l’objet ne suffit pas : demande-toi à quoi servent ses éléments.",
+      "astuce_memoire": "Besoin, objet, rôle des pièces.",
+      "quiz": [
+        {
+          "q": "À quel besoin répond une gourde ?",
+          "choix": [
+            "Transporter une boisson",
+            "Mesurer le temps",
+            "Éclairer une pièce"
+          ],
+          "rep": "Transporter une boisson",
+          "expl": "Une gourde sert notamment à transporter une boisson."
+        },
+        {
+          "q": "À quoi sert son bouchon ?",
+          "choix": [
+            "À mesurer la température forcément",
+            "À fermer le récipient",
+            "À faire pousser une plante"
+          ],
+          "rep": "À fermer le récipient",
+          "expl": "Le bouchon aide à fermer la gourde."
+        },
+        {
+          "q": "Tu veux éviter qu’une boisson se renverse pendant le transport. Quelle partie vérifies-tu ?",
+          "choix": [
+            "La couleur seulement",
+            "Le nom écrit sur l’objet",
+            "La fermeture"
+          ],
+          "rep": "La fermeture",
+          "expl": "Une fermeture adaptée aide à éviter les fuites."
+        }
+      ],
+      "id": "REV-SC-CM1-15"
+    },
+    {
+      "axe": "Les objets techniques au cœur de la société",
+      "titre": "Décrire un objet",
+      "emoji": "🔧",
+      "en_une_phrase": "Un croquis légendé montre les éléments importants d’un objet.",
+      "comprendre": "Tu sais dessiner un objet que tu observes. Un croquis simplifie ses formes et une légende nomme ses parties. Cela permet d’expliquer son fonctionnement.",
+      "essentiel": [
+        "Observe l’objet avant de dessiner.",
+        "Représente les éléments utiles.",
+        "Ajoute des légendes lisibles."
+      ],
+      "image_mentale": "Imagine une gourde dessinée avec des flèches vers le bouchon et le récipient.",
+      "regle_ou_methode": "Observe, trace les contours principaux puis nomme les éléments.",
+      "exemples": [
+        "Observe une gourde fermée. Dessine le récipient et le bouchon. Ajoute une flèche et le nom de chaque partie.",
+        "Un croquis de boîte peut montrer son couvercle et son contenant."
+      ],
+      "piege": "Un croquis technique peut être simple : il doit surtout montrer les parties utiles.",
+      "astuce_memoire": "J’observe, je dessine, je légende.",
+      "quiz": [
+        {
+          "q": "À quoi sert une légende ?",
+          "choix": [
+            "À changer l’objet",
+            "À nommer les éléments",
+            "À effacer le dessin"
+          ],
+          "rep": "À nommer les éléments",
+          "expl": "Les légendes identifient les parties représentées."
+        },
+        {
+          "q": "Que faut-il faire avant de dessiner ?",
+          "choix": [
+            "Choisir une réponse au hasard",
+            "Cacher l’objet",
+            "Observer l’objet"
+          ],
+          "rep": "Observer l’objet",
+          "expl": "L’observation permet de repérer ses éléments."
+        },
+        {
+          "q": "Tu veux expliquer comment une gourde se ferme. Que montres-tu sur ton croquis ?",
+          "choix": [
+            "Le bouchon et le récipient",
+            "La couleur du bureau seulement",
+            "Une autre pièce sans rapport"
+          ],
+          "rep": "Le bouchon et le récipient",
+          "expl": "Ces éléments interviennent dans la fermeture."
+        }
+      ],
+      "id": "REV-SC-CM1-16"
+    },
+    {
+      "axe": "Les objets techniques au cœur de la société",
+      "titre": "Programmer un objet",
+      "emoji": "🤖",
+      "en_une_phrase": "Un programme donne des instructions à un objet ou à un personnage virtuel.",
+      "comprendre": "Tu as déjà suivi une recette dans un ordre précis. Un programme fonctionne aussi par instructions successives. Tester le résultat permet de vérifier si le comportement attendu est obtenu.",
+      "essentiel": [
+        "Chaque instruction indique une action.",
+        "L’ordre des instructions compte.",
+        "Un essai permet de repérer une erreur."
+      ],
+      "image_mentale": "Imagine un pion qui suit des flèches sur un parcours.",
+      "regle_ou_methode": "Lis les instructions, prévois le trajet puis teste-le.",
+      "exemples": [
+        "Un personnage regarde vers le haut. Le programme dit : avancer d’une case, tourner à droite, avancer d’une case. Il arrive une case au-dessus et une case à droite du départ.",
+        "Avancer de deux cases puis reculer d’une laisse le personnage une case devant son point de départ."
+      ],
+      "piege": "Tourner change l’orientation mais ne fait pas avancer.",
+      "astuce_memoire": "Je prévois, je teste, je corrige.",
+      "quiz": [
+        {
+          "q": "Que fait l’instruction « tourner à droite » ?",
+          "choix": [
+            "Elle avance d’une case",
+            "Elle change le départ",
+            "Elle change l’orientation"
+          ],
+          "rep": "Elle change l’orientation",
+          "expl": "Tourner modifie la direction sans déplacement."
+        },
+        {
+          "q": "Avancer de deux cases puis reculer d’une case donne quel résultat ?",
+          "choix": [
+            "Une case devant le départ",
+            "Deux cases devant",
+            "Une case derrière"
+          ],
+          "rep": "Une case devant le départ",
+          "expl": "Deux pas en avant puis un en arrière laissent un pas en avant."
+        },
+        {
+          "q": "Le trajet obtenu ne correspond pas au trajet prévu. Que peux-tu faire ?",
+          "choix": [
+            "Supposer que l’ordre ne compte pas",
+            "Vérifier puis modifier les instructions",
+            "Effacer le quadrillage uniquement"
+          ],
+          "rep": "Vérifier puis modifier les instructions",
+          "expl": "Un test permet de repérer puis corriger le programme."
+        }
+      ],
+      "id": "REV-SC-CM1-17"
+    }
+  ]
+}

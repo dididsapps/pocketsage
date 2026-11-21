@@ -1,0 +1,540 @@
+{
+  "classe": "5E",
+  "niveau_appli": "5ème",
+  "age": "12-13 ans",
+  "matiere": "Physique-chimie",
+  "code": "PC",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Organisation et transformations de la matière",
+      "titre": "Corps pur et mélange",
+      "emoji": "🧪",
+      "en_une_phrase": "Un corps pur contient une seule espèce chimique ; un mélange en contient plusieurs.",
+      "comprendre": "Une eau minérale peut contenir de l’eau et des substances dissoutes. Son aspect transparent ne suffit pas à prouver qu’elle est pure. On distingue la composition de l’apparence.",
+      "essentiel": [
+        "Un corps pur contient une seule espèce chimique.",
+        "Un mélange contient plusieurs espèces chimiques.",
+        "Un mélange homogène paraît uniforme à l’œil nu."
+      ],
+      "image_mentale": "Imagine deux verres transparents : l’un d’eau pure, l’autre d’eau salée.",
+      "regle_ou_methode": "Cherche les espèces présentes et observe si le mélange paraît uniforme.",
+      "exemples": [
+        "Du sel dissous dans de l’eau forme un mélange : eau et sel sont présents. Il peut paraître homogène.",
+        "De l’eau pure ne contient que l’espèce chimique eau."
+      ],
+      "piege": "Transparent ne signifie pas forcément pur.",
+      "astuce_memoire": "Composition et apparence sont deux questions différentes.",
+      "quiz": [
+        {
+          "q": "L’eau salée est-elle un corps pur ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "Seulement si elle est transparente"
+          ],
+          "rep": "Non",
+          "expl": "Elle contient au moins de l’eau et du sel."
+        },
+        {
+          "q": "Que contient un corps pur ?",
+          "choix": [
+            "Forcément plusieurs espèces",
+            "Aucune matière",
+            "Une seule espèce chimique"
+          ],
+          "rep": "Une seule espèce chimique",
+          "expl": "Un corps pur est constitué d’une seule espèce chimique."
+        },
+        {
+          "q": "Un mélange homogène peut-il être transparent ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "Seulement s’il est solide"
+          ],
+          "rep": "Oui",
+          "expl": "Un mélange peut être transparent et contenir plusieurs espèces."
+        }
+      ],
+      "id": "REV-PC-5E-01"
+    },
+    {
+      "axe": "Organisation et transformations de la matière",
+      "titre": "Masse et volume",
+      "emoji": "⚖️",
+      "en_une_phrase": "Pour une substance homogène donnée, la masse est proportionnelle au volume.",
+      "comprendre": "Tu peux mesurer des volumes différents d’un même liquide. Si tu doubles le volume, tu doubles la quantité de matière et sa masse dans les mêmes conditions. La balance et l’éprouvette mesurent deux grandeurs différentes.",
+      "essentiel": [
+        "La masse s’exprime notamment en grammes.",
+        "Le volume s’exprime notamment en millilitres.",
+        "Pour une même substance homogène, masse et volume sont proportionnels."
+      ],
+      "image_mentale": "Imagine une éprouvette remplie une fois puis deux fois.",
+      "regle_ou_methode": "Mesure le volume, tare le récipient et mesure la masse.",
+      "exemples": [
+        "100 mL d’un liquide ont une masse de 80 g. Dans les mêmes conditions, 200 mL ont une masse de 160 g.",
+        "50 mL de ce même liquide ont une masse de 40 g."
+      ],
+      "piege": "Deux substances différentes n’ont pas nécessairement la même masse pour un même volume.",
+      "astuce_memoire": "Même substance : doubler le volume double la masse.",
+      "quiz": [
+        {
+          "q": "Si 100 mL pèsent 80 g, combien pèsent 200 mL de la même substance ?",
+          "choix": [
+            "100 g",
+            "40 g",
+            "160 g"
+          ],
+          "rep": "160 g",
+          "expl": "Le volume double donc la masse double."
+        },
+        {
+          "q": "Quelle grandeur mesure une éprouvette graduée ?",
+          "choix": [
+            "Un volume",
+            "Une durée",
+            "Une température"
+          ],
+          "rep": "Un volume",
+          "expl": "Elle mesure un volume de liquide."
+        },
+        {
+          "q": "Deux substances ont le même volume. Ont-elles forcément la même masse ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "Seulement si elles sont transparentes"
+          ],
+          "rep": "Non",
+          "expl": "Les masses peuvent être différentes."
+        }
+      ],
+      "id": "REV-PC-5E-02"
+    },
+    {
+      "axe": "Organisation et transformations de la matière",
+      "titre": "Changements d’état et masse",
+      "emoji": "🧊",
+      "en_une_phrase": "Lors d’un changement d’état dans un système fermé, la masse se conserve.",
+      "comprendre": "Un glaçon peut devenir liquide sans que l’eau disparaisse. Son état physique change, mais la quantité de matière est conservée si rien ne sort du système. Le volume peut, lui, changer.",
+      "essentiel": [
+        "La fusion est le passage du solide au liquide.",
+        "La vaporisation est le passage du liquide au gaz.",
+        "Dans un système fermé, la masse se conserve."
+      ],
+      "image_mentale": "Imagine un récipient fermé contenant un glaçon puis de l’eau.",
+      "regle_ou_methode": "Compare la masse totale avant et après en gardant le récipient fermé.",
+      "exemples": [
+        "Un récipient fermé avec son contenu a une masse de 150 g. Après fusion du glaçon, sa masse reste 150 g.",
+        "La vaporisation transforme un liquide en gaz."
+      ],
+      "piege": "La conservation de la masse ne signifie pas que le volume reste toujours identique.",
+      "astuce_memoire": "État différent, masse totale conservée.",
+      "quiz": [
+        {
+          "q": "Quelle est la masse après fusion dans l’exemple ?",
+          "choix": [
+            "150 g",
+            "0 g",
+            "300 g"
+          ],
+          "rep": "150 g",
+          "expl": "Rien ne sort du système fermé : la masse se conserve."
+        },
+        {
+          "q": "Quel changement transforme un liquide en gaz ?",
+          "choix": [
+            "La solidification",
+            "La vaporisation",
+            "La fusion"
+          ],
+          "rep": "La vaporisation",
+          "expl": "La vaporisation fait passer du liquide au gaz."
+        },
+        {
+          "q": "Le volume est-il forcément conservé lors d’un changement d’état ?",
+          "choix": [
+            "Oui",
+            "Seulement pour les solides",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Le volume peut changer même si la masse se conserve."
+        }
+      ],
+      "id": "REV-PC-5E-03"
+    },
+    {
+      "axe": "Organisation et transformations de la matière",
+      "titre": "Dissolution et séparation",
+      "emoji": "💧",
+      "en_une_phrase": "Une substance dissoute peut être récupérée par évaporation du liquide.",
+      "comprendre": "Le sel devient invisible lorsqu’il se dissout dans l’eau. Il reste pourtant présent. Si l’eau s’évapore, le sel peut rester dans le récipient.",
+      "essentiel": [
+        "Dissoudre ne fait pas disparaître la matière.",
+        "Un filtre ordinaire ne retient pas le sel dissous.",
+        "L’évaporation de l’eau peut laisser le sel."
+      ],
+      "image_mentale": "Imagine un récipient d’eau salée qui sèche et laisse des cristaux.",
+      "regle_ou_methode": "Identifie la substance dissoute puis choisis une méthode adaptée pour la récupérer.",
+      "exemples": [
+        "Du sel est dissous dans l’eau. La filtration ne le retient pas. Après évaporation de l’eau, du sel reste dans le récipient.",
+        "Un filtre peut retenir du sable non dissous dans l’eau."
+      ],
+      "piege": "Ne confonds pas un solide dissous et un solide en grains non dissous.",
+      "astuce_memoire": "Sel dissous : récupérer après évaporation.",
+      "quiz": [
+        {
+          "q": "La filtration ordinaire retient-elle le sel dissous ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "Seulement si l’eau est claire"
+          ],
+          "rep": "Non",
+          "expl": "Le sel dissous passe avec l’eau."
+        },
+        {
+          "q": "Comment peut-on récupérer le sel de l’eau salée ?",
+          "choix": [
+            "Avec une règle",
+            "En ajoutant du papier",
+            "Par évaporation de l’eau"
+          ],
+          "rep": "Par évaporation de l’eau",
+          "expl": "L’évaporation laisse le sel dans le récipient."
+        },
+        {
+          "q": "Quel solide peut être retenu par un filtre ?",
+          "choix": [
+            "Du sable non dissous",
+            "Du sel entièrement dissous",
+            "De l’eau pure"
+          ],
+          "rep": "Du sable non dissous",
+          "expl": "Un filtre adapté peut retenir le sable."
+        }
+      ],
+      "id": "REV-PC-5E-04"
+    },
+    {
+      "axe": "Mouvement et interactions",
+      "titre": "Décrire un mouvement",
+      "emoji": "🚲",
+      "en_une_phrase": "Un mouvement se décrit par rapport à une référence, avec une trajectoire et une vitesse.",
+      "comprendre": "Une personne assise dans un véhicule peut être immobile par rapport au siège et mobile par rapport à la route. La trajectoire décrit les positions successives. La vitesse indique l’évolution du déplacement.",
+      "essentiel": [
+        "Précise la référence.",
+        "Une trajectoire peut être rectiligne ou circulaire.",
+        "La vitesse peut augmenter, diminuer ou rester constante."
+      ],
+      "image_mentale": "Imagine un vélo suivant une route droite vu depuis le trottoir.",
+      "regle_ou_methode": "Choisis une référence puis décris la trajectoire et la vitesse.",
+      "exemples": [
+        "Par rapport au trottoir, un vélo suit une route droite : sa trajectoire est rectiligne. S’il ralentit, sa vitesse diminue.",
+        "Par rapport au siège, une personne assise immobile garde la même position."
+      ],
+      "piege": "Un mouvement ne se décrit pas complètement sans préciser la référence.",
+      "astuce_memoire": "Référence, trajectoire, vitesse.",
+      "quiz": [
+        {
+          "q": "Une trajectoire en ligne droite est…",
+          "choix": [
+            "circulaire",
+            "forcément immobile",
+            "rectiligne"
+          ],
+          "rep": "rectiligne",
+          "expl": "Rectiligne signifie en ligne droite."
+        },
+        {
+          "q": "Que devient la vitesse quand on ralentit ?",
+          "choix": [
+            "Elle diminue",
+            "Elle augmente",
+            "Elle devient une masse"
+          ],
+          "rep": "Elle diminue",
+          "expl": "Ralentir signifie diminuer la vitesse."
+        },
+        {
+          "q": "Une personne assise est-elle immobile par rapport à son siège ?",
+          "choix": [
+            "Non, jamais",
+            "Oui, si elle garde sa position",
+            "Seulement si le véhicule est rouge"
+          ],
+          "rep": "Oui, si elle garde sa position",
+          "expl": "Sa position par rapport au siège ne change pas."
+        }
+      ],
+      "id": "REV-PC-5E-05"
+    },
+    {
+      "axe": "Mouvement et interactions",
+      "titre": "Calculer une vitesse moyenne",
+      "emoji": "⏱️",
+      "en_une_phrase": "La vitesse moyenne est la distance parcourue divisée par la durée du trajet.",
+      "comprendre": "Deux trajets peuvent avoir des distances et des durées différentes. Le quotient donne une vitesse moyenne sur l’ensemble du trajet. Elle ne dit pas que la vitesse a été constante à chaque instant.",
+      "essentiel": [
+        "Vitesse moyenne = distance ÷ durée.",
+        "Avec des kilomètres et des heures, on obtient des km/h.",
+        "La vitesse peut varier pendant le trajet."
+      ],
+      "image_mentale": "Imagine une route de 60 km parcourue en 2 h avec des moments plus ou moins rapides.",
+      "regle_ou_methode": "Choisis des unités compatibles puis divise la distance par la durée.",
+      "exemples": [
+        "Pour 60 km en 2 h, calcule 60 ÷ 2 = 30. La vitesse moyenne est 30 km/h.",
+        "Pour 120 m en 20 s, la vitesse moyenne est 6 m/s."
+      ],
+      "piege": "Une vitesse moyenne de 30 km/h ne signifie pas 30 km/h à chaque instant.",
+      "astuce_memoire": "Distance divisée par durée.",
+      "quiz": [
+        {
+          "q": "60 km en 2 h : quelle vitesse moyenne ?",
+          "choix": [
+            "30 km/h",
+            "120 km/h",
+            "58 km/h"
+          ],
+          "rep": "30 km/h",
+          "expl": "60 ÷ 2 = 30 km/h."
+        },
+        {
+          "q": "120 m en 20 s : quelle vitesse moyenne ?",
+          "choix": [
+            "100 m/s",
+            "6 m/s",
+            "140 m/s"
+          ],
+          "rep": "6 m/s",
+          "expl": "120 ÷ 20 = 6 m/s."
+        },
+        {
+          "q": "La vitesse est-elle forcément constante pendant le trajet ?",
+          "choix": [
+            "Oui",
+            "Seulement si le trajet est long",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Une moyenne peut résumer des vitesses variables."
+        }
+      ],
+      "id": "REV-PC-5E-06"
+    },
+    {
+      "axe": "L’énergie et ses conversions",
+      "titre": "Sources et formes d’énergie",
+      "emoji": "🔋",
+      "en_une_phrase": "Une source d’énergie peut fournir de l’énergie transférée ou convertie par un système.",
+      "comprendre": "Une lampe alimentée par une pile éclaire. La pile stocke de l’énergie chimique et le circuit transfère de l’énergie électrique. La lampe fournit notamment de la lumière et chauffe.",
+      "essentiel": [
+        "Une pile stocke de l’énergie chimique.",
+        "Un circuit peut transférer de l’énergie électrique.",
+        "Une lampe fournit de la lumière et de la chaleur."
+      ],
+      "image_mentale": "Imagine une chaîne de la pile vers la lampe puis vers la lumière.",
+      "regle_ou_methode": "Identifie la source, le transfert et les effets produits.",
+      "exemples": [
+        "Une pile alimente une lampe. L’énergie chimique de la pile permet un transfert électrique ; la lampe émet de la lumière et chauffe.",
+        "Un moteur électrique peut mettre un objet en mouvement."
+      ],
+      "piege": "La lumière n’est pas la seule forme d’énergie liée au fonctionnement de la lampe.",
+      "astuce_memoire": "Source, transfert, conversion.",
+      "quiz": [
+        {
+          "q": "Quelle énergie est stockée dans une pile ?",
+          "choix": [
+            "Uniquement de l’énergie sonore",
+            "De l’énergie chimique",
+            "Aucune énergie"
+          ],
+          "rep": "De l’énergie chimique",
+          "expl": "La pile stocke de l’énergie chimique."
+        },
+        {
+          "q": "Que fournit une lampe allumée ?",
+          "choix": [
+            "Uniquement de la matière",
+            "De la neige nécessairement",
+            "De la lumière et de la chaleur"
+          ],
+          "rep": "De la lumière et de la chaleur",
+          "expl": "Elle émet de la lumière et chauffe."
+        },
+        {
+          "q": "Que peut produire un moteur électrique ?",
+          "choix": [
+            "Un mouvement",
+            "Un océan",
+            "Une espèce animale"
+          ],
+          "rep": "Un mouvement",
+          "expl": "Le moteur peut mettre un objet en mouvement."
+        }
+      ],
+      "id": "REV-PC-5E-07"
+    },
+    {
+      "axe": "L’énergie et ses conversions",
+      "titre": "Circuit électrique en série",
+      "emoji": "💡",
+      "en_une_phrase": "Dans un circuit à une boucle, les composants sont traversés successivement par le courant lorsque la boucle est fermée.",
+      "comprendre": "Une pile peut alimenter une lampe reliée par des fils. Le courant circule si le circuit forme une boucle fermée et si les composants fonctionnent. Un interrupteur ouvert interrompt cette boucle.",
+      "essentiel": [
+        "Un générateur fournit l’énergie électrique.",
+        "Une boucle fermée permet la circulation du courant dans ce montage.",
+        "Un interrupteur ouvert interrompt la boucle."
+      ],
+      "image_mentale": "Imagine une pile, une lampe et un interrupteur reliés en boucle.",
+      "regle_ou_methode": "Suis les fils et vérifie que la boucle est fermée.",
+      "exemples": [
+        "Une pile, une lampe et un interrupteur fermé forment une boucle complète : la lampe peut s’allumer.",
+        "Si l’interrupteur est ouvert, la boucle est interrompue et la lampe s’éteint."
+      ],
+      "piege": "Un fil relié à une seule borne de la pile ne suffit pas à former une boucle.",
+      "astuce_memoire": "Boucle fermée : circulation possible.",
+      "quiz": [
+        {
+          "q": "Que fait un interrupteur ouvert ?",
+          "choix": [
+            "Il garantit l’allumage",
+            "Il remplace la pile",
+            "Il interrompt la boucle"
+          ],
+          "rep": "Il interrompt la boucle",
+          "expl": "L’ouverture interrompt le circuit."
+        },
+        {
+          "q": "Quel composant fournit l’énergie électrique au montage ?",
+          "choix": [
+            "La pile",
+            "Le fil seul",
+            "La table"
+          ],
+          "rep": "La pile",
+          "expl": "La pile joue le rôle de générateur."
+        },
+        {
+          "q": "Une seule connexion à la pile suffit-elle à former une boucle ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "Seulement si la lampe est neuve"
+          ],
+          "rep": "Non",
+          "expl": "Le circuit doit former une boucle complète."
+        }
+      ],
+      "id": "REV-PC-5E-08"
+    },
+    {
+      "axe": "Des signaux pour observer et communiquer",
+      "titre": "Sources et propagation de la lumière",
+      "emoji": "🔦",
+      "en_une_phrase": "Un objet est visible lorsque de la lumière provenant de lui arrive dans l’œil.",
+      "comprendre": "Une lampe émet sa propre lumière. Un livre éclairé diffuse une partie de la lumière qu’il reçoit. Dans les deux cas, de la lumière doit entrer dans l’œil pour voir l’objet.",
+      "essentiel": [
+        "Une source primaire émet sa propre lumière.",
+        "Un objet éclairé peut diffuser de la lumière.",
+        "La lumière doit atteindre l’œil pour permettre la vision."
+      ],
+      "image_mentale": "Imagine une lampe éclairant un livre puis une flèche du livre vers l’œil.",
+      "regle_ou_methode": "Repère la source, l’objet éclairé et le trajet de la lumière.",
+      "exemples": [
+        "Une lampe éclaire un livre. Le livre diffuse une partie de cette lumière vers l’œil : il devient visible.",
+        "Une étoile est une source primaire de lumière."
+      ],
+      "piege": "L’œil ne projette pas un rayon lumineux sur l’objet pour le voir.",
+      "astuce_memoire": "Source, objet éclairé, lumière vers l’œil.",
+      "quiz": [
+        {
+          "q": "Quel objet émet sa propre lumière ?",
+          "choix": [
+            "Une lampe allumée",
+            "Un livre non éclairé",
+            "Une table opaque"
+          ],
+          "rep": "Une lampe allumée",
+          "expl": "La lampe allumée est une source primaire."
+        },
+        {
+          "q": "Pourquoi voit-on un livre éclairé ?",
+          "choix": [
+            "L’œil envoie nécessairement de la lumière vers lui",
+            "Il diffuse de la lumière vers l’œil",
+            "Il disparaît"
+          ],
+          "rep": "Il diffuse de la lumière vers l’œil",
+          "expl": "Le livre diffuse une partie de la lumière reçue."
+        },
+        {
+          "q": "Une étoile est-elle une source primaire ?",
+          "choix": [
+            "Non",
+            "Seulement si elle est dessinée",
+            "Oui"
+          ],
+          "rep": "Oui",
+          "expl": "Une étoile émet sa propre lumière."
+        }
+      ],
+      "id": "REV-PC-5E-09"
+    },
+    {
+      "axe": "Des signaux pour observer et communiquer",
+      "titre": "Le signal sonore",
+      "emoji": "🔊",
+      "en_une_phrase": "Un son est lié à une vibration qui se propage dans un milieu matériel.",
+      "comprendre": "Une corde pincée vibre et produit un son. Cette vibration met en mouvement le milieu environnant et un signal peut atteindre l’oreille. Le son ne se propage pas dans le vide.",
+      "essentiel": [
+        "Une vibration peut produire un son.",
+        "Le son se propage dans un milieu matériel comme l’air.",
+        "L’oreille reçoit le signal sonore."
+      ],
+      "image_mentale": "Imagine une corde vibrante et une perturbation qui atteint une oreille.",
+      "regle_ou_methode": "Identifie la source, le milieu de propagation et le récepteur.",
+      "exemples": [
+        "Une corde pincée vibre. Le son se propage dans l’air et atteint l’oreille.",
+        "Dans le vide, il n’y a pas de milieu matériel pour transmettre le son."
+      ],
+      "piege": "Le son et la lumière ne nécessitent pas les mêmes conditions de propagation.",
+      "astuce_memoire": "Source vibrante, milieu, oreille.",
+      "quiz": [
+        {
+          "q": "Que fait une corde qui produit un son ?",
+          "choix": [
+            "Elle devient une étoile",
+            "Elle vibre",
+            "Elle cesse d’exister"
+          ],
+          "rep": "Elle vibre",
+          "expl": "La vibration de la corde produit le son."
+        },
+        {
+          "q": "Le son se propage-t-il dans le vide ?",
+          "choix": [
+            "Oui",
+            "Seulement à midi",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Le son nécessite un milieu matériel."
+        },
+        {
+          "q": "Quel organe reçoit le signal sonore ?",
+          "choix": [
+            "L’oreille",
+            "Le genou",
+            "La main uniquement"
+          ],
+          "rep": "L’oreille",
+          "expl": "L’oreille participe à la réception du son."
+        }
+      ],
+      "id": "REV-PC-5E-10"
+    }
+  ]
+}

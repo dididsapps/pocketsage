@@ -1,0 +1,752 @@
+{
+  "classe": "6E",
+  "niveau_appli": "6ème",
+  "age": "11-12 ans",
+  "matiere": "Mathématiques",
+  "code": "MA",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Un milliard et les rangs",
+      "emoji": "🔢",
+      "en_une_phrase": "Un milliard vaut mille millions.",
+      "comprendre": "Tu sais lire des nombres en regroupant leurs chiffres par classes de trois. Après les millions vient la classe des milliards. La position d’un chiffre indique sa valeur.",
+      "essentiel": [
+        "Un milliard s’écrit 1 000 000 000.",
+        "Un milliard vaut 1 000 millions.",
+        "On lit les classes de gauche à droite."
+      ],
+      "image_mentale": "Imagine des cases de trois chiffres : milliards, millions, milliers et unités.",
+      "regle_ou_methode": "Sépare les classes puis lis chacune avec son nom.",
+      "exemples": [
+        "Dans 2 003 000 000, le 2 représente deux milliards et le 3 trois millions. On lit deux milliards trois millions.",
+        "1 000 millions forment un milliard."
+      ],
+      "piege": "Un milliard ne vaut pas un million.",
+      "astuce_memoire": "Mille millions font un milliard.",
+      "quiz": [
+        {
+          "q": "Combien de millions font un milliard ?",
+          "choix": [
+            "100",
+            "1 000",
+            "10"
+          ],
+          "rep": "1 000",
+          "expl": "Un milliard vaut mille millions."
+        },
+        {
+          "q": "Que représente le 2 dans 2 003 000 000 ?",
+          "choix": [
+            "Deux millions",
+            "Deux milliers",
+            "Deux milliards"
+          ],
+          "rep": "Deux milliards",
+          "expl": "Le 2 est dans la classe des milliards."
+        },
+        {
+          "q": "Quelle écriture représente un milliard ?",
+          "choix": [
+            "1 000 000 000",
+            "1 000 000",
+            "100 000"
+          ],
+          "rep": "1 000 000 000",
+          "expl": "Un milliard s’écrit avec neuf zéros après le 1."
+        }
+      ],
+      "id": "REV-MA-6E-01"
+    },
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Décimaux et fractions décimales",
+      "emoji": "🔟",
+      "en_une_phrase": "Une fraction de dénominateur 10, 100 ou 1 000 peut s’écrire avec une virgule.",
+      "comprendre": "Un centième est une part obtenue en partageant l’unité en cent parts égales. Les positions après la virgule traduisent ces parts. Deux écritures différentes peuvent désigner le même nombre.",
+      "essentiel": [
+        "1/10 = 0,1.",
+        "1/100 = 0,01.",
+        "1/1 000 = 0,001."
+      ],
+      "image_mentale": "Imagine une unité divisée en cent cases et sept cases coloriées.",
+      "regle_ou_methode": "Identifie le dénominateur puis place le chiffre au bon rang.",
+      "exemples": [
+        "7/100 représente sept centièmes. Le 7 se place au deuxième rang après la virgule : 0,07.",
+        "135/100 = 1,35."
+      ],
+      "piege": "0,7 représente sept dixièmes, pas sept centièmes.",
+      "astuce_memoire": "Dixièmes, centièmes, millièmes.",
+      "quiz": [
+        {
+          "q": "Quelle écriture vaut 7/100 ?",
+          "choix": [
+            "0,7",
+            "0,007",
+            "0,07"
+          ],
+          "rep": "0,07",
+          "expl": "Sept centièmes s’écrivent 0,07."
+        },
+        {
+          "q": "Quelle fraction vaut 0,1 ?",
+          "choix": [
+            "1/10",
+            "1/100",
+            "1/1 000"
+          ],
+          "rep": "1/10",
+          "expl": "0,1 est un dixième."
+        },
+        {
+          "q": "Quelle écriture vaut 135/100 ?",
+          "choix": [
+            "13,5",
+            "1,35",
+            "0,135"
+          ],
+          "rep": "1,35",
+          "expl": "135 centièmes font une unité et 35 centièmes."
+        }
+      ],
+      "id": "REV-MA-6E-02"
+    },
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Multiplier des décimaux",
+      "emoji": "✖️",
+      "en_une_phrase": "Multiplier deux décimaux peut se comprendre à partir des fractions décimales.",
+      "comprendre": "Tu sais multiplier des nombres entiers. Un décimal peut aussi être écrit comme une fraction décimale. On multiplie les numérateurs puis on tient compte de la taille des parts.",
+      "essentiel": [
+        "0,3 = 3/10.",
+        "Multiplier par 0,1 revient à diviser par 10.",
+        "Un ordre de grandeur aide à vérifier le résultat."
+      ],
+      "image_mentale": "Imagine un rectangle de 0,3 unité sur 0,2 unité.",
+      "regle_ou_methode": "Écris les décimaux en dixièmes puis multiplie les entiers et les dénominateurs.",
+      "exemples": [
+        "0,3 × 0,2 = 3/10 × 2/10. Cela donne 6/100, soit 0,06.",
+        "1,2 × 0,5 = 0,6 : la moitié de 1,2."
+      ],
+      "piege": "Multiplier par un nombre inférieur à 1 ne rend pas toujours le résultat plus grand.",
+      "astuce_memoire": "Des dixièmes multipliés donnent ici des centièmes.",
+      "quiz": [
+        {
+          "q": "Combien font 0,3 × 0,2 ?",
+          "choix": [
+            "0,06",
+            "0,6",
+            "6"
+          ],
+          "rep": "0,06",
+          "expl": "Trois dixièmes fois deux dixièmes donnent six centièmes."
+        },
+        {
+          "q": "Combien font 1,2 × 0,5 ?",
+          "choix": [
+            "6",
+            "0,6",
+            "1,7"
+          ],
+          "rep": "0,6",
+          "expl": "Multiplier par 0,5 revient ici à prendre la moitié."
+        },
+        {
+          "q": "Multiplier 4 par 0,1 revient à…",
+          "choix": [
+            "Multiplier 4 par 10",
+            "Ajouter 10",
+            "Diviser 4 par 10"
+          ],
+          "rep": "Diviser 4 par 10",
+          "expl": "Un dixième de 4 vaut 4 divisé par 10."
+        }
+      ],
+      "id": "REV-MA-6E-03"
+    },
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "La fraction comme quotient",
+      "emoji": "➗",
+      "en_une_phrase": "La fraction a/b représente le quotient de a par b lorsque b est non nul.",
+      "comprendre": "Partager trois unités entre quatre personnes donne trois quarts d’unité à chacune. L’écriture 3/4 représente aussi le résultat de 3 divisé par 4. La fraction permet donc d’écrire un quotient exact.",
+      "essentiel": [
+        "Le dénominateur doit être non nul.",
+        "3/4 = 3 ÷ 4.",
+        "3/4 = 0,75."
+      ],
+      "image_mentale": "Imagine trois bandes partagées équitablement entre quatre personnes.",
+      "regle_ou_methode": "Lis le numérateur comme quantité à partager et le dénominateur comme nombre de parts.",
+      "exemples": [
+        "Trois pizzas identiques sont partagées également entre quatre personnes. Chacune reçoit 3/4 de pizza.",
+        "5/2 = 5 ÷ 2 = 2,5."
+      ],
+      "piege": "On ne peut pas diviser par zéro.",
+      "astuce_memoire": "a/b signifie a divisé par b.",
+      "quiz": [
+        {
+          "q": "Que signifie 3/4 ?",
+          "choix": [
+            "4 divisé par 3",
+            "3 divisé par 4",
+            "3 plus 4"
+          ],
+          "rep": "3 divisé par 4",
+          "expl": "Le numérateur est divisé par le dénominateur."
+        },
+        {
+          "q": "Combien vaut 5/2 ?",
+          "choix": [
+            "0,4",
+            "7",
+            "2,5"
+          ],
+          "rep": "2,5",
+          "expl": "5 ÷ 2 = 2,5."
+        },
+        {
+          "q": "Quel dénominateur est interdit dans une fraction ?",
+          "choix": [
+            "0",
+            "2",
+            "10"
+          ],
+          "rep": "0",
+          "expl": "La division par zéro n’est pas définie."
+        }
+      ],
+      "id": "REV-MA-6E-04"
+    },
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Comprendre un pourcentage",
+      "emoji": "💯",
+      "en_une_phrase": "Un pourcentage représente une quantité rapportée à cent.",
+      "comprendre": "Pour comparer des groupes de tailles différentes, on peut raisonner sur cent éléments. Le symbole % signifie « pour cent ». Un pourcentage s’écrit aussi comme une fraction de dénominateur cent.",
+      "essentiel": [
+        "25 % = 25/100.",
+        "50 % représente la moitié.",
+        "100 % représente la totalité."
+      ],
+      "image_mentale": "Imagine une grille de cent cases dont vingt-cinq sont coloriées.",
+      "regle_ou_methode": "Lis le nombre de parts pour cent puis relie-le à une fraction.",
+      "exemples": [
+        "Sur 100 cases, 25 sont coloriées : cela représente 25 %. On écrit aussi 25/100.",
+        "50 % d’une quantité représente sa moitié."
+      ],
+      "piege": "25 % ne signifie pas 25 unités quelle que soit la quantité de départ.",
+      "astuce_memoire": "% signifie pour cent.",
+      "quiz": [
+        {
+          "q": "Quelle fraction correspond à 25 % ?",
+          "choix": [
+            "25/10",
+            "100/25",
+            "25/100"
+          ],
+          "rep": "25/100",
+          "expl": "25 % signifie 25 pour 100."
+        },
+        {
+          "q": "Que représente 50 % ?",
+          "choix": [
+            "La moitié",
+            "Le double",
+            "La totalité"
+          ],
+          "rep": "La moitié",
+          "expl": "50/100 est égal à la moitié."
+        },
+        {
+          "q": "Combien valent 100 % d’une quantité ?",
+          "choix": [
+            "La moitié",
+            "La totalité",
+            "Rien"
+          ],
+          "rep": "La totalité",
+          "expl": "Cent pour cent correspond à toute la quantité."
+        }
+      ],
+      "id": "REV-MA-6E-05"
+    },
+    {
+      "axe": "Nombres, calcul et résolution de problèmes",
+      "titre": "Arrondir un décimal",
+      "emoji": "🎯",
+      "en_une_phrase": "Arrondir permet de donner une valeur proche à un rang choisi.",
+      "comprendre": "Une mesure peut contenir plus de chiffres que nécessaire. Pour arrondir au dixième, on regarde le chiffre des centièmes. Il indique si l’on conserve ou augmente le dixième.",
+      "essentiel": [
+        "Choisis d’abord le rang demandé.",
+        "Si le chiffre suivant est inférieur à 5, on conserve le rang.",
+        "S’il est au moins égal à 5, on augmente le rang d’une unité."
+      ],
+      "image_mentale": "Imagine deux graduations voisines sur une droite.",
+      "regle_ou_methode": "Repère les deux valeurs voisines puis choisis la plus proche.",
+      "exemples": [
+        "Pour arrondir 3,46 au dixième, observe le centième 6. Il est au moins égal à 5 : 3,46 s’arrondit à 3,5.",
+        "2,31 s’arrondit à 2,3 au dixième."
+      ],
+      "piege": "Un arrondi n’est pas toujours égal au nombre de départ.",
+      "astuce_memoire": "Je regarde le chiffre juste après le rang choisi.",
+      "quiz": [
+        {
+          "q": "Quel est l’arrondi de 3,46 au dixième ?",
+          "choix": [
+            "3,5",
+            "3,4",
+            "3,46"
+          ],
+          "rep": "3,5",
+          "expl": "Le centième 6 conduit à augmenter le dixième."
+        },
+        {
+          "q": "Quel est l’arrondi de 2,31 au dixième ?",
+          "choix": [
+            "2,4",
+            "2,3",
+            "2"
+          ],
+          "rep": "2,3",
+          "expl": "Le centième 1 est inférieur à 5."
+        },
+        {
+          "q": "Quel chiffre regarde-t-on pour arrondir au dixième ?",
+          "choix": [
+            "Celui des milliers uniquement",
+            "Le premier chiffre à gauche seulement",
+            "Le chiffre des centièmes"
+          ],
+          "rep": "Le chiffre des centièmes",
+          "expl": "Le centième suit le dixième."
+        }
+      ],
+      "id": "REV-MA-6E-06"
+    },
+    {
+      "axe": "Grandeurs et mesures",
+      "titre": "Périmètre et aire",
+      "emoji": "📏",
+      "en_une_phrase": "Le périmètre mesure le contour ; l’aire mesure la surface.",
+      "comprendre": "Une clôture suit le bord d’un jardin. Une pelouse occupe sa surface. Ces deux grandeurs utilisent des méthodes et des unités différentes.",
+      "essentiel": [
+        "Le périmètre d’un rectangle est la somme de ses côtés.",
+        "Son aire est longueur × largeur.",
+        "Une aire s’exprime par exemple en cm²."
+      ],
+      "image_mentale": "Imagine une clôture autour d’un rectangle et des carreaux à l’intérieur.",
+      "regle_ou_methode": "Pour le contour additionne les côtés ; pour la surface multiplie longueur et largeur.",
+      "exemples": [
+        "Un rectangle de 6 cm sur 4 cm a pour périmètre 6 + 4 + 6 + 4 = 20 cm. Son aire est 6 × 4 = 24 cm².",
+        "Un carré de côté 3 cm a une aire de 9 cm²."
+      ],
+      "piege": "Ne donne pas une aire en centimètres simples.",
+      "astuce_memoire": "Contour en cm ; surface en cm².",
+      "quiz": [
+        {
+          "q": "Quel est le périmètre d’un rectangle de 6 cm sur 4 cm ?",
+          "choix": [
+            "24 cm²",
+            "20 cm",
+            "10 cm"
+          ],
+          "rep": "20 cm",
+          "expl": "6 + 4 + 6 + 4 = 20 cm."
+        },
+        {
+          "q": "Quelle est son aire ?",
+          "choix": [
+            "20 cm",
+            "10 cm²",
+            "24 cm²"
+          ],
+          "rep": "24 cm²",
+          "expl": "6 × 4 = 24 cm²."
+        },
+        {
+          "q": "Quelle grandeur mesure le contour ?",
+          "choix": [
+            "Le périmètre",
+            "L’aire",
+            "La température"
+          ],
+          "rep": "Le périmètre",
+          "expl": "Le périmètre mesure la longueur du contour."
+        }
+      ],
+      "id": "REV-MA-6E-07"
+    },
+    {
+      "axe": "Grandeurs et mesures",
+      "titre": "Le volume d’un pavé droit",
+      "emoji": "📦",
+      "en_une_phrase": "Le volume d’un pavé droit se calcule en multipliant ses trois dimensions.",
+      "comprendre": "Une boîte occupe un espace en trois dimensions. On peut la remplir avec de petits cubes identiques rangés en couches. Le nombre de cubes donne son volume.",
+      "essentiel": [
+        "Volume = longueur × largeur × hauteur.",
+        "Les dimensions doivent utiliser la même unité.",
+        "Un volume peut s’exprimer en cm³."
+      ],
+      "image_mentale": "Imagine une boîte remplie de petits cubes en plusieurs couches.",
+      "regle_ou_methode": "Multiplie le nombre de cubes d’une couche par le nombre de couches.",
+      "exemples": [
+        "Une boîte mesure 4 cm, 3 cm et 2 cm. Une couche contient 4 × 3 = 12 cubes de 1 cm³. Deux couches contiennent 24 cubes : son volume est 24 cm³.",
+        "Un cube de côté 2 cm a un volume de 2 × 2 × 2 = 8 cm³."
+      ],
+      "piege": "Une aire en cm² ne mesure pas un volume en cm³.",
+      "astuce_memoire": "Trois dimensions multipliées.",
+      "quiz": [
+        {
+          "q": "Quel est le volume de 4 cm × 3 cm × 2 cm ?",
+          "choix": [
+            "12 cm²",
+            "9 cm³",
+            "24 cm³"
+          ],
+          "rep": "24 cm³",
+          "expl": "4 × 3 × 2 = 24 cm³."
+        },
+        {
+          "q": "Quel est le volume d’un cube de côté 2 cm ?",
+          "choix": [
+            "8 cm³",
+            "6 cm³",
+            "4 cm²"
+          ],
+          "rep": "8 cm³",
+          "expl": "2 × 2 × 2 = 8 cm³."
+        },
+        {
+          "q": "Combien de dimensions utilise cette formule ?",
+          "choix": [
+            "Deux",
+            "Trois",
+            "Une"
+          ],
+          "rep": "Trois",
+          "expl": "Longueur, largeur et hauteur sont utilisées."
+        }
+      ],
+      "id": "REV-MA-6E-08"
+    },
+    {
+      "axe": "Espace et géométrie",
+      "titre": "Angles et rapporteur",
+      "emoji": "📐",
+      "en_une_phrase": "Un rapporteur permet de mesurer un angle en degrés.",
+      "comprendre": "Tu reconnais déjà un angle droit de 90°. Un rapporteur porte des graduations qui permettent de mesurer d’autres ouvertures. Son centre se place sur le sommet de l’angle.",
+      "essentiel": [
+        "Le sommet est le point commun aux deux côtés.",
+        "Place le centre du rapporteur sur le sommet.",
+        "Lis la graduation qui commence à zéro sur le premier côté."
+      ],
+      "image_mentale": "Imagine un demi-cercle gradué posé sur le sommet.",
+      "regle_ou_methode": "Place le centre, aligne zéro avec un côté puis lis l’autre côté.",
+      "exemples": [
+        "Place le centre sur le sommet et le zéro sur un côté. Si l’autre côté indique 60°, l’angle mesure 60°.",
+        "Un angle droit mesure 90°."
+      ],
+      "piege": "Le rapporteur comporte souvent deux séries de nombres : choisis celle qui commence au zéro aligné.",
+      "astuce_memoire": "Centre, zéro, lecture.",
+      "quiz": [
+        {
+          "q": "Où placer le centre du rapporteur ?",
+          "choix": [
+            "Sur le sommet de l’angle",
+            "Au milieu d’un côté au hasard",
+            "Sur le coin de la feuille uniquement"
+          ],
+          "rep": "Sur le sommet de l’angle",
+          "expl": "Le centre doit coïncider avec le sommet."
+        },
+        {
+          "q": "Combien mesure un angle droit ?",
+          "choix": [
+            "60°",
+            "90°",
+            "180°"
+          ],
+          "rep": "90°",
+          "expl": "Un angle droit mesure 90 degrés."
+        },
+        {
+          "q": "Quelle graduation faut-il suivre ?",
+          "choix": [
+            "Toujours la plus grande",
+            "Toujours la première visible",
+            "Celle qui commence à zéro sur le côté aligné"
+          ],
+          "rep": "Celle qui commence à zéro sur le côté aligné",
+          "expl": "La bonne série commence au zéro aligné."
+        }
+      ],
+      "id": "REV-MA-6E-09"
+    },
+    {
+      "axe": "Espace et géométrie",
+      "titre": "Triangles et propriétés",
+      "emoji": "🔺",
+      "en_une_phrase": "Les propriétés des côtés et des angles permettent de reconnaître des triangles particuliers.",
+      "comprendre": "Tous les triangles ont trois côtés. Certains ont des côtés égaux ou un angle droit. Une figure peut posséder plusieurs propriétés à la fois.",
+      "essentiel": [
+        "Un triangle isocèle a au moins deux côtés de même longueur.",
+        "Un triangle équilatéral a trois côtés de même longueur.",
+        "Un triangle rectangle possède un angle droit."
+      ],
+      "image_mentale": "Imagine trois triangles avec des marques sur leurs côtés et leurs angles.",
+      "regle_ou_methode": "Observe les marques d’égalité et l’éventuel angle droit.",
+      "exemples": [
+        "Un triangle a des côtés de 5 cm, 5 cm et 6 cm. Deux côtés sont égaux : il est isocèle.",
+        "Un triangle ayant trois côtés de 4 cm est équilatéral."
+      ],
+      "piege": "Ne reconnais pas un angle droit seulement à l’apparence : vérifie le codage ou utilise une équerre.",
+      "astuce_memoire": "Isocèle : deux côtés égaux ; équilatéral : trois.",
+      "quiz": [
+        {
+          "q": "Un triangle de côtés 5, 5 et 6 cm est…",
+          "choix": [
+            "équilatéral",
+            "isocèle",
+            "un cercle"
+          ],
+          "rep": "isocèle",
+          "expl": "Deux de ses côtés sont égaux."
+        },
+        {
+          "q": "Un triangle de trois côtés égaux est…",
+          "choix": [
+            "forcément sans sommet",
+            "un carré",
+            "équilatéral"
+          ],
+          "rep": "équilatéral",
+          "expl": "Ses trois côtés ont la même longueur."
+        },
+        {
+          "q": "Quelle propriété définit un triangle rectangle ?",
+          "choix": [
+            "Un angle droit",
+            "Trois côtés égaux",
+            "Quatre côtés"
+          ],
+          "rep": "Un angle droit",
+          "expl": "Un triangle rectangle possède un angle droit."
+        }
+      ],
+      "id": "REV-MA-6E-10"
+    },
+    {
+      "axe": "Organisation et gestion de données et probabilités",
+      "titre": "Lire un diagramme",
+      "emoji": "📊",
+      "en_une_phrase": "Un diagramme traduit des données par des formes que l’on peut comparer.",
+      "comprendre": "Un tableau et un graphique peuvent présenter les mêmes informations. Les axes, les catégories et l’échelle expliquent comment lire les valeurs. Il faut les examiner avant de calculer.",
+      "essentiel": [
+        "Le titre indique le sujet.",
+        "Les axes et la légende précisent les données.",
+        "L’échelle indique la valeur des graduations."
+      ],
+      "image_mentale": "Imagine un diagramme en barres avec des graduations de deux en deux.",
+      "regle_ou_methode": "Lis le titre, l’échelle puis la hauteur correspondant à chaque catégorie.",
+      "exemples": [
+        "Si une graduation vaut 2 élèves, une barre de 4 graduations représente 8 élèves.",
+        "Une barre de 6 élèves dépasse une barre de 4 élèves de 2 élèves."
+      ],
+      "piege": "Ne compte pas les graduations sans lire leur valeur.",
+      "astuce_memoire": "Titre, axes, échelle, valeurs.",
+      "quiz": [
+        {
+          "q": "Une graduation vaut 2 élèves. Quatre graduations représentent…",
+          "choix": [
+            "4 élèves",
+            "6 élèves",
+            "8 élèves"
+          ],
+          "rep": "8 élèves",
+          "expl": "4 × 2 = 8."
+        },
+        {
+          "q": "Quelle différence entre 6 et 4 élèves ?",
+          "choix": [
+            "2 élèves",
+            "10 élèves",
+            "4 élèves"
+          ],
+          "rep": "2 élèves",
+          "expl": "6 − 4 = 2."
+        },
+        {
+          "q": "Que faut-il vérifier pour lire une barre ?",
+          "choix": [
+            "La couleur du bureau",
+            "L’échelle",
+            "Le prénom de l’auteur uniquement"
+          ],
+          "rep": "L’échelle",
+          "expl": "L’échelle donne la valeur de chaque graduation."
+        }
+      ],
+      "id": "REV-MA-6E-11"
+    },
+    {
+      "axe": "Organisation et gestion de données et probabilités",
+      "titre": "Probabilités simples",
+      "emoji": "🎲",
+      "en_une_phrase": "Dans une expérience aléatoire, une probabilité mesure la chance d’un événement.",
+      "comprendre": "On ne peut pas prévoir avec certitude le résultat d’un lancer de dé équilibré. Les six faces ont alors la même chance de sortir. Pour un événement, on compte les issues favorables parmi les issues possibles.",
+      "essentiel": [
+        "Une issue est un résultat possible.",
+        "Avec des issues équiprobables, probabilité = issues favorables / issues possibles.",
+        "Une probabilité est comprise entre 0 et 1."
+      ],
+      "image_mentale": "Imagine un dé équilibré et ses six faces.",
+      "regle_ou_methode": "Compte les issues favorables puis toutes les issues également possibles.",
+      "exemples": [
+        "Pour obtenir 6 sur un dé équilibré, une face convient sur six. La probabilité est 1/6.",
+        "Pour obtenir un nombre pair, trois faces conviennent : 2, 4 et 6. La probabilité est 3/6."
+      ],
+      "piege": "Une chance sur six ne signifie pas obtenir forcément 6 une fois en six lancers.",
+      "astuce_memoire": "Issues favorables sur issues possibles, si elles sont équiprobables.",
+      "quiz": [
+        {
+          "q": "Quelle est la probabilité d’obtenir 6 sur un dé équilibré ?",
+          "choix": [
+            "1/6",
+            "1/2",
+            "6/1"
+          ],
+          "rep": "1/6",
+          "expl": "Une face sur six est favorable."
+        },
+        {
+          "q": "Combien de faces paires possède le dé ordinaire ?",
+          "choix": [
+            "Deux",
+            "Trois",
+            "Six"
+          ],
+          "rep": "Trois",
+          "expl": "Les faces 2, 4 et 6 sont paires."
+        },
+        {
+          "q": "Obtenir 6 est-il garanti en six lancers ?",
+          "choix": [
+            "Oui",
+            "Seulement si le premier lancer est impair",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Les lancers ne garantissent pas une répartition exacte."
+        }
+      ],
+      "id": "REV-MA-6E-12"
+    },
+    {
+      "axe": "La proportionnalité",
+      "titre": "Trouver un prix proportionnel",
+      "emoji": "⚖️",
+      "en_une_phrase": "Dans une situation proportionnelle, on peut revenir à l’unité pour calculer une autre quantité.",
+      "comprendre": "Si des objets identiques coûtent le même prix chacun, quantité et prix sont proportionnels. On peut d’abord chercher le prix d’un objet. On calcule ensuite le prix de la quantité voulue.",
+      "essentiel": [
+        "Vérifie que la situation est proportionnelle.",
+        "Le retour à l’unité donne la valeur pour un objet.",
+        "Multiplie ensuite par la quantité cherchée."
+      ],
+      "image_mentale": "Imagine trois cahiers identiques puis un seul cahier.",
+      "regle_ou_methode": "Divise pour une unité puis multiplie pour la quantité demandée.",
+      "exemples": [
+        "Trois cahiers identiques coûtent 9 euros. Un cahier coûte 9 ÷ 3 = 3 euros. Cinq coûtent 5 × 3 = 15 euros.",
+        "Deux paquets coûtent 8 euros ; un paquet coûte 4 euros."
+      ],
+      "piege": "Un tarif avec un forfait fixe ne suit pas forcément cette proportionnalité.",
+      "astuce_memoire": "Je cherche pour un, puis pour plusieurs.",
+      "quiz": [
+        {
+          "q": "Trois cahiers coûtent 9 euros. Combien coûte un cahier ?",
+          "choix": [
+            "6 euros",
+            "3 euros",
+            "12 euros"
+          ],
+          "rep": "3 euros",
+          "expl": "9 ÷ 3 = 3."
+        },
+        {
+          "q": "Combien coûtent cinq de ces cahiers ?",
+          "choix": [
+            "12 euros",
+            "45 euros",
+            "15 euros"
+          ],
+          "rep": "15 euros",
+          "expl": "Chaque cahier coûte 3 euros donc 5 coûtent 15 euros."
+        },
+        {
+          "q": "Un tarif avec un forfait fixe est-il forcément proportionnel ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Seulement pour deux objets"
+          ],
+          "rep": "Non",
+          "expl": "Le forfait fixe peut empêcher la proportionnalité."
+        }
+      ],
+      "id": "REV-MA-6E-13"
+    },
+    {
+      "axe": "Initiation à la pensée informatique",
+      "titre": "Lire un programme de calcul",
+      "emoji": "🤖",
+      "en_une_phrase": "Un programme de calcul applique des instructions dans un ordre précis.",
+      "comprendre": "Une recette indique des étapes à suivre. Un programme de calcul fait de même avec un nombre de départ. Modifier l’ordre peut changer le résultat.",
+      "essentiel": [
+        "Choisis un nombre de départ.",
+        "Exécute chaque instruction dans l’ordre.",
+        "Vérifie le résultat en reprenant les étapes."
+      ],
+      "image_mentale": "Imagine une machine avec une entrée et deux étapes successives.",
+      "regle_ou_methode": "Inscris le nombre de départ puis calcule chaque étape.",
+      "exemples": [
+        "Pars de 4. Ajoute 3 : tu obtiens 7. Multiplie par 2 : tu obtiens 14.",
+        "Avec 5, le même programme donne (5 + 3) × 2 = 16."
+      ],
+      "piege": "Ajouter puis multiplier ne donne pas toujours le même résultat que multiplier puis ajouter.",
+      "astuce_memoire": "Une instruction après l’autre.",
+      "quiz": [
+        {
+          "q": "Avec 4, ajoute 3 puis multiplie par 2. Quel résultat ?",
+          "choix": [
+            "11",
+            "10",
+            "14"
+          ],
+          "rep": "14",
+          "expl": "4 + 3 = 7 puis 7 × 2 = 14."
+        },
+        {
+          "q": "Avec 5, quel résultat donne le même programme ?",
+          "choix": [
+            "16",
+            "13",
+            "10"
+          ],
+          "rep": "16",
+          "expl": "5 + 3 = 8 puis 8 × 2 = 16."
+        },
+        {
+          "q": "L’ordre des étapes peut-il changer le résultat ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Seulement si on écrit au crayon"
+          ],
+          "rep": "Oui",
+          "expl": "Les opérations successives dépendent de leur ordre."
+        }
+      ],
+      "id": "REV-MA-6E-14"
+    }
+  ]
+}

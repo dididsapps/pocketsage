@@ -1,0 +1,540 @@
+{
+  "classe": "CM2",
+  "niveau_appli": "CM2",
+  "age": "10-11 ans",
+  "matiere": "Anglais",
+  "code": "AN",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Écouter et comprendre",
+      "titre": "Comprendre une consigne en deux étapes",
+      "emoji": "👂",
+      "en_une_phrase": "Pour suivre une consigne, repère les actions et leur ordre.",
+      "comprendre": "En classe, tu entends parfois deux instructions liées. Des verbes connus indiquent les actions. Le mot and peut relier ces actions.",
+      "essentiel": [
+        "Open signifie ouvre.",
+        "Write signifie écris.",
+        "And signifie et."
+      ],
+      "image_mentale": "Imagine un livre ouvert puis un prénom écrit sur une feuille.",
+      "regle_ou_methode": "Écoute les verbes et exécute les actions dans l’ordre.",
+      "exemples": [
+        "Open your book and write your name signifie « Ouvre ton livre et écris ton prénom ». Ouvre d’abord le livre, puis écris ton prénom.",
+        "Stand up and listen signifie « Lève-toi et écoute »."
+      ],
+      "piege": "Ne réalise pas seulement la première action.",
+      "astuce_memoire": "Deux verbes, deux actions.",
+      "quiz": [
+        {
+          "q": "Que signifie « write your name » ?",
+          "choix": [
+            "Ouvre ton livre",
+            "Écris ton prénom",
+            "Ferme la porte"
+          ],
+          "rep": "Écris ton prénom",
+          "expl": "Write signifie écris et name signifie prénom ou nom."
+        },
+        {
+          "q": "Que signifie and ?",
+          "choix": [
+            "Mais toujours",
+            "Hier",
+            "Et"
+          ],
+          "rep": "Et",
+          "expl": "And relie ici deux actions."
+        },
+        {
+          "q": "Dans « Stand up and listen », que fait-on d’abord ?",
+          "choix": [
+            "On se lève",
+            "On ouvre un livre",
+            "On écrit"
+          ],
+          "rep": "On se lève",
+          "expl": "Stand up signifie lève-toi."
+        }
+      ],
+      "id": "REV-AN-CM2-01"
+    },
+    {
+      "axe": "Écouter et comprendre",
+      "titre": "Repérer les informations d’un message",
+      "emoji": "🔎",
+      "en_une_phrase": "Des mots connus permettent de retrouver les informations essentielles d’un message simple.",
+      "comprendre": "Quand tu entends une phrase courte, tu peux reconnaître un prénom, un lieu ou une activité. Ces indices aident à comprendre même si un mot t’échappe. Vérifie qu’ils correspondent à la question posée.",
+      "essentiel": [
+        "Repère les noms et les mots familiers.",
+        "Cherche qui, où ou quoi selon la question.",
+        "Ne devine pas sans utiliser d’indice."
+      ],
+      "image_mentale": "Imagine trois cases : personne, lieu, activité.",
+      "regle_ou_methode": "Écoute ou lis le message puis remplis les cases possibles.",
+      "exemples": [
+        "Sam plays football in the park signifie « Sam joue au football dans le parc ». Sam est la personne, le parc est le lieu.",
+        "Alex reads a book signifie « Alex lit un livre ». L’activité est la lecture."
+      ],
+      "piege": "Un mot inconnu n’empêche pas toujours de comprendre l’idée principale.",
+      "astuce_memoire": "Personne, lieu, activité.",
+      "quiz": [
+        {
+          "q": "Dans « Sam plays football in the park », qui joue ?",
+          "choix": [
+            "Alex",
+            "Le parc",
+            "Sam"
+          ],
+          "rep": "Sam",
+          "expl": "Sam est la personne nommée."
+        },
+        {
+          "q": "Que signifie « in the park » ?",
+          "choix": [
+            "Dans le parc",
+            "À l’école",
+            "Sous la table"
+          ],
+          "rep": "Dans le parc",
+          "expl": "Park signifie parc."
+        },
+        {
+          "q": "Dans « Alex reads a book », que fait Alex ?",
+          "choix": [
+            "Alex joue au football",
+            "Alex lit un livre",
+            "Alex cuisine"
+          ],
+          "rep": "Alex lit un livre",
+          "expl": "Reads a book signifie lit un livre."
+        }
+      ],
+      "id": "REV-AN-CM2-02"
+    },
+    {
+      "axe": "Lire et comprendre",
+      "titre": "Lire un petit emploi du temps",
+      "emoji": "📅",
+      "en_une_phrase": "Les jours et les activités permettent de comprendre un emploi du temps simple.",
+      "comprendre": "Un emploi du temps associe une activité à un moment. En anglais, les noms des jours commencent par une majuscule. Repère le jour puis l’activité qui lui correspond.",
+      "essentiel": [
+        "Tuesday signifie mardi.",
+        "Thursday signifie jeudi.",
+        "On Tuesday signifie « mardi »."
+      ],
+      "image_mentale": "Imagine une colonne de jours et une colonne d’activités.",
+      "regle_ou_methode": "Repère le jour demandé puis lis l’activité associée.",
+      "exemples": [
+        "On Tuesday, I play tennis signifie « Mardi, je joue au tennis ». L’activité du mardi est le tennis.",
+        "On Thursday, I read signifie « Jeudi, je lis »."
+      ],
+      "piege": "Tuesday et Thursday sont deux jours différents.",
+      "astuce_memoire": "Je lis le jour puis l’activité.",
+      "quiz": [
+        {
+          "q": "Que signifie Tuesday ?",
+          "choix": [
+            "Mardi",
+            "Jeudi",
+            "Dimanche"
+          ],
+          "rep": "Mardi",
+          "expl": "Tuesday signifie mardi."
+        },
+        {
+          "q": "Quand se déroule « On Thursday, I read » ?",
+          "choix": [
+            "Mardi",
+            "Jeudi",
+            "Samedi"
+          ],
+          "rep": "Jeudi",
+          "expl": "Thursday signifie jeudi."
+        },
+        {
+          "q": "Dans « On Tuesday, I play tennis », quelle activité a lieu mardi ?",
+          "choix": [
+            "La lecture obligatoirement",
+            "La natation",
+            "Le tennis"
+          ],
+          "rep": "Le tennis",
+          "expl": "I play tennis signifie je joue au tennis."
+        }
+      ],
+      "id": "REV-AN-CM2-03"
+    },
+    {
+      "axe": "Lire et comprendre",
+      "titre": "Situer un objet",
+      "emoji": "📍",
+      "en_une_phrase": "Les petits mots de lieu indiquent la position d’un objet.",
+      "comprendre": "Tu peux décrire où se trouve ton livre par rapport à une table. En anglais, in, on et under donnent des positions différentes. Le nom qui suit indique l’objet servant de repère.",
+      "essentiel": [
+        "In signifie dans.",
+        "On signifie sur.",
+        "Under signifie sous."
+      ],
+      "image_mentale": "Imagine une balle dans une boîte, sur la boîte puis sous la boîte.",
+      "regle_ou_methode": "Repère le mot de lieu puis l’objet utilisé comme repère.",
+      "exemples": [
+        "The ball is under the table signifie « La balle est sous la table ». Under indique une position en dessous.",
+        "The book is on the table signifie « Le livre est sur la table »."
+      ],
+      "piege": "On et under ne donnent pas la même position.",
+      "astuce_memoire": "In : dans ; on : sur ; under : sous.",
+      "quiz": [
+        {
+          "q": "Que signifie under ?",
+          "choix": [
+            "Sur",
+            "Sous",
+            "Dans"
+          ],
+          "rep": "Sous",
+          "expl": "Under signifie sous."
+        },
+        {
+          "q": "Que signifie « The book is on the table » ?",
+          "choix": [
+            "Le livre est sous la table",
+            "La table est dans le livre",
+            "Le livre est sur la table"
+          ],
+          "rep": "Le livre est sur la table",
+          "expl": "On indique ici une position sur la table."
+        },
+        {
+          "q": "Comment dire « dans la boîte » ?",
+          "choix": [
+            "In the box",
+            "Under the box",
+            "On the box"
+          ],
+          "rep": "In the box",
+          "expl": "In signifie dans et box signifie boîte."
+        }
+      ],
+      "id": "REV-AN-CM2-04"
+    },
+    {
+      "axe": "Parler en continu",
+      "titre": "Décrire une personne",
+      "emoji": "🧍",
+      "en_une_phrase": "On peut décrire une personne avec le verbe être et des adjectifs.",
+      "comprendre": "Une description donne quelques caractéristiques. En anglais, un adjectif peut suivre le verbe être. Le pronom permet de préciser de qui on parle.",
+      "essentiel": [
+        "She is signifie « elle est ».",
+        "He is signifie « il est ».",
+        "Tall signifie grand ou grande."
+      ],
+      "image_mentale": "Imagine un personnage dessiné avec une étiquette descriptive.",
+      "regle_ou_methode": "Choisis le pronom puis ajoute une caractéristique.",
+      "exemples": [
+        "She is tall signifie « Elle est grande ». She désigne la personne dont on parle.",
+        "He is kind signifie « Il est gentil »."
+      ],
+      "piege": "Ne confonds pas he, il, et she, elle.",
+      "astuce_memoire": "Pronom + is + adjectif.",
+      "quiz": [
+        {
+          "q": "Que signifie « She is tall » ?",
+          "choix": [
+            "Il est petit",
+            "Elle aime le sport",
+            "Elle est grande"
+          ],
+          "rep": "Elle est grande",
+          "expl": "She is signifie elle est et tall signifie grande."
+        },
+        {
+          "q": "Quel pronom signifie « il » ?",
+          "choix": [
+            "He",
+            "She",
+            "We"
+          ],
+          "rep": "He",
+          "expl": "He signifie il."
+        },
+        {
+          "q": "Comment dire « Il est gentil » ?",
+          "choix": [
+            "She is tall",
+            "He is kind",
+            "He is under"
+          ],
+          "rep": "He is kind",
+          "expl": "He is kind signifie il est gentil."
+        }
+      ],
+      "id": "REV-AN-CM2-05"
+    },
+    {
+      "axe": "Parler en continu",
+      "titre": "Parler de ses habitudes",
+      "emoji": "🏃",
+      "en_une_phrase": "Le présent simple permet notamment de parler d’actions habituelles.",
+      "comprendre": "Tu peux raconter ce que tu fais chaque jour. En anglais, « I play » signifie « je joue ». Des mots comme every day indiquent une habitude.",
+      "essentiel": [
+        "I play signifie « je joue ».",
+        "Every day signifie « chaque jour ».",
+        "Avec he ou she, le verbe prend souvent un s au présent simple."
+      ],
+      "image_mentale": "Imagine un calendrier où la même activité revient chaque jour.",
+      "regle_ou_methode": "Choisis la personne puis la forme du verbe adaptée.",
+      "exemples": [
+        "I play football every day signifie « Je joue au football chaque jour ». Every day montre l’habitude.",
+        "She plays tennis signifie « Elle joue au tennis ». Plays prend un s avec she."
+      ],
+      "piege": "N’oublie pas le s de plays avec she dans cet exemple.",
+      "astuce_memoire": "I play ; she plays.",
+      "quiz": [
+        {
+          "q": "Que signifie every day ?",
+          "choix": [
+            "Chaque jour",
+            "Sous la table",
+            "Hier soir"
+          ],
+          "rep": "Chaque jour",
+          "expl": "Every day signifie chaque jour."
+        },
+        {
+          "q": "Quelle forme convient ?",
+          "choix": [
+            "She play tennis.",
+            "She plays tennis.",
+            "She playing tennis every day."
+          ],
+          "rep": "She plays tennis.",
+          "expl": "Au présent simple, plays prend ici un s avec she."
+        },
+        {
+          "q": "Que signifie « I play football » ?",
+          "choix": [
+            "Je déteste le football",
+            "Je suis un ballon",
+            "Je joue au football"
+          ],
+          "rep": "Je joue au football",
+          "expl": "I play signifie je joue."
+        }
+      ],
+      "id": "REV-AN-CM2-06"
+    },
+    {
+      "axe": "Réagir et dialoguer",
+      "titre": "Poser une question sur les goûts",
+      "emoji": "❓",
+      "en_une_phrase": "« Do you like…? » permet de demander si quelqu’un aime quelque chose.",
+      "comprendre": "Pour connaître le goût d’une autre personne, tu peux poser une question simple. La réponse courte peut être yes ou no. La chose dont on parle vient après like.",
+      "essentiel": [
+        "Do you like…? signifie « Aimes-tu… ? ».",
+        "Yes, I do signifie « Oui ».",
+        "No, I don’t signifie « Non »."
+      ],
+      "image_mentale": "Imagine une question sur un fruit et deux réponses possibles.",
+      "regle_ou_methode": "Pose la question puis réponds par yes ou no.",
+      "exemples": [
+        "Do you like apples? signifie « Aimes-tu les pommes ? ». Yes, I do signifie « Oui ».",
+        "Do you like music? signifie « Aimes-tu la musique ? ». No, I don’t signifie « Non »."
+      ],
+      "piege": "Une réponse négative utilise don’t dans cette formule.",
+      "astuce_memoire": "Do you like…? Yes, I do / No, I don’t.",
+      "quiz": [
+        {
+          "q": "Que demande « Do you like apples? » ?",
+          "choix": [
+            "Où sont les pommes ?",
+            "Aimes-tu les pommes ?",
+            "Combien de pommes vois-tu ?"
+          ],
+          "rep": "Aimes-tu les pommes ?",
+          "expl": "Do you like demande si tu aimes."
+        },
+        {
+          "q": "Quelle réponse courte est négative ?",
+          "choix": [
+            "Yes, I do.",
+            "Hello!",
+            "No, I don’t."
+          ],
+          "rep": "No, I don’t.",
+          "expl": "No, I don’t exprime ici non."
+        },
+        {
+          "q": "Comment dire « Aimes-tu la musique ? » ?",
+          "choix": [
+            "Do you like music?",
+            "Where is music?",
+            "I am music."
+          ],
+          "rep": "Do you like music?",
+          "expl": "Do you like music? demande si la personne aime la musique."
+        }
+      ],
+      "id": "REV-AN-CM2-07"
+    },
+    {
+      "axe": "Réagir et dialoguer",
+      "titre": "Demander son chemin",
+      "emoji": "🧭",
+      "en_une_phrase": "Des formules simples permettent de demander et d’indiquer un lieu.",
+      "comprendre": "Pour trouver un endroit, tu peux demander où il se situe. La réponse peut indiquer une direction courte. Les mots left et right distinguent la gauche et la droite.",
+      "essentiel": [
+        "Where is…? signifie « Où est… ? ».",
+        "Turn left signifie « Tourne à gauche ».",
+        "Turn right signifie « Tourne à droite »."
+      ],
+      "image_mentale": "Imagine un carrefour avec une flèche à gauche et une à droite.",
+      "regle_ou_methode": "Demande le lieu puis suis la direction donnée.",
+      "exemples": [
+        "Where is the park? signifie « Où est le parc ? ». Turn left signifie « Tourne à gauche ».",
+        "Turn right signifie « Tourne à droite »."
+      ],
+      "piege": "Left et right indiquent deux directions opposées.",
+      "astuce_memoire": "Left : gauche ; right : droite.",
+      "quiz": [
+        {
+          "q": "Que signifie « Turn left » ?",
+          "choix": [
+            "Tourne à droite",
+            "Continue de lire",
+            "Tourne à gauche"
+          ],
+          "rep": "Tourne à gauche",
+          "expl": "Left signifie gauche."
+        },
+        {
+          "q": "Comment demander « Où est le parc ? » ?",
+          "choix": [
+            "Where is the park?",
+            "Do you like the park?",
+            "The park is green."
+          ],
+          "rep": "Where is the park?",
+          "expl": "Where is demande où se trouve le lieu."
+        },
+        {
+          "q": "Quelle indication signifie « Tourne à droite » ?",
+          "choix": [
+            "Turn left",
+            "Turn right",
+            "Sit down"
+          ],
+          "rep": "Turn right",
+          "expl": "Right signifie droite."
+        }
+      ],
+      "id": "REV-AN-CM2-08"
+    },
+    {
+      "axe": "Écrire",
+      "titre": "Écrire un message court",
+      "emoji": "✉️",
+      "en_une_phrase": "Un message simple peut saluer, donner une information et prendre congé.",
+      "comprendre": "Tu peux écrire à une classe partenaire avec des phrases connues. Une formule au début annonce le contact. Une autre termine le message.",
+      "essentiel": [
+        "Hello permet de saluer.",
+        "I live in… permet de dire où l’on habite.",
+        "Goodbye permet de prendre congé."
+      ],
+      "image_mentale": "Imagine une carte avec une salutation, une phrase et une signature.",
+      "regle_ou_methode": "Écris les phrases, vérifie les mots puis termine le message.",
+      "exemples": [
+        "Hello! I live in Paris. Goodbye! signifie « Bonjour ! J’habite à Paris. Au revoir ! ». La phrase centrale donne le lieu de vie.",
+        "I live in Lyon signifie « J’habite à Lyon »."
+      ],
+      "piege": "I live in parle d’un lieu de vie, pas d’un âge.",
+      "astuce_memoire": "Salut, information, au revoir.",
+      "quiz": [
+        {
+          "q": "Que signifie « I live in Lyon » ?",
+          "choix": [
+            "J’habite à Lyon",
+            "Je quitte Lyon demain",
+            "Je m’appelle Lyon"
+          ],
+          "rep": "J’habite à Lyon",
+          "expl": "I live in indique le lieu où l’on habite."
+        },
+        {
+          "q": "Quelle formule termine le message ?",
+          "choix": [
+            "Hello!",
+            "Goodbye!",
+            "Where?"
+          ],
+          "rep": "Goodbye!",
+          "expl": "Goodbye signifie au revoir."
+        },
+        {
+          "q": "Quel mot introduit ici le lieu de vie ?",
+          "choix": [
+            "Goodbye",
+            "And uniquement",
+            "In"
+          ],
+          "rep": "In",
+          "expl": "I live in est suivi d’un lieu."
+        }
+      ],
+      "id": "REV-AN-CM2-09"
+    },
+    {
+      "axe": "Découvrir les aspects culturels d’une langue vivante étrangère et régionale",
+      "titre": "Découvrir des lieux anglophones",
+      "emoji": "🌎",
+      "en_une_phrase": "L’anglais est parlé dans des pays et territoires variés.",
+      "comprendre": "Une langue peut être utilisée dans plusieurs pays. Les paysages, les langues et les habitudes de leurs habitants sont divers. Une carte aide à situer les lieux sans supposer que tout le monde y vit de la même manière.",
+      "essentiel": [
+        "English signifie anglais.",
+        "The United Kingdom signifie le Royaume-Uni.",
+        "Canada se dit aussi Canada en anglais."
+      ],
+      "image_mentale": "Imagine une carte reliant plusieurs territoires où l’anglais est parlé.",
+      "regle_ou_methode": "Nomme le lieu en anglais, traduis-le puis repère-le sur une carte.",
+      "exemples": [
+        "The United Kingdom signifie « le Royaume-Uni ». C’est un pays où l’anglais est parlé.",
+        "Canada signifie « Canada ». L’anglais et le français y sont notamment parlés."
+      ],
+      "piege": "Un pays peut avoir plusieurs langues et des habitants aux habitudes variées.",
+      "astuce_memoire": "Une langue, des territoires et des cultures variés.",
+      "quiz": [
+        {
+          "q": "Que signifie « the United Kingdom » ?",
+          "choix": [
+            "Le Canada",
+            "Le Royaume-Uni",
+            "La France"
+          ],
+          "rep": "Le Royaume-Uni",
+          "expl": "The United Kingdom signifie le Royaume-Uni."
+        },
+        {
+          "q": "Quelle langue est notamment parlée au Canada ?",
+          "choix": [
+            "Uniquement le latin",
+            "Aucune langue",
+            "L’anglais"
+          ],
+          "rep": "L’anglais",
+          "expl": "L’anglais est notamment parlé au Canada, ainsi que le français."
+        },
+        {
+          "q": "Les habitants d’un pays ont-ils tous les mêmes habitudes ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Seulement dans les grandes villes"
+          ],
+          "rep": "Non",
+          "expl": "Les habitudes varient entre les personnes."
+        }
+      ],
+      "id": "REV-AN-CM2-10"
+    }
+  ]
+}

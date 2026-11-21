@@ -1,0 +1,752 @@
+{
+  "classe": "CM2",
+  "niveau_appli": "CM2",
+  "age": "10-11 ans",
+  "matiere": "Sciences et technologie",
+  "code": "SC",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Matière, mouvement, énergie, information",
+      "titre": "Masse et volume",
+      "emoji": "⚖️",
+      "en_une_phrase": "La masse et le volume décrivent deux propriétés différentes de la matière.",
+      "comprendre": "Tu peux soupeser un objet et observer la place qu’il occupe. La masse se mesure avec une balance. Le volume indique l’espace occupé.",
+      "essentiel": [
+        "La masse se mesure notamment en grammes.",
+        "Le volume peut se mesurer en litres ou en millilitres.",
+        "Deux objets de même volume peuvent avoir des masses différentes."
+      ],
+      "image_mentale": "Imagine deux bouteilles identiques remplies de matières différentes.",
+      "regle_ou_methode": "Choisis la grandeur puis l’instrument adapté.",
+      "exemples": [
+        "Une bouteille vide est posée sur une balance : on mesure sa masse.",
+        "Une éprouvette graduée indique le volume d’un liquide en millilitres."
+      ],
+      "piege": "Masse et volume ne sont pas la même grandeur.",
+      "astuce_memoire": "Balance pour la masse, récipient gradué pour le volume.",
+      "quiz": [
+        {
+          "q": "Quel instrument mesure une masse ?",
+          "choix": [
+            "Un thermomètre",
+            "Une balance",
+            "Une règle"
+          ],
+          "rep": "Une balance",
+          "expl": "La balance sert à mesurer une masse."
+        },
+        {
+          "q": "Quelle unité peut mesurer un volume de liquide ?",
+          "choix": [
+            "La minute",
+            "Le degré Celsius",
+            "Le millilitre"
+          ],
+          "rep": "Le millilitre",
+          "expl": "Le millilitre mesure un volume."
+        },
+        {
+          "q": "Deux bouteilles de même volume ont-elles forcément la même masse ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Seulement si elles ont la même couleur"
+          ],
+          "rep": "Non",
+          "expl": "Le contenu peut avoir des masses différentes."
+        }
+      ],
+      "id": "REV-SC-CM2-01"
+    },
+    {
+      "axe": "Matière, mouvement, énergie, information",
+      "titre": "Les changements d’état",
+      "emoji": "💧",
+      "en_une_phrase": "Une matière peut changer d’état sans disparaître.",
+      "comprendre": "Tu as vu un glaçon fondre et devenir de l’eau liquide. Si l’on recueille toute la matière dans un récipient fermé, sa masse reste la même. Le chauffage ou le refroidissement peut provoquer un changement d’état.",
+      "essentiel": [
+        "La fusion transforme un solide en liquide.",
+        "La solidification transforme un liquide en solide.",
+        "Dans un système fermé, la masse se conserve lors du changement d’état."
+      ],
+      "image_mentale": "Imagine un glaçon puis une flaque d’eau dans une boîte fermée.",
+      "regle_ou_methode": "Repère l’état initial, l’état final et le nom du changement.",
+      "exemples": [
+        "Un glaçon fond : l’eau passe de solide à liquide. Ce changement est une fusion.",
+        "De l’eau liquide devient de la glace : c’est une solidification."
+      ],
+      "piege": "La matière ne disparaît pas parce que son aspect change.",
+      "astuce_memoire": "Fusion : solide vers liquide.",
+      "quiz": [
+        {
+          "q": "Comment appelle-t-on le passage de solide à liquide ?",
+          "choix": [
+            "Solidification",
+            "Évaporation",
+            "Fusion"
+          ],
+          "rep": "Fusion",
+          "expl": "La fusion fait passer du solide au liquide."
+        },
+        {
+          "q": "Quel changement transforme l’eau liquide en glace ?",
+          "choix": [
+            "La solidification",
+            "La fusion",
+            "La filtration"
+          ],
+          "rep": "La solidification",
+          "expl": "La solidification produit un solide."
+        },
+        {
+          "q": "Dans un récipient fermé, que devient la masse lors de la fusion ?",
+          "choix": [
+            "Elle devient nulle",
+            "Elle se conserve",
+            "Elle double forcément"
+          ],
+          "rep": "Elle se conserve",
+          "expl": "La matière reste présente dans le récipient fermé."
+        }
+      ],
+      "id": "REV-SC-CM2-02"
+    },
+    {
+      "axe": "Matière, mouvement, énergie, information",
+      "titre": "Mouvement et vitesse",
+      "emoji": "🚲",
+      "en_une_phrase": "Un mouvement se décrit par une trajectoire et l’évolution de la vitesse.",
+      "comprendre": "Quand tu marches, ta position change au fil du temps. Le chemin suivi est ta trajectoire. Tu peux aussi aller plus vite, moins vite ou garder une vitesse constante.",
+      "essentiel": [
+        "La trajectoire est l’ensemble des positions suivies.",
+        "Une trajectoire peut être rectiligne ou circulaire.",
+        "Une vitesse peut augmenter, diminuer ou rester constante."
+      ],
+      "image_mentale": "Imagine une bille qui roule en ligne droite puis ralentit.",
+      "regle_ou_methode": "Observe la trajectoire puis compare les distances parcourues pendant des durées égales.",
+      "exemples": [
+        "Une bille suit une ligne droite : sa trajectoire est rectiligne. Si elle parcourt moins de distance à chaque seconde, elle ralentit.",
+        "Un point sur une roue en rotation autour de son axe suit une trajectoire circulaire par rapport au vélo immobile."
+      ],
+      "piege": "Un mouvement circulaire ne signifie pas forcément que la vitesse augmente.",
+      "astuce_memoire": "Trajectoire : chemin ; vitesse : évolution du déplacement.",
+      "quiz": [
+        {
+          "q": "Une bille suit une ligne droite. Quelle est sa trajectoire ?",
+          "choix": [
+            "Rectiligne",
+            "Circulaire",
+            "Triangulaire obligatoirement"
+          ],
+          "rep": "Rectiligne",
+          "expl": "La trajectoire suit une droite."
+        },
+        {
+          "q": "Que fait un objet qui ralentit ?",
+          "choix": [
+            "Sa vitesse augmente",
+            "Sa vitesse diminue",
+            "Sa masse disparaît"
+          ],
+          "rep": "Sa vitesse diminue",
+          "expl": "Ralentir signifie diminuer sa vitesse."
+        },
+        {
+          "q": "Une roue tourne à vitesse constante. Sa vitesse augmente-t-elle ?",
+          "choix": [
+            "Oui",
+            "Toujours au premier tour",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Une vitesse constante ne change pas."
+        }
+      ],
+      "id": "REV-SC-CM2-03"
+    },
+    {
+      "axe": "Matière, mouvement, énergie, information",
+      "titre": "Sources et conversions d’énergie",
+      "emoji": "🔋",
+      "en_une_phrase": "Un objet peut recevoir une forme d’énergie et en produire d’autres.",
+      "comprendre": "Une lampe a besoin d’une source d’énergie pour fonctionner. Elle reçoit de l’énergie électrique et fournit notamment de la lumière et de la chaleur. Identifier ces transformations aide à comprendre les usages.",
+      "essentiel": [
+        "Une pile peut alimenter un circuit.",
+        "Une lampe transforme une partie de l’énergie reçue en lumière.",
+        "Une partie de l’énergie peut aussi être transférée sous forme de chaleur."
+      ],
+      "image_mentale": "Imagine une pile reliée à une lampe qui éclaire et chauffe.",
+      "regle_ou_methode": "Identifie la source, l’objet et les effets observés.",
+      "exemples": [
+        "Une pile alimente une lampe. La lampe fournit de la lumière et chauffe : il y a conversion d’énergie.",
+        "Un panneau solaire peut fournir de l’énergie électrique à partir du rayonnement solaire."
+      ],
+      "piege": "Une lampe ne transforme pas toute l’énergie reçue uniquement en lumière.",
+      "astuce_memoire": "Source, objet, effets.",
+      "quiz": [
+        {
+          "q": "Quelle source peut alimenter une petite lampe ?",
+          "choix": [
+            "Une gomme",
+            "Une pile",
+            "Une feuille de papier seule"
+          ],
+          "rep": "Une pile",
+          "expl": "Une pile peut fournir de l’énergie électrique."
+        },
+        {
+          "q": "Quel effet produit une lampe allumée ?",
+          "choix": [
+            "Du froid nécessairement",
+            "Une nouvelle planète",
+            "De la lumière"
+          ],
+          "rep": "De la lumière",
+          "expl": "Elle émet de la lumière."
+        },
+        {
+          "q": "La lampe peut-elle aussi chauffer ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "Seulement si elle est éteinte"
+          ],
+          "rep": "Oui",
+          "expl": "Une partie de l’énergie est transférée sous forme de chaleur."
+        }
+      ],
+      "id": "REV-SC-CM2-04"
+    },
+    {
+      "axe": "Le vivant, sa diversité et les fonctions qui le caractérisent",
+      "titre": "La diversité du vivant",
+      "emoji": "🌿",
+      "en_une_phrase": "On classe les êtres vivants à partir de caractères qu’ils partagent.",
+      "comprendre": "Une collection d’animaux ou de plantes présente des ressemblances. Pour établir des groupes, on observe des caractères communs. Certains groupes peuvent être inclus dans d’autres.",
+      "essentiel": [
+        "Un caractère est un élément observable utilisé pour comparer.",
+        "Les espèces qui partagent un caractère peuvent former un groupe.",
+        "Des groupes peuvent être emboîtés."
+      ],
+      "image_mentale": "Imagine une grande boîte contenant plusieurs petites boîtes.",
+      "regle_ou_methode": "Observe les caractères puis regroupe les espèces qui les partagent.",
+      "exemples": [
+        "Un chat et un chien possèdent des poils. Place-les dans le groupe des animaux à poils.",
+        "Ce groupe peut être inclus dans celui des animaux à squelette interne."
+      ],
+      "piege": "On classe selon des caractères partagés, pas selon l’utilité pour l’être humain.",
+      "astuce_memoire": "Observer, comparer, regrouper.",
+      "quiz": [
+        {
+          "q": "Quel caractère partagent chat et chien ?",
+          "choix": [
+            "Des plumes",
+            "Des racines",
+            "Des poils"
+          ],
+          "rep": "Des poils",
+          "expl": "Chat et chien ont des poils."
+        },
+        {
+          "q": "Sur quoi repose un classement scientifique simple ?",
+          "choix": [
+            "Des caractères partagés",
+            "Un ordre alphabétique seulement",
+            "Les préférences personnelles"
+          ],
+          "rep": "Des caractères partagés",
+          "expl": "On compare des caractères observables."
+        },
+        {
+          "q": "Le groupe des animaux à poils peut-il être inclus dans un groupe plus large ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Seulement dans un groupe de plantes"
+          ],
+          "rep": "Oui",
+          "expl": "Les animaux à poils ont aussi un squelette interne."
+        }
+      ],
+      "id": "REV-SC-CM2-05"
+    },
+    {
+      "axe": "Le vivant, sa diversité et les fonctions qui le caractérisent",
+      "titre": "La croissance d’une plante",
+      "emoji": "🌱",
+      "en_une_phrase": "Une plante grandit grâce à des ressources prélevées dans son milieu.",
+      "comprendre": "Une graine peut germer puis donner une jeune plante. Pour grandir, une plante verte a notamment besoin d’eau, de lumière et de matières présentes dans son environnement. On peut observer son développement en comparant des conditions.",
+      "essentiel": [
+        "Une graine peut germer.",
+        "Une plante verte prélève de l’eau et des sels minéraux.",
+        "La lumière participe à sa production de matière."
+      ],
+      "image_mentale": "Imagine une graine, une jeune pousse puis une plante feuillée.",
+      "regle_ou_methode": "Observe les étapes et compare une seule condition à la fois.",
+      "exemples": [
+        "Deux jeunes plantes identiques reçoivent la même eau ; l’une reçoit de la lumière et l’autre non. On compare leur croissance dans ces conditions.",
+        "Une graine germe puis une tige et des feuilles se développent."
+      ],
+      "piege": "Une comparaison est difficile à interpréter si toutes les conditions changent en même temps.",
+      "astuce_memoire": "Graine, pousse, plante ; comparer une condition.",
+      "quiz": [
+        {
+          "q": "Que peut donner une graine qui germe ?",
+          "choix": [
+            "Une jeune plante",
+            "Un caillou",
+            "Une pile"
+          ],
+          "rep": "Une jeune plante",
+          "expl": "La germination donne une jeune plante."
+        },
+        {
+          "q": "Quelle ressource une plante verte prélève-t-elle dans le sol ?",
+          "choix": [
+            "Une ampoule",
+            "De l’eau",
+            "Du papier"
+          ],
+          "rep": "De l’eau",
+          "expl": "Les racines prélèvent notamment de l’eau."
+        },
+        {
+          "q": "Pour tester le rôle de la lumière, combien de conditions change-t-on idéalement ?",
+          "choix": [
+            "Toutes à la fois",
+            "Aucune observation",
+            "Une à la fois"
+          ],
+          "rep": "Une à la fois",
+          "expl": "Faire varier une condition aide à interpréter le résultat."
+        }
+      ],
+      "id": "REV-SC-CM2-06"
+    },
+    {
+      "axe": "Le vivant, sa diversité et les fonctions qui le caractérisent",
+      "titre": "La digestion",
+      "emoji": "🍎",
+      "en_une_phrase": "La digestion transforme les aliments en éléments utilisables par le corps.",
+      "comprendre": "Après un repas, les aliments traversent le tube digestif. Ils sont transformés progressivement. Des nutriments passent ensuite dans le sang au niveau de l’intestin grêle.",
+      "essentiel": [
+        "Les aliments passent notamment par la bouche et l’estomac.",
+        "La digestion transforme les aliments.",
+        "Des nutriments traversent la paroi de l’intestin grêle."
+      ],
+      "image_mentale": "Imagine un trajet de la bouche vers l’estomac puis l’intestin.",
+      "regle_ou_methode": "Suis le trajet des aliments et repère où des nutriments passent dans le sang.",
+      "exemples": [
+        "Un morceau de pain est mâché puis passe par l’œsophage vers l’estomac. Il continue dans l’intestin où la digestion se poursuit.",
+        "Des nutriments traversent la paroi de l’intestin grêle et rejoignent le sang."
+      ],
+      "piege": "Les aliments ne passent pas directement de la bouche dans le sang.",
+      "astuce_memoire": "Bouche, estomac, intestin : transformation puis passage des nutriments.",
+      "quiz": [
+        {
+          "q": "Où les nutriments passent-ils notamment dans le sang ?",
+          "choix": [
+            "Dans les chaussures",
+            "Dans l’intestin grêle",
+            "Dans les cheveux"
+          ],
+          "rep": "Dans l’intestin grêle",
+          "expl": "Des nutriments traversent la paroi de l’intestin grêle."
+        },
+        {
+          "q": "Que fait la digestion ?",
+          "choix": [
+            "Elle transforme les aliments en cailloux",
+            "Elle arrête la circulation sanguine",
+            "Elle transforme les aliments"
+          ],
+          "rep": "Elle transforme les aliments",
+          "expl": "Les aliments sont transformés au cours de la digestion."
+        },
+        {
+          "q": "Quel organe reçoit les aliments après l’œsophage ?",
+          "choix": [
+            "L’estomac",
+            "Le genou",
+            "L’oreille"
+          ],
+          "rep": "L’estomac",
+          "expl": "Les aliments passent dans l’estomac après l’œsophage."
+        }
+      ],
+      "id": "REV-SC-CM2-07"
+    },
+    {
+      "axe": "Le vivant, sa diversité et les fonctions qui le caractérisent",
+      "titre": "La circulation du sang",
+      "emoji": "🫀",
+      "en_une_phrase": "Le cœur met le sang en mouvement dans des vaisseaux.",
+      "comprendre": "Ton cœur bat même quand tu es au repos. Il agit comme une pompe qui met le sang en circulation. Le sang transporte notamment des nutriments et du dioxygène vers les organes.",
+      "essentiel": [
+        "Le cœur propulse le sang.",
+        "Le sang circule dans des vaisseaux.",
+        "Il transporte des substances utiles aux organes."
+      ],
+      "image_mentale": "Imagine un réseau de tuyaux reliés à une pompe.",
+      "regle_ou_methode": "Repère la pompe, les vaisseaux et ce que transporte le sang.",
+      "exemples": [
+        "Le cœur se contracte et propulse le sang dans les vaisseaux. Le sang peut atteindre les organes.",
+        "Après la digestion, le sang transporte des nutriments vers les organes."
+      ],
+      "piege": "Le sang ne reste pas immobile dans un seul organe.",
+      "astuce_memoire": "Cœur : pompe ; vaisseaux : réseau.",
+      "quiz": [
+        {
+          "q": "Quel organe propulse le sang ?",
+          "choix": [
+            "L’estomac",
+            "La peau",
+            "Le cœur"
+          ],
+          "rep": "Le cœur",
+          "expl": "Le cœur met le sang en mouvement."
+        },
+        {
+          "q": "Dans quoi circule le sang ?",
+          "choix": [
+            "Dans des vaisseaux",
+            "Dans les os uniquement",
+            "Dans les cheveux uniquement"
+          ],
+          "rep": "Dans des vaisseaux",
+          "expl": "Les vaisseaux forment un réseau de circulation."
+        },
+        {
+          "q": "Que transporte notamment le sang ?",
+          "choix": [
+            "Des cahiers",
+            "Des nutriments et du dioxygène",
+            "Des pierres"
+          ],
+          "rep": "Des nutriments et du dioxygène",
+          "expl": "Le sang transporte des substances utiles aux organes."
+        }
+      ],
+      "id": "REV-SC-CM2-08"
+    },
+    {
+      "axe": "Le vivant, sa diversité et les fonctions qui le caractérisent",
+      "titre": "Les microbes et les aliments",
+      "emoji": "🦠",
+      "en_une_phrase": "Certains micro-organismes permettent de transformer des aliments.",
+      "comprendre": "Des êtres vivants trop petits pour être vus à l’œil nu peuvent agir sur les aliments. Certains sont utilisés pour fabriquer du yaourt ou faire lever une pâte. D’autres peuvent altérer les aliments : les règles de conservation sont donc utiles.",
+      "essentiel": [
+        "Un micro-organisme est généralement invisible à l’œil nu.",
+        "Des micro-organismes sont utiles à certaines transformations alimentaires.",
+        "La conservation limite certains risques d’altération."
+      ],
+      "image_mentale": "Imagine du lait transformé en yaourt par de minuscules êtres vivants.",
+      "regle_ou_methode": "Identifie le produit de départ, l’intervention et le produit obtenu.",
+      "exemples": [
+        "Des bactéries transforment le lait lors de la fabrication du yaourt. Le lait devient plus épais et son goût change.",
+        "Des levures peuvent faire gonfler une pâte à pain."
+      ],
+      "piege": "Tous les micro-organismes ne sont pas dangereux.",
+      "astuce_memoire": "Certains microbes transforment utilement les aliments.",
+      "quiz": [
+        {
+          "q": "Quel aliment peut être fabriqué grâce à des bactéries ?",
+          "choix": [
+            "Le yaourt",
+            "Une pierre",
+            "Le verre"
+          ],
+          "rep": "Le yaourt",
+          "expl": "Des bactéries participent à la transformation du lait en yaourt."
+        },
+        {
+          "q": "Les micro-organismes sont-ils tous dangereux ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "Seulement en hiver"
+          ],
+          "rep": "Non",
+          "expl": "Certains sont utiles, d’autres peuvent être nuisibles."
+        },
+        {
+          "q": "Qu’est-ce qui peut faire gonfler une pâte ?",
+          "choix": [
+            "Des cailloux",
+            "Une règle",
+            "Des levures"
+          ],
+          "rep": "Des levures",
+          "expl": "Les levures participent à la levée de la pâte."
+        }
+      ],
+      "id": "REV-SC-CM2-09"
+    },
+    {
+      "axe": "Les objets techniques au cœur de la société",
+      "titre": "Concevoir et tester un objet",
+      "emoji": "🛠️",
+      "en_une_phrase": "Concevoir un objet consiste à répondre à un besoin en respectant des contraintes.",
+      "comprendre": "Tu as peut-être fabriqué une boîte pour ranger des objets. Sa taille et son matériau doivent convenir à son usage. Un essai permet de vérifier si la solution fonctionne.",
+      "essentiel": [
+        "Un besoin décrit ce que l’objet doit permettre.",
+        "Une contrainte limite les choix possibles.",
+        "Un test vérifie si l’objet répond au besoin."
+      ],
+      "image_mentale": "Imagine un croquis puis une boîte construite et essayée.",
+      "regle_ou_methode": "Définis le besoin, choisis une solution, réalise-la puis teste-la.",
+      "exemples": [
+        "Le besoin est de transporter des crayons. On choisit une boîte assez longue, on la fabrique puis on vérifie que les crayons entrent.",
+        "Une contrainte peut être de fabriquer l’objet avec le matériau disponible."
+      ],
+      "piege": "Un joli objet ne répond pas forcément au besoin.",
+      "astuce_memoire": "Besoin, solution, fabrication, test.",
+      "quiz": [
+        {
+          "q": "Que décrit le besoin ?",
+          "choix": [
+            "Seulement sa couleur",
+            "Ce que l’objet doit permettre",
+            "La météo du jour"
+          ],
+          "rep": "Ce que l’objet doit permettre",
+          "expl": "Le besoin indique l’usage attendu."
+        },
+        {
+          "q": "À quoi sert un test ?",
+          "choix": [
+            "À supprimer le besoin",
+            "À changer le nom du matériau",
+            "À vérifier si la solution fonctionne"
+          ],
+          "rep": "À vérifier si la solution fonctionne",
+          "expl": "Le test confronte l’objet à son objectif."
+        },
+        {
+          "q": "Les crayons sont plus longs que la boîte. Que faut-il revoir ?",
+          "choix": [
+            "La taille de la boîte",
+            "Le nom du jour",
+            "La forme du Soleil"
+          ],
+          "rep": "La taille de la boîte",
+          "expl": "La boîte doit être assez longue pour contenir les crayons."
+        }
+      ],
+      "id": "REV-SC-CM2-10"
+    },
+    {
+      "axe": "Les objets techniques au cœur de la société",
+      "titre": "Le cycle de vie d’un objet",
+      "emoji": "♻️",
+      "en_une_phrase": "Un objet passe par plusieurs étapes de sa fabrication à sa fin de vie.",
+      "comprendre": "Un objet utilise des ressources et de l’énergie avant même d’arriver chez toi. Son usage, sa réparation et son traitement en fin de vie ont aussi des effets. Comparer ces étapes aide à faire des choix.",
+      "essentiel": [
+        "Les matières premières servent à fabriquer l’objet.",
+        "Un objet peut être utilisé, entretenu ou réparé.",
+        "En fin de vie, certains matériaux peuvent être recyclés."
+      ],
+      "image_mentale": "Imagine une boucle : ressources, fabrication, usage, collecte.",
+      "regle_ou_methode": "Suis les étapes et cherche comment prolonger l’usage.",
+      "exemples": [
+        "Une gourde est fabriquée puis utilisée plusieurs fois. Si son bouchon est réparable, sa durée d’usage peut augmenter.",
+        "Un objet usé est collecté ; certains de ses matériaux peuvent être recyclés selon les filières."
+      ],
+      "piege": "Recycler ne signifie pas que tous les objets sont recyclés entièrement.",
+      "astuce_memoire": "Fabriquer, utiliser, réparer, collecter.",
+      "quiz": [
+        {
+          "q": "Quelle étape vient avant l’utilisation ?",
+          "choix": [
+            "La fin du Soleil",
+            "La disparition de toutes les ressources",
+            "La fabrication"
+          ],
+          "rep": "La fabrication",
+          "expl": "L’objet doit être fabriqué avant d’être utilisé."
+        },
+        {
+          "q": "Que peut permettre une réparation ?",
+          "choix": [
+            "Prolonger l’usage de l’objet",
+            "Créer une nouvelle planète",
+            "Supprimer tous les matériaux"
+          ],
+          "rep": "Prolonger l’usage de l’objet",
+          "expl": "Réparer peut éviter de remplacer immédiatement un objet."
+        },
+        {
+          "q": "Tous les objets sont-ils toujours entièrement recyclés ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "Seulement les objets bleus"
+          ],
+          "rep": "Non",
+          "expl": "Le recyclage dépend des matériaux et des filières."
+        }
+      ],
+      "id": "REV-SC-CM2-11"
+    },
+    {
+      "axe": "La Terre, une planète peuplée par des êtres vivants",
+      "titre": "La Terre dans le système solaire",
+      "emoji": "🌍",
+      "en_une_phrase": "La Terre est une planète qui tourne autour du Soleil.",
+      "comprendre": "Tu observes le Soleil dans le ciel pendant la journée. La Terre est l’une des planètes du système solaire. La Lune est un satellite naturel de la Terre.",
+      "essentiel": [
+        "Le Soleil est une étoile.",
+        "La Terre est une planète.",
+        "La Lune est un satellite naturel de la Terre."
+      ],
+      "image_mentale": "Imagine le Soleil, la Terre autour de lui et la Lune autour de la Terre.",
+      "regle_ou_methode": "Identifie l’étoile, la planète et son satellite.",
+      "exemples": [
+        "Le Soleil est l’étoile du système solaire. La Terre est une planète qui tourne autour de lui.",
+        "La Lune tourne autour de la Terre : c’est son satellite naturel."
+      ],
+      "piege": "La Lune n’est pas une étoile qui produit sa propre lumière visible.",
+      "astuce_memoire": "Soleil : étoile ; Terre : planète ; Lune : satellite.",
+      "quiz": [
+        {
+          "q": "Qu’est-ce que le Soleil ?",
+          "choix": [
+            "Une étoile",
+            "Une planète",
+            "Un satellite de la Terre"
+          ],
+          "rep": "Une étoile",
+          "expl": "Le Soleil est une étoile."
+        },
+        {
+          "q": "Qu’est-ce que la Lune ?",
+          "choix": [
+            "Une étoile",
+            "Un satellite naturel de la Terre",
+            "Un océan"
+          ],
+          "rep": "Un satellite naturel de la Terre",
+          "expl": "La Lune est un satellite naturel de la Terre."
+        },
+        {
+          "q": "Autour de quoi la Terre tourne-t-elle ?",
+          "choix": [
+            "De la Lune uniquement",
+            "D’un arbre",
+            "Du Soleil"
+          ],
+          "rep": "Du Soleil",
+          "expl": "La Terre tourne autour du Soleil."
+        }
+      ],
+      "id": "REV-SC-CM2-12"
+    },
+    {
+      "axe": "La Terre, une planète peuplée par des êtres vivants",
+      "titre": "Météo et climat",
+      "emoji": "🌦️",
+      "en_une_phrase": "La météo décrit le temps à court terme ; le climat porte sur de longues périodes.",
+      "comprendre": "Tu peux observer la pluie et la température aujourd’hui. Ces observations décrivent la météo d’un lieu à un moment donné. Le climat se caractérise à partir de nombreuses observations sur une longue durée.",
+      "essentiel": [
+        "La météo concerne un lieu et un moment.",
+        "Le climat se décrit sur une longue période.",
+        "Un jour froid ne suffit pas à caractériser un climat."
+      ],
+      "image_mentale": "Imagine une page de relevés du jour puis un classeur de nombreuses années.",
+      "regle_ou_methode": "Repère la durée étudiée avant de parler de météo ou de climat.",
+      "exemples": [
+        "Il pleut aujourd’hui dans une ville : c’est une observation météorologique.",
+        "Des relevés de température sur plusieurs décennies aident à décrire le climat."
+      ],
+      "piege": "Une seule journée ne suffit pas à définir un climat.",
+      "astuce_memoire": "Météo : court terme ; climat : longue durée.",
+      "quiz": [
+        {
+          "q": "« Il pleut aujourd’hui » décrit quoi ?",
+          "choix": [
+            "Le climat à lui seul",
+            "La météo",
+            "Une espèce animale"
+          ],
+          "rep": "La météo",
+          "expl": "Cette observation concerne un moment précis."
+        },
+        {
+          "q": "Sur quoi s’appuie la description du climat ?",
+          "choix": [
+            "Une seule heure",
+            "Un seul nuage",
+            "Des observations sur une longue durée"
+          ],
+          "rep": "Des observations sur une longue durée",
+          "expl": "Le climat se caractérise par de nombreuses observations dans le temps."
+        },
+        {
+          "q": "Un jour froid suffit-il à décrire un climat ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Seulement en été"
+          ],
+          "rep": "Non",
+          "expl": "Une journée ne représente pas une longue période."
+        }
+      ],
+      "id": "REV-SC-CM2-13"
+    },
+    {
+      "axe": "La Terre, une planète peuplée par des êtres vivants",
+      "titre": "Les risques naturels",
+      "emoji": "🌋",
+      "en_une_phrase": "Un phénomène naturel devient un risque lorsqu’il peut toucher des personnes ou des biens.",
+      "comprendre": "Un séisme ou une éruption peut se produire dans certains territoires. Le risque dépend aussi de la présence de populations ou de bâtiments exposés. La prévention aide à se préparer.",
+      "essentiel": [
+        "Un phénomène naturel peut être dangereux.",
+        "Les enjeux sont les personnes et les biens exposés.",
+        "La prévention prépare à réagir."
+      ],
+      "image_mentale": "Imagine un volcan et deux zones, l’une habitée et l’autre non.",
+      "regle_ou_methode": "Identifie le phénomène, les éléments exposés et les mesures de prévention.",
+      "exemples": [
+        "Un volcan proche d’habitations peut exposer des personnes. Les autorités préparent des consignes et surveillent le volcan.",
+        "Dans une école exposée, un exercice aide à connaître les gestes prévus."
+      ],
+      "piege": "Un phénomène naturel éloigné de tout enjeu humain ne présente pas le même risque pour les habitants.",
+      "astuce_memoire": "Phénomène, exposition, prévention.",
+      "quiz": [
+        {
+          "q": "Quel phénomène naturel est cité ici ?",
+          "choix": [
+            "Une rédaction",
+            "Un déjeuner",
+            "Une éruption volcanique"
+          ],
+          "rep": "Une éruption volcanique",
+          "expl": "Une éruption est un phénomène naturel."
+        },
+        {
+          "q": "Que peuvent être les enjeux exposés ?",
+          "choix": [
+            "Des personnes et des bâtiments",
+            "Seulement les lettres d’un mot",
+            "Des nombres sur une page"
+          ],
+          "rep": "Des personnes et des bâtiments",
+          "expl": "Les enjeux comprennent notamment personnes et biens."
+        },
+        {
+          "q": "À quoi sert un exercice de prévention ?",
+          "choix": [
+            "À empêcher toute activité terrestre",
+            "À connaître les consignes",
+            "À déplacer automatiquement le volcan"
+          ],
+          "rep": "À connaître les consignes",
+          "expl": "Un exercice prépare à appliquer les consignes."
+        }
+      ],
+      "id": "REV-SC-CM2-14"
+    }
+  ]
+}

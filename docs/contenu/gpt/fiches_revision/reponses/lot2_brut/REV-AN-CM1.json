@@ -1,0 +1,646 @@
+{
+  "classe": "CM1",
+  "niveau_appli": "CM1",
+  "age": "9-10 ans",
+  "matiere": "Anglais",
+  "code": "AN",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Expression orale en interaction : réagir et dialoguer",
+      "titre": "Saluer et prendre congé",
+      "emoji": "👋",
+      "en_une_phrase": "Pour commencer et terminer un échange, utilise des salutations adaptées.",
+      "comprendre": "En anglais, on peut saluer avec hello ou hi. Pour partir, on peut dire goodbye ou bye. Une formule de politesse rend l’échange plus agréable.",
+      "essentiel": [
+        "Hello signifie bonjour.",
+        "Hi est une salutation familière.",
+        "Goodbye signifie au revoir."
+      ],
+      "image_mentale": "Imagine deux camarades qui se rencontrent puis se quittent.",
+      "regle_ou_methode": "Choisis la formule selon que tu arrives ou que tu pars.",
+      "exemples": [
+        "Hello! signifie « Bonjour ! ». Tu peux l’utiliser quand tu rencontres quelqu’un.",
+        "Goodbye! signifie « Au revoir ! ». Tu peux l’utiliser en partant."
+      ],
+      "piege": "Hello sert à saluer ; goodbye sert à prendre congé.",
+      "astuce_memoire": "Hello à l’arrivée, goodbye au départ.",
+      "quiz": [
+        {
+          "q": "Que signifie « Hello » ?",
+          "choix": [
+            "Au revoir",
+            "Bonjour",
+            "Merci"
+          ],
+          "rep": "Bonjour",
+          "expl": "Hello est une salutation."
+        },
+        {
+          "q": "Que dit-on en partant ?",
+          "choix": [
+            "Hello",
+            "Yes",
+            "Goodbye"
+          ],
+          "rep": "Goodbye",
+          "expl": "Goodbye signifie au revoir."
+        },
+        {
+          "q": "Quelle formule familière salue une personne ?",
+          "choix": [
+            "Hi",
+            "Bye",
+            "No"
+          ],
+          "rep": "Hi",
+          "expl": "Hi signifie salut ou bonjour."
+        }
+      ],
+      "id": "REV-AN-CM1-01"
+    },
+    {
+      "axe": "Expression orale en interaction : réagir et dialoguer",
+      "titre": "Demander et donner son prénom",
+      "emoji": "🪪",
+      "en_une_phrase": "On peut demander un prénom et répondre par une phrase courte.",
+      "comprendre": "Pour demander le prénom, on dit « What is your name? ». Pour répondre, on dit « My name is… ». Le prénom vient après cette expression.",
+      "essentiel": [
+        "What is your name? signifie « Comment t’appelles-tu ? ».",
+        "My name is… signifie « Je m’appelle… ».",
+        "On peut aussi dire « I am… » pour se présenter."
+      ],
+      "image_mentale": "Imagine deux élèves qui échangent leurs prénoms.",
+      "regle_ou_methode": "Pose la question puis réponds avec ton prénom.",
+      "exemples": [
+        "What is your name? signifie « Comment t’appelles-tu ? ». My name is Sam signifie « Je m’appelle Sam ».",
+        "I am Alex signifie « Je suis Alex »."
+      ],
+      "piege": "Name désigne ici le nom ou le prénom, pas l’âge.",
+      "astuce_memoire": "What is your name? My name is…",
+      "quiz": [
+        {
+          "q": "Que signifie « My name is Sam » ?",
+          "choix": [
+            "J’ai neuf ans",
+            "J’aime Sam",
+            "Je m’appelle Sam"
+          ],
+          "rep": "Je m’appelle Sam",
+          "expl": "Cette expression donne le prénom."
+        },
+        {
+          "q": "Quelle question demande le prénom ?",
+          "choix": [
+            "What is your name?",
+            "How old are you?",
+            "How are you?"
+          ],
+          "rep": "What is your name?",
+          "expl": "What is your name? demande le nom ou le prénom."
+        },
+        {
+          "q": "Comment dire « Je suis Alex » ?",
+          "choix": [
+            "I like Alex",
+            "I am Alex",
+            "Goodbye Alex"
+          ],
+          "rep": "I am Alex",
+          "expl": "I am signifie « je suis »."
+        }
+      ],
+      "id": "REV-AN-CM1-02"
+    },
+    {
+      "axe": "Expression orale en continu : parler en continu",
+      "titre": "Dire son âge",
+      "emoji": "🎂",
+      "en_une_phrase": "En anglais, on utilise le verbe être pour dire son âge.",
+      "comprendre": "En français, on dit « j’ai dix ans ». En anglais, on emploie « I am » suivi du nombre. La question commence par « How old ».",
+      "essentiel": [
+        "How old are you? signifie « Quel âge as-tu ? ».",
+        "I am ten signifie « J’ai dix ans ».",
+        "Nine signifie neuf et ten signifie dix."
+      ],
+      "image_mentale": "Imagine dix bougies sur un gâteau.",
+      "regle_ou_methode": "Repère le nombre et utilise I am pour donner ton âge.",
+      "exemples": [
+        "How old are you? signifie « Quel âge as-tu ? ». I am nine signifie « J’ai neuf ans ».",
+        "I am ten years old signifie « J’ai dix ans »."
+      ],
+      "piege": "Ne traduis pas mot à mot le verbe avoir pour dire ton âge.",
+      "astuce_memoire": "I am + âge.",
+      "quiz": [
+        {
+          "q": "Que signifie « I am ten » pour un âge ?",
+          "choix": [
+            "J’ai dix ans",
+            "J’ai neuf ans",
+            "Je suis content"
+          ],
+          "rep": "J’ai dix ans",
+          "expl": "Ten signifie dix."
+        },
+        {
+          "q": "Quelle question demande l’âge ?",
+          "choix": [
+            "What colour is it?",
+            "How old are you?",
+            "Where is the book?"
+          ],
+          "rep": "How old are you?",
+          "expl": "How old are you? signifie « Quel âge as-tu ? ». "
+        },
+        {
+          "q": "Comment dire « J’ai neuf ans » ?",
+          "choix": [
+            "I have nine years",
+            "My name is nine",
+            "I am nine"
+          ],
+          "rep": "I am nine",
+          "expl": "Pour l’âge, on utilise I am suivi du nombre."
+        }
+      ],
+      "id": "REV-AN-CM1-03"
+    },
+    {
+      "axe": "Compréhension de l’oral : écouter et comprendre",
+      "titre": "Comprendre les consignes",
+      "emoji": "📚",
+      "en_une_phrase": "Des consignes courtes permettent d’agir en classe.",
+      "comprendre": "Écoute le verbe au début de la consigne. Il indique l’action à faire. Les mots connus et les gestes aident à comprendre.",
+      "essentiel": [
+        "Listen signifie écoute.",
+        "Open your book signifie ouvre ton livre.",
+        "Sit down signifie assieds-toi."
+      ],
+      "image_mentale": "Imagine une enseignante qui donne une consigne simple.",
+      "regle_ou_methode": "Repère le verbe puis réalise l’action correspondante.",
+      "exemples": [
+        "Open your book signifie « Ouvre ton livre ». Tu ouvres ton livre.",
+        "Sit down signifie « Assieds-toi ». Tu t’assieds."
+      ],
+      "piege": "Open et close indiquent des actions opposées.",
+      "astuce_memoire": "J’écoute le verbe et j’agis.",
+      "quiz": [
+        {
+          "q": "Que signifie « Sit down » ?",
+          "choix": [
+            "Lève-toi",
+            "Assieds-toi",
+            "Ferme la porte"
+          ],
+          "rep": "Assieds-toi",
+          "expl": "Sit down demande de s’asseoir."
+        },
+        {
+          "q": "Que signifie « Open your book » ?",
+          "choix": [
+            "Ferme ton livre",
+            "Range ton stylo",
+            "Ouvre ton livre"
+          ],
+          "rep": "Ouvre ton livre",
+          "expl": "Open signifie ouvre et book signifie livre."
+        },
+        {
+          "q": "Que signifie « Listen » ?",
+          "choix": [
+            "Écoute",
+            "Dessine",
+            "Cours"
+          ],
+          "rep": "Écoute",
+          "expl": "Listen demande d’écouter."
+        }
+      ],
+      "id": "REV-AN-CM1-04"
+    },
+    {
+      "axe": "Expression orale en continu : parler en continu",
+      "titre": "Dire ce que l’on aime",
+      "emoji": "❤️",
+      "en_une_phrase": "La formule « I like » sert à exprimer un goût.",
+      "comprendre": "Pour dire ce que tu aimes, utilise « I like » suivi de l’activité ou de la chose. Pour exprimer un goût négatif, tu peux dire « I don’t like ». Les goûts varient selon les personnes.",
+      "essentiel": [
+        "I like signifie « j’aime ».",
+        "I don’t like signifie « je n’aime pas ».",
+        "La chose aimée vient après like."
+      ],
+      "image_mentale": "Imagine deux activités et choisis celle que tu apprécies.",
+      "regle_ou_methode": "Utilise I like ou I don’t like puis nomme la chose.",
+      "exemples": [
+        "I like music signifie « J’aime la musique ».",
+        "I don’t like carrots signifie « Je n’aime pas les carottes »."
+      ],
+      "piege": "Don’t change le sens : la phrase devient négative.",
+      "astuce_memoire": "I like : j’aime ; I don’t like : je n’aime pas.",
+      "quiz": [
+        {
+          "q": "Que signifie « I like music » ?",
+          "choix": [
+            "Je n’aime pas la musique",
+            "Je joue toujours de la musique",
+            "J’aime la musique"
+          ],
+          "rep": "J’aime la musique",
+          "expl": "I like exprime un goût positif."
+        },
+        {
+          "q": "Comment dire « Je n’aime pas les carottes » ?",
+          "choix": [
+            "I don’t like carrots",
+            "I like carrots",
+            "I am carrots"
+          ],
+          "rep": "I don’t like carrots",
+          "expl": "I don’t like exprime un goût négatif."
+        },
+        {
+          "q": "Quel mot introduit le goût dans « I like apples » ?",
+          "choix": [
+            "apples",
+            "like",
+            "I uniquement"
+          ],
+          "rep": "like",
+          "expl": "Like signifie aimer dans cette phrase."
+        }
+      ],
+      "id": "REV-AN-CM1-05"
+    },
+    {
+      "axe": "Expression orale en continu : parler en continu",
+      "titre": "Présenter sa famille",
+      "emoji": "👪",
+      "en_une_phrase": "Des mots simples permettent de parler de membres de sa famille.",
+      "comprendre": "On peut présenter les personnes de son entourage avec des mots de famille. « My » signifie ici « mon », « ma » ou « mes ». Chaque famille peut être différente.",
+      "essentiel": [
+        "Mother signifie mère.",
+        "Brother signifie frère.",
+        "My signifie mon ou ma devant un nom singulier."
+      ],
+      "image_mentale": "Imagine un dessin de famille avec des prénoms.",
+      "regle_ou_methode": "Choisis le mot de famille et présente la personne.",
+      "exemples": [
+        "This is my brother signifie « Voici mon frère ».",
+        "My mother is kind signifie « Ma mère est gentille »."
+      ],
+      "piege": "My ne change pas selon le genre du nom qui suit.",
+      "astuce_memoire": "My mother : ma mère ; my brother : mon frère.",
+      "quiz": [
+        {
+          "q": "Que signifie « brother » ?",
+          "choix": [
+            "Frère",
+            "Sœur",
+            "Ami"
+          ],
+          "rep": "Frère",
+          "expl": "Brother signifie frère."
+        },
+        {
+          "q": "Que signifie « my mother » ?",
+          "choix": [
+            "Mon frère",
+            "Ma mère",
+            "Ton livre"
+          ],
+          "rep": "Ma mère",
+          "expl": "My signifie ma et mother signifie mère."
+        },
+        {
+          "q": "Comment dire « Voici mon frère » ?",
+          "choix": [
+            "This is my book",
+            "I like my book",
+            "This is my brother"
+          ],
+          "rep": "This is my brother",
+          "expl": "This is my brother présente son frère."
+        }
+      ],
+      "id": "REV-AN-CM1-06"
+    },
+    {
+      "axe": "Compréhension de l’écrit : lire et comprendre",
+      "titre": "Les couleurs et les objets",
+      "emoji": "🎨",
+      "en_une_phrase": "En anglais, une couleur se place généralement avant le nom qu’elle décrit.",
+      "comprendre": "Pour décrire un objet, on associe sa couleur à son nom. Contrairement au français, la couleur précède souvent le nom. Elle ne change pas ici au pluriel.",
+      "essentiel": [
+        "Red signifie rouge.",
+        "Blue signifie bleu.",
+        "A red book signifie un livre rouge."
+      ],
+      "image_mentale": "Imagine un livre rouge et un sac bleu.",
+      "regle_ou_methode": "Nomme la couleur avant l’objet.",
+      "exemples": [
+        "A red book signifie « un livre rouge ». Red est placé avant book.",
+        "A blue bag signifie « un sac bleu »."
+      ],
+      "piege": "Ne place pas automatiquement la couleur après le nom comme en français.",
+      "astuce_memoire": "Couleur avant nom : a red book.",
+      "quiz": [
+        {
+          "q": "Que signifie « a red book » ?",
+          "choix": [
+            "Un sac bleu",
+            "Un livre rouge",
+            "Un livre bleu"
+          ],
+          "rep": "Un livre rouge",
+          "expl": "Red signifie rouge et book signifie livre."
+        },
+        {
+          "q": "Comment dire « un sac bleu » ?",
+          "choix": [
+            "A red book",
+            "A bag red",
+            "A blue bag"
+          ],
+          "rep": "A blue bag",
+          "expl": "Blue signifie bleu et bag signifie sac."
+        },
+        {
+          "q": "Où se place red dans « a red book » ?",
+          "choix": [
+            "Avant book",
+            "Après book",
+            "Il remplace book"
+          ],
+          "rep": "Avant book",
+          "expl": "La couleur précède le nom."
+        }
+      ],
+      "id": "REV-AN-CM1-07"
+    },
+    {
+      "axe": "Compréhension de l’écrit : lire et comprendre",
+      "titre": "Les jours de la semaine",
+      "emoji": "📅",
+      "en_une_phrase": "Les jours de la semaine en anglais commencent par une majuscule.",
+      "comprendre": "Les noms des jours permettent de situer une activité. Monday signifie lundi et Friday signifie vendredi. Leur initiale s’écrit en majuscule en anglais.",
+      "essentiel": [
+        "Monday signifie lundi.",
+        "Friday signifie vendredi.",
+        "Les jours prennent une majuscule."
+      ],
+      "image_mentale": "Imagine un calendrier avec Monday au début de la semaine scolaire.",
+      "regle_ou_methode": "Repère le jour, son sens et sa majuscule.",
+      "exemples": [
+        "On Monday signifie « lundi ». La majuscule est nécessaire à Monday.",
+        "On Friday signifie « vendredi »."
+      ],
+      "piege": "Friday ne signifie pas dimanche.",
+      "astuce_memoire": "Monday : lundi ; Friday : vendredi.",
+      "quiz": [
+        {
+          "q": "Que signifie Monday ?",
+          "choix": [
+            "Mardi",
+            "Dimanche",
+            "Lundi"
+          ],
+          "rep": "Lundi",
+          "expl": "Monday signifie lundi."
+        },
+        {
+          "q": "Comment écrit-on vendredi en anglais ?",
+          "choix": [
+            "Friday",
+            "monday",
+            "Sunday"
+          ],
+          "rep": "Friday",
+          "expl": "Friday signifie vendredi et prend une majuscule."
+        },
+        {
+          "q": "Quelle initiale prend un jour en anglais ?",
+          "choix": [
+            "Une minuscule obligatoire",
+            "Une majuscule",
+            "Un chiffre"
+          ],
+          "rep": "Une majuscule",
+          "expl": "Les noms des jours prennent une majuscule."
+        }
+      ],
+      "id": "REV-AN-CM1-08"
+    },
+    {
+      "axe": "Compréhension de l’oral : écouter et comprendre",
+      "titre": "La météo du jour",
+      "emoji": "🌤️",
+      "en_une_phrase": "On peut décrire le temps avec « It is » et un adjectif.",
+      "comprendre": "La météo indique le temps qu’il fait. En anglais, « It is sunny » signifie « Il y a du soleil ». On utilise la même structure avec d’autres adjectifs.",
+      "essentiel": [
+        "Sunny signifie ensoleillé.",
+        "Rainy signifie pluvieux.",
+        "It is peut se contracter en it’s."
+      ],
+      "image_mentale": "Imagine une fenêtre avec du soleil puis une autre avec de la pluie.",
+      "regle_ou_methode": "Observe le temps et choisis l’adjectif correspondant.",
+      "exemples": [
+        "It is sunny signifie « Il y a du soleil ».",
+        "It is rainy signifie « Il pleut » ou « Le temps est pluvieux »."
+      ],
+      "piege": "Sunny décrit le soleil, rainy décrit la pluie.",
+      "astuce_memoire": "It is + temps observé.",
+      "quiz": [
+        {
+          "q": "Que signifie « It is sunny » ?",
+          "choix": [
+            "Il y a du soleil",
+            "Il neige",
+            "Il fait nuit"
+          ],
+          "rep": "Il y a du soleil",
+          "expl": "Sunny signifie ensoleillé."
+        },
+        {
+          "q": "Quel mot décrit un temps pluvieux ?",
+          "choix": [
+            "Sunny",
+            "Rainy",
+            "Red"
+          ],
+          "rep": "Rainy",
+          "expl": "Rainy signifie pluvieux."
+        },
+        {
+          "q": "Quelle phrase décrit la pluie ?",
+          "choix": [
+            "It is sunny",
+            "My name is Rainy",
+            "It is rainy"
+          ],
+          "rep": "It is rainy",
+          "expl": "It is rainy décrit un temps pluvieux."
+        }
+      ],
+      "id": "REV-AN-CM1-09"
+    },
+    {
+      "axe": "Expression orale en interaction : réagir et dialoguer",
+      "titre": "Exprimer une capacité",
+      "emoji": "🏊",
+      "en_une_phrase": "« I can » indique ce que l’on sait ou peut faire.",
+      "comprendre": "En anglais, can exprime une capacité. Il est suivi d’un verbe qui nomme l’action. La forme négative can’t indique une incapacité.",
+      "essentiel": [
+        "I can swim signifie « Je sais nager ».",
+        "I can’t swim signifie « Je ne sais pas nager ».",
+        "Le verbe d’action suit can."
+      ],
+      "image_mentale": "Imagine une personne qui nage puis une qui dessine.",
+      "regle_ou_methode": "Choisis can ou can’t puis nomme l’action.",
+      "exemples": [
+        "I can swim signifie « Je sais nager ».",
+        "I can’t swim signifie « Je ne sais pas nager »."
+      ],
+      "piege": "Can et can’t n’ont pas le même sens.",
+      "astuce_memoire": "Can : pouvoir ou savoir ; can’t : ne pas pouvoir.",
+      "quiz": [
+        {
+          "q": "Que signifie « I can swim » ?",
+          "choix": [
+            "Je ne sais pas nager",
+            "Je sais nager",
+            "J’aime le soleil"
+          ],
+          "rep": "Je sais nager",
+          "expl": "Can indique ici une capacité et swim signifie nager."
+        },
+        {
+          "q": "Quelle phrase est négative ?",
+          "choix": [
+            "I can swim",
+            "I like swimming",
+            "I can’t swim"
+          ],
+          "rep": "I can’t swim",
+          "expl": "Can’t exprime ici une incapacité."
+        },
+        {
+          "q": "Quel mot nomme l’action de nager ?",
+          "choix": [
+            "Swim",
+            "Can",
+            "I"
+          ],
+          "rep": "Swim",
+          "expl": "Swim est le verbe nager."
+        }
+      ],
+      "id": "REV-AN-CM1-10"
+    },
+    {
+      "axe": "Expression écrite : écrire et réagir à l’écrit",
+      "titre": "Écrire une courte présentation",
+      "emoji": "✏️",
+      "en_une_phrase": "Une présentation rassemble quelques phrases simples sur soi.",
+      "comprendre": "Pour écrire à quelqu’un, on peut commencer par saluer. On peut ensuite donner son prénom et son âge. Relire aide à vérifier les mots et la ponctuation.",
+      "essentiel": [
+        "Hello sert à saluer.",
+        "My name is permet de donner son prénom.",
+        "I am suivi d’un nombre permet de donner son âge."
+      ],
+      "image_mentale": "Imagine une petite carte de présentation pour une classe partenaire.",
+      "regle_ou_methode": "Écris une formule de salut, ton prénom et ton âge puis relis.",
+      "exemples": [
+        "Hello! My name is Sam. I am nine. signifie « Bonjour ! Je m’appelle Sam. J’ai neuf ans. ».",
+        "My name is Alex. I am ten. signifie « Je m’appelle Alex. J’ai dix ans. »."
+      ],
+      "piege": "Ne confonds pas la phrase du prénom et celle de l’âge.",
+      "astuce_memoire": "Salut, prénom, âge, relecture.",
+      "quiz": [
+        {
+          "q": "Quelle phrase donne le prénom ?",
+          "choix": [
+            "I am nine.",
+            "It is sunny.",
+            "My name is Sam."
+          ],
+          "rep": "My name is Sam.",
+          "expl": "My name is introduit le prénom."
+        },
+        {
+          "q": "Quelle phrase donne l’âge ?",
+          "choix": [
+            "I am ten.",
+            "Hello!",
+            "My name is Alex."
+          ],
+          "rep": "I am ten.",
+          "expl": "I am ten indique ici dix ans."
+        },
+        {
+          "q": "Pourquoi relire sa présentation ?",
+          "choix": [
+            "Pour changer son âge",
+            "Pour vérifier les mots et la ponctuation",
+            "Pour effacer toutes les phrases"
+          ],
+          "rep": "Pour vérifier les mots et la ponctuation",
+          "expl": "La relecture aide à corriger les erreurs."
+        }
+      ],
+      "id": "REV-AN-CM1-11"
+    },
+    {
+      "axe": "Médiation",
+      "titre": "Partager une information culturelle",
+      "emoji": "🌍",
+      "en_une_phrase": "On peut expliquer simplement une information en anglais à un camarade.",
+      "comprendre": "L’anglais est parlé dans plusieurs pays. Pour aider quelqu’un, on repère un mot connu et on explique son sens en français. Les modes de vie varient à l’intérieur de chaque pays.",
+      "essentiel": [
+        "English signifie anglais.",
+        "London est le nom anglais de Londres.",
+        "On peut aider en reformulant une information."
+      ],
+      "image_mentale": "Imagine une carte du Royaume-Uni avec London indiqué.",
+      "regle_ou_methode": "Repère le mot ou le lieu puis explique-le avec des mots simples.",
+      "exemples": [
+        "London signifie « Londres ». Sur une carte, ce nom désigne une ville du Royaume-Uni.",
+        "English signifie « anglais ». Ce mot peut désigner la langue étudiée."
+      ],
+      "piege": "Les habitants d’un pays n’ont pas tous les mêmes habitudes.",
+      "astuce_memoire": "Je repère, je comprends, j’explique.",
+      "quiz": [
+        {
+          "q": "Que signifie London ?",
+          "choix": [
+            "Londres",
+            "Paris",
+            "Madrid"
+          ],
+          "rep": "Londres",
+          "expl": "London est le nom anglais de Londres."
+        },
+        {
+          "q": "Que signifie English comme nom de langue ?",
+          "choix": [
+            "Espagnol",
+            "Anglais",
+            "Allemand"
+          ],
+          "rep": "Anglais",
+          "expl": "English désigne la langue anglaise."
+        },
+        {
+          "q": "Que faire pour aider un camarade à comprendre un mot ?",
+          "choix": [
+            "Cacher le document",
+            "Changer le mot au hasard",
+            "Expliquer son sens simplement"
+          ],
+          "rep": "Expliquer son sens simplement",
+          "expl": "Une explication simple aide à comprendre."
+        }
+      ],
+      "id": "REV-AN-CM1-12"
+    }
+  ]
+}
