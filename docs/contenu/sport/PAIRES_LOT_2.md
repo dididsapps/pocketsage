@@ -240,3 +240,4 @@ Titre de l'image : YG-020 + YG-021. Ne dessine AUCUN autre exercice. Écris les 
 - DF-038 : case 4 = miroir de la case 2 (tête et buste tournés de l'autre côté).
 - DF-039 : case 4 = miroir de la case 3 (autre jambe devant).
 - DF-037 : ajouter l'autre côté = miroir de la dernière case.
+- YG-002 L'Arbre : le pied est posé SUR LE GENOU (consigne : jamais sur le genou, sur la cheville ou le mollet) → à refaire : pied contre l'intérieur du mollet ou de la cheville. (Sert aussi pour DF-015.)
