@@ -51,3 +51,13 @@ Constat novembre (1-21) : 74,67 € — Translate 42,99 € (ateliers + flashcar
 - [ ] Module appli : tuile « 🛠️ Comment ça marche ? », parcours de leçons, cartes + schémas SVG animés, quiz, « dans ta vie », vidéo « pour aller plus loin » (youtube-nocookie, réglage parent, coupé le soir)
 - [ ] « Bien parler » dans Politesse, avec mini-défis
 - [ ] Vidéos : liste vérifiée par la moulinette (FR d'abord, EN + sous-titres FR sinon)
+
+## Fiches de révision dans les autres langues (discussion 23/11)
+Principe : les fiches suivent le PROGRAMME FRANÇAIS. Public visé : enfants scolarisés en France (ou dans une école française à l'étranger) dont la langue maternelle n'est pas le français.
+- [ ] Phase 1 — Traduire toutes les fiches vérifiées dans les 9 langues (Claude + relecture agent), bouton « FR / ma langue », mention « Programme scolaire français »
+  - Maths, PC, SVT, ESC, techno : traduction simple + adapter l'écriture des nombres (virgule/point décimal), unités, dates
+  - Anglais / espagnol (LV) : traduire les explications, garder les exemples ; masquer les fiches d'anglais quand l'appli est en anglais (idem espagnol)
+  - Français (matière) : explications traduites, exemples et règles gardés en français
+  - Histoire-géo, SES, HGGSP, philo : traduction fidèle (c'est le programme français) + petit glossaire des mots du cours
+- [ ] Glossaire bilingue « les mots du contrôle » par matière et par classe
+- [ ] Phase 2 (seulement si les statistiques montrent des élèves scolarisés hors système français) : programmes locaux par pays, en commençant par le plus utilisé ; table d'équivalence des classes (CP = Year 2, 1.º Primaria…) ; maths/sciences réutilisables, histoire-géo et langue nationale à réécrire
