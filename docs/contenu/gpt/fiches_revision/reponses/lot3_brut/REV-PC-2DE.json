@@ -1,0 +1,1017 @@
+{
+  "classe": "2DE",
+  "niveau_appli": "Lycée",
+  "age": "15-16 ans",
+  "matiere": "Physique-chimie",
+  "code": "PC",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Constitution et transformations de la matière",
+      "titre": "Corps purs et mélanges",
+      "emoji": "🧪",
+      "en_une_phrase": "Un corps pur contient une seule espèce chimique ; un mélange en contient plusieurs.",
+      "comprendre": "Un liquide transparent peut être un corps pur ou un mélange homogène. L’observation seule ne suffit pas toujours à les distinguer. Des propriétés physiques ou des tests peuvent aider à identifier les espèces présentes.",
+      "essentiel": [
+        "Un corps pur contient une seule espèce chimique.",
+        "Un mélange homogène paraît uniforme à l’œil nu.",
+        "Une mesure ou un test aide à identifier une espèce."
+      ],
+      "image_mentale": "Imagine des particules identiques dans un récipient et plusieurs sortes dans un autre.",
+      "regle_ou_methode": "Observe le mélange, puis compare une propriété mesurée à des valeurs de référence dans les mêmes conditions.",
+      "exemples": [
+        "Une eau salée paraît uniforme. Elle contient de l’eau et du sel dissous. C’est donc un mélange homogène.",
+        "L’eau distillée est modélisée comme un corps pur d’eau si les impuretés sont négligeables."
+      ],
+      "piege": "Transparent ne signifie pas nécessairement pur.",
+      "astuce_memoire": "Une espèce : corps pur ; plusieurs : mélange.",
+      "quiz": [
+        {
+          "q": "Une eau salée homogène est-elle un corps pur ?",
+          "choix": [
+            "Oui, car elle est transparente",
+            "Non, c’est un mélange",
+            "Oui, car elle contient de l’eau"
+          ],
+          "rep": "Non, c’est un mélange",
+          "expl": "Elle contient de l’eau et du sel dissous."
+        },
+        {
+          "q": "Un mélange homogène présente-t-il plusieurs espèces chimiques ?",
+          "choix": [
+            "Non",
+            "Seulement s’il est opaque",
+            "Oui"
+          ],
+          "rep": "Oui",
+          "expl": "Un mélange contient plusieurs espèces même s’il paraît uniforme."
+        },
+        {
+          "q": "Comment aider à identifier une espèce ?",
+          "choix": [
+            "Comparer une propriété mesurée à une référence adaptée",
+            "Observer uniquement la couleur du récipient",
+            "Supposer que tout liquide transparent est pur"
+          ],
+          "rep": "Comparer une propriété mesurée à une référence adaptée",
+          "expl": "Une propriété mesurée peut être comparée à une référence."
+        }
+      ],
+      "id": "REV-PC-2DE-01"
+    },
+    {
+      "axe": "Constitution et transformations de la matière",
+      "titre": "Concentration massique",
+      "emoji": "⚗️",
+      "en_une_phrase": "La concentration massique est la masse de soluté divisée par le volume final de solution.",
+      "comprendre": "Une solution plus concentrée contient davantage de soluté par unité de volume. Pour comparer des solutions, on rapporte la masse dissoute au volume final. Les unités doivent être compatibles.",
+      "essentiel": [
+        "Cm = masse de soluté ÷ volume de solution.",
+        "En g/L, la masse est en grammes et le volume en litres.",
+        "Le volume considéré est celui de la solution."
+      ],
+      "image_mentale": "Imagine la même masse répartie dans des volumes différents.",
+      "regle_ou_methode": "Convertis le volume en litres puis divise la masse en grammes par ce volume.",
+      "exemples": [
+        "On dissout 3 g de soluté pour obtenir 250 mL de solution. Convertis 250 mL en 0,250 L. La concentration est 3 ÷ 0,250 = 12 g/L.",
+        "Pour 5 g dans 1 L de solution, la concentration est 5 g/L."
+      ],
+      "piege": "Ne confonds pas 250 mL et 250 L.",
+      "astuce_memoire": "Grammes divisés par litres : g/L.",
+      "quiz": [
+        {
+          "q": "3 g de soluté dans 250 mL de solution : quelle concentration ?",
+          "choix": [
+            "0,012 g/L",
+            "750 g/L",
+            "12 g/L"
+          ],
+          "rep": "12 g/L",
+          "expl": "250 mL = 0,250 L et 3 ÷ 0,250 = 12."
+        },
+        {
+          "q": "Combien de litres valent 250 mL ?",
+          "choix": [
+            "0,250 L",
+            "2,5 L",
+            "250 L"
+          ],
+          "rep": "0,250 L",
+          "expl": "On divise le nombre de millilitres par 1 000."
+        },
+        {
+          "q": "Quel volume utilise-t-on dans la formule ?",
+          "choix": [
+            "La masse du récipient",
+            "Le volume final de solution",
+            "Uniquement le volume du soluté solide"
+          ],
+          "rep": "Le volume final de solution",
+          "expl": "La concentration rapporte la masse dissoute au volume de solution."
+        }
+      ],
+      "id": "REV-PC-2DE-02"
+    },
+    {
+      "axe": "Constitution et transformations de la matière",
+      "titre": "Dilution",
+      "emoji": "💧",
+      "en_une_phrase": "Une dilution réduit la concentration en ajoutant du solvant tout en conservant la quantité de soluté prélevée.",
+      "comprendre": "Un sirop devient moins concentré quand on y ajoute de l’eau. Dans une dilution, la quantité de soluté du prélèvement reste la même si aucune perte ne se produit. Le volume augmente et la concentration diminue.",
+      "essentiel": [
+        "La solution initiale est la solution mère.",
+        "La solution obtenue est la solution fille.",
+        "Cmère × Vmère = Cfille × Vfille pour la masse de soluté conservée."
+      ],
+      "image_mentale": "Imagine une même quantité de soluté répartie dans un plus grand volume.",
+      "regle_ou_methode": "Identifie les concentrations et volumes, puis utilise la conservation du soluté avec des unités cohérentes.",
+      "exemples": [
+        "On prélève 20 mL d’une solution à 10 g/L et on complète à 100 mL. Le volume est multiplié par 5. La concentration est divisée par 5 : elle vaut 2 g/L.",
+        "Diluer 10 mL d’une solution à 4 g/L jusqu’à 20 mL donne 2 g/L."
+      ],
+      "piege": "Le volume final n’est pas seulement le volume de solvant ajouté.",
+      "astuce_memoire": "Même soluté prélevé, volume plus grand, concentration plus faible.",
+      "quiz": [
+        {
+          "q": "20 mL à 10 g/L dilués jusqu’à 100 mL donnent quelle concentration ?",
+          "choix": [
+            "2 g/L",
+            "5 g/L",
+            "50 g/L"
+          ],
+          "rep": "2 g/L",
+          "expl": "Le volume est multiplié par 5, donc la concentration est divisée par 5."
+        },
+        {
+          "q": "Quelle grandeur reste conservée lors de la dilution du prélèvement sans perte ?",
+          "choix": [
+            "La concentration",
+            "La quantité de soluté",
+            "Le volume final"
+          ],
+          "rep": "La quantité de soluté",
+          "expl": "L’ajout de solvant ne change pas la quantité de soluté prélevée."
+        },
+        {
+          "q": "10 mL à 4 g/L dilués jusqu’à 20 mL donnent :",
+          "choix": [
+            "8 g/L",
+            "4 g/L",
+            "2 g/L"
+          ],
+          "rep": "2 g/L",
+          "expl": "Le volume double, donc la concentration est divisée par deux."
+        }
+      ],
+      "id": "REV-PC-2DE-03"
+    },
+    {
+      "axe": "Constitution et transformations de la matière",
+      "titre": "Noyau et électrons",
+      "emoji": "⚛️",
+      "en_une_phrase": "Un atome comprend un noyau chargé positivement et des électrons chargés négativement.",
+      "comprendre": "À l’échelle de l’atome, le noyau rassemble des protons et des neutrons. Le nombre de protons définit l’élément chimique. Un atome neutre possède autant d’électrons que de protons.",
+      "essentiel": [
+        "Le numéro atomique Z est le nombre de protons.",
+        "Un atome neutre possède Z électrons.",
+        "Le nombre de masse A est le total des protons et neutrons."
+      ],
+      "image_mentale": "Imagine un petit noyau entouré d’un nuage électronique.",
+      "regle_ou_methode": "Lis Z et A, puis calcule les neutrons par A − Z ; pour l’atome neutre, compte Z électrons.",
+      "exemples": [
+        "Un atome a Z = 6 et A = 12. Son noyau contient 6 protons et 12 − 6 = 6 neutrons. S’il est neutre, il possède aussi 6 électrons.",
+        "Un atome neutre de numéro atomique 8 possède 8 protons et 8 électrons."
+      ],
+      "piege": "A représente protons et neutrons, pas le seul nombre de neutrons.",
+      "astuce_memoire": "Z : protons ; A − Z : neutrons.",
+      "quiz": [
+        {
+          "q": "Un noyau a Z = 6 et A = 12. Combien contient-il de neutrons ?",
+          "choix": [
+            "12",
+            "6",
+            "18"
+          ],
+          "rep": "6",
+          "expl": "12 − 6 = 6."
+        },
+        {
+          "q": "Combien d’électrons possède un atome neutre de Z = 8 ?",
+          "choix": [
+            "16",
+            "0",
+            "8"
+          ],
+          "rep": "8",
+          "expl": "Un atome neutre possède autant d’électrons que de protons."
+        },
+        {
+          "q": "Que représente le numéro atomique Z ?",
+          "choix": [
+            "Le nombre de protons",
+            "Le nombre de protons et de neutrons réunis",
+            "La masse en grammes de tout l’échantillon"
+          ],
+          "rep": "Le nombre de protons",
+          "expl": "Z est le nombre de protons du noyau."
+        }
+      ],
+      "id": "REV-PC-2DE-04"
+    },
+    {
+      "axe": "Constitution et transformations de la matière",
+      "titre": "La quantité de matière",
+      "emoji": "🔢",
+      "en_une_phrase": "La mole permet de compter un très grand nombre d’entités chimiques.",
+      "comprendre": "Un lot permet de regrouper des objets trop nombreux pour être comptés un à un. Une mole contient exactement 6,022 140 76 × 10²³ entités élémentaires. La quantité de matière relie le nombre d’entités à cette constante.",
+      "essentiel": [
+        "La quantité de matière n s’exprime en moles.",
+        "Une mole contient exactement 6,022 140 76 × 10²³ entités.",
+        "N = n × NA."
+      ],
+      "image_mentale": "Imagine des lots identiques contenant chacun un très grand nombre d’entités.",
+      "regle_ou_methode": "Divise le nombre d’entités N par la constante d’Avogadro NA pour obtenir n.",
+      "exemples": [
+        "Un échantillon contient 1,2044 × 10²⁴ entités environ. Avec NA ≈ 6,022 × 10²³ mol⁻¹, calcule N/NA. Il contient environ 2,0 mol d’entités.",
+        "0,5 mol contient environ 3,01 × 10²³ entités."
+      ],
+      "piege": "La mole compte des entités ; il faut préciser lesquelles.",
+      "astuce_memoire": "Nombre d’entités divisé par NA : quantité en moles.",
+      "quiz": [
+        {
+          "q": "Environ combien de moles correspondent à 1,2044 × 10²⁴ entités ?",
+          "choix": [
+            "0,5 mol",
+            "12 mol",
+            "2,0 mol"
+          ],
+          "rep": "2,0 mol",
+          "expl": "On divise par environ 6,022 × 10²³."
+        },
+        {
+          "q": "Quelle unité mesure la quantité de matière ?",
+          "choix": [
+            "La mole",
+            "Le litre",
+            "Le newton"
+          ],
+          "rep": "La mole",
+          "expl": "La quantité de matière s’exprime en moles."
+        },
+        {
+          "q": "Environ combien d’entités contient 0,5 mol ?",
+          "choix": [
+            "6,02 × 10²³",
+            "3,01 × 10²³",
+            "1,20 × 10²⁴"
+          ],
+          "rep": "3,01 × 10²³",
+          "expl": "0,5 × 6,022 × 10²³ vaut environ 3,01 × 10²³."
+        }
+      ],
+      "id": "REV-PC-2DE-05"
+    },
+    {
+      "axe": "Constitution et transformations de la matière",
+      "titre": "Réactif limitant",
+      "emoji": "🧩",
+      "en_une_phrase": "Le réactif limitant est entièrement consommé en premier lors d’une transformation totale.",
+      "comprendre": "Une recette exige des proportions précises d’ingrédients. Une réaction chimique suit aussi les proportions de son équation ajustée. Le réactif disponible en quantité insuffisante limite la quantité de produit formée.",
+      "essentiel": [
+        "Les coefficients indiquent les proportions de la réaction.",
+        "Le réactif limitant est consommé en premier dans le modèle d’une transformation totale.",
+        "Un réactif en excès peut rester à la fin."
+      ],
+      "image_mentale": "Imagine une recette qui exige deux morceaux d’un ingrédient pour un de l’autre.",
+      "regle_ou_methode": "Compare les quantités disponibles aux proportions de l’équation.",
+      "exemples": [
+        "Pour 2 H₂ + O₂ → 2 H₂O, supposons 4 mol de H₂ et 1 mol de O₂. Une mole de O₂ consomme 2 mol de H₂. O₂ est donc limitant et 2 mol de H₂ restent.",
+        "Avec 2 mol de H₂ et 1 mol de O₂, les réactifs sont dans les proportions stœchiométriques."
+      ],
+      "piege": "Le plus petit nombre de moles n’est pas toujours le réactif limitant : il faut tenir compte des coefficients.",
+      "astuce_memoire": "Comparer quantités et coefficients.",
+      "quiz": [
+        {
+          "q": "Avec 4 mol de H₂ et 1 mol de O₂ dans 2 H₂ + O₂ → 2 H₂O, quel est le réactif limitant ?",
+          "choix": [
+            "O₂",
+            "H₂",
+            "L’eau initiale"
+          ],
+          "rep": "O₂",
+          "expl": "1 mol de O₂ ne consomme que 2 mol de H₂."
+        },
+        {
+          "q": "Combien de moles de H₂ restent dans cet exemple ?",
+          "choix": [
+            "1 mol",
+            "2 mol",
+            "4 mol"
+          ],
+          "rep": "2 mol",
+          "expl": "4 − 2 = 2 mol de H₂ restent."
+        },
+        {
+          "q": "Pourquoi comparer les coefficients de l’équation ?",
+          "choix": [
+            "Ils donnent automatiquement la température",
+            "Ils remplacent les quantités initiales",
+            "Ils indiquent les proportions de réaction"
+          ],
+          "rep": "Ils indiquent les proportions de réaction",
+          "expl": "Les coefficients définissent les proportions entre réactifs."
+        }
+      ],
+      "id": "REV-PC-2DE-06"
+    },
+    {
+      "axe": "Constitution et transformations de la matière",
+      "titre": "Isotopes et transformation nucléaire",
+      "emoji": "☢️",
+      "en_une_phrase": "Des isotopes d’un même élément ont le même nombre de protons mais des nombres de neutrons différents.",
+      "comprendre": "Le numéro atomique identifie un élément par son nombre de protons. Deux noyaux de cet élément peuvent avoir des masses différentes si leur nombre de neutrons change. Une transformation nucléaire modifie des noyaux, contrairement à une transformation chimique ordinaire.",
+      "essentiel": [
+        "Des isotopes ont le même numéro atomique Z.",
+        "Ils diffèrent par leur nombre de neutrons.",
+        "Une transformation nucléaire modifie des noyaux."
+      ],
+      "image_mentale": "Imagine deux noyaux avec autant de protons mais des nombres de neutrons différents.",
+      "regle_ou_methode": "Compare Z puis A ; calcule le nombre de neutrons par A − Z.",
+      "exemples": [
+        "Deux noyaux de carbone ont Z = 6, avec A = 12 et A = 14. Ils ont tous deux 6 protons. Ils possèdent respectivement 6 et 8 neutrons : ce sont des isotopes.",
+        "Dans le Soleil, des transformations nucléaires contribuent à l’énergie émise."
+      ],
+      "piege": "Isotopes signifie même nombre de protons, pas même nombre de neutrons.",
+      "astuce_memoire": "Même Z ; nombre de neutrons différent.",
+      "quiz": [
+        {
+          "q": "Deux noyaux de carbone ont Z = 6 et A = 12 ou 14. Sont-ils isotopes ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Seulement si leurs neutrons sont identiques"
+          ],
+          "rep": "Oui",
+          "expl": "Ils ont le même nombre de protons et des nombres de neutrons différents."
+        },
+        {
+          "q": "Combien de neutrons possède le noyau de carbone avec Z = 6 et A = 14 ?",
+          "choix": [
+            "6",
+            "14",
+            "8"
+          ],
+          "rep": "8",
+          "expl": "14 − 6 = 8."
+        },
+        {
+          "q": "Quel type de transformation modifie un noyau ?",
+          "choix": [
+            "Une transformation nucléaire",
+            "Une simple dissolution",
+            "Une fusion de glace"
+          ],
+          "rep": "Une transformation nucléaire",
+          "expl": "Une transformation nucléaire modifie les noyaux."
+        }
+      ],
+      "id": "REV-PC-2DE-07"
+    },
+    {
+      "axe": "Constitution et transformations de la matière",
+      "titre": "Changement d’état et énergie",
+      "emoji": "🧊",
+      "en_une_phrase": "Un changement d’état transforme l’organisation de la matière sans changer l’espèce chimique.",
+      "comprendre": "Une glace fond quand elle reçoit de l’énergie thermique. L’eau reste la même espèce chimique mais son état change. La masse et l’énergie échangée sont reliées par une énergie massique de changement d’état donnée.",
+      "essentiel": [
+        "La fusion correspond au passage de l’état solide à l’état liquide.",
+        "Un changement d’état ne change pas l’espèce chimique.",
+        "L’énergie échangée est proportionnelle à la masse qui change d’état si l’énergie massique est constante."
+      ],
+      "image_mentale": "Imagine les mêmes molécules avant et après leur réorganisation.",
+      "regle_ou_methode": "Identifie les états, puis multiplie la masse par l’énergie massique fournie.",
+      "exemples": [
+        "Pour une masse de 2 kg et une énergie massique de fusion donnée de 300 kJ/kg, calcule 2 × 300. L’énergie reçue pour la fusion dans ce modèle est 600 kJ.",
+        "La solidification est le passage de l’état liquide à l’état solide."
+      ],
+      "piege": "Une fusion est un changement d’état ; une dissolution est le mélange d’un soluté et d’un solvant.",
+      "astuce_memoire": "Fusion : solide vers liquide.",
+      "quiz": [
+        {
+          "q": "Avec 2 kg et 300 kJ/kg, quelle énergie est associée au changement d’état ?",
+          "choix": [
+            "150 kJ",
+            "302 kJ",
+            "600 kJ"
+          ],
+          "rep": "600 kJ",
+          "expl": "2 × 300 = 600 kJ."
+        },
+        {
+          "q": "Que désigne la fusion ?",
+          "choix": [
+            "Le passage du solide au liquide",
+            "Le passage du liquide au solide",
+            "La formation d’un nouvel élément chimique"
+          ],
+          "rep": "Le passage du solide au liquide",
+          "expl": "La fusion transforme un solide en liquide."
+        },
+        {
+          "q": "Une fusion change-t-elle nécessairement l’espèce chimique ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "Oui, si le solide est de l’eau"
+          ],
+          "rep": "Non",
+          "expl": "Un changement d’état conserve l’espèce chimique."
+        }
+      ],
+      "id": "REV-PC-2DE-08"
+    },
+    {
+      "axe": "Constitution et transformations de la matière",
+      "titre": "Schéma de Lewis",
+      "emoji": "🔗",
+      "en_une_phrase": "Un schéma de Lewis représente les liaisons et les doublets d’électrons de valence d’une entité.",
+      "comprendre": "Les électrons de la couche externe participent aux liaisons chimiques. Un schéma de Lewis représente les doublets liants entre atomes et les doublets non liants. Il permet d’interpréter l’organisation de certaines molécules.",
+      "essentiel": [
+        "Un trait entre deux atomes représente un doublet liant.",
+        "Un doublet non liant reste localisé autour d’un atome dans le modèle.",
+        "Les règles de stabilité sont étudiées pour des exemples simples."
+      ],
+      "image_mentale": "Imagine des atomes reliés par des traits et entourés de paires de points.",
+      "regle_ou_methode": "Compte les liaisons et les doublets indiqués sur le schéma fourni.",
+      "exemples": [
+        "Dans le schéma H—H, le trait relie les deux atomes d’hydrogène. Il représente un doublet liant. La molécule contient donc une liaison entre ces atomes.",
+        "Dans un extrait du schéma de Lewis de l’eau, H—O—H représente deux liaisons entre l’oxygène et les hydrogènes. Le schéma complet montre aussi les doublets non liants de l’oxygène."
+      ],
+      "piege": "Un trait de Lewis représente un doublet liant, pas un seul électron.",
+      "astuce_memoire": "Trait de liaison : paire d’électrons partagée.",
+      "quiz": [
+        {
+          "q": "Que représente un trait entre deux atomes dans un schéma de Lewis ?",
+          "choix": [
+            "Un doublet liant",
+            "Un seul électron isolé",
+            "Une particule de lumière"
+          ],
+          "rep": "Un doublet liant",
+          "expl": "Un trait symbolise une paire d’électrons de liaison."
+        },
+        {
+          "q": "Combien de liaisons sont représentées dans H—O—H ?",
+          "choix": [
+            "Une",
+            "Deux",
+            "Trois"
+          ],
+          "rep": "Deux",
+          "expl": "Chaque trait représente une liaison."
+        },
+        {
+          "q": "Que représente H—H ?",
+          "choix": [
+            "Deux molécules d’eau",
+            "Un atome d’oxygène seul",
+            "Deux atomes d’hydrogène liés"
+          ],
+          "rep": "Deux atomes d’hydrogène liés",
+          "expl": "Le schéma montre une liaison entre deux H."
+        }
+      ],
+      "id": "REV-PC-2DE-09"
+    },
+    {
+      "axe": "Mouvement et interactions",
+      "titre": "Décrire une vitesse",
+      "emoji": "🚲",
+      "en_une_phrase": "Le vecteur vitesse indique la direction, le sens et la valeur de la vitesse à un instant.",
+      "comprendre": "Tu peux décrire le mouvement d’un vélo en observant ses positions successives. La vitesse est liée à la variation de position au cours du temps. Un vecteur permet aussi d’indiquer la direction et le sens du mouvement.",
+      "essentiel": [
+        "Le mouvement dépend du référentiel choisi.",
+        "Le vecteur vitesse est tangent à la trajectoire au point étudié.",
+        "Sa norme correspond à la valeur de la vitesse."
+      ],
+      "image_mentale": "Imagine une flèche tangente à la trajectoire orientée dans le sens du mouvement.",
+      "regle_ou_methode": "Choisis le référentiel, repère les positions puis construis une flèche adaptée au mouvement.",
+      "exemples": [
+        "Une voiture parcourt 60 m en 3 s sur une portion droite. Sa vitesse moyenne vaut 60 ÷ 3 = 20 m/s. Le vecteur vitesse est dirigé dans le sens du déplacement si la vitesse est constante sur cette portion.",
+        "Dans un mouvement circulaire, la direction du vecteur vitesse change même si sa valeur reste constante."
+      ],
+      "piege": "Une vitesse de valeur constante n’implique pas un vecteur vitesse constant si la direction change.",
+      "astuce_memoire": "Vecteur vitesse : direction, sens et valeur.",
+      "quiz": [
+        {
+          "q": "Quelle est la vitesse moyenne pour 60 m parcourus en 3 s ?",
+          "choix": [
+            "180 m/s",
+            "20 m/s",
+            "63 m/s"
+          ],
+          "rep": "20 m/s",
+          "expl": "60 ÷ 3 = 20 m/s."
+        },
+        {
+          "q": "Dans un mouvement circulaire uniforme, le vecteur vitesse reste-t-il identique ?",
+          "choix": [
+            "Oui, toujours",
+            "Oui, car sa norme devient nulle",
+            "Non, sa direction change"
+          ],
+          "rep": "Non, sa direction change",
+          "expl": "La direction tangente à la trajectoire change."
+        },
+        {
+          "q": "De quoi dépend la description d’un mouvement ?",
+          "choix": [
+            "Du référentiel choisi",
+            "Uniquement de la couleur de l’objet",
+            "Du nom du conducteur seulement"
+          ],
+          "rep": "Du référentiel choisi",
+          "expl": "Le mouvement est décrit par rapport à un référentiel."
+        }
+      ],
+      "id": "REV-PC-2DE-10"
+    },
+    {
+      "axe": "Mouvement et interactions",
+      "titre": "Bilan des forces",
+      "emoji": "⚖️",
+      "en_une_phrase": "Un bilan des forces identifie les actions exercées sur le système étudié.",
+      "comprendre": "Un objet peut être soumis à plusieurs actions simultanées. On choisit d’abord le système étudié, puis on identifie les forces exercées par son environnement. Chaque force se représente par un vecteur.",
+      "essentiel": [
+        "Le système est l’objet dont on étudie le mouvement.",
+        "Une force peut être de contact ou à distance.",
+        "Un vecteur force indique notamment direction, sens et valeur."
+      ],
+      "image_mentale": "Imagine un objet entouré de flèches représentant les actions extérieures.",
+      "regle_ou_methode": "Définis le système, recense les objets qui agissent sur lui puis représente les forces.",
+      "exemples": [
+        "Un livre immobile repose sur une table horizontale. La Terre exerce son poids vers le bas. La table exerce une force de contact vers le haut.",
+        "Un aimant peut exercer une force à distance sur un objet métallique adapté."
+      ],
+      "piege": "Ne confonds pas les forces exercées sur le système avec celles qu’il exerce sur d’autres objets.",
+      "astuce_memoire": "Système puis actions extérieures.",
+      "quiz": [
+        {
+          "q": "Quel objet exerce le poids sur le livre ?",
+          "choix": [
+            "Le livre lui-même",
+            "La page du livre uniquement",
+            "La Terre"
+          ],
+          "rep": "La Terre",
+          "expl": "Le poids correspond à l’action gravitationnelle de la Terre dans ce modèle."
+        },
+        {
+          "q": "Quelle force la table exerce-t-elle sur le livre immobile ?",
+          "choix": [
+            "Une force de contact",
+            "Une force lumineuse nécessairement",
+            "Aucune force"
+          ],
+          "rep": "Une force de contact",
+          "expl": "La table exerce une action de contact sur le livre."
+        },
+        {
+          "q": "Une force peut-elle agir à distance ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Seulement par contact mécanique"
+          ],
+          "rep": "Oui",
+          "expl": "La gravitation ou certaines actions magnétiques agissent à distance."
+        }
+      ],
+      "id": "REV-PC-2DE-11"
+    },
+    {
+      "axe": "Mouvement et interactions",
+      "titre": "Principe d’inertie",
+      "emoji": "🧭",
+      "en_une_phrase": "Dans un référentiel galiléen, si la somme des forces est nulle, le vecteur vitesse reste constant.",
+      "comprendre": "Un objet n’a pas besoin d’une force dans le sens de son mouvement pour conserver une vitesse constante. Dans un référentiel galiléen, des forces qui se compensent correspondent à un mouvement rectiligne uniforme ou au repos. Le principe s’utilise avec un bilan de forces.",
+      "essentiel": [
+        "La somme des forces peut être nulle même si plusieurs forces existent.",
+        "Une somme nulle correspond à un vecteur vitesse constant dans un référentiel galiléen.",
+        "Un vecteur vitesse constant implique une direction, un sens et une valeur constants."
+      ],
+      "image_mentale": "Imagine deux flèches opposées de même valeur sur un objet qui avance en ligne droite.",
+      "regle_ou_methode": "Choisis le système et le référentiel, puis vérifie la somme vectorielle des forces.",
+      "exemples": [
+        "Un livre immobile repose sur une table dans un référentiel terrestre supposé galiléen. Son poids et la force de la table se compensent dans ce modèle. Sa vitesse reste nulle.",
+        "Un mobile isolé dans un référentiel galiléen conserve une vitesse constante en direction, sens et valeur."
+      ],
+      "piege": "Des forces qui se compensent ne signifient pas qu’il n’y a aucune force.",
+      "astuce_memoire": "Somme des forces nulle : vecteur vitesse constant.",
+      "quiz": [
+        {
+          "q": "Si les forces se compensent dans un référentiel galiléen, que devient le vecteur vitesse ?",
+          "choix": [
+            "Il reste constant",
+            "Il augmente nécessairement",
+            "Il devient obligatoirement nul"
+          ],
+          "rep": "Il reste constant",
+          "expl": "Le principe d’inertie prévoit un vecteur vitesse constant."
+        },
+        {
+          "q": "Un objet se déplaçant à vitesse constante en ligne droite peut-il subir deux forces opposées qui se compensent ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Seulement si sa masse est nulle"
+          ],
+          "rep": "Oui",
+          "expl": "Plusieurs forces peuvent avoir une somme nulle."
+        },
+        {
+          "q": "Une trajectoire circulaire à vitesse de valeur constante correspond-elle à un vecteur vitesse constant ?",
+          "choix": [
+            "Oui",
+            "Oui, si le cercle est grand",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "La direction du vecteur vitesse change sur le cercle."
+        }
+      ],
+      "id": "REV-PC-2DE-12"
+    },
+    {
+      "axe": "Mouvement et interactions",
+      "titre": "Gravitation universelle",
+      "emoji": "🌍",
+      "en_une_phrase": "La force gravitationnelle entre deux corps assimilés à des points dépend de leurs masses et de leur distance.",
+      "comprendre": "Deux corps ayant une masse s’attirent. Le modèle de la gravitation relie la valeur de cette force aux masses et au carré de la distance. La formule s’applique notamment à des objets assimilés à des points ou à des sphères sans chevauchement à répartition sphérique.",
+      "essentiel": [
+        "F = G × m1 × m2 / d² dans le modèle indiqué.",
+        "Les masses sont en kilogrammes et la distance en mètres.",
+        "À masses constantes, doubler la distance divise la force par quatre."
+      ],
+      "image_mentale": "Imagine deux sphères dont les centres s’éloignent.",
+      "regle_ou_methode": "Utilise des unités cohérentes, calcule le carré de la distance puis applique la formule.",
+      "exemples": [
+        "Deux objets ont des masses inchangées. Si la distance entre leurs centres double, le dénominateur d² est multiplié par 4. La force est donc divisée par 4.",
+        "À distance constante, doubler l’une des masses double la force."
+      ],
+      "piege": "La distance intervient au carré : doubler la distance ne divise pas la force par deux.",
+      "astuce_memoire": "Distance doublée : force divisée par quatre.",
+      "quiz": [
+        {
+          "q": "À masses constantes, que devient la force si la distance double ?",
+          "choix": [
+            "Elle est divisée par deux",
+            "Elle est divisée par quatre",
+            "Elle double"
+          ],
+          "rep": "Elle est divisée par quatre",
+          "expl": "La distance apparaît au carré au dénominateur."
+        },
+        {
+          "q": "À distance et seconde masse constantes, que se passe-t-il si la première masse double ?",
+          "choix": [
+            "La force est divisée par deux",
+            "La force est divisée par quatre",
+            "La force double"
+          ],
+          "rep": "La force double",
+          "expl": "La force est proportionnelle à chaque masse."
+        },
+        {
+          "q": "Quelle unité utilise-t-on pour la distance dans la formule avec G en unités du système international ?",
+          "choix": [
+            "Le mètre",
+            "Le litre",
+            "Le kilogramme"
+          ],
+          "rep": "Le mètre",
+          "expl": "La distance est exprimée en mètres."
+        }
+      ],
+      "id": "REV-PC-2DE-13"
+    },
+    {
+      "axe": "Ondes et signaux",
+      "titre": "Fréquence et période",
+      "emoji": "🎵",
+      "en_une_phrase": "La fréquence d’un signal périodique est l’inverse de sa période.",
+      "comprendre": "Une vibration régulière se répète après une même durée appelée période. Sa fréquence compte le nombre de répétitions par seconde. La relation f = 1/T relie ces deux grandeurs.",
+      "essentiel": [
+        "La période T se mesure en secondes.",
+        "La fréquence f se mesure en hertz.",
+        "f = 1/T et T = 1/f."
+      ],
+      "image_mentale": "Imagine un motif qui se répète à intervalles réguliers sur un graphique.",
+      "regle_ou_methode": "Exprime la période en secondes, puis calcule son inverse.",
+      "exemples": [
+        "Un signal a une période de 0,005 s. Calcule 1 ÷ 0,005. Sa fréquence est 200 Hz.",
+        "Un signal de fréquence 50 Hz a une période de 1/50 = 0,02 s."
+      ],
+      "piege": "Ne confonds pas millisecondes et secondes : 5 ms valent 0,005 s.",
+      "astuce_memoire": "Fréquence et période sont inverses.",
+      "quiz": [
+        {
+          "q": "Quelle fréquence correspond à une période de 0,005 s ?",
+          "choix": [
+            "0,005 Hz",
+            "20 Hz",
+            "200 Hz"
+          ],
+          "rep": "200 Hz",
+          "expl": "1 ÷ 0,005 = 200 Hz."
+        },
+        {
+          "q": "Quelle période correspond à 50 Hz ?",
+          "choix": [
+            "0,02 s",
+            "50 s",
+            "0,2 s"
+          ],
+          "rep": "0,02 s",
+          "expl": "1 ÷ 50 = 0,02 s."
+        },
+        {
+          "q": "Combien valent 5 ms ?",
+          "choix": [
+            "0,05 s",
+            "0,005 s",
+            "5 s"
+          ],
+          "rep": "0,005 s",
+          "expl": "Une milliseconde vaut un millième de seconde."
+        }
+      ],
+      "id": "REV-PC-2DE-14"
+    },
+    {
+      "axe": "Ondes et signaux",
+      "titre": "Hauteur et timbre",
+      "emoji": "🎻",
+      "en_une_phrase": "La fréquence détermine la hauteur d’un son périodique ; sa forme contribue à son timbre.",
+      "comprendre": "Deux instruments peuvent jouer une note de même hauteur tout en produisant des sons différents. La fréquence fondamentale est liée à la hauteur. La forme du signal et ses composantes contribuent au timbre.",
+      "essentiel": [
+        "Une fréquence plus élevée correspond à un son plus aigu.",
+        "Deux sons de même hauteur peuvent avoir des timbres différents.",
+        "Le niveau sonore ne se confond pas avec la fréquence."
+      ],
+      "image_mentale": "Imagine deux signaux de même période mais de formes différentes.",
+      "regle_ou_methode": "Compare d’abord les fréquences, puis les formes des signaux et les niveaux sonores.",
+      "exemples": [
+        "Un piano et une flûte jouent une note de fréquence fondamentale 440 Hz. Leur hauteur est comparable. Leur timbre peut différer car leurs signaux n’ont pas la même forme.",
+        "Un son de 800 Hz est plus aigu qu’un son de 400 Hz."
+      ],
+      "piege": "Un son aigu n’est pas nécessairement plus intense.",
+      "astuce_memoire": "Hauteur : fréquence ; timbre : forme du signal.",
+      "quiz": [
+        {
+          "q": "Deux sons à 440 Hz ont-ils nécessairement le même timbre ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Oui, si leur source est différente"
+          ],
+          "rep": "Non",
+          "expl": "Leurs formes et composantes peuvent différer."
+        },
+        {
+          "q": "Quel son est le plus aigu ?",
+          "choix": [
+            "400 Hz",
+            "800 Hz",
+            "200 Hz"
+          ],
+          "rep": "800 Hz",
+          "expl": "La fréquence de 800 Hz est la plus élevée."
+        },
+        {
+          "q": "La fréquence indique-t-elle à elle seule le niveau sonore ?",
+          "choix": [
+            "Oui",
+            "Oui, pour toute source",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "La hauteur et le niveau sonore sont distincts."
+        }
+      ],
+      "id": "REV-PC-2DE-15"
+    },
+    {
+      "axe": "Ondes et signaux",
+      "titre": "Réflexion de la lumière",
+      "emoji": "🪞",
+      "en_une_phrase": "Lors d’une réflexion, l’angle réfléchi est égal à l’angle d’incidence.",
+      "comprendre": "Un miroir renvoie une partie de la lumière qu’il reçoit. Les angles se mesurent par rapport à la normale, une droite perpendiculaire à la surface au point d’incidence. La loi de réflexion relie les deux angles.",
+      "essentiel": [
+        "La normale est perpendiculaire à la surface.",
+        "Les angles sont mesurés par rapport à la normale.",
+        "L’angle réfléchi est égal à l’angle d’incidence."
+      ],
+      "image_mentale": "Imagine un rayon arrivant sur un miroir et une droite perpendiculaire à sa surface.",
+      "regle_ou_methode": "Trace la normale, mesure l’angle incident puis reporte le même angle pour le rayon réfléchi.",
+      "exemples": [
+        "Un rayon arrive avec un angle d’incidence de 30° par rapport à la normale. La loi impose un angle réfléchi égal. Il vaut donc 30°.",
+        "Si le rayon arrive selon la normale, les deux angles valent 0°."
+      ],
+      "piege": "Ne mesure pas l’angle de la loi par rapport à la surface du miroir.",
+      "astuce_memoire": "Angles mesurés depuis la normale : incidence égale réflexion.",
+      "quiz": [
+        {
+          "q": "Un rayon arrive avec une incidence de 30°. Quel est l’angle réfléchi ?",
+          "choix": [
+            "60°",
+            "30°",
+            "90°"
+          ],
+          "rep": "30°",
+          "expl": "La loi de réflexion donne des angles égaux."
+        },
+        {
+          "q": "Par rapport à quoi mesure-t-on ces angles ?",
+          "choix": [
+            "À la surface uniquement",
+            "À une ligne horizontale arbitraire",
+            "À la normale"
+          ],
+          "rep": "À la normale",
+          "expl": "Les angles sont mesurés par rapport à la normale."
+        },
+        {
+          "q": "Si le rayon suit la normale à l’arrivée, quelle est son incidence ?",
+          "choix": [
+            "0°",
+            "90°",
+            "45°"
+          ],
+          "rep": "0°",
+          "expl": "Le rayon et la normale sont confondus."
+        }
+      ],
+      "id": "REV-PC-2DE-16"
+    },
+    {
+      "axe": "Ondes et signaux",
+      "titre": "Réfraction",
+      "emoji": "💧",
+      "en_une_phrase": "La réfraction est le changement de direction d’un rayon lumineux lorsqu’il passe entre deux milieux.",
+      "comprendre": "Une paille dans un verre d’eau peut paraître décalée. La lumière change de direction à la séparation entre l’eau et l’air. La loi de Snell-Descartes relie les angles et les indices des milieux.",
+      "essentiel": [
+        "Les angles sont mesurés par rapport à la normale.",
+        "La loi s’écrit n1 sin(i1) = n2 sin(i2).",
+        "À incidence normale, le rayon n’est pas dévié."
+      ],
+      "image_mentale": "Imagine un rayon qui traverse une surface en changeant de direction.",
+      "regle_ou_methode": "Identifie les indices et l’angle incident, puis utilise la loi pour déterminer l’angle réfracté.",
+      "exemples": [
+        "Un rayon passe d’un milieu d’indice 1 à un milieu d’indice 1,5 avec sin(i1) = 0,6. La loi donne 1 × 0,6 = 1,5 × sin(i2). Donc sin(i2) = 0,4.",
+        "Un rayon arrivant selon la normale traverse la séparation sans changement de direction."
+      ],
+      "piege": "Les angles se mesurent par rapport à la normale, pas à la surface.",
+      "astuce_memoire": "Indice fois sinus de l’angle : même valeur de part et d’autre.",
+      "quiz": [
+        {
+          "q": "Avec n1 = 1, n2 = 1,5 et sin(i1) = 0,6, que vaut sin(i2) ?",
+          "choix": [
+            "0,9",
+            "0,6",
+            "0,4"
+          ],
+          "rep": "0,4",
+          "expl": "1 × 0,6 ÷ 1,5 = 0,4."
+        },
+        {
+          "q": "Un rayon arrivant selon la normale est-il dévié ?",
+          "choix": [
+            "Non",
+            "Oui, toujours",
+            "Oui, de 90°"
+          ],
+          "rep": "Non",
+          "expl": "L’angle d’incidence et celui de réfraction sont nuls."
+        },
+        {
+          "q": "Par rapport à quoi mesure-t-on les angles de la loi ?",
+          "choix": [
+            "À la surface uniquement",
+            "À la normale",
+            "À la verticale du laboratoire nécessairement"
+          ],
+          "rep": "À la normale",
+          "expl": "Les angles sont définis par rapport à la normale."
+        }
+      ],
+      "id": "REV-PC-2DE-17"
+    },
+    {
+      "axe": "Ondes et signaux",
+      "titre": "Lentille convergente",
+      "emoji": "🔎",
+      "en_une_phrase": "Une lentille convergente peut former l’image réelle d’un objet sur un écran.",
+      "comprendre": "Une loupe et un appareil photographique utilisent des lentilles. Une lentille convergente dévie les rayons lumineux. Selon la position de l’objet, une image réelle peut être obtenue sur un écran.",
+      "essentiel": [
+        "Le foyer image est le point où convergent des rayons incidents parallèles à l’axe.",
+        "La distance focale relie le centre optique au foyer image.",
+        "Une image réelle peut être projetée sur un écran."
+      ],
+      "image_mentale": "Imagine des rayons parallèles qui convergent après la lentille.",
+      "regle_ou_methode": "Trace les rayons utiles depuis l’objet et repère leur intersection pour construire l’image réelle.",
+      "exemples": [
+        "Une lentille convergente reçoit des rayons parallèles à son axe. Après la lentille, ils convergent vers le foyer image. Ce point permet de caractériser la distance focale.",
+        "Si une image réelle mesure 2 cm et l’objet 4 cm, le rapport de leurs tailles est 2/4 = 0,5."
+      ],
+      "piege": "Une lentille convergente ne forme pas toujours une image réelle projetable pour toutes les positions de l’objet.",
+      "astuce_memoire": "Rayons parallèles vers le foyer image.",
+      "quiz": [
+        {
+          "q": "Où convergent des rayons incidents parallèles à l’axe après une lentille convergente ?",
+          "choix": [
+            "Au foyer image",
+            "Toujours au centre de l’objet",
+            "Nulle part dans le modèle"
+          ],
+          "rep": "Au foyer image",
+          "expl": "Ils convergent vers le foyer image."
+        },
+        {
+          "q": "Une image réelle peut-elle être projetée sur un écran ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Seulement si la lentille est opaque"
+          ],
+          "rep": "Oui",
+          "expl": "Une image réelle peut être recueillie sur un écran."
+        },
+        {
+          "q": "Une image mesure 2 cm et l’objet 4 cm. Quel est le rapport de leurs tailles ?",
+          "choix": [
+            "2",
+            "8",
+            "0,5"
+          ],
+          "rep": "0,5",
+          "expl": "2 ÷ 4 = 0,5."
+        }
+      ],
+      "id": "REV-PC-2DE-18"
+    },
+    {
+      "axe": "Ondes et signaux",
+      "titre": "Capteur et étalonnage",
+      "emoji": "📟",
+      "en_une_phrase": "Un capteur transforme une grandeur physique en un signal exploitable.",
+      "comprendre": "Un thermomètre électronique doit relier une mesure électrique à une température. Une courbe d’étalonnage associe des valeurs connues de la grandeur à la réponse du capteur. Elle permet ensuite d’estimer une valeur inconnue.",
+      "essentiel": [
+        "Un capteur mesure une grandeur physique.",
+        "Une courbe d’étalonnage relie réponse et grandeur connue.",
+        "Une estimation doit rester adaptée au domaine d’étalonnage."
+      ],
+      "image_mentale": "Imagine un tableau reliant températures connues et valeurs mesurées par le capteur.",
+      "regle_ou_methode": "Mesure la réponse du capteur puis lis la valeur correspondante sur la courbe.",
+      "exemples": [
+        "Un capteur étalonné donne 2 V à 20 °C et 3 V à 30 °C, avec une relation linéaire entre ces valeurs. Une mesure de 2,5 V est à mi-chemin. Elle correspond alors à 25 °C dans ce modèle.",
+        "Une sonde de luminosité peut fournir un signal électrique variant avec la lumière reçue."
+      ],
+      "piege": "N’extrapole pas sans justification bien au-delà des valeurs utilisées pour étalonner.",
+      "astuce_memoire": "Grandeur connue, signal mesuré, courbe de correspondance.",
+      "quiz": [
+        {
+          "q": "Dans le modèle linéaire donné, 2,5 V correspond à quelle température ?",
+          "choix": [
+            "20 °C",
+            "25 °C",
+            "35 °C"
+          ],
+          "rep": "25 °C",
+          "expl": "2,5 V est au milieu de 2 et 3 V, donc 25 °C."
+        },
+        {
+          "q": "À quoi sert une courbe d’étalonnage ?",
+          "choix": [
+            "À supprimer toutes les unités",
+            "À garantir une mesure exacte dans tous les cas",
+            "À relier une réponse mesurée à une grandeur connue"
+          ],
+          "rep": "À relier une réponse mesurée à une grandeur connue",
+          "expl": "Elle établit une correspondance pour estimer la grandeur."
+        },
+        {
+          "q": "Un capteur lumineux peut-il fournir un signal électrique ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "Seulement sans lumière et sans alimentation"
+          ],
+          "rep": "Oui",
+          "expl": "Un capteur peut convertir une grandeur lumineuse en signal exploitable."
+        }
+      ],
+      "id": "REV-PC-2DE-19"
+    }
+  ]
+}

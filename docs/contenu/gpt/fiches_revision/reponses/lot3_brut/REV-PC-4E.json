@@ -1,0 +1,860 @@
+{
+  "classe": "4E",
+  "niveau_appli": "4ème",
+  "age": "13-14 ans",
+  "matiere": "Physique-chimie",
+  "code": "PC",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Organisation et transformations de la matière",
+      "titre": "Atomes et molécules",
+      "emoji": "⚛️",
+      "en_une_phrase": "Une molécule est un assemblage électriquement neutre d’atomes liés.",
+      "comprendre": "Tu sais qu’une substance possède des propriétés observables. À une échelle beaucoup plus petite, on peut la modéliser avec des atomes et des molécules. Une formule indique les types et les nombres d’atomes dans une molécule.",
+      "essentiel": [
+        "Un atome est représenté par un symbole chimique.",
+        "Une molécule est un assemblage d’atomes liés.",
+        "H₂O contient deux atomes d’hydrogène et un atome d’oxygène."
+      ],
+      "image_mentale": "Imagine des billes de couleurs différentes assemblées en petits groupes.",
+      "regle_ou_methode": "Lis chaque symbole puis l’indice qui indique le nombre d’atomes correspondants.",
+      "exemples": [
+        "Dans H₂O, H désigne l’hydrogène et l’indice 2 indique deux atomes d’hydrogène. O sans indice représente un atome d’oxygène. La molécule contient donc trois atomes.",
+        "Dans O₂, une molécule de dioxygène contient deux atomes d’oxygène."
+      ],
+      "piege": "O est le symbole d’un atome d’oxygène ; O₂ représente une molécule de dioxygène.",
+      "astuce_memoire": "Indice 2 : deux atomes du symbole qui précède.",
+      "quiz": [
+        {
+          "q": "Combien d’atomes d’hydrogène contient une molécule H₂O ?",
+          "choix": [
+            "Un",
+            "Deux",
+            "Trois"
+          ],
+          "rep": "Deux",
+          "expl": "L’indice 2 concerne H."
+        },
+        {
+          "q": "Que représente O₂ ?",
+          "choix": [
+            "Deux molécules d’eau",
+            "Un seul atome d’oxygène",
+            "Une molécule formée de deux atomes d’oxygène"
+          ],
+          "rep": "Une molécule formée de deux atomes d’oxygène",
+          "expl": "L’indice 2 indique deux atomes d’oxygène liés."
+        },
+        {
+          "q": "Combien d’atomes au total dans H₂O ?",
+          "choix": [
+            "Trois",
+            "Deux",
+            "Quatre"
+          ],
+          "rep": "Trois",
+          "expl": "Deux atomes H et un atome O font trois atomes."
+        }
+      ],
+      "id": "REV-PC-4E-01"
+    },
+    {
+      "axe": "Organisation et transformations de la matière",
+      "titre": "Transformation et conservation",
+      "emoji": "🧪",
+      "en_une_phrase": "Lors d’une transformation chimique, des réactifs sont consommés et des produits apparaissent.",
+      "comprendre": "Un changement observé peut révéler une transformation chimique. Les substances initiales ne sont plus présentes dans les mêmes proportions et de nouvelles substances se forment. Dans un système fermé, les atomes et la masse totale se conservent.",
+      "essentiel": [
+        "Les réactifs sont consommés pendant la transformation.",
+        "Les produits sont formés.",
+        "Dans un système fermé, la masse totale est conservée."
+      ],
+      "image_mentale": "Imagine des pièces qui se réassemblent pour former de nouveaux groupes.",
+      "regle_ou_methode": "Identifie les substances avant et après, puis compare la masse totale dans un système fermé.",
+      "exemples": [
+        "Un récipient fermé et son contenu ont une masse totale de 120 g. Après la réaction, cette masse reste 120 g.",
+        "Quand du vinaigre et du bicarbonate sont mélangés, des bulles apparaissent : un gaz s’est formé."
+      ],
+      "piege": "La disparition d’un réactif ne signifie pas que ses atomes disparaissent.",
+      "astuce_memoire": "Réactifs consommés, produits formés, atomes conservés.",
+      "quiz": [
+        {
+          "q": "Une réaction a lieu dans un récipient fermé. Que devient la masse totale ?",
+          "choix": [
+            "Elle devient nulle",
+            "Elle double forcément",
+            "Elle se conserve"
+          ],
+          "rep": "Elle se conserve",
+          "expl": "Les atomes restent dans le système fermé."
+        },
+        {
+          "q": "Comment appelle-t-on les substances formées ?",
+          "choix": [
+            "Les produits",
+            "Les réactifs uniquement",
+            "Les instruments"
+          ],
+          "rep": "Les produits",
+          "expl": "Les produits apparaissent lors de la transformation."
+        },
+        {
+          "q": "Les atomes d’un réactif disparaissent-ils pendant une réaction ordinaire ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "Seulement si un gaz apparaît"
+          ],
+          "rep": "Non",
+          "expl": "Les atomes se réorganisent et se conservent."
+        }
+      ],
+      "id": "REV-PC-4E-02"
+    },
+    {
+      "axe": "Organisation et transformations de la matière",
+      "titre": "La composition de l’air",
+      "emoji": "🌬️",
+      "en_une_phrase": "L’air est un mélange gazeux composé principalement de diazote et de dioxygène.",
+      "comprendre": "L’air est invisible mais il occupe un volume. Il contient plusieurs gaz mélangés. Les proportions indiquées pour l’air sec permettent de représenter sa composition habituelle.",
+      "essentiel": [
+        "L’air sec contient environ 78 % de diazote.",
+        "Il contient environ 21 % de dioxygène.",
+        "D’autres gaz sont présents en faible proportion."
+      ],
+      "image_mentale": "Imagine 100 cases représentant approximativement les gaz de l’air sec.",
+      "regle_ou_methode": "Repère les gaz majoritaires puis compare leurs proportions.",
+      "exemples": [
+        "Sur 100 parts d’air sec, on peut représenter environ 78 parts de diazote et 21 de dioxygène. La part restante correspond à d’autres gaz.",
+        "Dans une salle aérée, l’air contient aussi une faible proportion de dioxyde de carbone."
+      ],
+      "piege": "L’air n’est pas constitué uniquement de dioxygène.",
+      "astuce_memoire": "Air sec : surtout diazote, puis dioxygène.",
+      "quiz": [
+        {
+          "q": "Quel gaz est le plus abondant dans l’air sec ?",
+          "choix": [
+            "Le diazote",
+            "Le dioxygène",
+            "Le dioxyde de carbone"
+          ],
+          "rep": "Le diazote",
+          "expl": "Le diazote représente environ 78 % de l’air sec."
+        },
+        {
+          "q": "Quelle est la proportion approximative de dioxygène ?",
+          "choix": [
+            "78 %",
+            "21 %",
+            "100 %"
+          ],
+          "rep": "21 %",
+          "expl": "Le dioxygène représente environ 21 % de l’air sec."
+        },
+        {
+          "q": "L’air est-il un corps pur ?",
+          "choix": [
+            "Oui, il ne contient que du dioxygène",
+            "Oui, il ne contient aucun gaz",
+            "Non, c’est un mélange"
+          ],
+          "rep": "Non, c’est un mélange",
+          "expl": "L’air contient plusieurs gaz."
+        }
+      ],
+      "id": "REV-PC-4E-03"
+    },
+    {
+      "axe": "Organisation et transformations de la matière",
+      "titre": "Masse volumique",
+      "emoji": "⚖️",
+      "en_une_phrase": "La masse volumique relie la masse d’un échantillon homogène à son volume.",
+      "comprendre": "Deux objets de même volume peuvent avoir des masses différentes. La masse volumique permet de comparer la masse correspondant à un même volume. Elle se calcule en divisant la masse par le volume.",
+      "essentiel": [
+        "Masse volumique = masse ÷ volume.",
+        "Son unité peut être g/mL ou kg/m³.",
+        "Il faut indiquer les unités et mesurer le volume de l’échantillon."
+      ],
+      "image_mentale": "Imagine deux cubes de même volume posés sur une balance.",
+      "regle_ou_methode": "Mesure la masse et le volume, puis divise la masse par le volume.",
+      "exemples": [
+        "Un liquide a une masse de 80 g pour un volume de 100 mL. Calcule 80 ÷ 100 = 0,8. Sa masse volumique est 0,8 g/mL.",
+        "Un échantillon de 40 g pour 20 mL a une masse volumique de 2 g/mL."
+      ],
+      "piege": "Ne confonds pas la masse totale avec la masse par unité de volume.",
+      "astuce_memoire": "Masse volumique : masse divisée par volume.",
+      "quiz": [
+        {
+          "q": "80 g pour 100 mL : quelle masse volumique ?",
+          "choix": [
+            "1,25 g/mL",
+            "0,8 g/mL",
+            "8 g/mL"
+          ],
+          "rep": "0,8 g/mL",
+          "expl": "80 ÷ 100 = 0,8 g/mL."
+        },
+        {
+          "q": "40 g pour 20 mL : quelle masse volumique ?",
+          "choix": [
+            "0,5 g/mL",
+            "60 g/mL",
+            "2 g/mL"
+          ],
+          "rep": "2 g/mL",
+          "expl": "40 ÷ 20 = 2 g/mL."
+        },
+        {
+          "q": "Quelle unité peut exprimer une masse volumique ?",
+          "choix": [
+            "g/mL",
+            "m/s",
+            "°C"
+          ],
+          "rep": "g/mL",
+          "expl": "g/mL rapporte une masse à un volume."
+        }
+      ],
+      "id": "REV-PC-4E-04"
+    },
+    {
+      "axe": "Organisation et transformations de la matière",
+      "titre": "La combustion",
+      "emoji": "🔥",
+      "en_une_phrase": "Une combustion est une transformation chimique entre un combustible et un comburant.",
+      "comprendre": "Tu as déjà vu une flamme : elle indique souvent une combustion. Dans l’air, le dioxygène est un comburant qui peut réagir avec un combustible. La transformation forme de nouvelles substances et transfère de l’énergie.",
+      "essentiel": [
+        "Le combustible est la substance qui brûle.",
+        "Le dioxygène de l’air peut jouer le rôle de comburant.",
+        "Une combustion forme des produits et transfère de l’énergie."
+      ],
+      "image_mentale": "Imagine un triangle reliant combustible, dioxygène et source d’énergie pour démarrer.",
+      "regle_ou_methode": "Repère le combustible, le comburant puis les produits identifiés par l’expérience.",
+      "exemples": [
+        "Une bougie brûle dans l’air. La cire vaporisée est le combustible et le dioxygène de l’air est le comburant. La combustion transfère notamment de l’énergie lumineuse et thermique.",
+        "Lors de la combustion complète du carbone dans le dioxygène, il se forme du dioxyde de carbone."
+      ],
+      "piege": "Le dioxygène est un réactif de la combustion, pas un combustible.",
+      "astuce_memoire": "Combustible brûle, comburant permet la combustion.",
+      "quiz": [
+        {
+          "q": "Dans l’air, quel gaz est généralement le comburant ?",
+          "choix": [
+            "Le diazote",
+            "Le dioxyde de carbone",
+            "Le dioxygène"
+          ],
+          "rep": "Le dioxygène",
+          "expl": "Le dioxygène réagit avec le combustible."
+        },
+        {
+          "q": "Que forme la combustion complète du carbone dans le dioxygène ?",
+          "choix": [
+            "Du dioxyde de carbone",
+            "Du dioxygène supplémentaire uniquement",
+            "Du diazote uniquement"
+          ],
+          "rep": "Du dioxyde de carbone",
+          "expl": "Le carbone réagit avec le dioxygène pour former du dioxyde de carbone."
+        },
+        {
+          "q": "Une bougie allumée transfère notamment :",
+          "choix": [
+            "Uniquement de l’eau",
+            "De l’énergie lumineuse et thermique",
+            "Aucune énergie"
+          ],
+          "rep": "De l’énergie lumineuse et thermique",
+          "expl": "La flamme éclaire et chauffe."
+        }
+      ],
+      "id": "REV-PC-4E-05"
+    },
+    {
+      "axe": "Organisation et transformations de la matière",
+      "titre": "Équilibrer une équation",
+      "emoji": "🧩",
+      "en_une_phrase": "Une équation chimique équilibrée conserve le nombre de chaque type d’atome.",
+      "comprendre": "Comme on réassemble des pièces sans les supprimer, les atomes se réorganisent pendant une réaction. L’équation représente les réactifs à gauche et les produits à droite. Les nombres placés devant les formules permettent de conserver chaque type d’atome.",
+      "essentiel": [
+        "Les réactifs sont à gauche de la flèche.",
+        "Les produits sont à droite de la flèche.",
+        "On équilibre en changeant les nombres devant les formules, pas les indices dans les formules."
+      ],
+      "image_mentale": "Imagine deux plateaux portant autant de billes de chaque couleur.",
+      "regle_ou_methode": "Compte chaque type d’atome de chaque côté et ajuste les nombres devant les formules.",
+      "exemples": [
+        "Pour former de l’eau, écris 2 H₂ + O₂ → 2 H₂O. À gauche, compte quatre H et deux O. À droite, les deux molécules d’eau contiennent aussi quatre H et deux O.",
+        "C + O₂ → CO₂ est équilibrée : chaque côté contient un atome de carbone et deux atomes d’oxygène."
+      ],
+      "piege": "Modifier l’indice d’une formule changerait la substance représentée.",
+      "astuce_memoire": "Même nombre de chaque atome avant et après.",
+      "quiz": [
+        {
+          "q": "Dans 2 H₂O, combien y a-t-il d’atomes H ?",
+          "choix": [
+            "Quatre",
+            "Deux",
+            "Un"
+          ],
+          "rep": "Quatre",
+          "expl": "Deux molécules contiennent chacune deux atomes H."
+        },
+        {
+          "q": "Dans C + O₂ → CO₂, combien y a-t-il d’atomes O de chaque côté ?",
+          "choix": [
+            "Un",
+            "Deux",
+            "Quatre"
+          ],
+          "rep": "Deux",
+          "expl": "O₂ et CO₂ contiennent chacun deux atomes O."
+        },
+        {
+          "q": "Que modifie-t-on pour équilibrer une équation sans changer les substances ?",
+          "choix": [
+            "Les indices à l’intérieur des formules",
+            "Les symboles des éléments",
+            "Les nombres devant les formules"
+          ],
+          "rep": "Les nombres devant les formules",
+          "expl": "Les coefficients changent les quantités sans changer les espèces."
+        }
+      ],
+      "id": "REV-PC-4E-06"
+    },
+    {
+      "axe": "Mouvement et interactions",
+      "titre": "Mouvement et référentiel",
+      "emoji": "🚲",
+      "en_une_phrase": "Le mouvement d’un objet se décrit par rapport à un objet de référence.",
+      "comprendre": "Lorsque tu es assis dans un bus, tu sembles immobile pour ton voisin. Pourtant, une personne sur le trottoir te voit avancer avec le bus. Pour décrire un mouvement, il faut préciser le référentiel choisi et observer la trajectoire.",
+      "essentiel": [
+        "Le référentiel est l’objet de référence pour décrire le mouvement.",
+        "Une trajectoire peut être rectiligne, circulaire ou plus complexe.",
+        "Le mouvement et le repos dépendent du référentiel."
+      ],
+      "image_mentale": "Imagine un passager vu par son voisin puis par un piéton.",
+      "regle_ou_methode": "Choisis le référentiel puis décris les positions successives de l’objet.",
+      "exemples": [
+        "Un passager reste assis dans un bus qui roule en ligne droite. Par rapport au bus, il est immobile. Par rapport à la route, il est en mouvement rectiligne.",
+        "La nacelle d’une grande roue décrit un cercle autour de l’axe de la roue, dans le référentiel du sol."
+      ],
+      "piege": "Un objet n’est pas en mouvement ou immobile de manière absolue dans cette description.",
+      "astuce_memoire": "Mouvement : toujours préciser par rapport à quoi.",
+      "quiz": [
+        {
+          "q": "Un passager assis dans un bus roulant est immobile par rapport :",
+          "choix": [
+            "À la route",
+            "Au bus",
+            "Au trottoir"
+          ],
+          "rep": "Au bus",
+          "expl": "Sa position reste identique par rapport au bus."
+        },
+        {
+          "q": "Quelle trajectoire suit, dans le référentiel de l’axe fixe, un point de la roue situé hors de cet axe ?",
+          "choix": [
+            "Une droite nécessairement",
+            "Un point immobile",
+            "Un cercle"
+          ],
+          "rep": "Un cercle",
+          "expl": "Le point décrit un cercle autour de l’axe."
+        },
+        {
+          "q": "Un vélo roule tout droit sur une route. Quelle est sa trajectoire par rapport à la route ?",
+          "choix": [
+            "Rectiligne",
+            "Circulaire",
+            "Immobile"
+          ],
+          "rep": "Rectiligne",
+          "expl": "Ses positions successives sont sur une droite."
+        }
+      ],
+      "id": "REV-PC-4E-07"
+    },
+    {
+      "axe": "Mouvement et interactions",
+      "titre": "Vitesse moyenne",
+      "emoji": "⏱️",
+      "en_une_phrase": "La vitesse moyenne est la distance parcourue divisée par la durée du trajet.",
+      "comprendre": "Un trajet est plus rapide si une même distance est parcourue en moins de temps. On compare ainsi une distance à la durée correspondante. La vitesse moyenne ne précise pas toutes les variations pendant le trajet.",
+      "essentiel": [
+        "Vitesse moyenne = distance parcourue ÷ durée.",
+        "Une vitesse peut s’exprimer en mètres par seconde ou en kilomètres par heure.",
+        "Une vitesse moyenne ne signifie pas que la vitesse a été constante."
+      ],
+      "image_mentale": "Imagine une règle pour la distance et un chronomètre pour le temps.",
+      "regle_ou_methode": "Convertis les unités si besoin, puis divise la distance parcourue par la durée.",
+      "exemples": [
+        "Un cycliste parcourt 12 km en 1 h. Calcule 12 ÷ 1 = 12. Sa vitesse moyenne est de 12 km/h.",
+        "Un coureur parcourt 100 m en 20 s : sa vitesse moyenne est de 5 m/s."
+      ],
+      "piege": "Ne divise pas la durée par la distance et ne suppose pas la vitesse constante.",
+      "astuce_memoire": "Vitesse : distance divisée par durée.",
+      "quiz": [
+        {
+          "q": "Un trajet de 90 km dure 2 h. Quelle est la vitesse moyenne ?",
+          "choix": [
+            "180 km/h",
+            "92 km/h",
+            "45 km/h"
+          ],
+          "rep": "45 km/h",
+          "expl": "90 ÷ 2 = 45 km/h."
+        },
+        {
+          "q": "Un coureur parcourt 60 m en 12 s. Quelle est sa vitesse moyenne ?",
+          "choix": [
+            "5 m/s",
+            "72 m/s",
+            "0,2 m/s"
+          ],
+          "rep": "5 m/s",
+          "expl": "60 ÷ 12 = 5 m/s."
+        },
+        {
+          "q": "Une vitesse moyenne de 20 km/h signifie-t-elle que la vitesse a été constante ?",
+          "choix": [
+            "Oui, toujours",
+            "Non, elle a pu varier",
+            "Oui, sauf si le trajet dure une heure"
+          ],
+          "rep": "Non, elle a pu varier",
+          "expl": "Une moyenne peut masquer des accélérations et des arrêts."
+        }
+      ],
+      "id": "REV-PC-4E-08"
+    },
+    {
+      "axe": "Mouvement et interactions",
+      "titre": "Actions et forces",
+      "emoji": "🧲",
+      "en_une_phrase": "Une force modélise une action exercée sur un objet par un autre.",
+      "comprendre": "Quand tu pousses une porte, ta main exerce une action de contact. Un aimant peut agir sur certains objets sans les toucher. Une force se représente par une flèche qui indique sa direction et son sens.",
+      "essentiel": [
+        "Une interaction met en jeu deux objets.",
+        "Une action peut être de contact ou à distance.",
+        "Une force est caractérisée notamment par sa direction, son sens et sa valeur."
+      ],
+      "image_mentale": "Imagine une flèche tracée sur une porte dans le sens de la poussée.",
+      "regle_ou_methode": "Identifie l’objet qui agit et celui qui subit l’action, puis décris la force.",
+      "exemples": [
+        "Une main pousse une porte vers la droite. Identifie la main comme objet agissant et la porte comme objet étudié. La flèche représentant la force pointe vers la droite.",
+        "Un aimant attire un trombone sans contact : l’action de l’aimant sur le trombone est à distance."
+      ],
+      "piege": "Une force ne correspond pas toujours à un contact : la gravitation agit aussi à distance.",
+      "astuce_memoire": "Deux objets interagissent ; la flèche décrit l’action.",
+      "quiz": [
+        {
+          "q": "Un aimant attire un trombone sans le toucher. Quel type d’action exerce-t-il ?",
+          "choix": [
+            "Une action à distance",
+            "Une action de contact",
+            "Aucune action"
+          ],
+          "rep": "Une action à distance",
+          "expl": "L’aimant agit alors qu’il ne touche pas le trombone."
+        },
+        {
+          "q": "Que représente le sens de la flèche d’une force ?",
+          "choix": [
+            "La masse de l’objet",
+            "Le sens de l’action modélisée",
+            "La couleur de l’objet"
+          ],
+          "rep": "Le sens de l’action modélisée",
+          "expl": "La flèche indique le sens de la force."
+        },
+        {
+          "q": "Une main pousse une porte. Quel objet exerce l’action sur la porte ?",
+          "choix": [
+            "La porte uniquement",
+            "Le sol uniquement",
+            "La main"
+          ],
+          "rep": "La main",
+          "expl": "La main agit par contact sur la porte."
+        }
+      ],
+      "id": "REV-PC-4E-09"
+    },
+    {
+      "axe": "L’énergie et ses conversions",
+      "titre": "Sources et conversions d’énergie",
+      "emoji": "🔋",
+      "en_une_phrase": "Une chaîne énergétique décrit les transferts et les conversions d’énergie.",
+      "comprendre": "Un objet peut recevoir de l’énergie et la convertir sous plusieurs formes. Une partie est souvent transférée à l’environnement sous forme thermique. L’énergie se conserve quand on prend en compte tous les transferts.",
+      "essentiel": [
+        "Une source peut fournir de l’énergie à un dispositif.",
+        "Un convertisseur transforme une forme d’énergie en une autre.",
+        "L’énergie totale se conserve en tenant compte des transferts."
+      ],
+      "image_mentale": "Imagine des flèches qui suivent le parcours de l’énergie.",
+      "regle_ou_methode": "Identifie la source, le convertisseur et les formes d’énergie transférées.",
+      "exemples": [
+        "Une lampe reçoit de l’énergie électrique. Elle la convertit en énergie lumineuse et transfère aussi de l’énergie thermique.",
+        "Une éolienne reçoit de l’énergie du vent et fournit de l’énergie électrique."
+      ],
+      "piege": "Une lampe ne transforme pas toute l’énergie reçue en lumière.",
+      "astuce_memoire": "Source, conversion, transferts : suis les flèches.",
+      "quiz": [
+        {
+          "q": "Quelle énergie une éolienne utilise-t-elle directement ?",
+          "choix": [
+            "L’énergie lumineuse d’une lampe",
+            "L’énergie du vent",
+            "L’énergie d’une pile nécessairement"
+          ],
+          "rep": "L’énergie du vent",
+          "expl": "Le vent met les pales en mouvement."
+        },
+        {
+          "q": "Que fournit une lampe en fonctionnement ?",
+          "choix": [
+            "Uniquement de la lumière",
+            "Uniquement de la matière",
+            "De la lumière et de la chaleur"
+          ],
+          "rep": "De la lumière et de la chaleur",
+          "expl": "Une partie de l’énergie est transférée sous forme thermique."
+        },
+        {
+          "q": "Que devient l’énergie totale si tous les transferts sont pris en compte ?",
+          "choix": [
+            "Elle se conserve",
+            "Elle disparaît entièrement",
+            "Elle est toujours créée"
+          ],
+          "rep": "Elle se conserve",
+          "expl": "La conservation tient compte des transferts vers l’environnement."
+        }
+      ],
+      "id": "REV-PC-4E-10"
+    },
+    {
+      "axe": "L’énergie et ses conversions",
+      "titre": "Intensité dans les circuits",
+      "emoji": "💡",
+      "en_une_phrase": "L’intensité du courant se mesure en ampères et suit des lois différentes selon le circuit.",
+      "comprendre": "Dans une boucle en série, l’intensité est la même en tout point. Dans un circuit avec des dérivations, le courant se partage aux nœuds. L’intensité dans la branche principale est la somme des intensités des branches dérivées.",
+      "essentiel": [
+        "L’intensité se note I et se mesure en ampères.",
+        "L’ampèremètre se branche en série.",
+        "Dans une boucle en série, l’intensité est identique partout.",
+        "À un nœud, la somme des intensités entrantes égale celle des intensités sortantes."
+      ],
+      "image_mentale": "Imagine un débit qui se partage entre deux chemins puis se rassemble.",
+      "regle_ou_methode": "Repère les nœuds et additionne les intensités des branches dérivées.",
+      "exemples": [
+        "Dans un circuit à deux branches dérivées seulement, les intensités valent 0,2 A et 0,3 A. On additionne : 0,2 + 0,3 = 0,5. L’intensité dans la branche principale vaut 0,5 A.",
+        "Dans une boucle en série, si l’intensité vaut 0,4 A en un point, elle vaut 0,4 A ailleurs dans la boucle."
+      ],
+      "piege": "Ne suppose pas que l’intensité est la même dans toutes les branches d’un circuit en dérivation.",
+      "astuce_memoire": "En série, même intensité ; au nœud, les intensités s’additionnent.",
+      "quiz": [
+        {
+          "q": "Les deux seules branches dérivées ont 0,1 A et 0,4 A. Quelle intensité dans la branche principale ?",
+          "choix": [
+            "0,3 A",
+            "4 A",
+            "0,5 A"
+          ],
+          "rep": "0,5 A",
+          "expl": "La somme est 0,1 + 0,4 = 0,5 A."
+        },
+        {
+          "q": "Où branche-t-on un ampèremètre ?",
+          "choix": [
+            "En série dans la branche étudiée",
+            "En dérivation aux bornes d’une lampe",
+            "À distance du circuit"
+          ],
+          "rep": "En série dans la branche étudiée",
+          "expl": "Il mesure le courant qui traverse la branche."
+        },
+        {
+          "q": "Dans une boucle en série, une intensité de 0,2 A est mesurée à un point. Ailleurs dans la boucle, elle vaut :",
+          "choix": [
+            "0,4 A nécessairement",
+            "0,2 A",
+            "0 A nécessairement"
+          ],
+          "rep": "0,2 A",
+          "expl": "L’intensité est la même partout dans une boucle en série."
+        }
+      ],
+      "id": "REV-PC-4E-11"
+    },
+    {
+      "axe": "L’énergie et ses conversions",
+      "titre": "Tension électrique",
+      "emoji": "🔌",
+      "en_une_phrase": "La tension se mesure entre deux points d’un circuit, en volts.",
+      "comprendre": "La tension caractérise l’état électrique entre deux points. Un voltmètre se branche en dérivation aux bornes du dipôle étudié. Des dipôles reliés aux mêmes deux nœuds ont la même tension.",
+      "essentiel": [
+        "La tension se note U et se mesure en volts.",
+        "Un voltmètre se branche en dérivation aux bornes du dipôle.",
+        "En dérivation, deux dipôles reliés aux mêmes nœuds ont la même tension.",
+        "Dans une boucle avec un générateur et deux récepteurs en série, la tension du générateur est la somme des tensions des récepteurs."
+      ],
+      "image_mentale": "Imagine deux points entre lesquels on compare une différence de niveau électrique.",
+      "regle_ou_methode": "Identifie les deux bornes, puis les composants reliés aux mêmes deux nœuds.",
+      "exemples": [
+        "Deux lampes sont branchées en dérivation aux bornes d’un générateur de 6 V. Elles sont reliées aux mêmes deux nœuds. La tension aux bornes de chacune est donc 6 V.",
+        "Dans une boucle, un générateur alimente deux récepteurs en série dont les tensions sont 2 V et 4 V : la tension du générateur est 6 V."
+      ],
+      "piege": "La tension en volts et l’intensité en ampères sont deux grandeurs différentes.",
+      "astuce_memoire": "Voltmètre aux bornes ; mêmes nœuds, même tension.",
+      "quiz": [
+        {
+          "q": "Deux lampes en dérivation sont soumises à 6 V. Quelle tension aux bornes de chaque lampe ?",
+          "choix": [
+            "6 V",
+            "3 V",
+            "12 V"
+          ],
+          "rep": "6 V",
+          "expl": "Elles sont reliées aux mêmes deux nœuds."
+        },
+        {
+          "q": "Quel appareil mesure une tension ?",
+          "choix": [
+            "Un ampèremètre",
+            "Un voltmètre",
+            "Une balance"
+          ],
+          "rep": "Un voltmètre",
+          "expl": "Le voltmètre mesure une tension entre deux points."
+        },
+        {
+          "q": "Dans une boucle, deux récepteurs en série ont 2 V et 4 V à leurs bornes. Quelle est la tension du générateur qui les alimente ?",
+          "choix": [
+            "2 V",
+            "8 V",
+            "6 V"
+          ],
+          "rep": "6 V",
+          "expl": "En série, ces tensions s’additionnent."
+        }
+      ],
+      "id": "REV-PC-4E-12"
+    },
+    {
+      "axe": "L’énergie et ses conversions",
+      "titre": "Énergie et puissance électrique",
+      "emoji": "⚡",
+      "en_une_phrase": "La puissance indique la rapidité avec laquelle un appareil transfère de l’énergie.",
+      "comprendre": "Deux appareils peuvent fonctionner pendant le même temps sans transférer autant d’énergie. La puissance s’exprime en watts. Pour une puissance constante, l’énergie transférée dépend de la puissance et de la durée.",
+      "essentiel": [
+        "La puissance P s’exprime en watts.",
+        "L’énergie E s’exprime en joules.",
+        "Pour une puissance constante, E = P × durée en secondes."
+      ],
+      "image_mentale": "Imagine deux robinets dont les débits remplissent des récipients plus ou moins vite.",
+      "regle_ou_methode": "Utilise des unités compatibles puis multiplie la puissance par la durée.",
+      "exemples": [
+        "Un appareil de 10 W fonctionne pendant 3 s. On calcule 10 × 3 = 30. Il transfère 30 J.",
+        "Un dispositif de 5 W fonctionne 4 s : il transfère 20 J."
+      ],
+      "piege": "Ne confonds pas la puissance instantanée en watts et l’énergie en joules.",
+      "astuce_memoire": "Watts multipliés par secondes donnent des joules.",
+      "quiz": [
+        {
+          "q": "Un appareil de 8 W fonctionne 2 s. Quelle énergie transfère-t-il ?",
+          "choix": [
+            "4 J",
+            "16 J",
+            "10 J"
+          ],
+          "rep": "16 J",
+          "expl": "On calcule 8 × 2 = 16 J."
+        },
+        {
+          "q": "Quelle unité mesure la puissance ?",
+          "choix": [
+            "Le joule",
+            "L’ampère",
+            "Le watt"
+          ],
+          "rep": "Le watt",
+          "expl": "La puissance électrique s’exprime en watts."
+        },
+        {
+          "q": "À puissance constante, que devient l’énergie si la durée double ?",
+          "choix": [
+            "Elle double",
+            "Elle est divisée par deux",
+            "Elle reste toujours identique"
+          ],
+          "rep": "Elle double",
+          "expl": "E = P × durée : elle est proportionnelle à la durée."
+        }
+      ],
+      "id": "REV-PC-4E-13"
+    },
+    {
+      "axe": "Des signaux pour observer et communiquer",
+      "titre": "Propagation du son",
+      "emoji": "🔊",
+      "en_une_phrase": "Un son se propage grâce à la vibration d’un milieu matériel.",
+      "comprendre": "Quand une source sonore vibre, elle met en vibration le milieu autour d’elle. Le signal sonore peut ainsi atteindre ton oreille à distance. Dans le vide, le son ne se propage pas car il n’y a pas de milieu matériel à faire vibrer.",
+      "essentiel": [
+        "Une source vibrante produit un son.",
+        "Le son se propage dans un milieu matériel comme l’air.",
+        "Le son ne se propage pas dans le vide."
+      ],
+      "image_mentale": "Imagine une file de personnes se transmettant une vibration.",
+      "regle_ou_methode": "Identifie la source, le milieu traversé et le récepteur du son.",
+      "exemples": [
+        "Une cloche vibre dans une pièce. Elle met l’air en vibration. Le son traverse l’air et atteint l’oreille.",
+        "Un téléphone posé sur une table peut transmettre des vibrations à travers le solide de la table."
+      ],
+      "piege": "Le son n’a pas besoin que la matière voyage de la source jusqu’à l’oreille.",
+      "astuce_memoire": "Son : vibration transmise par un milieu.",
+      "quiz": [
+        {
+          "q": "Dans quel cas le son ne peut-il pas se propager ?",
+          "choix": [
+            "Dans l’air",
+            "Dans l’eau",
+            "Dans le vide"
+          ],
+          "rep": "Dans le vide",
+          "expl": "Le son a besoin d’un milieu matériel."
+        },
+        {
+          "q": "Que fait une source sonore pour émettre un son ?",
+          "choix": [
+            "Elle vibre",
+            "Elle émet toujours de la lumière",
+            "Elle détruit l’air"
+          ],
+          "rep": "Elle vibre",
+          "expl": "Une source sonore met son environnement en vibration."
+        },
+        {
+          "q": "Un bruit traverse une table : quel milieu transmet ici le son ?",
+          "choix": [
+            "Le vide",
+            "Le matériau solide de la table",
+            "La lumière"
+          ],
+          "rep": "Le matériau solide de la table",
+          "expl": "Un solide peut transmettre des vibrations."
+        }
+      ],
+      "id": "REV-PC-4E-14"
+    },
+    {
+      "axe": "Des signaux pour observer et communiquer",
+      "titre": "Fréquence et hauteur d’un son",
+      "emoji": "🎵",
+      "en_une_phrase": "La fréquence d’un son indique le nombre de vibrations par seconde.",
+      "comprendre": "Tu distingues un son grave d’un son aigu. Cette hauteur dépend de la fréquence des vibrations. Une fréquence plus élevée correspond à un son plus aigu.",
+      "essentiel": [
+        "La fréquence se mesure en hertz, notés Hz.",
+        "Un son de fréquence élevée est plus aigu.",
+        "L’intensité sonore et la hauteur sont deux propriétés différentes."
+      ],
+      "image_mentale": "Imagine une corde qui vibre lentement puis plus rapidement.",
+      "regle_ou_methode": "Compare les fréquences : la plus grande correspond au son le plus aigu.",
+      "exemples": [
+        "Deux sons ont des fréquences de 200 Hz et 400 Hz. Compare les nombres : 400 est supérieur à 200. Le son de 400 Hz est donc plus aigu.",
+        "Un son à 100 Hz est plus grave qu’un son à 300 Hz."
+      ],
+      "piege": "Un son plus aigu n’est pas forcément plus fort.",
+      "astuce_memoire": "Plus de vibrations par seconde : son plus aigu.",
+      "quiz": [
+        {
+          "q": "Quel son est le plus aigu ?",
+          "choix": [
+            "400 Hz",
+            "200 Hz",
+            "100 Hz"
+          ],
+          "rep": "400 Hz",
+          "expl": "La fréquence 400 Hz est la plus élevée."
+        },
+        {
+          "q": "Quelle unité mesure une fréquence ?",
+          "choix": [
+            "Le mètre",
+            "Le hertz",
+            "Le volt"
+          ],
+          "rep": "Le hertz",
+          "expl": "La fréquence s’exprime en hertz."
+        },
+        {
+          "q": "Un son plus aigu est-il forcément plus fort ?",
+          "choix": [
+            "Oui, toujours",
+            "Oui, s’il dure une seconde",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Hauteur et intensité sonore sont distinctes."
+        }
+      ],
+      "id": "REV-PC-4E-15"
+    },
+    {
+      "axe": "Des signaux pour observer et communiquer",
+      "titre": "Propagation de la lumière",
+      "emoji": "🔦",
+      "en_une_phrase": "Dans un milieu homogène et transparent, la lumière se propage en ligne droite.",
+      "comprendre": "Tu peux voir une source lumineuse lorsque sa lumière atteint ton œil. Les objets éclairés diffusent aussi une partie de la lumière reçue. Dans un milieu homogène et transparent, on représente le trajet de la lumière par des rayons rectilignes.",
+      "essentiel": [
+        "Une source primaire produit sa propre lumière.",
+        "Un objet éclairé peut diffuser de la lumière.",
+        "Dans un milieu homogène transparent, les rayons lumineux sont rectilignes."
+      ],
+      "image_mentale": "Imagine des traits droits partant d’une lampe vers un objet puis vers ton œil.",
+      "regle_ou_methode": "Identifie la source, l’objet éclairé et le trajet lumineux jusqu’à l’œil.",
+      "exemples": [
+        "Une lampe éclaire un livre. Le livre diffuse une partie de la lumière. Cette lumière atteint ton œil : tu vois le livre.",
+        "Une étoile émet sa propre lumière : c’est une source primaire."
+      ],
+      "piege": "Un objet visible n’émet pas toujours sa propre lumière : il peut diffuser celle reçue.",
+      "astuce_memoire": "Pour voir : de la lumière arrive à l’œil.",
+      "quiz": [
+        {
+          "q": "Pourquoi vois-tu un livre éclairé ?",
+          "choix": [
+            "Il produit toujours sa propre lumière",
+            "Il diffuse de la lumière vers ton œil",
+            "Ton œil éclaire nécessairement le livre"
+          ],
+          "rep": "Il diffuse de la lumière vers ton œil",
+          "expl": "Une partie de la lumière reçue est diffusée vers l’œil."
+        },
+        {
+          "q": "Dans un milieu homogène et transparent, un rayon lumineux est représenté :",
+          "choix": [
+            "Par une spirale obligatoire",
+            "Par un cercle obligatoire",
+            "Par une ligne droite"
+          ],
+          "rep": "Par une ligne droite",
+          "expl": "La propagation y est rectiligne."
+        },
+        {
+          "q": "Quel objet est une source primaire de lumière ?",
+          "choix": [
+            "Une étoile",
+            "Un livre éclairé",
+            "Un miroir éclairé"
+          ],
+          "rep": "Une étoile",
+          "expl": "Une étoile produit sa propre lumière."
+        }
+      ],
+      "id": "REV-PC-4E-16"
+    }
+  ]
+}

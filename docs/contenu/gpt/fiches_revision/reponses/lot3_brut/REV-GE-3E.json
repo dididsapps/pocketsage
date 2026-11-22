@@ -1,0 +1,699 @@
+{
+  "classe": "3E",
+  "niveau_appli": "3ème",
+  "age": "14-15 ans",
+  "matiere": "Géographie",
+  "code": "GE",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Dynamiques territoriales de la France contemporaine",
+      "titre": "Aires urbaines et déplacements",
+      "emoji": "🏙️",
+      "en_une_phrase": "Une aire urbaine rassemble un pôle urbain et des espaces dont les habitants sont liés à ce pôle.",
+      "comprendre": "Tu peux habiter dans une commune et travailler ou étudier dans une autre. Les déplacements quotidiens relient les espaces centraux et les communes périphériques. Ils montrent l’influence de la ville sur un territoire plus large.",
+      "essentiel": [
+        "Un pôle urbain concentre des habitants et des emplois.",
+        "Les communes périphériques entretiennent des liens avec ce pôle.",
+        "Les déplacements domicile-travail rendent ces liens visibles."
+      ],
+      "image_mentale": "Imagine une ville centrale reliée par des trajets quotidiens à plusieurs communes.",
+      "regle_ou_methode": "Repère le pôle, les communes liées et les déplacements entre eux.",
+      "exemples": [
+        "Une personne habite dans une commune périphérique et travaille dans la ville voisine. Elle effectue régulièrement le trajet entre les deux. Ce déplacement illustre un lien entre la périphérie et le pôle urbain.",
+        "Des transports collectifs peuvent relier une commune périphérique au centre d’une métropole."
+      ],
+      "piege": "Une aire urbaine ne se limite pas aux seuls immeubles du centre-ville.",
+      "astuce_memoire": "Pôle urbain, périphéries, déplacements.",
+      "quiz": [
+        {
+          "q": "Quel déplacement montre un lien entre une commune périphérique et un pôle urbain ?",
+          "choix": [
+            "Un déplacement sans rapport entre deux continents",
+            "Un trajet quotidien domicile-travail vers le pôle",
+            "Une mesure de température"
+          ],
+          "rep": "Un trajet quotidien domicile-travail vers le pôle",
+          "expl": "Le trajet quotidien relie le lieu de résidence au pôle d’emploi."
+        },
+        {
+          "q": "Que concentre souvent un pôle urbain ?",
+          "choix": [
+            "Uniquement des espaces inhabités",
+            "Seulement des terres sans activité",
+            "Des habitants et des emplois"
+          ],
+          "rep": "Des habitants et des emplois",
+          "expl": "Un pôle urbain rassemble notamment habitants et emplois."
+        },
+        {
+          "q": "L’aire d’influence urbaine se limite-t-elle au centre historique ?",
+          "choix": [
+            "Non",
+            "Oui, toujours",
+            "Oui, si la ville possède une gare"
+          ],
+          "rep": "Non",
+          "expl": "Elle inclut des espaces liés au pôle au-delà du centre."
+        }
+      ],
+      "id": "REV-GE-3E-01"
+    },
+    {
+      "axe": "Dynamiques territoriales de la France contemporaine",
+      "titre": "La périurbanisation",
+      "emoji": "🏡",
+      "en_une_phrase": "La périurbanisation correspond à l’extension de l’urbanisation vers les espaces autour des villes.",
+      "comprendre": "Des ménages peuvent s’installer plus loin du centre tout en gardant des activités en ville. Les logements et les routes s’étendent alors vers des espaces auparavant moins urbanisés. Cette évolution modifie les paysages et les déplacements.",
+      "essentiel": [
+        "La périurbanisation étend les espaces urbanisés autour des pôles.",
+        "Des habitants continuent souvent à travailler ou étudier dans le pôle.",
+        "Elle peut augmenter les distances de déplacement et consommer des sols."
+      ],
+      "image_mentale": "Imagine de nouveaux quartiers entre la ville et des espaces agricoles.",
+      "regle_ou_methode": "Repère les nouvelles constructions, leur localisation et les déplacements associés.",
+      "exemples": [
+        "Des maisons sont construites dans une commune située autour d’une grande ville. Plusieurs habitants travaillent dans cette ville. Cette situation illustre l’extension périurbaine et des déplacements quotidiens.",
+        "Une nouvelle route peut relier un quartier périphérique aux zones d’emploi."
+      ],
+      "piege": "Un espace périurbain n’est pas forcément indépendant de la ville voisine.",
+      "astuce_memoire": "Habiter plus loin, rester lié au pôle.",
+      "quiz": [
+        {
+          "q": "Que désigne la périurbanisation ?",
+          "choix": [
+            "La disparition de tous les logements",
+            "La formation d’un océan",
+            "L’extension de l’urbanisation autour des villes"
+          ],
+          "rep": "L’extension de l’urbanisation autour des villes",
+          "expl": "De nouvelles constructions s’étendent vers les espaces périphériques."
+        },
+        {
+          "q": "Quel effet peut accompagner la périurbanisation ?",
+          "choix": [
+            "Des trajets domicile-travail plus longs",
+            "La suppression de tout déplacement",
+            "La disparition automatique des routes"
+          ],
+          "rep": "Des trajets domicile-travail plus longs",
+          "expl": "L’éloignement entre résidence et emploi peut allonger les trajets."
+        },
+        {
+          "q": "Les habitants périurbains travaillent-ils nécessairement dans leur commune de résidence ?",
+          "choix": [
+            "Oui, toujours",
+            "Non",
+            "Oui, sauf si la commune est habitée"
+          ],
+          "rep": "Non",
+          "expl": "Beaucoup se déplacent vers d’autres communes, notamment le pôle."
+        }
+      ],
+      "id": "REV-GE-3E-02"
+    },
+    {
+      "axe": "Dynamiques territoriales de la France contemporaine",
+      "titre": "Les espaces productifs",
+      "emoji": "🏭",
+      "en_une_phrase": "Un espace productif est un territoire organisé autour d’activités qui produisent des biens ou des services.",
+      "comprendre": "Une région peut produire des avions, des aliments ou accueillir des visiteurs. Ces activités utilisent des travailleurs, des infrastructures et des réseaux. Elles évoluent avec les techniques et les échanges.",
+      "essentiel": [
+        "Les espaces productifs peuvent être industriels, agricoles ou de services.",
+        "Les transports relient les lieux de production et les marchés.",
+        "La mondialisation transforme certaines localisations et activités."
+      ],
+      "image_mentale": "Imagine une carte reliant une zone d’activités, des travailleurs et des routes.",
+      "regle_ou_methode": "Identifie la production, les acteurs et les connexions avec d’autres territoires.",
+      "exemples": [
+        "Une région agricole cultive des céréales. Les exploitations utilisent des machines et des réseaux de transport. Les récoltes sont vendues sur différents marchés.",
+        "Un espace touristique regroupe des hébergements, des transports et des activités destinées aux visiteurs."
+      ],
+      "piege": "Un espace productif n’est pas nécessairement une usine : il peut aussi produire des services.",
+      "astuce_memoire": "Production, acteurs, réseaux, marchés.",
+      "quiz": [
+        {
+          "q": "Quel exemple relève d’un espace productif agricole ?",
+          "choix": [
+            "Une région de cultures céréalières",
+            "Une carte sans lieu représenté",
+            "Une équation seule"
+          ],
+          "rep": "Une région de cultures céréalières",
+          "expl": "Les exploitations y produisent des biens agricoles."
+        },
+        {
+          "q": "Le tourisme peut-il être une activité productive ?",
+          "choix": [
+            "Non, jamais",
+            "Oui, il produit notamment des services",
+            "Oui, seulement sans visiteurs"
+          ],
+          "rep": "Oui, il produit notamment des services",
+          "expl": "Les hébergements et activités touristiques sont des services."
+        },
+        {
+          "q": "Pourquoi les réseaux de transport sont-ils importants ?",
+          "choix": [
+            "Ils suppriment tous les coûts",
+            "Ils interdisent le déplacement des marchandises",
+            "Ils relient production et marchés"
+          ],
+          "rep": "Ils relient production et marchés",
+          "expl": "Ils permettent l’acheminement des personnes et des biens."
+        }
+      ],
+      "id": "REV-GE-3E-03"
+    },
+    {
+      "axe": "Dynamiques territoriales de la France contemporaine",
+      "titre": "Espaces de faible densité",
+      "emoji": "🌄",
+      "en_une_phrase": "Les espaces de faible densité sont peu peuplés, mais ils possèdent des activités et des atouts variés.",
+      "comprendre": "Un territoire peu peuplé n’est pas forcément vide. Il peut accueillir de l’agriculture, des services, du tourisme ou des espaces naturels. Ses habitants peuvent aussi rencontrer des difficultés d’accès à certains équipements.",
+      "essentiel": [
+        "La densité rapporte le nombre d’habitants à la surface.",
+        "Un espace de faible densité reste habité et utilisé.",
+        "Les atouts et les contraintes varient selon les territoires."
+      ],
+      "image_mentale": "Imagine un espace rural avec des villages, des exploitations et des routes.",
+      "regle_ou_methode": "Observe la densité, les activités et l’accès aux services avant de décrire le territoire.",
+      "exemples": [
+        "Un territoire de 100 km² compte 2 000 habitants. Calcule 2 000 ÷ 100 = 20 habitants par km². Sa densité est faible dans cet exemple, mais des activités peuvent y exister.",
+        "Un espace de montagne peut accueillir des habitants, de l’élevage et des activités touristiques."
+      ],
+      "piege": "Faible densité ne signifie pas absence d’habitants ni absence d’activité.",
+      "astuce_memoire": "Peu dense, mais habité et utilisé.",
+      "quiz": [
+        {
+          "q": "Une commune de 100 km² compte 2 000 habitants. Quelle est sa densité ?",
+          "choix": [
+            "200 habitants par km²",
+            "20 habitants par km²",
+            "2 habitants par km²"
+          ],
+          "rep": "20 habitants par km²",
+          "expl": "2 000 ÷ 100 = 20."
+        },
+        {
+          "q": "Un espace de faible densité est-il forcément vide ?",
+          "choix": [
+            "Oui",
+            "Oui, s’il est rural",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Il peut être habité et accueillir des activités."
+        },
+        {
+          "q": "Quelle activité peut exister dans un espace de montagne ?",
+          "choix": [
+            "L’élevage",
+            "Uniquement la navigation océanique",
+            "Aucune activité"
+          ],
+          "rep": "L’élevage",
+          "expl": "Des habitants peuvent pratiquer l’élevage en montagne."
+        }
+      ],
+      "id": "REV-GE-3E-04"
+    },
+    {
+      "axe": "Dynamiques territoriales de la France contemporaine",
+      "titre": "Une métropole ouverte",
+      "emoji": "🌐",
+      "en_une_phrase": "Les métropoles concentrent des habitants, des emplois et des fonctions de commandement.",
+      "comprendre": "Dans une grande ville, tu trouves souvent des universités, des entreprises et des réseaux de transport. Ces fonctions peuvent relier la métropole à d’autres territoires en France et dans le monde. Leur concentration s’accompagne aussi d’inégalités entre quartiers.",
+      "essentiel": [
+        "Une métropole exerce une influence sur un territoire.",
+        "Elle concentre des fonctions de décision et des services.",
+        "Les transports et les réseaux numériques la relient à d’autres lieux."
+      ],
+      "image_mentale": "Imagine une ville reliée par des lignes à sa région et à d’autres pays.",
+      "regle_ou_methode": "Identifie les fonctions de la métropole, ses connexions et les différences entre ses quartiers.",
+      "exemples": [
+        "Une métropole accueille une université, des entreprises et une gare importante. Ces fonctions attirent des habitants et des déplacements. Elles contribuent à son influence.",
+        "Un quartier proche des transports peut être mieux desservi qu’un autre quartier de la même ville."
+      ],
+      "piege": "Une métropole peut être connectée mondialement tout en connaissant des inégalités locales.",
+      "astuce_memoire": "Fonctions, connexions, influence et inégalités.",
+      "quiz": [
+        {
+          "q": "Quelle fonction contribue au rayonnement d’une métropole ?",
+          "choix": [
+            "Une absence totale de services",
+            "Une unique parcelle inhabitée",
+            "Une université et des centres de décision"
+          ],
+          "rep": "Une université et des centres de décision",
+          "expl": "Ces fonctions attirent des personnes et organisent des activités."
+        },
+        {
+          "q": "Les quartiers d’une même métropole ont-ils toujours le même accès aux transports ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Oui, s’ils sont sur la même carte"
+          ],
+          "rep": "Non",
+          "expl": "La desserte varie selon les quartiers."
+        },
+        {
+          "q": "Une métropole peut-elle être liée à d’autres pays ?",
+          "choix": [
+            "Non, elle ne peut communiquer qu’avec sa mairie",
+            "Oui, par des transports et des réseaux",
+            "Non, si elle possède une université"
+          ],
+          "rep": "Oui, par des transports et des réseaux",
+          "expl": "Ses infrastructures et activités peuvent la relier à d’autres pays."
+        }
+      ],
+      "id": "REV-GE-3E-05"
+    },
+    {
+      "axe": "Pourquoi et comment aménager le territoire ?",
+      "titre": "Aménager un territoire",
+      "emoji": "🏗️",
+      "en_une_phrase": "Aménager un territoire consiste à organiser des espaces et des équipements pour répondre à des besoins.",
+      "comprendre": "Tu utilises chaque jour des routes, des écoles ou des réseaux d’eau. Leur localisation résulte de décisions prises par différents acteurs. Un aménagement peut chercher à améliorer l’accès aux services ou à réduire des inégalités.",
+      "essentiel": [
+        "Un aménagement transforme ou organise un espace.",
+        "Il répond à des besoins et à des contraintes.",
+        "Ses effets peuvent être différents selon les habitants et les lieux."
+      ],
+      "image_mentale": "Imagine une carte avec une école, une route et les quartiers qu’elles desservent.",
+      "regle_ou_methode": "Identifie le besoin, les acteurs, l’équipement et les effets attendus.",
+      "exemples": [
+        "Une commune constate qu’un quartier est mal relié aux services. Elle étudie une nouvelle ligne de bus. Le projet cherche à améliorer l’accès aux équipements.",
+        "La rénovation d’une gare peut faciliter certains déplacements, selon les connexions mises en place."
+      ],
+      "piege": "Un aménagement peut aider certains usagers tout en créant d’autres contraintes à étudier.",
+      "astuce_memoire": "Besoin, acteurs, projet, effets.",
+      "quiz": [
+        {
+          "q": "Quel projet est un aménagement du territoire ?",
+          "choix": [
+            "Créer une ligne de bus entre un quartier et une gare",
+            "Changer seulement le nom d’un cahier",
+            "Résoudre une équation sans lien avec un espace"
+          ],
+          "rep": "Créer une ligne de bus entre un quartier et une gare",
+          "expl": "Une ligne de bus organise des déplacements dans un territoire."
+        },
+        {
+          "q": "Pourquoi identifier les besoins avant un projet ?",
+          "choix": [
+            "Pour éviter toute étude",
+            "Pour adapter la solution aux usages",
+            "Pour garantir que tous les effets seront identiques"
+          ],
+          "rep": "Pour adapter la solution aux usages",
+          "expl": "Les besoins permettent de définir les objectifs du projet."
+        },
+        {
+          "q": "Un aménagement a-t-il toujours les mêmes effets pour tous ?",
+          "choix": [
+            "Oui",
+            "Oui, si une carte est utilisée",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Ses effets varient selon les lieux et les habitants."
+        }
+      ],
+      "id": "REV-GE-3E-06"
+    },
+    {
+      "axe": "Pourquoi et comment aménager le territoire ?",
+      "titre": "Les acteurs de l’aménagement",
+      "emoji": "🤝",
+      "en_une_phrase": "Les aménagements mobilisent des acteurs publics, privés et des habitants.",
+      "comprendre": "Une nouvelle route ou une école demande des décisions, des financements et parfois une concertation. L’État, les collectivités territoriales, les entreprises et les habitants peuvent intervenir. Leurs objectifs ne sont pas toujours identiques.",
+      "essentiel": [
+        "L’État et les collectivités sont des acteurs publics.",
+        "Des entreprises peuvent construire ou exploiter des équipements.",
+        "Les habitants peuvent participer à des consultations ou exprimer leurs besoins."
+      ],
+      "image_mentale": "Imagine plusieurs personnes autour d’une carte du même projet.",
+      "regle_ou_methode": "Identifie chaque acteur, son rôle et les intérêts qu’il défend.",
+      "exemples": [
+        "Une commune souhaite aménager une piste cyclable. Elle prépare le projet, des entreprises peuvent réaliser les travaux et les habitants peuvent donner leur avis. Plusieurs acteurs interviennent donc.",
+        "Une région peut financer certains transports et organiser des services à son échelle."
+      ],
+      "piege": "Un projet d’aménagement ne dépend pas toujours d’un acteur unique.",
+      "astuce_memoire": "Acteurs, rôles, intérêts, décisions.",
+      "quiz": [
+        {
+          "q": "Quel acteur public peut intervenir à l’échelle d’une commune ?",
+          "choix": [
+            "Uniquement un commerçant privé",
+            "La municipalité",
+            "Une montagne"
+          ],
+          "rep": "La municipalité",
+          "expl": "La municipalité agit à l’échelle communale."
+        },
+        {
+          "q": "Quel rôle une entreprise peut-elle avoir ?",
+          "choix": [
+            "Remplacer automatiquement tous les habitants",
+            "Supprimer toute décision publique",
+            "Réaliser des travaux"
+          ],
+          "rep": "Réaliser des travaux",
+          "expl": "Une entreprise peut être chargée de construire un équipement."
+        },
+        {
+          "q": "Les acteurs ont-ils toujours exactement les mêmes intérêts ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Oui, si le projet concerne une route"
+          ],
+          "rep": "Non",
+          "expl": "Leurs besoins et objectifs peuvent différer."
+        }
+      ],
+      "id": "REV-GE-3E-07"
+    },
+    {
+      "axe": "Pourquoi et comment aménager le territoire ?",
+      "titre": "Réduire les inégalités",
+      "emoji": "🚍",
+      "en_une_phrase": "Les aménagements peuvent améliorer l’accès aux services dans des territoires inégalement équipés.",
+      "comprendre": "Tous les habitants n’ont pas la même distance à parcourir pour accéder à un médecin ou à une gare. Les pouvoirs publics peuvent chercher à réduire ces écarts. L’efficacité d’un projet dépend de sa localisation et de son usage réel.",
+      "essentiel": [
+        "L’accès aux services varie selon les territoires.",
+        "Les transports et les équipements peuvent réduire certains écarts.",
+        "Les choix doivent prendre en compte les besoins locaux."
+      ],
+      "image_mentale": "Imagine deux villages à des distances différentes d’un service de santé.",
+      "regle_ou_methode": "Compare l’accès au service, identifie le besoin puis examine une solution possible.",
+      "exemples": [
+        "Deux communes sont éloignées d’un service de santé. Une permanence est ouverte dans l’une d’elles et une ligne de transport dessert l’autre. Ces choix peuvent réduire une partie des difficultés d’accès.",
+        "Un service numérique peut faciliter certaines démarches, mais il suppose aussi un accès et des compétences adaptés."
+      ],
+      "piege": "Un nouvel équipement ne supprime pas automatiquement toutes les inégalités.",
+      "astuce_memoire": "Comparer l’accès, puis adapter la solution.",
+      "quiz": [
+        {
+          "q": "Quelle difficulté illustre une inégalité d’accès ?",
+          "choix": [
+            "Deux personnes utilisent la même unité de mesure",
+            "Une route est dessinée sur une carte",
+            "Un village est éloigné du service de santé le plus proche"
+          ],
+          "rep": "Un village est éloigné du service de santé le plus proche",
+          "expl": "La distance peut rendre l’accès aux soins plus difficile."
+        },
+        {
+          "q": "Une ligne de transport peut-elle améliorer l’accès à un service ?",
+          "choix": [
+            "Oui",
+            "Non, jamais",
+            "Oui, seulement si elle ne circule pas"
+          ],
+          "rep": "Oui",
+          "expl": "Une desserte adaptée peut rapprocher les habitants du service."
+        },
+        {
+          "q": "Un service numérique suffit-il forcément à tous les habitants ?",
+          "choix": [
+            "Oui, toujours",
+            "Non",
+            "Oui, même sans accès ni compétence numérique"
+          ],
+          "rep": "Non",
+          "expl": "Son usage dépend aussi de l’accès et des compétences."
+        }
+      ],
+      "id": "REV-GE-3E-08"
+    },
+    {
+      "axe": "Pourquoi et comment aménager le territoire ?",
+      "titre": "Les territoires ultramarins",
+      "emoji": "🌴",
+      "en_une_phrase": "Les territoires ultramarins français sont situés hors d’Europe et présentent des situations diverses.",
+      "comprendre": "La France comprend des territoires dans plusieurs océans. Leur éloignement de la métropole, leur environnement et leurs liens régionaux varient. Les aménagements doivent tenir compte de ces caractéristiques.",
+      "essentiel": [
+        "Les territoires ultramarins ne forment pas un ensemble uniforme.",
+        "Certains sont des îles ; d’autres ne le sont pas.",
+        "Leurs contraintes et leurs atouts varient selon les lieux."
+      ],
+      "image_mentale": "Imagine une carte du monde avec plusieurs territoires français éloignés les uns des autres.",
+      "regle_ou_methode": "Situe le territoire, repère son environnement et identifie un besoin d’aménagement.",
+      "exemples": [
+        "La Guyane française se situe en Amérique du Sud. Elle n’est pas une île. Ses aménagements doivent tenir compte de ses espaces et de ses besoins propres.",
+        "La Réunion est une île française située dans l’océan Indien."
+      ],
+      "piege": "Tous les territoires ultramarins ne sont pas des îles et ne connaissent pas les mêmes situations.",
+      "astuce_memoire": "Outre-mer : plusieurs territoires, plusieurs contextes.",
+      "quiz": [
+        {
+          "q": "Où se situe la Guyane française ?",
+          "choix": [
+            "En Amérique du Sud",
+            "En Europe continentale",
+            "Dans l’océan Arctique"
+          ],
+          "rep": "En Amérique du Sud",
+          "expl": "La Guyane se situe en Amérique du Sud."
+        },
+        {
+          "q": "Dans quel océan se trouve La Réunion ?",
+          "choix": [
+            "L’océan Atlantique Nord",
+            "L’océan Indien",
+            "L’océan Arctique"
+          ],
+          "rep": "L’océan Indien",
+          "expl": "La Réunion est située dans l’océan Indien."
+        },
+        {
+          "q": "Tous les territoires ultramarins français sont-ils des îles ?",
+          "choix": [
+            "Oui",
+            "Oui, sauf en Europe",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "La Guyane est un exemple de territoire continental."
+        }
+      ],
+      "id": "REV-GE-3E-09"
+    },
+    {
+      "axe": "La France et l’Union européenne",
+      "titre": "L’Union européenne",
+      "emoji": "🇪🇺",
+      "en_une_phrase": "L’Union européenne est un ensemble d’États qui coopèrent à travers des règles et des institutions communes.",
+      "comprendre": "Des pays voisins peuvent décider de mener certains projets ensemble. L’Union européenne organise des coopérations dans plusieurs domaines. Ses États membres restent des États distincts.",
+      "essentiel": [
+        "L’Union européenne réunit des États membres.",
+        "Ses institutions participent aux décisions communes.",
+        "L’Europe géographique et l’Union européenne ne recouvrent pas exactement le même ensemble."
+      ],
+      "image_mentale": "Imagine une carte d’États reliés par des projets et des institutions communs.",
+      "regle_ou_methode": "Situe un État, vérifie s’il appartient à l’Union puis identifie une coopération.",
+      "exemples": [
+        "La France est un État membre de l’Union européenne. Elle participe à des décisions et à des projets communs avec d’autres États membres. Elle conserve néanmoins son existence d’État.",
+        "L’Espagne est aussi un État membre de l’Union européenne."
+      ],
+      "piege": "Tous les pays situés en Europe ne sont pas nécessairement membres de l’Union européenne.",
+      "astuce_memoire": "Des États distincts qui coopèrent.",
+      "quiz": [
+        {
+          "q": "La France appartient-elle à l’Union européenne ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Seulement depuis la fin de la Seconde Guerre mondiale sans autre étape"
+          ],
+          "rep": "Oui",
+          "expl": "La France est membre de l’Union européenne."
+        },
+        {
+          "q": "L’Europe géographique et l’Union européenne sont-elles identiques ?",
+          "choix": [
+            "Oui, toujours",
+            "Oui, depuis l’Antiquité",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Certains États européens ne sont pas membres de l’Union."
+        },
+        {
+          "q": "Les États membres cessent-ils d’exister comme États ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Oui, dès qu’un projet commun est adopté"
+          ],
+          "rep": "Non",
+          "expl": "Ils coopèrent tout en restant des États."
+        }
+      ],
+      "id": "REV-GE-3E-10"
+    },
+    {
+      "axe": "La France et l’Union européenne",
+      "titre": "Des territoires européens inégaux",
+      "emoji": "🗺️",
+      "en_une_phrase": "Les territoires de l’Union européenne présentent des niveaux de richesse et d’équipement différents.",
+      "comprendre": "Au sein d’un même ensemble, les régions n’ont pas toujours les mêmes emplois, transports ou revenus. Des politiques européennes et nationales cherchent à soutenir certains territoires. Leurs effets dépendent des projets et des contextes.",
+      "essentiel": [
+        "Les régions européennes présentent des situations variées.",
+        "Les transports et l’accès aux services sont inégalement répartis.",
+        "Des aides peuvent soutenir des projets de développement."
+      ],
+      "image_mentale": "Imagine une carte de régions reliées par des routes denses ou plus rares.",
+      "regle_ou_methode": "Compare un indicateur, localise les territoires puis étudie un projet de soutien.",
+      "exemples": [
+        "Deux régions disposent de réseaux de transport différents. L’une est reliée par plusieurs lignes, l’autre est moins bien desservie. Un projet de connexion peut chercher à réduire cet écart.",
+        "Des aides peuvent contribuer à financer une formation ou une infrastructure dans certains territoires."
+      ],
+      "piege": "Une moyenne européenne ne décrit pas exactement la situation de chaque région.",
+      "astuce_memoire": "Comparer les régions, les indicateurs et les projets.",
+      "quiz": [
+        {
+          "q": "Que peut révéler une carte des transports ?",
+          "choix": [
+            "L’identité de chaque habitant",
+            "La couleur de tous les véhicules",
+            "Des différences de desserte entre régions"
+          ],
+          "rep": "Des différences de desserte entre régions",
+          "expl": "La densité des réseaux varie selon les régions."
+        },
+        {
+          "q": "Un projet de transport peut-il viser à réduire un écart de desserte ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "Oui, seulement sans trajet"
+          ],
+          "rep": "Oui",
+          "expl": "Une nouvelle connexion peut améliorer certains accès."
+        },
+        {
+          "q": "Une moyenne décrit-elle parfaitement toutes les régions ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "Oui, si elle est calculée en Europe"
+          ],
+          "rep": "Non",
+          "expl": "Une moyenne peut masquer des situations différentes."
+        }
+      ],
+      "id": "REV-GE-3E-11"
+    },
+    {
+      "axe": "La France et l’Union européenne",
+      "titre": "Les espaces transfrontaliers",
+      "emoji": "🚆",
+      "en_une_phrase": "Un espace transfrontalier relie des territoires situés de part et d’autre d’une frontière.",
+      "comprendre": "Une frontière sépare des États, mais elle peut aussi être franchie pour travailler ou étudier. Des acteurs coopèrent parfois pour organiser les transports et les services. Ces liens créent des espaces de vie transfrontaliers.",
+      "essentiel": [
+        "Une frontière sépare des territoires relevant d’États différents.",
+        "Des habitants peuvent la franchir régulièrement.",
+        "La coopération peut concerner les transports ou les services."
+      ],
+      "image_mentale": "Imagine une rivière-frontière traversée par un pont et une ligne de transport.",
+      "regle_ou_methode": "Situe la frontière, identifie les déplacements et repère les coopérations.",
+      "exemples": [
+        "Une personne habite dans un pays et travaille chaque jour dans un pays voisin. Son trajet traverse une frontière. Il montre une relation transfrontalière.",
+        "Deux collectivités de pays voisins peuvent coopérer pour relier leurs réseaux de transport."
+      ],
+      "piege": "Une frontière n’empêche pas forcément les échanges ou les déplacements.",
+      "astuce_memoire": "De chaque côté de la frontière : des liens et des coopérations.",
+      "quiz": [
+        {
+          "q": "Quel trajet est transfrontalier ?",
+          "choix": [
+            "Habiter dans un pays et travailler dans le pays voisin",
+            "Circuler uniquement dans une même rue",
+            "Rester dans un bâtiment sans déplacement"
+          ],
+          "rep": "Habiter dans un pays et travailler dans le pays voisin",
+          "expl": "Le trajet franchit une frontière entre deux États."
+        },
+        {
+          "q": "Des collectivités de pays voisins peuvent-elles coopérer ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Seulement si aucune frontière n’existe"
+          ],
+          "rep": "Oui",
+          "expl": "Elles peuvent notamment coopérer pour les transports."
+        },
+        {
+          "q": "Une frontière interdit-elle nécessairement tout déplacement ?",
+          "choix": [
+            "Oui, toujours",
+            "Oui, pour les trains seulement",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Les conditions de franchissement varient selon les lieux et les règles."
+        }
+      ],
+      "id": "REV-GE-3E-12"
+    },
+    {
+      "axe": "La France et l’Union européenne",
+      "titre": "La France dans le monde",
+      "emoji": "🌍",
+      "en_une_phrase": "La France entretient des relations économiques, culturelles et politiques à l’échelle mondiale.",
+      "comprendre": "Un pays échange avec d’autres territoires par le commerce, les déplacements et la culture. La France est présente sur plusieurs continents et océans grâce notamment à ses territoires ultramarins. Son influence et ses liens prennent des formes variées.",
+      "essentiel": [
+        "La France participe à des échanges économiques internationaux.",
+        "Ses territoires ultramarins étendent sa présence géographique.",
+        "La langue française est utilisée dans plusieurs régions du monde."
+      ],
+      "image_mentale": "Imagine une carte reliant la métropole, les outre-mer et d’autres pays.",
+      "regle_ou_methode": "Identifie une forme de présence ou d’échange, puis situe les territoires concernés.",
+      "exemples": [
+        "La Réunion est un territoire français situé dans l’océan Indien. Elle relie la France à un espace géographique éloigné de la métropole. Cette présence est l’un des aspects de la dimension mondiale française.",
+        "Des personnes utilisent le français dans plusieurs pays situés sur différents continents."
+      ],
+      "piege": "La présence mondiale de la France ne signifie pas que tous les territoires ont les mêmes liens ou la même influence.",
+      "astuce_memoire": "Échanges, langue, territoires ultramarins.",
+      "quiz": [
+        {
+          "q": "Quel territoire français est situé dans l’océan Indien ?",
+          "choix": [
+            "La Guyane",
+            "La Réunion",
+            "La Bretagne"
+          ],
+          "rep": "La Réunion",
+          "expl": "La Réunion est une île de l’océan Indien."
+        },
+        {
+          "q": "La langue française est-elle utilisée uniquement en France métropolitaine ?",
+          "choix": [
+            "Oui",
+            "Oui, sauf dans les dictionnaires",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Elle est utilisée dans plusieurs pays et territoires."
+        },
+        {
+          "q": "Quel exemple illustre un lien mondial ?",
+          "choix": [
+            "Des échanges économiques avec d’autres pays",
+            "Une rue sans aucune relation extérieure",
+            "Le nom d’un seul quartier sans déplacement"
+          ],
+          "rep": "Des échanges économiques avec d’autres pays",
+          "expl": "Le commerce relie des territoires situés dans plusieurs pays."
+        }
+      ],
+      "id": "REV-GE-3E-13"
+    }
+  ]
+}

@@ -1,0 +1,650 @@
+{
+  "classe": "4E",
+  "niveau_appli": "4ème",
+  "age": "13-14 ans",
+  "matiere": "Géographie",
+  "code": "GE",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "L’urbanisation du monde",
+      "titre": "La croissance des villes dans le monde",
+      "emoji": "🌆",
+      "en_une_phrase": "L’urbanisation désigne l’augmentation de la part de la population vivant en ville.",
+      "comprendre": "Depuis le milieu du XXe siècle, la population urbaine a beaucoup augmenté dans le monde. Cette évolution varie selon les pays et transforme les paysages. Elle peut résulter de la croissance naturelle et de l’arrivée de nouveaux habitants.",
+      "essentiel": [
+        "L’urbanisation mesure la place croissante de la population urbaine.",
+        "La croissance urbaine est l’augmentation du nombre d’habitants des villes.",
+        "Les rythmes et les formes de l’urbanisation diffèrent selon les régions.",
+        "L’étalement urbain correspond à l’extension de l’espace construit."
+      ],
+      "image_mentale": "Imagine une ville qui gagne des habitants et dont les quartiers s’étendent.",
+      "regle_ou_methode": "Compare la population urbaine à la population totale ; distingue ensuite nombre d’habitants et part dans la population.",
+      "exemples": [
+        "Une région compte 100 000 habitants, dont 40 000 en ville. La part urbaine est 40 000 ÷ 100 000 = 40 %. Si elle passe ensuite à 50 %, la région s’est urbanisée.",
+        "Une ville construit de nouveaux quartiers sur des espaces auparavant agricoles : son espace bâti s’étend, c’est de l’étalement urbain."
+      ],
+      "piege": "Une ville peut gagner des habitants sans que la part urbaine de tout le pays augmente : ces deux indicateurs sont différents.",
+      "astuce_memoire": "Urbanisation : part urbaine ; croissance urbaine : nombre d’habitants.",
+      "quiz": [
+        {
+          "q": "Dans un territoire de 100 000 habitants, 40 000 vivent en ville. Quelle est la part urbaine ?",
+          "choix": [
+            "4 %",
+            "40 %",
+            "60 %"
+          ],
+          "rep": "40 %",
+          "expl": "40 000 divisé par 100 000 donne 0,4, soit 40 %."
+        },
+        {
+          "q": "Que désigne l’étalement urbain ?",
+          "choix": [
+            "La disparition de tous les logements",
+            "La baisse automatique de la population mondiale",
+            "L’extension de l’espace construit autour des villes"
+          ],
+          "rep": "L’extension de l’espace construit autour des villes",
+          "expl": "Des constructions gagnent des espaces situés autour de la ville."
+        },
+        {
+          "q": "Quelles évolutions participent parfois à la croissance d’une ville ?",
+          "choix": [
+            "Les naissances et l’arrivée de nouveaux habitants",
+            "Les seules variations de température",
+            "La seule diminution de la superficie bâtie"
+          ],
+          "rep": "Les naissances et l’arrivée de nouveaux habitants",
+          "expl": "Croissance naturelle et migrations peuvent contribuer à la croissance urbaine."
+        }
+      ],
+      "id": "REV-GE-4E-01"
+    },
+    {
+      "axe": "L’urbanisation du monde",
+      "titre": "Centres et périphéries des villes",
+      "emoji": "🗺️",
+      "en_une_phrase": "Une grande ville associe des espaces centraux et des périphéries reliés par des déplacements.",
+      "comprendre": "Dans de nombreuses villes, les centres concentrent des activités et des services importants. Les périphéries peuvent réunir logements, zones d’emploi, commerces ou espaces moins denses. Ces espaces sont variés et ne s’opposent pas toujours de la même manière.",
+      "essentiel": [
+        "Le centre rassemble souvent des fonctions importantes à l’échelle de la ville.",
+        "Les périphéries entourent les espaces centraux et ont des usages variés.",
+        "Les transports relient les lieux d’habitation, de travail et de services.",
+        "La répartition des richesses et des services varie selon les quartiers et les villes."
+      ],
+      "image_mentale": "Imagine un centre relié par des routes et des transports en commun à plusieurs quartiers périphériques.",
+      "regle_ou_methode": "Situe chaque espace, observe ses activités et ses habitants, puis étudie les liaisons entre eux.",
+      "exemples": [
+        "Une personne habite dans un quartier périphérique et travaille près de la gare centrale. Elle utilise un train pour s’y rendre : ce trajet relie son lieu de résidence à son lieu de travail.",
+        "Une périphérie comprend à la fois des logements, un parc d’activités et des commerces : elle n’est donc pas uniquement résidentielle."
+      ],
+      "piege": "Ne suppose pas que tous les centres sont riches et toutes les périphéries pauvres : les situations sont diverses.",
+      "astuce_memoire": "Centre et périphéries : des espaces différents mais reliés.",
+      "quiz": [
+        {
+          "q": "Qu’est-ce qu’une périphérie urbaine ?",
+          "choix": [
+            "Une zone toujours sans habitants",
+            "Un lieu forcément situé dans un autre pays",
+            "Un espace situé autour des espaces centraux"
+          ],
+          "rep": "Un espace situé autour des espaces centraux",
+          "expl": "La périphérie entoure les espaces centraux et peut avoir plusieurs fonctions."
+        },
+        {
+          "q": "Quel exemple montre une liaison entre espaces urbains ?",
+          "choix": [
+            "Un train reliant un quartier périphérique à une gare centrale",
+            "Une montagne dessinée sur une carte",
+            "Un immeuble sans accès ni déplacement"
+          ],
+          "rep": "Un train reliant un quartier périphérique à une gare centrale",
+          "expl": "Le train permet des déplacements entre quartiers."
+        },
+        {
+          "q": "Les quartiers périphériques ont-ils tous les mêmes caractéristiques ?",
+          "choix": [
+            "Oui, ils sont tous agricoles",
+            "Non, leurs usages et situations sont variés",
+            "Oui, ils sont tous des quartiers d’affaires"
+          ],
+          "rep": "Non, leurs usages et situations sont variés",
+          "expl": "Une périphérie peut comprendre des logements, des emplois et des commerces."
+        }
+      ],
+      "id": "REV-GE-4E-02"
+    },
+    {
+      "axe": "L’urbanisation du monde",
+      "titre": "Villes et mondialisation",
+      "emoji": "🌐",
+      "en_une_phrase": "Les grandes villes sont reliées de façon inégale aux réseaux de la mondialisation.",
+      "comprendre": "Comme des gares d’un réseau, certaines villes concentrent de nombreuses connexions. Des métropoles accueillent des sièges d’entreprises, des universités et des équipements de transport. Leur influence et leurs liens internationaux varient.",
+      "essentiel": [
+        "Une métropole concentre population, activités et fonctions de commandement.",
+        "Une ville mondiale possède un rayonnement international important.",
+        "Les villes ne sont pas toutes connectées avec la même intensité."
+      ],
+      "image_mentale": "Imagine des villes reliées par des lignes aériennes et des échanges de données.",
+      "regle_ou_methode": "Identifie les fonctions de la ville et les réseaux qui la relient à d’autres villes.",
+      "exemples": [
+        "Une métropole accueille un aéroport international et des sièges d’entreprises. Ces équipements la relient à des villes étrangères. Ils contribuent à son insertion dans les échanges mondiaux.",
+        "Une ville plus petite peut être reliée à une métropole régionale sans disposer des mêmes fonctions internationales."
+      ],
+      "piege": "Une ville très peuplée n’a pas nécessairement le même rayonnement international qu’une autre.",
+      "astuce_memoire": "Fonctions, connexions, rayonnement.",
+      "quiz": [
+        {
+          "q": "Quel équipement peut relier une métropole à d’autres pays ?",
+          "choix": [
+            "Un aéroport international",
+            "Une route locale sans connexion internationale",
+            "Un sentier reliant deux quartiers"
+          ],
+          "rep": "Un aéroport international",
+          "expl": "Un aéroport accueille des liaisons internationales."
+        },
+        {
+          "q": "Qu’est-ce qu’une métropole ?",
+          "choix": [
+            "Une région agricole sans ville importante",
+            "Une grande ville concentrant des habitants et des fonctions importantes",
+            "Un village sans fonction de commandement"
+          ],
+          "rep": "Une grande ville concentrant des habitants et des fonctions importantes",
+          "expl": "Une métropole regroupe population et activités de commandement."
+        },
+        {
+          "q": "Deux villes aussi peuplées ont-elles forcément la même influence internationale ?",
+          "choix": [
+            "Oui, toujours",
+            "Oui, si elles ont une gare locale",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Leurs fonctions et connexions peuvent différer."
+        }
+      ],
+      "id": "REV-GE-4E-03"
+    },
+    {
+      "axe": "L’urbanisation du monde",
+      "titre": "Inégalités dans les villes",
+      "emoji": "🏘️",
+      "en_une_phrase": "Les conditions de vie et l’accès aux services varient entre les quartiers d’une même ville.",
+      "comprendre": "Dans une ville, les habitants n’ont pas toujours le même temps de trajet vers l’école ou le travail. Les logements, les transports et les services sont répartis de manière inégale. Ces écarts prennent des formes différentes selon les villes.",
+      "essentiel": [
+        "Les quartiers peuvent avoir des logements et équipements différents.",
+        "L’accès à l’eau, aux transports et aux services peut être inégal.",
+        "Les habitants et les collectivités peuvent agir pour améliorer certains quartiers."
+      ],
+      "image_mentale": "Imagine deux quartiers comparés par leur accès à l’école et aux transports.",
+      "regle_ou_methode": "Observe les logements et les services disponibles sans supposer que tous les habitants ont la même situation.",
+      "exemples": [
+        "Dans une ville, un quartier possède une ligne de bus fréquente et un autre est mal desservi. Compare l’accès aux transports. Le second quartier impose potentiellement des trajets plus difficiles.",
+        "Un projet d’adduction d’eau peut améliorer l’accès à l’eau d’un quartier qui en manque."
+      ],
+      "piege": "Un quartier ne se résume pas à une seule image et ses habitants n’ont pas tous les mêmes revenus.",
+      "astuce_memoire": "Comparer les quartiers : logements, services, transports.",
+      "quiz": [
+        {
+          "q": "Quel exemple montre une inégalité d’accès aux services ?",
+          "choix": [
+            "Deux quartiers ont exactement les mêmes horaires et accès",
+            "Un quartier est bien desservi par le bus, un autre très peu",
+            "Deux personnes lisent le même livre"
+          ],
+          "rep": "Un quartier est bien desservi par le bus, un autre très peu",
+          "expl": "Une desserte différente peut créer des écarts de mobilité."
+        },
+        {
+          "q": "Quel aménagement peut améliorer l’accès à l’eau ?",
+          "choix": [
+            "La fermeture durable des points d’eau",
+            "Le remplacement de l’eau par du sable",
+            "Un réseau d’adduction adapté"
+          ],
+          "rep": "Un réseau d’adduction adapté",
+          "expl": "Un réseau adapté peut acheminer l’eau vers les habitants."
+        },
+        {
+          "q": "Tous les habitants d’un quartier ont-ils nécessairement le même revenu ?",
+          "choix": [
+            "Non",
+            "Oui, toujours",
+            "Oui, si le quartier est proche du centre"
+          ],
+          "rep": "Non",
+          "expl": "Les situations des habitants peuvent être différentes."
+        }
+      ],
+      "id": "REV-GE-4E-04"
+    },
+    {
+      "axe": "Les mobilités humaines transnationales",
+      "titre": "Les migrations internationales",
+      "emoji": "🧳",
+      "en_une_phrase": "Les migrations internationales relient des lieux de départ, de passage et d’installation.",
+      "comprendre": "Tu connais peut-être des personnes qui ont déménagé pour travailler ou rejoindre leur famille. À l’échelle internationale, une migration implique le franchissement d’une frontière pour s’installer dans un autre pays. Les raisons du départ et les conditions du trajet et de l’installation sont diverses.",
+      "essentiel": [
+        "Les départs peuvent être liés au travail, à la famille, aux études ou à l’insécurité.",
+        "Un même pays peut accueillir des migrants et connaître des départs.",
+        "Les migrants peuvent maintenir des liens avec leur pays de départ."
+      ],
+      "image_mentale": "Imagine des flèches entre un lieu de départ et un lieu d’installation, avec parfois des étapes.",
+      "regle_ou_methode": "Repère les pays de départ et d’arrivée, puis recherche les motifs et les conditions du déplacement.",
+      "exemples": [
+        "Une personne quitte son pays pour rejoindre sa famille dans un pays voisin. Elle franchit une frontière puis s’installe : il s’agit ici d’une migration internationale.",
+        "Une personne ayant quitté son pays pour travailler peut envoyer une partie de ses revenus à sa famille restée au pays."
+      ],
+      "piege": "Tous les migrants ne suivent pas le même parcours et ne partent pas pour la même raison.",
+      "astuce_memoire": "Départ, trajet, installation, liens.",
+      "quiz": [
+        {
+          "q": "Une personne déménage pour s’installer dans un autre pays : de quel déplacement s’agit-il ?",
+          "choix": [
+            "Un trajet quotidien dans la même ville",
+            "Une livraison locale",
+            "Une migration internationale"
+          ],
+          "rep": "Une migration internationale",
+          "expl": "Elle franchit une frontière pour s’installer ailleurs."
+        },
+        {
+          "q": "Un pays peut-il être à la fois un lieu de départ et un lieu d’arrivée ?",
+          "choix": [
+            "Oui",
+            "Non, jamais",
+            "Seulement s’il n’a aucune frontière"
+          ],
+          "rep": "Oui",
+          "expl": "Des personnes peuvent y arriver tandis que d’autres en partent."
+        },
+        {
+          "q": "Quel lien un migrant peut-il garder avec son pays de départ ?",
+          "choix": [
+            "Effacer automatiquement toutes les frontières",
+            "Envoyer une partie de ses revenus à sa famille",
+            "Interdire à sa famille de communiquer"
+          ],
+          "rep": "Envoyer une partie de ses revenus à sa famille",
+          "expl": "Des échanges et des transferts d’argent peuvent relier les familles."
+        }
+      ],
+      "id": "REV-GE-4E-05"
+    },
+    {
+      "axe": "Les mobilités humaines transnationales",
+      "titre": "Le tourisme international",
+      "emoji": "🧭",
+      "en_une_phrase": "Le tourisme international est un déplacement temporaire vers un autre pays pour un séjour.",
+      "comprendre": "Partir en vacances suppose un trajet et un lieu d’accueil. Lorsqu’un touriste se rend temporairement dans un autre pays, il participe à une mobilité internationale. Ces déplacements créent des activités économiques mais peuvent aussi exercer des pressions sur les lieux visités.",
+      "essentiel": [
+        "Les touristes se déplacent temporairement pour des motifs variés, comme les loisirs.",
+        "Les transports et les hébergements relient les lieux de départ et les destinations.",
+        "Les effets économiques et environnementaux varient selon les lieux et les pratiques."
+      ],
+      "image_mentale": "Imagine une flèche aller-retour entre un domicile et un lieu de séjour.",
+      "regle_ou_methode": "Identifie le pays de départ, la destination et la durée limitée du séjour, puis étudie ses effets.",
+      "exemples": [
+        "Une famille quitte son pays pour passer une semaine dans une ville étrangère puis rentre chez elle. Le séjour est temporaire et franchit une frontière : c’est un exemple de tourisme international.",
+        "Dans une station littorale très fréquentée, les visiteurs peuvent soutenir des emplois et augmenter la demande en eau."
+      ],
+      "piege": "Un séjour touristique temporaire ne signifie pas nécessairement une installation durable dans le pays visité.",
+      "astuce_memoire": "Tourisme : déplacement et séjour temporaires.",
+      "quiz": [
+        {
+          "q": "Quel cas illustre un tourisme international ?",
+          "choix": [
+            "Une semaine de vacances dans un autre pays",
+            "Un trajet quotidien vers une école voisine",
+            "Une installation durable pour rejoindre sa famille"
+          ],
+          "rep": "Une semaine de vacances dans un autre pays",
+          "expl": "Un séjour temporaire de vacances dans un autre pays est une mobilité touristique internationale."
+        },
+        {
+          "q": "Quel effet une forte fréquentation touristique peut-elle avoir dans une station ?",
+          "choix": [
+            "Faire disparaître toutes les activités locales",
+            "Augmenter la demande en eau",
+            "Supprimer automatiquement les transports"
+          ],
+          "rep": "Augmenter la demande en eau",
+          "expl": "Les visiteurs utilisent des ressources comme l’eau."
+        },
+        {
+          "q": "Quelle différence caractérise ici le séjour touristique ?",
+          "choix": [
+            "Il interdit tout retour au domicile",
+            "Il exige toujours un changement durable de résidence",
+            "Il est temporaire"
+          ],
+          "rep": "Il est temporaire",
+          "expl": "Un touriste effectue un séjour limité dans le temps."
+        }
+      ],
+      "id": "REV-GE-4E-06"
+    },
+    {
+      "axe": "Des espaces transformés par la mondialisation",
+      "titre": "Les routes maritimes de la mondialisation",
+      "emoji": "🚢",
+      "en_une_phrase": "Les mers et océans relient les grandes régions de production et de consommation par des routes commerciales.",
+      "comprendre": "Des navires transportent une grande partie des marchandises échangées dans le monde. Les routes relient des ports et passent parfois par des détroits ou des canaux stratégiques. Ces passages concentrent les flux et peuvent être perturbés.",
+      "essentiel": [
+        "Les routes maritimes relient les principaux ports du monde.",
+        "Un détroit est un passage naturel étroit entre deux terres.",
+        "Un canal est une voie d’eau aménagée par les humains.",
+        "Les conteneurs facilitent le passage des marchandises entre plusieurs modes de transport."
+      ],
+      "image_mentale": "Imagine des lignes maritimes reliant des ports et se resserrant dans un passage étroit.",
+      "regle_ou_methode": "Repère les ports, suis la route et identifie les passages naturels ou aménagés.",
+      "exemples": [
+        "Pour relier l’Europe à l’Asie par la Méditerranée, certains navires empruntent le canal de Suez. Ce passage aménagé relie la Méditerranée à la mer Rouge.",
+        "Le détroit de Malacca relie notamment l’océan Indien à la mer de Chine méridionale. Sa position en fait un passage important pour les échanges entre l’Asie et d’autres régions."
+      ],
+      "piege": "Un détroit naturel et un canal construit ne sont pas la même chose.",
+      "astuce_memoire": "Détroit naturel, canal aménagé.",
+      "quiz": [
+        {
+          "q": "Quel passage aménagé relie la Méditerranée à la mer Rouge ?",
+          "choix": [
+            "Le détroit de Malacca",
+            "Le canal de Suez",
+            "Le fleuve Amazone"
+          ],
+          "rep": "Le canal de Suez",
+          "expl": "Le canal de Suez est une voie d’eau aménagée en Égypte."
+        },
+        {
+          "q": "Qu’est-ce qu’un détroit ?",
+          "choix": [
+            "Un canal construit entre deux océans",
+            "Un entrepôt sur un quai",
+            "Un passage maritime naturel entre deux terres"
+          ],
+          "rep": "Un passage maritime naturel entre deux terres",
+          "expl": "Un détroit est un passage naturel étroit."
+        },
+        {
+          "q": "Pourquoi utilise-t-on des conteneurs ?",
+          "choix": [
+            "Pour faciliter le transfert des marchandises entre transports",
+            "Pour transformer les navires en avions",
+            "Pour supprimer tous les contrôles"
+          ],
+          "rep": "Pour faciliter le transfert des marchandises entre transports",
+          "expl": "Le conteneur standardisé peut passer du navire au train ou au camion."
+        }
+      ],
+      "id": "REV-GE-4E-07"
+    },
+    {
+      "axe": "Des espaces transformés par la mondialisation",
+      "titre": "Les ports dans la mondialisation",
+      "emoji": "🏗️",
+      "en_une_phrase": "Un grand port relie les routes maritimes à son arrière-pays et concentre des activités variées.",
+      "comprendre": "Un port reçoit et expédie des marchandises par voie maritime. Des quais, des grues et des terminaux permettent de les charger et de les décharger. Les routes, les voies ferrées et parfois les fleuves relient le port à son arrière-pays.",
+      "essentiel": [
+        "Un terminal accueille un type de trafic, par exemple les conteneurs.",
+        "L’arrière-pays est l’espace terrestre desservi par le port.",
+        "Un port connecte plusieurs modes de transport.",
+        "Les activités portuaires peuvent transformer les littoraux et les milieux."
+      ],
+      "image_mentale": "Imagine un conteneur qui passe du navire à un train puis rejoint un entrepôt.",
+      "regle_ou_methode": "Repère les équipements du port, les marchandises puis les connexions avec l’arrière-pays.",
+      "exemples": [
+        "À Rotterdam, un conteneur déchargé d’un navire peut poursuivre son trajet vers l’intérieur de l’Europe par péniche, train ou camion. Le port relie ainsi transport maritime et arrière-pays.",
+        "Un terminal à conteneurs utilise des grues pour déplacer les conteneurs entre navires et quais. Des zones de stockage facilitent leur acheminement ultérieur."
+      ],
+      "piege": "Un grand port ne se limite pas à ses quais : il fonctionne aussi grâce à ses liaisons terrestres.",
+      "astuce_memoire": "Port : quai, terminal, connexions.",
+      "quiz": [
+        {
+          "q": "Qu’appelle-t-on l’arrière-pays d’un port ?",
+          "choix": [
+            "Uniquement le pont d’un navire",
+            "La mer située sous un bateau",
+            "L’espace terrestre desservi par ce port"
+          ],
+          "rep": "L’espace terrestre desservi par ce port",
+          "expl": "Les voies terrestres et fluviales relient le port à l’espace qu’il dessert."
+        },
+        {
+          "q": "Quel équipement sert à déplacer les conteneurs entre navire et quai ?",
+          "choix": [
+            "Une grue portuaire",
+            "Un thermomètre",
+            "Une éolienne domestique"
+          ],
+          "rep": "Une grue portuaire",
+          "expl": "Les grues chargent et déchargent les conteneurs."
+        },
+        {
+          "q": "Quel trajet montre la connexion du port à son arrière-pays ?",
+          "choix": [
+            "Un navire immobile sans chargement",
+            "Un conteneur déchargé puis acheminé en train vers une ville intérieure",
+            "Un nuage au-dessus de la mer"
+          ],
+          "rep": "Un conteneur déchargé puis acheminé en train vers une ville intérieure",
+          "expl": "Le train relie les installations portuaires aux territoires de l’intérieur."
+        }
+      ],
+      "id": "REV-GE-4E-08"
+    },
+    {
+      "axe": "Des espaces transformés par la mondialisation",
+      "titre": "Les États-Unis mondialisés",
+      "emoji": "🇺🇸",
+      "en_une_phrase": "Aux États-Unis, les territoires participent de manière inégale aux échanges mondiaux.",
+      "comprendre": "Un pays vaste rassemble des régions aux activités différentes. Aux États-Unis, les grandes métropoles et les façades maritimes concentrent de nombreux échanges. Les espaces intérieurs participent aussi à la mondialisation grâce à leurs productions et aux réseaux de transport.",
+      "essentiel": [
+        "Les grandes métropoles concentrent des fonctions de commandement.",
+        "Les façades maritimes relient le pays à d’autres espaces du monde.",
+        "Les régions intérieures contribuent aux échanges par leurs activités."
+      ],
+      "image_mentale": "Imagine les deux façades maritimes et les grands axes qui les relient à l’intérieur.",
+      "regle_ou_methode": "Localise un espace, identifie ses activités et ses connexions avec les autres territoires.",
+      "exemples": [
+        "Sur la côte atlantique, New York concentre des activités financières et un grand port régional. Elle relie ainsi le territoire américain aux échanges internationaux.",
+        "Dans le centre du pays, des régions agricoles produisent notamment des céréales qui circulent par des réseaux de transport."
+      ],
+      "piege": "Tous les territoires des États-Unis ne participent pas de la même manière aux échanges mondiaux.",
+      "astuce_memoire": "Façades, métropoles et intérieur sont reliés par des réseaux.",
+      "quiz": [
+        {
+          "q": "Quel espace concentre des fonctions financières internationales aux États-Unis ?",
+          "choix": [
+            "New York",
+            "Une région intérieure sans grande place financière",
+            "Une petite commune agricole sans centre financier"
+          ],
+          "rep": "New York",
+          "expl": "New York concentre notamment des activités financières."
+        },
+        {
+          "q": "Comment les régions agricoles intérieures participent-elles aux échanges ?",
+          "choix": [
+            "En étant totalement coupées du reste du pays",
+            "Par leurs productions et leurs réseaux de transport",
+            "Uniquement par des plages touristiques"
+          ],
+          "rep": "Par leurs productions et leurs réseaux de transport",
+          "expl": "Les productions agricoles circulent par des réseaux de transport."
+        },
+        {
+          "q": "La mondialisation relie-t-elle tous les espaces américains de la même manière ?",
+          "choix": [
+            "Oui, toujours",
+            "Non, car aucune ville américaine ne commerce",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Les activités et les connexions varient selon les territoires."
+        }
+      ],
+      "id": "REV-GE-4E-09"
+    },
+    {
+      "axe": "Des espaces transformés par la mondialisation",
+      "titre": "Façades et réseaux américains",
+      "emoji": "🚂",
+      "en_une_phrase": "Les réseaux de transport relient les façades et les régions intérieures des États-Unis.",
+      "comprendre": "Pour qu’un produit circule, il faut relier ses lieux de production, de stockage et de vente. Aux États-Unis, routes, voies ferrées, fleuves et ports forment des réseaux complémentaires. Ces réseaux permettent de relier le pays à plusieurs espaces mondiaux.",
+      "essentiel": [
+        "Une façade maritime regroupe des ports ouverts sur un océan.",
+        "Les réseaux relient l’intérieur du territoire aux ports et aux métropoles.",
+        "Les infrastructures concentrent et orientent les flux."
+      ],
+      "image_mentale": "Imagine des lignes reliant une région agricole, un fleuve, un port et l’océan.",
+      "regle_ou_methode": "Suis le trajet d’un produit et repère les lieux où le mode de transport peut changer.",
+      "exemples": [
+        "Des céréales produites dans l’intérieur peuvent emprunter des voies fluviales. Elles rejoignent un port du golfe du Mexique. Un navire peut ensuite les transporter vers un autre pays.",
+        "Sur la façade pacifique, des ports relient notamment les États-Unis aux échanges transpacifiques."
+      ],
+      "piege": "Une façade maritime ne se réduit pas à une seule ville ou à une simple plage.",
+      "astuce_memoire": "Région intérieure, réseau, port, océan.",
+      "quiz": [
+        {
+          "q": "Quel lieu permet le passage de marchandises entre terre et mer ?",
+          "choix": [
+            "Un sommet montagneux isolé",
+            "Un port",
+            "Une frontière sans passage"
+          ],
+          "rep": "Un port",
+          "expl": "Un port relie les transports terrestres ou fluviaux aux transports maritimes."
+        },
+        {
+          "q": "À quoi servent les réseaux de transport ?",
+          "choix": [
+            "À empêcher toute circulation",
+            "À supprimer les distances physiques",
+            "À relier des lieux et à faire circuler des flux"
+          ],
+          "rep": "À relier des lieux et à faire circuler des flux",
+          "expl": "Les réseaux organisent les déplacements entre les lieux."
+        },
+        {
+          "q": "Une façade maritime est :",
+          "choix": [
+            "Un ensemble de ports et de territoires ouverts sur un océan",
+            "Un port isolé sans territoire desservi",
+            "Une étendue agricole sans lien avec les ports"
+          ],
+          "rep": "Un ensemble de ports et de territoires ouverts sur un océan",
+          "expl": "Une façade regroupe plusieurs espaces portuaires reliés à leur arrière-pays."
+        }
+      ],
+      "id": "REV-GE-4E-10"
+    },
+    {
+      "axe": "Des espaces transformés par la mondialisation",
+      "titre": "L’Afrique de l’Ouest dans le monde",
+      "emoji": "🌍",
+      "en_une_phrase": "L’Afrique de l’Ouest est un ensemble de territoires divers reliés par des échanges régionaux et mondiaux.",
+      "comprendre": "Comme dans toute grande région, les villes et les campagnes ont des activités variées. Les routes, les ports et les mobilités relient des espaces côtiers et intérieurs. Les échanges peuvent créer des possibilités tout en révélant de fortes inégalités.",
+      "essentiel": [
+        "L’Afrique de l’Ouest comprend plusieurs États.",
+        "Des ports côtiers relient la région aux routes maritimes.",
+        "Les échanges régionaux relient villes et campagnes au-delà des frontières."
+      ],
+      "image_mentale": "Imagine une carte avec une côte, des ports et des routes vers l’intérieur.",
+      "regle_ou_methode": "Localise le port, son arrière-pays et les flux de marchandises ou de personnes.",
+      "exemples": [
+        "Le port d’Abidjan se situe en Côte d’Ivoire sur la côte ouest-africaine. Il échange des marchandises avec d’autres territoires. Des routes relient aussi le port aux espaces intérieurs.",
+        "Des commerçants circulent entre des villes de pays voisins pour vendre et acheter des marchandises."
+      ],
+      "piege": "L’Afrique de l’Ouest n’est pas un pays unique ni un espace aux situations uniformes.",
+      "astuce_memoire": "Plusieurs pays, des connexions et des situations diverses.",
+      "quiz": [
+        {
+          "q": "Abidjan est une ville portuaire située :",
+          "choix": [
+            "Au Canada",
+            "Au Japon",
+            "En Côte d’Ivoire"
+          ],
+          "rep": "En Côte d’Ivoire",
+          "expl": "Abidjan se trouve en Côte d’Ivoire."
+        },
+        {
+          "q": "Pourquoi les routes vers l’intérieur sont-elles utiles à un port ?",
+          "choix": [
+            "Elles le relient à d’autres territoires et marchés",
+            "Elles rendent tout échange maritime impossible",
+            "Elles remplacent forcément toutes les activités portuaires"
+          ],
+          "rep": "Elles le relient à d’autres territoires et marchés",
+          "expl": "Elles relient le port à son arrière-pays."
+        },
+        {
+          "q": "L’Afrique de l’Ouest est-elle un seul pays ?",
+          "choix": [
+            "Oui",
+            "Non, elle comprend plusieurs États",
+            "Oui, mais uniquement en saison sèche"
+          ],
+          "rep": "Non, elle comprend plusieurs États",
+          "expl": "C’est un ensemble régional composé de plusieurs États."
+        }
+      ],
+      "id": "REV-GE-4E-11"
+    },
+    {
+      "axe": "Des espaces transformés par la mondialisation",
+      "titre": "Produire et échanger en Afrique de l’Ouest",
+      "emoji": "🌱",
+      "en_une_phrase": "Les activités de l’Afrique de l’Ouest associent des échanges locaux, régionaux et mondiaux.",
+      "comprendre": "Un produit agricole peut être consommé près de son lieu de production ou vendu plus loin. En Afrique de l’Ouest, des productions circulent à plusieurs échelles. Les prix, les infrastructures et les conditions de travail influencent les bénéfices retirés de ces échanges.",
+      "essentiel": [
+        "Les activités agricoles et commerciales sont diverses.",
+        "Certains produits sont destinés à l’exportation.",
+        "Les retombées des échanges sont inégalement réparties."
+      ],
+      "image_mentale": "Imagine un produit agricole suivant plusieurs routes depuis son lieu de culture.",
+      "regle_ou_methode": "Choisis une production, suis son trajet et repère les acteurs qui interviennent.",
+      "exemples": [
+        "Le cacao est cultivé notamment en Côte d’Ivoire. Il est collecté puis acheminé vers un port. Il peut être exporté pour être transformé ailleurs.",
+        "Des denrées alimentaires circulent aussi sur des marchés locaux et régionaux."
+      ],
+      "piege": "Exporter une matière première ne signifie pas que tous les habitants en retirent les mêmes bénéfices.",
+      "astuce_memoire": "Du champ au marché : plusieurs lieux et acteurs.",
+      "quiz": [
+        {
+          "q": "Quel produit est cultivé notamment en Côte d’Ivoire ?",
+          "choix": [
+            "Le cacao",
+            "Le seigle comme principale culture d’exportation",
+            "L’orge comme principale culture d’exportation"
+          ],
+          "rep": "Le cacao",
+          "expl": "La Côte d’Ivoire est un important pays producteur de cacao."
+        },
+        {
+          "q": "Un produit vendu sur un marché voisin relève de quelle échelle ?",
+          "choix": [
+            "Nationale",
+            "Locale",
+            "Continentale"
+          ],
+          "rep": "Locale",
+          "expl": "Le marché proche correspond à une échelle locale."
+        },
+        {
+          "q": "Une exportation profite-t-elle nécessairement de façon égale à tous ?",
+          "choix": [
+            "Oui, toujours",
+            "Oui, quelle que soit la répartition des revenus",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Les bénéfices peuvent être répartis très inégalement."
+        }
+      ],
+      "id": "REV-GE-4E-12"
+    }
+  ]
+}

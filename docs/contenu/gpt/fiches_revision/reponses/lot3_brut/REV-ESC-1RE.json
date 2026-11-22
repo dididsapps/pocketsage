@@ -1,0 +1,2845 @@
+{
+  "classe": "1RE",
+  "niveau_appli": "Lycée",
+  "age": "16-17 ans",
+  "matiere": "Enseignement scientifique",
+  "code": "ESC",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Une longue histoire de la matière",
+      "titre": "Origine des éléments",
+      "emoji": "🌟",
+      "en_une_phrase": "Les noyaux de nombreux éléments chimiques se forment lors de réactions nucléaires dans les étoiles et lors d’événements stellaires.",
+      "comprendre": "Tu connais des objets faits de matériaux différents, comme le fer et le carbone. Leurs atomes ont des noyaux différents, apparus au cours de l’histoire de l’Univers. Des réactions de fusion dans les étoiles forment des noyaux plus lourds à partir de noyaux plus légers.",
+      "essentiel": [
+        "Les premiers noyaux légers se forment peu après le Big Bang.",
+        "Les étoiles fabriquent de nombreux noyaux plus lourds.",
+        "Une réaction nucléaire transforme des noyaux, contrairement à une réaction chimique.",
+        "Hydrogène et hélium dominent la matière ordinaire de l’Univers."
+      ],
+      "image_mentale": "Imagine des briques légères assemblées au cœur d’une étoile.",
+      "regle_ou_methode": "Repère les noyaux initiaux et les noyaux produits, puis distingue transformation nucléaire et chimique.",
+      "exemples": [
+        "Dans le Soleil, des noyaux d’hydrogène participent à une suite de réactions. Le bilan produit notamment un noyau d’hélium et libère de l’énergie : les noyaux ont été transformés.",
+        "La combustion du carbone dans le dioxygène réarrange des atomes : c’est une transformation chimique."
+      ],
+      "piege": "Les étoiles ne fabriquent pas les éléments par une simple réaction chimique.",
+      "astuce_memoire": "Nucléaire : le noyau change.",
+      "quiz": [
+        {
+          "q": "Quelle transformation modifie les noyaux atomiques ?",
+          "choix": [
+            "Une dissolution dans l’eau",
+            "Une réaction nucléaire",
+            "Une transformation chimique ordinaire"
+          ],
+          "rep": "Une réaction nucléaire",
+          "expl": "Une réaction nucléaire modifie des noyaux."
+        },
+        {
+          "q": "Quels éléments dominent la matière ordinaire de l’Univers ?",
+          "choix": [
+            "Le fer et le silicium",
+            "Le carbone et l’oxygène",
+            "L’hydrogène et l’hélium"
+          ],
+          "rep": "L’hydrogène et l’hélium",
+          "expl": "L’hydrogène et l’hélium sont les plus abondants dans l’Univers."
+        },
+        {
+          "q": "Quelle différence existe entre fusion nucléaire et combustion chimique ?",
+          "choix": [
+            "La fusion transforme des noyaux ; la combustion réarrange des atomes",
+            "La fusion ne concerne que les électrons",
+            "La combustion transforme toujours les noyaux"
+          ],
+          "rep": "La fusion transforme des noyaux ; la combustion réarrange des atomes",
+          "expl": "Les deux transformations agissent à des échelles différentes."
+        }
+      ],
+      "id": "REV-ESC-1RE-01"
+    },
+    {
+      "axe": "Une longue histoire de la matière",
+      "titre": "Éléments et isotopes",
+      "emoji": "⚛️",
+      "en_une_phrase": "Les isotopes d’un élément possèdent le même nombre de protons mais des nombres de neutrons différents.",
+      "comprendre": "Deux boîtes peuvent avoir la même étiquette et des contenus différents. De même, deux isotopes sont associés au même élément chimique parce qu’ils ont autant de protons. Leurs nombres de neutrons diffèrent.",
+      "essentiel": [
+        "Le numéro atomique Z est le nombre de protons.",
+        "Le nombre de masse A est le nombre de nucléons : protons et neutrons.",
+        "Le nombre de neutrons vaut A moins Z.",
+        "Certains isotopes sont radioactifs."
+      ],
+      "image_mentale": "Imagine deux noyaux avec les mêmes billes rouges et des billes bleues différentes.",
+      "regle_ou_methode": "Lis Z et A, puis calcule le nombre de neutrons : A − Z.",
+      "exemples": [
+        "Pour le carbone 14, Z vaut 6 et A vaut 14. Il possède donc 6 protons et 14 − 6 = 8 neutrons.",
+        "Le carbone 12 possède 6 protons et 12 − 6 = 6 neutrons : c’est un autre isotope du carbone."
+      ],
+      "piege": "Deux isotopes d’un même élément ne diffèrent pas par leur nombre de protons.",
+      "astuce_memoire": "Même Z, neutrons différents.",
+      "quiz": [
+        {
+          "q": "Combien de neutrons contient un noyau de carbone 14, de numéro atomique 6 ?",
+          "choix": [
+            "6",
+            "14",
+            "8"
+          ],
+          "rep": "8",
+          "expl": "Le nombre de neutrons vaut 14 − 6 = 8."
+        },
+        {
+          "q": "Quel nombre est identique pour deux isotopes du carbone ?",
+          "choix": [
+            "Le nombre de protons",
+            "Le nombre de neutrons",
+            "Le nombre de nucléons"
+          ],
+          "rep": "Le nombre de protons",
+          "expl": "Les isotopes d’un élément ont le même nombre de protons."
+        },
+        {
+          "q": "Un atome possède 8 protons et 10 neutrons : quel est son nombre de masse ?",
+          "choix": [
+            "8",
+            "18",
+            "10"
+          ],
+          "rep": "18",
+          "expl": "Le nombre de masse additionne protons et neutrons : 18."
+        }
+      ],
+      "id": "REV-ESC-1RE-02"
+    },
+    {
+      "axe": "Une longue histoire de la matière",
+      "titre": "Radioactivité et demi-vie",
+      "emoji": "⏳",
+      "en_une_phrase": "La demi-vie est la durée au bout de laquelle la moitié des noyaux radioactifs initiaux se sont désintégrés en moyenne.",
+      "comprendre": "Tu peux imaginer une grande population qui diminue au fil du temps. Un noyau radioactif se transforme spontanément à une date imprévisible. Sur une grande population, la proportion restante après chaque demi-vie est approximativement divisée par deux.",
+      "essentiel": [
+        "La désintégration d’un noyau individuel est aléatoire.",
+        "La demi-vie caractérise un isotope radioactif.",
+        "Après deux demi-vies, environ un quart des noyaux initiaux subsiste.",
+        "Le comportement global est prévisible statistiquement sur une grande population."
+      ],
+      "image_mentale": "Imagine une grande collection divisée par deux à chaque étape.",
+      "regle_ou_methode": "Pour chaque demi-vie écoulée, divise par deux l’effectif moyen restant.",
+      "exemples": [
+        "Une population contient initialement 800 000 noyaux radioactifs. Après une demi-vie, il en reste environ 400 000 ; après deux demi-vies, environ 200 000.",
+        "Après trois demi-vies, la fraction moyenne restante vaut 1/8, soit 12,5 %."
+      ],
+      "piege": "La demi-vie ne permet pas de prévoir la date de désintégration d’un noyau particulier.",
+      "astuce_memoire": "Une demi-vie : moitié ; deux : quart.",
+      "quiz": [
+        {
+          "q": "Quelle fraction subsiste en moyenne après deux demi-vies ?",
+          "choix": [
+            "Un quart",
+            "Une moitié",
+            "Un huitième"
+          ],
+          "rep": "Un quart",
+          "expl": "La moitié de la moitié vaut un quart."
+        },
+        {
+          "q": "Peut-on prévoir exactement quand un noyau isolé se désintègre ?",
+          "choix": [
+            "Oui, exactement après une demi-vie",
+            "Non, sa désintégration est aléatoire",
+            "Oui, toujours après deux demi-vies"
+          ],
+          "rep": "Non, sa désintégration est aléatoire",
+          "expl": "La date de désintégration individuelle est aléatoire."
+        },
+        {
+          "q": "Si une grande population compte initialement 1 200 000 noyaux, combien en reste-t-il environ après trois demi-vies ?",
+          "choix": [
+            "300 000",
+            "600 000",
+            "150 000"
+          ],
+          "rep": "150 000",
+          "expl": "On divise trois fois par deux : 1 200 000 / 8 = 150 000."
+        }
+      ],
+      "id": "REV-ESC-1RE-03"
+    },
+    {
+      "axe": "Une longue histoire de la matière",
+      "titre": "Organisation cristalline",
+      "emoji": "💎",
+      "en_une_phrase": "Un cristal présente une organisation régulière et répétée de ses constituants dans l’espace.",
+      "comprendre": "Un carrelage répète un même motif sur une surface. Dans un cristal, un motif appelé maille se répète en trois dimensions. L’organisation et la nature des entités expliquent certaines propriétés du solide.",
+      "essentiel": [
+        "Un cristal possède une structure ordonnée à l’échelle microscopique.",
+        "La maille est un motif qui se répète dans l’espace.",
+        "Un solide amorphe ne présente pas cet ordre périodique à longue distance.",
+        "Le chlorure de sodium solide est un cristal ionique."
+      ],
+      "image_mentale": "Imagine un carrelage qui se répète aussi en profondeur.",
+      "regle_ou_methode": "Identifie les constituants et cherche si un motif se répète régulièrement.",
+      "exemples": [
+        "Dans un modèle de sel solide, repère les ions sodium et chlorure. Leur arrangement régulier se répète dans les trois directions : c’est une structure cristalline.",
+        "Le verre ordinaire est un solide amorphe, sans répétition périodique à longue distance."
+      ],
+      "piege": "Cristallin ne signifie pas forcément transparent ou précieux.",
+      "astuce_memoire": "Une maille répétée dans trois directions.",
+      "quiz": [
+        {
+          "q": "Que répète un cristal dans l’espace ?",
+          "choix": [
+            "Une cellule vivante",
+            "Une maille",
+            "Un seul noyau radioactif"
+          ],
+          "rep": "Une maille",
+          "expl": "La maille décrit un motif de la structure cristalline."
+        },
+        {
+          "q": "Quelle structure caractérise le verre ordinaire ?",
+          "choix": [
+            "Une maille périodique à grande distance",
+            "Une structure nécessairement vivante",
+            "Une structure amorphe"
+          ],
+          "rep": "Une structure amorphe",
+          "expl": "Le verre ordinaire est un solide amorphe."
+        },
+        {
+          "q": "Le sel solide peut-il être cristallin sans être une pierre précieuse ?",
+          "choix": [
+            "Oui, la cristallinité concerne son organisation",
+            "Non, seuls les diamants sont des cristaux",
+            "Non, seuls les liquides cristallisent"
+          ],
+          "rep": "Oui, la cristallinité concerne son organisation",
+          "expl": "La cristallinité désigne une organisation régulière, indépendamment de la valeur du solide."
+        }
+      ],
+      "id": "REV-ESC-1RE-04"
+    },
+    {
+      "axe": "Une longue histoire de la matière",
+      "titre": "Refroidissement et cristaux",
+      "emoji": "🪨",
+      "en_une_phrase": "Les conditions de refroidissement influencent la taille des cristaux formés dans une roche.",
+      "comprendre": "Quand une matière fondue refroidit, ses constituants peuvent s’organiser. Un refroidissement lent laisse généralement davantage de temps à la croissance des cristaux. Un refroidissement très rapide peut former du verre et de petits cristaux.",
+      "essentiel": [
+        "Le granite présente notamment des cristaux visibles.",
+        "Un refroidissement lent favorise généralement la croissance de cristaux.",
+        "Un refroidissement très rapide peut produire une structure amorphe.",
+        "Une roche peut réunir plusieurs minéraux."
+      ],
+      "image_mentale": "Imagine une pâte qui se fige lentement ou très vite.",
+      "regle_ou_methode": "Observe les cristaux, puis relie leur taille aux conditions de refroidissement.",
+      "exemples": [
+        "Une roche présente de grands cristaux visibles. Leur croissance indique un refroidissement généralement lent, laissant du temps à leur formation.",
+        "Une lave refroidie très rapidement peut contenir du verre, dépourvu d’organisation cristalline à longue distance."
+      ],
+      "piege": "Une roche n’est pas nécessairement constituée d’un seul minéral.",
+      "astuce_memoire": "Temps long : cristaux souvent plus gros.",
+      "quiz": [
+        {
+          "q": "Quel refroidissement favorise généralement de gros cristaux ?",
+          "choix": [
+            "Un refroidissement instantané",
+            "L’absence totale de refroidissement",
+            "Un refroidissement lent"
+          ],
+          "rep": "Un refroidissement lent",
+          "expl": "Une cristallisation lente laisse plus de temps à leur croissance."
+        },
+        {
+          "q": "Que peut produire un refroidissement très rapide ?",
+          "choix": [
+            "Du verre et de petits cristaux",
+            "Uniquement de gros cristaux",
+            "Une transformation systématique en gaz"
+          ],
+          "rep": "Du verre et de petits cristaux",
+          "expl": "Le refroidissement rapide peut empêcher une organisation cristalline complète."
+        },
+        {
+          "q": "Une roche est-elle toujours formée d’un seul minéral ?",
+          "choix": [
+            "Oui, par définition",
+            "Non, elle peut en contenir plusieurs",
+            "Oui, sauf si elle est liquide"
+          ],
+          "rep": "Non, elle peut en contenir plusieurs",
+          "expl": "Une roche peut associer plusieurs minéraux."
+        }
+      ],
+      "id": "REV-ESC-1RE-05"
+    },
+    {
+      "axe": "Une longue histoire de la matière",
+      "titre": "La cellule vivante",
+      "emoji": "🔬",
+      "en_une_phrase": "La cellule est une unité du vivant séparée de son environnement par une membrane.",
+      "comprendre": "Tu connais les organismes comme les animaux et les plantes. L’observation au microscope a révélé qu’ils sont constitués de cellules. Chacune échange de la matière avec son environnement et utilise de l’énergie pour fonctionner.",
+      "essentiel": [
+        "La théorie cellulaire s’est construite grâce aux observations microscopiques.",
+        "La membrane plasmique délimite la cellule et régule des échanges.",
+        "Une cellule est un milieu aqueux où se déroulent des réactions.",
+        "Un organisme peut être constitué d’une seule cellule ou de nombreuses cellules."
+      ],
+      "image_mentale": "Imagine une petite pièce avec une porte contrôlant les échanges.",
+      "regle_ou_methode": "Repère la cellule, sa membrane puis les échanges nécessaires à son fonctionnement.",
+      "exemples": [
+        "Une cellule reçoit du dioxygène et des nutriments depuis son environnement. Sa membrane permet des échanges, et la cellule utilise ces ressources pour fonctionner.",
+        "Une levure est un organisme constitué d’une cellule ; une plante possède de nombreuses cellules."
+      ],
+      "piege": "La membrane n’est pas une paroi totalement imperméable.",
+      "astuce_memoire": "Cellule : limite, échanges, énergie.",
+      "quiz": [
+        {
+          "q": "Quel outil a contribué à la découverte des cellules ?",
+          "choix": [
+            "Le microscope",
+            "Le thermomètre uniquement",
+            "La balance uniquement"
+          ],
+          "rep": "Le microscope",
+          "expl": "Le microscope permet d’observer des structures invisibles à l’œil nu."
+        },
+        {
+          "q": "Quel rôle joue la membrane plasmique ?",
+          "choix": [
+            "Elle interdit absolument tout échange",
+            "Elle délimite la cellule et régule des échanges",
+            "Elle fabrique toujours de la lumière"
+          ],
+          "rep": "Elle délimite la cellule et régule des échanges",
+          "expl": "La membrane sépare deux milieux tout en permettant certains échanges."
+        },
+        {
+          "q": "Une levure unicellulaire est-elle un organisme ?",
+          "choix": [
+            "Non, un organisme doit avoir des millions de cellules",
+            "Non, seule une cellule végétale est vivante",
+            "Oui, un organisme peut être formé d’une cellule"
+          ],
+          "rep": "Oui, un organisme peut être formé d’une cellule",
+          "expl": "Un organisme unicellulaire est constitué d’une cellule vivante."
+        }
+      ],
+      "id": "REV-ESC-1RE-06"
+    },
+    {
+      "axe": "Une longue histoire de la matière",
+      "titre": "Masse et énergie",
+      "emoji": "⚛️",
+      "en_une_phrase": "Une différence de masse peut correspondre à une énergie libérée lors d’une réaction nucléaire.",
+      "comprendre": "Tu sais que les étoiles émettent de l’énergie. Lors de certaines réactions nucléaires, la somme des masses au repos des produits peut être inférieure à celle des réactifs. La relation E = mc² relie cette différence de masse à l’énergie correspondante.",
+      "essentiel": [
+        "E est une énergie exprimée en joules.",
+        "m est une masse exprimée en kilogrammes.",
+        "c est la vitesse de la lumière dans le vide, environ 3,0 × 10⁸ m/s.",
+        "La différence de masse au repos correspond à l’énergie libérée."
+      ],
+      "image_mentale": "Imagine une balance dont la petite différence de masse correspond à une grande énergie.",
+      "regle_ou_methode": "Multiplie la différence de masse par le carré de la vitesse de la lumière.",
+      "exemples": [
+        "Si la différence de masse vaut 1,0 × 10⁻⁹ kg, calcule c² = 9,0 × 10¹⁶. L’énergie correspondante est 9,0 × 10⁷ J.",
+        "Pour une différence de masse deux fois plus grande, l’énergie correspondante est deux fois plus grande."
+      ],
+      "piege": "Il faut convertir la masse en kilogrammes avant le calcul.",
+      "astuce_memoire": "E égale m fois c au carré.",
+      "quiz": [
+        {
+          "q": "Quelle grandeur représente m dans E = mc² ?",
+          "choix": [
+            "Une distance en mètres",
+            "Une masse en kilogrammes",
+            "Une température en kelvins"
+          ],
+          "rep": "Une masse en kilogrammes",
+          "expl": "m représente une masse."
+        },
+        {
+          "q": "Que vaut approximativement c² ?",
+          "choix": [
+            "3,0 × 10⁸ m²/s²",
+            "9,0 × 10⁸ m²/s²",
+            "9,0 × 10¹⁶ m²/s²"
+          ],
+          "rep": "9,0 × 10¹⁶ m²/s²",
+          "expl": "Le carré de 3,0 × 10⁸ vaut 9,0 × 10¹⁶."
+        },
+        {
+          "q": "Si la différence de masse double, que devient l’énergie correspondante ?",
+          "choix": [
+            "Elle double",
+            "Elle est divisée par deux",
+            "Elle reste inchangée"
+          ],
+          "rep": "Elle double",
+          "expl": "E est proportionnelle à m."
+        }
+      ],
+      "id": "REV-ESC-1RE-07"
+    },
+    {
+      "axe": "Une longue histoire de la matière",
+      "titre": "Membrane et phospholipides",
+      "emoji": "🧫",
+      "en_une_phrase": "La membrane cellulaire comporte une bicouche de molécules dont les extrémités interagissent différemment avec l’eau.",
+      "comprendre": "Tu sais qu’une cellule échange avec son milieu. Sa membrane forme une limite souple et sélective. Les phospholipides s’organisent en deux couches car leurs têtes interagissent avec l’eau et leurs queues l’évitent.",
+      "essentiel": [
+        "Une bicouche comprend deux rangées de phospholipides.",
+        "Les têtes hydrophiles sont orientées vers les milieux aqueux.",
+        "Les queues hydrophobes se trouvent à l’intérieur de la bicouche.",
+        "Des protéines participent notamment aux échanges."
+      ],
+      "image_mentale": "Imagine deux rangées de têtes tournées vers l’eau et de queues face à face.",
+      "regle_ou_methode": "Situe l’eau des deux côtés puis place les têtes vers elle et les queues à l’intérieur.",
+      "exemples": [
+        "Pour dessiner la membrane, place d’abord l’eau à l’extérieur et dans la cellule. Oriente les têtes hydrophiles vers ces milieux puis les queues hydrophobes les unes vers les autres.",
+        "Certaines protéines membranaires facilitent le passage de substances."
+      ],
+      "piege": "La membrane n’est pas une simple enveloppe rigide et imperméable à tout.",
+      "astuce_memoire": "Têtes vers l’eau ; queues au centre.",
+      "quiz": [
+        {
+          "q": "Que signifie hydrophile ici ?",
+          "choix": [
+            "Qui évite toujours l’eau",
+            "Qui détruit l’eau",
+            "Qui interagit favorablement avec l’eau"
+          ],
+          "rep": "Qui interagit favorablement avec l’eau",
+          "expl": "Les têtes hydrophiles interagissent avec l’eau."
+        },
+        {
+          "q": "Où se situent les queues hydrophobes ?",
+          "choix": [
+            "À l’intérieur de la bicouche",
+            "Toutes vers le milieu aqueux extérieur",
+            "Uniquement dans le noyau"
+          ],
+          "rep": "À l’intérieur de la bicouche",
+          "expl": "Elles sont regroupées dans la partie interne."
+        },
+        {
+          "q": "La membrane interdit-elle tous les échanges ?",
+          "choix": [
+            "Oui, sans exception",
+            "Non",
+            "Oui, à la lumière seulement"
+          ],
+          "rep": "Non",
+          "expl": "Des échanges sélectifs traversent la membrane."
+        }
+      ],
+      "id": "REV-ESC-1RE-08"
+    },
+    {
+      "axe": "Le Soleil, notre source d’énergie",
+      "titre": "Rayonnement solaire",
+      "emoji": "☀️",
+      "en_une_phrase": "Le Soleil émet un rayonnement dont les propriétés dépendent de la température de sa surface.",
+      "comprendre": "Tu sens la chaleur d’un objet chaud sans forcément le toucher. Comme tout corps matériel, le Soleil émet un rayonnement électromagnétique. Dans le modèle du corps noir, une surface plus chaude émet davantage par unité de surface et son maximum se déplace vers les courtes longueurs d’onde.",
+      "essentiel": [
+        "Le Soleil libère de l’énergie par des réactions nucléaires.",
+        "La température du modèle de corps noir est exprimée en kelvins.",
+        "La loi de Wien relie température et longueur d’onde du maximum.",
+        "La puissance surfacique rayonnée augmente avec la température."
+      ],
+      "image_mentale": "Imagine deux courbes lumineuses : celle de l’objet plus chaud monte et son sommet se décale.",
+      "regle_ou_methode": "Compare les températures en kelvins, puis applique le sens de variation de la loi de Wien.",
+      "exemples": [
+        "Deux corps noirs ont des températures de 3 000 K et 6 000 K. Le second est deux fois plus chaud en kelvins ; sa longueur d’onde au maximum est deux fois plus petite selon la loi de Wien.",
+        "Une surface plus chaude émet une puissance plus grande par unité de surface dans ce modèle."
+      ],
+      "piege": "Ne compare pas des rapports de températures en degrés Celsius pour appliquer directement la loi de Wien.",
+      "astuce_memoire": "Plus chaud : maximum vers les courtes longueurs d’onde.",
+      "quiz": [
+        {
+          "q": "Dans le modèle du corps noir, si la température absolue double, que devient la longueur d’onde du maximum ?",
+          "choix": [
+            "Elle est divisée par deux",
+            "Elle double",
+            "Elle reste nécessairement constante"
+          ],
+          "rep": "Elle est divisée par deux",
+          "expl": "La loi de Wien relie inversement température absolue et longueur d’onde du maximum."
+        },
+        {
+          "q": "Quelle unité utilise-t-on pour la température dans la loi de Wien ?",
+          "choix": [
+            "Le degré Celsius dans un rapport direct",
+            "Le kelvin",
+            "Le watt"
+          ],
+          "rep": "Le kelvin",
+          "expl": "La température absolue s’exprime en kelvins."
+        },
+        {
+          "q": "D’où provient principalement l’énergie libérée au cœur du Soleil ?",
+          "choix": [
+            "D’une combustion chimique à l’air libre",
+            "De la réflexion de la lumière terrestre",
+            "De réactions de fusion nucléaire"
+          ],
+          "rep": "De réactions de fusion nucléaire",
+          "expl": "Les réactions de fusion au cœur solaire libèrent de l’énergie."
+        }
+      ],
+      "id": "REV-ESC-1RE-09"
+    },
+    {
+      "axe": "Le Soleil, notre source d’énergie",
+      "titre": "Saisons et ensoleillement",
+      "emoji": "🌍",
+      "en_une_phrase": "La puissance solaire reçue par unité de surface varie avec l’angle d’incidence des rayons.",
+      "comprendre": "Une lampe éclaire une petite zone lorsqu’elle vise droit et une zone plus grande lorsqu’elle est inclinée. La même énergie répartie sur une plus grande surface chauffe moins chaque mètre carré. Sur Terre, l’inclinaison de l’axe et la révolution expliquent notamment les saisons.",
+      "essentiel": [
+        "Une incidence plus oblique répartit l’énergie sur une plus grande surface.",
+        "L’ensoleillement varie avec la latitude et la saison.",
+        "Les saisons résultent notamment de l’inclinaison de l’axe de la Terre.",
+        "Les saisons sont opposées dans les deux hémisphères."
+      ],
+      "image_mentale": "Imagine le faisceau d’une lampe sur une feuille inclinée.",
+      "regle_ou_methode": "Compare la surface éclairée par une même puissance et calcule la puissance par unité de surface.",
+      "exemples": [
+        "Un faisceau apporte 120 W à une surface de 2 m² : cela fait 60 W/m². S’il éclaire 4 m² avec la même puissance, cela fait 30 W/m² : l’énergie est plus étalée.",
+        "Quand c’est l’été dans l’hémisphère Nord, c’est l’hiver dans l’hémisphère Sud."
+      ],
+      "piege": "Les saisons ne s’expliquent pas principalement par la distance Terre-Soleil.",
+      "astuce_memoire": "Faisceau oblique : surface plus grande.",
+      "quiz": [
+        {
+          "q": "Une puissance de 120 W répartie sur 4 m² correspond à combien par mètre carré ?",
+          "choix": [
+            "60 W/m²",
+            "30 W/m²",
+            "480 W/m²"
+          ],
+          "rep": "30 W/m²",
+          "expl": "On divise 120 W par 4 m²."
+        },
+        {
+          "q": "Quelle cause explique principalement les saisons ?",
+          "choix": [
+            "Les variations quotidiennes de la distance Terre-Lune",
+            "L’alternance entre continents et océans",
+            "L’inclinaison de l’axe terrestre pendant la révolution"
+          ],
+          "rep": "L’inclinaison de l’axe terrestre pendant la révolution",
+          "expl": "L’inclinaison modifie notamment la hauteur du Soleil et la durée du jour."
+        },
+        {
+          "q": "À puissance identique, quel éclairage concentre le plus de puissance par mètre carré ?",
+          "choix": [
+            "Celui réparti sur la plus petite surface",
+            "Celui réparti sur la plus grande surface",
+            "Les deux donnent nécessairement la même valeur"
+          ],
+          "rep": "Celui réparti sur la plus petite surface",
+          "expl": "La puissance surfacique augmente quand la surface éclairée diminue."
+        }
+      ],
+      "id": "REV-ESC-1RE-10"
+    },
+    {
+      "axe": "Le Soleil, notre source d’énergie",
+      "titre": "Albédo et effet de serre",
+      "emoji": "🌡️",
+      "en_une_phrase": "La température terrestre dépend notamment de l’albédo et de l’effet de serre.",
+      "comprendre": "Une surface claire renvoie généralement davantage de lumière qu’une surface sombre. À l’échelle terrestre, l’albédo mesure la fraction du rayonnement solaire renvoyée vers l’espace. L’atmosphère absorbe aussi une partie du rayonnement infrarouge émis par la surface et en réémet une partie vers elle.",
+      "essentiel": [
+        "L’albédo est une fraction comprise entre 0 et 1.",
+        "Une partie du rayonnement solaire est absorbée par le système terrestre.",
+        "L’effet de serre implique l’absorption et l’émission d’infrarouge par l’atmosphère.",
+        "À l’équilibre radiatif global, les puissances moyennes entrante et sortante sont égales."
+      ],
+      "image_mentale": "Imagine des flèches solaires réfléchies et des flèches infrarouges émises dans les deux sens.",
+      "regle_ou_methode": "Calcule la part réfléchie à partir de l’albédo, puis distingue rayonnement solaire et infrarouge terrestre.",
+      "exemples": [
+        "Pour une puissance solaire incidente de 100 W et un albédo de 0,30, 30 W sont renvoyés vers l’espace. Les 70 W restants sont absorbés par le système considéré.",
+        "Une surface sombre absorbe souvent plus de rayonnement solaire qu’une surface claire dans les mêmes conditions."
+      ],
+      "piege": "L’effet de serre naturel est distinct du renforcement lié à l’augmentation de certains gaz dans l’atmosphère.",
+      "astuce_memoire": "Albédo : part renvoyée ; effet de serre : infrarouge.",
+      "quiz": [
+        {
+          "q": "Un albédo de 0,30 correspond à quelle part renvoyée ?",
+          "choix": [
+            "3 %",
+            "70 %",
+            "30 %"
+          ],
+          "rep": "30 %",
+          "expl": "0,30 correspond à 30 %. "
+        },
+        {
+          "q": "Quel rayonnement terrestre intervient dans l’effet de serre ?",
+          "choix": [
+            "Le rayonnement infrarouge émis par la surface",
+            "Seulement les ondes sonores",
+            "Uniquement la lumière visible réfléchie"
+          ],
+          "rep": "Le rayonnement infrarouge émis par la surface",
+          "expl": "L’atmosphère absorbe et réémet notamment de l’infrarouge."
+        },
+        {
+          "q": "À l’équilibre radiatif global, que compare-t-on ?",
+          "choix": [
+            "Uniquement la température à midi",
+            "Les puissances moyennes entrante et sortante",
+            "La masse de l’air et celle de l’océan"
+          ],
+          "rep": "Les puissances moyennes entrante et sortante",
+          "expl": "L’équilibre global correspond à des puissances moyennes égales."
+        }
+      ],
+      "id": "REV-ESC-1RE-11"
+    },
+    {
+      "axe": "Le Soleil, notre source d’énergie",
+      "titre": "Photosynthèse",
+      "emoji": "🌱",
+      "en_une_phrase": "La photosynthèse transforme une partie de l’énergie lumineuse en énergie chimique stockée dans la matière organique.",
+      "comprendre": "Une plante reçoit de la lumière et prélève de l’eau et du dioxyde de carbone. Grâce à la photosynthèse, elle produit de la matière organique et libère du dioxygène. Cette matière et son énergie alimentent de nombreux réseaux alimentaires.",
+      "essentiel": [
+        "La photosynthèse utilise notamment lumière, eau et dioxyde de carbone.",
+        "Elle produit de la matière organique et du dioxygène.",
+        "L’énergie lumineuse est convertie en énergie chimique.",
+        "La respiration cellulaire libère de l’énergie utilisable à partir de matière organique."
+      ],
+      "image_mentale": "Imagine une feuille recevant lumière, eau et dioxyde de carbone, puis produisant du sucre.",
+      "regle_ou_methode": "Identifie les entrées, les produits et la conversion d’énergie.",
+      "exemples": [
+        "Une plante reçoit de la lumière, de l’eau et du dioxyde de carbone. Elle synthétise notamment des sucres et libère du dioxygène : l’énergie lumineuse est stockée sous forme chimique.",
+        "Un animal consomme des végétaux ou d’autres animaux : il obtient ainsi de la matière organique."
+      ],
+      "piege": "La plante respire aussi : photosynthèse et respiration sont des processus différents.",
+      "astuce_memoire": "Lumière et matière minérale : matière organique.",
+      "quiz": [
+        {
+          "q": "Quel gaz est consommé lors de la photosynthèse ?",
+          "choix": [
+            "Le dioxyde de carbone",
+            "Le dioxygène comme seul apport carboné",
+            "Le diazote comme apport carboné direct"
+          ],
+          "rep": "Le dioxyde de carbone",
+          "expl": "Le dioxyde de carbone fournit le carbone de la matière organique synthétisée."
+        },
+        {
+          "q": "Sous quelle forme une partie de l’énergie lumineuse est-elle stockée ?",
+          "choix": [
+            "En énergie sonore",
+            "En énergie chimique dans la matière organique",
+            "En énergie lumineuse sans transformation"
+          ],
+          "rep": "En énergie chimique dans la matière organique",
+          "expl": "La photosynthèse permet un stockage chimique."
+        },
+        {
+          "q": "Une plante effectue-t-elle aussi la respiration cellulaire ?",
+          "choix": [
+            "Non, jamais",
+            "Uniquement lorsqu’elle n’a aucune cellule",
+            "Oui"
+          ],
+          "rep": "Oui",
+          "expl": "La respiration et la photosynthèse sont deux processus distincts."
+        }
+      ],
+      "id": "REV-ESC-1RE-12"
+    },
+    {
+      "axe": "Le Soleil, notre source d’énergie",
+      "titre": "Énergie et alimentation",
+      "emoji": "🍽️",
+      "en_une_phrase": "Le corps reçoit de l’énergie par l’alimentation et la dépense pour fonctionner.",
+      "comprendre": "Comme un appareil qui a besoin d’une source d’énergie, ton organisme utilise de l’énergie pour ses activités et son fonctionnement. Les aliments apportent de la matière et de l’énergie chimique. Le bilan dépend des apports et des dépenses sur une durée donnée.",
+      "essentiel": [
+        "L’énergie des aliments s’exprime notamment en kilojoules.",
+        "Les dépenses incluent le fonctionnement de l’organisme et les activités.",
+        "Les besoins varient selon les personnes et les situations.",
+        "L’équilibre alimentaire concerne aussi la diversité des apports."
+      ],
+      "image_mentale": "Imagine une balance comparant les apports et les dépenses sur une journée.",
+      "regle_ou_methode": "Additionne les apports, compare-les aux dépenses de la même durée et interprète avec prudence.",
+      "exemples": [
+        "Une journée fictive apporte 8 500 kJ et les dépenses sont de 8 000 kJ. La différence est de 500 kJ : les apports dépassent ici les dépenses sur cette journée.",
+        "Une activité physique supplémentaire augmente une partie de la dépense énergétique."
+      ],
+      "piege": "Ne tire pas de conclusion sur la santé d’une personne à partir d’une seule journée ou d’un seul chiffre.",
+      "astuce_memoire": "Même durée : apports et dépenses.",
+      "quiz": [
+        {
+          "q": "Une journée apporte 8 500 kJ et les dépenses sont de 8 000 kJ : quelle est la différence ?",
+          "choix": [
+            "500 kJ en faveur des dépenses",
+            "500 kJ en faveur des apports",
+            "1 500 kJ en faveur des apports"
+          ],
+          "rep": "500 kJ en faveur des apports",
+          "expl": "8 500 − 8 000 = 500 kJ."
+        },
+        {
+          "q": "Que comprend la dépense énergétique ?",
+          "choix": [
+            "Uniquement les activités sportives",
+            "Uniquement la digestion",
+            "Le fonctionnement de l’organisme et les activités"
+          ],
+          "rep": "Le fonctionnement de l’organisme et les activités",
+          "expl": "L’organisme dépense de l’énergie même au repos."
+        },
+        {
+          "q": "Une seule journée suffit-elle à juger toute la santé d’une personne ?",
+          "choix": [
+            "Non, le contexte et la durée comptent",
+            "Oui, si les apports dépassent les dépenses",
+            "Oui, si les repas sont identiques"
+          ],
+          "rep": "Non, le contexte et la durée comptent",
+          "expl": "Un bilan isolé ne décrit pas à lui seul la santé."
+        }
+      ],
+      "id": "REV-ESC-1RE-13"
+    },
+    {
+      "axe": "Le Soleil, notre source d’énergie",
+      "titre": "Sources d’énergie",
+      "emoji": "🌬️",
+      "en_une_phrase": "Les combustibles fossiles proviennent d’une matière organique ancienne et se renouvellent trop lentement à l’échelle humaine.",
+      "comprendre": "La matière organique peut conserver de l’énergie chimique issue, pour l’essentiel, de photosynthèses anciennes. Une partie a été transformée au cours de temps géologiques en charbon, pétrole ou gaz naturel. D’autres sources se renouvellent à une échelle compatible avec leur utilisation, selon les conditions.",
+      "essentiel": [
+        "Charbon, pétrole et gaz naturel sont des combustibles fossiles.",
+        "Leur formation demande des durées géologiques.",
+        "Le vent et le rayonnement solaire sont des flux renouvelables à l’échelle humaine.",
+        "Brûler un combustible fossile émet notamment du dioxyde de carbone."
+      ],
+      "image_mentale": "Imagine une réserve souterraine très lente à se former et un flux solaire quotidien.",
+      "regle_ou_methode": "Compare durée de formation et rythme d’utilisation, puis examine les effets de la source.",
+      "exemples": [
+        "Le charbon se forme à partir de matière organique transformée pendant des durées géologiques. Comme nous l’exploitons bien plus vite qu’il ne se forme, c’est une ressource non renouvelable à l’échelle humaine.",
+        "Le vent constitue une source renouvelable mais une installation éolienne nécessite des matériaux et de l’entretien."
+      ],
+      "piege": "Renouvelable ne signifie pas absence totale d’impact environnemental.",
+      "astuce_memoire": "Fossile : stock lent ; solaire et vent : flux.",
+      "quiz": [
+        {
+          "q": "Pourquoi le charbon est-il non renouvelable à l’échelle humaine ?",
+          "choix": [
+            "Il ne peut jamais brûler",
+            "Il provient directement du vent actuel",
+            "Il se forme beaucoup plus lentement qu’il est exploité"
+          ],
+          "rep": "Il se forme beaucoup plus lentement qu’il est exploité",
+          "expl": "Sa formation prend des temps géologiques."
+        },
+        {
+          "q": "Quelle source est renouvelable à l’échelle humaine ?",
+          "choix": [
+            "Le vent",
+            "Le charbon",
+            "Le pétrole"
+          ],
+          "rep": "Le vent",
+          "expl": "Le vent est un flux renouvelé par les phénomènes atmosphériques."
+        },
+        {
+          "q": "Une source renouvelable est-elle nécessairement sans aucun impact ?",
+          "choix": [
+            "Oui, par définition",
+            "Non, il faut aussi examiner les installations",
+            "Oui, si elle produit de l’électricité"
+          ],
+          "rep": "Non, il faut aussi examiner les installations",
+          "expl": "Les équipements et leur cycle de vie peuvent avoir des impacts."
+        }
+      ],
+      "id": "REV-ESC-1RE-14"
+    },
+    {
+      "axe": "Le Soleil, notre source d’énergie",
+      "titre": "Distance et puissance reçue",
+      "emoji": "☀️",
+      "en_une_phrase": "La puissance solaire reçue par unité de surface diminue lorsque la distance au Soleil augmente.",
+      "comprendre": "Une lampe éclaire plus faiblement une surface éloignée. Pour une source assimilée à un point qui rayonne dans toutes les directions, l’énergie se répartit sur des sphères centrées sur la source. L’aire de ces sphères augmente comme le carré de la distance.",
+      "essentiel": [
+        "L’aire d’une sphère vaut 4πr².",
+        "Pour une surface perpendiculaire aux rayons et une source isotrope, la puissance surfacique varie comme 1/r².",
+        "Une distance doublée donne une puissance surfacique divisée par quatre."
+      ],
+      "image_mentale": "Imagine la même lumière répartie sur des sphères de plus en plus grandes.",
+      "regle_ou_methode": "Compare les distances, élève leur rapport au carré puis prends son inverse.",
+      "exemples": [
+        "À une distance r, une surface reçoit 1 000 W/m². À 2r, la sphère est quatre fois plus grande : la puissance surfacique vaut 1 000 ÷ 4 = 250 W/m².",
+        "À 3r, la puissance surfacique serait divisée par 9, toutes choses égales par ailleurs."
+      ],
+      "piege": "Doubler la distance ne divise pas la puissance surfacique par deux.",
+      "astuce_memoire": "Distance fois deux, puissance divisée par quatre.",
+      "quiz": [
+        {
+          "q": "Si la distance double, par combien la puissance surfacique est-elle divisée ?",
+          "choix": [
+            "Quatre",
+            "Deux",
+            "Huit"
+          ],
+          "rep": "Quatre",
+          "expl": "La puissance varie comme l’inverse du carré de la distance."
+        },
+        {
+          "q": "Que vaut l’aire d’une sphère de rayon r ?",
+          "choix": [
+            "2πr",
+            "4πr²",
+            "πr²"
+          ],
+          "rep": "4πr²",
+          "expl": "L’aire de la sphère vaut 4πr²."
+        },
+        {
+          "q": "À trois fois la distance, quelle fraction reste-t-il ?",
+          "choix": [
+            "Un tiers",
+            "Un vingt-septième",
+            "Un neuvième"
+          ],
+          "rep": "Un neuvième",
+          "expl": "Le carré de trois vaut neuf."
+        }
+      ],
+      "id": "REV-ESC-1RE-15"
+    },
+    {
+      "axe": "La Terre, un astre singulier",
+      "titre": "Mesurer la Terre",
+      "emoji": "🌍",
+      "en_une_phrase": "La longueur du méridien terrestre peut être estimée par une mesure d’angle et de distance.",
+      "comprendre": "Un ballon paraît plat quand tu en observes une toute petite portion. De même, le sol semble plat localement, mais diverses observations montrent la courbure de la Terre. Sur une sphère, la longueur d’un arc est proportionnelle à son angle au centre.",
+      "essentiel": [
+        "La Terre est approximativement sphérique et légèrement aplatie aux pôles.",
+        "Une éclipse de Lune révèle une ombre terrestre circulaire.",
+        "Pour un même méridien, un angle de 360° correspond à un tour complet.",
+        "Le rayon s’obtient en divisant la longueur du méridien par 2π."
+      ],
+      "image_mentale": "Imagine un cercle et une petite tranche dont l’angle est connu.",
+      "regle_ou_methode": "Calcule la fraction de tour : angle ÷ 360. Divise la longueur de l’arc par cette fraction, puis divise par 2π pour obtenir le rayon.",
+      "exemples": [
+        "Si deux villes sur un même méridien sont séparées de 800 km pour un angle au centre de 7,2°, alors 7,2 ÷ 360 = 0,02. Le tour vaut 800 ÷ 0,02 = 40 000 km ; le rayon est environ 40 000 ÷ 2π, soit 6 366 km.",
+        "Un arc représentant 1/10 de tour et mesurant 4 000 km correspond à un méridien de 40 000 km."
+      ],
+      "piege": "Ne divise pas la distance par l’angle en degrés sans tenir compte des 360° du tour.",
+      "astuce_memoire": "Angle sur 360 : même fraction du tour.",
+      "quiz": [
+        {
+          "q": "Si 10° correspondent à 1 100 km sur un méridien, combien vaut le tour estimé ?",
+          "choix": [
+            "11 000 km",
+            "39 600 km",
+            "36 000 km"
+          ],
+          "rep": "39 600 km",
+          "expl": "Le tour est 1 100 × 360 ÷ 10 = 39 600 km."
+        },
+        {
+          "q": "Quelle relation relie la circonférence C au rayon R ?",
+          "choix": [
+            "C = πR²",
+            "C = R ÷ 2π",
+            "C = 2πR"
+          ],
+          "rep": "C = 2πR",
+          "expl": "La circonférence d’un cercle vaut 2π fois son rayon."
+        },
+        {
+          "q": "Pourquoi le sol peut-il sembler plat localement ?",
+          "choix": [
+            "La portion observée est petite devant le rayon terrestre",
+            "La Terre est un disque",
+            "La courbure n’existe qu’aux pôles"
+          ],
+          "rep": "La portion observée est petite devant le rayon terrestre",
+          "expl": "Sur une petite portion d’une grande sphère, la courbure est peu perceptible."
+        }
+      ],
+      "id": "REV-ESC-1RE-16"
+    },
+    {
+      "axe": "La Terre, un astre singulier",
+      "titre": "Se repérer sur une sphère",
+      "emoji": "🧭",
+      "en_une_phrase": "Latitude et longitude situent un point sur la Terre, tandis qu’un grand cercle donne les trajets les plus courts sur une sphère.",
+      "comprendre": "Sur une carte, deux nombres permettent de situer un lieu. La latitude le repère par rapport à l’équateur et la longitude par rapport au méridien de référence. Une carte plane déforme les distances : sur une sphère, le plus court trajet suit un arc de grand cercle.",
+      "essentiel": [
+        "La latitude est mesurée au nord ou au sud de l’équateur.",
+        "La longitude est mesurée à l’est ou à l’ouest du méridien de référence.",
+        "Un grand cercle a le même centre que la sphère.",
+        "La triangulation relie une distance mesurée à des angles pour déduire d’autres distances."
+      ],
+      "image_mentale": "Imagine un globe quadrillé de parallèles et de méridiens.",
+      "regle_ou_methode": "Identifie latitude puis longitude ; pour comparer des trajets, considère le globe plutôt que la seule carte plane.",
+      "exemples": [
+        "Un lieu situé à 30° N et 20° E est au nord de l’équateur et à l’est du méridien de référence. On lit d’abord la latitude, puis la longitude.",
+        "L’équateur est un grand cercle : le plus court chemin de deux points non opposés de l’équateur suit le petit arc équatorial qui les relie."
+      ],
+      "piege": "Une ligne droite sur une carte plane ne représente pas toujours le plus court chemin sur le globe.",
+      "astuce_memoire": "Latitude : nord-sud ; longitude : est-ouest.",
+      "quiz": [
+        {
+          "q": "Que signifie 40° S ?",
+          "choix": [
+            "Une longitude de 40 degrés à l’ouest",
+            "Une altitude de 40 mètres",
+            "Une latitude de 40 degrés au sud de l’équateur"
+          ],
+          "rep": "Une latitude de 40 degrés au sud de l’équateur",
+          "expl": "S indique une latitude sud."
+        },
+        {
+          "q": "Sur une sphère, quel trajet minimise la distance entre deux points non opposés ?",
+          "choix": [
+            "Le plus petit arc du grand cercle qui les relie",
+            "Un arc suivant toujours leur parallèle",
+            "Une ligne droite tracée sur n’importe quelle carte plane"
+          ],
+          "rep": "Le plus petit arc du grand cercle qui les relie",
+          "expl": "La géométrie sphérique donne le petit arc de grand cercle."
+        },
+        {
+          "q": "Que combine la triangulation ?",
+          "choix": [
+            "La seule couleur du sol",
+            "Une base mesurée et des angles",
+            "La température et la masse des roches"
+          ],
+          "rep": "Une base mesurée et des angles",
+          "expl": "Une distance de référence et des angles permettent de calculer d’autres longueurs."
+        }
+      ],
+      "id": "REV-ESC-1RE-17"
+    },
+    {
+      "axe": "La Terre, un astre singulier",
+      "titre": "L’âge de la Terre",
+      "emoji": "⏳",
+      "en_une_phrase": "La datation radiométrique et plusieurs indices conduisent à un âge terrestre d’environ 4,57 milliards d’années.",
+      "comprendre": "Pour dater un objet ancien, tu peux comparer plusieurs indices. Les scientifiques ont confronté des arguments issus des roches, des fossiles et du refroidissement terrestre. La radioactivité a ensuite fourni un outil de datation fondé sur la transformation de certains noyaux.",
+      "essentiel": [
+        "La Terre a environ 4,57 milliards d’années.",
+        "Des éléments radioactifs se transforment à des rythmes caractérisables.",
+        "Les météorites anciennes apportent des indices sur la formation du Système solaire.",
+        "Une estimation scientifique est examinée à la lumière des méthodes et de leurs limites."
+      ],
+      "image_mentale": "Imagine une frise très longue graduée en milliards d’années.",
+      "regle_ou_methode": "Identifie la méthode, les données observées et ce qu’elles permettent de dater.",
+      "exemples": [
+        "Une météorite ancienne est datée grâce à des isotopes radioactifs. En comparant de nombreux résultats à d’autres indices, on estime l’âge de formation de la Terre à environ 4,57 milliards d’années.",
+        "Une estimation ancienne fondée sur le seul refroidissement peut être révisée lorsque de nouvelles sources de chaleur sont prises en compte."
+      ],
+      "piege": "Une roche particulière ne s’est pas nécessairement formée en même temps que la Terre.",
+      "astuce_memoire": "Plusieurs indices convergent vers 4,57 milliards.",
+      "quiz": [
+        {
+          "q": "Quel est l’ordre de grandeur de l’âge terrestre ?",
+          "choix": [
+            "Quelques milliards d’années",
+            "Quelques milliers d’années",
+            "Quelques millions d’années"
+          ],
+          "rep": "Quelques milliards d’années",
+          "expl": "L’estimation est d’environ 4,57 milliards d’années."
+        },
+        {
+          "q": "Quel phénomène permet une datation radiométrique ?",
+          "choix": [
+            "Le changement quotidien de météo",
+            "La transformation de noyaux radioactifs",
+            "La rotation de la Terre en 24 heures"
+          ],
+          "rep": "La transformation de noyaux radioactifs",
+          "expl": "On exploite la transformation de certains noyaux."
+        },
+        {
+          "q": "Pourquoi comparer plusieurs méthodes ?",
+          "choix": [
+            "Pour rendre les calculs inutiles",
+            "Pour supposer que tous les échantillons ont le même âge",
+            "Pour confronter les résultats et leurs limites"
+          ],
+          "rep": "Pour confronter les résultats et leurs limites",
+          "expl": "Des indices indépendants renforcent ou questionnent une estimation."
+        }
+      ],
+      "id": "REV-ESC-1RE-18"
+    },
+    {
+      "axe": "La Terre, un astre singulier",
+      "titre": "Terre, Soleil et Lune",
+      "emoji": "🌙",
+      "en_une_phrase": "Le modèle héliocentrique décrit la révolution terrestre et les phases de la Lune résultent de sa position.",
+      "comprendre": "Le Soleil semble traverser le ciel quand tu l’observes depuis la Terre. Ce mouvement apparent ne suffit pas à décrire le mouvement réel des astres dans tous les référentiels. La Terre tourne autour du Soleil et la Lune autour de la Terre ; la portion éclairée de la Lune visible depuis la Terre change.",
+      "essentiel": [
+        "Dans le modèle héliocentrique, les planètes tournent autour du Soleil.",
+        "Les phases lunaires dépendent des positions relatives du Soleil, de la Terre et de la Lune.",
+        "La Lune tourne sur elle-même et présente approximativement la même face à la Terre.",
+        "Les phases ordinaires ne sont pas dues à l’ombre de la Terre."
+      ],
+      "image_mentale": "Imagine une lampe, une balle éclairée à moitié et un observateur qui tourne autour de la balle.",
+      "regle_ou_methode": "Repère la moitié éclairée par le Soleil puis la portion de cette moitié visible depuis la Terre.",
+      "exemples": [
+        "À la pleine Lune, le Soleil et la Lune sont approximativement dans des directions opposées vus de la Terre. La face lunaire tournée vers nous est alors presque entièrement éclairée.",
+        "À la nouvelle Lune, la face éclairée est principalement tournée à l’opposé de la Terre : la Lune est difficile à voir."
+      ],
+      "piege": "Une phase lunaire n’est pas une éclipse : celle-ci nécessite un alignement particulier.",
+      "astuce_memoire": "La moitié éclairée reste ; la portion visible change.",
+      "quiz": [
+        {
+          "q": "Dans le modèle héliocentrique, autour de quoi la Terre tourne-t-elle ?",
+          "choix": [
+            "De la Lune",
+            "Du Soleil",
+            "De l’étoile Polaire"
+          ],
+          "rep": "Du Soleil",
+          "expl": "La Terre décrit une orbite autour du Soleil."
+        },
+        {
+          "q": "Quelle est la cause principale des phases lunaires ?",
+          "choix": [
+            "L’ombre terrestre recouvre la Lune chaque semaine",
+            "La Lune s’éteint puis se rallume",
+            "La portion éclairée visible change selon les positions relatives"
+          ],
+          "rep": "La portion éclairée visible change selon les positions relatives",
+          "expl": "La géométrie Soleil-Terre-Lune change au cours du mouvement lunaire."
+        },
+        {
+          "q": "Pourquoi la Lune présente-t-elle à peu près la même face à la Terre ?",
+          "choix": [
+            "Sa rotation sur elle-même a la même période que sa révolution autour de la Terre",
+            "Elle ne tourne jamais sur elle-même",
+            "Le Soleil éclaire toujours la même face lunaire"
+          ],
+          "rep": "Sa rotation sur elle-même a la même période que sa révolution autour de la Terre",
+          "expl": "Les deux périodes sont synchronisées."
+        }
+      ],
+      "id": "REV-ESC-1RE-19"
+    },
+    {
+      "axe": "La Terre, un astre singulier",
+      "titre": "L’eau sur Terre",
+      "emoji": "💧",
+      "en_une_phrase": "L’eau douce utilisable est une fraction limitée et inégalement répartie de l’eau terrestre.",
+      "comprendre": "Quand tu ouvres un robinet, l’eau disponible provient d’une ressource qu’il faut capter et protéger. La majeure partie de l’eau terrestre est salée et une partie de l’eau douce est difficile d’accès. La présence d’eau liquide dépend notamment des conditions de température et de pression.",
+      "essentiel": [
+        "La majorité de l’eau terrestre est salée.",
+        "Une partie de l’eau douce est stockée dans les glaces ou sous terre.",
+        "L’eau douce n’est pas nécessairement potable sans traitement.",
+        "Les ressources varient selon les lieux et les saisons."
+      ],
+      "image_mentale": "Imagine un grand réservoir d’eau salée et de petits réservoirs d’eau douce inégalement accessibles.",
+      "regle_ou_methode": "Distingue eau totale, eau douce et eau potable avant de comparer les volumes.",
+      "exemples": [
+        "Dans un réservoir fictif de 100 litres dont 3 litres sont doux, l’eau douce représente 3 ÷ 100 = 3 %. Cela ne signifie pas que ces 3 litres sont tous potables.",
+        "Une eau de rivière peut être douce tout en contenant des agents polluants ; un traitement peut être nécessaire."
+      ],
+      "piege": "Ne confonds pas eau douce et eau immédiatement potable.",
+      "astuce_memoire": "Douce ne veut pas dire potable.",
+      "quiz": [
+        {
+          "q": "Quelle proportion d’eau douce représente 4 litres sur 200 litres ?",
+          "choix": [
+            "4 %",
+            "20 %",
+            "2 %"
+          ],
+          "rep": "2 %",
+          "expl": "4 ÷ 200 × 100 = 2 %."
+        },
+        {
+          "q": "Une eau douce est-elle forcément potable ?",
+          "choix": [
+            "Non, sa qualité doit être contrôlée",
+            "Oui, si elle est transparente",
+            "Oui, si elle vient d’une rivière"
+          ],
+          "rep": "Non, sa qualité doit être contrôlée",
+          "expl": "Une eau douce peut contenir des polluants ou des microbes."
+        },
+        {
+          "q": "Où se trouve une partie importante de l’eau douce ?",
+          "choix": [
+            "Uniquement dans les océans",
+            "Dans les glaces et les réserves souterraines",
+            "Uniquement dans les nuages"
+          ],
+          "rep": "Dans les glaces et les réserves souterraines",
+          "expl": "Les glaces et les eaux souterraines sont de grands réservoirs."
+        }
+      ],
+      "id": "REV-ESC-1RE-20"
+    },
+    {
+      "axe": "Son, musique et audition",
+      "titre": "Fréquence et timbre",
+      "emoji": "🎵",
+      "en_une_phrase": "La fréquence fondamentale détermine la hauteur d’un son périodique et ses harmoniques contribuent à son timbre.",
+      "comprendre": "Deux instruments peuvent jouer la même note tout en ayant des sons différents. La hauteur dépend de la fréquence fondamentale, tandis que les autres composantes du spectre contribuent au timbre. Un son pur correspond à un signal sinusoïdal.",
+      "essentiel": [
+        "La fréquence se mesure en hertz, notés Hz.",
+        "La fréquence fondamentale donne la hauteur d’un son périodique.",
+        "Les harmoniques ont des fréquences multiples entières de la fondamentale.",
+        "Le timbre dépend notamment de la composition en harmoniques."
+      ],
+      "image_mentale": "Imagine un pic principal et d’autres pics sur un graphique des fréquences.",
+      "regle_ou_methode": "Repère la fondamentale sur le spectre ; compare ensuite les harmoniques et leurs amplitudes.",
+      "exemples": [
+        "Un son a pour fondamentale 200 Hz. Ses harmoniques peuvent être à 400 Hz et 600 Hz : 400 = 2 × 200 et 600 = 3 × 200. Deux instruments jouant cette fondamentale peuvent avoir des amplitudes harmoniques différentes.",
+        "Un signal sinusoïdal de fréquence 440 Hz correspond à un son pur de 440 Hz."
+      ],
+      "piege": "Ne confonds pas hauteur et intensité : un son aigu n’est pas forcément fort.",
+      "astuce_memoire": "Fondamentale : hauteur ; harmoniques : timbre.",
+      "quiz": [
+        {
+          "q": "Quelle est la fréquence du troisième harmonique d’un son de fondamentale 150 Hz ?",
+          "choix": [
+            "450 Hz",
+            "300 Hz",
+            "50 Hz"
+          ],
+          "rep": "450 Hz",
+          "expl": "Le troisième harmonique vaut 3 × 150 = 450 Hz."
+        },
+        {
+          "q": "Quel élément distingue notamment deux timbres de même hauteur ?",
+          "choix": [
+            "La fréquence fondamentale uniquement",
+            "Les amplitudes de leurs harmoniques",
+            "La couleur de l’instrument"
+          ],
+          "rep": "Les amplitudes de leurs harmoniques",
+          "expl": "Le contenu spectral contribue au timbre."
+        },
+        {
+          "q": "Quelle fréquence correspond au son le plus aigu ?",
+          "choix": [
+            "440 Hz",
+            "220 Hz",
+            "880 Hz"
+          ],
+          "rep": "880 Hz",
+          "expl": "Une fréquence fondamentale plus élevée correspond à une hauteur plus aiguë."
+        }
+      ],
+      "id": "REV-ESC-1RE-21"
+    },
+    {
+      "axe": "Son, musique et audition",
+      "titre": "Octaves et cordes",
+      "emoji": "🎸",
+      "en_une_phrase": "Deux notes séparées d’une octave ont des fréquences fondamentales dans un rapport de deux.",
+      "comprendre": "Sur un instrument, jouer une note plus aiguë change la fréquence de vibration. Une octave correspond à un doublement de cette fréquence. Pour une corde donnée, sa longueur, sa tension et sa masse par unité de longueur influencent la fréquence.",
+      "essentiel": [
+        "Une octave vers l’aigu multiplie la fréquence par deux.",
+        "Une octave vers le grave la divise par deux.",
+        "À tension et masse linéique fixées, raccourcir une corde augmente sa fréquence fondamentale.",
+        "Une gamme organise des notes sur une octave."
+      ],
+      "image_mentale": "Imagine une corde raccourcie et une échelle dont chaque octave double la fréquence.",
+      "regle_ou_methode": "Divise la fréquence aiguë par la fréquence grave : un rapport de 2 indique une octave.",
+      "exemples": [
+        "Deux notes ont des fréquences de 220 Hz et 440 Hz. Le rapport 440 ÷ 220 = 2 : elles sont séparées d’une octave.",
+        "Une note à 600 Hz descend d’une octave vers 300 Hz."
+      ],
+      "piege": "Une octave correspond à un rapport de fréquences, pas à une différence fixe en hertz.",
+      "astuce_memoire": "Octave aiguë : fréquence doublée.",
+      "quiz": [
+        {
+          "q": "Quelle fréquence est une octave au-dessus de 300 Hz ?",
+          "choix": [
+            "330 Hz",
+            "600 Hz",
+            "900 Hz"
+          ],
+          "rep": "600 Hz",
+          "expl": "Une octave supérieure double la fréquence."
+        },
+        {
+          "q": "À tension constante, que produit une corde plus courte ?",
+          "choix": [
+            "Une fréquence nécessairement plus basse",
+            "Une fréquence inchangée quelle que soit sa longueur",
+            "Une fréquence fondamentale plus élevée"
+          ],
+          "rep": "Une fréquence fondamentale plus élevée",
+          "expl": "Une corde plus courte vibre à une fréquence plus élevée, toutes choses égales par ailleurs."
+        },
+        {
+          "q": "Quel rapport caractérise une octave entre fréquence aiguë et grave ?",
+          "choix": [
+            "2",
+            "1,5",
+            "3"
+          ],
+          "rep": "2",
+          "expl": "La fréquence aiguë vaut deux fois la fréquence grave."
+        }
+      ],
+      "id": "REV-ESC-1RE-22"
+    },
+    {
+      "axe": "Son, musique et audition",
+      "titre": "Niveau sonore",
+      "emoji": "📢",
+      "en_une_phrase": "Le niveau sonore en décibels suit une échelle logarithmique, non une simple échelle proportionnelle.",
+      "comprendre": "Un son transporte de l’énergie. Son intensité est une puissance par unité de surface ; son niveau en décibels utilise une échelle logarithmique. Une augmentation de 10 dB correspond à une intensité multipliée par dix.",
+      "essentiel": [
+        "L’intensité sonore se mesure en watts par mètre carré.",
+        "Le niveau sonore se mesure en décibels, notés dB.",
+        "Dix fois plus d’intensité correspond à 10 dB supplémentaires.",
+        "Le risque auditif dépend du niveau et de la durée d’exposition."
+      ],
+      "image_mentale": "Imagine une échelle où chaque marche de 10 dB multiplie l’intensité par dix.",
+      "regle_ou_methode": "Compare les niveaux en dB puis utilise le facteur 10 pour chaque écart de 10 dB.",
+      "exemples": [
+        "Un son passe de 60 dB à 70 dB. L’écart est de 10 dB : son intensité physique est multipliée par 10, et non augmentée de seulement 10 %.",
+        "De 50 dB à 70 dB, il y a deux écarts de 10 dB : l’intensité est multipliée par 100."
+      ],
+      "piege": "Les décibels ne s’additionnent pas comme des intensités ordinaires.",
+      "astuce_memoire": "Plus 10 dB : intensité fois 10.",
+      "quiz": [
+        {
+          "q": "Une augmentation de 10 dB correspond à quelle variation d’intensité ?",
+          "choix": [
+            "Une addition de 10 W/m² dans tous les cas",
+            "Une division par 10",
+            "Une multiplication par 10"
+          ],
+          "rep": "Une multiplication par 10",
+          "expl": "L’échelle des décibels est logarithmique."
+        },
+        {
+          "q": "Quel est le rapport d’intensité entre 50 dB et 70 dB ?",
+          "choix": [
+            "100",
+            "20",
+            "2"
+          ],
+          "rep": "100",
+          "expl": "Deux augmentations de 10 dB multiplient chacune par dix."
+        },
+        {
+          "q": "Quel couple de facteurs influence le risque auditif ?",
+          "choix": [
+            "La couleur de la source et son nom",
+            "Le niveau sonore et la durée d’exposition",
+            "La seule forme de la pièce"
+          ],
+          "rep": "Le niveau sonore et la durée d’exposition",
+          "expl": "Niveau et durée jouent tous deux un rôle."
+        }
+      ],
+      "id": "REV-ESC-1RE-23"
+    },
+    {
+      "axe": "Son, musique et audition",
+      "titre": "Numériser un son",
+      "emoji": "💾",
+      "en_une_phrase": "La numérisation transforme un signal sonore continu en valeurs échantillonnées et quantifiées.",
+      "comprendre": "Un microphone fournit un signal qui varie continuellement au cours du temps. Pour l’enregistrer sous forme numérique, on prélève des valeurs à intervalles réguliers puis on les arrondit à des niveaux codables. Une représentation plus précise utilise généralement plus de données.",
+      "essentiel": [
+        "La fréquence d’échantillonnage indique le nombre de mesures par seconde.",
+        "La quantification associe chaque mesure à un niveau disponible.",
+        "Le nombre de bits par échantillon détermine le nombre de niveaux codables.",
+        "À paramètres égaux, un enregistrement plus long occupe davantage de place."
+      ],
+      "image_mentale": "Imagine une courbe continue remplacée par des points régulièrement espacés et arrondis.",
+      "regle_ou_methode": "Pour un signal non compressé, multiplie fréquence d’échantillonnage, durée, nombre de bits et nombre de canaux.",
+      "exemples": [
+        "Un son mono dure 2 s, à 1 000 échantillons par seconde et 8 bits par échantillon. Il comporte 2 × 1 000 × 8 = 16 000 bits, soit 2 000 octets de données audio, hors en-tête.",
+        "Avec 8 bits, on dispose de 2 puissance 8, soit 256 niveaux de quantification."
+      ],
+      "piege": "Ne confonds pas fréquence du son et fréquence d’échantillonnage.",
+      "astuce_memoire": "Échantillonner : quand ; quantifier : quelle valeur.",
+      "quiz": [
+        {
+          "q": "Combien de niveaux peut-on coder sur 3 bits ?",
+          "choix": [
+            "8",
+            "6",
+            "9"
+          ],
+          "rep": "8",
+          "expl": "Trois bits permettent 2 × 2 × 2 = 8 combinaisons."
+        },
+        {
+          "q": "Que mesure la fréquence d’échantillonnage ?",
+          "choix": [
+            "Le nombre de notes dans une gamme",
+            "Le nombre de mesures du signal par seconde",
+            "Le volume de l’enceinte en litres"
+          ],
+          "rep": "Le nombre de mesures du signal par seconde",
+          "expl": "Elle compte les échantillons prélevés par seconde."
+        },
+        {
+          "q": "À paramètres identiques, que devient la taille brute si la durée double ?",
+          "choix": [
+            "Elle est divisée par deux",
+            "Elle ne change pas",
+            "Elle double"
+          ],
+          "rep": "Elle double",
+          "expl": "Le nombre d’échantillons est proportionnel à la durée."
+        }
+      ],
+      "id": "REV-ESC-1RE-24"
+    },
+    {
+      "axe": "Son, musique et audition",
+      "titre": "Compression audio",
+      "emoji": "🗜️",
+      "en_une_phrase": "La compression réduit la taille d’un fichier sonore, avec ou sans perte d’information selon la méthode.",
+      "comprendre": "Un fichier plus petit prend moins de place et circule plus facilement. Certaines méthodes réduisent la taille tout en permettant de retrouver exactement les données initiales ; d’autres éliminent une partie de l’information. Le choix dépend notamment de l’usage et de la qualité recherchée.",
+      "essentiel": [
+        "La compression réduit le volume de données stockées ou transmises.",
+        "Une compression sans perte permet de retrouver exactement les données initiales.",
+        "Une compression avec perte supprime des informations.",
+        "Les formats compressés ont des qualités et des tailles différentes."
+      ],
+      "image_mentale": "Imagine une valise rangée plus efficacement ou une valise allégée de certains objets.",
+      "regle_ou_methode": "Compare les tailles avant et après compression, puis calcule la réduction en proportion de la taille initiale.",
+      "exemples": [
+        "Un fichier passe de 10 Mo à 4 Mo. La réduction est de 10 − 4 = 6 Mo ; elle représente 6 ÷ 10 = 60 % de la taille initiale.",
+        "Un fichier compressé sans perte peut être décompressé pour retrouver les données initiales."
+      ],
+      "piege": "Ne confonds pas le pourcentage restant avec le pourcentage de réduction.",
+      "astuce_memoire": "Réduction : taille perdue divisée par taille initiale.",
+      "quiz": [
+        {
+          "q": "Un fichier passe de 8 Mo à 6 Mo. Quelle est la réduction ?",
+          "choix": [
+            "75 %",
+            "25 %",
+            "2 %"
+          ],
+          "rep": "25 %",
+          "expl": "La réduction vaut 2 ÷ 8 = 0,25, soit 25 %."
+        },
+        {
+          "q": "Que permet une compression sans perte ?",
+          "choix": [
+            "Supprimer définitivement des parties du signal",
+            "Garantir une taille nulle",
+            "Retrouver exactement les données initiales"
+          ],
+          "rep": "Retrouver exactement les données initiales",
+          "expl": "La décompression restitue les données initiales."
+        },
+        {
+          "q": "Un fichier réduit à 40 % de sa taille initiale a subi quelle réduction ?",
+          "choix": [
+            "60 %",
+            "40 %",
+            "140 %"
+          ],
+          "rep": "60 %",
+          "expl": "La part supprimée est 100 % − 40 % = 60 %."
+        }
+      ],
+      "id": "REV-ESC-1RE-25"
+    },
+    {
+      "axe": "Son, musique et audition",
+      "titre": "Entendre et protéger",
+      "emoji": "👂",
+      "en_une_phrase": "L’oreille transforme les vibrations en messages nerveux ; une exposition sonore excessive peut l’endommager.",
+      "comprendre": "Quand un son arrive à ton oreille, ses vibrations mettent en mouvement le tympan. Elles sont transmises jusqu’à l’oreille interne où des cellules ciliées participent à leur conversion en messages nerveux. Des sons trop intenses ou écoutés trop longtemps peuvent altérer durablement ces cellules.",
+      "essentiel": [
+        "L’oreille externe dirige les sons vers le tympan.",
+        "L’oreille moyenne transmet les vibrations à l’oreille interne.",
+        "Les cellules ciliées participent à la transformation en messages nerveux.",
+        "Réduire le volume et la durée limite l’exposition."
+      ],
+      "image_mentale": "Imagine un trajet : pavillon, tympan, oreille interne, nerf, cerveau.",
+      "regle_ou_methode": "Suis le trajet du signal puis repère comment diminuer le niveau ou la durée d’exposition.",
+      "exemples": [
+        "Lors d’un concert bruyant, éloigne-toi des enceintes et utilise des protections adaptées. En réduisant le niveau reçu, tu diminues l’exposition sonore ; faire des pauses réduit aussi sa durée.",
+        "Baisser le volume d’un casque et limiter le temps d’écoute réduisent l’exposition."
+      ],
+      "piege": "Un son agréable peut être dangereux s’il est trop intense ou trop prolongé.",
+      "astuce_memoire": "Moins fort, moins longtemps, plus loin.",
+      "quiz": [
+        {
+          "q": "Que transmettent les structures de l’oreille moyenne ?",
+          "choix": [
+            "La lumière vers la rétine",
+            "Le sang vers les poumons",
+            "Les vibrations vers l’oreille interne"
+          ],
+          "rep": "Les vibrations vers l’oreille interne",
+          "expl": "Elles transmettent les vibrations captées par le tympan."
+        },
+        {
+          "q": "Quelles cellules peuvent être endommagées par un son trop intense ?",
+          "choix": [
+            "Les cellules ciliées de l’oreille interne",
+            "Les cellules de la peau uniquement",
+            "Les cellules de la rétine uniquement"
+          ],
+          "rep": "Les cellules ciliées de l’oreille interne",
+          "expl": "Ces cellules fragiles contribuent à l’audition."
+        },
+        {
+          "q": "Quelle action réduit généralement l’exposition sonore ?",
+          "choix": [
+            "Augmenter le volume pour mieux distinguer le son",
+            "S’éloigner de la source et réduire la durée",
+            "Rester plus longtemps près de l’enceinte"
+          ],
+          "rep": "S’éloigner de la source et réduire la durée",
+          "expl": "Distance et durée peuvent réduire l’exposition."
+        }
+      ],
+      "id": "REV-ESC-1RE-26"
+    },
+    {
+      "axe": "Projet expérimental et numérique",
+      "titre": "Mesurer et interpréter",
+      "emoji": "🔬",
+      "en_une_phrase": "Un projet expérimental relie une question, des mesures, un traitement numérique et une conclusion critique.",
+      "comprendre": "Tu peux vérifier une idée en observant plutôt qu’en te fiant à une impression. Un protocole précise ce que l’on mesure et les conditions de la mesure. Un tableau ou un graphique aide ensuite à interpréter les résultats et leurs limites.",
+      "essentiel": [
+        "Une hypothèse propose une réponse à tester.",
+        "Un capteur recueille une grandeur mesurable.",
+        "Des mesures répétées permettent d’examiner leur dispersion.",
+        "Un graphique ne remplace pas l’analyse des incertitudes."
+      ],
+      "image_mentale": "Imagine une chaîne : question, capteur, tableau, graphique, conclusion.",
+      "regle_ou_methode": "Définis la question et le protocole ; recueille des données ; représente-les et confronte-les à l’hypothèse.",
+      "exemples": [
+        "Une classe veut savoir si la température diminue quand une boisson refroidit. Elle relève 60 °C, 55 °C puis 51 °C à intervalles identiques : la baisse observée appuie l’hypothèse pour cette expérience.",
+        "Si deux mesures réalisées dans les mêmes conditions diffèrent légèrement, on les répète et on examine les causes possibles de dispersion."
+      ],
+      "piege": "Une expérience unique ne démontre pas à elle seule une loi universelle.",
+      "astuce_memoire": "Question, mesure, traitement, limites.",
+      "quiz": [
+        {
+          "q": "Quel est le rôle d’un capteur ?",
+          "choix": [
+            "Mesurer une grandeur",
+            "Garantir une conclusion exacte",
+            "Remplacer toute hypothèse"
+          ],
+          "rep": "Mesurer une grandeur",
+          "expl": "Le capteur fournit une mesure d’une grandeur."
+        },
+        {
+          "q": "Que suggèrent les mesures 60 °C, 55 °C et 51 °C au fil du temps ?",
+          "choix": [
+            "La température augmente",
+            "La température diminue dans cette expérience",
+            "La température reste constante"
+          ],
+          "rep": "La température diminue dans cette expérience",
+          "expl": "Les trois valeurs décroissent."
+        },
+        {
+          "q": "Pourquoi répéter une mesure ?",
+          "choix": [
+            "Pour supprimer toutes les erreurs à coup sûr",
+            "Pour éviter d’analyser les résultats",
+            "Pour examiner sa variabilité et sa fiabilité"
+          ],
+          "rep": "Pour examiner sa variabilité et sa fiabilité",
+          "expl": "Les répétitions renseignent sur la dispersion des mesures."
+        }
+      ],
+      "id": "REV-ESC-1RE-27"
+    },
+    {
+      "axe": "Automatismes",
+      "titre": "Taux d’évolution",
+      "emoji": "📈",
+      "en_une_phrase": "Un taux d’évolution compare la variation à la valeur initiale.",
+      "comprendre": "Quand le prix d’un objet change, le montant de la variation seul ne dit pas tout. Le rapport à son prix initial permet de comparer des évolutions. Le taux s’écrit en décimal ou en pourcentage. Ce module de mathématiques intégré concerne les élèves qui ne suivent pas la spécialité mathématiques.",
+      "essentiel": [
+        "Le taux vaut (valeur finale − valeur initiale) ÷ valeur initiale, si celle-ci est non nulle.",
+        "Pour passer en pourcentage, multiplie le taux décimal par 100.",
+        "Une hausse de 12 % correspond au coefficient 1,12."
+      ],
+      "image_mentale": "Imagine le prix initial comme une barre de référence de 100 cases.",
+      "regle_ou_methode": "Soustrais la valeur initiale, divise par celle-ci et convertis en pourcentage.",
+      "exemples": [
+        "Un prix passe de 80 € à 92 €. La variation est 92 − 80 = 12 €. Le taux est 12 ÷ 80 = 0,15, soit une hausse de 15 %.",
+        "Pour une baisse de 12 % sur 50 €, le prix final vaut 50 × 0,88 = 44 €."
+      ],
+      "piege": "Ne divise pas par la valeur finale pour calculer le taux de départ à arrivée.",
+      "astuce_memoire": "Variation divisée par départ.",
+      "quiz": [
+        {
+          "q": "Un effectif passe de 40 à 50 : quel est son taux d’évolution ?",
+          "choix": [
+            "+20 %",
+            "+25 %",
+            "+10 %"
+          ],
+          "rep": "+25 %",
+          "expl": "La variation de 10 est divisée par 40 : 0,25."
+        },
+        {
+          "q": "Quel coefficient correspond à une baisse de 8 % ?",
+          "choix": [
+            "0,08",
+            "1,08",
+            "0,92"
+          ],
+          "rep": "0,92",
+          "expl": "On calcule 1 − 0,08 = 0,92."
+        },
+        {
+          "q": "Une valeur initiale de 60 augmente de 10 % : quelle est sa valeur finale ?",
+          "choix": [
+            "66",
+            "70",
+            "54"
+          ],
+          "rep": "66",
+          "expl": "On multiplie 60 par 1,10."
+        }
+      ],
+      "id": "REV-ESC-1RE-28"
+    },
+    {
+      "axe": "Automatismes",
+      "titre": "Évolutions successives",
+      "emoji": "🔄",
+      "en_une_phrase": "Pour enchaîner des taux, multiplie leurs coefficients multiplicateurs.",
+      "comprendre": "Deux changements s’appliquent successivement à des valeurs différentes. Comme pour deux réductions en caisse, on ne peut donc pas additionner les taux en général. Le produit des coefficients donne la transformation globale.",
+      "essentiel": [
+        "Une hausse de t % correspond au coefficient 1 + t/100.",
+        "Une baisse de t % correspond au coefficient 1 − t/100.",
+        "Le coefficient global est le produit des coefficients successifs."
+      ],
+      "image_mentale": "Imagine deux filtres posés l’un après l’autre sur une valeur.",
+      "regle_ou_methode": "Transforme chaque taux en coefficient, multiplie-les puis retranche 1.",
+      "exemples": [
+        "Une valeur de 100 augmente de 20 %, puis baisse de 20 %. Elle devient 100 × 1,20 = 120 puis 120 × 0,80 = 96. Le bilan est donc une baisse de 4 %.",
+        "Deux hausses de 10 % correspondent à 1,10 × 1,10 = 1,21, soit une hausse de 21 %."
+      ],
+      "piege": "Une hausse puis une baisse du même pourcentage ne s’annulent pas en général.",
+      "astuce_memoire": "Coefficients : on multiplie.",
+      "quiz": [
+        {
+          "q": "Une hausse de 10 % suivie d’une autre hausse de 10 % donne :",
+          "choix": [
+            "Une hausse de 20 %",
+            "Une hausse de 22 %",
+            "Une hausse de 21 %"
+          ],
+          "rep": "Une hausse de 21 %",
+          "expl": "Le coefficient global est 1,1 × 1,1 = 1,21."
+        },
+        {
+          "q": "Une hausse de 20 % puis une baisse de 20 % produit quel coefficient ?",
+          "choix": [
+            "0,96",
+            "1",
+            "1,04"
+          ],
+          "rep": "0,96",
+          "expl": "Le produit vaut 1,2 × 0,8 = 0,96."
+        },
+        {
+          "q": "Une baisse de 10 % suivie d’une hausse de 20 % donne quel coefficient ?",
+          "choix": [
+            "1,10",
+            "1,08",
+            "1,12"
+          ],
+          "rep": "1,08",
+          "expl": "On multiplie 0,9 par 1,2."
+        }
+      ],
+      "id": "REV-ESC-1RE-29"
+    },
+    {
+      "axe": "Automatismes",
+      "titre": "Évolution réciproque",
+      "emoji": "↩️",
+      "en_une_phrase": "L’évolution réciproque utilise l’inverse du coefficient initial.",
+      "comprendre": "Pour revenir au prix avant une augmentation, on doit retrouver la valeur de départ. Le pourcentage de retour se calcule sur la nouvelle valeur. Il est donc différent du pourcentage initial en général.",
+      "essentiel": [
+        "Si le coefficient direct est c non nul, le coefficient réciproque est 1/c.",
+        "Le taux réciproque est 1/c − 1.",
+        "Une hausse de 25 % est annulée par une baisse de 20 %."
+      ],
+      "image_mentale": "Imagine un aller en multipliant, puis un retour en divisant.",
+      "regle_ou_methode": "Écris le coefficient direct, inverse-le puis retranche 1 pour obtenir le taux.",
+      "exemples": [
+        "Un prix de 80 € augmente de 25 % et devient 100 €. Pour revenir à 80 €, on multiplie par 80/100 = 0,8. Le taux réciproque est 0,8 − 1 = −0,2, soit −20 %.",
+        "Après une baisse de 50 %, revenir au prix initial nécessite une hausse de 100 %."
+      ],
+      "piege": "Ne change pas simplement le signe du pourcentage initial.",
+      "astuce_memoire": "Retour : coefficient inverse.",
+      "quiz": [
+        {
+          "q": "Quelle baisse annule une hausse de 25 % ?",
+          "choix": [
+            "20 %",
+            "25 %",
+            "30 %"
+          ],
+          "rep": "20 %",
+          "expl": "Le coefficient inverse de 1,25 est 0,8."
+        },
+        {
+          "q": "Quel est le coefficient inverse de 0,5 ?",
+          "choix": [
+            "1,5",
+            "2",
+            "0,5"
+          ],
+          "rep": "2",
+          "expl": "0,5 × 2 = 1."
+        },
+        {
+          "q": "Un prix baisse de 20 % : quel taux permet de revenir au prix initial ?",
+          "choix": [
+            "Une hausse de 20 %",
+            "Une hausse de 40 %",
+            "Une hausse de 25 %"
+          ],
+          "rep": "Une hausse de 25 %",
+          "expl": "Le coefficient inverse de 0,8 est 1,25."
+        }
+      ],
+      "id": "REV-ESC-1RE-30"
+    },
+    {
+      "axe": "Automatismes",
+      "titre": "Produit nul et signe",
+      "emoji": "🧮",
+      "en_une_phrase": "Un produit est nul quand au moins un de ses facteurs est nul.",
+      "comprendre": "Une multiplication donne zéro dès qu’un facteur vaut zéro. La forme factorisée permet donc de résoudre certaines équations sans tout développer. Elle sert aussi à étudier le signe par intervalles.",
+      "essentiel": [
+        "Si ab = 0, alors a = 0 ou b = 0.",
+        "Deux facteurs de même signe ont un produit positif.",
+        "Deux facteurs de signes opposés ont un produit négatif."
+      ],
+      "image_mentale": "Imagine deux interrupteurs : un seul facteur nul éteint le produit.",
+      "regle_ou_methode": "Cherche les valeurs qui annulent chaque facteur puis étudie leur signe.",
+      "exemples": [
+        "Pour résoudre (x − 2)(x + 3) = 0, annule d’abord x − 2 : x = 2. Annule ensuite x + 3 : x = −3. Les solutions sont donc −3 et 2.",
+        "Pour x = 0, (x − 2)(x + 3) vaut −2 × 3 = −6, donc est négatif."
+      ],
+      "piege": "Ne résous pas l’équation en annulant seulement la somme des facteurs.",
+      "astuce_memoire": "Produit nul : un facteur nul.",
+      "quiz": [
+        {
+          "q": "Quelles sont les solutions de (x − 1)(x + 4) = 0 ?",
+          "choix": [
+            "−1 et 4",
+            "1 et −4",
+            "1 et 4"
+          ],
+          "rep": "1 et −4",
+          "expl": "Chaque facteur doit être nul séparément."
+        },
+        {
+          "q": "Quel est le signe de (x − 1)(x + 4) pour x = 0 ?",
+          "choix": [
+            "Positif",
+            "Nul",
+            "Négatif"
+          ],
+          "rep": "Négatif",
+          "expl": "Les facteurs valent −1 et 4."
+        },
+        {
+          "q": "Quel est le produit de deux nombres négatifs ?",
+          "choix": [
+            "Un nombre positif",
+            "Un nombre négatif",
+            "Toujours zéro"
+          ],
+          "rep": "Un nombre positif",
+          "expl": "Deux facteurs négatifs ont un produit positif."
+        }
+      ],
+      "id": "REV-ESC-1RE-31"
+    },
+    {
+      "axe": "Automatismes",
+      "titre": "Lire une droite",
+      "emoji": "📏",
+      "en_une_phrase": "Le coefficient directeur mesure la variation de la hauteur quand l’abscisse augmente d’une unité.",
+      "comprendre": "Sur un graphique, une droite peut monter ou descendre. Son coefficient directeur indique la pente. Son ordonnée à l’origine indique son point de départ sur l’axe vertical.",
+      "essentiel": [
+        "Une droite non verticale peut s’écrire y = ax + b.",
+        "a est le coefficient directeur et b l’ordonnée à l’origine.",
+        "Entre deux points distincts, a = (y₂ − y₁) ÷ (x₂ − x₁)."
+      ],
+      "image_mentale": "Imagine une rampe : sa pente mesure la montée pour un pas horizontal.",
+      "regle_ou_methode": "Lis deux points, calcule variation verticale divisée par variation horizontale.",
+      "exemples": [
+        "Pour les points (1 ; 3) et (3 ; 7), calcule 7 − 3 = 4 puis 3 − 1 = 2. Le coefficient directeur est 4 ÷ 2 = 2.",
+        "La droite y = −3x + 5 coupe l’axe vertical en 5 et descend quand x augmente."
+      ],
+      "piege": "N’inverse pas variation verticale et variation horizontale.",
+      "astuce_memoire": "Pente = variation de y ÷ variation de x.",
+      "quiz": [
+        {
+          "q": "Quel est le coefficient directeur de y = 2x + 5 ?",
+          "choix": [
+            "5",
+            "7",
+            "2"
+          ],
+          "rep": "2",
+          "expl": "Le coefficient de x est 2."
+        },
+        {
+          "q": "Une droite passe par (0 ; 1) et (2 ; 7). Quelle est sa pente ?",
+          "choix": [
+            "3",
+            "2",
+            "6"
+          ],
+          "rep": "3",
+          "expl": "La variation verticale 6 est divisée par la variation horizontale 2."
+        },
+        {
+          "q": "Quel est le sens de variation de y = −3x + 5 ?",
+          "choix": [
+            "Croissante",
+            "Décroissante",
+            "Constante"
+          ],
+          "rep": "Décroissante",
+          "expl": "Son coefficient directeur est négatif."
+        }
+      ],
+      "id": "REV-ESC-1RE-32"
+    },
+    {
+      "axe": "Automatismes",
+      "titre": "Moyenne et médiane",
+      "emoji": "📊",
+      "en_une_phrase": "La moyenne et la médiane résument une série de données de deux façons différentes.",
+      "comprendre": "Pour décrire des temps de trajet, tu peux calculer une valeur moyenne ou chercher celle qui partage la série ordonnée. La moyenne utilise toutes les valeurs. La médiane sépare les observations en deux groupes aussi équilibrés que possible.",
+      "essentiel": [
+        "La moyenne est la somme des valeurs divisée par leur nombre.",
+        "Pour un effectif impair, la médiane est la valeur centrale de la série ordonnée.",
+        "Pour un effectif pair, on prend souvent la moyenne des deux valeurs centrales."
+      ],
+      "image_mentale": "Imagine des valeurs alignées, puis un curseur placé au milieu.",
+      "regle_ou_methode": "Ordonne les données, calcule leur moyenne puis repère leur valeur centrale.",
+      "exemples": [
+        "Pour 4, 6 et 20 minutes, la moyenne vaut (4 + 6 + 20) ÷ 3 = 10. La série est déjà ordonnée et sa valeur centrale est 6 : la médiane vaut 6 minutes.",
+        "Pour 2, 4, 6 et 8, la médiane est (4 + 6) ÷ 2 = 5."
+      ],
+      "piege": "Une valeur extrême peut déplacer fortement la moyenne sans déplacer autant la médiane.",
+      "astuce_memoire": "Moyenne : partager la somme ; médiane : partager la série ordonnée.",
+      "quiz": [
+        {
+          "q": "Quelle est la médiane de 2, 3 et 10 ?",
+          "choix": [
+            "3",
+            "5",
+            "10"
+          ],
+          "rep": "3",
+          "expl": "La valeur centrale de la série ordonnée est 3."
+        },
+        {
+          "q": "Quelle est la moyenne de 4, 6 et 8 ?",
+          "choix": [
+            "5",
+            "6",
+            "8"
+          ],
+          "rep": "6",
+          "expl": "La somme 18 est divisée par 3."
+        },
+        {
+          "q": "Quelle est la médiane de 1, 3, 5 et 9 ?",
+          "choix": [
+            "3",
+            "5",
+            "4"
+          ],
+          "rep": "4",
+          "expl": "On prend la moyenne des deux valeurs centrales : (3 + 5) ÷ 2."
+        }
+      ],
+      "id": "REV-ESC-1RE-33"
+    },
+    {
+      "axe": "Analyse de l'information chiffrée",
+      "titre": "Tableau croisé",
+      "emoji": "📊",
+      "en_une_phrase": "Un tableau croisé répartit un effectif selon deux caractères.",
+      "comprendre": "Une classe peut être décrite par son mode de transport et son activité préférée. Croiser ces informations permet de comparer des groupes. Le total choisi comme référence change la fréquence calculée.",
+      "essentiel": [
+        "Chaque case indique un effectif correspondant aux deux critères.",
+        "Les marges indiquent les totaux par ligne ou colonne.",
+        "Une fréquence est l’effectif étudié divisé par l’effectif de référence."
+      ],
+      "image_mentale": "Imagine un quadrillage avec un critère en ligne et l’autre en colonne.",
+      "regle_ou_methode": "Choisis la case, vérifie le total demandé puis divise.",
+      "exemples": [
+        "Dans un groupe de 40 élèves, 24 viennent à pied ; parmi eux, 6 font du théâtre. Parmi les élèves à pied, la fréquence des élèves de théâtre est 6 ÷ 24 = 0,25, soit 25 %.",
+        "Dans tout le groupe, les 6 élèves à pied qui font du théâtre représentent 6 ÷ 40 = 15 %."
+      ],
+      "piege": "Ne confonds pas « parmi les élèves à pied » et « parmi tous les élèves ».",
+      "astuce_memoire": "Le mot parmi donne souvent le dénominateur.",
+      "quiz": [
+        {
+          "q": "Sur 30 personnes, 12 viennent à pied et 3 de ces 12 font du théâtre. Quelle proportion fait du théâtre parmi celles qui viennent à pied ?",
+          "choix": [
+            "10 %",
+            "25 %",
+            "40 %"
+          ],
+          "rep": "25 %",
+          "expl": "On calcule 3 ÷ 12 = 0,25."
+        },
+        {
+          "q": "Dans la situation précédente, quelle proportion de l’ensemble vient à pied et fait du théâtre ?",
+          "choix": [
+            "25 %",
+            "40 %",
+            "10 %"
+          ],
+          "rep": "10 %",
+          "expl": "On calcule 3 ÷ 30 = 0,10."
+        },
+        {
+          "q": "Que représente la marge d’un tableau croisé ?",
+          "choix": [
+            "Un total de ligne ou de colonne",
+            "Une probabilité forcément égale à 1",
+            "Une différence entre deux cases"
+          ],
+          "rep": "Un total de ligne ou de colonne",
+          "expl": "Les marges rassemblent les totaux."
+        }
+      ],
+      "id": "REV-ESC-1RE-34"
+    },
+    {
+      "axe": "Analyse de l'information chiffrée",
+      "titre": "Nuage de points",
+      "emoji": "🔵",
+      "en_une_phrase": "Un nuage de points représente des couples de valeurs pour rechercher une relation.",
+      "comprendre": "Tu peux associer à chaque trajet sa durée et sa distance. Chaque trajet devient un point dont les coordonnées sont ces deux valeurs. La forme du nuage aide à observer une tendance, sans prouver une cause.",
+      "essentiel": [
+        "Un point a une abscisse et une ordonnée.",
+        "Une tendance croissante associe souvent des valeurs de plus en plus grandes.",
+        "Une corrélation observée ne démontre pas à elle seule une causalité."
+      ],
+      "image_mentale": "Imagine un semis de points sur une grille.",
+      "regle_ou_methode": "Choisis les axes, place les couples puis décris la tendance et la dispersion.",
+      "exemples": [
+        "Pour les couples (1 ; 2), (2 ; 4) et (3 ; 6), place trois points. Ils montent de gauche à droite : ici la deuxième grandeur augmente avec la première.",
+        "Un nuage très dispersé peut rendre une tendance peu nette."
+      ],
+      "piege": "Une relation statistique ne prouve pas qu’une grandeur provoque l’autre.",
+      "astuce_memoire": "Observer une tendance, pas inventer une cause.",
+      "quiz": [
+        {
+          "q": "Quel point représente le couple (2 ; 5) ?",
+          "choix": [
+            "Abscisse 5 et ordonnée 2",
+            "Abscisse 2 et ordonnée 2",
+            "Abscisse 2 et ordonnée 5"
+          ],
+          "rep": "Abscisse 2 et ordonnée 5",
+          "expl": "La première coordonnée est l’abscisse."
+        },
+        {
+          "q": "Des points qui montent globalement de gauche à droite indiquent :",
+          "choix": [
+            "Une tendance croissante",
+            "Une tendance décroissante",
+            "Une égalité obligatoire de toutes les valeurs"
+          ],
+          "rep": "Une tendance croissante",
+          "expl": "La seconde grandeur augmente globalement avec la première."
+        },
+        {
+          "q": "Une corrélation démontre-t-elle à elle seule une causalité ?",
+          "choix": [
+            "Oui, si le nuage est croissant",
+            "Non",
+            "Oui, si les valeurs sont positives"
+          ],
+          "rep": "Non",
+          "expl": "Une cause exige une analyse complémentaire."
+        }
+      ],
+      "id": "REV-ESC-1RE-35"
+    },
+    {
+      "axe": "Analyse de l'information chiffrée",
+      "titre": "Point moyen et ajustement",
+      "emoji": "📍",
+      "en_une_phrase": "Le point moyen résume les coordonnées moyennes d’un nuage.",
+      "comprendre": "Un groupe de mesures peut comporter beaucoup de points. Le point moyen réunit la moyenne des abscisses et celle des ordonnées. Une droite d’ajustement peut ensuite aider à estimer une valeur.",
+      "essentiel": [
+        "Le point moyen a pour coordonnées les moyennes de x et de y.",
+        "Interpoler estime une valeur à l’intérieur des données observées.",
+        "Extrapoler estime au-delà et demande davantage de prudence."
+      ],
+      "image_mentale": "Imagine le centre de gravité d’un nuage de points.",
+      "regle_ou_methode": "Calcule séparément les deux moyennes et interprète l’estimation avec prudence.",
+      "exemples": [
+        "Pour les points (1 ; 2), (3 ; 4) et (5 ; 6), calcule la moyenne des abscisses : (1 + 3 + 5) ÷ 3 = 3. La moyenne des ordonnées vaut (2 + 4 + 6) ÷ 3 = 4. Le point moyen est donc (3 ; 4).",
+        "Avec l’ajustement y = 2x + 1, pour x = 4, l’estimation est 2 × 4 + 1 = 9."
+      ],
+      "piege": "Un ajustement est un modèle : une extrapolation lointaine peut être très incertaine.",
+      "astuce_memoire": "Moyenne des x, moyenne des y.",
+      "quiz": [
+        {
+          "q": "Quel est le point moyen des points (1 ; 2) et (3 ; 6) ?",
+          "choix": [
+            "(2 ; 4)",
+            "(4 ; 8)",
+            "(2 ; 3)"
+          ],
+          "rep": "(2 ; 4)",
+          "expl": "Les moyennes sont 2 et 4."
+        },
+        {
+          "q": "Comment appelle-t-on une estimation entre des valeurs observées ?",
+          "choix": [
+            "Une extrapolation",
+            "Une interpolation",
+            "Une permutation"
+          ],
+          "rep": "Une interpolation",
+          "expl": "L’interpolation reste dans la plage observée."
+        },
+        {
+          "q": "Avec y = 3x + 2, quelle valeur estime-t-on pour x = 4 ?",
+          "choix": [
+            "12",
+            "18",
+            "14"
+          ],
+          "rep": "14",
+          "expl": "On calcule 3 × 4 + 2 = 14."
+        }
+      ],
+      "id": "REV-ESC-1RE-36"
+    },
+    {
+      "axe": "Analyse de l'information chiffrée",
+      "titre": "Quartiles et boîte",
+      "emoji": "📦",
+      "en_une_phrase": "Un diagramme en boîte résume la dispersion d’une série ordonnée.",
+      "comprendre": "Une moyenne seule ne montre pas comment les données sont réparties. Les quartiles et la médiane découpent une série ordonnée. Une boîte rend visibles ces repères et leur écart.",
+      "essentiel": [
+        "La médiane partage la série ordonnée en deux groupes.",
+        "Q1 et Q3 sont des quartiles.",
+        "L’écart interquartile vaut Q3 − Q1."
+      ],
+      "image_mentale": "Imagine une boîte de Q1 à Q3 avec un trait à la médiane.",
+      "regle_ou_methode": "Ordonne les valeurs, trouve les rangs des quartiles puis calcule leur différence.",
+      "exemples": [
+        "Pour la série 1, 2, 3, 4, 5, 6, 7, 8, le premier quartile est au rang 2 : Q1 = 2. Le troisième quartile est au rang 6 : Q3 = 6 ; l’écart interquartile vaut 4.",
+        "Pour la même série, la médiane vaut (4 + 5) ÷ 2 = 4,5."
+      ],
+      "piege": "L’écart interquartile ne mesure pas l’écart entre minimum et maximum.",
+      "astuce_memoire": "Boîte : de Q1 à Q3.",
+      "quiz": [
+        {
+          "q": "Quel est l’écart interquartile si Q1 = 2 et Q3 = 6 ?",
+          "choix": [
+            "8",
+            "4",
+            "3"
+          ],
+          "rep": "4",
+          "expl": "On calcule 6 − 2 = 4."
+        },
+        {
+          "q": "Que représente le trait dans la boîte ?",
+          "choix": [
+            "La somme des valeurs",
+            "Le nombre de catégories",
+            "La médiane"
+          ],
+          "rep": "La médiane",
+          "expl": "Le trait représente la médiane."
+        },
+        {
+          "q": "Quelle est la médiane de 1, 2, 3, 4, 5, 6, 7, 8 ?",
+          "choix": [
+            "4,5",
+            "4",
+            "5"
+          ],
+          "rep": "4,5",
+          "expl": "Elle vaut la moyenne des deux valeurs centrales 4 et 5."
+        }
+      ],
+      "id": "REV-ESC-1RE-37"
+    },
+    {
+      "axe": "Phénomènes aléatoires",
+      "titre": "Probabilité conditionnelle",
+      "emoji": "🎯",
+      "en_une_phrase": "Une probabilité conditionnelle mesure une chance dans un groupe déjà restreint.",
+      "comprendre": "Tu peux te demander quelle part des élèves qui portent des lunettes pratique un sport. On limite alors l’univers aux élèves qui portent des lunettes. Le choix du groupe de référence est essentiel.",
+      "essentiel": [
+        "P(A sachant B) se note aussi P_B(A).",
+        "Si P(B) est non nulle, P_B(A) = P(A et B) ÷ P(B).",
+        "P_B(A) et P_A(B) ne sont pas nécessairement égales."
+      ],
+      "image_mentale": "Imagine un grand cercle B, puis une zone A à l’intérieur.",
+      "regle_ou_methode": "Restreins-toi à B puis divise l’effectif commun à A et B par l’effectif de B.",
+      "exemples": [
+        "Sur 100 élèves, 20 portent des lunettes et 8 de ces 20 pratiquent un sport précis. La probabilité de pratiquer ce sport sachant qu’on porte des lunettes vaut 8 ÷ 20 = 0,4, soit 40 %.",
+        "Si 40 élèves pratiquent ce sport et que 8 portent des lunettes, la probabilité de porter des lunettes sachant qu’on pratique ce sport vaut 8 ÷ 40 = 20 %."
+      ],
+      "piege": "Ne permute pas l’événement étudié et la condition.",
+      "astuce_memoire": "Sachant B : on se place dans B.",
+      "quiz": [
+        {
+          "q": "Sur 50 élèves, 10 portent des lunettes ; 4 de ces 10 jouent aux échecs. Quelle est la probabilité de jouer aux échecs sachant qu’on porte des lunettes ?",
+          "choix": [
+            "8 %",
+            "20 %",
+            "40 %"
+          ],
+          "rep": "40 %",
+          "expl": "On divise 4 par 10."
+        },
+        {
+          "q": "Que vaut P(A sachant B) si P(A et B) = 0,12 et P(B) = 0,3 ?",
+          "choix": [
+            "0,4",
+            "0,036",
+            "0,18"
+          ],
+          "rep": "0,4",
+          "expl": "0,12 ÷ 0,3 = 0,4."
+        },
+        {
+          "q": "P(A sachant B) est-elle forcément égale à P(B sachant A) ?",
+          "choix": [
+            "Oui, dès que A et B existent",
+            "Non",
+            "Oui, si leur intersection est non vide"
+          ],
+          "rep": "Non",
+          "expl": "Les deux conditions ne définissent pas le même groupe de référence."
+        }
+      ],
+      "id": "REV-ESC-1RE-38"
+    },
+    {
+      "axe": "Phénomènes aléatoires",
+      "titre": "Arbre pondéré",
+      "emoji": "🌳",
+      "en_une_phrase": "Dans un arbre, la probabilité d’un chemin se calcule en multipliant ses branches.",
+      "comprendre": "Un choix peut se faire en plusieurs étapes. Un arbre rend visibles les possibilités successives et leurs probabilités. Additionner des chemins incompatibles permet ensuite de rassembler plusieurs cas.",
+      "essentiel": [
+        "À chaque nœud, les probabilités des branches issues de ce nœud totalisent 1.",
+        "La probabilité d’un chemin est le produit des probabilités de ses branches.",
+        "Pour des chemins incompatibles, on additionne leurs probabilités."
+      ],
+      "image_mentale": "Imagine des branches qui partent d’un tronc et se divisent.",
+      "regle_ou_methode": "Construis l’arbre, multiplie sur chaque chemin puis additionne les chemins recherchés.",
+      "exemples": [
+        "Une boîte est choisie avec probabilité 0,6 ; elle contient une bille rouge avec probabilité 0,5. Pour obtenir cette boîte puis une rouge, multiplie 0,6 × 0,5 = 0,3.",
+        "Si deux chemins incompatibles vers rouge valent 0,3 et 0,1, la probabilité totale de rouge est 0,4."
+      ],
+      "piege": "Ne confonds pas la multiplication le long d’un chemin et l’addition de chemins incompatibles.",
+      "astuce_memoire": "Sur un chemin : multiplier ; entre chemins incompatibles : additionner.",
+      "quiz": [
+        {
+          "q": "Un chemin a deux branches de probabilités 0,4 et 0,5. Quelle est sa probabilité ?",
+          "choix": [
+            "0,2",
+            "0,9",
+            "0,1"
+          ],
+          "rep": "0,2",
+          "expl": "On multiplie 0,4 par 0,5."
+        },
+        {
+          "q": "Deux chemins incompatibles ont des probabilités 0,2 et 0,3. Quel est leur total ?",
+          "choix": [
+            "0,06",
+            "0,5",
+            "0,6"
+          ],
+          "rep": "0,5",
+          "expl": "On additionne les probabilités des chemins incompatibles."
+        },
+        {
+          "q": "Une branche part d’un nœud avec probabilité 0,7. Si elle a une seule autre branche complémentaire, quelle est sa probabilité ?",
+          "choix": [
+            "0,7",
+            "1,7",
+            "0,3"
+          ],
+          "rep": "0,3",
+          "expl": "Les branches issues d’un même nœud totalisent 1."
+        }
+      ],
+      "id": "REV-ESC-1RE-39"
+    },
+    {
+      "axe": "Phénomènes aléatoires",
+      "titre": "Événements indépendants",
+      "emoji": "🎲",
+      "en_une_phrase": "Deux événements sont indépendants si la réalisation de l’un ne change pas la probabilité de l’autre.",
+      "comprendre": "Lors de deux lancers d’une pièce équilibrée, le premier résultat ne modifie pas le second. Cette propriété dépend du modèle choisi et doit être justifiée. Elle permet de calculer la probabilité d’une intersection.",
+      "essentiel": [
+        "A et B sont indépendants si P(A et B) = P(A) × P(B).",
+        "Si P(B) est non nulle, cela équivaut à P(A sachant B) = P(A).",
+        "Des tirages avec remise peuvent être modélisés comme indépendants."
+      ],
+      "image_mentale": "Imagine deux pièces distinctes : le résultat de l’une ne déforme pas l’autre.",
+      "regle_ou_methode": "Vérifie l’indépendance dans l’énoncé ou compare l’intersection au produit des probabilités.",
+      "exemples": [
+        "Pour deux lancers indépendants d’une pièce équilibrée, la probabilité de deux piles vaut 1/2 × 1/2 = 1/4. Le premier résultat ne change pas la probabilité du second.",
+        "Si P(A) = 0,3 et P(B) = 0,2 et que A et B sont indépendants, P(A et B) = 0,06."
+      ],
+      "piege": "Ne confonds pas événements indépendants et événements incompatibles.",
+      "astuce_memoire": "Indépendants : intersection = produit.",
+      "quiz": [
+        {
+          "q": "Deux lancers indépendants d’une pièce équilibrée donnent deux piles avec quelle probabilité ?",
+          "choix": [
+            "1/2",
+            "1/4",
+            "3/4"
+          ],
+          "rep": "1/4",
+          "expl": "On multiplie 1/2 par 1/2."
+        },
+        {
+          "q": "Si A et B sont indépendants avec P(A) = 0,4 et P(B) = 0,5, que vaut P(A et B) ?",
+          "choix": [
+            "0,9",
+            "0,1",
+            "0,2"
+          ],
+          "rep": "0,2",
+          "expl": "On multiplie 0,4 par 0,5."
+        },
+        {
+          "q": "Deux événements incompatibles de probabilités non nulles sont-ils indépendants ?",
+          "choix": [
+            "Non",
+            "Oui, toujours",
+            "Oui, si leurs probabilités sont égales"
+          ],
+          "rep": "Non",
+          "expl": "Leur intersection vaut zéro alors que le produit est strictement positif."
+        }
+      ],
+      "id": "REV-ESC-1RE-40"
+    },
+    {
+      "axe": "Phénomènes aléatoires",
+      "titre": "Répéter une épreuve",
+      "emoji": "🎰",
+      "en_une_phrase": "La répétition d’épreuves identiques et indépendantes se représente par un arbre.",
+      "comprendre": "Un jeu simple peut donner deux résultats : succès ou échec. Si tu recommences dans les mêmes conditions indépendantes, les mêmes probabilités reviennent à chaque étape. On calcule les chemins, puis on rassemble les cas cherchés.",
+      "essentiel": [
+        "Une épreuve de Bernoulli possède deux issues : succès et échec.",
+        "Si la probabilité du succès est p, celle de l’échec est 1 − p.",
+        "Pour plusieurs épreuves indépendantes, les probabilités d’un chemin se multiplient."
+      ],
+      "image_mentale": "Imagine plusieurs embranchements identiques successifs.",
+      "regle_ou_methode": "Construis un arbre à deux issues par étape, puis additionne les chemins utiles.",
+      "exemples": [
+        "Une pièce équilibrée est lancée deux fois. Un seul résultat pile peut apparaître sur deux chemins : pile puis face ou face puis pile. Chacun vaut 1/2 × 1/2 = 1/4 ; le total vaut 1/2.",
+        "Trois succès consécutifs de probabilité 0,2 chacun ont une probabilité 0,2³ = 0,008."
+      ],
+      "piege": "Pour « exactement un succès », n’oublie aucun ordre possible.",
+      "astuce_memoire": "Compter les chemins, puis additionner.",
+      "quiz": [
+        {
+          "q": "Deux lancers indépendants d’une pièce équilibrée donnent exactement un résultat pile avec quelle probabilité ?",
+          "choix": [
+            "1/4",
+            "3/4",
+            "1/2"
+          ],
+          "rep": "1/2",
+          "expl": "Les deux chemins possibles valent chacun 1/4."
+        },
+        {
+          "q": "Si le succès a une probabilité de 0,3, quelle est celle de l’échec ?",
+          "choix": [
+            "0,7",
+            "0,3",
+            "1,3"
+          ],
+          "rep": "0,7",
+          "expl": "Les deux issues complémentaires totalisent 1."
+        },
+        {
+          "q": "Trois succès indépendants, chacun de probabilité 0,5, ont quelle probabilité ?",
+          "choix": [
+            "0,25",
+            "0,125",
+            "0,5"
+          ],
+          "rep": "0,125",
+          "expl": "Le produit vaut 0,5³ = 0,125."
+        }
+      ],
+      "id": "REV-ESC-1RE-41"
+    },
+    {
+      "axe": "Phénomènes aléatoires",
+      "titre": "Simuler le hasard",
+      "emoji": "🎲",
+      "en_une_phrase": "Une simulation répète un modèle aléatoire pour observer des fréquences.",
+      "comprendre": "Tu peux lancer un dé et compter les six. En répétant les lancers indépendants, la fréquence observée fluctue. Lorsque le nombre de répétitions augmente, elle tend à se rapprocher de la probabilité dans le cadre de la loi des grands nombres.",
+      "essentiel": [
+        "La fréquence est le nombre de succès divisé par le nombre d’essais.",
+        "Une simulation repose sur un modèle choisi.",
+        "Une fréquence observée reste variable."
+      ],
+      "image_mentale": "Imagine une longue suite de lancers et un compteur de succès.",
+      "regle_ou_methode": "Simule de nombreux essais, calcule la fréquence puis compare-la à la probabilité théorique.",
+      "exemples": [
+        "Sur 60 lancers simulés, 8 six apparaissent. La fréquence est 8 ÷ 60, soit environ 13,3 % ; elle peut différer de la probabilité théorique 1/6.",
+        "Sur 600 lancers, 105 six donnent une fréquence de 17,5 %."
+      ],
+      "piege": "Un résultat théorique de 1/6 ne garantit pas exactement 10 six sur 60 lancers.",
+      "astuce_memoire": "Répéter, compter, comparer.",
+      "quiz": [
+        {
+          "q": "Quelle est la fréquence de 8 succès sur 60 essais ?",
+          "choix": [
+            "Environ 13,3 %",
+            "Exactement 16,7 %",
+            "Environ 7,5 %"
+          ],
+          "rep": "Environ 13,3 %",
+          "expl": "8 ÷ 60 vaut environ 0,133."
+        },
+        {
+          "q": "La probabilité 1/6 garantit-elle exactement 10 succès en 60 lancers ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "Seulement si le dé est équilibré"
+          ],
+          "rep": "Non",
+          "expl": "Le nombre observé est aléatoire."
+        },
+        {
+          "q": "Que doit-on préciser pour une simulation ?",
+          "choix": [
+            "Uniquement la couleur de l’écran",
+            "Uniquement le dernier résultat",
+            "Le modèle aléatoire utilisé"
+          ],
+          "rep": "Le modèle aléatoire utilisé",
+          "expl": "La simulation dépend du modèle choisi."
+        }
+      ],
+      "id": "REV-ESC-1RE-42"
+    },
+    {
+      "axe": "Phénomènes d'évolution, modélisation par des fonctions",
+      "titre": "Suites et rangs",
+      "emoji": "🔢",
+      "en_une_phrase": "Une suite associe une valeur à chaque rang entier.",
+      "comprendre": "Le nombre de places réservées peut être relevé chaque semaine. Une suite organise ces valeurs dans l’ordre. Elle peut être définie directement à partir du rang ou à partir du terme précédent.",
+      "essentiel": [
+        "u(n) et uₙ désignent le terme de rang n.",
+        "Une formule explicite donne uₙ à partir de n.",
+        "Une relation de récurrence permet de calculer le terme suivant."
+      ],
+      "image_mentale": "Imagine une file de cases numérotées contenant chacune une valeur.",
+      "regle_ou_methode": "Repère le rang initial, applique la formule et conserve la correspondance rang-valeur.",
+      "exemples": [
+        "Si u₀ = 5 et uₙ₊₁ = uₙ + 3, alors u₁ = 5 + 3 = 8 puis u₂ = 8 + 3 = 11.",
+        "Si vₙ = 2n + 1, alors v₄ = 2 × 4 + 1 = 9."
+      ],
+      "piege": "Ne confonds pas le rang 0 avec le premier terme de rang 1.",
+      "astuce_memoire": "Rang : numéro ; terme : valeur.",
+      "quiz": [
+        {
+          "q": "Si u₀ = 4 et uₙ₊₁ = uₙ + 2, que vaut u₂ ?",
+          "choix": [
+            "6",
+            "8",
+            "10"
+          ],
+          "rep": "8",
+          "expl": "On calcule u₁ = 6 puis u₂ = 8."
+        },
+        {
+          "q": "Si vₙ = 3n + 1, que vaut v₃ ?",
+          "choix": [
+            "9",
+            "12",
+            "10"
+          ],
+          "rep": "10",
+          "expl": "3 × 3 + 1 = 10."
+        },
+        {
+          "q": "Que signifie une définition par récurrence ?",
+          "choix": [
+            "Elle relie un terme à un terme précédent",
+            "Elle donne toujours le même terme",
+            "Elle ne nécessite jamais de valeur initiale"
+          ],
+          "rep": "Elle relie un terme à un terme précédent",
+          "expl": "Une relation permet de passer d’un terme au suivant."
+        }
+      ],
+      "id": "REV-ESC-1RE-43"
+    },
+    {
+      "axe": "Phénomènes d'évolution, modélisation par des fonctions",
+      "titre": "Suite arithmétique",
+      "emoji": "➕",
+      "en_une_phrase": "Une suite arithmétique ajoute toujours la même quantité.",
+      "comprendre": "Quand tu ajoutes chaque semaine le même montant à une cagnotte, la variation en euros est constante. Cette situation se modélise par une suite arithmétique. La raison est la quantité ajoutée à chaque étape.",
+      "essentiel": [
+        "uₙ₊₁ = uₙ + r, où r est la raison.",
+        "Si le premier rang est 0, uₙ = u₀ + nr.",
+        "La suite croît si r > 0 et décroît si r < 0."
+      ],
+      "image_mentale": "Imagine un escalier dont toutes les marches ont la même hauteur.",
+      "regle_ou_methode": "Identifie u₀ et la raison, puis multiplie la raison par le nombre d’étapes.",
+      "exemples": [
+        "Une cagnotte commence à 20 € et gagne 5 € chaque semaine. Après trois semaines : u₃ = 20 + 3 × 5 = 35 €.",
+        "Si u₀ = 12 et r = −2, alors u₂ = 12 + 2 × (−2) = 8."
+      ],
+      "piege": "Ajouter 5 à chaque étape n’est pas augmenter de 5 % à chaque étape.",
+      "astuce_memoire": "Arithmétique : ajout constant.",
+      "quiz": [
+        {
+          "q": "Une suite vérifie u₀ = 10 et augmente de 4 à chaque rang. Que vaut u₃ ?",
+          "choix": [
+            "18",
+            "24",
+            "22"
+          ],
+          "rep": "22",
+          "expl": "u₃ = 10 + 3 × 4 = 22."
+        },
+        {
+          "q": "Quelle est la raison de 12, 9, 6, 3 ?",
+          "choix": [
+            "−3",
+            "3",
+            "−6"
+          ],
+          "rep": "−3",
+          "expl": "On retire 3 à chaque passage."
+        },
+        {
+          "q": "Une suite arithmétique de raison négative est :",
+          "choix": [
+            "Croissante",
+            "Décroissante",
+            "Constante"
+          ],
+          "rep": "Décroissante",
+          "expl": "On ajoute une quantité négative à chaque étape."
+        }
+      ],
+      "id": "REV-ESC-1RE-44"
+    },
+    {
+      "axe": "Phénomènes d'évolution, modélisation par des fonctions",
+      "titre": "Fonction affine",
+      "emoji": "📐",
+      "en_une_phrase": "Une fonction affine modélise une variation constante par unité de x.",
+      "comprendre": "Un trajet en taxi fictif peut comprendre un forfait initial puis un prix constant par kilomètre. Cela conduit à une expression ax + b. Le coefficient a indique la variation associée à une unité supplémentaire.",
+      "essentiel": [
+        "Une fonction affine s’écrit f(x) = ax + b.",
+        "Sa représentation est une droite.",
+        "a est le taux d’accroissement constant et b la valeur pour x = 0."
+      ],
+      "image_mentale": "Imagine une droite qui part de b et monte de a par pas horizontal.",
+      "regle_ou_methode": "Identifie la valeur initiale et la variation par unité, puis forme ax + b.",
+      "exemples": [
+        "Un trajet coûte 3 € de forfait puis 2 € par kilomètre. Le coût est f(x) = 2x + 3. Pour 4 km, f(4) = 8 + 3 = 11 €.",
+        "Avec f(x) = −x + 6, la valeur baisse de 1 quand x augmente de 1."
+      ],
+      "piege": "La valeur b n’est pas le coût par kilomètre : c’est ici le forfait.",
+      "astuce_memoire": "b au départ, a par unité.",
+      "quiz": [
+        {
+          "q": "Pour f(x) = 2x + 3, que vaut f(5) ?",
+          "choix": [
+            "13",
+            "10",
+            "16"
+          ],
+          "rep": "13",
+          "expl": "2 × 5 + 3 = 13."
+        },
+        {
+          "q": "Pour f(x) = −4x + 8, quel est le coefficient directeur ?",
+          "choix": [
+            "8",
+            "−4",
+            "4"
+          ],
+          "rep": "−4",
+          "expl": "Le coefficient de x est −4."
+        },
+        {
+          "q": "Une fonction affine avec un coefficient directeur positif est :",
+          "choix": [
+            "Décroissante",
+            "Constante",
+            "Croissante"
+          ],
+          "rep": "Croissante",
+          "expl": "Quand a est positif, f augmente avec x."
+        }
+      ],
+      "id": "REV-ESC-1RE-45"
+    },
+    {
+      "axe": "Phénomènes d'évolution, modélisation par des fonctions",
+      "titre": "Seuil et croissance linéaire",
+      "emoji": "🚦",
+      "en_une_phrase": "Un seuil linéaire se trouve en comparant une expression affine à une valeur cible.",
+      "comprendre": "Une cagnotte augmente régulièrement et tu veux savoir quand elle atteindra un objectif. Une inégalité traduit cette question. La réponse doit tenir compte des rangs possibles.",
+      "essentiel": [
+        "Écris l’expression qui représente la grandeur.",
+        "Traduis « au moins » par ≥.",
+        "Si le rang est entier, vérifie le premier entier qui convient."
+      ],
+      "image_mentale": "Imagine un escalier et une ligne horizontale à atteindre.",
+      "regle_ou_methode": "Résous l’inégalité puis teste le premier rang entier possible.",
+      "exemples": [
+        "Une cagnotte démarre à 20 € et gagne 5 € par semaine. Pour atteindre au moins 38 €, résous 20 + 5n ≥ 38, soit n ≥ 3,6. Le premier nombre entier de semaines est 4 : la cagnotte vaut alors 40 €.",
+        "Pour atteindre 35 € dans le même modèle, trois semaines suffisent car 20 + 5 × 3 = 35."
+      ],
+      "piege": "Un résultat de 3,6 semaines ne signifie pas que le rang entier 3 suffit.",
+      "astuce_memoire": "Résoudre, puis adapter au contexte.",
+      "quiz": [
+        {
+          "q": "Une suite vaut uₙ = 10 + 3n. Quel est le premier rang entier où elle atteint au moins 20 ?",
+          "choix": [
+            "3",
+            "4",
+            "5"
+          ],
+          "rep": "4",
+          "expl": "Il faut 3n ≥ 10, donc n ≥ 3,33 ; le premier entier est 4."
+        },
+        {
+          "q": "Que traduit « au moins 15 » ?",
+          "choix": [
+            "Une valeur strictement inférieure à 15",
+            "Une valeur strictement supérieure à 15",
+            "Une valeur supérieure ou égale à 15"
+          ],
+          "rep": "Une valeur supérieure ou égale à 15",
+          "expl": "Au moins inclut la valeur 15."
+        },
+        {
+          "q": "Si 2n ≥ 7 et que n est entier naturel, quel est le plus petit n ?",
+          "choix": [
+            "4",
+            "3",
+            "7"
+          ],
+          "rep": "4",
+          "expl": "n ≥ 3,5 ; le plus petit entier possible est 4."
+        }
+      ],
+      "id": "REV-ESC-1RE-46"
+    },
+    {
+      "axe": "Phénomènes d'évolution, modélisation par des fonctions",
+      "titre": "Parabole et extremum",
+      "emoji": "🏀",
+      "en_une_phrase": "Une fonction du second degré est représentée par une parabole avec un maximum ou un minimum.",
+      "comprendre": "La hauteur d’une balle peut augmenter puis diminuer. Un modèle quadratique décrit parfois cette trajectoire sur une durée limitée. Le sommet de sa parabole correspond à la hauteur extrême du modèle.",
+      "essentiel": [
+        "Une fonction du second degré comporte un terme en x² de coefficient non nul.",
+        "La courbe est une parabole symétrique par rapport à un axe vertical.",
+        "Le sommet est un maximum si la parabole est tournée vers le bas."
+      ],
+      "image_mentale": "Imagine une arche dont le point le plus haut est le sommet.",
+      "regle_ou_methode": "Observe le sens d’ouverture et lis ou calcule le sommet dans la forme donnée.",
+      "exemples": [
+        "Pour f(x) = −(x − 2)² + 5, le carré est toujours positif ou nul. Son opposé est donc au plus 0 ; f(x) est au plus 5. Ce maximum est atteint pour x = 2.",
+        "Pour g(x) = (x − 3)² + 1, le minimum est 1, atteint pour x = 3."
+      ],
+      "piege": "Un maximum du modèle n’est pertinent que dans l’intervalle où il représente la situation.",
+      "astuce_memoire": "Sommet : point le plus haut ou le plus bas.",
+      "quiz": [
+        {
+          "q": "Quel est le maximum de f(x) = −(x − 2)² + 5 ?",
+          "choix": [
+            "2",
+            "−5",
+            "5"
+          ],
+          "rep": "5",
+          "expl": "Le carré est nul en x = 2, donc f vaut au plus 5."
+        },
+        {
+          "q": "Pour g(x) = (x − 3)² + 1, où se trouve le minimum ?",
+          "choix": [
+            "En x = 3",
+            "En x = −3",
+            "En x = 1"
+          ],
+          "rep": "En x = 3",
+          "expl": "Le carré est nul lorsque x = 3."
+        },
+        {
+          "q": "La courbe d’une fonction du second degré est une :",
+          "choix": [
+            "Droite",
+            "Parabole",
+            "Droite verticale"
+          ],
+          "rep": "Parabole",
+          "expl": "Sa représentation graphique est une parabole."
+        }
+      ],
+      "id": "REV-ESC-1RE-47"
+    },
+    {
+      "axe": "Phénomènes d'évolution, modélisation par des fonctions",
+      "titre": "Racines et signe",
+      "emoji": "➗",
+      "en_une_phrase": "La forme factorisée d’un polynôme permet de trouver ses racines et son signe.",
+      "comprendre": "Tu sais résoudre un produit nul en annulant ses facteurs. La même idée aide à repérer où une parabole coupe l’axe horizontal. Entre et hors de ces points, on détermine les signes des facteurs.",
+      "essentiel": [
+        "Une racine annule l’expression.",
+        "Pour (x − a)(x − b), les racines sont a et b.",
+        "Le signe du produit dépend des signes de ses facteurs."
+      ],
+      "image_mentale": "Imagine deux bornes sur une droite découpée en trois zones.",
+      "regle_ou_methode": "Trouve les racines, range-les puis étudie les signes par intervalles.",
+      "exemples": [
+        "Pour f(x) = (x − 1)(x − 4), les racines sont 1 et 4. Entre 1 et 4, le premier facteur est positif et le second négatif : f est négative. En dehors, les deux facteurs ont le même signe : f est positive.",
+        "Pour g(x) = −(x − 1)(x − 4), le signe est inversé : g est positive entre 1 et 4."
+      ],
+      "piege": "N’oublie pas le signe d’un coefficient placé devant le produit.",
+      "astuce_memoire": "Racines, intervalles, signes.",
+      "quiz": [
+        {
+          "q": "Quelles sont les racines de (x − 2)(x + 3) ?",
+          "choix": [
+            "2 et −3",
+            "−2 et 3",
+            "2 et 3"
+          ],
+          "rep": "2 et −3",
+          "expl": "Chaque facteur s’annule respectivement en 2 et −3."
+        },
+        {
+          "q": "Quel est le signe de (x − 1)(x − 4) pour x = 2 ?",
+          "choix": [
+            "Positif",
+            "Négatif",
+            "Nul"
+          ],
+          "rep": "Négatif",
+          "expl": "Les facteurs valent 1 et −2."
+        },
+        {
+          "q": "Quel est le signe de −(x − 1)(x − 4) pour x = 2 ?",
+          "choix": [
+            "Négatif",
+            "Nul",
+            "Positif"
+          ],
+          "rep": "Positif",
+          "expl": "Le produit vaut −2 puis le signe moins donne 2."
+        }
+      ],
+      "id": "REV-ESC-1RE-48"
+    },
+    {
+      "axe": "Phénomènes d'évolution, modélisation par des fonctions",
+      "titre": "Suite géométrique",
+      "emoji": "✖️",
+      "en_une_phrase": "Une suite géométrique multiplie toujours par le même nombre, appelé raison.",
+      "comprendre": "Une somme qui augmente chaque année du même pourcentage n’ajoute pas toujours le même montant. Elle est multipliée chaque année par le même coefficient. Une suite géométrique modélise cette évolution.",
+      "essentiel": [
+        "uₙ₊₁ = q × uₙ, où q est la raison.",
+        "Si le premier rang est 0, uₙ = u₀ × qⁿ.",
+        "Pour des termes positifs, q > 1 entraîne une croissance et 0 < q < 1 une décroissance."
+      ],
+      "image_mentale": "Imagine des marches dont chaque hauteur est multipliée par le même facteur.",
+      "regle_ou_methode": "Identifie le coefficient, puis multiplie la valeur initiale par sa puissance de rang n.",
+      "exemples": [
+        "Un capital de 100 € augmente de 10 % par an. Le coefficient est 1,1. Au bout de deux ans, il vaut 100 × 1,1² = 121 €.",
+        "Une quantité divisée par deux à chaque étape suit une raison 0,5."
+      ],
+      "piege": "Une croissance de 10 % par période ne correspond pas à un ajout fixe de 10 unités.",
+      "astuce_memoire": "Géométrique : multiplication constante.",
+      "quiz": [
+        {
+          "q": "Une somme de 200 augmente de 10 % deux fois. Combien vaut-elle ?",
+          "choix": [
+            "240",
+            "242",
+            "220"
+          ],
+          "rep": "242",
+          "expl": "200 × 1,1² = 242."
+        },
+        {
+          "q": "Quelle est la raison de 80, 40, 20, 10 ?",
+          "choix": [
+            "−40",
+            "2",
+            "0,5"
+          ],
+          "rep": "0,5",
+          "expl": "Chaque terme est multiplié par 0,5."
+        },
+        {
+          "q": "Une suite à termes positifs de raison 1,05 est :",
+          "choix": [
+            "Croissante",
+            "Décroissante",
+            "Constante"
+          ],
+          "rep": "Croissante",
+          "expl": "Un coefficient supérieur à 1 augmente chaque terme positif."
+        }
+      ],
+      "id": "REV-ESC-1RE-49"
+    },
+    {
+      "axe": "Phénomènes d'évolution, modélisation par des fonctions",
+      "titre": "Fonction exponentielle",
+      "emoji": "🌿",
+      "en_une_phrase": "Une fonction de la forme aˣ prolonge une croissance ou décroissance multiplicative à des durées non entières.",
+      "comprendre": "Tu sais appliquer un coefficient chaque année entière. La fonction exponentielle de base positive permet aussi de modéliser une durée fractionnaire. Ce prolongement reste un modèle à confronter à la situation.",
+      "essentiel": [
+        "Pour a > 0 et x ≥ 0, aˣ est positif.",
+        "Si a > 1, la fonction est croissante ; si 0 < a < 1, elle est décroissante.",
+        "a^(1/2) est la racine carrée positive de a."
+      ],
+      "image_mentale": "Imagine des points annuels reliés par une courbe continue.",
+      "regle_ou_methode": "Repère le coefficient a et la durée x, puis utilise une calculatrice si nécessaire.",
+      "exemples": [
+        "Une quantité vaut 100 au départ et est multipliée par 4 en une année dans un modèle exponentiel. Après une demi-année, elle vaut 100 × 4^(1/2) = 100 × 2 = 200.",
+        "Une quantité modélisée par 80 × 0,5ˣ vaut 40 pour x = 1."
+      ],
+      "piege": "La moitié du temps ne correspond pas forcément à la moitié de la valeur finale.",
+      "astuce_memoire": "Durée fractionnaire : puissance fractionnaire.",
+      "quiz": [
+        {
+          "q": "Que vaut 9^(1/2) ?",
+          "choix": [
+            "4,5",
+            "18",
+            "3"
+          ],
+          "rep": "3",
+          "expl": "La racine carrée positive de 9 est 3."
+        },
+        {
+          "q": "Quel est le sens de variation de x ↦ 0,8ˣ pour x ≥ 0 ?",
+          "choix": [
+            "Décroissante",
+            "Croissante",
+            "Constante"
+          ],
+          "rep": "Décroissante",
+          "expl": "La base positive est inférieure à 1."
+        },
+        {
+          "q": "Si une quantité vaut 100 × 4ˣ, que vaut-elle pour x = 1/2 ?",
+          "choix": [
+            "250",
+            "200",
+            "400"
+          ],
+          "rep": "200",
+          "expl": "4^(1/2) = 2, donc la quantité vaut 200."
+        }
+      ],
+      "id": "REV-ESC-1RE-50"
+    },
+    {
+      "axe": "Phénomènes d'évolution, modélisation par des fonctions",
+      "titre": "Seuil exponentiel",
+      "emoji": "⏱️",
+      "en_une_phrase": "Un seuil exponentiel peut être trouvé par essais successifs ou à l’aide d’un tableur.",
+      "comprendre": "Une population fictive croît d’un pourcentage constant. Pour savoir quand elle dépasse une limite, tu peux calculer ses valeurs successives. Le premier rang qui satisfait la condition donne la réponse.",
+      "essentiel": [
+        "Un modèle discret à coefficient q s’écrit uₙ = u₀qⁿ.",
+        "La recherche peut utiliser un tableau ou un outil numérique.",
+        "Vérifie le rang précédent et le rang retenu."
+      ],
+      "image_mentale": "Imagine des points qui montent vers une ligne de seuil.",
+      "regle_ou_methode": "Calcule les termes successifs jusqu’à franchir le seuil puis contrôle le terme précédent.",
+      "exemples": [
+        "Une quantité commence à 100 et double à chaque étape. Les valeurs sont 100, 200, 400, 800. Elle dépasse 500 pour la première fois au rang 3, car 400 ≤ 500 et 800 > 500.",
+        "Une quantité de 80 divisée par deux à chaque étape devient 40, 20 puis 10 : elle atteint 10 au rang 3."
+      ],
+      "piege": "« Dépasser » est strict ; « atteindre au moins » inclut l’égalité.",
+      "astuce_memoire": "Comparer le rang retenu et le précédent.",
+      "quiz": [
+        {
+          "q": "Une quantité démarre à 50 et double à chaque étape. À quel rang dépasse-t-elle 300 pour la première fois ?",
+          "choix": [
+            "3",
+            "2",
+            "4"
+          ],
+          "rep": "3",
+          "expl": "Les valeurs sont 50, 100, 200 puis 400."
+        },
+        {
+          "q": "Une quantité vaut 160 puis est divisée par deux à chaque étape. Quand atteint-elle pour la première fois 20 ?",
+          "choix": [
+            "Au rang 2",
+            "Au rang 3",
+            "Au rang 4"
+          ],
+          "rep": "Au rang 3",
+          "expl": "160 devient 80, 40 puis 20."
+        },
+        {
+          "q": "Que signifie « dépasser 200 » ?",
+          "choix": [
+            "Être supérieur ou égal à 200",
+            "Être strictement inférieur à 200",
+            "Être strictement supérieur à 200"
+          ],
+          "rep": "Être strictement supérieur à 200",
+          "expl": "Dépasser exclut l’égalité."
+        }
+      ],
+      "id": "REV-ESC-1RE-51"
+    },
+    {
+      "axe": "Phénomènes d'évolution, modélisation par des fonctions",
+      "titre": "Taux moyen",
+      "emoji": "📉",
+      "en_une_phrase": "Le taux moyen est le taux constant qui reproduit le même coefficient global sur plusieurs périodes.",
+      "comprendre": "Quand une valeur évolue différemment chaque année, on peut chercher une évolution annuelle constante équivalente. Le taux moyen dépend du coefficient global, pas de la simple moyenne des pourcentages. Il utilise une racine.",
+      "essentiel": [
+        "Sur n périodes, le coefficient moyen est la racine n-ième du coefficient global positif.",
+        "Le taux moyen est ce coefficient moins 1.",
+        "Le taux moyen répété n fois reproduit la variation globale."
+      ],
+      "image_mentale": "Imagine plusieurs multiplicateurs identiques remplaçant une suite de multiplicateurs différents.",
+      "regle_ou_methode": "Calcule le coefficient global, prends sa racine n-ième puis retranche 1.",
+      "exemples": [
+        "Une valeur passe de 100 à 121 en deux ans. Le coefficient global vaut 121 ÷ 100 = 1,21. Sa racine carrée est 1,1 : le taux moyen est donc 10 % par an.",
+        "Une valeur multipliée par 0,81 en deux périodes correspond à un coefficient moyen de 0,9, soit −10 % par période."
+      ],
+      "piege": "La moyenne arithmétique des taux n’est pas généralement le taux moyen d’évolution.",
+      "astuce_memoire": "Racine du coefficient global, puis moins 1.",
+      "quiz": [
+        {
+          "q": "Une valeur est multipliée par 1,44 en deux ans. Quel taux annuel constant équivalent correspond à ce modèle ?",
+          "choix": [
+            "22 %",
+            "20 %",
+            "44 %"
+          ],
+          "rep": "20 %",
+          "expl": "La racine carrée de 1,44 est 1,2."
+        },
+        {
+          "q": "Une valeur est multipliée par 0,81 en deux périodes. Quel est le taux moyen ?",
+          "choix": [
+            "−9,5 %",
+            "−19 %",
+            "−10 %"
+          ],
+          "rep": "−10 %",
+          "expl": "La racine carrée de 0,81 est 0,9."
+        },
+        {
+          "q": "Quel coefficient global correspond à deux hausses successives de 10 % ?",
+          "choix": [
+            "1,21",
+            "1,20",
+            "1,22"
+          ],
+          "rep": "1,21",
+          "expl": "Le produit est 1,1 × 1,1 = 1,21."
+        }
+      ],
+      "id": "REV-ESC-1RE-52"
+    },
+    {
+      "axe": "Phénomènes d'évolution, modélisation par des fonctions",
+      "titre": "Lire courbe et variations",
+      "emoji": "📈",
+      "en_une_phrase": "La courbe d’une fonction permet de lire approximativement des solutions et des variations.",
+      "comprendre": "Un graphique montre comment une grandeur change. Les intersections avec une droite horizontale donnent des solutions d’une équation. Le sens de déplacement de la courbe renseigne sur les intervalles de croissance ou de décroissance.",
+      "essentiel": [
+        "Résoudre f(x) = k revient à chercher les intersections avec y = k.",
+        "Pour f(x) ≥ k, repère où la courbe est au-dessus ou sur la droite y = k.",
+        "Un tableau de variations résume les montées et descentes."
+      ],
+      "image_mentale": "Imagine une courbe coupée par une ligne horizontale.",
+      "regle_ou_methode": "Trace ou repère la ligne y = k puis lis les abscisses utiles ; observe les variations.",
+      "exemples": [
+        "Pour f(x) = 2x + 1, résoudre f(x) = 5 donne 2x + 1 = 5, donc x = 2. Graphiquement, la droite coupe y = 5 à l’abscisse 2.",
+        "Pour la même fonction croissante, f(x) ≥ 5 équivaut à x ≥ 2."
+      ],
+      "piege": "Une lecture graphique approchée n’est pas toujours une valeur exacte.",
+      "astuce_memoire": "Intersection : équation ; au-dessus : supérieur.",
+      "quiz": [
+        {
+          "q": "Quelle est la solution de 2x + 1 = 5 ?",
+          "choix": [
+            "3",
+            "4",
+            "2"
+          ],
+          "rep": "2",
+          "expl": "2x = 4 donc x = 2."
+        },
+        {
+          "q": "Que signifie f(x) ≥ 5 sur un graphique ?",
+          "choix": [
+            "La courbe est sur ou au-dessus de y = 5",
+            "La courbe est toujours sous l’axe horizontal",
+            "L’abscisse vaut toujours 5"
+          ],
+          "rep": "La courbe est sur ou au-dessus de y = 5",
+          "expl": "On compare l’ordonnée à 5."
+        },
+        {
+          "q": "Que résume un tableau de variations ?",
+          "choix": [
+            "Uniquement le nom de la fonction",
+            "Les intervalles de croissance et de décroissance",
+            "Uniquement les unités"
+          ],
+          "rep": "Les intervalles de croissance et de décroissance",
+          "expl": "Il indique le sens des variations."
+        }
+      ],
+      "id": "REV-ESC-1RE-53"
+    }
+  ]
+}
