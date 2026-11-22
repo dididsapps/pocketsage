@@ -383,6 +383,26 @@ body.soir #nuit-c span{color:#E0B080}
 .lum-bar input{flex:1;accent-color:#F2A65A;height:28px}
 #veilleuse .lum-bar{width:100%;max-width:340px;margin:0}
 /* 💪 Mes super-pouvoirs */
+.rx-hero{display:flex;gap:12px;align-items:center;margin:12px 14px;padding:16px;border-radius:20px;background:linear-gradient(135deg,#2E7D6B,#56C596);color:#fff;font-family:var(--f)}
+.rx-he{font-size:40px}.rx-hero b{display:block;font-size:19px}.rx-hero span{font-size:13px;line-height:1.45;opacity:.95}
+.rx-amb{margin:0 14px 10px;padding:12px 14px;border-radius:16px;background:var(--w,#fff);box-shadow:var(--sh);font-family:var(--f);color:var(--t)}
+.rx-at{font-weight:900;font-size:14px}.rx-at small{font-weight:600;color:var(--tl,#666);font-size:11.5px}
+.rx-chips{display:flex;flex-wrap:wrap;gap:7px;margin:9px 0}.rx-chip{padding:8px 12px;border-radius:14px;border:2px solid #56C596;background:var(--w,#fff);color:#2E7D6B;font-family:var(--f);font-weight:800;font-size:13px;cursor:pointer}
+.rx-chip.on{background:#2E7D6B;border-color:#2E7D6B;color:#fff}
+.rx-ctl{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:13px}.rx-ctl input{vertical-align:middle;width:120px}.rx-ctl select{font-family:var(--f);font-size:12.5px;padding:5px;border-radius:10px;border:1px solid #ccc;background:var(--w,#fff);color:var(--t)}
+.rx-tout{display:block;margin:4px 16px 2px;font-family:var(--f);font-size:12.5px;color:var(--tl,#666)}
+.rx-sec{margin:16px 16px 8px;font-family:var(--f);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;color:var(--tl,#666)}
+.rx-card{display:flex;align-items:center;gap:12px;width:calc(100% - 28px);margin:0 14px 8px;padding:12px 14px;border:none;border-left:5px solid #56C596;border-radius:14px;background:var(--w,#fff);box-shadow:var(--sh);font-family:var(--f);text-align:left;cursor:pointer;color:var(--t)}
+.rx-ce{font-size:28px}.rx-ct{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}.rx-ct b{font-size:14.5px}.rx-ct small{font-size:12px;color:var(--tl,#666)}.rx-cs{font-weight:900;color:#2E7D6B;font-size:13px}
+.rx-lien{display:block;width:calc(100% - 28px);margin:14px 14px 6px;padding:12px 14px;border:2px dashed #56C596;border-radius:14px;background:transparent;font-family:var(--f);font-size:13px;color:var(--t);text-align:left;cursor:pointer}
+.rx-note{margin:10px 16px 24px;font-family:var(--f);font-size:11.5px;color:var(--tl,#666);line-height:1.45}
+.rx-seance{padding:10px 0 30px;font-family:var(--f);color:var(--t)}.rx-back{margin:0 14px;background:none;border:none;color:#2E7D6B;font-family:var(--f);font-weight:800;font-size:13px;cursor:pointer;padding:4px 0}
+.rx-st{margin:6px 14px 2px;font-size:21px;font-weight:900;display:flex;gap:8px}.rx-sm{margin:0 14px;font-size:12.5px;color:var(--tl,#666)}
+.rx-dur{display:flex;gap:6px;align-items:center;margin:12px 14px}.rx-dur button{padding:6px 12px;border-radius:12px;border:2px solid #56C596;background:var(--w,#fff);color:#2E7D6B;font-family:var(--f);font-weight:800;font-size:12.5px;cursor:pointer}
+.rx-dur button.on{background:#56C596;color:#fff}.rx-min2{font-size:12.5px;color:var(--tl,#666);margin-left:4px}
+.rx-txt{margin:10px 14px;min-height:130px;padding:22px 18px;border-radius:20px;background:linear-gradient(160deg,#E8F6EF,#E3EEFB);color:#1F3B2D;font-size:19px;font-weight:700;line-height:1.5;display:flex;align-items:center;justify-content:center;text-align:center}
+.rx-prog{height:6px;margin:0 14px;border-radius:6px;background:#D7EFE3;overflow:hidden}.rx-prog div{height:100%;width:0;background:#2E7D6B;transition:width .6s}
+.rx-go{display:block;width:calc(100% - 28px);margin:14px 14px;padding:14px;border:none;border-radius:16px;background:#2E7D6B;color:#fff;font-family:var(--f);font-size:16px;font-weight:900;cursor:pointer}
 .yg-intro{margin:0 0 12px;padding:12px 14px;border-radius:16px;background:linear-gradient(135deg,#E9F7EF,#E8F0FE);display:flex;flex-direction:column;gap:4px;font-family:var(--f);color:#1F3B2D}
 .yg-intro b{font-size:15px}.yg-intro span{font-size:13px;line-height:1.45}
 .yg-seance{display:flex;align-items:center;gap:12px;width:100%;margin:0 0 9px;padding:13px 14px;border:none;border-radius:16px;background:linear-gradient(135deg,#43B581,#2E86AB);color:#fff;font-family:var(--f);text-align:left;cursor:pointer;box-shadow:var(--sh)}
@@ -1036,7 +1056,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=85">
+<link rel="stylesheet" href="css/jeux.css?v=86">
 </head>
 <body>
 
@@ -1485,6 +1505,13 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   </div>
   <div class="sc" id="parcours-c"></div>
 </div>
+<div class="scr" id="scr-relax">
+  <div class="hdr">
+    <button class="hbk" onclick="goHome()"></button>
+    <div class="htit">🌿 Relaxation</div>
+  </div>
+  <div class="sc" id="relax-c"></div>
+</div>
 <div class="scr" id="scr-fiches">
   <div class="hdr">
     <button class="hbk" onclick="openMod('savoirs')"></button>
@@ -1591,11 +1618,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=85"></script>
-<script src="js/jeux-cerveau.js?v=85"></script>
-<script src="js/coach-voix.js?v=85"></script>
-<script src="js/monde-interieur.js?v=85"></script>
-<script src="js/monde-plus.js?v=85"></script>
+<script src="js/jeux.js?v=86"></script>
+<script src="js/jeux-cerveau.js?v=86"></script>
+<script src="js/coach-voix.js?v=86"></script>
+<script src="js/monde-interieur.js?v=86"></script>
+<script src="js/monde-plus.js?v=86"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -9870,11 +9897,11 @@ DE:[
 ]
 },
 meditation:[
-{id:"MED-001",titre:"La Respiration de la Fleur 🌸",texte:"Ferme les yeux. Imagine une belle fleur devant toi. Inspire doucement par le nez pendant 4 secondes, comme si tu la sentais. Retiens 2 secondes. Puis expire lentement 6 secondes, comme si tu soufflais sur ses pétales. Répète 5 fois. Tu te sens plus calme… plus léger…",dur:60,diff:1,age:"4-8"},
-{id:"MED-002",titre:"Le Voyage dans les Nuages ☁️",texte:"Allonge-toi. Ferme les yeux. Tu es sur un nuage doux, flottant dans le ciel bleu. Tu te sens léger comme une plume. Tu regardes la Terre : forêts vertes, rivières bleues. Tu es en paix. Rien ne peut te déranger ici…",dur:90,diff:1,age:"4-10"},
-{id:"MED-003",titre:"La Respiration du Lion 🦁",texte:"Assieds-toi droit. Inspire profondément. Puis ouvre grand la bouche, tire la langue et expire fort : HAAAAAA ! Fais-le 3 fois. Cette respiration chasse les émotions difficiles. Après, inspire doucement… expire doucement… Tu es fort et calme comme un lion.",dur:45,diff:1,age:"4-12"},
-{id:"MED-004",titre:"Le Scanner du Corps 🧘",texte:"Ferme les yeux. Commence par tes pieds : détends-les. Monte vers les jambes, les genoux, les hanches. Relâche. Vers le ventre, le dos, les épaules, les bras, les mains, le cou, le visage. Tout ton corps est maintenant détendu comme du miel.",dur:120,diff:2,age:"8-18"},
-{id:"MED-005",titre:"Les 3 Belles Choses 🌟",texte:"Pense à 3 belles choses d'aujourd'hui. Même toutes petites : un repas délicieux, un sourire, un rayon de soleil. Pour chacune, sens la gratitude dans ton cœur — une petite lumière chaude qui grandit. Ouvre les yeux et porte ce sentiment avec toi.",dur:60,diff:1,age:"6-18"}
+{id:"MED-001",titre:"La Respiration de la Fleur 🌸",texte:"Ferme les yeux si tu veux. Imagine une belle fleur devant toi. Inspire doucement par le nez, comme si tu sentais son parfum. Puis souffle lentement par la bouche, comme si tu soufflais tout doucement sur ses pétales. Encore une fois : sens la fleur… et souffle sur les pétales. Continue comme ça, trois ou quatre fois, à ton rythme. Puis respire normalement, et remarque comment tu te sens.",dur:60,diff:1,age:"4-8"},
+{id:"MED-002",titre:"Le Voyage dans les Nuages ☁️",texte:"Allonge-toi bien confortablement. Ferme les yeux si tu veux. Imagine un nuage tout doux, comme un gros coussin, et tu te couches dessus. Le nuage te porte, il te tient bien. Il flotte tout lentement dans le ciel bleu. Si tu veux, regarde en bas : des forêts vertes, des rivières bleues, des petites maisons. Respire tranquillement. Quand tu veux, le nuage te ramène tout doucement dans ton lit.",dur:90,diff:1,age:"4-10"},
+{id:"MED-003",titre:"La Respiration du Lion 🦁",texte:"Assieds-toi, le dos bien droit. Inspire par le nez. Puis ouvre grand la bouche, tire la langue, et souffle fort en faisant « ha », comme un lion. Fais-le trois fois, sans forcer. Ensuite, inspire doucement… et souffle doucement. Remarque comment tu te sens maintenant.",dur:45,diff:1,age:"4-12"},
+{id:"MED-004",titre:"Le Scanner du Corps 🧘",texte:"Ferme les yeux si tu veux. Porte ton attention sur tes pieds. Remarque ce que tu sens, puis laisse-les se reposer. Monte vers les jambes, les genoux, les hanches. Puis le ventre, qui bouge avec ta respiration. Le dos, les épaules, les bras, les mains. Le cou, et le visage. Pour finir, sens tout ton corps en même temps, posé et tranquille.",dur:120,diff:2,age:"8-18"},
+{id:"MED-005",titre:"Les 3 Belles Choses 🌟",texte:"Ferme les yeux si tu veux. Pense à trois belles choses d'aujourd'hui. Même toutes petites : un bon repas, un sourire, un rayon de soleil. Pour chacune, prends un moment pour la revoir dans ta tête, et pour remarquer ce que tu ressens. Puis ouvre les yeux, et garde ces belles choses avec toi.",dur:60,diff:1,age:"6-18"}
 ],
 histoires:[
 {id:'HS-001',titre:'Le Petit Nuage Curieux 🌤️',texte:'Il était une fois un petit nuage qui s\'appelait Flocon. Il habitait tout là-haut dans le ciel, avec ses amis les nuages gris, les nuages roses et les grands nuages blancs tout duveteux.\n\nUn matin, Flocon se réveilla avec une grande envie de voyager. Il voulait voir le monde en dessous. Doucement, porté par le vent, il descendit, descendit…\n\nIl passa au-dessus d\'une forêt verte où les oiseaux chantaient. Il passa au-dessus d\'une mer bleue où des baleines jouaient. Il passa au-dessus d\'une ville où des enfants riaient dans les rues.\n\nUn petit garçon leva la tête et dit : « Regarde, maman, ce nuage me sourit ! »\n\nFlocon était tellement content que quelques petites gouttes de pluie tombèrent de lui — mais des gouttes douces, comme des bisous du ciel.\n\nLe soir, fatigué mais heureux, Flocon remonta retrouver ses amis. Il leur raconta tout ce qu\'il avait vu. Et cette nuit-là, tous les nuages rêvèrent du monde d\'en bas.',dur:5,age:'4-7',long:true},
@@ -9900,11 +9927,11 @@ histoires:[
 {id:'HR-005',titre:'La Neige Douce ❄️',texte:'Allonge-toi. Sens la chaleur de ton lit. Ferme les yeux...\n\n[RESPIRE] Inspire lentement : 1… 2… 3… 4… Expire encore plus lentement : 1… 2… 3… 4… 5… 6… 7… 8…\n\nDehors, il neige. Mais toi tu es chaud, bien au chaud. Les flocons tombent, doucement, silencieusement.\n\nChaque souffle que tu expires emporte une pensée de la journée. Les soucis s\'en vont dans les flocons. Les émotions se dissolvent dans la neige blanche.\n\n[RESPIRE] Inspire fraîcheur : 1… 2… 3… 4… Expire douceur : 1… 2… 3… 4… 5… 6… 7… 8…\n\nLe monde est silencieux sous son manteau blanc. Il n\'y a plus rien à faire. Juste recevoir ce calme immense, cette paix.\n\nTu t\'endors comme la nature sous la neige : doucement, profondément, en paix.',dur:12,age:'6-14',audio:true,respiration:'4-8'}
 ],
 meditation_en:[
-{id:"MED-EN-001",titre:"The Flower Breathing 🌸",texte:"Close your eyes. Imagine a beautiful flower in front of you. Breathe in slowly through your nose for 4 seconds, as if you are smelling it. Hold for 2 seconds. Then breathe out slowly for 6 seconds, as if you are blowing on its petals. Repeat 5 times. You feel calmer… lighter…",dur:60,diff:1,age:"4-8"},
-{id:"MED-EN-002",titre:"Journey Through the Clouds ☁️",texte:"Lie down. Close your eyes. You are on a soft cloud, floating in the blue sky. You feel as light as a feather. You look down at the Earth: green forests, blue rivers. You are at peace. Nothing can disturb you here…",dur:90,diff:1,age:"4-10"},
-{id:"MED-EN-003",titre:"The Lion's Breath 🦁",texte:"Sit up straight. Breathe in deeply. Then open your mouth wide, stick out your tongue and breathe out loudly: HAAAAA! Do it 3 times. This breath chases away difficult feelings. Then breathe in gently… breathe out gently… You are strong and calm like a lion.",dur:45,diff:1,age:"4-12"},
-{id:"MED-EN-004",titre:"The Body Scan 🧘",texte:"Close your eyes. Start with your feet: relax them. Move up to your legs, your knees, your hips. Let go. Then your belly, your back, your shoulders, your arms, your hands, your neck, your face. Your whole body is now relaxed like warm honey.",dur:120,diff:2,age:"8-18"},
-{id:"MED-EN-005",titre:"3 Beautiful Things 🌟",texte:"Think of 3 beautiful things from today. Even tiny ones: a delicious meal, a smile, a ray of sunshine. For each one, feel the gratitude in your heart — a little warm light that grows. Open your eyes and carry that feeling with you.",dur:60,diff:1,age:"6-18"}
+{id:"MED-EN-001",titre:"The Flower Breathing 🌸",texte:"Close your eyes if you like. Imagine a beautiful flower in front of you. Breathe in gently through your nose, as if you were smelling its scent. Then breathe out slowly through your mouth, as if you were blowing very softly on its petals. Once more: smell the flower… and blow on the petals. Keep going like this, three or four times, at your own pace. Then breathe normally, and notice how you feel.",dur:60,diff:1,age:"4-8"},
+{id:"MED-EN-002",titre:"Journey Through the Clouds ☁️",texte:"Lie down comfortably. Close your eyes if you like. Imagine a very soft cloud, like a big cushion, and you lie down on it. The cloud carries you and holds you safely. It floats very slowly in the blue sky. If you like, look down: green forests, blue rivers, little houses. Breathe quietly. Whenever you want, the cloud gently brings you back to your bed.",dur:90,diff:1,age:"4-10"},
+{id:"MED-EN-003",titre:"The Lion's Breath 🦁",texte:"Sit up nice and tall. Breathe in through your nose. Then open your mouth wide, stick out your tongue, and breathe out strongly with a \"ha\" sound, like a lion. Do it three times, without forcing. Then breathe in gently… and breathe out gently. Notice how you feel now.",dur:45,diff:1,age:"4-12"},
+{id:"MED-EN-004",titre:"The Body Scan 🧘",texte:"Close your eyes if you like. Bring your attention to your feet. Notice what you feel, then let them rest. Move up to your legs, your knees, your hips. Then your belly, moving with your breath. Your back, your shoulders, your arms, your hands. Your neck, and your face. To finish, feel your whole body at once, settled and calm.",dur:120,diff:2,age:"8-18"},
+{id:"MED-EN-005",titre:"3 Beautiful Things 🌟",texte:"Close your eyes if you like. Think of three nice things from today. Even tiny ones: a good meal, a smile, a ray of sunshine. For each one, take a moment to see it again in your mind, and to notice what you feel. Then open your eyes, and keep these nice things with you.",dur:60,diff:1,age:"6-18"}
 ],
 histoires_en:[
 {id:"HS-EN-001",titre:"The Little Curious Cloud 🌤️",texte:"Once upon a time, there was a little cloud named Fluff. He lived high up in the sky with his friends — the grey clouds, the pink clouds, and the big fluffy white clouds.\n\nOne morning, Fluff woke up with a great urge to travel. He wanted to see the world below. Gently, carried by the wind, he drifted down, down…\n\nHe floated over a green forest where birds were singing. He floated over a blue sea where whales were playing. He floated over a city where children were laughing in the streets.\n\nA little boy looked up and said: \"Look, Mum, that cloud is smiling at me!\"\n\nFluff was so happy that a few tiny drops of rain fell from him — but soft drops, like kisses from the sky.\n\nIn the evening, tired but happy, Fluff drifted back up to his friends. He told them everything he had seen. And that night, all the clouds dreamed of the world below.",dur:5,age:"4-7",long:true},
@@ -10780,7 +10807,7 @@ function _soirTick(force){let k=0;try{k=soirK();}catch(e){}
 setInterval(()=>{try{_soirTick();_yeuxTick();}catch(e){}},30000);setTimeout(()=>{try{_soirTick(true);}catch(e){}},1500);
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')try{_soirTick(true);}catch(e){}});
 // Couvre-feu doux : après l'heure du coucher, seuls les écrans du soir restent ouverts
-const _SOIR_OK=['nuit','reader','profil','legal','setup','home','stats'];
+const _SOIR_OK=['nuit','relax','reader','profil','legal','setup','home','stats'];
 function soirBloque(id){try{if(_SOIR_OK.includes(id)||!apresCoucher())return false;}catch(e){return false;}
   if(document.querySelector('.ps-modal'))return true;const p=P();
   const m=document.createElement('div');m.className='ps-modal';
@@ -12072,6 +12099,7 @@ function show(id){
     if(typeof soirBloque==='function'&&soirBloque(id))return;
     document.body.classList.toggle('nuit-on',id==='nuit'||(id==='reader'&&!!document.querySelector('#scr-reader')));try{_soirTick(true);}catch(e){}
     if(id!=='game'&&typeof _gClearAll==='function')_gClearAll();
+    if(id!=='relax'&&id!=='defi'){try{if(window.relaxArreter){relaxArreter();relaxStopSons();}}catch(e){}}
     if(id!=='defi'&&typeof hfStop==='function'){hfStop();try{coachStopVoice();coachWakeOff();}catch(e){}}
     // Ne pas appeler ttsStop() ici — speechSynthesis.cancel() gèle sur mobile
     _ttsQueue=[];_ttsPlaying=false;
@@ -12162,7 +12190,7 @@ function openWorld(){
   if(btn)btn.classList.add('active');
   buildWorldScreen();
 }
-function backMod(){try{clearTimer();if(APP.curMod)openMod(APP.curMod);else goHome();}catch(e){goHome();}}
+function backMod(){try{clearTimer();if(APP._retRelax){APP._retRelax=false;openRelax();return;}if(APP.curMod)openMod(APP.curMod);else goHome();}catch(e){goHome();}}
 function clearTimer(){try{if(APP.timer){clearInterval(APP.timer);APP.timer=null;}}catch(e){}}
 
 // ════════════════════════════════════════════
@@ -12633,6 +12661,7 @@ const HOME_MODS=[
   {id:'politesse',icon:'🌸',name:t('m_politesse'),desc:t('m_politesse_d'),color:'linear-gradient(135deg,#FF9F1C,#FF6B35)',nav:'politesse'},
   {id:'videos',icon:'🎬',name:t('m_videos'),desc:t('m_videos_d'),color:'linear-gradient(135deg,#E040FB,#AB47BC)',nav:'videos'},
   {id:'ateliers',icon:'🎨',name:t('m_ateliers'),desc:t('m_ateliers_d'),color:'linear-gradient(135deg,#FF6B6B,#FF9F1C)',nav:'ateliers'},
+  {id:'relax',icon:'🌿',name:'Relaxation',desc:'Méditations guidées par âge, respirations et ambiances sonores pour se poser quelques minutes',color:'linear-gradient(135deg,#2E7D6B,#56C596)',nav:'relax'},
   {id:'nuit',icon:'🌙',name:t('m_nuit'),desc:t('m_nuit_d'),color:'linear-gradient(135deg,#1A1A3E,#2D2D60)',nav:'nuit'},
   {id:'jeux',icon:'🎮',name:t('m_jeux'),desc:t('m_jeux_d'),color:'linear-gradient(135deg,#26C6DA,#0097A7)',nav:'jeux'},
   {id:'sport',icon:'🏃',name:t('m_sport'),desc:t('m_sport_d'),color:'linear-gradient(135deg,#FF6B35,#FF9F1C)',nav:'defis'},
@@ -12927,6 +12956,7 @@ function buildHome(){try{applyLang();}catch(e){}
             if(m.nav==='flash')openFlash();
             else if(m.nav==='politesse')openPolitesse();
             else if(m.nav==='parcours')openParcours();
+            else if(m.nav==='relax')openRelax();
             else if(m.nav==='nuit')openNuit();
             else if(m.nav==='jeux')openJeux();
             else if(m.nav==='videos')openMod('recompenses');
@@ -20346,11 +20376,12 @@ window.transferCoinsToWorld=function(n){
 
 })();
 </script>
-<script src="js/questions-plus-data.js?v=85"></script>
-<script src="js/questions-plus.js?v=85"></script>
-<script src="js/parcours-data.js?v=85"></script>
-<script src="js/parcours.js?v=85"></script>
-<script src="js/fiches.js?v=85"></script>
+<script src="js/questions-plus-data.js?v=86"></script>
+<script src="js/questions-plus.js?v=86"></script>
+<script src="js/parcours-data.js?v=86"></script>
+<script src="js/parcours.js?v=86"></script>
+<script src="js/fiches.js?v=86"></script>
+<script src="js/relax.js?v=86"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {

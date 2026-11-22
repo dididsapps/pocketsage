@@ -43,3 +43,4 @@ Constat novembre (1-21) : 74,67 € — Translate 42,99 € (ateliers + flashcar
 - [ ] MP3 des autres langues en **WaveNet** (4 M gratuits/mois, puis 4 $/M), étalés sur ~3 mois ; d'abord les langues les plus utilisées (statistiques)
 - [ ] Décider : couper l'appel Google Translate du workflow flashcards (flash-tts.yml)
 - [ ] Recevoir et passer à la moulinette les lots 3 (4e → Première) et 4 (Terminale)
+- [ ] **1er décembre :** MP3 des méditations de Relaxation (RX-001 à 015, Google Neural2-D posée, pauses en SSML) → audio/relax/<id>.mp3, et branchement dans js/relax.js (mode « Court »)
