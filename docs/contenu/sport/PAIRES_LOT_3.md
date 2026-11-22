@@ -92,3 +92,7 @@ RANGÉE DU BAS — YF-015 : Le Triangle à deux (duo adulte + enfant) : Dos à d
 
 Titre de l'image : YF-014 + YF-015. Ne dessine AUCUN autre exercice. Écris les légendes des cases sous l'image.
 ```
+
+## Retouches et à refaire
+- YF-001 Arbre à deux : le pied est sur le GENOU (Sami et Lou) → à refaire, pied contre la cheville ou le mollet. Case 4 = changement de place (miroir possible par Claude).
+- YF-002 Bateau à deux : case 4 trop proche de la case 1 → Claude utilise la case 2 pour le retour.
