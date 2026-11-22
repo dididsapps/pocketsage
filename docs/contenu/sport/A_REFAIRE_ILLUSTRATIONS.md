@@ -53,3 +53,4 @@ RANGÉE 3 — YF-013 Le Guerrier à deux, de face, côte à côte : 1) debout, m
 ## Ce que Claude corrige seul (miroir / choix de case)
 DF-012, DF-019, DF-023, DF-037, DF-038, DF-039, YG-014, YG-021, YF-015 (miroirs) ; DF-032, YG-011, YF-002, YF-005, YF-010, YF-011 (choix des cases) ; DF-020, DF-022, DF-024, DF-025 (maquette retouchée).
 - FAIT (message 1, v2) : DF-029 Superman OK en vue de dessus ; DF-034 Dead bug : cases 1 et 2 gardées, case 3 identique non utilisée (l'alternance est dite par le coach).
+- FAIT (message 2) : DF-057 Nageur OK ; YG-002 Arbre OK (pied contre le mollet), case 4 même côté → miroir Claude.
