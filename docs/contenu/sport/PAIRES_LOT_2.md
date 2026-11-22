@@ -244,3 +244,4 @@ Titre de l'image : YG-020 + YG-021. Ne dessine AUCUN autre exercice. Écris les 
 - YG-004 Chien tête en bas : case 3 à refaire (tête tournée/renversée vers l'arrière entre les bras) → tête qui pend librement entre les bras, nuque détendue dans l'axe, regard vers les genoux. Les cases 1, 2 et 4 sont bonnes.
 - YG-014 Flamant rose : case 4 = même jambe levée que la case 2 → miroir (Claude).
 - YG-018 Salut au soleil : 9 petites postures dans une bande (trop petites pour l'animation, chien tête en bas à tête renversée). À refaire en 2 images de 4 cases : 1) montagne, bras au ciel, penché en avant, planche ; 2) allongé au sol, cobra, chien tête en bas (tête qui pend, nuque dans l'axe), retour debout bras au ciel.
+- YG-021 Triangle : case 4 = même côté que case 2 → miroir (Claude).
