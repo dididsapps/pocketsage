@@ -99,3 +99,4 @@ Titre de l'image : YF-014 + YF-015. Ne dessine AUCUN autre exercice. Écris les 
 - YF-004 Torsion à deux : la torsion est trop faible (on dirait un simple regard sur le côté) et les mains ne sont pas sur le genou de l'autre → à refaire : buste nettement tourné, une main sur son propre genou, l'autre sur le genou du partenaire ; case suivante = l'autre côté.
 - YF-005 Chaise dos à dos : case 3 descend trop bas (cuisses horizontales) alors que la consigne limite à mi-hauteur → Claude utilise la case 2 comme position basse.
 - YF-006 Tunnel : tête de Lou dessinée à l'envers sous le corps (cases 1-4) → à refaire : tête qui pend entre ses bras, nuque dans l'axe, visage vers les genoux.
+- YF-005 : consigne changée (flexion légère, sans appui) → le dessin doit montrer une flexion légère, chacun en équilibre ; case 3 à ne pas utiliser.
