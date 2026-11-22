@@ -60,3 +60,4 @@ DF-012, DF-019, DF-023, DF-037, DF-038, DF-039, YG-014, YG-021, YF-015 (miroirs)
 - message 6 : YF-008 Balançoire OK ; YF-013 Guerrier OK (pieds non croisés) ; YF-007 Lézard encore DANGEREUX (enfant assis vers la tête/nuque) → proposer le retrait de l'exercice.
 - FAIT : YF-001 Arbre à deux v4 OK (pied en béquille contre la cheville, changement de place).
 - FAIT : YF-006 Tunnel OK (tête qui pend, nuque dans l'axe). YF-004 : consigne passée en côte à côte (accord utilisateur), dessin v3 retenu.
+- FAIT : YF-007 Lézard v4 : cases 1 et 2 seulement (case 3 : haut du corps de l'enfant sur les épaules de l'adulte → exclue). Consigne et hint vérifiés.
