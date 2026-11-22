@@ -235,3 +235,8 @@ RANGÉE DU BAS — YG-021 : Le Triangle : Jambes écartées, pied avant tourné 
 
 Titre de l'image : YG-020 + YG-021. Ne dessine AUCUN autre exercice. Écris les légendes des cases sous l'image.
 ```
+
+## Retouches Claude (miroir)
+- DF-038 : case 4 = miroir de la case 2 (tête et buste tournés de l'autre côté).
+- DF-039 : case 4 = miroir de la case 3 (autre jambe devant).
+- DF-037 : ajouter l'autre côté = miroir de la dernière case.
