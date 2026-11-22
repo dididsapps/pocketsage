@@ -104,3 +104,5 @@ Titre de l'image : YF-014 + YF-015. Ne dessine AUCUN autre exercice. Écris les 
 - YF-008 Balançoire : l'alternance ne se voit pas → à refaire : case 1 assis face à face, pieds contre pieds, mains tenues ; case 2 Sami penché en avant, Lou penchée en arrière ; case 3 l'inverse (Lou en avant, Sami en arrière) ; case 4 retour au centre. Lou garde les genoux un peu pliés.
 - YF-009 Papillons jumeaux : OK.
 - YF-010 Miroir : case 3 (arbre, pieds sur les genoux) à ne pas utiliser ; Claude garde les cases 1, 2 et 4 (debout, bras levés, guerrier). L'échange de chef est porté par la voix du coach.
+- YF-011 Double chien : case 3 (têtes retournées entre les jambes, grimace) → nuque trop renversée, à ne pas utiliser ; Claude garde cases 1, 2, 4. Optionnel : refaire case 3 avec têtes qui pendent simplement, regard vers l'autre entre les jambes, sans torsion de nuque.
+- YF-013 Guerrier à deux : pieds arrière qui se croisent → à refaire : pieds arrière proches mais NON croisés, espace de quelques centimètres, chacun bien stable ; Lou écarte davantage les pieds.
