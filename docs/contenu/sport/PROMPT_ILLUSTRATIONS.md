@@ -8,8 +8,9 @@ un fichier `legendes.json` avec une courte légende par image. À la fin, mets t
 
 ```
 STYLE (à respecter pour TOUTES les images, pour qu'elles forment une collection cohérente)
-- Dessin d'illustration jeunesse façon crayon de couleur : trait de crayon graphite visible, remplissage doux
-  au crayon de couleur / aquarelle légère, couleurs pastel chaleureuses (vert sauge, bleu ciel, jaune doux, corail).
+- Style choisi : illustration jeunesse au CRAYON DE COULEUR avec un CONTOUR BRUN FONCÉ ASSEZ ÉPAIS et régulier
+  autour des personnages (pour rester lisible en tout petit), remplissage au crayon de couleur avec texture visible,
+  couleurs chaudes et douces, joues rosées. Exactement le même rendu que l'image de référence « Le Ballon à deux ».
 - Fond blanc uni, sans décor, sans sol dessiné (juste une petite ombre douce sous le personnage), sans texte,
   sans lettre, sans chiffre, sans logo.
 - Format carré 1024 × 1024, personnage centré, entier, avec une marge autour.
@@ -21,7 +22,8 @@ STYLE (à respecter pour TOUTES les images, pour qu'elles forment une collection
   pour que la posture soit EXACTE et facile à imiter : bras, jambes, dos et tête placés exactement comme la consigne.
 - DÉCOMPOSITION EN ÉTAPES : chaque exercice = 2 à 4 images qui montrent les étapes clés, dans l'ordre :
   • posture tenue (ex. l'arbre) : 2 images = entrée dans la posture, puis posture finale ;
-  • mouvement aller-retour (ex. le ballon, le chat et la vache) : 2 ou 3 images = position de départ, position haute, position basse ;
+  • mouvement aller-retour (ex. le ballon, le chat et la vache) : 2 ou 3 images = position de départ, position haute, puis
+    une position INTERMÉDIAIRE en train de redescendre (jamais une dernière image identique à la première) ;
   • enchaînement (ex. le salut au soleil) : 4 images maximum, les positions les plus importantes ;
   • exercice avec changement de côté : la dernière image peut montrer l'autre côté.
   Les images d'un même exercice ont exactement le même cadrage, la même taille de personnage et le même angle de vue,
