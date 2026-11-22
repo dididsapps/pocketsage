@@ -242,3 +242,4 @@ Titre de l'image : YG-020 + YG-021. Ne dessine AUCUN autre exercice. Écris les 
 - DF-037 : ajouter l'autre côté = miroir de la dernière case.
 - YG-002 L'Arbre : le pied est posé SUR LE GENOU (consigne : jamais sur le genou, sur la cheville ou le mollet) → à refaire : pied contre l'intérieur du mollet ou de la cheville. (Sert aussi pour DF-015.)
 - YG-004 Chien tête en bas : case 3 à refaire (tête tournée/renversée vers l'arrière entre les bras) → tête qui pend librement entre les bras, nuque détendue dans l'axe, regard vers les genoux. Les cases 1, 2 et 4 sont bonnes.
+- YG-014 Flamant rose : case 4 = même jambe levée que la case 2 → miroir (Claude).
