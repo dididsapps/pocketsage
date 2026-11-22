@@ -57,3 +57,4 @@ DF-012, DF-019, DF-023, DF-037, DF-038, DF-039, YG-014, YG-021, YF-015 (miroirs)
 - FAIT (message 3) : YG-004 Chien OK (tête entre les bras, nuque dans l'axe : un visage à l'envers vu de profil est normal dans cette posture) ; YG-018 partie 1 OK.
 - FAIT (message 4) : YG-018 partie 2 OK. YF-001 : pieds OK mais Lou méconnaissable (haut violet, chignon, taille d'enfant) → relancer la rangée du bas seule.
 - REJET (message 5, nouvelle conversation) : Lou méconnaissable (violet, chignon) ; torsion côte à côte au lieu de dos à dos. Relancer YF-001, YF-004, YF-006, YF-007, YF-008, YF-013 dans l'ANCIENNE conversation du lot 3 (Lou correcte).
+- message 6 : YF-008 Balançoire OK ; YF-013 Guerrier OK (pieds non croisés) ; YF-007 Lézard encore DANGEREUX (enfant assis vers la tête/nuque) → proposer le retrait de l'exercice.
