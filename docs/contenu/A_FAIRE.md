@@ -44,3 +44,10 @@ Constat novembre (1-21) : 74,67 € — Translate 42,99 € (ateliers + flashcar
 - [ ] Décider : couper l'appel Google Translate du workflow flashcards (flash-tts.yml)
 - [ ] Recevoir et passer à la moulinette les lots 3 (4e → Première) et 4 (Terminale)
 - [ ] **1er décembre :** MP3 des méditations de Relaxation (RX-001 à 015, Google Neural2-D posée, pauses en SSML) → audio/relax/<id>.mp3, et branchement dans js/relax.js (mode « Court »)
+
+## Comment ça marche ? + Bien parler (validé 23/11 : les 32 thèmes)
+- [ ] Prompts GPT prêts : docs/contenu/gpt/comment_ca_marche/LOT_1..4.md (CM-01..22, BP-23..32)
+- [ ] Pilote : CM-01 Électricité de la maison (rédigé + schémas animés par Claude) pour valider le format
+- [ ] Module appli : tuile « 🛠️ Comment ça marche ? », parcours de leçons, cartes + schémas SVG animés, quiz, « dans ta vie », vidéo « pour aller plus loin » (youtube-nocookie, réglage parent, coupé le soir)
+- [ ] « Bien parler » dans Politesse, avec mini-défis
+- [ ] Vidéos : liste vérifiée par la moulinette (FR d'abord, EN + sous-titres FR sinon)
