@@ -55,3 +55,4 @@ DF-012, DF-019, DF-023, DF-037, DF-038, DF-039, YG-014, YG-021, YF-015 (miroirs)
 - FAIT (message 1, v2) : DF-029 Superman OK en vue de dessus ; DF-034 Dead bug : cases 1 et 2 gardées, case 3 identique non utilisée (l'alternance est dite par le coach).
 - FAIT (message 2) : DF-057 Nageur OK ; YG-002 Arbre OK (pied contre le mollet), case 4 même côté → miroir Claude.
 - FAIT (message 3) : YG-004 Chien OK (tête entre les bras, nuque dans l'axe : un visage à l'envers vu de profil est normal dans cette posture) ; YG-018 partie 1 OK.
+- FAIT (message 4) : YG-018 partie 2 OK. YF-001 : pieds OK mais Lou méconnaissable (haut violet, chignon, taille d'enfant) → relancer la rangée du bas seule.
