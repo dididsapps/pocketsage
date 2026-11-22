@@ -1,0 +1,701 @@
+{
+ "classe": "3E",
+ "niveau_appli": "3ème",
+ "age": "14-15 ans",
+ "matiere": "Physique-chimie",
+ "code": "PC",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Organisation et transformations de la matière",
+   "titre": "Les ions",
+   "emoji": "⚛️",
+   "en_une_phrase": "Un ion est un atome ou un groupe d’atomes qui porte une charge électrique.",
+   "comprendre": "Tu sais qu’un atome est globalement neutre quand ses charges positives et négatives se compensent. Un atome peut perdre ou gagner des électrons. Il devient alors un ion chargé.",
+   "essentiel": [
+    "Un ion positif a perdu un ou plusieurs électrons.",
+    "Un ion négatif a gagné un ou plusieurs électrons.",
+    "Na⁺ et Cl⁻ sont des exemples d’ions."
+   ],
+   "image_mentale": "Imagine une balance de charges qui se déséquilibre quand un électron part ou arrive.",
+   "regle_ou_methode": "Compare le nombre de protons et d’électrons : un déficit d’électrons donne une charge positive.",
+   "exemples": [
+    "Un atome neutre perd un électron négatif. Il possède alors une charge positive supplémentaire. Il devient un ion positif.",
+    "Un atome de chlore qui gagne un électron peut devenir l’ion chlorure Cl⁻."
+   ],
+   "piege": "Un ion négatif n’a pas perdu des protons : il possède ici un excès d’électrons.",
+   "astuce_memoire": "Perdre un électron négatif rend l’ion positif.",
+   "quiz": [
+    {
+     "q": "Un atome neutre perd un électron. Quel type d’ion forme-t-il ?",
+     "choix": [
+      "Un ion négatif",
+      "Un ion positif",
+      "Un atome toujours neutre"
+     ],
+     "rep": "Un ion positif",
+     "expl": "La perte d’une charge négative laisse une charge positive."
+    },
+    {
+     "q": "Que signifie le signe moins de Cl⁻ ?",
+     "choix": [
+      "L’ion ne contient aucun électron",
+      "L’ion est nécessairement solide",
+      "L’ion porte une charge négative"
+     ],
+     "rep": "L’ion porte une charge négative",
+     "expl": "Le signe moins indique une charge électrique négative."
+    },
+    {
+     "q": "Un atome neutre gagne un électron. Quelle charge porte l’ion obtenu ?",
+     "choix": [
+      "Négative",
+      "Positive",
+      "Nulle"
+     ],
+     "rep": "Négative",
+     "expl": "Il possède une charge négative supplémentaire."
+    }
+   ],
+   "id": "REV-PC-3E-01"
+  },
+  {
+   "axe": "Organisation et transformations de la matière",
+   "titre": "Acidité et pH",
+   "emoji": "🧪",
+   "en_une_phrase": "Le pH permet de distinguer une solution acide, neutre ou basique.",
+   "comprendre": "Des solutions aqueuses peuvent avoir des propriétés différentes. Le pH est une grandeur qui aide à les caractériser. À environ 25 °C, une solution de pH inférieur à 7 est acide, égale à 7 est neutre et supérieure à 7 est basique.",
+   "essentiel": [
+    "Un pH inférieur à 7 indique une solution acide à environ 25 °C.",
+    "Un pH égal à 7 indique une solution neutre à environ 25 °C.",
+    "Un pH supérieur à 7 indique une solution basique à environ 25 °C."
+   ],
+   "image_mentale": "Imagine une échelle avec 7 au centre, acide en dessous et basique au-dessus.",
+   "regle_ou_methode": "Lis la valeur du pH puis compare-la à 7.",
+   "exemples": [
+    "Une solution a un pH de 3. Compare 3 à 7 : 3 est inférieur à 7. La solution est donc acide à environ 25 °C.",
+    "Une solution de pH 10 est basique à environ 25 °C."
+   ],
+   "piege": "Ne goûte jamais une solution pour déterminer son acidité.",
+   "astuce_memoire": "Sous 7 : acide ; 7 : neutre ; au-dessus : basique, à environ 25 °C.",
+   "quiz": [
+    {
+     "q": "Une solution a un pH de 3 à environ 25 °C. Comment la qualifier ?",
+     "choix": [
+      "Neutre",
+      "Basique",
+      "Acide"
+     ],
+     "rep": "Acide",
+     "expl": "3 est inférieur à 7."
+    },
+    {
+     "q": "Une solution a un pH de 10 à environ 25 °C. Comment la qualifier ?",
+     "choix": [
+      "Basique",
+      "Acide",
+      "Neutre"
+     ],
+     "rep": "Basique",
+     "expl": "10 est supérieur à 7."
+    },
+    {
+     "q": "Quel pH correspond à une solution neutre à environ 25 °C ?",
+     "choix": [
+      "3",
+      "7",
+      "10"
+     ],
+     "rep": "7",
+     "expl": "À environ 25 °C, une solution neutre a un pH voisin de 7."
+    }
+   ],
+   "id": "REV-PC-3E-02"
+  },
+  {
+   "axe": "Organisation et transformations de la matière",
+   "titre": "Concentration massique",
+   "emoji": "⚗️",
+   "en_une_phrase": "La concentration massique indique la masse de soluté dissoute par volume de solution.",
+   "comprendre": "Un même sirop peut être plus ou moins dilué. La concentration massique compare la masse de soluté au volume final de la solution. Elle permet de comparer des solutions en utilisant des unités identiques.",
+   "essentiel": [
+    "Concentration massique = masse de soluté ÷ volume de solution.",
+    "Une unité courante est le gramme par litre.",
+    "Le volume utilisé est celui de la solution obtenue."
+   ],
+   "image_mentale": "Imagine une quantité de soluté répartie dans un volume de liquide.",
+   "regle_ou_methode": "Exprime la masse en grammes et le volume en litres, puis divise.",
+   "exemples": [
+    "On dissout 6 g de soluté pour obtenir 0,5 L de solution. Calcule 6 ÷ 0,5. La concentration massique est 12 g/L.",
+    "Une solution contenant 8 g de soluté dans 2 L a une concentration de 4 g/L."
+   ],
+   "piege": "Ne divise pas le volume par la masse et utilise le volume de solution.",
+   "astuce_memoire": "Masse de soluté divisée par volume de solution.",
+   "quiz": [
+    {
+     "q": "6 g de soluté dans 0,5 L de solution : quelle concentration ?",
+     "choix": [
+      "12 g/L",
+      "3 g/L",
+      "6,5 g/L"
+     ],
+     "rep": "12 g/L",
+     "expl": "6 ÷ 0,5 = 12 g/L."
+    },
+    {
+     "q": "8 g de soluté dans 2 L de solution : quelle concentration ?",
+     "choix": [
+      "16 g/L",
+      "4 g/L",
+      "0,25 g/L"
+     ],
+     "rep": "4 g/L",
+     "expl": "8 ÷ 2 = 4 g/L."
+    },
+    {
+     "q": "Quelle unité peut exprimer une concentration massique ?",
+     "choix": [
+      "m/s",
+      "°C",
+      "g/L"
+     ],
+     "rep": "g/L",
+     "expl": "Le gramme par litre rapporte une masse à un volume."
+    }
+   ],
+   "id": "REV-PC-3E-03"
+  },
+  {
+   "axe": "Organisation et transformations de la matière",
+   "titre": "Équilibrer une réaction",
+   "emoji": "🧩",
+   "en_une_phrase": "Une équation chimique équilibrée conserve le nombre de chaque type d’atome.",
+   "comprendre": "Une transformation chimique réorganise les atomes des réactifs pour former des produits. Les atomes ne disparaissent pas dans le modèle étudié. Les coefficients placés devant les formules ajustent les quantités pour respecter cette conservation.",
+   "essentiel": [
+    "Les réactifs sont écrits à gauche de la flèche.",
+    "Les produits sont écrits à droite.",
+    "Chaque type d’atome est en même nombre des deux côtés."
+   ],
+   "image_mentale": "Imagine des billes de chaque couleur réparties en groupes différents mais conservées.",
+   "regle_ou_methode": "Compte chaque type d’atome des deux côtés et ajuste les coefficients devant les formules.",
+   "exemples": [
+    "Pour former de l’oxyde de fer, écris 4 Fe + 3 O₂ → 2 Fe₂O₃. À gauche, il y a quatre atomes Fe et six O. À droite, les deux unités de formule représentent quatre Fe et six O : le bilan est équilibré.",
+    "2 Mg + O₂ → 2 MgO conserve deux atomes Mg et deux atomes O de chaque côté."
+   ],
+   "piege": "Ne modifie pas les indices à l’intérieur des formules : cela changerait les espèces chimiques.",
+   "astuce_memoire": "Même nombre de chaque atome avant et après.",
+   "quiz": [
+    {
+     "q": "Combien d’atomes O sont représentés par 2 Fe₂O₃ ?",
+     "choix": [
+      "Trois",
+      "Six",
+      "Deux"
+     ],
+     "rep": "Six",
+     "expl": "Deux groupes Fe₂O₃ contiennent chacun trois atomes O."
+    },
+    {
+     "q": "Dans 2 MgO, combien y a-t-il d’atomes Mg ?",
+     "choix": [
+      "Un",
+      "Quatre",
+      "Deux"
+     ],
+     "rep": "Deux",
+     "expl": "Deux unités MgO contiennent chacune un atome Mg."
+    },
+    {
+     "q": "Que modifie-t-on pour équilibrer une équation sans changer les espèces ?",
+     "choix": [
+      "Les coefficients devant les formules",
+      "Les symboles chimiques",
+      "Les indices des formules au hasard"
+     ],
+     "rep": "Les coefficients devant les formules",
+     "expl": "Les coefficients modifient les quantités, pas les espèces."
+    }
+   ],
+   "id": "REV-PC-3E-04"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Masse et poids",
+   "emoji": "⚖️",
+   "en_une_phrase": "La masse d’un objet se mesure en kilogrammes et ne dépend pas du lieu ; son poids est la force d’attraction exercée par un astre, en newtons.",
+   "comprendre": "Un objet garde la même masse quand on le déplace de la Terre à la Lune, si sa composition ne change pas. Son poids change car l’intensité de la pesanteur diffère. On relie les deux grandeurs par P = m × g.",
+   "essentiel": [
+    "La masse se mesure en kilogrammes.",
+    "Le poids se mesure en newtons.",
+    "P = m × g avec g exprimé en newtons par kilogramme."
+   ],
+   "image_mentale": "Imagine une balance pour la masse et une flèche dirigée vers l’astre pour le poids.",
+   "regle_ou_methode": "Exprime la masse en kilogrammes, utilise la valeur de g donnée et multiplie.",
+   "exemples": [
+    "Un objet a une masse de 2 kg et on prend g = 10 N/kg. Calcule P = 2 × 10. Son poids vaut 20 N.",
+    "Avec la même valeur de g, un objet de 0,5 kg a un poids de 5 N."
+   ],
+   "piege": "Ne confonds pas kilogramme, unité de masse, et newton, unité de force.",
+   "astuce_memoire": "Poids en newtons : masse en kilogrammes fois g.",
+   "quiz": [
+    {
+     "q": "Avec m = 2 kg et g = 10 N/kg, quel est le poids ?",
+     "choix": [
+      "0,2 N",
+      "12 N",
+      "20 N"
+     ],
+     "rep": "20 N",
+     "expl": "P = 2 × 10 = 20 N."
+    },
+    {
+     "q": "Quelle unité mesure le poids ?",
+     "choix": [
+      "Le newton",
+      "Le kilogramme",
+      "La seconde"
+     ],
+     "rep": "Le newton",
+     "expl": "Le poids est une force mesurée en newtons."
+    },
+    {
+     "q": "Si la masse reste identique et que g diminue, que devient le poids ?",
+     "choix": [
+      "Il augmente nécessairement",
+      "Il diminue",
+      "Il reste forcément identique"
+     ],
+     "rep": "Il diminue",
+     "expl": "P = m × g : à masse constante, le poids varie avec g."
+    }
+   ],
+   "id": "REV-PC-3E-05"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Gravitation",
+   "emoji": "🌍",
+   "en_une_phrase": "Deux objets ayant une masse exercent l’un sur l’autre une interaction gravitationnelle attractive.",
+   "comprendre": "La Terre attire les objets proches de sa surface. Plus généralement, deux corps ayant une masse s’attirent mutuellement. L’intensité de cette interaction dépend de leurs masses et de leur distance.",
+   "essentiel": [
+    "La gravitation est une interaction attractive à distance.",
+    "Elle dépend des masses des deux objets.",
+    "Elle diminue quand la distance entre les centres augmente, toutes choses égales par ailleurs."
+   ],
+   "image_mentale": "Imagine deux corps reliés par deux flèches dirigées l’une vers l’autre.",
+   "regle_ou_methode": "Identifie les deux objets, puis examine leurs masses et la distance qui les sépare.",
+   "exemples": [
+    "La Terre attire la Lune. La Lune attire aussi la Terre. Il s’agit d’une interaction entre deux corps.",
+    "À masses constantes, éloigner deux objets diminue l’intensité de leur attraction gravitationnelle."
+   ],
+   "piege": "L’interaction est réciproque : les deux corps exercent chacun une force sur l’autre.",
+   "astuce_memoire": "Deux masses : attraction mutuelle à distance.",
+   "quiz": [
+    {
+     "q": "La gravitation entre deux corps est-elle attractive ?",
+     "choix": [
+      "Oui",
+      "Non, elle est toujours répulsive",
+      "Elle exige obligatoirement un contact"
+     ],
+     "rep": "Oui",
+     "expl": "La gravitation est une interaction attractive à distance."
+    },
+    {
+     "q": "La Lune attire-t-elle aussi la Terre ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement lorsque la Terre disparaît"
+     ],
+     "rep": "Oui",
+     "expl": "L’interaction gravitationnelle est réciproque."
+    },
+    {
+     "q": "À masses constantes, que devient l’attraction si la distance augmente ?",
+     "choix": [
+      "Elle augmente nécessairement",
+      "Elle reste toujours identique",
+      "Elle diminue"
+     ],
+     "rep": "Elle diminue",
+     "expl": "L’attraction gravitationnelle diminue avec la distance."
+    }
+   ],
+   "id": "REV-PC-3E-06"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Énergie cinétique",
+   "emoji": "🚲",
+   "en_une_phrase": "L’énergie cinétique dépend de la masse et du carré de la vitesse.",
+   "comprendre": "Un objet en mouvement possède une énergie liée à son mouvement. À masse identique, une vitesse plus élevée correspond à une énergie cinétique plus grande. La formule Ec = ½ × m × v² utilise la masse en kilogrammes et la vitesse en mètres par seconde.",
+   "essentiel": [
+    "Ec = ½ × m × v².",
+    "L’énergie cinétique se mesure en joules.",
+    "À masse égale, doubler la vitesse multiplie l’énergie cinétique par quatre."
+   ],
+   "image_mentale": "Imagine un objet dont la vitesse double et une énergie multipliée par quatre.",
+   "regle_ou_methode": "Convertis la vitesse en m/s si nécessaire, calcule son carré puis applique la formule.",
+   "exemples": [
+    "Un objet de 2 kg se déplace à 3 m/s. Calcule ½ × 2 × 3² = 1 × 9. Son énergie cinétique est 9 J.",
+    "À masse égale, passer de 2 m/s à 4 m/s multiplie l’énergie cinétique par 4."
+   ],
+   "piege": "La vitesse intervient au carré : si elle double, l’énergie ne double pas seulement.",
+   "astuce_memoire": "Vitesse doublée, énergie cinétique quadruplée à masse égale.",
+   "quiz": [
+    {
+     "q": "Un objet de 2 kg se déplace à 3 m/s. Quelle est son énergie cinétique ?",
+     "choix": [
+      "6 J",
+      "9 J",
+      "18 J"
+     ],
+     "rep": "9 J",
+     "expl": "½ × 2 × 3² = 9 J."
+    },
+    {
+     "q": "À masse constante, que devient l’énergie cinétique si la vitesse double ?",
+     "choix": [
+      "Elle double",
+      "Elle est divisée par deux",
+      "Elle est multipliée par quatre"
+     ],
+     "rep": "Elle est multipliée par quatre",
+     "expl": "La vitesse est au carré dans la formule."
+    },
+    {
+     "q": "Quelle unité utilise-t-on pour l’énergie cinétique ?",
+     "choix": [
+      "Le joule",
+      "Le newton par kilogramme",
+      "Le mètre par seconde"
+     ],
+     "rep": "Le joule",
+     "expl": "L’énergie cinétique s’exprime en joules."
+    }
+   ],
+   "id": "REV-PC-3E-07"
+  },
+  {
+   "axe": "L’énergie et ses conversions",
+   "titre": "Loi d’Ohm",
+   "emoji": "⚡",
+   "en_une_phrase": "Pour un conducteur ohmique, la tension est proportionnelle à l’intensité qui le traverse.",
+   "comprendre": "Tu connais la tension en volts et l’intensité en ampères. Pour un conducteur ohmique, leur rapport est constant dans le modèle étudié. La résistance relie ces deux grandeurs par U = R × I.",
+   "essentiel": [
+    "U est la tension en volts.",
+    "I est l’intensité en ampères.",
+    "R est la résistance en ohms.",
+    "U = R × I pour un conducteur ohmique."
+   ],
+   "image_mentale": "Imagine une droite passant par l’origine sur un graphique tension-intensité.",
+   "regle_ou_methode": "Exprime les grandeurs dans les bonnes unités, puis applique U = R × I.",
+   "exemples": [
+    "Un conducteur ohmique a une résistance de 20 Ω et une intensité de 0,3 A. Calcule U = 20 × 0,3. La tension à ses bornes est 6 V.",
+    "Si U = 12 V et I = 0,2 A, alors R = 12 ÷ 0,2 = 60 Ω."
+   ],
+   "piege": "La relation ne s’applique pas automatiquement à tous les dipôles.",
+   "astuce_memoire": "Ohm : tension égale résistance fois intensité.",
+   "quiz": [
+    {
+     "q": "Pour R = 20 Ω et I = 0,3 A, quelle est la tension ?",
+     "choix": [
+      "60 V",
+      "0,015 V",
+      "6 V"
+     ],
+     "rep": "6 V",
+     "expl": "U = 20 × 0,3 = 6 V."
+    },
+    {
+     "q": "Pour U = 12 V et I = 0,2 A, quelle est la résistance ?",
+     "choix": [
+      "60 Ω",
+      "2,4 Ω",
+      "12,2 Ω"
+     ],
+     "rep": "60 Ω",
+     "expl": "R = 12 ÷ 0,2 = 60 Ω."
+    },
+    {
+     "q": "Quelle unité mesure une résistance électrique ?",
+     "choix": [
+      "Le volt",
+      "L’ohm",
+      "Le joule"
+     ],
+     "rep": "L’ohm",
+     "expl": "La résistance s’exprime en ohms."
+    }
+   ],
+   "id": "REV-PC-3E-08"
+  },
+  {
+   "axe": "L’énergie et ses conversions",
+   "titre": "Puissance électrique",
+   "emoji": "🔌",
+   "en_une_phrase": "La puissance électrique d’un dipôle peut se calculer avec la tension et l’intensité dans les conditions étudiées.",
+   "comprendre": "Deux appareils peuvent convertir l’énergie à des rythmes différents. La puissance indique ce rythme. Pour un dipôle en courant continu, P = U × I dans les conventions usuelles.",
+   "essentiel": [
+    "La puissance P se mesure en watts.",
+    "La tension U se mesure en volts.",
+    "L’intensité I se mesure en ampères.",
+    "Pour un dipôle en courant continu, P = U × I."
+   ],
+   "image_mentale": "Imagine un débit d’énergie mesuré en watts.",
+   "regle_ou_methode": "Convertis les unités si nécessaire puis multiplie tension et intensité.",
+   "exemples": [
+    "Une lampe est alimentée sous 6 V et traversée par 0,5 A en courant continu. Calcule 6 × 0,5. Sa puissance électrique reçue est 3 W.",
+    "Un appareil recevant 12 V et 2 A en courant continu reçoit une puissance de 24 W."
+   ],
+   "piege": "Ne confonds pas la puissance en watts et l’énergie en joules.",
+   "astuce_memoire": "Watts : volts multipliés par ampères.",
+   "quiz": [
+    {
+     "q": "Pour U = 6 V et I = 0,5 A en courant continu, quelle puissance ?",
+     "choix": [
+      "3 W",
+      "12 W",
+      "6,5 W"
+     ],
+     "rep": "3 W",
+     "expl": "P = 6 × 0,5 = 3 W."
+    },
+    {
+     "q": "Pour U = 12 V et I = 2 A, quelle puissance ?",
+     "choix": [
+      "6 W",
+      "24 W",
+      "14 W"
+     ],
+     "rep": "24 W",
+     "expl": "P = 12 × 2 = 24 W."
+    },
+    {
+     "q": "Quelle unité mesure la puissance ?",
+     "choix": [
+      "Le joule",
+      "L’ohm",
+      "Le watt"
+     ],
+     "rep": "Le watt",
+     "expl": "La puissance électrique s’exprime en watts."
+    }
+   ],
+   "id": "REV-PC-3E-09"
+  },
+  {
+   "axe": "L’énergie et ses conversions",
+   "titre": "Énergie électrique consommée",
+   "emoji": "🔋",
+   "en_une_phrase": "À puissance constante, l’énergie transférée est égale à la puissance multipliée par la durée.",
+   "comprendre": "Tu peux comparer deux appareils selon leur puissance et leur temps de fonctionnement. Une puissance plus élevée ou une durée plus longue augmente l’énergie transférée, toutes choses égales par ailleurs. L’unité utilisée dépend des unités de puissance et de durée.",
+   "essentiel": [
+    "E = P × durée pour une puissance constante.",
+    "W × s donne des joules.",
+    "kW × h donne des kilowattheures."
+   ],
+   "image_mentale": "Imagine un débit d’énergie qui s’accumule pendant une durée.",
+   "regle_ou_methode": "Utilise des unités compatibles, puis multiplie la puissance par la durée.",
+   "exemples": [
+    "Un appareil de 0,5 kW fonctionne pendant 2 h à puissance constante. Calcule 0,5 × 2. Il transfère 1 kWh.",
+    "Un appareil de 100 W fonctionne pendant 10 s : il transfère 1 000 J."
+   ],
+   "piege": "Le kilowattheure mesure une énergie, pas une puissance.",
+   "astuce_memoire": "Puissance multipliée par durée : énergie.",
+   "quiz": [
+    {
+     "q": "Un appareil de 0,5 kW fonctionne 2 h. Quelle énergie transfère-t-il ?",
+     "choix": [
+      "0,25 kWh",
+      "1 kWh",
+      "2,5 kWh"
+     ],
+     "rep": "1 kWh",
+     "expl": "0,5 × 2 = 1 kWh."
+    },
+    {
+     "q": "Que mesure un kilowattheure ?",
+     "choix": [
+      "Une puissance",
+      "Une tension",
+      "Une énergie"
+     ],
+     "rep": "Une énergie",
+     "expl": "Le kilowattheure est une unité d’énergie."
+    },
+    {
+     "q": "Un appareil de 100 W fonctionne 10 s. Quelle énergie transfère-t-il ?",
+     "choix": [
+      "1 000 J",
+      "10 J",
+      "110 J"
+     ],
+     "rep": "1 000 J",
+     "expl": "100 W × 10 s = 1 000 J."
+    }
+   ],
+   "id": "REV-PC-3E-10"
+  },
+  {
+   "axe": "Des signaux pour observer et communiquer",
+   "titre": "Vitesse de propagation",
+   "emoji": "⏱️",
+   "en_une_phrase": "La distance parcourue par un signal dépend de sa vitesse et de la durée de propagation.",
+   "comprendre": "Un éclair et un tonnerre peuvent être perçus à des moments différents. La lumière et le son ne se propagent pas à la même vitesse. Pour un signal à vitesse constante, distance = vitesse × durée.",
+   "essentiel": [
+    "La vitesse du son dans l’air est d’environ 340 m/s dans des conditions usuelles.",
+    "La lumière se propage beaucoup plus vite que le son.",
+    "Distance = vitesse × durée pour une vitesse constante."
+   ],
+   "image_mentale": "Imagine deux coureurs partant ensemble avec des vitesses très différentes.",
+   "regle_ou_methode": "Utilise la vitesse donnée, exprime la durée en secondes puis multiplie.",
+   "exemples": [
+    "On prend 340 m/s pour la vitesse du son dans l’air. En 3 s, il parcourt 340 × 3 = 1 020 m. La distance parcourue est donc 1 020 m.",
+    "À cette vitesse, en 2 s, le son parcourt environ 680 m."
+   ],
+   "piege": "Le retard du son ne signifie pas que l’éclair s’est produit après le tonnerre.",
+   "astuce_memoire": "Distance : vitesse multipliée par durée.",
+   "quiz": [
+    {
+     "q": "À 340 m/s, quelle distance le son parcourt-il en 3 s ?",
+     "choix": [
+      "343 m",
+      "113 m",
+      "1 020 m"
+     ],
+     "rep": "1 020 m",
+     "expl": "340 × 3 = 1 020 m."
+    },
+    {
+     "q": "À 340 m/s, quelle distance le son parcourt-il en 2 s ?",
+     "choix": [
+      "680 m",
+      "170 m",
+      "342 m"
+     ],
+     "rep": "680 m",
+     "expl": "340 × 2 = 680 m."
+    },
+    {
+     "q": "Pourquoi voit-on souvent l’éclair avant d’entendre le tonnerre ?",
+     "choix": [
+      "Le son se propage instantanément",
+      "La lumière se propage beaucoup plus vite que le son",
+      "L’éclair se produit toujours plusieurs minutes après le tonnerre"
+     ],
+     "rep": "La lumière se propage beaucoup plus vite que le son",
+     "expl": "La différence de vitesse explique le décalage de perception."
+    }
+   ],
+   "id": "REV-PC-3E-11"
+  },
+  {
+   "axe": "Des signaux pour observer et communiquer",
+   "titre": "Signaux et information",
+   "emoji": "📡",
+   "en_une_phrase": "Un signal peut transporter une information entre un émetteur et un récepteur.",
+   "comprendre": "Tu peux recevoir une information par la lumière ou par un son. Un système de communication utilise un signal et un milieu ou mode de transmission adapté. Le récepteur interprète le signal reçu.",
+   "essentiel": [
+    "Un émetteur produit ou envoie le signal.",
+    "Un récepteur reçoit le signal.",
+    "Un signal peut être sonore ou lumineux."
+   ],
+   "image_mentale": "Imagine une flèche allant d’un émetteur vers un récepteur.",
+   "regle_ou_methode": "Identifie l’information, l’émetteur, le signal et le récepteur.",
+   "exemples": [
+    "Une personne transmet un message avec une lampe en alternant des éclats. La lampe émet un signal lumineux. Une autre personne reçoit les éclats et interprète le message convenu.",
+    "Une sonnerie produit un signal sonore qui peut avertir les personnes présentes."
+   ],
+   "piege": "Le signal transporte une information ; il ne se confond pas toujours avec le message interprété.",
+   "astuce_memoire": "Émetteur, signal, récepteur.",
+   "quiz": [
+    {
+     "q": "Dans un message transmis par des éclats de lampe, quel est le signal ?",
+     "choix": [
+      "Les éclats lumineux",
+      "La lampe éteinte sans changement",
+      "Le nom de la personne uniquement"
+     ],
+     "rep": "Les éclats lumineux",
+     "expl": "Les variations lumineuses portent l’information."
+    },
+    {
+     "q": "Quel élément reçoit le signal ?",
+     "choix": [
+      "L’émetteur seul",
+      "Le récepteur",
+      "La source d’énergie uniquement"
+     ],
+     "rep": "Le récepteur",
+     "expl": "Le récepteur capte le signal."
+    },
+    {
+     "q": "Une sonnerie peut transmettre quelle forme de signal ?",
+     "choix": [
+      "Uniquement un signal chimique",
+      "Un signal qui n’existe dans aucun milieu",
+      "Un signal sonore"
+     ],
+     "rep": "Un signal sonore",
+     "expl": "La sonnerie émet un son perceptible."
+    }
+   ],
+   "id": "REV-PC-3E-12"
+  },
+  {
+   "axe": "Des signaux pour observer et communiquer",
+   "titre": "Fréquence d’un signal périodique",
+   "emoji": "🎵",
+   "en_une_phrase": "La fréquence indique le nombre de répétitions d’un phénomène par seconde.",
+   "comprendre": "Tu peux compter le nombre de vibrations qui se produisent pendant une seconde. La fréquence mesure cette répétition en hertz. Pour un son périodique, une fréquence plus élevée correspond à un son plus aigu.",
+   "essentiel": [
+    "La fréquence s’exprime en hertz, notés Hz.",
+    "Un hertz correspond à une répétition par seconde.",
+    "La hauteur d’un son périodique dépend de sa fréquence."
+   ],
+   "image_mentale": "Imagine des oscillations lentes puis des oscillations plus rapprochées.",
+   "regle_ou_methode": "Compte les périodes pendant une durée donnée et divise par cette durée.",
+   "exemples": [
+    "Un signal effectue 100 périodes en 2 s. Calcule 100 ÷ 2. Sa fréquence est 50 Hz.",
+    "Un son de 800 Hz est plus aigu qu’un son de 400 Hz."
+   ],
+   "piege": "Un son plus aigu n’est pas forcément plus fort : fréquence et intensité sont différentes.",
+   "astuce_memoire": "Fréquence : nombre de périodes par seconde.",
+   "quiz": [
+    {
+     "q": "Un signal effectue 100 périodes en 2 s. Quelle est sa fréquence ?",
+     "choix": [
+      "200 Hz",
+      "50 Hz",
+      "102 Hz"
+     ],
+     "rep": "50 Hz",
+     "expl": "100 ÷ 2 = 50 périodes par seconde."
+    },
+    {
+     "q": "Quel son est le plus aigu ?",
+     "choix": [
+      "800 Hz",
+      "400 Hz",
+      "1 200 Hz"
+     ],
+     "rep": "1 200 Hz",
+     "expl": "La fréquence la plus élevée correspond ici au son le plus aigu."
+    },
+    {
+     "q": "Un son plus aigu est-il forcément plus intense ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, sauf dans l’air"
+     ],
+     "rep": "Non",
+     "expl": "La hauteur et l’intensité sont deux caractéristiques différentes."
+    }
+   ],
+   "id": "REV-PC-3E-13"
+  }
+ ]
+}

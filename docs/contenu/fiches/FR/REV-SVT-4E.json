@@ -1,0 +1,699 @@
+{
+ "classe": "4E",
+ "niveau_appli": "4ème",
+ "age": "13-14 ans",
+ "matiere": "SVT",
+ "code": "SVT",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "La planète Terre, l’environnement et l’action humaine",
+   "titre": "Les plaques lithosphériques",
+   "emoji": "🌍",
+   "en_une_phrase": "La lithosphère est découpée en plaques qui se déplacent lentement à la surface de la Terre.",
+   "comprendre": "Tu as observé que les séismes et les volcans ne sont pas répartis au hasard. Leur concentration dessine notamment les limites de grandes plaques. Ces plaques se déplacent de quelques centimètres par an les unes par rapport aux autres.",
+   "essentiel": [
+    "La lithosphère comprend la croûte et la partie supérieure rigide du manteau.",
+    "Elle est divisée en plaques lithosphériques.",
+    "Les déplacements relatifs sont lents mais mesurables."
+   ],
+   "image_mentale": "Imagine une coque rigide découpée en grandes plaques qui se déplacent lentement.",
+   "regle_ou_methode": "Observe la carte des séismes et volcans, repère les limites puis compare les mouvements.",
+   "exemples": [
+    "Sur une carte, une bande de séismes suit une limite de plaque. Cette concentration aide à repérer la frontière entre deux plaques.",
+    "Deux plaques peuvent s’écarter ou se rapprocher selon la limite étudiée."
+   ],
+   "piege": "Une plaque lithosphérique peut porter à la fois des régions continentales et océaniques.",
+   "astuce_memoire": "Plaques rigides, limites actives, mouvements lents.",
+   "quiz": [
+    {
+     "q": "Qu’observe-t-on souvent aux limites des plaques ?",
+     "choix": [
+      "Une absence complète de relief",
+      "Des concentrations de séismes et de volcans",
+      "Seulement des fleuves"
+     ],
+     "rep": "Des concentrations de séismes et de volcans",
+     "expl": "Les séismes et volcans se concentrent notamment aux limites de plaques."
+    },
+    {
+     "q": "À quelle vitesse les plaques se déplacent-elles généralement ?",
+     "choix": [
+      "De plusieurs kilomètres par seconde",
+      "Elles sont totalement immobiles",
+      "De quelques centimètres par an"
+     ],
+     "rep": "De quelques centimètres par an",
+     "expl": "Leurs mouvements sont lents mais mesurables."
+    },
+    {
+     "q": "Une plaque peut-elle porter continent et océan ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement si elle est dessinée sur une carte"
+     ],
+     "rep": "Oui",
+     "expl": "Une même plaque peut porter des domaines continentaux et océaniques."
+    }
+   ],
+   "id": "REV-SVT-4E-01"
+  },
+  {
+   "axe": "La planète Terre, l’environnement et l’action humaine",
+   "titre": "Une dorsale océanique",
+   "emoji": "🌊",
+   "en_une_phrase": "À une dorsale, l’écartement des plaques s’accompagne de la formation de nouvelle lithosphère océanique.",
+   "comprendre": "Dans certains océans, une longue chaîne principalement sous-marine marque une limite de plaques. Les plaques s’y éloignent l’une de l’autre. Du magma remonte et se solidifie, formant de nouvelles roches océaniques.",
+   "essentiel": [
+    "Une dorsale océanique est une chaîne principalement sous-marine.",
+    "Les plaques s’écartent à cette limite.",
+    "Des roches océaniques se forment par refroidissement du magma."
+   ],
+   "image_mentale": "Imagine deux plaques qui s’écartent et du magma qui remonte entre elles.",
+   "regle_ou_methode": "Repère le mouvement des plaques puis l’origine des nouvelles roches.",
+   "exemples": [
+    "À une dorsale, deux plaques s’écartent. Du magma remonte, refroidit et forme de la roche. De la lithosphère océanique se crée progressivement.",
+    "Des roches situées de part et d’autre de la dorsale peuvent s’éloigner avec les plaques."
+   ],
+   "piege": "Une dorsale ne correspond pas à une simple fente vide : de nouvelles roches s’y forment.",
+   "astuce_memoire": "Écartement, remontée, formation de roches.",
+   "quiz": [
+    {
+     "q": "Quel mouvement des plaques caractérise une dorsale ?",
+     "choix": [
+      "Elles restent toujours immobiles",
+      "Elles se rapprochent nécessairement",
+      "Elles s’écartent"
+     ],
+     "rep": "Elles s’écartent",
+     "expl": "À la dorsale, les plaques divergent."
+    },
+    {
+     "q": "Que peut former le magma en refroidissant ?",
+     "choix": [
+      "Des roches océaniques",
+      "Des nuages uniquement",
+      "Des racines"
+     ],
+     "rep": "Des roches océaniques",
+     "expl": "Le magma solidifié forme de la roche."
+    },
+    {
+     "q": "Où se trouve principalement une dorsale océanique ?",
+     "choix": [
+      "Uniquement dans une forêt",
+      "Sous l’océan",
+      "Dans l’atmosphère"
+     ],
+     "rep": "Sous l’océan",
+     "expl": "Une dorsale océanique est une chaîne principalement sous-marine."
+    }
+   ],
+   "id": "REV-SVT-4E-02"
+  },
+  {
+   "axe": "La planète Terre, l’environnement et l’action humaine",
+   "titre": "La subduction",
+   "emoji": "🌋",
+   "en_une_phrase": "Dans une zone de subduction, une plaque lithosphérique s’enfonce sous une autre.",
+   "comprendre": "Toutes les limites de plaques ne sont pas des zones d’écartement. Dans certaines régions, deux plaques se rapprochent et l’une plonge sous l’autre. Des séismes et, selon la configuration, des volcans peuvent accompagner ce mouvement.",
+   "essentiel": [
+    "La subduction est liée à un rapprochement de plaques.",
+    "Une plaque plonge sous une autre.",
+    "Des séismes et parfois du volcanisme sont associés à ces zones."
+   ],
+   "image_mentale": "Imagine une plaque qui s’incline sous une plaque voisine.",
+   "regle_ou_methode": "Repère la convergence, la plaque plongeante et les manifestations observées.",
+   "exemples": [
+    "Deux plaques se rapprochent et une plaque océanique s’enfonce sous l’autre. La zone est une zone de subduction. Des séismes peuvent se produire en profondeur.",
+    "Certains arcs volcaniques sont liés à une zone de subduction."
+   ],
+   "piege": "La subduction n’est pas un écartement de plaques comme à une dorsale.",
+   "astuce_memoire": "Convergence et plongée d’une plaque.",
+   "quiz": [
+    {
+     "q": "Que fait une plaque en subduction ?",
+     "choix": [
+      "Elle s’enfonce sous une autre plaque",
+      "Elle s’écarte toujours de l’autre",
+      "Elle devient une saison"
+     ],
+     "rep": "Elle s’enfonce sous une autre plaque",
+     "expl": "Une plaque plonge sous une autre."
+    },
+    {
+     "q": "Quel mouvement caractérise la zone ?",
+     "choix": [
+      "Un écartement obligatoire",
+      "Un rapprochement des plaques",
+      "Aucun mouvement"
+     ],
+     "rep": "Un rapprochement des plaques",
+     "expl": "La subduction est liée à une convergence."
+    },
+    {
+     "q": "Des séismes peuvent-ils être associés à la subduction ?",
+     "choix": [
+      "Non",
+      "Seulement à la surface de la Lune",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Des séismes peuvent se produire dans ces zones."
+    }
+   ],
+   "id": "REV-SVT-4E-03"
+  },
+  {
+   "axe": "La planète Terre, l’environnement et l’action humaine",
+   "titre": "Aléa, vulnérabilité et prévention",
+   "emoji": "🏘️",
+   "en_une_phrase": "Le risque dépend d’un phénomène dangereux et de l’exposition et de la vulnérabilité des sociétés.",
+   "comprendre": "Une même secousse n’a pas toujours les mêmes conséquences dans deux territoires. La présence de bâtiments, leur résistance et la préparation des habitants comptent. La prévention cherche à limiter les dommages possibles.",
+   "essentiel": [
+    "L’aléa est le phénomène potentiellement dangereux.",
+    "Les enjeux comprennent les personnes et les biens exposés.",
+    "La vulnérabilité décrit leur sensibilité aux dommages."
+   ],
+   "image_mentale": "Imagine deux quartiers exposés au même séisme mais construits différemment.",
+   "regle_ou_methode": "Identifie l’aléa, les enjeux puis une mesure réduisant la vulnérabilité.",
+   "exemples": [
+    "Deux quartiers subissent une secousse comparable. Si leurs bâtiments résistent différemment, les dommages peuvent différer.",
+    "Des règles de construction adaptées et des exercices de préparation peuvent réduire certaines conséquences."
+   ],
+   "piege": "La prévention ne permet pas d’empêcher tous les séismes ni de garantir un risque nul.",
+   "astuce_memoire": "Aléa, exposition, vulnérabilité, prévention.",
+   "quiz": [
+    {
+     "q": "Dans un risque sismique, quel est l’aléa ?",
+     "choix": [
+      "Les habitants",
+      "La secousse sismique",
+      "La carte de la ville"
+     ],
+     "rep": "La secousse sismique",
+     "expl": "L’aléa est le phénomène potentiellement dangereux."
+    },
+    {
+     "q": "Que désigne la vulnérabilité ?",
+     "choix": [
+      "La couleur d’une carte",
+      "La date de naissance des habitants",
+      "La sensibilité des enjeux aux dommages"
+     ],
+     "rep": "La sensibilité des enjeux aux dommages",
+     "expl": "Elle renseigne sur la sensibilité aux dommages."
+    },
+    {
+     "q": "La prévention supprime-t-elle tous les séismes ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement les séismes nocturnes"
+     ],
+     "rep": "Non",
+     "expl": "La prévention réduit certains effets sans empêcher tous les séismes."
+    }
+   ],
+   "id": "REV-SVT-4E-04"
+  },
+  {
+   "axe": "Le vivant et son évolution",
+   "titre": "La reproduction sexuée",
+   "emoji": "🐟",
+   "en_une_phrase": "La reproduction sexuée associe deux cellules reproductrices lors de la fécondation.",
+   "comprendre": "Tu connais des espèces dont les jeunes ressemblent aux adultes. Chez les organismes à reproduction sexuée, un gamète mâle et un gamète femelle fusionnent. La cellule obtenue se développe et peut donner un nouvel individu.",
+   "essentiel": [
+    "Les gamètes sont des cellules reproductrices.",
+    "La fécondation est leur fusion.",
+    "Le développement suit la fécondation."
+   ],
+   "image_mentale": "Imagine deux cellules qui se rejoignent puis une cellule qui se divise.",
+   "regle_ou_methode": "Identifie les gamètes, leur rencontre et le début du développement.",
+   "exemples": [
+    "Chez une espèce animale, un spermatozoïde rencontre un ovule. Leur fusion forme une cellule-œuf. Celle-ci commence à se diviser.",
+    "Chez certaines plantes à fleurs, la fécondation conduit notamment à la formation d’une graine."
+   ],
+   "piege": "La rencontre des gamètes ne garantit pas que chaque cellule-œuf donnera un adulte.",
+   "astuce_memoire": "Gamètes, fécondation, développement.",
+   "quiz": [
+    {
+     "q": "Qu’est-ce que la fécondation ?",
+     "choix": [
+      "La croissance d’un adulte",
+      "Un changement de saison",
+      "La fusion de deux gamètes"
+     ],
+     "rep": "La fusion de deux gamètes",
+     "expl": "La fécondation est la fusion de cellules reproductrices."
+    },
+    {
+     "q": "Que forme la fusion des gamètes ?",
+     "choix": [
+      "Une cellule-œuf",
+      "Une roche",
+      "Un muscle adulte immédiatement"
+     ],
+     "rep": "Une cellule-œuf",
+     "expl": "La fusion forme une cellule-œuf qui peut se développer."
+    },
+    {
+     "q": "Toute cellule-œuf devient-elle forcément un adulte ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement dans l’eau"
+     ],
+     "rep": "Non",
+     "expl": "Le développement dépend de nombreuses conditions."
+    }
+   ],
+   "id": "REV-SVT-4E-05"
+  },
+  {
+   "axe": "Le vivant et son évolution",
+   "titre": "Fécondation interne et externe",
+   "emoji": "🐠",
+   "en_une_phrase": "La fécondation peut se dérouler dans le corps de la femelle ou dans le milieu extérieur.",
+   "comprendre": "Les espèces n’assurent pas toutes la rencontre de leurs gamètes de la même façon. La fécondation est dite interne lorsqu’elle se déroule dans le corps de la femelle. Elle est dite externe lorsque les gamètes se rencontrent dans le milieu extérieur.",
+   "essentiel": [
+    "Fécondation interne : fusion dans le corps de la femelle.",
+    "Fécondation externe : fusion dans le milieu extérieur.",
+    "Les conditions du milieu influencent la rencontre des gamètes."
+   ],
+   "image_mentale": "Imagine deux trajets de gamètes : l’un dans un organisme, l’autre dans l’eau.",
+   "regle_ou_methode": "Repère le lieu où les gamètes fusionnent.",
+   "exemples": [
+    "Chez de nombreux poissons, les gamètes sont libérés dans l’eau et peuvent y fusionner. Il s’agit d’une fécondation externe.",
+    "Chez l’être humain, la fécondation se déroule généralement dans une trompe utérine : elle est interne."
+   ],
+   "piege": "Le lieu de la fécondation n’indique pas à lui seul si l’animal pond ensuite des œufs.",
+   "astuce_memoire": "Lieu de rencontre : interne ou externe.",
+   "quiz": [
+    {
+     "q": "Des gamètes fusionnent dans l’eau du milieu extérieur : comment qualifier la fécondation ?",
+     "choix": [
+      "Externe",
+      "Interne",
+      "Absente"
+     ],
+     "rep": "Externe",
+     "expl": "La fusion a lieu dans le milieu extérieur."
+    },
+    {
+     "q": "Où se déroule une fécondation interne ?",
+     "choix": [
+      "Nécessairement dans l’air",
+      "Dans le corps de la femelle",
+      "À l’extérieur de tout organisme"
+     ],
+     "rep": "Dans le corps de la femelle",
+     "expl": "Elle se déroule dans le corps de la femelle."
+    },
+    {
+     "q": "Une fécondation interne permet-elle de conclure à elle seule que l’animal ne pond pas d’œufs ?",
+     "choix": [
+      "Oui",
+      "Seulement chez les poissons",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Le lieu de fécondation et la ponte sont deux caractéristiques distinctes."
+    }
+   ],
+   "id": "REV-SVT-4E-06"
+  },
+  {
+   "axe": "Le vivant et son évolution",
+   "titre": "Reproduction asexuée et peuplement",
+   "emoji": "🌿",
+   "en_une_phrase": "La reproduction asexuée produit de nouveaux individus sans fusion de gamètes.",
+   "comprendre": "Une plante peut parfois produire un nouvel individu à partir d’un fragment ou d’un organe. Cette reproduction ne nécessite pas la rencontre de deux gamètes. Elle peut contribuer au peuplement d’un milieu.",
+   "essentiel": [
+    "La reproduction asexuée ne comporte pas de fécondation.",
+    "Un individu peut produire un nouvel individu.",
+    "Elle peut contribuer à occuper un espace."
+   ],
+   "image_mentale": "Imagine une plante mère reliée par une tige à une jeune plante.",
+   "regle_ou_methode": "Repère l’individu d’origine puis vérifie si une fusion de gamètes intervient.",
+   "exemples": [
+    "Un fraisier produit un stolon, tige qui s’enracine plus loin. Une jeune plante se développe sans fusion de gamètes : c’est une reproduction asexuée.",
+    "Un fragment de certaines plantes peut aussi donner un nouvel individu si les conditions le permettent."
+   ],
+   "piege": "Les individus issus d’une reproduction asexuée sont, sauf mutation, génétiquement identiques à l’individu d’origine : ce sont des clones.",
+   "astuce_memoire": "Un individu, pas de fécondation.",
+   "quiz": [
+    {
+     "q": "Quel organe peut permettre à un fraisier de produire une jeune plante ?",
+     "choix": [
+      "Une plume",
+      "Un stolon",
+      "Une coquille"
+     ],
+     "rep": "Un stolon",
+     "expl": "Le stolon peut s’enraciner et donner une jeune plante."
+    },
+    {
+     "q": "Quand un fraisier produit une jeune plante grâce à un stolon, y a-t-il une fusion de gamètes ?",
+     "choix": [
+      "Oui",
+      "Seulement si la plante est verte",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "La reproduction asexuée décrite ne comporte pas de fécondation."
+    },
+    {
+     "q": "Quel effet cette reproduction peut-elle avoir ?",
+     "choix": [
+      "Contribuer au peuplement d’un espace",
+      "Arrêter toute croissance",
+      "Transformer une plante en roche"
+     ],
+     "rep": "Contribuer au peuplement d’un espace",
+     "expl": "De nouveaux individus peuvent s’installer à proximité."
+    }
+   ],
+   "id": "REV-SVT-4E-07"
+  },
+  {
+   "axe": "Le vivant et son évolution",
+   "titre": "Interactions et populations",
+   "emoji": "🕸️",
+   "en_une_phrase": "Les conditions du milieu et les relations entre espèces influencent les populations.",
+   "comprendre": "Dans un même milieu, les êtres vivants utilisent des ressources et interagissent. Une modification de la nourriture, du climat local ou du nombre de prédateurs peut modifier leurs effectifs. Les conséquences dépendent du contexte et se constatent par des observations.",
+   "essentiel": [
+    "Une population regroupe des individus d’une même espèce dans un milieu donné.",
+    "Les ressources et les relations alimentaires influencent ses effectifs.",
+    "Une variation peut avoir plusieurs causes."
+   ],
+   "image_mentale": "Imagine un réseau reliant une plante, des insectes et des oiseaux.",
+   "regle_ou_methode": "Repère la population étudiée, le changement observé puis les causes possibles.",
+   "exemples": [
+    "Dans un jardin, une plante devient moins abondante après une sécheresse. Les insectes qui s’en nourrissent peuvent disposer de moins de ressources.",
+    "Si le nombre d’oiseaux insectivores varie, les effectifs d’insectes peuvent aussi évoluer selon les conditions du milieu."
+   ],
+   "piege": "Une corrélation entre deux variations ne prouve pas à elle seule que l’une cause l’autre.",
+   "astuce_memoire": "Observer les effectifs, examiner les interactions, tester les explications.",
+   "quiz": [
+    {
+     "q": "Qu’est-ce qu’une population ?",
+     "choix": [
+      "Toutes les roches d’un paysage",
+      "Un seul organe d’un être vivant",
+      "Des individus d’une même espèce dans un milieu donné"
+     ],
+     "rep": "Des individus d’une même espèce dans un milieu donné",
+     "expl": "Une population réunit des individus d’une même espèce dans un lieu."
+    },
+    {
+     "q": "Qu’arrive-t-il aux ressources d’un insecte si sa plante alimentaire devient rare ?",
+     "choix": [
+      "Elles peuvent diminuer",
+      "Elles augmentent forcément",
+      "Elles sont sans rapport avec la plante"
+     ],
+     "rep": "Elles peuvent diminuer",
+     "expl": "Une plante moins abondante peut fournir moins de nourriture."
+    },
+    {
+     "q": "Deux variations simultanées prouvent-elles à elles seules une relation de cause à effet ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement si elles sont importantes"
+     ],
+     "rep": "Non",
+     "expl": "D’autres facteurs et des vérifications sont nécessaires."
+    }
+   ],
+   "id": "REV-SVT-4E-08"
+  },
+  {
+   "axe": "Le corps humain et la santé",
+   "titre": "Les hormones à la puberté",
+   "emoji": "🌱",
+   "en_une_phrase": "À la puberté, des hormones participent à la maturation des organes reproducteurs et aux transformations du corps.",
+   "comprendre": "Tu as constaté que les corps grandissent à des rythmes différents. À la puberté, des organes produisent des hormones qui circulent dans le sang. Ces messages chimiques agissent sur des organes cibles et contribuent aux changements.",
+   "essentiel": [
+    "Une hormone est un messager chimique transporté par le sang.",
+    "Des hormones participent à la mise en fonctionnement des organes reproducteurs.",
+    "Les changements et leur rythme varient selon les personnes."
+   ],
+   "image_mentale": "Imagine un message chimique transporté par le sang jusqu’à un organe cible.",
+   "regle_ou_methode": "Repère l’organe qui produit le message, son transport et son effet.",
+   "exemples": [
+    "À la puberté, des hormones produites par les testicules participent notamment à certains changements du corps. Elles circulent dans le sang et agissent sur des organes cibles.",
+    "Des hormones produites par les ovaires contribuent aussi à des transformations pubertaires."
+   ],
+   "piege": "La puberté ne commence pas au même âge pour tout le monde.",
+   "astuce_memoire": "Hormone : message chimique transporté par le sang.",
+   "quiz": [
+    {
+     "q": "Comment une hormone circule-t-elle dans le corps ?",
+     "choix": [
+      "Par le sang",
+      "Dans les os uniquement",
+      "Par l’air inspiré"
+     ],
+     "rep": "Par le sang",
+     "expl": "Les hormones circulent dans le sang."
+    },
+    {
+     "q": "Quel est le rôle d’une hormone ?",
+     "choix": [
+      "Remplacer tous les organes",
+      "Transmettre un message chimique à des organes cibles",
+      "Transporter les vêtements"
+     ],
+     "rep": "Transmettre un message chimique à des organes cibles",
+     "expl": "Une hormone agit comme messager chimique."
+    },
+    {
+     "q": "Deux personnes du même âge changent à des moments différents. Est-ce nécessairement anormal ?",
+     "choix": [
+      "Oui",
+      "Seulement si elles fréquentent la même école",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Le rythme de la puberté varie selon les personnes."
+    }
+   ],
+   "id": "REV-SVT-4E-09"
+  },
+  {
+   "axe": "Le corps humain et la santé",
+   "titre": "Le cycle ovarien et les règles",
+   "emoji": "📅",
+   "en_une_phrase": "Le cycle ovarien et les modifications de l’utérus sont liés, mais leur durée varie selon les personnes et les cycles.",
+   "comprendre": "Après la puberté, les ovaires et l’utérus connaissent des changements cycliques. L’ovulation correspond à la libération d’un ovocyte par un ovaire. Les règles correspondent à l’élimination d’une partie de la muqueuse utérine lorsqu’une grossesse ne débute pas.",
+   "essentiel": [
+    "L’ovulation libère un ovocyte.",
+    "Les règles proviennent de l’utérus, pas de l’ovaire.",
+    "La durée du cycle et le moment de l’ovulation varient."
+   ],
+   "image_mentale": "Imagine deux lignes de temps : activité de l’ovaire et évolution de la muqueuse utérine.",
+   "regle_ou_methode": "Distingue l’organe concerné et observe l’enchaînement sans supposer une date fixe.",
+   "exemples": [
+    "Dans un cycle, un ovaire libère un ovocyte : c’est l’ovulation. À un autre moment du cycle, des règles peuvent commencer.",
+    "Deux cycles peuvent avoir des durées différentes : l’ovulation ne survient donc pas systématiquement au même jour."
+   ],
+   "piege": "Ne suppose pas que chaque cycle dure 28 jours ni que l’ovulation a toujours lieu au quatorzième jour.",
+   "astuce_memoire": "Ovaire : ovulation ; utérus : règles.",
+   "quiz": [
+    {
+     "q": "Quel organe libère un ovocyte lors de l’ovulation ?",
+     "choix": [
+      "L’utérus",
+      "Un ovaire",
+      "Un poumon"
+     ],
+     "rep": "Un ovaire",
+     "expl": "Un ovaire libère un ovocyte lors de l’ovulation."
+    },
+    {
+     "q": "D’où proviennent les règles ?",
+     "choix": [
+      "De la peau du bras",
+      "De l’estomac",
+      "De la muqueuse de l’utérus"
+     ],
+     "rep": "De la muqueuse de l’utérus",
+     "expl": "Une partie de la muqueuse utérine est éliminée."
+    },
+    {
+     "q": "L’ovulation a-t-elle lieu au même jour dans tous les cycles ?",
+     "choix": [
+      "Non",
+      "Oui, toujours au quatorzième jour",
+      "Seulement le premier jour des règles"
+     ],
+     "rep": "Non",
+     "expl": "La durée et le moment de l’ovulation peuvent varier."
+    }
+   ],
+   "id": "REV-SVT-4E-10"
+  },
+  {
+   "axe": "Le corps humain et la santé",
+   "titre": "Fécondation et début de grossesse",
+   "emoji": "🧬",
+   "en_une_phrase": "La fécondation réunit un spermatozoïde et un ovocyte ; l’embryon peut ensuite s’implanter dans l’utérus.",
+   "comprendre": "Tu sais que la reproduction sexuée implique deux cellules reproductrices. Chez l’être humain, leur rencontre se produit généralement dans une trompe utérine. Si un embryon se forme puis s’implante dans l’utérus, une grossesse peut débuter.",
+   "essentiel": [
+    "Le spermatozoïde et l’ovocyte sont des cellules reproductrices.",
+    "La fécondation a généralement lieu dans une trompe utérine.",
+    "L’implantation de l’embryon se produit normalement dans la muqueuse utérine."
+   ],
+   "image_mentale": "Imagine le trajet des cellules, leur rencontre dans une trompe puis l’arrivée de l’embryon dans l’utérus.",
+   "regle_ou_methode": "Repère les cellules, le lieu de rencontre puis le lieu d’implantation.",
+   "exemples": [
+    "Un spermatozoïde rencontre un ovocyte dans une trompe : leur fusion constitue la fécondation. La cellule obtenue commence ensuite à se diviser.",
+    "Un embryon peut atteindre l’utérus et s’implanter dans sa muqueuse."
+   ],
+   "piege": "La fécondation ne se produit pas normalement dans l’estomac ou directement dans l’ovaire.",
+   "astuce_memoire": "Rencontre dans une trompe ; implantation dans l’utérus.",
+   "quiz": [
+    {
+     "q": "Quelles cellules se réunissent lors de la fécondation ?",
+     "choix": [
+      "Deux globules rouges",
+      "Un neurone et une cellule de peau",
+      "Un spermatozoïde et un ovocyte"
+     ],
+     "rep": "Un spermatozoïde et un ovocyte",
+     "expl": "La fécondation réunit les deux cellules reproductrices."
+    },
+    {
+     "q": "Où la fécondation a-t-elle généralement lieu ?",
+     "choix": [
+      "Dans une trompe utérine",
+      "Dans l’estomac",
+      "Dans la vessie"
+     ],
+     "rep": "Dans une trompe utérine",
+     "expl": "La rencontre a généralement lieu dans une trompe."
+    },
+    {
+     "q": "Où l’embryon s’implante-t-il normalement ?",
+     "choix": [
+      "Dans un poumon",
+      "Dans la muqueuse utérine",
+      "Dans le cœur"
+     ],
+     "rep": "Dans la muqueuse utérine",
+     "expl": "L’implantation a normalement lieu dans l’utérus."
+    }
+   ],
+   "id": "REV-SVT-4E-11"
+  },
+  {
+   "axe": "Le corps humain et la santé",
+   "titre": "Contraception et prévention des IST",
+   "emoji": "🛡️",
+   "en_une_phrase": "La contraception vise à éviter une grossesse ; les préservatifs réduisent aussi le risque de transmission de nombreuses IST.",
+   "comprendre": "Différentes méthodes peuvent être utilisées pour éviter une grossesse. Le préservatif externe ou interne limite aussi la transmission de nombreuses infections sexuellement transmissibles. Aucune méthode ne garantit une protection totale et un professionnel de santé peut aider à choisir une méthode adaptée.",
+   "essentiel": [
+    "La contraception vise à prévenir une grossesse.",
+    "Le préservatif réduit le risque de nombreuses IST lorsqu’il est correctement utilisé.",
+    "Une méthode hormonale ne protège pas des IST."
+   ],
+   "image_mentale": "Imagine deux objectifs distincts : prévenir une grossesse et réduire le risque d’infection.",
+   "regle_ou_methode": "Identifie l’objectif puis vérifie ce que protège chaque méthode.",
+   "exemples": [
+    "Une personne utilise une méthode hormonale : elle vise à éviter une grossesse mais ne protège pas des IST.",
+    "Un préservatif correctement utilisé réduit le risque de grossesse et de transmission de nombreuses IST, sans supprimer tout risque."
+   ],
+   "piege": "Une contraception hormonale ne protège pas des IST, et un préservatif ne protège pas entièrement contre toutes les IST.",
+   "astuce_memoire": "Grossesse et IST : deux objectifs de prévention.",
+   "quiz": [
+    {
+     "q": "Quelle méthode réduit aussi le risque de nombreuses IST ?",
+     "choix": [
+      "Un préservatif correctement utilisé",
+      "Une méthode hormonale seule",
+      "Aucune méthode de prévention"
+     ],
+     "rep": "Un préservatif correctement utilisé",
+     "expl": "Un préservatif réduit la transmission de nombreuses IST."
+    },
+    {
+     "q": "Une méthode hormonale protège-t-elle à elle seule des IST ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement si elle est récente"
+     ],
+     "rep": "Non",
+     "expl": "Les méthodes hormonales ne protègent pas des IST."
+    },
+    {
+     "q": "Une méthode contraceptive garantit-elle toujours une efficacité totale ?",
+     "choix": [
+      "Oui",
+      "Seulement si le cycle est régulier",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Aucune méthode contraceptive ne garantit une efficacité de 100 %."
+    }
+   ],
+   "id": "REV-SVT-4E-12"
+  },
+  {
+   "axe": "Le corps humain et la santé",
+   "titre": "Système nerveux et perturbations",
+   "emoji": "🧠",
+   "en_une_phrase": "Le système nerveux reçoit des informations et élabore des réponses ; certaines substances peuvent perturber son fonctionnement.",
+   "comprendre": "Quand tu réagis à un signal, des organes sensoriels, des centres nerveux et des muscles interviennent. Les neurones transmettent des messages. Le manque de sommeil ou certaines substances peuvent modifier l’attention et les réactions.",
+   "essentiel": [
+    "Les organes sensoriels détectent des stimulations.",
+    "Les nerfs transmettent des messages entre organes et centres nerveux.",
+    "Le manque de sommeil ou certaines substances peuvent altérer l’attention."
+   ],
+   "image_mentale": "Imagine un trajet entre l’œil, le cerveau et les muscles.",
+   "regle_ou_methode": "Repère le signal, le traitement de l’information puis la réponse musculaire.",
+   "exemples": [
+    "Une personne voit un obstacle. L’œil capte le signal, le cerveau traite des informations et des muscles permettent de modifier le mouvement.",
+    "Après une nuit trop courte, l’attention et le temps de réaction peuvent être moins bons."
+   ],
+   "piege": "Une réaction rapide mobilise plusieurs éléments ; l’œil ne commande pas directement le muscle sans traitement nerveux.",
+   "astuce_memoire": "Détecter, traiter, répondre.",
+   "quiz": [
+    {
+     "q": "Quel organe détecte un signal lumineux ?",
+     "choix": [
+      "Le genou",
+      "L’œil",
+      "L’estomac"
+     ],
+     "rep": "L’œil",
+     "expl": "L’œil détecte la lumière."
+    },
+    {
+     "q": "Quelle structure transmet des messages nerveux ?",
+     "choix": [
+      "Un cheveu",
+      "Une dent",
+      "Un nerf"
+     ],
+     "rep": "Un nerf",
+     "expl": "Les nerfs transmettent des messages nerveux."
+    },
+    {
+     "q": "Le manque de sommeil peut-il perturber l’attention ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement lorsque la personne ferme les yeux"
+     ],
+     "rep": "Oui",
+     "expl": "Le manque de sommeil peut réduire la vigilance."
+    }
+   ],
+   "id": "REV-SVT-4E-13"
+  }
+ ]
+}

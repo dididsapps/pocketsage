@@ -1,0 +1,2917 @@
+{
+ "classe": "1RE",
+ "niveau_appli": "Lycée",
+ "age": "16-17 ans",
+ "matiere": "Mathématiques (spécialité)",
+ "code": "MA",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Vocabulaire ensembliste et logique",
+   "titre": "Réunion et intersection",
+   "emoji": "🧩",
+   "en_une_phrase": "La réunion rassemble les éléments présents dans au moins un ensemble ; l’intersection garde ceux qui appartiennent aux deux.",
+   "comprendre": "Comme deux groupes de musique, deux ensembles peuvent avoir des membres communs. La réunion additionne les possibilités sans compter deux fois un même élément. L’intersection ne conserve que les éléments communs.",
+   "essentiel": [
+    "A ∪ B désigne la réunion.",
+    "A ∩ B désigne l’intersection.",
+    "Le complémentaire de A dans E contient les éléments de E qui ne sont pas dans A.",
+    "Un élément appartient à un ensemble ; un ensemble est inclus dans un autre."
+   ],
+   "image_mentale": "Imagine deux cercles qui se chevauchent dans un rectangle.",
+   "regle_ou_methode": "Énumère les éléments de chaque ensemble puis cherche les éléments de l’un ou de l’autre, et ceux des deux.",
+   "exemples": [
+    "Avec E = {1, 2, 3, 4}, A = {1, 2} et B = {2, 3}, l’élément commun est 2 : A ∩ B = {2}. La réunion contient 1, 2 et 3 : A ∪ B = {1, 2, 3}.",
+    "Le complémentaire de A dans E est {3, 4}."
+   ],
+   "piege": "Le mot « ou » mathématique inclut les éléments appartenant aux deux ensembles.",
+   "astuce_memoire": "Union : au moins un ; intersection : les deux.",
+   "quiz": [
+    {
+     "q": "Si A = {1, 2} et B = {2, 3}, que vaut A ∩ B ?",
+     "choix": [
+      "{1, 2, 3}",
+      "{2}",
+      "∅"
+     ],
+     "rep": "{2}",
+     "expl": "Seul 2 appartient aux deux ensembles."
+    },
+    {
+     "q": "Dans E = {1, 2, 3}, quel est le complémentaire de {1, 2} ?",
+     "choix": [
+      "{1, 2}",
+      "{1, 2, 3}",
+      "{3}"
+     ],
+     "rep": "{3}",
+     "expl": "Le complémentaire contient les éléments de E hors de {1, 2}."
+    },
+    {
+     "q": "Si A = {1, 2} et B = {2, 3}, quel est le cardinal de A ∪ B ?",
+     "choix": [
+      "3",
+      "4",
+      "2"
+     ],
+     "rep": "3",
+     "expl": "La réunion {1, 2, 3} possède trois éléments."
+    }
+   ],
+   "id": "REV-MA-1RE-01"
+  },
+  {
+   "axe": "Vocabulaire ensembliste et logique",
+   "titre": "Couples et produit cartésien",
+   "emoji": "🔢",
+   "en_une_phrase": "Le produit cartésien regroupe les couples dont le premier élément vient du premier ensemble et le second du second.",
+   "comprendre": "Une tenue peut associer un haut et un pantalon. Chaque combinaison est un couple ordonné. Changer l’ordre change généralement le couple.",
+   "essentiel": [
+    "A × B est l’ensemble des couples (a ; b) avec a dans A et b dans B.",
+    "Si A et B sont finis, Card(A × B) = Card(A) × Card(B).",
+    "Un couple est ordonné : (a ; b) et (b ; a) peuvent être différents."
+   ],
+   "image_mentale": "Imagine un tableau dont les lignes sont les éléments de A et les colonnes ceux de B.",
+   "regle_ou_methode": "Associe chaque élément de A à chacun des éléments de B.",
+   "exemples": [
+    "Pour A = {1, 2} et B = {a, b}, associe 1 à a puis à b ; fais de même avec 2. On obtient A × B = {(1 ; a), (1 ; b), (2 ; a), (2 ; b)}.",
+    "Si A compte 3 éléments et B en compte 4, A × B compte 3 × 4 = 12 couples."
+   ],
+   "piege": "Ne confonds pas (1 ; a) et (a ; 1) : l’ordre indique le rôle de chaque coordonnée.",
+   "astuce_memoire": "Lignes multipliées par colonnes.",
+   "quiz": [
+    {
+     "q": "Si A = {1, 2} et B = {a, b}, combien de couples contient A × B ?",
+     "choix": [
+      "2",
+      "8",
+      "4"
+     ],
+     "rep": "4",
+     "expl": "Chaque élément de A se combine avec deux éléments de B."
+    },
+    {
+     "q": "Quel couple appartient à {1, 2} × {a, b} ?",
+     "choix": [
+      "(2 ; b)",
+      "(b ; 2)",
+      "(a ; b)"
+     ],
+     "rep": "(2 ; b)",
+     "expl": "Le premier élément vient du premier ensemble et le second du second."
+    },
+    {
+     "q": "Si A contient 3 éléments et B en contient 5, quel est le cardinal de A × B ?",
+     "choix": [
+      "8",
+      "15",
+      "2"
+     ],
+     "rep": "15",
+     "expl": "Il y a 3 × 5 couples possibles."
+    }
+   ],
+   "id": "REV-MA-1RE-02"
+  },
+  {
+   "axe": "Vocabulaire ensembliste et logique",
+   "titre": "Implication et réciproque",
+   "emoji": "➡️",
+   "en_une_phrase": "Une implication affirme qu’une condition entraîne une conclusion, sans garantir l’implication inverse.",
+   "comprendre": "Tu sais qu’un carré est un rectangle. Cela ne signifie pas que tout rectangle est un carré. Le sens de la flèche compte dans un raisonnement.",
+   "essentiel": [
+    "P implique Q signifie : si P est vraie, alors Q est vraie.",
+    "P est une condition suffisante pour Q.",
+    "Q est une condition nécessaire pour P.",
+    "La réciproque échange hypothèse et conclusion."
+   ],
+   "image_mentale": "Imagine une flèche de la propriété de carré vers celle de rectangle.",
+   "regle_ou_methode": "Écris si P alors Q, puis échange les deux propriétés pour former la réciproque.",
+   "exemples": [
+    "Si un quadrilatère est un carré, alors c’est un rectangle : l’implication est vraie. Sa réciproque affirme que tout rectangle est un carré ; un rectangle de côtés 2 et 3 la rend fausse.",
+    "Être multiple de 4 est une condition suffisante pour être pair."
+   ],
+   "piege": "La vérité de P implique Q ne prouve pas la réciproque Q implique P.",
+   "astuce_memoire": "Nécessaire : à l’arrivée ; suffisante : au départ.",
+   "quiz": [
+    {
+     "q": "Pour « si P alors Q », que peut-on affirmer de P par rapport à Q sans autre hypothèse ?",
+     "choix": [
+      "Une condition suffisante",
+      "Une condition nécessaire dans tous les cas",
+      "La négation de Q"
+     ],
+     "rep": "Une condition suffisante",
+     "expl": "La réalisation de P suffit à obtenir Q."
+    },
+    {
+     "q": "Quelle est la réciproque de « si P alors Q » ?",
+     "choix": [
+      "Si non P alors non Q",
+      "Si Q alors P",
+      "Si non Q alors non P"
+     ],
+     "rep": "Si Q alors P",
+     "expl": "La réciproque échange P et Q."
+    },
+    {
+     "q": "Quel rectangle montre que la réciproque « rectangle implique carré » est fausse ?",
+     "choix": [
+      "Un carré de côté 2",
+      "Un rectangle de côtés 3 et 3",
+      "Un rectangle de côtés 2 et 3"
+     ],
+     "rep": "Un rectangle de côtés 2 et 3",
+     "expl": "Ses côtés inégaux montrent qu’il n’est pas carré."
+    }
+   ],
+   "id": "REV-MA-1RE-03"
+  },
+  {
+   "axe": "Vocabulaire ensembliste et logique",
+   "titre": "Contraposée et quantificateurs",
+   "emoji": "🔍",
+   "en_une_phrase": "La contraposée conserve la vérité d’une implication en inversant et niant ses termes.",
+   "comprendre": "Pour prouver une règle, il est parfois plus simple d’examiner ce qui arrive quand sa conclusion échoue. Par ailleurs, un seul contre-exemple suffit à réfuter une affirmation générale. Bien préciser « tous » ou « il existe » évite les contresens.",
+   "essentiel": [
+    "La contraposée de « si P alors Q » est « si non Q alors non P ».",
+    "Une implication et sa contraposée sont équivalentes.",
+    "La négation de « tous vérifient P » est « au moins un ne vérifie pas P ».",
+    "Un contre-exemple réfute une proposition universelle."
+   ],
+   "image_mentale": "Imagine une flèche P vers Q, puis une flèche inverse entre les négations.",
+   "regle_ou_methode": "Inverse l’ordre, nie les deux propositions puis vérifie le sens des quantificateurs.",
+   "exemples": [
+    "Si un entier est multiple de 4, alors il est pair. Sa contraposée est : si un entier n’est pas pair, alors il n’est pas multiple de 4. Les deux affirmations ont la même valeur de vérité.",
+    "L’affirmation « tous les nombres premiers sont impairs » est fausse : 2 est premier et pair."
+   ],
+   "piege": "La réciproque « si Q alors P » n’est pas la contraposée.",
+   "astuce_memoire": "Inverse et nie les deux termes.",
+   "quiz": [
+    {
+     "q": "Quelle est la contraposée de « si P alors Q » ?",
+     "choix": [
+      "Si Q alors P",
+      "Si non Q alors non P",
+      "Si non P alors non Q"
+     ],
+     "rep": "Si non Q alors non P",
+     "expl": "On inverse et on nie les deux termes."
+    },
+    {
+     "q": "Quelle est la négation de « tous les élèves sont présents » ?",
+     "choix": [
+      "Tous les élèves sont absents",
+      "Aucun élève n’est absent",
+      "Au moins un élève est absent"
+     ],
+     "rep": "Au moins un élève est absent",
+     "expl": "La négation de « tous » est « au moins un ne ». "
+    },
+    {
+     "q": "Quel contre-exemple réfute « tous les nombres premiers sont impairs » ?",
+     "choix": [
+      "2",
+      "3",
+      "5"
+     ],
+     "rep": "2",
+     "expl": "Deux est premier et pair."
+    }
+   ],
+   "id": "REV-MA-1RE-04"
+  },
+  {
+   "axe": "Algorithmique et programmation",
+   "titre": "Listes et indices",
+   "emoji": "📋",
+   "en_une_phrase": "Une liste ordonne des valeurs accessibles par leur indice.",
+   "comprendre": "Comme une file de casiers, une liste range des valeurs dans un ordre précis. En Python, le premier élément porte l’indice 0. On peut parcourir ou compléter une liste pour étudier une suite.",
+   "essentiel": [
+    "La liste [4, 7, 10] contient trois valeurs.",
+    "Son élément d’indice 0 est 4 et celui d’indice 2 est 10.",
+    "Une instruction append ajoute un élément à la fin.",
+    "L’ordre et les répétitions comptent dans une liste."
+   ],
+   "image_mentale": "Imagine trois casiers étiquetés 0, 1 et 2.",
+   "regle_ou_methode": "Repère l’indice à partir de 0, puis lis ou modifie l’élément correspondant.",
+   "exemples": [
+    "Avec L = [4, 7, 10], repère les indices : 0 pour 4, 1 pour 7 et 2 pour 10. Ainsi L[1] vaut 7.",
+    "Après L.append(13), la liste devient [4, 7, 10, 13]."
+   ],
+   "piege": "Le deuxième élément est d’indice 1, pas d’indice 2.",
+   "astuce_memoire": "Premier casier : indice 0.",
+   "quiz": [
+    {
+     "q": "Si L = [4, 7, 10], que vaut L[1] ?",
+     "choix": [
+      "4",
+      "10",
+      "7"
+     ],
+     "rep": "7",
+     "expl": "L’indice 1 désigne le deuxième élément."
+    },
+    {
+     "q": "Combien d’éléments contient [2, 2, 5] ?",
+     "choix": [
+      "3",
+      "2",
+      "5"
+     ],
+     "rep": "3",
+     "expl": "Une liste garde les répétitions."
+    },
+    {
+     "q": "Quel est le dernier indice d’une liste de 4 éléments ?",
+     "choix": [
+      "4",
+      "3",
+      "2"
+     ],
+     "rep": "3",
+     "expl": "Les indices vont de 0 à 3."
+    }
+   ],
+   "id": "REV-MA-1RE-05"
+  },
+  {
+   "axe": "Algorithmique et programmation",
+   "titre": "Générer une liste",
+   "emoji": "🧮",
+   "en_une_phrase": "Une liste en compréhension construit des valeurs en appliquant une règle à chaque indice.",
+   "comprendre": "Tu sais calculer les premiers termes d’une suite. Une instruction peut appliquer la même formule à plusieurs rangs. Cela évite de recopier la règle à chaque fois.",
+   "essentiel": [
+    "range(4) fournit les entiers 0, 1, 2 et 3.",
+    "[2*n + 1 for n in range(4)] construit quatre valeurs.",
+    "Une liste peut aussi être construite par ajouts successifs."
+   ],
+   "image_mentale": "Imagine une machine qui transforme chaque numéro d’entrée en valeur.",
+   "regle_ou_methode": "Identifie les indices produits, applique l’expression à chacun puis range les résultats.",
+   "exemples": [
+    "Dans [2*n + 1 for n in range(4)], les indices sont 0, 1, 2 et 3. Leurs images sont 1, 3, 5 et 7 : la liste vaut [1, 3, 5, 7].",
+    "[n*n for n in range(3)] vaut [0, 1, 4]."
+   ],
+   "piege": "La borne supérieure de range n’est pas incluse.",
+   "astuce_memoire": "range(4) s’arrête à 3.",
+   "quiz": [
+    {
+     "q": "Que produit [n + 2 for n in range(3)] ?",
+     "choix": [
+      "[2, 3, 4]",
+      "[2, 3, 4, 5]",
+      "[1, 2, 3]"
+     ],
+     "rep": "[2, 3, 4]",
+     "expl": "Les valeurs de n sont 0, 1 et 2."
+    },
+    {
+     "q": "Combien de valeurs fournit range(5) ?",
+     "choix": [
+      "4",
+      "5",
+      "6"
+     ],
+     "rep": "5",
+     "expl": "Les indices sont 0, 1, 2, 3 et 4."
+    },
+    {
+     "q": "Que vaut [n*n for n in range(3)] ?",
+     "choix": [
+      "[1, 4, 9]",
+      "[0, 2, 4]",
+      "[0, 1, 4]"
+     ],
+     "rep": "[0, 1, 4]",
+     "expl": "On calcule les carrés de 0, 1 et 2."
+    }
+   ],
+   "id": "REV-MA-1RE-06"
+  },
+  {
+   "axe": "Algorithmique et programmation",
+   "titre": "Boucle et seuil",
+   "emoji": "🔁",
+   "en_une_phrase": "Une boucle répète une instruction jusqu’à atteindre un objectif ou épuiser un nombre d’étapes.",
+   "comprendre": "Tu peux suivre l’évolution d’une somme mois après mois. Une boucle met à jour la valeur et le rang. Pour chercher un seuil, il faut vérifier que la condition finit effectivement par devenir fausse.",
+   "essentiel": [
+    "Une affectation modifie la valeur d’une variable.",
+    "Une boucle for peut répéter un nombre fixé de fois.",
+    "Une boucle while continue tant que sa condition est vraie.",
+    "Une boucle non terminante ne fournit pas de résultat final."
+   ],
+   "image_mentale": "Imagine une flèche qui revient vers une case tant que le seuil n’est pas atteint.",
+   "regle_ou_methode": "Initialise la valeur et le rang, mets-les à jour puis vérifie la condition d’arrêt.",
+   "exemples": [
+    "On part de u = 4 et n = 0 ; tant que u < 10, on ajoute 3 à u et 1 à n. Les étapes donnent (u, n) = (7, 1) puis (10, 2) ; la boucle s’arrête au rang 2.",
+    "Si une boucle maintient toujours u = 4 tant que u < 10, elle ne s’arrête pas."
+   ],
+   "piege": "Un seuil et une relation de récurrence ne garantissent pas toujours que la boucle s’arrête.",
+   "astuce_memoire": "Initialiser, tester, actualiser.",
+   "quiz": [
+    {
+     "q": "En partant de u = 4 et en ajoutant 3 à chaque étape, à quel rang atteint-on 10 ?",
+     "choix": [
+      "1",
+      "2",
+      "3"
+     ],
+     "rep": "2",
+     "expl": "Les valeurs sont 4, 7 puis 10."
+    },
+    {
+     "q": "Quand une boucle while s’arrête-t-elle normalement ?",
+     "choix": [
+      "Après une seule instruction obligatoirement",
+      "Quand la condition reste toujours vraie",
+      "Quand sa condition devient fausse"
+     ],
+     "rep": "Quand sa condition devient fausse",
+     "expl": "La boucle continue tant que la condition est vraie."
+    },
+    {
+     "q": "Si u reste toujours égal à 4 et que la condition est u < 10, que se passe-t-il ?",
+     "choix": [
+      "La boucle ne termine pas",
+      "La boucle s’arrête au rang 1",
+      "La valeur atteint 10"
+     ],
+     "rep": "La boucle ne termine pas",
+     "expl": "La condition reste toujours vraie."
+    }
+   ],
+   "id": "REV-MA-1RE-07"
+  },
+  {
+   "axe": "Algèbre",
+   "titre": "Définir une suite",
+   "emoji": "🔢",
+   "en_une_phrase": "Une suite associe une valeur à chaque entier naturel de son domaine de définition.",
+   "comprendre": "Tu peux relever le nombre de places occupées chaque semaine. Une formule explicite permet de calculer directement une valeur à partir de son rang. Une relation de récurrence calcule un terme à partir du précédent, en partant d’une valeur initiale.",
+   "essentiel": [
+    "uₙ est le terme de rang n.",
+    "Une formule explicite donne uₙ en fonction de n.",
+    "Une relation comme uₙ₊₁ = f(uₙ) utilise le terme précédent.",
+    "Le rang de départ doit être précisé."
+   ],
+   "image_mentale": "Imagine une file de cases numérotées où chaque valeur dépend du rang ou de la case précédente.",
+   "regle_ou_methode": "Repère le rang initial et la règle avant de calculer les termes demandés.",
+   "exemples": [
+    "Soit u₀ = 2 et uₙ₊₁ = 2uₙ + 1. Alors u₁ = 2 × 2 + 1 = 5, puis u₂ = 2 × 5 + 1 = 11.",
+    "Si vₙ = n² + 1, alors v₄ = 4² + 1 = 17."
+   ],
+   "piege": "Pour déterminer les termes de cette suite définie par récurrence, il faut connaître un terme de départ.",
+   "astuce_memoire": "Rang numéro ; terme valeur.",
+   "quiz": [
+    {
+     "q": "Si u₀ = 2 et uₙ₊₁ = 2uₙ + 1, que vaut u₂ ?",
+     "choix": [
+      "5",
+      "9",
+      "11"
+     ],
+     "rep": "11",
+     "expl": "On obtient successivement u₁ = 5 puis u₂ = 11."
+    },
+    {
+     "q": "Si vₙ = n² + 1, que vaut v₃ ?",
+     "choix": [
+      "10",
+      "7",
+      "9"
+     ],
+     "rep": "10",
+     "expl": "3² + 1 = 10."
+    },
+    {
+     "q": "Que faut-il préciser pour utiliser uₙ₊₁ = 2uₙ + 1 ?",
+     "choix": [
+      "La seule couleur du graphique",
+      "Un terme initial",
+      "La dérivée de la suite"
+     ],
+     "rep": "Un terme initial",
+     "expl": "La relation détermine les termes suivants à partir d’un terme connu."
+    }
+   ],
+   "id": "REV-MA-1RE-08"
+  },
+  {
+   "axe": "Algèbre",
+   "titre": "Variation d’une suite",
+   "emoji": "📈",
+   "en_une_phrase": "Comparer deux termes consécutifs permet d’étudier le sens de variation d’une suite.",
+   "comprendre": "Pour savoir si une réserve augmente, tu compares deux relevés successifs. Une suite est croissante quand chaque terme est inférieur ou égal au suivant. Le signe de uₙ₊₁ − uₙ permet souvent de conclure.",
+   "essentiel": [
+    "Une suite est croissante si uₙ₊₁ − uₙ ≥ 0 pour tout rang considéré.",
+    "Elle est décroissante si cette différence est ≤ 0 à tous ces rangs.",
+    "Pour des termes strictement positifs, le quotient uₙ₊₁/uₙ peut aussi aider."
+   ],
+   "image_mentale": "Imagine une série de points reliés par des marches.",
+   "regle_ou_methode": "Calcule la différence entre deux termes consécutifs, puis étudie son signe pour tout rang.",
+   "exemples": [
+    "Pour uₙ = n², calcule uₙ₊₁ − uₙ = (n + 1)² − n² = 2n + 1. Pour n naturel, ce nombre est positif : la suite est strictement croissante.",
+    "Pour vₙ = 10 − 2n, on a vₙ₊₁ − vₙ = −2 : la suite est strictement décroissante."
+   ],
+   "piege": "Quelques premiers termes ne suffisent pas à démontrer une propriété pour tous les rangs.",
+   "astuce_memoire": "Différence positive : croissance.",
+   "quiz": [
+    {
+     "q": "Si uₙ₊₁ − uₙ = −3 pour tout n, la suite est :",
+     "choix": [
+      "Strictement décroissante",
+      "Strictement croissante",
+      "Constante"
+     ],
+     "rep": "Strictement décroissante",
+     "expl": "Une différence négative à chaque rang donne une décroissance stricte."
+    },
+    {
+     "q": "Pour uₙ = n² et n naturel, que vaut uₙ₊₁ − uₙ ?",
+     "choix": [
+      "2n",
+      "2n + 1",
+      "n² + 1"
+     ],
+     "rep": "2n + 1",
+     "expl": "On développe (n + 1)² − n²."
+    },
+    {
+     "q": "Vérifier les dix premiers termes croissants démontre-t-il que tous les suivants le sont ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, si le premier terme est positif",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Une vérification finie ne démontre pas une propriété à tous les rangs."
+    }
+   ],
+   "id": "REV-MA-1RE-09"
+  },
+  {
+   "axe": "Algèbre",
+   "titre": "Suite arithmétique",
+   "emoji": "➕",
+   "en_une_phrase": "Une suite arithmétique évolue par ajout d’une constante appelée raison.",
+   "comprendre": "Une cagnotte recevant la même somme chaque mois croît d’une quantité fixe. Les valeurs successives forment une suite arithmétique. La raison mesure la différence entre deux termes consécutifs.",
+   "essentiel": [
+    "uₙ₊₁ = uₙ + r.",
+    "Pour un premier terme u₀, uₙ = u₀ + nr.",
+    "Plus généralement, uₙ = uₚ + (n − p)r.",
+    "La suite croît si r > 0 et décroît si r < 0."
+   ],
+   "image_mentale": "Imagine un escalier dont chaque marche a la même hauteur.",
+   "regle_ou_methode": "Repère un terme connu, la raison et le nombre de passages entre les rangs.",
+   "exemples": [
+    "Si u₂ = 7 et r = 3, le passage de 2 à 6 comprend 4 étapes. Donc u₆ = 7 + 4 × 3 = 19.",
+    "Si u₀ = 10 et r = −2, alors u₃ = 10 − 6 = 4."
+   ],
+   "piege": "De u₂ à u₆, il y a 4 passages, pas 6.",
+   "astuce_memoire": "Différence de rangs, puis raison.",
+   "quiz": [
+    {
+     "q": "Pour u₂ = 7 et r = 3, que vaut u₆ ?",
+     "choix": [
+      "25",
+      "19",
+      "16"
+     ],
+     "rep": "19",
+     "expl": "On ajoute quatre fois 3 à 7."
+    },
+    {
+     "q": "Quelle est la raison de la suite 9, 5, 1, −3 ?",
+     "choix": [
+      "4",
+      "−5",
+      "−4"
+     ],
+     "rep": "−4",
+     "expl": "Chaque terme est inférieur de 4 au précédent."
+    },
+    {
+     "q": "Si r = 0, comment varie la suite ?",
+     "choix": [
+      "Elle est constante",
+      "Elle est strictement croissante",
+      "Elle est strictement décroissante"
+     ],
+     "rep": "Elle est constante",
+     "expl": "Ajouter zéro ne change pas la valeur."
+    }
+   ],
+   "id": "REV-MA-1RE-10"
+  },
+  {
+   "axe": "Algèbre",
+   "titre": "Somme arithmétique",
+   "emoji": "🧱",
+   "en_une_phrase": "La somme de termes consécutifs d’une suite arithmétique est le nombre de termes multiplié par la moyenne des extrêmes.",
+   "comprendre": "Pour compter des sièges rangés par rangées de longueur régulière, on peut associer les premières et les dernières rangées. Chaque paire a la même somme. Cette symétrie donne une formule rapide.",
+   "essentiel": [
+    "Pour N termes consécutifs, somme = N × (premier + dernier) ÷ 2.",
+    "De uₚ à uₙ inclus, il y a n − p + 1 termes.",
+    "1 + 2 + … + n = n(n + 1)/2."
+   ],
+   "image_mentale": "Imagine deux rangées de nombres écrites en sens inverse et additionnées colonne par colonne.",
+   "regle_ou_methode": "Compte les termes, additionne le premier et le dernier, multiplie puis divise par 2.",
+   "exemples": [
+    "Pour additionner 3 + 5 + 7 + 9 + 11, compte 5 termes. La moyenne des extrêmes vaut (3 + 11)/2 = 7 ; la somme vaut 5 × 7 = 35.",
+    "1 + 2 + … + 10 = 10 × 11/2 = 55."
+   ],
+   "piege": "De u₃ à u₈ inclus, il y a 8 − 3 + 1 = 6 termes.",
+   "astuce_memoire": "Nombre de termes fois moyenne des extrêmes.",
+   "quiz": [
+    {
+     "q": "Que vaut 2 + 4 + 6 + 8 ?",
+     "choix": [
+      "16",
+      "24",
+      "20"
+     ],
+     "rep": "20",
+     "expl": "Il y a 4 termes de moyenne (2 + 8)/2 = 5."
+    },
+    {
+     "q": "Combien y a-t-il de termes de u₃ à u₈ inclus ?",
+     "choix": [
+      "6",
+      "5",
+      "8"
+     ],
+     "rep": "6",
+     "expl": "On calcule 8 − 3 + 1 = 6."
+    },
+    {
+     "q": "Que vaut 1 + 2 + … + 20 ?",
+     "choix": [
+      "200",
+      "210",
+      "220"
+     ],
+     "rep": "210",
+     "expl": "20 × 21/2 = 210."
+    }
+   ],
+   "id": "REV-MA-1RE-11"
+  },
+  {
+   "axe": "Algèbre",
+   "titre": "Suite géométrique",
+   "emoji": "✖️",
+   "en_une_phrase": "Une suite géométrique évolue en multipliant toujours par une même raison.",
+   "comprendre": "Une somme qui augmente de 5 % à chaque période est multipliée par 1,05. Comme la base change, le montant ajouté n’est pas constant. Une suite géométrique décrit ce type d’évolution.",
+   "essentiel": [
+    "uₙ₊₁ = quₙ.",
+    "Pour un terme initial u₀, uₙ = u₀qⁿ.",
+    "Si les termes sont positifs et q > 1, la suite croît.",
+    "Un taux constant t correspond à q = 1 + t, avec t en écriture décimale."
+   ],
+   "image_mentale": "Imagine une machine qui multiplie chaque valeur par le même coefficient.",
+   "regle_ou_methode": "Identifie la valeur de départ, la raison et le nombre de périodes.",
+   "exemples": [
+    "Un capital de 200 € augmente de 5 % par an. La raison est 1,05 ; après deux ans, u₂ = 200 × 1,05² = 220,50 €.",
+    "Si u₀ = 80 et q = 0,5, alors u₃ = 80 × 0,5³ = 10."
+   ],
+   "piege": "Une hausse de 5 % se traduit par un coefficient 1,05, pas 0,05.",
+   "astuce_memoire": "Taux fixe : coefficient fixe.",
+   "quiz": [
+    {
+     "q": "Un capital de 200 augmente de 5 % deux fois. Quelle est sa valeur finale ?",
+     "choix": [
+      "220,50",
+      "220",
+      "210"
+     ],
+     "rep": "220,50",
+     "expl": "200 × 1,05² = 220,50."
+    },
+    {
+     "q": "Quelle raison correspond à une baisse de 8 % par période ?",
+     "choix": [
+      "0,08",
+      "0,92",
+      "1,08"
+     ],
+     "rep": "0,92",
+     "expl": "On calcule 1 − 0,08."
+    },
+    {
+     "q": "Si u₀ = 3 et q = 2, que vaut u₃ ?",
+     "choix": [
+      "18",
+      "12",
+      "24"
+     ],
+     "rep": "24",
+     "expl": "3 × 2³ = 24."
+    }
+   ],
+   "id": "REV-MA-1RE-12"
+  },
+  {
+   "axe": "Algèbre",
+   "titre": "Somme géométrique",
+   "emoji": "🔗",
+   "en_une_phrase": "La somme de puissances géométriques s’obtient grâce à une différence de deux sommes décalées.",
+   "comprendre": "Une quantité double à chaque étape et tu veux additionner les quantités produites. Écrire la somme puis la multiplier par la raison fait apparaître des termes qui s’annulent. Cela donne une formule utile pour de nombreux termes.",
+   "essentiel": [
+    "Pour q ≠ 1, 1 + q + … + qⁿ = (1 − qⁿ⁺¹)/(1 − q).",
+    "La somme u₀ + … + uₙ vaut u₀ fois cette expression.",
+    "Pour q = 1, la somme de n + 1 termes tous égaux à u₀ vaut (n + 1)u₀."
+   ],
+   "image_mentale": "Imagine deux lignes de termes décalées : presque toutes les colonnes s’annulent.",
+   "regle_ou_methode": "Vérifie q ≠ 1, compte les exposants puis applique la formule.",
+   "exemples": [
+    "Pour 1 + 2 + 4 + 8, prends q = 2 et n = 3. La formule donne (1 − 2⁴)/(1 − 2) = (1 − 16)/(−1) = 15.",
+    "Pour 3 + 3 + 3 + 3, la raison est 1 : la somme vaut 4 × 3 = 12."
+   ],
+   "piege": "La formule avec 1 − q au dénominateur ne s’applique pas pour q = 1.",
+   "astuce_memoire": "De 0 à n : n + 1 termes.",
+   "quiz": [
+    {
+     "q": "Que vaut 1 + 3 + 9 + 27 ?",
+     "choix": [
+      "39",
+      "40",
+      "81"
+     ],
+     "rep": "40",
+     "expl": "La somme directe vaut 40."
+    },
+    {
+     "q": "Combien de termes y a-t-il dans 1 + q + q² + q³ + q⁴ ?",
+     "choix": [
+      "4",
+      "6",
+      "5"
+     ],
+     "rep": "5",
+     "expl": "Les exposants vont de 0 à 4 inclus."
+    },
+    {
+     "q": "Si q = 1, que vaut 1 + q + q² + q³ ?",
+     "choix": [
+      "4",
+      "3",
+      "0"
+     ],
+     "rep": "4",
+     "expl": "Les quatre termes valent chacun 1."
+    }
+   ],
+   "id": "REV-MA-1RE-13"
+  },
+  {
+   "axe": "Algèbre",
+   "titre": "Limite : une intuition",
+   "emoji": "🌅",
+   "en_une_phrase": "Étudier intuitivement une limite consiste à observer ce que devient une suite quand le rang grandit.",
+   "comprendre": "Tu peux imaginer une distance divisée par deux à chaque étape. Les valeurs se rapprochent de zéro sans forcément devenir nulles. D’autres suites grandissent sans borne ou oscillent sans approcher une seule valeur.",
+   "essentiel": [
+    "La suite (1/2)ⁿ se rapproche de 0 lorsque n grandit.",
+    "La suite n devient aussi grande que voulu quand n grandit.",
+    "La suite (−1)ⁿ alterne entre 1 et −1 et n’approche pas une seule valeur.",
+    "Quelques termes suggèrent une limite mais ne suffisent pas toujours à la prouver."
+   ],
+   "image_mentale": "Imagine des points qui se resserrent près de zéro ou alternent entre deux hauteurs.",
+   "regle_ou_methode": "Calcule plusieurs termes, observe leur comportement et distingue approche, croissance et oscillation.",
+   "exemples": [
+    "Pour uₙ = (1/2)ⁿ, les premiers termes sont 1, 1/2, 1/4 et 1/8. Ils se rapprochent de 0 ; on conjecture que la suite tend vers 0.",
+    "La suite vₙ = (−1)ⁿ donne 1, −1, 1, −1 : elle n’a pas de limite finie unique."
+   ],
+   "piege": "Une suite peut tendre vers zéro sans qu’un de ses termes ne soit égal à zéro.",
+   "astuce_memoire": "S’approcher n’est pas nécessairement atteindre.",
+   "quiz": [
+    {
+     "q": "Vers quelle valeur la suite (1/2)ⁿ se rapproche-t-elle ?",
+     "choix": [
+      "1",
+      "−1",
+      "0"
+     ],
+     "rep": "0",
+     "expl": "Les puissances successives de 1/2 se rapprochent de zéro."
+    },
+    {
+     "q": "Quel comportement a (−1)ⁿ ?",
+     "choix": [
+      "Elle alterne entre 1 et −1",
+      "Elle se rapproche de 0",
+      "Elle augmente strictement"
+     ],
+     "rep": "Elle alterne entre 1 et −1",
+     "expl": "Les puissances paires valent 1 et les impaires −1."
+    },
+    {
+     "q": "Si les premiers termes semblent se rapprocher de 0, est-ce toujours une preuve ?",
+     "choix": [
+      "Oui, même pour trois termes",
+      "Non",
+      "Oui, si les termes sont positifs"
+     ],
+     "rep": "Non",
+     "expl": "Une observation finie peut suggérer une propriété sans la démontrer."
+    }
+   ],
+   "id": "REV-MA-1RE-14"
+  },
+  {
+   "axe": "Algèbre",
+   "titre": "Forme canonique",
+   "emoji": "🏔️",
+   "en_une_phrase": "La forme canonique d’un polynôme du second degré rend son extremum directement lisible.",
+   "comprendre": "Une parabole décrit par exemple la hauteur modélisée d’un objet lancé. Écrire le polynôme comme un carré permet de trouver son sommet. La complétion du carré relie cette forme à l’expression développée.",
+   "essentiel": [
+    "La forme canonique est a(x − α)² + β avec a non nul.",
+    "Le sommet de la parabole a pour coordonnées (α ; β).",
+    "Si a > 0, β est un minimum ; si a < 0, β est un maximum."
+   ],
+   "image_mentale": "Imagine une parabole avec son sommet marqué au point (α ; β).",
+   "regle_ou_methode": "Complète le carré puis lis le sommet et le sens d’ouverture.",
+   "exemples": [
+    "Pour x² − 4x + 7, écris x² − 4x = (x − 2)² − 4. Donc x² − 4x + 7 = (x − 2)² + 3. Le minimum est 3, atteint en x = 2.",
+    "Pour −2(x + 1)² + 5, le maximum vaut 5 et est atteint pour x = −1."
+   ],
+   "piege": "Dans (x + 1)², l’abscisse du sommet est −1, pas 1.",
+   "astuce_memoire": "Carré nul : sommet.",
+   "quiz": [
+    {
+     "q": "Quel est le sommet de f(x) = (x − 3)² + 2 ?",
+     "choix": [
+      "(3 ; 2)",
+      "(−3 ; 2)",
+      "(3 ; −2)"
+     ],
+     "rep": "(3 ; 2)",
+     "expl": "Le carré s’annule pour x = 3 et la valeur est 2."
+    },
+    {
+     "q": "Quelle est la forme canonique de x² − 4x + 7 ?",
+     "choix": [
+      "(x − 2)² + 7",
+      "(x − 2)² + 3",
+      "(x + 2)² + 3"
+     ],
+     "rep": "(x − 2)² + 3",
+     "expl": "Le développement de (x − 2)² + 3 redonne x² − 4x + 7."
+    },
+    {
+     "q": "Quel est le maximum de −2(x + 1)² + 5 ?",
+     "choix": [
+      "−1",
+      "−2",
+      "5"
+     ],
+     "rep": "5",
+     "expl": "Le carré est positif ou nul, donc son opposé est au plus zéro."
+    }
+   ],
+   "id": "REV-MA-1RE-15"
+  },
+  {
+   "axe": "Algèbre",
+   "titre": "Discriminant et racines",
+   "emoji": "🧮",
+   "en_une_phrase": "Le discriminant détermine le nombre de solutions réelles d’une équation du second degré.",
+   "comprendre": "Une parabole peut couper l’axe horizontal deux fois, le toucher une fois ou ne pas le rencontrer. Pour ax² + bx + c = 0, le discriminant indique lequel de ces cas se produit. Les formules donnent ensuite les racines réelles.",
+   "essentiel": [
+    "Pour a ≠ 0, Δ = b² − 4ac.",
+    "Si Δ > 0, il y a deux racines : (−b − √Δ)/(2a) et (−b + √Δ)/(2a).",
+    "Si Δ = 0, la racine double est −b/(2a).",
+    "Si Δ < 0, il n’y a pas de racine réelle."
+   ],
+   "image_mentale": "Imagine une parabole qui coupe, touche ou évite l’axe horizontal.",
+   "regle_ou_methode": "Identifie a, b et c, calcule Δ puis choisis la formule adaptée.",
+   "exemples": [
+    "Pour x² − 5x + 6 = 0, a = 1, b = −5 et c = 6. Δ = 25 − 24 = 1. Les racines sont (5 − 1)/2 = 2 et (5 + 1)/2 = 3.",
+    "Pour x² + 1 = 0, Δ = −4 : il n’y a aucune solution réelle."
+   ],
+   "piege": "Le coefficient b de x² − 5x + 6 est −5, pas 5.",
+   "astuce_memoire": "Signe de Δ : deux, une ou aucune racine réelle.",
+   "quiz": [
+    {
+     "q": "Quel est le discriminant de x² − 5x + 6 ?",
+     "choix": [
+      "49",
+      "1",
+      "−1"
+     ],
+     "rep": "1",
+     "expl": "Δ = (−5)² − 4 × 1 × 6 = 1."
+    },
+    {
+     "q": "Combien de racines réelles a x² + 1 ?",
+     "choix": [
+      "Une",
+      "Deux",
+      "Aucune"
+     ],
+     "rep": "Aucune",
+     "expl": "Son discriminant vaut −4."
+    },
+    {
+     "q": "Quelle est la racine double de x² − 4x + 4 ?",
+     "choix": [
+      "2",
+      "−2",
+      "4"
+     ],
+     "rep": "2",
+     "expl": "Δ = 0 et −b/(2a) = 4/2 = 2."
+    }
+   ],
+   "id": "REV-MA-1RE-16"
+  },
+  {
+   "axe": "Algèbre",
+   "titre": "Factoriser un trinôme",
+   "emoji": "🧩",
+   "en_une_phrase": "Les racines d’un trinôme permettent de l’écrire comme un produit de facteurs.",
+   "comprendre": "Tu sais qu’un produit vaut zéro si l’un de ses facteurs vaut zéro. Réciproquement, des racines connues permettent de construire une forme factorisée. La somme et le produit des racines peuvent aider à les repérer.",
+   "essentiel": [
+    "Si x₁ et x₂ sont deux racines réelles, ax² + bx + c = a(x − x₁)(x − x₂).",
+    "Lorsque deux racines réelles existent, leur somme est −b/a et leur produit c/a.",
+    "Une racine double donne a(x − x₀)².",
+    "Une factorisation réelle en facteurs du premier degré n’existe pas si Δ < 0."
+   ],
+   "image_mentale": "Imagine deux points où la parabole coupe l’axe, reliés à deux facteurs.",
+   "regle_ou_methode": "Repère ou calcule les racines, conserve le coefficient a puis vérifie en développant.",
+   "exemples": [
+    "Pour 2x² − 10x + 12, cherche deux nombres de somme 5 et de produit 6 : 2 et 3. Comme a = 2, la factorisation est 2(x − 2)(x − 3).",
+    "x² − 6x + 9 = (x − 3)² : 3 est une racine double."
+   ],
+   "piege": "N’oublie pas le coefficient a devant les facteurs.",
+   "astuce_memoire": "Racines dans les facteurs ; coefficient devant.",
+   "quiz": [
+    {
+     "q": "Quelle est la factorisation de 2x² − 10x + 12 ?",
+     "choix": [
+      "(x − 2)(x − 3)",
+      "2(x + 2)(x + 3)",
+      "2(x − 2)(x − 3)"
+     ],
+     "rep": "2(x − 2)(x − 3)",
+     "expl": "Les racines sont 2 et 3 et le coefficient dominant est 2."
+    },
+    {
+     "q": "Quelle est la somme des racines de x² − 5x + 6 ?",
+     "choix": [
+      "5",
+      "−5",
+      "6"
+     ],
+     "rep": "5",
+     "expl": "La somme vaut −b/a = 5."
+    },
+    {
+     "q": "Quelle expression a pour racine double 3 ?",
+     "choix": [
+      "(x + 3)²",
+      "(x − 3)²",
+      "(x − 3)(x + 3)"
+     ],
+     "rep": "(x − 3)²",
+     "expl": "Les deux facteurs sont égaux et s’annulent en 3."
+    }
+   ],
+   "id": "REV-MA-1RE-17"
+  },
+  {
+   "axe": "Algèbre",
+   "titre": "Signe d’un trinôme",
+   "emoji": "🚦",
+   "en_une_phrase": "Le signe d’un trinôme se déduit de son coefficient dominant et de ses racines réelles.",
+   "comprendre": "Pour résoudre une inéquation, tu dois savoir où une expression est positive ou négative. Une parabole qui coupe l’axe sépare la droite en intervalles. Le coefficient de x² donne le signe à l’extérieur des racines.",
+   "essentiel": [
+    "Avec deux racines distinctes, le trinôme a le signe de a à l’extérieur des racines et le signe opposé entre elles.",
+    "Avec une racine double, il a le signe de a sauf en cette racine où il est nul.",
+    "Sans racine réelle, il garde partout le signe de a."
+   ],
+   "image_mentale": "Imagine une parabole et les portions situées au-dessus ou au-dessous de l’axe.",
+   "regle_ou_methode": "Classe les racines, repère le signe de a puis construis les signes par intervalles.",
+   "exemples": [
+    "Pour f(x) = (x − 1)(x − 4), les racines sont 1 et 4 et a = 1. Le trinôme est positif pour x < 1 et x > 4, négatif pour 1 < x < 4, et nul en 1 et 4.",
+    "Pour g(x) = −(x − 1)(x − 4), les signes sont inversés et g est positive entre 1 et 4."
+   ],
+   "piege": "Pour une inégalité large, inclus les racines si elles annulent l’expression.",
+   "astuce_memoire": "Signe de a à l’extérieur des racines.",
+   "quiz": [
+    {
+     "q": "Où (x − 1)(x − 4) est-il strictement négatif ?",
+     "choix": [
+      "Entre 1 et 4",
+      "À l’extérieur de 1 et 4",
+      "En 1 et 4 uniquement"
+     ],
+     "rep": "Entre 1 et 4",
+     "expl": "Les deux facteurs ont des signes opposés entre les racines."
+    },
+    {
+     "q": "Quel est le signe de x² + 1 sur les réels ?",
+     "choix": [
+      "Toujours négatif",
+      "Toujours positif",
+      "Nul en 0"
+     ],
+     "rep": "Toujours positif",
+     "expl": "Le carré est positif ou nul et on ajoute 1."
+    },
+    {
+     "q": "Quelle est la solution de (x − 1)(x − 4) ≤ 0 ?",
+     "choix": [
+      "]1 ; 4[ uniquement",
+      "]−∞ ; 1] ∪ [4 ; +∞[",
+      "[1 ; 4]"
+     ],
+     "rep": "[1 ; 4]",
+     "expl": "Le produit est négatif entre les racines et nul aux bornes."
+    }
+   ],
+   "id": "REV-MA-1RE-18"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Taux de variation",
+   "emoji": "📈",
+   "en_une_phrase": "Le taux de variation mesure la variation moyenne d’une fonction entre deux abscisses.",
+   "comprendre": "Une vitesse moyenne compare une distance parcourue à une durée. De même, le taux de variation compare les variations de f et de x. Géométriquement, il donne la pente de la droite passant par deux points de la courbe.",
+   "essentiel": [
+    "Entre a et b distincts, le taux est (f(b) − f(a)) ÷ (b − a).",
+    "La droite reliant les deux points est une sécante.",
+    "Le signe indique si la valeur a globalement augmenté ou diminué entre ces points."
+   ],
+   "image_mentale": "Imagine deux points sur une courbe reliés par une corde tendue.",
+   "regle_ou_methode": "Calcule les deux images, soustrais-les dans le même ordre que les abscisses, puis divise.",
+   "exemples": [
+    "Pour f(x) = x² entre 1 et 3, calcule f(1) = 1 et f(3) = 9. Le taux vaut (9 − 1) ÷ (3 − 1) = 4.",
+    "Un trajet de 120 km en 2 h a une vitesse moyenne de 60 km/h."
+   ],
+   "piege": "Le taux moyen sur un intervalle ne détermine pas à lui seul la pente en chacun de ses points.",
+   "astuce_memoire": "Variation verticale divisée par variation horizontale.",
+   "quiz": [
+    {
+     "q": "Pour f(x) = x², quel est le taux entre 2 et 4 ?",
+     "choix": [
+      "4",
+      "6",
+      "12"
+     ],
+     "rep": "6",
+     "expl": "Il vaut (16 − 4) ÷ (4 − 2) = 6."
+    },
+    {
+     "q": "Quelle est la pente de la sécante entre (1 ; 2) et (3 ; 8) ?",
+     "choix": [
+      "2",
+      "6",
+      "3"
+     ],
+     "rep": "3",
+     "expl": "La variation verticale 6 est divisée par la variation horizontale 2."
+    },
+    {
+     "q": "Si f passe de 10 à 4 quand x passe de 1 à 3, quel est le taux ?",
+     "choix": [
+      "−3",
+      "3",
+      "−6"
+     ],
+     "rep": "−3",
+     "expl": "Il vaut (4 − 10) ÷ (3 − 1) = −3."
+    }
+   ],
+   "id": "REV-MA-1RE-19"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Nombre dérivé",
+   "emoji": "🎯",
+   "en_une_phrase": "Le nombre dérivé est la limite du taux de variation quand le second point se rapproche du premier.",
+   "comprendre": "Un compteur de vitesse indique une allure instantanée, contrairement à la vitesse moyenne d’un trajet. On cherche de même la pente locale d’une courbe en rapprochant deux points. Si le taux tend vers un nombre unique, celui-ci est le nombre dérivé.",
+   "essentiel": [
+    "Le taux en a avec un pas h non nul est (f(a + h) − f(a)) ÷ h.",
+    "Sa limite quand h tend vers 0, si elle existe et est finie, est f′(a).",
+    "Le nombre dérivé est la pente de la tangente en a."
+   ],
+   "image_mentale": "Imagine une sécante pivotant jusqu’à épouser la courbe au voisinage d’un point.",
+   "regle_ou_methode": "Calcule le taux pour h non nul, simplifie, puis observe sa limite lorsque h tend vers 0.",
+   "exemples": [
+    "Pour f(x) = x² en a = 2, développe (2 + h)² − 4 = 4h + h². Le taux est 4 + h pour h non nul ; il tend vers 4, donc f′(2) = 4.",
+    "Pour f(x) = 3x + 1, le taux est toujours 3 ; ainsi f′(a) = 3 pour tout a."
+   ],
+   "piege": "On ne remplace pas h par zéro avant de simplifier une expression qui contient une division par h.",
+   "astuce_memoire": "Pente moyenne à petite échelle : pente instantanée.",
+   "quiz": [
+    {
+     "q": "Quel est le nombre dérivé de x ↦ x² en 3 ?",
+     "choix": [
+      "3",
+      "9",
+      "6"
+     ],
+     "rep": "6",
+     "expl": "Le taux vaut 6 + h et tend vers 6."
+    },
+    {
+     "q": "Quelle est la pente de la tangente à f en a ?",
+     "choix": [
+      "f′(a)",
+      "f(a)",
+      "a + f(a)"
+     ],
+     "rep": "f′(a)",
+     "expl": "Le nombre dérivé est le coefficient directeur de la tangente."
+    },
+    {
+     "q": "Pour f(x) = 5x − 2, que vaut f′(4) ?",
+     "choix": [
+      "18",
+      "5",
+      "4"
+     ],
+     "rep": "5",
+     "expl": "Une fonction affine de pente 5 a pour dérivée 5."
+    }
+   ],
+   "id": "REV-MA-1RE-20"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Équation de tangente",
+   "emoji": "📏",
+   "en_une_phrase": "La tangente en a passe par le point de la courbe et a pour pente f′(a).",
+   "comprendre": "Une droite est déterminée par un point et une pente. La tangente utilise la position de la courbe au point choisi et sa pente locale. Son équation décrit cette droite autour du point.",
+   "essentiel": [
+    "Le point de contact est (a ; f(a)).",
+    "La pente de la tangente vaut f′(a).",
+    "Son équation est y = f(a) + f′(a)(x − a)."
+   ],
+   "image_mentale": "Imagine une règle posée contre la courbe au point d’abscisse a.",
+   "regle_ou_methode": "Calcule f(a) et f′(a), puis remplace-les dans la formule de la tangente.",
+   "exemples": [
+    "Pour f(x) = x² en a = 1, f(1) = 1 et f′(1) = 2. La tangente est y = 1 + 2(x − 1), soit y = 2x − 1.",
+    "Pour f(x) = x² en a = 0, la pente est 0 et la tangente est y = 0."
+   ],
+   "piege": "La tangente n’est pas forcément la courbe elle-même : elle lui donne la même pente au point considéré.",
+   "astuce_memoire": "Point, pente, équation.",
+   "quiz": [
+    {
+     "q": "Quelle est la tangente à x ↦ x² en x = 2 ?",
+     "choix": [
+      "y = 4x − 4",
+      "y = 2x",
+      "y = 4x + 4"
+     ],
+     "rep": "y = 4x − 4",
+     "expl": "f(2) = 4 et f′(2) = 4, donc y = 4 + 4(x − 2)."
+    },
+    {
+     "q": "Si f(a) = 3 et f′(a) = 0, quelle est la tangente ?",
+     "choix": [
+      "x = 3",
+      "y = 3",
+      "y = x + 3"
+     ],
+     "rep": "y = 3",
+     "expl": "Une pente nulle donne la droite horizontale y = 3."
+    },
+    {
+     "q": "Quel point appartient toujours à la tangente en a ?",
+     "choix": [
+      "(a ; f′(a)) uniquement",
+      "(0 ; a) nécessairement",
+      "(a ; f(a))"
+     ],
+     "rep": "(a ; f(a))",
+     "expl": "La tangente passe par le point de contact."
+    }
+   ],
+   "id": "REV-MA-1RE-21"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Approximation affine",
+   "emoji": "🔍",
+   "en_une_phrase": "Près de a, une fonction dérivable est approchée par sa tangente.",
+   "comprendre": "Sur une très courte distance, une route courbe peut ressembler à une droite. Près du point d’abscisse a, la tangente fournit de même une approximation locale. Cette estimation est particulièrement utile pour une petite variation h.",
+   "essentiel": [
+    "Pour h proche de 0, f(a + h) est proche de f(a) + hf′(a).",
+    "La formule donne une approximation, pas une égalité générale.",
+    "Le choix d’un point a simple facilite le calcul."
+   ],
+   "image_mentale": "Imagine un petit morceau de courbe presque confondu avec sa tangente.",
+   "regle_ou_methode": "Choisis a proche de la valeur, calcule f(a) et f′(a), puis ajoute h fois la pente.",
+   "exemples": [
+    "Pour approcher √1,04, prends f(x) = √x, a = 1 et h = 0,04. Comme f(1) = 1 et f′(1) = 1/2, on obtient √1,04 ≈ 1 + 0,04/2 = 1,02.",
+    "Pour f(x) = x² près de 2, f(2,01) ≈ 4 + 4 × 0,01 = 4,04."
+   ],
+   "piege": "Une approximation locale devient moins fiable si le point choisi est trop éloigné.",
+   "astuce_memoire": "Valeur au point + pente × petit déplacement.",
+   "quiz": [
+    {
+     "q": "Quelle approximation affine donne √1,02 près de 1 ?",
+     "choix": [
+      "1,02",
+      "1,01",
+      "1,04"
+     ],
+     "rep": "1,01",
+     "expl": "La pente en 1 vaut 1/2 ; 1 + 0,02/2 = 1,01."
+    },
+    {
+     "q": "Si f(2) = 5 et f′(2) = 3, quelle estimation obtient-on pour f(2,1) ?",
+     "choix": [
+      "5,1",
+      "8",
+      "5,3"
+     ],
+     "rep": "5,3",
+     "expl": "On calcule 5 + 3 × 0,1 = 5,3."
+    },
+    {
+     "q": "La formule affine donne-t-elle toujours une valeur exacte ?",
+     "choix": [
+      "Non, c’est en général une approximation locale",
+      "Oui, pour toute fonction",
+      "Oui, même très loin du point choisi"
+     ],
+     "rep": "Non, c’est en général une approximation locale",
+     "expl": "La tangente approche localement la courbe."
+    }
+   ],
+   "id": "REV-MA-1RE-22"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Dériver les puissances",
+   "emoji": "⚡",
+   "en_une_phrase": "Pour un entier n, la dérivée de xⁿ est n × xⁿ⁻¹ sur son domaine.",
+   "comprendre": "Pour étudier une vitesse, il faut connaître la variation de la fonction de position. Les règles de dérivation donnent la pente en chaque point. La règle des puissances fournit rapidement la dérivée des fonctions polynomiales.",
+   "essentiel": [
+    "La dérivée de x² est 2x et celle de x³ est 3x².",
+    "La dérivée d’une constante est nulle.",
+    "Pour n entier non nul, la dérivée de xⁿ est nxⁿ⁻¹ là où les deux expressions sont définies.",
+    "Pour n = 0, la fonction constante 1 a pour dérivée 0, y compris en 0."
+   ],
+   "image_mentale": "Imagine l’exposant qui descend devant x puis diminue de un.",
+   "regle_ou_methode": "Dérive chaque terme de puissance puis additionne les résultats.",
+   "exemples": [
+    "Pour f(x) = 3x³ − 2x² + 5, dérive chaque terme : 3x³ donne 9x², −2x² donne −4x et 5 donne 0. Donc f′(x) = 9x² − 4x.",
+    "Sur ℝ privé de 0, la dérivée de x⁻² est −2x⁻³."
+   ],
+   "piege": "La dérivée de x³ est 3x², pas x² ni 3x³.",
+   "astuce_memoire": "L’exposant descend et diminue de un.",
+   "quiz": [
+    {
+     "q": "Quelle est la dérivée de x⁴ ?",
+     "choix": [
+      "x³",
+      "4x⁴",
+      "4x³"
+     ],
+     "rep": "4x³",
+     "expl": "On applique la règle n × xⁿ⁻¹."
+    },
+    {
+     "q": "Quelle est la dérivée de 2x² + 3x − 4 ?",
+     "choix": [
+      "4x + 3",
+      "2x + 3",
+      "4x − 4"
+     ],
+     "rep": "4x + 3",
+     "expl": "On dérive terme à terme."
+    },
+    {
+     "q": "Sur ℝ privé de 0, quelle est la dérivée de x⁻¹ ?",
+     "choix": [
+      "x⁻²",
+      "−x⁻²",
+      "−x⁻¹"
+     ],
+     "rep": "−x⁻²",
+     "expl": "La règle donne −1 × x⁻²."
+    }
+   ],
+   "id": "REV-MA-1RE-23"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Inverse et racine",
+   "emoji": "🌱",
+   "en_une_phrase": "Les dérivées de l’inverse et de la racine carrée ont des domaines à respecter.",
+   "comprendre": "Tu sais que la division par zéro est impossible et que la racine carrée réelle demande un nombre positif ou nul. Les formules de dérivation héritent de ces contraintes. La pente de la racine n’est pas définie par sa formule en zéro.",
+   "essentiel": [
+    "Pour x non nul, la dérivée de 1/x est −1/x².",
+    "Pour x strictement positif, la dérivée de √x est 1/(2√x).",
+    "La fonction racine carrée est définie en 0 mais n’y est pas dérivable."
+   ],
+   "image_mentale": "Imagine deux portes avec des domaines : x non nul et x strictement positif.",
+   "regle_ou_methode": "Indique le domaine avant d’utiliser la formule de dérivation.",
+   "exemples": [
+    "Pour f(x) = 1/x et x = 2, on a f′(2) = −1/2² = −1/4. La formule est valable car 2 est non nul.",
+    "Pour g(x) = √x, g′(4) = 1/(2√4) = 1/4."
+   ],
+   "piege": "√x est définie en zéro, mais sa formule de dérivée exige x > 0.",
+   "astuce_memoire": "Inverse : moins sur carré ; racine : un sur deux racines.",
+   "quiz": [
+    {
+     "q": "Quelle est la dérivée de 1/x en x = −2 ?",
+     "choix": [
+      "−1/4",
+      "1/4",
+      "−1/2"
+     ],
+     "rep": "−1/4",
+     "expl": "La formule −1/x² donne −1/4."
+    },
+    {
+     "q": "Quelle est la dérivée de √x en x = 9 ?",
+     "choix": [
+      "1/3",
+      "1/6",
+      "3"
+     ],
+     "rep": "1/6",
+     "expl": "1/(2√9) = 1/6."
+    },
+    {
+     "q": "La fonction racine carrée est-elle dérivable en 0 ?",
+     "choix": [
+      "Oui, sa dérivée vaut 0",
+      "Oui, sa dérivée vaut 1/2",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Le taux à droite devient arbitrairement grand près de 0."
+    }
+   ],
+   "id": "REV-MA-1RE-24"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Somme et produit",
+   "emoji": "🧩",
+   "en_une_phrase": "La dérivée d’une somme s’obtient terme à terme, celle d’un produit combine deux termes.",
+   "comprendre": "Pour une somme, tu peux suivre séparément les variations de chaque morceau. Pour un produit, les deux facteurs peuvent changer en même temps. La formule du produit tient compte de chacune de ces variations.",
+   "essentiel": [
+    "(u + v)′ = u′ + v′.",
+    "(ku)′ = ku′ pour une constante k.",
+    "(uv)′ = u′v + uv′."
+   ],
+   "image_mentale": "Imagine deux engrenages : chacun contribue au changement du produit.",
+   "regle_ou_methode": "Pour un produit, dérive le premier facteur en gardant le second, puis l’inverse, et additionne.",
+   "exemples": [
+    "Pour f(x) = x²(x + 1), prends u = x² et v = x + 1. Alors u′ = 2x et v′ = 1 ; f′(x) = 2x(x + 1) + x² = 3x² + 2x.",
+    "La dérivée de 4x³ + 2x est 12x² + 2."
+   ],
+   "piege": "La dérivée d’un produit n’est pas en général le produit des dérivées.",
+   "astuce_memoire": "Produit : premier dérivé, puis second dérivé.",
+   "quiz": [
+    {
+     "q": "Quelle est la dérivée de x(x + 2) ?",
+     "choix": [
+      "2x",
+      "2x + 2",
+      "x + 2"
+     ],
+     "rep": "2x + 2",
+     "expl": "La règle du produit donne (x + 2) + x."
+    },
+    {
+     "q": "Quelle est la dérivée de 5x² − 3x ?",
+     "choix": [
+      "5x − 3",
+      "10x + 3",
+      "10x − 3"
+     ],
+     "rep": "10x − 3",
+     "expl": "On dérive chaque terme séparément."
+    },
+    {
+     "q": "Que vaut (uv)′ pour deux fonctions dérivables ?",
+     "choix": [
+      "u′v + uv′",
+      "u′v′",
+      "u′ + v′"
+     ],
+     "rep": "u′v + uv′",
+     "expl": "Les variations des deux facteurs contribuent."
+    }
+   ],
+   "id": "REV-MA-1RE-25"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Dériver un quotient",
+   "emoji": "➗",
+   "en_une_phrase": "La dérivée d’un quotient combine les dérivées du numérateur et du dénominateur.",
+   "comprendre": "Un rapport comme un coût par objet dépend de deux quantités. Si elles varient toutes deux, il faut tenir compte de ces deux variations. La règle s’applique seulement là où le dénominateur ne s’annule pas.",
+   "essentiel": [
+    "Pour v non nulle, (u/v)′ = (u′v − uv′)/v².",
+    "Le dénominateur de la dérivée est v².",
+    "Il faut préciser les valeurs pour lesquelles v est non nulle."
+   ],
+   "image_mentale": "Imagine une fraction : les deux variations se soustraient au-dessus du carré du dénominateur.",
+   "regle_ou_methode": "Identifie u, v et leurs dérivées ; applique la formule puis simplifie.",
+   "exemples": [
+    "Pour f(x) = (x + 1)/(x − 1), définie pour x ≠ 1, prends u′ = 1 et v′ = 1. Alors f′(x) = ((x − 1) − (x + 1))/(x − 1)² = −2/(x − 1)².",
+    "La dérivée de 1/x pour x ≠ 0 est −1/x²."
+   ],
+   "piege": "Ne dérive pas le quotient en divisant simplement u′ par v′.",
+   "astuce_memoire": "Haut dérivé fois bas, moins haut fois bas dérivé.",
+   "quiz": [
+    {
+     "q": "Quelle est la dérivée de (x + 1)/(x − 1), pour x ≠ 1 ?",
+     "choix": [
+      "2/(x − 1)²",
+      "1/(x − 1)²",
+      "−2/(x − 1)²"
+     ],
+     "rep": "−2/(x − 1)²",
+     "expl": "Le numérateur est (x − 1) − (x + 1) = −2."
+    },
+    {
+     "q": "Pour la formule de dérivation de u/v, quelle condition faut-il respecter ?",
+     "choix": [
+      "v ne doit pas être nulle",
+      "u doit toujours être nulle",
+      "v doit toujours valoir 1"
+     ],
+     "rep": "v ne doit pas être nulle",
+     "expl": "Le quotient ne peut pas être défini lorsque v = 0."
+    },
+    {
+     "q": "Quelle est la dérivée de 1/x sur ℝ privé de 0 ?",
+     "choix": [
+      "1/x²",
+      "−1/x²",
+      "−1/x"
+     ],
+     "rep": "−1/x²",
+     "expl": "La formule du quotient donne −1/x²."
+    }
+   ],
+   "id": "REV-MA-1RE-26"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Dérivabilité en zéro",
+   "emoji": "📍",
+   "en_une_phrase": "La valeur absolue et la racine carrée sont définies en zéro mais ne sont pas dérivables en zéro.",
+   "comprendre": "Une courbe peut exister en un point sans avoir une pente unique et finie. La courbe de la valeur absolue forme un angle en zéro. Celle de la racine carrée y devient de plus en plus raide à droite.",
+   "essentiel": [
+    "La valeur absolue a une pente −1 à gauche de 0 et 1 à droite.",
+    "Ces deux pentes différentes empêchent la dérivabilité en 0.",
+    "Pour √x, le taux depuis 0 vaut 1/√h pour h > 0.",
+    "Ce taux n’a pas de limite finie quand h tend vers 0 par valeurs positives."
+   ],
+   "image_mentale": "Imagine un angle pointu puis une courbe à tangente verticale.",
+   "regle_ou_methode": "Compare les taux de variation au voisinage du point, en tenant compte du domaine.",
+   "exemples": [
+    "Pour f(x) = |x| en 0, le taux est |h|/h. Il vaut 1 si h > 0 et −1 si h < 0 : les deux limites diffèrent, donc f n’est pas dérivable en 0.",
+    "Pour g(x) = √x, le taux depuis 0 vaut √h/h = 1/√h pour h > 0 et n’a pas de limite finie."
+   ],
+   "piege": "Être définie ou continue en un point ne suffit pas à y être dérivable.",
+   "astuce_memoire": "Angle ou pente non finie : vérifier la dérivabilité.",
+   "quiz": [
+    {
+     "q": "Pourquoi |x| n’est-elle pas dérivable en 0 ?",
+     "choix": [
+      "Les pentes à gauche et à droite diffèrent",
+      "La fonction n’existe pas en 0",
+      "Sa valeur en 0 est 1"
+     ],
+     "rep": "Les pentes à gauche et à droite diffèrent",
+     "expl": "Les taux tendent vers −1 à gauche et 1 à droite."
+    },
+    {
+     "q": "Quel est le taux de variation de √x entre 0 et h > 0 ?",
+     "choix": [
+      "√h",
+      "1/√h",
+      "1/h"
+     ],
+     "rep": "1/√h",
+     "expl": "√h/h = 1/√h pour h > 0."
+    },
+    {
+     "q": "La fonction √x est-elle définie en 0 ?",
+     "choix": [
+      "Non, car elle n’est pas dérivable en 0",
+      "Oui, elle vaut 1",
+      "Oui, elle vaut 0"
+     ],
+     "rep": "Oui, elle vaut 0",
+     "expl": "La racine de 0 vaut 0, même si la fonction n’y est pas dérivable."
+    }
+   ],
+   "id": "REV-MA-1RE-27"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Dérivée et variations",
+   "emoji": "📊",
+   "en_une_phrase": "Le signe de la dérivée indique le sens de variation d’une fonction dérivable sur un intervalle.",
+   "comprendre": "Une pente positive fait monter une route, tandis qu’une pente négative la fait descendre. Sur un intervalle, le signe de f′ permet de déterminer les variations de f. Une dérivée nulle partout caractérise une fonction constante sur cet intervalle.",
+   "essentiel": [
+    "Si f′ est positive ou nulle sur un intervalle, f y est croissante.",
+    "Si f′ est négative ou nulle sur un intervalle, f y est décroissante.",
+    "Si f′ est nulle sur tout un intervalle, f y est constante.",
+    "Pour comparer deux courbes, étudie aussi le signe de leur différence."
+   ],
+   "image_mentale": "Imagine un parcours montant, horizontal puis descendant selon la pente.",
+   "regle_ou_methode": "Calcule la dérivée, étudie son signe, puis déduis les variations sur chaque intervalle.",
+   "exemples": [
+    "Pour f(x) = x² − 4x, f′(x) = 2x − 4. Cette dérivée est négative avant 2 et positive après 2 : f décroît puis croît, avec un minimum en 2.",
+    "Pour g(x) = −2x + 1, la dérivée vaut −2 : g décroît sur ℝ.",
+    "Pour comparer x² et x, étudie x² − x = x(x − 1) : ce produit est négatif sur ]0 ; 1[, donc x² y est inférieur à x."
+   ],
+   "piege": "Une dérivée nulle en un seul point ne suffit pas à rendre toute la fonction constante.",
+   "astuce_memoire": "Signe de la pente, puis sens de variation.",
+   "quiz": [
+    {
+     "q": "Si f′(x) est strictement négative sur un intervalle, comment varie f ?",
+     "choix": [
+      "Elle y est croissante",
+      "Elle y est décroissante",
+      "Elle y est nécessairement constante"
+     ],
+     "rep": "Elle y est décroissante",
+     "expl": "Une dérivée négative indique une décroissance."
+    },
+    {
+     "q": "Où la fonction x² − 4x passe-t-elle de décroissante à croissante ?",
+     "choix": [
+      "En −2",
+      "En 4",
+      "En 2"
+     ],
+     "rep": "En 2",
+     "expl": "Sa dérivée 2x − 4 change de signe en 2."
+    },
+    {
+     "q": "Si f′ est nulle en un seul point, f est-elle forcément constante ?",
+     "choix": [
+      "Non",
+      "Oui, sur tout son domaine",
+      "Oui, sur tous les intervalles"
+     ],
+     "rep": "Non",
+     "expl": "L’annulation en un point ne suffit pas à assurer une dérivée nulle partout."
+    }
+   ],
+   "id": "REV-MA-1RE-28"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Chercher un extremum",
+   "emoji": "🏔️",
+   "en_une_phrase": "Une dérivée qui change de signe permet de repérer un maximum ou un minimum.",
+   "comprendre": "Optimiser consiste à chercher la meilleure valeur possible dans une situation donnée. Un changement de pente de positif à négatif indique un sommet ; l’inverse indique un creux. Il faut aussi considérer les bornes de l’intervalle lorsque le problème en comporte.",
+   "essentiel": [
+    "Si f′ passe de positif à négatif, f admet un maximum local au point considéré.",
+    "Si f′ passe de négatif à positif, f admet un minimum local.",
+    "Sur un intervalle fermé, compare aussi les valeurs aux bornes.",
+    "Une dérivée nulle seule ne suffit pas à garantir un extremum."
+   ],
+   "image_mentale": "Imagine une randonnée : montée puis descente, ou descente puis montée.",
+   "regle_ou_methode": "Dérive, étudie le signe, calcule les valeurs candidates et compare les bornes éventuelles.",
+   "exemples": [
+    "Sur [0 ; 4], f(x) = −x² + 4x a pour dérivée −2x + 4. Elle croît jusqu’à 2 puis décroît ; f(2) = 4, contre f(0) = f(4) = 0 : le maximum est 4.",
+    "Pour f(x) = x³, f′(0) = 0, mais f ne présente pas d’extremum en 0."
+   ],
+   "piege": "Une dérivée nulle peut correspondre à un point sans maximum ni minimum.",
+   "astuce_memoire": "Signe avant, signe après, bornes.",
+   "quiz": [
+    {
+     "q": "Si f′ passe de positive à négative en a, quel extremum local apparaît ?",
+     "choix": [
+      "Un minimum local",
+      "Aucun extremum possible",
+      "Un maximum local"
+     ],
+     "rep": "Un maximum local",
+     "expl": "La fonction passe de croissante à décroissante."
+    },
+    {
+     "q": "Quel est le maximum de −x² + 4x sur [0 ; 4] ?",
+     "choix": [
+      "4",
+      "2",
+      "0"
+     ],
+     "rep": "4",
+     "expl": "Le maximum est atteint en x = 2 et vaut 4."
+    },
+    {
+     "q": "La dérivée de x³ s’annule en 0. Est-ce un extremum ?",
+     "choix": [
+      "Oui, un maximum",
+      "Non",
+      "Oui, un minimum"
+     ],
+     "rep": "Non",
+     "expl": "La fonction x³ continue de croître de part et d’autre."
+    }
+   ],
+   "id": "REV-MA-1RE-29"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Parité et symétries",
+   "emoji": "🪞",
+   "en_une_phrase": "Une fonction paire est symétrique par rapport à l’axe vertical ; une fonction impaire par rapport à l’origine.",
+   "comprendre": "Un motif peut rester inchangé lorsqu’on le reflète. Les fonctions paires et impaires traduisent deux symétries possibles de leurs courbes. Le domaine doit être symétrique par rapport à zéro.",
+   "essentiel": [
+    "f est paire si f(−x) = f(x) pour tout x de son domaine symétrique.",
+    "f est impaire si f(−x) = −f(x) pour tout x de son domaine symétrique.",
+    "La courbe d’une fonction paire est symétrique par rapport à l’axe des ordonnées.",
+    "La courbe d’une fonction impaire est symétrique par rapport à l’origine."
+   ],
+   "image_mentale": "Imagine un miroir vertical puis un demi-tour autour de l’origine.",
+   "regle_ou_methode": "Vérifie d’abord le domaine, puis calcule f(−x) et compare avec f(x) et −f(x).",
+   "exemples": [
+    "Pour f(x) = x² + 1 sur ℝ, calcule f(−x) = (−x)² + 1 = x² + 1 = f(x). La fonction est paire.",
+    "Pour g(x) = x³, g(−x) = −x³ = −g(x) : g est impaire."
+   ],
+   "piege": "Une fonction peut n’être ni paire ni impaire.",
+   "astuce_memoire": "Paire : miroir vertical ; impaire : demi-tour.",
+   "quiz": [
+    {
+     "q": "Quelle parité possède f(x) = x² + 3 sur ℝ ?",
+     "choix": [
+      "Elle est paire",
+      "Elle est impaire",
+      "Elle n’est ni paire ni impaire"
+     ],
+     "rep": "Elle est paire",
+     "expl": "f(−x) = x² + 3 = f(x)."
+    },
+    {
+     "q": "Quelle symétrie possède la courbe de x ↦ x³ ?",
+     "choix": [
+      "Une symétrie par rapport à l’axe des ordonnées",
+      "Une symétrie centrale par rapport à l’origine",
+      "Une symétrie par rapport à toute droite verticale"
+     ],
+     "rep": "Une symétrie centrale par rapport à l’origine",
+     "expl": "La fonction cube est impaire."
+    },
+    {
+     "q": "Quelle condition doit vérifier le domaine pour étudier la parité ?",
+     "choix": [
+      "Contenir seulement des valeurs positives",
+      "Être nécessairement égal à [0 ; 1]",
+      "Être symétrique par rapport à 0"
+     ],
+     "rep": "Être symétrique par rapport à 0",
+     "expl": "Si x appartient au domaine, −x doit aussi lui appartenir."
+    }
+   ],
+   "id": "REV-MA-1RE-30"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Définir l’exponentielle",
+   "emoji": "🚀",
+   "en_une_phrase": "La fonction exponentielle est l’unique fonction dérivable égale à sa dérivée et valant 1 en zéro.",
+   "comprendre": "Une croissance peut être proportionnelle à la quantité déjà présente. La fonction exponentielle modélise ce type de variation continue. Sa dérivée est elle-même et sa valeur au départ est 1.",
+   "essentiel": [
+    "exp′(x) = exp(x).",
+    "exp(0) = 1.",
+    "On note e = exp(1) et exp(x) = eˣ.",
+    "L’exponentielle est strictement positive et croissante sur ℝ."
+   ],
+   "image_mentale": "Imagine une courbe positive dont la pente grandit avec sa hauteur.",
+   "regle_ou_methode": "Utilise les valeurs de référence et la positivité pour interpréter la courbe.",
+   "exemples": [
+    "Pour f(x) = eˣ, la définition donne f(0) = 1 et f′(0) = e⁰ = 1. La tangente en 0 est donc y = x + 1.",
+    "Comme eˣ est toujours positif, e⁻² est strictement positif."
+   ],
+   "piege": "e⁻² est positif : l’exposant négatif n’impose pas une valeur négative.",
+   "astuce_memoire": "Exponentielle : valeur 1 en 0, dérivée identique.",
+   "quiz": [
+    {
+     "q": "Que vaut e⁰ ?",
+     "choix": [
+      "0",
+      "1",
+      "e"
+     ],
+     "rep": "1",
+     "expl": "La fonction exponentielle vaut 1 en zéro."
+    },
+    {
+     "q": "Quel est le signe de e⁻³ ?",
+     "choix": [
+      "Strictement négatif",
+      "Nul",
+      "Strictement positif"
+     ],
+     "rep": "Strictement positif",
+     "expl": "L’exponentielle est positive pour tout réel."
+    },
+    {
+     "q": "Quelle est la dérivée de eˣ ?",
+     "choix": [
+      "eˣ",
+      "xeˣ",
+      "1/eˣ"
+     ],
+     "rep": "eˣ",
+     "expl": "La fonction exponentielle est sa propre dérivée."
+    }
+   ],
+   "id": "REV-MA-1RE-31"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Calculer avec eˣ",
+   "emoji": "🧮",
+   "en_une_phrase": "La somme des exposants correspond au produit des exponentielles.",
+   "comprendre": "Les puissances de même base se multiplient en additionnant leurs exposants. L’exponentielle vérifie une règle analogue pour tous les exposants réels. Elle permet de simplifier des expressions et de modéliser des évolutions.",
+   "essentiel": [
+    "eᵃ × eᵇ = eᵃ⁺ᵇ.",
+    "e⁻ᵃ = 1/eᵃ.",
+    "eᵃ/eᵇ = eᵃ⁻ᵇ.",
+    "eᵃ est toujours non nul."
+   ],
+   "image_mentale": "Imagine deux étiquettes d’exposants qui s’additionnent quand les facteurs se rencontrent.",
+   "regle_ou_methode": "Regroupe les exponentielles en additionnant ou soustrayant leurs exposants selon l’opération.",
+   "exemples": [
+    "Pour e² × e⁻³, additionne les exposants : 2 + (−3) = −1. Le résultat est e⁻¹ = 1/e.",
+    "Pour e⁵/e², soustrais 2 de 5 : le quotient vaut e³."
+   ],
+   "piege": "eᵃ + eᵇ n’est pas égal en général à eᵃ⁺ᵇ : la règle concerne le produit.",
+   "astuce_memoire": "Multiplier : additionner les exposants.",
+   "quiz": [
+    {
+     "q": "Que vaut e³ × e⁻¹ ?",
+     "choix": [
+      "e⁻³",
+      "e³ − 1",
+      "e²"
+     ],
+     "rep": "e²",
+     "expl": "On additionne les exposants 3 et −1."
+    },
+    {
+     "q": "Que vaut e⁰ + e⁰ ?",
+     "choix": [
+      "2",
+      "1",
+      "e"
+     ],
+     "rep": "2",
+     "expl": "Chaque terme vaut 1."
+    },
+    {
+     "q": "Que vaut e²/e⁵ ?",
+     "choix": [
+      "e³",
+      "e⁻³",
+      "e⁷"
+     ],
+     "rep": "e⁻³",
+     "expl": "On soustrait les exposants : 2 − 5 = −3."
+    }
+   ],
+   "id": "REV-MA-1RE-32"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Exponentielle et évolution",
+   "emoji": "⏱️",
+   "en_une_phrase": "La dérivée de t ↦ eᵃᵗ vaut a eᵃᵗ et son sens de variation dépend du signe de a.",
+   "comprendre": "Une quantité peut croître ou décroître à un rythme proportionnel à sa valeur. Une exponentielle peut modéliser cette évolution dans le temps. Le signe du paramètre distingue croissance et décroissance.",
+   "essentiel": [
+    "La dérivée de eᵃᵗ est a eᵃᵗ.",
+    "Si a > 0, eᵃᵗ croît ; si a < 0, elle décroît.",
+    "Pour des pas réguliers, les valeurs d’une exponentielle forment une suite géométrique."
+   ],
+   "image_mentale": "Imagine une courbe qui monte ou descend tout en restant au-dessus de zéro.",
+   "regle_ou_methode": "Identifie a, calcule la dérivée puis utilise sa positivité ou sa négativité.",
+   "exemples": [
+    "Pour f(t) = e⁻²ᵗ, on a f′(t) = −2e⁻²ᵗ. Comme l’exponentielle est positive, f′ est négative : f décroît.",
+    "La suite uₙ = exp(0,3n) est géométrique de raison exp(0,3)."
+   ],
+   "piege": "La dérivée de e⁻²ᵗ n’est pas seulement e⁻²ᵗ : le facteur −2 intervient.",
+   "astuce_memoire": "Coefficient de t multiplié par l’exponentielle.",
+   "quiz": [
+    {
+     "q": "Quelle est la dérivée de e³ᵗ ?",
+     "choix": [
+      "3e³ᵗ",
+      "e³ᵗ",
+      "3eᵗ"
+     ],
+     "rep": "3e³ᵗ",
+     "expl": "On multiplie par le coefficient 3."
+    },
+    {
+     "q": "Comment varie t ↦ e⁻ᵗ ?",
+     "choix": [
+      "Elle croît",
+      "Elle décroît",
+      "Elle est constante"
+     ],
+     "rep": "Elle décroît",
+     "expl": "Sa dérivée est −e⁻ᵗ, strictement négative."
+    },
+    {
+     "q": "Quelle est la raison de la suite uₙ = e²ⁿ ?",
+     "choix": [
+      "2",
+      "e",
+      "e²"
+     ],
+     "rep": "e²",
+     "expl": "uₙ₊₁/uₙ = e²."
+    }
+   ],
+   "id": "REV-MA-1RE-33"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Radians et cercle",
+   "emoji": "🧭",
+   "en_une_phrase": "Un angle en radians mesure une longueur d’arc sur un cercle de rayon 1.",
+   "comprendre": "Tu connais les degrés pour mesurer un tour. Les radians utilisent une autre graduation : le tour complet vaut 2π radians. Sur un cercle de rayon R, la longueur d’un arc d’angle positif θ est Rθ.",
+   "essentiel": [
+    "Un tour complet vaut 2π radians, soit 360°.",
+    "Un demi-tour vaut π radians, soit 180°.",
+    "Un quart de tour vaut π/2 radians, soit 90°.",
+    "Pour θ positif en radians, la longueur de l’arc est Rθ."
+   ],
+   "image_mentale": "Imagine une ficelle enroulée autour d’un cercle de rayon 1.",
+   "regle_ou_methode": "Pour convertir des degrés en radians, multiplie par π/180 ; pour un arc, multiplie son angle par le rayon.",
+   "exemples": [
+    "Pour convertir 60°, calcule 60 × π/180 = π/3 radian. Sur un cercle de rayon 6 cm, l’arc associé mesure 6 × π/3 = 2π cm.",
+    "180° correspondent à π radians."
+   ],
+   "piege": "L’angle doit être exprimé en radians dans la formule longueur = rayon × angle.",
+   "astuce_memoire": "180° correspondent à π radians.",
+   "quiz": [
+    {
+     "q": "Combien valent 90° en radians ?",
+     "choix": [
+      "π",
+      "π/2",
+      "2π"
+     ],
+     "rep": "π/2",
+     "expl": "Un quart de tour vaut π/2."
+    },
+    {
+     "q": "Quelle est la longueur d’un arc de rayon 4 cm et d’angle π/2 ?",
+     "choix": [
+      "π/2 cm",
+      "4π cm",
+      "2π cm"
+     ],
+     "rep": "2π cm",
+     "expl": "On calcule 4 × π/2 = 2π cm."
+    },
+    {
+     "q": "Combien de degrés correspondent à π/3 radians ?",
+     "choix": [
+      "60°",
+      "30°",
+      "120°"
+     ],
+     "rep": "60°",
+     "expl": "π radians valent 180°, donc π/3 vaut 60°."
+    }
+   ],
+   "id": "REV-MA-1RE-34"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Cosinus et sinus",
+   "emoji": "⭕",
+   "en_une_phrase": "Sur le cercle trigonométrique, le cosinus est l’abscisse et le sinus l’ordonnée du point associé.",
+   "comprendre": "Sur une carte, deux coordonnées repèrent une position. Sur le cercle de rayon 1, elles sont le cosinus et le sinus de l’angle. Comme le point est sur le cercle unité, la somme de leurs carrés vaut 1.",
+   "essentiel": [
+    "Le point associé à x a pour coordonnées (cos x ; sin x).",
+    "cos² x + sin² x = 1.",
+    "À 0, les coordonnées sont (1 ; 0).",
+    "À π/2, les coordonnées sont (0 ; 1).",
+    "Cosinus et sinus sont périodiques de période 2π.",
+    "cos(π − x) = −cos x et sin(π − x) = sin x."
+   ],
+   "image_mentale": "Imagine un cercle unité avec une projection horizontale et une projection verticale.",
+   "regle_ou_methode": "Place l’angle depuis l’axe horizontal positif, puis lis l’abscisse et l’ordonnée.",
+   "exemples": [
+    "Pour x = π/2, effectue un quart de tour dans le sens positif. Le point est en haut du cercle, de coordonnées (0 ; 1), donc cos(π/2) = 0 et sin(π/2) = 1.",
+    "Pour x = π, le point est à gauche : cos π = −1 et sin π = 0."
+   ],
+   "piege": "Ne confonds pas les coordonnées : cosinus d’abord, sinus ensuite.",
+   "astuce_memoire": "Cosinus horizontal, sinus vertical.",
+   "quiz": [
+    {
+     "q": "Quelles sont les coordonnées du point d’angle 0 ?",
+     "choix": [
+      "(0 ; 1)",
+      "(−1 ; 0)",
+      "(1 ; 0)"
+     ],
+     "rep": "(1 ; 0)",
+     "expl": "À l’angle nul, le point est sur l’axe horizontal positif."
+    },
+    {
+     "q": "Que vaut cos² x + sin² x ?",
+     "choix": [
+      "1",
+      "0",
+      "2"
+     ],
+     "rep": "1",
+     "expl": "Le point est sur le cercle de rayon 1."
+    },
+    {
+     "q": "Quelle est la valeur de sin(π/2) ?",
+     "choix": [
+      "0",
+      "1",
+      "−1"
+     ],
+     "rep": "1",
+     "expl": "L’ordonnée du point situé en haut du cercle vaut 1."
+    }
+   ],
+   "id": "REV-MA-1RE-35"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Angles remarquables",
+   "emoji": "📐",
+   "en_une_phrase": "Les valeurs remarquables se lisent sur le cercle trigonométrique et permettent de retrouver les angles associés.",
+   "comprendre": "Pour éviter de recalculer chaque mesure, tu peux mémoriser quelques positions du cercle. Les symétries donnent les valeurs pour d’autres angles. Le signe dépend du quadrant.",
+   "essentiel": [
+    "cos(π/3) = 1/2 et sin(π/3) = √3/2.",
+    "cos(π/4) = sin(π/4) = √2/2.",
+    "cos(π/6) = √3/2 et sin(π/6) = 1/2.",
+    "cos(−x) = cos x et sin(−x) = −sin x."
+   ],
+   "image_mentale": "Imagine le premier quart de cercle, puis son reflet sous l’axe horizontal.",
+   "regle_ou_methode": "Repère l’angle de référence, applique la symétrie puis vérifie les signes.",
+   "exemples": [
+    "Pour x = −π/3, pars de cos(π/3) = 1/2 et sin(π/3) = √3/2. Le reflet sous l’axe horizontal conserve le cosinus et change le signe du sinus : cos(−π/3) = 1/2 et sin(−π/3) = −√3/2.",
+    "Pour x = 3π/4, le point est en haut à gauche : cos(3π/4) = −√2/2 et sin(3π/4) = √2/2."
+   ],
+   "piege": "Avant de copier une valeur remarquable, vérifie dans quel quadrant se trouve l’angle.",
+   "astuce_memoire": "Angle opposé : cosinus conservé, sinus opposé.",
+   "quiz": [
+    {
+     "q": "Que vaut sin(π/6) ?",
+     "choix": [
+      "1/2",
+      "√3/2",
+      "√2/2"
+     ],
+     "rep": "1/2",
+     "expl": "La valeur remarquable de sin(π/6) est 1/2."
+    },
+    {
+     "q": "Que vaut cos(−π/3) ?",
+     "choix": [
+      "−1/2",
+      "1/2",
+      "√3/2"
+     ],
+     "rep": "1/2",
+     "expl": "Le cosinus est pair : cos(−π/3) = cos(π/3)."
+    },
+    {
+     "q": "Quels sont les signes de cos(3π/4) et sin(3π/4) ?",
+     "choix": [
+      "Cosinus positif, sinus négatif",
+      "Les deux sont négatifs",
+      "Cosinus négatif, sinus positif"
+     ],
+     "rep": "Cosinus négatif, sinus positif",
+     "expl": "L’angle est dans le quadrant supérieur gauche."
+    }
+   ],
+   "id": "REV-MA-1RE-36"
+  },
+  {
+   "axe": "Géométrie",
+   "titre": "Produit scalaire et angle",
+   "emoji": "📐",
+   "en_une_phrase": "Le produit scalaire mesure l’effet combiné des longueurs de deux vecteurs et de l’angle entre eux.",
+   "comprendre": "Deux déplacements peuvent aller dans des directions proches ou perpendiculaires. Le produit scalaire tient compte de leurs longueurs et de leur angle. Il vaut zéro pour des vecteurs orthogonaux.",
+   "essentiel": [
+    "Pour deux vecteurs non nuls, u·v = ||u|| × ||v|| × cos(angle).",
+    "Le produit scalaire est un nombre réel.",
+    "Deux vecteurs sont orthogonaux si et seulement si leur produit scalaire est nul.",
+    "Le produit scalaire est positif pour un angle aigu, négatif pour un angle obtus.",
+    "Si H est le projeté orthogonal de B sur la droite orientée (OA), alors OA·OB = OA × OH, avec OH algébrique."
+   ],
+   "image_mentale": "Imagine deux flèches et la projection de l’une sur la direction de l’autre.",
+   "regle_ou_methode": "Multiplie les normes par le cosinus de l’angle, ou utilise une projection orthogonale.",
+   "exemples": [
+    "Deux vecteurs de normes 3 et 4 forment un angle de 60°. Comme cos(60°) = 1/2, leur produit scalaire vaut 3 × 4 × 1/2 = 6.",
+    "Si OA = 3 et si le projeté H de B sur (OA) vérifie OH = 2 dans le sens de OA, alors OA·OB = 3 × 2 = 6.",
+    "Si ||u|| = 2, ||v|| = 3 et u·v = 3, alors cos(angle) = 3 / (2 × 3) = 1/2 ; leur angle vaut 60°."
+   ],
+   "piege": "Le produit scalaire est un nombre, pas un vecteur.",
+   "astuce_memoire": "Norme, norme, cosinus.",
+   "quiz": [
+    {
+     "q": "Deux vecteurs de normes 2 et 5 forment un angle de 60°. Quel est leur produit scalaire ?",
+     "choix": [
+      "10",
+      "5",
+      "0"
+     ],
+     "rep": "5",
+     "expl": "Le calcul donne 2 × 5 × 1/2 = 5."
+    },
+    {
+     "q": "Que vaut le produit scalaire de deux vecteurs perpendiculaires ?",
+     "choix": [
+      "1",
+      "Le produit de leurs normes",
+      "0"
+     ],
+     "rep": "0",
+     "expl": "Le cosinus d’un angle droit est nul."
+    },
+    {
+     "q": "Quel est le signe du produit scalaire de deux vecteurs non nuls formant un angle obtus ?",
+     "choix": [
+      "Négatif",
+      "Positif",
+      "Toujours nul"
+     ],
+     "rep": "Négatif",
+     "expl": "Le cosinus d’un angle obtus est négatif."
+    }
+   ],
+   "id": "REV-MA-1RE-37"
+  },
+  {
+   "axe": "Géométrie",
+   "titre": "Produit scalaire par coordonnées",
+   "emoji": "📍",
+   "en_une_phrase": "Dans un repère orthonormé, le produit scalaire se calcule avec les coordonnées.",
+   "comprendre": "Tu sais additionner des produits de nombres. Dans une base dont les axes sont perpendiculaires et de même unité, cette opération donne le produit scalaire. Elle permet notamment de vérifier une orthogonalité.",
+   "essentiel": [
+    "Pour u(x ; y) et v(x′ ; y′), u·v = xx′ + yy′.",
+    "La norme vérifie ||u||² = x² + y².",
+    "Si u·v = 0, les vecteurs sont orthogonaux.",
+    "Ces formules supposent un repère orthonormé.",
+    "Dans une base orthonormée (i, j), u = (u·i)i + (u·j)j."
+   ],
+   "image_mentale": "Imagine deux flèches décomposées sur deux axes perpendiculaires.",
+   "regle_ou_methode": "Multiplie les coordonnées correspondantes et additionne les résultats.",
+   "exemples": [
+    "Pour u(2 ; 3) et v(4 ; −1), calcule 2 × 4 + 3 × (−1) = 8 − 3 = 5. Leur produit scalaire vaut 5.",
+    "Pour u(3 ; 4), la norme vaut √(3² + 4²) = 5."
+   ],
+   "piege": "Ne confonds pas produit scalaire et déterminant : les calculs diffèrent.",
+   "astuce_memoire": "Abscisses multipliées, plus ordonnées multipliées.",
+   "quiz": [
+    {
+     "q": "Que vaut (1 ; 2)·(3 ; −1) dans un repère orthonormé ?",
+     "choix": [
+      "5",
+      "−1",
+      "1"
+     ],
+     "rep": "1",
+     "expl": "On calcule 1 × 3 + 2 × (−1) = 1."
+    },
+    {
+     "q": "Quelle est la norme du vecteur (3 ; 4) ?",
+     "choix": [
+      "5",
+      "7",
+      "25"
+     ],
+     "rep": "5",
+     "expl": "La norme est √(9 + 16) = 5."
+    },
+    {
+     "q": "Les vecteurs (2 ; 1) et (1 ; −2) sont-ils orthogonaux ?",
+     "choix": [
+      "Non, leur produit scalaire vaut 4",
+      "Oui, leur produit scalaire vaut 0",
+      "Non, leurs normes diffèrent"
+     ],
+     "rep": "Oui, leur produit scalaire vaut 0",
+     "expl": "Le calcul 2 × 1 + 1 × (−2) donne 0."
+    }
+   ],
+   "id": "REV-MA-1RE-38"
+  },
+  {
+   "axe": "Géométrie",
+   "titre": "Développer avec le produit scalaire",
+   "emoji": "🧩",
+   "en_une_phrase": "La bilinéarité permet de développer un produit scalaire comme un produit algébrique.",
+   "comprendre": "Tu sais développer des parenthèses avec des nombres. Le produit scalaire possède aussi la distributivité et la symétrie. Cela permet de relier longueurs et angles sans coordonnées.",
+   "essentiel": [
+    "u·(v + w) = u·v + u·w.",
+    "u·v = v·u.",
+    "||u + v||² = ||u||² + 2u·v + ||v||².",
+    "||u − v||² = ||u||² − 2u·v + ||v||²."
+   ],
+   "image_mentale": "Imagine un produit distribué à chaque terme des deux parenthèses.",
+   "regle_ou_methode": "Développe chaque terme, puis utilise u·u = ||u||².",
+   "exemples": [
+    "Si ||u||² = 9, ||v||² = 4 et u·v = 1, alors ||u + v||² = 9 + 2 × 1 + 4 = 15.",
+    "Avec les mêmes valeurs, ||u − v||² = 9 − 2 × 1 + 4 = 11."
+   ],
+   "piege": "Ne supprime pas le terme 2u·v sauf si les vecteurs sont orthogonaux.",
+   "astuce_memoire": "Somme au carré : carrés et double produit.",
+   "quiz": [
+    {
+     "q": "Si ||u||² = 4, ||v||² = 9 et u·v = 2, que vaut ||u + v||² ?",
+     "choix": [
+      "17",
+      "15",
+      "21"
+     ],
+     "rep": "17",
+     "expl": "La formule donne 4 + 9 + 2 × 2 = 17."
+    },
+    {
+     "q": "Que vaut u·(v + w) ?",
+     "choix": [
+      "u·v + w",
+      "u·v + u·w",
+      "u·v × u·w"
+     ],
+     "rep": "u·v + u·w",
+     "expl": "Le produit scalaire est distributif."
+    },
+    {
+     "q": "Quand le terme 2u·v est-il nul ?",
+     "choix": [
+      "Quand leurs normes sont égales",
+      "Quand les vecteurs ont la même direction",
+      "Quand u et v sont orthogonaux"
+     ],
+     "rep": "Quand u et v sont orthogonaux",
+     "expl": "Deux vecteurs orthogonaux ont un produit scalaire nul."
+    }
+   ],
+   "id": "REV-MA-1RE-39"
+  },
+  {
+   "axe": "Géométrie",
+   "titre": "Formule d’Al-Kashi",
+   "emoji": "📏",
+   "en_une_phrase": "La formule d’Al-Kashi relie les trois côtés d’un triangle et un angle.",
+   "comprendre": "Tu connais le théorème de Pythagore pour un triangle rectangle. La formule d’Al-Kashi ajoute un terme lié au cosinus pour traiter les autres triangles. Si l’angle est droit, ce terme disparaît.",
+   "essentiel": [
+    "Dans un triangle ABC, BC² = AB² + AC² − 2 × AB × AC × cos(A).",
+    "L’angle A est compris entre les côtés AB et AC.",
+    "Pour un angle droit, cos(A) = 0.",
+    "La formule sert à calculer un côté ou un angle."
+   ],
+   "image_mentale": "Imagine deux côtés issus du même sommet et l’angle entre eux.",
+   "regle_ou_methode": "Repère le côté opposé à l’angle puis remplace les longueurs et le cosinus dans la formule.",
+   "exemples": [
+    "Si AB = 3, AC = 4 et l’angle A vaut 60°, alors BC² = 9 + 16 − 2 × 3 × 4 × 1/2 = 13. Donc BC = √13.",
+    "Pour un angle A droit avec AB = 3 et AC = 4, BC² = 9 + 16 = 25, donc BC = 5."
+   ],
+   "piege": "L’angle utilisé doit être compris entre les deux côtés du produit.",
+   "astuce_memoire": "Côté opposé au carré : somme des carrés moins double produit cosinus.",
+   "quiz": [
+    {
+     "q": "Si AB = AC = 2 et l’angle A vaut 60°, combien vaut BC ?",
+     "choix": [
+      "√8",
+      "2",
+      "4"
+     ],
+     "rep": "2",
+     "expl": "BC² = 4 + 4 − 2 × 2 × 2 × 1/2 = 4, donc BC = 2."
+    },
+    {
+     "q": "Que devient Al-Kashi si l’angle considéré est droit ?",
+     "choix": [
+      "Une égalité de longueurs obligatoire",
+      "Une formule sans carré",
+      "Le théorème de Pythagore"
+     ],
+     "rep": "Le théorème de Pythagore",
+     "expl": "Le cosinus de 90° est nul."
+    },
+    {
+     "q": "Quel côté est opposé à l’angle A du triangle ABC ?",
+     "choix": [
+      "BC",
+      "AB",
+      "AC"
+     ],
+     "rep": "BC",
+     "expl": "BC est le côté qui ne touche pas A."
+    }
+   ],
+   "id": "REV-MA-1RE-40"
+  },
+  {
+   "axe": "Géométrie",
+   "titre": "Droite et vecteur normal",
+   "emoji": "↕️",
+   "en_une_phrase": "Un vecteur normal à une droite lui est perpendiculaire.",
+   "comprendre": "Tu connais un vecteur directeur qui suit une droite. Un vecteur normal pointe perpendiculairement à cette droite. Il permet de construire une équation cartésienne.",
+   "essentiel": [
+    "Pour ax + by + c = 0, le vecteur (a ; b) est normal si (a ; b) est non nul.",
+    "Un point appartient à la droite si ses coordonnées vérifient son équation.",
+    "Pour le point A(xA ; yA), une équation est a(x − xA) + b(y − yA) = 0."
+   ],
+   "image_mentale": "Imagine une droite et une flèche qui la traverse à angle droit.",
+   "regle_ou_methode": "Utilise les coordonnées du vecteur normal et impose que le point donné vérifie l’équation.",
+   "exemples": [
+    "Pour A(1 ; 2) et n(2 ; −1), écris 2(x − 1) − (y − 2) = 0. Après réduction, la droite a pour équation 2x − y = 0.",
+    "La droite 3x + 4y − 5 = 0 admet (3 ; 4) comme vecteur normal."
+   ],
+   "piege": "Le vecteur (a ; b) est normal à ax + by + c = 0, pas directeur en général.",
+   "astuce_memoire": "Coefficients de x et y : vecteur normal.",
+   "quiz": [
+    {
+     "q": "Quel vecteur est normal à 2x − 3y + 1 = 0 ?",
+     "choix": [
+      "(3 ; 2)",
+      "(2 ; 3)",
+      "(2 ; −3)"
+     ],
+     "rep": "(2 ; −3)",
+     "expl": "Les coefficients de x et y sont 2 et −3."
+    },
+    {
+     "q": "Le point (1 ; 2) appartient-il à 2x − y = 0 ?",
+     "choix": [
+      "Oui, car 2 × 1 − 2 = 0",
+      "Non, car 2 + 2 ≠ 0",
+      "Non, car ses coordonnées sont différentes"
+     ],
+     "rep": "Oui, car 2 × 1 − 2 = 0",
+     "expl": "La substitution donne 0."
+    },
+    {
+     "q": "Quel vecteur normal convient à la droite x + y − 4 = 0 ?",
+     "choix": [
+      "(1 ; −1)",
+      "(1 ; 1)",
+      "(0 ; 0)"
+     ],
+     "rep": "(1 ; 1)",
+     "expl": "Le vecteur des coefficients est (1 ; 1)."
+    }
+   ],
+   "id": "REV-MA-1RE-41"
+  },
+  {
+   "axe": "Géométrie",
+   "titre": "Projeté orthogonal",
+   "emoji": "📍",
+   "en_une_phrase": "Le projeté orthogonal est le point où la perpendiculaire issue d’un point rencontre une droite.",
+   "comprendre": "Pour mesurer la distance la plus courte d’un point à une droite, on descend perpendiculairement vers cette droite. Le pied de cette perpendiculaire est le projeté orthogonal. Ses coordonnées vérifient l’équation de la droite et la condition de perpendicularité.",
+   "essentiel": [
+    "Le projeté H appartient à la droite.",
+    "Le vecteur AH est perpendiculaire à la droite.",
+    "La distance du point A à la droite est AH.",
+    "On peut déterminer H par un système de deux équations."
+   ],
+   "image_mentale": "Imagine une épingle et un fil tendu à angle droit vers une règle.",
+   "regle_ou_methode": "Écris l’équation de la droite et celle de la perpendiculaire passant par le point, puis résous le système.",
+   "exemples": [
+    "Pour projeter A(2 ; 0) sur la droite y = x, utilise la perpendiculaire y = −x + 2. L’intersection vérifie x = −x + 2, donc x = 1 et y = 1 : H(1 ; 1).",
+    "Le projeté de (3 ; 4) sur l’axe des abscisses est (3 ; 0)."
+   ],
+   "piege": "Un point de la droite quelconque n’est pas forcément le projeté : il faut l’angle droit.",
+   "astuce_memoire": "Sur la droite et à angle droit.",
+   "quiz": [
+    {
+     "q": "Quel est le projeté de (3 ; 4) sur l’axe des abscisses ?",
+     "choix": [
+      "(3 ; 0)",
+      "(0 ; 4)",
+      "(0 ; 3)"
+     ],
+     "rep": "(3 ; 0)",
+     "expl": "La perpendiculaire à l’axe des abscisses conserve l’abscisse."
+    },
+    {
+     "q": "Quel est le projeté de (2 ; 0) sur y = x ?",
+     "choix": [
+      "(2 ; 2)",
+      "(1 ; 1)",
+      "(0 ; 0)"
+     ],
+     "rep": "(1 ; 1)",
+     "expl": "La perpendiculaire y = −x + 2 coupe y = x en (1 ; 1)."
+    },
+    {
+     "q": "Quelle propriété caractérise le projeté H de A sur une droite ?",
+     "choix": [
+      "H est sur la droite et AH lui est parallèle",
+      "H est toujours l’origine du repère",
+      "H est sur la droite et AH lui est perpendiculaire"
+     ],
+     "rep": "H est sur la droite et AH lui est perpendiculaire",
+     "expl": "Les deux conditions définissent la projection orthogonale."
+    }
+   ],
+   "id": "REV-MA-1RE-42"
+  },
+  {
+   "axe": "Géométrie",
+   "titre": "Équation d’un cercle",
+   "emoji": "⭕",
+   "en_une_phrase": "L’équation d’un cercle traduit l’égalité des distances à son centre.",
+   "comprendre": "Un cercle est l’ensemble des points situés à une distance fixe d’un centre. Dans un repère orthonormé, la formule de distance donne son équation. On peut aussi retrouver le centre et le rayon en lisant cette forme.",
+   "essentiel": [
+    "Un cercle de centre (a ; b) et de rayon r > 0 a pour équation (x − a)² + (y − b)² = r².",
+    "Le centre est (a ; b).",
+    "Le rayon est la racine carrée du second membre.",
+    "Le repère doit être orthonormé."
+   ],
+   "image_mentale": "Imagine un compas ouvert d’une longueur fixe autour de son centre.",
+   "regle_ou_methode": "Identifie les coordonnées du centre et le rayon, puis écris la somme des deux carrés.",
+   "exemples": [
+    "Pour le centre (2 ; −1) et le rayon 3, écris (x − 2)² + (y + 1)² = 9. Le signe plus devant 1 vient de y − (−1).",
+    "L’équation x² + y² = 16 décrit le cercle de centre (0 ; 0) et de rayon 4.",
+    "L’équation x² + y² − 4x + 2y − 4 = 0 devient (x − 2)² + (y + 1)² = 9 : le centre est (2 ; −1) et le rayon vaut 3."
+   ],
+   "piege": "Le second membre est le carré du rayon, pas le rayon.",
+   "astuce_memoire": "Centre (a ; b), rayon r : somme des carrés égale r².",
+   "quiz": [
+    {
+     "q": "Quel est le centre de (x − 2)² + (y + 1)² = 9 ?",
+     "choix": [
+      "(−2 ; 1)",
+      "(2 ; −1)",
+      "(2 ; 1)"
+     ],
+     "rep": "(2 ; −1)",
+     "expl": "On lit x − 2 et y − (−1)."
+    },
+    {
+     "q": "Quel est le rayon de x² + y² = 16 ?",
+     "choix": [
+      "16",
+      "8",
+      "4"
+     ],
+     "rep": "4",
+     "expl": "Le carré du rayon vaut 16."
+    },
+    {
+     "q": "Quel point appartient au cercle x² + y² = 25 ?",
+     "choix": [
+      "(3 ; 4)",
+      "(3 ; 5)",
+      "(5 ; 5)"
+     ],
+     "rep": "(3 ; 4)",
+     "expl": "3² + 4² = 25."
+    }
+   ],
+   "id": "REV-MA-1RE-43"
+  },
+  {
+   "axe": "Géométrie",
+   "titre": "Cercle de diamètre donné",
+   "emoji": "🎯",
+   "en_une_phrase": "Le produit scalaire permet de reconnaître un cercle de diamètre donné.",
+   "comprendre": "Tu connais la propriété du triangle inscrit dans un demi-cercle. Pour deux points distincts A et B, si I est le milieu de [AB], le produit scalaire MA·MB vaut MI² − IA². Il est nul exactement lorsque M appartient au cercle de diamètre [AB].",
+   "essentiel": [
+    "Si I est le milieu de [AB], MA·MB = MI² − IA².",
+    "MA·MB = 0 signifie que les vecteurs MA et MB sont orthogonaux.",
+    "Les points M tels que MA·MB = 0 forment le cercle de diamètre [AB].",
+    "Les extrémités A et B appartiennent aussi au cercle."
+   ],
+   "image_mentale": "Imagine un cercle et un angle droit posé sur son bord.",
+   "regle_ou_methode": "Calcule le milieu et le demi-diamètre, puis compare MI à IA.",
+   "exemples": [
+    "Si AB = 6 et I est son milieu, IA = 3. La condition MA·MB = 0 devient MI² − 9 = 0, soit MI = 3 : M appartient au cercle de centre I et de rayon 3.",
+    "En M = A, le vecteur MA est nul, donc MA·MB = 0 ; A appartient au cercle."
+   ],
+   "piege": "N’oublie pas les extrémités du diamètre : le produit scalaire y est aussi nul.",
+   "astuce_memoire": "Produit nul : cercle de diamètre AB.",
+   "quiz": [
+    {
+     "q": "Si AB = 10, quel est le rayon du cercle de diamètre [AB] ?",
+     "choix": [
+      "10",
+      "20",
+      "5"
+     ],
+     "rep": "5",
+     "expl": "Le rayon est la moitié du diamètre."
+    },
+    {
+     "q": "Pour le milieu I de [AB], que vaut MA·MB ?",
+     "choix": [
+      "MI² − IA²",
+      "MI² + IA²",
+      "2MI² + IA²"
+     ],
+     "rep": "MI² − IA²",
+     "expl": "Le développement avec le milieu donne cette identité."
+    },
+    {
+     "q": "Le point A vérifie-t-il MA·MB = 0 lorsque M = A ?",
+     "choix": [
+      "Non, car le cercle exclut ses extrémités",
+      "Oui, car MA est le vecteur nul",
+      "Seulement si AB = 0"
+     ],
+     "rep": "Oui, car MA est le vecteur nul",
+     "expl": "Le produit avec le vecteur nul est nul."
+    }
+   ],
+   "id": "REV-MA-1RE-44"
+  },
+  {
+   "axe": "Probabilités et statistiques",
+   "titre": "Probabilité conditionnelle",
+   "emoji": "🔎",
+   "en_une_phrase": "Une probabilité conditionnelle décrit une chance après restriction à un événement de probabilité non nulle.",
+   "comprendre": "Dans une classe, la proportion d’élèves qui prennent le bus peut différer selon le groupe observé. Une condition réduit l’univers aux situations où elle est réalisée. Le dénominateur doit donc correspondre au groupe conditionnant.",
+   "essentiel": [
+    "P(A sachant B) = P(A ∩ B) / P(B) si P(B) > 0.",
+    "P(A ∩ B) = P(B) × P(A sachant B).",
+    "Les probabilités de A sachant B et de B sachant A peuvent différer.",
+    "Une condition de probabilité nulle ne permet pas ce quotient."
+   ],
+   "image_mentale": "Imagine une population entière puis un cercle zoomé sur le groupe B.",
+   "regle_ou_methode": "Restreins-toi à B, compte les cas A dans ce groupe, puis divise par l’effectif de B.",
+   "exemples": [
+    "Parmi 20 élèves qui prennent le bus, 8 pratiquent un sport. La probabilité de pratiquer un sport sachant que l’élève prend le bus est 8/20 = 0,4.",
+    "Si P(B) = 0,5 et P(A sachant B) = 0,4, alors P(A ∩ B) = 0,5 × 0,4 = 0,2."
+   ],
+   "piege": "Ne confonds pas la probabilité conditionnelle avec la probabilité de l’intersection.",
+   "astuce_memoire": "Sachant B : on divise par P(B).",
+   "quiz": [
+    {
+     "q": "Si P(A ∩ B) = 0,12 et P(B) = 0,3, que vaut P(A sachant B) ?",
+     "choix": [
+      "0,4",
+      "0,036",
+      "0,18"
+     ],
+     "rep": "0,4",
+     "expl": "On calcule 0,12 / 0,3 = 0,4."
+    },
+    {
+     "q": "Quand le quotient P(A ∩ B) / P(B) est-il défini ?",
+     "choix": [
+      "Quand P(B) = 0",
+      "Quand P(B) > 0",
+      "Uniquement quand A et B sont incompatibles"
+     ],
+     "rep": "Quand P(B) > 0",
+     "expl": "Le dénominateur doit être non nul."
+    },
+    {
+     "q": "Si P(B) = 0,5 et P(A sachant B) = 0,4, que vaut P(A ∩ B) ?",
+     "choix": [
+      "0,9",
+      "0,1",
+      "0,2"
+     ],
+     "rep": "0,2",
+     "expl": "On multiplie 0,5 par 0,4."
+    }
+   ],
+   "id": "REV-MA-1RE-45"
+  },
+  {
+   "axe": "Probabilités et statistiques",
+   "titre": "Probabilités totales",
+   "emoji": "🌳",
+   "en_une_phrase": "La formule des probabilités totales additionne les chemins correspondant à une partition.",
+   "comprendre": "Une personne peut venir à l’école à pied ou autrement. Si ces deux cas couvrent toutes les possibilités sans se chevaucher, on peut calculer séparément la probabilité d’un événement dans chaque groupe. Leur somme donne la probabilité totale.",
+   "essentiel": [
+    "Une partition rassemble des événements incompatibles couvrant tout l’univers.",
+    "Si 0 < P(B) < 1, P(A) = P(B)P(A sachant B) + P(non B)P(A sachant non B).",
+    "Sur un arbre, on multiplie le long d’un chemin.",
+    "On additionne les chemins distincts conduisant à l’événement."
+   ],
+   "image_mentale": "Imagine deux branches séparées qui aboutissent toutes deux à A.",
+   "regle_ou_methode": "Calcule chaque probabilité de chemin puis additionne les chemins réalisant A.",
+   "exemples": [
+    "Dans un groupe, 60 % viennent à pied ; parmi eux 20 % portent un chapeau. Parmi les 40 % restants, 10 % en portent un. La probabilité totale vaut 0,6 × 0,2 + 0,4 × 0,1 = 0,16.",
+    "Avec deux chemins de probabilités 0,12 et 0,04, la probabilité totale de l’événement vaut 0,16."
+   ],
+   "piege": "Ne multiplie pas les deux chemins différents : ils correspondent à des cas alternatifs.",
+   "astuce_memoire": "Sur le chemin : multiplier ; entre chemins : additionner.",
+   "quiz": [
+    {
+     "q": "Si les deux chemins vers A valent 0,12 et 0,04, que vaut P(A) ?",
+     "choix": [
+      "0,0048",
+      "0,16",
+      "0,08"
+     ],
+     "rep": "0,16",
+     "expl": "Les cas distincts s’additionnent."
+    },
+    {
+     "q": "Que vaut 0,6 × 0,2 + 0,4 × 0,1 ?",
+     "choix": [
+      "0,30",
+      "0,60",
+      "0,16"
+     ],
+     "rep": "0,16",
+     "expl": "Les chemins valent 0,12 et 0,04."
+    },
+    {
+     "q": "Que doit faire une partition ?",
+     "choix": [
+      "Couvrir l’univers avec des événements incompatibles",
+      "Rassembler seulement des événements identiques",
+      "Exclure certains résultats de l’univers"
+     ],
+     "rep": "Couvrir l’univers avec des événements incompatibles",
+     "expl": "Les événements d’une partition ne se chevauchent pas et couvrent tout."
+    }
+   ],
+   "id": "REV-MA-1RE-46"
+  },
+  {
+   "axe": "Probabilités et statistiques",
+   "titre": "Événements indépendants",
+   "emoji": "🎲",
+   "en_une_phrase": "Deux événements sont indépendants si la réalisation de l’un ne modifie pas la probabilité de l’autre.",
+   "comprendre": "On peut modéliser deux lancers de dé comme indépendants. Dans ce modèle, connaître le résultat du premier ne change pas la loi du second. La condition se traduit par une égalité de probabilités.",
+   "essentiel": [
+    "A et B sont indépendants si P(A ∩ B) = P(A)P(B).",
+    "Si P(B) > 0, cela équivaut à P(A sachant B) = P(A).",
+    "Indépendants ne signifie pas incompatibles.",
+    "L’indépendance fait partie du modèle ou se démontre à partir de celui-ci."
+   ],
+   "image_mentale": "Imagine deux lancers sans influence de l’un sur l’autre.",
+   "regle_ou_methode": "Calcule P(A)P(B) et compare à P(A ∩ B).",
+   "exemples": [
+    "Si P(A) = 0,4, P(B) = 0,5 et P(A ∩ B) = 0,2, alors 0,4 × 0,5 = 0,2. Les événements sont indépendants.",
+    "Pour deux lancers indépendants d’une pièce équilibrée, obtenir pile aux deux lancers a une probabilité de 1/4."
+   ],
+   "piege": "Deux événements incompatibles de probabilités strictement positives ne sont pas indépendants.",
+   "astuce_memoire": "Indépendance : probabilité de l’intersection égale produit.",
+   "quiz": [
+    {
+     "q": "Si P(A) = 0,3 et P(B) = 0,2 sont indépendants, que vaut P(A ∩ B) ?",
+     "choix": [
+      "0,5",
+      "0,1",
+      "0,06"
+     ],
+     "rep": "0,06",
+     "expl": "On multiplie 0,3 par 0,2."
+    },
+    {
+     "q": "Deux événements incompatibles de probabilités positives peuvent-ils être indépendants ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, si leurs probabilités sont égales"
+     ],
+     "rep": "Non",
+     "expl": "Leur intersection vaut 0 mais le produit de leurs probabilités est positif."
+    },
+    {
+     "q": "Si P(B) > 0 et A et B sont indépendants, que vaut P(A sachant B) ?",
+     "choix": [
+      "P(B)",
+      "P(A)",
+      "P(A) + P(B)"
+     ],
+     "rep": "P(A)",
+     "expl": "La réalisation de B ne modifie pas la probabilité de A."
+    }
+   ],
+   "id": "REV-MA-1RE-47"
+  },
+  {
+   "axe": "Probabilités et statistiques",
+   "titre": "Deux épreuves successives",
+   "emoji": "🎲",
+   "en_une_phrase": "Dans deux épreuves indépendantes, la probabilité d’un chemin est le produit des probabilités de ses étapes.",
+   "comprendre": "Imagine deux tirages uniformes avec remise : chaque boule a la même probabilité d’être tirée et les tirages sont indépendants. Le contenu de l’urne est le même au second tirage. Un arbre représente les issues successives et leurs probabilités.",
+   "essentiel": [
+    "Avec remise, le contenu de l’urne est rétabli après le premier tirage.",
+    "Dans ce modèle, les deux tirages sont indépendants.",
+    "La probabilité d’un chemin se calcule en multipliant les branches.",
+    "Sans remise, les probabilités peuvent changer."
+   ],
+   "image_mentale": "Imagine un arbre à deux étages dont chaque branche porte sa probabilité.",
+   "regle_ou_methode": "Détermine les probabilités à chaque étape et multiplie celles du chemin demandé.",
+   "exemples": [
+    "Une urne contient 3 boules rouges et 2 bleues, toutes équiprobables. Avec remise et tirages indépendants, la probabilité de tirer deux rouges est 3/5 × 3/5 = 9/25.",
+    "Avec des tirages uniformes sans remise, la probabilité de deux rouges est 3/5 × 2/4 = 3/10."
+   ],
+   "piege": "Avec et sans remise ne donnent pas automatiquement le même calcul.",
+   "astuce_memoire": "Avec remise : mêmes proportions à chaque tirage.",
+   "quiz": [
+    {
+     "q": "Avec remise et tirages uniformes indépendants dans une urne de 3 rouges et 2 bleues, quelle est la probabilité de deux rouges ?",
+     "choix": [
+      "9/25",
+      "3/10",
+      "6/25"
+     ],
+     "rep": "9/25",
+     "expl": "On calcule 3/5 × 3/5 = 9/25."
+    },
+    {
+     "q": "Sans remise et avec des tirages uniformes, quelle est la probabilité de tirer deux rouges parmi 3 rouges et 2 bleues ?",
+     "choix": [
+      "9/25",
+      "3/10",
+      "2/5"
+     ],
+     "rep": "3/10",
+     "expl": "On calcule 3/5 × 2/4 = 3/10."
+    },
+    {
+     "q": "Pourquoi les probabilités changent-elles sans remise ?",
+     "choix": [
+      "Le nombre de couleurs augmente toujours",
+      "Les issues deviennent toutes impossibles",
+      "Le contenu de l’urne change après le tirage"
+     ],
+     "rep": "Le contenu de l’urne change après le tirage",
+     "expl": "La boule tirée n’est pas replacée."
+    }
+   ],
+   "id": "REV-MA-1RE-48"
+  },
+  {
+   "axe": "Probabilités et statistiques",
+   "titre": "Répéter une épreuve de Bernoulli",
+   "emoji": "🌿",
+   "en_une_phrase": "Une épreuve de Bernoulli a deux issues : succès et échec ; ses répétitions indépendantes se représentent par un arbre.",
+   "comprendre": "Pour modéliser des tentatives, on appelle succès l’issue qui nous intéresse. Si chaque essai a la même probabilité et ne dépend pas des autres, on multiplie les probabilités sur chaque chemin. Pour compter plusieurs ordres possibles, on additionne leurs probabilités.",
+   "essentiel": [
+    "Une épreuve de Bernoulli a deux issues.",
+    "Si la probabilité du succès est p, celle de l’échec est 1 − p.",
+    "Pour trois essais indépendants, chaque chemin a trois branches successives.",
+    "Des ordres différents peuvent produire le même nombre de succès."
+   ],
+   "image_mentale": "Imagine trois étages, avec une branche succès et une branche échec à chaque étage.",
+   "regle_ou_methode": "Liste les chemins correspondant au nombre de succès puis additionne leurs probabilités.",
+   "exemples": [
+    "On lance trois fois une pièce équilibrée. Exactement deux piles correspondent à pile-pile-face, pile-face-pile ou face-pile-pile. Chaque chemin vaut 1/8 ; la probabilité totale vaut 3/8.",
+    "Pour trois essais indépendants de succès de probabilité 1/2, trois succès ont une probabilité de 1/8."
+   ],
+   "piege": "Exactement deux succès ne correspondent pas à un seul ordre possible.",
+   "astuce_memoire": "Lister les chemins, multiplier puis additionner.",
+   "quiz": [
+    {
+     "q": "Quelle est la probabilité de trois succès sur trois essais indépendants de probabilité 1/2 ?",
+     "choix": [
+      "1/2",
+      "1/8",
+      "3/8"
+     ],
+     "rep": "1/8",
+     "expl": "On multiplie 1/2 trois fois."
+    },
+    {
+     "q": "Combien d’ordres donnent exactement deux succès en trois essais ?",
+     "choix": [
+      "2",
+      "6",
+      "3"
+     ],
+     "rep": "3",
+     "expl": "Les chemins sont SSÉ, SÉS et ÉSS."
+    },
+    {
+     "q": "Quelle est la probabilité d’exactement deux piles en trois lancers indépendants d’une pièce équilibrée ?",
+     "choix": [
+      "3/8",
+      "1/8",
+      "1/4"
+     ],
+     "rep": "3/8",
+     "expl": "Trois chemins de probabilité 1/8 conviennent."
+    }
+   ],
+   "id": "REV-MA-1RE-49"
+  },
+  {
+   "axe": "Probabilités et statistiques",
+   "titre": "Loi d’une variable aléatoire",
+   "emoji": "🎁",
+   "en_une_phrase": "Une variable aléatoire associe un nombre à chaque issue d’une expérience.",
+   "comprendre": "Un jeu peut attribuer le même gain à plusieurs résultats. La loi regroupe les probabilités selon les valeurs numériques du gain. La somme des probabilités de toutes les valeurs doit valoir 1.",
+   "essentiel": [
+    "Une variable aléatoire associe une valeur numérique à chaque issue.",
+    "Sa loi donne chaque valeur possible et sa probabilité.",
+    "Les probabilités de la loi totalisent 1.",
+    "P(X ≤ a) additionne les probabilités des valeurs inférieures ou égales à a."
+   ],
+   "image_mentale": "Imagine des issues regroupées dans des boîtes étiquetées par leur gain.",
+   "regle_ou_methode": "Liste les valeurs distinctes, rassemble les issues correspondantes puis additionne leurs probabilités.",
+   "exemples": [
+    "On lance un dé équilibré ; X vaut 2 si le résultat est pair et 0 sinon. Trois faces sont paires : P(X = 2) = 3/6 = 1/2 et P(X = 0) = 1/2.",
+    "Avec cette loi, P(X ≤ 0) = P(X = 0) = 1/2."
+   ],
+   "piege": "Ne confonds pas le résultat du dé avec la valeur attribuée par X.",
+   "astuce_memoire": "Issues regroupées par valeur de X.",
+   "quiz": [
+    {
+     "q": "Pour le dé décrit, que vaut P(X = 2) ?",
+     "choix": [
+      "1/6",
+      "2/3",
+      "1/2"
+     ],
+     "rep": "1/2",
+     "expl": "Trois des six issues donnent X = 2."
+    },
+    {
+     "q": "Quelle somme doivent former les probabilités d’une loi complète ?",
+     "choix": [
+      "1",
+      "0",
+      "Le nombre de valeurs possibles"
+     ],
+     "rep": "1",
+     "expl": "Les valeurs couvrent toutes les issues."
+    },
+    {
+     "q": "Si X vaut 0 ou 2 avec probabilité 1/2 chacune, que vaut P(X ≤ 0) ?",
+     "choix": [
+      "0",
+      "1/2",
+      "1"
+     ],
+     "rep": "1/2",
+     "expl": "Seule la valeur 0 convient."
+    }
+   ],
+   "id": "REV-MA-1RE-50"
+  },
+  {
+   "axe": "Probabilités et statistiques",
+   "titre": "Espérance d’un gain",
+   "emoji": "⚖️",
+   "en_une_phrase": "L’espérance est la moyenne des valeurs pondérées par leurs probabilités.",
+   "comprendre": "Pour comparer des jeux, on peut tenir compte à la fois des gains possibles et de leur fréquence théorique. L’espérance est une moyenne calculée dans le modèle. Elle ne prédit pas le résultat d’une partie unique.",
+   "essentiel": [
+    "Si X prend les valeurs xi avec probabilités pi, E(X) = somme des xi × pi.",
+    "Les gains négatifs représentent des pertes.",
+    "Un jeu est équitable si l’espérance du gain net est nulle.",
+    "L’espérance peut ne pas être une valeur réalisable en une partie."
+   ],
+   "image_mentale": "Imagine une balance où chaque gain pèse selon sa probabilité.",
+   "regle_ou_methode": "Multiplie chaque valeur par sa probabilité puis additionne les produits.",
+   "exemples": [
+    "Un jeu donne 4 € avec probabilité 1/4 et −2 € avec probabilité 3/4. Son espérance vaut 4 × 1/4 − 2 × 3/4 = −0,5 € : la perte moyenne théorique est de 50 centimes.",
+    "Si une récompense vaut 6 € avec probabilité 1/2 et 0 € sinon, sa valeur moyenne théorique est 3 €."
+   ],
+   "piege": "Une espérance négative ne garantit pas une perte à chaque partie.",
+   "astuce_memoire": "Valeur fois probabilité, puis somme.",
+   "quiz": [
+    {
+     "q": "Que vaut l’espérance de X valant 2 avec probabilité 1/2 et 0 sinon ?",
+     "choix": [
+      "1",
+      "2",
+      "1/2"
+     ],
+     "rep": "1",
+     "expl": "E(X) = 2 × 1/2 + 0 × 1/2 = 1."
+    },
+    {
+     "q": "Une espérance négative impose-t-elle une perte à chaque partie ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, dès que le jeu possède deux issues"
+     ],
+     "rep": "Non",
+     "expl": "Une partie individuelle peut avoir un gain positif."
+    },
+    {
+     "q": "Quelle mise rend équitable une récompense moyenne de 3 € ?",
+     "choix": [
+      "6 €",
+      "1,50 €",
+      "3 €"
+     ],
+     "rep": "3 €",
+     "expl": "Le gain net a une espérance nulle si la mise égale la récompense moyenne."
+    }
+   ],
+   "id": "REV-MA-1RE-51"
+  },
+  {
+   "axe": "Probabilités et statistiques",
+   "titre": "Variance et écart type",
+   "emoji": "📊",
+   "en_une_phrase": "La variance et l’écart type mesurent la dispersion autour de l’espérance.",
+   "comprendre": "Deux jeux peuvent avoir la même moyenne et des gains très différents. La variance mesure les écarts à l’espérance après les avoir élevés au carré. L’écart type remet cette mesure dans l’unité de la variable.",
+   "essentiel": [
+    "V(X) = E((X − E(X))²).",
+    "La formule de König-Huygens est V(X) = E(X²) − E(X)².",
+    "L’écart type vaut σ(X) = √V(X).",
+    "La variance est positive ou nulle."
+   ],
+   "image_mentale": "Imagine deux séries centrées au même endroit mais plus ou moins étalées.",
+   "regle_ou_methode": "Calcule E(X), puis E(X²) et soustrais E(X)² ; prends la racine pour l’écart type.",
+   "exemples": [
+    "Si X vaut 0 ou 2 avec probabilité 1/2 chacune, E(X) = 1. Puis E(X²) = 0² × 1/2 + 2² × 1/2 = 2 ; V(X) = 2 − 1² = 1 et σ(X) = 1.",
+    "Une variable constante vaut toujours 3 : sa variance et son écart type valent 0."
+   ],
+   "piege": "Ne confonds pas E(X²) avec E(X)² : ces valeurs sont généralement différentes.",
+   "astuce_memoire": "Variance : moyenne des carrés moins carré de la moyenne.",
+   "quiz": [
+    {
+     "q": "Si E(X) = 2 et E(X²) = 7, que vaut V(X) ?",
+     "choix": [
+      "5",
+      "3",
+      "11"
+     ],
+     "rep": "3",
+     "expl": "V(X) = 7 − 2² = 3."
+    },
+    {
+     "q": "Si V(X) = 9, que vaut l’écart type ?",
+     "choix": [
+      "9",
+      "81",
+      "3"
+     ],
+     "rep": "3",
+     "expl": "L’écart type est la racine carrée de la variance."
+    },
+    {
+     "q": "Quelle est la variance d’une variable toujours égale à 4 ?",
+     "choix": [
+      "0",
+      "4",
+      "16"
+     ],
+     "rep": "0",
+     "expl": "Tous ses écarts à la moyenne sont nuls."
+    }
+   ],
+   "id": "REV-MA-1RE-52"
+  },
+  {
+   "axe": "Probabilités et statistiques",
+   "titre": "Linéarité de l’espérance",
+   "emoji": "➕",
+   "en_une_phrase": "L’espérance d’une somme est la somme des espérances, même sans indépendance.",
+   "comprendre": "Tu sais additionner des moyennes pondérées. L’espérance conserve cette propriété pour les variables aléatoires. Elle permet de calculer un gain moyen après ajout d’une prime ou d’un coût.",
+   "essentiel": [
+    "E(X + Y) = E(X) + E(Y).",
+    "E(aX + b) = aE(X) + b pour des constantes a et b.",
+    "La linéarité ne nécessite pas l’indépendance de X et Y.",
+    "Une mise fixe se soustrait de l’espérance du gain brut."
+   ],
+   "image_mentale": "Imagine deux gains moyens additionnés sur une balance.",
+   "regle_ou_methode": "Remplace chaque variable par son espérance et garde les coefficients et constantes.",
+   "exemples": [
+    "Si E(X) = 3 et E(Y) = 2, alors E(2X + Y − 1) = 2 × 3 + 2 − 1 = 7. Cette égalité ne suppose pas que X et Y soient indépendantes.",
+    "Si l’espérance d’un gain brut est 4 € et la mise vaut 3 €, l’espérance du gain net est 1 €."
+   ],
+   "piege": "La linéarité de l’espérance ne nécessite pas l’indépendance.",
+   "astuce_memoire": "Espérance de la somme : somme des espérances.",
+   "quiz": [
+    {
+     "q": "Si E(X) = 2 et E(Y) = 5, que vaut E(X + Y) ?",
+     "choix": [
+      "10",
+      "3",
+      "7"
+     ],
+     "rep": "7",
+     "expl": "La linéarité donne 2 + 5 = 7."
+    },
+    {
+     "q": "Si E(X) = 3, que vaut E(2X − 1) ?",
+     "choix": [
+      "5",
+      "4",
+      "6"
+     ],
+     "rep": "5",
+     "expl": "On calcule 2 × 3 − 1 = 5."
+    },
+    {
+     "q": "Faut-il l’indépendance pour E(X + Y) = E(X) + E(Y) ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Seulement si les espérances sont négatives"
+     ],
+     "rep": "Non",
+     "expl": "La linéarité est valable sans indépendance."
+    }
+   ],
+   "id": "REV-MA-1RE-53"
+  },
+  {
+   "axe": "Probabilités et statistiques",
+   "titre": "Simulation et moyenne",
+   "emoji": "💻",
+   "en_une_phrase": "Une simulation répète un modèle aléatoire et permet de comparer une moyenne observée à l’espérance.",
+   "comprendre": "Tu peux jouer plusieurs parties virtuelles et calculer la moyenne obtenue. Les moyennes fluctuent d’un échantillon à l’autre. Avec davantage de répétitions indépendantes, elles tendent généralement à se rapprocher de l’espérance du modèle.",
+   "essentiel": [
+    "Une simulation reproduit les règles d’un modèle.",
+    "Une moyenne d’échantillon dépend des résultats obtenus.",
+    "Deux simulations peuvent donner des moyennes différentes.",
+    "Une grande taille d’échantillon réduit généralement les fluctuations."
+   ],
+   "image_mentale": "Imagine plusieurs séries de points regroupées autour d’une moyenne théorique.",
+   "regle_ou_methode": "Simule les valeurs, additionne-les puis divise par leur nombre ; compare avec l’espérance.",
+   "exemples": [
+    "Une simulation produit les gains 0, 2, 2 et 0. Leur moyenne est (0 + 2 + 2 + 0) / 4 = 1 ; on la compare à l’espérance du modèle.",
+    "Deux simulations de même taille peuvent fournir 0,9 et 1,1 autour d’une espérance égale à 1."
+   ],
+   "piege": "La moyenne simulée n’est pas obligatoirement égale exactement à l’espérance.",
+   "astuce_memoire": "Simuler, moyenner, comparer.",
+   "quiz": [
+    {
+     "q": "Quelle est la moyenne des valeurs 0, 2, 2, 0 ?",
+     "choix": [
+      "1",
+      "2",
+      "4"
+     ],
+     "rep": "1",
+     "expl": "La somme est 4 et il y a 4 valeurs."
+    },
+    {
+     "q": "Deux simulations de même taille donnent-elles forcément la même moyenne ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, si les valeurs possibles sont les mêmes"
+     ],
+     "rep": "Non",
+     "expl": "Les tirages aléatoires peuvent différer."
+    },
+    {
+     "q": "Quand le nombre de répétitions indépendantes augmente, que font généralement les moyennes ?",
+     "choix": [
+      "Elles deviennent toutes exactement égales immédiatement",
+      "Elles s’éloignent nécessairement de l’espérance",
+      "Elles se rapprochent de l’espérance"
+     ],
+     "rep": "Elles se rapprochent de l’espérance",
+     "expl": "Les fluctuations ont tendance à diminuer quand l’échantillon grandit."
+    }
+   ],
+   "id": "REV-MA-1RE-54"
+  }
+ ]
+}

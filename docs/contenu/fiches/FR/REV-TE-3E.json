@@ -1,0 +1,699 @@
+{
+ "classe": "3E",
+ "niveau_appli": "3ème",
+ "age": "14-15 ans",
+ "matiere": "Technologie",
+ "code": "TE",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Les objets et les systèmes techniques : leurs usages et leurs interactions à découvrir et à analyser",
+   "titre": "Invention et innovation",
+   "emoji": "💡",
+   "en_une_phrase": "Une invention propose une nouveauté technique ; une innovation correspond à sa mise en usage.",
+   "comprendre": "Tu as peut-être observé qu’une idée ne change pas immédiatement les habitudes. Une invention apporte une solution nouvelle. Une innovation suppose qu’une nouveauté soit mise en œuvre et adoptée dans un contexte donné.",
+   "essentiel": [
+    "Une invention est une solution technique nouvelle.",
+    "Une innovation implique une mise en usage d’une nouveauté.",
+    "Les besoins, les coûts et la société influencent la diffusion."
+   ],
+   "image_mentale": "Imagine une idée dessinée sur une feuille puis utilisée par des personnes.",
+   "regle_ou_methode": "Identifie la nouveauté, son usage concret et les conditions de sa diffusion.",
+   "exemples": [
+    "Une équipe imagine un nouveau mécanisme pour ouvrir une fenêtre. La solution existe d’abord comme invention. Si elle est mise en œuvre et adoptée, son usage peut constituer une innovation.",
+    "Un éclairage plus économe peut se diffuser si les utilisateurs y trouvent un avantage et peuvent l’installer."
+   ],
+   "piege": "Une invention ne devient pas automatiquement une innovation largement adoptée.",
+   "astuce_memoire": "Invention : solution nouvelle ; innovation : nouveauté mise en usage.",
+   "quiz": [
+    {
+     "q": "Qu’ajoute une innovation à une idée nouvelle ?",
+     "choix": [
+      "La certitude que personne ne l’utilise",
+      "Une mise en œuvre dans les usages",
+      "L’absence de tout besoin"
+     ],
+     "rep": "Une mise en œuvre dans les usages",
+     "expl": "L’innovation implique la mise en usage d’une nouveauté."
+    },
+    {
+     "q": "Une idée nouvelle est-elle forcément déjà largement diffusée ?",
+     "choix": [
+      "Oui",
+      "Oui, dès son premier dessin",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Une invention peut exister sans être largement adoptée."
+    },
+    {
+     "q": "Quel facteur peut influencer la diffusion d’une solution ?",
+     "choix": [
+      "Son coût et son adaptation aux besoins",
+      "Uniquement la couleur de la feuille de dessin",
+      "Le nombre de lettres du nom de l’objet"
+     ],
+     "rep": "Son coût et son adaptation aux besoins",
+     "expl": "Le coût et l’utilité influencent les choix d’utilisation."
+    }
+   ],
+   "id": "REV-TE-3E-01"
+  },
+  {
+   "axe": "Les objets et les systèmes techniques : leurs usages et leurs interactions à découvrir et à analyser",
+   "titre": "Évolution d’un objet",
+   "emoji": "📱",
+   "en_une_phrase": "L’évolution d’un objet technique répond à des besoins, des contraintes et des possibilités nouvelles.",
+   "comprendre": "Un même besoin peut être satisfait par plusieurs générations d’objets. Les solutions évoluent avec les connaissances et les techniques disponibles. Chaque évolution peut apporter des avantages et de nouvelles contraintes.",
+   "essentiel": [
+    "Une lignée rassemble des objets qui répondent à un même besoin et évoluent.",
+    "Une nouvelle fonction peut modifier les usages.",
+    "Il faut comparer les bénéfices et les contraintes."
+   ],
+   "image_mentale": "Imagine une frise de plusieurs objets répondant au même besoin.",
+   "regle_ou_methode": "Définis le besoin commun, compare les solutions puis explique les effets de l’évolution.",
+   "exemples": [
+    "On compare un appareil photo utilisant une pellicule et un appareil numérique. Tous deux permettent de conserver des images. Le second facilite la visualisation immédiate, mais dépend de composants et d’un stockage numérique.",
+    "Une lampe rechargeable réduit le recours à des piles jetables, tout en nécessitant une recharge et une batterie."
+   ],
+   "piege": "Plus récent ne signifie pas meilleur pour tous les critères ou tous les usages.",
+   "astuce_memoire": "Même besoin, solutions et conséquences différentes.",
+   "quiz": [
+    {
+     "q": "Quel besoin commun satisfont un appareil photo à pellicule et un appareil numérique ?",
+     "choix": [
+      "Chauffer une pièce",
+      "Mesurer la vitesse du vent",
+      "Conserver des images"
+     ],
+     "rep": "Conserver des images",
+     "expl": "Les deux permettent de produire et conserver des images."
+    },
+    {
+     "q": "Quel nouveau besoin peut accompagner une lampe rechargeable ?",
+     "choix": [
+      "Disposer d’un moyen de recharge",
+      "Utiliser forcément des piles jetables",
+      "Supprimer toute source d’énergie"
+     ],
+     "rep": "Disposer d’un moyen de recharge",
+     "expl": "La batterie doit pouvoir être rechargée."
+    },
+    {
+     "q": "Pourquoi comparer plusieurs critères ?",
+     "choix": [
+      "Une nouveauté supprime toujours tout inconvénient",
+      "Une évolution peut avoir avantages et contraintes",
+      "Un seul objet convient toujours à tous les usages"
+     ],
+     "rep": "Une évolution peut avoir avantages et contraintes",
+     "expl": "Les conséquences varient selon le critère et l’usage."
+    }
+   ],
+   "id": "REV-TE-3E-02"
+  },
+  {
+   "axe": "Les objets et les systèmes techniques : leurs usages et leurs interactions à découvrir et à analyser",
+   "titre": "Cycle de vie et choix",
+   "emoji": "♻️",
+   "en_une_phrase": "Comparer des objets demande d’examiner leurs performances et leurs impacts sur leur cycle de vie.",
+   "comprendre": "Un objet utilise des ressources avant même d’être acheté. Son cycle de vie comprend la production, le transport, l’utilisation et la fin de vie. Des critères comme la durabilité ou la réparabilité aident à comparer des solutions.",
+   "essentiel": [
+    "Les étapes du cycle de vie peuvent avoir des impacts différents.",
+    "La durée d’usage et la possibilité de réparation influencent le choix.",
+    "Un indicateur ne résume pas tous les impacts."
+   ],
+   "image_mentale": "Imagine une boucle allant des ressources à la fabrication, puis à l’usage et à la fin de vie.",
+   "regle_ou_methode": "Définis le besoin, choisis des critères comparables et examine les étapes pertinentes.",
+   "exemples": [
+    "Deux lampes éclairent suffisamment une pièce. L’une possède une pièce remplaçable et une notice de réparation ; l’autre est scellée. Pour le critère de réparabilité, la première présente un avantage.",
+    "Comparer deux appareils seulement sur leur consommation en usage ne suffit pas à établir tous leurs impacts de fabrication."
+   ],
+   "piege": "Un appareil réparable n’a pas nécessairement le plus faible impact sur tous les critères.",
+   "astuce_memoire": "Besoin, critères, cycle de vie, comparaison.",
+   "quiz": [
+    {
+     "q": "Quel élément aide à évaluer la réparabilité ?",
+     "choix": [
+      "La possibilité de remplacer une pièce",
+      "La seule couleur de l’emballage",
+      "Le jour de la semaine"
+     ],
+     "rep": "La possibilité de remplacer une pièce",
+     "expl": "Une pièce accessible peut faciliter la réparation."
+    },
+    {
+     "q": "La consommation pendant l’usage suffit-elle à décrire tous les impacts ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Oui, si l’objet est neuf"
+     ],
+     "rep": "Non",
+     "expl": "La fabrication, le transport et la fin de vie peuvent aussi avoir des impacts."
+    },
+    {
+     "q": "Que faut-il comparer pour choisir entre deux objets ?",
+     "choix": [
+      "Leurs noms seuls",
+      "Uniquement leur ordre alphabétique",
+      "Des critères liés au besoin"
+     ],
+     "rep": "Des critères liés au besoin",
+     "expl": "Les critères doivent correspondre à l’usage et aux contraintes."
+    }
+   ],
+   "id": "REV-TE-3E-03"
+  },
+  {
+   "axe": "Les objets et les systèmes techniques : leurs usages et leurs interactions à découvrir et à analyser",
+   "titre": "Données et identité numérique",
+   "emoji": "🔒",
+   "en_une_phrase": "Les objets communicants peuvent collecter des données et laisser des traces numériques.",
+   "comprendre": "Un appareil connecté peut mémoriser des informations sur son fonctionnement ou sur son utilisateur. Ces données peuvent être partagées avec des services selon les réglages. Les identifier aide à comprendre les enjeux de vie privée et de sécurité.",
+   "essentiel": [
+    "Une donnée personnelle peut identifier directement ou indirectement une personne.",
+    "La géolocalisation peut révéler des déplacements.",
+    "Les autorisations et les droits d’accès influencent le partage."
+   ],
+   "image_mentale": "Imagine une carte et des traces laissées lors de plusieurs trajets.",
+   "regle_ou_methode": "Repère les données collectées, leur destinataire et les réglages disponibles.",
+   "exemples": [
+    "Un objet enregistre des positions associées à un compte. Ces positions peuvent révéler des trajets. Limiter l’accès à la localisation lorsqu’elle n’est pas nécessaire réduit ce partage.",
+    "Une image trouvée en ligne peut être protégée par des droits : ses conditions de réutilisation doivent être vérifiées."
+   ],
+   "piege": "Une donnée visible par plusieurs personnes ne devient pas forcément libre de toute réutilisation.",
+   "astuce_memoire": "Quelles données, pour qui, pour quel usage ?",
+   "quiz": [
+    {
+     "q": "Quelle donnée peut révéler les déplacements d’une personne ?",
+     "choix": [
+      "Le nombre de jours dans une semaine",
+      "Un historique de positions associé à son compte",
+      "Une unité de longueur"
+     ],
+     "rep": "Un historique de positions associé à son compte",
+     "expl": "Des positions associées peuvent révéler un trajet."
+    },
+    {
+     "q": "Une image visible en ligne est-elle toujours libre de réutilisation ?",
+     "choix": [
+      "Oui",
+      "Oui, si elle est en couleur",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Les droits et conditions de réutilisation doivent être vérifiés."
+    },
+    {
+     "q": "Quel réglage peut limiter la collecte d’une position ?",
+     "choix": [
+      "Refuser l’accès à la localisation lorsqu’il est facultatif",
+      "Augmenter le volume sonore",
+      "Changer le fond d’écran"
+     ],
+     "rep": "Refuser l’accès à la localisation lorsqu’il est facultatif",
+     "expl": "L’autorisation contrôle l’accès à la localisation."
+    }
+   ],
+   "id": "REV-TE-3E-04"
+  },
+  {
+   "axe": "Structure, fonctionnement, comportement : des objets et des systèmes techniques à comprendre",
+   "titre": "Chaîne d’information",
+   "emoji": "🌡️",
+   "en_une_phrase": "La chaîne d’information acquiert des données, les traite et communique un résultat ou une commande.",
+   "comprendre": "Un objet automatique doit obtenir des informations sur son environnement. Un capteur acquiert une donnée, puis un programme peut la traiter. Le système peut ensuite afficher un résultat ou commander une action.",
+   "essentiel": [
+    "Un capteur acquiert une grandeur ou détecte un événement.",
+    "Un microcontrôleur peut traiter les données selon un programme.",
+    "Une interface peut afficher un résultat ou recevoir une commande humaine."
+   ],
+   "image_mentale": "Imagine une ligne reliant capteur, traitement et sortie.",
+   "regle_ou_methode": "Pour une fonction donnée, associe chaque constituant à son rôle.",
+   "exemples": [
+    "Un système de ventilation mesure la température. Le capteur transmet une valeur au programme. Si le seuil fixé est dépassé, le programme peut commander le ventilateur.",
+    "Un écran affiche la température mesurée : il communique une information à l’utilisateur."
+   ],
+   "piege": "Le capteur acquiert une donnée ; le moteur réalise une action physique.",
+   "astuce_memoire": "Acquérir, traiter, communiquer ou commander.",
+   "quiz": [
+    {
+     "q": "Quel élément acquiert la température ?",
+     "choix": [
+      "Une roue dentée",
+      "Une vis de fixation",
+      "Un capteur de température"
+     ],
+     "rep": "Un capteur de température",
+     "expl": "Le capteur fournit une donnée liée à la température."
+    },
+    {
+     "q": "Quel constituant peut exécuter un programme ?",
+     "choix": [
+      "Un microcontrôleur",
+      "Une simple poignée",
+      "Un axe mécanique seul"
+     ],
+     "rep": "Un microcontrôleur",
+     "expl": "Le microcontrôleur peut traiter des données."
+    },
+    {
+     "q": "Dans le système décrit, quel composant peut afficher la température ?",
+     "choix": [
+      "Un ressort seul",
+      "Un écran",
+      "Une chaîne de vélo seule"
+     ],
+     "rep": "Un écran",
+     "expl": "L’écran communique une information à l’utilisateur."
+    }
+   ],
+   "id": "REV-TE-3E-05"
+  },
+  {
+   "axe": "Structure, fonctionnement, comportement : des objets et des systèmes techniques à comprendre",
+   "titre": "Chaîne d’énergie",
+   "emoji": "⚙️",
+   "en_une_phrase": "La chaîne d’énergie décrit les composants qui alimentent et produisent l’action d’un système.",
+   "comprendre": "Une porte motorisée a besoin d’énergie pour bouger. Une alimentation fournit l’énergie et des composants la distribuent ou la convertissent. Un mécanisme transmet ensuite le mouvement.",
+   "essentiel": [
+    "Une batterie peut fournir de l’énergie électrique.",
+    "Un moteur convertit l’énergie électrique en énergie mécanique et transfère aussi de la chaleur.",
+    "Un mécanisme peut transmettre ou transformer le mouvement."
+   ],
+   "image_mentale": "Imagine batterie, interrupteur, moteur et mécanisme reliés par des flèches.",
+   "regle_ou_methode": "Identifie l’entrée d’énergie, les constituants et l’action obtenue.",
+   "exemples": [
+    "Une porte motorisée reçoit de l’énergie électrique. Le moteur la convertit notamment en mouvement. Un mécanisme transmet le mouvement à la porte.",
+    "Deux roues dentées extérieures en contact tournent en sens opposés."
+   ],
+   "piege": "La chaîne d’information peut commander l’action mais ne remplace pas l’alimentation en énergie.",
+   "astuce_memoire": "Alimenter, distribuer, convertir, transmettre.",
+   "quiz": [
+    {
+     "q": "Quel constituant convertit de l’énergie électrique en mouvement ?",
+     "choix": [
+      "Un moteur électrique",
+      "Un panneau de texte seul",
+      "Une vis immobile seule"
+     ],
+     "rep": "Un moteur électrique",
+     "expl": "Le moteur produit notamment un mouvement."
+    },
+    {
+     "q": "Deux roues dentées extérieures en contact tournent dans quels sens ?",
+     "choix": [
+      "Toujours dans le même sens",
+      "En sens opposés",
+      "Sans mouvement possible"
+     ],
+     "rep": "En sens opposés",
+     "expl": "Leurs dents en contact imposent des sens opposés."
+    },
+    {
+     "q": "Une commande suffit-elle seule à faire fonctionner un moteur sans source d’énergie ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, si elle est affichée",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Le moteur a aussi besoin d’une alimentation en énergie."
+    }
+   ],
+   "id": "REV-TE-3E-06"
+  },
+  {
+   "axe": "Structure, fonctionnement, comportement : des objets et des systèmes techniques à comprendre",
+   "titre": "Bits et données",
+   "emoji": "🔢",
+   "en_une_phrase": "Un bit représente une information par l’un des deux symboles 0 et 1.",
+   "comprendre": "Un interrupteur peut avoir deux états. Un bit utilise lui aussi deux valeurs possibles. Des suites de bits permettent de représenter des nombres, des textes ou d’autres données selon un codage.",
+   "essentiel": [
+    "Un bit peut valoir 0 ou 1.",
+    "Un octet contient 8 bits.",
+    "La signification d’une suite dépend de son codage."
+   ],
+   "image_mentale": "Imagine une rangée de cases pouvant chacune afficher 0 ou 1.",
+   "regle_ou_methode": "Compte les bits et utilise la convention de codage donnée pour interpréter la suite.",
+   "exemples": [
+    "Une suite contient 8 bits. Huit bits forment un octet. La suite occupe donc un octet dans cette représentation.",
+    "Une suite de deux bits peut prendre quatre valeurs : 00, 01, 10 et 11."
+   ],
+   "piege": "La suite de bits n’a pas une signification unique sans connaître le codage.",
+   "astuce_memoire": "Bit : 0 ou 1 ; octet : 8 bits.",
+   "quiz": [
+    {
+     "q": "Combien de bits contient un octet ?",
+     "choix": [
+      "2",
+      "8",
+      "10"
+     ],
+     "rep": "8",
+     "expl": "Un octet correspond à 8 bits."
+    },
+    {
+     "q": "Combien de suites différentes de deux bits existe-t-il ?",
+     "choix": [
+      "2",
+      "8",
+      "4"
+     ],
+     "rep": "4",
+     "expl": "Les possibilités sont 00, 01, 10 et 11."
+    },
+    {
+     "q": "Peut-on interpréter une suite de bits sans aucune convention de codage ?",
+     "choix": [
+      "Pas de manière unique",
+      "Oui, toujours",
+      "Oui, si elle contient un zéro"
+     ],
+     "rep": "Pas de manière unique",
+     "expl": "Sa signification dépend du codage utilisé."
+    }
+   ],
+   "id": "REV-TE-3E-07"
+  },
+  {
+   "axe": "Structure, fonctionnement, comportement : des objets et des systèmes techniques à comprendre",
+   "titre": "Circulation dans un réseau",
+   "emoji": "🌐",
+   "en_une_phrase": "Les données circulent entre des équipements identifiés et reliés par des réseaux.",
+   "comprendre": "Un message envoyé depuis un ordinateur peut traverser plusieurs équipements. Les adresses permettent d’identifier des interfaces et les routeurs relient des réseaux. Les données suivent des règles de communication communes.",
+   "essentiel": [
+    "Un réseau local relie des équipements proches.",
+    "Une adresse IP identifie une interface dans un réseau.",
+    "Un routeur transmet des données entre réseaux."
+   ],
+   "image_mentale": "Imagine des rues et des carrefours reliant des adresses situées dans plusieurs quartiers.",
+   "regle_ou_methode": "Repère le terminal de départ, la destination, les liaisons et les équipements traversés.",
+   "exemples": [
+    "Un ordinateur envoie une donnée vers un serveur situé sur un autre réseau. Il utilise sa connexion locale pour atteindre un routeur. Le routeur transmet ensuite la donnée vers un réseau approprié.",
+    "Un commutateur peut relier plusieurs équipements à l’intérieur d’un réseau local filaire."
+   ],
+   "piege": "Un réseau local et Internet ne désignent pas la même échelle de réseau.",
+   "astuce_memoire": "Terminal, liaison, routeur, réseau destinataire.",
+   "quiz": [
+    {
+     "q": "Quel équipement relie des réseaux différents ?",
+     "choix": [
+      "Un simple trombone",
+      "Une règle graduée",
+      "Un routeur"
+     ],
+     "rep": "Un routeur",
+     "expl": "Un routeur transmet des données entre réseaux."
+    },
+    {
+     "q": "Quel est le rôle d’une adresse IP ?",
+     "choix": [
+      "Identifier une interface réseau dans son contexte",
+      "Indiquer la température d’un moteur",
+      "Mesurer la masse d’un câble"
+     ],
+     "rep": "Identifier une interface réseau dans son contexte",
+     "expl": "Une adresse IP permet d’identifier une interface pour communiquer."
+    },
+    {
+     "q": "Quel équipement peut relier plusieurs terminaux dans un réseau local filaire ?",
+     "choix": [
+      "Une balance",
+      "Un commutateur",
+      "Un thermomètre"
+     ],
+     "rep": "Un commutateur",
+     "expl": "Un commutateur relie des équipements du réseau local."
+    }
+   ],
+   "id": "REV-TE-3E-08"
+  },
+  {
+   "axe": "Structure, fonctionnement, comportement : des objets et des systèmes techniques à comprendre",
+   "titre": "Diagnostiquer un dysfonctionnement",
+   "emoji": "🛠️",
+   "en_une_phrase": "Le dépannage consiste à vérifier des hypothèses pour identifier l’origine d’un problème.",
+   "comprendre": "Un même symptôme peut avoir plusieurs causes. Un test ciblé permet d’écarter certaines hypothèses avant de remplacer une pièce. Après intervention, le fonctionnement est vérifié de nouveau.",
+   "essentiel": [
+    "Observe et décris le symptôme.",
+    "Teste les causes possibles une par une quand c’est pertinent.",
+    "Interviens en respectant les règles de sécurité puis vérifie le résultat."
+   ],
+   "image_mentale": "Imagine un arbre de décisions partant d’un symptôme.",
+   "regle_ou_methode": "Formule des hypothèses, choisis un test, interprète le résultat puis valide la réparation.",
+   "exemples": [
+    "Un objet à piles ne s’allume pas. On vérifie d’abord l’alimentation et le sens des piles selon la notice. Après correction éventuelle, on teste à nouveau l’objet.",
+    "Si une connexion filaire ne fonctionne pas, on peut d’abord vérifier l’état et le branchement du câble."
+   ],
+   "piege": "Remplacer une pièce au hasard ne prouve pas que l’on a identifié la cause.",
+   "astuce_memoire": "Observer, tester, intervenir, vérifier.",
+   "quiz": [
+    {
+     "q": "Quel premier contrôle peut aider si un objet à piles ne s’allume pas ?",
+     "choix": [
+      "Vérifier l’alimentation et les piles",
+      "Remplacer sans examen tous les composants",
+      "Changer le nom de l’objet"
+     ],
+     "rep": "Vérifier l’alimentation et les piles",
+     "expl": "Une alimentation défaillante peut expliquer le symptôme."
+    },
+    {
+     "q": "Pourquoi effectuer un test ciblé ?",
+     "choix": [
+      "Pour éviter toute observation",
+      "Pour départager des hypothèses",
+      "Pour garantir que toutes les causes sont identiques"
+     ],
+     "rep": "Pour départager des hypothèses",
+     "expl": "Un test permet d’évaluer une hypothèse."
+    },
+    {
+     "q": "Que faut-il faire après une réparation ?",
+     "choix": [
+      "Supposer que toute panne est impossible",
+      "Cacher le résultat du test",
+      "Vérifier le fonctionnement"
+     ],
+     "rep": "Vérifier le fonctionnement",
+     "expl": "Le contrôle vérifie si le problème a été résolu."
+    }
+   ],
+   "id": "REV-TE-3E-09"
+  },
+  {
+   "axe": "Création, conception, réalisation, innovations : des objets à concevoir et à réaliser",
+   "titre": "Du besoin à la solution",
+   "emoji": "📋",
+   "en_une_phrase": "Un projet technique transforme un besoin en exigences puis en solutions vérifiables.",
+   "comprendre": "Avant de fabriquer un objet, il faut comprendre à quoi il servira et pour qui. Le cahier des charges traduit ce besoin en exigences. Une équipe peut ensuite proposer et comparer plusieurs solutions.",
+   "essentiel": [
+    "Un besoin décrit un service attendu.",
+    "Une exigence fixe une condition à respecter.",
+    "Un critère mesurable permet de vérifier une exigence."
+   ],
+   "image_mentale": "Imagine un chemin : besoin, exigences, idées, prototype, tests.",
+   "regle_ou_methode": "Formule le besoin, précise les critères puis compare des solutions capables d’y répondre.",
+   "exemples": [
+    "Une équipe veut transporter un livre sous la pluie. Le besoin est de protéger le livre pendant le trajet. Une exigence vérifiable est que le contenu reste sec lors du test défini.",
+    "Pour un support devant tenir dans un espace de 20 cm, une largeur maximale de 20 cm est un critère mesurable."
+   ],
+   "piege": "Une solution imaginée ne prouve pas encore que toutes les exigences seront respectées.",
+   "astuce_memoire": "Besoin, exigences, solutions, tests.",
+   "quiz": [
+    {
+     "q": "Quel besoin concerne un sac destiné à un livre sous la pluie ?",
+     "choix": [
+      "Produire une musique",
+      "Protéger le livre pendant le trajet",
+      "Mesurer la température du Soleil"
+     ],
+     "rep": "Protéger le livre pendant le trajet",
+     "expl": "Le sac doit notamment protéger le livre de l’eau."
+    },
+    {
+     "q": "Quel critère est vérifiable pour un espace de 20 cm de large ?",
+     "choix": [
+      "La préférence secrète du concepteur",
+      "Le nom imaginaire de l’objet",
+      "La largeur de l’objet"
+     ],
+     "rep": "La largeur de l’objet",
+     "expl": "Une mesure de largeur peut être comparée à la limite."
+    },
+    {
+     "q": "Une solution dessinée est-elle automatiquement validée ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, sans connaître les exigences"
+     ],
+     "rep": "Non",
+     "expl": "Elle doit être vérifiée au regard des critères."
+    }
+   ],
+   "id": "REV-TE-3E-10"
+  },
+  {
+   "axe": "Création, conception, réalisation, innovations : des objets à concevoir et à réaliser",
+   "titre": "Choisir une solution",
+   "emoji": "🧱",
+   "en_une_phrase": "Une solution technique se choisit en comparant ses propriétés aux exigences du projet.",
+   "comprendre": "Deux matériaux ou deux sources d’énergie peuvent répondre différemment à un même besoin. Une équipe compare leur résistance, leur disponibilité, leur coût ou leurs impacts. Le choix résulte souvent d’un compromis.",
+   "essentiel": [
+    "Un matériau possède des propriétés mécaniques et thermiques.",
+    "Une source d’énergie doit convenir à l’usage prévu.",
+    "Les choix ont des conséquences techniques et environnementales."
+   ],
+   "image_mentale": "Imagine un tableau comparant deux solutions sur plusieurs critères.",
+   "regle_ou_methode": "Liste les exigences, compare les données disponibles puis justifie le compromis choisi.",
+   "exemples": [
+    "Un support doit rester léger et résister à une charge donnée. L’équipe compare deux matériaux sur leur masse et leur résistance mesurée. Elle retient celui qui satisfait les deux exigences du test.",
+    "Pour un appareil mobile, une batterie peut être choisie selon l’autonomie nécessaire et les contraintes de recharge."
+   ],
+   "piege": "Le matériau le plus léger n’est pas toujours celui qui respecte toutes les exigences.",
+   "astuce_memoire": "Comparer les propriétés avant de choisir.",
+   "quiz": [
+    {
+     "q": "Quel critère aide à choisir un matériau pour un support chargé ?",
+     "choix": [
+      "Uniquement son nom",
+      "La couleur de la salle",
+      "Sa résistance à la charge prévue"
+     ],
+     "rep": "Sa résistance à la charge prévue",
+     "expl": "Le support doit résister à la charge exigée."
+    },
+    {
+     "q": "Pourquoi parler de compromis ?",
+     "choix": [
+      "Plusieurs critères peuvent conduire à des choix différents",
+      "Une seule propriété décide toujours de tout",
+      "Tous les matériaux sont identiques"
+     ],
+     "rep": "Plusieurs critères peuvent conduire à des choix différents",
+     "expl": "Le choix doit tenir compte de critères parfois concurrents."
+    },
+    {
+     "q": "Quelle donnée aide à choisir une batterie pour un appareil mobile ?",
+     "choix": [
+      "La date de fabrication d’une feuille de dessin",
+      "L’autonomie nécessaire",
+      "Le nombre de chaises dans la pièce"
+     ],
+     "rep": "L’autonomie nécessaire",
+     "expl": "L’autonomie doit convenir à l’usage de l’appareil."
+    }
+   ],
+   "id": "REV-TE-3E-11"
+  },
+  {
+   "axe": "Création, conception, réalisation, innovations : des objets à concevoir et à réaliser",
+   "titre": "Prototyper et tester",
+   "emoji": "🧪",
+   "en_une_phrase": "Un prototype et un protocole de test permettent de vérifier si une solution respecte ses exigences.",
+   "comprendre": "Un dessin peut être clair sans prouver que l’objet fonctionne. Un prototype permet d’essayer une solution dans des conditions définies. Les résultats sont comparés aux critères pour décider des corrections nécessaires.",
+   "essentiel": [
+    "Un prototype est une réalisation destinée aux essais.",
+    "Un protocole précise les conditions et les mesures.",
+    "La validation compare les résultats aux exigences."
+   ],
+   "image_mentale": "Imagine un prototype sur une table, une règle et une fiche de résultats.",
+   "regle_ou_methode": "Définis le test, mesure la grandeur pertinente puis compare au critère.",
+   "exemples": [
+    "Un boîtier doit mesurer au maximum 20 cm de large. Une mesure donne 19,5 cm. Comme 19,5 est inférieur à 20, ce critère est respecté.",
+    "Si le boîtier mesure 21 cm, l’exigence de largeur maximale n’est pas respectée."
+   ],
+   "piege": "Valider un critère ne prouve pas que tous les autres le sont.",
+   "astuce_memoire": "Essai, mesure, comparaison, amélioration.",
+   "quiz": [
+    {
+     "q": "Largeur maximale : 20 cm. Une mesure de 19,5 cm respecte-t-elle ce critère ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement si le boîtier est bleu"
+     ],
+     "rep": "Oui",
+     "expl": "19,5 cm est inférieur à 20 cm."
+    },
+    {
+     "q": "Quel instrument permet de mesurer la largeur d’un petit boîtier ?",
+     "choix": [
+      "Un ampèremètre",
+      "Une règle graduée",
+      "Un thermomètre"
+     ],
+     "rep": "Une règle graduée",
+     "expl": "La règle mesure une longueur."
+    },
+    {
+     "q": "Si un critère est satisfait, les autres le sont-ils automatiquement ?",
+     "choix": [
+      "Oui",
+      "Oui, si la mesure est en centimètres",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Chaque exigence nécessite une vérification adaptée."
+    }
+   ],
+   "id": "REV-TE-3E-12"
+  },
+  {
+   "axe": "Création, conception, réalisation, innovations : des objets à concevoir et à réaliser",
+   "titre": "Programmer et valider",
+   "emoji": "💻",
+   "en_une_phrase": "Un programme transforme des entrées en sorties selon des instructions que l’on peut tester.",
+   "comprendre": "Un système automatique réagit à des données fournies par des capteurs ou par l’utilisateur. L’algorithme décrit les étapes à suivre. Des essais sur plusieurs cas permettent de vérifier si le programme répond à la fonction demandée.",
+   "essentiel": [
+    "Une entrée peut être une mesure ou une commande.",
+    "Une condition choisit une action selon un test.",
+    "Tester les valeurs autour d’un seuil aide à repérer des erreurs."
+   ],
+   "image_mentale": "Imagine une entrée, un aiguillage de décision et une sortie.",
+   "regle_ou_methode": "Identifie les entrées et les sorties, écris les règles puis teste des valeurs adaptées.",
+   "exemples": [
+    "Une lampe s’allume si une mesure est strictement inférieure à 10. Avec une mesure de 9, le test est vrai. La lampe s’allume selon cette règle.",
+    "Avec une mesure de 10, le test « strictement inférieur à 10 » est faux : cette règle ne commande pas l’allumage."
+   ],
+   "piege": "Ne confonds pas inférieur strictement à 10 et inférieur ou égal à 10.",
+   "astuce_memoire": "Entrées, condition, sortie, tests au seuil.",
+   "quiz": [
+    {
+     "q": "La lampe s’allume si la mesure est strictement inférieure à 10. Que se passe-t-il pour 9 ?",
+     "choix": [
+      "Le test est faux",
+      "Le test est vrai",
+      "La mesure devient automatiquement 10"
+     ],
+     "rep": "Le test est vrai",
+     "expl": "9 est strictement inférieur à 10."
+    },
+    {
+     "q": "Que vaut le test « mesure < 10 » pour 10 ?",
+     "choix": [
+      "Vrai",
+      "Impossible à déterminer",
+      "Faux"
+     ],
+     "rep": "Faux",
+     "expl": "10 n’est pas strictement inférieur à 10."
+    },
+    {
+     "q": "Pourquoi tester 9, 10 et 11 autour du seuil 10 ?",
+     "choix": [
+      "Pour vérifier le comportement de part et d’autre et au seuil",
+      "Pour éviter toute comparaison",
+      "Pour garantir tous les comportements possibles sans autre test"
+     ],
+     "rep": "Pour vérifier le comportement de part et d’autre et au seuil",
+     "expl": "Ces valeurs aident à repérer une erreur de condition au voisinage du seuil."
+    }
+   ],
+   "id": "REV-TE-3E-13"
+  }
+ ]
+}

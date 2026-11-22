@@ -1,0 +1,2504 @@
+{
+ "classe": "1RE",
+ "niveau_appli": "Lycée",
+ "age": "16-17 ans",
+ "matiere": "SVT (spécialité)",
+ "code": "SVT",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Cycle cellulaire",
+   "emoji": "🔄",
+   "en_une_phrase": "Le cycle cellulaire prépare la copie de l’ADN puis répartit les chromosomes lors d’une division.",
+   "comprendre": "Comme avant de partager un jeu, une cellule doit préparer son matériel. Chez les eucaryotes, l’ADN est répliqué pendant la phase S de l’interphase. La mitose répartit ensuite les chromatides entre deux cellules filles.",
+   "essentiel": [
+    "L’interphase comprend les phases G1, S et G2.",
+    "Pendant S, la quantité d’ADN est doublée.",
+    "La mitose répartit les chromatides des chromosomes dupliqués.",
+    "Le nombre de chromosomes ne double pas pendant la réplication."
+   ],
+   "image_mentale": "Imagine une frise G1, S, G2 puis division.",
+   "regle_ou_methode": "Repère la phase, la quantité d’ADN et l’état des chromosomes.",
+   "exemples": [
+    "Une cellule fictive commence en G1 avec 2 unités d’ADN. Pendant S, l’ADN est copié : la quantité passe à 4 unités. Après une division mitotique complète, chaque cellule fille possède 2 unités.",
+    "Un chromosome à deux chromatides reste compté comme un seul chromosome avant leur séparation."
+   ],
+   "piege": "Quantité d’ADN et nombre de chromosomes ne varient pas forcément de la même façon.",
+   "astuce_memoire": "S : synthèse d’ADN ; mitose : partage.",
+   "quiz": [
+    {
+     "q": "Pendant quelle phase la réplication de l’ADN a-t-elle lieu ?",
+     "choix": [
+      "G1",
+      "S",
+      "Mitose uniquement"
+     ],
+     "rep": "S",
+     "expl": "La phase S correspond à la synthèse d’ADN."
+    },
+    {
+     "q": "Une cellule possède 2 unités d’ADN en G1. Combien en possède-t-elle après la phase S ?",
+     "choix": [
+      "2",
+      "1",
+      "4"
+     ],
+     "rep": "4",
+     "expl": "La réplication double la quantité d’ADN."
+    },
+    {
+     "q": "Un chromosome à deux chromatides est-il compté comme deux chromosomes avant leur séparation ?",
+     "choix": [
+      "Non, c’est un chromosome",
+      "Oui, ce sont deux chromosomes distincts",
+      "Oui, mais seulement en G1"
+     ],
+     "rep": "Non, c’est un chromosome",
+     "expl": "Les deux chromatides constituent un chromosome dupliqué."
+    }
+   ],
+   "id": "REV-SVT-1RE-01"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Mitose et conservation",
+   "emoji": "🧬",
+   "en_une_phrase": "La mitose répartit les chromatides et conserve normalement le nombre de chromosomes dans les cellules filles.",
+   "comprendre": "Avant une division, chaque chromosome est copié. Les chromatides sœurs sont ensuite séparées et réparties. Chaque cellule fille reçoit normalement un exemplaire de chaque chromosome de la cellule mère.",
+   "essentiel": [
+    "La mitose est une division conforme dans le modèle étudié.",
+    "Le fuseau contribue à déplacer les chromosomes puis les chromatides.",
+    "Les chromatides sœurs se séparent au cours de la mitose.",
+    "Sans erreur ni mutation nouvelle, les cellules filles conservent l’information génétique.",
+    "Un clone cellulaire est un ensemble de cellules issues d’une même cellule par mitoses."
+   ],
+   "image_mentale": "Imagine deux lots identiques de chromatides tirés vers deux pôles.",
+   "regle_ou_methode": "Repère les chromosomes avant la division, puis suis la séparation des chromatides.",
+   "exemples": [
+    "Une cellule diploïde possède 2n = 4 chromosomes. Après réplication, ses 4 chromosomes ont chacun deux chromatides. Après mitose et séparation cellulaire, chacune des deux cellules filles possède normalement 4 chromosomes.",
+    "Une cellule humaine somatique à 46 chromosomes produit par mitose deux cellules ayant normalement 46 chromosomes chacune."
+   ],
+   "piege": "La mitose ne donne pas habituellement deux cellules avec la moitié des chromosomes.",
+   "astuce_memoire": "Deux cellules filles, même nombre de chromosomes.",
+   "quiz": [
+    {
+     "q": "Une cellule à 2n = 4 chromosomes se divise normalement par mitose. Combien de chromosomes possède chaque cellule fille ?",
+     "choix": [
+      "2",
+      "8",
+      "4"
+     ],
+     "rep": "4",
+     "expl": "La mitose conserve le nombre de chromosomes."
+    },
+    {
+     "q": "Que sépare la mitose lors de la répartition chromosomique ?",
+     "choix": [
+      "Les chromatides sœurs",
+      "Uniquement les paires de chromosomes homologues",
+      "Les nucléotides de chaque brin"
+     ],
+     "rep": "Les chromatides sœurs",
+     "expl": "Les chromatides sœurs sont réparties vers les deux pôles."
+    },
+    {
+     "q": "Une cellule humaine somatique à 46 chromosomes produit normalement combien de cellules filles à 46 chromosomes ?",
+     "choix": [
+      "Quatre",
+      "Deux",
+      "Une seule"
+     ],
+     "rep": "Deux",
+     "expl": "La mitose suivie de la division cellulaire forme deux cellules filles."
+    }
+   ],
+   "id": "REV-SVT-1RE-02"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Méiose et haploïdie",
+   "emoji": "🧫",
+   "en_une_phrase": "La méiose conduit de manière générale à quatre cellules haploïdes à partir d’une cellule diploïde.",
+   "comprendre": "Tu sais qu’une cellule diploïde possède deux exemplaires de chaque type de chromosome. La méiose comporte deux divisions successives après une seule réplication. Elle réduit de moitié le nombre de chromosomes dans les cellules obtenues.",
+   "essentiel": [
+    "Une cellule diploïde possède deux jeux de chromosomes.",
+    "Une cellule haploïde possède un jeu de chromosomes.",
+    "La première division sépare les chromosomes homologues.",
+    "La seconde division sépare les chromatides sœurs."
+   ],
+   "image_mentale": "Imagine deux paires de chromosomes réparties en deux divisions successives.",
+   "regle_ou_methode": "Repère 2n au départ, puis n après la première division et dans les cellules obtenues.",
+   "exemples": [
+    "Une cellule à 2n = 4 chromosomes réplique son ADN puis commence la méiose. Après deux divisions normales, elle produit quatre cellules haploïdes possédant chacune n = 2 chromosomes.",
+    "Chez l’être humain, les cellules issues de la méiose possèdent normalement 23 chromosomes chacune."
+   ],
+   "piege": "Ne confonds pas méiose et mitose : elles ne produisent pas le même nombre de cellules ni le même nombre de jeux chromosomiques.",
+   "astuce_memoire": "Deux divisions pour passer de 2n à n.",
+   "quiz": [
+    {
+     "q": "Une cellule à 2n = 4 produit par méiose normale combien de cellules ?",
+     "choix": [
+      "Quatre",
+      "Deux",
+      "Huit"
+     ],
+     "rep": "Quatre",
+     "expl": "La méiose comporte deux divisions successives."
+    },
+    {
+     "q": "Combien de chromosomes possède chaque cellule issue de cette méiose ?",
+     "choix": [
+      "4",
+      "2",
+      "8"
+     ],
+     "rep": "2",
+     "expl": "Chaque cellule haploïde possède n = 2 chromosomes."
+    },
+    {
+     "q": "Que sépare principalement la première division de méiose ?",
+     "choix": [
+      "Les chromatides sœurs",
+      "Les nucléotides de chaque brin",
+      "Les chromosomes homologues"
+     ],
+     "rep": "Les chromosomes homologues",
+     "expl": "Les chromosomes de chaque paire homologue se séparent lors de la première division."
+    }
+   ],
+   "id": "REV-SVT-1RE-03"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Réplication de l’ADN",
+   "emoji": "🧬",
+   "en_une_phrase": "La réplication semi-conservative produit deux molécules d’ADN comportant chacune un brin ancien et un brin nouveau.",
+   "comprendre": "Tu peux copier une phrase en suivant des règles d’association. Lors de la réplication, les deux brins d’ADN servent chacun de modèle. L’ADN polymérase participe à la formation des nouveaux brins complémentaires.",
+   "essentiel": [
+    "Dans l’ADN, A s’apparie avec T et C avec G.",
+    "La réplication a lieu pendant la phase S.",
+    "Chaque molécule obtenue possède un brin ancien et un brin nouveau.",
+    "Des erreurs rares peuvent subsister malgré les mécanismes de correction."
+   ],
+   "image_mentale": "Imagine une fermeture éclair ouverte dont chaque côté sert de modèle pour un nouveau côté.",
+   "regle_ou_methode": "Sépare mentalement les deux brins puis construis chaque brin complémentaire.",
+   "exemples": [
+    "Pour le brin d’ADN 5′-A C G T-3′, les bases complémentaires sont T G C A, orientées 3′-T G C A-5′. Lors de la réplication, chaque ancien brin sert de modèle à un nouveau brin.",
+    "Une molécule initiale donne, après un cycle de réplication, deux molécules contenant chacune un ancien brin."
+   ],
+   "piege": "Semi-conservative ne signifie pas qu’une molécule fille garde les deux anciens brins.",
+   "astuce_memoire": "Un ancien brin et un nouveau dans chaque copie.",
+   "quiz": [
+    {
+     "q": "Que signifie réplication semi-conservative ?",
+     "choix": [
+      "Une molécule garde les deux anciens brins",
+      "Chaque molécule fille possède un ancien brin et un nouveau",
+      "Les deux molécules filles sont formées uniquement d’anciens brins"
+     ],
+     "rep": "Chaque molécule fille possède un ancien brin et un nouveau",
+     "expl": "Chaque ancien brin sert de matrice à un nouveau brin."
+    },
+    {
+     "q": "Quelle base s’apparie avec C dans l’ADN ?",
+     "choix": [
+      "A",
+      "T",
+      "G"
+     ],
+     "rep": "G",
+     "expl": "C et G sont complémentaires."
+    },
+    {
+     "q": "Quelle enzyme participe à la synthèse des nouveaux brins ?",
+     "choix": [
+      "L’ADN polymérase",
+      "La chlorophylle",
+      "L’hémoglobine"
+     ],
+     "rep": "L’ADN polymérase",
+     "expl": "L’ADN polymérase participe à la réplication."
+    }
+   ],
+   "id": "REV-SVT-1RE-04"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "PCR et copies d’ADN",
+   "emoji": "🔬",
+   "en_une_phrase": "Une amplification par PCR multiplie un fragment d’ADN ciblé au cours de cycles répétés.",
+   "comprendre": "Pour étudier une très petite quantité d’ADN, il peut être utile d’en obtenir davantage de copies. La PCR enchaîne des étapes qui séparent les brins, permettent aux amorces de se fixer puis allongent les nouveaux brins. Dans un modèle idéal, la quantité ciblée double à chaque cycle.",
+   "essentiel": [
+    "La PCR amplifie un fragment ciblé d’ADN.",
+    "Chaque cycle comprend notamment une séparation des brins, une fixation des amorces et une synthèse.",
+    "Dans le modèle idéal, N cycles multiplient le nombre de copies par 2ᴺ.",
+    "En pratique, l’efficacité peut s’écarter du modèle idéal."
+   ],
+   "image_mentale": "Imagine une photocopie dont chaque copie sert à son tour de modèle.",
+   "regle_ou_methode": "Pars du nombre initial de copies et double-le à chaque cycle dans le modèle idéal.",
+   "exemples": [
+    "Avec une copie initiale et un modèle idéal, le premier cycle donne 2 copies, le deuxième 4 et le troisième 8. On retrouve 1 × 2³ = 8 copies.",
+    "Avec 5 copies initiales, deux cycles idéaux donnent 5 × 2² = 20 copies."
+   ],
+   "piege": "Le doublement exact à chaque cycle est une hypothèse simplificatrice.",
+   "astuce_memoire": "Après N cycles idéaux : copies initiales multipliées par 2ᴺ.",
+   "quiz": [
+    {
+     "q": "Dans le modèle idéal, combien de copies obtient-on après 3 cycles à partir d’une copie ?",
+     "choix": [
+      "6",
+      "16",
+      "8"
+     ],
+     "rep": "8",
+     "expl": "La quantité double trois fois : 2³ = 8."
+    },
+    {
+     "q": "À partir de 5 copies, combien obtient-on après 2 cycles idéaux ?",
+     "choix": [
+      "20",
+      "10",
+      "25"
+     ],
+     "rep": "20",
+     "expl": "On calcule 5 × 2² = 20."
+    },
+    {
+     "q": "La PCR double-t-elle toujours exactement la quantité ciblée à chaque cycle réel ?",
+     "choix": [
+      "Oui, quelle que soit l’expérience",
+      "Non",
+      "Oui, même sans amorces"
+     ],
+     "rep": "Non",
+     "expl": "Le doublement parfait est un modèle idéal."
+    }
+   ],
+   "id": "REV-SVT-1RE-05"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Mutations et allèles",
+   "emoji": "🔤",
+   "en_une_phrase": "Une mutation est une modification durable de la séquence de l’ADN pouvant créer un nouvel allèle.",
+   "comprendre": "Comme une copie de texte peut comporter une lettre changée, l’ADN peut présenter une modification de séquence. Certaines erreurs apparaissent lors de la réplication et peuvent être réparées. Si une modification persiste, elle peut être transmise aux cellules issues de la division.",
+   "essentiel": [
+    "Un allèle est une version d’une séquence d’ADN.",
+    "Une mutation peut notamment modifier un nucléotide.",
+    "Les mutations apparaissent spontanément ou sont favorisées par des agents mutagènes.",
+    "Leurs effets sur le phénotype sont variables."
+   ],
+   "image_mentale": "Imagine deux versions d’un texte qui diffèrent par une lettre.",
+   "regle_ou_methode": "Compare les séquences à la même position et identifie la modification durable.",
+   "exemples": [
+    "Compare une séquence initiale A C G T à une séquence A T G T. À la deuxième position, C est remplacé par T : cette substitution persistante constitue une mutation.",
+    "Une modification de séquence peut n’entraîner aucun changement visible du phénotype."
+   ],
+   "piege": "Une mutation n’est pas obligatoirement nuisible ni visible.",
+   "astuce_memoire": "Comparer les séquences position par position.",
+   "quiz": [
+    {
+     "q": "Quelle base change entre A C G T et A T G T ?",
+     "choix": [
+      "C devient T en deuxième position",
+      "A devient G en première position",
+      "G devient C en troisième position"
+     ],
+     "rep": "C devient T en deuxième position",
+     "expl": "La deuxième position passe de C à T."
+    },
+    {
+     "q": "Une mutation entraîne-t-elle toujours une maladie ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, si elle touche de l’ADN"
+     ],
+     "rep": "Non",
+     "expl": "Les effets des mutations sont variés et peuvent être absents."
+    },
+    {
+     "q": "Quel rôle peuvent jouer les mutations dans la diversité génétique ?",
+     "choix": [
+      "Elles rendent toutes les séquences identiques",
+      "Elles suppriment nécessairement tous les gènes",
+      "Elles peuvent créer de nouveaux allèles"
+     ],
+     "rep": "Elles peuvent créer de nouveaux allèles",
+     "expl": "Une modification de séquence peut produire un nouvel allèle."
+    }
+   ],
+   "id": "REV-SVT-1RE-06"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Mutagènes et réparation",
+   "emoji": "☀️",
+   "en_une_phrase": "Des agents mutagènes augmentent la fréquence des mutations, tandis que des mécanismes cellulaires réparent certaines altérations.",
+   "comprendre": "L’ADN peut être abîmé même lorsqu’il n’est pas en cours de réplication. Certains rayonnements ou certaines substances augmentent la fréquence des altérations. Des mécanismes de réparation peuvent limiter la persistance de ces modifications, sans être infaillibles.",
+   "essentiel": [
+    "Les rayonnements ultraviolets sont des exemples d’agents mutagènes.",
+    "Une altération réparée correctement ne devient pas forcément une mutation persistante.",
+    "Une réparation incorrecte ou absente peut laisser une mutation.",
+    "Une mutation peut aussi survenir spontanément."
+   ],
+   "image_mentale": "Imagine un texte abîmé puis comparé et corrigé, parfois imparfaitement.",
+   "regle_ou_methode": "Distingue l’altération initiale, la réparation éventuelle et la mutation persistante.",
+   "exemples": [
+    "Après exposition à un agent mutagène, une altération apparaît dans l’ADN. Si elle est correctement réparée avant d’être fixée, la séquence initiale est restaurée. Si elle persiste après réplication, une mutation peut être transmise aux cellules filles.",
+    "Les erreurs spontanées de réplication peuvent aussi être corrigées par des mécanismes cellulaires."
+   ],
+   "piege": "Mutagène signifie augmentation de fréquence, pas apparition certaine de la même mutation dans toutes les cellules.",
+   "astuce_memoire": "Altération, réparation possible, persistance éventuelle.",
+   "quiz": [
+    {
+     "q": "Quel est un exemple d’agent mutagène physique ?",
+     "choix": [
+      "La seule lumière rouge faible",
+      "Les rayonnements ultraviolets",
+      "L’eau pure en toute circonstance"
+     ],
+     "rep": "Les rayonnements ultraviolets",
+     "expl": "Les UV peuvent favoriser des altérations de l’ADN."
+    },
+    {
+     "q": "Une altération correctement réparée devient-elle nécessairement une mutation persistante ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, uniquement dans une cellule somatique",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Une réparation correcte restaure la séquence initiale."
+    },
+    {
+     "q": "Un agent mutagène produit-il obligatoirement la même mutation dans toutes les cellules ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, dès que l’exposition commence"
+     ],
+     "rep": "Non",
+     "expl": "Il modifie une probabilité, sans imposer ce résultat à toutes les cellules."
+    }
+   ],
+   "id": "REV-SVT-1RE-07"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Mutation et transmission",
+   "emoji": "🌱",
+   "en_une_phrase": "Le devenir d’une mutation dépend du type de cellule dans lequel elle apparaît.",
+   "comprendre": "Une modification survenue dans une cellule peut être transmise à ses cellules descendantes. Chez les animaux, les cellules somatiques et les cellules de la lignée germinale ne contribuent pas de la même façon à la reproduction. Une mutation germinale peut être transmise à la descendance si elle se retrouve dans un gamète participant à la fécondation.",
+   "essentiel": [
+    "Une cellule somatique appartient aux tissus de l’organisme hors lignée germinale.",
+    "Une mutation somatique peut être transmise aux cellules issues de sa division.",
+    "Une mutation de la lignée germinale est potentiellement héréditaire.",
+    "La transmission à la descendance dépend notamment du gamète impliqué."
+   ],
+   "image_mentale": "Imagine une branche donnant un groupe de cellules du corps et une autre menant à des gamètes.",
+   "regle_ou_methode": "Identifie la cellule touchée puis suis uniquement les cellules qui en descendent.",
+   "exemples": [
+    "Une mutation persistante apparaît dans une cellule de peau. Lors de ses mitoses, elle peut être transmise aux cellules issues de cette cellule ; cela ne signifie pas qu’elle sera transmise aux enfants.",
+    "Une mutation présente dans un gamète peut être transmise à l’enfant si ce gamète participe à la fécondation."
+   ],
+   "piege": "Toutes les mutations présentes dans le corps ne sont pas automatiquement héréditaires.",
+   "astuce_memoire": "Somatique : clone cellulaire ; germinale : transmission possible.",
+   "quiz": [
+    {
+     "q": "Une mutation somatique peut-elle être transmise aux cellules issues de la cellule touchée ?",
+     "choix": [
+      "Non",
+      "Seulement si elle touche toutes les cellules de l’organisme",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Elle peut être transmise aux cellules filles lors des divisions."
+    },
+    {
+     "q": "Une mutation d’une cellule de peau est-elle automatiquement transmise aux enfants ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, dès la prochaine mitose"
+     ],
+     "rep": "Non",
+     "expl": "Les cellules de peau ne constituent pas les gamètes."
+    },
+    {
+     "q": "Quand une mutation présente dans un gamète peut-elle être transmise à un enfant ?",
+     "choix": [
+      "Dès qu’une cellule de peau se divise",
+      "Si ce gamète participe à la fécondation",
+      "Uniquement si tous les gamètes la portent"
+     ],
+     "rep": "Si ce gamète participe à la fécondation",
+     "expl": "La participation du gamète à la fécondation permet sa transmission."
+    }
+   ],
+   "id": "REV-SVT-1RE-08"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Génomes et histoire",
+   "emoji": "🧭",
+   "en_une_phrase": "La comparaison de séquences d’ADN aide à étudier des parentés et l’histoire des populations humaines.",
+   "comprendre": "Deux textes apparentés partagent souvent des passages semblables. De même, des génomes comparés présentent des ressemblances et des différences héritées ou apparues au cours du temps. Des génomes anciens peuvent être étudiés à partir de restes fossiles, avec des précautions.",
+   "essentiel": [
+    "Les génomes humains présentent de nombreuses séquences communes et des variations.",
+    "Comparer des séquences peut éclairer des relations de parenté.",
+    "L’ADN ancien peut être dégradé ou contaminé.",
+    "Certaines populations actuelles portent des segments hérités de populations humaines anciennes.",
+    "La sélection peut modifier la fréquence de certains allèles au fil des générations."
+   ],
+   "image_mentale": "Imagine des séquences alignées, puis une branche reliant certains segments partagés.",
+   "regle_ou_methode": "Compare les séquences homologues, identifie les variations et tiens compte de la qualité des données.",
+   "exemples": [
+    "Deux séquences homologues fictives sont A C G T et A C A T. Compare chaque position : elles diffèrent à la troisième. Cette différence est un indice à examiner parmi d’autres pour étudier leur histoire.",
+    "Des segments apparentés à des séquences néandertaliennes sont présents dans les génomes de certaines populations humaines actuelles.",
+    "Dans certaines populations, des variations associées au maintien de l’activité de la lactase à l’âge adulte ont été favorisées par la sélection."
+   ],
+   "piege": "Une ressemblance isolée ne suffit pas à reconstituer toute une histoire de parenté.",
+   "astuce_memoire": "Comparer plusieurs indices, puis discuter les limites.",
+   "quiz": [
+    {
+     "q": "À quelle position les séquences A C G T et A C A T diffèrent-elles ?",
+     "choix": [
+      "À la troisième",
+      "À la première",
+      "À la quatrième"
+     ],
+     "rep": "À la troisième",
+     "expl": "La troisième base est G dans l’une et A dans l’autre."
+    },
+    {
+     "q": "Pourquoi faut-il contrôler un échantillon d’ADN ancien ?",
+     "choix": [
+      "Il est nécessairement plus long que l’ADN actuel",
+      "Il peut être dégradé ou contaminé",
+      "Il ne contient jamais de séquences comparables"
+     ],
+     "rep": "Il peut être dégradé ou contaminé",
+     "expl": "Dégradation et contamination peuvent modifier l’interprétation."
+    },
+    {
+     "q": "Une seule ressemblance de séquence suffit-elle à reconstituer une histoire complète ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, dès qu’elle porte sur une base",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "L’analyse combine plusieurs indices et contrôle leur qualité."
+    }
+   ],
+   "id": "REV-SVT-1RE-09"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Transcription et ARN",
+   "emoji": "📝",
+   "en_une_phrase": "La transcription copie l’information d’un segment d’ADN sous forme d’ARN complémentaire.",
+   "comprendre": "Une recette peut être recopiée pour être utilisée sans déplacer l’original. Chez les eucaryotes, la transcription produit un ARN à partir d’un brin d’ADN dans le noyau. Certains ARN, dont les ARN messagers, peuvent ensuite être exportés vers le cytoplasme après maturation.",
+   "essentiel": [
+    "L’ARN contient les bases A, U, C et G.",
+    "Lors de la transcription, l’ARN est complémentaire du brin d’ADN utilisé comme matrice.",
+    "Dans l’ARN, U remplace le T présent dans l’ADN.",
+    "Chez les eucaryotes, un pré-ARN messager donne un ARN messager après maturation."
+   ],
+   "image_mentale": "Imagine un livre d’ADN au noyau et une copie d’ARN qui peut sortir.",
+   "regle_ou_methode": "Repère le brin matrice et son orientation, puis applique les complémentarités A-U, T-A, C-G et G-C.",
+   "exemples": [
+    "Si le brin matrice d’ADN est 3′-T A C-5′, associe A à T, U à A et G à C. L’ARN synthétisé est 5′-A U G-3′.",
+    "Pour un brin matrice 3′-C G T-5′, l’ARN complémentaire est 5′-G C A-3′."
+   ],
+   "piege": "Ne remplace pas simplement T par U sur le brin matrice : l’ARN lui est complémentaire.",
+   "astuce_memoire": "ADN matrice vers ARN : complémentarité.",
+   "quiz": [
+    {
+     "q": "Quelle base de l’ARN s’apparie à A sur le brin matrice d’ADN ?",
+     "choix": [
+      "T",
+      "U",
+      "C"
+     ],
+     "rep": "U",
+     "expl": "L’ARN utilise U en face de A."
+    },
+    {
+     "q": "Quel ARN est complémentaire du brin matrice 3′-T A C-5′ ?",
+     "choix": [
+      "5′-U A C-3′",
+      "5′-A T G-3′",
+      "5′-A U G-3′"
+     ],
+     "rep": "5′-A U G-3′",
+     "expl": "La complémentarité donne A, U puis G dans le sens indiqué."
+    },
+    {
+     "q": "Chez les eucaryotes, où a lieu la transcription nucléaire ?",
+     "choix": [
+      "Dans le noyau",
+      "Dans la membrane plasmique uniquement",
+      "Dans les lysosomes"
+     ],
+     "rep": "Dans le noyau",
+     "expl": "La transcription étudiée a lieu dans le noyau."
+    }
+   ],
+   "id": "REV-SVT-1RE-10"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Code génétique et traduction",
+   "emoji": "🧩",
+   "en_une_phrase": "La traduction associe les codons de l’ARN messager à une succession d’acides aminés.",
+   "comprendre": "Une même information peut être écrite avec deux alphabets. Dans la cellule, les codons de l’ARN messager sont lus par le ribosome. Le code génétique relie ces groupes de trois bases à des acides aminés ou à un signal d’arrêt.",
+   "essentiel": [
+    "Un codon est un groupe de trois nucléotides sur l’ARN messager.",
+    "Le ribosome participe à la synthèse de la chaîne d’acides aminés.",
+    "Plusieurs codons peuvent correspondre au même acide aminé.",
+    "Un codon stop signale l’arrêt de la traduction."
+   ],
+   "image_mentale": "Imagine un ruban découpé en groupes de trois lettres et une chaîne qui s’allonge.",
+   "regle_ou_methode": "Lis les codons dans l’ordre et utilise une table du code génétique.",
+   "exemples": [
+    "Pour l’ARN messager 5′-AUG GAA UAA-3′, la table indique AUG : méthionine, GAA : acide glutamique, UAA : stop. La chaîne commence par ces deux acides aminés puis la traduction s’arrête.",
+    "Les codons GAA et GAG correspondent tous deux à l’acide glutamique dans le code génétique standard."
+   ],
+   "piege": "Un codon stop ne correspond pas à un acide aminé ajouté à la chaîne.",
+   "astuce_memoire": "Trois bases : un codon.",
+   "quiz": [
+    {
+     "q": "Combien de nucléotides composent un codon ?",
+     "choix": [
+      "2",
+      "4",
+      "3"
+     ],
+     "rep": "3",
+     "expl": "Un codon est un groupe de trois nucléotides."
+    },
+    {
+     "q": "Quel rôle joue un codon stop ?",
+     "choix": [
+      "Il signale l’arrêt de la traduction",
+      "Il ajoute nécessairement un acide aminé",
+      "Il est un chromosome entier"
+     ],
+     "rep": "Il signale l’arrêt de la traduction",
+     "expl": "Un codon stop indique la fin de la traduction."
+    },
+    {
+     "q": "Si GAA et GAG correspondent tous deux au même acide aminé, que montre cet exemple ?",
+     "choix": [
+      "Chaque codon représente obligatoirement un chromosome",
+      "Plusieurs codons peuvent coder le même acide aminé",
+      "Chaque acide aminé possède forcément un seul codon"
+     ],
+     "rep": "Plusieurs codons peuvent coder le même acide aminé",
+     "expl": "Le code est dit redondant : plusieurs codons peuvent désigner un même acide aminé."
+    }
+   ],
+   "id": "REV-SVT-1RE-11"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Génotype et phénotype",
+   "emoji": "👁️",
+   "en_une_phrase": "Le phénotype dépend du patrimoine génétique, de son expression et des conditions de l’environnement.",
+   "comprendre": "Tu sais que des cellules d’un même organisme peuvent avoir des rôles différents. Elles n’expriment pas toutes les mêmes gènes au même niveau. Les produits des gènes, dont des ARN et des protéines, contribuent aux caractéristiques observées.",
+   "essentiel": [
+    "Le génotype correspond aux allèles considérés chez un individu.",
+    "Le phénotype se décrit notamment aux échelles moléculaire, cellulaire et de l’organisme.",
+    "L’expression des gènes peut varier entre cellules et selon les conditions.",
+    "Une même cellule n’exprime pas nécessairement tous ses gènes de la même manière."
+   ],
+   "image_mentale": "Imagine le même livre ouvert à des pages différentes selon le type cellulaire.",
+   "regle_ou_methode": "Identifie un allèle, ses produits et les caractéristiques observables, puis considère l’environnement.",
+   "exemples": [
+    "Deux cellules d’un même organisme possèdent normalement le même ADN nucléaire. Si elles expriment des gènes différents, elles peuvent produire des protéines différentes et remplir des fonctions distinctes.",
+    "Une variation de l’environnement peut modifier l’expression de certains gènes sans changer la séquence d’ADN."
+   ],
+   "piege": "Avoir un gène ne signifie pas qu’il est exprimé au même niveau dans toutes les cellules.",
+   "astuce_memoire": "Patrimoine, expression, environnement.",
+   "quiz": [
+    {
+     "q": "Deux cellules d’un organisme peuvent-elles exprimer des gènes différents ?",
+     "choix": [
+      "Oui",
+      "Non, elles produisent toujours les mêmes protéines",
+      "Non, si elles ont le même ADN"
+     ],
+     "rep": "Oui",
+     "expl": "L’expression peut varier selon le type cellulaire."
+    },
+    {
+     "q": "À quelles échelles peut-on décrire un phénotype ?",
+     "choix": [
+      "Uniquement à l’œil nu",
+      "Moléculaire, cellulaire et organisme",
+      "Uniquement à l’échelle des planètes"
+     ],
+     "rep": "Moléculaire, cellulaire et organisme",
+     "expl": "Un phénotype se décrit à plusieurs échelles."
+    },
+    {
+     "q": "Une modification de l’expression d’un gène impose-t-elle une modification de sa séquence d’ADN ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, dans toutes les conditions environnementales",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "La régulation de l’expression peut changer sans mutation de l’ADN."
+    }
+   ],
+   "id": "REV-SVT-1RE-12"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Enzyme et catalyse",
+   "emoji": "⚗️",
+   "en_une_phrase": "Une enzyme est une protéine qui accélère une réaction chimique spécifique sans être consommée par le bilan.",
+   "comprendre": "Certaines réactions seraient très lentes dans les conditions de la cellule. Une enzyme les facilite en interagissant avec une ou plusieurs molécules appelées substrats. Elle permet la formation de produits et peut catalyser à nouveau une réaction.",
+   "essentiel": [
+    "Une enzyme est un catalyseur biologique de nature protéique dans le cadre étudié.",
+    "Le substrat est une espèce sur laquelle agit l’enzyme.",
+    "Le produit est une espèce formée par la réaction.",
+    "Une enzyme n’est pas consommée par le bilan de la réaction."
+   ],
+   "image_mentale": "Imagine un atelier où une machine transforme une pièce puis reste disponible.",
+   "regle_ou_methode": "Identifie l’enzyme, le substrat et le produit, puis compare la transformation avec et sans enzyme.",
+   "exemples": [
+    "Une enzyme fictive transforme un substrat S en produit P. Avec l’enzyme, P apparaît plus rapidement ; l’enzyme reste disponible après la réaction.",
+    "Dans certaines cellules, une enzyme accélère la transformation d’un nutriment en produits plus simples."
+   ],
+   "piege": "Une enzyme accélère une réaction : elle ne devient pas systématiquement le produit final.",
+   "astuce_memoire": "Enzyme disponible, substrat transformé.",
+   "quiz": [
+    {
+     "q": "Comment appelle-t-on l’espèce sur laquelle agit une enzyme ?",
+     "choix": [
+      "Le chromosome",
+      "Le substrat",
+      "Le produit obligatoire"
+     ],
+     "rep": "Le substrat",
+     "expl": "Le substrat est transformé lors de la réaction catalysée."
+    },
+    {
+     "q": "Quel effet caractérise une enzyme catalytique ?",
+     "choix": [
+      "Elle est nécessairement consommée par la réaction",
+      "Elle transforme toute matière en ADN",
+      "Elle accélère une réaction"
+     ],
+     "rep": "Elle accélère une réaction",
+     "expl": "Une enzyme catalyse une transformation chimique."
+    },
+    {
+     "q": "Après une réaction catalysée, l’enzyme peut-elle servir à nouveau ?",
+     "choix": [
+      "Oui",
+      "Non, elle est toujours détruite",
+      "Seulement si aucun substrat n’a été transformé"
+     ],
+     "rep": "Oui",
+     "expl": "Elle n’est pas consommée par le bilan de la réaction."
+    }
+   ],
+   "id": "REV-SVT-1RE-13"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Spécificité enzymatique",
+   "emoji": "🔑",
+   "en_une_phrase": "La structure du site actif contribue à la reconnaissance des substrats et à la spécificité d’une enzyme.",
+   "comprendre": "Une clé ne s’adapte pas à toutes les serrures. De même, une enzyme interagit avec certains substrats grâce à la forme et aux propriétés chimiques de son site actif. Elle catalyse une transformation précise parmi les réactions possibles.",
+   "essentiel": [
+    "Le site actif est une région de l’enzyme impliquée dans l’interaction avec le substrat.",
+    "La forme et les propriétés chimiques participent à la spécificité.",
+    "Une enzyme présente une spécificité de substrat et de réaction.",
+    "Des cellules spécialisées peuvent posséder des équipements enzymatiques différents."
+   ],
+   "image_mentale": "Imagine une forme de substrat ajustée à une région de l’enzyme.",
+   "regle_ou_methode": "Identifie l’enzyme, compare les substrats puis observe quel produit est formé.",
+   "exemples": [
+    "Une enzyme fictive est mise séparément en présence des substrats S et T. Si le produit apparaît avec S mais pas avec T dans les conditions testées, les résultats indiquent une spécificité pour S dans cette expérience.",
+    "Deux types cellulaires peuvent produire des enzymes différentes et réaliser des réactions différentes."
+   ],
+   "piege": "L’image de la clé aide à comprendre mais ne décrit pas tous les changements de forme possibles.",
+   "astuce_memoire": "Site actif, substrat, réaction.",
+   "quiz": [
+    {
+     "q": "Quelle région de l’enzyme interagit avec le substrat ?",
+     "choix": [
+      "Le noyau de chaque atome",
+      "Le centromère",
+      "Le site actif"
+     ],
+     "rep": "Le site actif",
+     "expl": "Le site actif participe à la reconnaissance et à la réaction."
+    },
+    {
+     "q": "Si une enzyme catalyse la transformation de S mais pas celle de T dans une expérience, que montrent ces résultats ?",
+     "choix": [
+      "Une spécificité dans les conditions testées",
+      "Une action identique sur tous les substrats",
+      "L’absence de toute enzyme"
+     ],
+     "rep": "Une spécificité dans les conditions testées",
+     "expl": "Le résultat distingue les substrats dans cette expérience."
+    },
+    {
+     "q": "Deux cellules spécialisées ont-elles forcément le même équipement enzymatique ?",
+     "choix": [
+      "Oui, quelle que soit leur fonction",
+      "Non",
+      "Oui, même si elles expriment des gènes différents"
+     ],
+     "rep": "Non",
+     "expl": "L’expression génétique varie selon les types cellulaires."
+    }
+   ],
+   "id": "REV-SVT-1RE-14"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Vitesse initiale enzymatique",
+   "emoji": "⏱️",
+   "en_une_phrase": "La vitesse initiale d’une réaction enzymatique se déduit de la pente de la courbe au début de l’expérience.",
+   "comprendre": "Tu sais mesurer une vitesse en comparant une variation à une durée. En suivant la quantité de produit formée, on peut tracer une courbe. La pente de la tangente au début renseigne sur la vitesse initiale.",
+   "essentiel": [
+    "La vitesse initiale se lit à partir de la tangente au temps initial.",
+    "Une pente de quantité de produit par unité de temps donne une vitesse de formation.",
+    "On peut comparer les vitesses en faisant varier une seule condition à la fois.",
+    "Les unités dépendent de la grandeur mesurée et du temps."
+   ],
+   "image_mentale": "Imagine une courbe de produit formé et une droite tangente à son départ.",
+   "regle_ou_methode": "Trace la tangente au début, choisis deux points dessus puis calcule la variation de quantité divisée par la variation de temps.",
+   "exemples": [
+    "Une tangente à l’origine passe par (0 min ; 0 µmol) et (2 min ; 6 µmol). Sa pente vaut (6 − 0)/(2 − 0) = 3 µmol/min : c’est la vitesse initiale estimée.",
+    "Une autre tangente passant par (0 min ; 0 µmol) et (4 min ; 8 µmol) donne 2 µmol/min."
+   ],
+   "piege": "La pente moyenne sur toute l’expérience n’est pas forcément la vitesse initiale.",
+   "astuce_memoire": "Tangente au départ : variation divisée par durée.",
+   "quiz": [
+    {
+     "q": "Une tangente passe par (0 min ; 0 µmol) et (2 min ; 6 µmol). Quelle est sa pente ?",
+     "choix": [
+      "3 µmol/min",
+      "12 µmol/min",
+      "0,33 µmol/min"
+     ],
+     "rep": "3 µmol/min",
+     "expl": "La pente est 6/2 = 3 µmol/min."
+    },
+    {
+     "q": "Pour estimer une vitesse initiale, quelle partie de la courbe utilise-t-on ?",
+     "choix": [
+      "La seule valeur finale",
+      "La tangente au début",
+      "Une droite choisie sans rapport avec la courbe"
+     ],
+     "rep": "La tangente au début",
+     "expl": "La tangente à l’instant initial donne la pente recherchée."
+    },
+    {
+     "q": "Quelle unité convient à une vitesse de formation si la quantité est en µmol et le temps en minutes ?",
+     "choix": [
+      "µmol × min",
+      "min/µmol",
+      "µmol/min"
+     ],
+     "rep": "µmol/min",
+     "expl": "La vitesse est une variation de quantité par unité de temps."
+    }
+   ],
+   "id": "REV-SVT-1RE-15"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Deux types de croûte",
+   "emoji": "🪨",
+   "en_une_phrase": "Les croûtes continentale et océanique diffèrent par leur composition et leur densité.",
+   "comprendre": "Un globe présente des continents élevés et des fonds océaniques plus bas. Ces reliefs correspondent notamment à deux types de croûte de composition différente. Les roches observées permettent de les distinguer.",
+   "essentiel": [
+    "La croûte continentale contient notamment des roches de composition granitique.",
+    "La croûte océanique contient notamment des basaltes et des gabbros.",
+    "Le basalte et le gabbro ont des compositions voisines mais des textures différentes.",
+    "La croûte océanique est en moyenne plus dense que la croûte continentale."
+   ],
+   "image_mentale": "Imagine deux colonnes : granite continental et basalte au-dessus de gabbro océanique.",
+   "regle_ou_methode": "Observe les minéraux et la texture d’une roche puis replace-la dans son contexte géologique.",
+   "exemples": [
+    "Dans un échantillon de croûte océanique, on distingue de gros cristaux jointifs : la texture est grenue. Associée à une composition adaptée, elle peut identifier un gabbro formé en profondeur.",
+    "Un basalte refroidi rapidement en surface présente généralement des cristaux beaucoup plus petits."
+   ],
+   "piege": "Le relief continental ne signifie pas que toute roche continentale est un granite.",
+   "astuce_memoire": "Océan : basalte et gabbro ; continent : granite fréquent.",
+   "quiz": [
+    {
+     "q": "Quelle roche est caractéristique de la croûte océanique profonde ?",
+     "choix": [
+      "Le granite continental uniquement",
+      "Le gabbro",
+      "La péridotite du manteau uniquement"
+     ],
+     "rep": "Le gabbro",
+     "expl": "Le gabbro constitue une partie profonde de la croûte océanique."
+    },
+    {
+     "q": "Pourquoi basalte et gabbro présentent-ils des textures différentes ?",
+     "choix": [
+      "Ils appartiennent forcément à deux planètes différentes",
+      "Ils ne contiennent aucun minéral",
+      "Ils refroidissent dans des conditions différentes"
+     ],
+     "rep": "Ils refroidissent dans des conditions différentes",
+     "expl": "La vitesse de refroidissement influence la taille des cristaux."
+    },
+    {
+     "q": "Les continents sont-ils constitués uniquement de granite ?",
+     "choix": [
+      "Non, leur croûte est hétérogène",
+      "Oui, partout et en surface uniquement",
+      "Oui, sans aucune roche sédimentaire"
+     ],
+     "rep": "Non, leur croûte est hétérogène",
+     "expl": "La croûte continentale comporte des roches variées."
+    }
+   ],
+   "id": "REV-SVT-1RE-16"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Explorer par les séismes",
+   "emoji": "📡",
+   "en_une_phrase": "Les ondes sismiques révèlent des changements de composition et d’état à l’intérieur du globe.",
+   "comprendre": "On ne peut pas prélever directement des roches au centre de la Terre. Les séismes produisent des ondes qui traversent différentes enveloppes et changent de vitesse ou de trajectoire. Leurs enregistrements permettent de construire un modèle interne.",
+   "essentiel": [
+    "Les ondes P traversent les solides et les liquides.",
+    "Les ondes S ne se propagent pas dans un liquide.",
+    "Des changements de vitesse et des zones d’ombre indiquent des discontinuités.",
+    "Le noyau externe est liquide et le noyau interne solide."
+   ],
+   "image_mentale": "Imagine des trajets d’ondes déviés dans des enveloppes concentriques.",
+   "regle_ou_methode": "Repère les ondes enregistrées ou absentes, puis confronte ces observations aux propriétés des matériaux.",
+   "exemples": [
+    "Des stations situées de l’autre côté de la Terre ne reçoivent pas directement certaines ondes S. Comme ces ondes ne traversent pas les liquides, ce constat contribue à identifier un noyau externe liquide.",
+    "Une variation brusque de vitesse d’ondes peut signaler une limite entre enveloppes internes."
+   ],
+   "piege": "Une zone d’ombre ne signifie pas qu’il n’y a aucune matière dans la Terre.",
+   "astuce_memoire": "Trajets et vitesses des ondes renseignent sur les enveloppes.",
+   "quiz": [
+    {
+     "q": "Quel type d’onde ne se propage pas dans un liquide ?",
+     "choix": [
+      "Les ondes P",
+      "Toutes les ondes mécaniques sans exception",
+      "Les ondes S"
+     ],
+     "rep": "Les ondes S",
+     "expl": "Les ondes S ne se propagent pas dans le noyau externe liquide."
+    },
+    {
+     "q": "Quel est l’état du noyau externe terrestre ?",
+     "choix": [
+      "Liquide",
+      "Solide partout",
+      "Gazeux"
+     ],
+     "rep": "Liquide",
+     "expl": "Les données sismiques montrent un noyau externe liquide."
+    },
+    {
+     "q": "Que peut indiquer un changement brutal de vitesse sismique ?",
+     "choix": [
+      "La disparition de la gravité",
+      "Une discontinuité entre matériaux",
+      "Un changement obligatoire de météo"
+     ],
+     "rep": "Une discontinuité entre matériaux",
+     "expl": "Les propriétés différentes des enveloppes modifient les ondes."
+    }
+   ],
+   "id": "REV-SVT-1RE-17"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Lithosphère et asthénosphère",
+   "emoji": "🌍",
+   "en_une_phrase": "La lithosphère rigide repose sur une asthénosphère plus ductile à l’échelle géologique.",
+   "comprendre": "Une même matière peut se déformer différemment selon les conditions et la durée. Le manteau est majoritairement solide, mais son comportement change avec la profondeur et la température. La distinction entre lithosphère et asthénosphère concerne ce comportement mécanique.",
+   "essentiel": [
+    "La lithosphère comprend la croûte et une partie supérieure rigide du manteau.",
+    "L’asthénosphère appartient au manteau.",
+    "À long terme, l’asthénosphère se déforme plus facilement que la lithosphère.",
+    "Les ondes sismiques renseignent sur ces différences."
+   ],
+   "image_mentale": "Imagine une coque rigide au-dessus d’un solide capable de se déformer lentement.",
+   "regle_ou_methode": "Distingue composition chimique, croûte ou manteau, et comportement mécanique, rigide ou ductile.",
+   "exemples": [
+    "Dans une zone océanique, la croûte et la partie supérieure rigide du manteau forment la lithosphère. Sous elle, le manteau asthénosphérique est plus ductile à long terme.",
+    "Une lithosphère peut être continentale ou océanique selon la croûte qu’elle porte."
+   ],
+   "piege": "L’asthénosphère n’est pas un océan de magma liquide : elle est majoritairement solide.",
+   "astuce_memoire": "Lithosphère : rigide ; asthénosphère : solide plus ductile.",
+   "quiz": [
+    {
+     "q": "Quels éléments composent la lithosphère ?",
+     "choix": [
+      "La croûte et une partie supérieure rigide du manteau",
+      "La croûte seule",
+      "Le noyau externe et la croûte"
+     ],
+     "rep": "La croûte et une partie supérieure rigide du manteau",
+     "expl": "La lithosphère inclut croûte et manteau lithosphérique."
+    },
+    {
+     "q": "Quel est l’état dominant de l’asthénosphère ?",
+     "choix": [
+      "Entièrement liquide",
+      "Solide mais ductile à long terme",
+      "Gazeux"
+     ],
+     "rep": "Solide mais ductile à long terme",
+     "expl": "Le manteau asthénosphérique est majoritairement solide."
+    },
+    {
+     "q": "La frontière lithosphère-asthénosphère distingue surtout :",
+     "choix": [
+      "Deux planètes",
+      "Les saisons",
+      "Des comportements mécaniques"
+     ],
+     "rep": "Des comportements mécaniques",
+     "expl": "Elle sépare des régions de rigidité différente."
+    }
+   ],
+   "id": "REV-SVT-1RE-18"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Chaleur interne",
+   "emoji": "🌡️",
+   "en_une_phrase": "La Terre transfère sa chaleur par conduction et par convection.",
+   "comprendre": "Une cuillère chauffe progressivement au contact d’un liquide chaud. Dans la Terre, la conduction transmet aussi la chaleur sans déplacement global de matière. La convection associe un transfert thermique à des mouvements lents de matière.",
+   "essentiel": [
+    "La température terrestre augmente globalement avec la profondeur.",
+    "La conduction transfère la chaleur sans mouvement global de matière.",
+    "La convection du manteau transfère de la chaleur par déplacement lent de matière.",
+    "Le gradient géothermique varie selon les enveloppes."
+   ],
+   "image_mentale": "Imagine une coque conductrice et des mouvements lents en boucle dans le manteau solide.",
+   "regle_ou_methode": "Compare les températures ou flux mesurés et identifie le mode de transfert compatible.",
+   "exemples": [
+    "Dans un modèle, la chaleur se transmet de proche en proche à travers une plaque immobile : il s’agit de conduction. Dans un manteau solide qui se déforme lentement, des mouvements de matière assurent aussi une convection.",
+    "Un gradient mesuré près de la surface ne peut pas être prolongé sans précaution jusqu’au centre de la Terre."
+   ],
+   "piege": "Convection du manteau ne signifie pas que tout le manteau est liquide.",
+   "astuce_memoire": "Conduction : sans mouvement global ; convection : avec mouvement.",
+   "quiz": [
+    {
+     "q": "Quel transfert thermique comporte un déplacement global de matière ?",
+     "choix": [
+      "La conduction seule",
+      "La convection",
+      "La réflexion des ondes sismiques"
+     ],
+     "rep": "La convection",
+     "expl": "La convection associe chaleur et mouvement de matière."
+    },
+    {
+     "q": "Le gradient géothermique est-il identique dans toutes les enveloppes ?",
+     "choix": [
+      "Oui, nécessairement",
+      "Oui, uniquement sous les océans",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Il varie avec la profondeur et les modes de transfert."
+    },
+    {
+     "q": "Le manteau en convection est-il nécessairement entièrement liquide ?",
+     "choix": [
+      "Non, il est majoritairement solide",
+      "Oui, comme un océan d’eau",
+      "Oui, car tout solide est immobile à toute échelle de temps"
+     ],
+     "rep": "Non, il est majoritairement solide",
+     "expl": "Un solide chaud peut se déformer et circuler très lentement."
+    }
+   ],
+   "id": "REV-SVT-1RE-19"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Mesurer le mouvement",
+   "emoji": "🛰️",
+   "en_une_phrase": "Les mouvements des plaques sont mesurés aujourd’hui et reconstitués grâce à plusieurs indices.",
+   "comprendre": "Pour savoir si deux lieux s’éloignent, tu peux mesurer leur position à deux dates. Les mesures par satellites évaluent les déplacements actuels. L’âge des roches et les anomalies magnétiques renseignent aussi sur les mouvements passés.",
+   "essentiel": [
+    "Les plaques lithosphériques se déplacent les unes par rapport aux autres.",
+    "Les mesures de position répétées donnent des vitesses actuelles.",
+    "De part et d’autre d’une dorsale, les âges des fonds océaniques augmentent globalement en s’éloignant de l’axe.",
+    "Les bandes d’anomalies magnétiques se correspondent souvent de part et d’autre de l’axe."
+   ],
+   "image_mentale": "Imagine deux repères qui s’écartent au centre d’un océan et des bandes symétriques.",
+   "regle_ou_methode": "Calcule distance divisée par durée, puis compare les données actuelles et les indices géologiques.",
+   "exemples": [
+    "Deux repères s’écartent de 6 cm en 3 ans. Leur vitesse relative moyenne est 6/3 = 2 cm/an. Cette mesure décrit l’écartement des deux repères.",
+    "Des basaltes océaniques plus anciens à plus grande distance de l’axe indiquent une expansion du fond océanique."
+   ],
+   "piege": "La vitesse d’écartement de deux plaques ne doit pas être automatiquement attribuée à chacune séparément.",
+   "astuce_memoire": "Positions actuelles, âges et bandes magnétiques se croisent.",
+   "quiz": [
+    {
+     "q": "Deux repères s’écartent de 8 cm en 4 ans. Quelle est leur vitesse relative moyenne ?",
+     "choix": [
+      "4 cm/an",
+      "32 cm/an",
+      "2 cm/an"
+     ],
+     "rep": "2 cm/an",
+     "expl": "On divise 8 cm par 4 ans."
+    },
+    {
+     "q": "Où les basaltes océaniques sont-ils généralement les plus jeunes ?",
+     "choix": [
+      "Près de l’axe de la dorsale",
+      "Toujours près des continents",
+      "À la même distance de tous les points"
+     ],
+     "rep": "Près de l’axe de la dorsale",
+     "expl": "Une nouvelle croûte océanique se forme à la dorsale."
+    },
+    {
+     "q": "Quel type de donnée permet de suivre le mouvement actuel des plaques ?",
+     "choix": [
+      "Uniquement la couleur des cartes",
+      "Des mesures de position répétées par satellites",
+      "La météo quotidienne seule"
+     ],
+     "rep": "Des mesures de position répétées par satellites",
+     "expl": "La comparaison des positions au cours du temps fournit une vitesse."
+    }
+   ],
+   "id": "REV-SVT-1RE-20"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Former le plancher océanique",
+   "emoji": "🌋",
+   "en_une_phrase": "À la dorsale, la remontée et la décompression du manteau provoquent une fusion partielle.",
+   "comprendre": "Quand la pression diminue, une roche chaude peut commencer à fondre sans que toute sa matière devienne liquide. Sous une dorsale, la remontée du manteau favorise ainsi une fusion partielle. Le magma produit contribue à former la croûte océanique.",
+   "essentiel": [
+    "Les plaques divergent de part et d’autre de la dorsale.",
+    "La décompression favorise la fusion partielle des péridotites mantelliques.",
+    "Les magmas peuvent former des basaltes en surface et des gabbros en profondeur.",
+    "Certaines dorsales lentes présentent un apport magmatique réduit et exposent du manteau.",
+    "En s’éloignant, la lithosphère océanique refroidit, s’épaissit et devient globalement plus dense.",
+    "La circulation hydrothermale transforme et hydrate certains minéraux."
+   ],
+   "image_mentale": "Imagine un manteau qui remonte sous une ouverture centrale et produit un peu de magma.",
+   "regle_ou_methode": "Relie divergence, remontée, décompression, fusion partielle puis refroidissement du magma.",
+   "exemples": [
+    "Deux plaques s’écartent : le manteau remonte et sa pression baisse. Une partie de la péridotite fond ; le magma refroidi peut former du basalte en surface et du gabbro en profondeur.",
+    "Dans certaines dorsales lentes, des portions de manteau peuvent affleurer lorsque l’apport magmatique est limité.",
+    "En s’éloignant de la dorsale, une lithosphère océanique se refroidit ; la circulation d’eau dans ses fractures peut hydrater certains de ses minéraux."
+   ],
+   "piege": "Fusion partielle ne signifie pas que tout le manteau se transforme en magma.",
+   "astuce_memoire": "Dorsale : remontée, décompression, fusion partielle.",
+   "quiz": [
+    {
+     "q": "Quelle cause favorise la fusion partielle sous une dorsale ?",
+     "choix": [
+      "La diminution de pression lors de la remontée",
+      "Une augmentation automatique de la pression",
+      "La disparition des roches du manteau"
+     ],
+     "rep": "La diminution de pression lors de la remontée",
+     "expl": "La décompression du manteau chaud favorise sa fusion partielle."
+    },
+    {
+     "q": "Quelle roche peut se former par refroidissement du magma en profondeur ?",
+     "choix": [
+      "Le basalte uniquement en surface",
+      "Le gabbro",
+      "Une roche nécessairement sédimentaire"
+     ],
+     "rep": "Le gabbro",
+     "expl": "Le gabbro résulte d’un refroidissement en profondeur."
+    },
+    {
+     "q": "Que devient généralement la lithosphère océanique quand elle vieillit ?",
+     "choix": [
+      "Elle se réchauffe et disparaît immédiatement",
+      "Elle conserve partout la même épaisseur",
+      "Elle se refroidit et s’épaissit"
+     ],
+     "rep": "Elle se refroidit et s’épaissit",
+     "expl": "Le refroidissement épaissit la lithosphère océanique."
+    }
+   ],
+   "id": "REV-SVT-1RE-21"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Plaque en subduction",
+   "emoji": "⬇️",
+   "en_une_phrase": "En zone de subduction, une lithosphère océanique plonge sous une autre plaque.",
+   "comprendre": "Deux plaques peuvent converger au lieu de s’écarter. Dans une zone de subduction, la plaque océanique plonge vers le manteau. Les séismes distribués en profondeur dessinent une zone inclinée qui aide à suivre sa trajectoire.",
+   "essentiel": [
+    "Une lithosphère océanique peut plonger en subduction.",
+    "Les foyers sismiques s’alignent en profondeur selon un plan incliné.",
+    "Le refroidissement et l’augmentation de densité de la lithosphère favorisent sa plongée.",
+    "La convergence peut aussi s’accompagner d’un volcanisme sur la plaque chevauchante."
+   ],
+   "image_mentale": "Imagine une plaque inclinée portant des points de séismes de plus en plus profonds.",
+   "regle_ou_methode": "Repère la fosse et les profondeurs des séismes puis interprète leur alignement.",
+   "exemples": [
+    "Sur une coupe fictive, les foyers de séismes passent de faibles profondeurs près d’une fosse à de plus grandes profondeurs vers l’intérieur. Leur alignement incliné indique une lithosphère plongeante.",
+    "Le mouvement descendant d’une plaque océanique froide participe aux mouvements de convection du manteau."
+   ],
+   "piege": "Une fosse océanique seule ne suffit pas : croise relief, séismes et autres indices.",
+   "astuce_memoire": "Fosse et séismes inclinés : une plaque plonge.",
+   "quiz": [
+    {
+     "q": "Quel type de lithosphère plonge dans le modèle étudié ici ?",
+     "choix": [
+      "La seule croûte continentale sans manteau",
+      "La lithosphère océanique",
+      "Le noyau externe"
+     ],
+     "rep": "La lithosphère océanique",
+     "expl": "La subduction concerne une lithosphère océanique plongeante."
+    },
+    {
+     "q": "Que révèle l’alignement incliné des foyers sismiques ?",
+     "choix": [
+      "Une absence totale de mouvement",
+      "Le trajet d’un courant marin de surface",
+      "La géométrie du panneau plongeant"
+     ],
+     "rep": "La géométrie du panneau plongeant",
+     "expl": "Les foyers jalonnent la zone de plongée."
+    },
+    {
+     "q": "Quel changement du vieillissement favorise la subduction ?",
+     "choix": [
+      "L’augmentation globale de densité",
+      "La disparition de toute masse",
+      "La transformation complète en gaz"
+     ],
+     "rep": "L’augmentation globale de densité",
+     "expl": "Une lithosphère océanique froide devient globalement plus dense."
+    }
+   ],
+   "id": "REV-SVT-1RE-22"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Volcanisme de subduction",
+   "emoji": "🔥",
+   "en_une_phrase": "Les fluides libérés par la plaque plongeante favorisent la fusion partielle du manteau chevauchant.",
+   "comprendre": "L’eau peut modifier les conditions dans lesquelles une roche fond. En profondeur, des minéraux de la plaque océanique en subduction se transforment et libèrent des fluides. Ceux-ci favorisent la fusion partielle du manteau situé au-dessus.",
+   "essentiel": [
+    "La plaque plongeante subit des transformations minéralogiques qui libèrent de l’eau.",
+    "Cette eau hydrate le manteau de la plaque chevauchante.",
+    "L’hydratation favorise la fusion partielle des péridotites du manteau.",
+    "Le magma peut alimenter des volcans ou cristalliser en profondeur.",
+    "Le volcanisme de subduction est souvent explosif."
+   ],
+   "image_mentale": "Imagine une plaque plongeante libérant des flèches d’eau vers le manteau situé au-dessus.",
+   "regle_ou_methode": "Suis le trajet de l’eau, puis relie hydratation, fusion partielle et formation du magma.",
+   "exemples": [
+    "Une plaque océanique hydratée plonge et ses minéraux se transforment en profondeur. Des fluides remontent dans le manteau chevauchant ; son hydratation facilite sa fusion partielle et la formation de magma.",
+    "Un magma qui cristallise en profondeur peut former une roche plutonique."
+   ],
+   "piege": "Le magma de subduction ne provient pas simplement de la fusion totale de la plaque océanique.",
+   "astuce_memoire": "Plaque : libération d’eau ; manteau supérieur : fusion partielle.",
+   "quiz": [
+    {
+     "q": "Quelle partie fond partiellement dans le modèle classique du magmatisme de subduction ?",
+     "choix": [
+      "Tout le noyau terrestre",
+      "Toute la plaque plongeante en une seule fois",
+      "Le manteau hydraté de la plaque chevauchante"
+     ],
+     "rep": "Le manteau hydraté de la plaque chevauchante",
+     "expl": "Les fluides favorisent la fusion partielle du manteau chevauchant."
+    },
+    {
+     "q": "Quel rôle jouent les fluides libérés par la plaque plongeante ?",
+     "choix": [
+      "Ils favorisent la fusion partielle du manteau sus-jacent",
+      "Ils empêchent toute formation de magma",
+      "Ils transforment le manteau entier en océan liquide"
+     ],
+     "rep": "Ils favorisent la fusion partielle du manteau sus-jacent",
+     "expl": "Ils hydratent le manteau et modifient ses conditions de fusion."
+    },
+    {
+     "q": "Que peut devenir un magma qui refroidit en profondeur ?",
+     "choix": [
+      "Une onde sismique",
+      "Une roche plutonique",
+      "Une plaque qui n’a jamais de minéraux"
+     ],
+     "rep": "Une roche plutonique",
+     "expl": "La cristallisation en profondeur produit des roches plutoniques."
+    }
+   ],
+   "id": "REV-SVT-1RE-23"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Collision et relief",
+   "emoji": "🏔️",
+   "en_une_phrase": "Une collision continentale provoque un raccourcissement et un épaississement de la croûte.",
+   "comprendre": "Comme un tissu poussé de ses deux côtés, des couches de roches peuvent se plisser ou se chevaucher. Lors d’une collision, la convergence de lithosphères continentales provoque des déformations. Leur observation renseigne sur la construction d’une chaîne de montagnes.",
+   "essentiel": [
+    "La collision peut épaissir la croûte continentale.",
+    "Des plis témoignent d’une déformation des couches.",
+    "Les failles inverses et chevauchements traduisent un raccourcissement.",
+    "Les observations de surface peuvent être croisées avec des profils sismiques."
+   ],
+   "image_mentale": "Imagine des couches de tissu raccourcies et empilées sous une chaîne de montagnes.",
+   "regle_ou_methode": "Repère des couches déformées ou chevauchées puis relie-les à une compression.",
+   "exemples": [
+    "Deux séries de couches se chevauchent sur une coupe. Identifie l’empilement, puis déduis qu’un raccourcissement horizontal a contribué à épaissir la croûte.",
+    "Des plis observés dans une chaîne de montagnes sont des indices de déformation."
+   ],
+   "piege": "Une montagne isolée ne suffit pas à prouver une collision : examine plusieurs indices structuraux.",
+   "astuce_memoire": "Collision : raccourcissement, empilement, épaississement.",
+   "quiz": [
+    {
+     "q": "Quel effet une collision peut-elle avoir sur la croûte continentale ?",
+     "choix": [
+      "Un épaississement",
+      "Une disparition systématique de toutes les roches",
+      "Une transformation complète en eau"
+     ],
+     "rep": "Un épaississement",
+     "expl": "La convergence peut raccourcir et empiler la croûte."
+    },
+    {
+     "q": "Quel indice peut traduire un raccourcissement ?",
+     "choix": [
+      "Une absence de toute déformation",
+      "Un chevauchement de couches",
+      "Un changement de saison"
+     ],
+     "rep": "Un chevauchement de couches",
+     "expl": "Les chevauchements témoignent d’un empilement tectonique."
+    },
+    {
+     "q": "Quelle donnée permet d’examiner aussi la structure en profondeur ?",
+     "choix": [
+      "La seule couleur d’une carte touristique",
+      "Une mesure quotidienne de température de l’air",
+      "Un profil sismique"
+     ],
+     "rep": "Un profil sismique",
+     "expl": "Les profils sismiques renseignent sur la structure profonde."
+    }
+   ],
+   "id": "REV-SVT-1RE-24"
+  },
+  {
+   "axe": "Enjeux contemporains de la planète",
+   "titre": "Décrire un écosystème",
+   "emoji": "🌳",
+   "en_une_phrase": "Un écosystème associe une communauté d’êtres vivants, son milieu et leurs interactions.",
+   "comprendre": "Une mare comprend de l’eau, des végétaux, des animaux et des micro-organismes. Tous dépendent de conditions physiques et interagissent entre eux. L’écosystème est défini en précisant l’espace et la période étudiés.",
+   "essentiel": [
+    "La biocénose rassemble les êtres vivants d’un écosystème.",
+    "Le biotope correspond au milieu et à ses conditions physiques et chimiques.",
+    "Les êtres vivants interagissent entre eux et avec leur milieu.",
+    "L’espèce humaine fait partie des écosystèmes."
+   ],
+   "image_mentale": "Imagine une mare entourée d’une limite et de flèches entre eau, plantes et animaux.",
+   "regle_ou_methode": "Délimite l’espace étudié, identifie ses êtres vivants et ses conditions physiques, puis décris leurs interactions.",
+   "exemples": [
+    "Dans une mare fictive, l’eau et la température relèvent du biotope ; les végétaux et les animaux appartiennent à la biocénose. Les végétaux prélèvent des ressources du milieu : c’est une interaction.",
+    "Dans une forêt, les champignons et arbres appartiennent tous deux à la communauté vivante."
+   ],
+   "piege": "Une espèce n’est pas un écosystème à elle seule : les interactions et le milieu comptent.",
+   "astuce_memoire": "Biocénose et biotope en interaction.",
+   "quiz": [
+    {
+     "q": "Que désigne la biocénose d’une mare ?",
+     "choix": [
+      "La seule température de l’eau",
+      "L’ensemble des êtres vivants de la mare",
+      "Uniquement les roches du fond"
+     ],
+     "rep": "L’ensemble des êtres vivants de la mare",
+     "expl": "La biocénose regroupe la communauté vivante."
+    },
+    {
+     "q": "Quel élément relève du biotope ?",
+     "choix": [
+      "Une population de grenouilles",
+      "Une population d’algues",
+      "La température du milieu"
+     ],
+     "rep": "La température du milieu",
+     "expl": "La température est une condition physique du milieu."
+    },
+    {
+     "q": "Les êtres humains sont-ils extérieurs à tous les écosystèmes ?",
+     "choix": [
+      "Non",
+      "Oui, par définition",
+      "Oui, dès qu’ils habitent en ville"
+     ],
+     "rep": "Non",
+     "expl": "Les humains appartiennent à des écosystèmes et interagissent avec eux."
+    }
+   ],
+   "id": "REV-SVT-1RE-25"
+  },
+  {
+   "axe": "Enjeux contemporains de la planète",
+   "titre": "Interactions entre espèces",
+   "emoji": "🐝",
+   "en_une_phrase": "Compétition, prédation et coopération relient les espèces et influencent leurs populations.",
+   "comprendre": "Dans un jardin, deux plantes peuvent utiliser la même lumière et des insectes visiter des fleurs. Les interactions n’ont pas toutes les mêmes effets pour leurs partenaires. Leur étude aide à comprendre l’organisation d’une communauté.",
+   "essentiel": [
+    "La compétition concerne une ressource limitée utilisée par plusieurs organismes.",
+    "La prédation bénéficie au prédateur et nuit à la proie.",
+    "Le mutualisme est une interaction bénéfique aux deux partenaires.",
+    "Certaines interactions peuvent changer selon les conditions."
+   ],
+   "image_mentale": "Imagine deux plantes vers une même lumière puis une fleur et un insecte reliés par deux flèches.",
+   "regle_ou_methode": "Identifie les organismes et la ressource ou l’action, puis examine l’effet sur chaque partenaire.",
+   "exemples": [
+    "Deux jeunes arbres voisins ont besoin d’une lumière limitée. Leur utilisation d’une même ressource peut créer une compétition.",
+    "Un insecte obtient du nectar d’une fleur et transporte son pollen : chacun peut bénéficier de cette interaction."
+   ],
+   "piege": "La proximité de deux organismes ne prouve pas à elle seule qu’ils coopèrent.",
+   "astuce_memoire": "Compétition, exploitation, coopération : comparer les effets.",
+   "quiz": [
+    {
+     "q": "Deux plantes utilisent la même ressource lumineuse limitée. Quelle interaction est possible ?",
+     "choix": [
+      "Une prédation obligatoire",
+      "Une absence certaine d’interaction",
+      "Une compétition"
+     ],
+     "rep": "Une compétition",
+     "expl": "Elles peuvent être en concurrence pour la lumière."
+    },
+    {
+     "q": "Lors d’un mutualisme, quels sont les effets sur les deux partenaires ?",
+     "choix": [
+      "Les deux en tirent un bénéfice",
+      "Les deux sont toujours tués",
+      "Un seul existe réellement"
+     ],
+     "rep": "Les deux en tirent un bénéfice",
+     "expl": "Le mutualisme bénéficie aux deux partenaires."
+    },
+    {
+     "q": "Un prédateur mange une proie. Quel type d’interaction est décrit ?",
+     "choix": [
+      "Une compétition pour la même proie nécessairement",
+      "Une prédation",
+      "Une symbiose obligatoire"
+     ],
+     "rep": "Une prédation",
+     "expl": "La prédation est une relation d’exploitation d’une proie."
+    }
+   ],
+   "id": "REV-SVT-1RE-26"
+  },
+  {
+   "axe": "Enjeux contemporains de la planète",
+   "titre": "Réseaux alimentaires",
+   "emoji": "🕸️",
+   "en_une_phrase": "Dans un réseau alimentaire, la matière et l’énergie passent d’un organisme à un autre.",
+   "comprendre": "Quand un animal mange une plante, il utilise une partie de sa matière. Plusieurs chaînes alimentaires peuvent se croiser en réseau. À chaque étape, une partie de l’énergie est dissipée sous forme de chaleur.",
+   "essentiel": [
+    "Les végétaux chlorophylliens produisent de la matière organique par photosynthèse.",
+    "Les consommateurs obtiennent de la matière en se nourrissant.",
+    "Un réseau trophique relie plusieurs chaînes alimentaires.",
+    "Les transferts d’énergie ne sont pas intégralement conservés dans la biomasse du niveau suivant."
+   ],
+   "image_mentale": "Imagine des flèches allant de l’herbe vers le lapin puis vers un prédateur.",
+   "regle_ou_methode": "Repère qui mange qui ; oriente chaque flèche de la ressource consommée vers son consommateur.",
+   "exemples": [
+    "Dans herbe → lapin → renard, le lapin consomme l’herbe et le renard peut consommer le lapin. Les flèches indiquent ici le transfert de matière de la nourriture vers le consommateur.",
+    "Un prédateur qui consomme plusieurs proies relie plusieurs chaînes en un réseau."
+   ],
+   "piege": "Une flèche du réseau doit avoir un sens précisé : ici elle va de l’aliment vers le consommateur.",
+   "astuce_memoire": "Matière de l’aliment vers celui qui le mange.",
+   "quiz": [
+    {
+     "q": "Dans herbe → lapin → renard, que mange le lapin ?",
+     "choix": [
+      "L’herbe",
+      "Le renard",
+      "Le soleil directement"
+     ],
+     "rep": "L’herbe",
+     "expl": "La première flèche va de la ressource vers son consommateur."
+    },
+    {
+     "q": "Pourquoi parle-t-on de réseau alimentaire ?",
+     "choix": [
+      "Chaque espèce ne peut avoir qu’un lien",
+      "Plusieurs chaînes peuvent être reliées",
+      "Les organismes n’échangent jamais de matière"
+     ],
+     "rep": "Plusieurs chaînes peuvent être reliées",
+     "expl": "Les relations alimentaires s’entrecroisent."
+    },
+    {
+     "q": "Toute l’énergie ingérée devient-elle de la biomasse du consommateur ?",
+     "choix": [
+      "Oui, à chaque étape",
+      "Oui, si le consommateur est un animal",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Une partie de l’énergie est notamment dissipée sous forme de chaleur."
+    }
+   ],
+   "id": "REV-SVT-1RE-27"
+  },
+  {
+   "axe": "Enjeux contemporains de la planète",
+   "titre": "Recyclage et bilans",
+   "emoji": "♻️",
+   "en_une_phrase": "Les décomposeurs participent au recyclage de la matière et les bilans comparent entrées et sorties.",
+   "comprendre": "Les feuilles mortes ne restent pas toutes indéfiniment au sol. Des organismes et micro-organismes contribuent à leur décomposition. Dans un système délimité, la comparaison des flux entrants et sortants aide à comprendre l’évolution d’un stock.",
+   "essentiel": [
+    "Des organismes du sol contribuent à la décomposition de la matière organique.",
+    "La minéralisation transforme une partie de la matière organique en éléments minéraux.",
+    "Des flux de matière entrent et sortent d’un écosystème.",
+    "Variation du stock = entrées − sorties, pour le système et la période définis."
+   ],
+   "image_mentale": "Imagine des feuilles transformées dans le sol et deux flèches d’entrée et de sortie.",
+   "regle_ou_methode": "Définis le système et la durée ; additionne les entrées, retranche les sorties et interprète la variation.",
+   "exemples": [
+    "Dans un réservoir fictif, 12 unités de matière entrent et 7 sortent pendant un mois. La variation est 12 − 7 = +5 unités : le stock augmente de 5 unités.",
+    "Des champignons du sol participent à la décomposition de feuilles mortes."
+   ],
+   "piege": "Une matière recyclée ne signifie pas que toute l’énergie est recyclée : de l’énergie est dissipée.",
+   "astuce_memoire": "Stock : entrées moins sorties.",
+   "quiz": [
+    {
+     "q": "Si 9 unités entrent et 13 sortent, quelle est la variation du stock ?",
+     "choix": [
+      "+4 unités",
+      "−4 unités",
+      "+22 unités"
+     ],
+     "rep": "−4 unités",
+     "expl": "La variation est 9 − 13 = −4."
+    },
+    {
+     "q": "Quel rôle peuvent jouer les décomposeurs ?",
+     "choix": [
+      "Arrêter tous les échanges avec le sol",
+      "Produire uniquement de la roche magmatique",
+      "Transformer de la matière organique morte"
+     ],
+     "rep": "Transformer de la matière organique morte",
+     "expl": "Ils participent à la décomposition et au recyclage de la matière."
+    },
+    {
+     "q": "La comparaison des flux est-elle interprétable sans définir période et limites du système ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, si les nombres sont entiers"
+     ],
+     "rep": "Non",
+     "expl": "Le bilan dépend du système et de la période étudiés."
+    }
+   ],
+   "id": "REV-SVT-1RE-28"
+  },
+  {
+   "axe": "Enjeux contemporains de la planète",
+   "titre": "Perturbation et résilience",
+   "emoji": "🌱",
+   "en_une_phrase": "Un écosystème évolue et sa capacité à se rétablir après perturbation a des limites.",
+   "comprendre": "Une forêt change au fil des saisons et après des événements comme un incendie. Après une perturbation, certaines fonctions peuvent progressivement se rétablir. L’ampleur de la perturbation et la diversité des interactions influencent ce rétablissement.",
+   "essentiel": [
+    "Une perturbation modifie les conditions ou les populations d’un écosystème.",
+    "La résilience désigne sa capacité à retrouver un état ou un fonctionnement proche après perturbation.",
+    "Les réseaux d’interactions et la diversité fonctionnelle contribuent au fonctionnement.",
+    "Certaines perturbations dépassent les capacités de rétablissement."
+   ],
+   "image_mentale": "Imagine une forêt touchée par un incendie puis une succession de repousses.",
+   "regle_ou_methode": "Compare des observations avant et après une perturbation, à plusieurs dates, puis cherche les limites du rétablissement.",
+   "exemples": [
+    "Après un incendie modéré dans une forêt fictive, on observe au fil des années des plantes puis de jeunes arbres. Cette reprise suggère une capacité de rétablissement, à confirmer par le suivi d’autres composantes.",
+    "Une perturbation très forte et répétée peut empêcher le retour au fonctionnement antérieur."
+   ],
+   "piege": "La repousse d’une espèce ne prouve pas à elle seule que tout l’écosystème est rétabli.",
+   "astuce_memoire": "Observer avant, après et sur la durée.",
+   "quiz": [
+    {
+     "q": "Que désigne la résilience d’un écosystème ?",
+     "choix": [
+      "L’absence de tout changement",
+      "La disparition de toutes les espèces",
+      "Sa capacité à se rétablir après une perturbation"
+     ],
+     "rep": "Sa capacité à se rétablir après une perturbation",
+     "expl": "La résilience décrit une capacité de rétablissement."
+    },
+    {
+     "q": "Une repousse après incendie suffit-elle à prouver le rétablissement complet ?",
+     "choix": [
+      "Non",
+      "Oui, quelle que soit l’espèce observée",
+      "Oui, dès le lendemain"
+     ],
+     "rep": "Non",
+     "expl": "D’autres fonctions et populations doivent être suivies."
+    },
+    {
+     "q": "Une perturbation peut-elle dépasser la capacité de rétablissement ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement si elle est naturelle"
+     ],
+     "rep": "Oui",
+     "expl": "Son intensité et sa répétition peuvent modifier durablement le système."
+    }
+   ],
+   "id": "REV-SVT-1RE-29"
+  },
+  {
+   "axe": "Enjeux contemporains de la planète",
+   "titre": "Services et gestion",
+   "emoji": "💧",
+   "en_une_phrase": "Les écosystèmes rendent des services aux sociétés et leur gestion dépend de décisions et de connaissances.",
+   "comprendre": "Une zone humide peut retenir une partie de l’eau et servir d’habitat à de nombreuses espèces. Ces fonctions peuvent aussi être utiles aux humains. Préserver ou restaurer un écosystème suppose d’examiner les usages, les pressions et les résultats dans le temps.",
+   "essentiel": [
+    "Les services d’approvisionnement comprennent par exemple la production de nourriture.",
+    "La pollinisation et la régulation de l’eau sont des services de régulation.",
+    "Les paysages et les loisirs peuvent constituer des services culturels.",
+    "Des actions de gestion peuvent être évaluées par un suivi écologique."
+   ],
+   "image_mentale": "Imagine une zone humide reliée à l’eau, aux êtres vivants et aux habitants.",
+   "regle_ou_methode": "Identifie une fonction écologique, le bénéfice associé et une action de gestion suivie dans le temps.",
+   "exemples": [
+    "Une zone humide stocke temporairement une partie de l’eau lors de fortes pluies. Cette fonction peut contribuer à limiter certaines crues ; son maintien peut être suivi en mesurant les niveaux d’eau et l’état du milieu.",
+    "Des insectes pollinisateurs contribuent à la reproduction de certaines plantes cultivées."
+   ],
+   "piege": "Un service dépend d’un fonctionnement écologique : il ne garantit pas à lui seul une protection totale contre toutes les crues.",
+   "astuce_memoire": "Fonction écologique, bénéfice, gestion et suivi.",
+   "quiz": [
+    {
+     "q": "Quel service peut être rendu par des pollinisateurs ?",
+     "choix": [
+      "La reproduction de certaines plantes cultivées",
+      "La création de toutes les roches volcaniques",
+      "La suppression de tous les ravageurs"
+     ],
+     "rep": "La reproduction de certaines plantes cultivées",
+     "expl": "La pollinisation contribue à la reproduction de certaines plantes."
+    },
+    {
+     "q": "Quelle action permet d’évaluer une restauration écologique ?",
+     "choix": [
+      "Observer une seule image sans comparaison",
+      "Suivre des indicateurs du milieu dans le temps",
+      "Supposer son succès avant toute mesure"
+     ],
+     "rep": "Suivre des indicateurs du milieu dans le temps",
+     "expl": "Un suivi répété permet d’examiner les résultats."
+    },
+    {
+     "q": "Une zone humide supprime-t-elle toutes les crues ?",
+     "choix": [
+      "Oui, quelles que soient les conditions",
+      "Oui, dès qu’elle contient une plante",
+      "Non, elle peut seulement contribuer à en atténuer certaines"
+     ],
+     "rep": "Non, elle peut seulement contribuer à en atténuer certaines",
+     "expl": "Son effet dépend du contexte et de la capacité de stockage."
+    }
+   ],
+   "id": "REV-SVT-1RE-30"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Gène et maladie",
+   "emoji": "🧬",
+   "en_une_phrase": "Une mutation peut modifier le fonctionnement d’un gène et contribuer à une maladie.",
+   "comprendre": "Tu sais qu’un gène porte une information utilisée par les cellules. Une modification de l’ADN peut changer la quantité ou le fonctionnement du produit de ce gène. Ses conséquences varient selon le gène, la mutation et le contexte.",
+   "essentiel": [
+    "Un allèle est une version d’un gène.",
+    "Une mutation est une modification de la séquence d’ADN.",
+    "Certaines mutations ont des effets sur la santé ; d’autres n’en ont pas.",
+    "Une mutation peut être héritée ou apparaître au cours de la vie."
+   ],
+   "image_mentale": "Imagine une instruction modifiée et le produit cellulaire fabriqué à partir de cette instruction.",
+   "regle_ou_methode": "Relie la modification de l’ADN à son effet sur le produit du gène puis aux manifestations observées.",
+   "exemples": [
+    "Dans un exemple fictif, un allèle modifié entraîne la fabrication d’une protéine moins efficace. La cellule fonctionne alors différemment et un symptôme peut apparaître : la chaîne relie ADN, protéine et organisme.",
+    "Une mutation qui n’altère pas le fonctionnement observé n’entraîne pas nécessairement de maladie."
+   ],
+   "piege": "Une mutation n’est pas automatiquement dangereuse.",
+   "astuce_memoire": "ADN modifié, effet cellulaire éventuel, conséquence possible.",
+   "quiz": [
+    {
+     "q": "Une mutation entraîne-t-elle toujours une maladie ?",
+     "choix": [
+      "Oui, quelle que soit sa position",
+      "Non",
+      "Oui, si elle existe dans une seule cellule"
+     ],
+     "rep": "Non",
+     "expl": "Les effets des mutations sont variables."
+    },
+    {
+     "q": "Qu’est-ce qu’un allèle ?",
+     "choix": [
+      "Une cellule immunitaire",
+      "Une protéine toujours défectueuse",
+      "Une version d’un gène"
+     ],
+     "rep": "Une version d’un gène",
+     "expl": "Les allèles sont des versions d’un même gène."
+    },
+    {
+     "q": "Quel lien peut contribuer à expliquer une maladie génétique ?",
+     "choix": [
+      "Une mutation altère le produit d’un gène",
+      "La mutation transforme chaque cellule en bactérie",
+      "Le gène disparaît nécessairement de toutes les générations"
+     ],
+     "rep": "Une mutation altère le produit d’un gène",
+     "expl": "Une modification de l’expression ou du produit d’un gène peut avoir un effet pathologique."
+    }
+   ],
+   "id": "REV-SVT-1RE-31"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Transmission récessive",
+   "emoji": "👪",
+   "en_une_phrase": "Pour une maladie autosomique récessive simple, une personne porteuse de deux allèles mutés peut être atteinte.",
+   "comprendre": "Chaque parent transmet une copie de chaque gène autosomique à son enfant. Dans le modèle récessif simple, un porteur d’un seul allèle muté n’est généralement pas atteint. Deux parents porteurs peuvent transmettre chacun l’allèle muté.",
+   "essentiel": [
+    "Notons A l’allèle non muté et a l’allèle responsable.",
+    "Dans le modèle simple, aa correspond au génotype atteint.",
+    "Une personne Aa est porteuse non atteinte dans ce modèle.",
+    "Pour deux parents Aa, chaque grossesse a une probabilité de 1/4 de donner aa."
+   ],
+   "image_mentale": "Imagine un tableau de quatre combinaisons : AA, Aa, aA et aa.",
+   "regle_ou_methode": "Écris les allèles possibles de chaque parent puis compte les combinaisons correspondant au génotype étudié.",
+   "exemples": [
+    "Deux parents Aa transmettent chacun A ou a avec probabilité 1/2 dans le modèle. Les quatre combinaisons équiprobables sont AA, Aa, aA et aa : la probabilité de aa est 1/4.",
+    "Pour ces mêmes parents, la probabilité d’un enfant porteur Aa ou aA est 2/4, soit 1/2."
+   ],
+   "piege": "Le risque de 1/4 concerne chaque grossesse : il ne garantit pas un enfant atteint sur quatre naissances.",
+   "astuce_memoire": "Deux porteurs : un cas aa sur quatre dans le modèle.",
+   "quiz": [
+    {
+     "q": "Pour deux parents Aa, quelle est la probabilité du génotype aa à chaque grossesse dans le modèle ?",
+     "choix": [
+      "1/2",
+      "3/4",
+      "1/4"
+     ],
+     "rep": "1/4",
+     "expl": "Une seule des quatre combinaisons équiprobables est aa."
+    },
+    {
+     "q": "Quel génotype désigne un porteur non atteint dans ce modèle ?",
+     "choix": [
+      "Aa",
+      "aa",
+      "AA uniquement"
+     ],
+     "rep": "Aa",
+     "expl": "Aa porte un allèle muté et un allèle non muté."
+    },
+    {
+     "q": "Si un premier enfant est atteint, la probabilité pour une grossesse suivante devient-elle automatiquement nulle ?",
+     "choix": [
+      "Oui, car le risque a déjà été réalisé",
+      "Non, elle reste 1/4 dans le modèle",
+      "Oui, elle devient toujours 3/4"
+     ],
+     "rep": "Non, elle reste 1/4 dans le modèle",
+     "expl": "Chaque grossesse correspond à un nouveau tirage dans ce modèle."
+    }
+   ],
+   "id": "REV-SVT-1RE-32"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Traiter une maladie génétique",
+   "emoji": "🩺",
+   "en_une_phrase": "Les traitements d’une maladie génétique peuvent agir sur ses manifestations ou, dans certains cas, sur la fonction du gène.",
+   "comprendre": "Une anomalie d’une instruction peut perturber plusieurs fonctions d’un organisme. Des soins visent parfois à compenser ces conséquences ou à limiter les symptômes. Certaines thérapies géniques cherchent à apporter ou restaurer une fonction dans des cellules ciblées.",
+   "essentiel": [
+    "Les soins dépendent de la maladie et de ses manifestations.",
+    "Un traitement des symptômes ne modifie pas nécessairement l’ADN.",
+    "Une thérapie génique agit sur des cellules ciblées dans certaines situations.",
+    "Les traitements disponibles varient selon les maladies."
+   ],
+   "image_mentale": "Imagine une fonction défaillante avec plusieurs points d’action possibles.",
+   "regle_ou_methode": "Distingue l’effet sur les symptômes, la fonction cellulaire et le matériel génétique ciblé.",
+   "exemples": [
+    "Dans un modèle fictif, une protéine défaillante provoque un trouble respiratoire. Un soin qui facilite la respiration agit sur une manifestation, sans forcément corriger le gène.",
+    "Une thérapie génique peut viser à apporter une copie fonctionnelle d’un gène dans certaines cellules du tissu concerné."
+   ],
+   "piege": "Une thérapie génique ne corrige pas automatiquement toutes les cellules ni toutes les maladies.",
+   "astuce_memoire": "Cible, effet, limites du traitement.",
+   "quiz": [
+    {
+     "q": "Un soin qui soulage un symptôme modifie-t-il forcément l’ADN ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, sauf chez l’adulte"
+     ],
+     "rep": "Non",
+     "expl": "Un traitement symptomatique peut agir sans modifier l’ADN."
+    },
+    {
+     "q": "Quel est un objectif possible de certaines thérapies géniques ?",
+     "choix": [
+      "Remplacer automatiquement tous les organes",
+      "Restaurer une fonction dans des cellules ciblées",
+      "Empêcher toute mutation dans l’espèce humaine"
+     ],
+     "rep": "Restaurer une fonction dans des cellules ciblées",
+     "expl": "Certaines interventions apportent ou restaurent une fonction liée à un gène."
+    },
+    {
+     "q": "Le même traitement convient-il nécessairement à toutes les maladies génétiques ?",
+     "choix": [
+      "Oui",
+      "Oui, si elles sont héréditaires",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Les approches dépendent de la maladie et de ses manifestations."
+    }
+   ],
+   "id": "REV-SVT-1RE-33"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Un risque multifactoriel",
+   "emoji": "⚖️",
+   "en_une_phrase": "Le risque de certaines maladies dépend de plusieurs facteurs génétiques et environnementaux.",
+   "comprendre": "Tu sais qu’une même situation peut avoir plusieurs causes. Pour certaines maladies, plusieurs variants génétiques interagissent avec des facteurs du milieu ou des modes de vie. Un facteur peut augmenter une probabilité sans rendre la maladie certaine.",
+   "essentiel": [
+    "Un facteur de risque modifie la probabilité d’une maladie.",
+    "Plusieurs gènes peuvent intervenir.",
+    "Des facteurs environnementaux peuvent aussi contribuer.",
+    "Risque accru ne signifie pas diagnostic certain."
+   ],
+   "image_mentale": "Imagine plusieurs curseurs qui contribuent ensemble au niveau de risque.",
+   "regle_ou_methode": "Identifie les facteurs étudiés et distingue augmentation de probabilité et certitude individuelle.",
+   "exemples": [
+    "Dans une étude fictive, 20 personnes sur 100 exposées et 10 sur 100 non exposées développent une maladie. Le risque observé est deux fois plus élevé dans le premier groupe, mais une exposition ne suffit pas à prédire le cas de chaque personne.",
+    "Une prédisposition génétique peut exister sans que la maladie ne se déclare."
+   ],
+   "piege": "Une association statistique ne prouve pas à elle seule une cause directe.",
+   "astuce_memoire": "Plusieurs facteurs, une probabilité.",
+   "quiz": [
+    {
+     "q": "Dans l’étude fictive, quel est le rapport des risques 20/100 et 10/100 ?",
+     "choix": [
+      "10",
+      "2",
+      "20"
+     ],
+     "rep": "2",
+     "expl": "20 % divisés par 10 % donne 2."
+    },
+    {
+     "q": "Une prédisposition génétique signifie-t-elle que la maladie apparaîtra forcément ?",
+     "choix": [
+      "Oui",
+      "Oui si le facteur est fréquent",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Une prédisposition modifie un risque sans toujours déterminer l’issue."
+    },
+    {
+     "q": "Une association statistique prouve-t-elle seule une causalité ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui si deux nombres sont différents"
+     ],
+     "rep": "Non",
+     "expl": "D’autres facteurs et la méthode de l’étude doivent être examinés."
+    }
+   ],
+   "id": "REV-SVT-1RE-34"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Observer les risques",
+   "emoji": "📊",
+   "en_une_phrase": "L’épidémiologie compare des groupes pour étudier la fréquence et les facteurs associés à une maladie.",
+   "comprendre": "Pour comprendre une différence de santé, on peut observer des groupes de personnes. Une cohorte suit des participants dans le temps ; d’autres études comparent notamment des cas et des témoins. Il faut vérifier les effectifs et les facteurs qui peuvent brouiller la comparaison.",
+   "essentiel": [
+    "Une fréquence est une proportion observée.",
+    "Une cohorte suit un groupe selon un protocole.",
+    "Un facteur de confusion peut influencer l’association observée.",
+    "Une étude a des limites liées à ses données et à sa méthode."
+   ],
+   "image_mentale": "Imagine deux groupes suivis dans le temps avec plusieurs caractéristiques à comparer.",
+   "regle_ou_methode": "Calcule les fréquences, compare les groupes puis cherche les autres facteurs possibles.",
+   "exemples": [
+    "Dans une étude fictive, 12 maladies apparaissent parmi 200 personnes d’un groupe : 12/200 = 6 %. Dans un second groupe, 6 cas sur 200 représentent 3 % ; il faut ensuite examiner si les groupes diffèrent aussi par d’autres facteurs.",
+    "Si l’âge diffère fortement entre deux groupes, il peut contribuer à la différence observée."
+   ],
+   "piege": "Un grand pourcentage isolé ne permet pas d’établir seul la cause d’une maladie.",
+   "astuce_memoire": "Comparer les groupes et leurs différences.",
+   "quiz": [
+    {
+     "q": "Quelle fréquence représentent 12 cas sur 200 personnes ?",
+     "choix": [
+      "12 %",
+      "24 %",
+      "6 %"
+     ],
+     "rep": "6 %",
+     "expl": "12/200 = 0,06, soit 6 %."
+    },
+    {
+     "q": "Pourquoi comparer aussi l’âge des groupes ?",
+     "choix": [
+      "Il peut influencer la fréquence de la maladie",
+      "Il remplace toutes les autres données",
+      "Il établit automatiquement une causalité"
+     ],
+     "rep": "Il peut influencer la fréquence de la maladie",
+     "expl": "Une différence d’âge peut être un facteur de confusion."
+    },
+    {
+     "q": "Que désigne une cohorte ?",
+     "choix": [
+      "Une seule cellule cancéreuse",
+      "Un groupe suivi dans le cadre d’une étude",
+      "Un médicament contre les virus"
+     ],
+     "rep": "Un groupe suivi dans le cadre d’une étude",
+     "expl": "Une cohorte rassemble des personnes suivies selon un protocole."
+    }
+   ],
+   "id": "REV-SVT-1RE-35"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Mutations et cancer",
+   "emoji": "🔬",
+   "en_une_phrase": "Un cancer peut résulter de l’accumulation de modifications qui dérèglent la multiplication cellulaire.",
+   "comprendre": "Les cellules se divisent normalement sous contrôle. Des mutations acquises dans certaines cellules peuvent perturber ces contrôles et favoriser leur multiplication. Des facteurs environnementaux et des prédispositions peuvent contribuer à ce processus, sans le déterminer à eux seuls.",
+   "essentiel": [
+    "Une tumeur résulte d’une multiplication cellulaire anormale.",
+    "Certaines mutations sont acquises dans des cellules au cours de la vie.",
+    "Certaines prédispositions peuvent être héritées.",
+    "Tous les cancers n’ont pas la même origine."
+   ],
+   "image_mentale": "Imagine des freins de division cellulaire progressivement endommagés.",
+   "regle_ou_methode": "Distingue mutations acquises dans une cellule, prédisposition héritée et facteurs de risque.",
+   "exemples": [
+    "Dans un modèle fictif, une cellule accumule plusieurs mutations touchant le contrôle de sa division. Elle se multiplie alors anormalement : une tumeur peut se former.",
+    "Un facteur cancérogène peut augmenter la probabilité de certaines mutations, sans provoquer systématiquement un cancer."
+   ],
+   "piege": "Toutes les mutations présentes dans une tumeur ne sont pas nécessairement héritées des parents.",
+   "astuce_memoire": "Mutations, contrôle perturbé, multiplication.",
+   "quiz": [
+    {
+     "q": "Une mutation acquise dans une cellule de la tumeur est-elle forcément héritée ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, si la tumeur grossit"
+     ],
+     "rep": "Non",
+     "expl": "Certaines mutations apparaissent dans des cellules au cours de la vie."
+    },
+    {
+     "q": "Quel phénomène caractérise une tumeur ?",
+     "choix": [
+      "La transformation automatique de toutes les cellules en virus",
+      "Une multiplication cellulaire anormale",
+      "L’arrêt définitif de toutes les divisions du corps"
+     ],
+     "rep": "Une multiplication cellulaire anormale",
+     "expl": "Une tumeur résulte d’une prolifération anormale."
+    },
+    {
+     "q": "Un facteur de risque provoque-t-il un cancer chez chaque personne exposée ?",
+     "choix": [
+      "Oui, sans exception",
+      "Oui, immédiatement",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Un facteur augmente une probabilité sans déterminer tous les cas."
+    }
+   ],
+   "id": "REV-SVT-1RE-36"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Sélection et résistance",
+   "emoji": "🦠",
+   "en_une_phrase": "Un antibiotique peut sélectionner des bactéries résistantes déjà présentes ou apparues par variation génétique.",
+   "comprendre": "Dans une population de bactéries, les individus ne sont pas toujours identiques. Si un antibiotique élimine surtout les bactéries sensibles, les bactéries résistantes peuvent survivre et se multiplier. Leur proportion augmente alors dans la population.",
+   "essentiel": [
+    "La résistance concerne les bactéries, pas le corps humain lui-même.",
+    "Des variations génétiques peuvent exister avant le traitement.",
+    "L’antibiotique exerce une pression de sélection.",
+    "Les antibiotiques ne traitent pas les infections causées uniquement par des virus."
+   ],
+   "image_mentale": "Imagine des bactéries sensibles et quelques résistantes avant puis après sélection.",
+   "regle_ou_methode": "Compare les proportions avant et après, puis explique la survie et la multiplication des résistantes.",
+   "exemples": [
+    "Dans une population fictive de 100 bactéries, 5 sont résistantes à un antibiotique. Après exposition, supposons qu’il reste 5 résistantes et 5 sensibles : les résistantes représentent alors 5/10 = 50 %, contre 5 % au départ.",
+    "Une infection causée uniquement par un virus n’est pas traitée par un antibiotique dirigé contre les bactéries."
+   ],
+   "piege": "L’antibiotique ne crée pas volontairement la mutation utile parce que la bactérie en aurait besoin.",
+   "astuce_memoire": "Variation, sélection, multiplication.",
+   "quiz": [
+    {
+     "q": "Dans l’exemple, quelle proportion est résistante après exposition ?",
+     "choix": [
+      "5 %",
+      "50 %",
+      "95 %"
+     ],
+     "rep": "50 %",
+     "expl": "Cinq bactéries résistantes sur dix restantes représentent 50 %."
+    },
+    {
+     "q": "Que sélectionne un antibiotique actif sur les bactéries sensibles ?",
+     "choix": [
+      "Des virus transformés en bactéries",
+      "Les cellules humaines devenues résistantes",
+      "Les bactéries résistantes qui survivent"
+     ],
+     "rep": "Les bactéries résistantes qui survivent",
+     "expl": "Les bactéries résistantes ont un avantage dans ce contexte."
+    },
+    {
+     "q": "Un antibiotique agit-il directement contre une infection purement virale ?",
+     "choix": [
+      "Non",
+      "Oui, contre tous les virus",
+      "Oui, si la fièvre est élevée"
+     ],
+     "rep": "Non",
+     "expl": "Les antibiotiques ciblent des bactéries, pas les virus."
+    }
+   ],
+   "id": "REV-SVT-1RE-37"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Défense innée",
+   "emoji": "🛡️",
+   "en_une_phrase": "L’immunité innée intervient rapidement sans nécessiter de rencontre préalable avec un antigène particulier.",
+   "comprendre": "Une barrière et une alerte peuvent être présentes avant un incident. De même, l’organisme dispose de mécanismes de défense capables de réagir rapidement à une lésion ou une infection. Des cellules immunitaires reconnaissent des signaux et déclenchent une réponse locale.",
+   "essentiel": [
+    "L’immunité innée est présente dès la naissance.",
+    "Elle intervient rapidement lors d’infections ou de lésions.",
+    "Des cellules sentinelles reconnaissent certains signaux de danger.",
+    "Elle contribue à activer l’immunité adaptative."
+   ],
+   "image_mentale": "Imagine une équipe de surveillance qui déclenche une alerte locale.",
+   "regle_ou_methode": "Repère le déclencheur, les cellules impliquées et la rapidité de la réponse.",
+   "exemples": [
+    "Après une petite lésion, des cellules locales détectent des signaux de danger. Elles libèrent des médiateurs qui participent au recrutement d’autres cellules : une réaction inflammatoire peut débuter.",
+    "Des macrophages participent aux défenses innées en éliminant notamment certains microbes."
+   ],
+   "piege": "Rapide ne signifie pas que la défense innée suffit toujours à éliminer l’agent.",
+   "astuce_memoire": "Surveiller, alerter, recruter.",
+   "quiz": [
+    {
+     "q": "Quand l’immunité innée peut-elle intervenir ?",
+     "choix": [
+      "Uniquement après plusieurs vaccinations",
+      "Seulement après la première réponse adaptative",
+      "Rapidement après une lésion ou une infection"
+     ],
+     "rep": "Rapidement après une lésion ou une infection",
+     "expl": "Elle constitue une première ligne de défense rapide."
+    },
+    {
+     "q": "Une rencontre préalable avec un antigène précis est-elle nécessaire pour déclencher l’immunité innée ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, seulement chez les enfants"
+     ],
+     "rep": "Non",
+     "expl": "La réponse innée ne nécessite pas cet apprentissage préalable."
+    },
+    {
+     "q": "Quel lien existe entre immunité innée et adaptative ?",
+     "choix": [
+      "Elles ne communiquent jamais",
+      "La réponse innée contribue à déclencher la réponse adaptative",
+      "L’adaptative supprime obligatoirement l’innée"
+     ],
+     "rep": "La réponse innée contribue à déclencher la réponse adaptative",
+     "expl": "Les deux réponses coopèrent."
+    }
+   ],
+   "id": "REV-SVT-1RE-38"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Réaction inflammatoire",
+   "emoji": "🚨",
+   "en_une_phrase": "La réaction inflammatoire aiguë recrute des cellules et des molécules vers une zone lésée ou infectée.",
+   "comprendre": "Une zone blessée peut devenir rouge et chaude. Des médiateurs libérés localement modifient les vaisseaux et attirent des cellules immunitaires. Cette réaction participe à la défense et à la réparation, même si ses signes sont inconfortables.",
+   "essentiel": [
+    "Rougeur, chaleur, gonflement et douleur sont des signes possibles.",
+    "Des médiateurs chimiques participent au déclenchement et au recrutement cellulaire.",
+    "Des cellules immunitaires rejoignent la zone concernée.",
+    "L’inflammation peut se produire après une lésion sans infection.",
+    "Des anti-inflammatoires peuvent réduire certains signes de la réaction."
+   ],
+   "image_mentale": "Imagine une zone blessée où arrivent des cellules par les vaisseaux.",
+   "regle_ou_methode": "Identifie la lésion, les médiateurs et les conséquences locales observables.",
+   "exemples": [
+    "Après une petite lésion fictive, des médiateurs locaux dilatent les vaisseaux et favorisent l’arrivée de cellules immunitaires. La rougeur et le gonflement illustrent la réaction locale.",
+    "Une lésion sans microbe peut aussi déclencher une inflammation."
+   ],
+   "piege": "Une inflammation ne prouve pas à elle seule qu’une infection est présente.",
+   "astuce_memoire": "Signaux locaux puis arrivée de cellules.",
+   "quiz": [
+    {
+     "q": "Quel signe peut accompagner une inflammation aiguë ?",
+     "choix": [
+      "Une rougeur locale",
+      "Une disparition immédiate de toute circulation sanguine",
+      "Une modification obligatoire du groupe sanguin"
+     ],
+     "rep": "Une rougeur locale",
+     "expl": "La rougeur est un signe possible de l’inflammation."
+    },
+    {
+     "q": "Une lésion sans infection peut-elle provoquer une inflammation ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement après une vaccination"
+     ],
+     "rep": "Oui",
+     "expl": "Une atteinte tissulaire peut suffire à déclencher la réaction."
+    },
+    {
+     "q": "Quel rôle jouent les médiateurs chimiques ?",
+     "choix": [
+      "Ils remplacent toutes les cellules immunitaires",
+      "Ils empêchent toute communication entre cellules",
+      "Ils participent à l’alerte et au recrutement de cellules"
+     ],
+     "rep": "Ils participent à l’alerte et au recrutement de cellules",
+     "expl": "Ils contribuent à coordonner la réponse locale."
+    }
+   ],
+   "id": "REV-SVT-1RE-39"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Phagocytose",
+   "emoji": "🧫",
+   "en_une_phrase": "La phagocytose permet à certaines cellules immunitaires d’englober puis de dégrader des particules.",
+   "comprendre": "Tu peux imaginer une cellule qui entoure un débris avec sa membrane. Des phagocytes, dont les macrophages, capturent ainsi des microbes ou des débris cellulaires. Ils contribuent à la réponse innée et peuvent participer à l’activation de l’immunité adaptative.",
+   "essentiel": [
+    "Un macrophage est un type de phagocyte.",
+    "La cellule entoure puis internalise la particule.",
+    "La particule est ensuite dégradée dans la cellule.",
+    "Des fragments peuvent participer à la présentation d’antigènes."
+   ],
+   "image_mentale": "Imagine une cellule qui entoure une particule puis la dégrade dans une poche.",
+   "regle_ou_methode": "Suis les étapes : reconnaissance, capture, internalisation et dégradation.",
+   "exemples": [
+    "Un macrophage rencontre une bactérie dans un tissu. Il l’entoure, l’internalise puis la dégrade : ces étapes constituent une phagocytose.",
+    "Un phagocyte peut aussi éliminer des débris cellulaires."
+   ],
+   "piege": "La phagocytose n’est pas une production d’anticorps.",
+   "astuce_memoire": "Entourer, internaliser, dégrader.",
+   "quiz": [
+    {
+     "q": "Quelle cellule peut réaliser une phagocytose ?",
+     "choix": [
+      "Un globule rouge comme rôle principal",
+      "Un macrophage",
+      "Une plaquette comme seul phagocyte"
+     ],
+     "rep": "Un macrophage",
+     "expl": "Les macrophages sont des phagocytes."
+    },
+    {
+     "q": "Que devient la particule capturée ?",
+     "choix": [
+      "Elle est nécessairement transformée en anticorps",
+      "Elle disparaît sans interaction avec la cellule",
+      "Elle est internalisée puis dégradée"
+     ],
+     "rep": "Elle est internalisée puis dégradée",
+     "expl": "La cellule capture puis dégrade la particule."
+    },
+    {
+     "q": "Quel autre rôle certains phagocytes peuvent-ils avoir ?",
+     "choix": [
+      "Participer à la présentation d’antigènes",
+      "Fabriquer tous les globules rouges",
+      "Remplacer les neurones du cerveau"
+     ],
+     "rep": "Participer à la présentation d’antigènes",
+     "expl": "Certaines cellules présentent des fragments antigéniques aux lymphocytes."
+    }
+   ],
+   "id": "REV-SVT-1RE-40"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Reconnaissance spécifique",
+   "emoji": "🔑",
+   "en_une_phrase": "L’immunité adaptative mobilise des lymphocytes capables de reconnaître spécifiquement un antigène.",
+   "comprendre": "Tu peux comparer un récepteur à une serrure adaptée à certaines formes. Chaque lymphocyte possède une spécificité issue d’une grande diversité de récepteurs. Lorsqu’un antigène est reconnu dans les conditions adaptées, les lymphocytes correspondants peuvent être sélectionnés.",
+   "essentiel": [
+    "Un antigène comporte des motifs reconnus par le système immunitaire.",
+    "Les lymphocytes B et T portent des récepteurs spécifiques.",
+    "La diversité des récepteurs est produite avant la rencontre avec un antigène donné.",
+    "La sélection active les lymphocytes capables de reconnaître l’antigène.",
+    "Des recombinaisons de segments génétiques contribuent à la diversité des récepteurs."
+   ],
+   "image_mentale": "Imagine un grand trousseau où seules certaines clés reconnaissent un motif.",
+   "regle_ou_methode": "Identifie l’antigène, puis relie reconnaissance et sélection des lymphocytes adaptés.",
+   "exemples": [
+    "Parmi de nombreux lymphocytes fictifs, seuls certains reconnaissent l’antigène d’un virus donné. Ces cellules sont sélectionnées puis peuvent se multiplier après activation.",
+    "Un autre antigène peut être reconnu par d’autres lymphocytes."
+   ],
+   "piege": "L’antigène ne fabrique pas à la demande tous les récepteurs spécifiques : il sélectionne des cellules parmi une diversité préexistante.",
+   "astuce_memoire": "Diversité, reconnaissance, sélection.",
+   "quiz": [
+    {
+     "q": "Que reconnaît un récepteur spécifique de lymphocyte ?",
+     "choix": [
+      "Toute molécule sans distinction",
+      "Uniquement une cellule musculaire",
+      "Un motif antigénique compatible"
+     ],
+     "rep": "Un motif antigénique compatible",
+     "expl": "La reconnaissance dépend de la compatibilité avec le motif antigénique."
+    },
+    {
+     "q": "Quand la diversité initiale des récepteurs existe-t-elle ?",
+     "choix": [
+      "Avant la rencontre avec un antigène donné",
+      "Seulement après chaque infection",
+      "Uniquement à la fin d’un traitement"
+     ],
+     "rep": "Avant la rencontre avec un antigène donné",
+     "expl": "Une grande diversité préexiste à la sélection."
+    },
+    {
+     "q": "Que se passe-t-il pour les lymphocytes reconnus et activés ?",
+     "choix": [
+      "Ils deviennent tous immédiatement des globules rouges",
+      "Ils peuvent être sélectionnés et multipliés",
+      "Ils disparaissent tous avant d’agir"
+     ],
+     "rep": "Ils peuvent être sélectionnés et multipliés",
+     "expl": "La sélection précède notamment une expansion clonale."
+    }
+   ],
+   "id": "REV-SVT-1RE-41"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Lymphocytes B et anticorps",
+   "emoji": "🔬",
+   "en_une_phrase": "Les lymphocytes B activés peuvent produire des plasmocytes qui sécrètent des anticorps spécifiques.",
+   "comprendre": "Une défense ciblée doit reconnaître la forme qu’elle combat. Après reconnaissance et activation, certains lymphocytes B se multiplient et se différencient en plasmocytes. Ces cellules sécrètent des anticorps qui se fixent spécifiquement sur des antigènes compatibles.",
+   "essentiel": [
+    "Un lymphocyte B porte un récepteur spécifique.",
+    "L’activation peut conduire à une multiplication clonale.",
+    "Les plasmocytes produisent des anticorps.",
+    "La fixation des anticorps peut faciliter l’élimination d’un agent."
+   ],
+   "image_mentale": "Imagine un lymphocyte sélectionné qui produit de nombreuses cellules fabriquant des anticorps.",
+   "regle_ou_methode": "Relie antigène reconnu, multiplication clonale, plasmocytes et anticorps.",
+   "exemples": [
+    "Un lymphocyte B reconnaît un antigène et reçoit les signaux nécessaires à son activation. Il se multiplie puis certaines cellules deviennent des plasmocytes qui sécrètent des anticorps adaptés.",
+    "Des anticorps fixés sur un agent peuvent faciliter son élimination par d’autres acteurs immunitaires."
+   ],
+   "piege": "Un anticorps n’est pas une cellule : c’est une molécule.",
+   "astuce_memoire": "Lymphocyte B, clones, plasmocytes, anticorps.",
+   "quiz": [
+    {
+     "q": "Quelle cellule sécrète des anticorps ?",
+     "choix": [
+      "Un plasmocyte",
+      "Un globule rouge",
+      "Un neurone"
+     ],
+     "rep": "Un plasmocyte",
+     "expl": "Les plasmocytes sont issus de lymphocytes B activés."
+    },
+    {
+     "q": "Qu’est-ce qu’un anticorps ?",
+     "choix": [
+      "Une bactérie résistante",
+      "Une molécule produite par des plasmocytes",
+      "Un organe lymphoïde"
+     ],
+     "rep": "Une molécule produite par des plasmocytes",
+     "expl": "Un anticorps est une protéine de reconnaissance."
+    },
+    {
+     "q": "Pourquoi parle-t-on de multiplication clonale ?",
+     "choix": [
+      "Toutes les cellules du corps acquièrent le même récepteur",
+      "Un antigène devient une cellule",
+      "Des cellules issues d’un lymphocyte sélectionné se multiplient"
+     ],
+     "rep": "Des cellules issues d’un lymphocyte sélectionné se multiplient",
+     "expl": "L’activation peut entraîner la multiplication des cellules sélectionnées."
+    }
+   ],
+   "id": "REV-SVT-1RE-42"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Lymphocytes T et coopération",
+   "emoji": "🤝",
+   "en_une_phrase": "Des lymphocytes T auxiliaires coordonnent la réponse et des lymphocytes T cytotoxiques détruisent des cellules cibles.",
+   "comprendre": "Une équipe efficace répartit les tâches. Dans l’immunité adaptative, des lymphocytes T CD4 activés contribuent à stimuler d’autres cellules. Des lymphocytes T CD8 activés peuvent se différencier en cellules cytotoxiques capables de détruire des cellules infectées reconnues.",
+   "essentiel": [
+    "Les lymphocytes T CD4 participent à la coordination de la réponse.",
+    "Les lymphocytes T CD8 activés peuvent devenir cytotoxiques.",
+    "Les cellules cytotoxiques détruisent des cellules cibles reconnues.",
+    "Le VIH peut infecter les lymphocytes T CD4 et affaiblir progressivement les défenses immunitaires sans traitement."
+   ],
+   "image_mentale": "Imagine un coordinateur qui transmet des signaux et des cellules qui agissent sur des cibles.",
+   "regle_ou_methode": "Distingue coordination par les T auxiliaires et destruction ciblée par les T cytotoxiques.",
+   "exemples": [
+    "Lors d’une infection virale fictive, des cellules présentent des fragments antigéniques. Des lymphocytes T CD4 activés contribuent à la coordination ; des T CD8 activés deviennent cytotoxiques et peuvent détruire des cellules infectées reconnues.",
+    "Une diminution importante des T CD4 peut perturber la coordination de plusieurs réponses immunitaires."
+   ],
+   "piege": "Les lymphocytes T cytotoxiques ne produisent pas les anticorps : ce rôle revient aux plasmocytes.",
+   "astuce_memoire": "T CD4 : coordination ; T CD8 : action cytotoxique.",
+   "quiz": [
+    {
+     "q": "Quel rôle ont les lymphocytes T CD4 auxiliaires ?",
+     "choix": [
+      "Fabriquer directement tous les anticorps",
+      "Contribuer à coordonner la réponse immunitaire",
+      "Transporter le dioxygène dans le sang"
+     ],
+     "rep": "Contribuer à coordonner la réponse immunitaire",
+     "expl": "Ils aident à activer et coordonner d’autres cellules immunitaires."
+    },
+    {
+     "q": "Que peuvent faire des lymphocytes T cytotoxiques ?",
+     "choix": [
+      "Détruire toutes les cellules du corps sans reconnaissance",
+      "Produire l’hémoglobine",
+      "Détruire des cellules infectées reconnues"
+     ],
+     "rep": "Détruire des cellules infectées reconnues",
+     "expl": "Ils agissent contre certaines cellules cibles reconnues."
+    },
+    {
+     "q": "Quel effet le VIH peut-il avoir sur les défenses sans traitement ?",
+     "choix": [
+      "Infecter des T CD4 et affaiblir progressivement la réponse",
+      "Transformer les antibiotiques en anticorps",
+      "Supprimer instantanément tous les lymphocytes"
+     ],
+     "rep": "Infecter des T CD4 et affaiblir progressivement la réponse",
+     "expl": "Le VIH cible notamment les lymphocytes T CD4."
+    }
+   ],
+   "id": "REV-SVT-1RE-43"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Mémoire immunitaire",
+   "emoji": "🧠",
+   "en_une_phrase": "Après une première réponse adaptative, des cellules mémoire favorisent une réponse ultérieure plus rapide.",
+   "comprendre": "Lors d’une première rencontre avec un antigène, sélectionner et multiplier des lymphocytes demande du temps. Une partie des cellules produites persiste comme cellules mémoire. Une nouvelle rencontre avec un antigène reconnu peut déclencher une réponse plus rapide et souvent plus intense.",
+   "essentiel": [
+    "La première réponse adaptative prend généralement plusieurs jours.",
+    "Des lymphocytes mémoire peuvent persister longtemps.",
+    "La réponse ultérieure est en général plus rapide et plus importante.",
+    "La durée et l’efficacité de la mémoire varient selon les situations."
+   ],
+   "image_mentale": "Imagine une première recherche dans un grand fichier, puis un raccourci conservé pour la prochaine fois.",
+   "regle_ou_methode": "Compare le délai et l’intensité des réponses après une première puis une nouvelle rencontre.",
+   "exemples": [
+    "Dans une expérience fictive, les anticorps apparaissent plus rapidement lors de la seconde exposition au même antigène. Cette différence est compatible avec l’action de cellules mémoire.",
+    "Des cellules mémoire B ou T peuvent participer à la réponse après une exposition ultérieure."
+   ],
+   "piege": "La mémoire immunitaire ne garantit pas une protection parfaite dans toutes les situations.",
+   "astuce_memoire": "Première sélection, puis mémoire.",
+   "quiz": [
+    {
+     "q": "Quel élément favorise une réponse plus rapide lors d’une nouvelle rencontre ?",
+     "choix": [
+      "La disparition de tous les lymphocytes",
+      "Une multiplication automatique des bactéries",
+      "Des lymphocytes mémoire"
+     ],
+     "rep": "Des lymphocytes mémoire",
+     "expl": "Les cellules mémoire facilitent une réponse ultérieure."
+    },
+    {
+     "q": "La première réponse adaptative est-elle généralement immédiate ?",
+     "choix": [
+      "Non, elle demande généralement plusieurs jours",
+      "Oui, toujours en moins d’une seconde",
+      "Elle ne peut jamais produire d’anticorps"
+     ],
+     "rep": "Non, elle demande généralement plusieurs jours",
+     "expl": "La sélection et la multiplication des lymphocytes prennent du temps."
+    },
+    {
+     "q": "La mémoire garantit-elle une protection parfaite dans tous les cas ?",
+     "choix": [
+      "Oui, pour tous les agents et toute la vie",
+      "Non",
+      "Oui, sans aucune variation individuelle"
+     ],
+     "rep": "Non",
+     "expl": "La protection varie selon les situations."
+    }
+   ],
+   "id": "REV-SVT-1RE-44"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Vaccination et protection",
+   "emoji": "💉",
+   "en_une_phrase": "La vaccination prépare le système immunitaire à reconnaître un agent et peut réduire le risque de maladie.",
+   "comprendre": "Un entraînement peut préparer une réponse future sans reproduire toute la situation réelle. Un vaccin présente un antigène ou permet à l’organisme d’en produire un afin de stimuler une réponse immunitaire et une mémoire. La protection varie selon le vaccin et la personne.",
+   "essentiel": [
+    "La vaccination peut induire des anticorps et des cellules mémoire.",
+    "Certains vaccins nécessitent plusieurs doses ou des rappels.",
+    "La protection n’est pas systématiquement de 100 %.",
+    "Pour certaines maladies transmissibles, une couverture élevée peut aussi réduire la circulation de l’agent.",
+    "Dans certains vaccins, un adjuvant favorise la réponse immunitaire."
+   ],
+   "image_mentale": "Imagine une première présentation d’un antigène suivie de cellules mémoire prêtes à réagir.",
+   "regle_ou_methode": "Distingue stimulation immunitaire, mémoire et effet sur le risque individuel ou collectif.",
+   "exemples": [
+    "Après un vaccin fictif, des lymphocytes reconnaissent l’antigène présenté puis des cellules mémoire se forment. Lors d’une exposition ultérieure, la réponse peut être plus rapide et le risque de maladie diminuer.",
+    "Si une vaccination réduit la transmission d’une maladie, une couverture élevée peut contribuer à une protection indirecte de personnes vulnérables."
+   ],
+   "piege": "Une vaccination ne signifie pas que toute infection ou toute maladie devient impossible.",
+   "astuce_memoire": "Antigène, réponse, mémoire, protection.",
+   "quiz": [
+    {
+     "q": "Quel est un objectif de la vaccination ?",
+     "choix": [
+      "Préparer une réponse immunitaire et une mémoire",
+      "Garantir l’absence de toute maladie",
+      "Remplacer toutes les cellules immunitaires"
+     ],
+     "rep": "Préparer une réponse immunitaire et une mémoire",
+     "expl": "La vaccination stimule des défenses contre une cible donnée."
+    },
+    {
+     "q": "La protection d’un vaccin est-elle nécessairement de 100 % ?",
+     "choix": [
+      "Oui pour toute personne",
+      "Non",
+      "Oui dès la première minute"
+     ],
+     "rep": "Non",
+     "expl": "L’efficacité varie selon les vaccins et les individus."
+    },
+    {
+     "q": "Quand une vaccination peut-elle protéger indirectement d’autres personnes ?",
+     "choix": [
+      "Uniquement si elle traite directement toutes les personnes",
+      "Dès qu’une personne se vaccine, quelle que soit la maladie",
+      "Lorsqu’elle réduit la circulation de l’agent dans la population"
+     ],
+     "rep": "Lorsqu’elle réduit la circulation de l’agent dans la population",
+     "expl": "Une réduction de transmission peut contribuer à une protection indirecte."
+    }
+   ],
+   "id": "REV-SVT-1RE-45"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Immunothérapie et cancer",
+   "emoji": "🎯",
+   "en_une_phrase": "Certaines immunothérapies utilisent les mécanismes immunitaires pour traiter des cancers.",
+   "comprendre": "Tu sais que le système immunitaire reconnaît parfois des cellules anormales. Certaines approches médicales mobilisent ou renforcent cette réponse contre une tumeur. Leurs indications et leurs effets varient selon le type de cancer et le traitement.",
+   "essentiel": [
+    "Des anticorps monoclonaux sont conçus pour reconnaître une cible donnée.",
+    "Certains anticorps thérapeutiques mobilisent les défenses immunitaires contre des cancers précis ; tous ne sont pas des immunothérapies.",
+    "La vaccination préventive prépare les défenses avant une exposition.",
+    "Une immunothérapie thérapeutique vise à traiter une maladie déjà présente."
+   ],
+   "image_mentale": "Imagine une cible tumorale reconnue par une molécule conçue pour s’y fixer.",
+   "regle_ou_methode": "Distingue la cible, l’action recherchée et l’objectif préventif ou thérapeutique.",
+   "exemples": [
+    "Dans un exemple fictif, un anticorps monoclonal reconnaît une molécule présente sur certaines cellules tumorales. Cette reconnaissance ciblée participe à l’action d’un traitement adapté à ce cancer.",
+    "Un vaccin préventif contre un agent infectieux peut diminuer le risque de cancers causés par cet agent ; son objectif diffère du traitement d’une tumeur déjà présente."
+   ],
+   "piege": "Les immunothérapies ne sont pas toutes identiques et ne fonctionnent pas chez toutes les personnes.",
+   "astuce_memoire": "Prévenir une infection ; traiter une tumeur.",
+   "quiz": [
+    {
+     "q": "Quelle est la propriété recherchée d’un anticorps monoclonal ?",
+     "choix": [
+      "Reconnaître indistinctement toutes les molécules",
+      "Reconnaître une cible donnée",
+      "Remplacer systématiquement toute cellule immunitaire"
+     ],
+     "rep": "Reconnaître une cible donnée",
+     "expl": "Un anticorps monoclonal est choisi pour une cible déterminée."
+    },
+    {
+     "q": "Quel objectif décrit une immunothérapie thérapeutique ?",
+     "choix": [
+      "Prévenir uniquement une infection future",
+      "Remplacer toute vaccination préventive",
+      "Traiter une maladie déjà présente"
+     ],
+     "rep": "Traiter une maladie déjà présente",
+     "expl": "Une immunothérapie thérapeutique vise le traitement de la maladie."
+    },
+    {
+     "q": "Un vaccin préventif et une immunothérapie anticancéreuse ont-ils forcément le même objectif immédiat ?",
+     "choix": [
+      "Non",
+      "Oui, ils traitent toujours une tumeur présente",
+      "Oui, ils détruisent toutes les bactéries"
+     ],
+     "rep": "Non",
+     "expl": "Prévention et traitement d’une maladie déclarée répondent à des objectifs différents."
+    }
+   ],
+   "id": "REV-SVT-1RE-46"
+  }
+ ]
+}

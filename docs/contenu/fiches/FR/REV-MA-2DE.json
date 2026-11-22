@@ -1,0 +1,2025 @@
+{
+ "classe": "2DE",
+ "niveau_appli": "Lycée",
+ "age": "15-16 ans",
+ "matiere": "Mathématiques",
+ "code": "MA",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Vocabulaire ensembliste et logique",
+   "titre": "Ensembles et intervalles",
+   "emoji": "📏",
+   "en_une_phrase": "Un intervalle rassemble les nombres réels compris entre deux bornes selon des inégalités précisées.",
+   "comprendre": "Une portion de droite graduée peut représenter toutes les valeurs comprises entre deux limites. Les crochets indiquent si une borne appartient à l’intervalle. Une borne infinie n’est jamais incluse.",
+   "essentiel": [
+    "[a ; b] comprend a et b.",
+    "]a ; b[ exclut a et b.",
+    "[a ; +∞[ comprend tous les réels supérieurs ou égaux à a."
+   ],
+   "image_mentale": "Imagine une portion de droite avec des points pleins ou ouverts aux bornes.",
+   "regle_ou_methode": "Traduis chaque inégalité, puis choisis les crochets selon que les bornes sont incluses ou exclues.",
+   "exemples": [
+    "L’inégalité 2 ≤ x < 5 impose que 2 soit admis et 5 exclu. L’ensemble des solutions est [2 ; 5[. Le nombre 3 appartient à cet intervalle.",
+    "L’inégalité x > −1 correspond à ]−1 ; +∞[."
+   ],
+   "piege": "Le crochet ouvert vers l’extérieur exclut la borne ; l’infini n’est pas un nombre inclus.",
+   "astuce_memoire": "Borne admise : crochet fermé vers elle.",
+   "quiz": [
+    {
+     "q": "Quel intervalle représente 2 ≤ x < 5 ?",
+     "choix": [
+      "]2 ; 5]",
+      "[2 ; 5[",
+      "[2 ; 5]"
+     ],
+     "rep": "[2 ; 5[",
+     "expl": "2 est inclus et 5 est exclu."
+    },
+    {
+     "q": "Le nombre 5 appartient-il à [2 ; 5[ ?",
+     "choix": [
+      "Oui",
+      "Seulement si x est entier",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "La borne 5 est exclue."
+    },
+    {
+     "q": "Quel intervalle représente x > −1 ?",
+     "choix": [
+      "]−1 ; +∞[",
+      "[−1 ; +∞[",
+      "]−∞ ; −1["
+     ],
+     "rep": "]−1 ; +∞[",
+     "expl": "−1 est exclu et les valeurs sont supérieures à −1."
+    }
+   ],
+   "id": "REV-MA-2DE-01"
+  },
+  {
+   "axe": "Vocabulaire ensembliste et logique",
+   "titre": "Union, intersection et négation",
+   "emoji": "🔗",
+   "en_une_phrase": "L’union rassemble les éléments de deux ensembles ; l’intersection garde leurs éléments communs.",
+   "comprendre": "Tu peux comparer les élèves qui aiment lire et ceux qui aiment dessiner. Certains sont dans au moins un groupe, d’autres dans les deux. Ces situations correspondent à l’union et à l’intersection.",
+   "essentiel": [
+    "A ∪ B contient les éléments de A ou de B, éventuellement des deux.",
+    "A ∩ B contient les éléments communs à A et B.",
+    "La négation de « x > 3 » est « x ≤ 3 »."
+   ],
+   "image_mentale": "Imagine deux cercles qui se chevauchent et colorie d’abord les deux puis leur partie commune.",
+   "regle_ou_methode": "Pour une intersection, garde les éléments communs ; pour une union, prends tous les éléments présents dans au moins un ensemble.",
+   "exemples": [
+    "Si A = {1 ; 2 ; 3} et B = {3 ; 4}, repère les éléments communs. Seul 3 est dans les deux ensembles. Donc A ∩ B = {3}.",
+    "Avec ces mêmes ensembles, A ∪ B = {1 ; 2 ; 3 ; 4}."
+   ],
+   "piege": "En mathématiques, « ou » inclut généralement le cas où les deux conditions sont vraies.",
+   "astuce_memoire": "Intersection : commun ; union : au moins l’un des deux.",
+   "quiz": [
+    {
+     "q": "Si A = {1 ; 2 ; 3} et B = {3 ; 4}, que vaut A ∩ B ?",
+     "choix": [
+      "{1 ; 2 ; 3 ; 4}",
+      "{1 ; 2}",
+      "{3}"
+     ],
+     "rep": "{3}",
+     "expl": "Seul 3 appartient aux deux ensembles."
+    },
+    {
+     "q": "Que contient A ∪ B ?",
+     "choix": [
+      "Les éléments de A ou de B, éventuellement des deux",
+      "Seulement les éléments communs",
+      "Les éléments qui ne sont dans aucun des deux"
+     ],
+     "rep": "Les éléments de A ou de B, éventuellement des deux",
+     "expl": "L’union rassemble les éléments présents dans au moins un ensemble."
+    },
+    {
+     "q": "Quelle est la négation de « x > 3 » ?",
+     "choix": [
+      "x < 3",
+      "x ≤ 3",
+      "x ≥ 3"
+     ],
+     "rep": "x ≤ 3",
+     "expl": "Les réels qui ne sont pas strictement supérieurs à 3 sont inférieurs ou égaux à 3."
+    }
+   ],
+   "id": "REV-MA-2DE-02"
+  },
+  {
+   "axe": "Algorithmique et programmation",
+   "titre": "Fonctions et programmes",
+   "emoji": "💻",
+   "en_une_phrase": "Une fonction informatique reçoit des valeurs et renvoie un résultat selon des instructions.",
+   "comprendre": "Comme une machine à calculer, une fonction transforme une entrée. Un programme peut nommer cette fonction et l’utiliser plusieurs fois. Il faut suivre chaque instruction et distinguer l’entrée de la valeur renvoyée.",
+   "essentiel": [
+    "Un paramètre reçoit une valeur lors de l’appel.",
+    "Les instructions sont exécutées dans l’ordre prévu.",
+    "La valeur renvoyée est le résultat de l’appel."
+   ],
+   "image_mentale": "Imagine une boîte qui reçoit un nombre, le transforme puis renvoie un résultat.",
+   "regle_ou_methode": "Remplace le paramètre par la valeur donnée et exécute chaque étape.",
+   "exemples": [
+    "Une fonction prend x, calcule 2x + 5 puis renvoie le résultat. Pour x = 3, elle calcule 2 × 3 + 5. Elle renvoie 11.",
+    "Pour x = −1, la même fonction renvoie 3."
+   ],
+   "piege": "Le nom du paramètre est une variable : il peut recevoir des valeurs différentes.",
+   "astuce_memoire": "Entrée, instructions, valeur renvoyée.",
+   "quiz": [
+    {
+     "q": "La fonction renvoie 2x + 5. Que renvoie-t-elle pour x = 3 ?",
+     "choix": [
+      "11",
+      "8",
+      "16"
+     ],
+     "rep": "11",
+     "expl": "2 × 3 + 5 = 11."
+    },
+    {
+     "q": "Que renvoie-t-elle pour x = −1 ?",
+     "choix": [
+      "−7",
+      "3",
+      "4"
+     ],
+     "rep": "3",
+     "expl": "2 × (−1) + 5 = 3."
+    },
+    {
+     "q": "Quel rôle joue un paramètre ?",
+     "choix": [
+      "Toujours représenter le résultat final",
+      "Empêcher le calcul",
+      "Recevoir une valeur utilisée par la fonction"
+     ],
+     "rep": "Recevoir une valeur utilisée par la fonction",
+     "expl": "Le paramètre est une entrée de la fonction."
+    }
+   ],
+   "id": "REV-MA-2DE-03"
+  },
+  {
+   "axe": "Algorithmique et programmation",
+   "titre": "Boucles et seuil",
+   "emoji": "🔁",
+   "en_une_phrase": "Une boucle permet de répéter un calcul jusqu’à atteindre une condition.",
+   "comprendre": "Tu peux chercher à partir de quel rang une valeur dépasse un seuil. Une boucle répète le calcul en actualisant les variables. Il faut vérifier la condition et le résultat à chaque étape.",
+   "essentiel": [
+    "Une variable mémorise une valeur.",
+    "Une boucle répète des instructions.",
+    "Une condition d’arrêt doit être formulée précisément."
+   ],
+   "image_mentale": "Imagine une suite de cases remplies jusqu’à la première qui dépasse un seuil.",
+   "regle_ou_methode": "Initialise les variables, applique la boucle puis contrôle à quel moment la condition devient vraie.",
+   "exemples": [
+    "On part de 1 et on multiplie par 2 jusqu’à dépasser 10. Les valeurs sont 1, 2, 4, 8, 16. La première supérieure à 10 est 16.",
+    "En ajoutant 3 à 0 à chaque tour, on obtient 3, 6 puis 9 après trois tours."
+   ],
+   "piege": "« Dépasser 10 » signifie être strictement supérieur à 10, pas égal à 10.",
+   "astuce_memoire": "Initialiser, répéter, tester.",
+   "quiz": [
+    {
+     "q": "En doublant à partir de 1, quelle est la première valeur qui dépasse 10 ?",
+     "choix": [
+      "8",
+      "16",
+      "10"
+     ],
+     "rep": "16",
+     "expl": "La suite passe de 8 à 16."
+    },
+    {
+     "q": "En partant de 0 et en ajoutant 3 trois fois, quelle valeur obtient-on ?",
+     "choix": [
+      "6",
+      "3",
+      "9"
+     ],
+     "rep": "9",
+     "expl": "0 + 3 + 3 + 3 = 9."
+    },
+    {
+     "q": "La valeur 10 dépasse-t-elle strictement 10 ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement si elle est entière"
+     ],
+     "rep": "Non",
+     "expl": "Une valeur strictement supérieure à 10 doit être plus grande que 10."
+    }
+   ],
+   "id": "REV-MA-2DE-04"
+  },
+  {
+   "axe": "Nombres et calculs, algèbre",
+   "titre": "Familles de nombres",
+   "emoji": "🔢",
+   "en_une_phrase": "Les ensembles de nombres s’emboîtent selon les écritures et les propriétés des nombres.",
+   "comprendre": "Tu connais les entiers et les fractions. Les nombres décimaux possèdent une écriture décimale finie ; les rationnels sont des quotients d’entiers avec un dénominateur non nul. Certains réels, comme √2, ne sont pas rationnels.",
+   "essentiel": [
+    "ℕ désigne les entiers naturels et ℤ les entiers relatifs.",
+    "Tout nombre décimal est rationnel.",
+    "√2 est irrationnel."
+   ],
+   "image_mentale": "Imagine des ensembles emboîtés : entiers, décimaux, rationnels, réels.",
+   "regle_ou_methode": "Cherche une écriture décimale finie, un quotient d’entiers ou utilise une propriété connue du nombre.",
+   "exemples": [
+    "Le nombre 0,75 s’écrit 75/100 puis 3/4. Il est décimal et rationnel. Il appartient aussi à l’ensemble des réels.",
+    "Le nombre 1/3 est rationnel mais ne possède pas d’écriture décimale finie."
+   ],
+   "piege": "Un nombre rationnel n’est pas forcément décimal.",
+   "astuce_memoire": "Décimal implique rationnel ; la réciproque est fausse.",
+   "quiz": [
+    {
+     "q": "Le nombre 0,75 est-il rationnel ?",
+     "choix": [
+      "Non",
+      "Seulement s’il est entier",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "0,75 = 3/4."
+    },
+    {
+     "q": "Le nombre 1/3 est-il décimal au sens d’une écriture décimale finie ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement si on l’arrondit"
+     ],
+     "rep": "Non",
+     "expl": "Son écriture décimale ne se termine pas."
+    },
+    {
+     "q": "Quel nombre est irrationnel ?",
+     "choix": [
+      "3/4",
+      "√2",
+      "−5"
+     ],
+     "rep": "√2",
+     "expl": "√2 ne peut pas s’écrire comme quotient de deux entiers."
+    }
+   ],
+   "id": "REV-MA-2DE-05"
+  },
+  {
+   "axe": "Nombres et calculs, algèbre",
+   "titre": "Valeur absolue et distance",
+   "emoji": "📍",
+   "en_une_phrase": "La valeur absolue |x − a| représente la distance entre x et a sur la droite réelle.",
+   "comprendre": "Sur une règle, une distance est toujours positive ou nulle. La valeur absolue permet d’écrire cette distance même si la différence est négative. Elle aide à décrire les nombres proches d’un centre.",
+   "essentiel": [
+    "|x| est la distance de x à 0.",
+    "|x − a| est la distance de x à a.",
+    "|x − a| ≤ r, avec r ≥ 0, équivaut à a − r ≤ x ≤ a + r."
+   ],
+   "image_mentale": "Imagine un point central et une zone située à une distance au plus égale à r.",
+   "regle_ou_methode": "Interprète la valeur absolue comme une distance, puis détermine les deux bornes.",
+   "exemples": [
+    "Pour résoudre |x − 3| ≤ 2, cherche les nombres situés à une distance au plus 2 de 3. La borne basse est 3 − 2 = 1 et la haute 3 + 2 = 5. L’ensemble des solutions est [1 ; 5].",
+    "La distance entre −2 et 4 vaut |−2 − 4| = 6."
+   ],
+   "piege": "Une distance ne peut pas être négative et « au plus » inclut la limite.",
+   "astuce_memoire": "Centre moins rayon, centre plus rayon.",
+   "quiz": [
+    {
+     "q": "Quel intervalle résout |x − 3| ≤ 2 ?",
+     "choix": [
+      "[1 ; 5]",
+      "]1 ; 5[",
+      "[−2 ; 3]"
+     ],
+     "rep": "[1 ; 5]",
+     "expl": "Les nombres à une distance au plus 2 de 3 sont compris entre 1 et 5 inclus."
+    },
+    {
+     "q": "Quelle est la distance entre −2 et 4 ?",
+     "choix": [
+      "−6",
+      "6",
+      "2"
+     ],
+     "rep": "6",
+     "expl": "|−2 − 4| = 6."
+    },
+    {
+     "q": "Que représente |x| ?",
+     "choix": [
+      "Toujours le nombre opposé de x",
+      "Le carré de x",
+      "La distance de x à 0"
+     ],
+     "rep": "La distance de x à 0",
+     "expl": "La valeur absolue est une distance positive ou nulle."
+    }
+   ],
+   "id": "REV-MA-2DE-06"
+  },
+  {
+   "axe": "Nombres et calculs, algèbre",
+   "titre": "Racines carrées et calcul",
+   "emoji": "📐",
+   "en_une_phrase": "Les règles sur les racines carrées exigent de vérifier que les nombres concernés sont positifs ou nuls.",
+   "comprendre": "Tu sais qu’une racine carrée est positive ou nulle. Certaines règles permettent de transformer des produits sous une racine. Elles n’autorisent pas à séparer une somme de la même façon.",
+   "essentiel": [
+    "Pour a et b positifs ou nuls, √(ab) = √a × √b.",
+    "Pour tout réel a, √(a²) = |a|.",
+    "En général, √(a + b) n’est pas égal à √a + √b."
+   ],
+   "image_mentale": "Imagine un carré dont la longueur du côté est toujours positive.",
+   "regle_ou_methode": "Vérifie les conditions, repère un carré parfait puis simplifie.",
+   "exemples": [
+    "Pour simplifier √72, écris 72 = 36 × 2. Alors √72 = √36 × √2. Le résultat exact est 6√2.",
+    "√((-3)²) = 3 car la racine carrée est positive ou nulle."
+   ],
+   "piege": "√(a²) vaut |a|, pas toujours a.",
+   "astuce_memoire": "Racine d’un carré : valeur absolue.",
+   "quiz": [
+    {
+     "q": "Que vaut √72 sous forme simplifiée ?",
+     "choix": [
+      "8√2",
+      "6√2",
+      "36√2"
+     ],
+     "rep": "6√2",
+     "expl": "72 = 36 × 2, donc √72 = 6√2."
+    },
+    {
+     "q": "Que vaut √((-3)²) ?",
+     "choix": [
+      "−3",
+      "9",
+      "3"
+     ],
+     "rep": "3",
+     "expl": "La racine carrée désigne la valeur positive ou nulle."
+    },
+    {
+     "q": "L’égalité √(9 + 16) = √9 + √16 est-elle vraie ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, si les nombres sont positifs"
+     ],
+     "rep": "Non",
+     "expl": "Le premier membre vaut 5 et le second 7."
+    }
+   ],
+   "id": "REV-MA-2DE-07"
+  },
+  {
+   "axe": "Nombres et calculs, algèbre",
+   "titre": "Équations et produits",
+   "emoji": "⚖️",
+   "en_une_phrase": "Une équation peut être résolue en isolant l’inconnue ou en annulant les facteurs d’un produit.",
+   "comprendre": "Tu peux représenter une égalité par une balance. Une équation linéaire se transforme en effectuant les mêmes opérations des deux côtés. Une équation factorisée utilise aussi la propriété du produit nul.",
+   "essentiel": [
+    "Les solutions rendent l’égalité vraie.",
+    "On conserve l’égalité en effectuant la même opération autorisée des deux côtés.",
+    "Un produit est nul si au moins un de ses facteurs est nul."
+   ],
+   "image_mentale": "Imagine une balance puis deux branches, une pour chaque facteur nul.",
+   "regle_ou_methode": "Choisis la méthode adaptée, résous puis vérifie les solutions.",
+   "exemples": [
+    "Pour résoudre 4x − 7 = 2x + 5, soustrais 2x puis ajoute 7 : 2x = 12. Divise par 2 : x = 6. Vérifie : les deux membres valent 17.",
+    "(2x − 4)(x + 1) = 0 a pour solutions 2 et −1."
+   ],
+   "piege": "Ne divise pas par une expression contenant x sans examiner si elle peut être nulle.",
+   "astuce_memoire": "Isoler ou annuler les facteurs, puis vérifier.",
+   "quiz": [
+    {
+     "q": "Quelle solution vérifie 4x − 7 = 2x + 5 ?",
+     "choix": [
+      "−6",
+      "1",
+      "6"
+     ],
+     "rep": "6",
+     "expl": "Pour x = 6, les deux membres valent 17."
+    },
+    {
+     "q": "Quelles sont les solutions de (2x − 4)(x + 1) = 0 ?",
+     "choix": [
+      "2 et −1",
+      "−2 et 1",
+      "2 seulement"
+     ],
+     "rep": "2 et −1",
+     "expl": "Chaque facteur peut être nul : x = 2 ou x = −1."
+    },
+    {
+     "q": "Pourquoi éviter de diviser sans examen par x ?",
+     "choix": [
+      "Parce que x est toujours négatif",
+      "Parce que x peut être nul",
+      "Parce qu’une égalité ne peut pas être transformée"
+     ],
+     "rep": "Parce que x peut être nul",
+     "expl": "La division par zéro est impossible et pourrait faire perdre une solution."
+    }
+   ],
+   "id": "REV-MA-2DE-08"
+  },
+  {
+   "axe": "Nombres et calculs, algèbre",
+   "titre": "Inéquations et signes",
+   "emoji": "⚖️",
+   "en_une_phrase": "Multiplier ou diviser une inégalité par un nombre négatif inverse son sens.",
+   "comprendre": "Comparer deux nombres demande de respecter leur ordre. Ajouter une même valeur aux deux membres conserve cet ordre. Multiplier par un nombre négatif inverse leur position sur la droite réelle.",
+   "essentiel": [
+    "Ajouter un même nombre conserve le sens de l’inégalité.",
+    "Multiplier par un nombre positif conserve le sens.",
+    "Multiplier ou diviser par un nombre négatif inverse le sens."
+   ],
+   "image_mentale": "Imagine deux points sur une droite puis leurs opposés placés en ordre inverse.",
+   "regle_ou_methode": "Isole l’inconnue en suivant les opérations et inverse le signe si tu divises par un négatif.",
+   "exemples": [
+    "Pour résoudre −3x + 2 ≤ 8, soustrais 2 : −3x ≤ 6. Divise par −3 et inverse le signe : x ≥ −2. L’ensemble des solutions est [−2 ; +∞[.",
+    "2x − 1 > 5 donne 2x > 6 puis x > 3."
+   ],
+   "piege": "Le signe ne s’inverse pas quand on ajoute ou soustrait une même valeur.",
+   "astuce_memoire": "Produit ou division par un négatif : signe inversé.",
+   "quiz": [
+    {
+     "q": "Résous −3x + 2 ≤ 8.",
+     "choix": [
+      "x ≥ −2",
+      "x ≤ −2",
+      "x ≥ 2"
+     ],
+     "rep": "x ≥ −2",
+     "expl": "Après division par −3, le sens s’inverse."
+    },
+    {
+     "q": "Résous 2x − 1 > 5.",
+     "choix": [
+      "x < 3",
+      "x > 3",
+      "x > 2"
+     ],
+     "rep": "x > 3",
+     "expl": "2x > 6 puis x > 3."
+    },
+    {
+     "q": "Quelle opération inverse nécessairement le sens d’une inégalité ?",
+     "choix": [
+      "Ajouter 2 aux deux membres",
+      "Diviser les deux membres par 2",
+      "Multiplier les deux membres par −2"
+     ],
+     "rep": "Multiplier les deux membres par −2",
+     "expl": "Multiplier par un nombre négatif inverse l’ordre."
+    }
+   ],
+   "id": "REV-MA-2DE-09"
+  },
+  {
+   "axe": "Nombres et calculs, algèbre",
+   "titre": "Équation quotient",
+   "emoji": "➗",
+   "en_une_phrase": "Une équation contenant un quotient exige d’exclure les valeurs qui annulent son dénominateur.",
+   "comprendre": "Une division par zéro n’est pas définie. Avant de résoudre une équation quotient, il faut donc repérer les valeurs interdites. On résout ensuite l’égalité en conservant cette restriction.",
+   "essentiel": [
+    "Un dénominateur doit être non nul.",
+    "Une valeur interdite ne peut pas être solution.",
+    "Une fraction est nulle quand son numérateur est nul et son dénominateur non nul."
+   ],
+   "image_mentale": "Imagine une porte fermée aux valeurs qui rendent le dénominateur nul.",
+   "regle_ou_methode": "Détermine les valeurs interdites, résous l’équation puis vérifie les solutions.",
+   "exemples": [
+    "Pour résoudre (x − 2)/(x + 1) = 0, exclus d’abord x = −1. Le quotient est nul quand x − 2 = 0. Donc x = 2 est solution et elle est autorisée.",
+    "Pour 1/(x − 3), la valeur x = 3 est interdite."
+   ],
+   "piege": "Ne retiens jamais une solution qui annule le dénominateur.",
+   "astuce_memoire": "Dénominateur non nul avant tout calcul.",
+   "quiz": [
+    {
+     "q": "Quelle est la solution de (x − 2)/(x + 1) = 0 ?",
+     "choix": [
+      "−1",
+      "2",
+      "−2"
+     ],
+     "rep": "2",
+     "expl": "Le numérateur s’annule en 2 et le dénominateur y vaut 3."
+    },
+    {
+     "q": "Quelle valeur est interdite pour 1/(x − 3) ?",
+     "choix": [
+      "−3",
+      "0",
+      "3"
+     ],
+     "rep": "3",
+     "expl": "Le dénominateur s’annule pour x = 3."
+    },
+    {
+     "q": "Quand une fraction est-elle nulle ?",
+     "choix": [
+      "Quand son numérateur est nul et son dénominateur non nul",
+      "Quand son dénominateur est nul",
+      "Quand ses deux termes sont égaux"
+     ],
+     "rep": "Quand son numérateur est nul et son dénominateur non nul",
+     "expl": "Un quotient nul a un numérateur nul et un dénominateur non nul."
+    }
+   ],
+   "id": "REV-MA-2DE-10"
+  },
+  {
+   "axe": "Nombres et calculs, algèbre",
+   "titre": "Signe d’un produit",
+   "emoji": "➕",
+   "en_une_phrase": "Le signe d’un produit dépend des signes de ses facteurs.",
+   "comprendre": "Tu peux déterminer le signe d’un produit sans calculer sa valeur exacte. Deux facteurs de même signe donnent un produit positif ; deux facteurs de signes opposés donnent un produit négatif. Les zéros des facteurs délimitent les intervalles à étudier.",
+   "essentiel": [
+    "Le produit de deux nombres positifs est positif.",
+    "Le produit de deux nombres négatifs est positif.",
+    "Un facteur nul rend le produit nul."
+   ],
+   "image_mentale": "Imagine une ligne graduée découpée aux zéros des facteurs.",
+   "regle_ou_methode": "Trouve les zéros, détermine le signe de chaque facteur sur chaque intervalle puis combine-les.",
+   "exemples": [
+    "Pour (x − 1)(x + 2), les zéros sont −2 et 1. Le produit est positif pour x < −2, négatif pour −2 < x < 1, puis positif pour x > 1. Il est nul en −2 et 1.",
+    "Pour x = 0, les facteurs valent −1 et 2 : leur produit est négatif."
+   ],
+   "piege": "Aux valeurs qui annulent un facteur, le produit vaut zéro et n’est ni strictement positif ni strictement négatif.",
+   "astuce_memoire": "Même signe : positif ; signes opposés : négatif.",
+   "quiz": [
+    {
+     "q": "Quel est le signe de (x − 1)(x + 2) pour x = 0 ?",
+     "choix": [
+      "Positif",
+      "Nul",
+      "Négatif"
+     ],
+     "rep": "Négatif",
+     "expl": "Les facteurs valent −1 et 2."
+    },
+    {
+     "q": "Pour quelles valeurs un produit est-il nul ?",
+     "choix": [
+      "Quand au moins un facteur est nul",
+      "Quand tous ses facteurs sont positifs",
+      "Quand deux facteurs ont des signes opposés"
+     ],
+     "rep": "Quand au moins un facteur est nul",
+     "expl": "Un facteur nul rend le produit nul."
+    },
+    {
+     "q": "Quel est le signe du produit de deux nombres négatifs ?",
+     "choix": [
+      "Négatif",
+      "Positif",
+      "Toujours nul"
+     ],
+     "rep": "Positif",
+     "expl": "Le produit de deux nombres négatifs est positif."
+    }
+   ],
+   "id": "REV-MA-2DE-11"
+  },
+  {
+   "axe": "Géométrie",
+   "titre": "Coordonnées d’un vecteur",
+   "emoji": "➡️",
+   "en_une_phrase": "Les coordonnées du vecteur AB se calculent en soustrayant celles de A à celles de B.",
+   "comprendre": "Un déplacement peut être décrit par un changement horizontal et un changement vertical. Dans un repère, le vecteur AB résume le déplacement de A vers B. Ses coordonnées indiquent ces deux variations.",
+   "essentiel": [
+    "Si A(xA ; yA) et B(xB ; yB), alors AB = (xB − xA ; yB − yA).",
+    "Deux vecteurs égaux ont les mêmes coordonnées dans un même repère.",
+    "Le vecteur nul a pour coordonnées (0 ; 0)."
+   ],
+   "image_mentale": "Imagine une flèche avec un déplacement horizontal puis un déplacement vertical.",
+   "regle_ou_methode": "Soustrais les abscisses dans l’ordre arrivée moins départ, puis fais de même pour les ordonnées.",
+   "exemples": [
+    "Si A(1 ; 2) et B(5 ; 7), calcule 5 − 1 = 4 puis 7 − 2 = 5. Le vecteur AB a pour coordonnées (4 ; 5). La flèche correspond à un déplacement de 4 horizontalement et 5 verticalement.",
+    "Si C(2 ; 1) et D(6 ; 6), CD a aussi pour coordonnées (4 ; 5)."
+   ],
+   "piege": "Ne calcule pas départ moins arrivée pour le vecteur AB.",
+   "astuce_memoire": "Vecteur AB : coordonnées de B moins coordonnées de A.",
+   "quiz": [
+    {
+     "q": "A(1 ; 2), B(5 ; 7) : quelles sont les coordonnées de AB ?",
+     "choix": [
+      "(4 ; 5)",
+      "(6 ; 9)",
+      "(−4 ; −5)"
+     ],
+     "rep": "(4 ; 5)",
+     "expl": "On calcule (5 − 1 ; 7 − 2)."
+    },
+    {
+     "q": "Quel est le vecteur opposé de (4 ; 5) ?",
+     "choix": [
+      "(5 ; 4)",
+      "(−4 ; −5)",
+      "(4 ; −5)"
+     ],
+     "rep": "(−4 ; −5)",
+     "expl": "On change le signe de chaque coordonnée."
+    },
+    {
+     "q": "Deux vecteurs de mêmes coordonnées sont-ils égaux dans le même repère ?",
+     "choix": [
+      "Non",
+      "Seulement si leurs origines sont les mêmes",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Des vecteurs de mêmes coordonnées représentent le même déplacement."
+    }
+   ],
+   "id": "REV-MA-2DE-12"
+  },
+  {
+   "axe": "Géométrie",
+   "titre": "Somme et produit de vecteurs",
+   "emoji": "➕",
+   "en_une_phrase": "Les opérations sur les vecteurs se calculent coordonnée par coordonnée.",
+   "comprendre": "Deux déplacements successifs peuvent être remplacés par un seul déplacement global. On additionne leurs composantes horizontales puis verticales. Multiplier un vecteur par un nombre multiplie chacune de ses coordonnées.",
+   "essentiel": [
+    "(a ; b) + (c ; d) = (a + c ; b + d).",
+    "k(a ; b) = (ka ; kb).",
+    "La relation de Chasles relie AB + BC à AC."
+   ],
+   "image_mentale": "Imagine deux flèches mises bout à bout puis la flèche directe.",
+   "regle_ou_methode": "Additionne les coordonnées correspondantes ou multiplie chacune par le nombre donné.",
+   "exemples": [
+    "Pour u = (2 ; −1) et v = (3 ; 4), additionne les premières coordonnées : 2 + 3 = 5. Additionne les secondes : −1 + 4 = 3. Donc u + v = (5 ; 3).",
+    "Si u = (2 ; −1), alors −2u = (−4 ; 2)."
+   ],
+   "piege": "N’additionne pas une abscisse avec une ordonnée.",
+   "astuce_memoire": "Horizontale avec horizontale, verticale avec verticale.",
+   "quiz": [
+    {
+     "q": "U = (2 ; −1) et v = (3 ; 4). Que vaut u + v ?",
+     "choix": [
+      "(5 ; −5)",
+      "(5 ; 3)",
+      "(6 ; −4)"
+     ],
+     "rep": "(5 ; 3)",
+     "expl": "On calcule (2 + 3 ; −1 + 4)."
+    },
+    {
+     "q": "Si u = (2 ; −1), que vaut −2u ?",
+     "choix": [
+      "(−4 ; −2)",
+      "(0 ; −3)",
+      "(−4 ; 2)"
+     ],
+     "rep": "(−4 ; 2)",
+     "expl": "Chaque coordonnée est multipliée par −2."
+    },
+    {
+     "q": "Que vaut AB + BC ?",
+     "choix": [
+      "AC",
+      "CA",
+      "BB nécessairement"
+     ],
+     "rep": "AC",
+     "expl": "La relation de Chasles donne AB + BC = AC."
+    }
+   ],
+   "id": "REV-MA-2DE-13"
+  },
+  {
+   "axe": "Géométrie",
+   "titre": "Déterminant et colinéarité",
+   "emoji": "📐",
+   "en_une_phrase": "Deux vecteurs du plan sont colinéaires si leur déterminant est nul.",
+   "comprendre": "Deux déplacements peuvent avoir la même direction, éventuellement en sens opposés. Les vecteurs correspondants sont alors colinéaires. Le déterminant des coordonnées permet de vérifier cette propriété.",
+   "essentiel": [
+    "Pour u = (a ; b) et v = (c ; d), det(u, v) = ad − bc.",
+    "Le déterminant nul caractérise la colinéarité.",
+    "La colinéarité peut servir à démontrer un alignement ou un parallélisme."
+   ],
+   "image_mentale": "Imagine deux flèches portées par des droites parallèles.",
+   "regle_ou_methode": "Calcule ad − bc puis conclus selon que le résultat est nul ou non.",
+   "exemples": [
+    "Pour u = (2 ; 3) et v = (4 ; 6), calcule 2 × 6 − 3 × 4 = 0. Le déterminant est nul. Les vecteurs sont colinéaires.",
+    "Pour u = (1 ; 2) et v = (3 ; 1), le déterminant vaut 1 − 6 = −5 : ils ne sont pas colinéaires."
+   ],
+   "piege": "Ne confonds pas le déterminant avec la somme des produits.",
+   "astuce_memoire": "Produit en diagonale moins autre produit.",
+   "quiz": [
+    {
+     "q": "Quel est le déterminant de (2 ; 3) et (4 ; 6) ?",
+     "choix": [
+      "24",
+      "−24",
+      "0"
+     ],
+     "rep": "0",
+     "expl": "2 × 6 − 3 × 4 = 0."
+    },
+    {
+     "q": "Des vecteurs de déterminant nul sont-ils colinéaires ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement si les deux sont égaux"
+     ],
+     "rep": "Oui",
+     "expl": "Dans le plan, un déterminant nul caractérise leur colinéarité."
+    },
+    {
+     "q": "Quel est le déterminant de (1 ; 2) et (3 ; 1) ?",
+     "choix": [
+      "5",
+      "−5",
+      "7"
+     ],
+     "rep": "−5",
+     "expl": "1 × 1 − 2 × 3 = −5."
+    }
+   ],
+   "id": "REV-MA-2DE-14"
+  },
+  {
+   "axe": "Géométrie",
+   "titre": "Distance et milieu",
+   "emoji": "📍",
+   "en_une_phrase": "Dans un repère orthonormé, les coordonnées permettent de calculer une distance et un milieu.",
+   "comprendre": "Un point est repéré par une position horizontale et une position verticale. Le milieu se trouve à mi-chemin sur chaque coordonnée. La distance se calcule avec le théorème de Pythagore dans un repère orthonormé.",
+   "essentiel": [
+    "Le milieu de A et B a pour coordonnées ((xA + xB)/2 ; (yA + yB)/2).",
+    "AB = √((xB − xA)² + (yB − yA)²) dans un repère orthonormé.",
+    "Une distance est positive ou nulle."
+   ],
+   "image_mentale": "Imagine un rectangle dont la diagonale relie les deux points.",
+   "regle_ou_methode": "Calcule les différences pour la distance et les moyennes pour le milieu.",
+   "exemples": [
+    "Pour A(1 ; 2) et B(5 ; 5), les écarts sont 4 et 3. La distance est √(4² + 3²) = √25 = 5. Le milieu est (3 ; 3,5).",
+    "Le milieu de C(0 ; 0) et D(4 ; 2) est (2 ; 1)."
+   ],
+   "piege": "La formule de distance indiquée suppose un repère orthonormé.",
+   "astuce_memoire": "Milieu : moyenne des coordonnées ; distance : Pythagore.",
+   "quiz": [
+    {
+     "q": "A(1 ; 2), B(5 ; 5) dans un repère orthonormé : quelle distance ?",
+     "choix": [
+      "5",
+      "7",
+      "25"
+     ],
+     "rep": "5",
+     "expl": "√(4² + 3²) = 5."
+    },
+    {
+     "q": "Quel est le milieu de C(0 ; 0) et D(4 ; 2) ?",
+     "choix": [
+      "(4 ; 2)",
+      "(2 ; 1)",
+      "(2 ; 2)"
+     ],
+     "rep": "(2 ; 1)",
+     "expl": "On prend la moyenne de chaque coordonnée."
+    },
+    {
+     "q": "Le point M(3 ; 3,5) est-il le milieu de A(1 ; 2) et B(5 ; 5) ?",
+     "choix": [
+      "Non",
+      "Seulement si A et B sont confondus",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Les moyennes des coordonnées sont 3 et 3,5."
+    }
+   ],
+   "id": "REV-MA-2DE-15"
+  },
+  {
+   "axe": "Géométrie",
+   "titre": "Équation réduite d’une droite",
+   "emoji": "📈",
+   "en_une_phrase": "Une droite non verticale peut s’écrire sous la forme y = mx + p.",
+   "comprendre": "Une fonction affine associe à x une valeur qui varie régulièrement. Sa courbe est une droite. Le coefficient m mesure la pente et p donne l’ordonnée du point où la droite coupe l’axe vertical.",
+   "essentiel": [
+    "Dans y = mx + p, m est le coefficient directeur.",
+    "p est l’ordonnée à l’origine.",
+    "Une droite verticale ne possède pas d’équation réduite de cette forme."
+   ],
+   "image_mentale": "Imagine une droite qui coupe l’axe vertical en p puis monte de m lorsque x augmente de 1.",
+   "regle_ou_methode": "Identifie m et p, puis vérifie les coordonnées d’un point en remplaçant x et y.",
+   "exemples": [
+    "Pour y = 2x + 1, la pente est 2 et l’ordonnée à l’origine est 1. Pour x = 3, calcule y = 2 × 3 + 1 = 7. Le point (3 ; 7) appartient à la droite.",
+    "La droite x = 2 est verticale et ne s’écrit pas sous la forme y = mx + p."
+   ],
+   "piege": "Toutes les droites ne sont pas les courbes de fonctions affines : les droites verticales font exception.",
+   "astuce_memoire": "Pente m, ordonnée à l’origine p.",
+   "quiz": [
+    {
+     "q": "Quelle est la pente de y = 2x + 1 ?",
+     "choix": [
+      "1",
+      "2",
+      "3"
+     ],
+     "rep": "2",
+     "expl": "Le coefficient de x est 2."
+    },
+    {
+     "q": "Le point (3 ; 7) appartient-il à y = 2x + 1 ?",
+     "choix": [
+      "Non",
+      "Seulement si x = 0",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "2 × 3 + 1 = 7."
+    },
+    {
+     "q": "La droite x = 2 a-t-elle une équation réduite y = mx + p ?",
+     "choix": [
+      "Non",
+      "Oui, avec m = 2",
+      "Oui, avec p = 2"
+     ],
+     "rep": "Non",
+     "expl": "Une droite verticale n’est pas la courbe d’une fonction affine de x."
+    }
+   ],
+   "id": "REV-MA-2DE-16"
+  },
+  {
+   "axe": "Géométrie",
+   "titre": "Intersection de deux droites",
+   "emoji": "✖️",
+   "en_une_phrase": "Le point d’intersection de deux droites vérifie simultanément leurs équations.",
+   "comprendre": "Si deux trajets se croisent, le lieu de rencontre appartient aux deux. Pour deux droites non verticales, on peut égaler leurs expressions de y. On calcule ensuite les coordonnées communes.",
+   "essentiel": [
+    "Un point d’intersection appartient aux deux droites.",
+    "On peut résoudre l’égalité des deux expressions de y.",
+    "Des droites de pentes différentes sont sécantes."
+   ],
+   "image_mentale": "Imagine deux droites qui se croisent en un point.",
+   "regle_ou_methode": "Égale les expressions de y, résous pour x puis calcule y.",
+   "exemples": [
+    "Pour y = 2x + 1 et y = −x + 7, écris 2x + 1 = −x + 7. On obtient 3x = 6 puis x = 2. Ainsi y = 5 et l’intersection est (2 ; 5).",
+    "Les droites y = x + 1 et y = x − 2 sont parallèles et distinctes."
+   ],
+   "piege": "Deux droites de même pente peuvent être confondues ou parallèles distinctes.",
+   "astuce_memoire": "Égaler, résoudre, remplacer.",
+   "quiz": [
+    {
+     "q": "Quelle est l’intersection de y = 2x + 1 et y = −x + 7 ?",
+     "choix": [
+      "(2 ; 3)",
+      "(1 ; 3)",
+      "(2 ; 5)"
+     ],
+     "rep": "(2 ; 5)",
+     "expl": "2 × 2 + 1 = −2 + 7 = 5."
+    },
+    {
+     "q": "Les droites y = x + 1 et y = x − 2 sont-elles sécantes ?",
+     "choix": [
+      "Non, elles sont parallèles distinctes",
+      "Oui, en (0 ; 1)",
+      "Oui, à l’origine"
+     ],
+     "rep": "Non, elles sont parallèles distinctes",
+     "expl": "Elles ont la même pente et des ordonnées à l’origine différentes."
+    },
+    {
+     "q": "Que vérifient les coordonnées du point d’intersection ?",
+     "choix": [
+      "Une seule équation nécessairement",
+      "Les deux équations",
+      "Aucune équation"
+     ],
+     "rep": "Les deux équations",
+     "expl": "Le point commun appartient aux deux droites."
+    }
+   ],
+   "id": "REV-MA-2DE-17"
+  },
+  {
+   "axe": "Géométrie",
+   "titre": "Équation cartésienne",
+   "emoji": "📏",
+   "en_une_phrase": "Une équation cartésienne d’une droite s’écrit ax + by + c = 0 avec a et b non tous deux nuls.",
+   "comprendre": "Une droite peut être décrite par les coordonnées des points qui lui appartiennent. Une équation cartésienne exprime une relation vérifiée par tous ces points. Elle décrit aussi les droites verticales.",
+   "essentiel": [
+    "Une droite peut s’écrire ax + by + c = 0 avec a et b non tous deux nuls.",
+    "Un point appartient à la droite si ses coordonnées vérifient l’équation.",
+    "Un vecteur directeur possible est (−b ; a)."
+   ],
+   "image_mentale": "Imagine des points qui satisfont tous la même relation entre leurs coordonnées.",
+   "regle_ou_methode": "Remplace x et y par les coordonnées du point, puis vérifie si le résultat vaut zéro.",
+   "exemples": [
+    "Pour la droite 2x − y + 1 = 0, teste le point (2 ; 5). Calcule 2 × 2 − 5 + 1 = 0. Le point appartient donc à la droite.",
+    "La droite verticale x = 3 s’écrit aussi x − 3 = 0."
+   ],
+   "piege": "Une équation cartésienne ne doit pas avoir a et b tous les deux nuls.",
+   "astuce_memoire": "Un point appartient à la droite si son calcul donne zéro.",
+   "quiz": [
+    {
+     "q": "Le point (2 ; 5) appartient-il à 2x − y + 1 = 0 ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement si x = 0"
+     ],
+     "rep": "Oui",
+     "expl": "2 × 2 − 5 + 1 = 0."
+    },
+    {
+     "q": "Quelle équation décrit la droite verticale x = 3 ?",
+     "choix": [
+      "y − 3 = 0",
+      "x − 3 = 0",
+      "x + y = 0"
+     ],
+     "rep": "x − 3 = 0",
+     "expl": "x − 3 = 0 équivaut à x = 3."
+    },
+    {
+     "q": "Quel vecteur est directeur de 2x − y + 1 = 0 ?",
+     "choix": [
+      "(2 ; −1)",
+      "(0 ; 0)",
+      "(1 ; 2)"
+     ],
+     "rep": "(1 ; 2)",
+     "expl": "Avec a = 2 et b = −1, (−b ; a) = (1 ; 2)."
+    }
+   ],
+   "id": "REV-MA-2DE-18"
+  },
+  {
+   "axe": "Fonctions",
+   "titre": "Domaine de définition",
+   "emoji": "🔍",
+   "en_une_phrase": "Le domaine de définition d’une fonction rassemble les valeurs pour lesquelles son expression a un sens.",
+   "comprendre": "Une formule peut comporter une division ou une racine carrée. Certaines valeurs de x rendent alors le calcul impossible dans les réels. Il faut les exclure avant de calculer ou de résoudre.",
+   "essentiel": [
+    "Un dénominateur ne peut pas être nul.",
+    "Sous une racine carrée réelle, l’expression doit être positive ou nulle.",
+    "Le domaine réunit les valeurs autorisées."
+   ],
+   "image_mentale": "Imagine une porte qui ne laisse entrer que les valeurs autorisées.",
+   "regle_ou_methode": "Écris les contraintes de la formule puis rassemble les valeurs qui les satisfont.",
+   "exemples": [
+    "Pour f(x) = 1/(x − 2), impose x − 2 ≠ 0. Donc x ≠ 2. Le domaine est l’ensemble des réels sauf 2.",
+    "Pour g(x) = √(x + 3), il faut x + 3 ≥ 0, donc x ≥ −3."
+   ],
+   "piege": "N’accepte pas une valeur qui annule le dénominateur.",
+   "astuce_memoire": "Dénominateur non nul ; sous la racine : au moins zéro.",
+   "quiz": [
+    {
+     "q": "Quelle valeur est interdite pour f(x) = 1/(x − 2) ?",
+     "choix": [
+      "−2",
+      "2",
+      "0"
+     ],
+     "rep": "2",
+     "expl": "Pour x = 2, le dénominateur est nul."
+    },
+    {
+     "q": "Quel est le domaine de g(x) = √(x + 3) ?",
+     "choix": [
+      "]−∞ ; −3]",
+      "[3 ; +∞[",
+      "[−3 ; +∞["
+     ],
+     "rep": "[−3 ; +∞[",
+     "expl": "Il faut x + 3 ≥ 0, donc x ≥ −3."
+    },
+    {
+     "q": "La valeur −3 est-elle autorisée pour √(x + 3) ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement dans les nombres complexes"
+     ],
+     "rep": "Oui",
+     "expl": "Elle donne √0, qui existe dans les réels."
+    }
+   ],
+   "id": "REV-MA-2DE-19"
+  },
+  {
+   "axe": "Fonctions",
+   "titre": "Images et antécédents",
+   "emoji": "📈",
+   "en_une_phrase": "Une fonction associe une image à chaque valeur de son domaine.",
+   "comprendre": "Une formule peut transformer une entrée en résultat. Calculer une image consiste à remplacer la variable. Chercher un antécédent consiste à résoudre une équation.",
+   "essentiel": [
+    "L’image de x par f se note f(x).",
+    "Un antécédent de y est un nombre x tel que f(x) = y.",
+    "Un nombre peut avoir plusieurs antécédents."
+   ],
+   "image_mentale": "Imagine une machine avec une entrée et une sortie.",
+   "regle_ou_methode": "Pour une image, remplace x ; pour un antécédent, résous l’équation correspondant à la sortie.",
+   "exemples": [
+    "Soit f(x) = x² − 1. Pour x = 3, calcule 3² − 1 = 8. L’image de 3 est 8.",
+    "Les antécédents de 8 vérifient x² − 1 = 8, donc x² = 9 : ce sont −3 et 3."
+   ],
+   "piege": "Une image est unique pour chaque entrée du domaine, mais elle peut avoir plusieurs antécédents.",
+   "astuce_memoire": "Entrée : antécédent ; sortie : image.",
+   "quiz": [
+    {
+     "q": "Pour f(x) = x² − 1, quelle est l’image de 3 ?",
+     "choix": [
+      "2",
+      "10",
+      "8"
+     ],
+     "rep": "8",
+     "expl": "3² − 1 = 8."
+    },
+    {
+     "q": "Quels sont les antécédents de 8 pour cette fonction ?",
+     "choix": [
+      "−3 et 3",
+      "3 seulement",
+      "−8 et 8"
+     ],
+     "rep": "−3 et 3",
+     "expl": "x² − 1 = 8 équivaut à x² = 9."
+    },
+    {
+     "q": "Une fonction peut-elle associer deux images différentes à une même entrée de son domaine ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Oui, si l’entrée est négative"
+     ],
+     "rep": "Non",
+     "expl": "Une fonction associe une unique image à chaque entrée de son domaine."
+    }
+   ],
+   "id": "REV-MA-2DE-20"
+  },
+  {
+   "axe": "Fonctions",
+   "titre": "Fonction affine",
+   "emoji": "📏",
+   "en_une_phrase": "Une fonction affine f(x) = mx + p varie régulièrement selon son coefficient m.",
+   "comprendre": "Une situation peut associer une valeur initiale à une variation constante. Dans une fonction affine, p est la valeur pour x = 0. Le signe de m indique si la fonction augmente ou diminue.",
+   "essentiel": [
+    "f(x) = mx + p.",
+    "p est l’image de 0.",
+    "Si m > 0, la fonction est croissante ; si m < 0, elle est décroissante."
+   ],
+   "image_mentale": "Imagine une droite partant de p et montant ou descendant selon la pente.",
+   "regle_ou_methode": "Lis m et p, puis utilise le signe de m pour déterminer les variations.",
+   "exemples": [
+    "Pour f(x) = −2x + 5, le coefficient m est −2. Il est négatif, donc la fonction est décroissante. Son image de 0 est 5.",
+    "Pour g(x) = 3x − 1, la fonction est croissante car 3 est positif."
+   ],
+   "piege": "Si m = 0, la fonction est constante.",
+   "astuce_memoire": "Pente positive : croissante ; pente négative : décroissante.",
+   "quiz": [
+    {
+     "q": "Quel est le sens de variation de f(x) = −2x + 5 ?",
+     "choix": [
+      "Décroissante",
+      "Croissante",
+      "Constante"
+     ],
+     "rep": "Décroissante",
+     "expl": "Son coefficient directeur −2 est négatif."
+    },
+    {
+     "q": "Que vaut f(0) pour f(x) = −2x + 5 ?",
+     "choix": [
+      "−2",
+      "5",
+      "0"
+     ],
+     "rep": "5",
+     "expl": "f(0) = 5."
+    },
+    {
+     "q": "Que devient une fonction affine quand son coefficient m vaut 0 ?",
+     "choix": [
+      "Elle est strictement croissante",
+      "Elle est toujours non définie",
+      "Elle est constante"
+     ],
+     "rep": "Elle est constante",
+     "expl": "f(x) = p est indépendante de x."
+    }
+   ],
+   "id": "REV-MA-2DE-21"
+  },
+  {
+   "axe": "Fonctions",
+   "titre": "Fonction carré",
+   "emoji": "⬛",
+   "en_une_phrase": "La fonction carré f(x) = x² diminue jusqu’à 0 puis augmente sur les réels.",
+   "comprendre": "Deux nombres opposés ont le même carré. Quand un nombre négatif se rapproche de 0, son carré diminue. Après 0, le carré augmente avec le nombre positif.",
+   "essentiel": [
+    "La fonction carré est définie sur ℝ.",
+    "Elle est décroissante sur ]−∞ ; 0] et croissante sur [0 ; +∞[.",
+    "Son minimum est 0, atteint en 0."
+   ],
+   "image_mentale": "Imagine une courbe en U dont le point le plus bas est à l’origine.",
+   "regle_ou_methode": "Repère de quel côté de 0 se trouvent les nombres avant de comparer leurs carrés.",
+   "exemples": [
+    "Pour comparer (−3)² et (−1)², calcule 9 et 1. Bien que −3 < −1, son carré est plus grand. La fonction carré est décroissante sur les nombres négatifs.",
+    "Les solutions de x² = 4 sont −2 et 2."
+   ],
+   "piege": "La fonction carré ne conserve pas l’ordre sur tous les réels.",
+   "astuce_memoire": "Sur les négatifs elle descend ; sur les positifs elle monte.",
+   "quiz": [
+    {
+     "q": "Quel est le minimum de x² sur ℝ ?",
+     "choix": [
+      "−1",
+      "0",
+      "Il n’existe pas"
+     ],
+     "rep": "0",
+     "expl": "Un carré est positif ou nul et vaut 0 en 0."
+    },
+    {
+     "q": "Quelles sont les solutions de x² = 4 ?",
+     "choix": [
+      "2 seulement",
+      "−4 et 4",
+      "−2 et 2"
+     ],
+     "rep": "−2 et 2",
+     "expl": "Les carrés de −2 et de 2 valent 4."
+    },
+    {
+     "q": "Sur ]−∞ ; 0], la fonction carré est :",
+     "choix": [
+      "Décroissante",
+      "Croissante",
+      "Constante"
+     ],
+     "rep": "Décroissante",
+     "expl": "Quand x se rapproche de 0 depuis les négatifs, x² diminue."
+    }
+   ],
+   "id": "REV-MA-2DE-22"
+  },
+  {
+   "axe": "Fonctions",
+   "titre": "Fonction inverse",
+   "emoji": "➗",
+   "en_une_phrase": "La fonction inverse f(x) = 1/x n’est pas définie en 0.",
+   "comprendre": "Diviser par un nombre non nul donne son inverse. Plus un nombre positif grandit, plus son inverse est petit. Les nombres négatifs et positifs appartiennent à deux intervalles séparés par 0.",
+   "essentiel": [
+    "Le domaine est ℝ privé de 0.",
+    "La fonction inverse est décroissante sur ]−∞ ; 0[ et sur ]0 ; +∞[.",
+    "1/2 est positif et 1/(−2) est négatif."
+   ],
+   "image_mentale": "Imagine deux branches de courbe séparées par l’axe vertical.",
+   "regle_ou_methode": "Vérifie d’abord que x n’est pas nul, puis distingue son signe et l’intervalle étudié.",
+   "exemples": [
+    "Pour calculer l’image de 4, on effectue 1 ÷ 4. Cela donne 0,25. L’image de 4 est donc 0,25.",
+    "La fonction n’a pas d’image en 0 car la division par 0 n’est pas définie."
+   ],
+   "piege": "Ne dis pas qu’elle est décroissante sur tout son domaine sans préciser les deux intervalles séparés.",
+   "astuce_memoire": "Inverse : exclure zéro et étudier chaque côté.",
+   "quiz": [
+    {
+     "q": "Que vaut 1/4 ?",
+     "choix": [
+      "4",
+      "−0,25",
+      "0,25"
+     ],
+     "rep": "0,25",
+     "expl": "1 ÷ 4 = 0,25."
+    },
+    {
+     "q": "La fonction inverse est-elle définie en 0 ?",
+     "choix": [
+      "Non",
+      "Oui, elle vaut 0",
+      "Oui, elle vaut 1"
+     ],
+     "rep": "Non",
+     "expl": "La division par zéro n’est pas définie."
+    },
+    {
+     "q": "Sur ]0 ; +∞[, la fonction inverse est :",
+     "choix": [
+      "Croissante",
+      "Décroissante",
+      "Constante"
+     ],
+     "rep": "Décroissante",
+     "expl": "Plus x positif augmente, plus 1/x diminue."
+    }
+   ],
+   "id": "REV-MA-2DE-23"
+  },
+  {
+   "axe": "Fonctions",
+   "titre": "Variations et extremums",
+   "emoji": "📊",
+   "en_une_phrase": "Un tableau de variations indique où une fonction augmente ou diminue et ses éventuels extremums.",
+   "comprendre": "Un graphique peut monter puis descendre comme un relief. Les variations décrivent le sens d’évolution des valeurs quand x augmente. Un maximum ou un minimum dépend du domaine étudié.",
+   "essentiel": [
+    "Une fonction croissante ne diminue pas lorsque x augmente.",
+    "Un maximum est la plus grande valeur atteinte sur le domaine étudié.",
+    "Un minimum est la plus petite valeur atteinte sur ce domaine."
+   ],
+   "image_mentale": "Imagine une courbe comme un chemin qui monte vers un sommet puis redescend.",
+   "regle_ou_methode": "Lis les intervalles de montée et de descente puis repère les valeurs extrêmes atteintes.",
+   "exemples": [
+    "Sur [0 ; 4], une fonction monte de 1 à 5 entre 0 et 2, puis descend à 3 en 4. Sa plus grande valeur est 5. Son maximum sur cet intervalle est donc 5, atteint en 2.",
+    "La fonction carré a un minimum de 0 sur ℝ."
+   ],
+   "piege": "La valeur maximale et l’abscisse où elle est atteinte sont deux informations différentes.",
+   "astuce_memoire": "Variation : sens ; extremum : valeur atteinte.",
+   "quiz": [
+    {
+     "q": "Une fonction monte à 5 puis redescend ; quelle est sa valeur maximale si les autres valeurs sont inférieures ?",
+     "choix": [
+      "5",
+      "2 nécessairement",
+      "0 nécessairement"
+     ],
+     "rep": "5",
+     "expl": "Le maximum est la plus grande valeur atteinte."
+    },
+    {
+     "q": "Dans l’exemple, en quelle abscisse le maximum est-il atteint ?",
+     "choix": [
+      "5",
+      "2",
+      "4"
+     ],
+     "rep": "2",
+     "expl": "L’énoncé indique que la fonction atteint 5 en x = 2."
+    },
+    {
+     "q": "Quel est le minimum de x² sur ℝ ?",
+     "choix": [
+      "−1",
+      "Il n’existe pas",
+      "0"
+     ],
+     "rep": "0",
+     "expl": "Tout carré est positif ou nul, et 0² = 0."
+    }
+   ],
+   "id": "REV-MA-2DE-24"
+  },
+  {
+   "axe": "Fonctions",
+   "titre": "Racine carrée et cube",
+   "emoji": "📈",
+   "en_une_phrase": "Les fonctions racine carrée et cube ont des domaines et des variations à connaître.",
+   "comprendre": "Tu connais le carré et la racine carrée d’un nombre positif. La fonction racine carrée est définie pour les réels positifs ou nuls et y est croissante. La fonction cube est définie et strictement croissante sur tous les réels.",
+   "essentiel": [
+    "√x est définie pour x ≥ 0 et croissante sur [0 ; +∞[.",
+    "x³ est définie et strictement croissante sur ℝ.",
+    "Le cube conserve le signe du nombre."
+   ],
+   "image_mentale": "Imagine une courbe de racine qui part de l’origine et une courbe du cube qui la traverse.",
+   "regle_ou_methode": "Vérifie le domaine, puis utilise la croissance de la fonction concernée.",
+   "exemples": [
+    "Pour résoudre √x = 4, x doit être positif ou nul. En élevant au carré, on obtient x = 16. Vérifie : √16 = 4.",
+    "L’équation x³ = −8 a pour solution x = −2."
+   ],
+   "piege": "La racine carrée réelle d’un nombre négatif n’est pas définie.",
+   "astuce_memoire": "Racine : x ≥ 0 ; cube : tous les réels.",
+   "quiz": [
+    {
+     "q": "Quelle est la solution réelle de √x = 4 ?",
+     "choix": [
+      "−16",
+      "16",
+      "4"
+     ],
+     "rep": "16",
+     "expl": "√16 = 4."
+    },
+    {
+     "q": "Que vaut (−2)³ ?",
+     "choix": [
+      "8",
+      "−6",
+      "−8"
+     ],
+     "rep": "−8",
+     "expl": "(−2) × (−2) × (−2) = −8."
+    },
+    {
+     "q": "La fonction √x est-elle définie pour x = −1 dans les réels ?",
+     "choix": [
+      "Non",
+      "Oui, elle vaut −1",
+      "Oui, elle vaut 1"
+     ],
+     "rep": "Non",
+     "expl": "La racine carrée réelle exige x ≥ 0."
+    }
+   ],
+   "id": "REV-MA-2DE-25"
+  },
+  {
+   "axe": "Fonctions",
+   "titre": "Signe d’une fonction affine",
+   "emoji": "➕",
+   "en_une_phrase": "Le signe d’une fonction affine change éventuellement à sa racine.",
+   "comprendre": "Une droite peut couper l’axe horizontal en un point. À cet endroit, la fonction vaut zéro. Le signe du coefficient directeur détermine de quel côté la fonction est positive.",
+   "essentiel": [
+    "Une racine vérifie f(x) = 0.",
+    "Pour une fonction affine croissante, le signe passe de négatif à positif à sa racine.",
+    "Pour une fonction affine décroissante, le sens est inversé."
+   ],
+   "image_mentale": "Imagine une droite qui traverse l’axe horizontal.",
+   "regle_ou_methode": "Résous f(x) = 0, puis utilise le signe de la pente pour déterminer le signe de chaque côté.",
+   "exemples": [
+    "Pour f(x) = 2x − 4, résous 2x − 4 = 0 : x = 2. La pente est positive. La fonction est négative pour x < 2 et positive pour x > 2.",
+    "Pour g(x) = −x + 3, la racine est 3 et la fonction est positive avant 3."
+   ],
+   "piege": "À la racine, la valeur est nulle : elle n’est pas strictement positive.",
+   "astuce_memoire": "Racine puis signe selon la pente.",
+   "quiz": [
+    {
+     "q": "Quelle est la racine de f(x) = 2x − 4 ?",
+     "choix": [
+      "−2",
+      "4",
+      "2"
+     ],
+     "rep": "2",
+     "expl": "2 × 2 − 4 = 0."
+    },
+    {
+     "q": "Pour x > 2, quel est le signe de 2x − 4 ?",
+     "choix": [
+      "Positif",
+      "Négatif",
+      "Nul"
+     ],
+     "rep": "Positif",
+     "expl": "La fonction croissante est positive après sa racine."
+    },
+    {
+     "q": "Que vaut 2x − 4 pour x = 2 ?",
+     "choix": [
+      "2",
+      "0",
+      "4"
+     ],
+     "rep": "0",
+     "expl": "2 × 2 − 4 = 0."
+    }
+   ],
+   "id": "REV-MA-2DE-26"
+  },
+  {
+   "axe": "Fonctions",
+   "titre": "Signe d’un quotient",
+   "emoji": "➗",
+   "en_une_phrase": "Le signe d’un quotient dépend des signes du numérateur et du dénominateur.",
+   "comprendre": "Un quotient positif peut être obtenu avec deux nombres de même signe. Lorsque leurs signes sont opposés, le quotient est négatif. Les valeurs qui annulent le dénominateur restent exclues.",
+   "essentiel": [
+    "Même signe au numérateur et au dénominateur : quotient positif.",
+    "Signes opposés : quotient négatif.",
+    "Une valeur qui annule le dénominateur est interdite.",
+    "Pour (x − 1)/(x + 2), le quotient est positif si x < −2 ou x > 1 et négatif si −2 < x < 1."
+   ],
+   "image_mentale": "Imagine une droite découpée aux zéros du numérateur et du dénominateur.",
+   "regle_ou_methode": "Repère les valeurs critiques, étudie les signes sur chaque intervalle et exclus les valeurs interdites.",
+   "exemples": [
+    "Pour f(x) = (x − 1)/(x + 2), la valeur −2 est interdite. À x = 0, le numérateur vaut −1 et le dénominateur 2. Le quotient est donc négatif.",
+    "À x = 3, les deux termes sont positifs : le quotient est positif."
+   ],
+   "piege": "Un dénominateur nul ne donne pas un quotient nul : la valeur est interdite.",
+   "astuce_memoire": "Signes opposés : négatif ; dénominateur nul : interdit.",
+   "quiz": [
+    {
+     "q": "Quel est le signe de (x − 1)/(x + 2) pour x = 0 ?",
+     "choix": [
+      "Négatif",
+      "Positif",
+      "Nul"
+     ],
+     "rep": "Négatif",
+     "expl": "Le numérateur vaut −1 et le dénominateur 2."
+    },
+    {
+     "q": "Quelle valeur est interdite ?",
+     "choix": [
+      "1",
+      "−2",
+      "0"
+     ],
+     "rep": "−2",
+     "expl": "x + 2 s’annule en −2."
+    },
+    {
+     "q": "Quel est le signe du quotient pour x = 3 ?",
+     "choix": [
+      "Négatif",
+      "Non défini",
+      "Positif"
+     ],
+     "rep": "Positif",
+     "expl": "Le numérateur et le dénominateur sont tous deux positifs."
+    }
+   ],
+   "id": "REV-MA-2DE-27"
+  },
+  {
+   "axe": "Fonctions",
+   "titre": "Fonction valeur absolue",
+   "emoji": "📍",
+   "en_une_phrase": "La fonction valeur absolue associe à chaque réel sa distance à zéro.",
+   "comprendre": "Une distance ne peut pas être négative. La valeur absolue de x est égale à x si x est positif ou nul et à son opposé si x est négatif. Sa courbe descend jusqu’à zéro puis remonte.",
+   "essentiel": [
+    "|x| = x si x ≥ 0.",
+    "|x| = −x si x < 0.",
+    "La fonction est décroissante sur ]−∞ ; 0] et croissante sur [0 ; +∞[."
+   ],
+   "image_mentale": "Imagine un V dont la pointe est à l’origine.",
+   "regle_ou_methode": "Repère le signe de x puis utilise la bonne expression de sa valeur absolue.",
+   "exemples": [
+    "Pour x = −4, le nombre est négatif. Son opposé vaut 4. Donc |−4| = 4.",
+    "Les solutions de |x| = 3 sont −3 et 3."
+   ],
+   "piege": "|x| n’est pas toujours égal à x : cela dépend du signe de x.",
+   "astuce_memoire": "Valeur absolue : distance à zéro.",
+   "quiz": [
+    {
+     "q": "Que vaut |−4| ?",
+     "choix": [
+      "−4",
+      "4",
+      "16"
+     ],
+     "rep": "4",
+     "expl": "La distance de −4 à zéro vaut 4."
+    },
+    {
+     "q": "Quelles sont les solutions de |x| = 3 ?",
+     "choix": [
+      "3 seulement",
+      "−9 et 9",
+      "−3 et 3"
+     ],
+     "rep": "−3 et 3",
+     "expl": "Les deux nombres sont à distance 3 de zéro."
+    },
+    {
+     "q": "Sur ]−∞ ; 0], la fonction valeur absolue est :",
+     "choix": [
+      "Décroissante",
+      "Croissante",
+      "Constante"
+     ],
+     "rep": "Décroissante",
+     "expl": "Quand x négatif se rapproche de 0, sa valeur absolue diminue."
+    }
+   ],
+   "id": "REV-MA-2DE-28"
+  },
+  {
+   "axe": "Statistiques et probabilités",
+   "titre": "Évolutions et réciproque",
+   "emoji": "📈",
+   "en_une_phrase": "Une évolution réciproque annule un coefficient multiplicateur en le remplaçant par son inverse.",
+   "comprendre": "Une hausse puis une baisse de même pourcentage n’annulent pas forcément leurs effets. Chaque taux s’applique à la valeur obtenue à l’étape précédente. Pour revenir à la valeur de départ, le produit des coefficients doit valoir 1.",
+   "essentiel": [
+    "Une hausse de 25 % correspond au coefficient 1,25.",
+    "Le coefficient réciproque de 1,25 est 1/1,25 = 0,8.",
+    "Le taux réciproque est alors une baisse de 20 %."
+   ],
+   "image_mentale": "Imagine une valeur qui monte puis revient à son niveau initial par une seconde flèche.",
+   "regle_ou_methode": "Écris le coefficient de départ, calcule son inverse puis déduis le taux réciproque.",
+   "exemples": [
+    "Un prix de 100 € augmente de 25 % et devient 125 €. Pour revenir à 100 €, multiplie par 100/125 = 0,8. Cela correspond à une baisse de 20 %.",
+    "Une baisse de 10 % a pour coefficient 0,9 ; le coefficient réciproque est 1/0,9, soit environ 1,111."
+   ],
+   "piege": "Le taux réciproque d’une hausse de 25 % n’est pas une baisse de 25 %.",
+   "astuce_memoire": "Retour au départ : coefficient inverse.",
+   "quiz": [
+    {
+     "q": "Quel taux annule une hausse de 25 % ?",
+     "choix": [
+      "Une baisse de 25 %",
+      "Une hausse de 20 %",
+      "Une baisse de 20 %"
+     ],
+     "rep": "Une baisse de 20 %",
+     "expl": "1,25 × 0,8 = 1."
+    },
+    {
+     "q": "Quel coefficient correspond à une hausse de 25 % ?",
+     "choix": [
+      "1,25",
+      "0,75",
+      "0,25"
+     ],
+     "rep": "1,25",
+     "expl": "On conserve 100 % et ajoute 25 %."
+    },
+    {
+     "q": "Quel coefficient annule une multiplication par 0,9 ?",
+     "choix": [
+      "0,9",
+      "1/0,9",
+      "0,1"
+     ],
+     "rep": "1/0,9",
+     "expl": "Le produit d’un nombre non nul et de son inverse vaut 1."
+    }
+   ],
+   "id": "REV-MA-2DE-29"
+  },
+  {
+   "axe": "Statistiques et probabilités",
+   "titre": "Moyenne pondérée",
+   "emoji": "📊",
+   "en_une_phrase": "Une moyenne pondérée tient compte de l’effectif ou du poids de chaque valeur.",
+   "comprendre": "Si une valeur apparaît plusieurs fois, elle compte autant de fois dans la moyenne. Multiplier chaque valeur par son effectif évite de la répéter. On divise ensuite par l’effectif total.",
+   "essentiel": [
+    "Somme pondérée = somme des produits valeur × effectif.",
+    "Moyenne = somme pondérée ÷ effectif total.",
+    "Les coefficients doivent correspondre aux valeurs."
+   ],
+   "image_mentale": "Imagine des groupes dont la taille donne plus ou moins de poids à chaque valeur.",
+   "regle_ou_methode": "Multiplie chaque valeur par son effectif, additionne, puis divise par le total.",
+   "exemples": [
+    "Une série comporte deux valeurs égales à 8 et trois valeurs égales à 12. Calcule 2 × 8 + 3 × 12 = 52. L’effectif total est 5, donc la moyenne vaut 10,4.",
+    "Deux groupes de 10 et 20 personnes ont des moyennes de 5 et 8 : leur moyenne commune vaut (10 × 5 + 20 × 8)/30 = 7."
+   ],
+   "piege": "Ne fais pas la moyenne simple des moyennes de groupes d’effectifs différents.",
+   "astuce_memoire": "Valeur fois effectif, somme, division par le total.",
+   "quiz": [
+    {
+     "q": "Deux valeurs valent 8 et trois valent 12. Quelle est la moyenne ?",
+     "choix": [
+      "10,4",
+      "10",
+      "12"
+     ],
+     "rep": "10,4",
+     "expl": "(2 × 8 + 3 × 12)/5 = 10,4."
+    },
+    {
+     "q": "Deux groupes de 10 et 20 personnes ont pour moyennes 5 et 8. Quelle est la moyenne commune ?",
+     "choix": [
+      "6,5",
+      "7",
+      "13"
+     ],
+     "rep": "7",
+     "expl": "(10 × 5 + 20 × 8)/30 = 7."
+    },
+    {
+     "q": "Pourquoi pondérer des moyennes de groupes ?",
+     "choix": [
+      "Parce que les valeurs ne sont jamais numériques",
+      "Pour ignorer les effectifs",
+      "Parce que les groupes peuvent avoir des effectifs différents"
+     ],
+     "rep": "Parce que les groupes peuvent avoir des effectifs différents",
+     "expl": "Chaque groupe contribue proportionnellement à son effectif."
+    }
+   ],
+   "id": "REV-MA-2DE-30"
+  },
+  {
+   "axe": "Statistiques et probabilités",
+   "titre": "Écart type",
+   "emoji": "📐",
+   "en_une_phrase": "L’écart type mesure une dispersion autour de la moyenne.",
+   "comprendre": "Deux séries peuvent avoir la même moyenne mais des valeurs plus ou moins dispersées. L’écart type utilise les écarts à la moyenne après les avoir élevés au carré. Sa racine carrée ramène le résultat à l’unité des données.",
+   "essentiel": [
+    "La variance est la moyenne des carrés des écarts à la moyenne.",
+    "L’écart type est la racine carrée de la variance.",
+    "Un écart type nul signifie que toutes les valeurs de la série sont égales."
+   ],
+   "image_mentale": "Imagine des points proches ou éloignés d’un centre représentant la moyenne.",
+   "regle_ou_methode": "Calcule la moyenne, les carrés des écarts, leur moyenne puis sa racine carrée.",
+   "exemples": [
+    "Pour la série 2, 2, 4, 4, la moyenne vaut 3. Chaque écart au carré vaut 1. La variance vaut 1 et l’écart type vaut 1.",
+    "Pour 5, 5 et 5, l’écart type vaut 0."
+   ],
+   "piege": "Ne confonds pas variance et écart type : le second est la racine carrée de la première.",
+   "astuce_memoire": "Moyenne des écarts au carré, puis racine.",
+   "quiz": [
+    {
+     "q": "Quel est l’écart type de 2, 2, 4, 4 ?",
+     "choix": [
+      "0",
+      "1",
+      "3"
+     ],
+     "rep": "1",
+     "expl": "La moyenne est 3 et la moyenne des carrés des écarts vaut 1."
+    },
+    {
+     "q": "Quel est l’écart type de 5, 5 et 5 ?",
+     "choix": [
+      "5",
+      "15",
+      "0"
+     ],
+     "rep": "0",
+     "expl": "Chaque valeur est égale à la moyenne."
+    },
+    {
+     "q": "Quelle relation lie écart type et variance ?",
+     "choix": [
+      "L’écart type est la racine carrée de la variance",
+      "L’écart type est toujours le double de la variance",
+      "La variance est toujours négative"
+     ],
+     "rep": "L’écart type est la racine carrée de la variance",
+     "expl": "C’est la définition utilisée ici."
+    }
+   ],
+   "id": "REV-MA-2DE-31"
+  },
+  {
+   "axe": "Statistiques et probabilités",
+   "titre": "Quartiles et étendue interquartile",
+   "emoji": "📦",
+   "en_une_phrase": "Les quartiles donnent des repères sur la répartition d’une série ordonnée.",
+   "comprendre": "La médiane ne suffit pas toujours à décrire la dispersion. Les quartiles repèrent des valeurs situées autour du premier et du troisième quart des données. Leur différence donne l’écart interquartile.",
+   "essentiel": [
+    "Q1 est la plus petite valeur pour laquelle au moins un quart des données lui sont inférieures ou égales.",
+    "Q3 est la plus petite valeur pour laquelle au moins trois quarts des données lui sont inférieures ou égales.",
+    "L’écart interquartile est Q3 − Q1."
+   ],
+   "image_mentale": "Imagine une ligne ordonnée découpée par des repères de quart.",
+   "regle_ou_methode": "Trie les données, repère les rangs des quartiles selon la définition utilisée puis soustrais.",
+   "exemples": [
+    "Pour 1, 2, 3, 4, 5, 6, 7, 8, Q1 est la valeur de rang 2 : 2. Q3 est la valeur de rang 6 : 6. L’écart interquartile vaut 6 − 2 = 4.",
+    "Pour 2, 2, 4, 4, Q1 = 2 et Q3 = 4, donc l’écart interquartile vaut 2."
+   ],
+   "piege": "Les conventions de calcul des quartiles peuvent varier : utilise celle demandée dans ton cours.",
+   "astuce_memoire": "Écart interquartile : Q3 moins Q1.",
+   "quiz": [
+    {
+     "q": "Pour 1 à 8 dans l’ordre, que vaut Q1 selon la définition donnée ?",
+     "choix": [
+      "1",
+      "3",
+      "2"
+     ],
+     "rep": "2",
+     "expl": "Au moins 25 % des huit valeurs sont inférieures ou égales à la deuxième valeur."
+    },
+    {
+     "q": "Pour cette série, que vaut Q3 ?",
+     "choix": [
+      "6",
+      "7",
+      "4"
+     ],
+     "rep": "6",
+     "expl": "Au moins 75 % des huit valeurs sont inférieures ou égales à la sixième valeur."
+    },
+    {
+     "q": "Si Q1 = 2 et Q3 = 6, quel est l’écart interquartile ?",
+     "choix": [
+      "8",
+      "4",
+      "3"
+     ],
+     "rep": "4",
+     "expl": "6 − 2 = 4."
+    }
+   ],
+   "id": "REV-MA-2DE-32"
+  },
+  {
+   "axe": "Statistiques et probabilités",
+   "titre": "Fréquence conditionnelle",
+   "emoji": "📋",
+   "en_une_phrase": "Une fréquence conditionnelle se calcule dans un groupe de référence précis.",
+   "comprendre": "Une proportion dépend du groupe dans lequel tu comptes. Le pourcentage de personnes pratiquant une activité parmi les élèves d’une classe n’a pas forcément le même dénominateur que celui parmi tous les élèves. Il faut identifier le groupe de référence.",
+   "essentiel": [
+    "La fréquence est un effectif divisé par l’effectif de référence.",
+    "Une fréquence conditionnelle utilise le groupe qui satisfait la condition.",
+    "Changer le groupe de référence peut changer le résultat."
+   ],
+   "image_mentale": "Imagine un grand ensemble puis un sous-groupe choisi comme nouvelle référence.",
+   "regle_ou_methode": "Identifie d’abord le groupe de référence, puis divise le nombre qui vérifie aussi la propriété par son effectif.",
+   "exemples": [
+    "Dans une classe de 30 élèves, 12 des 20 élèves prenant le bus pratiquent un sport. Parmi les élèves prenant le bus, la fréquence des sportifs est 12/20. Elle vaut 0,6, soit 60 %.",
+    "Les 12 élèves représentent 12/30 = 40 % de l’ensemble de la classe."
+   ],
+   "piege": "Ne confonds pas « parmi les élèves prenant le bus » avec « parmi tous les élèves ».",
+   "astuce_memoire": "La condition fixe le dénominateur.",
+   "quiz": [
+    {
+     "q": "Parmi 20 élèves prenant le bus, 12 pratiquent un sport. Quelle est la fréquence des sportifs dans ce groupe ?",
+     "choix": [
+      "60 %",
+      "40 %",
+      "12 %"
+     ],
+     "rep": "60 %",
+     "expl": "12/20 = 0,6 = 60 %."
+    },
+    {
+     "q": "Ces 12 élèves représentent quelle proportion d’une classe de 30 ?",
+     "choix": [
+      "60 %",
+      "40 %",
+      "20 %"
+     ],
+     "rep": "40 %",
+     "expl": "12/30 = 0,4 = 40 %."
+    },
+    {
+     "q": "Quel dénominateur utiliser pour « parmi les élèves prenant le bus » ?",
+     "choix": [
+      "L’effectif total de toute la ville",
+      "Le nombre de lignes du tableau",
+      "L’effectif des élèves prenant le bus"
+     ],
+     "rep": "L’effectif des élèves prenant le bus",
+     "expl": "La condition détermine le groupe de référence."
+    }
+   ],
+   "id": "REV-MA-2DE-33"
+  },
+  {
+   "axe": "Statistiques et probabilités",
+   "titre": "Probabilité conditionnelle",
+   "emoji": "🎯",
+   "en_une_phrase": "Une probabilité conditionnelle mesure la probabilité d’un événement lorsqu’un autre est réalisé.",
+   "comprendre": "Tu peux restreindre ton observation à un groupe déjà sélectionné. La probabilité de B sachant A se calcule dans le cadre de A. Si P(A) est non nulle, elle vaut P(A ∩ B)/P(A).",
+   "essentiel": [
+    "P(B sachant A) se note souvent P_A(B) ou P(B|A).",
+    "P(B|A) = P(A ∩ B)/P(A) si P(A) > 0.",
+    "La condition change l’ensemble de référence."
+   ],
+   "image_mentale": "Imagine un groupe A dans lequel on colore les éléments qui vérifient aussi B.",
+   "regle_ou_methode": "Repère A, son intersection avec B puis divise la probabilité commune par celle de A.",
+   "exemples": [
+    "On sait que P(A) = 0,4 et P(A ∩ B) = 0,1. Divise 0,1 par 0,4. La probabilité de B sachant A est 0,25.",
+    "Dans une population de 30 personnes équiprobables, 20 vérifient A, 15 vérifient B et 12 vérifient les deux. Alors P(B|A) = 12/20 = 0,6 tandis que P(A|B) = 12/15 = 0,8."
+   ],
+   "piege": "P(B|A) n’est pas forcément égal à P(A|B).",
+   "astuce_memoire": "Sachant A : on se place dans A.",
+   "quiz": [
+    {
+     "q": "Si P(A) = 0,4 et P(A ∩ B) = 0,1, que vaut P(B|A) ?",
+     "choix": [
+      "0,4",
+      "0,25",
+      "0,5"
+     ],
+     "rep": "0,25",
+     "expl": "0,1 ÷ 0,4 = 0,25."
+    },
+    {
+     "q": "Quelle condition faut-il pour utiliser P(A ∩ B)/P(A) ?",
+     "choix": [
+      "P(A) = 0",
+      "P(B) = 0 nécessairement",
+      "P(A) > 0"
+     ],
+     "rep": "P(A) > 0",
+     "expl": "Le dénominateur P(A) doit être non nul."
+    },
+    {
+     "q": "Si A contient 20 personnes, B en contient 15 et leur intersection en contient 12, que vaut P(A|B) pour un tirage équiprobable ?",
+     "choix": [
+      "0,8",
+      "0,6",
+      "0,4"
+     ],
+     "rep": "0,8",
+     "expl": "Le groupe de référence est B : 12/15 = 0,8."
+    }
+   ],
+   "id": "REV-MA-2DE-34"
+  },
+  {
+   "axe": "Statistiques et probabilités",
+   "titre": "Arbre de probabilités",
+   "emoji": "🌳",
+   "en_une_phrase": "Dans un arbre pondéré, on multiplie les probabilités le long d’un chemin.",
+   "comprendre": "Une expérience peut se dérouler en plusieurs étapes. Chaque branche indique une probabilité adaptée à l’étape précédente. La probabilité d’un chemin s’obtient en multipliant ses probabilités.",
+   "essentiel": [
+    "Les probabilités des branches issues d’un même nœud totalisent 1.",
+    "La probabilité d’un chemin est le produit des probabilités de ses branches.",
+    "On additionne les probabilités de chemins incompatibles pour obtenir une réunion."
+   ],
+   "image_mentale": "Imagine deux embranchements successifs avec un nombre sur chaque branche.",
+   "regle_ou_methode": "Lis les probabilités dans l’ordre du chemin, multiplie-les puis additionne si plusieurs chemins conviennent.",
+   "exemples": [
+    "Un arbre donne P(A) = 0,4 puis P(B|A) = 0,5. Multiplie 0,4 × 0,5. La probabilité de A et B vaut 0,2.",
+    "Deux chemins incompatibles de probabilités 0,2 et 0,3 ont une probabilité totale de 0,5."
+   ],
+   "piege": "Une probabilité sur une branche après A est conditionnée par A.",
+   "astuce_memoire": "Sur un chemin : multiplier ; chemins incompatibles : additionner.",
+   "quiz": [
+    {
+     "q": "Si P(A) = 0,4 et P(B|A) = 0,5, que vaut P(A ∩ B) ?",
+     "choix": [
+      "0,9",
+      "0,1",
+      "0,2"
+     ],
+     "rep": "0,2",
+     "expl": "0,4 × 0,5 = 0,2."
+    },
+    {
+     "q": "Deux chemins incompatibles valent 0,2 et 0,3. Quelle est leur probabilité totale ?",
+     "choix": [
+      "0,5",
+      "0,06",
+      "0,1"
+     ],
+     "rep": "0,5",
+     "expl": "On additionne les probabilités de ces chemins incompatibles."
+    },
+    {
+     "q": "Que vaut la somme des probabilités des branches issues d’un même nœud complet ?",
+     "choix": [
+      "0",
+      "1",
+      "Elle vaut toujours 2"
+     ],
+     "rep": "1",
+     "expl": "Les branches décrivent toutes les issues possibles à cette étape."
+    }
+   ],
+   "id": "REV-MA-2DE-35"
+  },
+  {
+   "axe": "Statistiques et probabilités",
+   "titre": "Fluctuation d’échantillonnage",
+   "emoji": "🎲",
+   "en_une_phrase": "Les fréquences observées peuvent varier d’un échantillon à l’autre.",
+   "comprendre": "Deux séries de lancers d’une même pièce peuvent donner des résultats différents. Cette variation est liée au hasard de l’échantillonnage. Répéter l’expérience permet de mieux observer cette variabilité.",
+   "essentiel": [
+    "Un échantillon est un ensemble d’observations.",
+    "Deux échantillons peuvent fournir des fréquences différentes.",
+    "Une fréquence observée n’est pas nécessairement égale à la probabilité du modèle."
+   ],
+   "image_mentale": "Imagine plusieurs séries de lancers dont les proportions de piles diffèrent.",
+   "regle_ou_methode": "Calcule chaque fréquence puis compare les résultats sans conclure à partir d’une seule série.",
+   "exemples": [
+    "Dans dix lancers, une pièce donne six piles : la fréquence est 6/10 = 0,6. Dans une autre série de dix lancers, elle peut donner quatre piles : la fréquence est 0,4. Les deux échantillons diffèrent.",
+    "Une fréquence observée de 0,6 sur dix lancers ne prouve pas à elle seule que la probabilité de pile vaut 0,6."
+   ],
+   "piege": "La variabilité entre petits échantillons n’implique pas automatiquement que le modèle a changé.",
+   "astuce_memoire": "Échantillons différents, fréquences parfois différentes.",
+   "quiz": [
+    {
+     "q": "Six piles en dix lancers : quelle fréquence ?",
+     "choix": [
+      "0,6",
+      "0,4",
+      "6"
+     ],
+     "rep": "0,6",
+     "expl": "6/10 = 0,6."
+    },
+    {
+     "q": "Deux échantillons d’un même modèle peuvent-ils avoir des fréquences différentes ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement si le modèle change"
+     ],
+     "rep": "Oui",
+     "expl": "Le hasard peut produire des résultats différents."
+    },
+    {
+     "q": "Une fréquence de 0,6 sur dix lancers prouve-t-elle à elle seule une probabilité de 0,6 ?",
+     "choix": [
+      "Oui",
+      "Oui, si dix est pair",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Une seule petite série ne suffit pas à établir cette probabilité."
+    }
+   ],
+   "id": "REV-MA-2DE-36"
+  },
+  {
+   "axe": "Statistiques et probabilités",
+   "titre": "Données regroupées en classes",
+   "emoji": "📊",
+   "en_une_phrase": "Une série regroupée en classes résume des données par intervalles et effectifs.",
+   "comprendre": "Quand une série comporte beaucoup de mesures, on peut les regrouper par intervalles. Les effectifs cumulés permettent de localiser la classe médiane. Une moyenne estimée à partir des centres des classes dépend d’une hypothèse de répartition.",
+   "essentiel": [
+    "Une classe est un intervalle de valeurs.",
+    "Les effectifs cumulés aident à localiser la médiane.",
+    "Les centres de classes peuvent servir à estimer la moyenne si l’on suppose une répartition adaptée."
+   ],
+   "image_mentale": "Imagine deux colonnes d’effectifs au-dessus de deux intervalles voisins.",
+   "regle_ou_methode": "Cumule les effectifs pour repérer la position médiane ; pour une estimation, utilise les centres et les effectifs.",
+   "exemples": [
+    "Une série de 11 valeurs a 4 valeurs dans [0 ; 10[ et 7 dans [10 ; 20[. La valeur centrale est la sixième. Elle appartient donc à la seconde classe.",
+    "Si l’on suppose une répartition uniforme dans chaque classe, les centres 5 et 15 donnent une moyenne estimée de (4 × 5 + 7 × 15)/11, soit environ 11,36."
+   ],
+   "piege": "La classe médiane ne donne pas la valeur exacte de la médiane sans information supplémentaire.",
+   "astuce_memoire": "Effectifs cumulés pour la classe médiane.",
+   "quiz": [
+    {
+     "q": "Avec 4 valeurs dans la première classe et 7 dans la seconde, où se trouve la médiane des 11 valeurs ?",
+     "choix": [
+      "Dans la première classe",
+      "Dans la seconde classe",
+      "On sait qu’elle vaut exactement 15"
+     ],
+     "rep": "Dans la seconde classe",
+     "expl": "La sixième valeur appartient à la seconde classe."
+    },
+    {
+     "q": "Les centres des classes donnent-ils nécessairement la moyenne exacte ?",
+     "choix": [
+      "Oui",
+      "Oui, sans hypothèse",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Le calcul à partir des centres est une estimation sous certaines hypothèses."
+    },
+    {
+     "q": "Quelle est la position centrale d’une série ordonnée de 11 valeurs ?",
+     "choix": [
+      "La sixième",
+      "La cinquième",
+      "La onzième"
+     ],
+     "rep": "La sixième",
+     "expl": "Cinq valeurs la précèdent et cinq la suivent."
+    }
+   ],
+   "id": "REV-MA-2DE-37"
+  },
+  {
+   "axe": "Statistiques et probabilités",
+   "titre": "Réunion et intersection d’événements",
+   "emoji": "🎯",
+   "en_une_phrase": "La probabilité de A ou B tient compte des issues qui appartiennent aux deux événements.",
+   "comprendre": "Tu peux compter les personnes qui pratiquent deux activités. Si tu additionnes les deux groupes, celles qui sont dans les deux sont comptées deux fois. On retire donc l’intersection une fois.",
+   "essentiel": [
+    "P(A ∪ B) = P(A) + P(B) − P(A ∩ B).",
+    "Si A et B sont incompatibles, leur intersection est vide.",
+    "Dans ce cas, la probabilité de leur réunion est la somme des probabilités."
+   ],
+   "image_mentale": "Imagine deux cercles qui se chevauchent et une zone commune comptée une seule fois.",
+   "regle_ou_methode": "Additionne P(A) et P(B), puis soustrais P(A ∩ B).",
+   "exemples": [
+    "Si P(A) = 0,5, P(B) = 0,4 et P(A ∩ B) = 0,2, additionne 0,5 et 0,4. Retire l’intersection 0,2 comptée deux fois. La réunion vaut 0,7.",
+    "Si deux événements incompatibles ont des probabilités 0,2 et 0,3, leur réunion vaut 0,5."
+   ],
+   "piege": "N’additionne pas directement les probabilités si les événements peuvent se produire ensemble.",
+   "astuce_memoire": "Additionner puis retirer l’intersection.",
+   "quiz": [
+    {
+     "q": "Si P(A) = 0,5, P(B) = 0,4 et P(A ∩ B) = 0,2, que vaut P(A ∪ B) ?",
+     "choix": [
+      "0,9",
+      "0,2",
+      "0,7"
+     ],
+     "rep": "0,7",
+     "expl": "0,5 + 0,4 − 0,2 = 0,7."
+    },
+    {
+     "q": "Que vaut l’intersection de deux événements incompatibles ?",
+     "choix": [
+      "L’événement impossible",
+      "L’événement certain",
+      "Toujours A"
+     ],
+     "rep": "L’événement impossible",
+     "expl": "Ils ne peuvent pas se produire ensemble."
+    },
+    {
+     "q": "Deux événements incompatibles ont des probabilités 0,2 et 0,3. Quelle est la probabilité de leur réunion ?",
+     "choix": [
+      "0,06",
+      "0,5",
+      "0,1"
+     ],
+     "rep": "0,5",
+     "expl": "Leurs probabilités s’additionnent car leur intersection est vide."
+    }
+   ],
+   "id": "REV-MA-2DE-38"
+  }
+ ]
+}

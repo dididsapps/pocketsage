@@ -1,0 +1,2864 @@
+{
+ "classe": "1RE",
+ "niveau_appli": "Lycée",
+ "age": "16-17 ans",
+ "matiere": "Physique-chimie (spécialité)",
+ "code": "PC",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Masse molaire et quantité",
+   "emoji": "⚖️",
+   "en_une_phrase": "La masse molaire relie la masse d’un échantillon de corps pur à sa quantité de matière.",
+   "comprendre": "Comme la masse d’une boîte dépend de la masse de son contenu, celle d’un échantillon dépend de la quantité d’entités qu’il contient. La masse molaire est la masse d’une mole d’entités. On peut la calculer en additionnant les masses molaires atomiques.",
+   "essentiel": [
+    "M s’exprime en g·mol⁻¹ si m est en g et n en mol.",
+    "Pour un corps pur, n = m/M.",
+    "La masse molaire d’une molécule est la somme de celles de ses atomes.",
+    "Le nombre d’entités est N = n × N_A."
+   ],
+   "image_mentale": "Imagine une boîte de quantité n remplie d’entités toutes identiques.",
+   "regle_ou_methode": "Calcule M à partir de la formule chimique, puis divise la masse de corps pur par M.",
+   "exemples": [
+    "Pour 9,0 g d’eau pure, prends M(H) = 1,0 g·mol⁻¹ et M(O) = 16,0 g·mol⁻¹. M(H₂O) = 2 × 1,0 + 16,0 = 18,0 g·mol⁻¹. La quantité vaut n = 9,0/18,0 = 0,50 mol.",
+    "Avec N_A = 6,02 × 10²³ mol⁻¹, 2,0 mol contiennent environ 1,20 × 10²⁴ entités."
+   ],
+   "piege": "M est une masse par mole, pas la masse d’une seule molécule.",
+   "astuce_memoire": "Quantité : masse divisée par masse molaire.",
+   "quiz": [
+    {
+     "q": "Avec M(H₂O) = 18,0 g·mol⁻¹, quelle quantité contient 36,0 g d’eau pure ?",
+     "choix": [
+      "0,500 mol",
+      "2,00 mol",
+      "18,0 mol"
+     ],
+     "rep": "2,00 mol",
+     "expl": "n = 36,0/18,0 = 2,00 mol."
+    },
+    {
+     "q": "Quelle est l’unité usuelle de masse molaire ?",
+     "choix": [
+      "mol·L⁻¹",
+      "g·L⁻¹",
+      "g·mol⁻¹"
+     ],
+     "rep": "g·mol⁻¹",
+     "expl": "Elle relie une masse en grammes à une quantité en moles."
+    },
+    {
+     "q": "Combien d’entités contient 0,50 mol si N_A = 6,02 × 10²³ mol⁻¹ ?",
+     "choix": [
+      "3,01 × 10²³",
+      "1,20 × 10²⁴",
+      "6,02 × 10²³"
+     ],
+     "rep": "3,01 × 10²³",
+     "expl": "On multiplie 0,50 par la constante d’Avogadro."
+    }
+   ],
+   "id": "REV-PC-1RE-01"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Volume molaire d’un gaz",
+   "emoji": "🎈",
+   "en_une_phrase": "Le volume molaire relie la quantité de gaz à son volume dans des conditions précisées.",
+   "comprendre": "Un gaz occupe le volume du récipient. À température et pression données, le volume molaire permet de convertir ce volume en quantité de matière. Sa valeur dépend des conditions.",
+   "essentiel": [
+    "Le volume molaire Vₘ s’exprime par exemple en L·mol⁻¹.",
+    "Pour un gaz, n = V/Vₘ.",
+    "V et Vₘ doivent utiliser la même unité de volume.",
+    "La température et la pression influencent Vₘ."
+   ],
+   "image_mentale": "Imagine des volumes identiques représentant chacun une mole du même gaz dans les mêmes conditions.",
+   "regle_ou_methode": "Convertis le volume en litres puis divise-le par le volume molaire donné.",
+   "exemples": [
+    "Un échantillon gazeux occupe 480 mL dans des conditions où Vₘ = 24,0 L·mol⁻¹. Convertis : 480 mL = 0,480 L. Alors n = 0,480/24,0 = 0,0200 mol.",
+    "Pour 0,50 mol de gaz avec Vₘ = 24,0 L·mol⁻¹, le volume vaut 0,50 × 24,0 = 12 L."
+   ],
+   "piege": "La valeur de Vₘ ne doit pas être supposée identique quelles que soient la température et la pression.",
+   "astuce_memoire": "Volume en litres, divisé par volume molaire.",
+   "quiz": [
+    {
+     "q": "Avec Vₘ = 24,0 L·mol⁻¹, quelle quantité occupe 1,20 L ?",
+     "choix": [
+      "0,500 mol",
+      "28,8 mol",
+      "0,0500 mol"
+     ],
+     "rep": "0,0500 mol",
+     "expl": "n = 1,20/24,0 = 0,0500 mol."
+    },
+    {
+     "q": "Combien valent 250 mL en litres ?",
+     "choix": [
+      "0,250 L",
+      "2,50 L",
+      "250 L"
+     ],
+     "rep": "0,250 L",
+     "expl": "On divise le volume en millilitres par 1 000."
+    },
+    {
+     "q": "Quand Vₘ peut-il changer ?",
+     "choix": [
+      "Quand on change seulement l’unité d’écriture du nom du gaz",
+      "Quand la température ou la pression change",
+      "Jamais pour un gaz"
+     ],
+     "rep": "Quand la température ou la pression change",
+     "expl": "Le volume molaire dépend des conditions physiques."
+    }
+   ],
+   "id": "REV-PC-1RE-02"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Composition d’un mélange",
+   "emoji": "🧪",
+   "en_une_phrase": "La proportion massique permet de retrouver la masse d’une espèce dans un mélange.",
+   "comprendre": "Une composition indique quelle part du mélange correspond à chaque constituant. Comme une part de gâteau, elle se rapporte à une masse totale précise. On peut ensuite convertir la masse trouvée en quantité de matière.",
+   "essentiel": [
+    "La fraction massique vaut masse de l’espèce divisée par masse du mélange.",
+    "La somme des fractions massiques de tous les constituants vaut 1.",
+    "Pour une espèce donnée, n = m/M."
+   ],
+   "image_mentale": "Imagine une masse totale partagée en fractions de couleurs différentes.",
+   "regle_ou_methode": "Multiplie la masse totale par la fraction massique, puis divise par la masse molaire.",
+   "exemples": [
+    "Un mélange de 20,0 g contient 30 % en masse d’une espèce de masse molaire 60,0 g·mol⁻¹. Sa masse est 20,0 × 0,30 = 6,00 g. Sa quantité est 6,00/60,0 = 0,100 mol.",
+    "Une fraction massique de 0,25 correspond à 25 % de la masse totale."
+   ],
+   "piege": "Un pourcentage en masse ne donne pas directement un pourcentage en quantité de matière.",
+   "astuce_memoire": "Fraction de masse, puis conversion en moles.",
+   "quiz": [
+    {
+     "q": "Un mélange de 50 g contient 20 % en masse d’une espèce. Quelle est la masse de cette espèce ?",
+     "choix": [
+      "10 g",
+      "20 g",
+      "2,5 g"
+     ],
+     "rep": "10 g",
+     "expl": "On calcule 50 × 0,20 = 10 g."
+    },
+    {
+     "q": "Si ces 10 g correspondent à M = 50 g·mol⁻¹, quelle est la quantité ?",
+     "choix": [
+      "5,0 mol",
+      "0,20 mol",
+      "500 mol"
+     ],
+     "rep": "0,20 mol",
+     "expl": "n = 10/50 = 0,20 mol."
+    },
+    {
+     "q": "Une fraction massique de 0,30 correspond à :",
+     "choix": [
+      "3 %",
+      "0,30 %",
+      "30 %"
+     ],
+     "rep": "30 %",
+     "expl": "Multiplier par 100 donne le pourcentage."
+    }
+   ],
+   "id": "REV-PC-1RE-03"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Concentration molaire",
+   "emoji": "🥤",
+   "en_une_phrase": "La concentration en quantité de matière est la quantité de soluté divisée par le volume de solution.",
+   "comprendre": "Une solution rassemble un soluté dissous et un solvant. La concentration indique combien de moles de soluté se trouvent dans un litre de solution. Elle ne décrit pas seulement le volume de solvant ajouté.",
+   "essentiel": [
+    "C = n/V avec n en mol et V en L.",
+    "L’unité correspondante est mol·L⁻¹.",
+    "La concentration massique vaut Cₘ = m/V.",
+    "Pour un même soluté, Cₘ = C × M avec des unités compatibles."
+   ],
+   "image_mentale": "Imagine une quantité de soluté répartie dans un volume gradué de solution.",
+   "regle_ou_methode": "Convertis le volume final en litres puis calcule n/V ou C × V.",
+   "exemples": [
+    "Une solution de volume 250 mL contient 0,050 mol de soluté. Convertis 250 mL en 0,250 L. La concentration est C = 0,050/0,250 = 0,20 mol·L⁻¹.",
+    "Pour C = 0,10 mol·L⁻¹ et V = 0,200 L, la quantité vaut n = 0,020 mol."
+   ],
+   "piege": "Le volume de référence est celui de la solution finale, pas nécessairement celui du solvant seul.",
+   "astuce_memoire": "Moles divisées par litres de solution.",
+   "quiz": [
+    {
+     "q": "Une solution contient 0,040 mol dans 0,200 L. Quelle est sa concentration ?",
+     "choix": [
+      "0,0080 mol·L⁻¹",
+      "0,20 mol·L⁻¹",
+      "5,0 mol·L⁻¹"
+     ],
+     "rep": "0,20 mol·L⁻¹",
+     "expl": "C = 0,040/0,200 = 0,20 mol·L⁻¹."
+    },
+    {
+     "q": "Quelle quantité contient 0,50 L d’une solution à 0,10 mol·L⁻¹ ?",
+     "choix": [
+      "0,20 mol",
+      "0,50 mol",
+      "0,050 mol"
+     ],
+     "rep": "0,050 mol",
+     "expl": "n = C × V = 0,10 × 0,50."
+    },
+    {
+     "q": "Une solution à 0,20 mol·L⁻¹ d’un soluté de masse molaire 50 g·mol⁻¹ a quelle concentration massique ?",
+     "choix": [
+      "10 g·L⁻¹",
+      "0,0040 g·L⁻¹",
+      "250 g·L⁻¹"
+     ],
+     "rep": "10 g·L⁻¹",
+     "expl": "Cₘ = C × M = 0,20 × 50 = 10 g·L⁻¹."
+    }
+   ],
+   "id": "REV-PC-1RE-04"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Préparer par dilution",
+   "emoji": "💧",
+   "en_une_phrase": "Une dilution conserve la quantité de soluté prélevée et augmente le volume de solution.",
+   "comprendre": "Un sirop devient moins concentré quand on lui ajoute de l’eau sans en perdre. Au laboratoire, on prélève une solution mère puis on complète à un volume final précis. La quantité de soluté dans le prélèvement est conservée.",
+   "essentiel": [
+    "Cₘère × Vprélevé = Cfille × Vfille.",
+    "Le facteur de dilution F = Vfille/Vprélevé = Cₘère/Cfille.",
+    "Une pipette jaugée prélève un volume précis.",
+    "Une fiole jaugée permet d’obtenir un volume final précis."
+   ],
+   "image_mentale": "Imagine les mêmes grains répartis dans un plus grand récipient.",
+   "regle_ou_methode": "Calcule le volume à prélever, puis complète dans une fiole au volume final.",
+   "exemples": [
+    "Pour préparer 100,0 mL à 0,020 mol·L⁻¹ depuis une solution à 0,10 mol·L⁻¹, calcule Vprélevé = 0,020 × 100,0/0,10 = 20,0 mL. Prélève 20,0 mL puis complète à 100,0 mL dans la fiole.",
+    "Une dilution au facteur 5 transforme 0,50 mol·L⁻¹ en 0,10 mol·L⁻¹."
+   ],
+   "piege": "Ne confonds pas le volume final de solution et le volume d’eau ajouté.",
+   "astuce_memoire": "Même quantité de soluté, volume plus grand.",
+   "quiz": [
+    {
+     "q": "Quel volume de solution mère à 0,20 mol·L⁻¹ faut-il prélever pour obtenir 100 mL à 0,040 mol·L⁻¹ ?",
+     "choix": [
+      "50 mL",
+      "80 mL",
+      "20 mL"
+     ],
+     "rep": "20 mL",
+     "expl": "Vprélevé = 0,040 × 100/0,20 = 20 mL."
+    },
+    {
+     "q": "Que devient la quantité de soluté prélevée pendant une dilution sans perte ?",
+     "choix": [
+      "Elle reste la même",
+      "Elle est multipliée par le volume final",
+      "Elle devient nulle"
+     ],
+     "rep": "Elle reste la même",
+     "expl": "Ajouter du solvant ne change pas la quantité de soluté prélevée."
+    },
+    {
+     "q": "Quel matériel sert à fixer précisément le volume final ?",
+     "choix": [
+      "Une simple coupelle",
+      "Une fiole jaugée",
+      "Un thermomètre"
+     ],
+     "rep": "Une fiole jaugée",
+     "expl": "La fiole jaugée est ajustée au trait de jauge."
+    }
+   ],
+   "id": "REV-PC-1RE-05"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Spectre et couleur",
+   "emoji": "🌈",
+   "en_une_phrase": "La couleur transmise par une solution dépend de la lumière qu’elle absorbe.",
+   "comprendre": "Une vitre colorée modifie la lumière qui la traverse. Une solution éclairée en lumière blanche peut absorber davantage certaines longueurs d’onde. La couleur observée dépend de la lumière transmise et de l’éclairage.",
+   "essentiel": [
+    "L’absorbance dépend de la longueur d’onde.",
+    "Un spectre d’absorption représente l’absorbance selon la longueur d’onde.",
+    "Une solution éclairée en lumière blanche transmet certaines couleurs plus que d’autres.",
+    "La couleur observée est liée à l’ensemble de la lumière transmise."
+   ],
+   "image_mentale": "Imagine une lumière blanche traversant un filtre qui retire certaines couleurs.",
+   "regle_ou_methode": "Lis les longueurs d’onde les plus absorbées puis examine les couleurs principalement transmises.",
+   "exemples": [
+    "Une solution absorbe fortement dans le bleu et transmet surtout le rouge et le vert sous lumière blanche. Le rouge et le vert transmis se combinent : la solution peut apparaître jaune.",
+    "Une solution qui transmet principalement le bleu sous un éclairage blanc apparaît bleue."
+   ],
+   "piege": "La couleur absorbée n’est pas forcément celle qu’on observe dans la lumière transmise.",
+   "astuce_memoire": "Couleur vue : lumière transmise vers l’œil.",
+   "quiz": [
+    {
+     "q": "Que représente un spectre d’absorption ?",
+     "choix": [
+      "L’absorbance en fonction de la longueur d’onde",
+      "La masse en fonction du volume",
+      "La température en fonction du temps uniquement"
+     ],
+     "rep": "L’absorbance en fonction de la longueur d’onde",
+     "expl": "Il donne l’absorbance selon la longueur d’onde."
+    },
+    {
+     "q": "Une solution qui transmet surtout la lumière bleue sous lumière blanche apparaît généralement :",
+     "choix": [
+      "Rouge",
+      "Bleue",
+      "Verte"
+     ],
+     "rep": "Bleue",
+     "expl": "La couleur perçue dépend notamment de la lumière transmise."
+    },
+    {
+     "q": "La couleur d’une solution peut-elle dépendre de l’éclairage ?",
+     "choix": [
+      "Non, jamais",
+      "Seulement si son volume est nul",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "La lumière incidente disponible influence la couleur transmise."
+    }
+   ],
+   "id": "REV-PC-1RE-06"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Loi de Beer-Lambert",
+   "emoji": "🔬",
+   "en_une_phrase": "À longueur d’onde et trajet optique fixés, l’absorbance peut être proportionnelle à la concentration.",
+   "comprendre": "Une solution colorée plus concentrée peut absorber davantage de lumière. Dans le domaine où la loi de Beer-Lambert est valide, le rapport entre absorbance et concentration est constant pour une installation donnée. Une gamme étalon permet de déterminer une concentration inconnue.",
+   "essentiel": [
+    "À conditions fixées et dans le domaine de validité, A = kC.",
+    "A est sans unité et C peut s’exprimer en mol·L⁻¹.",
+    "Une gamme étalon relie des concentrations connues à leurs absorbances.",
+    "La proportionnalité doit être vérifiée dans la plage étudiée."
+   ],
+   "image_mentale": "Imagine une droite passant par l’origine reliant concentration et absorbance.",
+   "regle_ou_methode": "Détermine k avec un étalon, puis calcule C = A/k pour la solution inconnue.",
+   "exemples": [
+    "Un étalon à 0,020 mol·L⁻¹ a une absorbance de 0,40 dans des conditions données. Ainsi k = 0,40/0,020 = 20 L·mol⁻¹. Une solution de même espèce mesurée à A = 0,30 a C = 0,30/20 = 0,015 mol·L⁻¹ dans le domaine linéaire.",
+    "Si la concentration double dans le domaine de validité, l’absorbance double à conditions inchangées."
+   ],
+   "piege": "La relation n’est pas garantie pour toute concentration ni si les conditions de mesure changent.",
+   "astuce_memoire": "Étalon, droite, concentration.",
+   "quiz": [
+    {
+     "q": "Si A = 20C et A = 0,50, quelle est C ?",
+     "choix": [
+      "0,40 mol·L⁻¹",
+      "0,025 mol·L⁻¹",
+      "10 mol·L⁻¹"
+     ],
+     "rep": "0,025 mol·L⁻¹",
+     "expl": "C = 0,50/20 = 0,025 mol·L⁻¹."
+    },
+    {
+     "q": "Dans le domaine linéaire, que devient A si C double à conditions inchangées ?",
+     "choix": [
+      "Elle est divisée par deux",
+      "Elle reste identique",
+      "Elle double"
+     ],
+     "rep": "Elle double",
+     "expl": "La loi A = kC donne une proportionnalité."
+    },
+    {
+     "q": "Quelle condition faut-il vérifier pour exploiter une droite d’étalonnage ?",
+     "choix": [
+      "La mesure est dans le domaine de validité et les conditions sont adaptées",
+      "La solution est toujours incolore",
+      "La concentration est automatiquement connue"
+     ],
+     "rep": "La mesure est dans le domaine de validité et les conditions sont adaptées",
+     "expl": "La proportionnalité et les conditions expérimentales doivent être appropriées."
+    }
+   ],
+   "id": "REV-PC-1RE-07"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Oxydant et réducteur",
+   "emoji": "🔋",
+   "en_une_phrase": "Une réaction d’oxydoréduction met en jeu un transfert d’électrons entre un réducteur et un oxydant.",
+   "comprendre": "Comme un objet peut passer d’une main à une autre, un électron peut être transféré entre espèces chimiques. Le réducteur cède des électrons et l’oxydant les capte. Leurs transformations sont liées par la conservation des électrons.",
+   "essentiel": [
+    "Un oxydant capte un ou plusieurs électrons.",
+    "Un réducteur cède un ou plusieurs électrons.",
+    "Un couple est noté oxydant/réducteur.",
+    "Une oxydation est une perte d’électrons ; une réduction est un gain."
+   ],
+   "image_mentale": "Imagine des électrons qui passent du réducteur vers l’oxydant.",
+   "regle_ou_methode": "Identifie l’espèce qui perd les électrons et celle qui les gagne.",
+   "exemples": [
+    "Dans Zn + Cu²⁺ → Zn²⁺ + Cu, le zinc devient Zn²⁺ en cédant deux électrons : il est oxydé et joue le rôle de réducteur. Cu²⁺ capte ces électrons et devient Cu : il est réduit et joue le rôle d’oxydant.",
+    "Dans le couple Cu²⁺/Cu, Cu²⁺ est l’oxydant et Cu le réducteur."
+   ],
+   "piege": "L’oxydant est réduit au cours de la réaction ; le réducteur est oxydé.",
+   "astuce_memoire": "Oxydation : perte ; réduction : gain.",
+   "quiz": [
+    {
+     "q": "Dans Zn → Zn²⁺ + 2 e⁻, quel rôle joue Zn ?",
+     "choix": [
+      "Oxydant",
+      "Solvant",
+      "Réducteur"
+     ],
+     "rep": "Réducteur",
+     "expl": "Zn cède deux électrons : c’est le réducteur."
+    },
+    {
+     "q": "Une réduction correspond à :",
+     "choix": [
+      "Un gain d’électrons",
+      "Une perte d’électrons",
+      "Un gain obligatoire de protons"
+     ],
+     "rep": "Un gain d’électrons",
+     "expl": "L’espèce réduite capte des électrons."
+    },
+    {
+     "q": "Dans le couple Cu²⁺/Cu, quel est l’oxydant ?",
+     "choix": [
+      "Cu",
+      "Cu²⁺",
+      "Zn"
+     ],
+     "rep": "Cu²⁺",
+     "expl": "Cu²⁺ peut capter deux électrons pour former Cu."
+    }
+   ],
+   "id": "REV-PC-1RE-08"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Demi-équations et bilan",
+   "emoji": "🧲",
+   "en_une_phrase": "Les demi-équations électroniques permettent de construire un bilan d’oxydoréduction équilibré.",
+   "comprendre": "Une réaction transfère autant d’électrons qu’elle en reçoit. Chaque demi-équation décrit le changement d’un couple oxydant-réducteur. Leur addition élimine les électrons et conserve les atomes et les charges.",
+   "essentiel": [
+    "Une demi-équation conserve les éléments et la charge.",
+    "Zn → Zn²⁺ + 2 e⁻ décrit une oxydation.",
+    "Cu²⁺ + 2 e⁻ → Cu décrit une réduction.",
+    "Le bilan global ne doit pas contenir d’électrons libres."
+   ],
+   "image_mentale": "Imagine deux colonnes avec le même nombre d’électrons échangés.",
+   "regle_ou_methode": "Écris les deux demi-équations dans le sens choisi, égalise le nombre d’électrons puis additionne.",
+   "exemples": [
+    "Pour le zinc et les ions cuivre, écris Zn → Zn²⁺ + 2 e⁻ et Cu²⁺ + 2 e⁻ → Cu. Additionne puis simplifie les 2 e⁻ : Zn + Cu²⁺ → Zn²⁺ + Cu. Les atomes et la charge totale sont conservés.",
+    "Pour le couple Ag⁺/Ag, la réduction est Ag⁺ + e⁻ → Ag."
+   ],
+   "piege": "On peut multiplier une demi-équation pour équilibrer les électrons, sans changer les espèces.",
+   "astuce_memoire": "Électrons échangés égaux avant addition.",
+   "quiz": [
+    {
+     "q": "Quelle demi-équation décrit la réduction de Cu²⁺ ?",
+     "choix": [
+      "Cu²⁺ + 2 e⁻ → Cu",
+      "Cu²⁺ → Cu + 2 e⁻",
+      "Cu → Cu²⁺ + 2 e⁻"
+     ],
+     "rep": "Cu²⁺ + 2 e⁻ → Cu",
+     "expl": "L’ion cuivre capte deux électrons."
+    },
+    {
+     "q": "Combien d’électrons Zn cède-t-il pour former Zn²⁺ ?",
+     "choix": [
+      "1",
+      "2",
+      "3"
+     ],
+     "rep": "2",
+     "expl": "La charge passe de 0 à +2 par perte de deux électrons."
+    },
+    {
+     "q": "Que deviennent les électrons lors de l’addition des deux demi-équations ?",
+     "choix": [
+      "Ils restent nécessairement parmi les produits",
+      "Ils deviennent des protons",
+      "Ils se simplifient dans le bilan global"
+     ],
+     "rep": "Ils se simplifient dans le bilan global",
+     "expl": "Le nombre cédé égale le nombre capté."
+    }
+   ],
+   "id": "REV-PC-1RE-09"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Avancement d’une réaction",
+   "emoji": "📋",
+   "en_une_phrase": "L’avancement mesure la progression d’une réaction en respectant ses coefficients stœchiométriques.",
+   "comprendre": "Pour une recette, utiliser deux ingrédients d’un type pour un d’un autre impose des proportions. Une équation chimique joue ce rôle avec les coefficients stœchiométriques. L’avancement x traduit la quantité transformée selon ces proportions.",
+   "essentiel": [
+    "L’avancement x s’exprime en mol.",
+    "Pour 2 H₂ + O₂ → 2 H₂O, n(H₂) = n₀(H₂) − 2x.",
+    "Pour la même équation, n(O₂) = n₀(O₂) − x.",
+    "Si l’eau est absente au départ, n(H₂O) = 2x."
+   ],
+   "image_mentale": "Imagine une recette où chaque étape utilise deux parts de dihydrogène et une de dioxygène.",
+   "regle_ou_methode": "Multiplie x par chaque coefficient : retranche pour les réactifs et ajoute pour les produits.",
+   "exemples": [
+    "Au départ, n₀(H₂) = 0,080 mol, n₀(O₂) = 0,030 mol et il n’y a pas d’eau. Pour x = 0,010 mol, il reste 0,080 − 2 × 0,010 = 0,060 mol de H₂ et 0,030 − 0,010 = 0,020 mol de O₂ ; il se forme 0,020 mol de H₂O.",
+    "Pour la même réaction, si x augmente de 0,005 mol, la quantité d’eau augmente de 0,010 mol."
+   ],
+   "piege": "Les coefficients indiquent les variations en moles : ils ne sont pas les quantités initiales.",
+   "astuce_memoire": "Réactifs : moins coefficient fois x ; produits : plus.",
+   "quiz": [
+    {
+     "q": "Pour 2 H₂ + O₂ → 2 H₂O, combien de moles de H₂ sont consommées si x = 0,020 mol ?",
+     "choix": [
+      "0,020 mol",
+      "0,040 mol",
+      "0,010 mol"
+     ],
+     "rep": "0,040 mol",
+     "expl": "La quantité consommée de H₂ vaut 2x."
+    },
+    {
+     "q": "Pour la même réaction, quelle quantité de O₂ est consommée si x = 0,020 mol ?",
+     "choix": [
+      "0,040 mol",
+      "0,010 mol",
+      "0,020 mol"
+     ],
+     "rep": "0,020 mol",
+     "expl": "Le coefficient de O₂ est 1 : la quantité consommée vaut x."
+    },
+    {
+     "q": "Quelle est l’unité de l’avancement ?",
+     "choix": [
+      "La mole",
+      "Le gramme par litre",
+      "Le litre par mole"
+     ],
+     "rep": "La mole",
+     "expl": "L’avancement est une quantité de matière."
+    }
+   ],
+   "id": "REV-PC-1RE-10"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Réactif limitant",
+   "emoji": "🚦",
+   "en_une_phrase": "Le réactif limitant est celui qui s’épuise en premier si la transformation est totale.",
+   "comprendre": "Dans une recette, le nombre de portions est limité par l’ingrédient qui manque en premier. En chimie, il faut tenir compte des coefficients de l’équation. L’avancement maximal est la plus petite des quantités initiales divisées par leur coefficient.",
+   "essentiel": [
+    "Pour a A + b B → produits, xₘₐₓ = min(n₀(A)/a ; n₀(B)/b).",
+    "Le réactif limitant s’épuise si la transformation atteint xₘₐₓ.",
+    "Dans un mélange stœchiométrique, les réactifs sont introduits selon les proportions de l’équation."
+   ],
+   "image_mentale": "Imagine deux ingrédients et une recette qui fixe leurs proportions.",
+   "regle_ou_methode": "Divise chaque quantité initiale par son coefficient, puis compare les résultats.",
+   "exemples": [
+    "Pour 2 H₂ + O₂ → 2 H₂O, avec 0,080 mol de H₂ et 0,030 mol de O₂, compare 0,080/2 = 0,040 mol et 0,030/1 = 0,030 mol. Le dioxygène est limitant et xₘₐₓ = 0,030 mol.",
+    "Avec 0,060 mol de H₂ et 0,030 mol de O₂, les rapports sont égaux : le mélange est stœchiométrique."
+   ],
+   "piege": "Le réactif dont la quantité initiale est la plus petite n’est pas forcément limitant : les coefficients comptent.",
+   "astuce_memoire": "Comparer quantité initiale divisée par coefficient.",
+   "quiz": [
+    {
+     "q": "Pour 2 H₂ + O₂ → 2 H₂O, avec 0,080 mol de H₂ et 0,030 mol de O₂, quel est le réactif limitant ?",
+     "choix": [
+      "H₂",
+      "H₂O",
+      "O₂"
+     ],
+     "rep": "O₂",
+     "expl": "Les rapports sont 0,040 mol pour H₂ et 0,030 mol pour O₂."
+    },
+    {
+     "q": "Quel est l’avancement maximal dans cette situation ?",
+     "choix": [
+      "0,030 mol",
+      "0,040 mol",
+      "0,080 mol"
+     ],
+     "rep": "0,030 mol",
+     "expl": "Le plus petit des rapports est 0,030 mol."
+    },
+    {
+     "q": "Pour un mélange stœchiométrique, que compare-t-on ?",
+     "choix": [
+      "Les masses initiales sans autre donnée",
+      "Les quantités initiales divisées par les coefficients",
+      "Les seuls volumes des récipients"
+     ],
+     "rep": "Les quantités initiales divisées par les coefficients",
+     "expl": "Les rapports aux coefficients doivent être égaux."
+    }
+   ],
+   "id": "REV-PC-1RE-11"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "État final et transformation",
+   "emoji": "🏁",
+   "en_une_phrase": "Comparer l’avancement final à l’avancement maximal distingue une transformation totale d’une transformation non totale.",
+   "comprendre": "Une recette peut s’arrêter avant que l’ingrédient limitant ne soit épuisé. En chimie, on distingue l’avancement maximal calculé des quantités initiales et l’avancement final effectivement atteint. Les quantités finales permettent de retrouver ce dernier.",
+   "essentiel": [
+    "Une transformation est totale si xfinal = xₘₐₓ.",
+    "Elle est non totale si xfinal < xₘₐₓ.",
+    "Le réactif limitant est épuisé dans le modèle d’une transformation totale.",
+    "L’état final se calcule avec les coefficients de l’équation."
+   ],
+   "image_mentale": "Imagine une jauge de progression dont le maximum correspond à l’épuisement d’un réactif.",
+   "regle_ou_methode": "Calcule xₘₐₓ ; détermine xfinal par les données finales ; compare les deux.",
+   "exemples": [
+    "Pour 2 H₂ + O₂ → 2 H₂O, on part de 0,080 mol de H₂ et 0,030 mol de O₂, sans eau. Si la transformation est totale, xfinal = xₘₐₓ = 0,030 mol. Il reste 0,020 mol de H₂, aucun O₂ et il se forme 0,060 mol de H₂O.",
+    "Si une réaction a xₘₐₓ = 0,10 mol mais s’arrête à xfinal = 0,06 mol, elle est non totale."
+   ],
+   "piege": "Un réactif limitant théorique ne doit pas être déclaré épuisé si la transformation observée est non totale.",
+   "astuce_memoire": "Comparer final et maximal.",
+   "quiz": [
+    {
+     "q": "Une réaction a xₘₐₓ = 0,10 mol et xfinal = 0,10 mol. Elle est :",
+     "choix": [
+      "Totale",
+      "Non totale",
+      "Impossible à classer malgré les données"
+     ],
+     "rep": "Totale",
+     "expl": "L’avancement final égale le maximum."
+    },
+    {
+     "q": "Une réaction a xₘₐₓ = 0,10 mol et xfinal = 0,06 mol. Elle est :",
+     "choix": [
+      "Totale",
+      "Non totale",
+      "Forcément instantanée"
+     ],
+     "rep": "Non totale",
+     "expl": "L’avancement final est inférieur au maximum."
+    },
+    {
+     "q": "Dans l’exemple de la fiche, combien de H₂ reste-t-il après transformation totale ?",
+     "choix": [
+      "0,050 mol",
+      "0 mol",
+      "0,020 mol"
+     ],
+     "rep": "0,020 mol",
+     "expl": "0,080 − 2 × 0,030 = 0,020 mol."
+    }
+   ],
+   "id": "REV-PC-1RE-12"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Équivalence d’un titrage",
+   "emoji": "🎯",
+   "en_une_phrase": "À l’équivalence, le titrant ajouté et l’espèce titrée initiale sont dans les proportions stœchiométriques.",
+   "comprendre": "Pour mesurer une quantité inconnue, on la fait réagir avec une solution de concentration connue. À l’équivalence, les quantités introduites correspondent exactement aux coefficients de l’équation. Le volume versé permet de calculer la quantité recherchée.",
+   "essentiel": [
+    "La solution titrante est de concentration connue.",
+    "Pour a A + b B → produits, à l’équivalence n₀(A)/a = nversée(B)/b.",
+    "Pour le titrant B, nversée(B) = CB × Véquivalence.",
+    "Le volume doit être exprimé en litres si C est en mol·L⁻¹."
+   ],
+   "image_mentale": "Imagine deux quantités versées sur une balance graduée selon les coefficients de réaction.",
+   "regle_ou_methode": "Écris l’équation, utilise les coefficients et calcule la quantité de titrant à l’équivalence.",
+   "exemples": [
+    "Dans un titrage où A et B réagissent selon A + B → produits, CB = 0,10 mol·L⁻¹ et Véquivalence = 12,0 mL. Convertis en 0,0120 L : n(B) = 0,10 × 0,0120 = 0,00120 mol. Les coefficients étant égaux, n₀(A) = 0,00120 mol.",
+    "Pour le titrage de Fe²⁺ par MnO₄⁻ en milieu acide, l’équation contient un ion MnO₄⁻ pour cinq ions Fe²⁺. Si 0,00020 mol de MnO₄⁻ sont versées à l’équivalence, la quantité initiale de Fe²⁺ vaut 5 × 0,00020 = 0,0010 mol."
+   ],
+   "piege": "À l’équivalence, les quantités sont dans les proportions des coefficients ; elles ne sont pas toujours égales.",
+   "astuce_memoire": "Quantités divisées par coefficients égales.",
+   "quiz": [
+    {
+     "q": "Pour A + B → produits, CB = 0,10 mol·L⁻¹ et Véquivalence = 20,0 mL, quelle est n₀(A) ?",
+     "choix": [
+      "0,200 mol",
+      "0,00200 mol",
+      "0,000200 mol"
+     ],
+     "rep": "0,00200 mol",
+     "expl": "0,10 × 0,0200 = 0,00200 mol et les coefficients sont égaux."
+    },
+    {
+     "q": "Pour 2 A + B → produits, quelle relation vaut à l’équivalence ?",
+     "choix": [
+      "n₀(A) = nversée(B)/2",
+      "n₀(A) = nversée(B) toujours",
+      "n₀(A) = 2nversée(B)"
+     ],
+     "rep": "n₀(A) = 2nversée(B)",
+     "expl": "n₀(A)/2 = nversée(B)."
+    },
+    {
+     "q": "Combien valent 15,0 mL en litres ?",
+     "choix": [
+      "0,0150 L",
+      "0,150 L",
+      "15,0 L"
+     ],
+     "rep": "0,0150 L",
+     "expl": "On divise par 1 000."
+    }
+   ],
+   "id": "REV-PC-1RE-13"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Repérer un titrage coloré",
+   "emoji": "🎨",
+   "en_une_phrase": "Un changement de couleur peut signaler l’équivalence d’un titrage si une espèce colorée apparaît en excès.",
+   "comprendre": "Pendant un titrage, on ajoute progressivement le réactif titrant. Avant l’équivalence, il peut être entièrement consommé par l’espèce titrée. Après l’équivalence, un léger excès persistant d’une espèce colorée peut devenir visible.",
+   "essentiel": [
+    "Avant l’équivalence, le titrant est limitant si la réaction de titrage est totale et l’espèce titrée initiale est en excès.",
+    "À l’équivalence, les réactifs ont été introduits dans les proportions stœchiométriques.",
+    "Après l’équivalence, l’espèce titrée est consommée dans le modèle idéal et le titrant est en excès.",
+    "Le virage observable dépend des espèces présentes et des conditions."
+   ],
+   "image_mentale": "Imagine une burette qui verse goutte à goutte dans un bécher.",
+   "regle_ou_methode": "Identifie l’espèce colorée et observe l’apparition durable d’un léger excès près de l’équivalence.",
+   "exemples": [
+    "On titre des ions fer(II) par une solution violette de permanganate, en milieu acide et dans des conditions où les autres couleurs ne masquent pas le repérage. Avant l’équivalence, le permanganate ajouté est consommé. Juste après, une légère coloration violette persistante signale un excès de permanganate.",
+    "Si un indicateur coloré approprié est ajouté lors d’un autre titrage, son changement de couleur peut aussi aider à repérer l’équivalence."
+   ],
+   "piege": "Un changement de couleur n’a de sens qu’en tenant compte des espèces présentes et du protocole.",
+   "astuce_memoire": "Avant : titrant consommé ; après : léger excès.",
+   "quiz": [
+    {
+     "q": "Dans le modèle idéal, avant l’équivalence, quel réactif est limitant ?",
+     "choix": [
+      "L’espèce titrée initiale",
+      "Les produits formés",
+      "Le titrant ajouté"
+     ],
+     "rep": "Le titrant ajouté",
+     "expl": "Le titrant est consommé par l’espèce titrée encore en excès."
+    },
+    {
+     "q": "Dans le titrage décrit, que suggère une légère coloration violette persistante juste après l’équivalence ?",
+     "choix": [
+      "Un léger excès de permanganate",
+      "La disparition certaine de tout produit",
+      "Une baisse de concentration du titrant dans la burette"
+     ],
+     "rep": "Un léger excès de permanganate",
+     "expl": "La couleur persistante indique que du permanganate reste en solution."
+    },
+    {
+     "q": "La couleur seule suffit-elle toujours à repérer une équivalence sans connaître le protocole ?",
+     "choix": [
+      "Oui, quelle que soit la réaction",
+      "Non",
+      "Oui, si la solution est chaude"
+     ],
+     "rep": "Non",
+     "expl": "Le repérage dépend de la réaction et des espèces colorées."
+    }
+   ],
+   "id": "REV-PC-1RE-14"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Schéma de Lewis",
+   "emoji": "🧩",
+   "en_une_phrase": "Un schéma de Lewis représente les électrons de valence par des liaisons et des doublets non liants.",
+   "comprendre": "Tu peux voir les électrons de valence comme des éléments à répartir autour des atomes. Une liaison covalente correspond à un doublet partagé. Les doublets non liants restent localisés sur un atome.",
+   "essentiel": [
+    "Une liaison simple représente un doublet partagé.",
+    "Un doublet non liant appartient à un atome.",
+    "L’hydrogène tend à être entouré de deux électrons.",
+    "Une lacune électronique correspond à une place disponible pour un doublet."
+   ],
+   "image_mentale": "Imagine des atomes reliés par des traits et entourés de paires de points.",
+   "regle_ou_methode": "Compte les électrons de valence, place les liaisons puis répartis les électrons restants en doublets.",
+   "exemples": [
+    "Pour H₂O, compte 6 électrons de valence pour O et 1 pour chaque H, soit 8. Deux liaisons O–H utilisent 4 électrons ; les 4 autres forment deux doublets non liants sur O.",
+    "Dans NH₃, l’azote forme trois liaisons N–H et possède un doublet non liant."
+   ],
+   "piege": "Une lacune électronique ne représente pas un doublet déjà présent.",
+   "astuce_memoire": "Total des électrons, liaisons, doublets restants.",
+   "quiz": [
+    {
+     "q": "Combien de doublets non liants porte l’oxygène dans H₂O ?",
+     "choix": [
+      "2",
+      "1",
+      "3"
+     ],
+     "rep": "2",
+     "expl": "Après les deux liaisons O–H, quatre électrons forment deux doublets."
+    },
+    {
+     "q": "Que représente un trait de liaison simple dans un schéma de Lewis ?",
+     "choix": [
+      "Un proton partagé",
+      "Un doublet d’électrons partagé",
+      "Un doublet nécessairement non liant"
+     ],
+     "rep": "Un doublet d’électrons partagé",
+     "expl": "Une liaison simple correspond à deux électrons partagés."
+    },
+    {
+     "q": "Combien de liaisons N–H contient NH₃ ?",
+     "choix": [
+      "2",
+      "4",
+      "3"
+     ],
+     "rep": "3",
+     "expl": "L’azote est lié aux trois atomes d’hydrogène."
+    }
+   ],
+   "id": "REV-PC-1RE-15"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Géométrie moléculaire",
+   "emoji": "📐",
+   "en_une_phrase": "La géométrie d’une molécule dépend de la répartition des doublets autour de l’atome central.",
+   "comprendre": "Des objets voisins occupent de l’espace et ne peuvent pas tous se placer au même endroit. De même, les domaines électroniques autour d’un atome central se repoussent. Leur répartition contribue à expliquer la forme de la molécule.",
+   "essentiel": [
+    "Les doublets liants et non liants influencent la géométrie.",
+    "La molécule de CO₂ est linéaire.",
+    "La molécule H₂O est coudée.",
+    "CH₄ possède une géométrie tétraédrique."
+   ],
+   "image_mentale": "Imagine un atome central et des directions qui s’écartent autour de lui.",
+   "regle_ou_methode": "Établis le schéma de Lewis puis détermine la disposition des atomes autour du centre.",
+   "exemples": [
+    "Pour H₂O, l’oxygène central porte deux liaisons et deux doublets non liants. La disposition de ces domaines conduit à une molécule coudée.",
+    "Dans CO₂, les deux directions des liaisons autour du carbone sont opposées : la molécule est linéaire."
+   ],
+   "piege": "La présence de deux atomes liés au centre ne garantit pas à elle seule une géométrie linéaire.",
+   "astuce_memoire": "Lewis puis disposition dans l’espace.",
+   "quiz": [
+    {
+     "q": "Quelle est la forme de H₂O ?",
+     "choix": [
+      "Linéaire",
+      "Coudée",
+      "Tétraédrique avec quatre hydrogènes"
+     ],
+     "rep": "Coudée",
+     "expl": "Les deux doublets non liants de l’oxygène participent à la géométrie."
+    },
+    {
+     "q": "Quelle est la géométrie de CO₂ ?",
+     "choix": [
+      "Coudée",
+      "Pyramidale à trois atomes liés",
+      "Linéaire"
+     ],
+     "rep": "Linéaire",
+     "expl": "Les deux liaisons sont disposées dans des directions opposées."
+    },
+    {
+     "q": "Quelle est la géométrie de CH₄ ?",
+     "choix": [
+      "Tétraédrique",
+      "Linéaire",
+      "Plane avec seulement deux liaisons"
+     ],
+     "rep": "Tétraédrique",
+     "expl": "Les quatre liaisons autour du carbone occupent quatre directions tétraédriques."
+    }
+   ],
+   "id": "REV-PC-1RE-16"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Liaison et polarité",
+   "emoji": "🧲",
+   "en_une_phrase": "La polarité d’une molécule dépend de la polarisation de ses liaisons et de leur disposition.",
+   "comprendre": "Dans une liaison, les atomes n’attirent pas toujours les électrons avec la même force. Une différence d’électronégativité polarise la liaison. La forme de la molécule peut ensuite renforcer ou compenser les effets des liaisons.",
+   "essentiel": [
+    "L’atome le plus électronégatif attire davantage les électrons de liaison.",
+    "Une liaison polarisée porte des charges partielles opposées.",
+    "H₂O est une molécule polaire.",
+    "CO₂ possède des liaisons polarisées mais sa géométrie linéaire compense leurs effets."
+   ],
+   "image_mentale": "Imagine deux flèches d’attraction électronique qui peuvent se renforcer ou s’opposer.",
+   "regle_ou_methode": "Compare les électronégativités, repère les liaisons polarisées puis examine la géométrie.",
+   "exemples": [
+    "Dans CO₂, chaque liaison C–O est polarisée vers O. Comme les deux directions sont opposées dans une molécule linéaire, leurs effets se compensent : CO₂ est apolaire.",
+    "Dans H₂O, les liaisons sont polarisées et la molécule est coudée : l’ensemble est polaire."
+   ],
+   "piege": "Une molécule peut contenir des liaisons polarisées tout en étant globalement apolaire.",
+   "astuce_memoire": "Polarité des liaisons et géométrie.",
+   "quiz": [
+    {
+     "q": "Quelle molécule est globalement apolaire ?",
+     "choix": [
+      "H₂O",
+      "HCl",
+      "CO₂"
+     ],
+     "rep": "CO₂",
+     "expl": "Les effets des deux liaisons C–O se compensent dans CO₂ linéaire."
+    },
+    {
+     "q": "Dans une liaison polarisée, quel atome attire davantage les électrons ?",
+     "choix": [
+      "Le plus électronégatif",
+      "Toujours le moins électronégatif",
+      "Toujours celui qui contient le moins de protons"
+     ],
+     "rep": "Le plus électronégatif",
+     "expl": "La polarisation est liée à la différence d’électronégativité."
+    },
+    {
+     "q": "Pourquoi H₂O est-elle polaire ?",
+     "choix": [
+      "Ses liaisons ne sont pas polarisées",
+      "Ses liaisons polarisées ne se compensent pas dans sa géométrie coudée",
+      "Elle possède trois atomes identiques"
+     ],
+     "rep": "Ses liaisons polarisées ne se compensent pas dans sa géométrie coudée",
+     "expl": "La géométrie coudée empêche la compensation des effets des liaisons."
+    }
+   ],
+   "id": "REV-PC-1RE-17"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Interactions et cohésion",
+   "emoji": "🧱",
+   "en_une_phrase": "Les interactions entre entités contribuent à la cohésion des solides et des liquides.",
+   "comprendre": "Des éléments peuvent rester ensemble grâce à des attractions entre eux. Dans un solide ionique, des ions de signes opposés s’attirent. Dans les substances moléculaires, d’autres interactions existent entre molécules, dont les ponts hydrogène dans certains cas.",
+   "essentiel": [
+    "Un solide ionique contient des ions de signes opposés.",
+    "Des interactions existent aussi entre molécules apolaires.",
+    "Un pont hydrogène peut se former notamment avec un hydrogène lié à O, N ou F et un site adapté.",
+    "Les interactions entre molécules diffèrent des liaisons covalentes au sein d’une molécule."
+   ],
+   "image_mentale": "Imagine un réseau d’ions alternés puis des molécules voisines attirées entre elles.",
+   "regle_ou_methode": "Identifie les entités présentes puis les interactions possibles entre elles.",
+   "exemples": [
+    "Dans le chlorure de sodium solide, repère les ions Na⁺ et Cl⁻. Leurs charges opposées s’attirent : les interactions électrostatiques contribuent à la cohésion du cristal.",
+    "Entre molécules d’eau, des ponts hydrogène participent à la cohésion du liquide."
+   ],
+   "piege": "Ne confonds pas une liaison covalente O–H dans une molécule avec un pont hydrogène entre molécules.",
+   "astuce_memoire": "Identifier les entités puis leurs interactions.",
+   "quiz": [
+    {
+     "q": "Quelles entités s’attirent dans un solide ionique ?",
+     "choix": [
+      "Des ions de charges opposées",
+      "Uniquement des molécules neutres",
+      "Des ions de même signe exclusivement"
+     ],
+     "rep": "Des ions de charges opposées",
+     "expl": "Les charges opposées s’attirent électrostatiquement."
+    },
+    {
+     "q": "Entre des molécules d’eau, quelle interaction particulière peut apparaître ?",
+     "choix": [
+      "Une liaison métallique",
+      "Un pont hydrogène",
+      "Une réaction nucléaire"
+     ],
+     "rep": "Un pont hydrogène",
+     "expl": "Les molécules d’eau peuvent former des ponts hydrogène."
+    },
+    {
+     "q": "Des molécules apolaires peuvent-elles présenter des interactions entre elles ?",
+     "choix": [
+      "Non",
+      "Seulement si elles deviennent des ions",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Des interactions existent également entre molécules apolaires."
+    }
+   ],
+   "id": "REV-PC-1RE-18"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Dissoudre un solide ionique",
+   "emoji": "💧",
+   "en_une_phrase": "Lors de la dissolution, l’eau peut séparer les ions d’un solide et les entourer.",
+   "comprendre": "Tu as déjà vu du sel disparaître dans l’eau. À l’échelle microscopique, les ions se séparent et interagissent avec les molécules d’eau. Ils restent présents dans la solution sous forme d’ions solvatés.",
+   "essentiel": [
+    "NaCl(s) → Na⁺(aq) + Cl⁻(aq) modélise la dissolution du sel.",
+    "La notation (s) désigne le solide.",
+    "La notation (aq) désigne une espèce en solution aqueuse.",
+    "La charge électrique totale se conserve."
+   ],
+   "image_mentale": "Imagine un cristal qui libère ses ions, chacun entouré de molécules d’eau.",
+   "regle_ou_methode": "Identifie les ions du solide, écris leur proportion et vérifie la conservation des atomes et des charges.",
+   "exemples": [
+    "Pour le chlorure de calcium CaCl₂, une entité contient un ion calcium et deux ions chlorure. L’équation est CaCl₂(s) → Ca²⁺(aq) + 2 Cl⁻(aq) : les atomes et la charge totale sont conservés.",
+    "Pour NaCl(s), l’équation donne Na⁺(aq) et Cl⁻(aq) en proportions un pour un."
+   ],
+   "piege": "Le solide dissous ne disparaît pas : ses ions sont dispersés dans la solution.",
+   "astuce_memoire": "Séparation puis hydratation des ions.",
+   "quiz": [
+    {
+     "q": "Quelle équation modélise la dissolution de CaCl₂ ?",
+     "choix": [
+      "CaCl₂(s) → Ca²⁺(aq) + Cl⁻(aq)",
+      "CaCl₂(s) → Ca²⁺(aq) + 2 Cl⁻(aq)",
+      "CaCl₂(s) → Ca(s) + Cl₂(g)"
+     ],
+     "rep": "CaCl₂(s) → Ca²⁺(aq) + 2 Cl⁻(aq)",
+     "expl": "Une unité de CaCl₂ fournit un ion calcium et deux ions chlorure."
+    },
+    {
+     "q": "Que signifie la notation (aq) ?",
+     "choix": [
+      "L’espèce est nécessairement solide",
+      "L’espèce est un gaz pur",
+      "L’espèce est en solution aqueuse"
+     ],
+     "rep": "L’espèce est en solution aqueuse",
+     "expl": "La notation (aq) indique une espèce dissoute dans l’eau."
+    },
+    {
+     "q": "Quel est le total des charges des ions issus d’une unité de CaCl₂ ?",
+     "choix": [
+      "0",
+      "+1",
+      "−2"
+     ],
+     "rep": "0",
+     "expl": "La charge +2 et deux charges −1 se compensent."
+    }
+   ],
+   "id": "REV-PC-1RE-19"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Solubilité et miscibilité",
+   "emoji": "🫗",
+   "en_une_phrase": "La solubilité décrit la quantité maximale dissoute ; la miscibilité concerne le mélange de deux liquides.",
+   "comprendre": "Le sucre et l’huile ne se comportent pas de la même façon dans l’eau. Les interactions entre les entités du soluté et du solvant aident à comprendre ces différences. Une solution saturée contient la quantité maximale dissoute dans des conditions données.",
+   "essentiel": [
+    "La solubilité dépend du soluté, du solvant et notamment de la température.",
+    "Deux liquides miscibles forment une seule phase dans les proportions considérées.",
+    "Deux liquides non miscibles forment deux phases séparées.",
+    "Le caractère polaire peut aider à prévoir une solubilité, sans être une règle absolue."
+   ],
+   "image_mentale": "Imagine un verre contenant soit une phase uniforme, soit deux couches.",
+   "regle_ou_methode": "Compare les substances et les conditions, puis vérifie le nombre de phases et les données de solubilité.",
+   "exemples": [
+    "Un solide fictif a une solubilité de 10 g dans 100 mL d’eau aux conditions de l’expérience. Si on introduit 12 g et que l’équilibre est atteint, 10 g se dissolvent au maximum et 2 g restent solides.",
+    "De l’eau et une huile usuelle non miscible forment deux phases après décantation."
+   ],
+   "piege": "Des liquides de même couleur peuvent être non miscibles : observe les phases plutôt que la couleur seule.",
+   "astuce_memoire": "Solubilité : quantité ; miscibilité : mélange des liquides.",
+   "quiz": [
+    {
+     "q": "Si la solubilité est de 10 g pour 100 mL et qu’on introduit 12 g, quelle masse reste solide à l’équilibre ?",
+     "choix": [
+      "10 g",
+      "12 g",
+      "2 g"
+     ],
+     "rep": "2 g",
+     "expl": "Au maximum 10 g se dissolvent dans les conditions indiquées."
+    },
+    {
+     "q": "Que signifie « deux liquides non miscibles » ?",
+     "choix": [
+      "Ils forment deux phases séparées",
+      "Ils réagissent toujours chimiquement",
+      "Ils ont nécessairement la même masse volumique"
+     ],
+     "rep": "Ils forment deux phases séparées",
+     "expl": "Ils ne forment pas une phase liquide homogène unique."
+    },
+    {
+     "q": "La solubilité est-elle indépendante des conditions ?",
+     "choix": [
+      "Oui, pour tous les solutés",
+      "Non, elle dépend notamment de la température",
+      "Oui, si le soluté est solide"
+     ],
+     "rep": "Non, elle dépend notamment de la température",
+     "expl": "Les conditions expérimentales influencent notamment la solubilité."
+    }
+   ],
+   "id": "REV-PC-1RE-20"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Extraction liquide-liquide",
+   "emoji": "🧪",
+   "en_une_phrase": "Une extraction liquide-liquide transfère une espèce vers un solvant où elle est plus soluble.",
+   "comprendre": "Pour séparer un composé dissous, tu peux le mettre en contact avec un second liquide. Si les liquides ne sont pas miscibles, deux phases se forment après agitation puis décantation. Le composé se répartit entre elles selon ses affinités.",
+   "essentiel": [
+    "Les deux liquides utilisés doivent former deux phases.",
+    "Le soluté est extrait préférentiellement vers le solvant où il est plus soluble.",
+    "La position des phases dépend de leur masse volumique.",
+    "L’extraction n’est pas forcément totale en une seule opération."
+   ],
+   "image_mentale": "Imagine une ampoule avec deux couches et des particules réparties entre elles.",
+   "regle_ou_methode": "Choisis un solvant adapté non miscible, puis identifie les phases à partir des données et de leur masse volumique.",
+   "exemples": [
+    "Un soluté est plus soluble dans un solvant organique non miscible à l’eau que dans l’eau. Après contact et séparation, il se répartit entre les deux phases, dont la phase organique.",
+    "Si la phase organique a une masse volumique inférieure à celle de la phase aqueuse, elle forme généralement la couche supérieure."
+   ],
+   "piege": "La phase organique n’est pas toujours au-dessus : cela dépend des masses volumiques.",
+   "astuce_memoire": "Solubilité pour choisir ; masse volumique pour situer.",
+   "quiz": [
+    {
+     "q": "Quel critère aide à choisir le solvant d’extraction ?",
+     "choix": [
+      "Une forte solubilité du soluté et deux liquides non miscibles",
+      "Une couleur identique à celle du soluté uniquement",
+      "Une miscibilité totale avec l’eau"
+     ],
+     "rep": "Une forte solubilité du soluté et deux liquides non miscibles",
+     "expl": "L’extraction utilise ici deux phases et une meilleure affinité du soluté pour le second solvant."
+    },
+    {
+     "q": "Quel facteur détermine principalement la position des deux phases ?",
+     "choix": [
+      "Leurs noms",
+      "Leurs masses volumiques",
+      "La seule couleur du récipient"
+     ],
+     "rep": "Leurs masses volumiques",
+     "expl": "La phase la moins dense se place généralement au-dessus."
+    },
+    {
+     "q": "Une seule extraction transfère-t-elle nécessairement tout le soluté ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, dès que les liquides sont transparents",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Le soluté peut rester réparti entre les deux phases."
+    }
+   ],
+   "id": "REV-PC-1RE-21"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Molécule amphiphile",
+   "emoji": "🫧",
+   "en_une_phrase": "Une espèce amphiphile possède une partie hydrophile et une partie lipophile.",
+   "comprendre": "L’eau et les graisses ne se mélangent pas facilement. Les entités d’un savon peuvent interagir avec ces deux milieux grâce à leurs parties différentes. Elles contribuent ainsi à disperser des graisses dans l’eau.",
+   "essentiel": [
+    "La partie hydrophile a une affinité pour l’eau.",
+    "La partie lipophile a une affinité pour les corps gras.",
+    "Les ions de savon comportent généralement une tête hydrophile et une longue chaîne carbonée lipophile.",
+    "Des assemblages appelés micelles peuvent se former."
+   ],
+   "image_mentale": "Imagine des têtes attirées par l’eau et des queues tournées vers une goutte de graisse.",
+   "regle_ou_methode": "Repère la tête ionique et la chaîne carbonée, puis relie leurs propriétés à la dispersion des graisses.",
+   "exemples": [
+    "Dans un ion savon schématisé par une tête chargée reliée à une longue chaîne carbonée, la tête interagit avec l’eau. La chaîne interagit avec la graisse : l’ensemble facilite sa dispersion.",
+    "Un savon est un exemple de tensioactif utilisé pour le lavage."
+   ],
+   "piege": "Amphiphile ne signifie pas que chaque partie de la molécule a la même affinité pour l’eau.",
+   "astuce_memoire": "Tête vers l’eau, chaîne vers la graisse.",
+   "quiz": [
+    {
+     "q": "Quelle partie d’un ion savon est généralement hydrophile ?",
+     "choix": [
+      "La longue chaîne carbonée seule",
+      "La tête ionique",
+      "Une bulle d’air obligatoire"
+     ],
+     "rep": "La tête ionique",
+     "expl": "La tête chargée interagit avec l’eau."
+    },
+    {
+     "q": "Que signifie lipophile ?",
+     "choix": [
+      "Qui a uniquement une affinité pour l’eau",
+      "Qui interdit toute interaction",
+      "Qui a une affinité pour les corps gras"
+     ],
+     "rep": "Qui a une affinité pour les corps gras",
+     "expl": "Une partie lipophile interagit favorablement avec les milieux gras."
+    },
+    {
+     "q": "Quel rôle jouent les entités de savon dans le lavage ?",
+     "choix": [
+      "Elles facilitent la dispersion de graisses dans l’eau",
+      "Elles transforment toujours la graisse en eau",
+      "Elles suppriment toute interaction entre les milieux"
+     ],
+     "rep": "Elles facilitent la dispersion de graisses dans l’eau",
+     "expl": "Leur caractère amphiphile aide à disperser les graisses."
+    }
+   ],
+   "id": "REV-PC-1RE-22"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Groupes caractéristiques",
+   "emoji": "🧬",
+   "en_une_phrase": "Un groupe caractéristique permet de classer une molécule organique dans une famille.",
+   "comprendre": "Des objets différents peuvent partager une même pièce. De même, plusieurs molécules carbonées possèdent un même groupe caractéristique et appartiennent à une même famille. On repère ce groupe sur la formule semi-développée.",
+   "essentiel": [
+    "Le groupe hydroxyle −OH caractérise notamment les alcools.",
+    "Le groupe −CHO caractérise les aldéhydes.",
+    "Un groupe carbonyle C=O à l’intérieur de la chaîne caractérise une cétone.",
+    "Le groupe −COOH caractérise les acides carboxyliques."
+   ],
+   "image_mentale": "Imagine quatre étiquettes attachées à des chaînes carbonées.",
+   "regle_ou_methode": "Repère le groupe caractéristique, puis associe-le à sa famille.",
+   "exemples": [
+    "Dans CH₃−CH₂−OH, repère le groupe −OH lié au carbone de la chaîne. La molécule appartient à la famille des alcools.",
+    "CH₃−COOH contient le groupe carboxyle : c’est un acide carboxylique."
+   ],
+   "piege": "Ne confonds pas le groupe −OH d’un alcool avec le groupe complet −COOH d’un acide carboxylique.",
+   "astuce_memoire": "Identifier d’abord le groupe entier.",
+   "quiz": [
+    {
+     "q": "À quelle famille appartient CH₃−CH₂−OH ?",
+     "choix": [
+      "Aldéhyde",
+      "Acide carboxylique",
+      "Alcool"
+     ],
+     "rep": "Alcool",
+     "expl": "Le groupe caractéristique est hydroxyle −OH."
+    },
+    {
+     "q": "Quel groupe caractérise un acide carboxylique ?",
+     "choix": [
+      "−COOH",
+      "−CHO seul",
+      "−OH seul"
+     ],
+     "rep": "−COOH",
+     "expl": "Le groupe carboxyle s’écrit −COOH."
+    },
+    {
+     "q": "Quelle famille porte un carbonyle à l’intérieur de la chaîne ?",
+     "choix": [
+      "Alcool",
+      "Cétone",
+      "Alcane sans groupe caractéristique"
+     ],
+     "rep": "Cétone",
+     "expl": "Le groupe C=O interne caractérise une cétone."
+    }
+   ],
+   "id": "REV-PC-1RE-23"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Nom et chaîne carbonée",
+   "emoji": "🏷️",
+   "en_une_phrase": "Le nom d’une molécule simple renseigne sur sa chaîne et son groupe caractéristique.",
+   "comprendre": "Comme une adresse combine une rue et un numéro, un nom chimique donne plusieurs informations. Le préfixe indique la longueur de la chaîne et le suffixe une famille fonctionnelle. Un indice peut préciser la position du groupe.",
+   "essentiel": [
+    "Méth- indique un carbone ; éth- deux ; prop- trois.",
+    "La terminaison -ol indique un alcool.",
+    "La terminaison -al indique un aldéhyde.",
+    "Un indice peut situer le groupe dans la chaîne."
+   ],
+   "image_mentale": "Imagine une chaîne numérotée avec une étiquette sur le groupe caractéristique.",
+   "regle_ou_methode": "Compte les carbones, identifie le groupe puis vérifie sa position.",
+   "exemples": [
+    "Pour CH₃−CH₂−CH₂−OH, compte trois carbones : prop-. Le groupe −OH est sur le carbone 1 : le nom est propan-1-ol.",
+    "CH₃−CH₂−OH possède deux carbones et un groupe alcool : c’est l’éthanol."
+   ],
+   "piege": "Ne confonds pas la longueur de la chaîne carbonée avec le nombre total d’atomes.",
+   "astuce_memoire": "Préfixe : chaîne ; suffixe : famille.",
+   "quiz": [
+    {
+     "q": "Quel nom correspond à CH₃−CH₂−OH ?",
+     "choix": [
+      "Éthanol",
+      "Méthanol",
+      "Éthanal"
+     ],
+     "rep": "Éthanol",
+     "expl": "Deux carbones et un groupe alcool donnent éthanol."
+    },
+    {
+     "q": "Combien d’atomes de carbone indique le préfixe prop- ?",
+     "choix": [
+      "2",
+      "3",
+      "4"
+     ],
+     "rep": "3",
+     "expl": "Prop- indique une chaîne de trois carbones."
+    },
+    {
+     "q": "Que précise le 1 dans propan-1-ol ?",
+     "choix": [
+      "Le nombre total d’atomes de la molécule",
+      "La charge de chaque carbone",
+      "La position du groupe alcool sur la chaîne"
+     ],
+     "rep": "La position du groupe alcool sur la chaîne",
+     "expl": "Le groupe alcool est porté par le carbone numéro 1."
+    }
+   ],
+   "id": "REV-PC-1RE-24"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Spectre infrarouge",
+   "emoji": "📈",
+   "en_une_phrase": "Un spectre infrarouge aide à repérer des liaisons à partir de bandes d’absorption.",
+   "comprendre": "Des objets absorbent certaines radiations plus que d’autres. De même, certaines liaisons absorbent des rayonnements infrarouges dans des zones caractéristiques. Une table de référence permet de relier une bande à une liaison possible.",
+   "essentiel": [
+    "Un spectre infrarouge peut présenter des bandes d’absorption.",
+    "Le nombre d’onde est souvent exprimé en cm⁻¹.",
+    "Une bande de C=O apparaît souvent vers 1 700 cm⁻¹.",
+    "Une bande seule ne prouve pas l’identité complète de la molécule."
+   ],
+   "image_mentale": "Imagine une courbe avec des creux et une table qui associe des zones à des liaisons.",
+   "regle_ou_methode": "Repère le nombre d’onde d’une bande puis compare-le à une table de références.",
+   "exemples": [
+    "Une bande forte est observée près de 1 700 cm⁻¹. Une table indique cette zone pour la liaison C=O : la présence d’un groupe carbonyle est compatible avec le spectre.",
+    "Pour distinguer deux molécules pouvant porter C=O, examine d’autres bandes et les informations disponibles."
+   ],
+   "piege": "Une seule bande indique une liaison possible, pas nécessairement une molécule unique.",
+   "astuce_memoire": "Bande observée, table, hypothèse.",
+   "quiz": [
+    {
+     "q": "Une bande proche de 1 700 cm⁻¹ peut indiquer quelle liaison ?",
+     "choix": [
+      "C–C uniquement",
+      "C=O",
+      "O–H nécessairement"
+     ],
+     "rep": "C=O",
+     "expl": "La zone indiquée est caractéristique de nombreuses liaisons carbonyle."
+    },
+    {
+     "q": "Dans quelle unité exprime-t-on souvent le nombre d’onde ?",
+     "choix": [
+      "mol·L⁻¹",
+      "kg·m⁻³",
+      "cm⁻¹"
+     ],
+     "rep": "cm⁻¹",
+     "expl": "Le nombre d’onde est souvent exprimé en inverse de centimètre."
+    },
+    {
+     "q": "Une bande C=O suffit-elle toujours à identifier une molécule unique ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, si elle est forte"
+     ],
+     "rep": "Non",
+     "expl": "Plusieurs molécules peuvent posséder cette liaison."
+    }
+   ],
+   "id": "REV-PC-1RE-25"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Étapes d’une synthèse",
+   "emoji": "⚗️",
+   "en_une_phrase": "Une synthèse comprend une transformation, un isolement, une purification puis une analyse.",
+   "comprendre": "Comme lors d’une préparation, le produit recherché se trouve d’abord mélangé à d’autres espèces. Il faut l’isoler puis vérifier son identité et sa pureté. Les méthodes dépendent des propriétés des espèces et les règles de sécurité du protocole.",
+   "essentiel": [
+    "Le chauffage à reflux permet de chauffer sans perdre autant de matière volatile.",
+    "L’isolement sépare le produit du mélange réactionnel.",
+    "Une purification diminue la présence d’impuretés.",
+    "Une analyse sert notamment à identifier le produit."
+   ],
+   "image_mentale": "Imagine quatre étapes : réagir, séparer, purifier, vérifier.",
+   "regle_ou_methode": "Lis le protocole, classe les opérations et choisis les protections indiquées par les consignes du laboratoire.",
+   "exemples": [
+    "Dans un montage à reflux, la vapeur monte puis se condense dans le réfrigérant et retombe dans le ballon. On peut ainsi chauffer le mélange tout en limitant la perte de composés volatils.",
+    "Une chromatographie sur couche mince peut aider à comparer le produit à une référence."
+   ],
+   "piege": "Un montage à reflux ne purifie pas à lui seul le produit obtenu.",
+   "astuce_memoire": "Réagir, isoler, purifier, analyser.",
+   "quiz": [
+    {
+     "q": "Quel est le rôle du réfrigérant dans un montage à reflux ?",
+     "choix": [
+      "Évacuer totalement les vapeurs dans la pièce",
+      "Mesurer directement le rendement",
+      "Condenser les vapeurs qui retombent dans le ballon"
+     ],
+     "rep": "Condenser les vapeurs qui retombent dans le ballon",
+     "expl": "Le réfrigérant condense les vapeurs et limite les pertes."
+    },
+    {
+     "q": "Quelle étape diminue les impuretés ?",
+     "choix": [
+      "La purification",
+      "La seule mise en contact des réactifs",
+      "La lecture du titre du protocole"
+     ],
+     "rep": "La purification",
+     "expl": "La purification vise à améliorer la pureté."
+    },
+    {
+     "q": "Que permet une chromatographie sur couche mince ?",
+     "choix": [
+      "Mesurer directement la masse molaire de toute espèce",
+      "Comparer des espèces et aider à contrôler le produit",
+      "Faire disparaître les réactifs sans séparation"
+     ],
+     "rep": "Comparer des espèces et aider à contrôler le produit",
+     "expl": "La chromatographie sépare des espèces et permet des comparaisons."
+    }
+   ],
+   "id": "REV-PC-1RE-26"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Rendement d’une synthèse",
+   "emoji": "🎯",
+   "en_une_phrase": "Le rendement compare la quantité de produit pur obtenue à la quantité maximale théorique.",
+   "comprendre": "Une recette ne fournit pas toujours toute la quantité attendue. En synthèse, les réactions peuvent être incomplètes et une partie du produit peut être perdue lors des opérations. Le rendement mesure la proportion de produit récupéré par rapport au maximum théorique.",
+   "essentiel": [
+    "Le rendement r vaut n(obtenu) / n(maximal).",
+    "Il s’exprime souvent en pourcentage : r × 100.",
+    "Les quantités comparées concernent le même produit.",
+    "Le produit doit être suffisamment pur pour interpréter le résultat."
+   ],
+   "image_mentale": "Imagine une jauge comparant le produit obtenu au maximum prévu.",
+   "regle_ou_methode": "Calcule la quantité maximale à partir du bilan de matière, puis divise la quantité pure obtenue par cette valeur.",
+   "exemples": [
+    "Une synthèse peut produire au maximum 0,020 mol d’un composé. On isole 0,015 mol de ce même produit pur : r = 0,015 / 0,020 = 0,75, soit 75 %.",
+    "Si 0,008 mol sont obtenues pour un maximum de 0,010 mol, le rendement est 80 %."
+   ],
+   "piege": "Ne compare pas directement des quantités de deux espèces différentes sans tenir compte de l’équation chimique.",
+   "astuce_memoire": "Produit obtenu divisé par produit maximal.",
+   "quiz": [
+    {
+     "q": "Quel est le rendement pour 0,015 mol obtenue et 0,020 mol maximale ?",
+     "choix": [
+      "75 %",
+      "25 %",
+      "133 %"
+     ],
+     "rep": "75 %",
+     "expl": "Le rapport 0,015 / 0,020 vaut 0,75."
+    },
+    {
+     "q": "Que compare-t-on pour calculer le rendement ?",
+     "choix": [
+      "Deux réactifs sans utiliser l’équation",
+      "Le produit pur obtenu et le maximum théorique du même produit",
+      "La couleur du mélange et sa température"
+     ],
+     "rep": "Le produit pur obtenu et le maximum théorique du même produit",
+     "expl": "Le rendement compare deux quantités relatives au même produit."
+    },
+    {
+     "q": "Si 0,008 mol sont obtenues pour 0,010 mol maximales, quel est le rendement ?",
+     "choix": [
+      "20 %",
+      "125 %",
+      "80 %"
+     ],
+     "rep": "80 %",
+     "expl": "0,008 / 0,010 = 0,8, soit 80 %."
+    }
+   ],
+   "id": "REV-PC-1RE-27"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Combustion et liaisons",
+   "emoji": "🔥",
+   "en_une_phrase": "Une combustion exothermique libère de l’énergie lorsque les liaisons formées libèrent plus d’énergie que les liaisons rompues n’en nécessitent.",
+   "comprendre": "Brûler un combustible transforme la matière et transfère de l’énergie au milieu. Au cours de la réaction, il faut de l’énergie pour rompre des liaisons et de l’énergie est libérée lors de la formation de nouvelles liaisons. Le bilan explique le caractère exothermique.",
+   "essentiel": [
+    "Une combustion complète d’un hydrocarbure produit du dioxyde de carbone et de l’eau.",
+    "La rupture de liaisons nécessite un apport d’énergie.",
+    "La formation de liaisons libère de l’énergie.",
+    "Une transformation exothermique transfère de l’énergie vers le milieu extérieur."
+   ],
+   "image_mentale": "Imagine deux colonnes : énergie absorbée pour rompre, énergie libérée pour former.",
+   "regle_ou_methode": "Équilibre l’équation, puis compare l’énergie nécessaire aux ruptures et celle libérée par les formations.",
+   "exemples": [
+    "La combustion complète du méthane s’écrit CH₄ + 2 O₂ → CO₂ + 2 H₂O. Il y a 1 carbone, 4 hydrogènes et 4 oxygènes de chaque côté : les atomes sont conservés.",
+    "Si les formations libèrent 800 kJ et les ruptures nécessitent 500 kJ, le bilan libère 300 kJ vers le milieu.",
+    "La combustion complète de l’éthanol s’écrit C₂H₅OH + 3 O₂ → 2 CO₂ + 3 H₂O ; les nombres d’atomes sont identiques des deux côtés."
+   ],
+   "piege": "Exothermique ne signifie pas qu’aucune énergie n’est nécessaire pour rompre les liaisons initiales.",
+   "astuce_memoire": "Rompre demande ; former libère.",
+   "quiz": [
+    {
+     "q": "Quels produits forme la combustion complète du méthane ?",
+     "choix": [
+      "Du carbone solide et du dihydrogène uniquement",
+      "Du dioxyde de carbone et de l’eau",
+      "Du dioxygène et du méthane"
+     ],
+     "rep": "Du dioxyde de carbone et de l’eau",
+     "expl": "La réaction complète donne CO₂ et H₂O."
+    },
+    {
+     "q": "Quel coefficient place-t-on devant O₂ dans CH₄ + ... O₂ → CO₂ + 2 H₂O ?",
+     "choix": [
+      "1",
+      "4",
+      "2"
+     ],
+     "rep": "2",
+     "expl": "Il faut quatre atomes d’oxygène, soit deux molécules O₂."
+    },
+    {
+     "q": "Si les formations libèrent 800 kJ et les ruptures nécessitent 500 kJ, combien le bilan libère-t-il ?",
+     "choix": [
+      "300 kJ",
+      "1 300 kJ",
+      "500 kJ"
+     ],
+     "rep": "300 kJ",
+     "expl": "La différence est 800 − 500 = 300 kJ."
+    }
+   ],
+   "id": "REV-PC-1RE-28"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Pouvoir calorifique",
+   "emoji": "🔥",
+   "en_une_phrase": "Le pouvoir calorifique massique relie la masse d’un combustible à l’énergie libérée par sa combustion complète.",
+   "comprendre": "Tu sais qu’un combustible peut chauffer un milieu. La quantité d’énergie libérée dépend de la masse brûlée et du combustible choisi. Le pouvoir calorifique compare cette énergie à une unité de masse.",
+   "essentiel": [
+    "Le pouvoir calorifique massique s’exprime par exemple en MJ/kg.",
+    "L’énergie libérée pour une combustion complète vaut E = m × PC.",
+    "La masse doit être exprimée dans l’unité utilisée par le pouvoir calorifique."
+   ],
+   "image_mentale": "Imagine des portions identiques de combustible, chacune associée à la même énergie libérée.",
+   "regle_ou_methode": "Convertis la masse en kilogrammes, puis multiplie-la par le pouvoir calorifique en MJ/kg.",
+   "exemples": [
+    "Pour 0,10 kg d’un combustible de pouvoir calorifique 40 MJ/kg, calcule E = 0,10 × 40 = 4,0 MJ libérés lors de la combustion complète.",
+    "Pour 0,25 kg du même combustible, E = 0,25 × 40 = 10 MJ."
+   ],
+   "piege": "L’énergie effectivement récupérée par un appareil peut être inférieure à l’énergie libérée.",
+   "astuce_memoire": "Masse fois pouvoir calorifique.",
+   "quiz": [
+    {
+     "q": "Quelle énergie libère 0,10 kg à 40 MJ/kg en combustion complète ?",
+     "choix": [
+      "40 MJ",
+      "0,40 MJ",
+      "4,0 MJ"
+     ],
+     "rep": "4,0 MJ",
+     "expl": "E = 0,10 × 40 = 4,0 MJ."
+    },
+    {
+     "q": "Quel pouvoir calorifique a un combustible libérant 20 MJ pour 0,50 kg ?",
+     "choix": [
+      "40 MJ/kg",
+      "10 MJ/kg",
+      "20 MJ/kg"
+     ],
+     "rep": "40 MJ/kg",
+     "expl": "PC = 20 ÷ 0,50 = 40 MJ/kg."
+    },
+    {
+     "q": "Un appareil récupère-t-il forcément toute l’énergie libérée ?",
+     "choix": [
+      "Oui, toujours",
+      "Non, une partie peut être transférée ailleurs",
+      "Oui, si la masse est donnée en kilogrammes"
+     ],
+     "rep": "Non, une partie peut être transférée ailleurs",
+     "expl": "Une partie de l’énergie peut être dissipée vers l’environnement."
+    }
+   ],
+   "id": "REV-PC-1RE-29"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Gravitation et champ",
+   "emoji": "🌍",
+   "en_une_phrase": "Une masse crée un champ gravitationnel qui exerce une force attractive sur une autre masse.",
+   "comprendre": "Une balle lâchée près du sol tombe sous l’action de la Terre. À plus grande échelle, deux corps massifs s’attirent aussi. Le champ gravitationnel décrit l’action que produirait une masse source en chaque point.",
+   "essentiel": [
+    "Pour deux masses sphériques sans chevauchement, F = Gm₁m₂/r².",
+    "G vaut environ 6,67 × 10⁻¹¹ N·m²·kg⁻².",
+    "À l’extérieur d’une répartition sphérique de masse M, le champ gravitationnel est dirigé vers son centre et a pour norme g = GM/r².",
+    "La force vectorielle sur une masse m est F = m g, avec g le vecteur champ gravitationnel."
+   ],
+   "image_mentale": "Imagine des flèches pointant vers le centre d’une planète.",
+   "regle_ou_methode": "Exprime les masses en kilogrammes et la distance entre centres en mètres, puis applique la formule.",
+   "exemples": [
+    "Deux corps de 10 kg et 20 kg ont leurs centres distants de 2 m et sont modélisables comme ponctuels. F = 6,67 × 10⁻¹¹ × 10 × 20 / 2², soit environ 3,34 × 10⁻⁹ N. La force est attractive.",
+    "Si la distance double, la force est divisée par 2², soit 4."
+   ],
+   "piege": "La distance r est celle entre les centres dans ce modèle, pas l’altitude au-dessus de la surface.",
+   "astuce_memoire": "Gravitation : attraction, inverse du carré de la distance.",
+   "quiz": [
+    {
+     "q": "Si la distance entre deux masses est multipliée par 3, comment varie l’intensité de la force ?",
+     "choix": [
+      "Elle est divisée par 9",
+      "Elle est divisée par 3",
+      "Elle est multipliée par 9"
+     ],
+     "rep": "Elle est divisée par 9",
+     "expl": "La force est inversement proportionnelle au carré de la distance."
+    },
+    {
+     "q": "Vers où pointe le champ gravitationnel extérieur créé par une planète sphérique ?",
+     "choix": [
+      "À l’opposé de son centre",
+      "Vers son centre",
+      "Toujours horizontalement vers l’est"
+     ],
+     "rep": "Vers son centre",
+     "expl": "La gravitation exercée par une masse positive est attractive."
+    },
+    {
+     "q": "Quelle unité convient à une force ?",
+     "choix": [
+      "Le joule par seconde",
+      "Le coulomb",
+      "Le newton"
+     ],
+     "rep": "Le newton",
+     "expl": "Une force s’exprime en newtons."
+    }
+   ],
+   "id": "REV-PC-1RE-30"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Interaction électrique",
+   "emoji": "⚡",
+   "en_une_phrase": "La force électrique entre deux charges dépend de leur signe, de leur valeur et de leur distance.",
+   "comprendre": "Tu as peut-être vu de petits papiers attirés par une règle chargée. Deux charges ponctuelles peuvent s’attirer ou se repousser. La loi de Coulomb donne l’intensité de leur interaction dans le vide.",
+   "essentiel": [
+    "Dans le vide, F = k × |q₁q₂|/r² avec k ≈ 9,0 × 10⁹ N·m²·C⁻².",
+    "Des charges de même signe se repoussent.",
+    "Des charges de signes opposés s’attirent.",
+    "La charge s’exprime en coulombs."
+   ],
+   "image_mentale": "Imagine deux charges reliées par une ligne, avec des flèches qui s’écartent ou se rapprochent.",
+   "regle_ou_methode": "Convertis les charges en coulombs et la distance en mètres ; calcule l’intensité puis détermine le sens.",
+   "exemples": [
+    "Pour q₁ = 2,0 × 10⁻⁶ C, q₂ = −3,0 × 10⁻⁶ C et r = 0,30 m, F = 9,0 × 10⁹ × 6,0 × 10⁻¹² / 0,30² = 0,60 N. Les signes opposés indiquent une attraction.",
+    "Deux charges positives de même valeur se repoussent."
+   ],
+   "piege": "Le signe du produit indique attraction ou répulsion ; l’intensité F reste positive.",
+   "astuce_memoire": "Même signe : répulsion ; signes opposés : attraction.",
+   "quiz": [
+    {
+     "q": "Deux charges négatives se repoussent-elles ou s’attirent-elles ?",
+     "choix": [
+      "Elles s’attirent",
+      "Elles se repoussent",
+      "Elles n’exercent aucune force"
+     ],
+     "rep": "Elles se repoussent",
+     "expl": "Deux charges de même signe se repoussent."
+    },
+    {
+     "q": "Si la distance entre deux charges ponctuelles est doublée, que devient la force ?",
+     "choix": [
+      "Elle est divisée par 2",
+      "Elle est multipliée par 4",
+      "Elle est divisée par 4"
+     ],
+     "rep": "Elle est divisée par 4",
+     "expl": "La loi de Coulomb est en 1/r²."
+    },
+    {
+     "q": "Quelle est la valeur absolue de (2,0 × 10⁻⁶ C) × (−3,0 × 10⁻⁶ C) ?",
+     "choix": [
+      "6,0 × 10⁻¹² C²",
+      "−6,0 × 10⁻¹² C²",
+      "6,0 × 10⁻⁶ C²"
+     ],
+     "rep": "6,0 × 10⁻¹² C²",
+     "expl": "On multiplie les nombres et additionne les exposants, puis on prend la valeur absolue."
+    }
+   ],
+   "id": "REV-PC-1RE-31"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Champ électrique",
+   "emoji": "🧲",
+   "en_une_phrase": "Le champ électrique associe à chaque point une direction et permet de prévoir la force sur une charge.",
+   "comprendre": "Un champ ressemble à une carte de flèches montrant une action possible selon la position. Une charge positive placée en un point subit une force dans le sens du champ. Pour une charge négative, le sens est opposé.",
+   "essentiel": [
+    "La force électrique sur une charge q est le vecteur F = qE.",
+    "Le champ électrique E s’exprime en N/C ou en V/m.",
+    "Une ligne de champ est tangente à la direction du champ en chaque point.",
+    "Entre deux plaques idéales, le champ est dirigé de la plaque positive vers la plaque négative.",
+    "Dans le vide, à distance r d’une charge ponctuelle Q, la norme du champ est E = k|Q|/r² ; il est radial, sortant si Q est positive et entrant si Q est négative."
+   ],
+   "image_mentale": "Imagine des flèches parallèles allant de la plaque positive vers la plaque négative.",
+   "regle_ou_methode": "Repère le sens du champ, puis utilise le signe de la charge pour orienter la force.",
+   "exemples": [
+    "Dans un champ de 200 N/C vers la droite, une charge de +0,01 C subit une force de 0,01 × 200 = 2 N vers la droite. Une charge de −0,01 C subirait 2 N vers la gauche.",
+    "Dans le même champ, une charge de +0,005 C subit une force de 1 N dans le sens du champ."
+   ],
+   "piege": "Ne suppose pas que la force pointe toujours dans le sens du champ : son sens dépend du signe de q.",
+   "astuce_memoire": "Charge positive : même sens ; charge négative : sens opposé.",
+   "quiz": [
+    {
+     "q": "Dans un champ de 100 N/C, quelle est l’intensité de la force sur +0,02 C ?",
+     "choix": [
+      "0,2 N",
+      "20 N",
+      "2 N"
+     ],
+     "rep": "2 N",
+     "expl": "La valeur est |q|E = 0,02 × 100 = 2 N."
+    },
+    {
+     "q": "Quel est le sens de la force sur une charge négative ?",
+     "choix": [
+      "Opposé au champ électrique",
+      "Identique au champ dans tous les cas",
+      "Toujours vertical"
+     ],
+     "rep": "Opposé au champ électrique",
+     "expl": "Multiplier le vecteur champ par une charge négative inverse son sens."
+    },
+    {
+     "q": "Quelle unité peut exprimer un champ électrique ?",
+     "choix": [
+      "C/N",
+      "N/C",
+      "J/s"
+     ],
+     "rep": "N/C",
+     "expl": "Le champ est une force par unité de charge."
+    }
+   ],
+   "id": "REV-PC-1RE-32"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Influence électrostatique",
+   "emoji": "🧲",
+   "en_une_phrase": "Un objet chargé peut attirer un objet neutre en redistribuant ses charges.",
+   "comprendre": "Un objet neutre contient des charges positives et négatives qui se compensent globalement. Lorsqu’un objet chargé s’approche, les charges de l’objet neutre peuvent se déplacer ou se réorienter. Les charges opposées deviennent plus proches et l’attraction peut l’emporter.",
+   "essentiel": [
+    "Un objet neutre peut contenir des charges qui se compensent.",
+    "L’influence redistribue ou réoriente les charges sans contact direct.",
+    "La charge globale de l’objet neutre reste nulle s’il n’y a pas de transfert net."
+   ],
+   "image_mentale": "Imagine une règle chargée près de petits morceaux de papier dont les charges se réorientent.",
+   "regle_ou_methode": "Identifie la charge de l’objet approché puis la redistribution dans l’objet neutre.",
+   "exemples": [
+    "Approche une règle chargée d’un petit morceau de papier neutre. Les charges se réorientent ; la partie de signe opposé est plus proche et une attraction peut apparaître.",
+    "Une petite boule conductrice neutre peut aussi être attirée par un objet chargé placé à proximité."
+   ],
+   "piege": "Neutre ne signifie pas « sans charges électriques ».",
+   "astuce_memoire": "Neutre : charges qui se compensent.",
+   "quiz": [
+    {
+     "q": "Un objet neutre contient-il nécessairement zéro charge électrique ?",
+     "choix": [
+      "Non, ses charges peuvent se compenser",
+      "Oui, il ne contient aucune charge",
+      "Oui, s’il est solide"
+     ],
+     "rep": "Non, ses charges peuvent se compenser",
+     "expl": "La charge totale peut être nulle malgré la présence de charges."
+    },
+    {
+     "q": "Que peut provoquer l’approche d’un objet chargé ?",
+     "choix": [
+      "La disparition automatique des électrons",
+      "Une redistribution des charges dans un objet voisin",
+      "Une masse nulle du voisin"
+     ],
+     "rep": "Une redistribution des charges dans un objet voisin",
+     "expl": "Les charges peuvent se déplacer ou se réorienter."
+    },
+    {
+     "q": "Une attraction par influence impose-t-elle un contact préalable ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, pour toute matière",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "L’influence peut agir à distance."
+    }
+   ],
+   "id": "REV-PC-1RE-33"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Pression et gaz",
+   "emoji": "💨",
+   "en_une_phrase": "Dans un gaz au repos, la pression traduit les actions des particules sur les parois.",
+   "comprendre": "Quand tu comprimes l’air d’une seringue fermée, son volume diminue et sa pression augmente. À température constante et pour une quantité de gaz fixée, la loi de Mariotte relie pression et volume. La pression exercée sur une surface produit une force pressante.",
+   "essentiel": [
+    "La pression P s’exprime en pascals : 1 Pa = 1 N/m².",
+    "À température et quantité fixées, P × V est constant dans le modèle du gaz parfait.",
+    "Pour une pression uniforme sur une surface plane, F = P × S.",
+    "La force pressante est perpendiculaire à la surface."
+   ],
+   "image_mentale": "Imagine des particules heurtant les parois d’une seringue puis une flèche perpendiculaire au piston.",
+   "regle_ou_methode": "Garde les unités cohérentes, compare les produits PV ou multiplie la pression par la surface.",
+   "exemples": [
+    "Un gaz est à 100 kPa pour 2,0 L. À température constante, si son volume devient 1,0 L, P₂ = 100 × 2,0 / 1,0 = 200 kPa.",
+    "Une pression uniforme de 2 000 Pa sur 0,03 m² exerce une force de 60 N."
+   ],
+   "piege": "La loi de Mariotte ne s’applique pas sans préciser notamment une température constante.",
+   "astuce_memoire": "Même gaz et même température : pression fois volume constant.",
+   "quiz": [
+    {
+     "q": "Un gaz passe de 3 L à 1 L à température constante. Que devient sa pression dans le modèle de Mariotte ?",
+     "choix": [
+      "Elle est divisée par 3",
+      "Elle est multipliée par 3",
+      "Elle reste nécessairement constante"
+     ],
+     "rep": "Elle est multipliée par 3",
+     "expl": "Le produit P × V reste constant."
+    },
+    {
+     "q": "Quelle force exerce une pression uniforme de 500 Pa sur 0,02 m² ?",
+     "choix": [
+      "25 N",
+      "100 N",
+      "10 N"
+     ],
+     "rep": "10 N",
+     "expl": "F = P × S = 500 × 0,02 = 10 N."
+    },
+    {
+     "q": "Quelle est la direction de la force pressante sur une surface plane ?",
+     "choix": [
+      "Perpendiculaire à la surface",
+      "Toujours parallèle à la surface",
+      "Toujours verticale quelle que soit la surface"
+     ],
+     "rep": "Perpendiculaire à la surface",
+     "expl": "Une force de pression est normale à la surface."
+    }
+   ],
+   "id": "REV-PC-1RE-34"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Pression dans un liquide",
+   "emoji": "🌊",
+   "en_une_phrase": "Dans un liquide au repos, la pression augmente avec la profondeur.",
+   "comprendre": "Quand tu descends sous l’eau, la quantité de liquide située au-dessus augmente. La pression croît avec la profondeur dans un liquide homogène au repos. Cette augmentation dépend de la masse volumique et de la pesanteur.",
+   "essentiel": [
+    "Pour un liquide incompressible homogène au repos, P₂ − P₁ = ρg(z₁ − z₂).",
+    "L’altitude z est orientée vers le haut.",
+    "La masse volumique ρ s’exprime en kg/m³.",
+    "À même profondeur dans un même liquide au repos, les pressions sont égales."
+   ],
+   "image_mentale": "Imagine deux points superposés dans l’eau et une flèche vers le bas indiquant une pression croissante.",
+   "regle_ou_methode": "Calcule la différence de profondeur, multiplie-la par ρg puis ajoute la pression de référence.",
+   "exemples": [
+    "Dans l’eau de masse volumique 1 000 kg/m³, pour g = 10 N/kg et une profondeur de 2 m, l’augmentation est 1 000 × 10 × 2 = 20 000 Pa. À partir d’une pression de surface de 100 000 Pa, la pression vaut 120 000 Pa.",
+    "À 1 m de profondeur, avec les mêmes données, l’augmentation est de 10 000 Pa."
+   ],
+   "piege": "Une différence de pression n’est pas la pression absolue : ajoute la pression de référence si elle est demandée.",
+   "astuce_memoire": "Plus profond : pression plus élevée.",
+   "quiz": [
+    {
+     "q": "Dans l’eau à ρ = 1 000 kg/m³ et g = 10 N/kg, quelle augmentation de pression correspond à 3 m ?",
+     "choix": [
+      "3 000 Pa",
+      "300 000 Pa",
+      "30 000 Pa"
+     ],
+     "rep": "30 000 Pa",
+     "expl": "La hausse vaut ρgh = 1 000 × 10 × 3."
+    },
+    {
+     "q": "Comment varie la pression quand on descend dans un liquide homogène au repos ?",
+     "choix": [
+      "Elle augmente",
+      "Elle diminue",
+      "Elle devient forcément nulle"
+     ],
+     "rep": "Elle augmente",
+     "expl": "La pression augmente avec la profondeur."
+    },
+    {
+     "q": "À même profondeur dans le même liquide au repos, comment sont les pressions ?",
+     "choix": [
+      "Toujours proportionnelles à la largeur du récipient",
+      "Égales",
+      "Différentes selon l’orientation de la surface"
+     ],
+     "rep": "Égales",
+     "expl": "La pression dépend notamment de la profondeur dans ce modèle."
+    }
+   ],
+   "id": "REV-PC-1RE-35"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Variation de vitesse",
+   "emoji": "🚲",
+   "en_une_phrase": "La somme des forces détermine approximativement la variation du vecteur vitesse pendant une courte durée.",
+   "comprendre": "Sur un vélo, freiner change ta vitesse ; tourner peut aussi changer sa direction. Le vecteur vitesse porte à la fois une valeur et une direction. En référentiel galiléen, la somme des forces est reliée à sa variation.",
+   "essentiel": [
+    "La variation est Δv = v finale − v initiale, avec des vecteurs.",
+    "Pour un petit intervalle, ΣF ≈ mΔv/Δt en référentiel galiléen.",
+    "Dans cette approximation, si la résultante est non nulle, Δv a sa direction et son sens.",
+    "Une vitesse de valeur constante peut changer de direction."
+   ],
+   "image_mentale": "Imagine deux flèches de vitesse et la flèche reliant leur extrémité.",
+   "regle_ou_methode": "Fais le bilan des forces, calcule leur somme vectorielle puis déduis Δv sur la durée considérée.",
+   "exemples": [
+    "Un chariot de 2 kg subit une force résultante constante de 4 N vers l’avant pendant 0,5 s. La variation vaut Δv = 4 × 0,5 / 2 = 1 m/s vers l’avant.",
+    "Si la somme des forces est nulle dans ce référentiel, le vecteur vitesse reste constant."
+   ],
+   "piege": "Une force résultante nulle ne signifie pas nécessairement que le système est immobile.",
+   "astuce_memoire": "Résultante : direction de la variation de vitesse.",
+   "quiz": [
+    {
+     "q": "Une résultante de 6 N agit 2 s sur une masse de 3 kg dans une direction fixe. Quelle variation de vitesse obtient-on ?",
+     "choix": [
+      "4 m/s",
+      "1 m/s",
+      "9 m/s"
+     ],
+     "rep": "4 m/s",
+     "expl": "Δv = FΔt/m = 6 × 2 / 3 = 4 m/s."
+    },
+    {
+     "q": "Dans un référentiel galiléen, que signifie une résultante nulle ?",
+     "choix": [
+      "Le système est forcément immobile",
+      "Le vecteur vitesse est constant",
+      "La masse disparaît"
+     ],
+     "rep": "Le vecteur vitesse est constant",
+     "expl": "La vitesse peut être non nulle mais reste constante."
+    },
+    {
+     "q": "La direction du mouvement peut-elle changer si la valeur de la vitesse reste constante ?",
+     "choix": [
+      "Non",
+      "Seulement si la masse change",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Un vecteur peut changer de direction sans changer de norme."
+    }
+   ],
+   "id": "REV-PC-1RE-36"
+  },
+  {
+   "axe": "L’énergie : conversions et transferts",
+   "titre": "Courant et charges",
+   "emoji": "🔌",
+   "en_une_phrase": "L’intensité d’un courant continu mesure le débit de charge électrique.",
+   "comprendre": "Un débit d’eau indique une quantité traversant une section chaque seconde. De même, l’intensité d’un courant continu indique la charge électrique traversant une section par unité de temps. Elle s’exprime en ampères.",
+   "essentiel": [
+    "Pour un courant continu, I = Q/Δt avec Q la charge transférée et Δt la durée.",
+    "Un ampère correspond à un coulomb par seconde.",
+    "Le déplacement ordonné de porteurs de charge constitue le courant électrique.",
+    "Le sens conventionnel du courant est celui du déplacement de charges positives."
+   ],
+   "image_mentale": "Imagine un compteur de charges traversant une section pendant une seconde.",
+   "regle_ou_methode": "Exprime la charge en coulombs et la durée en secondes puis divise.",
+   "exemples": [
+    "Une charge de 12 C traverse une section en 3 s. L’intensité vaut I = 12/3 = 4 A.",
+    "Un courant de 0,5 A transporte une charge de 0,5 × 10 = 5 C en 10 s."
+   ],
+   "piege": "L’intensité est un débit de charge, pas une quantité d’énergie.",
+   "astuce_memoire": "Ampère : coulomb par seconde.",
+   "quiz": [
+    {
+     "q": "Quelle intensité correspond à 6 C transférés en 2 s ?",
+     "choix": [
+      "12 A",
+      "3 A",
+      "0,33 A"
+     ],
+     "rep": "3 A",
+     "expl": "I = Q/Δt = 6/2 = 3 A."
+    },
+    {
+     "q": "Quelle charge traverse une section en 4 s sous 2 A continus ?",
+     "choix": [
+      "2 C",
+      "0,5 C",
+      "8 C"
+     ],
+     "rep": "8 C",
+     "expl": "Q = IΔt = 2 × 4 = 8 C."
+    },
+    {
+     "q": "Quelle unité est équivalente à l’ampère ?",
+     "choix": [
+      "C/s",
+      "J/s",
+      "N/m²"
+     ],
+     "rep": "C/s",
+     "expl": "Un ampère correspond à un coulomb par seconde."
+    }
+   ],
+   "id": "REV-PC-1RE-37"
+  },
+  {
+   "axe": "L’énergie : conversions et transferts",
+   "titre": "Source réelle",
+   "emoji": "🔋",
+   "en_une_phrase": "Une source réelle de tension peut être modélisée par une source idéale et une résistance interne en série.",
+   "comprendre": "Une pile n’a pas toujours la même tension à ses bornes lorsqu’elle alimente un circuit. Une partie de l’énergie est dissipée dans sa résistance interne. Le modèle permet de relier la tension fournie au courant débité.",
+   "essentiel": [
+    "En convention générateur, la tension aux bornes est U = E − rI.",
+    "E est la force électromotrice en volts et r la résistance interne en ohms.",
+    "I est l’intensité débitée en ampères.",
+    "À vide, I = 0 et la tension vaut E dans ce modèle."
+   ],
+   "image_mentale": "Imagine une source idéale suivie d’une petite résistance cachée dans le boîtier.",
+   "regle_ou_methode": "Calcule la chute de tension rI, puis retranche-la à E pour obtenir U.",
+   "exemples": [
+    "Une source a E = 6 V et r = 1 Ω. Lorsqu’elle débite 2 A, la chute interne vaut 1 × 2 = 2 V ; la tension aux bornes vaut 6 − 2 = 4 V.",
+    "À vide, cette même source a une tension de 6 V dans ce modèle."
+   ],
+   "piege": "U = E uniquement à vide ou si la résistance interne est négligée.",
+   "astuce_memoire": "Source réelle : tension idéale moins chute interne.",
+   "quiz": [
+    {
+     "q": "Une source de E = 9 V et r = 2 Ω débite 1 A. Quelle est sa tension ?",
+     "choix": [
+      "9 V",
+      "11 V",
+      "7 V"
+     ],
+     "rep": "7 V",
+     "expl": "U = E − rI = 9 − 2 × 1 = 7 V."
+    },
+    {
+     "q": "Quelle est la tension à vide d’une source de force électromotrice E ?",
+     "choix": [
+      "E",
+      "0",
+      "rE"
+     ],
+     "rep": "E",
+     "expl": "À vide, I = 0 donc U = E."
+    },
+    {
+     "q": "Quelle est la dimension de r ?",
+     "choix": [
+      "Une énergie en joules",
+      "Une résistance en ohms",
+      "Une charge en coulombs"
+     ],
+     "rep": "Une résistance en ohms",
+     "expl": "r représente la résistance interne."
+    }
+   ],
+   "id": "REV-PC-1RE-38"
+  },
+  {
+   "axe": "L’énergie : conversions et transferts",
+   "titre": "Puissance électrique",
+   "emoji": "💡",
+   "en_une_phrase": "La puissance électrique transférée est le produit de la tension par l’intensité en courant continu.",
+   "comprendre": "Deux appareils peuvent consommer des énergies différentes selon leur puissance et leur durée d’usage. La puissance mesure un transfert d’énergie par unité de temps. Dans un circuit continu, elle se calcule avec la tension et l’intensité.",
+   "essentiel": [
+    "En convention récepteur, P = U × I pour les valeurs orientées de façon cohérente.",
+    "La puissance s’exprime en watts et l’énergie en joules.",
+    "Si la puissance est constante, l’énergie transférée vaut E = PΔt.",
+    "1 W correspond à 1 J/s."
+   ],
+   "image_mentale": "Imagine un compteur d’énergie dont la vitesse d’avancement est la puissance.",
+   "regle_ou_methode": "Multiplie U par I pour la puissance, puis multiplie par la durée en secondes pour obtenir l’énergie en joules.",
+   "exemples": [
+    "Un récepteur reçoit 6 V sous 2 A pendant 10 s. Sa puissance vaut P = 6 × 2 = 12 W ; l’énergie reçue vaut E = 12 × 10 = 120 J.",
+    "Un appareil de 5 W utilisé pendant 20 s reçoit 100 J."
+   ],
+   "piege": "Ne confonds pas puissance en watts et énergie en joules.",
+   "astuce_memoire": "Puissance : U fois I ; énergie : puissance fois durée.",
+   "quiz": [
+    {
+     "q": "Quelle puissance reçoit un dipôle sous 12 V parcouru par 0,5 A ?",
+     "choix": [
+      "6 W",
+      "24 W",
+      "6 J"
+     ],
+     "rep": "6 W",
+     "expl": "P = U × I = 12 × 0,5 = 6 W."
+    },
+    {
+     "q": "Quelle énergie correspond à 10 W pendant 30 s ?",
+     "choix": [
+      "3 J",
+      "300 J",
+      "40 J"
+     ],
+     "rep": "300 J",
+     "expl": "E = PΔt = 10 × 30 = 300 J."
+    },
+    {
+     "q": "À quoi correspond un watt ?",
+     "choix": [
+      "Un coulomb par seconde",
+      "Un newton par mètre carré",
+      "Un joule par seconde"
+     ],
+     "rep": "Un joule par seconde",
+     "expl": "Le watt est une unité de puissance."
+    }
+   ],
+   "id": "REV-PC-1RE-39"
+  },
+  {
+   "axe": "L’énergie : conversions et transferts",
+   "titre": "Effet Joule et rendement",
+   "emoji": "🌡️",
+   "en_une_phrase": "Une résistance dissipe de l’énergie par effet Joule et un rendement compare énergie utile et énergie reçue.",
+   "comprendre": "Un fil résistif peut chauffer lorsqu’il est parcouru par un courant. Dans un convertisseur, toute l’énergie reçue ne devient pas forcément l’énergie recherchée. Le rendement permet de quantifier la part utile.",
+   "essentiel": [
+    "Pour un dipôle ohmique, P Joule = RI².",
+    "La puissance électrique reçue vaut aussi UI avec les conventions adaptées.",
+    "Le rendement est η = énergie utile / énergie reçue.",
+    "Le rendement est sans unité et s’exprime souvent en pourcentage."
+   ],
+   "image_mentale": "Imagine un flux d’énergie partagé entre une sortie utile et une dissipation thermique.",
+   "regle_ou_methode": "Pour la résistance, élève I au carré puis multiplie par R ; pour le rendement, divise la sortie utile par l’entrée.",
+   "exemples": [
+    "Une résistance de 4 Ω traversée par 2 A dissipe 4 × 2² = 16 W. Si un convertisseur reçoit 100 J et fournit 75 J utiles, son rendement est 75/100 = 0,75, soit 75 %.",
+    "Une résistance de 10 Ω traversée par 0,5 A dissipe 10 × 0,5² = 2,5 W."
+   ],
+   "piege": "Ne calcule pas RI au lieu de RI² pour la puissance dissipée.",
+   "astuce_memoire": "Joule : RI² ; rendement : utile sur reçu.",
+   "quiz": [
+    {
+     "q": "Quelle puissance dissipe une résistance de 5 Ω traversée par 2 A ?",
+     "choix": [
+      "10 W",
+      "20 W",
+      "5 W"
+     ],
+     "rep": "20 W",
+     "expl": "P = RI² = 5 × 2² = 20 W."
+    },
+    {
+     "q": "Un dispositif reçoit 200 J et fournit 150 J utiles. Quel est son rendement ?",
+     "choix": [
+      "50 %",
+      "133 %",
+      "75 %"
+     ],
+     "rep": "75 %",
+     "expl": "Le rapport est 150/200 = 0,75."
+    },
+    {
+     "q": "Si l’intensité double dans une même résistance, que devient la puissance Joule ?",
+     "choix": [
+      "Elle est multipliée par 4",
+      "Elle est multipliée par 2",
+      "Elle est divisée par 4"
+     ],
+     "rep": "Elle est multipliée par 4",
+     "expl": "La puissance est proportionnelle au carré de l’intensité."
+    }
+   ],
+   "id": "REV-PC-1RE-40"
+  },
+  {
+   "axe": "L’énergie : conversions et transferts",
+   "titre": "Travail d’une force",
+   "emoji": "📦",
+   "en_une_phrase": "Le travail d’une force constante dépend de la force et du déplacement, y compris de leur orientation.",
+   "comprendre": "Pousser une boîte vers l’avant peut lui transférer de l’énergie. Une force opposée au mouvement peut au contraire lui en retirer. Le produit scalaire tient compte de cette orientation.",
+   "essentiel": [
+    "Pour une force constante, WAB(F) = F × AB × cos α.",
+    "α est l’angle entre la force et le déplacement de A vers B.",
+    "Le travail s’exprime en joules.",
+    "Un travail négatif correspond à une composante de force opposée au déplacement."
+   ],
+   "image_mentale": "Imagine une flèche de force et une flèche de déplacement partant du même point.",
+   "regle_ou_methode": "Identifie la norme de la force, la distance et l’angle, puis calcule le produit.",
+   "exemples": [
+    "Une force constante de 10 N tire une caisse sur 3 m dans le même sens. L’angle vaut 0° et cos 0° = 1 : W = 10 × 3 = 30 J.",
+    "Une force de frottement de 2 N opposée à un déplacement rectiligne de 3 m travaille pour −6 J."
+   ],
+   "piege": "Une force perpendiculaire au déplacement a un travail nul, même si sa valeur n’est pas nulle.",
+   "astuce_memoire": "Même sens : positif ; sens opposé : négatif.",
+   "quiz": [
+    {
+     "q": "Quel est le travail d’une force de 4 N dans le sens d’un déplacement de 5 m ?",
+     "choix": [
+      "9 J",
+      "−20 J",
+      "20 J"
+     ],
+     "rep": "20 J",
+     "expl": "W = 4 × 5 × cos 0° = 20 J."
+    },
+    {
+     "q": "Quel est le travail d’une force perpendiculaire au déplacement ?",
+     "choix": [
+      "0 J",
+      "Le produit des normes sans condition",
+      "Une valeur toujours négative"
+     ],
+     "rep": "0 J",
+     "expl": "Le cosinus de 90° vaut 0."
+    },
+    {
+     "q": "Quel est le travail de frottements de 3 N opposés à un déplacement rectiligne de 2 m ?",
+     "choix": [
+      "6 J",
+      "−6 J",
+      "−1,5 J"
+     ],
+     "rep": "−6 J",
+     "expl": "W = 3 × 2 × cos 180° = −6 J."
+    }
+   ],
+   "id": "REV-PC-1RE-41"
+  },
+  {
+   "axe": "L’énergie : conversions et transferts",
+   "titre": "Énergie cinétique et bilan",
+   "emoji": "⚙️",
+   "en_une_phrase": "L’énergie cinétique dépend de la vitesse et varie selon le travail des forces appliquées.",
+   "comprendre": "Plusieurs forces peuvent agir en même temps sur un mobile. Chacune peut effectuer un travail positif, négatif ou nul. Leur somme donne la variation de l’énergie cinétique du système.",
+   "essentiel": [
+    "Dans un référentiel donné, Ec = 1/2 mv² en joules avec m en kg et v en m/s.",
+    "Le théorème donne Ec(B) − Ec(A) = somme des travaux de A à B.",
+    "Un travail total positif augmente l’énergie cinétique.",
+    "Un travail total négatif diminue l’énergie cinétique.",
+    "Toutes les forces appliquées doivent être considérées."
+   ],
+   "image_mentale": "Imagine une jauge d’énergie alimentée par des flèches positives ou négatives.",
+   "regle_ou_methode": "Calcule chaque travail, additionne-les puis ajoute le résultat à l’énergie cinétique initiale.",
+   "exemples": [
+    "Un mobile de 2 kg à 3 m/s possède Ec = 1/2 × 2 × 3² = 9 J. Si le travail total des forces vaut +6 J, le théorème donne une énergie finale de 9 + 6 = 15 J.",
+    "Un travail total de −4 J fait passer une énergie cinétique de 10 J à 6 J."
+   ],
+   "piege": "Le théorème concerne la variation d’énergie, pas directement sa valeur finale.",
+   "astuce_memoire": "Énergie finale moins initiale : somme des travaux.",
+   "quiz": [
+    {
+     "q": "Une énergie cinétique initiale vaut 12 J et le travail total vaut −3 J. Quelle est l’énergie finale ?",
+     "choix": [
+      "9 J",
+      "15 J",
+      "−3 J"
+     ],
+     "rep": "9 J",
+     "expl": "Ec finale = 12 − 3 = 9 J."
+    },
+    {
+     "q": "Quel effet a un travail total positif ?",
+     "choix": [
+      "L’énergie cinétique diminue",
+      "L’énergie cinétique augmente",
+      "L’énergie cinétique est forcément nulle"
+     ],
+     "rep": "L’énergie cinétique augmente",
+     "expl": "La variation de Ec est égale au travail total."
+    },
+    {
+     "q": "Quelle est l’énergie cinétique d’un objet de 1 kg à 4 m/s ?",
+     "choix": [
+      "4 J",
+      "16 J",
+      "8 J"
+     ],
+     "rep": "8 J",
+     "expl": "Ec = 1/2 × 1 × 4² = 8 J."
+    }
+   ],
+   "id": "REV-PC-1RE-42"
+  },
+  {
+   "axe": "L’énergie : conversions et transferts",
+   "titre": "Énergie potentielle",
+   "emoji": "⛰️",
+   "en_une_phrase": "Près de la Terre, l’énergie potentielle de pesanteur varie avec l’altitude.",
+   "comprendre": "Lever un objet demande de lui transférer de l’énergie. En choisissant une altitude de référence, l’énergie potentielle de pesanteur augmente linéairement avec l’altitude. Sa variation est liée au travail du poids.",
+   "essentiel": [
+    "Près de la Terre, Epp = mgz + constante pour un axe z vertical vers le haut.",
+    "La variation vaut ΔEpp = mg(zB − zA).",
+    "Le travail du poids vaut WAB(P) = −ΔEpp.",
+    "L’énergie et le travail s’expriment en joules."
+   ],
+   "image_mentale": "Imagine un objet déplacé entre deux étagères et une jauge d’altitude.",
+   "regle_ou_methode": "Calcule la variation d’altitude, multiplie par mg puis inverse le signe pour le travail du poids.",
+   "exemples": [
+    "Une masse de 2 kg monte de 3 m, avec g = 10 N/kg. Sa variation d’énergie potentielle vaut 2 × 10 × 3 = +60 J ; le travail du poids vaut −60 J.",
+    "La même masse descendant de 1 m voit son énergie potentielle diminuer de 20 J."
+   ],
+   "piege": "La valeur zéro de l’énergie potentielle dépend du choix de référence ; sa variation entre deux altitudes ne dépend pas de ce choix.",
+   "astuce_memoire": "Montée : potentiel augmente, travail du poids négatif.",
+   "quiz": [
+    {
+     "q": "Une masse de 1 kg monte de 2 m avec g = 10 N/kg. Quelle est la variation de son énergie potentielle ?",
+     "choix": [
+      "−20 J",
+      "+20 J",
+      "+5 J"
+     ],
+     "rep": "+20 J",
+     "expl": "ΔEpp = mgΔz = 1 × 10 × 2 = 20 J."
+    },
+    {
+     "q": "Quel est le travail du poids lors de cette montée ?",
+     "choix": [
+      "+20 J",
+      "0 J",
+      "−20 J"
+     ],
+     "rep": "−20 J",
+     "expl": "Le travail du poids est l’opposé de la variation d’énergie potentielle."
+    },
+    {
+     "q": "Changer la référence de Epp modifie-t-il sa variation entre deux positions ?",
+     "choix": [
+      "Non",
+      "Oui, elle double toujours",
+      "Oui, elle devient nulle"
+     ],
+     "rep": "Non",
+     "expl": "La constante de référence disparaît dans la différence."
+    }
+   ],
+   "id": "REV-PC-1RE-43"
+  },
+  {
+   "axe": "L’énergie : conversions et transferts",
+   "titre": "Énergie mécanique",
+   "emoji": "🎢",
+   "en_une_phrase": "L’énergie mécanique se conserve lorsque les forces non conservatives ne travaillent pas.",
+   "comprendre": "Au cours d’une descente, un objet peut perdre de l’altitude et gagner de la vitesse. L’énergie potentielle et l’énergie cinétique se transforment l’une en l’autre. Les frottements peuvent dissiper une partie de l’énergie mécanique.",
+   "essentiel": [
+    "L’énergie mécanique est Em = Ec + Epp dans le modèle considéré.",
+    "Sans travail de forces non conservatives, Em reste constante.",
+    "Le travail des forces non conservatives vaut ΔEm dans ce cadre.",
+    "Les frottements s’opposant au mouvement ont généralement un travail négatif."
+   ],
+   "image_mentale": "Imagine deux réservoirs d’énergie qui se remplissent l’un l’autre, avec une fuite en cas de frottement.",
+   "regle_ou_methode": "Additionne énergie cinétique et potentielle à chaque position puis compare les deux valeurs.",
+   "exemples": [
+    "Un objet passe de Ec = 2 J et Epp = 8 J à Epp = 3 J sans frottement ni autre travail non conservatif. Son énergie mécanique reste 10 J : son énergie cinétique finale vaut 10 − 3 = 7 J.",
+    "Si Em passe de 10 J à 7 J sous l’action des seuls frottements non conservatifs, leur travail vaut −3 J."
+   ],
+   "piege": "L’énergie mécanique peut diminuer par dissipation sans que l’énergie totale de l’ensemble disparaisse.",
+   "astuce_memoire": "Sans dissipation : Ec + Epp constante.",
+   "quiz": [
+    {
+     "q": "Un objet a 5 J d’énergie cinétique et 7 J d’énergie potentielle. Quelle est son énergie mécanique ?",
+     "choix": [
+      "2 J",
+      "35 J",
+      "12 J"
+     ],
+     "rep": "12 J",
+     "expl": "Em est la somme 5 + 7 = 12 J."
+    },
+    {
+     "q": "Si Em reste à 12 J et que Epp diminue de 3 J, que devient Ec ?",
+     "choix": [
+      "Elle augmente de 3 J",
+      "Elle diminue de 3 J",
+      "Elle reste forcément nulle"
+     ],
+     "rep": "Elle augmente de 3 J",
+     "expl": "La somme Ec + Epp restant constante, les variations se compensent."
+    },
+    {
+     "q": "Si l’énergie mécanique baisse de 4 J sous l’effet des seuls frottements non conservatifs, quel est leur travail ?",
+     "choix": [
+      "+4 J",
+      "−4 J",
+      "0 J"
+     ],
+     "rep": "−4 J",
+     "expl": "Leur travail est égal à la variation de l’énergie mécanique."
+    }
+   ],
+   "id": "REV-PC-1RE-44"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Onde mécanique",
+   "emoji": "🌊",
+   "en_une_phrase": "Une onde mécanique progressive transporte une perturbation dans un milieu matériel.",
+   "comprendre": "Quand tu secoues une corde, une déformation se déplace le long de celle-ci. Chaque portion de corde bouge localement sans parcourir toute la corde avec la perturbation. L’onde transporte de l’énergie sans transport global de matière.",
+   "essentiel": [
+    "Une onde mécanique nécessite un milieu matériel.",
+    "La perturbation se propage de proche en proche.",
+    "La célérité dépend du milieu."
+   ],
+   "image_mentale": "Imagine une vague de spectateurs qui se lèvent puis se rassoient.",
+   "regle_ou_methode": "Identifie la perturbation, son milieu et sa direction de propagation.",
+   "exemples": [
+    "Sur une corde, une impulsion monte puis avance vers l’autre extrémité. La déformation se propage tandis que les points de la corde oscillent localement.",
+    "Un son se propage dans l’air grâce aux variations de pression."
+   ],
+   "piege": "Le son ne se propage pas dans le vide.",
+   "astuce_memoire": "Perturbation mobile, matière localement oscillante.",
+   "quiz": [
+    {
+     "q": "Que transporte une onde mécanique ?",
+     "choix": [
+      "Une perturbation et de l’énergie",
+      "La totalité du milieu sur toute la distance",
+      "Uniquement de la matière dans le vide"
+     ],
+     "rep": "Une perturbation et de l’énergie",
+     "expl": "Une onde propage une perturbation et de l’énergie."
+    },
+    {
+     "q": "Le son a-t-il besoin d’un milieu matériel ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement à basse fréquence"
+     ],
+     "rep": "Oui",
+     "expl": "Une onde sonore mécanique nécessite un milieu matériel."
+    },
+    {
+     "q": "La célérité d’une onde mécanique dépend-elle du milieu ?",
+     "choix": [
+      "Non",
+      "Seulement de la couleur de la source",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "La célérité dépend des propriétés du milieu."
+    }
+   ],
+   "id": "REV-PC-1RE-45"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Célérité et retard",
+   "emoji": "⏱️",
+   "en_une_phrase": "La célérité relie la distance parcourue par une perturbation au temps de propagation.",
+   "comprendre": "Un son met du temps à parvenir jusqu’à toi. Si sa célérité est constante, le retard augmente proportionnellement à la distance. Cela permet de calculer une distance ou un délai.",
+   "essentiel": [
+    "La célérité v s’exprime en m/s.",
+    "Pour une distance d, le retard τ vaut d/v si v est constante.",
+    "Un aller-retour parcourt deux fois la distance à l’obstacle."
+   ],
+   "image_mentale": "Imagine un signal qui parcourt une distance entre deux capteurs.",
+   "regle_ou_methode": "Convertis les unités puis applique d = vτ.",
+   "exemples": [
+    "Une perturbation parcourt 6 m à 3 m/s. Le retard vaut 6 ÷ 3 = 2 s.",
+    "Un écho revient après 0,20 s à 340 m/s : l’obstacle est à 340 × 0,20 ÷ 2 = 34 m."
+   ],
+   "piege": "Pour un écho, n’oublie pas le trajet aller-retour.",
+   "astuce_memoire": "Distance = célérité × durée.",
+   "quiz": [
+    {
+     "q": "Quel retard pour 12 m parcourus à 3 m/s ?",
+     "choix": [
+      "9 s",
+      "4 s",
+      "36 s"
+     ],
+     "rep": "4 s",
+     "expl": "τ = 12 ÷ 3 = 4 s."
+    },
+    {
+     "q": "Un écho de 0,20 s à 340 m/s correspond à quelle distance de l’obstacle ?",
+     "choix": [
+      "68 m",
+      "17 m",
+      "34 m"
+     ],
+     "rep": "34 m",
+     "expl": "Le trajet total vaut 68 m, soit 34 m à l’aller."
+    },
+    {
+     "q": "Quelle unité mesure une célérité ?",
+     "choix": [
+      "m/s",
+      "s/m",
+      "m²"
+     ],
+     "rep": "m/s",
+     "expl": "La célérité est une distance divisée par une durée."
+    }
+   ],
+   "id": "REV-PC-1RE-46"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Période et longueur d’onde",
+   "emoji": "〰️",
+   "en_une_phrase": "La longueur d’onde est la distance parcourue par une onde périodique pendant une période.",
+   "comprendre": "Une onde répétitive revient au même état après une durée T. Dans un milieu où la célérité est constante, le motif parcourt pendant ce temps une distance λ. Cette double répétition est temporelle et spatiale.",
+   "essentiel": [
+    "La fréquence f vaut 1/T.",
+    "La longueur d’onde λ vaut vT, soit v/f.",
+    "T s’exprime en secondes, λ en mètres et f en hertz."
+   ],
+   "image_mentale": "Imagine une série de crêtes et une horloge mesurant leur passage.",
+   "regle_ou_methode": "Calcule la période ou la fréquence puis utilise λ = vT.",
+   "exemples": [
+    "Une onde se propage à 4 m/s avec une fréquence de 2 Hz. Sa période vaut 1/2 = 0,5 s ; sa longueur d’onde vaut 4 × 0,5 = 2 m.",
+    "À célérité constante, doubler la fréquence divise la longueur d’onde par deux."
+   ],
+   "piege": "La période est une durée ; la longueur d’onde est une distance.",
+   "astuce_memoire": "Une période de voyage : une longueur d’onde.",
+   "quiz": [
+    {
+     "q": "À 4 m/s et 2 Hz, quelle est la longueur d’onde ?",
+     "choix": [
+      "8 m",
+      "0,5 m",
+      "2 m"
+     ],
+     "rep": "2 m",
+     "expl": "λ = v/f = 4/2 = 2 m."
+    },
+    {
+     "q": "Quelle est l’unité de la période ?",
+     "choix": [
+      "La seconde",
+      "Le mètre",
+      "Le hertz"
+     ],
+     "rep": "La seconde",
+     "expl": "La période mesure une durée."
+    },
+    {
+     "q": "À célérité constante, si la fréquence double, que devient λ ?",
+     "choix": [
+      "Elle double",
+      "Elle est divisée par deux",
+      "Elle reste inchangée"
+     ],
+     "rep": "Elle est divisée par deux",
+     "expl": "λ = v/f : elle est inversement proportionnelle à f."
+    }
+   ],
+   "id": "REV-PC-1RE-47"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Lentille : conjugaison",
+   "emoji": "🔍",
+   "en_une_phrase": "La relation de conjugaison relie la position d’un objet, celle de son image et la distance focale.",
+   "comprendre": "Une lentille convergente peut former une image nette sur un écran. Les distances sont orientées selon un axe choisi. La relation de conjugaison permet de prévoir où placer l’écran.",
+   "essentiel": [
+    "Avec les distances algébriques : 1/OA′ − 1/OA = 1/f′.",
+    "Pour une lentille convergente, f′ est positive.",
+    "Un objet réel placé avant la lentille a une distance OA négative.",
+    "Le modèle des lentilles minces s’applique dans les conditions de Gauss."
+   ],
+   "image_mentale": "Imagine l’objet à gauche, la lentille au centre et l’écran à droite.",
+   "regle_ou_methode": "Choisis le sens positif, utilise des unités identiques puis résous la relation.",
+   "exemples": [
+    "Avec f′ = 10 cm et OA = −20 cm, 1/OA′ − 1/(−20) = 1/10. Donc 1/OA′ = 1/20 et OA′ = +20 cm : l’image réelle se forme à droite.",
+    "Pour un objet à −30 cm et f′ = 10 cm, l’image est à +15 cm."
+   ],
+   "piege": "Ne remplace pas une distance algébrique négative par sa valeur absolue.",
+   "astuce_memoire": "Conjugaison : image, objet, foyer.",
+   "quiz": [
+    {
+     "q": "Avec f′ = 10 cm et OA = −20 cm, où se forme l’image ?",
+     "choix": [
+      "À +20 cm",
+      "À −20 cm",
+      "À +10 cm"
+     ],
+     "rep": "À +20 cm",
+     "expl": "La relation donne 1/OA′ = 1/20 cm⁻¹."
+    },
+    {
+     "q": "Quel est le signe de OA pour un objet à gauche si l’axe est positif vers la droite ?",
+     "choix": [
+      "Positif",
+      "Négatif",
+      "Toujours nul"
+     ],
+     "rep": "Négatif",
+     "expl": "La position de l’objet est alors négative."
+    },
+    {
+     "q": "Peut-on mélanger directement centimètres et mètres dans la relation ?",
+     "choix": [
+      "Oui, sans conversion",
+      "Oui, si f′ est positive",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Les distances doivent utiliser la même unité."
+    }
+   ],
+   "id": "REV-PC-1RE-48"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Grandissement",
+   "emoji": "📏",
+   "en_une_phrase": "Le grandissement relie la taille et l’orientation de l’image à celles de l’objet.",
+   "comprendre": "Une photo peut représenter un objet en plus petit et parfois inversé. Avec une lentille mince, le rapport des positions algébriques indique ce changement. Son signe renseigne sur l’orientation de l’image.",
+   "essentiel": [
+    "γ = A′B′/AB = OA′/OA avec des mesures algébriques.",
+    "Si γ est négatif, l’image est renversée.",
+    "Si |γ| est inférieur à 1, l’image est plus petite.",
+    "Ces relations sont utilisées dans les conditions de Gauss."
+   ],
+   "image_mentale": "Imagine une flèche objet et sa flèche image inversée.",
+   "regle_ou_methode": "Calcule le rapport algébrique puis interprète son signe et sa valeur absolue.",
+   "exemples": [
+    "Si OA = −20 cm et OA′ = +10 cm, γ = 10/(−20) = −0,5. L’image est renversée et deux fois plus petite.",
+    "Si la hauteur algébrique AB vaut +4 cm et γ = −0,5, l’image a une hauteur algébrique A′B′ de −2 cm."
+   ],
+   "piege": "Le signe indique l’orientation, pas une taille physique négative.",
+   "astuce_memoire": "Signe : orientation ; valeur absolue : taille.",
+   "quiz": [
+    {
+     "q": "Que signifie γ = −0,5 ?",
+     "choix": [
+      "Une image droite deux fois plus grande",
+      "Une image renversée deux fois plus petite",
+      "Une image droite de même taille"
+     ],
+     "rep": "Une image renversée deux fois plus petite",
+     "expl": "Le signe est négatif et la valeur absolue vaut 0,5."
+    },
+    {
+     "q": "Si AB = 4 cm et γ = −0,5, que vaut A′B′ ?",
+     "choix": [
+      "+2 cm",
+      "−8 cm",
+      "−2 cm"
+     ],
+     "rep": "−2 cm",
+     "expl": "A′B′ = γ × AB = −2 cm."
+    },
+    {
+     "q": "Si |γ| = 2, comment comparer les tailles ?",
+     "choix": [
+      "L’image est deux fois plus grande",
+      "L’image est deux fois plus petite",
+      "Les tailles sont forcément égales"
+     ],
+     "rep": "L’image est deux fois plus grande",
+     "expl": "La valeur absolue indique le rapport des tailles."
+    }
+   ],
+   "id": "REV-PC-1RE-49"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Synthèses de couleurs",
+   "emoji": "🎨",
+   "en_une_phrase": "Les lumières s’additionnent, tandis que les filtres et pigments retirent certaines composantes.",
+   "comprendre": "Deux projecteurs superposent leurs lumières. Un filtre, lui, absorbe une partie de la lumière incidente et transmet le reste. Les deux situations demandent donc des modèles différents.",
+   "essentiel": [
+    "En synthèse additive, rouge et vert donnent jaune.",
+    "En synthèse additive, rouge, vert et bleu peuvent donner blanc.",
+    "Un filtre cyan idéal transmet le vert et le bleu et absorbe le rouge."
+   ],
+   "image_mentale": "Imagine trois faisceaux qui se superposent puis une lumière traversant un filtre.",
+   "regle_ou_methode": "Détermine les composantes présentes, puis ajoute les lumières ou retire celles absorbées.",
+   "exemples": [
+    "Sous des projecteurs rouge et vert superposés, les deux composantes arrivent à l’œil. Leur synthèse additive est jaune.",
+    "Une lumière blanche traversant un filtre cyan idéal ressort cyan : le rouge est absorbé."
+   ],
+   "piege": "Ne confonds pas mélange de lumières et superposition de filtres.",
+   "astuce_memoire": "Lumières : ajouter ; filtres : retirer.",
+   "quiz": [
+    {
+     "q": "Que donnent des lumières rouge et verte superposées ?",
+     "choix": [
+      "Cyan",
+      "Bleu",
+      "Jaune"
+     ],
+     "rep": "Jaune",
+     "expl": "Rouge et vert donnent jaune en synthèse additive."
+    },
+    {
+     "q": "Quelle composante absorbe un filtre cyan idéal ?",
+     "choix": [
+      "Le rouge",
+      "Le vert",
+      "Le bleu"
+     ],
+     "rep": "Le rouge",
+     "expl": "Le filtre cyan transmet vert et bleu et absorbe rouge."
+    },
+    {
+     "q": "Quel modèle convient à deux projecteurs ?",
+     "choix": [
+      "La synthèse soustractive seule",
+      "La synthèse additive",
+      "La datation radioactive"
+     ],
+     "rep": "La synthèse additive",
+     "expl": "Les faisceaux lumineux s’additionnent."
+    }
+   ],
+   "id": "REV-PC-1RE-50"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Couleur d’un objet",
+   "emoji": "🟦",
+   "en_une_phrase": "La couleur perçue dépend de la lumière reçue et des composantes diffusées ou transmises.",
+   "comprendre": "Un objet coloré ne crée pas nécessairement sa propre lumière. Il absorbe certaines composantes de l’éclairage et en diffuse ou transmet d’autres. Si une composante manque dans la lumière incidente, l’objet ne peut pas la diffuser.",
+   "essentiel": [
+    "Un objet opaque diffuse certaines composantes de la lumière incidente.",
+    "Il peut absorber d’autres composantes.",
+    "La couleur observée dépend de l’éclairage."
+   ],
+   "image_mentale": "Imagine un faisceau multicolore dont seules certaines flèches repartent vers l’œil.",
+   "regle_ou_methode": "Repère les composantes incidentes puis celles que l’objet peut diffuser.",
+   "exemples": [
+    "Un objet idéal qui diffuse seulement le rouge reçoit une lumière blanche contenant du rouge. Il diffuse le rouge et paraît rouge.",
+    "Sous une lumière uniquement bleue, le même objet idéal ne reçoit pas de rouge à diffuser et paraît noir."
+   ],
+   "piege": "Un objet rouge ne paraît pas forcément rouge sous n’importe quel éclairage.",
+   "astuce_memoire": "Couleur vue = lumière reçue et diffusée.",
+   "quiz": [
+    {
+     "q": "Un objet idéal diffusant seulement le rouge est éclairé en bleu. Comment paraît-il ?",
+     "choix": [
+      "Noir",
+      "Rouge",
+      "Blanc"
+     ],
+     "rep": "Noir",
+     "expl": "Aucune lumière rouge n’est présente à diffuser."
+    },
+    {
+     "q": "Un objet opaque diffuse-t-il nécessairement toutes les couleurs reçues ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, s’il paraît rouge"
+     ],
+     "rep": "Non",
+     "expl": "Il peut absorber certaines composantes."
+    },
+    {
+     "q": "De quoi dépend la couleur perçue ?",
+     "choix": [
+      "Du seul nom de l’objet",
+      "Uniquement de sa masse",
+      "De l’éclairage et des propriétés de l’objet"
+     ],
+     "rep": "De l’éclairage et des propriétés de l’objet",
+     "expl": "La lumière incidente et les échanges avec l’objet comptent."
+    }
+   ],
+   "id": "REV-PC-1RE-51"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Lumière et photon",
+   "emoji": "✨",
+   "en_une_phrase": "L’énergie d’un photon augmente avec la fréquence de la lumière.",
+   "comprendre": "La lumière peut être décrite par une onde et par des photons. Chaque photon d’une fréquence donnée possède une énergie hν. Une longueur d’onde plus courte dans le vide correspond à une fréquence plus élevée.",
+   "essentiel": [
+    "E = hν avec h ≈ 6,63 × 10⁻³⁴ J·s.",
+    "Dans le vide, c = λν.",
+    "Pour une fréquence plus grande, l’énergie d’un photon est plus grande."
+   ],
+   "image_mentale": "Imagine une onde puis des grains transportant chacun une énergie déterminée.",
+   "regle_ou_methode": "Convertis la longueur d’onde en mètres, calcule ν = c/λ puis E = hν.",
+   "exemples": [
+    "Pour λ = 600 nm, soit 6,0 × 10⁻⁷ m, ν = 3,0 × 10⁸/(6,0 × 10⁻⁷) = 5,0 × 10¹⁴ Hz. L’énergie vaut environ 6,63 × 10⁻³⁴ × 5,0 × 10¹⁴ = 3,3 × 10⁻¹⁹ J.",
+    "À fréquence double, l’énergie de chaque photon est doublée."
+   ],
+   "piege": "Une lumière plus intense ne signifie pas forcément que chaque photon a plus d’énergie.",
+   "astuce_memoire": "Fréquence double : énergie du photon double.",
+   "quiz": [
+    {
+     "q": "Quelle relation donne l’énergie d’un photon ?",
+     "choix": [
+      "E = h/ν",
+      "E = hν",
+      "E = ν/h"
+     ],
+     "rep": "E = hν",
+     "expl": "L’énergie d’un photon est proportionnelle à sa fréquence."
+    },
+    {
+     "q": "Que vaut 600 nm en mètres ?",
+     "choix": [
+      "6,0 × 10⁻⁹ m",
+      "6,0 × 10⁻⁶ m",
+      "6,0 × 10⁻⁷ m"
+     ],
+     "rep": "6,0 × 10⁻⁷ m",
+     "expl": "Un nanomètre vaut 10⁻⁹ m."
+    },
+    {
+     "q": "Si la fréquence double, que devient l’énergie d’un photon ?",
+     "choix": [
+      "Elle double",
+      "Elle est divisée par deux",
+      "Elle reste constante"
+     ],
+     "rep": "Elle double",
+     "expl": "La formule E = hν montre la proportionnalité."
+    }
+   ],
+   "id": "REV-PC-1RE-52"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Niveaux d’énergie",
+   "emoji": "💡",
+   "en_une_phrase": "Lors d’une transition radiative entre deux niveaux autorisés, un atome absorbe ou émet un photon.",
+   "comprendre": "Imagine un escalier : on ne se tient que sur ses marches. Dans le modèle atomique, les énergies possibles sont quantifiées. L’énergie du photon correspond à l’écart entre deux niveaux.",
+   "essentiel": [
+    "Une absorption fait passer l’atome vers un niveau plus élevé.",
+    "Une émission accompagne le passage vers un niveau plus bas.",
+    "L’énergie échangée vaut la différence positive entre les niveaux."
+   ],
+   "image_mentale": "Imagine un escalier dont la hauteur entre marches fixe l’énergie échangée.",
+   "regle_ou_methode": "Calcule l’écart positif des niveaux puis identifie absorption ou émission.",
+   "exemples": [
+    "Un atome passe de −3,0 eV à −1,0 eV. Il gagne 2,0 eV : il absorbe un photon de cette énergie.",
+    "Lors du passage inverse de −1,0 eV à −3,0 eV, il émet un photon de 2,0 eV."
+   ],
+   "piege": "Ne confonds pas énergie du niveau et différence d’énergie entre deux niveaux.",
+   "astuce_memoire": "Monter : absorber ; descendre : émettre.",
+   "quiz": [
+    {
+     "q": "Que se passe-t-il lors d’un passage de −3,0 eV à −1,0 eV ?",
+     "choix": [
+      "Émission de 2,0 eV",
+      "Absorption de 4,0 eV",
+      "Absorption de 2,0 eV"
+     ],
+     "rep": "Absorption de 2,0 eV",
+     "expl": "Le niveau augmente de 2,0 eV."
+    },
+    {
+     "q": "Que représente l’énergie du photon émis ?",
+     "choix": [
+      "La différence positive entre les niveaux",
+      "La somme des deux niveaux",
+      "Toujours l’énergie du niveau le plus bas"
+     ],
+     "rep": "La différence positive entre les niveaux",
+     "expl": "Elle égale la perte d’énergie de l’atome."
+    },
+    {
+     "q": "Quels niveaux l’atome peut-il occuper dans ce modèle ?",
+     "choix": [
+      "Toute valeur intermédiaire obligatoirement",
+      "Des niveaux d’énergie autorisés",
+      "Uniquement le niveau zéro"
+     ],
+     "rep": "Des niveaux d’énergie autorisés",
+     "expl": "Les niveaux d’énergie sont quantifiés."
+    }
+   ],
+   "id": "REV-PC-1RE-53"
+  }
+ ]
+}

@@ -1,0 +1,2983 @@
+{
+ "classe": "1RE",
+ "niveau_appli": "Lycée",
+ "age": "16-17 ans",
+ "matiere": "SES (spécialité)",
+ "code": "SES",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Science économique",
+   "titre": "Le marché, une institution",
+   "emoji": "🏪",
+   "en_une_phrase": "Un marché organise des échanges grâce à des règles et des institutions.",
+   "comprendre": "Tu connais les échanges entre vendeurs et acheteurs. Pour qu’ils puissent se rencontrer, des règles précisent notamment les contrats, la qualité des biens et la propriété. Le fonctionnement des marchés varie selon le nombre d’acteurs et leur pouvoir.",
+   "essentiel": [
+    "Un marché met en relation offreurs et demandeurs.",
+    "Il repose sur des règles, formelles ou non.",
+    "En concurrence parfaite, chaque agent est preneur de prix.",
+    "Un monopole comporte un seul offreur sur le marché considéré."
+   ],
+   "image_mentale": "Imagine une place de marché entourée de règles et d’arbitres.",
+   "regle_ou_methode": "Identifie le bien échangé, les acteurs, les règles et le degré de concurrence.",
+   "exemples": [
+    "Sur un marché fictif de légumes, plusieurs producteurs et acheteurs échangent selon des règles de paiement et de qualité. Les échanges reposent donc sur une organisation et ne se réduisent pas à des rencontres improvisées.",
+    "Si un seul fournisseur vend un service sans substitut proche sur un marché donné, il est en situation de monopole."
+   ],
+   "piege": "Un marché ne désigne pas nécessairement un lieu physique.",
+   "astuce_memoire": "Des acteurs, un échange et des règles.",
+   "quiz": [
+    {
+     "q": "Quel rôle jouent des règles de contrat sur un marché ?",
+     "choix": [
+      "Elles rendent tout échange impossible",
+      "Elles encadrent les échanges",
+      "Elles fixent toujours un prix unique mondial"
+     ],
+     "rep": "Elles encadrent les échanges",
+     "expl": "Les règles rendent possibles et encadrent les échanges."
+    },
+    {
+     "q": "Que signifie être preneur de prix ?",
+     "choix": [
+      "Fixer seul le prix pour tous les vendeurs",
+      "Ne jamais comparer de prix",
+      "Accepter le prix du marché sans pouvoir le modifier seul"
+     ],
+     "rep": "Accepter le prix du marché sans pouvoir le modifier seul",
+     "expl": "Un agent preneur de prix considère le prix comme donné."
+    },
+    {
+     "q": "Combien d’offreurs caractérisent un monopole sur le marché considéré ?",
+     "choix": [
+      "Un",
+      "Deux",
+      "Un grand nombre"
+     ],
+     "rep": "Un",
+     "expl": "Le monopole comporte un seul offreur."
+    }
+   ],
+   "id": "REV-SES-1RE-01"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Offre, demande et équilibre",
+   "emoji": "⚖️",
+   "en_une_phrase": "Sur un marché concurrentiel, le prix d’équilibre égalise les quantités offertes et demandées.",
+   "comprendre": "À un prix donné, des acheteurs désirent acquérir une quantité et des vendeurs souhaitent en vendre une autre. Dans le modèle concurrentiel simple, le prix s’ajuste vers leur point de rencontre. Cet équilibre dépend des conditions représentées par les courbes.",
+   "essentiel": [
+    "La demande est généralement décroissante avec le prix, toutes choses égales par ailleurs.",
+    "L’offre est généralement croissante avec le prix, toutes choses égales par ailleurs.",
+    "À l’équilibre, quantité offerte et quantité demandée coïncident.",
+    "Les agents du modèle concurrentiel sont preneurs de prix."
+   ],
+   "image_mentale": "Imagine deux courbes qui se croisent : le croisement indique prix et quantité.",
+   "regle_ou_methode": "Égalise l’offre et la demande, puis remplace le prix trouvé pour obtenir la quantité.",
+   "exemples": [
+    "Si la demande vaut Qd = 12 − p et l’offre Qs = 2p, résous 12 − p = 2p. On obtient p = 4 puis Q = 8 : le prix d’équilibre est 4 et la quantité est 8.",
+    "Au prix p = 3 dans ce modèle, Qd = 9 et Qs = 6 : la demande dépasse l’offre de 3 unités."
+   ],
+   "piege": "L’équilibre du modèle ne garantit pas que tous les besoins de tous les individus sont satisfaits.",
+   "astuce_memoire": "Offre égale demande à l’équilibre.",
+   "quiz": [
+    {
+     "q": "Avec Qd = 12 − p et Qs = 2p, quel est le prix d’équilibre ?",
+     "choix": [
+      "3",
+      "8",
+      "4"
+     ],
+     "rep": "4",
+     "expl": "12 − p = 2p donne 3p = 12."
+    },
+    {
+     "q": "Avec Qd = 12 − p et Qs = 2p, quelle quantité est échangée à l’équilibre ?",
+     "choix": [
+      "8",
+      "4",
+      "12"
+     ],
+     "rep": "8",
+     "expl": "Qs = 2 × 4 = 8."
+    },
+    {
+     "q": "À p = 3, que constate-t-on ?",
+     "choix": [
+      "L’offre dépasse la demande de 3 unités",
+      "La demande dépasse l’offre de 3 unités",
+      "Les deux quantités valent 6"
+     ],
+     "rep": "La demande dépasse l’offre de 3 unités",
+     "expl": "Qd = 9 et Qs = 6."
+    }
+   ],
+   "id": "REV-SES-1RE-02"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Courbe ou déplacement ?",
+   "emoji": "📉",
+   "en_une_phrase": "Une variation du prix déplace le point sur une courbe ; un autre facteur peut déplacer la courbe.",
+   "comprendre": "Quand le prix d’un produit change, une quantité demandée peut changer. Si les goûts ou le revenu changent, la demande peut varier même à prix inchangé. Les deux situations ne se lisent donc pas de la même façon sur un graphique.",
+   "essentiel": [
+    "Une variation du prix du bien correspond à un mouvement sur sa courbe.",
+    "Une modification des goûts peut déplacer la demande.",
+    "Une variation des coûts peut déplacer l’offre.",
+    "Une comparaison suppose de préciser les autres conditions."
+   ],
+   "image_mentale": "Imagine un point glissant sur une ligne, puis toute la ligne qui se déplace.",
+   "regle_ou_methode": "Vérifie si c’est le prix du bien ou une autre condition qui a changé.",
+   "exemples": [
+    "À préférences inchangées, le prix passe de 5 à 4 : on lit une nouvelle quantité sur la même courbe de demande. Si les consommateurs préfèrent davantage le produit au prix de 4, la courbe de demande peut se déplacer.",
+    "Une baisse du coût de production peut accroître l’offre à chaque prix, en déplaçant la courbe."
+   ],
+   "piege": "Une hausse de la quantité demandée à cause du prix n’est pas le même phénomène qu’un déplacement de la demande.",
+   "astuce_memoire": "Prix : déplacement sur la courbe ; autre facteur : courbe déplacée.",
+   "quiz": [
+    {
+     "q": "Que représente une baisse du prix sur une courbe de demande inchangée ?",
+     "choix": [
+      "Un déplacement du point sur la courbe",
+      "Un déplacement automatique de toute la courbe",
+      "La disparition de la demande"
+     ],
+     "rep": "Un déplacement du point sur la courbe",
+     "expl": "On change le prix, les autres conditions restant fixes."
+    },
+    {
+     "q": "Quel changement peut déplacer la courbe d’offre ?",
+     "choix": [
+      "La seule lecture d’un autre point de prix",
+      "Une modification des coûts de production",
+      "Un changement de couleur du graphique"
+     ],
+     "rep": "Une modification des coûts de production",
+     "expl": "Une modification des coûts peut changer l’offre à prix donné."
+    },
+    {
+     "q": "Quel changement peut accroître la demande à prix inchangé ?",
+     "choix": [
+      "Une baisse du prix du produit sans autre changement",
+      "Une hausse de la quantité offerte sans autre information",
+      "Une préférence accrue pour le produit"
+     ],
+     "rep": "Une préférence accrue pour le produit",
+     "expl": "Une préférence accrue peut déplacer la courbe de demande."
+    }
+   ],
+   "id": "REV-SES-1RE-03"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Taxe forfaitaire et prix",
+   "emoji": "🧾",
+   "en_une_phrase": "Une taxe par unité crée un écart entre le prix payé par l’acheteur et le prix reçu par le vendeur.",
+   "comprendre": "Tu peux comparer une somme payée en caisse à celle que conserve le vendeur. Une taxe forfaitaire par unité s’ajoute entre ces deux montants. Son effet sur la quantité et son partage dépendent des courbes d’offre et de demande.",
+   "essentiel": [
+    "Pour une taxe de t par unité, prix acheteur = prix vendeur + t.",
+    "L’offre dépend ici du prix reçu par le vendeur.",
+    "La demande dépend du prix payé par l’acheteur.",
+    "La recette fiscale vaut taxe par unité multipliée par quantité échangée."
+   ],
+   "image_mentale": "Imagine un prix coupé en deux par une cale représentant la taxe.",
+   "regle_ou_methode": "Relie les deux prix, égalise les quantités puis calcule le montant de la taxe.",
+   "exemples": [
+    "Soit Qd = 12 − p acheteur, Qs = 2p vendeur et une taxe de 3 par unité. Comme p acheteur = p vendeur + 3, l’équilibre donne 12 − (p vendeur + 3) = 2p vendeur. Ainsi p vendeur = 3, p acheteur = 6 et Q = 6.",
+    "À cet équilibre, la recette fiscale vaut 3 × 6 = 18 unités monétaires."
+   ],
+   "piege": "Ne suppose pas que le vendeur ou l’acheteur supporte toujours à lui seul toute la taxe.",
+   "astuce_memoire": "Deux prix, un écart égal à la taxe.",
+   "quiz": [
+    {
+     "q": "Avec une taxe de 3 par unité, si le vendeur reçoit 3, quel prix paie l’acheteur ?",
+     "choix": [
+      "3",
+      "6",
+      "9"
+     ],
+     "rep": "6",
+     "expl": "Le prix acheteur vaut 3 + 3."
+    },
+    {
+     "q": "Avec une taxe de 3 et 6 unités échangées, quelle est la recette fiscale ?",
+     "choix": [
+      "9",
+      "3",
+      "18"
+     ],
+     "rep": "18",
+     "expl": "On multiplie taxe unitaire et quantité."
+    },
+    {
+     "q": "Avec Qd = 12 − p (prix acheteur), Qs = 2p (prix vendeur) et une taxe de 3 par unité, quelle quantité est échangée ?",
+     "choix": [
+      "6",
+      "8",
+      "12"
+     ],
+     "rep": "6",
+     "expl": "12 − (p + 3) = 2p donne p vendeur = 3, donc Q = 2 × 3 = 6."
+    }
+   ],
+   "id": "REV-SES-1RE-04"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Coût marginal et offre",
+   "emoji": "🏭",
+   "en_une_phrase": "Un producteur preneur de prix compare le prix de vente au coût d’une unité supplémentaire.",
+   "comprendre": "Pour fabriquer une pièce de plus, une entreprise supporte un coût additionnel. Si cette pièce rapporte plus qu’elle ne coûte, elle augmente le profit. Quand le coût marginal croît, l’entreprise retient les unités dont le coût marginal n’excède pas le prix.",
+   "essentiel": [
+    "Le coût marginal est le coût supplémentaire d’une unité additionnelle.",
+    "Dans le modèle concurrentiel, le producteur prend le prix comme donné.",
+    "Pour une solution intérieure continue avec coût marginal croissant, le profit est maximal lorsque coût marginal et prix sont égaux.",
+    "En unités indivisibles, on peut comparer les coûts marginaux successifs au prix."
+   ],
+   "image_mentale": "Imagine un escalier de coûts croissants face à une ligne de prix.",
+   "regle_ou_methode": "Compare chaque coût marginal au prix et conserve les unités rentables.",
+   "exemples": [
+    "Un vendeur reçoit 7 € par objet et les coûts des unités successives sont 2 €, 4 €, 7 € puis 10 €. Les trois premières couvrent leur coût marginal, mais pas la quatrième : produire trois unités est une solution optimale dans cet exemple sans coûts supplémentaires pertinents.",
+    "Si le prix est de 6 € avec les mêmes coûts, deux unités couvrent leur coût marginal."
+   ],
+   "piege": "La règle concerne le coût d’une unité supplémentaire, pas le coût total de toutes les unités.",
+   "astuce_memoire": "Prix comparé au coût marginal.",
+   "quiz": [
+    {
+     "q": "Si le prix est 6 € et les coûts marginaux successifs sont 2 €, 4 € et 7 €, combien d’unités produire dans ce modèle ?",
+     "choix": [
+      "1",
+      "3",
+      "2"
+     ],
+     "rep": "2",
+     "expl": "Les deux premières coûtent moins que 6 €, la troisième coûte 7 €."
+    },
+    {
+     "q": "Que désigne le coût marginal ?",
+     "choix": [
+      "Le coût d’une unité supplémentaire",
+      "Le chiffre d’affaires total",
+      "Le prix payé par tous les clients réunis"
+     ],
+     "rep": "Le coût d’une unité supplémentaire",
+     "expl": "Il mesure l’ajout de coût lié à une unité de production supplémentaire."
+    },
+    {
+     "q": "Dans un modèle continu intérieur avec coût marginal croissant, quelle condition caractérise l’optimum ?",
+     "choix": [
+      "Coût total égal au prix d’une unité",
+      "Coût marginal égal au prix",
+      "Production nécessairement nulle"
+     ],
+     "rep": "Coût marginal égal au prix",
+     "expl": "À l’optimum intérieur, coût marginal et prix se rejoignent."
+    }
+   ],
+   "id": "REV-SES-1RE-05"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Surplus et gains à l’échange",
+   "emoji": "🎁",
+   "en_une_phrase": "Le surplus mesure le gain qu’un acheteur ou un vendeur retire d’un échange par rapport à son seuil.",
+   "comprendre": "Un achat peut te sembler avantageux si tu étais prêt à payer davantage que le prix demandé. De même, un vendeur peut gagner une différence entre son prix et le minimum auquel il accepterait de vendre. Ces gains constituent les surplus.",
+   "essentiel": [
+    "Le surplus du consommateur est la disposition à payer moins le prix payé.",
+    "Le surplus du producteur est le prix reçu moins le coût ou prix minimal pertinent.",
+    "Les gains totaux à l’échange additionnent les surplus.",
+    "Dans le modèle concurrentiel sans défaillance, leur somme est maximisée à l’équilibre."
+   ],
+   "image_mentale": "Imagine le prix entre un plafond d’achat et un seuil de vente.",
+   "regle_ou_methode": "Soustrais le prix du montant maximal de l’acheteur, puis le coût du prix du vendeur.",
+   "exemples": [
+    "Une personne est prête à payer 12 € pour un objet qui coûte 8 € : son surplus est 12 − 8 = 4 €. Si le coût pertinent du vendeur est 5 €, son surplus vaut 8 − 5 = 3 €. Le gain total est 7 €.",
+    "Pour un autre objet, une disposition à payer de 9 € et un coût de 10 € ne permettent pas ici un échange mutuellement avantageux."
+   ],
+   "piege": "Le surplus ne correspond pas au prix total payé.",
+   "astuce_memoire": "Acheteur : plafond moins prix ; vendeur : prix moins coût.",
+   "quiz": [
+    {
+     "q": "Un acheteur prêt à payer 15 € achète à 11 €. Quel est son surplus ?",
+     "choix": [
+      "4 €",
+      "11 €",
+      "26 €"
+     ],
+     "rep": "4 €",
+     "expl": "La différence entre disposition à payer et prix est 4 €."
+    },
+    {
+     "q": "Un vendeur reçoit 11 € pour un bien dont le coût pertinent est 8 €. Quel est son surplus ?",
+     "choix": [
+      "8 €",
+      "3 €",
+      "19 €"
+     ],
+     "rep": "3 €",
+     "expl": "Le prix reçu dépasse le coût de 3 €."
+    },
+    {
+     "q": "Si les deux surplus sont 4 € et 3 €, quel est le gain total ?",
+     "choix": [
+      "1 €",
+      "12 €",
+      "7 €"
+     ],
+     "rep": "7 €",
+     "expl": "Les gains à l’échange s’additionnent."
+    }
+   ],
+   "id": "REV-SES-1RE-06"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Pouvoir de marché",
+   "emoji": "👑",
+   "en_une_phrase": "Une entreprise dispose d’un pouvoir de marché lorsqu’elle peut influencer son prix.",
+   "comprendre": "Quand de nombreuses entreprises vendent des produits très proches, chacune rencontre des concurrents. Si un seul offreur est présent ou si l’entrée est difficile, son pouvoir peut augmenter. Ce pouvoir dépend aussi des substituts et des règles du marché.",
+   "essentiel": [
+    "Un monopole est un marché à un seul offreur.",
+    "Un oligopole réunit un petit nombre d’offreurs.",
+    "Une barrière à l’entrée rend l’arrivée de nouveaux concurrents plus difficile.",
+    "Un monopole est faiseur de prix sous contrainte de la demande."
+   ],
+   "image_mentale": "Imagine une porte d’entrée étroite et un petit nombre de vendeurs derrière elle.",
+   "regle_ou_methode": "Compte les offreurs, repère les barrières et les possibilités de substitution.",
+   "exemples": [
+    "Sur un marché fictif, une seule entreprise dispose d’une autorisation exclusive pour exploiter un service : la règle crée un monopole institutionnel. La demande limite toutefois le prix qu’elle peut fixer.",
+    "Un brevet peut temporairement protéger une innovation et constituer une barrière à l’entrée.",
+    "Un réseau local d’eau peut illustrer un monopole naturel lorsque dupliquer l’infrastructure serait plus coûteux qu’un seul réseau pour la demande considérée."
+   ],
+   "piege": "Un monopole ne vend pas n’importe quelle quantité à n’importe quel prix : les acheteurs réagissent.",
+   "astuce_memoire": "Pouvoir de prix et contrainte de demande.",
+   "quiz": [
+    {
+     "q": "Qu’est-ce qu’un oligopole ?",
+     "choix": [
+      "Un marché avec un seul acheteur nécessairement",
+      "Un marché avec un petit nombre d’offreurs",
+      "Un marché sans règles"
+     ],
+     "rep": "Un marché avec un petit nombre d’offreurs",
+     "expl": "Quelques offreurs dominent le marché considéré."
+    },
+    {
+     "q": "Quel dispositif peut constituer une barrière institutionnelle à l’entrée ?",
+     "choix": [
+      "Le seul nombre de clients",
+      "Une baisse de demande sans autre information",
+      "Une autorisation exclusive"
+     ],
+     "rep": "Une autorisation exclusive",
+     "expl": "Une autorisation réservée peut empêcher d’autres entreprises d’entrer."
+    },
+    {
+     "q": "Un monopole peut-il fixer un prix sans tenir compte de la demande ?",
+     "choix": [
+      "Non",
+      "Oui, car les clients achètent toute quantité à tout prix",
+      "Oui, car il ne supporte aucun coût"
+     ],
+     "rep": "Non",
+     "expl": "La quantité demandée dépend notamment du prix."
+    }
+   ],
+   "id": "REV-SES-1RE-07"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Monopole et surplus",
+   "emoji": "📊",
+   "en_une_phrase": "Dans un modèle simple, le monopole maximise son profit avec une quantité inférieure à celle du marché concurrentiel.",
+   "comprendre": "Un vendeur unique choisit une combinaison de prix et de quantité sur la courbe de demande. Pour vendre davantage, il peut devoir réduire le prix. Son intérêt privé peut alors conduire à laisser inexploités certains échanges avantageux pour les deux parties.",
+   "essentiel": [
+    "Le monopoleur choisit sa production en tenant compte de la demande.",
+    "Un prix supérieur au coût marginal peut limiter la quantité.",
+    "La perte de surplus correspond à des échanges mutuellement avantageux non réalisés.",
+    "Le résultat dépend du modèle et des coûts retenus."
+   ],
+   "image_mentale": "Imagine une zone de gains à l’échange qui reste vide lorsque la quantité vendue est limitée.",
+   "regle_ou_methode": "Compare, dans un exemple chiffré, la quantité du monopole et celle où prix et coût marginal coïncident.",
+   "exemples": [
+    "Supposons p = 10 − q, un coût total de 2q et une quantité continue. Le profit est q(10 − q) − 2q = q(8 − q), maximal pour q = 4 ; le prix est alors 6. En concurrence dans ce modèle, p = coût marginal = 2 donne q = 8.",
+    "Entre les quantités 4 et 8, certains acheteurs valorisent le bien à plus de 2 : des échanges mutuellement avantageux ne sont pas réalisés dans le monopole."
+   ],
+   "piege": "Un monopole n’est pas forcément public, et son prix reste limité par la demande.",
+   "astuce_memoire": "Monopole : quantité et gains à l’échange peuvent être réduits.",
+   "quiz": [
+    {
+     "q": "Dans le modèle p = 10 − q et coût total 2q, quel est le prix pour q = 4 ?",
+     "choix": [
+      "4",
+      "8",
+      "6"
+     ],
+     "rep": "6",
+     "expl": "p = 10 − 4 = 6."
+    },
+    {
+     "q": "Si p = 10 − q et le coût marginal est 2, quelle quantité satisfait p = coût marginal ?",
+     "choix": [
+      "8",
+      "4",
+      "2"
+     ],
+     "rep": "8",
+     "expl": "10 − q = 2 donne q = 8."
+    },
+    {
+     "q": "Que représente la perte de surplus dans ce modèle ?",
+     "choix": [
+      "Le montant total des ventes",
+      "Des gains d’échanges mutuellement avantageux non réalisés",
+      "Le coût de tous les biens déjà échangés"
+     ],
+     "rep": "Des gains d’échanges mutuellement avantageux non réalisés",
+     "expl": "Une restriction de quantité peut empêcher certains échanges avantageux."
+    }
+   ],
+   "id": "REV-SES-1RE-08"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Oligopole et entente",
+   "emoji": "🤝",
+   "en_une_phrase": "Dans un oligopole, les entreprises tiennent compte des choix de leurs concurrentes.",
+   "comprendre": "Quand quelques équipes seulement se partagent un terrain, chacune anticipe les choix des autres. Des entreprises peuvent avoir un intérêt commun à maintenir des prix élevés. Mais chacune peut aussi être tentée de dévier si les autres respectent l’accord.",
+   "essentiel": [
+    "Un oligopole comprend un petit nombre d’offreurs.",
+    "Une entente peut chercher à limiter la concurrence.",
+    "Le dilemme du prisonnier illustre un conflit entre intérêt individuel et résultat collectif.",
+    "Les ententes illicites peuvent être sanctionnées."
+   ],
+   "image_mentale": "Imagine deux entreprises qui choisissent chacune entre coopérer et dévier.",
+   "regle_ou_methode": "Compare les gains de chaque entreprise pour un choix donné de l’autre.",
+   "exemples": [
+    "Dans un jeu fictif, si les deux coopèrent, chacune gagne 8. Une seule déviation rapporte 12 à celle qui dévie et 2 à l’autre ; si les deux dévient, chacune gagne 4. Chacune est tentée de dévier, même si le résultat commun 4 et 4 est inférieur à 8 et 8.",
+    "Une autorité de concurrence peut enquêter sur une entente illicite entre vendeurs."
+   ],
+   "piege": "Une forte concentration ne prouve pas à elle seule qu’une entente existe.",
+   "astuce_memoire": "Choix individuel et résultat collectif peuvent diverger.",
+   "quiz": [
+    {
+     "q": "Deux entreprises gagnent 8 chacune si elles coopèrent, 4 chacune si elles dévient toutes les deux. Combien gagne chacune si les deux coopèrent ?",
+     "choix": [
+      "8",
+      "4",
+      "12"
+     ],
+     "rep": "8",
+     "expl": "Le gain indiqué pour chaque entreprise est 8."
+    },
+    {
+     "q": "Si une entreprise dévie seule, elle gagne 12 et l’autre 2. Combien gagne celle qui dévie ?",
+     "choix": [
+      "8",
+      "12",
+      "2"
+     ],
+     "rep": "12",
+     "expl": "La déviation individuelle rapporte 12, plus que les 8 de la coopération : d’où la tentation de dévier."
+    },
+    {
+     "q": "Une concentration de vendeurs prouve-t-elle automatiquement une entente ?",
+     "choix": [
+      "Oui, dans tous les cas",
+      "Oui, si les produits sont visibles",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Une enquête est nécessaire pour établir une entente."
+    }
+   ],
+   "id": "REV-SES-1RE-09"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Politique de concurrence",
+   "emoji": "⚖️",
+   "en_une_phrase": "La politique de concurrence cherche à limiter certaines pratiques qui faussent le jeu concurrentiel.",
+   "comprendre": "Des règles peuvent empêcher que des entreprises s’accordent pour maintenir des prix ou abusent d’une position dominante. Les autorités examinent aussi certaines fusions avant leur réalisation. L’objectif est notamment de protéger le fonctionnement du marché et les consommateurs.",
+   "essentiel": [
+    "Une entente illicite peut porter sur les prix.",
+    "Une position dominante n’est pas à elle seule toujours illégale ; son abus peut l’être.",
+    "Certaines fusions sont examinées par les autorités compétentes.",
+    "Davantage de concurrence peut accroître le surplus des consommateurs."
+   ],
+   "image_mentale": "Imagine un arbitre examinant les règles d’un match entre entreprises.",
+   "regle_ou_methode": "Identifie la pratique et ses effets possibles avant de conclure à une infraction.",
+   "exemples": [
+    "Deux vendeurs fictifs conviennent secrètement d’un prix commun pour supprimer leur concurrence. Une autorité peut examiner et sanctionner cette entente illicite.",
+    "Une fusion peut être autorisée sous conditions pour limiter ses effets sur la concurrence."
+   ],
+   "piege": "Avoir une grande part de marché n’établit pas automatiquement un abus.",
+   "astuce_memoire": "Examiner la pratique et ses effets.",
+   "quiz": [
+    {
+     "q": "Quel comportement peut constituer une entente illicite ?",
+     "choix": [
+      "Un client compare deux offres",
+      "Des concurrents se mettent secrètement d’accord sur leurs prix",
+      "Une entreprise calcule ses coûts"
+     ],
+     "rep": "Des concurrents se mettent secrètement d’accord sur leurs prix",
+     "expl": "Une coordination des prix entre concurrents peut être illicite."
+    },
+    {
+     "q": "Une position dominante est-elle automatiquement un abus ?",
+     "choix": [
+      "Oui, dans tous les cas",
+      "Oui, dès qu’une entreprise innove",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Il faut distinguer la position et son éventuel abus."
+    },
+    {
+     "q": "Pourquoi certaines fusions sont-elles examinées ?",
+     "choix": [
+      "Pour évaluer leurs effets sur la concurrence",
+      "Pour fixer toutes les salaires du pays",
+      "Pour interdire automatiquement toute entreprise"
+     ],
+     "rep": "Pour évaluer leurs effets sur la concurrence",
+     "expl": "Les autorités évaluent notamment les risques pour la concurrence."
+    }
+   ],
+   "id": "REV-SES-1RE-10"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Externalités",
+   "emoji": "🌍",
+   "en_une_phrase": "Une externalité est un effet d’une activité sur d’autres agents qui n’est pas entièrement pris en compte par le marché.",
+   "comprendre": "Une activité peut produire des conséquences au-delà de ses acheteurs et vendeurs. Une pollution peut imposer des coûts à des riverains sans que ceux-ci soient intégrés au prix. À l’inverse, une activité peut apporter des bénéfices à d’autres sans rémunération correspondante.",
+   "essentiel": [
+    "Une externalité négative impose un coût à d’autres agents.",
+    "Une externalité positive leur apporte un bénéfice.",
+    "Le prix privé peut ne pas refléter tous les coûts ou bénéfices sociaux.",
+    "Une taxe ou une réglementation peut chercher à corriger une externalité négative."
+   ],
+   "image_mentale": "Imagine une flèche qui sort d’un échange et touche un voisin.",
+   "regle_ou_methode": "Repère l’activité, les tiers affectés et la différence entre coût privé et coût social.",
+   "exemples": [
+    "Une usine fictive vend sa production mais rejette des fumées qui endommagent des jardins voisins. Si ces dommages ne sont pas pris en compte dans son prix, ils constituent une externalité négative.",
+    "Des plantations mellifères peuvent bénéficier à des apiculteurs voisins sans transaction directe."
+   ],
+   "piege": "Un effet sur autrui n’est pas nécessairement une externalité négative : il peut être positif.",
+   "astuce_memoire": "Effet sur un tiers, hors prix complet.",
+   "quiz": [
+    {
+     "q": "Quel est un exemple d’externalité négative ?",
+     "choix": [
+      "Le prix directement payé par le client",
+      "Un remboursement prévu par contrat",
+      "Une pollution imposant un coût à des riverains"
+     ],
+     "rep": "Une pollution imposant un coût à des riverains",
+     "expl": "Le dommage subi par des tiers peut ne pas être intégré au prix."
+    },
+    {
+     "q": "Quel outil public peut chercher à réduire une pollution ?",
+     "choix": [
+      "Une taxe sur les émissions",
+      "La suppression automatique de toute information",
+      "L’interdiction de mesurer les rejets"
+     ],
+     "rep": "Une taxe sur les émissions",
+     "expl": "Une taxe peut inciter à réduire les émissions."
+    },
+    {
+     "q": "Une externalité peut-elle être positive ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement si personne ne bénéficie"
+     ],
+     "rep": "Oui",
+     "expl": "Une activité peut procurer des bénéfices non rémunérés à des tiers."
+    }
+   ],
+   "id": "REV-SES-1RE-11"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Biens communs et collectifs",
+   "emoji": "🌊",
+   "en_une_phrase": "La rivalité et l’excluabilité distinguent notamment biens communs et biens collectifs.",
+   "comprendre": "Certaines ressources diminuent quand elles sont utilisées ; d’autres peuvent être partagées sans se réduire pour chaque utilisateur. Il peut aussi être plus ou moins facile d’en exclure quelqu’un. Ces propriétés influencent les risques de surexploitation ou de sous-financement.",
+   "essentiel": [
+    "Un bien rival voit la consommation de l’un réduire la disponibilité pour les autres.",
+    "Un bien excluable peut être réservé à certains usagers.",
+    "Un bien commun est rival et difficilement excluable.",
+    "Un bien collectif pur est non rival et non excluable."
+   ],
+   "image_mentale": "Imagine deux questions : peut-on exclure ? l’usage réduit-il la ressource disponible ?",
+   "regle_ou_methode": "Examine séparément rivalité et possibilité d’exclusion avant de classer le bien.",
+   "exemples": [
+    "Dans une zone de pêche libre d’accès fictive, capturer un poisson le rend indisponible aux autres et il est difficile d’empêcher les pêcheurs d’entrer : la ressource est un bien commun. Des règles de capture peuvent limiter la surexploitation.",
+    "L’éclairage d’une rue est souvent utilisé comme exemple approché de bien collectif : il est difficile d’en exclure un passant et un passant de plus n’éteint pas la lumière des autres."
+   ],
+   "piege": "Un bien commun n’est pas simplement un bien appartenant juridiquement à l’État.",
+   "astuce_memoire": "Commun : rival, difficile à exclure ; collectif pur : ni l’un ni l’autre.",
+   "quiz": [
+    {
+     "q": "Quelle caractéristique définit la rivalité ?",
+     "choix": [
+      "L’usage par l’un réduit la disponibilité pour les autres",
+      "Tous les usagers sont obligatoirement exclus",
+      "Le bien est forcément payant"
+     ],
+     "rep": "L’usage par l’un réduit la disponibilité pour les autres",
+     "expl": "La rivalité concerne l’effet de l’usage sur les autres."
+    },
+    {
+     "q": "Une ressource halieutique difficile à réserver et dont les prises diminuent le stock est :",
+     "choix": [
+      "Un bien collectif pur",
+      "Un bien commun",
+      "Un bien sans rivalité"
+     ],
+     "rep": "Un bien commun",
+     "expl": "Elle est rivale et difficilement excluable."
+    },
+    {
+     "q": "Quelle propriété caractérise un bien collectif pur ?",
+     "choix": [
+      "Rivalité et exclusion facile",
+      "Exclusion facile et consommation individuelle",
+      "Non-rivalité et non-excluabilité"
+     ],
+     "rep": "Non-rivalité et non-excluabilité",
+     "expl": "Le bien collectif pur est non rival et non excluable."
+    }
+   ],
+   "id": "REV-SES-1RE-12"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Sélection adverse",
+   "emoji": "🚗",
+   "en_une_phrase": "La sélection adverse apparaît lorsqu’une information cachée avant l’échange modifie la qualité des biens ou des participants au marché.",
+   "comprendre": "Un vendeur de voiture connaît souvent mieux son état que l’acheteur. L’acheteur peut alors ne vouloir payer qu’un prix tenant compte du risque de mauvaise qualité. Ce prix peut décourager les vendeurs de bonnes voitures, ce qui réduit encore la qualité proposée.",
+   "essentiel": [
+    "L’asymétrie d’information signifie qu’un acteur possède une information pertinente que l’autre n’a pas.",
+    "La sélection adverse intervient avant la transaction.",
+    "Elle peut conduire au retrait de certains vendeurs ou acheteurs.",
+    "Une garantie ou un contrôle indépendant peut réduire l’asymétrie.",
+    "Dans certains modèles, la sélection adverse peut conduire à une absence d’échange sur tout le marché."
+   ],
+   "image_mentale": "Imagine un marché où les bonnes voitures quittent progressivement la place.",
+   "regle_ou_methode": "Identifie qui connaît la qualité, comment l’autre fixe son prix et qui accepte encore de vendre.",
+   "exemples": [
+    "Supposons que l’acheteur ne voie pas la qualité et propose 7 000 € pour une voiture. Les propriétaires de bonnes voitures demandent au moins 8 000 € et se retirent. Si l’acheteur anticipe alors surtout de mauvaises voitures, il peut réduire son offre : le marché des bonnes voitures peut disparaître.",
+    "Un contrôle technique indépendant peut fournir des informations supplémentaires, sans tout garantir."
+   ],
+   "piege": "La sélection adverse ne signifie pas que tous les vendeurs mentent.",
+   "astuce_memoire": "Information cachée avant échange, retrait possible.",
+   "quiz": [
+    {
+     "q": "Sur un marché de voitures d’occasion, quelle information est souvent asymétrique ?",
+     "choix": [
+      "L’acheteur connaît toujours mieux l’état de la voiture",
+      "Le vendeur connaît mieux l’état de la voiture",
+      "Les deux connaissent obligatoirement tous les défauts"
+     ],
+     "rep": "Le vendeur connaît mieux l’état de la voiture",
+     "expl": "Le vendeur dispose ici d’une information que l’acheteur n’a pas."
+    },
+    {
+     "q": "Quand intervient la sélection adverse ?",
+     "choix": [
+      "Uniquement après la fin du contrat",
+      "Uniquement lors du remboursement d’un emprunt public",
+      "Avant la transaction"
+     ],
+     "rep": "Avant la transaction",
+     "expl": "Elle résulte ici d’une information cachée avant l’échange."
+    },
+    {
+     "q": "Quel outil peut réduire l’asymétrie d’information ?",
+     "choix": [
+      "Un contrôle indépendant",
+      "Supprimer toute vérification",
+      "Cacher les caractéristiques du bien"
+     ],
+     "rep": "Un contrôle indépendant",
+     "expl": "Un contrôle apporte des informations à l’acheteur."
+    }
+   ],
+   "id": "REV-SES-1RE-13"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Aléa moral",
+   "emoji": "🛡️",
+   "en_une_phrase": "L’aléa moral apparaît lorsqu’un comportement difficile à observer change après la conclusion d’un contrat.",
+   "comprendre": "Une assurance modifie les conséquences financières d’un dommage. Dans certains cas, la personne assurée peut prendre moins de précautions, et l’assureur ne peut pas observer parfaitement ces choix. Ce mécanisme est possible, pas systématique.",
+   "essentiel": [
+    "L’aléa moral repose sur une information ou une action imparfaitement observable.",
+    "Il concerne ici un comportement après la signature.",
+    "Une franchise laisse une partie du coût à la charge de l’assuré.",
+    "Des règles de prévention peuvent limiter certains comportements risqués."
+   ],
+   "image_mentale": "Imagine un contrat signé puis des choix quotidiens que l’autre partie observe imparfaitement.",
+   "regle_ou_methode": "Repère le contrat, le comportement susceptible de changer et les limites d’observation.",
+   "exemples": [
+    "Une personne assure son vélo puis, dans cet exemple fictif, cesse de l’attacher car elle pense être remboursée. L’assureur ne voit pas chaque stationnement : ce changement peut illustrer un aléa moral.",
+    "Une franchise qui laisse une part du dommage à l’assuré peut inciter à conserver des précautions."
+   ],
+   "piege": "Être assuré ne signifie pas automatiquement devenir imprudent.",
+   "astuce_memoire": "Après le contrat : comportement imparfaitement observé.",
+   "quiz": [
+    {
+     "q": "Une personne assure son vélo puis cesse de l’attacher. Quand ce changement de comportement apparaît-il ?",
+     "choix": [
+      "Avant toute relation contractuelle seulement",
+      "Après la disparition de tout risque",
+      "Après la signature du contrat"
+     ],
+     "rep": "Après la signature du contrat",
+     "expl": "Le comportement étudié change après l’assurance."
+    },
+    {
+     "q": "Quel mécanisme peut inciter à maintenir des précautions ?",
+     "choix": [
+      "Une franchise",
+      "L’effacement de toute condition",
+      "La certitude de ne subir aucun dommage"
+     ],
+     "rep": "Une franchise",
+     "expl": "Une franchise laisse une partie du coût à l’assuré."
+    },
+    {
+     "q": "Tous les assurés changent-ils forcément leur comportement ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Oui, dès qu’ils lisent leur contrat"
+     ],
+     "rep": "Non",
+     "expl": "L’aléa moral est un risque possible, pas un comportement systématique."
+    }
+   ],
+   "id": "REV-SES-1RE-14"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Capacité et besoin",
+   "emoji": "💰",
+   "en_une_phrase": "Un agent a une capacité ou un besoin de financement selon ses ressources et ses dépenses d’investissement.",
+   "comprendre": "Un ménage répartit son revenu disponible entre consommation et épargne. Si son épargne dépasse son investissement, il dégage une capacité de financement ; dans le cas inverse, il peut avoir besoin de fonds. Un autre agent peut alors lui prêter ou investir.",
+   "essentiel": [
+    "Revenu disponible = consommation + épargne dans ce cadre simplifié.",
+    "Une capacité de financement peut couvrir le besoin d’un autre agent.",
+    "Un ménage comme une entreprise peut connaître l’une ou l’autre situation.",
+    "Le financement met en relation ressources disponibles et projets."
+   ],
+   "image_mentale": "Imagine deux réservoirs reliés : capacité disponible et besoin à financer.",
+   "regle_ou_methode": "Calcule l’épargne, compare-la à l’investissement puis détermine l’écart.",
+   "exemples": [
+    "Un ménage dispose de 30 000 € de revenu annuel et consomme 25 000 €. Son épargne est 5 000 €. S’il investit 3 000 €, il dégage une capacité de financement de 2 000 € dans ce modèle simplifié.",
+    "Avec 4 000 € d’épargne et 7 000 € d’investissement, le besoin est de 3 000 €."
+   ],
+   "piege": "Épargne positive ne signifie pas forcément capacité de financement : l’investissement peut être plus élevé.",
+   "astuce_memoire": "Épargne moins investissement : capacité si le résultat est positif.",
+   "quiz": [
+    {
+     "q": "Pour 30 000 € de revenu disponible et 25 000 € de consommation, quelle est l’épargne ?",
+     "choix": [
+      "5 000 €",
+      "3 000 €",
+      "55 000 €"
+     ],
+     "rep": "5 000 €",
+     "expl": "L’épargne est la différence entre revenu disponible et consommation."
+    },
+    {
+     "q": "Si l’épargne est 4 000 € et l’investissement 7 000 €, quel est le besoin ?",
+     "choix": [
+      "4 000 €",
+      "3 000 €",
+      "11 000 €"
+     ],
+     "rep": "3 000 €",
+     "expl": "L’investissement dépasse l’épargne de 3 000 €."
+    },
+    {
+     "q": "Une épargne positive suffit-elle toujours à dégager une capacité de financement ?",
+     "choix": [
+      "Oui",
+      "Oui, dès que le revenu augmente",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Un investissement supérieur à l’épargne crée un besoin de financement."
+    }
+   ],
+   "id": "REV-SES-1RE-15"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Financer une entreprise",
+   "emoji": "🏢",
+   "en_une_phrase": "Une entreprise peut financer ses projets avec ses ressources propres ou des fonds externes.",
+   "comprendre": "Pour acheter une machine, une entreprise compare ses ressources disponibles et le coût du projet. Elle peut utiliser son autofinancement ou chercher un emprunt ou des investisseurs. L’excédent brut d’exploitation mesure une ressource dégagée par son activité productive avant certaines charges.",
+   "essentiel": [
+    "L’autofinancement utilise des ressources internes conservées par l’entreprise.",
+    "L’emprunt bancaire crée une dette à rembourser.",
+    "Une action est un titre de propriété et une obligation est un titre de dette.",
+    "L’excédent brut d’exploitation est calculé avant notamment les intérêts et amortissements."
+   ],
+   "image_mentale": "Imagine une machine financée par une caisse interne et par des fonds venus de l’extérieur.",
+   "regle_ou_methode": "Calcule le coût du projet, déduis l’autofinancement puis identifie la ressource externe nécessaire.",
+   "exemples": [
+    "Une machine coûte 20 000 €. L’entreprise utilise 8 000 € de ressources internes : il reste 20 000 − 8 000 = 12 000 € à financer, par exemple par un emprunt.",
+    "Acheter une action donne une part du capital ; acheter une obligation revient à détenir une créance selon les conditions du titre."
+   ],
+   "piege": "Une action n’est pas une obligation : leurs droits et risques diffèrent.",
+   "astuce_memoire": "Interne ou externe ; propriété ou dette.",
+   "quiz": [
+    {
+     "q": "Un projet coûte 20 000 € et l’entreprise autofinance 8 000 €. Quel montant reste à financer ?",
+     "choix": [
+      "28 000 €",
+      "12 000 €",
+      "8 000 €"
+     ],
+     "rep": "12 000 €",
+     "expl": "20 000 − 8 000 = 12 000 €."
+    },
+    {
+     "q": "Que représente une action ?",
+     "choix": [
+      "Une dette systématiquement remboursée à date fixe",
+      "Une unité physique de production",
+      "Une part de propriété du capital"
+     ],
+     "rep": "Une part de propriété du capital",
+     "expl": "Une action est un titre de propriété."
+    },
+    {
+     "q": "Que représente une obligation ?",
+     "choix": [
+      "Un titre de dette",
+      "Une part de propriété équivalente à une action",
+      "Une subvention automatique"
+     ],
+     "rep": "Un titre de dette",
+     "expl": "Une obligation représente une créance selon ses conditions."
+    }
+   ],
+   "id": "REV-SES-1RE-16"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Taux d’intérêt",
+   "emoji": "📈",
+   "en_une_phrase": "Le taux d’intérêt mesure notamment le prix d’un emprunt pour l’emprunteur et une rémunération pour le prêteur.",
+   "comprendre": "Prêter une somme revient à renoncer temporairement à son usage. L’intérêt est un coût pour l’emprunteur et une rémunération pour le prêteur, selon les conditions du contrat. Comparer des taux demande aussi de regarder la durée et les frais.",
+   "essentiel": [
+    "Le taux exprime généralement un pourcentage d’un capital sur une période.",
+    "À taux simple, intérêt = capital × taux × durée en années.",
+    "Les frais et les modalités de remboursement peuvent modifier le coût total.",
+    "Le taux résulte de conditions de financement et de risques variés."
+   ],
+   "image_mentale": "Imagine une somme prêtée qui revient accompagnée d’un coût calculé sur une durée.",
+   "regle_ou_methode": "Convertis le taux en décimal, précise la durée puis applique la formule indiquée.",
+   "exemples": [
+    "Pour un prêt fictif de 1 000 € à intérêt simple de 5 % sur un an, calcule 1 000 × 0,05 × 1 = 50 €. Sans autre frais, le remboursement total est de 1 050 €.",
+    "Pour 2 000 € à 3 % simple pendant un an, l’intérêt vaut 60 €."
+   ],
+   "piege": "Comparer seulement les pourcentages sans vérifier durée et frais peut induire en erreur.",
+   "astuce_memoire": "Capital, taux décimal, durée.",
+   "quiz": [
+    {
+     "q": "Quel intérêt simple produit 1 000 € à 5 % pendant un an ?",
+     "choix": [
+      "5 €",
+      "500 €",
+      "50 €"
+     ],
+     "rep": "50 €",
+     "expl": "1 000 × 0,05 = 50 €."
+    },
+    {
+     "q": "Pour un prêt de 1 000 € à 5 % d’intérêt simple sur un an, sans frais, quel est le remboursement total ?",
+     "choix": [
+      "1 050 €",
+      "1 000 €",
+      "950 €"
+     ],
+     "rep": "1 050 €",
+     "expl": "Le capital et les 50 € d’intérêt sont remboursés."
+    },
+    {
+     "q": "Que faut-il aussi vérifier pour comparer deux crédits ?",
+     "choix": [
+      "Uniquement le nom du prêteur",
+      "La durée et les frais",
+      "Uniquement la couleur du contrat"
+     ],
+     "rep": "La durée et les frais",
+     "expl": "La durée et les frais peuvent modifier le coût total."
+    }
+   ],
+   "id": "REV-SES-1RE-17"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Déficit et dette publique",
+   "emoji": "🏛️",
+   "en_une_phrase": "Le solde budgétaire compare les recettes et les dépenses d’une période ; un déficit peut nécessiter un emprunt.",
+   "comprendre": "Comme pour un budget familial, une administration publique reçoit des recettes et engage des dépenses. Si les dépenses dépassent les recettes sur une période, le solde est déficitaire. La dette est un stock accumulé à distinguer de ce solde annuel.",
+   "essentiel": [
+    "Solde budgétaire = recettes − dépenses.",
+    "Un solde négatif est un déficit.",
+    "Le déficit de l’État est financé notamment par l’emprunt.",
+    "Dette et déficit sont respectivement un stock et un flux."
+   ],
+   "image_mentale": "Imagine un robinet annuel de déficit alimentant un réservoir de dette.",
+   "regle_ou_methode": "Soustrais les dépenses des recettes, puis interprète le signe du résultat.",
+   "exemples": [
+    "Si les recettes annuelles fictives sont 90 et les dépenses 100, le solde est 90 − 100 = −10 : le déficit est de 10. Ce montant concerne la période, tandis que la dette est le stock d’emprunts restant à rembourser.",
+    "Avec des recettes de 110 et des dépenses de 100, le solde est un excédent de 10."
+   ],
+   "piege": "Un déficit annuel de 10 ne signifie pas que la dette totale est de 10.",
+   "astuce_memoire": "Déficit : période ; dette : stock.",
+   "quiz": [
+    {
+     "q": "Quel est le solde si les recettes sont 90 et les dépenses 100 ?",
+     "choix": [
+      "−10",
+      "+10",
+      "190"
+     ],
+     "rep": "−10",
+     "expl": "Le solde vaut recettes moins dépenses : −10."
+    },
+    {
+     "q": "Que désigne un déficit ?",
+     "choix": [
+      "La totalité de la dette accumulée",
+      "Des dépenses supérieures aux recettes sur une période",
+      "Des recettes nécessairement nulles"
+     ],
+     "rep": "Des dépenses supérieures aux recettes sur une période",
+     "expl": "Un déficit correspond à un solde budgétaire négatif."
+    },
+    {
+     "q": "La dette est-elle identique au déficit annuel ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, si les dépenses augmentent",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "La dette est un stock tandis que le déficit est un flux sur une période."
+    }
+   ],
+   "id": "REV-SES-1RE-18"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Dépense publique et activité",
+   "emoji": "🔁",
+   "en_une_phrase": "Une hausse des dépenses publiques peut stimuler la demande et avoir d’autres effets selon le contexte.",
+   "comprendre": "Quand une administration commande des travaux, elle verse des revenus à des entreprises et à leurs salariés. Une partie peut être dépensée à son tour. Mais un financement par emprunt peut aussi, dans certains contextes, concurrencer le financement privé : c’est un effet d’éviction possible.",
+   "essentiel": [
+    "Une dépense publique peut soutenir la demande.",
+    "L’effet sur l’activité dépend des conditions économiques.",
+    "Un emprunt public peut, dans certains contextes, contribuer à augmenter le coût de financement privé.",
+    "L’effet d’éviction n’est pas automatique."
+   ],
+   "image_mentale": "Imagine une commande publique créant des revenus et un marché du financement sollicité par plusieurs acteurs.",
+   "regle_ou_methode": "Identifie la dépense, son financement et les effets possibles dans le contexte étudié.",
+   "exemples": [
+    "Une collectivité passe une commande fictive de 100 000 € à une entreprise locale. Cette commande augmente directement la demande adressée à l’entreprise ; les effets ultérieurs dépendent de la situation et des dépenses des bénéficiaires.",
+    "Si un recours accru à l’emprunt public augmente les taux dans un contexte donné, certains projets privés peuvent devenir moins rentables à financer."
+   ],
+   "piege": "Une dépense publique ne produit ni la même relance ni le même effet d’éviction dans toutes les situations.",
+   "astuce_memoire": "Demande soutenue, financement à examiner.",
+   "quiz": [
+    {
+     "q": "Quel effet direct peut avoir une commande publique sur l’entreprise qui la reçoit ?",
+     "choix": [
+      "Supprimer automatiquement tous ses coûts",
+      "Augmenter la demande qui lui est adressée",
+      "Garantir la hausse de tous les prix"
+     ],
+     "rep": "Augmenter la demande qui lui est adressée",
+     "expl": "La commande constitue une demande pour ses biens ou services."
+    },
+    {
+     "q": "Que désigne un effet d’éviction possible ?",
+     "choix": [
+      "La disparition de toute dépense publique",
+      "Une hausse automatique de tous les revenus",
+      "Une réduction de certains financements ou investissements privés liée au financement public"
+     ],
+     "rep": "Une réduction de certains financements ou investissements privés liée au financement public",
+     "expl": "Dans certains contextes, la concurrence pour le financement peut réduire l’investissement privé."
+    },
+    {
+     "q": "L’effet d’éviction est-il automatique dans tous les contextes ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, quel que soit le mode de financement"
+     ],
+     "rep": "Non",
+     "expl": "Son existence et son ampleur dépendent du contexte."
+    }
+   ],
+   "id": "REV-SES-1RE-19"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Excédent brut d’exploitation",
+   "emoji": "🧮",
+   "en_une_phrase": "L’excédent brut d’exploitation mesure une ressource issue de l’activité de production avant certaines charges financières et l’amortissement.",
+   "comprendre": "Une entreprise crée de la valeur ajoutée en produisant. Une partie rémunère les salariés et couvre des impôts sur la production ; des subventions d’exploitation peuvent s’y ajouter. Le solde obtenu constitue un indicateur de l’excédent d’exploitation.",
+   "essentiel": [
+    "Dans une présentation simplifiée, EBE = valeur ajoutée + subventions d’exploitation − rémunérations des salariés − impôts sur la production.",
+    "L’EBE est calculé avant notamment les intérêts et amortissements.",
+    "Il contribue aux ressources pouvant financer l’activité.",
+    "Il ne se confond pas automatiquement avec le bénéfice net."
+   ],
+   "image_mentale": "Imagine la valeur ajoutée répartie entre rémunérations, impôts de production et excédent.",
+   "regle_ou_methode": "Ajoute les subventions à la valeur ajoutée, puis retranche salaires et cotisations ainsi qu’impôts sur la production.",
+   "exemples": [
+    "Une entreprise fictive crée 100 000 € de valeur ajoutée, reçoit 5 000 € de subventions, verse 65 000 € de rémunérations et paie 10 000 € d’impôts sur la production. Son EBE vaut 100 000 + 5 000 − 65 000 − 10 000 = 30 000 €.",
+    "Avec 80 000 € de valeur ajoutée, aucune subvention, 50 000 € de rémunérations et 5 000 € d’impôts de production, l’EBE vaut 25 000 €."
+   ],
+   "piege": "L’EBE ne tient pas encore compte de toutes les charges qui interviennent dans le bénéfice net.",
+   "astuce_memoire": "Valeur ajoutée et subventions, moins rémunérations et impôts de production.",
+   "quiz": [
+    {
+     "q": "Quel EBE résulte de 100 000 € de valeur ajoutée, 5 000 € de subventions, 65 000 € de rémunérations et 10 000 € d’impôts de production ?",
+     "choix": [
+      "40 000 €",
+      "20 000 €",
+      "30 000 €"
+     ],
+     "rep": "30 000 €",
+     "expl": "100 000 + 5 000 − 65 000 − 10 000 = 30 000 €."
+    },
+    {
+     "q": "L’EBE est-il toujours identique au bénéfice net ?",
+     "choix": [
+      "Non",
+      "Oui, par définition",
+      "Oui, après paiement immédiat de toutes les dettes"
+     ],
+     "rep": "Non",
+     "expl": "D’autres charges et produits interviennent dans le résultat net."
+    },
+    {
+     "q": "Que devient l’EBE si, toutes choses égales par ailleurs, les rémunérations augmentent ?",
+     "choix": [
+      "Il augmente",
+      "Il diminue",
+      "Il reste obligatoirement inchangé"
+     ],
+     "rep": "Il diminue",
+     "expl": "Les rémunérations sont retranchées dans le calcul simplifié."
+    }
+   ],
+   "id": "REV-SES-1RE-20"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Fonctions et formes de monnaie",
+   "emoji": "💳",
+   "en_une_phrase": "La monnaie sert notamment à échanger, mesurer les prix et conserver temporairement du pouvoir d’achat.",
+   "comprendre": "Sans moyen de paiement commun, il faudrait que deux personnes souhaitent échanger précisément leurs biens au même moment. La monnaie facilite les transactions et sert d’unité de compte. Elle peut aussi être conservée pour des achats futurs, même si son pouvoir d’achat varie.",
+   "essentiel": [
+    "La monnaie est intermédiaire des échanges.",
+    "Elle sert d’unité de compte pour exprimer les prix.",
+    "Elle peut servir de réserve de valeur.",
+    "Billets et pièces sont de la monnaie fiduciaire ; les dépôts à vue sont de la monnaie scripturale."
+   ],
+   "image_mentale": "Imagine un outil commun reliant achats, étiquettes de prix et épargne disponible.",
+   "regle_ou_methode": "Repère si la monnaie sert à payer, à mesurer un prix ou à conserver une valeur.",
+   "exemples": [
+    "Un élève paie un cahier avec une pièce : la monnaie sert d’intermédiaire des échanges. Le prix affiché en euros utilise aussi la fonction d’unité de compte.",
+    "Un dépôt à vue permet de conserver temporairement une somme et constitue de la monnaie scripturale."
+   ],
+   "piege": "Une carte de paiement est un instrument permettant d’utiliser de la monnaie scripturale ; ce n’est pas une forme de monnaie distincte.",
+   "astuce_memoire": "Échanger, compter, conserver.",
+   "quiz": [
+    {
+     "q": "Quelle fonction de la monnaie permet de comparer des prix ?",
+     "choix": [
+      "Unité de compte",
+      "Intermédiaire des échanges uniquement",
+      "Fabrication des biens"
+     ],
+     "rep": "Unité de compte",
+     "expl": "Les prix sont exprimés dans une unité monétaire commune."
+    },
+    {
+     "q": "Quelle forme de monnaie correspond aux dépôts à vue ?",
+     "choix": [
+      "Les seules pièces métalliques",
+      "La monnaie scripturale",
+      "Une action de société"
+     ],
+     "rep": "La monnaie scripturale",
+     "expl": "Les dépôts à vue constituent de la monnaie scripturale."
+    },
+    {
+     "q": "Une carte bancaire est-elle elle-même une forme de monnaie distincte des dépôts ?",
+     "choix": [
+      "Oui, elle crée une nouvelle unité monétaire",
+      "Oui, elle est un billet",
+      "Non, c’est un instrument de paiement"
+     ],
+     "rep": "Non, c’est un instrument de paiement",
+     "expl": "La carte permet d’utiliser des fonds inscrits sur un compte."
+    }
+   ],
+   "id": "REV-SES-1RE-21"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Crédit et création monétaire",
+   "emoji": "🏦",
+   "en_une_phrase": "Un crédit bancaire peut créer de la monnaie scripturale en inscrivant un dépôt au compte de l’emprunteur.",
+   "comprendre": "Une banque qui accorde un crédit inscrit simultanément une créance sur l’emprunteur et un dépôt à son compte. Le dépôt augmente les moyens de paiement de l’emprunteur. Lorsque le capital du crédit est remboursé avec des dépôts, la monnaie correspondante est détruite.",
+   "essentiel": [
+    "Un prêt bancaire peut créer un dépôt nouveau.",
+    "Au bilan de la banque, le prêt est une créance et le dépôt une dette envers le client.",
+    "Le remboursement du capital réduit le crédit et le dépôt utilisés pour rembourser.",
+    "La création de crédit est soumise à des contraintes et à l’évaluation du risque."
+   ],
+   "image_mentale": "Imagine deux inscriptions simultanées : prêt à l’actif de la banque et dépôt à son passif.",
+   "regle_ou_methode": "Suis les deux inscriptions au moment du prêt, puis distingue le remboursement du capital du paiement des intérêts.",
+   "exemples": [
+    "Une banque accorde un crédit fictif de 1 000 € à une entreprise et inscrit 1 000 € sur son compte. La créance de la banque augmente de 1 000 € et son dépôt dû au client augmente de 1 000 € : de la monnaie scripturale est créée.",
+    "Quand 200 € de capital sont remboursés à cette banque à partir d’un dépôt, le crédit restant et le dépôt utilisé diminuent de 200 € dans ce modèle simplifié."
+   ],
+   "piege": "Le remboursement des intérêts et celui du capital ne sont pas la même opération comptable.",
+   "astuce_memoire": "Crédit et dépôt naissent ensemble dans ce modèle.",
+   "quiz": [
+    {
+     "q": "Lors de l’octroi d’un crédit de 1 000 € inscrit sur le compte du client, quel dépôt est créé ?",
+     "choix": [
+      "100 €",
+      "1 000 €",
+      "Aucun dépôt par hypothèse"
+     ],
+     "rep": "1 000 €",
+     "expl": "La banque crédite le compte du client de 1 000 €."
+    },
+    {
+     "q": "Au bilan de la banque, que représente le crédit accordé ?",
+     "choix": [
+      "Une dette de la banque envers l’emprunteur",
+      "Une recette fiscale de l’État",
+      "Une créance sur l’emprunteur"
+     ],
+     "rep": "Une créance sur l’emprunteur",
+     "expl": "Le prêt est une somme due à la banque."
+    },
+    {
+     "q": "Dans le modèle présenté, que provoque le remboursement de 200 € de capital à partir d’un dépôt ?",
+     "choix": [
+      "La diminution du dépôt et du crédit de 200 €",
+      "La création de 200 € supplémentaires de dépôt",
+      "La disparition de tous les comptes bancaires"
+     ],
+     "rep": "La diminution du dépôt et du crédit de 200 €",
+     "expl": "Le dépôt et le capital restant dû diminuent chacun de 200 €."
+    }
+   ],
+   "id": "REV-SES-1RE-22"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Banque centrale et taux",
+   "emoji": "🏦",
+   "en_une_phrase": "La banque centrale influence les conditions de financement notamment en pilotant ses taux d’intérêt à court terme.",
+   "comprendre": "Les banques se financent et échangent de la monnaie centrale. Les décisions de la banque centrale influencent les taux auxquels elles peuvent se refinancer, puis parfois les taux proposés aux clients. Ces effets se transmettent à l’activité et aux prix avec des délais et selon le contexte.",
+   "essentiel": [
+    "La banque centrale intervient sur le marché monétaire.",
+    "Ses taux directeurs influencent les conditions de refinancement des banques.",
+    "Une hausse des taux peut freiner le crédit et la demande.",
+    "L’effet sur l’activité et l’inflation dépend d’autres facteurs et de délais."
+   ],
+   "image_mentale": "Imagine une chaîne : taux directeur, conditions de crédit, dépenses, activité et prix.",
+   "regle_ou_methode": "Suis les effets possibles d’une modification des taux sans les présenter comme instantanés ou certains.",
+   "exemples": [
+    "Si les taux directeurs augmentent, une banque peut relever les taux de nouveaux crédits. Certains projets deviennent plus coûteux à financer ; la demande peut alors ralentir.",
+    "Une baisse des taux peut faciliter certains emprunts, selon la situation des banques et des emprunteurs."
+   ],
+   "piege": "La banque centrale ne fixe pas directement le prix de chaque produit ni le taux de chaque crédit.",
+   "astuce_memoire": "Taux, crédit, demande : effets variables et différés.",
+   "quiz": [
+    {
+     "q": "Que peut provoquer une hausse des taux directeurs ?",
+     "choix": [
+      "Une baisse automatique du prix de chaque bien",
+      "L’annulation immédiate de toutes les dettes",
+      "Un renchérissement de certains crédits"
+     ],
+     "rep": "Un renchérissement de certains crédits",
+     "expl": "La hausse peut se transmettre aux conditions de crédit."
+    },
+    {
+     "q": "Les effets de la politique monétaire sont-ils immédiats et identiques en toute situation ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, dès la première minute"
+     ],
+     "rep": "Non",
+     "expl": "La transmission dépend du contexte et comporte des délais."
+    },
+    {
+     "q": "La banque centrale fixe-t-elle directement le prix de chaque produit ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, par la définition du solde budgétaire"
+     ],
+     "rep": "Non",
+     "expl": "Elle influence les conditions monétaires sans fixer chaque prix individuel."
+    }
+   ],
+   "id": "REV-SES-1RE-23"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Socialisation différenciée",
+   "emoji": "🧩",
+   "en_une_phrase": "Les apprentissages sociaux contribuent à expliquer des différences de comportements et d’aspirations.",
+   "comprendre": "Tu apprends des façons de parler, de jouer ou de te projeter en vivant avec d’autres personnes. La socialisation est ce processus d’apprentissage et d’intériorisation. Elle varie selon les milieux et les expériences, sans déterminer mécaniquement chaque parcours.",
+   "essentiel": [
+    "La socialisation transmet notamment des normes, des valeurs et des habitudes.",
+    "Les expériences familiales, scolaires et amicales peuvent différer.",
+    "Les attentes liées au genre et au milieu social peuvent orienter les pratiques.",
+    "Les individus ne suivent pas tous le même parcours."
+   ],
+   "image_mentale": "Imagine une personne recevant des influences de plusieurs entourages.",
+   "regle_ou_methode": "Repère une pratique, les expériences qui la favorisent et la diversité possible des trajectoires.",
+   "exemples": [
+    "Dans une famille fictive où les enfants fréquentent souvent une bibliothèque, un enfant découvre régulièrement des livres. Cette expérience peut favoriser une pratique de lecture, sans garantir qu’il l’adoptera.",
+    "Des attentes différentes envers les filles et les garçons peuvent influencer les activités encouragées."
+   ],
+   "piege": "Une différence statistique entre groupes ne permet pas de prédire le comportement de chaque individu.",
+   "astuce_memoire": "Influences situées, expériences variées.",
+   "quiz": [
+    {
+     "q": "Quel mécanisme aide à comprendre l’acquisition d’habitudes ?",
+     "choix": [
+      "La socialisation",
+      "La seule couleur des vêtements",
+      "L’absence d’interactions"
+     ],
+     "rep": "La socialisation",
+     "expl": "La socialisation correspond à des apprentissages sociaux."
+    },
+    {
+     "q": "Une attente liée au genre peut-elle orienter une activité encouragée ?",
+     "choix": [
+      "Non, jamais",
+      "Oui",
+      "Seulement si tous les individus réagissent pareil"
+     ],
+     "rep": "Oui",
+     "expl": "Des attentes sociales peuvent influencer les possibilités proposées."
+    },
+    {
+     "q": "Une tendance moyenne dans un groupe détermine-t-elle chaque individu ?",
+     "choix": [
+      "Oui, sans exception",
+      "Oui, si le groupe est nombreux",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Les parcours individuels restent variés."
+    }
+   ],
+   "id": "REV-SES-1RE-24"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Configurations familiales",
+   "emoji": "🏠",
+   "en_une_phrase": "Les configurations familiales modifient les conditions concrètes de socialisation.",
+   "comprendre": "Les enfants ne vivent pas tous dans la même organisation familiale. La composition du foyer, les ressources, les échanges et les événements familiaux peuvent modifier les occasions d’apprentissage. Ces facteurs se combinent et leurs effets ne sont pas automatiques.",
+   "essentiel": [
+    "La configuration familiale désigne l’organisation concrète des relations familiales.",
+    "Les ressources disponibles et le temps partagé peuvent varier.",
+    "Les frères, sœurs ou adultes du foyer peuvent transmettre des pratiques différentes.",
+    "Une même configuration peut recouvrir des situations diverses."
+   ],
+   "image_mentale": "Imagine plusieurs maisons aux relations et aux activités différentes.",
+   "regle_ou_methode": "Décris les personnes en interaction, leurs pratiques et les ressources disponibles sans généraliser.",
+   "exemples": [
+    "Dans une famille fictive, une sœur plus âgée aide régulièrement un enfant à découvrir des activités musicales. Cette relation constitue une occasion d’apprentissage parmi d’autres.",
+    "Un changement de foyer peut modifier les horaires, les contacts et certaines habitudes."
+   ],
+   "piege": "La composition d’une famille ne permet pas, à elle seule, de déduire les résultats scolaires d’un enfant.",
+   "astuce_memoire": "Relations et ressources comptent avec le contexte.",
+   "quiz": [
+    {
+     "q": "Quel élément peut modifier les conditions de socialisation ?",
+     "choix": [
+      "Uniquement la date de naissance",
+      "Les relations et ressources au sein du foyer",
+      "Uniquement la météo mondiale"
+     ],
+     "rep": "Les relations et ressources au sein du foyer",
+     "expl": "Les échanges et ressources organisent des expériences différentes."
+    },
+    {
+     "q": "Deux familles de même composition ont-elles nécessairement les mêmes pratiques ?",
+     "choix": [
+      "Oui",
+      "Oui, si elles vivent dans la même ville",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Leurs ressources et relations peuvent différer."
+    },
+    {
+     "q": "Une sœur qui transmet une pratique musicale participe-t-elle à la socialisation ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement si elle est enseignante"
+     ],
+     "rep": "Oui",
+     "expl": "Les proches peuvent transmettre des habitudes et des savoirs."
+    }
+   ],
+   "id": "REV-SES-1RE-25"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Socialisation tout au long de la vie",
+   "emoji": "🔄",
+   "en_une_phrase": "La socialisation primaire est suivie de socialisations secondaires dans de nouveaux univers.",
+   "comprendre": "Tu n’apprends pas seulement pendant l’enfance. En entrant dans une association ou un emploi, tu peux acquérir d’autres façons de faire. Ces apprentissages peuvent prolonger, transformer ou parfois contredire les premiers.",
+   "essentiel": [
+    "La socialisation primaire intervient principalement pendant l’enfance.",
+    "Les socialisations secondaires se poursuivent ensuite.",
+    "Le travail, la vie conjugale ou l’engagement politique peuvent être des cadres de socialisation secondaire.",
+    "Les nouveaux apprentissages se combinent aux expériences antérieures."
+   ],
+   "image_mentale": "Imagine plusieurs chapitres d’une vie reliés par des flèches.",
+   "regle_ou_methode": "Situe la période et l’univers d’apprentissage, puis précise le lien avec les habitudes déjà acquises.",
+   "exemples": [
+    "Une personne commence un emploi et apprend les règles d’échange de son équipe. Cet apprentissage professionnel correspond à une socialisation secondaire.",
+    "Un enfant apprend les usages du repas au sein de sa famille : c’est une expérience de socialisation primaire."
+   ],
+   "piege": "Secondaire ne signifie pas sans importance : cette socialisation peut transformer des habitudes.",
+   "astuce_memoire": "Primaire : enfance ; secondaire : nouveaux univers ensuite.",
+   "quiz": [
+    {
+     "q": "Apprendre les usages d’un nouveau métier relève surtout de :",
+     "choix": [
+      "La socialisation prénatale",
+      "L’absence de socialisation",
+      "La socialisation secondaire"
+     ],
+     "rep": "La socialisation secondaire",
+     "expl": "Le milieu professionnel est une instance de socialisation secondaire."
+    },
+    {
+     "q": "La socialisation s’arrête-t-elle à la fin de l’enfance ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, sauf en cas de déménagement"
+     ],
+     "rep": "Non",
+     "expl": "Des apprentissages sociaux se poursuivent à l’âge adulte."
+    },
+    {
+     "q": "Les nouvelles influences effacent-elles nécessairement les anciennes ?",
+     "choix": [
+      "Oui, toujours",
+      "Non, elles peuvent aussi les prolonger ou les modifier",
+      "Oui, dès le premier jour"
+     ],
+     "rep": "Non, elles peuvent aussi les prolonger ou les modifier",
+     "expl": "Les expériences peuvent se combiner ou entrer en tension."
+    }
+   ],
+   "id": "REV-SES-1RE-26"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Trajectoires improbables",
+   "emoji": "🛤️",
+   "en_une_phrase": "La pluralité des influences socialisatrices contribue à expliquer des trajectoires individuelles peu fréquentes.",
+   "comprendre": "Une personne peut recevoir des influences différentes à la maison, à l’école et dans ses activités. Certaines se renforcent, d’autres se contredisent. Leur combinaison aide à comprendre pourquoi un parcours peut s’écarter des tendances les plus fréquentes.",
+   "essentiel": [
+    "Une trajectoire improbable est peu fréquente au regard d’une tendance observée.",
+    "Elle n’est pas impossible.",
+    "Plusieurs influences peuvent soutenir des aspirations différentes.",
+    "Une explication sociologique étudie les contextes et les relations concrètes."
+   ],
+   "image_mentale": "Imagine plusieurs chemins qui se croisent avant d’aboutir à une trajectoire.",
+   "regle_ou_methode": "Compare la trajectoire à une tendance, puis identifie les influences qui ont pu favoriser cet écart.",
+   "exemples": [
+    "Dans une situation fictive, une élève découvre une discipline grâce à une enseignante et à un club, alors que cette voie est peu fréquente dans son entourage. Ces rencontres peuvent contribuer à expliquer son orientation.",
+    "Un groupe d’amis peut proposer des activités différentes de celles pratiquées en famille."
+   ],
+   "piege": "Improbable ne veut pas dire anormal ni inexplicable.",
+   "astuce_memoire": "Tendance collective et influences individuelles se complètent.",
+   "quiz": [
+    {
+     "q": "Que signifie ici une trajectoire improbable ?",
+     "choix": [
+      "Un parcours peu fréquent au regard d’une tendance",
+      "Un parcours impossible",
+      "Un parcours sans aucune influence sociale"
+     ],
+     "rep": "Un parcours peu fréquent au regard d’une tendance",
+     "expl": "Improbable décrit une fréquence, pas une impossibilité."
+    },
+    {
+     "q": "Comment plusieurs influences peuvent-elles agir ?",
+     "choix": [
+      "Elles sont toujours identiques",
+      "Elles peuvent se renforcer ou se contredire",
+      "Elles disparaissent toutes après l’enfance"
+     ],
+     "rep": "Elles peuvent se renforcer ou se contredire",
+     "expl": "Les contextes de socialisation sont pluriels."
+    },
+    {
+     "q": "Que faut-il examiner pour comprendre un parcours atypique ?",
+     "choix": [
+      "Un seul trait supposé de la personne",
+      "Une règle qui s’appliquerait à tous sans exception",
+      "Les relations et les contextes rencontrés"
+     ],
+     "rep": "Les relations et les contextes rencontrés",
+     "expl": "L’enquête étudie des expériences situées."
+    }
+   ],
+   "id": "REV-SES-1RE-27"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Diversité des liens sociaux",
+   "emoji": "🤝",
+   "en_une_phrase": "Les liens sociaux relient les personnes à différents groupes et apportent protection et reconnaissance.",
+   "comprendre": "Tu peux avoir des liens avec ta famille, tes amis, tes camarades et d’autres groupes. Ces relations procurent parfois de l’aide, de la confiance ou le sentiment d’être reconnu. Leur contenu et leur solidité varient.",
+   "essentiel": [
+    "La famille, les pairs, le travail et les associations créent des liens différents.",
+    "La protection peut prendre la forme d’une aide matérielle ou morale.",
+    "La reconnaissance concerne notamment le fait de compter pour autrui.",
+    "Une personne appartient souvent à plusieurs groupes."
+   ],
+   "image_mentale": "Imagine un réseau de points reliés par des fils de couleurs différentes.",
+   "regle_ou_methode": "Identifie le groupe, la relation et les ressources ou marques de reconnaissance associées.",
+   "exemples": [
+    "Une personne aide un proche à remplir un dossier. Cette entraide illustre une protection fournie par un lien familial.",
+    "Dans une association, être écouté et participer aux décisions peut apporter de la reconnaissance."
+   ],
+   "piege": "Un grand nombre de contacts ne garantit pas que tous les liens soient soutenants.",
+   "astuce_memoire": "Liens : protection et reconnaissance.",
+   "quiz": [
+    {
+     "q": "Quelle situation illustre une protection par un lien ?",
+     "choix": [
+      "Un contact inconnu ne répond jamais",
+      "Un proche aide à accomplir une démarche",
+      "Une personne est exclue du groupe"
+     ],
+     "rep": "Un proche aide à accomplir une démarche",
+     "expl": "L’aide concrète est une forme de protection."
+    },
+    {
+     "q": "Une personne peut-elle appartenir à plusieurs groupes ?",
+     "choix": [
+      "Non",
+      "Seulement à sa famille",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Les appartenances familiales, amicales et associatives peuvent coexister."
+    },
+    {
+     "q": "Avoir beaucoup de contacts garantit-il un soutien effectif ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, dès dix contacts"
+     ],
+     "rep": "Non",
+     "expl": "La qualité des relations et l’aide disponible comptent."
+    }
+   ],
+   "id": "REV-SES-1RE-28"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Classer les professions",
+   "emoji": "🗂️",
+   "en_une_phrase": "Les catégories socioprofessionnelles regroupent des personnes selon des critères liés à leur activité.",
+   "comprendre": "Pour comparer de grands ensembles, une enquête a besoin de catégories. La nomenclature des professions et catégories socioprofessionnelles tient compte de la situation professionnelle actuelle ou, selon les cas, ancienne. Le statut, la profession et la qualification figurent parmi les critères utiles.",
+   "essentiel": [
+    "PCS signifie professions et catégories socioprofessionnelles.",
+    "Le statut distingue notamment indépendants et salariés.",
+    "Pour les salariés, la qualification et la position professionnelle interviennent.",
+    "Une catégorie regroupe des situations proches sans rendre tous les parcours identiques."
+   ],
+   "image_mentale": "Imagine une bibliothèque de dossiers classés par plusieurs étiquettes professionnelles.",
+   "regle_ou_methode": "Repère profession, statut et position, puis utilise la nomenclature adaptée.",
+   "exemples": [
+    "Pour classer deux personnes exerçant dans un atelier, relève d’abord leur statut : l’une est indépendante, l’autre salariée. Ces informations orientent leur classement dans la nomenclature.",
+    "Deux salariés peuvent relever de catégories différentes selon leur qualification et leur position."
+   ],
+   "piege": "Un titre de métier seul ne suffit pas toujours : le statut et la position comptent aussi.",
+   "astuce_memoire": "Profession, statut, qualification et position.",
+   "quiz": [
+    {
+     "q": "Quel critère distingue notamment un artisan indépendant d’un salarié ?",
+     "choix": [
+      "La couleur du bureau",
+      "Le seul mois de naissance",
+      "Le statut professionnel"
+     ],
+     "rep": "Le statut professionnel",
+     "expl": "Le statut distingue notamment indépendants et salariés."
+    },
+    {
+     "q": "Les PCS servent-elles à comparer des groupes sociaux ?",
+     "choix": [
+      "Oui",
+      "Non, elles ne classent que des communes",
+      "Seulement pour mesurer la température"
+     ],
+     "rep": "Oui",
+     "expl": "Elles regroupent des situations professionnelles pour l’analyse."
+    },
+    {
+     "q": "Deux personnes d’une même catégorie ont-elles nécessairement des vies identiques ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, si elles ont le même âge"
+     ],
+     "rep": "Non",
+     "expl": "Une catégorie rassemble des situations diverses."
+    }
+   ],
+   "id": "REV-SES-1RE-29"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Individualisation et solidarité",
+   "emoji": "🧵",
+   "en_une_phrase": "L’individualisation transforme les formes de liens sans faire disparaître les interdépendances.",
+   "comprendre": "Les personnes peuvent disposer d’une autonomie accrue pour choisir certains engagements. Dans le même temps, elles continuent de dépendre d’autres personnes et institutions. Deux notions classiques permettent de comparer des formes de solidarité.",
+   "essentiel": [
+    "La solidarité mécanique repose surtout sur la ressemblance et des croyances communes.",
+    "La solidarité organique repose notamment sur la complémentarité des fonctions.",
+    "L’individualisation désigne notamment une autonomie accrue des individus.",
+    "Les deux formes de solidarité peuvent coexister."
+   ],
+   "image_mentale": "Imagine des pièces semblables côte à côte puis des pièces différentes qui s’emboîtent.",
+   "regle_ou_methode": "Repère si le lien présenté repose surtout sur la ressemblance ou sur la complémentarité.",
+   "exemples": [
+    "Dans un exemple fictif, des personnes partageant les mêmes pratiques se sentent liées par leur ressemblance : cela illustre la solidarité mécanique.",
+    "Dans une ville, agriculteurs, soignants et conducteurs dépendent de services complémentaires : cela illustre une solidarité organique."
+   ],
+   "piege": "L’individualisation ne signifie pas que les individus cessent d’avoir des liens sociaux.",
+   "astuce_memoire": "Mécanique : ressemblance ; organique : complémentarité.",
+   "quiz": [
+    {
+     "q": "Quelle solidarité repose surtout sur la complémentarité des fonctions ?",
+     "choix": [
+      "La solidarité organique",
+      "La solidarité mécanique",
+      "L’absence de solidarité"
+     ],
+     "rep": "La solidarité organique",
+     "expl": "La division des activités crée des interdépendances."
+    },
+    {
+     "q": "Quelle solidarité est associée surtout à la ressemblance ?",
+     "choix": [
+      "La solidarité organique",
+      "La solidarité mécanique",
+      "Une absence de normes"
+     ],
+     "rep": "La solidarité mécanique",
+     "expl": "La ressemblance soutient la solidarité mécanique."
+    },
+    {
+     "q": "Autonomie individuelle et interdépendance peuvent-elles coexister ?",
+     "choix": [
+      "Non",
+      "Seulement sans travail",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Choix individuels et dépendance à autrui peuvent coexister."
+    }
+   ],
+   "id": "REV-SES-1RE-30"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Sociabilités numériques",
+   "emoji": "💬",
+   "en_une_phrase": "Les échanges numériques peuvent entretenir ou créer des liens sociaux.",
+   "comprendre": "Une conversation à distance permet de rester en contact malgré l’éloignement. Les espaces numériques facilitent aussi certaines rencontres autour d’intérêts communs. Leur effet dépend des usages et des ressources des personnes.",
+   "essentiel": [
+    "Les sociabilités désignent les pratiques de relations avec autrui.",
+    "Les outils numériques permettent des échanges à distance.",
+    "Les relations en ligne peuvent prolonger des liens existants ou en créer.",
+    "L’accès et les usages des outils sont inégaux."
+   ],
+   "image_mentale": "Imagine deux proches reliés par une conversation malgré la distance.",
+   "regle_ou_methode": "Observe qui échange, à quelle fréquence et ce que la relation apporte.",
+   "exemples": [
+    "Deux amis séparés par un déménagement échangent régulièrement à distance. L’outil numérique aide ici à entretenir un lien déjà créé.",
+    "Des personnes partageant une même passion peuvent se rencontrer dans un groupe de discussion."
+   ],
+   "piege": "Un outil numérique ne garantit pas automatiquement une relation solide ou un accès égal pour tous.",
+   "astuce_memoire": "Usages et liens comptent plus que le seul outil.",
+   "quiz": [
+    {
+     "q": "Quel effet peut avoir une conversation numérique régulière ?",
+     "choix": [
+      "Garantir la disparition de tout isolement",
+      "Entretenir un lien malgré la distance",
+      "Remplacer obligatoirement chaque rencontre"
+     ],
+     "rep": "Entretenir un lien malgré la distance",
+     "expl": "L’échange peut prolonger une relation."
+    },
+    {
+     "q": "Tous les individus disposent-ils nécessairement du même accès aux outils numériques ?",
+     "choix": [
+      "Oui",
+      "Oui, dès qu’une plateforme existe",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Les ressources et l’accès sont inégaux."
+    },
+    {
+     "q": "Une relation numérique est-elle nécessairement sans lien avec la vie hors ligne ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, si elle concerne des amis"
+     ],
+     "rep": "Non",
+     "expl": "Elle peut prolonger une relation déjà existante."
+    }
+   ],
+   "id": "REV-SES-1RE-31"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Fragilisation des liens",
+   "emoji": "🧶",
+   "en_une_phrase": "La précarité, l’isolement ou des ruptures peuvent affaiblir les liens sociaux.",
+   "comprendre": "Les difficultés d’emploi, de logement ou de santé peuvent rendre certaines relations plus difficiles à entretenir. Une rupture familiale ou une ségrégation spatiale peut aussi limiter les soutiens. Ces facteurs se cumulent parfois, mais leurs effets varient selon les ressources disponibles.",
+   "essentiel": [
+    "La précarité désigne une situation d’instabilité ou d’insécurité.",
+    "L’isolement peut réduire les échanges et les soutiens.",
+    "La ségrégation sépare des groupes dans l’espace.",
+    "Des associations ou proches peuvent apporter un soutien."
+   ],
+   "image_mentale": "Imagine un réseau dont certains fils se fragilisent tandis que d’autres soutiennent.",
+   "regle_ou_methode": "Identifie la difficulté, les liens affectés et les ressources qui peuvent aider.",
+   "exemples": [
+    "Une personne fictive perd son emploi et ne peut plus financer certains déplacements. Ses contacts avec d’anciens collègues deviennent plus rares : un lien peut s’affaiblir.",
+    "Une association de quartier peut aider une personne isolée à retrouver des contacts."
+   ],
+   "piege": "Une situation précaire ne signifie pas que tous les liens d’une personne sont rompus.",
+   "astuce_memoire": "Difficultés, liens affectés, ressources possibles.",
+   "quiz": [
+    {
+     "q": "Quel facteur peut fragiliser certains liens ?",
+     "choix": [
+      "Une entraide régulière uniquement",
+      "Le fait d’avoir plusieurs soutiens",
+      "Une précarité durable"
+     ],
+     "rep": "Une précarité durable",
+     "expl": "L’instabilité peut compliquer le maintien des relations."
+    },
+    {
+     "q": "Qu’est-ce que la ségrégation spatiale ?",
+     "choix": [
+      "Une séparation de groupes dans l’espace",
+      "Une égalité automatique entre quartiers",
+      "Une simple différence de météo"
+     ],
+     "rep": "Une séparation de groupes dans l’espace",
+     "expl": "La ségrégation concerne une répartition séparée de groupes."
+    },
+    {
+     "q": "La précarité rompt-elle forcément tous les liens ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Oui, dès une difficulté passagère"
+     ],
+     "rep": "Non",
+     "expl": "Les effets varient selon les personnes et leurs soutiens."
+    }
+   ],
+   "id": "REV-SES-1RE-32"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Normes sociales et juridiques",
+   "emoji": "📜",
+   "en_une_phrase": "Les normes sociales et les règles juridiques encadrent les comportements de manière distincte.",
+   "comprendre": "Faire la queue et respecter une loi sont deux façons de suivre des règles. Certaines attentes sont informelles ; d’autres sont inscrites dans le droit et assorties de sanctions prévues par des institutions. Une même règle peut avoir les deux dimensions.",
+   "essentiel": [
+    "Une norme sociale est une attente de comportement partagée dans un groupe.",
+    "Une norme juridique est une règle reconnue par le droit.",
+    "Les normes varient selon les groupes et les contextes.",
+    "Les règles juridiques peuvent aussi correspondre à des attentes sociales."
+   ],
+   "image_mentale": "Imagine deux panneaux : usage du groupe et règle inscrite dans le droit.",
+   "regle_ou_methode": "Identifie la règle, son contexte et les personnes ou institutions qui peuvent réagir.",
+   "exemples": [
+    "Dans une file d’attente, passer devant les autres peut susciter une réprobation : il s’agit ici d’une norme sociale. Une règle inscrite dans une loi relève, elle, d’une norme juridique.",
+    "Une règle juridique peut aussi être largement approuvée comme norme sociale."
+   ],
+   "piege": "Toute norme sociale n’est pas une loi et toute réaction sociale n’est pas une sanction pénale.",
+   "astuce_memoire": "Usage social et règle de droit : distinguer leur statut.",
+   "quiz": [
+    {
+     "q": "Quelle situation illustre une norme sociale informelle ?",
+     "choix": [
+      "Attendre son tour dans une file",
+      "Une décision judiciaire écrite uniquement",
+      "La mesure d’une température"
+     ],
+     "rep": "Attendre son tour dans une file",
+     "expl": "Une attente partagée organise le comportement dans la file."
+    },
+    {
+     "q": "Une règle juridique peut-elle aussi correspondre à une norme sociale ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement sans sanction possible"
+     ],
+     "rep": "Oui",
+     "expl": "Certaines règles sont à la fois juridiques et socialement valorisées."
+    },
+    {
+     "q": "Toute infraction à une norme sociale est-elle un délit ?",
+     "choix": [
+      "Oui",
+      "Oui, si un groupe la désapprouve",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Une norme sociale peut ne pas relever du droit pénal."
+    }
+   ],
+   "id": "REV-SES-1RE-33"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Contrôle social",
+   "emoji": "👥",
+   "en_une_phrase": "Le contrôle social comprend les réactions qui favorisent le respect des normes.",
+   "comprendre": "Dans un groupe, un compliment ou une réprobation peut influencer les comportements. Des institutions peuvent aussi appliquer des règles et sanctions formelles. Le contrôle social ne se limite donc pas à la police ou à la punition.",
+   "essentiel": [
+    "Le contrôle informel passe notamment par les proches ou les pairs.",
+    "Le contrôle formel est exercé par des institutions et des règles explicites.",
+    "Les sanctions peuvent être positives ou négatives.",
+    "Le contrôle social varie selon les groupes et les situations."
+   ],
+   "image_mentale": "Imagine une classe où une attitude reçoit un encouragement ou un rappel de règle.",
+   "regle_ou_methode": "Repère la norme, l’acteur qui réagit et le caractère formel ou informel de la réaction.",
+   "exemples": [
+    "Un groupe félicite une personne qui a aidé un camarade : cette approbation est une sanction sociale positive informelle.",
+    "Une sanction prévue par un règlement intérieur relève d’un contrôle formel."
+   ],
+   "piege": "Le mot sanction ne désigne pas seulement une punition : elle peut être positive.",
+   "astuce_memoire": "Contrôle : règles, réactions et acteurs.",
+   "quiz": [
+    {
+     "q": "Quelle réaction est une sanction sociale positive ?",
+     "choix": [
+      "Ignorer toute action",
+      "Féliciter une personne pour son aide",
+      "Mesurer la taille d’une salle"
+     ],
+     "rep": "Féliciter une personne pour son aide",
+     "expl": "Le compliment encourage un comportement valorisé."
+    },
+    {
+     "q": "Quel exemple relève plutôt d’un contrôle formel ?",
+     "choix": [
+      "Un regard désapprobateur d’un ami",
+      "Un compliment spontané dans un groupe",
+      "Une sanction prévue par un règlement"
+     ],
+     "rep": "Une sanction prévue par un règlement",
+     "expl": "Le règlement organise une réponse institutionnelle."
+    },
+    {
+     "q": "Le contrôle social se réduit-il aux sanctions pénales ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, dès qu’une norme existe"
+     ],
+     "rep": "Non",
+     "expl": "De nombreux contrôles sont informels ou positifs."
+    }
+   ],
+   "id": "REV-SES-1RE-34"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Déviance et délinquance",
+   "emoji": "🚦",
+   "en_une_phrase": "La déviance désigne un écart à une norme sociale ; la délinquance concerne les infractions pénales.",
+   "comprendre": "Un comportement peut surprendre un groupe sans violer une loi. À l’inverse, certains actes sont interdits et sanctionnés par le droit pénal. Le regard porté sur un comportement dépend des normes et du contexte.",
+   "essentiel": [
+    "La déviance est définie par rapport à une norme sociale.",
+    "La délinquance regroupe des actes contraires aux règles pénales.",
+    "La qualification d’un comportement peut varier selon les groupes et les époques.",
+    "Une conduite déviante n’est pas nécessairement délinquante."
+   ],
+   "image_mentale": "Imagine deux cercles qui peuvent se recouper : normes sociales et infractions pénales.",
+   "regle_ou_methode": "Identifie la norme transgressée puis demande-toi si un texte pénal interdit aussi l’acte.",
+   "exemples": [
+    "Dans un groupe fictif, venir en tenue inhabituelle peut être considéré comme déviant par certains, sans constituer une infraction pénale. La réaction dépend de la norme du groupe.",
+    "Un vol constitue une infraction pénale et relève de la délinquance."
+   ],
+   "piege": "Ne confonds pas conduite jugée inhabituelle et infraction pénale.",
+   "astuce_memoire": "Déviance : norme sociale ; délinquance : règle pénale.",
+   "quiz": [
+    {
+     "q": "Un comportement peut-il être jugé déviant sans être une infraction pénale ?",
+     "choix": [
+      "Non",
+      "Seulement si personne ne le remarque",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Une norme sociale peut être distincte du droit pénal."
+    },
+    {
+     "q": "À quoi renvoie la délinquance ?",
+     "choix": [
+      "Aux actes contraires aux règles pénales",
+      "À tout comportement original",
+      "À toute préférence minoritaire"
+     ],
+     "rep": "Aux actes contraires aux règles pénales",
+     "expl": "La délinquance est définie par référence au droit pénal."
+    },
+    {
+     "q": "La désignation d’un acte comme déviant est-elle identique dans tous les groupes ?",
+     "choix": [
+      "Oui, nécessairement",
+      "Non",
+      "Oui, quelle que soit l’époque"
+     ],
+     "rep": "Non",
+     "expl": "Les normes et réactions varient selon les contextes."
+    }
+   ],
+   "id": "REV-SES-1RE-35"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Étiquetage et trajectoires",
+   "emoji": "🏷️",
+   "en_une_phrase": "L’étiquetage et la stigmatisation peuvent influencer la façon dont une personne est traitée.",
+   "comprendre": "Un même acte peut susciter des réactions différentes selon la situation et la personne. Lorsqu’un groupe attribue durablement une étiquette, cette réputation peut peser sur les relations et les possibilités offertes. Une trajectoire déviante se construit dans des interactions et non par une seule cause.",
+   "essentiel": [
+    "L’étiquetage attribue une catégorie ou réputation à une personne.",
+    "La stigmatisation dévalorise une caractéristique aux yeux de certains groupes.",
+    "Les réactions des autres peuvent modifier les possibilités de la personne.",
+    "Une carrière déviante désigne une succession possible d’étapes et d’interactions."
+   ],
+   "image_mentale": "Imagine une étiquette collée sur un dossier qui influence le regard d’un groupe.",
+   "regle_ou_methode": "Distingue l’acte, les réactions, l’étiquette et les conséquences possibles.",
+   "exemples": [
+    "Après un incident fictif, un groupe qualifie systématiquement une personne de perturbatrice. Si cette étiquette conduit ensuite à l’exclure de certaines activités, elle modifie ses relations et ses possibilités.",
+    "Des personnes ayant commis un acte comparable peuvent être traitées différemment selon les contextes."
+   ],
+   "piege": "Une étiquette n’est pas une description complète de la personne ni une trajectoire inévitable.",
+   "astuce_memoire": "Acte, réaction, étiquette, conséquences possibles.",
+   "quiz": [
+    {
+     "q": "Que désigne l’étiquetage ?",
+     "choix": [
+      "L’attribution d’une catégorie ou réputation",
+      "La preuve que tout comportement est biologique",
+      "Une mesure automatique du revenu"
+     ],
+     "rep": "L’attribution d’une catégorie ou réputation",
+     "expl": "Une étiquette sociale résulte de réactions et de classements."
+    },
+    {
+     "q": "Une étiquette sociale détermine-t-elle inévitablement toute la vie d’une personne ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, dès qu’elle est prononcée"
+     ],
+     "rep": "Non",
+     "expl": "Ses conséquences dépendent des relations et contextes."
+    },
+    {
+     "q": "Que faut-il étudier dans une carrière déviante ?",
+     "choix": [
+      "Un seul instant sans réactions sociales",
+      "Uniquement une mesure de taille",
+      "Des étapes et interactions dans le temps"
+     ],
+     "rep": "Des étapes et interactions dans le temps",
+     "expl": "Une trajectoire se construit au fil d’interactions."
+    }
+   ],
+   "id": "REV-SES-1RE-36"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Mesurer la délinquance",
+   "emoji": "📊",
+   "en_une_phrase": "Les statistiques enregistrées ne recensent pas nécessairement toutes les infractions.",
+   "comprendre": "Un fait peut ne pas être signalé ou ne pas être enregistré. Les statistiques administratives dépendent donc notamment des déclarations et des pratiques d’enregistrement. Les enquêtes de victimation apportent un autre regard sur les faits subis.",
+   "essentiel": [
+    "Les statistiques enregistrées comptent les faits connus et enregistrés par les institutions.",
+    "Une partie des faits peut ne pas être déclarée.",
+    "Les enquêtes de victimation interrogent des personnes sur des faits subis.",
+    "Les sources ont chacune des limites et peuvent être comparées."
+   ],
+   "image_mentale": "Imagine un ensemble de faits dont seule une partie arrive dans les statistiques officielles.",
+   "regle_ou_methode": "Identifie la source, ce qu’elle compte et les étapes pouvant exclure certains faits.",
+   "exemples": [
+    "Dans un exemple fictif, 100 faits ont lieu mais 40 sont signalés et enregistrés. Une statistique administrative de 40 ne signifie pas que seuls 40 faits ont eu lieu.",
+    "Une enquête de victimation peut recueillir des déclarations de personnes qui n’ont pas porté plainte."
+   ],
+   "piege": "Une hausse des faits enregistrés ne prouve pas à elle seule une hausse identique du nombre réel de faits.",
+   "astuce_memoire": "Faits subis, faits signalés, faits enregistrés.",
+   "quiz": [
+    {
+     "q": "Pourquoi des faits peuvent-ils manquer dans les statistiques administratives ?",
+     "choix": [
+      "Toute infraction est toujours déclarée",
+      "Ils ne sont pas tous signalés ou enregistrés",
+      "Les statistiques comptent aussi les faits imaginaires"
+     ],
+     "rep": "Ils ne sont pas tous signalés ou enregistrés",
+     "expl": "Les démarches de signalement et d’enregistrement filtrent les faits."
+    },
+    {
+     "q": "Que cherche notamment une enquête de victimation ?",
+     "choix": [
+      "Uniquement le nombre d’agents de police",
+      "Le prix des logements",
+      "Les faits subis déclarés par les personnes interrogées"
+     ],
+     "rep": "Les faits subis déclarés par les personnes interrogées",
+     "expl": "Elle interroge des personnes sur les faits dont elles ont été victimes."
+    },
+    {
+     "q": "Si les faits enregistrés augmentent, peut-on conclure sans autre donnée que tous les faits réels ont augmenté au même rythme ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, pour tout type d’infraction"
+     ],
+     "rep": "Non",
+     "expl": "Les signalements et l’enregistrement peuvent aussi évoluer."
+    }
+   ],
+   "id": "REV-SES-1RE-37"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Opinion publique et démocratie",
+   "emoji": "🗣️",
+   "en_une_phrase": "La notion d’opinion publique évolue avec l’élargissement de la participation politique.",
+   "comprendre": "Dans un débat collectif, plusieurs avis coexistent. Historiquement, l’expression « opinion publique » a d’abord souvent désigné l’avis de groupes socialement privilégiés. Avec la démocratisation, elle est davantage rapportée à l’ensemble des citoyens et aux instruments qui mesurent leurs opinions.",
+   "essentiel": [
+    "L’opinion publique est une construction historique.",
+    "Les avis individuels peuvent être divergents.",
+    "La démocratisation élargit les publics pris en compte.",
+    "Les médias et les sondages contribuent à rendre certaines opinions visibles."
+   ],
+   "image_mentale": "Imagine une place publique où de nouvelles voix peuvent progressivement se faire entendre.",
+   "regle_ou_methode": "Situe la période et les acteurs dont les opinions sont prises en compte.",
+   "exemples": [
+    "Dans une situation historique simplifiée, un journal présente d’abord les avis d’un petit groupe de notables. Lorsque l’enquête cherche ensuite à représenter une population plus large, le public considéré change.",
+    "Deux citoyens peuvent avoir des avis différents sur un même projet."
+   ],
+   "piege": "Ne confonds pas « opinion publique » et unanimité de tous les habitants.",
+   "astuce_memoire": "Qui parle, qui est représenté, à quelle époque ?",
+   "quiz": [
+    {
+     "q": "L’opinion publique signifie-t-elle que tout le monde pense la même chose ?",
+     "choix": [
+      "Oui",
+      "Oui, si un sondage existe",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Les avis individuels peuvent diverger."
+    },
+    {
+     "q": "Que modifie la démocratisation dans la notion d’opinion publique ?",
+     "choix": [
+      "Les publics pris en compte s’élargissent",
+      "Les divergences disparaissent",
+      "Les médias cessent nécessairement d’exister"
+     ],
+     "rep": "Les publics pris en compte s’élargissent",
+     "expl": "La notion s’ouvre davantage aux opinions du plus grand nombre."
+    },
+    {
+     "q": "Que faut-il examiner pour interpréter une opinion présentée comme publique ?",
+     "choix": [
+      "Uniquement la taille du titre",
+      "Les personnes prises en compte et la méthode",
+      "Seulement la couleur du graphique"
+     ],
+     "rep": "Les personnes prises en compte et la méthode",
+     "expl": "La représentation dépend des acteurs et de la méthode."
+    }
+   ],
+   "id": "REV-SES-1RE-38"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Lire un sondage",
+   "emoji": "📋",
+   "en_une_phrase": "Un sondage interroge un échantillon pour estimer une opinion dans une population.",
+   "comprendre": "Interroger chaque personne peut être difficile. Un sondage questionne donc un groupe choisi selon une méthode et utilise ses réponses pour estimer des opinions plus larges. La formulation de la question et les conditions de l’enquête peuvent influencer le résultat.",
+   "essentiel": [
+    "La population visée doit être définie.",
+    "L’échantillon est l’ensemble des personnes interrogées.",
+    "La méthode de sélection et les non-réponses influencent la qualité des résultats.",
+    "Une estimation comporte une incertitude et dépend de la question posée."
+   ],
+   "image_mentale": "Imagine une louche prélevant une partie d’une grande marmite pour en tester le contenu.",
+   "regle_ou_methode": "Identifie la population, l’échantillon, la question et la méthode avant d’interpréter le pourcentage.",
+   "exemples": [
+    "Dans un sondage fictif, 120 personnes sur 200 interrogées choisissent la réponse A. Le pourcentage dans cet échantillon est 120/200 = 60 %. Pour généraliser, il faut examiner la sélection et l’incertitude.",
+    "Deux formulations différentes sur un même projet peuvent susciter des réponses différentes."
+   ],
+   "piege": "Le pourcentage observé dans un échantillon n’est pas une mesure exacte et certaine de toute la population.",
+   "astuce_memoire": "Population, échantillon, question, incertitude.",
+   "quiz": [
+    {
+     "q": "Dans un échantillon de 200 personnes, 50 répondent oui. Quelle proportion cela représente-t-il ?",
+     "choix": [
+      "25 %",
+      "50 %",
+      "75 %"
+     ],
+     "rep": "25 %",
+     "expl": "50/200 = 0,25, soit 25 %."
+    },
+    {
+     "q": "Quel facteur peut influencer les réponses à un sondage ?",
+     "choix": [
+      "Uniquement la couleur du stylo",
+      "La formulation de la question",
+      "La date de naissance de l’enquêteur seule"
+     ],
+     "rep": "La formulation de la question",
+     "expl": "La formulation peut modifier la compréhension de la question."
+    },
+    {
+     "q": "Un résultat d’échantillon décrit-il exactement toute la population sans incertitude ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, à partir de deux réponses",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Une estimation dépend de la méthode et comporte une incertitude."
+    }
+   ],
+   "id": "REV-SES-1RE-39"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Sondages et vie politique",
+   "emoji": "📣",
+   "en_une_phrase": "La publication fréquente de sondages peut influencer les débats et la communication politique.",
+   "comprendre": "Un sondage ne se contente pas d’être lu : sa publication peut modifier les questions discutées. Les responsables politiques peuvent adapter leur communication aux indicateurs publiés. Il faut distinguer la mesure d’une opinion et les effets possibles de sa diffusion.",
+   "essentiel": [
+    "Un sondage rend visibles certaines réponses à un moment donné.",
+    "La médiatisation peut orienter l’attention vers certaines questions.",
+    "Les responsables politiques peuvent réagir aux résultats publiés.",
+    "Un sondage ne remplace pas une élection."
+   ],
+   "image_mentale": "Imagine un résultat d’enquête affiché puis commenté dans un débat public.",
+   "regle_ou_methode": "Distingue la question posée, le résultat publié et les réactions possibles à sa diffusion.",
+   "exemples": [
+    "Une enquête fictive indique qu’un sujet préoccupe de nombreuses personnes interrogées. Des responsables décident d’en parler davantage : la publication peut ainsi contribuer à orienter l’agenda du débat.",
+    "Une intention de vote relevée avant un scrutin n’est pas le résultat de ce scrutin."
+   ],
+   "piege": "Un sondage est une estimation située dans le temps, pas une prédiction certaine du résultat électoral.",
+   "astuce_memoire": "Mesure, publication, réactions.",
+   "quiz": [
+    {
+     "q": "Que peut faire la publication répétée de sondages ?",
+     "choix": [
+      "Supprimer automatiquement toutes les divergences",
+      "Rendre certains sujets plus visibles dans le débat",
+      "Remplacer le dépouillement électoral"
+     ],
+     "rep": "Rendre certains sujets plus visibles dans le débat",
+     "expl": "La médiatisation contribue à orienter l’attention."
+    },
+    {
+     "q": "Une intention de vote avant l’élection est-elle le résultat officiel du scrutin ?",
+     "choix": [
+      "Oui",
+      "Oui, si la question est courte",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Le scrutin et une estimation préalable sont distincts."
+    },
+    {
+     "q": "Les responsables politiques peuvent-ils réagir à un sondage publié ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement après la disparition des médias"
+     ],
+     "rep": "Oui",
+     "expl": "Ils peuvent adapter leur communication ou leurs priorités."
+    }
+   ],
+   "id": "REV-SES-1RE-40"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Participation et abstention",
+   "emoji": "🗳️",
+   "en_une_phrase": "Les taux électoraux rapportent des effectifs à une population de référence précise.",
+   "comprendre": "Dans une élection, une partie des personnes inscrites se déplace pour voter. Le taux de participation compare les votants aux inscrits, tandis que le taux d’abstention mesure la part des inscrits qui ne votent pas. L’inscription elle-même se mesure avec un autre dénominateur.",
+   "essentiel": [
+    "Taux de participation = votants / inscrits × 100.",
+    "Taux d’abstention = abstentionnistes / inscrits × 100.",
+    "Participation et abstention totalisent 100 % parmi les inscrits.",
+    "Le taux d’inscription rapporte les inscrits à la population considérée ayant le droit de s’inscrire."
+   ],
+   "image_mentale": "Imagine un cercle d’inscrits partagé entre votants et abstentionnistes.",
+   "regle_ou_methode": "Choisis le bon dénominateur puis divise l’effectif étudié par l’effectif de référence.",
+   "exemples": [
+    "Dans une élection fictive, 600 personnes votent parmi 1 000 inscrites. Le taux de participation est 600/1 000 = 60 % ; le taux d’abstention est 40 %.",
+    "Si 900 personnes sont inscrites parmi 1 000 personnes en âge et en droit de s’inscrire dans l’exemple, le taux d’inscription est 90 %."
+   ],
+   "piege": "Les personnes non inscrites ne sont pas incluses dans le taux d’abstention calculé parmi les inscrits.",
+   "astuce_memoire": "Participation et abstention : dénominateur = inscrits.",
+   "quiz": [
+    {
+     "q": "Parmi 800 inscrits, 600 votent. Quel est le taux de participation ?",
+     "choix": [
+      "60 %",
+      "25 %",
+      "75 %"
+     ],
+     "rep": "75 %",
+     "expl": "600/800 = 0,75."
+    },
+    {
+     "q": "Parmi 800 inscrits, 600 votent. Quel est le taux d’abstention ?",
+     "choix": [
+      "25 %",
+      "75 %",
+      "20 %"
+     ],
+     "rep": "25 %",
+     "expl": "200 inscrits ne votent pas, soit 200/800 = 25 %."
+    },
+    {
+     "q": "Les non-inscrits sont-ils comptés dans le dénominateur du taux d’abstention parmi les inscrits ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Oui, si le scrutin est national"
+     ],
+     "rep": "Non",
+     "expl": "Le dénominateur est constitué des inscrits."
+    }
+   ],
+   "id": "REV-SES-1RE-41"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Pourquoi voter ou s’abstenir ?",
+   "emoji": "🧭",
+   "en_une_phrase": "La participation électorale dépend à la fois de ressources sociales et du contexte du scrutin.",
+   "comprendre": "Une personne peut se sentir plus ou moins informée et concernée par une élection. Ses relations sociales, son intérêt politique et les enjeux perçus peuvent influencer sa participation. Ces facteurs agissent ensemble sans déterminer automatiquement son choix.",
+   "essentiel": [
+    "L’intégration sociale peut favoriser la participation.",
+    "L’intérêt et le sentiment de compétence politique sont inégalement répartis.",
+    "Le type d’élection et ses enjeux perçus comptent aussi.",
+    "Un facteur statistique ne prédit pas mécaniquement une décision individuelle."
+   ],
+   "image_mentale": "Imagine une personne au croisement de ses relations, de son intérêt et des enjeux d’un scrutin.",
+   "regle_ou_methode": "Distingue facteurs sociaux et situationnels, puis examine leur combinaison.",
+   "exemples": [
+    "Une personne fictive vote à une élection dont elle juge les enjeux importants, puis s’abstient à une autre qui l’intéresse moins. La différence de contexte peut contribuer à expliquer ce changement.",
+    "Un entourage discutant de politique peut favoriser l’intérêt pour un scrutin sans le garantir."
+   ],
+   "piege": "Ne réduis pas toutes les abstentions à une seule motivation.",
+   "astuce_memoire": "Ressources sociales et contexte électoral.",
+   "quiz": [
+    {
+     "q": "Quel facteur peut influencer la participation ?",
+     "choix": [
+      "L’intérêt pour la politique",
+      "Uniquement la couleur du bulletin",
+      "Seulement la météo de l’année précédente"
+     ],
+     "rep": "L’intérêt pour la politique",
+     "expl": "L’intérêt politique fait partie des facteurs étudiés."
+    },
+    {
+     "q": "Une personne vote à une élection puis s’abstient à une autre. Quel élément peut contribuer à l’expliquer ?",
+     "choix": [
+      "Toute participation est définitivement fixée",
+      "Les enjeux perçus diffèrent",
+      "Les élections sont nécessairement identiques"
+     ],
+     "rep": "Les enjeux perçus diffèrent",
+     "expl": "Le contexte et les enjeux perçus varient."
+    },
+    {
+     "q": "Une association statistique entre intégration et vote détermine-t-elle chaque individu ?",
+     "choix": [
+      "Oui",
+      "Oui, si les deux variables sont mesurées",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Une tendance statistique ne prédit pas chaque comportement."
+    }
+   ],
+   "id": "REV-SES-1RE-42"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Vote individuel et collectif",
+   "emoji": "👤",
+   "en_une_phrase": "Le vote combine des préférences personnelles et des influences liées aux appartenances sociales.",
+   "comprendre": "Chaque électeur choisit individuellement dans une offre politique donnée. Mais ses expériences, ses relations et son milieu peuvent influencer les préférences qu’il construit. L’analyse compare des tendances sans supposer que tous les membres d’un groupe votent pareil.",
+   "essentiel": [
+    "Le vote exprime un choix individuel.",
+    "Les appartenances sociales peuvent influencer les préférences.",
+    "L’offre électorale et le contexte de l’élection interviennent.",
+    "Les appartenances ne déterminent pas automatiquement le choix."
+   ],
+   "image_mentale": "Imagine une décision personnelle au croisement d’un groupe et d’une offre électorale.",
+   "regle_ou_methode": "Identifie la préférence exprimée, les appartenances et le contexte disponibles pour l’expliquer.",
+   "exemples": [
+    "Deux personnes d’un même milieu professionnel votent différemment dans une élection fictive. Leur appartenance peut jouer un rôle, mais elle ne suffit pas à prévoir chaque vote.",
+    "Une candidature nouvelle peut modifier les choix proposés aux électeurs."
+   ],
+   "piege": "Ne déduis pas avec certitude le vote d’une personne à partir de son seul groupe social.",
+   "astuce_memoire": "Décision personnelle, influences et contexte.",
+   "quiz": [
+    {
+     "q": "Le vote est-il seulement individuel et sans influence sociale ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, dès que le vote est secret"
+     ],
+     "rep": "Non",
+     "expl": "Les préférences peuvent être socialement influencées."
+    },
+    {
+     "q": "Deux personnes d’un même groupe social votent-elles forcément de façon identique ?",
+     "choix": [
+      "Oui",
+      "Oui, si elles ont le même âge",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Les choix individuels restent variés."
+    },
+    {
+     "q": "Quel élément contextuel peut modifier les choix disponibles ?",
+     "choix": [
+      "L’offre de candidatures",
+      "Le seul nom du bureau de vote",
+      "La définition d’un mètre"
+     ],
+     "rep": "L’offre de candidatures",
+     "expl": "Les candidatures font partie de l’offre électorale."
+    }
+   ],
+   "id": "REV-SES-1RE-43"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Volatilité électorale",
+   "emoji": "🔁",
+   "en_une_phrase": "La volatilité électorale recouvre des changements de participation ou de choix au fil des scrutins.",
+   "comprendre": "Une personne peut voter à une élection puis s’abstenir à une autre. Elle peut aussi participer aux deux scrutins mais changer de préférence politique. Ces comportements peuvent traduire des évolutions des attaches politiques et des contextes.",
+   "essentiel": [
+    "L’intermittence désigne ici l’alternance entre participation et abstention.",
+    "Changer de préférence entre deux scrutins est une autre forme de volatilité.",
+    "Les enjeux, les candidatures et les identifications politiques peuvent intervenir.",
+    "La volatilité ne signifie pas l’absence d’opinion."
+   ],
+   "image_mentale": "Imagine deux scrutins sur une frise avec un choix qui change.",
+   "regle_ou_methode": "Compare participation et préférence sur plusieurs scrutins avant de qualifier la forme de volatilité.",
+   "exemples": [
+    "Une personne vote au premier scrutin puis s’abstient au second : elle participe de manière intermittente. Une autre vote à deux scrutins comparables pour des listes d’orientations politiques différentes : son choix électoral change.",
+    "Une offre électorale différente peut contribuer à expliquer un changement de vote."
+   ],
+   "piege": "Ne confonds pas changement de vote et abstention : ce sont deux formes différentes.",
+   "astuce_memoire": "Intermittence ou changement de préférence.",
+   "quiz": [
+    {
+     "q": "Une personne vote puis s’abstient au scrutin suivant. Que montre cet exemple ?",
+     "choix": [
+      "Une fidélité obligatoire à une liste",
+      "Une impossibilité de voter",
+      "Une participation intermittente"
+     ],
+     "rep": "Une participation intermittente",
+     "expl": "Elle alterne participation et abstention."
+    },
+    {
+     "q": "Une personne vote à deux scrutins comparables pour des listes d’orientations politiques différentes. Quelle forme apparaît ?",
+     "choix": [
+      "Un changement de choix électoral",
+      "Une abstention aux deux scrutins",
+      "Une absence de candidature"
+     ],
+     "rep": "Un changement de choix électoral",
+     "expl": "Le choix exprimé change entre les scrutins."
+    },
+    {
+     "q": "La volatilité signifie-t-elle nécessairement que la personne n’a aucune opinion ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, si elle vote deux fois"
+     ],
+     "rep": "Non",
+     "expl": "Un changement de participation ou de préférence n’implique pas une absence d’opinion."
+    }
+   ],
+   "id": "REV-SES-1RE-44"
+  },
+  {
+   "axe": "Regards croisés",
+   "titre": "Risques économiques et sociaux",
+   "emoji": "🌧️",
+   "en_une_phrase": "Un risque économique ou social est un événement incertain qui peut dégrader les ressources ou les conditions de vie.",
+   "comprendre": "Tu sais qu’un accident peut entraîner des dépenses imprévues. Les individus sont exposés à des événements variés, mais leur probabilité et leurs conséquences diffèrent selon les situations. Les personnes peuvent aussi percevoir et accepter les risques différemment.",
+   "essentiel": [
+    "La maladie, l’accident, la perte d’emploi et la vieillesse constituent des risques étudiés.",
+    "L’exposition dépend notamment des conditions de travail et de vie.",
+    "L’aversion au risque est la préférence pour une situation certaine plutôt qu’une situation incertaine à espérance de gain égale.",
+    "La perception d’un risque peut différer de sa probabilité mesurée."
+   ],
+   "image_mentale": "Imagine plusieurs personnes affrontant des aléas différents, avec des ressources inégales.",
+   "regle_ou_methode": "Identifie l’événement, ses conséquences, le groupe exposé et les ressources disponibles.",
+   "exemples": [
+    "Une personne perd son emploi et voit son revenu diminuer. L’événement est la perte d’emploi ; sa conséquence économique est la baisse de revenu.",
+    "À espérance de gain égale, une personne qui préfère le résultat certain au résultat incertain manifeste de l’aversion au risque."
+   ],
+   "piege": "Être plus exposé à un risque ne signifie pas que l’événement se produira avec certitude.",
+   "astuce_memoire": "Événement incertain, conséquences, exposition.",
+   "quiz": [
+    {
+     "q": "Quel événement illustre un risque économique et social ?",
+     "choix": [
+      "Une perte d’emploi imprévue",
+      "Une dépense déjà connue et payée",
+      "Une préférence de couleur"
+     ],
+     "rep": "Une perte d’emploi imprévue",
+     "expl": "La perte d’emploi peut réduire les ressources."
+    },
+    {
+     "q": "Que signifie une forte aversion au risque ?",
+     "choix": [
+      "Avoir la certitude de subir un accident",
+      "Préférer davantage la sécurité dans une comparaison adaptée",
+      "Ne jamais percevoir aucun danger"
+     ],
+     "rep": "Préférer davantage la sécurité dans une comparaison adaptée",
+     "expl": "L’aversion au risque caractérise une préférence face à l’incertitude."
+    },
+    {
+     "q": "Tous les groupes sont-ils exposés de la même façon à un risque professionnel ?",
+     "choix": [
+      "Oui, par définition",
+      "Oui, si leurs emplois ont le même nom",
+      "Non, les conditions de travail peuvent différer"
+     ],
+     "rep": "Non, les conditions de travail peuvent différer",
+     "expl": "Les situations et conditions d’exposition varient."
+    }
+   ],
+   "id": "REV-SES-1RE-45"
+  },
+  {
+   "axe": "Regards croisés",
+   "titre": "Prévenir les risques",
+   "emoji": "🚧",
+   "en_une_phrase": "La prévention cherche à réduire la probabilité ou les conséquences d’un dommage.",
+   "comprendre": "Quand tu attaches ta ceinture, tu agis avant un accident possible. De même, des individus ou des organisations peuvent réduire l’exposition à un risque. La prévention ne supprime pas toujours le risque complètement.",
+   "essentiel": [
+    "La prévention intervient avant ou pour limiter les conséquences d’un événement.",
+    "Des règles, équipements ou formations peuvent contribuer à prévenir des dommages.",
+    "Son efficacité dépend des mesures et de leur application.",
+    "Elle se distingue de l’indemnisation après un dommage."
+   ],
+   "image_mentale": "Imagine un obstacle retiré d’un chemin avant le passage des personnes.",
+   "regle_ou_methode": "Repère le danger, la mesure adoptée et le dommage qu’elle vise à éviter ou limiter.",
+   "exemples": [
+    "Dans un atelier fictif, des protections sont installées autour d’une machine. Elles réduisent une exposition possible aux blessures : c’est une action de prévention.",
+    "Une formation aux gestes de sécurité peut réduire certains accidents, sans les rendre impossibles."
+   ],
+   "piege": "Une indemnité versée après l’accident n’est pas elle-même une mesure de prévention.",
+   "astuce_memoire": "Avant le dommage : réduire le risque.",
+   "quiz": [
+    {
+     "q": "Quelle mesure illustre la prévention ?",
+     "choix": [
+      "Verser une indemnité après une blessure",
+      "Former les employés à la sécurité avant un accident",
+      "Constater une perte sans agir"
+     ],
+     "rep": "Former les employés à la sécurité avant un accident",
+     "expl": "Une formation peut réduire l’exposition ou les dommages."
+    },
+    {
+     "q": "La prévention garantit-elle un risque nul ?",
+     "choix": [
+      "Oui, dans toutes les situations",
+      "Oui, dès qu’une règle est écrite",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Son efficacité dépend notamment de son application."
+    },
+    {
+     "q": "Quel effet une mesure préventive cherche-t-elle à obtenir ?",
+     "choix": [
+      "Réduire la probabilité ou les conséquences du dommage",
+      "Supprimer toute incertitude mathématiquement",
+      "Remplacer systématiquement toutes les assurances"
+     ],
+     "rep": "Réduire la probabilité ou les conséquences du dommage",
+     "expl": "La prévention agit sur la survenue ou la gravité des dommages."
+    }
+   ],
+   "id": "REV-SES-1RE-46"
+  },
+  {
+   "axe": "Regards croisés",
+   "titre": "Mutualiser un risque",
+   "emoji": "🤲",
+   "en_une_phrase": "La mutualisation répartit le coût des dommages entre les membres d’un groupe.",
+   "comprendre": "Une perte importante peut être difficile à supporter seul. En contribuant à une caisse commune, plusieurs personnes partagent le financement des dommages prévus par les règles. La contribution et l’indemnisation ne sont pas nécessairement égales pour chaque personne.",
+   "essentiel": [
+    "Les participants versent des contributions à un fonds commun.",
+    "Les dommages couverts sont indemnisés selon les règles prévues.",
+    "Tous les participants ne subissent pas forcément le dommage.",
+    "La mutualisation ne supprime pas le dommage lui-même."
+   ],
+   "image_mentale": "Imagine une caisse alimentée par de nombreuses petites contributions puis utilisée pour quelques dommages.",
+   "regle_ou_methode": "Additionne les contributions, puis compare le fonds constitué aux dommages à couvrir.",
+   "exemples": [
+    "Dans un exemple fictif simplifié, 100 personnes versent chacune 10 €. Le fonds reçoit 100 × 10 = 1 000 €, de quoi couvrir deux dommages de 500 € chacun, en supposant zéro autre coût.",
+    "Une personne peut contribuer à un contrat sans subir de dommage pendant l’année."
+   ],
+   "piege": "Le partage des coûts ne garantit pas que chaque participant reçoit autant qu’il a versé.",
+   "astuce_memoire": "Beaucoup contribuent, les dommages couverts sont partagés.",
+   "quiz": [
+    {
+     "q": "Combien réunissent 100 personnes versant chacune 10 € ?",
+     "choix": [
+      "100 €",
+      "10 000 €",
+      "1 000 €"
+     ],
+     "rep": "1 000 €",
+     "expl": "100 × 10 = 1 000 €."
+    },
+    {
+     "q": "Que cherche à répartir la mutualisation ?",
+     "choix": [
+      "Le coût des dommages couverts",
+      "La certitude que chacun subira le dommage",
+      "Uniquement le temps de travail"
+     ],
+     "rep": "Le coût des dommages couverts",
+     "expl": "Les contributions financent collectivement les dommages prévus."
+    },
+    {
+     "q": "Chaque participant reçoit-il forcément une indemnité égale à sa contribution ?",
+     "choix": [
+      "Oui, par définition",
+      "Non",
+      "Oui, si le groupe compte cent personnes"
+     ],
+     "rep": "Non",
+     "expl": "La survenue des dommages et les règles de couverture varient."
+    }
+   ],
+   "id": "REV-SES-1RE-47"
+  },
+  {
+   "axe": "Regards croisés",
+   "titre": "Diversifier les risques",
+   "emoji": "🧺",
+   "en_une_phrase": "La diversification consiste à répartir des engagements sur des risques différents pour limiter une concentration.",
+   "comprendre": "Mettre toutes ses ressources dans une seule activité rend très dépendant de ce qui lui arrive. Répartir des engagements entre plusieurs situations peut réduire l’exposition à un seul événement. L’effet dépend toutefois des liens entre ces risques.",
+   "essentiel": [
+    "La diversification répartit les engagements entre plusieurs risques ou activités.",
+    "Elle peut limiter l’effet d’un dommage concentré.",
+    "Si les risques évoluent ensemble, la diversification protège moins.",
+    "Elle ne garantit pas l’absence de perte."
+   ],
+   "image_mentale": "Imagine plusieurs paniers plutôt qu’un seul contenant toutes les ressources.",
+   "regle_ou_methode": "Identifie les risques répartis puis demande-toi si un même événement peut les toucher simultanément.",
+   "exemples": [
+    "Une organisation fictive assure des biens situés dans plusieurs zones et contre plusieurs types de dommages. Cette répartition peut éviter qu’un incident très local touche tous ses engagements.",
+    "Une tempête très étendue peut néanmoins toucher plusieurs zones en même temps."
+   ],
+   "piege": "Diversifier ne supprime pas les risques communs à toutes les activités.",
+   "astuce_memoire": "Répartir et vérifier les risques communs.",
+   "quiz": [
+    {
+     "q": "Quel est le principe de diversification ?",
+     "choix": [
+      "Répartir les engagements entre plusieurs risques",
+      "Concentrer toutes les ressources sur un seul événement",
+      "Supprimer toute incertitude par décret"
+     ],
+     "rep": "Répartir les engagements entre plusieurs risques",
+     "expl": "La diversification limite la concentration sur un risque."
+    },
+    {
+     "q": "Quand la diversification peut-elle être moins efficace ?",
+     "choix": [
+      "Quand les situations couvertes sont différentes",
+      "Quand plusieurs risques évoluent ensemble",
+      "Quand une perte locale ne touche qu’une seule zone"
+     ],
+     "rep": "Quand plusieurs risques évoluent ensemble",
+     "expl": "Un événement commun peut affecter plusieurs engagements à la fois."
+    },
+    {
+     "q": "La diversification garantit-elle l’absence totale de perte ?",
+     "choix": [
+      "Oui",
+      "Oui, dès qu’il existe deux contrats",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Elle réduit certaines concentrations sans éliminer tout risque."
+    }
+   ],
+   "id": "REV-SES-1RE-48"
+  },
+  {
+   "axe": "Regards croisés",
+   "titre": "Partager le risque : effets",
+   "emoji": "💡",
+   "en_une_phrase": "Le partage des risques peut sécuriser les individus et favoriser certaines initiatives.",
+   "comprendre": "Un aléa important peut décourager une personne de se lancer dans un projet. Une couverture adaptée limite certaines pertes possibles et peut ainsi améliorer la sécurité économique. Elle peut aussi rendre certaines initiatives moins risquées pour ceux qui les entreprennent.",
+   "essentiel": [
+    "Une indemnisation prévue peut réduire les conséquences financières d’un dommage.",
+    "Une protection adaptée peut améliorer le bien-être face à l’incertitude.",
+    "La réduction de certaines pertes possibles peut encourager l’innovation.",
+    "Les effets dépendent des garanties et des conditions."
+   ],
+   "image_mentale": "Imagine un filet qui amortit une chute sans empêcher tous les accidents.",
+   "regle_ou_methode": "Repère le risque, la couverture et l’effet possible sur les décisions.",
+   "exemples": [
+    "Une personne envisage une activité nouvelle avec un risque couvert par un contrat fictif. La couverture réduit certaines pertes prévues ; elle peut rendre le projet plus acceptable, sans garantir sa réussite.",
+    "Une prestation versée après une perte d’emploi peut limiter une baisse brutale de ressources selon les règles applicables."
+   ],
+   "piege": "Une assurance n’empêche pas forcément le dommage ni l’échec du projet.",
+   "astuce_memoire": "Protéger une partie des conséquences peut faciliter l’initiative.",
+   "quiz": [
+    {
+     "q": "Quel effet positif peut avoir une couverture adaptée ?",
+     "choix": [
+      "Supprimer obligatoirement tous les accidents",
+      "Limiter certaines pertes financières",
+      "Garantir le succès de chaque innovation"
+     ],
+     "rep": "Limiter certaines pertes financières",
+     "expl": "La couverture peut amortir les conséquences prévues."
+    },
+    {
+     "q": "Pourquoi le partage du risque peut-il favoriser une initiative ?",
+     "choix": [
+      "Il supprime tout besoin de financement",
+      "Il empêche toute décision individuelle",
+      "Il réduit certaines pertes possibles"
+     ],
+     "rep": "Il réduit certaines pertes possibles",
+     "expl": "Un risque financier réduit peut rendre le projet acceptable."
+    },
+    {
+     "q": "Une couverture garantit-elle que le dommage ne se produit pas ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, si plusieurs personnes cotisent"
+     ],
+     "rep": "Non",
+     "expl": "L’indemnisation et la survenue du dommage sont deux choses différentes."
+    }
+   ],
+   "id": "REV-SES-1RE-49"
+  },
+  {
+   "axe": "Regards croisés",
+   "titre": "Comprendre l’aléa moral",
+   "emoji": "🎭",
+   "en_une_phrase": "L’aléa moral désigne un changement possible de comportement lié au fait d’être couvert contre un risque.",
+   "comprendre": "Une personne protégée contre une partie des pertes peut parfois modifier ses précautions. L’assureur ne peut pas nécessairement observer tous les comportements après la signature du contrat. Cette asymétrie peut augmenter le risque ou son coût, mais elle ne concerne pas automatiquement tous les assurés.",
+   "essentiel": [
+    "L’aléa moral est lié à un comportement possible après la couverture.",
+    "L’information sur les comportements peut être incomplète.",
+    "Une franchise laisse une partie du coût à la charge de l’assuré selon le contrat.",
+    "Une couverture ne provoque pas systématiquement un comportement imprudent."
+   ],
+   "image_mentale": "Imagine un filet de protection et un choix de précaution observé imparfaitement.",
+   "regle_ou_methode": "Identifie la couverture, le comportement susceptible de changer et la limite d’information.",
+   "exemples": [
+    "Une personne fictive protège moins un objet parce qu’elle pense sa perte couverte. Si ce comportement augmente la probabilité du dommage et n’est pas pleinement observé, il illustre un aléa moral.",
+    "Une franchise peut inciter à limiter les petits dommages en laissant une part prévue du coût à la charge de l’assuré."
+   ],
+   "piege": "Ne confonds pas possibilité d’aléa moral et accusation contre tous les assurés.",
+   "astuce_memoire": "Couverture, comportement possible, information incomplète.",
+   "quiz": [
+    {
+     "q": "Quel exemple peut illustrer un aléa moral ?",
+     "choix": [
+      "Comparer plusieurs offres avant de signer",
+      "Constater que tous les risques sont identiques",
+      "Réduire ses précautions parce qu’une perte est couverte"
+     ],
+     "rep": "Réduire ses précautions parce qu’une perte est couverte",
+     "expl": "Un comportement peut changer après la couverture."
+    },
+    {
+     "q": "Quel dispositif laisse une part prévue du dommage à la charge de l’assuré ?",
+     "choix": [
+      "Une franchise",
+      "Une obligation de dommage",
+      "Une augmentation automatique du revenu"
+     ],
+     "rep": "Une franchise",
+     "expl": "La franchise est une somme ou part restant à la charge selon le contrat."
+    },
+    {
+     "q": "Tous les assurés deviennent-ils nécessairement imprudents ?",
+     "choix": [
+      "Oui, par définition",
+      "Non",
+      "Oui, dès la signature"
+     ],
+     "rep": "Non",
+     "expl": "L’aléa moral est une possibilité, pas une certitude pour chaque assuré."
+    }
+   ],
+   "id": "REV-SES-1RE-50"
+  },
+  {
+   "axe": "Regards croisés",
+   "titre": "Assurance et assistance",
+   "emoji": "🏥",
+   "en_une_phrase": "La protection sociale combine notamment des logiques d’assurance et d’assistance fondées sur des règles collectives.",
+   "comprendre": "La maladie ou la perte d’emploi peut réduire les ressources. Certaines prestations reposent sur une affiliation et des droits liés à des cotisations ; d’autres visent à aider des personnes répondant à des critères de besoin. Les institutions publiques, les organismes d’assurance et les familles peuvent intervenir selon les situations.",
+   "essentiel": [
+    "La logique d’assurance sociale ouvre des droits selon des règles d’affiliation et de contribution.",
+    "La logique d’assistance vise notamment à soutenir les personnes répondant à certaines conditions de besoin.",
+    "La protection sociale organise une solidarité collective.",
+    "Familles, assureurs et pouvoirs publics peuvent contribuer à la gestion des risques."
+   ],
+   "image_mentale": "Imagine plusieurs filets qui interviennent selon des règles différentes.",
+   "regle_ou_methode": "Identifie le risque, l’institution, la condition d’accès et la prestation prévue.",
+   "exemples": [
+    "Dans un dispositif fictif d’assurance, une personne affiliée et remplissant les conditions reçoit une prestation après une perte d’emploi. Le droit dépend des règles du dispositif ; la prestation limite la baisse de revenu.",
+    "Une aide fictive attribuée sous condition de ressources illustre une logique d’assistance."
+   ],
+   "piege": "La famille, les assureurs privés et les pouvoirs publics n’interviennent pas tous selon les mêmes règles.",
+   "astuce_memoire": "Assurance : droits liés à une affiliation ; assistance : soutien sous conditions.",
+   "quiz": [
+    {
+     "q": "Quel exemple illustre une logique d’assistance ?",
+     "choix": [
+      "Une aide attribuée selon les ressources",
+      "Une indemnité versée uniquement parce qu’un risque ne s’est pas produit",
+      "Un achat ordinaire sans prestation"
+     ],
+     "rep": "Une aide attribuée selon les ressources",
+     "expl": "L’assistance peut soutenir des personnes selon leurs besoins et ressources."
+    },
+    {
+     "q": "Quel acteur peut contribuer à la gestion des risques sociaux ?",
+     "choix": [
+      "Uniquement les magasins",
+      "Les pouvoirs publics",
+      "Aucune institution collective"
+     ],
+     "rep": "Les pouvoirs publics",
+     "expl": "Les pouvoirs publics organisent notamment des dispositifs de protection sociale."
+    },
+    {
+     "q": "Les règles d’accès sont-elles forcément identiques pour toutes les prestations ?",
+     "choix": [
+      "Oui",
+      "Oui, dès qu’il existe une solidarité",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Les conditions diffèrent selon les dispositifs."
+    }
+   ],
+   "id": "REV-SES-1RE-51"
+  },
+  {
+   "axe": "Regards croisés",
+   "titre": "Cycle de vie de l’entreprise",
+   "emoji": "🏗️",
+   "en_une_phrase": "Une entreprise peut connaître création, croissance, transformation et disparition.",
+   "comprendre": "Un projet économique démarre avec des ressources et des choix d’organisation. Il peut ensuite se développer, changer de statut ou cesser son activité. Ces étapes ne suivent pas toutes un parcours identique.",
+   "essentiel": [
+    "La création lance une activité organisée.",
+    "La croissance peut modifier les besoins de financement ou de personnel.",
+    "Le statut juridique peut évoluer.",
+    "Une entreprise peut aussi disparaître ou être reprise."
+   ],
+   "image_mentale": "Imagine une frise avec plusieurs trajectoires possibles et non une seule route.",
+   "regle_ou_methode": "Repère l’étape, les ressources nécessaires et les changements d’organisation.",
+   "exemples": [
+    "Une activité fictive démarre avec une personne, puis recrute et change de forme juridique en grandissant. La création précède ici la croissance et la transformation du statut.",
+    "Une entreprise peut cesser son activité sans être passée par une forte croissance."
+   ],
+   "piege": "La croissance et la survie ne sont pas garanties pour chaque entreprise.",
+   "astuce_memoire": "Création, évolutions possibles, éventuelle cessation.",
+   "quiz": [
+    {
+     "q": "Quel événement peut marquer une étape de la vie d’une entreprise ?",
+     "choix": [
+      "La garantie automatique d’une croissance infinie",
+      "Un changement de statut juridique",
+      "La disparition de toute décision"
+     ],
+     "rep": "Un changement de statut juridique",
+     "expl": "Le statut peut évoluer avec le projet."
+    },
+    {
+     "q": "Toutes les entreprises passent-elles par une forte croissance ?",
+     "choix": [
+      "Oui",
+      "Oui, dès leur création",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Les trajectoires d’entreprises sont diverses."
+    },
+    {
+     "q": "Quel besoin peut accompagner la croissance ?",
+     "choix": [
+      "Des ressources ou du personnel supplémentaires",
+      "La suppression obligatoire de toute organisation",
+      "L’absence de financement dans tous les cas"
+     ],
+     "rep": "Des ressources ou du personnel supplémentaires",
+     "expl": "Une activité plus grande peut nécessiter davantage de moyens."
+    }
+   ],
+   "id": "REV-SES-1RE-52"
+  },
+  {
+   "axe": "Regards croisés",
+   "titre": "Figures de l’entrepreneur",
+   "emoji": "👥",
+   "en_une_phrase": "Les statuts et les fonctions des personnes qui entreprennent sont divers.",
+   "comprendre": "Tu peux imaginer une personne qui crée une activité, une autre qui la dirige et des personnes qui apportent du capital. Ces rôles peuvent être réunis ou séparés selon l’entreprise. Il faut distinguer statut juridique et fonction économique.",
+   "essentiel": [
+    "Un entrepreneur individuel exerce selon un statut particulier.",
+    "Le régime de micro-entrepreneur correspond à un cadre simplifié d’entreprise individuelle sous conditions.",
+    "Un manager organise et dirige une activité.",
+    "Un actionnaire détient des actions d’une société.",
+    "Un entrepreneur innovateur introduit une nouveauté dans l’activité économique."
+   ],
+   "image_mentale": "Imagine plusieurs rôles, parfois portés par une même personne.",
+   "regle_ou_methode": "Identifie le statut juridique, puis la fonction : innover, diriger ou détenir des actions.",
+   "exemples": [
+    "Dans une société fictive, une personne apporte du capital et détient des actions : elle est actionnaire. Une autre conduit l’équipe au quotidien : elle exerce une fonction de direction.",
+    "Une même personne peut créer une entreprise, la diriger et innover."
+   ],
+   "piege": "Être actionnaire ne signifie pas nécessairement diriger personnellement l’activité quotidienne.",
+   "astuce_memoire": "Statut juridique et fonction ne se confondent pas.",
+   "quiz": [
+    {
+     "q": "Quel rôle correspond à la détention d’actions ?",
+     "choix": [
+      "Salarié par définition",
+      "Client nécessairement",
+      "Actionnaire"
+     ],
+     "rep": "Actionnaire",
+     "expl": "Un actionnaire détient des actions d’une société."
+    },
+    {
+     "q": "Une même personne peut-elle créer et diriger une activité ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement si elle ne prend aucune décision"
+     ],
+     "rep": "Oui",
+     "expl": "Des fonctions peuvent être cumulées."
+    },
+    {
+     "q": "Le statut de micro-entrepreneur correspond-il à une forme simplifiée d’entreprise individuelle sous conditions ?",
+     "choix": [
+      "Non, c’est toujours une association",
+      "Oui",
+      "Non, c’est une catégorie de salarié"
+     ],
+     "rep": "Oui",
+     "expl": "Il s’agit d’un régime simplifié de l’entreprise individuelle, sous conditions."
+    }
+   ],
+   "id": "REV-SES-1RE-53"
+  },
+  {
+   "axe": "Regards croisés",
+   "titre": "Gouvernance et décisions",
+   "emoji": "🧭",
+   "en_une_phrase": "La gouvernance organise les pouvoirs de décision et de contrôle dans une entreprise.",
+   "comprendre": "Dans un groupe, certaines décisions sont prises par une seule personne et d’autres sont déléguées. Dans une entreprise, la gouvernance précise comment les décisions sont orientées et contrôlées. La centralisation et la décentralisation décrivent leur répartition.",
+   "essentiel": [
+    "La gouvernance concerne l’organisation du pouvoir de décision et de contrôle.",
+    "La centralisation concentre certaines décisions à un niveau élevé.",
+    "La décentralisation confie certaines décisions à différents niveaux.",
+    "Les formes de gouvernance varient selon les entreprises."
+   ],
+   "image_mentale": "Imagine un arbre de décisions prises au sommet ou confiées à plusieurs branches.",
+   "regle_ou_methode": "Repère qui décide, sur quoi, et à quel niveau de l’organisation.",
+   "exemples": [
+    "Dans une entreprise fictive, la direction fixe tous les horaires sans délégation : cette décision est centralisée. Si elle laisse chaque équipe organiser certains horaires dans un cadre commun, cette décision est décentralisée.",
+    "Une entreprise peut centraliser les grandes orientations tout en déléguant certaines décisions locales."
+   ],
+   "piege": "Une organisation peut combiner centralisation et délégation selon les décisions.",
+   "astuce_memoire": "Qui décide et à quel niveau ?",
+   "quiz": [
+    {
+     "q": "Que signifie centraliser une décision ?",
+     "choix": [
+      "La concentrer à un niveau déterminé de direction",
+      "La confier nécessairement à tous les salariés",
+      "Supprimer toute autorité dans l’entreprise"
+     ],
+     "rep": "La concentrer à un niveau déterminé de direction",
+     "expl": "La centralisation concentre des décisions à un niveau."
+    },
+    {
+     "q": "Qu’illustre une équipe autorisée à organiser certains horaires ?",
+     "choix": [
+      "Une disparition de toute règle",
+      "Une délégation de décision",
+      "Une nationalisation automatique"
+     ],
+     "rep": "Une délégation de décision",
+     "expl": "La décision est confiée à un niveau local dans un cadre donné."
+    },
+    {
+     "q": "Une entreprise peut-elle centraliser certaines décisions et en décentraliser d’autres ?",
+     "choix": [
+      "Non",
+      "Seulement si elle ne produit rien",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "La répartition peut varier selon la décision concernée."
+    }
+   ],
+   "id": "REV-SES-1RE-54"
+  },
+  {
+   "axe": "Regards croisés",
+   "titre": "Relations dans l’entreprise",
+   "emoji": "🤝",
+   "en_une_phrase": "L’entreprise est un lieu de coopération, de hiérarchie et parfois de conflit entre parties prenantes.",
+   "comprendre": "Pour produire un bien ou un service, plusieurs personnes coordonnent leurs tâches. Leurs intérêts et leurs rôles ne sont pas nécessairement identiques. Des règles de travail et des échanges permettent d’organiser leur coopération et de traiter certains désaccords.",
+   "essentiel": [
+    "Les salariés et les dirigeants participent à l’activité.",
+    "Les propriétaires ou actionnaires peuvent avoir des intérêts particuliers.",
+    "Une coopérative associe ses membres selon ses règles de gouvernance.",
+    "Coopération et conflit peuvent coexister."
+   ],
+   "image_mentale": "Imagine plusieurs acteurs reliés par des tâches communes et des intérêts parfois différents.",
+   "regle_ou_methode": "Identifie les parties prenantes, leurs objectifs et les formes de coopération ou de désaccord.",
+   "exemples": [
+    "Dans une entreprise fictive, des salariés et une direction coopèrent pour livrer une commande. Ils peuvent aussi négocier l’organisation des horaires : le même lieu combine coopération et désaccord possible.",
+    "Dans une coopérative, les membres participent selon les règles propres à cette organisation."
+   ],
+   "piege": "Un conflit ponctuel ne signifie pas que toute coopération a disparu.",
+   "astuce_memoire": "Des acteurs liés, des intérêts parfois différents.",
+   "quiz": [
+    {
+     "q": "Quelles relations peuvent coexister dans une entreprise ?",
+     "choix": [
+      "Uniquement coopération sans aucun désaccord possible",
+      "Coopération et conflit",
+      "Uniquement conflit sans aucune activité commune"
+     ],
+     "rep": "Coopération et conflit",
+     "expl": "Les acteurs coopèrent tout en pouvant avoir des intérêts divergents."
+    },
+    {
+     "q": "Qui peut être une partie prenante de l’entreprise ?",
+     "choix": [
+      "Uniquement un observateur sans lien",
+      "Aucune personne qui travaille dans l’entreprise",
+      "Un salarié"
+     ],
+     "rep": "Un salarié",
+     "expl": "Les salariés participent à l’activité de l’entreprise."
+    },
+    {
+     "q": "Un désaccord sur les horaires prouve-t-il que toute coopération a disparu ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, dès qu’une négociation commence"
+     ],
+     "rep": "Non",
+     "expl": "Une négociation peut porter sur un désaccord alors que l’activité commune se poursuit."
+    }
+   ],
+   "id": "REV-SES-1RE-55"
+  }
+ ]
+}

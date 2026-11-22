@@ -1,0 +1,911 @@
+{
+ "classe": "1RE",
+ "niveau_appli": "Lycée",
+ "age": "16-17 ans",
+ "matiere": "Français",
+ "code": "FR",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "La poésie du XIXe siècle au XXIe siècle",
+   "titre": "Lire la poésie",
+   "emoji": "📖",
+   "en_une_phrase": "La forme et le sens d’un poème se construisent ensemble.",
+   "comprendre": "Comme une chanson, un poème peut jouer sur des rythmes et des répétitions. Il peut aussi prendre la forme de la prose. Observe toujours comment ses choix construisent un sens.",
+   "essentiel": [
+    "Le vers est une ligne poétique.",
+    "Une strophe rassemble des vers.",
+    "Un poème en prose ne se découpe pas nécessairement en vers."
+   ],
+   "image_mentale": "Imagine des lignes rassemblées en blocs comme des respirations.",
+   "regle_ou_methode": "Repère la forme puis relie un choix précis à une interprétation.",
+   "exemples": [
+    "Dans les lignes inventées « La pluie tombe / la ville écoute », repère deux vers. La personnification prête à la ville la capacité d’écouter : elle rend la scène attentive.",
+    "Un poème en prose peut créer un rythme par des reprises sans retour régulier à la ligne."
+   ],
+   "piege": "La poésie ne se réduit ni aux rimes ni aux vers.",
+   "astuce_memoire": "Forme, observation, effet.",
+   "quiz": [
+    {
+     "q": "Comment appelle-t-on un groupe de vers ?",
+     "choix": [
+      "Un acte",
+      "Une strophe",
+      "Une scène"
+     ],
+     "rep": "Une strophe",
+     "expl": "Une strophe rassemble des vers."
+    },
+    {
+     "q": "Un poème peut-il être en prose ?",
+     "choix": [
+      "Non",
+      "Uniquement au théâtre",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "La poésie en prose existe."
+    },
+    {
+     "q": "Dans « la ville écoute », quel procédé prête une action humaine à la ville ?",
+     "choix": [
+      "La personnification",
+      "La question fermée",
+      "Le dialogue"
+     ],
+     "rep": "La personnification",
+     "expl": "La ville reçoit une capacité humaine."
+    }
+   ],
+   "id": "REV-FR-1RE-01"
+  },
+  {
+   "axe": "La poésie du XIXe siècle au XXIe siècle",
+   "titre": "Rythme et vers",
+   "emoji": "🎵",
+   "en_une_phrase": "Le rythme d’un vers naît notamment du nombre de syllabes et des pauses.",
+   "comprendre": "Quand tu lis à voix haute, tu entends des appuis et des coupes. Le décompte des syllabes poétiques suit des règles spécifiques. Le rythme peut soutenir ou contrarier le sens.",
+   "essentiel": [
+    "Un alexandrin classique compte douze syllabes.",
+    "Le e final ne se prononce pas devant une voyelle ni en fin de vers.",
+    "Un enjambement prolonge une phrase au vers suivant."
+   ],
+   "image_mentale": "Imagine une phrase qui traverse la frontière entre deux marches.",
+   "regle_ou_methode": "Lis le vers, compte les syllabes selon les règles, puis observe les pauses.",
+   "exemples": [
+    "Dans l’exemple inventé « Le soleil est levé / sur la ville endormie », la barre indique une pause proposée. Vérifie ensuite le décompte et le rapport entre cette pause et la phrase.",
+    "Une phrase commencée à la fin d’un vers et poursuivie au suivant peut produire un enjambement."
+   ],
+   "piege": "Ne confonds pas une ligne poétique et une phrase : elles peuvent se chevaucher.",
+   "astuce_memoire": "Vers et phrase ne coïncident pas toujours.",
+   "quiz": [
+    {
+     "q": "Combien de syllabes compte un alexandrin classique ?",
+     "choix": [
+      "Huit",
+      "Quatorze",
+      "Douze"
+     ],
+     "rep": "Douze",
+     "expl": "Un alexandrin classique compte douze syllabes."
+    },
+    {
+     "q": "Qu’est-ce qu’un enjambement ?",
+     "choix": [
+      "Une phrase qui se poursuit au vers suivant",
+      "Une répétition en début de strophe",
+      "Une rime entre deux poèmes"
+     ],
+     "rep": "Une phrase qui se poursuit au vers suivant",
+     "expl": "La phrase franchit la limite du vers."
+    },
+    {
+     "q": "Le e final se prononce-t-il en fin de vers dans le décompte ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Seulement devant une virgule finale"
+     ],
+     "rep": "Non",
+     "expl": "Il ne compte pas en fin de vers."
+    }
+   ],
+   "id": "REV-FR-1RE-02"
+  },
+  {
+   "axe": "La poésie du XIXe siècle au XXIe siècle",
+   "titre": "Images et sonorités",
+   "emoji": "🔊",
+   "en_une_phrase": "Les images et les sons orientent la lecture d’un poème.",
+   "comprendre": "Tu sais qu’une comparaison rapproche deux éléments. La métaphore effectue aussi un rapprochement, mais sans outil comparatif explicite. Les sons répétés peuvent renforcer une impression selon le contexte.",
+   "essentiel": [
+    "La comparaison utilise un outil comme « comme ».",
+    "La métaphore rapproche sans outil comparatif explicite.",
+    "Une allitération répète un son consonantique."
+   ],
+   "image_mentale": "Imagine deux objets reliés par une flèche et une onde sonore.",
+   "regle_ou_methode": "Nomme le procédé, cite brièvement l’indice et explique son effet possible.",
+   "exemples": [
+    "Dans « la lune est une lampe », repère la lune et la lampe. Aucun « comme » ne les relie : cette métaphore suggère un éclairage.",
+    "Dans « le vent vif », la répétition du son v forme une allitération."
+   ],
+   "piege": "Nommer une figure ne suffit pas : explique son rôle dans le texte.",
+   "astuce_memoire": "Procédé, indice, effet.",
+   "quiz": [
+    {
+     "q": "Quel procédé apparaît dans « la lune est une lampe » ?",
+     "choix": [
+      "Une métaphore",
+      "Une comparaison avec comme",
+      "Une question"
+     ],
+     "rep": "Une métaphore",
+     "expl": "Le rapprochement ne contient pas d’outil comparatif."
+    },
+    {
+     "q": "Que répète une allitération ?",
+     "choix": [
+      "Un vers entier obligatoirement",
+      "Un son consonantique",
+      "Une date"
+     ],
+     "rep": "Un son consonantique",
+     "expl": "L’allitération concerne un son consonantique."
+    },
+    {
+     "q": "Après avoir identifié une figure, que faut-il expliquer ?",
+     "choix": [
+      "La couleur de la page",
+      "Le nombre de lecteurs",
+      "Son effet dans le contexte"
+     ],
+     "rep": "Son effet dans le contexte",
+     "expl": "L’interprétation relie le procédé au sens."
+    }
+   ],
+   "id": "REV-FR-1RE-03"
+  },
+  {
+   "axe": "La poésie du XIXe siècle au XXIe siècle",
+   "titre": "Œuvres et parcours poétiques",
+   "emoji": "🌳",
+   "en_une_phrase": "Un parcours relie une œuvre poétique à une question de lecture.",
+   "comprendre": "Ton professeur choisit une œuvre parmi trois propositions nationales. Le parcours aide à explorer un aspect de cette œuvre et à la rapprocher d’autres textes. Le titre du parcours sert de point de départ, pas de résumé automatique.",
+   "essentiel": [
+    "Cahier de Douai est associé aux émancipations créatrices.",
+    "La rage de l’expression est associée à l’atelier du poète.",
+    "Mes forêts est associé à la poésie, la nature et l’intime."
+   ],
+   "image_mentale": "Imagine trois livres, chacun relié à une question différente.",
+   "regle_ou_methode": "Repère l’œuvre étudiée et son parcours, puis cherche un passage précis pour illustrer une idée.",
+   "exemples": [
+    "Si ta classe étudie Cahier de Douai, associe-le au parcours « émancipations créatrices ». Cherche ensuite un poème étudié et explique comment un choix d’écriture éclaire cette question.",
+    "Pour Mes forêts, interroge les liens entre nature et intimité à partir d’un passage lu en classe."
+   ],
+   "piege": "Les trois œuvres sont proposées au choix du professeur ; elles ne sont pas toutes obligatoirement étudiées par chaque classe.",
+   "astuce_memoire": "Un livre choisi, un parcours associé.",
+   "quiz": [
+    {
+     "q": "Quel parcours accompagne Cahier de Douai ?",
+     "choix": [
+      "Mensonge et comédie",
+      "Émancipations créatrices",
+      "Le goût de la science"
+     ],
+     "rep": "Émancipations créatrices",
+     "expl": "Le parcours est « émancipations créatrices ». "
+    },
+    {
+     "q": "Quel thème accompagne Mes forêts ?",
+     "choix": [
+      "La science et ses expériences",
+      "Le roman et l’invention de l’amour",
+      "La poésie, la nature et l’intime"
+     ],
+     "rep": "La poésie, la nature et l’intime",
+     "expl": "Ce parcours associe poésie, nature et intime."
+    },
+    {
+     "q": "Combien d’œuvres sont choisies par le professeur pour cet objet parmi les trois proposées ?",
+     "choix": [
+      "Une",
+      "Deux obligatoirement",
+      "Les trois obligatoirement"
+     ],
+     "rep": "Une",
+     "expl": "Le professeur choisit une œuvre et son parcours."
+    }
+   ],
+   "id": "REV-FR-1RE-04"
+  },
+  {
+   "axe": "La littérature d’idées du XVIe siècle au XVIIIe siècle",
+   "titre": "Thèse et arguments",
+   "emoji": "🧭",
+   "en_une_phrase": "Une argumentation défend une thèse par des raisons et des exemples.",
+   "comprendre": "Quand tu défends une idée à l’oral, tu cherches des raisons pour convaincre. Un texte d’idées organise aussi une position, des arguments et parfois des exemples. Le lecteur examine la cohérence de ce raisonnement.",
+   "essentiel": [
+    "La thèse est l’idée défendue.",
+    "Un argument donne une raison.",
+    "Un exemple illustre ou met à l’épreuve un argument."
+   ],
+   "image_mentale": "Imagine une table : la thèse repose sur plusieurs pieds.",
+   "regle_ou_methode": "Formule la thèse, repère les raisons puis distingue les exemples.",
+   "exemples": [
+    "Dans « Il faut préserver ce jardin, car il abrite des espèces », la thèse demande de préserver le jardin. La présence d’espèces est l’argument qui la justifie.",
+    "Citer un papillon observé dans le jardin peut illustrer cet argument."
+   ],
+   "piege": "Un exemple seul n’est pas automatiquement une preuve générale.",
+   "astuce_memoire": "Thèse : quoi ; argument : pourquoi.",
+   "quiz": [
+    {
+     "q": "Quelle est la thèse dans « Il faut préserver ce jardin, car il abrite des espèces » ?",
+     "choix": [
+      "Il abrite des espèces",
+      "Il est forcément immense",
+      "Il faut préserver ce jardin"
+     ],
+     "rep": "Il faut préserver ce jardin",
+     "expl": "La thèse est la position défendue."
+    },
+    {
+     "q": "Quel rôle joue « car il abrite des espèces » ?",
+     "choix": [
+      "Un argument",
+      "Un titre",
+      "Une didascalie"
+     ],
+     "rep": "Un argument",
+     "expl": "Cette raison soutient la thèse."
+    },
+    {
+     "q": "Un exemple isolé suffit-il toujours à prouver une généralité ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, s’il est imagé"
+     ],
+     "rep": "Non",
+     "expl": "Il faut examiner la portée de la preuve."
+    }
+   ],
+   "id": "REV-FR-1RE-05"
+  },
+  {
+   "axe": "La littérature d’idées du XVIe siècle au XVIIIe siècle",
+   "titre": "Convaincre et persuader",
+   "emoji": "⚖️",
+   "en_une_phrase": "Un texte peut mobiliser à la fois raisonnement et émotions.",
+   "comprendre": "Tu peux soutenir une cause avec des faits ou raconter une situation qui touche ton interlocuteur. Les deux moyens peuvent se combiner. Il faut distinguer leur fonctionnement pour évaluer le texte.",
+   "essentiel": [
+    "Convaincre fait appel au raisonnement.",
+    "Persuader mobilise notamment la sensibilité.",
+    "Une même œuvre peut associer les deux démarches."
+   ],
+   "image_mentale": "Imagine deux chemins qui se rejoignent vers une même idée.",
+   "regle_ou_methode": "Identifie les raisons puis les effets émotionnels et montre leur lien avec la thèse.",
+   "exemples": [
+    "Dans « Le jardin abrite dix espèces : protégeons-le », le constat sert une raison. Dans « Imagine ce lieu désert », l’image sollicite la sensibilité.",
+    "Une lettre fictive peut associer un exemple touchant à une réflexion générale."
+   ],
+   "piege": "Émotion et raisonnement ne s’excluent pas forcément.",
+   "astuce_memoire": "Raison et sensibilité peuvent coopérer.",
+   "quiz": [
+    {
+     "q": "Quel moyen fait surtout appel au raisonnement ?",
+     "choix": [
+      "Une chaîne d’arguments",
+      "Une émotion seule",
+      "Une indication scénique"
+     ],
+     "rep": "Une chaîne d’arguments",
+     "expl": "Une chaîne d’arguments construit une justification."
+    },
+    {
+     "q": "Un texte peut-il associer émotion et raisonnement ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement en vers"
+     ],
+     "rep": "Oui",
+     "expl": "Les démarches peuvent se combiner."
+    },
+    {
+     "q": "Pour juger un argument, que faut-il examiner ?",
+     "choix": [
+      "Seulement sa longueur",
+      "Seulement sa typographie",
+      "Son lien avec la thèse et sa validité"
+     ],
+     "rep": "Son lien avec la thèse et sa validité",
+     "expl": "La pertinence du raisonnement compte."
+    }
+   ],
+   "id": "REV-FR-1RE-06"
+  },
+  {
+   "axe": "La littérature d’idées du XVIe siècle au XVIIIe siècle",
+   "titre": "Œuvres et parcours d’idées",
+   "emoji": "💡",
+   "en_une_phrase": "Les œuvres du programme interrogent liberté, science et regard sur la société.",
+   "comprendre": "Une même question peut prendre la forme d’un discours, d’un dialogue ou de lettres. Le professeur choisit une œuvre et le parcours associé parmi les trois propositions. Appuie ton analyse sur les textes réellement étudiés.",
+   "essentiel": [
+    "Discours de la servitude volontaire est associé à défendre et entretenir la liberté.",
+    "Entretiens sur la pluralité des mondes est associé au goût de la science.",
+    "Lettres d’une Péruvienne est associé au parcours « Un nouvel univers s’est offert à mes yeux »."
+   ],
+   "image_mentale": "Imagine trois portes : liberté, science et regard extérieur.",
+   "regle_ou_methode": "Identifie ton œuvre, son parcours et une question précise qui les relie.",
+   "exemples": [
+    "Pour un texte étudié sur la liberté, commence par identifier la thèse. Cherche ensuite comment le raisonnement éclaire la question de la liberté.",
+    "Pour des lettres étudiées en classe, observe comment le regard de la narratrice interroge une société."
+   ],
+   "piege": "Ne remplace pas la lecture de l’œuvre choisie par le seul titre du parcours.",
+   "astuce_memoire": "Une œuvre, une question, des preuves.",
+   "quiz": [
+    {
+     "q": "Quel parcours accompagne Entretiens sur la pluralité des mondes ?",
+     "choix": [
+      "Mensonge et comédie",
+      "Le goût de la science",
+      "Émancipations créatrices"
+     ],
+     "rep": "Le goût de la science",
+     "expl": "Le parcours porte sur le goût de la science."
+    },
+    {
+     "q": "Quelle forme peut prendre un texte d’idées ?",
+     "choix": [
+      "Uniquement un tableau chiffré",
+      "Uniquement une recette",
+      "Un dialogue"
+     ],
+     "rep": "Un dialogue",
+     "expl": "Un dialogue peut transmettre des idées."
+    },
+    {
+     "q": "Pour défendre une interprétation, que faut-il mobiliser ?",
+     "choix": [
+      "Des passages précis",
+      "Le seul titre",
+      "Une opinion sans lien avec l’œuvre"
+     ],
+     "rep": "Des passages précis",
+     "expl": "Des passages précis étayent l’analyse."
+    }
+   ],
+   "id": "REV-FR-1RE-07"
+  },
+  {
+   "axe": "La littérature d’idées du XVIe siècle au XVIIIe siècle",
+   "titre": "Construire une dissertation",
+   "emoji": "📝",
+   "en_une_phrase": "La dissertation répond à une question en construisant une réflexion organisée sur l’œuvre et son parcours.",
+   "comprendre": "Tu sais défendre une opinion avec des raisons. La dissertation demande de discuter précisément un sujet, en s’appuyant sur une œuvre étudiée et les textes de son parcours. Le plan permet de faire progresser la réponse.",
+   "essentiel": [
+    "Analyse les mots et les présupposés du sujet.",
+    "Construis des parties qui répondent à la question.",
+    "Appuie chaque idée sur des exemples précis expliqués."
+   ],
+   "image_mentale": "Imagine un itinéraire : question, étapes argumentées, réponse.",
+   "regle_ou_methode": "Définis le problème, choisis un plan pertinent, rédige des arguments illustrés puis conclus.",
+   "exemples": [
+    "Face à « La lecture rend-elle toujours libre ? », définis d’abord lecture et liberté. Envisage ensuite ce qu’elle permet, puis ses limites, en utilisant des exemples pertinents de l’œuvre étudiée.",
+    "Une conclusion répond au sujet et fait le bilan de la démonstration."
+   ],
+   "piege": "Ne récite pas un cours sans répondre à la question posée.",
+   "astuce_memoire": "Sujet, problème, arguments, exemples.",
+   "quiz": [
+    {
+     "q": "Quel est le point de départ d’une dissertation ?",
+     "choix": [
+      "Une liste de citations sans lien",
+      "Le résumé intégral d’une autre œuvre",
+      "L’analyse du sujet"
+     ],
+     "rep": "L’analyse du sujet",
+     "expl": "Il faut comprendre la question posée."
+    },
+    {
+     "q": "Que doit faire un exemple ?",
+     "choix": [
+      "Éclairer un argument",
+      "Remplacer tout raisonnement",
+      "Contredire systématiquement le sujet"
+     ],
+     "rep": "Éclairer un argument",
+     "expl": "L’exemple expliqué soutient une idée."
+    },
+    {
+     "q": "La conclusion doit-elle répondre au sujet ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement si elle cite le titre"
+     ],
+     "rep": "Oui",
+     "expl": "Elle synthétise la réponse construite."
+    }
+   ],
+   "id": "REV-FR-1RE-08"
+  },
+  {
+   "axe": "Le roman et le récit du Moyen Âge au XXIe siècle",
+   "titre": "Narrateur et point de vue",
+   "emoji": "👁️",
+   "en_une_phrase": "Le narrateur raconte et le point de vue détermine les informations accessibles au lecteur.",
+   "comprendre": "Dans une histoire racontée entre amis, la personne qui raconte ne sait pas forcément tout. Un récit peut suivre les perceptions d’un personnage ou donner au lecteur davantage d’informations. Distinguer voix et savoir évite les confusions.",
+   "essentiel": [
+    "Le narrateur est la voix qui raconte.",
+    "La focalisation interne limite le regard à un personnage.",
+    "Un narrateur n’est pas automatiquement l’auteur."
+   ],
+   "image_mentale": "Imagine une caméra, une voix et un champ de vision.",
+   "regle_ou_methode": "Repère qui raconte puis ce que le récit permet de savoir et de percevoir.",
+   "exemples": [
+    "Dans « Je traversai la cour sans savoir qui m’attendait », repère je : le narrateur participe au récit. Son ignorance limite ici l’information disponible.",
+    "Un récit à la troisième personne peut néanmoins suivre les pensées d’un personnage."
+   ],
+   "piege": "La troisième personne ne garantit pas à elle seule une focalisation omnisciente.",
+   "astuce_memoire": "Voix : qui raconte ; regard : que sait-on ?",
+   "quiz": [
+    {
+     "q": "Qui est le narrateur ?",
+     "choix": [
+      "La voix qui raconte",
+      "Toujours la personne qui lit",
+      "Toujours l’auteur réel"
+     ],
+     "rep": "La voix qui raconte",
+     "expl": "Le narrateur appartient à la construction du récit."
+    },
+    {
+     "q": "Que limite la focalisation interne ?",
+     "choix": [
+      "Le nombre de pages à une",
+      "Les informations au regard d’un personnage",
+      "La présence de tout dialogue"
+     ],
+     "rep": "Les informations au regard d’un personnage",
+     "expl": "Elle suit le champ de perception d’un personnage."
+    },
+    {
+     "q": "Un récit à la troisième personne peut-il adopter un point de vue interne ?",
+     "choix": [
+      "Non",
+      "Uniquement au théâtre",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "La personne grammaticale ne détermine pas seule la focalisation."
+    }
+   ],
+   "id": "REV-FR-1RE-09"
+  },
+  {
+   "axe": "Le roman et le récit du Moyen Âge au XXIe siècle",
+   "titre": "Personnage et société",
+   "emoji": "🏙️",
+   "en_une_phrase": "Un personnage révèle des tensions entre désir personnel et cadre social.",
+   "comprendre": "Comme dans la vie, un personnage rencontre des règles et des attentes. Le récit montre comment il agit, hésite ou se heurte à elles. Ses choix permettent d’interroger la société représentée.",
+   "essentiel": [
+    "Un personnage se construit par ses actes et paroles.",
+    "Le cadre social peut imposer des contraintes.",
+    "Un conflit peut opposer désir et obligation."
+   ],
+   "image_mentale": "Imagine un personnage à un carrefour entre deux routes.",
+   "regle_ou_methode": "Identifie le désir, la contrainte et les choix, puis explique leur effet sur l’histoire.",
+   "exemples": [
+    "Une héroïne fictive veut étudier mais sa famille refuse. Repère son désir, puis l’obstacle : le conflit organise ses décisions.",
+    "Un personnage qui cache son origine peut révéler le poids d’un jugement social."
+   ],
+   "piege": "Un personnage n’est pas nécessairement le porte-parole direct de l’auteur.",
+   "astuce_memoire": "Désir, obstacle, choix.",
+   "quiz": [
+    {
+     "q": "Que permet d’étudier un conflit entre désir et obligation ?",
+     "choix": [
+      "Seulement la longueur du roman",
+      "Les choix du personnage et ses contraintes",
+      "Seulement la date d’impression"
+     ],
+     "rep": "Les choix du personnage et ses contraintes",
+     "expl": "Le conflit éclaire les actions et leur contexte."
+    },
+    {
+     "q": "Un personnage dit-il toujours la pensée de l’auteur ?",
+     "choix": [
+      "Oui",
+      "Seulement s’il parle à la première personne",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "La fiction ne garantit pas cette identité."
+    },
+    {
+     "q": "Que révèle un personnage qui cache son origine par peur d’un jugement ?",
+     "choix": [
+      "Une contrainte sociale possible",
+      "Une certitude sur tous les lecteurs",
+      "Une règle grammaticale"
+     ],
+     "rep": "Une contrainte sociale possible",
+     "expl": "Cette situation peut révéler le poids du regard social."
+    }
+   ],
+   "id": "REV-FR-1RE-10"
+  },
+  {
+   "axe": "Le roman et le récit du Moyen Âge au XXIe siècle",
+   "titre": "Œuvres et parcours du roman",
+   "emoji": "📚",
+   "en_une_phrase": "Les trois romans proposés invitent à étudier amour, société et mémoire.",
+   "comprendre": "Ton professeur choisit un roman parmi les œuvres nationales et son parcours associé. Le parcours donne une direction pour relire l’intrigue, les personnages et l’écriture. Il faut toujours revenir aux passages de ton œuvre.",
+   "essentiel": [
+    "Le Chevalier de la charrette est lié à l’invention de l’amour.",
+    "Pot-Bouille est lié aux rouages de la société.",
+    "Pluie et vent sur Télumée Miracle est lié au parcours « Tisser les mémoires, habiter le monde »."
+   ],
+   "image_mentale": "Imagine trois chemins : amour, société, mémoire.",
+   "regle_ou_methode": "Associe l’œuvre choisie à son parcours puis utilise un épisode précis pour construire une analyse.",
+   "exemples": [
+    "Si tu étudies Pot-Bouille, repère un épisode montrant des rapports sociaux. Explique ensuite comment la narration les dévoile.",
+    "Pour Le Chevalier de la charrette, analyse une épreuve du héros en lien avec le parcours sur l’amour."
+   ],
+   "piege": "Le parcours éclaire l’œuvre sans remplacer sa lecture.",
+   "astuce_memoire": "Un épisode précis pour une idée.",
+   "quiz": [
+    {
+     "q": "Quel parcours accompagne Pot-Bouille ?",
+     "choix": [
+      "Le goût de la science",
+      "Théâtre et dispute",
+      "Dévoiler les rouages de la société"
+     ],
+     "rep": "Dévoiler les rouages de la société",
+     "expl": "Ce parcours interroge les mécanismes sociaux."
+    },
+    {
+     "q": "Quelle œuvre est associée au parcours « Tisser les mémoires, habiter le monde » ?",
+     "choix": [
+      "Pluie et vent sur Télumée Miracle",
+      "Le Menteur",
+      "Cahier de Douai"
+     ],
+     "rep": "Pluie et vent sur Télumée Miracle",
+     "expl": "Le roman de Simone Schwarz-Bart est étudié avec ce parcours."
+    },
+    {
+     "q": "Quel usage faire d’un épisode dans une analyse ?",
+     "choix": [
+      "Le résumer sans lien avec le sujet",
+      "Le relier à une idée et l’expliquer",
+      "Le remplacer par le titre"
+     ],
+     "rep": "Le relier à une idée et l’expliquer",
+     "expl": "L’épisode doit étayer une interprétation."
+    }
+   ],
+   "id": "REV-FR-1RE-11"
+  },
+  {
+   "axe": "Le roman et le récit du Moyen Âge au XXIe siècle",
+   "titre": "Le commentaire littéraire",
+   "emoji": "🔎",
+   "en_une_phrase": "Le commentaire organise une interprétation du texte à partir d’indices précis.",
+   "comprendre": "Tu sais déjà expliquer ce que tu comprends d’un passage. Le commentaire va plus loin : il regroupe des observations et montre comment l’écriture produit des effets. Les axes de lecture doivent éclairer l’ensemble du texte.",
+   "essentiel": [
+    "Lis plusieurs fois et repère la situation.",
+    "Construis des axes d’interprétation cohérents.",
+    "Associe citation brève, procédé et analyse."
+   ],
+   "image_mentale": "Imagine une loupe qui relie chaque détail à une idée d’ensemble.",
+   "regle_ou_methode": "Formule une lecture d’ensemble, regroupe les indices puis rédige des analyses organisées.",
+   "exemples": [
+    "Dans « la ville s’éveille », relève le verbe s’éveille. La personnification présente la ville comme vivante ; relie cet effet à ton interprétation du passage.",
+    "Une répétition peut installer une insistance : précise toujours sur quoi elle insiste dans le contexte."
+   ],
+   "piege": "Un catalogue de figures sans explication ne constitue pas un commentaire.",
+   "astuce_memoire": "Indice, procédé, effet, idée.",
+   "quiz": [
+    {
+     "q": "Que doit éclairer un axe de commentaire ?",
+     "choix": [
+      "Une interprétation du texte",
+      "Uniquement la biographie de l’auteur",
+      "Une liste de figures sans effet"
+     ],
+     "rep": "Une interprétation du texte",
+     "expl": "Un axe organise une lecture argumentée."
+    },
+    {
+     "q": "Quel procédé figure dans « la ville s’éveille » ?",
+     "choix": [
+      "Une statistique",
+      "Une personnification",
+      "Une adresse postale"
+     ],
+     "rep": "Une personnification",
+     "expl": "La ville reçoit une action humaine."
+    },
+    {
+     "q": "Après une courte citation, que faut-il faire ?",
+     "choix": [
+      "Passer immédiatement à un autre texte",
+      "La recopier encore",
+      "Expliquer son effet et son lien avec l’idée"
+     ],
+     "rep": "Expliquer son effet et son lien avec l’idée",
+     "expl": "L’analyse établit le lien avec l’interprétation."
+    }
+   ],
+   "id": "REV-FR-1RE-12"
+  },
+  {
+   "axe": "Le théâtre du XVIIe siècle au XXIe siècle",
+   "titre": "Double énonciation",
+   "emoji": "🎭",
+   "en_une_phrase": "Au théâtre, une parole s’adresse à un personnage et peut aussi informer le public.",
+   "comprendre": "Dans une scène, les personnages se parlent devant des spectateurs. Le public peut comprendre une intention ou un mensonge qu’un personnage ignore. Cette double destination crée des effets dramatiques.",
+   "essentiel": [
+    "Une réplique est une parole prononcée par un personnage.",
+    "Une didascalie est une indication scénique.",
+    "Un aparté est censé ne pas être entendu par les autres personnages sur scène."
+   ],
+   "image_mentale": "Imagine une réplique envoyée vers un personnage et vers la salle.",
+   "regle_ou_methode": "Repère qui parle, à qui, et ce que le public sait en plus.",
+   "exemples": [
+    "Un personnage dit à un autre « Je te crois », puis murmure en aparté « Je mens ». Repère les deux destinataires : l’autre personnage entend la première phrase, le public comprend la tromperie.",
+    "Une didascalie comme « Il détourne les yeux » indique un geste à interpréter."
+   ],
+   "piege": "Un aparté n’est pas simplement une parole adressée à tous les personnages.",
+   "astuce_memoire": "Sur scène et dans la salle : deux réceptions.",
+   "quiz": [
+    {
+     "q": "Qu’est-ce qu’une didascalie ?",
+     "choix": [
+      "La réponse correcte à un quiz",
+      "Une indication scénique",
+      "Une strophe"
+     ],
+     "rep": "Une indication scénique",
+     "expl": "Elle précise notamment gestes ou situation."
+    },
+    {
+     "q": "Qui est censé entendre un aparté ?",
+     "choix": [
+      "Tous les personnages sans exception",
+      "Personne dans la salle",
+      "Le public, mais pas les autres personnages concernés"
+     ],
+     "rep": "Le public, mais pas les autres personnages concernés",
+     "expl": "La convention de l’aparté distingue scène et public."
+    },
+    {
+     "q": "Que peut produire le savoir supplémentaire du public ?",
+     "choix": [
+      "Une tension ou un effet comique",
+      "Une disparition obligatoire du dialogue",
+      "Une preuve historique"
+     ],
+     "rep": "Une tension ou un effet comique",
+     "expl": "Le décalage de savoir crée des effets dramatiques."
+    }
+   ],
+   "id": "REV-FR-1RE-13"
+  },
+  {
+   "axe": "Le théâtre du XVIIe siècle au XXIe siècle",
+   "titre": "Conflit et parole",
+   "emoji": "🗨️",
+   "en_une_phrase": "Au théâtre, la parole peut agir et faire évoluer un conflit.",
+   "comprendre": "Une conversation peut rapprocher ou séparer deux personnes. Au théâtre, les répliques peuvent séduire, accuser, dissimuler ou rompre. Les interruptions et les silences comptent aussi.",
+   "essentiel": [
+    "Une tirade est une longue réplique.",
+    "La stichomythie enchaîne des répliques brèves.",
+    "Un silence peut modifier la tension d’une scène."
+   ],
+   "image_mentale": "Imagine deux voix qui se répondent, s’interrompent puis se taisent.",
+   "regle_ou_methode": "Observe l’objectif de chaque personnage et l’évolution des répliques.",
+   "exemples": [
+    "Dans un échange inventé, l’un demande « Pourquoi ? » et l’autre répond « Pour rien ». Repère la brièveté des répliques puis explique comment elle peut accentuer la tension.",
+    "Une longue tirade peut permettre à un personnage d’organiser sa défense."
+   ],
+   "piege": "Les paroles ne servent pas seulement à raconter : elles peuvent agir sur autrui.",
+   "astuce_memoire": "Qui veut quoi, et par quels mots ?",
+   "quiz": [
+    {
+     "q": "Qu’est-ce qu’une tirade ?",
+     "choix": [
+      "Un groupe de strophes",
+      "Une indication de date",
+      "Une longue réplique"
+     ],
+     "rep": "Une longue réplique",
+     "expl": "Une tirade est une longue prise de parole."
+    },
+    {
+     "q": "Que désigne la stichomythie ?",
+     "choix": [
+      "Un échange de répliques brèves",
+      "Un décor sans personnages",
+      "Une longue description narrative"
+     ],
+     "rep": "Un échange de répliques brèves",
+     "expl": "La stichomythie accélère souvent l’échange."
+    },
+    {
+     "q": "Un silence peut-il participer au conflit ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement dans un roman"
+     ],
+     "rep": "Oui",
+     "expl": "Un silence peut produire de la tension sur scène."
+    }
+   ],
+   "id": "REV-FR-1RE-14"
+  },
+  {
+   "axe": "Le théâtre du XVIIe siècle au XXIe siècle",
+   "titre": "Œuvres et parcours du théâtre",
+   "emoji": "🎟️",
+   "en_une_phrase": "Les pièces proposées explorent mensonge, sentiment et dispute.",
+   "comprendre": "Le professeur choisit une pièce parmi les trois œuvres nationales. Le parcours associé guide l’étude de ses situations et de sa parole. Pour convaincre, pars d’une scène précise.",
+   "essentiel": [
+    "Le Menteur est associé à mensonge et comédie.",
+    "On ne badine pas avec l’amour est associé aux jeux du cœur et de la parole.",
+    "Pour un oui ou pour un non est associé à théâtre et dispute."
+   ],
+   "image_mentale": "Imagine trois scènes : tromper, aimer, se disputer.",
+   "regle_ou_methode": "Repère la pièce de ta classe, son parcours et un échange qui éclaire leur relation.",
+   "exemples": [
+    "Si ta classe étudie Le Menteur, repère une scène de tromperie. Explique ensuite ce que les spectateurs savent et comment cela peut produire un effet comique.",
+    "Pour une scène de dispute, observe comment un mot ou une intonation modifie la relation."
+   ],
+   "piege": "Ne confonds pas le titre d’un parcours avec une interprétation déjà démontrée.",
+   "astuce_memoire": "Scène précise, parole, effet.",
+   "quiz": [
+    {
+     "q": "Quel parcours accompagne Le Menteur ?",
+     "choix": [
+      "Mensonge et comédie",
+      "Le goût de la science",
+      "Dans l’atelier du poète"
+     ],
+     "rep": "Mensonge et comédie",
+     "expl": "Le parcours associe mensonge et comédie."
+    },
+    {
+     "q": "Quelle pièce est associée à théâtre et dispute ?",
+     "choix": [
+      "Pot-Bouille",
+      "Pour un oui ou pour un non",
+      "Mes forêts"
+     ],
+     "rep": "Pour un oui ou pour un non",
+     "expl": "Cette pièce est associée à ce parcours."
+    },
+    {
+     "q": "Pour étudier une dispute, quel indice est pertinent ?",
+     "choix": [
+      "Uniquement la couleur de la couverture",
+      "Le nombre de spectateurs à une représentation inconnue",
+      "L’enchaînement des répliques"
+     ],
+     "rep": "L’enchaînement des répliques",
+     "expl": "Les répliques montrent l’évolution du conflit."
+    }
+   ],
+   "id": "REV-FR-1RE-15"
+  },
+  {
+   "axe": "Expression écrite et orale",
+   "titre": "Préparer l’oral",
+   "emoji": "🎤",
+   "en_une_phrase": "L’oral associe explication d’un texte et entretien sur une œuvre choisie.",
+   "comprendre": "Tu as déjà lu des textes en classe et discuté de tes lectures. À l’épreuve, la première partie comprend lecture, explication linéaire et question de grammaire. La seconde permet de présenter une œuvre et de dialoguer à son sujet.",
+   "essentiel": [
+    "La préparation dure 30 minutes.",
+    "L’oral dure 20 minutes : 12 minutes puis 8 minutes.",
+    "La présentation personnelle est suivie d’un entretien."
+   ],
+   "image_mentale": "Imagine deux étapes : texte expliqué, puis œuvre discutée.",
+   "regle_ou_methode": "Situe et lis le texte, explique sa progression, réponds à la grammaire puis justifie ton choix de lecture.",
+   "exemples": [
+    "Pour préparer un passage, repère ses mouvements et note un procédé avec son effet. À l’oral, suis l’ordre du texte et montre comment les observations répondent à ta lecture d’ensemble.",
+    "Pour l’entretien, explique ce qu’une scène précise t’a fait comprendre de l’œuvre choisie."
+   ],
+   "piege": "Ne remplace pas l’analyse du texte par une récitation sans lien avec le passage choisi.",
+   "astuce_memoire": "Texte, grammaire, œuvre, dialogue.",
+   "quiz": [
+    {
+     "q": "Combien dure le temps de préparation ?",
+     "choix": [
+      "5 minutes",
+      "30 minutes",
+      "2 heures"
+     ],
+     "rep": "30 minutes",
+     "expl": "La préparation dure 30 minutes."
+    },
+    {
+     "q": "Sur quoi porte la question de grammaire ?",
+     "choix": [
+      "Sur un texte inconnu sans lien",
+      "Sur une œuvre jamais lue",
+      "Sur un passage de l’extrait expliqué"
+     ],
+     "rep": "Sur un passage de l’extrait expliqué",
+     "expl": "Elle porte sur une courte phrase ou partie de phrase du texte."
+    },
+    {
+     "q": "Que demande l’entretien sur l’œuvre ?",
+     "choix": [
+      "Justifier et développer son choix",
+      "Réciter uniquement le titre",
+      "Ne pas répondre aux relances"
+     ],
+     "rep": "Justifier et développer son choix",
+     "expl": "Il valorise un échange personnel argumenté."
+    }
+   ],
+   "id": "REV-FR-1RE-16"
+  },
+  {
+   "axe": "Étude de la langue",
+   "titre": "Analyser une proposition",
+   "emoji": "🔗",
+   "en_une_phrase": "Une proposition se repère autour d’un verbe conjugué et s’insère dans une phrase.",
+   "comprendre": "Quand une phrase comporte plusieurs actions, elle peut contenir plusieurs propositions. Une subordonnée dépend d’une autre proposition. La grammaire aide à expliquer comment les idées sont reliées.",
+   "essentiel": [
+    "Une proposition comporte généralement un verbe conjugué.",
+    "Une subordonnée dépend d’une proposition principale.",
+    "Le mot introducteur aide à reconnaître certaines subordonnées."
+   ],
+   "image_mentale": "Imagine deux wagons reliés, dont l’un dépend de l’autre.",
+   "regle_ou_methode": "Repère les verbes conjugués, délimite les propositions puis précise leur lien.",
+   "exemples": [
+    "Dans « Je pense que tu comprends », repère pense et comprends. « Que tu comprends » est une subordonnée complétive qui dépend de « Je pense ».",
+    "Dans « Le livre que je lis est ouvert », « que je lis » complète le nom livre : c’est une relative."
+   ],
+   "piege": "Le mot que ne suffit pas seul à déterminer la fonction de toute proposition.",
+   "astuce_memoire": "Verbes, limites, lien.",
+   "quiz": [
+    {
+     "q": "Combien de verbes conjugués dans « Je pense que tu comprends » ?",
+     "choix": [
+      "Un",
+      "Trois",
+      "Deux"
+     ],
+     "rep": "Deux",
+     "expl": "Pense et comprends sont conjugués."
+    },
+    {
+     "q": "Que complète la relative dans « Le livre que je lis est ouvert » ?",
+     "choix": [
+      "Le nom livre",
+      "Le mot ouvert",
+      "Toute la phrase uniquement"
+     ],
+     "rep": "Le nom livre",
+     "expl": "La relative complète son antécédent livre."
+    },
+    {
+     "q": "Une subordonnée est-elle indépendante de toute autre proposition ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Toujours à l’oral"
+     ],
+     "rep": "Non",
+     "expl": "Elle dépend d’une autre proposition."
+    }
+   ],
+   "id": "REV-FR-1RE-17"
+  }
+ ]
+}

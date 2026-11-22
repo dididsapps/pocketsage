@@ -1,0 +1,911 @@
+{
+ "classe": "2DE",
+ "niveau_appli": "Lycée",
+ "age": "15-16 ans",
+ "matiere": "Sciences économiques et sociales",
+ "code": "SES",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Comment les économistes, les sociologues et les politistes raisonnent-ils et travaillent-ils ?",
+   "titre": "Trois regards sur la société",
+   "emoji": "🔎",
+   "en_une_phrase": "Économie, sociologie et science politique étudient les sociétés à partir de questions et de méthodes scientifiques.",
+   "comprendre": "Un même phénomène peut être étudié sous plusieurs angles. L’économie s’intéresse notamment aux choix et à l’allocation de ressources rares. La sociologie étudie les comportements sociaux et la science politique analyse la conquête et l’exercice du pouvoir.",
+   "essentiel": [
+    "Les sciences sociales formulent des questions et des hypothèses.",
+    "Elles utilisent notamment des enquêtes, des données et des modèles.",
+    "Leurs regards peuvent être complémentaires."
+   ],
+   "image_mentale": "Imagine trois projecteurs éclairant différentes dimensions d’une même situation.",
+   "regle_ou_methode": "Identifie la question étudiée, la discipline mobilisée puis les données utiles.",
+   "exemples": [
+    "Pour étudier l’achat d’un billet, un économiste peut analyser le prix et le budget. Un sociologue peut examiner les habitudes des groupes. Un politiste peut étudier les décisions publiques de transport.",
+    "Une enquête par questionnaire peut recueillir des informations sur des pratiques sociales."
+   ],
+   "piege": "Une discipline ne se réduit pas à une opinion personnelle : elle confronte ses propositions aux faits.",
+   "astuce_memoire": "Questions, hypothèses, données, confrontation.",
+   "quiz": [
+    {
+     "q": "Quelle question relève notamment de la science politique ?",
+     "choix": [
+      "Quelle est la formule de l’eau ?",
+      "Comment s’exerce le pouvoir politique ?",
+      "Quelle est la masse d’un atome ?"
+     ],
+     "rep": "Comment s’exerce le pouvoir politique ?",
+     "expl": "La science politique étudie notamment le pouvoir."
+    },
+    {
+     "q": "À quoi sert une enquête en sciences sociales ?",
+     "choix": [
+      "À remplacer toute analyse par une opinion",
+      "À supprimer le besoin de données",
+      "À recueillir des informations pour étudier une question"
+     ],
+     "rep": "À recueillir des informations pour étudier une question",
+     "expl": "Une enquête permet de collecter des données."
+    },
+    {
+     "q": "Un même phénomène peut-il être étudié par plusieurs disciplines ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement sans aucune donnée"
+     ],
+     "rep": "Oui",
+     "expl": "Plusieurs regards peuvent éclairer des dimensions différentes."
+    }
+   ],
+   "id": "REV-SES-2DE-01"
+  },
+  {
+   "axe": "Comment les économistes, les sociologues et les politistes raisonnent-ils et travaillent-ils ?",
+   "titre": "Corrélation et causalité",
+   "emoji": "📊",
+   "en_une_phrase": "Une corrélation décrit une association ; elle ne prouve pas à elle seule qu’une variable cause l’autre.",
+   "comprendre": "Deux phénomènes peuvent évoluer ensemble. Ce lien peut avoir plusieurs explications : causalité directe, influence inverse ou facteur commun. Une recherche causale doit comparer des hypothèses et examiner des données adaptées.",
+   "essentiel": [
+    "Une corrélation est une association observée.",
+    "Une causalité signifie qu’une variation produit un effet sur une autre variable.",
+    "Un facteur commun peut influencer les deux phénomènes."
+   ],
+   "image_mentale": "Imagine deux courbes qui montent ensemble et une troisième cause possible.",
+   "regle_ou_methode": "Repère les variables, envisage un facteur commun puis cherche une méthode pour tester l’hypothèse causale.",
+   "exemples": [
+    "Les ventes de glaces et la fréquentation d’une piscine augmentent simultanément. La chaleur peut influencer les deux. Cette association ne prouve pas que les glaces provoquent la fréquentation.",
+    "Une comparaison de groupes bien conçue peut aider à examiner l’effet d’un facteur."
+   ],
+   "piege": "Deux courbes qui évoluent ensemble ne suffisent pas à établir une cause.",
+   "astuce_memoire": "Association n’est pas preuve de cause.",
+   "quiz": [
+    {
+     "q": "Deux variables augmentent ensemble. Que peut-on conclure immédiatement ?",
+     "choix": [
+      "La première cause nécessairement la seconde",
+      "Aucune autre variable ne peut intervenir",
+      "Elles sont associées dans les données observées"
+     ],
+     "rep": "Elles sont associées dans les données observées",
+     "expl": "Une association ne détermine pas à elle seule le mécanisme causal."
+    },
+    {
+     "q": "Quel facteur peut influencer à la fois ventes de glaces et fréquentation d’une piscine ?",
+     "choix": [
+      "La chaleur",
+      "Le seul titre du graphique",
+      "Une couleur choisie au hasard"
+     ],
+     "rep": "La chaleur",
+     "expl": "La chaleur peut accroître les deux phénomènes."
+    },
+    {
+     "q": "Que faut-il pour étudier une causalité ?",
+     "choix": [
+      "Supposer la cause sans vérification",
+      "Examiner des hypothèses et des données adaptées",
+      "Ignorer les autres facteurs possibles"
+     ],
+     "rep": "Examiner des hypothèses et des données adaptées",
+     "expl": "La causalité demande une démarche d’enquête adaptée."
+    }
+   ],
+   "id": "REV-SES-2DE-02"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Qui produit ?",
+   "emoji": "🏭",
+   "en_une_phrase": "Des entreprises, des administrations et des organisations de l’économie sociale et solidaire produisent des biens ou des services.",
+   "comprendre": "Tu utilises des biens et des services fournis par des producteurs variés. Une production marchande est vendue à un prix économiquement significatif. Une production non marchande est fournie gratuitement ou à un prix économiquement non significatif.",
+   "essentiel": [
+    "Les entreprises produisent souvent pour vendre.",
+    "Les administrations fournissent notamment des services non marchands.",
+    "Certaines associations produisent des services marchands ou non marchands."
+   ],
+   "image_mentale": "Imagine une entreprise, une école publique et une association autour des usagers.",
+   "regle_ou_methode": "Identifie le producteur, le bien ou service et les conditions de sa fourniture.",
+   "exemples": [
+    "Une boulangerie vend du pain à un prix couvrant ses coûts : sa production est marchande. Une école publique fournit un enseignement sans prix payé directement pour chaque cours. Dans cet exemple, la production scolaire est non marchande.",
+    "Une association peut proposer une activité gratuite financée par des dons ou des subventions."
+   ],
+   "piege": "Une production non marchande a un coût même si l’usager ne paie pas directement un prix significatif.",
+   "astuce_memoire": "Marchand ou non marchand : observer les conditions de vente.",
+   "quiz": [
+    {
+     "q": "Quel exemple illustre une production marchande ?",
+     "choix": [
+      "Du pain vendu par une boulangerie",
+      "Un service gratuit fourni sans prix significatif",
+      "Un loisir sans production organisée"
+     ],
+     "rep": "Du pain vendu par une boulangerie",
+     "expl": "Le pain est vendu à un prix économiquement significatif."
+    },
+    {
+     "q": "Une production gratuite pour l’usager est-elle forcément sans coût ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, si elle est publique"
+     ],
+     "rep": "Non",
+     "expl": "Des moyens humains et matériels restent nécessaires."
+    },
+    {
+     "q": "Une association peut-elle produire un service non marchand ?",
+     "choix": [
+      "Non",
+      "Seulement si elle est une entreprise privée lucrative",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Une association peut fournir gratuitement un service financé autrement."
+    }
+   ],
+   "id": "REV-SES-2DE-03"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Les facteurs de production",
+   "emoji": "⚙️",
+   "en_une_phrase": "Produire combine du travail, du capital, des ressources naturelles et des connaissances techniques.",
+   "comprendre": "Pour fabriquer un objet, il faut des personnes et des équipements. Le travail correspond à l’activité humaine mobilisée. Le capital productif comprend les biens durables utilisés pour produire.",
+   "essentiel": [
+    "Le travail est une activité humaine de production.",
+    "Le capital productif comprend notamment machines et bâtiments utilisés durablement.",
+    "Les techniques et les ressources naturelles influencent la production."
+   ],
+   "image_mentale": "Imagine un atelier avec des personnes, des machines et des matières premières.",
+   "regle_ou_methode": "Identifie les personnes, les équipements durables et les ressources utilisées.",
+   "exemples": [
+    "Dans une boulangerie, les personnes préparent le pain : c’est le travail. Le four utilisé durablement est un élément du capital productif. La farine est une consommation intermédiaire.",
+    "Un logiciel utilisé durablement peut contribuer à la production d’un service."
+   ],
+   "piege": "Le capital productif ne désigne pas ici uniquement l’argent disponible.",
+   "astuce_memoire": "Travail, équipements durables, ressources et techniques.",
+   "quiz": [
+    {
+     "q": "Dans une boulangerie, quel élément est du capital productif ?",
+     "choix": [
+      "Le travail du boulanger",
+      "Le four utilisé durablement",
+      "La farine incorporée chaque jour"
+     ],
+     "rep": "Le four utilisé durablement",
+     "expl": "Le four est un équipement durable utilisé pour produire."
+    },
+    {
+     "q": "La farine incorporée au pain est ici :",
+     "choix": [
+      "Un bâtiment durable",
+      "Un salarié",
+      "Une consommation intermédiaire"
+     ],
+     "rep": "Une consommation intermédiaire",
+     "expl": "Elle est utilisée et transformée dans la production."
+    },
+    {
+     "q": "Le travail désigne-t-il l’activité humaine mobilisée pour produire ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement une machine"
+     ],
+     "rep": "Oui",
+     "expl": "Le travail correspond ici à l’activité humaine de production."
+    }
+   ],
+   "id": "REV-SES-2DE-04"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Chiffre d’affaires et valeur ajoutée",
+   "emoji": "💶",
+   "en_une_phrase": "Le chiffre d’affaires mesure les ventes ; la valeur ajoutée mesure la richesse créée par la production.",
+   "comprendre": "Une entreprise vend une production mais achète aussi des biens et services à d’autres producteurs. Le chiffre d’affaires correspond aux ventes. La valeur ajoutée retire les consommations intermédiaires de la valeur de production.",
+   "essentiel": [
+    "Chiffre d’affaires = prix de vente × quantités vendues pour un produit.",
+    "Valeur ajoutée = valeur de production − consommations intermédiaires.",
+    "Valeur ajoutée et bénéfice ne sont pas identiques."
+   ],
+   "image_mentale": "Imagine les ventes comme un rectangle dont on retire les achats consommés pour produire.",
+   "regle_ou_methode": "Calcule la valeur de production puis soustrais les consommations intermédiaires.",
+   "exemples": [
+    "Un atelier vend toute sa production pour 1 000 € et utilise 400 € de matières et services consommés. La valeur ajoutée est 1 000 − 400 = 600 €. Elle sert notamment à rémunérer différents acteurs et à couvrir d’autres charges.",
+    "Vendre 50 objets à 10 € donne un chiffre d’affaires de 500 €."
+   ],
+   "piege": "La valeur ajoutée ne correspond pas au bénéfice : d’autres charges restent à prendre en compte.",
+   "astuce_memoire": "Production moins consommations intermédiaires.",
+   "quiz": [
+    {
+     "q": "Une production vendue 1 000 € nécessite 400 € de consommations intermédiaires. Quelle valeur ajoutée ?",
+     "choix": [
+      "1 400 €",
+      "400 €",
+      "600 €"
+     ],
+     "rep": "600 €",
+     "expl": "1 000 − 400 = 600 €."
+    },
+    {
+     "q": "Quel chiffre d’affaires correspond à 50 objets vendus 10 € chacun ?",
+     "choix": [
+      "500 €",
+      "60 €",
+      "5 €"
+     ],
+     "rep": "500 €",
+     "expl": "50 × 10 = 500 €."
+    },
+    {
+     "q": "La valeur ajoutée est-elle toujours égale au bénéfice ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, dès que les ventes sont positives"
+     ],
+     "rep": "Non",
+     "expl": "D’autres charges interviennent dans le calcul du bénéfice."
+    }
+   ],
+   "id": "REV-SES-2DE-05"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "PIB et croissance",
+   "emoji": "📈",
+   "en_une_phrase": "Le PIB mesure la production de richesse sur un territoire et la croissance décrit son évolution.",
+   "comprendre": "Pour observer l’activité économique d’un pays, on utilise des indicateurs globaux. Le PIB agrège notamment les valeurs ajoutées produites sur le territoire. La croissance économique désigne l’évolution du PIB en volume.",
+   "essentiel": [
+    "Le PIB est un indicateur de production intérieure.",
+    "La croissance en volume tient compte de l’évolution des prix.",
+    "Le PIB ne décrit pas à lui seul les inégalités ni tous les impacts environnementaux."
+   ],
+   "image_mentale": "Imagine des valeurs ajoutées rassemblées dans un indicateur global.",
+   "regle_ou_methode": "Compare le PIB en volume à deux dates, calcule son taux d’évolution puis examine les limites de l’indicateur.",
+   "exemples": [
+    "Un PIB en volume passe de 100 à 103 unités. L’augmentation est de 3 unités pour une valeur initiale de 100. Le taux de croissance est donc de 3 %.",
+    "Deux territoires peuvent avoir un PIB comparable mais des répartitions de revenus différentes."
+   ],
+   "piege": "Une hausse du PIB ne signifie pas automatiquement une amélioration identique pour tous.",
+   "astuce_memoire": "PIB : production ; croissance : évolution en volume.",
+   "quiz": [
+    {
+     "q": "Un PIB en volume passe de 100 à 103. Quel est son taux de croissance ?",
+     "choix": [
+      "3 %",
+      "103 %",
+      "−3 %"
+     ],
+     "rep": "3 %",
+     "expl": "(103 − 100)/100 = 3 %."
+    },
+    {
+     "q": "Le PIB mesure-t-il à lui seul toutes les inégalités ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, si le pays est grand"
+     ],
+     "rep": "Non",
+     "expl": "Un indicateur global ne décrit pas la répartition des revenus."
+    },
+    {
+     "q": "Pourquoi considérer le PIB en volume ?",
+     "choix": [
+      "Pour compter seulement la population",
+      "Pour supprimer toute activité non marchande",
+      "Pour neutraliser l’effet de l’évolution des prix dans la comparaison"
+     ],
+     "rep": "Pour neutraliser l’effet de l’évolution des prix dans la comparaison",
+     "expl": "Le volume permet de comparer la production en neutralisant l’effet des prix."
+    }
+   ],
+   "id": "REV-SES-2DE-06"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Croissance et environnement",
+   "emoji": "🌱",
+   "en_une_phrase": "La croissance de la production peut exercer des pressions sur les ressources et les milieux.",
+   "comprendre": "Produire et consommer mobilise de l’énergie et des matières. Certaines activités émettent des polluants ou des gaz à effet de serre. Le PIB ne retranche pas automatiquement tous ces dommages environnementaux.",
+   "essentiel": [
+    "La production utilise des ressources et de l’énergie.",
+    "Certaines activités produisent des pollutions ou des émissions.",
+    "Le PIB ne mesure pas à lui seul les dommages écologiques."
+   ],
+   "image_mentale": "Imagine une production accompagnée de flèches montrant ses ressources et ses rejets.",
+   "regle_ou_methode": "Identifie l’activité, les ressources utilisées et les effets environnementaux avant de discuter l’indicateur.",
+   "exemples": [
+    "Une usine produit davantage de biens et utilise davantage d’énergie fossile, toutes choses égales par ailleurs. Sa production augmente. Ses émissions peuvent aussi augmenter si ses techniques ne changent pas.",
+    "Une activité peut générer une valeur ajoutée tout en exerçant une pression sur l’eau locale."
+   ],
+   "piege": "Une hausse du PIB ne permet pas à elle seule de conclure que l’environnement est préservé.",
+   "astuce_memoire": "Production, ressources, rejets : plusieurs indicateurs.",
+   "quiz": [
+    {
+     "q": "Une hausse du PIB décrit-elle à elle seule tous les dommages écologiques ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, automatiquement"
+     ],
+     "rep": "Non",
+     "expl": "Le PIB ne résume pas tous les effets sur l’environnement."
+    },
+    {
+     "q": "Quel exemple représente une pression environnementale ?",
+     "choix": [
+      "Une unité de monnaie seule",
+      "Le titre d’un graphique",
+      "Des émissions dues à une énergie fossile"
+     ],
+     "rep": "Des émissions dues à une énergie fossile",
+     "expl": "La combustion d’énergies fossiles peut émettre des gaz à effet de serre."
+    },
+    {
+     "q": "Une production de valeur ajoutée peut-elle aussi affecter une ressource en eau ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement si la valeur ajoutée est négative"
+     ],
+     "rep": "Oui",
+     "expl": "Une activité économique peut exercer une pression sur l’eau."
+    }
+   ],
+   "id": "REV-SES-2DE-07"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Offre, demande et prix",
+   "emoji": "⚖️",
+   "en_une_phrase": "Dans un modèle simple de marché, le prix d’équilibre égalise les quantités offertes et demandées.",
+   "comprendre": "Sur un marché, des vendeurs proposent un bien et des acheteurs souhaitent l’acquérir. Dans un modèle simple, la quantité demandée diminue souvent quand le prix augmente, tandis que la quantité offerte augmente. Le prix d’équilibre correspond à leur rencontre.",
+   "essentiel": [
+    "La demande relie prix et quantité souhaitée par les acheteurs.",
+    "L’offre relie prix et quantité proposée par les vendeurs.",
+    "À l’équilibre du modèle, quantités offertes et demandées sont égales."
+   ],
+   "image_mentale": "Imagine deux courbes qui se croisent : l’une descend et l’autre monte.",
+   "regle_ou_methode": "Pour chaque prix, compare quantités offertes et demandées puis repère leur égalité.",
+   "exemples": [
+    "À un prix de 4 €, des vendeurs offrent 30 unités et des acheteurs demandent 30 unités. Dans ce modèle, les quantités sont égales. Le prix de 4 € est un prix d’équilibre.",
+    "À un prix donné, si la demande dépasse l’offre, une pénurie apparaît dans ce modèle."
+   ],
+   "piege": "Ces relations décrivent un modèle simple et ne prédisent pas automatiquement toutes les situations réelles.",
+   "astuce_memoire": "Équilibre : offre égale demande.",
+   "quiz": [
+    {
+     "q": "À 4 €, offre et demande valent chacune 30 unités. Que représente ce prix dans le modèle ?",
+     "choix": [
+      "Une pénurie certaine",
+      "Un prix sans échange possible",
+      "Un prix d’équilibre"
+     ],
+     "rep": "Un prix d’équilibre",
+     "expl": "Les quantités offertes et demandées sont égales."
+    },
+    {
+     "q": "Que se passe-t-il si la demande dépasse l’offre à un prix donné ?",
+     "choix": [
+      "Une pénurie apparaît dans ce modèle",
+      "Un excédent apparaît nécessairement",
+      "Les quantités sont égales"
+     ],
+     "rep": "Une pénurie apparaît dans ce modèle",
+     "expl": "La quantité demandée excède la quantité proposée."
+    },
+    {
+     "q": "Comment évolue généralement la demande quand le prix augmente dans le modèle simple ?",
+     "choix": [
+      "Elle augmente nécessairement",
+      "Elle diminue",
+      "Elle devient toujours nulle"
+     ],
+     "rep": "Elle diminue",
+     "expl": "La relation de demande retenue est décroissante."
+    }
+   ],
+   "id": "REV-SES-2DE-08"
+  },
+  {
+   "axe": "Science économique",
+   "titre": "Taxe et subvention",
+   "emoji": "🏷️",
+   "en_une_phrase": "Une taxe ou une subvention peut modifier les coûts, les prix et les quantités échangées.",
+   "comprendre": "Les pouvoirs publics peuvent prélever une taxe ou soutenir une activité par une subvention. Dans un modèle de marché, ces mesures modifient les conditions d’offre ou de demande. Leurs effets dépendent des réactions des acheteurs et des vendeurs.",
+   "essentiel": [
+    "Une taxe ajoute un prélèvement selon les règles retenues.",
+    "Une subvention apporte un soutien financier selon ses conditions.",
+    "Les effets sur le prix et la quantité dépendent du modèle."
+   ],
+   "image_mentale": "Imagine deux courbes de marché dont l’une se déplace après une mesure.",
+   "regle_ou_methode": "Précise qui paie ou reçoit la mesure, puis examine son effet sur les quantités offertes et demandées.",
+   "exemples": [
+    "Une taxe de 1 € par objet est due par le vendeur dans un modèle simple. À prix payé par l’acheteur inchangé, le vendeur conserve 1 € de moins. Son offre peut donc diminuer à ce prix.",
+    "Une subvention versée au producteur peut rendre certaines ventes possibles à un prix donné."
+   ],
+   "piege": "L’effet exact sur le prix payé par l’acheteur dépend notamment des réactions de l’offre et de la demande.",
+   "astuce_memoire": "Mesure, acteur concerné, réaction du marché.",
+   "quiz": [
+    {
+     "q": "Une taxe par unité due par le vendeur peut-elle modifier son offre ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement si elle n’est jamais payée"
+     ],
+     "rep": "Oui",
+     "expl": "Elle modifie ce que le vendeur conserve pour chaque vente."
+    },
+    {
+     "q": "Une subvention peut-elle soutenir une production ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement si elle supprime toutes les ventes"
+     ],
+     "rep": "Oui",
+     "expl": "Elle peut modifier les conditions économiques de production."
+    },
+    {
+     "q": "L’effet exact d’une taxe est-il toujours identique sur tous les marchés ?",
+     "choix": [
+      "Oui",
+      "Oui, quelles que soient les réactions",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Il dépend notamment des réactions des acheteurs et des vendeurs."
+    }
+   ],
+   "id": "REV-SES-2DE-09"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "La socialisation",
+   "emoji": "👥",
+   "en_une_phrase": "La socialisation est le processus par lequel les individus apprennent et intériorisent des manières de penser et d’agir.",
+   "comprendre": "Tu apprends des règles et des habitudes en famille, à l’école et avec d’autres personnes. Ces apprentissages se poursuivent dans différents contextes. Ils contribuent à faire de chacun un acteur social.",
+   "essentiel": [
+    "La socialisation est un processus.",
+    "La famille, l’école, les pairs et les médias peuvent y participer.",
+    "Les apprentissages sociaux évoluent au fil de la vie."
+   ],
+   "image_mentale": "Imagine plusieurs cercles de relations qui influencent les apprentissages.",
+   "regle_ou_methode": "Repère une manière d’agir, les personnes ou institutions qui la transmettent et le contexte.",
+   "exemples": [
+    "Un enfant apprend à attendre son tour dans un jeu avec d’autres enfants. Les échanges et les réactions du groupe contribuent à cet apprentissage. Cela illustre une socialisation par les pairs.",
+    "À l’école, des règles de prise de parole peuvent être apprises et pratiquées."
+   ],
+   "piege": "La socialisation ne se limite pas à une transmission explicite de règles.",
+   "astuce_memoire": "Famille, école, pairs, médias : plusieurs influences.",
+   "quiz": [
+    {
+     "q": "Quel groupe peut contribuer à la socialisation ?",
+     "choix": [
+      "Aucune autre personne",
+      "Les pairs",
+      "Uniquement une carte géographique"
+     ],
+     "rep": "Les pairs",
+     "expl": "Les interactions avec les pairs influencent les apprentissages."
+    },
+    {
+     "q": "La socialisation se limite-t-elle à l’enfance ?",
+     "choix": [
+      "Oui",
+      "Oui, dès qu’une personne quitte l’école",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Les apprentissages sociaux peuvent se poursuivre au cours de la vie."
+    },
+    {
+     "q": "Quel exemple illustre un apprentissage social ?",
+     "choix": [
+      "Apprendre à attendre son tour dans un groupe",
+      "La seule rotation de la Terre",
+      "La fusion d’un glaçon"
+     ],
+     "rep": "Apprendre à attendre son tour dans un groupe",
+     "expl": "Les interactions transmettent ici une manière d’agir."
+    }
+   ],
+   "id": "REV-SES-2DE-10"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Socialisations différenciées",
+   "emoji": "🧩",
+   "en_une_phrase": "Les expériences de socialisation peuvent différer selon les milieux sociaux et le genre.",
+   "comprendre": "Tous les enfants ne grandissent pas dans les mêmes contextes. Les attentes, les ressources et les activités proposées peuvent varier selon les familles, les groupes et le genre. Ces influences n’imposent cependant pas un parcours identique à chaque individu.",
+   "essentiel": [
+    "Les milieux sociaux offrent des ressources et des pratiques variées.",
+    "Des attentes différentes peuvent être associées au genre.",
+    "Les trajectoires individuelles restent diverses."
+   ],
+   "image_mentale": "Imagine plusieurs parcours influencés par des contextes différents.",
+   "regle_ou_methode": "Compare des situations, identifie les attentes ou ressources et évite de généraliser à tous les individus.",
+   "exemples": [
+    "Dans une enquête fictive, deux groupes d’enfants reçoivent plus souvent des propositions de loisirs différentes selon leur genre. Cette différence peut influencer leurs expériences. Elle ne détermine pas les goûts de chaque enfant.",
+    "Des familles peuvent transmettre des habitudes de lecture ou des ressources culturelles différentes."
+   ],
+   "piege": "Une tendance statistique ne décrit pas automatiquement chaque personne.",
+   "astuce_memoire": "Contextes différents, parcours variés.",
+   "quiz": [
+    {
+     "q": "Une tendance observée dans un groupe prédit-elle parfaitement le comportement de chaque personne ?",
+     "choix": [
+      "Oui",
+      "Oui, si le groupe est grand",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Les parcours individuels restent variés."
+    },
+    {
+     "q": "Quel facteur peut différencier les expériences de socialisation ?",
+     "choix": [
+      "Le contexte social et les attentes de genre",
+      "Uniquement la couleur d’un graphique",
+      "L’absence de toute interaction"
+     ],
+     "rep": "Le contexte social et les attentes de genre",
+     "expl": "Les ressources et attentes varient selon les contextes."
+    },
+    {
+     "q": "Une famille peut-elle transmettre des habitudes de lecture ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement sans interaction"
+     ],
+     "rep": "Oui",
+     "expl": "Les pratiques familiales peuvent contribuer aux apprentissages."
+    }
+   ],
+   "id": "REV-SES-2DE-11"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Les institutions politiques",
+   "emoji": "🏛️",
+   "en_une_phrase": "Les institutions de la Cinquième République organisent notamment les pouvoirs exécutif et législatif.",
+   "comprendre": "Dans un État, les décisions publiques suivent des règles et impliquent plusieurs institutions. Le président et le gouvernement participent au pouvoir exécutif. Le Parlement vote la loi et contrôle l’action du gouvernement dans les conditions prévues par la Constitution.",
+   "essentiel": [
+    "Le Parlement comprend l’Assemblée nationale et le Sénat.",
+    "Le gouvernement conduit la politique de la Nation selon la Constitution.",
+    "La séparation des pouvoirs distingue des fonctions et organise leurs relations."
+   ],
+   "image_mentale": "Imagine un schéma reliant exécutif, Parlement et autorité judiciaire.",
+   "regle_ou_methode": "Identifie l’institution, sa composition et sa fonction principale.",
+   "exemples": [
+    "Un projet de loi est examiné par le Parlement. L’Assemblée nationale et le Sénat participent à la procédure législative. Le Parlement intervient ainsi dans l’élaboration de la loi.",
+    "Le gouvernement met en œuvre des politiques publiques."
+   ],
+   "piege": "La séparation des pouvoirs ne signifie pas absence totale de relations entre institutions.",
+   "astuce_memoire": "Exécutif, législatif, justice : des fonctions distinctes.",
+   "quiz": [
+    {
+     "q": "Quelles assemblées composent le Parlement français ?",
+     "choix": [
+      "L’Assemblée nationale et le Sénat",
+      "Le gouvernement et une mairie",
+      "Le président et une entreprise"
+     ],
+     "rep": "L’Assemblée nationale et le Sénat",
+     "expl": "Le Parlement comprend ces deux assemblées."
+    },
+    {
+     "q": "Quel rôle exerce notamment le Parlement ?",
+     "choix": [
+      "Remplacer automatiquement tous les tribunaux",
+      "Voter la loi et contrôler le gouvernement",
+      "Diriger chaque entreprise privée"
+     ],
+     "rep": "Voter la loi et contrôler le gouvernement",
+     "expl": "Il participe à la loi et contrôle l’action du gouvernement."
+    },
+    {
+     "q": "La séparation des pouvoirs interdit-elle toute relation entre institutions ?",
+     "choix": [
+      "Oui",
+      "Oui, dans tous les régimes",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Les institutions exercent des fonctions distinctes mais peuvent interagir."
+    }
+   ],
+   "id": "REV-SES-2DE-12"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Modes de scrutin",
+   "emoji": "🗳️",
+   "en_une_phrase": "Un mode de scrutin transforme des voix en sièges selon des règles précises.",
+   "comprendre": "Deux élections peuvent compter les mêmes voix mais répartir différemment les sièges. Un scrutin majoritaire attribue le siège selon une règle de majorité. Un scrutin proportionnel répartit des sièges en fonction des voix, selon les modalités retenues.",
+   "essentiel": [
+    "Le scrutin majoritaire privilégie le ou les candidats arrivés en tête selon ses règles.",
+    "La proportionnelle attribue des sièges en fonction des voix obtenues.",
+    "Les résultats dépendent aussi des seuils et des règles de calcul."
+   ],
+   "image_mentale": "Imagine les voix transformées en sièges par deux mécanismes différents.",
+   "regle_ou_methode": "Identifie le nombre de sièges, les voix et la règle de répartition avant de conclure.",
+   "exemples": [
+    "Dans une élection fictive à un siège, le candidat arrivé en tête l’emporte selon la règle prévue. Il reçoit le siège. Les autres candidats n’obtiennent pas ce siège même s’ils ont des voix.",
+    "Dans une répartition proportionnelle simplifiée de dix sièges, une liste ayant 40 % des voix peut recevoir quatre sièges."
+   ],
+   "piege": "La proportionnelle réelle dépend de règles précises : un calcul simple ne décrit pas tous les scrutins.",
+   "astuce_memoire": "Majoritaire : règle de tête ; proportionnelle : répartition selon les voix.",
+   "quiz": [
+    {
+     "q": "Dans l’exemple simplifié, 40 % des voix pour dix sièges correspondent à combien de sièges ?",
+     "choix": [
+      "10",
+      "4",
+      "1"
+     ],
+     "rep": "4",
+     "expl": "40 % de 10 vaut 4."
+    },
+    {
+     "q": "Le mode de scrutin peut-il modifier la répartition des sièges ?",
+     "choix": [
+      "Non",
+      "Seulement si aucun vote n’a lieu",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Les règles de conversion des voix en sièges diffèrent."
+    },
+    {
+     "q": "Quel élément faut-il connaître pour interpréter une élection ?",
+     "choix": [
+      "La règle de répartition des sièges",
+      "Uniquement la couleur de l’urne",
+      "Le nombre de lettres des candidats"
+     ],
+     "rep": "La règle de répartition des sièges",
+     "expl": "La règle détermine comment les voix donnent des sièges."
+    }
+   ],
+   "id": "REV-SES-2DE-13"
+  },
+  {
+   "axe": "Sociologie et science politique",
+   "titre": "Les acteurs de la vie politique",
+   "emoji": "📰",
+   "en_une_phrase": "La vie politique mobilise des institutions, des partis, des médias et des organisations de la société civile.",
+   "comprendre": "Les décisions publiques ne se limitent pas au moment du vote. Des partis proposent des programmes et cherchent à exercer le pouvoir. Des associations, des syndicats et des médias participent aussi aux débats publics selon leurs rôles.",
+   "essentiel": [
+    "Les partis participent notamment à la compétition électorale.",
+    "Des organisations de la société civile défendent des causes ou des intérêts.",
+    "Les médias diffusent et discutent des informations."
+   ],
+   "image_mentale": "Imagine plusieurs acteurs autour d’un débat public.",
+   "regle_ou_methode": "Identifie l’acteur, son objectif et le moyen d’action utilisé.",
+   "exemples": [
+    "Une association organise une réunion sur les transports locaux. Elle cherche à faire connaître une proposition. Elle participe ainsi au débat public sans être nécessairement un parti politique.",
+    "Un parti présente des candidats et un programme à une élection."
+   ],
+   "piege": "Tous les acteurs de la vie politique ne cherchent pas directement à gagner une élection.",
+   "astuce_memoire": "Partis, associations, syndicats, médias : rôles variés.",
+   "quiz": [
+    {
+     "q": "Quel acteur présente généralement des candidats à une élection ?",
+     "choix": [
+      "Une unité de mesure",
+      "Une simple route",
+      "Un parti politique"
+     ],
+     "rep": "Un parti politique",
+     "expl": "Un parti participe à la compétition électorale."
+    },
+    {
+     "q": "Une association peut-elle participer à un débat public ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement si elle devient un État"
+     ],
+     "rep": "Oui",
+     "expl": "Une association peut défendre une cause publiquement."
+    },
+    {
+     "q": "Tous les acteurs cherchent-ils directement à gagner une élection ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, par définition"
+     ],
+     "rep": "Non",
+     "expl": "Les objectifs et les modes d’action varient."
+    }
+   ],
+   "id": "REV-SES-2DE-14"
+  },
+  {
+   "axe": "Regards croisés",
+   "titre": "Diplôme et capital humain",
+   "emoji": "🎓",
+   "en_une_phrase": "Les études peuvent développer des connaissances et compétences utiles à l’emploi et à d’autres projets.",
+   "comprendre": "Apprendre demande du temps et des ressources. La notion de capital humain désigne un ensemble de connaissances et compétences mobilisables. Les études peuvent contribuer à son développement, avec des effets qui varient selon les personnes et les contextes.",
+   "essentiel": [
+    "La formation peut développer des connaissances et compétences.",
+    "Poursuivre des études suppose des coûts et des bénéfices attendus.",
+    "Le diplôme ne garantit pas à lui seul une trajectoire précise."
+   ],
+   "image_mentale": "Imagine un ensemble de compétences construit au fil des expériences et des formations.",
+   "regle_ou_methode": "Identifie la formation, ses coûts et les bénéfices possibles en emploi ou en capacités.",
+   "exemples": [
+    "Une personne suit une formation technique pendant deux ans. Elle y acquiert des compétences recherchées dans certains emplois. Cet apprentissage peut améliorer ses possibilités d’insertion, sans garantir un poste précis.",
+    "Une formation peut aussi développer des capacités utiles à la participation sociale."
+   ],
+   "piege": "Le diplôme est un facteur parmi d’autres : il ne détermine pas mécaniquement chaque parcours.",
+   "astuce_memoire": "Formation, compétences et possibilités.",
+   "quiz": [
+    {
+     "q": "Que désigne le capital humain dans ce contexte ?",
+     "choix": [
+      "Des connaissances et compétences mobilisables",
+      "Uniquement les bâtiments d’une entreprise",
+      "Le nombre de routes d’un pays"
+     ],
+     "rep": "Des connaissances et compétences mobilisables",
+     "expl": "Il désigne notamment les connaissances et compétences des personnes."
+    },
+    {
+     "q": "Un diplôme garantit-il un emploi précis à chaque personne ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, quelle que soit la situation économique"
+     ],
+     "rep": "Non",
+     "expl": "Les parcours dépendent de plusieurs facteurs."
+    },
+    {
+     "q": "Une formation peut-elle apporter des bénéfices autres que salariaux ?",
+     "choix": [
+      "Non",
+      "Seulement si elle ne comporte aucun apprentissage",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Elle peut développer des capacités et des possibilités variées."
+    }
+   ],
+   "id": "REV-SES-2DE-15"
+  },
+  {
+   "axe": "Regards croisés",
+   "titre": "Diplôme et emploi",
+   "emoji": "💼",
+   "en_une_phrase": "Le niveau de diplôme est lié statistiquement à l’accès à l’emploi, sans déterminer chaque situation individuelle.",
+   "comprendre": "Dans des données, les taux d’emploi ou de chômage peuvent différer selon le niveau de diplôme. Une qualification peut faciliter l’accès à certains postes. Les résultats dépendent aussi de la conjoncture, du secteur et des caractéristiques des personnes.",
+   "essentiel": [
+    "Une qualification peut influencer l’accès à l’emploi.",
+    "Le chômage a plusieurs causes possibles.",
+    "Une relation statistique ne prédit pas parfaitement chaque trajectoire."
+   ],
+   "image_mentale": "Imagine un tableau comparant des taux pour plusieurs groupes de diplôme.",
+   "regle_ou_methode": "Compare les taux, précise la population étudiée puis distingue tendance générale et situations individuelles.",
+   "exemples": [
+    "Dans une enquête fictive, le taux de chômage est de 8 % dans un groupe et de 4 % dans un autre. L’écart est de 4 points de pourcentage. Il ne dit pas quelle sera la situation de chaque personne.",
+    "Un manque de qualification peut rendre l’accès à certains emplois plus difficile."
+   ],
+   "piege": "Un taux observé dans un groupe ne permet pas de conclure avec certitude pour un individu.",
+   "astuce_memoire": "Comparer les taux sans réduire les parcours à une règle.",
+   "quiz": [
+    {
+     "q": "Un taux passe de 8 % à 4 %. Quel est l’écart ?",
+     "choix": [
+      "4 % de baisse relative",
+      "4 points de pourcentage",
+      "12 points"
+     ],
+     "rep": "4 points de pourcentage",
+     "expl": "8 − 4 = 4 points."
+    },
+    {
+     "q": "Le chômage a-t-il une seule cause ?",
+     "choix": [
+      "Oui, toujours la même",
+      "Oui, uniquement le diplôme",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Plusieurs facteurs peuvent intervenir."
+    },
+    {
+     "q": "Une tendance statistique décrit-elle exactement chaque personne ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui si les taux sont en pourcentage"
+     ],
+     "rep": "Non",
+     "expl": "Les situations individuelles peuvent différer de la tendance du groupe."
+    }
+   ],
+   "id": "REV-SES-2DE-16"
+  },
+  {
+   "axe": "Regards croisés",
+   "titre": "Formation et salaire",
+   "emoji": "💰",
+   "en_une_phrase": "Le salaire dépend notamment de la formation, de l’expérience et des caractéristiques de l’emploi.",
+   "comprendre": "Deux personnes ne reçoivent pas nécessairement le même salaire. Le niveau de formation peut influencer les compétences et les emplois accessibles. D’autres facteurs interviennent aussi et des écarts peuvent subsister à niveau de formation comparable.",
+   "essentiel": [
+    "La formation peut influencer les possibilités d’emploi et de rémunération.",
+    "L’expérience, le secteur et le poste comptent aussi.",
+    "Des différences de salaire peuvent persister à diplôme comparable."
+   ],
+   "image_mentale": "Imagine plusieurs chemins reliant formation, poste, expérience et rémunération.",
+   "regle_ou_methode": "Compare des situations en précisant le diplôme, le poste et les autres facteurs observés.",
+   "exemples": [
+    "Deux personnes possèdent le même diplôme mais occupent des postes différents. Leurs responsabilités ou leur expérience peuvent différer. Leur salaire peut donc être différent.",
+    "Une comparaison de salaires doit préciser les groupes et les conditions de travail étudiés."
+   ],
+   "piege": "Un diplôme identique ne garantit pas un salaire identique pour toutes les personnes.",
+   "astuce_memoire": "Formation, emploi et autres facteurs interagissent.",
+   "quiz": [
+    {
+     "q": "Deux personnes de même diplôme ont-elles toujours le même salaire ?",
+     "choix": [
+      "Oui",
+      "Oui, quel que soit le poste",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Le poste, l’expérience et d’autres facteurs peuvent différer."
+    },
+    {
+     "q": "Quel facteur peut influencer le salaire en plus du diplôme ?",
+     "choix": [
+      "L’expérience professionnelle",
+      "Uniquement le jour de naissance",
+      "Le nombre de lettres du prénom"
+     ],
+     "rep": "L’expérience professionnelle",
+     "expl": "L’expérience peut jouer un rôle dans la rémunération."
+    },
+    {
+     "q": "Que faut-il préciser pour comparer des salaires ?",
+     "choix": [
+      "Seulement la couleur du tableau",
+      "Les groupes et les conditions de comparaison",
+      "Aucun contexte"
+     ],
+     "rep": "Les groupes et les conditions de comparaison",
+     "expl": "Une comparaison pertinente indique les populations et les conditions étudiées."
+    }
+   ],
+   "id": "REV-SES-2DE-17"
+  }
+ ]
+}

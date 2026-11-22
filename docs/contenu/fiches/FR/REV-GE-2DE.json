@@ -1,0 +1,699 @@
+{
+ "classe": "2DE",
+ "niveau_appli": "Lycée",
+ "age": "15-16 ans",
+ "matiere": "Géographie",
+ "code": "GE",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Sociétés et environnements : des équilibres fragiles",
+   "titre": "Aléa, vulnérabilité, risque",
+   "emoji": "🌋",
+   "en_une_phrase": "Un risque résulte de la rencontre d’un aléa avec des enjeux exposés et vulnérables.",
+   "comprendre": "Une inondation ne produit pas les mêmes dommages selon les populations et les bâtiments exposés. L’aléa correspond à la possibilité d’un phénomène dangereux. La vulnérabilité décrit la fragilité des enjeux face à ce phénomène.",
+   "essentiel": [
+    "Un aléa peut être naturel ou technologique.",
+    "Les enjeux comprennent notamment les populations et les activités exposées.",
+    "La vulnérabilité dépend des capacités de protection et de réponse."
+   ],
+   "image_mentale": "Imagine une carte superposant une crue possible et des quartiers habités.",
+   "regle_ou_methode": "Identifie l’aléa, les enjeux exposés et leurs fragilités avant de caractériser le risque.",
+   "exemples": [
+    "Une rivière peut déborder : c’est l’aléa. Des maisons sont construites dans sa plaine inondable : ce sont des enjeux exposés. Leur fragilité et les moyens de protection influencent les dommages possibles.",
+    "Deux quartiers exposés à la même crue peuvent avoir des vulnérabilités différentes selon leurs constructions."
+   ],
+   "piege": "Un phénomène naturel dans une zone sans enjeu considéré ne produit pas le même risque humain qu’en zone habitée.",
+   "astuce_memoire": "Aléa, exposition, vulnérabilité.",
+   "quiz": [
+    {
+     "q": "Une rivière peut déborder près de maisons construites en zone inondable. Que désigne l’aléa ?",
+     "choix": [
+      "Les maisons exposées",
+      "La possibilité de débordement de la rivière",
+      "Le coût de la carte"
+     ],
+     "rep": "La possibilité de débordement de la rivière",
+     "expl": "L’aléa est le phénomène potentiellement dangereux."
+    },
+    {
+     "q": "Que sont les maisons exposées ?",
+     "choix": [
+      "La pluie elle-même",
+      "Une échelle de température",
+      "Des enjeux"
+     ],
+     "rep": "Des enjeux",
+     "expl": "Elles peuvent subir des dommages."
+    },
+    {
+     "q": "Pourquoi deux quartiers exposés peuvent-ils subir des dommages différents ?",
+     "choix": [
+      "Leur vulnérabilité et leurs protections diffèrent",
+      "L’aléa dépend toujours du nom du quartier",
+      "Tous les bâtiments réagissent nécessairement pareil"
+     ],
+     "rep": "Leur vulnérabilité et leurs protections diffèrent",
+     "expl": "Les conditions de construction et les moyens de protection varient."
+    }
+   ],
+   "id": "REV-GE-2DE-01"
+  },
+  {
+   "axe": "Sociétés et environnements : des équilibres fragiles",
+   "titre": "Prévenir et gérer un risque",
+   "emoji": "🛟",
+   "en_une_phrase": "La prévention des risques combine connaissance des aléas, aménagement et préparation des populations.",
+   "comprendre": "On ne peut pas toujours empêcher un phénomène naturel. On peut cependant chercher à limiter l’exposition ou la vulnérabilité. Cartes, règles d’urbanisme, alertes et exercices remplissent des rôles complémentaires.",
+   "essentiel": [
+    "La prévision et l’alerte dépendent du phénomène et des moyens disponibles.",
+    "Les règles de construction et d’urbanisme peuvent réduire certains dommages.",
+    "Les acteurs publics et les habitants participent à la prévention."
+   ],
+   "image_mentale": "Imagine une carte de risque, un signal d’alerte et un itinéraire d’évacuation.",
+   "regle_ou_methode": "Identifie le risque, les acteurs et les mesures avant, pendant et après la crise.",
+   "exemples": [
+    "Une commune cartographie des zones inondables. Elle adapte les règles d’aménagement et informe les habitants. Ces mesures visent à réduire l’exposition et à préparer la population.",
+    "Un exercice d’évacuation peut aider à connaître les consignes prévues localement."
+   ],
+   "piege": "Aucune mesure isolée ne garantit l’absence totale de dommages.",
+   "astuce_memoire": "Connaître, prévenir, alerter, gérer.",
+   "quiz": [
+    {
+     "q": "Quel outil aide à identifier une zone inondable ?",
+     "choix": [
+      "Une liste de mots sans localisation",
+      "Une photo sans date ni lieu obligatoirement",
+      "Une carte de risque"
+     ],
+     "rep": "Une carte de risque",
+     "expl": "Une carte localise des zones exposées."
+    },
+    {
+     "q": "Quel objectif peut avoir une règle d’urbanisme adaptée ?",
+     "choix": [
+      "Limiter l’exposition de nouveaux bâtiments",
+      "Empêcher toute pluie",
+      "Supprimer les reliefs"
+     ],
+     "rep": "Limiter l’exposition de nouveaux bâtiments",
+     "expl": "L’urbanisme peut limiter l’installation en zone exposée."
+    },
+    {
+     "q": "La prévention garantit-elle toujours zéro dommage ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, quel que soit le phénomène"
+     ],
+     "rep": "Non",
+     "expl": "Les mesures réduisent des risques sans toujours les supprimer."
+    }
+   ],
+   "id": "REV-GE-2DE-02"
+  },
+  {
+   "axe": "Sociétés et environnements : des équilibres fragiles",
+   "titre": "Ressources sous pression",
+   "emoji": "💧",
+   "en_une_phrase": "Une ressource devient un enjeu lorsque des sociétés l’utilisent et doivent en gérer l’accès.",
+   "comprendre": "L’eau, l’énergie et les sols répondent à des besoins variés. Leur disponibilité et leur accès diffèrent selon les territoires. Des usages concurrents et des pressions environnementales peuvent créer des tensions.",
+   "essentiel": [
+    "Une ressource est liée à un besoin et à des techniques d’utilisation.",
+    "L’accès à une ressource dépend notamment des infrastructures et des moyens.",
+    "La gestion peut chercher à concilier plusieurs usages."
+   ],
+   "image_mentale": "Imagine un bassin d’eau partagé entre habitants, agriculture et activités économiques.",
+   "regle_ou_methode": "Identifie la ressource, les usages, les acteurs et les tensions possibles.",
+   "exemples": [
+    "Dans un bassin, habitants et agriculteurs utilisent la même eau. Une sécheresse réduit les quantités disponibles. Les acteurs doivent alors arbitrer entre plusieurs usages.",
+    "Des économies d’eau et l’entretien des réseaux peuvent contribuer à limiter certaines pressions."
+   ],
+   "piege": "Une ressource disponible physiquement n’est pas forcément accessible à tous.",
+   "astuce_memoire": "Disponibilité, accès, usages et gestion.",
+   "quiz": [
+    {
+     "q": "Quels usages peuvent entrer en concurrence pour l’eau ?",
+     "choix": [
+      "Les besoins domestiques et l’irrigation",
+      "Uniquement deux cartes scolaires",
+      "Aucun usage humain"
+     ],
+     "rep": "Les besoins domestiques et l’irrigation",
+     "expl": "Plusieurs secteurs peuvent utiliser la même ressource."
+    },
+    {
+     "q": "La présence d’eau dans une région garantit-elle son accès à tous ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, sans infrastructure"
+     ],
+     "rep": "Non",
+     "expl": "L’accès dépend aussi des réseaux et des moyens."
+    },
+    {
+     "q": "Quel facteur peut aggraver les tensions sur l’eau ?",
+     "choix": [
+      "Une baisse de toutes les demandes dans tous les cas",
+      "L’absence totale d’usagers",
+      "Une sécheresse"
+     ],
+     "rep": "Une sécheresse",
+     "expl": "Une sécheresse réduit les ressources disponibles."
+    }
+   ],
+   "id": "REV-GE-2DE-03"
+  },
+  {
+   "axe": "Sociétés et environnements : des équilibres fragiles",
+   "titre": "Valoriser et protéger les milieux",
+   "emoji": "🌲",
+   "en_une_phrase": "Un même milieu peut être utilisé pour ses ressources et faire l’objet de mesures de protection.",
+   "comprendre": "Une forêt fournit du bois et accueille des espèces et des visiteurs. Ces usages peuvent être complémentaires ou entrer en tension. Les acteurs cherchent parfois à concilier activités et préservation.",
+   "essentiel": [
+    "Un milieu possède des ressources et des fragilités.",
+    "La valorisation correspond à son utilisation par les sociétés.",
+    "La protection encadre certains usages pour préserver des éléments du milieu."
+   ],
+   "image_mentale": "Imagine une forêt avec une zone de promenade, une exploitation et une zone protégée.",
+   "regle_ou_methode": "Repère les usages, les acteurs et les effets possibles avant de comparer les choix.",
+   "exemples": [
+    "Une forêt est exploitée pour son bois et fréquentée par des promeneurs. Une gestion adaptée peut organiser les prélèvements et protéger certaines zones. Les usages doivent être suivis pour évaluer leurs effets.",
+    "Un espace montagnard peut accueillir du tourisme tout en étant soumis à des règles de protection."
+   ],
+   "piege": "Protéger un milieu ne signifie pas toujours interdire toute activité humaine.",
+   "astuce_memoire": "Usages, fragilités, règles et suivi.",
+   "quiz": [
+    {
+     "q": "Quel exemple correspond à une valorisation d’une forêt ?",
+     "choix": [
+      "L’absence de toute relation avec la forêt",
+      "L’utilisation de son bois",
+      "La suppression de tous les arbres du monde"
+     ],
+     "rep": "L’utilisation de son bois",
+     "expl": "Le bois peut être utilisé comme ressource."
+    },
+    {
+     "q": "La protection interdit-elle nécessairement toute activité ?",
+     "choix": [
+      "Oui",
+      "Oui, dans tous les territoires",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Les règles varient selon les espaces et les objectifs."
+    },
+    {
+     "q": "Pourquoi suivre les effets d’une gestion ?",
+     "choix": [
+      "Pour évaluer si elle répond aux objectifs",
+      "Pour éviter toute observation",
+      "Pour garantir des effets identiques partout"
+     ],
+     "rep": "Pour évaluer si elle répond aux objectifs",
+     "expl": "Le suivi permet de comparer les résultats aux objectifs."
+    }
+   ],
+   "id": "REV-GE-2DE-04"
+  },
+  {
+   "axe": "Territoires, populations et développement : quels défis ?",
+   "titre": "La transition démographique",
+   "emoji": "👥",
+   "en_une_phrase": "La transition démographique décrit le passage de taux de mortalité et de natalité élevés à des taux plus faibles.",
+   "comprendre": "Une population évolue selon les naissances, les décès et les migrations. Dans le modèle de transition démographique, la mortalité diminue généralement avant la natalité. La croissance naturelle peut alors s’accélérer temporairement.",
+   "essentiel": [
+    "La croissance naturelle dépend des naissances et des décès.",
+    "La baisse de la mortalité peut précéder celle de la natalité.",
+    "Les trajectoires et les rythmes varient selon les pays."
+   ],
+   "image_mentale": "Imagine deux courbes qui diminuent à des moments différents.",
+   "regle_ou_methode": "Compare les taux de natalité et de mortalité, puis observe leur évolution dans le temps.",
+   "exemples": [
+    "Dans un pays fictif, la mortalité baisse alors que la natalité reste élevée. L’écart entre naissances et décès augmente. La population peut alors croître rapidement si l’on considère ce seul solde.",
+    "Plus tard, si la natalité baisse à son tour, la croissance naturelle peut ralentir."
+   ],
+   "piege": "Ce modèle décrit une tendance générale : les trajectoires ne sont pas identiques partout.",
+   "astuce_memoire": "Mortalité puis natalité : des baisses souvent décalées.",
+   "quiz": [
+    {
+     "q": "Que compare le solde naturel ?",
+     "choix": [
+      "Les seules frontières",
+      "Les exportations et les importations",
+      "Les naissances et les décès"
+     ],
+     "rep": "Les naissances et les décès",
+     "expl": "Le solde naturel est la différence entre naissances et décès."
+    },
+    {
+     "q": "Que peut produire une mortalité qui baisse tandis que la natalité reste élevée ?",
+     "choix": [
+      "Une accélération de la croissance naturelle",
+      "Une disparition immédiate de la population",
+      "Un solde naturel nécessairement nul"
+     ],
+     "rep": "Une accélération de la croissance naturelle",
+     "expl": "L’écart entre naissances et décès peut augmenter."
+    },
+    {
+     "q": "Tous les pays suivent-ils exactement le même rythme ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, au même moment"
+     ],
+     "rep": "Non",
+     "expl": "Les trajectoires démographiques diffèrent."
+    }
+   ],
+   "id": "REV-GE-2DE-05"
+  },
+  {
+   "axe": "Territoires, populations et développement : quels défis ?",
+   "titre": "Vieillissement démographique",
+   "emoji": "🧓",
+   "en_une_phrase": "Le vieillissement démographique correspond à l’augmentation de la part des personnes âgées dans une population.",
+   "comprendre": "Une population peut vieillir lorsque les générations âgées représentent une part croissante de l’ensemble. La baisse durable de la natalité et l’allongement de la vie peuvent y contribuer. Les besoins en services et les équilibres entre générations évoluent.",
+   "essentiel": [
+    "Le vieillissement concerne une proportion, pas seulement un nombre absolu.",
+    "La natalité et la longévité influencent la structure par âge.",
+    "Les effets varient selon les territoires et les politiques."
+   ],
+   "image_mentale": "Imagine une pyramide des âges dont les classes âgées occupent une part plus grande.",
+   "regle_ou_methode": "Compare la part des personnes âgées à différentes dates, puis examine les besoins associés.",
+   "exemples": [
+    "Dans une population fictive, la part des personnes âgées passe de 15 % à 20 %. Elle augmente de 5 points de pourcentage. Cette évolution illustre un vieillissement démographique.",
+    "Le Japon est souvent étudié pour les enjeux liés au vieillissement de sa population."
+   ],
+   "piege": "Une population peut vieillir même si son effectif total n’augmente pas.",
+   "astuce_memoire": "Vieillissement : part croissante des personnes âgées.",
+   "quiz": [
+    {
+     "q": "Une part passe de 15 % à 20 %. Quelle est l’augmentation ?",
+     "choix": [
+      "5 points de pourcentage",
+      "5 % de hausse relative exactement",
+      "20 points"
+     ],
+     "rep": "5 points de pourcentage",
+     "expl": "20 − 15 = 5 points de pourcentage."
+    },
+    {
+     "q": "Quel pays est souvent étudié pour le vieillissement démographique ?",
+     "choix": [
+      "Un océan sans population",
+      "Le Japon",
+      "Une chaîne de montagnes seule"
+     ],
+     "rep": "Le Japon",
+     "expl": "Le Japon connaît des enjeux marqués de vieillissement."
+    },
+    {
+     "q": "Le vieillissement concerne-t-il la structure par âge ?",
+     "choix": [
+      "Non",
+      "Uniquement les frontières",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Il correspond à une évolution de la part des personnes âgées."
+    }
+   ],
+   "id": "REV-GE-2DE-06"
+  },
+  {
+   "axe": "Territoires, populations et développement : quels défis ?",
+   "titre": "Développement et inégalités",
+   "emoji": "📊",
+   "en_une_phrase": "Le développement associe plusieurs dimensions du bien-être et peut être inégal au sein d’un territoire.",
+   "comprendre": "Un revenu moyen donne une information mais ne décrit pas à lui seul les conditions de vie. La santé, l’éducation et l’accès aux services apportent d’autres éclairages. Les écarts entre groupes sociaux et régions peuvent être importants.",
+   "essentiel": [
+    "Le développement est une notion multidimensionnelle.",
+    "Un indicateur résume une partie de la réalité.",
+    "Une moyenne peut masquer des inégalités internes."
+   ],
+   "image_mentale": "Imagine plusieurs indicateurs superposés sur une carte.",
+   "regle_ou_methode": "Choisis les indicateurs, compare des territoires puis recherche les écarts à l’intérieur de chacun.",
+   "exemples": [
+    "Deux régions ont le même revenu moyen. Dans l’une, l’accès aux soins est plus difficile. La moyenne de revenu ne suffit donc pas à décrire leurs conditions de vie.",
+    "Un indicateur combinant santé, éducation et revenu donne une vue plus large, mais reste une synthèse."
+   ],
+   "piege": "Ne confonds pas croissance économique et amélioration identique des conditions de vie pour tous.",
+   "astuce_memoire": "Plusieurs dimensions, plusieurs échelles, des écarts.",
+   "quiz": [
+    {
+     "q": "Le revenu moyen décrit-il à lui seul toutes les conditions de vie ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, quelle que soit la répartition"
+     ],
+     "rep": "Non",
+     "expl": "La santé et l’éducation apportent notamment d’autres informations."
+    },
+    {
+     "q": "Une moyenne nationale peut-elle masquer des écarts entre régions ?",
+     "choix": [
+      "Non",
+      "Seulement si elle est exprimée en euros",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Les situations régionales peuvent différer."
+    },
+    {
+     "q": "La croissance économique profite-t-elle automatiquement de façon identique à tous ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, par définition"
+     ],
+     "rep": "Non",
+     "expl": "Ses bénéfices peuvent être inégalement répartis."
+    }
+   ],
+   "id": "REV-GE-2DE-07"
+  },
+  {
+   "axe": "Des mobilités généralisées",
+   "titre": "Migrations internationales",
+   "emoji": "🧳",
+   "en_une_phrase": "Les migrations internationales relient des territoires de départ, de transit et d’installation.",
+   "comprendre": "Les personnes peuvent quitter un pays pour travailler, étudier, rejoindre leur famille ou fuir un danger. Leurs parcours et leurs droits varient selon les situations. Les effets des migrations concernent à la fois les territoires de départ et d’arrivée.",
+   "essentiel": [
+    "Une migration internationale implique le franchissement d’une frontière.",
+    "Les motifs et les parcours migratoires sont divers.",
+    "Des liens économiques et familiaux peuvent subsister avec le lieu de départ."
+   ],
+   "image_mentale": "Imagine une carte avec des lieux de départ, des étapes et des lieux d’installation.",
+   "regle_ou_methode": "Identifie les lieux, les motifs, les acteurs et les conséquences du déplacement.",
+   "exemples": [
+    "Une étudiante quitte son pays pour suivre une formation dans un autre. Elle franchit une frontière et s’installe pendant ses études. Cette mobilité internationale a un motif d’études.",
+    "Une personne déplacée par un conflit peut chercher une protection dans un pays voisin."
+   ],
+   "piege": "Toutes les migrations n’ont ni le même motif ni les mêmes conditions.",
+   "astuce_memoire": "Départ, trajet, installation et liens.",
+   "quiz": [
+    {
+     "q": "Quel exemple correspond à une mobilité d’études internationale ?",
+     "choix": [
+      "Traverser une rue pour rejoindre sa classe",
+      "Rester dans la même salle",
+      "Partir étudier dans un autre pays"
+     ],
+     "rep": "Partir étudier dans un autre pays",
+     "expl": "La personne franchit une frontière pour étudier."
+    },
+    {
+     "q": "Les migrations internationales ont-elles toutes la même cause ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, uniquement le tourisme"
+     ],
+     "rep": "Non",
+     "expl": "Le travail, la famille, les études ou l’insécurité peuvent intervenir."
+    },
+    {
+     "q": "Des liens peuvent-ils rester avec le territoire de départ ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement avant le départ"
+     ],
+     "rep": "Oui",
+     "expl": "Des liens familiaux et économiques peuvent persister."
+    }
+   ],
+   "id": "REV-GE-2DE-08"
+  },
+  {
+   "axe": "Des mobilités généralisées",
+   "titre": "Mobilités touristiques",
+   "emoji": "🧭",
+   "en_une_phrase": "Les mobilités touristiques relient des lieux de départ et de séjour et transforment les territoires.",
+   "comprendre": "Un séjour touristique demande des transports, des hébergements et des services. Il peut créer des emplois et des revenus. Il peut aussi augmenter les pressions sur l’eau, les sols ou les transports selon les lieux.",
+   "essentiel": [
+    "Le tourisme implique un déplacement temporaire hors du cadre de vie habituel.",
+    "Les destinations et les clientèles sont diverses.",
+    "Les effets économiques et environnementaux varient selon les pratiques."
+   ],
+   "image_mentale": "Imagine des flux reliant des villes de départ à une destination littorale.",
+   "regle_ou_methode": "Situe les flux, identifie les acteurs puis distingue bénéfices et pressions.",
+   "exemples": [
+    "Une station littorale accueille beaucoup de visiteurs en été. Les hébergements et restaurants peuvent employer des habitants. La demande en eau peut aussi augmenter pendant la saison.",
+    "Un site naturel fréquenté peut nécessiter des aménagements pour limiter certains impacts."
+   ],
+   "piege": "Le tourisme ne produit pas les mêmes effets pour tous les habitants ni sur tous les territoires.",
+   "astuce_memoire": "Flux, activités et pressions.",
+   "quiz": [
+    {
+     "q": "Quel effet économique un séjour touristique peut-il avoir ?",
+     "choix": [
+      "Soutenir des emplois dans l’hébergement",
+      "Supprimer tous les transports",
+      "Garantir le même revenu à tous"
+     ],
+     "rep": "Soutenir des emplois dans l’hébergement",
+     "expl": "Les activités d’accueil emploient des personnes."
+    },
+    {
+     "q": "Quelle pression peut augmenter en haute saison ?",
+     "choix": [
+      "La disparition de tout besoin",
+      "La demande en eau",
+      "L’arrêt de toutes les activités"
+     ],
+     "rep": "La demande en eau",
+     "expl": "Les visiteurs utilisent des ressources locales."
+    },
+    {
+     "q": "Les effets du tourisme sont-ils identiques partout ?",
+     "choix": [
+      "Oui",
+      "Oui, quel que soit le milieu",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Ils varient selon les lieux et les pratiques."
+    }
+   ],
+   "id": "REV-GE-2DE-09"
+  },
+  {
+   "axe": "Des mobilités généralisées",
+   "titre": "Réseaux et mobilités en France",
+   "emoji": "🚆",
+   "en_une_phrase": "Les réseaux de transport relient inégalement les territoires français et influencent les mobilités.",
+   "comprendre": "Deux lieux séparés par une même distance peuvent être accessibles en des temps différents. Les infrastructures, la fréquence des services et les coûts modifient l’accessibilité. Les choix d’aménagement cherchent à répondre à des besoins variés.",
+   "essentiel": [
+    "La distance-temps mesure la durée nécessaire pour relier deux lieux.",
+    "Les réseaux de transport sont inégalement répartis.",
+    "Les mobilités ont des effets sociaux et environnementaux."
+   ],
+   "image_mentale": "Imagine deux trajets de même longueur mais de durées différentes.",
+   "regle_ou_methode": "Compare le temps, le coût et les modes disponibles, puis identifie les inégalités d’accès.",
+   "exemples": [
+    "Deux villes sont séparées de 100 km. Un train met une heure ; un autre trajet routier dure deux heures. La distance est identique mais la distance-temps diffère.",
+    "Une desserte peu fréquente peut limiter l’accès à un service même si une ligne existe."
+   ],
+   "piege": "La distance en kilomètres ne suffit pas toujours à décrire l’accessibilité.",
+   "astuce_memoire": "Distance, temps, coût et fréquence.",
+   "quiz": [
+    {
+     "q": "Deux trajets de 100 km durent une heure et deux heures. Ont-ils la même distance-temps ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, car les distances en kilomètres sont égales"
+     ],
+     "rep": "Non",
+     "expl": "La distance-temps dépend de la durée."
+    },
+    {
+     "q": "Quel facteur influence l’accessibilité ?",
+     "choix": [
+      "Uniquement le nom de la ville",
+      "Le nombre de lettres du trajet",
+      "La fréquence des transports"
+     ],
+     "rep": "La fréquence des transports",
+     "expl": "Une faible fréquence peut limiter les possibilités de déplacement."
+    },
+    {
+     "q": "Une ligne existante garantit-elle un accès facile pour tous ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, même si elle ne circule presque jamais"
+     ],
+     "rep": "Non",
+     "expl": "Fréquence, coût et horaires influencent l’accès."
+    }
+   ],
+   "id": "REV-GE-2DE-10"
+  },
+  {
+   "axe": "L’Afrique australe : un espace en profonde mutation",
+   "titre": "Les milieux d’Afrique australe",
+   "emoji": "🌍",
+   "en_une_phrase": "L’Afrique australe réunit des milieux variés utilisés et protégés de façons diverses.",
+   "comprendre": "Une région peut comprendre des espaces arides, des montagnes et des zones plus humides. En Afrique australe, ces milieux fournissent des ressources et accueillent de multiples activités. Ils subissent aussi des pressions liées aux usages et aux changements environnementaux.",
+   "essentiel": [
+    "L’Afrique australe comprend plusieurs États.",
+    "Ses milieux et ses ressources sont divers.",
+    "Leur gestion doit tenir compte d’usages et de fragilités variés."
+   ],
+   "image_mentale": "Imagine une carte reliant zones arides, espaces cultivés et parcs.",
+   "regle_ou_methode": "Situe le milieu, identifie ses ressources puis observe les usages et les pressions.",
+   "exemples": [
+    "Une région peu arrosée utilise l’eau pour les habitants et l’agriculture. Une sécheresse accentue les tensions entre usages. La gestion de l’eau devient alors un enjeu majeur.",
+    "Des espaces naturels peuvent accueillir du tourisme tout en faisant l’objet de mesures de conservation."
+   ],
+   "piege": "L’Afrique australe n’est ni un pays unique ni un milieu uniforme.",
+   "astuce_memoire": "Des milieux variés, des ressources et des pressions.",
+   "quiz": [
+    {
+     "q": "L’Afrique australe est-elle un seul pays ?",
+     "choix": [
+      "Oui",
+      "Oui, elle correspond uniquement à une ville",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Elle rassemble plusieurs États et territoires."
+    },
+    {
+     "q": "Quel facteur peut accentuer les tensions sur l’eau ?",
+     "choix": [
+      "Une sécheresse",
+      "Une absence de tout usage",
+      "La couleur de la carte"
+     ],
+     "rep": "Une sécheresse",
+     "expl": "Une sécheresse réduit les ressources disponibles."
+    },
+    {
+     "q": "Un espace naturel peut-il être touristique et protégé ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement s’il est sans habitants dans tout le pays"
+     ],
+     "rep": "Oui",
+     "expl": "Des règles peuvent organiser des usages touristiques et la conservation."
+    }
+   ],
+   "id": "REV-GE-2DE-11"
+  },
+  {
+   "axe": "L’Afrique australe : un espace en profonde mutation",
+   "titre": "Développement et inégalités",
+   "emoji": "🏙️",
+   "en_une_phrase": "En Afrique australe, les niveaux de développement et les inégalités varient selon les pays et les quartiers.",
+   "comprendre": "Des territoires voisins peuvent avoir des activités, des revenus et des équipements différents. En Afrique du Sud, l’histoire de l’apartheid a contribué à des séparations spatiales durables. Les politiques actuelles agissent dans ce contexte sans avoir effacé tous les écarts.",
+   "essentiel": [
+    "Les pays de la région ont des trajectoires différentes.",
+    "Les villes peuvent présenter de fortes inégalités entre quartiers.",
+    "L’histoire des politiques de ségrégation influence encore certains espaces."
+   ],
+   "image_mentale": "Imagine une ville où l’accès aux logements et aux transports varie selon les quartiers.",
+   "regle_ou_methode": "Compare des indicateurs et situe les écarts, puis replace-les dans leur contexte historique.",
+   "exemples": [
+    "Dans une ville, deux quartiers ont des accès différents aux transports et aux services. Cette comparaison révèle une inégalité spatiale. Son explication demande d’examiner l’histoire et les politiques locales.",
+    "En Afrique du Sud, l’apartheid a organisé une ségrégation raciale pendant une partie du XXe siècle."
+   ],
+   "piege": "Une moyenne nationale ne décrit pas les conditions de chaque quartier.",
+   "astuce_memoire": "Comparer pays, villes et quartiers.",
+   "quiz": [
+    {
+     "q": "Une moyenne nationale suffit-elle à décrire chaque quartier ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, si le pays est vaste"
+     ],
+     "rep": "Non",
+     "expl": "Elle peut masquer de fortes différences locales."
+    },
+    {
+     "q": "Quel système a organisé une ségrégation raciale en Afrique du Sud au XXe siècle ?",
+     "choix": [
+      "La Renaissance",
+      "L’apartheid",
+      "Le principat romain"
+     ],
+     "rep": "L’apartheid",
+     "expl": "L’apartheid a institutionnalisé une ségrégation raciale."
+    },
+    {
+     "q": "Les pays d’Afrique australe suivent-ils forcément la même trajectoire ?",
+     "choix": [
+      "Oui",
+      "Oui, à toutes les échelles",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Leurs situations économiques, sociales et politiques diffèrent."
+    }
+   ],
+   "id": "REV-GE-2DE-12"
+  },
+  {
+   "axe": "L’Afrique australe : un espace en profonde mutation",
+   "titre": "Mobilités en Afrique australe",
+   "emoji": "🚶",
+   "en_une_phrase": "L’Afrique australe connaît des mobilités de travail, des migrations forcées et des déplacements touristiques.",
+   "comprendre": "Une région peut être à la fois un espace de départ, de transit et d’arrivée. Les migrations répondent à des motifs variés et s’inscrivent dans des conditions différentes. Le tourisme relie aussi certains territoires à des visiteurs de diverses origines.",
+   "essentiel": [
+    "Les mobilités peuvent être internes ou internationales.",
+    "Les motifs comprennent notamment travail, famille et recherche de protection.",
+    "Le tourisme peut créer des activités tout en accentuant certaines pressions."
+   ],
+   "image_mentale": "Imagine des flèches de mobilités entre villes, pays et espaces touristiques.",
+   "regle_ou_methode": "Identifie les personnes, les motifs et les lieux, puis compare les effets sur les territoires.",
+   "exemples": [
+    "Une personne quitte une région pour chercher un emploi dans une ville d’un pays voisin. Elle franchit une frontière : c’est une mobilité internationale de travail. Les effets concernent le départ comme l’arrivée.",
+    "Des visiteurs se rendent dans certains parcs naturels pour observer la faune."
+   ],
+   "piege": "Toutes les mobilités ne sont pas des voyages touristiques librement choisis.",
+   "astuce_memoire": "Travail, protection, tourisme : des mobilités diverses.",
+   "quiz": [
+    {
+     "q": "Quel exemple correspond à une migration internationale de travail ?",
+     "choix": [
+      "Visiter une ville pendant une journée sans y travailler",
+      "Partir travailler dans un pays voisin",
+      "Rester dans sa salle de classe"
+     ],
+     "rep": "Partir travailler dans un pays voisin",
+     "expl": "Le déplacement franchit ici une frontière pour travailler."
+    },
+    {
+     "q": "Toutes les mobilités sont-elles touristiques ?",
+     "choix": [
+      "Oui",
+      "Oui, lorsqu’une frontière est franchie",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Elles peuvent aussi concerner le travail ou la recherche de protection."
+    },
+    {
+     "q": "Le tourisme peut-il affecter les territoires ?",
+     "choix": [
+      "Oui, par des activités et des pressions",
+      "Non, jamais",
+      "Seulement en modifiant les frontières des continents"
+     ],
+     "rep": "Oui, par des activités et des pressions",
+     "expl": "Il peut créer des revenus et exercer des pressions sur les milieux."
+    }
+   ],
+   "id": "REV-GE-2DE-13"
+  }
+ ]
+}

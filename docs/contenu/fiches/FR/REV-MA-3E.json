@@ -1,0 +1,1706 @@
+{
+ "classe": "3E",
+ "niveau_appli": "3ème",
+ "age": "14-15 ans",
+ "matiere": "Mathématiques",
+ "code": "MA",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Nombres et calculs",
+   "titre": "Décomposer en facteurs premiers",
+   "emoji": "🔢",
+   "en_une_phrase": "Un entier supérieur à 1 se décompose en produit de nombres premiers.",
+   "comprendre": "Tu sais partager une quantité en paquets égaux. Décomposer un entier en facteurs premiers revient à le diviser jusqu’à ne garder que des nombres premiers. Cette décomposition aide notamment à simplifier des fractions.",
+   "essentiel": [
+    "Un nombre premier possède exactement deux diviseurs positifs : 1 et lui-même.",
+    "Tout entier supérieur à 1 se décompose en produit de facteurs premiers.",
+    "L’ordre des facteurs ne change pas le produit."
+   ],
+   "image_mentale": "Imagine un arbre dont les branches se séparent jusqu’aux nombres premiers.",
+   "regle_ou_methode": "Divise par un nombre premier puis recommence avec le quotient jusqu’à obtenir 1.",
+   "exemples": [
+    "Pour 84, divise par 2 : 84 = 2 × 42. Puis 42 = 2 × 21 et 21 = 3 × 7. Ainsi 84 = 2 × 2 × 3 × 7.",
+    "60 = 2 × 2 × 3 × 5."
+   ],
+   "piege": "Le nombre 1 n’est pas premier : il ne possède qu’un diviseur positif.",
+   "astuce_memoire": "Divise jusqu’à ne garder que des nombres premiers.",
+   "quiz": [
+    {
+     "q": "Quelle décomposition en facteurs premiers vaut 84 ?",
+     "choix": [
+      "2 × 3 × 7",
+      "2 × 2 × 3 × 7",
+      "2 × 2 × 3 × 5"
+     ],
+     "rep": "2 × 2 × 3 × 7",
+     "expl": "Le produit 2 × 2 × 3 × 7 vaut 84."
+    },
+    {
+     "q": "Lequel de ces nombres est premier ?",
+     "choix": [
+      "15",
+      "21",
+      "13"
+     ],
+     "rep": "13",
+     "expl": "13 n’a pour diviseurs positifs que 1 et 13."
+    },
+    {
+     "q": "Pourquoi 1 n’est-il pas premier ?",
+     "choix": [
+      "Il possède un seul diviseur positif",
+      "Il possède exactement deux diviseurs positifs",
+      "Il est divisible par tous les nombres"
+     ],
+     "rep": "Il possède un seul diviseur positif",
+     "expl": "Un nombre premier possède exactement deux diviseurs positifs."
+    }
+   ],
+   "id": "REV-MA-3E-01"
+  },
+  {
+   "axe": "Nombres et calculs",
+   "titre": "Fractions et simplification",
+   "emoji": "➗",
+   "en_une_phrase": "Une fraction conserve sa valeur quand on divise son numérateur et son dénominateur par un même nombre non nul.",
+   "comprendre": "Une même quantité peut être découpée de plusieurs façons. Simplifier une fraction change son écriture sans changer la quantité. Les facteurs premiers aident à repérer les facteurs communs.",
+   "essentiel": [
+    "Le dénominateur d’une fraction est non nul.",
+    "On peut diviser les deux termes par un facteur commun non nul.",
+    "Une fraction irréductible n’a pas de diviseur commun supérieur à 1."
+   ],
+   "image_mentale": "Imagine une tablette découpée en petites cases puis regroupée en parts égales.",
+   "regle_ou_methode": "Cherche un facteur commun au numérateur et au dénominateur puis divise les deux par ce facteur.",
+   "exemples": [
+    "Pour simplifier 84/126, décompose 84 = 2 × 2 × 3 × 7 et 126 = 2 × 3 × 3 × 7. Leur facteur commun 42 divise les deux nombres. Ainsi 84/126 = 2/3.",
+    "45/60 = 3/4 en divisant les deux termes par 15."
+   ],
+   "piege": "Ne soustrais pas un même nombre au numérateur et au dénominateur pour simplifier.",
+   "astuce_memoire": "Même division en haut et en bas.",
+   "quiz": [
+    {
+     "q": "Quelle est la forme irréductible de 84/126 ?",
+     "choix": [
+      "4/7",
+      "3/2",
+      "2/3"
+     ],
+     "rep": "2/3",
+     "expl": "En divisant les deux termes par 42, on obtient 2/3."
+    },
+    {
+     "q": "Quelle fraction est égale à 45/60 ?",
+     "choix": [
+      "3/4",
+      "4/3",
+      "9/10"
+     ],
+     "rep": "3/4",
+     "expl": "45 et 60 divisés par 15 donnent 3 et 4."
+    },
+    {
+     "q": "Quelle opération conserve la valeur d’une fraction ?",
+     "choix": [
+      "Soustraire 2 à ses deux termes dans tous les cas",
+      "Diviser ses deux termes par un même nombre non nul",
+      "Diviser uniquement le numérateur"
+     ],
+     "rep": "Diviser ses deux termes par un même nombre non nul",
+     "expl": "Une division commune non nulle conserve le quotient."
+    }
+   ],
+   "id": "REV-MA-3E-02"
+  },
+  {
+   "axe": "Nombres et calculs",
+   "titre": "Puissances de dix",
+   "emoji": "🔬",
+   "en_une_phrase": "Les puissances de dix facilitent l’écriture et les calculs avec de très grands ou très petits nombres.",
+   "comprendre": "Tu connais le passage de 1 à 10 puis à 100 en multipliant par 10. Une puissance de dix résume ces multiplications. Un exposant négatif correspond à une fraction de 1.",
+   "essentiel": [
+    "10³ = 1 000 et 10⁻³ = 0,001.",
+    "10ᵃ × 10ᵇ = 10ᵃ⁺ᵇ pour des exposants entiers.",
+    "L’écriture scientifique utilise un nombre de 1 inclus à 10 exclu multiplié par une puissance de dix."
+   ],
+   "image_mentale": "Imagine la virgule qui se déplace à chaque multiplication ou division par 10.",
+   "regle_ou_methode": "Écris le nombre sous la forme d’un coefficient adapté puis détermine la puissance de dix.",
+   "exemples": [
+    "Pour 0,00042, déplace la virgule de quatre rangs vers la droite pour obtenir 4,2. Pour conserver la valeur, multiplie par 10⁻⁴. Ainsi 0,00042 = 4,2 × 10⁻⁴.",
+    "7 300 000 = 7,3 × 10⁶."
+   ],
+   "piege": "Dans une écriture scientifique, le coefficient est au moins 1 et strictement inférieur à 10.",
+   "astuce_memoire": "Petit nombre positif : puissance de dix à exposant négatif.",
+   "quiz": [
+    {
+     "q": "Quelle est l’écriture scientifique de 0,00042 ?",
+     "choix": [
+      "4,2 × 10⁻⁴",
+      "4,2 × 10⁴",
+      "42 × 10⁻⁴"
+     ],
+     "rep": "4,2 × 10⁻⁴",
+     "expl": "4,2 multiplié par 0,0001 vaut 0,00042."
+    },
+    {
+     "q": "Que vaut 10³ × 10⁻² ?",
+     "choix": [
+      "10⁻⁶",
+      "10¹",
+      "10⁵"
+     ],
+     "rep": "10¹",
+     "expl": "On additionne les exposants : 3 + (−2) = 1."
+    },
+    {
+     "q": "Quelle écriture est scientifique ?",
+     "choix": [
+      "73 × 10⁵",
+      "0,73 × 10⁷",
+      "7,3 × 10⁶"
+     ],
+     "rep": "7,3 × 10⁶",
+     "expl": "Le coefficient 7,3 est compris entre 1 inclus et 10 exclu."
+    }
+   ],
+   "id": "REV-MA-3E-03"
+  },
+  {
+   "axe": "Nombres et calculs",
+   "titre": "Racines carrées",
+   "emoji": "📐",
+   "en_une_phrase": "La racine carrée d’un nombre positif est le nombre positif ou nul dont le carré donne ce nombre.",
+   "comprendre": "Tu sais que le carré de 5 est 25. La racine carrée de 25 permet de retrouver le nombre positif 5. Pour un nombre positif, la racine carrée désigne toujours une valeur positive ou nulle.",
+   "essentiel": [
+    "√25 = 5 car 5² = 25.",
+    "√0 = 0.",
+    "L’équation x² = 25 a deux solutions : 5 et −5."
+   ],
+   "image_mentale": "Imagine un carré de 25 carreaux dont chaque côté compte 5 carreaux.",
+   "regle_ou_methode": "Cherche le nombre positif ou nul dont le carré est le nombre donné.",
+   "exemples": [
+    "Pour calculer √49, cherche un nombre positif dont le carré vaut 49. Comme 7 × 7 = 49, √49 = 7.",
+    "L’équation x² = 9 a pour solutions −3 et 3."
+   ],
+   "piege": "√25 vaut 5, pas −5 ; les deux nombres interviennent comme solutions de x² = 25.",
+   "astuce_memoire": "Racine carrée : résultat positif ou nul.",
+   "quiz": [
+    {
+     "q": "Que vaut √49 ?",
+     "choix": [
+      "−7",
+      "7",
+      "49"
+     ],
+     "rep": "7",
+     "expl": "7 est le nombre positif dont le carré vaut 49."
+    },
+    {
+     "q": "Quelles sont les solutions de x² = 9 ?",
+     "choix": [
+      "3 seulement",
+      "−9 et 9",
+      "−3 et 3"
+     ],
+     "rep": "−3 et 3",
+     "expl": "Les carrés de −3 et de 3 valent 9."
+    },
+    {
+     "q": "Que vaut √0 ?",
+     "choix": [
+      "0",
+      "1",
+      "−1"
+     ],
+     "rep": "0",
+     "expl": "0² = 0."
+    }
+   ],
+   "id": "REV-MA-3E-04"
+  },
+  {
+   "axe": "Nombres et calculs",
+   "titre": "Calculer avec des fractions",
+   "emoji": "🍕",
+   "en_une_phrase": "Pour additionner des fractions, on les écrit avec un dénominateur commun.",
+   "comprendre": "Tu peux additionner des parts seulement quand elles représentent la même taille de découpe. On transforme donc les fractions pour obtenir le même dénominateur. Pour multiplier des fractions, on multiplie les numérateurs et les dénominateurs.",
+   "essentiel": [
+    "Pour additionner, utilise un dénominateur commun.",
+    "Pour multiplier, multiplie les numérateurs entre eux et les dénominateurs entre eux.",
+    "Pour diviser par une fraction non nulle, multiplie par son inverse."
+   ],
+   "image_mentale": "Imagine des parts de gâteaux redécoupées en parts de même taille.",
+   "regle_ou_methode": "Pour une somme, cherche un dénominateur commun ; pour un produit, multiplie les termes correspondants.",
+   "exemples": [
+    "Pour 3/4 + 2/3, prends 12 comme dénominateur commun. On obtient 9/12 + 8/12. La somme est 17/12.",
+    "2/5 × 3/4 = 6/20 = 3/10."
+   ],
+   "piege": "N’additionne pas les dénominateurs pour additionner des fractions.",
+   "astuce_memoire": "Somme : même dénominateur ; produit : haut avec haut, bas avec bas.",
+   "quiz": [
+    {
+     "q": "Que vaut 3/4 + 2/3 ?",
+     "choix": [
+      "5/7",
+      "5/12",
+      "17/12"
+     ],
+     "rep": "17/12",
+     "expl": "9/12 + 8/12 = 17/12."
+    },
+    {
+     "q": "Que vaut 2/5 × 3/4 ?",
+     "choix": [
+      "3/10",
+      "5/9",
+      "6/9"
+     ],
+     "rep": "3/10",
+     "expl": "Le produit vaut 6/20, soit 3/10."
+    },
+    {
+     "q": "Que vaut 1/2 ÷ 1/4 ?",
+     "choix": [
+      "1/8",
+      "2",
+      "1/2"
+     ],
+     "rep": "2",
+     "expl": "Diviser par 1/4 revient à multiplier par 4."
+    }
+   ],
+   "id": "REV-MA-3E-05"
+  },
+  {
+   "axe": "Nombres et calculs",
+   "titre": "Développer une expression",
+   "emoji": "🧮",
+   "en_une_phrase": "Développer consiste à transformer un produit en somme ou en différence.",
+   "comprendre": "Tu peux répartir une même quantité entre plusieurs groupes. En calcul littéral, la distributivité multiplie chaque terme d’une parenthèse. Elle conserve la valeur de l’expression.",
+   "essentiel": [
+    "a(b + c) = ab + ac.",
+    "a(b − c) = ab − ac.",
+    "Pour un produit de deux parenthèses, chaque terme multiplie chaque terme de l’autre."
+   ],
+   "image_mentale": "Imagine deux lots contenant chacun les mêmes types d’objets.",
+   "regle_ou_methode": "Multiplie chaque terme, puis réduis les termes de même nature.",
+   "exemples": [
+    "Pour développer 3(x + 4), multiplie 3 par x puis par 4. Cela donne 3x + 12. Les deux expressions sont égales pour toute valeur de x.",
+    "(x + 2)(x + 3) = x² + 5x + 6."
+   ],
+   "piege": "N’oublie aucun terme et surveille les signes.",
+   "astuce_memoire": "Distribuer : chaque terme est multiplié.",
+   "quiz": [
+    {
+     "q": "Développe 3(x + 4).",
+     "choix": [
+      "3x + 12",
+      "3x + 4",
+      "x + 12"
+     ],
+     "rep": "3x + 12",
+     "expl": "3 multiplie x et 4."
+    },
+    {
+     "q": "Développe 2(x − 5).",
+     "choix": [
+      "2x − 5",
+      "2x − 10",
+      "2x + 10"
+     ],
+     "rep": "2x − 10",
+     "expl": "On multiplie les deux termes par 2."
+    },
+    {
+     "q": "Développe (x + 2)(x + 3).",
+     "choix": [
+      "x² + 6",
+      "x² + 5x + 5",
+      "x² + 5x + 6"
+     ],
+     "rep": "x² + 5x + 6",
+     "expl": "Les quatre produits donnent x² + 3x + 2x + 6."
+    }
+   ],
+   "id": "REV-MA-3E-06"
+  },
+  {
+   "axe": "Nombres et calculs",
+   "titre": "Factoriser une expression",
+   "emoji": "📦",
+   "en_une_phrase": "Factoriser consiste à transformer une somme ou une différence en produit.",
+   "comprendre": "Si plusieurs groupes contiennent le même objet, tu peux mettre cet élément en évidence. En calcul littéral, un facteur commun peut être placé devant une parenthèse. Développer permet ensuite de vérifier la factorisation.",
+   "essentiel": [
+    "ab + ac = a(b + c).",
+    "Le facteur commun multiplie chaque terme de la parenthèse.",
+    "On peut vérifier en développant."
+   ],
+   "image_mentale": "Imagine des paquets identiques regroupés dans une boîte.",
+   "regle_ou_methode": "Cherche un facteur présent dans chaque terme, puis écris ce qui reste dans la parenthèse.",
+   "exemples": [
+    "Pour factoriser 5x + 15, repère le facteur commun 5. On écrit 5x = 5 × x et 15 = 5 × 3. Donc 5x + 15 = 5(x + 3).",
+    "4x − 8 = 4(x − 2)."
+   ],
+   "piege": "Le facteur commun doit être présent dans tous les termes concernés.",
+   "astuce_memoire": "Chercher le facteur commun puis ouvrir la boîte.",
+   "quiz": [
+    {
+     "q": "Factorise 5x + 15.",
+     "choix": [
+      "5(x + 15)",
+      "5(x + 3)",
+      "x(5 + 15)"
+     ],
+     "rep": "5(x + 3)",
+     "expl": "Le facteur commun 5 donne 5(x + 3)."
+    },
+    {
+     "q": "Factorise 4x − 8.",
+     "choix": [
+      "4(x − 8)",
+      "x(4 − 8)",
+      "4(x − 2)"
+     ],
+     "rep": "4(x − 2)",
+     "expl": "En développant 4(x − 2), on retrouve 4x − 8."
+    },
+    {
+     "q": "Comment vérifier une factorisation ?",
+     "choix": [
+      "En développant le produit obtenu",
+      "En changeant x au hasard dans un seul terme",
+      "En supprimant la parenthèse sans calcul"
+     ],
+     "rep": "En développant le produit obtenu",
+     "expl": "Le développement doit redonner l’expression de départ."
+    }
+   ],
+   "id": "REV-MA-3E-07"
+  },
+  {
+   "axe": "Nombres et calculs",
+   "titre": "Résoudre une équation",
+   "emoji": "⚖️",
+   "en_une_phrase": "Résoudre une équation consiste à trouver toutes les valeurs qui rendent l’égalité vraie.",
+   "comprendre": "Une égalité ressemble à une balance équilibrée. Si tu effectues la même opération des deux côtés, l’égalité reste vraie. Tu peux ainsi isoler l’inconnue.",
+   "essentiel": [
+    "Une solution rend l’égalité vraie.",
+    "On peut ajouter ou soustraire un même nombre aux deux membres.",
+    "On peut diviser les deux membres par un même nombre non nul."
+   ],
+   "image_mentale": "Imagine une balance sur laquelle on retire le même poids de chaque côté.",
+   "regle_ou_methode": "Effectue les mêmes opérations des deux côtés, isole x puis vérifie.",
+   "exemples": [
+    "Pour résoudre 3x + 4 = 19, soustrais 4 des deux côtés : 3x = 15. Divise par 3 : x = 5. Vérifie : 3 × 5 + 4 = 19.",
+    "2x − 7 = 1 donne 2x = 8, donc x = 4."
+   ],
+   "piege": "Ne modifie pas un seul membre de l’égalité.",
+   "astuce_memoire": "Même opération des deux côtés.",
+   "quiz": [
+    {
+     "q": "Quelle est la solution de 3x + 4 = 19 ?",
+     "choix": [
+      "4",
+      "7",
+      "5"
+     ],
+     "rep": "5",
+     "expl": "3 × 5 + 4 = 19."
+    },
+    {
+     "q": "Quelle est la solution de 2x − 7 = 1 ?",
+     "choix": [
+      "4",
+      "3",
+      "−4"
+     ],
+     "rep": "4",
+     "expl": "2 × 4 − 7 = 1."
+    },
+    {
+     "q": "Quelle opération conserve l’égalité pour isoler x dans 3x = 15 ?",
+     "choix": [
+      "Diviser seulement 15 par 3",
+      "Diviser les deux membres par 3",
+      "Ajouter 3 au membre de gauche seulement"
+     ],
+     "rep": "Diviser les deux membres par 3",
+     "expl": "La même division non nulle s’applique aux deux membres."
+    }
+   ],
+   "id": "REV-MA-3E-08"
+  },
+  {
+   "axe": "Nombres et calculs",
+   "titre": "Équation produit nul",
+   "emoji": "🎯",
+   "en_une_phrase": "Un produit est nul si au moins un de ses facteurs est nul.",
+   "comprendre": "Tu sais qu’un nombre multiplié par zéro donne zéro. La propriété du produit nul permet de résoudre certaines équations factorisées. On cherche séparément les valeurs qui annulent chaque facteur.",
+   "essentiel": [
+    "Si ab = 0, alors a = 0 ou b = 0.",
+    "On résout une équation pour chaque facteur.",
+    "On rassemble toutes les solutions obtenues."
+   ],
+   "image_mentale": "Imagine deux interrupteurs : un seul facteur nul suffit à annuler le produit.",
+   "regle_ou_methode": "Écris chaque facteur égal à zéro, résous les équations puis vérifie les solutions.",
+   "exemples": [
+    "Pour résoudre (x − 2)(x + 3) = 0, écris x − 2 = 0 ou x + 3 = 0. La première donne x = 2, la seconde x = −3. Les solutions sont donc 2 et −3.",
+    "x(x − 4) = 0 a pour solutions 0 et 4."
+   ],
+   "piege": "On ne peut pas diviser par un facteur contenant x sans vérifier s’il peut être nul.",
+   "astuce_memoire": "Produit nul : au moins un facteur nul.",
+   "quiz": [
+    {
+     "q": "Résous (x − 2)(x + 3) = 0.",
+     "choix": [
+      "x = 2 ou x = −3",
+      "x = −2 ou x = 3",
+      "x = 2 seulement"
+     ],
+     "rep": "x = 2 ou x = −3",
+     "expl": "Chaque facteur doit être examiné séparément."
+    },
+    {
+     "q": "Quelles sont les solutions de x(x − 4) = 0 ?",
+     "choix": [
+      "4 seulement",
+      "0 et 4",
+      "−4 et 0"
+     ],
+     "rep": "0 et 4",
+     "expl": "x = 0 ou x − 4 = 0."
+    },
+    {
+     "q": "Quand un produit de deux nombres est-il nul ?",
+     "choix": [
+      "Quand les deux facteurs sont forcément égaux",
+      "Quand leur somme vaut 1",
+      "Quand au moins un facteur est nul"
+     ],
+     "rep": "Quand au moins un facteur est nul",
+     "expl": "Un facteur nul suffit à rendre le produit nul."
+    }
+   ],
+   "id": "REV-MA-3E-09"
+  },
+  {
+   "axe": "Nombres et calculs",
+   "titre": "Identités remarquables",
+   "emoji": "🧩",
+   "en_une_phrase": "Certaines formules permettent de développer ou factoriser rapidement des expressions usuelles.",
+   "comprendre": "Le produit de deux sommes se développe terme à terme. Des configurations fréquentes donnent des formules qu’on peut reconnaître directement. Elles restent justifiées par la distributivité.",
+   "essentiel": [
+    "(a + b)² = a² + 2ab + b².",
+    "(a − b)² = a² − 2ab + b².",
+    "(a − b)(a + b) = a² − b²."
+   ],
+   "image_mentale": "Imagine un grand carré partagé en quatre zones de surfaces a², ab, ab et b².",
+   "regle_ou_methode": "Repère les deux termes a et b, applique la formule puis vérifie les signes.",
+   "exemples": [
+    "Pour développer (x + 3)², prends a = x et b = 3. Calcule x² + 2 × x × 3 + 3². Le résultat est x² + 6x + 9.",
+    "(x − 4)(x + 4) = x² − 16."
+   ],
+   "piege": "(a + b)² n’est pas égal à a² + b² : il manque 2ab.",
+   "astuce_memoire": "Carré d’une somme : premier carré, double produit, second carré.",
+   "quiz": [
+    {
+     "q": "Développe (x + 3)².",
+     "choix": [
+      "x² + 9",
+      "x² + 6x + 9",
+      "x² + 3x + 9"
+     ],
+     "rep": "x² + 6x + 9",
+     "expl": "Le double produit vaut 2 × x × 3 = 6x."
+    },
+    {
+     "q": "Développe (x − 4)(x + 4).",
+     "choix": [
+      "x² + 16",
+      "x² − 8x + 16",
+      "x² − 16"
+     ],
+     "rep": "x² − 16",
+     "expl": "Le produit est une différence de deux carrés."
+    },
+    {
+     "q": "Quelle égalité est correcte ?",
+     "choix": [
+      "(a − b)² = a² − 2ab + b²",
+      "(a − b)² = a² − b²",
+      "(a − b)² = a² + 2ab + b²"
+     ],
+     "rep": "(a − b)² = a² − 2ab + b²",
+     "expl": "Le carré d’une différence contient le terme −2ab."
+    }
+   ],
+   "id": "REV-MA-3E-10"
+  },
+  {
+   "axe": "Nombres et calculs",
+   "titre": "Résoudre une inéquation",
+   "emoji": "⚖️",
+   "en_une_phrase": "Une inéquation compare deux expressions et peut avoir plusieurs solutions.",
+   "comprendre": "Tu peux chercher toutes les valeurs qui respectent une limite. Comme pour une équation, tu peux transformer les deux membres ensemble. Lorsque tu multiplies ou divises par un nombre négatif, le sens de l’inégalité s’inverse.",
+   "essentiel": [
+    "Ajouter un même nombre aux deux membres conserve le sens de l’inégalité.",
+    "Multiplier ou diviser par un nombre positif conserve le sens.",
+    "Multiplier ou diviser par un nombre négatif inverse le sens."
+   ],
+   "image_mentale": "Imagine une droite graduée dont l’ordre s’inverse lorsqu’on prend les opposés.",
+   "regle_ou_methode": "Isole l’inconnue en transformant les deux membres et inverse le signe si tu divises par un négatif.",
+   "exemples": [
+    "Pour résoudre −2x < 6, divise les deux membres par −2. Comme ce nombre est négatif, inverse le signe. Tu obtiens x > −3.",
+    "3x + 1 ≤ 10 donne 3x ≤ 9, puis x ≤ 3."
+   ],
+   "piege": "Oublier d’inverser le signe après une division par un nombre négatif donne une réponse fausse.",
+   "astuce_memoire": "Multiplier ou diviser par un négatif inverse l’inégalité.",
+   "quiz": [
+    {
+     "q": "Résous −2x < 6.",
+     "choix": [
+      "x < −3",
+      "x > 3",
+      "x > −3"
+     ],
+     "rep": "x > −3",
+     "expl": "La division par −2 inverse le sens et donne x > −3."
+    },
+    {
+     "q": "Résous 3x + 1 ≤ 10.",
+     "choix": [
+      "x ≤ 3",
+      "x ≥ 3",
+      "x ≤ 11"
+     ],
+     "rep": "x ≤ 3",
+     "expl": "On obtient 3x ≤ 9 puis x ≤ 3."
+    },
+    {
+     "q": "Quel nombre vérifie x > −3 ?",
+     "choix": [
+      "−4",
+      "0",
+      "−3"
+     ],
+     "rep": "0",
+     "expl": "0 est strictement supérieur à −3."
+    }
+   ],
+   "id": "REV-MA-3E-11"
+  },
+  {
+   "axe": "Organisation et gestion de données, fonctions",
+   "titre": "Pourcentages successifs",
+   "emoji": "📉",
+   "en_une_phrase": "Des évolutions successives se calculent en multipliant leurs coefficients.",
+   "comprendre": "Tu peux comparer un prix avant et après une promotion. Une hausse ou une baisse agit sur la valeur obtenue à l’étape précédente. Pour plusieurs évolutions, on multiplie les coefficients au lieu d’ajouter automatiquement les pourcentages.",
+   "essentiel": [
+    "Une hausse de 20 % correspond au coefficient 1,20.",
+    "Une baisse de 20 % correspond au coefficient 0,80.",
+    "Les coefficients successifs se multiplient."
+   ],
+   "image_mentale": "Imagine deux flèches successives, chacune appliquée au résultat précédent.",
+   "regle_ou_methode": "Transforme chaque taux en coefficient, multiplie les coefficients puis compare le résultat à 1.",
+   "exemples": [
+    "Un prix de 100 € augmente de 20 % puis baisse de 20 %. Calcule 100 × 1,20 × 0,80 = 96. Le prix final est 96 €, soit une baisse globale de 4 %.",
+    "Un montant de 50 € diminue de 10 % : 50 × 0,90 = 45 €."
+   ],
+   "piege": "Une hausse de 20 % suivie d’une baisse de 20 % ne ramène pas au prix initial.",
+   "astuce_memoire": "Les pourcentages successifs multiplient leurs coefficients.",
+   "quiz": [
+    {
+     "q": "Un prix de 100 € augmente de 20 % puis baisse de 20 %. Quel est le prix final ?",
+     "choix": [
+      "96 €",
+      "100 €",
+      "104 €"
+     ],
+     "rep": "96 €",
+     "expl": "100 × 1,20 × 0,80 = 96."
+    },
+    {
+     "q": "Quel coefficient correspond à une baisse de 10 % ?",
+     "choix": [
+      "1,10",
+      "0,90",
+      "0,10"
+     ],
+     "rep": "0,90",
+     "expl": "On conserve 90 % de la valeur initiale."
+    },
+    {
+     "q": "Un prix de 50 € baisse de 10 %. Quel est son nouveau prix ?",
+     "choix": [
+      "40 €",
+      "55 €",
+      "45 €"
+     ],
+     "rep": "45 €",
+     "expl": "50 × 0,90 = 45."
+    }
+   ],
+   "id": "REV-MA-3E-12"
+  },
+  {
+   "axe": "Organisation et gestion de données, fonctions",
+   "titre": "Fonction, image et antécédent",
+   "emoji": "📈",
+   "en_une_phrase": "Une fonction associe à chaque nombre de son domaine une unique image.",
+   "comprendre": "Une machine peut transformer un nombre entré en un résultat. Une fonction décrit cette association. On appelle image le résultat et antécédent un nombre qui donne ce résultat.",
+   "essentiel": [
+    "Si f(x) = 2x + 3, l’image de x est 2x + 3.",
+    "L’image de 4 par cette fonction est 11.",
+    "Un nombre peut avoir plusieurs antécédents ou aucun selon la fonction."
+   ],
+   "image_mentale": "Imagine une machine qui multiplie par 2 puis ajoute 3.",
+   "regle_ou_methode": "Pour calculer une image, remplace x ; pour un antécédent, résous une équation.",
+   "exemples": [
+    "Avec f(x) = 2x + 3, cherche l’image de 4. Calcule 2 × 4 + 3 = 11. L’image de 4 est 11.",
+    "Pour trouver l’antécédent de 9, résous 2x + 3 = 9 : x = 3."
+   ],
+   "piege": "Ne confonds pas l’image 11 avec son antécédent 4.",
+   "astuce_memoire": "Entrée : antécédent ; sortie : image.",
+   "quiz": [
+    {
+     "q": "Avec f(x) = 2x + 3, quelle est l’image de 4 ?",
+     "choix": [
+      "8",
+      "11",
+      "14"
+     ],
+     "rep": "11",
+     "expl": "2 × 4 + 3 = 11."
+    },
+    {
+     "q": "Avec la même fonction, quel est l’antécédent de 9 ?",
+     "choix": [
+      "9",
+      "6",
+      "3"
+     ],
+     "rep": "3",
+     "expl": "2 × 3 + 3 = 9."
+    },
+    {
+     "q": "Un nombre peut-il avoir plusieurs antécédents selon la fonction ?",
+     "choix": [
+      "Oui",
+      "Non, jamais",
+      "Seulement si la fonction n’a aucun domaine"
+     ],
+     "rep": "Oui",
+     "expl": "Par exemple, x² associe 4 à 2 et à −2."
+    }
+   ],
+   "id": "REV-MA-3E-13"
+  },
+  {
+   "axe": "Organisation et gestion de données, fonctions",
+   "titre": "Fonction linéaire",
+   "emoji": "📏",
+   "en_une_phrase": "Une fonction linéaire de la forme f(x) = ax modélise une situation de proportionnalité.",
+   "comprendre": "Si chaque article coûte le même prix, le coût total est proportionnel au nombre d’articles. Une fonction linéaire multiplie l’entrée par un nombre constant. Sa représentation graphique est une droite passant par l’origine.",
+   "essentiel": [
+    "Une fonction linéaire s’écrit f(x) = ax.",
+    "Le nombre a est le coefficient de proportionnalité.",
+    "Sa représentation graphique passe par l’origine du repère."
+   ],
+   "image_mentale": "Imagine une droite qui part de l’origine et monte régulièrement.",
+   "regle_ou_methode": "Identifie le coefficient a, calcule des images et place les points dans un repère.",
+   "exemples": [
+    "Un ticket coûte 3 €. Pour x tickets, le prix est f(x) = 3x. Pour 4 tickets, f(4) = 12 €, et f(0) = 0.",
+    "Pour g(x) = −2x, l’image de 3 est −6."
+   ],
+   "piege": "Une fonction affine avec un terme constant non nul n’est pas une fonction linéaire.",
+   "astuce_memoire": "Linéaire : multiplication et droite passant par l’origine.",
+   "quiz": [
+    {
+     "q": "Si f(x) = 3x, que vaut f(4) ?",
+     "choix": [
+      "7",
+      "1",
+      "12"
+     ],
+     "rep": "12",
+     "expl": "3 × 4 = 12."
+    },
+    {
+     "q": "Quelle fonction est linéaire ?",
+     "choix": [
+      "f(x) = 5x",
+      "g(x) = 5x + 2",
+      "h(x) = x² + 1"
+     ],
+     "rep": "f(x) = 5x",
+     "expl": "Une fonction linéaire est de la forme ax."
+    },
+    {
+     "q": "Par quel point passe toujours la droite d’une fonction linéaire ?",
+     "choix": [
+      "Le point de coordonnées (0 ; 1)",
+      "L’origine du repère",
+      "Tout point de coordonnées égales"
+     ],
+     "rep": "L’origine du repère",
+     "expl": "f(0) = 0 pour toute fonction linéaire."
+    }
+   ],
+   "id": "REV-MA-3E-14"
+  },
+  {
+   "axe": "Organisation et gestion de données, fonctions",
+   "titre": "Fonction affine",
+   "emoji": "📊",
+   "en_une_phrase": "Une fonction affine associe à x une expression de la forme ax + b.",
+   "comprendre": "Certains tarifs comportent une somme fixe puis un coût par unité. Une fonction affine modélise cette situation. Sa représentation graphique est une droite, dont la valeur à l’origine est b.",
+   "essentiel": [
+    "Une fonction affine s’écrit f(x) = ax + b.",
+    "Le nombre a indique la variation de l’image quand x augmente de 1.",
+    "Le nombre b est l’image de 0."
+   ],
+   "image_mentale": "Imagine une droite partant d’un montant fixe puis augmentant régulièrement.",
+   "regle_ou_methode": "Repère a et b, puis remplace x pour calculer une image.",
+   "exemples": [
+    "Un trajet coûte 4 € au départ puis 2 € par kilomètre. Pour x kilomètres, f(x) = 2x + 4. Pour 3 km, f(3) = 10 €.",
+    "Si g(x) = −x + 5, alors g(0) = 5 et g(2) = 3."
+   ],
+   "piege": "Une fonction affine ne représente pas toujours une situation proportionnelle : b peut être non nul.",
+   "astuce_memoire": "Ax + b : variation par unité et valeur initiale.",
+   "quiz": [
+    {
+     "q": "Pour f(x) = 2x + 4, que vaut f(3) ?",
+     "choix": [
+      "10",
+      "6",
+      "14"
+     ],
+     "rep": "10",
+     "expl": "2 × 3 + 4 = 10."
+    },
+    {
+     "q": "Pour f(x) = 2x + 4, que vaut f(0) ?",
+     "choix": [
+      "0",
+      "4",
+      "2"
+     ],
+     "rep": "4",
+     "expl": "f(0) = 2 × 0 + 4."
+    },
+    {
+     "q": "La fonction f(x) = 2x + 4 est-elle linéaire ?",
+     "choix": [
+      "Oui, car elle est affine",
+      "Oui, car 2 est positif",
+      "Non, car le terme constant est non nul"
+     ],
+     "rep": "Non, car le terme constant est non nul",
+     "expl": "Une fonction linéaire est de la forme ax et passe par l’origine."
+    }
+   ],
+   "id": "REV-MA-3E-15"
+  },
+  {
+   "axe": "Organisation et gestion de données, fonctions",
+   "titre": "Moyenne et médiane",
+   "emoji": "📋",
+   "en_une_phrase": "La moyenne et la médiane résument une série de données de façons différentes.",
+   "comprendre": "Tu peux résumer une série de notes sans les énumérer toutes. La moyenne utilise toutes les valeurs et leurs effectifs. La médiane partage une série ordonnée en deux groupes de même effectif.",
+   "essentiel": [
+    "La moyenne est la somme des valeurs divisée par leur nombre.",
+    "Avant de chercher la médiane, classe les valeurs.",
+    "Avec un effectif pair, on peut prendre la moyenne des deux valeurs centrales."
+   ],
+   "image_mentale": "Imagine les données alignées et un repère au centre.",
+   "regle_ou_methode": "Calcule la somme et l’effectif pour la moyenne ; trie la série pour la médiane.",
+   "exemples": [
+    "Pour 2, 4 et 9, calcule la somme 15 puis divise par 3 : la moyenne est 5. La série est déjà ordonnée. Sa médiane est 4.",
+    "Pour 1, 3, 5 et 7, la médiane est (3 + 5) ÷ 2 = 4."
+   ],
+   "piege": "La moyenne et la médiane ne sont pas forcément égales.",
+   "astuce_memoire": "Moyenne : toutes les valeurs ; médiane : milieu de la série triée.",
+   "quiz": [
+    {
+     "q": "Quelle est la moyenne de 2, 4 et 9 ?",
+     "choix": [
+      "4",
+      "5",
+      "15"
+     ],
+     "rep": "5",
+     "expl": "La somme 15 divisée par 3 vaut 5."
+    },
+    {
+     "q": "Quelle est la médiane de 2, 4 et 9 ?",
+     "choix": [
+      "5",
+      "9",
+      "4"
+     ],
+     "rep": "4",
+     "expl": "Dans la série ordonnée, 4 est la valeur centrale."
+    },
+    {
+     "q": "Quelle est la médiane de 1, 3, 5 et 7 selon la moyenne des valeurs centrales ?",
+     "choix": [
+      "4",
+      "3",
+      "5"
+     ],
+     "rep": "4",
+     "expl": "Les valeurs centrales sont 3 et 5, dont la moyenne est 4."
+    }
+   ],
+   "id": "REV-MA-3E-16"
+  },
+  {
+   "axe": "Organisation et gestion de données, fonctions",
+   "titre": "Probabilités",
+   "emoji": "🎲",
+   "en_une_phrase": "La probabilité d’un événement mesure sa chance de se produire dans un modèle donné.",
+   "comprendre": "Tu sais qu’un dé équilibré peut donner plusieurs résultats. Lorsque ces résultats sont équiprobables, la probabilité d’un événement est le nombre de cas favorables divisé par le nombre de cas possibles. Une probabilité est comprise entre 0 et 1.",
+   "essentiel": [
+    "Un événement impossible a une probabilité de 0.",
+    "Un événement certain a une probabilité de 1.",
+    "En situation équiprobable, probabilité = cas favorables ÷ cas possibles."
+   ],
+   "image_mentale": "Imagine six cases identiques pour les faces d’un dé équilibré.",
+   "regle_ou_methode": "Liste les issues possibles, compte les issues favorables puis forme le quotient.",
+   "exemples": [
+    "Avec un dé équilibré à six faces numérotées de 1 à 6, les issues paires sont 2, 4 et 6. Il y a 3 issues favorables sur 6. La probabilité vaut 3/6, soit 1/2.",
+    "Obtenir 6 sur ce dé a une probabilité de 1/6."
+   ],
+   "piege": "Le quotient cas favorables sur cas possibles exige que les issues retenues soient équiprobables.",
+   "astuce_memoire": "Cas favorables sur cas possibles si les issues sont équiprobables.",
+   "quiz": [
+    {
+     "q": "Quelle est la probabilité d’un nombre pair sur un dé équilibré à six faces ?",
+     "choix": [
+      "1/3",
+      "2/3",
+      "1/2"
+     ],
+     "rep": "1/2",
+     "expl": "Trois issues sur six sont paires."
+    },
+    {
+     "q": "Quelle est la probabilité d’obtenir 6 ?",
+     "choix": [
+      "1/6",
+      "1/2",
+      "1"
+     ],
+     "rep": "1/6",
+     "expl": "Une issue sur six convient."
+    },
+    {
+     "q": "Quelle valeur ne peut pas être une probabilité ?",
+     "choix": [
+      "0,8",
+      "1,2",
+      "0"
+     ],
+     "rep": "1,2",
+     "expl": "Une probabilité est comprise entre 0 et 1."
+    }
+   ],
+   "id": "REV-MA-3E-17"
+  },
+  {
+   "axe": "Organisation et gestion de données, fonctions",
+   "titre": "Lire un graphique de fonction",
+   "emoji": "📉",
+   "en_une_phrase": "Sur la courbe d’une fonction, les coordonnées d’un point relient un antécédent à son image.",
+   "comprendre": "Tu lis une position en utilisant une coordonnée horizontale et une coordonnée verticale. Pour la courbe de f, un point de coordonnées (x ; y) vérifie y = f(x). On peut donc lire des images et des antécédents sur le graphique.",
+   "essentiel": [
+    "L’abscisse x correspond à un antécédent.",
+    "L’ordonnée y correspond à son image.",
+    "Un même nombre peut avoir plusieurs antécédents."
+   ],
+   "image_mentale": "Imagine une flèche verticale depuis l’axe horizontal puis une flèche horizontale vers l’axe vertical.",
+   "regle_ou_methode": "Pour une image, pars de l’abscisse ; pour un antécédent, pars de l’ordonnée et cherche les intersections.",
+   "exemples": [
+    "Un point de la courbe de f a pour coordonnées (2 ; 5). Son abscisse est 2 et son ordonnée est 5. Donc f(2) = 5 : 5 est l’image de 2.",
+    "Si la courbe coupe la droite y = 4 en x = −2 et x = 2, les deux antécédents lus de 4 sont −2 et 2."
+   ],
+   "piege": "Ne lis pas l’image sur l’axe horizontal : elle correspond à l’ordonnée.",
+   "astuce_memoire": "Abscisse : entrée ; ordonnée : image.",
+   "quiz": [
+    {
+     "q": "Un point de la courbe de f est (2 ; 5). Que vaut f(2) ?",
+     "choix": [
+      "5",
+      "2",
+      "7"
+     ],
+     "rep": "5",
+     "expl": "L’ordonnée 5 est l’image de l’abscisse 2."
+    },
+    {
+     "q": "Si f(−2) = 4, quel nombre est un antécédent de 4 ?",
+     "choix": [
+      "4",
+      "−2",
+      "−4 nécessairement"
+     ],
+     "rep": "−2",
+     "expl": "L’entrée −2 a pour image 4."
+    },
+    {
+     "q": "Un même nombre peut-il avoir deux antécédents ?",
+     "choix": [
+      "Non, jamais",
+      "Seulement si toutes les images sont nulles",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Une courbe peut rencontrer une horizontale en plusieurs points."
+    }
+   ],
+   "id": "REV-MA-3E-18"
+  },
+  {
+   "axe": "Organisation et gestion de données, fonctions",
+   "titre": "Étendue et dispersion",
+   "emoji": "📏",
+   "en_une_phrase": "L’étendue mesure l’écart entre la plus grande et la plus petite valeur d’une série.",
+   "comprendre": "Deux groupes peuvent avoir la même moyenne avec des résultats plus ou moins éloignés. L’étendue donne une première indication sur cet écart. Elle se calcule par une soustraction.",
+   "essentiel": [
+    "Étendue = valeur maximale − valeur minimale.",
+    "L’étendue utilise les valeurs extrêmes.",
+    "Elle ne décrit pas à elle seule toutes les données."
+   ],
+   "image_mentale": "Imagine une règle entre la plus petite et la plus grande valeur.",
+   "regle_ou_methode": "Repère le minimum et le maximum, puis soustrais le minimum du maximum.",
+   "exemples": [
+    "Pour les valeurs 4, 7, 9 et 12, le minimum est 4 et le maximum est 12. Calcule 12 − 4. L’étendue est 8.",
+    "Pour 5, 5 et 5, l’étendue vaut 0."
+   ],
+   "piege": "Ne confonds pas l’étendue avec la moyenne ni avec le maximum seul.",
+   "astuce_memoire": "Étendue : maximum moins minimum.",
+   "quiz": [
+    {
+     "q": "Quelle est l’étendue de 4, 7, 9 et 12 ?",
+     "choix": [
+      "12",
+      "8",
+      "32"
+     ],
+     "rep": "8",
+     "expl": "12 − 4 = 8."
+    },
+    {
+     "q": "Quelle est l’étendue de 5, 5 et 5 ?",
+     "choix": [
+      "5",
+      "15",
+      "0"
+     ],
+     "rep": "0",
+     "expl": "Le maximum et le minimum sont égaux à 5."
+    },
+    {
+     "q": "L’étendue suffit-elle à connaître toutes les valeurs ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, si elle est positive"
+     ],
+     "rep": "Non",
+     "expl": "Des séries différentes peuvent avoir la même étendue."
+    }
+   ],
+   "id": "REV-MA-3E-19"
+  },
+  {
+   "axe": "Organisation et gestion de données, fonctions",
+   "titre": "Deux expériences aléatoires",
+   "emoji": "🎲",
+   "en_une_phrase": "Un arbre aide à dénombrer les issues de deux expériences successives.",
+   "comprendre": "Tu peux lancer une pièce puis un dé et noter les deux résultats. Un arbre représente chaque choix par une branche. Si toutes les issues sont équiprobables, on compte les chemins favorables pour calculer une probabilité.",
+   "essentiel": [
+    "Une issue décrit le résultat complet des deux expériences.",
+    "Deux lancers indépendants d’une pièce équilibrée ont quatre issues équiprobables.",
+    "La probabilité vaut cas favorables divisés par cas possibles dans ce modèle."
+   ],
+   "image_mentale": "Imagine deux embranchements successifs, chacun portant pile ou face.",
+   "regle_ou_methode": "Construis les chemins possibles, compte ceux qui réalisent l’événement puis divise.",
+   "exemples": [
+    "On lance deux fois une pièce équilibrée indépendamment. Les quatre issues sont pile-pile, pile-face, face-pile et face-face. Une seule issue donne deux piles : la probabilité est 1/4.",
+    "Obtenir exactement un pile correspond à deux issues sur quatre, soit 1/2."
+   ],
+   "piege": "Deux issues comme pile-face et face-pile sont distinctes si l’ordre des lancers est retenu.",
+   "astuce_memoire": "Un chemin par issue complète.",
+   "quiz": [
+    {
+     "q": "Quelle est la probabilité d’obtenir deux piles en deux lancers indépendants d’une pièce équilibrée ?",
+     "choix": [
+      "1/2",
+      "1/3",
+      "1/4"
+     ],
+     "rep": "1/4",
+     "expl": "Une issue favorable sur quatre est pile-pile."
+    },
+    {
+     "q": "Quelle est la probabilité d’obtenir exactement un pile ?",
+     "choix": [
+      "1/2",
+      "1/4",
+      "3/4"
+     ],
+     "rep": "1/2",
+     "expl": "Pile-face et face-pile sont deux issues sur quatre."
+    },
+    {
+     "q": "Combien d’issues ordonnées possède cette expérience ?",
+     "choix": [
+      "Deux",
+      "Quatre",
+      "Trois"
+     ],
+     "rep": "Quatre",
+     "expl": "Il y a deux possibilités à chacun des deux lancers, soit quatre chemins."
+    }
+   ],
+   "id": "REV-MA-3E-20"
+  },
+  {
+   "axe": "Grandeurs et mesures",
+   "titre": "Volumes usuels",
+   "emoji": "📦",
+   "en_une_phrase": "Le volume mesure l’espace occupé par un solide.",
+   "comprendre": "Tu peux remplir une boîte avec des cubes identiques pour mesurer son volume. Les formules calculent ce nombre sans compter chaque cube. Il faut utiliser des longueurs dans la même unité.",
+   "essentiel": [
+    "Pavé droit : V = longueur × largeur × hauteur.",
+    "Prisme droit ou cylindre : V = aire de base × hauteur.",
+    "Pyramide ou cône : V = aire de base × hauteur ÷ 3."
+   ],
+   "image_mentale": "Imagine des couches de cubes empilées dans une boîte.",
+   "regle_ou_methode": "Identifie le solide, calcule l’aire de sa base puis utilise la hauteur dans la bonne formule.",
+   "exemples": [
+    "Un pavé droit mesure 6 cm de long, 4 cm de large et 3 cm de haut. Calcule 6 × 4 × 3. Son volume est 72 cm³.",
+    "Un cône de base 12 cm² et de hauteur 5 cm a un volume de 12 × 5 ÷ 3 = 20 cm³."
+   ],
+   "piege": "Une aire s’exprime en unités carrées et un volume en unités cubes.",
+   "astuce_memoire": "Base fois hauteur ; diviser par 3 pour une pyramide ou un cône.",
+   "quiz": [
+    {
+     "q": "Quel est le volume d’un pavé droit de dimensions 6 cm, 4 cm et 3 cm ?",
+     "choix": [
+      "72 cm³",
+      "13 cm³",
+      "24 cm³"
+     ],
+     "rep": "72 cm³",
+     "expl": "6 × 4 × 3 = 72 cm³."
+    },
+    {
+     "q": "Un cône a une base de 12 cm² et une hauteur de 5 cm. Quel est son volume ?",
+     "choix": [
+      "60 cm³",
+      "20 cm³",
+      "17 cm³"
+     ],
+     "rep": "20 cm³",
+     "expl": "12 × 5 ÷ 3 = 20 cm³."
+    },
+    {
+     "q": "Quelle unité peut exprimer un volume ?",
+     "choix": [
+      "cm²",
+      "cm",
+      "cm³"
+     ],
+     "rep": "cm³",
+     "expl": "Le centimètre cube est une unité de volume."
+    }
+   ],
+   "id": "REV-MA-3E-21"
+  },
+  {
+   "axe": "Grandeurs et mesures",
+   "titre": "Agrandissement et volumes",
+   "emoji": "📐",
+   "en_une_phrase": "Lors d’un agrandissement de rapport k positif, les aires sont multipliées par k² et les volumes par k³.",
+   "comprendre": "Lorsque toutes les longueurs d’une boîte doublent, elle devient plus longue, plus large et plus haute. La multiplication agit dans deux directions pour une aire et trois pour un volume. Les facteurs d’agrandissement ne sont donc pas les mêmes.",
+   "essentiel": [
+    "Les longueurs sont multipliées par k.",
+    "Les aires sont multipliées par k².",
+    "Les volumes sont multipliés par k³."
+   ],
+   "image_mentale": "Imagine un cube doublé dans chacune de ses trois directions.",
+   "regle_ou_methode": "Repère le rapport des longueurs puis élève-le au carré pour une aire ou au cube pour un volume.",
+   "exemples": [
+    "Un cube de volume 5 cm³ est agrandi avec un rapport 2. Le volume est multiplié par 2³ = 8. Le nouveau volume vaut 5 × 8 = 40 cm³.",
+    "Une surface de 12 cm² agrandie avec un rapport 3 devient 12 × 9 = 108 cm²."
+   ],
+   "piege": "Ne multiplie pas le volume par le seul rapport des longueurs.",
+   "astuce_memoire": "Longueur : k ; aire : k² ; volume : k³.",
+   "quiz": [
+    {
+     "q": "Un volume de 5 cm³ est agrandi avec un rapport 2. Quel est le nouveau volume ?",
+     "choix": [
+      "10 cm³",
+      "40 cm³",
+      "20 cm³"
+     ],
+     "rep": "40 cm³",
+     "expl": "Le volume est multiplié par 2³ = 8."
+    },
+    {
+     "q": "Une aire est agrandie avec un rapport de longueur 3. Par quel nombre est-elle multipliée ?",
+     "choix": [
+      "3",
+      "27",
+      "9"
+     ],
+     "rep": "9",
+     "expl": "L’aire est multipliée par 3² = 9."
+    },
+    {
+     "q": "Un volume de 5 cm³ est réduit avec un rapport 1/2. Quel est le nouveau volume ?",
+     "choix": [
+      "0,625 cm³",
+      "2,5 cm³",
+      "1,25 cm³"
+     ],
+     "rep": "0,625 cm³",
+     "expl": "Le facteur de volume est (1/2)³ = 1/8, et 5/8 = 0,625."
+    }
+   ],
+   "id": "REV-MA-3E-22"
+  },
+  {
+   "axe": "Grandeurs et mesures",
+   "titre": "Vitesse et unités",
+   "emoji": "🚴",
+   "en_une_phrase": "Une vitesse moyenne se calcule en divisant une distance par la durée correspondante.",
+   "comprendre": "Tu peux comparer deux trajets en reliant leur distance au temps nécessaire. Le résultat dépend des unités choisies. Avant de calculer, il faut vérifier qu’elles sont compatibles avec l’unité demandée.",
+   "essentiel": [
+    "Vitesse moyenne = distance ÷ durée.",
+    "Distance = vitesse × durée.",
+    "Pour passer de m/s à km/h, on multiplie par 3,6."
+   ],
+   "image_mentale": "Imagine une route graduée et un chronomètre.",
+   "regle_ou_methode": "Choisis des unités cohérentes, effectue le calcul puis vérifie l’unité du résultat.",
+   "exemples": [
+    "Un cycliste parcourt 18 km en 45 min. Convertis 45 min en 0,75 h. Sa vitesse moyenne est 18 ÷ 0,75 = 24 km/h.",
+    "Une vitesse de 5 m/s correspond à 5 × 3,6 = 18 km/h."
+   ],
+   "piege": "Ne traite pas 45 min comme 0,45 h : c’est 0,75 h.",
+   "astuce_memoire": "Distance divisée par durée ; m/s vers km/h : multiplier par 3,6.",
+   "quiz": [
+    {
+     "q": "18 km en 45 min correspondent à quelle vitesse moyenne ?",
+     "choix": [
+      "40 km/h",
+      "13,5 km/h",
+      "24 km/h"
+     ],
+     "rep": "24 km/h",
+     "expl": "45 min valent 0,75 h et 18 ÷ 0,75 = 24."
+    },
+    {
+     "q": "Que vaut 5 m/s en km/h ?",
+     "choix": [
+      "18 km/h",
+      "1,8 km/h",
+      "50 km/h"
+     ],
+     "rep": "18 km/h",
+     "expl": "5 × 3,6 = 18."
+    },
+    {
+     "q": "Combien valent 45 min en heures ?",
+     "choix": [
+      "0,45 h",
+      "0,75 h",
+      "1,45 h"
+     ],
+     "rep": "0,75 h",
+     "expl": "45 min représentent trois quarts d’heure."
+    }
+   ],
+   "id": "REV-MA-3E-23"
+  },
+  {
+   "axe": "Espace et géométrie",
+   "titre": "Pythagore : calculer une longueur",
+   "emoji": "📐",
+   "en_une_phrase": "Dans un triangle rectangle, le carré de l’hypoténuse est la somme des carrés des deux autres côtés.",
+   "comprendre": "Tu peux vérifier la longueur d’une diagonale avec les côtés d’un rectangle. Le théorème de Pythagore s’applique à un triangle rectangle. Il relie les longueurs de ses trois côtés.",
+   "essentiel": [
+    "L’hypoténuse est le côté opposé à l’angle droit.",
+    "Si ABC est rectangle en A, BC² = AB² + AC².",
+    "Pour retrouver une longueur, on prend la racine carrée positive."
+   ],
+   "image_mentale": "Imagine un triangle rectangle avec un carré construit sur chacun de ses côtés.",
+   "regle_ou_methode": "Repère l’angle droit et l’hypoténuse, écris l’égalité, puis calcule.",
+   "exemples": [
+    "Un triangle est rectangle avec deux côtés de 6 cm et 8 cm autour de l’angle droit. L’hypoténuse c vérifie c² = 6² + 8² = 100. Donc c = 10 cm.",
+    "Si l’hypoténuse mesure 13 cm et un côté 5 cm, l’autre côté mesure 12 cm."
+   ],
+   "piege": "La somme des deux carrés correspond à celui de l’hypoténuse, pas à celui de n’importe quel côté.",
+   "astuce_memoire": "Hypoténuse au carré égale somme des deux autres carrés.",
+   "quiz": [
+    {
+     "q": "Un triangle rectangle a pour côtés de l’angle droit 6 cm et 8 cm. Quelle est son hypoténuse ?",
+     "choix": [
+      "10 cm",
+      "14 cm",
+      "100 cm"
+     ],
+     "rep": "10 cm",
+     "expl": "6² + 8² = 100, donc l’hypoténuse vaut 10 cm."
+    },
+    {
+     "q": "Un triangle rectangle a une hypoténuse de 13 cm et un côté de 5 cm. Quelle est la longueur de l’autre côté ?",
+     "choix": [
+      "18 cm",
+      "12 cm",
+      "8 cm"
+     ],
+     "rep": "12 cm",
+     "expl": "13² − 5² = 144, dont la racine carrée est 12."
+    },
+    {
+     "q": "Quel côté est l’hypoténuse ?",
+     "choix": [
+      "Le côté toujours vertical",
+      "Le plus petit côté",
+      "Le côté opposé à l’angle droit"
+     ],
+     "rep": "Le côté opposé à l’angle droit",
+     "expl": "L’hypoténuse est opposée à l’angle droit."
+    }
+   ],
+   "id": "REV-MA-3E-24"
+  },
+  {
+   "axe": "Espace et géométrie",
+   "titre": "Prouver qu’un triangle est rectangle",
+   "emoji": "🔺",
+   "en_une_phrase": "La réciproque de Pythagore permet de démontrer qu’un triangle est rectangle à partir de ses longueurs.",
+   "comprendre": "Une figure peut sembler présenter un angle droit sans le prouver. Pour le vérifier avec les longueurs, compare le carré du plus grand côté à la somme des carrés des deux autres. Si l’égalité est vraie, la réciproque de Pythagore conclut que le triangle est rectangle.",
+   "essentiel": [
+    "Repère le plus grand côté.",
+    "Vérifie si son carré égale la somme des carrés des deux autres.",
+    "L’angle droit est opposé au plus grand côté."
+   ],
+   "image_mentale": "Imagine une balance comparant le plus grand carré aux deux autres.",
+   "regle_ou_methode": "Calcule les deux membres séparément, puis applique la réciproque si l’égalité est vraie.",
+   "exemples": [
+    "Un triangle a pour côtés 5 cm, 12 cm et 13 cm. Calcule 13² = 169 et 5² + 12² = 169. L’égalité prouve que le triangle est rectangle, avec 13 cm pour hypoténuse.",
+    "Pour des côtés 4, 5 et 6 cm, 6² = 36 et 4² + 5² = 41 : le triangle n’est pas rectangle."
+   ],
+   "piege": "Ne conclus pas à partir de l’apparence du dessin.",
+   "astuce_memoire": "Plus grand côté au carré : compare avec la somme des deux autres carrés.",
+   "quiz": [
+    {
+     "q": "Un triangle de côtés 5, 12 et 13 est-il rectangle ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Impossible à vérifier avec ces longueurs"
+     ],
+     "rep": "Oui",
+     "expl": "13² = 5² + 12²."
+    },
+    {
+     "q": "Quel côté est l’hypoténuse dans ce triangle ?",
+     "choix": [
+      "Le côté de longueur 5",
+      "Le côté de longueur 12",
+      "Le côté de longueur 13"
+     ],
+     "rep": "Le côté de longueur 13",
+     "expl": "Le plus grand côté est opposé à l’angle droit."
+    },
+    {
+     "q": "Un triangle de côtés 4, 5 et 6 est-il rectangle ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui seulement si le dessin semble rectangle"
+     ],
+     "rep": "Non",
+     "expl": "6² = 36 et 4² + 5² = 41, donc l’égalité nécessaire échoue."
+    }
+   ],
+   "id": "REV-MA-3E-25"
+  },
+  {
+   "axe": "Espace et géométrie",
+   "titre": "Thalès : calculer une longueur",
+   "emoji": "📏",
+   "en_une_phrase": "Dans une configuration de Thalès, des parallèles donnent des rapports de longueurs égaux.",
+   "comprendre": "Une photo agrandie conserve les proportions lorsque ses dimensions sont multipliées par le même nombre. Dans des triangles en configuration de Thalès, le parallélisme permet une proportionnalité analogue. Il faut repérer les côtés correspondants.",
+   "essentiel": [
+    "Les points doivent être alignés dans la configuration adaptée.",
+    "Les droites correspondantes doivent être parallèles.",
+    "Les longueurs de côtés correspondants sont proportionnelles."
+   ],
+   "image_mentale": "Imagine un petit triangle placé dans un grand avec deux côtés correspondants parallèles.",
+   "regle_ou_methode": "Vérifie les alignements et le parallélisme, écris les rapports correspondants puis résous.",
+   "exemples": [
+    "Dans le triangle ABC, M appartient à [AB], N appartient à [AC] et (MN) est parallèle à (BC). Si AM = 3, AB = 6 et AC = 10, alors AM/AB = AN/AC. On obtient 3/6 = AN/10, donc AN = 5.",
+    "Si un rapport de réduction vaut 1/2, un côté correspondant de 8 cm devient 4 cm."
+   ],
+   "piege": "N’applique pas Thalès sans vérifier les alignements et le parallélisme.",
+   "astuce_memoire": "Petite longueur sur grande longueur, dans le même ordre.",
+   "quiz": [
+    {
+     "q": "Avec AM/AB = AN/AC, AM = 3, AB = 6 et AC = 10, que vaut AN ?",
+     "choix": [
+      "20",
+      "13",
+      "5"
+     ],
+     "rep": "5",
+     "expl": "3/6 = AN/10, donc AN = 5."
+    },
+    {
+     "q": "Quel rapport correspond à une réduction de moitié ?",
+     "choix": [
+      "1/2",
+      "2",
+      "3/2"
+     ],
+     "rep": "1/2",
+     "expl": "Chaque longueur est multipliée par 1/2."
+    },
+    {
+     "q": "Quelle condition est essentielle dans la configuration de Thalès utilisée ?",
+     "choix": [
+      "Une figure forcément équilatérale",
+      "Le parallélisme des droites indiquées",
+      "Des angles droits partout"
+     ],
+     "rep": "Le parallélisme des droites indiquées",
+     "expl": "Le parallélisme permet d’établir les rapports."
+    }
+   ],
+   "id": "REV-MA-3E-26"
+  },
+  {
+   "axe": "Espace et géométrie",
+   "titre": "Réciproque de Thalès",
+   "emoji": "📎",
+   "en_une_phrase": "La réciproque de Thalès permet de démontrer un parallélisme avec des rapports égaux et des alignements.",
+   "comprendre": "Deux droites peuvent paraître parallèles sur un dessin sans l’être exactement. La réciproque de Thalès utilise l’alignement des points, leur ordre et l’égalité de rapports pour conclure. Il faut comparer les longueurs dans le même ordre.",
+   "essentiel": [
+    "Vérifie les alignements et l’ordre correspondant des points.",
+    "Compare les rapports de longueurs correspondantes.",
+    "Si les conditions sont réunies, les droites concernées sont parallèles."
+   ],
+   "image_mentale": "Imagine deux côtés d’un triangle marqués à la même proportion.",
+   "regle_ou_methode": "Écris les deux rapports dans le même ordre, vérifie l’égalité et conclus avec la réciproque.",
+   "exemples": [
+    "Dans un triangle ABC, M est sur [AB] et N sur [AC]. Si AM = 2, AB = 6, AN = 3 et AC = 9, alors AM/AB = 1/3 et AN/AC = 1/3. Les rapports sont égaux dans le même ordre : (MN) est parallèle à (BC).",
+    "Si les rapports correspondants valent 1/2 et 2/3, cette réciproque ne permet pas de conclure au parallélisme."
+   ],
+   "piege": "L’égalité de rapports seule ne suffit pas : il faut les alignements et l’ordre adaptés.",
+   "astuce_memoire": "Alignements, ordre, rapports égaux, conclusion.",
+   "quiz": [
+    {
+     "q": "Avec AM/AB = 2/6 et AN/AC = 3/9, les rapports sont-ils égaux ?",
+     "choix": [
+      "Oui, ils valent 1/3",
+      "Non, ils valent 1/2 et 1/3",
+      "Oui, ils valent 2"
+     ],
+     "rep": "Oui, ils valent 1/3",
+     "expl": "2/6 et 3/9 se simplifient en 1/3."
+    },
+    {
+     "q": "Que peut-on conclure si les alignements et les rapports de l’exemple sont vérifiés ?",
+     "choix": [
+      "Le triangle est forcément équilatéral",
+      "Les droites (MN) et (BC) sont parallèles",
+      "Les longueurs AB et AC sont forcément égales"
+     ],
+     "rep": "Les droites (MN) et (BC) sont parallèles",
+     "expl": "La réciproque de Thalès donne le parallélisme."
+    },
+    {
+     "q": "Si les rapports sont différents, peut-on appliquer cette réciproque pour prouver le parallélisme ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui si les droites semblent parallèles",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "L’égalité des rapports est nécessaire dans cette démarche."
+    }
+   ],
+   "id": "REV-MA-3E-27"
+  },
+  {
+   "axe": "Espace et géométrie",
+   "titre": "Trigonométrie dans le triangle rectangle",
+   "emoji": "📐",
+   "en_une_phrase": "Sinus, cosinus et tangente relient un angle aigu aux côtés d’un triangle rectangle.",
+   "comprendre": "Dans un triangle rectangle, tu peux comparer les côtés autour d’un angle aigu. Ces rapports ne dépendent pas de la taille du triangle mais de l’angle. Ils permettent de calculer une longueur ou un angle.",
+   "essentiel": [
+    "Sinus = côté opposé ÷ hypoténuse.",
+    "Cosinus = côté adjacent ÷ hypoténuse.",
+    "Tangente = côté opposé ÷ côté adjacent."
+   ],
+   "image_mentale": "Imagine l’angle choisi, puis colorie le côté opposé, l’adjacent et l’hypoténuse.",
+   "regle_ou_methode": "Repère l’angle et les côtés, choisis le rapport utile puis calcule.",
+   "exemples": [
+    "Pour un angle aigu, le côté opposé mesure 3 cm et l’hypoténuse 5 cm. Le sinus vaut opposé ÷ hypoténuse. Donc sin(angle) = 3/5 = 0,6.",
+    "Si le côté opposé mesure 4 cm et l’adjacent 3 cm, la tangente vaut 4/3."
+   ],
+   "piege": "Les côtés opposé et adjacent dépendent de l’angle aigu choisi.",
+   "astuce_memoire": "Sinus opposé sur hypoténuse ; cosinus adjacent sur hypoténuse ; tangente opposé sur adjacent.",
+   "quiz": [
+    {
+     "q": "Opposé = 3 et hypoténuse = 5 : quel est le sinus de l’angle ?",
+     "choix": [
+      "5/3",
+      "0,6",
+      "0,8"
+     ],
+     "rep": "0,6",
+     "expl": "Le sinus vaut 3/5 = 0,6."
+    },
+    {
+     "q": "Opposé = 4 et adjacent = 3 : quelle est la tangente ?",
+     "choix": [
+      "3/4",
+      "4/5",
+      "4/3"
+     ],
+     "rep": "4/3",
+     "expl": "La tangente vaut opposé divisé par adjacent."
+    },
+    {
+     "q": "Quel côté est toujours opposé à l’angle droit ?",
+     "choix": [
+      "L’hypoténuse",
+      "Le côté adjacent à chaque angle aigu uniquement",
+      "Le plus petit côté"
+     ],
+     "rep": "L’hypoténuse",
+     "expl": "L’hypoténuse est opposée à l’angle droit."
+    }
+   ],
+   "id": "REV-MA-3E-28"
+  },
+  {
+   "axe": "Espace et géométrie",
+   "titre": "Homothétie et longueurs",
+   "emoji": "🔎",
+   "en_une_phrase": "Une homothétie transforme une figure en multipliant les longueurs par la valeur absolue de son rapport.",
+   "comprendre": "Une image agrandie conserve sa forme tout en changeant de taille. Une homothétie utilise un centre et un rapport. Si le rapport est négatif, un point distinct du centre et son image sont de part et d’autre du centre.",
+   "essentiel": [
+    "Le centre reste fixe.",
+    "Les longueurs sont multipliées par la valeur absolue du rapport.",
+    "Un rapport négatif place l’image de l’autre côté du centre."
+   ],
+   "image_mentale": "Imagine des points alignés avec un centre, étirés ou placés de l’autre côté.",
+   "regle_ou_methode": "Repère le centre et le rapport, puis multiplie les longueurs par sa valeur absolue.",
+   "exemples": [
+    "Une homothétie de rapport −2 transforme un segment de 3 cm. La valeur absolue du rapport est 2. Le segment image mesure donc 6 cm et chaque point distinct du centre et son image sont de part et d’autre du centre.",
+    "Avec un rapport de 0,5, un segment de 8 cm devient un segment de 4 cm."
+   ],
+   "piege": "Une longueur reste positive : on utilise la valeur absolue du rapport.",
+   "astuce_memoire": "Longueur multipliée par la valeur absolue du rapport.",
+   "quiz": [
+    {
+     "q": "Un segment de 3 cm subit une homothétie de rapport −2. Quelle est sa longueur image ?",
+     "choix": [
+      "−6 cm",
+      "1,5 cm",
+      "6 cm"
+     ],
+     "rep": "6 cm",
+     "expl": "Sa longueur est multipliée par la valeur absolue 2."
+    },
+    {
+     "q": "Un rapport de 0,5 transforme un segment de 8 cm en :",
+     "choix": [
+      "4 cm",
+      "16 cm",
+      "8,5 cm"
+     ],
+     "rep": "4 cm",
+     "expl": "8 × 0,5 = 4 cm."
+    },
+    {
+     "q": "Que devient le centre d’une homothétie ?",
+     "choix": [
+      "Il disparaît",
+      "Il reste fixe",
+      "Il devient toujours un sommet de triangle"
+     ],
+     "rep": "Il reste fixe",
+     "expl": "Le centre est son propre point image."
+    }
+   ],
+   "id": "REV-MA-3E-29"
+  },
+  {
+   "axe": "Espace et géométrie",
+   "titre": "Triangles semblables",
+   "emoji": "🔺",
+   "en_une_phrase": "Deux triangles semblables ont leurs angles correspondants égaux et leurs côtés correspondants proportionnels.",
+   "comprendre": "Deux dessins de tailles différentes peuvent représenter la même forme. Des triangles semblables possèdent les mêmes angles, même si leurs côtés n’ont pas les mêmes longueurs. On peut utiliser le coefficient de proportionnalité pour calculer un côté manquant.",
+   "essentiel": [
+    "Les angles correspondants sont égaux.",
+    "Les côtés correspondants sont proportionnels.",
+    "Les longueurs sont multipliées par un même coefficient positif."
+   ],
+   "image_mentale": "Imagine un triangle et une photocopie agrandie.",
+   "regle_ou_methode": "Repère les sommets correspondants, calcule le coefficient puis multiplie la longueur cherchée.",
+   "exemples": [
+    "Un petit triangle a un côté de 4 cm et le côté correspondant du grand mesure 10 cm. Le coefficient vaut 10 ÷ 4 = 2,5. Un autre côté de 6 cm dans le petit mesure donc 6 × 2,5 = 15 cm dans le grand.",
+    "Si le coefficient vaut 3, un côté de 2 cm correspond à un côté de 6 cm."
+   ],
+   "piege": "Compare des côtés qui correspondent aux mêmes angles.",
+   "astuce_memoire": "Même forme, côtés correspondants proportionnels.",
+   "quiz": [
+    {
+     "q": "Un triangle est agrandi avec un coefficient 2,5. Que devient un côté de 6 cm ?",
+     "choix": [
+      "15 cm",
+      "8,5 cm",
+      "2,4 cm"
+     ],
+     "rep": "15 cm",
+     "expl": "6 × 2,5 = 15 cm."
+    },
+    {
+     "q": "Que conservent des triangles semblables ?",
+     "choix": [
+      "Toutes les longueurs identiques obligatoirement",
+      "Les angles correspondants",
+      "Le même périmètre obligatoirement"
+     ],
+     "rep": "Les angles correspondants",
+     "expl": "Leurs angles correspondants sont égaux."
+    },
+    {
+     "q": "Si un côté de 4 cm correspond à un côté de 10 cm, quel est le coefficient d’agrandissement ?",
+     "choix": [
+      "0,4",
+      "6",
+      "2,5"
+     ],
+     "rep": "2,5",
+     "expl": "10 ÷ 4 = 2,5."
+    }
+   ],
+   "id": "REV-MA-3E-30"
+  },
+  {
+   "axe": "Algorithmique et programmation",
+   "titre": "Variables et calculs",
+   "emoji": "💻",
+   "en_une_phrase": "Une variable conserve une valeur qui peut être modifiée pendant un programme.",
+   "comprendre": "Tu peux garder un nombre dans une case puis le remplacer par un nouveau résultat. Un programme utilise une variable pour mémoriser une valeur. Les instructions s’exécutent dans l’ordre prévu.",
+   "essentiel": [
+    "Une affectation donne une valeur à une variable.",
+    "La valeur peut évoluer pendant le programme.",
+    "L’ordre des instructions change parfois le résultat."
+   ],
+   "image_mentale": "Imagine une boîte étiquetée score dans laquelle on remplace un nombre.",
+   "regle_ou_methode": "Suis chaque instruction dans l’ordre et note la valeur après chaque changement.",
+   "exemples": [
+    "Le programme met score à 4 puis ajoute 3 à score. La boîte contient d’abord 4. Après l’ajout, elle contient 7.",
+    "Si x vaut 5 puis devient 2 × x, sa nouvelle valeur est 10."
+   ],
+   "piege": "Une affectation remplace la valeur précédente de la variable.",
+   "astuce_memoire": "Une variable : une boîte dont la valeur peut changer.",
+   "quiz": [
+    {
+     "q": "Score vaut 4 puis augmente de 3. Quelle est sa valeur ?",
+     "choix": [
+      "4",
+      "7",
+      "12"
+     ],
+     "rep": "7",
+     "expl": "4 + 3 = 7."
+    },
+    {
+     "q": "Si x vaut 5 et devient 2 × x, que vaut x ensuite ?",
+     "choix": [
+      "7",
+      "5",
+      "10"
+     ],
+     "rep": "10",
+     "expl": "2 × 5 = 10."
+    },
+    {
+     "q": "Que fait une affectation à une variable ?",
+     "choix": [
+      "Elle lui donne une valeur",
+      "Elle trace obligatoirement un cercle",
+      "Elle supprime tous les calculs"
+     ],
+     "rep": "Elle lui donne une valeur",
+     "expl": "Une affectation enregistre une valeur dans la variable."
+    }
+   ],
+   "id": "REV-MA-3E-31"
+  },
+  {
+   "axe": "Algorithmique et programmation",
+   "titre": "Boucles et conditions",
+   "emoji": "🔁",
+   "en_une_phrase": "Une boucle répète des instructions et une condition choisit une action selon un test.",
+   "comprendre": "Tu peux répéter le même geste plusieurs fois ou agir seulement si une condition est remplie. Un programme utilise une boucle pour éviter de répéter les instructions à la main. Une condition permet de choisir une action.",
+   "essentiel": [
+    "Répéter 4 fois exécute quatre fois les instructions de la boucle.",
+    "Une condition est évaluée avant l’action prévue.",
+    "Le suivi pas à pas aide à contrôler un programme."
+   ],
+   "image_mentale": "Imagine un escalier de quatre marches et un aiguillage.",
+   "regle_ou_methode": "Compte les répétitions, vérifie le test à chaque passage puis mets à jour les valeurs.",
+   "exemples": [
+    "Une variable vaut 0. Répète trois fois « ajouter 2 » : elle passe à 2, puis 4, puis 6. La valeur finale est 6.",
+    "Si le score vaut 8 et que la règle dit « si score ≥ 5, afficher gagné », le programme affiche gagné."
+   ],
+   "piege": "Une boucle de trois répétitions n’exécute pas seulement la dernière instruction une fois.",
+   "astuce_memoire": "Boucle : répéter ; condition : tester.",
+   "quiz": [
+    {
+     "q": "Une variable vaut 0. On ajoute 2 trois fois. Résultat ?",
+     "choix": [
+      "5",
+      "2",
+      "6"
+     ],
+     "rep": "6",
+     "expl": "0 + 2 + 2 + 2 = 6."
+    },
+    {
+     "q": "Si score = 8, que fait « si score ≥ 5, afficher gagné » ?",
+     "choix": [
+      "Il affiche gagné",
+      "Il n’affiche rien nécessairement",
+      "Il met le score à 5"
+     ],
+     "rep": "Il affiche gagné",
+     "expl": "8 est supérieur ou égal à 5."
+    },
+    {
+     "q": "Que permet une boucle ?",
+     "choix": [
+      "Supprimer toutes les variables",
+      "Répéter des instructions",
+      "Transformer chaque condition en nombre premier"
+     ],
+     "rep": "Répéter des instructions",
+     "expl": "Une boucle exécute plusieurs fois un bloc d’instructions."
+    }
+   ],
+   "id": "REV-MA-3E-32"
+  }
+ ]
+}

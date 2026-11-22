@@ -1,0 +1,806 @@
+{
+ "classe": "3E",
+ "niveau_appli": "3ème",
+ "age": "14-15 ans",
+ "matiere": "SVT",
+ "code": "SVT",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "La planète Terre, l’environnement et l’action humaine",
+   "titre": "Risques et enjeux",
+   "emoji": "🌍",
+   "en_une_phrase": "Un risque dépend d’un aléa et des enjeux exposés.",
+   "comprendre": "Une forte secousse n’a pas les mêmes conséquences dans une zone inhabitée et dans une ville vulnérable. L’aléa est la possibilité d’un phénomène naturel. Le risque dépend aussi des personnes et des biens exposés ainsi que de leur vulnérabilité.",
+   "essentiel": [
+    "Un aléa est la possibilité d’un phénomène potentiellement dangereux.",
+    "Les enjeux sont les personnes, les biens ou les activités exposés.",
+    "La prévention vise à réduire les conséquences possibles."
+   ],
+   "image_mentale": "Imagine une carte superposant une zone de secousses et des habitations.",
+   "regle_ou_methode": "Identifie le phénomène, les enjeux exposés et les mesures possibles de prévention.",
+   "exemples": [
+    "Deux zones peuvent subir une secousse comparable. Dans la première, des bâtiments et des habitants sont exposés ; dans la seconde, il n’y a aucun enjeu humain ou matériel considéré. Le risque pour ces enjeux diffère donc.",
+    "Des bâtiments adaptés aux secousses peuvent réduire la vulnérabilité des occupants."
+   ],
+   "piege": "Ne confonds pas l’aléa naturel avec le risque pour les enjeux exposés.",
+   "astuce_memoire": "Aléa, enjeux exposés, vulnérabilité.",
+   "quiz": [
+    {
+     "q": "Que désigne un aléa sismique ?",
+     "choix": [
+      "Les seuls bâtiments existants",
+      "La possibilité de secousses",
+      "Le nombre d’élèves dans une classe"
+     ],
+     "rep": "La possibilité de secousses",
+     "expl": "L’aléa concerne le phénomène potentiellement dangereux."
+    },
+    {
+     "q": "Quels éléments peuvent être des enjeux exposés ?",
+     "choix": [
+      "Uniquement les nuages",
+      "Seulement une légende de carte",
+      "Des habitants et des bâtiments"
+     ],
+     "rep": "Des habitants et des bâtiments",
+     "expl": "Les personnes et les biens peuvent subir des dommages."
+    },
+    {
+     "q": "Pourquoi deux zones soumises au même aléa peuvent-elles avoir des risques différents ?",
+     "choix": [
+      "Leurs enjeux et leur vulnérabilité peuvent différer",
+      "La secousse cesse dès qu’une ville existe",
+      "Les habitants suppriment toujours le phénomène"
+     ],
+     "rep": "Leurs enjeux et leur vulnérabilité peuvent différer",
+     "expl": "Les conséquences dépendent aussi des enjeux et de leur vulnérabilité."
+    }
+   ],
+   "id": "REV-SVT-3E-01"
+  },
+  {
+   "axe": "La planète Terre, l’environnement et l’action humaine",
+   "titre": "Changements climatiques",
+   "emoji": "🌡️",
+   "en_une_phrase": "Le climat évolue et les activités humaines actuelles contribuent au réchauffement global.",
+   "comprendre": "Tu connais des variations de météo d’un jour à l’autre. Le climat décrit des conditions sur des périodes longues. Les émissions humaines de gaz à effet de serre renforcent l’effet de serre et contribuent au réchauffement observé.",
+   "essentiel": [
+    "La météo décrit des conditions à court terme.",
+    "Le climat repose sur des observations de longue durée.",
+    "Les activités humaines émettent notamment du dioxyde de carbone.",
+    "Les conséquences varient selon les régions."
+   ],
+   "image_mentale": "Imagine une courbe irrégulière dont la tendance se lit sur plusieurs décennies.",
+   "regle_ou_methode": "Distingue un événement météo local d’une tendance climatique établie par des observations nombreuses.",
+   "exemples": [
+    "Une journée froide dans une ville est un événement météorologique. On ne peut pas en déduire seule une tendance climatique mondiale. Pour étudier cette tendance, on compare de nombreuses mesures sur de longues périodes.",
+    "Brûler du charbon ou du pétrole émet du dioxyde de carbone, un gaz à effet de serre."
+   ],
+   "piege": "Une journée froide locale ne suffit pas à réfuter une tendance mondiale de long terme.",
+   "astuce_memoire": "Météo : court terme ; climat : périodes longues.",
+   "quiz": [
+    {
+     "q": "Une journée froide suffit-elle à déterminer le climat mondial ?",
+     "choix": [
+      "Oui",
+      "Oui, si elle se produit en hiver",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Une tendance climatique s’étudie sur de longues périodes et de nombreux lieux."
+    },
+    {
+     "q": "Quel gaz est notamment émis lors de la combustion du charbon ?",
+     "choix": [
+      "Le dioxyde de carbone",
+      "Uniquement du dioxygène",
+      "Uniquement du diazote"
+     ],
+     "rep": "Le dioxyde de carbone",
+     "expl": "La combustion du carbone produit du dioxyde de carbone."
+    },
+    {
+     "q": "Quel phénomène est renforcé par l’augmentation des gaz à effet de serre ?",
+     "choix": [
+      "La disparition de tout rayonnement solaire",
+      "L’effet de serre",
+      "La rotation quotidienne de la Terre"
+     ],
+     "rep": "L’effet de serre",
+     "expl": "Ces gaz modifient les échanges de rayonnement et renforcent l’effet de serre."
+    }
+   ],
+   "id": "REV-SVT-3E-02"
+  },
+  {
+   "axe": "La planète Terre, l’environnement et l’action humaine",
+   "titre": "Préserver un écosystème",
+   "emoji": "🌿",
+   "en_une_phrase": "Les activités humaines peuvent modifier les milieux et les interactions entre espèces.",
+   "comprendre": "Un milieu abrite des êtres vivants qui dépendent les uns des autres et de leur environnement. Une modification de l’eau, des sols ou des habitats peut perturber ces relations. Étudier les effets d’une activité aide à choisir des mesures de protection.",
+   "essentiel": [
+    "Un écosystème associe un milieu et les êtres vivants qui y interagissent.",
+    "La pollution ou la fragmentation des habitats peut modifier la biodiversité.",
+    "Les effets et les mesures se vérifient par des observations."
+   ],
+   "image_mentale": "Imagine un réseau reliant des espèces à l’eau, au sol et aux autres espèces.",
+   "regle_ou_methode": "Identifie l’activité, observe les changements du milieu puis compare les effets possibles sur les espèces.",
+   "exemples": [
+    "Une route coupe un habitat en deux. Certaines espèces traversent plus difficilement. Un passage adapté peut rétablir une partie de leurs déplacements.",
+    "Des rejets dans une rivière peuvent modifier la qualité de l’eau et affecter des organismes aquatiques."
+   ],
+   "piege": "Une mesure de protection doit être évaluée : son efficacité dépend du milieu et des espèces.",
+   "astuce_memoire": "Milieu, êtres vivants, interactions, effets.",
+   "quiz": [
+    {
+     "q": "Que peut provoquer la fragmentation d’un habitat ?",
+     "choix": [
+      "Des déplacements plus difficiles pour certaines espèces",
+      "La disparition automatique de toute vie sur Terre",
+      "Une augmentation garantie de toutes les populations"
+     ],
+     "rep": "Des déplacements plus difficiles pour certaines espèces",
+     "expl": "La coupure peut limiter les déplacements entre zones."
+    },
+    {
+     "q": "Que comprend un écosystème ?",
+     "choix": [
+      "Seulement des animaux",
+      "Un milieu et les êtres vivants qui y interagissent",
+      "Uniquement des roches"
+     ],
+     "rep": "Un milieu et les êtres vivants qui y interagissent",
+     "expl": "L’écosystème comprend le milieu et les êtres vivants en interaction."
+    },
+    {
+     "q": "Pourquoi mesurer les effets d’un passage pour animaux ?",
+     "choix": [
+      "Pour prouver qu’aucune autre mesure ne peut exister",
+      "Pour supprimer toute observation",
+      "Pour évaluer s’il aide les espèces à traverser"
+     ],
+     "rep": "Pour évaluer s’il aide les espèces à traverser",
+     "expl": "Les observations permettent d’évaluer l’efficacité du passage."
+    }
+   ],
+   "id": "REV-SVT-3E-03"
+  },
+  {
+   "axe": "Le vivant et son évolution",
+   "titre": "ADN et chromosomes",
+   "emoji": "🧬",
+   "en_une_phrase": "Les chromosomes portent de l’ADN contenant une grande partie de l’information génétique.",
+   "comprendre": "Tu sais qu’une cellule possède des structures organisées. Dans les cellules humaines, le noyau contient des chromosomes constitués notamment d’ADN. L’information portée par l’ADN participe au fonctionnement et aux caractères de l’organisme.",
+   "essentiel": [
+    "L’ADN est une molécule présente dans les chromosomes.",
+    "La plupart des cellules humaines possèdent 46 chromosomes dans leur noyau.",
+    "Les chromosomes sont organisés en 23 paires dans ces cellules."
+   ],
+   "image_mentale": "Imagine une longue pelote d’ADN rangée dans des chromosomes.",
+   "regle_ou_methode": "Repère la cellule, son noyau puis les chromosomes et l’ADN.",
+   "exemples": [
+    "Dans une cellule humaine de la peau possédant un noyau, compte 23 paires de chromosomes. Cela fait 46 chromosomes. Ils portent de l’ADN.",
+    "Un spermatozoïde humain contient généralement 23 chromosomes, et non 23 paires."
+   ],
+   "piege": "Toutes les cellules humaines ne possèdent pas 46 chromosomes : les cellules reproductrices en possèdent généralement 23.",
+   "astuce_memoire": "Cellule, noyau, chromosomes, ADN.",
+   "quiz": [
+    {
+     "q": "Combien de chromosomes trouve-t-on généralement dans le noyau d’une cellule humaine de peau ?",
+     "choix": [
+      "23",
+      "46",
+      "92"
+     ],
+     "rep": "46",
+     "expl": "Ces cellules possèdent généralement 23 paires de chromosomes."
+    },
+    {
+     "q": "Combien de chromosomes contient généralement un spermatozoïde humain ?",
+     "choix": [
+      "46",
+      "92",
+      "23"
+     ],
+     "rep": "23",
+     "expl": "Un gamète humain contient généralement 23 chromosomes."
+    },
+    {
+     "q": "Que contient notamment un chromosome ?",
+     "choix": [
+      "De l’ADN",
+      "Uniquement de l’eau",
+      "Uniquement des aliments"
+     ],
+     "rep": "De l’ADN",
+     "expl": "Un chromosome est constitué notamment d’ADN."
+    }
+   ],
+   "id": "REV-SVT-3E-04"
+  },
+  {
+   "axe": "Le vivant et son évolution",
+   "titre": "Gènes et allèles",
+   "emoji": "🧩",
+   "en_une_phrase": "Un gène est une portion d’ADN et ses versions sont appelées allèles.",
+   "comprendre": "Tu peux comparer plusieurs versions d’une même consigne. Dans l’ADN, un gène peut exister sous différentes versions appelées allèles. Les caractères observés peuvent dépendre de plusieurs gènes et de l’environnement.",
+   "essentiel": [
+    "Un gène est une portion d’ADN associée à une information biologique.",
+    "Des allèles sont des versions différentes d’un même gène.",
+    "Un caractère peut dépendre de plusieurs facteurs génétiques et environnementaux."
+   ],
+   "image_mentale": "Imagine un même titre de recette avec plusieurs versions possibles.",
+   "regle_ou_methode": "Identifie le gène étudié puis distingue ses différentes versions.",
+   "exemples": [
+    "Pour un gène donné, imaginons deux versions appelées A et a. A et a sont deux allèles du même gène. Une personne peut posséder une copie de chaque version.",
+    "La taille d’une personne dépend notamment de nombreux gènes et de conditions de vie comme l’alimentation."
+   ],
+   "piege": "Un caractère complexe n’est pas nécessairement déterminé par un seul gène.",
+   "astuce_memoire": "Gène : portion d’ADN ; allèle : version de ce gène.",
+   "quiz": [
+    {
+     "q": "Que désigne un allèle ?",
+     "choix": [
+      "Un organe entier",
+      "Un aliment",
+      "Une version d’un gène"
+     ],
+     "rep": "Une version d’un gène",
+     "expl": "Un allèle est une version possible d’un gène."
+    },
+    {
+     "q": "A et a désignent deux versions d’un même gène. Que sont-ils ?",
+     "choix": [
+      "Deux allèles",
+      "Deux organes",
+      "Deux écosystèmes"
+     ],
+     "rep": "Deux allèles",
+     "expl": "Ce sont deux versions du même gène."
+    },
+    {
+     "q": "La taille humaine dépend-elle uniquement d’un seul gène ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Oui, sans effet de l’environnement"
+     ],
+     "rep": "Non",
+     "expl": "La taille dépend de nombreux facteurs génétiques et environnementaux."
+    }
+   ],
+   "id": "REV-SVT-3E-05"
+  },
+  {
+   "axe": "Le vivant et son évolution",
+   "titre": "Division cellulaire",
+   "emoji": "🔬",
+   "en_une_phrase": "Lors d’une division cellulaire ordinaire, une cellule produit deux cellules filles.",
+   "comprendre": "Une blessure peut cicatriser grâce notamment au renouvellement de cellules. Avant une division, l’ADN est copié. Les deux cellules filles reçoivent normalement la même information génétique que la cellule initiale.",
+   "essentiel": [
+    "L’ADN est copié avant la division.",
+    "La division produit deux cellules filles.",
+    "Les cellules filles conservent normalement le nombre de chromosomes de la cellule initiale."
+   ],
+   "image_mentale": "Imagine un jeu de documents copié puis partagé en deux dossiers.",
+   "regle_ou_methode": "Repère la cellule initiale, la copie de l’ADN puis la répartition entre les cellules filles.",
+   "exemples": [
+    "Une cellule de peau humaine contient 46 chromosomes. Avant la division, son ADN est copié. Après une division ordinaire, chacune des deux cellules filles possède généralement 46 chromosomes.",
+    "Une cellule initiale donne deux cellules filles lors d’une division."
+   ],
+   "piege": "La quantité d’ADN est copiée avant la division ; les cellules filles ne reçoivent pas chacune le double du nombre normal de chromosomes.",
+   "astuce_memoire": "Copie de l’ADN puis répartition entre deux cellules.",
+   "quiz": [
+    {
+     "q": "Combien de cellules filles une division cellulaire ordinaire produit-elle ?",
+     "choix": [
+      "Deux",
+      "Une",
+      "Quatre"
+     ],
+     "rep": "Deux",
+     "expl": "Une cellule se divise en deux cellules filles."
+    },
+    {
+     "q": "Une cellule de peau humaine à 46 chromosomes se divise normalement. Combien de chromosomes chaque cellule fille possède-t-elle ?",
+     "choix": [
+      "23",
+      "46",
+      "92"
+     ],
+     "rep": "46",
+     "expl": "Le nombre de chromosomes est normalement conservé."
+    },
+    {
+     "q": "Que se passe-t-il avant la division ?",
+     "choix": [
+      "Tous les chromosomes disparaissent",
+      "La cellule devient un écosystème",
+      "L’ADN est copié"
+     ],
+     "rep": "L’ADN est copié",
+     "expl": "La copie de l’ADN précède sa répartition."
+    }
+   ],
+   "id": "REV-SVT-3E-06"
+  },
+  {
+   "axe": "Le vivant et son évolution",
+   "titre": "Gamètes et fécondation",
+   "emoji": "🥚",
+   "en_une_phrase": "La formation des gamètes et la fécondation contribuent à la diversité génétique.",
+   "comprendre": "Un enfant reçoit de l’information génétique de ses deux parents biologiques. Les cellules reproductrices humaines contiennent chacune généralement 23 chromosomes. Leur union lors de la fécondation réunit les chromosomes dans une cellule-œuf.",
+   "essentiel": [
+    "Les gamètes humains contiennent généralement 23 chromosomes.",
+    "La fécondation réunit deux gamètes.",
+    "La cellule-œuf possède généralement 46 chromosomes."
+   ],
+   "image_mentale": "Imagine deux moitiés d’un jeu de chromosomes réunies dans une cellule.",
+   "regle_ou_methode": "Compte les chromosomes de chaque gamète puis additionne-les à la fécondation.",
+   "exemples": [
+    "Un ovule et un spermatozoïde contiennent chacun généralement 23 chromosomes. Lors de leur union, 23 + 23 = 46. La cellule-œuf possède donc généralement 46 chromosomes.",
+    "Des frères et sœurs peuvent recevoir des combinaisons différentes d’allèles de leurs parents."
+   ],
+   "piege": "Les gamètes d’une même personne ne contiennent pas tous forcément la même combinaison d’allèles.",
+   "astuce_memoire": "23 et 23 donnent généralement 46.",
+   "quiz": [
+    {
+     "q": "Combien de chromosomes la cellule-œuf humaine possède-t-elle généralement ?",
+     "choix": [
+      "23",
+      "46",
+      "92"
+     ],
+     "rep": "46",
+     "expl": "La fécondation réunit généralement 23 chromosomes de chaque gamète."
+    },
+    {
+     "q": "La fécondation réunit :",
+     "choix": [
+      "Deux écosystèmes",
+      "Deux organes entiers",
+      "Deux gamètes"
+     ],
+     "rep": "Deux gamètes",
+     "expl": "Elle associe les informations génétiques de deux gamètes."
+    },
+    {
+     "q": "Des frères et sœurs ont-ils forcément la même combinaison d’allèles ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, sauf s’ils ont les mêmes parents biologiques"
+     ],
+     "rep": "Non",
+     "expl": "Les combinaisons transmises peuvent différer."
+    }
+   ],
+   "id": "REV-SVT-3E-07"
+  },
+  {
+   "axe": "Le vivant et son évolution",
+   "titre": "Mutations et diversité",
+   "emoji": "🧬",
+   "en_une_phrase": "Une mutation est une modification de la séquence d’ADN.",
+   "comprendre": "Tu peux imaginer qu’une consigne écrite subit une modification. Dans une cellule, l’ADN peut lui aussi être modifié. Une mutation peut créer une nouvelle version d’un gène, sans avoir toujours un effet visible.",
+   "essentiel": [
+    "Une mutation modifie la séquence de l’ADN.",
+    "Une mutation peut créer un nouvel allèle.",
+    "Ses effets varient : elle peut être sans effet visible, défavorable ou parfois avantageuse selon le contexte."
+   ],
+   "image_mentale": "Imagine une suite de lettres dont une partie change.",
+   "regle_ou_methode": "Repère la modification de l’ADN puis distingue sa présence de ses éventuels effets.",
+   "exemples": [
+    "Un gène possède une séquence d’ADN. Une modification apparaît dans cette séquence. Si elle produit une nouvelle version du gène, il s’agit d’un nouvel allèle.",
+    "Une mutation peut ne produire aucun changement visible du caractère observé."
+   ],
+   "piege": "Une mutation n’est pas nécessairement dangereuse et ne répond pas intentionnellement aux besoins de l’organisme.",
+   "astuce_memoire": "Mutation : modification de l’ADN.",
+   "quiz": [
+    {
+     "q": "Qu’est-ce qu’une mutation ?",
+     "choix": [
+      "Une reproduction entre deux espèces obligatoirement",
+      "Un changement de saison",
+      "Une modification de la séquence d’ADN"
+     ],
+     "rep": "Une modification de la séquence d’ADN",
+     "expl": "Une mutation modifie l’ADN."
+    },
+    {
+     "q": "Une mutation a-t-elle toujours un effet visible ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, seulement chez les plantes"
+     ],
+     "rep": "Non",
+     "expl": "Certaines mutations ne produisent aucun effet visible."
+    },
+    {
+     "q": "Une mutation apparaît-elle parce que l’organisme a décidé d’en avoir besoin ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Oui, si la température change"
+     ],
+     "rep": "Non",
+     "expl": "Les mutations ne sont pas dirigées par une intention de l’organisme."
+    }
+   ],
+   "id": "REV-SVT-3E-08"
+  },
+  {
+   "axe": "Le vivant et son évolution",
+   "titre": "Sélection naturelle",
+   "emoji": "🌱",
+   "en_une_phrase": "La sélection naturelle modifie au fil des générations la fréquence de caractères héréditaires dans une population.",
+   "comprendre": "Dans un milieu donné, des individus présentent des différences. Certaines différences héréditaires peuvent favoriser la survie ou la reproduction dans ce milieu. Au fil des générations, les allèles associés peuvent devenir plus fréquents.",
+   "essentiel": [
+    "Une population présente une diversité de caractères.",
+    "Certains caractères héréditaires influencent la reproduction ou la survie selon le milieu.",
+    "La fréquence des allèles peut changer au fil des générations."
+   ],
+   "image_mentale": "Imagine une population variée observée génération après génération.",
+   "regle_ou_methode": "Identifie une variation héréditaire, le milieu et la différence de reproduction ou de survie.",
+   "exemples": [
+    "Dans une population, certains insectes sont mieux dissimulés grâce à une couleur héréditaire. Dans un milieu donné, ils sont moins souvent repérés et peuvent laisser davantage de descendants. La fréquence de cette couleur peut augmenter au fil des générations.",
+    "Un changement de milieu peut modifier l’avantage relatif d’un caractère."
+   ],
+   "piege": "Ce ne sont pas les individus qui choisissent leurs mutations pour s’adapter.",
+   "astuce_memoire": "Variation, reproduction différentielle, générations.",
+   "quiz": [
+    {
+     "q": "À quelle échelle observe-t-on une évolution de fréquence des allèles ?",
+     "choix": [
+      "Dans une population au fil des générations",
+      "Dans un seul individu en quelques secondes",
+      "Uniquement dans une carte géographique"
+     ],
+     "rep": "Dans une population au fil des générations",
+     "expl": "La sélection naturelle modifie les fréquences dans une population au fil des générations."
+    },
+    {
+     "q": "Un caractère est-il avantageux dans tous les milieux ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Oui, s’il est rare"
+     ],
+     "rep": "Non",
+     "expl": "Son effet dépend notamment du milieu."
+    },
+    {
+     "q": "Si un caractère héréditaire favorise la reproduction dans un milieu donné, que peut-il se passer ?",
+     "choix": [
+      "Tous les individus le choisissent volontairement",
+      "Il disparaît nécessairement dès la génération suivante",
+      "Il peut devenir plus fréquent au fil des générations"
+     ],
+     "rep": "Il peut devenir plus fréquent au fil des générations",
+     "expl": "Les individus porteurs peuvent laisser davantage de descendants."
+    }
+   ],
+   "id": "REV-SVT-3E-09"
+  },
+  {
+   "axe": "Le vivant et son évolution",
+   "titre": "Parenté et ancêtre commun",
+   "emoji": "🌳",
+   "en_une_phrase": "Les caractères partagés permettent d’établir des liens de parenté entre espèces.",
+   "comprendre": "Tu peux classer des êtres vivants en comparant leurs caractères. En science, certains caractères partagés aident à construire des groupes de parenté. Un arbre représente des hypothèses sur leurs ancêtres communs.",
+   "essentiel": [
+    "Des espèces peuvent partager des caractères hérités d’un ancêtre commun.",
+    "Un nœud de l’arbre représente un ancêtre commun hypothétique.",
+    "Les espèces actuelles continuent chacune leur propre histoire évolutive."
+   ],
+   "image_mentale": "Imagine des branches qui partent de nœuds communs.",
+   "regle_ou_methode": "Repère les caractères partagés puis cherche le nœud commun sur l’arbre.",
+   "exemples": [
+    "Sur un arbre simplifié, deux espèces sont reliées à un même nœud. Ce nœud représente un ancêtre commun hypothétique. Il ne représente pas forcément une espèce actuelle.",
+    "Les humains et les chimpanzés actuels partagent des ancêtres communs ; les humains ne descendent pas des chimpanzés actuels."
+   ],
+   "piege": "Une espèce actuelle ne doit pas être considérée comme l’ancêtre direct d’une autre espèce actuelle simplement parce qu’elles sont parentes.",
+   "astuce_memoire": "Branches parentes : un ancêtre commun, pas une échelle de progrès.",
+   "quiz": [
+    {
+     "q": "Que représente un nœud dans un arbre de parenté simplifié ?",
+     "choix": [
+      "Une espèce actuelle forcément identique",
+      "Un ancêtre commun hypothétique",
+      "Un climat annuel"
+     ],
+     "rep": "Un ancêtre commun hypothétique",
+     "expl": "Un nœud représente une origine commune hypothétique."
+    },
+    {
+     "q": "Les humains descendent-ils des chimpanzés actuels ?",
+     "choix": [
+      "Oui, des chimpanzés actuels",
+      "Non, ils ne partagent aucun ancêtre",
+      "Non, ils partagent des ancêtres communs"
+     ],
+     "rep": "Non, ils partagent des ancêtres communs",
+     "expl": "Les deux lignées ont des ancêtres communs mais ont évolué séparément."
+    },
+    {
+     "q": "Que compare-t-on pour construire des liens de parenté ?",
+     "choix": [
+      "Des caractères partagés",
+      "Uniquement la taille actuelle",
+      "Seulement le lieu d’observation"
+     ],
+     "rep": "Des caractères partagés",
+     "expl": "Les caractères partagés apportent des indices de parenté."
+    }
+   ],
+   "id": "REV-SVT-3E-10"
+  },
+  {
+   "axe": "Le corps humain et la santé",
+   "titre": "Microbes et infection",
+   "emoji": "🦠",
+   "en_une_phrase": "Une infection survient lorsqu’un agent infectieux se multiplie dans l’organisme.",
+   "comprendre": "De nombreux micro-organismes vivent autour de nous et certains sont utiles ou inoffensifs. D’autres peuvent pénétrer dans l’organisme et provoquer une infection. La contamination désigne leur entrée ; l’infection correspond à leur multiplication.",
+   "essentiel": [
+    "Les micro-organismes comprennent notamment des bactéries.",
+    "Certains agents infectieux provoquent des maladies.",
+    "Contamination et infection sont deux étapes distinctes."
+   ],
+   "image_mentale": "Imagine une barrière franchie puis des agents qui se multiplient.",
+   "regle_ou_methode": "Identifie l’agent, son entrée éventuelle puis sa multiplication.",
+   "exemples": [
+    "Une bactérie pathogène pénètre par une plaie : c’est une contamination. Si elle se multiplie dans l’organisme, une infection peut se développer. L’entrée et la multiplication désignent donc deux étapes différentes.",
+    "De nombreuses bactéries du microbiote participent au fonctionnement normal de l’organisme."
+   ],
+   "piege": "Tous les micro-organismes ne provoquent pas une maladie.",
+   "astuce_memoire": "Contamination : entrée ; infection : multiplication.",
+   "quiz": [
+    {
+     "q": "Que désigne la contamination dans cet exemple ?",
+     "choix": [
+      "La multiplication de toutes les cellules du corps",
+      "La guérison automatique",
+      "L’entrée d’un agent infectieux dans l’organisme"
+     ],
+     "rep": "L’entrée d’un agent infectieux dans l’organisme",
+     "expl": "La contamination correspond ici à l’entrée de l’agent."
+    },
+    {
+     "q": "Tous les micro-organismes sont-ils dangereux ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, s’ils sont invisibles"
+     ],
+     "rep": "Non",
+     "expl": "Beaucoup sont inoffensifs ou utiles."
+    },
+    {
+     "q": "Que désigne une infection ?",
+     "choix": [
+      "Uniquement le lavage des mains",
+      "La multiplication d’un agent infectieux dans l’organisme",
+      "Une variation de la température extérieure"
+     ],
+     "rep": "La multiplication d’un agent infectieux dans l’organisme",
+     "expl": "Une infection implique la multiplication d’un agent infectieux."
+    }
+   ],
+   "id": "REV-SVT-3E-11"
+  },
+  {
+   "axe": "Le corps humain et la santé",
+   "titre": "Réponse immunitaire",
+   "emoji": "🛡️",
+   "en_une_phrase": "Le système immunitaire participe à la défense de l’organisme contre les agents infectieux.",
+   "comprendre": "Quand une barrière comme la peau est franchie, des cellules de défense peuvent intervenir. Certaines réagissent rapidement et d’autres reconnaissent plus précisément certains éléments étrangers. Les réponses coopèrent pour limiter ou éliminer l’agent infectieux.",
+   "essentiel": [
+    "La peau et les muqueuses constituent des barrières.",
+    "Des cellules immunitaires peuvent reconnaître et éliminer des agents infectieux.",
+    "Des lymphocytes participent à une réponse spécifique."
+   ],
+   "image_mentale": "Imagine une barrière puis plusieurs équipes de défense aux rôles complémentaires.",
+   "regle_ou_methode": "Repère la barrière franchie, les cellules qui interviennent et l’effet de leur action.",
+   "exemples": [
+    "Après une petite plaie, des agents infectieux peuvent franchir la peau. Des cellules immunitaires interviennent dans la zone. Elles contribuent à limiter l’infection.",
+    "Certains lymphocytes produisent des anticorps qui reconnaissent spécifiquement des éléments de l’agent infectieux."
+   ],
+   "piege": "Le système immunitaire n’est pas constitué d’un seul type de cellule.",
+   "astuce_memoire": "Barrières puis cellules de défense aux rôles complémentaires.",
+   "quiz": [
+    {
+     "q": "Quel élément constitue une barrière de l’organisme ?",
+     "choix": [
+      "La peau",
+      "Une chaussure",
+      "Une feuille de papier"
+     ],
+     "rep": "La peau",
+     "expl": "La peau limite l’entrée de nombreux agents infectieux."
+    },
+    {
+     "q": "Quels éléments produisent des anticorps spécifiques ?",
+     "choix": [
+      "Les os uniquement",
+      "Certains lymphocytes",
+      "Les cheveux uniquement"
+     ],
+     "rep": "Certains lymphocytes",
+     "expl": "Certains lymphocytes produisent des anticorps."
+    },
+    {
+     "q": "Le système immunitaire utilise-t-il un seul type de cellule ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, uniquement des cellules musculaires",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Plusieurs types cellulaires coopèrent dans les défenses."
+    }
+   ],
+   "id": "REV-SVT-3E-12"
+  },
+  {
+   "axe": "Le corps humain et la santé",
+   "titre": "Vaccination et mémoire",
+   "emoji": "💉",
+   "en_une_phrase": "La vaccination prépare le système immunitaire à répondre à certains agents infectieux.",
+   "comprendre": "Après un apprentissage, tu peux réagir plus vite à une situation déjà rencontrée. La vaccination déclenche une réponse immunitaire et une mémoire adaptée à un agent ou à certains de ses éléments. Cette mémoire permet une réponse généralement plus rapide lors d’une exposition ultérieure.",
+   "essentiel": [
+    "Un vaccin stimule une réponse immunitaire spécifique.",
+    "Des cellules mémoire peuvent persister après la vaccination.",
+    "La protection varie selon le vaccin et la situation ; des rappels peuvent être nécessaires."
+   ],
+   "image_mentale": "Imagine une fiche de reconnaissance conservée pour une rencontre ultérieure.",
+   "regle_ou_methode": "Distingue la vaccination, la mémoire immunitaire puis la réponse lors d’une exposition ultérieure.",
+   "exemples": [
+    "Après une vaccination, le système immunitaire réagit à des éléments présentés par le vaccin. Des cellules mémoire peuvent être conservées. Lors d’une exposition ultérieure, elles contribuent à une réponse plus rapide.",
+    "Certains vaccins nécessitent plusieurs doses ou des rappels pour maintenir une protection adaptée."
+   ],
+   "piege": "La vaccination réduit le risque de certaines maladies mais ne garantit pas une protection parfaite dans toutes les situations.",
+   "astuce_memoire": "Vaccination, réponse, mémoire.",
+   "quiz": [
+    {
+     "q": "Quel est le rôle de la vaccination ?",
+     "choix": [
+      "Remplacer toutes les cellules du corps",
+      "Préparer une réponse immunitaire contre certains agents",
+      "Traiter directement toutes les maladies"
+     ],
+     "rep": "Préparer une réponse immunitaire contre certains agents",
+     "expl": "Elle stimule une réponse immunitaire et une mémoire adaptées."
+    },
+    {
+     "q": "À quoi servent les cellules mémoire ?",
+     "choix": [
+      "À empêcher le cœur de battre",
+      "À produire uniquement des globules rouges",
+      "À contribuer à une réponse plus rapide lors d’une rencontre ultérieure"
+     ],
+     "rep": "À contribuer à une réponse plus rapide lors d’une rencontre ultérieure",
+     "expl": "Elles participent à la mémoire immunitaire."
+    },
+    {
+     "q": "La vaccination garantit-elle une protection parfaite dans tous les cas ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, quel que soit le vaccin et la personne"
+     ],
+     "rep": "Non",
+     "expl": "La protection varie selon les vaccins et les situations."
+    }
+   ],
+   "id": "REV-SVT-3E-13"
+  },
+  {
+   "axe": "Le corps humain et la santé",
+   "titre": "Antibiotiques et résistance",
+   "emoji": "💊",
+   "en_une_phrase": "Les antibiotiques agissent sur certaines bactéries, pas sur les virus.",
+   "comprendre": "Les infections peuvent avoir des causes différentes. Un antibiotique agit sur des bactéries sensibles à cet antibiotique. Son utilisation inadaptée favorise la sélection de bactéries résistantes.",
+   "essentiel": [
+    "Un antibiotique n’agit pas contre un virus.",
+    "Les bactéries résistantes peuvent survivre à certains antibiotiques.",
+    "Un traitement antibiotique est choisi et suivi selon une prescription médicale."
+   ],
+   "image_mentale": "Imagine une population bactérienne dans laquelle certaines bactéries résistent à un traitement.",
+   "regle_ou_methode": "Identifie l’agent responsable puis distingue bactéries sensibles et résistantes.",
+   "exemples": [
+    "Lorsqu’une infection est due à un virus, un antibiotique ne détruit pas ce virus. Le traitement doit donc être adapté à la cause de l’infection. Un professionnel de santé détermine la prise en charge.",
+    "Dans une population bactérienne, les bactéries résistantes à un antibiotique peuvent survivre tandis que des bactéries sensibles sont éliminées."
+   ],
+   "piege": "Ce sont les bactéries qui deviennent résistantes à un antibiotique, pas la personne.",
+   "astuce_memoire": "Antibiotiques : bactéries sensibles, pas virus.",
+   "quiz": [
+    {
+     "q": "Un antibiotique détruit-il directement un virus ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, si le virus est invisible",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Les antibiotiques agissent sur des bactéries sensibles, pas sur les virus."
+    },
+    {
+     "q": "Que peut favoriser une utilisation inadaptée des antibiotiques ?",
+     "choix": [
+      "La sélection de bactéries résistantes",
+      "La disparition définitive de tous les microbes",
+      "La transformation de toutes les bactéries en virus"
+     ],
+     "rep": "La sélection de bactéries résistantes",
+     "expl": "Les bactéries résistantes peuvent être favorisées."
+    },
+    {
+     "q": "Qui ou quoi est résistant à l’antibiotique dans ce contexte ?",
+     "choix": [
+      "La personne elle-même",
+      "La bactérie",
+      "Le thermomètre"
+     ],
+     "rep": "La bactérie",
+     "expl": "La résistance concerne ici les bactéries."
+    }
+   ],
+   "id": "REV-SVT-3E-14"
+  },
+  {
+   "axe": "Le corps humain et la santé",
+   "titre": "Système nerveux et messages",
+   "emoji": "🧠",
+   "en_une_phrase": "Le système nerveux reçoit des informations et coordonne des réponses de l’organisme.",
+   "comprendre": "Tu retires rapidement ta main d’un objet très chaud. Des récepteurs détectent une stimulation et des messages nerveux circulent. Le cerveau et la moelle épinière participent au traitement de l’information et à la commande de certaines réponses.",
+   "essentiel": [
+    "Les récepteurs sensoriels détectent des stimulations.",
+    "Les nerfs transmettent des messages nerveux.",
+    "Le cerveau et la moelle épinière appartiennent au système nerveux central."
+   ],
+   "image_mentale": "Imagine des câbles reliant un capteur, un centre de traitement et un muscle.",
+   "regle_ou_methode": "Repère la stimulation, le récepteur, le trajet du message et l’organe qui réalise la réponse.",
+   "exemples": [
+    "Une personne touche un objet très chaud. Des récepteurs sont stimulés et des messages nerveux circulent. Les muscles participent au retrait de la main.",
+    "Les yeux détectent la lumière et transmettent des informations nerveuses au cerveau par les voies visuelles."
+   ],
+   "piege": "Un nerf transmet des messages ; il ne correspond pas à un muscle.",
+   "astuce_memoire": "Récepteur, message, centre nerveux, réponse.",
+   "quiz": [
+    {
+     "q": "Que détecte un récepteur sensoriel ?",
+     "choix": [
+      "Une stimulation",
+      "Uniquement une facture",
+      "Un chromosome au hasard"
+     ],
+     "rep": "Une stimulation",
+     "expl": "Un récepteur répond à certaines stimulations."
+    },
+    {
+     "q": "Quels organes forment le système nerveux central ?",
+     "choix": [
+      "Le cœur et l’estomac",
+      "Le cerveau et la moelle épinière",
+      "Les os et les dents"
+     ],
+     "rep": "Le cerveau et la moelle épinière",
+     "expl": "Le cerveau et la moelle épinière sont des centres nerveux."
+    },
+    {
+     "q": "Quel organe réalise le mouvement de retrait de la main ?",
+     "choix": [
+      "Les cheveux",
+      "Le cristallin seul",
+      "Les muscles concernés"
+     ],
+     "rep": "Les muscles concernés",
+     "expl": "La contraction des muscles permet le mouvement."
+    }
+   ],
+   "id": "REV-SVT-3E-15"
+  }
+ ]
+}
