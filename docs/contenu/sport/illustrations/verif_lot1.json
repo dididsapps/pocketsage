@@ -1,0 +1,374 @@
+{
+ "remarque_globale": "Sur la plupart des images, le personnage est posé sur un rectangle très légèrement grisé (bord de case discret, surtout 004-3, 020-4, 055, 056) : passer un seuil blanc sur le fond de tout le lot. Images légèrement douces à 1024 px mais lisibles.",
+ "exercices": [
+  {
+   "id": "DF-001",
+   "verdict": "retoucher",
+   "images_a_refaire": [
+    "DF-001-2"
+   ],
+   "defauts": "001-2 personnage nettement plus petit (h 558 px contre 675) et décalé : remettre à l'échelle et aligner les pieds sur 001-1.",
+   "consigne_pour_gpt": ""
+  },
+  {
+   "id": "DF-002",
+   "verdict": "retoucher",
+   "images_a_refaire": [
+    "DF-002-3"
+   ],
+   "defauts": "002-3 lève le même genou que 002-2 : le changement de pied n'est pas montré. Remplacer 002-3 par le miroir horizontal de 002-2.",
+   "consigne_pour_gpt": ""
+  },
+  {
+   "id": "DF-003",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-003-1",
+    "DF-003-2"
+   ],
+   "defauts": "003-2 est une copie exacte de DF-001-1 (bras écartés, jambes ouvertes) ; 003-1 sans pieds en V nets. Le pingouin n'est pas représenté.",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-003 Le Pingouin, 2 images : 1) Sami debout de face, bras tendus collés le long du corps, mains à plat tournées vers l'extérieur, talons joints et pointes de pieds bien écartées en V ; 2) même posture en marche : un pied en V légèrement levé, corps penché de ce côté, bras toujours collés."
+  },
+  {
+   "id": "DF-004",
+   "verdict": "ok",
+   "images_a_refaire": [],
+   "defauts": "Conforme ; légère tache claire sous les pieds de 004-3 (négligeable).",
+   "consigne_pour_gpt": ""
+  },
+  {
+   "id": "DF-005",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-005-2",
+    "DF-005-3"
+   ],
+   "defauts": "Tête très renversée en arrière sur 005-2 et 005-3 (nuque en hyperextension) ; petite tache orange près du pied sur 005-3.",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-005 Le Crabe, images 2 et 3 : Sami en position crabe ventre vers le haut, mains au sol derrière les épaules doigts vers les pieds, pieds à plat, bassin levé ; la tête reste dans le prolongement du dos, regard vers le ventre ou les genoux (nuque non renversée). Image 3 : même posture, une main et le pied opposé légèrement levés pour avancer."
+  },
+  {
+   "id": "DF-006",
+   "verdict": "retoucher",
+   "images_a_refaire": [
+    "DF-006-3"
+   ],
+   "defauts": "006-3 montre le même côté que 006-2 (même jambe levée, même orientation) : le changement de pied n'apparaît pas. Remplacer 006-3 par le miroir horizontal de 006-2.",
+   "consigne_pour_gpt": ""
+  },
+  {
+   "id": "DF-007",
+   "verdict": "ok",
+   "images_a_refaire": [],
+   "defauts": "Conforme (accroupi, saut, retour accroupi).",
+   "consigne_pour_gpt": ""
+  },
+  {
+   "id": "DF-008",
+   "verdict": "ok",
+   "images_a_refaire": [],
+   "defauts": "Conforme ; 008-1 et 008-2 proches mais différents.",
+   "consigne_pour_gpt": ""
+  },
+  {
+   "id": "DF-012",
+   "verdict": "ok",
+   "images_a_refaire": [],
+   "defauts": "Conforme : genou haut puis alternance en course.",
+   "consigne_pour_gpt": ""
+  },
+  {
+   "id": "DF-013",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-013-1",
+    "DF-013-3"
+   ],
+   "defauts": "Pieds joints sur 013-1 et 013-3 alors que la consigne demande pieds écartés ; 013-3 identique à 013-1 et décalée de 70 px (aller-retour sans position intermédiaire).",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-013 Squats, images 1 et 3 : 1) Sami debout de face, pieds écartés largeur d'épaules, bras le long du corps, dos droit ; 3) même vue de profil que l'image 2, à mi-hauteur en train de remonter : genoux à demi fléchis, bras tendus devant, dos droit, pieds écartés au même endroit que sur l'image 2."
+  },
+  {
+   "id": "DF-014",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-014-1"
+   ],
+   "defauts": "014-1 et 014-2 montrent la même planche finale (pas d'entrée dans la posture) ; tailles différentes (765 vs 726 px).",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-014 La Planche, image 1 (entrée) : Sami de profil, avant-bras au sol coudes sous les épaules, genoux posés au sol, dos droit, regard vers le sol ; même taille et même emplacement que l'image 2."
+  },
+  {
+   "id": "DF-017",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-017-3"
+   ],
+   "defauts": "017-3 identique à 017-1 : la dernière image d'un aller-retour doit être intermédiaire.",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-017 Jumping Jacks, image 3 : Sami de face en train de revenir, bras à mi-hauteur (à l'horizontale, en diagonale vers le bas) et pieds à moitié rapprochés, légèrement décollés du sol."
+  },
+  {
+   "id": "DF-019",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-019-3"
+   ],
+   "defauts": "019-2 et 019-3 ramènent le même genou (côté éloigné) : le changement de genou n'est pas montré.",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-019 Mountain climber, image 3 : Sami de profil en position de pompe bras tendus, dos plat, le genou CÔTÉ SPECTATEUR ramené vers la poitrine, l'autre jambe tendue en arrière ; même cadrage que l'image 2."
+  },
+  {
+   "id": "DF-020",
+   "verdict": "ok",
+   "images_a_refaire": [],
+   "defauts": "Conforme (debout, accroupi mains au sol, jambes tendues, saut bras en l'air).",
+   "consigne_pour_gpt": ""
+  },
+  {
+   "id": "DF-021",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-021-3"
+   ],
+   "defauts": "021-3 quasi identique à 021-1 (pas de position intermédiaire en remontée).",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-021 Pompes genoux, image 3 : Sami de profil, genoux au sol, coudes à moitié pliés en train de remonter, dos droit de la tête aux genoux, regard vers le sol."
+  },
+  {
+   "id": "DF-022",
+   "verdict": "retoucher",
+   "images_a_refaire": [
+    "DF-022-1"
+   ],
+   "defauts": "Tache orange parasite au sol entre les pieds sur 022-1 : à effacer.",
+   "consigne_pour_gpt": ""
+  },
+  {
+   "id": "DF-023",
+   "verdict": "retoucher",
+   "images_a_refaire": [
+    "DF-023-3"
+   ],
+   "defauts": "023-3 identique à 023-1 : l'alternance des jambes n'est pas montrée. Remplacer 023-3 par le miroir horizontal de 023-2 (fente autre jambe).",
+   "consigne_pour_gpt": ""
+  },
+  {
+   "id": "DF-024",
+   "verdict": "ok",
+   "images_a_refaire": [],
+   "defauts": "Conforme (accroupi pieds joints, bond, réception genoux fléchis).",
+   "consigne_pour_gpt": ""
+  },
+  {
+   "id": "DF-025",
+   "verdict": "retoucher",
+   "images_a_refaire": [
+    "DF-025-3"
+   ],
+   "defauts": "025-3 : double trait vertical parasite à droite ; frappe du même bras que 025-2. Effacer le trait et remplacer par le miroir de 025-2 pour l'autre bras.",
+   "consigne_pour_gpt": ""
+  },
+  {
+   "id": "DF-026",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-026-1",
+    "DF-026-3"
+   ],
+   "defauts": "026-1 : jambe arrière coupée net au bord de la case ; 026-3 : genou presque au sol (consigne : pas les genoux) et point noir parasite en bas à droite.",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-026 L'Ourson, images 1 et 3 : Sami de profil sur les mains et la plante des pieds, genoux décollés du sol, fesses hautes, personnage entier avec marge ; image 1 : une main avancée ; image 3 : le pied opposé avancé, genou bien au-dessus du sol."
+  },
+  {
+   "id": "DF-027",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-027-1",
+    "DF-027-2",
+    "DF-027-3"
+   ],
+   "defauts": "Aucune image ne montre une planche latérale sur le coude : appui sur la main, corps face au spectateur (027-1/3 main sur la tête), 027-2 est une planche de pompe ; tache près de la main sur 027-1.",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-027 Planche latérale, 3 images : vue de face, Sami allongé sur le côté droit, avant-bras droit au sol, coude sous l'épaule ; 1) hanches au sol, jambes tendues empilées ; 2) hanches levées, corps en ligne droite tête-pieds, main libre sur la hanche ; 3) même posture sur le côté gauche (miroir), appui sur le coude gauche."
+  },
+  {
+   "id": "DF-028",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-028-1",
+    "DF-028-2"
+   ],
+   "defauts": "Les deux images sont des planches de pompe face au sol, pas une planche latérale gauche sur le coude.",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-028 Planche latérale gauche, 2 images : Sami allongé sur le côté GAUCHE, avant-bras gauche au sol coude sous l'épaule, jambes tendues empilées ; 1) hanches au sol ; 2) hanches levées, corps en ligne droite, main droite sur la hanche, tête dans l'alignement."
+  },
+  {
+   "id": "DF-029",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-029-2",
+    "DF-029-3"
+   ],
+   "defauts": "029-2 et 029-3 identiques (même jambe levée) ; on ne voit pas clairement bras et jambe opposés, ni le changement de côté.",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-029 Superman, images 2 et 3 : Sami à plat ventre de profil, front vers le sol, nuque longue ; 2) bras droit (côté spectateur) tendu levé et jambe gauche (côté éloigné) levée, autres membres au sol ; 3) l'inverse : bras gauche et jambe droite levés. Les quatre membres doivent être visibles."
+  },
+  {
+   "id": "DF-030",
+   "verdict": "ok",
+   "images_a_refaire": [],
+   "defauts": "Conforme (assis mains derrière, puis table hanches hautes).",
+   "consigne_pour_gpt": ""
+  },
+  {
+   "id": "DF-031",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-031-2",
+    "DF-031-3"
+   ],
+   "defauts": "031-2 : mains sur la bouche/le menton au lieu de bras croisés sur la poitrine, impression de tirer sur la tête (nuque) ; 031-3 identique à 031-1.",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-031 Crunch, images 2 et 3 : Sami sur le dos, genoux fléchis pieds à plat, bras croisés sur la poitrine ; 2) épaules décollées du sol, menton éloigné de la poitrine (espace d'un poing), regard vers les genoux ; 3) à mi-chemin en redescendant, épaules presque au sol."
+  },
+  {
+   "id": "DF-032",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-032-3"
+   ],
+   "defauts": "032-3 identique à 032-1 ; traînées brunes sur le t-shirt en 032-2 (à effacer).",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-032 Le Pont, image 3 : Sami sur le dos, genoux fléchis pieds à plat, bras au sol le long du corps, hanches à mi-hauteur en train de redescendre, tête et épaules au sol."
+  },
+  {
+   "id": "DF-033",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-033-1"
+   ],
+   "defauts": "033-1 et 033-2 quasi identiques (pas d'entrée dans la posture) ; tailles différentes ; trait vertical parasite à droite de 033-2 (à effacer).",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-033 Planche sur mains, image 1 (entrée) : Sami de profil, mains sous les épaules bras tendus, genoux posés au sol, dos droit ; même taille et emplacement que l'image 2."
+  },
+  {
+   "id": "DF-034",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-034-2",
+    "DF-034-3"
+   ],
+   "defauts": "034-2 et 034-3 : bras posés au sol (la consigne dit sans toucher le sol), un seul bras visible, alternance non lisible ; 034-2 et 034-3 presque identiques.",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-034 Dead Bug, images 2 et 3 : Sami sur le dos, bas du dos plaqué au sol ; 2) bras droit descendu tendu au-dessus de la tête et jambe gauche tendue vers l'avant, tous deux à quelques centimètres du sol sans le toucher, l'autre bras vertical et l'autre jambe pliée à 90° ; 3) l'inverse : bras gauche et jambe droite descendus. Les quatre membres visibles."
+  },
+  {
+   "id": "DF-049",
+   "verdict": "retoucher",
+   "images_a_refaire": [
+    "DF-049-3"
+   ],
+   "defauts": "Trait vertical parasite à droite de 049-3 : à effacer.",
+   "consigne_pour_gpt": ""
+  },
+  {
+   "id": "DF-050",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-050-2",
+    "DF-050-3"
+   ],
+   "defauts": "Seule la tête tourne, le buste reste de face ; 050-2 et 050-3 regardent du même côté (pas de droite puis gauche).",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-050 Rotation du buste, images 2 et 3 : Sami de face, pieds écartés immobiles, mains sur les hanches ; 2) épaules et buste nettement tournés vers SA droite (gauche de l'image), tête dans l'axe du buste ; 3) même rotation vers SA gauche (droite de l'image)."
+  },
+  {
+   "id": "DF-051",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-051-2",
+    "DF-051-3"
+   ],
+   "defauts": "Le bassin ne bouge pas : seules les jambes s'écartent puis se resserrent ; écartement des pieds incohérent entre étapes.",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-051 Cercles de hanches, images 2 et 3 : Sami de face, pieds écartés à la même largeur que l'image 1, mains sur les hanches, épaules immobiles ; 2) bassin nettement poussé vers la droite de l'image ; 3) bassin poussé vers la gauche de l'image. Petite flèche courbe autorisée autour des hanches."
+  },
+  {
+   "id": "DF-052",
+   "verdict": "retoucher",
+   "images_a_refaire": [
+    "DF-052-3"
+   ],
+   "defauts": "052-3 quasi identique à 052-2 (même genou levé). Remplacer par le miroir horizontal de 052-2 ; 052-1 de face alors que 2-3 sont de trois-quarts (acceptable).",
+   "consigne_pour_gpt": ""
+  },
+  {
+   "id": "DF-053",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-053-1",
+    "DF-053-3"
+   ],
+   "defauts": "053-1 montre un genou levé (pas un talon-fesse) ; 053-2 et 053-3 identiques (même jambe) ; point parasite sur 053-3.",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-053 Talons-fesses, images 1 et 3 : Sami de trois-quarts comme l'image 2 ; 1) debout, en train de trottiner, les deux pieds presque au sol, bras fléchis ; 3) talon de l'AUTRE jambe que l'image 2 ramené vers les fesses, bras opposé en avant."
+  },
+  {
+   "id": "DF-054",
+   "verdict": "retoucher",
+   "images_a_refaire": [
+    "DF-054-2"
+   ],
+   "defauts": "054-2 et 054-3 fléchissent la même jambe (droite de l'image). Remplacer 054-2 par le miroir horizontal de 054-3.",
+   "consigne_pour_gpt": ""
+  },
+  {
+   "id": "DF-055",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-055-3",
+    "DF-055-4"
+   ],
+   "defauts": "055-3/055-4 : montage raté (jambes collées avec raccord visible, traits parasites aux cuisses), image floue et pixelisée, échelle différente ; 055-3 montre les poignets alors que la légende parle de cheville.",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-055 Chevilles et poignets, images 3 et 4 : Sami debout de face, même taille que l'image 1 ; 3) sur un pied, l'AUTRE pied levé que l'image 2, pointe qui dessine un cercle (petite flèche) ; 4) debout sur deux pieds, coudes pliés, poignets qui tournent (petites flèches circulaires autour des mains). Image nette, d'un seul tenant."
+  },
+  {
+   "id": "DF-056",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-056-1",
+    "DF-056-2",
+    "DF-056-3",
+    "DF-056-4"
+   ],
+   "defauts": "Les 4 images sont des montages ratés (raccord horizontal torse/jambes, traits parasites), floues et pixelisées, personnage plus grand que le reste du lot ; 056-2 ≈ 056-3, haussement d'épaules non visible.",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-056 Épaules qui roulent, 4 images, Sami debout de face, bras relâchés, même taille que les autres exercices (environ 70 % de la hauteur) : 1) épaules basses détendues ; 2) épaules haussées vers les oreilles ; 3) épaules tirées en arrière, poitrine ouverte, petite flèche courbe vers l'arrière ; 4) épaules enroulées vers l'avant, flèche courbe vers l'avant. Image nette, d'un seul tenant."
+  },
+  {
+   "id": "DF-057",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-057-2",
+    "DF-057-3"
+   ],
+   "defauts": "Les bras sont écartés sur les côtés comme un avion, pas un crawl (un bras en haut devant, l'autre en bas derrière).",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-057 Le Nageur, images 2 et 3 : Sami debout de trois-quarts, pieds stables, dos droit ; 2) bras droit tendu au-dessus de la tête vers l'avant, bras gauche en bas vers l'arrière ; 3) l'inverse ; petites lignes de mouvement circulaires."
+  },
+  {
+   "id": "DF-058",
+   "verdict": "refaire",
+   "images_a_refaire": [
+    "DF-058-1",
+    "DF-058-2",
+    "DF-058-3"
+   ],
+   "defauts": "Mur absent sur 1-2 et visible sur 3 (incohérent) ; 058-2 plié aux hanches bras tendus au lieu de coudes pliés corps droit ; 058-1 corps vertical sans inclinaison.",
+   "consigne_pour_gpt": "Même style crayon de couleur, même Sami, fond blanc pur, 1024x1024, même cadrage, même taille de personnage et même position au sol que les autres images de l'exercice. DF-058 Pompes au mur, 3 images de profil avec le même mur (bande verticale crayonnée) à droite : 1) Sami incliné vers le mur, pieds reculés, mains à plat sur le mur bras tendus, corps droit de la tête aux talons ; 2) coudes pliés, nez près du mur, corps toujours droit (pas plié aux hanches) ; 3) coudes à moitié tendus en train de repousser."
+  },
+  {
+   "id": "DF-059",
+   "verdict": "retoucher",
+   "images_a_refaire": [
+    "DF-059-3"
+   ],
+   "defauts": "Trait vertical parasite à droite de 059-3 : à effacer.",
+   "consigne_pour_gpt": ""
+  }
+ ],
+ "legendes_corrigees": {
+  "DF-024-2": "Bondis vers l'avant, pieds joints",
+  "DF-027-1": "Allonge-toi sur le côté, appui coude",
+  "DF-056-3": "Fais rouler les épaules vers l'arrière",
+  "DF-056-4": "Change de sens, roule vers l'avant",
+  "DF-059-2": "Dessine de grands cercles vers l'avant",
+  "DF-055-3": "Tourne l'autre cheville à ton rythme",
+  "DF-055-4": "Fais tourner aussi tes poignets",
+  "DF-003-2": "Marche avec les pieds en V",
+  "DF-013-3": "Remonte en gardant le dos droit",
+  "DF-001-1": "Bouge librement avant le signal"
+ }
+}
