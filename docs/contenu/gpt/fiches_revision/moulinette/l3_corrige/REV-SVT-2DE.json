@@ -1,0 +1,911 @@
+{
+ "classe": "2DE",
+ "niveau_appli": "Lycée",
+ "age": "15-16 ans",
+ "matiere": "SVT",
+ "code": "SVT",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Cellules spécialisées",
+   "emoji": "🔬",
+   "en_une_phrase": "Dans un organisme pluricellulaire, des cellules spécialisées assurent des fonctions différentes.",
+   "comprendre": "Un organisme contient plusieurs organes qui collaborent. Ces organes sont constitués de tissus formés de cellules. Certaines cellules présentent des structures et une activité adaptées à une fonction.",
+   "essentiel": [
+    "Un organisme pluricellulaire est formé de nombreuses cellules.",
+    "Un tissu rassemble des cellules organisées.",
+    "Une cellule spécialisée présente des caractéristiques liées à sa fonction."
+   ],
+   "image_mentale": "Imagine un organisme comme un ensemble de tissus aux rôles complémentaires.",
+   "regle_ou_methode": "Identifie l’organisme, l’organe, le tissu puis une cellule et sa fonction.",
+   "exemples": [
+    "Dans une feuille, des cellules chlorophylliennes contiennent des chloroplastes. Ces organites participent à la photosynthèse. Leur organisation contribue à la fonction de la feuille.",
+    "Des cellules musculaires spécialisées participent aux mouvements par leur contraction."
+   ],
+   "piege": "Les cellules d’un organisme ne possèdent pas toutes la même forme ni la même activité.",
+   "astuce_memoire": "Organisme, organes, tissus, cellules spécialisées.",
+   "quiz": [
+    {
+     "q": "Quel organite participe à la photosynthèse dans une cellule végétale chlorophyllienne ?",
+     "choix": [
+      "Un os",
+      "Le chloroplaste",
+      "Une racine entière"
+     ],
+     "rep": "Le chloroplaste",
+     "expl": "Les chloroplastes permettent la photosynthèse."
+    },
+    {
+     "q": "Que forment des cellules organisées assurant une fonction ?",
+     "choix": [
+      "Un système solaire",
+      "Une espèce nécessairement",
+      "Un tissu"
+     ],
+     "rep": "Un tissu",
+     "expl": "Des cellules organisées constituent un tissu."
+    },
+    {
+     "q": "Toutes les cellules spécialisées ont-elles la même activité ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, si elles appartiennent au même organisme"
+     ],
+     "rep": "Non",
+     "expl": "Leurs activités et structures peuvent différer selon leur fonction."
+    }
+   ],
+   "id": "REV-SVT-2DE-01"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "ADN et expression des gènes",
+   "emoji": "🧬",
+   "en_une_phrase": "Des cellules spécialisées possèdent généralement la même information génétique mais n’expriment pas les mêmes gènes.",
+   "comprendre": "Les cellules d’un organisme proviennent d’une cellule initiale. Elles reçoivent généralement une information génétique commune. Leur spécialisation repose notamment sur l’expression différente de certains gènes.",
+   "essentiel": [
+    "Un gène est une portion d’ADN.",
+    "Les cellules spécialisées expriment une partie de leurs gènes.",
+    "L’expression des gènes contribue aux caractéristiques cellulaires."
+   ],
+   "image_mentale": "Imagine plusieurs ateliers possédant un même ensemble de plans mais utilisant des pages différentes.",
+   "regle_ou_methode": "Compare l’information génétique présente et les gènes exprimés dans les cellules.",
+   "exemples": [
+    "Compare une cellule musculaire et une cellule de peau d’un même individu. Elles proviennent généralement d’une même cellule initiale et possèdent la même information génétique initiale. Elles n’expriment pourtant pas tous les mêmes gènes.",
+    "Une cellule spécialisée peut fabriquer certaines protéines qu’une autre cellule fabrique peu ou pas."
+   ],
+   "piege": "Même information génétique ne signifie pas activité identique dans toutes les cellules.",
+   "astuce_memoire": "Même ensemble de plans, pages utilisées différentes.",
+   "quiz": [
+    {
+     "q": "Des cellules spécialisées d’un même individu possèdent-elles généralement la même information génétique initiale ?",
+     "choix": [
+      "Non, jamais",
+      "Seulement si elles ont la même forme",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Elles dérivent généralement de la même cellule initiale."
+    },
+    {
+     "q": "Pourquoi leurs activités peuvent-elles différer ?",
+     "choix": [
+      "Elles n’expriment pas exactement les mêmes gènes",
+      "Leur ADN est toujours totalement différent",
+      "Elles appartiennent forcément à des espèces différentes"
+     ],
+     "rep": "Elles n’expriment pas exactement les mêmes gènes",
+     "expl": "L’expression des gènes contribue à la spécialisation."
+    },
+    {
+     "q": "Qu’est-ce qu’un gène ?",
+     "choix": [
+      "Un organe complet",
+      "Une portion d’ADN associée à une information biologique",
+      "Un paysage"
+     ],
+     "rep": "Une portion d’ADN associée à une information biologique",
+     "expl": "Un gène correspond à une portion d’ADN."
+    }
+   ],
+   "id": "REV-SVT-2DE-02"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Le métabolisme cellulaire",
+   "emoji": "⚙️",
+   "en_une_phrase": "Le métabolisme rassemble les transformations chimiques réalisées par une cellule.",
+   "comprendre": "Une cellule échange de la matière avec son environnement. Elle effectue des réactions qui transforment certaines molécules en d’autres. Ces transformations dépendent notamment des équipements de la cellule et des conditions du milieu.",
+   "essentiel": [
+    "Le métabolisme comprend des réactions chimiques.",
+    "Les cellules prélèvent et rejettent des substances.",
+    "Les réactions dépendent des enzymes et des conditions disponibles."
+   ],
+   "image_mentale": "Imagine un atelier qui reçoit des matières et produit d’autres substances.",
+   "regle_ou_methode": "Identifie les substances prélevées, les transformations et les produits libérés.",
+   "exemples": [
+    "Une cellule prélève du glucose et du dioxygène lors de la respiration cellulaire. Des transformations chimiques utilisent ces substances. Elles libèrent notamment du dioxyde de carbone et rendent de l’énergie disponible.",
+    "Dans des cellules chlorophylliennes éclairées, la photosynthèse utilise notamment de l’eau et du dioxyde de carbone."
+   ],
+   "piege": "Les réactions métaboliques ne se déroulent pas toutes dans toutes les cellules.",
+   "astuce_memoire": "Entrées, transformations, sorties et énergie.",
+   "quiz": [
+    {
+     "q": "Que désigne le métabolisme ?",
+     "choix": [
+      "L’ensemble des transformations chimiques d’une cellule",
+      "Uniquement la forme d’un organe",
+      "Un déplacement géographique"
+     ],
+     "rep": "L’ensemble des transformations chimiques d’une cellule",
+     "expl": "Le métabolisme regroupe des réactions cellulaires."
+    },
+    {
+     "q": "Quelle substance peut être prélevée lors de la respiration cellulaire ?",
+     "choix": [
+      "Le fer métallique comme unique réactif",
+      "Le dioxygène",
+      "La lumière comme seul aliment"
+     ],
+     "rep": "Le dioxygène",
+     "expl": "La respiration utilise notamment du dioxygène et du glucose."
+    },
+    {
+     "q": "Toutes les cellules réalisent-elles exactement les mêmes réactions ?",
+     "choix": [
+      "Oui",
+      "Oui, quelle que soit leur spécialisation",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Les réactions dépendent notamment de l’équipement cellulaire."
+    }
+   ],
+   "id": "REV-SVT-2DE-03"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Photosynthèse et respiration",
+   "emoji": "🌿",
+   "en_une_phrase": "La photosynthèse et la respiration correspondent à des transformations de matière et d’énergie différentes.",
+   "comprendre": "Une plante éclairée échange des gaz avec son environnement. La photosynthèse produit de la matière organique à partir notamment de dioxyde de carbone et d’eau grâce à l’énergie lumineuse. La respiration cellulaire utilise des molécules organiques et du dioxygène.",
+   "essentiel": [
+    "La photosynthèse nécessite notamment lumière, eau et dioxyde de carbone.",
+    "Elle produit de la matière organique et libère du dioxygène.",
+    "La respiration utilise notamment matière organique et dioxygène."
+   ],
+   "image_mentale": "Imagine deux flèches de transformations entre matière minérale et matière organique.",
+   "regle_ou_methode": "Identifie les réactifs et produits de chaque transformation sans les confondre.",
+   "exemples": [
+    "Une cellule chlorophyllienne reçoit de la lumière, de l’eau et du dioxyde de carbone. Elle produit de la matière organique par photosynthèse. Du dioxygène est également libéré.",
+    "Une cellule végétale peut aussi respirer en utilisant du dioxygène et des molécules organiques."
+   ],
+   "piege": "Les cellules végétales respirent aussi : photosynthèse et respiration ne sont pas la même transformation.",
+   "astuce_memoire": "Photosynthèse : lumière et production organique ; respiration : utilisation organique.",
+   "quiz": [
+    {
+     "q": "Quelle source d’énergie est utilisée par la photosynthèse ?",
+     "choix": [
+      "Uniquement la chaleur d’une flamme",
+      "La lumière",
+      "L’énergie d’une pile branchée à chaque feuille"
+     ],
+     "rep": "La lumière",
+     "expl": "Les cellules chlorophylliennes utilisent l’énergie lumineuse."
+    },
+    {
+     "q": "Une cellule végétale peut-elle respirer ?",
+     "choix": [
+      "Non",
+      "Seulement si elle est animale",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Les cellules végétales réalisent aussi la respiration cellulaire."
+    },
+    {
+     "q": "Quel gaz est utilisé par la photosynthèse ?",
+     "choix": [
+      "Le dioxyde de carbone",
+      "Uniquement le dioxygène",
+      "Aucun gaz possible"
+     ],
+     "rep": "Le dioxyde de carbone",
+     "expl": "La photosynthèse utilise notamment le dioxyde de carbone."
+    }
+   ],
+   "id": "REV-SVT-2DE-04"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Les échelles de biodiversité",
+   "emoji": "🦋",
+   "en_une_phrase": "La biodiversité se décrit à plusieurs échelles : écosystèmes, espèces et diversité génétique.",
+   "comprendre": "Un paysage peut contenir des milieux et des espèces variés. Au sein d’une même espèce, les individus présentent aussi des différences génétiques. Étudier ces niveaux donne une vision plus complète du vivant.",
+   "essentiel": [
+    "La diversité des écosystèmes concerne les milieux et leurs interactions.",
+    "La diversité des espèces concerne les espèces présentes.",
+    "La diversité génétique concerne les variations au sein des espèces."
+   ],
+   "image_mentale": "Imagine trois niveaux emboîtés : milieux, espèces, variations génétiques.",
+   "regle_ou_methode": "Identifie le niveau étudié puis choisis un indicateur adapté.",
+   "exemples": [
+    "Dans un territoire, on compare une forêt et une mare. Ces deux milieux correspondent à une diversité d’écosystèmes. On peut ensuite compter les espèces présentes dans chacun.",
+    "Dans une population d’une même espèce, différents allèles témoignent d’une diversité génétique."
+   ],
+   "piege": "La biodiversité ne se réduit pas au nombre d’espèces.",
+   "astuce_memoire": "Écosystèmes, espèces, diversité génétique.",
+   "quiz": [
+    {
+     "q": "Des allèles différents dans une même espèce relèvent de quelle échelle ?",
+     "choix": [
+      "La diversité des planètes",
+      "La diversité des saisons uniquement",
+      "La diversité génétique"
+     ],
+     "rep": "La diversité génétique",
+     "expl": "Les allèles sont des versions de gènes au sein des individus."
+    },
+    {
+     "q": "Comparer une forêt et une mare étudie notamment :",
+     "choix": [
+      "La diversité des écosystèmes",
+      "Uniquement le nombre de chromosomes",
+      "Le seul âge d’un individu"
+     ],
+     "rep": "La diversité des écosystèmes",
+     "expl": "Il s’agit de milieux différents."
+    },
+    {
+     "q": "La biodiversité se limite-t-elle au nombre d’espèces ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, si les individus ont de l’ADN"
+     ],
+     "rep": "Non",
+     "expl": "Elle inclut aussi les écosystèmes et la diversité génétique."
+    }
+   ],
+   "id": "REV-SVT-2DE-05"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Évolution des populations",
+   "emoji": "🧬",
+   "en_une_phrase": "La diversité génétique d’une population peut évoluer sous l’effet de plusieurs mécanismes.",
+   "comprendre": "Les individus d’une population ne portent pas tous les mêmes allèles. Des mutations créent de nouvelles variations. La sélection naturelle et le hasard peuvent modifier la fréquence des allèles au fil des générations.",
+   "essentiel": [
+    "Les mutations peuvent créer de nouveaux allèles.",
+    "La sélection naturelle dépend des différences de survie ou de reproduction dans un milieu.",
+    "La dérive génétique est une variation aléatoire des fréquences, particulièrement marquée dans les petites populations."
+   ],
+   "image_mentale": "Imagine des billes de couleurs différentes tirées au fil des générations.",
+   "regle_ou_methode": "Repère la variation initiale puis distingue un effet du milieu d’un effet du hasard.",
+   "exemples": [
+    "Dans une petite population, certains individus ne laissent pas de descendants par hasard. Les allèles qu’ils portent peuvent devenir moins fréquents. Ce changement aléatoire est un exemple de dérive génétique.",
+    "Dans un milieu donné, une variation héréditaire favorisant la reproduction peut devenir plus fréquente par sélection naturelle."
+   ],
+   "piege": "Une mutation n’apparaît pas parce qu’un individu décide qu’elle lui sera utile.",
+   "astuce_memoire": "Mutations, sélection et dérive modifient la diversité.",
+   "quiz": [
+    {
+     "q": "Quel mécanisme correspond à une variation aléatoire des fréquences d’allèles ?",
+     "choix": [
+      "La dérive génétique",
+      "Une décision consciente des gènes",
+      "La photosynthèse"
+     ],
+     "rep": "La dérive génétique",
+     "expl": "La dérive résulte d’effets du hasard sur les fréquences."
+    },
+    {
+     "q": "Quel mécanisme peut créer un nouvel allèle ?",
+     "choix": [
+      "La disparition de toute molécule d’ADN",
+      "Une mutation",
+      "Une carte géographique"
+     ],
+     "rep": "Une mutation",
+     "expl": "Une modification de l’ADN peut créer un nouvel allèle."
+    },
+    {
+     "q": "La dérive peut-elle être particulièrement marquée dans une petite population ?",
+     "choix": [
+      "Non",
+      "Seulement si tous les allèles sont identiques",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Le hasard peut modifier plus fortement les proportions dans une petite population."
+    }
+   ],
+   "id": "REV-SVT-2DE-06"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Communication et sélection sexuelle",
+   "emoji": "🦚",
+   "en_une_phrase": "Des signaux entre individus peuvent contribuer à la reproduction et à la sélection sexuelle.",
+   "comprendre": "Des animaux communiquent par des sons, des couleurs ou des mouvements. Un signal peut influencer le choix d’un partenaire. Si certains caractères héréditaires favorisent la reproduction, leur fréquence peut évoluer au fil des générations.",
+   "essentiel": [
+    "Un émetteur produit un signal perçu par un récepteur.",
+    "Le signal peut être sonore, visuel ou chimique.",
+    "Le succès reproducteur peut varier selon les caractères et le contexte."
+   ],
+   "image_mentale": "Imagine un oiseau émettant un signal visible par un partenaire potentiel.",
+   "regle_ou_methode": "Identifie l’émetteur, le signal, le récepteur et l’effet observé.",
+   "exemples": [
+    "Un oiseau déploie un plumage visible lors d’une parade. Un partenaire potentiel perçoit ce signal. Si le caractère influence le choix et est héréditaire, il peut contribuer à la sélection sexuelle.",
+    "Un chant peut attirer un partenaire chez certaines espèces."
+   ],
+   "piege": "Un signal n’a pas toujours le même effet dans toutes les espèces ou tous les milieux.",
+   "astuce_memoire": "Signal, réception, choix et reproduction.",
+   "quiz": [
+    {
+     "q": "Quel exemple est un signal visuel ?",
+     "choix": [
+      "Un silence sans information observable",
+      "Un plumage déployé lors d’une parade",
+      "Une date sur un calendrier scolaire"
+     ],
+     "rep": "Un plumage déployé lors d’une parade",
+     "expl": "Le plumage est perçu visuellement."
+    },
+    {
+     "q": "Un chant peut-il jouer un rôle dans la reproduction de certaines espèces ?",
+     "choix": [
+      "Non",
+      "Seulement si aucun individu ne l’entend",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Un signal sonore peut attirer un partenaire."
+    },
+    {
+     "q": "Qu’est-ce qui peut évoluer au fil des générations ?",
+     "choix": [
+      "La fréquence de caractères héréditaires",
+      "La date de naissance d’un individu déjà né",
+      "La définition du mètre"
+     ],
+     "rep": "La fréquence de caractères héréditaires",
+     "expl": "Un succès reproducteur différent peut modifier des fréquences dans une population."
+    }
+   ],
+   "id": "REV-SVT-2DE-07"
+  },
+  {
+   "axe": "Les enjeux contemporains de la planète",
+   "titre": "Altération et érosion",
+   "emoji": "🪨",
+   "en_une_phrase": "L’altération transforme les roches et l’érosion enlève et transporte leurs produits.",
+   "comprendre": "Un paysage évolue même si ses changements sont souvent lents. L’eau et d’autres facteurs modifient les roches : c’est l’altération. Les matériaux produits peuvent ensuite être enlevés et transportés : c’est l’érosion.",
+   "essentiel": [
+    "L’altération peut être physique ou chimique.",
+    "L’érosion comprend notamment l’enlèvement et le transport des produits.",
+    "La nature de la roche et le climat influencent ces processus."
+   ],
+   "image_mentale": "Imagine une roche fissurée, puis des fragments entraînés par l’eau.",
+   "regle_ou_methode": "Distingue la transformation de la roche et le déplacement de ses produits.",
+   "exemples": [
+    "L’eau pénètre dans une roche et contribue à sa fragmentation ou à sa transformation chimique. Des fragments se détachent ensuite. Une rivière peut les transporter vers un autre lieu.",
+    "Deux roches de compositions différentes peuvent s’altérer à des vitesses différentes dans un même milieu."
+   ],
+   "piege": "L’altération sur place et le transport des produits ne désignent pas la même étape.",
+   "astuce_memoire": "Altération : transformation ; érosion : enlèvement et transport.",
+   "quiz": [
+    {
+     "q": "Que désigne l’altération ?",
+     "choix": [
+      "Uniquement le transport des sédiments",
+      "La fabrication d’une carte",
+      "La transformation physique ou chimique d’une roche"
+     ],
+     "rep": "La transformation physique ou chimique d’une roche",
+     "expl": "L’altération modifie la roche."
+    },
+    {
+     "q": "Quel agent peut transporter des produits d’érosion ?",
+     "choix": [
+      "Une rivière",
+      "Une photographie seule",
+      "Un calendrier"
+     ],
+     "rep": "Une rivière",
+     "expl": "L’eau d’une rivière peut déplacer des matériaux."
+    },
+    {
+     "q": "La nature de la roche peut-elle influencer son altération ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement si elle porte un nom"
+     ],
+     "rep": "Oui",
+     "expl": "La composition et la cohérence de la roche influencent son altération."
+    }
+   ],
+   "id": "REV-SVT-2DE-08"
+  },
+  {
+   "axe": "Les enjeux contemporains de la planète",
+   "titre": "Sédimentation",
+   "emoji": "🏞️",
+   "en_une_phrase": "La sédimentation correspond au dépôt de particules transportées ou à la précipitation de substances dissoutes.",
+   "comprendre": "Une rivière transporte des matériaux de tailles variées. Quand les conditions changent, une partie de ces matériaux se dépose. Ces dépôts peuvent s’accumuler et, au cours du temps, participer à la formation de roches sédimentaires.",
+   "essentiel": [
+    "Des particules peuvent être transportées par l’eau ou le vent.",
+    "Le dépôt dépend notamment des conditions du milieu.",
+    "Des sédiments peuvent s’accumuler en couches."
+   ],
+   "image_mentale": "Imagine des particules transportées puis déposées au fond d’un bassin.",
+   "regle_ou_methode": "Identifie l’origine des particules, leur transport puis le lieu et les conditions du dépôt.",
+   "exemples": [
+    "Une rivière transporte des grains de sable. Lorsque la vitesse du courant diminue suffisamment, une partie des grains se dépose. Une couche de sédiments peut alors s’accumuler.",
+    "Des sédiments accumulés peuvent, après transformation au cours du temps, former une roche sédimentaire."
+   ],
+   "piege": "Une roche sédimentaire ne se forme pas instantanément dès qu’un grain se dépose.",
+   "astuce_memoire": "Transport, dépôt, accumulation, transformation.",
+   "quiz": [
+    {
+     "q": "Que se passe-t-il lors de la sédimentation ?",
+     "choix": [
+      "Des matériaux se déposent",
+      "Toutes les roches disparaissent",
+      "Les particules restent toujours en mouvement"
+     ],
+     "rep": "Des matériaux se déposent",
+     "expl": "La sédimentation correspond notamment à un dépôt."
+    },
+    {
+     "q": "Quelle modification peut favoriser le dépôt de grains transportés par l’eau ?",
+     "choix": [
+      "Une augmentation garantie de la vitesse",
+      "Une diminution suffisante de la vitesse du courant",
+      "La suppression de toute matière"
+     ],
+     "rep": "Une diminution suffisante de la vitesse du courant",
+     "expl": "Un courant moins rapide peut déposer une partie des particules."
+    },
+    {
+     "q": "Une roche sédimentaire apparaît-elle immédiatement dès le dépôt d’un grain ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, uniquement dans une rivière",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "L’accumulation et la transformation demandent du temps."
+    }
+   ],
+   "id": "REV-SVT-2DE-09"
+  },
+  {
+   "axe": "Les enjeux contemporains de la planète",
+   "titre": "Les agrosystèmes",
+   "emoji": "🌾",
+   "en_une_phrase": "Un agrosystème est un écosystème géré par l’être humain pour produire de la biomasse.",
+   "comprendre": "Un champ ou un élevage dépend des ressources du milieu et des interventions humaines. Les récoltes exportent une partie de la biomasse produite. Des apports et des pratiques de gestion modifient les flux de matière et d’énergie.",
+   "essentiel": [
+    "Un agrosystème produit notamment des aliments ou d’autres ressources.",
+    "Les récoltes exportent de la matière.",
+    "L’eau, les nutriments et les pratiques de gestion influencent la production."
+   ],
+   "image_mentale": "Imagine un champ avec des entrées, une récolte et des échanges avec le sol.",
+   "regle_ou_methode": "Repère l’objectif de production, les apports et les matières exportées.",
+   "exemples": [
+    "Dans un champ de blé, les plantes produisent de la biomasse. Une partie est récoltée et quitte le champ. Cette récolte constitue une exportation de matière.",
+    "L’irrigation peut fournir de l’eau à une culture lorsque les conditions et les ressources le permettent."
+   ],
+   "piege": "Un agrosystème n’est pas fermé : il échange de la matière et de l’énergie avec son environnement.",
+   "astuce_memoire": "Apports, production, récolte, échanges.",
+   "quiz": [
+    {
+     "q": "Que produit un agrosystème agricole ?",
+     "choix": [
+      "Uniquement des roches nouvelles",
+      "De la biomasse utilisée par l’être humain",
+      "Aucune matière"
+     ],
+     "rep": "De la biomasse utilisée par l’être humain",
+     "expl": "Les cultures et élevages produisent de la biomasse."
+    },
+    {
+     "q": "Que représente une récolte emportée hors du champ ?",
+     "choix": [
+      "Une entrée d’eau dans le sol",
+      "Une absence de flux",
+      "Une exportation de matière"
+     ],
+     "rep": "Une exportation de matière",
+     "expl": "La matière récoltée quitte le système étudié."
+    },
+    {
+     "q": "Un champ échange-t-il avec son environnement ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement pendant la nuit"
+     ],
+     "rep": "Oui",
+     "expl": "Il échange notamment de la matière et de l’énergie."
+    }
+   ],
+   "id": "REV-SVT-2DE-10"
+  },
+  {
+   "axe": "Les enjeux contemporains de la planète",
+   "titre": "Sols et gestion durable",
+   "emoji": "🌱",
+   "en_une_phrase": "La préservation des sols aide à maintenir la production agricole et les fonctions des écosystèmes.",
+   "comprendre": "Le sol n’est pas seulement un support inerte pour les plantes. Il contient des particules, de l’eau, de l’air et des êtres vivants. Les pratiques agricoles influencent son fonctionnement et son érosion.",
+   "essentiel": [
+    "Le sol résulte de processus physiques, chimiques et biologiques.",
+    "Les êtres vivants du sol participent à son fonctionnement.",
+    "Certaines pratiques peuvent limiter l’érosion ou préserver la matière organique."
+   ],
+   "image_mentale": "Imagine des couches de sol avec des racines, de l’eau et des organismes.",
+   "regle_ou_methode": "Observe la composition du sol, identifie les effets d’une pratique puis compare les résultats.",
+   "exemples": [
+    "Une parcelle laissée sans couverture végétale peut perdre du sol sous une forte pluie. Une couverture adaptée peut limiter l’impact des gouttes et le ruissellement. Son efficacité dépend toutefois du contexte.",
+    "Des organismes du sol participent à la décomposition de matières organiques."
+   ],
+   "piege": "Une pratique n’a pas forcément le même effet dans tous les sols et tous les climats.",
+   "astuce_memoire": "Sol vivant, ressources limitées, pratiques à évaluer.",
+   "quiz": [
+    {
+     "q": "Le sol est-il uniquement une roche inerte ?",
+     "choix": [
+      "Oui",
+      "Oui, s’il contient des racines",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Il contient aussi de l’eau, de l’air et des êtres vivants."
+    },
+    {
+     "q": "Quel effet une couverture végétale adaptée peut-elle avoir ?",
+     "choix": [
+      "Limiter une partie de l’érosion",
+      "Garantir l’absence totale de ruissellement partout",
+      "Supprimer tout besoin de sol"
+     ],
+     "rep": "Limiter une partie de l’érosion",
+     "expl": "Elle peut réduire l’impact des pluies et le ruissellement."
+    },
+    {
+     "q": "Pourquoi comparer les pratiques selon le contexte ?",
+     "choix": [
+      "Tous les sols réagissent exactement de la même façon",
+      "Leurs effets varient avec le sol et le climat",
+      "Une observation ne peut jamais être utile"
+     ],
+     "rep": "Leurs effets varient avec le sol et le climat",
+     "expl": "Le contexte influence les résultats des pratiques."
+    }
+   ],
+   "id": "REV-SVT-2DE-11"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Hormones et puberté",
+   "emoji": "🧬",
+   "en_une_phrase": "À la puberté, des hormones participent à la maturation des appareils reproducteurs et aux transformations corporelles.",
+   "comprendre": "Le corps change progressivement pendant l’adolescence. Des messages hormonaux circulent dans le sang et agissent sur des organes cibles. Les rythmes et les changements observés varient selon les personnes.",
+   "essentiel": [
+    "Une hormone est une molécule messagère transportée par le sang.",
+    "Les hormones sexuelles participent aux transformations de la puberté.",
+    "La puberté ne suit pas exactement le même calendrier pour tout le monde."
+   ],
+   "image_mentale": "Imagine des glandes envoyant des messages par le sang vers des organes cibles.",
+   "regle_ou_methode": "Identifie l’hormone, son transport et un effet sur un organe ou un caractère.",
+   "exemples": [
+    "À la puberté, des organes reproducteurs produisent des hormones sexuelles. Ces hormones circulent dans le sang. Elles participent notamment à l’apparition de caractères sexuels secondaires.",
+    "La testostérone et les œstrogènes sont des hormones impliquées dans certaines transformations de la puberté."
+   ],
+   "piege": "Une hormone agit à distance grâce au sang ; ce n’est pas un message nerveux.",
+   "astuce_memoire": "Hormone, sang, organe cible, effet.",
+   "quiz": [
+    {
+     "q": "Comment une hormone circule-t-elle vers un organe cible ?",
+     "choix": [
+      "Par le sang",
+      "Uniquement par un fil électrique",
+      "Par une page imprimée"
+     ],
+     "rep": "Par le sang",
+     "expl": "Une hormone est transportée dans le sang."
+    },
+    {
+     "q": "La puberté suit-elle exactement le même calendrier pour toutes les personnes ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, au même jour près"
+     ],
+     "rep": "Non",
+     "expl": "Les rythmes de développement varient."
+    },
+    {
+     "q": "Quel rôle ont notamment les hormones sexuelles à la puberté ?",
+     "choix": [
+      "Supprimer toutes les cellules",
+      "Empêcher toute croissance",
+      "Participer aux transformations corporelles"
+     ],
+     "rep": "Participer aux transformations corporelles",
+     "expl": "Elles contribuent à plusieurs transformations de la puberté."
+    }
+   ],
+   "id": "REV-SVT-2DE-12"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Cycle ovarien et hormones",
+   "emoji": "🌸",
+   "en_une_phrase": "Les variations hormonales participent à l’organisation du cycle ovarien et des changements de l’utérus.",
+   "comprendre": "Chez une personne qui a des cycles, les ovaires et l’utérus évoluent au cours du temps. Des variations d’hormones participent à leur coordination. La durée et la régularité des cycles varient selon les personnes et les périodes.",
+   "essentiel": [
+    "Un ovaire peut libérer un ovocyte lors de l’ovulation.",
+    "La muqueuse utérine évolue sous l’action d’hormones.",
+    "Les cycles ne durent pas tous le même nombre de jours."
+   ],
+   "image_mentale": "Imagine une frise reliant changements de l’ovaire, hormones et muqueuse utérine.",
+   "regle_ou_methode": "Distingue l’évolution ovarienne de celle de l’utérus puis repère le rôle des hormones.",
+   "exemples": [
+    "Au cours d’un cycle, un follicule ovarien se développe et peut libérer un ovocyte. Des hormones contribuent aussi à modifier la muqueuse utérine. Les deux organes présentent donc des changements coordonnés.",
+    "La durée du cycle peut varier d’une personne à l’autre et d’un cycle à l’autre."
+   ],
+   "piege": "L’ovulation ne se produit pas forcément le quatorzième jour de chaque cycle.",
+   "astuce_memoire": "Ovaires, hormones, utérus : des évolutions coordonnées.",
+   "quiz": [
+    {
+     "q": "Que peut libérer un ovaire lors de l’ovulation ?",
+     "choix": [
+      "Un poumon",
+      "Un ovocyte",
+      "Un neurone"
+     ],
+     "rep": "Un ovocyte",
+     "expl": "L’ovulation correspond à la libération d’un ovocyte."
+    },
+    {
+     "q": "Les cycles durent-ils tous exactement vingt-huit jours ?",
+     "choix": [
+      "Oui",
+      "Oui, après chaque puberté",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Leur durée peut varier."
+    },
+    {
+     "q": "Que contribuent à coordonner les hormones ?",
+     "choix": [
+      "Les changements des ovaires et de l’utérus",
+      "La rotation de la Terre",
+      "Uniquement la couleur des vêtements"
+     ],
+     "rep": "Les changements des ovaires et de l’utérus",
+     "expl": "Les hormones participent à la coordination de ces organes."
+    }
+   ],
+   "id": "REV-SVT-2DE-13"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Contraception et prévention",
+   "emoji": "🛡️",
+   "en_une_phrase": "Les méthodes contraceptives réduisent le risque de grossesse ; les préservatifs réduisent aussi le risque de nombreuses IST.",
+   "comprendre": "Les méthodes de contraception n’agissent pas toutes de la même manière. Certaines modifient la régulation hormonale ou font obstacle au passage des spermatozoïdes. Les préservatifs internes et externes réduisent également le risque de transmission de nombreuses infections sexuellement transmissibles.",
+   "essentiel": [
+    "Les méthodes contraceptives ont des modes d’action différents.",
+    "Les préservatifs réduisent le risque de grossesse et de nombreuses IST lorsqu’ils sont correctement utilisés.",
+    "Aucune méthode ne garantit une protection parfaite dans toutes les situations."
+   ],
+   "image_mentale": "Imagine deux objectifs à distinguer : prévenir une grossesse et réduire le risque d’IST.",
+   "regle_ou_methode": "Identifie le risque considéré, le mode d’action de la méthode et les limites de protection.",
+   "exemples": [
+    "Un préservatif utilisé correctement fait obstacle au passage des spermatozoïdes et réduit le risque de transmission de nombreuses IST. Il répond donc à deux objectifs. Sa protection n’est toutefois pas absolue pour toutes les infections.",
+    "Une contraception hormonale peut réduire le risque de grossesse, mais ne protège pas des IST."
+   ],
+   "piege": "Une méthode qui évite une grossesse ne protège pas automatiquement contre les IST.",
+   "astuce_memoire": "Grossesse et IST : deux risques à considérer.",
+   "quiz": [
+    {
+     "q": "Une contraception hormonale protège-t-elle des IST ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, si elle agit sur l’ovulation",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Elle ne protège pas des infections sexuellement transmissibles."
+    },
+    {
+     "q": "Quel moyen réduit aussi le risque de nombreuses IST lorsqu’il est correctement utilisé ?",
+     "choix": [
+      "Le préservatif",
+      "La contraception hormonale seule",
+      "Une règle de calendrier seule"
+     ],
+     "rep": "Le préservatif",
+     "expl": "Les préservatifs réduisent le risque de nombreuses IST."
+    },
+    {
+     "q": "Une méthode de prévention garantit-elle une protection parfaite dans toutes les situations ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, quel que soit son usage"
+     ],
+     "rep": "Non",
+     "expl": "L’efficacité dépend notamment de la méthode et de son utilisation."
+    }
+   ],
+   "id": "REV-SVT-2DE-14"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Transmission vectorielle",
+   "emoji": "🦟",
+   "en_une_phrase": "Une maladie vectorielle implique un organisme qui transmet un agent pathogène.",
+   "comprendre": "Un agent pathogène ne passe pas toujours directement d’une personne à une autre. Un vecteur peut transporter et transmettre cet agent. Le paludisme illustre cette relation entre parasite, moustique et humain.",
+   "essentiel": [
+    "Le paludisme est causé par un parasite du genre Plasmodium.",
+    "Des moustiques Anopheles femelles infectés peuvent transmettre ce parasite par leur piqûre.",
+    "Réduire les piqûres peut contribuer à la prévention."
+   ],
+   "image_mentale": "Imagine une flèche reliant un moustique infecté à une personne.",
+   "regle_ou_methode": "Identifie l’agent pathogène, le vecteur et le mode de transmission.",
+   "exemples": [
+    "Le paludisme est dû à un parasite appelé Plasmodium. Un moustique Anopheles femelle infecté peut le transmettre en piquant une personne. Le moustique est ici le vecteur, pas le parasite.",
+    "Une moustiquaire adaptée peut contribuer à réduire l’exposition aux piqûres pendant le sommeil."
+   ],
+   "piege": "Le moustique vecteur et le parasite responsable de la maladie ne sont pas le même organisme.",
+   "astuce_memoire": "Agent pathogène, vecteur, transmission.",
+   "quiz": [
+    {
+     "q": "Quel agent cause le paludisme ?",
+     "choix": [
+      "Un parasite du genre Plasmodium",
+      "Un moustique en tant que parasite",
+      "Un virus de la grippe"
+     ],
+     "rep": "Un parasite du genre Plasmodium",
+     "expl": "Le paludisme est causé par un parasite Plasmodium."
+    },
+    {
+     "q": "Quel organisme peut transmettre ce parasite ?",
+     "choix": [
+      "Une plante non infectée",
+      "Un moustique Anopheles femelle infecté",
+      "Un poisson sans lien avec la transmission"
+     ],
+     "rep": "Un moustique Anopheles femelle infecté",
+     "expl": "Le moustique infecté peut transmettre le parasite lors d’une piqûre."
+    },
+    {
+     "q": "Le moustique et le parasite sont-ils le même organisme ?",
+     "choix": [
+      "Oui",
+      "Oui, pendant toute leur vie",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Le moustique est le vecteur ; Plasmodium est le parasite."
+    }
+   ],
+   "id": "REV-SVT-2DE-15"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Le microbiote humain",
+   "emoji": "🦠",
+   "en_une_phrase": "Le microbiote humain comprend des micro-organismes vivant sur et dans l’organisme.",
+   "comprendre": "Tous les micro-organismes ne provoquent pas des maladies. Ceux du microbiote interagissent avec leur hôte et certains contribuent à la digestion ou aux défenses. Sa composition varie selon les personnes et les conditions de vie.",
+   "essentiel": [
+    "Le microbiote comprend notamment des bactéries.",
+    "Le microbiote intestinal participe à la digestion et aux interactions immunitaires.",
+    "Son équilibre peut être modifié par différents facteurs, dont certains traitements."
+   ],
+   "image_mentale": "Imagine une communauté de micro-organismes vivant dans l’intestin.",
+   "regle_ou_methode": "Identifie le lieu, les organismes présents et leurs interactions avec l’hôte.",
+   "exemples": [
+    "Dans l’intestin, des micro-organismes participent à la transformation de certaines substances alimentaires. Ils interagissent aussi avec l’organisme. Cela illustre une relation pouvant être bénéfique.",
+    "Certains antibiotiques peuvent modifier la composition du microbiote intestinal."
+   ],
+   "piege": "Une association observée entre microbiote et santé ne démontre pas automatiquement une cause unique.",
+   "astuce_memoire": "Microbiote : communauté de micro-organismes et interactions.",
+   "quiz": [
+    {
+     "q": "Le microbiote comprend-il notamment des bactéries ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement des cellules musculaires"
+     ],
+     "rep": "Oui",
+     "expl": "De nombreuses bactéries font partie du microbiote."
+    },
+    {
+     "q": "Quel rôle peut jouer le microbiote intestinal ?",
+     "choix": [
+      "Remplacer tous les organes",
+      "Arrêter toute réaction immunitaire",
+      "Participer à la digestion"
+     ],
+     "rep": "Participer à la digestion",
+     "expl": "Il contribue notamment à certaines transformations liées à la digestion."
+    },
+    {
+     "q": "Une corrélation démontre-t-elle automatiquement une cause unique ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, si les deux observations sont simultanées"
+     ],
+     "rep": "Non",
+     "expl": "Une association peut avoir plusieurs explications."
+    }
+   ],
+   "id": "REV-SVT-2DE-16"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "VIH et prévention",
+   "emoji": "🧫",
+   "en_une_phrase": "Le VIH est un virus qui peut se transmettre par certaines situations de contact avec des liquides biologiques.",
+   "comprendre": "Une infection peut être transmise par différentes voies selon l’agent responsable. Le VIH touche le système immunitaire et peut se transmettre notamment lors de certains rapports sexuels ou par exposition à du sang contaminé. Des moyens de prévention et de dépistage existent.",
+   "essentiel": [
+    "Le VIH est un virus.",
+    "Le préservatif correctement utilisé réduit le risque de transmission sexuelle du VIH.",
+    "Le dépistage permet de connaître son statut après le délai adapté au test."
+   ],
+   "image_mentale": "Imagine une chaîne de transmission que des mesures adaptées peuvent interrompre.",
+   "regle_ou_methode": "Identifie le mode de transmission, puis le rôle de la prévention et du dépistage.",
+   "exemples": [
+    "Lors d’un rapport sexuel exposant au VIH, un préservatif correctement utilisé réduit le risque de transmission. Ce moyen limite le contact avec certains liquides biologiques. Il ne remplace pas toutes les autres mesures de prévention possibles.",
+    "Un test de dépistage peut détecter une infection selon le type de test et le délai depuis l’exposition."
+   ],
+   "piege": "On ne peut pas déterminer le statut VIH d’une personne à son apparence.",
+   "astuce_memoire": "Transmission, prévention, dépistage.",
+   "quiz": [
+    {
+     "q": "Le VIH est-il une bactérie ?",
+     "choix": [
+      "Oui",
+      "C’est un moustique",
+      "Non, c’est un virus"
+     ],
+     "rep": "Non, c’est un virus",
+     "expl": "VIH désigne un virus."
+    },
+    {
+     "q": "Quel moyen réduit le risque de transmission sexuelle du VIH lorsqu’il est correctement utilisé ?",
+     "choix": [
+      "Un préservatif",
+      "Une contraception hormonale seule",
+      "Une carte de transport"
+     ],
+     "rep": "Un préservatif",
+     "expl": "Le préservatif réduit le risque de transmission sexuelle."
+    },
+    {
+     "q": "Peut-on connaître le statut VIH d’une personne à son apparence ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Oui, si elle se sent bien"
+     ],
+     "rep": "Non",
+     "expl": "Un test adapté est nécessaire pour connaître son statut."
+    }
+   ],
+   "id": "REV-SVT-2DE-17"
+  }
+ ]
+}
