@@ -1,0 +1,543 @@
+{
+ "id": "BP-25",
+ "titre": "Engager la conversation",
+ "public": "ado-adulte",
+ "lecons": [
+  {
+   "titre": "Vérifier que la porte est ouverte",
+   "accroche": "Un bon début tient autant au moment qu’à la formule.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Une disponibilité à demander",
+     "texte": "Une conversation demande de l’attention des deux côtés. Comme une porte à laquelle on frappe, un début respectueux permet de répondre maintenant, plus tard ou pas du tout.",
+     "schema": "Deux interlocuteurs séparés par porte symbolique ; trois réponses disponibles, maintenant, plus tard, non. Même importance visuelle."
+    },
+    {
+     "titre": "Ne pas lire les pensées",
+     "texte": "Des écouteurs, une réponse brève ou un visage fermé ne prouvent pas une intention. Le contexte compte ; une question discrète ou un retrait respectueux valent mieux qu’une certitude inventée.",
+     "schema": ""
+    },
+    {
+     "titre": "Une phrase de vérification",
+     "texte": "Tu as un moment pour parler de l’atelier ? nomme le sujet et vérifie la disponibilité. Si la personne ne souhaite pas parler, la conversation peut s’arrêter sans procès.",
+     "schema": ""
+    },
+    {
+     "titre": "Adapter le cadre",
+     "texte": "Une file d’attente, un cours et un rendez-vous professionnel n’offrent pas les mêmes possibilités. Évite d’interrompre une tâche sensible ou de coincer quelqu’un dans un échange.",
+     "schema": "Trois lieux stylisés ; bulles de conversation de tailles adaptées. Une personne garde toujours un chemin de sortie visible."
+    }
+   ],
+   "dans_ta_vie": "Tu peux choisir un début qui respecte le contexte.",
+   "securite": "Pour le défi, choisis une personne connue, disponible et consentante. Aucun exercice ne demande d’aborder un inconnu, de révéler une information privée ou de poursuivre après un refus.",
+   "defi": "Pendant trois minutes, demande à une personne connue si elle a un moment pour un sujet ordinaire. Respecte sa réponse ; si elle accepte, échangez brièvement sur ce qui rendait le moment adapté.",
+   "quiz": [
+    {
+     "q": "Une réponse courte prouve-t-elle une hostilité ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, sans exception"
+     ],
+     "rep": "Non",
+     "expl": "Plusieurs raisons peuvent l’expliquer."
+    },
+    {
+     "q": "Quel début laisse un choix ?",
+     "choix": [
+      "Tu vas m’écouter",
+      "Je t’empêcherai de partir avant ma question",
+      "Tu as un moment pour parler de l’atelier ?"
+     ],
+     "rep": "Tu as un moment pour parler de l’atelier ?",
+     "expl": "Il précise le sujet sans imposer."
+    },
+    {
+     "q": "Le contexte compte-t-il ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement en entretien"
+     ],
+     "rep": "Oui",
+     "expl": "La situation modifie ce qui est approprié."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-25-01"
+  },
+  {
+   "titre": "Partir de ce que vous partagez",
+   "accroche": "Le contexte commun peut suffire à lancer un échange.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Un terrain déjà présent",
+     "texte": "Un événement, une activité ou un sujet annoncé constitue un point commun vérifiable. Tu n’as pas besoin de fabriquer une ressemblance pour commencer.",
+     "schema": "Deux personnes et une activité centrale ; flèches vers un sujet commun, pas vers une identité inventée."
+    },
+    {
+     "titre": "Décrire sans flatter artificiellement",
+     "texte": "Vous avez essayé l’exercice de groupe ? ouvre un sujet réel. Tu es forcément la personne la plus intéressante ici fabrique un compliment difficile à justifier.",
+     "schema": ""
+    },
+    {
+     "titre": "Une ouverture avec une suite",
+     "texte": "J’ai trouvé la dernière consigne surprenante. Comment l’as-tu comprise ? combine un petit partage et une question. Cela évite de demander à l’autre de fournir tout le contenu.",
+     "schema": "Petite bulle personnelle puis question vers l’autre ; réponse revient, sans longue présentation préalable."
+    },
+    {
+     "titre": "Garder la curiosité honnête",
+     "texte": "Choisis une question dont la réponse t’intéresse réellement. Si tu veux seulement obtenir un service, annonce ce besoin plutôt que déguiser la demande en conversation amicale.",
+     "schema": ""
+    }
+   ],
+   "dans_ta_vie": "Tu peux démarrer sur un sujet accessible sans jouer un personnage.",
+   "securite": "Pour le défi, choisis une personne connue, disponible et consentante. Aucun exercice ne demande d’aborder un inconnu, de révéler une information privée ou de poursuivre après un refus.",
+   "defi": "Après une activité partagée avec une personne connue, échangez pendant trois minutes sur un détail réel. Donne ton observation, pose une question et accueille une réponse différente de la tienne.",
+   "quiz": [
+    {
+     "q": "Faut-il inventer un point commun ?",
+     "choix": [
+      "Oui",
+      "Oui, pour éviter les silences",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Un contexte réel peut suffire."
+    },
+    {
+     "q": "Quel début est le plus concret ?",
+     "choix": [
+      "Comment as-tu compris la consigne ?",
+      "Tu es forcément exceptionnel",
+      "Dis quelque chose d’intéressant"
+     ],
+     "rep": "Comment as-tu compris la consigne ?",
+     "expl": "La question porte sur une expérience partagée."
+    },
+    {
+     "q": "Si tu souhaites un service, que vaut-il mieux faire ?",
+     "choix": [
+      "Faire semblant de chercher seulement une amitié",
+      "Nommer la demande",
+      "Cacher toujours ton objectif"
+     ],
+     "rep": "Nommer la demande",
+     "expl": "La transparence permet un choix éclairé."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-25-02"
+  },
+  {
+   "titre": "Ouvrir une question, fermer une précision",
+   "accroche": "Une bonne conversation n’est pas une suite de questions sans fin.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Deux usages différents",
+     "texte": "Une question ouverte invite une réponse développée. Une question fermée précise un point. Comme une vue large et un zoom, les deux peuvent être utiles.",
+     "schema": "Paysage large nommé question ouverte ; zoom sur un détail nommé question fermée. Aucun classement meilleur ou mauvais."
+    },
+    {
+     "titre": "Inviter sans fouiller",
+     "texte": "Qu’est-ce qui t’a plu dans l’activité ? laisse plusieurs réponses possibles. Pourquoi n’as-tu aucun ami ? impose une hypothèse intrusive. Une question doit pouvoir être refusée.",
+     "schema": ""
+    },
+    {
+     "titre": "Une question à la fois",
+     "texte": "Empiler cinq questions oblige à choisir par où répondre. Pose la plus utile, laisse la réponse venir, puis décide si une précision manque.",
+     "schema": ""
+    },
+    {
+     "titre": "Un exemple de zoom",
+     "texte": "Comment s’est passée la sortie ? ouvre le récit. Vous êtes rentrés avant la pluie ? vérifie ensuite un détail. La précision suit l’histoire au lieu de l’étouffer.",
+     "schema": "Bulle large de récit puis petite bulle de précision. Flèche chronologique ; cinq questions simultanées barrées en marge."
+    }
+   ],
+   "dans_ta_vie": "Tu peux varier tes questions sans transformer l’échange en interrogatoire.",
+   "securite": "Pour le défi, choisis une personne connue, disponible et consentante. Aucun exercice ne demande d’aborder un inconnu, de révéler une information privée ou de poursuivre après un refus.",
+   "defi": "Pendant quatre minutes avec un proche, pose une question ouverte sur un sujet choisi ensemble, puis une seule précision utile. Demande si le rythme laissait assez de place pour répondre.",
+   "quiz": [
+    {
+     "q": "Une question fermée est-elle toujours mauvaise ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, dans toute conversation"
+     ],
+     "rep": "Non",
+     "expl": "Elle peut vérifier un détail."
+    },
+    {
+     "q": "Pourquoi éviter plusieurs questions à la fois ?",
+     "choix": [
+      "Pour cacher le sujet",
+      "Pour laisser une réponse claire",
+      "Pour empêcher toute précision"
+     ],
+     "rep": "Pour laisser une réponse claire",
+     "expl": "L’autre sait mieux à quoi répondre."
+    },
+    {
+     "q": "Quelle question impose une hypothèse intrusive ?",
+     "choix": [
+      "Qu’as-tu pensé de la sortie ?",
+      "Préférerais-tu un autre sujet ?",
+      "Pourquoi n’as-tu aucun ami ?"
+     ],
+     "rep": "Pourquoi n’as-tu aucun ami ?",
+     "expl": "Elle présuppose une situation personnelle non établie."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-25-03"
+  },
+  {
+   "titre": "Partager sans prendre tout l’espace",
+   "accroche": "Tu peux apporter quelque chose sans transformer l’échange en conférence.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Donner une petite prise",
+     "texte": "Une information personnelle ordinaire peut offrir un appui à l’autre. Choisis un détail que tu acceptes de partager, pas une confidence nécessaire pour gagner son attention.",
+     "schema": "Petite passerelle entre deux bulles ; un détail public sert de marche. Informations privées restent dans un cadre fermé."
+    },
+    {
+     "titre": "Un partage proportionné",
+     "texte": "J’ai essayé de cuisiner ce plat, c’est surtout la sauce qui me pose problème. Cette phrase donne un sujet précis. Toute l’histoire de tes repas depuis l’enfance n’est pas nécessaire.",
+     "schema": ""
+    },
+    {
+     "titre": "Rendre la parole",
+     "texte": "Après ton exemple, tu peux demander : Et toi, as-tu déjà essayé ? La question est une invitation, pas une obligation d’avoir une histoire comparable.",
+     "schema": ""
+    },
+    {
+     "titre": "Aucun partage forcé",
+     "texte": "Si l’autre souhaite rester sur un sujet général, respecte ce niveau. Une conversation peut être chaleureuse sans échange d’adresses, de revenus ou de difficultés intimes.",
+     "schema": "Deux bulles équilibrées avec sujet général au centre. Cadres privés de chaque côté restent fermés et indépendants."
+    }
+   ],
+   "dans_ta_vie": "Tu peux nourrir l’échange tout en gardant des limites sur les informations personnelles.",
+   "securite": "Pour le défi, choisis une personne connue, disponible et consentante. Aucun exercice ne demande d’aborder un inconnu, de révéler une information privée ou de poursuivre après un refus.",
+   "defi": "Pendant trois à quatre minutes, partage avec une personne consentante un détail ordinaire sur une activité. Rends la parole et vérifie que tu as aussi appris une idée qu’elle souhaitait partager.",
+   "quiz": [
+    {
+     "q": "Faut-il révéler une confidence pour intéresser ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, dès le premier échange"
+     ],
+     "rep": "Non",
+     "expl": "Un sujet ordinaire peut suffire."
+    },
+    {
+     "q": "Après ton exemple, que peux-tu faire ?",
+     "choix": [
+      "Ajouter tous tes autres souvenirs",
+      "Exiger la même confidence",
+      "Laisser une place à l’autre"
+     ],
+     "rep": "Laisser une place à l’autre",
+     "expl": "Le partage peut rester réciproque."
+    },
+    {
+     "q": "Un échange général peut-il être chaleureux ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement entre inconnus"
+     ],
+     "rep": "Oui",
+     "expl": "La proximité n’exige pas l’intimité."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-25-04"
+  },
+  {
+   "titre": "Relancer à partir de ce qui vient d’être dit",
+   "accroche": "Le meilleur sujet suivant est parfois déjà dans la réponse.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Attraper un fil réel",
+     "texte": "Une relance reprend un élément donné par l’autre. Comme suivre un fil, elle montre où ta curiosité se porte sans changer automatiquement de sujet.",
+     "schema": "Réponse avec trois éléments ; un seul est surligné puis relié à une question de relance."
+    },
+    {
+     "titre": "Demander un détail choisi",
+     "texte": "Si l’autre dit aimer la randonnée, tu peux demander ce qu’il apprécie dans cette activité. Tu n’as pas besoin de demander ses lieux exacts ou son emploi du temps.",
+     "schema": ""
+    },
+    {
+     "titre": "Reprendre sans répéter mécaniquement",
+     "texte": "Répéter le dernier mot à chaque phrase peut sembler artificiel. Une reformulation personnelle, suivie d’une vraie question, permet plutôt de vérifier un point.",
+     "schema": ""
+    },
+    {
+     "titre": "Laisser changer de fil",
+     "texte": "Si le sujet ne l’intéresse plus, propose autre chose ou termine. Une relance n’est pas une méthode pour maintenir quelqu’un dans l’échange malgré lui.",
+     "schema": "Fil de conversation vers bifurcation : continuer, autre sujet, terminer. Les trois chemins restent ouverts."
+    }
+   ],
+   "dans_ta_vie": "Tu peux suivre une réponse plutôt que réciter une liste de sujets.",
+   "securite": "Pour le défi, choisis une personne connue, disponible et consentante. Aucun exercice ne demande d’aborder un inconnu, de révéler une information privée ou de poursuivre après un refus.",
+   "defi": "Pendant quatre minutes avec un proche, relève un élément de sa réponse et pose une relance sincère. Vérifie ensuite que tu n’as pas demandé une information qu’il préférait garder privée.",
+   "quiz": [
+    {
+     "q": "Sur quoi une relance peut-elle s’appuyer ?",
+     "choix": [
+      "Une information inventée",
+      "Un secret obtenu ailleurs",
+      "Un élément réellement partagé"
+     ],
+     "rep": "Un élément réellement partagé",
+     "expl": "Elle suit le contenu de l’échange."
+    },
+    {
+     "q": "Faut-il répéter chaque dernier mot ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, pour paraître attentif"
+     ],
+     "rep": "Non",
+     "expl": "Une répétition automatique ne remplace pas la compréhension."
+    },
+    {
+     "q": "La personne veut changer de sujet : que faire ?",
+     "choix": [
+      "Ramener toujours au sujet initial",
+      "Respecter ce changement",
+      "Insister jusqu’à obtenir le détail"
+     ],
+     "rep": "Respecter ce changement",
+     "expl": "La relance ne supprime pas son choix."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-25-05"
+  },
+  {
+   "titre": "Entrer dans un groupe sans couper le fil",
+   "accroche": "Un groupe a déjà son sujet et son rythme.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Observer le sujet avant d’ajouter",
+     "texte": "Écoute assez pour comprendre de quoi il est question. Comme rejoindre une partie commencée, tu as besoin de savoir ce qui se joue, sans espionner une conversation privée.",
+     "schema": "Petit groupe autour d’un sujet commun ; nouvel arrivant reste à distance appropriée, puis bulle de demande."
+    },
+    {
+     "titre": "Demander une place",
+     "texte": "Je peux me joindre à vous ? est utile quand le cadre s’y prête. Si l’échange est privé ou le groupe refuse, ne transforme pas l’entrée en épreuve de force.",
+     "schema": ""
+    },
+    {
+     "titre": "Relier ta contribution",
+     "texte": "Une fois accueilli, ajoute une idée liée au sujet : Vous parlez du projet ? J’ai une question sur la date. Tu n’as pas à annoncer tout ton parcours.",
+     "schema": ""
+    },
+    {
+     "titre": "Ne pas choisir un adversaire",
+     "texte": "Participer ne demande pas de ridiculiser quelqu’un pour gagner une place. Une question, un exemple ou un désaccord expliqué peuvent contribuer sans créer un duel.",
+     "schema": "Plusieurs bulles reliées au même centre ; une bulle agressive qui écrase les autres est barrée."
+    }
+   ],
+   "dans_ta_vie": "Tu peux rejoindre un échange avec une contribution pertinente et une sortie possible.",
+   "securite": "Pour le défi, choisis une personne connue, disponible et consentante. Aucun exercice ne demande d’aborder un inconnu, de révéler une information privée ou de poursuivre après un refus.",
+   "defi": "Pendant quatre minutes, avec deux ou trois proches d’accord, simule une entrée dans une discussion sur un loisir. Demande la place, relie une idée au sujet puis écoute la suite.",
+   "quiz": [
+    {
+     "q": "Avant d’ajouter une idée, que faut-il chercher à comprendre ?",
+     "choix": [
+      "Le sujet en cours",
+      "Le revenu de chaque personne",
+      "Qui dominer au plus vite"
+     ],
+     "rep": "Le sujet en cours",
+     "expl": "La contribution peut alors être pertinente."
+    },
+    {
+     "q": "Un refus d’entrée autorise-t-il à insister ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, pour montrer sa confiance"
+     ],
+     "rep": "Non",
+     "expl": "Un échange peut rester privé."
+    },
+    {
+     "q": "Faut-il rabaisser quelqu’un pour participer ?",
+     "choix": [
+      "Oui",
+      "Oui, si le groupe rit",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Une place respectueuse ne se gagne pas par humiliation."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-25-06"
+  },
+  {
+   "titre": "Laisser respirer et savoir terminer",
+   "accroche": "La fin d’un échange peut être aussi simple que son début.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Le silence a plusieurs sens",
+     "texte": "Une pause peut servir à réfléchir, chercher un mot ou simplement respirer. Elle ne prouve pas automatiquement que tu ennuies. Tu n’es pas obligé de remplir chaque seconde.",
+     "schema": ""
+    },
+    {
+     "titre": "Vérifier au lieu de deviner",
+     "texte": "Tu préfères continuer ou reprendre une autre fois ? donne une sortie claire. La réponse compte davantage qu’une lecture certaine d’un regard ou d’un geste.",
+     "schema": "Point d’interrogation entre posture observée et intention ; bulle de vérification remplace la flèche de déduction automatique."
+    },
+    {
+     "titre": "Une fin sans promesse artificielle",
+     "texte": "Merci pour cet échange, je vais rejoindre l’atelier. Cette phrase termine clairement. Tu n’as pas besoin de promettre un rendez-vous que tu ne souhaites pas.",
+     "schema": ""
+    },
+    {
+     "titre": "Respecter la fin de l’autre",
+     "texte": "Si la personne annonce son départ, laisse-la partir. Ajouter une dernière question après chaque dernière question transforme une sortie polie en obstacle.",
+     "schema": "Chemin de sortie libre ; une seule bulle de salut. Succession de crochets de relance barrée en marge."
+    }
+   ],
+   "dans_ta_vie": "Tu peux accepter une pause et terminer sans te dévaloriser ni retenir l’autre.",
+   "securite": "Pour le défi, choisis une personne connue, disponible et consentante. Aucun exercice ne demande d’aborder un inconnu, de révéler une information privée ou de poursuivre après un refus.",
+   "defi": "Pendant trois minutes avec un proche, essayez une pause puis une fin claire de conversation. Demandez-vous si la formule permettait vraiment de partir sans culpabilité.",
+   "quiz": [
+    {
+     "q": "Une pause prouve-t-elle l’ennui ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, au-delà d’une seconde"
+     ],
+     "rep": "Non",
+     "expl": "Elle peut avoir plusieurs raisons."
+    },
+    {
+     "q": "Une fin polie exige-t-elle une fausse promesse ?",
+     "choix": [
+      "Oui",
+      "Oui, pour rester sympathique",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Une phrase claire peut suffire."
+    },
+    {
+     "q": "Que faire si l’autre annonce son départ ?",
+     "choix": [
+      "Le laisser terminer",
+      "Multiplier les dernières questions",
+      "Lui demander de justifier son temps"
+     ],
+     "rep": "Le laisser terminer",
+     "expl": "La sortie doit rester réelle."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-25-07"
+  },
+  {
+   "titre": "Commencer aussi par écrit",
+   "accroche": "Un message bref peut ouvrir une conversation sans occuper tout l’écran.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Se situer",
+     "texte": "Quand le contexte n’est pas évident, rappelle qui tu es et le lien partagé. Un message doit permettre de comprendre pourquoi tu écris sans chercher dans toute sa mémoire.",
+     "schema": ""
+    },
+    {
+     "titre": "Une ouverture complète",
+     "texte": "Bonjour, nous étions dans le même groupe à l’atelier. J’ai une question sur la consigne finale. Aurais-tu un moment cette semaine ? Le contexte précède la demande.",
+     "schema": "Message fictif découpé en trois zones : lien, sujet, demande. Aucun numéro, adresse ou identité réelle."
+    },
+    {
+     "titre": "Respecter les délais",
+     "texte": "Une absence de réponse ne permet pas de connaître l’intention. Selon le contexte, une relance sobre peut convenir ; des messages répétés n’obligent pas à répondre.",
+     "schema": "Un message puis temps d’attente ; éventuelle relance unique selon contexte. Aucune alarme de réponse immédiate."
+    },
+    {
+     "titre": "Accepter la fermeture",
+     "texte": "Si la personne refuse ou demande de ne plus être contactée, arrête. Le canal écrit ne transforme pas un non en invitation à essayer ailleurs.",
+     "schema": ""
+    }
+   ],
+   "dans_ta_vie": "Tu peux ouvrir un échange écrit clair sans multiplier les sollicitations.",
+   "securite": "Pour le défi, choisis une personne connue, disponible et consentante. Aucun exercice ne demande d’aborder un inconnu, de révéler une information privée ou de poursuivre après un refus.",
+   "defi": "Pendant quatre minutes, prépare un brouillon pour une personne connue : contexte, sujet, demande. Fais-le relire avec son accord ; l’exercice ne demande aucun envoi ni aucune relance réelle.",
+   "quiz": [
+    {
+     "q": "Pourquoi rappeler le contexte ?",
+     "choix": [
+      "Pour remplir l’écran",
+      "Pour fabriquer une proximité",
+      "Pour situer la demande"
+     ],
+     "rep": "Pour situer la demande",
+     "expl": "Le destinataire comprend plus facilement le lien."
+    },
+    {
+     "q": "Une absence de réponse prouve-t-elle un accord ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, après un jour"
+     ],
+     "rep": "Non",
+     "expl": "Le silence ne vaut pas acceptation."
+    },
+    {
+     "q": "La personne refuse le contact : faut-il essayer un autre canal ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, pour montrer sa motivation"
+     ],
+     "rep": "Non",
+     "expl": "Sa limite doit être respectée."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-25-08"
+  }
+ ]
+}

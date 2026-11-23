@@ -1,0 +1,543 @@
+{
+ "id": "BP-27",
+ "titre": "Convaincre honnêtement (dont « vends-moi ce stylo »)",
+ "public": "ado-adulte",
+ "lecons": [
+  {
+   "titre": "Proposer sans prendre le volant de l’autre",
+   "accroche": "Convaincre honnêtement laisse toujours une sortie.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Une proposition visible",
+     "texte": "Convaincre, c’est présenter des raisons de choisir une idée ou une action. Annonce ce que tu proposes : l’autre doit comprendre la décision dont vous parlez.",
+     "schema": "À gauche, proposition dans une bulle ; au centre, raisons ; à droite, trois chemins également visibles : oui, non, réfléchir."
+    },
+    {
+     "titre": "Un choix qui reste libre",
+     "texte": "Un accord obtenu par menace, tromperie ou épuisement ne devient pas honnête parce que la personne finit par dire oui. Le refus doit rester réellement possible.",
+     "schema": ""
+    },
+    {
+     "titre": "Demander une place",
+     "texte": "Tu veux que je te présente mon idée pour la sortie ? vérifie la disponibilité. Si la réponse est non, n’enchaîne pas immédiatement avec ton argumentaire.",
+     "schema": ""
+    },
+    {
+     "titre": "Un objectif limité",
+     "texte": "Tu peux chercher à faire comprendre une proposition sans obtenir son adoption. Comme une carte routière, ton explication éclaire des chemins ; elle ne choisit pas la destination à la place de l’autre.",
+     "schema": "Carte simple à trois sorties ; une main tient la carte, une autre appartient au destinataire et indique son propre choix."
+    }
+   ],
+   "dans_ta_vie": "Tu peux défendre une idée tout en respectant la décision de ton interlocuteur.",
+   "securite": "Les défis sont des simulations avec une personne connue et consentante : aucun achat, paiement, contrat ou partage de données. Un refus met fin à la proposition. Ne cherche pas à exploiter une vulnérabilité.",
+   "defi": "Pendant quatre minutes, propose à un proche volontaire une activité sans achat. Annonce le sujet, demande s’il veut entendre tes raisons, puis accueille son choix sans relance insistante.",
+   "quiz": [
+    {
+     "q": "Quelle liberté doit rester réelle ?",
+     "choix": [
+      "Dire oui pour éviter une menace",
+      "Refuser la proposition",
+      "Accepter pour faire cesser l’insistance"
+     ],
+     "rep": "Refuser la proposition",
+     "expl": "Une décision libre suppose une possibilité réelle de dire non."
+    },
+    {
+     "q": "Avant de développer une idée, que peux-tu demander ?",
+     "choix": [
+      "Comment la rendre obligée d’accepter",
+      "Quelle faiblesse utiliser",
+      "Si la personne souhaite l’entendre"
+     ],
+     "rep": "Si la personne souhaite l’entendre",
+     "expl": "L’autorisation de présenter ne vaut pas acceptation de la proposition."
+    },
+    {
+     "q": "Une explication honnête garantit-elle un accord ?",
+     "choix": [
+      "Non",
+      "Oui, si elle est assez longue",
+      "Oui, si elle plaît à son auteur"
+     ],
+     "rep": "Non",
+     "expl": "La décision appartient à l’autre."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-27-01"
+  },
+  {
+   "titre": "Chercher un besoin réel",
+   "accroche": "Une solution utile commence par une question, pas par une invention.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Comprendre l’usage",
+     "texte": "Avant de proposer un objet ou une organisation, demande à quoi cela servirait. Le même outil peut convenir à une tâche et être inutile pour une autre.",
+     "schema": "Un même objet face à deux usages : utile pour l’un, sans utilité pour l’autre. Flèches distinctes, pas de classement des personnes."
+    },
+    {
+     "titre": "Ne pas créer un manque",
+     "texte": "Tu n’as pas à rendre quelqu’un inquiet ou honteux pour lui faire désirer ta solution. Une difficulté inventée ne devient pas un besoin parce que tu la répètes.",
+     "schema": ""
+    },
+    {
+     "titre": "Écouter les contraintes",
+     "texte": "Temps, accessibilité, matériel disponible et préférences peuvent changer la proposition. Pose les questions nécessaires sans exiger des informations personnelles qui ne servent pas au choix.",
+     "schema": ""
+    },
+    {
+     "titre": "Accepter l’absence de besoin",
+     "texte": "Si la personne possède déjà une solution satisfaisante, tu peux reconnaître que ta proposition n’apporte rien d’utile. Renoncer à convaincre peut être la conclusion la plus honnête.",
+     "schema": "Besoin déjà satisfait dans un cadre vert ; nouvelle proposition reste à côté avec étiquette inutile ici. Aucune flèche ne force le remplacement."
+    }
+   ],
+   "dans_ta_vie": "Tu peux vérifier qu’une idée répond au problème annoncé avant de la défendre.",
+   "securite": "Les défis sont des simulations avec une personne connue et consentante : aucun achat, paiement, contrat ou partage de données. Un refus met fin à la proposition. Ne cherche pas à exploiter une vulnérabilité.",
+   "defi": "Choisissez pendant quatre minutes un besoin fictif, comme organiser un jeu. Pose deux questions d’usage et une question de contrainte, puis propose une option ou conclus qu’aucun changement n’est nécessaire.",
+   "quiz": [
+    {
+     "q": "Que vaut-il mieux chercher en premier ?",
+     "choix": [
+      "Une inquiétude à fabriquer",
+      "Un compliment à échanger contre un oui",
+      "L’usage réel"
+     ],
+     "rep": "L’usage réel",
+     "expl": "Une proposition se juge selon son utilité dans la situation."
+    },
+    {
+     "q": "Une solution existe déjà et convient. Que peux-tu conclure ?",
+     "choix": [
+      "Ma proposition n’est pas nécessaire ici",
+      "Il faut inventer un nouveau problème",
+      "Il faut cacher la solution existante"
+     ],
+     "rep": "Ma proposition n’est pas nécessaire ici",
+     "expl": "L’absence de besoin peut justifier de renoncer."
+    },
+    {
+     "q": "Quelle question est pertinente pour organiser un jeu ?",
+     "choix": [
+      "Quels sont tes secrets familiaux ?",
+      "De combien de temps disposons-nous ?",
+      "Pourquoi refuses-tu forcément le progrès ?"
+     ],
+     "rep": "De combien de temps disposons-nous ?",
+     "expl": "Elle aide à adapter la proposition sans intrusion."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-27-02"
+  },
+  {
+   "titre": "Relier une raison à une preuve",
+   "accroche": "Un argument solide montre aussi où sa certitude s’arrête.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "De l’affirmation à la raison",
+     "texte": "Choisissons cette salle parce qu’elle contient assez de places relie une proposition à un besoin. Elle est formidable exprime un jugement trop vague pour vérifier son utilité.",
+     "schema": "Trois blocs : besoin de places, capacité vérifiée, proposition de salle. Flèches relient la preuve au besoin, puis à la proposition."
+    },
+    {
+     "titre": "Vérifier ce qui est annoncé",
+     "texte": "Un nombre, une citation ou une performance doit venir d’une source identifiable. Si tu n’as pas vérifié la capacité de la salle, annonce que ce point reste à contrôler.",
+     "schema": ""
+    },
+    {
+     "titre": "Distinguer goût et fait",
+     "texte": "Je préfère cette couleur exprime une préférence. Cette couleur plaît à tout le monde affirme un fait bien plus large, qui demanderait une preuve et risque d’être faux.",
+     "schema": ""
+    },
+    {
+     "titre": "Montrer une limite utile",
+     "texte": "Cette salle a assez de places, mais son accès reste à vérifier donne une information nécessaire. Cacher une limite importante empêche l’autre d’évaluer réellement la proposition.",
+     "schema": "Fiche en deux parties : vérifié et à vérifier. La limite reste visible à côté de l’avantage, avec même taille de texte."
+    }
+   ],
+   "dans_ta_vie": "Tu peux défendre une idée sans transformer une supposition en certitude.",
+   "securite": "Les défis sont des simulations avec une personne connue et consentante : aucun achat, paiement, contrat ou partage de données. Un refus met fin à la proposition. Ne cherche pas à exploiter une vulnérabilité.",
+   "defi": "Pendant quatre minutes, rédige une proposition ordinaire avec une raison vérifiable. Sépare ce que tu sais, ce que tu préfères et ce qui reste à vérifier, puis fais relire ces trois catégories à un proche.",
+   "quiz": [
+    {
+     "q": "Une capacité non vérifiée doit être présentée comment ?",
+     "choix": [
+      "Comme un point à contrôler",
+      "Comme une certitude si elle paraît plausible",
+      "Comme un chiffre plus grand pour rassurer"
+     ],
+     "rep": "Comme un point à contrôler",
+     "expl": "L’incertitude doit rester visible."
+    },
+    {
+     "q": "Quelle phrase exprime clairement une préférence ?",
+     "choix": [
+      "Tout le monde préfère cette couleur",
+      "Je préfère cette couleur",
+      "Cette couleur garantit la réussite"
+     ],
+     "rep": "Je préfère cette couleur",
+     "expl": "Une préférence personnelle n’est pas une preuve générale."
+    },
+    {
+     "q": "Pourquoi annoncer une limite importante ?",
+     "choix": [
+      "Pour éviter tout choix",
+      "Pour remplacer les preuves par des doutes",
+      "Pour permettre une évaluation éclairée"
+     ],
+     "rep": "Pour permettre une évaluation éclairée",
+     "expl": "Elle fait partie de l’information nécessaire à la décision."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-27-03"
+  },
+  {
+   "titre": "Adapter l’explication sans changer les faits",
+   "accroche": "La même idée peut avoir plusieurs portes d’entrée.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Partir d’un repère connu",
+     "texte": "Pour expliquer une organisation, tu peux la comparer à un planning familier. Une comparaison sert de marche d’accès ; elle ne prouve pas à elle seule que l’idée fonctionne.",
+     "schema": "Escalier de trois marches : repère connu, comparaison, idée expliquée. Une preuve distincte se trouve à côté de l’escalier."
+    },
+    {
+     "titre": "Choisir le détail pertinent",
+     "texte": "Une personne peut surtout vouloir connaître la durée, une autre les conditions d’accès. Répondre à ces préoccupations change l’ordre des explications, pas la réalité de l’offre.",
+     "schema": ""
+    },
+    {
+     "titre": "Garder les mêmes conditions",
+     "texte": "Ne promets pas un avantage incompatible à chacun pour obtenir deux accords. Les faits, les limites et les engagements doivent rester cohérents d’un interlocuteur à l’autre.",
+     "schema": ""
+    },
+    {
+     "titre": "Vérifier la compréhension",
+     "texte": "Tu peux demander : Quel point reste flou ? Évite de confondre un sourire avec une compréhension complète ou de tester l’autre comme s’il passait un examen.",
+     "schema": "Même fiche factuelle envoyée à deux personnes ; durée surlignée pour l’une, accès pour l’autre. Les informations restent identiques."
+    }
+   ],
+   "dans_ta_vie": "Tu peux rendre une explication accessible sans fabriquer une version avantageuse pour chaque personne.",
+   "securite": "Les défis sont des simulations avec une personne connue et consentante : aucun achat, paiement, contrat ou partage de données. Un refus met fin à la proposition. Ne cherche pas à exploiter une vulnérabilité.",
+   "defi": "Explique pendant quatre minutes la même activité à deux personnages fictifs : l’un manque de temps, l’autre cherche un accès facile. Fais varier l’ordre des informations et vérifie que les conditions restent identiques.",
+   "quiz": [
+    {
+     "q": "Adapter une explication permet de changer quoi ?",
+     "choix": [
+      "Les faits selon ce qui arrange",
+      "L’ordre et les exemples pertinents",
+      "Les limites importantes à cacher"
+     ],
+     "rep": "L’ordre et les exemples pertinents",
+     "expl": "L’adaptation porte sur la présentation honnête."
+    },
+    {
+     "q": "Une comparaison suffit-elle à prouver une efficacité ?",
+     "choix": [
+      "Oui, si elle est amusante",
+      "Oui, si elle parle au public",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Elle aide à comprendre mais ne remplace pas une preuve."
+    },
+    {
+     "q": "Quelle question aide à vérifier la clarté ?",
+     "choix": [
+      "Quel point reste flou ?",
+      "Tu as compris, évidemment ?",
+      "Tu souris, donc tu acceptes ?"
+     ],
+     "rep": "Quel point reste flou ?",
+     "expl": "Elle laisse exprimer un besoin de précision."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-27-04"
+  },
+  {
+   "titre": "Accueillir une objection sans partir au combat",
+   "accroche": "Une réserve indique parfois une information qui manque.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Ne pas combattre automatiquement",
+     "texte": "Une objection est une raison de ne pas choisir la proposition, ou de demander une précision. Elle peut être fondée ; elle n’est pas un obstacle à éliminer coûte que coûte.",
+     "schema": ""
+    },
+    {
+     "titre": "Préciser le point",
+     "texte": "Quand tu dis trop compliqué, est-ce le trajet ou l’inscription ? cherche une précision sans supposer la réponse. Écoute-la avant de proposer une modification.",
+     "schema": "Objection trop compliqué au centre ; deux branches possibles, trajet et inscription. Une question précède le choix de branche."
+    },
+    {
+     "titre": "Répondre dans tes limites",
+     "texte": "Tu peux apporter une information vérifiée, reconnaître une erreur ou dire que tu ne sais pas. Inventer une réponse immédiate rend l’échange moins fiable.",
+     "schema": ""
+    },
+    {
+     "titre": "Laisser une objection décisive",
+     "texte": "Si l’accès ne convient pas et ne peut pas être adapté, cette proposition peut être abandonnée. Respecter une contrainte réelle compte davantage que sauver ton idée.",
+     "schema": "Proposition face à une condition essentielle non satisfaite ; flèche vers autre option ou abandon. La condition n’est pas effacée."
+    }
+   ],
+   "dans_ta_vie": "Tu peux traiter une réserve comme une information plutôt que comme une attaque personnelle.",
+   "securite": "Les défis sont des simulations avec une personne connue et consentante : aucun achat, paiement, contrat ou partage de données. Un refus met fin à la proposition. Ne cherche pas à exploiter une vulnérabilité.",
+   "defi": "Pendant quatre minutes, présente une idée fictive à un proche qui choisit une réserve réelle dans le scénario. Clarifie-la, réponds avec ce que tu sais et accepte de retirer la proposition si elle ne convient pas.",
+   "quiz": [
+    {
+     "q": "Une objection peut-elle être fondée ?",
+     "choix": [
+      "Non, elle cache toujours un oui",
+      "Non, elle prouve une mauvaise volonté",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Elle peut révéler une contrainte décisive."
+    },
+    {
+     "q": "Tu ignores une réponse importante. Que faire ?",
+     "choix": [
+      "Dire que tu dois vérifier",
+      "Inventer une réponse plausible",
+      "Changer de sujet pour masquer le manque"
+     ],
+     "rep": "Dire que tu dois vérifier",
+     "expl": "Reconnaître la limite protège la qualité de l’information."
+    },
+    {
+     "q": "Une condition essentielle reste impossible. Quelle suite est honnête ?",
+     "choix": [
+      "Épuiser l’autre jusqu’à son accord",
+      "Retirer ou modifier la proposition",
+      "Nier la condition"
+     ],
+     "rep": "Retirer ou modifier la proposition",
+     "expl": "Une idée doit pouvoir être abandonnée si elle ne convient pas."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-27-05"
+  },
+  {
+   "titre": "Vends-moi ce stylo, mais honnêtement",
+   "accroche": "Ce petit exercice peut finir sans vente et rester réussi.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Commencer par l’usage",
+     "texte": "Dans cette simulation, demande : As-tu besoin d’écrire sur papier ? Un stylo n’est pas utile à tout le monde à cet instant. Tu ne dois pas fabriquer une urgence pour le rendre indispensable.",
+     "schema": "Stylo au centre ; question d’usage au-dessus ; branches besoin présent et aucun besoin. La seconde mène à aucune proposition nécessaire."
+    },
+    {
+     "titre": "Relier une propriété à l’usage",
+     "texte": "Si le personnage veut des notes bleues, une encre bleue peut être pertinente. Présente seulement une propriété connue dans le scénario, sans inventer une durée de vie ou une qualité exceptionnelle.",
+     "schema": ""
+    },
+    {
+     "titre": "Annoncer les conditions",
+     "texte": "Si vous utilisez un prix fictif, dites qu’il est inventé et précisez ce qu’il couvre. N’ajoute pas de frais surprises et n’exige ni coordonnées ni signature pour poursuivre l’exercice.",
+     "schema": "Fiche du stylo : propriété connue, limite connue, prix fictif éventuel et inclusions. Chaque ligne apparaît avant le choix."
+    },
+    {
+     "titre": "Accepter l’absence de vente",
+     "texte": "Le personnage peut posséder un stylo satisfaisant ou préférer une autre solution. Ne lui prends pas son stylo pour créer artificiellement un manque : ce serait une manipulation, pas une vente honnête.",
+     "schema": ""
+    }
+   ],
+   "dans_ta_vie": "Tu peux distinguer une proposition utile d’un scénario construit pour piéger le destinataire.",
+   "securite": "Les défis sont des simulations avec une personne connue et consentante : aucun achat, paiement, contrat ou partage de données. Un refus met fin à la proposition. Ne cherche pas à exploiter une vulnérabilité.",
+   "defi": "Jouez quatre minutes avec un stylo imaginaire : question d’usage, propriété connue, conditions fictives, choix libre. Rejouez avec un personnage qui n’en a pas besoin ; concluez sans vente ni pression.",
+   "quiz": [
+    {
+     "q": "Quelle première question est utile ?",
+     "choix": [
+      "As-tu besoin d’écrire sur papier ?",
+      "Peux-tu signer immédiatement ce contrat ?",
+      "Comment te rendre inquiet sans stylo ?"
+     ],
+     "rep": "As-tu besoin d’écrire sur papier ?",
+     "expl": "Elle vérifie un usage réel dans le scénario."
+    },
+    {
+     "q": "Quelle propriété peux-tu annoncer ?",
+     "choix": [
+      "Une qualité exceptionnelle inventée",
+      "Une caractéristique connue dans le scénario",
+      "Une durée de vie garantie sans preuve"
+     ],
+     "rep": "Une caractéristique connue dans le scénario",
+     "expl": "Le jeu ne justifie pas une fausse information."
+    },
+    {
+     "q": "Le personnage a déjà un stylo satisfaisant. Quelle conclusion est possible ?",
+     "choix": [
+      "Il faut lui retirer son stylo",
+      "Il faut inventer un risque urgent",
+      "Aucune vente n’est nécessaire"
+     ],
+     "rep": "Aucune vente n’est nécessaire",
+     "expl": "Une proposition honnête accepte l’absence de besoin."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-27-06"
+  },
+  {
+   "titre": "Comparer tout ce qui compte",
+   "accroche": "Un avantage ne raconte pas à lui seul toute l’offre.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Comparer le même usage",
+     "texte": "Deux options se comparent sur une tâche commune. Un objet moins cher mais inutilisable pour ton besoin n’est pas automatiquement une meilleure option.",
+     "schema": "Deux fiches d’options alignées sous un même usage ; lignes identiques pour fonction, conditions, coût et limites."
+    },
+    {
+     "titre": "Rendre les conditions visibles",
+     "texte": "Durée, frais, engagement et contraintes peuvent compter autant que le prix affiché. Ne présente pas un petit montant périodique sans expliquer la période et les autres coûts connus.",
+     "schema": ""
+    },
+    {
+     "titre": "Inclure les alternatives",
+     "texte": "Garder l’existant, emprunter ou ne rien changer peut être une option. Une comparaison honnête ne retire pas les solutions qui rendent ta proposition moins attirante.",
+     "schema": ""
+    },
+    {
+     "titre": "Ne pas conclure à la place",
+     "texte": "Présente les différences pertinentes et les inconnues. La personne peut donner plus de poids à un critère que toi ; cela ne la rend pas irrationnelle.",
+     "schema": "Tableau simple de deux options plus garder l’existant ; chaque critère est visible. Une personne place elle-même ses priorités à côté."
+    }
+   ],
+   "dans_ta_vie": "Tu peux repérer ce qu’une présentation séduisante laisse de côté.",
+   "securite": "Les défis sont des simulations avec une personne connue et consentante : aucun achat, paiement, contrat ou partage de données. Un refus met fin à la proposition. Ne cherche pas à exploiter une vulnérabilité.",
+   "defi": "Crée pendant quatre minutes deux offres entièrement fictives d’une activité sans paiement réel. Compare durée, contraintes, coût fictif total et limites, puis ajoute l’option ne rien changer. Vérifie qu’aucune condition n’est cachée.",
+   "quiz": [
+    {
+     "q": "Pour comparer deux options, que faut-il d’abord fixer ?",
+     "choix": [
+      "Le slogan le plus séduisant",
+      "L’usage auquel elles doivent répondre",
+      "La préférence de celui qui présente"
+     ],
+     "rep": "L’usage auquel elles doivent répondre",
+     "expl": "Les critères doivent porter sur une même tâche."
+    },
+    {
+     "q": "Un petit montant par période suffit-il à décrire tous les coûts ?",
+     "choix": [
+      "Oui, quelle que soit la durée",
+      "Oui, même avec des frais cachés",
+      "Non, d’autres conditions peuvent compter"
+     ],
+     "rep": "Non, d’autres conditions peuvent compter",
+     "expl": "Période, durée et coûts additionnels connus doivent rester visibles."
+    },
+    {
+     "q": "Pourquoi inclure garder l’existant ?",
+     "choix": [
+      "Cela peut être une option adaptée",
+      "Pour faire semblant de laisser choisir",
+      "Parce que tout changement est mauvais"
+     ],
+     "rep": "Cela peut être une option adaptée",
+     "expl": "L’alternative doit être réellement prise en compte."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-27-07"
+  },
+  {
+   "titre": "Laisser le dernier choix à l’autre",
+   "accroche": "Une bonne conclusion n’a pas besoin d’un compte à rebours.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Récapituler sobrement",
+     "texte": "Rappelle la proposition, sa raison principale et sa limite importante. Une conclusion sert à rendre le choix lisible, pas à cacher une condition dans les dernières secondes.",
+     "schema": "Trois encadrés de même taille : proposition, raison, limite. Ils restent affichés ensemble avant une décision."
+    },
+    {
+     "titre": "Laisser du temps réel",
+     "texte": "Si aucun délai ne s’impose, n’en invente pas. Si une échéance existe, indique ce qui la justifie et ce qui reste vérifiable. L’urgence annoncée ne remplace pas l’information.",
+     "schema": ""
+    },
+    {
+     "titre": "Respecter le refus",
+     "texte": "Merci d’avoir écouté, on laisse cette idée accueille un non. Ne transforme pas un service rendu, un cadeau ou votre relation en dette d’acceptation.",
+     "schema": ""
+    },
+    {
+     "titre": "Convenir du suivi",
+     "texte": "Une relance peut être proposée avec un moment et un moyen acceptés ensemble. L’absence de réponse ne vaut pas accord et ne justifie pas de multiplier les canaux.",
+     "schema": "Choix final vers oui, non, réflexion. Depuis réflexion, relance en pointillés uniquement après accord explicite sur le moment."
+    }
+   ],
+   "dans_ta_vie": "Tu peux terminer une proposition sans abîmer la liberté de décision.",
+   "securite": "Les défis sont des simulations avec une personne connue et consentante : aucun achat, paiement, contrat ou partage de données. Un refus met fin à la proposition. Ne cherche pas à exploiter une vulnérabilité.",
+   "defi": "Avec un proche volontaire, joue pendant quatre minutes deux conclusions : un refus et une demande de réflexion. Récapitule sans rajouter de pression ; dans le second cas, demande si un suivi est souhaité.",
+   "quiz": [
+    {
+     "q": "Sans échéance réelle, que faut-il éviter ?",
+     "choix": [
+      "Récapituler les limites",
+      "Laisser réfléchir",
+      "Inventer un compte à rebours"
+     ],
+     "rep": "Inventer un compte à rebours",
+     "expl": "Une urgence artificielle fausse les conditions du choix."
+    },
+    {
+     "q": "Un cadeau oblige-t-il à accepter une proposition ?",
+     "choix": [
+      "Non",
+      "Oui, par politesse",
+      "Oui, si le cadeau coûte cher"
+     ],
+     "rep": "Non",
+     "expl": "Le don ne doit pas devenir une dette de décision."
+    },
+    {
+     "q": "Quand une relance est-elle respectueuse ?",
+     "choix": [
+      "Dès que le silence dure quelques minutes",
+      "Quand son principe et son moment sont acceptés",
+      "En changeant de canal après un refus"
+     ],
+     "rep": "Quand son principe et son moment sont acceptés",
+     "expl": "Le suivi doit lui aussi laisser un choix."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-27-08"
+  }
+ ]
+}
