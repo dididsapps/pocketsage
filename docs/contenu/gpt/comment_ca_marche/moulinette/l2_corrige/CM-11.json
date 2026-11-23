@@ -1,0 +1,543 @@
+{
+ "id": "CM-11",
+ "titre": "La fiche de paie et les impôts (France)",
+ "public": "ado-adulte",
+ "lecons": [
+  {
+   "titre": "Le bulletin de salaire est une carte, pas un seul nombre",
+   "accroche": "Le virement reçu ne raconte pas toute la paie.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Un document qui explique",
+     "texte": "La fiche de paie, ou bulletin de salaire, détaille la rémunération et les retenues. Comme un ticket détaillé, elle aide à comprendre le passage du salaire annoncé au montant payé.",
+     "schema": ""
+    },
+    {
+     "titre": "Commencer par les repères",
+     "texte": "Vérifie l’identité de l’employeur et du salarié, la période et les éléments de travail indiqués. Deux bulletins ne se comparent correctement qu’en tenant compte de leur contexte.",
+     "schema": ""
+    },
+    {
+     "titre": "Un mois peut différer",
+     "texte": "Une prime, une absence ou des heures supplémentaires peuvent modifier la paie. Une variation n’est pas automatiquement une erreur ; il faut chercher la ligne qui l’explique.",
+     "schema": "Deux bulletins simplifiés côte à côte ; lignes communes grises, prime supplémentaire bleue sur le second. Flèche de la prime vers différence de montant."
+    },
+    {
+     "titre": "Un document à garder",
+     "texte": "En France, il est recommandé de conserver les bulletins de salaire sans limite de durée. Ils peuvent servir à vérifier des droits ou un parcours ; garde-les dans un espace protégé.",
+     "schema": "Bulletin vers dossier sécurisé ; calendrier sans date de destruction automatique. Aucun document réel ni donnée personnelle dans le dessin."
+    }
+   ],
+   "dans_ta_vie": "Tu peux commencer une lecture par les bons repères au lieu de comparer seulement deux virements.",
+   "securite": "Les bulletins et montants des exercices sont entièrement fictifs. N’envoie pas de fiche de paie, avis d’impôt ou identifiant fiscal à un inconnu. Ce parcours explique les mécanismes français sans calculer tes droits, ton salaire ou tes impôts personnels.",
+   "defi": "Pendant quatre minutes, dessine un bulletin fictif avec identité inventée, période, rémunération et retenues. Ajoute une prime au deuxième mois et repère la ligne qui explique la différence, sans utiliser de document réel.",
+   "quiz": [
+    {
+     "q": "Que détaille un bulletin de salaire ?",
+     "choix": [
+      "Seulement le solde du compte bancaire",
+      "La rémunération et les retenues",
+      "Toutes les dépenses du salarié"
+     ],
+     "rep": "La rémunération et les retenues",
+     "expl": "Il explique les éléments de la paie."
+    },
+    {
+     "q": "Une différence entre deux mois prouve-t-elle une erreur ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, si le montant baisse",
+      "Non, une prime ou une absence peut l’expliquer"
+     ],
+     "rep": "Non, une prime ou une absence peut l’expliquer",
+     "expl": "Il faut examiner les éléments de la période."
+    },
+    {
+     "q": "Quelle conservation est recommandée pour les bulletins en France ?",
+     "choix": [
+      "Sans limite de durée",
+      "Seulement jusqu’au prochain mois",
+      "Uniquement une semaine"
+     ],
+     "rep": "Sans limite de durée",
+     "expl": "Ils peuvent être utiles longtemps pour vérifier des droits."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-11-01"
+  },
+  {
+   "titre": "Brut : le départ du calcul",
+   "accroche": "Le salaire brut n’est ni le virement final ni tout le coût employeur.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Le salaire de base",
+     "texte": "Le salaire de base correspond à la rémunération prévue pour le travail de référence. Le contrat et la durée travaillée, notamment à temps partiel, demandent une lecture adaptée.",
+     "schema": ""
+    },
+    {
+     "titre": "Les éléments qui s’ajoutent",
+     "texte": "Primes, heures supplémentaires ou avantages en nature peuvent intervenir. Un avantage en nature est, par exemple, un bien ou service fourni pour un usage personnel selon des règles précises.",
+     "schema": ""
+    },
+    {
+     "titre": "Le brut du bulletin",
+     "texte": "Le brut rassemble les éléments de rémunération concernés avant les retenues salariales. Exemple simplifié : 1 900 € de base plus 100 € de prime donnent 2 000 € brut.",
+     "schema": "Deux blocs bleus, 1 900 € base et 100 € prime, se réunissent en 2 000 € brut. Étiquette exemple fictif sans autres éléments."
+    },
+    {
+     "titre": "Pas une conversion universelle",
+     "texte": "On ne passe pas toujours du brut au net avec le même pourcentage. Statut, rémunération et retenues peuvent différer ; une estimation générale ne remplace pas les lignes du bulletin.",
+     "schema": "Deux chemins partent d’un même brut vers des retenues différentes selon situation ; aucune formule fixe du type moins un pourcentage unique."
+    }
+   ],
+   "dans_ta_vie": "Tu peux distinguer une rémunération brute annoncée du montant qui pourra réellement être versé.",
+   "securite": "Les bulletins et montants des exercices sont entièrement fictifs. N’envoie pas de fiche de paie, avis d’impôt ou identifiant fiscal à un inconnu. Ce parcours explique les mécanismes français sans calculer tes droits, ton salaire ou tes impôts personnels.",
+   "defi": "Sur papier pendant quatre minutes, compose un brut fictif avec une base et une prime. Explique ensuite pourquoi ce total ne suffit pas à calculer un net réel sans connaître les autres lignes.",
+   "quiz": [
+    {
+     "q": "1 900 € de base plus 100 € de prime donnent quel brut fictif ?",
+     "choix": [
+      "1 800 €",
+      "100 €",
+      "2 000 €"
+     ],
+     "rep": "2 000 €",
+     "expl": "Les deux éléments s’additionnent dans cet exemple."
+    },
+    {
+     "q": "Un avantage en nature est-il nécessairement un virement ?",
+     "choix": [
+      "Non, il peut être un bien ou un service",
+      "Oui, toujours",
+      "Oui, sous forme de prime uniquement"
+     ],
+     "rep": "Non, il peut être un bien ou un service",
+     "expl": "Sa nature ne se limite pas à une somme versée."
+    },
+    {
+     "q": "Un même pourcentage brut-net convient-il à tous ?",
+     "choix": [
+      "Oui, pour tous les emplois",
+      "Non",
+      "Oui, quels que soient les éléments du bulletin"
+     ],
+     "rep": "Non",
+     "expl": "Les règles et retenues varient selon les situations."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-11-02"
+  },
+  {
+   "titre": "Cotisations : deux colonnes, un financement collectif",
+   "accroche": "Une retenue n’est pas une cagnotte personnelle cachée.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "La part salariale",
+     "texte": "Des cotisations et contributions sociales sont retenues sur la rémunération. Elles participent au financement de la protection sociale, selon leurs règles : santé, retraite et autres risques.",
+     "schema": ""
+    },
+    {
+     "titre": "La part employeur",
+     "texte": "L’employeur verse aussi des cotisations à sa charge. Elles ne sont pas toutes prises une seconde fois sur le brut du salarié ; les colonnes ont des rôles différents.",
+     "schema": "Bulletin en deux colonnes : part salarié orange, part employeur bleue. Seule la première rejoint la soustraction du brut pour le calcul simplifié du net."
+    },
+    {
+     "titre": "Un système collectif",
+     "texte": "La protection sociale organise des financements et des droits selon des règles. Une ligne retraite ne signifie pas que cette somme exacte attend sur un compte individuel disponible.",
+     "schema": ""
+    },
+    {
+     "titre": "Une première soustraction",
+     "texte": "Exemple fictif sans autres éléments : 2 000 € brut moins 450 € de retenues salariales donnent 1 550 € avant impôt sur le revenu. Le vrai bulletin peut comporter d’autres ajustements.",
+     "schema": "Barre de 2 000 € séparée en 450 € retenues et 1 550 € restants. Cotisations employeur affichées à côté, sans double soustraction."
+    }
+   ],
+   "dans_ta_vie": "Tu peux lire les colonnes sans déduire deux fois les mêmes sommes.",
+   "securite": "Les bulletins et montants des exercices sont entièrement fictifs. N’envoie pas de fiche de paie, avis d’impôt ou identifiant fiscal à un inconnu. Ce parcours explique les mécanismes français sans calculer tes droits, ton salaire ou tes impôts personnels.",
+   "defi": "Pendant quatre minutes, trace deux colonnes de cotisations fictives. Reproduis le calcul 2 000 − 450 et indique pourquoi la colonne employeur ne doit pas être soustraite une seconde fois dans cet exemple.",
+   "quiz": [
+    {
+     "q": "Quelle colonne est retenue sur la rémunération du salarié ?",
+     "choix": [
+      "La part salariale",
+      "Toute la part employeur une seconde fois",
+      "Les deux colonnes sans distinction"
+     ],
+     "rep": "La part salariale",
+     "expl": "Les deux parts ne jouent pas le même rôle dans le bulletin."
+    },
+    {
+     "q": "2 000 € moins 450 € donnent combien ?",
+     "choix": [
+      "2 450 €",
+      "1 550 €",
+      "450 €"
+     ],
+     "rep": "1 550 €",
+     "expl": "C’est le résultat du calcul simplifié décrit."
+    },
+    {
+     "q": "Une cotisation retraite correspond-elle à une somme librement retirable sur un compte personnel ?",
+     "choix": [
+      "Oui, à tout moment",
+      "Oui, dès le mois suivant",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Elle participe à un système de droits et de financement collectif."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-11-03"
+  },
+  {
+   "titre": "Les trois nets ne répondent pas à la même question",
+   "accroche": "Un même bulletin peut afficher plusieurs montants justes mais différents.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Le net à payer",
+     "texte": "Le net à payer avant impôt est ce qui serait versé sans prélèvement d’impôt sur le revenu. Le net payé est ce qui est finalement versé, après les retenues et ajustements du bulletin.",
+     "schema": ""
+    },
+    {
+     "titre": "Le net imposable",
+     "texte": "Le net imposable sert de référence fiscale pour le salaire. Il peut être supérieur au net à payer avant impôt : certains prélèvements sociaux ne sont pas déduits fiscalement et certains éléments sont réintégrés.",
+     "schema": ""
+    },
+    {
+     "titre": "Le montant net social",
+     "texte": "Le montant net social est calculé selon ses propres règles après les prélèvements sociaux obligatoires. Il sert notamment aux démarches pour certaines prestations, comme la prime d’activité ; il ne remplace pas le net imposable.",
+     "schema": ""
+    },
+    {
+     "titre": "Trois étiquettes à garder",
+     "texte": "Avant de recopier un montant, lis le libellé demandé. Comme trois mesures d’un même objet, net payé, net imposable et net social servent à des usages différents.",
+     "schema": "Trois encadrés de même taille : net payé vers banque, net imposable vers fiscalité, net social vers prestations concernées. Aucune flèche d’égalité automatique."
+    }
+   ],
+   "dans_ta_vie": "Tu peux éviter de recopier un montant simplement parce qu’il porte le mot net.",
+   "securite": "Les bulletins et montants des exercices sont entièrement fictifs. N’envoie pas de fiche de paie, avis d’impôt ou identifiant fiscal à un inconnu. Ce parcours explique les mécanismes français sans calculer tes droits, ton salaire ou tes impôts personnels. Pour une démarche réelle, suis le libellé et les indications de l’organisme concerné. Ne remplace pas une valeur préremplie par un autre net au hasard.",
+   "defi": "Pendant quatre minutes, crée trois étiquettes de nets et relie-les à banque, fiscalité et prestations concernées. Écris une question à poser si un formulaire fictif ne précise pas clairement le montant attendu.",
+   "quiz": [
+    {
+     "q": "Quel net sert de référence fiscale au salaire ?",
+     "choix": [
+      "Toujours le seul virement bancaire",
+      "Le net imposable",
+      "Le plafond de carte"
+     ],
+     "rep": "Le net imposable",
+     "expl": "Les différents nets ne sont pas interchangeables."
+    },
+    {
+     "q": "Le net social remplace-t-il le net imposable ?",
+     "choix": [
+      "Oui, sur tous les formulaires",
+      "Oui, depuis son apparition",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Chaque montant a une fonction distincte."
+    },
+    {
+     "q": "Avant de recopier une somme, que faut-il lire ?",
+     "choix": [
+      "Le libellé demandé",
+      "Seulement le plus grand montant",
+      "Uniquement le mot net"
+     ],
+     "rep": "Le libellé demandé",
+     "expl": "Le contexte de la démarche détermine la valeur pertinente."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-11-04"
+  },
+  {
+   "titre": "L’impôt est prélevé pendant l’année",
+   "accroche": "La retenue sur salaire est un mode de paiement, pas un deuxième salaire brut.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Le prélèvement à la source",
+     "texte": "L’employeur retient une somme d’impôt sur le revenu et la reverse à l’administration. Il joue le rôle de collecteur ; le calcul fiscal ne dépend pas simplement de son choix personnel.",
+     "schema": ""
+    },
+    {
+     "titre": "La bonne base de calcul",
+     "texte": "Pour le salaire concerné, le taux de prélèvement s’applique au net imposable. Ce taux ne se lit pas automatiquement comme le taux de la tranche fiscale la plus élevée.",
+     "schema": ""
+    },
+    {
+     "titre": "Un calcul fictif",
+     "texte": "Supposons 1 600 € de net imposable et un taux de 5 %. La retenue est 80 €. Avec 1 550 € à payer avant impôt, on obtient ici 1 470 € versés, sans autre ajustement.",
+     "schema": "Deux lignes séparées : 1 600 × 5 % = 80 € d’impôt ; 1 550 − 80 = 1 470 € versés. Couleurs distinctes pour base fiscale et montant payable."
+    },
+    {
+     "titre": "Un taux peut évoluer",
+     "texte": "Revenus et situation fiscale peuvent changer. Une modification éventuelle se gère dans le cadre officiel des impôts ; ne change pas un taux dans un exercice en prétendant déterminer ton impôt réel.",
+     "schema": "Calendrier de l’année avec taux susceptible d’être mis à jour ; flèche vers service officiel, sans bouton promesse de baisse."
+    }
+   ],
+   "dans_ta_vie": "Tu peux comprendre la retenue visible sur la paie et son lien avec le montant versé.",
+   "securite": "Les bulletins et montants des exercices sont entièrement fictifs. N’envoie pas de fiche de paie, avis d’impôt ou identifiant fiscal à un inconnu. Ce parcours explique les mécanismes français sans calculer tes droits, ton salaire ou tes impôts personnels.",
+   "defi": "Sur papier pendant quatre minutes, refais les deux calculs fictifs : 5 % de 1 600 €, puis 1 550 € moins cette retenue. Entoure la base fiscale pour ne pas la confondre avec le net à payer avant impôt.",
+   "quiz": [
+    {
+     "q": "Quel est le rôle de l’employeur pour cette retenue ?",
+     "choix": [
+      "Garder la somme comme bénéfice",
+      "Choisir librement un impôt pour chaque salarié",
+      "Collecter puis reverser l’impôt"
+     ],
+     "rep": "Collecter puis reverser l’impôt",
+     "expl": "Il intervient dans le paiement à l’administration."
+    },
+    {
+     "q": "Combien font 5 % de 1 600 € ?",
+     "choix": [
+      "80 €",
+      "5 €",
+      "160 €"
+     ],
+     "rep": "80 €",
+     "expl": "1 600 multiplié par 5 puis divisé par 100 donne 80."
+    },
+    {
+     "q": "Dans l’exemple, quel montant est versé après 80 € retenus sur 1 550 € ?",
+     "choix": [
+      "1 520 €",
+      "1 470 €",
+      "1 600 €"
+     ],
+     "rep": "1 470 €",
+     "expl": "Le net payable avant impôt et la base fiscale sont distincts."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-11-05"
+  },
+  {
+   "titre": "Pourquoi déclarer si l’impôt est déjà prélevé ?",
+   "accroche": "Les paiements de l’année sont rapprochés d’un calcul annuel.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Le bilan annuel",
+     "texte": "La déclaration permet d’établir le bilan des revenus et de la situation du foyer pour l’année concernée. Le prélèvement à la source n’a pas supprimé cette vérification annuelle.",
+     "schema": ""
+    },
+    {
+     "titre": "Prérempli ne veut pas dire infaillible",
+     "texte": "Des montants peuvent être déjà renseignés. Ils doivent être vérifiés avec les justificatifs et les consignes officielles ; une information manquante ne disparaît pas parce qu’elle n’était pas préremplie.",
+     "schema": ""
+    },
+    {
+     "titre": "Comparer dû et déjà payé",
+     "texte": "Exemple fictif : impôt final 900 €, prélèvements déjà payés 800 €. Le reste est 100 €, pas 900 € à payer une deuxième fois.",
+     "schema": "Balance de bilan : impôt final 900 €, moins paiements 800 €, reste 100 €. Les paiements déjà effectués sont conservés dans le calcul."
+    },
+    {
+     "titre": "Un solde dans les deux sens",
+     "texte": "Si le montant prélevé dépasse l’impôt final, un remboursement peut intervenir selon le bilan. Si les montants coïncident, rien ne reste à payer à ce titre.",
+     "schema": "Trois issues du bilan : reste à payer, équilibre, remboursement. Flèches depuis comparaison des deux montants, sans résultat garanti."
+    }
+   ],
+   "dans_ta_vie": "Tu peux comprendre qu’une régularisation compare l’impôt final à ce qui a déjà été payé.",
+   "securite": "Les bulletins et montants des exercices sont entièrement fictifs. N’envoie pas de fiche de paie, avis d’impôt ou identifiant fiscal à un inconnu. Ce parcours explique les mécanismes français sans calculer tes droits, ton salaire ou tes impôts personnels.",
+   "defi": "Pendant quatre minutes, dessine deux bilans fictifs : 900 € dus et 800 € payés, puis 900 € dus et 1 000 € payés. Calcule le sens du solde sans ouvrir de déclaration réelle.",
+   "quiz": [
+    {
+     "q": "Le prélèvement à la source supprime-t-il toute vérification annuelle ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, pour tous les revenus"
+     ],
+     "rep": "Non",
+     "expl": "Le bilan annuel reste nécessaire selon le cadre applicable."
+    },
+    {
+     "q": "900 € dus et 800 € déjà payés laissent quel reste ?",
+     "choix": [
+      "900 € à payer de nouveau",
+      "100 € à payer",
+      "800 € à rembourser"
+     ],
+     "rep": "100 € à payer",
+     "expl": "On déduit ce qui a déjà été payé."
+    },
+    {
+     "q": "Un montant prérempli est-il forcément exact et complet ?",
+     "choix": [
+      "Oui, sans vérification",
+      "Oui, si le document paraît officiel",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Les informations doivent être contrôlées avec les éléments pertinents."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-11-06"
+  },
+  {
+   "titre": "Les tranches sont des étages, pas un taux sur tout",
+   "accroche": "Entrer dans une tranche supérieure ne repeint pas les étages du dessous.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Le principe progressif",
+     "texte": "L’impôt sur le revenu utilise un barème par tranches. Chaque partie du revenu concernée par une tranche suit son taux ; le taux le plus élevé ne s’applique pas automatiquement à tout.",
+     "schema": ""
+    },
+    {
+     "titre": "Un barème inventé pour comprendre",
+     "texte": "Imaginons, hors barème français réel, 0 % sur les premiers 1 000 € et 10 % sur les 1 000 € suivants. Pour 2 000 €, le calcul donne 100 € d’impôt.",
+     "schema": "Escalier à deux marches : 1 000 € à 0 %, puis 1 000 € à 10 %. Totaux 0 + 100 = 100 ; grand bandeau barème fictif."
+    },
+    {
+     "titre": "Marginal et moyen",
+     "texte": "Dans cet exemple fictif, le taux marginal, celui de la dernière tranche atteinte, vaut 10 %. Le taux moyen vaut 100 ÷ 2 000, soit 5 %. Les deux ne mesurent pas la même chose.",
+     "schema": ""
+    },
+    {
+     "titre": "Le foyer compte aussi",
+     "texte": "En France, le foyer fiscal et son nombre de parts interviennent dans le calcul : c’est le quotient familial. Déductions, réductions et autres règles peuvent encore agir ; l’escalier seul ne calcule pas un impôt personnel.",
+     "schema": "Revenus du foyer vers nombre de parts puis barème, avant autres règles. Aucune équivalence entre une personne dessinée et un montant automatique d’impôt."
+    }
+   ],
+   "dans_ta_vie": "Tu peux comprendre une tranche sans croire que son taux s’applique à tous les euros.",
+   "securite": "Les bulletins et montants des exercices sont entièrement fictifs. N’envoie pas de fiche de paie, avis d’impôt ou identifiant fiscal à un inconnu. Ce parcours explique les mécanismes français sans calculer tes droits, ton salaire ou tes impôts personnels. Le petit barème de l’exercice est entièrement inventé. Les seuils et règles français dépendent de l’année ; ne l’utilise jamais pour une déclaration ou une décision réelle.",
+   "defi": "Pendant quatre minutes, redessine les deux étages du barème fictif et calcule leur total. Explique ensuite à un proche pourquoi 10 % de tous les 2 000 € serait un autre calcul, incorrect dans ce scénario.",
+   "quiz": [
+    {
+     "q": "Quel impôt donne le barème fictif pour 2 000 € ?",
+     "choix": [
+      "200 €",
+      "100 €",
+      "1 000 €"
+     ],
+     "rep": "100 €",
+     "expl": "Seuls les deuxièmes 1 000 € sont taxés à 10 %."
+    },
+    {
+     "q": "Quel taux moyen correspond à 100 € sur 2 000 € ?",
+     "choix": [
+      "10 %",
+      "50 %",
+      "5 %"
+     ],
+     "rep": "5 %",
+     "expl": "100 divisé par 2 000 donne 0,05, soit 5 %."
+    },
+    {
+     "q": "Le taux marginal s’applique-t-il automatiquement à tout le revenu ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, après chaque augmentation"
+     ],
+     "rep": "Non",
+     "expl": "Le barème concerne des portions successives du revenu."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-11-07"
+  },
+  {
+   "titre": "Les impôts ne vivent pas tous sur la fiche de paie",
+   "accroche": "On peut payer une taxe sans voir de retenue sur son salaire.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Plusieurs formes de prélèvements",
+     "texte": "L’impôt sur le revenu porte sur des revenus. D’autres impôts concernent notamment consommation ou propriété selon les règles. Ne pas payer d’impôt sur le revenu ne signifie donc pas ne payer aucune taxe.",
+     "schema": ""
+    },
+    {
+     "titre": "La TVA dans le prix",
+     "texte": "La taxe sur la valeur ajoutée, ou TVA, est généralement comprise dans le prix payé au consommateur. TTC signifie toutes taxes comprises ; HT signifie hors taxes.",
+     "schema": ""
+    },
+    {
+     "titre": "Un calcul de TVA",
+     "texte": "Pour un prix de 100 € HT soumis à 20 % de TVA, la taxe vaut 20 € et le total 120 € TTC. Les 20 % se calculent ici sur le prix HT.",
+     "schema": "Barre bleue de 100 € HT plus segment orange de 20 € TVA ; accolade totale 120 € TTC. Base HT surlignée avant le calcul."
+    },
+    {
+     "titre": "Le taux dépend du cas",
+     "texte": "20 % est le taux normal en métropole, mais certains produits, services ou territoires relèvent d’autres taux ou règles. Pour une question réelle, vérifie le cadre officiel de l’année et du cas concerné.",
+     "schema": ""
+    }
+   ],
+   "dans_ta_vie": "Tu peux reconnaître la différence entre une retenue sur salaire et une taxe comprise dans un achat.",
+   "securite": "Les bulletins et montants des exercices sont entièrement fictifs. N’envoie pas de fiche de paie, avis d’impôt ou identifiant fiscal à un inconnu. Ce parcours explique les mécanismes français sans calculer tes droits, ton salaire ou tes impôts personnels.",
+   "defi": "Pendant quatre minutes, dessine un prix fictif de 100 € HT auquel s’ajoutent 20 € de taxe. Sépare ce ticket du bulletin de paie fictif et indique pourquoi ce sont deux mécanismes différents.",
+   "quiz": [
+    {
+     "q": "TTC signifie quoi ?",
+     "choix": [
+      "Total du travail cotisé",
+      "Taux toujours constant",
+      "Toutes taxes comprises"
+     ],
+     "rep": "Toutes taxes comprises",
+     "expl": "Le prix TTC inclut les taxes concernées."
+    },
+    {
+     "q": "100 € HT avec 20 % de TVA donnent quel TTC ?",
+     "choix": [
+      "120 €",
+      "100 €",
+      "80 €"
+     ],
+     "rep": "120 €",
+     "expl": "20 % de 100 € représentent 20 € à ajouter."
+    },
+    {
+     "q": "Ne pas payer d’impôt sur le revenu signifie-t-il ne payer aucune taxe ?",
+     "choix": [
+      "Oui, pour tout achat",
+      "Non",
+      "Oui, dans toute la France"
+     ],
+     "rep": "Non",
+     "expl": "D’autres prélèvements, comme la TVA, peuvent s’appliquer."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-11-08"
+  }
+ ]
+}

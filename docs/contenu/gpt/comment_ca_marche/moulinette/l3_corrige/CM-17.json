@@ -1,0 +1,727 @@
+{
+ "id": "CM-17",
+ "titre": "Pourquoi l'ampoule s'allume",
+ "public": "enfant",
+ "lecons": [
+  {
+   "titre": "Le secret du chemin fermé",
+   "accroche": "Pourquoi une lampe reste-t-elle éteinte quand un seul petit passage manque ?",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Une lampe a besoin d’énergie",
+     "texte": "Une lampe ne fabrique pas son énergie. Elle reçoit de l’énergie électrique et en transforme une partie en lumière, comme un moulin reçoit l’énergie de l’eau.",
+     "schema": "Lampe au centre ; flèche orange entrante nommée énergie électrique ; flèches sortantes jaune lumière et rouge chaleur. Animer les flèches, sans dessiner de liquide dans le fil."
+    },
+    {
+     "titre": "Une boucle complète",
+     "texte": "Dans une lampe de poche, la pile, les fils et la lampe forment un circuit. Pour que la lampe marche, le courant doit pouvoir faire tout le tour et revenir à la pile.",
+     "schema": "Vue simplifiée d’une lampe de poche fermée, puis dessin séparé de sa boucle interne : pile en bas, lampe en haut. Surligner tout le trajet en vert, sans montrer de montage pratique."
+    },
+    {
+     "titre": "Une coupure suffit",
+     "texte": "Imagine une piste circulaire avec un pont levé. Le passage est interrompu. Dans notre circuit simple, une coupure empêche le courant de circuler dans toute la boucle.",
+     "schema": "Deux circuits théoriques identiques côte à côte ; boucle continue à gauche, ouverture visible à droite. Lampe jaune à gauche, grise à droite ; animation arrêtée sur tout le circuit ouvert."
+    },
+    {
+     "titre": "Deux côtés pour passer",
+     "texte": "Une pile possède deux bornes, ses deux points de connexion. La lampe possède aussi deux contacts. Un seul fil reliant une borne à un contact ne forme pas une boucle complète.",
+     "schema": "Pile schématique avec deux bornes clairement séparées, lampe avec deux contacts. Comparer un trajet incomplet et un trajet théorique complet ; légende dessin uniquement, sans matériel réel."
+    },
+    {
+     "titre": "À toi de repérer",
+     "texte": "Sur un dessin, suis la boucle avec ton regard. Peux-tu revenir au départ sans traverser de trou ? Ce petit jeu aide à comprendre pourquoi notre lampe théorique s’allume ou reste éteinte.",
+     "schema": "Trois boucles dessinées : complète, coupée, complète avec interrupteur ouvert. Un point de lecture suit chaque trajet ; révéler ensuite une coche ou une croix, accompagnée de mots."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends qu’un appareil a besoin d’un circuit adapté, pas simplement d’un fil posé près de lui.",
+   "securite": "Ici, tu observes des dessins. Ne touche jamais aux prises, aux fils ou aux appareils ouverts. Les branchements et réparations sont réservés aux adultes compétents.",
+   "defi": "Pendant environ trois minutes, dessine deux pistes imaginaires : une fermée et une interrompue. Explique à quelqu’un laquelle représente notre circuit qui fonctionne. N’utilise aucun matériel électrique.",
+   "quiz": [
+    {
+     "q": "Dans notre circuit simple, que faut-il pour que le courant circule ?",
+     "choix": [
+      "Un seul fil sans retour",
+      "Une boucle complète",
+      "Une lampe placée près de la pile"
+     ],
+     "rep": "Une boucle complète",
+     "expl": "Le trajet doit être complet."
+    },
+    {
+     "q": "Une coupure apparaît dans la boucle. Que se passe-t-il ?",
+     "choix": [
+      "Le courant continue jusqu’à la coupure seulement",
+      "La lampe devient plus brillante",
+      "Le courant cesse de circuler"
+     ],
+     "rep": "Le courant cesse de circuler",
+     "expl": "Le circuit simple est interrompu partout."
+    },
+    {
+     "q": "La lampe fabrique-t-elle toute seule son énergie ?",
+     "choix": [
+      "Non, elle en reçoit",
+      "Oui, dès qu’elle est transparente",
+      "Oui, grâce à son verre"
+     ],
+     "rep": "Non, elle en reçoit",
+     "expl": "La lampe transforme l’énergie reçue."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-17-01"
+  },
+  {
+   "titre": "La pile n’est pas un petit réservoir de lumière",
+   "accroche": "Que cache la pile quand aucun rayon lumineux n’en sort ?",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Une réserve chimique",
+     "texte": "Une pile contient des matières capables de réagir ensemble. Ces réactions peuvent fournir de l’énergie électrique. La réserve est chimique : elle ne contient pas de lumière enfermée.",
+     "schema": "Pile représentée comme une boîte abstraite fermée ; à l’intérieur symbolique, deux groupes de formes. Flèche orange vers une lampe extérieure. Mention schéma explicatif, ne pas ouvrir."
+    },
+    {
+     "titre": "Une mise en mouvement",
+     "texte": "Dans un fil métallique, de minuscules particules chargées sont déjà présentes. Dans une boucle adaptée, la pile permet leur mouvement organisé : c’est un courant électrique.",
+     "schema": "Zoom imaginaire dans un fil : petits points identiques déjà répartis avant l’allumage. Après fermeture symbolique, leur mouvement devient coordonné ; conserver les mêmes points."
+    },
+    {
+     "titre": "De l’énergie, pas des billes mangées",
+     "texte": "La lampe reçoit de l’énergie, mais elle ne mange pas les particules du circuit. Pense à une chaîne qui entraîne une roue : les maillons continuent leur chemin.",
+     "schema": "Chaîne en boucle entraînant une roue à gauche ; circuit théorique à droite. Même nombre de points avant et après la lampe ; flèche orange d’énergie vers la lumière."
+    },
+    {
+     "titre": "La pile s’use",
+     "texte": "Quand les réactions utiles deviennent insuffisantes, la pile alimente moins bien l’appareil. Dire pile vide est une image : son intérieur n’a pas disparu.",
+     "schema": "Deux piles fermées de même taille : neuve et usée. Indicateur d’énergie disponible plus bas sur la seconde ; ne jamais représenter une pile usée physiquement creuse."
+    },
+    {
+     "titre": "Rechargeable ou non",
+     "texte": "Une batterie rechargeable peut retrouver une réserve d’énergie grâce à un chargeur adapté. Une pile non rechargeable n’est pas faite pour cela. Les deux ne se traitent pas de la même manière.",
+     "schema": "Deux objets abstraits : pile avec symbole non rechargeable et batterie avec boucle de recharge. Chargeur dessiné uniquement près de la batterie, tenu par une main adulte."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi un jouet peut ralentir sans que ses pièces aient changé de forme.",
+   "securite": "Ne manipule, n’ouvre et ne recharge jamais une pile toi-même. Une pile bouton peut provoquer un accident très grave si elle est avalée : préviens immédiatement un adulte.",
+   "defi": "Pendant trois minutes, explique avec un dessin la différence entre une réserve d’énergie et une réserve de lumière. Laisse toutes les piles dans leurs appareils.",
+   "quiz": [
+    {
+     "q": "Quelle réserve fournit l’énergie d’une pile ?",
+     "choix": [
+      "Une poche de lumière",
+      "Un stock de verre",
+      "Une réserve chimique"
+     ],
+     "rep": "Une réserve chimique",
+     "expl": "Des réactions chimiques peuvent fournir de l’énergie électrique."
+    },
+    {
+     "q": "La lampe fait-elle disparaître les petites particules du fil ?",
+     "choix": [
+      "Non",
+      "Oui, elle les mange",
+      "Oui, elles se changent toutes en lumière"
+     ],
+     "rep": "Non",
+     "expl": "Les particules continuent leur tour ; la lampe reçoit seulement de l’énergie."
+    },
+    {
+     "q": "Peut-on recharger n’importe quelle pile ?",
+     "choix": [
+      "Oui, toutes de la même façon",
+      "Non, seulement un dispositif prévu pour cela",
+      "Oui, si elle est très petite"
+     ],
+     "rep": "Non, seulement un dispositif prévu pour cela",
+     "expl": "Il faut respecter le type de dispositif et son équipement adapté."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-17-02"
+  },
+  {
+   "titre": "Pourquoi les fils portent-ils un manteau ?",
+   "accroche": "Le métal et son enveloppe n’ont pas du tout le même travail.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Un passage facile",
+     "texte": "Un conducteur laisse facilement circuler le courant dans les conditions prévues. Les métaux sont souvent de bons conducteurs. Dans un fil, le cœur métallique forme le passage utile.",
+     "schema": "Gros fil en coupe : cœur couleur cuivre, enveloppe bleue. Étiquette conducteur sur le cœur ; petits points mobiles uniquement dans le métal. Dessin abstrait, sans geste de découpe."
+    },
+    {
+     "titre": "Un passage difficile",
+     "texte": "Un isolant s’oppose fortement au passage du courant dans les conditions habituelles. Certains plastiques servent donc d’enveloppe. Ce manteau aide à empêcher des contacts dangereux.",
+     "schema": "Même coupe ; enveloppe bleue épaisse nommée isolant. Des flèches latérales grises s’arrêtent devant elle ; éviter toute main touchant un conducteur."
+    },
+    {
+     "titre": "L’apparence ne suffit pas",
+     "texte": "Une matière peut laisser passer le courant plus facilement si elle est mouillée ou abîmée. On ne vérifie jamais un fil avec son corps. Une enveloppe abîmée doit être signalée à un adulte.",
+     "schema": "Trois vignettes d’un câble : intact, enveloppe abîmée, mouillé. Un enfant reste en retrait dans chaque vignette ; bulle appeler un adulte sur les deux dernières."
+    },
+    {
+     "titre": "Un vêtement n’est pas une protection",
+     "texte": "Des gants ordinaires ou des chaussures ne donnent pas le droit de toucher un fil dangereux. Les protections professionnelles sont spéciales, contrôlées et utilisées par des personnes formées.",
+     "schema": "Gants ordinaires et chaussures à gauche, accompagnés du texte pas une protection électrique. À droite, professionnel équipé ; aucun équipement détaillé permettant une imitation."
+    },
+    {
+     "titre": "Deux fonctions complémentaires",
+     "texte": "Le cœur du fil aide le courant à suivre son trajet. L’enveloppe aide à séparer ce trajet du reste. Comme une route bordée de barrières, les deux fonctions sont différentes.",
+     "schema": "Route orange centrale et barrières bleues à gauche ; fil stylisé à droite. Relier route à conducteur et barrière à isolant par des traits pointillés de comparaison."
+    }
+   ],
+   "dans_ta_vie": "Tu sais pourquoi un câble abîmé n’est pas simplement un objet moins joli.",
+   "securite": "Ici, tu observes des dessins. Ne touche jamais aux prises, aux fils ou aux appareils ouverts. Les branchements et réparations sont réservés aux adultes compétents.",
+   "defi": "Dessine pendant trois minutes un fil imaginaire en coupe. Explique le rôle de ses deux parties sans toucher ni déplacer de câble réel.",
+   "quiz": [
+    {
+     "q": "Quelle partie d’un fil transporte habituellement le courant ?",
+     "choix": [
+      "Son cœur métallique",
+      "Son enveloppe plastique",
+      "L’air extérieur seulement"
+     ],
+     "rep": "Son cœur métallique",
+     "expl": "Le métal est le conducteur prévu."
+    },
+    {
+     "q": "À quoi sert principalement l’enveloppe isolante ?",
+     "choix": [
+      "À créer toute l’énergie",
+      "À limiter les contacts électriques",
+      "À fabriquer de la lumière"
+     ],
+     "rep": "À limiter les contacts électriques",
+     "expl": "Elle sépare le conducteur de l’extérieur."
+    },
+    {
+     "q": "Un fil abîmé peut-il être testé avec des gants ordinaires ?",
+     "choix": [
+      "Oui, si les gants sont épais",
+      "Oui, pendant une seconde",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Des vêtements ordinaires ne rendent pas ce geste sûr."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-17-03"
+  },
+  {
+   "titre": "L’interrupteur, le petit pont du circuit",
+   "accroche": "Comment un simple clic peut-il commander toute une lampe ?",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Un passage commandé",
+     "texte": "Dans un interrupteur simple, un contact peut réunir ou séparer deux parties du circuit. Le bouton commande ce contact, comme une commande qui lève ou baisse un petit pont.",
+     "schema": "Circuit théorique isolé de toute maison ; contact agrandi dans une bulle. Montrer deux positions du pont, ouvert puis fermé, reliées à un bouton abstrait."
+    },
+    {
+     "titre": "Fermé veut dire passant",
+     "texte": "Le mot fermé peut surprendre. Un circuit fermé offre une boucle complète. Un circuit ouvert contient une interruption. Ici, fermer permet le passage, contrairement à fermer une porte.",
+     "schema": "Pont baissé et boucle continue en vert, légende fermé. Pont levé et coupure visible en gris, légende ouvert. Faire apparaître les mots après les positions."
+    },
+    {
+     "titre": "L’énergie n’attend pas au bouton",
+     "texte": "Le courant ne s’accumule pas derrière l’interrupteur comme une file de voitures. Ouvrir notre circuit simple arrête la circulation dans la boucle entière.",
+     "schema": "Boucle avec points répartis uniformément ; ouverture du contact, puis arrêt du mouvement partout. Aucun tas de points près du bouton."
+    },
+    {
+     "titre": "Deux lampes indépendantes",
+     "texte": "Dans une maison, plusieurs chemins sont organisés par des professionnels. Une lampe peut ainsi être éteinte pendant qu’une autre reste allumée. Tout n’est pas accroché sur un seul trajet.",
+     "schema": "Vue symbolique de deux pièces, chacune avec lampe et bouton. Éteindre seulement la lampe de gauche ; ne pas représenter de câblage domestique détaillé."
+    },
+    {
+     "titre": "Éteint ne veut pas dire sans danger",
+     "texte": "Un appareil éteint peut encore être relié au réseau ou garder de l’énergie. Son bouton n’autorise jamais à l’ouvrir. Comprendre un circuit n’est pas apprendre à réparer l’appareil.",
+     "schema": "Appareil fermé avec bouton éteint ; prise dessinée à distance et cadenas sur le boîtier. Enfant observateur ; légende appareil fermé, intervention professionnelle."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends les mots circuit ouvert et circuit fermé, sans les confondre avec une porte.",
+   "securite": "Ici, tu observes des dessins. Ne touche jamais aux prises, aux fils ou aux appareils ouverts. Les branchements et réparations sont réservés aux adultes compétents.",
+   "defi": "Pendant trois minutes, joue sur papier le pont ouvert et le pont fermé. Un proche annonce une position ; tu indiques si notre lampe théorique peut s’allumer.",
+   "quiz": [
+    {
+     "q": "Dans notre circuit simple, fermé signifie quoi ?",
+     "choix": [
+      "Le passage est coupé",
+      "Le trajet est complet",
+      "La pile est absente"
+     ],
+     "rep": "Le trajet est complet",
+     "expl": "Fermer le contact complète la boucle."
+    },
+    {
+     "q": "Un interrupteur fabrique-t-il l’énergie électrique ?",
+     "choix": [
+      "Oui, grâce au clic",
+      "Oui, seulement la nuit",
+      "Non, il commande un passage"
+     ],
+     "rep": "Non, il commande un passage",
+     "expl": "Il ne remplace pas une source d’énergie."
+    },
+    {
+     "q": "Un appareil éteint peut-il être ouvert par un enfant ?",
+     "choix": [
+      "Non",
+      "Oui, si son voyant est éteint",
+      "Oui, sans toucher les gros éléments"
+     ],
+     "rep": "Non",
+     "expl": "Il peut rester dangereux même éteint."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-17-04"
+  },
+  {
+   "titre": "Une ampoule peut briller de plusieurs façons",
+   "accroche": "Toutes les lampes n’utilisent pas le même secret pour éclairer.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Un fil très chaud",
+     "texte": "Dans une lampe à filament, un fil très fin chauffe beaucoup et devient lumineux. Comme un objet chauffé qui rougit, il émet de la lumière, mais aussi beaucoup de chaleur.",
+     "schema": "Ampoule ancienne dessinée uniquement en coupe explicative ; filament central passe du gris à l’orange lumineux. Rayons jaunes vers l’extérieur, nombreuses flèches rouges de chaleur."
+    },
+    {
+     "titre": "Une autre manière de briller",
+     "texte": "Une LED est une petite pièce qui émet de la lumière grâce à un matériau spécial. Elle transforme une partie de l’énergie électrique en lumière, sans faire chauffer un fil jusqu’à ce qu’il brille.",
+     "schema": "LED agrandie sous une enveloppe fermée ; bloc de matériau nommé zone lumineuse. Flèche orange entrante, rayons jaunes sortants ; aucun schéma de montage."
+    },
+    {
+     "titre": "La chaleur existe encore",
+     "texte": "Une lampe à LED peut aussi chauffer. Moins d’énergie perdue en chaleur ne veut pas dire jamais chaude. L’enveloppe et le support ne doivent pas être touchés pour vérifier.",
+     "schema": "Deux bilans symboliques à lumière comparable : filament avec grande branche rouge, LED avec plus petite branche rouge. Légende comparaison qualitative, valeurs non chiffrées."
+    },
+    {
+     "titre": "Blanc ne veut pas dire une seule couleur",
+     "texte": "Certaines lampes fabriquent une lumière blanche en combinant plusieurs couleurs ou en utilisant une couche qui transforme une partie de la lumière. Notre œil rassemble ces couleurs.",
+     "schema": "Point lumineux bleu à gauche, couche de conversion au centre, rayons bleus et jaunes vers un œil à droite. Légende exemple simplifié de LED blanche."
+    },
+    {
+     "titre": "Éclairer utilement",
+     "texte": "Une lampe efficace donne l’éclairage souhaité avec moins d’énergie. Mais il faut aussi diriger sa lumière au bon endroit, comme une lampe de lecture orientée vers la page.",
+     "schema": "Deux bureaux identiques ; à gauche lumière dispersée vers plafond, à droite lumière vers livre. Surfaces éclairées en jaune pâle ; garder les deux lampes hors de portée."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi deux lampes peuvent éclairer de façon comparable tout en utilisant des quantités d’énergie différentes.",
+   "securite": "Ne touche pas une lampe pour tester sa chaleur et ne démonte jamais son enveloppe. Le remplacement d’une ampoule est une tâche d’adulte.",
+   "defi": "Sur papier, dessine pendant trois minutes une lampe qui éclaire surtout un livre. Explique où partent sa lumière et sa chaleur.",
+   "quiz": [
+    {
+     "q": "Que se passe-t-il dans une lampe à filament ?",
+     "choix": [
+      "Le verre fabrique du courant",
+      "La lumière vient d’eau bouillante",
+      "Un fil chauffe jusqu’à devenir lumineux"
+     ],
+     "rep": "Un fil chauffe jusqu’à devenir lumineux",
+     "expl": "Le filament devient si chaud qu’il brille."
+    },
+    {
+     "q": "Une lampe à LED ne chauffe-t-elle jamais ?",
+     "choix": [
+      "Elle peut chauffer",
+      "Elle reste toujours froide",
+      "Elle absorbe toute la chaleur de la pièce"
+     ],
+     "rep": "Elle peut chauffer",
+     "expl": "Une partie de l’énergie devient encore de la chaleur."
+    },
+    {
+     "q": "Pourquoi diriger la lumière vers la page ?",
+     "choix": [
+      "Pour recharger la pile",
+      "Pour éclairer l’endroit utile",
+      "Pour arrêter tout courant"
+     ],
+     "rep": "Pour éclairer l’endroit utile",
+     "expl": "L’orientation permet un éclairage plus utile."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-17-05"
+  },
+  {
+   "titre": "Avant la prise, un grand voyage",
+   "accroche": "La prise n’est pas une source magique : elle fait partie d’un réseau.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Produire, c’est transformer",
+     "texte": "Pour produire de l’électricité, on transforme une autre forme d’énergie. L’eau en mouvement, le vent ou la lumière du Soleil peuvent être des points de départ.",
+     "schema": "Trois sources en haut : rivière, vent, Soleil. Trois flèches orange vers des installations schématiques fermées, puis pictogramme énergie électrique en bas."
+    },
+    {
+     "titre": "Une roue qui entraîne",
+     "texte": "Dans beaucoup d’installations, une turbine tourne. Cette roue entraîne une machine appelée alternateur, qui transforme de l’énergie de mouvement en énergie électrique.",
+     "schema": "Eau à gauche, roue de turbine au centre, alternateur fermé à droite. Flèches courbes pour rotation, flèche orange vers le réseau ; nommer chaque élément."
+    },
+    {
+     "titre": "Le Soleil peut faire autrement",
+     "texte": "Un panneau photovoltaïque transforme une partie de l’énergie lumineuse en énergie électrique. Il n’a pas besoin d’une turbine pour cela. Photovoltaïque signifie ici électricité obtenue grâce à la lumière.",
+     "schema": "Rayons jaunes du Soleil vers panneau bleu ; flèche orange du panneau vers pictogramme électrique. Roue absente ; ajouter légende pas de turbine dans ce panneau."
+    },
+    {
+     "titre": "Plusieurs sources, un réseau",
+     "texte": "Le réseau relie de nombreux producteurs et utilisateurs. Ce grand ensemble fonctionne comme des routes reliées, avec des équipements qui adaptent et organisent les échanges.",
+     "schema": "Carte simplifiée : plusieurs installations reliées à une grille, puis école et logements. Traits orange pour le réseau ; aucun câblage réel ni valeur de tension."
+    },
+    {
+     "titre": "On équilibre en permanence",
+     "texte": "Dans le réseau, production et consommation doivent être équilibrées presque à chaque instant. Des moyens de stockage et de réglage aident à gérer les changements, mais ils ne sont pas sans limites.",
+     "schema": "Balance : production à gauche, consommation à droite. Batterie symbolique et flèches de réglage au centre ; animer une demande supplémentaire puis un nouvel équilibre."
+    }
+   ],
+   "dans_ta_vie": "Tu vois qu’allumer une lampe fait partie d’un système bien plus grand que la pièce.",
+   "securite": "Ici, tu observes des dessins. Ne touche jamais aux prises, aux fils ou aux appareils ouverts. Les branchements et réparations sont réservés aux adultes compétents.",
+   "defi": "Pendant trois minutes, invente une carte reliant une rivière, un panneau solaire et une école. Raconte le trajet de l’énergie sans dessiner de branchement réel.",
+   "quiz": [
+    {
+     "q": "Que fait un alternateur ?",
+     "choix": [
+      "Il transforme de l’énergie de mouvement en énergie électrique",
+      "Il crée de l’énergie à partir de rien",
+      "Il transforme la lumière en eau"
+     ],
+     "rep": "Il transforme de l’énergie de mouvement en énergie électrique",
+     "expl": "Il est entraîné en rotation."
+    },
+    {
+     "q": "Un panneau photovoltaïque a-t-il besoin d’une turbine ?",
+     "choix": [
+      "Oui, dans chaque cellule",
+      "Non",
+      "Oui, mais elle est invisible"
+     ],
+     "rep": "Non",
+     "expl": "Le panneau transforme directement une partie de l’énergie lumineuse."
+    },
+    {
+     "q": "Que faut-il équilibrer dans le réseau ?",
+     "choix": [
+      "Nombre de lampes et de fenêtres",
+      "Couleurs des câbles",
+      "Production et consommation"
+     ],
+     "rep": "Production et consommation",
+     "expl": "L’équilibre doit être ajusté presque en permanence."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-17-06"
+  },
+  {
+   "titre": "Les lignes et les boîtes qui adaptent",
+   "accroche": "Pourquoi l’électricité traverse-t-elle de grands pylônes avant d’arriver près de chez nous ?",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Un transport à organiser",
+     "texte": "Transporter beaucoup d’énergie sur de longues distances demande des équipements particuliers. Les grandes lignes relient des régions. Elles ne sont jamais des lieux de jeu ou d’exploration.",
+     "schema": "Paysage vu de très loin : producteur, pylônes, ville. Trait orange continu entre zones ; enfant dessiné dans un lieu public éloigné, sans trajet vers les installations."
+    },
+    {
+     "titre": "La tension n’est pas la vitesse",
+     "texte": "La tension se mesure en volts. Elle décrit une différence électrique qui peut faire circuler du courant, un peu comme une différence de pression peut faire circuler de l’eau.",
+     "schema": "Deux réservoirs d’une comparaison hydraulique avec niveaux différents à gauche ; symbole abstrait de tension à droite. Légende comparaison limitée : aucun liquide dans un fil."
+    },
+    {
+     "titre": "Réduire certaines pertes",
+     "texte": "Pour transporter autant d’énergie pendant une même durée, une tension plus élevée permet un courant plus faible. Cela réduit certaines pertes de chaleur dans les lignes. Voilà une raison du transport à haute tension.",
+     "schema": "Deux lignes abstraites portant la même énergie utile ; intensité représentée par flèches larges puis fines, chaleur par grandes puis petites vagues rouges. Légende comparaison simplifiée."
+    },
+    {
+     "titre": "Adapter avant les usages",
+     "texte": "Des équipements appelés transformateurs changent la tension. Plusieurs étapes permettent d’adapter le transport puis la distribution. Ces installations restent fermées et réservées aux professionnels.",
+     "schema": "Grand réseau, boîte fermée nommée transformateur, réseau local puis maison. Trois étapes horizontales ; flèches orange. Aucun intérieur de boîte montré."
+    },
+    {
+     "titre": "Le danger peut traverser l’air",
+     "texte": "Près d’une ligne électrique, un courant peut parfois passer dans l’air sans contact direct. C’est pourquoi il faut rester loin des lignes, des câbles tombés et des installations.",
+     "schema": "Ligne éloignée en haut ; zone de danger symbolique hachurée dessous. Enfant et cerf-volant dans un autre espace sans ligne. Ne pas dessiner de distance autorisant l’approche."
+    }
+   ],
+   "dans_ta_vie": "Tu sais qu’une ligne ou un poste électrique ne se visite pas comme un objet ordinaire.",
+   "securite": "Reste loin des lignes, des câbles tombés et des postes électriques. Ne cherche jamais à récupérer un objet près d’eux ; préviens un adulte sans t’approcher.",
+   "defi": "Sur une carte imaginaire, choisis pendant trois minutes un lieu de jeu sans lignes ni installations électriques. Explique pourquoi tu ne t’approches jamais pour regarder de plus près.",
+   "quiz": [
+    {
+     "q": "Dans quelle unité mesure-t-on la tension ?",
+     "choix": [
+      "En secondes",
+      "En volts",
+      "En mètres"
+     ],
+     "rep": "En volts",
+     "expl": "Le volt est l’unité de tension électrique."
+    },
+    {
+     "q": "À quoi sert notamment un transformateur ?",
+     "choix": [
+      "À fabriquer le vent",
+      "À consommer tous les fils",
+      "À changer la tension"
+     ],
+     "rep": "À changer la tension",
+     "expl": "Il adapte la tension entre différentes étapes."
+    },
+    {
+     "q": "Faut-il toucher une ligne pour être en danger ?",
+     "choix": [
+      "Non, une approche peut déjà être dangereuse",
+      "Oui, toujours",
+      "Oui, sauf quand il pleut"
+     ],
+     "rep": "Non, une approche peut déjà être dangereuse",
+     "expl": "Un arc électrique peut traverser une distance dans l’air."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-17-07"
+  },
+  {
+   "titre": "Les gardiens du circuit",
+   "accroche": "Pourquoi l’installation peut-elle couper le courant toute seule ?",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Un courant trop important",
+     "texte": "Dans un conducteur, le passage du courant produit de la chaleur. Si le courant devient trop important, l’échauffement peut devenir dangereux. Les fils ne sont pas faits pour tout supporter.",
+     "schema": "Fil théorique entouré de quelques vagues rouges, puis de vagues plus nombreuses. Thermomètre symbolique sans chiffre ; ne montrer aucun essai réel."
+    },
+    {
+     "titre": "Un chemin anormal",
+     "texte": "Un court-circuit est un passage anormal qui laisse circuler le courant beaucoup trop facilement. Le courant peut devenir très important. Ce n’est pas un raccourci amusant à fabriquer.",
+     "schema": "Plan abstrait avec trajet normal à travers lampe ; seconde vignette, passage anormal signalé par bande rouge. Aucun détail de raccordement reproductible ni fil réel."
+    },
+    {
+     "titre": "Une protection contre les excès",
+     "texte": "Un disjoncteur adapté peut interrompre un courant trop important. Il aide à protéger l’installation. Une coupure signifie qu’un adulte doit comprendre la situation, pas qu’il faut recommencer sans réfléchir.",
+     "schema": "Boîte de protection fermée au centre ; ligne orange avant, grise après coupure. Lampe s’éteint ; personnage adulte reçoit une icône d’alerte."
+    },
+    {
+     "titre": "Une autre surveillance",
+     "texte": "Une protection différentielle compare des courants qui entrent et reviennent. Une différence anormale peut entraîner une coupure. Elle aide à protéger les personnes, sans autoriser aucun geste dangereux.",
+     "schema": "Boîte fermée avec deux flèches entrante et sortante ; balance les compare. Un écart fait apparaître arrêt et voyant d’alerte ; représentation sans câblage domestique."
+    },
+    {
+     "titre": "Prévenir plutôt que tester",
+     "texte": "Une protection ne rend pas un fil touchable. Si tu vois un câble abîmé ou une prise inhabituelle, tu restes à distance et tu préviens un adulte.",
+     "schema": "Enfant à gauche, câble abîmé loin à droite, adulte au centre. Flèche de parole de l’enfant vers l’adulte ; aucune flèche de déplacement vers le câble."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends que les protections servent à limiter des risques, pas à transformer l’électricité en jeu.",
+   "securite": "Ne provoque jamais de court-circuit, même avec une pile. Ne touche pas au tableau électrique et ne réarme pas une protection. Signale le problème à un adulte.",
+   "defi": "Pendant trois minutes, joue oralement le messager : décris un câble imaginaire abîmé à un adulte, sans le toucher ni tenter de le réparer.",
+   "quiz": [
+    {
+     "q": "Quel effet peut produire un courant trop important ?",
+     "choix": [
+      "Un refroidissement garanti",
+      "La disparition du métal",
+      "Un échauffement dangereux"
+     ],
+     "rep": "Un échauffement dangereux",
+     "expl": "Le courant peut provoquer trop de chaleur dans les conducteurs."
+    },
+    {
+     "q": "Une protection autorise-t-elle à toucher un fil ?",
+     "choix": [
+      "Non",
+      "Oui, si elle est récente",
+      "Oui, avec une seule main"
+     ],
+     "rep": "Non",
+     "expl": "Elle ne remplace pas les règles de sécurité."
+    },
+    {
+     "q": "Que fais-tu devant un câble abîmé ?",
+     "choix": [
+      "Je cherche le défaut avec mes doigts",
+      "Je reste à distance et préviens un adulte",
+      "Je le cache sous un tapis"
+     ],
+     "rep": "Je reste à distance et préviens un adulte",
+     "expl": "Tu évites le contact et demandes de l’aide."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-17-08"
+  },
+  {
+   "titre": "Ce que compte l’énergie",
+   "accroche": "Deux lampes allumées aussi longtemps utilisent-elles forcément la même quantité d’énergie ?",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Puissance et durée",
+     "texte": "La puissance indique à quel rythme un appareil transforme de l’énergie. La durée indique combien de temps il fonctionne. Comme un robinet et son temps d’ouverture, les deux comptent.",
+     "schema": "Deux robinets imagés de débits différents à gauche ; deux lampes à droite avec horloges. Légende comparaison du rythme et de la durée, pas d’eau dans les lampes."
+    },
+    {
+     "titre": "Une unité pour le rythme",
+     "texte": "La puissance électrique se mesure en watts. Plus de watts ne veut pas automatiquement dire plus de lumière : une partie de l’énergie peut devenir de la chaleur.",
+     "schema": "Étiquette simplifiée indiquant puissance en W ; flèche vers deux sorties lumière et chaleur. Aucun prix ni marque ; agrandir uniquement l’unité."
+    },
+    {
+     "titre": "Une unité pour la quantité",
+     "texte": "L’énergie électrique peut être comptée en wattheures. Un appareil de dix watts fonctionnant une heure utilise dix wattheures. Deux heures à cette puissance donnent vingt wattheures.",
+     "schema": "Frise de deux heures ; bloc de dix unités après la première, vingt après la seconde. Étiquettes 10 W, 1 h, 10 Wh puis 2 h, 20 Wh."
+    },
+    {
+     "titre": "Comparer correctement",
+     "texte": "Pour comparer des lampes, on regarde aussi la lumière obtenue. Une lampe efficace peut donner un éclairage comparable avec moins de watts. Le plus gros chiffre n’est donc pas toujours le meilleur repère.",
+     "schema": "Deux livres éclairés de façon comparable ; au-dessous, deux étiquettes de puissance différentes sans valeurs commerciales. Même teinte jaune sur les pages, branches de chaleur différentes."
+    },
+    {
+     "titre": "Le geste utile",
+     "texte": "Éteindre une lumière devenue inutile réduit son temps d’utilisation. Mais une lumière nécessaire pour voir un obstacle reste utile. Économiser ne veut pas dire se déplacer dans le noir.",
+     "schema": "Pièce vide éclairée puis lampe éteinte ; à côté, escalier éclairé et personne accompagnée. Coches accompagnées de mots : inutile éteint, passage sûr éclairé."
+    }
+   ],
+   "dans_ta_vie": "Tu distingues la puissance d’une lampe et l’énergie utilisée pendant sa durée de fonctionnement.",
+   "securite": "Ici, tu observes des dessins. Ne touche jamais aux prises, aux fils ou aux appareils ouverts. Les branchements et réparations sont réservés aux adultes compétents.",
+   "defi": "Pendant trois minutes, compare sur papier dix watts pendant une heure et dix watts pendant deux heures. Dessine les deux quantités ; ne manipule aucun appareil.",
+   "quiz": [
+    {
+     "q": "Quelle unité exprime une puissance ?",
+     "choix": [
+      "Le watt",
+      "Le wattheure",
+      "L’heure"
+     ],
+     "rep": "Le watt",
+     "expl": "Le watt décrit un rythme de transformation de l’énergie."
+    },
+    {
+     "q": "Dix watts pendant deux heures correspondent à combien ?",
+     "choix": [
+      "Cinq wattheures",
+      "Vingt wattheures",
+      "Dix heures"
+     ],
+     "rep": "Vingt wattheures",
+     "expl": "On multiplie la puissance par la durée."
+    },
+    {
+     "q": "Faut-il éteindre une lumière indispensable pour voir un escalier ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, si l’on court",
+      "Non, la sécurité passe d’abord"
+     ],
+     "rep": "Non, la sécurité passe d’abord",
+     "expl": "Une économie ne doit pas créer un danger."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-17-09"
+  },
+  {
+   "titre": "La petite étincelle n’est pas une prise",
+   "accroche": "Pourquoi entend-on parfois un petit clic après avoir marché sur un tapis ?",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Des charges séparées",
+     "texte": "Certains frottements peuvent déplacer des charges entre deux objets. Ils ne créent pas les charges à partir de rien. Une petite différence électrique peut alors apparaître.",
+     "schema": "Chaussure et tapis comme explication dessinée ; avant, charges équilibrées ; après, quelques signes plus et moins séparés. Garder le total des charges, sans proposer d’expérience."
+    },
+    {
+     "titre": "Une décharge très brève",
+     "texte": "Une petite décharge peut rééquilibrer ces charges, parfois avec une étincelle. Dans une situation ordinaire, ce phénomène bref est différent d’une alimentation électrique qui peut entretenir un courant.",
+     "schema": "Deux objets abstraits portant des charges différentes ; éclair très court entre eux puis disparition du déséquilibre. À côté, boucle théorique alimentée durablement, clairement séparée."
+    },
+    {
+     "titre": "La foudre est bien différente",
+     "texte": "Dans un orage, des charges se séparent à grande échelle. La foudre est une décharge extrêmement dangereuse. Une petite étincelle domestique ne donne aucune idée de sa puissance.",
+     "schema": "Petit pictogramme d’étincelle dans un cadre ; vaste nuage orageux dans un autre, éclair vers un sol vide. Grande mention échelles différentes, ne pas comparer par une mesure inventée."
+    },
+    {
+     "titre": "Ne jamais vérifier avec le corps",
+     "texte": "On ne décide pas qu’un objet est sans danger en le touchant. Une sensation électrique venant d’un appareil doit être signalée immédiatement à un adulte, sans nouvel essai.",
+     "schema": "Appareil fermé à droite, enfant en retrait à gauche ; bulle je préviens un adulte. Main barrée avant tout contact ; aucun corps traversé par une animation de courant."
+    },
+    {
+     "titre": "Le bon réflexe d’alerte",
+     "texte": "En cas d’accident électrique, ne touche ni la personne ni la source. Reste à distance, appelle un adulte et demande les secours si nécessaire. Aider commence par éviter un deuxième accident.",
+     "schema": "Enfant en zone sûre appelant un adulte ; pictogramme téléphone avec 112. Source et victime uniquement symbolisées dans une zone éloignée, sans mise en scène spectaculaire."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi tous les phénomènes électriques ne se ressemblent pas, et pourquoi tu ne les testes jamais avec ton corps.",
+   "securite": "N’essaie pas de fabriquer une étincelle. Lors d’un accident, ne touche pas la victime ni la source ; alerte un adulte et, si nécessaire, le 112 depuis un endroit sûr.",
+   "defi": "Avec un adulte, répète pendant trois minutes un appel imaginaire : lieu, danger observé, aide nécessaire. Ne compose aucun numéro réel pour t’entraîner.",
+   "quiz": [
+    {
+     "q": "Un frottement crée-t-il des charges à partir de rien ?",
+     "choix": [
+      "Oui, il fabrique tous les électrons",
+      "Non, il peut les déplacer",
+      "Oui, grâce à la chaleur seulement"
+     ],
+     "rep": "Non, il peut les déplacer",
+     "expl": "Il peut séparer des charges déjà présentes."
+    },
+    {
+     "q": "Peut-on assimiler la foudre à une petite étincelle sans danger ?",
+     "choix": [
+      "Oui, seule sa couleur change",
+      "Oui, si l’éclair est bref",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "La foudre implique des énergies et risques considérables."
+    },
+    {
+     "q": "Devant un accident électrique, quel est ton premier rôle ?",
+     "choix": [
+      "Rester en sécurité et alerter",
+      "Toucher la personne pour vérifier",
+      "Déplacer le fil avec un objet"
+     ],
+     "rep": "Rester en sécurité et alerter",
+     "expl": "Tu dois éviter de devenir une autre victime."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-17-10"
+  }
+ ]
+}
