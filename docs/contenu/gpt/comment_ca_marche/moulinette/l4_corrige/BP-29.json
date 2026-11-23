@@ -20,7 +20,7 @@
     },
     {
      "titre": "Demander ce qui est ouvert",
-     "texte": "Quels horaires sont possibles ? précise le champ de discussion. Si un point n’est pas négociable, mieux vaut l’annoncer clairement plutôt que faire semblant de proposer un choix.",
+     "texte": "« Quels horaires sont possibles ? » précise le champ de discussion. Si un point n’est pas négociable, mieux vaut l’annoncer clairement plutôt que faire semblant de proposer un choix.",
      "schema": ""
     },
     {
@@ -77,17 +77,17 @@
    "cartes": [
     {
      "titre": "La demande et sa raison",
-     "texte": "Je veux commencer tôt est une proposition. Je dois partir avant midi en explique la contrainte. Comprendre cette raison peut ouvrir d’autres horaires possibles.",
+     "texte": "« Je veux commencer tôt » est une proposition. « Je dois partir avant midi » en explique la contrainte. Comprendre cette raison peut ouvrir d’autres horaires possibles.",
      "schema": "Bulle commencer tôt à gauche ; derrière, contrainte départ avant midi ; à droite, deux horaires compatibles apparaissent."
     },
     {
      "titre": "Demander sans deviner",
-     "texte": "Qu’est-ce qui compte pour toi dans cet horaire ? invite une explication. Tu veux seulement commander attribue une intention que tu n’as pas vérifiée.",
+     "texte": "« Qu’est-ce qui compte pour toi dans cet horaire ? » invite une explication. « Tu veux seulement commander » attribue une intention que tu n’as pas vérifiée.",
      "schema": ""
     },
     {
      "titre": "Partager une raison utile",
-     "texte": "Tu peux expliquer la contrainte qui influence ton choix sans dévoiler toute ta vie. Je suis disponible jusqu’à midi peut suffire ; tu n’as pas toujours à justifier davantage.",
+     "texte": "Tu peux expliquer la contrainte qui influence ton choix sans dévoiler toute ta vie. « Je suis disponible jusqu’à midi » peut suffire ; tu n’as pas toujours à justifier davantage.",
      "schema": ""
     },
     {
@@ -101,7 +101,7 @@
    "defi": "Simulez pendant quatre minutes l’organisation d’une activité. Donnez chacun une contrainte ordinaire, puis cherchez deux solutions différentes qui en tiennent compte. Aucune explication personnelle sensible n’est nécessaire.",
    "quiz": [
     {
-     "q": "Que peut révéler la question qu’est-ce qui compte pour toi ?",
+     "q": "Que peut révéler la question « qu’est-ce qui compte pour toi ? »",
      "choix": [
       "Une intention forcément cachée",
       "Une obligation de raconter sa vie",
@@ -159,7 +159,7 @@
     },
     {
      "titre": "Ne pas inventer de concurrence",
-     "texte": "Dire j’ai une autre offre quand c’est faux fabrique une pression. Tu peux avoir une limite ferme sans ajouter une fausse alternative pour lui donner du poids.",
+     "texte": "Dire « j’ai une autre offre » quand c’est faux fabrique une pression. Tu peux avoir une limite ferme sans ajouter une fausse alternative pour lui donner du poids.",
      "schema": "Fiche préparation avec préféré, possible, impossible et autre chemin réel. Une fausse offre est barrée dans un cadre séparé."
     }
    ],
@@ -278,7 +278,7 @@
    "cartes": [
     {
      "titre": "Nommer les conditions",
-     "texte": "Je peux préparer le matériel si tu confirmes la salle avant jeudi précise une action et une condition. On s’arrangera plus tard laisse encore des points essentiels ouverts.",
+     "texte": "« Je peux préparer le matériel si tu confirmes la salle avant jeudi » précise une action et une condition. « On s’arrangera plus tard » laisse encore des points essentiels ouverts.",
      "schema": "Deux cartes reliées : confirmation de salle avant jeudi, puis préparation du matériel. Une flèche porte la condition si."
     },
     {
@@ -293,7 +293,7 @@
     },
     {
      "titre": "Ne pas confondre proposition et accord",
-     "texte": "Ce serait possible pour toi ? demande encore une réponse. Un sourire ou un peut-être ne suffit pas à confirmer l’engagement décrit.",
+     "texte": "« Ce serait possible pour toi ? » demande encore une réponse. Un sourire ou un « peut-être » ne suffit pas à confirmer l’engagement décrit.",
      "schema": "Offre précise puis trois réponses : accord, modification, refus. Un peut-être reste dans une zone non décidé."
     }
    ],
@@ -312,7 +312,7 @@
      "expl": "L’action et sa condition sont visibles."
     },
     {
-     "q": "Un peut-être confirme-t-il l’accord ?",
+     "q": "Un « peut-être » confirme-t-il l’accord ?",
      "choix": [
       "Non",
       "Oui, par politesse",
@@ -345,7 +345,7 @@
    "cartes": [
     {
      "titre": "Un refus identifiable",
-     "texte": "Non, je ne peux pas prendre cette tâche formule une limite. Une longue explication qui n’exprime jamais le refus peut laisser croire que tu acceptes encore de discuter de tout.",
+     "texte": "« Non, je ne peux pas prendre cette tâche » formule une limite. Une longue explication qui n’exprime jamais le refus peut laisser croire que tu acceptes encore de discuter de tout.",
      "schema": ""
     },
     {
@@ -355,12 +355,12 @@
     },
     {
      "titre": "Une alternative facultative",
-     "texte": "Je ne peux pas aujourd’hui ; je peux mardi propose une autre possibilité si elle te convient vraiment. Tu peux aussi refuser sans offrir un remplacement.",
+     "texte": "« Je ne peux pas aujourd’hui ; je peux mardi » propose une autre possibilité si elle te convient vraiment. Tu peux aussi refuser sans offrir un remplacement.",
      "schema": "Phrase non au centre ; à droite, branche alternative possible en pointillés. Le refus reste complet même sans cette branche."
     },
     {
      "titre": "Un ton sans attaque",
-     "texte": "Refuser une demande ne nécessite pas d’insulter la personne. Je ne souhaite pas prêter cet objet pose une limite plus claire que tu es toujours irresponsable.",
+     "texte": "Refuser une demande ne nécessite pas d’insulter la personne. « Je ne souhaite pas prêter cet objet » pose une limite plus claire que « tu es toujours irresponsable ».",
      "schema": "Deux bulles comparées : limite sur une demande, étiquette sur une personne. La première reste dans le cadre discussion respectueuse."
     }
    ],
@@ -417,12 +417,12 @@
     },
     {
      "titre": "Répéter sans nouveau dossier",
-     "texte": "Je comprends que cela t’arrange, mais ma réponse reste non suffit parfois. Ajouter sans cesse des raisons peut déplacer la discussion vers chaque détail plutôt que vers ta limite.",
+     "texte": "« Je comprends que cela t’arrange, mais ma réponse reste non » suffit parfois. Ajouter sans cesse des raisons peut déplacer la discussion vers chaque détail plutôt que vers ta limite.",
      "schema": ""
     },
     {
      "titre": "Terminer l’échange",
-     "texte": "Tu peux dire : Je ne souhaite plus discuter de cette demande. Change de lieu ou sollicite une aide si nécessaire. Tu n’as pas à rester pour prouver que tu sais répondre.",
+     "texte": "Tu peux dire : « Je ne souhaite plus discuter de cette demande. » Change de lieu ou sollicite une aide si nécessaire. Tu n’as pas à rester pour prouver que tu sais répondre.",
      "schema": "Limite exprimée puis répétée ; si pression continue, flèche vers fin d’échange et soutien. Aucun face-à-face héroïque imposé."
     },
     {
