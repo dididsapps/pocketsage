@@ -5,7 +5,8 @@
   const V=((document.currentScript&&document.currentScript.src.match(/[?&]v=(\d+)/))||[])[1]||'';
   const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const lang=()=>{try{return String(APP.lang||'FR').toUpperCase();}catch(e){return 'FR';}};
-  let IDX=null;const cache={};let theme=null,lecon=null,carte=0;
+  let IDX=null;const cache={};let theme=null,lecon=null,carte=0,retour=null;
+  const estBP=t=>/^BP-/.test(t.id||t);
   async function j(u){try{const r=await fetch(u+'?v='+V);if(r.ok)return await r.json();}catch(e){}return null;}
   async function index(){if(IDX)return IDX;IDX=(await j(`data/ccm/${lang()}/index.json`))||(await j('data/ccm/FR/index.json'))||{themes:[]};return IDX;}
   async function charger(id){if(cache[id])return cache[id];return cache[id]=(await j(`data/ccm/${lang()}/${id}.json`))||(await j(`data/ccm/FR/${id}.json`));}
@@ -14,26 +15,28 @@
   const pourMoi=t=>t.public==='enfant'?age()<=12:age()>=12;
   const videosOk=()=>{try{const p=P();return !(p&&p.ccmVideosOff);}catch(e){return true;}};
 
-  window.openCCM=async function(id){document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));theme=id||null;lecon=null;show('ccm');await rendre();};
+  window.openCCM=async function(id,from){document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));theme=id||null;lecon=null;retour=from||null;show('ccm');await rendre();};
+  // Thèmes « Bien parler » (BP-*) : affichés dans l'onglet Bien parler de Politesse, pas dans la liste principale.
+  window.ccmBienParler=async function(){const ix=await index();return {pourMoi:ix.themes.filter(t=>estBP(t)&&pourMoi(t)),autres:ix.themes.filter(t=>estBP(t)&&!pourMoi(t)),fait:t=>(t.lecons||[]).filter(id=>etat()[id]).length};};
   async function rendre(){
     const c=document.getElementById('ccm-c');if(!c)return;try{ttsStop();}catch(e){}
     if(lecon)return rendreLecon(c);if(theme)return rendreTheme(c);
     const ix=await index(),st=etat();c.innerHTML='';
     c.insertAdjacentHTML('beforeend',`<div class="cc-hero"><div class="cc-he">🛠️</div><div><b>Comment ça marche ?</b><span>Des leçons de quelques minutes pour comprendre les objets et la vie de tous les jours. « Ah, c'est donc pour ça ! »</span></div></div>`);
-    const L=ix.themes.filter(pourMoi),autres=ix.themes.filter(t=>!pourMoi(t));
+    const TH=ix.themes.filter(t=>!estBP(t)),L=TH.filter(pourMoi),autres=TH.filter(t=>!pourMoi(t));
     const grille=(arr,titre)=>{if(!arr.length)return;c.insertAdjacentHTML('beforeend',`<div class="cc-sec">${titre}</div>`);const g=document.createElement('div');g.className='cc-grid';
       arr.forEach(t=>{const fait=(t.lecons||[]).filter(id=>st[id]).length,n=(t.lecons||[]).length;const b=document.createElement('button');b.className='cc-tile';b.style.setProperty('--cc',t.couleur||'#3B82F6');
         b.innerHTML=`<span class="cc-te">${esc(t.emoji||'🛠️')}</span><b>${esc(t.titre)}</b><small>${n} leçons${fait?` · ${fait} faites`:''}</small><i style="width:${n?Math.round(fait*100/n):0}%"></i>`;
         b.onclick=()=>{try{sndTap();}catch(e){}theme=t.id;rendre();};g.appendChild(b);});c.appendChild(g);};
     grille(L,'Pour toi');grille(autres,'Autres thèmes');
-    if(!ix.themes.length)c.insertAdjacentHTML('beforeend','<p class="cc-vide">Les premiers thèmes arrivent très bientôt.</p>');
+    if(!TH.length)c.insertAdjacentHTML('beforeend','<p class="cc-vide">Les premiers thèmes arrivent très bientôt.</p>');
   }
   async function rendreTheme(c){
     const d=await charger(theme),st=etat();c.innerHTML='';if(!d){theme=null;return rendre();}
     const t=(IDX&&IDX.themes.find(x=>x.id===theme))||{};
     const h=document.createElement('div');h.className='cc-head';h.style.setProperty('--cc',t.couleur||'#3B82F6');
-    h.innerHTML=`<button class="cc-back">‹ Tous les thèmes</button><div class="cc-h1">${esc(t.emoji||'🛠️')} ${esc(d.titre)}</div><div class="cc-h2">${d.lecons.length} leçons de quelques minutes</div>`;
-    h.querySelector('.cc-back').onclick=()=>{theme=null;rendre();};c.appendChild(h);
+    h.innerHTML=`<button class="cc-back">‹ ${retour==='politesse'?'Bien parler':'Tous les thèmes'}</button><div class="cc-h1">${esc(t.emoji||'🛠️')} ${esc(d.titre)}</div><div class="cc-h2">${d.lecons.length} leçons de quelques minutes</div>`;
+    h.querySelector('.cc-back').onclick=()=>{if(retour==='politesse'){try{openPolitesse(3);}catch(e){}return;}theme=null;rendre();};c.appendChild(h);
     d.lecons.forEach((l,i)=>{const r=st[l.id];const b=document.createElement('button');b.className='cc-lec';b.style.setProperty('--cc',t.couleur||'#3B82F6');
       b.innerHTML=`<span class="cc-num">${r?'✓':i+1}</span><span class="cc-lt"><b>${esc(l.titre)}</b><small>${esc(l.accroche||'')}</small></span><span class="cc-min">${l.duree_min||8} min</span>`;
       b.onclick=()=>{try{sndTap();}catch(e){}lecon=l.id;carte=0;rendre();};c.appendChild(b);});

@@ -1,0 +1,543 @@
+{
+ "id": "BP-32",
+ "titre": "Écrire un message qui fait bonne impression",
+ "public": "ado-adulte",
+ "lecons": [
+  {
+   "titre": "Savoir pourquoi tu écris",
+   "accroche": "Un message clair commence avant la première formule de politesse.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Choisir le résultat attendu",
+     "texte": "Veux-tu informer, poser une question, demander une action ou refuser ? Une intention précise sert de boussole pour choisir ce qui doit apparaître dans le message.",
+     "schema": "Boussole au centre ; quatre directions : informer, demander une information, demander une action, refuser. Une seule direction principale est surlignée."
+    },
+    {
+     "titre": "Penser au destinataire",
+     "texte": "Une personne qui découvre le sujet a besoin de contexte. Un groupe déjà informé peut surtout attendre une mise à jour. Évite de supposer que l’autre connaît tes échanges précédents.",
+     "schema": ""
+    },
+    {
+     "titre": "Choisir le bon espace",
+     "texte": "Un message individuel, un groupe et un courriel n’ont pas la même audience. Une information destinée à une personne n’a pas forcément sa place devant tout le groupe.",
+     "schema": ""
+    },
+    {
+     "titre": "Garder une attente réaliste",
+     "texte": "Un message écrit peut être lu plus tard. Pour un danger immédiat, n’attends pas une réponse ordinaire : cherche une aide adaptée. La messagerie ne garantit pas une attention instantanée.",
+     "schema": "Message vers horloge de lecture inconnue ; à côté, situation urgente vers aide directe. Les deux chemins restent distincts."
+    }
+   ],
+   "dans_ta_vie": "Tu peux choisir un canal et une quantité de contexte adaptés à ta demande.",
+   "securite": "Les défis utilisent des brouillons et des informations fictives ; aucun envoi réel n’est nécessaire. Ne révèle ni coordonnées privées, mot de passe, code de validation ni document confidentiel. Demande l’accord avant de montrer le message réel d’une autre personne. En France, en danger immédiat, le 112 permet de joindre les secours ; le 15 concerne les urgences médicales. Aucun appel d’entraînement.",
+   "defi": "Pendant quatre minutes, prépare trois situations fictives : informer un groupe, poser une question individuelle et demander une action. Pour chacune, note l’objectif, le destinataire et le canal approprié sans envoyer de message.",
+   "quiz": [
+    {
+     "q": "Que faut-il préciser avant d’écrire ?",
+     "choix": [
+      "La formule la plus longue",
+      "L’objectif du message",
+      "Le nombre maximal de compliments"
+     ],
+     "rep": "L’objectif du message",
+     "expl": "L’objectif aide à sélectionner les informations utiles."
+    },
+    {
+     "q": "Une information individuelle doit-elle toujours être envoyée au groupe ?",
+     "choix": [
+      "Oui, pour aller plus vite",
+      "Oui, pour paraître transparent",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "L’audience doit correspondre au besoin et à la confidentialité."
+    },
+    {
+     "q": "Un message ordinaire garantit-il une lecture immédiate ?",
+     "choix": [
+      "Non",
+      "Oui, dès son envoi",
+      "Oui, avec un point d’exclamation"
+     ],
+     "rep": "Non",
+     "expl": "Le destinataire peut être indisponible."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-32-01"
+  },
+  {
+   "titre": "Donner le sujet et le contexte sans détour",
+   "accroche": "Le destinataire doit pouvoir comprendre de quoi il s’agit sans deviner.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Un sujet reconnaissable",
+     "texte": "Dans un courriel, un objet comme « Atelier de jeudi : horaire à confirmer » donne une prise. « Urgent !!! » sans contexte attire l’attention sans expliquer le sujet réel.",
+     "schema": ""
+    },
+    {
+     "titre": "Situer en une phrase",
+     "texte": "« Je t’écris au sujet de l’atelier prévu jeudi » rattache la demande à un repère. Si la date est ambiguë, ajoute la date complète dans le message.",
+     "schema": ""
+    },
+    {
+     "titre": "Séparer connu et nouveau",
+     "texte": "« L’atelier est prévu jeudi ; le lieu reste à confirmer » distingue l’information acquise du point ouvert. N’annonce pas une modification comme si tout le monde l’avait déjà acceptée.",
+     "schema": "Deux cases côte à côte : confirmé et à confirmer. Un nouvel élément apparaît uniquement dans la seconde avant réponse explicite."
+    },
+    {
+     "titre": "Éviter le faux mystère",
+     "texte": "« On doit parler » peut inquiéter sans renseigner. Une indication sobre du sujet aide à se préparer ; un détail sensible peut rester réservé à un échange privé adapté.",
+     "schema": "Bulle vague avec point d’interrogation, puis bulle sujet précis. Petit cadre privé conserve les détails sensibles hors du message de groupe."
+    }
+   ],
+   "dans_ta_vie": "Tu peux rendre ton message identifiable et limiter les malentendus sur ce qui est déjà décidé.",
+   "securite": "Les défis utilisent des brouillons et des informations fictives ; aucun envoi réel n’est nécessaire. Ne révèle ni coordonnées privées, mot de passe, code de validation ni document confidentiel. Demande l’accord avant de montrer le message réel d’une autre personne.",
+   "defi": "Pendant quatre minutes, transforme un message fictif trop vague en un objet et deux phrases : contexte puis point à préciser. Fais vérifier par un proche qu’il distingue le sujet, le confirmé et l’incertain.",
+   "quiz": [
+    {
+     "q": "Quel objet informe le mieux ?",
+     "choix": [
+      "Urgent !!!",
+      "Tu ne vas pas y croire",
+      "Atelier de jeudi : horaire à confirmer"
+     ],
+     "rep": "Atelier de jeudi : horaire à confirmer",
+     "expl": "Il permet d’identifier le sujet et l’action attendue."
+    },
+    {
+     "q": "Un lieu encore incertain doit être présenté comment ?",
+     "choix": [
+      "Comme à confirmer",
+      "Comme définitivement accepté",
+      "Comme un détail à cacher"
+     ],
+     "rep": "Comme à confirmer",
+     "expl": "Le statut de l’information doit rester exact."
+    },
+    {
+     "q": "Pourquoi nommer sobrement le sujet ?",
+     "choix": [
+      "Pour tout rendre public",
+      "Pour aider l’autre à comprendre et se préparer",
+      "Pour faire peur avant la suite"
+     ],
+     "rep": "Pour aider l’autre à comprendre et se préparer",
+     "expl": "Le contexte peut être clair sans dévoiler de détail privé."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-32-02"
+  },
+  {
+   "titre": "Demander une action que l’on peut identifier",
+   "accroche": "Une demande lisible précise ce qui est attendu, sans fabriquer d’obligation.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Nommer l’action",
+     "texte": "« Peux-tu confirmer si tu participes ? » demande une réponse précise. « Tiens-moi au courant » peut suffire dans certains contextes, mais laisse parfois trop de possibilités sur ce qui est attendu.",
+     "schema": ""
+    },
+    {
+     "titre": "Une échéance expliquée",
+     "texte": "Si une date est utile, précise-la et donne une raison réelle : « pour réserver la salle ». N’invente pas un délai pour pousser l’autre à répondre sans réfléchir.",
+     "schema": ""
+    },
+    {
+     "titre": "Rendre le refus possible",
+     "texte": "« Tu peux répondre non ou proposer un autre moment » indique les options lorsque ces possibilités existent réellement. Ne présente pas une fausse liberté si une seule réponse est acceptée.",
+     "schema": ""
+    },
+    {
+     "titre": "Distinguer plusieurs demandes",
+     "texte": "Si le message contient deux actions, sépare-les et indique qui est concerné. Comme une petite liste de courses, cela évite qu’une tâche se cache au milieu d’un paragraphe.",
+     "schema": "Message avec deux lignes numérotées, chacune associée à une personne et une action. Échéance réelle à côté, sans compte à rebours."
+    }
+   ],
+   "dans_ta_vie": "Tu peux écrire une demande plus facile à comprendre et à traiter.",
+   "securite": "Les défis utilisent des brouillons et des informations fictives ; aucun envoi réel n’est nécessaire. Ne révèle ni coordonnées privées, mot de passe, code de validation ni document confidentiel. Demande l’accord avant de montrer le message réel d’une autre personne.",
+   "defi": "Pendant quatre minutes, rédige une demande fictive avec une action précise, une échéance justifiée dans le scénario et une possibilité réelle de refus ou d’alternative. Demande à un proche ce qu’il devrait faire après lecture.",
+   "quiz": [
+    {
+     "q": "Quelle demande indique une action précise ?",
+     "choix": [
+      "Peux-tu confirmer si tu participes ?",
+      "Tu sais ce qu’il faut faire",
+      "Occupe-toi de tout"
+     ],
+     "rep": "Peux-tu confirmer si tu participes ?",
+     "expl": "La réponse attendue est identifiable."
+    },
+    {
+     "q": "Pourquoi expliquer une échéance réelle ?",
+     "choix": [
+      "Pour empêcher toute question",
+      "Pour rendre son utilité compréhensible",
+      "Pour faire croire à une urgence inventée"
+     ],
+     "rep": "Pour rendre son utilité compréhensible",
+     "expl": "La contrainte doit être transparente."
+    },
+    {
+     "q": "Deux actions distinctes sont difficiles à repérer. Que faire ?",
+     "choix": [
+      "Les cacher dans une longue phrase",
+      "Supprimer le destinataire de chacune",
+      "Les séparer clairement"
+     ],
+     "rep": "Les séparer clairement",
+     "expl": "La présentation aide à comprendre les responsabilités."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-32-03"
+  },
+  {
+   "titre": "Être courtois sans jouer un personnage",
+   "accroche": "Une formule chaleureuse ne remplace pas une demande honnête.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Un ton adapté à la relation",
+     "texte": "« Bonjour » convient dans beaucoup de premiers échanges. Le degré de familiarité dépend du contexte et de la relation ; tu n’as pas besoin d’imiter une proximité qui n’existe pas.",
+     "schema": ""
+    },
+    {
+     "titre": "Décrire plutôt qu’accuser",
+     "texte": "« Je n’ai pas reçu le document » décrit ce qui te manque. « Tu m’ignores encore » suppose une intention. La première phrase permet de demander une suite sans ouvrir un procès.",
+     "schema": ""
+    },
+    {
+     "titre": "Rendre le ton moins ambigu",
+     "texte": "L’ironie, les majuscules ou certains signes peuvent être interprétés différemment. Pour une demande importante, des mots simples et explicites sont souvent plus faciles à vérifier qu’un sous-entendu.",
+     "schema": ""
+    },
+    {
+     "titre": "Une politesse qui laisse choisir",
+     "texte": "« Merci de me dire si cela te convient » demande une réponse. « Merci d’accepter déjà » peut donner l’impression que le choix est fait. La courtoisie doit accompagner une liberté réelle.",
+     "schema": "Deux bulles : demande avec choix ouvert et formule présumant l’accord. Dans la première, oui et non restent visibles."
+    }
+   ],
+   "dans_ta_vie": "Tu peux réduire les accusations involontaires et les sous-entendus qui brouillent une demande.",
+   "securite": "Les défis utilisent des brouillons et des informations fictives ; aucun envoi réel n’est nécessaire. Ne révèle ni coordonnées privées, mot de passe, code de validation ni document confidentiel. Demande l’accord avant de montrer le message réel d’une autre personne.",
+   "defi": "Pendant quatre minutes, réécris un message fictif accusateur en trois éléments : fait observable, demande précise, formule courtoise. Fais-le relire sans demander de deviner une intention cachée.",
+   "quiz": [
+    {
+     "q": "Quelle phrase décrit un fait plutôt qu’une intention ?",
+     "choix": [
+      "Tu m’ignores encore",
+      "Je n’ai pas reçu le document",
+      "Tu veux forcément me compliquer la vie"
+     ],
+     "rep": "Je n’ai pas reçu le document",
+     "expl": "Elle se limite à l’information disponible."
+    },
+    {
+     "q": "Faut-il inventer une proximité pour paraître aimable ?",
+     "choix": [
+      "Oui, dans tous les messages",
+      "Oui, avant toute demande",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Un ton respectueux peut rester sobre."
+    },
+    {
+     "q": "Quelle formule laisse davantage le choix ?",
+     "choix": [
+      "Merci de me dire si cela te convient",
+      "Merci d’avoir déjà accepté",
+      "Tu es forcément d’accord"
+     ],
+     "rep": "Merci de me dire si cela te convient",
+     "expl": "Elle ne présume pas la réponse."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-32-04"
+  },
+  {
+   "titre": "Faire court sans rendre le message flou",
+   "accroche": "La clarté se mesure à ce que l’autre comprend, pas seulement au nombre de lignes.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Enlever les détours",
+     "texte": "Garde le contexte utile, l’information ou la demande, puis la suite attendue. Une phrase peut être supprimée si elle ne change ni la compréhension ni la courtoisie.",
+     "schema": ""
+    },
+    {
+     "titre": "Expliquer les mots nouveaux",
+     "texte": "Une abréviation connue de ton groupe peut être inconnue ailleurs. Écris le terme en entier à sa première apparition ou choisis un mot courant qui dit la même chose.",
+     "schema": ""
+    },
+    {
+     "titre": "Aérer les éléments distincts",
+     "texte": "Un paragraphe par idée ou une courte liste peut aider quand plusieurs points sont nécessaires. Tout écrire sur une seule ligne n’est pas automatiquement plus concis.",
+     "schema": "Bloc compact se transforme en contexte, demande et suite séparés par des espaces. Même information, lecture visuellement structurée."
+    },
+    {
+     "titre": "Ne pas faire dépendre le sens d’un signe",
+     "texte": "Une couleur ou un émoji peut compléter le message, mais l’information essentielle doit rester dans les mots. Une image jointe gagne à être accompagnée d’une description utile.",
+     "schema": "Pastille colorée et émoji à côté d’une phrase explicite. Quand les symboles disparaissent, le sens principal reste lisible."
+    }
+   ],
+   "dans_ta_vie": "Tu peux raccourcir sans retirer les repères nécessaires au destinataire.",
+   "securite": "Les défis utilisent des brouillons et des informations fictives ; aucun envoi réel n’est nécessaire. Ne révèle ni coordonnées privées, mot de passe, code de validation ni document confidentiel. Demande l’accord avant de montrer le message réel d’une autre personne.",
+   "defi": "Pendant quatre minutes, rédige un message fictif de cinq phrases puis retire un détour et explique une abréviation. Demande à un proche si l’action attendue reste claire sans couleur, image ou émoji.",
+   "quiz": [
+    {
+     "q": "Un message plus court est-il toujours plus clair ?",
+     "choix": [
+      "Oui, même s’il devient ambigu",
+      "Oui, à une seule lettre",
+      "Non, il peut manquer de contexte"
+     ],
+     "rep": "Non, il peut manquer de contexte",
+     "expl": "La brièveté doit préserver les informations nécessaires."
+    },
+    {
+     "q": "Une abréviation inconnue doit être traitée comment ?",
+     "choix": [
+      "L’expliquer ou la remplacer",
+      "La répéter en majuscules",
+      "Supposer que l’autre fera une recherche"
+     ],
+     "rep": "L’expliquer ou la remplacer",
+     "expl": "Le vocabulaire doit correspondre au destinataire."
+    },
+    {
+     "q": "Où doit rester l’information essentielle ?",
+     "choix": [
+      "Uniquement dans une couleur",
+      "Dans des mots compréhensibles",
+      "Seulement dans un émoji"
+     ],
+     "rep": "Dans des mots compréhensibles",
+     "expl": "Les signes peuvent compléter sans porter seuls le sens."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-32-05"
+  },
+  {
+   "titre": "Écrire un désaccord ou un refus proprement",
+   "accroche": "Un message peut poser une limite sans devenir une attaque.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Nommer le point précis",
+     "texte": "« Je ne peux pas être disponible samedi » pose une limite sur un horaire. « Avec toi, c’est toujours compliqué » transforme un problème concret en jugement général sur une personne.",
+     "schema": ""
+    },
+    {
+     "titre": "Un refus lisible",
+     "texte": "Si ta réponse est non, indique-le clairement. Tu peux donner une raison brève et une alternative si tu le souhaites ; aucun détail intime n’est nécessaire pour remplir le message.",
+     "schema": ""
+    },
+    {
+     "titre": "Ne pas discuter tous les sujets",
+     "texte": "Pour un désaccord, traite le point utile au message. Ajouter une liste d’anciens reproches peut rendre la résolution plus difficile et exposer des informations qui n’avaient pas à être partagées.",
+     "schema": ""
+    },
+    {
+     "titre": "Faire une pause avant l’envoi",
+     "texte": "Si tu es très en colère, tu peux garder un brouillon et le relire plus tard, hors urgence. Une fois transmis, un message peut être conservé ou transféré ; choisis ce que tu souhaites réellement écrire.",
+     "schema": "Brouillon vers pause puis relecture puis envoi éventuel. Après envoi, branches copie et transfert rappellent que le contrôle devient limité."
+    }
+   ],
+   "dans_ta_vie": "Tu peux exprimer une limite avec des mots que tu assumes aussi après l’émotion du moment.",
+   "securite": "Les défis utilisent des brouillons et des informations fictives ; aucun envoi réel n’est nécessaire. Ne révèle ni coordonnées privées, mot de passe, code de validation ni document confidentiel. Demande l’accord avant de montrer le message réel d’une autre personne.",
+   "defi": "Pendant quatre minutes, rédige un refus fictif, laisse le brouillon de côté un instant puis relis-le. Souligne la limite, barre une éventuelle attaque et vérifie que l’alternative proposée reste facultative et possible.",
+   "quiz": [
+    {
+     "q": "Quelle phrase vise un point concret ?",
+     "choix": [
+      "Je ne peux pas être disponible samedi",
+      "Avec toi, c’est toujours compliqué",
+      "Tu es incapable de t’organiser"
+     ],
+     "rep": "Je ne peux pas être disponible samedi",
+     "expl": "Elle formule une limite sans étiquette générale."
+    },
+    {
+     "q": "Faut-il ajouter tous les anciens reproches ?",
+     "choix": [
+      "Oui, pour renforcer chaque refus",
+      "Non",
+      "Oui, pour rendre le message complet"
+     ],
+     "rep": "Non",
+     "expl": "Le message peut rester centré sur le point utile."
+    },
+    {
+     "q": "Pourquoi relire un brouillon écrit en colère ?",
+     "choix": [
+      "Pour garantir que l’autre sera d’accord",
+      "Pour supprimer ton droit de refuser",
+      "Pour choisir les mots que tu souhaites transmettre"
+     ],
+     "rep": "Pour choisir les mots que tu souhaites transmettre",
+     "expl": "La pause permet une vérification sans promettre l’effet du message."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-32-06"
+  },
+  {
+   "titre": "La relecture qui évite les mauvaises surprises",
+   "accroche": "Un bon texte peut échouer parce qu’il part à la mauvaise personne.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Vérifier l’enveloppe",
+     "texte": "Regarde le destinataire et les personnes en copie. La fonction « Répondre à tous » peut diffuser un message plus largement que prévu ; vérifie l’audience avant de traiter le contenu.",
+     "schema": ""
+    },
+    {
+     "titre": "Contrôler les détails pratiques",
+     "texte": "Relis noms, dates, heures et documents joints. Si tu annonces une pièce jointe, vérifie qu’elle est bien présente, dans la bonne version et sans information privée inutile.",
+     "schema": "Enveloppe ouverte puis quatre cases : personnes, dates, pièce jointe, confidentialité. Une loupe passe dans cet ordre avant l’envoi."
+    },
+    {
+     "titre": "Ne pas transmettre de secret d’accès",
+     "texte": "Un mot de passe ou un code de validation ne doit pas être ajouté pour rassurer un interlocuteur. Une demande inhabituelle mérite une vérification par un canal officiel indépendant.",
+     "schema": ""
+    },
+    {
+     "titre": "Vérifier aussi un texte assisté",
+     "texte": "Si un outil t’aide à rédiger, tu restes responsable du message choisi. Contrôle les faits, le ton et les engagements ; n’introduis pas de données confidentielles dans un service non autorisé.",
+     "schema": "Brouillon produit avec aide puis filtre humain : faits, ton, engagements. Une flèche vers envoi n’apparaît qu’après lecture."
+    }
+   ],
+   "dans_ta_vie": "Tu peux éviter qu’un message exact parte au mauvais endroit ou promette quelque chose à ton insu.",
+   "securite": "Les défis utilisent des brouillons et des informations fictives ; aucun envoi réel n’est nécessaire. Ne révèle ni coordonnées privées, mot de passe, code de validation ni document confidentiel. Demande l’accord avant de montrer le message réel d’une autre personne.",
+   "defi": "Pendant quatre minutes, relis un brouillon fictif contenant volontairement une mauvaise date, une pièce jointe annoncée mais absente et un destinataire de trop. Corrige les trois erreurs sans utiliser de données réelles.",
+   "quiz": [
+    {
+     "q": "Que faut-il vérifier avec « Répondre à tous » ?",
+     "choix": [
+      "Seulement la longueur du texte",
+      "Qui recevra le message",
+      "Que tous te connaissent personnellement"
+     ],
+     "rep": "Qui recevra le message",
+     "expl": "L’audience peut être plus large que prévu."
+    },
+    {
+     "q": "Un texte rédigé avec un outil doit-il être relu ?",
+     "choix": [
+      "Non, il est forcément exact",
+      "Seulement pour les couleurs",
+      "Oui, y compris les faits et engagements"
+     ],
+     "rep": "Oui, y compris les faits et engagements",
+     "expl": "L’aide à la rédaction ne garantit ni l’exactitude ni la pertinence."
+    },
+    {
+     "q": "Quelle information ne faut-il pas transmettre dans cet exercice ?",
+     "choix": [
+      "Un code de validation réel",
+      "Le sujet fictif du message",
+      "Une date inventée pour le scénario"
+     ],
+     "rep": "Un code de validation réel",
+     "expl": "Un secret d’accès peut permettre une utilisation non autorisée."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-32-07"
+  },
+  {
+   "titre": "Relancer, corriger et terminer avec mesure",
+   "accroche": "Le silence ne dit pas à lui seul ce qui s’est passé.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Ne pas inventer une intention",
+     "texte": "Sans réponse, la personne peut être occupée, avoir oublié ou ne pas souhaiter poursuivre. Tu ne peux pas le savoir seulement à partir du silence ; celui-ci ne vaut pas accord.",
+     "schema": ""
+    },
+    {
+     "titre": "Une relance avec contexte",
+     "texte": "Pour une demande qui reste pertinente, rappelle le sujet et la suite attendue après un délai adapté au contexte. N’invente pas une urgence et ne multiplie pas les canaux après un refus.",
+     "schema": "Premier message puis attente adaptée, éventuelle relance sobre. Après refus explicite, le chemin s’arrête au lieu de changer de canal."
+    },
+    {
+     "titre": "Corriger ce qui change l’action",
+     "texte": "Si tu as envoyé une mauvaise heure, écris clairement la correction et ce qui remplace l’information précédente. Une erreur importante mérite davantage qu’un nouveau message vague.",
+     "schema": ""
+    },
+    {
+     "titre": "Accepter une fin",
+     "texte": "Un merci bref peut clore l’échange. Si la réponse est non, respecte-la ; si un point reste ouvert, nomme-le sans prétendre qu’il est décidé. Faire bonne impression n’assure pas la réponse souhaitée.",
+     "schema": "Fil de messages : correction précise puis confirmation éventuelle. Deux cases finales : clos et point encore ouvert, sans accord supposé."
+    }
+   ],
+   "dans_ta_vie": "Tu peux donner une suite utile à un échange sans transformer l’attente en pression.",
+   "securite": "Les défis utilisent des brouillons et des informations fictives ; aucun envoi réel n’est nécessaire. Ne révèle ni coordonnées privées, mot de passe, code de validation ni document confidentiel. Demande l’accord avant de montrer le message réel d’une autre personne.",
+   "defi": "Pendant quatre minutes avec un proche, prépare une relance fictive et une correction d’horaire. Vérifiez que la première n’accuse pas et que la seconde dit exactement quelle information remplace l’ancienne. Gardez-les en brouillon.",
+   "quiz": [
+    {
+     "q": "Une absence de réponse vaut-elle accord ?",
+     "choix": [
+      "Oui, après un délai décidé seul",
+      "Oui, si le message était poli",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Un engagement demande une confirmation adaptée."
+    },
+    {
+     "q": "Après un refus explicite, faut-il changer de canal pour insister ?",
+     "choix": [
+      "Non",
+      "Oui, pour être sûr",
+      "Oui, si l’autre canal est plus personnel"
+     ],
+     "rep": "Non",
+     "expl": "Le refus doit être respecté."
+    },
+    {
+     "q": "Une mauvaise heure a été envoyée. Que doit dire la correction ?",
+     "choix": [
+      "Seulement oups",
+      "La bonne heure et celle qu’elle remplace",
+      "Que tout était déjà clair"
+     ],
+     "rep": "La bonne heure et celle qu’elle remplace",
+     "expl": "La correction doit permettre d’agir sur la bonne information."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "BP-32-08"
+  }
+ ]
+}

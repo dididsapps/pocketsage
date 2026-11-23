@@ -1091,7 +1091,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=102">
+<link rel="stylesheet" href="css/jeux.css?v=103">
 </head>
 <body>
 
@@ -1660,11 +1660,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=102"></script>
-<script src="js/jeux-cerveau.js?v=102"></script>
-<script src="js/coach-voix.js?v=102"></script>
-<script src="js/monde-interieur.js?v=102"></script>
-<script src="js/monde-plus.js?v=102"></script>
+<script src="js/jeux.js?v=103"></script>
+<script src="js/jeux-cerveau.js?v=103"></script>
+<script src="js/coach-voix.js?v=103"></script>
+<script src="js/monde-interieur.js?v=103"></script>
+<script src="js/monde-plus.js?v=103"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -13497,20 +13497,32 @@ function _polList(k){const g=_polGrp||_polGroupDefault();return g==='all'?POLITE
 function _polGrpBar(){const g=_polGrp||_polGroupDefault();
   return '<div class="sport-grp" style="margin:0 0 12px">'+[[1,'🐣 4-6 ans'],[2,'🐸 7-12 ans'],[3,'🦅 13 ans et +'],['all','Tout']].map(([v,l])=>`<button class="${g===v?'sel':''}" onclick="sndTap();_polGrp=${v==='all'?"'all'":v};_polDictonIdx=0;renderPolContent(_polTab)">${l}</button>`).join('')+'</div>';}
 let _polTab=0,_polDictonIdx=0;
-async function openPolitesse(){
+async function openPolitesse(tab){
   try{
     await loadPolitesse();
     const hsc=document.getElementById('pol-hsc');
     if(hsc)hsc.textContent='⭐ '+(P()?P().score:0);
-    _polTab=0;_polDictonIdx=0;
+    _polTab=tab||0;_polDictonIdx=0;
     try{renderPolTabs();}catch(e){console.error('renderPolTabs:',e);}
-    try{renderPolContent(0);}catch(e){console.error('renderPolContent:',e);}
+    try{renderPolContent(_polTab);}catch(e){console.error('renderPolContent:',e);}
     show('politesse');
   }catch(e){console.error('openPolitesse:',e);toast('Erreur politesse: '+e.message,'err');}
 }
+// 🗣️ Bien parler : thèmes BP-* du module « Comment ça marche ? » (js/ccm.js), avec leurs mini-défis
+async function _polBienParler(c){
+  c.innerHTML='<div style="background:var(--w);border-radius:var(--r);padding:14px 16px;margin-bottom:12px;box-shadow:var(--sh);font-size:13px;font-weight:600;color:var(--tl);line-height:1.5"><b style="color:var(--t);font-size:15px">🗣️ Bien parler</b><br>Des leçons de quelques minutes pour oser parler, écouter, convaincre honnêtement et savoir dire non. Chaque leçon finit par un petit défi.</div>';
+  let B;try{B=await ccmBienParler();}catch(e){B=null;}
+  if(!B||(!B.pourMoi.length&&!B.autres.length)){c.insertAdjacentHTML('beforeend','<p style="text-align:center;color:var(--tl);font-weight:700">Les leçons arrivent très bientôt.</p>');return;}
+  const grille=(L,titre)=>{if(!L.length)return;c.insertAdjacentHTML('beforeend',`<div style="font-size:12px;font-weight:900;color:var(--tl);text-transform:uppercase;letter-spacing:.05em;margin:14px 2px 8px">${titre}</div>`);
+    L.forEach(t=>{const n=(t.lecons||[]).length,f=B.fait(t);const b=document.createElement('button');
+      b.style.cssText=`display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:var(--w);border:none;border-left:5px solid ${t.couleur};border-radius:var(--r);padding:14px;margin-bottom:9px;box-shadow:var(--sh);font-family:var(--f);color:var(--t);cursor:pointer`;
+      b.innerHTML=`<span style="font-size:30px">${t.emoji}</span><span style="flex:1"><b style="display:block;font-size:14px">${t.titre}</b><small style="font-size:11px;font-weight:700;color:var(--tl)">${n} leçons${f?' · '+f+' faites':''}</small></span><span style="font-size:18px;color:var(--tl)">›</span>`;
+      b.onclick=()=>{try{sndTap();}catch(e){}openCCM(t.id,'politesse');};c.appendChild(b);});};
+  grille(B.pourMoi,'Pour toi');grille(B.autres,'Autres thèmes');
+}
 function renderPolTabs(){
   const tabs=document.getElementById('pol-tabs');
-  const labels=['Manières 🌸','Dictons ✨','Conseils 🎯'];
+  const labels=['Manières 🌸','Dictons ✨','Conseils 🎯','Bien parler 🗣️'];
   tabs.innerHTML='';
   labels.forEach((l,i)=>{
     const b=document.createElement('button');b.className='stab'+(_polTab===i?' on':'');
@@ -13521,6 +13533,7 @@ function renderPolTabs(){
 }
 function renderPolContent(tab){
   const c=document.getElementById('pol-content');c.innerHTML=_polGrpBar();
+  if(tab===3){_polBienParler(c);return;}
   if(tab===0){
     _polList('manieres').forEach(m=>{
       const card=document.createElement('div');
@@ -20437,14 +20450,14 @@ window.transferCoinsToWorld=function(n){
 
 })();
 </script>
-<script src="js/questions-plus-data.js?v=102"></script>
-<script src="js/questions-plus.js?v=102"></script>
-<script src="js/parcours-data.js?v=102"></script>
-<script src="js/parcours.js?v=102"></script>
-<script src="js/fiches.js?v=102"></script>
-<script src="js/relax.js?v=102"></script>
-<script src="js/ccm.js?v=102"></script>
-<script src="js/sport-illus.js?v=102"></script>
+<script src="js/questions-plus-data.js?v=103"></script>
+<script src="js/questions-plus.js?v=103"></script>
+<script src="js/parcours-data.js?v=103"></script>
+<script src="js/parcours.js?v=103"></script>
+<script src="js/fiches.js?v=103"></script>
+<script src="js/relax.js?v=103"></script>
+<script src="js/ccm.js?v=103"></script>
+<script src="js/sport-illus.js?v=103"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
