@@ -5,68 +5,68 @@
  "lecons": [
   {
    "titre": "Ton corps est une équipe de cellules",
-   "accroche": "Sous la peau, une foule de minuscules unités travaillent ensemble.",
+   "accroche": "Sous ta peau, une foule de minuscules cellules travaillent ensemble.",
    "duree_min": 8,
    "cartes": [
     {
-     "titre": "Plus petit qu’un organe",
-     "texte": "Une cellule est une petite unité du vivant. Ton corps en contient énormément, de formes et de rôles différents. Imagine une équipe dont chaque membre participe à un travail commun.",
+     "titre": "La cellule",
+     "texte": "Une cellule est la plus petite brique vivante de ton corps. Ton corps en contient énormément, de formes et de rôles différents. C’est comme une immense équipe où chacun participe au travail.",
      "schema": "Silhouette à gauche ; zoom successif sur peau puis cellules. Échelle indiquée comme agrandissement, sans nombre ni cellules dessinées à taille réelle."
     },
     {
-     "titre": "Des formes pour des fonctions",
-     "texte": "Certaines cellules participent au mouvement, d’autres au transport ou à la protection. Elles ne ressemblent pas toutes à des petites boules identiques. Leur forme est liée à leurs activités.",
+     "titre": "Des formes pour des rôles",
+     "texte": "Toutes les cellules ne sont pas de petites boules pareilles. Certaines sont longues et font bouger, d’autres transportent, d’autres envoient des messages. Leur forme va avec leur travail.",
      "schema": "Trois cellules simplifiées : fibre musculaire allongée, globule rouge en disque, cellule nerveuse ramifiée. Même fond blanc ; fonction écrite sous chaque dessin."
     },
     {
-     "titre": "Ensemble, elles forment des tissus",
-     "texte": "Des cellules organisées ensemble forment des tissus. Un tissu n’est pas ici une étoffe : c’est un ensemble vivant structuré, comme une partie de l’équipe spécialisée dans certaines tâches.",
+     "titre": "Les tissus",
+     "texte": "Des cellules rangées ensemble forment un tissu. Attention : ici, ce n’est pas du tissu pour faire des habits ! C’est un groupe de cellules organisées pour un même travail.",
      "schema": "Cellules séparées puis regroupement organisé en tissu. Comparaison avec étoffe dans un cadre distinct barré pour le sens biologique ; aucune assimilation à un simple tissage."
     },
     {
-     "titre": "Un organe réunit plusieurs tissus",
-     "texte": "Le cœur est un organe : plusieurs tissus y coopèrent. Il ne contient pas seulement des cellules musculaires. Des vaisseaux, des nerfs et d’autres structures participent à son fonctionnement.",
+     "titre": "L’organe",
+     "texte": "Le cœur est un organe : plusieurs tissus y travaillent ensemble. Il y a du muscle, mais aussi des vaisseaux, les tuyaux du sang, et des nerfs, qui portent les messages.",
      "schema": "Cœur stylisé au centre ; trois bulles montrent tissu musculaire, vaisseaux et nerfs. Traits de liaison, sans coupe chirurgicale réaliste."
     },
     {
-     "titre": "Les organes se rendent service",
-     "texte": "Poumons, cœur, intestin et reins ne travaillent pas chacun dans leur coin. Ils échangent de la matière et des informations. Comme une ville, le corps dépend de liens entre ses activités.",
+     "titre": "Les organes s’entraident",
+     "texte": "Les poumons, le cœur, l’intestin et les reins ne travaillent pas chacun dans leur coin. Ils s’échangent des matières et des messages. Comme dans une ville, tout est relié.",
      "schema": "Silhouette avec quatre organes simplifiés reliés au réseau sanguin. Légende flèches matière et flèches messages ; éviter un circuit unique mélangeant nourriture et air."
     }
    ],
-   "dans_ta_vie": "Tu comprends les mots cellule, tissu et organe, et pourquoi le corps se décrit à plusieurs échelles.",
-   "securite": "Cette leçon explique le corps sans poser de diagnostic. Ne provoque ni douleur, ni effort inhabituel, ni blessure pour observer. Si quelque chose t’inquiète, parles-en à un adulte de confiance. En cas de doute, parlez-en à l’enseignant ou au médecin.",
-   "defi": "Pendant environ trois minutes, dessine trois niveaux : une cellule, un groupe organisé de cellules, un organe. Explique pourquoi le dessin ne respecte pas les tailles réelles.",
+   "dans_ta_vie": "Tu connais les mots cellule, tissu et organe, du plus petit au plus grand.",
+   "securite": "Cette leçon explique le corps, elle ne soigne pas. Ne te fais pas mal et ne fais pas d’effort inhabituel pour observer. Si quelque chose t’inquiète, parles-en à un adulte de confiance. En cas de doute, parlez-en à l’enseignant ou au médecin.",
+   "defi": "Pendant trois minutes, dessine trois niveaux : une cellule, un groupe de cellules, un organe. Explique pourquoi ton dessin ne respecte pas les vraies tailles.",
    "quiz": [
     {
-     "q": "Un organe contient-il nécessairement un seul type de cellule ?",
+     "q": "Un organe est-il fait d’une seule sorte de cellule ?",
      "choix": [
       "Oui",
       "Non",
       "Oui, sauf les cheveux"
      ],
      "rep": "Non",
-     "expl": "Plusieurs tissus et cellules participent à son fonctionnement."
+     "expl": "Plusieurs tissus et sortes de cellules y travaillent ensemble."
     },
     {
-     "q": "Une cellule nerveuse ressemble-t-elle toujours à un globule rouge ?",
+     "q": "Toutes les cellules ont-elles la même forme ?",
      "choix": [
       "Oui",
-      "Oui, si elle est vivante",
+      "Oui, si elles sont vivantes",
       "Non"
      ],
      "rep": "Non",
-     "expl": "Les formes et les fonctions diffèrent."
+     "expl": "Leur forme dépend de leur travail."
     },
     {
-     "q": "Les organes travaillent-ils sans échanges entre eux ?",
+     "q": "Les organes travaillent-ils chacun seul dans son coin ?",
      "choix": [
       "Non",
       "Oui",
       "Oui, sauf pendant le sommeil"
      ],
      "rep": "Non",
-     "expl": "Ils dépendent de transports et de communications."
+     "expl": "Ils s’échangent des matières et des messages."
     }
    ],
    "video": {
@@ -77,58 +77,58 @@
   },
   {
    "titre": "Bouger : des muscles qui tirent",
-   "accroche": "Pourquoi le bras se plie-t-il sans que les os se raccourcissent ?",
+   "accroche": "Comment ton bras se plie-t-il, alors que tes os ne raccourcissent pas ?",
    "duree_min": 8,
    "cartes": [
     {
      "titre": "Un squelette vivant",
-     "texte": "Les os soutiennent le corps et protègent certains organes. Ce sont des structures vivantes qui se renouvellent. Le squelette n’est pas une armature morte à l’intérieur de toi.",
+     "texte": "Les os tiennent ton corps et protègent certains organes. Ils sont vivants : ils contiennent des cellules et se renouvellent. Ton squelette n’est pas un morceau de bois mort dans ton corps.",
      "schema": "Silhouette avec os blancs sur fond légèrement coloré ; zoom simplifié montrant cellules et vaisseaux dans un os. Aucun os cassé ni chiffre fixe du nombre d’os."
     },
     {
-     "titre": "Des zones de rencontre",
-     "texte": "Une articulation est une zone où des os se rencontrent. Certaines permettent beaucoup de mouvement, d’autres peu. Le coude, par exemple, ne bouge pas comme l’épaule.",
+     "titre": "Les articulations",
+     "texte": "Une articulation est l’endroit où deux os se rencontrent. Certaines bougent beaucoup, d’autres peu. Ton épaule ne bouge pas de la même façon que ton coude.",
      "schema": "Épaule et coude dans deux cadres ; flèches de mouvement différentes. Noms des articulations ; limiter les angles à une représentation confortable."
     },
     {
      "titre": "Le muscle tire",
-     "texte": "Un muscle peut se contracter et exercer une traction. Les tendons transmettent cette traction aux os. Comme une corde tirée, le tendon aide à transmettre une force sans décider du mouvement.",
+     "texte": "Un muscle peut se contracter, c’est-à-dire se raccourcir et tirer. Le tendon, une sorte de corde solide, relie le muscle à l’os. Il transmet cette traction à l’os.",
      "schema": "Coude de profil ; muscle rouge relié à l’os par tendon blanc étiqueté. Animation contraction et rotation de l’avant-bras ; os gardant leur longueur."
     },
     {
-     "titre": "Des partenaires se relaient",
-     "texte": "Pour plier puis déplier le bras, plusieurs muscles travaillent à tour de rôle. Un muscle ne pousse jamais l’os : il tire seulement. Pour déplier le bras, d’autres muscles tirent de l’autre côté.",
+     "titre": "Chacun son tour",
+     "texte": "Un muscle peut seulement tirer, jamais pousser. Pour plier le bras, des muscles tirent d’un côté. Pour le déplier, d’autres muscles tirent de l’autre côté. Ils travaillent chacun leur tour.",
      "schema": "Deux positions du bras ; muscles opposés colorés tour à tour, flèches de traction. Légende simplification : plusieurs muscles participent, pas un seul interrupteur."
     },
     {
-     "titre": "La commande vient de messages",
-     "texte": "Des messages nerveux déclenchent et règlent l’activité des muscles. Le mouvement dépend aussi des informations sur la position du corps. Bouger est un travail coordonné.",
+     "titre": "Des messages commandent",
+     "texte": "Des messages envoyés par les nerfs font travailler les muscles. Ton corps reçoit aussi des informations sur la position de tes bras et de tes jambes. Bouger, c’est un vrai travail d’équipe.",
      "schema": "Cerveau et moelle simplifiés, nerf vers muscle, retour d’information en pointillé. Deux types de flèches clairement nommés commande et information."
     }
    ],
-   "dans_ta_vie": "Tu comprends que muscles, tendons, os et messages nerveux ont des rôles différents.",
-   "securite": "Ne force pas une articulation et ne porte pas de charge pour tester tes muscles. Tout mouvement proposé reste doux et habituel ; une douleur se signale à un adulte de confiance. En cas de doute, parlez-en à l’enseignant ou au médecin.",
-   "defi": "Pendant trois minutes, dessine ton bras plié puis déplié. Relie sur le dessin muscle, tendon et os ; aucun étirement ni effort n’est demandé.",
+   "dans_ta_vie": "Tu sais que les muscles, les tendons, les os et les nerfs ont chacun leur rôle.",
+   "securite": "Ne force pas sur une articulation et ne porte rien de lourd pour tester tes muscles. Les mouvements restent doux et habituels. Si tu as mal, dis-le à un adulte de confiance. En cas de doute, parlez-en à l’enseignant ou au médecin.",
+   "defi": "Pendant trois minutes, dessine ton bras plié puis déplié. Montre le muscle, le tendon et l’os. Aucun étirement ni effort n’est demandé.",
    "quiz": [
     {
-     "q": "Que transmet principalement un tendon ?",
+     "q": "Que fait un tendon ?",
      "choix": [
-      "De l’air vers le poumon",
-      "Le repas vers l’estomac",
-      "La traction du muscle vers l’os"
+      "Il amène l’air aux poumons",
+      "Il amène le repas à l’estomac",
+      "Il transmet la traction du muscle à l’os"
      ],
-     "rep": "La traction du muscle vers l’os",
-     "expl": "Il relie le muscle à l’os et transmet une force."
+     "rep": "Il transmet la traction du muscle à l’os",
+     "expl": "Il relie le muscle à l’os."
     },
     {
-     "q": "Les os se raccourcissent-ils quand tu plies le coude ?",
+     "q": "Tes os raccourcissent-ils quand tu plies le coude ?",
      "choix": [
       "Non",
       "Oui",
       "Oui, puis ils repoussent"
      ],
      "rep": "Non",
-     "expl": "C’est l’angle de l’articulation qui change."
+     "expl": "C’est l’angle entre les os qui change."
     },
     {
      "q": "Les os sont-ils vivants ?",
@@ -149,68 +149,68 @@
   },
   {
    "titre": "Le cœur ne remplit pas le corps une seule fois",
-   "accroche": "Ton sang circule : il ne reste pas coincé à l’endroit où il est arrivé.",
+   "accroche": "Ton sang ne reste pas sur place : il fait le tour de ton corps sans arrêt.",
    "duree_min": 8,
    "cartes": [
     {
-     "titre": "Une pompe musculaire",
-     "texte": "Le cœur est un organe musculaire qui fait circuler le sang. Il alterne des phases de contraction et de remplissage. Comme une pompe, il met un liquide en mouvement, mais il est vivant.",
+     "titre": "Une pompe vivante",
+     "texte": "Le cœur est un muscle qui fait circuler le sang. Il se serre pour pousser le sang, puis se relâche pour se remplir à nouveau. C’est une pompe, mais une pompe vivante.",
      "schema": "Cœur stylisé qui se contracte puis se remplit, avec flèches de circulation. Étiquettes étapes simplifiées ; pas de nombre de battements imposé."
     },
     {
-     "titre": "Des routes de plusieurs tailles",
-     "texte": "Le sang passe dans des vaisseaux. Les artères l’éloignent du cœur, les veines le ramènent. De très petits vaisseaux, les capillaires, permettent des échanges avec les tissus.",
+     "titre": "Des routes de toutes tailles",
+     "texte": "Le sang voyage dans des tuyaux, les vaisseaux. Les artères l’emmènent loin du cœur. Les veines le ramènent au cœur. Les capillaires, tout fins, font des échanges entre le sang et le corps.",
      "schema": "Réseau cœur, artère, capillaires, veine. Flèches de sens ; teinte rouge sombre pour tout le sang, épaisseurs variables. Ne pas définir les artères par leur oxygène."
     },
     {
-     "titre": "Un passage par les poumons",
-     "texte": "Une partie du trajet relie le cœur aux poumons. Le sang y échange des gaz avec l’air, puis revient au cœur. Une autre partie dessert les organes du corps.",
+     "titre": "Un détour par les poumons",
+     "texte": "Une partie du voyage va du cœur aux poumons. Là, le sang prend de l’oxygène et laisse un autre gaz. Puis il revient au cœur, qui l’envoie vers tout le corps.",
      "schema": "Deux boucles distinctes autour d’un cœur : poumons en haut, organes en bas. Flèches rouges numérotées selon le trajet, sans passage d’air dans les vaisseaux."
     },
     {
-     "titre": "Transporter et récupérer",
-     "texte": "Le sang apporte notamment des nutriments et du dioxygène aux cellules. Il emporte du dioxyde de carbone et d’autres substances. Les globules rouges transportent une grande partie du dioxygène.",
+     "titre": "Livrer et ramasser",
+     "texte": "Le sang livre aux cellules des nutriments, leur nourriture, et de l’oxygène, que les savants appellent dioxygène. Il emporte un gaz déchet, le dioxyde de carbone. Les globules rouges transportent la plus grande partie de l’oxygène.",
      "schema": "Capillaire près de cellules ; petites molécules vers cellules, dioxyde de carbone vers sang. Globules rouges agrandis avec étiquette transport du dioxygène."
     },
     {
-     "titre": "Le sang reste rouge",
-     "texte": "Le sang peut être plus clair ou plus sombre selon son état. Il n’est pas bleu dans les veines. Sur certains schémas, le bleu est seulement un code de dessin.",
+     "titre": "Le sang est toujours rouge",
+     "texte": "Le sang est parfois rouge clair, parfois rouge foncé. Il n’est jamais bleu, même dans les veines. Sur certains dessins, on colore les veines en bleu : c’est juste un code.",
      "schema": "Deux échantillons dessinés rouge clair et rouge sombre ; à côté, vaisseau bleu de schéma avec légende code uniquement. Ne montrer aucune prise de sang."
     }
    ],
-   "dans_ta_vie": "Tu peux suivre un trajet sanguin sans croire que toutes les artères sont définies par un sang plus oxygéné.",
-   "securite": "Cette leçon explique le corps sans poser de diagnostic. Ne provoque ni douleur, ni effort inhabituel, ni blessure pour observer. Si quelque chose t’inquiète, parles-en à un adulte de confiance. En cas de doute, parlez-en à l’enseignant ou au médecin.",
-   "defi": "Pendant trois minutes, suis du doigt une boucle dessinée : cœur, poumons, cœur, organes, cœur. N’appuie sur aucune partie de ton corps pour chercher un vaisseau.",
+   "dans_ta_vie": "Tu sais suivre le voyage du sang, et tu sais qu’il n’est jamais bleu.",
+   "securite": "Cette leçon explique le corps, elle ne soigne pas. Ne te fais pas mal et ne fais pas d’effort inhabituel pour observer. Si quelque chose t’inquiète, parles-en à un adulte de confiance. En cas de doute, parlez-en à l’enseignant ou au médecin.",
+   "defi": "Pendant trois minutes, suis avec ton doigt une boucle dessinée : cœur, poumons, cœur, reste du corps, cœur. N’appuie sur aucune partie de ton corps pour chercher un vaisseau.",
    "quiz": [
     {
-     "q": "Une artère transporte le sang dans quel sens ?",
+     "q": "Dans quel sens une artère transporte-t-elle le sang ?",
      "choix": [
-      "En s’éloignant du cœur",
-      "Toujours vers le cœur",
-      "Toujours vers l’extérieur du corps"
+      "Elle l’emmène loin du cœur",
+      "Elle le ramène toujours au cœur",
+      "Elle le fait sortir du corps"
      ],
-     "rep": "En s’éloignant du cœur",
-     "expl": "Le sens par rapport au cœur définit artère et veine."
+     "rep": "Elle l’emmène loin du cœur",
+     "expl": "Les artères partent du cœur, les veines y reviennent."
     },
     {
      "q": "Le sang des veines est-il bleu ?",
      "choix": [
       "Oui",
       "Non",
-      "Oui, jusqu’à sa sortie du corps"
+      "Oui, jusqu’à ce qu’il sorte"
      ],
      "rep": "Non",
-     "expl": "Le bleu est parfois un code graphique."
+     "expl": "Le bleu des dessins est seulement un code."
     },
     {
-     "q": "Où se font de nombreux échanges avec les tissus ?",
+     "q": "Où se font beaucoup d’échanges entre le sang et le corps ?",
      "choix": [
-      "Dans les cheveux seulement",
+      "Dans les cheveux",
       "Dans l’air de la pièce",
       "Dans les capillaires"
      ],
      "rep": "Dans les capillaires",
-     "expl": "Les capillaires sont de très petits vaisseaux d’échange."
+     "expl": "Ce sont des vaisseaux tout fins."
     }
    ],
    "video": {
@@ -221,68 +221,68 @@
   },
   {
    "titre": "Respirer : deux trajets qui se rencontrent",
-   "accroche": "L’air et le sang échangent des gaz sans emprunter le même tuyau.",
+   "accroche": "L’air et le sang s’échangent des gaz, sans jamais passer dans le même tuyau.",
    "duree_min": 8,
    "cartes": [
     {
-     "titre": "L’air suit des conduits",
-     "texte": "L’air entre notamment par le nez ou la bouche, puis passe par la trachée et les bronches. Ces conduits se ramifient dans les poumons, comme un arbre aux nombreuses branches.",
+     "titre": "Le chemin de l’air",
+     "texte": "L’air entre par le nez ou la bouche. Il descend dans un tuyau, la trachée, puis dans les bronches. Dans les poumons, les bronches se divisent comme les branches d’un arbre.",
      "schema": "Silhouette de profil puis poumons de face ; nez, bouche, trachée et bronches étiquetés. Flèches bleues d’air ; œsophage dessiné séparément en gris."
     },
     {
-     "titre": "Des petits sacs d’échange",
-     "texte": "Au bout de très fines ramifications se trouvent les alvéoles, de minuscules sacs. Leurs parois proches des capillaires permettent les échanges de gaz entre l’air et le sang.",
+     "titre": "De petits sacs",
+     "texte": "Au bout des plus fines branches, il y a les alvéoles : de minuscules sacs d’air. Elles sont collées à des vaisseaux tout fins. C’est là que l’air et le sang s’échangent des gaz.",
      "schema": "Loupe sur groupe d’alvéoles entourées de capillaires. Air bleu à l’intérieur, sang rouge dans vaisseaux ; parois distinctes et flèches traversant seulement pour les molécules."
     },
     {
-     "titre": "Deux gaz dans deux sens",
-     "texte": "Du dioxygène passe de l’air vers le sang. Du dioxyde de carbone passe du sang vers l’air. Expirer permet notamment d’évacuer ce dernier, produit par le fonctionnement des cellules.",
+     "titre": "Deux gaz, deux sens",
+     "texte": "L’oxygène, que les savants appellent dioxygène, passe de l’air vers le sang. Le dioxyde de carbone, un déchet des cellules, passe du sang vers l’air. Quand tu expires, tu le rejettes.",
      "schema": "Une alvéole et un capillaire ; flèche verte dioxygène vers sang, violette dioxyde de carbone vers alvéole. Légende couleurs des molécules, sang toujours rouge."
     },
     {
-     "titre": "Un muscle aide à inspirer",
-     "texte": "Le diaphragme est un muscle sous les poumons. Quand il se contracte pendant une inspiration calme, il s’abaisse et le thorax s’agrandit. L’air peut alors entrer dans les poumons.",
+     "titre": "Un muscle pour respirer",
+     "texte": "Sous les poumons, il y a un muscle en forme de dôme : le diaphragme. Quand tu inspires calmement, il se contracte et descend. Ta poitrine s’agrandit et l’air entre dans tes poumons.",
      "schema": "Deux profils de thorax : diaphragme remonté puis abaissé. Poumons plus volumineux dans le second ; flèches indiquant air entrant et agrandissement, sans poumons aspirant par magie."
     },
     {
-     "titre": "Respirer et utiliser l’énergie",
-     "texte": "Les cellules utilisent notamment du dioxygène pour tirer de l’énergie de certains nutriments. Les poumons ne fabriquent donc pas toute l’énergie : ils participent à un transport indispensable.",
+     "titre": "L’énergie des cellules",
+     "texte": "Tes cellules utilisent l’oxygène pour tirer de l’énergie de leur nourriture. Les poumons ne fabriquent donc pas l’énergie : ils apportent l’oxygène dont les cellules ont besoin.",
      "schema": "Poumons vers sang puis cellule ; nutriments arrivent séparément à la cellule. Énergie symbolisée dans la cellule, dioxyde de carbone repartant ; aucun trajet de morceau d’aliment vers poumon."
     }
    ],
-   "dans_ta_vie": "Tu distingues le déplacement de l’air, les échanges dans les poumons et l’utilisation de l’énergie par les cellules.",
-   "securite": "Ne retiens pas ta respiration, ne respire pas très vite et ne souffle dans aucun produit pour cette leçon. Si respirer devient difficile, préviens tout de suite un adulte. En cas de doute, parlez-en à l’enseignant ou au médecin.",
-   "defi": "Pendant trois minutes, dessine une alvéole et un vaisseau voisin. Place les deux gaz et leurs flèches, en respirant simplement comme d’habitude.",
+   "dans_ta_vie": "Tu sais que respirer fait entrer l’oxygène et sortir le dioxyde de carbone, et que ce sont les cellules qui tirent l’énergie de la nourriture.",
+   "securite": "Ne retiens pas ta respiration et ne respire pas très vite pour cette leçon. Ne souffle dans aucun produit. Si tu as du mal à respirer, préviens tout de suite un adulte. En cas de doute, parlez-en à l’enseignant ou au médecin.",
+   "defi": "Pendant trois minutes, dessine une alvéole et un petit vaisseau à côté. Place les deux gaz avec leurs flèches. Respire normalement, comme d’habitude.",
    "quiz": [
     {
-     "q": "Le sang circule-t-il normalement dans la trachée ?",
+     "q": "Le sang passe-t-il dans la trachée ?",
      "choix": [
       "Oui",
       "Non",
-      "Oui, à chaque expiration"
+      "Oui, quand on expire"
      ],
      "rep": "Non",
-     "expl": "L’air et le sang suivent des voies séparées."
+     "expl": "La trachée est le tuyau de l’air, pas du sang."
     },
     {
-     "q": "Quel gaz passe notamment de l’alvéole vers le sang ?",
+     "q": "Quel gaz passe des alvéoles vers le sang ?",
      "choix": [
       "Le dioxyde de carbone",
       "La farine",
-      "Le dioxygène"
+      "L’oxygène"
      ],
-     "rep": "Le dioxygène",
-     "expl": "Les poumons fournissent du dioxygène au sang."
+     "rep": "L’oxygène",
+     "expl": "Les poumons donnent de l’oxygène au sang."
     },
     {
-     "q": "À l’inspiration calme, que fait le diaphragme ?",
+     "q": "Quand tu inspires calmement, que fait le diaphragme ?",
      "choix": [
-      "Il se contracte et s’abaisse",
+      "Il se contracte et descend",
       "Il disparaît",
-      "Il remonte toujours en se contractant"
+      "Il remonte"
      ],
-     "rep": "Il se contracte et s’abaisse",
-     "expl": "Son mouvement agrandit le volume du thorax."
+     "rep": "Il se contracte et descend",
+     "expl": "En descendant, il fait de la place pour l’air."
     }
    ],
    "video": {
@@ -293,38 +293,38 @@
   },
   {
    "titre": "Le repas ne tombe pas directement dans les jambes",
-   "accroche": "Avant de servir aux cellules, les aliments suivent tout un parcours.",
+   "accroche": "Avant d’aider tes cellules, ton repas fait un long voyage.",
    "duree_min": 8,
    "cartes": [
     {
-     "titre": "La bouche commence le travail",
-     "texte": "Les dents réduisent les aliments en morceaux et la salive les humidifie. Certaines substances de la salive commencent aussi à transformer des composants. La digestion débute donc avant l’estomac.",
+     "titre": "Tout commence dans la bouche",
+     "texte": "Tes dents coupent et écrasent les aliments. La salive les mouille et commence déjà à en transformer une partie. La digestion commence donc dans la bouche, bien avant l’estomac.",
      "schema": "Bouche simplifiée avec dents, morceau d’aliment et gouttes de salive. Trois étapes petites bouchées, morceaux, mélange ; aucune bouche anatomique inquiétante."
     },
     {
-     "titre": "Un tube fait avancer",
-     "texte": "Après la bouche, l’œsophage conduit le contenu vers l’estomac. Des muscles de sa paroi se contractent pour le faire avancer. Le repas ne dépend pas seulement d’une chute dans un tuyau.",
+     "titre": "Un tuyau qui pousse",
+     "texte": "Après la bouche, un tuyau, l’œsophage, amène les aliments jusqu’à l’estomac. Ses muscles se serrent l’un après l’autre pour les faire avancer. Les aliments ne tombent pas simplement.",
      "schema": "Œsophage vertical ; vague de contraction derrière un bol alimentaire dessiné. Flèche de progression et paroi mobile, sans gros morceaux réalistes."
     },
     {
-     "titre": "Transformer en éléments utilisables",
-     "texte": "Dans l’estomac puis l’intestin, des mouvements et des liquides digestifs poursuivent les transformations. Ils rendent disponibles des nutriments, de petits éléments que le corps peut absorber et utiliser.",
+     "titre": "Découper en tout petits morceaux",
+     "texte": "Dans l’estomac puis l’intestin, les aliments sont brassés et mélangés à des liquides spéciaux. Ils sont découpés en nutriments : de tout petits morceaux que ton corps peut utiliser.",
      "schema": "Parcours estomac vers intestin ; grosses formes alimentaires se divisent en petites formes nommées nutriments. Distinguer action mécanique et substances digestives par deux symboles."
     },
     {
      "titre": "L’intestin fait passer",
-     "texte": "Dans l’intestin grêle, beaucoup de nutriments traversent la paroi pour rejoindre la circulation. Ses replis offrent une grande surface, comme une serviette pliée qui cache beaucoup de tissu.",
+     "texte": "Dans l’intestin grêle, beaucoup de nutriments traversent la paroi et passent dans le sang. L’intestin a plein de replis, comme une serviette pliée qui cache beaucoup de tissu.",
      "schema": "Coupe d’intestin avec replis, puis loupe sur paroi et vaisseaux. Petits nutriments franchissant la paroi ; comparaison de serviette dans un cadre séparé."
     },
     {
-     "titre": "Ce qui reste poursuit sa route",
-     "texte": "Le gros intestin récupère notamment de l’eau ; les résidus participent aux selles. Le foie et le pancréas aident aussi la digestion et la gestion des nutriments. L’estomac ne fait pas tout.",
+     "titre": "Ce qui reste",
+     "texte": "Le gros intestin récupère surtout de l’eau. Les restes forment les selles. Le foie et le pancréas aident aussi à digérer. L’estomac ne fait pas tout le travail.",
      "schema": "Silhouette digestive avec gros intestin, foie et pancréas nommés. Trajet des résidus vers sortie, flèches d’aide vers digestion ; aucune liaison avec la vessie."
     }
    ],
-   "dans_ta_vie": "Tu comprends que manger, digérer et absorber sont des étapes différentes, et que les nutriments ne sont pas des morceaux de repas voyageant intacts.",
-   "securite": "Ne teste pas la digestion en avalant vite ou de gros morceaux. Ne consomme rien pour l’expérience ; les allergies et les consignes familiales restent prioritaires. En cas de doute, parlez-en à l’enseignant ou au médecin.",
-   "defi": "Pendant trois minutes, raconte à un proche le voyage d’un aliment imaginaire. Arrête-toi pour expliquer où le contenu reste dans le tube et où des nutriments passent dans la circulation.",
+   "dans_ta_vie": "Tu sais que manger, digérer et faire passer les nutriments dans le sang sont des étapes différentes.",
+   "securite": "Ne teste pas ta digestion en mangeant très vite ou de gros morceaux. Ne mange rien pour cette leçon : les allergies et les règles de ta famille passent en premier. En cas de doute, parlez-en à l’enseignant ou au médecin.",
+   "defi": "Pendant trois minutes, raconte à un proche le voyage d’un aliment imaginaire. Montre où il reste dans le tube et où les nutriments passent dans le sang.",
    "quiz": [
     {
      "q": "La digestion commence-t-elle seulement dans l’estomac ?",
@@ -334,27 +334,27 @@
       "Non, elle commence dans la bouche"
      ],
      "rep": "Non, elle commence dans la bouche",
-     "expl": "Mastication et salive commencent le travail."
+     "expl": "Les dents et la salive commencent le travail."
     },
     {
-     "q": "Où beaucoup de nutriments sont-ils absorbés ?",
+     "q": "Où beaucoup de nutriments passent-ils dans le sang ?",
      "choix": [
       "Dans l’intestin grêle",
       "Dans les os",
       "Dans la trachée"
      ],
      "rep": "Dans l’intestin grêle",
-     "expl": "La paroi intestinale permet leur passage vers la circulation."
+     "expl": "Ils traversent la paroi de l’intestin grêle."
     },
     {
-     "q": "Les selles et l’urine empruntent-elles normalement la même voie ?",
+     "q": "Que récupère surtout le gros intestin ?",
      "choix": [
-      "Oui",
-      "Non",
-      "Oui, jusqu’aux poumons"
+      "Des os",
+      "De l’eau",
+      "De l’air"
      ],
-     "rep": "Non",
-     "expl": "Les voies digestives et urinaires sont distinctes."
+     "rep": "De l’eau",
+     "expl": "Il récupère de l’eau, puis les restes forment les selles."
     }
    ],
    "video": {
@@ -365,68 +365,68 @@
   },
   {
    "titre": "Les messages voyagent dans ton corps",
-   "accroche": "Comment ta main et ton cerveau échangent-ils des informations ?",
+   "accroche": "Comment ta main et ton cerveau se parlent-ils ?",
    "duree_min": 8,
    "cartes": [
     {
      "titre": "Le cerveau fait partie d’un réseau",
-     "texte": "Le cerveau traite des informations et participe à de nombreuses commandes. Il travaille avec la moelle épinière et les nerfs. Ce n’est pas un petit personnage caché dans la tête.",
+     "texte": "Ton cerveau reçoit des informations et envoie des ordres. Il travaille avec la moelle épinière, cachée dans ton dos, et avec les nerfs. Ce n’est pas un petit pilote caché dans ta tête.",
      "schema": "Silhouette avec cerveau, moelle et nerfs en jaune. Plusieurs organes reliés ; aucune figure de pilote miniature à l’intérieur du cerveau."
     },
     {
-     "titre": "Des cellules spécialisées",
-     "texte": "Les neurones sont des cellules capables de transmettre des messages. Leurs prolongements relient des régions différentes. Ils coopèrent aussi avec d’autres cellules qui soutiennent le fonctionnement du système nerveux.",
+     "titre": "Les neurones",
+     "texte": "Les neurones sont des cellules qui transmettent des messages. Ils ont de longs prolongements, comme des fils, qui relient des endroits éloignés. D’autres cellules les aident à bien fonctionner.",
      "schema": "Neurone ramifié avec corps et long prolongement, puis voisinage de cellules de soutien. Flèche message sur le prolongement ; agrandissement clairement signalé."
     },
     {
-     "titre": "Changer de messager",
-     "texte": "Le long d’un neurone, le message comporte des phénomènes électriques. Entre de nombreux neurones, de petites molécules transmettent le relais. Ce ne sont pas des fils reliés aux prises de la maison.",
+     "titre": "Le message change de forme",
+     "texte": "Le long d’un neurone, le message voyage sous forme d’un petit signal électrique. Pour passer au neurone suivant, il est porté par de minuscules substances chimiques. Ce n’est pas l’électricité des prises !",
      "schema": "Deux neurones séparés par petit espace ; signal sur premier, molécules traversant espace, réponse du second. Icône prise barrée en marge, sans valeur électrique."
     },
     {
-     "titre": "Beaucoup se fait sans y penser",
-     "texte": "Des réseaux participent à la respiration automatique, aux réflexes et à d’autres réglages. Tu n’as pas besoin de décider chaque battement du cœur pour qu’il continue.",
+     "titre": "Beaucoup de choses se font toutes seules",
+     "texte": "Ton système nerveux règle beaucoup de choses sans que tu y penses : ta respiration, tes réflexes... Tu n’as pas besoin de décider chaque battement de ton cœur.",
      "schema": "Enfant lisant calmement ; bulles cœur, respiration, réflexe reliées au système nerveux. Légende plusieurs réglages, pas cerveau conscient commandant chaque événement."
     },
     {
-     "titre": "Apprendre modifie des liens",
-     "texte": "Quand tu apprends, certaines connexions et leur fonctionnement peuvent changer. Le cerveau n’est pas un disque qui reçoit une photo parfaite de chaque journée. Revenir sur une idée aide à la travailler.",
+     "titre": "Apprendre change les liens",
+     "texte": "Quand tu apprends, certains liens entre tes neurones changent. Ton cerveau n’est pas un appareil photo qui garde une image parfaite de chaque jour. Revoir une idée aide à l’apprendre.",
      "schema": "Réseau de points avant puis après apprentissage ; certains liens renforcés, d’autres modifiés. Aucun nombre de connexions ni promesse de performance."
     }
    ],
-   "dans_ta_vie": "Tu comprends que sentir, décider et bouger font intervenir des communications, et que beaucoup de réglages ne demandent pas une décision consciente.",
-   "securite": "Cette leçon explique le corps sans poser de diagnostic. Ne provoque ni douleur, ni effort inhabituel, ni blessure pour observer. Si quelque chose t’inquiète, parles-en à un adulte de confiance. En cas de doute, parlez-en à l’enseignant ou au médecin.",
-   "defi": "Pendant trois minutes, explique à un proche deux messages imaginaires : une information arrivant de la peau et une commande allant vers un muscle. Reste sur le dessin.",
+   "dans_ta_vie": "Tu sais que sentir, décider et bouger passent par des messages, et que beaucoup de choses se règlent sans que tu y penses.",
+   "securite": "Cette leçon explique le corps, elle ne soigne pas. Ne te fais pas mal et ne fais pas d’effort inhabituel pour observer. Si quelque chose t’inquiète, parles-en à un adulte de confiance. En cas de doute, parlez-en à l’enseignant ou au médecin.",
+   "defi": "Pendant trois minutes, explique à un proche deux messages imaginaires : un qui part de la peau vers le cerveau, et un qui va du cerveau vers un muscle. Reste sur le dessin.",
    "quiz": [
     {
-     "q": "Quel rôle joue un neurone ?",
+     "q": "À quoi sert un neurone ?",
      "choix": [
-      "Participer à la transmission de messages",
-      "Transporter le repas entier",
-      "Former directement tous les os"
+      "À transmettre des messages",
+      "À transporter le repas",
+      "À fabriquer les os"
      ],
-     "rep": "Participer à la transmission de messages",
-     "expl": "C’est une cellule spécialisée dans la communication."
+     "rep": "À transmettre des messages",
+     "expl": "C’est une cellule spécialisée dans les messages."
     },
     {
-     "q": "Dois-tu décider consciemment chaque battement du cœur ?",
+     "q": "Dois-tu décider chaque battement de ton cœur ?",
      "choix": [
       "Oui",
       "Non",
       "Oui, pendant le sommeil"
      ],
      "rep": "Non",
-     "expl": "Des mécanismes automatiques participent à son rythme."
+     "expl": "Il bat sans que tu aies besoin d’y penser."
     },
     {
-     "q": "Le système nerveux est-il branché sur les prises de la maison ?",
+     "q": "Ton système nerveux est-il branché sur les prises de la maison ?",
      "choix": [
       "Oui",
       "Oui, quand on dort",
       "Non"
      ],
      "rep": "Non",
-     "expl": "Les phénomènes électriques du vivant ne sont pas une alimentation domestique."
+     "expl": "Ses petits signaux électriques n’ont rien à voir avec les prises."
     }
    ],
    "video": {
@@ -437,68 +437,68 @@
   },
   {
    "titre": "Tes sens construisent une image du monde",
-   "accroche": "Tes yeux, tes oreilles et ta peau apportent des indices que le cerveau met ensemble.",
+   "accroche": "Tes yeux, tes oreilles et ta peau donnent des indices que ton cerveau rassemble.",
    "duree_min": 8,
    "cartes": [
     {
-     "titre": "Voir reçoit de la lumière",
-     "texte": "La lumière venant des objets entre dans l’œil. Une zone au fond, la rétine, transforme cette information en messages nerveux. Les yeux n’envoient pas des rayons pour éclairer le monde.",
+     "titre": "Voir, c’est recevoir la lumière",
+     "texte": "La lumière qui vient des objets entre dans ton œil. Au fond de l’œil, la rétine la change en messages pour le cerveau. Tes yeux n’envoient pas de rayons : ils reçoivent la lumière.",
      "schema": "Objet éclairé à gauche, rayons vers œil au centre, rétine puis nerf vers cerveau à droite. Aucune flèche lumineuse sortant de l’œil."
     },
     {
-     "titre": "Entendre commence par des vibrations",
-     "texte": "Un son correspond à des vibrations qui se propagent notamment dans l’air. L’oreille les reçoit et transforme leur effet en messages. Le cerveau participe à leur interprétation.",
+     "titre": "Entendre, c’est recevoir des vibrations",
+     "texte": "Un son, ce sont des vibrations qui voyagent, souvent dans l’air. Ton oreille les reçoit et les change en messages. Ton cerveau les comprend.",
      "schema": "Source sonore, ondes symboliques vers oreille, tympan vibrant puis oreille interne et nerf. Légende vagues dessinées pour représenter le phénomène invisible."
     },
     {
-     "titre": "Goût et odeur coopèrent",
-     "texte": "La langue détecte plusieurs goûts, comme sucré ou salé. Le nez détecte des odeurs. Le cerveau combine ces informations : reconnaître la saveur d’un aliment ne dépend pas de la langue seule.",
+     "titre": "Le goût et l’odeur font équipe",
+     "texte": "Ta langue reconnaît des goûts comme le sucré ou le salé. Ton nez sent les odeurs. Ton cerveau mélange tout ça pour reconnaître un aliment. La langue ne fait pas tout seule !",
      "schema": "Langue et nez en deux branches vers cerveau puis symbole aliment reconnu. Ne pas dessiner de carte de langue avec une zone exclusive pour chaque goût."
     },
     {
      "titre": "La peau envoie des informations",
-     "texte": "Des récepteurs de la peau répondent notamment au contact et à la température. D’autres signalent des situations pouvant abîmer le corps. Ces messages ne sont pas des invitations à tester une douleur.",
+     "texte": "Ta peau sent quand on la touche, et si c’est chaud ou froid. Elle prévient aussi quand quelque chose peut te faire mal. Ce n’est pas une raison pour tester la douleur !",
      "schema": "Main en coupe très simple ; capteurs symboliques et nerfs vers cerveau. Objets dangereux barrés à distance ; aucun contact chaud, piquant ou douloureux."
     },
     {
-     "titre": "Il n’y a pas seulement cinq sens",
-     "texte": "Des informations venues des muscles, des articulations et de l’oreille interne aident à connaître la position et l’équilibre. Ton corps reçoit donc plus d’indices que les cinq sens souvent cités.",
+     "titre": "Plus de cinq sens",
+     "texte": "Tes muscles, tes articulations et le fond de ton oreille, appelé oreille interne, t’aident à savoir comment ton corps est placé et à garder l’équilibre. Tu as donc plus que les cinq sens qu’on cite souvent.",
      "schema": "Silhouette debout, oreille interne agrandie, muscles et articulations pointés. Flèches d’information vers cerveau ; aucune rotation ou épreuve d’équilibre demandée."
     }
    ],
-   "dans_ta_vie": "Tu comprends que percevoir demande à la fois des récepteurs et une interprétation, avec des possibilités différentes selon les personnes.",
-   "securite": "Ne regarde jamais le Soleil et ne mets rien dans les oreilles. Ne teste ni chaleur, ni froid extrême, ni goût inconnu, ni vertige pour observer tes sens. En cas de doute, parlez-en à l’enseignant ou au médecin.",
-   "defi": "Pendant trois minutes au calme, nomme des sons ordinaires et des formes déjà visibles autour de toi. Tu peux aussi utiliser des dessins ou les moyens de perception qui te conviennent.",
+   "dans_ta_vie": "Tu sais que percevoir, c’est recevoir des informations et les comprendre, et que chacun perçoit à sa façon.",
+   "securite": "Ne regarde jamais le Soleil et ne mets rien dans tes oreilles. Ne teste pas le très chaud, le très froid, un goût inconnu ou le tournis pour observer tes sens. En cas de doute, parlez-en à l’enseignant ou au médecin.",
+   "defi": "Pendant trois minutes, au calme, nomme des sons et des formes autour de toi. Tu peux aussi utiliser des dessins, ou les sens qui te conviennent le mieux.",
    "quiz": [
     {
-     "q": "La lumière part-elle normalement de tes yeux pour voir un objet ?",
+     "q": "Pour voir, la lumière sort-elle de tes yeux ?",
      "choix": [
       "Oui",
-      "Non, elle entre dans les yeux",
+      "Non, elle entre dans tes yeux",
       "Oui, seulement dans le noir"
      ],
-     "rep": "Non, elle entre dans les yeux",
-     "expl": "L’œil reçoit de la lumière provenant des objets."
+     "rep": "Non, elle entre dans tes yeux",
+     "expl": "L’œil reçoit la lumière qui vient des objets."
     },
     {
-     "q": "Reconnaître une saveur dépend-il seulement de la langue ?",
+     "q": "Reconnaître le goût d’un aliment, est-ce le travail de la langue seule ?",
      "choix": [
       "Oui",
-      "Oui, sauf pour les liquides",
-      "Non, l’odorat participe aussi"
+      "Oui, sauf pour les boissons",
+      "Non, le nez aide aussi"
      ],
-     "rep": "Non, l’odorat participe aussi",
-     "expl": "Le cerveau combine notamment goût et odeur."
+     "rep": "Non, le nez aide aussi",
+     "expl": "Le cerveau mélange les goûts et les odeurs."
     },
     {
-     "q": "L’équilibre dépend-il d’autres informations que les cinq sens classiques ?",
+     "q": "L’équilibre utilise-t-il d’autres informations que les cinq sens ?",
      "choix": [
       "Oui",
       "Non",
-      "Seulement de la vue"
+      "Seulement la vue"
      ],
      "rep": "Oui",
-     "expl": "L’oreille interne et les informations du corps participent notamment à l’équilibre."
+     "expl": "L’oreille interne, les muscles et les articulations aident aussi."
     }
    ],
    "video": {
@@ -509,38 +509,38 @@
   },
   {
    "titre": "Les reins ne sont pas une passoire à repas",
-   "accroche": "Pourquoi l’urine et les selles ne racontent-elles pas le même trajet ?",
+   "accroche": "Pourquoi l’urine et les selles ne suivent-elles pas le même chemin ?",
    "duree_min": 8,
    "cartes": [
     {
      "titre": "Le sang transporte des déchets",
-     "texte": "Le fonctionnement des cellules produit des substances dont le corps doit régler la quantité ou se débarrasser. Une partie circule dans le sang. Les déchets ne sont donc pas seulement des restes dans l’intestin.",
+     "texte": "En travaillant, tes cellules fabriquent aussi des déchets. Ces déchets passent dans le sang. Il n’y a donc pas que des restes de repas dont le corps doit se débarrasser.",
      "schema": "Cellules à gauche, vaisseau rouge au centre, reins à droite. Petits symboles de substances entrant dans le sang ; aucun morceau d’aliment entier."
     },
     {
      "titre": "Filtrer puis récupérer",
-     "texte": "Les reins filtrent une partie du liquide du sang. Ils récupèrent ensuite beaucoup d’eau et de substances utiles, tout en ajustant ce qui reste. Ce n’est pas une simple passoire qui jette tout.",
+     "texte": "Les reins filtrent une partie du liquide du sang. Ensuite, ils reprennent beaucoup d’eau et de choses utiles. Ce qui reste devient l’urine. Les reins ne sont pas une passoire qui jette tout.",
      "schema": "Rein fermé puis loupe abstraite : filtration, retour vers sang, sortie vers urine. Flèches de couleurs distinctes ; légende étapes très simplifiées."
     },
     {
-     "titre": "L’urine rejoint une réserve",
-     "texte": "L’urine formée par les reins descend par deux conduits, les uretères, vers la vessie. La vessie stocke l’urine avant son évacuation. Elle ne la fabrique pas.",
+     "titre": "La vessie garde l’urine",
+     "texte": "L’urine descend des reins jusqu’à la vessie par deux petits tuyaux, les uretères. La vessie est une poche qui garde l’urine jusqu’au moment d’aller aux toilettes. Elle ne la fabrique pas.",
      "schema": "Deux reins en haut, deux uretères vers vessie en bas, sortie séparée. Flèches jaunes d’urine ; sang rouge dans un réseau distinct."
     },
     {
      "titre": "Deux sorties différentes",
-     "texte": "Les selles viennent du parcours digestif. L’urine vient du travail des reins sur le contenu du sang. Elles quittent le corps par des voies différentes.",
+     "texte": "Les selles viennent des restes de la digestion. L’urine vient du travail des reins sur le sang. Elles sortent du corps par deux chemins différents.",
      "schema": "Deux parcours côte à côte : tube digestif vers selles, reins et vessie vers urine. Aucun raccord entre intestin et vessie ; contours anatomiques non détaillés."
     },
     {
-     "titre": "La sueur sert surtout à refroidir",
-     "texte": "La sueur contient de l’eau et des substances dissoutes. Quand elle s’évapore, elle aide à refroidir le corps. Transpirer davantage n’est pas une manière de remplacer le travail des reins.",
+     "titre": "La sueur rafraîchit",
+     "texte": "La sueur est surtout faite d’eau. Quand elle s’évapore sur ta peau, elle te rafraîchit. Transpirer beaucoup ne remplace pas le travail des reins.",
      "schema": "Peau avec gouttes puis évaporation ; flèche rouge d’énergie quittant la peau. Rein dans une bulle séparée avec fonction distincte, sans mot détox."
     }
    ],
-   "dans_ta_vie": "Tu sais distinguer filtre rénal, stockage dans la vessie et digestion, sans confondre leurs sorties.",
-   "securite": "Ne te prive pas d’eau et ne bois pas une quantité inhabituelle pour tester les reins. N’observe ni ne manipule de liquide biologique ; parles-en à un adulte de confiance si quelque chose t’inquiète. En cas de doute, parlez-en à l’enseignant ou au médecin.",
-   "defi": "Pendant trois minutes, dessine deux routes séparées : celle des aliments et celle de l’urine. Explique qui fabrique l’urine et qui la stocke.",
+   "dans_ta_vie": "Tu sais que les reins fabriquent l’urine, que la vessie la garde, et que la digestion suit un autre chemin.",
+   "securite": "Ne te prive pas d’eau et ne bois pas beaucoup plus que d’habitude pour tester tes reins. Ne touche pas à l’urine ni aux selles pour observer. Si quelque chose t’inquiète, parles-en à un adulte de confiance. En cas de doute, parlez-en à l’enseignant ou au médecin.",
+   "defi": "Pendant trois minutes, dessine deux routes séparées : celle des aliments et celle de l’urine. Explique qui fabrique l’urine et qui la garde.",
    "quiz": [
     {
      "q": "Quel organe fabrique l’urine ?",
@@ -550,27 +550,27 @@
       "Les reins"
      ],
      "rep": "Les reins",
-     "expl": "Les reins ajustent le liquide filtré pour former l’urine."
+     "expl": "Les reins filtrent le sang et forment l’urine."
     },
     {
-     "q": "Quel est le rôle principal de la vessie ici ?",
+     "q": "À quoi sert la vessie ?",
      "choix": [
-      "Stocker l’urine",
-      "Transformer le pain en nutriments",
-      "Filtrer tout le sang"
+      "À garder l’urine",
+      "À digérer le pain",
+      "À filtrer le sang"
      ],
-     "rep": "Stocker l’urine",
-     "expl": "L’urine arrive depuis les reins."
+     "rep": "À garder l’urine",
+     "expl": "Elle garde l’urine venue des reins."
     },
     {
-     "q": "Transpirer remplace-t-il les reins ?",
+     "q": "Transpirer peut-il remplacer les reins ?",
      "choix": [
       "Oui",
       "Non",
-      "Oui, si la sueur est abondante"
+      "Oui, si on transpire beaucoup"
      ],
      "rep": "Non",
-     "expl": "La sueur participe surtout au réglage de température."
+     "expl": "La sueur sert surtout à rafraîchir le corps."
     }
    ],
    "video": {
@@ -581,68 +581,68 @@
   },
   {
    "titre": "Des défenses, pas une forteresse magique",
-   "accroche": "Ton corps rencontre des microbes et ne les traite pas tous de la même façon.",
+   "accroche": "Ton corps rencontre des microbes tous les jours, et il ne les traite pas tous pareil.",
    "duree_min": 8,
    "cartes": [
     {
-     "titre": "La peau forme une barrière",
-     "texte": "La peau protège le corps et limite beaucoup d’entrées. D’autres surfaces, comme celles du nez et de l’intestin, possèdent aussi des moyens de protection. Aucune barrière n’est absolument invincible.",
+     "titre": "La peau, une barrière",
+     "texte": "Ta peau protège ton corps : elle empêche beaucoup de choses d’entrer. L’intérieur de ton nez et de ton intestin a aussi ses protections. Mais aucune barrière n’est parfaite.",
      "schema": "Silhouette avec peau puis zoom sur surface protectrice. Nez et intestin signalés comme autres interfaces ; quelques microbes à l’extérieur, pas une armée invincible."
     },
     {
      "titre": "Microbe ne veut pas dire ennemi",
-     "texte": "Le mot microbe regroupe des organismes microscopiques et des virus. Beaucoup ne provoquent pas de maladie dans les conditions ordinaires ; certains vivent avec nous et participent à des fonctions utiles.",
+     "texte": "Les microbes sont si petits qu’on ne les voit pas à l’œil nu : bactéries, champignons minuscules, virus. Beaucoup ne rendent pas malade. Certains vivent même en toi et t’aident.",
      "schema": "Trois cadres : bactéries, champignons microscopiques, virus. Microbiote symbolisé sur une surface ; légende formes et tailles simplifiées, pas tous dangereux."
     },
     {
-     "titre": "Des cellules reconnaissent et agissent",
-     "texte": "Le système immunitaire réunit des cellules, des molécules et des organes de défense. Certaines cellules capturent des éléments ; d’autres organisent des réponses plus ciblées. Elles communiquent entre elles.",
+     "titre": "Les cellules de défense",
+     "texte": "Ton corps a des cellules de défense. Certaines attrapent les intrus. D’autres préparent une défense précise contre un microbe en particulier. Elles s’envoient des messages pour s’organiser.",
      "schema": "Cellules de défense de formes différentes autour d’une cible ; flèches de communication et capture simplifiée. Aucun combat armé ni destruction spectaculaire."
     },
     {
-     "titre": "Une mémoire de certaines rencontres",
-     "texte": "Après certaines rencontres, des défenses gardent une mémoire. La vaccination peut préparer cette reconnaissance pour une cible précise. Cela ne rend pas le corps protégé contre toutes les maladies.",
+     "titre": "Une mémoire",
+     "texte": "Après avoir rencontré certains microbes, tes défenses s’en souviennent. Un vaccin aide le corps à apprendre à reconnaître un microbe précis. Cela ne protège pas contre toutes les maladies.",
      "schema": "Première reconnaissance, cellules mémoire, seconde rencontre avec même symbole. Petite branche vaccination comme préparation ; cible différente à côté pour montrer les limites."
     },
     {
-     "titre": "Un signe demande une attention",
-     "texte": "Douleur, fatigue ou fièvre peuvent accompagner des situations différentes. Un seul signe ne suffit pas à savoir ce qui se passe. Le bon réflexe d’un enfant est d’en parler à un adulte.",
+     "titre": "Un signe, on en parle",
+     "texte": "Avoir mal, être très fatigué ou avoir de la fièvre peut arriver pour beaucoup de raisons. Un seul signe ne dit pas ce qui se passe. Le bon réflexe : en parler à un adulte.",
      "schema": "Enfant parlant à adulte de confiance ; trois bulles simples fatigue, douleur, fièvre. Point d’interrogation plutôt que diagnostic ; aucun médicament ni traitement dessiné."
     }
    ],
-   "dans_ta_vie": "Tu peux parler des défenses sans croire que tous les microbes sont dangereux ou qu’un symptôme donne un diagnostic.",
-   "securite": "Ne touche pas de plaie et ne cultive pas de microbes. Aucun médicament ne se prend pour cette leçon. Signale à un adulte de confiance une blessure, une douleur ou un malaise. En cas de doute, parlez-en à l’enseignant ou au médecin.",
-   "defi": "Pendant trois minutes, explique à un proche pourquoi barrière, défense et mémoire sont trois idées différentes. Utilise seulement des dessins et des mots.",
+   "dans_ta_vie": "Tu sais que beaucoup de microbes ne sont pas dangereux, et qu’un seul signe ne suffit pas pour savoir ce qui se passe.",
+   "securite": "Ne touche pas une blessure et ne fais pas pousser de microbes. Ne prends aucun médicament pour cette leçon. Si tu es blessé, si tu as mal ou si tu ne te sens pas bien, dis-le à un adulte de confiance. En cas de doute, parlez-en à l’enseignant ou au médecin.",
+   "defi": "Pendant trois minutes, explique à un proche la différence entre la barrière, la défense et la mémoire du corps. Utilise seulement des dessins et des mots.",
    "quiz": [
     {
-     "q": "Tous les microbes provoquent-ils une maladie ?",
+     "q": "Tous les microbes rendent-ils malade ?",
      "choix": [
       "Non",
       "Oui",
       "Oui, dès qu’on les voit"
      ],
      "rep": "Non",
-     "expl": "Beaucoup ne rendent pas malades et certains participent à des fonctions utiles."
+     "expl": "Beaucoup ne rendent pas malade, et certains nous aident."
     },
     {
-     "q": "La mémoire immunitaire protège-t-elle automatiquement contre toutes les cibles ?",
+     "q": "La mémoire des défenses protège-t-elle contre tous les microbes ?",
      "choix": [
       "Oui",
       "Non",
       "Oui, après une seule rencontre"
      ],
      "rep": "Non",
-     "expl": "Certaines réponses sont dirigées contre des cibles particulières."
+     "expl": "Elle reconnaît des microbes précis, pas tous."
     },
     {
-     "q": "Un seul symptôme permet-il à un enfant de poser un diagnostic ?",
+     "q": "Un enfant peut-il savoir ce qu’il a grâce à un seul signe ?",
      "choix": [
       "Oui",
-      "Oui, s’il ressemble à celui d’un ami",
+      "Oui, si un ami a eu la même chose",
       "Non"
      ],
      "rep": "Non",
-     "expl": "Des situations différentes peuvent produire un signe semblable."
+     "expl": "Un même signe peut avoir des causes différentes : on en parle à un adulte."
     }
    ],
    "video": {
@@ -653,48 +653,48 @@
   },
   {
    "titre": "Grandir et dormir : un corps qui change",
-   "accroche": "Tu ne grandis pas comme une règle que l’on étire.",
+   "accroche": "Tu ne grandis pas comme un élastique qu’on étire.",
    "duree_min": 8,
    "cartes": [
     {
-     "titre": "Grandir transforme des tissus",
-     "texte": "La croissance implique notamment la multiplication de cellules et la transformation des tissus. Les différentes parties du corps ne grandissent pas toutes exactement au même rythme.",
+     "titre": "Grandir, c’est construire",
+     "texte": "Pour grandir, tes cellules se multiplient et tes tissus changent. Toutes les parties de ton corps ne grandissent pas exactement à la même vitesse.",
      "schema": "Trois silhouettes à des âges différents, proportions évoluant ; zoom sur cellules en multiplication. Légende représentation générale, pas courbe individuelle de croissance."
     },
     {
      "titre": "Les messagers du corps",
-     "texte": "Des hormones, molécules qui portent des messages, participent à la croissance et à d’autres réglages. Elles circulent et agissent sur des cellules capables de recevoir leur message.",
+     "texte": "Les hormones sont des messagers chimiques. Elles voyagent dans le sang, comme des lettres. Seules les cellules qui ont la bonne « boîte aux lettres » reçoivent leur message. Certaines aident à grandir.",
      "schema": "Petites molécules dans un vaisseau vers des cellules avec récepteurs ; métaphore lettre et boîte aux lettres dans un cadre séparé. Aucun dosage ni valeur médicale."
     },
     {
-     "titre": "La puberté suit des rythmes différents",
-     "texte": "En grandissant, la puberté apporte des changements du corps. Son calendrier varie d’une personne à l’autre. Comparer deux camarades ne permet pas de décider que l’un fait mieux que l’autre.",
+     "titre": "Chacun son rythme",
+     "texte": "En grandissant, le corps change : c’est la puberté. Elle n’arrive pas au même âge pour tout le monde. Changer plus tôt ou plus tard, ce n’est ni mieux ni moins bien.",
      "schema": "Deux parcours de croissance parallèles avec étapes décalées ; silhouettes habillées et neutres. Aucune note, classement, âge limite ou détail intime."
     },
     {
-     "titre": "Dormir n’éteint pas le cerveau",
-     "texte": "Pendant le sommeil, le cerveau reste actif. Le sommeil participe notamment à la mémoire et à des réglages du corps. Ce n’est pas simplement un écran noir entre deux journées.",
+     "titre": "Le cerveau ne s’éteint pas la nuit",
+     "texte": "Quand tu dors, ton cerveau continue de travailler. Le sommeil aide notamment ta mémoire et le réglage de ton corps. Ce n’est pas juste un écran noir entre deux journées.",
      "schema": "Enfant endormi ; cerveau avec activité douce symbolique, liens vers mémoire et réglages. Aucun appareil médical ni nombre d’heures présenté comme prescription."
     },
     {
      "titre": "Ton corps t’appartient",
-     "texte": "Ton corps t’appartient. Les corps sont différents et changent chacun à leur rythme. Si une question, un changement ou une situation t’inquiète, parles-en à un adulte de confiance.",
+     "texte": "Ton corps t’appartient. Chaque corps est différent et change à son rythme. Si une question, un changement ou une situation t’inquiète, parles-en à un adulte de confiance.",
      "schema": "Plusieurs enfants habillés de morphologies et moyens de déplacement variés ; bulles de dialogue vers adultes. Aucun idéal corporel ni promesse de transformation."
     }
    ],
-   "dans_ta_vie": "Tu comprends que croissance, sommeil et changements du corps s’inscrivent dans le temps, avec des différences entre les personnes.",
-   "securite": "Ne change pas ton sommeil, ton alimentation ou tes activités pour faire une expérience. N’utilise aucun produit pour grandir ou dormir ; pose tes questions à un adulte de confiance. En cas de doute, parlez-en à l’enseignant ou au médecin.",
-   "defi": "Pendant trois minutes, raconte deux choses que tu sais maintenant sur le sommeil et la croissance. Ajoute une question que tu aimerais poser à un adulte.",
+   "dans_ta_vie": "Tu sais que grandir et dormir prennent du temps, et que chacun change à son rythme.",
+   "securite": "Ne change pas ton sommeil, ce que tu manges ou tes activités pour faire une expérience. Ne prends aucun produit pour grandir ou dormir. Pose tes questions à un adulte de confiance. En cas de doute, parlez-en à l’enseignant ou au médecin.",
+   "defi": "Pendant trois minutes, dis deux choses que tu as apprises sur le sommeil et sur le fait de grandir. Ajoute une question que tu aimerais poser à un adulte.",
    "quiz": [
     {
-     "q": "Le cerveau s’éteint-il complètement pendant le sommeil ?",
+     "q": "Ton cerveau s’éteint-il quand tu dors ?",
      "choix": [
       "Oui",
       "Non",
       "Oui, sauf quand on rêve"
      ],
      "rep": "Non",
-     "expl": "Il conserve une activité et participe à plusieurs fonctions."
+     "expl": "Il continue de travailler pendant le sommeil."
     },
     {
      "q": "Tous les enfants changent-ils au même rythme ?",
@@ -704,17 +704,17 @@
       "Non"
      ],
      "rep": "Non",
-     "expl": "Les rythmes et trajectoires peuvent varier."
+     "expl": "Chacun grandit à son rythme."
     },
     {
-     "q": "Une hormone est ici quoi ?",
+     "q": "Qu’est-ce qu’une hormone ?",
      "choix": [
-      "Une molécule messagère",
+      "Un messager chimique",
       "Un petit os",
       "Une réserve d’air"
      ],
-     "rep": "Une molécule messagère",
-     "expl": "Les hormones portent des messages vers certaines cellules."
+     "rep": "Un messager chimique",
+     "expl": "Elle porte un message à certaines cellules."
     }
    ],
    "video": {

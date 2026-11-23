@@ -5,68 +5,68 @@
  "lecons": [
   {
    "titre": "Ton repas a une histoire",
-   "accroche": "Derrière une assiette se cachent des champs, des animaux et beaucoup de métiers.",
+   "accroche": "Derrière ton assiette, il y a des champs, des animaux et beaucoup de métiers.",
    "duree_min": 8,
    "cartes": [
     {
      "titre": "Le magasin est une étape",
-     "texte": "Les aliments ne naissent pas dans les rayons. Ils ont une origine et passent par différentes étapes. Le magasin ressemble à une gare où arrivent des produits venus de nombreux chemins.",
+     "texte": "Les aliments ne poussent pas dans les rayons du magasin. Ils viennent d’ailleurs et font tout un voyage. Le magasin ressemble à une gare où arrivent des produits venus de partout.",
      "schema": "Assiette au centre ; chemins vers champ, élevage, mer et atelier. Magasin placé sur certains chemins seulement ; flèches orientées vers l’assiette."
     },
     {
      "titre": "Du côté des plantes",
-     "texte": "Le riz, les lentilles, les pommes et les carottes proviennent de plantes. Nous mangeons selon les cas une graine, un fruit, une feuille ou une autre partie.",
+     "texte": "Le riz, les lentilles, les pommes et les carottes viennent de plantes. Selon l’aliment, on mange une graine, un fruit, une racine ou une feuille.",
      "schema": "Quatre plantes alignées ; entourer le grain de riz, la graine de lentille, la pomme et la racine de carotte. Même couleur verte pour l’origine végétale."
     },
     {
      "titre": "Du côté des animaux",
-     "texte": "Le lait, les œufs, le poisson et la viande viennent d’animaux. Certains produits sont transformés : le fromage, par exemple, est fabriqué à partir de lait.",
+     "texte": "Le lait, les œufs, le poisson et la viande viennent d’animaux. Certains sont transformés : par exemple, on fabrique le fromage avec du lait.",
      "schema": "Vache vers lait puis fromage ; poule vers œuf ; poisson vers portion dessinée simplement. Flèches brunes, aucune scène de mise à mort."
     },
     {
-     "titre": "Il existe d’autres origines",
-     "texte": "Les champignons ne sont ni des plantes ni des animaux. Le sel, lui, est un minéral : il ne vient pas d’un être vivant. Tout ce qu’on mange ne vient donc pas des plantes ou des animaux.",
+     "titre": "D’autres origines",
+     "texte": "Les champignons ne sont ni des plantes ni des animaux : ils forment un groupe à part. Le sel, lui, est un minéral, comme les pierres : il ne vient pas d’un être vivant.",
      "schema": "Trois cadres nommés plantes, animaux, champignons ; quatrième cadre matière minérale avec cristaux de sel. Les cadres restent distincts, sans placer le champignon parmi les plantes."
     },
     {
      "titre": "Un plat mélange des chemins",
-     "texte": "Dans une tartine au fromage, le pain vient notamment du blé et le fromage du lait. Un seul aliment préparé peut réunir plusieurs origines.",
+     "texte": "Dans une tartine au fromage, le pain vient du blé et le fromage vient du lait. Un seul plat peut donc avoir plusieurs origines.",
      "schema": "Tartine décomposée en pain et fromage ; flèches arrière vers blé et lait, puis vers champ et vache. Réassembler la tartine en animation."
     }
    ],
-   "dans_ta_vie": "Tu apprends à chercher l’origine des ingrédients plutôt que le seul lieu où ils ont été achetés.",
-   "securite": "Observe avec un adulte. Ne goûte pas de plante, de champignon, d’aliment cru ou inconnu pour vérifier une idée. Respecte les allergies et les règles habituelles de la famille.",
-   "defi": "Pendant environ trois minutes, dessine un plat familier et relie deux ingrédients à leur origine. Demande à un adulte de t’aider si tu hésites ; ne goûte rien pour enquêter.",
+   "dans_ta_vie": "Tu apprends à chercher d’où vient un aliment, pas seulement où on l’a acheté.",
+   "securite": "Observe avec un adulte. Ne goûte jamais une plante, un champignon ou un aliment inconnu pour vérifier une idée. Respecte les allergies et les règles de ta famille.",
+   "defi": "Pendant trois minutes, dessine un plat que tu connais. Relie deux ingrédients à leur origine. Si tu hésites, demande à un adulte ; ne goûte rien pour enquêter.",
    "quiz": [
     {
-     "q": "Le magasin est-il l’endroit où pousse le riz ?",
+     "q": "Le riz pousse-t-il dans le magasin ?",
      "choix": [
       "Oui, dans les paquets",
-      "Non, il est une étape du parcours",
-      "Oui, dans les rayons frais"
+      "Non, le magasin est une étape du voyage",
+      "Oui, au rayon frais"
      ],
-     "rep": "Non, il est une étape du parcours",
-     "expl": "Le riz est produit par une plante cultivée."
+     "rep": "Non, le magasin est une étape du voyage",
+     "expl": "Le riz pousse sur une plante, dans un champ."
     },
     {
-     "q": "Le fromage vient principalement de quoi ?",
+     "q": "Avec quoi fabrique-t-on le fromage ?",
      "choix": [
-      "Du blé",
-      "Du sel seul",
-      "Du lait"
+      "Avec du blé",
+      "Avec du sel seulement",
+      "Avec du lait"
      ],
-     "rep": "Du lait",
-     "expl": "Le lait est transformé pour fabriquer du fromage."
+     "rep": "Avec du lait",
+     "expl": "Le lait est transformé en fromage."
     },
     {
      "q": "Un champignon est-il une plante ?",
      "choix": [
-      "Non, c’est un autre groupe du vivant",
-      "Oui, car il reste immobile",
-      "Oui, car il pousse parfois au sol"
+      "Non, il fait partie d’un autre groupe",
+      "Oui, car il ne bouge pas",
+      "Oui, car il pousse parfois par terre"
      ],
-     "rep": "Non, c’est un autre groupe du vivant",
-     "expl": "Les champignons sont distincts des plantes et des animaux."
+     "rep": "Non, il fait partie d’un autre groupe",
+     "expl": "Les champignons ne sont ni des plantes ni des animaux."
     }
    ],
    "video": {
@@ -77,68 +77,68 @@
   },
   {
    "titre": "La feuille, petite fabrique au Soleil",
-   "accroche": "Comment une plante peut-elle grandir sans manger une assiette de terre ?",
+   "accroche": "Comment une plante peut-elle grandir sans manger de la terre ?",
    "duree_min": 8,
    "cartes": [
     {
      "titre": "L’eau entre par les racines",
-     "texte": "Les racines absorbent de l’eau et des éléments minéraux. Elles aident aussi la plante à tenir dans le sol. Mais la terre ne fournit pas, à elle seule, toute sa matière.",
+     "texte": "Les racines boivent de l’eau et des minéraux, de minuscules éléments du sol. Elles tiennent aussi la plante. Mais la terre ne donne pas à la plante toute sa matière.",
      "schema": "Plante entière en coupe ; racines brunes dans le sol, eau bleue et petits symboles minéraux entrant. Étiquettes eau et minéraux ; tige et feuilles visibles."
     },
     {
      "titre": "Un ingrédient vient de l’air",
-     "texte": "Les feuilles reçoivent un gaz présent dans l’air : le dioxyde de carbone. Ce gaz apporte le carbone, l’un des éléments qui permettent de construire les sucres de la plante.",
+     "texte": "Les feuilles prennent dans l’air un gaz invisible : le dioxyde de carbone. La plante s’en sert pour fabriquer son sucre. Une partie de la plante vient donc de l’air !",
      "schema": "Air autour d’une feuille ; petits groupes nommés dioxyde de carbone entrant par des ouvertures agrandies. Flèche verte vers un symbole sucre, sans représenter de sucre venant du sol."
     },
     {
-     "titre": "La lumière fournit l’énergie",
-     "texte": "Avec de la lumière, une plante verte peut fabriquer des sucres à partir d’eau et de dioxyde de carbone. Ce travail s’appelle la photosynthèse. La lumière fournit de l’énergie, pas des morceaux de matière.",
+     "titre": "La lumière donne l’énergie",
+     "texte": "Avec la lumière du Soleil, la plante verte fabrique du sucre à partir d’eau et de dioxyde de carbone. Ce travail s’appelle la photosynthèse. La lumière donne l’énergie, pas de la matière.",
      "schema": "Soleil en haut, feuille au centre, eau bleue venant du bas et gaz venant du côté. Sortie verte sucre ; distinguer rayons jaunes d’énergie et flèches de matière."
     },
     {
-     "titre": "Les sucres voyagent",
-     "texte": "La plante utilise ses sucres pour grandir et fonctionner. Elle peut aussi en transformer et en stocker, par exemple dans des graines ou des organes souterrains.",
+     "titre": "Le sucre voyage",
+     "texte": "La plante utilise son sucre pour grandir et vivre. Elle peut aussi en garder en réserve, par exemple dans ses graines ou dans des parties sous la terre, comme la pomme de terre.",
      "schema": "Feuille productrice reliée par flèches vertes à jeune tige, grain et tubercule. Faire apparaître successivement grandir, fonctionner et stocker."
     },
     {
-     "titre": "Nous profitons de cette fabrication",
-     "texte": "Quand tu manges une graine ou un fruit, tu utilises de la matière fabriquée par une plante. Une partie de l’énergie qu’elle a reçue du Soleil se retrouve dans cette matière.",
+     "titre": "Nous en profitons",
+     "texte": "Quand tu manges un fruit ou une graine, tu manges de la matière fabriquée par une plante. Une partie de l’énergie du Soleil s’y trouve, gardée sous une autre forme.",
      "schema": "Soleil vers plante puis fruit vers assiette. Rayons jaunes jusqu’à la feuille, puis petits symboles d’énergie contenus dans le fruit ; aucune lumière enfermée littéralement."
     }
    ],
-   "dans_ta_vie": "Tu comprends pourquoi l’origine de nombreux aliments dépend à la fois de l’air, de l’eau et de la lumière.",
-   "securite": "Ne mange pas une plante parce qu’elle a des feuilles vertes. L’identification et le choix des aliments appartiennent aux adultes.",
-   "defi": "Pendant trois minutes, complète un dessin de plante avec trois arrivées : eau, dioxyde de carbone et lumière. Explique la différence entre un ingrédient de matière et une source d’énergie.",
+   "dans_ta_vie": "Tu comprends que beaucoup d’aliments existent grâce à l’air, à l’eau et à la lumière.",
+   "securite": "Ne mange jamais une plante juste parce qu’elle a des feuilles vertes. Ce sont les adultes qui savent quelles plantes se mangent.",
+   "defi": "Pendant trois minutes, dessine une plante avec trois flèches qui arrivent : l’eau, le dioxyde de carbone et la lumière. Dis lesquelles apportent de la matière et laquelle apporte de l’énergie.",
    "quiz": [
     {
-     "q": "Que fournit principalement la lumière à la photosynthèse ?",
+     "q": "Qu’apporte surtout la lumière à la plante ?",
      "choix": [
-      "Des graines déjà fabriquées",
-      "Toute l’eau de la plante",
+      "Des graines toutes prêtes",
+      "Toute son eau",
       "De l’énergie"
      ],
      "rep": "De l’énergie",
-     "expl": "La plante utilise l’énergie lumineuse."
+     "expl": "La plante utilise l’énergie de la lumière pour fabriquer son sucre."
     },
     {
-     "q": "D’où vient le carbone des sucres fabriqués ?",
+     "q": "D’où vient le carbone du sucre de la plante ?",
      "choix": [
       "Du dioxyde de carbone de l’air",
-      "Du Soleil sous forme de poussière",
-      "Uniquement des cailloux"
+      "De poussière de Soleil",
+      "Seulement des cailloux"
      ],
      "rep": "Du dioxyde de carbone de l’air",
-     "expl": "Le carbone est incorporé à partir du gaz."
+     "expl": "La plante prend ce gaz dans l’air par ses feuilles."
     },
     {
      "q": "Toute la matière d’une plante vient-elle de la terre ?",
      "choix": [
-      "Oui, sans autre apport",
+      "Oui, rien d’autre",
       "Non",
       "Oui, sauf ses couleurs"
      ],
      "rep": "Non",
-     "expl": "L’eau et des éléments de l’air participent à sa construction."
+     "expl": "L’eau et un gaz de l’air servent aussi à la construire."
     }
    ],
    "video": {
@@ -149,68 +149,68 @@
   },
   {
    "titre": "Racine, feuille ou fruit ?",
-   "accroche": "La partie que tu manges n’est pas toujours celle que tu imagines.",
+   "accroche": "La partie que tu manges n’est pas toujours celle que tu crois.",
    "duree_min": 8,
    "cartes": [
     {
-     "titre": "La carotte est une réserve",
-     "texte": "La partie orange de la carotte est principalement une racine épaissie. La plante y accumule des réserves. Ce n’est pas un fruit caché sous terre.",
+     "titre": "La carotte est une racine",
+     "texte": "La partie orange de la carotte est une grosse racine. La plante y garde des réserves. Ce n’est pas un fruit caché sous la terre.",
      "schema": "Carotte entière ; partie orange souterraine entourée et nommée racine. Feuilles vertes au-dessus ; petits points symbolisant les réserves dans la racine."
     },
     {
-     "titre": "La salade offre ses feuilles",
-     "texte": "Dans une salade verte, nous mangeons surtout des feuilles. Leur surface aide normalement la plante à recevoir la lumière. Une feuille n’a pas le même rôle qu’une graine.",
+     "titre": "La salade donne ses feuilles",
+     "texte": "Dans une salade verte, on mange surtout des feuilles. Leur grande surface aide la plante à attraper la lumière. Une feuille n’a pas le même rôle qu’une graine.",
      "schema": "Pied de laitue vu de face ; une feuille mise en évidence puis agrandie. Rayons jaunes sur sa surface ; étiquette feuille."
     },
     {
      "titre": "La tomate vient d’une fleur",
-     "texte": "Pour le botaniste, qui étudie les plantes, la tomate est un fruit : elle se forme à partir d’une fleur et contient des graines. En cuisine, on la classe souvent avec les légumes.",
+     "texte": "Pour les botanistes, les savants qui étudient les plantes, la tomate est un fruit : elle vient d’une fleur et contient des graines. Mais en cuisine, on la range souvent avec les légumes.",
      "schema": "Trois étapes de gauche à droite : fleur, petite tomate, tomate mûre en coupe avec graines. Flèches vertes ; légendes fruit en botanique et usage en cuisine."
     },
     {
      "titre": "La graine prépare la suite",
-     "texte": "Un haricot sec est une graine. Il contient une toute petite plante en début de développement et des réserves. Dans de bonnes conditions, une graine vivante peut commencer à germer.",
+     "texte": "Un haricot sec est une graine. Dedans, il y a une toute petite plante qui attend, et des réserves. Si les conditions sont bonnes, la graine peut germer, c’est-à-dire commencer à pousser.",
      "schema": "Haricot dessiné ouvert en schéma, pas à manipuler : embryon simple et réserves séparées. À droite, suite graine puis petite racine puis jeune pousse."
     },
     {
-     "titre": "Sous terre ne veut pas dire racine",
-     "texte": "La pomme de terre est un tubercule, une partie épaissie d’une tige souterraine. Ses yeux sont des bourgeons. Deux aliments qui poussent sous terre peuvent donc être des organes différents.",
+     "titre": "Sous la terre, pas toujours une racine",
+     "texte": "La pomme de terre n’est pas une racine. C’est un tubercule : un morceau de tige gonflé, sous la terre. Ses « yeux » sont des bourgeons, d’où partent de nouvelles pousses.",
      "schema": "Coupe du sol avec carotte à gauche et plant de pomme de terre à droite. Relier tubercules à la tige souterraine ; agrandir un œil et le nommer bourgeon."
     }
    ],
-   "dans_ta_vie": "Tu sais poser deux questions différentes : quelle partie de la plante est-ce, et comment la cuisine la nomme-t-elle ?",
-   "securite": "N’utilise pas de graine crue ou de pomme de terre crue comme dégustation. Ne goûte jamais une pomme de terre verte ou germée ; montre-la à un adulte.",
-   "defi": "Pendant trois minutes, classe sur papier une carotte, une feuille de salade, une tomate et un haricot : racine, feuille, fruit ou graine.",
+   "dans_ta_vie": "Tu sais poser deux questions : quelle partie de la plante est-ce, et comment l’appelle-t-on en cuisine ?",
+   "securite": "Ne goûte pas de graines crues ni de pomme de terre crue. Ne mange jamais une pomme de terre verte ou qui a germé : montre-la à un adulte.",
+   "defi": "Pendant trois minutes, range sur papier une carotte, une feuille de salade, une tomate et un haricot : racine, feuille, fruit ou graine ?",
    "quiz": [
     {
-     "q": "Quelle partie mange-t-on principalement dans une carotte ?",
+     "q": "Quelle partie mange-t-on dans une carotte ?",
      "choix": [
       "Une racine",
       "Une fleur",
       "Une graine"
      ],
      "rep": "Une racine",
-     "expl": "La racine épaissie accumule des réserves."
+     "expl": "C’est une grosse racine pleine de réserves."
     },
     {
-     "q": "Pourquoi la tomate est-elle un fruit en botanique ?",
+     "q": "Pourquoi les botanistes disent-ils que la tomate est un fruit ?",
      "choix": [
       "Elle est toujours sucrée",
-      "Elle se forme à partir d’une fleur et contient des graines",
+      "Elle vient d’une fleur et contient des graines",
       "Elle pousse forcément sur un arbre"
      ],
-     "rep": "Elle se forme à partir d’une fleur et contient des graines",
-     "expl": "Le classement botanique dépend de son origine dans la plante."
+     "rep": "Elle vient d’une fleur et contient des graines",
+     "expl": "Un fruit vient d’une fleur et contient des graines."
     },
     {
-     "q": "Une pomme de terre est-elle simplement une racine ?",
+     "q": "La pomme de terre est-elle une racine ?",
      "choix": [
-      "Oui, comme toute partie souterraine",
-      "Oui, parce qu’elle est brune",
-      "Non, c’est un tubercule de tige"
+      "Oui, comme tout ce qui pousse sous terre",
+      "Oui, parce qu’elle est marron",
+      "Non, c’est un morceau de tige gonflé"
      ],
-     "rep": "Non, c’est un tubercule de tige",
-     "expl": "Elle appartient à une tige souterraine épaissie."
+     "rep": "Non, c’est un morceau de tige gonflé",
+     "expl": "C’est un tubercule : une tige sous la terre."
     }
    ],
    "video": {
@@ -221,65 +221,65 @@
   },
   {
    "titre": "Pourquoi les fraises n’arrivent-elles pas toutes ensemble ?",
-   "accroche": "Les plantes suivent des conditions et des rythmes de croissance.",
+   "accroche": "Pour donner des fruits, les plantes ont besoin de temps, de chaleur et de lumière.",
    "duree_min": 8,
    "cartes": [
     {
      "titre": "Une plante a son rythme",
-     "texte": "Une graine ne devient pas une récolte en une journée. Germination, croissance et reproduction demandent du temps. Comme une histoire, certaines étapes doivent se suivre.",
+     "texte": "Une graine ne devient pas un fruit en un jour. Elle doit germer, grandir, fleurir, puis donner des fruits. Comme dans une histoire, les étapes viennent l’une après l’autre.",
      "schema": "Frise simplifiée : graine, pousse, plante, fleur, fruit. Horloge sans durée fixe au-dessous ; préciser exemple d’une plante à fruits."
     },
     {
-     "titre": "Les saisons changent les conditions",
-     "texte": "La durée du jour et les températures changent au cours de l’année. Selon l’espèce et le lieu, ces conditions influencent les périodes de croissance et de récolte.",
+     "titre": "Les saisons changent tout",
+     "texte": "Au fil de l’année, les jours sont plus ou moins longs et il fait plus ou moins chaud. Selon la plante et le pays, cela décide quand elle pousse et quand on récolte.",
      "schema": "Même champ dans quatre cadres saisonniers ; journées courtes puis longues illustrées par arcs du Soleil. Plante différente selon la saison, sans calendrier universel."
     },
     {
      "titre": "L’eau et le sol comptent aussi",
-     "texte": "Les cultures dépendent également de l’eau disponible, du sol et d’autres êtres vivants. Un agriculteur observe ces conditions et prend des décisions pour accompagner la production.",
+     "texte": "Les plantes ont aussi besoin d’eau, d’un bon sol et d’autres êtres vivants, comme les insectes. L’agriculteur observe tout cela pour décider quoi faire dans son champ.",
      "schema": "Champ au centre, pictogrammes eau, sol, insectes et météo autour. Personnage agricole observe un carnet ; flèches vers la culture."
     },
     {
-     "titre": "Une serre modifie le milieu",
-     "texte": "Une serre est un abri qui modifie les conditions autour des plantes. Elle peut les protéger et retenir de la chaleur. Certaines serres sont chauffées, d’autres non.",
+     "titre": "Une serre change l’air autour des plantes",
+     "texte": "Une serre est comme une maison transparente pour les plantes. Elle les protège et garde la chaleur. Certaines serres sont chauffées, d’autres non.",
      "schema": "Serre transparente à gauche et culture extérieure à droite. Rayons solaires jaunes ; thermomètres sans valeur. Deux petites vignettes distinguent serre chauffée et non chauffée."
     },
     {
      "titre": "Le lieu change le calendrier",
-     "texte": "Un fruit peut mûrir à une autre saison dans une région au climat différent. Sa présence au magasin ne prouve donc pas qu’il a poussé récemment près de chez toi.",
+     "texte": "Dans un pays au climat différent, un fruit peut mûrir à une autre saison. Le voir au magasin ne veut donc pas dire qu’il vient de pousser près de chez toi.",
      "schema": "Deux régions sur un globe simplifié ; récoltes décalées sur une frise. Flèche vers un même magasin ; ne pas attribuer un climat identique à tout un continent."
     }
    ],
-   "dans_ta_vie": "Tu comprends pourquoi la saison d’un aliment dépend aussi du lieu et de la façon de le produire.",
-   "securite": "Observe avec un adulte. Ne goûte pas de plante, de champignon, d’aliment cru ou inconnu pour vérifier une idée. Respecte les allergies et les règles habituelles de la famille.",
-   "defi": "Avec un adulte, choisis un fruit familier. Pendant trois minutes, dessine ses étapes et cherche sur son emballage fermé ou son étiquette le pays d’origine, si cette information est disponible.",
+   "dans_ta_vie": "Tu comprends que la saison d’un fruit dépend aussi de l’endroit et de la façon de le cultiver.",
+   "securite": "Observe avec un adulte. Ne goûte jamais une plante, un champignon ou un aliment inconnu pour vérifier une idée. Respecte les allergies et les règles de ta famille.",
+   "defi": "Avec un adulte, choisis un fruit que tu connais. Pendant trois minutes, dessine ses étapes. Puis cherchez ensemble sur l’étiquette le pays d’où il vient, si c’est écrit.",
    "quiz": [
     {
-     "q": "La période de récolte est-elle identique partout ?",
+     "q": "La récolte a-t-elle lieu au même moment partout ?",
      "choix": [
       "Oui, sur toute la Terre",
-      "Non, elle dépend notamment du lieu",
+      "Non, ça dépend aussi de l’endroit",
       "Oui, pour tous les fruits"
      ],
-     "rep": "Non, elle dépend notamment du lieu",
-     "expl": "Les conditions et les espèces diffèrent."
+     "rep": "Non, ça dépend aussi de l’endroit",
+     "expl": "Le climat et les plantes changent d’un endroit à l’autre."
     },
     {
-     "q": "Toutes les serres sont-elles chauffées artificiellement ?",
+     "q": "Toutes les serres sont-elles chauffées ?",
      "choix": [
       "Oui, toujours",
-      "Oui, seulement quand elles sont transparentes",
+      "Oui, quand elles sont transparentes",
       "Non"
      ],
      "rep": "Non",
-     "expl": "Il existe plusieurs façons de conduire une serre."
+     "expl": "Certaines sont chauffées, d’autres non."
     },
     {
-     "q": "Un fruit en rayon a-t-il forcément poussé près du magasin ?",
+     "q": "Un fruit au magasin a-t-il toujours poussé tout près ?",
      "choix": [
       "Non",
       "Oui, sinon il ne pourrait pas arriver",
-      "Oui, quelle que soit son étiquette"
+      "Oui, quoi que dise l’étiquette"
      ],
      "rep": "Non",
      "expl": "Il peut venir d’une autre région ou d’un autre pays."
@@ -293,68 +293,68 @@
   },
   {
    "titre": "Lait et œufs : deux histoires d’animaux",
-   "accroche": "Un œuf n’est pas un petit paquet de lait, et une vache ne produit pas du lait toute sa vie.",
+   "accroche": "Une vache ne donne pas du lait toute sa vie, et un œuf n’est pas toujours un futur poussin.",
    "duree_min": 8,
    "cartes": [
     {
      "titre": "Le lait nourrit un petit",
-     "texte": "Chez les mammifères, les femelles produisent du lait pour nourrir leurs petits. Une vache commence normalement à produire du lait après la naissance d’un veau.",
+     "texte": "Chez les mammifères, les mamans font du lait pour nourrir leurs petits. Une vache commence à donner du lait après la naissance de son veau.",
      "schema": "Vache et veau dans un cadre calme ; flèche du lait vers le petit. Frise naissance puis période de production, sans dessin anatomique détaillé."
     },
     {
-     "titre": "Une poule peut pondre sans coq",
-     "texte": "Une poule peut pondre un œuf sans qu’un coq l’ait fécondé. Un œuf non fécondé ne peut pas devenir un poussin. Pondre et former un futur poussin sont deux choses différentes.",
+     "titre": "Une poule pond même sans coq",
+     "texte": "Une poule peut pondre des œufs même sans coq. Mais sans coq, l’œuf ne peut pas devenir un poussin. Pondre un œuf et avoir un poussin, ce n’est pas pareil.",
      "schema": "Poule et œuf à gauche, légende ponte possible sans coq. À droite, schéma de conditions nécessaires au développement d’un poussin ; aucune promesse que chaque œuf en donne un."
     },
     {
-     "titre": "Leur alimentation a une origine",
-     "texte": "Les animaux d’élevage doivent manger et boire. Leur nourriture peut venir de l’herbe, de graines ou d’autres aliments adaptés. Le parcours d’un produit animal remonte donc aussi à ces ressources.",
+     "titre": "Les animaux mangent aussi",
+     "texte": "Les animaux de la ferme doivent manger et boire. Ils mangent de l’herbe, des graines ou d’autres aliments adaptés. Le lait et les œufs viennent donc aussi de ces ressources.",
      "schema": "Herbe, céréales et eau vers animal, puis lait ou œuf vers panier. Flèches brunes ; légende exemples d’alimentation, variable selon l’animal."
     },
     {
-     "titre": "Des métiers surveillent le parcours",
-     "texte": "Éleveurs, vétérinaires et professionnels de l’alimentation ont des rôles différents. Ils interviennent notamment sur les animaux, la collecte et les contrôles. Ce suivi ne se résume pas à un seul métier.",
+     "titre": "Des métiers veillent",
+     "texte": "Les éleveurs s’occupent des animaux et les vétérinaires les soignent. D’autres personnes ramassent le lait ou les œufs et vérifient qu’ils sont sains. Beaucoup de métiers travaillent ensemble.",
      "schema": "Trois étapes : élevage, collecte, atelier. Personnages avec étiquettes de métier ; pictogrammes observation et contrôle, sans montrer de traitement médical."
     },
     {
-     "titre": "Observer avec respect",
-     "texte": "Un animal reste un être vivant avec des besoins. Comprendre d’où vient un aliment, c’est aussi comprendre qu’il a fallu des soins, des ressources et du travail.",
+     "titre": "Respecter les animaux",
+     "texte": "Un animal est un être vivant qui a des besoins : de l’eau, de la nourriture, du repos. Derrière un aliment, il y a des soins, des ressources et du travail.",
      "schema": "Animal dans son espace avec eau, alimentation et zone de repos ; observateurs derrière la limite de visite. Aucun enfant dans l’enclos ni aliment tendu."
     }
    ],
-   "dans_ta_vie": "Tu distingues les conditions de production du lait et des œufs, sans confondre ces aliments avec l’animal entier.",
-   "securite": "Dans un élevage, reste avec l’adulte responsable. Ne nourris pas les animaux et ne bois pas de lait cru pendant une visite. Lave tes mains après le contact avec des animaux.",
-   "defi": "Pendant trois minutes, raconte à un proche le parcours d’un œuf ou du lait. Dessine aussi deux besoins de l’animal qui en est à l’origine.",
+   "dans_ta_vie": "Tu sais d’où viennent le lait et les œufs, et ce dont les animaux ont besoin.",
+   "securite": "Dans une ferme, reste avec l’adulte responsable. Ne donne pas à manger aux animaux et ne bois pas de lait cru pendant la visite. Lave-toi les mains après avoir touché des animaux.",
+   "defi": "Pendant trois minutes, raconte à un proche le voyage d’un œuf ou du lait. Dessine aussi deux besoins de l’animal qui l’a donné.",
    "quiz": [
     {
      "q": "Une poule peut-elle pondre sans coq ?",
      "choix": [
       "Non",
-      "Seulement un œuf en plastique",
+      "Seulement des œufs en plastique",
       "Oui"
      ],
      "rep": "Oui",
-     "expl": "La ponte n’exige pas que l’œuf soit fécondé."
+     "expl": "Elle pond, mais ces œufs ne donneront pas de poussin."
     },
     {
-     "q": "Un œuf non fécondé peut-il devenir un poussin ?",
+     "q": "Un œuf pondu sans coq peut-il devenir un poussin ?",
      "choix": [
       "Non",
       "Oui, s’il est assez gros",
       "Oui, dans chaque boîte"
      ],
      "rep": "Non",
-     "expl": "Il ne contient pas d’embryon issu d’une fécondation."
+     "expl": "Il faut un coq pour qu’un poussin puisse se former."
     },
     {
-     "q": "Le lait d’une vache sert naturellement à quoi ?",
+     "q": "Dans la nature, à quoi sert le lait de la vache ?",
      "choix": [
-      "À former ses plumes",
+      "À faire pousser ses plumes",
       "À nourrir son petit",
       "À remplacer l’eau de la rivière"
      ],
      "rep": "À nourrir son petit",
-     "expl": "Le lait est une nourriture produite pour le jeune mammifère."
+     "expl": "Les mamans mammifères nourrissent leurs petits avec leur lait."
     }
    ],
    "video": {
@@ -365,68 +365,68 @@
   },
   {
    "titre": "Le poisson vient-il toujours de la mer ?",
-   "accroche": "Certains poissons sont pêchés, d’autres élevés, et tous ne vivent pas en eau salée.",
+   "accroche": "Certains poissons sont pêchés, d’autres élevés, et tous ne vivent pas dans l’eau salée.",
    "duree_min": 8,
    "cartes": [
     {
      "titre": "Des milieux différents",
-     "texte": "Des poissons vivent dans la mer, d’autres dans les rivières et les lacs. Certaines espèces passent d’un milieu à l’autre pendant leur vie. Le mot poisson ne désigne pas un seul mode de vie.",
+     "texte": "Certains poissons vivent dans la mer, d’autres dans les rivières et les lacs. Quelques-uns, comme le saumon, passent de l’un à l’autre pendant leur vie.",
      "schema": "Mer, rivière et lac dans trois cadres ; silhouettes de poissons adaptées. Une flèche pointillée entre milieux indique seulement certaines espèces."
     },
     {
      "titre": "Pêcher des animaux sauvages",
-     "texte": "La pêche capture des animaux vivant librement dans leur milieu. Les techniques et les règles dépendent des lieux et des espèces. Un bateau ne fabrique pas les poissons qu’il ramène.",
+     "texte": "Pêcher, c’est attraper des poissons qui vivent en liberté. Les règles changent selon les lieux et les espèces. Le bateau ne fabrique pas les poissons : il les attrape.",
      "schema": "Poissons dans une zone aquatique, bateau en surface puis caisse de collecte. Flèche capture ; aucun détail technique de filet permettant une pratique."
     },
     {
      "titre": "Élever dans l’eau",
-     "texte": "L’aquaculture signifie élever des êtres vivants dans l’eau. Elle concerne notamment des poissons et des coquillages. Comme pour un élevage terrestre, les conditions doivent être suivies.",
+     "texte": "On peut aussi élever des poissons et des coquillages, comme des moules. Cet élevage dans l’eau s’appelle l’aquaculture. Comme à la ferme, il faut bien surveiller les animaux.",
      "schema": "Deux installations stylisées : bassin à poissons et élevage de coquillages. Étiquettes élevage et suivi ; distinguer de la scène de pêche sauvage."
     },
     {
-     "titre": "Les ressources ne sont pas sans limite",
-     "texte": "Pour renouveler une population, des jeunes doivent grandir et se reproduire. Capturer trop d’animaux ou abîmer leur milieu peut perturber ce renouvellement.",
+     "titre": "Les poissons ne sont pas infinis",
+     "texte": "Pour qu’il y ait toujours des poissons, les jeunes doivent grandir et avoir des petits. Si on en pêche trop ou si on abîme leur milieu, ils ne se renouvellent plus assez.",
      "schema": "Frise œufs, jeunes, adultes, reproduction. Quelques flèches de capture retirent des silhouettes ; comparaison qualitative d’un cycle maintenu et d’un cycle perturbé."
     },
     {
      "titre": "L’étiquette donne des indices",
-     "texte": "Selon le produit, une étiquette peut indiquer l’espèce, la zone de capture ou le mode d’élevage. Ces informations aident l’adulte à retracer une partie du parcours.",
+     "texte": "Sur l’étiquette, on peut parfois lire le nom du poisson, s’il a été pêché ou élevé, et où. Cela aide l’adulte à connaître une partie de son voyage.",
      "schema": "Étiquette fictive sans marque : nom de l’espèce, capturé ou élevé, zone. Loupes successives sur chaque rubrique ; aucun label inventé."
     }
    ],
-   "dans_ta_vie": "Tu sais que poisson sauvage, poisson élevé, eau douce et eau salée correspondent à des questions différentes.",
-   "securite": "N’attrape, ne ramasse et ne goûte aucun animal aquatique pour cette leçon. Ne t’approche jamais de l’eau sans la surveillance d’un adulte.",
-   "defi": "Pendant trois minutes, dessine deux parcours : un poisson pêché et un poisson élevé. Explique la différence sans te rendre près de l’eau.",
+   "dans_ta_vie": "Tu sais qu’un poisson peut être sauvage ou élevé, et vivre en eau douce ou en eau salée.",
+   "securite": "N’attrape, ne ramasse et ne goûte aucun animal de l’eau pour cette leçon. Ne t’approche jamais de l’eau sans un adulte qui te surveille.",
+   "defi": "Pendant trois minutes, dessine deux voyages : un poisson pêché et un poisson élevé. Explique la différence, sans aller au bord de l’eau.",
    "quiz": [
     {
-     "q": "Que signifie aquaculture ?",
+     "q": "Que veut dire aquaculture ?",
      "choix": [
-      "Élevage d’êtres vivants dans l’eau",
-      "Capture de tous les animaux sauvages",
-      "Culture de céréales dans un bateau"
+      "Élever des animaux dans l’eau",
+      "Attraper tous les animaux sauvages",
+      "Cultiver du blé sur un bateau"
      ],
-     "rep": "Élevage d’êtres vivants dans l’eau",
-     "expl": "C’est une activité d’élevage aquatique."
+     "rep": "Élever des animaux dans l’eau",
+     "expl": "C’est l’élevage dans l’eau, par exemple de poissons ou de moules."
     },
     {
-     "q": "Tous les poissons vivent-ils en mer ?",
+     "q": "Tous les poissons vivent-ils dans la mer ?",
      "choix": [
       "Oui",
       "Non",
-      "Oui, sauf les très petits"
+      "Oui, sauf les tout petits"
      ],
      "rep": "Non",
-     "expl": "Des espèces vivent en eau douce."
+     "expl": "Beaucoup vivent dans les rivières et les lacs, en eau douce."
     },
     {
-     "q": "Pourquoi laisser des animaux se reproduire ?",
+     "q": "Pourquoi faut-il laisser des poissons avoir des petits ?",
      "choix": [
-      "Pour transformer tous les adultes en eau",
-      "Pour éviter qu’ils grandissent",
-      "Pour permettre le renouvellement des populations"
+      "Pour changer les adultes en eau",
+      "Pour les empêcher de grandir",
+      "Pour qu’il y ait encore des poissons plus tard"
      ],
-     "rep": "Pour permettre le renouvellement des populations",
-     "expl": "La reproduction contribue à produire une nouvelle génération."
+     "rep": "Pour qu’il y ait encore des poissons plus tard",
+     "expl": "Les petits remplacent les poissons pêchés."
     }
    ],
    "video": {
@@ -437,68 +437,68 @@
   },
   {
    "titre": "Du grain à la mie pleine de trous",
-   "accroche": "Pourquoi le pain n’a-t-il plus la forme d’un épi ?",
+   "accroche": "Pourquoi le pain ne ressemble-t-il plus du tout à un épi de blé ?",
    "duree_min": 8,
    "cartes": [
     {
      "titre": "Le blé porte des grains",
-     "texte": "Le blé est une plante dont on récolte les grains. Chaque grain contient notamment des réserves. Avant le pain, il y a donc une culture et une récolte.",
+     "texte": "Le blé est une plante. On récolte ses grains, qui sont pleins de réserves. Avant le pain, il y a donc un champ et une récolte.",
      "schema": "Épi en haut ; zoom sur un grain puis groupe de grains récoltés. Flèches vertes ; réserve montrée dans une coupe simplifiée."
     },
     {
      "titre": "Le moulin transforme",
-     "texte": "Au moulin, des grains sont nettoyés puis broyés et séparés pour obtenir de la farine. La farine n’est pas une poudre sortie directement du champ.",
+     "texte": "Au moulin, on nettoie les grains, on les écrase, puis on les trie. On obtient de la farine. La farine ne sort pas toute prête du champ.",
      "schema": "Grains à gauche, moulin fermé au centre, farine à droite. Étapes nettoyer, broyer, séparer sur des flèches ; aucune machine ouverte ni mode d’emploi."
     },
     {
-     "titre": "La pâte retient un gaz",
-     "texte": "Dans beaucoup de pains, des levures, de minuscules champignons, utilisent des sucres et produisent du dioxyde de carbone. Des bulles restent dans la pâte et la font gonfler.",
+     "titre": "Des bulles dans la pâte",
+     "texte": "Dans la pâte à pain, on met souvent de la levure : de minuscules champignons. Ils mangent un peu de sucre et rejettent un gaz, le dioxyde de carbone. Ses bulles font gonfler la pâte.",
      "schema": "Pâte dans un bol dessiné, loupe sur levures et bulles. Animer le grossissement des bulles emprisonnées ; nommer le gaz, sans recette ni quantités."
     },
     {
-     "titre": "Le four change la structure",
-     "texte": "La cuisson transforme la pâte et fixe en grande partie sa structure. Les espaces laissés par les bulles participent aux trous de la mie. Le pain ne gonfle pas parce qu’il respire comme toi.",
+     "titre": "Le four garde les trous",
+     "texte": "Dans le four, la pâte cuit et devient ferme. Les bulles laissent leur place : ce sont les trous de la mie. Le pain ne gonfle pas parce qu’il respire comme toi.",
      "schema": "Frise pâte gonflée, four fermé, pain refroidi coupé en dessin. Montrer les bulles devenant des cavités ; aucun enfant devant une porte de four ouverte."
     },
     {
-     "titre": "Une transformation a une raison",
-     "texte": "Moudre, mélanger et cuire changent la forme, la texture et les usages. Transformé ne veut donc pas simplement dire mauvais ou mystérieux : il faut comprendre ce qui a été fait.",
+     "titre": "Chaque étape a une raison",
+     "texte": "Moudre, mélanger et cuire changent la forme et le goût du blé. Un aliment transformé n’a rien de mystérieux : on peut comprendre chaque étape.",
      "schema": "Même parcours résumé en cinq cases : grain, farine, pâte, cuisson, pain. Une petite étiquette sous chaque case nomme uniquement le changement."
     }
    ],
-   "dans_ta_vie": "Tu peux retrouver le champ et le travail des levures derrière une simple tranche de pain.",
-   "securite": "Cette leçon ne propose pas de cuisson. Ne touche ni moulin, ni couteau, ni four. Ne mange pas de farine ou de pâte crue ; respecte les allergies.",
-   "defi": "Pendant trois minutes, dessine une coupe de pain avec des trous, puis raconte les étapes qui les expliquent. Aucun essai avec de la pâte n’est nécessaire.",
+   "dans_ta_vie": "Derrière une tranche de pain, tu peux retrouver le champ, le moulin et le travail des levures.",
+   "securite": "Cette leçon ne demande pas de cuisiner. Ne touche ni moulin, ni couteau, ni four. Ne mange pas de farine ni de pâte crue, et respecte les allergies.",
+   "defi": "Pendant trois minutes, dessine une tranche de pain avec ses trous. Puis raconte les étapes qui expliquent ces trous. Pas besoin de pâte !",
    "quiz": [
     {
      "q": "D’où vient la farine de blé ?",
      "choix": [
-      "De feuilles séchées uniquement",
-      "De grains transformés au moulin",
+      "De feuilles séchées",
+      "De grains écrasés au moulin",
       "De sable mélangé à l’eau"
      ],
-     "rep": "De grains transformés au moulin",
-     "expl": "Les grains sont broyés et séparés."
+     "rep": "De grains écrasés au moulin",
+     "expl": "Les grains sont écrasés puis triés."
     },
     {
-     "q": "Quel gaz les levures peuvent-elles produire dans la pâte ?",
+     "q": "Quel gaz les levures rejettent-elles dans la pâte ?",
      "choix": [
-      "Du dioxygène uniquement",
-      "De la vapeur froide solide",
+      "De l’oxygène",
+      "De la fumée",
       "Du dioxyde de carbone"
      ],
      "rep": "Du dioxyde de carbone",
-     "expl": "Ce gaz forme des bulles dans la pâte."
+     "expl": "Ce gaz forme les bulles qui font gonfler la pâte."
     },
     {
-     "q": "Les trous de la mie proviennent notamment de quoi ?",
+     "q": "D’où viennent les trous de la mie ?",
      "choix": [
-      "Des bulles retenues dans la pâte",
-      "De petits tunnels creusés après cuisson",
-      "De graines disparues une par une"
+      "Des bulles restées dans la pâte",
+      "De petits tunnels creusés après la cuisson",
+      "De graines qui ont disparu"
      ],
-     "rep": "Des bulles retenues dans la pâte",
-     "expl": "Les cavités gardent la trace des bulles."
+     "rep": "Des bulles restées dans la pâte",
+     "expl": "Les trous sont la place laissée par les bulles."
     }
    ],
    "video": {
@@ -509,68 +509,68 @@
   },
   {
    "titre": "Le yaourt et ses petits travailleurs",
-   "accroche": "Des microbes peuvent aider à fabriquer des aliments, mais pas n’importe lesquels.",
+   "accroche": "Certains microbes aident à fabriquer des aliments, mais pas n’importe lesquels.",
    "duree_min": 8,
    "cartes": [
     {
-     "titre": "Un lait collecté et suivi",
-     "texte": "Après la traite, le lait destiné à la transformation est collecté et transporté dans des conditions contrôlées. Le froid ralentit la multiplication de nombreux microbes ; il ne les fait pas tous disparaître.",
+     "titre": "Le lait reste au froid",
+     "texte": "Après la traite, le lait est ramassé et transporté au froid jusqu’à l’usine. Le froid empêche beaucoup de microbes de se multiplier vite. Mais il ne les fait pas tous disparaître.",
      "schema": "Élevage, cuve fermée, camion adapté et atelier. Flocon bleu accompagne les étapes froides ; microbes symboliques restent présents mais leur multiplication ralentit."
     },
     {
-     "titre": "Chauffer pour sécuriser",
-     "texte": "La pasteurisation est un chauffage contrôlé, fait à l’usine. Elle détruit une grande partie des microbes, surtout ceux qui peuvent rendre malade. Elle ne rend pas le lait éternel. Ce n’est pas une expérience à faire chez toi.",
+     "titre": "Chauffer pour protéger",
+     "texte": "À l’usine, on peut chauffer le lait avec soin : c’est la pasteurisation. Elle détruit une grande partie des microbes, surtout ceux qui rendent malade. Mais le lait ne se garde pas pour toujours.",
      "schema": "Lait dans un équipement industriel fermé ; thermomètre abstrait puis diminution des symboles microbiens. Étiquette traitement contrôlé ; aucun temps ni température de recette."
     },
     {
      "titre": "Des microbes choisis",
-     "texte": "Pour fabriquer du yaourt, on ajoute des bactéries particulières. Elles utilisent un sucre du lait et produisent notamment de l’acide lactique. C’est une fermentation.",
+     "texte": "Pour faire un yaourt, on ajoute au lait des bactéries spéciales, bien choisies. Elles mangent le sucre du lait et fabriquent un acide, l’acide lactique. Ce travail s’appelle la fermentation.",
      "schema": "Cuve fermée avec bactéries choisies en symboles ronds ; sucre vers acide lactique par une flèche. Légende formes agrandies et couleurs symboliques."
     },
     {
-     "titre": "Le lait change de texture",
-     "texte": "L’acidité modifie l’organisation de certaines protéines, les petites constructions présentes dans le lait. Un réseau se forme et retient de l’eau : le mélange devient plus épais.",
+     "titre": "Le lait épaissit",
+     "texte": "Cet acide change les protéines du lait, de toutes petites briques qui flottent dedans. Elles s’accrochent entre elles et forment un filet qui retient l’eau. Le lait devient épais.",
      "schema": "Loupe avant : éléments dispersés ; après : réseau relié entourant des points bleus d’eau. Flèche de transformation ; aucune représentation de bactéries formant directement un filet."
     },
     {
-     "titre": "Utile ne veut pas dire quelconque",
-     "texte": "Les bactéries utilisées sont choisies et les conditions sont contrôlées. Une nourriture abandonnée qui change d’aspect n’est pas une recette. On ne décide jamais de goûter pour savoir quels microbes sont présents.",
+     "titre": "Pas n’importe quel microbe",
+     "texte": "Pour le yaourt, on choisit les bactéries et on contrôle tout. Un aliment oublié qui change d’aspect, ce n’est pas une recette ! Ne le goûte jamais pour voir.",
      "schema": "Deux cadres séparés : fabrication contrôlée du yaourt avec coche, aliment inconnu laissé à l’air avec symbole d’alerte. Un adulte examine l’information, sans dégustation."
     }
    ],
-   "dans_ta_vie": "Tu comprends que microbe ne signifie pas toujours ennemi, et que fabriquer un aliment demande des conditions maîtrisées.",
-   "securite": "Ne cultive pas de microbes et ne fabrique pas de yaourt pour cette leçon. Ne goûte jamais un aliment altéré ou inconnu ; demande à un adulte.",
-   "defi": "Pendant trois minutes, raconte avec des dessins comment des bactéries choisies peuvent modifier le lait. Termine par la différence entre une fabrication contrôlée et un aliment oublié.",
+   "dans_ta_vie": "Tu sais qu’un microbe n’est pas toujours un ennemi, mais que fabriquer un aliment demande beaucoup de soin.",
+   "securite": "Ne fais pas pousser de microbes et ne fabrique pas de yaourt pour cette leçon. Ne goûte jamais un aliment abîmé ou inconnu : demande à un adulte.",
+   "defi": "Pendant trois minutes, raconte avec des dessins comment des bactéries choisies changent le lait en yaourt. Termine en montrant la différence avec un aliment oublié.",
    "quiz": [
     {
-     "q": "Le froid élimine-t-il tous les microbes ?",
+     "q": "Le froid tue-t-il tous les microbes ?",
      "choix": [
-      "Oui, instantanément",
-      "Oui, dès que le lait est blanc",
-      "Non, il ralentit surtout beaucoup d’entre eux"
+      "Oui, tout de suite",
+      "Oui, si le lait est blanc",
+      "Non, il les empêche surtout de se multiplier vite"
      ],
-     "rep": "Non, il ralentit surtout beaucoup d’entre eux",
-     "expl": "De nombreux microbes peuvent survivre au froid."
+     "rep": "Non, il les empêche surtout de se multiplier vite",
+     "expl": "Beaucoup de microbes restent vivants au froid."
     },
     {
-     "q": "Dans le yaourt, que produisent notamment les bactéries choisies ?",
+     "q": "Que fabriquent les bactéries du yaourt ?",
      "choix": [
       "De l’acide lactique",
       "Des grains de blé",
       "Des coquilles"
      ],
      "rep": "De l’acide lactique",
-     "expl": "La fermentation transforme une partie du sucre du lait."
+     "expl": "Elles changent une partie du sucre du lait en acide."
     },
     {
-     "q": "Un aliment oublié qui change d’aspect devient-il forcément un yaourt ?",
+     "q": "Un aliment oublié qui change d’aspect devient-il un yaourt ?",
      "choix": [
       "Oui, avec assez de temps",
       "Non",
-      "Oui, si l’on ne voit pas les microbes"
+      "Oui, si on ne voit pas les microbes"
      ],
      "rep": "Non",
-     "expl": "Une fabrication alimentaire exige des organismes et conditions maîtrisés."
+     "expl": "Un yaourt demande des bactéries choisies et des conditions contrôlées."
     }
    ],
    "video": {
@@ -581,68 +581,68 @@
   },
   {
    "titre": "Le voyage avant ton assiette",
-   "accroche": "Deux aliments identiques en apparence peuvent avoir suivi des chemins très différents.",
+   "accroche": "Deux aliments qui se ressemblent ont parfois fait des voyages très différents.",
    "duree_min": 8,
    "cartes": [
     {
-     "titre": "Récolter n’est pas la dernière étape",
-     "texte": "Après la récolte ou la collecte viennent parfois le tri, le lavage, la transformation et l’emballage. Les étapes varient selon l’aliment : une pomme et du pain n’ont pas le même parcours.",
+     "titre": "Après la récolte",
+     "texte": "Après la récolte, il y a parfois d’autres étapes : trier, laver, transformer, emballer. Elles changent selon l’aliment. Une pomme et du pain ne font pas le même voyage.",
      "schema": "Deux frises parallèles : pomme récoltée, triée, distribuée ; blé récolté, moulu, transformé, distribué. Ne pas imposer le même nombre d’étapes."
     },
     {
-     "titre": "Les transports ont plusieurs tailles",
-     "texte": "Un aliment peut voyager en camion, en bateau, en train ou parfois en avion. La distance compte, mais le mode de transport et la quantité transportée comptent aussi.",
+     "titre": "Camion, bateau, train ou avion",
+     "texte": "Un aliment peut voyager en camion, en bateau, en train ou parfois en avion. La distance compte, mais le moyen de transport et la quantité transportée comptent aussi.",
      "schema": "Carte simple avec quatre moyens de transport sans marque. Flèches de styles distincts et légendées ; aucune comparaison chiffrée non sourcée."
     },
     {
-     "titre": "Certains produits restent au froid",
-     "texte": "Pour des aliments sensibles, la température doit rester adaptée pendant le trajet et le stockage. Cette suite de conditions s’appelle la chaîne du froid. Une boîte ne suffit pas à la garantir.",
+     "titre": "Garder au froid",
+     "texte": "Certains aliments, comme le lait ou la viande, doivent rester au froid pendant tout leur voyage. Ça s’appelle la chaîne du froid. Une simple boîte ne suffit pas.",
      "schema": "Produit sensible passant de cuve froide à véhicule adapté puis réfrigérateur. Bande bleue continue sous les étapes ; une rupture est marquée par alerte, pas par un délai inventé."
     },
     {
      "titre": "L’emballage a plusieurs rôles",
-     "texte": "Un emballage peut protéger, faciliter le transport et porter des informations. Il utilise aussi des matières et devient souvent un déchet. On cherche à éviter le gaspillage du produit et celui de l’emballage.",
+     "texte": "Un emballage protège l’aliment, aide à le transporter et donne des informations. Mais il utilise de la matière et devient souvent un déchet. On essaie de ne gaspiller ni l’aliment ni l’emballage.",
      "schema": "Produit au centre de trois bulles : protection, transport, information. Seconde flèche vers collecte du déchet ; garder visible la différence entre aliment et contenant."
     },
     {
-     "titre": "Proche ne dit pas tout",
-     "texte": "Un aliment produit près de chez toi a parfois moins voyagé. Mais le chauffage, la culture, la conservation et le transport influencent aussi son effet sur l’environnement. Un seul indice ne raconte pas tout.",
+     "titre": "Près de chez toi ne dit pas tout",
+     "texte": "Un aliment produit près de chez toi a souvent moins voyagé. Mais sa culture, une serre chauffée ou sa conservation comptent aussi pour la planète. Un seul indice ne raconte pas toute l’histoire.",
      "schema": "Cinq pictogrammes sur une balance qualitative : production, chauffage éventuel, transport, conservation, pertes. Aucun gagnant automatique ni note environnementale inventée."
     }
    ],
-   "dans_ta_vie": "Tu peux poser de bonnes questions sur un aliment sans croire qu’une seule distance résume toute son histoire.",
-   "securite": "Observe avec un adulte. Ne goûte pas de plante, de champignon, d’aliment cru ou inconnu pour vérifier une idée. Respecte les allergies et les règles habituelles de la famille.",
-   "defi": "Avec un adulte, passe trois minutes à dessiner le parcours possible d’un aliment emballé. Sépare ce que son étiquette indique vraiment de ce que tu ne sais pas.",
+   "dans_ta_vie": "Tu sais poser de bonnes questions sur un aliment, sans croire que la distance raconte tout.",
+   "securite": "Observe avec un adulte. Ne goûte jamais une plante, un champignon ou un aliment inconnu pour vérifier une idée. Respecte les allergies et les règles de ta famille.",
+   "defi": "Avec un adulte, dessine pendant trois minutes le voyage possible d’un aliment emballé. Sépare ce que dit vraiment l’étiquette et ce que tu ne sais pas.",
    "quiz": [
     {
-     "q": "La distance suffit-elle à connaître tout l’effet environnemental ?",
+     "q": "La distance suffit-elle pour savoir si un aliment abîme peu la planète ?",
      "choix": [
       "Non",
       "Oui, toujours",
-      "Oui, si le trajet est routier"
+      "Oui, s’il a voyagé en camion"
      ],
      "rep": "Non",
-     "expl": "La production et d’autres étapes comptent aussi."
+     "expl": "La culture, le transport et la conservation comptent aussi."
     },
     {
-     "q": "Que désigne la chaîne du froid ?",
+     "q": "Qu’est-ce que la chaîne du froid ?",
      "choix": [
-      "Une chaîne métallique dans le camion",
-      "Le maintien de conditions froides adaptées au parcours",
-      "Le seul dessin d’un flocon"
+      "Une chaîne en métal dans le camion",
+      "Garder l’aliment au froid pendant tout son voyage",
+      "Un dessin de flocon"
      ],
-     "rep": "Le maintien de conditions froides adaptées au parcours",
-     "expl": "Elle concerne la conservation à plusieurs étapes."
+     "rep": "Garder l’aliment au froid pendant tout son voyage",
+     "expl": "Le froid doit durer à chaque étape."
     },
     {
-     "q": "Un emballage peut-il avoir une utilité tout en créant un déchet ?",
+     "q": "Un emballage peut-il être utile et devenir un déchet ?",
      "choix": [
       "Non",
       "Seulement s’il est coloré",
       "Oui"
      ],
      "rep": "Oui",
-     "expl": "Protection et consommation de matières peuvent coexister."
+     "expl": "Il protège l’aliment, mais il faut ensuite le trier ou le jeter."
     }
    ],
    "video": {
@@ -653,68 +653,68 @@
   },
   {
    "titre": "Garder les aliments sans jouer au détective du goût",
-   "accroche": "Pourquoi une date ne raconte-t-elle pas toujours la même chose ?",
+   "accroche": "Pourquoi les dates sur les emballages ne disent-elles pas toutes la même chose ?",
    "duree_min": 8,
    "cartes": [
     {
-     "titre": "Les microbes ne se voient pas toujours",
-     "texte": "Un aliment peut présenter un risque sans avoir une mauvaise odeur. Nos yeux et notre nez ne sont donc pas des appareils capables de garantir qu’il peut être mangé.",
+     "titre": "Les microbes ne se voient pas",
+     "texte": "Un aliment peut être dangereux même s’il sent bon et a l’air normal. Tes yeux et ton nez ne peuvent pas te dire à coup sûr s’il se mange.",
      "schema": "Aliment d’aspect ordinaire à gauche ; loupe imaginaire montrant des microbes à droite. Étiquettes aspect et risque possible ; ne pas présenter une couleur comme test fiable."
     },
     {
-     "titre": "Jusqu’au : une limite à respecter",
-     "texte": "La date limite de consommation, ou DLC, accompagne des aliments très périssables. Elle correspond notamment à la mention à consommer jusqu’au. On ne dépasse pas cette limite pour essayer.",
+     "titre": "« À consommer jusqu’au »",
+     "texte": "Sur les aliments qui s’abîment vite, on lit « à consommer jusqu’au ». C’est la date limite de consommation, ou DLC. Après cette date, on ne mange pas l’aliment.",
      "schema": "Étiquette fictive agrandie avec à consommer jusqu’au et date abstraite. Calendrier : zone autorisée selon conditions puis barrière après limite ; adulte lecteur."
     },
     {
-     "titre": "De préférence : une autre information",
-     "texte": "La date de durabilité minimale, ou DDM, s’écrit « à consommer de préférence avant ». Après, l’aliment peut perdre un peu de goût ou de croquant. Le jeter n’est pas automatique : l’adulte vérifie l’aliment et sa conservation.",
+     "titre": "« De préférence avant »",
+     "texte": "Sur d’autres aliments, on lit « à consommer de préférence avant ». C’est la DDM. Après cette date, l’aliment peut avoir moins de goût ou être moins croquant. Un adulte vérifie s’il peut encore être mangé.",
      "schema": "Deux étiquettes côte à côte, DLC et DDM. Sur DDM, surligner de préférence ; flèche vers un adulte évaluant les conditions, jamais vers une dégustation d’enfant."
     },
     {
-     "titre": "Ouvert change la situation",
-     "texte": "Les dates supposent notamment un emballage intact et une conservation correcte. Après ouverture, d’autres consignes et délais peuvent s’appliquer. La date imprimée ne suffit donc plus à décider.",
+     "titre": "Ouvert, ça change",
+     "texte": "Ces dates comptent seulement si l’emballage est fermé et bien rangé. Une fois ouvert, il faut suivre d’autres conseils écrits sur le paquet. La date seule ne suffit plus.",
      "schema": "Paquet fermé puis ouvert par une main adulte. Après ouverture, agrandir la rubrique de conservation correspondante ; horloges sans durée universelle."
     },
     {
-     "titre": "Éviter de jeter commence avant",
-     "texte": "On peut demander une petite portion puis se resservir si nécessaire. Ranger et prévoir avec un adulte aide aussi à limiter les pertes. Sauver un aliment ne signifie jamais prendre un risque.",
+     "titre": "Moins jeter",
+     "texte": "Tu peux demander une petite part, puis te resservir si tu as encore faim. Ranger et prévoir avec un adulte aide aussi à moins jeter. Mais on ne prend jamais de risque pour sauver un aliment.",
      "schema": "Assiette avec petite portion, seconde portion possible à côté ; adulte organise le rangement. Flèches vers moins de restes, sans cacher une alerte sanitaire."
     }
    ],
-   "dans_ta_vie": "Tu sais demander de l’aide pour conserver un aliment et distinguer deux mentions de date en France.",
-   "securite": "Ne goûte jamais un aliment pour vérifier sa sécurité. Les choix de conservation, de cuisson et de consommation reviennent à l’adulte ; signale toute allergie connue.",
-   "defi": "Pendant trois minutes avec un adulte, compare les mentions sur deux emballages fermés déjà disponibles. Ne les ouvre pas et ne change pas leur rangement.",
+   "dans_ta_vie": "Tu connais deux dates écrites sur les emballages en France et tu sais demander de l’aide pour bien garder les aliments.",
+   "securite": "Ne goûte jamais un aliment pour savoir s’il est encore bon. C’est l’adulte qui décide comment ranger, cuire et manger. Signale toujours tes allergies.",
+   "defi": "Pendant trois minutes, avec un adulte, compare les dates sur deux emballages fermés. Ne les ouvre pas et remets-les à leur place.",
    "quiz": [
     {
-     "q": "Peut-on garantir la sécurité d’un aliment avec son odeur seule ?",
+     "q": "Peut-on savoir si un aliment est sans danger juste en le sentant ?",
      "choix": [
       "Oui, toujours",
       "Non",
       "Oui, s’il ne sent rien"
      ],
      "rep": "Non",
-     "expl": "Des risques peuvent être invisibles et sans odeur particulière."
+     "expl": "Certains dangers n’ont pas d’odeur."
     },
     {
-     "q": "Quelle mention correspond à la DLC ?",
+     "q": "Quelle phrase correspond à la DLC ?",
      "choix": [
       "À consommer de préférence avant",
       "À regarder avant",
       "À consommer jusqu’au"
      ],
      "rep": "À consommer jusqu’au",
-     "expl": "La DLC est une limite à respecter."
+     "expl": "La DLC est une limite : après, on ne mange pas l’aliment."
     },
     {
-     "q": "Après ouverture, suffit-il de lire seulement la date initiale ?",
+     "q": "Une fois le paquet ouvert, la date imprimée suffit-elle ?",
      "choix": [
-      "Non, il faut aussi les consignes après ouverture",
-      "Oui, quoi qu’il arrive",
+      "Non, il faut aussi suivre les conseils après ouverture",
+      "Oui, toujours",
       "Oui, si on referme vite"
      ],
-     "rep": "Non, il faut aussi les consignes après ouverture",
-     "expl": "L’ouverture modifie les conditions de conservation."
+     "rep": "Non, il faut aussi suivre les conseils après ouverture",
+     "expl": "Ouvrir le paquet change la façon de garder l’aliment."
     }
    ],
    "video": {
