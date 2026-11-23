@@ -1,0 +1,456 @@
+{
+  "lecons": [
+    {
+      "id": "CM-17-01",
+      "action": "corriger",
+      "corrections": {
+        "cartes": [
+          {
+            "titre": "Une lampe a besoin d’énergie",
+            "texte": "Une lampe ne fabrique pas son énergie. Elle reçoit de l’énergie électrique et en transforme une partie en lumière, comme un moulin reçoit l’énergie de l’eau.",
+            "schema": "Lampe au centre ; flèche orange entrante nommée énergie électrique ; flèches sortantes jaune lumière et rouge chaleur. Animer les flèches, sans dessiner de liquide dans le fil."
+          },
+          {
+            "titre": "Une boucle complète",
+            "texte": "Dans une lampe de poche, la pile, les fils et la lampe forment un circuit. Pour que la lampe marche, le courant doit pouvoir faire tout le tour et revenir à la pile.",
+            "schema": "Vue simplifiée d’une lampe de poche fermée, puis dessin séparé de sa boucle interne : pile en bas, lampe en haut. Surligner tout le trajet en vert, sans montrer de montage pratique."
+          },
+          {
+            "titre": "Une coupure suffit",
+            "texte": "Imagine une piste circulaire avec un pont levé. Le passage est interrompu. Dans notre circuit simple, une coupure empêche le courant de circuler dans toute la boucle.",
+            "schema": "Deux circuits théoriques identiques côte à côte ; boucle continue à gauche, ouverture visible à droite. Lampe jaune à gauche, grise à droite ; animation arrêtée sur tout le circuit ouvert."
+          },
+          {
+            "titre": "Deux côtés pour passer",
+            "texte": "Une pile possède deux bornes, ses deux points de connexion. La lampe possède aussi deux contacts. Un seul fil reliant une borne à un contact ne forme pas une boucle complète.",
+            "schema": "Pile schématique avec deux bornes clairement séparées, lampe avec deux contacts. Comparer un trajet incomplet et un trajet théorique complet ; légende dessin uniquement, sans matériel réel."
+          },
+          {
+            "titre": "À toi de repérer",
+            "texte": "Sur un dessin, suis la boucle avec ton regard. Peux-tu revenir au départ sans traverser de trou ? Ce petit jeu aide à comprendre pourquoi notre lampe théorique s’allume ou reste éteinte.",
+            "schema": "Trois boucles dessinées : complète, coupée, complète avec interrupteur ouvert. Un point de lecture suit chaque trajet ; révéler ensuite une coche ou une croix, accompagnée de mots."
+          }
+        ]
+      },
+      "note": "Jargon « conducteurs » non encore expliqué (vu en 17-03) remplacé par « fils » ; reste juste."
+    },
+    {
+      "id": "CM-17-02",
+      "action": "corriger",
+      "corrections": {
+        "quiz": [
+          {
+            "q": "Quelle réserve fournit l’énergie d’une pile ?",
+            "choix": [
+              "Une poche de lumière",
+              "Un stock de verre",
+              "Une réserve chimique"
+            ],
+            "rep": "Une réserve chimique",
+            "expl": "Des réactions chimiques peuvent fournir de l’énergie électrique."
+          },
+          {
+            "q": "La lampe fait-elle disparaître les petites particules du fil ?",
+            "choix": [
+              "Non",
+              "Oui, elle les mange",
+              "Oui, elles se changent toutes en lumière"
+            ],
+            "rep": "Non",
+            "expl": "Les particules continuent leur tour ; la lampe reçoit seulement de l’énergie."
+          },
+          {
+            "q": "Peut-on recharger n’importe quelle pile ?",
+            "choix": [
+              "Oui, toutes de la même façon",
+              "Non, seulement un dispositif prévu pour cela",
+              "Oui, si elle est très petite"
+            ],
+            "rep": "Non, seulement un dispositif prévu pour cela",
+            "expl": "Il faut respecter le type de dispositif et son équipement adapté."
+          }
+        ]
+      },
+      "note": "Quiz : « photons » et « consommation des charges » incompréhensibles à 6-11 ans ; reformulé, sens inchangé."
+    },
+    {
+      "id": "CM-17-03",
+      "action": "corriger",
+      "corrections": {
+        "cartes": [
+          {
+            "titre": "Un passage facile",
+            "texte": "Un conducteur laisse facilement circuler le courant dans les conditions prévues. Les métaux sont souvent de bons conducteurs. Dans un fil, le cœur métallique forme le passage utile.",
+            "schema": "Gros fil en coupe : cœur couleur cuivre, enveloppe bleue. Étiquette conducteur sur le cœur ; petits points mobiles uniquement dans le métal. Dessin abstrait, sans geste de découpe."
+          },
+          {
+            "titre": "Un passage difficile",
+            "texte": "Un isolant s’oppose fortement au passage du courant dans les conditions habituelles. Certains plastiques servent donc d’enveloppe. Ce manteau aide à empêcher des contacts dangereux.",
+            "schema": "Même coupe ; enveloppe bleue épaisse nommée isolant. Des flèches latérales grises s’arrêtent devant elle ; éviter toute main touchant un conducteur."
+          },
+          {
+            "titre": "L’apparence ne suffit pas",
+            "texte": "Une matière peut laisser passer le courant plus facilement si elle est mouillée ou abîmée. On ne vérifie jamais un fil avec son corps. Une enveloppe abîmée doit être signalée à un adulte.",
+            "schema": "Trois vignettes d’un câble : intact, enveloppe abîmée, mouillé. Un enfant reste en retrait dans chaque vignette ; bulle appeler un adulte sur les deux dernières."
+          },
+          {
+            "titre": "Un vêtement n’est pas une protection",
+            "texte": "Des gants ordinaires ou des chaussures ne donnent pas le droit de toucher un fil dangereux. Les protections professionnelles sont spéciales, contrôlées et utilisées par des personnes formées.",
+            "schema": "Gants ordinaires et chaussures à gauche, accompagnés du texte pas une protection électrique. À droite, professionnel équipé ; aucun équipement détaillé permettant une imitation."
+          },
+          {
+            "titre": "Deux fonctions complémentaires",
+            "texte": "Le cœur du fil aide le courant à suivre son trajet. L’enveloppe aide à séparer ce trajet du reste. Comme une route bordée de barrières, les deux fonctions sont différentes.",
+            "schema": "Route orange centrale et barrières bleues à gauche ; fil stylisé à droite. Relier route à conducteur et barrière à isolant par des traits pointillés de comparaison."
+          }
+        ]
+      },
+      "note": "Carte 3 : « tension » et « état » non expliqués ; simplifié en restant exact (humidité, enveloppe abîmée)."
+    },
+    {
+      "id": "CM-17-04",
+      "action": "ok",
+      "corrections": {},
+      "note": "Circuit ouvert/fermé exact ; sécurité présente."
+    },
+    {
+      "id": "CM-17-05",
+      "action": "corriger",
+      "corrections": {
+        "cartes": [
+          {
+            "titre": "Un fil très chaud",
+            "texte": "Dans une lampe à filament, un fil très fin chauffe beaucoup et devient lumineux. Comme un objet chauffé qui rougit, il émet de la lumière, mais aussi beaucoup de chaleur.",
+            "schema": "Ampoule ancienne dessinée uniquement en coupe explicative ; filament central passe du gris à l’orange lumineux. Rayons jaunes vers l’extérieur, nombreuses flèches rouges de chaleur."
+          },
+          {
+            "titre": "Une autre manière de briller",
+            "texte": "Une LED est une petite pièce qui émet de la lumière grâce à un matériau spécial. Elle transforme une partie de l’énergie électrique en lumière, sans faire chauffer un fil jusqu’à ce qu’il brille.",
+            "schema": "LED agrandie sous une enveloppe fermée ; bloc de matériau nommé zone lumineuse. Flèche orange entrante, rayons jaunes sortants ; aucun schéma de montage."
+          },
+          {
+            "titre": "La chaleur existe encore",
+            "texte": "Une lampe à LED peut aussi chauffer. Moins d’énergie perdue en chaleur ne veut pas dire jamais chaude. L’enveloppe et le support ne doivent pas être touchés pour vérifier.",
+            "schema": "Deux bilans symboliques à lumière comparable : filament avec grande branche rouge, LED avec plus petite branche rouge. Légende comparaison qualitative, valeurs non chiffrées."
+          },
+          {
+            "titre": "Blanc ne veut pas dire une seule couleur",
+            "texte": "Certaines lampes fabriquent une lumière blanche en combinant plusieurs couleurs ou en utilisant une couche qui transforme une partie de la lumière. Notre œil rassemble ces couleurs.",
+            "schema": "Point lumineux bleu à gauche, couche de conversion au centre, rayons bleus et jaunes vers un œil à droite. Légende exemple simplifié de LED blanche."
+          },
+          {
+            "titre": "Éclairer utilement",
+            "texte": "Une lampe efficace donne l’éclairage souhaité avec moins d’énergie. Mais il faut aussi diriger sa lumière au bon endroit, comme une lampe de lecture orientée vers la page.",
+            "schema": "Deux bureaux identiques ; à gauche lumière dispersée vers plafond, à droite lumière vers livre. Surfaces éclairées en jaune pâle ; garder les deux lampes hors de portée."
+          }
+        ],
+        "quiz": [
+          {
+            "q": "Que se passe-t-il dans une lampe à filament ?",
+            "choix": [
+              "Le verre fabrique du courant",
+              "La lumière vient d’eau bouillante",
+              "Un fil chauffe jusqu’à devenir lumineux"
+            ],
+            "rep": "Un fil chauffe jusqu’à devenir lumineux",
+            "expl": "Le filament devient si chaud qu’il brille."
+          },
+          {
+            "q": "Une lampe à LED ne chauffe-t-elle jamais ?",
+            "choix": [
+              "Elle peut chauffer",
+              "Elle reste toujours froide",
+              "Elle absorbe toute la chaleur de la pièce"
+            ],
+            "rep": "Elle peut chauffer",
+            "expl": "Une partie de l’énergie devient encore de la chaleur."
+          },
+          {
+            "q": "Pourquoi diriger la lumière vers la page ?",
+            "choix": [
+              "Pour recharger la pile",
+              "Pour éclairer l’endroit utile",
+              "Pour arrêter tout courant"
+            ],
+            "rep": "Pour éclairer l’endroit utile",
+            "expl": "L’orientation permet un éclairage plus utile."
+          }
+        ]
+      },
+      "note": "« Incandescent » non expliqué (carte 2 et quiz) ; remplacé par une formulation simple et juste."
+    },
+    {
+      "id": "CM-17-06",
+      "action": "ok",
+      "corrections": {},
+      "note": "Production (turbine, alternateur, photovoltaïque) et équilibre du réseau exacts."
+    },
+    {
+      "id": "CM-17-07",
+      "action": "ok",
+      "corrections": {},
+      "note": "Volt, transformateurs, transport haute tension, danger d’amorçage : exacts."
+    },
+    {
+      "id": "CM-17-08",
+      "action": "ok",
+      "corrections": {},
+      "note": "Court-circuit, disjoncteur, différentiel exacts ; aucune incitation à réarmer."
+    },
+    {
+      "id": "CM-17-09",
+      "action": "ok",
+      "corrections": {},
+      "note": "W et Wh exacts ; 10 W × 2 h = 20 Wh correct."
+    },
+    {
+      "id": "CM-17-10",
+      "action": "ok",
+      "corrections": {},
+      "note": "Électricité statique, foudre, alerte (112) exacts."
+    },
+    {
+      "id": "CM-19-01",
+      "action": "ok",
+      "corrections": {},
+      "note": "Forces, poids, poussée : exacts."
+    },
+    {
+      "id": "CM-19-02",
+      "action": "corriger",
+      "corrections": {
+        "cartes": [
+          {
+            "titre": "Déplacer de l’eau",
+            "texte": "Quand une coque entre dans l’eau, elle prend une place que l’eau occupait. On dit qu’elle déplace un volume d’eau. La partie immergée détermine ce volume.",
+            "schema": "Coque en coupe entrant dans une bassine uniquement dessinée. Zone immergée bleue hachurée ; même forme d’eau déplacée représentée à côté avec étiquette volume déplacé."
+          },
+          {
+            "titre": "La poussée dépend de cette place",
+            "texte": "La poussée d’Archimède est la force globale de l’eau vers le haut. Dans notre modèle au repos, elle égale le poids de l’eau déplacée.",
+            "schema": "Coque et volume d’eau déplacé côte à côte. Flèche bleue sous la coque ; flèche rouge sur l’eau déplacée, de même longueur et reliées par une égalité qualitative."
+          },
+          {
+            "titre": "La coque change le volume",
+            "texte": "Une coque creuse prend beaucoup de place sans être entièrement remplie de métal. L’ensemble peut déplacer assez d’eau pour être soutenu avant que l’eau passe par-dessus ses bords.",
+            "schema": "Même quantité symbolique de métal : bloc plein à gauche, coque creuse à droite. Surface d’eau horizontale ; grande zone de déplacement sous la coque, intérieur sec bien visible."
+          },
+          {
+            "titre": "L’équilibre se trouve",
+            "texte": "Le bateau s’enfonce jusqu’à déplacer assez d’eau pour compenser son poids. S’il y arrive avant que l’eau passe par-dessus ses bords, il flotte.",
+            "schema": "Trois positions successives d’une coque : entrée, enfoncement, équilibre. Flèche de poussée augmente avec l’immersion, puis égale la flèche du poids."
+          },
+          {
+            "titre": "Plus chargé, plus enfoncé",
+            "texte": "Ajouter un chargement augmente le poids total. Le bateau doit déplacer davantage d’eau et s’enfonce plus. Il existe des limites de chargement : flotter ne permet pas de tout emporter.",
+            "schema": "Deux bateaux identiques, peu puis davantage chargés. Seconde ligne d’eau plus haute sur la coque ; repère de limite visible, aucun défi consistant à la dépasser."
+          }
+        ]
+      },
+      "note": "Carte 4 : « en gardant sa coque en sécurité » flou ; précisé (avant que l’eau passe par-dessus les bords). Archimède correct."
+    },
+    {
+      "id": "CM-19-03",
+      "action": "corriger",
+      "corrections": {
+        "cartes": [
+          {
+            "titre": "Le chargement a une place",
+            "texte": "Le poids d’un bateau dépend de tout ce qu’il transporte. La répartition compte aussi. Un objet lourd placé haut peut rendre l’ensemble moins stable.",
+            "schema": "Deux coques comparables ; charges placées bas puis très haut. Point rouge indiquant le centre de gravité, expliqué comme point de représentation du poids."
+          },
+          {
+            "titre": "La poussée peut aider à redresser",
+            "texte": "Quand une coque s’incline, sa partie immergée change de forme. La position de la poussée change aussi. Selon la coque et le chargement, cela peut aider à redresser le bateau.",
+            "schema": "Coque inclinée en coupe ; point rouge du poids et point bleu de poussée décalés. Flèche courbe de redressement pour l’exemple stable ; mention situation simplifiée."
+          },
+          {
+            "titre": "Mais il existe des limites",
+            "texte": "Une inclinaison excessive ou de l’eau entrant dans la coque peut compromettre la stabilité. Un bateau qui flotte dans une situation peut devenir dangereux dans une autre.",
+            "schema": "Deux dessins : coque stable peu inclinée, puis zone d’alerte avec entrée d’eau stylisée. Aucun occupant ni scène de chavirement spectaculaire."
+          },
+          {
+            "titre": "L’eau salée soutient autrement",
+            "texte": "Un litre d’eau de mer est un peu plus lourd qu’un litre d’eau douce. Un même bateau, avec le même chargement, flotte donc un peu moins enfoncé dans la mer.",
+            "schema": "Deux bassins dessinés, eau douce et eau de mer ; bateau et chargement identiques. Ligne d’eau légèrement différente ; exagération signalée pour rendre l’écart visible."
+          },
+          {
+            "titre": "Le sous-marin modifie son équilibre",
+            "texte": "Un sous-marin utilise notamment des réservoirs conçus pour modifier sa masse. Cela change le rapport entre son poids et la poussée de l’eau. Son fonctionnement demande des systèmes et des professionnels spécialisés.",
+            "schema": "Sous-marin fermé avec deux états symboliques, masse différente et volume extérieur comparable. Flèches poids et poussée comparées ; aucun circuit de vannes ni procédure de manœuvre."
+          }
+        ]
+      },
+      "note": "Carte 4 : « plus massive à volume égal » reformulé pour enfants ; fait exact (eau de mer ≈ 1,025 kg/L)."
+    },
+    {
+      "id": "CM-19-04",
+      "action": "ok",
+      "corrections": {},
+      "note": "Rame, hélice, voile, gouvernail : exacts."
+    },
+    {
+      "id": "CM-19-05",
+      "action": "corriger",
+      "corrections": {
+        "quiz": [
+          {
+            "q": "L’air possède-t-il une masse ?",
+            "choix": [
+              "Non, parce qu’il est invisible",
+              "Seulement dans une bouteille",
+              "Oui"
+            ],
+            "rep": "Oui",
+            "expl": "Les gaz sont de la matière."
+          },
+          {
+            "q": "Pour une aile, quelle vitesse est particulièrement importante ?",
+            "choix": [
+              "La vitesse par rapport à l’air",
+              "La vitesse de rotation de la Terre seule",
+              "La seule vitesse du tapis à bagages"
+            ],
+            "rep": "La vitesse par rapport à l’air",
+            "expl": "L’écoulement autour de l’aile dépend du mouvement relatif."
+          },
+          {
+            "q": "La surface de l’aile est-elle la seule chose qui compte pour la force de l’air sur l’aile ?",
+            "choix": [
+              "Oui",
+              "Non",
+              "Oui, quelle que soit sa vitesse"
+            ],
+            "rep": "Non",
+            "expl": "La vitesse, la forme et l’orientation de l’aile comptent aussi."
+          }
+        ]
+      },
+      "note": "Quiz 3 : « portance » utilisé avant d’être défini (19-06) ; reformulé. Reste exact."
+    },
+    {
+      "id": "CM-19-06",
+      "action": "ok",
+      "corrections": {},
+      "note": "Portance sans mythe du temps de transit égal ; exact."
+    },
+    {
+      "id": "CM-19-07",
+      "action": "ok",
+      "corrections": {},
+      "note": "Poussée, traînée, quatre forces en vol stabilisé : exacts."
+    },
+    {
+      "id": "CM-19-08",
+      "action": "corriger",
+      "corrections": {
+        "quiz": [
+          {
+            "q": "Comment s’appelle le mouvement qui fait pencher les ailes ?",
+            "choix": [
+              "Le tangage",
+              "Le lacet",
+              "Le roulis"
+            ],
+            "rep": "Le roulis",
+            "expl": "Le roulis fait tourner l’avion autour d’un axe qui va du nez à la queue."
+          },
+          {
+            "q": "Que fait le tangage ?",
+            "choix": [
+              "Il lève ou baisse le nez",
+              "Il change uniquement la couleur",
+              "Il correspond seulement au freinage des roues"
+            ],
+            "rep": "Il lève ou baisse le nez",
+            "expl": "Le mouvement modifie l’inclinaison du nez."
+          },
+          {
+            "q": "Pourquoi la place des bagages compte-t-elle ?",
+            "choix": [
+              "Elle change la météo",
+              "Elle influence l’équilibre",
+              "Elle supprime la traînée"
+            ],
+            "rep": "Elle influence l’équilibre",
+            "expl": "La répartition des masses modifie le comportement de l’avion."
+          }
+        ]
+      },
+      "note": "Quiz : « axe longitudinal » expliqué ; contenu exact (roulis, tangage, lacet)."
+    },
+    {
+      "id": "CM-19-09",
+      "action": "corriger",
+      "corrections": {
+        "cartes": [
+          {
+            "titre": "Prendre de la vitesse dans l’air",
+            "texte": "Avant un décollage habituel, l’avion accélère sur la piste. Les ailes rencontrent davantage d’air en mouvement relatif. Le pilote utilise des conditions et réglages adaptés au départ.",
+            "schema": "Avion roulant dans trois positions sur piste interdite au public ; flèches d’air de plus en plus marquées, puis vol. Aucun chiffre de vitesse ni instruction de commande."
+          },
+          {
+            "titre": "Le vent change la comparaison",
+            "texte": "Un vent de face peut donner davantage de vitesse par rapport à l’air pour une même vitesse sur le sol. C’est une raison de l’importance du vent dans les opérations aériennes.",
+            "schema": "Deux avions roulant à même vitesse au sol ; air calme puis vent de face. Doubles flèches légendées vitesse au sol et mouvement dans l’air, sans chiffres."
+          },
+          {
+            "titre": "Les volets changent l’aile",
+            "texte": "Sur beaucoup d’avions, les volets sont des parties mobiles des ailes. Ils peuvent modifier la portance et la traînée, notamment aux vitesses plus faibles utilisées au décollage et à l’atterrissage.",
+            "schema": "Même aile avec volet rentré puis sorti ; contours successifs en transparence. Flèches de portance et traînée qualitatives ; mention effets selon les conditions."
+          },
+          {
+            "titre": "Un angle trop grand fait décrocher",
+            "texte": "Si l’aile se présente face à l’air avec un angle trop grand, l’air ne suit plus bien sa surface et la portance baisse fortement. C’est le décrochage, même si le moteur fonctionne.",
+            "schema": "Coupe d’aile : orientation modérée avec lignes régulières, puis excessive avec tourbillons symboliques. Flèche de portance raccourcie ; moteur séparé toujours représenté en fonctionnement."
+          },
+          {
+            "titre": "L’atterrissage est préparé",
+            "texte": "Le pilote organise la trajectoire, la vitesse et les réglages avant de toucher la piste. Les roues et les freins interviennent ensuite. Atterrir ne veut pas dire couper tout et tomber.",
+            "schema": "Frise approche stable, contact des roues, roulage ralenti. Trois positions bien séparées ; pas de séquence de commandes ni d’altitude précise."
+          }
+        ]
+      },
+      "note": "Carte 4 : « trop incliner » pouvait se confondre avec l’inclinaison en virage (19-08) ; précisé : angle de l’aile face à l’air."
+    },
+    {
+      "id": "CM-19-10",
+      "action": "corriger",
+      "corrections": {
+        "quiz": [
+          {
+            "q": "Un planeur a-t-il besoin d’un écoulement autour de ses ailes ?",
+            "choix": [
+              "Non, puisqu’il n’a pas de moteur",
+              "Oui",
+              "Seulement quand il roule"
+            ],
+            "rep": "Oui",
+            "expl": "Ses ailes produisent de la portance grâce au mouvement dans l’air."
+          },
+          {
+            "q": "Pourquoi un hélicoptère peut-il rester au-dessus d’un point ?",
+            "choix": [
+              "Le poids disparaît",
+              "Le ciel le retient avec une corde",
+              "Ses pales tournantes produisent un écoulement"
+            ],
+            "rep": "Ses pales tournantes produisent un écoulement",
+            "expl": "Le rotor peut produire une force sans déplacement horizontal de l’ensemble."
+          },
+          {
+            "q": "Quelle parenté existe entre ballon et bateau ?",
+            "choix": [
+              "Ils peuvent être soutenus par une poussée de l’air ou de l’eau autour d’eux",
+              "Ils ont forcément les mêmes ailes",
+              "Ils suppriment leur masse"
+            ],
+            "rep": "Ils peuvent être soutenus par une poussée de l’air ou de l’eau autour d’eux",
+            "expl": "La poussée d’Archimède existe dans l’air comme dans l’eau."
+          }
+        ]
+      },
+      "note": "Quiz 3 : « fluide » remplacé par « l’air ou l’eau » ; physique exacte (Archimède dans l’air)."
+    }
+  ]
+}
