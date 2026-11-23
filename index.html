@@ -1091,7 +1091,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=98">
+<link rel="stylesheet" href="css/jeux.css?v=99">
 </head>
 <body>
 
@@ -1660,11 +1660,11 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=98"></script>
-<script src="js/jeux-cerveau.js?v=98"></script>
-<script src="js/coach-voix.js?v=98"></script>
-<script src="js/monde-interieur.js?v=98"></script>
-<script src="js/monde-plus.js?v=98"></script>
+<script src="js/jeux.js?v=99"></script>
+<script src="js/jeux-cerveau.js?v=99"></script>
+<script src="js/coach-voix.js?v=99"></script>
+<script src="js/monde-interieur.js?v=99"></script>
+<script src="js/monde-plus.js?v=99"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
@@ -15560,11 +15560,26 @@ function _yogaSeancesHTML(el,items){
     el.appendChild(b);});
   if(S.length){const h=document.createElement('div');h.className='yg-sep';h.textContent='Ou choisis une posture :';el.appendChild(h);}
 }
+// 🖨️ Cartes d'exercices à imprimer (sport/cartes/*.pdf, tools/sport_cartes.py)
+const SPORT_CARTES_CAT=['echauffement','cardio','gainage','stretching','respiration','yoga','yogafam'];
+function _sportCartesBtn(el,items){
+  const cat=items.length&&items.every(i=>i.cat===items[0].cat)?items[0].cat:null;if(!cat||!SPORT_CARTES_CAT.includes(cat))return;
+  const w=document.createElement('div');w.style.cssText='margin:0 0 12px;display:flex;flex-direction:column;gap:6px';
+  const a=document.createElement('a');a.href='sport/cartes/'+cat+'.pdf';a.target='_blank';a.rel='noopener';
+  a.style.cssText='display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--w);border:2px dashed var(--p,#6C63FF);border-radius:14px;color:var(--t);text-decoration:none;font-weight:800;font-size:14px';
+  a.innerHTML='<span style="font-size:22px">🖨️</span><span>Cartes à imprimer<small style="display:block;font-size:11px;font-weight:600;color:var(--tl)">Tous les exercices dessinés, étape par étape · PDF A4</small></span>';
+  w.appendChild(a);
+  const S=(typeof YOGA_SEANCES!=='undefined'?YOGA_SEANCES:[]).filter(x=>x.cat===cat);
+  if(S.length){const d=document.createElement('div');d.style.cssText='font-size:12px;font-weight:700;color:var(--tl);line-height:1.8';
+    d.innerHTML='🖨️ Par séance : '+S.map(x=>`<a href="sport/cartes/${x.id}.pdf" target="_blank" rel="noopener" style="color:var(--p,#6C63FF)">${x.nom.replace(/\p{Emoji_Presentation}/gu,'').trim()}</a>`).join(' · ');w.appendChild(d);}
+  el.appendChild(w);
+}
 function renderDefis(items){
   const el=document.getElementById('elist');el.innerHTML='';
   const p=P();
   const catLabel={cardio:'❤️ Cardio',gainage:'💪 Gainage',stretching:'🧘 Stretching',respiration:'🌬️ Respiration',yoga:'🧘 Yoga',yogafam:'👨‍👩‍👧 À deux'};
   _yogaSeancesHTML(el,items);
+  _sportCartesBtn(el,items);
   items.forEach((item,idx)=>{
     const done=p&&p.done&&p.done[item.id];
     const d=document.createElement('div');d.className='ecard'+(done?' done':'');
@@ -20422,14 +20437,14 @@ window.transferCoinsToWorld=function(n){
 
 })();
 </script>
-<script src="js/questions-plus-data.js?v=98"></script>
-<script src="js/questions-plus.js?v=98"></script>
-<script src="js/parcours-data.js?v=98"></script>
-<script src="js/parcours.js?v=98"></script>
-<script src="js/fiches.js?v=98"></script>
-<script src="js/relax.js?v=98"></script>
-<script src="js/ccm.js?v=98"></script>
-<script src="js/sport-illus.js?v=98"></script>
+<script src="js/questions-plus-data.js?v=99"></script>
+<script src="js/questions-plus.js?v=99"></script>
+<script src="js/parcours-data.js?v=99"></script>
+<script src="js/parcours.js?v=99"></script>
+<script src="js/fiches.js?v=99"></script>
+<script src="js/relax.js?v=99"></script>
+<script src="js/ccm.js?v=99"></script>
+<script src="js/sport-illus.js?v=99"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
