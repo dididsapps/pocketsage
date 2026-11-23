@@ -1,0 +1,226 @@
+{
+  "classe": "TLE",
+  "niveau_appli": "Lycée",
+  "age": "17-18 ans",
+  "matiere": "Mathématiques (spécialité)",
+  "code": "MA",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Analyse",
+      "titre": "Inéquations exponentielles et logarithme",
+      "emoji": "📈",
+      "en_une_phrase": "Le logarithme permet de trouver à partir de quel rang une suite géométrique dépasse un seuil.",
+      "comprendre": "Pour q strictement supérieur à 1, la fonction logarithme est croissante et ln(q) est positif. Le rang doit être un entier naturel, donc il faut arrondir dans le bon sens.",
+      "essentiel": [
+        "Si q > 1 et S > 0, qⁿ ≥ S équivaut à n ln(q) ≥ ln(S).",
+        "Alors n ≥ ln(S)/ln(q).",
+        "Le plus petit rang est le plus petit entier naturel vérifiant cette borne.",
+        "Si 0 < q < 1, ln(q) est négatif et la division inverse le sens.",
+        "Si q = 1, tous les rangs conviennent si S ≤ 1 ; aucun ne convient si S > 1."
+      ],
+      "image_mentale": "Le logarithme transforme une puissance en multiplication.",
+      "regle_ou_methode": "Vérifie q et le seuil, prends le logarithme, isole n puis contrôle les entiers voisins.",
+      "exemples": [
+        "Résous 2ⁿ ≥ 10 : n ≥ ln(10)/ln(2) ≈ 3,32. Le plus petit entier est 4 : 2³ = 8 et 2⁴ = 16.",
+        "Pour 3ⁿ ≥ 9 avec n naturel, n ≥ 2 ; le premier rang est 2."
+      ],
+      "piege": "Un résultat approché comme 3,32 n’est pas un rang entier ; on vérifie aussi le sens de l’inégalité.",
+      "astuce_memoire": "Base supérieure à 1 : logarithme puis entier supérieur.",
+      "quiz": [
+        {
+          "q": "Quel est le plus petit entier n tel que 2ⁿ ≥ 10 ?",
+          "choix": [
+            "4",
+            "3",
+            "5"
+          ],
+          "rep": "4",
+          "expl": "2³ = 8 et 2⁴ = 16."
+        },
+        {
+          "q": "Si q > 1, quel est le signe de ln(q) ?",
+          "choix": [
+            "Strictement négatif",
+            "Strictement positif",
+            "Toujours nul"
+          ],
+          "rep": "Strictement positif",
+          "expl": "Le logarithme de 1 vaut 0 et ln est croissant."
+        },
+        {
+          "q": "Si l’on divise une inégalité par un nombre négatif, que fait-on ?",
+          "choix": [
+            "On ne change jamais son sens",
+            "On remplace les deux membres par zéro",
+            "On inverse son sens"
+          ],
+          "rep": "On inverse son sens",
+          "expl": "La multiplication ou division par un nombre négatif inverse l’ordre."
+        }
+      ],
+      "id": "REV-MA-TLE-90"
+    },
+    {
+      "axe": "Analyse",
+      "titre": "Limite d’une suite et opérations",
+      "emoji": "🎯",
+      "en_une_phrase": "Une suite converge vers une limite quand ses termes restent aussi proches que voulu de cette valeur à partir d’un rang.",
+      "comprendre": "Dire que uₙ tend vers ℓ signifie que tout écart positif peut être respecté à partir d’un certain rang. Les opérations sur les limites sont valables sous des conditions précises.",
+      "essentiel": [
+        "Pour tout ε > 0, il existe N tel que n ≥ N implique |uₙ − ℓ| < ε.",
+        "Si uₙ → ℓ et vₙ → m, alors uₙ + vₙ → ℓ + m et uₙvₙ → ℓm.",
+        "Si m ≠ 0, alors uₙ/vₙ → ℓ/m, pour les termes définis à partir d’un rang.",
+        "Certaines opérations avec des limites infinies sont indéterminées."
+      ],
+      "image_mentale": "Les termes entrent dans un couloir autour de ℓ et y restent.",
+      "regle_ou_methode": "Identifie les limites, vérifie les conditions puis applique la règle adaptée.",
+      "exemples": [
+        "Si uₙ = 1 + 1/n et n ≥ 1, alors 1/n tend vers 0 ; ainsi uₙ tend vers 1.",
+        "Si uₙ → 2 et vₙ → 4, alors uₙ/vₙ → 1/2 puisque 4 n’est pas nul."
+      ],
+      "piege": "La suite n’a pas besoin d’atteindre exactement sa limite.",
+      "astuce_memoire": "Aussi près que voulu, à partir d’un rang.",
+      "quiz": [
+        {
+          "q": "Si uₙ → 2 et vₙ → 4, quelle est la limite de leur somme ?",
+          "choix": [
+            "8",
+            "6",
+            "2"
+          ],
+          "rep": "6",
+          "expl": "La limite de la somme est 2 + 4."
+        },
+        {
+          "q": "Pour appliquer directement la règle du quotient de limites finies, il faut notamment ?",
+          "choix": [
+            "Un numérateur toujours nul",
+            "Deux suites nécessairement constantes",
+            "Une limite du dénominateur non nulle"
+          ],
+          "rep": "Une limite du dénominateur non nulle",
+          "expl": "La limite du dénominateur doit être différente de zéro."
+        },
+        {
+          "q": "Une suite convergente atteint-elle forcément sa limite ?",
+          "choix": [
+            "Non",
+            "Oui, à chaque rang",
+            "Oui, dès le premier terme"
+          ],
+          "rep": "Non",
+          "expl": "Par exemple, 1/n tend vers 0 sans jamais valoir 0."
+        }
+      ],
+      "id": "REV-MA-TLE-91"
+    },
+    {
+      "axe": "Algorithmique et programmation",
+      "titre": "Simuler des échantillons",
+      "emoji": "🎲",
+      "en_une_phrase": "Une liste peut rassembler les résultats d’épreuves aléatoires et permettre de calculer une fréquence.",
+      "comprendre": "Un échantillon simule des expériences répétées selon un modèle choisi. On compte les succès puis on divise leur nombre par la taille de l’échantillon.",
+      "essentiel": [
+        "En Python, int(random() < p) code un succès par 1 et un échec par 0.",
+        "La fréquence est sum(liste)/len(liste) pour une liste non vide.",
+        "Répéter la simulation produit en général des fréquences différentes.",
+        "Le modèle des épreuves indépendantes doit être explicité."
+      ],
+      "image_mentale": "Une liste de zéros et de uns représente les résultats successifs.",
+      "regle_ou_methode": "Après from random import random, crée [int(random() < p) for _ in range(n)] puis calcule sum(liste)/len(liste), avec n positif.",
+      "exemples": [
+        "Pour liste = [1, 0, 1, 1], sum(liste) vaut 3 et len(liste) vaut 4 ; sum(liste)/len(liste) donne 0,75.",
+        "En Python, exécute from random import random, puis liste = [int(random() < 0.5) for _ in range(4)] : la liste obtenue comporte quatre zéros ou uns."
+      ],
+      "piege": "La fréquence d’un échantillon fini n’est pas toujours égale à la probabilité théorique.",
+      "astuce_memoire": "Compter les 1 puis diviser par la taille.",
+      "quiz": [
+        {
+          "q": "Quelle fréquence de succès pour [1, 1, 0, 0, 1] ?",
+          "choix": [
+            "2/5",
+            "3/2",
+            "3/5"
+          ],
+          "rep": "3/5",
+          "expl": "La liste compte 3 succès sur 5 résultats."
+        },
+        {
+          "q": "Pourquoi deux simulations peuvent-elles donner des fréquences différentes ?",
+          "choix": [
+            "Les résultats sont aléatoires",
+            "Le modèle interdit toute variation",
+            "Une liste ne peut contenir des zéros"
+          ],
+          "rep": "Les résultats sont aléatoires",
+          "expl": "La fréquence varie entre échantillons."
+        },
+        {
+          "q": "Comment modéliser un schéma de Bernoulli ?",
+          "choix": [
+            "Par une probabilité arbitrairement modifiée après chaque tirage",
+            "Par des épreuves identiques et indépendantes",
+            "Par une seule issue possible"
+          ],
+          "rep": "Par des épreuves identiques et indépendantes",
+          "expl": "Les épreuves doivent être répétées dans les mêmes conditions et être indépendantes."
+        }
+      ],
+      "id": "REV-MA-TLE-92"
+    },
+    {
+      "axe": "Vocabulaire ensembliste et logique",
+      "titre": "Contraposée et raisonnement par l’absurde",
+      "emoji": "🧩",
+      "en_une_phrase": "Deux méthodes permettent de démontrer une implication sans la prouver directement.",
+      "comprendre": "Pour prouver que P implique Q, sa contraposée revient à montrer que non Q implique non P. Par l’absurde, on suppose qu’une affirmation est fausse puis on en déduit une contradiction.",
+      "essentiel": [
+        "P implique Q équivaut à non Q implique non P.",
+        "La réciproque Q implique P est une autre affirmation.",
+        "Un raisonnement par l’absurde conduit à une contradiction."
+      ],
+      "image_mentale": "Une flèche logique reste vraie lorsqu’on inverse ses termes et leurs négations.",
+      "regle_ou_methode": "Pour la contraposée, inverse et nie les deux propositions ; pour l’absurde, suppose le contraire et cherche une contradiction.",
+      "exemples": [
+        "Si n² est pair alors n est pair : par contraposée, si n est impair, n = 2k + 1 et n² = 2(2k² + 2k) + 1 est impair.",
+        "Pour montrer qu’il n’existe pas de plus grand entier, suppose qu’un tel entier N existe ; N + 1 est encore plus grand, contradiction."
+      ],
+      "piege": "La contraposée inverse et nie les propositions ; la réciproque inverse sans nier.",
+      "astuce_memoire": "Contraposée : inverser et nier.",
+      "quiz": [
+        {
+          "q": "Quelle est la contraposée de « si P alors Q » ?",
+          "choix": [
+            "Si non Q alors non P",
+            "Si Q alors P",
+            "Si non P alors non Q"
+          ],
+          "rep": "Si non Q alors non P",
+          "expl": "La contraposée inverse l’ordre et nie les propositions."
+        },
+        {
+          "q": "Un raisonnement par l’absurde aboutit à ?",
+          "choix": [
+            "Une simple répétition de l’hypothèse",
+            "Une contradiction",
+            "Une définition sans rapport"
+          ],
+          "rep": "Une contradiction",
+          "expl": "La contradiction permet de rejeter l’hypothèse contraire."
+        },
+        {
+          "q": "La réciproque d’une implication vraie est-elle toujours vraie ?",
+          "choix": [
+            "Oui",
+            "Seulement si P est une phrase",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Une réciproque nécessite une preuve distincte."
+        }
+      ],
+      "id": "REV-MA-TLE-93"
+    }
+  ]
+}

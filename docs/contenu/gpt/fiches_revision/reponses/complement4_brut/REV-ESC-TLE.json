@@ -1,0 +1,225 @@
+{
+  "classe": "TLE",
+  "niveau_appli": "Lycée",
+  "age": "17-18 ans",
+  "matiere": "Enseignement scientifique",
+  "code": "ESC",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Le futur des énergies",
+      "titre": "De la pile à l’induction",
+      "emoji": "🔌",
+      "en_une_phrase": "La pile de Volta et l’induction de Faraday illustrent deux façons de produire de l’électricité.",
+      "comprendre": "En 1800, Volta présente une pile produisant un courant grâce à des transformations chimiques. Au XIXe siècle, Faraday met en évidence une induction électrique liée à la variation du flux magnétique.",
+      "essentiel": [
+        "Une pile convertit de l’énergie chimique en énergie électrique.",
+        "L’induction permet de produire une tension quand le flux magnétique varie.",
+        "Un alternateur utilise l’induction pour convertir de l’énergie mécanique."
+      ],
+      "image_mentale": "Une pile alimente une lampe ; ailleurs, une bobine et un aimant en mouvement créent une tension.",
+      "regle_ou_methode": "Identifie la source d’énergie et le mécanisme de conversion.",
+      "exemples": [
+        "Dans un alternateur, une turbine entraîne un aimant par rapport à une bobine : le flux magnétique varie et une tension est induite.",
+        "Dans une pile, une réaction chimique permet d’alimenter un circuit électrique."
+      ],
+      "piege": "Une pile et un alternateur ne reposent pas sur le même mécanisme.",
+      "astuce_memoire": "Pile : chimie ; alternateur : induction.",
+      "quiz": [
+        {
+          "q": "Quelle source d’énergie utilise une pile ?",
+          "choix": [
+            "L’énergie chimique",
+            "Uniquement l’énergie lumineuse",
+            "L’énergie sonore seule"
+          ],
+          "rep": "L’énergie chimique",
+          "expl": "Les transformations chimiques alimentent le circuit."
+        },
+        {
+          "q": "Quel phénomène est utilisé par un alternateur ?",
+          "choix": [
+            "La fermentation",
+            "L’induction électromagnétique",
+            "La photosynthèse"
+          ],
+          "rep": "L’induction électromagnétique",
+          "expl": "Le flux magnétique variable crée une tension induite."
+        },
+        {
+          "q": "Si aimant et bobine sont immobiles l’un par rapport à l’autre et le flux constant, que prévoit ce modèle ?",
+          "choix": [
+            "Une tension induite parce que le flux varie",
+            "Un courant forcément croissant",
+            "Pas de tension induite par cette variation de flux"
+          ],
+          "rep": "Pas de tension induite par cette variation de flux",
+          "expl": "Dans ce modèle, la tension induite nécessite une variation du flux."
+        }
+      ],
+      "id": "REV-ESC-TLE-90"
+    },
+    {
+      "axe": "Le futur des énergies",
+      "titre": "Réseau électrique et nœuds",
+      "emoji": "⚡",
+      "en_une_phrase": "Un réseau peut être représenté par des branches reliant des nœuds où les intensités se répartissent.",
+      "comprendre": "Comme les routes d’une carte, les lignes électriques relient des points de production et de consommation. Dans ce modèle de courant continu, la conservation de la charge impose l’égalité des intensités entrantes et sortantes au nœud.",
+      "essentiel": [
+        "Un graphe représente les points par des sommets et les lignes par des arêtes.",
+        "Au nœud, la somme des intensités entrantes égale la somme des intensités sortantes.",
+        "Les pertes par effet Joule augmentent avec le carré de l’intensité à résistance donnée.",
+        "Le modèle simplifie le fonctionnement réel du réseau."
+      ],
+      "image_mentale": "Un carrefour reçoit un courant et le répartit entre deux branches.",
+      "regle_ou_methode": "Additionne les intensités entrantes et sortantes, puis isole l’inconnue.",
+      "exemples": [
+        "À un nœud, 10 A arrivent ; une branche reçoit 4 A. L’autre reçoit 10 − 4 = 6 A.",
+        "Dans une ligne de résistance 2 Ω parcourue par 3 A, les pertes valent 2 × 3² = 18 W."
+      ],
+      "piege": "Un nœud ne crée pas du courant : applique la conservation de la charge.",
+      "astuce_memoire": "Entrées égales sorties au nœud.",
+      "quiz": [
+        {
+          "q": "Si 8 A arrivent et que 3 A sortent par une branche, combien sortent par l’autre ?",
+          "choix": [
+            "11 A",
+            "5 A",
+            "3 A"
+          ],
+          "rep": "5 A",
+          "expl": "La conservation donne 8 − 3 = 5 A."
+        },
+        {
+          "q": "À résistance constante, si l’intensité double, les pertes par effet Joule sont ?",
+          "choix": [
+            "Multipliées par 2",
+            "Divisées par 4",
+            "Multipliées par 4"
+          ],
+          "rep": "Multipliées par 4",
+          "expl": "Elles sont proportionnelles au carré de l’intensité."
+        },
+        {
+          "q": "Dans un graphe de réseau, que représente une branche ?",
+          "choix": [
+            "Une liaison entre deux points",
+            "Une personne",
+            "La température d’un sol"
+          ],
+          "rep": "Une liaison entre deux points",
+          "expl": "La branche modélise ici une ligne."
+        }
+      ],
+      "id": "REV-ESC-TLE-91"
+    },
+    {
+      "axe": "Une histoire du vivant",
+      "titre": "Évolution : résistances et domestication",
+      "emoji": "🧬",
+      "en_une_phrase": "La sélection modifie la fréquence de caractères héréditaires dans une population.",
+      "comprendre": "Des variations existent avant la sélection, notamment par mutations. Un antibiotique favorise la multiplication relative de bactéries résistantes déjà présentes ; la domestication favorise des caractères choisis par les humains.",
+      "essentiel": [
+        "Une mutation peut rendre une bactérie résistante avant exposition.",
+        "L’antibiotique élimine les bactéries sensibles ou freine leur multiplication, ce qui sélectionne les résistantes.",
+        "La sélection artificielle repose sur une reproduction préférentielle de certains individus.",
+        "Résistance et domestication concernent des populations au fil des générations."
+      ],
+      "image_mentale": "Deux populations changent de composition selon les conditions de reproduction.",
+      "regle_ou_methode": "Repère les variations, la pression de sélection et les différences de descendance.",
+      "exemples": [
+        "Dans une culture fictive, quelques bactéries sont déjà résistantes : après exposition à un antibiotique bactéricide, elles survivent davantage et leur proportion augmente.",
+        "Si des plantes aux graines plus grosses sont choisies pour être ressemées, ce caractère héréditaire peut devenir plus fréquent."
+      ],
+      "piege": "L’antibiotique ne crée pas à volonté une mutation adaptée chez chaque bactérie.",
+      "astuce_memoire": "Variation puis sélection sur plusieurs générations.",
+      "quiz": [
+        {
+          "q": "Une bactérie résistante peut-elle exister avant l’antibiotique ?",
+          "choix": [
+            "Non, jamais",
+            "Seulement après la disparition de toutes les bactéries",
+            "Oui"
+          ],
+          "rep": "Oui",
+          "expl": "Des mutations peuvent préexister à l’exposition."
+        },
+        {
+          "q": "En domestication, quel mécanisme favorise certains caractères ?",
+          "choix": [
+            "La reproduction préférentielle des individus choisis",
+            "La transformation immédiate de tous les individus",
+            "L’absence de transmission"
+          ],
+          "rep": "La reproduction préférentielle des individus choisis",
+          "expl": "Les individus retenus transmettent leurs caractères héréditaires."
+        },
+        {
+          "q": "Après sélection, qu’observe-t-on souvent ?",
+          "choix": [
+            "Une mutation identique imposée à chaque individu",
+            "Une modification des fréquences dans la population",
+            "La disparition des différences héréditaires dans tous les cas"
+          ],
+          "rep": "Une modification des fréquences dans la population",
+          "expl": "La sélection modifie la proportion des variants."
+        }
+      ],
+      "id": "REV-ESC-TLE-92"
+    },
+    {
+      "axe": "Une histoire du vivant",
+      "titre": "Malthus : population et ressources",
+      "emoji": "👥",
+      "en_une_phrase": "Le modèle de Malthus compare une croissance démographique exponentielle à des ressources limitées.",
+      "comprendre": "Si la population augmente d’une même proportion chaque année, une suite géométrique modélise son effectif. Ce modèle simplifié doit être confronté aux données et aux ressources disponibles.",
+      "essentiel": [
+        "Pₙ = P₀ × (1 + t)ⁿ pour un taux annuel constant t.",
+        "Une croissance exponentielle suppose un taux relatif constant.",
+        "Les ressources peuvent évoluer selon d’autres modèles.",
+        "Les prévisions de long terme dépendent d’hypothèses souvent irréalistes."
+      ],
+      "image_mentale": "Une population croît en multipliant son effectif, tandis qu’une ressource progresse autrement.",
+      "regle_ou_methode": "Calcule les effectifs successifs puis compare-les aux ressources et aux observations.",
+      "exemples": [
+        "Avec P₀ = 100 et t = 10 %, P₁ = 110 puis P₂ = 121. Si chaque personne nécessite une unité et que la ressource progresse de 10 unités par an depuis 100, elle atteint 120 à la deuxième année : il manque une unité pour les 121 personnes.",
+        "Si l’effectif observé diffère durablement du modèle, il faut réexaminer ses hypothèses."
+      ],
+      "piege": "Le modèle ne prouve pas que toutes les populations évoluent toujours au même taux.",
+      "astuce_memoire": "Taux constant : multiplication répétée.",
+      "quiz": [
+        {
+          "q": "Avec 100 individus et +10 % par an, combien après deux ans dans le modèle ?",
+          "choix": [
+            "121",
+            "120",
+            "110"
+          ],
+          "rep": "121",
+          "expl": "100 × 1,1² = 121."
+        },
+        {
+          "q": "Quel modèle suppose ici un taux relatif constant ?",
+          "choix": [
+            "Une addition fixe obligatoire",
+            "Une suite géométrique",
+            "Une population figée"
+          ],
+          "rep": "Une suite géométrique",
+          "expl": "Chaque terme est multiplié par le même coefficient."
+        },
+        {
+          "q": "Que faire si les données observées s’éloignent durablement du modèle ?",
+          "choix": [
+            "Ignorer systématiquement les observations",
+            "Déclarer le modèle forcément exact",
+            "Réexaminer ses hypothèses"
+          ],
+          "rep": "Réexaminer ses hypothèses",
+          "expl": "La comparaison aux données permet de tester un modèle."
+        }
+      ],
+      "id": "REV-ESC-TLE-93"
+    }
+  ]
+}
