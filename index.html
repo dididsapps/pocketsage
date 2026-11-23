@@ -383,6 +383,10 @@ body.soir #nuit-c span{color:#E0B080}
 .lum-bar input{flex:1;accent-color:#F2A65A;height:28px}
 #veilleuse .lum-bar{width:100%;max-width:340px;margin:0}
 /* 💪 Mes super-pouvoirs */
+.df-ill{position:relative;width:min(260px,70vw);aspect-ratio:1;margin:4px auto 8px;border-radius:18px;background:#fff;overflow:hidden}
+.df-ill img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity .45s}.df-ill img.on{opacity:1}
+.df-ill-dots{position:absolute;left:0;right:0;bottom:6px;display:flex;justify-content:center;gap:5px}.df-ill-dots i{width:7px;height:7px;border-radius:50%;background:#CBD5E1}.df-ill-dots i.on{background:#6C63FF}
+.de-s{font-size:.9em}
 .cc-hero{display:flex;gap:12px;align-items:center;margin:12px 14px;padding:16px;border-radius:20px;background:linear-gradient(135deg,#F59E0B,#EF4444);color:#fff;font-family:var(--f)}
 .cc-he{font-size:40px}.cc-hero b{display:block;font-size:19px}.cc-hero span{font-size:13px;line-height:1.45;opacity:.95}
 .cc-sec{margin:14px 16px 8px;font-family:var(--f);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;color:var(--tl,#666)}
@@ -12230,7 +12234,7 @@ function openWorld(){
   if(btn)btn.classList.add('active');
   buildWorldScreen();
 }
-function backMod(){try{clearTimer();if(APP._retRelax){APP._retRelax=false;openRelax();return;}if(APP.curMod)openMod(APP.curMod);else goHome();}catch(e){goHome();}}
+function backMod(){try{sportIllusStop();}catch(e){}try{clearTimer();if(APP._retRelax){APP._retRelax=false;openRelax();return;}if(APP.curMod)openMod(APP.curMod);else goHome();}catch(e){goHome();}}
 function clearTimer(){try{if(APP.timer){clearInterval(APP.timer);APP.timer=null;}}catch(e){}}
 
 // ════════════════════════════════════════════
@@ -15917,8 +15921,7 @@ function startDefi(item,idx,list,auto){
   c.innerHTML=`
     <div class="dcard" data-cat="${item.cat||''}">
       <div class="df-catbadge">${ci.l}</div>
-      <div class="de">${emoji}</div>
-      <h2>${item.nom.replace(/\p{Emoji}/gu,'').trim()}</h2>
+      ${sportIllusN(item.id)?`<div class="df-ill" id="df-ill"></div><h2><span class="de-s">${emoji}</span> ${item.nom.replace(/\p{Emoji}/gu,'').trim()}</h2>`:`<div class="de">${emoji}</div><h2>${item.nom.replace(/\p{Emoji}/gu,'').trim()}</h2>`}
       <p>${item.consigne}</p>
       <div class="tring" id="df-ring">${dur}s</div>
       <div class="df-progbar"><div class="df-progbar-inner" id="df-prog"></div></div>
@@ -15932,6 +15935,7 @@ function startDefi(item,idx,list,auto){
       <button class="nxtbtn show" id="df-nx">${APP.car?'▶ DÉFI SUIVANT':'Défi suivant →'}</button>
     </div>`;
   
+  try{sportIllus(document.getElementById('df-ill'),item.id);}catch(e){}
   document.getElementById('df-hb').onclick=()=>{sndTap();document.getElementById('df-ht').classList.toggle('show');};
   document.getElementById('df-st').onclick=()=>{
     if(running)return;running=true;
@@ -20425,6 +20429,7 @@ window.transferCoinsToWorld=function(n){
 <script src="js/fiches.js?v=97"></script>
 <script src="js/relax.js?v=97"></script>
 <script src="js/ccm.js?v=97"></script>
+<script src="js/sport-illus.js?v=97"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
