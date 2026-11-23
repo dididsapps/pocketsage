@@ -1,0 +1,281 @@
+{
+ "lecons": [
+  {
+   "id": "CM-12-01",
+   "action": "ok",
+   "corrections": {},
+   "note": "Exact, clair, sécurité présente, quiz conforme, pas de culpabilisation."
+  },
+  {
+   "id": "CM-12-02",
+   "action": "ok",
+   "corrections": {},
+   "note": "Hameçonnage, HTTPS (chiffre le transport, ne garantit pas l’honnêteté) et QR code : exact ; quiz conforme."
+  },
+  {
+   "id": "CM-12-03",
+   "action": "ok",
+   "corrections": {},
+   "note": "Usurpation d’identité affichée et imitation de voix par IA : exact et prudent ; quiz conforme."
+  },
+  {
+   "id": "CM-12-04",
+   "action": "ok",
+   "corrections": {},
+   "note": "Mots de passe distincts, double authentification, codes à ne jamais dicter : exact ; quiz conforme."
+  },
+  {
+   "id": "CM-12-05",
+   "action": "ok",
+   "corrections": {},
+   "note": "Faux conseiller, virement « de sécurité », faux support technique, prise de main à distance : exact ; sécurité complète."
+  },
+  {
+   "id": "CM-12-06",
+   "action": "ok",
+   "corrections": {},
+   "note": "Fausse capture de paiement et fraude au changement de RIB : exact ; quiz conforme."
+  },
+  {
+   "id": "CM-12-07",
+   "action": "corriger",
+   "corrections": {
+    "cartes": [
+     {
+      "titre": "Le placement miraculeux",
+      "texte": "Un gain élevé présenté comme certain et sans risque doit alerter. Vérifie les autorisations et l’identité réelle auprès des sources officielles ; le nom d’une entreprise autorisée peut lui aussi être usurpé.",
+      "schema": ""
+     },
+     {
+      "titre": "Le faux emploi",
+      "texte": "Un prétendu recruteur peut demander de payer un matériel, une formation ou des frais pour être embauché. Ne paie pas sous pression ; vérifie l’offre auprès de l’organisation par un contact indépendant.",
+      "schema": ""
+     },
+     {
+      "titre": "La relation utilisée comme levier",
+      "texte": "Une relation en ligne peut évoluer vers des demandes d’argent et de secret. L’attachement ne prouve pas l’identité ni l’urgence annoncée. Demander un regard extérieur peut aider à prendre du recul.",
+      "schema": ""
+     },
+     {
+      "titre": "Le piège du « encore un paiement »",
+      "texte": "Après une première somme, on peut réclamer des frais pour débloquer le gain ou récupérer l’argent perdu. Avoir déjà payé n’oblige pas à payer davantage ; une récupération garantie peut être une nouvelle arnaque.",
+      "schema": "Suite de trois demandes d’argent ; au deuxième maillon, panneau arrêter et vérifier. Flèche sortie vers aide indépendante, sans récompense finale dessinée."
+     }
+    ]
+   },
+   "note": "Guillemets ajoutés au titre de carte cité (« encore un paiement ») pour la lisibilité ; contenu exact."
+  },
+  {
+   "id": "CM-12-08",
+   "action": "ok",
+   "corrections": {},
+   "note": "Vérifié sur le web : 17Cyber = assistance en ligne (Cybermalveillance.gouv.fr avec Police et Gendarmerie) ; 33700 = signalement gratuit des SMS/appels frauduleux ; 17/112 urgences corrects."
+  },
+  {
+   "id": "CM-13-01",
+   "action": "corriger",
+   "corrections": {
+    "cartes": [
+     {
+      "titre": "Un fait vérifiable",
+      "texte": "« La piscine ferme à 18 heures » décrit une information qu’on peut vérifier pour un lieu et une date. Un fait annoncé peut être exact ou faux : sa forme ne suffit pas à le valider.",
+      "schema": ""
+     },
+     {
+      "titre": "Une opinion n’est pas un horaire",
+      "texte": "« Cette piscine est la plus agréable » exprime un jugement selon des critères à préciser. Une préférence ne se vérifie pas comme une heure de fermeture, même si elle mérite d’être expliquée.",
+      "schema": ""
+     },
+     {
+      "titre": "Une hypothèse reste provisoire",
+      "texte": "« La fermeture vient peut-être d’une panne » propose une explication à vérifier. Retirer le « peut-être » transforme une hypothèse en affirmation plus forte, sans apporter de nouvelle preuve.",
+      "schema": ""
+     },
+     {
+      "titre": "Erreur ou tromperie ?",
+      "texte": "Une information fausse peut venir d’une erreur, d’un manque de contexte ou d’une volonté de tromper. On peut vérifier son contenu sans prétendre connaître automatiquement l’intention de son auteur.",
+      "schema": "Quatre cartes : fait annoncé, opinion, hypothèse, contenu fictif. Une loupe vise l’affirmation vérifiable ; intention de l’auteur reste une case séparée."
+     }
+    ],
+    "quiz": [
+     {
+      "q": "Quelle phrase annonce un fait vérifiable ?",
+      "choix": [
+       "Cette piscine est la plus agréable",
+       "La piscine ferme à 18 heures",
+       "J’aime cette couleur"
+      ],
+      "rep": "La piscine ferme à 18 heures",
+      "expl": "Un horaire se vérifie pour le lieu et la date concernés."
+     },
+     {
+      "q": "Que change la suppression de « peut-être » ?",
+      "choix": [
+       "Elle prouve la cause",
+       "Elle transforme une préférence en chiffre",
+       "L’hypothèse est présentée plus fortement, sans preuve nouvelle"
+      ],
+      "rep": "L’hypothèse est présentée plus fortement, sans preuve nouvelle",
+      "expl": "La force de la formulation ne garantit pas l’exactitude."
+     },
+     {
+      "q": "Une information fausse prouve-t-elle une intention de tromper ?",
+      "choix": [
+       "Non",
+       "Oui, toujours",
+       "Oui, si elle a été partagée"
+      ],
+      "rep": "Non",
+      "expl": "Il faut distinguer le contenu erroné de l’intention supposée."
+     }
+    ]
+   },
+   "note": "Phrases d’exemple citées sans guillemets, lecture ambiguë (« La piscine ferme à 18 heures décrit… ») : guillemets « » ajoutés dans les cartes et le quiz."
+  },
+  {
+   "id": "CM-13-02",
+   "action": "ok",
+   "corrections": {},
+   "note": "Source, document complet, date de l’événement vs date de publication : exact ; quiz conforme."
+  },
+  {
+   "id": "CM-13-03",
+   "action": "corriger",
+   "corrections": {
+    "cartes": [
+     {
+      "titre": "Rechercher plusieurs chemins",
+      "texte": "Deux sources indépendantes peuvent apporter des éléments différents sur le même fait. Trois comptes qui reprennent un seul message restent trois relais d’une même origine.",
+      "schema": ""
+     },
+     {
+      "titre": "Regarder la méthode",
+      "texte": "Une affirmation appuyée sur un document accessible ou des observations expliquées se vérifie mieux qu’une certitude sans élément. La méthode et les limites comptent davantage qu’un ton assuré.",
+      "schema": ""
+     },
+     {
+      "titre": "Garder les catégories ouvertes",
+      "texte": "Selon les éléments, un point peut être établi, contredit ou encore non vérifié. « Non vérifié » ne signifie ni vrai ni faux ; cela signifie qu’on ne dispose pas encore d’éléments suffisants.",
+      "schema": ""
+     },
+     {
+      "titre": "Ne pas tout mettre à égalité",
+      "texte": "Une rumeur isolée ne pèse pas autant qu’un ensemble solide de résultats concordants. Rester ouvert à une correction n’oblige pas à considérer toutes les affirmations comme également étayées.",
+      "schema": "Arbre : source unique vers trois copies, séparé de deux enquêtes distinctes. Balance compare qualité des éléments, sans compter simplement les bulles."
+     }
+    ],
+    "quiz": [
+     {
+      "q": "Trois comptes copient un même message. Combien d’origines cela peut-il représenter ?",
+      "choix": [
+       "Une seule",
+       "Forcément trois enquêtes indépendantes",
+       "Forcément trois témoins directs"
+      ],
+      "rep": "Une seule",
+      "expl": "La répétition ne crée pas une confirmation indépendante."
+     },
+     {
+      "q": "« Non vérifié » signifie quoi ?",
+      "choix": [
+       "Forcément faux",
+       "Les éléments disponibles ne permettent pas encore de conclure",
+       "Forcément vrai"
+      ],
+      "rep": "Les éléments disponibles ne permettent pas encore de conclure",
+      "expl": "Il faut conserver la distinction entre incertitude et réfutation."
+     },
+     {
+      "q": "Quel élément aide le plus à examiner une affirmation ?",
+      "choix": [
+       "Une voix très assurée",
+       "Un grand nombre d’exclamations",
+       "Une méthode et des documents accessibles"
+      ],
+      "rep": "Une méthode et des documents accessibles",
+      "expl": "On peut vérifier le chemin qui conduit à la conclusion."
+     }
+    ]
+   },
+   "note": "Guillemets ajoutés autour de la catégorie citée « Non vérifié » (carte et quiz) ; contenu exact."
+  },
+  {
+   "id": "CM-13-04",
+   "action": "corriger",
+   "corrections": {
+    "cartes": [
+     {
+      "titre": "Demander sur combien",
+      "texte": "« 20 personnes ont répondu oui » ne décrit pas la même proportion dans un groupe de 25 que dans un groupe de 1 000. Le total concerné, appelé dénominateur, donne l’échelle.",
+      "schema": ""
+     },
+     {
+      "titre": "Relatif et nombre de cas",
+      "texte": "Dans un exemple fictif, passer de 10 à 20 cas correspond à un doublement, donc +100 %. Cela représente aussi 10 cas supplémentaires. Les deux descriptions sont justes mais éclairent différemment.",
+      "schema": ""
+     },
+     {
+      "titre": "Pourcentage et points",
+      "texte": "Dans un même groupe fictif de 100 personnes, passer de 10 % à 20 % fait gagner 10 points de pourcentage. Cela reste un doublement relatif, pas une hausse relative de 10 %.",
+      "schema": ""
+     },
+     {
+      "titre": "Lire les axes",
+      "texte": "Un graphique montre des valeurs selon une échelle. Vérifie unité, période et départ de l’axe : une échelle resserrée peut faire paraître un petit écart très grand.",
+      "schema": "Deux graphiques des mêmes valeurs 10 et 20 : premier axe de 0 à 100, second de 9 à 21 avec départ 9 bien indiqué. Valeurs écrites sur les deux."
+     }
+    ]
+   },
+   "note": "Calculs justes (+100 %, +10 points). Phrase d’exemple mise entre guillemets pour la lisibilité."
+  },
+  {
+   "id": "CM-13-05",
+   "action": "ok",
+   "corrections": {},
+   "note": "Cadrage, recadrage, légende et montage vidéo : exact ; schémas cohérents ; quiz conforme."
+  },
+  {
+   "id": "CM-13-06",
+   "action": "ok",
+   "corrections": {},
+   "note": "Recherche d’image inversée et ses limites : exact et nuancé ; quiz conforme."
+  },
+  {
+   "id": "CM-13-07",
+   "action": "corriger",
+   "corrections": {
+    "dans_ta_vie": "Tu peux éviter de conclure « vrai » parce que c’est réaliste, ou « faux » parce qu’un outil le déclare."
+   },
+   "note": "Contenu exact (hypertrucage, limites des détecteurs). Guillemets ajoutés dans « dans_ta_vie » pour la lisibilité."
+  },
+  {
+   "id": "CM-13-08",
+   "action": "corriger",
+   "corrections": {
+    "cartes": [
+     {
+      "titre": "L’émotion n’est pas une preuve",
+      "texte": "Un contenu qui te choque ou confirme ton avis mérite la même vérification qu’un contenu déplaisant. Être d’accord avec la conclusion ne valide pas ses éléments.",
+      "schema": ""
+     },
+     {
+      "titre": "Garder l’incertitude visible",
+      "texte": "Si un point n’est pas établi, tu peux ne pas le partager. Dire « je ne sais pas encore » est plus exact que choisir un camp seulement pour terminer la discussion.",
+      "schema": ""
+     },
+     {
+      "titre": "Corriger ce que tu as diffusé",
+      "texte": "Si tu as partagé une erreur, indique ce qui était inexact, la correction et sa source. Fais-le auprès des destinataires concernés sans rediffuser inutilement un contenu humiliant.",
+      "schema": ""
+     },
+     {
+      "titre": "Contester sans harceler",
+      "texte": "Tu peux demander une source ou expliquer un problème précis sans insulter l’auteur. Pour une information de santé ou une alerte de sécurité, utilise les ressources compétentes plutôt qu’une chaîne non vérifiée.",
+      "schema": "Publication incertaine vers pause ; erreur déjà partagée vers correction et destinataires initiaux. Chemin vers insultes ou nouvelle diffusion massive barré."
+     }
+    ]
+   },
+   "note": "Guillemets ajoutés autour de la phrase citée « je ne sais pas encore » ; contenu juste."
+  }
+ ]
+}
