@@ -15,7 +15,7 @@
   const pourMoi=t=>t.public==='enfant'?age()<=12:age()>=12;
   const videosOk=()=>{try{const p=P();return !(p&&p.ccmVideosOff);}catch(e){return true;}};
 
-  window.openCCM=async function(id,from){document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));theme=id||null;lecon=null;retour=from||null;show('ccm');await rendre();};
+  window.openCCM=async function(id,from){document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));theme=id||null;lecon=null;retour=from||null;const bp=retour==='politesse';try{document.getElementById('ccm-htit').textContent=bp?'🗣️ Bien parler':'🛠️ Comment ça marche ?';document.getElementById('ccm-hbk').onclick=bp?()=>openPolitesse(3):()=>goHome();}catch(e){}show('ccm');await rendre();};
   // Thèmes « Bien parler » (BP-*) : affichés dans l'onglet Bien parler de Politesse, pas dans la liste principale.
   window.ccmBienParler=async function(){const ix=await index();return {pourMoi:ix.themes.filter(t=>estBP(t)&&pourMoi(t)),autres:ix.themes.filter(t=>estBP(t)&&!pourMoi(t)),fait:t=>(t.lecons||[]).filter(id=>etat()[id]).length};};
   async function rendre(){
