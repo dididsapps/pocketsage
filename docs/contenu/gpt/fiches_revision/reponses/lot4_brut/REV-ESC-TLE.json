@@ -1,0 +1,2154 @@
+{
+  "classe": "TLE",
+  "niveau_appli": "Lycée",
+  "age": "17-18 ans",
+  "matiere": "Enseignement scientifique",
+  "code": "ESC",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Science, climat et société",
+      "titre": "L’atmosphère terrestre et l’eau",
+      "emoji": "🌍",
+      "en_une_phrase": "L’atmosphère et les océans se sont transformés depuis la formation de la Terre.",
+      "comprendre": "Il y a environ 4,6 milliards d’années, l’atmosphère primitive contenait notamment du diazote, du dioxyde de carbone et de la vapeur d’eau. Le refroidissement a permis la condensation de l’eau et la formation de l’hydrosphère. Dans celle-ci, la vie s’est développée.",
+      "essentiel": [
+        "L’atmosphère sèche actuelle contient environ 78 % de diazote et 21 % de dioxygène.",
+        "La vapeur d’eau est présente en proportion variable.",
+        "L’état de l’eau dépend à la fois de la température et de la pression."
+      ],
+      "image_mentale": "Une planète refroidit : une partie de la vapeur devient liquide.",
+      "regle_ou_methode": "Comparer les compositions puis lire température et pression sur un diagramme d’état.",
+      "exemples": [
+        "Exemple résolu : dans 100 L d’air sec actuel, 1. prendre 21 % de 100 L ; 2. 0,21 × 100 = 21 L ; 3. le volume de dioxygène est approximativement de 21 L aux mêmes température et pression.",
+        "Exemple corrigé : à pression atmosphérique ordinaire, une eau à 20 °C est liquide ; à une autre pression, il faut consulter le diagramme d’état."
+      ],
+      "piege": "Ne pas attribuer à l’atmosphère primitive les proportions actuelles de dioxygène.",
+      "astuce_memoire": "Refroidissement → condensation → hydrosphère.",
+      "quiz": [
+        {
+          "q": "Quel gaz représente environ 78 % de l’air sec actuel ?",
+          "choix": [
+            "Le dioxygène",
+            "Le diazote",
+            "Le dioxyde de carbone"
+          ],
+          "rep": "Le diazote",
+          "expl": "Le diazote est le composant majoritaire de l’air sec."
+        },
+        {
+          "q": "Quelle transformation a contribué à former les océans primitifs ?",
+          "choix": [
+            "La fusion du diazote atmosphérique",
+            "La disparition de toute activité géologique",
+            "La condensation de vapeur d’eau lors du refroidissement"
+          ],
+          "rep": "La condensation de vapeur d’eau lors du refroidissement",
+          "expl": "Le refroidissement permet à une partie de la vapeur de devenir liquide."
+        },
+        {
+          "q": "De quelles grandeurs dépend l’état physique stable de l’eau ?",
+          "choix": [
+            "De la température et de la pression",
+            "Uniquement de la couleur du récipient",
+            "Uniquement de la quantité de dioxygène"
+          ],
+          "rep": "De la température et de la pression",
+          "expl": "Le diagramme d’état utilise la température et la pression."
+        }
+      ],
+      "id": "REV-ESC-TLE-01"
+    },
+    {
+      "axe": "Science, climat et société",
+      "titre": "Dioxygène, vie et ozone",
+      "emoji": "🦠",
+      "en_une_phrase": "La photosynthèse a contribué à l’oxygénation de l’atmosphère et à la formation d’ozone stratosphérique.",
+      "comprendre": "Des indices témoignent d’une activité microbienne très ancienne ; la date précise de l’apparition de la photosynthèse oxygénique reste étudiée. Le dioxygène produit a notamment oxydé des substances avant de s’accumuler dans l’atmosphère, vers 2,4 milliards d’années. Des indices géologiques comme certaines roches riches en oxydes de fer renseignent sur ces transformations.",
+      "essentiel": [
+        "La photosynthèse oxygénique produit du dioxygène ; respiration et combustions en consomment.",
+        "Sous l’action des ultraviolets, le dioxygène stratosphérique participe à la formation d’ozone.",
+        "L’ozone stratosphérique absorbe une partie des ultraviolets susceptibles d’endommager l’ADN."
+      ],
+      "image_mentale": "Des producteurs de dioxygène, des puits, puis une protection partielle contre les UV.",
+      "regle_ou_methode": "Relier métabolisme, indices géologiques et comparaison de spectres d’absorption.",
+      "exemples": [
+        "Exemple résolu : 1. Une roche ancienne contient des oxydes de fer ; 2. le fer a été oxydé ; 3. cet indice est compatible avec la présence d’oxydants, dont le dioxygène, dans le milieu de formation. La datation et d’autres indices sont nécessaires pour reconstituer l’histoire.",
+        "Exemple corrigé : si l’ozone absorbe des UV dans un domaine où l’ADN en absorbe aussi, il réduit une partie de l’exposition de l’ADN à ces rayonnements."
+      ],
+      "piege": "Oxygénation de l’atmosphère et apparition de la photosynthèse ne sont pas simultanées.",
+      "astuce_memoire": "Photosynthèse → O₂ → ozone stratosphérique.",
+      "quiz": [
+        {
+          "q": "Quel processus produit du dioxygène ?",
+          "choix": [
+            "La respiration cellulaire",
+            "La combustion complète du carbone",
+            "La photosynthèse oxygénique"
+          ],
+          "rep": "La photosynthèse oxygénique",
+          "expl": "La photosynthèse oxygénique libère du dioxygène."
+        },
+        {
+          "q": "Quel est le rôle de l’ozone stratosphérique ?",
+          "choix": [
+            "Absorber une partie des ultraviolets solaires",
+            "Absorber la totalité de la lumière visible",
+            "Transformer tout le dioxygène en diazote"
+          ],
+          "rep": "Absorber une partie des ultraviolets solaires",
+          "expl": "L’ozone absorbe une partie des UV susceptibles d’altérer l’ADN."
+        },
+        {
+          "q": "Quel processus consomme du dioxygène ?",
+          "choix": [
+            "La photosynthèse oxygénique",
+            "La respiration",
+            "La condensation de la vapeur d’eau"
+          ],
+          "rep": "La respiration",
+          "expl": "La respiration utilise du dioxygène pour oxyder des molécules."
+        }
+      ],
+      "id": "REV-ESC-TLE-02"
+    },
+    {
+      "axe": "Science, climat et société",
+      "titre": "Météo, climat et indicateurs",
+      "emoji": "🌡️",
+      "en_une_phrase": "Le climat se caractérise par des statistiques et indicateurs observés sur une durée suffisamment longue.",
+      "comprendre": "La météorologie décrit et prévoit l’état de l’atmosphère à court terme. La climatologie étudie ses caractéristiques et leur évolution à plus long terme. Les indicateurs incluent la température moyenne, le niveau marin et l’étendue des glaciers.",
+      "essentiel": [
+        "Une journée froide ne suffit pas à établir une tendance climatique.",
+        "Les mesures de terrain et les satellites fournissent des observations complémentaires.",
+        "Le climat varie naturellement ; l’évolution récente doit être étudiée avec ses causes."
+      ],
+      "image_mentale": "La météo est un épisode ; le climat décrit la distribution des épisodes et ses changements.",
+      "regle_ou_methode": "Lire l’axe des dates, les unités, la tendance et la variabilité autour de celle-ci.",
+      "exemples": [
+        "Exemple résolu : une anomalie moyenne fictive passe de 0,4 °C à 1,0 °C. 1. Calculer 1,0 − 0,4 ; 2. la variation absolue vaut +0,6 °C ; 3. la comparaison concerne les deux périodes et la référence utilisées.",
+        "Exemple corrigé : un glacier qui recule pendant plusieurs décennies fournit un indice d’évolution climatique, mais son comportement dépend aussi des précipitations locales."
+      ],
+      "piege": "Confondre variation absolue en degrés et variation relative en pourcentage.",
+      "astuce_memoire": "Météo : court terme ; climat : statistiques sur la durée.",
+      "quiz": [
+        {
+          "q": "Quel fait relève directement de la météorologie ?",
+          "choix": [
+            "Une prévision de pluie pour demain",
+            "La tendance des températures sur plusieurs décennies",
+            "La variation de l’étendue des glaciers sur un siècle"
+          ],
+          "rep": "Une prévision de pluie pour demain",
+          "expl": "La prévision du lendemain est une information météorologique."
+        },
+        {
+          "q": "Une anomalie passe de 0,4 à 1,0 °C ; sa variation vaut :",
+          "choix": [
+            "+1,4 °C",
+            "+0,6 °C",
+            "−0,6 °C"
+          ],
+          "rep": "+0,6 °C",
+          "expl": "La différence est 1,0 − 0,4 = 0,6 °C."
+        },
+        {
+          "q": "Quel est un indicateur du climat global ?",
+          "choix": [
+            "La couleur d’un seul nuage observé un jour",
+            "La température d’une tasse",
+            "Le niveau moyen des océans"
+          ],
+          "rep": "Le niveau moyen des océans",
+          "expl": "Le niveau marin moyen renseigne sur des changements climatiques durables."
+        }
+      ],
+      "id": "REV-ESC-TLE-03"
+    },
+    {
+      "axe": "Science, climat et société",
+      "titre": "Reconstituer les climats passés",
+      "emoji": "🧊",
+      "en_une_phrase": "Les archives naturelles complètent les mesures directes pour reconstituer les variations climatiques anciennes.",
+      "comprendre": "Les glaces, sédiments et pollens conservent des indices des milieux passés. Les bulles d’air piégées dans certaines glaces renseignent sur la composition d’une atmosphère ancienne. Les pollens fossiles permettent d’identifier des végétations dont les exigences climatiques sont différentes.",
+      "essentiel": [
+        "Un indice indirect nécessite une méthode de datation et une interprétation.",
+        "Plusieurs archives indépendantes renforcent une reconstitution.",
+        "Une corrélation observée entre deux courbes ne suffit pas, seule, à établir une cause."
+      ],
+      "image_mentale": "Des archives naturelles enregistrent différentes pièces d’une même histoire.",
+      "regle_ou_methode": "Identifier l’archive, la grandeur déduite, sa date et les limites de l’indice.",
+      "exemples": [
+        "Exemple résolu : une carotte de glace contient des bulles anciennes. 1. Dater les couches et l’air avec les méthodes adaptées ; 2. analyser les gaz piégés ; 3. estimer une ancienne composition atmosphérique.",
+        "Exemple corrigé : une forte proportion de pollens d’espèces adaptées au froid dans un sédiment indique une végétation compatible avec un climat froid, à confirmer par d’autres indices."
+      ],
+      "piege": "La profondeur d’une couche ne suffit pas à donner son âge exact sans méthode de datation.",
+      "astuce_memoire": "Glaces : gaz ; pollens : végétation.",
+      "quiz": [
+        {
+          "q": "Que peuvent renseigner les bulles d’air des glaces anciennes ?",
+          "choix": [
+            "Le nombre exact d’habitants aujourd’hui",
+            "La composition d’une atmosphère passée",
+            "La météo précise de demain"
+          ],
+          "rep": "La composition d’une atmosphère passée",
+          "expl": "Les bulles conservent des gaz piégés dans le passé."
+        },
+        {
+          "q": "Les pollens fossiles renseignent d’abord sur :",
+          "choix": [
+            "La composition actuelle du noyau terrestre",
+            "La vitesse actuelle des satellites",
+            "La végétation passée"
+          ],
+          "rep": "La végétation passée",
+          "expl": "La végétation reconstituée fournit ensuite des indices climatiques."
+        },
+        {
+          "q": "Deux courbes évoluant ensemble prouvent-elles seules une causalité ?",
+          "choix": [
+            "Non, il faut examiner mécanismes et autres données",
+            "Oui, toute corrélation est causale",
+            "Oui, sans connaître les dates"
+          ],
+          "rep": "Non, il faut examiner mécanismes et autres données",
+          "expl": "Une corrélation ne suffit pas à établir un mécanisme causal."
+        }
+      ],
+      "id": "REV-ESC-TLE-04"
+    },
+    {
+      "axe": "Science, climat et société",
+      "titre": "Effet de serre et bilan radiatif",
+      "emoji": "☀️",
+      "en_une_phrase": "Les gaz à effet de serre absorbent une partie du rayonnement infrarouge terrestre et modifient les échanges d’énergie.",
+      "comprendre": "La Terre absorbe une partie du rayonnement solaire et émet un rayonnement infrarouge. Certains gaz atmosphériques absorbent une partie de cet infrarouge et rayonnent dans plusieurs directions, notamment vers la surface. L’intensification de l’effet de serre perturbe le bilan énergétique planétaire.",
+      "essentiel": [
+        "L’effet de serre naturel contribue à maintenir une surface terrestre plus chaude.",
+        "CO₂, CH₄, N₂O et vapeur d’eau sont des gaz à effet de serre.",
+        "L’influence d’un gaz dépend notamment de son absorption infrarouge et de son abondance."
+      ],
+      "image_mentale": "Un échange de rayonnements entre surface, atmosphère et espace.",
+      "regle_ou_methode": "Comparer le spectre émis par la Terre aux domaines d’absorption des gaz.",
+      "exemples": [
+        "Exemple résolu : un gaz fictif absorbe fortement dans une partie du spectre infrarouge émis par la surface. 1. Les domaines se recouvrent ; 2. il peut absorber ce rayonnement ; 3. son influence dépend aussi de son abondance.",
+        "Exemple corrigé : un gaz très peu abondant peut contribuer à l’effet de serre s’il absorbe efficacement l’infrarouge ; son abondance seule ne suffit pas à conclure."
+      ],
+      "piege": "L’effet de serre n’est pas causé par le trou dans la couche d’ozone.",
+      "astuce_memoire": "Soleil entrant ; infrarouge terrestre partiellement absorbé.",
+      "quiz": [
+        {
+          "q": "Quel rayonnement terrestre est particulièrement concerné par l’effet de serre ?",
+          "choix": [
+            "Uniquement les ondes sonores",
+            "Uniquement les rayons X solaires",
+            "L’infrarouge thermique"
+          ],
+          "rep": "L’infrarouge thermique",
+          "expl": "La surface terrestre émet un rayonnement thermique surtout infrarouge."
+        },
+        {
+          "q": "Quel gaz contribue à l’effet de serre ?",
+          "choix": [
+            "Le dioxyde de carbone",
+            "Le diazote, par absorption infrarouge comparable au CO₂",
+            "L’hélium, principal gaz absorbant infrarouge de l’atmosphère"
+          ],
+          "rep": "Le dioxyde de carbone",
+          "expl": "Le CO₂ absorbe dans des domaines du rayonnement infrarouge terrestre."
+        },
+        {
+          "q": "Pour comparer l’influence de gaz, il faut notamment considérer :",
+          "choix": [
+            "Seulement la couleur des récipients",
+            "Leurs absorptions et leurs abondances",
+            "Seulement la date de leur découverte"
+          ],
+          "rep": "Leurs absorptions et leurs abondances",
+          "expl": "Le recouvrement spectral et l’abondance interviennent dans leur effet."
+        }
+      ],
+      "id": "REV-ESC-TLE-05"
+    },
+    {
+      "axe": "Science, climat et société",
+      "titre": "Forçage et déséquilibre énergétique",
+      "emoji": "⚖️",
+      "en_une_phrase": "Une perturbation du bilan radiatif modifie l’énergie accumulée par le système climatique.",
+      "comprendre": "Le forçage radiatif quantifie la perturbation du bilan radiatif due à un facteur, généralement en W/m². Une augmentation des gaz à effet de serre exerce un forçage réchauffant ; le système réagit et sa température évolue. La plus grande part de l’excédent d’énergie est absorbée par l’océan.",
+      "essentiel": [
+        "Un flux radiatif est une puissance par unité de surface.",
+        "Un déséquilibre positif signifie que davantage d’énergie entre dans le système qu’il n’en sort.",
+        "Le changement climatique résulte de plusieurs facteurs et rétroactions, pas d’un seul indicateur."
+      ],
+      "image_mentale": "Un compte d’énergie : si les entrées dépassent les sorties, le stock augmente.",
+      "regle_ou_methode": "Soustraire puissance sortante à puissance entrante en conservant les mêmes unités.",
+      "exemples": [
+        "Exemple résolu : dans un bilan simplifié fictif, 241 W/m² entrent et 240 W/m² sortent. 1. 241 − 240 = 1 ; 2. le déséquilibre est de +1 W/m² ; 3. le système accumule de l’énergie.",
+        "Exemple corrigé : si entrées et sorties sont toutes deux de 240 W/m², le bilan radiatif simplifié est nul à cet instant."
+      ],
+      "piege": "Un déséquilibre instantané et un forçage radiatif défini par rapport à un état de référence sont liés, mais ne sont pas strictement synonymes.",
+      "astuce_memoire": "Entrées − sorties > 0 : énergie stockée.",
+      "quiz": [
+        {
+          "q": "Quelle unité convient à un forçage radiatif ?",
+          "choix": [
+            "W/m²",
+            "kg/m³",
+            "m/s"
+          ],
+          "rep": "W/m²",
+          "expl": "Le forçage s’exprime en puissance par unité de surface."
+        },
+        {
+          "q": "Si 241 W/m² entrent et 240 W/m² sortent, le bilan simplifié vaut :",
+          "choix": [
+            "−1 W/m²",
+            "+1 W/m²",
+            "+481 W/m²"
+          ],
+          "rep": "+1 W/m²",
+          "expl": "On calcule les entrées moins les sorties."
+        },
+        {
+          "q": "Où va la majeure partie de l’excédent d’énergie du système climatique ?",
+          "choix": [
+            "Uniquement dans les glaciers",
+            "Uniquement dans la stratosphère",
+            "Dans l’océan"
+          ],
+          "rep": "Dans l’océan",
+          "expl": "L’océan absorbe la plus grande part de la chaleur supplémentaire."
+        }
+      ],
+      "id": "REV-ESC-TLE-06"
+    },
+    {
+      "axe": "Science, climat et société",
+      "titre": "Cycle du carbone : stocks et flux",
+      "emoji": "🔄",
+      "en_une_phrase": "Le carbone circule entre atmosphère, biosphère, océans et roches à des vitesses différentes.",
+      "comprendre": "Un réservoir contient un stock de carbone ; un flux est une quantité transférée par unité de temps. Photosynthèse, respiration et échanges océan-atmosphère constituent notamment des transferts. La combustion des ressources fossiles déplace vers l’atmosphère du carbone stocké à long terme.",
+      "essentiel": [
+        "Le CO₂ atmosphérique est capté par la photosynthèse.",
+        "Respiration, décomposition et combustion libèrent du CO₂.",
+        "Un puits net absorbe sur une période plus de carbone qu’il n’en rejette."
+      ],
+      "image_mentale": "Des réservoirs reliés par des flèches dont la taille représente les flux.",
+      "regle_ou_methode": "Additionner entrées et sorties en utilisant les mêmes unités et la même durée.",
+      "exemples": [
+        "Exemple résolu : un réservoir fictif reçoit 8 unités de carbone par an et en perd 5. 1. Calculer 8 − 5 ; 2. son stock augmente de 3 unités par an ; 3. il agit comme puits net sur cette période.",
+        "Exemple corrigé : une forêt qui absorbe 10 unités et en rejette 12 sur une année est une source nette de 2 unités cette année-là, même si elle continue de photosynthétiser."
+      ],
+      "piege": "Un stock en tonnes ne se confond pas avec un flux en tonnes par an.",
+      "astuce_memoire": "Stock : quantité ; flux : quantité par durée.",
+      "quiz": [
+        {
+          "q": "Une unité adaptée à un flux annuel de carbone est :",
+          "choix": [
+            "La tonne de carbone seule",
+            "La tonne de carbone par an",
+            "Le degré Celsius"
+          ],
+          "rep": "La tonne de carbone par an",
+          "expl": "Un flux rapporte une quantité à une durée."
+        },
+        {
+          "q": "Un réservoir reçoit 8 unités et en perd 5 par an. Son stock :",
+          "choix": [
+            "Diminue de 3 unités par an",
+            "Augmente de 13 unités par an",
+            "Augmente de 3 unités par an"
+          ],
+          "rep": "Augmente de 3 unités par an",
+          "expl": "Le bilan est entrées moins sorties : 8 − 5 = 3."
+        },
+        {
+          "q": "Une source nette de carbone sur une période :",
+          "choix": [
+            "Rejette plus de carbone qu’elle n’en absorbe",
+            "Ne peut jamais absorber de carbone",
+            "Possède nécessairement un stock nul"
+          ],
+          "rep": "Rejette plus de carbone qu’elle n’en absorbe",
+          "expl": "C’est le bilan entre émission et absorption qui définit la source nette."
+        }
+      ],
+      "id": "REV-ESC-TLE-07"
+    },
+    {
+      "axe": "Science, climat et société",
+      "titre": "Activités humaines et gaz à effet de serre",
+      "emoji": "🏭",
+      "en_une_phrase": "Les émissions humaines modifient rapidement la composition atmosphérique et réchauffent le climat.",
+      "comprendre": "La combustion du charbon, du pétrole et du gaz fossile émet du CO₂ ; la fabrication du ciment en libère également. Certaines activités agricoles et les fuites liées aux combustibles fossiles émettent du méthane. Les observations et les mécanismes physiques permettent d’attribuer l’essentiel du réchauffement récent aux activités humaines.",
+      "essentiel": [
+        "La déforestation peut libérer du carbone et réduire les puits.",
+        "Les différents gaz ont des durées de présence et des effets différents.",
+        "Une baisse des émissions ne signifie pas nécessairement une baisse immédiate de la concentration atmosphérique."
+      ],
+      "image_mentale": "Un apport supplémentaire alimente un réservoir atmosphérique qui échange aussi avec des puits.",
+      "regle_ou_methode": "Distinguer émissions annuelles, absorption et concentration accumulée.",
+      "exemples": [
+        "Exemple résolu : si des émissions fictives sont réduites de 12 à 9 unités par an, 1. la baisse absolue est 3 ; 2. la baisse relative vaut 3/12 = 25 % ; 3. les émissions restent positives.",
+        "Exemple corrigé : si 9 unités entrent dans l’atmosphère et que les puits nets en retirent 5 sur la même période, le stock atmosphérique augmente encore de 4 unités."
+      ],
+      "piege": "Des émissions qui diminuent peuvent encore dépasser les absorptions.",
+      "astuce_memoire": "Moins émettre ne signifie pas immédiatement moins de CO₂ dans l’air.",
+      "quiz": [
+        {
+          "q": "Une baisse de 12 à 9 unités représente :",
+          "choix": [
+            "Une diminution de 3 %",
+            "Une diminution de 75 %",
+            "Une diminution de 25 %"
+          ],
+          "rep": "Une diminution de 25 %",
+          "expl": "La variation relative vaut (9 − 12)/12 = −0,25."
+        },
+        {
+          "q": "Quel processus émet du CO₂ d’origine fossile ?",
+          "choix": [
+            "La combustion du charbon fossile",
+            "La photosynthèse oxygénique",
+            "La condensation de vapeur d’eau"
+          ],
+          "rep": "La combustion du charbon fossile",
+          "expl": "La combustion transfère vers l’atmosphère du carbone fossile."
+        },
+        {
+          "q": "Si les émissions sont supérieures aux absorptions nettes, le stock atmosphérique :",
+          "choix": [
+            "Diminue obligatoirement",
+            "Augmente",
+            "Reste toujours nul"
+          ],
+          "rep": "Augmente",
+          "expl": "Un bilan net positif accroît le stock atmosphérique."
+        }
+      ],
+      "id": "REV-ESC-TLE-08"
+    },
+    {
+      "axe": "Science, climat et société",
+      "titre": "Rétroactions climatiques",
+      "emoji": "❄️",
+      "en_une_phrase": "Une rétroaction modifie en retour la perturbation initiale : elle peut l’amplifier ou l’atténuer.",
+      "comprendre": "Un réchauffement réduit les surfaces enneigées ou glacées ; une surface plus sombre absorbe davantage de rayonnement solaire, ce qui peut amplifier le réchauffement. Une atmosphère plus chaude peut contenir davantage de vapeur d’eau, gaz à effet de serre. Le dégel du pergélisol peut libérer du CO₂ et du méthane.",
+      "essentiel": [
+        "Une rétroaction positive amplifie la perturbation initiale ; négative, elle l’atténue.",
+        "L’albédo est la fraction du rayonnement solaire incident réfléchie par une surface.",
+        "Les puits de carbone peuvent freiner l’accumulation de CO₂, sans être illimités."
+      ],
+      "image_mentale": "Moins de glace → moins de réflexion → davantage d’absorption → réchauffement accru.",
+      "regle_ou_methode": "Suivre toutes les flèches et comparer le sens de l’effet final à celui de la perturbation.",
+      "exemples": [
+        "Exemple résolu : une surface reçoit 100 unités de rayonnement. 1. Avec un albédo de 0,8 elle en réfléchit 80 ; 2. avec 0,3 elle en réfléchit 30 ; 3. la surface sombre absorbe davantage si les autres échanges sont comparables.",
+        "Exemple corrigé : un puits qui absorbe une partie du CO₂ supplémentaire freine son accumulation atmosphérique ; cette action amortit une partie de la perturbation."
+      ],
+      "piege": "Positive ne signifie pas bénéfique : cela signifie amplificatrice.",
+      "astuce_memoire": "Positive : amplifie ; négative : atténue.",
+      "quiz": [
+        {
+          "q": "Un albédo de 0,8 signifie que la surface réfléchit :",
+          "choix": [
+            "80 % du rayonnement solaire reçu",
+            "8 % de sa masse",
+            "80 % du dioxygène de l’air"
+          ],
+          "rep": "80 % du rayonnement solaire reçu",
+          "expl": "L’albédo est une fraction du rayonnement incident."
+        },
+        {
+          "q": "La diminution de la glace qui augmente l’absorption solaire est :",
+          "choix": [
+            "Une preuve que la température ne change pas",
+            "Une rétroaction amplificatrice du réchauffement",
+            "Une suppression de tous les échanges d’énergie"
+          ],
+          "rep": "Une rétroaction amplificatrice du réchauffement",
+          "expl": "Le réchauffement initial provoque un effet qui le renforce."
+        },
+        {
+          "q": "Que signifie rétroaction négative ?",
+          "choix": [
+            "Un effet forcément nuisible",
+            "Une quantité de carbone négative",
+            "Un effet qui atténue la perturbation initiale"
+          ],
+          "rep": "Un effet qui atténue la perturbation initiale",
+          "expl": "Le terme décrit le sens de la réponse, pas sa valeur morale."
+        }
+      ],
+      "id": "REV-ESC-TLE-09"
+    },
+    {
+      "axe": "Science, climat et société",
+      "titre": "Océan et montée du niveau marin",
+      "emoji": "🌊",
+      "en_une_phrase": "La dilatation de l’eau et la fonte des glaces continentales contribuent à l’élévation du niveau marin.",
+      "comprendre": "L’océan absorbe une grande partie de la chaleur supplémentaire, ce qui amortit le réchauffement atmosphérique mais augmente son volume. La fonte des glaciers et calottes situés sur les continents ajoute de l’eau à l’océan. La banquise flottante ne provoque pas la même hausse directe par sa fonte.",
+      "essentiel": [
+        "L’océan absorbe aussi une partie du CO₂ émis par les activités humaines.",
+        "L’inertie océanique rend certains changements persistants sur des siècles.",
+        "Le niveau marin varie aussi localement selon d’autres facteurs, dont les mouvements du sol."
+      ],
+      "image_mentale": "L’océan se dilate et reçoit de l’eau issue des glaces sur les continents.",
+      "regle_ou_methode": "Distinguer glace flottante et glace continentale ; pour une dilatation simplifiée, utiliser ΔV = α × V × ΔT.",
+      "exemples": [
+        "Exemple résolu : pour un volume fictif de 1 000 m³, α = 0,0002 °C⁻¹ et ΔT = 2 °C : 1. multiplier α par ΔT, soit 0,0004 ; 2. multiplier par 1 000 ; 3. ΔV = 0,4 m³.",
+        "Exemple corrigé : un glaçon flottant fondant dans un verre ne fait pas sensiblement monter le niveau dans le modèle idéal ; une glace posée hors du verre qui y fond ajoute de l’eau."
+      ],
+      "piege": "La comparaison du glaçon flottant est un modèle simplifié et ne résume pas tous les effets réels de la fonte de la banquise.",
+      "astuce_memoire": "Niveau marin : dilatation + glaces continentales.",
+      "quiz": [
+        {
+          "q": "Quelle fonte ajoute directement de l’eau aux océans ?",
+          "choix": [
+            "Celle d’un glaçon flottant idéal seul",
+            "Celle des glaciers continentaux",
+            "Celle d’une glace déjà intégralement fondue"
+          ],
+          "rep": "Celle des glaciers continentaux",
+          "expl": "Les glaces continentales transfèrent vers la mer de l’eau initialement stockée sur terre."
+        },
+        {
+          "q": "Avec V = 1 000 m³, α = 0,0002 °C⁻¹ et ΔT = 2 °C, ΔV vaut :",
+          "choix": [
+            "4 m³",
+            "0,04 m³",
+            "0,4 m³"
+          ],
+          "rep": "0,4 m³",
+          "expl": "ΔV = 1 000 × 0,0002 × 2 = 0,4 m³."
+        },
+        {
+          "q": "Quel rôle joue l’océan dans le bilan énergétique ?",
+          "choix": [
+            "Il absorbe une grande partie de l’énergie supplémentaire",
+            "Il empêche toute élévation du niveau marin",
+            "Il supprime instantanément toute inertie climatique"
+          ],
+          "rep": "Il absorbe une grande partie de l’énergie supplémentaire",
+          "expl": "L’océan emmagasine une grande part de l’excédent de chaleur."
+        }
+      ],
+      "id": "REV-ESC-TLE-10"
+    },
+    {
+      "axe": "Science, climat et société",
+      "titre": "Modèles et projections climatiques",
+      "emoji": "💻",
+      "en_une_phrase": "Un modèle climatique simule le système Terre à partir de lois physiques et d’hypothèses sur l’avenir.",
+      "comprendre": "Les modèles mettent en équations des mécanismes atmosphériques, océaniques et biologiques et les résolvent numériquement. Leur évaluation compare leurs résultats aux observations actuelles et passées, ainsi qu’aux archives climatiques. Les projections dépendent notamment des scénarios futurs d’émissions.",
+      "essentiel": [
+        "Un scénario est une hypothèse d’évolution, pas une prédiction certaine des décisions humaines.",
+        "Utiliser plusieurs modèles aide à estimer une partie des incertitudes.",
+        "Une projection climatique porte sur des tendances statistiques, pas la météo d’un jour précis dans un siècle."
+      ],
+      "image_mentale": "Des équations, des observations et plusieurs trajectoires possibles.",
+      "regle_ou_methode": "Repérer hypothèses, variable étudiée, période de référence et fourchette projetée.",
+      "exemples": [
+        "Exemple résolu : deux simulations identiques sauf pour les émissions montrent des réchauffements différents. 1. Comparer les scénarios ; 2. identifier la variable modifiée ; 3. conclure que le résultat dépend des émissions retenues, dans le cadre du modèle.",
+        "Exemple corrigé : comparer une simulation du climat passé à des observations indépendantes teste sa capacité à reproduire des évolutions connues ; un bon accord ne garantit pas une précision parfaite partout."
+      ],
+      "piege": "Une incertitude quantifiée n’équivaut pas à une absence de connaissance.",
+      "astuce_memoire": "Modèle : lois + observations + hypothèses.",
+      "quiz": [
+        {
+          "q": "À quoi sert la comparaison d’un modèle aux observations ?",
+          "choix": [
+            "À prouver qu’il prévoit chaque pluie future au jour près",
+            "À supprimer toutes les incertitudes",
+            "À évaluer sa capacité à reproduire des évolutions observées"
+          ],
+          "rep": "À évaluer sa capacité à reproduire des évolutions observées",
+          "expl": "La confrontation aux observations permet l’évaluation et l’amélioration."
+        },
+        {
+          "q": "Un scénario d’émissions est :",
+          "choix": [
+            "Une hypothèse sur une évolution possible des émissions",
+            "Une certitude sur toutes les décisions futures",
+            "Une mesure directe de la météo de demain"
+          ],
+          "rep": "Une hypothèse sur une évolution possible des émissions",
+          "expl": "Les scénarios explorent des trajectoires possibles."
+        },
+        {
+          "q": "Les modèles climatiques résolvent notamment :",
+          "choix": [
+            "Uniquement une liste de dates historiques",
+            "Des équations décrivant des processus du système Terre",
+            "La position exacte de chaque nuage dans un siècle"
+          ],
+          "rep": "Des équations décrivant des processus du système Terre",
+          "expl": "Ils représentent des processus et utilisent des méthodes numériques."
+        }
+      ],
+      "id": "REV-ESC-TLE-11"
+    },
+    {
+      "axe": "Science, climat et société",
+      "titre": "Impacts du changement climatique",
+      "emoji": "🐚",
+      "en_une_phrase": "Le réchauffement modifie les océans, les événements extrêmes et les écosystèmes.",
+      "comprendre": "Les projections indiquent notamment une élévation du niveau moyen des océans et des modifications des précipitations et de certains extrêmes. L’absorption de CO₂ par l’océan modifie sa chimie et diminue son pH : c’est l’acidification. Les effets sur les populations et les écosystèmes dépendent aussi de leur exposition et de leur vulnérabilité.",
+      "essentiel": [
+        "Acidification signifie baisse du pH, même si l’eau de mer reste généralement basique.",
+        "Les réponses des espèces incluent déplacements, changements de reproduction ou mortalité.",
+        "Les risques varient selon le lieu et les capacités de réponse."
+      ],
+      "image_mentale": "Un même changement global entraîne des effets différents selon les territoires.",
+      "regle_ou_methode": "Distinguer l’aléa climatique, les éléments exposés et leur vulnérabilité.",
+      "exemples": [
+        "Exemple résolu : le pH fictif d’une eau passe de 8,2 à 8,1. 1. Calculer 8,1 − 8,2 = −0,1 ; 2. le pH diminue ; 3. l’eau s’acidifie tout en restant basique car son pH reste supérieur à 7.",
+        "Exemple corrigé : une montée des eaux représente un risque plus élevé pour des habitations littorales exposées et peu protégées que pour un site élevé, toutes choses comparables."
+      ],
+      "piege": "Une valeur moyenne mondiale ne décrit pas exactement chaque lieu.",
+      "astuce_memoire": "Risque : aléa, exposition, vulnérabilité.",
+      "quiz": [
+        {
+          "q": "Un pH qui passe de 8,2 à 8,1 indique :",
+          "choix": [
+            "Une acidification, l’eau restant basique",
+            "Une augmentation du pH",
+            "Une eau nécessairement acide car son pH dépasse 7"
+          ],
+          "rep": "Une acidification, l’eau restant basique",
+          "expl": "Le pH baisse mais reste supérieur à 7."
+        },
+        {
+          "q": "Quel mécanisme contribue à l’acidification de l’océan ?",
+          "choix": [
+            "La suppression de tous les échanges gazeux",
+            "L’absorption de CO₂ atmosphérique",
+            "La transformation de toute l’eau en glace"
+          ],
+          "rep": "L’absorption de CO₂ atmosphérique",
+          "expl": "Le CO₂ dissous modifie les équilibres chimiques de l’eau."
+        },
+        {
+          "q": "Quel facteur peut accroître un risque côtier ?",
+          "choix": [
+            "L’absence totale d’enjeu exposé",
+            "Une mesure unique de température intérieure",
+            "Une forte exposition des habitations à la montée des eaux"
+          ],
+          "rep": "Une forte exposition des habitations à la montée des eaux",
+          "expl": "L’exposition des populations et des biens intervient dans le risque."
+        }
+      ],
+      "id": "REV-ESC-TLE-12"
+    },
+    {
+      "axe": "Science, climat et société",
+      "titre": "Atténuation et adaptation",
+      "emoji": "🌱",
+      "en_une_phrase": "L’atténuation limite les causes du changement climatique ; l’adaptation réduit certains de ses dommages.",
+      "comprendre": "L’atténuation vise à réduire les émissions de gaz à effet de serre ou à renforcer durablement des absorptions. L’adaptation ajuste les pratiques et les territoires aux conséquences présentes ou anticipées. Les deux démarches sont complémentaires et leurs effets doivent être évalués.",
+      "essentiel": [
+        "Rénover un bâtiment pour réduire sa consommation fossile peut relever de l’atténuation.",
+        "Aménager des protections contre une montée des eaux relève de l’adaptation.",
+        "Atteindre des émissions nettes de CO₂ nulles signifie équilibrer émissions humaines résiduelles et absorptions humaines de CO₂."
+      ],
+      "image_mentale": "Agir sur les causes et préparer les réponses aux effets.",
+      "regle_ou_methode": "Identifier le mécanisme de l’action, son échelle, ses bénéfices et ses limites.",
+      "exemples": [
+        "Exemple résolu : une commune isole un bâtiment chauffé au gaz. 1. L’énergie nécessaire au chauffage diminue si l’usage est comparable ; 2. la combustion et les émissions associées diminuent ; 3. il s’agit d’une mesure d’atténuation.",
+        "Exemple corrigé : adapter les horaires de travail pendant une forte chaleur réduit l’exposition des travailleurs ; c’est une adaptation, qui ne supprime pas à elle seule les émissions responsables du réchauffement."
+      ],
+      "piege": "La neutralité carbone ne signifie pas nécessairement zéro émission brute ni disparition immédiate de tous les effets climatiques.",
+      "astuce_memoire": "Atténuer les causes ; s’adapter aux effets.",
+      "quiz": [
+        {
+          "q": "Quelle action relève directement de l’atténuation ?",
+          "choix": [
+            "Déplacer un logement exposé à une montée des eaux",
+            "Réduire la combustion de gaz fossile pour chauffer un bâtiment",
+            "Modifier des horaires pendant une canicule"
+          ],
+          "rep": "Réduire la combustion de gaz fossile pour chauffer un bâtiment",
+          "expl": "Réduire une combustion fossile diminue des émissions de CO₂."
+        },
+        {
+          "q": "Quelle action relève directement de l’adaptation ?",
+          "choix": [
+            "Augmenter la combustion de charbon",
+            "Mesurer uniquement la composition de l’air ancien",
+            "Aménager une protection contre les submersions côtières"
+          ],
+          "rep": "Aménager une protection contre les submersions côtières",
+          "expl": "La protection vise à réduire un dommage lié à un risque climatique."
+        },
+        {
+          "q": "Que signifie zéro émission nette de CO₂ d’origine humaine ?",
+          "choix": [
+            "Équilibrer les émissions humaines résiduelles par des absorptions humaines",
+            "Ne plus avoir de CO₂ dans l’atmosphère",
+            "Arrêter instantanément toute montée des océans"
+          ],
+          "rep": "Équilibrer les émissions humaines résiduelles par des absorptions humaines",
+          "expl": "Le bilan net est nul quand émissions et absorptions anthropiques se compensent."
+        }
+      ],
+      "id": "REV-ESC-TLE-13"
+    },
+    {
+      "axe": "Le futur des énergies",
+      "titre": "Énergie et puissance",
+      "emoji": "⚡",
+      "en_une_phrase": "La puissance mesure la rapidité avec laquelle une énergie est transférée ou convertie.",
+      "comprendre": "Pour une puissance constante, l’énergie transférée E est le produit de la puissance P par la durée Δt : E = P × Δt. En unités internationales, P s’exprime en watts, Δt en secondes et E en joules. Le kilowattheure est une unité d’énergie, égale à 3,6 millions de joules.",
+      "essentiel": [
+        "E = P × Δt pour une puissance constante.",
+        "1 W = 1 J/s.",
+        "1 kWh = 3,6 × 10⁶ J.",
+        "Un kilowattheure mesure une énergie et non une puissance."
+      ],
+      "image_mentale": "La puissance est un débit d’énergie ; la durée permet de connaître la quantité transférée.",
+      "regle_ou_methode": "Convertir les unités, multiplier la puissance par la durée, puis vérifier l’unité du résultat.",
+      "exemples": [
+        "Un appareil de 1,5 kW fonctionne 2 h à puissance constante : E = 1,5 × 2 = 3 kWh, soit 10,8 MJ.",
+        "Une installation fournit 500 W pendant 10 min : 10 min = 600 s, donc E = 500 × 600 = 300 000 J."
+      ],
+      "piege": "Ne pas confondre une puissance en kW et une énergie en kWh.",
+      "astuce_memoire": "Puissance × durée = énergie.",
+      "quiz": [
+        {
+          "q": "Quelle énergie fournit une puissance constante de 2 kW pendant 3 h ?",
+          "choix": [
+            "1,5 kWh",
+            "6 kW",
+            "6 kWh"
+          ],
+          "rep": "6 kWh",
+          "expl": "On multiplie 2 kW par 3 h : E = 6 kWh."
+        },
+        {
+          "q": "À combien de joules correspond 1 kWh ?",
+          "choix": [
+            "3,6 × 10⁶ J",
+            "3,6 × 10³ J",
+            "3,6 × 10⁹ J"
+          ],
+          "rep": "3,6 × 10⁶ J",
+          "expl": "1 kWh = 1 000 W × 3 600 s."
+        },
+        {
+          "q": "Quelle grandeur s’exprime en watts ?",
+          "choix": [
+            "L’énergie",
+            "La puissance",
+            "La durée"
+          ],
+          "rep": "La puissance",
+          "expl": "Le watt est l’unité de puissance."
+        }
+      ],
+      "id": "REV-ESC-TLE-14"
+    },
+    {
+      "axe": "Le futur des énergies",
+      "titre": "Rendement et bilan énergétique",
+      "emoji": "📊",
+      "en_une_phrase": "Le rendement compare l’énergie utile obtenue à l’énergie reçue par un convertisseur.",
+      "comprendre": "Le rendement η vaut E utile / E reçue, pour des énergies exprimées dans la même unité. Il est sans unité et s’exprime souvent en pourcentage. Dans un bilan complet, l’énergie reçue se retrouve sous forme utile ou sous d’autres formes, par exemple thermique.",
+      "essentiel": [
+        "η = E utile / E reçue.",
+        "η en pourcentage = η × 100.",
+        "Bilan : énergie reçue = énergie utile + autres transferts, si l’énergie stockée ne varie pas.",
+        "Dans les conditions habituelles, le rendement d’un convertisseur est compris entre 0 et 1."
+      ],
+      "image_mentale": "Une entrée se répartit entre la sortie recherchée et les autres transferts.",
+      "regle_ou_methode": "Diviser la sortie utile par l’entrée, puis convertir en pourcentage et calculer le complément si demandé.",
+      "exemples": [
+        "Un convertisseur reçoit 500 J et fournit 400 J utiles. Son rendement est 400/500 = 0,80, soit 80 % ; si son stockage ne varie pas, 100 J sont transférés sous d’autres formes.",
+        "Avec une entrée de 200 J et un rendement de 30 %, l’énergie utile vaut 0,30 × 200 = 60 J."
+      ],
+      "piege": "Les énergies « perdues » ne disparaissent pas : elles sont transférées ou stockées sous d’autres formes.",
+      "astuce_memoire": "Utile divisé par reçu.",
+      "quiz": [
+        {
+          "q": "Un appareil reçoit 1 000 J et fournit 700 J utiles. Quel est son rendement ?",
+          "choix": [
+            "70 %",
+            "30 %",
+            "143 %"
+          ],
+          "rep": "70 %",
+          "expl": "700/1 000 = 0,70, soit 70 %."
+        },
+        {
+          "q": "Que devient l’énergie non utile si le stockage ne varie pas ?",
+          "choix": [
+            "Elle disparaît",
+            "Elle est transférée sous d’autres formes",
+            "Elle devient obligatoirement de l’énergie électrique utile"
+          ],
+          "rep": "Elle est transférée sous d’autres formes",
+          "expl": "Le bilan tient compte de tous les transferts."
+        },
+        {
+          "q": "Quelle est l’unité du rendement ?",
+          "choix": [
+            "Le joule",
+            "Le watt",
+            "Il est sans unité"
+          ],
+          "rep": "Il est sans unité",
+          "expl": "Le rendement est un quotient de deux énergies de même unité."
+        }
+      ],
+      "id": "REV-ESC-TLE-15"
+    },
+    {
+      "axe": "Le futur des énergies",
+      "titre": "Chaînes de conversion et rendement global",
+      "emoji": "🔗",
+      "en_une_phrase": "Le rendement global de convertisseurs successifs est le produit de leurs rendements.",
+      "comprendre": "Une chaîne décrit les formes d’énergie et les convertisseurs traversés. À chaque étape, une partie de l’énergie reçue est convertie vers une forme utile, le reste étant notamment dissipé. Si la sortie utile d’une étape alimente la suivante, le rendement global est le produit des rendements de ces étapes.",
+      "essentiel": [
+        "Nommer la ressource initiale, les convertisseurs et les formes d’énergie.",
+        "Pour des étapes successives : η global = η₁ × η₂.",
+        "Les pourcentages doivent être convertis en nombres décimaux.",
+        "Le bilan dépend du système et de la sortie choisie."
+      ],
+      "image_mentale": "Deux filtres successifs transmettent chacun une fraction de l’énergie reçue.",
+      "regle_ou_methode": "Transformer les pourcentages en décimaux, les multiplier et revenir éventuellement en pourcentage.",
+      "exemples": [
+        "Une turbine de rendement 80 % entraîne un alternateur de rendement 90 %. Le rendement global est 0,80 × 0,90 = 0,72, soit 72 % ; sur 1 000 J reçus, 720 J sont utiles en sortie.",
+        "Deux étapes de rendements 50 % et 80 % donnent 0,50 × 0,80 = 0,40, soit un rendement global de 40 %."
+      ],
+      "piege": "Il faut multiplier les rendements successifs, pas les additionner.",
+      "astuce_memoire": "80 % × 90 % = 72 %.",
+      "quiz": [
+        {
+          "q": "Deux étapes ont des rendements de 60 % et 50 %. Quel est le rendement global ?",
+          "choix": [
+            "55 %",
+            "30 %",
+            "110 %"
+          ],
+          "rep": "30 %",
+          "expl": "0,60 × 0,50 = 0,30."
+        },
+        {
+          "q": "Une chaîne reçoit 1 000 J et possède un rendement global de 30 %. Quelle énergie utile fournit-elle ?",
+          "choix": [
+            "700 J",
+            "3 000 J",
+            "300 J"
+          ],
+          "rep": "300 J",
+          "expl": "L’énergie utile vaut 0,30 × 1 000 J."
+        },
+        {
+          "q": "Pourquoi le rendement global est-il inférieur à 100 % dans une chaîne réelle ?",
+          "choix": [
+            "Une partie de l’énergie est transférée sous des formes non recherchées",
+            "L’énergie totale cesse de se conserver",
+            "Les puissances s’ajoutent nécessairement"
+          ],
+          "rep": "Une partie de l’énergie est transférée sous des formes non recherchées",
+          "expl": "Des transferts non utiles existent à chaque étape."
+        }
+      ],
+      "id": "REV-ESC-TLE-16"
+    },
+    {
+      "axe": "Le futur des énergies",
+      "titre": "Alternateur et induction",
+      "emoji": "🧲",
+      "en_une_phrase": "Un alternateur transforme une énergie mécanique en énergie électrique par induction électromagnétique.",
+      "comprendre": "Un alternateur comprend une source de champ magnétique et un conducteur en mouvement relatif, par exemple un rotor et un stator. La variation du flux magnétique dans une bobine produit une tension induite. Pour un alternateur donné à une paire de pôles, un tour par seconde correspond à une période électrique par seconde.",
+      "essentiel": [
+        "Entrée : énergie mécanique ; sortie recherchée : énergie électrique.",
+        "Le rotor tourne par rapport au stator.",
+        "Une variation de flux magnétique crée une tension induite.",
+        "À nombre de paires de pôles fixé, la fréquence augmente avec la vitesse de rotation."
+      ],
+      "image_mentale": "Une partie mobile fait varier le champ magnétique vu par une bobine.",
+      "regle_ou_methode": "Identifier les parties mobiles et fixes ; pour la fréquence, préciser le nombre de paires de pôles.",
+      "exemples": [
+        "Pour un alternateur à une paire de pôles tournant à 50 tours par seconde, il y a 50 périodes par seconde : f = 50 Hz.",
+        "Pour ce même alternateur à 25 tours par seconde, la fréquence vaut 25 Hz ; doubler sa vitesse de rotation double donc sa fréquence."
+      ],
+      "piege": "La fréquence ne dépend pas uniquement de la vitesse : elle dépend aussi du nombre de paires de pôles.",
+      "astuce_memoire": "À une paire de pôles : 1 tour par seconde → 1 Hz.",
+      "quiz": [
+        {
+          "q": "Quelle conversion effectue un alternateur ?",
+          "choix": [
+            "Énergie radiative vers énergie chimique",
+            "Énergie électrique vers énergie nucléaire",
+            "Énergie mécanique vers énergie électrique"
+          ],
+          "rep": "Énergie mécanique vers énergie électrique",
+          "expl": "Le mouvement mécanique permet de produire de l’électricité."
+        },
+        {
+          "q": "À une paire de pôles, quelle fréquence correspond à 20 tours par seconde ?",
+          "choix": [
+            "20 Hz",
+            "10 Hz",
+            "40 Hz"
+          ],
+          "rep": "20 Hz",
+          "expl": "Il y a une période par tour pour cet alternateur."
+        },
+        {
+          "q": "À nombre de paires de pôles fixé, que se passe-t-il si la vitesse double ?",
+          "choix": [
+            "La fréquence est divisée par deux",
+            "La fréquence double",
+            "La fréquence reste nécessairement identique"
+          ],
+          "rep": "La fréquence double",
+          "expl": "La fréquence est proportionnelle à la vitesse de rotation pour une machine donnée."
+        }
+      ],
+      "id": "REV-ESC-TLE-17"
+    },
+    {
+      "axe": "Le futur des énergies",
+      "titre": "Capteur photovoltaïque et spectre solaire",
+      "emoji": "☀️",
+      "en_une_phrase": "Un capteur photovoltaïque convertit une partie du rayonnement reçu en énergie électrique.",
+      "comprendre": "Une cellule photovoltaïque contient notamment un matériau semi-conducteur, souvent du silicium. Son utilisation dépend de son absorption d’une partie du spectre solaire ; toute l’énergie radiative incidente n’est pas convertie en électricité. L’orientation, l’ombrage et l’ensoleillement influencent la production.",
+      "essentiel": [
+        "Entrée : énergie radiative ; sortie utile : énergie électrique.",
+        "Un semi-conducteur absorbe certaines longueurs d’onde.",
+        "La production varie avec l’éclairement reçu.",
+        "Fabrication et fin de vie ont aussi des impacts environnementaux."
+      ],
+      "image_mentale": "Un panneau reçoit un spectre de lumière et n’en convertit qu’une partie.",
+      "regle_ou_methode": "Comparer le rayonnement reçu et l’énergie électrique délivrée, puis considérer les conditions locales.",
+      "exemples": [
+        "Un panneau reçoit une puissance solaire de 1 000 W et fournit 200 W électriques : son rendement dans ces conditions vaut 200/1 000 = 20 %.",
+        "Si un matériau absorbe une partie importante du spectre solaire, il peut être envisagé pour une cellule ; son absorption seule ne suffit pas à garantir un bon rendement."
+      ],
+      "piege": "Un panneau photovoltaïque produit de l’électricité ; un capteur solaire thermique vise principalement à produire de la chaleur.",
+      "astuce_memoire": "Rayonnement reçu → électricité, avec des pertes.",
+      "quiz": [
+        {
+          "q": "Quelle conversion caractérise une cellule photovoltaïque ?",
+          "choix": [
+            "Rayonnement solaire vers énergie électrique",
+            "Énergie mécanique vers énergie électrique",
+            "Énergie électrique vers énergie nucléaire"
+          ],
+          "rep": "Rayonnement solaire vers énergie électrique",
+          "expl": "La cellule convertit une partie du rayonnement en électricité."
+        },
+        {
+          "q": "Quel est le rendement si 800 W reçus donnent 160 W électriques ?",
+          "choix": [
+            "5 %",
+            "20 %",
+            "80 %"
+          ],
+          "rep": "20 %",
+          "expl": "160/800 = 0,20."
+        },
+        {
+          "q": "Quel facteur peut diminuer la production d’un panneau ?",
+          "choix": [
+            "Une augmentation du rayonnement reçu à conditions identiques",
+            "Une diminution de l’ombre à conditions identiques",
+            "Un ombrage important"
+          ],
+          "rep": "Un ombrage important",
+          "expl": "L’ombrage réduit le rayonnement reçu par les cellules."
+        }
+      ],
+      "id": "REV-ESC-TLE-18"
+    },
+    {
+      "axe": "Le futur des énergies",
+      "titre": "Nucléaire et autres chaînes sans combustion",
+      "emoji": "⚛️",
+      "en_une_phrase": "Plusieurs filières produisent de l’électricité sans brûler de combustible au moment de la conversion.",
+      "comprendre": "Dans une centrale nucléaire, la fission de noyaux libère de l’énergie thermique ; la vapeur entraîne une turbine couplée à un alternateur. Un barrage utilise l’énergie de l’eau pour entraîner une turbine, tandis qu’une éolienne utilise l’énergie du vent. L’absence de combustion en fonctionnement ne signifie pas absence totale d’impacts ni d’émissions sur l’ensemble du cycle de vie.",
+      "essentiel": [
+        "Nucléaire : fission → chaleur → mouvement → électricité.",
+        "Hydraulique et éolien : mouvement → alternateur → électricité.",
+        "Le nucléaire produit des déchets radioactifs et présente des risques spécifiques.",
+        "Les installations ont des effets environnementaux variables."
+      ],
+      "image_mentale": "Des ressources différentes peuvent faire tourner un même type de convertisseur.",
+      "regle_ou_methode": "Suivre les formes d’énergie de la ressource à l’électricité, puis examiner les impacts.",
+      "exemples": [
+        "Dans une centrale nucléaire, la fission chauffe un fluide ; la vapeur met une turbine en rotation ; l’alternateur transforme cette énergie mécanique en énergie électrique.",
+        "Dans un barrage hydroélectrique, l’eau entraîne une turbine reliée à un alternateur : l’énergie de l’eau est convertie en électricité."
+      ],
+      "piege": "La fission dans une centrale nucléaire n’est pas une combustion chimique.",
+      "astuce_memoire": "Fission → chaleur → turbine → alternateur.",
+      "quiz": [
+        {
+          "q": "Quelle réaction alimente thermiquement une centrale nucléaire à fission ?",
+          "choix": [
+            "La combustion du silicium",
+            "La fission de noyaux",
+            "La photosynthèse"
+          ],
+          "rep": "La fission de noyaux",
+          "expl": "La fission libère de l’énergie qui chauffe le fluide."
+        },
+        {
+          "q": "Quel dispositif transforme le mouvement de la turbine en électricité ?",
+          "choix": [
+            "Un capteur photovoltaïque",
+            "Un accumulateur en charge",
+            "Un alternateur"
+          ],
+          "rep": "Un alternateur",
+          "expl": "L’alternateur réalise la conversion mécanique-électrique."
+        },
+        {
+          "q": "Quelle affirmation est correcte ?",
+          "choix": [
+            "Une filière sans combustion peut avoir des impacts sur son cycle de vie",
+            "Sans combustion, une installation n’a aucun impact",
+            "Toute centrale sans combustion produit des déchets radioactifs"
+          ],
+          "rep": "Une filière sans combustion peut avoir des impacts sur son cycle de vie",
+          "expl": "Construction, fonctionnement et fin de vie ont des effets variables selon les filières."
+        }
+      ],
+      "id": "REV-ESC-TLE-19"
+    },
+    {
+      "axe": "Le futur des énergies",
+      "titre": "Conversions électrochimiques",
+      "emoji": "🔋",
+      "en_une_phrase": "Une pile ou une batterie en décharge convertit une énergie chimique en énergie électrique.",
+      "comprendre": "Les réactions électrochimiques produisent une circulation de charges dans un circuit extérieur. Un accumulateur rechargeable peut fonctionner en sens inverse lors de la charge : l’énergie électrique reçue est convertie et stockée sous forme chimique. Une pile à hydrogène consomme des réactifs alimentés de l’extérieur.",
+      "essentiel": [
+        "Décharge : énergie chimique → énergie électrique.",
+        "Charge d’un accumulateur : énergie électrique → énergie chimique stockée.",
+        "Une pile à hydrogène nécessite une alimentation en réactifs.",
+        "L’hydrogène est un vecteur énergétique dont la production demande de l’énergie."
+      ],
+      "image_mentale": "Une batterie rechargeable échange de l’énergie dans deux sens selon son fonctionnement.",
+      "regle_ou_methode": "Identifier charge ou décharge avant d’indiquer le sens des conversions.",
+      "exemples": [
+        "Une batterie alimente une lampe : elle se décharge, convertit de l’énergie chimique en électricité, puis la lampe convertit une partie de cette énergie en lumière.",
+        "Lors de la recharge d’un accumulateur, l’installation fournit de l’électricité qui est stockée sous forme chimique ; une partie est dissipée."
+      ],
+      "piege": "L’hydrogène n’est pas une source d’énergie primaire librement disponible en quantité prête à l’emploi : il faut le produire.",
+      "astuce_memoire": "Charge : électrique vers chimique ; décharge : sens inverse.",
+      "quiz": [
+        {
+          "q": "Que fournit une batterie en décharge à un circuit ?",
+          "choix": [
+            "De l’énergie chimique à partir d’énergie électrique",
+            "De l’énergie nucléaire à partir de lumière",
+            "De l’énergie électrique à partir d’énergie chimique"
+          ],
+          "rep": "De l’énergie électrique à partir d’énergie chimique",
+          "expl": "La décharge convertit l’énergie chimique en électricité."
+        },
+        {
+          "q": "Quelle conversion domine lors de la recharge d’un accumulateur ?",
+          "choix": [
+            "Énergie électrique vers énergie chimique stockée",
+            "Énergie mécanique vers énergie nucléaire",
+            "Énergie chimique vers énergie radiative solaire"
+          ],
+          "rep": "Énergie électrique vers énergie chimique stockée",
+          "expl": "La recharge stocke une partie de l’énergie reçue sous forme chimique."
+        },
+        {
+          "q": "Que faut-il pour utiliser une pile à hydrogène ?",
+          "choix": [
+            "Supposer que l’hydrogène est une source primaire inépuisable",
+            "Fournir les réactifs nécessaires",
+            "Supprimer toute transformation chimique"
+          ],
+          "rep": "Fournir les réactifs nécessaires",
+          "expl": "La pile nécessite une alimentation en hydrogène et en dioxygène."
+        }
+      ],
+      "id": "REV-ESC-TLE-20"
+    },
+    {
+      "axe": "Le futur des énergies",
+      "titre": "Effet Joule et haute tension",
+      "emoji": "🔥",
+      "en_une_phrase": "À puissance injectée fixée, élever la tension réduit l’intensité et les pertes par effet Joule dans ce modèle.",
+      "comprendre": "Dans un modèle simplifié de ligne résistive, la puissance dissipée vaut P J = R × I². Pour une puissance électrique P = U × I dans un circuit continu ou un modèle simplifié, augmenter U réduit I à puissance fixée. Les pertes diminuent alors avec le carré de l’intensité, si la résistance reste constante.",
+      "essentiel": [
+        "Puissance dissipée : P J = R × I².",
+        "Modèle simplifié : P = U × I.",
+        "À P et R fixées, multiplier U par 10 divise I par 10.",
+        "Dans ce modèle, les pertes sont alors divisées par 100."
+      ],
+      "image_mentale": "Un courant plus faible échauffe moins une même ligne.",
+      "regle_ou_methode": "Calculer I = P/U, puis P J = R I² ; comparer à résistance et puissance fixées.",
+      "exemples": [
+        "Pour 1 000 W injectés sous 100 V, I = 1 000/100 = 10 A. Si R = 2 Ω, les pertes sont 2 × 10² = 200 W ; la puissance reçue est 800 W.",
+        "Avec 1 000 W injectés sous 1 000 V et la même résistance, I = 1 A et les pertes sont 2 × 1² = 2 W. La puissance reçue est 998 W."
+      ],
+      "piege": "P = U × I est utilisé ici dans un modèle simplifié ; en courant alternatif réel, le déphasage doit aussi être pris en compte.",
+      "astuce_memoire": "Tension × 10 → intensité ÷ 10 → pertes ÷ 100.",
+      "quiz": [
+        {
+          "q": "Si l’intensité double dans une résistance inchangée, que devient la puissance dissipée ?",
+          "choix": [
+            "Elle est multipliée par 4",
+            "Elle est multipliée par 2",
+            "Elle est divisée par 4"
+          ],
+          "rep": "Elle est multipliée par 4",
+          "expl": "P J dépend du carré de l’intensité."
+        },
+        {
+          "q": "À puissance fixée, si la tension est multipliée par 5 dans le modèle P = UI, que devient l’intensité ?",
+          "choix": [
+            "Elle est multipliée par 5",
+            "Elle est divisée par 5",
+            "Elle reste inchangée"
+          ],
+          "rep": "Elle est divisée par 5",
+          "expl": "I = P/U."
+        },
+        {
+          "q": "Quelle puissance est dissipée par une résistance de 3 Ω parcourue par 2 A ?",
+          "choix": [
+            "6 W",
+            "3 W",
+            "12 W"
+          ],
+          "rep": "12 W",
+          "expl": "P J = 3 × 2² = 12 W."
+        }
+      ],
+      "id": "REV-ESC-TLE-21"
+    },
+    {
+      "axe": "Le futur des énergies",
+      "titre": "Équilibrer un réseau électrique",
+      "emoji": "🌐",
+      "en_une_phrase": "Le réseau électrique doit ajuster en permanence injections et soutirages, en tenant compte des pertes.",
+      "comprendre": "La consommation et certaines productions varient au cours du temps. Un réseau maillé permet des échanges entre zones, sans supprimer les contraintes des lignes. Pour maintenir l’équilibre, on peut ajuster les productions pilotables, moduler la demande ou utiliser des installations de stockage.",
+      "essentiel": [
+        "La demande varie selon les usages et les moments.",
+        "La production éolienne et photovoltaïque dépend de ressources variables.",
+        "Interconnexions, flexibilité et stockage contribuent à l’équilibre.",
+        "Les limites du réseau et les pertes doivent être prises en compte."
+      ],
+      "image_mentale": "Une balance doit rester à l’équilibre malgré des variations des deux côtés.",
+      "regle_ou_methode": "Comparer offre et demande à un instant donné, puis proposer une action cohérente.",
+      "exemples": [
+        "À un instant donné, l’injection est de 950 MW pour une demande et des pertes de 1 000 MW. Il manque 50 MW : augmenter une production disponible de 50 MW ou réduire d’autant les besoins rétablit l’équilibre dans ce modèle.",
+        "Si la production dépasse les besoins, on peut charger un stockage disponible ou réduire certaines productions plutôt que laisser durablement le déséquilibre."
+      ],
+      "piege": "Une interconnexion facilite les échanges mais ne garantit pas à elle seule une production suffisante en toutes circonstances.",
+      "astuce_memoire": "Équilibrer production, consommation et pertes.",
+      "quiz": [
+        {
+          "q": "Dans un modèle, la demande et les pertes valent 600 MW et les injections 550 MW. Quel déficit constate-t-on ?",
+          "choix": [
+            "150 MW",
+            "50 MW",
+            "1 150 MW"
+          ],
+          "rep": "50 MW",
+          "expl": "600 − 550 = 50 MW."
+        },
+        {
+          "q": "Quel moyen peut contribuer à corriger un surplus de production ?",
+          "choix": [
+            "Augmenter encore la production sans besoin",
+            "Ignorer les limites du réseau",
+            "Charger un stockage disponible"
+          ],
+          "rep": "Charger un stockage disponible",
+          "expl": "Le stockage peut absorber une partie de l’excédent."
+        },
+        {
+          "q": "Quel facteur fait varier la production photovoltaïque ?",
+          "choix": [
+            "L’éclairement reçu",
+            "Uniquement la longueur des lignes",
+            "Le seul nombre de consommateurs"
+          ],
+          "rep": "L’éclairement reçu",
+          "expl": "La production dépend notamment du rayonnement solaire reçu."
+        }
+      ],
+      "id": "REV-ESC-TLE-22"
+    },
+    {
+      "axe": "Le futur des énergies",
+      "titre": "Stocker l’énergie",
+      "emoji": "💧",
+      "en_une_phrase": "Stocker consiste à convertir l’énergie sous une forme récupérable ultérieurement, avec des pertes.",
+      "comprendre": "Une batterie stocke une énergie chimique ; une station de transfert d’énergie par pompage stocke de l’énergie liée à l’altitude de l’eau. L’électricité peut aussi servir à produire de l’hydrogène, ensuite utilisable dans une pile. Capacité, durée, rendement, ressources mobilisées et impacts permettent de comparer les dispositifs.",
+      "essentiel": [
+        "Batterie : stockage électrochimique.",
+        "Pompage : stockage gravitationnel de l’eau en altitude.",
+        "Hydrogène : stockage chimique après une production qui consomme de l’énergie.",
+        "Le rendement aller-retour tient compte des pertes de charge et de restitution."
+      ],
+      "image_mentale": "On monte de l’eau pendant un surplus puis on la laisse redescendre pour produire de l’électricité.",
+      "regle_ou_methode": "Identifier la forme stockée, les étapes de conversion et l’énergie restituée.",
+      "exemples": [
+        "Une station consomme 100 MWh pour pomper l’eau et restitue 75 MWh lors de la production : son rendement aller-retour vaut 75/100 = 75 %.",
+        "Une batterie reçoit 10 kWh puis restitue 8 kWh : son rendement aller-retour est 8/10 = 80 %."
+      ],
+      "piege": "Le stockage déplace une énergie dans le temps mais ne crée pas d’énergie.",
+      "astuce_memoire": "Stocker = convertir, conserver, restituer avec pertes.",
+      "quiz": [
+        {
+          "q": "Sous quelle forme principale une station de pompage stocke-t-elle l’énergie ?",
+          "choix": [
+            "Énergie lumineuse dans une cellule",
+            "Énergie nucléaire dans le barrage",
+            "Énergie potentielle de l’eau en altitude"
+          ],
+          "rep": "Énergie potentielle de l’eau en altitude",
+          "expl": "L’eau est élevée vers un réservoir supérieur."
+        },
+        {
+          "q": "Une batterie reçoit 20 kWh et restitue 16 kWh. Quel est son rendement aller-retour ?",
+          "choix": [
+            "80 %",
+            "125 %",
+            "20 %"
+          ],
+          "rep": "80 %",
+          "expl": "16/20 = 0,80."
+        },
+        {
+          "q": "Quel critère aide à comparer des stockages ?",
+          "choix": [
+            "Uniquement la couleur des équipements",
+            "La capacité et la durée de stockage",
+            "Uniquement le nom du fabricant"
+          ],
+          "rep": "La capacité et la durée de stockage",
+          "expl": "Capacité, durée, rendement et impacts sont des critères pertinents."
+        }
+      ],
+      "id": "REV-ESC-TLE-23"
+    },
+    {
+      "axe": "Le futur des énergies",
+      "titre": "Ressources, stocks et cycle du carbone",
+      "emoji": "🌍",
+      "en_une_phrase": "Les ressources énergétiques proviennent de stocks limités ou de flux disponibles dans le temps.",
+      "comprendre": "Le charbon, le pétrole et le gaz naturel sont des combustibles fossiles formés sur des millions d’années à partir de matière organique. Leur consommation actuelle est bien plus rapide que leur formation ; leurs stocks ne sont donc pas renouvelables à l’échelle humaine. Le rayonnement solaire correspond à un flux, dont la disponibilité varie notamment selon l’heure et le lieu.",
+      "essentiel": [
+        "Combustibles fossiles et uranium : stocks limités.",
+        "Rayonnement solaire, vent et écoulements d’eau : flux variables.",
+        "Le carbone circule entre atmosphère, océans, êtres vivants et sols.",
+        "La combustion transfère rapidement du carbone fossile vers l’atmosphère."
+      ],
+      "image_mentale": "Un stock se vide tandis qu’un flux arrive au fil du temps.",
+      "regle_ou_methode": "Identifier la ressource, son rythme de renouvellement et les transferts de carbone.",
+      "exemples": [
+        "Le pétrole provient de matière organique transformée sur des durées géologiques ; son extraction actuelle vide des réserves bien plus vite qu’elles ne se forment. Il est donc non renouvelable à l’échelle humaine.",
+        "Le rayonnement solaire reçu par un panneau varie entre le jour et la nuit : c’est un flux renouvelable, mais variable."
+      ],
+      "piege": "Renouvelable ne signifie ni disponible en continu ni sans impact environnemental.",
+      "astuce_memoire": "Fossiles : stocks lents à former ; Soleil : flux variable.",
+      "quiz": [
+        {
+          "q": "Pourquoi le pétrole est-il non renouvelable à l’échelle humaine ?",
+          "choix": [
+            "Sa formation est beaucoup plus lente que son extraction",
+            "Sa formation prend seulement quelques jours",
+            "Son usage ne modifie jamais les stocks"
+          ],
+          "rep": "Sa formation est beaucoup plus lente que son extraction",
+          "expl": "Sa formation exige des durées géologiques."
+        },
+        {
+          "q": "Quelle ressource correspond à un flux ?",
+          "choix": [
+            "Un gisement de charbon",
+            "Le rayonnement solaire reçu",
+            "Un stock d’uranium extrait"
+          ],
+          "rep": "Le rayonnement solaire reçu",
+          "expl": "Le rayonnement solaire est un flux reçu au cours du temps."
+        },
+        {
+          "q": "La combustion de carbone fossile transfère notamment du carbone vers quel réservoir ?",
+          "choix": [
+            "Uniquement les minerais profonds",
+            "Uniquement le noyau terrestre",
+            "L’atmosphère"
+          ],
+          "rep": "L’atmosphère",
+          "expl": "La combustion émet notamment du CO₂ dans l’atmosphère."
+        }
+      ],
+      "id": "REV-ESC-TLE-24"
+    },
+    {
+      "axe": "Le futur des énergies",
+      "titre": "Combustion et émissions de CO₂",
+      "emoji": "🧪",
+      "en_une_phrase": "La combustion de combustibles carbonés produit du dioxyde de carbone et peut aussi émettre des polluants.",
+      "comprendre": "Lors d’une combustion complète du méthane, CH₄ + 2 O₂ → CO₂ + 2 H₂O. La conservation des atomes permet d’ajuster cette équation. Pour comparer des combustibles, on peut rapporter une masse de CO₂ émise à l’énergie obtenue, en précisant les données retenues.",
+      "essentiel": [
+        "Les atomes sont conservés lors d’une réaction chimique.",
+        "Combustion complète du méthane : CH₄ + 2 O₂ → CO₂ + 2 H₂O.",
+        "Le CO₂ est un gaz à effet de serre.",
+        "Les particules et certains autres polluants peuvent affecter la santé."
+      ],
+      "image_mentale": "On compte les atomes de chaque côté de la flèche avant de comparer les émissions.",
+      "regle_ou_methode": "Vérifier C, H puis O ; pour une comparaison, diviser la masse émise par l’énergie obtenue.",
+      "exemples": [
+        "Dans CH₄ + 2 O₂ → CO₂ + 2 H₂O, on compte de chaque côté 1 carbone, 4 hydrogènes et 4 oxygènes : l’équation est équilibrée.",
+        "Un combustible hypothétique émet 400 g de CO₂ pour 5 kWh : 400/5 = 80 g de CO₂ par kWh d’énergie produite."
+      ],
+      "piege": "Le CO₂ et les particules fines ne sont pas le même type de pollution et n’ont pas les mêmes effets.",
+      "astuce_memoire": "Équilibrer les atomes ; comparer des masses par énergie.",
+      "quiz": [
+        {
+          "q": "Combien de molécules de dioxygène faut-il dans CH₄ + … O₂ → CO₂ + 2 H₂O ?",
+          "choix": [
+            "1",
+            "2",
+            "3"
+          ],
+          "rep": "2",
+          "expl": "Deux O₂ apportent les quatre atomes d’oxygène nécessaires."
+        },
+        {
+          "q": "Une combustion émet 600 g de CO₂ pour 3 kWh. Quel est le rapport ?",
+          "choix": [
+            "180 g/kWh",
+            "1 800 g/kWh",
+            "200 g/kWh"
+          ],
+          "rep": "200 g/kWh",
+          "expl": "600/3 = 200 g par kWh."
+        },
+        {
+          "q": "Quel polluant peut affecter les voies respiratoires ?",
+          "choix": [
+            "Les particules fines",
+            "Le diazote seul dans ses proportions habituelles",
+            "La vapeur d’eau seule quelle que soit sa concentration"
+          ],
+          "rep": "Les particules fines",
+          "expl": "Les particules fines issues notamment des combustions affectent la santé."
+        }
+      ],
+      "id": "REV-ESC-TLE-25"
+    },
+    {
+      "axe": "Le futur des énergies",
+      "titre": "Empreinte carbone et cycle de vie",
+      "emoji": "👣",
+      "en_une_phrase": "L’empreinte carbone tient compte des émissions directes et indirectes associées à une activité.",
+      "comprendre": "Une activité peut émettre des gaz à effet de serre pendant son usage mais aussi lors de la fabrication, du transport et de la fin de vie des équipements. Pour comparer des solutions, il faut utiliser le même périmètre et la même unité de service rendu. Le CO₂ est un gaz à effet de serre ; l’ozone stratosphérique protège des ultraviolets, tandis que l’ozone troposphérique est un polluant.",
+      "essentiel": [
+        "Le périmètre d’une comparaison doit être explicite.",
+        "Fabrication, usage et fin de vie peuvent générer des émissions.",
+        "Des émissions de différents gaz sont souvent exprimées en équivalent CO₂.",
+        "L’ozone n’a pas le même rôle selon l’altitude."
+      ],
+      "image_mentale": "Une chaîne va de l’extraction des matières à la fabrication, à l’usage puis à la fin de vie.",
+      "regle_ou_methode": "Additionner les émissions des étapes retenues pour un service identique, sans oublier les émissions indirectes.",
+      "exemples": [
+        "Un objet fictif émet 30 kg éq. CO₂ à la fabrication, 15 kg pendant son usage et 5 kg en fin de vie. Son bilan sur ces étapes vaut 30 + 15 + 5 = 50 kg éq. CO₂.",
+        "À proximité du sol, l’ozone est un polluant ; dans la stratosphère, la couche d’ozone absorbe une partie des ultraviolets. Le rôle dépend donc de l’altitude."
+      ],
+      "piege": "Une installation qui n’émet pas directement lors de son fonctionnement peut avoir une empreinte liée à sa fabrication.",
+      "astuce_memoire": "Comparer un même service sur un même périmètre.",
+      "quiz": [
+        {
+          "q": "Quel bilan inclut les émissions de fabrication, d’usage et de fin de vie ?",
+          "choix": [
+            "Un bilan limité aux émissions directes pendant l’usage",
+            "Un bilan limité aux seules émissions de fabrication",
+            "Une empreinte intégrant ces trois étapes"
+          ],
+          "rep": "Une empreinte intégrant ces trois étapes",
+          "expl": "Une analyse de cycle de vie prend en compte plusieurs étapes."
+        },
+        {
+          "q": "Quel est le total de 12 kg, 5 kg et 3 kg éq. CO₂ ?",
+          "choix": [
+            "20 kg éq. CO₂",
+            "17 kg éq. CO₂",
+            "15 kg éq. CO₂"
+          ],
+          "rep": "20 kg éq. CO₂",
+          "expl": "12 + 5 + 3 = 20."
+        },
+        {
+          "q": "Quel rôle joue l’ozone stratosphérique ?",
+          "choix": [
+            "Il constitue toujours le même polluant que l’ozone près du sol",
+            "Il absorbe une partie des ultraviolets",
+            "Il supprime toutes les émissions de CO₂"
+          ],
+          "rep": "Il absorbe une partie des ultraviolets",
+          "expl": "La couche d’ozone stratosphérique absorbe une partie des UV."
+        }
+      ],
+      "id": "REV-ESC-TLE-26"
+    },
+    {
+      "axe": "Le futur des énergies",
+      "titre": "Choisir un mix énergétique",
+      "emoji": "⚖️",
+      "en_une_phrase": "Un choix énergétique se discute à partir de plusieurs critères techniques, environnementaux et sociaux.",
+      "comprendre": "Un mix énergétique associe plusieurs ressources ou filières pour répondre à des besoins. La comparaison tient compte des émissions sur le cycle de vie, des ressources, des coûts, de la disponibilité, des risques et des effets sur les milieux. Les scénarios reposent sur des hypothèses : les expliciter permet d’évaluer les compromis.",
+      "essentiel": [
+        "Distinguer mix énergétique global et seul mix électrique.",
+        "Comparer les émissions sur des périmètres identiques.",
+        "Considérer la variabilité, le réseau, les ressources et les risques.",
+        "La sobriété et l’efficacité énergétique modifient aussi les besoins."
+      ],
+      "image_mentale": "Une décision repose sur plusieurs critères, comme une grille à plusieurs colonnes.",
+      "regle_ou_methode": "Définir le besoin, expliciter les hypothèses et comparer les avantages et limites de chaque option.",
+      "exemples": [
+        "Une commune compare solaire et autres moyens pour un bâtiment : elle évalue l’ensoleillement, le profil de consommation, les coûts, la fabrication et les besoins éventuels de stockage. Le meilleur choix dépend du contexte.",
+        "Deux scénarios produisent la même quantité d’électricité mais diffèrent par leurs ressources, leurs émissions et leur disponibilité : il faut comparer ces critères sans conclure à partir d’un seul."
+      ],
+      "piege": "Le mix électrique ne décrit pas toute l’énergie utilisée, notamment pour certains transports et usages thermiques.",
+      "astuce_memoire": "Besoins, disponibilité, impacts, coûts et risques.",
+      "quiz": [
+        {
+          "q": "Que représente le mix électrique ?",
+          "choix": [
+            "La répartition des moyens de production d’électricité",
+            "La totalité des usages énergétiques sans distinction",
+            "Uniquement la consommation de carburants routiers"
+          ],
+          "rep": "La répartition des moyens de production d’électricité",
+          "expl": "Le mix électrique concerne les sources de production d’électricité."
+        },
+        {
+          "q": "Quel critère est pertinent dans un choix énergétique ?",
+          "choix": [
+            "Uniquement le nom de la technologie",
+            "Les émissions sur le cycle de vie et la disponibilité",
+            "Uniquement le nombre de lettres du combustible"
+          ],
+          "rep": "Les émissions sur le cycle de vie et la disponibilité",
+          "expl": "Plusieurs critères techniques, climatiques et sociaux interviennent."
+        },
+        {
+          "q": "Que permet la sobriété énergétique ?",
+          "choix": [
+            "Garantir une disponibilité solaire constante",
+            "Éliminer toutes les pertes physiques",
+            "Réduire certains besoins en énergie"
+          ],
+          "rep": "Réduire certains besoins en énergie",
+          "expl": "La sobriété modifie les usages et peut diminuer les besoins."
+        }
+      ],
+      "id": "REV-ESC-TLE-27"
+    },
+    {
+      "axe": "Une histoire du vivant",
+      "titre": "Mesurer la biodiversité",
+      "emoji": "🌿",
+      "en_une_phrase": "La biodiversité se décrit notamment par la diversité des espèces, leur abondance et leur diversité génétique.",
+      "comprendre": "Un jardin contient plusieurs espèces dont les effectifs diffèrent. Observer un seul coin ne révèle pas nécessairement toute sa diversité. Un échantillonnage défini permet de comparer des mesures tout en gardant leurs limites.",
+      "essentiel": [
+        "La richesse spécifique est le nombre d’espèces observées.",
+        "L’abondance désigne un effectif.",
+        "La diversité génétique concerne les variations au sein des espèces.",
+        "Un échantillon donne une estimation partielle."
+      ],
+      "image_mentale": "Imagine plusieurs carrés de terrain avec des plantes différentes.",
+      "regle_ou_methode": "Définis le milieu, la surface et le protocole, puis compte les espèces et leurs effectifs.",
+      "exemples": [
+        "Sur deux carrés de même taille, le premier contient 3 espèces et le second 5. La richesse observée est plus élevée dans le second, sans prouver à elle seule la richesse totale du milieu.",
+        "Une même espèce peut présenter plusieurs variantes génétiques : sa diversité ne se résume pas au nombre d’espèces."
+      ],
+      "piege": "Le nombre d’espèces observées dépend aussi de l’effort et de la méthode de recherche.",
+      "astuce_memoire": "Espèces, effectifs, gènes.",
+      "quiz": [
+        {
+          "q": "Que mesure la richesse spécifique ?",
+          "choix": [
+            "Le nombre de continents",
+            "Le nombre d’espèces",
+            "La masse de chaque individu"
+          ],
+          "rep": "Le nombre d’espèces",
+          "expl": "Elle compte les espèces."
+        },
+        {
+          "q": "Deux échantillons de taille différente se comparent-ils sans précaution ?",
+          "choix": [
+            "Oui, toujours",
+            "Oui, si les deux contiennent des plantes",
+            "Non, l’effort de recherche peut modifier le résultat"
+          ],
+          "rep": "Non, l’effort de recherche peut modifier le résultat",
+          "expl": "Les protocoles influencent les observations."
+        },
+        {
+          "q": "La diversité génétique concerne-t-elle les différences au sein d’une espèce ?",
+          "choix": [
+            "Oui",
+            "Non, elle concerne uniquement les océans",
+            "Non, elle compte seulement les roches"
+          ],
+          "rep": "Oui",
+          "expl": "Elle décrit notamment des variations génétiques entre individus."
+        }
+      ],
+      "id": "REV-ESC-TLE-28"
+    },
+    {
+      "axe": "Une histoire du vivant",
+      "titre": "Capture et recapture",
+      "emoji": "🦋",
+      "en_une_phrase": "La capture-marquage-recapture estime un effectif à partir de la proportion d’individus marqués retrouvés.",
+      "comprendre": "Tu veux estimer une population sans compter tous ses individus. Tu marques un premier échantillon puis, après mélange, tu captures un second échantillon. Si les marqués y sont représentatifs, leur proportion renseigne sur l’effectif total.",
+      "essentiel": [
+        "M est le nombre d’individus marqués au départ.",
+        "C est le nombre d’individus capturés ensuite.",
+        "R est le nombre de marqués dans cette recapture.",
+        "L’estimation est N ≈ M × C / R si R est non nul.",
+        "Le modèle suppose aussi une population approximativement fermée et des marques conservées et reconnaissables."
+      ],
+      "image_mentale": "Imagine un sachet de billes dont certaines sont marquées et mélangées.",
+      "regle_ou_methode": "Vérifie les hypothèses puis multiplie M par C et divise par R.",
+      "exemples": [
+        "On marque 40 individus, puis on en recapture 50 dont 10 marqués. La proportion est 10/50 = 0,2 ; l’effectif estimé est 40/0,2 = 200.",
+        "Si 30 marqués sont suivis d’une recapture de 60 dont 6 marqués, l’estimation est 30 × 60/6 = 300."
+      ],
+      "piege": "Cette estimation suppose notamment un bon mélange et des chances comparables de capture.",
+      "astuce_memoire": "Marqués initiaux × recapturés ÷ marqués recapturés.",
+      "quiz": [
+        {
+          "q": "Avec M = 40, C = 50 et R = 10, quelle estimation obtient-on ?",
+          "choix": [
+            "100",
+            "500",
+            "200"
+          ],
+          "rep": "200",
+          "expl": "N ≈ 40 × 50/10 = 200."
+        },
+        {
+          "q": "Quelle hypothèse rend le calcul pertinent ?",
+          "choix": [
+            "Les individus marqués se mélangent à la population",
+            "Tous les individus marqués disparaissent",
+            "Le second échantillon ne contient aucun individu"
+          ],
+          "rep": "Les individus marqués se mélangent à la population",
+          "expl": "La proportion observée doit pouvoir représenter la population."
+        },
+        {
+          "q": "Quel problème se pose si R = 0 ?",
+          "choix": [
+            "L’effectif vaut forcément zéro",
+            "La formule ne permet pas de diviser par R",
+            "Tous les individus sont marqués"
+          ],
+          "rep": "La formule ne permet pas de diviser par R",
+          "expl": "La division par zéro est impossible."
+        }
+      ],
+      "id": "REV-ESC-TLE-29"
+    },
+    {
+      "axe": "Une histoire du vivant",
+      "titre": "Fluctuation des échantillons",
+      "emoji": "🎲",
+      "en_une_phrase": "Deux échantillons aléatoires peuvent donner des fréquences différentes pour une même population.",
+      "comprendre": "Deux poignées tirées d’un même sac ne contiennent pas toujours la même proportion de billes rouges. Cette variation est une fluctuation d’échantillonnage. Elle invite à quantifier l’incertitude d’une estimation.",
+      "essentiel": [
+        "Une fréquence observée dépend de l’échantillon.",
+        "Un échantillon plus grand réduit généralement la fluctuation.",
+        "Un intervalle de confiance est associé à une méthode et à un niveau de confiance."
+      ],
+      "image_mentale": "Imagine plusieurs poignées tirées du même sac, chacune donnant une proportion.",
+      "regle_ou_methode": "Calcule chaque fréquence puis compare-les sans supposer qu’une seule donne la valeur exacte.",
+      "exemples": [
+        "Dans un échantillon fictif, 42 individus sur 100 possèdent un caractère : la fréquence observée est 42 %. Dans un autre, 47 sur 100 donnent 47 % ; cet écart peut résulter de la fluctuation.",
+        "Sur 200 individus, 90 porteurs donnent une fréquence de 90/200 = 45 %."
+      ],
+      "piege": "Une proportion observée sur un échantillon n’est pas automatiquement la proportion exacte de la population.",
+      "astuce_memoire": "Échantillon : estimation avec incertitude.",
+      "quiz": [
+        {
+          "q": "Quelle est la fréquence de 90 porteurs sur 200 ?",
+          "choix": [
+            "45 %",
+            "90 %",
+            "20 %"
+          ],
+          "rep": "45 %",
+          "expl": "90/200 = 0,45."
+        },
+        {
+          "q": "Deux échantillons d’une même population peuvent-ils différer ?",
+          "choix": [
+            "Non, jamais",
+            "Oui, par fluctuation",
+            "Seulement si la population change de planète"
+          ],
+          "rep": "Oui, par fluctuation",
+          "expl": "Le tirage aléatoire peut produire des fréquences différentes."
+        },
+        {
+          "q": "Un échantillon plus grand réduit généralement quoi ?",
+          "choix": [
+            "La nécessité de définir le protocole",
+            "Le nombre réel d’espèces",
+            "La fluctuation d’échantillonnage"
+          ],
+          "rep": "La fluctuation d’échantillonnage",
+          "expl": "Un effectif plus élevé rend généralement l’estimation plus précise."
+        }
+      ],
+      "id": "REV-ESC-TLE-30"
+    },
+    {
+      "axe": "Une histoire du vivant",
+      "titre": "Équilibre de Hardy-Weinberg",
+      "emoji": "🧬",
+      "en_une_phrase": "Le modèle de Hardy-Weinberg prédit des fréquences génotypiques stables sous des conditions précises.",
+      "comprendre": "Une population possède des versions différentes d’un même gène. Un modèle théorique permet de comparer ce qui serait attendu sans certaines forces évolutives aux observations. Pour deux allèles de fréquences p et q, les fréquences attendues sont p², 2pq et q².",
+      "essentiel": [
+        "p + q = 1 pour deux allèles considérés.",
+        "Les fréquences attendues sont p², 2pq et q².",
+        "Le modèle suppose notamment des unions aléatoires et une population suffisamment grande.",
+        "Sélection, mutation et migration peuvent modifier les fréquences."
+      ],
+      "image_mentale": "Imagine un tableau croisant les allèles des deux parents.",
+      "regle_ou_methode": "Calcule p et q puis les trois fréquences ; compare-les à des données observées.",
+      "exemples": [
+        "Si p = 0,6 et q = 0,4, calcule p² = 0,36, 2pq = 0,48 et q² = 0,16. Leur somme vaut 1 : ce sont les proportions attendues par le modèle.",
+        "Si p = q = 0,5, les proportions attendues sont 0,25, 0,50 et 0,25."
+      ],
+      "piege": "Un écart au modèle invite à chercher une explication ; il ne désigne pas automatiquement une cause unique.",
+      "astuce_memoire": "p², 2pq, q².",
+      "quiz": [
+        {
+          "q": "Si p = 0,6 et q = 0,4, que vaut 2pq ?",
+          "choix": [
+            "0,24",
+            "0,48",
+            "0,36"
+          ],
+          "rep": "0,48",
+          "expl": "2 × 0,6 × 0,4 = 0,48."
+        },
+        {
+          "q": "Quelle hypothèse appartient au modèle idéal ?",
+          "choix": [
+            "Une sélection forcément forte",
+            "Une migration obligatoire chaque génération",
+            "Des unions aléatoires"
+          ],
+          "rep": "Des unions aléatoires",
+          "expl": "Le modèle suppose notamment des unions aléatoires."
+        },
+        {
+          "q": "Un écart observé indique-t-il immédiatement une cause unique ?",
+          "choix": [
+            "Non",
+            "Oui, toujours la sélection",
+            "Oui, toujours une erreur de calcul"
+          ],
+          "rep": "Non",
+          "expl": "Plusieurs processus ou limites peuvent expliquer un écart."
+        }
+      ],
+      "id": "REV-ESC-TLE-31"
+    },
+    {
+      "axe": "Une histoire du vivant",
+      "titre": "Sélection et dérive",
+      "emoji": "🦎",
+      "en_une_phrase": "La sélection naturelle et la dérive génétique modifient les fréquences des allèles par des mécanismes différents.",
+      "comprendre": "Dans une population, certains caractères influencent la reproduction selon le milieu. D’autres variations de fréquence peuvent résulter du hasard, surtout lorsque l’effectif est faible. Les mutations créent de nouvelles variantes sans apparaître parce qu’elles seraient nécessaires.",
+      "essentiel": [
+        "La sélection dépend notamment des différences de survie et de reproduction.",
+        "La dérive correspond à des variations aléatoires des fréquences.",
+        "La dérive peut être forte dans une petite population.",
+        "Une mutation n’apparaît pas parce qu’un organisme en aurait besoin."
+      ],
+      "image_mentale": "Imagine des billes de couleurs transmises par un tirage, puis un milieu favorisant une couleur.",
+      "regle_ou_methode": "Distingue production des variantes, effet du milieu et rôle du hasard.",
+      "exemples": [
+        "Dans une population fictive, quelques individus porteurs d’un allèle disparaissent par hasard avant de se reproduire. Sa fréquence baisse : cela illustre une dérive possible.",
+        "Si un caractère héréditaire augmente la reproduction dans un milieu donné, sa fréquence peut augmenter par sélection."
+      ],
+      "piege": "Une variation avantageuse n’est pas créée volontairement en réponse à un besoin.",
+      "astuce_memoire": "Dérive : hasard ; sélection : reproduction différentielle.",
+      "quiz": [
+        {
+          "q": "Quel mécanisme dépend particulièrement du hasard dans une petite population ?",
+          "choix": [
+            "La conversion d’une longueur en mètres",
+            "La photosynthèse seule",
+            "La dérive génétique"
+          ],
+          "rep": "La dérive génétique",
+          "expl": "La dérive correspond à une fluctuation aléatoire."
+        },
+        {
+          "q": "Une mutation apparaît-elle parce qu’elle est utile ?",
+          "choix": [
+            "Non, son apparition ne répond pas à un besoin",
+            "Oui, toujours",
+            "Oui, si la population est petite"
+          ],
+          "rep": "Non, son apparition ne répond pas à un besoin",
+          "expl": "Les mutations ne sont pas dirigées par leur utilité future."
+        },
+        {
+          "q": "Que peut favoriser la sélection naturelle ?",
+          "choix": [
+            "Tout caractère acquis la veille sans transmission",
+            "Un caractère héréditaire lié à une meilleure reproduction dans le milieu",
+            "Une variante sans lien possible avec la reproduction"
+          ],
+          "rep": "Un caractère héréditaire lié à une meilleure reproduction dans le milieu",
+          "expl": "La sélection dépend de différences de reproduction associées aux caractères."
+        }
+      ],
+      "id": "REV-ESC-TLE-32"
+    },
+    {
+      "axe": "Une histoire du vivant",
+      "titre": "Fragmentation et santé",
+      "emoji": "🌍",
+      "en_une_phrase": "La fragmentation des habitats et les changements écologiques relient biodiversité et santé.",
+      "comprendre": "Une route peut séparer une population animale en petits groupes. Les échanges diminuent et le hasard peut peser davantage sur chaque groupe. La santé humaine, celle des animaux et l’état des écosystèmes sont liés dans l’approche « Une seule santé ».",
+      "essentiel": [
+        "La fragmentation réduit ou sépare les espaces disponibles.",
+        "De petits effectifs sont plus sensibles à la dérive génétique.",
+        "Les interactions entre humains, animaux et milieux influencent certains risques sanitaires.",
+        "Une gestion écologique s’appuie sur des données et un suivi."
+      ],
+      "image_mentale": "Imagine une forêt coupée par une route et reliée par un passage adapté.",
+      "regle_ou_methode": "Repère la modification du milieu, les populations concernées puis les effets possibles.",
+      "exemples": [
+        "Une route sépare une population fictive en deux petits groupes. Si les échanges deviennent rares, chacun peut perdre des variantes génétiques par dérive ; un passage adapté peut favoriser la connexion.",
+        "Une dégradation du milieu peut modifier les contacts entre espèces et certains risques sanitaires."
+      ],
+      "piege": "Une interaction écologique ne signifie pas que chaque modification provoque nécessairement une maladie.",
+      "astuce_memoire": "Milieux, animaux et humains sont liés.",
+      "quiz": [
+        {
+          "q": "Quel effet une fragmentation peut-elle avoir ?",
+          "choix": [
+            "Réduire les échanges entre groupes",
+            "Augmenter automatiquement tous les effectifs",
+            "Supprimer tout effet du hasard"
+          ],
+          "rep": "Réduire les échanges entre groupes",
+          "expl": "Des obstacles peuvent isoler des groupes."
+        },
+        {
+          "q": "Que relie l’approche « Une seule santé » ?",
+          "choix": [
+            "Uniquement les soins humains",
+            "Santé humaine, santé animale et environnement",
+            "Uniquement les températures"
+          ],
+          "rep": "Santé humaine, santé animale et environnement",
+          "expl": "Elle considère leurs interactions."
+        },
+        {
+          "q": "Un petit groupe est-il plus sensible à la dérive ?",
+          "choix": [
+            "Non, jamais",
+            "Seulement s’il est situé près d’une ville",
+            "Oui, en général"
+          ],
+          "rep": "Oui, en général",
+          "expl": "Le hasard peut y modifier plus fortement les fréquences."
+        }
+      ],
+      "id": "REV-ESC-TLE-33"
+    },
+    {
+      "axe": "Une histoire du vivant",
+      "titre": "Anatomie et évolution",
+      "emoji": "🦴",
+      "en_une_phrase": "Les caractères anatomiques reflètent une histoire évolutive et des compromis, pas une perfection nécessaire.",
+      "comprendre": "Une structure du corps peut avoir plusieurs fonctions ou conserver les traces de son histoire. La sélection agit sur des variations héritées dans un contexte donné. Tous les caractères ne sont pas nécessairement des adaptations optimales.",
+      "essentiel": [
+        "Les espèces possèdent des caractères hérités d’ancêtres.",
+        "Une structure peut résulter de contraintes et de compromis évolutifs.",
+        "La sélection n’anticipe pas des besoins futurs."
+      ],
+      "image_mentale": "Imagine une ancienne construction plusieurs fois modifiée, dont certaines parties subsistent.",
+      "regle_ou_methode": "Compare les structures et leur histoire avant de conclure à une fonction ou une adaptation.",
+      "exemples": [
+        "Chez des vertébrés, compare les os du membre antérieur malgré des fonctions différentes. Leur organisation commune suggère un héritage ancien, modifié au cours de l’évolution.",
+        "Une structure vestigiale peut persister même si son rôle actuel est réduit ou différent."
+      ],
+      "piege": "Ne suppose pas que chaque détail anatomique est parfaitement adapté à une seule fonction.",
+      "astuce_memoire": "Héritage, contraintes, compromis.",
+      "quiz": [
+        {
+          "q": "Que peut indiquer une organisation osseuse commune ?",
+          "choix": [
+            "Une origine nécessairement indépendante de toutes les espèces",
+            "Un héritage évolutif partagé",
+            "Une absence de toute modification"
+          ],
+          "rep": "Un héritage évolutif partagé",
+          "expl": "Des caractères homologues renseignent sur la parenté."
+        },
+        {
+          "q": "La sélection anticipe-t-elle les besoins futurs ?",
+          "choix": [
+            "Oui, toujours",
+            "Oui, chez les animaux seulement",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "La sélection agit sur des variations existantes dans un contexte."
+        },
+        {
+          "q": "Tout caractère est-il forcément optimal ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Oui, s’il existe depuis longtemps"
+          ],
+          "rep": "Non",
+          "expl": "L’histoire et les contraintes peuvent contribuer aux formes observées."
+        }
+      ],
+      "id": "REV-ESC-TLE-34"
+    },
+    {
+      "axe": "Une histoire du vivant",
+      "titre": "Parentés humaines",
+      "emoji": "🧑",
+      "en_une_phrase": "L’espèce humaine partage des ancêtres communs avec les autres primates actuels.",
+      "comprendre": "Un arbre de famille montre des branches qui partagent des ancêtres. En évolution, les espèces actuelles sont également reliées par des ancêtres communs. Les fossiles et les génomes contribuent à reconstruire une histoire ramifiée.",
+      "essentiel": [
+        "Homo sapiens appartient aux primates.",
+        "Humains et chimpanzés partagent un ancêtre commun récent.",
+        "Les chimpanzés actuels ne sont pas nos ancêtres.",
+        "Les fossiles renseignent sur des branches aujourd’hui disparues."
+      ],
+      "image_mentale": "Imagine un arbre ramifié dont les extrémités représentent des lignées actuelles.",
+      "regle_ou_methode": "Compare des caractères hérités et situe l’ancêtre commun sur une branche, pas à l’extrémité actuelle.",
+      "exemples": [
+        "Sur un arbre fictif, deux espèces partagent un ancêtre plus récent que chacune avec une troisième. Elles sont donc plus proches parentes entre elles selon cet arbre.",
+        "Des fossiles et des données génétiques peuvent apporter des indices complémentaires sur des espèces humaines anciennes."
+      ],
+      "piege": "L’évolution humaine n’est pas une file où une espèce actuelle se transforme directement en une autre espèce actuelle.",
+      "astuce_memoire": "Parenté : ancêtre commun, branches multiples.",
+      "quiz": [
+        {
+          "q": "Les humains descendent-ils des chimpanzés actuels ?",
+          "choix": [
+            "Oui, directement",
+            "Non, ils ne sont pas des primates",
+            "Non, ils partagent des ancêtres communs"
+          ],
+          "rep": "Non, ils partagent des ancêtres communs",
+          "expl": "Les deux lignées actuelles partagent des ancêtres."
+        },
+        {
+          "q": "Que permet de comparer un arbre de parenté ?",
+          "choix": [
+            "La proximité des ancêtres communs",
+            "La valeur morale des espèces",
+            "La date de naissance de chaque individu"
+          ],
+          "rep": "La proximité des ancêtres communs",
+          "expl": "Les branches représentent des relations de parenté."
+        },
+        {
+          "q": "Les fossiles sont-ils les seuls indices possibles ?",
+          "choix": [
+            "Oui",
+            "Non, les génomes apportent aussi des informations",
+            "Oui, les caractères anatomiques sont inutiles"
+          ],
+          "rep": "Non, les génomes apportent aussi des informations",
+          "expl": "Plusieurs types de données contribuent à la reconstruction."
+        }
+      ],
+      "id": "REV-ESC-TLE-35"
+    },
+    {
+      "axe": "Une histoire du vivant",
+      "titre": "Modèles démographiques",
+      "emoji": "📈",
+      "en_une_phrase": "Une évolution à accroissement constant se modélise par une suite arithmétique ; un taux constant par une suite géométrique.",
+      "comprendre": "Une population peut gagner chaque année le même nombre d’individus ou la même proportion. Ces deux situations ne produisent pas les mêmes trajectoires. Le modèle doit ensuite être comparé aux données observées.",
+      "essentiel": [
+        "Accroissement constant : uₙ₊₁ = uₙ + r.",
+        "Taux constant t : uₙ₊₁ = uₙ(1 + t).",
+        "Un modèle simplifie une réalité et possède un domaine de validité."
+      ],
+      "image_mentale": "Imagine deux tableaux : l’un ajoute toujours le même nombre, l’autre multiplie par le même coefficient.",
+      "regle_ou_methode": "Identifie si la variation est absolue ou relative puis calcule les termes.",
+      "exemples": [
+        "Une population fictive de 1 000 augmente de 100 par an. Après deux ans, elle atteint 1 000 + 2 × 100 = 1 200 : le modèle est arithmétique.",
+        "Avec une hausse de 10 % par an, 1 000 devient 1 100 puis 1 210 : le modèle est géométrique."
+      ],
+      "piege": "Une hausse de 100 individus et une hausse de 10 % ne restent pas équivalentes à chaque étape.",
+      "astuce_memoire": "Ajouter : arithmétique ; multiplier : géométrique.",
+      "quiz": [
+        {
+          "q": "Une hausse constante de 100 individus par an correspond à quel modèle ?",
+          "choix": [
+            "Une suite arithmétique",
+            "Une suite géométrique de raison 100",
+            "Une valeur forcément constante"
+          ],
+          "rep": "Une suite arithmétique",
+          "expl": "On ajoute le même nombre à chaque étape."
+        },
+        {
+          "q": "Quel effectif après deux hausses de 10 % à partir de 1 000 ?",
+          "choix": [
+            "1 200",
+            "1 210",
+            "1 100"
+          ],
+          "rep": "1 210",
+          "expl": "1 000 × 1,1² = 1 210."
+        },
+        {
+          "q": "Un modèle valable sur quelques années prédit-il forcément toujours l’avenir ?",
+          "choix": [
+            "Oui",
+            "Oui, s’il utilise une formule",
+            "Non, il faut tester ses hypothèses"
+          ],
+          "rep": "Non, il faut tester ses hypothèses",
+          "expl": "Les conditions réelles peuvent changer."
+        }
+      ],
+      "id": "REV-ESC-TLE-36"
+    },
+    {
+      "axe": "Une histoire du vivant",
+      "titre": "Machines et algorithmes",
+      "emoji": "💻",
+      "en_une_phrase": "Un algorithme décrit des étapes qu’une machine peut exécuter après leur traduction dans un langage adapté.",
+      "comprendre": "Une recette ordonne des actions pour produire un résultat. Un algorithme formalise aussi des opérations, des conditions et des répétitions. Une machine exécute ces instructions sur des données selon des règles définies.",
+      "essentiel": [
+        "Un algorithme est une suite finie d’instructions pour une tâche donnée.",
+        "Un programme traduit des instructions dans un langage exécutable ou interprétable.",
+        "Un modèle de machine peut étudier ce qui est calculable."
+      ],
+      "image_mentale": "Imagine une suite de cases : entrée, instructions, sortie.",
+      "regle_ou_methode": "Repère les données d’entrée, les opérations et le résultat produit.",
+      "exemples": [
+        "Pour calculer une moyenne de deux valeurs, entre 4 et 8. Additionne-les puis divise par 2 : la sortie vaut 6.",
+        "Une instruction conditionnelle peut choisir une action différente selon la valeur d’une donnée."
+      ],
+      "piege": "Une machine ne comprend pas automatiquement le sens humain d’une tâche parce qu’elle exécute des instructions.",
+      "astuce_memoire": "Entrée, traitement, sortie.",
+      "quiz": [
+        {
+          "q": "Quelle sortie donne la moyenne de 4 et 8 ?",
+          "choix": [
+            "12",
+            "6",
+            "4"
+          ],
+          "rep": "6",
+          "expl": "(4 + 8)/2 = 6."
+        },
+        {
+          "q": "Que décrit un algorithme ?",
+          "choix": [
+            "Uniquement un appareil physique",
+            "Une preuve que toute décision est juste",
+            "Des étapes pour accomplir une tâche"
+          ],
+          "rep": "Des étapes pour accomplir une tâche",
+          "expl": "Il organise des instructions."
+        },
+        {
+          "q": "Une condition permet-elle de choisir entre plusieurs actions ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "Seulement sans données"
+          ],
+          "rep": "Oui",
+          "expl": "Elle peut orienter l’exécution selon un test."
+        }
+      ],
+      "id": "REV-ESC-TLE-37"
+    },
+    {
+      "axe": "Une histoire du vivant",
+      "titre": "Apprentissage automatique",
+      "emoji": "🤖",
+      "en_une_phrase": "L’apprentissage automatique ajuste un modèle à partir de données pour produire des prédictions ou classifications.",
+      "comprendre": "Pour reconnaître des objets, un système peut être entraîné avec des exemples. Il repère des régularités dans ces données puis traite de nouveaux cas. Sa qualité dépend notamment des données et de la méthode d’évaluation.",
+      "essentiel": [
+        "Les données d’entraînement influencent le modèle.",
+        "Une prédiction peut être incorrecte.",
+        "Un ensemble de test aide à évaluer la généralisation.",
+        "Des biais dans les données peuvent affecter les résultats."
+      ],
+      "image_mentale": "Imagine des exemples d’entraînement, un modèle puis de nouveaux objets à classer.",
+      "regle_ou_methode": "Identifie les données, l’objectif, la méthode de test et les limites.",
+      "exemples": [
+        "Un modèle est entraîné sur des images de feuilles étiquetées. On le teste sur de nouvelles images : le pourcentage de classements corrects renseigne sur cette situation de test.",
+        "Un ensemble ne contenant que des images très éclairées peut mal représenter les conditions d’un autre lieu."
+      ],
+      "piege": "Une performance sur les données d’entraînement ne garantit pas une bonne performance sur de nouvelles données.",
+      "astuce_memoire": "Entraîner, tester, examiner les biais.",
+      "quiz": [
+        {
+          "q": "À quoi sert un ensemble de test distinct ?",
+          "choix": [
+            "À garantir zéro erreur partout",
+            "À remplacer toutes les données d’entraînement",
+            "À évaluer sur des données non utilisées pour l’entraînement"
+          ],
+          "rep": "À évaluer sur des données non utilisées pour l’entraînement",
+          "expl": "Il aide à mesurer la généralisation."
+        },
+        {
+          "q": "Qu’est-ce qui peut affecter une prédiction ?",
+          "choix": [
+            "Un biais dans les données",
+            "Uniquement la couleur du boîtier",
+            "Le nombre de lettres du mot modèle"
+          ],
+          "rep": "Un biais dans les données",
+          "expl": "Des données non représentatives peuvent biaiser le résultat."
+        },
+        {
+          "q": "Une prédiction automatique est-elle toujours correcte ?",
+          "choix": [
+            "Oui",
+            "Non",
+            "Oui, si elle est rapide"
+          ],
+          "rep": "Non",
+          "expl": "Les modèles peuvent se tromper."
+        }
+      ],
+      "id": "REV-ESC-TLE-38"
+    },
+    {
+      "axe": "Une histoire du vivant",
+      "titre": "Corrélation et causalité",
+      "emoji": "🔎",
+      "en_une_phrase": "Une association entre deux variables ne prouve pas à elle seule que l’une cause l’autre.",
+      "comprendre": "Deux phénomènes peuvent varier ensemble sans que l’un provoque l’autre. Un troisième facteur ou le hasard peut contribuer à l’association. Il faut confronter plusieurs explications et méthodes avant de conclure.",
+      "essentiel": [
+        "Une corrélation décrit une variation statistique associée.",
+        "Une cause suppose un lien qu’il faut établir.",
+        "Un facteur commun peut influencer les deux variables."
+      ],
+      "image_mentale": "Imagine deux courbes qui montent et une troisième cause possible.",
+      "regle_ou_methode": "Observe l’association, cherche des facteurs communs puis examine les preuves causales.",
+      "exemples": [
+        "Dans une ville fictive, ventes de glaces et fréquentation des piscines augmentent ensemble. La chaleur peut influencer les deux : la corrélation ne prouve pas que les glaces causent la baignade.",
+        "Un modèle prédictif peut exploiter une association sans connaître un mécanisme causal."
+      ],
+      "piege": "Une corrélation peut être utile pour prédire sans suffire à prouver une cause.",
+      "astuce_memoire": "Association ne suffit pas à établir une cause.",
+      "quiz": [
+        {
+          "q": "Deux variables augmentent ensemble : que peut-on conclure immédiatement ?",
+          "choix": [
+            "Elles sont associées dans les données observées",
+            "La première cause certainement la seconde",
+            "La seconde cause certainement la première"
+          ],
+          "rep": "Elles sont associées dans les données observées",
+          "expl": "La causalité nécessite des preuves supplémentaires."
+        },
+        {
+          "q": "Quel facteur peut expliquer ensemble glaces et baignades ?",
+          "choix": [
+            "Le numéro des pages d’un livre",
+            "La chaleur",
+            "Le nom de la ville uniquement"
+          ],
+          "rep": "La chaleur",
+          "expl": "Une température élevée peut influencer les deux."
+        },
+        {
+          "q": "Une corrélation peut-elle être utile pour une prédiction ?",
+          "choix": [
+            "Non, jamais",
+            "Oui, seulement si elle prouve une cause",
+            "Oui, même sans démonstration causale"
+          ],
+          "rep": "Oui, même sans démonstration causale",
+          "expl": "Un modèle peut utiliser une association prédictive."
+        }
+      ],
+      "id": "REV-ESC-TLE-39"
+    },
+    {
+      "axe": "Une histoire du vivant",
+      "titre": "Interpréter un test",
+      "emoji": "🧪",
+      "en_une_phrase": "La proportion de personnes réellement concernées parmi les tests positifs dépend aussi de la fréquence du phénomène.",
+      "comprendre": "Un test peut parfois être positif chez une personne non concernée. Pour interpréter un résultat, il faut compter les vrais et faux positifs dans la population étudiée. Un tableau d’effectifs évite de confondre les probabilités conditionnelles.",
+      "essentiel": [
+        "Un vrai positif est un résultat positif chez une personne concernée.",
+        "Un faux positif est un résultat positif chez une personne non concernée.",
+        "Parmi les positifs, la proportion réellement concernée vaut vrais positifs divisés par tous les positifs.",
+        "Un faux négatif est négatif chez une personne concernée ; un vrai négatif est négatif chez une personne non concernée.",
+        "Chaque fréquence doit préciser son groupe de référence, c’est-à-dire son dénominateur."
+      ],
+      "image_mentale": "Imagine un tableau à quatre cases : concerné ou non, test positif ou négatif.",
+      "regle_ou_methode": "Compte les vrais et faux positifs, additionne-les puis calcule la proportion voulue.",
+      "exemples": [
+        "Dans une population fictive de 1 000 personnes, 100 sont concernées. Parmi elles, 90 tests sont positifs et 10 négatifs ; parmi les 900 autres, 90 sont positifs et 810 négatifs. La proportion de personnes concernées parmi les 180 tests positifs vaut 90/180 = 50 %.",
+        "Si 20 tests positifs sont tous de vrais positifs, la proportion est 20/20 = 100 % dans cet exemple."
+      ],
+      "piege": "La fiabilité d’un test chez les personnes concernées n’est pas la même proportion que celle des personnes concernées parmi les résultats positifs.",
+      "astuce_memoire": "Vrais positifs ÷ tous les positifs.",
+      "quiz": [
+        {
+          "q": "Avec 90 vrais positifs et 90 faux positifs, quelle part des positifs est réellement concernée ?",
+          "choix": [
+            "90 %",
+            "50 %",
+            "10 %"
+          ],
+          "rep": "50 %",
+          "expl": "90/(90 + 90) = 0,5."
+        },
+        {
+          "q": "Qu’est-ce qu’un faux positif ?",
+          "choix": [
+            "Un test négatif chez une personne concernée",
+            "Un test positif chez une personne concernée",
+            "Un test positif chez une personne non concernée"
+          ],
+          "rep": "Un test positif chez une personne non concernée",
+          "expl": "Le résultat est positif malgré l’absence du phénomène."
+        },
+        {
+          "q": "Pourquoi établir un tableau d’effectifs ?",
+          "choix": [
+            "Pour distinguer les groupes et les résultats",
+            "Pour rendre tous les tests parfaits",
+            "Pour supprimer la fréquence du phénomène"
+          ],
+          "rep": "Pour distinguer les groupes et les résultats",
+          "expl": "Les effectifs permettent de calculer la proportion recherchée."
+        }
+      ],
+      "id": "REV-ESC-TLE-40"
+    }
+  ]
+}

@@ -1,0 +1,973 @@
+{
+  "classe": "TLE",
+  "niveau_appli": "Lycée",
+  "age": "17-18 ans",
+  "matiere": "Espagnol LV2",
+  "code": "ES",
+  "langue": "fr",
+  "fiches": [
+    {
+      "axe": "Espace privé et espace public",
+      "titre": "Les patios de Cordoue : décrire un lieu",
+      "emoji": "🌺",
+      "en_une_phrase": "La fête des patios de Cordoue montre comment un espace d’habitation peut s’ouvrir aux visiteurs.",
+      "comprendre": "À Cordoue, en Andalousie, des habitants accueillent des visiteurs dans des patios à l’occasion de la fête des patios, inscrite au patrimoine culturel immatériel en 2012. Certains patios sont communs à plusieurs logements. Pour décrire un lieu, on distingue ser, qui présente une caractéristique, et estar, qui situe ou décrit un état.",
+      "essentiel": [
+        "Ser : être pour définir ou caractériser.",
+        "Estar situe ici un lieu ou décrit un état ; ser peut situer un événement.",
+        "En désigne notamment la localisation dans un lieu."
+      ],
+      "image_mentale": "Une cour d’habitation s’ouvre temporairement à des personnes extérieures.",
+      "regle_ou_methode": "Identifier si la phrase définit le lieu ou indique où il se trouve, puis choisir ser ou estar.",
+      "exemples": [
+        "Exemple résolu : « El patio es un espacio compartido. » : « Le patio est un espace partagé. » Es définit ici le lieu ; la caractéristique appartient à cet exemple.",
+        "Exemple corrigé : « El patio está en Córdoba. » : « Le patio se trouve à Cordoue. » Está situe le lieu."
+      ],
+      "piege": "Un patio ouvert pendant la fête n’est pas nécessairement accessible à tous toute l’année.",
+      "astuce_memoire": "Es : définir ; está : situer.",
+      "quiz": [
+        {
+          "q": "Quel mot complète « El patio … en Córdoba » : « Le patio se trouve à Cordoue » ?",
+          "choix": [
+            "es — est, pour définir",
+            "está — se trouve",
+            "son — sont, pour définir au pluriel"
+          ],
+          "rep": "está — se trouve",
+          "expl": "Pour localiser ici un lieu singulier, on utilise está ; un événement peut se situer avec ser."
+        },
+        {
+          "q": "Quelle phrase définit le patio comme un espace partagé ?",
+          "choix": [
+            "El patio está en Córdoba. — Le patio se trouve à Cordoue.",
+            "El patio tiene plantas. — Le patio a des plantes.",
+            "El patio es un espacio compartido. — Le patio est un espace partagé."
+          ],
+          "rep": "El patio es un espacio compartido. — Le patio est un espace partagé.",
+          "expl": "Es introduit ici une caractérisation."
+        },
+        {
+          "q": "Quel mot signifie « cour intérieure » dans ce contexte ?",
+          "choix": [
+            "patio — cour intérieure",
+            "calle — rue",
+            "playa — plage"
+          ],
+          "rep": "patio — cour intérieure",
+          "expl": "Un patio est une cour intérieure."
+        }
+      ],
+      "id": "REV-ES-TLE-01"
+    },
+    {
+      "axe": "Espace privé et espace public",
+      "titre": "Les patios : permission et respect",
+      "emoji": "🤝",
+      "en_une_phrase": "Poder et deber servent à exprimer une possibilité ou une règle de respect.",
+      "comprendre": "La fête des patios de Cordoue rend visibles des espaces liés à la vie domestique. Une invitation à entrer ne supprime pas la nécessité de respecter les habitants. En espagnol, poder peut exprimer la permission ; deber exprime ici une obligation ou un devoir.",
+      "essentiel": [
+        "Pueden est la forme de pouvoir à la troisième personne du pluriel.",
+        "Deben est la forme de devoir à la troisième personne du pluriel.",
+        "Après ces formes, le verbe reste à l’infinitif."
+      ],
+      "image_mentale": "Une porte ouverte invite à entrer avec l’accord des habitants.",
+      "regle_ou_methode": "Choisir le verbe selon permission ou devoir, puis ajouter un infinitif.",
+      "exemples": [
+        "Exemple résolu : « Los visitantes pueden entrar durante la fiesta. » : « Les visiteurs peuvent entrer pendant la fête. » Pueden entrar exprime ici une permission dans les patios ouverts aux visiteurs.",
+        "Exemple corrigé : « Los visitantes deben respetar a los vecinos. » : « Les visiteurs doivent respecter les habitants. » Deben respetar exprime un devoir de respect."
+      ],
+      "piege": "Ne pas confondre possibilité et obligation.",
+      "astuce_memoire": "Pueden : peuvent ; deben : doivent.",
+      "quiz": [
+        {
+          "q": "Quelle phrase exprime une permission ?",
+          "choix": [
+            "Deben entrar. — Ils ou elles doivent entrer.",
+            "No pueden entrar. — Ils ou elles ne peuvent pas entrer.",
+            "Pueden entrar. — Ils ou elles peuvent entrer."
+          ],
+          "rep": "Pueden entrar. — Ils ou elles peuvent entrer.",
+          "expl": "Pueden exprime ici la permission."
+        },
+        {
+          "q": "Quel infinitif complète « Deben … a los vecinos » : « Ils doivent respecter les habitants » ?",
+          "choix": [
+            "respetar — respecter",
+            "respetan — ils ou elles respectent",
+            "respetado — respecté"
+          ],
+          "rep": "respetar — respecter",
+          "expl": "Après deben, le verbe se met à l’infinitif."
+        },
+        {
+          "q": "Quelle forme marque une obligation au pluriel ?",
+          "choix": [
+            "pueden — ils ou elles peuvent",
+            "deben — ils ou elles doivent",
+            "quieren — ils ou elles veulent"
+          ],
+          "rep": "deben — ils ou elles doivent",
+          "expl": "Deben correspond ici à un devoir."
+        }
+      ],
+      "id": "REV-ES-TLE-02"
+    },
+    {
+      "axe": "Espace privé et espace public",
+      "titre": "La place et la vie collective",
+      "emoji": "🏛️",
+      "en_une_phrase": "On peut comparer les usages d’un espace public à l’aide de más et menos.",
+      "comprendre": "La place principale de Madrid, la Plaza Mayor, a accueilli au cours de son histoire des marchés et des événements collectifs. Elle permet d’étudier les usages successifs d’un lieu public. Pour comparer, más signifie « plus » et menos « moins ».",
+      "essentiel": [
+        "Más … que compare une quantité ou une qualité à une autre.",
+        "Menos … que exprime une quantité ou une qualité inférieure.",
+        "Une comparaison doit préciser les éléments et le critère comparés."
+      ],
+      "image_mentale": "Sur une même place, des usages collectifs changent au fil du temps.",
+      "regle_ou_methode": "Nommer les deux situations puis utiliser más ou menos selon le sens voulu.",
+      "exemples": [
+        "Exemple résolu : dans une comparaison fictive, « Hoy hay más visitantes que ayer. » : « Aujourd’hui, il y a plus de visiteurs qu’hier. » Más … que compare ici deux jours.",
+        "Exemple corrigé : « Una casa tiene menos espacio público que una plaza. » : « Une maison a moins d’espace public qu’une place. » Menos … que exprime une comparaison."
+      ],
+      "piege": "Une comparaison fictive ne fournit pas une mesure réelle du nombre de visiteurs.",
+      "astuce_memoire": "Más … que : plus … que ; menos … que : moins … que.",
+      "quiz": [
+        {
+          "q": "Quel mot exprime « plus » dans une comparaison ?",
+          "choix": [
+            "más — plus",
+            "menos — moins",
+            "nunca — jamais"
+          ],
+          "rep": "más — plus",
+          "expl": "Más indique une quantité ou un degré supérieur."
+        },
+        {
+          "q": "Quelle phrase signifie « Il y a moins de visiteurs qu’hier » ?",
+          "choix": [
+            "Hay más visitantes que ayer. — Il y a plus de visiteurs qu’hier.",
+            "Hay menos visitantes que ayer. — Il y a moins de visiteurs qu’hier.",
+            "Hay tantos visitantes como ayer. — Il y a autant de visiteurs qu’hier."
+          ],
+          "rep": "Hay menos visitantes que ayer. — Il y a moins de visiteurs qu’hier.",
+          "expl": "Menos … que exprime une quantité inférieure."
+        },
+        {
+          "q": "Quel mot introduit le second terme de « más … que » ?",
+          "choix": [
+            "porque — parce que",
+            "donde — où",
+            "que — que"
+          ],
+          "rep": "que — que",
+          "expl": "Dans cette comparaison, que introduit le second terme."
+        }
+      ],
+      "id": "REV-ES-TLE-03"
+    },
+    {
+      "axe": "Territoire et mémoire",
+      "titre": "Guernica : raconter un événement passé",
+      "emoji": "🕊️",
+      "en_une_phrase": "Le passé simple espagnol situe des faits historiques achevés.",
+      "comprendre": "La ville basque de Gernika a été bombardée en 1937 pendant la guerre d’Espagne. La même année, Pablo Picasso a réalisé le tableau Guernica, inspiré par le bombardement. Le passé simple espagnol présente un événement achevé dans une période passée.",
+      "essentiel": [
+        "Llovió signifie « il a plu » ou « il plut » : terminaison régulière en -ió pour il ou elle.",
+        "Pintó signifie « il ou elle a peint » ou « peignit ».",
+        "La date 1937 situe ces événements dans une période révolue."
+      ],
+      "image_mentale": "Une frise montre le bombardement puis la création du tableau en 1937.",
+      "regle_ou_methode": "Repérer la date passée, identifier le sujet et conjuguer le verbe au passé simple.",
+      "exemples": [
+        "Exemple résolu : « Picasso pintó Guernica en 1937. » : « Picasso a peint Guernica en 1937. » La terminaison -ó marque ici la troisième personne du singulier au passé simple.",
+        "Exemple corrigé : « El bombardeo ocurrió durante la guerra. » : « Le bombardement a eu lieu pendant la guerre. » Ocurrió situe le fait achevé dans le passé."
+      ],
+      "piege": "Le tableau est une œuvre d’art inspirée par un événement, pas une photographie documentaire.",
+      "astuce_memoire": "Date passée achevée : passé simple.",
+      "quiz": [
+        {
+          "q": "Quelle forme au passé simple complète « Picasso … el cuadro en 1937 » : « Picasso a peint le tableau en 1937 » ?",
+          "choix": [
+            "pinta — il peint",
+            "pintó — il a peint",
+            "pintará — il peindra"
+          ],
+          "rep": "pintó — il a peint",
+          "expl": "Pintó est un passé simple à la troisième personne du singulier."
+        },
+        {
+          "q": "Quel événement a inspiré Guernica ?",
+          "choix": [
+            "Une découverte fictive sur une autre planète",
+            "La construction de la station spatiale",
+            "Le bombardement de Gernika en 1937"
+          ],
+          "rep": "Le bombardement de Gernika en 1937",
+          "expl": "Le tableau répond au bombardement de la ville basque."
+        },
+        {
+          "q": "Que signifie « ocurrió » ?",
+          "choix": [
+            "il ou elle a eu lieu",
+            "il ou elle aura lieu",
+            "il ou elle est en train d’arriver"
+          ],
+          "rep": "il ou elle a eu lieu",
+          "expl": "Ocurrió est au passé simple."
+        }
+      ],
+      "id": "REV-ES-TLE-04"
+    },
+    {
+      "axe": "Territoire et mémoire",
+      "titre": "Guernica : décrire une œuvre",
+      "emoji": "🎨",
+      "en_une_phrase": "Le présent et les mots de description permettent de présenter une image puis de proposer une interprétation.",
+      "comprendre": "Guernica est une peinture de Picasso liée à la guerre d’Espagne. Elle représente des figures humaines et animales, dans une composition en noir, blanc et gris. Décrire ce que l’on voit est une étape distincte de l’interprétation des symboles.",
+      "essentiel": [
+        "En el cuadro signifie « dans le tableau ».",
+        "Hay signifie « il y a », au singulier comme au pluriel.",
+        "Puede representar signifie « peut représenter » et permet de nuancer une interprétation."
+      ],
+      "image_mentale": "D’abord observer les formes, puis proposer un sens appuyé sur elles.",
+      "regle_ou_methode": "Présenter l’œuvre, décrire un élément visible puis formuler une interprétation prudente.",
+      "exemples": [
+        "Exemple résolu : « En el cuadro hay figuras humanas y animales. » : « Dans le tableau, il y a des figures humaines et animales. » Hay introduit ce qui est visible.",
+        "Exemple corrigé : « La escena puede representar el sufrimiento. » : « La scène peut représenter la souffrance. » Puede representar indique une interprétation possible."
+      ],
+      "piege": "Une interprétation n’est pas une citation de l’intention de l’artiste.",
+      "astuce_memoire": "Hay : il y a ; puede representar : peut représenter.",
+      "quiz": [
+        {
+          "q": "Quel mot signifie « il y a » pour présenter des figures ?",
+          "choix": [
+            "soy — je suis",
+            "tengo — j’ai",
+            "hay — il y a"
+          ],
+          "rep": "hay — il y a",
+          "expl": "Hay introduit l’existence ou la présence."
+        },
+        {
+          "q": "Quelle phrase formule une interprétation prudente ?",
+          "choix": [
+            "La escena puede representar el miedo. — La scène peut représenter la peur.",
+            "La escena tiene colores. — La scène a des couleurs.",
+            "La obra está en un museo. — L’œuvre se trouve dans un musée."
+          ],
+          "rep": "La escena puede representar el miedo. — La scène peut représenter la peur.",
+          "expl": "Puede representar marque une interprétation possible."
+        },
+        {
+          "q": "Que faire avant d’interpréter une image ?",
+          "choix": [
+            "Supposer que chaque détail a un seul sens certain",
+            "Décrire des éléments observables",
+            "Confondre la toile avec une photographie"
+          ],
+          "rep": "Décrire des éléments observables",
+          "expl": "La description permet de justifier ensuite l’interprétation."
+        }
+      ],
+      "id": "REV-ES-TLE-05"
+    },
+    {
+      "axe": "Territoire et mémoire",
+      "titre": "Argentine : lieux de mémoire",
+      "emoji": "🕯️",
+      "en_une_phrase": "Les connecteurs de but permettent d’expliquer la fonction d’un lieu de mémoire.",
+      "comprendre": "À Buenos Aires, le site de mémoire de l’ancienne ESMA rappelle notamment les crimes commis dans un centre clandestin de détention pendant la dictature civilo-militaire argentine de 1976 à 1983. Les témoignages et documents contribuent à faire connaître cette histoire. Para suivi d’un infinitif exprime un but.",
+      "essentiel": [
+        "Para + infinitif indique « pour » ou « afin de ».",
+        "Porque introduit une raison : « parce que ».",
+        "La mémoire s’appuie sur des témoignages et des documents à contextualiser."
+      ],
+      "image_mentale": "Un lieu conserve et transmet une mémoire liée à son histoire.",
+      "regle_ou_methode": "Identifier l’action puis ajouter para et un infinitif pour expliquer l’objectif.",
+      "exemples": [
+        "Exemple résolu : « El museo conserva documentos para transmitir la memoria. » : « Le musée conserve des documents pour transmettre la mémoire. » Para transmitir exprime un objectif.",
+        "Exemple corrigé : « Los testimonios son importantes porque cuentan experiencias. » : « Les témoignages sont importants parce qu’ils racontent des expériences. » Porque introduit une raison."
+      ],
+      "piege": "Un objectif de transmission ne signifie pas que tous les visiteurs en retirent la même interprétation.",
+      "astuce_memoire": "Para + infinitif : pour ; porque : parce que.",
+      "quiz": [
+        {
+          "q": "Quel mot introduit un but devant un infinitif ?",
+          "choix": [
+            "para — pour",
+            "porque — parce que",
+            "pero — mais"
+          ],
+          "rep": "para — pour",
+          "expl": "Para suivi d’un infinitif exprime ici le but."
+        },
+        {
+          "q": "Quel mot introduit une raison ?",
+          "choix": [
+            "para — pour",
+            "porque — parce que",
+            "aunque — bien que"
+          ],
+          "rep": "porque — parce que",
+          "expl": "Porque introduit une explication."
+        },
+        {
+          "q": "La dictature évoquée en Argentine correspond à quelle période ?",
+          "choix": [
+            "1492–1493",
+            "1914–1918",
+            "1976–1983"
+          ],
+          "rep": "1976–1983",
+          "expl": "Le centre évoqué a fonctionné sous la dictature de 1976 à 1983."
+        }
+      ],
+      "id": "REV-ES-TLE-06"
+    },
+    {
+      "axe": "Fictions et réalités",
+      "titre": "Macondo : décrire un univers fictif",
+      "emoji": "📖",
+      "en_une_phrase": "L’imparfait permet de présenter un décor ou une situation habituelle dans un récit.",
+      "comprendre": "Dans Cent ans de solitude, roman publié en 1967 par le Colombien Gabriel García Márquez, Macondo est un lieu fictif. L’œuvre mêle des éléments ordinaires et extraordinaires et est souvent rapprochée du réalisme magique. Les phrases ci-dessous sont inventées pour travailler la langue ; elles ne sont pas des citations.",
+      "essentiel": [
+        "L’imparfait décrit une situation passée ou une habitude.",
+        "Era signifie « était » ; había signifie « il y avait ».",
+        "Le décor fictif peut évoquer des réalités historiques sans être un document historique."
+      ],
+      "image_mentale": "Un décor imaginaire se dessine autour d’un village.",
+      "regle_ou_methode": "Pour décrire le cadre d’un récit passé, utiliser par exemple era ou había.",
+      "exemples": [
+        "Exemple résolu : « Macondo era un pueblo imaginario. » : « Macondo était un village imaginaire. » Era décrit le lieu dans le cadre du récit.",
+        "Exemple corrigé : « En el pueblo había muchas casas. » : « Dans le village, il y avait beaucoup de maisons. » Había présente un décor fictif, sans citer le roman."
+      ],
+      "piege": "Une phrase inventée pour s’exercer ne doit pas être présentée comme un extrait authentique.",
+      "astuce_memoire": "Era : était ; había : il y avait.",
+      "quiz": [
+        {
+          "q": "Quelle forme signifie « il y avait » ?",
+          "choix": [
+            "hay — il y a",
+            "había — il y avait",
+            "habrá — il y aura"
+          ],
+          "rep": "había — il y avait",
+          "expl": "Había est l’imparfait impersonnel."
+        },
+        {
+          "q": "Comment présenter les phrases inventées de cette fiche ?",
+          "choix": [
+            "Comme des citations authentifiées du roman",
+            "Comme des archives historiques",
+            "Comme des exemples créés pour l’exercice"
+          ],
+          "rep": "Comme des exemples créés pour l’exercice",
+          "expl": "Les phrases ne reproduisent pas le texte du roman."
+        },
+        {
+          "q": "Que désigne Macondo dans le roman ?",
+          "choix": [
+            "Un village fictif",
+            "Une capitale contemporaine officielle",
+            "Un document administratif"
+          ],
+          "rep": "Un village fictif",
+          "expl": "Macondo est un lieu littéraire imaginaire."
+        }
+      ],
+      "id": "REV-ES-TLE-07"
+    },
+    {
+      "axe": "Fictions et réalités",
+      "titre": "Don Quichotte : réalité et apparence",
+      "emoji": "🐎",
+      "en_une_phrase": "Les verbes de perception aident à distinguer ce qu’un personnage croit voir de ce que montre le récit.",
+      "comprendre": "Dans Don Quichotte de Miguel de Cervantes, publié en deux parties en 1605 et 1615, le personnage prend notamment des moulins à vent pour des géants. Cette scène joue sur l’écart entre perception et réalité dans la fiction. Creer que signifie « croire que » et parecer signifie « sembler ».",
+      "essentiel": [
+        "Cree que signifie « il ou elle croit que ».",
+        "Parece signifie « il ou elle semble » ou « cela semble ».",
+        "La croyance d’un personnage ne devient pas nécessairement un fait du récit."
+      ],
+      "image_mentale": "Le personnage imagine des géants là où le récit présente des moulins.",
+      "regle_ou_methode": "Indiquer d’abord la perception du personnage puis le fait présenté par le récit.",
+      "exemples": [
+        "Exemple résolu : « El personaje cree que ve gigantes. » : « Le personnage croit voir des géants. » Cree que marque son point de vue.",
+        "Exemple corrigé : « En realidad, son molinos. » : « En réalité, ce sont des moulins. » En realidad introduit ici le contraste avec la croyance du personnage."
+      ],
+      "piege": "Le contraste appartient à une scène de fiction ; il ne faut pas confondre opinion et fait observé.",
+      "astuce_memoire": "Cree que : il croit que ; en realidad : en réalité.",
+      "quiz": [
+        {
+          "q": "Quelle expression signifie « il croit que » ?",
+          "choix": [
+            "sabe que — il ou elle sait que",
+            "olvida que — il ou elle oublie que",
+            "cree que — il ou elle croit que"
+          ],
+          "rep": "cree que — il ou elle croit que",
+          "expl": "Cree que introduit une croyance."
+        },
+        {
+          "q": "Dans la scène, que le personnage prend-il pour des géants ?",
+          "choix": [
+            "Des moulins à vent",
+            "Des trains",
+            "Des immeubles modernes"
+          ],
+          "rep": "Des moulins à vent",
+          "expl": "Le récit oppose les moulins aux géants imaginés."
+        },
+        {
+          "q": "Quelle expression introduit ici le contraste avec une croyance ?",
+          "choix": [
+            "por ejemplo — par exemple",
+            "en realidad — en réalité",
+            "mañana — demain"
+          ],
+          "rep": "en realidad — en réalité",
+          "expl": "En realidad permet de rétablir le fait décrit."
+        }
+      ],
+      "id": "REV-ES-TLE-08"
+    },
+    {
+      "axe": "Fictions et réalités",
+      "titre": "Raconter et donner son avis",
+      "emoji": "💬",
+      "en_une_phrase": "Les connecteurs relient les étapes d’un récit et distinguent le résumé de l’opinion personnelle.",
+      "comprendre": "Dans Don Quichotte, le héros lit des romans de chevalerie et interprète ses aventures à travers cet imaginaire. Pour présenter une scène, on peut utiliser primero et después. Pour introduire une interprétation personnelle, on peut dire en mi opinión.",
+      "essentiel": [
+        "Primero signifie « d’abord » ; después signifie « ensuite ».",
+        "En mi opinión signifie « à mon avis ».",
+        "Une opinion sur une fiction se justifie par un élément précis du récit."
+      ],
+      "image_mentale": "Une frise ordonne les actions avant une bulle consacrée à l’avis du lecteur.",
+      "regle_ou_methode": "Résumer un fait, ajouter la suite puis annoncer son avis comme une interprétation.",
+      "exemples": [
+        "Exemple résolu : « Primero lee novelas; después busca aventuras. » : « D’abord, il lit des romans ; ensuite, il cherche des aventures. » Primero et después organisent le résumé.",
+        "Exemple corrigé : « En mi opinión, la escena es cómica porque mezcla imaginación y realidad. » : « À mon avis, la scène est comique parce qu’elle mélange imagination et réalité. » En mi opinión annonce le jugement personnel."
+      ],
+      "piege": "Un jugement personnel doit être présenté comme tel et justifié.",
+      "astuce_memoire": "Primero : d’abord ; después : ensuite ; en mi opinión : à mon avis.",
+      "quiz": [
+        {
+          "q": "Quel mot signifie « ensuite » ?",
+          "choix": [
+            "después — ensuite",
+            "primero — d’abord",
+            "antes — avant"
+          ],
+          "rep": "después — ensuite",
+          "expl": "Después marque une étape ultérieure."
+        },
+        {
+          "q": "Quelle expression annonce un avis personnel ?",
+          "choix": [
+            "en 1605 — en 1605",
+            "en mi opinión — à mon avis",
+            "en el libro — dans le livre"
+          ],
+          "rep": "en mi opinión — à mon avis",
+          "expl": "En mi opinión signale le point de vue du locuteur."
+        },
+        {
+          "q": "Comment rendre un avis sur une scène plus solide ?",
+          "choix": [
+            "Le présenter comme une vérité incontestable",
+            "Éviter toute référence à la scène",
+            "Le justifier par un élément du récit"
+          ],
+          "rep": "Le justifier par un élément du récit",
+          "expl": "Un exemple précis appuie une interprétation."
+        }
+      ],
+      "id": "REV-ES-TLE-09"
+    },
+    {
+      "axe": "Enjeux et formes de la communication",
+      "titre": "Expliquer une idée avec la cause et la conséquence",
+      "emoji": "💬",
+      "en_une_phrase": "Les connecteurs permettent de relier clairement une idée à sa justification.",
+      "comprendre": "« Porque » signifie « parce que » et introduit généralement une cause. « Por eso » signifie « c’est pourquoi » et introduit une conséquence. On peut utiliser ces mots pour expliquer l’intérêt de communications dans plusieurs langues au Mexique, où l’espagnol coexiste avec des langues autochtones.",
+      "essentiel": [
+        "« porque » : « parce que » ; il introduit une cause.",
+        "« por eso » : « c’est pourquoi » ; il introduit une conséquence.",
+        "Le Mexique compte de nombreuses langues autochtones.",
+        "L’ordre des idées aide à comprendre le raisonnement."
+      ],
+      "image_mentale": "Une cause mène à une conséquence, comme une flèche entre deux idées.",
+      "regle_ou_methode": "Repérer le fait expliqué, puis le mot qui introduit la cause ou la conséquence.",
+      "exemples": [
+        "On veut expliquer pourquoi un service propose plusieurs langues : « La oficina ofrece información en varias lenguas porque los habitantes hablan lenguas diferentes. » — « Le service propose des informations dans plusieurs langues parce que les habitants parlent des langues différentes. » La seconde proposition donne la cause.",
+        "« Hay varias lenguas en la región; por eso, traducir la información puede ser útil. » — « Il existe plusieurs langues dans la région ; c’est pourquoi traduire les informations peut être utile. » La seconde proposition présente une conséquence."
+      ],
+      "piege": "Ne pas confondre le connecteur de cause « porque » (« parce que ») et le connecteur de conséquence « por eso » (« c’est pourquoi »).",
+      "astuce_memoire": "Cause : parce que ; conséquence : c’est pourquoi.",
+      "quiz": [
+        {
+          "q": "Dans « Estudiamos el mensaje porque queremos entenderlo. » — « Nous étudions le message parce que nous voulons le comprendre », que présente la seconde proposition ?",
+          "choix": [
+            "La conséquence",
+            "La cause",
+            "Une date"
+          ],
+          "rep": "La cause",
+          "expl": "« porque » (« parce que ») introduit ici la cause."
+        },
+        {
+          "q": "Que signifie « por eso » ?",
+          "choix": [
+            "Parce que",
+            "Avant-hier",
+            "C’est pourquoi"
+          ],
+          "rep": "C’est pourquoi",
+          "expl": "Cette expression introduit une conséquence."
+        },
+        {
+          "q": "Quelle affirmation est correcte à propos du Mexique ?",
+          "choix": [
+            "Des langues autochtones y coexistent avec l’espagnol",
+            "Une seule langue y est parlée",
+            "Les langues autochtones y ont toutes disparu"
+          ],
+          "rep": "Des langues autochtones y coexistent avec l’espagnol",
+          "expl": "Le Mexique présente une diversité linguistique importante."
+        }
+      ],
+      "id": "REV-ES-TLE-10"
+    },
+    {
+      "axe": "Enjeux et formes de la communication",
+      "titre": "Comprendre une affiche : intention et public",
+      "emoji": "🪧",
+      "en_une_phrase": "Une affiche associe mots et images pour informer ou convaincre un public.",
+      "comprendre": "Dans une campagne d’information, la couleur, le slogan et les images orientent la lecture. Pour analyser un document en espagnol, on identifie son émetteur, son public et son objectif. Une affiche fictive sur les économies d’eau à Madrid permet de s’entraîner sans la confondre avec une campagne réelle.",
+      "essentiel": [
+        "Un slogan est un message court destiné à être retenu.",
+        "Une image peut attirer l’attention ou illustrer une idée.",
+        "Le public visé influence le choix des mots.",
+        "Une intention de convaincre ne prouve pas l’efficacité du message."
+      ],
+      "image_mentale": "Une affiche combine image, texte et public visé.",
+      "regle_ou_methode": "Décrire le document, identifier son objectif puis justifier son interprétation par un indice.",
+      "exemples": [
+        "Sur une affiche fictive à Madrid figure : « Cada gota cuenta. » — « Chaque goutte compte. » Cette formule courte cherche à sensibiliser à l’économie d’eau ; elle ne prouve pas que la consommation a déjà baissé.",
+        "« La imagen muestra un grifo cerrado. » — « L’image montre un robinet fermé. » Cet élément visuel peut illustrer le geste proposé par l’affiche."
+      ],
+      "piege": "Distinguer l’intention d’une campagne et ses effets réellement mesurés.",
+      "astuce_memoire": "Texte + image + public + objectif.",
+      "quiz": [
+        {
+          "q": "Dans « Cada gota cuenta. » — « Chaque goutte compte », quelle intention est plausible pour une affiche sur l’eau ?",
+          "choix": [
+            "Annoncer une date électorale",
+            "Décrire un plan de métro",
+            "Encourager l’économie d’eau"
+          ],
+          "rep": "Encourager l’économie d’eau",
+          "expl": "Dans le contexte donné, la formule encourage à économiser l’eau."
+        },
+        {
+          "q": "Que signifie « La imagen muestra un grifo cerrado » — « L’image montre un robinet fermé » ?",
+          "choix": [
+            "Elle décrit un élément visuel",
+            "Elle démontre une baisse mesurée de consommation",
+            "Elle donne le prix de l’eau"
+          ],
+          "rep": "Elle décrit un élément visuel",
+          "expl": "La phrase décrit ce qui apparaît sur l’image."
+        },
+        {
+          "q": "Un slogan convaincant démontre-t-il à lui seul son efficacité réelle ?",
+          "choix": [
+            "Oui, dès qu’il est court",
+            "Non, il faut aussi des données sur ses effets",
+            "Oui, s’il comporte une image"
+          ],
+          "rep": "Non, il faut aussi des données sur ses effets",
+          "expl": "L’intention d’un message et son effet observé sont distincts."
+        }
+      ],
+      "id": "REV-ES-TLE-11"
+    },
+    {
+      "axe": "Enjeux et formes de la communication",
+      "titre": "Traduire selon le contexte",
+      "emoji": "🗣️",
+      "en_une_phrase": "Une traduction doit tenir compte du contexte et pas seulement de la ressemblance entre les mots.",
+      "comprendre": "Certains mots espagnols ressemblent à des mots français tout en ayant un sens différent. « Embarazada » signifie « enceinte » et non « embarrassée » ; « actualmente » signifie « actuellement ». Dans les échanges entre pays hispanophones et francophones, vérifier les faux amis limite les malentendus.",
+      "essentiel": [
+        "« embarazada » : « enceinte ».",
+        "« avergonzada » peut signifier « honteuse » ou « gênée » selon le contexte.",
+        "« actualmente » : « actuellement ».",
+        "Une bonne traduction respecte la situation et le sens global."
+      ],
+      "image_mentale": "Deux mots se ressemblent, mais leurs sens ne coïncident pas toujours.",
+      "regle_ou_methode": "Chercher le sens du mot dans la phrase et vérifier sa cohérence avec le contexte.",
+      "exemples": [
+        "Dans un dialogue fictif, « Está embarazada. » — « Elle est enceinte. » On ne traduit pas par « elle est embarrassée » malgré la ressemblance des mots.",
+        "« Actualmente vive en Bogotá. » — « Elle vit actuellement à Bogota. » Le mot « actualmente » indique ici la période présente."
+      ],
+      "piege": "La ressemblance entre deux mots ne garantit pas qu’ils ont le même sens.",
+      "astuce_memoire": "Faux amis : vérifier le sens, puis traduire la phrase.",
+      "quiz": [
+        {
+          "q": "Que signifie « Está embarazada » — « Elle est enceinte » ?",
+          "choix": [
+            "Elle attend un enfant",
+            "Elle se sent nécessairement gênée",
+            "Elle vient d’arriver en bateau"
+          ],
+          "rep": "Elle attend un enfant",
+          "expl": "« embarazada » signifie « enceinte »."
+        },
+        {
+          "q": "Que signifie « Actualmente vive en Bogotá » — « Elle vit actuellement à Bogota » ?",
+          "choix": [
+            "Elle y vivait nécessairement il y a dix ans",
+            "Elle y vit au moment présent",
+            "Elle prévoit obligatoirement d’y partir demain"
+          ],
+          "rep": "Elle y vit au moment présent",
+          "expl": "« actualmente » situe la situation dans le présent."
+        },
+        {
+          "q": "Quelle méthode aide à éviter un faux ami ?",
+          "choix": [
+            "Traduire systématiquement par le mot français le plus ressemblant",
+            "Supprimer tous les mots inconnus",
+            "Vérifier le sens du mot dans son contexte"
+          ],
+          "rep": "Vérifier le sens du mot dans son contexte",
+          "expl": "Le sens et le contexte priment sur la ressemblance."
+        }
+      ],
+      "id": "REV-ES-TLE-12"
+    },
+    {
+      "axe": "Citoyenneté et mondes virtuels",
+      "titre": "Vérifier une information : conseil et obligation",
+      "emoji": "🔎",
+      "en_une_phrase": "Exprimer un conseil aide à expliquer comment vérifier une information avant de la partager.",
+      "comprendre": "« Hay que » signifie « il faut » et exprime une obligation générale ; « deber » peut exprimer un devoir ou un conseil selon le contexte. Dans les espaces numériques hispanophones, un contenu très partagé peut malgré tout être trompeur. La source, la date et d’autres documents permettent de le replacer dans son contexte.",
+      "essentiel": [
+        "« hay que » : « il faut », suivi d’un infinitif.",
+        "« debes » : « tu dois » ou « tu devrais » selon le contexte.",
+        "Une image peut être ancienne ou sortie de son contexte.",
+        "Le nombre de partages mesure la diffusion, pas la véracité."
+      ],
+      "image_mentale": "Avant de partager, on cherche la source et la date.",
+      "regle_ou_methode": "Repérer l’expression d’obligation, puis expliquer quelle action est demandée.",
+      "exemples": [
+        "On veut formuler une règle générale : « Hay que comprobar la fuente antes de compartir una noticia. » — « Il faut vérifier la source avant de partager une information. » « Hay que » est suivi de l’infinitif « comprobar » (« vérifier »).",
+        "« Debes mirar la fecha de la foto. » — « Tu dois regarder la date de la photo. » La phrase recommande une vérification précise, sans affirmer que la photo est fausse."
+      ],
+      "piege": "Une publication populaire n’est pas nécessairement une publication fiable.",
+      "astuce_memoire": "Source, date, contexte, puis partage.",
+      "quiz": [
+        {
+          "q": "Dans « Hay que comprobar la fuente. » — « Il faut vérifier la source », que signifie « hay que » ?",
+          "choix": [
+            "Une action passée certaine",
+            "Une obligation générale",
+            "Une impossibilité"
+          ],
+          "rep": "Une obligation générale",
+          "expl": "« hay que » exprime ici une obligation générale."
+        },
+        {
+          "q": "Dans « Debes mirar la fecha. » — « Tu dois regarder la date », quelle action est demandée ?",
+          "choix": [
+            "Changer la date sans vérifier",
+            "Supprimer la source",
+            "Consulter la date"
+          ],
+          "rep": "Consulter la date",
+          "expl": "Le conseil porte sur la vérification de la date."
+        },
+        {
+          "q": "Quel indicateur mesure directement la diffusion d’un message ?",
+          "choix": [
+            "Son nombre de partages",
+            "La date de création du document original",
+            "L’identité de la source citée"
+          ],
+          "rep": "Son nombre de partages",
+          "expl": "Le nombre de partages renseigne sur la circulation du message."
+        }
+      ],
+      "id": "REV-ES-TLE-13"
+    },
+    {
+      "axe": "Citoyenneté et mondes virtuels",
+      "titre": "Participer en ligne : futur et condition",
+      "emoji": "📱",
+      "en_une_phrase": "Une phrase conditionnelle permet d’exprimer une action possible et sa conséquence future.",
+      "comprendre": "Pour une condition envisagée comme possible, l’espagnol utilise souvent « si » (« si ») avec le présent, puis le futur dans la proposition principale. Des associations en Espagne ou en Amérique latine peuvent utiliser des outils numériques pour organiser des initiatives. Une participation en ligne ne remplace pas nécessairement toutes les autres formes d’action.",
+      "essentiel": [
+        "« si » introduit la condition.",
+        "Dans ce modèle : présent après « si », futur dans la principale.",
+        "Le futur espagnol peut exprimer une conséquence envisagée.",
+        "Une mobilisation peut combiner actions en ligne et sur place."
+      ],
+      "image_mentale": "Une condition réalisable ouvre sur une action future.",
+      "regle_ou_methode": "Identifier la condition au présent et la conséquence au futur, puis traduire l’ensemble.",
+      "exemples": [
+        "Une association fictive au Chili organise une collecte : « Si participamos, ayudaremos al barrio. » — « Si nous participons, nous aiderons le quartier. » « participamos » est au présent ; « ayudaremos » est au futur.",
+        "« Si compartes la invitación, más personas podrán conocer el proyecto. » — « Si tu partages l’invitation, davantage de personnes pourront découvrir le projet. » La conséquence envisagée dépend de la condition."
+      ],
+      "piege": "Dans ce modèle, ne pas employer le futur immédiatement après « si ».",
+      "astuce_memoire": "Si + présent → futur dans la principale.",
+      "quiz": [
+        {
+          "q": "Dans « Si participamos, ayudaremos al barrio. » — « Si nous participons, nous aiderons le quartier », quelle partie indique la condition ?",
+          "choix": [
+            "L’aide au quartier",
+            "La date de création de l’association",
+            "La participation"
+          ],
+          "rep": "La participation",
+          "expl": "La proposition introduite par « si » présente la condition."
+        },
+        {
+          "q": "Quelle valeur a « ayudaremos » dans la phrase traduite « nous aiderons » ?",
+          "choix": [
+            "Un futur",
+            "Un passé terminé",
+            "Un impératif"
+          ],
+          "rep": "Un futur",
+          "expl": "La terminaison exprime le futur à la première personne du pluriel."
+        },
+        {
+          "q": "Une mobilisation citoyenne peut-elle combiner numérique et actions sur place ?",
+          "choix": [
+            "Non, une action en ligne interdit toute rencontre",
+            "Oui, les deux formes peuvent se compléter",
+            "Non, les initiatives citoyennes sont toujours uniquement virtuelles"
+          ],
+          "rep": "Oui, les deux formes peuvent se compléter",
+          "expl": "Les moyens numériques peuvent accompagner des actions de terrain."
+        }
+      ],
+      "id": "REV-ES-TLE-14"
+    },
+    {
+      "axe": "Citoyenneté et mondes virtuels",
+      "titre": "Apprendre à distance et exprimer une limite",
+      "emoji": "💻",
+      "en_une_phrase": "Le numérique facilite certains apprentissages, mais leur accès dépend aussi des conditions matérielles.",
+      "comprendre": "« Pero » signifie « mais » et introduit une opposition ; « también » signifie « aussi ». Dans certaines zones rurales d’Espagne et d’Amérique latine, la qualité de la connexion ou l’accès aux équipements peut limiter les possibilités d’apprentissage à distance. Il faut distinguer l’existence d’un outil et son accessibilité réelle.",
+      "essentiel": [
+        "« pero » : « mais ».",
+        "« también » : « aussi ».",
+        "Une connexion et des équipements peuvent être nécessaires.",
+        "Les situations diffèrent selon les territoires et les personnes."
+      ],
+      "image_mentale": "Une porte numérique existe, mais tout le monde ne dispose pas de la même clé pour l’ouvrir.",
+      "regle_ou_methode": "Identifier l’avantage présenté, puis la limite introduite par l’opposition.",
+      "exemples": [
+        "Une élève fictive d’une zone rurale en Espagne explique : « Puedo estudiar en línea, pero mi conexión es lenta. » — « Je peux étudier en ligne, mais ma connexion est lente. » La première proposition présente une possibilité ; la seconde indique une limite.",
+        "« La biblioteca también ofrece acceso a internet. » — « La bibliothèque propose aussi un accès à internet. » L’ajout d’une solution ne signifie pas qu’elle répond à tous les besoins."
+      ],
+      "piege": "Un accès numérique disponible ne signifie pas que tous peuvent l’utiliser dans les mêmes conditions.",
+      "astuce_memoire": "Avantage, puis limite avec « pero » (« mais »).",
+      "quiz": [
+        {
+          "q": "Dans « Puedo estudiar en línea, pero mi conexión es lenta. » — « Je peux étudier en ligne, mais ma connexion est lente », quel mot introduit une limite ?",
+          "choix": [
+            "« pero » : « mais »",
+            "« puedo » : « je peux »",
+            "« mi » : « mon ou ma »"
+          ],
+          "rep": "« pero » : « mais »",
+          "expl": "« pero » introduit ici l’opposition."
+        },
+        {
+          "q": "Que signifie « también » ?",
+          "choix": [
+            "Jamais",
+            "Aussi",
+            "Pourtant nécessairement"
+          ],
+          "rep": "Aussi",
+          "expl": "« también » ajoute un élément."
+        },
+        {
+          "q": "Quel facteur peut limiter l’apprentissage à distance ?",
+          "choix": [
+            "La seule existence d’une bibliothèque",
+            "Le fait d’apprendre une langue",
+            "Une connexion insuffisante ou l’absence d’équipement"
+          ],
+          "rep": "Une connexion insuffisante ou l’absence d’équipement",
+          "expl": "La connexion et les équipements influencent l’accès aux ressources."
+        }
+      ],
+      "id": "REV-ES-TLE-15"
+    },
+    {
+      "axe": "La richesse des métissages dans le monde hispanique",
+      "titre": "Des mots voyagent : le nahuatl et l’espagnol",
+      "emoji": "🥑",
+      "en_une_phrase": "Des contacts historiques entre langues ont enrichi le vocabulaire espagnol.",
+      "comprendre": "Au Mexique, l’espagnol coexiste avec de nombreuses langues autochtones, dont le nahuatl. Certains mots espagnols viennent du nahuatl ; « aguacate » (« avocat », le fruit) en est un exemple. Les emprunts linguistiques racontent des échanges historiques, sans effacer les rapports de domination liés à la conquête.",
+      "essentiel": [
+        "Le nahuatl est une langue autochtone du Mexique.",
+        "« aguacate » signifie « avocat » au sens du fruit.",
+        "Ce mot espagnol provient d’un mot nahuatl.",
+        "Les échanges culturels ont aussi eu lieu dans un contexte de colonisation."
+      ],
+      "image_mentale": "Un mot passe d’une langue à une autre et change parfois de forme.",
+      "regle_ou_methode": "Identifier la langue d’origine du mot, son sens actuel et le contexte historique de l’emprunt.",
+      "exemples": [
+        "On lit « El aguacate es una fruta. » — « L’avocat est un fruit. » Le mot espagnol « aguacate » (« avocat ») vient du nahuatl : c’est un emprunt linguistique.",
+        "« En México se hablan español y lenguas indígenas. » — « Au Mexique, on parle espagnol et des langues autochtones. » Cette diversité existe aujourd’hui ; elle n’appartient pas seulement au passé."
+      ],
+      "piege": "Ne pas confondre « avocat » le fruit avec la profession juridique.",
+      "astuce_memoire": "Un mot, une origine, une histoire de contacts.",
+      "quiz": [
+        {
+          "q": "Que signifie « aguacate » dans « El aguacate es una fruta » — « L’avocat est un fruit » ?",
+          "choix": [
+            "Un avocat au tribunal",
+            "L’avocat, le fruit",
+            "Une orange"
+          ],
+          "rep": "L’avocat, le fruit",
+          "expl": "Ici, « aguacate » désigne le fruit."
+        },
+        {
+          "q": "De quelle langue provient le mot espagnol « aguacate » (« avocat », le fruit) ?",
+          "choix": [
+            "Du japonais",
+            "Du breton",
+            "Du nahuatl"
+          ],
+          "rep": "Du nahuatl",
+          "expl": "Le mot est issu du nahuatl."
+        },
+        {
+          "q": "Les langues autochtones du Mexique appartiennent-elles uniquement au passé ?",
+          "choix": [
+            "Non, elles sont encore parlées",
+            "Oui, aucune ne possède de locuteurs",
+            "Oui, elles ne sont connues que par des dictionnaires"
+          ],
+          "rep": "Non, elles sont encore parlées",
+          "expl": "Des langues autochtones sont parlées au Mexique aujourd’hui."
+        }
+      ],
+      "id": "REV-ES-TLE-16"
+    },
+    {
+      "axe": "La richesse des métissages dans le monde hispanique",
+      "titre": "Flamenco : musique et héritages culturels",
+      "emoji": "🎶",
+      "en_une_phrase": "Le flamenco est un art vivant ancré en Andalousie et nourri de plusieurs héritages.",
+      "comprendre": "Le flamenco associe notamment chant, musique et danse. Il est particulièrement lié à l’Andalousie et possède aussi des racines en Estrémadure et en Murcie. Les communautés gitanes ont joué un rôle essentiel dans son évolution ; il ne se réduit pas à une seule origine ni à une pratique figée.",
+      "essentiel": [
+        "L’Andalousie est un foyer majeur du flamenco.",
+        "Le chant, la musique et la danse peuvent s’y associer.",
+        "Les communautés gitanes ont joué un rôle essentiel dans son développement.",
+        "Le flamenco est un patrimoine vivant, transmis et transformé."
+      ],
+      "image_mentale": "Des voix, des gestes et des rythmes composent un art vivant.",
+      "regle_ou_methode": "Identifier le lieu, les formes artistiques et les communautés qui participent à la transmission.",
+      "exemples": [
+        "On décrit un spectacle : « El flamenco reúne canto y baile. » — « Le flamenco réunit le chant et la danse. » Ces deux éléments peuvent se combiner avec la musique.",
+        "« En Andalucía, muchas personas transmiten el flamenco. » — « En Andalousie, de nombreuses personnes transmettent le flamenco. » Cette phrase souligne une pratique vivante, sans supposer que toute la population la pratique."
+      ],
+      "piege": "Le flamenco n’est pas seulement une danse : le chant et la musique en sont aussi des composantes.",
+      "astuce_memoire": "Andalousie, chant, danse, transmission.",
+      "quiz": [
+        {
+          "q": "Quelle région est un foyer majeur du flamenco ?",
+          "choix": [
+            "La Bretagne",
+            "La Patagonie",
+            "L’Andalousie"
+          ],
+          "rep": "L’Andalousie",
+          "expl": "L’Andalousie est un foyer majeur de cet art."
+        },
+        {
+          "q": "Dans « El flamenco reúne canto y baile. » — « Le flamenco réunit le chant et la danse », quels arts sont mentionnés ?",
+          "choix": [
+            "Le chant et la danse",
+            "La peinture et la sculpture",
+            "Le cinéma et la photographie"
+          ],
+          "rep": "Le chant et la danse",
+          "expl": "« canto » et « baile » désignent le chant et la danse."
+        },
+        {
+          "q": "Quelle communauté a joué un rôle essentiel dans l’évolution du flamenco ?",
+          "choix": [
+            "Les seules communautés vikings",
+            "Les communautés gitanes",
+            "Les seuls habitants du Québec"
+          ],
+          "rep": "Les communautés gitanes",
+          "expl": "Les communautés gitanes ont joué un rôle essentiel dans son histoire."
+        }
+      ],
+      "id": "REV-ES-TLE-17"
+    },
+    {
+      "axe": "La richesse des métissages dans le monde hispanique",
+      "titre": "Fêtes des morts et traditions au Mexique",
+      "emoji": "🕯️",
+      "en_une_phrase": "Les fêtes mexicaines dédiées aux morts expriment des traditions diverses et évolutives.",
+      "comprendre": "Au Mexique, des communautés célèbrent les défunts avec des pratiques qui varient selon les régions et les familles. Les fêtes associent, selon les lieux, des traditions autochtones et des éléments du calendrier chrétien : on parle de syncrétisme pour désigner certains de ces rapprochements. Les fêtes autochtones dédiées aux morts ont été inscrites au patrimoine culturel immatériel de l’humanité en 2008.",
+      "essentiel": [
+        "Les pratiques varient selon les communautés et les régions.",
+        "Les fêtes honorent notamment les proches décédés.",
+        "Des influences autochtones et chrétiennes peuvent se rencontrer.",
+        "Le syncrétisme ne signifie pas que toutes les pratiques sont identiques."
+      ],
+      "image_mentale": "Des traditions différentes se rencontrent et se transmettent selon des formes locales.",
+      "regle_ou_methode": "Identifier les éléments culturels présents sans supposer que toutes les familles célèbrent de la même manière.",
+      "exemples": [
+        "Pour décrire une pratique possible : « Algunas familias preparan una ofrenda para recordar a sus muertos. » — « Certaines familles préparent une offrande pour se souvenir de leurs défunts. » « Algunas » (« certaines ») évite de généraliser à toutes les familles.",
+        "« Las tradiciones cambian según la región. » — « Les traditions changent selon la région. » Cette phrase rappelle que les pratiques ne sont pas uniformes."
+      ],
+      "piege": "Ne pas présenter une fête vivante comme une pratique identique dans tous les foyers mexicains.",
+      "astuce_memoire": "Mémoire des défunts, diversité locale et transmission.",
+      "quiz": [
+        {
+          "q": "Dans « Algunas familias preparan una ofrenda. » — « Certaines familles préparent une offrande », que précise « algunas » ?",
+          "choix": [
+            "La phrase concerne certaines familles, pas nécessairement toutes",
+            "Elle concerne obligatoirement chaque famille",
+            "Elle indique une date"
+          ],
+          "rep": "La phrase concerne certaines familles, pas nécessairement toutes",
+          "expl": "« algunas » signifie « certaines »."
+        },
+        {
+          "q": "Que peut désigner le syncrétisme dans ce contexte ?",
+          "choix": [
+            "La disparition de toutes les traditions",
+            "La rencontre de traditions ou d’éléments culturels différents",
+            "La reproduction identique d’une seule pratique partout"
+          ],
+          "rep": "La rencontre de traditions ou d’éléments culturels différents",
+          "expl": "Des éléments de traditions différentes peuvent se rencontrer."
+        },
+        {
+          "q": "En quelle année les fêtes autochtones dédiées aux morts ont-elles été inscrites au patrimoine culturel immatériel de l’humanité ?",
+          "choix": [
+            "1998",
+            "2018",
+            "2008"
+          ],
+          "rep": "2008",
+          "expl": "L’inscription date de 2008."
+        }
+      ],
+      "id": "REV-ES-TLE-18"
+    }
+  ]
+}
