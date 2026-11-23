@@ -1,0 +1,300 @@
+{
+ "fiches": [
+  {
+   "id": "REV-PC-TLE-17",
+   "action": "ok",
+   "corrections": {},
+   "note": "Piège corrigé cohérent ; calcul 23 − 11 = 12 et exemples (6 et 8 neutrons) exacts."
+  },
+  {
+   "id": "REV-PC-TLE-55",
+   "action": "ok",
+   "corrections": {},
+   "note": "Lois de Kepler exactes ; √(4³) = 8, 2 j → 16 j ; jour sidéral ≈ 23 h 56 min exact."
+  },
+  {
+   "id": "REV-PHI-TLE-12",
+   "action": "ok",
+   "corrections": {},
+   "note": "« Conclus » (impératif) bien corrigé ; fiche cohérente."
+  },
+  {
+   "id": "REV-AN-TLE-10",
+   "action": "corriger",
+   "corrections": {
+    "quiz": [
+     {
+      "q": "Dans « Although English is useful, other languages matter too. » — « Bien que l’anglais soit utile, les autres langues comptent aussi », quelle relation est exprimée ?",
+      "choix": [
+       "Une conséquence certaine",
+       "Une concession",
+       "Une condition impossible"
+      ],
+      "rep": "Une concession",
+      "expl": "La seconde proposition nuance la première."
+     },
+     {
+      "q": "Quel rôle joue « however » (« cependant ») ?",
+      "choix": [
+       "Il indique toujours une date",
+       "Il exprime nécessairement une cause",
+       "Il introduit une opposition"
+      ],
+      "rep": "Il introduit une opposition",
+      "expl": "Ce connecteur marque un contraste."
+     },
+     {
+      "q": "Quelle affirmation décrit correctement la situation linguistique en Inde ?",
+      "choix": [
+       "L’anglais y coexiste avec de nombreuses autres langues",
+       "L’anglais est l’unique langue parlée dans le pays",
+       "Toutes les langues y ont disparu au profit de l’anglais"
+      ],
+      "rep": "L’anglais y coexiste avec de nombreuses autres langues",
+      "expl": "L’Inde possède une grande diversité linguistique."
+     }
+    ]
+   },
+   "note": "Axe « Identités et échanges » valide. Question 2 reformulée : « Que signifie » ne correspondait pas à des choix décrivant une fonction."
+  },
+  {
+   "id": "REV-AN-TLE-11",
+   "action": "ok",
+   "corrections": {},
+   "note": "Axe « Diversité et inclusion » valide ; marche sur Washington en 1963 exacte."
+  },
+  {
+   "id": "REV-AN-TLE-12",
+   "action": "ok",
+   "corrections": {},
+   "note": "Axe « Citoyenneté et mondes virtuels » valide ; traductions justes."
+  },
+  {
+   "id": "REV-AN-TLE-16",
+   "action": "ok",
+   "corrections": {},
+   "note": "Axe « Identités et échanges » valide ; géographie du Royaume-Uni exacte."
+  },
+  {
+   "id": "REV-AN-TLE-17",
+   "action": "ok",
+   "corrections": {},
+   "note": "Axe valide ; Parlement écossais rétabli en 1999, siège à Édimbourg, santé et éducation dévolues : exact."
+  },
+  {
+   "id": "REV-AN-TLE-18",
+   "action": "ok",
+   "corrections": {},
+   "note": "Axe « Territoire et mémoire » valide ; accord de Belfast de 1998 et identités britannique/irlandaise/les deux : exact."
+  },
+  {
+   "id": "REV-ES-TLE-10",
+   "action": "ok",
+   "corrections": {},
+   "note": "Axe « Identités et échanges » valide ; porque/por eso justes."
+  },
+  {
+   "id": "REV-ES-TLE-11",
+   "action": "ok",
+   "corrections": {},
+   "note": "Axe « Espace privé et espace public » valide (campagne publique et gestes privés) ; traductions justes."
+  },
+  {
+   "id": "REV-ES-TLE-12",
+   "action": "corriger",
+   "corrections": {
+    "comprendre": "Certains mots espagnols ressemblent à des mots français tout en ayant un sens différent : ce sont des faux amis. « Embarazada » signifie « enceinte » et non « embarrassée ». À l’inverse, « actualmente » signifie bien « actuellement » : la ressemblance est parfois fiable, d’où l’importance de vérifier dans le contexte. Dans les échanges entre pays hispanophones et francophones, cette vérification limite les malentendus."
+   },
+   "note": "Axe valide. « comprendre » laissait croire qu’« actualmente » est un faux ami alors que c’est un vrai ami en français : précisé."
+  },
+  {
+   "id": "REV-ES-TLE-16",
+   "action": "ok",
+   "corrections": {},
+   "note": "Axe valide ; « aguacate » issu du nahuatl : exact."
+  },
+  {
+   "id": "REV-ES-TLE-17",
+   "action": "ok",
+   "corrections": {},
+   "note": "Axe valide ; Andalousie, racines en Estrémadure et Murcie, rôle des communautés gitanes : conforme à la description de l’UNESCO."
+  },
+  {
+   "id": "REV-ES-TLE-18",
+   "action": "ok",
+   "corrections": {},
+   "note": "Axe valide ; inscription des fêtes indigènes dédiées aux morts sur la liste représentative de l’UNESCO en 2008 : exact."
+  },
+  {
+   "id": "REV-MA-TLE-51",
+   "action": "corriger",
+   "corrections": {
+    "quiz": [
+     {
+      "q": "Si yₚ résout y’ = 2y + f, quelle est la forme générale ?",
+      "choix": [
+       "yₚ + C exp(2x)",
+       "yₚ + C exp(x)",
+       "yₚ + Cx"
+      ],
+      "rep": "yₚ + C exp(2x)",
+      "expl": "La différence entre deux solutions résout z’ = 2z."
+     },
+     {
+      "q": "Quelle fonction est une solution particulière de y’ = y + x ?",
+      "choix": [
+       "x + 1",
+       "−x − 1",
+       "−x + 1"
+      ],
+      "rep": "−x − 1",
+      "expl": "Sa dérivée et y + x valent toutes deux −1."
+     },
+     {
+      "q": "Pour vérifier une solution particulière, que comparer ?",
+      "choix": [
+       "Sa valeur en 0 et zéro uniquement",
+       "Sa dérivée seconde et zéro",
+       "Sa dérivée yₚ’ et ayₚ + f"
+      ],
+      "rep": "Sa dérivée yₚ’ et ayₚ + f",
+      "expl": "yₚ’ doit être égale à ayₚ + f en chaque point de l’intervalle."
+     }
+    ]
+   },
+   "note": "Calculs revérifiés (−x/2 − 1/4 et −x − 1 sont bien solutions). Q3 : « le second membre » désigne souvent f seul ; on compare yₚ’ à ayₚ + f, comme l’indique l’« essentiel »."
+  },
+  {
+   "id": "REV-MA-TLE-55",
+   "action": "ok",
+   "corrections": {},
+   "note": "Nouvel exemple vérifié : ∫ de 1 à e ln x dx = e − (e − 1) = 1 ; ∫ de 0 à 1 x eˣ dx = 1."
+  },
+  {
+   "id": "REV-SVT-TLE-10",
+   "action": "corriger",
+   "corrections": {
+    "essentiel": [
+     "Un allèle récessif peut être porté sans que le caractère s’exprime, chez un hétérozygote.",
+     "Le génotype d’un enfant dépend des allèles transmis par ses parents.",
+     "Un test génétique peut apporter des informations complémentaires."
+    ]
+   },
+   "note": "C’est un allèle, et non un caractère, qui est « porté » : formulation de l’essentiel corrigée. Le reste est exact."
+  },
+  {
+   "id": "REV-SVT-TLE-29",
+   "action": "ok",
+   "corrections": {},
+   "note": "Distracteurs du quiz corrigés plausibles ; une seule bonne réponse."
+  },
+  {
+   "id": "REV-SVT-TLE-49",
+   "action": "ok",
+   "corrections": {},
+   "note": "Refroidissement cénozoïque depuis environ 50 Ma (après l’optimum de l’Éocène) : exact."
+  },
+  {
+   "id": "REV-SVT-TLE-58",
+   "action": "ok",
+   "corrections": {},
+   "note": "Quiz corrigé cohérent ; aucune promesse de santé."
+  },
+  {
+   "id": "REV-HGG-TLE-30",
+   "action": "ok",
+   "corrections": {},
+   "note": "Génocide des Tutsis (1994), gacaca et TPIR : exact ; distracteur corrigé."
+  },
+  {
+   "id": "REV-HGG-TLE-54",
+   "action": "ok",
+   "corrections": {},
+   "note": "Distracteur corrigé clairement faux ; une seule bonne réponse."
+  },
+  {
+   "id": "REV-HGG-TLE-59",
+   "action": "ok",
+   "corrections": {},
+   "note": "Question 3 reformulée correctement ; fiche cohérente."
+  },
+  {
+   "id": "REV-HGG-TLE-76",
+   "action": "ok",
+   "corrections": {},
+   "note": "« Conclus » bien corrigé ; quiz cohérent."
+  },
+  {
+   "id": "REV-SES-TLE-03",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs refaits : 3 − 1 − 1 = 1 ; 4 − 1 − 2 = 1. Une phrase corrigée exacte."
+  },
+  {
+   "id": "REV-SES-TLE-18",
+   "action": "ok",
+   "corrections": {},
+   "note": "« inciter à l’effort » corrige bien l’incohérence ; fiche exacte."
+  },
+  {
+   "id": "REV-SES-TLE-41",
+   "action": "ok",
+   "corrections": {},
+   "note": "70 − 50 = 20 points ; le nouveau distracteur « 2 points » est clairement faux."
+  },
+  {
+   "id": "REV-HGG-TLE-78",
+   "action": "corriger",
+   "corrections": {
+    "en_une_phrase": "Au Grand oral du bac général, tu prépares deux questions liées à tes spécialités ; le jury en choisit une que tu présentes avant un échange.",
+    "comprendre": "Les deux spécialités doivent être représentées dans l’ensemble des deux questions, qui peuvent aussi être transversales. Le jury choisit une des deux questions ; après un temps de préparation, tu présentes ta réponse, puis tu échanges avec le jury. Les durées et le coefficient sont fixés par les textes officiels de ta session : vérifie-les auprès de ton établissement.",
+    "essentiel": [
+     "Tu prépares deux questions ; le jury en choisit une le jour de l’épreuve.",
+     "Un temps de préparation précède l’épreuve.",
+     "L’épreuve comprend un exposé, puis un échange avec le jury.",
+     "Les deux questions doivent couvrir les deux spécialités, séparément ou de façon transversale."
+    ],
+    "astuce_memoire": "Deux questions, un choix du jury, une préparation, un exposé puis un échange.",
+    "quiz": [
+     {
+      "q": "Dans quel ordre se déroule le Grand oral ?",
+      "choix": [
+       "Échange, préparation, puis exposé",
+       "Préparation, exposé, puis échange avec le jury",
+       "Exposé, puis préparation sans échange"
+      ],
+      "rep": "Préparation, exposé, puis échange avec le jury",
+      "expl": "Après la préparation, tu présentes la question choisie, puis tu échanges avec le jury."
+     },
+     {
+      "q": "Qui choisit la question présentée parmi les deux proposées ?",
+      "choix": [
+       "Le candidat seul au début de l’exposé",
+       "Le jury",
+       "Un autre candidat"
+      ],
+      "rep": "Le jury",
+      "expl": "Le jury choisit une des deux questions."
+     },
+     {
+      "q": "Quelles spécialités les deux questions doivent-elles représenter ensemble ?",
+      "choix": [
+       "Une seule spécialité obligatoirement",
+       "Aucune spécialité",
+       "Les deux spécialités du candidat"
+      ],
+      "rep": "Les deux spécialités du candidat",
+      "expl": "Les modalités exigent la représentation des deux spécialités."
+     }
+    ]
+   },
+   "note": "Durées retirées (20 min de préparation, 10 min d’exposé, 10 min d’échange) : une note de service de septembre 2026 redéfinit l’épreuve à partir de la session 2027 et le texte du Bulletin officiel n’a pas pu être lu pour confirmer le détail en voie générale. Le principe (deux questions, choix du jury, préparation, exposé puis échange, deux spécialités) est conservé."
+  },
+  {
+   "id": "REV-HGG-TLE-79",
+   "action": "ok",
+   "corrections": {},
+   "note": "Autre fiche du Grand oral : aucune durée ni modalité susceptible de changer ; contenu prudent et exact."
+  }
+ ]
+}

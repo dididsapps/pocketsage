@@ -1,0 +1,3822 @@
+{
+ "classe": "TLE",
+ "niveau_appli": "Lycée",
+ "age": "17-18 ans",
+ "matiere": "SVT (spécialité)",
+ "code": "SVT",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Clones et mutations",
+   "emoji": "🧬",
+   "en_une_phrase": "Un clone est un ensemble de cellules issues d’une même cellule, identiques aux mutations près.",
+   "comprendre": "Lors des mitoses, une cellule transmet une copie de son génome à ses descendantes. Une mutation apparue dans une cellule peut être transmise aux cellules qui en dérivent et former un sous-clone.",
+   "essentiel": [
+    "Une mitose conserve normalement le génome après sa copie.",
+    "Un clone peut comprendre des cellules séparées ou associées.",
+    "Une mutation transmissible aux cellules filles peut créer un sous-clone."
+   ],
+   "image_mentale": "Un arbre de divisions forme des branches dont certaines portent une nouvelle mutation.",
+   "regle_ou_methode": "Repère la cellule où apparaît la mutation, puis suis ses descendantes.",
+   "exemples": [
+    "Une cellule se divise en deux ; une mutation survient dans l’une des deux cellules. Après ses divisions, seules ses descendantes portent cette mutation, en l’absence de retour ou de nouvelle mutation.",
+    "Des cellules issues de mitoses successives d’une même cellule forment un clone, aux mutations près."
+   ],
+   "piege": "Un clone n’est pas nécessairement absolument identique à chaque étape.",
+   "astuce_memoire": "Sous-clone : une branche issue d’une cellule mutée.",
+   "quiz": [
+    {
+     "q": "À qui une cellule peut-elle transmettre une mutation de son génome lorsqu’elle se divise ?",
+     "choix": [
+      "À toutes les cellules voisines",
+      "À ses cellules descendantes",
+      "Uniquement sa cellule parente"
+     ],
+     "rep": "À ses cellules descendantes",
+     "expl": "Les cellules filles reçoivent l’ADN de la cellule qui se divise."
+    },
+    {
+     "q": "Comment qualifier un ensemble de cellules issues d’une même cellule par mitoses ?",
+     "choix": [
+      "Une espèce entière obligatoirement",
+      "Un ensemble de gamètes obligatoirement",
+      "Un clone, aux mutations près"
+     ],
+     "rep": "Un clone, aux mutations près",
+     "expl": "Les mitoses successives produisent un clone."
+    },
+    {
+     "q": "Quelle nouveauté peut différencier un sous-clone ?",
+     "choix": [
+      "Une mutation héritée par ses cellules",
+      "Le simple fait que les cellules soient proches",
+      "Une méiose obligatoire à chaque division"
+     ],
+     "rep": "Une mutation héritée par ses cellules",
+     "expl": "Une mutation peut distinguer une lignée cellulaire."
+    }
+   ],
+   "id": "REV-SVT-TLE-01"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Méiose et fécondation",
+   "emoji": "🔄",
+   "en_une_phrase": "Méiose et fécondation alternent pour former des génomes individuels et maintenir le nombre de chromosomes.",
+   "comprendre": "Une cellule diploïde possède deux exemplaires de chaque chromosome homologue. La méiose produit des cellules haploïdes qui ne possèdent qu’un chromosome de chaque paire. La fécondation réunit deux gamètes haploïdes dans une cellule diploïde.",
+   "essentiel": [
+    "Avant la méiose, l’ADN est copié.",
+    "La première division sépare les chromosomes homologues.",
+    "La deuxième division sépare les chromatides sœurs.",
+    "La fécondation réunit deux lots haploïdes."
+   ],
+   "image_mentale": "Deux lots de chromosomes se séparent puis deux gamètes réunissent leurs lots.",
+   "regle_ou_methode": "Suis le nombre de chromosomes par lot plutôt que la seule quantité d’ADN.",
+   "exemples": [
+    "Une cellule diploïde à 2n = 4 chromosomes produit normalement des gamètes à n = 2. Deux gamètes fusionnent : la cellule issue de la fécondation possède alors 2n = 4 chromosomes.",
+    "Chez l’être humain, les gamètes comportent normalement 23 chromosomes et la cellule fécondée 46."
+   ],
+   "piege": "La quantité d’ADN et le nombre de chromosomes sont deux mesures distinctes.",
+   "astuce_memoire": "Méiose : un lot ; fécondation : deux lots.",
+   "quiz": [
+    {
+     "q": "Une cellule à 2n = 8 chromosomes forme normalement des gamètes à combien de chromosomes ?",
+     "choix": [
+      "8",
+      "16",
+      "4"
+     ],
+     "rep": "4",
+     "expl": "Chaque gamète reçoit un chromosome de chaque paire."
+    },
+    {
+     "q": "Que sépare la première division de méiose ?",
+     "choix": [
+      "Les chromosomes homologues",
+      "Les deux cellules issues de la fécondation",
+      "Tous les nucléotides de l’ADN"
+     ],
+     "rep": "Les chromosomes homologues",
+     "expl": "Les homologues d’une paire sont répartis dans deux cellules."
+    },
+    {
+     "q": "La fécondation réunit normalement ?",
+     "choix": [
+      "Deux cellules diploïdes obligatoirement",
+      "Deux gamètes haploïdes",
+      "Deux chromatides sans cellule"
+     ],
+     "rep": "Deux gamètes haploïdes",
+     "expl": "Deux lots haploïdes donnent une cellule diploïde."
+    }
+   ],
+   "id": "REV-SVT-TLE-02"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Brassage interchromosomique",
+   "emoji": "🎲",
+   "en_une_phrase": "La répartition indépendante des paires de chromosomes homologues crée des combinaisons d’allèles.",
+   "comprendre": "Lors de la première division de méiose, chaque paire de chromosomes homologues s’oriente indépendamment des autres paires. Dans un modèle simple, cela peut produire différentes associations d’allèles portés par des chromosomes différents.",
+   "essentiel": [
+    "Le brassage interchromosomique concerne la répartition des paires de chromosomes.",
+    "Pour deux gènes sur deux paires différentes, quatre combinaisons sont possibles chez un double hétérozygote.",
+    "Dans le modèle simple, elles sont équiprobables."
+   ],
+   "image_mentale": "Deux pièces sont lancées : chaque résultat se combine avec ceux de l’autre.",
+   "regle_ou_methode": "Pour AaBb avec gènes sur chromosomes différents, combine A ou a avec B ou b.",
+   "exemples": [
+    "Un individu AaBb forme, dans le modèle simple, les gamètes AB, Ab, aB et ab. Chacun représente 1/4 des gamètes possibles.",
+    "Pour un individu Aa, les gamètes portent A ou a, en proportions égales dans le modèle étudié."
+   ],
+   "piege": "L’équiprobabilité des quatre combinaisons ne s’applique pas automatiquement à deux gènes liés.",
+   "astuce_memoire": "Inter : entre paires de chromosomes.",
+   "quiz": [
+    {
+     "q": "Avec AaBb et deux gènes indépendants, quelle proportion de gamètes Ab ?",
+     "choix": [
+      "1/4",
+      "1/2",
+      "1"
+     ],
+     "rep": "1/4",
+     "expl": "Les quatre combinaisons sont équiprobables dans ce modèle."
+    },
+    {
+     "q": "Quel phénomène explique ce brassage ?",
+     "choix": [
+      "La fusion de deux gamètes",
+      "La répartition des chromosomes homologues de paires différentes",
+      "La traduction d’une protéine"
+     ],
+     "rep": "La répartition des chromosomes homologues de paires différentes",
+     "expl": "Les paires se répartissent indépendamment en première division."
+    },
+    {
+     "q": "Combien de types de gamètes pour AaBb dans ce modèle ?",
+     "choix": [
+      "2",
+      "8",
+      "4"
+     ],
+     "rep": "4",
+     "expl": "A ou a se combine avec B ou b."
+    }
+   ],
+   "id": "REV-SVT-TLE-03"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Brassage intrachromosomique",
+   "emoji": "🔀",
+   "en_une_phrase": "Un crossing-over peut recombiner des allèles portés par des chromosomes homologues.",
+   "comprendre": "En prophase I de la méiose, deux chromatides non sœurs de chromosomes homologues peuvent échanger des segments correspondants. Cet échange peut former des combinaisons d’allèles différentes de celles présentes au départ.",
+   "essentiel": [
+    "Un crossing-over se produit entre chromatides non sœurs de chromosomes homologues.",
+    "Les gènes situés sur un même chromosome sont dits liés.",
+    "Des gamètes recombinés peuvent apparaître après un échange entre deux gènes liés."
+   ],
+   "image_mentale": "Deux rubans homologues échangent un morceau au même endroit.",
+   "regle_ou_methode": "Compare les associations d’allèles parentales et celles des gamètes obtenus.",
+   "exemples": [
+    "Un individu possède les associations AB et ab sur ses homologues. Un échange entre les deux gènes peut produire Ab et aB, en plus des associations parentales.",
+    "Sans échange entre ces deux gènes, les chromatides gardent ici les associations AB ou ab."
+   ],
+   "piege": "Un gène lié n’est pas nécessairement toujours transmis avec le même allèle voisin.",
+   "astuce_memoire": "Intra : échange dans une paire de chromosomes.",
+   "quiz": [
+    {
+     "q": "Chez un individu AB/ab, quelle combinaison est recombinée ?",
+     "choix": [
+      "AB",
+      "Ab",
+      "ab"
+     ],
+     "rep": "Ab",
+     "expl": "Ab associe des allèles issus des deux associations de départ."
+    },
+    {
+     "q": "Quand peut se produire un crossing-over ?",
+     "choix": [
+      "Uniquement après la fécondation",
+      "Pendant la traduction des protéines",
+      "En prophase I entre chromatides non sœurs homologues"
+     ],
+     "rep": "En prophase I entre chromatides non sœurs homologues",
+     "expl": "Des segments correspondants de chromatides non sœurs de chromosomes homologues peuvent être échangés."
+    },
+    {
+     "q": "Deux gènes liés sont situés ?",
+     "choix": [
+      "Sur un même chromosome",
+      "Nécessairement dans deux cellules différentes",
+      "Toujours sur deux chromosomes différents"
+     ],
+     "rep": "Sur un même chromosome",
+     "expl": "Le lien génétique correspond ici à leur position sur un même chromosome."
+    }
+   ],
+   "id": "REV-SVT-TLE-04"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Croisement et tableau de gamètes",
+   "emoji": "🧩",
+   "en_une_phrase": "Un tableau de croisement permet de prévoir les probabilités des génotypes des descendants.",
+   "comprendre": "Chaque parent transmet un allèle par gène dans un gamète. Un tableau combine les gamètes possibles et permet d’en déduire les génotypes des descendants dans un modèle donné.",
+   "essentiel": [
+    "Un homozygote possède deux allèles identiques pour le gène étudié.",
+    "Un hétérozygote possède deux allèles différents.",
+    "Un allèle dominant peut s’exprimer chez l’hétérozygote dans un modèle de dominance complète."
+   ],
+   "image_mentale": "Deux colonnes et deux lignes assemblent les gamètes parentaux.",
+   "regle_ou_methode": "Écris les gamètes possibles de chaque parent, puis combine une ligne avec une colonne.",
+   "exemples": [
+    "Pour Aa × Aa, chaque parent produit A ou a à 1/2. Les descendants sont AA à 1/4, Aa à 1/2 et aa à 1/4.",
+    "Si A domine complètement a, AA et Aa présentent le phénotype dominant dans ce modèle."
+   ],
+   "piege": "Un allèle dominant n’est pas nécessairement le plus fréquent dans la population.",
+   "astuce_memoire": "Une case du tableau : un gamète de chaque parent.",
+   "quiz": [
+    {
+     "q": "Dans le croisement Aa × Aa, quelle probabilité de aa ?",
+     "choix": [
+      "1/2",
+      "3/4",
+      "1/4"
+     ],
+     "rep": "1/4",
+     "expl": "Un gamète a sur deux doit provenir de chaque parent."
+    },
+    {
+     "q": "Quel génotype est hétérozygote ?",
+     "choix": [
+      "Aa",
+      "AA",
+      "aa"
+     ],
+     "rep": "Aa",
+     "expl": "Il contient deux allèles différents."
+    },
+    {
+     "q": "Dominant signifie-t-il forcément fréquent ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Oui, dès la deuxième génération"
+     ],
+     "rep": "Non",
+     "expl": "Dominance et fréquence d’un allèle sont deux notions différentes."
+    }
+   ],
+   "id": "REV-SVT-TLE-05"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Croisement-test et gènes liés",
+   "emoji": "🧪",
+   "en_une_phrase": "Un croisement-test aide à révéler les gamètes produits par un individu hétérozygote.",
+   "comprendre": "On croise un individu de génotype à étudier avec un individu homozygote récessif pour les gènes considérés. Les phénotypes des descendants permettent, sous les hypothèses du modèle, de déduire les gamètes du premier parent.",
+   "essentiel": [
+    "Un testeur double récessif produit un seul type de gamète pour les gènes étudiés.",
+    "Avec des gènes indépendants, quatre classes peuvent apparaître à proportions proches.",
+    "Avec des gènes liés, les classes parentales peuvent être plus fréquentes que les classes recombinées."
+   ],
+   "image_mentale": "Le parent testeur fournit toujours la même pièce au tableau du croisement.",
+   "regle_ou_methode": "Identifier les quatre classes, les comparer, puis relier chaque descendant au gamète variable.",
+   "exemples": [
+    "Dans AaBb × aabb avec gènes indépendants et dominance complète, le parent testeur donne ab. Les gamètes AB, Ab, aB et ab du premier parent conduisent à quatre classes attendues à 25 % chacune.",
+    "Si les classes AB et ab dominent nettement sur Ab et aB, cela suggère une liaison pour cette disposition parentale."
+   ],
+   "piege": "Des résultats d’effectifs finis ne sont pas exactement égaux aux proportions théoriques.",
+   "astuce_memoire": "Testeur récessif : les gamètes du parent étudié se lisent plus facilement.",
+   "quiz": [
+    {
+     "q": "Quel gamète produit aabb pour ces deux gènes ?",
+     "choix": [
+      "ab",
+      "AB",
+      "AaBb"
+     ],
+     "rep": "ab",
+     "expl": "Le testeur ne possède que les allèles a et b."
+    },
+    {
+     "q": "Dans le modèle indépendant, quelle proportion théorique par classe ?",
+     "choix": [
+      "50 %",
+      "25 %",
+      "100 %"
+     ],
+     "rep": "25 %",
+     "expl": "Quatre types de gamètes sont équiprobables."
+    },
+    {
+     "q": "Deux classes parentales très majoritaires suggèrent ?",
+     "choix": [
+      "Une preuve que tous les gènes sont identiques",
+      "L’absence de tout allèle récessif",
+      "Des gènes liés"
+     ],
+     "rep": "Des gènes liés",
+     "expl": "Une liaison rend les recombinants moins fréquents dans cette situation."
+    }
+   ],
+   "id": "REV-SVT-TLE-06"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Un gène lié au chromosome X",
+   "emoji": "🧬",
+   "en_une_phrase": "Pour un gène situé sur le chromosome X, la transmission dépend des chromosomes sexuels hérités.",
+   "comprendre": "Dans un modèle simplifié XX–XY, chaque enfant reçoit un chromosome sexuel de chaque parent. Un individu XY ne possède qu’un seul chromosome X et exprime l’allèle récessif étudié s’il le porte, en l’absence d’une copie correspondante sur Y. Un tableau de croisement permet de déterminer les probabilités dans ce modèle.",
+   "essentiel": [
+    "Un parent XX transmet l’un de ses chromosomes X à chaque enfant.",
+    "Un parent XY transmet X ou Y ; dans le modèle, ces transmissions sont équiprobables.",
+    "Pour un caractère récessif lié à X, une personne XY portant l’allèle récessif sur son X exprime ce caractère.",
+    "Pour une personne XX, les deux allèles étudiés doivent être récessifs dans le modèle de dominance complète."
+   ],
+   "image_mentale": "Le chromosome X transmis porte l’allèle comme une étiquette.",
+   "regle_ou_methode": "Écris les chromosomes sexuels et les allèles portés par les X, puis combine les gamètes de chaque parent.",
+   "exemples": [
+    "Un parent XᴬXᵃ et un parent XᴬY produisent chacun deux types de gamètes équiprobables. Leurs enfants possibles sont XᴬXᴬ, XᴬXᵃ, XᴬY et XᵃY, chacun avec une probabilité de 1/4 ; seul XᵃY exprime le caractère récessif dans ce modèle.",
+    "Parmi les enfants XY de ce même croisement, la moitié reçoit Xᵃ et exprime le caractère dans ce modèle."
+   ],
+   "piege": "Un individu XX porteur d’un seul allèle récessif ne présente pas nécessairement le caractère récessif dans le modèle étudié.",
+   "astuce_memoire": "Pour un gène lié à X, suis le X porteur de l’allèle.",
+   "quiz": [
+    {
+     "q": "Dans le croisement XᴬXᵃ × XᴬY, quelle fraction théorique de tous les enfants est XᵃY ?",
+     "choix": [
+      "1/2",
+      "1/4",
+      "3/4"
+     ],
+     "rep": "1/4",
+     "expl": "Un enfant reçoit Xᵃ avec probabilité 1/2 et Y avec probabilité 1/2."
+    },
+    {
+     "q": "Dans le même croisement, quelle fraction théorique des enfants XY reçoit Xᵃ ?",
+     "choix": [
+      "1/4",
+      "1",
+      "1/2"
+     ],
+     "rep": "1/2",
+     "expl": "Conditionnellement au chromosome Y reçu, le chromosome X du parent XX est Xᴬ ou Xᵃ avec la même probabilité."
+    },
+    {
+     "q": "Dans ce modèle, un parent XY transmet son chromosome X à quels enfants ?",
+     "choix": [
+      "Aux enfants XX",
+      "Aux enfants XY",
+      "À tous les enfants"
+     ],
+     "rep": "Aux enfants XX",
+     "expl": "Un enfant XX reçoit le X de ce parent ; un enfant XY reçoit son Y."
+    }
+   ],
+   "id": "REV-SVT-TLE-07"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Anomalies de méiose",
+   "emoji": "🧷",
+   "en_une_phrase": "Une mauvaise séparation des chromosomes peut produire des gamètes avec un nombre anormal de chromosomes.",
+   "comprendre": "Lors de la méiose, les chromosomes homologues puis les chromatides sœurs doivent se séparer. Une non-disjonction peut donner un gamète avec un chromosome en trop ou en moins. Après fécondation, le nombre de chromosomes de la cellule obtenue peut être modifié.",
+   "essentiel": [
+    "Une non-disjonction est une séparation anormale.",
+    "Un gamète peut comporter n + 1 ou n − 1 chromosomes.",
+    "Après union avec un gamète normal, une trisomie possède trois exemplaires d’un chromosome."
+   ],
+   "image_mentale": "Deux chromosomes restent ensemble alors qu’ils devraient partir dans deux cellules différentes.",
+   "regle_ou_methode": "Suis le chromosome concerné dans les gamètes puis ajoute le lot du gamète normal.",
+   "exemples": [
+    "Un gamète avec deux copies du chromosome 21 rencontre un gamète normal qui en apporte une. La cellule fécondée possède alors trois copies du chromosome 21 : c’est une trisomie 21.",
+    "Un gamète auquel manque un chromosome, fécondé par un gamète normal, donne une cellule avec un seul exemplaire de ce chromosome."
+   ],
+   "piege": "Une anomalie chromosomique ne se confond pas avec une simple variation d’une lettre de l’ADN.",
+   "astuce_memoire": "Non-disjonction : séparation manquée.",
+   "quiz": [
+    {
+     "q": "Combien d’exemplaires du chromosome concerné dans une trisomie ?",
+     "choix": [
+      "2",
+      "1",
+      "3"
+     ],
+     "rep": "3",
+     "expl": "Le préfixe tri indique trois exemplaires."
+    },
+    {
+     "q": "Que peut provoquer une non-disjonction méiotique ?",
+     "choix": [
+      "Un gamète avec un chromosome en plus",
+      "La disparition obligatoire de tout l’ADN",
+      "Un gamète contenant toujours un lot normal"
+     ],
+     "rep": "Un gamète avec un chromosome en plus",
+     "expl": "Une mauvaise séparation peut modifier le nombre de chromosomes du gamète."
+    },
+    {
+     "q": "Deux copies du chromosome 21 dans un gamète et une dans l’autre donnent ?",
+     "choix": [
+      "Deux copies",
+      "Trois copies dans la cellule fécondée",
+      "Une seule copie"
+     ],
+     "rep": "Trois copies dans la cellule fécondée",
+     "expl": "On additionne les copies apportées par les deux gamètes."
+    }
+   ],
+   "id": "REV-SVT-TLE-08"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Duplication de gènes et familles",
+   "emoji": "🧬",
+   "en_une_phrase": "Une duplication crée une copie supplémentaire d’un gène qui peut ensuite diverger.",
+   "comprendre": "Un échange inégal entre chromosomes homologues peut produire une duplication sur l’un et une perte sur l’autre. Au cours des générations, les copies peuvent accumuler des mutations différentes. Des gènes apparentés peuvent ainsi former une famille multigénique.",
+   "essentiel": [
+    "Une duplication augmente le nombre de copies d’un gène.",
+    "Les copies peuvent accumuler des mutations distinctes.",
+    "Des gènes apparentés ayant une origine commune peuvent former une famille multigénique."
+   ],
+   "image_mentale": "Une page copiée en double peut ensuite être modifiée séparément sur chaque exemplaire.",
+   "regle_ou_methode": "Repère les gènes apparentés et recherche un scénario de duplication puis de divergence.",
+   "exemples": [
+    "Un chromosome possède une copie du gène G. Après une duplication, il en porte deux ; des mutations différentes peuvent ensuite distinguer les copies.",
+    "Des gènes de globines apparentés illustrent une famille issue de duplications anciennes et de divergences."
+   ],
+   "piege": "Une copie supplémentaire ne garantit pas l’apparition immédiate d’une nouvelle fonction.",
+   "astuce_memoire": "Dupliquer puis diverger.",
+   "quiz": [
+    {
+     "q": "Quel événement crée une copie supplémentaire d’un gène ?",
+     "choix": [
+      "Une duplication",
+      "Une simple traduction",
+      "Une fécondation obligatoire sans duplication"
+     ],
+     "rep": "Une duplication",
+     "expl": "La duplication ajoute une copie du gène."
+    },
+    {
+     "q": "Après duplication, que peuvent faire les copies ?",
+     "choix": [
+      "Rester nécessairement identiques pour toujours",
+      "Accumuler des mutations différentes",
+      "Cesser d’être constituées d’ADN"
+     ],
+     "rep": "Accumuler des mutations différentes",
+     "expl": "Les copies peuvent évoluer indépendamment."
+    },
+    {
+     "q": "Un échange inégal peut entraîner ?",
+     "choix": [
+      "Une disparition de tous les chromosomes",
+      "La création immédiate d’une nouvelle espèce",
+      "Une duplication sur un chromosome"
+     ],
+     "rep": "Une duplication sur un chromosome",
+     "expl": "Les segments échangés de longueurs différentes peuvent modifier le nombre de copies."
+    }
+   ],
+   "id": "REV-SVT-TLE-09"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Analyse familiale et génotype",
+   "emoji": "🌳",
+   "en_une_phrase": "Un arbre familial permet de proposer une hypothèse de transmission d’un caractère.",
+   "comprendre": "Un arbre montre les personnes apparentées et les caractères observés dans une famille. On compare ces observations aux possibilités de transmission des allèles. Un arbre limité ne suffit pas toujours à trancher entre plusieurs modèles.",
+   "essentiel": [
+    "Un allèle récessif peut être porté sans que le caractère s’exprime, chez un hétérozygote.",
+    "Le génotype d’un enfant dépend des allèles transmis par ses parents.",
+    "Un test génétique peut apporter des informations complémentaires."
+   ],
+   "image_mentale": "Des branches familiales relient les générations et leurs caractères.",
+   "regle_ou_methode": "Choisis un modèle, attribue des génotypes possibles, puis vérifie chaque filiation.",
+   "exemples": [
+    "Pour un caractère récessif aa, deux parents non atteints peuvent être Aa. Un enfant aa reçoit alors a de chaque parent ; ce modèle explique leur situation.",
+    "Un parent aa transmet forcément un allèle a à chacun de ses enfants pour le gène étudié."
+   ],
+   "piege": "Un modèle compatible avec un arbre n’est pas automatiquement le seul possible.",
+   "astuce_memoire": "Parents porteurs : un allèle peut être transmis sans se manifester.",
+   "quiz": [
+    {
+     "q": "Deux parents Aa peuvent-ils avoir un enfant aa ?",
+     "choix": [
+      "Non, jamais",
+      "Oui",
+      "Seulement si les deux parents sont aa"
+     ],
+     "rep": "Oui",
+     "expl": "Chacun peut transmettre son allèle a."
+    },
+    {
+     "q": "Un parent aa transmet quel allèle pour ce gène ?",
+     "choix": [
+      "Toujours A",
+      "A ou a avec équiprobabilité",
+      "a"
+     ],
+     "rep": "a",
+     "expl": "Ses deux allèles sont a."
+    },
+    {
+     "q": "Un seul arbre familial prouve-t-il toujours un unique modèle ?",
+     "choix": [
+      "Non",
+      "Oui, sans exception",
+      "Oui, uniquement si la famille est petite"
+     ],
+     "rep": "Non",
+     "expl": "Plusieurs modèles peuvent être compatibles avec les observations."
+    }
+   ],
+   "id": "REV-SVT-TLE-10"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Séquençage et comparaison de génomes",
+   "emoji": "🔬",
+   "en_une_phrase": "Comparer des séquences d’ADN aide à repérer des variations génétiques et leur transmission.",
+   "comprendre": "Le séquençage permet de déterminer l’ordre des nucléotides d’un fragment d’ADN. Comparer les séquences d’un enfant et de ses parents peut mettre en évidence une variante absente des séquences parentales analysées. Son effet éventuel demande une étude supplémentaire.",
+   "essentiel": [
+    "Une variante est une différence de séquence.",
+    "La comparaison doit porter sur des régions correspondantes.",
+    "Une association statistique entre variante et caractère ne suffit pas à établir une causalité."
+   ],
+   "image_mentale": "Deux lignes de lettres sont alignées pour repérer un changement.",
+   "regle_ou_methode": "Aligne les séquences homologues, repère la différence, puis vérifie sa présence chez les parents.",
+   "exemples": [
+    "Séquence parentale analysée : ACGT ; séquence de l’enfant : ACAT. La troisième position diffère : G est remplacé par A dans cette comparaison.",
+    "Une variante commune à un parent et à l’enfant peut avoir été transmise, sous réserve de l’analyse complète."
+   ],
+   "piege": "Une différence de séquence n’entraîne pas nécessairement une maladie.",
+   "astuce_memoire": "Même région, lettres comparées.",
+   "quiz": [
+    {
+     "q": "Quelle différence observe-t-on entre ACGT et ACAT ?",
+     "choix": [
+      "A devient C à la première position",
+      "Aucune différence",
+      "G devient A à la troisième position"
+     ],
+     "rep": "G devient A à la troisième position",
+     "expl": "Les deux séquences diffèrent à la troisième lettre."
+    },
+    {
+     "q": "Une variante génétique provoque-t-elle nécessairement une maladie ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, uniquement chez les enfants"
+     ],
+     "rep": "Non",
+     "expl": "Ses effets dépendent notamment de sa position et du contexte."
+    },
+    {
+     "q": "Que permet le séquençage d’un fragment ?",
+     "choix": [
+      "Observer directement tous les comportements d’un individu",
+      "Déterminer l’ordre de ses nucléotides",
+      "Connaître automatiquement tous les effets d’une variante"
+     ],
+     "rep": "Déterminer l’ordre de ses nucléotides",
+     "expl": "Le séquençage donne la suite des nucléotides du fragment."
+    }
+   ],
+   "id": "REV-SVT-TLE-11"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Transfert horizontal de gènes",
+   "emoji": "↔️",
+   "en_une_phrase": "Un transfert horizontal est un échange de matériel génétique en dehors de la filiation directe.",
+   "comprendre": "Un organisme peut acquérir de l’ADN provenant d’un autre organisme sans être son descendant. Chez les bactéries, de tels transferts participent notamment à la diffusion de certains gènes de résistance aux antibiotiques.",
+   "essentiel": [
+    "Le transfert vertical suit la filiation.",
+    "Le transfert horizontal se produit hors de cette filiation.",
+    "Une bactérie peut acquérir de l’ADN de son environnement par transformation."
+   ],
+   "image_mentale": "Une fiche circule entre deux bibliothèques sans passer par leurs descendants.",
+   "regle_ou_methode": "Demande-toi si l’ADN passe du parent au descendant ou entre organismes autrement.",
+   "exemples": [
+    "Une bactérie capte un fragment d’ADN libéré dans son milieu et l’intègre à son génome : c’est un transfert horizontal par transformation.",
+    "Une bactérie se divise et transmet son ADN à ses cellules filles : c’est une transmission verticale."
+   ],
+   "piege": "Les antibiotiques ne créent pas intentionnellement les gènes de résistance dont ils favorisent parfois la propagation.",
+   "astuce_memoire": "Horizontal : entre organismes ; vertical : par descendance.",
+   "quiz": [
+    {
+     "q": "Une bactérie reçoit de l’ADN libre du milieu : quel type de transfert ?",
+     "choix": [
+      "Horizontal",
+      "Toujours vertical",
+      "Une fécondation"
+     ],
+     "rep": "Horizontal",
+     "expl": "L’acquisition ne passe pas ici par une filiation."
+    },
+    {
+     "q": "Une bactérie transmet son ADN à ses cellules filles : quelle transmission ?",
+     "choix": [
+      "Horizontale obligatoirement",
+      "Verticale",
+      "Aucune transmission"
+     ],
+     "rep": "Verticale",
+     "expl": "L’ADN est transmis par descendance."
+    },
+    {
+     "q": "Que peut diffuser un transfert horizontal entre bactéries ?",
+     "choix": [
+      "Une planète",
+      "Un tissu musculaire complet",
+      "Un gène de résistance"
+     ],
+     "rep": "Un gène de résistance",
+     "expl": "Certains gènes de résistance peuvent circuler entre bactéries."
+    }
+   ],
+   "id": "REV-SVT-TLE-12"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Endosymbiose et organites",
+   "emoji": "🦠",
+   "en_une_phrase": "Les mitochondries et chloroplastes ont une origine liée à d’anciennes endosymbioses.",
+   "comprendre": "Une endosymbiose est une association durable où un organisme vit dans un autre. Des indices soutiennent l’origine bactérienne des mitochondries et des chloroplastes. Au cours de l’évolution, certains gènes ont été transférés vers le génome nucléaire de l’hôte.",
+   "essentiel": [
+    "Les mitochondries et les chloroplastes possèdent de l’ADN.",
+    "Ils sont entourés de membranes et se multiplient par division.",
+    "Les comparaisons de séquences soutiennent leur parenté avec certaines bactéries.",
+    "Tous les eucaryotes ne possèdent pas de chloroplastes."
+   ],
+   "image_mentale": "Une ancienne cellule intégrée devient un compartiment fonctionnel de la cellule hôte.",
+   "regle_ou_methode": "Compare les caractéristiques des organites et des bactéries puis relie plusieurs indices.",
+   "exemples": [
+    "Une cellule végétale possède des chloroplastes et des mitochondries. La présence d’ADN dans ces organites est un indice parmi d’autres de leur histoire évolutive.",
+    "Une cellule animale possède des mitochondries mais pas de chloroplastes."
+   ],
+   "piege": "Une ressemblance isolée ne suffit pas : le scénario repose sur un ensemble d’indices.",
+   "astuce_memoire": "Endo : à l’intérieur ; symbiose : association durable.",
+   "quiz": [
+    {
+     "q": "Quel organite est présent dans les cellules végétales chlorophylliennes et participe à la photosynthèse ?",
+     "choix": [
+      "Le noyau bactérien",
+      "Le chloroplaste",
+      "Le neurone"
+     ],
+     "rep": "Le chloroplaste",
+     "expl": "Le chloroplaste contient les structures de la photosynthèse."
+    },
+    {
+     "q": "Quel indice soutient l’origine bactérienne des mitochondries ?",
+     "choix": [
+      "Elles sont des organes visibles à l’œil nu",
+      "Elles ne contiennent aucune membrane",
+      "Elles possèdent leur propre ADN"
+     ],
+     "rep": "Elles possèdent leur propre ADN",
+     "expl": "La présence d’ADN est un indice parmi d’autres."
+    },
+    {
+     "q": "Les cellules animales possèdent-elles des chloroplastes ?",
+     "choix": [
+      "Non",
+      "Oui, toutes",
+      "Oui, uniquement dans les muscles"
+     ],
+     "rep": "Non",
+     "expl": "Les cellules animales ne possèdent pas de chloroplastes."
+    }
+   ],
+   "id": "REV-SVT-TLE-13"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Sélection naturelle et dérive",
+   "emoji": "🦋",
+   "en_une_phrase": "Sélection naturelle et dérive génétique modifient les fréquences des allèles dans une population.",
+   "comprendre": "Des variants génétiques existent dans une population. Selon les conditions, certains peuvent être associés à un succès reproducteur différent : c’est la sélection naturelle. La dérive correspond à des variations aléatoires des fréquences, particulièrement sensibles dans les petites populations.",
+   "essentiel": [
+    "La mutation crée de nouveaux variants.",
+    "La sélection dépend du milieu et de la reproduction différentielle.",
+    "La dérive résulte de fluctuations aléatoires.",
+    "Migration et changements de milieu peuvent aussi modifier les fréquences."
+   ],
+   "image_mentale": "Des billes de couleurs sont tirées au hasard ; certaines couleurs peuvent aussi donner un avantage dans un milieu.",
+   "regle_ou_methode": "Identifier si le changement observé relève d’un avantage reproducteur ou d’un effet aléatoire.",
+   "exemples": [
+    "Dans un milieu donné, des individus porteurs d’un allèle laissent en moyenne plus de descendants. Si l’allèle est transmis, sa fréquence peut augmenter par sélection.",
+    "Dans une petite population, un allèle neutre peut disparaître par hasard sans être défavorable."
+   ],
+   "piege": "Un organisme ne mute pas parce qu’il en a besoin.",
+   "astuce_memoire": "Sélection : succès reproducteur ; dérive : hasard.",
+   "quiz": [
+    {
+     "q": "Quel mécanisme peut faire disparaître un allèle neutre par hasard ?",
+     "choix": [
+      "Une nécessité dirigée",
+      "La photosynthèse",
+      "La dérive génétique"
+     ],
+     "rep": "La dérive génétique",
+     "expl": "Le hasard de la reproduction modifie les fréquences."
+    },
+    {
+     "q": "Un avantage sélectif est-il indépendant du milieu ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, pour tout allèle"
+     ],
+     "rep": "Non",
+     "expl": "Un avantage dépend des conditions environnementales."
+    },
+    {
+     "q": "Quel processus peut créer un nouvel allèle ?",
+     "choix": [
+      "La seule lecture d’un arbre généalogique",
+      "Une mutation",
+      "La simple observation au microscope"
+     ],
+     "rep": "Une mutation",
+     "expl": "Une mutation modifie la séquence d’ADN."
+    }
+   ],
+   "id": "REV-SVT-TLE-14"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Modèle de Hardy-Weinberg",
+   "emoji": "⚖️",
+   "en_une_phrase": "Le modèle de Hardy-Weinberg fournit une référence pour les fréquences génétiques d’une population idéale.",
+   "comprendre": "Dans le modèle, une population diploïde théoriquement infinie se reproduit au hasard, sans mutation, migration ni sélection. Dans ces conditions idéales, les fréquences alléliques restent stables. Pour deux allèles de fréquences p et q, les proportions génotypiques attendues sont p², 2pq et q².",
+   "essentiel": [
+    "p + q = 1 pour les deux allèles considérés.",
+    "Les fréquences attendues sont p², 2pq et q².",
+    "Sélection, migration, mutation ou dérive peuvent modifier les fréquences.",
+    "Une population réelle peut s’écarter du modèle."
+   ],
+   "image_mentale": "Un tableau associe deux tirages d’allèles aux proportions p et q.",
+   "regle_ou_methode": "Calcule q = 1 − p, puis p², 2pq et q².",
+   "exemples": [
+    "Pour p = 0,6, q = 0,4. Les proportions attendues sont 0,36 pour AA, 0,48 pour Aa et 0,16 pour aa.",
+    "Avec p = q = 0,5, la proportion attendue d’hétérozygotes est 2 × 0,5 × 0,5 = 0,5."
+   ],
+   "piege": "La stabilité est une prédiction sous hypothèses, pas une garantie pour toute population.",
+   "astuce_memoire": "Carré, double produit, carré.",
+   "quiz": [
+    {
+     "q": "Si p = 0,6 et q = 0,4, quelle fréquence d’hétérozygotes attendue ?",
+     "choix": [
+      "0,48",
+      "0,24",
+      "0,36"
+     ],
+     "rep": "0,48",
+     "expl": "2pq = 2 × 0,6 × 0,4."
+    },
+    {
+     "q": "Si p = 0,7 pour deux allèles, combien vaut q ?",
+     "choix": [
+      "0,7",
+      "0,3",
+      "1,7"
+     ],
+     "rep": "0,3",
+     "expl": "Les deux fréquences totalisent 1."
+    },
+    {
+     "q": "Quel phénomène peut écarter une population réelle du modèle idéal ?",
+     "choix": [
+      "L’absence de mutation dans le modèle",
+      "La somme p + q égale à 1",
+      "La sélection naturelle"
+     ],
+     "rep": "La sélection naturelle",
+     "expl": "Une reproduction différentielle peut modifier les fréquences."
+    }
+   ],
+   "id": "REV-SVT-TLE-15"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Isolement et formation des espèces",
+   "emoji": "🏝️",
+   "en_une_phrase": "Un isolement des populations peut favoriser leur divergence génétique au fil des générations.",
+   "comprendre": "Des populations d’une même espèce peuvent échanger moins de gènes lorsque leurs individus se reproduisent moins entre eux. Les mutations, la sélection et la dérive peuvent alors différencier leurs génomes. Un isolement reproducteur durable peut contribuer à la formation d’espèces distinctes.",
+   "essentiel": [
+    "Les flux de gènes relient génétiquement des populations.",
+    "Un obstacle géographique peut réduire ces échanges.",
+    "La divergence est un processus et n’apparaît pas nécessairement d’un seul coup."
+   ],
+   "image_mentale": "Une population séparée sur deux îles voit ses deux groupes évoluer indépendamment.",
+   "regle_ou_methode": "Repère l’obstacle aux échanges, puis les mécanismes qui peuvent différencier les populations.",
+   "exemples": [
+    "Une population est séparée par une barrière géographique. Après de nombreuses générations sans échange, des différences génétiques s’accumulent ; un isolement reproducteur peut ensuite se mettre en place.",
+    "Des populations qui continuent d’échanger régulièrement des individus peuvent maintenir des flux de gènes."
+   ],
+   "piege": "La séparation géographique ne garantit pas à elle seule la formation de nouvelles espèces.",
+   "astuce_memoire": "Moins d’échanges peut favoriser la divergence.",
+   "quiz": [
+    {
+     "q": "Quel effet une barrière géographique peut-elle avoir ?",
+     "choix": [
+      "Garantir immédiatement une nouvelle espèce",
+      "Réduire les échanges génétiques",
+      "Supprimer toutes les mutations"
+     ],
+     "rep": "Réduire les échanges génétiques",
+     "expl": "Une séparation peut limiter les rencontres reproductives."
+    },
+    {
+     "q": "Quel mécanisme contribue à la divergence aléatoire ?",
+     "choix": [
+      "La conservation obligatoire de toutes les fréquences",
+      "La disparition de toute descendance",
+      "La dérive génétique"
+     ],
+     "rep": "La dérive génétique",
+     "expl": "Les fréquences peuvent évoluer différemment par hasard."
+    },
+    {
+     "q": "L’isolement reproducteur est-il toujours instantané après une séparation ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, dès la première génération"
+     ],
+     "rep": "Non",
+     "expl": "La divergence peut prendre de nombreuses générations."
+    }
+   ],
+   "id": "REV-SVT-TLE-16"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Diversité sans modification du génome",
+   "emoji": "🐦",
+   "en_une_phrase": "Des associations et des apprentissages peuvent diversifier les phénotypes sans modifier le génome transmis.",
+   "comprendre": "Le phénotype dépend aussi des interactions avec le milieu. Un microbiote acquis ou un comportement appris peut contribuer aux caractéristiques d’un individu. Certains comportements sont transmis par apprentissage entre générations.",
+   "essentiel": [
+    "Un microbiote acquis est une association avec d’autres organismes.",
+    "Un comportement peut être appris auprès d’autres individus.",
+    "Une transmission culturelle ne repose pas nécessairement sur une modification de l’ADN.",
+    "Un objet du milieu peut aussi participer au phénotype étendu."
+   ],
+   "image_mentale": "Un jeune oiseau apprend un chant en écoutant d’autres oiseaux.",
+   "regle_ou_methode": "Cherche si la différence étudiée provient d’une séquence d’ADN ou d’une interaction avec le milieu.",
+   "exemples": [
+    "Dans une population d’oiseaux, un jeune apprend une variante de chant auprès d’adultes. Une transmission du comportement peut exister sans changement de sa séquence d’ADN.",
+    "Deux individus peuvent héberger des microbiotes différents acquis dans des milieux différents."
+   ],
+   "piege": "Appris ne veut pas dire que les capacités biologiques permettant l’apprentissage sont sans base génétique.",
+   "astuce_memoire": "Diversité aussi par association et apprentissage.",
+   "quiz": [
+    {
+     "q": "Un chant appris auprès d’adultes illustre ?",
+     "choix": [
+      "Une mutation obligatoire du gène du chant",
+      "Une fécondation entre oiseaux et bactéries",
+      "Une transmission culturelle possible"
+     ],
+     "rep": "Une transmission culturelle possible",
+     "expl": "Le comportement peut être transmis par apprentissage."
+    },
+    {
+     "q": "Un microbiote acquis correspond à ?",
+     "choix": [
+      "Une association avec des micro-organismes",
+      "Un chromosome humain supplémentaire",
+      "Un organe interne identique chez tous"
+     ],
+     "rep": "Une association avec des micro-organismes",
+     "expl": "Le microbiote comprend des micro-organismes associés à un milieu ou un organisme."
+    },
+    {
+     "q": "Un trait acquis par apprentissage nécessite-t-il toujours une modification du génome ?",
+     "choix": [
+      "Oui, à chaque génération",
+      "Non",
+      "Oui, uniquement chez les oiseaux"
+     ],
+     "rep": "Non",
+     "expl": "Une transmission de comportement peut se produire sans modification de l’ADN."
+    }
+   ],
+   "id": "REV-SVT-TLE-17"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Superposition des couches",
+   "emoji": "🪨",
+   "en_une_phrase": "Dans une série sédimentaire non renversée, une couche est plus récente que celle qu’elle recouvre.",
+   "comprendre": "Les sédiments se déposent généralement les uns sur les autres. Si la série n’a pas été renversée, les dépôts du dessus sont plus récents que ceux du dessous. Cette relation donne un ordre et non une date chiffrée.",
+   "essentiel": [
+    "Une couche inférieure est plus ancienne que celle qui la recouvre dans une série non renversée.",
+    "Les déformations peuvent modifier l’orientation initiale des couches.",
+    "La chronologie relative ordonne les événements sans leur attribuer nécessairement un âge."
+   ],
+   "image_mentale": "Une pile de feuilles : la dernière posée se trouve au-dessus.",
+   "regle_ou_methode": "Vérifie que la série n’est pas renversée, puis lis les dépôts de bas en haut.",
+   "exemples": [
+    "Dans une série non renversée, B recouvre A puis C recouvre B. A s’est déposée avant B, puis C : l’ordre est A, B, C.",
+    "Si une couche D recouvre C dans la même série non renversée, D est plus récente que C."
+   ],
+   "piege": "Une couche aujourd’hui située plus haut n’est pas automatiquement plus récente si la série a été renversée.",
+   "astuce_memoire": "Sans renversement : dessous avant dessus.",
+   "quiz": [
+    {
+     "q": "Dans une série non renversée, B recouvre A : quel dépôt est le plus ancien ?",
+     "choix": [
+      "A",
+      "B",
+      "Impossible à déterminer même avec cette hypothèse"
+     ],
+     "rep": "A",
+     "expl": "La couche recouverte est plus ancienne."
+    },
+    {
+     "q": "Quel type d’information donne directement la superposition ?",
+     "choix": [
+      "Un âge exact en années",
+      "Un ordre relatif des dépôts",
+      "La vitesse actuelle des plaques"
+     ],
+     "rep": "Un ordre relatif des dépôts",
+     "expl": "La relation ordonne les couches sans donner directement leur âge."
+    },
+    {
+     "q": "Pourquoi vérifier si une série est renversée ?",
+     "choix": [
+      "Toutes les couches renversées ont le même âge",
+      "Les sédiments ne peuvent jamais être déformés",
+      "Son orientation actuelle peut inverser l’ordre apparent"
+     ],
+     "rep": "Son orientation actuelle peut inverser l’ordre apparent",
+     "expl": "Une déformation peut modifier l’ordre observé de bas en haut."
+    }
+   ],
+   "id": "REV-SVT-TLE-18"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Recoupement et inclusion",
+   "emoji": "✂️",
+   "en_une_phrase": "Une structure qui en recoupe une autre est plus récente ; un fragment inclus est antérieur à la roche qui l’enferme.",
+   "comprendre": "Une faille ne peut couper une roche que si celle-ci existe déjà. Un fragment doit également exister avant son incorporation dans une autre formation. Ces observations aident à ordonner les événements.",
+   "essentiel": [
+    "Une faille est postérieure aux couches qu’elle recoupe.",
+    "Un filon magmatique est postérieur aux roches qu’il traverse.",
+    "Un fragment inclus est plus ancien que la roche qui l’incorpore."
+   ],
+   "image_mentale": "Une coupure traverse plusieurs pages déjà empilées.",
+   "regle_ou_methode": "Repère ce qui est recoupé ou inclus ; place ensuite le recoupement ou l’incorporation après ces objets.",
+   "exemples": [
+    "Une faille F coupe les couches A et B : A et B existaient avant F. Si une couche C non affectée par F recouvre la faille, C est postérieure à F.",
+    "Une roche contient un fragment de granite : le fragment de granite est antérieur à la formation qui l’inclut."
+   ],
+   "piege": "Une faille qui ne recoupe pas une couche ne suffit pas seule à dater cette couche ; il faut observer leurs relations.",
+   "astuce_memoire": "Recoupé avant recoupant ; inclus avant contenant.",
+   "quiz": [
+    {
+     "q": "Un filon coupe une couche : quel élément est le plus récent ?",
+     "choix": [
+      "La couche",
+      "Le filon",
+      "Ils sont forcément de même âge"
+     ],
+     "rep": "Le filon",
+     "expl": "Le filon est venu traverser une couche déjà présente."
+    },
+    {
+     "q": "Un galet est inclus dans une roche sédimentaire : que sait-on ?",
+     "choix": [
+      "Le galet est forcément plus jeune que la roche qui le contient",
+      "Le galet donne automatiquement un âge en années",
+      "Le galet est plus ancien que son incorporation"
+     ],
+     "rep": "Le galet est plus ancien que son incorporation",
+     "expl": "Le fragment existait avant son dépôt dans la roche."
+    },
+    {
+     "q": "Une faille coupe A et B puis est recouverte par C non affectée : quel événement est le plus récent ?",
+     "choix": [
+      "Le dépôt de C",
+      "La formation de A",
+      "La faille"
+     ],
+     "rep": "Le dépôt de C",
+     "expl": "La couche C recouvre une faille déjà formée."
+    }
+   ],
+   "id": "REV-SVT-TLE-19"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Discordance et lacune",
+   "emoji": "🏞️",
+   "en_une_phrase": "Une discordance entre deux ensembles de couches révèle une interruption et des événements intermédiaires.",
+   "comprendre": "Des couches anciennes peuvent être déformées puis érodées avant le dépôt de nouvelles couches. La surface de discordance sépare des formations dont les orientations peuvent différer. Une lacune correspond à un intervalle dont les dépôts manquent dans la série étudiée.",
+   "essentiel": [
+    "Déformation et érosion des couches anciennes précèdent le dépôt des nouvelles couches.",
+    "Une lacune peut résulter d’une absence de dépôt ou d’une érosion.",
+    "Une discordance ne donne pas à elle seule la durée de la lacune."
+   ],
+   "image_mentale": "Des feuilles inclinées sont coupées puis recouvertes par de nouvelles feuilles horizontales.",
+   "regle_ou_methode": "Identifie les couches coupées par la surface puis celles qui la recouvrent ; ordonne les événements.",
+   "exemples": [
+    "Des couches A sont inclinées et tronquées, puis des couches B horizontales les recouvrent : dépôt de A, inclinaison, érosion, puis dépôt de B.",
+    "Une portion de temps sans couches conservées dans une coupe constitue une lacune ; elle peut correspondre à de l’érosion."
+   ],
+   "piege": "La lacune ne signifie pas que rien ne s’est passé pendant la période manquante.",
+   "astuce_memoire": "Anciennes couches, déformation, érosion, nouvelles couches.",
+   "quiz": [
+    {
+     "q": "Des couches inclinées sont tronquées puis recouvertes de couches horizontales. Quelle étape précède les couches horizontales ?",
+     "choix": [
+      "Le dépôt de la série horizontale elle-même",
+      "Une déformation forcément postérieure à tous les dépôts",
+      "L’érosion de la série inclinée"
+     ],
+     "rep": "L’érosion de la série inclinée",
+     "expl": "La surface d’érosion existait avant d’être recouverte."
+    },
+    {
+     "q": "Que signifie une lacune dans une série ?",
+     "choix": [
+      "Un intervalle de temps dont les dépôts manquent dans cette série",
+      "Une période pendant laquelle la Terre n’existait plus",
+      "Une couche toujours très épaisse"
+     ],
+     "rep": "Un intervalle de temps dont les dépôts manquent dans cette série",
+     "expl": "Des dépôts ont pu manquer ou être érodés."
+    },
+    {
+     "q": "Une discordance indique-t-elle à elle seule la durée exacte de la lacune ?",
+     "choix": [
+      "Oui, toujours un million d’années",
+      "Non",
+      "Oui, si les couches sont colorées"
+     ],
+     "rep": "Non",
+     "expl": "La durée nécessite des informations supplémentaires."
+    }
+   ],
+   "id": "REV-SVT-TLE-20"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Fossiles stratigraphiques et corrélations",
+   "emoji": "🐚",
+   "en_une_phrase": "Des associations de fossiles stratigraphiques permettent de rapprocher dans le temps des couches éloignées.",
+   "comprendre": "Un fossile stratigraphique utile correspond à une espèce ayant une grande extension géographique et une durée d’existence relativement courte. Une association de plusieurs fossiles non remaniés réduit l’intervalle de temps compatible avec la couche. Un fossile remanié, arraché à une roche ancienne puis redéposé, peut être plus ancien que sa couche.",
+   "essentiel": [
+    "Grande extension géographique : comparaison entre régions éloignées.",
+    "Durée d’existence relativement courte : intervalle de datation plus précis.",
+    "La présence d’une association indique un intervalle commun possible, pas nécessairement une date exacte."
+   ],
+   "image_mentale": "Des couches éloignées portent des signatures fossiles comparables.",
+   "regle_ou_methode": "Identifie les fossiles et superpose leurs intervalles d’existence pour établir l’intervalle commun.",
+   "exemples": [
+    "Un fossile X existe de 120 à 100 millions d’années et Y de 110 à 90 millions d’années. Une couche contenant X et Y s’est déposée dans leur intervalle commun, entre 110 et 100 millions d’années, si les fossiles ne sont pas remaniés et si les intervalles sont correctement établis.",
+    "Deux couches éloignées contenant la même association peuvent être corrélées à un même intervalle stratigraphique."
+   ],
+   "piege": "La présence du même fossile ne prouve pas un dépôt le même jour ; vérifie aussi qu’il n’a pas été remanié.",
+   "astuce_memoire": "Fossile stratigraphique : répandu et de courte durée.",
+   "quiz": [
+    {
+     "q": "Quel fossile est le plus utile pour une corrélation temporelle ?",
+     "choix": [
+      "Une espèce répandue ayant vécu pendant un intervalle relativement court",
+      "Une espèce locale présente pendant un très long intervalle",
+      "Un objet sans origine biologique ni âge connu"
+     ],
+     "rep": "Une espèce répandue ayant vécu pendant un intervalle relativement court",
+     "expl": "Une large répartition et une courte durée améliorent la corrélation."
+    },
+    {
+     "q": "X existe de 120 à 100 Ma et Y de 110 à 90 Ma : quel intervalle commun ?",
+     "choix": [
+      "De 120 à 110 Ma",
+      "De 110 à 100 Ma",
+      "De 100 à 90 Ma"
+     ],
+     "rep": "De 110 à 100 Ma",
+     "expl": "Les deux intervalles se chevauchent entre 110 et 100 Ma."
+    },
+    {
+     "q": "Deux couches portent la même association fossile : quelle conclusion prudente ?",
+     "choix": [
+      "Elles se sont formées exactement le même jour",
+      "Elles ont nécessairement la même composition chimique",
+      "Elles correspondent à un intervalle de temps commun possible"
+     ],
+     "rep": "Elles correspondent à un intervalle de temps commun possible",
+     "expl": "La corrélation fournit un intervalle plutôt qu’une simultanéité absolue."
+    }
+   ],
+   "id": "REV-SVT-TLE-21"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Échelle stratigraphique",
+   "emoji": "🗓️",
+   "en_une_phrase": "L’échelle stratigraphique organise l’histoire géologique en intervalles délimités notamment à partir des fossiles.",
+   "comprendre": "Les successions de roches conservent des associations fossiles qui changent au cours du temps. Les apparitions et disparitions de groupes servent à repérer des limites entre intervalles. Les corrélations relient ensuite des séries observées dans différentes régions.",
+   "essentiel": [
+    "Les intervalles comprennent notamment ères, périodes et étages.",
+    "Des changements dans les fossiles contribuent à définir des limites.",
+    "Des datations chiffrées aident à attribuer des âges aux limites."
+   ],
+   "image_mentale": "Une longue frise est découpée en intervalles emboîtés.",
+   "regle_ou_methode": "Observe les associations fossiles successives, repère une limite et corrèle-la avec d’autres séries.",
+   "exemples": [
+    "Dans une coupe fictive, l’association X domine les couches inférieures et Y apparaît dans les couches supérieures. Le changement constitue un indice pour distinguer deux intervalles.",
+    "Une date obtenue sur une roche magmatique intercalée dans une série aide à placer un repère chiffré dans la succession."
+   ],
+   "piege": "Une limite stratigraphique est un repère construit à partir d’indices, pas nécessairement une coupure visible partout de la même façon.",
+   "astuce_memoire": "Des fossiles pour découper ; des dates pour chiffrer.",
+   "quiz": [
+    {
+     "q": "Quel indice contribue à définir une limite stratigraphique ?",
+     "choix": [
+      "La couleur choisie pour un cahier",
+      "Un changement dans les associations fossiles",
+      "La date de découverte de la coupe"
+     ],
+     "rep": "Un changement dans les associations fossiles",
+     "expl": "Les associations fossiles changent au cours de l’histoire de la vie."
+    },
+    {
+     "q": "Pourquoi comparer plusieurs coupes ?",
+     "choix": [
+      "Pour imposer le même aspect à toutes les roches",
+      "Pour supprimer toutes les lacunes",
+      "Pour corréler des intervalles géologiques entre régions"
+     ],
+     "rep": "Pour corréler des intervalles géologiques entre régions",
+     "expl": "La comparaison permet d’étendre les repères temporels."
+    },
+    {
+     "q": "Quel apport a une datation chiffrée de roche magmatique intercalée ?",
+     "choix": [
+      "Un repère d’âge pour la série",
+      "La preuve que toutes les couches sont contemporaines",
+      "Le nombre exact de fossiles de chaque espèce"
+     ],
+     "rep": "Un repère d’âge pour la série",
+     "expl": "Elle fournit un âge pouvant être relié à la succession observée."
+    }
+   ],
+   "id": "REV-SVT-TLE-22"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Datation radiométrique et fermeture",
+   "emoji": "⏳",
+   "en_une_phrase": "Une datation radiométrique d’une roche magmatique estime le temps écoulé depuis la fermeture du système étudié.",
+   "comprendre": "Un isotope radioactif dit père se transforme progressivement en isotope fils. Les mesures isotopiques sont interprétées avec un chronomètre choisi selon l’âge supposé. La fermeture correspond à l’arrêt des échanges significatifs pour les éléments considérés, souvent lors du refroidissement d’un minéral.",
+   "essentiel": [
+    "Des couples tels que uranium/plomb, potassium/argon ou rubidium/strontium sont utilisés.",
+    "La demi-vie caractérise le chronomètre radioactif.",
+    "L’âge obtenu correspond à la fermeture du système étudié, avec une incertitude.",
+    "Une modification ultérieure du système peut compliquer l’interprétation."
+   ],
+   "image_mentale": "Un chronomètre démarre quand un minéral cesse d’échanger les éléments étudiés.",
+   "regle_ou_methode": "Choisis le chronomètre adapté, vérifie les hypothèses puis relie l’âge à la fermeture du minéral.",
+   "exemples": [
+    "Un minéral d’une roche magmatique refroidie fournit un âge de fermeture estimé à 250 millions d’années : cet âge indique quand le système isotopique considéré s’est fermé, avec sa marge d’incertitude.",
+    "Deux minéraux d’une même roche peuvent donner des âges de fermeture différents s’ils deviennent fermés à des températures différentes pendant son histoire."
+   ],
+   "piege": "L’âge d’une mesure ne donne pas automatiquement la date de tous les événements vécus par la roche.",
+   "astuce_memoire": "Datation : choisir le chronomètre et identifier la fermeture.",
+   "quiz": [
+    {
+     "q": "Quel événement date-t-on par cette méthode dans un minéral magmatique ?",
+     "choix": [
+      "Toutes les déformations futures de la région",
+      "Le jour où la roche a été découverte",
+      "La fermeture du système isotopique étudié"
+     ],
+     "rep": "La fermeture du système isotopique étudié",
+     "expl": "La date correspond à la fermeture du système considéré."
+    },
+    {
+     "q": "Pourquoi deux minéraux d’une même roche peuvent-ils fournir des âges différents ?",
+     "choix": [
+      "Ils peuvent se fermer à des températures différentes",
+      "Les isotopes ont tous la même demi-vie",
+      "La roche ne peut jamais refroidir"
+     ],
+     "rep": "Ils peuvent se fermer à des températures différentes",
+     "expl": "Leur fermeture peut survenir à des étapes différentes du refroidissement."
+    },
+    {
+     "q": "À quoi sert le choix du chronomètre ?",
+     "choix": [
+      "À rendre inutiles toutes les hypothèses",
+      "À adapter la mesure à l’objet et à l’âge supposé",
+      "À déterminer la couleur du minéral"
+     ],
+     "rep": "À adapter la mesure à l’objet et à l’âge supposé",
+     "expl": "Les chronomètres ont des caractéristiques et domaines d’emploi différents."
+    }
+   ],
+   "id": "REV-SVT-TLE-23"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Combiner datations relative et absolue",
+   "emoji": "🧭",
+   "en_une_phrase": "Les datations relatives et radiométriques se complètent pour reconstituer une histoire géologique.",
+   "comprendre": "Les relations entre roches donnent une succession d’événements. Une datation adaptée fournit un âge chiffré pour un minéral ou une roche. Ensemble, ces indices peuvent encadrer l’âge d’une couche sédimentaire.",
+   "essentiel": [
+    "La chronologie relative établit l’ordre des événements.",
+    "Une datation radiométrique attribue un âge à la fermeture du système mesuré.",
+    "Un encadrement doit respecter l’ordre observé et les incertitudes."
+   ],
+   "image_mentale": "Des repères datés encadrent une page d’une longue histoire.",
+   "regle_ou_methode": "Ordonne les dépôts puis utilise les âges des roches qui les encadrent, avec leurs incertitudes.",
+   "exemples": [
+    "Une couche sédimentaire se trouve entre deux niveaux volcaniques d’une série non renversée : le niveau inférieur est daté de 100 Ma et le supérieur de 90 Ma. En négligeant ici les incertitudes, le dépôt est plus récent que 100 Ma et plus ancien que 90 Ma.",
+    "Un filon coupe une série : la série est antérieure au filon, quelle que soit la date chiffrée de celui-ci."
+   ],
+   "piege": "Le plus grand nombre de millions d’années correspond à un événement plus ancien.",
+   "astuce_memoire": "100 Ma avant 90 Ma : le temps se rapproche du présent.",
+   "quiz": [
+    {
+     "q": "Entre une couche volcanique de 100 Ma et une couche supérieure de 90 Ma, quel âge possible pour le dépôt intermédiaire ?",
+     "choix": [
+      "95 Ma",
+      "110 Ma",
+      "80 Ma"
+     ],
+     "rep": "95 Ma",
+     "expl": "Le dépôt est plus récent que 100 Ma et plus ancien que 90 Ma."
+    },
+    {
+     "q": "Quelle méthode établit directement que le filon est postérieur aux roches qu’il coupe ?",
+     "choix": [
+      "La mesure de la masse du microscope",
+      "Le principe de recoupement",
+      "Le choix de la couleur de la carte"
+     ],
+     "rep": "Le principe de recoupement",
+     "expl": "Le recoupement donne un ordre relatif."
+    },
+    {
+     "q": "Pourquoi considérer les incertitudes ?",
+     "choix": [
+      "Elles rendent toutes les dates identiques",
+      "Elles remplacent l’observation des roches",
+      "Elles limitent la précision des âges et de leur comparaison"
+     ],
+     "rep": "Elles limitent la précision des âges et de leur comparaison",
+     "expl": "Les âges mesurés sont associés à une marge d’incertitude."
+    }
+   ],
+   "id": "REV-SVT-TLE-24"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Domaines continentaux et chaînes anciennes",
+   "emoji": "⛰️",
+   "en_une_phrase": "Les continents conservent des roches et des structures témoignant d’histoires tectoniques d’âges variés.",
+   "comprendre": "Une carte géologique permet de distinguer des domaines continentaux par la nature et l’âge de leurs roches. Certains domaines gardent les traces de chaînes de montagnes anciennes. Leur comparaison montre que plusieurs épisodes de formation de chaînes se sont succédé.",
+   "essentiel": [
+    "Une ceinture orogénique correspond à un domaine lié à la formation d’une chaîne.",
+    "Des roches continentales voisines peuvent avoir des âges très différents.",
+    "Les traces de structures déformées et de roches métamorphiques contribuent à reconstituer une histoire."
+   ],
+   "image_mentale": "Une carte assemble des pièces continentales portant des histoires différentes.",
+   "regle_ou_methode": "Lis la légende de la carte, compare les âges et les structures, puis identifie les épisodes possibles.",
+   "exemples": [
+    "Une carte fictive montre un domaine de roches datées de 300 Ma à côté d’un domaine daté de 100 Ma : leurs âges indiquent des étapes différentes de l’histoire continentale.",
+    "Des roches déformées et métamorphisées au sein d’une ceinture ancienne constituent des indices d’un épisode orogénique à étudier avec d’autres données."
+   ],
+   "piege": "Une roche ancienne n’implique pas que toute la région a subi un seul événement.",
+   "astuce_memoire": "Un continent rassemble plusieurs histoires.",
+   "quiz": [
+    {
+     "q": "Deux régions continentales voisines ont-elles nécessairement le même âge géologique ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Oui, si elles sont sur le même continent"
+     ],
+     "rep": "Non",
+     "expl": "Les continents associent des domaines d’âges variés."
+    },
+    {
+     "q": "Une ceinture orogénique est liée à quoi ?",
+     "choix": [
+      "Uniquement à une plage actuelle",
+      "À la fabrication d’une carte",
+      "À un épisode de formation de chaîne de montagnes"
+     ],
+     "rep": "À un épisode de formation de chaîne de montagnes",
+     "expl": "Elle conserve des traces d’une histoire de formation de chaîne."
+    },
+    {
+     "q": "Quel indice aide à étudier une chaîne ancienne ?",
+     "choix": [
+      "Des roches déformées et métamorphisées",
+      "La couleur actuelle des routes",
+      "La taille d’une ville voisine"
+     ],
+     "rep": "Des roches déformées et métamorphisées",
+     "expl": "Structures et roches renseignent sur les conditions passées."
+    }
+   ],
+   "id": "REV-SVT-TLE-25"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Ophiolites et océan disparu",
+   "emoji": "🌊",
+   "en_une_phrase": "Des ophiolites dans une chaîne de montagnes peuvent conserver des fragments d’une ancienne lithosphère océanique.",
+   "comprendre": "La lithosphère océanique comporte notamment des roches de la croûte et du manteau. Des ensembles de ces roches peuvent être retrouvés dans une chaîne de montagnes. Leur position et leur nature, confrontées à d’autres indices, permettent de reconstituer la fermeture d’un océan.",
+   "essentiel": [
+    "Les ophiolites sont des ensembles de roches d’origine océanique.",
+    "Une suture ophiolitique témoigne d’un ancien domaine océanique fermé.",
+    "Le rapprochement de blocs continentaux peut suivre la fermeture océanique.",
+    "Obduction ou subduction suivie d’exhumation peuvent participer à leur présence en surface."
+   ],
+   "image_mentale": "Des fragments d’ancien plancher océanique sont conservés dans une couture entre continents.",
+   "regle_ou_methode": "Identifie la nature des roches puis leur position dans la chaîne pour argumenter l’existence d’un ancien océan.",
+   "exemples": [
+    "Une chaîne contient une association de basaltes, gabbros et péridotites d’origine océanique. Avec les structures de la région, cet ensemble appuie l’existence d’un ancien domaine océanique fermé.",
+    "Dans une chaîne, une bande d’ophiolites entre deux domaines continentaux peut marquer une ancienne suture, à confirmer par les autres observations."
+   ],
+   "piege": "La présence d’une seule roche volcanique ne suffit pas à reconstituer toute l’histoire d’un océan.",
+   "astuce_memoire": "Ophiolite : trace d’une lithosphère océanique.",
+   "quiz": [
+    {
+     "q": "Que peuvent indiquer des ophiolites dans une chaîne ?",
+     "choix": [
+      "La preuve qu’aucun océan n’a existé",
+      "Uniquement une ancienne rivière",
+      "Les vestiges d’une ancienne lithosphère océanique"
+     ],
+     "rep": "Les vestiges d’une ancienne lithosphère océanique",
+     "expl": "Leur assemblage peut conserver des roches océaniques."
+    },
+    {
+     "q": "Une suture ophiolitique est un indice de quel événement ?",
+     "choix": [
+      "La fermeture d’un domaine océanique",
+      "La formation d’un nuage",
+      "Une date précise connue sans mesure"
+     ],
+     "rep": "La fermeture d’un domaine océanique",
+     "expl": "Elle peut marquer la zone d’un ancien océan disparu."
+    },
+    {
+     "q": "Pour argumenter une origine océanique, que faut-il confronter ?",
+     "choix": [
+      "Leur couleur seule",
+      "La nature des roches et leur contexte géologique",
+      "Le relief actuel seul"
+     ],
+     "rep": "La nature des roches et leur contexte géologique",
+     "expl": "Plusieurs observations pétrographiques et structurales se complètent."
+    }
+   ],
+   "id": "REV-SVT-TLE-26"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Rift et marge passive",
+   "emoji": "🌍",
+   "en_une_phrase": "Un rift continental et les marges passives conservent des indices d’extension de la lithosphère.",
+   "comprendre": "Lorsque deux portions de lithosphère continentale s’écartent, la croûte peut s’amincir et se fracturer. Des failles normales et des blocs basculés se mettent en place. Si l’ouverture se poursuit jusqu’à la formation d’un océan, ces structures peuvent rester visibles sur ses marges passives.",
+   "essentiel": [
+    "Un rift continental correspond à une zone d’extension.",
+    "Les failles normales et blocs basculés témoignent d’une distension.",
+    "Les marges passives bordent l’océan après la fragmentation continentale.",
+    "Un rift ne conduit pas nécessairement à un océan : l’ouverture peut s’arrêter."
+   ],
+   "image_mentale": "Un bloc continental étiré se fracture et certains blocs basculent.",
+   "regle_ou_methode": "Observe les failles et les dépôts associés, puis cherche s’ils indiquent une extension passée.",
+   "exemples": [
+    "Dans un profil fictif, plusieurs failles normales délimitent des blocs basculés et amincissent la croûte : ces indices concordent avec une phase d’extension.",
+    "Une marge passive conserve des traces de la fragmentation antérieure à l’ouverture du domaine océanique voisin."
+   ],
+   "piege": "Un rift est un début possible de fragmentation, pas la garantie qu’un océan s’ouvrira.",
+   "astuce_memoire": "Rift : étirement ; failles normales et blocs basculés.",
+   "quiz": [
+    {
+     "q": "Quel indice soutient une phase d’extension continentale ?",
+     "choix": [
+      "Des failles normales et des blocs basculés",
+      "Seulement une rivière actuelle",
+      "Uniquement des fossiles de poissons"
+     ],
+     "rep": "Des failles normales et des blocs basculés",
+     "expl": "Ces structures accompagnent la distension de la croûte."
+    },
+    {
+     "q": "Un rift évolue-t-il forcément vers un océan ?",
+     "choix": [
+      "Oui, dans tous les cas",
+      "Non, la fragmentation peut s’interrompre",
+      "Oui, en une année"
+     ],
+     "rep": "Non, la fragmentation peut s’interrompre",
+     "expl": "Une ouverture continentale peut s’arrêter."
+    },
+    {
+     "q": "Que peut conserver une marge passive ?",
+     "choix": [
+      "Uniquement des traces de collision actuelle",
+      "La date exacte de chaque séisme futur",
+      "Des traces de la fragmentation continentale initiale"
+     ],
+     "rep": "Des traces de la fragmentation continentale initiale",
+     "expl": "Elle peut préserver les structures de distension antérieures."
+    }
+   ],
+   "id": "REV-SVT-TLE-27"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Subduction, collision et métamorphisme",
+   "emoji": "🗻",
+   "en_une_phrase": "Les roches et leurs minéraux enregistrent certaines conditions de la convergence des plaques.",
+   "comprendre": "Lors d’une convergence, une lithosphère océanique peut plonger en subduction. Des roches transformées en profondeur peuvent ensuite être retrouvées en surface. Leurs assemblages minéralogiques et les structures aident à reconstituer les conditions de pression et de température.",
+   "essentiel": [
+    "Le métamorphisme transforme une roche à l’état solide sous l’effet des conditions de pression et de température.",
+    "Certains assemblages minéraux indiquent des conditions de pression élevée.",
+    "La collision continentale peut suivre la fermeture d’un domaine océanique.",
+    "Les indices doivent être replacés dans leur contexte géologique."
+   ],
+   "image_mentale": "Une roche conserve des indices des conditions rencontrées au cours de son trajet.",
+   "regle_ou_methode": "Identifie les minéraux, compare leurs domaines de stabilité et relie-les aux structures observées.",
+   "exemples": [
+    "Une roche métamorphique présente un assemblage dont les données indiquent une pression élevée et une température relativement basse. En présence d’autres indices compatibles, cela soutient un passage en subduction.",
+    "Des roches océaniques métamorphisées et une suture dans une chaîne peuvent être associées à la fermeture d’un ancien océan."
+   ],
+   "piege": "Un seul minéral ou une seule observation ne suffit pas toujours à reconstituer tout le trajet d’une roche.",
+   "astuce_memoire": "Minéraux et structures : indices des conditions passées.",
+   "quiz": [
+    {
+     "q": "Que peut renseigner un assemblage minéralogique ?",
+     "choix": [
+      "La météo exacte du jour de découverte",
+      "Des conditions de pression et de température passées",
+      "Le nom de tous les anciens organismes"
+     ],
+     "rep": "Des conditions de pression et de température passées",
+     "expl": "Les minéraux sont stables dans certaines conditions."
+    },
+    {
+     "q": "Le métamorphisme étudié transforme une roche dans quel état ?",
+     "choix": [
+      "Uniquement après vaporisation",
+      "Uniquement dans un organisme vivant",
+      "À l’état solide"
+     ],
+     "rep": "À l’état solide",
+     "expl": "La transformation minéralogique a lieu à l’état solide."
+    },
+    {
+     "q": "Quelles données renforcent une hypothèse de subduction ?",
+     "choix": [
+      "Des minéraux et structures compatibles étudiés ensemble",
+      "Un seul chiffre sans contexte",
+      "La présence obligatoire d’une plage actuelle"
+     ],
+     "rep": "Des minéraux et structures compatibles étudiés ensemble",
+     "expl": "Des indices indépendants concordants rendent l’interprétation plus solide."
+    }
+   ],
+   "id": "REV-SVT-TLE-28"
+  },
+  {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Cycles orogéniques et paléogéographie",
+   "emoji": "🗺️",
+   "en_une_phrase": "La position des continents et des océans change au cours de cycles d’ouverture et de fermeture.",
+   "comprendre": "Les continents peuvent se fragmenter et un domaine océanique s’ouvrir. Plus tard, une convergence peut fermer cet océan puis rapprocher des continents et former une chaîne. La paléogéographie reconstitue l’organisation des continents et des océans à une époque passée.",
+   "essentiel": [
+    "Fragmentation continentale : ouverture possible d’un domaine océanique.",
+    "Convergence : subduction, fermeture possible puis collision continentale.",
+    "Les chaînes conservent des indices de cycles orogéniques successifs.",
+    "Les configurations passées sont reconstituées à partir de données multiples."
+   ],
+   "image_mentale": "Un puzzle de continents se sépare puis certaines pièces se rapprochent à nouveau.",
+   "regle_ou_methode": "Ordonne les indices d’extension, de domaine océanique, de subduction et de collision.",
+   "exemples": [
+    "Une reconstitution fictive réunit un rift ancien, des roches océaniques, puis une suture et des roches de collision. L’ordre cohérent est fragmentation, ouverture océanique, fermeture et collision.",
+    "Une carte ancienne reconstituée peut montrer des continents réunis avant une phase de fragmentation ultérieure."
+   ],
+   "piege": "Les étapes d’un cycle ne sont pas toujours toutes conservées ni visibles dans une même région.",
+   "astuce_memoire": "Ouvrir un océan, puis éventuellement le fermer.",
+   "quiz": [
+    {
+     "q": "Quel ordre reconstitue une histoire possible ?",
+     "choix": [
+      "Collision, fermeture océanique, ouverture océanique, fragmentation",
+      "Fermeture océanique, fragmentation, collision, ouverture océanique",
+      "Fragmentation, ouverture océanique, fermeture, collision"
+     ],
+     "rep": "Fragmentation, ouverture océanique, fermeture, collision",
+     "expl": "Les indices d’extension précèdent ici ceux de fermeture et de collision."
+    },
+    {
+     "q": "Que décrit la paléogéographie ?",
+     "choix": [
+      "La disposition des continents et océans à une époque passée",
+      "Le relevé de la météo du lendemain",
+      "Uniquement la carte des routes actuelles"
+     ],
+     "rep": "La disposition des continents et océans à une époque passée",
+     "expl": "Elle reconstitue la géographie passée de la Terre."
+    },
+    {
+     "q": "Pourquoi la reconstitution reste-t-elle parfois incomplète ?",
+     "choix": [
+      "Tous les événements laissent toujours la même trace intacte",
+      "Certaines traces ont pu être effacées ou ne sont pas accessibles",
+      "Les roches ne subissent jamais d’érosion"
+     ],
+     "rep": "Certaines traces ont pu être effacées ou ne sont pas accessibles",
+     "expl": "L’érosion et les transformations peuvent effacer des indices."
+    }
+   ],
+   "id": "REV-SVT-TLE-29"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Surfaces d’échange des plantes",
+   "emoji": "🌿",
+   "en_une_phrase": "Une plante fixée prélève des ressources grâce à de vastes surfaces d’échange.",
+   "comprendre": "Les feuilles exposent leurs cellules à la lumière et échangent des gaz avec l’air. Les racines absorbent l’eau et les ions minéraux du sol, souvent avec l’aide de champignons associés.",
+   "essentiel": [
+    "Les stomates permettent des échanges gazeux et des pertes d’eau.",
+    "Les poils absorbants augmentent la surface de contact avec le sol.",
+    "Une mycorhize associe une racine à un champignon et facilite souvent l’absorption."
+   ],
+   "image_mentale": "Une plante déploie un réseau de racines sous terre et un réseau de feuilles dans l’air.",
+   "regle_ou_methode": "Relier chaque organe à son milieu et à la ressource échangée.",
+   "exemples": [
+    "Une racine pourvue de poils absorbants explore une surface accrue : elle peut ainsi absorber eau et ions du sol.",
+    "Les stomates d’une feuille permettent l’entrée de CO₂ et la sortie de vapeur d’eau."
+   ],
+   "piege": "Une plante absorbe aussi de l’eau et échange des gaz : elle ne se nourrit pas uniquement de sol.",
+   "astuce_memoire": "Sol : racines ; air et lumière : feuilles.",
+   "quiz": [
+    {
+     "q": "Quel organe prélève principalement l’eau du sol ?",
+     "choix": [
+      "La racine",
+      "La fleur",
+      "Le fruit mûr"
+     ],
+     "rep": "La racine",
+     "expl": "Les racines assurent l’absorption de l’eau."
+    },
+    {
+     "q": "Quel est l’effet des poils absorbants ?",
+     "choix": [
+      "Fabriquer directement le pollen",
+      "Augmenter la surface d’échange avec le sol",
+      "Empêcher toute absorption"
+     ],
+     "rep": "Augmenter la surface d’échange avec le sol",
+     "expl": "Leur surface favorise les échanges avec le sol."
+    },
+    {
+     "q": "Une mycorhize associe une racine à quoi ?",
+     "choix": [
+      "Une fleur",
+      "Un insecte",
+      "Un champignon"
+     ],
+     "rep": "Un champignon",
+     "expl": "C’est une association entre la plante et un champignon."
+    }
+   ],
+   "id": "REV-SVT-TLE-30"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Transport dans la plante",
+   "emoji": "🚰",
+   "en_une_phrase": "Les tissus conducteurs relient les organes qui absorbent, produisent et stockent la matière.",
+   "comprendre": "Les racines prélèvent l’eau et les ions minéraux. Les feuilles produisent des sucres qui peuvent être distribués vers des organes consommateurs ou de réserve.",
+   "essentiel": [
+    "Le xylème conduit principalement l’eau et les ions minéraux des racines vers les parties aériennes.",
+    "Le phloème distribue la sève élaborée riche en sucres.",
+    "Un organe de réserve reçoit et stocke de la matière organique."
+   ],
+   "image_mentale": "Deux réseaux relient racines, feuilles et organes de réserve.",
+   "regle_ou_methode": "Identifier la nature de la matière et le tissu conducteur concerné.",
+   "exemples": [
+    "De l’eau absorbée par la racine atteint une feuille par le xylème ; cette eau contribue notamment à la photosynthèse.",
+    "Des sucres produits par les feuilles peuvent rejoindre un tubercule par le phloème."
+   ],
+   "piege": "La sève brute riche en eau et ions ne correspond pas à la sève élaborée riche en sucres.",
+   "astuce_memoire": "Xylème : eau et ions ; phloème : sucres.",
+   "quiz": [
+    {
+     "q": "Quel tissu conduit principalement l’eau des racines vers les feuilles ?",
+     "choix": [
+      "Le phloème",
+      "Le xylème",
+      "Le pollen"
+     ],
+     "rep": "Le xylème",
+     "expl": "Le xylème transporte l’eau et les ions."
+    },
+    {
+     "q": "Quel tissu distribue la sève riche en sucres ?",
+     "choix": [
+      "Le xylème",
+      "Le stomate",
+      "Le phloème"
+     ],
+     "rep": "Le phloème",
+     "expl": "Le phloème relie organes producteurs et utilisateurs."
+    },
+    {
+     "q": "Les sucres stockés dans un tubercule proviennent notamment de ?",
+     "choix": [
+      "La production par photosynthèse des organes chlorophylliens",
+      "La transformation directe du sol en sucre par la racine",
+      "La graine seule pendant toute la vie"
+     ],
+     "rep": "La production par photosynthèse des organes chlorophylliens",
+     "expl": "Les organes chlorophylliens produisent les sucres distribués."
+    }
+   ],
+   "id": "REV-SVT-TLE-31"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Croissance et développement",
+   "emoji": "🌱",
+   "en_une_phrase": "Les méristèmes produisent de nouvelles cellules qui grandissent et se différencient.",
+   "comprendre": "Une plante peut développer de nouveaux organes tout au long de sa vie. Dans les méristèmes, les divisions produisent des cellules dont certaines s’allongent puis se différencient.",
+   "essentiel": [
+    "Les mitoses multiplient les cellules dans les méristèmes.",
+    "L’élongation augmente la taille des cellules.",
+    "L’auxine participe au contrôle du développement.",
+    "La lumière ou la gravité peuvent influencer la croissance."
+   ],
+   "image_mentale": "Un bourgeon contient une zone de croissance qui produit de nouveaux organes.",
+   "regle_ou_methode": "Distinguer multiplication, allongement et différenciation ; observer l’influence du milieu.",
+   "exemples": [
+    "Dans une jeune tige éclairée de côté, une croissance différentielle peut orienter sa courbure vers la lumière.",
+    "La pointe d’une racine contient un méristème où des cellules se divisent."
+   ],
+   "piege": "Croissance d’un organe ne signifie pas uniquement multiplication : les cellules peuvent aussi s’allonger.",
+   "astuce_memoire": "Méristème : division ; ensuite : élongation et différenciation.",
+   "quiz": [
+    {
+     "q": "Où les cellules se multiplient-elles activement ?",
+     "choix": [
+      "Dans une graine morte",
+      "Dans l’air extérieur",
+      "Dans un méristème"
+     ],
+     "rep": "Dans un méristème",
+     "expl": "Les mitoses ont notamment lieu dans les méristèmes."
+    },
+    {
+     "q": "Une tige peut se courber vers la lumière notamment grâce à ?",
+     "choix": [
+      "Une croissance différente sur ses deux côtés",
+      "Un déplacement de la racine hors du sol",
+      "Une disparition de toutes les cellules"
+     ],
+     "rep": "Une croissance différente sur ses deux côtés",
+     "expl": "Des croissances différentielles orientent l’organe."
+    },
+    {
+     "q": "Quel facteur environnemental peut influencer le développement ?",
+     "choix": [
+      "Le nom de la plante",
+      "La lumière",
+      "La couleur de son étiquette"
+     ],
+     "rep": "La lumière",
+     "expl": "La lumière peut orienter la croissance."
+    }
+   ],
+   "id": "REV-SVT-TLE-32"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Photosynthèse et dioxygène",
+   "emoji": "☀️",
+   "en_une_phrase": "La photosynthèse utilise l’énergie lumineuse pour produire de la matière organique à partir de matière minérale.",
+   "comprendre": "Dans les chloroplastes, des pigments captent l’énergie lumineuse. La transformation de l’eau libère du dioxygène et le carbone du CO₂ participe à la fabrication de sucres.",
+   "essentiel": [
+    "Les chloroplastes sont présents dans les cellules chlorophylliennes.",
+    "L’eau et le CO₂ sont des ressources de la photosynthèse.",
+    "Le dioxygène libéré provient de l’eau.",
+    "Une partie des sucres produits peut être stockée ou transportée."
+   ],
+   "image_mentale": "Une feuille capte la lumière et fabrique des sucres à partir d’eau et de CO₂.",
+   "regle_ou_methode": "Identifier les ressources, l’énergie et les produits, puis vérifier le rôle de la lumière.",
+   "exemples": [
+    "Une plante éclairée dispose d’eau et de CO₂ : ses cellules chlorophylliennes peuvent produire des sucres et libérer du dioxygène.",
+    "Après avoir réduit les réserves d’amidon par une mise préalable à l’obscurité, comparer une feuille éclairée à une feuille maintenue dans l’obscurité permet de tester le rôle de la lumière dans la production d’amidon."
+   ],
+   "piege": "Le dioxygène dégagé lors de la photosynthèse provient de l’eau, pas du seul CO₂.",
+   "astuce_memoire": "Lumière, eau, CO₂ : sucres et dioxygène.",
+   "quiz": [
+    {
+     "q": "Quelle source d’énergie la photosynthèse utilise-t-elle ?",
+     "choix": [
+      "La lumière",
+      "La chaleur seule",
+      "Le vent seul"
+     ],
+     "rep": "La lumière",
+     "expl": "Les pigments captent l’énergie lumineuse."
+    },
+    {
+     "q": "D’où provient le dioxygène dégagé par la photosynthèse ?",
+     "choix": [
+      "Du carbone du CO₂",
+      "De l’eau",
+      "Des ions minéraux uniquement"
+     ],
+     "rep": "De l’eau",
+     "expl": "La photolyse de l’eau libère du dioxygène."
+    },
+    {
+     "q": "Quel organite contient les pigments chlorophylliens ?",
+     "choix": [
+      "Le noyau",
+      "La paroi",
+      "Le chloroplaste"
+     ],
+     "rep": "Le chloroplaste",
+     "expl": "Les chloroplastes accueillent la photosynthèse."
+    }
+   ],
+   "id": "REV-SVT-TLE-33"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Produits et réserves végétales",
+   "emoji": "🥔",
+   "en_une_phrase": "Les sucres fabriqués par photosynthèse servent à construire, stocker et protéger la plante.",
+   "comprendre": "Les organes chlorophylliens produisent des sucres transportés vers d’autres parties. Les cellules les utilisent ou les transforment en diverses molécules.",
+   "essentiel": [
+    "La cellulose contribue à la structure des parois.",
+    "La lignine participe au soutien de certains tissus.",
+    "L’amidon peut constituer une réserve.",
+    "Certains métabolites interviennent dans la défense ou les interactions."
+   ],
+   "image_mentale": "La matière produite circule vers les chantiers, les réserves et les systèmes de défense.",
+   "regle_ou_methode": "Relier chaque molécule à sa fonction : construction, stockage ou interaction.",
+   "exemples": [
+    "Dans un tubercule de pomme de terre, une partie des sucres produits par les feuilles est transformée en amidon stocké.",
+    "Dans une tige, la lignine contribue au soutien des tissus."
+   ],
+   "piege": "Un organe de réserve peut stocker de la matière même s’il ne réalise pas la photosynthèse.",
+   "astuce_memoire": "Sucres : construire, stocker, interagir.",
+   "quiz": [
+    {
+     "q": "Quelle molécule est une réserve fréquente chez les plantes ?",
+     "choix": [
+      "Le dioxygène",
+      "L’amidon",
+      "L’eau seule"
+     ],
+     "rep": "L’amidon",
+     "expl": "L’amidon stocke de la matière organique."
+    },
+    {
+     "q": "Quelle substance contribue au soutien de certains tissus ?",
+     "choix": [
+      "Le pollen",
+      "Le dioxyde de carbone",
+      "La lignine"
+     ],
+     "rep": "La lignine",
+     "expl": "La lignine participe à la rigidité."
+    },
+    {
+     "q": "Un tubercule souterrain peut-il stocker des produits des feuilles ?",
+     "choix": [
+      "Oui, grâce au transport de matière organique",
+      "Non, il doit fabriquer tout son sucre par photosynthèse",
+      "Non, les feuilles ne produisent pas de sucres"
+     ],
+     "rep": "Oui, grâce au transport de matière organique",
+     "expl": "Les sucres circulent vers les organes de réserve."
+    }
+   ],
+   "id": "REV-SVT-TLE-34"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Reproduction asexuée et clone",
+   "emoji": "🌱",
+   "en_une_phrase": "La reproduction asexuée peut produire une nouvelle plante à partir d’un fragment végétal.",
+   "comprendre": "Certaines cellules végétales peuvent contribuer à régénérer un individu entier. Le bouturage exploite cette capacité sans fécondation.",
+   "essentiel": [
+    "La totipotence est la capacité de certaines cellules à former un organisme entier dans des conditions adaptées.",
+    "Une bouture provient d’un fragment d’une plante.",
+    "Les descendants obtenus appartiennent au même clone, sous réserve de mutations."
+   ],
+   "image_mentale": "Un fragment de tige développe des racines et devient une nouvelle plante.",
+   "regle_ou_methode": "Prélever un fragment viable et le placer dans des conditions permettant son enracinement.",
+   "exemples": [
+    "Une tige prélevée sur une plante et enracinée donne une bouture : elle provient de divisions cellulaires sans fécondation.",
+    "Un fraisier peut former un nouveau pied à partir d’un stolon."
+   ],
+   "piege": "Un clone n’est pas forcément constitué d’individus toujours identiques en apparence : le milieu et les mutations peuvent agir.",
+   "astuce_memoire": "Bouture : un parent, sans fécondation.",
+   "quiz": [
+    {
+     "q": "La bouture nécessite-t-elle une fécondation ?",
+     "choix": [
+      "Oui, toujours",
+      "Seulement si la tige est verte",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "C’est une reproduction asexuée."
+    },
+    {
+     "q": "Que permet la totipotence de certaines cellules végétales ?",
+     "choix": [
+      "Régénérer un organisme entier dans des conditions adaptées",
+      "Transformer immédiatement toutes les plantes en graines",
+      "Supprimer toute influence du milieu"
+     ],
+     "rep": "Régénérer un organisme entier dans des conditions adaptées",
+     "expl": "Certaines cellules peuvent régénérer une plante."
+    },
+    {
+     "q": "Des plantes clonales ont-elles toujours un aspect strictement identique ?",
+     "choix": [
+      "Oui, quelles que soient leurs conditions",
+      "Non, le milieu peut modifier leur développement",
+      "Non, elles ont toujours des parents différents"
+     ],
+     "rep": "Non, le milieu peut modifier leur développement",
+     "expl": "Le milieu peut influencer le phénotype."
+    }
+   ],
+   "id": "REV-SVT-TLE-35"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Fleur et pollinisation",
+   "emoji": "🌼",
+   "en_une_phrase": "La pollinisation transporte le pollen vers une fleur et permet le rapprochement des gamètes.",
+   "comprendre": "Les étamines produisent les grains de pollen, vecteurs des gamètes mâles. Le pistil porte les ovules végétaux contenant les structures femelles ; le vent ou des animaux peuvent transporter le pollen.",
+   "essentiel": [
+    "Les étamines portent le pollen.",
+    "Le pistil contient les ovules végétaux.",
+    "La pollinisation précède la fécondation.",
+    "Certaines plantes favorisent la fécondation croisée."
+   ],
+   "image_mentale": "Un insecte visite des fleurs et transporte des grains de pollen.",
+   "regle_ou_methode": "Identifier l’organe donneur, le vecteur et l’organe receveur.",
+   "exemples": [
+    "Un insecte visite une fleur puis une autre : du pollen déposé sur le pistil peut permettre une fécondation croisée.",
+    "Pour certaines plantes, le vent transporte le pollen entre fleurs."
+   ],
+   "piege": "Pollinisation et fécondation sont deux étapes différentes.",
+   "astuce_memoire": "Pollen transporté, puis rapprochement des gamètes.",
+   "quiz": [
+    {
+     "q": "Où trouve-t-on le pollen ?",
+     "choix": [
+      "Sur les étamines",
+      "Dans les racines",
+      "Dans le xylème"
+     ],
+     "rep": "Sur les étamines",
+     "expl": "Les étamines portent le pollen."
+    },
+    {
+     "q": "Quel événement précède la fécondation chez une plante à fleurs ?",
+     "choix": [
+      "La germination de la graine formée",
+      "La pollinisation",
+      "La chute du fruit mûr"
+     ],
+     "rep": "La pollinisation",
+     "expl": "Le pollen doit d’abord atteindre une fleur réceptrice."
+    },
+    {
+     "q": "Quel agent peut transporter le pollen ?",
+     "choix": [
+      "Un caillou posé au sol",
+      "La sève élaborée uniquement",
+      "Un insecte pollinisateur"
+     ],
+     "rep": "Un insecte pollinisateur",
+     "expl": "Des animaux peuvent déplacer le pollen."
+    }
+   ],
+   "id": "REV-SVT-TLE-36"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Plante et pollinisateur : coévolution",
+   "emoji": "🦋",
+   "en_une_phrase": "Une plante et son pollinisateur peuvent exercer des pressions de sélection réciproques.",
+   "comprendre": "Un pollinisateur peut accéder à une ressource florale et transporter du pollen. Sur de nombreuses générations, les caractères de chaque partenaire peuvent influencer la reproduction de l’autre.",
+   "essentiel": [
+    "La fleur peut fournir du nectar ou du pollen à l’animal.",
+    "Le déplacement de l’animal peut transporter le pollen entre fleurs.",
+    "La coévolution suppose des changements évolutifs liés à des pressions de sélection réciproques.",
+    "Une ressemblance de formes ne suffit pas seule à prouver la coévolution."
+   ],
+   "image_mentale": "La forme de la fleur et celle de l’animal peuvent contribuer à leur interaction.",
+   "regle_ou_methode": "Identifier le bénéfice pour chaque partenaire et examiner les effets possibles sur la reproduction.",
+   "exemples": [
+    "Dans une situation fictive, un insecte qui atteint mieux le nectar visite davantage de fleurs et transporte du pollen ; les caractères favorisant l’interaction peuvent être avantagés au fil des générations.",
+    "Un autre insecte peut visiter plusieurs espèces de fleurs : une interaction n’impose pas une exclusivité."
+   ],
+   "piege": "Une interaction observée aujourd’hui ne prouve pas à elle seule une évolution réciproque.",
+   "astuce_memoire": "Coévolution : sélection réciproque sur des générations.",
+   "quiz": [
+    {
+     "q": "Que peut transporter un pollinisateur entre fleurs ?",
+     "choix": [
+      "Des racines",
+      "Du pollen",
+      "Du xylème"
+     ],
+     "rep": "Du pollen",
+     "expl": "Le pollen peut adhérer à l’animal puis atteindre une autre fleur."
+    },
+    {
+     "q": "La coévolution suppose notamment ?",
+     "choix": [
+      "Une transformation volontaire immédiate de la fleur",
+      "L’absence de toute reproduction",
+      "Des pressions de sélection réciproques au fil des générations"
+     ],
+     "rep": "Des pressions de sélection réciproques au fil des générations",
+     "expl": "Chaque partenaire peut influencer l’évolution de l’autre."
+    },
+    {
+     "q": "La ressemblance entre une fleur et un insecte prouve-t-elle seule une coévolution ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, sans aucune autre donnée"
+     ],
+     "rep": "Non",
+     "expl": "Une histoire évolutive demande d’autres indices."
+    }
+   ],
+   "id": "REV-SVT-TLE-37"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Graines, fruits et dispersion",
+   "emoji": "🍎",
+   "en_une_phrase": "Après fécondation, la graine protège l’embryon et le fruit peut favoriser sa dispersion.",
+   "comprendre": "Chez les plantes à fleurs, la reproduction produit des graines contenant un embryon et des réserves. Les graines peuvent être transportées loin de la plante mère par le vent, l’eau ou des animaux.",
+   "essentiel": [
+    "La graine contient un embryon.",
+    "Des réserves soutiennent le début de la germination.",
+    "Après fécondation, le fruit contient généralement les graines chez les plantes à fleurs.",
+    "La dispersion permet à la descendance d’atteindre de nouveaux milieux."
+   ],
+   "image_mentale": "Un fruit mangé par un animal peut disperser ses graines ailleurs.",
+   "regle_ou_methode": "Distinguer fécondation, formation de la graine, dispersion puis germination.",
+   "exemples": [
+    "Un animal consomme un fruit et rejette plus loin certaines graines intactes : la plante peut disperser sa descendance.",
+    "Lors de la germination, les réserves de la graine alimentent d’abord le jeune plant."
+   ],
+   "piege": "Une graine est un nouvel organisme en développement, pas un grain de pollen.",
+   "astuce_memoire": "Graine : embryon protégé et réserves.",
+   "quiz": [
+    {
+     "q": "Que contient une graine ?",
+     "choix": [
+      "Uniquement des grains de pollen",
+      "Une racine adulte obligatoire",
+      "Un embryon"
+     ],
+     "rep": "Un embryon",
+     "expl": "L’embryon peut donner un nouveau plant."
+    },
+    {
+     "q": "À quoi servent les réserves de la graine ?",
+     "choix": [
+      "À soutenir le début de la germination",
+      "À remplacer définitivement toutes les feuilles",
+      "À empêcher toute croissance"
+     ],
+     "rep": "À soutenir le début de la germination",
+     "expl": "Elles fournissent des ressources au jeune plant."
+    },
+    {
+     "q": "Un fruit consommé par un animal peut favoriser ?",
+     "choix": [
+      "La formation directe de racines dans l’air",
+      "La dispersion de graines",
+      "La suppression de la reproduction"
+     ],
+     "rep": "La dispersion de graines",
+     "expl": "Certaines graines sont transportées puis rejetées."
+    }
+   ],
+   "id": "REV-SVT-TLE-38"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Sélection et domestication",
+   "emoji": "🌽",
+   "en_une_phrase": "La domestication sélectionne au fil des générations des caractères utiles aux humains.",
+   "comprendre": "Les humains choisissent et reproduisent certaines plantes présentant les caractères recherchés. Cette sélection modifie les fréquences de caractères héréditaires dans les populations cultivées.",
+   "essentiel": [
+    "La sélection peut favoriser la taille des graines ou la facilité de récolte.",
+    "Un croisement réunit des caractères issus de deux parents.",
+    "Des variétés cultivées peuvent conserver une diversité de formes.",
+    "La diversité génétique globale peut diminuer pendant la domestication."
+   ],
+   "image_mentale": "À chaque génération, des graines de plantes choisies sont ressemées.",
+   "regle_ou_methode": "Identifier le caractère héréditaire choisi, la reproduction puis son évolution dans la population.",
+   "exemples": [
+    "Si les cultivateurs ressèment surtout les graines de plantes aux gros grains, cette sélection peut rendre les gros grains plus fréquents au fil des générations.",
+    "Des variétés de chou peuvent présenter différentes parties développées, issues de sélections différentes."
+   ],
+   "piege": "Une caractéristique acquise par une plante sous l’effet du milieu n’est pas nécessairement transmise génétiquement.",
+   "astuce_memoire": "Choix répétés : caractères héréditaires plus fréquents.",
+   "quiz": [
+    {
+     "q": "Que choisit-on pour une sélection variétale ?",
+     "choix": [
+      "Des reproducteurs portant des caractères recherchés",
+      "Des étiquettes de couleur seulement",
+      "Des plantes prises uniquement selon leur place"
+     ],
+     "rep": "Des reproducteurs portant des caractères recherchés",
+     "expl": "On choisit les individus à reproduire selon des caractères."
+    },
+    {
+     "q": "La domestication peut-elle réduire la diversité allélique globale ?",
+     "choix": [
+      "Non, jamais",
+      "Oui",
+      "Seulement si aucune plante ne se reproduit"
+     ],
+     "rep": "Oui",
+     "expl": "La sélection peut appauvrir une partie de la diversité génétique."
+    },
+    {
+     "q": "Un caractère acquis pendant la vie est-il automatiquement héréditaire ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, uniquement chez les plantes cultivées",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Un effet du milieu n’est pas nécessairement transmis."
+    }
+   ],
+   "id": "REV-SVT-TLE-39"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Créer des variétés végétales",
+   "emoji": "🧬",
+   "en_une_phrase": "Plusieurs méthodes permettent de produire et sélectionner des variétés présentant des caractères recherchés.",
+   "comprendre": "Le croisement réunit des variantes génétiques de deux plantes parentes. Des biotechnologies peuvent aussi introduire ou modifier des séquences d’ADN, puis les plantes obtenues sont étudiées et sélectionnées.",
+   "essentiel": [
+    "Un croisement associe des patrimoines génétiques parentaux.",
+    "La transgenèse introduit une séquence d’ADN dans un organisme.",
+    "L’édition du génome peut modifier de façon ciblée une séquence.",
+    "Le caractère obtenu et ses effets doivent être évalués."
+   ],
+   "image_mentale": "Des plantes issues de méthodes différentes sont comparées pour un caractère donné.",
+   "regle_ou_methode": "Identifier la méthode, le caractère recherché puis vérifier le résultat observé.",
+   "exemples": [
+    "On croise une variété productive avec une variété porteuse d’une résistance : parmi les descendants, on recherche ceux qui associent les caractères souhaités.",
+    "Une modification ciblée d’une séquence du génome peut être suivie d’une vérification du caractère obtenu et de ses effets."
+   ],
+   "piege": "Un croisement ne garantit pas que chaque descendant hérite de tous les caractères recherchés.",
+   "astuce_memoire": "Créer de la diversité, puis observer et sélectionner.",
+   "quiz": [
+    {
+     "q": "Que réunit un croisement ?",
+     "choix": [
+      "Uniquement des caractères acquis pendant la vie",
+      "Des variantes issues de deux parents",
+      "Des roches de deux sols"
+     ],
+     "rep": "Des variantes issues de deux parents",
+     "expl": "La reproduction combine des patrimoines génétiques parentaux."
+    },
+    {
+     "q": "Que vise l’édition du génome ?",
+     "choix": [
+      "La suppression automatique de toutes les maladies",
+      "L’arrêt définitif de la reproduction",
+      "Une modification ciblée d’une séquence d’ADN"
+     ],
+     "rep": "Une modification ciblée d’une séquence d’ADN",
+     "expl": "Elle permet de modifier une séquence ciblée."
+    },
+    {
+     "q": "Après un croisement de deux plantes aux caractères souhaités, tous les descendants les réunissent-ils nécessairement ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, seulement si les deux plantes sont vertes"
+     ],
+     "rep": "Non",
+     "expl": "Les caractères se répartissent entre descendants."
+    }
+   ],
+   "id": "REV-SVT-TLE-40"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Diversité cultivée et vulnérabilité",
+   "emoji": "🌾",
+   "en_une_phrase": "La diversité génétique contribue à la capacité des cultures à faire face aux changements et aux maladies.",
+   "comprendre": "Une culture très homogène peut être vulnérable si tous les individus partagent une même sensibilité. Les ressources génétiques des variétés anciennes et des proches sauvages peuvent contribuer à diversifier les sélections.",
+   "essentiel": [
+    "Une variété peut réunir des caractères recherchés pour la culture.",
+    "Une faible diversité génétique peut accroître une vulnérabilité commune.",
+    "Des croisements peuvent introduire des caractères provenant d’autres populations.",
+    "La protection des cultures combine plusieurs pratiques adaptées."
+   ],
+   "image_mentale": "Un groupe de plantes identiques peut partager un même point faible.",
+   "regle_ou_methode": "Relier diversité, sensibilité aux maladies et choix des variétés.",
+   "exemples": [
+    "Si une maladie touche une variété et que tout un champ lui est sensible, la récolte entière peut être affectée.",
+    "Croiser une variété cultivée avec une autre population porteuse d’une résistance peut contribuer à sélectionner une descendance résistante."
+   ],
+   "piege": "La diversité ne garantit pas qu’aucune maladie ne se développera.",
+   "astuce_memoire": "Diversité : davantage de réponses possibles.",
+   "quiz": [
+    {
+     "q": "Quel risque peut accompagner une culture génétiquement très homogène ?",
+     "choix": [
+      "Une impossibilité totale de photosynthèse",
+      "Une disparition automatique de toutes les plantes",
+      "Une sensibilité commune à une maladie"
+     ],
+     "rep": "Une sensibilité commune à une maladie",
+     "expl": "Les individus peuvent partager la même sensibilité."
+    },
+    {
+     "q": "Que peut apporter une population sauvage proche à un programme de sélection ?",
+     "choix": [
+      "Des variantes génétiques utiles",
+      "Une garantie que toute maladie disparaît",
+      "Une absence totale de caractères héréditaires"
+     ],
+     "rep": "Des variantes génétiques utiles",
+     "expl": "Elle peut contenir des variantes utiles."
+    },
+    {
+     "q": "Une diversité génétique élevée garantit-elle l’absence de maladie ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Oui, si les feuilles sont vertes"
+     ],
+     "rep": "Non",
+     "expl": "Elle ne supprime pas tout risque."
+    }
+   ],
+   "id": "REV-SVT-TLE-41"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Domestication et évolution humaine",
+   "emoji": "🍞",
+   "en_une_phrase": "Les pratiques alimentaires liées aux plantes cultivées peuvent influencer l’évolution des populations humaines.",
+   "comprendre": "La domestication modifie les plantes et les ressources disponibles pour les humains. Sur de nombreuses générations, un changement durable d’alimentation peut contribuer à sélectionner des variantes génétiques humaines, avec d’autres facteurs.",
+   "essentiel": [
+    "L’évolution culturelle peut modifier l’alimentation.",
+    "Une variante héréditaire peut devenir plus fréquente si elle favorise la reproduction dans un milieu donné.",
+    "Des gènes liés à l’amylase salivaire permettent d’étudier les relations entre alimentation et diversité humaine.",
+    "Une corrélation entre régime alimentaire et gènes ne suffit pas à prouver seule un mécanisme de sélection."
+   ],
+   "image_mentale": "Une culture transforme le régime alimentaire ; plusieurs générations plus tard, certaines variantes peuvent devenir plus fréquentes.",
+   "regle_ou_methode": "Distinguer pratique culturelle, caractères héréditaires et évolution des fréquences dans une population.",
+   "exemples": [
+    "Dans une situation hypothétique, une alimentation riche en amidon se généralise ; une variante héréditaire qui favorise la reproduction dans ce contexte peut devenir plus fréquente au fil des générations.",
+    "L’amylase salivaire contribue à la digestion de l’amidon ; sa quantité et les gènes associés peuvent être étudiés en lien avec les régimes alimentaires."
+   ],
+   "piege": "Une personne ne transmet pas automatiquement un caractère acquis parce qu’elle change de régime alimentaire.",
+   "astuce_memoire": "Culture et évolution biologique peuvent interagir sur plusieurs générations.",
+   "quiz": [
+    {
+     "q": "À quelle échelle la sélection modifie-t-elle la fréquence de variantes héréditaires ?",
+     "choix": [
+      "Sur plusieurs générations dans une population",
+      "Immédiatement chez un individu après un repas",
+      "Uniquement pendant la germination"
+     ],
+     "rep": "Sur plusieurs générations dans une population",
+     "expl": "L’évolution génétique concerne des populations au fil des générations."
+    },
+    {
+     "q": "Quel est le rôle de l’amylase salivaire ?",
+     "choix": [
+      "Former des grains de pollen",
+      "Participer à la digestion de l’amidon",
+      "Produire du dioxygène par photosynthèse"
+     ],
+     "rep": "Participer à la digestion de l’amidon",
+     "expl": "Elle contribue à la digestion de l’amidon."
+    },
+    {
+     "q": "Une simple corrélation entre régime et gènes démontre-t-elle seule une sélection ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, si deux personnes ont le même régime",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "D’autres explications et données doivent être examinées."
+    }
+   ],
+   "id": "REV-SVT-TLE-42"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Archives des climats passés",
+   "emoji": "🧊",
+   "en_une_phrase": "Les climats anciens sont reconstitués en confrontant plusieurs archives naturelles.",
+   "comprendre": "Les mesures directes ne remontent pas à tous les climats anciens. Glaces, sédiments, pollens et traces géologiques fournissent des indices indirects qu’il faut dater et interpréter.",
+   "essentiel": [
+    "Les bulles d’air des glaces renseignent sur une atmosphère passée.",
+    "Les pollens conservés renseignent sur la végétation passée.",
+    "Les moraines témoignent de l’extension passée de glaciers.",
+    "Plusieurs indices concordants renforcent une reconstitution."
+   ],
+   "image_mentale": "Une carotte de glace et une couche de sédiment sont deux pages d’archives différentes.",
+   "regle_ou_methode": "Dater l’archive, identifier ce qu’elle mesure puis comparer des indices indépendants.",
+   "exemples": [
+    "Dans une couche sédimentaire, beaucoup de pollens d’arbres adaptés au froid suggèrent une végétation froide ; on confronte cette hypothèse à d’autres indices datés de la même période.",
+    "Une moraine peut marquer une ancienne position d’un glacier, sans donner à elle seule la température exacte."
+   ],
+   "piege": "Un pollen isolé ou une moraine ne mesure pas directement la température mondiale.",
+   "astuce_memoire": "Plusieurs archives datées, puis une interprétation.",
+   "quiz": [
+    {
+     "q": "Quel indice renseigne sur une végétation ancienne ?",
+     "choix": [
+      "Une mesure de vent prise aujourd’hui",
+      "Les pollens fossiles",
+      "La couleur actuelle d’un bâtiment"
+     ],
+     "rep": "Les pollens fossiles",
+     "expl": "Les pollens conservés reflètent des végétations passées."
+    },
+    {
+     "q": "Que peuvent contenir les bulles d’une carotte de glace ?",
+     "choix": [
+      "Des prévisions météorologiques",
+      "Des racines vivantes de toutes les plantes",
+      "De l’air ancien"
+     ],
+     "rep": "De l’air ancien",
+     "expl": "Elles renferment des échantillons d’atmosphère passée."
+    },
+    {
+     "q": "Pourquoi comparer plusieurs archives ?",
+     "choix": [
+      "Pour confronter des indices indépendants",
+      "Pour éviter de les dater",
+      "Pour prouver qu’une seule mesure est toujours exacte"
+     ],
+     "rep": "Pour confronter des indices indépendants",
+     "expl": "Des archives diverses peuvent confirmer ou nuancer une hypothèse."
+    }
+   ],
+   "id": "REV-SVT-TLE-43"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Pollens et reconstitution climatique",
+   "emoji": "🌲",
+   "en_une_phrase": "Les proportions de pollens aident à reconstituer les végétations anciennes et à proposer un climat.",
+   "comprendre": "Les végétaux produisent des pollens qui peuvent se conserver dans les sédiments. La végétation dépend notamment du climat, mais aussi d’autres facteurs locaux.",
+   "essentiel": [
+    "Un diagramme pollinique présente des proportions selon la profondeur ou l’âge des couches.",
+    "Les espèces végétales n’ont pas toutes les mêmes exigences climatiques.",
+    "Les différences de production et de transport des pollens limitent l’interprétation."
+   ],
+   "image_mentale": "Un empilement de couches garde des traces de végétations successives.",
+   "regle_ou_methode": "Comparer les proportions de pollens, identifier les végétations possibles puis croiser avec d’autres archives.",
+   "exemples": [
+    "Dans une couche ancienne contenant 80 pollens d’arbres de milieu froid sur 100 pollens identifiés, leur proportion est 80 %. Cette proportion suggère une végétation froide sans établir à elle seule une température exacte.",
+    "Une couche plus récente riche en pollens d’arbres tempérés suggère un changement de végétation à interpréter avec d’autres données."
+   ],
+   "piege": "La proportion de pollen n’est pas forcément la proportion exacte de chaque arbre dans le paysage.",
+   "astuce_memoire": "Pollens : indice de végétation, puis hypothèse climatique.",
+   "quiz": [
+    {
+     "q": "80 pollens sur 100 représentent quelle proportion ?",
+     "choix": [
+      "8 %",
+      "20 %",
+      "80 %"
+     ],
+     "rep": "80 %",
+     "expl": "80/100 = 0,8."
+    },
+    {
+     "q": "Un diagramme pollinique renseigne directement sur quoi ?",
+     "choix": [
+      "Les pollens conservés dans les couches",
+      "La température exacte du globe à chaque date",
+      "La composition actuelle de toutes les forêts"
+     ],
+     "rep": "Les pollens conservés dans les couches",
+     "expl": "Il décrit les pollens présents dans les échantillons."
+    },
+    {
+     "q": "Pourquoi rester prudent sur les proportions de plantes ?",
+     "choix": [
+      "Tous les végétaux produisent nécessairement autant de pollen",
+      "La production et le transport des pollens varient selon les espèces",
+      "Le pollen ne se conserve jamais"
+     ],
+     "rep": "La production et le transport des pollens varient selon les espèces",
+     "expl": "Les espèces produisent et dispersent différemment leurs pollens."
+    }
+   ],
+   "id": "REV-SVT-TLE-44"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Isotopes et thermomètre climatique",
+   "emoji": "🔬",
+   "en_une_phrase": "Les rapports isotopiques de l’oxygène sont des indices indirects des climats passés.",
+   "comprendre": "L’eau et les carbonates contiennent plusieurs isotopes de l’oxygène. Leurs proportions dans les glaces ou les sédiments varient notamment avec les conditions climatiques et doivent être interprétées selon l’archive.",
+   "essentiel": [
+    "Le rapport isotopique de l’oxygène peut être exprimé par δ¹⁸O.",
+    "Les glaces polaires et les carbonates marins sont deux archives différentes.",
+    "La relation entre signal isotopique et climat dépend du support et d’autres facteurs.",
+    "On compare des archives datées pour reconstituer une évolution."
+   ],
+   "image_mentale": "Une carotte montre une succession de couches ayant des signatures chimiques différentes.",
+   "regle_ou_methode": "Identifier l’archive, consulter la relation adaptée, puis confronter le résultat à d’autres indices.",
+   "exemples": [
+    "Dans une carotte polaire, on compare le δ¹⁸O de couches datées : une variation du signal peut indiquer une variation des conditions climatiques.",
+    "Dans des sédiments marins, le signal isotopique des carbonates est interprété avec son propre contexte, notamment le volume des glaces et la température."
+   ],
+   "piege": "Ne pas supposer que le signal isotopique se lit dans le même sens pour toutes les archives.",
+   "astuce_memoire": "Même isotope, archive et interprétation à préciser.",
+   "quiz": [
+    {
+     "q": "Que mesure-t-on avec δ¹⁸O ?",
+     "choix": [
+      "Une variation de rapport isotopique de l’oxygène",
+      "Le nombre exact d’arbres",
+      "La durée d’une journée"
+     ],
+     "rep": "Une variation de rapport isotopique de l’oxygène",
+     "expl": "δ¹⁸O décrit une composition isotopique."
+    },
+    {
+     "q": "Peut-on interpréter de manière identique tous les δ¹⁸O sans connaître l’archive ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Oui, si la couche est ancienne"
+     ],
+     "rep": "Non",
+     "expl": "Le signal dépend notamment du support."
+    },
+    {
+     "q": "Pourquoi dater les couches ?",
+     "choix": [
+      "Pour transformer les glaces en pollen",
+      "Pour supprimer toute incertitude",
+      "Pour replacer les indices dans le temps"
+     ],
+     "rep": "Pour replacer les indices dans le temps",
+     "expl": "La datation permet de comparer les événements."
+    }
+   ],
+   "id": "REV-SVT-TLE-45"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Glaciations et paramètres orbitaux",
+   "emoji": "🧭",
+   "en_une_phrase": "Les variations orbitales modifient la répartition de l’énergie solaire et participent aux cycles glaciaires.",
+   "comprendre": "Au Quaternaire, des archives montrent l’alternance de périodes glaciaires et interglaciaires. Les paramètres de l’orbite terrestre varient lentement et modifient l’énergie reçue selon les saisons et les latitudes.",
+   "essentiel": [
+    "Les cycles orbitaux modifient la répartition de l’ensoleillement.",
+    "L’étendue des glaces et les concentrations de gaz à effet de serre peuvent amplifier des changements.",
+    "Le Quaternaire comporte plusieurs alternances glaciaires et interglaciaires.",
+    "Des rétroactions relient les composantes du climat."
+   ],
+   "image_mentale": "Une variation d’ensoleillement saisonnier agit sur les glaces, qui modifient ensuite le bilan énergétique.",
+   "regle_ou_methode": "Comparer les enregistrements climatiques et orbitaux, puis identifier les rétroactions.",
+   "exemples": [
+    "Une variation orbitale qui favorise la conservation estivale des neiges peut faciliter l’extension des glaces ; leur albédo élevé renforce alors le refroidissement.",
+    "Une période interglaciaire est une phase relativement chaude entre des périodes glaciaires."
+   ],
+   "piege": "Ces variations orbitales lentes ne suffisent pas à expliquer le réchauffement rapide actuel dû principalement aux activités humaines.",
+   "astuce_memoire": "Orbites : impulsion lente ; rétroactions : amplification possible.",
+   "quiz": [
+    {
+     "q": "Que modifient les variations orbitales ?",
+     "choix": [
+      "La composition chimique du Soleil en quelques jours",
+      "La répartition saisonnière et géographique de l’énergie solaire reçue",
+      "L’existence de toute atmosphère"
+     ],
+     "rep": "La répartition saisonnière et géographique de l’énergie solaire reçue",
+     "expl": "Elles modifient la distribution de l’ensoleillement."
+    },
+    {
+     "q": "Une surface glacée plus étendue peut-elle amplifier un refroidissement ?",
+     "choix": [
+      "Non, car elle absorbe toujours toute la lumière",
+      "Oui, en supprimant le Soleil",
+      "Oui, en augmentant la réflexion solaire"
+     ],
+     "rep": "Oui, en augmentant la réflexion solaire",
+     "expl": "Un albédo plus élevé réduit l’énergie solaire absorbée."
+    },
+    {
+     "q": "Les cycles orbitaux expliquent-ils à eux seuls le réchauffement rapide actuel ?",
+     "choix": [
+      "Non",
+      "Oui, nécessairement",
+      "Oui, car les activités humaines n’émettent pas de gaz à effet de serre"
+     ],
+     "rep": "Non",
+     "expl": "Les émissions humaines sont la cause principale du réchauffement actuel."
+    }
+   ],
+   "id": "REV-SVT-TLE-46"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Rétroactions climatiques",
+   "emoji": "🔁",
+   "en_une_phrase": "Une rétroaction climatique modifie l’effet d’une perturbation initiale.",
+   "comprendre": "Une rétroaction positive amplifie une variation, tandis qu’une rétroaction négative la limite. Le signe positif ou négatif décrit l’effet sur la perturbation, pas une valeur morale.",
+   "essentiel": [
+    "La fonte des glaces réduit l’albédo et peut amplifier le réchauffement.",
+    "Un océan qui se réchauffe peut dissoudre moins de CO₂ et contribuer à amplifier le changement.",
+    "Une rétroaction négative limite la perturbation initiale.",
+    "Une rétroaction n’est pas nécessairement la cause initiale de la variation."
+   ],
+   "image_mentale": "Une boucle ramène un effet vers la cause et l’amplifie ou l’atténue.",
+   "regle_ou_methode": "Suivre chaque étape de la boucle et comparer le résultat final à la perturbation de départ.",
+   "exemples": [
+    "Réchauffement initial : glace en recul, albédo plus faible, absorption solaire accrue, réchauffement renforcé ; c’est une rétroaction positive.",
+    "Si une réponse réduit l’effet d’un réchauffement initial, elle constitue une rétroaction négative dans le modèle considéré."
+   ],
+   "piege": "Positive signifie amplificatrice, pas forcément bénéfique.",
+   "astuce_memoire": "Positive : amplifie ; négative : atténue.",
+   "quiz": [
+    {
+     "q": "Une diminution de l’albédo après fonte de glace tend à ?",
+     "choix": [
+      "Réfléchir davantage de lumière solaire",
+      "Annuler tout effet de serre",
+      "Amplifier le réchauffement initial"
+     ],
+     "rep": "Amplifier le réchauffement initial",
+     "expl": "La surface plus sombre absorbe davantage de rayonnement."
+    },
+    {
+     "q": "Une rétroaction positive est nécessairement bénéfique ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, car positive signifie agréable"
+     ],
+     "rep": "Non",
+     "expl": "Le signe décrit l’amplification."
+    },
+    {
+     "q": "Une réponse qui diminue une perturbation est une rétroaction ?",
+     "choix": [
+      "Positive",
+      "Négative",
+      "Toujours inexistante"
+     ],
+     "rep": "Négative",
+     "expl": "Elle atténue la perturbation initiale."
+    }
+   ],
+   "id": "REV-SVT-TLE-47"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Climats et tectonique à long terme",
+   "emoji": "🌋",
+   "en_une_phrase": "La tectonique des plaques influence le climat sur des millions d’années.",
+   "comprendre": "La formation de reliefs, l’ouverture des océans et l’activité des dorsales modifient les échanges de matière et la circulation océanique. Ces mécanismes agissent sur des durées beaucoup plus longues que les variations météorologiques.",
+   "essentiel": [
+    "L’altération de certaines roches continentales consomme du CO₂ à long terme.",
+    "L’activité des dorsales participe aux flux de CO₂ entre intérieur terrestre et surface.",
+    "La disposition des continents influence la circulation océanique.",
+    "Les indices géologiques permettent de discuter ces liens."
+   ],
+   "image_mentale": "Des montagnes s’altèrent et des océans s’ouvrent au fil de millions d’années.",
+   "regle_ou_methode": "Identifier l’échelle de temps, le mécanisme géologique et l’effet possible sur le carbone ou les courants.",
+   "exemples": [
+    "Une formation de relief suivie d’une altération accrue de roches peut contribuer à diminuer le CO₂ atmosphérique sur une longue durée.",
+    "Une modification de la position des continents peut réorganiser les courants océaniques."
+   ],
+   "piege": "Une variation climatique longue ne s’explique pas nécessairement par un seul mécanisme.",
+   "astuce_memoire": "Tectonique : reliefs, océans et carbone.",
+   "quiz": [
+    {
+     "q": "Quel processus peut consommer du CO₂ sur de longues durées ?",
+     "choix": [
+      "L’altération de certaines roches continentales",
+      "La fermeture quotidienne des stomates à elle seule",
+      "Une pluie isolée de quelques minutes"
+     ],
+     "rep": "L’altération de certaines roches continentales",
+     "expl": "L’altération des roches participe au cycle géologique du carbone."
+    },
+    {
+     "q": "Pourquoi la position des continents compte-t-elle ?",
+     "choix": [
+      "Elle fixe définitivement la météo de chaque jour",
+      "Elle influence notamment la circulation océanique",
+      "Elle empêche toute glaciation"
+     ],
+     "rep": "Elle influence notamment la circulation océanique",
+     "expl": "La géographie des océans influence les circulations."
+    },
+    {
+     "q": "Quelle échelle caractérise généralement ces mécanismes tectoniques ?",
+     "choix": [
+      "Quelques secondes",
+      "Une journée",
+      "Des millions d’années"
+     ],
+     "rep": "Des millions d’années",
+     "expl": "Les mouvements des plaques sont lents à l’échelle humaine."
+    }
+   ],
+   "id": "REV-SVT-TLE-48"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Climats géologiques contrastés",
+   "emoji": "🪨",
+   "en_une_phrase": "Les indices géologiques montrent des climats différents au cours de l’histoire de la Terre.",
+   "comprendre": "Les archives des continents et des océans permettent de reconstituer de grandes tendances climatiques. Les mécanismes proposés associent notamment cycle du carbone et tectonique des plaques.",
+   "essentiel": [
+    "Au Carbonifère-Permien, des indices révèlent une glaciation importante.",
+    "Au Crétacé, des indices témoignent globalement d’un climat chaud.",
+    "Au Cénozoïque, une tendance générale au refroidissement est observée depuis environ 50 millions d’années.",
+    "Les positions anciennes des continents doivent être prises en compte."
+   ],
+   "image_mentale": "Une frise alterne périodes plus chaudes et plus froides à des échelles de millions d’années.",
+   "regle_ou_methode": "Dater les indices, reconstituer la position ancienne et proposer un mécanisme cohérent.",
+   "exemples": [
+    "Des dépôts glaciaires datés du Carbonifère-Permien, confrontés à la position ancienne des continents, soutiennent l’hypothèse d’une glaciation étendue.",
+    "Des indices marins et continentaux montrent que le Crétacé a connu globalement des conditions chaudes."
+   ],
+   "piege": "Une tendance climatique générale n’exclut pas des variations locales ou temporaires.",
+   "astuce_memoire": "Indices datés et paléogéographie ensemble.",
+   "quiz": [
+    {
+     "q": "Quelle période a connu une glaciation importante ?",
+     "choix": [
+      "Le Crétacé uniquement",
+      "Le Carbonifère-Permien",
+      "La semaine dernière"
+     ],
+     "rep": "Le Carbonifère-Permien",
+     "expl": "Des indices géologiques révèlent une glaciation au Carbonifère-Permien."
+    },
+    {
+     "q": "Pourquoi tenir compte de la position ancienne des continents ?",
+     "choix": [
+      "Parce que les continents sont toujours restés immobiles",
+      "Pour remplacer toute datation",
+      "Parce que les latitudes et les circulations ont changé"
+     ],
+     "rep": "Parce que les latitudes et les circulations ont changé",
+     "expl": "La paléogéographie aide à interpréter les indices."
+    },
+    {
+     "q": "Un climat globalement chaud exclut-il toute variation locale ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, si les océans existent"
+     ],
+     "rep": "Non",
+     "expl": "Une tendance globale peut comporter des différences régionales."
+    }
+   ],
+   "id": "REV-SVT-TLE-49"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Réchauffement actuel et cycle du carbone",
+   "emoji": "🌍",
+   "en_une_phrase": "Les activités humaines augmentent les gaz à effet de serre et réchauffent le climat.",
+   "comprendre": "La combustion de ressources fossiles et les changements d’usage des terres perturbent le cycle du carbone. L’augmentation des concentrations de gaz à effet de serre modifie le bilan énergétique de la Terre.",
+   "essentiel": [
+    "Le CO₂ est un gaz à effet de serre.",
+    "Les émissions humaines ajoutent du carbone à l’atmosphère.",
+    "Océans et végétation absorbent une partie du CO₂ émis.",
+    "Le réchauffement actuel résulte principalement des activités humaines."
+   ],
+   "image_mentale": "Des transferts de carbone provenant de stocks fossiles augmentent le CO₂ atmosphérique.",
+   "regle_ou_methode": "Identifier la source d’émission, le réservoir et la conséquence sur le bilan radiatif.",
+   "exemples": [
+    "Une combustion transfère vers l’atmosphère du carbone auparavant stocké dans un combustible fossile, notamment sous forme de CO₂.",
+    "Un océan absorbe une partie du CO₂ atmosphérique ; cela ne signifie pas que toutes les émissions humaines sont absorbées."
+   ],
+   "piege": "Une journée froide locale ne suffit pas à établir ou réfuter une tendance climatique mondiale.",
+   "astuce_memoire": "Émissions, concentration, effet de serre et réchauffement.",
+   "quiz": [
+    {
+     "q": "Quelle activité libère du CO₂ fossile ?",
+     "choix": [
+      "La mesure de température",
+      "L’observation d’un nuage",
+      "La combustion de charbon"
+     ],
+     "rep": "La combustion de charbon",
+     "expl": "Le carbone fossile est libéré notamment sous forme de CO₂."
+    },
+    {
+     "q": "Les océans absorbent-ils nécessairement tout le CO₂ émis par les activités humaines ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, dans la journée"
+     ],
+     "rep": "Non",
+     "expl": "Ils en absorbent une partie."
+    },
+    {
+     "q": "Une journée froide locale réfute-t-elle une tendance mondiale de réchauffement ?",
+     "choix": [
+      "Oui, à elle seule",
+      "Non",
+      "Oui, si elle dure une heure"
+     ],
+     "rep": "Non",
+     "expl": "La météo locale et la tendance climatique mondiale sont différentes."
+    }
+   ],
+   "id": "REV-SVT-TLE-50"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Climat futur : modèles et scénarios",
+   "emoji": "📈",
+   "en_une_phrase": "Les projections climatiques comparent des futurs possibles selon différents scénarios d’émissions.",
+   "comprendre": "Un modèle climatique représente des processus physiques et leurs interactions. Les scénarios décrivent diverses évolutions possibles des activités humaines et des émissions ; ils ne prédisent pas un seul futur certain.",
+   "essentiel": [
+    "Un scénario précise des hypothèses sur les émissions ou les concentrations.",
+    "Les modèles simulent des réponses du système climatique.",
+    "Les projections comportent des incertitudes.",
+    "Comparer les scénarios aide à évaluer l’influence des choix collectifs."
+   ],
+   "image_mentale": "Plusieurs trajectoires d’émissions conduisent à plusieurs trajectoires climatiques simulées.",
+   "regle_ou_methode": "Identifier le scénario, l’horizon temporel, le résultat et son incertitude.",
+   "exemples": [
+    "Dans deux simulations fictives, le scénario à fortes émissions conduit à un réchauffement plus élevé que celui à faibles émissions : la différence illustre l’effet des trajectoires choisies.",
+    "Une projection à plusieurs décennies présente une tendance et une marge d’incertitude, pas la météo précise d’un jour donné."
+   ],
+   "piege": "Un scénario n’est ni une certitude ni une simple extrapolation d’un seul jour de météo.",
+   "astuce_memoire": "Hypothèses, simulation, incertitude.",
+   "quiz": [
+    {
+     "q": "Que représente un scénario climatique ?",
+     "choix": [
+      "Un ensemble d’hypothèses sur une évolution possible",
+      "Une météo certaine pour chaque jour futur",
+      "Une mesure directe du climat passé"
+     ],
+     "rep": "Un ensemble d’hypothèses sur une évolution possible",
+     "expl": "Un scénario décrit des hypothèses pour explorer le futur."
+    },
+    {
+     "q": "Pourquoi comparer plusieurs scénarios ?",
+     "choix": [
+      "Pour supprimer toutes les incertitudes",
+      "Pour étudier l’effet de trajectoires différentes",
+      "Pour prouver que les émissions n’ont aucun effet"
+     ],
+     "rep": "Pour étudier l’effet de trajectoires différentes",
+     "expl": "Leurs différences aident à étudier les conséquences des trajectoires."
+    },
+    {
+     "q": "Une projection climatique donne-t-elle la météo exacte d’un jour dans cinquante ans ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, dès que le modèle est écrit",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Elle décrit des tendances et des incertitudes climatiques."
+    }
+   ],
+   "id": "REV-SVT-TLE-51"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Atténuer et s’adapter",
+   "emoji": "🛠️",
+   "en_une_phrase": "Atténuation et adaptation répondent à des aspects complémentaires du changement climatique.",
+   "comprendre": "Atténuer consiste à limiter le changement climatique en réduisant les émissions ou en renforçant certains puits de carbone. S’adapter consiste à réduire la vulnérabilité aux conséquences actuelles et futures.",
+   "essentiel": [
+    "Réduire l’usage de combustibles fossiles peut diminuer les émissions.",
+    "Un puits de carbone absorbe plus de carbone qu’il n’en émet sur une période donnée.",
+    "L’adaptation peut modifier l’organisation des villes ou des cultures.",
+    "Les mesures doivent être évaluées selon leur contexte et leurs effets."
+   ],
+   "image_mentale": "On réduit la cause du réchauffement tout en préparant les territoires à ses effets.",
+   "regle_ou_methode": "Identifier si l’action vise surtout les émissions ou la vulnérabilité aux impacts.",
+   "exemples": [
+    "Remplacer une source d’énergie fossile par une source faiblement émettrice réduit les émissions : c’est une mesure d’atténuation.",
+    "Aménager des zones d’ombre face aux fortes chaleurs vise à diminuer l’exposition : c’est une adaptation."
+   ],
+   "piege": "Une mesure d’adaptation ne supprime pas automatiquement la cause du réchauffement.",
+   "astuce_memoire": "Atténuer : limiter le changement ; adapter : réduire la vulnérabilité.",
+   "quiz": [
+    {
+     "q": "Réduire des émissions de gaz à effet de serre relève surtout de ?",
+     "choix": [
+      "L’adaptation seulement",
+      "L’atténuation",
+      "La datation isotopique"
+     ],
+     "rep": "L’atténuation",
+     "expl": "La réduction des émissions limite le changement."
+    },
+    {
+     "q": "Aménager des zones d’ombre contre les fortes chaleurs relève surtout de ?",
+     "choix": [
+      "La formation des montagnes",
+      "La photosynthèse artificielle automatique",
+      "L’adaptation"
+     ],
+     "rep": "L’adaptation",
+     "expl": "L’action réduit une vulnérabilité à la chaleur."
+    },
+    {
+     "q": "Un puits net de carbone fait quoi sur la période considérée ?",
+     "choix": [
+      "Il absorbe plus de carbone qu’il n’en émet",
+      "Il n’échange jamais de carbone",
+      "Il émet toujours plus qu’il n’absorbe"
+     ],
+     "rep": "Il absorbe plus de carbone qu’il n’en émet",
+     "expl": "C’est la définition d’un puits net."
+    }
+   ],
+   "id": "REV-SVT-TLE-52"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Le réflexe myotatique",
+   "emoji": "🦵",
+   "en_une_phrase": "Le réflexe myotatique provoque la contraction d’un muscle en réponse à son étirement.",
+   "comprendre": "Un choc sur un tendon peut étirer brièvement le muscle associé. Le message sensoriel gagne la moelle épinière, qui active un motoneurone commandant la contraction.",
+   "essentiel": [
+    "Le fuseau neuromusculaire détecte l’étirement.",
+    "Un neurone sensitif conduit le message vers la moelle.",
+    "Un motoneurone transmet une commande au muscle.",
+    "Le réflexe est rapide et involontaire."
+   ],
+   "image_mentale": "Un coup sur le tendon tend le muscle puis la jambe se relève.",
+   "regle_ou_methode": "Repérer récepteur, voie sensitive, centre nerveux, voie motrice et muscle.",
+   "exemples": [
+    "Lors du réflexe rotulien, le tendon est percuté : le quadriceps s’étire, un message atteint la moelle, puis le muscle se contracte et la jambe se tend.",
+    "Une atteinte d’un élément de l’arc réflexe peut modifier la réponse observée."
+   ],
+   "piege": "Le réflexe utilise la moelle épinière, même si le cerveau peut aussi recevoir l’information.",
+   "astuce_memoire": "Étirement, message, moelle, contraction.",
+   "quiz": [
+    {
+     "q": "Quel récepteur détecte l’étirement musculaire ?",
+     "choix": [
+      "Une cellule du foie",
+      "Le globule rouge",
+      "Le fuseau neuromusculaire"
+     ],
+     "rep": "Le fuseau neuromusculaire",
+     "expl": "Le fuseau est sensible à l’étirement."
+    },
+    {
+     "q": "Quel centre intervient directement dans l’arc du réflexe myotatique ?",
+     "choix": [
+      "La moelle épinière",
+      "Le rein",
+      "La rétine"
+     ],
+     "rep": "La moelle épinière",
+     "expl": "La moelle intègre le circuit réflexe."
+    },
+    {
+     "q": "Après l’étirement du muscle testé, quelle réponse caractérise ce réflexe ?",
+     "choix": [
+      "Sa disparition",
+      "Sa contraction",
+      "Sa transformation en os"
+     ],
+     "rep": "Sa contraction",
+     "expl": "La réponse réflexe est la contraction du muscle étiré."
+    }
+   ],
+   "id": "REV-SVT-TLE-53"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Messages nerveux et potentiels d’action",
+   "emoji": "⚡",
+   "en_une_phrase": "Un message nerveux repose sur des signaux électriques produits par les neurones.",
+   "comprendre": "Le potentiel d’action est une variation brève du potentiel électrique de la membrane. Une stimulation suffisante déclenche un signal dont l’amplitude reste la même dans les conditions considérées.",
+   "essentiel": [
+    "Le potentiel d’action se propage le long d’un neurone.",
+    "Il suit la loi du tout ou rien.",
+    "L’intensité d’une stimulation peut être codée par la fréquence des potentiels d’action.",
+    "Un nerf contient de nombreuses fibres nerveuses."
+   ],
+   "image_mentale": "Des impulsions identiques se succèdent plus ou moins vite.",
+   "regle_ou_methode": "Distinguer amplitude d’un potentiel et fréquence des impulsions.",
+   "exemples": [
+    "Si une stimulation plus forte produit 30 impulsions par seconde au lieu de 10, le message est codé par une fréquence plus élevée.",
+    "Une stimulation sous le seuil de déclenchement ne produit pas de potentiel d’action dans le neurone considéré."
+   ],
+   "piege": "Une stimulation plus intense n’augmente pas l’amplitude de chaque potentiel d’action.",
+   "astuce_memoire": "Même impulsion, fréquence variable.",
+   "quiz": [
+    {
+     "q": "Comment une stimulation plus intense peut-elle être codée dans un neurone ?",
+     "choix": [
+      "Par une fréquence plus élevée des potentiels d’action",
+      "Par une amplitude arbitrairement plus grande de chaque potentiel",
+      "Par la disparition de tous les signaux"
+     ],
+     "rep": "Par une fréquence plus élevée des potentiels d’action",
+     "expl": "La fréquence peut varier tandis que l’amplitude suit le tout ou rien."
+    },
+    {
+     "q": "Où se propage le potentiel d’action ?",
+     "choix": [
+      "Uniquement dans le sang",
+      "Le long de la membrane du neurone",
+      "Dans une articulation sans cellule"
+     ],
+     "rep": "Le long de la membrane du neurone",
+     "expl": "Le neurone conduit le signal électrique."
+    },
+    {
+     "q": "Sous le seuil de déclenchement, que se passe-t-il ?",
+     "choix": [
+      "Le signal est simplement deux fois moins haut",
+      "Un potentiel est toujours déclenché",
+      "Aucun potentiel d’action n’est déclenché"
+     ],
+     "rep": "Aucun potentiel d’action n’est déclenché",
+     "expl": "Le déclenchement suit le tout ou rien."
+    }
+   ],
+   "id": "REV-SVT-TLE-54"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Transmission au niveau d’une synapse",
+   "emoji": "🔗",
+   "en_une_phrase": "Une synapse chimique transmet une information entre deux cellules grâce à un neurotransmetteur.",
+   "comprendre": "L’arrivée d’un potentiel d’action dans la terminaison présynaptique provoque la libération d’un neurotransmetteur. Celui-ci se fixe sur des récepteurs de la cellule postsynaptique et modifie son activité.",
+   "essentiel": [
+    "La fente synaptique sépare les deux cellules.",
+    "Les neurotransmetteurs sont libérés par des vésicules.",
+    "La réponse dépend des récepteurs de la cellule cible.",
+    "Un motoneurone communique avec une fibre musculaire à la jonction neuromusculaire."
+   ],
+   "image_mentale": "Un messager traverse un petit espace et rejoint un récepteur.",
+   "regle_ou_methode": "Suivre le signal électrique, la libération chimique, puis la réponse de la cellule cible.",
+   "exemples": [
+    "À la jonction neuromusculaire, un potentiel d’action arrive à la terminaison du motoneurone : de l’acétylcholine est libérée, se fixe sur la fibre et participe au déclenchement de son activité.",
+    "Une substance qui bloque certains récepteurs peut empêcher une transmission normale."
+   ],
+   "piege": "Le neurotransmetteur ne circule pas comme un courant électrique dans la fente.",
+   "astuce_memoire": "Électrique, chimique, réponse de la cellule.",
+   "quiz": [
+    {
+     "q": "Que libère la cellule présynaptique dans une synapse chimique ?",
+     "choix": [
+      "Des chromosomes entiers",
+      "Un neurotransmetteur",
+      "Un globule rouge"
+     ],
+     "rep": "Un neurotransmetteur",
+     "expl": "Le neurotransmetteur traverse la fente synaptique."
+    },
+    {
+     "q": "Que reconnaît le neurotransmetteur sur la cellule cible ?",
+     "choix": [
+      "Un tendon",
+      "Un os",
+      "Un récepteur adapté"
+     ],
+     "rep": "Un récepteur adapté",
+     "expl": "Il se fixe sur un récepteur spécifique."
+    },
+    {
+     "q": "À la jonction neuromusculaire, quelle cellule est la cible du motoneurone ?",
+     "choix": [
+      "Une fibre musculaire",
+      "Une cellule de la rétine",
+      "Un globule rouge"
+     ],
+     "rep": "Une fibre musculaire",
+     "expl": "Le motoneurone communique avec une fibre musculaire."
+    }
+   ],
+   "id": "REV-SVT-TLE-55"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Intégration des messages nerveux",
+   "emoji": "🧠",
+   "en_une_phrase": "Un neurone combine les messages qu’il reçoit avant de déclencher éventuellement un potentiel d’action.",
+   "comprendre": "Un motoneurone reçoit des messages de plusieurs neurones. Certains favorisent son activation et d’autres la diminuent ; leur bilan influe sur le déclenchement du signal.",
+   "essentiel": [
+    "Des synapses peuvent être excitatrices ou inhibitrices.",
+    "La sommation peut combiner des messages proches dans le temps ou provenant de plusieurs synapses.",
+    "Le déclenchement dépend du franchissement d’un seuil."
+   ],
+   "image_mentale": "Plusieurs boutons accélèrent ou freinent une décision.",
+   "regle_ou_methode": "Identifier les messages reçus puis déterminer si leur bilan atteint le seuil.",
+   "exemples": [
+    "Si des messages excitateurs simultanés suffisent à atteindre le seuil, le motoneurone produit un potentiel d’action.",
+    "Un message inhibiteur peut réduire l’effet d’un message excitateur reçu au même moment."
+   ],
+   "piege": "Une synapse excitatrice ne garantit pas à elle seule un potentiel d’action.",
+   "astuce_memoire": "Le neurone additionne des influences.",
+   "quiz": [
+    {
+     "q": "Une synapse inhibitrice tend à quoi ?",
+     "choix": [
+      "Garantir un potentiel d’action",
+      "Créer une cellule musculaire",
+      "Réduire la probabilité de déclenchement"
+     ],
+     "rep": "Réduire la probabilité de déclenchement",
+     "expl": "Son effet s’oppose au déclenchement."
+    },
+    {
+     "q": "Que permet la sommation ?",
+     "choix": [
+      "Combiner des influences synaptiques",
+      "Transformer un neurone en tendon",
+      "Changer la nature du chromosome"
+     ],
+     "rep": "Combiner des influences synaptiques",
+     "expl": "Les messages reçus sont intégrés."
+    },
+    {
+     "q": "Un seul message excitateur déclenche-t-il toujours un signal ?",
+     "choix": [
+      "Oui, dans tous les cas",
+      "Non, cela dépend notamment du seuil",
+      "Seulement si le neurone est mort"
+     ],
+     "rep": "Non, cela dépend notamment du seuil",
+     "expl": "Le seuil doit être atteint."
+    }
+   ],
+   "id": "REV-SVT-TLE-56"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Substances et transmission nerveuse",
+   "emoji": "🧠",
+   "en_une_phrase": "Certaines substances extérieures modifient le fonctionnement des synapses et peuvent entraîner une addiction.",
+   "comprendre": "Une substance psychoactive peut perturber la transmission de messages entre neurones. Son action dépend notamment des molécules ciblées et du contexte d’exposition. Une répétition de l’usage peut contribuer à une addiction, sans que celle-ci soit automatique.",
+   "essentiel": [
+    "Une substance exogène provient de l’extérieur de l’organisme.",
+    "Certaines molécules agissent sur des récepteurs ou modifient les quantités de neurotransmetteurs.",
+    "Les effets sur le cerveau dépendent de la substance et de la situation.",
+    "Une addiction est un trouble qui nécessite une prise en charge adaptée."
+   ],
+   "image_mentale": "Une molécule extérieure modifie la communication entre deux neurones.",
+   "regle_ou_methode": "Identifier la substance et la cible synaptique, puis relier cette action aux effets possibles.",
+   "exemples": [
+    "L’alcool est une substance extérieure qui peut perturber les messages nerveux. La coordination et la vigilance peuvent être modifiées.",
+    "Une molécule qui bloque un récepteur empêche le neurotransmetteur correspondant d’agir normalement sur ce récepteur."
+   ],
+   "piege": "Une exposition à une substance ne provoque pas systématiquement une addiction.",
+   "astuce_memoire": "Molécule extérieure, cible synaptique, effets possibles.",
+   "quiz": [
+    {
+     "q": "Qu’est-ce qu’une substance exogène ?",
+     "choix": [
+      "Une substance provenant de l’extérieur de l’organisme",
+      "Une cellule du système nerveux",
+      "Un muscle du bras"
+     ],
+     "rep": "Une substance provenant de l’extérieur de l’organisme",
+     "expl": "Exogène signifie qu’elle vient de l’extérieur."
+    },
+    {
+     "q": "Que peut faire une molécule qui bloque un récepteur ?",
+     "choix": [
+      "Modifier directement les os en quelques secondes",
+      "Perturber la réponse au neurotransmetteur correspondant",
+      "Transformer une synapse en cellule sanguine"
+     ],
+     "rep": "Perturber la réponse au neurotransmetteur correspondant",
+     "expl": "Le neurotransmetteur n’agit plus normalement sur ce récepteur."
+    },
+    {
+     "q": "Une substance psychoactive provoque-t-elle toujours une addiction dès une exposition ?",
+     "choix": [
+      "Oui, quelle que soit la substance",
+      "Oui, mais seulement en dormant",
+      "Non, l’addiction n’est pas automatique"
+     ],
+     "rep": "Non, l’addiction n’est pas automatique",
+     "expl": "Le risque dépend de plusieurs facteurs."
+    }
+   ],
+   "id": "REV-SVT-TLE-57"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Commande volontaire et plasticité",
+   "emoji": "🎯",
+   "en_une_phrase": "Le cerveau participe aux mouvements volontaires et ses réseaux peuvent se modifier avec l’expérience.",
+   "comprendre": "Des aires cérébrales motrices contribuent à élaborer les commandes transmises vers la moelle. L’apprentissage et certaines lésions peuvent s’accompagner d’une réorganisation des réseaux neuronaux.",
+   "essentiel": [
+    "Les aires motrices contrôlent les mouvements volontaires.",
+    "Les neurones communiquent en réseaux.",
+    "La plasticité cérébrale désigne la capacité de réorganisation du cerveau.",
+    "La plasticité varie selon les situations et les individus."
+   ],
+   "image_mentale": "Un chemin devient plus facile à suivre lorsqu’un réseau est remodelé.",
+   "regle_ou_methode": "Relier activité cérébrale, commande nerveuse et évolution des connexions.",
+   "exemples": [
+    "Lors de l’apprentissage d’un geste précis, l’entraînement s’accompagne de modifications de réseaux impliqués dans ce geste.",
+    "Après certaines lésions, une rééducation peut participer à une réorganisation et à une récupération variable."
+   ],
+   "piege": "La plasticité ne garantit pas une récupération complète après toute lésion.",
+   "astuce_memoire": "Apprendre peut modifier les réseaux.",
+   "quiz": [
+    {
+     "q": "Quel organe contribue à préparer un mouvement volontaire ?",
+     "choix": [
+      "Le tendon seul",
+      "Le cerveau",
+      "Le globule rouge"
+     ],
+     "rep": "Le cerveau",
+     "expl": "Les aires motrices participent à la commande."
+    },
+    {
+     "q": "La plasticité cérébrale correspond à ?",
+     "choix": [
+      "Une garantie de guérison totale",
+      "La production systématique de nouveaux os",
+      "Une capacité de réorganisation des réseaux"
+     ],
+     "rep": "Une capacité de réorganisation des réseaux",
+     "expl": "Les connexions et leur fonctionnement peuvent évoluer."
+    },
+    {
+     "q": "Que peut-on dire de la récupération après une lésion cérébrale ?",
+     "choix": [
+      "Elle est toujours complète",
+      "Elle dépend de la lésion et de la situation",
+      "Elle est toujours impossible"
+     ],
+     "rep": "Elle dépend de la lésion et de la situation",
+     "expl": "La plasticité permet une récupération variable, partielle ou plus complète selon les cas."
+    }
+   ],
+   "id": "REV-SVT-TLE-58"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "La contraction musculaire",
+   "emoji": "💪",
+   "en_une_phrase": "La contraction résulte du glissement des filaments d’actine et de myosine dans les cellules musculaires.",
+   "comprendre": "Un muscle squelettique est formé de fibres musculaires reliées aux os par des tendons. À l’intérieur de la fibre, des interactions entre protéines permettent le raccourcissement des unités contractiles.",
+   "essentiel": [
+    "Les filaments d’actine et de myosine interagissent.",
+    "Le sarcomère se raccourcit lors de la contraction.",
+    "Le calcium et l’ATP sont nécessaires au mécanisme.",
+    "Le raccourcissement du muscle peut déplacer les os au niveau d’une articulation."
+   ],
+   "image_mentale": "Deux rangées de filaments coulissent l’une sur l’autre.",
+   "regle_ou_methode": "Relier commande, calcium, interactions des protéines et raccourcissement.",
+   "exemples": [
+    "Quand une commande active une fibre, le calcium permet les interactions actine-myosine ; l’utilisation d’ATP participe au cycle et le sarcomère se raccourcit.",
+    "Un muscle qui se contracte tire sur ses tendons et peut participer à la flexion d’une articulation."
+   ],
+   "piege": "Les filaments ne raccourcissent pas eux-mêmes dans le modèle de glissement.",
+   "astuce_memoire": "Les filaments glissent ; le sarcomère raccourcit.",
+   "quiz": [
+    {
+     "q": "Quelles protéines interagissent dans la contraction ?",
+     "choix": [
+      "Amidon et cellulose",
+      "Hémoglobine et chlorophylle",
+      "Actine et myosine"
+     ],
+     "rep": "Actine et myosine",
+     "expl": "Les filaments contractiles comprennent actine et myosine."
+    },
+    {
+     "q": "Quelle molécule fournit de l’énergie au cycle de contraction ?",
+     "choix": [
+      "L’ATP",
+      "L’ADN seul",
+      "Le dioxyde de carbone"
+     ],
+     "rep": "L’ATP",
+     "expl": "L’ATP est utilisée par les cellules musculaires."
+    },
+    {
+     "q": "Que devient le sarcomère pendant la contraction ?",
+     "choix": [
+      "Il devient un os",
+      "Il se raccourcit",
+      "Il reste nécessairement de longueur identique"
+     ],
+     "rep": "Il se raccourcit",
+     "expl": "Le glissement des filaments raccourcit le sarcomère."
+    }
+   ],
+   "id": "REV-SVT-TLE-59"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Une myopathie et les protéines musculaires",
+   "emoji": "🧬",
+   "en_une_phrase": "Certaines myopathies résultent d’une anomalie de protéines qui contribuent à la stabilité des fibres musculaires.",
+   "comprendre": "La cellule musculaire possède une membrane reliée à son environnement et à son organisation interne. Dans certaines myopathies, une protéine impliquée dans ces liens est absente ou altérée. Les fibres deviennent alors plus fragiles et leur fonctionnement peut être perturbé.",
+   "essentiel": [
+    "Une myopathie est une maladie qui affecte notamment les muscles.",
+    "Certaines formes sont liées à une anomalie génétique.",
+    "Une protéine altérée peut fragiliser les fibres musculaires.",
+    "Toutes les myopathies n’ont pas la même cause."
+   ],
+   "image_mentale": "Un assemblage de protéines stabilise la fibre pendant ses contractions.",
+   "regle_ou_methode": "Relier anomalie génétique, protéine modifiée et conséquence sur la cellule.",
+   "exemples": [
+    "Dans la dystrophie musculaire de Duchenne, une anomalie du gène de la dystrophine conduit à une absence ou un déficit important de cette protéine. Les fibres musculaires sont fragilisées.",
+    "Deux maladies musculaires différentes peuvent avoir des mécanismes distincts et ne sont pas nécessairement dues à une même anomalie."
+   ],
+   "piege": "Une faiblesse musculaire ne permet pas à elle seule d’identifier une myopathie précise.",
+   "astuce_memoire": "Gène, protéine, stabilité de la fibre.",
+   "quiz": [
+    {
+     "q": "Dans certaines myopathies, quelle structure peut être fragilisée ?",
+     "choix": [
+      "La fibre musculaire",
+      "Le seul cristallin",
+      "Uniquement le poil"
+     ],
+     "rep": "La fibre musculaire",
+     "expl": "Une protéine musculaire altérée peut fragiliser les fibres."
+    },
+    {
+     "q": "La dystrophine participe notamment à quoi ?",
+     "choix": [
+      "La fabrication de chlorophylle",
+      "La stabilité des fibres musculaires",
+      "La production d’un fossile"
+     ],
+     "rep": "La stabilité des fibres musculaires",
+     "expl": "Elle contribue aux liens qui stabilisent la fibre."
+    },
+    {
+     "q": "Toutes les myopathies ont-elles la même cause ?",
+     "choix": [
+      "Oui, une seule anomalie les explique toutes",
+      "Oui, elles sont toutes provoquées par un choc",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Les mécanismes des maladies musculaires sont variés."
+    }
+   ],
+   "id": "REV-SVT-TLE-60"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Régénérer l’ATP musculaire",
+   "emoji": "🔄",
+   "en_une_phrase": "La cellule musculaire régénère en permanence l’ATP nécessaire à son activité.",
+   "comprendre": "Le stock d’ATP directement disponible est limité. La cellule peut en produire à partir de nutriments par respiration cellulaire et, selon les conditions, par fermentation lactique.",
+   "essentiel": [
+    "La respiration utilise notamment du glucose et du dioxygène.",
+    "La respiration cellulaire produit notamment du dioxyde de carbone et de l’eau.",
+    "La fermentation lactique permet une production d’ATP sans consommation directe de dioxygène.",
+    "Les voies mobilisées varient avec l’intensité et la durée de l’effort."
+   ],
+   "image_mentale": "Une réserve d’énergie est continuellement rechargée.",
+   "regle_ou_methode": "Identifier le substrat disponible, la présence de dioxygène et la voie considérée.",
+   "exemples": [
+    "Lors d’un effort, la respiration des cellules musculaires utilise glucose et dioxygène pour régénérer de l’ATP ; elle produit aussi du CO₂ et de l’eau.",
+    "La fermentation lactique peut aussi contribuer à régénérer de l’ATP à partir du glucose."
+   ],
+   "piege": "La respiration cellulaire n’est pas le simple mouvement de l’air dans les poumons.",
+   "astuce_memoire": "L’ATP est consommé puis régénéré.",
+   "quiz": [
+    {
+     "q": "Quelle voie consomme directement du dioxygène ?",
+     "choix": [
+      "La fermentation lactique",
+      "La respiration cellulaire",
+      "Aucune voie cellulaire"
+     ],
+     "rep": "La respiration cellulaire",
+     "expl": "Le dioxygène intervient dans la respiration."
+    },
+    {
+     "q": "Quel rôle joue l’ATP dans le muscle ?",
+     "choix": [
+      "Il est un os",
+      "Il empêche tout mouvement",
+      "Il fournit de l’énergie utilisable pour la contraction"
+     ],
+     "rep": "Il fournit de l’énergie utilisable pour la contraction",
+     "expl": "L’ATP alimente les mécanismes cellulaires."
+    },
+    {
+     "q": "Quel processus peut produire de l’ATP sans consommation directe de dioxygène ?",
+     "choix": [
+      "La fermentation lactique",
+      "La photosynthèse chlorophyllienne du muscle",
+      "La formation d’un tendon"
+     ],
+     "rep": "La fermentation lactique",
+     "expl": "La fermentation contribue à régénérer de l’ATP."
+    }
+   ],
+   "id": "REV-SVT-TLE-61"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Voies de production de l’ATP",
+   "emoji": "🔬",
+   "en_une_phrase": "La cellule musculaire produit de l’ATP par des voies qui dépendent notamment du dioxygène disponible.",
+   "comprendre": "La glycolyse transforme le glucose dans le cytoplasme et produit une petite quantité d’ATP. La respiration se poursuit dans la mitochondrie et permet une production d’ATP plus importante pour une même quantité de glucose. La fermentation lactique permet à la glycolyse de continuer sans consommation directe de dioxygène.",
+   "essentiel": [
+    "La glycolyse se déroule dans le cytoplasme.",
+    "Le cycle de Krebs et la chaîne respiratoire ont lieu dans la mitochondrie.",
+    "La chaîne respiratoire utilise le dioxygène, réduit en eau.",
+    "L’ensemble glycolyse et fermentation lactique fournit moins d’ATP par glucose que la respiration."
+   ],
+   "image_mentale": "Une même matière première emprunte des chemins produisant des quantités différentes d’ATP.",
+   "regle_ou_methode": "Identifier le lieu cellulaire, le rôle du dioxygène et la quantité relative d’ATP produite.",
+   "exemples": [
+    "Pour une même quantité de glucose, la respiration permet une production d’ATP plus importante que la glycolyse accompagnée de fermentation lactique. Cette différence vient de l’oxydation beaucoup plus complète du glucose.",
+    "Dans une cellule musculaire, la glycolyse se déroule dans le cytoplasme ; le cycle de Krebs se déroule dans la mitochondrie."
+   ],
+   "piege": "Le lactate n’est pas le produit d’une réaction qui utilise directement le dioxygène.",
+   "astuce_memoire": "Glycolyse : cytoplasme ; respiration : mitochondrie.",
+   "quiz": [
+    {
+     "q": "Où se déroule la glycolyse ?",
+     "choix": [
+      "Dans le noyau uniquement",
+      "À l’extérieur de l’organisme",
+      "Dans le cytoplasme"
+     ],
+     "rep": "Dans le cytoplasme",
+     "expl": "La glycolyse se déroule dans le cytoplasme."
+    },
+    {
+     "q": "Quelle voie utilise directement le dioxygène dans la cellule ?",
+     "choix": [
+      "La chaîne respiratoire mitochondriale",
+      "La fermentation lactique",
+      "La synthèse des tendons"
+     ],
+     "rep": "La chaîne respiratoire mitochondriale",
+     "expl": "Le dioxygène est réduit en eau dans la chaîne respiratoire."
+    },
+    {
+     "q": "Pour une même quantité de glucose, quelle voie produit généralement davantage d’ATP ?",
+     "choix": [
+      "La fermentation lactique",
+      "La respiration cellulaire",
+      "Les deux produisent toujours exactement la même quantité"
+     ],
+     "rep": "La respiration cellulaire",
+     "expl": "La respiration permet une oxydation plus complète du glucose."
+    }
+   ],
+   "id": "REV-SVT-TLE-62"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Dopage et santé",
+   "emoji": "🏃",
+   "en_une_phrase": "Certaines substances utilisées pour modifier les performances sportives exposent à des risques pour la santé.",
+   "comprendre": "Des produits dopants peuvent agir sur la masse musculaire ou d’autres fonctions de l’organisme. Leur effet recherché ne supprime pas les effets indésirables possibles. Les conséquences dépendent notamment du produit et des conditions d’utilisation.",
+   "essentiel": [
+    "Les stéroïdes anabolisants peuvent modifier la masse musculaire.",
+    "Ils peuvent aussi entraîner des effets indésirables, notamment cardiovasculaires.",
+    "Un effet sur une performance ne garantit pas l’absence de danger.",
+    "Le dopage ne doit pas être confondu avec un entraînement adapté."
+   ],
+   "image_mentale": "Une substance peut agir sur plusieurs organes à la fois.",
+   "regle_ou_methode": "Identifier le produit, son effet recherché et les risques documentés pour la santé.",
+   "exemples": [
+    "Les stéroïdes anabolisants peuvent favoriser une augmentation de la masse musculaire, mais leur usage expose aussi à des risques cardiovasculaires.",
+    "Un entraînement adapté et une récupération suffisante ne sont pas équivalents à l’utilisation de substances dopantes."
+   ],
+   "piege": "L’amélioration recherchée d’une performance ne démontre pas qu’un produit est sans risque.",
+   "astuce_memoire": "Un effet recherché peut s’accompagner de risques.",
+   "quiz": [
+    {
+     "q": "Quel exemple de substance peut modifier la masse musculaire ?",
+     "choix": [
+      "Un stéroïde anabolisant",
+      "Une fibre de coton",
+      "Un os"
+     ],
+     "rep": "Un stéroïde anabolisant",
+     "expl": "Les stéroïdes anabolisants agissent notamment sur les muscles."
+    },
+    {
+     "q": "Que peut-on conclure si un produit modifie la performance ?",
+     "choix": [
+      "Il est toujours sans danger",
+      "Cela ne prouve pas qu’il soit sans risque",
+      "Il protège nécessairement le cœur"
+     ],
+     "rep": "Cela ne prouve pas qu’il soit sans risque",
+     "expl": "Les effets recherchés et les risques sont distincts."
+    },
+    {
+     "q": "Les risques pour la santé dépendent-ils du produit et des conditions d’utilisation ?",
+     "choix": [
+      "Non, tous les produits ont des effets identiques",
+      "Non, seul le nom de la compétition compte",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "La nature du produit et son utilisation influencent les effets possibles."
+    }
+   ],
+   "id": "REV-SVT-TLE-63"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Glycémie et stockage du glucose",
+   "emoji": "🍚",
+   "en_une_phrase": "La glycémie est régulée grâce aux échanges de glucose entre le sang et les organes.",
+   "comprendre": "Après un repas, la concentration sanguine de glucose peut augmenter. Des organes comme le foie et les muscles stockent une partie du glucose, notamment sous forme de glycogène.",
+   "essentiel": [
+    "La glycémie est la concentration de glucose dans le sang.",
+    "Le glycogène est une forme de réserve du glucose.",
+    "Le foie peut stocker puis libérer du glucose dans le sang.",
+    "Le muscle utilise notamment ses réserves pour son fonctionnement."
+   ],
+   "image_mentale": "Le foie agit comme un réservoir qui reçoit ou restitue du glucose.",
+   "regle_ou_methode": "Suivre le glucose entre sang, organes et réserves selon la situation.",
+   "exemples": [
+    "Après un repas, l’absorption intestinale peut augmenter la glycémie ; sous l’effet de l’insuline, le stockage du glucose est favorisé.",
+    "Entre les repas, le foie peut libérer du glucose et contribuer à maintenir la glycémie."
+   ],
+   "piege": "Le glycogène n’est pas une hormone et ne doit pas être confondu avec le glucagon.",
+   "astuce_memoire": "Glycogène : réserve ; glycémie : concentration sanguine.",
+   "quiz": [
+    {
+     "q": "Comment s’appelle une forme de réserve de glucose ?",
+     "choix": [
+      "L’insuline",
+      "Le glycogène",
+      "L’adrénaline"
+     ],
+     "rep": "Le glycogène",
+     "expl": "Le glycogène stocke des unités de glucose."
+    },
+    {
+     "q": "Que désigne la glycémie ?",
+     "choix": [
+      "La quantité d’os dans un muscle",
+      "Le nombre de neurones du cerveau",
+      "La concentration de glucose dans le sang"
+     ],
+     "rep": "La concentration de glucose dans le sang",
+     "expl": "La glycémie mesure le glucose sanguin."
+    },
+    {
+     "q": "Quel organe peut libérer du glucose dans le sang entre les repas ?",
+     "choix": [
+      "Le foie",
+      "Le tendon",
+      "Le cristallin"
+     ],
+     "rep": "Le foie",
+     "expl": "Le foie participe au maintien de la glycémie."
+    }
+   ],
+   "id": "REV-SVT-TLE-64"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Insuline et glucagon",
+   "emoji": "⚖️",
+   "en_une_phrase": "Deux hormones pancréatiques participent à la régulation de la glycémie.",
+   "comprendre": "Le pancréas détecte des variations de la glycémie et libère des hormones dans le sang. L’insuline et le glucagon agissent sur des cellules cibles possédant les récepteurs adaptés.",
+   "essentiel": [
+    "L’insuline est sécrétée par les cellules bêta des îlots pancréatiques.",
+    "Le glucagon est sécrété par les cellules alpha.",
+    "L’insuline favorise notamment le stockage et la baisse de la glycémie.",
+    "Le glucagon favorise notamment la libération hépatique de glucose."
+   ],
+   "image_mentale": "Un système de réglage utilise deux signaux aux effets opposés.",
+   "regle_ou_methode": "Relier variation de glycémie, hormone libérée, organes cibles et effet.",
+   "exemples": [
+    "Après une hausse de la glycémie, les cellules bêta sécrètent davantage d’insuline ; le stockage du glucose est favorisé et la glycémie tend à diminuer.",
+    "Lors d’une baisse de la glycémie, le glucagon favorise la libération de glucose par le foie."
+   ],
+   "piege": "Une hormone n’agit que sur les cellules qui possèdent des récepteurs adaptés.",
+   "astuce_memoire": "Insuline : stockage ; glucagon : libération hépatique.",
+   "quiz": [
+    {
+     "q": "Quelle hormone favorise le stockage du glucose après un repas ?",
+     "choix": [
+      "Le glucagon",
+      "La myosine",
+      "L’insuline"
+     ],
+     "rep": "L’insuline",
+     "expl": "L’insuline favorise notamment le stockage."
+    },
+    {
+     "q": "Quelle hormone favorise la libération de glucose par le foie ?",
+     "choix": [
+      "Le glucagon",
+      "L’insuline",
+      "L’actine"
+     ],
+     "rep": "Le glucagon",
+     "expl": "Le glucagon agit notamment sur le foie."
+    },
+    {
+     "q": "Une hormone agit directement sur quelle cellule ?",
+     "choix": [
+      "Toute cellule sans exception",
+      "Une cellule qui possède le récepteur adapté",
+      "Une cellule sans membrane"
+     ],
+     "rep": "Une cellule qui possède le récepteur adapté",
+     "expl": "La reconnaissance dépend des récepteurs."
+    }
+   ],
+   "id": "REV-SVT-TLE-65"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Diabètes et régulation perturbée",
+   "emoji": "🩺",
+   "en_une_phrase": "Les diabètes correspondent à des troubles de la régulation de la glycémie.",
+   "comprendre": "Dans le diabète de type 1, la destruction des cellules bêta entraîne un déficit de sécrétion d’insuline. Dans le type 2, une moindre sensibilité à l’insuline et une insuffisance progressive de sécrétion sont impliquées.",
+   "essentiel": [
+    "Les deux types peuvent conduire à une glycémie trop élevée.",
+    "Le type 1 implique généralement une destruction auto-immune des cellules bêta.",
+    "Le type 2 associe notamment résistance à l’insuline et défaut de sécrétion.",
+    "Le diagnostic et le traitement relèvent d’une prise en charge médicale."
+   ],
+   "image_mentale": "Le signal hormonal peut manquer ou être moins bien reçu.",
+   "regle_ou_methode": "Identifier si la production du signal, sa réception ou les deux sont perturbées.",
+   "exemples": [
+    "Si les cellules bêta sont détruites, la production d’insuline diminue fortement : la glycémie n’est plus régulée normalement.",
+    "Si des cellules répondent moins à l’insuline, une quantité donnée de signal produit un effet réduit."
+   ],
+   "piege": "Les deux types ne se résument pas à une simple consommation de sucre.",
+   "astuce_memoire": "Signal manquant ou réponse diminuée.",
+   "quiz": [
+    {
+     "q": "Quel type est associé à la destruction auto-immune des cellules bêta ?",
+     "choix": [
+      "Le diabète de type 1",
+      "Le diabète de type 2 uniquement",
+      "Aucun diabète"
+     ],
+     "rep": "Le diabète de type 1",
+     "expl": "Dans le type 1, ces cellules productrices d’insuline sont détruites."
+    },
+    {
+     "q": "Que signifie résistance à l’insuline ?",
+     "choix": [
+      "Le glucose devient une hormone",
+      "Les cellules répondent moins bien à son action",
+      "Le pancréas est un muscle"
+     ],
+     "rep": "Les cellules répondent moins bien à son action",
+     "expl": "La réponse des cellules cibles est diminuée."
+    },
+    {
+     "q": "Une glycémie trop élevée prouve-t-elle à elle seule la cause précise ?",
+     "choix": [
+      "Oui, elle indique toujours le même type",
+      "Oui, elle indique une lésion osseuse",
+      "Non, une évaluation médicale est nécessaire"
+     ],
+     "rep": "Non, une évaluation médicale est nécessaire",
+     "expl": "Plusieurs mécanismes peuvent conduire à une hyperglycémie."
+    }
+   ],
+   "id": "REV-SVT-TLE-66"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Stress aigu et réponse adaptative",
+   "emoji": "🚨",
+   "en_une_phrase": "Le stress aigu mobilise rapidement l’organisme face à une perturbation.",
+   "comprendre": "La perception d’une situation stressante active des réseaux nerveux et des réponses hormonales. L’adrénaline puis le cortisol participent à des ajustements adaptés à la situation.",
+   "essentiel": [
+    "Le stress aigu est une réponse physiologique de l’organisme.",
+    "L’adrénaline favorise des modifications rapides, notamment cardiovasculaires.",
+    "Le cortisol participe à la mobilisation de ressources énergétiques.",
+    "Les réponses varient selon les situations et les individus."
+   ],
+   "image_mentale": "Une alarme déclenche plusieurs réglages coordonnés.",
+   "regle_ou_methode": "Identifier le facteur de stress, les voies de réponse et les effets observés.",
+   "exemples": [
+    "Face à un danger soudain, une libération d’adrénaline peut augmenter la fréquence cardiaque : cela participe à la mobilisation de l’organisme.",
+    "Une situation évaluée comme stressante peut aussi activer l’axe hormonal impliquant le cortisol."
+   ],
+   "piege": "Un stress aigu n’est pas automatiquement une maladie.",
+   "astuce_memoire": "Alarme rapide : mobilisation coordonnée.",
+   "quiz": [
+    {
+     "q": "Quelle hormone participe à la réponse rapide au stress ?",
+     "choix": [
+      "La cellulose",
+      "L’adrénaline",
+      "L’hémoglobine"
+     ],
+     "rep": "L’adrénaline",
+     "expl": "L’adrénaline participe à une réponse rapide."
+    },
+    {
+     "q": "Le cortisol participe notamment à ?",
+     "choix": [
+      "La fabrication immédiate des os",
+      "La photosynthèse",
+      "La mobilisation des ressources énergétiques"
+     ],
+     "rep": "La mobilisation des ressources énergétiques",
+     "expl": "Il contribue aux ajustements métaboliques."
+    },
+    {
+     "q": "Une réponse de stress aigu est-elle toujours une maladie ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement si le cœur bat"
+     ],
+     "rep": "Non",
+     "expl": "C’est une réponse physiologique adaptative."
+    }
+   ],
+   "id": "REV-SVT-TLE-67"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Axe hormonal et rétrocontrôle",
+   "emoji": "🔁",
+   "en_une_phrase": "Le cortisol participe à une boucle de régulation qui limite normalement sa propre production.",
+   "comprendre": "Une situation stressante active une chaîne de signaux entre hypothalamus, hypophyse et glandes surrénales. Le cortisol produit agit en retour sur les centres de commande et contribue à freiner cette activation.",
+   "essentiel": [
+    "L’hypothalamus libère notamment la CRH.",
+    "L’hypophyse libère l’ACTH.",
+    "Les glandes surrénales produisent du cortisol.",
+    "Le rétrocontrôle négatif contribue au retour vers un état de fonctionnement moins activé."
+   ],
+   "image_mentale": "Une alarme transmet un ordre puis reçoit un signal de freinage.",
+   "regle_ou_methode": "Suivre CRH, ACTH puis cortisol et repérer l’action en retour.",
+   "exemples": [
+    "Une activation de l’axe favorise la libération de CRH, puis d’ACTH et de cortisol ; le cortisol exerce ensuite un frein sur l’axe.",
+    "Lorsque le facteur déclenchant disparaît, cette régulation contribue au retour à un fonctionnement moins activé."
+   ],
+   "piege": "Le cortisol n’est pas produit par l’hypophyse.",
+   "astuce_memoire": "Hypothalamus, hypophyse, surrénales, frein.",
+   "quiz": [
+    {
+     "q": "Quel organe libère l’ACTH ?",
+     "choix": [
+      "Le tendon",
+      "Le globule rouge",
+      "L’hypophyse"
+     ],
+     "rep": "L’hypophyse",
+     "expl": "L’hypophyse sécrète cette hormone."
+    },
+    {
+     "q": "Quel organe produit le cortisol dans cette chaîne ?",
+     "choix": [
+      "Les glandes surrénales",
+      "Les os",
+      "La rétine"
+     ],
+     "rep": "Les glandes surrénales",
+     "expl": "Le cortex des glandes surrénales produit le cortisol."
+    },
+    {
+     "q": "Que signifie rétrocontrôle négatif ici ?",
+     "choix": [
+      "Le cortisol accélère toujours sa propre production",
+      "Le cortisol freine l’activation de l’axe",
+      "L’organisme ne sécrète aucune hormone"
+     ],
+     "rep": "Le cortisol freine l’activation de l’axe",
+     "expl": "Le signal final contribue à freiner la chaîne."
+    }
+   ],
+   "id": "REV-SVT-TLE-68"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Stress chronique et résilience",
+   "emoji": "🌱",
+   "en_une_phrase": "Un stress prolongé peut perturber les systèmes de régulation et le fonctionnement cérébral.",
+   "comprendre": "Lorsque les facteurs de stress persistent, les réponses physiologiques peuvent être durablement modifiées. La résilience désigne la capacité à retrouver un fonctionnement adapté après une perturbation, avec des différences entre individus.",
+   "essentiel": [
+    "Stress aigu et stress chronique se distinguent notamment par leur durée.",
+    "Le stress chronique peut modifier certains circuits cérébraux.",
+    "Les ressources et le contexte influencent les réponses individuelles.",
+    "Les approches de prise en charge sont adaptées à la situation."
+   ],
+   "image_mentale": "Un système d’alarme durablement activé peut perdre son réglage habituel.",
+   "regle_ou_methode": "Comparer durée et effets des réponses, puis considérer les ressources et le contexte.",
+   "exemples": [
+    "Deux personnes confrontées à une même situation peuvent présenter des réponses différentes : leurs expériences et leur contexte peuvent intervenir.",
+    "Après une perturbation, un retour progressif vers un fonctionnement adapté illustre la résilience."
+   ],
+   "piege": "La résilience ne signifie pas que chacun doit se rétablir seul ou au même rythme.",
+   "astuce_memoire": "Une réponse prolongée peut dérégler le système.",
+   "quiz": [
+    {
+     "q": "Quel facteur distingue notamment un stress chronique d’un stress aigu ?",
+     "choix": [
+      "Sa persistance dans le temps",
+      "La présence obligatoire d’une fracture",
+      "Le nombre fixe de neurones"
+     ],
+     "rep": "Sa persistance dans le temps",
+     "expl": "Le caractère prolongé est un élément de distinction."
+    },
+    {
+     "q": "Que désigne la résilience dans ce contexte ?",
+     "choix": [
+      "Une garantie de ne jamais ressentir de stress",
+      "Une capacité à retrouver un fonctionnement adapté",
+      "Une hormone pancréatique"
+     ],
+     "rep": "Une capacité à retrouver un fonctionnement adapté",
+     "expl": "Elle décrit une capacité de récupération et d’adaptation."
+    },
+    {
+     "q": "Les réponses au stress sont-elles identiques pour tous ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, sauf chez les plantes",
+      "Non, elles varient selon les individus et le contexte"
+     ],
+     "rep": "Non, elles varient selon les individus et le contexte",
+     "expl": "Les facteurs personnels et contextuels varient."
+    }
+   ],
+   "id": "REV-SVT-TLE-69"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Prise en charge de l’anxiété",
+   "emoji": "🤝",
+   "en_une_phrase": "La prise en charge d’une anxiété persistante peut associer des approches adaptées à la personne.",
+   "comprendre": "Certaines situations d’anxiété justifient un accompagnement professionnel. Des approches non médicamenteuses comme les psychothérapies peuvent être proposées. Des médicaments peuvent aussi être prescrits dans certaines situations, avec un suivi adapté.",
+   "essentiel": [
+    "La psychothérapie est une approche non médicamenteuse possible.",
+    "Certains médicaments anxiolytiques peuvent entraîner une somnolence et une dépendance.",
+    "Une prescription et un éventuel arrêt nécessitent un suivi médical.",
+    "La prise en charge dépend de la situation de chaque personne."
+   ],
+   "image_mentale": "Plusieurs outils peuvent être choisis selon les besoins de la personne.",
+   "regle_ou_methode": "Distinguer le soutien non médicamenteux, le traitement prescrit et les risques éventuels.",
+   "exemples": [
+    "Une psychothérapie peut être proposée pour aider une personne présentant un trouble anxieux ; le choix dépend de son évaluation et de ses besoins.",
+    "Certains anxiolytiques, comme les benzodiazépines, peuvent causer une somnolence et une dépendance : leur utilisation doit suivre les indications médicales."
+   ],
+   "piege": "Une benzodiazépine prise régulièrement ne doit pas être arrêtée brutalement de sa propre initiative.",
+   "astuce_memoire": "Accompagnement adapté et suivi médical.",
+   "quiz": [
+    {
+     "q": "Quelle approche est non médicamenteuse ?",
+     "choix": [
+      "Une prise de benzodiazépines",
+      "Une psychothérapie",
+      "Une injection de médicament"
+     ],
+     "rep": "Une psychothérapie",
+     "expl": "La psychothérapie ne repose pas sur un médicament."
+    },
+    {
+     "q": "Quel risque certains anxiolytiques peuvent-ils présenter ?",
+     "choix": [
+      "La création d’un nouvel organe",
+      "Une absence absolue d’effets indésirables",
+      "Une somnolence et une dépendance"
+     ],
+     "rep": "Une somnolence et une dépendance",
+     "expl": "Certaines benzodiazépines exposent à ces risques."
+    },
+    {
+     "q": "Que nécessite l’arrêt d’un traitement de ce type ?",
+     "choix": [
+      "Un avis et un suivi médicaux adaptés",
+      "Un arrêt brutal sans avis dans tous les cas",
+      "Une augmentation automatique des doses"
+     ],
+     "rep": "Un avis et un suivi médicaux adaptés",
+     "expl": "Un professionnel aide à adapter l’arrêt à la situation."
+    }
+   ],
+   "id": "REV-SVT-TLE-70"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Construire une preuve expérimentale en SVT",
+   "emoji": "🧪",
+   "en_une_phrase": "Un résultat devient un argument lorsqu’il répond à une hypothèse avec des contrôles adaptés.",
+   "comprendre": "Une comparaison n’est interprétable que si tu sais ce qui change, comme deux essais d’une recette ne différant que par un ingrédient. Une démarche scientifique relie hypothèse, protocole, résultats et limites.",
+   "essentiel": [
+    "Formule une hypothèse testable.",
+    "Définis les résultats attendus si elle est valide.",
+    "Prévois témoins, répétitions et conditions comparables.",
+    "Respecte les règles de sécurité et les êtres vivants.",
+    "Distingue observation, interprétation et conclusion."
+   ],
+   "image_mentale": "Hypothèse, test, résultat, interprétation puis conclusion limitée.",
+   "regle_ou_methode": "Pour chaque donnée, indique ce que tu observes, ce que tu en déduis et comment cela répond au problème.",
+   "exemples": [
+    "Pour tester l’effet d’une hormone sur une cellule, compare un lot traité à un témoin identique sans hormone ; une réponse différente devient un argument si les autres conditions sont contrôlées.",
+    "Une absence d’effet peut venir d’un récepteur absent ou d’un protocole inadapté : elle ne réfute pas toutes les actions possibles de l’hormone."
+   ],
+   "piege": "Une corrélation seule ne suffit pas à établir une causalité.",
+   "astuce_memoire": "Observer, expliquer, répondre.",
+   "quiz": [
+    {
+     "q": "Quel témoin convient pour tester une hormone ?",
+     "choix": [
+      "Un lot d’une autre espèce et à une autre température",
+      "Aucun lot de comparaison",
+      "Un lot comparable sans l’hormone"
+     ],
+     "rep": "Un lot comparable sans l’hormone",
+     "expl": "La comparaison doit isoler le facteur étudié."
+    },
+    {
+     "q": "Pourquoi répéter des mesures ?",
+     "choix": [
+      "Pour apprécier la variabilité",
+      "Pour garantir automatiquement l’hypothèse",
+      "Pour supprimer toute incertitude"
+     ],
+     "rep": "Pour apprécier la variabilité",
+     "expl": "Les répétitions montrent la dispersion des résultats."
+    },
+    {
+     "q": "Une absence d’effet prouve-t-elle que l’hormone est toujours inactive ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, après un seul essai"
+     ],
+     "rep": "Non",
+     "expl": "Elle ne vaut que dans les conditions réellement testées."
+    }
+   ],
+   "id": "REV-SVT-TLE-71"
+  }
+ ]
+}

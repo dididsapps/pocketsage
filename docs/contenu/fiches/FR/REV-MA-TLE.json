@@ -1,0 +1,3440 @@
+{
+ "classe": "TLE",
+ "niveau_appli": "Lycée",
+ "age": "17-18 ans",
+ "matiere": "Mathématiques (spécialité)",
+ "code": "MA",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Algèbre et géométrie",
+   "titre": "Dénombrer avec somme et produit",
+   "emoji": "🔢",
+   "en_une_phrase": "La somme compte des cas disjoints et le produit des choix successifs.",
+   "comprendre": "Un ensemble fini peut être décrit par ses éléments. Pour compter sans oubli, on distingue les cas exclusifs et les étapes successives.",
+   "essentiel": [
+    "Réunion disjointe : les effectifs s’additionnent.",
+    "Choix successifs : les nombres de possibilités se multiplient.",
+    "Un k-uplet est une liste ordonnée de k éléments."
+   ],
+   "image_mentale": "Un arbre sépare les cas puis enchaîne les choix.",
+   "regle_ou_methode": "Découper en cas disjoints ou en choix successifs, puis compter.",
+   "exemples": [
+    "Deux hauts et trois bas donnent 2 × 3 = 6 tenues possibles.",
+    "Avec deux desserts ou trois fruits différents, on a 2 + 3 = 5 choix."
+   ],
+   "piege": "On ne peut pas additionner les effectifs de cas qui se recouvrent sans corriger.",
+   "astuce_memoire": "Ou exclusif : somme ; étapes : produit.",
+   "quiz": [
+    {
+     "q": "Deux choix puis quatre choix donnent combien de couples ?",
+     "choix": [
+      "6",
+      "8",
+      "4"
+     ],
+     "rep": "8",
+     "expl": "Le principe multiplicatif donne 2 × 4."
+    },
+    {
+     "q": "Trois cas et deux autres cas disjoints donnent combien de cas ?",
+     "choix": [
+      "6",
+      "1",
+      "5"
+     ],
+     "rep": "5",
+     "expl": "On additionne 3 et 2."
+    },
+    {
+     "q": "Dans un couple, l’ordre compte-t-il ?",
+     "choix": [
+      "Oui",
+      "Non, jamais",
+      "Seulement si les éléments sont égaux"
+     ],
+     "rep": "Oui",
+     "expl": "Un couple est ordonné."
+    }
+   ],
+   "id": "REV-MA-TLE-01"
+  },
+  {
+   "axe": "Algèbre et géométrie",
+   "titre": "Listes, permutations et factorielle",
+   "emoji": "🧮",
+   "en_une_phrase": "Les listes ordonnées et les permutations se dénombrent avec des produits.",
+   "comprendre": "Une liste peut autoriser ou interdire les répétitions. Une permutation range tous les éléments distincts d’un ensemble.",
+   "essentiel": [
+    "Avec répétition : n choix à chacune des k places donnent nᵏ listes.",
+    "Sans répétition : n × (n − 1) × … pour k places.",
+    "n! = n × (n − 1) × … × 1 et 0! = 1."
+   ],
+   "image_mentale": "On remplit des cases l’une après l’autre.",
+   "regle_ou_methode": "Identifier nombre de places, ordre et répétition autorisée.",
+   "exemples": [
+    "Avec trois symboles, deux places et répétition, on obtient 3² = 9 listes.",
+    "Trois objets distincts se rangent de 3! = 6 façons."
+   ],
+   "piege": "Une liste sans répétition n’est pas une combinaison si l’ordre compte.",
+   "astuce_memoire": "Factorielle : ranger tous les objets distincts.",
+   "quiz": [
+    {
+     "q": "Combien de listes à deux places avec trois symboles et répétition ?",
+     "choix": [
+      "6",
+      "3",
+      "9"
+     ],
+     "rep": "9",
+     "expl": "Chaque place a trois choix."
+    },
+    {
+     "q": "Combien vaut 4! ?",
+     "choix": [
+      "24",
+      "16",
+      "10"
+     ],
+     "rep": "24",
+     "expl": "4! = 4 × 3 × 2 × 1."
+    },
+    {
+     "q": "Combien vaut 0! ?",
+     "choix": [
+      "0",
+      "1",
+      "Non défini"
+     ],
+     "rep": "1",
+     "expl": "Par convention, 0! vaut 1."
+    }
+   ],
+   "id": "REV-MA-TLE-02"
+  },
+  {
+   "axe": "Algèbre et géométrie",
+   "titre": "Combinaisons et triangle de Pascal",
+   "emoji": "🔺",
+   "en_une_phrase": "Une combinaison choisit des éléments sans tenir compte de leur ordre.",
+   "comprendre": "Le coefficient binomial C(n,k) compte les sous-ensembles à k éléments parmi n. La relation de Pascal permet de les calculer de proche en proche.",
+   "essentiel": [
+    "C(n,k) = n! / (k!(n − k)!) pour 0 ≤ k ≤ n.",
+    "C(n,0) = C(n,n) = 1.",
+    "Pour 1 ≤ k ≤ n − 1 : C(n,k) = C(n − 1,k − 1) + C(n − 1,k).",
+    "Un ensemble à n éléments possède 2ⁿ parties."
+   ],
+   "image_mentale": "Pour former un groupe, un élément est choisi ou non.",
+   "regle_ou_methode": "Vérifier que l’ordre ne compte pas, puis calculer le coefficient.",
+   "exemples": [
+    "Choisir deux objets parmi quatre donne C(4,2) = 6 groupes.",
+    "Un ensemble de trois éléments possède 2³ = 8 parties, dont la partie vide."
+   ],
+   "piege": "Choisir A puis B et choisir B puis A donnent le même groupe.",
+   "astuce_memoire": "Combinaison : composer un groupe.",
+   "quiz": [
+    {
+     "q": "Combien de paires parmi quatre objets distincts ?",
+     "choix": [
+      "6",
+      "12",
+      "8"
+     ],
+     "rep": "6",
+     "expl": "C(4,2) = 6."
+    },
+    {
+     "q": "Combien de parties possède un ensemble de trois éléments ?",
+     "choix": [
+      "6",
+      "8",
+      "9"
+     ],
+     "rep": "8",
+     "expl": "Chaque élément est présent ou absent : 2³."
+    },
+    {
+     "q": "Que compte C(n,k) ?",
+     "choix": [
+      "Les listes ordonnées avec répétition",
+      "Les nombres entiers entre n et k",
+      "Les groupes de k éléments parmi n"
+     ],
+     "rep": "Les groupes de k éléments parmi n",
+     "expl": "L’ordre des éléments du groupe ne compte pas."
+    }
+   ],
+   "id": "REV-MA-TLE-03"
+  },
+  {
+   "axe": "Algèbre et géométrie",
+   "titre": "Vecteurs et combinaisons linéaires",
+   "emoji": "🧭",
+   "en_une_phrase": "Les coordonnées permettent de calculer des vecteurs et leurs combinaisons dans l’espace.",
+   "comprendre": "Dans un repère de l’espace, AB a pour coordonnées celles de B moins celles de A. Une combinaison linéaire de deux vecteurs u et v est un vecteur de la forme αu + βv, avec α et β réels. On effectue les opérations coordonnée par coordonnée.",
+   "essentiel": [
+    "Si A(xA ; yA ; zA) et B(xB ; yB ; zB), AB = (xB−xA ; yB−yA ; zB−zA).",
+    "αu + βv se calcule coordonnée par coordonnée.",
+    "La relation de Chasles donne AB + BC = AC.",
+    "Les coordonnées d’un vecteur dépendent de la base choisie."
+   ],
+   "image_mentale": "Une combinaison vectorielle assemble des déplacements pondérés.",
+   "regle_ou_methode": "Soustraire départ à arrivée, puis calculer chaque coordonnée séparément.",
+   "exemples": [
+    "Pour A(1 ; −1 ; 2) et B(3 ; 2 ; 1), AB = (3−1 ; 2−(−1) ; 1−2) = (2 ; 3 ; −1).",
+    "Si u = (1 ; 2 ; 0) et v = (0 ; 1 ; 1), 2u − v = (2 ; 4 ; 0) − (0 ; 1 ; 1) = (2 ; 3 ; −1)."
+   ],
+   "piege": "AB = B − A, et non A − B.",
+   "astuce_memoire": "Arrivée moins départ.",
+   "quiz": [
+    {
+     "q": "Pour A(1 ; 2 ; 0) et B(3 ; 1 ; 2), quelles sont les coordonnées de AB ?",
+     "choix": [
+      "(−2 ; 1 ; −2)",
+      "(2 ; −1 ; 2)",
+      "(4 ; 3 ; 2)"
+     ],
+     "rep": "(2 ; −1 ; 2)",
+     "expl": "On calcule B − A."
+    },
+    {
+     "q": "Si u = (1 ; 0 ; 1) et v = (0 ; 1 ; 1), que vaut u + v ?",
+     "choix": [
+      "(1 ; 1 ; 1)",
+      "(0 ; 0 ; 2)",
+      "(1 ; 1 ; 2)"
+     ],
+     "rep": "(1 ; 1 ; 2)",
+     "expl": "On additionne les coordonnées de même rang."
+    },
+    {
+     "q": "Quelle égalité est toujours vraie ?",
+     "choix": [
+      "AB + BC = AC",
+      "AB + BC = CA",
+      "AB + AC = BC"
+     ],
+     "rep": "AB + BC = AC",
+     "expl": "C’est la relation de Chasles."
+    }
+   ],
+   "id": "REV-MA-TLE-04"
+  },
+  {
+   "axe": "Algèbre et géométrie",
+   "titre": "Colinéarité et alignement",
+   "emoji": "📏",
+   "en_une_phrase": "Deux vecteurs sont colinéaires si l’un est un multiple de l’autre, avec une attention particulière au vecteur nul.",
+   "comprendre": "Pour des vecteurs non nuls u et v, la colinéarité équivaut à l’existence d’un réel λ tel que v = λu. Le vecteur nul est colinéaire à tout vecteur. Trois points distincts A, B et C sont alignés si et seulement si AB et AC sont colinéaires.",
+   "essentiel": [
+    "Deux vecteurs non nuls sont colinéaires si l’un est un multiple de l’autre.",
+    "Le vecteur nul est colinéaire à tout vecteur.",
+    "A, B et C sont alignés si AB et AC sont colinéaires.",
+    "Des vecteurs directeurs colinéaires correspondent à des droites parallèles ou confondues."
+   ],
+   "image_mentale": "Une même direction peut être parcourue avec des longueurs et des sens différents.",
+   "regle_ou_methode": "Chercher un même coefficient multiplicateur pour les trois coordonnées.",
+   "exemples": [
+    "u = (1 ; 2 ; −1) et v = (−2 ; −4 ; 2) : v = −2u ; ils sont colinéaires et de sens opposés.",
+    "A(0 ; 0 ; 0), B(1 ; 2 ; 1), C(2 ; 4 ; 2) : AC = 2AB, donc les trois points sont alignés."
+   ],
+   "piege": "Un coefficient valable pour deux coordonnées doit aussi convenir pour la troisième.",
+   "astuce_memoire": "Un même coefficient pour toutes les coordonnées.",
+   "quiz": [
+    {
+     "q": "U = (1 ; 2 ; −1) et v = (2 ; 4 ; −2) sont-ils colinéaires ?",
+     "choix": [
+      "Non, car leurs normes sont différentes",
+      "Non, car une coordonnée est négative",
+      "Oui, v = 2u"
+     ],
+     "rep": "Oui, v = 2u",
+     "expl": "Les trois coordonnées de v sont le double de celles de u."
+    },
+    {
+     "q": "Le vecteur nul est-il colinéaire à u = (1 ; 0 ; 0) ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement si u est nul"
+     ],
+     "rep": "Oui",
+     "expl": "Le vecteur nul est colinéaire à tout vecteur."
+    },
+    {
+     "q": "Si AB et AC sont colinéaires, que peut-on conclure ?",
+     "choix": [
+      "Le triangle ABC est nécessairement rectangle",
+      "A, B et C sont alignés",
+      "AB et AC ont nécessairement la même norme"
+     ],
+     "rep": "A, B et C sont alignés",
+     "expl": "La colinéarité caractérise l’alignement."
+    }
+   ],
+   "id": "REV-MA-TLE-05"
+  },
+  {
+   "axe": "Algèbre et géométrie",
+   "titre": "Bases et coplanarité",
+   "emoji": "🧩",
+   "en_une_phrase": "Trois vecteurs non coplanaires forment une base de l’espace.",
+   "comprendre": "Un vecteur est combinaison linéaire de deux vecteurs non colinéaires exactement lorsqu’il appartient au plan vectoriel qu’ils engendrent. Trois vecteurs sont coplanaires si l’un peut s’écrire comme combinaison des deux autres lorsque ceux-ci ne sont pas colinéaires. Une base de l’espace comporte trois vecteurs non coplanaires.",
+   "essentiel": [
+    "Deux vecteurs non colinéaires engendrent une direction de plan.",
+    "Trois vecteurs non coplanaires forment une base de l’espace.",
+    "Dans une base, chaque vecteur possède une décomposition unique.",
+    "Deux vecteurs colinéaires ne suffisent pas à définir une direction de plan."
+   ],
+   "image_mentale": "Deux directions dessinent un plan ; une troisième hors du plan ouvre l’espace.",
+   "regle_ou_methode": "Chercher si le troisième vecteur est combinaison linéaire des deux premiers.",
+   "exemples": [
+    "u = (1 ; 0 ; 0), v = (0 ; 1 ; 0), w = (1 ; 2 ; 0) : w = u + 2v ; les trois vecteurs sont coplanaires.",
+    "Avec u = (1 ; 0 ; 0), v = (0 ; 1 ; 0), w = (0 ; 0 ; 1), le dernier n’est pas combinaison des deux premiers : ils forment une base."
+   ],
+   "piege": "Trois vecteurs non nuls peuvent être coplanaires : leur non-nullité ne suffit pas.",
+   "astuce_memoire": "Deux directions non colinéaires pour un plan ; trois non coplanaires pour l’espace.",
+   "quiz": [
+    {
+     "q": "U = (1 ; 0 ; 0), v = (0 ; 1 ; 0), w = (2 ; 3 ; 0) : que conclure ?",
+     "choix": [
+      "Ils sont coplanaires",
+      "Ils forment une base de l’espace",
+      "Ils sont tous colinéaires"
+     ],
+     "rep": "Ils sont coplanaires",
+     "expl": "w = 2u + 3v, alors que u et v ne sont pas colinéaires."
+    },
+    {
+     "q": "Quels vecteurs forment une base de l’espace ?",
+     "choix": [
+      "Trois vecteurs coplanaires",
+      "Trois vecteurs non coplanaires",
+      "Deux vecteurs non colinéaires seulement"
+     ],
+     "rep": "Trois vecteurs non coplanaires",
+     "expl": "Une base de l’espace comporte trois vecteurs non coplanaires."
+    },
+    {
+     "q": "Combien de décompositions un vecteur possède-t-il dans une base donnée ?",
+     "choix": [
+      "Deux",
+      "Une infinité",
+      "Une seule"
+     ],
+     "rep": "Une seule",
+     "expl": "La décomposition dans une base est unique."
+    }
+   ],
+   "id": "REV-MA-TLE-06"
+  },
+  {
+   "axe": "Algèbre et géométrie",
+   "titre": "Plans et positions relatives",
+   "emoji": "📐",
+   "en_une_phrase": "Un plan est défini par un point et deux vecteurs directeurs non colinéaires.",
+   "comprendre": "Le plan passant par A de directions u et v, non colinéaires, est l’ensemble des points M tels que AM = su + tv, avec s et t réels. Deux droites de l’espace peuvent être parallèles, sécantes ou non coplanaires. Une droite et un plan sont sécants en un point, parallèles sans point commun, ou la droite est incluse dans le plan.",
+   "essentiel": [
+    "Un plan est défini par un point et deux directions non colinéaires.",
+    "Une droite et un plan peuvent être sécants en un point, strictement parallèles ou tels que la droite est incluse dans le plan.",
+    "Deux droites de l’espace peuvent être non coplanaires.",
+    "Deux droites non parallèles de l’espace ne sont pas nécessairement sécantes."
+   ],
+   "image_mentale": "Deux droites peuvent passer à des hauteurs différentes sans jamais se rencontrer.",
+   "regle_ou_methode": "Déterminer les directions, puis rechercher s’il existe un point commun.",
+   "exemples": [
+    "Le plan passant par O et de directions (1 ; 0 ; 0) et (0 ; 1 ; 0) contient les points (s ; t ; 0) : tous ont une troisième coordonnée nulle.",
+    "La droite (t ; 0 ; 0) et la droite (0 ; s ; 1) ont des directions non colinéaires, mais leurs troisièmes coordonnées diffèrent ; elles ne se coupent pas et ne sont pas coplanaires."
+   ],
+   "piege": "Dans l’espace, « non parallèles » n’implique pas « sécantes ».",
+   "astuce_memoire": "Droites non parallèles : vérifier l’intersection.",
+   "quiz": [
+    {
+     "q": "Combien de directions non colinéaires et de points suffisent à définir un plan ?",
+     "choix": [
+      "Une direction et aucun point",
+      "Deux directions et un point",
+      "Trois directions colinéaires et aucun point"
+     ],
+     "rep": "Deux directions et un point",
+     "expl": "Un point et deux vecteurs non colinéaires définissent un plan."
+    },
+    {
+     "q": "Deux droites non parallèles dans l’espace sont-elles nécessairement sécantes ?",
+     "choix": [
+      "Oui",
+      "Oui, si elles ont des vecteurs directeurs non nuls",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Elles peuvent être non coplanaires."
+    },
+    {
+     "q": "Une droite peut-elle être incluse dans un plan ?",
+     "choix": [
+      "Oui",
+      "Non, elle ne peut le rencontrer qu’en un point",
+      "Non, une droite et un plan sont toujours disjoints"
+     ],
+     "rep": "Oui",
+     "expl": "Tous les points de la droite peuvent appartenir au plan."
+    }
+   ],
+   "id": "REV-MA-TLE-07"
+  },
+  {
+   "axe": "Algèbre et géométrie",
+   "titre": "Produit scalaire dans l’espace",
+   "emoji": "✖️",
+   "en_une_phrase": "Dans une base orthonormée, le produit scalaire se calcule coordonnée par coordonnée.",
+   "comprendre": "Pour u(x ; y ; z) et v(x′ ; y′ ; z′), dans une base orthonormée, u·v = xx′ + yy′ + zz′. Le produit scalaire est symétrique et bilinéaire. Deux vecteurs sont orthogonaux si et seulement si leur produit scalaire est nul.",
+   "essentiel": [
+    "En base orthonormée : u·v = xx′ + yy′ + zz′.",
+    "u·v = v·u.",
+    "u·(v + w) = u·v + u·w.",
+    "u et v sont orthogonaux si et seulement si u·v = 0."
+   ],
+   "image_mentale": "Trois produits de coordonnées sont additionnés.",
+   "regle_ou_methode": "Multiplier les coordonnées correspondantes puis additionner, sans oublier les signes.",
+   "exemples": [
+    "u = (1 ; 2 ; −1), v = (2 ; 0 ; 2) : u·v = 1×2 + 2×0 + (−1)×2 = 0 ; ils sont orthogonaux.",
+    "u = (1 ; 0 ; 1), v = (1 ; 2 ; 1) : u·v = 1 + 0 + 1 = 2."
+   ],
+   "piege": "La formule par coordonnées exige une base orthonormée.",
+   "astuce_memoire": "Produits coordonnée par coordonnée, puis somme.",
+   "quiz": [
+    {
+     "q": "Que vaut (1 ; 2 ; 3)·(2 ; 0 ; −1) ?",
+     "choix": [
+      "1",
+      "5",
+      "−1"
+     ],
+     "rep": "−1",
+     "expl": "1×2 + 2×0 + 3×(−1) = −1."
+    },
+    {
+     "q": "Que traduit un produit scalaire nul ?",
+     "choix": [
+      "L’orthogonalité des deux vecteurs",
+      "Leur égalité obligatoire",
+      "Leur colinéarité obligatoire"
+     ],
+     "rep": "L’orthogonalité des deux vecteurs",
+     "expl": "Un produit scalaire nul caractérise l’orthogonalité."
+    },
+    {
+     "q": "Que vaut u·(v + w) ?",
+     "choix": [
+      "u·v × u·w",
+      "u·v + u·w",
+      "u·v − u·w"
+     ],
+     "rep": "u·v + u·w",
+     "expl": "Le produit scalaire est distributif."
+    }
+   ],
+   "id": "REV-MA-TLE-08"
+  },
+  {
+   "axe": "Algèbre et géométrie",
+   "titre": "Norme et distance",
+   "emoji": "📍",
+   "en_une_phrase": "Dans un repère orthonormé, la distance entre deux points est la norme de leur vecteur différence.",
+   "comprendre": "La norme de u(x ; y ; z) vaut √(x² + y² + z²). Pour deux points A et B, la distance AB est la norme du vecteur AB. Ces formules utilisent un repère orthonormé.",
+   "essentiel": [
+    "‖u‖² = u·u.",
+    "‖u‖ = √(x² + y² + z²) en base orthonormée.",
+    "AB = ‖AB‖.",
+    "Une distance est toujours positive ou nulle."
+   ],
+   "image_mentale": "La diagonale de l’espace généralise le théorème de Pythagore.",
+   "regle_ou_methode": "Calculer les coordonnées de AB, additionner leurs carrés puis prendre la racine.",
+   "exemples": [
+    "Pour A(1 ; 1 ; 0) et B(3 ; 2 ; 2), AB = (2 ; 1 ; 2) ; AB = √(4 + 1 + 4) = 3.",
+    "Pour u = (−1 ; 2 ; 2), ‖u‖ = √(1 + 4 + 4) = 3."
+   ],
+   "piege": "La norme est la racine de la somme des carrés, pas la somme des coordonnées.",
+   "astuce_memoire": "Distance : différence des coordonnées, carrés, somme, racine.",
+   "quiz": [
+    {
+     "q": "Quelle est la norme de (1 ; 2 ; 2) ?",
+     "choix": [
+      "3",
+      "5",
+      "9"
+     ],
+     "rep": "3",
+     "expl": "√(1 + 4 + 4) = 3."
+    },
+    {
+     "q": "Quelle est la distance entre O(0 ; 0 ; 0) et A(2 ; 0 ; 0) ?",
+     "choix": [
+      "4",
+      "2",
+      "−2"
+     ],
+     "rep": "2",
+     "expl": "La norme de OA est 2."
+    },
+    {
+     "q": "Quelle égalité est vraie ?",
+     "choix": [
+      "‖u‖ = u·u pour tout u",
+      "‖u‖ = −u·u pour tout u",
+      "‖u‖² = u·u"
+     ],
+     "rep": "‖u‖² = u·u",
+     "expl": "Le carré de la norme est le produit scalaire du vecteur par lui-même."
+    }
+   ],
+   "id": "REV-MA-TLE-09"
+  },
+  {
+   "axe": "Algèbre et géométrie",
+   "titre": "Angle et produit scalaire",
+   "emoji": "📐",
+   "en_une_phrase": "Le produit scalaire permet de calculer l’angle entre deux vecteurs non nuls.",
+   "comprendre": "Pour u et v non nuls, u·v = ‖u‖‖v‖ cos θ, où θ est l’angle compris entre 0 et 180°. On calcule le produit scalaire et les normes, puis on obtient le cosinus. Un produit positif donne un angle inférieur à 90° (éventuellement nul), nul un angle droit, et négatif un angle supérieur à 90° (éventuellement plat).",
+   "essentiel": [
+    "cos θ = (u·v)/(‖u‖‖v‖) pour u et v non nuls.",
+    "u·v = 0 correspond à 90°.",
+    "u·v > 0 correspond à un angle inférieur à 90°, éventuellement nul.",
+    "u·v < 0 correspond à un angle supérieur à 90°, éventuellement plat."
+   ],
+   "image_mentale": "Le signe du produit scalaire indique de quel côté de l’angle droit on se situe.",
+   "regle_ou_methode": "Vérifier que les deux vecteurs sont non nuls, calculer le cosinus puis l’angle.",
+   "exemples": [
+    "Dans une base orthonormée, pour u = (1 ; 0 ; 0) et v = (1 ; 1 ; 0), u·v = 1, ‖u‖ = 1 et ‖v‖ = √2 ; cos θ = 1/√2, donc θ = 45°.",
+    "u = (1 ; 0 ; 0) et v = (−1 ; 1 ; 0) ont un produit scalaire négatif : leur angle est obtus, ici 135°."
+   ],
+   "piege": "On ne divise pas par une norme nulle : l’angle avec le vecteur nul n’est pas défini.",
+   "astuce_memoire": "Produit scalaire ÷ produit des normes = cosinus.",
+   "quiz": [
+    {
+     "q": "Deux vecteurs non nuls et non colinéaires de produit scalaire négatif forment un angle :",
+     "choix": [
+      "Aigu",
+      "Obtus",
+      "Droit"
+     ],
+     "rep": "Obtus",
+     "expl": "Un cosinus négatif donne un angle supérieur à 90° ; la non-colinéarité exclut 180°."
+    },
+    {
+     "q": "Quel angle correspond à deux vecteurs non nuls orthogonaux ?",
+     "choix": [
+      "0°",
+      "180°",
+      "90°"
+     ],
+     "rep": "90°",
+     "expl": "Leur produit scalaire est nul."
+    },
+    {
+     "q": "Pour deux vecteurs non nuls, quel quotient donne cos θ ?",
+     "choix": [
+      "u·v / (‖u‖‖v‖)",
+      "u·v / (‖u‖ + ‖v‖)",
+      "(‖u‖ + ‖v‖) / (u·v)"
+     ],
+     "rep": "u·v / (‖u‖‖v‖)",
+     "expl": "C’est la formule du produit scalaire."
+    }
+   ],
+   "id": "REV-MA-TLE-10"
+  },
+  {
+   "axe": "Algèbre et géométrie",
+   "titre": "Identités et polarisation",
+   "emoji": "➕",
+   "en_une_phrase": "Le produit scalaire relie la norme d’une somme aux normes et à l’angle des vecteurs.",
+   "comprendre": "Par bilinéarité, ‖u + v‖² = ‖u‖² + 2u·v + ‖v‖². De même, ‖u − v‖² = ‖u‖² − 2u·v + ‖v‖². Ces identités permettent de retrouver le produit scalaire à partir de normes.",
+   "essentiel": [
+    "‖u + v‖² = ‖u‖² + 2u·v + ‖v‖².",
+    "‖u − v‖² = ‖u‖² − 2u·v + ‖v‖².",
+    "u·v = (‖u + v‖² − ‖u‖² − ‖v‖²)/2.",
+    "Si u·v = 0, l’identité devient celle de Pythagore."
+   ],
+   "image_mentale": "Le terme croisé mesure l’interaction entre les deux directions.",
+   "regle_ou_methode": "Remplacer les valeurs dans l’identité, puis isoler le produit scalaire ou la norme recherchée.",
+   "exemples": [
+    "Si ‖u‖ = 3, ‖v‖ = 2 et u·v = 1, alors ‖u + v‖² = 9 + 2 + 4 = 15.",
+    "Si ‖u + v‖² = 13, ‖u‖² = 4 et ‖v‖² = 5, alors u·v = (13 − 4 − 5)/2 = 2."
+   ],
+   "piege": "Le terme croisé est 2u·v, pas seulement u·v.",
+   "astuce_memoire": "Somme des carrés + deux fois le produit scalaire.",
+   "quiz": [
+    {
+     "q": "Si ‖u‖² = 4, ‖v‖² = 9 et u·v = 2, que vaut ‖u + v‖² ?",
+     "choix": [
+      "15",
+      "11",
+      "17"
+     ],
+     "rep": "17",
+     "expl": "4 + 9 + 2×2 = 17."
+    },
+    {
+     "q": "Si u·v = 0, que vaut ‖u − v‖² ?",
+     "choix": [
+      "‖u‖² + ‖v‖²",
+      "‖u‖² − ‖v‖²",
+      "0 pour tous u et v"
+     ],
+     "rep": "‖u‖² + ‖v‖²",
+     "expl": "Le terme croisé est nul."
+    },
+    {
+     "q": "Si ‖u + v‖² = 10, ‖u‖² = 2 et ‖v‖² = 4, que vaut u·v ?",
+     "choix": [
+      "4",
+      "2",
+      "6"
+     ],
+     "rep": "2",
+     "expl": "(10−2−4)/2 = 2."
+    }
+   ],
+   "id": "REV-MA-TLE-11"
+  },
+  {
+   "axe": "Algèbre et géométrie",
+   "titre": "Représentation paramétrique d’une droite",
+   "emoji": "📍",
+   "en_une_phrase": "Une droite de l’espace est définie par un point et un vecteur directeur non nul.",
+   "comprendre": "La droite passant par A(xA ; yA ; zA) et dirigée par u(a ; b ; c) ≠ 0 est l’ensemble des points M tels que AM = tu, t réel. Ses coordonnées sont x = xA + ta, y = yA + tb, z = zA + tc. Il faut utiliser le même paramètre dans les trois équations.",
+   "essentiel": [
+    "M appartient à la droite si AM = tu pour un réel t.",
+    "Le vecteur directeur doit être non nul.",
+    "Le même paramètre t intervient dans les trois coordonnées.",
+    "Un multiple non nul de u définit la même direction."
+   ],
+   "image_mentale": "À partir d’un point, un paramètre fait avancer ou reculer sur la droite.",
+   "regle_ou_methode": "Lire le point pour t = 0 et le coefficient du même paramètre dans chaque coordonnée.",
+   "exemples": [
+    "A(1 ; 0 ; 2), u = (2 ; −1 ; 1) donnent x = 1 + 2t, y = −t, z = 2 + t. Pour t = 1, M(3 ; −1 ; 3) appartient à la droite.",
+    "Pour x = 2 + t, y = 1 et z = −1 + 3t, un point est (2 ; 1 ; −1) et un vecteur directeur est (1 ; 0 ; 3)."
+   ],
+   "piege": "Les trois coordonnées doivent correspondre au même réel t.",
+   "astuce_memoire": "Point initial + paramètre × direction.",
+   "quiz": [
+    {
+     "q": "Pour x = 1 + 2t, y = 3 − t, z = t, quel vecteur dirige la droite ?",
+     "choix": [
+      "(2 ; −1 ; 1)",
+      "(1 ; 3 ; 0)",
+      "(2 ; 1 ; 0)"
+     ],
+     "rep": "(2 ; −1 ; 1)",
+     "expl": "Les coefficients de t forment un vecteur directeur."
+    },
+    {
+     "q": "Le point (3 ; 2 ; 1) appartient-il à cette droite ?",
+     "choix": [
+      "Non, car t = 0",
+      "Oui, pour t = 1",
+      "Oui, pour t = 2"
+     ],
+     "rep": "Oui, pour t = 1",
+     "expl": "Avec t = 1, les trois coordonnées conviennent."
+    },
+    {
+     "q": "Un vecteur directeur peut-il être nul ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, si la droite passe par l’origine",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Le vecteur directeur d’une droite doit être non nul."
+    }
+   ],
+   "id": "REV-MA-TLE-12"
+  },
+  {
+   "axe": "Algèbre et géométrie",
+   "titre": "Équation cartésienne d’un plan",
+   "emoji": "🧱",
+   "en_une_phrase": "Dans un repère orthonormé, les coefficients d’une équation de plan donnent un vecteur normal.",
+   "comprendre": "Une équation ax + by + cz + d = 0 définit un plan si (a ; b ; c) ≠ (0 ; 0 ; 0). Dans un repère orthonormé, n = (a ; b ; c) est normal au plan. Pour un point A et un vecteur normal n non nul, M appartient au plan si et seulement si n·AM = 0.",
+   "essentiel": [
+    "ax + by + cz + d = 0 est un plan si (a ; b ; c) ≠ 0.",
+    "Dans un repère orthonormé, n = (a ; b ; c) est normal au plan.",
+    "Un point appartient au plan si ses coordonnées vérifient l’équation.",
+    "Multiplier tous les coefficients par un réel non nul ne change pas le plan."
+   ],
+   "image_mentale": "Un vecteur normal sort du plan à angle droit.",
+   "regle_ou_methode": "Lire la normale, puis remplacer les coordonnées d’un point pour tester son appartenance.",
+   "exemples": [
+    "Pour P : 2x − y + z − 3 = 0, n = (2 ; −1 ; 1). Le point A(1 ; 0 ; 1) appartient à P car 2 − 0 + 1 − 3 = 0.",
+    "Le plan normal à (1 ; 1 ; 1) passant par (1 ; 0 ; 0) a pour équation (x−1) + y + z = 0, soit x + y + z − 1 = 0."
+   ],
+   "piege": "Un vecteur normal n’est généralement pas un vecteur directeur du plan.",
+   "astuce_memoire": "Coefficients de x, y, z : coordonnées d’une normale.",
+   "quiz": [
+    {
+     "q": "Quel vecteur est normal à 2x − y + z − 3 = 0 ?",
+     "choix": [
+      "(2 ; 1 ; 3)",
+      "(2 ; −1 ; 1)",
+      "(−3 ; 2 ; −1)"
+     ],
+     "rep": "(2 ; −1 ; 1)",
+     "expl": "Les coefficients de x, y et z donnent une normale."
+    },
+    {
+     "q": "Le point (1 ; 0 ; 1) appartient-il au plan 2x − y + z − 3 = 0 ?",
+     "choix": [
+      "Non, le résultat vaut 1",
+      "Non, le résultat vaut −3",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "2×1 − 0 + 1 − 3 = 0."
+    },
+    {
+     "q": "Quel plan passe par l’origine et admet (1 ; 1 ; 1) comme normale ?",
+     "choix": [
+      "x + y + z = 0",
+      "x + y + z = 1",
+      "x − y = 0"
+     ],
+     "rep": "x + y + z = 0",
+     "expl": "La normale impose les coefficients et l’origine impose une constante nulle."
+    }
+   ],
+   "id": "REV-MA-TLE-13"
+  },
+  {
+   "axe": "Algèbre et géométrie",
+   "titre": "Droite et plan : orthogonalité",
+   "emoji": "⟂",
+   "en_une_phrase": "Une droite est perpendiculaire à un plan si son vecteur directeur est colinéaire à une normale du plan.",
+   "comprendre": "Dans un repère orthonormé, la direction d’une droite orthogonale à un plan est portée par un vecteur normal à ce plan. Une droite est parallèle à un plan si son vecteur directeur est orthogonal à une normale ; elle peut alors être incluse dans le plan. Pour conclure à une inclusion ou à une absence d’intersection, on teste un point.",
+   "essentiel": [
+    "Droite perpendiculaire au plan ⇔ directeur colinéaire à une normale.",
+    "Droite parallèle au plan ⇔ directeur orthogonal à une normale.",
+    "Une droite incluse dans un plan vérifie aussi la condition de parallélisme des directions.",
+    "Pour distinguer inclusion et parallélisme strict, tester un point de la droite."
+   ],
+   "image_mentale": "La normale traverse le plan à angle droit ; une direction du plan lui est orthogonale.",
+   "regle_ou_methode": "Comparer le vecteur directeur de la droite au vecteur normal, puis tester un point si nécessaire.",
+   "exemples": [
+    "Pour P : x + 2y − z = 0, n = (1 ; 2 ; −1). Une droite de directeur u = (2 ; 4 ; −2) est perpendiculaire à P car u = 2n.",
+    "Pour le même plan, v = (2 ; −1 ; 0) vérifie n·v = 2 − 2 = 0 : une droite de direction v est parallèle au plan ou incluse dans celui-ci."
+   ],
+   "piege": "Un produit scalaire nul avec la normale signifie parallèle au plan, pas perpendiculaire au plan.",
+   "astuce_memoire": "Directeur colinéaire à la normale : droite perpendiculaire.",
+   "quiz": [
+    {
+     "q": "Une droite de directeur (1 ; 2 ; −1) et un plan de normale (2 ; 4 ; −2) sont :",
+     "choix": [
+      "Strictement parallèles",
+      "Nécessairement confondus",
+      "Perpendiculaires"
+     ],
+     "rep": "Perpendiculaires",
+     "expl": "Le directeur et la normale sont colinéaires."
+    },
+    {
+     "q": "Si le directeur u d’une droite vérifie n·u = 0 pour une normale n à un plan, la droite est :",
+     "choix": [
+      "Parallèle au plan ou incluse dans celui-ci",
+      "Nécessairement perpendiculaire au plan",
+      "Nécessairement sécante en un point unique"
+     ],
+     "rep": "Parallèle au plan ou incluse dans celui-ci",
+     "expl": "Sa direction est parallèle au plan ; il reste à tester un point."
+    },
+    {
+     "q": "Pour distinguer droite incluse et droite strictement parallèle au plan, on teste :",
+     "choix": [
+      "La norme de la normale seulement",
+      "L’appartenance d’un point de la droite au plan",
+      "Le signe d’une coordonnée du directeur seulement"
+     ],
+     "rep": "L’appartenance d’un point de la droite au plan",
+     "expl": "Avec une direction parallèle, l’appartenance d’un point décide."
+    }
+   ],
+   "id": "REV-MA-TLE-14"
+  },
+  {
+   "axe": "Algèbre et géométrie",
+   "titre": "Intersection d’une droite et d’un plan",
+   "emoji": "🎯",
+   "en_une_phrase": "On détermine l’intersection en remplaçant les coordonnées paramétriques dans l’équation du plan.",
+   "comprendre": "Une droite paramétrée donne les coordonnées d’un point en fonction de t. Après substitution dans l’équation du plan, une unique valeur de t donne un point d’intersection. Une égalité impossible indique qu’ils sont disjoints ; une égalité vraie pour tout t indique que la droite est incluse dans le plan.",
+   "essentiel": [
+    "Une solution pour t : un point d’intersection.",
+    "Aucune solution : droite et plan disjoints.",
+    "Une identité vraie pour tout t : droite incluse dans le plan.",
+    "Il faut réinjecter la valeur obtenue pour trouver le point."
+   ],
+   "image_mentale": "Le paramètre passe dans l’équation du plan comme une clé dans une serrure.",
+   "regle_ou_methode": "Substituer x, y et z, résoudre pour t, puis calculer les coordonnées du point.",
+   "exemples": [
+    "Pour D : (x ; y ; z) = (1+t ; 2 ; t) et P : x + y + z = 5, on obtient 1+t+2+t = 5, donc t = 1 et l’intersection est (2 ; 2 ; 1).",
+    "Pour D : (t ; 0 ; 1) et P : z = 0, la substitution donne 1 = 0 : il n’y a aucun point commun."
+   ],
+   "piege": "La valeur du paramètre n’est pas le point : calculer ses trois coordonnées.",
+   "astuce_memoire": "Substituer, résoudre, revenir au point.",
+   "quiz": [
+    {
+     "q": "Pour D : (t ; 0 ; t) et P : x + z = 4, quelle est la valeur de t à l’intersection ?",
+     "choix": [
+      "2",
+      "4",
+      "1"
+     ],
+     "rep": "2",
+     "expl": "t + t = 4, donc t = 2."
+    },
+    {
+     "q": "Si la substitution conduit à 0 = 1, que conclure ?",
+     "choix": [
+      "La droite est incluse dans le plan",
+      "La droite et le plan sont disjoints",
+      "Ils ont un unique point commun"
+     ],
+     "rep": "La droite et le plan sont disjoints",
+     "expl": "L’équation est impossible : aucun paramètre ne convient."
+    },
+    {
+     "q": "Si la substitution conduit à 0 = 0 pour tout t, que conclure ?",
+     "choix": [
+      "Ils sont disjoints",
+      "Ils se coupent en un seul point",
+      "La droite est incluse dans le plan"
+     ],
+     "rep": "La droite est incluse dans le plan",
+     "expl": "Tous les points de la droite vérifient l’équation du plan."
+    }
+   ],
+   "id": "REV-MA-TLE-15"
+  },
+  {
+   "axe": "Algèbre et géométrie",
+   "titre": "Plans : parallélisme et intersection",
+   "emoji": "📎",
+   "en_une_phrase": "Deux plans de l’espace sont parallèles si leurs vecteurs normaux sont colinéaires.",
+   "comprendre": "Dans un repère orthonormé, on lit une normale dans les coefficients de chaque équation cartésienne. Si les normales sont non colinéaires, les plans sont sécants suivant une droite. Si elles sont colinéaires, il faut encore distinguer plans confondus et plans strictement parallèles.",
+   "essentiel": [
+    "Normales non colinéaires : plans sécants suivant une droite.",
+    "Normales colinéaires : plans parallèles, éventuellement confondus.",
+    "Des équations proportionnelles décrivent le même plan.",
+    "Tester un point permet de départager les deux cas parallèles."
+   ],
+   "image_mentale": "Deux feuilles se coupent suivant une ligne ou gardent des directions parallèles.",
+   "regle_ou_methode": "Comparer les normales ; en cas de colinéarité, comparer les équations complètes.",
+   "exemples": [
+    "P : x + y + z = 1 et Q : 2x + 2y + 2z = 2 ont des équations proportionnelles : ils sont confondus.",
+    "P : x + y + z = 1 et R : x + y + z = 3 ont la même normale mais aucune solution commune : ils sont strictement parallèles."
+   ],
+   "piege": "Des normales colinéaires ne suffisent pas à conclure que les plans sont distincts.",
+   "astuce_memoire": "Normales colinéaires : tester la constante.",
+   "quiz": [
+    {
+     "q": "Quelle est l’intersection de deux plans de normales non colinéaires ?",
+     "choix": [
+      "Un point unique",
+      "Une droite",
+      "Aucun point"
+     ],
+     "rep": "Une droite",
+     "expl": "Deux plans non parallèles sont sécants suivant une droite."
+    },
+    {
+     "q": "Les plans x + y = 1 et 2x + 2y = 2 sont :",
+     "choix": [
+      "Strictement parallèles",
+      "Sécants suivant une droite",
+      "Confondus"
+     ],
+     "rep": "Confondus",
+     "expl": "La seconde équation est le double de la première."
+    },
+    {
+     "q": "Les plans x + y = 1 et x + y = 2 sont :",
+     "choix": [
+      "Strictement parallèles",
+      "Confondus",
+      "Sécants suivant une droite"
+     ],
+     "rep": "Strictement parallèles",
+     "expl": "Ils ont la même normale et des équations incompatibles."
+    }
+   ],
+   "id": "REV-MA-TLE-16"
+  },
+  {
+   "axe": "Algèbre et géométrie",
+   "titre": "Projection et distance à un plan",
+   "emoji": "📌",
+   "en_une_phrase": "La distance d’un point à un plan est la longueur du segment qui le relie à son projeté orthogonal.",
+   "comprendre": "Le projeté orthogonal H de M sur P appartient à P et le vecteur MH est orthogonal au plan. Si M est hors de P, la droite MH est perpendiculaire à P ; sinon H = M. H est le point de P le plus proche de M ; la distance de M au plan est donc MH. Pour le trouver, on intersecte le plan et la droite passant par M dirigée par une normale.",
+   "essentiel": [
+    "H appartient au plan.",
+    "MH est orthogonal au plan.",
+    "La distance de M au plan vaut MH.",
+    "La droite de projection a pour direction une normale du plan."
+   ],
+   "image_mentale": "Depuis le point, on descend perpendiculairement sur le plan.",
+   "regle_ou_methode": "Paramétrer la droite normale, trouver son intersection avec le plan, puis calculer MH.",
+   "exemples": [
+    "Dans un repère orthonormé, soit M(1 ; 2 ; 3) et P : z = 0. Une normale est (0 ; 0 ; 1) ; la projection est H(1 ; 2 ; 0), donc d(M,P) = MH = 3.",
+    "Dans un repère orthonormé, pour M(1 ; 0 ; 0) et P : x + y + z = 0, la droite normale est M+t(1 ; 1 ; 1). L’équation donne 1+3t = 0, donc H(2/3 ; −1/3 ; −1/3) et MH = 1/√3."
+   ],
+   "piege": "Un point quelconque du plan ne donne pas nécessairement la distance minimale.",
+   "astuce_memoire": "Projection orthogonale = point le plus proche.",
+   "quiz": [
+    {
+     "q": "Dans un repère orthonormé, quelle est la distance de M(1 ; 2 ; 3) au plan z = 0 ?",
+     "choix": [
+      "2",
+      "√14",
+      "3"
+     ],
+     "rep": "3",
+     "expl": "Le projeté est (1 ; 2 ; 0), à distance 3."
+    },
+    {
+     "q": "La droite reliant M à son projeté orthogonal sur P est :",
+     "choix": [
+      "Perpendiculaire à P si M n’appartient pas à P",
+      "Toujours incluse dans P",
+      "Toujours parallèle strictement à P"
+     ],
+     "rep": "Perpendiculaire à P si M n’appartient pas à P",
+     "expl": "La direction de projection est normale au plan."
+    },
+    {
+     "q": "Quel point du plan minimise la distance à M ?",
+     "choix": [
+      "N’importe quel point du plan",
+      "Son projeté orthogonal",
+      "Le point du plan ayant la plus grande abscisse"
+     ],
+     "rep": "Son projeté orthogonal",
+     "expl": "Le projeté orthogonal est le point le plus proche."
+    }
+   ],
+   "id": "REV-MA-TLE-17"
+  },
+  {
+   "axe": "Algèbre et géométrie",
+   "titre": "Projection et distance à une droite",
+   "emoji": "📍",
+   "en_une_phrase": "La distance d’un point à une droite se calcule à partir de son projeté orthogonal sur cette droite.",
+   "comprendre": "Si H est le projeté orthogonal de M sur une droite D, H appartient à D et MH est orthogonal à une direction non nulle de D. Le point H minimise la distance de M aux points de D. On peut le trouver avec un paramètre et un produit scalaire nul.",
+   "essentiel": [
+    "H appartient à la droite D.",
+    "MH·u = 0 pour un vecteur directeur non nul u de D.",
+    "d(M,D) = MH.",
+    "La méthode fonctionne aussi si M appartient déjà à D : alors H = M."
+   ],
+   "image_mentale": "Le segment le plus court rejoint la droite à angle droit.",
+   "regle_ou_methode": "Poser H = A + tu, résoudre MH·u = 0, puis calculer MH.",
+   "exemples": [
+    "Dans un repère orthonormé, pour D : (t ; 0 ; 0) et M(2 ; 3 ; 0), poser H(t ; 0 ; 0). L’orthogonalité de MH avec (1 ; 0 ; 0) donne t−2 = 0 : H(2 ; 0 ; 0) et MH = 3.",
+    "Pour la même droite et N(1 ; 0 ; 4), le projeté est (1 ; 0 ; 0) ; la distance est 4."
+   ],
+   "piege": "La distance à un point choisi arbitrairement sur la droite peut être supérieure à la distance minimale.",
+   "astuce_memoire": "Appartenance et orthogonalité déterminent le projeté.",
+   "quiz": [
+    {
+     "q": "Dans un repère orthonormé, quelle est la distance de M(2 ; 3 ; 0) à l’axe des abscisses ?",
+     "choix": [
+      "3",
+      "2",
+      "√13"
+     ],
+     "rep": "3",
+     "expl": "Le projeté est (2 ; 0 ; 0)."
+    },
+    {
+     "q": "Quel critère caractérise le projeté H de M sur une droite D de direction u non nulle ?",
+     "choix": [
+      "H appartient à D et MH = u",
+      "H appartient à D et MH·u = 0",
+      "MH est parallèle à u pour tout M extérieur à D"
+     ],
+     "rep": "H appartient à D et MH·u = 0",
+     "expl": "Le segment de projection est perpendiculaire à la droite."
+    },
+    {
+     "q": "Quelle est la distance d’un point appartenant à D à la droite D ?",
+     "choix": [
+      "1",
+      "La norme de tout vecteur directeur de D",
+      "0"
+     ],
+     "rep": "0",
+     "expl": "Le point est son propre projeté."
+    }
+   ],
+   "id": "REV-MA-TLE-18"
+  },
+  {
+   "axe": "Algèbre et géométrie",
+   "titre": "Plan médiateur et volume",
+   "emoji": "📦",
+   "en_une_phrase": "Le plan médiateur regroupe les points équidistants de deux points distincts.",
+   "comprendre": "Pour A ≠ B, l’ensemble des points M tels que MA = MB est le plan passant par le milieu I de [AB] et normal à AB. Un volume de pyramide ou de tétraèdre se calcule par V = aire de la base × hauteur / 3. La hauteur est la distance du sommet au plan de la base.",
+   "essentiel": [
+    "Plan médiateur de [AB] : plan passant par son milieu et normal à AB.",
+    "Tout point du plan médiateur est équidistant de A et B.",
+    "Volume d’une pyramide : aire de la base × hauteur / 3.",
+    "La hauteur est mesurée perpendiculairement au plan de la base."
+   ],
+   "image_mentale": "Un plan coupe le segment en son milieu à angle droit.",
+   "regle_ou_methode": "Calculer le milieu et une normale ; pour un volume, identifier une base et la hauteur correspondante.",
+   "exemples": [
+    "Pour A(0 ; 0 ; 0) et B(2 ; 0 ; 0), I(1 ; 0 ; 0) et AB = (2 ; 0 ; 0). Le plan médiateur a donc pour équation x = 1.",
+    "Une pyramide de base d’aire 6 et de hauteur 3 a pour volume 6×3/3 = 6 unités cubes."
+   ],
+   "piege": "La hauteur d’une pyramide n’est pas nécessairement une arête du solide.",
+   "astuce_memoire": "Milieu et normale ; aire × hauteur ÷ 3.",
+   "quiz": [
+    {
+     "q": "Quel plan est médiateur de A(0 ; 0 ; 0) et B(2 ; 0 ; 0) ?",
+     "choix": [
+      "x = 0",
+      "x = 1",
+      "z = 1"
+     ],
+     "rep": "x = 1",
+     "expl": "Le plan passe par le milieu (1 ; 0 ; 0) et est normal à AB."
+    },
+    {
+     "q": "Quel est le volume d’une pyramide de base d’aire 12 et de hauteur 2 ?",
+     "choix": [
+      "24",
+      "4",
+      "8"
+     ],
+     "rep": "8",
+     "expl": "V = 12×2/3 = 8."
+    },
+    {
+     "q": "Quelle propriété caractérise les points du plan médiateur de [AB] ?",
+     "choix": [
+      "Ils sont équidistants de A et de B",
+      "Ils sont tous situés à la distance 1 de A",
+      "Ils appartiennent tous à la droite (AB)"
+     ],
+     "rep": "Ils sont équidistants de A et de B",
+     "expl": "Le plan médiateur est l’ensemble des points équidistants de A et B."
+    }
+   ],
+   "id": "REV-MA-TLE-19"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Suites : calculer des termes",
+   "emoji": "🔢",
+   "en_une_phrase": "Une suite associe un nombre à chaque rang entier considéré.",
+   "comprendre": "Une formule explicite donne uₙ directement en fonction de n. Une relation de récurrence calcule uₙ₊₁ à partir de termes précédents et nécessite une valeur initiale.",
+   "essentiel": [
+    "Avec uₙ = 2n + 1, le rang détermine directement le terme.",
+    "Une suite récurrente nécessite une initialisation.",
+    "L’indice initial, 0 ou 1 par exemple, doit être précisé."
+   ],
+   "image_mentale": "Une liste ordonnée dont chaque case porte son rang.",
+   "regle_ou_methode": "Lire l’indice initial puis substituer le rang ou calculer les termes successifs.",
+   "exemples": [
+    "Si uₙ = 2n + 1 pour n ≥ 0, alors u₃ = 2 × 3 + 1 = 7.",
+    "Si v₀ = 1 et vₙ₊₁ = 2vₙ + 1, alors v₁ = 3 puis v₂ = 7."
+   ],
+   "piege": "Une relation de récurrence seule ne fixe pas la suite sans condition initiale.",
+   "astuce_memoire": "Explicite : rang direct ; récurrente : départ puis calcul.",
+   "quiz": [
+    {
+     "q": "Pour uₙ = 2n + 1, que vaut u₄ ?",
+     "choix": [
+      "8",
+      "7",
+      "9"
+     ],
+     "rep": "9",
+     "expl": "2 × 4 + 1 = 9."
+    },
+    {
+     "q": "Si v₀ = 1 et vₙ₊₁ = 2vₙ + 1, que vaut v₁ ?",
+     "choix": [
+      "3",
+      "2",
+      "1"
+     ],
+     "rep": "3",
+     "expl": "v₁ = 2 × 1 + 1."
+    },
+    {
+     "q": "Que faut-il ajouter à une relation de récurrence d’ordre 1 pour déterminer la suite ?",
+     "choix": [
+      "Une limite choisie librement",
+      "Une valeur initiale",
+      "La somme de tous les termes"
+     ],
+     "rep": "Une valeur initiale",
+     "expl": "La valeur initiale permet de calculer les termes successifs."
+    }
+   ],
+   "id": "REV-MA-TLE-20"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Démontrer par récurrence",
+   "emoji": "🪜",
+   "en_une_phrase": "Une récurrence prouve une propriété à tous les rangs à partir d’un rang initial.",
+   "comprendre": "On vérifie l’initialisation, puis on suppose la propriété vraie à un rang n quelconque et on démontre qu’elle est vraie au rang n + 1. On conclut pour tous les rangs concernés.",
+   "essentiel": [
+    "Initialisation : vérifier le premier rang annoncé.",
+    "Hérédité : démontrer P(n) ⇒ P(n + 1).",
+    "Dans une récurrence simple, on suppose la propriété vraie à un rang n quelconque pour établir son hérédité."
+   ],
+   "image_mentale": "Des dominos : le premier tombe et chacun entraîne le suivant.",
+   "regle_ou_methode": "Écrire clairement P(n), initialiser, utiliser l’hypothèse, conclure.",
+   "exemples": [
+    "Prouver 1 + 2 + … + n = n(n + 1)/2 pour n ≥ 1 : au rang 1, les deux membres valent 1. Si la formule est vraie au rang n, ajouter n + 1 donne n(n + 1)/2 + n + 1 = (n + 1)(n + 2)/2. La propriété est donc vraie pour tout n ≥ 1.",
+    "Si u₀ = 2 et uₙ₊₁ = uₙ + 3, montrer uₙ = 2 + 3n : vrai en 0 ; si uₙ = 2 + 3n, alors uₙ₊₁ = 2 + 3(n + 1)."
+   ],
+   "piege": "Vérifier plusieurs premiers termes ne démontre pas l’hérédité.",
+   "astuce_memoire": "Départ, transmission, conclusion.",
+   "quiz": [
+    {
+     "q": "Quelle implication établit l’hérédité ?",
+     "choix": [
+      "P(n) implique P(n + 1) pour tout n concerné",
+      "P(n + 1) implique seulement P(n)",
+      "P(1) implique uniquement P(2)"
+     ],
+     "rep": "P(n) implique P(n + 1) pour tout n concerné",
+     "expl": "L’hérédité transmet la propriété d’un rang quelconque au suivant."
+    },
+    {
+     "q": "Quel est le premier rang à vérifier si la propriété est annoncée pour n ≥ 2 ?",
+     "choix": [
+      "n = 0",
+      "n = 2",
+      "n = 3 uniquement"
+     ],
+     "rep": "n = 2",
+     "expl": "L’initialisation correspond au premier rang annoncé."
+    },
+    {
+     "q": "Si P(1) est vraie et P(n) implique P(n + 1) pour n ≥ 1, que conclure ?",
+     "choix": [
+      "P(n) est vraie seulement pour n = 1",
+      "P(n) est fausse pour les rangs pairs",
+      "P(n) est vraie pour tout n ≥ 1"
+     ],
+     "rep": "P(n) est vraie pour tout n ≥ 1",
+     "expl": "Le principe de récurrence assure la propriété à tous les rangs suivants."
+    }
+   ],
+   "id": "REV-MA-TLE-21"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Sens de variation et bornes",
+   "emoji": "📈",
+   "en_une_phrase": "On compare des termes successifs pour étudier les variations d’une suite.",
+   "comprendre": "La suite est croissante si uₙ₊₁ − uₙ ≥ 0 pour tout rang considéré. Une suite est majorée si un même réel est supérieur ou égal à tous ses termes ; une récurrence peut établir une telle borne.",
+   "essentiel": [
+    "Le signe de uₙ₊₁ − uₙ donne le sens de variation.",
+    "Si les termes sont strictement positifs, le quotient uₙ₊₁/uₙ peut aussi être comparé à 1.",
+    "Une borne doit convenir à tous les rangs considérés."
+   ],
+   "image_mentale": "Des marches successives et un plafond commun.",
+   "regle_ou_methode": "Calculer la différence, étudier son signe puis justifier les éventuelles bornes.",
+   "exemples": [
+    "Pour uₙ = n², n ≥ 0, uₙ₊₁ − uₙ = 2n + 1 > 0 : la suite est strictement croissante.",
+    "Pour vₙ = 1 − 1/(n + 1), n ≥ 0, on a vₙ < 1 : 1 est un majorant."
+   ],
+   "piege": "Une suite majorée n’est pas nécessairement croissante.",
+   "astuce_memoire": "Différence pour varier ; borne commune pour majorer.",
+   "quiz": [
+    {
+     "q": "Quel est le signe de (n + 1)² − n² pour n ≥ 0 ?",
+     "choix": [
+      "Strictement négatif",
+      "Strictement positif",
+      "Toujours nul"
+     ],
+     "rep": "Strictement positif",
+     "expl": "La différence vaut 2n + 1 > 0."
+    },
+    {
+     "q": "Que signifie uₙ ≤ 5 pour tout n ?",
+     "choix": [
+      "5 est obligatoirement un terme de la suite",
+      "La suite converge forcément vers 5",
+      "5 est un majorant de la suite"
+     ],
+     "rep": "5 est un majorant de la suite",
+     "expl": "La borne 5 peut ne jamais être atteinte."
+    },
+    {
+     "q": "Pour utiliser uₙ₊₁/uₙ comme critère habituel de croissance, quelle précaution convient ?",
+     "choix": [
+      "Vérifier que uₙ est strictement positif",
+      "Supposer que uₙ vaut toujours zéro",
+      "Oublier les indices"
+     ],
+     "rep": "Vérifier que uₙ est strictement positif",
+     "expl": "La division et le sens de la comparaison exigent une condition sur le signe."
+    }
+   ],
+   "id": "REV-MA-TLE-22"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Suites monotones et convergence",
+   "emoji": "🎯",
+   "en_une_phrase": "Toute suite croissante majorée converge ; toute suite décroissante minorée converge.",
+   "comprendre": "Ces théorèmes garantissent l’existence d’une limite finie mais n’en donnent pas toujours la valeur. Une suite croissante non majorée tend vers +∞, et une suite décroissante non minorée vers −∞.",
+   "essentiel": [
+    "Croissante et majorée ⇒ convergence.",
+    "Décroissante et minorée ⇒ convergence.",
+    "Une suite convergente est bornée, mais une suite bornée peut diverger."
+   ],
+   "image_mentale": "Une montée qui reste sous un plafond se rapproche d’une hauteur limite.",
+   "regle_ou_methode": "Vérifier séparément monotonie et borne avant de conclure.",
+   "exemples": [
+    "uₙ = 1 − 1/(n + 1) est croissante et majorée par 1 : elle converge ; ici sa limite est 1.",
+    "vₙ = (−1)ⁿ est bornée entre −1 et 1 mais alterne entre ces deux valeurs : elle ne converge pas."
+   ],
+   "piege": "Une borne seule ne garantit pas la convergence.",
+   "astuce_memoire": "Monotone + borne adaptée → limite finie.",
+   "quiz": [
+    {
+     "q": "Une suite croissante majorée est nécessairement :",
+     "choix": [
+      "Constante dès le rang 1",
+      "Divergente vers +∞",
+      "Convergente"
+     ],
+     "rep": "Convergente",
+     "expl": "Le théorème de convergence monotone garantit une limite finie."
+    },
+    {
+     "q": "La suite (−1)ⁿ est :",
+     "choix": [
+      "Bornée et divergente",
+      "Croissante et convergente",
+      "Non bornée et divergente vers +∞"
+     ],
+     "rep": "Bornée et divergente",
+     "expl": "Ses termes alternent entre −1 et 1."
+    },
+    {
+     "q": "Une suite croissante non majorée tend vers :",
+     "choix": [
+      "Une limite finie",
+      "+∞",
+      "−∞"
+     ],
+     "rep": "+∞",
+     "expl": "Une suite croissante sans majorant dépasse tout réel à partir d’un certain rang."
+    }
+   ],
+   "id": "REV-MA-TLE-23"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Suites géométriques et limites",
+   "emoji": "📉",
+   "en_une_phrase": "Le comportement de qⁿ dépend de la valeur de la raison réelle q.",
+   "comprendre": "Une suite géométrique vérifie uₙ = u₀qⁿ. Pour |q| < 1, qⁿ tend vers 0 ; pour q > 1, qⁿ tend vers +∞. Si q = −1, les termes alternent ; si q < −1, leur valeur absolue croît sans limite et les signes alternent.",
+   "essentiel": [
+    "|q| < 1 : qⁿ → 0.",
+    "q = 1 : qⁿ = 1.",
+    "q > 1 : qⁿ → +∞.",
+    "q ≤ −1 : qⁿ ne converge pas."
+   ],
+   "image_mentale": "Une multiplication répétée peut amortir, amplifier ou alterner les termes.",
+   "regle_ou_methode": "Identifier la raison et son signe avant d’appliquer une limite.",
+   "exemples": [
+    "uₙ = 3(0,5)ⁿ : puisque |0,5| < 1, uₙ → 0.",
+    "vₙ = (−2)ⁿ alterne de signe et sa valeur absolue vaut 2ⁿ → +∞ : la suite diverge."
+   ],
+   "piege": "Une raison négative inférieure à −1 ne donne pas une limite −∞.",
+   "astuce_memoire": "Raison en valeur absolue inférieure à 1 : extinction.",
+   "quiz": [
+    {
+     "q": "Quelle est la limite de (0,3)ⁿ ?",
+     "choix": [
+      "0",
+      "+∞",
+      "1"
+     ],
+     "rep": "0",
+     "expl": "La raison vérifie |0,3| < 1."
+    },
+    {
+     "q": "Quelle est la limite de 2ⁿ ?",
+     "choix": [
+      "0",
+      "+∞",
+      "−∞"
+     ],
+     "rep": "+∞",
+     "expl": "Une raison strictement supérieure à 1 donne une divergence vers +∞."
+    },
+    {
+     "q": "Que fait (−1)ⁿ ?",
+     "choix": [
+      "Elle converge vers −1",
+      "Elle converge vers 0",
+      "Elle alterne et ne converge pas"
+     ],
+     "rep": "Elle alterne et ne converge pas",
+     "expl": "Elle vaut alternativement 1 et −1."
+    }
+   ],
+   "id": "REV-MA-TLE-24"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Suites arithmético-géométriques",
+   "emoji": "🔁",
+   "en_une_phrase": "Pour uₙ₊₁ = auₙ + b, on peut chercher un point fixe pour obtenir une suite géométrique.",
+   "comprendre": "Si a ≠ 1, le point fixe L vérifie L = aL + b, donc L = b/(1 − a). La suite vₙ = uₙ − L vérifie alors vₙ₊₁ = avₙ. Son expression permet d’étudier uₙ.",
+   "essentiel": [
+    "Chercher L tel que L = aL + b.",
+    "Poser vₙ = uₙ − L.",
+    "Alors vₙ est géométrique de raison a.",
+    "Si |a| < 1, uₙ converge vers L."
+   ],
+   "image_mentale": "On mesure la distance algébrique au point fixe plutôt que le terme lui-même.",
+   "regle_ou_methode": "Calculer L, établir la relation sur vₙ, puis revenir à uₙ.",
+   "exemples": [
+    "u₀ = 0 et uₙ₊₁ = 0,5uₙ + 1 : L = 2. Avec vₙ = uₙ − 2, vₙ = −2(0,5)ⁿ, donc uₙ = 2 − 2(0,5)ⁿ → 2.",
+    "Pour uₙ₊₁ = 2uₙ − 3, le point fixe vérifie L = 2L − 3, donc L = 3 ; la seule existence de ce point fixe ne prouve pas la convergence."
+   ],
+   "piege": "Un point fixe possible ne suffit pas à garantir que la suite converge.",
+   "astuce_memoire": "Soustraire le point fixe pour retrouver une suite géométrique.",
+   "quiz": [
+    {
+     "q": "Quel est le point fixe de x ↦ 0,5x + 1 ?",
+     "choix": [
+      "1",
+      "2",
+      "0,5"
+     ],
+     "rep": "2",
+     "expl": "Résoudre L = 0,5L + 1 donne L = 2."
+    },
+    {
+     "q": "Si vₙ₊₁ = 0,5vₙ, quelle est la nature de v ?",
+     "choix": [
+      "Arithmétique de raison 0,5",
+      "Constante égale à 0,5",
+      "Géométrique de raison 0,5"
+     ],
+     "rep": "Géométrique de raison 0,5",
+     "expl": "Chaque terme est multiplié par 0,5."
+    },
+    {
+     "q": "Si uₙ = 2 − 2(0,5)ⁿ, sa limite vaut :",
+     "choix": [
+      "2",
+      "0",
+      "−2"
+     ],
+     "rep": "2",
+     "expl": "La puissance (0,5)ⁿ tend vers 0."
+    }
+   ],
+   "id": "REV-MA-TLE-25"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Comparaison et encadrement de suites",
+   "emoji": "🎯",
+   "en_une_phrase": "Une comparaison ou un encadrement permet d’établir certaines limites.",
+   "comprendre": "Si aₙ ≤ uₙ ≤ bₙ et si aₙ et bₙ tendent vers la même limite finie L, alors uₙ tend vers L. Si uₙ ≥ aₙ à partir d’un certain rang et si aₙ → +∞, alors uₙ → +∞.",
+   "essentiel": [
+    "Comparer les termes à partir d’un rang suffisant.",
+    "Les deux bornes d’un encadrement doivent tendre vers la même limite.",
+    "Une simple borne fixe ne détermine pas une limite."
+   ],
+   "image_mentale": "Une suite coincée entre deux rails qui se rejoignent.",
+   "regle_ou_methode": "Établir les inégalités puis calculer les limites des bornes.",
+   "exemples": [
+    "Comme −1 ≤ sin(n) ≤ 1 et n ≥ 1, −1/n ≤ sin(n)/n ≤ 1/n. Les deux bornes tendent vers 0, donc sin(n)/n → 0.",
+    "Pour n ≥ 0, n² + n ≥ n et n → +∞ ; par comparaison, n² + n → +∞."
+   ],
+   "piege": "Être compris entre −1 et 1 ne suffit pas à converger.",
+   "astuce_memoire": "Deux bornes, une même limite : encadrement.",
+   "quiz": [
+    {
+     "q": "Si −1/n ≤ uₙ ≤ 1/n pour n ≥ 1, alors uₙ tend vers :",
+     "choix": [
+      "1",
+      "Une valeur quelconque entre −1 et 1",
+      "0"
+     ],
+     "rep": "0",
+     "expl": "Les deux bornes tendent vers 0."
+    },
+    {
+     "q": "Si uₙ ≥ n pour tout n ≥ 0, alors uₙ tend vers :",
+     "choix": [
+      "+∞",
+      "0",
+      "Nécessairement 1"
+     ],
+     "rep": "+∞",
+     "expl": "n tend vers +∞ et minore uₙ."
+    },
+    {
+     "q": "Laquelle peut être bornée sans converger ?",
+     "choix": [
+      "n",
+      "(−1)ⁿ",
+      "n² pour n ≥ 0"
+     ],
+     "rep": "(−1)ⁿ",
+     "expl": "La suite alternée vaut seulement −1 ou 1."
+    }
+   ],
+   "id": "REV-MA-TLE-26"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Somme de termes géométriques",
+   "emoji": "➕",
+   "en_une_phrase": "La somme finie des puissances d’une raison q ≠ 1 se calcule par une formule.",
+   "comprendre": "Pour n ≥ 0 et q ≠ 1, 1 + q + … + qⁿ = (1 − qⁿ⁺¹)/(1 − q). Lorsque |q| < 1, cette somme tend vers 1/(1 − q) quand n tend vers +∞.",
+   "essentiel": [
+    "Le dernier terme est qⁿ : il y a n + 1 termes.",
+    "La formule indiquée exige q ≠ 1.",
+    "Si q = 1, la somme vaut n + 1."
+   ],
+   "image_mentale": "Une somme de portions successivement multipliées par la même raison.",
+   "regle_ou_methode": "Vérifier le premier rang et le nombre de termes avant d’appliquer la formule.",
+   "exemples": [
+    "1 + 1/2 + 1/4 = (1 − (1/2)³)/(1 − 1/2) = 7/4.",
+    "Pour q = 1/2, la somme de 1 à (1/2)ⁿ tend vers 1/(1 − 1/2) = 2."
+   ],
+   "piege": "Ne pas confondre le dernier exposant n avec le nombre n + 1 de termes.",
+   "astuce_memoire": "De q⁰ à qⁿ : n + 1 termes.",
+   "quiz": [
+    {
+     "q": "Que vaut 1 + 1/2 + 1/4 ?",
+     "choix": [
+      "7/4",
+      "3/2",
+      "2"
+     ],
+     "rep": "7/4",
+     "expl": "En quarts : 4/4 + 2/4 + 1/4 = 7/4."
+    },
+    {
+     "q": "Combien de termes contient 1 + q + … + q⁵ ?",
+     "choix": [
+      "5",
+      "6",
+      "4"
+     ],
+     "rep": "6",
+     "expl": "Les exposants vont de 0 à 5 inclus."
+    },
+    {
+     "q": "Quelle est la limite de 1 + 1/2 + … + (1/2)ⁿ ?",
+     "choix": [
+      "1",
+      "+∞",
+      "2"
+     ],
+     "rep": "2",
+     "expl": "La formule donne 2(1 − (1/2)ⁿ⁺¹), qui tend vers 2."
+    }
+   ],
+   "id": "REV-MA-TLE-27"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Limites de fonctions et asymptotes",
+   "emoji": "📐",
+   "en_une_phrase": "Une limite infinie ou finie renseigne sur l’allure de la courbe.",
+   "comprendre": "Si f(x) tend vers L quand x tend vers +∞ ou −∞, la droite y = L est une asymptote horizontale de ce côté. Si f(x) tend vers +∞ ou −∞ quand x tend vers a par au moins un côté, x = a est une asymptote verticale.",
+   "essentiel": [
+    "Une asymptote horizontale correspond à une limite finie à l’infini.",
+    "Une asymptote verticale correspond à une limite infinie en un réel.",
+    "Pour une limite en un point, préciser au besoin le côté."
+   ],
+   "image_mentale": "Une courbe se rapproche d’une droite horizontale ou monte près d’une droite verticale.",
+   "regle_ou_methode": "Déterminer où x tend et ce que devient f(x), puis identifier la droite.",
+   "exemples": [
+    "f(x) = 2 + 1/x tend vers 2 quand x → +∞ : y = 2 est une asymptote horizontale en +∞.",
+    "Pour g(x) = 1/x, g(x) → +∞ quand x → 0⁺ : x = 0 est une asymptote verticale."
+   ],
+   "piege": "La droite y = 2 et la droite x = 2 ne désignent pas la même asymptote.",
+   "astuce_memoire": "À l’infini : horizontale ; en un point avec limite infinie : verticale.",
+   "quiz": [
+    {
+     "q": "Si f(x) → 3 quand x → +∞, quelle asymptote a sa courbe en +∞ ?",
+     "choix": [
+      "x = 3",
+      "y = 3",
+      "y = 0 nécessairement"
+     ],
+     "rep": "y = 3",
+     "expl": "La limite finie 3 donne l’asymptote horizontale y = 3."
+    },
+    {
+     "q": "Que vaut la limite de 1/x quand x → 0⁺ ?",
+     "choix": [
+      "−∞",
+      "0",
+      "+∞"
+     ],
+     "rep": "+∞",
+     "expl": "Le quotient d’un par un positif de plus en plus petit croît sans borne."
+    },
+    {
+     "q": "Quelle asymptote possède la courbe de 1/x au voisinage de 0 ?",
+     "choix": [
+      "x = 0",
+      "y = 0 uniquement au voisinage de 0",
+      "x = 1"
+     ],
+     "rep": "x = 0",
+     "expl": "La limite est infinie de chaque côté de 0."
+    }
+   ],
+   "id": "REV-MA-TLE-28"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Lever une indétermination par factorisation",
+   "emoji": "🧮",
+   "en_une_phrase": "La factorisation du terme dominant permet souvent de calculer une limite à l’infini.",
+   "comprendre": "Les expressions ∞ − ∞ et ∞/∞ sont des formes indéterminées, pas des résultats. Pour un quotient de polynômes, on peut factoriser les plus hautes puissances de x au numérateur et au dénominateur.",
+   "essentiel": [
+    "Le terme dominant doit être choisi pour la limite considérée.",
+    "Une forme indéterminée exige une transformation ou un autre argument.",
+    "La valeur de la limite dépend du signe et du degré des termes dominants."
+   ],
+   "image_mentale": "On met les plus grandes puissances en évidence pour voir ce qui reste.",
+   "regle_ou_methode": "Factoriser puis utiliser les limites des termes en 1/x.",
+   "exemples": [
+    "(3x² + 2x)/(x² − 1) = (3 + 2/x)/(1 − 1/x²) pour x assez grand : la limite en +∞ est 3.",
+    "x² − 3x = x²(1 − 3/x) → +∞ quand x → +∞."
+   ],
+   "piege": "∞/∞ ne signifie ni 1 ni une valeur automatiquement déterminée.",
+   "astuce_memoire": "Factoriser la puissance dominante.",
+   "quiz": [
+    {
+     "q": "Quelle est la limite de (3x² + 2x)/(x² − 1) en +∞ ?",
+     "choix": [
+      "1",
+      "+∞",
+      "3"
+     ],
+     "rep": "3",
+     "expl": "Après division par x², le quotient tend vers 3/1."
+    },
+    {
+     "q": "La forme ∞ − ∞ suffit-elle à conclure ?",
+     "choix": [
+      "Non, elle est indéterminée",
+      "Oui, elle vaut toujours 0",
+      "Oui, elle vaut toujours +∞"
+     ],
+     "rep": "Non, elle est indéterminée",
+     "expl": "Il faut transformer ou comparer l’expression."
+    },
+    {
+     "q": "Que vaut la limite de x² − 3x en +∞ ?",
+     "choix": [
+      "−∞",
+      "+∞",
+      "0"
+     ],
+     "rep": "+∞",
+     "expl": "x²(1 − 3/x) tend vers +∞."
+    }
+   ],
+   "id": "REV-MA-TLE-29"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Indétermination et quantité conjuguée",
+   "emoji": "🔍",
+   "en_une_phrase": "Multiplier par la quantité conjuguée permet de traiter certaines différences de racines.",
+   "comprendre": "Pour des expressions réelles définies, (a − b)(a + b) = a² − b². Cette identité transforme une différence de racines en quotient, ce qui peut lever une forme indéterminée.",
+   "essentiel": [
+    "Multiplier numérateur et dénominateur par la même expression non nulle.",
+    "Pour √(x² + 1), tenir compte du signe de x lors de la factorisation.",
+    "La transformation conserve l’expression sur son domaine."
+   ],
+   "image_mentale": "Deux facteurs conjugués remplacent une soustraction difficile par une différence de carrés.",
+   "regle_ou_methode": "Multiplier par le conjugué, simplifier et calculer la nouvelle limite.",
+   "exemples": [
+    "Pour x > 0, √(x² + 1) − x = 1/(√(x² + 1) + x), qui tend vers 0 quand x → +∞.",
+    "Pour x ≠ 0 et x > −1, (√(1 + x) − 1)/x = 1/(√(1 + x) + 1), donc la limite en 0 est 1/2."
+   ],
+   "piege": "√(x²) = |x|, et non toujours x.",
+   "astuce_memoire": "Différence de racines : penser au conjugué.",
+   "quiz": [
+    {
+     "q": "Que vaut (a − b)(a + b) ?",
+     "choix": [
+      "a² − b²",
+      "a² + b²",
+      "(a − b)²"
+     ],
+     "rep": "a² − b²",
+     "expl": "C’est l’identité de la différence de deux carrés."
+    },
+    {
+     "q": "Quelle est la limite de √(x² + 1) − x en +∞ ?",
+     "choix": [
+      "1",
+      "0",
+      "+∞"
+     ],
+     "rep": "0",
+     "expl": "Le quotient conjugué vaut 1/(√(x² + 1) + x)."
+    },
+    {
+     "q": "Pour un réel x, √(x²) vaut :",
+     "choix": [
+      "Toujours x",
+      "Toujours −x",
+      "|x|"
+     ],
+     "rep": "|x|",
+     "expl": "La racine carrée principale est positive ou nulle."
+    }
+   ],
+   "id": "REV-MA-TLE-30"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Exponentielle et croissances comparées",
+   "emoji": "🚀",
+   "en_une_phrase": "À l’infini, l’exponentielle l’emporte sur toute puissance entière positive.",
+   "comprendre": "Pour tout entier naturel k, eˣ/xᵏ tend vers +∞ quand x → +∞ ; équivalemment xᵏe⁻ˣ tend vers 0. Ces résultats aident à lever des formes indéterminées après réécriture.",
+   "essentiel": [
+    "eˣ → +∞ en +∞ et eˣ → 0 en −∞.",
+    "Pour k entier naturel, xᵏ/eˣ → 0 en +∞.",
+    "Dans une composition, vérifier vers quelle limite tend l’expression intérieure."
+   ],
+   "image_mentale": "À long terme, l’exponentielle dépasse une puissance fixée.",
+   "regle_ou_methode": "Réécrire sous la forme puissance divisée par exponentielle et vérifier le sens de la limite.",
+   "exemples": [
+    "x²e⁻ˣ = x²/eˣ → 0 quand x → +∞ par croissance comparée.",
+    "Quand x → −∞, poser t = −x → +∞ : x²eˣ = t²e⁻ᵗ → 0."
+   ],
+   "piege": "Un produit 0 × ∞ n’a pas de limite automatique.",
+   "astuce_memoire": "Exponentielle contre puissance : exponentielle dominante en +∞.",
+   "quiz": [
+    {
+     "q": "Quelle est la limite de x²/eˣ en +∞ ?",
+     "choix": [
+      "+∞",
+      "0",
+      "1"
+     ],
+     "rep": "0",
+     "expl": "L’exponentielle domine toute puissance entière fixée."
+    },
+    {
+     "q": "Que vaut la limite de eˣ en −∞ ?",
+     "choix": [
+      "+∞",
+      "−∞",
+      "0"
+     ],
+     "rep": "0",
+     "expl": "L’exponentielle est positive et tend vers 0 à gauche."
+    },
+    {
+     "q": "Quelle est la limite de x²eˣ en −∞ ?",
+     "choix": [
+      "0",
+      "+∞",
+      "1"
+     ],
+     "rep": "0",
+     "expl": "Avec t = −x, cela devient t²e⁻ᵗ → 0."
+    }
+   ],
+   "id": "REV-MA-TLE-31"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Continuité et suites",
+   "emoji": "🔗",
+   "en_une_phrase": "Une fonction continue conserve les limites finies des suites dans son domaine.",
+   "comprendre": "Une fonction f est continue en a lorsque lim x→a f(x) = f(a). Si uₙ → L et si f est continue en L, alors f(uₙ) → f(L). Une fonction dérivable en un point y est continue ; la réciproque est fausse.",
+   "essentiel": [
+    "Continuité en a : limite égale à la valeur f(a).",
+    "Dérivabilité en a ⇒ continuité en a.",
+    "Une fonction continue peut ne pas être dérivable en un point."
+   ],
+   "image_mentale": "Une trajectoire sans saut au voisinage du point étudié.",
+   "regle_ou_methode": "Vérifier la limite et la valeur au point, puis appliquer éventuellement la continuité à une suite.",
+   "exemples": [
+    "Si uₙ → 2 et f(x) = x² est continue en 2, alors f(uₙ) → 2² = 4.",
+    "La fonction valeur absolue est continue en 0 mais non dérivable en 0 : continuité n’implique pas dérivabilité."
+   ],
+   "piege": "Il faut vérifier que la fonction est continue au point limite considéré.",
+   "astuce_memoire": "Suite convergente + continuité : on passe la limite dans f.",
+   "quiz": [
+    {
+     "q": "Si uₙ → 2, quelle est la limite de uₙ² ?",
+     "choix": [
+      "2",
+      "0",
+      "4"
+     ],
+     "rep": "4",
+     "expl": "La fonction carré est continue et 2² = 4."
+    },
+    {
+     "q": "Une fonction dérivable en a est-elle continue en a ?",
+     "choix": [
+      "Oui",
+      "Non, jamais",
+      "Seulement si f(a) = 0"
+     ],
+     "rep": "Oui",
+     "expl": "La dérivabilité implique la continuité au même point."
+    },
+    {
+     "q": "La continuité en a garantit-elle toujours la dérivabilité en a ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui si a = 0"
+     ],
+     "rep": "Non",
+     "expl": "La valeur absolue en 0 fournit un contre-exemple."
+    }
+   ],
+   "id": "REV-MA-TLE-32"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Théorème des valeurs intermédiaires",
+   "emoji": "🎯",
+   "en_une_phrase": "Une fonction continue atteint toutes les valeurs entre celles prises aux bornes.",
+   "comprendre": "Si f est continue sur [a, b] et si k est entre f(a) et f(b), l’équation f(x) = k admet au moins une solution sur [a, b]. Si f est aussi strictement monotone sur cet intervalle, cette solution est unique.",
+   "essentiel": [
+    "La continuité donne l’existence entre les valeurs aux bornes.",
+    "La stricte monotonie fournit l’unicité.",
+    "Une simple lecture graphique ne remplace pas les hypothèses."
+   ],
+   "image_mentale": "Une courbe continue passe par chaque hauteur entre ses deux extrémités.",
+   "regle_ou_methode": "Calculer les valeurs aux bornes, vérifier continuité et signe, puis étudier la monotonie.",
+   "exemples": [
+    "f(x) = x³ + x − 1 est continue et strictement croissante sur [0, 1]. Comme f(0) = −1 et f(1) = 1, l’équation f(x) = 0 possède une unique solution dans ]0, 1[.",
+    "Pour g(x) = x² sur [−1, 1], g(−1) = g(1) = 1 et g(0) = 0 : l’équation g(x) = 1 possède deux solutions, −1 et 1 ; la continuité seule ne garantit pas l’unicité."
+   ],
+   "piege": "Existence et unicité demandent deux justifications distinctes.",
+   "astuce_memoire": "Continue : existence ; strictement monotone : unicité.",
+   "quiz": [
+    {
+     "q": "Si f est continue sur [a,b] et f(a) < 0 < f(b), combien de zéros sont garantis ?",
+     "choix": [
+      "Au moins un",
+      "Exactement un sans autre hypothèse",
+      "Aucun"
+     ],
+     "rep": "Au moins un",
+     "expl": "Le théorème des valeurs intermédiaires garantit au moins un zéro."
+    },
+    {
+     "q": "Quelle hypothèse supplémentaire garantit l’unicité ?",
+     "choix": [
+      "La seule continuité",
+      "La stricte monotonie sur l’intervalle",
+      "Le fait que a et b soient positifs"
+     ],
+     "rep": "La stricte monotonie sur l’intervalle",
+     "expl": "Une fonction strictement monotone prend chaque valeur au plus une fois."
+    },
+    {
+     "q": "Combien de solutions x² = 1 possède-t-elle sur [−1,1] ?",
+     "choix": [
+      "1",
+      "0",
+      "2"
+     ],
+     "rep": "2",
+     "expl": "Les solutions sont −1 et 1."
+    }
+   ],
+   "id": "REV-MA-TLE-33"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Dichotomie : encadrer une solution",
+   "emoji": "↔️",
+   "en_une_phrase": "La dichotomie réduit un intervalle contenant une solution en le coupant en deux.",
+   "comprendre": "Pour une fonction continue avec changement de signe aux bornes, calculer la valeur au milieu permet de conserver une moitié où les signes encadrent encore zéro. Si le milieu est lui-même une racine, on s’arrête.",
+   "essentiel": [
+    "Le nouveau segment a une longueur moitié de l’ancien.",
+    "La continuité et le changement de signe assurent une racine dans le segment conservé.",
+    "La dichotomie n’exige pas à elle seule l’unicité."
+   ],
+   "image_mentale": "On coupe en deux le couloir où se trouve une racine.",
+   "regle_ou_methode": "Calculer le milieu, tester son signe, garder le sous-intervalle qui encadre zéro.",
+   "exemples": [
+    "f(x) = x² − 2 est continue ; f(1) = −1 et f(2) = 2. Au milieu 1,5, f(1,5) = 0,25 : une racine est dans [1 ; 1,5].",
+    "Avec le segment [1 ; 1,5], le milieu vaut 1,25 et f(1,25) = −0,4375. On garde [1,25 ; 1,5], de longueur 0,25."
+   ],
+   "piege": "Un changement de signe garantit au moins une racine, pas toujours une seule.",
+   "astuce_memoire": "Milieu, signe, moitié pertinente.",
+   "quiz": [
+    {
+     "q": "Quel est le milieu de [1 ; 1,5] ?",
+     "choix": [
+      "1,5",
+      "1,25",
+      "0,5"
+     ],
+     "rep": "1,25",
+     "expl": "(1 + 1,5)/2 = 1,25."
+    },
+    {
+     "q": "Si f(1) < 0 et f(1,5) > 0 et f est continue, quel intervalle contient au moins une racine ?",
+     "choix": [
+      "[2 ; 3] nécessairement",
+      "Aucun intervalle",
+      "[1 ; 1,5]"
+     ],
+     "rep": "[1 ; 1,5]",
+     "expl": "La continuité et le changement de signe assurent une racine."
+    },
+    {
+     "q": "Après deux découpages d’un segment initial de longueur 1, la longueur vaut :",
+     "choix": [
+      "0,25",
+      "0,5",
+      "0,125"
+     ],
+     "rep": "0,25",
+     "expl": "Chaque découpage divise la longueur par 2."
+    }
+   ],
+   "id": "REV-MA-TLE-34"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Dériver une fonction composée",
+   "emoji": "⚙️",
+   "en_une_phrase": "La dérivée de v ∘ u est (v′ ∘ u) × u′ lorsque les fonctions sont dérivables.",
+   "comprendre": "On dérive d’abord la fonction extérieure à l’expression intérieure, puis on multiplie par la dérivée de cette dernière. La formule s’applique là où les fonctions et leurs dérivées nécessaires existent.",
+   "essentiel": [
+    "(v ∘ u)′ = (v′ ∘ u)u′.",
+    "Pour une puissance : (u²)′ = 2uu′.",
+    "Pour l’exponentielle : (eᵘ)′ = u′eᵘ."
+   ],
+   "image_mentale": "Deux engrenages : la dérivée extérieure et la dérivée intérieure se multiplient.",
+   "regle_ou_methode": "Identifier u, dériver la fonction extérieure, puis multiplier par u′.",
+   "exemples": [
+    "f(x) = (3x + 1)² : u = 3x + 1 et u′ = 3 ; ainsi f′(x) = 2(3x + 1) × 3 = 6(3x + 1).",
+    "g(x) = e²ˣ : avec u = 2x, g′(x) = 2e²ˣ."
+   ],
+   "piege": "Ne pas oublier le facteur provenant de la dérivée intérieure.",
+   "astuce_memoire": "Extérieure dérivée × intérieure dérivée.",
+   "quiz": [
+    {
+     "q": "Quelle est la dérivée de (3x + 1)² ?",
+     "choix": [
+      "2(3x + 1)",
+      "6x + 1",
+      "6(3x + 1)"
+     ],
+     "rep": "6(3x + 1)",
+     "expl": "2(3x + 1) est multiplié par la dérivée 3."
+    },
+    {
+     "q": "Quelle est la dérivée de e²ˣ ?",
+     "choix": [
+      "2e²ˣ",
+      "e²ˣ",
+      "2xe²ˣ"
+     ],
+     "rep": "2e²ˣ",
+     "expl": "La dérivée de 2x est 2."
+    },
+    {
+     "q": "Si f = v ∘ u, quelle formule est correcte ?",
+     "choix": [
+      "(u′ ∘ v) × v′",
+      "(v′ ∘ u) × u′",
+      "v′ + u′"
+     ],
+     "rep": "(v′ ∘ u) × u′",
+     "expl": "La règle de la chaîne multiplie les dérivées aux bons points."
+    }
+   ],
+   "id": "REV-MA-TLE-35"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Dérivée et variations",
+   "emoji": "📊",
+   "en_une_phrase": "Le signe de la dérivée indique le sens de variation sur un intervalle.",
+   "comprendre": "Pour une fonction dérivable sur un intervalle, une dérivée positive ou nulle implique que la fonction est croissante ; une dérivée négative ou nulle implique qu’elle est décroissante. Un changement de signe de la dérivée peut caractériser un extremum local.",
+   "essentiel": [
+    "f′ ≥ 0 sur un intervalle ⇒ f croissante.",
+    "f′ ≤ 0 sur un intervalle ⇒ f décroissante.",
+    "Si f′ passe de négatif à positif, f admet un minimum local au point concerné."
+   ],
+   "image_mentale": "Le signe de la pente indique si la courbe monte ou descend.",
+   "regle_ou_methode": "Calculer f′, étudier son signe et construire les variations sur le domaine.",
+   "exemples": [
+    "Pour f(x) = x² − 4x + 3, f′(x) = 2x − 4. Elle est négative avant 2 et positive après 2 : f admet un minimum en 2 égal à −1.",
+    "Pour g(x) = −x², g′(x) = −2x : g est croissante sur ]−∞,0] puis décroissante sur [0,+∞[, avec maximum 0 en x = 0."
+   ],
+   "piege": "Une dérivée nulle en un point ne suffit pas toujours à prouver un extremum.",
+   "astuce_memoire": "Signe de f′ → variations de f.",
+   "quiz": [
+    {
+     "q": "Quel est le minimum de x² − 4x + 3 sur ℝ ?",
+     "choix": [
+      "−1 atteint en 2",
+      "3 atteint en 0",
+      "1 atteint en 2"
+     ],
+     "rep": "−1 atteint en 2",
+     "expl": "f(2) = 4 − 8 + 3 = −1 et la dérivée change de signe."
+    },
+    {
+     "q": "Une dérivée positive sur un intervalle donne une fonction :",
+     "choix": [
+      "Nécessairement négative",
+      "Croissante sur cet intervalle",
+      "Toujours constante"
+     ],
+     "rep": "Croissante sur cet intervalle",
+     "expl": "Le signe positif de la dérivée donne la croissance."
+    },
+    {
+     "q": "La seule égalité f′(a) = 0 prouve-t-elle toujours un extremum ?",
+     "choix": [
+      "Oui",
+      "Oui si a = 0",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Par exemple, x³ a une dérivée nulle en 0 sans extremum en 0."
+    }
+   ],
+   "id": "REV-MA-TLE-36"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Convexité et tangentes",
+   "emoji": "🥣",
+   "en_une_phrase": "Une fonction deux fois dérivable est convexe sur un intervalle si sa dérivée seconde y est positive ou nulle.",
+   "comprendre": "Une fonction convexe a sa courbe sous chaque corde entre ses deux extrémités ; si elle est dérivable, sa courbe est au-dessus de ses tangentes. Pour une fonction deux fois dérivable, la convexité équivaut à la croissance de sa dérivée et à f″ ≥ 0.",
+   "essentiel": [
+    "Convexité : courbe sous les sécantes.",
+    "Pour une fonction deux fois dérivable : f″ ≥ 0 équivaut à la convexité.",
+    "Une fonction convexe dérivable est au-dessus de chacune de ses tangentes."
+   ],
+   "image_mentale": "Un bol : ses cordes sont au-dessus et ses tangentes en dessous.",
+   "regle_ou_methode": "Calculer f″, étudier son signe puis, si utile, écrire l’équation de la tangente.",
+   "exemples": [
+    "f(x) = x² a f″(x) = 2 > 0 : elle est convexe. Sa tangente en 1 est y = 2x − 1, d’où x² ≥ 2x − 1.",
+    "g(x) = −x² a g″(x) = −2 < 0 : elle est concave sur ℝ."
+   ],
+   "piege": "Pour une fonction convexe, ne pas inverser position par rapport aux tangentes et aux sécantes.",
+   "astuce_memoire": "Convexe : f″ ≥ 0 ; tangentes en dessous.",
+   "quiz": [
+    {
+     "q": "Quel signe de f″ suffit à établir la convexité sur un intervalle ?",
+     "choix": [
+      "f″ < 0 partout sur cet intervalle",
+      "f″ ≥ 0 partout sur cet intervalle",
+      "f″ non définie partout"
+     ],
+     "rep": "f″ ≥ 0 partout sur cet intervalle",
+     "expl": "Pour une fonction deux fois dérivable, f″ ≥ 0 caractérise la convexité."
+    },
+    {
+     "q": "Quelle inégalité résulte de la tangente à x² en 1 ?",
+     "choix": [
+      "x² ≤ 2x − 1 pour tout x",
+      "x² = 2x − 1 pour tout x",
+      "x² ≥ 2x − 1"
+     ],
+     "rep": "x² ≥ 2x − 1",
+     "expl": "La courbe convexe est au-dessus de sa tangente."
+    },
+    {
+     "q": "Comment se situe une courbe convexe par rapport à ses sécantes ?",
+     "choix": [
+      "Elle est en dessous sur le segment considéré",
+      "Elle est toujours au-dessus",
+      "Elle est toujours identique à chaque sécante"
+     ],
+     "rep": "Elle est en dessous sur le segment considéré",
+     "expl": "La position sous les sécantes définit la convexité."
+    }
+   ],
+   "id": "REV-MA-TLE-37"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Point d’inflexion",
+   "emoji": "〰️",
+   "en_une_phrase": "Un point d’inflexion correspond à un changement de convexité de la courbe.",
+   "comprendre": "Si une fonction est deux fois dérivable et que f″ change de signe de part et d’autre d’un point, la courbe change de convexité en ce point. Une dérivée seconde nulle isolément ne suffit pas à garantir ce changement.",
+   "essentiel": [
+    "f″ > 0 indique localement la convexité.",
+    "f″ < 0 indique localement la concavité.",
+    "Un point d’inflexion nécessite un changement de convexité."
+   ],
+   "image_mentale": "Une courbe passe d’un bol à un dôme, ou inversement.",
+   "regle_ou_methode": "Calculer f″, chercher ses zéros et vérifier les signes de part et d’autre.",
+   "exemples": [
+    "f(x) = x³ : f″(x) = 6x change de signe en 0 ; la courbe possède un point d’inflexion en (0,0).",
+    "g(x) = x⁴ : g″(x) = 12x² est nulle en 0 mais positive ailleurs ; il n’y a pas de changement de convexité en 0."
+   ],
+   "piege": "f″(a) = 0 seule ne prouve pas un point d’inflexion.",
+   "astuce_memoire": "Inflexion : changement de signe de f″ dans les cas étudiés.",
+   "quiz": [
+    {
+     "q": "Pour x³, où la courbe a-t-elle un point d’inflexion ?",
+     "choix": [
+      "En (1,1) uniquement",
+      "Elle n’en a aucun",
+      "En (0,0)"
+     ],
+     "rep": "En (0,0)",
+     "expl": "La dérivée seconde 6x change de signe en 0."
+    },
+    {
+     "q": "Pourquoi x⁴ n’a-t-elle pas de point d’inflexion en 0 ?",
+     "choix": [
+      "Sa dérivée seconde ne change pas de signe autour de 0",
+      "Sa dérivée seconde vaut 12 partout",
+      "Sa courbe n’est pas définie en 0"
+     ],
+     "rep": "Sa dérivée seconde ne change pas de signe autour de 0",
+     "expl": "12x² reste positive ou nulle des deux côtés."
+    },
+    {
+     "q": "Que suffit-il de vérifier pour conclure à un point d’inflexion dans ce cadre ?",
+     "choix": [
+      "Seulement f″(a) = 0",
+      "Un changement de signe de f″ au point",
+      "Seulement f(a) = 0"
+     ],
+     "rep": "Un changement de signe de f″ au point",
+     "expl": "Le changement de signe indique un changement de convexité."
+    }
+   ],
+   "id": "REV-MA-TLE-38"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Limite d’une suite définie par une fonction",
+   "emoji": "🔄",
+   "en_une_phrase": "Si uₙ₊₁ = f(uₙ) converge vers L et si f est continue en L, alors L = f(L).",
+   "comprendre": "La relation de point fixe fournit une condition nécessaire sur la limite, pas une preuve que la suite converge. Il faut établir au préalable sa convergence, par exemple par monotonie et bornes, puis résoudre l’équation du point fixe.",
+   "essentiel": [
+    "uₙ → L implique aussi uₙ₊₁ → L.",
+    "La continuité permet f(uₙ) → f(L).",
+    "L’équation L = f(L) peut avoir plusieurs solutions ou aucune solution adaptée."
+   ],
+   "image_mentale": "Un terme limite doit rester inchangé par la transformation qui produit le suivant.",
+   "regle_ou_methode": "Prouver la convergence, appliquer la continuité puis conserver la solution compatible avec les bornes.",
+   "exemples": [
+    "u₀ = 0, uₙ₊₁ = (uₙ + 2)/2 : par récurrence 0 ≤ uₙ ≤ 2 ; uₙ₊₁ − uₙ = (2 − uₙ)/2 ≥ 0. La suite converge vers L ; L = (L + 2)/2 donne L = 2.",
+    "Pour u₀ = 1 et uₙ₊₁ = −uₙ, le point fixe 0 existe, mais les termes alternent entre 1 et −1 : la suite ne converge pas."
+   ],
+   "piege": "Résoudre L = f(L) sans avoir établi la convergence est insuffisant.",
+   "astuce_memoire": "Convergence d’abord ; équation du point fixe ensuite.",
+   "quiz": [
+    {
+     "q": "Si uₙ converge vers L et uₙ₊₁ = f(uₙ), avec f continue en L, alors :",
+     "choix": [
+      "L = f(L)",
+      "L = f(0) toujours",
+      "L = 0 toujours"
+     ],
+     "rep": "L = f(L)",
+     "expl": "La continuité autorise le passage à la limite dans la relation."
+    },
+    {
+     "q": "La présence d’un point fixe de f suffit-elle à assurer la convergence de toute suite récurrente ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui dès que le point fixe est nul"
+     ],
+     "rep": "Non",
+     "expl": "La suite uₙ₊₁ = −uₙ avec u₀ = 1 oscille."
+    },
+    {
+     "q": "Quelle est la limite de uₙ = 2 − 2(1/2)ⁿ ?",
+     "choix": [
+      "0",
+      "−2",
+      "2"
+     ],
+     "rep": "2",
+     "expl": "La puissance de raison 1/2 tend vers 0."
+    }
+   ],
+   "id": "REV-MA-TLE-39"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Le logarithme népérien",
+   "emoji": "📈",
+   "en_une_phrase": "Le logarithme népérien est la fonction réciproque de la fonction exponentielle.",
+   "comprendre": "Pour tout réel x strictement positif, ln(x) est l’unique réel dont l’exponentielle vaut x. La fonction ln est définie seulement sur ]0 ; +∞[ et est strictement croissante.",
+   "essentiel": [
+    "ln(1) = 0 et ln(e) = 1.",
+    "Pour x > 0, exp(ln(x)) = x.",
+    "Pour tout réel t, ln(exp(t)) = t.",
+    "ln(x) est négatif si 0 < x < 1 et positif si x > 1."
+   ],
+   "image_mentale": "Le logarithme remonte de la valeur de l’exponentielle à son exposant.",
+   "regle_ou_methode": "Vérifier que l’argument est positif, puis utiliser la relation entre ln et exp.",
+   "exemples": [
+    "Calculer ln(e³) : l’exponentielle a pour exposant 3, donc ln(e³) = 3.",
+    "exp(ln(4)) = 4 car 4 > 0."
+   ],
+   "piege": "ln(0) et ln des nombres négatifs ne sont pas définis.",
+   "astuce_memoire": "ln annule exp et exp annule ln sur leurs domaines.",
+   "quiz": [
+    {
+     "q": "Quel est ln(1) ?",
+     "choix": [
+      "1",
+      "0",
+      "e"
+     ],
+     "rep": "0",
+     "expl": "exp(0) = 1."
+    },
+    {
+     "q": "Quel est l’ensemble de définition de ln ?",
+     "choix": [
+      "[0 ; +∞[",
+      "ℝ",
+      "]0 ; +∞["
+     ],
+     "rep": "]0 ; +∞[",
+     "expl": "Un logarithme népérien exige un argument strictement positif."
+    },
+    {
+     "q": "Quelle est la valeur de ln(e⁻²) ?",
+     "choix": [
+      "−2",
+      "2",
+      "e⁻²"
+     ],
+     "rep": "−2",
+     "expl": "ln(exp(t)) = t."
+    }
+   ],
+   "id": "REV-MA-TLE-40"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Calculs et équations avec le logarithme",
+   "emoji": "🧮",
+   "en_une_phrase": "Les propriétés du logarithme transforment les produits en sommes.",
+   "comprendre": "Les formules algébriques de ln exigent des nombres strictement positifs. La croissance de ln permet aussi de résoudre des inégalités en conservant leur sens.",
+   "essentiel": [
+    "Pour a > 0 et b > 0 : ln(ab) = ln(a) + ln(b).",
+    "ln(a/b) = ln(a) − ln(b) et ln(aⁿ) = n ln(a), pour n entier.",
+    "ln(a) = ln(b) équivaut à a = b pour a et b positifs.",
+    "ln(a) < ln(b) équivaut à a < b pour a et b positifs."
+   ],
+   "image_mentale": "Le logarithme convertit une multiplication en addition.",
+   "regle_ou_methode": "Poser les conditions d’existence avant de transformer l’égalité ou l’inégalité.",
+   "exemples": [
+    "Résoudre ln(x − 1) = ln(3) : il faut x > 1 ; l’égalité donne x − 1 = 3, donc x = 4, qui convient.",
+    "ln(8) + ln(2) = ln(16) = 4 ln(2)."
+   ],
+   "piege": "En général, ln(a + b) n’est pas égal à ln(a) + ln(b).",
+   "astuce_memoire": "Produit : somme ; quotient : différence.",
+   "quiz": [
+    {
+     "q": "Pour x > 0, que vaut ln(x²) ?",
+     "choix": [
+      "ln(x) + 2",
+      "ln(2x)",
+      "2 ln(x)"
+     ],
+     "rep": "2 ln(x)",
+     "expl": "La puissance devient un coefficient."
+    },
+    {
+     "q": "Quelle est la solution de ln(x) = 2 ?",
+     "choix": [
+      "e²",
+      "2e",
+      "ln(2)"
+     ],
+     "rep": "e²",
+     "expl": "On applique l’exponentielle aux deux membres."
+    },
+    {
+     "q": "Quelles sont les solutions de ln(x) < 0 ?",
+     "choix": [
+      "]−∞ ; 1[",
+      "]0 ; 1[",
+      "]1 ; +∞["
+     ],
+     "rep": "]0 ; 1[",
+     "expl": "ln est croissante et ln(1) = 0."
+    }
+   ],
+   "id": "REV-MA-TLE-41"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Dériver une fonction logarithme",
+   "emoji": "✏️",
+   "en_une_phrase": "La dérivée de ln(u) est u’/u lorsque u est strictement positive.",
+   "comprendre": "La dérivée de ln sur ]0 ; +∞[ est la fonction x ↦ 1/x. La formule composée permet d’étudier les variations de fonctions contenant un logarithme.",
+   "essentiel": [
+    "(ln x)’ = 1/x pour x > 0.",
+    "Si u est dérivable et strictement positive, (ln u)’ = u’/u.",
+    "Le signe de la dérivée permet de déterminer les variations.",
+    "Pour dériver un produit, appliquer la règle du produit."
+   ],
+   "image_mentale": "Une fraction place la dérivée de l’intérieur au-dessus de l’intérieur.",
+   "regle_ou_methode": "Déterminer le domaine, calculer u et u’, puis étudier le signe de u’/u.",
+   "exemples": [
+    "Pour f(x) = ln(2x + 1), il faut x > −1/2 ; f’(x) = 2/(2x + 1) > 0, donc f est croissante.",
+    "Pour x > 0, la dérivée de x ln(x) est ln(x) + 1."
+   ],
+   "piege": "Oublier de vérifier que u est strictement positive.",
+   "astuce_memoire": "Dérivée de ln(u) : u’ sur u.",
+   "quiz": [
+    {
+     "q": "Pour x > 0, quelle est la dérivée de ln(x) ?",
+     "choix": [
+      "1/x",
+      "x",
+      "ln(x)/x"
+     ],
+     "rep": "1/x",
+     "expl": "La dérivée de ln est la fonction inverse."
+    },
+    {
+     "q": "Quelle est la dérivée de ln(3x) pour x > 0 ?",
+     "choix": [
+      "3/x",
+      "1/x",
+      "3"
+     ],
+     "rep": "1/x",
+     "expl": "La formule donne 3/(3x) = 1/x."
+    },
+    {
+     "q": "Sur son domaine, ln(x² + 1) a pour dérivée :",
+     "choix": [
+      "1/(x² + 1)",
+      "2/(x² + 1)",
+      "2x/(x² + 1)"
+     ],
+     "rep": "2x/(x² + 1)",
+     "expl": "La dérivée de x² + 1 vaut 2x."
+    }
+   ],
+   "id": "REV-MA-TLE-42"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Limites et comparaison avec le logarithme",
+   "emoji": "🔭",
+   "en_une_phrase": "Le logarithme tend vers l’infini plus lentement que toute puissance positive de x.",
+   "comprendre": "La fonction ln tend vers −∞ au voisinage de zéro par valeurs positives et vers +∞ en +∞. Les limites de référence servent à traiter des formes indéterminées.",
+   "essentiel": [
+    "Quand x tend vers 0 par valeurs positives, ln(x) tend vers −∞.",
+    "Quand x tend vers +∞, ln(x) tend vers +∞.",
+    "Pour tout entier n ≥ 1, ln(x)/xⁿ tend vers 0 en +∞.",
+    "Pour tout entier n ≥ 1, xⁿ ln(x) tend vers 0 en 0 par valeurs positives."
+   ],
+   "image_mentale": "À l’infini, les puissances positives finissent par dépasser le logarithme.",
+   "regle_ou_methode": "Identifier la limite de référence et préciser le sens d’approche de zéro.",
+   "exemples": [
+    "Calculer la limite de ln(x)/x quand x tend vers +∞ : la puissance x domine ln(x), donc la limite vaut 0.",
+    "Quand x tend vers 0 par valeurs positives, x² ln(x) tend vers 0."
+   ],
+   "piege": "La limite de ln(x) en 0 se prend uniquement du côté positif.",
+   "astuce_memoire": "Puissance contre logarithme : la puissance gagne.",
+   "quiz": [
+    {
+     "q": "Que vaut la limite de ln(x) en +∞ ?",
+     "choix": [
+      "0",
+      "+∞",
+      "−∞"
+     ],
+     "rep": "+∞",
+     "expl": "La fonction ln est croissante et non majorée."
+    },
+    {
+     "q": "Que vaut la limite de x ln(x) quand x tend vers 0 par valeurs positives ?",
+     "choix": [
+      "−∞",
+      "1",
+      "0"
+     ],
+     "rep": "0",
+     "expl": "C’est une limite de référence."
+    },
+    {
+     "q": "Que vaut la limite de ln(x)/x² en +∞ ?",
+     "choix": [
+      "0",
+      "+∞",
+      "1"
+     ],
+     "rep": "0",
+     "expl": "Toute puissance entière positive domine ln(x)."
+    }
+   ],
+   "id": "REV-MA-TLE-43"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Dérivées du sinus et du cosinus",
+   "emoji": "🌊",
+   "en_une_phrase": "Les fonctions sinus et cosinus se dérivent l’une à partir de l’autre.",
+   "comprendre": "Les angles sont exprimés en radians. Les signes des dérivées permettent de retrouver les variations de ces fonctions périodiques.",
+   "essentiel": [
+    "(sin x)’ = cos x et (cos x)’ = −sin x.",
+    "Les fonctions sinus et cosinus sont de période 2π.",
+    "Le sinus est impair et le cosinus est pair.",
+    "Sur [0 ; π], le cosinus décroît de 1 à −1."
+   ],
+   "image_mentale": "Les deux courbes oscillent ; leurs dérivées décrivent la pente de ces oscillations.",
+   "regle_ou_methode": "Dériver, puis étudier le signe de sin ou de cos sur l’intervalle donné.",
+   "exemples": [
+    "Pour f(x) = 2 sin(x), f’(x) = 2 cos(x) ; sur [0 ; π/2], cos(x) ≥ 0, donc f est croissante.",
+    "La dérivée de cos(x) + x est −sin(x) + 1."
+   ],
+   "piege": "La dérivée de cos(x) contient un signe moins.",
+   "astuce_memoire": "Sinus devient cosinus ; cosinus devient moins sinus.",
+   "quiz": [
+    {
+     "q": "Quelle est la dérivée de cos(x) ?",
+     "choix": [
+      "sin(x)",
+      "−cos(x)",
+      "−sin(x)"
+     ],
+     "rep": "−sin(x)",
+     "expl": "C’est une dérivée trigonométrique de référence."
+    },
+    {
+     "q": "Quelle est la période de sin(x) ?",
+     "choix": [
+      "2π",
+      "π/2",
+      "1"
+     ],
+     "rep": "2π",
+     "expl": "sin(x + 2π) = sin(x)."
+    },
+    {
+     "q": "Que vaut cos(−x) ?",
+     "choix": [
+      "−cos(x)",
+      "cos(x)",
+      "sin(x)"
+     ],
+     "rep": "cos(x)",
+     "expl": "Le cosinus est une fonction paire."
+    }
+   ],
+   "id": "REV-MA-TLE-44"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Équations et inégalités avec le cosinus",
+   "emoji": "⭕",
+   "en_une_phrase": "Sur le cercle trigonométrique, le cosinus d’un angle est l’abscisse du point associé.",
+   "comprendre": "La lecture du cercle et la parité du cosinus permettent de trouver des angles ayant une même abscisse. On tient compte de l’intervalle demandé et des extrémités.",
+   "essentiel": [
+    "cos(π/3) = 1/2 et cos(−x) = cos(x).",
+    "Sur [0 ; π], cos est strictement décroissante.",
+    "Sur [−π ; 0], cos est strictement croissante.",
+    "Sur ℝ, les angles associés à un même point diffèrent d’un multiple entier de 2π."
+   ],
+   "image_mentale": "Une verticale coupe le cercle en deux points symétriques quand l’abscisse est comprise strictement entre −1 et 1.",
+   "regle_ou_methode": "Repérer l’angle de référence, utiliser la symétrie et retenir les valeurs dans l’intervalle demandé.",
+   "exemples": [
+    "Résoudre cos(x) = 1/2 sur [−π ; π] : l’angle de référence est π/3 ; par symétrie les solutions sont −π/3 et π/3.",
+    "Sur [−π ; π], cos(x) ≤ 1/2 pour x dans [−π ; −π/3] ou [π/3 ; π]."
+   ],
+   "piege": "Pour une inégalité large, inclure les angles où l’égalité a lieu.",
+   "astuce_memoire": "Cosinus : abscisse sur le cercle.",
+   "quiz": [
+    {
+     "q": "Sur [−π ; π], quelles sont les solutions de cos(x) = 0 ?",
+     "choix": [
+      "−π/2 et π/2",
+      "0 et π",
+      "π/3 et −π/3"
+     ],
+     "rep": "−π/2 et π/2",
+     "expl": "Les points d’abscisse nulle sont en haut et en bas du cercle."
+    },
+    {
+     "q": "Que vaut cos(π) ?",
+     "choix": [
+      "0",
+      "−1",
+      "1"
+     ],
+     "rep": "−1",
+     "expl": "L’angle π correspond au point d’abscisse −1."
+    },
+    {
+     "q": "Sur [0 ; π], quelles sont les solutions de cos(x) ≥ 1/2 ?",
+     "choix": [
+      "[π/3 ; π]",
+      "[0 ; π/2]",
+      "[0 ; π/3]"
+     ],
+     "rep": "[0 ; π/3]",
+     "expl": "Le cosinus décroît de 1 à −1 sur cet intervalle."
+    }
+   ],
+   "id": "REV-MA-TLE-45"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Primitives et constante",
+   "emoji": "🔑",
+   "en_une_phrase": "Une primitive de f est une fonction dont la dérivée est f.",
+   "comprendre": "Sur un intervalle, deux primitives d’une même fonction diffèrent d’une constante. Une condition initiale permet de déterminer cette constante.",
+   "essentiel": [
+    "F est primitive de f si F’ = f sur l’intervalle étudié.",
+    "Si F est une primitive, toutes les primitives sont F + C, avec C réel.",
+    "Une fonction continue sur un intervalle y admet des primitives.",
+    "Une valeur imposée à la primitive permet de trouver C."
+   ],
+   "image_mentale": "Primitiver revient à chercher une fonction avant sa dérivation.",
+   "regle_ou_methode": "Trouver une primitive, ajouter C puis utiliser la condition donnée.",
+   "exemples": [
+    "Si F’(x) = 2x et F(1) = 4, alors F(x) = x² + C ; 1 + C = 4, donc F(x) = x² + 3.",
+    "Les primitives de la fonction constante 5 sur ℝ sont x ↦ 5x + C."
+   ],
+   "piege": "Une seule primitive ne décrit pas toutes les solutions : ne pas oublier la constante.",
+   "astuce_memoire": "Primitive plus constante.",
+   "quiz": [
+    {
+     "q": "Quelle est une primitive de 2x ?",
+     "choix": [
+      "2x²",
+      "x²",
+      "x³"
+     ],
+     "rep": "x²",
+     "expl": "La dérivée de x² est 2x."
+    },
+    {
+     "q": "Deux primitives d’une même fonction sur un intervalle diffèrent de :",
+     "choix": [
+      "une fonction toujours positive",
+      "leur dérivée",
+      "une constante"
+     ],
+     "rep": "une constante",
+     "expl": "La dérivée de leur différence est nulle."
+    },
+    {
+     "q": "Quelle primitive de 1 vaut 2 en 0 ?",
+     "choix": [
+      "x + 2",
+      "x",
+      "2x"
+     ],
+     "rep": "x + 2",
+     "expl": "La dérivée de x + 2 vaut 1 et sa valeur en 0 vaut 2."
+    }
+   ],
+   "id": "REV-MA-TLE-46"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Primitives usuelles",
+   "emoji": "📚",
+   "en_une_phrase": "Les dérivées usuelles fournissent des primitives directement.",
+   "comprendre": "Les formules s’appliquent sur un intervalle où les fonctions sont définies. On peut vérifier chaque résultat en le dérivant.",
+   "essentiel": [
+    "Une primitive de xⁿ est xⁿ⁺¹/(n + 1), pour n entier différent de −1, sur un intervalle où xⁿ est définie.",
+    "Sur ]0 ; +∞[, une primitive de 1/x est ln(x).",
+    "Une primitive de exp(x) est exp(x).",
+    "Une primitive de cos(x) est sin(x) ; une primitive de sin(x) est −cos(x)."
+   ],
+   "image_mentale": "La table des dérivées se lit à l’envers.",
+   "regle_ou_methode": "Identifier la forme de f, appliquer la formule adaptée, puis dériver pour vérifier.",
+   "exemples": [
+    "Pour f(x) = x², on augmente l’exposant d’une unité puis on divise par 3 : une primitive est x³/3.",
+    "Sur ]0 ; +∞[, une primitive de 3/x + cos(x) est 3 ln(x) + sin(x)."
+   ],
+   "piege": "La formule des puissances ne s’applique pas à l’exposant −1.",
+   "astuce_memoire": "Pour xⁿ, augmenter l’exposant puis diviser par le nouvel exposant.",
+   "quiz": [
+    {
+     "q": "Quelle est une primitive de sin(x) ?",
+     "choix": [
+      "cos(x)",
+      "sin(x)",
+      "−cos(x)"
+     ],
+     "rep": "−cos(x)",
+     "expl": "La dérivée de −cos(x) est sin(x)."
+    },
+    {
+     "q": "Sur ]0 ; +∞[, quelle est une primitive de 1/x ?",
+     "choix": [
+      "ln(x)",
+      "1/x²",
+      "x ln(x)"
+     ],
+     "rep": "ln(x)",
+     "expl": "La dérivée de ln(x) est 1/x."
+    },
+    {
+     "q": "Quelle est une primitive de x³ ?",
+     "choix": [
+      "3x²",
+      "x⁴/4",
+      "x⁴"
+     ],
+     "rep": "x⁴/4",
+     "expl": "On divise par le nouvel exposant 4."
+    }
+   ],
+   "id": "REV-MA-TLE-47"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Primitives de fonctions composées",
+   "emoji": "🧩",
+   "en_une_phrase": "Certaines formes composées se primitivent en reconnaissant une fonction et sa dérivée.",
+   "comprendre": "On cherche notamment les formes u’ exp(u) et u’/u. Pour le logarithme, u doit être strictement positive sur l’intervalle.",
+   "essentiel": [
+    "Une primitive de u’ exp(u) est exp(u).",
+    "Si u > 0, une primitive de u’/u est ln(u).",
+    "Une primitive de u’uⁿ est uⁿ⁺¹/(n + 1), pour n entier naturel.",
+    "Un facteur constant peut être sorti de la recherche de primitive."
+   ],
+   "image_mentale": "La dérivée de la fonction intérieure accompagne la fonction extérieure.",
+   "regle_ou_methode": "Poser u, calculer u’, vérifier le facteur et dériver le résultat.",
+   "exemples": [
+    "Pour 2x/(x² + 1), poser u = x² + 1 : u’ = 2x et u > 0 ; une primitive sur ℝ est ln(x² + 1).",
+    "Une primitive de 3 exp(3x) est exp(3x)."
+   ],
+   "piege": "Pour ln(u), vérifier la positivité de u ; la seule présence de u au dénominateur ne suffit pas.",
+   "astuce_memoire": "Chercher la dérivée de l’intérieur.",
+   "quiz": [
+    {
+     "q": "Quelle est une primitive de 2 exp(2x) ?",
+     "choix": [
+      "exp(2x)",
+      "2 exp(2x)",
+      "exp(x²)"
+     ],
+     "rep": "exp(2x)",
+     "expl": "La dérivée de exp(2x) est 2 exp(2x)."
+    },
+    {
+     "q": "Sur ℝ, une primitive de 2x/(x² + 1) est :",
+     "choix": [
+      "ln(2x)",
+      "ln(x² + 1)",
+      "1/(x² + 1)"
+     ],
+     "rep": "ln(x² + 1)",
+     "expl": "La dérivée du dénominateur est 2x et le dénominateur est positif."
+    },
+    {
+     "q": "Quelle est une primitive de 2x(x² + 1) ?",
+     "choix": [
+      "(x² + 1)²",
+      "x² + 1",
+      "(x² + 1)²/2"
+     ],
+     "rep": "(x² + 1)²/2",
+     "expl": "Poser u = x² + 1 et reconnaître u’u."
+    }
+   ],
+   "id": "REV-MA-TLE-48"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Équation différentielle y’ = ay",
+   "emoji": "🌱",
+   "en_une_phrase": "Les solutions de y’ = ay sont les fonctions x ↦ C exp(ax).",
+   "comprendre": "Une équation différentielle relie une fonction inconnue à sa dérivée. Une condition initiale détermine la constante C et donc une unique solution.",
+   "essentiel": [
+    "Pour a réel, y’ = ay a pour solutions y(x) = C exp(ax), C réel.",
+    "Si y(0) = y₀, alors C = y₀.",
+    "Lorsque a > 0, une solution de constante positive croît.",
+    "Lorsque a < 0, une solution de constante positive décroît."
+   ],
+   "image_mentale": "La vitesse de variation est proportionnelle à la valeur présente.",
+   "regle_ou_methode": "Écrire la solution générale, puis substituer la condition initiale pour déterminer C.",
+   "exemples": [
+    "Résoudre y’ = 2y avec y(0) = 3 : y(x) = C exp(2x), puis C = 3 ; la solution est 3 exp(2x).",
+    "La solution de y’ = −0,5y et y(0) = 10 est y(t) = 10 exp(−0,5t)."
+   ],
+   "piege": "Le coefficient a apparaît dans l’exposant ; C peut être négatif ou nul.",
+   "astuce_memoire": "Proportionnel à soi-même : exponentielle.",
+   "quiz": [
+    {
+     "q": "Quelle est la solution de y’ = y vérifiant y(0) = 2 ?",
+     "choix": [
+      "exp(2x)",
+      "2 exp(x)",
+      "2x"
+     ],
+     "rep": "2 exp(x)",
+     "expl": "Sa dérivée vaut 2 exp(x) et sa valeur initiale vaut 2."
+    },
+    {
+     "q": "Quelle fonction résout y’ = 0 ?",
+     "choix": [
+      "Seulement la fonction nulle",
+      "La fonction x ↦ x",
+      "Toute fonction constante"
+     ],
+     "rep": "Toute fonction constante",
+     "expl": "Une dérivée nulle sur un intervalle caractérise une fonction constante."
+    },
+    {
+     "q": "Pour y’ = −2y, quelle est la forme générale ?",
+     "choix": [
+      "C exp(−2x)",
+      "C exp(2x)",
+      "−2 exp(x)"
+     ],
+     "rep": "C exp(−2x)",
+     "expl": "La dérivée de C exp(−2x) vaut −2 fois la fonction."
+    }
+   ],
+   "id": "REV-MA-TLE-49"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Équation différentielle y’ = ay + b",
+   "emoji": "⚙️",
+   "en_une_phrase": "Une solution constante permet de résoudre y’ = ay + b lorsque a est non nul.",
+   "comprendre": "On soustrait une solution particulière constante pour retrouver l’équation homogène y’ = ay. Une condition initiale fixe ensuite la constante.",
+   "essentiel": [
+    "Si a ≠ 0, la solution constante particulière est −b/a.",
+    "Les solutions sont y(x) = C exp(ax) − b/a.",
+    "Si a = 0, les solutions sont y(x) = bx + C.",
+    "Vérifier une solution en calculant sa dérivée et le second membre."
+   ],
+   "image_mentale": "Une translation verticale ramène l’équation à une croissance exponentielle.",
+   "regle_ou_methode": "Trouver la solution constante, ajouter C exp(ax), puis imposer la condition initiale.",
+   "exemples": [
+    "Pour y’ = 2y + 4 et y(0) = 1 : la solution constante vaut −2 ; y = C exp(2x) − 2 ; C − 2 = 1, donc y = 3 exp(2x) − 2.",
+    "Pour y’ = 3 et y(0) = 1, la solution est y = 3x + 1."
+   ],
+   "piege": "La formule −b/a exige a non nul ; traiter séparément a = 0.",
+   "astuce_memoire": "Particulière constante plus exponentielle.",
+   "quiz": [
+    {
+     "q": "Quelle est une solution constante de y’ = 2y + 4 ?",
+     "choix": [
+      "2",
+      "−4",
+      "−2"
+     ],
+     "rep": "−2",
+     "expl": "On résout 0 = 2y + 4."
+    },
+    {
+     "q": "Quelle est la forme générale des solutions de y’ = y − 1 ?",
+     "choix": [
+      "1 + C exp(x)",
+      "−1 + C exp(x)",
+      "C exp(−x)"
+     ],
+     "rep": "1 + C exp(x)",
+     "expl": "La solution constante est 1 et l’équation homogène est y’ = y."
+    },
+    {
+     "q": "Pour y’ = 3, quelles sont les solutions ?",
+     "choix": [
+      "C exp(3x)",
+      "3x + C",
+      "3 + C exp(x)"
+     ],
+     "rep": "3x + C",
+     "expl": "Une primitive de la constante 3 est 3x."
+    }
+   ],
+   "id": "REV-MA-TLE-50"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Équation y’ = ay + f avec solution particulière",
+   "emoji": "🔧",
+   "en_une_phrase": "À une solution particulière donnée s’ajoutent les solutions de l’équation homogène.",
+   "comprendre": "Pour y’ = ay + f(x), si une fonction yₚ est une solution connue, la différence y − yₚ vérifie z’ = az. Cela permet d’obtenir toutes les solutions.",
+   "essentiel": [
+    "Vérifier yₚ en calculant yₚ’ et ayₚ + f.",
+    "Les solutions sont y = yₚ + C exp(ax), où C est réel.",
+    "Une condition initiale détermine C.",
+    "Le raisonnement s’applique sur l’intervalle étudié."
+   ],
+   "image_mentale": "La solution particulière traite le second membre ; l’exponentielle décrit l’écart.",
+   "regle_ou_methode": "Vérifier la solution particulière, puis lui ajouter C exp(ax).",
+   "exemples": [
+    "Pour y’ = 2y + x, vérifier yₚ = −x/2 − 1/4 : yₚ’ = −1/2 et 2yₚ + x = −1/2 ; les solutions sont y = −x/2 − 1/4 + C exp(2x).",
+    "Pour y’ = y + x, la fonction −x − 1 est particulière ; les solutions sont y = −x − 1 + C exp(x)."
+   ],
+   "piege": "Une solution particulière seule ne donne pas toutes les solutions.",
+   "astuce_memoire": "Particulière plus solution homogène.",
+   "quiz": [
+    {
+     "q": "Si yₚ résout y’ = 2y + f, quelle est la forme générale ?",
+     "choix": [
+      "yₚ + C exp(2x)",
+      "yₚ + C exp(x)",
+      "yₚ + Cx"
+     ],
+     "rep": "yₚ + C exp(2x)",
+     "expl": "La différence entre deux solutions résout z’ = 2z."
+    },
+    {
+     "q": "Quelle fonction est une solution particulière de y’ = y + x ?",
+     "choix": [
+      "x + 1",
+      "−x − 1",
+      "−x + 1"
+     ],
+     "rep": "−x − 1",
+     "expl": "Sa dérivée et y + x valent toutes deux −1."
+    },
+    {
+     "q": "Pour vérifier une solution particulière, que comparer ?",
+     "choix": [
+      "Sa valeur en 0 et zéro uniquement",
+      "Sa dérivée seconde et zéro",
+      "Sa dérivée yₚ’ et ayₚ + f"
+     ],
+     "rep": "Sa dérivée yₚ’ et ayₚ + f",
+     "expl": "yₚ’ doit être égale à ayₚ + f en chaque point de l’intervalle."
+    }
+   ],
+   "id": "REV-MA-TLE-51"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Intégrale et aire algébrique",
+   "emoji": "📐",
+   "en_une_phrase": "Une intégrale mesure une aire algébrique entre une courbe et l’axe des abscisses.",
+   "comprendre": "Sur un intervalle orienté de gauche à droite, les zones situées sous l’axe comptent négativement. Inverser les bornes change le signe de l’intégrale.",
+   "essentiel": [
+    "Si f ≥ 0 sur [a ; b], son intégrale de a à b est l’aire sous la courbe, en unités d’aire.",
+    "Si f ≤ 0 sur [a ; b], son intégrale est négative ou nulle.",
+    "L’intégrale de b à a est l’opposée de celle de a à b.",
+    "L’intégrale de a à a vaut 0."
+   ],
+   "image_mentale": "Les aires au-dessus de l’axe sont créditées et celles au-dessous sont débitées.",
+   "regle_ou_methode": "Repérer le signe de la fonction et l’orientation des bornes avant d’interpréter.",
+   "exemples": [
+    "Pour f(x) = x entre 0 et 2, la région est un triangle de base 2 et de hauteur 2 ; l’intégrale vaut 2 × 2/2 = 2.",
+    "De −1 à 1, l’intégrale de x vaut 0 : les deux triangles d’aires 1/2 se compensent."
+   ],
+   "piege": "Une intégrale n’est pas toujours l’aire géométrique totale, qui est positive.",
+   "astuce_memoire": "Intégrale : aire avec signe.",
+   "quiz": [
+    {
+     "q": "Que vaut l’intégrale de x de 0 à 2 ?",
+     "choix": [
+      "4",
+      "2",
+      "−2"
+     ],
+     "rep": "2",
+     "expl": "Elle correspond à un triangle de base 2 et de hauteur 2."
+    },
+    {
+     "q": "Que vaut l’intégrale de x de 2 à 0 ?",
+     "choix": [
+      "2",
+      "0",
+      "−2"
+     ],
+     "rep": "−2",
+     "expl": "Inverser les bornes change le signe."
+    },
+    {
+     "q": "Que vaut l’intégrale de x de −1 à 1 ?",
+     "choix": [
+      "0",
+      "1",
+      "−1"
+     ],
+     "rep": "0",
+     "expl": "Les contributions de part et d’autre de zéro se compensent."
+    }
+   ],
+   "id": "REV-MA-TLE-52"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Calcul intégral et relation de Chasles",
+   "emoji": "🧮",
+   "en_une_phrase": "L’intégrale d’une fonction continue se calcule avec une primitive.",
+   "comprendre": "Si F est une primitive de f, l’intégrale de f de a à b est F(b) − F(a). La linéarité et la relation de Chasles permettent de décomposer les calculs.",
+   "essentiel": [
+    "∫ de a à b f(x) dx = F(b) − F(a).",
+    "L’intégrale d’une somme est la somme des intégrales.",
+    "Une constante multiplicative peut sortir de l’intégrale.",
+    "La somme des intégrales de a à c et de c à b vaut celle de a à b."
+   ],
+   "image_mentale": "Une primitive donne un niveau à chaque borne ; on soustrait départ à arrivée.",
+   "regle_ou_methode": "Trouver une primitive, calculer sa valeur à chaque borne, puis effectuer la différence.",
+   "exemples": [
+    "Intégrer 2x + 1 de 0 à 2 : une primitive est x² + x ; F(2) − F(0) = 6 − 0 = 6.",
+    "Si ∫ de 0 à 1 f = 3 et ∫ de 1 à 2 f = 5, alors ∫ de 0 à 2 f = 8."
+   ],
+   "piege": "Bien soustraire F(a), et non ajouter les valeurs aux bornes.",
+   "astuce_memoire": "Borne d’arrivée moins borne de départ.",
+   "quiz": [
+    {
+     "q": "Que vaut l’intégrale de 2x de 0 à 3 ?",
+     "choix": [
+      "6",
+      "18",
+      "9"
+     ],
+     "rep": "9",
+     "expl": "Une primitive est x² ; 3² − 0² = 9."
+    },
+    {
+     "q": "Si ∫ de 0 à 1 f = 2 et ∫ de 1 à 3 f = 4, que vaut ∫ de 0 à 3 f ?",
+     "choix": [
+      "6",
+      "2",
+      "8"
+     ],
+     "rep": "6",
+     "expl": "La relation de Chasles donne 2 + 4."
+    },
+    {
+     "q": "Que vaut l’intégrale de 1 de 1 à 4 ?",
+     "choix": [
+      "4",
+      "3",
+      "5"
+     ],
+     "rep": "3",
+     "expl": "Une primitive de 1 est x, donc 4 − 1 = 3."
+    }
+   ],
+   "id": "REV-MA-TLE-53"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Valeur moyenne et encadrement d’une intégrale",
+   "emoji": "⚖️",
+   "en_une_phrase": "La valeur moyenne d’une fonction continue est son intégrale divisée par la longueur de l’intervalle.",
+   "comprendre": "La positivité de l’intégrale préserve l’ordre des fonctions lorsque les bornes sont dans l’ordre croissant. On peut en déduire des encadrements.",
+   "essentiel": [
+    "Sur [a ; b] avec a < b, la moyenne vaut ∫ de a à b f(x) dx divisée par b − a.",
+    "Si f ≤ g sur [a ; b], alors ∫ f ≤ ∫ g de a à b.",
+    "Si m ≤ f ≤ M, alors m(b − a) ≤ ∫ f ≤ M(b − a).",
+    "La moyenne est comprise entre m et M."
+   ],
+   "image_mentale": "La moyenne est la hauteur du rectangle qui aurait la même aire algébrique.",
+   "regle_ou_methode": "Calculer l’intégrale puis diviser par b − a, ou intégrer les bornes de l’encadrement.",
+   "exemples": [
+    "Pour f(x) = x sur [0 ; 2], l’intégrale vaut 2 ; on divise par 2 − 0 = 2 : la moyenne vaut 1.",
+    "Si 2 ≤ f ≤ 5 sur [0 ; 3], alors 6 ≤ ∫ de 0 à 3 f ≤ 15."
+   ],
+   "piege": "La valeur moyenne n’est pas l’intégrale seule : il faut diviser par la longueur.",
+   "astuce_memoire": "Moyenne = intégrale / longueur.",
+   "quiz": [
+    {
+     "q": "Quelle est la valeur moyenne de x sur [0 ; 2] ?",
+     "choix": [
+      "1",
+      "2",
+      "1/2"
+     ],
+     "rep": "1",
+     "expl": "L’intégrale vaut 2 et la longueur vaut 2."
+    },
+    {
+     "q": "Si 1 ≤ f ≤ 4 sur [0 ; 2], quel encadrement est certain ?",
+     "choix": [
+      "1 ≤ ∫ f ≤ 4",
+      "2 ≤ ∫ f ≤ 8",
+      "2 ≤ ∫ f ≤ 4"
+     ],
+     "rep": "2 ≤ ∫ f ≤ 8",
+     "expl": "On multiplie les bornes par la longueur 2."
+    },
+    {
+     "q": "Si f ≤ g sur [a ; b] et a < b, alors :",
+     "choix": [
+      "∫ de a à b f ≥ ∫ de a à b g",
+      "les deux intégrales sont égales",
+      "∫ de a à b f ≤ ∫ de a à b g"
+     ],
+     "rep": "∫ de a à b f ≤ ∫ de a à b g",
+     "expl": "La positivité de g − f donne cet ordre."
+    }
+   ],
+   "id": "REV-MA-TLE-54"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Intégration par parties",
+   "emoji": "🔄",
+   "en_une_phrase": "L’intégration par parties transforme une intégrale de produit grâce à la dérivée d’un produit.",
+   "comprendre": "Pour des fonctions u et v dérivables dont les dérivées sont continues, elle relie l’intégrale de u v’ à celle de u’ v. On choisit les fonctions pour simplifier l’intégrale restante.",
+   "essentiel": [
+    "∫ de a à b u(x)v’(x) dx = [u(x)v(x)] de a à b − ∫ de a à b u’(x)v(x) dx.",
+    "Le crochet [uv] de a à b signifie u(b)v(b) − u(a)v(a).",
+    "Le choix de u et v’ influence la difficulté du calcul.",
+    "La formule découle de (uv)’ = u’v + uv’."
+   ],
+   "image_mentale": "On transfère la dérivation d’un facteur vers l’autre.",
+   "regle_ou_methode": "Choisir u et v’, calculer u’ et une primitive v de v’, appliquer la formule.",
+   "exemples": [
+    "Pour ∫ de 0 à 1 x exp(x) dx, prendre u = x et v’ = exp(x) ; alors u’ = 1 et v = exp(x). Le résultat vaut [x exp(x)] de 0 à 1 − ∫ de 0 à 1 exp(x) dx = e − (e − 1) = 1.",
+    "Pour ∫ de 1 à e ln(x) dx, prendre u = ln(x) et v’ = 1 ; alors u’ = 1/x et v = x. Le résultat vaut [x ln(x)] de 1 à e − ∫ de 1 à e 1 dx = e − (e − 1) = 1."
+   ],
+   "piege": "Le signe devant l’intégrale restante est négatif.",
+   "astuce_memoire": "Produit aux bornes moins intégrale de u’v.",
+   "quiz": [
+    {
+     "q": "Quelle est la dérivée de uv ?",
+     "choix": [
+      "u’v’",
+      "u’v + uv’",
+      "uv’ − u’v"
+     ],
+     "rep": "u’v + uv’",
+     "expl": "C’est la règle de dérivation d’un produit."
+    },
+    {
+     "q": "Que vaut ∫ de 0 à 1 x exp(x) dx ?",
+     "choix": [
+      "e",
+      "e − 1",
+      "1"
+     ],
+     "rep": "1",
+     "expl": "Une intégration par parties donne e − (e − 1)."
+    },
+    {
+     "q": "Dans la formule, quel est le signe devant ∫ u’v ?",
+     "choix": [
+      "Moins",
+      "Plus",
+      "Il dépend des bornes"
+     ],
+     "rep": "Moins",
+     "expl": "La dérivée du produit donne ∫ uv’ = [uv] − ∫ u’v."
+    }
+   ],
+   "id": "REV-MA-TLE-55"
+  },
+  {
+   "axe": "Analyse",
+   "titre": "Méthode des rectangles",
+   "emoji": "▥",
+   "en_une_phrase": "Des sommes de rectangles permettent d’approcher une intégrale.",
+   "comprendre": "On découpe l’intervalle en sous-intervalles de même largeur. Pour une fonction croissante, les hauteurs prises à gauche donnent une somme inférieure et celles prises à droite une somme supérieure.",
+   "essentiel": [
+    "La largeur des n sous-intervalles est (b − a)/n.",
+    "Une somme de rectangles vaut la largeur multipliée par la somme des hauteurs.",
+    "Pour f croissante, somme à gauche ≤ intégrale ≤ somme à droite.",
+    "Pour une fonction continue, les sommes convergent vers l’intégrale quand le nombre de rectangles tend vers l’infini."
+   ],
+   "image_mentale": "Des marches en dessous et au-dessus de la courbe encadrent l’aire.",
+   "regle_ou_methode": "Calculer la largeur, les hauteurs aux extrémités choisies et additionner les aires.",
+   "exemples": [
+    "Pour f(x) = x² sur [0 ; 2] avec deux rectangles, la largeur vaut 1 ; la somme à gauche vaut 1 × (0² + 1²) = 1 et celle à droite 1 × (1² + 2²) = 5. Donc 1 ≤ ∫ de 0 à 2 x² dx ≤ 5.",
+    "La valeur exacte est 8/3, comprise entre 1 et 5."
+   ],
+   "piege": "Pour une fonction décroissante, les positions des sommes inférieure et supérieure sont inversées.",
+   "astuce_memoire": "Fonction croissante : gauche en dessous, droite au-dessus.",
+   "quiz": [
+    {
+     "q": "Quelle largeur ont quatre sous-intervalles égaux de [0 ; 2] ?",
+     "choix": [
+      "2",
+      "1/4",
+      "1/2"
+     ],
+     "rep": "1/2",
+     "expl": "On divise 2 − 0 par 4."
+    },
+    {
+     "q": "Pour une fonction croissante, quelle somme de rectangles est inférieure à l’intégrale ?",
+     "choix": [
+      "Celle utilisant les extrémités gauches",
+      "Celle utilisant les extrémités droites",
+      "Les deux sont toujours égales"
+     ],
+     "rep": "Celle utilisant les extrémités gauches",
+     "expl": "Chaque hauteur gauche est inférieure aux valeurs du sous-intervalle."
+    },
+    {
+     "q": "Avec deux rectangles à gauche pour x² sur [0 ; 2], quelle somme obtient-on ?",
+     "choix": [
+      "5",
+      "1",
+      "2"
+     ],
+     "rep": "1",
+     "expl": "La largeur vaut 1 et les hauteurs valent 0 et 1."
+    }
+   ],
+   "id": "REV-MA-TLE-56"
+  },
+  {
+   "axe": "Probabilités",
+   "titre": "Répéter des épreuves indépendantes",
+   "emoji": "🎲",
+   "en_une_phrase": "Des épreuves indépendantes se multiplient le long d’un chemin.",
+   "comprendre": "Une épreuve de Bernoulli possède deux issues, succès et échec. Un schéma de Bernoulli répète n fois cette épreuve dans les mêmes conditions et indépendamment.",
+   "essentiel": [
+    "La probabilité du succès est p et celle de l’échec 1 − p.",
+    "L’indépendance signifie que connaître les autres résultats possibles ne modifie pas les probabilités.",
+    "La probabilité d’un chemin est le produit de ses probabilités."
+   ],
+   "image_mentale": "Un arbre garde les mêmes branches à chaque étape.",
+   "regle_ou_methode": "Vérifier deux issues, probabilité constante et indépendance.",
+   "exemples": [
+    "Deux succès indépendants de probabilité 0,4 ont pour probabilité 0,4² = 0,16.",
+    "Un succès puis un échec ont pour probabilité 0,4 × 0,6 = 0,24."
+   ],
+   "piege": "Un tirage sans remise ne conserve généralement pas la même probabilité.",
+   "astuce_memoire": "Bernoulli répété : mêmes chances et indépendance.",
+   "quiz": [
+    {
+     "q": "Deux succès indépendants de probabilité 0,5 ont quelle probabilité ?",
+     "choix": [
+      "0,25",
+      "1",
+      "0,5"
+     ],
+     "rep": "0,25",
+     "expl": "On multiplie 0,5 par 0,5."
+    },
+    {
+     "q": "La probabilité de l’échec si p = 0,3 vaut ?",
+     "choix": [
+      "0,3",
+      "0,7",
+      "1,3"
+     ],
+     "rep": "0,7",
+     "expl": "Succès et échec sont complémentaires."
+    },
+    {
+     "q": "Un schéma de Bernoulli exige notamment ?",
+     "choix": [
+      "Toujours un seul essai",
+      "Des épreuves à trois issues",
+      "Des épreuves indépendantes"
+     ],
+     "rep": "Des épreuves indépendantes",
+     "expl": "Les répétitions sont indépendantes et identiques."
+    }
+   ],
+   "id": "REV-MA-TLE-57"
+  },
+  {
+   "axe": "Probabilités",
+   "titre": "Loi binomiale",
+   "emoji": "📊",
+   "en_une_phrase": "La loi binomiale donne le nombre de succès d’un schéma de Bernoulli.",
+   "comprendre": "Si X compte les succès parmi n épreuves indépendantes de probabilité p, X suit la loi binomiale de paramètres n et p. Son calcul combine le nombre de chemins et leur probabilité.",
+   "essentiel": [
+    "X prend les valeurs entières de 0 à n.",
+    "P(X = k) = C(n,k) pᵏ(1 − p)ⁿ⁻ᵏ.",
+    "P(X ≥ 1) = 1 − P(X = 0).",
+    "Une probabilité cumulée additionne des probabilités de valeurs disjointes."
+   ],
+   "image_mentale": "Plusieurs chemins conduisent au même nombre de succès.",
+   "regle_ou_methode": "Reconnaître n, p et k, puis appliquer la formule ou une calculatrice.",
+   "exemples": [
+    "Pour n = 3 et p = 0,5, P(X = 2) = 3 × 0,5² × 0,5 = 0,375.",
+    "Dans ce cas P(X ≥ 1) = 1 − 0,5³ = 0,875."
+   ],
+   "piege": "P(X ≥ 1) est différent de P(X = 1).",
+   "astuce_memoire": "Binomiale : compter les succès, pas leur ordre.",
+   "quiz": [
+    {
+     "q": "Quelles valeurs peut prendre X pour n = 3 ?",
+     "choix": [
+      "Seulement 0 ou 1",
+      "0, 1, 2 ou 3",
+      "Tout réel entre 0 et 3"
+     ],
+     "rep": "0, 1, 2 ou 3",
+     "expl": "X compte un nombre entier de succès."
+    },
+    {
+     "q": "Pour n = 2 et p = 0,5, quelle est P(X = 2) ?",
+     "choix": [
+      "0,5",
+      "0,75",
+      "0,25"
+     ],
+     "rep": "0,25",
+     "expl": "Les deux succès ont la probabilité 0,5²."
+    },
+    {
+     "q": "Quel événement est complémentaire de X ≥ 1 ?",
+     "choix": [
+      "X = 0",
+      "X = 1",
+      "X = 2"
+     ],
+     "rep": "X = 0",
+     "expl": "Aucun succès est le contraire d’au moins un succès."
+    }
+   ],
+   "id": "REV-MA-TLE-58"
+  },
+  {
+   "axe": "Probabilités",
+   "titre": "Espérance et variance binomiales",
+   "emoji": "⚖️",
+   "en_une_phrase": "L’espérance et la variance résument le centre et la dispersion de la loi binomiale.",
+   "comprendre": "Pour une loi binomiale de paramètres n et p, l’espérance vaut np et la variance vaut np(1 − p). L’écart-type est la racine carrée de la variance.",
+   "essentiel": [
+    "E(X) = np.",
+    "V(X) = np(1 − p).",
+    "σ(X) = √V(X)."
+   ],
+   "image_mentale": "Une distribution de résultats se centre autour de son espérance.",
+   "regle_ou_methode": "Identifier n et p, calculer np puis np(1 − p).",
+   "exemples": [
+    "Si n = 10 et p = 0,2, E(X) = 2 et V(X) = 1,6.",
+    "Si n = 4 et p = 0,5, E(X) = 2 et σ(X) = 1."
+   ],
+   "piege": "L’espérance n’est pas nécessairement un résultat observé à chaque expérience.",
+   "astuce_memoire": "Centre np ; dispersion np(1 − p).",
+   "quiz": [
+    {
+     "q": "Avec n = 10 et p = 0,2, quelle est l’espérance ?",
+     "choix": [
+      "0,2",
+      "8",
+      "2"
+     ],
+     "rep": "2",
+     "expl": "E(X) = np = 2."
+    },
+    {
+     "q": "Avec n = 4 et p = 0,5, quelle est la variance ?",
+     "choix": [
+      "1",
+      "2",
+      "4"
+     ],
+     "rep": "1",
+     "expl": "V(X) = 4 × 0,5 × 0,5."
+    },
+    {
+     "q": "Comment obtenir l’écart-type ?",
+     "choix": [
+      "Carré de l’espérance",
+      "Racine carrée de la variance",
+      "Inverse de la variance"
+     ],
+     "rep": "Racine carrée de la variance",
+     "expl": "C’est la définition de l’écart-type."
+    }
+   ],
+   "id": "REV-MA-TLE-59"
+  },
+  {
+   "axe": "Probabilités",
+   "titre": "Sommes et moyennes de variables",
+   "emoji": "➕",
+   "en_une_phrase": "L’espérance est linéaire et la variance des sommes indépendantes est additive.",
+   "comprendre": "Pour des variables aléatoires de variances finies, les espérances s’additionnent même sans indépendance. L’indépendance suffit pour additionner les variances, mais elle n’est pas nécessaire dans tous les cas.",
+   "essentiel": [
+    "E(X + Y) = E(X) + E(Y).",
+    "V(X + Y) = V(X) + V(Y) si X et Y sont indépendantes.",
+    "V(aX + b) = a²V(X).",
+    "Pour n variables indépendantes de même variance v, leur moyenne a pour variance v/n."
+   ],
+   "image_mentale": "Faire la moyenne de plusieurs mesures indépendantes réduit leur dispersion.",
+   "regle_ou_methode": "Calculer l’espérance terme à terme et vérifier l’indépendance avant d’additionner les variances.",
+   "exemples": [
+    "Si E(X) = 2 et E(Y) = 3, E(X + Y) = 5, même sans indépendance.",
+    "Deux variables indépendantes de variance 4 ont une moyenne de variance (4 + 4)/4 = 2."
+   ],
+   "piege": "L’indépendance n’est pas requise pour additionner les espérances.",
+   "astuce_memoire": "Espérances : toujours ; variances : indépendance suffisante.",
+   "quiz": [
+    {
+     "q": "Si E(X) = 2 et E(Y) = 3, E(X + Y) vaut ?",
+     "choix": [
+      "5",
+      "6",
+      "1"
+     ],
+     "rep": "5",
+     "expl": "La linéarité donne 2 + 3."
+    },
+    {
+     "q": "Si V(X) = 4, combien vaut V(2X) ?",
+     "choix": [
+      "8",
+      "16",
+      "4"
+     ],
+     "rep": "16",
+     "expl": "La variance est multipliée par 2²."
+    },
+    {
+     "q": "Pour additionner directement V(X) et V(Y), quelle condition suffit ?",
+     "choix": [
+      "X et Y égales",
+      "X et Y de même loi",
+      "X et Y indépendantes"
+     ],
+     "rep": "X et Y indépendantes",
+     "expl": "L’indépendance donne l’additivité des variances."
+    }
+   ],
+   "id": "REV-MA-TLE-60"
+  },
+  {
+   "axe": "Probabilités",
+   "titre": "Concentration et loi des grands nombres",
+   "emoji": "🎯",
+   "en_une_phrase": "Quand le nombre de répétitions augmente, une moyenne se rapproche de son espérance en probabilité.",
+   "comprendre": "L’inégalité de Bienaymé-Tchebychev majore la probabilité d’un écart à l’espérance. Pour des variables indépendantes de même loi et de variance finie, elle conduit à la loi des grands nombres.",
+   "essentiel": [
+    "Pour a > 0, P(|X − E(X)| ≥ a) ≤ V(X)/a².",
+    "Pour une moyenne de n variables indépendantes de variance v : la variance vaut v/n.",
+    "Une probabilité tendant vers zéro ne garantit pas chaque résultat individuel."
+   ],
+   "image_mentale": "Les moyennes de longs échantillons se resserrent autour du centre.",
+   "regle_ou_methode": "Calculer la variance de la moyenne puis appliquer la majoration avec un seuil positif.",
+   "exemples": [
+    "Si une moyenne a une variance de 0,01, P(|M − E(M)| ≥ 0,2) ≤ 0,01/0,04 = 0,25.",
+    "Une variance individuelle de 4 donne 0,04 pour la moyenne de 100 variables indépendantes de même loi."
+   ],
+   "piege": "La loi des grands nombres ne promet pas une compensation immédiate des écarts.",
+   "astuce_memoire": "Davantage d’essais : concentration en probabilité.",
+   "quiz": [
+    {
+     "q": "Pour appliquer l’inégalité, le seuil a doit être ?",
+     "choix": [
+      "Nul",
+      "Strictement positif",
+      "Négatif"
+     ],
+     "rep": "Strictement positif",
+     "expl": "La formule suppose a > 0."
+    },
+    {
+     "q": "La variance d’une moyenne de n variables indépendantes de variance v vaut ?",
+     "choix": [
+      "nv",
+      "v²",
+      "v/n"
+     ],
+     "rep": "v/n",
+     "expl": "La variance de la somme est nv, puis on divise par n²."
+    },
+    {
+     "q": "La loi des grands nombres garantit-elle chaque fréquence exactement égale à p ?",
+     "choix": [
+      "Non",
+      "Oui, dès dix essais",
+      "Oui, à chaque essai"
+     ],
+     "rep": "Non",
+     "expl": "Elle décrit une convergence en probabilité."
+    }
+   ],
+   "id": "REV-MA-TLE-61"
+  },
+  {
+   "axe": "Probabilités",
+   "titre": "Arbre pondéré et probabilité conditionnelle",
+   "emoji": "🌳",
+   "en_une_phrase": "Un arbre pondéré aide à distinguer conditionnement et indépendance.",
+   "comprendre": "Une probabilité conditionnelle P(B sachant A) décrit la probabilité de B lorsque A est réalisé. Un chemin de l’arbre se calcule par multiplication, et des chemins disjoints par addition.",
+   "essentiel": [
+    "Si P(A) > 0, P(A ∩ B) = P(A) × P(B sachant A).",
+    "La probabilité totale additionne les chemins disjoints vers B.",
+    "A et B sont indépendants si P(A ∩ B) = P(A)P(B)."
+   ],
+   "image_mentale": "L’arbre suit les informations disponibles à chaque étape.",
+   "regle_ou_methode": "Inscrire les probabilités conditionnelles sur les branches puis multiplier et additionner.",
+   "exemples": [
+    "Si P(A) = 0,4 et P(B sachant A) = 0,5, P(A ∩ B) = 0,2.",
+    "Si l’autre chemin vers B vaut 0,3, alors P(B) = 0,2 + 0,3 = 0,5."
+   ],
+   "piege": "P(B sachant A) et P(A sachant B) ne sont pas généralement égales.",
+   "astuce_memoire": "Sur un chemin : multiplier ; entre chemins : additionner.",
+   "quiz": [
+    {
+     "q": "Si P(A) = 0,4 et P(B sachant A) = 0,5, P(A ∩ B) vaut ?",
+     "choix": [
+      "0,9",
+      "0,1",
+      "0,2"
+     ],
+     "rep": "0,2",
+     "expl": "La probabilité du chemin est 0,4 × 0,5."
+    },
+    {
+     "q": "Les probabilités de chemins disjoints menant à B se combinent comment ?",
+     "choix": [
+      "On les additionne",
+      "On les multiplie toutes",
+      "On les soustrait toujours"
+     ],
+     "rep": "On les additionne",
+     "expl": "Leurs événements sont incompatibles."
+    },
+    {
+     "q": "Le conditionnement inverse-t-il automatiquement les probabilités ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement si leur somme vaut 1"
+     ],
+     "rep": "Non",
+     "expl": "Les deux conditionnelles sont généralement différentes."
+    }
+   ],
+   "id": "REV-MA-TLE-62"
+  },
+  {
+   "axe": "Algorithmique et programmation",
+   "titre": "Boucle et recherche de seuil",
+   "emoji": "💻",
+   "en_une_phrase": "Un algorithme répète un calcul jusqu’à atteindre une condition choisie.",
+   "comprendre": "Une boucle répète des instructions tant qu’une condition est vraie. On suit les valeurs successives pour comprendre ce que le programme renvoie.",
+   "essentiel": [
+    "Initialiser les variables avant la boucle.",
+    "Mettre à jour le rang et le terme à chaque tour.",
+    "Il faut vérifier que la condition devient fausse pour assurer l’arrêt de la boucle."
+   ],
+   "image_mentale": "Un compteur avance marche après marche jusqu’au seuil.",
+   "regle_ou_methode": "Partir de u = 1 et n = 0 ; tant que u < seuil, doubler u puis augmenter n de 1.",
+   "exemples": [
+    "Pour le seuil 5 : u vaut 1, 2, 4 puis 8 ; le premier rang est n = 3.",
+    "Pour le seuil 1, la boucle ne tourne pas et le rang renvoyé est 0."
+   ],
+   "piege": "Si la condition reste toujours vraie, la boucle peut ne jamais s’arrêter.",
+   "astuce_memoire": "Initialiser, tester, actualiser.",
+   "quiz": [
+    {
+     "q": "Quel est le premier rang où 2ⁿ ≥ 5 ?",
+     "choix": [
+      "3",
+      "2",
+      "4"
+     ],
+     "rep": "3",
+     "expl": "2² = 4 et 2³ = 8."
+    },
+    {
+     "q": "Combien de tours si u = 1 et le seuil vaut 1 ?",
+     "choix": [
+      "1",
+      "0",
+      "2"
+     ],
+     "rep": "0",
+     "expl": "La condition u < 1 est fausse dès le début."
+    },
+    {
+     "q": "Que risque une boucle dont la condition reste toujours vraie ?",
+     "choix": [
+      "De renvoyer automatiquement zéro",
+      "De supprimer toutes les variables",
+      "De ne pas s’arrêter"
+     ],
+     "rep": "De ne pas s’arrêter",
+     "expl": "Une boucle peut continuer indéfiniment."
+    }
+   ],
+   "id": "REV-MA-TLE-63"
+  },
+  {
+   "axe": "Vocabulaire ensembliste et logique",
+   "titre": "Implication et réciproque",
+   "emoji": "🧩",
+   "en_une_phrase": "Une implication et sa réciproque sont deux affirmations distinctes.",
+   "comprendre": "Une implication dit que si une condition est vraie alors une conséquence est vraie. Sa réciproque échange condition et conséquence et demande sa propre démonstration.",
+   "essentiel": [
+    "P implique Q signifie : si P, alors Q.",
+    "La réciproque est : si Q, alors P.",
+    "Un seul contre-exemple suffit à réfuter une affirmation universelle."
+   ],
+   "image_mentale": "Une flèche peut fonctionner dans un seul sens.",
+   "regle_ou_methode": "Pour examiner une réciproque, inverser hypothèse et conclusion puis chercher une preuve ou un contre-exemple.",
+   "exemples": [
+    "Si un entier est multiple de 4, il est pair. La réciproque est fausse : 6 est pair mais pas multiple de 4.",
+    "Tout carré d’un entier est positif ou nul ; la réciproque est fausse car 2 est positif sans être le carré d’un entier."
+   ],
+   "piege": "Une conséquence vraie ne prouve pas automatiquement l’hypothèse.",
+   "astuce_memoire": "Une flèche inversée doit être vérifiée.",
+   "quiz": [
+    {
+     "q": "La réciproque de « multiple de 4 implique pair » est-elle vraie ?",
+     "choix": [
+      "Oui, tous les nombres pairs sont multiples de 4",
+      "Non, 6 est un contre-exemple",
+      "Oui, car 4 est pair"
+     ],
+     "rep": "Non, 6 est un contre-exemple",
+     "expl": "6 est pair mais non multiple de 4."
+    },
+    {
+     "q": "Combien de contre-exemples suffisent à réfuter une affirmation universelle ?",
+     "choix": [
+      "Deux au minimum",
+      "Aucun",
+      "Un"
+     ],
+     "rep": "Un",
+     "expl": "Un seul cas contraire suffit."
+    },
+    {
+     "q": "La réciproque de « si P alors Q » est ?",
+     "choix": [
+      "Si Q alors P",
+      "Si non P alors non Q",
+      "P et Q sont toujours fausses"
+     ],
+     "rep": "Si Q alors P",
+     "expl": "On échange hypothèse et conclusion."
+    }
+   ],
+   "id": "REV-MA-TLE-64"
+  }
+ ]
+}

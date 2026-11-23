@@ -1,0 +1,4055 @@
+{
+ "classe": "TLE",
+ "niveau_appli": "Lycée",
+ "age": "17-18 ans",
+ "matiere": "Physique-chimie (spécialité)",
+ "code": "PC",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Acides, bases et transfert de proton",
+   "emoji": "🧪",
+   "en_une_phrase": "Un acide de Brønsted cède un proton H⁺ ; une base en capte un.",
+   "comprendre": "Un couple acide/base regroupe deux espèces qui diffèrent par un proton. Dans une réaction acide-base, le proton transféré passe de l’acide d’un couple à la base d’un autre. On conserve les éléments et la charge électrique dans l’équation.",
+   "essentiel": [
+    "Acide → base conjuguée + H⁺.",
+    "Base + H⁺ → acide conjugué.",
+    "H₃O⁺/H₂O et H₂O/HO⁻ sont deux couples.",
+    "H₂O est amphotère : elle peut jouer le rôle d’acide ou de base."
+   ],
+   "image_mentale": "Un proton passe d’un donneur à un accepteur.",
+   "regle_ou_methode": "Identifier les deux couples, transférer H⁺ puis vérifier atomes et charges.",
+   "exemples": [
+    "Avec les couples CH₃COOH/CH₃COO⁻ et H₃O⁺/H₂O, l’acide éthanoïque cède H⁺ à l’eau : CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺. Les atomes et les charges sont conservés.",
+    "Avec NH₄⁺/NH₃ et H₂O/HO⁻, NH₃ capte H⁺ de l’eau : NH₃ + H₂O ⇌ NH₄⁺ + HO⁻."
+   ],
+   "piege": "Une base n’est pas nécessairement l’ion HO⁻ : NH₃ peut capter un proton.",
+   "astuce_memoire": "Acide donne H⁺ ; base capte H⁺.",
+   "quiz": [
+    {
+     "q": "Quelle espèce est la base conjuguée de NH₄⁺ ?",
+     "choix": [
+      "H₃O⁺",
+      "NH₃",
+      "NH₄⁺"
+     ],
+     "rep": "NH₃",
+     "expl": "NH₄⁺ perd H⁺ pour devenir NH₃."
+    },
+    {
+     "q": "Que signifie amphotère pour l’eau ?",
+     "choix": [
+      "Elle ne peut jamais réagir avec un acide",
+      "Elle libère nécessairement deux protons à chaque réaction",
+      "Elle peut céder ou capter un proton selon la réaction"
+     ],
+     "rep": "Elle peut céder ou capter un proton selon la réaction",
+     "expl": "L’eau appartient aux deux couples H₃O⁺/H₂O et H₂O/HO⁻."
+    },
+    {
+     "q": "Dans CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺, quel est l’acide réactif ?",
+     "choix": [
+      "CH₃COOH",
+      "CH₃COO⁻",
+      "H₃O⁺"
+     ],
+     "rep": "CH₃COOH",
+     "expl": "CH₃COOH donne un proton à l’eau."
+    }
+   ],
+   "id": "REV-PC-TLE-01"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Acides carboxyliques et amines",
+   "emoji": "⚗️",
+   "en_une_phrase": "Acides carboxyliques et amines donnent des couples acide-base reconnaissables à leurs formules.",
+   "comprendre": "Un acide carboxylique possède le groupe −COOH ; sa base conjuguée est l’ion carboxylate −COO⁻. Une amine comme CH₃NH₂ capte un proton sur l’azote pour former CH₃NH₃⁺. On conserve le squelette de la molécule en ajoutant ou retirant H⁺.",
+   "essentiel": [
+    "Couple carboxylique : R−COOH/R−COO⁻.",
+    "Couple ammonium/amine : R−NH₃⁺/R−NH₂ pour une amine primaire.",
+    "Le groupe carboxyle comprend C=O et O−H.",
+    "L’amine possède un atome d’azote susceptible de capter H⁺."
+   ],
+   "image_mentale": "Un proton quitte le groupe carboxyle ou rejoint l’azote d’une amine.",
+   "regle_ou_methode": "Repérer le groupe concerné, puis ajouter ou retirer un proton en ajustant la charge.",
+   "exemples": [
+    "CH₃−COOH perd H⁺ : la base conjuguée est CH₃−COO⁻. Le squelette à deux carbones ne change pas.",
+    "CH₃−NH₂ capte H⁺ : son acide conjugué est CH₃−NH₃⁺."
+   ],
+   "piege": "Ne pas retirer un atome de carbone lorsqu’on enlève H⁺.",
+   "astuce_memoire": "Carboxyle perd H⁺ ; amine capte H⁺.",
+   "quiz": [
+    {
+     "q": "Quelle est la base conjuguée de CH₃COOH ?",
+     "choix": [
+      "CH₃COOH₂⁺",
+      "CH₃NH₂",
+      "CH₃COO⁻"
+     ],
+     "rep": "CH₃COO⁻",
+     "expl": "L’acide perd un proton pour former l’ion carboxylate."
+    },
+    {
+     "q": "Quel acide conjugué obtient-on à partir de CH₃NH₂ ?",
+     "choix": [
+      "CH₃NH₃⁺",
+      "CH₃NH⁻",
+      "CH₃COOH"
+     ],
+     "rep": "CH₃NH₃⁺",
+     "expl": "L’amine capte H⁺ sur l’azote."
+    },
+    {
+     "q": "Quel groupe caractérise un acide carboxylique ?",
+     "choix": [
+      "−NH₂ uniquement",
+      "−COOH",
+      "−COO⁻ uniquement"
+     ],
+     "rep": "−COOH",
+     "expl": "Le groupe caractéristique est le carboxyle −COOH."
+    }
+   ],
+   "id": "REV-PC-TLE-02"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "pH et concentration en ions oxonium",
+   "emoji": "📉",
+   "en_une_phrase": "Le pH dépend logarithmiquement de la concentration en ions H₃O⁺ en solution diluée.",
+   "comprendre": "On utilise pH = −log₁₀([H₃O⁺]/c°), avec c° = 1 mol·L⁻¹. Réciproquement, [H₃O⁺] = c° × 10^(−pH). Une multiplication de la concentration par 10 fait baisser le pH d’une unité.",
+   "essentiel": [
+    "c° = 1 mol·L⁻¹.",
+    "Le rapport dans le logarithme est sans dimension.",
+    "[H₃O⁺] = c° × 10^(−pH).",
+    "Le pH dépend de la concentration en H₃O⁺, pas directement de celle de tout acide apporté."
+   ],
+   "image_mentale": "Une échelle logarithmique transforme un facteur 10 en une unité de pH.",
+   "regle_ou_methode": "Exprimer la concentration en mol·L⁻¹, diviser par c° puis calculer le logarithme.",
+   "exemples": [
+    "Si [H₃O⁺] = 1,0 × 10⁻³ mol·L⁻¹, alors pH = −log₁₀(10⁻³) = 3,0.",
+    "Si pH = 5,0, alors [H₃O⁺] = 1 × 10⁻⁵ mol·L⁻¹."
+   ],
+   "piege": "Ne pas prendre le logarithme d’une grandeur avec unité sans la rapporter à c°.",
+   "astuce_memoire": "pH 3 → 10⁻³ mol·L⁻¹ dans ce modèle.",
+   "quiz": [
+    {
+     "q": "Quel est le pH si [H₃O⁺] = 10⁻⁴ mol·L⁻¹ ?",
+     "choix": [
+      "4",
+      "−4",
+      "10⁻⁴"
+     ],
+     "rep": "4",
+     "expl": "pH = −log₁₀(10⁻⁴) = 4."
+    },
+    {
+     "q": "Que vaut [H₃O⁺] si pH = 2 ?",
+     "choix": [
+      "10² mol·L⁻¹",
+      "10⁻² mol·L⁻¹",
+      "2 mol·L⁻¹"
+     ],
+     "rep": "10⁻² mol·L⁻¹",
+     "expl": "La relation inverse donne 10⁻² mol·L⁻¹."
+    },
+    {
+     "q": "Si [H₃O⁺] est multipliée par 10, le pH :",
+     "choix": [
+      "Augmente de 1",
+      "Est multiplié par 10",
+      "Diminue de 1"
+     ],
+     "rep": "Diminue de 1",
+     "expl": "Le logarithme décimal de la concentration augmente de 1."
+    }
+   ],
+   "id": "REV-PC-TLE-03"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Conductivité et loi de Kohlrausch",
+   "emoji": "⚡",
+   "en_une_phrase": "La conductivité d’une solution ionique diluée dépend de la concentration et de la mobilité des ions.",
+   "comprendre": "À température donnée et pour une solution suffisamment diluée, σ = Σ λᵢ[i], avec [i] en mol·m⁻³ et λᵢ en S·m²·mol⁻¹. La conductivité σ s’exprime en S·m⁻¹. Tous les ions présents contribuent à la somme.",
+   "essentiel": [
+    "σ = Σ λᵢ[i] dans les conditions de validité.",
+    "1 mol·L⁻¹ = 1 000 mol·m⁻³.",
+    "λᵢ dépend de l’ion et de la température.",
+    "La conductivité de la solution diffère de la conductance mesurée de la cellule."
+   ],
+   "image_mentale": "Chaque type d’ion apporte une part au transport électrique.",
+   "regle_ou_methode": "Convertir chaque concentration en mol·m⁻³, calculer chaque contribution puis les additionner.",
+   "exemples": [
+    "Une solution contient deux ions à 2 mol·m⁻³, avec λ₁ = 0,005 et λ₂ = 0,007 S·m²·mol⁻¹. Alors σ = 0,005×2 + 0,007×2 = 0,024 S·m⁻¹.",
+    "Une concentration de 2,0 × 10⁻³ mol·L⁻¹ vaut 2,0 mol·m⁻³."
+   ],
+   "piege": "Additionner les contributions de tous les ions, pas seulement celle du cation.",
+   "astuce_memoire": "Concentrations en mol·m⁻³ pour les λ en unités SI.",
+   "quiz": [
+    {
+     "q": "Que vaut 0,001 mol·L⁻¹ en mol·m⁻³ ?",
+     "choix": [
+      "0,001",
+      "1",
+      "1 000"
+     ],
+     "rep": "1",
+     "expl": "On multiplie par 1 000."
+    },
+    {
+     "q": "Deux ions à 1 mol·m⁻³ ont λ = 0,004 et 0,006 S·m²·mol⁻¹. Quelle conductivité ?",
+     "choix": [
+      "0,002 S·m⁻¹",
+      "0,010 S",
+      "0,010 S·m⁻¹"
+     ],
+     "rep": "0,010 S·m⁻¹",
+     "expl": "On additionne 0,004×1 et 0,006×1."
+    },
+    {
+     "q": "La loi de Kohlrausch est appliquée ici :",
+     "choix": [
+      "À une solution suffisamment diluée à température donnée",
+      "À toute solution sans restriction de concentration",
+      "À un mélange sans ions"
+     ],
+     "rep": "À une solution suffisamment diluée à température donnée",
+     "expl": "La relation est utilisée pour des solutions ioniques suffisamment diluées."
+    }
+   ],
+   "id": "REV-PC-TLE-04"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Absorbance et dosage par étalonnage",
+   "emoji": "🌈",
+   "en_une_phrase": "Dans son domaine de validité, la loi de Beer-Lambert relie absorbance et concentration.",
+   "comprendre": "Pour une espèce absorbante, A = εℓc à longueur d’onde fixée, lorsque la solution et l’appareil respectent les conditions de validité. On peut utiliser une droite d’étalonnage pour déterminer une concentration inconnue. Il faut tenir compte d’une dilution préalable.",
+   "essentiel": [
+    "A est sans unité.",
+    "À longueur d’onde et trajet optique fixés, A est proportionnelle à c dans le domaine linéaire.",
+    "Un blanc permet de tenir compte du solvant et de la cuve.",
+    "La concentration mesurée après dilution est celle de la solution diluée."
+   ],
+   "image_mentale": "Une droite relie les absorbances de solutions étalons à leurs concentrations.",
+   "regle_ou_methode": "Lire ou utiliser la relation d’étalonnage, puis corriger un éventuel facteur de dilution.",
+   "exemples": [
+    "Une droite expérimentale donne A = 50c avec c en mol·L⁻¹. Pour A = 0,20, c = 0,20/50 = 4,0 × 10⁻³ mol·L⁻¹.",
+    "Si cette solution provient d’une dilution au dixième, la concentration initiale vaut 10 × 4,0 × 10⁻³ = 4,0 × 10⁻² mol·L⁻¹."
+   ],
+   "piege": "La proportionnalité n’est utilisable que dans le domaine où la loi et l’étalonnage sont valides.",
+   "astuce_memoire": "Absorbance → concentration diluée → correction éventuelle.",
+   "quiz": [
+    {
+     "q": "Si A = 20c et A = 0,40, que vaut c ?",
+     "choix": [
+      "0,20 dans la même unité",
+      "8,0 dans la même unité",
+      "0,020 dans l’unité utilisée par l’étalonnage"
+     ],
+     "rep": "0,020 dans l’unité utilisée par l’étalonnage",
+     "expl": "c = 0,40/20 = 0,020."
+    },
+    {
+     "q": "Quel effet a une dilution au dixième sur la concentration ?",
+     "choix": [
+      "Elle la divise par 10",
+      "Elle la multiplie par 10",
+      "Elle la laisse nécessairement inchangée"
+     ],
+     "rep": "Elle la divise par 10",
+     "expl": "Le facteur de dilution vaut 10."
+    },
+    {
+     "q": "Quelle grandeur est sans unité ?",
+     "choix": [
+      "La concentration molaire",
+      "L’absorbance",
+      "La longueur de la cuve"
+     ],
+     "rep": "L’absorbance",
+     "expl": "L’absorbance est une grandeur sans dimension."
+    }
+   ],
+   "id": "REV-PC-TLE-05"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Identifier un groupe par spectroscopie",
+   "emoji": "🌈",
+   "en_une_phrase": "Un spectre d’absorption peut aider à reconnaître une espèce ou un groupe caractéristique.",
+   "comprendre": "En infrarouge, la position d’une bande peut être comparée à des données de référence pour identifier une liaison. En ultraviolet-visible, on compare les longueurs d’onde absorbées à celles de spectres de référence ; plusieurs espèces peuvent toutefois avoir des spectres proches. L’identification doit tenir compte du contexte et d’autres indices.",
+   "essentiel": [
+    "Le nombre d’onde infrarouge s’exprime souvent en cm⁻¹.",
+    "Une bande large vers 3 200–3 600 cm⁻¹ peut indiquer une liaison O−H.",
+    "Une bande autour de 1 700 cm⁻¹ peut indiquer une liaison C=O.",
+    "Un indice spectral isolé ne garantit pas l’identification unique d’une molécule."
+   ],
+   "image_mentale": "On compare les bandes mesurées à des signatures fournies.",
+   "regle_ou_methode": "Repérer la position et l’aspect des bandes, puis comparer aux intervalles de référence.",
+   "exemples": [
+    "Un spectre présente une large bande vers 3 400 cm⁻¹ ; la table fournie indique O−H entre 3 200 et 3 600 cm⁻¹. Cette bande est compatible avec la présence d’une liaison O−H, sans identifier à elle seule la molécule.",
+    "Une bande à 1 710 cm⁻¹ appartient à l’intervalle indicatif 1 650–1 750 cm⁻¹ d’une liaison C=O : elle suggère un groupe carbonyle."
+   ],
+   "piege": "Une bande est un indice de liaison ou de groupe, pas toujours une preuve unique de l’identité complète de l’espèce.",
+   "astuce_memoire": "IR : comparer position et forme aux tables de référence.",
+   "quiz": [
+    {
+     "q": "Une bande large vers 3 400 cm⁻¹ peut indiquer quelle liaison ?",
+     "choix": [
+      "O−H",
+      "C=O uniquement vers 1 700 cm⁻¹",
+      "C−C uniquement en dessous de 1 000 cm⁻¹"
+     ],
+     "rep": "O−H",
+     "expl": "La bande est compatible avec une liaison O−H."
+    },
+    {
+     "q": "Une bande à 1 710 cm⁻¹ est compatible avec quel groupe ?",
+     "choix": [
+      "Une liaison O−H seule vers 3 400 cm⁻¹",
+      "Un groupe carbonyle C=O",
+      "Une liaison N−H seule vers 3 300 cm⁻¹"
+     ],
+     "rep": "Un groupe carbonyle C=O",
+     "expl": "Une bande proche de 1 700 cm⁻¹ peut correspondre à C=O."
+    },
+    {
+     "q": "Une seule bande suffit-elle toujours à identifier une molécule de façon unique ?",
+     "choix": [
+      "Oui, quelle que soit la bande",
+      "Oui, si le spectre comporte une échelle",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Plusieurs molécules peuvent partager un même groupe caractéristique."
+    }
+   ],
+   "id": "REV-PC-TLE-06"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Titre massique, densité et dilution",
+   "emoji": "🧴",
+   "en_une_phrase": "Le titre massique et la densité permettent de calculer la concentration d’une solution commerciale.",
+   "comprendre": "Le titre massique w est le rapport masse de soluté/masse de solution. La densité d’une solution est le rapport de sa masse volumique à celle de l’eau ; pour l’eau on prendra ici 1,00 kg·L⁻¹. Pour une dilution, la quantité de soluté prélevée est conservée : C₁V₁ = C₂V₂.",
+   "essentiel": [
+    "w = m soluté/m solution, sans unité.",
+    "ρ solution = d × ρ eau.",
+    "n = m/M et C = n/V.",
+    "Pour une dilution : C₁V₁ = C₂V₂."
+   ],
+   "image_mentale": "On transforme un pourcentage en masse de soluté, puis en quantité de matière.",
+   "regle_ou_methode": "Choisir un volume de solution, calculer sa masse, puis la masse de soluté et la concentration.",
+   "exemples": [
+    "Pour 1,00 L de solution, d = 1,10 donne une masse de 1 100 g. Si w = 10,0 %, la masse de soluté vaut 110 g ; avec M = 55,0 g·mol⁻¹, n = 2,00 mol et C = 2,00 mol·L⁻¹.",
+    "Pour préparer 100,0 mL à 0,20 mol·L⁻¹ depuis une solution à 2,0 mol·L⁻¹, V₁ = 0,20×100,0/2,0 = 10,0 mL."
+   ],
+   "piege": "Le titre massique porte sur la masse de solution, pas sur le volume.",
+   "astuce_memoire": "Masse de solution → masse de soluté → quantité → concentration.",
+   "quiz": [
+    {
+     "q": "Une solution de masse 200 g contient 20 g de soluté. Son titre massique vaut :",
+     "choix": [
+      "20 %",
+      "10 %",
+      "90 %"
+     ],
+     "rep": "10 %",
+     "expl": "20/200 = 0,10."
+    },
+    {
+     "q": "Quel volume de solution mère à 1,0 mol·L⁻¹ pour obtenir 100 mL à 0,10 mol·L⁻¹ ?",
+     "choix": [
+      "100 mL",
+      "1 mL",
+      "10 mL"
+     ],
+     "rep": "10 mL",
+     "expl": "V₁ = 0,10 × 100/1,0 = 10 mL."
+    },
+    {
+     "q": "Que conserve-t-on lors d’une dilution sans perte de soluté ?",
+     "choix": [
+      "La quantité de matière de soluté prélevée",
+      "La concentration initiale",
+      "Le volume initial"
+     ],
+     "rep": "La quantité de matière de soluté prélevée",
+     "expl": "L’ajout de solvant ne change pas la quantité de soluté transférée."
+    }
+   ],
+   "id": "REV-PC-TLE-07"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Titrage et équivalence",
+   "emoji": "🎯",
+   "en_une_phrase": "À l’équivalence, les réactifs ont été introduits dans les proportions stœchiométriques de la réaction.",
+   "comprendre": "La réaction support du titrage doit être suffisamment rapide, totale et sélective. Pour aA + bB → produits, avec A dosé et B titrant, l’équivalence vérifie nA initial/a = nB versé/b. Il faut convertir les volumes et tenir compte des coefficients.",
+   "essentiel": [
+    "À l’équivalence : nA initial/a = nB versé/b.",
+    "Le volume équivalent est noté Vₑ.",
+    "n = C × V si V est en litres.",
+    "La réaction support est suffisamment rapide, totale et sélective."
+   ],
+   "image_mentale": "Les quantités versées atteignent exactement les proportions de l’équation.",
+   "regle_ou_methode": "Écrire l’équation équilibrée, appliquer la relation stœchiométrique et calculer la concentration.",
+   "exemples": [
+    "Pour A + B → produits, VA = 20,0 mL, CB = 0,100 mol·L⁻¹ et Vₑ = 15,0 mL : CA = CBVₑ/VA = 0,0750 mol·L⁻¹.",
+    "Si A + 2B → produits, l’équivalence donne nA = nB/2 : pour 4,0 mmol de B versés, nA initial = 2,0 mmol."
+   ],
+   "piege": "La relation CA VA = CB Vₑ n’est valable que pour des coefficients stœchiométriques égaux.",
+   "astuce_memoire": "Équilibrer, puis utiliser les proportions.",
+   "quiz": [
+    {
+     "q": "Pour A + B → produits, VA = 10 mL, CB = 0,10 mol·L⁻¹ et Vₑ = 20 mL. Que vaut CA ?",
+     "choix": [
+      "0,05 mol·L⁻¹",
+      "0,10 mol·L⁻¹",
+      "0,20 mol·L⁻¹"
+     ],
+     "rep": "0,20 mol·L⁻¹",
+     "expl": "CA = CBVₑ/VA = 0,20 mol·L⁻¹."
+    },
+    {
+     "q": "Pour A + 2B → produits, quelle relation vaut à l’équivalence ?",
+     "choix": [
+      "nB versé = 2nA initial",
+      "nA initial = 2nB versé",
+      "nB versé = nA initial"
+     ],
+     "rep": "nB versé = 2nA initial",
+     "expl": "Deux moles de B réagissent avec une mole de A."
+    },
+    {
+     "q": "Quel caractère est requis pour une réaction support de titrage ?",
+     "choix": [
+      "Être nécessairement très lente",
+      "Être suffisamment rapide, totale et sélective",
+      "Ne jamais consommer de réactif titrant"
+     ],
+     "rep": "Être suffisamment rapide, totale et sélective",
+     "expl": "Ces propriétés permettent une équivalence exploitable."
+    }
+   ],
+   "id": "REV-PC-TLE-08"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Suivi pH-métrique d’un titrage",
+   "emoji": "📈",
+   "en_une_phrase": "Le suivi du pH en fonction du volume versé permet de repérer l’équivalence d’un titrage acide-base.",
+   "comprendre": "On mesure le pH après chaque ajout de solution titrante et on trace pH = f(V). Lorsqu’un saut est identifiable, son milieu ou le maximum de la dérivée permet souvent d’estimer le volume équivalent. Le pH à l’équivalence n’est pas toujours égal à 7 : il dépend notamment des espèces présentes et de la température.",
+   "essentiel": [
+    "Le volume à l’équivalence se lit sur la courbe ou sa dérivée.",
+    "Un saut de pH permet souvent un repérage précis.",
+    "Le pH à l’équivalence dépend de la réaction et de la température.",
+    "Un indicateur coloré doit changer de couleur dans la zone du saut."
+   ],
+   "image_mentale": "La pente de la courbe devient forte au voisinage de l’équivalence.",
+   "regle_ou_methode": "Repérer Vₑ sur le saut, puis appliquer la stœchiométrie du titrage.",
+   "exemples": [
+    "Un acide monoprotique de volume 10,0 mL est titré par une base à 0,100 mol·L⁻¹ ; le saut est centré sur 12,0 mL. Pour un rapport 1:1, la concentration initiale est 0,100×12,0/10,0 = 0,120 mol·L⁻¹.",
+    "Pour un acide faible titré par une base forte, la base conjuguée présente à l’équivalence peut rendre la solution basique : le pH équivalent n’est donc pas forcément 7."
+   ],
+   "piege": "Équivalence signifie proportions stœchiométriques, pas systématiquement pH 7.",
+   "astuce_memoire": "Saut → volume équivalent → stœchiométrie.",
+   "quiz": [
+    {
+     "q": "À quoi correspond Vₑ ?",
+     "choix": [
+      "Au volume de titrant versé à l’équivalence",
+      "Au volume total initial avant tout ajout",
+      "À la valeur du pH initial"
+     ],
+     "rep": "Au volume de titrant versé à l’équivalence",
+     "expl": "Vₑ est le volume de solution titrante ajouté à l’équivalence."
+    },
+    {
+     "q": "Le pH à l’équivalence est-il toujours égal à 7 ?",
+     "choix": [
+      "Oui, pour tous les couples",
+      "Non",
+      "Oui, dès qu’un pH-mètre est utilisé"
+     ],
+     "rep": "Non",
+     "expl": "Les espèces en solution influencent le pH à l’équivalence."
+    },
+    {
+     "q": "Quel indicateur coloré choisir ?",
+     "choix": [
+      "Un indicateur qui ne change jamais de couleur",
+      "Un indicateur choisi sans examiner sa zone de virage",
+      "Un indicateur dont la zone de virage se situe dans le saut de pH"
+     ],
+     "rep": "Un indicateur dont la zone de virage se situe dans le saut de pH",
+     "expl": "La zone de virage doit convenir au saut associé au titrage."
+    }
+   ],
+   "id": "REV-PC-TLE-09"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Suivi conductimétrique d’un titrage",
+   "emoji": "📊",
+   "en_une_phrase": "Un changement de pente de conductivité peut permettre de repérer l’équivalence.",
+   "comprendre": "Pendant un titrage, les espèces ioniques présentes et leurs concentrations évoluent. La conductivité dépend de toutes leurs contributions ; une rupture de pente indique souvent l’équivalence. La dilution par la solution titrante peut modifier la courbe et doit être prise en compte si elle n’est pas négligeable.",
+   "essentiel": [
+    "La conductivité dépend de tous les ions présents.",
+    "L’équivalence est souvent repérée par l’intersection de deux portions de droite.",
+    "Les conductivités molaires ioniques aident à interpréter les pentes.",
+    "Une dilution notable peut courber la représentation."
+   ],
+   "image_mentale": "Des ions consommés sont remplacés par d’autres ions aux contributions différentes.",
+   "regle_ou_methode": "Identifier les ions, suivre leur évolution, comparer leurs conductivités puis lire la rupture.",
+   "exemples": [
+    "Lors d’un titrage de H₃O⁺ par HO⁻ apporté avec Na⁺, H₃O⁺ est consommé avant l’équivalence tandis que Na⁺ reste en solution. Les ions H₃O⁺ étant très conducteurs, la conductivité peut diminuer avant l’équivalence.",
+    "Après l’équivalence, l’excès de HO⁻ et les ions apportés conduisent généralement à une hausse de conductivité ; l’intersection des tendances permet d’estimer Vₑ."
+   ],
+   "piege": "Une rupture de pente ne signifie pas nécessairement que la conductivité devient nulle.",
+   "astuce_memoire": "Remplacement des ions → changement de pente.",
+   "quiz": [
+    {
+     "q": "Que repère-t-on souvent par l’intersection de deux portions de droite ?",
+     "choix": [
+      "La masse molaire du solvant",
+      "Le volume équivalent",
+      "Le pH nécessairement égal à 7"
+     ],
+     "rep": "Le volume équivalent",
+     "expl": "La rupture de pente permet de repérer l’équivalence."
+    },
+    {
+     "q": "Quel facteur influence la conductivité ?",
+     "choix": [
+      "Le seul volume de la cuve sans présence ionique",
+      "La couleur du capteur seulement",
+      "Les concentrations et les conductivités molaires des ions"
+     ],
+     "rep": "Les concentrations et les conductivités molaires des ions",
+     "expl": "Chaque ion contribue à la conductivité."
+    },
+    {
+     "q": "Que faut-il considérer si le volume ajouté est important ?",
+     "choix": [
+      "La dilution de la solution",
+      "La disparition de toutes les charges",
+      "Une conductivité forcément constante"
+     ],
+     "rep": "La dilution de la solution",
+     "expl": "La variation de volume modifie les concentrations ioniques."
+    }
+   ],
+   "id": "REV-PC-TLE-10"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Mesure et incertitude-type",
+   "emoji": "📏",
+   "en_une_phrase": "Une mesure s’accompagne d’une incertitude et d’un nombre adapté de chiffres significatifs.",
+   "comprendre": "L’incertitude-type u(x) caractérise la dispersion associée au résultat de mesure : elle s’exprime dans la même unité que x. La valeur affichée est arrondie au rang cohérent avec l’incertitude. Pour comparer une mesure à une référence, on peut calculer leur écart absolu divisé par u(x), lorsque l’incertitude de la référence est négligeable.",
+   "essentiel": [
+    "u(x) et x ont la même unité.",
+    "Le quotient |x mesuré − x référence|/u(x) est sans unité.",
+    "Les zéros initiaux ne sont pas des chiffres significatifs.",
+    "Un résultat arrondi doit rester cohérent avec son incertitude."
+   ],
+   "image_mentale": "Une valeur mesurée est accompagnée d’une indication de dispersion.",
+   "regle_ou_methode": "Identifier l’unité, arrondir la valeur au rang de l’incertitude, puis calculer si besoin le quotient de comparaison.",
+   "exemples": [
+    "Pour une mesure de concentration 0,1236 mol·L⁻¹ et une incertitude-type de 0,002 mol·L⁻¹, on écrit 0,124 mol·L⁻¹ avec u = 0,002 mol·L⁻¹ : les deux valeurs sont au millième.",
+    "Pour x mesuré = 10,2 mL, x référence = 10,0 mL et u(x) = 0,1 mL, le quotient vaut |10,2−10,0|/0,1 = 2,0. Son interprétation dépend du modèle et des incertitudes retenues."
+   ],
+   "piege": "Une incertitude-type n’est pas une erreur maximale garantie ; le quotient seul ne prouve pas l’exactitude.",
+   "astuce_memoire": "Même unité pour la mesure et son incertitude.",
+   "quiz": [
+    {
+     "q": "Combien de chiffres significatifs comporte 0,00450 ?",
+     "choix": [
+      "5",
+      "2",
+      "3"
+     ],
+     "rep": "3",
+     "expl": "Les zéros avant le 4 ne comptent pas ; le zéro final est significatif."
+    },
+    {
+     "q": "Pour x = 10,2 mL, référence 10,0 mL et u = 0,1 mL, quel est le quotient de comparaison ?",
+     "choix": [
+      "2,0",
+      "0,2",
+      "20"
+     ],
+     "rep": "2,0",
+     "expl": "L’écart 0,2 mL divisé par 0,1 mL donne 2,0."
+    },
+    {
+     "q": "Quelle unité possède l’incertitude-type d’une concentration exprimée en mol·L⁻¹ ?",
+     "choix": [
+      "mol",
+      "mol·L⁻¹",
+      "Aucune unité"
+     ],
+     "rep": "mol·L⁻¹",
+     "expl": "L’incertitude a la même unité que la grandeur mesurée."
+    }
+   ],
+   "id": "REV-PC-TLE-11"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Vitesse volumique et suivi temporel",
+   "emoji": "⏱️",
+   "en_une_phrase": "La vitesse volumique d’apparition ou de disparition décrit la variation d’une concentration par unité de temps.",
+   "comprendre": "Pour un produit P, v apparition(P) = d[P]/dt ; pour un réactif R, v disparition(R) = −d[R]/dt. Si les concentrations sont en mol·L⁻¹ et le temps en secondes, les vitesses s’expriment en mol·L⁻¹·s⁻¹. La pente de la tangente à la courbe donne la vitesse instantanée.",
+   "essentiel": [
+    "v apparition(P) = d[P]/dt.",
+    "v disparition(R) = −d[R]/dt.",
+    "Unité possible : mol·L⁻¹·s⁻¹.",
+    "Une pente entre deux points donne une vitesse moyenne sur l’intervalle."
+   ],
+   "image_mentale": "La pente d’une courbe indique à quelle vitesse la concentration change.",
+   "regle_ou_methode": "Choisir apparition ou disparition, calculer la pente puis ajuster son signe.",
+   "exemples": [
+    "Si [R] passe de 0,80 à 0,50 mol·L⁻¹ en 10 s, la vitesse moyenne de disparition vaut −(0,50−0,80)/10 = 0,030 mol·L⁻¹·s⁻¹.",
+    "Si [P] augmente de 0,10 à 0,18 mol·L⁻¹ en 20 s, la vitesse moyenne d’apparition vaut 0,08/20 = 0,0040 mol·L⁻¹·s⁻¹."
+   ],
+   "piege": "Une pente sur un intervalle donne une moyenne, pas nécessairement la vitesse instantanée.",
+   "astuce_memoire": "Produit : pente ; réactif : opposé de la pente.",
+   "quiz": [
+    {
+     "q": "Si [R] diminue de 0,20 mol·L⁻¹ en 10 s, quelle est sa vitesse moyenne de disparition ?",
+     "choix": [
+      "0,020 mol·L⁻¹·s⁻¹",
+      "−0,020 mol·L⁻¹·s⁻¹",
+      "2,0 mol·L⁻¹·s⁻¹"
+     ],
+     "rep": "0,020 mol·L⁻¹·s⁻¹",
+     "expl": "On prend l’opposé de la variation divisée par la durée."
+    },
+    {
+     "q": "Comment obtient-on une vitesse instantanée sur une courbe concentration-temps ?",
+     "choix": [
+      "Avec la seule valeur initiale de concentration",
+      "Avec la pente de la tangente à l’instant considéré",
+      "Avec la hauteur du graphique sans son échelle"
+     ],
+     "rep": "Avec la pente de la tangente à l’instant considéré",
+     "expl": "La dérivée est la pente de la tangente."
+    },
+    {
+     "q": "Quelle unité convient à une vitesse volumique ?",
+     "choix": [
+      "mol·L⁻¹",
+      "s·L·mol⁻¹",
+      "mol·L⁻¹·s⁻¹"
+     ],
+     "rep": "mol·L⁻¹·s⁻¹",
+     "expl": "Une vitesse est une variation de concentration par unité de temps."
+    }
+   ],
+   "id": "REV-PC-TLE-12"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Temps de demi-réaction",
+   "emoji": "⌛",
+   "en_une_phrase": "Le temps de demi-réaction est l’instant où l’avancement atteint la moitié de sa valeur finale.",
+   "comprendre": "Par définition, x(t½) = x final/2. Pour un produit absent initialement, sa concentration atteint alors la moitié de sa valeur finale si le volume est constant. Pour un réactif, il faut prendre le milieu entre sa concentration initiale et sa concentration finale.",
+   "essentiel": [
+    "x(t½) = x final/2.",
+    "Produit absent initialement : [P](t½) = [P] final/2 si le volume est constant.",
+    "Pour un réactif : [R](t½) = ([R] initial + [R] final)/2 à volume constant.",
+    "Une espèce peut rester présente à l’état final."
+   ],
+   "image_mentale": "On repère le milieu du chemin parcouru, pas forcément la moitié de la valeur initiale.",
+   "regle_ou_methode": "Identifier les valeurs initiale et finale puis lire l’instant où la transformation est à moitié accomplie.",
+   "exemples": [
+    "Si [P] passe de 0 à 0,60 mol·L⁻¹, à volume constant, le temps de demi-réaction est lu quand [P] atteint 0,30 mol·L⁻¹.",
+    "À volume constant, si [R] passe de 0,80 à 0,20 mol·L⁻¹, la moitié de son évolution correspond à [R] = (0,80+0,20)/2 = 0,50 mol·L⁻¹."
+   ],
+   "piege": "La moitié de la concentration initiale d’un réactif n’est correcte que si sa concentration finale est nulle.",
+   "astuce_memoire": "Demi-réaction : milieu entre état initial et état final.",
+   "quiz": [
+    {
+     "q": "Un produit initialement absent atteint 0,40 mol·L⁻¹ en fin de réaction à volume constant. Quelle concentration au temps de demi-réaction ?",
+     "choix": [
+      "0,40 mol·L⁻¹",
+      "0,20 mol·L⁻¹",
+      "0,10 mol·L⁻¹"
+     ],
+     "rep": "0,20 mol·L⁻¹",
+     "expl": "La moitié de l’avancement donne la moitié de la concentration finale."
+    },
+    {
+     "q": "À volume constant, un réactif passe de 1,0 à 0,4 mol·L⁻¹. Quelle concentration à t½ ?",
+     "choix": [
+      "0,5 mol·L⁻¹",
+      "0,2 mol·L⁻¹",
+      "0,7 mol·L⁻¹"
+     ],
+     "rep": "0,7 mol·L⁻¹",
+     "expl": "Le milieu entre les concentrations initiale et finale est 0,7."
+    },
+    {
+     "q": "Que vaut l’avancement à t½ ?",
+     "choix": [
+      "La moitié de l’avancement final",
+      "La moitié de l’avancement maximal théorique dans tous les cas",
+      "L’avancement final"
+     ],
+     "rep": "La moitié de l’avancement final",
+     "expl": "La définition utilise la valeur finale effectivement atteinte."
+    }
+   ],
+   "id": "REV-PC-TLE-13"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Facteurs cinétiques et catalyse",
+   "emoji": "🔥",
+   "en_une_phrase": "La température, les concentrations et un catalyseur peuvent modifier la vitesse d’une transformation.",
+   "comprendre": "Une hausse de température ou de concentration des réactifs accélère souvent une réaction, sans constituer une règle absolue pour tous les mécanismes. Un catalyseur intervient dans le mécanisme et est régénéré au cours du bilan. Il modifie la vitesse sans modifier l’état d’équilibre pour les mêmes conditions.",
+   "essentiel": [
+    "La température et les concentrations sont des facteurs cinétiques.",
+    "Un catalyseur est consommé puis régénéré dans le mécanisme.",
+    "La catalyse peut être homogène, hétérogène ou enzymatique.",
+    "À conditions identiques, un catalyseur ne modifie pas la constante d’équilibre."
+   ],
+   "image_mentale": "Un catalyseur propose un chemin réactionnel plus rapide et se retrouve à la fin du cycle.",
+   "regle_ou_methode": "Comparer les expériences à conditions identiques sauf un facteur, puis examiner le bilan du mécanisme.",
+   "exemples": [
+    "Deux expériences identiques sauf la température donnent des temps de demi-réaction de 80 s à 20 °C et 30 s à 40 °C : dans ce cas, la transformation est plus rapide à 40 °C.",
+    "Si C est consommé dans une étape puis régénéré dans une autre et ne figure pas dans le bilan global, il joue le rôle de catalyseur dans ce mécanisme."
+   ],
+   "piege": "Un catalyseur ne change pas le rendement d’équilibre d’une réaction simplement en l’accélérant.",
+   "astuce_memoire": "Catalyse : vitesse modifiée, catalyseur régénéré.",
+   "quiz": [
+    {
+     "q": "Que devient un catalyseur dans le bilan global ?",
+     "choix": [
+      "Il est définitivement consommé comme réactif",
+      "Il devient nécessairement le seul produit",
+      "Il est régénéré"
+     ],
+     "rep": "Il est régénéré",
+     "expl": "Le catalyseur est retrouvé à la fin du cycle."
+    },
+    {
+     "q": "À conditions identiques, quel effet un catalyseur a-t-il sur la constante d’équilibre ?",
+     "choix": [
+      "Il ne la modifie pas",
+      "Il la multiplie toujours par 2",
+      "Il la rend nécessairement nulle"
+     ],
+     "rep": "Il ne la modifie pas",
+     "expl": "La catalyse modifie la vitesse, pas la constante thermodynamique."
+    },
+    {
+     "q": "Deux expériences ne diffèrent que par la température et l’une a un temps de demi-réaction plus court. Que peut-on dire ?",
+     "choix": [
+      "La composition initiale est nécessairement différente",
+      "Dans ces conditions, la transformation y est plus rapide",
+      "L’équation chimique a forcément changé"
+     ],
+     "rep": "Dans ces conditions, la transformation y est plus rapide",
+     "expl": "Un temps de demi-réaction plus court traduit ici une évolution plus rapide."
+    }
+   ],
+   "id": "REV-PC-TLE-14"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Loi de vitesse d’ordre 1",
+   "emoji": "📉",
+   "en_une_phrase": "Pour une disparition d’ordre 1, la vitesse volumique est proportionnelle à la concentration du réactif.",
+   "comprendre": "Si v disparition(R) = k[R] avec k constant et k > 0, alors [R](t) = [R]₀e^(−kt). La constante k s’exprime en inverse d’une durée. Le temps de demi-réaction vaut ln(2)/k pour cette décroissance vers zéro.",
+   "essentiel": [
+    "v disparition(R) = k[R].",
+    "[R](t) = [R]₀e^(−kt) avec k constant.",
+    "k s’exprime par exemple en s⁻¹.",
+    "Pour cette loi, t½ = ln(2)/k."
+   ],
+   "image_mentale": "Chaque durée égale à t½ divise la concentration restante par deux.",
+   "regle_ou_methode": "Vérifier le modèle, utiliser la relation exponentielle puis contrôler les unités.",
+   "exemples": [
+    "Si [R]₀ = 0,80 mol·L⁻¹ et t½ = 10 s, [R] vaut 0,40 mol·L⁻¹ à 10 s puis 0,20 mol·L⁻¹ à 20 s.",
+    "Si k = 0,0693 s⁻¹, alors t½ = ln(2)/0,0693 ≈ 10,0 s."
+   ],
+   "piege": "Une baisse de concentration ne prouve pas à elle seule que la réaction suit une loi d’ordre 1.",
+   "astuce_memoire": "Ordre 1 : vitesse proportionnelle à [R].",
+   "quiz": [
+    {
+     "q": "Si k = 0,0693 s⁻¹, quel est approximativement t½ ?",
+     "choix": [
+      "10 s",
+      "1 s",
+      "100 s"
+     ],
+     "rep": "10 s",
+     "expl": "ln(2)/0,0693 ≈ 10 s."
+    },
+    {
+     "q": "Quelle unité convient à k dans v = k[R] si le temps est en secondes ?",
+     "choix": [
+      "mol·L⁻¹",
+      "s⁻¹",
+      "s"
+     ],
+     "rep": "s⁻¹",
+     "expl": "La vitesse divisée par la concentration donne une inverse de temps."
+    },
+    {
+     "q": "Après deux demi-vies, quelle fraction de [R]₀ reste dans ce modèle ?",
+     "choix": [
+      "1/2",
+      "3/4",
+      "1/4"
+     ],
+     "rep": "1/4",
+     "expl": "La concentration est divisée par 2 deux fois."
+    }
+   ],
+   "id": "REV-PC-TLE-15"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Mécanisme réactionnel et intermédiaire",
+   "emoji": "🧩",
+   "en_une_phrase": "Un mécanisme décompose une transformation en actes élémentaires.",
+   "comprendre": "Un intermédiaire réactionnel est formé dans une étape puis consommé dans une autre : il ne figure pas dans l’équation globale après simplification. Un catalyseur, lui, est introduit puis régénéré. Une flèche courbe représente le déplacement d’un doublet électronique, de sa source vers son site d’arrivée.",
+   "essentiel": [
+    "On additionne les étapes puis on simplifie les espèces présentes des deux côtés.",
+    "Un intermédiaire est formé puis consommé.",
+    "Un catalyseur est consommé puis régénéré.",
+    "Une flèche courbe part d’un doublet d’électrons."
+   ],
+   "image_mentale": "Des étapes locales se combinent en un bilan global ; certaines espèces disparaissent par simplification.",
+   "regle_ou_methode": "Additionner les étapes, supprimer les espèces communes puis déterminer leur rôle chronologique.",
+   "exemples": [
+    "Étape 1 : A + C → I ; étape 2 : I → B + C. En additionnant, I et C se simplifient : le bilan est A → B. I est un intermédiaire formé puis consommé ; C est un catalyseur consommé puis régénéré.",
+    "Lorsqu’un doublet non liant d’une base attaque H⁺, la flèche courbe part du doublet de la base et pointe vers H⁺ ; elle représente un déplacement d’électrons."
+   ],
+   "piege": "Une flèche courbe part d’un doublet électronique, pas d’une charge positive dépourvue de doublet.",
+   "astuce_memoire": "Intermédiaire : formé puis consommé ; catalyseur : consommé puis régénéré.",
+   "quiz": [
+    {
+     "q": "Dans A + C → I puis I → B + C, quel est l’intermédiaire ?",
+     "choix": [
+      "C",
+      "I",
+      "B"
+     ],
+     "rep": "I",
+     "expl": "I est formé à la première étape puis consommé à la seconde."
+    },
+    {
+     "q": "Dans le même mécanisme, quel est le catalyseur ?",
+     "choix": [
+      "A",
+      "I",
+      "C"
+     ],
+     "rep": "C",
+     "expl": "C est consommé puis régénéré."
+    },
+    {
+     "q": "Que représente une flèche courbe en mécanisme réactionnel ?",
+     "choix": [
+      "Le déplacement d’un doublet d’électrons",
+      "Le déplacement d’un noyau entier dans tous les cas",
+      "La vitesse macroscopique en mol·L⁻¹·s⁻¹"
+     ],
+     "rep": "Le déplacement d’un doublet d’électrons",
+     "expl": "La flèche décrit le mouvement d’un doublet électronique."
+    }
+   ],
+   "id": "REV-PC-TLE-16"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Noyaux, isotopes et conservation",
+   "emoji": "⚛️",
+   "en_une_phrase": "Une transformation nucléaire respecte la conservation du nombre de nucléons et de la charge électrique.",
+   "comprendre": "Un noyau comporte des protons et des neutrons. Deux isotopes différents d’un élément possèdent le même nombre de protons et des nombres de neutrons différents. Lors d’une transformation nucléaire, les sommes des nombres de nucléons et des nombres de charge sont conservées.",
+   "essentiel": [
+    "Z est le nombre de protons ; le nombre de neutrons est A − Z.",
+    "Des isotopes ont le même Z et des nombres A différents.",
+    "Dans une équation nucléaire, la somme des A est identique des deux côtés.",
+    "La somme des Z est aussi identique des deux côtés."
+   ],
+   "image_mentale": "Une balance compte séparément les nucléons et la charge de chaque côté.",
+   "regle_ou_methode": "Calcule A − Z pour compter les neutrons ; vérifie ensuite séparément les sommes de A et de Z.",
+   "exemples": [
+    "Le carbone 12 et le carbone 14 ont Z = 6 : le premier possède 12 − 6 = 6 neutrons ; le second en possède 14 − 6 = 8. Ce sont deux isotopes du carbone.",
+    "Un noyau de numéro atomique 8 et de nombre de nucléons 16 possède 16 − 8 = 8 neutrons."
+   ],
+   "piege": "Des isotopes ont le même nombre de protons Z mais des nombres de neutrons différents : ne pas confondre Z (protons) et A (nucléons).",
+   "astuce_memoire": "Même élément : même Z ; neutrons : A moins Z.",
+   "quiz": [
+    {
+     "q": "Combien de neutrons possède un noyau avec A = 23 et Z = 11 ?",
+     "choix": [
+      "11",
+      "34",
+      "12"
+     ],
+     "rep": "12",
+     "expl": "Le nombre de neutrons est A − Z = 23 − 11."
+    },
+    {
+     "q": "Deux noyaux sont isotopes d’un même élément si ?",
+     "choix": [
+      "Ils ont le même nombre de protons et des nombres de neutrons différents",
+      "Ils ont le même nombre de neutrons et des nombres de protons différents",
+      "Ils ont toujours autant de protons que de neutrons"
+     ],
+     "rep": "Ils ont le même nombre de protons et des nombres de neutrons différents",
+     "expl": "Le nombre de protons détermine l’élément chimique."
+    },
+    {
+     "q": "Quels nombres se conservent dans une équation nucléaire ?",
+     "choix": [
+      "Le nombre de neutrons seulement",
+      "La somme des nombres de nucléons et la somme des nombres de charge",
+      "Le nombre de noyaux seulement"
+     ],
+     "rep": "La somme des nombres de nucléons et la somme des nombres de charge",
+     "expl": "Les bilans de A et de Z doivent être vérifiés."
+    }
+   ],
+   "id": "REV-PC-TLE-17"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Désintégrations alpha, bêta et gamma",
+   "emoji": "☢️",
+   "en_une_phrase": "Les émissions alpha, bêta et gamma se distinguent par la particule ou le rayonnement émis.",
+   "comprendre": "Un noyau instable peut se transformer spontanément en un autre noyau. La nature de l’émission aide à écrire la transformation tout en respectant les bilans de nucléons et de charge. Un noyau excité peut aussi perdre de l’énergie par émission gamma.",
+   "essentiel": [
+    "L’émission α produit un noyau d’hélium 4 : A = 4 et Z = 2.",
+    "En β⁻, un neutron se transforme en proton avec émission d’un électron et d’un antineutrino.",
+    "En β⁺, un proton se transforme en neutron avec émission d’un positon et d’un neutrino.",
+    "En émission γ, le noyau perd de l’énergie sans modifier A ni Z."
+   ],
+   "image_mentale": "Une émission alpha retire deux protons et deux neutrons ; une émission gamma retire de l’énergie.",
+   "regle_ou_methode": "Écris les nombres A et Z du noyau et de la particule émise, puis équilibre les deux sommes.",
+   "exemples": [
+    "Pour une émission α, le noyau de départ a A = 238 et Z = 92. Le noyau fils a A = 238 − 4 = 234 et Z = 92 − 2 = 90.",
+    "Lors d’une émission β⁻ du carbone 14, le noyau fils a A = 14 et Z = 7 : c’est un noyau d’azote 14, accompagné d’un électron et d’un antineutrino."
+   ],
+   "piege": "Le rayonnement γ ne change ni le nombre de nucléons ni la charge du noyau.",
+   "astuce_memoire": "Alpha : −4 et −2 ; bêta : A constant ; gamma : énergie.",
+   "quiz": [
+    {
+     "q": "Une désintégration α d’un noyau de A = 210 et Z = 84 donne quel noyau fils ?",
+     "choix": [
+      "A = 206 et Z = 82",
+      "A = 210 et Z = 85",
+      "A = 209 et Z = 84"
+     ],
+     "rep": "A = 206 et Z = 82",
+     "expl": "Une particule α emporte 4 nucléons et 2 charges positives."
+    },
+    {
+     "q": "Lors d’une émission β⁻, comment évolue Z du noyau ?",
+     "choix": [
+      "Z diminue de 1",
+      "Z augmente de 1",
+      "Z ne change pas"
+     ],
+     "rep": "Z augmente de 1",
+     "expl": "Un neutron devient un proton et A reste constant."
+    },
+    {
+     "q": "Qu’est-ce qui change lors d’une émission γ du noyau ?",
+     "choix": [
+      "Son nombre de protons",
+      "Son nombre de nucléons",
+      "Son énergie"
+     ],
+     "rep": "Son énergie",
+     "expl": "Le noyau émet un photon et passe à un niveau d’énergie inférieur."
+    }
+   ],
+   "id": "REV-PC-TLE-18"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Loi de décroissance radioactive",
+   "emoji": "📉",
+   "en_une_phrase": "Pour une grande population de noyaux radioactifs, le nombre moyen de noyaux restants décroît exponentiellement.",
+   "comprendre": "Chaque noyau instable a une probabilité de désintégration pendant une durée donnée. On ne peut pas prévoir l’instant de désintégration d’un noyau isolé. Pour un grand ensemble, une loi exponentielle décrit l’évolution moyenne.",
+   "essentiel": [
+    "N(t) = N₀ exp(−λt), en moyenne dans le modèle de décroissance.",
+    "La constante radioactive λ est positive et s’exprime en inverse du temps.",
+    "La loi suppose notamment un seul type de noyaux radioactifs considéré et aucune production supplémentaire.",
+    "La décroissance moyenne vérifie dN/dt = −λN."
+   ],
+   "image_mentale": "Une population de noyaux diminue selon une courbe qui descend puis s’aplatit.",
+   "regle_ou_methode": "Exprime λ et t avec des unités compatibles, puis calcule exp(−λt).",
+   "exemples": [
+    "Pour N₀ = 1 000 noyaux en moyenne, λ = ln(2) par jour et t = 1 jour : N(t) = 1 000 × exp(−ln(2)) = 500 noyaux en moyenne.",
+    "Dans le même modèle, après deux jours, le nombre moyen vaut 1 000 × (1/2)² = 250."
+   ],
+   "piege": "Une loi moyenne ne permet pas de prédire le sort exact de chaque noyau.",
+   "astuce_memoire": "Exposant : moins constante radioactive fois durée.",
+   "quiz": [
+    {
+     "q": "Si λ = ln(2) par jour, quelle fraction moyenne subsiste après deux jours ?",
+     "choix": [
+      "Une moitié",
+      "Un quart",
+      "Trois quarts"
+     ],
+     "rep": "Un quart",
+     "expl": "La fraction est divisée par deux chaque jour."
+    },
+    {
+     "q": "Quelle unité peut convenir à λ si le temps est en secondes ?",
+     "choix": [
+      "s",
+      "m·s⁻¹",
+      "s⁻¹"
+     ],
+     "rep": "s⁻¹",
+     "expl": "Le produit λt doit être sans unité."
+    },
+    {
+     "q": "Peut-on prédire l’instant exact de désintégration d’un noyau isolé avec cette loi ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, si sa masse est connue"
+     ],
+     "rep": "Non",
+     "expl": "La désintégration individuelle est aléatoire."
+    }
+   ],
+   "id": "REV-PC-TLE-19"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Activité et temps de demi-vie",
+   "emoji": "⏳",
+   "en_une_phrase": "La demi-vie et l’activité caractérisent la décroissance d’un ensemble de noyaux radioactifs.",
+   "comprendre": "L’activité indique le nombre moyen de désintégrations par seconde. La demi-vie est la durée nécessaire pour que le nombre moyen de noyaux radioactifs soit divisé par deux. Ces grandeurs sont liées à la constante de désintégration.",
+   "essentiel": [
+    "L’activité moyenne vaut A = λN, avec λ en s⁻¹ et N nombre moyen de noyaux.",
+    "Le becquerel correspond à une désintégration par seconde.",
+    "La demi-vie vaut t½ = ln(2)/λ.",
+    "Après deux demi-vies, un quart des noyaux initiaux subsiste en moyenne."
+   ],
+   "image_mentale": "À chaque demi-vie, le nombre moyen de noyaux restants est coupé en deux.",
+   "regle_ou_methode": "Compte les demi-vies écoulées ; multiplie le nombre initial par 1/2 à chaque étape.",
+   "exemples": [
+    "Un échantillon compte initialement 800 noyaux radioactifs en moyenne. Après une demi-vie il en reste 400, puis après deux demi-vies 200.",
+    "Avec λ = 0,002 s⁻¹ et N = 5 000 noyaux en moyenne, A = 0,002 × 5 000 = 10 Bq."
+   ],
+   "piege": "L’activité mesure un rythme de désintégration ; ce n’est pas la quantité de noyaux.",
+   "astuce_memoire": "Deux demi-vies : moitié de moitié, soit un quart.",
+   "quiz": [
+    {
+     "q": "Après trois demi-vies, quelle fraction moyenne subsiste ?",
+     "choix": [
+      "1/3",
+      "1/6",
+      "1/8"
+     ],
+     "rep": "1/8",
+     "expl": "On multiplie trois fois par 1/2."
+    },
+    {
+     "q": "Quelle est l’activité pour λ = 0,01 s⁻¹ et N = 200 en moyenne ?",
+     "choix": [
+      "2 Bq",
+      "200 Bq",
+      "20 000 Bq"
+     ],
+     "rep": "2 Bq",
+     "expl": "A = λN = 0,01 × 200."
+    },
+    {
+     "q": "Que mesure un becquerel ?",
+     "choix": [
+      "Une demi-vie par seconde",
+      "Une désintégration par seconde",
+      "Une énergie de un joule"
+     ],
+     "rep": "Une désintégration par seconde",
+     "expl": "Le becquerel est l’unité d’activité radioactive."
+    }
+   ],
+   "id": "REV-PC-TLE-20"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Datation radioactive",
+   "emoji": "🏺",
+   "en_une_phrase": "Une datation utilise la décroissance radioactive et un modèle adapté pour estimer une durée.",
+   "comprendre": "Après un événement qui fixe les conditions initiales, la quantité d’un noyau radioactif peut diminuer au cours du temps. Comparer une quantité actuelle à la quantité initiale estimée permet de remonter à une durée. Le résultat dépend de la validité des hypothèses du modèle et des mesures.",
+   "essentiel": [
+    "La proportion moyenne restante après n demi-vies vaut (1/2)ⁿ.",
+    "La quantité initiale doit être connue ou estimée par une méthode adaptée.",
+    "Le modèle tient compte de l’histoire de l’échantillon et des échanges éventuels.",
+    "L’incertitude de mesure limite la précision de l’âge obtenu."
+   ],
+   "image_mentale": "Une horloge dont l’indicateur est divisé par deux à chaque demi-vie.",
+   "regle_ou_methode": "Trouve le nombre de demi-vies compatible avec la proportion restante, puis multiplie par la demi-vie.",
+   "exemples": [
+    "Pour un échantillon fictif où il reste en moyenne un quart de la quantité initiale, deux demi-vies sont passées. Si une demi-vie vaut 1 000 ans, la durée estimée est 2 × 1 000 = 2 000 ans.",
+    "Pour la même demi-vie, une proportion restante de 1/8 correspond à trois demi-vies, soit environ 3 000 ans."
+   ],
+   "piege": "Une proportion restante ne donne pas un âge fiable si l’hypothèse sur la quantité initiale ou les échanges est fausse.",
+   "astuce_memoire": "Un quart restant : deux demi-vies.",
+   "quiz": [
+    {
+     "q": "Si 1/8 de la quantité initiale subsiste en moyenne, combien de demi-vies se sont écoulées ?",
+     "choix": [
+      "3",
+      "2",
+      "8"
+     ],
+     "rep": "3",
+     "expl": "Une moitié, puis un quart, puis un huitième correspondent à trois demi-vies."
+    },
+    {
+     "q": "Si une demi-vie dure 500 ans et que deux demi-vies sont écoulées, quelle durée estime-t-on ?",
+     "choix": [
+      "250 ans",
+      "1 000 ans",
+      "2 000 ans"
+     ],
+     "rep": "1 000 ans",
+     "expl": "On multiplie deux par 500 ans."
+    },
+    {
+     "q": "Pourquoi l’estimation dépend-elle du modèle ?",
+     "choix": [
+      "Tous les échantillons ont la même demi-vie",
+      "Une proportion restante est toujours exacte",
+      "La quantité initiale et les échanges possibles influencent le calcul"
+     ],
+     "rep": "La quantité initiale et les échanges possibles influencent le calcul",
+     "expl": "Les hypothèses sur l’échantillon conditionnent la durée calculée."
+    }
+   ],
+   "id": "REV-PC-TLE-21"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Radioactivité : usages et protection",
+   "emoji": "🛡️",
+   "en_une_phrase": "Les rayonnements ionisants ont des usages médicaux et nécessitent des protections adaptées.",
+   "comprendre": "Certains examens utilisent un traceur radioactif pour obtenir des informations sur un organe. Des rayonnements peuvent aussi être employés en traitement dans des conditions contrôlées. Les moyens de protection dépendent du rayonnement et de la situation.",
+   "essentiel": [
+    "Un traceur radioactif peut contribuer à une image médicale.",
+    "Le temps d’exposition et la distance à la source influencent l’exposition.",
+    "Un écran adapté peut atténuer certains rayonnements.",
+    "L’activité d’une source ne suffit pas, seule, à déterminer la dose reçue."
+   ],
+   "image_mentale": "Une source, une distance et un écran composent une situation d’exposition.",
+   "regle_ou_methode": "Identifier la source et son rayonnement, puis tenir compte du temps, de la distance et de la protection adaptée.",
+   "exemples": [
+    "Pour une même source et une même position, réduire le temps passé à proximité peut réduire l’exposition reçue. L’évaluation tient compte aussi du rayonnement et de l’écran éventuel.",
+    "Une image obtenue avec un traceur radioactif constitue un exemple d’usage médical de la radioactivité."
+   ],
+   "piege": "Une protection efficace dépend du rayonnement : un écran universel ne convient pas nécessairement à toutes les situations.",
+   "astuce_memoire": "Temps, distance, écran adapté.",
+   "quiz": [
+    {
+     "q": "Quel usage peut faire intervenir un traceur radioactif ?",
+     "choix": [
+      "Une mesure directe de longueur avec une règle",
+      "Un examen d’imagerie médicale",
+      "La détermination d’une masse avec une balance mécanique"
+     ],
+     "rep": "Un examen d’imagerie médicale",
+     "expl": "Certains examens d’imagerie utilisent des traceurs radioactifs."
+    },
+    {
+     "q": "À source et position identiques, quel changement peut réduire l’exposition ?",
+     "choix": [
+      "Augmenter systématiquement le temps d’exposition",
+      "Ignorer la présence de la source",
+      "Réduire le temps passé près de la source"
+     ],
+     "rep": "Réduire le temps passé près de la source",
+     "expl": "Le temps d’exposition est un des paramètres à considérer."
+    },
+    {
+     "q": "Que faut-il vérifier avant de choisir un écran de protection ?",
+     "choix": [
+      "La nature du rayonnement et les conditions d’exposition",
+      "Seulement la couleur de la source",
+      "Seulement l’âge de l’échantillon"
+     ],
+     "rep": "La nature du rayonnement et les conditions d’exposition",
+     "expl": "La protection doit être adaptée au rayonnement et à la situation."
+    }
+   ],
+   "id": "REV-PC-TLE-22"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Transformation non totale et taux d’avancement",
+   "emoji": "⚗️",
+   "en_une_phrase": "Une transformation est non totale si son avancement final est inférieur à l’avancement maximal.",
+   "comprendre": "Le tableau d’avancement utilise les coefficients de l’équation pour relier les quantités de matière. L’avancement maximal xₘₐₓ est la valeur qui épuiserait le réactif limitant si la transformation était totale. Le taux final est τ = xᶠ/xₘₐₓ.",
+   "essentiel": [
+    "L’avancement x et les quantités de matière s’expriment en mol.",
+    "Le taux τ est sans unité et compris entre 0 et 1.",
+    "Pour une transformation non totale, des réactifs restent à l’état final."
+   ],
+   "image_mentale": "Le maximum théorique est l’arrivée possible ; l’avancement final indique le chemin réellement parcouru.",
+   "regle_ou_methode": "Établir le tableau, calculer xₘₐₓ puis diviser xᶠ par xₘₐₓ.",
+   "exemples": [
+    "Pour A + B ⇌ C, avec n₀(A) = 0,10 mol et n₀(B) = 0,08 mol, xₘₐₓ = 0,08 mol. Si xᶠ = 0,04 mol, alors τ = 0,04/0,08 = 0,50, soit 50 %.",
+    "Pour 2 A → B et n₀(A) = 0,30 mol, xₘₐₓ = 0,30/2 = 0,15 mol si A est l’unique réactif limitant."
+   ],
+   "piege": "Ne pas confondre xᶠ et la quantité finale restante du réactif.",
+   "astuce_memoire": "Taux final = avancement final / avancement maximal.",
+   "quiz": [
+    {
+     "q": "Si xᶠ = 0,03 mol et xₘₐₓ = 0,06 mol, que vaut τ ?",
+     "choix": [
+      "2",
+      "0,03 mol",
+      "0,50"
+     ],
+     "rep": "0,50",
+     "expl": "τ = 0,03/0,06 = 0,50, sans unité."
+    },
+    {
+     "q": "Pour 2 A → B avec 0,20 mol de A seul réactif, que vaut xₘₐₓ ?",
+     "choix": [
+      "0,10 mol",
+      "0,20 mol",
+      "0,40 mol"
+     ],
+     "rep": "0,10 mol",
+     "expl": "Deux moles de A correspondent à une mole d’avancement."
+    },
+    {
+     "q": "Si τ = 0,40, la transformation est :",
+     "choix": [
+      "Totale",
+      "Non totale",
+      "Nécessairement à rendement de 100 %"
+     ],
+     "rep": "Non totale",
+     "expl": "L’avancement final est inférieur au maximum."
+    }
+   ],
+   "id": "REV-PC-TLE-23"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Équilibre chimique dynamique",
+   "emoji": "🔄",
+   "en_une_phrase": "À l’équilibre, les transformations directe et inverse se compensent à l’échelle macroscopique.",
+   "comprendre": "Dans un système fermé à température constante, un équilibre chimique se traduit par des compositions macroscopiques constantes alors que les réactions microscopiques directe et inverse continuent. Un état d’équilibre n’impose pas des quantités égales de réactifs et de produits.",
+   "essentiel": [
+    "À l’équilibre, les vitesses des transformations directe et inverse sont égales.",
+    "Les concentrations restent constantes à l’échelle macroscopique.",
+    "Une perturbation peut modifier l’état d’équilibre atteint."
+   ],
+   "image_mentale": "Deux flux opposés de même débit maintiennent un stock constant.",
+   "regle_ou_methode": "Identifier les espèces présentes et distinguer bilan macroscopique et activité microscopique.",
+   "exemples": [
+    "Si les deux vitesses valent chacune 0,02 mol·L⁻¹·s⁻¹, leur bilan est nul : la composition demeure constante dans ce modèle.",
+    "Un équilibre fictif peut contenir 0,08 mol de A et 0,02 mol de B : la stabilité n’exige pas l’égalité des quantités."
+   ],
+   "piege": "Un équilibre dynamique ne signifie pas que les réactions se sont arrêtées.",
+   "astuce_memoire": "Vitesses opposées égales ; composition constante.",
+   "quiz": [
+    {
+     "q": "Que deviennent les concentrations à l’équilibre dans un système fermé maintenu à température constante ?",
+     "choix": [
+      "Elles restent constantes à l’échelle macroscopique",
+      "Elles deviennent toutes nulles",
+      "Elles deviennent nécessairement égales"
+     ],
+     "rep": "Elles restent constantes à l’échelle macroscopique",
+     "expl": "Les variations macroscopiques se compensent."
+    },
+    {
+     "q": "Que se passe-t-il à l’échelle microscopique à l’équilibre ?",
+     "choix": [
+      "Aucune transformation ne se produit",
+      "Les deux transformations se poursuivent à vitesses égales",
+      "Seule la transformation directe continue"
+     ],
+     "rep": "Les deux transformations se poursuivent à vitesses égales",
+     "expl": "L’équilibre est dynamique."
+    },
+    {
+     "q": "Les concentrations des réactifs et produits sont-elles nécessairement égales à l’équilibre ?",
+     "choix": [
+      "Oui",
+      "Oui, si la température est constante",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Leurs valeurs dépendent notamment de l’équilibre considéré."
+    }
+   ],
+   "id": "REV-PC-TLE-24"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Quotient de réaction",
+   "emoji": "🧮",
+   "en_une_phrase": "Le quotient de réaction compare les activités des produits et des réactifs, pondérées par leurs coefficients.",
+   "comprendre": "Pour A + B ⇌ C en solution diluée, Qᵣ = ([C]/c°)/(([A]/c°)([B]/c°)), avec c° = 1 mol·L⁻¹. Chaque activité est sans dimension. Un solide pur ou un liquide pur présent a une activité égale à 1 dans le modèle usuel.",
+   "essentiel": [
+    "Produits au numérateur et réactifs au dénominateur.",
+    "Les coefficients stœchiométriques deviennent des exposants.",
+    "Qᵣ est sans unité.",
+    "L’eau liquide pure et les solides purs présents n’apparaissent pas explicitement."
+   ],
+   "image_mentale": "Un rapport produits sur réactifs, adapté à l’équation choisie.",
+   "regle_ou_methode": "Écrire l’équation, identifier les phases puis remplacer chaque concentration par son rapport à c°.",
+   "exemples": [
+    "Pour A + B ⇌ C, si [A] = 0,20, [B] = 0,10 et [C] = 0,04 mol·L⁻¹, Qᵣ = 0,04/(0,20 × 0,10) = 2 en utilisant les rapports à c°.",
+    "Pour A ⇌ 2 B, avec [A] = 0,10 et [B] = 0,20 mol·L⁻¹, Qᵣ = 0,20²/0,10 = 0,40, sans unité."
+   ],
+   "piege": "Le quotient dépend de l’équation retenue ; il ne porte pas l’unité obtenue en multipliant naïvement des concentrations.",
+   "astuce_memoire": "Produits divisés par réactifs, puissances stœchiométriques.",
+   "quiz": [
+    {
+     "q": "Pour A ⇌ 2 B en solution, quelle expression convient ?",
+     "choix": [
+      "([B]/c°)/([A]/c°)",
+      "([B]/c°)²/([A]/c°)",
+      "([A]/c°)/([B]/c°)²"
+     ],
+     "rep": "([B]/c°)²/([A]/c°)",
+     "expl": "Le coefficient 2 devient l’exposant de l’activité de B."
+    },
+    {
+     "q": "Quelle est l’unité du quotient de réaction ?",
+     "choix": [
+      "mol·L⁻¹",
+      "mol",
+      "Aucune"
+     ],
+     "rep": "Aucune",
+     "expl": "Il est défini à partir d’activités sans dimension."
+    },
+    {
+     "q": "Pour A + B ⇌ C, avec les rapports [A]/c° = 0,2, [B]/c° = 0,1 et [C]/c° = 0,04, que vaut Qᵣ ?",
+     "choix": [
+      "2",
+      "0,5",
+      "0,02"
+     ],
+     "rep": "2",
+     "expl": "0,04/(0,2 × 0,1) = 2."
+    }
+   ],
+   "id": "REV-PC-TLE-25"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Constante d’équilibre et sens d’évolution",
+   "emoji": "⚖️",
+   "en_une_phrase": "Comparer Qᵣ à K permet de prévoir le sens d’évolution spontanée du système.",
+   "comprendre": "À température donnée, un état d’équilibre vérifie Qᵣ = K(T). Si Qᵣ < K, l’évolution spontanée se fait dans le sens direct ; si Qᵣ > K, elle se fait dans le sens inverse, sous réserve que les espèces nécessaires soient présentes.",
+   "essentiel": [
+    "K dépend de la température et de l’équation chimique choisie.",
+    "À l’équilibre, Qᵣ = K.",
+    "Pour la réaction inverse, la constante devient 1/K.",
+    "Le critère n’indique pas à lui seul la vitesse de l’évolution."
+   ],
+   "image_mentale": "Le quotient évolue vers la valeur d’équilibre tant que le système peut évoluer.",
+   "regle_ou_methode": "Calculer Qᵣ initial, le comparer à K puis vérifier la présence des réactifs nécessaires.",
+   "exemples": [
+    "Si Qᵣ = 0,5 et K = 4, alors Qᵣ < K : le système évolue spontanément dans le sens direct si les réactifs nécessaires sont disponibles.",
+    "Pour K = 4, la constante associée à la réaction inverse est 1/4 = 0,25."
+   ],
+   "piege": "Un grand K favorise les produits à l’équilibre, mais ne renseigne pas directement sur la rapidité.",
+   "astuce_memoire": "Q < K : direct ; Q > K : inverse.",
+   "quiz": [
+    {
+     "q": "Si Qᵣ = 5 et K = 2, quel sens est favorisé spontanément si l’évolution est possible ?",
+     "choix": [
+      "Le sens direct",
+      "Aucun changement quel que soit le système",
+      "Le sens inverse"
+     ],
+     "rep": "Le sens inverse",
+     "expl": "Qᵣ est supérieur à K."
+    },
+    {
+     "q": "Que vaut Qᵣ à l’équilibre ?",
+     "choix": [
+      "K",
+      "Toujours zéro",
+      "Toujours un, quelle que soit la réaction"
+     ],
+     "rep": "K",
+     "expl": "À l’équilibre, Qᵣ = K à la température considérée."
+    },
+    {
+     "q": "Si K = 4 pour une réaction, quelle est la constante de sa réaction inverse ?",
+     "choix": [
+      "4",
+      "0,25",
+      "−4"
+     ],
+     "rep": "0,25",
+     "expl": "La constante inverse vaut 1/K."
+    }
+   ],
+   "id": "REV-PC-TLE-26"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Oxydo-réduction : équilibrer une réaction",
+   "emoji": "🔋",
+   "en_une_phrase": "Une oxydation cède des électrons et une réduction en capte.",
+   "comprendre": "Pour le couple Ox/Red, une demi-équation de réduction s’écrit Ox + ne⁻ → Red. Dans une réaction globale, les électrons cédés et captés se compensent ; les atomes et la charge électrique se conservent.",
+   "essentiel": [
+    "Oxydation : perte d’électrons.",
+    "Réduction : gain d’électrons.",
+    "L’oxydant capte des électrons ; le réducteur en cède.",
+    "Les électrons disparaissent de l’équation globale."
+   ],
+   "image_mentale": "Les électrons passent d’un donneur à un accepteur.",
+   "regle_ou_methode": "Écrire les deux demi-équations, égaliser les électrons puis additionner.",
+   "exemples": [
+    "Zn → Zn²⁺ + 2 e⁻ et Cu²⁺ + 2 e⁻ → Cu donnent Zn + Cu²⁺ → Zn²⁺ + Cu.",
+    "Pour Cu → Cu²⁺ + 2 e⁻ et 2 Ag⁺ + 2 e⁻ → 2 Ag, le bilan est Cu + 2 Ag⁺ → Cu²⁺ + 2 Ag."
+   ],
+   "piege": "Un oxydant se réduit ; un réducteur s’oxyde.",
+   "astuce_memoire": "Oxydation : électrons produits ; réduction : électrons consommés.",
+   "quiz": [
+    {
+     "q": "Dans Zn → Zn²⁺ + 2 e⁻, le zinc subit :",
+     "choix": [
+      "Une oxydation",
+      "Une réduction",
+      "Une fusion nucléaire"
+     ],
+     "rep": "Une oxydation",
+     "expl": "Il cède deux électrons."
+    },
+    {
+     "q": "Dans Cu²⁺ + 2 e⁻ → Cu, Cu²⁺ est :",
+     "choix": [
+      "Un réducteur",
+      "Un oxydant",
+      "Un catalyseur nécessairement"
+     ],
+     "rep": "Un oxydant",
+     "expl": "Il capte les électrons."
+    },
+    {
+     "q": "Combien d’électrons reçoit Cu²⁺ pour former Cu ?",
+     "choix": [
+      "1",
+      "4",
+      "2"
+     ],
+     "rep": "2",
+     "expl": "La demi-équation comporte deux électrons."
+    }
+   ],
+   "id": "REV-PC-TLE-27"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Fonctionnement d’une pile",
+   "emoji": "🔌",
+   "en_une_phrase": "Une pile transforme spontanément de l’énergie chimique en énergie électrique.",
+   "comprendre": "Dans une pile en fonctionnement, l’oxydation a lieu à l’anode et la réduction à la cathode. Les électrons circulent dans le circuit extérieur de l’anode négative vers la cathode positive ; le pont salin assure une conduction ionique et limite l’accumulation de charges.",
+   "essentiel": [
+    "Anode : oxydation ; cathode : réduction.",
+    "Dans une pile qui débite, l’anode est le pôle négatif.",
+    "Le pont salin assure la continuité ionique.",
+    "Le courant conventionnel dans le circuit extérieur est opposé au déplacement des électrons."
+   ],
+   "image_mentale": "Deux compartiments reliés par un fil pour les électrons et un pont pour les ions.",
+   "regle_ou_methode": "Identifier oxydation et réduction, affecter les électrodes puis indiquer les sens des flux.",
+   "exemples": [
+    "Pour une pile zinc-cuivre en décharge : Zn → Zn²⁺ + 2 e⁻ à l’anode ; Cu²⁺ + 2 e⁻ → Cu à la cathode. Les électrons vont de l’électrode de zinc vers celle de cuivre.",
+    "Si 0,010 mol de zinc est oxydée selon la première demi-équation, 0,020 mol d’électrons est transférée."
+   ],
+   "piege": "Le pont salin conduit des ions, pas les électrons du circuit extérieur.",
+   "astuce_memoire": "Pile : anode − → électrons → cathode +.",
+   "quiz": [
+    {
+     "q": "Où a lieu l’oxydation dans une pile en décharge ?",
+     "choix": [
+      "À la cathode",
+      "À l’anode",
+      "Dans le pont salin uniquement"
+     ],
+     "rep": "À l’anode",
+     "expl": "L’anode est le siège de l’oxydation."
+    },
+    {
+     "q": "Quel est le rôle principal du pont salin ?",
+     "choix": [
+      "Transporter les électrons dans le circuit extérieur",
+      "Empêcher le passage de tous les ions",
+      "Assurer la conduction ionique entre les demi-piles"
+     ],
+     "rep": "Assurer la conduction ionique entre les demi-piles",
+     "expl": "Le pont permet une circulation ionique et limite l’accumulation de charges."
+    },
+    {
+     "q": "Quel transfert électronique correspond à l’oxydation de 0,010 mol de zinc en Zn²⁺ ?",
+     "choix": [
+      "0,020 mol d’électrons",
+      "0,010 mol d’électrons",
+      "0,005 mol d’électrons"
+     ],
+     "rep": "0,020 mol d’électrons",
+     "expl": "Chaque mole de zinc libère deux moles d’électrons."
+    }
+   ],
+   "id": "REV-PC-TLE-28"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Capacité électrique et usure d’une pile",
+   "emoji": "🔋",
+   "en_une_phrase": "La charge maximale d’une pile dépend de la quantité d’électrons échangeables.",
+   "comprendre": "La charge transférée vaut Q = n(e⁻)F, avec F ≈ 96 500 C·mol⁻¹. Pour une intensité constante I, Q = IΔt. La capacité réelle peut être inférieure au calcul idéal si la transformation s’arrête avant l’épuisement théorique des réactifs.",
+   "essentiel": [
+    "La charge s’exprime en coulombs : 1 C = 1 A·s.",
+    "n(e⁻) est une quantité de matière en mol.",
+    "1 A·h = 3 600 C.",
+    "L’usure dépend notamment des réactifs disponibles et des conditions de fonctionnement."
+   ],
+   "image_mentale": "Une réserve finie d’électrons transférables correspond à une charge maximale idéale.",
+   "regle_ou_methode": "Déterminer le réactif limitant, la quantité d’électrons, puis calculer Q et éventuellement la durée.",
+   "exemples": [
+    "Pour n(e⁻) = 0,020 mol, Qₘₐₓ = 0,020 × 96 500 = 1 930 C dans le modèle idéal.",
+    "À I = 0,50 A constant, 1 800 C correspondent à Δt = 1 800/0,50 = 3 600 s, soit 1 h."
+   ],
+   "piege": "Une intensité en ampères multipliée par une durée en heures donne des A·h, pas directement des coulombs.",
+   "astuce_memoire": "Q = n(e⁻)F = IΔt.",
+   "quiz": [
+    {
+     "q": "Quelle charge correspond à 0,020 mol d’électrons avec F = 96 500 C·mol⁻¹ ?",
+     "choix": [
+      "193 C",
+      "4 825 000 C",
+      "1 930 C"
+     ],
+     "rep": "1 930 C",
+     "expl": "0,020 × 96 500 = 1 930 C."
+    },
+    {
+     "q": "Combien de coulombs représente 1 A·h ?",
+     "choix": [
+      "3 600 C",
+      "60 C",
+      "1 C"
+     ],
+     "rep": "3 600 C",
+     "expl": "Une heure contient 3 600 secondes et 1 A = 1 C/s."
+    },
+    {
+     "q": "Combien de temps faut-il pour transférer 1 800 C à 0,50 A constant ?",
+     "choix": [
+      "900 s",
+      "3 600 s",
+      "1 800 s"
+     ],
+     "rep": "3 600 s",
+     "expl": "Δt = Q/I = 1 800/0,50."
+    }
+   ],
+   "id": "REV-PC-TLE-29"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Oxydants usuels et métaux réducteurs",
+   "emoji": "🔩",
+   "en_une_phrase": "Un réducteur cède des électrons à un oxydant qui les capte.",
+   "comprendre": "Les métaux peuvent former des cations en perdant des électrons. Les métaux du bloc s possèdent peu d’électrons de valence ; leur perte conduit à une configuration électronique stable de cation.",
+   "essentiel": [
+    "Dioxygène et dichlore peuvent agir comme oxydants.",
+    "Dihydrogène, acide ascorbique et de nombreux métaux peuvent agir comme réducteurs.",
+    "Les métaux du bloc s forment notamment des cations +1 ou +2.",
+    "Une demi-équation doit conserver les éléments et la charge électrique."
+   ],
+   "image_mentale": "Le métal donne des électrons, l’oxydant les reçoit.",
+   "regle_ou_methode": "Écrire la formation du cation et vérifier le nombre d’électrons cédés.",
+   "exemples": [
+    "Mg → Mg²⁺ + 2 e⁻ : l’atome perd deux électrons ; il subit une oxydation et joue le rôle de réducteur.",
+    "Pour 0,10 mol de magnésium ainsi oxydée, le transfert vaut 0,20 mol d’électrons."
+   ],
+   "piege": "Le réducteur subit une oxydation : son nom décrit son action sur l’autre espèce.",
+   "astuce_memoire": "Réducteur donne ; oxydant reçoit.",
+   "quiz": [
+    {
+     "q": "Quel rôle joue Mg dans Mg → Mg²⁺ + 2 e⁻ ?",
+     "choix": [
+      "Réducteur",
+      "Oxydant",
+      "Catalyseur nécessairement"
+     ],
+     "rep": "Réducteur",
+     "expl": "Il cède des électrons."
+    },
+    {
+     "q": "Quelle quantité d’électrons pour 0,10 mol de Mg oxydé en Mg²⁺ ?",
+     "choix": [
+      "0,05 mol",
+      "0,20 mol",
+      "0,10 mol"
+     ],
+     "rep": "0,20 mol",
+     "expl": "Chaque atome cède deux électrons."
+    },
+    {
+     "q": "Quel exemple peut être oxydant ?",
+     "choix": [
+      "Un électron isolé donneur",
+      "Le magnésium cédant deux électrons",
+      "Le dioxygène"
+     ],
+     "rep": "Le dioxygène",
+     "expl": "Le dioxygène peut capter des électrons dans une réduction."
+    }
+   ],
+   "id": "REV-PC-TLE-30"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Constante d’acidité et pKₐ",
+   "emoji": "⚖️",
+   "en_une_phrase": "La constante d’acidité caractérise l’équilibre d’un couple acide-base à température donnée.",
+   "comprendre": "Pour AH + H₂O ⇌ A⁻ + H₃O⁺, en solution diluée, Kₐ = ([A⁻]/c°)([H₃O⁺]/c°)/([AH]/c°). Le pKₐ vaut −log₁₀ Kₐ. À température identique, un pKₐ plus petit correspond à un acide plus fort parmi les couples comparés.",
+   "essentiel": [
+    "Kₐ est associé à la réaction de l’acide avec l’eau.",
+    "Les concentrations sont rapportées à c° = 1 mol·L⁻¹.",
+    "pKₐ = −log₁₀ Kₐ.",
+    "À température donnée, pKₐ plus faible → acide plus fort."
+   ],
+   "image_mentale": "Un équilibre favorise plus ou moins la cession d’un proton à l’eau.",
+   "regle_ou_methode": "Écrire l’équation, calculer Kₐ avec les concentrations à l’équilibre, puis prendre −log₁₀.",
+   "exemples": [
+    "Si Kₐ = 1,0 × 10⁻⁵, alors pKₐ = 5,0.",
+    "Si deux couples ont pKₐ = 3 et pKₐ = 5 à la même température, l’acide du premier couple est le plus fort."
+   ],
+   "piege": "Un acide fort ne signifie pas nécessairement une solution concentrée.",
+   "astuce_memoire": "pKₐ faible → Kₐ grand → acide plus fort.",
+   "quiz": [
+    {
+     "q": "Quel pKₐ correspond à Kₐ = 10⁻⁴ ?",
+     "choix": [
+      "−4",
+      "4",
+      "10⁻⁴"
+     ],
+     "rep": "4",
+     "expl": "pKₐ = −log₁₀(10⁻⁴) = 4."
+    },
+    {
+     "q": "À même température, quel acide est le plus fort ?",
+     "choix": [
+      "Celui du couple de pKₐ 6",
+      "Les deux sont nécessairement identiques",
+      "Celui du couple de pKₐ 3"
+     ],
+     "rep": "Celui du couple de pKₐ 3",
+     "expl": "Le pKₐ le plus faible correspond au Kₐ le plus élevé."
+    },
+    {
+     "q": "Quelles concentrations interviennent dans l’expression de Kₐ ?",
+     "choix": [
+      "Les concentrations à l’équilibre dans le modèle dilué",
+      "Les concentrations initiales dans tous les cas",
+      "Uniquement la concentration du solvant pur"
+     ],
+     "rep": "Les concentrations à l’équilibre dans le modèle dilué",
+     "expl": "Le quotient est évalué à l’équilibre."
+    }
+   ],
+   "id": "REV-PC-TLE-31"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Acides forts, acides faibles et produit ionique",
+   "emoji": "💧",
+   "en_une_phrase": "La force d’un acide décrit sa réaction avec l’eau, tandis que sa concentration décrit la quantité apportée.",
+   "comprendre": "Un acide fort réagit de façon quasi totale avec l’eau ; un acide faible réagit partiellement dans les conditions du modèle. À 25 °C, le produit ionique de l’eau vérifie ([H₃O⁺]/c°)([HO⁻]/c°) = 10⁻¹⁴. On compare les solutions dans les mêmes conditions de température et de concentration.",
+   "essentiel": [
+    "Acide fort : réaction quasi totale avec l’eau.",
+    "Acide faible : réaction limitée avec l’eau.",
+    "À 25 °C : Kₑ = 10⁻¹⁴ dans le modèle dilué.",
+    "La force d’un acide n’est pas sa concentration."
+   ],
+   "image_mentale": "Dans les conditions considérées, le transfert de proton vers l’eau est quasi total pour un acide fort et limité pour un acide faible.",
+   "regle_ou_methode": "Identifier la force, vérifier les hypothèses puis appliquer les relations de concentration.",
+   "exemples": [
+    "Pour une solution diluée d’acide fort monoprotique à 10⁻² mol·L⁻¹, en négligeant l’autoprotolyse de l’eau, [H₃O⁺] ≈ 10⁻² mol·L⁻¹ et pH ≈ 2.",
+    "À 25 °C, si [H₃O⁺] = 10⁻⁴ mol·L⁻¹, alors [HO⁻] = 10⁻¹⁰ mol·L⁻¹ dans le modèle dilué."
+   ],
+   "piege": "À très faible concentration, l’autoprotolyse de l’eau ne peut pas toujours être négligée.",
+   "astuce_memoire": "Force : réaction avec l’eau ; concentration : quantité apportée.",
+   "quiz": [
+    {
+     "q": "Que signifie acide fort dans l’eau ?",
+     "choix": [
+      "Sa solution est toujours très concentrée",
+      "Sa réaction avec l’eau est toujours négligeable",
+      "Sa réaction avec l’eau est quasi totale"
+     ],
+     "rep": "Sa réaction avec l’eau est quasi totale",
+     "expl": "La force concerne le degré de réaction avec l’eau."
+    },
+    {
+     "q": "À 25 °C, si [H₃O⁺] = 10⁻³ mol·L⁻¹, quelle est [HO⁻] dans le modèle dilué ?",
+     "choix": [
+      "10⁻¹¹ mol·L⁻¹",
+      "10⁻³ mol·L⁻¹",
+      "10⁻¹⁷ mol·L⁻¹"
+     ],
+     "rep": "10⁻¹¹ mol·L⁻¹",
+     "expl": "Le produit des valeurs numériques en mol·L⁻¹ vaut 10⁻¹⁴."
+    },
+    {
+     "q": "Une solution diluée d’acide fort est-elle nécessairement concentrée ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, par définition du mot fort"
+     ],
+     "rep": "Non",
+     "expl": "Force et concentration sont deux notions distinctes."
+    }
+   ],
+   "id": "REV-PC-TLE-32"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Prédominance et diagrammes acide-base",
+   "emoji": "🔀",
+   "en_une_phrase": "Le pH comparé au pKₐ indique quelle forme d’un couple acide-base prédomine.",
+   "comprendre": "Pour un couple AH/A⁻ en solution diluée, pH = pKₐ + log₁₀([A⁻]/[AH]). Si pH < pKₐ, la forme acide prédomine ; si pH > pKₐ, la forme basique prédomine. À pH = pKₐ, les concentrations des deux formes sont égales.",
+   "essentiel": [
+    "pH < pKₐ : AH prédomine.",
+    "pH > pKₐ : A⁻ prédomine.",
+    "pH = pKₐ : [AH] = [A⁻].",
+    "Prédominer ne signifie pas que l’autre espèce est absente."
+   ],
+   "image_mentale": "Une frontière à pKₐ sépare les domaines de prédominance.",
+   "regle_ou_methode": "Comparer pH et pKₐ, puis déterminer le rapport des concentrations si nécessaire.",
+   "exemples": [
+    "Pour pKₐ = 4,8 et pH = 3,8, pH < pKₐ : AH prédomine et [A⁻]/[AH] = 10⁻¹ = 0,10.",
+    "Pour pH = pKₐ, le logarithme du rapport vaut 0 : [A⁻]/[AH] = 1."
+   ],
+   "piege": "À pH = pKₐ, les deux espèces sont en proportions égales ; aucune ne prédomine.",
+   "astuce_memoire": "À gauche de pKₐ : acide ; à droite : base.",
+   "quiz": [
+    {
+     "q": "Si pH = 3 et pKₐ = 5, quelle espèce prédomine ?",
+     "choix": [
+      "AH",
+      "A⁻",
+      "Les deux sont nécessairement absentes"
+     ],
+     "rep": "AH",
+     "expl": "Le pH est inférieur au pKₐ."
+    },
+    {
+     "q": "Que vaut [A⁻]/[AH] si pH = pKₐ + 1 ?",
+     "choix": [
+      "0,1",
+      "10",
+      "1"
+     ],
+     "rep": "10",
+     "expl": "Le logarithme du rapport vaut 1."
+    },
+    {
+     "q": "Que se passe-t-il si pH = pKₐ ?",
+     "choix": [
+      "Seule la forme acide existe",
+      "Seule la forme basique existe",
+      "Les concentrations de AH et A⁻ sont égales"
+     ],
+     "rep": "Les concentrations de AH et A⁻ sont égales",
+     "expl": "Le rapport des deux concentrations vaut 1."
+    }
+   ],
+   "id": "REV-PC-TLE-33"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Acide faible : pH et taux final",
+   "emoji": "📉",
+   "en_une_phrase": "Le pH permet d’estimer la proportion d’un acide faible transformée par réaction avec l’eau.",
+   "comprendre": "Pour AH + H₂O ⇌ A⁻ + H₃O⁺, si l’acide est seul apporté et l’autoprotolyse de l’eau négligeable, [A⁻]ᶠ ≈ [H₃O⁺]ᶠ. Avec une concentration initiale c et un volume constant, τ ≈ [H₃O⁺]ᶠ/c.",
+   "essentiel": [
+    "Déduire [H₃O⁺] du pH.",
+    "La relation approchée suppose l’autoprotolyse de l’eau négligeable.",
+    "[AH]ᶠ ≈ c − [A⁻]ᶠ.",
+    "Comparer τ à 1 pour apprécier le caractère non total."
+   ],
+   "image_mentale": "Une partie seulement de l’acide initial a cédé son proton à l’eau.",
+   "regle_ou_methode": "Calculer la concentration finale en H₃O⁺, le taux, puis éventuellement Kₐ.",
+   "exemples": [
+    "Pour c = 0,010 mol·L⁻¹ et pH = 3, [H₃O⁺] = 0,0010 mol·L⁻¹ ; τ ≈ 0,0010/0,010 = 0,10, soit 10 %.",
+    "Dans ce même exemple, [AH]ᶠ ≈ 0,0090 mol·L⁻¹ et Kₐ ≈ 0,0010²/0,0090 = 1,1 × 10⁻⁴ avec les rapports à c°."
+   ],
+   "piege": "Cette méthode ne convient pas sans correction si d’autres espèces apportent H₃O⁺ de manière significative.",
+   "astuce_memoire": "H₃O⁺ issu de AH : taux ≈ concentration finale / concentration initiale.",
+   "quiz": [
+    {
+     "q": "Pour c = 0,010 mol·L⁻¹ et pH = 3, quel taux approché obtient-on si les hypothèses de la fiche sont valables ?",
+     "choix": [
+      "1 %",
+      "10 %",
+      "100 %"
+     ],
+     "rep": "10 %",
+     "expl": "[H₃O⁺] = 0,0010 mol·L⁻¹, soit un dixième de c."
+    },
+    {
+     "q": "Quelle concentration d’acide reste approximativement dans cet exemple ?",
+     "choix": [
+      "0,0010 mol·L⁻¹",
+      "0,010 mol·L⁻¹",
+      "0,0090 mol·L⁻¹"
+     ],
+     "rep": "0,0090 mol·L⁻¹",
+     "expl": "Il reste c − [A⁻] ≈ 0,010 − 0,0010."
+    },
+    {
+     "q": "Quelle hypothèse permet de prendre [A⁻]ᶠ ≈ [H₃O⁺]ᶠ ?",
+     "choix": [
+      "L’autoprotolyse de l’eau est négligeable et AH est seul apporté",
+      "L’eau est absente",
+      "La solution est toujours neutre"
+     ],
+     "rep": "L’autoprotolyse de l’eau est négligeable et AH est seul apporté",
+     "expl": "On attribue alors essentiellement à AH les ions H₃O⁺ mesurés."
+    }
+   ],
+   "id": "REV-PC-TLE-34"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Acides alpha-aminés et prédominance",
+   "emoji": "🧬",
+   "en_une_phrase": "Un acide alpha-aminé porte deux fonctions dont les états dépendent du pH.",
+   "comprendre": "Une même molécule peut porter un groupe acide et un groupe basique. Comme deux interrupteurs ayant des seuils différents, ces groupes changent d’état à des pH distincts.",
+   "essentiel": [
+    "La structure générale est R−CH(NH₂)−COOH, avec une amine portée par le carbone voisin du groupe carboxyle.",
+    "La forme peut être cationique, zwitterionique ou anionique.",
+    "Une forme zwitterionique porte des charges opposées avec une charge totale nulle.",
+    "Les pKₐ fournis permettent de tracer les domaines de prédominance."
+   ],
+   "image_mentale": "Une ligne de pH comporte deux frontières séparant trois formes.",
+   "regle_ou_methode": "Pour un exemple sans chaîne latérale ionisable, comparer le pH aux deux pKₐ fournis.",
+   "exemples": [
+    "Pour un modèle de glycine de pKₐ 2,3 et 9,6 : à pH 7, on est entre les seuils ; la forme H₃N⁺−CH₂−COO⁻ prédomine.",
+    "À pH 1 dans ce modèle, la forme H₃N⁺−CH₂−COOH prédomine et sa charge totale est +1."
+   ],
+   "piege": "Une charge totale nulle ne signifie pas que la molécule ne porte aucune charge locale.",
+   "astuce_memoire": "Entre les deux seuils : charges opposées.",
+   "quiz": [
+    {
+     "q": "Quelle est la charge totale de H₃N⁺−CH₂−COO⁻ ?",
+     "choix": [
+      "+1",
+      "−1",
+      "0"
+     ],
+     "rep": "0",
+     "expl": "Les charges +1 et −1 se compensent."
+    },
+    {
+     "q": "Avec des pKₐ de 2,3 et 9,6, quelle forme prédomine à pH 7 ?",
+     "choix": [
+      "La forme zwitterionique",
+      "La forme de charge totale +1",
+      "La forme de charge totale −1"
+     ],
+     "rep": "La forme zwitterionique",
+     "expl": "Le pH est compris entre les deux pKₐ."
+    },
+    {
+     "q": "À pH très élevé, les groupes tendent à être :",
+     "choix": [
+      "Tous protonés",
+      "Déprotonés",
+      "Détruits par définition"
+     ],
+     "rep": "Déprotonés",
+     "expl": "Une augmentation du pH favorise les formes moins protonées."
+    }
+   ],
+   "id": "REV-PC-TLE-35"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Solutions tampons",
+   "emoji": "🧫",
+   "en_une_phrase": "Une solution tampon limite les variations de pH lors d’ajouts modérés d’acide ou de base.",
+   "comprendre": "Un mélange contenant des quantités comparables d’un acide faible et de sa base conjuguée peut constituer une solution tampon. La base réagit avec une partie de l’acide ajouté et l’acide avec une partie de la base ajoutée. La capacité tampon est limitée : un ajout trop important modifie fortement le pH.",
+   "essentiel": [
+    "Un tampon contient souvent un couple acide faible/base conjuguée.",
+    "Le pH varie peu lors d’ajouts modérés d’acide ou de base.",
+    "La capacité tampon est limitée.",
+    "Pour des concentrations égales des deux formes, pH = pKₐ dans le modèle usuel."
+   ],
+   "image_mentale": "Deux espèces d’un couple amortissent chacune un type de perturbation.",
+   "regle_ou_methode": "Identifier les deux formes, le réactif ajouté et la réaction qui limite la variation.",
+   "exemples": [
+    "Dans un mélange AH/A⁻, un petit ajout de H₃O⁺ réagit avec A⁻ : A⁻ + H₃O⁺ → AH + H₂O. Le pH varie moins que dans l’eau pure à conditions comparables.",
+    "Si [A⁻] = [AH] dans le modèle dilué et pKₐ = 4,8, alors pH = 4,8."
+   ],
+   "piege": "Un tampon ne maintient pas exactement le même pH pour n’importe quelle quantité ajoutée.",
+   "astuce_memoire": "Un couple conjugué amortit, dans certaines limites.",
+   "quiz": [
+    {
+     "q": "Quel mélange peut constituer une solution tampon ?",
+     "choix": [
+      "Un acide faible et sa base conjuguée en quantités adaptées",
+      "Un acide fort seul à n’importe quelle concentration",
+      "De l’eau pure seule dans tous les cas"
+     ],
+     "rep": "Un acide faible et sa base conjuguée en quantités adaptées",
+     "expl": "Les deux formes d’un couple faible peuvent limiter des variations de pH."
+    },
+    {
+     "q": "Si [AH] = [A⁻], quel est le pH dans le modèle usuel ?",
+     "choix": [
+      "pH = 0 nécessairement",
+      "pH = pKₐ",
+      "pH = 14 nécessairement"
+     ],
+     "rep": "pH = pKₐ",
+     "expl": "Le rapport des concentrations vaut 1."
+    },
+    {
+     "q": "La capacité tampon est-elle illimitée ?",
+     "choix": [
+      "Oui, quel que soit l’ajout",
+      "Oui, si la solution est colorée",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Une quantité importante ajoutée finit par dépasser sa capacité."
+    }
+   ],
+   "id": "REV-PC-TLE-36"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Électrolyse : transformation forcée",
+   "emoji": "⚡",
+   "en_une_phrase": "Un générateur impose un courant pour provoquer une transformation chimique non spontanée dans le sens choisi.",
+   "comprendre": "À l’anode d’un électrolyseur a lieu une oxydation ; à la cathode a lieu une réduction. Contrairement à la pile en décharge, l’anode de l’électrolyseur est reliée au pôle positif du générateur et la cathode au pôle négatif.",
+   "essentiel": [
+    "L’électrolyseur reçoit de l’énergie électrique.",
+    "Anode : oxydation, cathode : réduction.",
+    "Pour un courant constant : Q = IΔt et n(e⁻) = Q/F.",
+    "Les demi-équations et la stœchiométrie relient électrons et produits."
+   ],
+   "image_mentale": "Le générateur pousse le système dans le sens contraire à une évolution spontanée accessible.",
+   "regle_ou_methode": "Identifier les électrodes, calculer Q puis déduire la quantité de produit par la demi-équation.",
+   "exemples": [
+    "À I = 1,0 A pendant 1 930 s, Q = 1 930 C, donc n(e⁻) = 1 930/96 500 = 0,020 mol.",
+    "Si tous ces électrons réduisent Cu²⁺ selon Cu²⁺ + 2 e⁻ → Cu, n(Cu) = 0,010 mol ; avec M(Cu) = 63,5 g·mol⁻¹, m(Cu) = 0,635 g."
+   ],
+   "piege": "Anode et cathode gardent leurs définitions par réaction, mais leurs signes changent entre pile et électrolyseur.",
+   "astuce_memoire": "Réduction à la cathode, oxydation à l’anode.",
+   "quiz": [
+    {
+     "q": "Où a lieu la réduction dans un électrolyseur ?",
+     "choix": [
+      "À l’anode",
+      "À la cathode",
+      "Dans le générateur uniquement"
+     ],
+     "rep": "À la cathode",
+     "expl": "La réduction est toujours associée à la cathode."
+    },
+    {
+     "q": "Avec I = 1,0 A et Δt = 1 930 s, quelle charge passe ?",
+     "choix": [
+      "1,0 C",
+      "965 C",
+      "1 930 C"
+     ],
+     "rep": "1 930 C",
+     "expl": "Q = IΔt."
+    },
+    {
+     "q": "Pour 0,020 mol d’électrons entièrement utilisés par Cu²⁺ + 2 e⁻ → Cu, quelle quantité de cuivre se forme ?",
+     "choix": [
+      "0,010 mol",
+      "0,020 mol",
+      "0,040 mol"
+     ],
+     "rep": "0,010 mol",
+     "expl": "Deux moles d’électrons produisent une mole de cuivre."
+    }
+   ],
+   "id": "REV-PC-TLE-37"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Fonctions organiques et formules",
+   "emoji": "🧬",
+   "en_une_phrase": "Les groupes caractéristiques permettent de reconnaître les principales familles organiques.",
+   "comprendre": "Un alcool porte notamment le groupe hydroxyle −OH ; un acide carboxylique porte −COOH ; un ester comporte −COO− ; un amide comporte −C(=O)−N−. Une formule topologique omet habituellement les symboles C et les hydrogènes liés à ces carbones.",
+   "essentiel": [
+    "Ester : motif −C(=O)−O−.",
+    "Amide : motif −C(=O)−N−.",
+    "Amine : atome d’azote lié au squelette carboné, hors cas d’une fonction amide.",
+    "Une double liaison C=C traduit une insaturation."
+   ],
+   "image_mentale": "Un squelette carboné porte des groupes qui déterminent les familles.",
+   "regle_ou_methode": "Repérer les atomes liés au carbone du groupe puis comparer aux motifs usuels.",
+   "exemples": [
+    "CH₃COOCH₂CH₃ possède le groupe −COO− : c’est un ester.",
+    "CH₃CONH₂ possède le groupe −CONH₂ : c’est un amide ; il contient 2 atomes de carbone."
+   ],
+   "piege": "La présence d’oxygène ne suffit pas à identifier à elle seule une fonction.",
+   "astuce_memoire": "Ester : CO O ; amide : CO N.",
+   "quiz": [
+    {
+     "q": "À quelle famille appartient CH₃COOCH₂CH₃ ?",
+     "choix": [
+      "Aux amines",
+      "Aux alcools",
+      "Aux esters"
+     ],
+     "rep": "Aux esters",
+     "expl": "La molécule comporte le groupe ester −COO−."
+    },
+    {
+     "q": "Quel groupe caractérise un amide ?",
+     "choix": [
+      "−C(=O)−N−",
+      "−C(=O)−O−",
+      "−OH seul"
+     ],
+     "rep": "−C(=O)−N−",
+     "expl": "Un amide possède un azote lié au carbone du groupe carbonyle."
+    },
+    {
+     "q": "Quelle liaison caractérise une insaturation parmi ces choix ?",
+     "choix": [
+      "C−C uniquement",
+      "C=C",
+      "O−H uniquement"
+     ],
+     "rep": "C=C",
+     "expl": "Une double liaison carbone-carbone est une insaturation."
+    }
+   ],
+   "id": "REV-PC-TLE-38"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Isomères et squelettes carbonés",
+   "emoji": "🧩",
+   "en_une_phrase": "Des isomères de constitution possèdent la même formule brute mais des enchaînements d’atomes différents.",
+   "comprendre": "Le squelette carboné peut être linéaire, ramifié, cyclique ou insaturé. Pour comparer des isomères de constitution, on compte les atomes puis on compare leurs connexions et groupes caractéristiques.",
+   "essentiel": [
+    "Même formule brute, mais structure différente.",
+    "Une ramification modifie l’enchaînement des carbones.",
+    "Des isomères de constitution peuvent appartenir à des familles fonctionnelles différentes."
+   ],
+   "image_mentale": "Les mêmes briques assemblées dans un ordre différent.",
+   "regle_ou_methode": "Compter chaque type d’atome, puis vérifier que les enchaînements diffèrent.",
+   "exemples": [
+    "CH₃CH₂OH et CH₃OCH₃ ont tous deux pour formule brute C₂H₆O ; leurs liaisons diffèrent : ce sont des isomères de constitution.",
+    "CH₃CH₂CH₂CH₃ et CH₃CH(CH₃)CH₃ ont la formule C₄H₁₀ ; l’un est linéaire et l’autre ramifié."
+   ],
+   "piege": "Même formule brute ne signifie pas même molécule.",
+   "astuce_memoire": "Même comptage ; connexions différentes.",
+   "quiz": [
+    {
+     "q": "Quelle formule brute est commune à CH₃CH₂OH et CH₃OCH₃ ?",
+     "choix": [
+      "C₂H₆O",
+      "C₂H₄O",
+      "CH₄O"
+     ],
+     "rep": "C₂H₆O",
+     "expl": "Chaque molécule contient deux carbones, six hydrogènes et un oxygène."
+    },
+    {
+     "q": "Que faut-il pour deux isomères de constitution ?",
+     "choix": [
+      "Formules brutes différentes et mêmes connexions",
+      "Même formule brute et connexions différentes",
+      "Même nom mais nombres d’atomes différents"
+     ],
+     "rep": "Même formule brute et connexions différentes",
+     "expl": "La constitution concerne l’enchaînement des atomes."
+    },
+    {
+     "q": "Quel squelette est ramifié ?",
+     "choix": [
+      "CH₃CH₂CH₂CH₃",
+      "CH₃CH₂OH",
+      "CH₃CH(CH₃)CH₃"
+     ],
+     "rep": "CH₃CH(CH₃)CH₃",
+     "expl": "Le groupe CH₃ porté par le carbone central forme une branche."
+    }
+   ],
+   "id": "REV-PC-TLE-39"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Polymères et motif répété",
+   "emoji": "🧵",
+   "en_une_phrase": "Un polymère est constitué de macromolécules comportant la répétition de motifs.",
+   "comprendre": "Une polymérisation relie des unités issues de monomères. Dans une formule de polymère, le motif entre crochets indique la partie répétée ; l’indice n indique un nombre d’unités variable selon les chaînes.",
+   "essentiel": [
+    "Un monomère est une petite espèce susceptible de former un polymère.",
+    "Le motif de −[CH₂−CH₂]ₙ− est −CH₂−CH₂−.",
+    "Certains polymères sont naturels, d’autres synthétiques.",
+    "Une polymérisation peut modifier les liaisons des monomères."
+   ],
+   "image_mentale": "Une chaîne de maillons dont le même motif revient.",
+   "regle_ou_methode": "Identifier la portion répétée puis compter les atomes qu’elle contient.",
+   "exemples": [
+    "Le motif −CH₂−CH₂− contient 2 carbones et 4 hydrogènes : dix motifs contiennent 20 carbones et 40 hydrogènes, hors groupes d’extrémité.",
+    "La cellulose est un polymère naturel ; le polyéthylène est un polymère synthétique."
+   ],
+   "piege": "Les atomes des groupes d’extrémité ne sont pas inclus dans le seul comptage des motifs répétés.",
+   "astuce_memoire": "Motif entre crochets, répété n fois.",
+   "quiz": [
+    {
+     "q": "Combien de carbones contient un motif −CH₂−CH₂− ?",
+     "choix": [
+      "1",
+      "2",
+      "4"
+     ],
+     "rep": "2",
+     "expl": "Le motif comporte deux groupes CH₂."
+    },
+    {
+     "q": "Combien de carbones comportent dix de ces motifs, hors extrémités ?",
+     "choix": [
+      "10",
+      "40",
+      "20"
+     ],
+     "rep": "20",
+     "expl": "Dix motifs de deux carbones donnent vingt carbones."
+    },
+    {
+     "q": "Quel exemple est un polymère naturel ?",
+     "choix": [
+      "La cellulose",
+      "Le polyéthylène",
+      "Le dioxygène"
+     ],
+     "rep": "La cellulose",
+     "expl": "La cellulose est un polymère biologique."
+    }
+   ],
+   "id": "REV-PC-TLE-40"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Identifier les étapes d’une synthèse",
+   "emoji": "🔬",
+   "en_une_phrase": "Une synthèse organique combine transformation, séparation, purification et identification.",
+   "comprendre": "La transformation produit l’espèce recherchée ; la séparation l’isole du mélange, la purification réduit les impuretés et l’identification vérifie sa nature. Un chauffage à reflux accélère souvent la réaction tout en condensant les vapeurs, ce qui limite les pertes de matière volatile.",
+   "essentiel": [
+    "Le reflux associe chauffage et condensation des vapeurs.",
+    "Une extraction sépare des espèces selon leur solubilité.",
+    "Une purification réduit les impuretés.",
+    "Une mesure d’identité ne suffit pas toujours, seule, à prouver une pureté parfaite."
+   ],
+   "image_mentale": "Réagir, isoler, purifier, identifier : chaque étape répond à un objectif.",
+   "regle_ou_methode": "Relier chaque opération du protocole au rôle qu’elle remplit.",
+   "exemples": [
+    "Une espèce est synthétisée puis isolée dans un solvant approprié : le chauffage favorise ici la transformation ; l’extraction réalise la séparation.",
+    "Si le produit brut a une masse de 5,0 g et le produit après purification une masse de 4,0 g, la purification a retiré 1,0 g de matière au total ; cela ne prouve pas que toute la matière retirée était une impureté."
+   ],
+   "piege": "La masse perdue à la purification peut inclure du produit recherché.",
+   "astuce_memoire": "Transformer, séparer, purifier, identifier.",
+   "quiz": [
+    {
+     "q": "Quel rôle a le réfrigérant lors d’un chauffage à reflux ?",
+     "choix": [
+      "Supprimer toute réaction chimique",
+      "Garantir une pureté de 100 %",
+      "Condenser les vapeurs et limiter les pertes"
+     ],
+     "rep": "Condenser les vapeurs et limiter les pertes",
+     "expl": "Les vapeurs se condensent et retournent dans le milieu."
+    },
+    {
+     "q": "Quel est l’objectif principal d’une purification ?",
+     "choix": [
+      "Réduire les impuretés du produit",
+      "Ajouter systématiquement un nouveau réactif",
+      "Mesurer la tension électrique"
+     ],
+     "rep": "Réduire les impuretés du produit",
+     "expl": "La purification vise à isoler davantage l’espèce recherchée."
+    },
+    {
+     "q": "Un produit brut de 5,0 g donne 4,0 g après purification. Quelle masse totale a été retirée ?",
+     "choix": [
+      "4,0 g",
+      "1,0 g",
+      "9,0 g"
+     ],
+     "rep": "1,0 g",
+     "expl": "5,0 − 4,0 = 1,0 g."
+    }
+   ],
+   "id": "REV-PC-TLE-41"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Rendement et optimisation de synthèse",
+   "emoji": "🎯",
+   "en_une_phrase": "Le rendement compare la quantité de produit pur isolé à la quantité maximale théorique.",
+   "comprendre": "Pour une même espèce, η = n(produit isolé)/n(produit théorique) ; le calcul peut aussi se faire avec les masses. Pour une réaction équilibrée et non totale, mettre un réactif en excès ou retirer un produit peut favoriser la formation du produit recherché.",
+   "essentiel": [
+    "Déterminer le réactif limitant avant le rendement théorique.",
+    "η est sans unité et souvent exprimé en pourcentage.",
+    "Un catalyseur accélère l’atteinte de l’équilibre sans modifier K à température donnée.",
+    "L’excès d’un réactif peut entraîner des coûts ou des déchets supplémentaires."
+   ],
+   "image_mentale": "On compare le produit récupéré à la quantité maximale attendue.",
+   "regle_ou_methode": "Utiliser la stœchiométrie, calculer le maximum théorique puis le rapport obtenu/théorique.",
+   "exemples": [
+    "Si la masse théorique est 10,0 g et la masse isolée 7,5 g, η = 7,5/10,0 = 0,75, soit 75 %.",
+    "Pour A + B → P en supposant une conversion totale et des réactifs purs, 0,10 mol de A et 0,15 mol de B donnent au maximum 0,10 mol de P : A est limitant."
+   ],
+   "piege": "Catalyser peut réduire la durée sans augmenter à lui seul le rendement d’équilibre.",
+   "astuce_memoire": "Rendement = quantité isolée / quantité théorique.",
+   "quiz": [
+    {
+     "q": "Quel rendement pour 7,5 g isolés sur 10,0 g théoriques ?",
+     "choix": [
+      "75 %",
+      "25 %",
+      "133 %"
+     ],
+     "rep": "75 %",
+     "expl": "7,5/10,0 = 0,75."
+    },
+    {
+     "q": "Quel est le rôle d’un catalyseur dans une réaction réversible à température donnée ?",
+     "choix": [
+      "Modifier nécessairement K",
+      "Accélérer l’atteinte de l’équilibre sans modifier K",
+      "Être consommé définitivement par l’équation globale"
+     ],
+     "rep": "Accélérer l’atteinte de l’équilibre sans modifier K",
+     "expl": "Il modifie le chemin réactionnel sans modifier la constante d’équilibre."
+    },
+    {
+     "q": "Pour A + B → P, avec 0,10 mol de A et 0,15 mol de B, quel est le réactif limitant ?",
+     "choix": [
+      "B",
+      "P",
+      "A"
+     ],
+     "rep": "A",
+     "expl": "Les coefficients étant 1:1, la plus petite quantité initiale limite la transformation."
+    }
+   ],
+   "id": "REV-PC-TLE-42"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Séquences et types de réactions",
+   "emoji": "🛠️",
+   "en_une_phrase": "Une synthèse multi-étapes enchaîne des transformations choisies selon les groupes à modifier.",
+   "comprendre": "Une substitution remplace un atome ou groupe par un autre. Une addition fixe des éléments sur une liaison multiple ; une élimination forme notamment une liaison multiple par départ de groupes. Une banque de réactions fournie permet de construire la séquence.",
+   "essentiel": [
+    "Substitution : remplacement d’un groupe.",
+    "Addition : fixation sur une liaison multiple.",
+    "Élimination : départ de groupes et formation possible d’une liaison multiple.",
+    "Une séquence peut modifier une fonction ou le squelette carboné."
+   ],
+   "image_mentale": "Une succession d’outils transforme progressivement la molécule initiale.",
+   "regle_ou_methode": "Comparer liaisons et groupes avant et après chaque étape, puis identifier les changements.",
+   "exemples": [
+    "CH₂=CH₂ + H₂ → CH₃−CH₃ : la liaison double devient simple et deux hydrogènes sont ajoutés ; c’est une addition.",
+    "CH₃−CH₂−Br + HO⁻ → CH₃−CH₂−OH + Br⁻ : le groupe Br est remplacé par OH ; c’est une substitution."
+   ],
+   "piege": "Identifier le changement dans l’équation, pas seulement la présence d’un réactif.",
+   "astuce_memoire": "Addition : double liaison ouverte ; substitution : groupe remplacé.",
+   "quiz": [
+    {
+     "q": "CH₂=CH₂ + H₂ → CH₃−CH₃ est une :",
+     "choix": [
+      "Substitution",
+      "Addition",
+      "Élimination"
+     ],
+     "rep": "Addition",
+     "expl": "Les hydrogènes s’ajoutent sur la liaison double."
+    },
+    {
+     "q": "Si un groupe Br est remplacé par OH, il s’agit d’une :",
+     "choix": [
+      "Addition sur un noyau atomique",
+      "Fission nucléaire",
+      "Substitution"
+     ],
+     "rep": "Substitution",
+     "expl": "Un groupe est remplacé par un autre."
+    },
+    {
+     "q": "Quelle transformation peut former une liaison double par départ de groupes ?",
+     "choix": [
+      "Une élimination",
+      "Une simple dilution",
+      "Une filtration"
+     ],
+     "rep": "Une élimination",
+     "expl": "L’élimination peut créer une insaturation."
+    }
+   ],
+   "id": "REV-PC-TLE-43"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Protection et déprotection",
+   "emoji": "🛡️",
+   "en_une_phrase": "Une protection temporaire empêche un groupe réactif de participer à une étape non désirée.",
+   "comprendre": "Une molécule comportant plusieurs fonctions peut réagir à plusieurs endroits. On protège sélectivement une fonction, on transforme une autre partie, puis on déprotège pour retrouver la fonction initiale. Chaque étape supplémentaire peut aussi générer des pertes et des déchets.",
+   "essentiel": [
+    "Protection : rendre une fonction temporairement moins réactive.",
+    "Transformation : agir sur une autre partie de la molécule.",
+    "Déprotection : retrouver la fonction initiale.",
+    "Il faut comparer la sélectivité obtenue aux coûts et pertes supplémentaires."
+   ],
+   "image_mentale": "Un capuchon protège un groupe pendant que l’on travaille ailleurs.",
+   "regle_ou_methode": "Repérer la fonction masquée, l’étape utile et la restitution de la fonction.",
+   "exemples": [
+    "Une molécule possède deux fonctions A et B. Si une réaction visée transforme A mais risquerait aussi de modifier B, protéger B avant la réaction puis la déprotéger peut améliorer la sélectivité.",
+    "Si deux étapes successives ont chacune un rendement de 80 %, leur rendement global est 0,80 × 0,80 = 0,64, soit 64 %, en l’absence d’autres pertes."
+   ],
+   "piege": "Une protection est une stratégie contextuelle, pas une garantie de rendement global maximal.",
+   "astuce_memoire": "Protéger, transformer ailleurs, déprotéger.",
+   "quiz": [
+    {
+     "q": "Pourquoi protéger une fonction B avant une réaction sur A ?",
+     "choix": [
+      "Pour supprimer définitivement B",
+      "Pour rendre toutes les étapes inutiles",
+      "Pour limiter une réaction indésirable sur B"
+     ],
+     "rep": "Pour limiter une réaction indésirable sur B",
+     "expl": "La protection masque temporairement la fonction sensible."
+    },
+    {
+     "q": "Que fait la déprotection ?",
+     "choix": [
+      "Elle restitue la fonction protégée",
+      "Elle inverse obligatoirement toutes les réactions précédentes",
+      "Elle transforme toute matière en produit final pur"
+     ],
+     "rep": "Elle restitue la fonction protégée",
+     "expl": "Elle retire le groupe protecteur afin de retrouver la fonction."
+    },
+    {
+     "q": "Deux étapes ont des rendements de 80 % chacune. Quel rendement global idéal obtient-on ?",
+     "choix": [
+      "160 %",
+      "64 %",
+      "80 %"
+     ],
+     "rep": "64 %",
+     "expl": "0,80 × 0,80 = 0,64."
+    }
+   ],
+   "id": "REV-PC-TLE-44"
+  },
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Choix d’une synthèse écoresponsable",
+   "emoji": "🌱",
+   "en_une_phrase": "Comparer des synthèses suppose d’examiner rendement, énergie, réactifs, solvants et déchets.",
+   "comprendre": "Un rendement élevé est utile mais ne suffit pas à établir qu’un protocole a l’impact le plus faible. Il faut comparer les procédés pour une même quantité de produit et prendre en compte notamment la toxicité des substances, la dépense énergétique et les sous-produits.",
+   "essentiel": [
+    "Comparer des quantités de produit identiques.",
+    "Réduire la quantité ou la dangerosité des solvants peut améliorer un protocole.",
+    "La récupération ou la valorisation de sous-produits peut limiter certains déchets.",
+    "L’impact dépend de l’ensemble des données disponibles."
+   ],
+   "image_mentale": "Une grille compare plusieurs critères pour un même service rendu.",
+   "regle_ou_methode": "Fixer l’unité de comparaison, relever les données puis discuter les compromis sans conclure trop vite.",
+   "exemples": [
+    "Pour produire 10 g du même composé, le protocole A utilise 50 mL de solvant et B 20 mL : B utilise 30 mL de moins, mais sa toxicité et ses autres impacts restent à examiner.",
+    "Si une réaction fournit 8 g de produit isolé sur 10 g théoriques, son rendement est 80 % ; cela ne suffit pas à déterminer l’impact environnemental total."
+   ],
+   "piege": "La diminution d’un seul indicateur ne prouve pas à elle seule que tous les impacts diminuent.",
+   "astuce_memoire": "Même produit, plusieurs critères.",
+   "quiz": [
+    {
+     "q": "Deux procédés donnent chacun 10 g ; A utilise 50 mL et B 20 mL de solvant. Combien B utilise-t-il de moins ?",
+     "choix": [
+      "30 mL",
+      "70 mL",
+      "2,5 mL"
+     ],
+     "rep": "30 mL",
+     "expl": "50 − 20 = 30 mL."
+    },
+    {
+     "q": "Un rendement élevé suffit-il à prouver un impact environnemental minimal ?",
+     "choix": [
+      "Oui, toujours",
+      "Non, il faut considérer d’autres critères",
+      "Oui, sans connaître les solvants"
+     ],
+     "rep": "Non, il faut considérer d’autres critères",
+     "expl": "Les risques, déchets et besoins énergétiques comptent aussi."
+    },
+    {
+     "q": "Pour comparer deux procédés, quel point de départ convient ?",
+     "choix": [
+      "Des quantités de produit incompatibles sans correction",
+      "Le seul nom des réactifs",
+      "Un même service ou une même quantité de produit"
+     ],
+     "rep": "Un même service ou une même quantité de produit",
+     "expl": "Une base commune rend la comparaison interprétable."
+    }
+   ],
+   "id": "REV-PC-TLE-45"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Position, vitesse et accélération",
+   "emoji": "📍",
+   "en_une_phrase": "La vitesse est la dérivée de la position et l’accélération celle de la vitesse.",
+   "comprendre": "On décrit le mouvement dans un référentiel et un repère choisis. Les coordonnées de ces vecteurs se calculent en dérivant celles de la position par rapport au temps.",
+   "essentiel": [
+    "v = dOM/dt et a = dv/dt, sous forme vectorielle.",
+    "En coordonnées cartésiennes : vₓ = dx/dt et aₓ = dvₓ/dt.",
+    "La vitesse s’exprime en m·s⁻¹ et l’accélération en m·s⁻²."
+   ],
+   "image_mentale": "La position indique où est le mobile ; ses dérivées décrivent son évolution.",
+   "regle_ou_methode": "Dériver chaque coordonnée une première fois pour la vitesse, puis une seconde pour l’accélération.",
+   "exemples": [
+    "Si x(t) = 2t² + 3t en mètres, alors vₓ(t) = 4t + 3 m·s⁻¹ et aₓ = 4 m·s⁻² ; à t = 2 s, vₓ = 11 m·s⁻¹.",
+    "Si x(t) = 5t en mètres, vₓ = 5 m·s⁻¹ et aₓ = 0."
+   ],
+   "piege": "Une accélération non nulle peut changer la direction de la vitesse sans changer sa valeur.",
+   "astuce_memoire": "Position, vitesse, accélération : deux dérivations successives.",
+   "quiz": [
+    {
+     "q": "Quelle est l’unité SI de l’accélération ?",
+     "choix": [
+      "m·s⁻¹",
+      "m·s⁻²",
+      "N·s"
+     ],
+     "rep": "m·s⁻²",
+     "expl": "Une accélération est une variation de vitesse par unité de temps."
+    },
+    {
+     "q": "Si x(t) = t² en unités SI, que vaut vₓ à t = 3 s ?",
+     "choix": [
+      "9 m·s⁻¹",
+      "3 m·s⁻¹",
+      "6 m·s⁻¹"
+     ],
+     "rep": "6 m·s⁻¹",
+     "expl": "vₓ = 2t, donc 6 m·s⁻¹."
+    },
+    {
+     "q": "Si le vecteur vitesse est constant, le vecteur accélération est :",
+     "choix": [
+      "nul",
+      "constant et forcément non nul",
+      "égal à la vitesse"
+     ],
+     "rep": "nul",
+     "expl": "La dérivée d’un vecteur constant est nulle."
+    }
+   ],
+   "id": "REV-PC-TLE-46"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Mouvement rectiligne uniformément accéléré",
+   "emoji": "🚗",
+   "en_une_phrase": "En mouvement rectiligne uniformément accéléré, la composante de l’accélération est constante.",
+   "comprendre": "Sur un axe fixe, les équations horaires s’obtiennent en intégrant l’accélération puis la vitesse. Le signe de l’accélération dépend de l’orientation de l’axe.",
+   "essentiel": [
+    "aₓ = a constant.",
+    "vₓ(t) = v₀ₓ + at.",
+    "x(t) = x₀ + v₀ₓt + at²/2.",
+    "Une accélération négative ne signifie pas toujours que la vitesse diminue."
+   ],
+   "image_mentale": "Une vitesse vectorielle évolue régulièrement dans le temps.",
+   "regle_ou_methode": "Choisir le sens positif, écrire les conditions initiales et appliquer les équations.",
+   "exemples": [
+    "Avec x₀ = 0, v₀ₓ = 2 m·s⁻¹ et a = 3 m·s⁻², après 2 s : vₓ = 2 + 3 × 2 = 8 m·s⁻¹ et x = 2 × 2 + 3 × 2²/2 = 10 m.",
+    "Si vₓ = −2 m·s⁻¹ et a = −1 m·s⁻², le mobile va de plus en plus vite dans le sens négatif."
+   ],
+   "piege": "Ne pas confondre une composante négative de l’accélération avec un ralentissement.",
+   "astuce_memoire": "Position : vitesse initiale fois temps plus moitié de a fois temps carré.",
+   "quiz": [
+    {
+     "q": "Si v₀ = 0 et a = 2 m·s⁻², que vaut v au bout de 3 s ?",
+     "choix": [
+      "3 m·s⁻¹",
+      "9 m·s⁻¹",
+      "6 m·s⁻¹"
+     ],
+     "rep": "6 m·s⁻¹",
+     "expl": "v = at = 6 m·s⁻¹."
+    },
+    {
+     "q": "Pour x₀ = 0, v₀ = 0 et a = 2 m·s⁻², quelle est x à 2 s ?",
+     "choix": [
+      "4 m",
+      "2 m",
+      "8 m"
+     ],
+     "rep": "4 m",
+     "expl": "x = at²/2 = 4 m."
+    },
+    {
+     "q": "Une accélération négative impose-t-elle un ralentissement ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Oui, si la vitesse est négative"
+     ],
+     "rep": "Non",
+     "expl": "Si la vitesse et l’accélération sont négatives, la valeur de la vitesse augmente."
+    }
+   ],
+   "id": "REV-PC-TLE-47"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Repère de Frenet et mouvement circulaire",
+   "emoji": "⭕",
+   "en_une_phrase": "En mouvement circulaire, l’accélération possède une composante dirigée vers le centre.",
+   "comprendre": "Le vecteur tangent est orienté dans le sens du mouvement et la normale vers le centre du cercle. Même à vitesse constante, la direction du vecteur vitesse change.",
+   "essentiel": [
+    "Pour une trajectoire circulaire de rayon R : a = (dv/dt)t + (v²/R)n, sous forme vectorielle.",
+    "La composante normale vaut v²/R et pointe vers le centre.",
+    "En mouvement circulaire uniforme, dv/dt = 0 mais a n’est pas nulle si v > 0.",
+    "En mouvement circulaire uniforme, la valeur de la vitesse vaut v = 2πR/T."
+   ],
+   "image_mentale": "À chaque instant la vitesse suit la tangente, l’accélération normale pointe vers l’intérieur.",
+   "regle_ou_methode": "Calculer la vitesse, puis la composante normale et, si nécessaire, la composante tangentielle.",
+   "exemples": [
+    "Pour R = 2 m et v = 4 m·s⁻¹ constante, a = v²/R = 16/2 = 8 m·s⁻² vers le centre.",
+    "Pour un tour uniforme en 2 s sur un cercle de rayon 1 m, v = π m·s⁻¹."
+   ],
+   "piege": "Mouvement uniforme ne signifie pas accélération nulle si la trajectoire est courbe.",
+   "astuce_memoire": "Cercle uniforme : accélération centripète v²/R.",
+   "quiz": [
+    {
+     "q": "Où pointe l’accélération en mouvement circulaire uniforme ?",
+     "choix": [
+      "Vers le centre",
+      "Dans le sens de la vitesse",
+      "À l’opposé du centre"
+     ],
+     "rep": "Vers le centre",
+     "expl": "Elle est centripète."
+    },
+    {
+     "q": "Pour v = 6 m·s⁻¹ et R = 3 m, quelle est la norme de l’accélération normale ?",
+     "choix": [
+      "2 m·s⁻²",
+      "12 m·s⁻²",
+      "18 m·s⁻²"
+     ],
+     "rep": "12 m·s⁻²",
+     "expl": "v²/R = 36/3 = 12."
+    },
+    {
+     "q": "En mouvement circulaire uniforme, la composante tangentielle de l’accélération vaut :",
+     "choix": [
+      "v²/R",
+      "v/R",
+      "0"
+     ],
+     "rep": "0",
+     "expl": "La valeur de la vitesse est constante."
+    }
+   ],
+   "id": "REV-PC-TLE-48"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Deuxième loi de Newton et équilibre",
+   "emoji": "⚖️",
+   "en_une_phrase": "Dans un référentiel galiléen, la somme des forces extérieures vaut la masse fois l’accélération du centre de masse.",
+   "comprendre": "Le centre de masse représente le mouvement global du système. La loi s’applique à un système de masse constante dans un référentiel galiléen ou approximativement galiléen pour l’étude envisagée.",
+   "essentiel": [
+    "ΣF extérieures = m a du centre de masse, en vecteurs.",
+    "Le newton N est l’unité SI de force.",
+    "Si la somme des forces est nulle, le centre de masse est au repos ou en mouvement rectiligne uniforme.",
+    "Un référentiel terrestre peut être supposé galiléen pour de nombreuses expériences courtes à petite échelle."
+   ],
+   "image_mentale": "Les forces extérieures déterminent la variation du mouvement global.",
+   "regle_ou_methode": "Définir le système et le référentiel, dresser le bilan des forces, projeter la loi et calculer.",
+   "exemples": [
+    "Sur un système de masse 2 kg, une résultante horizontale de 6 N donne a = 6/2 = 3 m·s⁻² dans son sens.",
+    "Un objet immobile sur une table horizontale a un poids et une réaction qui se compensent."
+   ],
+   "piege": "Des forces qui se compensent n’imposent pas que la vitesse soit nulle.",
+   "astuce_memoire": "Somme des forces égale masse fois accélération.",
+   "quiz": [
+    {
+     "q": "Pour m = 4 kg et une résultante de norme 8 N, quelle est la norme de l’accélération ?",
+     "choix": [
+      "32 m·s⁻²",
+      "2 m·s⁻²",
+      "0,5 m·s⁻²"
+     ],
+     "rep": "2 m·s⁻²",
+     "expl": "a = F/m = 8/4."
+    },
+    {
+     "q": "Si la résultante est nulle dans un référentiel galiléen, la vitesse du centre de masse est :",
+     "choix": [
+      "nécessairement nulle",
+      "nécessairement croissante",
+      "constante"
+     ],
+     "rep": "constante",
+     "expl": "L’accélération est nulle."
+    },
+    {
+     "q": "Quelles forces figurent dans la somme de la deuxième loi appliquée à un système ?",
+     "choix": [
+      "Les forces extérieures",
+      "Uniquement les forces internes",
+      "Uniquement son poids"
+     ],
+     "rep": "Les forces extérieures",
+     "expl": "La loi porte sur les actions extérieures au système."
+    }
+   ],
+   "id": "REV-PC-TLE-49"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Chute libre et trajectoire parabolique",
+   "emoji": "🏀",
+   "en_une_phrase": "Dans un champ de pesanteur uniforme, un projectile soumis à son seul poids a une accélération constante vers le bas.",
+   "comprendre": "On néglige les frottements de l’air et on travaille dans un référentiel terrestre supposé galiléen. Avec x horizontal et z vertical vers le haut, le mouvement est plan et l’accélération vaut (0 ; −g).",
+   "essentiel": [
+    "x(t) = x₀ + v₀ₓt.",
+    "z(t) = z₀ + v₀zt − gt²/2.",
+    "Si v₀ₓ ≠ 0, la trajectoire z(x) est parabolique.",
+    "Près du sol terrestre, g est environ 9,81 m·s⁻²."
+   ],
+   "image_mentale": "Le mouvement horizontal est uniforme tandis que la chute accélère verticalement.",
+   "regle_ou_methode": "Décomposer la vitesse initiale, écrire les équations horaires, puis éliminer t si nécessaire.",
+   "exemples": [
+    "Avec g = 10 m·s⁻², x₀ = z₀ = 0, v₀ₓ = 4 m·s⁻¹ et v₀z = 5 m·s⁻¹ : x = 4t et z = 5t − 5t² ; à t = 1 s, x = 4 m et z = 0.",
+    "Lâché sans vitesse initiale, un objet tombe de 5 m en 1 s si g = 10 m·s⁻² et si les frottements sont négligés."
+   ],
+   "piege": "La composante horizontale de la vitesse reste constante, pas la norme de la vitesse.",
+   "astuce_memoire": "Horizontal uniforme ; vertical accéléré.",
+   "quiz": [
+    {
+     "q": "Dans le modèle de chute libre, quelle est l’accélération verticale si l’axe z monte ?",
+     "choix": [
+      "+g",
+      "0",
+      "−g"
+     ],
+     "rep": "−g",
+     "expl": "Le poids est dirigé vers le bas."
+    },
+    {
+     "q": "Sans frottement, quelle composante de la vitesse reste constante ?",
+     "choix": [
+      "La composante horizontale",
+      "La composante verticale",
+      "Toutes les composantes"
+     ],
+     "rep": "La composante horizontale",
+     "expl": "L’accélération horizontale est nulle."
+    },
+    {
+     "q": "Avec g = 10 m·s⁻², quelle distance parcourt en 1 s un objet lâché sans vitesse initiale ?",
+     "choix": [
+      "10 m",
+      "5 m",
+      "1 m"
+     ],
+     "rep": "5 m",
+     "expl": "La distance de chute est gt²/2."
+    }
+   ],
+   "id": "REV-PC-TLE-50"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Champ électrique uniforme et condensateur",
+   "emoji": "⚡",
+   "en_une_phrase": "Une particule chargée subit la force électrique qE dans un champ électrique.",
+   "comprendre": "Entre deux grandes plaques parallèles, le champ est approximativement uniforme loin des bords. Une particule de charge q et de masse m soumise uniquement à la force électrique a pour accélération vectorielle qE/m.",
+   "essentiel": [
+    "La force électrique est F = qE, sous forme vectorielle.",
+    "Une charge négative accélère en sens opposé au champ.",
+    "Entre plaques distantes de d, la norme du champ vaut E ≈ |U|/d loin des bords.",
+    "L’unité de E est V·m⁻¹ ou N·C⁻¹."
+   ],
+   "image_mentale": "Le signe de la charge décide du sens de la force par rapport au champ.",
+   "regle_ou_methode": "Déterminer la direction du champ, le signe de q, puis appliquer la deuxième loi de Newton.",
+   "exemples": [
+    "Pour |U| = 120 V et d = 0,030 m, E ≈ 120/0,030 = 4 000 V·m⁻¹. Pour q = 2,0 × 10⁻⁶ C, la force a pour norme qE = 8,0 × 10⁻³ N.",
+    "Avec la même norme de charge mais q négative, la force a la même norme et le sens opposé au champ."
+   ],
+   "piege": "La formule E = |U|/d donne une norme ; le sens dépend des potentiels.",
+   "astuce_memoire": "Charge positive : force dans le sens du champ.",
+   "quiz": [
+    {
+     "q": "Si la charge est négative, la force électrique est :",
+     "choix": [
+      "de sens opposé au champ",
+      "dans le même sens que le champ",
+      "toujours nulle"
+     ],
+     "rep": "de sens opposé au champ",
+     "expl": "F = qE avec q négatif."
+    },
+    {
+     "q": "Pour |U| = 100 V et d = 0,02 m, quelle est la norme du champ ?",
+     "choix": [
+      "2 V·m⁻¹",
+      "5 000 V·m⁻¹",
+      "50 V·m⁻¹"
+     ],
+     "rep": "5 000 V·m⁻¹",
+     "expl": "E = |U|/d."
+    },
+    {
+     "q": "Si seule la force électrique agit, quelle est l’accélération vectorielle ?",
+     "choix": [
+      "mE/q",
+      "q/(mE)",
+      "qE/m"
+     ],
+     "rep": "qE/m",
+     "expl": "La loi de Newton donne ma = qE."
+    }
+   ],
+   "id": "REV-PC-TLE-51"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Accélérateur et énergie d’une particule",
+   "emoji": "🔋",
+   "en_une_phrase": "Un champ électrique peut accélérer une particule chargée en lui transférant de l’énergie.",
+   "comprendre": "Un accélérateur linéaire utilise des champs électriques dirigés pour augmenter l’énergie cinétique de particules. Le travail de la force électrique dépend de la charge et de la différence de potentiel traversée.",
+   "essentiel": [
+    "Pour une charge q allant de A à B : ΔE cinétique = q(VA − VB) si seule la force électrique travaille.",
+    "L’énergie cinétique est Ec = mv²/2 en joules.",
+    "Une tension de 1 V correspond à 1 J par coulomb de charge.",
+    "Les champs d’un accélérateur peuvent être synchronisés avec le passage des particules."
+   ],
+   "image_mentale": "Une succession de zones accélératrices donne de l’énergie à chaque passage bien synchronisé.",
+   "regle_ou_methode": "Calculer le travail électrique puis utiliser la variation d’énergie cinétique.",
+   "exemples": [
+    "Une particule de charge q = 2,0 × 10⁻⁶ C traverse une différence VA − VB = 100 V, seule la force électrique travaillant : ΔEc = q(VA − VB) = 2,0 × 10⁻⁴ J.",
+    "Une particule de masse 2,0 × 10⁻³ kg à 10 m·s⁻¹ a une énergie cinétique de 0,10 J."
+   ],
+   "piege": "Le signe de q et celui de la différence de potentiel comptent dans le travail.",
+   "astuce_memoire": "Variation d’énergie cinétique : charge fois différence de potentiel.",
+   "quiz": [
+    {
+     "q": "Quelle est la formule de l’énergie cinétique ?",
+     "choix": [
+      "mv/2",
+      "mv²/2",
+      "mv²"
+     ],
+     "rep": "mv²/2",
+     "expl": "Elle dépend de la masse et du carré de la vitesse."
+    },
+    {
+     "q": "Pour q = 1 C et VA − VB = 2 V, quel est le travail électrique de A à B ?",
+     "choix": [
+      "0,5 J",
+      "2 N",
+      "2 J"
+     ],
+     "rep": "2 J",
+     "expl": "Le travail vaut q(VA − VB)."
+    },
+    {
+     "q": "Le rôle des champs électriques dans un accélérateur linéaire est notamment de :",
+     "choix": [
+      "transférer de l’énergie aux particules",
+      "annuler nécessairement leur charge",
+      "rendre toute masse nulle"
+     ],
+     "rep": "transférer de l’énergie aux particules",
+     "expl": "Le travail de la force électrique modifie l’énergie cinétique."
+    }
+   ],
+   "id": "REV-PC-TLE-52"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Énergie mécanique et mouvement",
+   "emoji": "🎢",
+   "en_une_phrase": "Lorsque seules des forces conservatives travaillent, l’énergie mécanique se conserve.",
+   "comprendre": "Dans un champ de pesanteur uniforme, on choisit une origine pour l’énergie potentielle de pesanteur. L’énergie mécanique est la somme des énergies cinétique et potentielle.",
+   "essentiel": [
+    "Ec = mv²/2 et Epp = mgz pour un axe z vertical ascendant et une origine choisie.",
+    "Em = Ec + Epp.",
+    "Sans travail de forces non conservatives, Em reste constante.",
+    "Le théorème de l’énergie cinétique relie ΔEc à la somme des travaux des forces."
+   ],
+   "image_mentale": "L’énergie peut passer de potentielle à cinétique sans que leur somme change.",
+   "regle_ou_methode": "Choisir les états initial et final, puis appliquer la conservation si ses conditions sont réunies.",
+   "exemples": [
+    "Une masse de 1 kg tombe de 5 m sans vitesse initiale ni frottement avec g = 10 m·s⁻² : la perte de Epp vaut 50 J ; Ec finale vaut 50 J ; v = √(2 × 50/1) = 10 m·s⁻¹.",
+    "Un objet de 2 kg situé à 3 m a Epp = 60 J pour g = 10 m·s⁻² et une origine de l’énergie au sol."
+   ],
+   "piege": "Avec des frottements dissipatifs, l’énergie mécanique ne se conserve pas en général.",
+   "astuce_memoire": "Sans dissipation : somme des énergies constante.",
+   "quiz": [
+    {
+     "q": "Quelle est l’énergie potentielle de 1 kg à 2 m, avec g = 10 m·s⁻² et origine au sol ?",
+     "choix": [
+      "5 J",
+      "2 J",
+      "20 J"
+     ],
+     "rep": "20 J",
+     "expl": "Epp = mgz = 20 J."
+    },
+    {
+     "q": "En chute sans frottement, quelle grandeur se conserve ?",
+     "choix": [
+      "L’énergie mécanique",
+      "L’énergie potentielle seule",
+      "La vitesse"
+     ],
+     "rep": "L’énergie mécanique",
+     "expl": "L’énergie potentielle se transforme en énergie cinétique."
+    },
+    {
+     "q": "Quel est le lien général donné par le théorème de l’énergie cinétique ?",
+     "choix": [
+      "Ec est toujours constante",
+      "ΔEc est la somme des travaux des forces",
+      "ΔEc est toujours nulle"
+     ],
+     "rep": "ΔEc est la somme des travaux des forces",
+     "expl": "Le travail des forces produit la variation d’énergie cinétique."
+    }
+   ],
+   "id": "REV-PC-TLE-53"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Gravitation et orbite circulaire",
+   "emoji": "🛰️",
+   "en_une_phrase": "La gravitation fournit la force centripète d’une orbite circulaire autour d’un astre.",
+   "comprendre": "Dans un référentiel centré sur l’astre et supposé galiléen, on modélise l’astre par une répartition de masse à symétrie sphérique et le satellite comme ponctuel ; on néglige les autres actions. La distance r est mesurée depuis le centre de l’astre, pas depuis sa surface.",
+   "essentiel": [
+    "La force gravitationnelle a pour norme F = GMm/r² et est attractive.",
+    "Pour une orbite circulaire, a = GM/r² vers le centre.",
+    "La vitesse orbitale vaut v = √(GM/r).",
+    "La période vérifie T² = 4π²r³/(GM)."
+   ],
+   "image_mentale": "La gravitation incurve sans cesse la trajectoire du satellite vers l’astre.",
+   "regle_ou_methode": "Égaler l’accélération centripète v²/r à GM/r², puis utiliser T = 2πr/v.",
+   "exemples": [
+    "Pour GM = 4,0 × 10¹⁴ m³·s⁻² et r = 1,0 × 10⁸ m : v² = 4,0 × 10⁶ m²·s⁻², donc v = 2,0 × 10³ m·s⁻¹.",
+    "Si r est multiplié par 4 pour le même astre, la vitesse circulaire est divisée par 2."
+   ],
+   "piege": "Le rayon orbital est la somme du rayon de l’astre et de l’altitude.",
+   "astuce_memoire": "Orbite circulaire : vitesse racine de GM/r.",
+   "quiz": [
+    {
+     "q": "Vers où pointe la force gravitationnelle exercée par l’astre sur le satellite ?",
+     "choix": [
+      "Vers le centre de l’astre",
+      "Dans le sens de la vitesse",
+      "À l’opposé de l’astre"
+     ],
+     "rep": "Vers le centre de l’astre",
+     "expl": "L’interaction gravitationnelle est attractive."
+    },
+    {
+     "q": "Si le rayon orbital est multiplié par 4 autour du même astre, la vitesse circulaire est :",
+     "choix": [
+      "multipliée par 2",
+      "divisée par 2",
+      "divisée par 4"
+     ],
+     "rep": "divisée par 2",
+     "expl": "v est inversement proportionnelle à la racine de r."
+    },
+    {
+     "q": "Pour une orbite circulaire, le rayon r est mesuré :",
+     "choix": [
+      "depuis sa surface",
+      "depuis le satellite voisin",
+      "depuis le centre de l’astre"
+     ],
+     "rep": "depuis le centre de l’astre",
+     "expl": "r est la distance entre les centres de l’astre et du satellite."
+    }
+   ],
+   "id": "REV-PC-TLE-54"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Lois de Kepler et satellites géostationnaires",
+   "emoji": "🌍",
+   "en_une_phrase": "Les lois de Kepler relient la forme, la vitesse et la période des orbites planétaires.",
+   "comprendre": "Dans le modèle képlérien, on considère un corps de masse négligeable devant celle de l’astre central, dans un référentiel supposé galiléen centré sur ce dernier. L’astre central est situé à un foyer de l’ellipse. La troisième loi compare les orbites autour du même astre central.",
+   "essentiel": [
+    "Première loi : l’orbite est une ellipse dont l’astre central occupe un foyer.",
+    "Deuxième loi : le rayon joignant l’astre à la planète balaie des aires égales en des temps égaux.",
+    "Troisième loi : T²/a³ est constant pour des orbites autour du même astre, a étant le demi-grand axe.",
+    "Un satellite géostationnaire suit une orbite circulaire équatoriale, dans le sens de rotation de la Terre, avec une période égale à la période de rotation propre de la Terre (jour sidéral, environ 23 h 56 min)."
+   ],
+   "image_mentale": "La planète balaie des secteurs d’aire égale pendant des durées égales.",
+   "regle_ou_methode": "Identifier le même astre central, comparer les demi-grands axes et utiliser le rapport T²/a³.",
+   "exemples": [
+    "Deux orbites autour d’un même astre ont a₂ = 4a₁ : T₂/T₁ = √(4³) = 8. Si T₁ = 2 jours, T₂ = 16 jours.",
+    "Selon la loi des aires, une planète sur orbite elliptique parcourt davantage de chemin près de l’astre pendant une même durée que lorsqu’elle en est éloignée."
+   ],
+   "piege": "Une période proche de 24 h seule ne suffit pas à rendre un satellite géostationnaire.",
+   "astuce_memoire": "Même astre : T² proportionnel à a³.",
+   "quiz": [
+    {
+     "q": "Qu’est-ce qui occupe un foyer de l’orbite elliptique ?",
+     "choix": [
+      "La planète en permanence",
+      "L’astre central",
+      "Le centre de l’ellipse nécessairement"
+     ],
+     "rep": "L’astre central",
+     "expl": "C’est la première loi de Kepler."
+    },
+    {
+     "q": "Si a est multiplié par 4 autour du même astre, la période est multipliée par :",
+     "choix": [
+      "4",
+      "2",
+      "8"
+     ],
+     "rep": "8",
+     "expl": "T est proportionnelle à a puissance 3/2."
+    },
+    {
+     "q": "Une orbite géostationnaire est notamment :",
+     "choix": [
+      "circulaire et équatoriale",
+      "polaire et circulaire",
+      "elliptique et polaire"
+     ],
+     "rep": "circulaire et équatoriale",
+     "expl": "Le satellite doit rester au-dessus du même point de l’équateur."
+    }
+   ],
+   "id": "REV-PC-TLE-55"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Poussée d’Archimède",
+   "emoji": "🛟",
+   "en_une_phrase": "Un fluide au repos exerce sur un corps immergé une poussée verticale vers le haut.",
+   "comprendre": "Dans un fluide homogène au repos sous pesanteur uniforme, les forces de pression sont globalement plus fortes sous l’objet. Si le fluide entoure la surface immergée, leur résultante est égale au poids du fluide déplacé et dirigée en sens opposé.",
+   "essentiel": [
+    "La poussée s’écrit Π = −ρfluide Vimmergé g, sous forme vectorielle.",
+    "Sa norme est Π = ρfluide Vimmergé g.",
+    "ρ est en kg·m⁻³, V en m³ et g en m·s⁻².",
+    "À l’équilibre d’un objet flottant soumis seulement à son poids et à la poussée, leurs normes sont égales."
+   ],
+   "image_mentale": "Le fluide pousse davantage sur la face inférieure que sur la face supérieure.",
+   "regle_ou_methode": "Déterminer le volume immergé et la masse volumique du fluide, puis multiplier par g.",
+   "exemples": [
+    "Un objet déplace 0,002 m³ d’eau de masse volumique 1 000 kg·m⁻³ : avec g = 10 m·s⁻², Π = 1 000 × 0,002 × 10 = 20 N vers le haut.",
+    "Un objet flottant au repos dont le poids vaut 12 N subit une poussée de 12 N si seules ces deux forces agissent."
+   ],
+   "piege": "Utiliser le volume immergé, pas forcément le volume total de l’objet.",
+   "astuce_memoire": "Poussée égale au poids du fluide déplacé.",
+   "quiz": [
+    {
+     "q": "Quelle est la direction de la poussée d’Archimède dans un liquide au repos ?",
+     "choix": [
+      "Verticale vers le bas",
+      "Toujours horizontale",
+      "Verticale vers le haut"
+     ],
+     "rep": "Verticale vers le haut",
+     "expl": "La résultante s’oppose au poids du fluide déplacé."
+    },
+    {
+     "q": "Pour ρ = 1 000 kg·m⁻³, V = 0,001 m³ et g = 10 m·s⁻², quelle est la poussée ?",
+     "choix": [
+      "10 N",
+      "1 N",
+      "100 N"
+     ],
+     "rep": "10 N",
+     "expl": "Π = ρVg = 10 N."
+    },
+    {
+     "q": "Pour calculer la poussée sur un objet partiellement immergé, quel volume utilise-t-on ?",
+     "choix": [
+      "Le volume total systématiquement",
+      "Le volume immergé",
+      "Le volume au-dessus du liquide"
+     ],
+     "rep": "Le volume immergé",
+     "expl": "Seul le fluide déplacé intervient."
+    }
+   ],
+   "id": "REV-PC-TLE-56"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Débit et conservation dans un écoulement",
+   "emoji": "🚰",
+   "en_une_phrase": "Dans un écoulement permanent incompressible, le débit volumique se conserve le long d’une conduite sans fuite.",
+   "comprendre": "Le débit volumique est le volume traversant une section par unité de temps. La relation Q = Sv utilise la vitesse moyenne sur la section.",
+   "essentiel": [
+    "Q = ΔV/Δt.",
+    "Dans une section S, Q = S v moyenne.",
+    "Pour un même débit : S₁v₁ = S₂v₂.",
+    "L’unité SI de débit volumique est m³·s⁻¹."
+   ],
+   "image_mentale": "Un même volume traverse successivement les sections en un même temps.",
+   "regle_ou_methode": "Convertir les unités, puis appliquer S₁v₁ = S₂v₂.",
+   "exemples": [
+    "Si S₁ = 4 cm², v₁ = 2 m·s⁻¹ et S₂ = 2 cm², alors v₂ = S₁v₁/S₂ = 4 m·s⁻¹.",
+    "Un débit de 0,003 m³·s⁻¹ correspond à 3 L·s⁻¹."
+   ],
+   "piege": "Si le diamètre est divisé par deux dans un tube circulaire, la section est divisée par quatre.",
+   "astuce_memoire": "Section fois vitesse : débit.",
+   "quiz": [
+    {
+     "q": "Quelle est l’unité SI du débit volumique ?",
+     "choix": [
+      "m³·s⁻¹",
+      "m·s⁻¹",
+      "kg·m⁻³"
+     ],
+     "rep": "m³·s⁻¹",
+     "expl": "C’est un volume par unité de temps."
+    },
+    {
+     "q": "À débit constant, si la section est divisée par deux, la vitesse moyenne est :",
+     "choix": [
+      "divisée par deux",
+      "multipliée par deux",
+      "inchangée"
+     ],
+     "rep": "multipliée par deux",
+     "expl": "Le produit section fois vitesse reste constant."
+    },
+    {
+     "q": "Que vaut 0,002 m³·s⁻¹ en litres par seconde ?",
+     "choix": [
+      "0,2 L·s⁻¹",
+      "20 L·s⁻¹",
+      "2 L·s⁻¹"
+     ],
+     "rep": "2 L·s⁻¹",
+     "expl": "Un mètre cube vaut 1 000 litres."
+    }
+   ],
+   "id": "REV-PC-TLE-57"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Relation de Bernoulli et effet Venturi",
+   "emoji": "💧",
+   "en_une_phrase": "Dans certaines conditions, une augmentation de vitesse d’un fluide s’accompagne d’une baisse de pression.",
+   "comprendre": "La relation de Bernoulli s’applique le long d’une ligne de courant pour un écoulement permanent incompressible, modélisé sans viscosité. Elle relie pression, vitesse et altitude.",
+   "essentiel": [
+    "p + ρv²/2 + ρgz est constante le long d’une ligne de courant dans ce modèle.",
+    "À même altitude et sur une même ligne de courant, la pression baisse lorsque la vitesse augmente.",
+    "Un rétrécissement augmente la vitesse moyenne d’un fluide incompressible à débit constant.",
+    "La pression p s’exprime en pascals et la masse volumique ρ en kg·m⁻³."
+   ],
+   "image_mentale": "Dans un tube horizontal resserré, une part de la pression se convertit en énergie cinétique par unité de volume.",
+   "regle_ou_methode": "Vérifier les hypothèses, écrire Bernoulli entre les deux points et isoler la grandeur inconnue.",
+   "exemples": [
+    "Pour de l’eau de ρ = 1 000 kg·m⁻³ dans un tube horizontal, avec v₁ = 1 m·s⁻¹ et v₂ = 3 m·s⁻¹ : p₁ − p₂ = ρ(v₂² − v₁²)/2 = 1 000 × 8/2 = 4 000 Pa.",
+    "Dans un tube horizontal qui se rétrécit, la vitesse moyenne augmente ; entre deux points d’une même ligne de courant où la vitesse augmente, la pression statique diminue dans le modèle de Bernoulli."
+   ],
+   "piege": "Une baisse de pression liée à la vitesse ne s’affirme pas sans vérifier les conditions et les altitudes.",
+   "astuce_memoire": "Même hauteur : plus rapide, pression statique plus faible dans le modèle.",
+   "quiz": [
+    {
+     "q": "Dans la relation de Bernoulli, quel terme représente l’effet de l’altitude ?",
+     "choix": [
+      "ρv²/2",
+      "ρgz",
+      "p"
+     ],
+     "rep": "ρgz",
+     "expl": "ρgz est le terme gravitationnel par unité de volume."
+    },
+    {
+     "q": "À même altitude et sur une même ligne de courant dans le modèle de Bernoulli, si la vitesse augmente, la pression statique :",
+     "choix": [
+      "augmente nécessairement",
+      "reste toujours constante",
+      "diminue"
+     ],
+     "rep": "diminue",
+     "expl": "La somme p + ρv²/2 reste constante."
+    },
+    {
+     "q": "Dans un tube horizontal, pour ρ = 1 000 kg·m⁻³, v₁ = 1 m·s⁻¹ et v₂ = 3 m·s⁻¹, que vaut p₁ − p₂ ?",
+     "choix": [
+      "4 000 Pa",
+      "8 000 Pa",
+      "1 000 Pa"
+     ],
+     "rep": "4 000 Pa",
+     "expl": "ρ(v₂² − v₁²)/2 = 4 000 Pa."
+    }
+   ],
+   "id": "REV-PC-TLE-58"
+  },
+  {
+   "axe": "L’énergie : conversions et transferts",
+   "titre": "Le modèle du gaz parfait",
+   "emoji": "🎈",
+   "en_une_phrase": "Le modèle du gaz parfait relie pression, volume et température.",
+   "comprendre": "Dans un gaz, les particules sont en mouvement et heurtent les parois. Le modèle idéal relie les grandeurs macroscopiques et néglige le volume propre et les interactions à distance entre particules.",
+   "essentiel": [
+    "pV = nRT pour un gaz parfait.",
+    "p en pascals, V en mètres cubes et T en kelvins.",
+    "T en kelvins = température en degrés Celsius + 273,15.",
+    "Le modèle devient moins adapté notamment à forte pression."
+   ],
+   "image_mentale": "Les particules frappent les parois d’un ballon.",
+   "regle_ou_methode": "Convertir toutes les unités puis isoler la grandeur cherchée dans pV = nRT.",
+   "exemples": [
+    "Pour n = 1 mol, T = 300 K, V = 0,025 m³ et R = 8,31 J·mol⁻¹·K⁻¹ : p = 1 × 8,31 × 300/0,025 ≈ 100 000 Pa.",
+    "À quantité et température constantes, doubler V divise p par deux dans ce modèle."
+   ],
+   "piege": "Ne pas introduire une température en degrés Celsius dans l’équation.",
+   "astuce_memoire": "Gaz parfait : pV et nRT ont même valeur.",
+   "quiz": [
+    {
+     "q": "Quelle unité de température utiliser dans pV = nRT ?",
+     "choix": [
+      "Le degré Celsius",
+      "Le joule",
+      "Le kelvin"
+     ],
+     "rep": "Le kelvin",
+     "expl": "La température thermodynamique est en kelvins."
+    },
+    {
+     "q": "À n et T constants, si V double, que devient p ?",
+     "choix": [
+      "Elle est divisée par deux",
+      "Elle double",
+      "Elle reste identique"
+     ],
+     "rep": "Elle est divisée par deux",
+     "expl": "Le produit pV est constant."
+    },
+    {
+     "q": "Combien valent environ 27 °C en kelvins ?",
+     "choix": [
+      "27 K",
+      "300 K",
+      "246 K"
+     ],
+     "rep": "300 K",
+     "expl": "On ajoute 273,15."
+    }
+   ],
+   "id": "REV-PC-TLE-59"
+  },
+  {
+   "axe": "L’énergie : conversions et transferts",
+   "titre": "Premier principe et énergie interne",
+   "emoji": "🔋",
+   "en_une_phrase": "Le premier principe relie variation d’énergie et transferts reçus.",
+   "comprendre": "On commence par choisir un système et ses états initial et final. Sa variation d’énergie interne est la somme du travail et du transfert thermique reçus lorsque les variations d’énergies cinétique et potentielle macroscopiques sont négligeables.",
+   "essentiel": [
+    "Avec cette convention, ΔU = W + Q.",
+    "Un transfert reçu est compté positivement.",
+    "Pour un système incompressible modélisé à capacité thermique constante, ΔU = CΔT.",
+    "C s’exprime en J·K⁻¹."
+   ],
+   "image_mentale": "Une boîte reçoit ou cède de l’énergie par ses frontières.",
+   "regle_ou_methode": "Choisir les signes des transferts, puis appliquer le bilan.",
+   "exemples": [
+    "Si le système reçoit 120 J de chaleur et cède 20 J par travail, ΔU = 120 − 20 = 100 J.",
+    "Si C = 50 J·K⁻¹ et ΔT = 2 K, ΔU = 100 J."
+   ],
+   "piege": "Une température qui diminue correspond à une variation négative dans ce modèle.",
+   "astuce_memoire": "Reçu : plus ; cédé : moins.",
+   "quiz": [
+    {
+     "q": "Un système reçoit 50 J de chaleur et aucun travail : ΔU vaut ?",
+     "choix": [
+      "+50 J",
+      "−50 J",
+      "0 J"
+     ],
+     "rep": "+50 J",
+     "expl": "Le transfert reçu est positif."
+    },
+    {
+     "q": "Avec C = 20 J·K⁻¹ et ΔT = 3 K, ΔU vaut ?",
+     "choix": [
+      "23 J",
+      "60 J",
+      "6,7 J"
+     ],
+     "rep": "60 J",
+     "expl": "On multiplie C par la variation de température."
+    },
+    {
+     "q": "Quelle grandeur est un transfert à travers la frontière ?",
+     "choix": [
+      "L’énergie interne U",
+      "La température T",
+      "Le transfert thermique Q"
+     ],
+     "rep": "Le transfert thermique Q",
+     "expl": "Q décrit l’énergie transférée."
+    }
+   ],
+   "id": "REV-PC-TLE-60"
+  },
+  {
+   "axe": "L’énergie : conversions et transferts",
+   "titre": "Transferts et résistance thermique",
+   "emoji": "🧣",
+   "en_une_phrase": "L’énergie thermique se transfère notamment par conduction, convection et rayonnement.",
+   "comprendre": "Une paroi ralentit le transfert entre deux milieux de températures différentes. Pour une paroi en régime stationnaire, la résistance thermique relie le flux à l’écart de température.",
+   "essentiel": [
+    "La conduction se fait sans déplacement macroscopique de matière.",
+    "La convection est liée au mouvement d’un fluide.",
+    "Le rayonnement transporte de l’énergie par ondes électromagnétiques.",
+    "En régime stationnaire, Φ = (Tchaud − Tfroid)/Rth pour un flux du chaud vers le froid."
+   ],
+   "image_mentale": "Une couche isolante ralentit les pertes thermiques d’une maison.",
+   "regle_ou_methode": "Calculer l’écart de température puis le diviser par la résistance donnée.",
+   "exemples": [
+    "Avec un écart de 20 K et Rth = 2 K·W⁻¹, le flux vaut 20/2 = 10 W.",
+    "À écart constant, doubler Rth divise le flux par deux."
+   ],
+   "piege": "Le transfert thermique et la température sont des grandeurs différentes.",
+   "astuce_memoire": "Résistance plus grande, flux plus faible à écart fixé.",
+   "quiz": [
+    {
+     "q": "Avec 12 K d’écart et 3 K·W⁻¹ de résistance, quel flux ?",
+     "choix": [
+      "36 W",
+      "4 W",
+      "9 W"
+     ],
+     "rep": "4 W",
+     "expl": "On calcule 12/3."
+    },
+    {
+     "q": "Quel transfert accompagne le mouvement d’un fluide ?",
+     "choix": [
+      "La conduction seule",
+      "Aucun transfert",
+      "La convection"
+     ],
+     "rep": "La convection",
+     "expl": "La convection implique un mouvement de fluide."
+    },
+    {
+     "q": "Une résistance doublée à écart fixé produit quel flux ?",
+     "choix": [
+      "Un flux deux fois plus faible",
+      "Un flux deux fois plus grand",
+      "Un flux inchangé"
+     ],
+     "rep": "Un flux deux fois plus faible",
+     "expl": "Le flux est inversement proportionnel à la résistance."
+    }
+   ],
+   "id": "REV-PC-TLE-61"
+  },
+  {
+   "axe": "L’énergie : conversions et transferts",
+   "titre": "Refroidissement et temps caractéristique",
+   "emoji": "☕",
+   "en_une_phrase": "Un modèle de refroidissement décrit le rapprochement progressif d’une température extérieure constante.",
+   "comprendre": "Un objet plus chaud que son environnement lui transfère de l’énergie. Le modèle de Newton suppose un flux proportionnel à l’écart de température et conduit à une décroissance exponentielle.",
+   "essentiel": [
+    "T(t) = Text + (Tinitiale − Text) exp(−t/τ).",
+    "τ est un temps caractéristique positif.",
+    "Après une durée τ, l’écart initial est multiplié par environ 0,37.",
+    "Ce modèle suppose notamment une température extérieure constante."
+   ],
+   "image_mentale": "Un écart de température se réduit rapidement puis plus lentement.",
+   "regle_ou_methode": "Calculer l’écart initial puis le multiplier par exp(−t/τ).",
+   "exemples": [
+    "Si l’écart initial est 20 °C, après une durée τ il vaut environ 20 × 0,37 = 7,4 °C.",
+    "Si l’extérieur reste à 20 °C et l’écart initial vaut 20 °C, la température après τ est environ 27,4 °C."
+   ],
+   "piege": "Le temps caractéristique ne signifie pas que l’équilibre exact est atteint au bout de τ.",
+   "astuce_memoire": "Après τ, il reste environ 37 % de l’écart.",
+   "quiz": [
+    {
+     "q": "Après un temps τ, quelle fraction de l’écart initial reste environ ?",
+     "choix": [
+      "100 %",
+      "0 %",
+      "37 %"
+     ],
+     "rep": "37 %",
+     "expl": "exp(−1) vaut environ 0,37."
+    },
+    {
+     "q": "Quelle unité pour τ ?",
+     "choix": [
+      "Une unité de temps",
+      "Une unité de température",
+      "Une unité de puissance"
+     ],
+     "rep": "Une unité de temps",
+     "expl": "τ est une durée."
+    },
+    {
+     "q": "Si l’extérieur vaut 20 °C et l’objet 40 °C, l’écart initial vaut ?",
+     "choix": [
+      "60 °C",
+      "20 °C",
+      "2 °C"
+     ],
+     "rep": "20 °C",
+     "expl": "On soustrait 20 de 40."
+    }
+   ],
+   "id": "REV-PC-TLE-62"
+  },
+  {
+   "axe": "L’énergie : conversions et transferts",
+   "titre": "Bilan radiatif terrestre",
+   "emoji": "🌍",
+   "en_une_phrase": "La température terrestre dépend du bilan entre énergie solaire absorbée et rayonnement émis.",
+   "comprendre": "Une partie du rayonnement solaire reçu est réfléchie. La Terre émet aussi un rayonnement infrarouge dont une partie interagit avec l’atmosphère.",
+   "essentiel": [
+    "L’albédo est la fraction du rayonnement solaire incident réfléchie.",
+    "À apport incident fixé, un albédo plus élevé réduit l’énergie solaire absorbée.",
+    "Des gaz atmosphériques absorbent et réémettent une partie du rayonnement infrarouge.",
+    "L’équilibre radiatif correspond à un bilan net nul dans le modèle considéré."
+   ],
+   "image_mentale": "Une surface claire renvoie davantage de lumière qu’une surface sombre.",
+   "regle_ou_methode": "Calculer la fraction absorbée 1 − albédo, puis comparer les flux reçus et émis.",
+   "exemples": [
+    "Avec un albédo de 0,3 et un flux incident de 100 unités, le flux absorbé vaut 70 unités.",
+    "Avec un albédo de 0,5 dans les mêmes conditions, le flux absorbé vaut 50 unités."
+   ],
+   "piege": "L’effet de serre ne résulte pas simplement de la réflexion du rayonnement solaire.",
+   "astuce_memoire": "Albédo : part réfléchie.",
+   "quiz": [
+    {
+     "q": "Si l’albédo vaut 0,3, quelle fraction du flux incident est absorbée dans ce modèle ?",
+     "choix": [
+      "0,7",
+      "0,3",
+      "1,3"
+     ],
+     "rep": "0,7",
+     "expl": "La fraction absorbée est 1 − 0,3."
+    },
+    {
+     "q": "À flux incident égal, un albédo plus élevé implique ?",
+     "choix": [
+      "Plus de rayonnement solaire absorbé",
+      "Moins de rayonnement solaire absorbé",
+      "Une absorption inchangée"
+     ],
+     "rep": "Moins de rayonnement solaire absorbé",
+     "expl": "La part réfléchie augmente."
+    },
+    {
+     "q": "L’effet de serre implique notamment quel rayonnement terrestre ?",
+     "choix": [
+      "Le rayonnement sonore",
+      "Les seules ondes radio",
+      "L’infrarouge"
+     ],
+     "rep": "L’infrarouge",
+     "expl": "L’atmosphère interagit avec l’infrarouge émis."
+    }
+   ],
+   "id": "REV-PC-TLE-63"
+  },
+  {
+   "axe": "L’énergie : conversions et transferts",
+   "titre": "Température d’équilibre radiatif",
+   "emoji": "🌡️",
+   "en_une_phrase": "Un modèle radiatif permet d’estimer une température d’équilibre à partir du flux absorbé.",
+   "comprendre": "Un corps noir idéal émet un flux surfacique σT⁴, selon la loi de Stefan-Boltzmann. Dans un modèle simplifié sans atmosphère, l’équilibre impose l’égalité entre flux solaire moyen absorbé et flux émis.",
+   "essentiel": [
+    "Le flux surfacique émis par un corps noir est Φ = σT⁴.",
+    "T est en kelvins et σ ≈ 5,67 × 10⁻⁸ W·m⁻²·K⁻⁴.",
+    "À l’équilibre simplifié : flux absorbé = σT⁴.",
+    "La température calculée dépend des hypothèses du modèle, notamment de l’absence d’atmosphère."
+   ],
+   "image_mentale": "La température se stabilise dans le modèle lorsque puissance reçue et puissance émise s’équilibrent.",
+   "regle_ou_methode": "Égaler le flux absorbé à σT⁴, diviser par σ puis prendre la racine quatrième.",
+   "exemples": [
+    "Pour un flux moyen absorbé de 240 W·m⁻², T = (240/σ) puissance 1/4 : avec σ = 5,67 × 10⁻⁸, on obtient environ 255 K.",
+    "Si le flux absorbé est multiplié par 16 dans ce modèle, la température d’équilibre est multipliée par 2."
+   ],
+   "piege": "Ce calcul ne donne pas directement la température réelle de surface : il néglige l’atmosphère et d’autres phénomènes.",
+   "astuce_memoire": "Flux émis proportionnel à la puissance quatrième de la température.",
+   "quiz": [
+    {
+     "q": "Quelle température faut-il utiliser dans la loi de Stefan-Boltzmann ?",
+     "choix": [
+      "La température en degrés Celsius",
+      "La température en kelvins",
+      "La température en joules"
+     ],
+     "rep": "La température en kelvins",
+     "expl": "La loi utilise la température thermodynamique."
+    },
+    {
+     "q": "Si le flux absorbé est multiplié par 16, la température d’équilibre du corps noir est multipliée par :",
+     "choix": [
+      "4",
+      "16",
+      "2"
+     ],
+     "rep": "2",
+     "expl": "La température est proportionnelle à la racine quatrième du flux."
+    },
+    {
+     "q": "Dans ce modèle à l’équilibre, le flux émis est :",
+     "choix": [
+      "égal au flux absorbé",
+      "toujours nul",
+      "nécessairement le double du flux absorbé"
+     ],
+     "rep": "égal au flux absorbé",
+     "expl": "Le bilan radiatif net est nul à l’équilibre."
+    }
+   ],
+   "id": "REV-PC-TLE-64"
+  },
+  {
+   "axe": "L’énergie : conversions et transferts",
+   "titre": "Incertitude-type composée",
+   "emoji": "📐",
+   "en_une_phrase": "L’incertitude-type d’une somme de mesures indépendantes se calcule à partir des incertitudes de chaque mesure.",
+   "comprendre": "Quand une grandeur est calculée à partir de plusieurs mesures, leurs incertitudes contribuent au résultat. Pour une somme de deux mesures indépendantes, on utilise la formule fournie en additionnant les carrés des incertitudes-types.",
+   "essentiel": [
+    "Pour S = A + B, si les mesures sont indépendantes : u(S) = √(u(A)² + u(B)²).",
+    "La somme S et son incertitude-type u(S) ont la même unité.",
+    "Si les mesures partagent une erreur commune, la formule peut ne plus s’appliquer.",
+    "Une incertitude-type ne garantit pas une erreur maximale."
+   ],
+   "image_mentale": "Deux incertitudes se combinent comme les côtés d’un triangle rectangle.",
+   "regle_ou_methode": "Convertir les unités, appliquer la formule fournie, puis arrondir la valeur et son incertitude au même rang.",
+   "exemples": [
+    "Pour deux longueurs indépendantes A = 1,20 m et B = 2,30 m, avec u(A) = 0,03 m et u(B) = 0,04 m : S = 3,50 m et u(S) = √(0,03² + 0,04²) = 0,05 m.",
+    "Pour deux mesures indépendantes dont les incertitudes-types valent 0,06 m et 0,08 m, celle de leur somme vaut 0,10 m."
+   ],
+   "piege": "Ne pas additionner directement les incertitudes-types dans cette formule, et vérifier l’indépendance.",
+   "astuce_memoire": "Carrés, somme, racine.",
+   "quiz": [
+    {
+     "q": "Deux longueurs indépendantes ont pour incertitudes-types 0,03 m et 0,04 m. Quelle est l’incertitude-type de leur somme ?",
+     "choix": [
+      "0,07 m",
+      "0,01 m",
+      "0,05 m"
+     ],
+     "rep": "0,05 m",
+     "expl": "√(0,03² + 0,04²) = 0,05 m."
+    },
+    {
+     "q": "Quelle condition permet d’utiliser la formule indiquée pour une somme ?",
+     "choix": [
+      "Les deux mesures sont indépendantes",
+      "Les deux mesures sont forcément égales",
+      "Les unités des deux longueurs sont différentes"
+     ],
+     "rep": "Les deux mesures sont indépendantes",
+     "expl": "La formule donnée suppose l’indépendance des mesures."
+    },
+    {
+     "q": "Deux mesures indépendantes ont des incertitudes-types de 0,06 m et 0,08 m. Quelle est celle de leur somme ?",
+     "choix": [
+      "0,14 m",
+      "0,10 m",
+      "0,02 m"
+     ],
+     "rep": "0,10 m",
+     "expl": "√(0,06² + 0,08²) = 0,10 m."
+    }
+   ],
+   "id": "REV-PC-TLE-65"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Intensité et niveau sonore",
+   "emoji": "🔊",
+   "en_une_phrase": "Le niveau sonore utilise une échelle logarithmique pour comparer les intensités.",
+   "comprendre": "L’intensité sonore correspond à une puissance reçue par unité de surface. Le niveau en décibels exprime le rapport de cette intensité à une référence.",
+   "essentiel": [
+    "L = 10 log₁₀(I/I₀), avec I₀ = 10⁻¹² W·m⁻².",
+    "Multiplier l’intensité par 10 augmente le niveau de 10 dB.",
+    "L’atténuation traduit une diminution du niveau entre deux points.",
+    "La distance et l’absorption peuvent réduire l’intensité reçue."
+   ],
+   "image_mentale": "Une même augmentation en décibels correspond à une multiplication de l’intensité.",
+   "regle_ou_methode": "Former I/I₀ puis calculer dix fois son logarithme décimal.",
+   "exemples": [
+    "Si I = 10⁻⁶ W·m⁻², alors I/I₀ = 10⁶ et L = 60 dB.",
+    "Si l’intensité passe de I à 10I, le niveau augmente de 10 dB."
+   ],
+   "piege": "Doubler les décibels ne signifie pas doubler l’intensité.",
+   "astuce_memoire": "Intensité fois 10 : niveau plus 10 dB.",
+   "quiz": [
+    {
+     "q": "Avec I = 10⁻⁶ W·m⁻², quel niveau ?",
+     "choix": [
+      "60 dB",
+      "6 dB",
+      "120 dB"
+     ],
+     "rep": "60 dB",
+     "expl": "Le rapport à I₀ vaut 10⁶."
+    },
+    {
+     "q": "Une intensité multipliée par 10 augmente le niveau de ?",
+     "choix": [
+      "1 dB",
+      "10 dB",
+      "100 dB"
+     ],
+     "rep": "10 dB",
+     "expl": "10 log₁₀(10) = 10."
+    },
+    {
+     "q": "L’intensité sonore s’exprime notamment en ?",
+     "choix": [
+      "dB",
+      "K",
+      "W·m⁻²"
+     ],
+     "rep": "W·m⁻²",
+     "expl": "Elle correspond à une puissance par unité de surface."
+    }
+   ],
+   "id": "REV-PC-TLE-66"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Diffraction",
+   "emoji": "🌊",
+   "en_une_phrase": "Une onde s’étale lorsqu’elle rencontre une ouverture de taille comparable à sa longueur d’onde.",
+   "comprendre": "Une ouverture peut modifier la direction de propagation d’une onde. Pour une fente et une onde lumineuse, l’angle caractéristique est inversement proportionnel à la largeur de la fente.",
+   "essentiel": [
+    "Pour une fente et un petit angle, la direction du premier minimum vérifie θ ≈ λ/a, θ en radians.",
+    "λ et a doivent être exprimées dans la même unité.",
+    "À longueur d’onde fixée, une fente plus étroite diffracte davantage."
+   ],
+   "image_mentale": "Des vagues s’étalent après une ouverture dans une digue.",
+   "regle_ou_methode": "Convertir λ et a dans la même unité puis calculer leur rapport.",
+   "exemples": [
+    "Pour λ = 500 nm et a = 0,10 mm, θ ≈ 5 × 10⁻⁷ / 10⁻⁴ = 5 × 10⁻³ rad.",
+    "Si la largeur double à λ fixée, l’angle est divisé par deux."
+   ],
+   "piege": "La diffraction n’exige pas deux sources.",
+   "astuce_memoire": "Fente plus fine : étalement plus large.",
+   "quiz": [
+    {
+     "q": "Si a double à λ constante, θ devient ?",
+     "choix": [
+      "Deux fois plus grand",
+      "Deux fois plus petit",
+      "Inchangé"
+     ],
+     "rep": "Deux fois plus petit",
+     "expl": "θ est proportionnel à 1/a."
+    },
+    {
+     "q": "Quelle unité utiliser pour θ dans la relation ?",
+     "choix": [
+      "Le mètre",
+      "Le hertz",
+      "Le radian"
+     ],
+     "rep": "Le radian",
+     "expl": "La formule approchée donne un angle en radians."
+    },
+    {
+     "q": "La diffraction est surtout marquée lorsque ?",
+     "choix": [
+      "L’ouverture est comparable à la longueur d’onde",
+      "L’ouverture est infiniment plus grande",
+      "La fréquence est toujours nulle"
+     ],
+     "rep": "L’ouverture est comparable à la longueur d’onde",
+     "expl": "Les échelles comparables favorisent l’observation."
+    }
+   ],
+   "id": "REV-PC-TLE-67"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Interférences et interfrange",
+   "emoji": "〰️",
+   "en_une_phrase": "Deux ondes cohérentes peuvent se renforcer ou s’atténuer selon leur déphasage.",
+   "comprendre": "Deux sources synchrones et cohérentes produisent une figure stable lorsque leurs ondes se superposent. Pour deux sources en phase, la différence de chemin détermine le renforcement ou l’atténuation.",
+   "essentiel": [
+    "Renforcement : différence de chemin δ = kλ, k entier.",
+    "Atténuation : δ = (k + 1/2)λ, k entier.",
+    "Pour les trous d’Young, i ≈ λD/a aux petits angles, avec D grande devant leur écartement a.",
+    "i est la distance entre deux franges brillantes successives."
+   ],
+   "image_mentale": "Deux rides d’eau se croisent : crête sur crête ou crête sur creux.",
+   "regle_ou_methode": "Comparer δ à la longueur d’onde ou calculer λD/a.",
+   "exemples": [
+    "Pour λ = 500 nm, D = 2 m et a = 1 mm : i = 5 × 10⁻⁷ × 2 / 10⁻³ = 1 mm.",
+    "Si δ = λ pour deux sources en phase, les interférences sont constructives."
+   ],
+   "piege": "La condition δ = kλ suppose ici des sources en phase.",
+   "astuce_memoire": "Chemins en phase : renforcement.",
+   "quiz": [
+    {
+     "q": "Pour deux sources en phase, δ = λ donne ?",
+     "choix": [
+      "Une extinction nécessaire",
+      "Aucune superposition",
+      "Un renforcement"
+     ],
+     "rep": "Un renforcement",
+     "expl": "La différence vaut un nombre entier de longueurs d’onde."
+    },
+    {
+     "q": "Si D double, que devient l’interfrange à λ et a fixés ?",
+     "choix": [
+      "Il double",
+      "Il est divisé par deux",
+      "Il est inchangé"
+     ],
+     "rep": "Il double",
+     "expl": "i est proportionnel à D."
+    },
+    {
+     "q": "L’interfrange est la distance entre ?",
+     "choix": [
+      "Deux sources lumineuses",
+      "Deux franges brillantes successives",
+      "La source et l’écran"
+     ],
+     "rep": "Deux franges brillantes successives",
+     "expl": "C’est l’écart entre franges de même nature successives."
+    }
+   ],
+   "id": "REV-PC-TLE-68"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Effet Doppler acoustique",
+   "emoji": "🚑",
+   "en_une_phrase": "Le mouvement relatif d’une source et d’un observateur modifie la fréquence reçue.",
+   "comprendre": "Dans un milieu au repos, une source sonore qui s’approche d’un observateur fixe crée vers lui des fronts d’onde plus rapprochés. Celui-ci perçoit alors une fréquence plus élevée que la fréquence émise.",
+   "essentiel": [
+    "Dans cette situation, à l’approche de la source, la fréquence reçue augmente.",
+    "Dans cette situation, à l’éloignement de la source, elle diminue.",
+    "Pour un observateur fixe dans l’air immobile et une source qui approche en ligne droite à vitesse constante : fr = fe × c/(c − v), avec 0 ≤ v < c."
+   ],
+   "image_mentale": "Les fronts d’onde se resserrent devant une source mobile.",
+   "regle_ou_methode": "Identifier la source, le sens du mouvement et les hypothèses avant le calcul.",
+   "exemples": [
+    "Avec fe = 300 Hz, c = 340 m·s⁻¹ et v = 34 m·s⁻¹ vers l’observateur : fr = 300 × 340/306 ≈ 333 Hz.",
+    "À l’éloignement dans cette configuration, la fréquence perçue est inférieure à 300 Hz."
+   ],
+   "piege": "L’effet dépend du mouvement relatif ; la fréquence émise ne change pas nécessairement.",
+   "astuce_memoire": "Approche : son plus aigu.",
+   "quiz": [
+    {
+     "q": "Dans l’air immobile, une source sonore s’approche d’un observateur fixe : la fréquence perçue est ?",
+     "choix": [
+      "Plus élevée",
+      "Plus faible",
+      "Toujours nulle"
+     ],
+     "rep": "Plus élevée",
+     "expl": "Les fronts arrivent plus rapprochés."
+    },
+    {
+     "q": "Avec c = 340 m·s⁻¹ et v = 34 m·s⁻¹ vers un observateur fixe, quel facteur multiplie fe ?",
+     "choix": [
+      "306/340",
+      "340/306",
+      "340/374"
+     ],
+     "rep": "340/306",
+     "expl": "Pour une approche, le dénominateur est c − v."
+    },
+    {
+     "q": "La formule présentée suppose quoi ?",
+     "choix": [
+      "Une source immobile et un observateur immobile",
+      "Un son qui se propage instantanément",
+      "Un observateur fixe dans l’air immobile et une source approchant à vitesse inférieure à c"
+     ],
+     "rep": "Un observateur fixe dans l’air immobile et une source approchant à vitesse inférieure à c",
+     "expl": "Les hypothèses fixent le sens et la situation étudiée."
+    }
+   ],
+   "id": "REV-PC-TLE-69"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Lunette astronomique afocale",
+   "emoji": "🔭",
+   "en_une_phrase": "Une lunette afocale utilise deux lentilles convergentes pour grossir l’angle apparent.",
+   "comprendre": "L’objectif forme une image intermédiaire d’un objet lointain dans son plan focal image. L’oculaire est placé pour que cette image se trouve dans son plan focal objet et donne des rayons émergents parallèles.",
+   "essentiel": [
+    "Une lunette afocale associe objectif et oculaire convergents.",
+    "Le foyer image de l’objectif coïncide avec le foyer objet de l’oculaire.",
+    "En valeur absolue, le grossissement angulaire vaut f’objectif/f’oculaire.",
+    "Dans le modèle simple, l’image observée est renversée."
+   ],
+   "image_mentale": "La première lentille forme une image que la seconde observe à la loupe.",
+   "regle_ou_methode": "Diviser la distance focale de l’objectif par celle de l’oculaire, dans la même unité.",
+   "exemples": [
+    "Avec un objectif de focale 80 cm et un oculaire de 4 cm, le grossissement en valeur absolue vaut 80/4 = 20.",
+    "Avec un objectif de 100 cm et un oculaire de 5 cm, le grossissement vaut 20 en valeur absolue."
+   ],
+   "piege": "Le grossissement angulaire n’est pas la distance de l’objet multipliée par 20.",
+   "astuce_memoire": "Grande focale pour l’objectif, petite pour l’oculaire.",
+   "quiz": [
+    {
+     "q": "Avec f’objectif = 60 cm et f’oculaire = 3 cm, quel grossissement en valeur absolue ?",
+     "choix": [
+      "180",
+      "20",
+      "0,05"
+     ],
+     "rep": "20",
+     "expl": "On calcule 60/3."
+    },
+    {
+     "q": "Une lunette afocale donne, pour un objet à l’infini, des rayons émergents ?",
+     "choix": [
+      "Tous absorbés",
+      "Toujours divergents",
+      "Parallèles"
+     ],
+     "rep": "Parallèles",
+     "expl": "L’image intermédiaire est au foyer objet de l’oculaire."
+    },
+    {
+     "q": "Quelle lentille reçoit d’abord la lumière de l’objet ?",
+     "choix": [
+      "L’objectif",
+      "L’oculaire",
+      "Aucune lentille"
+     ],
+     "rep": "L’objectif",
+     "expl": "L’objectif forme l’image intermédiaire."
+    }
+   ],
+   "id": "REV-PC-TLE-70"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Photons et effet photoélectrique",
+   "emoji": "💡",
+   "en_une_phrase": "Un photon peut arracher un électron si son énergie atteint le seuil du matériau.",
+   "comprendre": "La lumière peut être décrite par des photons d’énergie liée à leur fréquence. Un électron extrait utilise une partie de l’énergie reçue pour quitter le matériau.",
+   "essentiel": [
+    "Énergie du photon : E = hf = hc/λ dans le vide.",
+    "Dans le modèle à un photon, l’extraction nécessite hf ≥ W ; ce seuil ne garantit pas que chaque photon extrait un électron.",
+    "Pour un électron extrait avec énergie cinétique maximale, Ec,max = hf − W.",
+    "Sous le seuil, augmenter l’intensité ne remplace pas une fréquence suffisante."
+   ],
+   "image_mentale": "Un photon apporte une quantité d’énergie : il faut payer le seuil pour sortir.",
+   "regle_ou_methode": "Comparer hf au seuil W, puis soustraire si hf ≥ W.",
+   "exemples": [
+    "Si un photon apporte 5 eV et le seuil vaut 3 eV, Ec,max = 5 − 3 = 2 eV.",
+    "Si le photon apporte 2 eV pour un seuil de 3 eV, il ne provoque pas l’extraction dans ce modèle."
+   ],
+   "piege": "Une lumière plus intense n’a pas forcément des photons plus énergétiques.",
+   "astuce_memoire": "Fréquence fixe : énergie par photon fixe.",
+   "quiz": [
+    {
+     "q": "Si hf = 5 eV et W = 3 eV, quelle énergie cinétique maximale ?",
+     "choix": [
+      "8 eV",
+      "15 eV",
+      "2 eV"
+     ],
+     "rep": "2 eV",
+     "expl": "Le bilan donne 5 − 3."
+    },
+    {
+     "q": "Si hf est inférieur au seuil W, que prévoit le modèle ?",
+     "choix": [
+      "Pas de photoélectron extrait par un photon",
+      "Une extraction quel que soit le seuil",
+      "Un électron avec énergie cinétique négative"
+     ],
+     "rep": "Pas de photoélectron extrait par un photon",
+     "expl": "Le photon ne fournit pas l’énergie minimale."
+    },
+    {
+     "q": "À célérité fixe, quand la longueur d’onde diminue, l’énergie du photon ?",
+     "choix": [
+      "Diminue",
+      "Augmente",
+      "Reste identique"
+     ],
+     "rep": "Augmente",
+     "expl": "E = hc/λ."
+    }
+   ],
+   "id": "REV-PC-TLE-71"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Capacité et charge électrique",
+   "emoji": "⚡",
+   "en_une_phrase": "Un condensateur accumule des charges opposées sur deux armatures.",
+   "comprendre": "La tension entre les armatures est liée à la charge accumulée. La capacité caractérise la quantité de charge stockée pour une tension donnée.",
+   "essentiel": [
+    "Dans la convention adaptée, q = C uC.",
+    "q est en coulombs, uC en volts et C en farads.",
+    "Pour une tension variable, i = dq/dt selon la convention de signe choisie.",
+    "La géométrie et le matériau influencent la capacité."
+   ],
+   "image_mentale": "Deux plaques séparées accumulent des charges de signes opposés.",
+   "regle_ou_methode": "Convertir la capacité en farads puis multiplier par la tension.",
+   "exemples": [
+    "Avec C = 10 µF = 10⁻⁵ F et uC = 5 V, q = 5 × 10⁻⁵ C.",
+    "Avec C = 2 µF et uC = 3 V, q = 6 µC."
+   ],
+   "piege": "La capacité ne se mesure pas en coulombs.",
+   "astuce_memoire": "Charge = capacité × tension.",
+   "quiz": [
+    {
+     "q": "Avec C = 2 µF et uC = 3 V, quelle charge ?",
+     "choix": [
+      "6 µC",
+      "1,5 µC",
+      "5 µC"
+     ],
+     "rep": "6 µC",
+     "expl": "q = C × uC = 6 µC."
+    },
+    {
+     "q": "Quelle unité mesure la capacité ?",
+     "choix": [
+      "Le coulomb",
+      "Le farad",
+      "Le volt"
+     ],
+     "rep": "Le farad",
+     "expl": "La capacité s’exprime en farads."
+    },
+    {
+     "q": "À capacité constante, doubler la tension fait quoi à la charge ?",
+     "choix": [
+      "Elle est divisée par deux",
+      "Elle ne change pas",
+      "Elle double"
+     ],
+     "rep": "Elle double",
+     "expl": "La charge est proportionnelle à la tension."
+    }
+   ],
+   "id": "REV-PC-TLE-72"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Charge et décharge d’un circuit RC",
+   "emoji": "⏱️",
+   "en_une_phrase": "Dans un circuit RC, la tension du condensateur évolue avec un temps caractéristique RC.",
+   "comprendre": "Lors de la charge d’un condensateur initialement déchargé par une source idéale continue de tension positive, la tension augmente vers celle de la source. Lors de la décharge à travers la résistance, elle décroît vers zéro.",
+   "essentiel": [
+    "τ = RC, en secondes si R est en ohms et C en farads.",
+    "Condensateur initialement déchargé : uC(t) = E(1 − exp(−t/RC)).",
+    "Décharge depuis U₀ : uC(t) = U₀ exp(−t/RC).",
+    "À t = τ, lors de la charge depuis zéro, la tension atteint environ 63 % de sa valeur finale."
+   ],
+   "image_mentale": "Un réservoir se remplit rapidement puis plus lentement.",
+   "regle_ou_methode": "Calculer RC puis utiliser la formule adaptée à la charge ou à la décharge.",
+   "exemples": [
+    "Avec R = 1 000 Ω et C = 100 µF = 10⁻⁴ F, τ = 0,1 s.",
+    "Pour une décharge depuis 10 V, après τ la tension vaut environ 10 × 0,37 = 3,7 V."
+   ],
+   "piege": "La formule de charge donnée suppose une tension initiale nulle.",
+   "astuce_memoire": "À un τ : 63 % de charge ou 37 % restant en décharge.",
+   "quiz": [
+    {
+     "q": "Avec R = 1 000 Ω et C = 100 µF, combien vaut τ ?",
+     "choix": [
+      "100 s",
+      "0,1 s",
+      "0,001 s"
+     ],
+     "rep": "0,1 s",
+     "expl": "RC = 1 000 × 10⁻⁴."
+    },
+    {
+     "q": "À t = τ en charge depuis zéro, quelle fraction de la tension finale est atteinte ?",
+     "choix": [
+      "Environ 37 %",
+      "Exactement 100 %",
+      "Environ 63 %"
+     ],
+     "rep": "Environ 63 %",
+     "expl": "1 − exp(−1) vaut environ 0,63."
+    },
+    {
+     "q": "En décharge, la tension tend vers ?",
+     "choix": [
+      "0 V",
+      "La tension initiale doublée",
+      "Une valeur infinie"
+     ],
+     "rep": "0 V",
+     "expl": "Le facteur exponentiel tend vers zéro."
+    }
+   ],
+   "id": "REV-PC-TLE-73"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Rendement d’une cellule photovoltaïque",
+   "emoji": "☀️",
+   "en_une_phrase": "Le rendement compare la puissance électrique utile à la puissance lumineuse reçue.",
+   "comprendre": "Une cellule photovoltaïque convertit une partie de l’énergie lumineuse en énergie électrique. Son rendement dépend notamment des conditions d’éclairement et du fonctionnement électrique.",
+   "essentiel": [
+    "η = Pélectrique utile/Plumineuse reçue.",
+    "Un rendement s’exprime sans unité, souvent en pourcentage.",
+    "Si l’éclairement est uniforme, la puissance lumineuse reçue vaut l’irradiance multipliée par la surface éclairée.",
+    "La puissance électrique fournie est P = UI, avec des conventions adaptées."
+   ],
+   "image_mentale": "Une partie de la puissance lumineuse reçue devient une puissance électrique utile.",
+   "regle_ou_methode": "Calculer la puissance lumineuse reçue et la puissance électrique utile, puis diviser.",
+   "exemples": [
+    "Pour une irradiance de 1 000 W·m⁻² sur une cellule de 0,010 m², la puissance reçue est 10 W. Si elle fournit 2 W électriques, η = 2/10 = 0,20, soit 20 %.",
+    "Une cellule recevant 5 W et fournissant 0,5 W a un rendement de 10 %."
+   ],
+   "piege": "Ne pas diviser par l’irradiance seule : il faut la puissance incidente sur la surface de la cellule.",
+   "astuce_memoire": "Rendement : puissance utile divisée par puissance reçue.",
+   "quiz": [
+    {
+     "q": "Une cellule reçoit 10 W et fournit 2 W électriques : quel rendement ?",
+     "choix": [
+      "5 %",
+      "200 %",
+      "20 %"
+     ],
+     "rep": "20 %",
+     "expl": "Le rapport 2/10 vaut 0,20."
+    },
+    {
+     "q": "Quelle est l’unité d’un rendement ?",
+     "choix": [
+      "Il est sans unité",
+      "Le watt",
+      "Le volt"
+     ],
+     "rep": "Il est sans unité",
+     "expl": "Il s’agit du rapport de deux puissances."
+    },
+    {
+     "q": "Une irradiance de 1 000 W·m⁻² sur 0,010 m² correspond à quelle puissance reçue ?",
+     "choix": [
+      "1 W",
+      "10 W",
+      "100 W"
+     ],
+     "rep": "10 W",
+     "expl": "La puissance vaut irradiance fois surface."
+    }
+   ],
+   "id": "REV-PC-TLE-74"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Démarche expérimentale : mesurer un temps RC",
+   "emoji": "🧪",
+   "en_une_phrase": "Une mesure expérimentale se prépare, se réalise en sécurité puis s’interprète avec son incertitude.",
+   "comprendre": "Pour étudier un circuit RC, on suit la tension aux bornes du condensateur au cours du temps. Le résultat dépend du protocole, des instruments et des incertitudes de mesure.",
+   "essentiel": [
+    "Avant le montage, couper l’alimentation et vérifier les branchements et les calibres.",
+    "Choisir un oscilloscope ou un dispositif d’acquisition adapté à la tension et à la durée mesurées.",
+    "En charge depuis zéro, τ est le temps auquel la tension atteint environ 63 % de sa valeur finale.",
+    "Présenter le résultat avec son unité et une incertitude : τmesuré ± U.",
+    "Comparer la mesure à une valeur de référence en tenant compte de l’incertitude et du modèle."
+   ],
+   "image_mentale": "Une courbe de charge permet de lire le temps nécessaire pour atteindre 63 % du palier.",
+   "regle_ou_methode": "Monter hors tension, relever la tension au cours du temps, repérer le palier et lire le temps à 63 %, puis évaluer l’incertitude.",
+   "exemples": [
+    "Si la tension finale vaut 5,0 V, calculer 0,63 × 5,0 = 3,15 V ; la lecture de la courbe à cette tension donne par exemple τ = 0,10 s. Si U = 0,01 s, écrire τ = (0,10 ± 0,01) s.",
+    "Dans cet exemple, une valeur de référence supposée exacte de 0,105 s appartient à l’intervalle [0,09 ; 0,11] s : elle est compatible avec la mesure au regard de cette incertitude."
+   ],
+   "piege": "Une mesure n’est pas exacte : l’incertitude dépend notamment de la lecture et de l’appareil.",
+   "astuce_memoire": "Sécurité, protocole, mesure, incertitude, interprétation.",
+   "quiz": [
+    {
+     "q": "Avant de modifier les branchements d’un circuit, que faut-il faire ?",
+     "choix": [
+      "Couper l’alimentation",
+      "Augmenter la tension",
+      "Retirer le condensateur sous tension"
+     ],
+     "rep": "Couper l’alimentation",
+     "expl": "On réalise le montage hors tension."
+    },
+    {
+     "q": "En charge depuis zéro, pour une tension finale de 10 V, à quelle tension lit-on le temps caractéristique ?",
+     "choix": [
+      "Environ 3,7 V",
+      "Environ 6,3 V",
+      "10 V exactement"
+     ],
+     "rep": "Environ 6,3 V",
+     "expl": "Après τ, la tension atteint environ 63 % de sa valeur finale."
+    },
+    {
+     "q": "Pour une mesure (0,10 ± 0,01) s, quelle valeur de référence supposée exacte appartient à l’intervalle indiqué ?",
+     "choix": [
+      "0,12 s",
+      "0,20 s",
+      "0,105 s"
+     ],
+     "rep": "0,105 s",
+     "expl": "L’intervalle considéré va de 0,09 à 0,11 s."
+    }
+   ],
+   "id": "REV-PC-TLE-75"
+  }
+ ]
+}
