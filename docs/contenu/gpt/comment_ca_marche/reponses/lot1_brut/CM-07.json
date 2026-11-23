@@ -1,0 +1,583 @@
+{
+  "id": "CM-07",
+  "titre": "La voiture",
+  "public": "ado-adulte",
+  "lecons": [
+    {
+      "titre": "Ce qui fait avancer la voiture, c’est aussi la route",
+      "accroche": "Le moteur peut tourner sans que la voiture avance si les pneus ne transmettent pas l’effort.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Mettre en mouvement demande une force",
+          "texte": "Pour accélérer, une voiture doit recevoir une force résultante vers l’avant. Sa masse s’oppose au changement de vitesse : c’est une manifestation de l’inertie.",
+          "schema": "Voiture de profil ; flèche avant « force résultante », compteur de vitesse croissant. Deux masses différentes avec mêmes forces et accélérations différentes, sans chiffres."
+        },
+        {
+          "titre": "La roue pousse la route",
+          "texte": "Le moteur fait tourner les roues motrices. Au contact, le pneu pousse la route vers l’arrière ; la route exerce une force vers l’avant sur le pneu, si l’adhérence le permet.",
+          "schema": "Zoom sur contact pneu-route : flèche du pneu sur route vers l’arrière, flèche de route sur pneu vers l’avant. Les forces sont placées sur leurs objets respectifs."
+        },
+        {
+          "titre": "Patiner ne suffit pas",
+          "texte": "Si l’effort demandé dépasse ce que le contact peut transmettre, la roue peut patiner. Tourner plus vite ne garantit alors pas une meilleure accélération.",
+          "schema": "Deux roues symboliques : une roule avec déplacement, l’autre tourne rapidement sur zone glissante avec faible déplacement. Aucun essai réel ni fumée spectaculaire."
+        },
+        {
+          "titre": "La vitesse constante exige parfois encore un effort",
+          "texte": "Même à vitesse constante, le moteur doit généralement compenser les résistances de l’air, du roulement et éventuellement de la pente. Vitesse stable ne signifie donc pas consommation nulle.",
+          "schema": "Voiture à vitesse stable ; flèche motrice vers l’avant et flèches de résistance vers l’arrière, bilan horizontal équilibré sur route plane."
+        },
+        {
+          "titre": "Changer de direction demande aussi une force",
+          "texte": "Dans un virage, la direction du mouvement change. Les pneus doivent transmettre une force latérale ; l’adhérence disponible doit aussi servir à accélérer ou freiner.",
+          "schema": "Vue du dessus d’un virage ; flèche vitesse tangente et flèche de force vers l’intérieur. Petit budget d’adhérence partagé entre directions, explicitement symbolique."
+        }
+      ],
+      "dans_ta_vie": "Tu comprends pourquoi la puissance du moteur ne suffit pas à prévoir la tenue de route. Tu sais que freinage, accélération et virage dépendent du contact avec le sol.",
+      "securite": "N’essaie jamais de provoquer un patinage, un dérapage ou une accélération pour cette leçon. Tous les exemples se simulent sur papier, sans conduire.",
+      "defi": "Pendant 3 minutes, dessine une voiture qui accélère, roule à vitesse constante puis tourne. Ajoute les forces nécessaires et explique pourquoi une route glissante modifie les possibilités.",
+      "quiz": [
+        {
+          "q": "Quelle action permet à une roue motrice de faire avancer la voiture ?",
+          "choix": [
+            "Le moteur attire directement la route vers lui",
+            "Le pneu tournant produit forcément une poussée sans contact au sol",
+            "La route exerce une force vers l’avant sur le pneu"
+          ],
+          "rep": "La route exerce une force vers l’avant sur le pneu",
+          "expl": "Le contact pneu-route transmet la force qui accélère la voiture."
+        },
+        {
+          "q": "Une roue qui patine garantit-elle une forte accélération ?",
+          "choix": [
+            "Oui, toujours",
+            "Non",
+            "Oui, toute rotation plus rapide transmet forcément plus de force"
+          ],
+          "rep": "Non",
+          "expl": "La vitesse de rotation ne garantit pas la transmission de l’effort au sol."
+        },
+        {
+          "q": "Pourquoi consommer à vitesse constante sur route plane ?",
+          "choix": [
+            "Pour compenser les résistances",
+            "Pour augmenter obligatoirement la vitesse",
+            "Parce qu’un objet doit toujours accélérer pour rester en mouvement"
+          ],
+          "rep": "Pour compenser les résistances",
+          "expl": "L’air et le roulement s’opposent au mouvement."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-07-01"
+    },
+    {
+      "titre": "Le moteur thermique transforme une combustion",
+      "accroche": "Sous le capot, une chaîne relie l’énergie du carburant à la rotation.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Une réserve chimique",
+          "texte": "Le carburant contient de l’énergie chimique. Dans un moteur à combustion interne, sa réaction avec l’oxygène de l’air produit des gaz chauds ; leur pression aide à produire un mouvement.",
+          "schema": "Réservoir et arrivée d’air vers chambre fermée ; gaz orange en expansion poussant un piston. Ne pas dessiner une suite de détonations comme fonctionnement recherché."
+        },
+        {
+          "titre": "Le piston devient rotation",
+          "texte": "Le piston monte et descend dans un cylindre. Une bielle relie ce mouvement à un axe coudé, le vilebrequin, qui tourne : c’est un mécanisme de conversion du mouvement.",
+          "schema": "Cylindre vertical, piston, bielle oblique, vilebrequin en bas. Animation lente d’un aller-retour converti en rotation, pièces légendées une à une."
+        },
+        {
+          "titre": "Quatre temps courants",
+          "texte": "Un moteur automobile à quatre temps enchaîne admission, compression, combustion avec détente, puis échappement. Dans ce cycle, deux tours de vilebrequin correspondent aux quatre déplacements du piston.",
+          "schema": "Quatre cases de même cylindre avec flèches admission, compression, détente, échappement. Compteur du vilebrequin allant de zéro à deux tours sur la séquence complète."
+        },
+        {
+          "titre": "Essence et diesel diffèrent notamment à l’allumage",
+          "texte": "Dans un moteur à essence courant, une étincelle déclenche la combustion. Dans un diesel, le carburant injecté s’enflamme au contact de l’air suffisamment chauffé par compression, sans bougie d’allumage.",
+          "schema": "Deux cylindres côte à côte : étincelle sur essence, air comprimé chaud puis injection sur diesel. Préciser « principes courants » ; aucune pièce à manipuler."
+        },
+        {
+          "titre": "Toute l’énergie ne devient pas mouvement",
+          "texte": "Une partie importante de l’énergie du carburant devient chaleur rejetée par les gaz et le refroidissement. Le rendement varie selon le moteur et son fonctionnement ; il n’existe pas un pourcentage unique pour tous les trajets.",
+          "schema": "Bilan d’énergie avec sortie mouvement, sortie gaz chauds et sortie refroidissement. Largeurs qualitatives seulement, sans valeur présentée comme universelle."
+        }
+      ],
+      "dans_ta_vie": "Tu comprends le rôle du carburant, de l’air et du mouvement mécanique. Tu sais pourquoi un moteur thermique produit aussi beaucoup de chaleur.",
+      "securite": "N’ouvre aucun élément chaud et ne touche pas au circuit de carburant, à l’allumage ou aux pièces mobiles. Ne fais jamais tourner un moteur thermique dans un espace fermé, même pour une démonstration.",
+      "defi": "Prends 4 minutes pour raconter le cycle avec quatre dessins numérotés. Mime seulement les mouvements avec un crayon sur une feuille, puis explique la différence d’allumage entre essence et diesel.",
+      "quiz": [
+        {
+          "q": "D’où vient principalement l’énergie d’un moteur thermique automobile ?",
+          "choix": [
+            "Uniquement de l’énergie électrique de démarrage",
+            "De l’énergie chimique du carburant",
+            "Uniquement de la pression des pneus"
+          ],
+          "rep": "De l’énergie chimique du carburant",
+          "expl": "La combustion permet d’en transformer une partie en énergie mécanique."
+        },
+        {
+          "q": "Quel mécanisme relie piston et vilebrequin ?",
+          "choix": [
+            "Une bielle",
+            "Une soupape",
+            "Un embrayage placé à l’intérieur du cylindre"
+          ],
+          "rep": "Une bielle",
+          "expl": "La bielle participe à la conversion du mouvement alternatif en rotation."
+        },
+        {
+          "q": "Combien de tours de vilebrequin pour le cycle complet à quatre temps ?",
+          "choix": [
+            "Un tour",
+            "Quatre tours",
+            "Deux tours"
+          ],
+          "rep": "Deux tours",
+          "expl": "Quatre courses du piston correspondent à deux tours dans cette architecture."
+        }
+      ],
+      "video": {
+        "titre": "Comment fonctionne le moteur d'une voiture ? - C'est pas sorcier",
+        "chaine": "C'est pas sorcier"
+      },
+      "id": "CM-07-02"
+    },
+    {
+      "titre": "La voiture électrique déplace aussi de l’énergie",
+      "accroche": "Elle change le chemin entre la réserve embarquée et les roues.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Batterie vers moteur",
+          "texte": "La batterie de traction stocke de l’énergie électrochimique. Des circuits de puissance l’envoient au moteur, qui utilise des champs magnétiques pour produire une rotation.",
+          "schema": "Chaîne batterie, électronique de puissance, moteur, roues. Flèches orange d’énergie ; moteur avec aimants symboliques. Batterie fermée, aucun bornier visible."
+        },
+        {
+          "titre": "L’électronique dose le mouvement",
+          "texte": "L’électronique de puissance adapte les tensions et courants au moteur. Un onduleur, présent dans de nombreuses architectures, transforme l’alimentation continue de la batterie en une alimentation commandée adaptée au moteur.",
+          "schema": "Batterie avec ligne continue, bloc « adaptation », moteur avec signaux alternés commandés. Mention « architecture courante », sans schéma de câblage."
+        },
+        {
+          "titre": "Recharger est une conversion encadrée",
+          "texte": "La recharge apporte de l’énergie depuis une source extérieure. Selon le système, la conversion et le contrôle se trouvent dans le véhicule et dans la borne ; la puissance disponible peut varier au cours de la charge.",
+          "schema": "Borne et voiture avec blocs de conversion répartis ; courbe de puissance qui peut diminuer en fin de charge. Aucun temps universel de recharge."
+        },
+        {
+          "titre": "Récupérer en ralentissant",
+          "texte": "Lors d’un freinage régénératif, le moteur peut fonctionner en générateur. Une partie de l’énergie du mouvement retourne à la batterie ; des limites et des pertes empêchent de tout récupérer.",
+          "schema": "Voiture ralentissant ; flèches des roues vers moteur puis batterie. Petite flèche rouge « pertes » ; frein mécanique représenté comme complément."
+        },
+        {
+          "titre": "Hybride ne désigne pas une seule recette",
+          "texte": "Une voiture hybride associe généralement moteur thermique et motorisation électrique. Les architectures et la recharge possible varient ; certaines se branchent, d’autres récupèrent surtout de l’énergie en roulant et au freinage.",
+          "schema": "Deux schémas fonctionnels hybrides : avec prise extérieure et sans prise. Moteurs thermique et électrique présents ; aucune autonomie ni économie garantie."
+        }
+      ],
+      "dans_ta_vie": "Tu distingues le moteur électrique, la batterie et la recharge. Tu comprends pourquoi récupérer au freinage ne permet pas de rouler indéfiniment sans apport d’énergie.",
+      "securite": "Ne touche pas aux composants de traction, aux câbles orange ou à une batterie endommagée. Un véhicule électrique ou hybride doit être pris en charge par des professionnels formés ; aucune réparation de recharge dans ce parcours.",
+      "defi": "Pendant 3 minutes, dessine les flèches d’énergie d’une voiture électrique qui accélère, puis qui ralentit avec récupération. Ajoute une flèche de pertes et explique pourquoi le retour ne peut pas tout restituer.",
+      "quiz": [
+        {
+          "q": "Que fait le moteur électrique en traction ?",
+          "choix": [
+            "Il transforme de l’énergie électrique en rotation",
+            "Il transforme directement la chaleur de l’air en rotation sans autre apport",
+            "Il stocke lui-même toute l’énergie nécessaire au trajet"
+          ],
+          "rep": "Il transforme de l’énergie électrique en rotation",
+          "expl": "Les champs magnétiques participent à la production de mouvement."
+        },
+        {
+          "q": "Que récupère le freinage régénératif ?",
+          "choix": [
+            "Toute l’énergie sans perte",
+            "La totalité de l’énergie dépensée depuis le départ, quelles que soient les résistances",
+            "Une partie de l’énergie du mouvement"
+          ],
+          "rep": "Une partie de l’énergie du mouvement",
+          "expl": "La récupération reste limitée par le système, la batterie et les conditions."
+        },
+        {
+          "q": "Toutes les voitures hybrides se rechargent-elles sur une prise ?",
+          "choix": [
+            "Oui, sans exception",
+            "Non",
+            "Oui, sinon aucun moteur électrique ne pourrait fonctionner"
+          ],
+          "rep": "Non",
+          "expl": "Les hybrides rechargeables constituent une catégorie parmi plusieurs architectures."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-07-03"
+    },
+    {
+      "titre": "Les vitesses ne donnent pas de force gratuite",
+      "accroche": "Des engrenages échangent vitesse de rotation et effort transmis.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Le couple, un effort de rotation",
+          "texte": "Le couple décrit l’effet qui tend à faire tourner un axe. Une même force appliquée plus loin de l’axe produit davantage de couple, comme avec un levier plus long.",
+          "schema": "Axe central avec deux leviers de longueurs différentes ; même force à leur extrémité. Flèches de rotation plus importantes sur le levier long, sans outil réel conseillé."
+        },
+        {
+          "titre": "Les engrenages adaptent le mouvement",
+          "texte": "Deux engrenages de tailles différentes changent la vitesse de rotation et le couple transmis. Gagner du couple par démultiplication s’accompagne d’une baisse de vitesse de rotation, avec des pertes réelles.",
+          "schema": "Petite roue dentée entraînant une grande ; repères de tours montrant moins de tours pour la grande. Flèches couple et vitesse opposées, bilan d’énergie conservé."
+        },
+        {
+          "titre": "La boîte choisit un compromis",
+          "texte": "Une boîte de vitesses adapte la rotation du moteur aux besoins des roues. Les rapports courts favorisent l’effort aux roues ; les rapports longs favorisent une vitesse de rotation plus faible du moteur à vitesse donnée.",
+          "schema": "Deux paires d’engrenages symboliques, rapport court et long. À vitesse routière comparable, compte-tours du moteur différents ; aucune consigne de conduite."
+        },
+        {
+          "titre": "L’embrayage sépare temporairement",
+          "texte": "Dans une transmission manuelle courante, l’embrayage permet de relier ou séparer progressivement moteur et transmission. Cela aide notamment à démarrer et à changer de rapport ; d’autres transmissions utilisent d’autres dispositifs.",
+          "schema": "Deux disques séparés puis rapprochés, entre moteur et boîte. Flèches de rotation indépendantes puis liées ; mention « principe simplifié »."
+        },
+        {
+          "titre": "Le différentiel autorise deux vitesses",
+          "texte": "En virage, la roue extérieure parcourt plus de distance que la roue intérieure. Le différentiel permet notamment à ces deux roues motrices de tourner à des vitesses différentes.",
+          "schema": "Vue du dessus : deux roues sur deux arcs concentriques, arc extérieur plus long. Bloc différentiel au milieu de l’essieu ; flèches de rotation de tailles différentes."
+        }
+      ],
+      "dans_ta_vie": "Tu comprends pourquoi multiplier les rapports ne multiplie pas l’énergie disponible. Tu peux expliquer le rôle d’un différentiel sans entrer dans sa mécanique interne.",
+      "securite": "Ne manipule jamais une transmission, un cric ou une roue soulevée pour ce défi. Ne te place pas sous un véhicule ; utilise seulement des dessins.",
+      "defi": "Prends 4 minutes pour dessiner deux roues suivant les bords d’un virage. Compare leurs distances, puis dessine deux engrenages de tailles différentes et raconte le compromis entre vitesse et couple.",
+      "quiz": [
+        {
+          "q": "Que décrit le couple ?",
+          "choix": [
+            "Une vitesse de rotation",
+            "Une quantité totale d’énergie stockée",
+            "Un effet qui tend à faire tourner un axe"
+          ],
+          "rep": "Un effet qui tend à faire tourner un axe",
+          "expl": "Il dépend notamment de la force et de sa distance à l’axe."
+        },
+        {
+          "q": "Une démultiplication crée-t-elle de l’énergie gratuite ?",
+          "choix": [
+            "Oui, à chaque changement de rapport",
+            "Non",
+            "Oui, dès que le couple augmente"
+          ],
+          "rep": "Non",
+          "expl": "Le gain de couple s’échange contre une vitesse de rotation plus faible, avec des pertes."
+        },
+        {
+          "q": "Pourquoi les roues intérieure et extérieure tournent-elles différemment en virage ?",
+          "choix": [
+            "Elles parcourent des distances différentes",
+            "Le volant impose une pression différente dans les pneus",
+            "Le moteur donne automatiquement deux carburants différents aux roues"
+          ],
+          "rep": "Elles parcourent des distances différentes",
+          "expl": "Le différentiel permet cette différence dans une architecture courante."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-07-04"
+    },
+    {
+      "titre": "Pneus et suspension : quatre petits contacts essentiels",
+      "accroche": "Le confort n’est qu’une partie du travail des roues.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Le pneu transmet plusieurs efforts",
+          "texte": "Les pneus transmettent les efforts d’accélération, de freinage et de virage. Leur comportement dépend notamment de leur état, de leur pression, de la route, de la température et de la charge.",
+          "schema": "Quatre contacts au sol vus du dessus ; trois types de flèches : longitudinales, latérales, verticales. Aucun contact dessiné comme indéformable ou garanti."
+        },
+        {
+          "titre": "La gomme se déforme",
+          "texte": "Un pneu se déforme lorsqu’il roule. Cette déformation participe au contact et entraîne aussi des pertes d’énergie. Sa pression prévue dépend du véhicule et de ses conditions de charge.",
+          "schema": "Roue en coupe légèrement aplatie au contact ; zone de déformation colorée et petite flèche rouge de pertes. Notice du véhicule à côté, sans pression universelle."
+        },
+        {
+          "titre": "L’eau gêne le contact",
+          "texte": "Sur chaussée mouillée, le comportement du contact change. Les sculptures aident à évacuer l’eau ; si l’eau sépare suffisamment le pneu de la route, un aquaplanage peut survenir et réduire fortement le contrôle.",
+          "schema": "Trois vues : sol sec, eau évacuée par rainures, couche d’eau séparant le pneu. Dernière vue en alerte rouge, sans vitesse seuil garantie."
+        },
+        {
+          "titre": "Le ressort porte et laisse bouger",
+          "texte": "La suspension permet un mouvement relatif entre roues et caisse. Les ressorts supportent la charge et se déforment sur les irrégularités ; ils peuvent ensuite continuer à osciller.",
+          "schema": "Roue sur bosse, ressort vertical et caisse au-dessus. Animation du ressort comprimé puis oscillant ; silhouettes d’occupants absentes pour rester mécanique."
+        },
+        {
+          "titre": "L’amortisseur calme les oscillations",
+          "texte": "L’amortisseur freine les mouvements de suspension et dissipe de l’énergie, principalement en chaleur. Il aide à maîtriser les oscillations et le contact des roues, dans les limites de l’ensemble.",
+          "schema": "Deux courbes après une bosse : oscillations prolongées puis rapidement atténuées. Amortisseur symbolique à côté avec petite flèche rouge « chaleur »."
+        }
+      ],
+      "dans_ta_vie": "Tu comprends que pneus et suspension participent à la maîtrise du véhicule. Tu sais pourquoi aucun chiffre de pression ou de tenue de route ne convient à tous les modèles.",
+      "securite": "Le défi ne demande ni gonflage, ni démontage, ni test d’adhérence. Consulte la notice pour les informations du véhicule ; fais examiner toute anomalie par un professionnel.",
+      "defi": "Pendant 3 minutes, dessine un ressort seul puis un ressort avec amortisseur après une bosse imaginaire. Ajoute les mouvements et les pertes de chaleur ; explique pourquoi confort et contact au sol sont liés.",
+      "quiz": [
+        {
+          "q": "Les pneus servent-ils uniquement à supporter le poids ?",
+          "choix": [
+            "Oui, les freins touchent directement la route",
+            "Non, ils transmettent aussi freinage, traction et virage",
+            "Oui, la direction agit sans contact latéral des pneus"
+          ],
+          "rep": "Non, ils transmettent aussi freinage, traction et virage",
+          "expl": "Le contact pneu-route transmet plusieurs composantes de force."
+        },
+        {
+          "q": "Qu’est-ce que l’aquaplanage ?",
+          "choix": [
+            "Une séparation suffisante du pneu et de la route par l’eau",
+            "Une amélioration automatique du freinage sous la pluie",
+            "Une suspension qui empêche les roues de toucher le sol"
+          ],
+          "rep": "Une séparation suffisante du pneu et de la route par l’eau",
+          "expl": "Une couche d’eau peut réduire fortement les efforts transmis au sol."
+        },
+        {
+          "q": "Quel rôle joue l’amortisseur ?",
+          "choix": [
+            "Porter seul toute la charge sans ressort dans le montage décrit",
+            "Maintenir la caisse sans aucun mouvement en toute situation",
+            "Freiner les oscillations de la suspension"
+          ],
+          "rep": "Freiner les oscillations de la suspension",
+          "expl": "Il dissipe une partie de l’énergie des mouvements de suspension."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-07-05"
+    },
+    {
+      "titre": "Freiner, c’est transformer l’énergie du mouvement",
+      "accroche": "La voiture continue de parcourir de la distance avant et pendant le freinage.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Les freins à friction chauffent",
+          "texte": "Dans un frein à disque courant, des plaquettes serrent un disque lié à la roue. Le frottement transforme une partie de l’énergie du mouvement en chaleur.",
+          "schema": "Roue et disque gris ; deux plaquettes venant des côtés. Flèches de rotation diminuant et disque devenant orange, sans main ni outil."
+        },
+        {
+          "titre": "Réagir prend un temps",
+          "texte": "Avant le freinage, le véhicule avance pendant la perception et la réaction du conducteur. À 50 km/h, une seule seconde représente environ 14 mètres ; le délai réel varie.",
+          "schema": "Frise d’une seconde à 50 km/h avec véhicule parcourant environ 14 m. Mention « exemple de délai, pas temps de réaction garanti »."
+        },
+        {
+          "titre": "La distance d’arrêt additionne",
+          "texte": "La distance d’arrêt comprend la distance parcourue pendant la réaction puis celle du freinage. Route, pneus, freins, pente et autres conditions influencent le résultat.",
+          "schema": "Deux segments successifs : jaune « réaction » et rouge « freinage », accolade totale « arrêt ». Aucun total universel annoncé."
+        },
+        {
+          "titre": "La vitesse pèse au carré",
+          "texte": "À masse identique, doubler la vitesse multiplie l’énergie du mouvement par quatre. Dans un modèle à décélération constante, la distance de freinage est aussi multipliée par quatre, hors distance de réaction.",
+          "schema": "Deux voitures de même masse à vitesses v et 2v ; un puis quatre blocs d’énergie. Deux distances de freinage dans le rapport quatre, mention « modèle simplifié »."
+        },
+        {
+          "titre": "L’ABS limite le blocage",
+          "texte": "Le système antiblocage, appelé ABS, module le freinage pour limiter le blocage des roues. Il aide à préserver une capacité de direction, sans supprimer les limites d’adhérence ni garantir une distance plus courte partout.",
+          "schema": "Capteur de roue vers bloc de contrôle, puis pression de freinage modulée. Deux pictogrammes « direction aidée » et « adhérence limitée », sans manœuvre à reproduire."
+        }
+      ],
+      "dans_ta_vie": "Tu distingues ralentir, freiner et s’arrêter. Tu comprends pourquoi les aides ne rendent jamais une vitesse ou une distance automatiquement sans risque.",
+      "securite": "N’effectue aucun essai de freinage ou de réaction sur route pour cette leçon. Respecte le Code de la route, les conditions de circulation et la notice ; un doute sur le freinage impose un contrôle professionnel.",
+      "defi": "Prends 4 minutes pour dessiner une distance d’arrêt avec deux couleurs. Imagine ensuite la même situation à vitesse doublée : indique ce qui double pendant un délai identique et ce qui peut quadrupler dans le modèle de freinage.",
+      "quiz": [
+        {
+          "q": "Que devient principalement l’énergie dans un frein à friction ?",
+          "choix": [
+            "De la chaleur",
+            "Une réserve de carburant",
+            "Une énergie entièrement conservée pour la prochaine accélération"
+          ],
+          "rep": "De la chaleur",
+          "expl": "Les frottements dissipent l’énergie du mouvement."
+        },
+        {
+          "q": "Que comprend la distance d’arrêt ?",
+          "choix": [
+            "Le freinage uniquement",
+            "La réaction uniquement",
+            "La réaction puis le freinage"
+          ],
+          "rep": "La réaction puis le freinage",
+          "expl": "La voiture avance déjà avant l’action effective des freins."
+        },
+        {
+          "q": "L’ABS supprime-t-il les limites d’adhérence ?",
+          "choix": [
+            "Oui, même sur une couche d’eau",
+            "Non",
+            "Oui, si la voiture possède quatre freins à disque"
+          ],
+          "rep": "Non",
+          "expl": "Il régule le freinage mais ne crée pas une adhérence illimitée."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-07-06"
+    },
+    {
+      "titre": "Où part l’énergie sur un trajet ?",
+      "accroche": "Air, pneus, relief et équipements partagent la réserve embarquée.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Fendre l’air coûte",
+          "texte": "La résistance de l’air augmente fortement avec la vitesse relative. Dans des conditions comparables, sa force varie approximativement comme le carré de cette vitesse ; la puissance nécessaire augmente encore plus vite.",
+          "schema": "Voiture face à flèches d’air à deux vitesses relatives. Flèche de résistance plus grande au second cas ; formule optionnelle « force ≈ vitesse² », avec conditions comparables."
+        },
+        {
+          "titre": "Rouler déforme et chauffe",
+          "texte": "Les pneus et d’autres éléments dissipent de l’énergie pendant le roulement. Leur contribution dépend notamment de la charge et des caractéristiques du véhicule et de la route.",
+          "schema": "Contact pneu-route avec déformation et ondes rouges. Petite liste illustrée charge, pneu, route ; aucune recommandation de pression hors notice."
+        },
+        {
+          "titre": "Monter stocke de l’énergie en altitude",
+          "texte": "En montant, une voiture gagne de l’énergie potentielle de pesanteur. En redescendant, cette énergie peut contribuer au mouvement ou être dissipée ; une récupération électrique n’en restitue qu’une partie.",
+          "schema": "Voiture gravissant puis descendant une colline. Barres d’énergie d’altitude croissantes puis décroissantes ; branche vers batterie avec pertes rouges."
+        },
+        {
+          "titre": "Accélérer puis freiner a un bilan",
+          "texte": "Accélérer augmente l’énergie du mouvement. Freiner la dissipe ou en récupère une partie. Des arrêts répétés changent donc le bilan ; leur effet dépend aussi du type de motorisation.",
+          "schema": "Frise vitesse avec trois accélérations et arrêts. Jetons d’énergie entrant, puis sortant vers chaleur et éventuellement batterie ; récupération toujours partielle."
+        },
+        {
+          "titre": "Le confort utilise aussi de l’énergie",
+          "texte": "Chauffage, climatisation et équipements demandent de l’énergie. Leur effet relatif sur la consommation et l’autonomie dépend du véhicule, de la température, de la durée et des autres usages.",
+          "schema": "Réserve centrale vers roues, chauffage, climatisation et électronique. Taille des flèches variable selon deux scénarios ; aucun pourcentage fixe ni autonomie garantie."
+        }
+      ],
+      "dans_ta_vie": "Tu comprends pourquoi un même véhicule ne consomme pas pareil sur tous les trajets. Tu peux comparer des scénarios sans croire à un chiffre d’autonomie valable partout.",
+      "securite": "Aucun essai de vitesse ni changement technique pour vérifier ces effets. Ne coupe jamais un équipement nécessaire à la visibilité ou à la sécurité pour économiser de l’énergie.",
+      "defi": "Pendant 3 minutes, compare sur papier trois trajets imaginaires : plat rapide, montée, ville avec arrêts. Pour chacun, nomme deux dépenses d’énergie et ce qui pourrait être partiellement récupéré.",
+      "quiz": [
+        {
+          "q": "À conditions comparables, que fait la force aérodynamique quand la vitesse relative double ?",
+          "choix": [
+            "Elle est approximativement multipliée par deux",
+            "Elle reste identique",
+            "Elle est approximativement multipliée par quatre"
+          ],
+          "rep": "Elle est approximativement multipliée par quatre",
+          "expl": "Le modèle courant fait varier cette force comme le carré de la vitesse relative."
+        },
+        {
+          "q": "Quelle énergie augmente pendant une montée ?",
+          "choix": [
+            "Uniquement l’énergie de la batterie par création spontanée",
+            "L’énergie potentielle de pesanteur",
+            "L’énergie du mouvement obligatoirement, même à vitesse constante"
+          ],
+          "rep": "L’énergie potentielle de pesanteur",
+          "expl": "Le véhicule gagne de l’altitude dans le champ de pesanteur."
+        },
+        {
+          "q": "Un chiffre d’autonomie reste-t-il identique quels que soient les usages ?",
+          "choix": [
+            "Non",
+            "Oui, toujours",
+            "Oui, dès que la batterie ou le réservoir est plein"
+          ],
+          "rep": "Non",
+          "expl": "Vitesse, relief, température et équipements modifient le bilan énergétique."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-07-07"
+    },
+    {
+      "titre": "Les aides observent, elles ne savent pas tout",
+      "accroche": "Capteurs, calculateurs et protections ont chacun un domaine de fonctionnement.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Les capteurs ont un point de vue",
+          "texte": "Caméras, radars et autres capteurs mesurent certaines caractéristiques de l’environnement. Leur portée et leur qualité dépendent des conditions ; salissures, masques ou météo peuvent gêner la perception.",
+          "schema": "Voiture vue du dessus avec champs de perception différents. Un obstacle masquant une zone et pluie stylisée ; zones d’incertitude hachurées, sans couverture parfaite."
+        },
+        {
+          "titre": "Le calcul interprète des mesures",
+          "texte": "Une aide à la conduite utilise des mesures et des règles pour décider d’alerter ou d’agir. Une erreur de détection reste possible ; une alerte absente ne prouve pas l’absence de danger.",
+          "schema": "Capteurs vers calculateur puis deux sorties « alerte » et « action ». Point d’interrogation sur une silhouette mal détectée ; aucune promesse de compréhension humaine."
+        },
+        {
+          "titre": "La stabilité a une assistance",
+          "texte": "Le contrôle électronique de stabilité compare notamment mouvement et direction demandée. Il peut agir sur certains freins et le moteur pour limiter un écart, dans les limites de l’adhérence disponible.",
+          "schema": "Vue du dessus : trajectoire demandée en pointillés et mouvement réel. Petite action sur une roue ; trajectoires se rapprochant partiellement, pas correction magique."
+        },
+        {
+          "titre": "Ceinture et airbag se complètent",
+          "texte": "Lors d’un choc, les occupants ont tendance à poursuivre leur mouvement. La ceinture et, selon le choc, les airbags limitent certains mouvements et efforts ; ils ne rendent pas tous les accidents survivables.",
+          "schema": "Voiture arrêtée par choc symbolique, silhouette retenue par ceinture et airbag déployé. Flèches de mouvement limitées ; aucun scénario de choc présenté comme sûr."
+        },
+        {
+          "titre": "Un voyant est un message à interpréter",
+          "texte": "Un voyant signale une information prévue par le constructeur. Couleur et symbole ne suffisent pas toujours à décider seuls : la notice donne la conduite à tenir pour ce modèle.",
+          "schema": "Tableau de bord fictif avec trois symboles non techniques détaillés ; flèche vers notice correspondante. Outil de réparation barré pour l’utilisateur."
+        }
+      ],
+      "dans_ta_vie": "Tu comprends pourquoi une aide ne dispense pas de vigilance. Tu sais que la notice du modèle est indispensable pour interpréter un message ou une limite de fonctionnement.",
+      "securite": "Ne teste jamais volontairement une aide avec une personne ou un obstacle. Ne désactive pas les protections et ne répare aucun circuit de sécurité. En cas de danger, mets-toi en sécurité selon la situation et appelle le 112 si nécessaire.",
+      "defi": "Prends 4 minutes pour consulter la notice numérique d’un véhicule, sans être au volant en circulation. Choisis une aide, note une condition de fonctionnement et une limite, puis explique pourquoi son nom ne suffit pas à connaître ses capacités.",
+      "quiz": [
+        {
+          "q": "Une absence d’alerte prouve-t-elle l’absence de danger ?",
+          "choix": [
+            "Oui, avec toute aide récente",
+            "Non",
+            "Oui, si les capteurs n’affichent pas de panne"
+          ],
+          "rep": "Non",
+          "expl": "Les capteurs et les traitements ont des limites de perception."
+        },
+        {
+          "q": "Le contrôle de stabilité crée-t-il une adhérence illimitée ?",
+          "choix": [
+            "Non",
+            "Oui, dans tous les virages",
+            "Oui, dès qu’il agit sur certains freins"
+          ],
+          "rep": "Non",
+          "expl": "Son action reste contrainte par le contact pneu-route et la physique."
+        },
+        {
+          "q": "Où vérifier la signification d’un voyant pour un modèle donné ?",
+          "choix": [
+            "Dans la seule couleur du voyant, sans tenir compte du symbole",
+            "Dans la notice d’un autre modèle, supposé identique",
+            "Dans la notice correspondante"
+          ],
+          "rep": "Dans la notice correspondante",
+          "expl": "La conduite à tenir dépend du symbole et du véhicule concernés."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-07-08"
+    }
+  ]
+}

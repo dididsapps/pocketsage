@@ -1,0 +1,583 @@
+{
+  "id": "CM-05",
+  "titre": "Le smartphone",
+  "public": "ado-adulte",
+  "lecons": [
+    {
+      "titre": "Ton téléphone est un ordinateur de poche",
+      "accroche": "Une application ressemble à un objet, mais c’est d’abord une suite d’instructions.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Des instructions exécutées",
+          "texte": "Le processeur exécute des instructions : calculer, comparer, déplacer des données. Il travaille avec d’autres circuits spécialisés ; un smartphone n’a pas un petit humain caché qui comprend chaque demande.",
+          "schema": "Téléphone fermé puis vue fonctionnelle : processeur central relié à quatre blocs spécialisés. Jetons d’instructions circulants ; pas de cerveau humain dans le boîtier."
+        },
+        {
+          "titre": "Le système organise le travail",
+          "texte": "Le système d’exploitation gère notamment les applications, les fichiers et l’accès au matériel. Comme un organisateur, il partage les ressources et applique des règles ; la comparaison a ses limites.",
+          "schema": "Bloc système au centre, applications au-dessus et matériel en dessous. Flèches passant par le système ; cadenas sur certains accès."
+        },
+        {
+          "titre": "La mémoire de travail",
+          "texte": "La mémoire vive, ou RAM, garde temporairement des données utiles aux programmes en cours. C’est une table de travail : rapide d’accès, mais différente du rangement durable des fichiers.",
+          "schema": "Table imaginaire « RAM » portant trois dossiers ouverts. Placard fermé « stockage » à côté ; flèches entre les deux, avec mention « comparaison »."
+        },
+        {
+          "titre": "Le stockage conserve",
+          "texte": "Le stockage conserve applications, photos et autres fichiers après l’arrêt normal. Une application peut utiliser à la fois du stockage et de la mémoire vive : ce ne sont pas deux noms pour la même chose.",
+          "schema": "Téléphone éteint puis rallumé ; fichiers restant dans un bloc stockage. Bloc RAM vide pendant l’arrêt, puis rempli au démarrage."
+        },
+        {
+          "titre": "L’écran montre un résultat",
+          "texte": "Quand tu touches une icône, des capteurs signalent le geste. Le logiciel décide quoi faire, puis prépare une nouvelle image. Cette chaîne rapide donne l’impression de toucher directement les objets affichés.",
+          "schema": "Frise en quatre cases : doigt, détection, traitement logiciel, nouvelle image. Flèches numérotées ; téléphone immobile sur une table."
+        }
+      ],
+      "dans_ta_vie": "Tu comprends pourquoi une application peut ralentir même si elle semble simple. Tu distingues mémoire de travail, fichiers conservés et image affichée.",
+      "securite": "Aucun démontage n’est nécessaire. Pour les défis de ce thème, reste assis ou immobile dans un lieu sûr ; n’utilise pas le téléphone en conduisant ou en traversant.",
+      "defi": "Pendant 3 minutes, dessine une table de travail et une armoire. Classe-y application installée, photo enregistrée et données du programme en cours ; explique les limites de cette comparaison.",
+      "quiz": [
+        {
+          "q": "Quel composant exécute notamment des instructions ?",
+          "choix": [
+            "Le stockage, sans intervention du processeur",
+            "La couche tactile, qui exécute seule tous les programmes",
+            "Le processeur"
+          ],
+          "rep": "Le processeur",
+          "expl": "Le processeur effectue les opérations prévues par les programmes."
+        },
+        {
+          "q": "Quelle est la fonction de la mémoire vive ?",
+          "choix": [
+            "Conserver durablement tous les fichiers même sans alimentation",
+            "Garder temporairement des données de travail",
+            "Mesurer directement la capacité chimique de la batterie"
+          ],
+          "rep": "Garder temporairement des données de travail",
+          "expl": "La RAM sert aux opérations en cours ; ce n’est pas le stockage durable."
+        },
+        {
+          "q": "Que conserve normalement le stockage après un arrêt ?",
+          "choix": [
+            "Les fichiers enregistrés",
+            "Uniquement les données temporaires de la mémoire vive",
+            "Uniquement les programmes encore ouverts à l’arrêt"
+          ],
+          "rep": "Les fichiers enregistrés",
+          "expl": "Le stockage est conçu pour conserver des données sans alimentation permanente."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-05-01"
+    },
+    {
+      "titre": "Comment le verre sait où est ton doigt",
+      "accroche": "L’écran affiche une image et détecte un geste grâce à deux fonctions différentes.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Une image faite de pixels",
+          "texte": "L’écran est composé de petits éléments appelés pixels. En faisant varier leur lumière et leurs couleurs, le téléphone crée textes, photos et animations.",
+          "schema": "Mot agrandi progressivement jusqu’à une grille de pixels carrés. Faire apparaître les sous-éléments rouge, vert et bleu sur un pixel symbolique, sans disposition présentée comme universelle."
+        },
+        {
+          "titre": "Deux grandes façons d’éclairer",
+          "texte": "Un écran à cristaux liquides module la lumière d’un rétroéclairage. Dans un écran à diodes organiques, de petits éléments émettent eux-mêmes de la lumière. Le fonctionnement exact varie selon la technologie.",
+          "schema": "Deux coupes : source lumineuse derrière des volets de pixels ; pixels émetteurs sans source arrière. Légendes « cristaux liquides » et « diodes organiques »."
+        },
+        {
+          "titre": "Le doigt modifie un signal électrique",
+          "texte": "Un écran tactile capacitif détecte des modifications électriques liées à la présence du doigt. Il ne repère pas simplement sa chaleur ni la force avec laquelle on appuie.",
+          "schema": "Grille de capteurs transparents au-dessus de l’affichage. Doigt approchant un point ; halo violet local puis coordonnées affichées. Thermomètre et grosse flèche de pression barrés."
+        },
+        {
+          "titre": "Le logiciel interprète la position",
+          "texte": "Le système reçoit des positions et leurs variations dans le temps. Il peut reconnaître un appui, un déplacement ou plusieurs doigts, selon l’écran et l’application.",
+          "schema": "Trois vignettes sur la même grille : point fixe, trajet d’un point, deux points qui s’écartent. Flèches vers actions « toucher », « glisser », « agrandir »."
+        },
+        {
+          "titre": "Un gant ou de l’eau change la situation",
+          "texte": "Un gant non adapté peut empêcher la détection. De l’eau peut perturber certains écrans. Ces effets viennent des conditions électriques du contact, pas d’une humeur de l’appareil.",
+          "schema": "Trois doigts symboliques : nu, ganté, écran mouillé. Résultat « détecté », « variable », « perturbation possible » ; aucune expérience avec de l’eau suggérée."
+        }
+      ],
+      "dans_ta_vie": "Tu comprends pourquoi appuyer plus fort ne résout pas forcément un écran qui ne répond pas. Tu sépares le verre, l’affichage et la couche de détection.",
+      "securite": "Ne mouille pas un téléphone pour tester sa détection. N’appuie pas sur un écran cassé et ne retire pas de fragments de verre ; fais prendre en charge un appareil endommagé.",
+      "defi": "Prends 3 minutes, téléphone intact posé sur une table, pour faire un appui, un glissement et un agrandissement dans une image déjà disponible. Décris la différence entre le geste détecté et le changement affiché.",
+      "quiz": [
+        {
+          "q": "Qu’est-ce qu’un pixel ?",
+          "choix": [
+            "Un élément de détection tactile uniquement",
+            "Un petit élément de l’image affichée",
+            "Un fichier photo complet stocké derrière le verre"
+          ],
+          "rep": "Un petit élément de l’image affichée",
+          "expl": "L’ensemble des pixels permet de composer l’image de l’écran."
+        },
+        {
+          "q": "Que détecte principalement un écran tactile capacitif ?",
+          "choix": [
+            "Une modification électrique liée au doigt",
+            "Uniquement la chaleur du doigt",
+            "Uniquement la force de pression"
+          ],
+          "rep": "Une modification électrique liée au doigt",
+          "expl": "La détection capacitive repose sur des variations de grandeurs électriques."
+        },
+        {
+          "q": "Appuyer plus fort résout-il toujours un problème de détection ?",
+          "choix": [
+            "Oui, une pression plus forte rend toujours le doigt mieux détectable",
+            "Oui, même si la détection est perturbée par de l’eau",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "La cause peut être logicielle, matérielle ou liée aux conditions de contact."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-05-02"
+    },
+    {
+      "titre": "La photo est mesurée puis calculée",
+      "accroche": "Le capteur reçoit de la lumière ; le fichier final demande aussi du traitement.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "L’objectif dirige la lumière",
+          "texte": "L’objectif rassemble et dirige la lumière vers un capteur. La mise au point ajuste le système optique pour rendre nette une zone de la scène.",
+          "schema": "Objet à gauche, lentilles au centre, capteur à droite. Rayons convergeant sur le capteur ; deuxième état légèrement défocalisé avec tache au lieu de point."
+        },
+        {
+          "titre": "Le capteur mesure",
+          "texte": "Le capteur contient de nombreux éléments sensibles à la lumière. Ils produisent des signaux électriques ; l’électronique les mesure pour construire des données d’image.",
+          "schema": "Grille de photosites derrière l’objectif ; luminosités entrantes différentes, colonnes de mesures correspondantes. Distinguer « photosites » du fichier final sans équivalence rigide."
+        },
+        {
+          "titre": "La couleur se reconstruit",
+          "texte": "Beaucoup de capteurs utilisent des filtres colorés sur leurs éléments sensibles. Le traitement combine les mesures voisines pour reconstruire les couleurs de l’image.",
+          "schema": "Grille simplifiée de filtres rouges, verts et bleus ; flèches de plusieurs voisins vers un pixel final coloré. Mention « exemple de capteur »."
+        },
+        {
+          "titre": "Le temps d’exposition change le mouvement",
+          "texte": "Pendant une exposition plus longue, un objet qui bouge peut laisser une image étalée. En faible lumière, le téléphone doit arbitrer entre quantité de lumière, bruit et netteté.",
+          "schema": "Objet en mouvement devant deux capteurs : exposition courte avec silhouette nette, longue avec traînée. Ajouter faible lumière et compromis, sans réglage universel."
+        },
+        {
+          "titre": "Le calcul transforme le résultat",
+          "texte": "Le téléphone peut combiner plusieurs prises, corriger des couleurs ou atténuer du bruit. Une photo finale est donc une représentation traitée ; elle ne garantit pas une copie parfaite de la scène.",
+          "schema": "Trois petites vues différentes convergeant vers une image finale. Étiquettes « combinaison », « correction », « limites » ; conserver un petit détail incertain visible."
+        }
+      ],
+      "dans_ta_vie": "Tu comprends pourquoi beaucoup de pixels ne suffisent pas à garantir une meilleure photo. Tu peux repérer les compromis entre lumière, mouvement et traitement.",
+      "securite": "Ne photographie pas le Soleil directement avec un système optique et ne dirige jamais un laser vers les yeux ou un capteur. Respecte la vie privée des personnes photographiées.",
+      "defi": "Pendant 3 minutes, photographie seulement un objet inanimé à toi, immobile puis déplacé doucement par un proche consentant. Compare le flou sans installer d’application ni modifier de réglage technique.",
+      "quiz": [
+        {
+          "q": "Que reçoit d’abord le capteur photo ?",
+          "choix": [
+            "De la lumière",
+            "Une image numérique déjà terminée par l’objectif",
+            "Des données envoyées obligatoirement par un serveur distant"
+          ],
+          "rep": "De la lumière",
+          "expl": "L’optique dirige de la lumière vers les éléments sensibles du capteur."
+        },
+        {
+          "q": "Quel effet peut avoir une exposition plus longue sur un objet mobile ?",
+          "choix": [
+            "Une netteté parfaite obligatoire",
+            "La suppression automatique de tout bruit et de tout flou",
+            "Un flou de mouvement"
+          ],
+          "rep": "Un flou de mouvement",
+          "expl": "L’objet change de position pendant la durée d’acquisition."
+        },
+        {
+          "q": "Une photo finale peut-elle combiner plusieurs prises ?",
+          "choix": [
+            "Non, le fichier final doit toujours venir d’une seule exposition",
+            "Oui",
+            "Non, le calcul ne peut modifier que le nom du fichier"
+          ],
+          "rep": "Oui",
+          "expl": "La photographie numérique utilise souvent plusieurs étapes de traitement."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-05-03"
+    },
+    {
+      "titre": "Ta voix devient des nombres",
+      "accroche": "Un message vocal voyage sous une forme très différente de l’air qui vibre.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Parler fait vibrer l’air",
+          "texte": "La voix crée des variations de pression dans l’air. Elles arrivent au microphone : le son n’est pas un petit objet qui entre intact dans le téléphone.",
+          "schema": "Bouche à gauche, microphone à droite ; bandes de pression alternées se propageant. Points d’air oscillants localement, sans voyage de chaque point jusqu’au microphone."
+        },
+        {
+          "titre": "Le microphone transforme",
+          "texte": "Le microphone transforme ces variations en signal électrique. Son fonctionnement dépend d’une petite structure sensible ; il ne stocke pas lui-même une phrase comme un carnet.",
+          "schema": "Onde de pression bleue vers membrane symbolique, puis signal électrique violet. Deux étapes bien séparées et aucun intérieur d’appareil à manipuler."
+        },
+        {
+          "titre": "Mesurer à intervalles réguliers",
+          "texte": "La numérisation mesure le signal à de nombreux instants puis représente ces mesures avec des nombres. Chaque mesure est un échantillon ; un enregistrement est une suite organisée de ces valeurs.",
+          "schema": "Courbe continue violette avec traits verticaux régulièrement espacés ; points mesurés puis liste courte de nombres. Mention « illustration ralentie et simplifiée »."
+        },
+        {
+          "titre": "Compresser réduit le volume de données",
+          "texte": "Une compression sans perte permet de retrouver exactement les données d’origine. Une compression avec perte supprime certains détails ; elle cherche souvent à conserver ce qui compte le plus à l’écoute.",
+          "schema": "Deux branches depuis un fichier : sans perte avec restitution identique, avec perte avec détails retirés. Tailles de fichiers illustratives sans pourcentage universel."
+        },
+        {
+          "titre": "Le haut-parleur refait vibrer l’air",
+          "texte": "À la lecture, les nombres sont transformés en un signal pilotant un haut-parleur. Sa membrane déplace l’air et recrée des variations de pression que l’oreille peut entendre.",
+          "schema": "Liste de nombres à gauche, signal violet, haut-parleur central, ondes de pression bleues à droite. Sens inverse de la capture, sans promettre une reproduction parfaite."
+        }
+      ],
+      "dans_ta_vie": "Tu comprends comment un son peut devenir un fichier puis redevenir audible. Tu sais que compresser un message et baisser son volume sonore sont deux opérations différentes.",
+      "securite": "Garde un volume d’écoute modéré et n’approche pas un haut-parleur puissant de l’oreille. N’enregistre pas une autre personne à son insu pour ce défi.",
+      "defi": "Prends 3 minutes pour enregistrer une courte phrase avec l’outil déjà présent, puis la réécouter à volume modéré. Dessine les transformations air, signal, nombres, signal, air ; supprime ensuite cet essai si tu le souhaites.",
+      "quiz": [
+        {
+          "q": "Que transforme un microphone ?",
+          "choix": [
+            "Un signal électrique en variations de pression",
+            "Des nombres en lumière affichée",
+            "Des variations de pression en signal électrique"
+          ],
+          "rep": "Des variations de pression en signal électrique",
+          "expl": "La capture sonore commence par une conversion physique."
+        },
+        {
+          "q": "Qu’est-ce qu’un échantillon dans ce contexte ?",
+          "choix": [
+            "La durée totale de tout l’enregistrement",
+            "Une mesure du signal à un instant donné",
+            "La quantité d’espace occupée par le fichier entier"
+          ],
+          "rep": "Une mesure du signal à un instant donné",
+          "expl": "La suite des mesures permet la représentation numérique."
+        },
+        {
+          "q": "Que permet une compression sans perte ?",
+          "choix": [
+            "Retrouver exactement les données d’origine",
+            "Supprimer obligatoirement des détails du signal d’origine",
+            "Réduire tout fichier à une taille nulle"
+          ],
+          "rep": "Retrouver exactement les données d’origine",
+          "expl": "Son principe est une réduction de représentation réversible."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-05-04"
+    },
+    {
+      "titre": "Les antennes donnent plusieurs portes de sortie",
+      "accroche": "Réseau mobile, wifi et liaison de proximité ne jouent pas exactement le même rôle.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Une onde porte des informations",
+          "texte": "Le téléphone modifie un signal radio pour y représenter des informations. Une antenne transforme des signaux électriques en ondes et reçoit aussi des ondes pour les convertir en signaux.",
+          "schema": "Téléphone à gauche, antenne distante à droite ; flèches radio violettes dans les deux sens. Petits paquets de données représentés comme informations, pas comme objets dans l’onde."
+        },
+        {
+          "titre": "Le réseau mobile découpe le territoire",
+          "texte": "Des stations radio desservent des zones appelées cellules. Quand tu te déplaces, le réseau peut transférer la liaison d’une station à une autre, si la couverture et les conditions le permettent.",
+          "schema": "Carte avec cellules de formes souples, trois stations et un téléphone mobile. Liaison active passant de la station A à B ; chevauchement visible."
+        },
+        {
+          "titre": "Le wifi relie au réseau local",
+          "texte": "Le wifi relie le téléphone à un point d’accès proche. Ce point peut donner accès à Internet, mais une liaison wifi peut aussi fonctionner sur un réseau local sans Internet.",
+          "schema": "Téléphone vers point d’accès au centre, ordinateur local à droite ; branche Internet au-dessus avec interrupteur symbolique pouvant être coupé sans couper le lien local."
+        },
+        {
+          "titre": "La proximité relie aussi des accessoires",
+          "texte": "Une liaison radio de proximité peut relier téléphone, écouteurs ou clavier sans câble. Cette connexion n’apporte pas nécessairement un accès à Internet et peut nécessiter une association préalable.",
+          "schema": "Téléphone central vers écouteurs et clavier dans un cercle de proximité. Petit cadenas « association » ; nuage Internet séparé et non relié automatiquement."
+        },
+        {
+          "titre": "Les barres ne mesurent pas tout",
+          "texte": "Les barres de réseau indiquent grossièrement la réception radio selon le système. Elles ne garantissent ni un grand débit ni un service disponible : congestion, accès distant et autres facteurs interviennent.",
+          "schema": "Téléphone avec barres fortes mais voie de données encombrée après la station. Deux jauges distinctes « réception » et « débit réel »."
+        }
+      ],
+      "dans_ta_vie": "Tu comprends pourquoi un téléphone peut afficher une bonne réception mais charger lentement. Tu distingues un lien radio proche de l’accès complet à un service distant.",
+      "securite": "Respecte les consignes d’usage dans les avions et lieux réglementés. N’associe pas un accessoire inconnu ni ne valide une demande de connexion inattendue.",
+      "defi": "Pendant 3 minutes, dessine les chemins possibles d’un téléphone vers un casque, une box et une station mobile. Indique lequel peut fonctionner localement sans Internet, sans changer tes connexions réelles.",
+      "quiz": [
+        {
+          "q": "Que désigne une cellule du réseau mobile ?",
+          "choix": [
+            "Un identifiant de carte d’abonnement uniquement",
+            "Une zone desservie par une station radio",
+            "Une connexion réservée à un seul téléphone pour toujours"
+          ],
+          "rep": "Une zone desservie par une station radio",
+          "expl": "Le réseau organise la couverture radio en zones dont les formes réelles varient."
+        },
+        {
+          "q": "Une connexion wifi implique-t-elle toujours Internet ?",
+          "choix": [
+            "Non",
+            "Oui, le wifi et Internet sont deux noms du même système",
+            "Oui, tout point d’accès possède obligatoirement un accès extérieur actif"
+          ],
+          "rep": "Non",
+          "expl": "Le wifi peut relier seulement des équipements d’un réseau local."
+        },
+        {
+          "q": "Des barres de réception élevées garantissent-elles un grand débit ?",
+          "choix": [
+            "Oui, elles mesurent directement le débit de bout en bout",
+            "Oui, elles indiquent aussi l’état de tous les serveurs distants",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "La qualité radio n’est qu’un élément de la chaîne de communication."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-05-05"
+    },
+    {
+      "titre": "Comment ton téléphone sait où il est",
+      "accroche": "Pour recevoir sa position des satellites, il n’a pas besoin de leur téléphoner.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Des satellites diffusent des repères",
+          "texte": "Les satellites de navigation émettent des signaux indiquant notamment leur position et l’heure. Le récepteur du téléphone écoute ces signaux ; il n’envoie pas sa position à ces satellites pour obtenir un point.",
+          "schema": "Quatre satellites en haut, téléphone en bas ; flèches uniquement descendantes vers le téléphone. Étiquette « réception pour calcul de position », sans flèche de retour."
+        },
+        {
+          "titre": "Mesurer un temps pour estimer une distance",
+          "texte": "Le récepteur compare des repères temporels pour estimer les temps de trajet des signaux. Comme ces signaux voyagent à la vitesse de la lumière, une petite erreur de temps compte beaucoup.",
+          "schema": "Satellite et téléphone reliés par une onde ; horloges aux deux extrémités et règle « distance estimée ». Zoom sur petit décalage d’horloge, sans valeur de précision promise."
+        },
+        {
+          "titre": "Pourquoi plusieurs satellites ?",
+          "texte": "Dans le calcul de base, au moins quatre satellites permettent d’estimer trois coordonnées de position et le décalage de l’horloge du récepteur. Plus de signaux peuvent améliorer la solution, selon les conditions.",
+          "schema": "Globe avec téléphone et quatre distances colorées vers satellites. À droite, quatre cases « trois coordonnées + décalage d’horloge » ; éviter un schéma de triangulation par angles."
+        },
+        {
+          "titre": "Un bâtiment peut gêner",
+          "texte": "Les murs et les immeubles peuvent masquer ou réfléchir les signaux. Le point affiché peut devenir moins précis ou tarder. Il représente une estimation, pas une certitude au centimètre.",
+          "schema": "Rue entre immeubles : trajet direct bloqué, trajet réfléchi plus long. Carte en bas avec cercle d’incertitude autour du point bleu."
+        },
+        {
+          "titre": "Le téléphone combine des indices",
+          "texte": "La localisation peut aussi utiliser réseaux mobiles, points wifi et capteurs de mouvement. Recevoir une position par satellites et télécharger une carte sont deux opérations distinctes.",
+          "schema": "Satellite, station mobile, wifi et capteur convergeant vers bloc « estimation ». À côté, carte venant d’un stockage local ou d’Internet sur deux branches séparées."
+        }
+      ],
+      "dans_ta_vie": "Tu comprends pourquoi une carte peut manquer alors qu’une position est calculable, ou pourquoi une position dérive entre des immeubles. Tu prends le point affiché comme une estimation.",
+      "securite": "Ne suis jamais une carte au mépris des panneaux, barrières ou dangers visibles. Consulte la navigation à l’arrêt ; ne partage pas la position d’une autre personne sans son accord.",
+      "defi": "Prends 3 minutes pour dessiner séparément deux besoins : calculer un point et obtenir le dessin d’une carte. Relie les sources possibles à chaque besoin ; explique pourquoi ils ne sont pas équivalents.",
+      "quiz": [
+        {
+          "q": "Le calcul de position satellitaire impose-t-il d’envoyer sa position aux satellites ?",
+          "choix": [
+            "Non",
+            "Oui, les satellites doivent d’abord recevoir une demande personnelle",
+            "Oui, le calcul ne peut être effectué que par les satellites"
+          ],
+          "rep": "Non",
+          "expl": "Les satellites diffusent des signaux que le récepteur utilise localement."
+        },
+        {
+          "q": "Pourquoi le calcul de base utilise-t-il au moins quatre satellites ?",
+          "choix": [
+            "Pour prendre quatre photographies du téléphone",
+            "Pour mesurer uniquement la force du réseau mobile",
+            "Pour estimer la position en trois dimensions et un décalage d’horloge"
+          ],
+          "rep": "Pour estimer la position en trois dimensions et un décalage d’horloge",
+          "expl": "La mesure temporelle doit aussi tenir compte de l’horloge imparfaite du récepteur."
+        },
+        {
+          "q": "Télécharger une carte et calculer sa position sont-ils la même opération ?",
+          "choix": [
+            "Oui, la carte calcule forcément toute position sans autre information",
+            "Non",
+            "Oui, un point ne peut exister sans télécharger une nouvelle carte"
+          ],
+          "rep": "Non",
+          "expl": "La carte fournit un fond d’information ; la localisation estime un point."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-05-06"
+    },
+    {
+      "titre": "La batterie ne se remplit pas de petits éclairs",
+      "accroche": "Elle stocke de l’énergie grâce à des transformations électrochimiques.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Deux chemins complémentaires",
+          "texte": "Dans une batterie lithium-ion, des ions, particules chargées, se déplacent à l’intérieur et des électrons circulent dans le circuit extérieur. Ces mouvements liés permettent d’alimenter le téléphone grâce à des réactions électrochimiques.",
+          "schema": "Deux électrodes dans une cellule fermée ; ions violets traversant l’intérieur, électrons bleus passant par une charge extérieure. Séparateur au centre, sans passage d’électrons à travers lui."
+        },
+        {
+          "titre": "Recharger inverse le fonctionnement utile",
+          "texte": "Pendant la recharge, une source extérieure fournit de l’énergie pour rétablir un état chargé. La batterie ne crée pas cette énergie ; le chargeur et l’électronique contrôlent les conditions de recharge.",
+          "schema": "Même boucle avec flèches inversées pendant la recharge ; bloc de contrôle entre source et cellule. Cellule toujours fermée ; aucune manipulation interne."
+        },
+        {
+          "titre": "Le pourcentage est une estimation",
+          "texte": "Le pourcentage affiché estime l’état de charge. Il repose sur des mesures et des modèles ; il ne correspond pas à une jauge qui voit directement une quantité de liquide dans la batterie.",
+          "schema": "Batterie opaque avec capteurs symboliques vers calculateur, puis « 62 % ». Réservoir liquide barré dans une petite vignette."
+        },
+        {
+          "titre": "L’autonomie dépend du travail demandé",
+          "texte": "Écran, calculs, radio et autres fonctions utilisent de l’énergie. Une même charge peut durer différemment selon les usages, la réception, la température et le vieillissement.",
+          "schema": "Réserve d’énergie centrale vers écran, processeur, radio. Deux journées d’usages différents avec niveaux restants différents ; aucune durée garantie."
+        },
+        {
+          "titre": "Vieillir change la capacité",
+          "texte": "Des réactions et des changements internes réduisent progressivement la capacité disponible. La chaleur excessive peut accélérer certaines dégradations. La recharge rapide doit rester dans les conditions prévues par le fabricant.",
+          "schema": "Deux batteries de même coque : capacité disponible plus grande puis réduite après calendrier. Thermomètre rouge et bouclier « conditions prévues », sans seuil universel inventé."
+        }
+      ],
+      "dans_ta_vie": "Tu comprends pourquoi le pourcentage n’est pas une mesure directe de la durée restante. Tu sais distinguer charge actuelle et capacité maximale devenue plus faible avec le temps.",
+      "securite": "Ne perce, ne comprime et ne démonte jamais une batterie. Si elle gonfle, fuit ou chauffe anormalement, cesse l’usage et la recharge, n’y touche pas et fais prendre en charge l’appareil. Fumée ou feu : éloigne-toi et appelle le 18 ou le 112.",
+      "defi": "Pendant 3 minutes, consulte seulement l’écran de consommation de batterie déjà disponible dans les réglages. Identifie deux usages consommateurs et explique pourquoi ce relevé passé ne garantit pas l’autonomie de demain.",
+      "quiz": [
+        {
+          "q": "Où circulent principalement les électrons utiles lors de l’alimentation ?",
+          "choix": [
+            "À travers le séparateur comme chemin normal",
+            "Uniquement dans l’électrolyte, sans circuit extérieur",
+            "Dans le circuit extérieur de la batterie"
+          ],
+          "rep": "Dans le circuit extérieur de la batterie",
+          "expl": "Le déplacement interne des ions s’accompagne d’une circulation externe d’électrons."
+        },
+        {
+          "q": "Le pourcentage affiché est-il une estimation ?",
+          "choix": [
+            "Non, il indique directement un nombre fixe d’heures restantes",
+            "Oui",
+            "Non, il mesure un niveau de liquide visible"
+          ],
+          "rep": "Oui",
+          "expl": "L’état de charge est calculé à partir de mesures et de modèles."
+        },
+        {
+          "q": "Que faire d’une batterie gonflée ?",
+          "choix": [
+            "Cesser usage et recharge et faire prendre en charge l’appareil",
+            "La percer pour évacuer la pression",
+            "La comprimer pour refermer la coque"
+          ],
+          "rep": "Cesser usage et recharge et faire prendre en charge l’appareil",
+          "expl": "Une batterie endommagée peut présenter un risque d’incendie."
+        }
+      ],
+      "video": {
+        "titre": "Les batteries Lithium-ion : comment ça marche ?",
+        "chaine": "CEA"
+      },
+      "id": "CM-05-07"
+    },
+    {
+      "titre": "Qui peut ouvrir les tiroirs du téléphone ?",
+      "accroche": "Une autorisation donne un accès ; elle ne dit pas tout de l’usage qui sera fait des données.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Les applications ont des limites",
+          "texte": "Le système isole normalement les applications et contrôle certains accès. Une autorisation peut permettre l’usage de la caméra, du microphone ou de la localisation, selon les possibilités du système.",
+          "schema": "Trois applications dans des cases séparées ; portes vers caméra, micro et position. Certaines portes fermées, une ouverte après un panneau d’autorisation."
+        },
+        {
+          "titre": "Une permission répond à une question précise",
+          "texte": "Autoriser la caméra permet un accès technique. Cela ne signifie pas que tous les usages des images sont souhaitables. Le besoin réel, le contexte et les informations fournies restent importants.",
+          "schema": "Panneau « accès caméra ? » vers objectif ; second panneau distinct « pour quoi faire ? ». Ne pas représenter l’accord technique comme une approbation universelle."
+        },
+        {
+          "titre": "Verrouiller protège l’accès",
+          "texte": "Un code de verrouillage et les mécanismes de sécurité du téléphone limitent certains accès non autorisés. La reconnaissance du visage ou du doigt s’appuie sur des mesures ; elle ne rend pas toute attaque impossible.",
+          "schema": "Téléphone verrouillé avec cadenas ; code et empreinte comme deux clés possibles. Petit triangle « protection avec limites », sans collecte de vraie donnée biométrique."
+        },
+        {
+          "titre": "Sauvegarder et synchroniser diffèrent",
+          "texte": "Une synchronisation peut répercuter une suppression sur plusieurs appareils. Une sauvegarde vise à permettre une restauration depuis un état conservé. Leurs règles et durées de conservation doivent être vérifiées.",
+          "schema": "Fichier supprimé sur appareil A puis B par flèche de synchronisation ; branche séparée vers copie datée restaurable. Ne pas garantir qu’une copie existe automatiquement."
+        },
+        {
+          "titre": "Les mises à jour corrigent aussi des failles",
+          "texte": "Une mise à jour peut corriger des erreurs et des vulnérabilités. Elle ne garantit pas une sécurité absolue, mais garder un système pris en charge réduit l’exposition à certaines failles connues.",
+          "schema": "Mur de protection avec trou identifié ; pièce de mise à jour qui le ferme. Autres points d’interrogation restant visibles ; aucune promesse d’invulnérabilité."
+        }
+      ],
+      "dans_ta_vie": "Tu peux relier une autorisation à un besoin concret et vérifier où sont conservées tes données. Tu comprends pourquoi supprimer une photo peut avoir des effets sur plusieurs appareils.",
+      "securite": "Ne communique ni code de verrouillage, ni mot de passe, ni code de validation. Avant toute suppression, vérifie les règles de synchronisation et l’existence d’une copie récupérable.",
+      "defi": "Prends 4 minutes pour consulter, sans rien effacer, les autorisations d’une application. Explique lesquelles correspondent à sa fonction ; repère ensuite où consulter les informations de sauvegarde sans modifier les réglages.",
+      "quiz": [
+        {
+          "q": "Que donne une permission de microphone ?",
+          "choix": [
+            "Une garantie que tous les usages ultérieurs sont acceptables",
+            "Un accès technique encadré au microphone",
+            "Un accès automatique à toutes les ressources du téléphone"
+          ],
+          "rep": "Un accès technique encadré au microphone",
+          "expl": "L’autorisation concerne une ressource ; son contexte d’utilisation reste à comprendre."
+        },
+        {
+          "q": "Une synchronisation est-elle forcément une sauvegarde indépendante ?",
+          "choix": [
+            "Non",
+            "Oui, une suppression ne peut jamais passer d’un appareil à l’autre",
+            "Oui, toute synchronisation conserve obligatoirement toutes les versions"
+          ],
+          "rep": "Non",
+          "expl": "Une suppression peut être propagée par synchronisation."
+        },
+        {
+          "q": "Pourquoi les mises à jour participent-elles à la sécurité ?",
+          "choix": [
+            "Elles rendent toute attaque impossible",
+            "Elles suppriment le besoin de contrôler les autorisations",
+            "Elles peuvent corriger des vulnérabilités connues"
+          ],
+          "rep": "Elles peuvent corriger des vulnérabilités connues",
+          "expl": "Corriger des failles améliore la protection sans créer de garantie absolue."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-05-08"
+    }
+  ]
+}
