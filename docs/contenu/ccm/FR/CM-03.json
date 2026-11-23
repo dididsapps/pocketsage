@@ -1,0 +1,583 @@
+{
+ "id": "CM-03",
+ "titre": "L’eau à la maison",
+ "public": "ado-adulte",
+ "lecons": [
+  {
+   "titre": "Avant le robinet : un long parcours",
+   "accroche": "L’eau transparente n’arrive pas toute prête depuis un nuage.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Une ressource captée",
+     "texte": "L’eau distribuée vient notamment de nappes souterraines, de rivières ou de lacs. Sa qualité de départ dépend du milieu et des activités qui l’entourent.",
+     "schema": "Paysage en coupe : pluie, rivière et nappe bleues ; deux captages distincts rejoignant un traitement. Pas de tuyau direct entre nuage et maison."
+    },
+    {
+     "titre": "Potabiliser selon les besoins",
+     "texte": "La potabilisation rend l’eau conforme aux critères de consommation. Les traitements varient : retirer des particules, éliminer certains contaminants et désinfecter ne sont pas une seule et même opération.",
+     "schema": "Trois modules symboliques successifs : particules retenues, contaminants ciblés, microbes réduits. Étiquette « étapes adaptées à l’eau brute » ; pas de recette de traitement."
+    },
+    {
+     "titre": "Distribuer et protéger",
+     "texte": "L’eau traitée rejoint des réservoirs et des canalisations. Une désinfection résiduelle, souvent au chlore, peut contribuer à limiter la multiplication des microbes pendant ce trajet.",
+     "schema": "Réservoir en haut, canalisations vers trois maisons. Petits boucliers jaunes le long du réseau ; légende « protection pendant la distribution »."
+    },
+    {
+     "titre": "Le regard ne suffit pas",
+     "texte": "Une eau claire peut contenir des substances dissoutes ou des microbes invisibles. La potabilité s’évalue par des analyses et des contrôles, pas simplement par la transparence ou le goût.",
+     "schema": "Deux verres transparents identiques ; loupe symbolique révélant des contenus différents. Rapport d’analyse à droite, œil seul barré comme preuve suffisante."
+    },
+    {
+     "titre": "Des résultats locaux",
+     "texte": "En France, les résultats du contrôle sanitaire sont accessibles pour le réseau desservant une commune. Une alerte ou une restriction locale doit être suivie, même si l’eau paraît habituelle.",
+     "schema": "Carte de France avec une commune agrandie puis fiche « réseau, date, résultats, consignes ». Bannière d’alerte distincte ; aucune valeur réelle inventée."
+    }
+   ],
+   "dans_ta_vie": "Tu sais distinguer l’apparence de l’eau et sa qualité contrôlée. Tu peux chercher les informations du réseau de ta commune plutôt que généraliser à tout un pays.",
+   "securite": "Ne bois pas une eau de provenance inconnue pour la tester. En cas d’alerte, suis les consignes du distributeur, de la mairie ou de l’agence régionale de santé.",
+   "defi": "Pendant 4 minutes, consulte les résultats officiels de l’eau de ta commune. Note le réseau et la date du prélèvement ; explique pourquoi un résultat sans lieu ni date serait moins utile.",
+   "quiz": [
+    {
+     "q": "D’où peut provenir l’eau avant traitement ?",
+     "choix": [
+      "Uniquement d’eau déjà potable sans traitement possible",
+      "Toujours directement du réseau d’évacuation du logement",
+      "D’une nappe ou d’une eau de surface"
+     ],
+     "rep": "D’une nappe ou d’une eau de surface",
+     "expl": "Les ressources et les traitements dépendent du territoire."
+    },
+    {
+     "q": "Une eau transparente est-elle nécessairement potable ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Oui, si elle ne sent rien"
+     ],
+     "rep": "Non",
+     "expl": "Certains contaminants sont invisibles et sans goût perceptible."
+    },
+    {
+     "q": "Quelle information aide à interpréter une analyse ?",
+     "choix": [
+      "Le réseau concerné et la date",
+      "La seule réputation générale de la ville",
+      "La seule température de l’air au moment de la lecture"
+     ],
+     "rep": "Le réseau concerné et la date",
+     "expl": "La qualité mesurée concerne un lieu et un moment déterminés."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-03-01"
+  },
+  {
+   "titre": "Pourquoi l’eau monte jusqu’à l’étage",
+   "accroche": "Un château d’eau n’a pas besoin de pousser chaque goutte à la main.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "La pression pousse dans toutes les directions",
+     "texte": "La pression est une force répartie sur une surface. Dans une canalisation remplie, elle peut pousser l’eau vers un robinet ouvert, même situé plus haut.",
+     "schema": "Tube fermé avec petites flèches bleues dans toutes les directions. Branche montante vers un robinet ; ouvrir le robinet dans une seconde image."
+    },
+    {
+     "titre": "La hauteur aide",
+     "texte": "Un réservoir placé en hauteur crée de la pression grâce au poids de l’eau. En ordre de grandeur, une différence de hauteur d’environ dix mètres correspond à environ un bar.",
+     "schema": "Château d’eau à gauche, robinet plus bas à droite. Accolade verticale « environ 10 m » et manomètre symbolique « environ 1 bar, sans pertes »."
+    },
+    {
+     "titre": "Les pompes apportent de l’énergie",
+     "texte": "Une pompe peut mettre l’eau en mouvement et augmenter sa pression. Elle utilise de l’énergie ; dans certains bâtiments, un système de surpression aide à desservir les étages.",
+     "schema": "Pompe symbolique en bas d’un immeuble ; flèche électrique orange entrante, flèche d’eau bleue montante. Appareil fermé, sans vanne ni réglage détaillés."
+    },
+    {
+     "titre": "Pression et débit sont différents",
+     "texte": "La pression décrit une capacité à pousser ; le débit mesure le volume qui passe par unité de temps. Un robinet fermé peut rester sous pression avec un débit nul.",
+     "schema": "Deux états du même robinet : fermé, jauge de pression présente et « débit nul » ; ouvert, jet bleu et compteur « litres par minute »."
+    },
+    {
+     "titre": "Les frottements comptent",
+     "texte": "Quand l’eau circule, les canalisations et les obstacles provoquent des pertes de pression. Un trajet long, étroit ou très sollicité peut limiter le débit disponible au bout.",
+     "schema": "Deux trajets vers robinets : court et large, long et étroit. Flèches de débit différentes ; mention « autres conditions comparables » sans diagnostic de logement."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi la pression et le débit ne sont pas synonymes. Tu peux décrire un manque d’eau à l’étage sans conclure automatiquement à une panne de pompe.",
+   "securite": "Ne modifie aucun réglage de pression et ne démonte ni pompe ni canalisation. Un problème persistant de débit ou de pression doit être évalué par un professionnel.",
+   "defi": "Prends 3 minutes pour dessiner un réservoir au-dessus d’une maison. Ajoute un robinet fermé puis ouvert et indique, pour chaque image, si une pression et un débit peuvent exister.",
+   "quiz": [
+    {
+     "q": "Un robinet fermé peut-il être sous pression ?",
+     "choix": [
+      "Non, pression et débit sont identiques",
+      "Oui, avec un débit nul",
+      "Non, toute pression disparaît à la fermeture"
+     ],
+     "rep": "Oui, avec un débit nul",
+     "expl": "La pression peut exister même sans mouvement d’eau."
+    },
+    {
+     "q": "Quelle unité convient à un débit domestique ?",
+     "choix": [
+      "Le litre par minute",
+      "Le litre seul",
+      "Le bar"
+     ],
+     "rep": "Le litre par minute",
+     "expl": "Un débit indique un volume par unité de temps."
+    },
+    {
+     "q": "Que fait une pompe ?",
+     "choix": [
+      "Elle rend toute eau potable",
+      "Elle remplace la gravité sans recevoir d’énergie",
+      "Elle apporte de l’énergie à l’eau"
+     ],
+     "rep": "Elle apporte de l’énergie à l’eau",
+     "expl": "Pomper et potabiliser sont deux fonctions distinctes."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-03-02"
+  },
+  {
+   "titre": "Ce que cachent le robinet et la chasse d’eau",
+   "accroche": "Ces objets dosent ou libèrent un passage, sans fabriquer d’eau.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Ouvrir un passage",
+     "texte": "Un robinet fait varier une ouverture. À pression disponible comparable, une ouverture plus grande permet généralement un débit plus important, jusqu’aux limites du réseau et de l’équipement.",
+     "schema": "Robinet abstrait en coupe avec trois ouvertures croissantes. Jets bleus de plus en plus épais ; aucune pièce à dévisser ni outil."
+    },
+    {
+     "titre": "Mélanger deux arrivées",
+     "texte": "Un mitigeur combine de l’eau froide et de l’eau chaude. La température de sortie dépend des températures d’arrivée et des proportions mélangées, pas seulement de la position visible de la poignée.",
+     "schema": "Deux flèches, bleue et rouge, rejoignant une chambre violette puis une sortie orange. Faire varier l’épaisseur des arrivées, sans valeur de réglage."
+    },
+    {
+     "titre": "Une douche peut varier",
+     "texte": "Si les débits ou pressions disponibles changent, la température peut varier sur certains équipements. Un dispositif thermostatique cherche à stabiliser la température, dans ses limites de fonctionnement.",
+     "schema": "Deux arrivées vers une douche ; l’une diminue. Thermomètre de sortie variant sur une première vue, régulation compensant partiellement sur une seconde."
+    },
+    {
+     "titre": "La chasse stocke une réserve",
+     "texte": "Dans une chasse courante à réservoir, l’eau accumulée est libérée rapidement dans la cuvette. La réserve permet un débit bref important, même si le remplissage est plus lent.",
+     "schema": "Réservoir au-dessus d’une cuvette : remplissage avec petite flèche bleue, vidage avec grosse flèche. Deux phases successives, sans démontage du mécanisme."
+    },
+    {
+     "titre": "Le flotteur suit le niveau",
+     "texte": "Un flotteur monte avec l’eau du réservoir et commande l’arrêt du remplissage au niveau prévu. D’autres conceptions existent ; le principe est de mesurer un niveau pour contrôler une arrivée.",
+     "schema": "Réservoir simplifié : flotteur rond montant sur trois niveaux, liaison pointillée vers une vanne abstraite. Arrivée qui s’arrête au repère supérieur."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi le remplissage de la chasse dure plus longtemps que sa vidange. Tu sais qu’une température de douche dépend aussi de ce qui se passe en amont.",
+   "securite": "L’eau chaude peut brûler rapidement. Ne cherche pas la température maximale d’un robinet et ne démonte aucun mitigeur ou mécanisme pour cet exercice.",
+   "defi": "Pendant 3 minutes, dessine le cycle d’une chasse imaginaire : remplissage, niveau atteint, vidage. Explique à un proche la différence entre le débit de remplissage et celui du vidage.",
+   "quiz": [
+    {
+     "q": "Que mélange un mitigeur ?",
+     "choix": [
+      "Deux arrivées d’eau à des températures différentes",
+      "L’eau potable et l’eau d’évacuation",
+      "L’air et l’eau pour fabriquer de la chaleur"
+     ],
+     "rep": "Deux arrivées d’eau à des températures différentes",
+     "expl": "Le mélange dose notamment les proportions d’eau froide et d’eau chaude."
+    },
+    {
+     "q": "Pourquoi un réservoir de chasse est-il utile ?",
+     "choix": [
+      "Il rend inutile toute canalisation d’arrivée",
+      "Il augmente automatiquement la pression du réseau public",
+      "Il libère rapidement une réserve remplie plus lentement"
+     ],
+     "rep": "Il libère rapidement une réserve remplie plus lentement",
+     "expl": "La réserve découple le débit instantané du débit de remplissage."
+    },
+    {
+     "q": "Que suit le flotteur du réservoir ?",
+     "choix": [
+      "La température de l’eau",
+      "Le niveau d’eau",
+      "Le débit d’évacuation de toute la maison"
+     ],
+     "rep": "Le niveau d’eau",
+     "expl": "Son mouvement permet de commander le remplissage dans ce mécanisme."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-03-03"
+  },
+  {
+   "titre": "Pourquoi l’eau chaude se fait attendre",
+   "accroche": "Entre le chauffe-eau et le robinet, il reste souvent de l’eau refroidie.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Chauffer demande de l’énergie",
+     "texte": "Pour chauffer de l’eau, il faut lui transférer de l’énergie. À quantité d’eau identique, une plus grande hausse de température demande davantage d’énergie, sans compter les pertes.",
+     "schema": "Deux récipients identiques, départ à même température. Flèche d’énergie plus épaisse pour une hausse plus grande ; mention « comparaison simplifiée »."
+    },
+    {
+     "titre": "Stocker ou chauffer au passage",
+     "texte": "Un ballon conserve une réserve d’eau chauffée. Un système instantané chauffe l’eau quand elle passe. Leur comportement dépend notamment de la puissance disponible et du débit demandé.",
+     "schema": "Deux colonnes : cuve avec réserve orange ; petit échangeur avec eau bleue entrant et orange sortant seulement pendant le passage. Aucun raccordement réel."
+    },
+    {
+     "titre": "Le tuyau contient déjà de l’eau",
+     "texte": "Après une période sans usage, l’eau présente entre la production chaude et le robinet a souvent refroidi. Cette eau doit s’écouler avant que l’eau plus chaude arrive.",
+     "schema": "Tuyau entre ballon et robinet : segment initial bleu puis orange. Animation montrant le segment bleu sortir avant l’arrivée de l’orange, sans ouvrir réellement un robinet."
+    },
+    {
+     "titre": "La réserve n’est pas toujours uniforme",
+     "texte": "Dans un ballon courant, l’eau plus chaude se trouve généralement vers le haut et l’eau froide arrive vers le bas. Cette organisation peut être perturbée par les usages et les brassages.",
+     "schema": "Cuve verticale en coupe, haut orange et bas bleu ; arrivée froide en bas, prélèvement chaud en haut. Dégradé souple et légende « modèle simplifié »."
+    },
+    {
+     "titre": "La chaleur peut s’échapper avant usage",
+     "texte": "Un ballon et des tuyaux chauds cèdent de la chaleur à leur environnement. Leur isolation ralentit ce transfert ; elle ne conserve pas indéfiniment la température sans apport d’énergie.",
+     "schema": "Ballon et tuyau entourés d’une couche isolante beige. Petites flèches rouges sortantes, moins nombreuses qu’en vignette sans isolant, jamais toutes supprimées."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends l’attente au robinet et la différence entre une réserve chaude et un chauffage instantané. Tu peux demander une explication précise à un professionnel sans toucher aux réglages.",
+   "securite": "Ne règle pas toi-même la température de stockage : brûlures et maîtrise des microbes imposent des précautions techniques. Pour boire et cuisiner, utilise l’eau du réseau froid, selon les consignes sanitaires locales.",
+   "defi": "Prends 4 minutes pour tracer une production d’eau chaude et un robinet éloigné. Colore l’eau refroidie dans le tuyau, puis raconte son trajet à l’ouverture, sans faire couler d’eau pour l’exercice.",
+   "quiz": [
+    {
+     "q": "Pourquoi attend-on souvent l’arrivée de l’eau chaude ?",
+     "choix": [
+      "Le robinet doit produire lui-même toute la chaleur",
+      "L’eau doit atteindre l’ébullition avant de pouvoir sortir",
+      "L’eau déjà présente dans le tuyau a refroidi"
+     ],
+     "rep": "L’eau déjà présente dans le tuyau a refroidi",
+     "expl": "L’eau du trajet doit être remplacée par de l’eau venant de la production chaude."
+    },
+    {
+     "q": "Que conserve principalement un ballon ?",
+     "choix": [
+      "Une réserve de vapeur uniquement",
+      "Une réserve d’eau chauffée",
+      "Uniquement de l’eau froide destinée à être chauffée dans le robinet"
+     ],
+     "rep": "Une réserve d’eau chauffée",
+     "expl": "Le stockage thermique ne dispense pas de règles de conception et d’entretien."
+    },
+    {
+     "q": "Que fait l’isolation d’un ballon ?",
+     "choix": [
+      "Elle ralentit les pertes de chaleur",
+      "Elle supprime définitivement tout besoin d’énergie",
+      "Elle produit de la chaleur sans alimentation"
+     ],
+     "rep": "Elle ralentit les pertes de chaleur",
+     "expl": "Un isolant freine les échanges sans les annuler."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-03-04"
+  },
+  {
+   "titre": "Le coude sous l’évier bloque les odeurs",
+   "accroche": "Une petite réserve d’eau joue le rôle de porte pour les gaz.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "L’eau usée prend un autre chemin",
+     "texte": "Après le lavabo, l’eau rejoint une canalisation d’évacuation. Dans de nombreux tronçons, elle s’écoule par gravité grâce à une pente ; des pompes peuvent intervenir dans certaines installations.",
+     "schema": "Maison de côté : arrivée potable bleue distincte, évacuation brune descendante vers un collecteur. Petite pompe sur une branche particulière, sans pente universelle chiffrée."
+    },
+    {
+     "titre": "Le siphon garde de l’eau",
+     "texte": "Le siphon retient une quantité d’eau dans une forme courbe ou un dispositif équivalent. Cette garde d’eau fait obstacle au passage des gaz de la canalisation vers la pièce.",
+     "schema": "Tube en U vu en coupe, eau bleue au fond. Flèches de gaz gris venant de l’égout arrêtées à la surface ; lavabo au-dessus."
+    },
+    {
+     "titre": "Le passage reste possible",
+     "texte": "Quand de l’eau arrive, elle pousse une partie de l’eau du siphon vers l’évacuation. Une réserve demeure après l’écoulement si le système fonctionne correctement.",
+     "schema": "Trois étapes du même U : avant, arrivée depuis le lavabo, après. Niveau bleu final comparable au niveau initial ; flèches brunes uniquement pendant l’écoulement."
+    },
+    {
+     "titre": "L’air a aussi son trajet",
+     "texte": "La ventilation des évacuations aide à équilibrer les pressions. Sans fonctionnement adapté, un écoulement peut perturber la garde d’eau. Un gargouillis est un indice, pas un diagnostic certain.",
+     "schema": "Colonne d’évacuation brune et conduite d’air grise vers le toit. Flèches d’air séparées des flèches d’eau ; bulle sonore « gargouillis : plusieurs causes possibles »."
+    },
+    {
+     "titre": "Une réserve peut manquer",
+     "texte": "Une longue absence d’usage peut permettre à l’eau d’un siphon de s’évaporer. Une odeur peut aussi venir d’autres causes : l’observation seule ne prouve pas l’origine du problème.",
+     "schema": "Deux U côte à côte : garde d’eau présente, puis abaissée après une frise « longue période ». Point d’interrogation à côté d’un nez, pas de diagnostic automatique."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi un coude rempli d’eau n’est pas nécessairement un bouchon. Tu peux décrire une odeur ou un bruit à un professionnel sans démonter l’évacuation.",
+   "securite": "Ne mélange jamais de produits déboucheurs, de javel ou d’acides. N’ouvre pas une canalisation pour comprendre une odeur ; en cas d’odeur de gaz combustible, éloigne-toi et alerte depuis l’extérieur.",
+   "defi": "Pendant 3 minutes, dessine un siphon avant, pendant et après un écoulement. Ajoute des flèches de gaz et montre l’obstacle qu’elles rencontrent, sans toucher à la plomberie.",
+   "quiz": [
+    {
+     "q": "Quel est un rôle essentiel de la garde d’eau ?",
+     "choix": [
+      "Retenir obligatoirement tous les microbes de l’eau",
+      "Limiter le passage des gaz de l’évacuation",
+      "Transformer les eaux usées en eau potable"
+     ],
+     "rep": "Limiter le passage des gaz de l’évacuation",
+     "expl": "La réserve liquide forme une barrière entre la canalisation et la pièce."
+    },
+    {
+     "q": "Le siphon doit-il être complètement vide après chaque usage ?",
+     "choix": [
+      "Non, une garde d’eau doit rester",
+      "Oui, toujours",
+      "Oui, pour empêcher toute formation de gaz"
+     ],
+     "rep": "Non, une garde d’eau doit rester",
+     "expl": "La réserve restante assure sa fonction de barrière aux gaz."
+    },
+    {
+     "q": "Un gargouillis permet-il un diagnostic certain ?",
+     "choix": [
+      "Oui, il prouve toujours un tuyau cassé",
+      "Oui, il prouve toujours un siphon sec",
+      "Non, plusieurs causes sont possibles"
+     ],
+     "rep": "Non, plusieurs causes sont possibles",
+     "expl": "Un bruit est une information à décrire, pas une preuve suffisante."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-03-05"
+  },
+  {
+   "titre": "Après la chasse : le travail invisible des stations",
+   "accroche": "Épurer les eaux usées et produire de l’eau potable poursuivent des objectifs différents.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Collecter les eaux utilisées",
+     "texte": "Les eaux de douche, de cuisine et des toilettes rejoignent l’assainissement. Selon le logement, elles sont traitées par un réseau collectif ou un dispositif d’assainissement non collectif.",
+     "schema": "Trois usages domestiques vers un embranchement : réseau collectif et station d’un côté, installation non collective de l’autre. Ne pas relier cette dernière à une nappe potable."
+    },
+    {
+     "titre": "Retirer les éléments séparables",
+     "texte": "Des grilles retiennent de gros déchets. D’autres étapes séparent notamment sables, graisses ou matières qui se déposent. L’enchaînement précis varie selon les installations.",
+     "schema": "Trois bassins symboliques : grille avec déchets, sable au fond, graisse en surface. Flèches brunes entre étapes ; légende « exemple simplifié »."
+    },
+    {
+     "titre": "Des microbes travaillent pour nous",
+     "texte": "Dans de nombreuses stations, des micro-organismes utilisent une partie de la pollution organique. Des conditions contrôlées, souvent avec apport d’air, favorisent leur activité.",
+     "schema": "Bassin avec bulles d’air et microbes verts entourant des particules brunes. Animation : particules diminuent, biomasse augmente ; pas de disparition de toute pollution."
+    },
+    {
+     "titre": "Séparer l’eau et les boues",
+     "texte": "Les étapes de traitement produisent notamment de l’eau traitée et des boues. Les boues suivent une filière spécifique ; elles ne disparaissent pas simplement parce que l’eau paraît plus claire.",
+     "schema": "Bassin de séparation avec sortie bleue en haut et sortie brune « boues » en bas. Deux trajets distincts après la séparation."
+    },
+    {
+     "titre": "Traité ne veut pas dire buvable",
+     "texte": "Une eau usée traitée n’est pas automatiquement potable. Son rejet ou sa réutilisation dépend de sa qualité et d’un cadre précis. Le réseau d’eau potable reste distinct des évacuations.",
+     "schema": "Deux réseaux parallèles séparés : potable bleu et eaux usées brunes. Sortie de station vers milieu naturel ou usage encadré ; verre à boire barré sur cette sortie."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi les toilettes ne sont pas une poubelle. Tu distingues eau traitée pour un rejet, eau réutilisée sous conditions et eau destinée à boire.",
+   "securite": "Ne jette ni lingettes, ni huiles, ni solvants dans les évacuations. Ne touche pas les eaux usées et n’entre jamais dans une fosse, une cuve ou un regard.",
+   "defi": "Pendant 4 minutes, raconte le voyage d’une eau de douche jusqu’au traitement en six dessins. Indique où vont les gros déchets, les boues et l’eau traitée ; ne visite aucun ouvrage technique.",
+   "quiz": [
+    {
+     "q": "Quel rôle peuvent jouer des micro-organismes en station ?",
+     "choix": [
+      "Transformer une partie de la pollution organique",
+      "Retirer tous les contaminants sans autre étape",
+      "Remplacer toutes les grilles pour les gros déchets"
+     ],
+     "rep": "Transformer une partie de la pollution organique",
+     "expl": "Des procédés biologiques utilisent leur activité dans des conditions contrôlées."
+    },
+    {
+     "q": "Que deviennent les boues ?",
+     "choix": [
+      "Elles disparaissent dès que l’eau est claire",
+      "Elles sont automatiquement considérées comme de l’eau potable",
+      "Elles suivent une filière spécifique"
+     ],
+     "rep": "Elles suivent une filière spécifique",
+     "expl": "Le traitement sépare des matières qui doivent ensuite être prises en charge."
+    },
+    {
+     "q": "Une sortie de station est-elle automatiquement potable ?",
+     "choix": [
+      "Oui, si elle est transparente",
+      "Non",
+      "Oui, si elle ne mousse pas"
+     ],
+     "rep": "Non",
+     "expl": "Les objectifs et critères d’épuration et de potabilisation sont différents."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-03-06"
+  },
+  {
+   "titre": "Calcaire, filtre, eau claire : trois idées à séparer",
+   "accroche": "Un dépôt blanc ne raconte pas toute la qualité de l’eau.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Des minéraux dissous",
+     "texte": "L’eau peut contenir naturellement du calcium et du magnésium dissous. Leur présence contribue à sa dureté. Une eau dure n’est pas, pour cette seule raison, non potable.",
+     "schema": "Verre transparent avec zoom symbolique montrant ions calcium et magnésium dispersés. Légende « dissous, invisibles à l’œil » ; pas de grains flottants."
+    },
+    {
+     "titre": "Le tartre se forme",
+     "texte": "Selon la composition de l’eau et les conditions, notamment le chauffage, des dépôts de calcaire peuvent apparaître. Ils peuvent gêner les échanges thermiques ou certains équipements.",
+     "schema": "Paroi chauffante en coupe avec fine couche blanche qui épaissit. Flèches de chaleur traversant plus difficilement la couche ; aucune méthode de détartrage."
+    },
+    {
+     "titre": "Un filtre cible quelque chose",
+     "texte": "Un filtre à particules retient certaines matières en suspension. D’autres dispositifs visent certains composés dissous. Le mot filtre, seul, ne dit pas quelles substances sont réduites ni dans quelles proportions.",
+     "schema": "Trois tamis symboliques aux fonctions différentes : particules, composés ciblés, membrane. Tableau miniature « cible, efficacité, conditions » ; aucun filtre universel dessiné."
+    },
+    {
+     "titre": "Adoucir n’est pas tout éliminer",
+     "texte": "Un adoucisseur courant remplace surtout des ions calcium et magnésium, particules chargées dissoutes, par des ions sodium. Il ne rend pas, à lui seul, une eau inconnue potable.",
+     "schema": "Colonne abstraite : ions calcium et magnésium entrant, ions sodium sortant ; microbes représentés sur une voie séparée sans suppression automatique."
+    },
+    {
+     "titre": "L’entretien fait partie du système",
+     "texte": "Un dispositif de traitement doit être adapté à un besoin identifié et entretenu selon sa notice. Une cartouche oubliée ou mal utilisée peut dégrader la qualité attendue.",
+     "schema": "Cartouche fermée avec calendrier et notice. Flèche vers « remplacement et entretien prévus » ; aucune promesse de pureté absolue ni marque."
+    }
+   ],
+   "dans_ta_vie": "Tu peux poser les bonnes questions sur un dispositif : que retire-t-il, avec quelles preuves et quel entretien ? Tu évites de confondre absence de tartre et absence de contaminants.",
+   "securite": "N’improvise pas de traitement d’une eau suspecte et ne mélange pas de produits de détartrage. Un appareil domestique ne dispense jamais de suivre une alerte sanitaire officielle.",
+   "defi": "Prends 3 minutes pour rédiger trois questions à propos d’un filtre imaginaire : substance ciblée, efficacité vérifiée, entretien nécessaire. Explique pourquoi « rend l’eau pure » serait une description insuffisante.",
+   "quiz": [
+    {
+     "q": "À quoi la dureté de l’eau est-elle notamment liée ?",
+     "choix": [
+      "À la seule quantité de particules de sable visibles",
+      "À la seule température de l’eau",
+      "Au calcium et au magnésium dissous"
+     ],
+     "rep": "Au calcium et au magnésium dissous",
+     "expl": "Ces minéraux contribuent à la dureté sans être des particules visibles."
+    },
+    {
+     "q": "Un filtre à particules élimine-t-il automatiquement tous les composés dissous ?",
+     "choix": [
+      "Oui, sans exception",
+      "Non",
+      "Oui, si l’eau devient parfaitement transparente"
+     ],
+     "rep": "Non",
+     "expl": "La fonction et les performances dépendent de la technologie et des conditions d’usage."
+    },
+    {
+     "q": "Un adoucisseur courant garantit-il la potabilité de n’importe quelle eau ?",
+     "choix": [
+      "Non",
+      "Oui, car il retire le calcaire",
+      "Oui, car l’absence de tartre suffit à établir la potabilité"
+     ],
+     "rep": "Non",
+     "expl": "Réduire la dureté et maîtriser les risques sanitaires sont des objectifs distincts."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-03-07"
+  },
+  {
+   "titre": "Les litres qu’on ne voit pas passer",
+   "accroche": "Une petite fuite devient grande quand elle dure.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Le compteur additionne des volumes",
+     "texte": "Un compteur d’eau mesure un volume passé. Un mètre cube correspond à 1 000 litres. Il ne mesure pas directement la qualité de l’eau ni l’énergie utilisée pour la chauffer.",
+     "schema": "Compteur imaginaire « 1 m³ » relié à dix blocs de 100 L. Deux pictogrammes distincts « qualité » et « chauffage » non mesurés par ce compteur."
+    },
+    {
+     "titre": "Débit multiplié par durée",
+     "texte": "À débit constant, volume = débit × durée. Un débit imaginaire de 6 litres par minute pendant 5 minutes donne 30 litres. La durée transforme un petit débit en volume notable.",
+     "schema": "Frise de cinq minutes avec un bloc bleu de 6 L par minute. Total visible « 30 L » ; mention « exemple, pas une valeur universelle »."
+    },
+    {
+     "titre": "Une fuite n’attend pas",
+     "texte": "Une fuite continue de seulement 1 litre par heure représente 24 litres par jour, puis environ 720 litres en 30 jours. L’accumulation compte autant que l’aspect spectaculaire du jet.",
+     "schema": "Trois récipients gradués symboliques : 1 heure, 1 jour, 30 jours ; volumes 1, 24, 720 L. Pas de taille de goutte supposée universelle."
+    },
+    {
+     "titre": "L’eau chaude a deux parcours de consommation",
+     "texte": "Utiliser de l’eau chaude mobilise de l’eau et de l’énergie pour la chauffer. Leur quantité dépend notamment du volume et de la hausse de température, ainsi que des pertes du système.",
+     "schema": "Deux compteurs symboliques convergent vers une douche : eau bleue et énergie orange. Étiquettes « volume » et « chauffage », sans tarif ni économie garantie."
+    },
+    {
+     "titre": "Décrire avant de réparer",
+     "texte": "Un écoulement inhabituel, une trace humide ou une consommation inexpliquée mérite d’être signalé. Ces indices ne suffisent pas à localiser une fuite : un professionnel peut rechercher sa cause.",
+     "schema": "Carnet avec trois observations : lieu, moment, signe visible. Flèche vers professionnel ; mur opaque conservé, sans perçage ni recherche invasive."
+    }
+   ],
+   "dans_ta_vie": "Tu peux estimer un volume avec des hypothèses simples et décrire une anomalie. Tu comprends pourquoi une fuite discrète mérite une attention rapide.",
+   "securite": "N’approche pas une fuite d’eau d’un équipement électrique. N’accède pas à un compteur dangereux ou difficile d’accès ; signale le problème et fais intervenir une personne compétente.",
+   "defi": "Pendant 4 minutes, calcule sur papier le volume d’un débit imaginaire de 8 L/min pendant 4 minutes. Compare-le à une fuite de 2 L/h pendant une journée et explique l’effet de la durée.",
+   "quiz": [
+    {
+     "q": "Combien de litres représente 1 m³ ?",
+     "choix": [
+      "10 litres",
+      "1 000 litres",
+      "100 litres"
+     ],
+     "rep": "1 000 litres",
+     "expl": "Un mètre cube est un volume égal à mille litres."
+    },
+    {
+     "q": "Quel volume donne 6 L/min pendant 5 minutes ?",
+     "choix": [
+      "30 litres",
+      "1,2 litre",
+      "300 litres"
+     ],
+     "rep": "30 litres",
+     "expl": "À débit constant, on multiplie 6 par 5."
+    },
+    {
+     "q": "Quel volume représente une fuite de 1 L/h pendant 24 heures ?",
+     "choix": [
+      "1 litre",
+      "24 000 litres",
+      "24 litres"
+     ],
+     "rep": "24 litres",
+     "expl": "Le petit débit s’additionne pendant toute la durée de la fuite."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-03-08"
+  }
+ ]
+}

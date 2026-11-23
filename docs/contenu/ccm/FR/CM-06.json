@@ -1,0 +1,583 @@
+{
+ "id": "CM-06",
+ "titre": "Internet et le wifi",
+ "public": "ado-adulte",
+ "lecons": [
+  {
+   "titre": "Internet n’est pas une seule machine",
+   "accroche": "Le réseau relie des réseaux ; les sites et applications utilisent ce réseau.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Un réseau relie des équipements",
+     "texte": "Un réseau permet à des équipements d’échanger des données selon des règles communes. Il peut être petit, comme celui d’un logement, ou relier un grand nombre de sites.",
+     "schema": "Trois appareils reliés à un nœud central dans une maison ; même motif à plus grande échelle dans une ville. Flèches de données dans les deux sens."
+    },
+    {
+     "titre": "Internet relie des réseaux",
+     "texte": "Internet est un ensemble de réseaux interconnectés. Des opérateurs, entreprises et organisations en exploitent différentes parties ; il n’existe pas une unique machine centrale qui contient tout.",
+     "schema": "Quatre groupes de petits nœuds colorés, reliés entre groupes par plusieurs chemins. Aucun gros ordinateur central ; légende « réseaux interconnectés »."
+    },
+    {
+     "titre": "Le Web est un usage",
+     "texte": "Le Web permet notamment de consulter des pages avec un navigateur. La messagerie, les jeux en ligne ou certains appels utilisent aussi Internet, sans être tous des pages Web.",
+     "schema": "Réseau gris en fond ; quatre services au-dessus : pages, messages, jeu, appel. Le bloc « Web » entoure uniquement les pages."
+    },
+    {
+     "titre": "Un serveur fournit un service",
+     "texte": "Un serveur est un système qui répond à des demandes : envoyer une page, stocker un fichier ou relayer un message. Ce rôle peut être réparti entre plusieurs machines.",
+     "schema": "Téléphone demandeur à gauche, groupe de serveurs à droite. Flèche « demande » vers le groupe puis « réponse » vers téléphone ; pas de serveur unique obligatoire."
+    },
+    {
+     "titre": "Le chemin contient plusieurs maillons",
+     "texte": "Entre ton appareil et un service, il peut y avoir ton réseau local, ton fournisseur d’accès, d’autres réseaux et des serveurs. Une difficulté sur un maillon peut perturber l’usage.",
+     "schema": "Chaîne verticale de cinq blocs : appareil, réseau local, accès, réseaux intermédiaires, service. Un seul bloc orange marqué « difficulté possible » dans chaque étape d’animation."
+    }
+   ],
+   "dans_ta_vie": "Tu peux distinguer une panne d’un site et une panne de tout l’accès. Tu sais que le Web fait partie des usages d’Internet sans être Internet à lui seul.",
+   "securite": "Les défis utilisent seulement des dessins ou une consultation ordinaire. N’accède pas aux réglages ou aux équipements d’un réseau sans autorisation.",
+   "defi": "Pendant 3 minutes, dessine quatre usages : page Web, message, jeu en ligne et appel. Relie-les à un même réseau, puis explique pourquoi la panne d’un service ne prouve pas la panne de tout Internet.",
+   "quiz": [
+    {
+     "q": "Qu’est-ce qu’Internet ?",
+     "choix": [
+      "Une seule machine contenant tous les services",
+      "Uniquement le réseau local de chaque logement",
+      "Un ensemble de réseaux interconnectés"
+     ],
+     "rep": "Un ensemble de réseaux interconnectés",
+     "expl": "Les échanges passent entre de nombreux réseaux exploités par différents acteurs."
+    },
+    {
+     "q": "Le Web et Internet désignent-ils exactement la même chose ?",
+     "choix": [
+      "Oui, tout usage d’Internet est forcément une page Web",
+      "Non",
+      "Oui, le navigateur constitue à lui seul tout le réseau"
+     ],
+     "rep": "Non",
+     "expl": "Le Web est une famille d’usages qui s’appuie sur Internet."
+    },
+    {
+     "q": "Quel est le rôle d’un serveur ?",
+     "choix": [
+      "Répondre à des demandes pour fournir un service",
+      "Produire obligatoirement les ondes wifi du logement",
+      "Attribuer à lui seul les adresses de tout Internet"
+     ],
+     "rep": "Répondre à des demandes pour fournir un service",
+     "expl": "Le mot serveur décrit un rôle, parfois assuré par plusieurs machines."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-06-01"
+  },
+  {
+   "titre": "Un message voyage en morceaux",
+   "accroche": "Le réseau ne réserve pas forcément une route entière à ton seul fichier.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Découper les données",
+     "texte": "Les échanges sont transportés sous forme de paquets : de petites unités contenant des données et des informations de contrôle. L’image des enveloppes aide à comprendre, sans être un transport postal réel.",
+     "schema": "Document à gauche découpé en quatre blocs ; chaque bloc dans une enveloppe symbolique avec adresse. Mention « comparaison » ; numéros visibles sur les données."
+    },
+    {
+     "titre": "Des adresses pour acheminer",
+     "texte": "Les adresses IP identifient des points de communication dans un réseau. Elles aident les équipements à acheminer les paquets ; ce ne sont pas nécessairement des identités personnelles ni des adresses postales.",
+     "schema": "Paquet avec étiquette « adresse de destination ». Routeur abstrait lisant l’étiquette ; carte postale et portrait humain séparés par un signe « différent »."
+    },
+    {
+     "titre": "Les routeurs choisissent la suite",
+     "texte": "Un routeur transmet les paquets vers un prochain équipement selon les informations dont il dispose. Les chemins peuvent changer ; deux échanges n’utilisent pas nécessairement exactement le même trajet.",
+     "schema": "Petit réseau avec deux itinéraires entre départ et arrivée. Routeurs en cercles gris ; animer deux paquets suivant des routes différentes à deux moments."
+    },
+    {
+     "titre": "Perte et retard peuvent arriver",
+     "texte": "Un paquet peut être retardé ou perdu, notamment quand une liaison est saturée. Certains mécanismes de communication détectent des pertes et demandent de nouvelles transmissions ; tous les usages n’arbitrent pas pareil.",
+     "schema": "File de paquets devant un passage étroit ; un paquet disparaît puis demande de retransmission en pointillés. Une autre branche « temps réel » montre un compromis de délai."
+    },
+    {
+     "titre": "Reconstruire selon le protocole",
+     "texte": "Un protocole est un ensemble de règles d’échange. Certains assurent la remise en ordre et la retransmission des données ; d’autres privilégient un délai court, utile pour des échanges en direct.",
+     "schema": "Deux modes : fichier reconstitué dans l’ordre avec attente ; conversation avec horloge et petite lacune tolérée. Légendes « règles différentes selon l’usage »."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi un téléchargement peut ralentir sans que le fichier soit coupé en morceaux visibles. Tu vois aussi pourquoi une conversation réagit mal à de longs retards.",
+   "securite": "Ne cherche pas à intercepter les communications d’autrui ni à saturer un réseau pour tester ces phénomènes. Les simulations se font sur papier.",
+   "defi": "Prends 4 minutes pour écrire une phrase sur six petits papiers numérotés. Mélange-les, mets-en un de côté, puis demande à un proche de reconstruire la phrase et d’indiquer le morceau manquant.",
+   "quiz": [
+    {
+     "q": "Qu’est-ce qu’un paquet réseau ?",
+     "choix": [
+      "Un câble physique réservé à un seul fichier",
+      "Une unité transportant des données et des informations de contrôle",
+      "La totalité d’un service envoyée obligatoirement en une fois"
+     ],
+     "rep": "Une unité transportant des données et des informations de contrôle",
+     "expl": "La comparaison avec une enveloppe illustre son contenu et les informations d’acheminement."
+    },
+    {
+     "q": "À quoi sert un routeur ?",
+     "choix": [
+      "À transmettre des paquets vers leur prochaine étape",
+      "À garantir la vérité des sites",
+      "À stocker obligatoirement tous les fichiers des utilisateurs"
+     ],
+     "rep": "À transmettre des paquets vers leur prochaine étape",
+     "expl": "Il utilise des informations d’acheminement pour choisir la suite du trajet."
+    },
+    {
+     "q": "Tous les échanges traitent-ils pertes et délais de façon identique ?",
+     "choix": [
+      "Oui, tous privilégient exactement la même durée d’attente",
+      "Oui, aucun protocole ne prévoit de nouvelle transmission",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Les règles choisies dépendent notamment du besoin de fiabilité et de rapidité."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-06-02"
+  },
+  {
+   "titre": "Comment un nom de site devient une page",
+   "accroche": "Écrire un nom déclenche plusieurs opérations qui restent habituellement invisibles.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Un nom plus facile à retenir",
+     "texte": "Un nom de domaine sert de repère lisible. Le système DNS aide notamment à trouver les adresses réseau associées à ce nom, comme un service d’annuaire distribué.",
+     "schema": "Champ d’adresse avec « exemple.fr » ; flèche vers annuaire DNS puis vers adresses IP symboliques. Aucun vrai site utilisé pour une action."
+    },
+    {
+     "titre": "Le DNS ne contient pas la page",
+     "texte": "La réponse DNS indique comment joindre une destination, pas le texte de la page. Un même nom peut être associé à plusieurs adresses, et ces associations peuvent évoluer.",
+     "schema": "Annuaire avec nom vers trois adresses ; livre de pages dans un serveur séparé. Flèche DNS arrêtée avant le contenu, puis nouvelle flèche de connexion."
+    },
+    {
+     "titre": "Le navigateur envoie une demande",
+     "texte": "Le navigateur utilise des règles Web pour demander une ressource à un serveur. Celui-ci renvoie une réponse qui peut contenir du texte, une image, un programme ou une erreur.",
+     "schema": "Navigateur à gauche et serveur à droite ; demande sortante et réponse entrante. Quatre petites réponses possibles, dont une erreur, sans garantir un résultat."
+    },
+    {
+     "titre": "La page se construit par étapes",
+     "texte": "Une page peut demander plusieurs fichiers : structure, styles, images ou programmes. Le navigateur les interprète et compose l’affichage ; certains éléments peuvent arriver plus tard que d’autres.",
+     "schema": "Page en quatre couches apparaissant successivement : structure, mise en forme, images, interaction. Flèches venant de plusieurs fichiers, pas d’une seule image géante."
+    },
+    {
+     "titre": "Le cache évite parfois de tout reprendre",
+     "texte": "Un cache conserve temporairement certaines données réutilisables. Il peut accélérer un accès et limiter les échanges ; des règles déterminent quand vérifier ou remplacer ces copies.",
+     "schema": "Navigateur vers petite étagère « cache » avant le serveur. Chemin court pour copie valide ; chemin de vérification vers serveur pour copie à contrôler."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi le texte d’une page peut apparaître avant ses images. Tu sais distinguer une difficulté de résolution de nom, de réponse du serveur ou d’affichage.",
+   "securite": "Ne modifie pas les réglages DNS ni les protections du navigateur pour ce défi. Une page réclamant une installation inattendue ou un code secret doit être considérée avec prudence.",
+   "defi": "Pendant 3 minutes, trace sur papier nom, recherche d’adresse, demande, réponse, affichage. Explique à quelqu’un pourquoi l’annuaire du site et le contenu de la page ne sont pas la même chose.",
+   "quiz": [
+    {
+     "q": "À quoi sert notamment le DNS ?",
+     "choix": [
+      "À trouver des adresses associées à un nom",
+      "À conserver le texte intégral de toutes les pages",
+      "À chiffrer automatiquement tous les échanges du navigateur"
+     ],
+     "rep": "À trouver des adresses associées à un nom",
+     "expl": "Le DNS fournit des informations de résolution de noms."
+    },
+    {
+     "q": "Une page Web arrive-t-elle toujours en un seul fichier ?",
+     "choix": [
+      "Oui, obligatoirement",
+      "Oui, toute page est une seule image reçue du serveur",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Un affichage peut assembler de nombreuses ressources."
+    },
+    {
+     "q": "Que conserve un cache ?",
+     "choix": [
+      "Toutes les données du monde sans limite de durée",
+      "Certaines copies réutilisables de données",
+      "Uniquement les adresses des antennes mobiles proches"
+     ],
+     "rep": "Certaines copies réutilisables de données",
+     "expl": "La réutilisation dépend de règles de validité et de vérification."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-06-03"
+  },
+  {
+   "titre": "La box est un carrefour, la fibre est un chemin",
+   "accroche": "Le boîtier de la maison peut réunir plusieurs fonctions.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Relier la maison au fournisseur",
+     "texte": "L’accès fixe relie le logement au réseau d’un fournisseur. Il peut utiliser notamment une fibre optique ou du cuivre, selon l’équipement du lieu. Cet accès ne se confond pas avec le wifi intérieur.",
+     "schema": "Maison avec réseau local à gauche, liaison d’accès au centre, réseau du fournisseur à droite. Wifi dessiné seulement dans la maison, séparé de la liaison extérieure."
+    },
+    {
+     "titre": "La fibre guide de la lumière",
+     "texte": "Une fibre optique guide des signaux lumineux qui représentent des données. Des équipements convertissent entre signaux électriques et lumineux. Ce n’est pas le fichier lui-même qui devient une petite photo dans le câble.",
+     "schema": "Fil transparent stylisé avec impulsions lumineuses ; convertisseur à chaque extrémité. Bits symboliques avant et après, sans rayon sortant vers les yeux."
+    },
+    {
+     "titre": "La box regroupe des rôles",
+     "texte": "Une box peut réunir terminaison d’accès, routeur, point d’accès wifi et autres fonctions. Les rôles restent distincts, même lorsqu’un seul boîtier les contient.",
+     "schema": "Boîtier découpé en quatre cases fonctionnelles nommées ; contour commun. Entrée fournisseur d’un côté, appareils locaux de l’autre ; aucun circuit électronique détaillé."
+    },
+    {
+     "titre": "Le câble relie aussi localement",
+     "texte": "Une liaison Ethernet permet un échange par câble dans le réseau local. Elle peut éviter certaines difficultés radio ; ses performances dépendent du câble, des ports et des équipements.",
+     "schema": "Ordinateur relié à box par câble, téléphone par wifi sur une autre branche. Jauges séparées pour liaison locale et accès extérieur."
+    },
+    {
+     "titre": "Le maillon limitant fixe le rythme",
+     "texte": "Un accès extérieur rapide ne garantit pas que chaque appareil obtienne ce débit. La liaison locale, l’équipement, le partage de l’accès ou le service distant peuvent limiter la vitesse réelle.",
+     "schema": "Parcours de quatre tuyaux symboliques de largeurs différentes ; passage étroit au centre. Légende « comparaison de débit, pas trajet d’eau réel »."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi une offre d’accès rapide ne suffit pas à prévoir la vitesse dans une chambre. Tu peux séparer ce qui dépend de la maison et du réseau extérieur.",
+   "securite": "Ne regarde jamais dans un connecteur de fibre et ne débranche pas la fibre pour l’observer. Ne démonte pas la box et ne touche pas une alimentation endommagée.",
+   "defi": "Prends 3 minutes pour dessiner ton installation de mémoire, sans déplacer d’équipement. Utilise trois couleurs pour accès extérieur, câble local et wifi ; indique les fonctions regroupées dans le boîtier.",
+   "quiz": [
+    {
+     "q": "Que transporte une fibre optique pour transmettre les données ?",
+     "choix": [
+      "Uniquement des signaux électriques dans le verre",
+      "Des ondes radio qui doivent se propager hors du câble",
+      "Des signaux lumineux guidés"
+     ],
+     "rep": "Des signaux lumineux guidés",
+     "expl": "Les équipements codent les données dans des signaux lumineux."
+    },
+    {
+     "q": "La box peut-elle réunir plusieurs fonctions ?",
+     "choix": [
+      "Non, elle ne peut assurer que la fonction wifi",
+      "Oui",
+      "Non, un routeur doit toujours être dans un boîtier séparé"
+     ],
+     "rep": "Oui",
+     "expl": "Plusieurs rôles réseau peuvent être regroupés dans un boîtier."
+    },
+    {
+     "q": "Un accès rapide garantit-il ce même débit sur chaque appareil ?",
+     "choix": [
+      "Non",
+      "Oui, sans condition",
+      "Oui, même si la liaison locale est perturbée"
+     ],
+     "rep": "Non",
+     "expl": "Un autre maillon peut limiter les performances de bout en bout."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-06-04"
+  },
+  {
+   "titre": "Pourquoi le wifi passe mal derrière ce mur",
+   "accroche": "Les ondes traversent un logement avec des pertes, des reflets et des voisins.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Le signal s’affaiblit",
+     "texte": "La puissance reçue diminue généralement avec l’éloignement et les obstacles. Les murs, meubles et surfaces métalliques peuvent atténuer, réfléchir ou perturber les ondes selon leur nature.",
+     "schema": "Point d’accès au centre d’un plan ; intensité en dégradés, sans cercles parfaits. Mur épais et armoire métallique produisant zones plus faibles et trajets réfléchis."
+    },
+    {
+     "titre": "Plusieurs bandes de fréquences",
+     "texte": "Le wifi utilise notamment des fréquences autour de 2,4, 5 ou 6 gigahertz : des milliards de cycles par seconde. Selon les équipements et conditions, ces bandes diffèrent en portée, encombrement et capacité.",
+     "schema": "Trois voies radio colorées nommées 2,4, 5 et 6 GHz. Sous chaque voie, pictogrammes portée, occupation, capacité sans classement universel chiffré."
+    },
+    {
+     "titre": "Partager le temps radio",
+     "texte": "Plusieurs appareils et réseaux voisins peuvent se partager ou perturber une même zone radio. Une connexion ralentit alors même si le signal du point d’accès est bien reçu.",
+     "schema": "Trois appareils alternant sur une frise de temps vers le même point d’accès ; réseau voisin en violet sur une voie proche. Montrer des attentes."
+    },
+    {
+     "titre": "Répéter exige de recevoir",
+     "texte": "Un répéteur reçoit puis retransmet une liaison. Placé là où il reçoit déjà très mal, il ne recrée pas une bonne connexion à partir de rien. Le trajet vers le réseau compte aussi.",
+     "schema": "Box, répéteur, appareil sur trois positions. Premier trajet faible en pointillés ; retransmission aussi limitée. Deuxième vignette avec trajet d’amont meilleur, sans recommandation d’achat."
+    },
+    {
+     "titre": "Des barres fortes ne disent pas tout",
+     "texte": "Les barres wifi décrivent surtout une réception locale selon le système. L’accès extérieur peut être coupé, saturé ou limité alors que le lien avec la box reste fort.",
+     "schema": "Téléphone avec barres fortes vers box ; liaison box-Internet interrompue par croix rouge. Les flèches locales restent visibles."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi la distance seule n’explique pas toute la qualité du wifi. Tu peux décrire séparément réception locale et fonctionnement de l’accès extérieur.",
+   "securite": "N’installe pas d’équipement en hauteur ni près d’un danger pour ce défi. Ne modifie pas les réglages radio d’un réseau qui ne t’appartient pas et n’utilise pas d’outil de brouillage.",
+   "defi": "Pendant 4 minutes, observe les barres de ton propre wifi depuis deux endroits accessibles, téléphone à la main et à l’arrêt à chaque fois. Note murs et distance ; rappelle pourquoi deux observations ne constituent pas une mesure complète de débit.",
+   "quiz": [
+    {
+     "q": "Qu’est-ce qui peut affaiblir une liaison wifi ?",
+     "choix": [
+      "La seule vitesse annoncée sur la facture",
+      "Des obstacles et l’éloignement",
+      "La seule puissance de calcul du serveur distant, sans effet radio"
+     ],
+     "rep": "Des obstacles et l’éloignement",
+     "expl": "Les matériaux et les trajets radio modifient la puissance et la qualité reçues."
+    },
+    {
+     "q": "Un répéteur recevant très mal peut-il inventer une excellente liaison d’amont ?",
+     "choix": [
+      "Non",
+      "Oui, il supprime toutes les pertes avant lui",
+      "Oui, il n’a pas besoin de recevoir correctement pour retransmettre"
+     ],
+     "rep": "Non",
+     "expl": "La qualité de ce qu’il reçoit et de son raccordement reste déterminante."
+    },
+    {
+     "q": "Un wifi bien reçu prouve-t-il que l’accès extérieur fonctionne ?",
+     "choix": [
+      "Oui, les barres décrivent toute la chaîne jusqu’au serveur",
+      "Oui, si le réseau possède un mot de passe",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Le lien radio local et l’accès du fournisseur sont deux maillons distincts."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-06-05"
+  },
+  {
+   "titre": "Débit et délai : la route large et la route courte",
+   "accroche": "Un appel peut mal se passer sur une connexion pourtant rapide en téléchargement.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Le débit compte les données",
+     "texte": "Le débit indique la quantité de données transférée par seconde. Les offres l’expriment souvent en mégabits par seconde. Le débit réellement obtenu varie selon les conditions et le partage.",
+     "schema": "Route symbolique avec paquets traversant un compteur par seconde. Jauge « débit » ; largeur variable au cours d’une frise de temps."
+    },
+    {
+     "titre": "Bits et octets",
+     "texte": "Un octet contient huit bits. Un débit de 80 mégabits par seconde correspond donc à 10 mégaoctets par seconde avant certains surcoûts et limitations. Attention aux lettres et aux unités.",
+     "schema": "Huit petits carrés « bits » entourés par un cadre « 1 octet ». Calcul « 80 Mb/s ÷ 8 = 10 Mo/s », avec mention « conversion théorique »."
+    },
+    {
+     "titre": "La latence est un délai",
+     "texte": "La latence décrit un délai de communication ; on mesure souvent un aller-retour. Une route large peut rester longue : débit élevé et faible délai sont deux propriétés différentes.",
+     "schema": "Deux routes de même largeur mais longueurs différentes ; un paquet et une horloge sur chacune. Légende « comparaison : largeur = débit, trajet = délai »."
+    },
+    {
+     "titre": "Les variations gênent le direct",
+     "texte": "Des retards variables et des pertes peuvent perturber la voix ou la vidéo en direct. Une mémoire tampon peut lisser certains écarts, au prix d’un délai supplémentaire.",
+     "schema": "Paquets arrivant irrégulièrement vers réservoir « tampon », puis sortie plus régulière. Horloge ajoutant un délai ; petite lacune si le réservoir se vide."
+    },
+    {
+     "titre": "Envoyer compte autant pour certains usages",
+     "texte": "La réception concerne les données qui arrivent ; l’envoi concerne celles qui partent. Une visioconférence utilise les deux. Un faible débit d’envoi peut donc gêner même si la réception est bonne.",
+     "schema": "Ordinateur au centre ; flèche descendante bleue « réception » et montante violette « envoi ». Caméra associée à l’envoi, vidéo reçue associée à la réception."
+    }
+   ],
+   "dans_ta_vie": "Tu peux lire un résultat de mesure sans réduire toute la connexion à un seul nombre. Tu comprends pourquoi envoyer une vidéo et regarder une vidéo sollicitent des directions différentes.",
+   "securite": "N’installe pas d’outil inconnu pour un test de débit. Les mesures et les vidéos peuvent consommer des données mobiles ; le défi se fait uniquement sur papier.",
+   "defi": "Pendant 4 minutes, compare deux connexions imaginaires : gros débit avec long délai, plus petit débit avec court délai. Discute des effets possibles sur un gros téléchargement et sur une conversation, sans chercher un vainqueur universel.",
+   "quiz": [
+    {
+     "q": "Combien de bits contient un octet ?",
+     "choix": [
+      "Huit",
+      "Deux",
+      "Dix"
+     ],
+     "rep": "Huit",
+     "expl": "La conversion entre bits et octets explique un facteur huit entre certaines unités."
+    },
+    {
+     "q": "Un gros débit garantit-il une faible latence ?",
+     "choix": [
+      "Oui, les deux grandeurs sont équivalentes",
+      "Oui, le débit mesure aussi directement le délai",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "La quantité transférable et le délai de communication sont distincts."
+    },
+    {
+     "q": "Une visioconférence utilise-t-elle l’envoi ?",
+     "choix": [
+      "Non, seulement la réception",
+      "Oui, notamment pour ta voix et ta caméra",
+      "Non, la caméra transmet ses images sans emprunter le réseau"
+     ],
+     "rep": "Oui, notamment pour ta voix et ta caméra",
+     "expl": "La conversation comporte des échanges dans les deux sens."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-06-06"
+  },
+  {
+   "titre": "Le cadenas protège un trajet, pas une promesse",
+   "accroche": "Une connexion chiffrée peut aussi mener à un site trompeur.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Chiffrer rend le contenu illisible sans les clés",
+     "texte": "Le chiffrement transforme les données pour qu’elles ne soient normalement lisibles que par les parties disposant des moyens nécessaires. Il protège un échange selon son fonctionnement et ses limites.",
+     "schema": "Texte lisible à gauche, coffre de symboles au milieu, texte lisible à droite. Clés seulement aux extrémités prévues ; observateur intermédiaire devant symboles incompréhensibles."
+    },
+    {
+     "titre": "HTTPS protège la connexion Web",
+     "texte": "HTTPS utilise notamment un chiffrement et une vérification du serveur pour le domaine demandé. Il réduit certains risques d’interception ou de modification pendant le trajet entre navigateur et serveur.",
+     "schema": "Navigateur et serveur reliés par tunnel fermé. Domaine inscrit aux deux extrémités ; intermédiaire extérieur au tunnel, sans accès au texte du contenu."
+    },
+    {
+     "titre": "Le contenu peut quand même tromper",
+     "texte": "Un site malveillant peut lui aussi utiliser HTTPS. Une connexion chiffrée ne prouve donc ni l’honnêteté du site ni la vérité de ses affirmations.",
+     "schema": "Deux boutiques symboliques avec même tunnel chiffré : une normale, une trompeuse. Cadenas identique sur les deux ; loupe sur l’identité et le contenu."
+    },
+    {
+     "titre": "Vérifier la destination",
+     "texte": "Un lien peut afficher un texte rassurant tout en menant ailleurs. L’hameçonnage tente d’obtenir des informations en imitant un service ; examiner la destination et passer par un accès connu réduit certains risques.",
+     "schema": "Message fictif avec bouton « service habituel » ; loupe révélant un autre domaine symbolique. Chemin sûr séparé vers favori déjà connu, sans vraie page de connexion."
+    },
+    {
+     "titre": "Un wifi protégé n’est pas une protection universelle",
+     "texte": "Le mot de passe wifi protège l’accès radio selon la configuration. Il ne garantit pas qu’un site soit fiable ni qu’une application respecte tes données. Chaque couche répond à des risques différents.",
+     "schema": "Trois boucliers séparés : liaison wifi, connexion Web, application. Chaque bouclier protège sa zone ; aucun grand bouclier couvrant automatiquement tout."
+    }
+   ],
+   "dans_ta_vie": "Tu sais pourquoi un cadenas ne suffit pas pour faire confiance à un site. Tu peux distinguer sécurité de la liaison et fiabilité de l’interlocuteur.",
+   "securite": "Ne saisis jamais un mot de passe ou un code de validation sur une page ouverte pour ce défi. En cas de demande inattendue, utilise un accès au service déjà connu et vérifie par un canal indépendant.",
+   "defi": "Pendant 3 minutes, invente sur papier un message demandant une connexion urgente, sans lien réel. Repère trois éléments à vérifier : origine, destination et raison de la demande ; explique ce que le chiffrement ne prouve pas.",
+   "quiz": [
+    {
+     "q": "Que protège notamment HTTPS ?",
+     "choix": [
+      "La vérité de toutes les phrases du site",
+      "L’honnêteté automatique du destinataire",
+      "Le contenu de la connexion entre navigateur et serveur"
+     ],
+     "rep": "Le contenu de la connexion entre navigateur et serveur",
+     "expl": "La protection technique du trajet ne valide pas toutes les intentions du destinataire."
+    },
+    {
+     "q": "Un site trompeur peut-il avoir une connexion HTTPS ?",
+     "choix": [
+      "Non, le chiffrement est réservé aux sites honnêtes",
+      "Oui",
+      "Non, la vérification du domaine certifie aussi le contenu"
+     ],
+     "rep": "Oui",
+     "expl": "Un certificat et une connexion chiffrée ne constituent pas un certificat d’honnêteté."
+    },
+    {
+     "q": "Que tente souvent l’hameçonnage ?",
+     "choix": [
+      "Obtenir des informations en imitant un service",
+      "Augmenter automatiquement la vitesse de téléchargement",
+      "Prouver l’identité d’un service grâce au seul logo affiché"
+     ],
+     "rep": "Obtenir des informations en imitant un service",
+     "expl": "L’imitation et les demandes pressantes peuvent servir à pousser une personne à divulguer des informations."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-06-07"
+  },
+  {
+   "titre": "Le nuage a une adresse et des machines",
+   "accroche": "Tes fichiers à distance dépendent d’équipements très terrestres.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Le nuage est ailleurs",
+     "texte": "Le cloud, ou informatique à distance, utilise des serveurs et du stockage accessibles par un réseau. Les données reposent sur des équipements physiques dans des centres de données.",
+     "schema": "Nuage symbolique s’ouvrant pour révéler bâtiment, serveurs et stockage. Câbles vers un téléphone ; légende « ressources physiques à distance »."
+    },
+    {
+     "titre": "Un service a besoin d’énergie",
+     "texte": "Les centres de données consomment de l’électricité pour le calcul, le stockage, le réseau et des fonctions comme le refroidissement. Transférer et conserver des données n’est pas immatériel au sens physique.",
+     "schema": "Centre de données avec quatre branches d’énergie : calcul, stockage, réseau, refroidissement. Aucun chiffre universel par message ni promesse de coût nul."
+    },
+    {
+     "titre": "Plusieurs copies peuvent aider",
+     "texte": "Un service peut conserver des copies sur plusieurs équipements pour résister à certaines pannes. Cela ne supprime pas toutes les erreurs, suppressions ou indisponibilités ; les garanties dépendent du service.",
+     "schema": "Trois serveurs avec copies d’un fichier ; un serveur tombe en panne, les deux autres restent. Deuxième vignette : suppression propagée possible, point d’attention."
+    },
+    {
+     "titre": "Hors ligne demande une copie disponible",
+     "texte": "Un contenu consulté hier n’est pas forcément utilisable sans réseau aujourd’hui. L’accès hors ligne dépend notamment d’une copie locale, du format, des autorisations et du fonctionnement de l’application.",
+     "schema": "Téléphone sans réseau ; deux fichiers : copie locale accessible, lien distant inaccessible. Petit cadenas sur un troisième contenu aux conditions d’accès variables."
+    },
+    {
+     "titre": "Une panne se décrit par son périmètre",
+     "texte": "Si une seule application échoue, le problème peut concerner ce service. Si plusieurs usages échouent, d’autres maillons sont possibles. Noter ce qui marche aide l’assistance, sans prouver automatiquement la cause.",
+     "schema": "Tableau fictif : fichier local fonctionne, page A fonctionne, service B échoue. Flèche vers carnet « symptômes, moment, message exact » puis assistance."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends ce que signifie conserver un fichier à distance. Tu peux préparer une description utile d’un problème sans effacer de données ou modifier toute l’installation.",
+   "securite": "Ne réinitialise pas une box ou un téléphone pour ce défi. Avant toute suppression ou déplacement de fichier, vérifie les copies et les règles de synchronisation ; ne partage pas de données privées avec une assistance non vérifiée.",
+   "defi": "Prends 4 minutes pour dessiner trois cas imaginaires : fichier seulement local, fichier seulement distant, fichier avec copie locale. Pour chacun, explique ce qui peut rester accessible sans réseau et ce qui dépend du service.",
+   "quiz": [
+    {
+     "q": "Où se trouvent physiquement les données du cloud ?",
+     "choix": [
+      "Uniquement sur l’appareil de chaque utilisateur",
+      "Sur des équipements de stockage et des serveurs",
+      "Uniquement dans les équipements wifi du logement"
+     ],
+     "rep": "Sur des équipements de stockage et des serveurs",
+     "expl": "L’informatique à distance repose sur du matériel réel."
+    },
+    {
+     "q": "Avoir plusieurs copies supprime-t-il toute panne et toute suppression ?",
+     "choix": [
+      "Non",
+      "Oui, toute duplication rend une suppression impossible",
+      "Oui, les copies ne peuvent jamais subir une même erreur"
+     ],
+     "rep": "Non",
+     "expl": "La duplication protège contre certains incidents, selon la conception du service."
+    },
+    {
+     "q": "Avoir consulté un contenu hier garantit-il son accès hors ligne ?",
+     "choix": [
+      "Oui, toute consultation crée une copie définitive",
+      "Oui, si le titre est resté affiché",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Il faut notamment que les données et les conditions d’accès nécessaires soient disponibles localement."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-06-08"
+  }
+ ]
+}

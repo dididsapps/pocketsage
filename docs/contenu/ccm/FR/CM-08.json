@@ -1,0 +1,583 @@
+{
+ "id": "CM-08",
+ "titre": "L’avion, le train et l’ascenseur",
+ "public": "ado-adulte",
+ "lecons": [
+  {
+   "titre": "Pourquoi les ailes portent un avion",
+   "accroche": "La portance ne vient pas d’un rendez-vous obligatoire entre deux morceaux d’air.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Quatre forces principales",
+     "texte": "En vol rectiligne horizontal stabilisé, on décrit généralement poids, portance, poussée et traînée. Leur équilibre permet un mouvement à vitesse constante ; une force n’est pas nécessairement un mouvement dans son sens.",
+     "schema": "Avion de profil avec poids vers le bas, portance vers le haut, poussée avant, traînée arrière. Paires opposées équilibrées ; mention « vol stabilisé, modèle simplifié »."
+    },
+    {
+     "titre": "L’aile modifie l’écoulement",
+     "texte": "L’aile agit sur l’air qui circule autour d’elle. Les pressions sur ses surfaces se répartissent de façon à produire une force ; la composante perpendiculaire à l’écoulement s’appelle la portance.",
+     "schema": "Profil d’aile au centre ; petites flèches de pression sur les deux faces, puis grande résultante. Légende « répartition variable selon les conditions »."
+    },
+    {
+     "titre": "L’air est globalement dévié",
+     "texte": "Une aile portant un avion dévie globalement de l’air vers le bas. L’action sur l’air et la force sur l’aile sont liées ; les deux faces de l’aile participent au phénomène.",
+     "schema": "Écoulement entrant horizontal à gauche, aile au centre, écoulement descendant derrière. Flèche de force ascendante sur aile ; trajectoires au-dessus et au-dessous, sans effet de ricochet unique."
+    },
+    {
+     "titre": "Pas de rendez-vous au bord arrière",
+     "texte": "Deux portions d’air passant au-dessus et au-dessous d’une aile n’ont aucune obligation de se retrouver en même temps derrière. Cette idée répandue ne permet pas d’expliquer correctement la portance.",
+     "schema": "Deux points initialement voisins, un au-dessus et un au-dessous. Animation montrant des arrivées différentes au bord arrière ; horloge commune barrée comme contrainte imaginaire."
+    },
+    {
+     "titre": "L’angle a une limite",
+     "texte": "L’angle d’attaque est l’angle entre l’aile et l’air arrivant. S’il devient trop grand, l’écoulement peut se décoller fortement : la portance diminue, c’est le décrochage. Ce n’est pas simplement un moteur arrêté.",
+     "schema": "Trois profils identiques à angles croissants par rapport à une flèche d’air. Dernier écoulement largement séparé avec tourbillons et portance réduite ; aucune valeur universelle d’angle."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends le rôle des ailes sans utiliser la fausse explication des trajets d’air synchronisés. Tu distingues portance, poussée et arrêt d’un moteur.",
+   "securite": "Ces schémas servent à comprendre, pas à piloter. Ne réalise aucune expérience avec véhicule, drone ou aile motorisée ; les défis sont uniquement sur papier.",
+   "defi": "Pendant 4 minutes, dessine les quatre forces puis une aile qui dévie de l’air. Explique à voix haute pourquoi une aile n’a pas besoin que deux portions d’air se retrouvent ensemble à l’arrière.",
+   "quiz": [
+    {
+     "q": "Qu’est-ce que la portance dans cette description ?",
+     "choix": [
+      "La poussée du moteur uniquement",
+      "Le poids de l’avion",
+      "La composante de force perpendiculaire à l’écoulement"
+     ],
+     "rep": "La composante de force perpendiculaire à l’écoulement",
+     "expl": "La portance résulte de l’interaction entre l’aile et l’écoulement."
+    },
+    {
+     "q": "Deux portions d’air doivent-elles se retrouver ensemble derrière l’aile ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Oui, car leur départ commun leur impose la même durée de trajet"
+     ],
+     "rep": "Non",
+     "expl": "Aucune règle physique n’impose ce rendez-vous."
+    },
+    {
+     "q": "Le décrochage signifie-t-il simplement que le moteur est arrêté ?",
+     "choix": [
+      "Non",
+      "Oui, exactement",
+      "Oui, même si l’écoulement autour de l’aile reste inchangé"
+     ],
+     "rep": "Non",
+     "expl": "Il concerne notamment l’angle d’attaque et la séparation de l’écoulement."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-08-01"
+  },
+  {
+   "titre": "Hélice ou réacteur : pousser de l’air pour avancer",
+   "accroche": "Les moteurs entretiennent le mouvement ; ils ne remplacent pas les ailes.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Compenser la traînée",
+     "texte": "L’air exerce une résistance appelée traînée. En vol stabilisé, la propulsion fournit une poussée qui la compense. Accélérer exige de modifier le bilan des forces.",
+     "schema": "Avion de profil : flèches de poussée et de traînée opposées. Première image équilibrée, seconde avec poussée plus grande et vitesse augmentant progressivement."
+    },
+    {
+     "titre": "L’hélice accélère de l’air",
+     "texte": "Une hélice est constituée de pales qui agissent sur l’air en tournant. Elle accélère globalement de l’air vers l’arrière ; l’avion reçoit une poussée vers l’avant.",
+     "schema": "Hélice vue de côté avec pales symboliques et flux d’air arrière. Flèche de poussée avant sur avion ; pas de main ni personne près de l’hélice."
+    },
+    {
+     "titre": "Le turboréacteur organise un flux",
+     "texte": "Un turboréacteur aspire et comprime de l’air, ajoute de l’énergie par combustion puis accélère un flux vers l’arrière. Sur de nombreux avions de ligne, une grande soufflante déplace aussi de l’air autour du cœur.",
+     "schema": "Moteur en coupe de principe : entrée, compresseur, combustion, turbine, sortie. Second flux bleu autour du cœur orange ; mention « architecture courante à soufflante »."
+    },
+    {
+     "titre": "Sans moteur, un avion peut planer",
+     "texte": "Un avion peut échanger de l’altitude contre de l’énergie pour avancer en plané. Sa portée dépend de l’avion et des conditions ; perdre la propulsion n’efface pas instantanément la portance.",
+     "schema": "Avion suivant une pente descendante douce ; barre d’altitude diminuant et flèches de portance et traînée présentes. Aucune distance de plané garantie."
+    },
+    {
+     "titre": "Les gouvernes changent l’attitude",
+     "texte": "Des surfaces mobiles aident à contrôler roulis, tangage et lacet : incliner les ailes, lever ou baisser le nez, orienter le nez latéralement. Leur action s’inscrit dans l’équilibre complet du vol.",
+     "schema": "Trois petits avions séparés avec axes colorés : longitudinal pour roulis, transversal pour tangage, vertical pour lacet. Flèches courtes et légendes simples."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends le point commun entre hélice et réacteur et pourquoi un avion peut planer. Tu distingues déplacer l’avion, modifier son attitude et soutenir son poids.",
+   "securite": "N’approche jamais une hélice, une entrée de réacteur ou une zone technique d’aérodrome. Suis les consignes de l’équipage et du personnel, même si un moteur semble silencieux.",
+   "defi": "Pendant 3 minutes, dessine deux machines imaginaires accélérant de l’air vers l’arrière : une hélice et un réacteur. Ajoute la poussée, puis explique le cas d’un planeur sans inventer une autonomie garantie.",
+   "quiz": [
+    {
+     "q": "Quel principe partage une hélice avec une propulsion à réaction ?",
+     "choix": [
+      "Supprimer le poids de l’avion",
+      "Accélérer un flux vers l’arrière pour obtenir une poussée",
+      "Arrêter tout mouvement de l’air derrière le moteur"
+     ],
+     "rep": "Accélérer un flux vers l’arrière pour obtenir une poussée",
+     "expl": "Le changement de mouvement du flux est lié à la force sur le système propulsif."
+    },
+    {
+     "q": "Un avion perd-il immédiatement toute portance si la propulsion s’arrête ?",
+     "choix": [
+      "Non",
+      "Oui, sans délai",
+      "Oui, la portance exige obligatoirement un moteur allumé"
+     ],
+     "rep": "Non",
+     "expl": "Tant qu’un écoulement adapté existe, les ailes peuvent encore produire de la portance."
+    },
+    {
+     "q": "Quel mouvement correspond au roulis ?",
+     "choix": [
+      "Lever ou baisser le nez autour de l’axe transversal",
+      "Orienter le nez latéralement autour de l’axe vertical",
+      "Incliner les ailes autour de l’axe longitudinal"
+     ],
+     "rep": "Incliner les ailes autour de l’axe longitudinal",
+     "expl": "Le roulis est une rotation autour de l’axe allant du nez à la queue."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-08-02"
+  },
+  {
+   "titre": "L’avion de ligne emporte sa petite atmosphère",
+   "accroche": "La cabine permet de voyager bien au-dessus de l’altitude des montagnes habitées.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Dehors, la pression diminue",
+     "texte": "En altitude, la pression de l’air baisse et l’air est généralement moins dense. La proportion d’oxygène reste proche de celle du sol, mais la pression due à cet oxygène diminue aussi.",
+     "schema": "Deux colonnes d’air, niveau de la mer et altitude. Même proportion symbolique de points oxygène, mais moins de points par volume en altitude ; jauges de pression différentes."
+    },
+    {
+     "titre": "La cabine est pressurisée",
+     "texte": "Un avion de ligne pressurisé maintient une pression intérieure supérieure à celle de l’extérieur en croisière. Elle n’est pas nécessairement égale à la pression au niveau de la mer.",
+     "schema": "Fuselage en coupe, intérieur orange et extérieur bleu. Deux jauges : pression intérieure plus haute ; aucune altitude cabine unique imposée à tous les avions."
+    },
+    {
+     "titre": "La coque supporte une différence",
+     "texte": "La structure et les ouvertures sont conçues pour supporter une différence de pression prévue. Forme, matériaux, assemblages et inspections participent à cette fonction ; la pressurisation n’est pas un simple gonflage libre.",
+     "schema": "Section arrondie du fuselage avec flèches de pression vers l’extérieur et structure porteuse en gris. Fenêtre arrondie et joint représentés sans détails d’intervention."
+    },
+    {
+     "titre": "L’air est renouvelé et traité",
+     "texte": "La ventilation renouvelle l’air de cabine ; une partie peut être recirculée après filtration selon l’avion. Température, pression et renouvellement sont des fonctions liées mais distinctes.",
+     "schema": "Cabine avec arrivée d’air neuf, extraction et boucle de recirculation passant par filtre. Couleurs distinctes ; ne pas présenter un filtre comme éliminant tout risque."
+    },
+    {
+     "titre": "Les turbulences viennent de mouvements d’air",
+     "texte": "Des variations de l’air traversé peuvent faire varier les forces sur l’avion et ses mouvements. Les secousses peuvent blesser une personne non attachée, même si le vol reste sous contrôle.",
+     "schema": "Avion traversant zone de flèches d’air irrégulières. Cabine avec occupant attaché et bagage rangé ; éviter un vide noir ou un « trou » matériel dans l’air."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi la cabine est un environnement organisé et pourquoi des secousses ne signifient pas automatiquement une panne. Tu sais que la ceinture sert aussi contre les mouvements imprévus.",
+   "securite": "Suis toujours les consignes de l’équipage. Garde ta ceinture attachée quand tu es assis et ne touche pas aux portes, issues ou équipements techniques hors instruction explicite du personnel.",
+   "defi": "Pendant 3 minutes, dessine deux thermomètres, deux jauges de pression et deux trajets d’air pour une cabine imaginaire. Explique pourquoi température, pression et renouvellement ne désignent pas la même fonction.",
+   "quiz": [
+    {
+     "q": "Qu’est-ce qui diminue principalement avec l’altitude dans cette explication ?",
+     "choix": [
+      "La pression de l’air",
+      "La proportion d’oxygène jusqu’à zéro en croisière",
+      "La masse de chaque molécule d’air"
+     ],
+     "rep": "La pression de l’air",
+     "expl": "En altitude, l’air extérieur est à plus basse pression : il n’offre pas les mêmes conditions qu’au niveau de la mer."
+    },
+    {
+     "q": "Une cabine pressurisée reproduit-elle forcément exactement la pression du niveau de la mer ?",
+     "choix": [
+      "Oui, sur tous les avions",
+      "Oui, la pression intérieure est indépendante de la conception",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "La pression intérieure suit les capacités et le fonctionnement prévus de l’avion."
+    },
+    {
+     "q": "Pourquoi garder la ceinture assis ?",
+     "choix": [
+      "Pour rendre toute turbulence impossible",
+      "Des mouvements imprévus peuvent survenir",
+      "Pour maintenir la pression de l’air dans la cabine"
+     ],
+     "rep": "Des mouvements imprévus peuvent survenir",
+     "expl": "La ceinture limite certains déplacements de l’occupant lors de secousses."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-08-03"
+  },
+  {
+   "titre": "Pourquoi le train roule sur de l’acier",
+   "accroche": "Le rail facilite le roulement, mais ne donne pas une adhérence illimitée.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Rouler avec peu de déformation",
+     "texte": "Les roues et rails en acier se déforment peu par rapport à un pneu routier. Le contact peut ainsi offrir une faible résistance au roulement, favorable au transport de charges importantes.",
+     "schema": "Deux contacts symboliques : roue acier sur rail et pneu sur route. Déformation plus faible pour l’acier ; mention « comparaison de principe »."
+    },
+    {
+     "titre": "Le contact doit quand même accrocher",
+     "texte": "Pour accélérer ou freiner par les roues, le train transmet des efforts au rail. L’adhérence disponible est limitée et varie, notamment avec l’eau, les feuilles ou d’autres dépôts.",
+     "schema": "Zoom roue-rail avec flèches d’effort, puis trois états de surface : sec, eau, feuilles. Jauge d’adhérence variable sans valeur universelle."
+    },
+    {
+     "titre": "La voie impose le trajet",
+     "texte": "Les roues suivent une voie construite avec une géométrie précise. Le conducteur ne choisit pas sa trajectoire avec un volant routier : les itinéraires dépendent de la voie et des aiguillages.",
+     "schema": "Vue du dessus : rail droit puis bifurcation par aiguillage. Train suivant le chemin établi ; volant routier barré dans un petit cartouche."
+    },
+    {
+     "titre": "Un essieu peut porter deux roues liées",
+     "texte": "Un essieu ferroviaire courant relie deux roues qui tournent ensemble. Leur profil et le déplacement latéral du contact aident à parcourir les courbes, avec les contraintes du guidage de la voie.",
+     "schema": "Essieu vu de face avec deux profils légèrement inclinés. Deuxième vue en courbe montrant contacts sur rayons de roulement différents ; mention « principe simplifié, profils réels plus complexes »."
+    },
+    {
+     "titre": "Le bogie porte un groupe de roues",
+     "texte": "Un bogie est un ensemble sous le véhicule qui porte généralement plusieurs essieux et une partie de la suspension. Il peut s’orienter par rapport à la caisse pour suivre la voie.",
+     "schema": "Voiture ferroviaire vue du dessus sur une courbe ; deux bogies orientés légèrement différemment sous la caisse. Essieux et pivot central légendés."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends le compromis entre roulement efficace et adhérence limitée. Tu sais pourquoi un train suit une infrastructure préparée plutôt qu’une trajectoire libre.",
+   "securite": "Ne descends jamais sur les voies et n’approche pas les roues ou aiguillages pour observer. Reste dans les espaces publics autorisés, derrière les limites de sécurité.",
+   "defi": "Prends 4 minutes pour dessiner une voiture ferroviaire avec deux bogies dans une courbe. Ajoute les contacts roue-rail et explique pourquoi faible résistance au roulement ne veut pas dire adhérence infinie.",
+   "quiz": [
+    {
+     "q": "Quel avantage offre notamment le contact acier sur acier ?",
+     "choix": [
+      "Une adhérence illimitée",
+      "L’absence de toute déformation ou perte",
+      "Une faible résistance au roulement"
+     ],
+     "rep": "Une faible résistance au roulement",
+     "expl": "La faible déformation contribue à limiter certaines pertes de roulement."
+    },
+    {
+     "q": "Le conducteur choisit-il une route latérale avec un volant comme en voiture ?",
+     "choix": [
+      "Oui, le conducteur peut tourner les roues hors des rails",
+      "Non, la voie et les aiguillages imposent le trajet",
+      "Oui, les aiguillages ne servent qu’aux trains arrêtés"
+     ],
+     "rep": "Non, la voie et les aiguillages imposent le trajet",
+     "expl": "La trajectoire ferroviaire dépend de l’infrastructure."
+    },
+    {
+     "q": "Qu’est-ce qu’un bogie ?",
+     "choix": [
+      "Un ensemble portant notamment des essieux sous la caisse",
+      "Une porte qui suit le quai",
+      "Un moteur placé obligatoirement sur le toit"
+     ],
+     "rep": "Un ensemble portant notamment des essieux sous la caisse",
+     "expl": "Il participe au support, à la suspension et à l’inscription du véhicule dans la voie."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-08-04"
+  },
+  {
+   "titre": "Le train peut recevoir son énergie en roulant",
+   "accroche": "La réserve n’est pas toujours embarquée dans les voitures.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Prendre du courant en hauteur",
+     "texte": "Sur une ligne à caténaire, un dispositif articulé appelé pantographe maintient un contact avec le fil d’alimentation. Le train reçoit ainsi de l’énergie électrique pendant son déplacement.",
+     "schema": "Train de profil, pantographe levé vers fil supérieur. Flèche d’énergie vers train ; grande zone rouge de distance autour du fil, sans personne à proximité."
+    },
+    {
+     "titre": "Un circuit doit se refermer",
+     "texte": "Dans une alimentation ferroviaire courante, le courant reçu par le train retourne notamment par les rails vers le système d’alimentation. La conception gère ce retour et les protections ; les rails ne sont pas à toucher.",
+     "schema": "Circuit de principe : sous-station, ligne aérienne, train, rails de retour. Boucle complète avec flèches ; aucun raccordement ni accès à l’infrastructure."
+    },
+    {
+     "titre": "Adapter pour les moteurs",
+     "texte": "Des équipements embarqués adaptent l’alimentation aux moteurs de traction. Ces moteurs transmettent une rotation aux roues par une transmission ; l’architecture varie selon les trains.",
+     "schema": "Chaîne alimentation, conversion, moteur, transmission, roues. Blocs fermés avec flèches d’énergie ; pas de tension chiffrée présentée comme universelle."
+    },
+    {
+     "titre": "Sans fil ne veut pas dire sans électricité",
+     "texte": "Un train diesel-électrique utilise un moteur diesel pour entraîner un générateur, puis des moteurs électriques pour la traction. D’autres trains emploient notamment batteries ou transmissions différentes.",
+     "schema": "Diesel vers générateur puis moteurs de roues ; branche batterie séparée dans un second train. Étiquette « exemples d’architectures », aucune équivalence universelle."
+    },
+    {
+     "titre": "Récupérer ou dissiper au freinage",
+     "texte": "Certains trains utilisent leurs moteurs en générateurs au freinage. L’énergie peut être renvoyée au réseau ou stockée si le système le permet ; sinon, elle peut être dissipée en chaleur.",
+     "schema": "Roues vers générateur avec trois branches conditionnelles : réseau, stockage, résistance chaude. Flèches et mot « selon équipement et conditions »."
+    }
+   ],
+   "dans_ta_vie": "Tu peux expliquer pourquoi un train électrique n’a pas nécessairement une énorme batterie. Tu sais aussi qu’un train diesel peut avoir des moteurs de traction électriques.",
+   "securite": "Les installations ferroviaires présentent un danger mortel, y compris à distance des fils. Ne monte sur aucun train ou ouvrage, ne touche jamais les rails et ne t’approche pas d’un câble tombé.",
+   "defi": "Pendant 3 minutes, dessine deux trains imaginaires : alimentation aérienne et diesel-électrique. Relie chaque source aux roues, puis ajoute un trajet possible de récupération au freinage sans aller observer une voie.",
+   "quiz": [
+    {
+     "q": "Que fait le pantographe ?",
+     "choix": [
+      "Il choisit la branche de voie aux aiguillages",
+      "Il établit un contact avec le fil d’alimentation",
+      "Il transmet directement le carburant aux roues"
+     ],
+     "rep": "Il établit un contact avec le fil d’alimentation",
+     "expl": "Le pantographe capte l’alimentation sur une ligne équipée de caténaires."
+    },
+    {
+     "q": "Un train diesel-électrique utilise-t-il des moteurs électriques de traction ?",
+     "choix": [
+      "Oui",
+      "Non, le générateur n’alimente jamais la traction",
+      "Non, l’électricité ne peut servir qu’à l’éclairage"
+     ],
+     "rep": "Oui",
+     "expl": "Le moteur diesel alimente un générateur, puis la traction électrique."
+    },
+    {
+     "q": "L’énergie du freinage électrique est-elle toujours intégralement stockée ?",
+     "choix": [
+      "Oui, sans aucune perte",
+      "Oui, même si aucun équipement ne peut recevoir cette énergie",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "La destination dépend notamment de l’équipement et de la capacité du système à recevoir cette énergie."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-08-05"
+  },
+  {
+   "titre": "Pourquoi un train ne s’arrête pas au dernier moment",
+   "accroche": "La circulation s’organise bien avant ce que le conducteur voit devant lui.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Une grande énergie de mouvement",
+     "texte": "L’énergie du mouvement dépend de la masse et du carré de la vitesse. Un train lourd et rapide demande donc de transformer beaucoup d’énergie pour s’arrêter.",
+     "schema": "Deux trains symboliques de masses ou vitesses différentes avec barres d’énergie. Formule en mots « masse et carré de la vitesse » ; aucun seuil d’arrêt universel."
+    },
+    {
+     "titre": "Freiner reste limité",
+     "texte": "Les capacités de freinage et l’adhérence imposent des limites. À grande vitesse, les distances nécessaires peuvent être très importantes ; elles varient avec le train, la voie et les conditions.",
+     "schema": "Long segment de freinage avant un signal d’arrêt ; pluie et pente dans deux variantes. Mention « distances variables », sans chiffre donné comme règle de voyageur."
+    },
+    {
+     "titre": "Espacer les circulations",
+     "texte": "La signalisation organise les autorisations de mouvement et l’espacement. Certains systèmes utilisent des sections de voie appelées cantons ; d’autres calculent les autorisations avec des informations plus continues.",
+     "schema": "Voie divisée en zones colorées, deux trains espacés. Deuxième petit schéma avec limite de mouvement mobile ; ne pas présenter tous les systèmes comme identiques."
+    },
+    {
+     "titre": "L’aiguillage prépare une direction",
+     "texte": "Un aiguillage guide les roues vers une branche de voie. Sa position et les itinéraires doivent être coordonnés avec les circulations ; il ne suffit pas de changer un panneau.",
+     "schema": "Bifurcation en vue du dessus, lames mobiles abstraites guidant la branche choisie. Commande et contrôle représentés hors voie, sans levier accessible à l’utilisateur."
+    },
+    {
+     "titre": "Des contrôles complètent le conducteur",
+     "texte": "Selon les lignes et les trains, des dispositifs surveillent notamment vitesse et respect des autorisations. Ils peuvent provoquer un freinage dans certaines situations ; chaque système a ses fonctions et limites.",
+     "schema": "Conducteur, signalisation et contrôle automatique comme trois blocs vers la circulation. Flèche de contrôle vers freinage ; encadré « selon système installé »."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi un signal ou une voie occupée peut arrêter un train encore loin du problème. Tu vois pourquoi les règles de quai et de passage à niveau sont essentielles.",
+   "securite": "Ne traverse jamais hors d’un passage autorisé et ne franchis jamais une fermeture ou un signal interdisant le passage. Un train ne peut ni t’éviter librement ni s’arrêter instantanément ; suis les consignes du personnel.",
+   "defi": "Pendant 4 minutes, trace une ligne avec deux trains et un obstacle fictif. Dessine une zone d’arrêt anticipée, puis explique pourquoi organiser l’espacement vaut mieux que compter sur un freinage au dernier moment.",
+   "quiz": [
+    {
+     "q": "Que fait l’énergie du mouvement à masse identique quand la vitesse double ?",
+     "choix": [
+      "Elle est multipliée par quatre",
+      "Elle est multipliée par deux",
+      "Elle reste identique"
+     ],
+     "rep": "Elle est multipliée par quatre",
+     "expl": "Elle varie comme le carré de la vitesse."
+    },
+    {
+     "q": "Quel est un rôle de la signalisation ferroviaire ?",
+     "choix": [
+      "Garantir que les trains s’arrêtent instantanément",
+      "Autoriser chaque conducteur à choisir librement une trajectoire hors des rails",
+      "Organiser les autorisations et l’espacement"
+     ],
+     "rep": "Organiser les autorisations et l’espacement",
+     "expl": "La circulation doit être organisée en tenant compte des distances nécessaires."
+    },
+    {
+     "q": "Un aiguillage sert-il à choisir une branche de voie ?",
+     "choix": [
+      "Non, seule la rotation du volant choisit la branche",
+      "Oui",
+      "Non, sa position n’a aucun effet sur les roues"
+     ],
+     "rep": "Oui",
+     "expl": "La géométrie de l’aiguillage dirige les roues vers l’itinéraire établi."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-08-06"
+  },
+  {
+   "titre": "L’ascenseur ne soulève pas toujours tout son poids seul",
+   "accroche": "Dans un système courant, un contrepoids aide à équilibrer la cabine.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Une cabine guidée",
+     "texte": "La cabine se déplace dans une gaine et suit des guides. Ces guides contrôlent son trajet vertical ; ils ne constituent pas à eux seuls le système qui la met en mouvement.",
+     "schema": "Immeuble en coupe : gaine, cabine centrale, guides verticaux de chaque côté. Flèche verticale de déplacement ; locaux techniques fermés."
+    },
+    {
+     "titre": "La traction par poulie",
+     "texte": "Dans un ascenseur à traction courant, un moteur entraîne une poulie. Des organes de suspension, comme des câbles ou des courroies adaptés, relient cabine et contrepoids selon la conception.",
+     "schema": "Poulie en haut avec moteur, cabine à gauche, contrepoids à droite. Flèche de rotation et déplacements opposés ; mention « exemple de principe »."
+    },
+    {
+     "titre": "Le contrepoids équilibre une partie",
+     "texte": "Le contrepoids compense généralement la cabine et une partie de sa charge prévue. Le moteur gère le déséquilibre, les frottements et les changements de vitesse ; il ne fournit pas systématiquement le même effort.",
+     "schema": "Balance symbolique cabine avec charge variable et contrepoids fixe. Trois charges de cabine, différences d’équilibre visibles ; pas d’égalité supposée dans tous les cas."
+    },
+    {
+     "titre": "Descendre peut aussi demander de contrôler",
+     "texte": "Selon la charge et le sens, le moteur peut entraîner ou freiner le mouvement. Certains systèmes récupèrent de l’énergie ; la descente n’est pas simplement une chute libre contrôlée par un bouton.",
+     "schema": "Quatre petites flèches charge-sens en tableau simplifié ; moteur relié à alimentation ou récupération selon cas. Cabine toujours guidée et suspendue."
+    },
+    {
+     "titre": "D’autres systèmes utilisent un vérin",
+     "texte": "Un ascenseur hydraulique utilise notamment un fluide sous pression et un vérin pour déplacer la cabine. Les architectures diffèrent : tous les ascenseurs ne possèdent pas le même montage de traction ou de contrepoids.",
+     "schema": "Deux colonnes : traction avec poulie, hydraulique avec vérin et pompe. Différences visibles sans détailler vannes ni procédure de dépannage."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi la charge et le sens modifient le travail d’un ascenseur. Tu sais distinguer gaine, guides, suspension, moteur et contrepoids.",
+   "securite": "N’accède jamais à la gaine, à la fosse, au toit de cabine ou aux locaux techniques. N’observe les mécanismes qu’au moyen des schémas de cette leçon.",
+   "defi": "Prends 4 minutes pour dessiner cabine et contrepoids avec deux charges imaginaires différentes. Indique lequel tend à descendre dans chaque cas et explique le rôle du moteur sans supposer qu’il soulève toujours tout seul.",
+   "quiz": [
+    {
+     "q": "À quoi servent notamment les guides ?",
+     "choix": [
+      "À remplacer tous les freins",
+      "À fournir seuls toute la force de levage",
+      "À contrôler le trajet de la cabine"
+     ],
+     "rep": "À contrôler le trajet de la cabine",
+     "expl": "Le guidage et la mise en mouvement sont des fonctions distinctes."
+    },
+    {
+     "q": "Que fait le contrepoids dans un montage courant ?",
+     "choix": [
+      "Il annule toute consommation et tout effort",
+      "Il compense une partie des masses à déplacer",
+      "Il adapte automatiquement sa masse à chaque passager"
+     ],
+     "rep": "Il compense une partie des masses à déplacer",
+     "expl": "Il réduit certains déséquilibres, mais le travail dépend encore de la charge et du sens."
+    },
+    {
+     "q": "Tous les ascenseurs ont-ils exactement le même montage ?",
+     "choix": [
+      "Non",
+      "Oui, tous utilisent obligatoirement la même poulie et le même contrepoids",
+      "Oui, tous utilisent obligatoirement un vérin hydraulique"
+     ],
+     "rep": "Non",
+     "expl": "Traction et hydraulique sont notamment deux familles de fonctionnement."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-08-07"
+  },
+  {
+   "titre": "Les portes et les freins surveillent le trajet",
+   "accroche": "Une cabine arrêtée entre deux étages demande de l’assistance, pas une sortie improvisée.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Deux familles de portes",
+     "texte": "La porte de cabine voyage avec elle. Les portes palières restent à chaque étage et protègent l’accès à la gaine. Leur verrouillage fait partie des fonctions de sécurité.",
+     "schema": "Gaine en coupe avec cabine au deuxième étage ; porte de cabine en bleu, portes fixes en gris à chaque palier. Serrures symboliques sur portes palières."
+    },
+    {
+     "titre": "Détecter un obstacle ne suffit pas toujours",
+     "texte": "Des dispositifs peuvent détecter une présence dans la zone des portes et interrompre leur fermeture. Ils ont des limites ; il ne faut jamais compter sur eux en plaçant un objet ou une partie du corps.",
+     "schema": "Portes avec rideau de détection en pointillés violets ; silhouette restant entièrement hors de la zone. Main et objet dans l’ouverture barrés comme tests interdits."
+    },
+    {
+     "titre": "Plusieurs fonctions retiennent la cabine",
+     "texte": "Un frein de fonctionnement et des dispositifs spécifiques participent à la sécurité selon l’installation. Dans de nombreux systèmes, un dispositif mécanique appelé parachute peut immobiliser la cabine sur ses guides en cas de survitesse.",
+     "schema": "Cabine, frein moteur et dispositif de prise sur guides représentés séparément. Aucun parachute en toile ; cartouche « mécanisme de sécurité, pas un équipement de saut »."
+    },
+    {
+     "titre": "Une panne n’est pas une invitation à sortir",
+     "texte": "Une cabine arrêtée peut être décalée du palier et repartir dans certaines conditions. Forcer une porte ou tenter de passer dans la gaine expose à une chute ou à un écrasement.",
+     "schema": "Cabine arrêtée entre deux niveaux ; décalage clairement visible, flèche de sortie barrée. Personnes restant dans la cabine, éloignées des portes."
+    },
+    {
+     "titre": "La commande d’alarme demande de l’aide",
+     "texte": "En cas de blocage, utilise la commande d’alarme selon les indications affichées, communique le lieu et attends les professionnels. En situation de danger ou d’urgence, contacte les secours si nécessaire.",
+     "schema": "Cabine avec bouton d’alarme, affiche d’identification et communication vers opérateur. Horloge d’attente sans durée promise ; porte restant fermée."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends le rôle des portes palières et pourquoi il ne faut pas tenter une sortie entre deux étages. Tu peux préparer une alerte claire à partir des indications de la cabine.",
+   "securite": "Ne force pas les portes, ne saute pas et ne tente pas de sortir d’une cabine bloquée. Utilise l’alarme et suis les intervenants. En cas d’incendie, n’utilise pas l’ascenseur ordinaire ; suis les consignes d’évacuation. Urgence : 18 ou 112.",
+   "defi": "Pendant 3 minutes, prépare sur papier un message d’alarme fictif : bâtiment, identification disponible, étage approximatif, nombre de personnes et danger éventuel. Répète-le sans appuyer sur une vraie alarme ni bloquer un appareil.",
+   "quiz": [
+    {
+     "q": "Quelle porte reste fixée à chaque étage ?",
+     "choix": [
+      "La porte de cabine",
+      "La porte palière",
+      "Les deux familles de portes se déplacent avec la cabine"
+     ],
+     "rep": "La porte palière",
+     "expl": "Elle protège l’ouverture de la gaine au niveau du palier."
+    },
+    {
+     "q": "Le parachute d’ascenseur est-il une toile qui s’ouvre ?",
+     "choix": [
+      "Non, c’est un dispositif mécanique de sécurité",
+      "Oui, au-dessus de la cabine",
+      "Oui, son ouverture dépend de l’air contenu dans la gaine"
+     ],
+     "rep": "Non, c’est un dispositif mécanique de sécurité",
+     "expl": "Le nom désigne un mécanisme pouvant agir sur les guides."
+    },
+    {
+     "q": "Que faire dans une cabine bloquée sans autre danger immédiat ?",
+     "choix": [
+      "Forcer les portes pour chercher le palier",
+      "Essayer de grimper par le plafond",
+      "Utiliser l’alarme et attendre les professionnels"
+     ],
+     "rep": "Utiliser l’alarme et attendre les professionnels",
+     "expl": "Une sortie improvisée expose à des dangers qui peuvent ne pas être visibles depuis la cabine."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-08-08"
+  }
+ ]
+}

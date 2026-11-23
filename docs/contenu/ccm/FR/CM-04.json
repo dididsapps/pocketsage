@@ -1,0 +1,583 @@
+{
+ "id": "CM-04",
+ "titre": "Le chauffage et l’isolation",
+ "public": "ado-adulte",
+ "lecons": [
+  {
+   "titre": "Pourquoi on a froid près d’une fenêtre",
+   "accroche": "Le thermomètre ne raconte pas à lui seul tout le confort.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Le corps échange de l’énergie",
+     "texte": "Notre corps échange de la chaleur avec l’air, les surfaces et les objets touchés. La sensation de confort dépend donc de plusieurs échanges, pas seulement de la température affichée.",
+     "schema": "Silhouette au centre d’une pièce ; flèches vers air, fenêtre et siège. Trois couleurs et trois légendes : convection, rayonnement, contact."
+    },
+    {
+     "titre": "Les parois froides comptent",
+     "texte": "Près d’une paroi froide, le corps lui cède davantage de chaleur par rayonnement. On peut ressentir de l’inconfort même si l’air de la pièce n’a pas beaucoup changé.",
+     "schema": "Même silhouette dans deux pièces à air identique. Fenêtre froide bleue avec flèche de chaleur sortante plus épaisse que vers une paroi tempérée."
+    },
+    {
+     "titre": "Un courant d’air accélère les échanges",
+     "texte": "L’air en mouvement peut augmenter les échanges de chaleur autour du corps. En hiver, cela peut renforcer la sensation de froid, selon la température et les conditions.",
+     "schema": "Silhouette avec fine couche d’air autour ; seconde vue avec flèches latérales emportant cette couche. Légende « échanges augmentés », pas de courant d’air visible réel."
+    },
+    {
+     "titre": "La chaleur ne fait pas que monter",
+     "texte": "L’air chauffé devient généralement moins dense et peut monter dans un air plus froid. C’est de la convection ; la chaleur peut aussi se transmettre vers le bas ou sur le côté.",
+     "schema": "Radiateur en bas à gauche, boucle d’air montante rouge et descendante bleue. Ajouter flèches de rayonnement vers les côtés et vers le sol."
+    },
+    {
+     "titre": "Chauffer compense des sorties",
+     "texte": "En hiver, le chauffage compense les pertes du logement, après prise en compte du soleil et des autres apports. Si les sorties diminuent, le besoin de chauffage diminue à conditions comparables.",
+     "schema": "Maison avec apports orange et sorties rouges. Seconde vue mieux isolée : sorties réduites et apport du chauffage plus petit ; météo et confort identiques."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi monter le thermostat ne résout pas toujours un inconfort près d’une paroi. Tu peux décrire séparément température de l’air, parois et mouvements d’air.",
+   "securite": "N’utilise pas de flamme, de fumée ou d’appareil dangereux pour rechercher un courant d’air. Ne touche pas les émetteurs ou conduites pour tester leur température.",
+   "defi": "Pendant 3 minutes, dessine deux places dans une pièce imaginaire : près d’une grande vitre froide et au centre. Explique pourquoi le ressenti peut différer malgré une même température d’air.",
+   "quiz": [
+    {
+     "q": "Qu’est-ce qui peut influencer le confort en plus de l’air ?",
+     "choix": [
+      "La consigne du thermostat à elle seule, sans effet sur les échanges",
+      "L’étiquette de performance à elle seule, sans modification physique",
+      "La température des parois"
+     ],
+     "rep": "La température des parois",
+     "expl": "Le corps échange aussi de l’énergie par rayonnement avec les surfaces."
+    },
+    {
+     "q": "Qu’est-ce qui monte habituellement dans une boucle de convection naturelle ?",
+     "choix": [
+      "Toute forme de chaleur obligatoirement",
+      "L’air devenu moins dense",
+      "Le rayonnement infrarouge uniquement"
+     ],
+     "rep": "L’air devenu moins dense",
+     "expl": "Le mouvement dépend de la densité de l’air, pas d’une règle universelle sur la chaleur."
+    },
+    {
+     "q": "À conditions comparables, que fait une réduction des pertes ?",
+     "choix": [
+      "Elle réduit le besoin de chauffage",
+      "Elle impose davantage de chauffage",
+      "Elle supprime toute ventilation nécessaire"
+     ],
+     "rep": "Elle réduit le besoin de chauffage",
+     "expl": "Le chauffage a moins d’énergie à apporter pour maintenir les mêmes conditions."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-04-01"
+  },
+  {
+   "titre": "L’isolant : un pull pour la maison ?",
+   "accroche": "La comparaison aide, à condition de se souvenir qu’un pull ne produit pas de chaleur.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Ralentir un transfert",
+     "texte": "Un isolant freine les échanges de chaleur entre deux côtés à températures différentes. Il ne chauffe pas par lui-même : il ralentit les pertes en hiver et certains apports en été.",
+     "schema": "Mur en coupe entre intérieur orange et extérieur bleu. Couche beige réduisant l’épaisseur des flèches ; aucune flèche créée à l’intérieur de l’isolant."
+    },
+    {
+     "titre": "Immobiliser de petits volumes",
+     "texte": "De nombreux isolants emprisonnent de l’air ou un autre gaz dans de petits espaces. Cela limite notamment les mouvements internes et les transferts, selon la structure du matériau.",
+     "schema": "Zoom sur matériau fibreux ou alvéolaire : petites poches claires séparées. Flèches de circulation d’air très courtes, sans grande boucle traversante."
+    },
+    {
+     "titre": "L’épaisseur compte avec le matériau",
+     "texte": "Pour un même matériau correctement posé, une plus grande épaisseur augmente généralement la résistance thermique. Deux matériaux de même épaisseur peuvent toutefois freiner différemment les échanges.",
+     "schema": "Quatre couches : matériau A mince et épais, matériaux A et B d’épaisseur égale. Flèches de chaleur adaptées ; comparaison à conditions identiques."
+    },
+    {
+     "titre": "Le R décrit une résistance",
+     "texte": "La résistance thermique, souvent notée R, indique la capacité d’une couche à freiner le passage de chaleur. À conditions comparables, un R plus élevé signifie une meilleure résistance au transfert.",
+     "schema": "Deux panneaux avec jauges « R plus faible » et « R plus élevé ». Flèches de chaleur respectivement plus épaisses et plus fines ; pas de valeur réglementaire."
+    },
+    {
+     "titre": "La pose fait partie du résultat",
+     "texte": "Des trous, un tassement, de l’humidité ou une mauvaise continuité peuvent dégrader l’isolation. Le nom du matériau ne suffit donc pas à connaître la performance réelle de toute une paroi.",
+     "schema": "Coupe d’une paroi : isolant beige continu puis interrompu. Flèches rouges concentrées dans les défauts ; professionnel observant, aucun geste de pose."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi comparer des isolants demande davantage que regarder leur épaisseur. Tu peux demander quelle performance concerne la couche et laquelle concerne la paroi complète.",
+   "securite": "N’ouvre pas une paroi ni des combles pour vérifier l’isolant. Les travaux peuvent exposer à des réseaux, poussières ou matériaux dangereux et relèvent de professionnels compétents.",
+   "defi": "Pendant 3 minutes, compare sur papier un pull imaginaire fin et épais de même matière. Explique les limites de la comparaison avec un mur, puis ajoute un trou dans chaque dessin pour réfléchir à la continuité.",
+   "quiz": [
+    {
+     "q": "Un isolant produit-il de la chaleur ?",
+     "choix": [
+      "Oui, sans source d’énergie",
+      "Non, il freine des transferts",
+      "Oui, dès que les deux côtés ont des températures différentes"
+     ],
+     "rep": "Non, il freine des transferts",
+     "expl": "Il conserve plus longtemps une différence de température sans créer d’énergie."
+    },
+    {
+     "q": "Que signifie un R plus élevé à conditions comparables ?",
+     "choix": [
+      "Une plus grande résistance au transfert de chaleur",
+      "Une plus grande production de chaleur",
+      "Une plus grande facilité de passage de la chaleur"
+     ],
+     "rep": "Une plus grande résistance au transfert de chaleur",
+     "expl": "R caractérise une résistance thermique."
+    },
+    {
+     "q": "Le matériau seul suffit-il à garantir la performance d’un mur ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, si le matériau est naturel",
+      "Non, la pose et la continuité comptent aussi"
+     ],
+     "rep": "Non, la pose et la continuité comptent aussi",
+     "expl": "Les défauts de mise en œuvre peuvent modifier fortement le résultat."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-04-02"
+  },
+  {
+   "titre": "Fenêtres et ponts thermiques : les passages faciles",
+   "accroche": "La chaleur trouve parfois un raccourci autour de l’isolant.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Le pont thermique",
+     "texte": "Un pont thermique est une zone où la chaleur passe plus facilement, notamment à certaines jonctions ou à travers des éléments conducteurs. Il peut exister même sans courant d’air.",
+     "schema": "Mur isolé beige traversé par une liaison de dalle grise ; flèches rouges plus épaisses au niveau de la liaison. Aucune flèche d’air traversante."
+    },
+    {
+     "titre": "Une fuite d’air est autre chose",
+     "texte": "Une fuite d’air laisse passer de l’air à travers l’enveloppe du bâtiment. Elle transporte de la chaleur et peut créer de l’inconfort. Isolation et étanchéité à l’air sont deux fonctions complémentaires.",
+     "schema": "Deux coupes séparées : transfert dans un matériau continu à gauche, air traversant une fente à droite. Légendes distinctes, sans les confondre."
+    },
+    {
+     "titre": "Le double vitrage sépare",
+     "texte": "Un double vitrage contient deux vitres séparées par une lame de gaz. Cette organisation freine les échanges par rapport à une vitre simple, sans rendre la fenêtre parfaitement isolante.",
+     "schema": "Coupe agrandie : vitre, lame de gaz, vitre. Flèches rouges réduites par rapport à une vitre seule ; encadrement également visible."
+    },
+    {
+     "titre": "Le cadre et les jonctions comptent",
+     "texte": "La performance d’une fenêtre dépend du vitrage, du cadre et de sa liaison au mur. Une excellente vitre ne corrige pas automatiquement un encadrement ou une pose défaillante.",
+     "schema": "Fenêtre en face avec trois zones colorées : vitrage bleu, cadre gris, joint périphérique violet. Accolade « ensemble de la fenêtre »."
+    },
+    {
+     "titre": "Une surface froide peut condenser",
+     "texte": "Si une surface est assez froide par rapport à l’humidité de l’air, de la vapeur d’eau s’y condense. Une trace humide peut avoir plusieurs causes ; elle ne prouve pas à elle seule une fuite.",
+     "schema": "Vitre en coupe, air humide avec points invisibles symbolisés ; apparition de gouttes côté intérieur. Encadré « condensation possible, diagnostic à confirmer »."
+    }
+   ],
+   "dans_ta_vie": "Tu peux distinguer passage de chaleur dans la matière et passage d’air par une fente. Tu sais qu’une trace humide mérite un examen plutôt qu’une conclusion immédiate.",
+   "securite": "Ne bouche pas une entrée d’air de ventilation pour supprimer un courant d’air. Ne démonte pas de fenêtre et ne masque pas une humidité persistante sans recherche de cause.",
+   "defi": "Pendant 4 minutes, dessine une fenêtre avec son mur. Indique trois chemins possibles : chaleur à travers le vitrage, chaleur par une jonction et air par un défaut ; garde ces trois flèches distinctes.",
+   "quiz": [
+    {
+     "q": "Un pont thermique exige-t-il une fuite d’air ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, sinon aucune chaleur ne peut passer"
+     ],
+     "rep": "Non",
+     "expl": "La chaleur peut se transmettre dans un élément solide continu."
+    },
+    {
+     "q": "Qu’y a-t-il notamment entre les vitres d’un double vitrage ?",
+     "choix": [
+      "Une circulation permanente d’air extérieur",
+      "Un vide parfait obligatoire",
+      "Une lame de gaz"
+     ],
+     "rep": "Une lame de gaz",
+     "expl": "Le gaz et la conception de l’ensemble contribuent à limiter les échanges."
+    },
+    {
+     "q": "Une condensation prouve-t-elle à elle seule une canalisation percée ?",
+     "choix": [
+      "Oui, toujours",
+      "Non, plusieurs causes sont possibles",
+      "Oui, si elle apparaît sur une vitre"
+     ],
+     "rep": "Non, plusieurs causes sont possibles",
+     "expl": "De la vapeur de l’air peut se condenser sur une surface froide."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-04-03"
+  },
+  {
+   "titre": "Chaudière, radiateur : qui chauffe quoi ?",
+   "accroche": "Produire la chaleur et la distribuer sont deux métiers distincts.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Produire puis distribuer",
+     "texte": "Dans un chauffage central à eau, un générateur chauffe de l’eau. Cette eau circule vers des émetteurs, comme des radiateurs ou un plancher chauffant, puis revient vers le générateur.",
+     "schema": "Boucle fermée : générateur à gauche, radiateur à droite. Départ rouge et retour orange vers le générateur ; mention « circuit de chauffage, distinct de l’eau potable »."
+    },
+    {
+     "titre": "Le radiateur échange avec la pièce",
+     "texte": "Malgré son nom, un radiateur peut chauffer par rayonnement et par convection. La part de chaque mécanisme dépend de sa conception et de ses températures.",
+     "schema": "Radiateur en bas ; ondes rouges vers un fauteuil, boucle d’air orange montante et bleue descendante. Deux légendes de même importance."
+    },
+    {
+     "titre": "La chaudière utilise un combustible",
+     "texte": "Une chaudière à combustible transforme l’énergie chimique du gaz, du fioul ou du bois en chaleur. La combustion produit aussi des gaz qu’un système adapté doit évacuer.",
+     "schema": "Chaudière fermée avec flèche « combustible » entrante, boucle d’eau et conduit sortant vers l’extérieur. Aucun accès au brûleur ni schéma de réglage."
+    },
+    {
+     "titre": "La résistance électrique transforme sur place",
+     "texte": "Un chauffage électrique à résistance transforme presque toute l’énergie électrique reçue en chaleur dans la pièce. Son confort et sa régulation varient, mais il ne multiplie pas l’énergie reçue.",
+     "schema": "Radiateur électrique fermé ; flèche orange « énergie électrique » et flèche rouge « chaleur dans la pièce » de tailles proches. Pas de rendement supérieur à un."
+    },
+    {
+     "titre": "Accumuler change le moment",
+     "texte": "Un radiateur à inertie stocke temporairement de la chaleur dans sa matière puis la restitue. Il peut lisser la diffusion ; le stockage ne crée pas d’énergie supplémentaire.",
+     "schema": "Frise : phase d’alimentation avec bloc se colorant, puis alimentation arrêtée et bloc refroidissant lentement. Même quantité de jetons suivie du stockage à la restitution."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends qu’un radiateur n’indique pas à lui seul la source d’énergie du logement. Tu peux distinguer génération, distribution et diffusion de chaleur.",
+   "securite": "Ne couvre pas les chauffages et ne manipule pas leurs conduites ou organes internes. Ne fais jamais fonctionner un barbecue, brasero ou groupe électrogène dans un logement, garage ou espace fermé.",
+   "defi": "Pendant 3 minutes, dessine une chaîne de chauffage imaginaire en trois cases : source, transport, diffusion. Compare ensuite un radiateur à eau et un radiateur électrique sans examiner leurs raccordements.",
+   "quiz": [
+    {
+     "q": "Dans un chauffage central à eau, que transporte principalement l’eau ?",
+     "choix": [
+      "Le combustible jusqu’à chaque radiateur",
+      "De l’eau potable qui doit être consommée à chaque passage",
+      "De l’énergie thermique"
+     ],
+     "rep": "De l’énergie thermique",
+     "expl": "L’eau chauffée transmet de l’énergie aux émetteurs avant de revenir."
+    },
+    {
+     "q": "Un radiateur chauffe-t-il forcément uniquement par rayonnement ?",
+     "choix": [
+      "Oui, son nom le garantit",
+      "Non, la convection intervient aussi",
+      "Oui, si son alimentation vient d’une chaudière"
+     ],
+     "rep": "Non, la convection intervient aussi",
+     "expl": "Le nom courant ne décrit pas à lui seul tous les mécanismes de transfert."
+    },
+    {
+     "q": "L’inertie thermique crée-t-elle de l’énergie supplémentaire ?",
+     "choix": [
+      "Non, elle décale une restitution de chaleur",
+      "Oui, sans électricité ni autre apport",
+      "Oui, chaque refroidissement crée une nouvelle réserve gratuite"
+     ],
+     "rep": "Non, elle décale une restitution de chaleur",
+     "expl": "La matière stocke puis restitue une partie de l’énergie reçue."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-04-04"
+  },
+  {
+   "titre": "La pompe à chaleur peut prendre de la chaleur dehors",
+   "accroche": "Même un air froid contient de l’énergie thermique exploitable.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Déplacer plutôt que tout produire",
+     "texte": "Une pompe à chaleur prélève de la chaleur dans l’air, le sol ou l’eau et la transfère au logement. L’électricité fait fonctionner la machine, notamment son compresseur.",
+     "schema": "Source extérieure bleue à gauche, machine violette au centre, maison orange à droite. Flèche thermique extérieure et flèche électrique entrent séparément dans la machine."
+    },
+    {
+     "titre": "Un fluide fait le tour",
+     "texte": "Un fluide change de pression et parfois d’état dans une boucle fermée. Il absorbe de la chaleur d’un côté puis la cède de l’autre, avec l’aide du compresseur.",
+     "schema": "Boucle à quatre zones : absorption, compression, restitution, détente. Couleurs froide et chaude opposées ; flèches de circulation continues, sans détails de raccordement."
+    },
+    {
+     "titre": "Trois pour un, sans magie",
+     "texte": "Exemple simplifié : 1 kilowattheure d’électricité et 2 kilowattheures prélevés dehors peuvent fournir 3 kilowattheures de chaleur dedans. La chaleur supplémentaire vient de l’environnement ; elle n’est pas créée.",
+     "schema": "Bilan de jetons : un orange « électricité » plus deux bleus « dehors » donnent trois rouges « dedans ». Mention « exemple, performance variable »."
+    },
+    {
+     "titre": "Le COP est un rapport",
+     "texte": "Le coefficient de performance, ou COP, compare la chaleur fournie à l’électricité consommée dans des conditions définies. Un COP de 3 dans une situation ne garantit pas 3 toute l’année.",
+     "schema": "Fraction « chaleur fournie / électricité consommée » avec exemple 3/1. À droite, calendrier et thermomètre indiquant des conditions changeantes."
+    },
+    {
+     "titre": "L’écart de température change le travail",
+     "texte": "La performance dépend notamment de la température de la source et de celle demandée au chauffage. Un plus grand écart rend généralement le transfert plus difficile ; l’installation complète compte aussi.",
+     "schema": "Deux pompes identiques franchissant des marches de température basses puis hautes. Flèche électrique plus grande pour le grand écart ; mention « comparaison de principe »."
+    }
+   ],
+   "dans_ta_vie": "Tu sais expliquer comment une pompe à chaleur peut fournir plus de chaleur que l’électricité qu’elle consomme. Tu distingues un exemple de performance d’un résultat annuel garanti.",
+   "securite": "N’interviens pas sur les circuits frigorifiques, électriques ou hydrauliques. La conception, les réglages techniques et l’entretien doivent être réalisés par les professionnels compétents.",
+   "defi": "Pendant 4 minutes, dessine le bilan 1 + 2 = 3 avec trois couleurs d’énergie. Présente-le à quelqu’un, puis cite deux raisons pour lesquelles cet exemple ne prédit pas la consommation annuelle d’une maison.",
+   "quiz": [
+    {
+     "q": "D’où vient une partie de la chaleur livrée par une pompe à chaleur ?",
+     "choix": [
+      "Uniquement de l’électricité consommée",
+      "De l’environnement",
+      "D’une création d’énergie à partir de rien"
+     ],
+     "rep": "De l’environnement",
+     "expl": "L’électricité permet de transférer de l’énergie déjà présente à l’extérieur."
+    },
+    {
+     "q": "Que signifie un COP de 3 dans des conditions données ?",
+     "choix": [
+      "Trois unités de chaleur fournies pour une unité d’électricité consommée",
+      "Trois fois moins cher dans tous les logements",
+      "Trois unités d’électricité consommées pour une unité de chaleur fournie"
+     ],
+     "rep": "Trois unités de chaleur fournies pour une unité d’électricité consommée",
+     "expl": "Ce rapport énergétique ne constitue pas à lui seul une promesse de facture."
+    },
+    {
+     "q": "Un COP ponctuel prédit-il forcément le résultat de toute l’année ?",
+     "choix": [
+      "Oui, exactement",
+      "Oui, si l’appareil est neuf",
+      "Non, les conditions et les usages changent"
+     ],
+     "rep": "Non, les conditions et les usages changent",
+     "expl": "Le fonctionnement saisonnier dépend d’un ensemble de situations et de l’installation."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-04-05"
+  },
+  {
+   "titre": "Le thermostat ne commande pas la météo",
+   "accroche": "Demander plus chaud ne rend pas toujours la montée en température plus rapide.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Une consigne, un écart",
+     "texte": "Le thermostat compare une température mesurée à une température cible, appelée consigne. Il commande le chauffage selon cet écart et selon la logique du système.",
+     "schema": "Thermomètre « mesurée » et cadran « consigne » vers comparateur, puis chauffage. Flèche de retour depuis la pièce vers le thermomètre."
+    },
+    {
+     "titre": "Tout ne chauffe pas de la même manière",
+     "texte": "Certains chauffages fonctionnent par marche et arrêt ; d’autres modulent leur puissance. Sur un système simple déjà à pleine puissance, monter encore la consigne n’accélère pas sa chauffe.",
+     "schema": "Deux frises : rectangles marche-arrêt et courbe de puissance variable. Encadré « si déjà à pleine puissance, consigne plus haute ≠ chauffe plus rapide »."
+    },
+    {
+     "titre": "Le capteur voit son voisinage",
+     "texte": "Un thermostat près d’une source chaude ou exposé au soleil peut mesurer une température peu représentative du reste du logement. Son emplacement et son installation influencent la régulation.",
+     "schema": "Pièce avec capteur dans un rayon de soleil ; petite zone locale rouge et reste plus frais. Professionnel avec plan ; aucun déplacement de fils."
+    },
+    {
+     "titre": "L’inertie fait durer les effets",
+     "texte": "Les murs, le sol et le mobilier stockent de l’énergie thermique. Après une commande de chauffage, leur température évolue progressivement ; couper la demande ne supprime pas instantanément la chaleur accumulée.",
+     "schema": "Courbes de température d’air et de parois après démarrage puis arrêt. Les parois réagissent plus lentement ; axes « temps » et « température »."
+    },
+    {
+     "titre": "Plus chaud augmente souvent les pertes",
+     "texte": "En hiver, augmenter l’écart entre intérieur et extérieur accroît généralement les pertes de chaleur. L’effet sur la consommation dépend du logement, de la météo, du système et des usages.",
+     "schema": "Deux maisons identiques par même météo : intérieur moins chaud puis plus chaud. Flèches de chaleur sortantes plus épaisses dans la seconde ; aucun pourcentage garanti."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi un thermostat a besoin de temps et d’une mesure représentative. Tu évites d’interpréter chaque délai comme une panne.",
+   "securite": "Ne déplace pas un thermostat raccordé et ne modifie pas les réglages techniques d’un générateur. Pour les réglages d’usage ordinaires, consulte la notice et les besoins des occupants.",
+   "defi": "Prends 3 minutes pour dessiner la température après une commande de chauffage puis après son arrêt. Ajoute les murs sur une deuxième courbe et explique pourquoi ils réagissent plus lentement.",
+   "quiz": [
+    {
+     "q": "Qu’est-ce qu’une consigne ?",
+     "choix": [
+      "Une température cible",
+      "La température mesurée à cet instant",
+      "La puissance maximale du chauffage"
+     ],
+     "rep": "Une température cible",
+     "expl": "La régulation compare notamment cette cible à une mesure."
+    },
+    {
+     "q": "Sur un chauffage simple déjà à pleine puissance, monter beaucoup la consigne accélère-t-il forcément la chauffe ?",
+     "choix": [
+      "Oui, la puissance devient illimitée",
+      "Oui, la consigne impose toujours directement une vitesse de chauffe",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "La commande ne peut pas dépasser la puissance disponible du système."
+    },
+    {
+     "q": "Pourquoi des effets persistent-ils après l’arrêt de la demande ?",
+     "choix": [
+      "Le thermostat continue forcément à produire lui-même de la chaleur",
+      "Les matériaux ont stocké de la chaleur",
+      "L’arrêt de la demande coupe toujours tout échange thermique"
+     ],
+     "rep": "Les matériaux ont stocké de la chaleur",
+     "expl": "L’inertie thermique décale les changements de température."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-04-06"
+  },
+  {
+   "titre": "Isoler ne veut pas dire enfermer l’air",
+   "accroche": "La maison doit limiter les pertes et renouveler son air.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "La vie quotidienne apporte de l’humidité",
+     "texte": "Respiration, douche, cuisson et séchage du linge ajoutent de la vapeur d’eau dans l’air. Sans évacuation suffisante, cette humidité peut s’accumuler.",
+     "schema": "Pièce avec quatre pictogrammes d’activités et petites flèches violettes vers l’air. Compteur d’humidité symbolique qui monte, sans valeur sanitaire personnalisée."
+    },
+    {
+     "titre": "La condensation dépend des conditions",
+     "texte": "La vapeur peut se condenser sur une surface assez froide. Le risque dépend de l’humidité de l’air et de la température de la surface, pas seulement de la météo extérieure.",
+     "schema": "Air avec points violets vers deux parois, tempérée et froide. Gouttes uniquement sur la paroi assez froide ; thermomètres et jauge d’humidité distincts."
+    },
+    {
+     "titre": "La VMC organise le renouvellement",
+     "texte": "Une ventilation mécanique contrôlée, ou VMC, utilise des ventilateurs pour renouveler l’air. Dans une installation simple flux courante, l’air entre dans les pièces de vie et est extrait des pièces humides.",
+     "schema": "Plan de logement : entrées bleues dans séjour et chambres, passage vers cuisine et salle d’eau, extraction violette vers extérieur. Flèches continues et distinctes."
+    },
+    {
+     "titre": "Le double flux récupère de la chaleur",
+     "texte": "Une ventilation double flux peut transférer une partie de la chaleur de l’air extrait à l’air neuf par un échangeur. Les deux circuits restent séparés dans le fonctionnement prévu.",
+     "schema": "Échangeur carré central : circuit sortant rouge et circuit entrant bleu, séparés par parois. Flèches thermiques orange entre les circuits, sans flèches d’air traversantes."
+    },
+    {
+     "titre": "Aérer et ventiler se complètent",
+     "texte": "Ouvrir ponctuellement les fenêtres peut compléter le renouvellement d’air. Cela ne remplace pas nécessairement la ventilation continue prévue pour le logement. Une bonne isolation ne dispense pas de ce renouvellement.",
+     "schema": "Frise : ventilation continue en ligne bleue, ouvertures ponctuelles en pics violets. Fenêtre et bouche de ventilation dessinées comme fonctions complémentaires."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi boucher une grille peut créer un autre problème. Tu peux distinguer isolation, fuite d’air indésirable et renouvellement d’air organisé.",
+   "securite": "Ne bouche jamais les entrées et sorties d’air prévues. Le monoxyde de carbone est inodore et peut venir d’une combustion défectueuse ; en cas de suspicion, quitte les lieux et appelle le 18 ou le 112 depuis dehors.",
+   "defi": "Pendant 4 minutes, dessine un plan imaginaire et le trajet de l’air entre séjour, chambre, cuisine et salle d’eau. Vérifie que ton dessin montre à la fois une entrée et une sortie, sans manipuler de grille.",
+   "quiz": [
+    {
+     "q": "Pourquoi faut-il renouveler l’air intérieur ?",
+     "choix": [
+      "Pour remplacer l’isolation",
+      "Pour supprimer toutes les pertes de chaleur",
+      "Pour évacuer notamment humidité et polluants"
+     ],
+     "rep": "Pour évacuer notamment humidité et polluants",
+     "expl": "Les activités et les occupants modifient la composition de l’air."
+    },
+    {
+     "q": "Que transfère principalement l’échangeur d’une double flux en hiver ?",
+     "choix": [
+      "De l’air extrait directement vers les chambres, sans séparation",
+      "De la chaleur entre deux circuits d’air",
+      "De l’électricité entre les deux ventilateurs uniquement"
+     ],
+     "rep": "De la chaleur entre deux circuits d’air",
+     "expl": "Les circuits prévus restent séparés tandis qu’une partie de l’énergie est récupérée."
+    },
+    {
+     "q": "Peut-on boucher une entrée d’air prévue pour économiser du chauffage ?",
+     "choix": [
+      "Non",
+      "Oui, systématiquement",
+      "Oui, si une fenêtre peut être ouverte de temps en temps"
+     ],
+     "rep": "Non",
+     "expl": "Le renouvellement prévu participe au bon fonctionnement et à la sécurité du logement."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-04-07"
+  },
+  {
+   "titre": "Garder le frais sans confondre ventilateur et climatisation",
+   "accroche": "L’été, empêcher une entrée de chaleur change beaucoup la suite.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Le soleil peut entrer par les vitres",
+     "texte": "Une partie du rayonnement solaire traversant les vitres chauffe les surfaces intérieures. Une protection extérieure adaptée intercepte le soleil avant qu’il n’entre dans la pièce.",
+     "schema": "Soleil à gauche, fenêtre au centre, sol à droite. Deux vues : sans volet, rayons entrants ; protection extérieure, rayons arrêtés avant le vitrage."
+    },
+    {
+     "titre": "L’isolant ralentit aussi certains apports",
+     "texte": "En été, l’isolation peut ralentir le transfert de chaleur depuis l’extérieur. Elle ne retire pas la chaleur déjà entrée par le soleil, les appareils ou les occupants.",
+     "schema": "Maison isolée avec petites flèches rouges traversant le toit ; sources intérieures orange toujours présentes. Aucune flèche de refroidissement créée par l’isolant."
+    },
+    {
+     "titre": "L’air extérieur peut aider quand il est plus frais",
+     "texte": "Quand les conditions le permettent et que l’air extérieur est plus frais, le renouvellement d’air peut évacuer de la chaleur. Ouvrir lorsque l’extérieur est plus chaud peut au contraire en apporter.",
+     "schema": "Deux fenêtres dessinées dans des scénarios séparés : extérieur plus frais avec sortie de chaleur, extérieur plus chaud avec entrée. Thermomètres comparatifs sans horaire universel."
+    },
+    {
+     "titre": "Le ventilateur brasse",
+     "texte": "Un ventilateur déplace l’air et peut améliorer le ressenti en facilitant les échanges avec le corps. Il n’extrait pas, à lui seul, la chaleur d’une pièce comme le fait une climatisation.",
+     "schema": "Pièce avec ventilateur et silhouette ; flèches d’air vers la silhouette. Petit apport électrique orange au moteur ; thermomètre de pièce sans baisse automatique."
+    },
+    {
+     "titre": "La climatisation envoie la chaleur ailleurs",
+     "texte": "Une climatisation retire de la chaleur intérieure et la rejette ailleurs, généralement dehors, avec une consommation d’énergie. Certaines pompes à chaleur peuvent inverser leur fonctionnement pour réaliser cette tâche.",
+     "schema": "Unité intérieure à gauche, extérieure à droite, mur entre elles. Flèche thermique du dedans vers dehors ; flèche électrique séparée. Pièce fermée autour de l’unité intérieure."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends la différence entre limiter les apports, améliorer le ressenti et extraire de la chaleur. Tu peux expliquer pourquoi un ventilateur et une climatisation n’ont pas le même bilan.",
+   "securite": "Toute ouverture doit tenir compte des risques de chute, d’intrusion et des consignes locales. Ne modifie pas un appareil de climatisation et ne couvre pas ses aérations ; suis la notice.",
+   "defi": "Pendant 3 minutes, dessine une pièce d’été avec trois flèches : soleil entrant, chaleur d’un appareil, chaleur évacuée vers dehors. Associe volet, ventilateur et climatisation à leur fonction réelle.",
+   "quiz": [
+    {
+     "q": "Pourquoi une protection solaire extérieure est-elle utile ?",
+     "choix": [
+      "Elle refroidit activement l’air sans autre apport",
+      "Elle intercepte le rayonnement avant son entrée",
+      "Elle remplace toute ventilation"
+     ],
+     "rep": "Elle intercepte le rayonnement avant son entrée",
+     "expl": "Réduire les apports évite qu’une partie de la chaleur ne s’accumule dedans."
+    },
+    {
+     "q": "Un ventilateur seul extrait-il la chaleur de la pièce vers dehors ?",
+     "choix": [
+      "Non",
+      "Oui, sans consommation d’énergie",
+      "Oui, le brassage seul fait sortir la chaleur sans passage vers dehors"
+     ],
+     "rep": "Non",
+     "expl": "Il brasse l’air ; son moteur consomme aussi de l’énergie."
+    },
+    {
+     "q": "Que fait une climatisation en mode froid ?",
+     "choix": [
+      "Elle détruit la chaleur",
+      "Elle stocke toute la chaleur indéfiniment dans l’unité intérieure",
+      "Elle transfère de la chaleur intérieure vers ailleurs"
+     ],
+     "rep": "Elle transfère de la chaleur intérieure vers ailleurs",
+     "expl": "Comme une machine frigorifique, elle déplace de l’énergie avec un apport électrique."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-04-08"
+  }
+ ]
+}
