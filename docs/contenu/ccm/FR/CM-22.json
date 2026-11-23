@@ -1,0 +1,727 @@
+{
+ "id": "CM-22",
+ "titre": "Où vont nos déchets",
+ "public": "enfant",
+ "lecons": [
+  {
+   "titre": "La poubelle n’est pas un trou magique",
+   "accroche": "Quand le camion emporte le sac, l’histoire du déchet continue.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Un objet devient un déchet",
+     "texte": "Un objet devient un déchet quand on n’en veut plus ou qu’il ne sert plus. Mais sa matière existe toujours. Ne plus le voir ne veut pas dire qu’il a disparu du monde.",
+     "schema": "Objet utilisé puis déposé par un adulte dans une collecte adaptée. Continuer la flèche au-delà du bac ; aucune disparition en fumée magique."
+    },
+    {
+     "titre": "Plusieurs chemins",
+     "texte": "Selon ce qu’il est, un déchet peut resservir, être recyclé pour fabriquer autre chose, devenir du compost, ou être traité dans une usine spéciale. Les camions ne vont pas tous au même endroit.",
+     "schema": "Carrefour de quatre chemins : réemploi, recyclage, traitement organique, traitement des déchets restants. Objets représentés par dessins simples ; mots sur chaque branche."
+    },
+    {
+     "titre": "La collecte près de chez toi",
+     "texte": "Les poubelles, les conteneurs, les points de collecte et la déchèterie reçoivent des déchets différents. La déchèterie est un lieu organisé pour les adultes : ce n’est pas un endroit pour jouer ou fouiller.",
+     "schema": "Plan fictif avec bac, conteneur à verre, point de collecte et déchèterie fermée au public non accompagné. Adulte consulte le guide local, enfant à ses côtés."
+    },
+    {
+     "titre": "Chaque déchet à sa place",
+     "texte": "Une pile jetée avec les emballages peut provoquer un incendie et gêner le tri. Trier, c’est envoyer chaque déchet vers le bon endroit pour le traiter. Ce n’est pas juste remplir plusieurs poubelles.",
+     "schema": "Pile dessinée sur mauvaise branche emballages, croix et alerte ; bonne branche collecte spécifique avec main adulte. Aucun enfant manipulant la pile."
+    },
+    {
+     "titre": "Il n’y a pas d’« ailleurs » vide",
+     "texte": "Un déchet jeté par terre, brûlé ou jeté dans l’eau ne disparaît pas : il pollue ailleurs. Souvent, le mieux est de ne pas créer de déchet inutile.",
+     "schema": "Paysage continu reliant rue, rivière et mer ; déchet abandonné suit une flèche, sans rendre l’océan accueillant. Seconde branche objet gardé en usage, sans nouveau déchet."
+    }
+   ],
+   "dans_ta_vie": "Tu sais te demander où va un déchet après la poubelle, au lieu de croire qu’il disparaît.",
+   "securite": "Pour les défis, utilise des dessins ou des objets propres qu’un adulte t’a donnés. Ne fouille jamais une poubelle. Ne touche ni verre cassé, ni déchet inconnu, ni produit dangereux.",
+   "defi": "Pendant trois minutes, dessine le chemin possible de trois objets imaginaires. Si tu ne sais pas où va l’un d’eux, écris « à vérifier avec un adulte » au lieu d’inventer.",
+   "quiz": [
+    {
+     "q": "Un objet disparaît-il de la Terre quand le camion l’emporte ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, après le premier virage"
+     ],
+     "rep": "Non",
+     "expl": "Sa matière continue son voyage."
+    },
+    {
+     "q": "Tous les déchets vont-ils au même endroit ?",
+     "choix": [
+      "Oui",
+      "Oui, quelle que soit leur matière",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Chaque sorte de déchet a son propre chemin."
+    },
+    {
+     "q": "Une pile se jette-t-elle avec les emballages ?",
+     "choix": [
+      "Non",
+      "Oui, car elle est petite",
+      "Oui, si elle est usée"
+     ],
+     "rep": "Non",
+     "expl": "Elle va dans une collecte spéciale : un adulte s’en occupe."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-22-01"
+  },
+  {
+   "titre": "Bien trier commence par une question",
+   "accroche": "Avant de trier, une question : est-ce un emballage, un objet ou un déchet spécial ?",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Emballage ou objet ?",
+     "texte": "Un emballage sert à contenir ou protéger un produit, comme une bouteille. Un jouet en plastique n’est pas un emballage. La matière ne suffit donc pas pour choisir la poubelle de tri.",
+     "schema": "Bouteille vide et jouet de même couleur côte à côte. Étiquettes emballage et objet ; flèches distinctes vers guide de tri, pas vers un même bac automatique."
+    },
+    {
+     "titre": "Tous les emballages se trient",
+     "texte": "En France, depuis 2023, tous les emballages en plastique, en métal ou en carton, et tous les papiers, se trient, souvent dans la poubelle jaune. Le verre va dans son propre conteneur.",
+     "schema": "Bac de tri souvent jaune recevant bouteille, pot de yaourt, film, barquette, canette, carton et papier ; conteneur à verre distinct. Mention couleur locale à vérifier ; produits dangereux hors cadre."
+    },
+    {
+     "titre": "Vider, pas laver",
+     "texte": "Avant de trier un emballage, il faut bien le vider. Pas besoin de le laver. Mais l’emballage d’un produit dangereux, comme un pot de peinture, va ailleurs, même vide.",
+     "schema": "Adulte vide un contenant alimentaire par un geste symbolique, puis le trie. Robinet barré avec mention lavage inutile ; pot de peinture sur branche spéciale, hors bac ordinaire."
+    },
+    {
+     "titre": "En vrac, séparés",
+     "texte": "On met les emballages en vrac dans la poubelle de tri : pas dans un sac fermé, et pas emboîtés les uns dans les autres. Les machines doivent pouvoir les voir et les séparer.",
+     "schema": "Bouteille, boîte et pot séparés sur tapis théorique ; à côté, sac fermé et objets emboîtés barrés. Mots en vrac et séparés, sans manipulation d’objets sales."
+    },
+    {
+     "titre": "En cas de doute",
+     "texte": "Les logos sur l’emballage et le guide de tri de ta commune aident à choisir. Si tu hésites, demande à un adulte de vérifier. La couleur d’un objet ne dit pas où le jeter.",
+     "schema": "Adulte lit une étiquette puis guide local fictif sans logo inventé. Loupe sur catégorie et destination ; point d’interrogation transformé en information vérifiée."
+    }
+   ],
+   "dans_ta_vie": "Tu sais faire la différence entre la matière d’un objet, son usage et la poubelle où il va en France.",
+   "securite": "Pour les défis, utilise des dessins ou des objets propres qu’un adulte t’a donnés. Ne fouille jamais une poubelle. Ne touche ni verre cassé, ni déchet inconnu, ni produit dangereux.",
+   "defi": "Pendant trois minutes, range des dessins de bouteille, de boîte, de jouet et de pot de peinture : emballage, objet ou déchet spécial ? Vérifie les règles de ta commune avec un adulte.",
+   "quiz": [
+    {
+     "q": "Un jouet en plastique va-t-il dans la poubelle des emballages ?",
+     "choix": [
+      "Oui, car il est en plastique",
+      "Oui, s’il est jaune",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Un jouet est un objet, pas un emballage."
+    },
+    {
+     "q": "Faut-il laver un emballage avant de le trier ?",
+     "choix": [
+      "Non, il suffit de bien le vider",
+      "Oui, à l’eau très chaude",
+      "Oui, avec beaucoup de savon"
+     ],
+     "rep": "Non, il suffit de bien le vider",
+     "expl": "Pas besoin de le laver : on le vide bien."
+    },
+    {
+     "q": "Pourquoi ne pas mettre les emballages dans un sac fermé ?",
+     "choix": [
+      "Le sac efface leur matière",
+      "Les machines doivent pouvoir les voir et les séparer",
+      "Le sac les rend tous recyclables"
+     ],
+     "rep": "Les machines doivent pouvoir les voir et les séparer",
+     "expl": "En vrac, chaque emballage peut être reconnu."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-22-02"
+  },
+  {
+   "titre": "Le centre de tri est une gare de séparation",
+   "accroche": "Le camion a tout apporté en même temps. Comment séparer chaque matière ?",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Trier n’est pas recycler",
+     "texte": "Un centre de tri sépare les déchets arrivés ensemble. Il prépare des paquets de chaque matière pour d’autres usines. Recycler, c’est ensuite transformer cette matière pour fabriquer de nouvelles choses.",
+     "schema": "Deux bâtiments distincts : centre de tri puis usine de recyclage. Flèche avec balles de matières entre eux ; titres séparer et transformer."
+    },
+    {
+     "titre": "Taille et forme",
+     "texte": "Des machines séparent les déchets selon leur taille, leur forme ou leur poids. Comme des passoires différentes, elles font une partie du tri, mais elles ne reconnaissent pas tout.",
+     "schema": "Tapis et séparateurs abstraits fermés ; objets plats et creux sur branches distinctes. Aucun plan de machine reproductible ; légende exemple simplifié."
+    },
+    {
+     "titre": "Les métaux ne sont pas pareils",
+     "texte": "Un aimant attire l’acier, comme celui des boîtes de conserve. Mais il n’attire pas l’aluminium des canettes. Il faut une autre machine pour le séparer.",
+     "schema": "Deux contenants dessinés, acier attiré par aimant symbolique, aluminium non attiré. Flèche vers autre équipement abstrait pour aluminium ; aucune expérience avec déchets réels."
+    },
+    {
+     "titre": "Des machines qui regardent",
+     "texte": "Certaines machines envoient de la lumière sur les déchets pour reconnaître leur matière. D’autres machines les envoient ensuite du bon côté. Des personnes surveillent et terminent le tri, bien protégées.",
+     "schema": "Tapis fermé, faisceau lumineux vers objets, capteur puis séparation en branches. Professionnel derrière protection ; capteur nommé reconnaissance, sans prétendre identifier tout parfaitement."
+    },
+    {
+     "titre": "Les erreurs ont des conséquences",
+     "texte": "Un mauvais déchet peut casser une machine, blesser quelqu’un ou salir une matière déjà triée. Certains déchets sont refusés et partent ailleurs. Un centre de tri ne peut pas tout transformer.",
+     "schema": "Flux principal vers plusieurs matières, branche refus vers traitement adapté. Objets dangereux symbolisés à distance ; mots risque et refus, pas de main sur tapis."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends que bien trier à la maison aide la suite, même si tout ne pourra pas être recyclé.",
+   "securite": "Pour les défis, utilise des dessins ou des objets propres qu’un adulte t’a donnés. Ne fouille jamais une poubelle. Ne touche ni verre cassé, ni déchet inconnu, ni produit dangereux.",
+   "defi": "Pendant trois minutes, joue au centre de tri avec des cartes dessinées : papier, acier, aluminium et plastique. Explique pourquoi un aimant ne suffit pas.",
+   "quiz": [
+    {
+     "q": "Trier et recycler, est-ce la même chose ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, dès qu’un camion passe"
+     ],
+     "rep": "Non",
+     "expl": "Le tri sépare ; le recyclage transforme la matière."
+    },
+    {
+     "q": "Un aimant attire-t-il l’aluminium comme l’acier ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, si la canette est vide"
+     ],
+     "rep": "Non",
+     "expl": "L’aluminium n’est pas attiré par l’aimant comme l’acier."
+    },
+    {
+     "q": "Tout ce qui arrive au centre de tri est-il forcément recyclé ?",
+     "choix": [
+      "Oui",
+      "Oui, même les erreurs de tri",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Certains déchets sont refusés ou ne peuvent pas être recyclés."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-22-03"
+  },
+  {
+   "titre": "Le papier retrouve ses fibres",
+   "accroche": "Une vieille feuille peut servir à fabriquer du nouveau papier, mais il faut du travail.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Des fibres",
+     "texte": "Le papier est fait de fibres, de tout petits filaments qui viennent souvent du bois. Elles sont emmêlées les unes dans les autres pour former une feuille.",
+     "schema": "Feuille entière puis zoom sur réseau de fibres. Arbre comme origine possible sur un petit cadre, sans représenter chaque feuille directement découpée dans un tronc."
+    },
+    {
+     "titre": "Défaire le papier",
+     "texte": "À l’usine, le vieux papier est mélangé à beaucoup d’eau. Les fibres se séparent, comme dans une bouillie. Ensuite, on enlève ce qui gêne, comme les agrafes ou une partie de l’encre.",
+     "schema": "Papier collecté vers cuve industrielle fermée ; loupe sur fibres dans l’eau. Flèche de retrait d’éléments indésirables ; aucune recette domestique."
+    },
+    {
+     "titre": "Refaire une feuille",
+     "texte": "Les fibres sont étalées en couche fine, puis on enlève presque toute l’eau. On presse et on sèche : voilà une nouvelle feuille ! L’eau, elle, ne devient pas du papier.",
+     "schema": "Trois étapes symboliques : répartition des fibres, retrait d’eau, feuille séchée. Flèches bleues d’eau séparées des fibres beiges ; équipements protégés."
+    },
+    {
+     "titre": "Pas toujours la même chose",
+     "texte": "Avec les fibres récupérées, on peut fabriquer du papier ou du carton, selon leur qualité. Ton vieux cahier ne redeviendra pas forcément un cahier.",
+     "schema": "Papier récupéré au centre, branches vers carton et papier possibles. Étiquettes selon la qualité ; aucune boucle obligatoire cahier vers même cahier."
+    },
+    {
+     "titre": "Pas à l’infini",
+     "texte": "À chaque recyclage, des fibres s’abîment ou raccourcissent, et certaines sont perdues. Recycler reste utile. Mais utiliser une feuille jusqu’au bout évite une transformation de plus.",
+     "schema": "Boucle de fibres dont quelques-unes deviennent plus courtes et certaines sortent du cycle. Petite branche feuille encore utilisable vers nouvel usage, sans usine."
+    }
+   ],
+   "dans_ta_vie": "Tu sais que finir d’utiliser une feuille et recycler un papier usé sont deux bons gestes différents.",
+   "securite": "Pour les défis, utilise des dessins ou des objets propres qu’un adulte t’a donnés. Ne fouille jamais une poubelle. Ne touche ni verre cassé, ni déchet inconnu, ni produit dangereux.",
+   "defi": "Pendant trois minutes, utilise le dos libre d’une feuille propre pour dessiner son voyage. Ne découpe pas de papiers importants et ne fouille aucune poubelle.",
+   "quiz": [
+    {
+     "q": "De quoi le papier est-il fait ?",
+     "choix": [
+      "D’encre seulement",
+      "De fibres",
+      "D’eau séchée seulement"
+     ],
+     "rep": "De fibres",
+     "expl": "Les fibres emmêlées forment la feuille."
+    },
+    {
+     "q": "L’eau utilisée à l’usine devient-elle du papier ?",
+     "choix": [
+      "Oui",
+      "Oui, si elle est chaude",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Elle sert à séparer les fibres, puis on l’enlève."
+    },
+    {
+     "q": "Les fibres peuvent-elles être recyclées sans fin ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, après le premier recyclage"
+     ],
+     "rep": "Non",
+     "expl": "Elles s’abîment et certaines sont perdues."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-22-04"
+  },
+  {
+   "titre": "Verre et métal : changer de forme",
+   "accroche": "Le verre et le métal peuvent être fondus à nouveau, mais ils ne vont pas dans le même conteneur.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Le verre des emballages",
+     "texte": "Les bouteilles, les pots et les bocaux en verre vont dans le conteneur à verre. Mais pas la vaisselle, les miroirs ou les vitres : ils sont fabriqués autrement et gêneraient le recyclage.",
+     "schema": "Conteneur à verre avec dessins bouteille, pot et bocal. Vaisselle, miroir et vitre sur branche distincte vers guide local. Aucun enfant déposant du verre cassé."
+    },
+    {
+     "titre": "Fondre le verre",
+     "texte": "Le verre récupéré est vérifié, débarrassé de ce qui gêne, puis broyé. Il est ensuite fondu dans un four d’usine très chaud pour faire de nouvelles bouteilles et de nouveaux pots.",
+     "schema": "Emballages en verre vers contrôle, petits morceaux préparés puis four fermé et nouveaux contenants. Flèches de matière vertes, énergie orange, protections visibles."
+    },
+    {
+     "titre": "Chaque métal son chemin",
+     "texte": "L’acier et l’aluminium peuvent aussi être fondus pour refaire des objets. Mais on les sépare avant. Si on mélange tout, on n’obtient pas une matière qu’on peut réutiliser.",
+     "schema": "Deux lignes parallèles acier et aluminium, chacune vers son procédé puis une forme neuve. Pas de fusion commune dans une seule marmite."
+    },
+    {
+     "titre": "Recycler demande de l’énergie",
+     "texte": "Pour recycler, il faut des camions, des machines et de l’énergie. Cela évite de prendre autant de matières nouvelles dans la nature. Mais recycler a quand même un effet sur la planète.",
+     "schema": "Deux origines vers usine : matière extraite et matière récupérée. Transport et énergie restent visibles dans les deux chemins ; aucun pourcentage de gain inventé."
+    },
+    {
+     "titre": "Le réemploi garde la bouteille",
+     "texte": "Certaines bouteilles sont faites pour resservir. Elles sont ramassées, lavées à l’usine et remplies à nouveau : elles gardent leur forme. Recycler, au contraire, c’est fondre le verre pour en refaire.",
+     "schema": "Deux parcours : bouteille conservée, lavage professionnel, remplissage ; autre bouteille vers fragments, fusion, fabrication. Étiquettes réemploi et recyclage, sans consigne universelle de dépôt."
+    }
+   ],
+   "dans_ta_vie": "Tu sais faire la différence entre réutiliser un objet et recycler sa matière.",
+   "securite": "Ne touche jamais de verre cassé, de bord de métal coupant ni de métal chaud. Un adulte suit les règles de ta commune : la couleur ou la transparence ne suffisent pas pour choisir.",
+   "defi": "Pendant trois minutes, dessine deux vies possibles pour une bouteille : réutilisée ou recyclée. Explique à quel moment elle garde sa forme.",
+   "quiz": [
+    {
+     "q": "Un verre à boire cassé va-t-il avec les bouteilles ?",
+     "choix": [
+      "Oui",
+      "Oui, parce qu’il est transparent",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Le conteneur est pour les emballages en verre, pas pour la vaisselle."
+    },
+    {
+     "q": "Quand on réutilise une bouteille, garde-t-elle sa forme ?",
+     "choix": [
+      "Oui",
+      "Non, elle est toujours fondue",
+      "Non, elle devient du métal"
+     ],
+     "rep": "Oui",
+     "expl": "Elle est lavée puis remplie à nouveau."
+    },
+    {
+     "q": "Recycler se fait-il sans énergie ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, si le tri est bien fait"
+     ],
+     "rep": "Non",
+     "expl": "Il faut des machines, des camions et de l’énergie."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-22-05"
+  },
+  {
+   "titre": "Les plastiques ne forment pas une seule famille",
+   "accroche": "Deux objets en plastique peuvent avoir besoin de traitements très différents.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Il y a plusieurs plastiques",
+     "texte": "Le mot plastique désigne plusieurs matières différentes. Elles ne fondent pas pareil, ne sont pas aussi solides et ne se mélangent pas toutes. La couleur ne dit pas de quel plastique il s’agit.",
+     "schema": "Trois objets de même couleur ; loupe sur structures symboliques différentes. Étiquette même couleur, matières possibles différentes ; aucun code chimique non expliqué."
+    },
+    {
+     "titre": "Séparer avant de recycler",
+     "texte": "Pour recycler, il faut souvent séparer les plastiques selon leur sorte. Les mélanger peut donner une matière de mauvaise qualité, comme deux recettes qui ne vont pas ensemble.",
+     "schema": "Trois familles d’éléments symboliques sur tapis puis trois branches. Un mélange non maîtrisé est marqué qualité incertaine ; métaphore des recettes dans un cadre distinct."
+    },
+    {
+     "titre": "Une nouvelle vie",
+     "texte": "Certains plastiques triés sont lavés, broyés en petits morceaux, puis chauffés pour faire une matière qui servira à fabriquer de nouveaux objets. Mais ce n’est pas possible pour tous les plastiques.",
+     "schema": "Objet trié vers lavage industriel, fragments, matière préparée puis nouveau produit. Étiquette exemple de procédé ; installations fermées, pas d’instructions de chauffe."
+    },
+    {
+     "titre": "Des morceaux toujours là",
+     "texte": "Dans la nature, un objet en plastique se casse en morceaux de plus en plus petits. Les plus petits s’appellent des microplastiques. On ne les voit presque plus, mais ils sont toujours là.",
+     "schema": "Déchet plastique vers fragments puis particules sous loupe. Même couleur de matière à chaque étape ; étiquette plastique encore présent. Aucune flèche de retour vers un milieu présenté comme propre."
+    },
+    {
+     "titre": "Tout ne se recycle pas",
+     "texte": "Certains emballages ont plusieurs couches collées, difficiles à séparer. Il y a aussi des pertes. Mettre un emballage au tri ne veut pas dire que toute sa matière sera recyclée.",
+     "schema": "Coupe d’emballage à plusieurs couches puis tri symbolique avec branches récupéré et non récupéré. Aucune proportion chiffrée ; garder la matière refusée visible."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends que trier, pouvoir recycler et vraiment recycler, ce n’est pas la même chose.",
+   "securite": "Ne chauffe pas, ne brûle pas et ne fais jamais fondre de plastique. Ne découpe pas un emballage pour voir ses couches : on observe seulement sur des dessins.",
+   "defi": "Pendant trois minutes, imagine deux plastiques de la même couleur mais de sortes différentes. Dessine pourquoi le centre de tri doit regarder autre chose que leur couleur.",
+   "quiz": [
+    {
+     "q": "Tous les plastiques sont-ils pareils ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, s’ils ont la même couleur"
+     ],
+     "rep": "Non",
+     "expl": "Il existe plusieurs sortes de plastiques."
+    },
+    {
+     "q": "Un plastique cassé en minuscules morceaux a-t-il disparu ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, si on ne le voit plus"
+     ],
+     "rep": "Non",
+     "expl": "Les microplastiques sont toujours là."
+    },
+    {
+     "q": "Peut-on faire fondre du plastique chez soi pour voir ?",
+     "choix": [
+      "Oui, si on ouvre la fenêtre",
+      "Oui, un tout petit morceau",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "C’est dangereux : cela se fait seulement en usine."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-22-06"
+  },
+  {
+   "titre": "Les épluchures ont une autre route",
+   "accroche": "Une épluchure peut devenir utile, mais elle ne disparaît pas comme par magie.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Les biodéchets",
+     "texte": "Les biodéchets, ce sont les restes de repas, les épluchures et les déchets du jardin. Ils sont biodégradables : de petits êtres vivants peuvent les transformer, avec du temps et de bonnes conditions.",
+     "schema": "Épluchures et feuilles dans un cadre biodéchets ; microbes agrandis dans une loupe, flèche transformation dans le temps. Aucun déchet abandonné dans la nature."
+    },
+    {
+     "titre": "Le compost a besoin d’air",
+     "texte": "Dans un composteur, des microbes, des vers et d’autres petites bêtes transforment les biodéchets, avec de l’air. Il faut de bonnes conditions. On obtient du compost, qui aide la terre du jardin.",
+     "schema": "Installation de compostage suivie par un adulte ; flèches d’air, matières organiques et organismes symboliques. Produit final nommé compost, distinct d’une terre apparue immédiatement."
+    },
+    {
+     "titre": "La méthanisation, sans air",
+     "texte": "Dans une usine de méthanisation, des microbes transforment les biodéchets dans une cuve fermée, sans oxygène. Ils fabriquent un gaz utile, surtout du méthane : d’où le nom. Il reste aussi une matière. Des professionnels contrôlent tout.",
+     "schema": "Cuve fermée industrielle ; entrée de matières, sortie gaz vers équipement fermé, sortie résidu vers traitement adapté. Mention sans dioxygène ; aucune recette ni moyen de fabriquer du gaz."
+    },
+    {
+     "titre": "Depuis 2024, partout en France",
+     "texte": "En France, depuis 2024, les communes doivent proposer une solution pour trier les biodéchets. Selon l’endroit, c’est une poubelle spéciale ramassée par un camion, ou un composteur. Chaque solution a ses règles.",
+     "schema": "Carte fictive de deux quartiers : collecte séparée et compostage organisé. Adulte lit les consignes ; aucune couleur de bac présentée comme universelle."
+    },
+    {
+     "titre": "« Compostable » a des conditions",
+     "texte": "Un objet marqué « compostable » ne va pas dans n’importe quel composteur. Et on ne le jette jamais dans la nature ! Chaque lieu accepte des choses différentes : il faut suivre ses règles.",
+     "schema": "Trois lieux séparés : dispositif local, installation particulière, nature. Étiquette compostable reliée à question consignes ; branche abandon dans la nature barrée."
+    }
+   ],
+   "dans_ta_vie": "Tu sais faire la différence entre compost et méthanisation, et tu sais que les règles des biodéchets dépendent de l’endroit où tu habites.",
+   "securite": "N’ouvre pas une poubelle que tu ne connais pas et ne touche pas de déchets en train de pourrir. Ne fabrique pas de gaz et ne mange rien qui vient d’un composteur.",
+   "defi": "Pendant trois minutes, dessine deux chemins pour une épluchure : le compost, ou la poubelle spéciale de ta commune. Demande à un adulte ce qui existe chez toi.",
+   "quiz": [
+    {
+     "q": "Le compost a-t-il besoin d’air ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement à la fin"
+     ],
+     "rep": "Oui",
+     "expl": "Les petits êtres vivants du compost travaillent avec de l’air."
+    },
+    {
+     "q": "Comment se fait la méthanisation ?",
+     "choix": [
+      "Dans un sac ouvert",
+      "En chauffant du plastique à la maison",
+      "Sans oxygène, dans une cuve fermée et surveillée"
+     ],
+     "rep": "Sans oxygène, dans une cuve fermée et surveillée",
+     "expl": "Des microbes y fabriquent un gaz utile."
+    },
+    {
+     "q": "« Compostable » veut-il dire qu’on peut le jeter dans la nature ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, au bord d’une route"
+     ],
+     "rep": "Non",
+     "expl": "Il faut toujours suivre les règles du lieu de compostage."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-22-07"
+  },
+  {
+   "titre": "Ce qui reste ne s’évapore pas",
+   "accroche": "Brûler ou enterrer un déchet ne le fait pas disparaître.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Les déchets qui restent",
+     "texte": "Après le tri, il reste des déchets qu’on ne peut pas recycler. Selon les endroits, ils sont brûlés dans une usine ou stockés dans un site spécial. Ce n’est pas pareil partout.",
+     "schema": "Bac des déchets restants vers carrefour incinération et stockage. Carte locale symbolique à côté ; aucune affirmation que les deux voies existent dans chaque commune."
+    },
+    {
+     "titre": "Brûler transforme",
+     "texte": "Dans une usine d’incinération, c’est-à-dire où l’on brûle les déchets, tout est surveillé. Cela donne de la chaleur, des fumées et des restes solides, comme des cendres. La matière ne disparaît donc pas.",
+     "schema": "Installation industrielle fermée ; déchets entrants, trois sorties chaleur orange, gaz gris, résidus bruns. Flèches toutes visibles, sans fumée présentée comme inoffensive."
+    },
+    {
+     "titre": "Utiliser la chaleur",
+     "texte": "Certaines usines récupèrent la chaleur pour chauffer des bâtiments ou fabriquer de l’électricité. C’est utile, mais ce n’est pas du recyclage : la matière du déchet n’est pas réutilisée.",
+     "schema": "Installation vers réseau de chaleur et production électrique, deux branches possibles. À côté, boucle de recyclage matière séparée avec étiquettes énergie et matière."
+    },
+    {
+     "titre": "Nettoyer les fumées",
+     "texte": "Des machines nettoient les fumées, et les restes solides sont traités à part. Ces contrôles réduisent les risques, mais brûler des déchets a quand même un effet sur l’environnement.",
+     "schema": "Gaz passant par équipements de traitement puis surveillance ; résidus sur deux voies séparées. Professionnel et capteurs, aucune cheminée magique supprimant tout."
+    },
+    {
+     "titre": "Stocker, ça se surveille",
+     "texte": "Les sites de stockage sont très encadrés. Il faut récupérer l’eau qui coule à travers les déchets et les gaz qu’ils produisent, et surveiller le site. Un déchet enterré continue d’agir sur la nature autour.",
+     "schema": "Coupe schématique de site de stockage : couches de protection, collecte d’eaux et surveillance de gaz. Aucun détail constructif ni présentation comme simple trou dans la forêt."
+    }
+   ],
+   "dans_ta_vie": "Tu sais que récupérer de l’énergie n’est pas recycler, et que les déchets restants ont toujours des effets.",
+   "securite": "Ne brûle et n’enterre jamais un déchet pour essayer. Ne va jamais dans un site de déchets, sauf pour une visite organisée, avec un adulte.",
+   "defi": "Pendant trois minutes, dessine ce qui sort d’une usine imaginaire qui brûle des déchets : chaleur, fumées et restes. Explique pourquoi brûler ne fait pas tout disparaître.",
+   "quiz": [
+    {
+     "q": "Brûler un déchet le fait-il disparaître complètement ?",
+     "choix": [
+      "Oui",
+      "Oui, s’il est petit",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Il reste des fumées et des restes solides."
+    },
+    {
+     "q": "Récupérer la chaleur, est-ce recycler la matière ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, dans chaque usine"
+     ],
+     "rep": "Non",
+     "expl": "On récupère de l’énergie, pas la matière."
+    },
+    {
+     "q": "Un site de stockage doit-il être surveillé ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement le premier jour"
+     ],
+     "rep": "Oui",
+     "expl": "Il faut surveiller l’eau, les gaz et le site."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-22-08"
+  },
+  {
+   "titre": "Certains déchets demandent un adulte",
+   "accroche": "Petit ne veut pas dire sans danger : une pile ou une aiguille ne se trient pas à la main.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Piles et batteries",
+     "texte": "Les piles et les batteries vont dans une collecte spéciale. Abîmées, certaines peuvent couler ou prendre feu. Si tu vois une batterie gonflée ou bizarre, ne la touche pas et préviens un adulte.",
+     "schema": "Pile et batterie dessinées dans cadre alerte, puis flèche vers adulte et point adapté. Batterie gonflée uniquement symbolique ; aucun enfant ne la tient."
+    },
+    {
+     "titre": "Les appareils électriques",
+     "texte": "Un appareil électrique contient plusieurs matières, et parfois une batterie. Il va dans une collecte spéciale. On ne l’ouvre jamais pour chercher ce qui pourrait servir.",
+     "schema": "Appareil intact avec silhouette de batterie en pointillé uniquement explicatif ; flèche adulte vers collecte dédiée. Boîtier fermé, outils absents."
+    },
+    {
+     "titre": "Les produits dangereux",
+     "texte": "La peinture, les solvants (des liquides pour nettoyer ou diluer) et certains produits ménagers vont dans une collecte spéciale, même vides. Ils ne vont pas avec les emballages de nourriture.",
+     "schema": "Trois contenants fermés avec pictogrammes de danger simplifiés ; branche hors tri ordinaire vers adulte et collecte spécialisée. Aucune ouverture ni mélange de liquides."
+    },
+    {
+     "titre": "Les médicaments ne vont pas dans l’eau",
+     "texte": "Un adulte rapporte les médicaments en trop à la pharmacie. Jetés dans les toilettes ou l’évier, ils peuvent polluer l’eau. Un médicament n’est jamais un jouet.",
+     "schema": "Boîte fermée vers adulte puis comptoir de pharmacie sans marque. Toilettes et évier barrés comme destinations ; aucune pilule isolée accessible à l’enfant."
+    },
+    {
+     "titre": "Ne ramasse pas les objets suspects",
+     "texte": "Verre cassé, seringue, poudre ou boîte inconnue : tu ne touches pas. Reste loin et préviens un adulte. Des gants de tous les jours ne suffisent pas à te protéger.",
+     "schema": "Quatre silhouettes d’objets suspects dans une zone éloignée ; enfant en retrait parle à un adulte. Gants ordinaires barrés comme garantie universelle, pas comme équipement à essayer."
+    }
+   ],
+   "dans_ta_vie": "Tu sais que demander de l’aide fait partie du tri, surtout devant un objet inconnu ou dangereux.",
+   "securite": "Ne touche aucun des déchets de cette leçon. N’ouvre, ne perce et ne recharge rien. S’il y a de la fumée ou du feu, éloigne-toi, préviens un adulte et, si besoin, appelle le 18 ou le 112 depuis un endroit sûr.",
+   "defi": "Pendant trois minutes, avec un adulte, range seulement des dessins : objet normal, objet à vérifier, danger à signaler. Ne cherche aucun exemple dans une vraie poubelle.",
+   "quiz": [
+    {
+     "q": "Peut-on ouvrir une batterie gonflée pour voir dedans ?",
+     "choix": [
+      "Non",
+      "Oui, avec des gants",
+      "Oui, si elle est vide"
+     ],
+     "rep": "Non",
+     "expl": "Elle peut être dangereuse : on prévient un adulte."
+    },
+    {
+     "q": "Les médicaments en trop se jettent-ils dans l’évier ?",
+     "choix": [
+      "Oui, pour qu’ils disparaissent",
+      "Non",
+      "Oui, avec beaucoup d’eau"
+     ],
+     "rep": "Non",
+     "expl": "Un adulte les rapporte à la pharmacie."
+    },
+    {
+     "q": "Que fais-tu si tu vois une seringue par terre ?",
+     "choix": [
+      "Je la mets dans ma poche",
+      "Je regarde si l’aiguille pique",
+      "Je ne la touche pas et je préviens un adulte"
+     ],
+     "rep": "Je ne la touche pas et je préviens un adulte",
+     "expl": "Tu restes loin et tu demandes de l’aide."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-22-09"
+  },
+  {
+   "titre": "Le meilleur trajet commence avant la poubelle",
+   "accroche": "Et si un objet n’avait pas besoin de devenir un déchet tout de suite ?",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Éviter l’objet inutile",
+     "texte": "Avant d’avoir un nouvel objet, on peut se demander : en ai-je vraiment besoin ? En ai-je déjà un ? Éviter un objet inutile économise de la matière, des transports et des déchets.",
+     "schema": "Deux branches avant acquisition : besoin réel et objet déjà disponible. Chemin objet inutile évité sans fabrication ; aucun achat précis ni marque."
+    },
+    {
+     "titre": "Continuer à s’en servir",
+     "texte": "Un objet qui marche peut continuer à servir. Un vêtement devenu trop petit peut parfois être donné à quelqu’un. C’est le réemploi : l’objet sert encore, sans être transformé.",
+     "schema": "Vêtement propre passant entre deux silhouettes avec adulte ; objet fonctionnel restant sur son étagère. Flèches usage puis nouvel usage, pas usine."
+    },
+    {
+     "titre": "Réparer, c’est pour ceux qui savent",
+     "texte": "Certains objets peuvent être réparés par une personne qui sait le faire. Mais un enfant n’ouvre jamais un appareil électrique et ne répare pas un objet dangereux.",
+     "schema": "Objet fermé confié à professionnel ; carnet décrivant le problème. Outils uniquement derrière le professionnel, enfant à distance ; pas d’étapes de réparation."
+    },
+    {
+     "titre": "Donner, avec des règles",
+     "texte": "Un don doit être utile à la personne ou à l’association qui le reçoit. Les vêtements donnés doivent être propres et secs. Déposer n’importe quoi n’aide pas.",
+     "schema": "Vêtements propres et secs préparés par adulte vers collecte adaptée ; sac mouillé ou objet inadapté vers vérification. Aucune adresse de point de collecte inventée."
+    },
+    {
+     "titre": "Trier reste utile",
+     "texte": "Quand l’objet devient vraiment un déchet, bien le trier reste important. Éviter, réutiliser et trier vont ensemble. Le but n’est pas d’avoir la poubelle de tri la plus pleine !",
+     "schema": "Escalier de priorités illustré : éviter, utiliser longtemps, réemployer, trier. Dernier cadre petit volume de déchets correctement orientés, sans concours ni culpabilisation."
+    }
+   ],
+   "dans_ta_vie": "Tu sais qu’un bon tri commence avant la poubelle, en prenant soin de tes objets.",
+   "securite": "Pour les défis, utilise des dessins ou des objets propres qu’un adulte t’a donnés. Ne fouille jamais une poubelle. Ne touche ni verre cassé, ni déchet inconnu, ni produit dangereux.",
+   "defi": "Avec un adulte, choisis pendant trois minutes un objet propre de la maison : encore utile, à donner ou à faire vérifier ? Raconte sa prochaine vie, sans l’ouvrir.",
+   "quiz": [
+    {
+     "q": "Le but est-il de remplir au maximum la poubelle de tri ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, même avec des objets inutiles"
+     ],
+     "rep": "Non",
+     "expl": "Éviter les déchets inutiles compte aussi."
+    },
+    {
+     "q": "Pour réutiliser un objet, faut-il le fondre ?",
+     "choix": [
+      "Oui",
+      "Oui, avant de le donner",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "L’objet garde sa forme et sert encore."
+    },
+    {
+     "q": "Un enfant doit-il ouvrir un appareil dangereux pour le réparer ?",
+     "choix": [
+      "Non",
+      "Oui, pour faire moins de déchets",
+      "Oui, si le voyant est éteint"
+     ],
+     "rep": "Non",
+     "expl": "La réparation, c’est pour une personne qui sait le faire, en sécurité."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-22-10"
+  }
+ ]
+}

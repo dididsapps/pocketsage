@@ -1,0 +1,727 @@
+{
+ "id": "CM-19",
+ "titre": "Comment vole un avion, comment flotte un bateau",
+ "public": "enfant",
+ "lecons": [
+  {
+   "titre": "Ce qui tire et ce qui pousse",
+   "accroche": "Un bateau lourd flotte et un avion lourd vole. Pourtant, leur poids n’a pas disparu !",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "La Terre attire",
+     "texte": "La Terre attire tous les objets vers elle. C’est pour ça qu’ils ont un poids, qui tire vers le bas. Un bateau qui flotte ou un avion qui vole garde son poids.",
+     "schema": "Terre simplifiée en bas, bateau et avion au-dessus. Flèches rouges nommées poids dirigées vers le centre terrestre ; zoom local montrant le bas."
+    },
+    {
+     "titre": "Une force a un sens",
+     "texte": "Une force, c’est quand quelque chose pousse ou tire. On la dessine avec une flèche. La pointe montre le sens, et la longueur montre si la force est forte ou faible.",
+     "schema": "Boîte abstraite au centre ; flèches de longueurs différentes vers droite, gauche, haut. Ajouter une légende longueur : importance, pointe : sens, sans valeur chiffrée."
+    },
+    {
+     "titre": "L’eau pousse aussi",
+     "texte": "L’eau appuie sur tout ce qu’elle touche. Sous un objet dans l’eau, elle appuie plus fort que dessus. Au total, elle le pousse vers le haut. Ce n’est pas une main cachée !",
+     "schema": "Objet fermé sous une surface d’eau ; petites flèches de pression sur plusieurs faces, plus longues en bas. Grande flèche bleue résultante vers le haut."
+    },
+    {
+     "titre": "L’air agit aussi",
+     "texte": "L’air est fait de gaz. On ne le voit pas, mais il est bien là ! Il peut pousser la voile d’un bateau ou agir sur l’aile d’un avion.",
+     "schema": "Voile puis aile dans deux cadres ; particules d’air symboliques en gris et flèches d’écoulement bleues. Mention particules très agrandies, air habituellement invisible."
+    },
+    {
+     "titre": "Équilibré ne veut pas dire rien",
+     "texte": "Un bateau qui flotte sans bouger reçoit deux forces égales : son poids vers le bas, la poussée de l’eau vers le haut. Comme deux équipes qui tirent aussi fort, chacune de son côté.",
+     "schema": "Bateau immobile, flèche rouge poids vers le bas et bleue poussée vers le haut, de même longueur. Petite comparaison de deux équipes équilibrées, clairement séparée."
+    }
+   ],
+   "dans_ta_vie": "Tu sais qu’un objet immobile peut recevoir plusieurs forces qui s’équilibrent.",
+   "securite": "On observe sur des dessins, ou depuis un endroit autorisé avec un adulte. Ne t’approche jamais d’une hélice, d’un moteur, d’une piste d’avion ou d’un quai pour explorer.",
+   "defi": "Pendant trois minutes, dessine un bateau immobile avec deux flèches de même longueur : une vers le bas, une vers le haut. Explique pourquoi son poids n’a pas disparu.",
+   "quiz": [
+    {
+     "q": "Un bateau qui flotte a-t-il encore un poids ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement quand son moteur tourne"
+     ],
+     "rep": "Oui",
+     "expl": "La Terre l’attire toujours."
+    },
+    {
+     "q": "L’air peut-il pousser un objet ?",
+     "choix": [
+      "Non, car on ne le voit pas",
+      "Seulement s’il y a de la fumée",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "L’air est une matière : il peut pousser une voile."
+    },
+    {
+     "q": "Deux forces qui s’équilibrent ont-elles disparu ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, si l’objet ne bouge pas"
+     ],
+     "rep": "Non",
+     "expl": "Elles sont toujours là, mais leurs effets s’annulent."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-19-01"
+  },
+  {
+   "titre": "Le bateau fait de la place dans l’eau",
+   "accroche": "Comment un énorme bateau en métal peut-il flotter, alors qu’un petit clou coule ?",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Faire de la place",
+     "texte": "Quand un bateau entre dans l’eau, il prend la place d’une partie de l’eau. On dit qu’il déplace de l’eau. Plus la partie dans l’eau est grande, plus il en déplace.",
+     "schema": "Coque en coupe entrant dans une bassine uniquement dessinée. Zone immergée bleue hachurée ; même forme d’eau déplacée représentée à côté avec étiquette volume déplacé."
+    },
+    {
+     "titre": "La poussée d’Archimède",
+     "texte": "L’eau pousse le bateau vers le haut : c’est la poussée d’Archimède, du nom d’un savant grec. Cette poussée est égale au poids de l’eau dont le bateau a pris la place.",
+     "schema": "Coque et volume d’eau déplacé côte à côte. Flèche bleue sous la coque ; flèche rouge sur l’eau déplacée, de même longueur et reliées par une égalité qualitative."
+    },
+    {
+     "titre": "Une coque creuse",
+     "texte": "Une coque creuse prend beaucoup de place, mais elle est surtout remplie d’air. Elle peut donc déplacer beaucoup d’eau. Un bloc plein, fait avec le même métal, coulerait.",
+     "schema": "Même quantité symbolique de métal : bloc plein à gauche, coque creuse à droite. Surface d’eau horizontale ; grande zone de déplacement sous la coque, intérieur sec bien visible."
+    },
+    {
+     "titre": "Trouver l’équilibre",
+     "texte": "Le bateau s’enfonce jusqu’à déplacer assez d’eau pour équilibrer son poids. S’il y arrive avant que l’eau passe par-dessus ses bords, il flotte.",
+     "schema": "Trois positions successives d’une coque : entrée, enfoncement, équilibre. Flèche de poussée augmente avec l’immersion, puis égale la flèche du poids."
+    },
+    {
+     "titre": "Plus chargé, plus enfoncé",
+     "texte": "Si on ajoute un chargement, le bateau devient plus lourd. Il s’enfonce plus, pour déplacer plus d’eau. Il y a une limite : un bateau ne peut pas tout porter.",
+     "schema": "Deux bateaux identiques, peu puis davantage chargés. Seconde ligne d’eau plus haute sur la coque ; repère de limite visible, aucun défi consistant à la dépasser."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends que, pour flotter, la forme d’un objet compte autant que sa matière.",
+   "securite": "Ne teste jamais combien un vrai bateau peut porter. Ne monte pas dans un bateau sans l’adulte responsable et sans l’équipement demandé, comme le gilet.",
+   "defi": "Pendant trois minutes, dessine deux bateaux pareils : un peu chargé et très chargé. Trace la ligne de l’eau sur chacun et explique pourquoi elle n’est pas au même endroit. Reste loin de l’eau.",
+   "quiz": [
+    {
+     "q": "Qu’est-ce qui décide de la quantité d’eau déplacée ?",
+     "choix": [
+      "La hauteur du mât",
+      "La couleur de la coque",
+      "La partie du bateau qui est dans l’eau"
+     ],
+     "rep": "La partie du bateau qui est dans l’eau",
+     "expl": "C’est la place prise dans l’eau qui compte."
+    },
+    {
+     "q": "Pourquoi une coque creuse peut-elle flotter ?",
+     "choix": [
+      "Elle déplace assez d’eau pour équilibrer son poids",
+      "Le métal perd son poids",
+      "L’air supprime l’attraction de la Terre"
+     ],
+     "rep": "Elle déplace assez d’eau pour équilibrer son poids",
+     "expl": "Comme elle prend beaucoup de place, la poussée de l’eau est assez forte."
+    },
+    {
+     "q": "Un bateau plus chargé s’enfonce comment ?",
+     "choix": [
+      "Moins",
+      "Plus",
+      "Toujours pareil"
+     ],
+     "rep": "Plus",
+     "expl": "Il doit déplacer plus d’eau pour équilibrer son poids."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-19-02"
+  },
+  {
+   "titre": "Flotter sans se retourner",
+   "accroche": "Flotter et rester bien droit, ce n’est pas la même chose.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Où mettre la charge ?",
+     "texte": "Le poids d’un bateau dépend de tout ce qu’il porte, mais aussi de l’endroit où c’est posé. Une charge lourde placée très haut le fait basculer plus facilement. Le point rouge, le centre de gravité, montre où agit le poids.",
+     "schema": "Deux coques comparables ; charges placées bas puis très haut. Point rouge indiquant le centre de gravité, expliqué comme point de représentation du poids."
+    },
+    {
+     "titre": "La poussée aide à redresser",
+     "texte": "Quand un bateau penche, la partie qui est dans l’eau change de forme. La poussée de l’eau se déplace aussi. Si le bateau est bien construit et bien chargé, elle l’aide à se redresser.",
+     "schema": "Coque inclinée en coupe ; point rouge du poids et point bleu de poussée décalés. Flèche courbe de redressement pour l’exemple stable ; mention situation simplifiée."
+    },
+    {
+     "titre": "Mais il y a des limites",
+     "texte": "Si le bateau penche trop ou si de l’eau entre dedans, il peut se retourner. Un bateau qui flotte bien un jour peut devenir dangereux dans une autre situation.",
+     "schema": "Deux dessins : coque stable peu inclinée, puis zone d’alerte avec entrée d’eau stylisée. Aucun occupant ni scène de chavirement spectaculaire."
+    },
+    {
+     "titre": "L’eau de mer porte un peu mieux",
+     "texte": "Un litre d’eau de mer est un peu plus lourd qu’un litre d’eau douce, à cause du sel. Donc, avec la même charge, un bateau s’enfonce un peu moins dans la mer.",
+     "schema": "Deux bassins dessinés, eau douce et eau de mer ; bateau et chargement identiques. Ligne d’eau légèrement différente ; exagération signalée pour rendre l’écart visible."
+    },
+    {
+     "titre": "Le sous-marin change son poids",
+     "texte": "Un sous-marin a des réservoirs qu’il peut remplir d’eau ou vider. Rempli d’eau, il est plus lourd et descend. Vidé, il est plus léger et remonte. Des spécialistes s’en occupent.",
+     "schema": "Sous-marin fermé avec deux états symboliques, masse différente et volume extérieur comparable. Flèches poids et poussée comparées ; aucun circuit de vannes ni procédure de manœuvre."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi, dans un bateau, on ne se lève pas et on ne déplace rien sans qu’on te le dise.",
+   "securite": "Dans un bateau, écoute les consignes, garde ton gilet de sauvetage et ne joue pas à faire pencher le bateau. Le gilet ne remplace pas un adulte qui surveille.",
+   "defi": "Pendant trois minutes, dessine un bateau avec un sac lourd posé en bas, puis le même sac posé tout en haut. Explique pourquoi sa place compte.",
+   "quiz": [
+    {
+     "q": "L’endroit où on pose la charge change-t-il l’équilibre du bateau ?",
+     "choix": [
+      "Oui",
+      "Non, seule la couleur compte",
+      "Non, si le bateau flotte"
+     ],
+     "rep": "Oui",
+     "expl": "Une charge posée haut peut le faire basculer plus facilement."
+    },
+    {
+     "q": "Avec la même charge, comment est un bateau dans la mer ?",
+     "choix": [
+      "Il n’a plus de poids",
+      "Un peu moins enfoncé que dans un lac",
+      "Complètement hors de l’eau"
+     ],
+     "rep": "Un peu moins enfoncé que dans un lac",
+     "expl": "L’eau salée pousse un peu plus fort que l’eau douce."
+    },
+    {
+     "q": "Un bateau qui flotte reste-t-il droit dans toutes les situations ?",
+     "choix": [
+      "Oui",
+      "Oui, même si l’eau entre",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Flotter et rester droit, ce sont deux choses différentes."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-19-03"
+  },
+  {
+   "titre": "Avancer sans roues sur l’eau",
+   "accroche": "Sur l’eau, il n’y a pas de route. Alors, comment un bateau avance-t-il ?",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "La rame pousse l’eau",
+     "texte": "Une rame pousse l’eau vers l’arrière. En retour, l’eau pousse la rame, et donc le bateau, vers l’avant. Pour avancer, on s’appuie sur l’eau.",
+     "schema": "Bateau orienté à droite ; rame immergée stylisée. Flèche bleue d’eau vers gauche, flèche orange de force sur le bateau vers droite ; légende action réciproque."
+    },
+    {
+     "titre": "L’hélice tourne",
+     "texte": "L’hélice d’un bateau tourne et pousse l’eau vers l’arrière. L’eau pousse alors le bateau vers l’avant. C’est le moteur qui donne l’énergie pour faire tourner l’hélice.",
+     "schema": "Moteur fermé relié symboliquement à une hélice protégée. Flèche courbe de rotation, eau vers arrière, bateau vers avant. Aucun zoom mécanique reproductible."
+    },
+    {
+     "titre": "L’eau freine aussi",
+     "texte": "Quand le bateau avance, l’eau le freine. Pour garder la même vitesse, il faut pousser le bateau aussi fort que l’eau le freine.",
+     "schema": "Vue de profil en mouvement constant : flèche avant propulsion et flèche arrière résistance de même longueur. Petites vagues autour de la coque, pas sous forme de support solide."
+    },
+    {
+     "titre": "La voile utilise le vent",
+     "texte": "Le vent pousse sur la voile. Grâce à sa coque et à la partie cachée sous l’eau, le voilier peut avancer. Il ne va pas forcément dans le même sens que le vent.",
+     "schema": "Voilier vu de dessus ; flèche vent, voile orientée, trajet en biais. Partie sous l’eau indiquée en pointillé ; aucune trajectoire directement face au vent."
+    },
+    {
+     "titre": "Le gouvernail fait tourner",
+     "texte": "Le gouvernail est une sorte de planche, à l’arrière du bateau, dans l’eau. Quand on le tourne, l’eau qui passe appuie dessus d’un côté, et le bateau change de direction.",
+     "schema": "Bateau vu de dessus en déplacement ; gouvernail droit puis incliné. Flèche d’eau, force latérale et trajectoire courbe ; ne montrer aucun poste de commande réel."
+    }
+   ],
+   "dans_ta_vie": "Tu sais ce qui fait flotter un bateau, et ce qui le fait avancer ou tourner.",
+   "securite": "On observe sur des dessins, ou depuis un endroit autorisé avec un adulte. Ne t’approche jamais d’une hélice, d’un moteur, d’une piste d’avion ou d’un quai pour explorer.",
+   "defi": "Pendant trois minutes, dessine une rame avec deux flèches : l’eau poussée vers l’arrière, le bateau poussé vers l’avant. Dis ensuite ce qui l’empêche de couler.",
+   "quiz": [
+    {
+     "q": "Pour avancer, vers où la rame pousse-t-elle l’eau ?",
+     "choix": [
+      "Vers le haut",
+      "Vers l’arrière",
+      "Dans le bateau"
+     ],
+     "rep": "Vers l’arrière",
+     "expl": "L’eau pousse alors le bateau vers l’avant."
+    },
+    {
+     "q": "Est-ce le moteur qui fait flotter le bateau ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, même à l’arrêt",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "C’est la poussée de l’eau qui le porte."
+    },
+    {
+     "q": "À quoi sert le gouvernail ?",
+     "choix": [
+      "À changer de direction",
+      "À enlever le poids",
+      "À fabriquer du vent"
+     ],
+     "rep": "À changer de direction",
+     "expl": "L’eau qui appuie sur le gouvernail fait tourner le bateau."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-19-04"
+  },
+  {
+   "titre": "L’air invisible n’est pas du vide",
+   "accroche": "Un avion s’appuie sur l’air, mais pas comme on s’appuie sur une table.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "L’air est une matière",
+     "texte": "L’air prend de la place et il a une masse : il pèse. Un ballon gonflé contient plus d’air qu’un ballon dégonflé. On ne voit pas l’air, mais il est bien là.",
+     "schema": "Ballon dégonflé puis gonflé ; zoom symbolique de particules déjà présentes dans l’air extérieur puis entrées dans le ballon. Mention gaz habituellement invisibles."
+    },
+    {
+     "titre": "L’air appuie partout",
+     "texte": "L’air est fait de minuscules particules qui bougent sans arrêt et cognent les objets. Ainsi, l’air appuie sur toutes les surfaces : c’est la pression. S’il n’appuie pas pareil partout, l’objet est poussé.",
+     "schema": "Aile fermée au centre ; petites flèches sur ses surfaces, légende pression de l’air. Ajouter une loupe de particules, sans présenter l’air comme un liquide incompressible."
+    },
+    {
+     "titre": "Ce qui compte, c’est le mouvement",
+     "texte": "Une aile qui avance dans l’air calme, ou de l’air qui souffle sur une aile immobile : pour l’aile, c’est pareil. Ce qui compte, c’est comment l’aile bouge par rapport à l’air.",
+     "schema": "Deux vues équivalentes : aile avançant dans air calme, puis aile fixe avec air passant. Flèches relatives bleues ; cadres séparés et légende même mouvement relatif."
+    },
+    {
+     "titre": "L’air peut être dévié",
+     "texte": "La forme d’une aile et la façon dont elle est penchée changent le chemin de l’air. En retour, l’air pousse sur l’aile. Le poids de l’avion n’a pas disparu pour autant.",
+     "schema": "Plaque légèrement inclinée ; trajectoires d’air infléchies. Flèche de force opposée à la déviation ; signaler schéma qualitatif."
+    },
+    {
+     "titre": "Plusieurs choses comptent",
+     "texte": "La force de l’air sur une aile dépend de sa vitesse dans l’air, de sa taille et de la façon dont elle est penchée. Un simple dessin ne suffit pas pour savoir si un avion vole.",
+     "schema": "Trois cadres reprenant la même aile : vitesse, surface, orientation. Modifier un seul paramètre par cadre ; aucun classement de sécurité ni chiffre de performance."
+    }
+   ],
+   "dans_ta_vie": "Tu sais que, pour un avion, ce qui compte est sa vitesse dans l’air, pas seulement sa vitesse par rapport au sol.",
+   "securite": "On observe sur des dessins, ou depuis un endroit autorisé avec un adulte. Ne t’approche jamais d’une hélice, d’un moteur, d’une piste d’avion ou d’un quai pour explorer.",
+   "defi": "Pendant trois minutes, dessine un avion, le sol et l’air autour. Explique ce qui change s’il y a du vent. Ne fais aucun essai près d’un véhicule.",
+   "quiz": [
+    {
+     "q": "L’air a-t-il une masse ?",
+     "choix": [
+      "Non, car on ne le voit pas",
+      "Seulement dans une bouteille",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "L’air est une matière, comme l’eau."
+    },
+    {
+     "q": "Pour une aile, quelle vitesse compte le plus ?",
+     "choix": [
+      "Sa vitesse dans l’air",
+      "La vitesse de rotation de la Terre",
+      "La vitesse du tapis à bagages"
+     ],
+     "rep": "Sa vitesse dans l’air",
+     "expl": "C’est l’air qui passe autour de l’aile qui compte."
+    },
+    {
+     "q": "La taille de l’aile est-elle la seule chose qui compte ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, quelle que soit sa vitesse"
+     ],
+     "rep": "Non",
+     "expl": "Sa vitesse et la façon dont elle est penchée comptent aussi."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-19-05"
+  },
+  {
+   "titre": "Le vrai travail de l’aile",
+   "accroche": "Une aile ne vole pas parce que deux morceaux d’air doivent se retrouver derrière elle.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "La portance",
+     "texte": "La portance est la force de l’air qui pousse l’aile vers le haut. Quand l’avion vole tout droit, elle équilibre son poids. Ce sont surtout les ailes qui la produisent.",
+     "schema": "Avion horizontal vu de profil ; grande flèche bleue portance vers le haut, rouge poids vers le bas. Texte situation de vol horizontal, sans généraliser le sens à tout vol."
+    },
+    {
+     "titre": "L’aile envoie l’air vers le bas",
+     "texte": "Une aile qui porte envoie de l’air vers le bas. En retour, l’air pousse l’aile vers le haut. Le dessus et le dessous de l’aile participent tous les deux.",
+     "schema": "Coupe d’aile ; trajectoires d’air autour des deux faces puis sillage dirigé globalement vers le bas. Grande flèche de force vers le haut, sans chocs uniquement sous l’aile."
+    },
+    {
+     "titre": "L’air n’appuie pas pareil partout",
+     "texte": "Autour de l’aile, l’air appuie plus fort à certains endroits qu’à d’autres : en gros, plus fort dessous que dessus. Tout cela ensemble donne la portance. C’est une autre façon de raconter la même chose.",
+     "schema": "Coupe d’aile avec petites flèches de pression variables sur les deux faces ; somme symbolique en grande flèche. Conserver les trajectoires d’air du schéma précédent."
+    },
+    {
+     "titre": "Pas de rendez-vous",
+     "texte": "On entend parfois que l’air du dessus va plus vite pour retrouver l’air du dessous derrière l’aile. C’est faux : ces deux morceaux d’air n’ont aucun rendez-vous, et ils n’arrivent pas en même temps.",
+     "schema": "Deux marqueurs d’air initialement voisins passent autour de l’aile et arrivent à des moments différents. Horloges distinctes ; barrer seulement la légende arrivée simultanée obligatoire."
+    },
+    {
+     "titre": "L’angle compte beaucoup",
+     "texte": "La façon dont l’aile est penchée face à l’air change beaucoup la portance. Même une aile presque plate peut porter si elle est un peu penchée. Ce n’est pas seulement une histoire de bosse sur le dessus.",
+     "schema": "Deux profils, courbé puis presque symétrique, tous deux orientés dans un écoulement. Flèches de portance qualitatives ; angle indiqué par petit arc nommé orientation."
+    }
+   ],
+   "dans_ta_vie": "Tu peux expliquer comment vole une aile sans répéter l’histoire fausse du rendez-vous de l’air.",
+   "securite": "On observe sur des dessins, ou depuis un endroit autorisé avec un adulte. Ne t’approche jamais d’une hélice, d’un moteur, d’une piste d’avion ou d’un quai pour explorer.",
+   "defi": "Pendant trois minutes, dessine une aile, de l’air envoyé vers le bas et une flèche vers le haut. Raconte avec des mots simples ce qui se passe. Ne construis rien.",
+   "quiz": [
+    {
+     "q": "Quand l’avion vole tout droit, vers où l’aile envoie-t-elle de l’air ?",
+     "choix": [
+      "Vers le bas",
+      "Toujours vers le haut",
+      "Nulle part"
+     ],
+     "rep": "Vers le bas",
+     "expl": "En retour, l’air pousse l’aile vers le haut."
+    },
+    {
+     "q": "Les deux morceaux d’air doivent-ils se retrouver derrière l’aile ?",
+     "choix": [
+      "Oui, obligatoirement",
+      "Non",
+      "Oui, sinon l’air disparaît"
+     ],
+     "rep": "Non",
+     "expl": "Ce rendez-vous est une fausse idée."
+    },
+    {
+     "q": "La bosse sur le dessus de l’aile suffit-elle à expliquer le vol ?",
+     "choix": [
+      "Oui",
+      "Oui, peu importe comment l’aile est penchée",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "La façon dont l’aile est penchée compte aussi beaucoup."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-19-06"
+  },
+  {
+   "titre": "Le moteur pousse, l’aile porte",
+   "accroche": "Dans un avion, le moteur et les ailes n’ont pas le même travail.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Le moteur fait avancer",
+     "texte": "Le moteur d’un avion sert surtout à le pousser vers l’avant. Grâce à ce mouvement, l’air passe autour des ailes, et les ailes portent l’avion. Pousser et porter, ce sont deux rôles différents.",
+     "schema": "Avion horizontal : flèche orange vers avant près du moteur, bleue vers haut près des ailes. Étiquettes poussée et portance ; relier mouvement et écoulement."
+    },
+    {
+     "titre": "L’hélice pousse l’air",
+     "texte": "Une hélice a des pales qui tournent, comme de petites ailes. Elles envoient de l’air vers l’arrière, et l’avion est poussé vers l’avant. C’est le moteur qui les fait tourner.",
+     "schema": "Hélice protégée dessinée de loin ; rotation orange, air bleu vers arrière, force sur avion vers avant. Aucun détail de fixation ou de fabrication."
+    },
+    {
+     "titre": "Le réacteur",
+     "texte": "Un réacteur avale de l’air et rejette des gaz très vite vers l’arrière. En retour, l’avion est poussé vers l’avant. Il ne s’accroche à rien dans le ciel.",
+     "schema": "Moteur fermé en vue simplifiée ; air entrant, gaz sortant plus rapides vers arrière. Flèche avant sur l’ensemble. Pas de coupe permettant de reproduire le système."
+    },
+    {
+     "titre": "La traînée freine",
+     "texte": "L’air freine aussi l’avion : c’est la traînée. Quand l’avion vole tout droit, à vitesse constante, la poussée équilibre la traînée, et la portance équilibre le poids.",
+     "schema": "Quatre flèches sur avion horizontal : portance bleue haut, poids rouge bas, poussée orange avant, traînée violette arrière. Paires de même longueur, conditions écrites sous le dessin."
+    },
+    {
+     "titre": "Le carburant n’est pas une aile",
+     "texte": "Le carburant, ou une batterie, donne de l’énergie au moteur. Les ailes, elles, travaillent avec l’air. Les deux sont utiles, mais beaucoup d’énergie ne remplace pas de bonnes ailes.",
+     "schema": "Batterie et réservoir comme deux possibilités distinctes vers moteur ; moteur vers propulsion, ailes vers portance. Pas de branchement ni caractéristiques techniques."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi un avion a besoin à la fois d’un moteur et d’ailes.",
+   "securite": "Reste loin de toute hélice, même arrêtée, et des moteurs d’avion. Ne t’approche jamais d’un avion sans autorisation et sans un adulte.",
+   "defi": "Pendant trois minutes, dessine un avion qui vole tout droit avec ses quatre forces : portance, poids, poussée, traînée. Explique le rôle de chaque flèche.",
+   "quiz": [
+    {
+     "q": "À quoi sert surtout le moteur d’un avion ?",
+     "choix": [
+      "À supprimer l’attraction de la Terre",
+      "À pousser l’avion vers l’avant",
+      "À remplacer les ailes"
+     ],
+     "rep": "À pousser l’avion vers l’avant",
+     "expl": "Il fait avancer l’avion malgré le freinage de l’air."
+    },
+    {
+     "q": "Comment une hélice fait-elle avancer l’avion ?",
+     "choix": [
+      "En s’accrochant au ciel",
+      "En rendant le carburant plus léger",
+      "En envoyant de l’air vers l’arrière"
+     ],
+     "rep": "En envoyant de l’air vers l’arrière",
+     "expl": "L’air poussé vers l’arrière pousse l’avion vers l’avant."
+    },
+    {
+     "q": "Quand l’avion vole tout droit à vitesse constante, la poussée équilibre quelle force ?",
+     "choix": [
+      "La traînée",
+      "Le poids",
+      "La couleur des ailes"
+     ],
+     "rep": "La traînée",
+     "expl": "La poussée vers l’avant équilibre le freinage de l’air ; le poids, lui, est équilibré par la portance."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-19-07"
+  },
+  {
+   "titre": "Tourner dans trois directions",
+   "accroche": "Un avion peut pencher, lever le nez ou tourner le nez sur le côté : ce sont trois mouvements différents.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Trois façons de tourner",
+     "texte": "Un avion peut bouger de trois façons. Le roulis fait pencher les ailes. Le tangage lève ou baisse le nez. Le lacet tourne le nez vers la gauche ou vers la droite.",
+     "schema": "Trois avions identiques dans trois cadres. Roulis : une aile monte ; tangage : nez monte ; lacet : nez pivote vu de dessus. Flèches courbes et noms associés."
+    },
+    {
+     "titre": "Des pièces qui bougent",
+     "texte": "Sur les ailes et sur la queue, il y a de petites parties qui bougent. En changeant de position, elles changent la force de l’air. Elles aident le pilote à diriger l’avion.",
+     "schema": "Avion vu de trois quarts ; surfaces mobiles colorées sur ailes et queue. Petites animations de rotation ; légende surfaces de contrôle, sans gestes de pilotage."
+    },
+    {
+     "titre": "Pencher pour tourner",
+     "texte": "Pour faire un virage, l’avion penche ses ailes. La portance penche aussi. Une partie de cette force tire alors l’avion sur le côté, et son chemin se courbe.",
+     "schema": "Vue de face d’avion incliné ; flèche de portance perpendiculaire aux ailes, décomposée qualitativement en effet vertical et latéral. Vue de dessus montrant trajectoire courbe."
+    },
+    {
+     "titre": "Bien répartir la charge",
+     "texte": "La place des passagers, des bagages et du carburant change l’équilibre de l’avion. Avant le vol, des professionnels vérifient que tout est bien réparti.",
+     "schema": "Silhouette d’avion avec zones de masses abstraites ; point de centre de gravité expliqué comme représentation du poids. Adulte professionnel avec liste de vérification, sans procédure de calcul."
+    },
+    {
+     "titre": "Tout marche ensemble",
+     "texte": "Piloter, ce n’est pas bouger une seule pièce au hasard. Il faut régler ensemble la vitesse, la position de l’avion et les commandes. Les pilotes apprennent longtemps avec des instructeurs.",
+     "schema": "Pilote accompagné d’un instructeur dans une scène symbolique, puis trois pictogrammes vitesse, orientation, contrôle reliés. Ne montrer aucun tableau de commande utilisable."
+    }
+   ],
+   "dans_ta_vie": "Tu connais les trois mouvements d’un avion et tu sais qu’un virage, ce n’est pas juste tourner un volant.",
+   "securite": "On observe sur des dessins, ou depuis un endroit autorisé avec un adulte. Ne t’approche jamais d’une hélice, d’un moteur, d’une piste d’avion ou d’un quai pour explorer.",
+   "defi": "Pendant trois minutes, fais comme si ta main était un avion. Montre le roulis, le tangage et le lacet. N’imite aucune vraie commande.",
+   "quiz": [
+    {
+     "q": "Comment s’appelle le mouvement qui fait pencher les ailes ?",
+     "choix": [
+      "Le tangage",
+      "Le lacet",
+      "Le roulis"
+     ],
+     "rep": "Le roulis",
+     "expl": "Le roulis fait pencher l’avion d’un côté ou de l’autre."
+    },
+    {
+     "q": "Que fait le tangage ?",
+     "choix": [
+      "Il lève ou baisse le nez",
+      "Il change la couleur",
+      "Il freine les roues"
+     ],
+     "rep": "Il lève ou baisse le nez",
+     "expl": "Le nez de l’avion monte ou descend."
+    },
+    {
+     "q": "Pourquoi la place des bagages compte-t-elle ?",
+     "choix": [
+      "Elle change la météo",
+      "Elle change l’équilibre de l’avion",
+      "Elle supprime le freinage de l’air"
+     ],
+     "rep": "Elle change l’équilibre de l’avion",
+     "expl": "Le poids doit être bien réparti."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-19-08"
+  },
+  {
+   "titre": "Décoller, ralentir, atterrir",
+   "accroche": "Un avion ne quitte pas le sol juste parce qu’on lui demande de monter.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Prendre de la vitesse",
+     "texte": "Avant de décoller, l’avion roule de plus en plus vite sur la piste. Plus il va vite, plus l’air passe vite autour des ailes. Quand c’est assez, les ailes peuvent le soulever.",
+     "schema": "Avion roulant dans trois positions sur piste interdite au public ; flèches d’air de plus en plus marquées, puis vol. Aucun chiffre de vitesse ni instruction de commande."
+    },
+    {
+     "titre": "Le vent de face aide",
+     "texte": "Face au vent, plus d’air passe sur les ailes de l’avion, sans qu’il roule plus vite. C’est pour ça que le vent compte beaucoup pour décoller et atterrir.",
+     "schema": "Deux avions roulant à même vitesse au sol ; air calme puis vent de face. Doubles flèches légendées vitesse au sol et mouvement dans l’air, sans chiffres."
+    },
+    {
+     "titre": "Les volets changent l’aile",
+     "texte": "Sur beaucoup d’avions, les volets sont des parties de l’aile qui peuvent sortir. Ils aident l’aile à porter quand l’avion va lentement, au décollage et à l’atterrissage. Ils freinent aussi un peu.",
+     "schema": "Même aile avec volet rentré puis sorti ; contours successifs en transparence. Flèches de portance et traînée qualitatives ; mention effets selon les conditions."
+    },
+    {
+     "titre": "Le décrochage",
+     "texte": "Si l’aile est trop penchée face à l’air, l’air ne glisse plus bien sur elle. La portance baisse d’un coup : c’est le décrochage. Cela peut arriver même si le moteur marche.",
+     "schema": "Coupe d’aile : orientation modérée avec lignes régulières, puis excessive avec tourbillons symboliques. Flèche de portance raccourcie ; moteur séparé toujours représenté en fonctionnement."
+    },
+    {
+     "titre": "L’atterrissage se prépare",
+     "texte": "Avant de toucher la piste, le pilote prépare son chemin, sa vitesse et ses réglages. Ensuite, les roues touchent le sol et les freins ralentissent l’avion. Atterrir, ce n’est pas tout couper et tomber.",
+     "schema": "Frise approche stable, contact des roues, roulage ralenti. Trois positions bien séparées ; pas de séquence de commandes ni d’altitude précise."
+    }
+   ],
+   "dans_ta_vie": "Tu connais le rôle du vent, des volets et d’un atterrissage bien préparé.",
+   "securite": "On observe sur des dessins, ou depuis un endroit autorisé avec un adulte. Ne t’approche jamais d’une hélice, d’un moteur, d’une piste d’avion ou d’un quai pour explorer.",
+   "defi": "Pendant trois minutes, dessine trois images : l’avion qui roule avant de décoller, l’avion en vol, l’avion qui roule après l’atterrissage. Explique le rôle de l’air à chaque fois.",
+   "quiz": [
+    {
+     "q": "Pour les ailes, quelle vitesse compte ?",
+     "choix": [
+      "La vitesse dans l’air",
+      "La vitesse affichée sur une route",
+      "La vitesse des passagers qui marchent"
+     ],
+     "rep": "La vitesse dans l’air",
+     "expl": "Les ailes portent grâce à l’air qui passe autour."
+    },
+    {
+     "q": "Un moteur qui marche empêche-t-il toujours le décrochage ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Oui, si l’avion est coloré"
+     ],
+     "rep": "Non",
+     "expl": "Si l’aile est trop penchée, la portance baisse, même avec le moteur."
+    },
+    {
+     "q": "À quoi servent les volets ?",
+     "choix": [
+      "À enlever le poids des passagers",
+      "À remplacer les roues",
+      "À changer la force de l’air sur l’aile"
+     ],
+     "rep": "À changer la force de l’air sur l’aile",
+     "expl": "Ils aident l’aile à porter quand l’avion va lentement."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-19-09"
+  },
+  {
+   "titre": "Voler sans avancer comme un avion",
+   "accroche": "Le planeur, l’hélicoptère et la montgolfière ne volent pas de la même façon.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Le planeur glisse dans l’air",
+     "texte": "Un planeur n’a pas de moteur, mais il a des ailes. Pour garder de la vitesse dans l’air malgré son freinage, il descend doucement, comme un vélo qui roule sans pédaler dans une pente douce.",
+     "schema": "Planeur sur trajectoire descendante douce ; altitude initiale et finale indiquées sans chiffre. Flèches d’air autour des ailes et flèche de traînée, sans flèche de moteur."
+    },
+    {
+     "titre": "De l’air qui monte",
+     "texte": "Parfois, de l’air monte, comme un ascenseur invisible. Le planeur tourne dedans. Il descend toujours un peu dans cet air, mais l’air monte plus vite : alors le planeur monte !",
+     "schema": "Colonne d’air montant en bleu ; planeur en cercle dans la colonne. Deux petites vues montrent descente relative à l’air et montée possible par rapport au sol."
+    },
+    {
+     "titre": "Des ailes qui tournent",
+     "texte": "Les pales d’un hélicoptère sont comme de longues ailes qui tournent. En tournant, elles envoient de l’air vers le bas. C’est pour ça que l’hélicoptère peut rester sur place dans le ciel.",
+     "schema": "Hélicoptère stationnaire vu de côté ; rotor avec flèche de rotation, air globalement dirigé vers le bas, force vers le haut. Zone inaccessible autour de l’appareil."
+    },
+    {
+     "titre": "La montgolfière",
+     "texte": "Dans une montgolfière, l’air de l’enveloppe est chaud. Il est plus léger que la même quantité d’air froid autour. L’air extérieur pousse alors le ballon vers le haut, comme l’eau pousse un bateau.",
+     "schema": "Enveloppe de montgolfière fermée en schéma ; air chaud avec points plus espacés que dehors. Poids bas et poussée haut ; aucun brûleur ni méthode de chauffe."
+    },
+    {
+     "titre": "Trois bonnes questions",
+     "texte": "Pour chaque engin, demande-toi : qu’est-ce qui le porte ? Qu’est-ce qui le fait avancer ? Qu’est-ce qui le dirige ? Ces trois questions évitent beaucoup d’erreurs.",
+     "schema": "Tableau dessiné de quatre silhouettes : bateau, avion, hélicoptère, ballon. Colonnes soutenir, avancer, contrôler ; remplir progressivement avec mots simples, pas avec des commandes."
+    }
+   ],
+   "dans_ta_vie": "Tu sais que flotter, planer et rester sur place dans le ciel se font de façons différentes.",
+   "securite": "Ne fabrique jamais d’engin volant avec du feu ou un moteur. Ne t’approche jamais d’un hélicoptère ou d’une montgolfière qu’on prépare, sauf avec des professionnels.",
+   "defi": "Pendant trois minutes, choisis deux engins dessinés et explique ce qui les porte. Termine par la différence entre un bateau qui flotte et un planeur qui plane.",
+   "quiz": [
+    {
+     "q": "Un planeur a-t-il besoin que l’air passe autour de ses ailes ?",
+     "choix": [
+      "Non, il n’a pas de moteur",
+      "Oui",
+      "Seulement quand il roule"
+     ],
+     "rep": "Oui",
+     "expl": "Ses ailes le portent grâce à l’air qui passe autour."
+    },
+    {
+     "q": "Pourquoi un hélicoptère peut-il rester sur place ?",
+     "choix": [
+      "Son poids disparaît",
+      "Une corde le tient",
+      "Ses pales qui tournent envoient de l’air vers le bas"
+     ],
+     "rep": "Ses pales qui tournent envoient de l’air vers le bas",
+     "expl": "En retour, l’air pousse les pales vers le haut."
+    },
+    {
+     "q": "Qu’ont en commun la montgolfière et le bateau ?",
+     "choix": [
+      "Ils sont poussés vers le haut par l’air ou l’eau autour d’eux",
+      "Ils ont les mêmes ailes",
+      "Ils n’ont plus de masse"
+     ],
+     "rep": "Ils sont poussés vers le haut par l’air ou l’eau autour d’eux",
+     "expl": "C’est la poussée d’Archimède, dans l’air comme dans l’eau."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-19-10"
+  }
+ ]
+}

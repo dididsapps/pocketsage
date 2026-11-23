@@ -1,0 +1,727 @@
+{
+ "id": "CM-20",
+ "titre": "La météo",
+ "public": "enfant",
+ "lecons": [
+  {
+   "titre": "Le Soleil met la météo en mouvement",
+   "accroche": "Pourquoi un trottoir et une pelouse ne chauffent-ils pas de la même façon au Soleil ?",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Le Soleil donne l’énergie",
+     "texte": "Le Soleil envoie de l’énergie avec sa lumière. Le sol, l’eau et l’air en gardent une partie, et le reste repart. Cette énergie fait bouger l’air et l’eau : c’est le moteur de la météo.",
+     "schema": "Soleil à gauche, Terre à droite ; rayons jaunes vers sol, eau et atmosphère. Flèches absorbées et réfléchies distinguées, sans pourcentages."
+    },
+    {
+     "titre": "Clair ou sombre",
+     "texte": "Une surface claire renvoie souvent plus de lumière qu’une surface sombre. Mais la matière, l’eau et l’ombre comptent aussi. La couleur seule ne dit pas si une surface sera chaude.",
+     "schema": "Deux surfaces comparables, claire et sombre ; rayons identiques arrivant, quantités réfléchies différentes. Cadre séparé rappelant matière, eau et ombre."
+    },
+    {
+     "titre": "L’air chaud monte",
+     "texte": "Le sol chauffé réchauffe l’air juste au-dessus. Cet air, plus chaud que l’air autour, a tendance à monter. De l’air plus frais arrive sur les côtés pour le remplacer.",
+     "schema": "Sol orangé, colonne d’air rose montant, air bleu arrivant sur les côtés. Boucle de mouvement simple ; légende exemple de convection."
+    },
+    {
+     "titre": "La nuit",
+     "texte": "La nuit, le sol ne reçoit plus la lumière du Soleil. Il continue de perdre de la chaleur et se refroidit. Les nuages, le vent et l’humidité changent la vitesse de ce refroidissement.",
+     "schema": "Frise jour puis nuit ; rayons solaires absents la nuit, flèches rouges d’énergie toujours présentes. Nuage et vent ajoutés comme facteurs, sans présenter un résultat garanti."
+    },
+    {
+     "titre": "Tout est lié",
+     "texte": "La température, le vent, l’humidité (l’eau invisible dans l’air) et les nuages agissent les uns sur les autres. Ils changent souvent ensemble. Pour comprendre la météo, il faut regarder plusieurs indices.",
+     "schema": "Quatre pictogrammes reliés en carré : thermomètre, flèche du vent, gouttes symboliques, nuage. Liens dans plusieurs sens, sans relation automatique soleil égale absence de vent."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends que le temps qu’il fait dépend de plusieurs choses, et pas d’un seul bouton chaud ou froid.",
+   "securite": "Observe depuis un endroit sûr, avec un adulte. Ne regarde jamais le Soleil en face. Aucun défi ne te demande de sortir quand il fait mauvais, ni d’ouvrir une fenêtre.",
+   "defi": "Pendant trois minutes, dessine un endroit au Soleil et un endroit à l’ombre. Explique ce qui pourrait être différent. Ne touche pas les surfaces chaudes.",
+   "quiz": [
+    {
+     "q": "Qu’apporte le Soleil à la météo ?",
+     "choix": [
+      "Tout l’air de la Terre",
+      "De l’énergie",
+      "Des nuages tout faits"
+     ],
+     "rep": "De l’énergie",
+     "expl": "Son énergie fait bouger l’air et l’eau."
+    },
+    {
+     "q": "La couleur suffit-elle à savoir si une surface est chaude ?",
+     "choix": [
+      "Oui, toujours",
+      "Oui, même à l’ombre",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "La matière, l’eau et l’ombre comptent aussi."
+    },
+    {
+     "q": "La nuit, le sol arrête-t-il complètement d’échanger de la chaleur ?",
+     "choix": [
+      "Non",
+      "Oui, complètement",
+      "Oui, sauf s’il pleut"
+     ],
+     "rep": "Non",
+     "expl": "Il continue à perdre de la chaleur et se refroidit."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-20-01"
+  },
+  {
+   "titre": "Le vent, de l’air en voyage",
+   "accroche": "Le vent ne vient pas d’un nuage qui souffle comme une bouche.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "L’air appuie",
+     "texte": "L’air appuie sur tout ce qu’il touche. Cette poussée s’appelle la pression. Elle n’est pas la même partout : à certains endroits, l’air appuie plus fort.",
+     "schema": "Deux zones d’air au-dessus du sol ; petites flèches de pression de tailles différentes. Étiquettes pression plus élevée et plus basse, sans mélange avec température."
+    },
+    {
+     "titre": "L’air se déplace",
+     "texte": "Quand l’air appuie plus fort à un endroit qu’à un autre, il se met à bouger, un peu comme une bille qui roule dans une pente. Le vent, c’est de l’air qui se déplace.",
+     "schema": "Deux zones de pression et flèche de tendance entre elles ; petite comparaison de pente séparée. Mention dessin simplifié, trajet réel aussi influencé par la rotation terrestre."
+    },
+    {
+     "titre": "Le vent ne va pas tout droit",
+     "texte": "La Terre qui tourne, les montagnes et le frottement sur le sol changent la direction et la force du vent. Il ne va donc pas toujours en ligne droite.",
+     "schema": "Carte fictive avec relief et flèches courbées. Légendes rotation, relief, frottement ; ne pas dessiner un sens universel valable dans les deux hémisphères."
+    },
+    {
+     "titre": "D’où vient-il ?",
+     "texte": "Un vent du nord vient du nord et va vers le sud. On donne au vent le nom de l’endroit d’où il vient, pas de celui où il va.",
+     "schema": "Rose des directions avec N en haut ; flèche du nord vers centre puis sud. Étiquettes vient du nord et va vers le sud."
+    },
+    {
+     "titre": "La rafale",
+     "texte": "Le vent peut changer très vite. Une rafale, c’est un coup de vent plus fort, qui dure peu de temps. Même un jour de vent moyen peut avoir des rafales beaucoup plus fortes.",
+     "schema": "Graphique simple du vent dans le temps ; ligne moyenne et pic bref nommé rafale. Aucun seuil de danger inventé ni instrument à installer dehors."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends les mots « vent du nord » et « rafales » quand on parle de la météo.",
+   "securite": "Observe depuis un endroit sûr, avec un adulte. Ne regarde jamais le Soleil en face. Aucun défi ne te demande de sortir quand il fait mauvais, ni d’ouvrir une fenêtre.",
+   "defi": "Pendant trois minutes, place les quatre points cardinaux sur une feuille : nord, sud, est, ouest. Dessine un vent qui vient de l’est. Dis d’où il vient et où il va.",
+   "quiz": [
+    {
+     "q": "D’où vient un vent du nord ?",
+     "choix": [
+      "Du sud",
+      "Toujours de la mer",
+      "Du nord"
+     ],
+     "rep": "Du nord",
+     "expl": "Son nom dit d’où il vient."
+    },
+    {
+     "q": "Qu’est-ce qu’une rafale ?",
+     "choix": [
+      "Un coup de vent fort et court",
+      "Un vent toujours pareil",
+      "Un autre nom de la pluie"
+     ],
+     "rep": "Un coup de vent fort et court",
+     "expl": "Le vent devient plus fort pendant un court moment."
+    },
+    {
+     "q": "Les montagnes peuvent-elles changer le vent ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Seulement la nuit"
+     ],
+     "rep": "Oui",
+     "expl": "Le vent doit passer autour ou par-dessus."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-20-02"
+  },
+  {
+   "titre": "L’eau peut devenir invisible",
+   "accroche": "Où va l’eau d’une flaque quand elle sèche ?",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "L’eau change d’état",
+     "texte": "L’eau peut être solide, liquide ou gaz. La glace, l’eau d’une flaque et la vapeur d’eau sont la même eau, sous trois formes différentes. On appelle ces formes des états.",
+     "schema": "Trois cadres : glaçon, flaque, vapeur symbolisée par molécules espacées. Noms solide, liquide, gaz ; pas de petit nuage blanc pour représenter la vapeur invisible."
+    },
+    {
+     "titre": "L’évaporation",
+     "texte": "À la surface d’une flaque, de minuscules particules d’eau s’échappent dans l’air. C’est l’évaporation. La flaque rétrécit, sans bouillir. Avec du vent ou de la chaleur, elle sèche plus vite.",
+     "schema": "Flaque vue en coupe ; quelques points quittent la surface puis se dispersent. Contour de flaque plus petit à la fin ; aucune casserole ni chauffage."
+    },
+    {
+     "titre": "La vapeur d’eau est invisible",
+     "texte": "La vapeur d’eau est un gaz invisible. Le petit nuage blanc qu’on appelle souvent « vapeur » est en fait fait de minuscules gouttes d’eau liquide.",
+     "schema": "Deux cadres : air avec vapeur invisible représentée seulement dans une loupe ; brouillard blanc avec gouttelettes. Inscrire visible sur gouttelettes, invisible sur gaz."
+    },
+    {
+     "titre": "La condensation",
+     "texte": "Quand de l’air qui contient de la vapeur d’eau se refroidit, une partie de la vapeur redevient de l’eau liquide. De toutes petites gouttes apparaissent. Ça s’appelle la condensation.",
+     "schema": "Air humide symbolique à gauche ; thermomètre descendant au centre ; petites gouttes à droite. Flèche gaz vers liquide ; aucun procédé expérimental avec verre chaud."
+    },
+    {
+     "titre": "Le grand voyage de l’eau",
+     "texte": "L’eau voyage sans arrêt entre la mer, le sol, les plantes et le ciel. Elle s’évapore, forme des nuages, retombe en pluie ou en neige, puis recommence. C’est le cycle de l’eau.",
+     "schema": "Paysage avec mer, terre, plante et nuage. Flèches nommées évaporation, eau rejetée par les plantes, précipitations, ruissellement ; ajouter infiltration vers le sous-sol."
+    }
+   ],
+   "dans_ta_vie": "Tu sais que la vapeur d’eau est invisible, et que le brouillard est fait de petites gouttes qu’on voit.",
+   "securite": "Pas besoin d’eau chaude pour cette leçon. Ne touche ni vapeur, ni bouilloire, ni casserole pour observer l’eau.",
+   "defi": "Pendant trois minutes, raconte sur papier le voyage d’une goutte : flaque, air, nuage, pluie. Écris à chaque étape si l’eau est liquide ou si c’est un gaz invisible.",
+   "quiz": [
+    {
+     "q": "Une flaque doit-elle bouillir pour sécher ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, sauf la nuit"
+     ],
+     "rep": "Non",
+     "expl": "L’eau s’évapore doucement à la surface."
+    },
+    {
+     "q": "Peut-on voir la vapeur d’eau ?",
+     "choix": [
+      "Oui, elle est toujours blanche",
+      "Non",
+      "Oui, seulement en hiver"
+     ],
+     "rep": "Non",
+     "expl": "C’est un gaz invisible ; ce qu’on voit, ce sont des gouttes."
+    },
+    {
+     "q": "Comment s’appelle le passage de la vapeur à l’eau liquide ?",
+     "choix": [
+      "La fusion",
+      "Le gel",
+      "La condensation"
+     ],
+     "rep": "La condensation",
+     "expl": "La vapeur forme des gouttes en se refroidissant."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-20-03"
+  },
+  {
+   "titre": "Les nuages ne sont pas du coton",
+   "accroche": "Il y a de l’eau dans les nuages. Alors pourquoi ne tombe-t-elle pas tout de suite ?",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "De minuscules gouttes",
+     "texte": "Un nuage est fait de toutes petites gouttes d’eau, de petits cristaux de glace, ou des deux. Entre elles, il y a de l’air et de la vapeur d’eau invisible.",
+     "schema": "Nuage blanc en haut ; loupe montrant gouttelettes, cristaux et air. Légende éléments agrandis, dimensions non respectées ; aucun morceau de coton."
+    },
+    {
+     "titre": "L’air qui monte se refroidit",
+     "texte": "Quand l’air monte, il est moins écrasé par l’air au-dessus, alors il s’étale. En s’étalant, il se refroidit. S’il contient assez de vapeur, des gouttes se forment : un nuage peut naître.",
+     "schema": "Colonne d’air montant et s’élargissant ; pression et température baissent symboliquement. Gouttelettes apparaissent seulement à l’étape finale, avec légende conditions nécessaires."
+    },
+    {
+     "titre": "Petites, mais pas sans poids",
+     "texte": "Les gouttes d’un nuage ont un poids. Mais elles sont si petites qu’elles tombent très lentement. L’air qui bouge peut les garder en l’air ou les emporter.",
+     "schema": "Loupe : petite goutte avec courte flèche de chute, courant ascendant avec flèche plus longue. Nuage global déplacé par le vent ; ne pas le dessiner comme un objet solide."
+    },
+    {
+     "titre": "Blanc ou gris",
+     "texte": "Les gouttes renvoient la lumière dans tous les sens. Un nuage très épais laisse passer moins de lumière vers le bas : son dessous paraît gris. Gris ne veut pas dire plein de fumée.",
+     "schema": "Rayons jaunes entrant dans un nuage épais ; multiples directions de diffusion, moins de lumière en dessous. Nuage fin comparé à côté ; légende schéma qualitatif."
+    },
+    {
+     "titre": "Un nuage change tout le temps",
+     "texte": "Un nuage peut grandir, bouger ou disparaître. Des gouttes se forment d’un côté pendant que d’autres s’évaporent de l’autre. Ce n’est pas toujours le même paquet d’eau qui voyage.",
+     "schema": "Trois instants d’un nuage : nouvelles gouttelettes d’un côté, évaporation de l’autre, déplacement. Couleurs symboliques pour distinguer formation et disparition, sans conserver une coque autour."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends pourquoi les nuages changent de forme, et pourquoi ce ne sont pas de la vapeur devenue blanche.",
+   "securite": "Observe depuis un endroit sûr, avec un adulte. Ne regarde jamais le Soleil en face. Aucun défi ne te demande de sortir quand il fait mauvais, ni d’ouvrir une fenêtre.",
+   "defi": "Si le temps est calme, regarde pendant trois minutes un nuage avec un adulte, derrière une fenêtre fermée. Tu peux aussi regarder un dessin. Décris ce qui change.",
+   "quiz": [
+    {
+     "q": "De quoi est fait ce qu’on voit d’un nuage ?",
+     "choix": [
+      "De vapeur invisible seulement",
+      "De petites gouttes ou de cristaux de glace",
+      "De fumée"
+     ],
+     "rep": "De petites gouttes ou de cristaux de glace",
+     "expl": "Ces gouttes et ces cristaux renvoient la lumière."
+    },
+    {
+     "q": "Les gouttes d’un nuage ont-elles un poids ?",
+     "choix": [
+      "Non",
+      "Seulement quand elles sont grises",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Elles tombent très lentement et l’air peut les porter."
+    },
+    {
+     "q": "Un nuage gris est-il plein de fumée ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, s’il cache le Soleil"
+     ],
+     "rep": "Non",
+     "expl": "Il est gris parce qu’il est épais et laisse passer moins de lumière."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-20-04"
+  },
+  {
+   "titre": "Brouillard et rosée : près du sol",
+   "accroche": "Les gouttes sur l’herbe et le voile blanc dans la rue ne se forment pas au même endroit.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Le brouillard, un nuage au sol",
+     "texte": "Le brouillard est fait de minuscules gouttes qui flottent près du sol. On voit moins loin. C’est comme un nuage tout en bas, au milieu des rues et des arbres.",
+     "schema": "Rue en coupe avec gouttelettes près du sol ; objets lointains plus pâles. Nuage en hauteur à côté pour comparaison ; mêmes symboles de gouttes."
+    },
+    {
+     "titre": "La rosée se pose",
+     "texte": "Le matin, l’herbe est parfois très froide. La vapeur d’eau de l’air qui la touche se change en petites gouttes : c’est la rosée. Elle ne vient pas forcément de la pluie.",
+     "schema": "Brin d’herbe froid au centre ; vapeur invisible dans une loupe, puis gouttes attachées à la surface. Aucun nuage de pluie au-dessus."
+    },
+    {
+     "titre": "Le givre et la gelée blanche",
+     "texte": "Le givre et la gelée blanche sont de la glace. Le givre se forme quand de petites gouttes de brouillard très froides gèlent en touchant un objet. La gelée blanche vient de vapeur qui devient directement de la glace.",
+     "schema": "Deux parcours : gouttelettes liquides vers surface froide puis givre ; vapeur directement vers cristaux de gelée blanche. Bleu clair pour liquide, bleu foncé pour solide ; étiquettes explicites."
+    },
+    {
+     "titre": "La buée",
+     "texte": "Quand de l’air humide touche une vitre froide, de petites gouttes se forment dessus : c’est la buée. Le verre ne fabrique pas d’eau. C’est la vapeur de l’air qui redevient liquide.",
+     "schema": "Vitre fermée vue de côté ; intérieur humide et vitre plus froide. Petites gouttes apparaissent sur un côté, agrandies dans une loupe."
+    },
+    {
+     "titre": "Des indices, pas des promesses",
+     "texte": "Le brouillard, la rosée et le givre donnent des indices sur le temps qu’il fait ce matin. Mais un seul indice ne suffit pas pour connaître le temps de toute la journée.",
+     "schema": "Trois pictogrammes d’observation reliés à un carnet, puis point d’interrogation sur la journée entière. Ajouter thermomètre, vent et carte comme informations complémentaires."
+    }
+   ],
+   "dans_ta_vie": "Tu sais faire la différence entre des gouttes qui flottent, des gouttes posées et de la glace.",
+   "securite": "Observe depuis un endroit sûr, avec un adulte. Ne regarde jamais le Soleil en face. Aucun défi ne te demande de sortir quand il fait mauvais, ni d’ouvrir une fenêtre.",
+   "defi": "Pendant trois minutes, dessine le brouillard, la rosée et le givre dans trois cases. Place l’eau au bon endroit et écris « liquide » ou « solide ».",
+   "quiz": [
+    {
+     "q": "Où sont les gouttes du brouillard ?",
+     "choix": [
+      "Dans les racines",
+      "Gelées tout en haut du ciel",
+      "Elles flottent près du sol"
+     ],
+     "rep": "Elles flottent près du sol",
+     "expl": "Le brouillard est un nuage au ras du sol."
+    },
+    {
+     "q": "La rosée prouve-t-elle qu’il a plu ?",
+     "choix": [
+      "Non",
+      "Oui, forcément",
+      "Oui, toute la nuit"
+     ],
+     "rep": "Non",
+     "expl": "Elle se forme quand la vapeur touche une surface froide."
+    },
+    {
+     "q": "Le givre est-il de l’eau liquide ?",
+     "choix": [
+      "Oui, toujours",
+      "Non, c’est de la glace",
+      "Oui, s’il est blanc"
+     ],
+     "rep": "Non, c’est de la glace",
+     "expl": "Le givre est fait de petits morceaux de glace."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-20-05"
+  },
+  {
+   "titre": "Pluie, neige et grêle : trois chemins",
+   "accroche": "Ce qui tombe du ciel dépend du chemin parcouru dans l’air.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Les gouttes grandissent",
+     "texte": "Dans un nuage, les petites gouttes ou les cristaux de glace peuvent grossir. Quand ils deviennent assez lourds, l’air ne peut plus les porter et ils tombent. On les appelle des précipitations.",
+     "schema": "Nuage en coupe ; petites gouttes et cristaux, puis éléments plus gros descendant. Flèches ascendantes et descendantes distinctes ; pas de nuage qui se vide d’un seul coup."
+    },
+    {
+     "titre": "La pluie",
+     "texte": "Une goutte de pluie peut grossir en se collant à d’autres gouttes. Elle peut aussi venir d’un morceau de glace qui fond en traversant de l’air plus chaud. Il y a plusieurs chemins.",
+     "schema": "Deux voies vers une goutte finale : petites gouttes qui se rencontrent et se réunissent ; cristal traversant une zone plus chaude et fondant. Étiquettes chemins possibles, pas étapes obligatoires."
+    },
+    {
+     "titre": "La neige",
+     "texte": "Quand il fait assez froid, la vapeur d’eau forme des cristaux de glace dans le nuage. Ils s’accrochent entre eux et font des flocons. S’ils ne fondent pas avant d’arriver au sol, il neige.",
+     "schema": "Cristal agrandi puis flocon composé, trajet vers sol avec zone d’air froide. Une autre trajectoire montre fonte possible ; légende schéma simplifié."
+    },
+    {
+     "titre": "La grêle",
+     "texte": "Dans un nuage d’orage, l’air monte très fort. Il garde de petits morceaux de glace en l’air. Des gouttes gèlent dessus et les font grossir. Quand ils sont trop lourds, les grêlons tombent.",
+     "schema": "Grand nuage orageux ; flèches verticales montantes, particule de glace grossissant par ajout de gouttes gelées. Éviter des tours répétés présentés comme obligatoires."
+    },
+    {
+     "titre": "Attention au sol",
+     "texte": "La pluie peut rendre le sol glissant ou causer une inondation. La neige et la glace rendent aussi les trajets difficiles. Ne va jamais voir un danger par curiosité.",
+     "schema": "Trois scènes vues depuis un intérieur sûr : rue mouillée, sol enneigé, zone inondée barrée. Adulte consulte les consignes ; aucun enfant dehors."
+    }
+   ],
+   "dans_ta_vie": "Tu sais que la neige et la grêle sont toutes les deux de la glace, mais qu’elles ne se forment pas de la même façon.",
+   "securite": "N’essaie pas de ramasser de la grêle pendant un orage. Ne marche pas sur une surface gelée que tu ne connais pas et n’entre jamais dans l’eau d’une inondation.",
+   "defi": "Pendant trois minutes, dessine trois chemins : pluie, neige, grêle. Explique lequel a besoin d’un gros nuage d’orage.",
+   "quiz": [
+    {
+     "q": "La pluie vient-elle toujours de gouttes restées liquides ?",
+     "choix": [
+      "Non, elle peut aussi venir de glace qui a fondu",
+      "Oui",
+      "Oui, même dans les nuages froids"
+     ],
+     "rep": "Non, elle peut aussi venir de glace qui a fondu",
+     "expl": "Il y a plusieurs chemins pour former la pluie."
+    },
+    {
+     "q": "Avec quoi se forme la neige ?",
+     "choix": [
+      "Avec du coton",
+      "Avec des cristaux de glace",
+      "Avec de la poussière"
+     ],
+     "rep": "Avec des cristaux de glace",
+     "expl": "Les cristaux s’accrochent et font des flocons."
+    },
+    {
+     "q": "Où se forme la grêle ?",
+     "choix": [
+      "Dans la rosée du matin",
+      "Dans un ciel sans nuage",
+      "Dans un nuage d’orage où l’air monte très fort"
+     ],
+     "rep": "Dans un nuage d’orage où l’air monte très fort",
+     "expl": "L’air qui monte garde la glace en l’air pendant qu’elle grossit."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-20-06"
+  },
+  {
+   "titre": "Des masses d’air se rencontrent",
+   "accroche": "Une grande bande de nuages peut montrer que deux airs différents se rencontrent.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Les masses d’air",
+     "texte": "Une masse d’air est une énorme quantité d’air qui a à peu près la même température et la même humidité partout. Elle peut changer en passant au-dessus de la mer ou de la terre.",
+     "schema": "Carte fictive avec deux zones transparentes, rose plus chaude et bleue plus froide. Petites gouttes symbolisent des humidités différentes ; frontières souples, non murs solides."
+    },
+    {
+     "titre": "Le front",
+     "texte": "Un front, c’est l’endroit où deux masses d’air différentes se rencontrent. On y trouve souvent des nuages, de la pluie ou un changement de vent. Mais pas toujours.",
+     "schema": "Coupe horizontale puis verticale d’une rencontre ; bande nommée front, air plus chaud et plus froid. Nuages possibles indiqués par pointillés, pas par une obligation."
+    },
+    {
+     "titre": "L’air qui monte",
+     "texte": "Près d’un front, de l’air humide peut être poussé vers le haut. Il se refroidit et forme des nuages. Une montagne peut aussi faire monter l’air : toutes les pluies ne viennent pas d’un front.",
+     "schema": "Deux cadres : montée le long d’une zone frontale ; montée contre une montagne. Même séquence refroidissement puis condensation possible, avec deux causes distinctes."
+    },
+    {
+     "titre": "Une dépression n’est pas un trou",
+     "texte": "Une dépression est une zone où l’air appuie moins fort qu’autour. Elle amène souvent du temps agité. Mais il y a toujours de l’air dedans : ce n’est pas un trou !",
+     "schema": "Carte de pression très simplifiée avec D au centre et lignes fermées. Colonne d’air toujours remplie de points dans la coupe correspondante ; légende pression relative."
+    },
+    {
+     "titre": "L’anticyclone",
+     "texte": "Un anticyclone est une zone où l’air appuie plus fort qu’autour. Il amène souvent un temps calme. Mais il peut aussi y avoir du brouillard ou des nuages bas : le grand Soleil n’est pas garanti.",
+     "schema": "Carte fictive avec A, puis deux exemples possibles : ciel dégagé et brouillard. Les deux branches portent le mot possible."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends les mots front, dépression et anticyclone, sans croire que ce sont des règles magiques.",
+   "securite": "Observe depuis un endroit sûr, avec un adulte. Ne regarde jamais le Soleil en face. Aucun défi ne te demande de sortir quand il fait mauvais, ni d’ouvrir une fenêtre.",
+   "defi": "Pendant trois minutes, dessine deux masses d’air différentes et l’endroit où elles se rencontrent. Explique pourquoi ce seul dessin ne suffit pas pour savoir où il pleuvra.",
+   "quiz": [
+    {
+     "q": "Qu’est-ce qu’un front ?",
+     "choix": [
+      "Un mur dans le ciel",
+      "L’endroit où deux masses d’air se rencontrent",
+      "Le sommet d’une montagne"
+     ],
+     "rep": "L’endroit où deux masses d’air se rencontrent",
+     "expl": "Il sépare deux airs différents."
+    },
+    {
+     "q": "Une dépression, est-ce un endroit sans air ?",
+     "choix": [
+      "Oui",
+      "Oui, seulement au centre",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "L’air y appuie moins fort, mais il est bien là."
+    },
+    {
+     "q": "Un anticyclone donne-t-il toujours du Soleil ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, même avec du brouillard"
+     ],
+     "rep": "Non",
+     "expl": "Il peut aussi y avoir du brouillard ou des nuages bas."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-20-07"
+  },
+  {
+   "titre": "Les instruments ne devinent pas",
+   "accroche": "Comment transforme-t-on le ciel en mesures qu’on peut comparer ?",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Mesurer la température",
+     "texte": "Un thermomètre mesure la température. Pour comparer deux endroits, on le met dans un abri à l’ombre, où l’air circule. Au Soleil, il chaufferait lui-même et la mesure serait fausse.",
+     "schema": "Thermomètre sous abri ventilé stylisé ; rayons directs arrêtés par le toit, air circulant. Second thermomètre exposé au Soleil marqué mesure non comparable, sans installation à réaliser."
+    },
+    {
+     "titre": "Mesurer la pluie",
+     "texte": "Un pluviomètre récupère la pluie. On regarde la hauteur d’eau, pas la quantité. Sous la même pluie, un seau et une tasse droite se remplissent à peu près à la même hauteur, même si le seau contient plus d’eau.",
+     "schema": "Pluviomètre fermé en dessin avec ouverture et graduation de hauteur ; à côté, tasse et seau recevant la même pluie, volumes différents et hauteur comparable."
+    },
+    {
+     "titre": "Mesurer le vent",
+     "texte": "La girouette montre d’où vient le vent. L’anémomètre mesure sa vitesse. Ce sont deux informations différentes : la direction et la vitesse.",
+     "schema": "Girouette sur rose des directions à gauche ; anémomètre à droite. Flèches vers deux cases du carnet : direction et vitesse. Aucun instrument placé par un enfant."
+    },
+    {
+     "titre": "Regarder de loin",
+     "texte": "Les satellites regardent de grandes régions depuis l’espace. Les radars météo repèrent où il pleut. Ils complètent les appareils posés au sol, mais ne voient pas les mêmes détails.",
+     "schema": "Terre, satellite et station radar ; zones d’observation différentes en couleurs. Un nuage, une zone pluvieuse et un thermomètre au sol restent trois informations distinctes."
+    },
+    {
+     "titre": "Lire la légende",
+     "texte": "Une carte météo utilise des couleurs et des symboles. Avant de dire qu’une zone est chaude ou pluvieuse, lis la légende, l’heure et le lieu de la carte.",
+     "schema": "Deux cartes fictives avec palettes semblables mais légendes différentes : température et pluie. Mettre en évidence titre, légende, date et heure avant les zones colorées."
+    }
+   ],
+   "dans_ta_vie": "Tu sais qu’une couleur ou un symbole sur une carte ne veut rien dire sans sa légende.",
+   "securite": "Observe depuis un endroit sûr, avec un adulte. Ne regarde jamais le Soleil en face. Aucun défi ne te demande de sortir quand il fait mauvais, ni d’ouvrir une fenêtre.",
+   "defi": "Avec un adulte, regarde pendant trois minutes une carte météo déjà affichée. Trouve son lieu, son heure et sa légende avant de parler d’une couleur.",
+   "quiz": [
+    {
+     "q": "Pourquoi met-on le thermomètre à l’ombre ?",
+     "choix": [
+      "Pour enlever l’air autour",
+      "Pour qu’il soit plus froid que la nuit",
+      "Pour mesurer correctement la température de l’air"
+     ],
+     "rep": "Pour mesurer correctement la température de l’air",
+     "expl": "Au Soleil, il chaufferait lui-même et la mesure serait fausse."
+    },
+    {
+     "q": "Que mesure un anémomètre ?",
+     "choix": [
+      "La vitesse du vent",
+      "La quantité de pluie",
+      "La durée du jour"
+     ],
+     "rep": "La vitesse du vent",
+     "expl": "La direction du vent, c’est la girouette qui la montre."
+    },
+    {
+     "q": "Une même couleur sur deux cartes veut-elle toujours dire la même chose ?",
+     "choix": [
+      "Oui",
+      "Non, il faut lire chaque légende",
+      "Oui, si les cartes sont grandes"
+     ],
+     "rep": "Non, il faut lire chaque légende",
+     "expl": "Chaque carte peut utiliser ses couleurs à sa façon."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-20-08"
+  },
+  {
+   "titre": "Prévoir sans boule de cristal",
+   "accroche": "Pourquoi la météo annoncée le matin peut-elle changer le soir ?",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "D’abord observer",
+     "texte": "Les météorologues, les spécialistes de la météo, rassemblent des mesures sur l’air, l’eau et le sol. Comme pour préparer un trajet, il faut d’abord bien savoir d’où on part.",
+     "schema": "Stations, satellites et radars envoient des informations vers un centre. Chaque flèche porte une mesure : température, vent, humidité ; pas de données privées."
+    },
+    {
+     "titre": "Calculer la suite",
+     "texte": "De puissants ordinateurs utilisent des modèles : des versions simplifiées de l’atmosphère, la couche d’air autour de la Terre. Avec les mesures et les lois de la physique, ils calculent comment le temps pourrait changer.",
+     "schema": "Carte découpée en petites cases puis flèche vers cartes futures. Ordinateur symbolique au milieu ; légende représentation simplifiée, pas copie parfaite du ciel."
+    },
+    {
+     "titre": "Il reste des doutes",
+     "texte": "On ne peut pas mesurer l’air parfaitement partout. De petites erreurs peuvent grandir avec le temps. Annoncer le temps d’une région est plus facile que dire où tombera une averse précise.",
+     "schema": "Deux situations initiales très proches donnent deux zones d’averse légèrement différentes. Loupes sur l’écart ; ne pas faire diverger systématiquement toutes les prévisions."
+    },
+    {
+     "titre": "Comparer plusieurs calculs",
+     "texte": "Les spécialistes comparent plusieurs calculs. S’ils se ressemblent, la prévision est plus sûre. S’ils sont très différents, on prévient que c’est incertain.",
+     "schema": "Trois cartes futures côte à côte ; scénario proche puis divergent. Zone commune hachurée et zone incertaine pointillée ; mots accord et incertitude."
+    },
+    {
+     "titre": "La vigilance",
+     "texte": "En France, la carte de vigilance prévient avec des couleurs quand le temps peut être dangereux. Un adulte lit l’information du jour et les consignes. Une vieille capture d’écran ne suffit pas pour décider.",
+     "schema": "Carte de vigilance schématique avec légende vert, jaune, orange, rouge et mots associés. Date et heure agrandies ; adulte lit les consignes, aucune alerte réelle prétendue."
+    }
+   ],
+   "dans_ta_vie": "Tu comprends qu’une prévision est un calcul sérieux, avec une part de doute, et qu’elle peut changer.",
+   "securite": "Ce sont les adultes qui décident des sorties, avec les informations officielles du jour et les consignes. Ne va jamais sur place pour vérifier une alerte.",
+   "defi": "Pendant trois minutes, avec un adulte, invente et dessine deux possibilités de temps pour demain. Dis ce que tu sais, ce qui reste incertain, et pourquoi on regarde à nouveau la prévision.",
+   "quiz": [
+    {
+     "q": "Un modèle météo est-il une copie parfaite du ciel ?",
+     "choix": [
+      "Non, c’est une version simplifiée",
+      "Oui, dans chaque détail",
+      "Oui, même sans mesures"
+     ],
+     "rep": "Non, c’est une version simplifiée",
+     "expl": "Il décrit l’atmosphère de façon simplifiée."
+    },
+    {
+     "q": "Pourquoi une prévision peut-elle changer ?",
+     "choix": [
+      "Le ciel lit la météo",
+      "De nouvelles mesures et de nouveaux calculs arrivent",
+      "La couleur du téléphone change la pluie"
+     ],
+     "rep": "De nouvelles mesures et de nouveaux calculs arrivent",
+     "expl": "Les prévisions sont refaites souvent avec des informations récentes."
+    },
+    {
+     "q": "Une vieille carte suffit-elle pour préparer une sortie quand il peut y avoir du danger ?",
+     "choix": [
+      "Oui, si elle est nette",
+      "Oui, si elle est verte",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Il faut l’information du jour et les consignes."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-20-09"
+  },
+  {
+   "titre": "Orages, saisons et climat : bien distinguer",
+   "accroche": "Un éclair dure un instant. Une saison dure des mois. Le climat s’étudie sur des dizaines d’années.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "L’orage",
+     "texte": "Dans un nuage d’orage, l’air bouge très fort. Des charges électriques se séparent, puis se déchargent d’un coup : ce sont les éclairs. Un orage peut aussi amener une forte pluie, de la grêle et des coups de vent.",
+     "schema": "Grand nuage avec mouvements verticaux, zones de charges symboliques, éclair, pluie et vent. Personnages uniquement dans un bâtiment fermé, loin du schéma du phénomène."
+    },
+    {
+     "titre": "Le tonnerre",
+     "texte": "L’éclair chauffe l’air d’un coup, très fort. L’air gonfle brutalement et fait un grand bruit : le tonnerre. La lumière va beaucoup plus vite que le son, alors on voit l’éclair avant d’entendre le tonnerre.",
+     "schema": "Éclair au loin, onde lumineuse puis onde sonore arrivant à une maison. Frise voir puis entendre ; aucune invitation à rester dehors pour compter."
+    },
+    {
+     "titre": "D’où viennent les saisons ?",
+     "texte": "La Terre est un peu penchée. En tournant autour du Soleil, chaque moitié de la Terre reçoit plus ou moins de lumière, et les jours sont plus ou moins longs. L’été ne vient pas d’un Soleil plus proche.",
+     "schema": "Orbite schématique et quatre Terres dont les axes restent parallèles. Souligner inclinaison et durées du jour ; mention distances et tailles non respectées."
+    },
+    {
+     "titre": "Météo ou climat ?",
+     "texte": "La météo, c’est le temps d’aujourd’hui et des jours suivants. Le climat, c’est le temps habituel d’un lieu, étudié sur beaucoup d’années. Une journée froide ne dit rien sur le changement du climat.",
+     "schema": "À gauche calendrier de quelques jours avec pictogrammes ; à droite longue série d’années avec variations et tendance. Même lieu identifié ; pas de courbe chiffrée inventée."
+    },
+    {
+     "titre": "Se protéger de l’orage",
+     "texte": "Quand un orage arrive, suis l’adulte jusqu’à un bâtiment solide. Reste loin des arbres et de l’eau. On ne s’approche jamais d’un phénomène dangereux pour le regarder.",
+     "schema": "Enfant et adulte dans un bâtiment fermé ; arbre isolé et cours d’eau éloignés barrés comme abris. Ne montrer ni refuge sous arbre ni manipulation de prises."
+    }
+   ],
+   "dans_ta_vie": "Tu sais faire la différence entre un éclair, les saisons et le climat, qui ne durent pas du tout le même temps.",
+   "securite": "Pendant un orage, reste avec l’adulte, à l’abri dans un bâtiment solide, loin des fenêtres. Ne t’approche ni des arbres, ni de l’eau, ni des zones inondées. Ne touche pas aux appareils électriques.",
+   "defi": "Pendant trois minutes, range sur papier trois phrases : « Il pleut aujourd’hui », « Les jours raccourcissent en hiver », « Les étés changent depuis des dizaines d’années ». Dis combien de temps chacune concerne.",
+   "quiz": [
+    {
+     "q": "Pourquoi voit-on l’éclair avant d’entendre le tonnerre ?",
+     "choix": [
+      "Le bruit arrive le lendemain",
+      "La lumière va plus vite que le son",
+      "Le nuage attend avant de faire du bruit"
+     ],
+     "rep": "La lumière va plus vite que le son",
+     "expl": "La lumière arrive presque tout de suite, le son met plus de temps."
+    },
+    {
+     "q": "L’été vient-il d’un Soleil plus proche ?",
+     "choix": [
+      "Oui, seulement de ça",
+      "Oui, et les jours ne changent pas",
+      "Non, c’est surtout parce que la Terre est penchée"
+     ],
+     "rep": "Non, c’est surtout parce que la Terre est penchée",
+     "expl": "La Terre penchée reçoit la lumière différemment selon la saison."
+    },
+    {
+     "q": "Une journée froide prouve-t-elle que le climat ne change pas ?",
+     "choix": [
+      "Non",
+      "Oui",
+      "Oui, s’il fait très froid"
+     ],
+     "rep": "Non",
+     "expl": "Le climat s’étudie sur beaucoup d’années."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-20-10"
+  }
+ ]
+}
