@@ -1555,6 +1555,60 @@
    "id": "REV-SVT-TLE-29"
   },
   {
+   "axe": "La Terre, la vie et l’organisation du vivant",
+   "titre": "Demi-vie et droite isochrone",
+   "emoji": "⏳",
+   "en_une_phrase": "La datation radioactive utilise la décroissance d’un isotope et les rapports mesurés dans les minéraux.",
+   "comprendre": "Un isotope père se désintègre progressivement en isotope fils. La méthode rubidium-strontium compare plusieurs minéraux d’une même roche pour estimer l’âge de fermeture du système.",
+   "essentiel": [
+    "Après une demi-vie, la moitié des noyaux pères initiaux subsiste en moyenne.",
+    "Le rubidium 87 se désintègre en strontium 87.",
+    "L’isochrone relie les rapports ⁸⁷Sr/⁸⁶Sr et ⁸⁷Rb/⁸⁶Sr ; sa pente a permet de calculer t = ln(1 + a)/λ.",
+    "Le modèle suppose notamment un système fermé depuis l’événement daté et un même rapport initial ⁸⁷Sr/⁸⁶Sr pour les minéraux étudiés."
+   ],
+   "image_mentale": "Plusieurs minéraux sont placés sur un graphique : la pente de leur droite renseigne sur l’âge.",
+   "regle_ou_methode": "Compte les demi-vies ou lis la pente, puis utilise la constante radioactive et vérifie les hypothèses.",
+   "exemples": [
+    "Si, sans apport ni perte, un quart du nombre initial connu de noyaux pères demeure, deux demi-vies se sont écoulées : pour une demi-vie fictive de 1 million d’années, la durée est 2 millions d’années.",
+    "Pour une pente fictive a = 1, t = ln(2)/λ : cela correspond à une demi-vie du chronomètre."
+   ],
+   "piege": "Une date obtenue dépend du système isotopique et de sa fermeture ; elle ne date pas automatiquement tous les événements de la roche.",
+   "astuce_memoire": "Un quart restant : deux demi-vies.",
+   "quiz": [
+    {
+     "q": "Quelle fraction d’isotope père reste en moyenne après deux demi-vies ?",
+     "choix": [
+      "Un quart",
+      "Une moitié",
+      "Un huitième"
+     ],
+     "rep": "Un quart",
+     "expl": "La quantité est divisée deux fois par deux."
+    },
+    {
+     "q": "Quel rapport utilise le strontium 86 comme référence dans la méthode Rb/Sr ?",
+     "choix": [
+      "⁸⁷Sr/¹²C",
+      "⁸⁷Sr/⁸⁶Sr",
+      "⁸⁷Rb/¹⁶O"
+     ],
+     "rep": "⁸⁷Sr/⁸⁶Sr",
+     "expl": "Le strontium 86 sert de référence stable dans ce rapport."
+    },
+    {
+     "q": "Si la pente de l’isochrone vaut 1, quelle durée donne le modèle ?",
+     "choix": [
+      "Deux demi-vies",
+      "Une durée forcément nulle",
+      "Une demi-vie"
+     ],
+     "rep": "Une demi-vie",
+     "expl": "ln(1 + 1)/λ = ln(2)/λ."
+    }
+   ],
+   "id": "REV-SVT-TLE-90"
+  },
+  {
    "axe": "Enjeux planétaires contemporains",
    "titre": "Surfaces d’échange des plantes",
    "emoji": "🌿",
@@ -2793,6 +2847,114 @@
    "id": "REV-SVT-TLE-52"
   },
   {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Le dernier maximum glaciaire",
+   "emoji": "🧊",
+   "en_une_phrase": "Les archives naturelles permettent de reconstituer les variations climatiques récentes du Quaternaire.",
+   "comprendre": "Vers 20 000 ans avant le présent, les calottes glaciaires atteignent une grande extension. Les glaces, sédiments et pollens conservent des indices complémentaires des conditions passées.",
+   "essentiel": [
+    "Le dernier maximum glaciaire date d’environ 20 000 ans avant le présent.",
+    "Les moraines témoignent d’anciennes positions de glaciers.",
+    "Les pollens fossiles renseignent sur la végétation et indirectement sur le climat.",
+    "Les rapports isotopiques des glaces et sédiments sont des indicateurs climatiques."
+   ],
+   "image_mentale": "Une carotte de glace et une couche de sédiments sont deux archives du passé.",
+   "regle_ou_methode": "Date les archives, identifie leurs indices puis confronte plusieurs sources.",
+   "exemples": [
+    "Une moraine ancienne indique qu’un glacier s’étendait jusque-là ; des pollens datés de la même période complètent l’indice sur la végétation.",
+    "Les couches d’une carotte glaciaire contiennent des signatures isotopiques étudiées pour reconstituer des variations climatiques."
+   ],
+   "piege": "Une moraine seule ne donne ni la température exacte ni la date sans datation complémentaire.",
+   "astuce_memoire": "Glaces, sédiments, pollens : indices à croiser.",
+   "quiz": [
+    {
+     "q": "Quand se situe approximativement le dernier maximum glaciaire ?",
+     "choix": [
+      "Il y a exactement 200 ans",
+      "Il y a environ 20 000 ans",
+      "Il y a 2 millions d’années"
+     ],
+     "rep": "Il y a environ 20 000 ans",
+     "expl": "Il correspond à une phase du dernier cycle glaciaire."
+    },
+    {
+     "q": "Quel indice témoigne d’une ancienne position glaciaire ?",
+     "choix": [
+      "Une facture électrique",
+      "Un nuage actuel",
+      "Une moraine"
+     ],
+     "rep": "Une moraine",
+     "expl": "Une moraine est un dépôt associé à un glacier."
+    },
+    {
+     "q": "Des pollens fossiles indiquent d’abord ?",
+     "choix": [
+      "Une végétation passée",
+      "Une température exacte à eux seuls",
+      "Le nom de chaque humain vivant à l’époque"
+     ],
+     "rep": "Une végétation passée",
+     "expl": "Les pollens renseignent sur la végétation du passé."
+    }
+   ],
+   "id": "REV-SVT-TLE-91"
+  },
+  {
+   "axe": "Enjeux planétaires contemporains",
+   "titre": "Défenses des plantes",
+   "emoji": "🌵",
+   "en_une_phrase": "Les plantes disposent de structures et de molécules qui peuvent limiter les attaques.",
+   "comprendre": "Une plante reste exposée aux animaux herbivores et aux agents pathogènes. Des barrières physiques et des composés chimiques peuvent agir avant ou après une agression.",
+   "essentiel": [
+    "La cuticule et certaines parois constituent des barrières physiques.",
+    "Des épines peuvent limiter la consommation par certains herbivores.",
+    "Certaines molécules rendent les tissus moins attractifs ou gênent des agresseurs.",
+    "Certaines défenses peuvent être induites après une attaque."
+   ],
+   "image_mentale": "Une barrière protège la surface et des molécules contribuent à la défense.",
+   "regle_ou_methode": "Identifie l’agresseur, le caractère de défense et son effet observé.",
+   "exemples": [
+    "Une plante porte des épines : elles peuvent gêner l’accès de certains herbivores aux feuilles, sans protéger contre tous les agresseurs.",
+    "Après une attaque, certaines plantes augmentent la production de composés de défense dans leurs tissus."
+   ],
+   "piege": "Une défense efficace contre un agresseur ne protège pas nécessairement contre tous.",
+   "astuce_memoire": "Barrière physique et défense chimique.",
+   "quiz": [
+    {
+     "q": "Les épines constituent surtout quel type de protection ?",
+     "choix": [
+      "Un anticorps",
+      "Un neurone",
+      "Une barrière physique"
+     ],
+     "rep": "Une barrière physique",
+     "expl": "Les épines gênent physiquement certains consommateurs."
+    },
+    {
+     "q": "Une défense peut-elle être activée après une agression ?",
+     "choix": [
+      "Oui",
+      "Non, jamais",
+      "Seulement chez les animaux"
+     ],
+     "rep": "Oui",
+     "expl": "Certaines réponses sont induites par l’attaque."
+    },
+    {
+     "q": "Une défense contre un herbivore protège-t-elle toujours de tous les agents pathogènes ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Seulement si la plante est verte"
+     ],
+     "rep": "Non",
+     "expl": "L’efficacité dépend du type d’agresseur."
+    }
+   ],
+   "id": "REV-SVT-TLE-92"
+  },
+  {
    "axe": "Corps humain et santé",
    "titre": "Le réflexe myotatique",
    "emoji": "🦵",
@@ -3817,6 +3979,60 @@
     }
    ],
    "id": "REV-SVT-TLE-71"
+  },
+  {
+   "axe": "Corps humain et santé",
+   "titre": "Cortex moteur et unité motrice",
+   "emoji": "🧠",
+   "en_une_phrase": "Le cortex moteur participe à la commande volontaire tandis qu’une unité motrice active des fibres musculaires.",
+   "comprendre": "Des zones du cortex moteur sont associées à la commande de différentes parties du corps : c’est une organisation somatotopique. Un motoneurone et les fibres musculaires qu’il innerve forment une unité motrice.",
+   "essentiel": [
+    "La somatotopie associe des régions corticales à des parties du corps.",
+    "La représentation corticale ne correspond pas simplement à la taille réelle des parties du corps.",
+    "Une unité motrice comprend un motoneurone et les fibres qu’il innerve.",
+    "Les voies nerveuses relient la commande cérébrale aux muscles."
+   ],
+   "image_mentale": "Une carte corticale commande différentes zones du corps par des voies nerveuses.",
+   "regle_ou_methode": "Repère la région cérébrale, la voie de commande et l’unité motrice activée.",
+   "exemples": [
+    "Si un motoneurone innerve 10 fibres, ce motoneurone et ces 10 fibres constituent une unité motrice.",
+    "Une région corticale associée à la main contribue aux mouvements volontaires de celle-ci."
+   ],
+   "piege": "Une unité motrice ne désigne pas tout le muscle ni toutes les régions corticales.",
+   "astuce_memoire": "Un motoneurone et ses fibres : une unité motrice.",
+   "quiz": [
+    {
+     "q": "Que comprend une unité motrice ?",
+     "choix": [
+      "Un motoneurone et les fibres qu’il innerve",
+      "Un os et une articulation",
+      "Un muscle entier et tous les neurones du cerveau"
+     ],
+     "rep": "Un motoneurone et les fibres qu’il innerve",
+     "expl": "C’est la définition de l’unité motrice."
+    },
+    {
+     "q": "Que signifie somatotopie du cortex moteur ?",
+     "choix": [
+      "Une liste des os par ordre alphabétique",
+      "Une organisation des zones liées à différentes parties du corps",
+      "Une répartition des groupes sanguins"
+     ],
+     "rep": "Une organisation des zones liées à différentes parties du corps",
+     "expl": "Certaines régions corticales sont associées à des parties du corps."
+    },
+    {
+     "q": "La place occupée par une partie du corps dans cette carte est-elle simplement proportionnelle à sa taille ?",
+     "choix": [
+      "Oui, toujours",
+      "Seulement pour les doigts",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "La représentation corticale dépend notamment de la finesse des mouvements."
+    }
+   ],
+   "id": "REV-SVT-TLE-93"
   }
  ]
 }

@@ -1,0 +1,154 @@
+{
+ "fiches": [
+  {
+   "id": "REV-AN-TLE-90",
+   "action": "ok",
+   "corrections": {},
+   "note": "Axe officiel « Art et pouvoir » ; traductions et quiz corrects."
+  },
+  {
+   "id": "REV-AN-TLE-91",
+   "action": "corriger",
+   "corrections": {
+    "quiz": [
+     {
+      "q": "Quel mot introduit un contraste ?",
+      "choix": [
+       "both — les deux",
+       "however — cependant",
+       "because — parce que"
+      ],
+      "rep": "however — cependant",
+      "expl": "However introduit ici une opposition."
+     },
+     {
+      "q": "Que signifie « both documents » ?",
+      "choix": [
+       "un seul document",
+       "aucun document",
+       "les deux documents"
+      ],
+      "rep": "les deux documents",
+      "expl": "Both indique les deux éléments."
+     },
+     {
+      "q": "Que faut-il faire pour construire une synthèse de deux documents ?",
+      "choix": [
+       "Relier leurs points communs et leurs différences",
+       "Copier chaque texte sans comparaison",
+       "Donner uniquement un avis sans examiner les documents"
+      ],
+      "rep": "Relier leurs points communs et leurs différences",
+      "expl": "Une synthèse met les documents en relation."
+     }
+    ]
+   },
+   "note": "Q1 : « ici » ne renvoyait à aucun contexte, supprimé. Axe officiel « Espace privé et espace public » cohérent avec les exemples sur la vie privée."
+  },
+  {
+   "id": "REV-AN-TLE-92",
+   "action": "ok",
+   "corrections": {},
+   "note": "Axe officiel « Innovations scientifiques et responsabilité » ; RAS."
+  },
+  {
+   "id": "REV-ES-TLE-90",
+   "action": "ok",
+   "corrections": {},
+   "note": "Axe officiel « Art et pouvoir » ; RAS."
+  },
+  {
+   "id": "REV-ES-TLE-91",
+   "action": "corriger",
+   "corrections": {
+    "quiz": [
+     {
+      "q": "Quelle phrase exprime « Si j’avais le temps, je participerais » ?",
+      "choix": [
+       "Si tendría tiempo, participaría.",
+       "Si tuviera tiempo, participaría.",
+       "Si tengo tiempo, participé."
+      ],
+      "rep": "Si tuviera tiempo, participaría.",
+      "expl": "Hypothèse irréelle : si + subjonctif imparfait (tuviera), puis conditionnel (participaría) ; dans ce type d’hypothèse, le conditionnel ne suit pas si."
+     },
+     {
+      "q": "Après « Quiero que » : « Je veux que », quelle forme complète « tu participes » ?",
+      "choix": [
+       "participas — tu participes à l’indicatif",
+       "participar — participer",
+       "participes — que tu participes"
+      ],
+      "rep": "participes — que tu participes",
+      "expl": "Le souhait introduit ici le subjonctif présent participes."
+     },
+     {
+      "q": "Dans « Quería que participaras » : « Je voulais que tu participes », quel temps suit que ?",
+      "choix": [
+       "Le subjonctif imparfait",
+       "Le futur de l’indicatif",
+       "L’infinitif"
+      ],
+      "rep": "Le subjonctif imparfait",
+      "expl": "Participaras est un subjonctif imparfait."
+     }
+    ]
+   },
+   "note": "Q1 expl : « on ne met jamais le conditionnel après si » est faux en général (si interrogatif indirect : no sé si vendría) ; restreint à l’hypothèse irréelle, en cohérence avec le piège. Axe officiel « Identités et échanges »."
+  },
+  {
+   "id": "REV-ES-TLE-92",
+   "action": "ok",
+   "corrections": {},
+   "note": "Axe officiel « Innovations scientifiques et responsabilité » ; RAS."
+  },
+  {
+   "id": "REV-ES-TLE-93",
+   "action": "ok",
+   "corrections": {},
+   "note": "Axe officiel « Diversité et inclusion » ; RAS."
+  },
+  {
+   "id": "REV-ESC-TLE-90",
+   "action": "corriger",
+   "corrections": {
+    "essentiel": [
+     "Une pile convertit de l’énergie chimique en énergie électrique.",
+     "L’induction permet de produire une tension quand le flux magnétique varie.",
+     "Un alternateur utilise l’induction pour convertir de l’énergie mécanique en énergie électrique."
+    ]
+   },
+   "note": "Essentiel 3 incomplet : conversion mécanique → électrique précisée. Dates Volta 1800 et Faraday 1831 exactes ; quiz OK."
+  },
+  {
+   "id": "REV-ESC-TLE-93",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs vérifiés en Python : 100×1,1² = 121 ; ressource linéaire 100+10n = 120 à n = 2 ; Essai de Malthus 1798 exact."
+  },
+  {
+   "id": "REV-HI-TLE-91",
+   "action": "ok",
+   "corrections": {},
+   "note": "Axe = intitulé officiel du thème 2 ; blocus juin 1948-mai 1949, mur août 1961 exacts."
+  },
+  {
+   "id": "REV-PC-TLE-91",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs vérifiés en Python : F = 2,0×10⁻¹² N, P ≈ 9,8×10⁻¹⁵ N (rapport ≈ 204), a = 2,0×10³ m·s⁻², x = 0,10 m, y = 1,0×10⁻³ m."
+  },
+  {
+   "id": "REV-PC-TLE-92",
+   "action": "ok",
+   "corrections": {},
+   "note": "Calculs vérifiés en Python : 0,5×4000×2 = 4000 J ; 0,1×300000 = 30000 J ; unités cohérentes."
+  },
+  {
+   "id": "REV-SES-TLE-91",
+   "action": "ok",
+   "corrections": {},
+   "note": "Axe identique à un axe déjà utilisé dans REV-SES-TLE.json (7 occurrences) ; √1,21 = 1,10 et √0,81 = 0,90 vérifiés."
+  }
+ ]
+}

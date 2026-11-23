@@ -1,0 +1,226 @@
+{
+ "classe": "TLE",
+ "niveau_appli": "Lycée",
+ "age": "17-18 ans",
+ "matiere": "Physique-chimie (spécialité)",
+ "code": "PC",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Constitution et transformations de la matière",
+   "titre": "Pile : quotient et équilibre",
+   "emoji": "🔋",
+   "en_une_phrase": "Pendant la décharge spontanée d’une pile, le quotient de réaction évolue vers la constante d’équilibre.",
+   "comprendre": "Une pile fournit de l’énergie électrique grâce à une transformation chimique spontanée. Si aucun réactif ne s’épuise avant l’équilibre, sa composition évolue jusqu’à Qᵣ = K.",
+   "essentiel": [
+    "K est la constante d’équilibre à une température donnée.",
+    "Si Qᵣ < K, une évolution spontanée dans le sens direct est possible si les réactifs nécessaires sont présents.",
+    "À l’équilibre, Qᵣ = K et il n’y a plus d’évolution nette.",
+    "Une pile peut aussi cesser de fonctionner par épuisement d’un réactif."
+   ],
+   "image_mentale": "Une composition chimique évolue vers son état d’équilibre comme un système qui se stabilise.",
+   "regle_ou_methode": "Compare Qᵣ à K et vérifie que les espèces nécessaires sont présentes.",
+   "exemples": [
+    "Pour une réaction de décharge avec Qᵣ = 0,5 et K = 4, le sens direct est favorisé ; si l’équilibre est atteint, Qᵣ vaut alors 4.",
+    "Si un réactif indispensable est épuisé avant l’équilibre, la pile peut cesser de débiter sans avoir atteint Qᵣ = K."
+   ],
+   "piege": "Une pile usée n’a pas nécessairement atteint l’équilibre : l’épuisement d’un réactif est une autre limite.",
+   "astuce_memoire": "Comparer quotient et constante avant de conclure.",
+   "quiz": [
+    {
+     "q": "À l’équilibre chimique, quelle relation vérifie le quotient ?",
+     "choix": [
+      "Qᵣ = K",
+      "Qᵣ = 0 dans tous les cas",
+      "Qᵣ est toujours supérieur à K"
+     ],
+     "rep": "Qᵣ = K",
+     "expl": "C’est la condition de l’équilibre pour la réaction considérée."
+    },
+    {
+     "q": "Si Qᵣ < K et que les réactifs nécessaires sont présents, quel sens est favorisé ?",
+     "choix": [
+      "Le sens inverse uniquement",
+      "Le sens direct",
+      "Aucune évolution possible"
+     ],
+     "rep": "Le sens direct",
+     "expl": "Le système peut évoluer spontanément dans le sens direct."
+    },
+    {
+     "q": "Une pile peut-elle cesser de fonctionner par épuisement d’un réactif ?",
+     "choix": [
+      "Non, jamais",
+      "Seulement si K = 0",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "Un réactif consommé peut limiter la transformation."
+    }
+   ],
+   "id": "REV-PC-TLE-90"
+  },
+  {
+   "axe": "Mouvement et interactions",
+   "titre": "Particule dans un champ électrique",
+   "emoji": "⚡",
+   "en_une_phrase": "Un champ électrique uniforme dévie une particule chargée en lui imposant une accélération.",
+   "comprendre": "Une charge q placée dans un champ électrique E subit une force qE. Si cette force est seule et la masse constante, la deuxième loi de Newton donne l’accélération.",
+   "essentiel": [
+    "La force et l’accélération vérifient F = qE et a = qE/m, sous forme vectorielle.",
+    "Si le champ est vertical et la vitesse initiale horizontale : x = v₀t et y = qEt²/(2m), avec origine au départ et E composante algébrique verticale du champ.",
+    "La charge négative est accélérée dans le sens opposé au champ.",
+    "Le modèle néglige ici les autres forces et suppose le champ uniforme."
+   ],
+   "image_mentale": "Une particule avance horizontalement tout en étant accélérée verticalement.",
+   "regle_ou_methode": "Vérifie que le poids est négligeable devant qE, calcule a = qE/m puis remplace dans les équations horaires avec les signes et unités choisis.",
+   "exemples": [
+    "Pour une gouttelette chargée q = 1,0 × 10⁻¹⁶ C, m = 1,0 × 10⁻¹⁵ kg, dans E = 2,0 × 10⁴ V·m⁻¹ : F = 2,0 × 10⁻¹² N, environ 200 fois son poids (≈ 1,0 × 10⁻¹⁴ N), donc le poids est négligeable. a = qE/m = 2,0 × 10³ m·s⁻². Avec v₀ = 100 m·s⁻¹, après 1,0 ms : x = 0,10 m et y = 2,0 × 10³ × (1,0 × 10⁻³)²/2 = 1,0 × 10⁻³ m, soit 1 mm.",
+    "À champ et masse identiques, une charge opposée entraîne une déviation de sens opposé."
+   ],
+   "piege": "Le sens de la force dépend du signe de la charge ; l’égalité vectorielle ne doit pas être traitée uniquement avec des valeurs positives.",
+   "astuce_memoire": "Force électrique : charge fois champ.",
+   "quiz": [
+    {
+     "q": "Si q est négative, la force est orientée ?",
+     "choix": [
+      "Dans le même sens que le champ",
+      "À l’opposé du champ",
+      "Toujours horizontalement"
+     ],
+     "rep": "À l’opposé du champ",
+     "expl": "F = qE inverse le sens quand q est négative."
+    },
+    {
+     "q": "Avec a = 2,0 × 10³ m·s⁻² et une vitesse verticale initiale nulle, quel déplacement vertical après 1,0 ms ?",
+     "choix": [
+      "2,0 mm",
+      "1,0 mm",
+      "0,50 mm"
+     ],
+     "rep": "1,0 mm",
+     "expl": "y = at²/2 = 2,0 × 10³ × (1,0 × 10⁻³)²/2 = 1,0 × 10⁻³ m."
+    },
+    {
+     "q": "Quel modèle permet x = v₀t ici ?",
+     "choix": [
+      "Champ vertical et absence d’autre force horizontale",
+      "Champ horizontal quelconque",
+      "Absence de vitesse initiale horizontale"
+     ],
+     "rep": "Champ vertical et absence d’autre force horizontale",
+     "expl": "La vitesse horizontale reste constante dans les hypothèses données."
+    }
+   ],
+   "id": "REV-PC-TLE-91"
+  },
+  {
+   "axe": "L’énergie : conversions et transferts",
+   "titre": "Bilan thermique et changement d’état",
+   "emoji": "🌡️",
+   "en_une_phrase": "L’énergie thermique reçue peut modifier la température ou provoquer un changement d’état.",
+   "comprendre": "Pour un système incompressible sans changement d’état et de capacité thermique massique constante, l’énergie nécessaire dépend de la masse et de la variation de température. Pendant un changement d’état à température constante, une énergie massique de changement d’état intervient.",
+   "essentiel": [
+    "Sans changement d’état, ΔU = mcΔT dans le modèle étudié.",
+    "Si le seul transfert d’énergie est thermique, Q reçu = mcΔT.",
+    "Pour un changement d’état complet, Q = mL si le seul transfert est thermique et L est l’énergie massique algébrique correspondante.",
+    "m est en kg, c en J·kg⁻¹·K⁻¹ et L en J·kg⁻¹."
+   ],
+   "image_mentale": "L’énergie reçue peut chauffer une matière ou servir à changer son état.",
+   "regle_ou_methode": "Découpe les étapes : calcule mcΔT pour chauffer, puis mL pour le changement d’état et additionne.",
+   "exemples": [
+    "Pour 0,5 kg d’un liquide de capacité thermique massique c = 4 000 J·kg⁻¹·K⁻¹ et ΔT = 2 K, sans autre transfert : Q = 0,5 × 4 000 × 2 = 4 000 J.",
+    "Pour faire fondre complètement 0,1 kg d’une matière avec L = 300 000 J·kg⁻¹, sans autre transfert, Q = 30 000 J."
+   ],
+   "piege": "Pendant un changement d’état à température constante, une énergie peut être reçue même si ΔT = 0.",
+   "astuce_memoire": "Chauffer : mcΔT ; changer d’état : mL.",
+   "quiz": [
+    {
+     "q": "Pour m = 0,5 kg, c = 4 000 J·kg⁻¹·K⁻¹ et ΔT = 2 K sans autre transfert, quelle énergie reçue ?",
+     "choix": [
+      "1 000 J",
+      "8 000 J",
+      "4 000 J"
+     ],
+     "rep": "4 000 J",
+     "expl": "Q = 0,5 × 4 000 × 2."
+    },
+    {
+     "q": "Pour fondre 0,1 kg avec L = 300 000 J·kg⁻¹ sans autre transfert, quelle énergie ?",
+     "choix": [
+      "30 000 J",
+      "3 000 J",
+      "300 000 J"
+     ],
+     "rep": "30 000 J",
+     "expl": "Q = mL = 0,1 × 300 000."
+    },
+    {
+     "q": "Pendant une fusion à température constante, l’énergie reçue est-elle nécessairement nulle ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Seulement si la masse est positive"
+     ],
+     "rep": "Non",
+     "expl": "Le changement d’état peut absorber une énergie sans variation de température."
+    }
+   ],
+   "id": "REV-PC-TLE-92"
+  },
+  {
+   "axe": "Ondes et signaux",
+   "titre": "Doppler et décalage spectral",
+   "emoji": "🌈",
+   "en_une_phrase": "Le mouvement relatif d’un astre provoque un décalage de ses raies spectrales.",
+   "comprendre": "Une raie de référence a une longueur d’onde connue au repos. À faible vitesse radiale devant celle de la lumière, le décalage relatif donne une approximation de cette vitesse.",
+   "essentiel": [
+    "Pour une vitesse radiale v positive à l’éloignement : Δλ/λ₀ ≈ v/c.",
+    "λ₀ est la longueur d’onde de référence et Δλ = λ observée − λ₀.",
+    "Un décalage vers les grandes longueurs d’onde indique ici un éloignement.",
+    "La formule est une approximation valable si |v| est très inférieur à c."
+   ],
+   "image_mentale": "Les raies d’un spectre se déplacent par rapport à une règle de référence.",
+   "regle_ou_methode": "Calcule Δλ puis le rapport Δλ/λ₀ et multiplie par la célérité c.",
+   "exemples": [
+    "Une raie de référence à 500 nm est observée à 500,5 nm : Δλ/λ₀ = 0,5/500 = 0,001. Avec c = 300 000 km·s⁻¹, v ≈ 300 km·s⁻¹, à l’éloignement.",
+    "Une raie observée à une longueur d’onde plus courte peut indiquer, dans ce modèle, un rapprochement."
+   ],
+   "piege": "La formule donnée utilise la longueur d’onde et une convention de signe : une autre convention doit être précisée.",
+   "astuce_memoire": "Rouge : longueur d’onde plus grande, éloignement dans ce modèle.",
+   "quiz": [
+    {
+     "q": "Si λ₀ = 500 nm et λ observée = 500,5 nm, quel est le décalage relatif ?",
+     "choix": [
+      "0,001",
+      "0,1",
+      "1"
+     ],
+     "rep": "0,001",
+     "expl": "0,5/500 = 0,001."
+    },
+    {
+     "q": "Une raie décalée vers une longueur d’onde plus grande indique ici ?",
+     "choix": [
+      "Un rapprochement",
+      "Un éloignement",
+      "Une vitesse nécessairement nulle"
+     ],
+     "rep": "Un éloignement",
+     "expl": "Le décalage vers le rouge correspond à une vitesse radiale positive."
+    },
+    {
+     "q": "Quand peut-on utiliser l’approximation indiquée ?",
+     "choix": [
+      "Si la vitesse est égale à c",
+      "Quelle que soit la vitesse sans condition",
+      "Si la vitesse radiale est très inférieure à c"
+     ],
+     "rep": "Si la vitesse radiale est très inférieure à c",
+     "expl": "L’approximation est non relativiste."
+    }
+   ],
+   "id": "REV-PC-TLE-93"
+  }
+ ]
+}

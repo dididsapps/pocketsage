@@ -1,0 +1,172 @@
+{
+ "classe": "TLE",
+ "niveau_appli": "Lycée",
+ "age": "17-18 ans",
+ "matiere": "SES (spécialité)",
+ "code": "SES",
+ "langue": "fr",
+ "fiches": [
+  {
+   "axe": "Science économique",
+   "titre": "Firmes multinationales et production",
+   "emoji": "🌐",
+   "en_une_phrase": "Une firme multinationale organise une partie de sa production dans plusieurs pays.",
+   "comprendre": "Une entreprise peut répartir conception, fabrication et assemblage entre plusieurs territoires. Ses choix dépendent notamment des coûts, des compétences, des marchés et des risques.",
+   "essentiel": [
+    "Une firme multinationale contrôle au moins une filiale à l’étranger.",
+    "La chaîne de valeur rassemble les étapes qui contribuent à la production.",
+    "La fragmentation internationale répartit certaines étapes entre pays.",
+    "Les choix d’implantation dépendent de plusieurs critères."
+   ],
+   "image_mentale": "Une carte relie conception, fabrication, assemblage et vente.",
+   "regle_ou_methode": "Repère les étapes, leur localisation et la raison possible de chaque implantation.",
+   "exemples": [
+    "Une entreprise fictive conçoit un appareil dans le pays A, fabrique une pièce dans le pays B et contrôle une filiale d’assemblage dans le pays C : sa chaîne de valeur est internationalisée.",
+    "Une entreprise peut ouvrir une filiale près d’un marché pour mieux servir ses clients."
+   ],
+   "piege": "Exporter ne suffit pas à définir une firme multinationale : il faut notamment contrôler une filiale à l’étranger.",
+   "astuce_memoire": "Une firme, plusieurs implantations contrôlées.",
+   "quiz": [
+    {
+     "q": "Qu’est-ce qui caractérise notamment une firme multinationale ?",
+     "choix": [
+      "Le contrôle d’au moins une filiale à l’étranger",
+      "La vente sur un seul marché local",
+      "L’absence de toute activité de production"
+     ],
+     "rep": "Le contrôle d’au moins une filiale à l’étranger",
+     "expl": "Elle possède une implantation contrôlée à l’étranger."
+    },
+    {
+     "q": "La chaîne de valeur désigne ?",
+     "choix": [
+      "Uniquement le prix payé en caisse",
+      "Les étapes qui contribuent à produire un bien ou service",
+      "Une monnaie unique"
+     ],
+     "rep": "Les étapes qui contribuent à produire un bien ou service",
+     "expl": "Elle comprend plusieurs activités de production et de commercialisation."
+    },
+    {
+     "q": "Exporter depuis un seul pays prouve-t-il à lui seul qu’une firme est multinationale ?",
+     "choix": [
+      "Oui, toujours",
+      "Seulement pour un petit produit",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "L’exportation seule ne prouve pas le contrôle d’une filiale étrangère."
+    }
+   ],
+   "id": "REV-SES-TLE-90"
+  },
+  {
+   "axe": "Objectifs d’apprentissage concernant l’utilisation des données quantitatives et des représentations graphiques",
+   "titre": "Taux de croissance annuel moyen",
+   "emoji": "📈",
+   "en_une_phrase": "Le taux annuel moyen donne le taux constant qui reproduirait une évolution sur plusieurs années.",
+   "comprendre": "Lorsque des valeurs évoluent sur plusieurs périodes, leurs coefficients multiplicateurs se multiplient. Le taux annuel moyen est donc géométrique et dépend du nombre d’intervalles de temps.",
+   "essentiel": [
+    "Coefficient global = valeur finale / valeur initiale positive.",
+    "Pour n années, coefficient annuel moyen = (valeur finale / valeur initiale)^(1/n).",
+    "Le taux annuel moyen vaut ce coefficient moins 1.",
+    "Le calcul suppose des valeurs initiale et finale strictement positives."
+   ],
+   "image_mentale": "Un même multiplicateur est appliqué à chaque marche de temps.",
+   "regle_ou_methode": "Calcule le rapport final sur initial, prends la racine d’ordre n puis retire 1.",
+   "exemples": [
+    "Une production passe de 100 à 121 en deux ans : 121/100 = 1,21 ; la racine carrée vaut 1,10 ; le taux annuel moyen est 10 %.",
+    "De 100 à 81 en deux ans : √0,81 = 0,90 ; le taux annuel moyen est −10 %."
+   ],
+   "piege": "Le nombre d’années est le nombre d’intervalles, pas le nombre de dates.",
+   "astuce_memoire": "Rapport, racine, moins un.",
+   "quiz": [
+    {
+     "q": "De 100 à 121 en deux ans, quel taux annuel moyen ?",
+     "choix": [
+      "+10,5 %",
+      "+10 %",
+      "+21 %"
+     ],
+     "rep": "+10 %",
+     "expl": "1,10 multiplié par lui-même donne 1,21."
+    },
+    {
+     "q": "De 2020 à 2022, combien y a-t-il d’intervalles annuels ?",
+     "choix": [
+      "3",
+      "1",
+      "2"
+     ],
+     "rep": "2",
+     "expl": "Les intervalles sont 2020–2021 et 2021–2022."
+    },
+    {
+     "q": "De 100 à 81 en deux ans, quel taux annuel moyen ?",
+     "choix": [
+      "−10 %",
+      "−9,5 %",
+      "−19 %"
+     ],
+     "rep": "−10 %",
+     "expl": "0,90² = 0,81."
+    }
+   ],
+   "id": "REV-SES-TLE-91"
+  },
+  {
+   "axe": "Regards croisés",
+   "titre": "Patrimoine, héritage et inégalités",
+   "emoji": "🏠",
+   "en_une_phrase": "La transmission peut contribuer à la persistance des inégalités de patrimoine entre générations.",
+   "comprendre": "Le patrimoine est un stock de biens et d’actifs, diminué des dettes si l’on considère le patrimoine net. Les héritages et donations s’ajoutent aux ressources accumulées, mais leur montant et leur moment varient.",
+   "essentiel": [
+    "Une donation intervient du vivant du donateur ; l’héritage est transmis après un décès.",
+    "Les montants transmis sont inégalement répartis.",
+    "Revenus, épargne, prix des actifs et dettes influencent aussi le patrimoine.",
+    "Les politiques fiscales et les règles successorales influent sur les transmissions."
+   ],
+   "image_mentale": "Des ressources accumulées peuvent être transmises d’une génération à l’autre.",
+   "regle_ou_methode": "Distingue stock de patrimoine, montant transmis et éventuelles dettes.",
+   "exemples": [
+    "Une personne possède 80 000 € d’actifs et 20 000 € de dettes : son patrimoine net est 60 000 €. Si elle reçoit ensuite une donation nette de 10 000 € et que rien d’autre ne change, il passe à 70 000 €.",
+    "Deux personnes recevant des transmissions très différentes peuvent disposer de ressources initiales inégales pour acquérir un logement."
+   ],
+   "piege": "L’héritage n’est pas la seule cause des écarts de patrimoine.",
+   "astuce_memoire": "Patrimoine : actifs moins dettes ; transmission : changement de propriétaire.",
+   "quiz": [
+    {
+     "q": "Avec 80 000 € d’actifs et 20 000 € de dettes, quel patrimoine net ?",
+     "choix": [
+      "100 000 €",
+      "80 000 €",
+      "60 000 €"
+     ],
+     "rep": "60 000 €",
+     "expl": "On soustrait les dettes aux actifs."
+    },
+    {
+     "q": "Une donation a lieu ?",
+     "choix": [
+      "Du vivant du donateur",
+      "Uniquement après le décès",
+      "Uniquement sous forme de salaire"
+     ],
+     "rep": "Du vivant du donateur",
+     "expl": "Une donation est une transmission du vivant."
+    },
+    {
+     "q": "La transmission est-elle la seule source d’inégalités de patrimoine ?",
+     "choix": [
+      "Oui, toujours",
+      "Non",
+      "Seulement pour les locataires"
+     ],
+     "rep": "Non",
+     "expl": "Épargne, revenus, dettes et prix des actifs comptent aussi."
+    }
+   ],
+   "id": "REV-SES-TLE-92"
+  }
+ ]
+}
