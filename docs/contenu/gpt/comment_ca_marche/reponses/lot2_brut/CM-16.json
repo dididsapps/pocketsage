@@ -1,0 +1,563 @@
+{
+  "id": "CM-16",
+  "titre": "Lire une étiquette alimentaire",
+  "public": "ado-adulte",
+  "lecons": [
+    {
+      "titre": "Retourner le paquet pour retrouver les faits",
+      "accroche": "La grande image attire l’œil ; les petites lignes décrivent le produit.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Lire la dénomination",
+          "texte": "La dénomination de vente indique la nature du produit. Elle peut préciser préparation, boisson ou dessert alors que le grand nom de fantaisie reste vague. Les deux ne donnent pas la même information.",
+          "schema": ""
+        },
+        {
+          "titre": "La quantité réellement vendue",
+          "texte": "La quantité nette indique combien contient le paquet, en masse ou en volume. Si un aliment baigne dans un liquide, un poids net égoutté peut préciser ce qui reste une fois ce liquide retiré.",
+          "schema": ""
+        },
+        {
+          "titre": "Un dessin n’est pas une recette",
+          "texte": "Un fruit dessiné sur l’avant ne suffit pas à connaître sa proportion dans le produit. La liste des ingrédients et les pourcentages concernés donnent des informations plus précises.",
+          "schema": ""
+        },
+        {
+          "titre": "Une carte de lecture",
+          "texte": "Comme une carte avec plusieurs légendes, l’emballage rassemble des informations différentes : identité du produit, composition, quantité et conservation. Aucun slogan ne remplace à lui seul ces repères.",
+          "schema": "Boîte fictive de face puis retournée ; zones numérotées dénomination, quantité, ingrédients, conservation. Couleurs bleu, violet, orange, vert avec mots associés."
+        }
+      ],
+      "dans_ta_vie": "Tu peux chercher les informations utiles au lieu de déduire la composition de l’image principale.",
+      "securite": "Lecture générale des étiquettes, sans régime, objectif de poids ou conseil médical personnalisé. Les exemples chiffrés sont fictifs. Aucun exercice ne demande de goûter un aliment, tester une allergie ou consommer un produit douteux. Une allergie connue se gère avec les consignes d’un professionnel de santé.",
+      "defi": "Pendant quatre minutes, dessine une boîte fictive sans marque. Place un nom de fantaisie, une dénomination précise, une quantité et les zones à lire. Explique quelle information la grande illustration ne suffit pas à établir.",
+      "quiz": [
+        {
+          "q": "Quel élément décrit la nature du produit ?",
+          "choix": [
+            "Seulement le dessin principal",
+            "La dénomination de vente",
+            "Uniquement la couleur du paquet"
+          ],
+          "rep": "La dénomination de vente",
+          "expl": "Elle précise ce que le produit est."
+        },
+        {
+          "q": "Que peut préciser le poids net égoutté ?",
+          "choix": [
+            "La masse de la boîte vide",
+            "La quantité de sucre ajoutée",
+            "La masse de l’aliment après retrait du liquide de couverture"
+          ],
+          "rep": "La masse de l’aliment après retrait du liquide de couverture",
+          "expl": "Il distingue le contenu solide du liquide qui l’accompagne."
+        },
+        {
+          "q": "Un fruit dessiné suffit-il à connaître sa proportion ?",
+          "choix": [
+            "Non",
+            "Oui, selon sa taille dans le dessin",
+            "Oui, s’il est photographié"
+          ],
+          "rep": "Non",
+          "expl": "Il faut regarder les informations de composition."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-16-01"
+    },
+    {
+      "titre": "La liste raconte la recette dans l’ordre",
+      "accroche": "Le premier ingrédient n’est pas forcément celui que le devant met en scène.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Un ordre de poids",
+          "texte": "Les ingrédients sont en principe classés du plus au moins lourd au moment de leur utilisation en fabrication, avec des règles particulières. Le premier n’est donc pas forcément celui qui donne son nom au produit.",
+          "schema": ""
+        },
+        {
+          "titre": "Un pourcentage utile",
+          "texte": "Certains ingrédients mis en avant doivent avoir leur proportion indiquée. Exemple fictif : fraises 8 % signifie 8 g de fraises pour 100 g de préparation, selon la base d’étiquetage applicable.",
+          "schema": "Recette fictive de 100 g : segment de 8 g étiqueté fraises, reste 92 g autres ingrédients. Pas de fruit géant en proportion trompeuse."
+        },
+        {
+          "titre": "Ingrédient et composant nutritionnel",
+          "texte": "Un ingrédient entre dans la recette, comme la farine. Il apporte plusieurs composants nutritionnels. Les protéines, par exemple, participent à la construction et au renouvellement du corps : recette et tableau ne décrivent pas le même niveau.",
+          "schema": ""
+        },
+        {
+          "titre": "Le rôle d’un additif",
+          "texte": "Un additif est ajouté pour une fonction technique, comme conserver ou épaissir. L’étiquette indique sa catégorie puis son nom ou un code E ; le code sert à l’identifier.",
+          "schema": ""
+        },
+        {
+          "titre": "Un code n’est pas un verdict",
+          "texte": "Les additifs autorisés ont des conditions d’emploi et sont évalués. La seule présence d’un code E ne permet pas de conclure qu’un aliment est dangereux ou adapté à chaque personne.",
+          "schema": "Liste de recette en haut ; loupe sur fonction et identification d’un additif. Deux conclusions automatiques dangereux et convient à tous sont barrées."
+        }
+      ],
+      "dans_ta_vie": "Tu peux distinguer une recette, une proportion d’ingrédient et une information nutritionnelle.",
+      "securite": "Lecture générale des étiquettes, sans régime, objectif de poids ou conseil médical personnalisé. Les exemples chiffrés sont fictifs. Aucun exercice ne demande de goûter un aliment, tester une allergie ou consommer un produit douteux. Une allergie connue se gère avec les consignes d’un professionnel de santé.",
+      "defi": "Pendant quatre minutes, écris une recette fictive par poids décroissant et représente 8 g de fruit dans 100 g. Sépare ingrédients et composants nutritionnels sans inventer une note de santé ni choisir de produit à acheter.",
+      "quiz": [
+        {
+          "q": "Dans la liste, quel ordre est en principe utilisé ?",
+          "choix": [
+            "L’ordre alphabétique uniquement",
+            "La préférence du lecteur",
+            "Le poids au moment de l’utilisation en fabrication"
+          ],
+          "rep": "Le poids au moment de l’utilisation en fabrication",
+          "expl": "Des règles particulières existent, mais le classement repose en principe sur le poids."
+        },
+        {
+          "q": "Dans l’exemple de 100 g, fraises 8 % correspond à quoi ?",
+          "choix": [
+            "8 g de fraises",
+            "80 g de fraises",
+            "8 g de sucres obligatoirement"
+          ],
+          "rep": "8 g de fraises",
+          "expl": "Le pourcentage concerne l’ingrédient indiqué, pas automatiquement ses sucres."
+        },
+        {
+          "q": "Un code E sert d’abord à quoi ?",
+          "choix": [
+            "Garantir l’absence de toute allergie",
+            "Identifier un additif",
+            "Donner le pays d’origine"
+          ],
+          "rep": "Identifier un additif",
+          "expl": "La fonction et les conditions ne se déduisent pas d’un jugement global sur le code."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-16-02"
+    },
+    {
+      "titre": "Allergènes : le gras typographique compte",
+      "accroche": "Une information discrète peut être plus importante qu’un grand slogan.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Les allergènes signalés",
+          "texte": "Un allergène peut déclencher une réaction allergique. Ceux soumis à déclaration obligatoire sont mis en évidence dans la liste, par exemple en gras. Lait, œuf et arachide font partie des catégories concernées.",
+          "schema": ""
+        },
+        {
+          "titre": "Peut contenir ne mesure pas une quantité",
+          "texte": "Une mention de traces possibles signale un risque de présence involontaire, par exemple lors de la fabrication. Elle ne donne pas une dose certaine ni un seuil de sécurité pour une personne allergique.",
+          "schema": ""
+        },
+        {
+          "titre": "La recette peut changer",
+          "texte": "Un produit déjà connu peut avoir une nouvelle recette ou une étiquette modifiée. Pour une allergie, l’habitude ou la couleur du paquet ne remplace pas la lecture des informations actualisées.",
+          "schema": ""
+        },
+        {
+          "titre": "Ne pas tester pour vérifier",
+          "texte": "Une absence de réaction passée ne permet pas d’improviser un essai avec une petite bouchée. En cas d’allergie connue, suis les consignes médicales adaptées et demande une précision si l’étiquetage laisse un doute.",
+          "schema": "Liste fictive avec LAIT et ŒUF mis en gras ; mention traces dans un encadré séparé. Flèche doute vers demande d’information, jamais vers dégustation d’essai."
+        }
+      ],
+      "dans_ta_vie": "Tu peux repérer une information d’allergène sans la transformer en diagnostic ou en autorisation de goûter.",
+      "securite": "Lecture générale des étiquettes, sans régime, objectif de poids ou conseil médical personnalisé. Les exemples chiffrés sont fictifs. Aucun exercice ne demande de goûter un aliment, tester une allergie ou consommer un produit douteux. Une allergie connue se gère avec les consignes d’un professionnel de santé. Une gêne respiratoire ou un malaise grave après exposition peut être une urgence : en France, appelle le 15 ou le 112 et suis les consignes. Aucun appel d’essai.",
+      "defi": "Pendant quatre minutes, dessine une étiquette fictive avec deux allergènes mis en évidence et une mention de présence possible. Explique la différence entre ingrédient déclaré et trace possible, sans aliment réel à manipuler.",
+      "quiz": [
+        {
+          "q": "Pourquoi certains mots de la liste sont-ils mis en évidence ?",
+          "choix": [
+            "Pour signaler des allergènes à déclaration obligatoire",
+            "Pour indiquer forcément le plus grand poids",
+            "Pour donner une note nutritionnelle"
+          ],
+          "rep": "Pour signaler des allergènes à déclaration obligatoire",
+          "expl": "La mise en évidence aide à repérer ces ingrédients."
+        },
+        {
+          "q": "Peut contenir donne-t-il une dose sûre pour une personne allergique ?",
+          "choix": [
+            "Oui, toujours une très petite dose sans risque",
+            "Non",
+            "Oui, si le mot traces est présent"
+          ],
+          "rep": "Non",
+          "expl": "La mention ne fournit pas une garantie individuelle de sécurité."
+        },
+        {
+          "q": "Une ancienne recette connue dispense-t-elle de relire ?",
+          "choix": [
+            "Oui, définitivement",
+            "Oui, si la couleur du paquet ne change pas",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Les formulations et informations peuvent évoluer."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-16-03"
+    },
+    {
+      "titre": "Jusqu’au ou de préférence avant : deux dates différentes",
+      "accroche": "Un mot change le sens de la date.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "La date limite de consommation",
+          "texte": "À consommer jusqu’au indique une date limite de consommation, ou DLC. Elle concerne des aliments très périssables ; il ne faut pas les consommer après cette limite.",
+          "schema": ""
+        },
+        {
+          "titre": "La date de durabilité minimale",
+          "texte": "À consommer de préférence avant indique une date de durabilité minimale, ou DDM. Après, certaines qualités peuvent diminuer sans que le produit soit automatiquement dangereux, si l’emballage est intact et les conditions respectées.",
+          "schema": ""
+        },
+        {
+          "titre": "Une conservation indispensable",
+          "texte": "La date suppose les conditions indiquées sur l’emballage. Un aliment resté trop chaud ne devient pas sûr parce que sa date est encore loin. L’aspect ou l’odeur ne garantissent pas non plus l’absence de danger.",
+          "schema": ""
+        },
+        {
+          "titre": "L’ouverture change le cadre",
+          "texte": "Après ouverture, suis les indications de durée et de conservation spécifiques ; la date du paquet fermé ne suffit plus. Un emballage gonflé, altéré ou un produit douteux ne se teste pas en goûtant.",
+          "schema": "Deux lignes de temps : paquet fermé avec date, puis ouverture avec durée propre. À côté, DLC et DDM distinguées par mots, sans code couleur seul."
+        }
+      ],
+      "dans_ta_vie": "Tu peux distinguer une limite de sécurité et un repère de qualité, avec leurs conditions de conservation.",
+      "securite": "Lecture générale des étiquettes, sans régime, objectif de poids ou conseil médical personnalisé. Les exemples chiffrés sont fictifs. Aucun exercice ne demande de goûter un aliment, tester une allergie ou consommer un produit douteux. Une allergie connue se gère avec les consignes d’un professionnel de santé.",
+      "defi": "Pendant quatre minutes, classe des étiquettes inventées selon jusqu’au ou de préférence avant. Ajoute l’événement ouverture et une condition de conservation. Utilise uniquement du papier, sans rechercher un aliment périmé.",
+      "quiz": [
+        {
+          "q": "Quelle mention correspond à une DLC ?",
+          "choix": [
+            "À consommer de préférence avant",
+            "À consommer jusqu’au",
+            "À servir de préférence frais"
+          ],
+          "rep": "À consommer jusqu’au",
+          "expl": "La formulation indique une limite de consommation."
+        },
+        {
+          "q": "Une DDM dépassée signifie-t-elle automatiquement aliment dangereux ?",
+          "choix": [
+            "Oui, sans exception",
+            "Non, donc toute conservation est acceptable",
+            "Non, il faut tenir compte du produit, de l’emballage et de la conservation"
+          ],
+          "rep": "Non, il faut tenir compte du produit, de l’emballage et de la conservation",
+          "expl": "La DDM ne se lit pas comme une DLC et n’annule pas les autres précautions."
+        },
+        {
+          "q": "Après ouverture, quelle information devient essentielle ?",
+          "choix": [
+            "La durée et les conditions après ouverture",
+            "Seulement la grande image",
+            "Uniquement la date du paquet fermé"
+          ],
+          "rep": "La durée et les conditions après ouverture",
+          "expl": "L’ouverture modifie les conditions d’utilisation."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-16-04"
+    },
+    {
+      "titre": "Pour 100 g ou pour ta portion : changer la règle de mesure",
+      "accroche": "Deux colonnes peuvent décrire le même aliment à deux échelles.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "La base commune",
+          "texte": "Les valeurs pour 100 g ou 100 ml servent de règle commune pour comparer. Vérifie aussi si l’étiquette parle du produit vendu ou préparé : ajouter de l’eau ou d’autres ingrédients peut changer la base.",
+          "schema": ""
+        },
+        {
+          "titre": "La portion est une quantité",
+          "texte": "Une portion affichée est une quantité indiquée par le fabricant, pas une prescription personnelle. Exemple fictif : 20 g de glucides pour 100 g deviennent 10 g pour une portion de 50 g.",
+          "schema": "Même produit en bloc 100 g puis moitié 50 g ; quantité de glucides passe de 20 à 10 g. Ne dessiner aucune silhouette ni objectif de poids."
+        },
+        {
+          "titre": "Glucides, dont sucres",
+          "texte": "Les glucides regroupent notamment les sucres et l’amidon, présent dans la farine. Dont sucres en décrit une partie : 30 g de glucides dont 10 g de sucres ne font pas 40 g.",
+          "schema": ""
+        },
+        {
+          "titre": "Matières grasses, dont saturés",
+          "texte": "Les lipides sont les matières grasses. La ligne dont acides gras saturés en décrit une partie. Là aussi, il ne faut pas additionner le total et sa sous-partie.",
+          "schema": "Grand rectangle matières grasses contenant un petit rectangle saturés ; même représentation pour glucides contenant sucres. Flèche addition des deux niveaux barrée."
+        },
+        {
+          "titre": "Une énergie, deux unités",
+          "texte": "Kilojoules, notés kJ, et kilocalories, notées kcal, expriment l’énergie dans deux unités. Ce sont deux écritures d’une même information : on ne les additionne pas.",
+          "schema": ""
+        },
+        {
+          "titre": "Du sodium au sel",
+          "texte": "La ligne sel correspond à une équivalence calculée à partir du sodium total. Une partie peut venir naturellement des ingrédients ; la quantité indiquée ne mesure donc pas uniquement le sel ajouté en cuisine.",
+          "schema": ""
+        }
+      ],
+      "dans_ta_vie": "Tu peux comparer sur une base commune et comprendre une portion sans doubler les sous-catégories.",
+      "securite": "Lecture générale des étiquettes, sans régime, objectif de poids ou conseil médical personnalisé. Les exemples chiffrés sont fictifs. Aucun exercice ne demande de goûter un aliment, tester une allergie ou consommer un produit douteux. Une allergie connue se gère avec les consignes d’un professionnel de santé. Le défi apprend à lire des unités, pas à compter ses calories ou limiter ses repas. Une étiquette ne définit pas à elle seule les besoins d’un adolescent ou d’un adulte.",
+      "defi": "Pendant quatre minutes, trace un tableau fictif pour 100 g puis 50 g. Divise une valeur par deux et encadre une sous-partie dont sucres sans l’ajouter au total. Aucun suivi de tes repas n’est demandé.",
+      "quiz": [
+        {
+          "q": "20 g de glucides pour 100 g correspondent à combien dans 50 g du même produit ?",
+          "choix": [
+            "40 g",
+            "20 g obligatoirement",
+            "10 g"
+          ],
+          "rep": "10 g",
+          "expl": "La portion représente ici la moitié de la base."
+        },
+        {
+          "q": "30 g de glucides dont 10 g de sucres font quel total de glucides ?",
+          "choix": [
+            "30 g",
+            "40 g",
+            "20 g"
+          ],
+          "rep": "30 g",
+          "expl": "Les sucres sont déjà inclus dans le total."
+        },
+        {
+          "q": "Faut-il additionner kJ et kcal ?",
+          "choix": [
+            "Oui, pour obtenir l’énergie totale",
+            "Non, ce sont deux unités de la même énergie",
+            "Oui, si les deux nombres sont différents"
+          ],
+          "rep": "Non, ce sont deux unités de la même énergie",
+          "expl": "Comme deux unités de longueur, elles ne s’ajoutent pas pour décrire une seule mesure."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-16-05"
+    },
+    {
+      "titre": "Sans, allégé, riche : lire le complément",
+      "accroche": "Un mot valorisant décrit un point précis, pas toute la composition.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Sans sucres ajoutés",
+          "texte": "Sans sucres ajoutés ne signifie pas absence de sucres. Des sucres peuvent être naturellement présents dans les ingrédients ; la ligne dont sucres reste utile pour connaître la teneur totale déclarée.",
+          "schema": ""
+        },
+        {
+          "titre": "Allégé en quoi ?",
+          "texte": "Allégé signale une réduction selon des conditions encadrées et un produit de comparaison. Il faut lire en quoi le produit est allégé ; cela ne signifie pas forcément faible en énergie, en sel et en sucres ensemble.",
+          "schema": ""
+        },
+        {
+          "titre": "Riche n’est pas une promesse globale",
+          "texte": "Une mention comme riche en protéines doit respecter des critères réglementaires. Elle ne garantit ni résultat sportif ni alimentation équilibrée à elle seule ; le reste du tableau et le contexte comptent.",
+          "schema": ""
+        },
+        {
+          "titre": "Bio décrit un mode de production",
+          "texte": "La mention biologique correspond à un mode de production encadré. Elle ne garantit pas à elle seule une faible teneur en sucre, l’absence d’allergène ou une adéquation à chaque personne.",
+          "schema": "Quatre étiquettes fictives sans sucres ajoutés, allégé en, riche en, bio. Chacune pointe vers la question précise correspondante ; aucun bouclier santé globale."
+        }
+      ],
+      "dans_ta_vie": "Tu peux transformer un slogan en question précise plutôt qu’en jugement sur tout l’aliment.",
+      "securite": "Lecture générale des étiquettes, sans régime, objectif de poids ou conseil médical personnalisé. Les exemples chiffrés sont fictifs. Aucun exercice ne demande de goûter un aliment, tester une allergie ou consommer un produit douteux. Une allergie connue se gère avec les consignes d’un professionnel de santé.",
+      "defi": "Pendant quatre minutes, invente deux faces d’emballage avec des mentions différentes. Pour chaque mention, écris ce qu’elle indique et une information qu’elle ne donne pas. Ne formule pas de promesse de guérison ou de perte de poids.",
+      "quiz": [
+        {
+          "q": "Sans sucres ajoutés signifie-t-il forcément zéro sucre ?",
+          "choix": [
+            "Non",
+            "Oui",
+            "Oui, dans tous les fruits préparés"
+          ],
+          "rep": "Non",
+          "expl": "Les ingrédients peuvent apporter naturellement des sucres."
+        },
+        {
+          "q": "Que faut-il demander devant allégé ?",
+          "choix": [
+            "Quelle couleur choisir ?",
+            "Allégé en quoi et par rapport à quelle référence ?",
+            "Pourquoi tout le reste serait-il parfait ?"
+          ],
+          "rep": "Allégé en quoi et par rapport à quelle référence ?",
+          "expl": "La réduction porte sur un critère précis."
+        },
+        {
+          "q": "Bio garantit-il l’absence d’allergène ?",
+          "choix": [
+            "Oui, automatiquement",
+            "Oui, avec un emballage vert",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Le mode de production et la présence d’allergènes sont des informations différentes."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-16-06"
+    },
+    {
+      "titre": "Le Nutri-Score est un repère, pas un passeport universel",
+      "accroche": "La lettre résume une partie des informations, sans remplacer toute l’étiquette.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Une échelle lisible",
+          "texte": "Le Nutri-Score associe cinq lettres et couleurs, de A à E, pour résumer la qualité nutritionnelle calculée. Il est volontaire sur les emballages en France ; son absence n’est pas une note E.",
+          "schema": ""
+        },
+        {
+          "titre": "Ce qui entre dans le calcul",
+          "texte": "La méthode examine pour 100 g ou 100 ml des éléments comme énergie, sucres, sel, graisses saturées, fibres et protéines, selon les règles de la catégorie. Ce n’est pas un jugement sur une personne.",
+          "schema": ""
+        },
+        {
+          "titre": "Comparer ce qui se remplace",
+          "texte": "Le repère aide notamment à comparer des produits de même catégorie ou de même usage. Il ne fixe pas à lui seul une portion, une fréquence ou la composition de tous les repas.",
+          "schema": ""
+        },
+        {
+          "titre": "Une lettre ne répond pas à tout",
+          "texte": "Le Nutri-Score ne dit pas si un aliment convient à une allergie, si sa chaîne du froid a été respectée ou s’il est concerné par un rappel. Ces vérifications restent distinctes.",
+          "schema": ""
+        },
+        {
+          "titre": "Un calcul a évolué",
+          "texte": "Une nouvelle méthode est appliquée en France depuis 2025 avec une transition de deux ans. Durant cette période, anciens et nouveaux calculs peuvent coexister ; une lettre différente ne prouve donc pas forcément une recette différente.",
+          "schema": "Échelle A à E avec lettres lisibles et couleurs du vert foncé à l’orange foncé. Deux emballages fictifs sans marque portent méthode ancienne et nouveau calcul ; aucune lettre attribuée sans calcul."
+        }
+      ],
+      "dans_ta_vie": "Tu peux utiliser ce résumé sans lui faire répondre à des questions qu’il ne mesure pas.",
+      "securite": "Lecture générale des étiquettes, sans régime, objectif de poids ou conseil médical personnalisé. Les exemples chiffrés sont fictifs. Aucun exercice ne demande de goûter un aliment, tester une allergie ou consommer un produit douteux. Une allergie connue se gère avec les consignes d’un professionnel de santé. Repère daté au 23 novembre 2026 pour la transition du Nutri-Score. Aucune note ne constitue une autorisation médicale individuelle de consommer un produit.",
+      "defi": "Pendant quatre minutes, dessine l’échelle A à E puis deux listes : questions de composition nutritionnelle et questions de sécurité ou d’allergie. Ajoute pourquoi un changement de méthode peut modifier une lettre sans changement de recette.",
+      "quiz": [
+        {
+          "q": "L’absence de Nutri-Score signifie-t-elle automatiquement E ?",
+          "choix": [
+            "Oui, toujours",
+            "Non",
+            "Oui, pendant la transition"
+          ],
+          "rep": "Non",
+          "expl": "Le dispositif est volontaire ; absence et note sont distinctes."
+        },
+        {
+          "q": "Une lettre suffit-elle à vérifier une allergie ou un rappel ?",
+          "choix": [
+            "Oui, si c’est A",
+            "Oui, si la couleur est verte",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Ces informations doivent être recherchées séparément."
+        },
+        {
+          "q": "Une lettre modifiée prouve-t-elle toujours une recette modifiée ?",
+          "choix": [
+            "Non, la méthode de calcul peut aussi changer",
+            "Oui, sans exception",
+            "Oui, si le paquet a la même taille"
+          ],
+          "rep": "Non, la méthode de calcul peut aussi changer",
+          "expl": "Le cadre de calcul doit être pris en compte pendant la transition."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-16-07"
+    },
+    {
+      "titre": "Conservation, lot, origine : finir la lecture",
+      "accroche": "Une étiquette sert aussi à utiliser et identifier le produit.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Les conditions après l’achat",
+          "texte": "Température, durée après ouverture et préparation éventuelle font partie de l’information utile. Un produit ne se conserve pas correctement par la seule lecture de son tableau nutritionnel.",
+          "schema": ""
+        },
+        {
+          "titre": "Le lot aide à retrouver les produits",
+          "texte": "Le numéro de lot permet d’identifier un ensemble de fabrication. En cas de rappel, compare les références exactes avec l’avis officiel, notamment sur RappelConso, puis suis les consignes sans goûter pour vérifier.",
+          "schema": ""
+        },
+        {
+          "titre": "L’adresse n’est pas l’origine",
+          "texte": "L’adresse de l’entreprise responsable ne prouve pas à elle seule le lieu de production ni l’origine de tous les ingrédients. Une indication d’origine répond à des règles spécifiques selon le produit.",
+          "schema": ""
+        },
+        {
+          "titre": "Revenir à la question utile",
+          "texte": "Pour lire sans te perdre, pars de ta question : composition, allergène, quantité, conservation ou rappel. Cherche la zone correspondante, puis ce qui manque encore ; aucune étiquette ne remplace toutes les autres informations.",
+          "schema": "Emballage fictif vu de dos : conservation en haut, lot au bas, adresse et origine séparées. Une loupe se déplace selon la question, sans flèche adresse égale origine."
+        }
+      ],
+      "dans_ta_vie": "Tu peux retrouver la bonne zone de l’emballage pour utiliser ou identifier le produit.",
+      "securite": "Lecture générale des étiquettes, sans régime, objectif de poids ou conseil médical personnalisé. Les exemples chiffrés sont fictifs. Aucun exercice ne demande de goûter un aliment, tester une allergie ou consommer un produit douteux. Une allergie connue se gère avec les consignes d’un professionnel de santé.",
+      "defi": "Pendant quatre minutes, complète un emballage fictif avec un lot inventé, une condition après ouverture et une adresse d’entreprise imaginaire. Explique quelle donnée comparer à un rappel et ce que l’adresse ne permet pas de conclure.",
+      "quiz": [
+        {
+          "q": "À quoi sert notamment le numéro de lot ?",
+          "choix": [
+            "Donner automatiquement le Nutri-Score",
+            "Garantir l’absence d’allergène",
+            "Identifier un ensemble de fabrication"
+          ],
+          "rep": "Identifier un ensemble de fabrication",
+          "expl": "Il aide à retrouver les références concernées par un rappel."
+        },
+        {
+          "q": "L’adresse de l’entreprise prouve-t-elle l’origine de tous les ingrédients ?",
+          "choix": [
+            "Non",
+            "Oui, toujours",
+            "Oui, si elle est en France"
+          ],
+          "rep": "Non",
+          "expl": "Adresse du responsable et origine ne sont pas équivalentes."
+        },
+        {
+          "q": "Face à un rappel correspondant aux références du produit, faut-il goûter pour vérifier ?",
+          "choix": [
+            "Oui, une petite quantité",
+            "Non, suivre les consignes officielles",
+            "Oui, si la date est loin"
+          ],
+          "rep": "Non, suivre les consignes officielles",
+          "expl": "La vérification se fait par les références et l’avis, pas par dégustation."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-16-08"
+    }
+  ]
+}

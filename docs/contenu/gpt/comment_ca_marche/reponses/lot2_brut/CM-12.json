@@ -1,0 +1,543 @@
+{
+  "id": "CM-12",
+  "titre": "Repérer les arnaques",
+  "public": "ado-adulte",
+  "lecons": [
+    {
+      "titre": "La pause qui rend le choix possible",
+      "accroche": "Une demande urgente n’est pas forcément une demande authentique.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Le résultat recherché",
+          "texte": "Une arnaque cherche à obtenir quelque chose par tromperie : argent, accès à un compte ou informations. Le scénario peut changer, mais la demande concrète mérite toujours d’être examinée.",
+          "schema": ""
+        },
+        {
+          "titre": "L’émotion comme accélérateur",
+          "texte": "Peur, enthousiasme ou inquiétude pour un proche peuvent pousser à agir vite. Ressentir cette émotion ne prouve pas que le message est faux ; cela justifie une pause avant une action sensible.",
+          "schema": "Message au centre ; trois bulles peur, gain, proche. Une barrière pause se place avant les flèches vers paiement ou partage d’informations."
+        },
+        {
+          "titre": "Une vérification indépendante",
+          "texte": "Quitte le circuit du message : retrouve le contact officiel par un moyen connu ou une source indépendante. Répondre au même message peut seulement ramener vers la personne qui l’a envoyé.",
+          "schema": ""
+        },
+        {
+          "titre": "Pas une question d’intelligence",
+          "texte": "Avoir été trompé ne définit pas ta valeur. Des demandes peuvent être personnalisées et bien écrites. La honte peut retarder l’aide ; parler à une personne de confiance reste possible.",
+          "schema": "Message convaincant vers personne, puis chemin ouvert vers soutien. Aucun personnage naïf ou ridicule ni classement des victimes."
+        }
+      ],
+      "dans_ta_vie": "Tu peux ralentir une demande sensible sans devoir prouver immédiatement une fraude.",
+      "securite": "Analyse uniquement des messages et sites inventés sur papier. Ne contacte pas d’escroc, ne clique sur aucun lien suspect et ne teste aucun paiement. N’utilise ni mot de passe, ni code, ni coordonnées réels. Un mineur peut demander l’aide d’un adulte de confiance.",
+      "defi": "Pendant quatre minutes, invente une demande pressante sans nom réel. Entoure ce qu’elle veut obtenir, puis écris une phrase de pause et un moyen de vérifier ailleurs. Ne crée pas de lien utilisable.",
+      "quiz": [
+        {
+          "q": "Que faut-il regarder derrière le scénario ?",
+          "choix": [
+            "Seulement la qualité de la formule de politesse",
+            "Ce que la demande cherche à obtenir",
+            "La couleur du logo"
+          ],
+          "rep": "Ce que la demande cherche à obtenir",
+          "expl": "Argent, données et accès sont des objectifs concrets à repérer."
+        },
+        {
+          "q": "Pourquoi vérifier hors du message ?",
+          "choix": [
+            "Pour lui répondre plus vite",
+            "Pour croire le premier numéro proposé",
+            "Pour ne pas rester dans le circuit contrôlé par son auteur"
+          ],
+          "rep": "Pour ne pas rester dans le circuit contrôlé par son auteur",
+          "expl": "Un canal indépendant peut confirmer ou contredire la demande."
+        },
+        {
+          "q": "Avoir été trompé prouve-t-il un manque d’intelligence ?",
+          "choix": [
+            "Non",
+            "Oui, définitivement",
+            "Oui, si le message était numérique"
+          ],
+          "rep": "Non",
+          "expl": "La priorité est de chercher une aide utile, sans culpabilisation."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-12-01"
+    },
+    {
+      "titre": "Le faux message qui t’emmène au faux guichet",
+      "accroche": "Un lien peut ressembler à une porte officielle sans y conduire.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "L’hameçonnage",
+          "texte": "L’hameçonnage, aussi appelé phishing, imite un interlocuteur de confiance pour obtenir des informations ou une action. Un faux colis bloqué peut ainsi conduire vers un faux formulaire de paiement.",
+          "schema": ""
+        },
+        {
+          "titre": "L’apparence ne suffit pas",
+          "texte": "Logos, noms d’expéditeur et textes peuvent être copiés. Une absence de faute d’orthographe ne prouve pas l’authenticité. Les détails rassurants ne remplacent pas la vérification de la demande.",
+          "schema": ""
+        },
+        {
+          "titre": "Le cadenas a une seule mission",
+          "texte": "Une connexion HTTPS chiffre les échanges avec le site : elle les rend illisibles en chemin. Elle ne garantit pas l’honnêteté de la personne qui possède ce site.",
+          "schema": "Personne à gauche, tunnel chiffré avec cadenas au centre, site inconnu à droite. Cadenas sur le tunnel uniquement, point d’interrogation sur le site."
+        },
+        {
+          "titre": "Le QR code cache aussi une destination",
+          "texte": "Un QR code peut contenir un lien. Le scanner ne rend pas sa destination fiable. En cas de doute, n’ouvre pas le lien et retrouve toi-même le service attendu.",
+          "schema": "QR code volontairement non scannable à gauche ; flèche vers adresse inconnue puis pause. Chemin séparé vers service déjà connu."
+        }
+      ],
+      "dans_ta_vie": "Tu peux examiner la destination d’une demande sans croire qu’une belle présentation garantit sa fiabilité.",
+      "securite": "Analyse uniquement des messages et sites inventés sur papier. Ne contacte pas d’escroc, ne clique sur aucun lien suspect et ne teste aucun paiement. N’utilise ni mot de passe, ni code, ni coordonnées réels. Un mineur peut demander l’aide d’un adulte de confiance.",
+      "defi": "Pendant quatre minutes, dessine un faux message de colis, sans lien ni QR code fonctionnel. Marque le logo copiable, la demande sensible et la vérification indépendante à faire avant toute action.",
+      "quiz": [
+        {
+          "q": "Que signifie hameçonnage dans ce contexte ?",
+          "choix": [
+            "Une garantie d’identité du service",
+            "Un simple message long",
+            "Une imitation destinée à tromper et obtenir une action ou des données"
+          ],
+          "rep": "Une imitation destinée à tromper et obtenir une action ou des données",
+          "expl": "La demande se présente sous une identité rassurante."
+        },
+        {
+          "q": "HTTPS garantit-il l’honnêteté du site ?",
+          "choix": [
+            "Non, il protège le transport des échanges",
+            "Oui, dans tous les cas",
+            "Oui, avec un cadenas visible"
+          ],
+          "rep": "Non, il protège le transport des échanges",
+          "expl": "Le chiffrement et l’identité fiable sont deux sujets différents."
+        },
+        {
+          "q": "Un QR code rend-il un lien fiable ?",
+          "choix": [
+            "Oui, parce qu’il est imprimé",
+            "Non",
+            "Oui, s’il est posé dans un lieu public"
+          ],
+          "rep": "Non",
+          "expl": "Sa destination doit aussi être vérifiée."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-12-02"
+    },
+    {
+      "titre": "Il connaît ton prénom, mais qui est-ce ?",
+      "accroche": "Les détails personnels et les voix peuvent être imités.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Une information déjà connue",
+          "texte": "Un interlocuteur peut connaître ton nom, ton adresse ou une ancienne commande sans être légitime. Ces informations peuvent circuler après une fuite de données ou d’autres échanges.",
+          "schema": ""
+        },
+        {
+          "titre": "Le numéro affiché peut tromper",
+          "texte": "L’identité présentée lors d’un appel ou dans un message peut être usurpée. Voir un nom familier ne suffit donc pas à authentifier la personne qui parle.",
+          "schema": ""
+        },
+        {
+          "titre": "Même une voix peut être copiée",
+          "texte": "Des outils d’intelligence artificielle peuvent imiter une voix ou créer une vidéo trompeuse. Un son familier n’est pas une preuve suffisante pour une demande inhabituelle d’argent.",
+          "schema": ""
+        },
+        {
+          "titre": "Recontacter par un repère connu",
+          "texte": "Pour une prétendue urgence d’un proche, rappelle par un numéro déjà connu ou contacte un autre proche fiable. N’utilise pas seulement les nouvelles coordonnées données dans la demande.",
+          "schema": "Appel inquiétant en haut ; flèche interrompue vers nouveau numéro. Chemin bleu séparé vers carnet de contacts connu et confirmation indépendante."
+        }
+      ],
+      "dans_ta_vie": "Tu peux vérifier une identité avant d’agir sur la seule force d’un détail rassurant.",
+      "securite": "Analyse uniquement des messages et sites inventés sur papier. Ne contacte pas d’escroc, ne clique sur aucun lien suspect et ne teste aucun paiement. N’utilise ni mot de passe, ni code, ni coordonnées réels. Un mineur peut demander l’aide d’un adulte de confiance.",
+      "defi": "Sur une scène fictive pendant quatre minutes, imagine un proche demandant de l’argent depuis un nouveau numéro. Prépare deux vérifications indépendantes, sans enregistrer, cloner ou imiter une voix réelle.",
+      "quiz": [
+        {
+          "q": "Connaître ton prénom prouve-t-il une identité légitime ?",
+          "choix": [
+            "Non",
+            "Oui, obligatoirement",
+            "Oui, avec ton adresse"
+          ],
+          "rep": "Non",
+          "expl": "Des informations personnelles peuvent être obtenues autrement."
+        },
+        {
+          "q": "Une voix familière suffit-elle pour une demande d’argent inhabituelle ?",
+          "choix": [
+            "Oui, toujours",
+            "Non",
+            "Oui, si le message est court"
+          ],
+          "rep": "Non",
+          "expl": "Une imitation ou un compte détourné reste possible."
+        },
+        {
+          "q": "Quel contact aide à vérifier ?",
+          "choix": [
+            "Seulement le nouveau numéro du message",
+            "Le numéro de son prétendu assistant donné dans le même message",
+            "Un numéro du proche déjà connu"
+          ],
+          "rep": "Un numéro du proche déjà connu",
+          "expl": "La vérification doit sortir du circuit de la demande."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-12-03"
+    },
+    {
+      "titre": "Les codes sont des clés, pas des mots à dicter",
+      "accroche": "Un code reçu peut ouvrir une porte au lieu de fermer une fraude.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Un secret pour chaque accès",
+          "texte": "Réutiliser le même mot de passe sur plusieurs comptes peut relier leurs risques. Si un service est compromis, ce secret peut être essayé ailleurs ; un mot de passe distinct limite ce lien.",
+          "schema": ""
+        },
+        {
+          "titre": "La deuxième vérification",
+          "texte": "La double authentification ajoute une vérification à la connexion, par exemple une validation sur un appareil. Elle renforce la protection mais ne rend pas toute tromperie impossible.",
+          "schema": "Deux portes successives : mot de passe puis seconde vérification. Une main ne remet pas la seconde clé à un appelant inconnu."
+        },
+        {
+          "titre": "Lire ce que l’on valide",
+          "texte": "Un code ou une notification peut autoriser un paiement, une connexion ou un ajout de destinataire. Ne valide pas une action que tu n’as pas initiée et comprise, même sous prétexte de l’annuler.",
+          "schema": ""
+        },
+        {
+          "titre": "Une clé à ne pas partager",
+          "texte": "Ne dicte pas tes mots de passe, codes de validation ou codes de récupération à un interlocuteur. Les codes de récupération servent à retrouver un accès : ils doivent rester protégés aussi.",
+          "schema": "Trois clés étiquetées mot de passe, validation, récupération dans un coffre personnel. Flèche vers appelant barrée, sans afficher de vrais caractères."
+        }
+      ],
+      "dans_ta_vie": "Tu peux reconnaître qu’une validation engage une action, même si l’appelant lui donne un autre nom.",
+      "securite": "Analyse uniquement des messages et sites inventés sur papier. Ne contacte pas d’escroc, ne clique sur aucun lien suspect et ne teste aucun paiement. N’utilise ni mot de passe, ni code, ni coordonnées réels. Un mineur peut demander l’aide d’un adulte de confiance.",
+      "defi": "Pendant quatre minutes, dessine trois notifications fictives : connexion, paiement et récupération. Écris ce qu’elles pourraient autoriser et la raison de ne pas les approuver pendant un appel inattendu. Aucun vrai code.",
+      "quiz": [
+        {
+          "q": "Pourquoi éviter un même mot de passe partout ?",
+          "choix": [
+            "Pour rendre les comptes identiques",
+            "Pour limiter les conséquences d’un secret volé sur un service",
+            "Pour supprimer toute nécessité de vérification"
+          ],
+          "rep": "Pour limiter les conséquences d’un secret volé sur un service",
+          "expl": "Un secret réutilisé peut être essayé sur d’autres comptes."
+        },
+        {
+          "q": "La double authentification rend-elle toute fraude impossible ?",
+          "choix": [
+            "Oui, sans exception",
+            "Oui, même si tu donnes tous les codes",
+            "Non"
+          ],
+          "rep": "Non",
+          "expl": "Elle ajoute une protection sans supprimer tous les risques."
+        },
+        {
+          "q": "Une notification présentée comme annulation doit être traitée comment ?",
+          "choix": [
+            "Lire l’action réelle et ne pas valider ce qu’on n’a pas initié",
+            "L’approuver pour obéir à l’appelant",
+            "La dicter sans la lire"
+          ],
+          "rep": "Lire l’action réelle et ne pas valider ce qu’on n’a pas initié",
+          "expl": "Le libellé réel compte davantage que l’histoire racontée au téléphone."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-12-04"
+    },
+    {
+      "titre": "Le faux sauveur du compte ou de l’ordinateur",
+      "accroche": "Une offre d’aide peut être le début du piège.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Le faux conseiller bancaire",
+          "texte": "Un appelant annonce une fraude puis demande un code ou une validation pour la bloquer. Cette action peut en réalité autoriser une opération. Raccroche et contacte ta banque par ses coordonnées officielles.",
+          "schema": ""
+        },
+        {
+          "titre": "Le prétendu compte refuge",
+          "texte": "Transférer l’argent vers un compte présenté comme sécurisé par un inconnu ne protège pas tes économies. Une demande de virement de sécurité est un signal d’alerte, même avec un ton professionnel.",
+          "schema": ""
+        },
+        {
+          "titre": "La fausse alerte technique",
+          "texte": "Une page Internet peut annoncer un ordinateur infecté pour te faire appeler un faux dépannage. Le message affiché n’est pas à lui seul la preuve d’un diagnostic réel.",
+          "schema": ""
+        },
+        {
+          "titre": "Ne pas donner le volant",
+          "texte": "Un outil de contrôle à distance peut permettre de voir ou manipuler l’appareil. N’en installe pas sur demande d’un interlocuteur inattendu et ne lui confie pas l’accès à tes comptes.",
+          "schema": "Ordinateur comme tableau de commande ; main distante derrière écran. Barrière entre demande inattendue et bouton d’accès ; chemin vers aide officielle séparée."
+        }
+      ],
+      "dans_ta_vie": "Tu peux repérer une aide proposée qui cherche surtout à obtenir le contrôle de tes accès.",
+      "securite": "Analyse uniquement des messages et sites inventés sur papier. Ne contacte pas d’escroc, ne clique sur aucun lien suspect et ne teste aucun paiement. N’utilise ni mot de passe, ni code, ni coordonnées réels. Un mineur peut demander l’aide d’un adulte de confiance. En situation réelle, une demande inattendue de remise de carte bancaire, de code ou de prise de contrôle doit conduire à interrompre et vérifier. Ne remets pas ta carte à un prétendu coursier envoyé pour la sécuriser.",
+      "defi": "Pendant quatre minutes, compare deux scènes fictives : alerte bancaire par appel inattendu et page de faux dépannage. Entoure l’action demandée et note comment retrouver une aide officielle sans rappeler le contact fourni.",
+      "quiz": [
+        {
+          "q": "Un appel demande une validation pour bloquer une fraude. Quelle réaction convient ?",
+          "choix": [
+            "Valider avant de lire",
+            "Dicter le code pour gagner du temps",
+            "Interrompre et contacter la banque indépendamment"
+          ],
+          "rep": "Interrompre et contacter la banque indépendamment",
+          "expl": "La validation peut autoriser l’opération que l’appelant prétend bloquer."
+        },
+        {
+          "q": "Une page annonce une infection. Est-ce un diagnostic suffisant ?",
+          "choix": [
+            "Non",
+            "Oui, si elle clignote",
+            "Oui, si elle affiche un numéro"
+          ],
+          "rep": "Non",
+          "expl": "Une page alarmante peut elle-même être frauduleuse."
+        },
+        {
+          "q": "Que peut permettre un contrôle à distance ?",
+          "choix": [
+            "Uniquement changer sa couleur",
+            "Voir ou manipuler l’appareil",
+            "Garantir l’identité du technicien"
+          ],
+          "rep": "Voir ou manipuler l’appareil",
+          "expl": "C’est un accès sensible qui ne doit pas être confié à un inconnu inattendu."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-12-05"
+    },
+    {
+      "titre": "Acheter ou vendre sans croire la capture d’écran",
+      "accroche": "Une image de paiement n’est pas le paiement lui-même.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Une offre à examiner",
+          "texte": "Un prix très bas, une histoire pressante ou des avis enthousiastes ne prouvent pas une fraude à eux seuls. Ensemble, ils peuvent inviter à vérifier vendeur, conditions et moyen de paiement.",
+          "schema": ""
+        },
+        {
+          "titre": "Rester dans le cadre prévu",
+          "texte": "Un interlocuteur peut demander de quitter une plateforme pour payer ou communiquer ailleurs. Cela peut faire perdre des protections ou ouvrir un faux circuit ; examine le changement au lieu de suivre automatiquement.",
+          "schema": ""
+        },
+        {
+          "titre": "Vérifier dans le vrai service",
+          "texte": "Une capture de virement ou un courriel de confirmation peut être fabriqué. Vérifie l’état réel dans ton service de paiement ou compte, rejoint indépendamment du message reçu.",
+          "schema": "À gauche, capture de paiement avec point d’interrogation ; à droite, consultation indépendante du service réel. Aucune flèche automatique de capture vers argent reçu."
+        },
+        {
+          "titre": "Un RIB changé mérite confirmation",
+          "texte": "Pour une facture, des coordonnées bancaires remplacées peuvent détourner le paiement. Confirme le changement avec un contact habituel déjà connu, sans utiliser seulement le numéro ajouté à la nouvelle facture.",
+          "schema": "Facture ancienne et nouvelle côte à côte ; coordonnées modifiées surlignées. Flèche vers contact connu, pas vers nouvelles coordonnées de vérification."
+        }
+      ],
+      "dans_ta_vie": "Tu peux distinguer une preuve affichée d’un état vérifié dans le service concerné.",
+      "securite": "Analyse uniquement des messages et sites inventés sur papier. Ne contacte pas d’escroc, ne clique sur aucun lien suspect et ne teste aucun paiement. N’utilise ni mot de passe, ni code, ni coordonnées réels. Un mineur peut demander l’aide d’un adulte de confiance.",
+      "defi": "Pendant quatre minutes, dessine une confirmation de paiement fictive et une facture au compte bancaire modifié, sans chiffres réels. Explique comment vérifier chacune sans cliquer sur le message qui l’accompagne.",
+      "quiz": [
+        {
+          "q": "Une capture de paiement prouve-t-elle à elle seule la réception ?",
+          "choix": [
+            "Non",
+            "Oui, si elle est nette",
+            "Oui, avec un logo"
+          ],
+          "rep": "Non",
+          "expl": "Elle peut être fabriquée ; l’état réel doit être vérifié indépendamment."
+        },
+        {
+          "q": "Un changement de RIB se confirme comment ?",
+          "choix": [
+            "Uniquement avec le numéro ajouté au message",
+            "Avec un contact habituel déjà connu",
+            "En supposant la modification normale"
+          ],
+          "rep": "Avec un contact habituel déjà connu",
+          "expl": "Une autre voie aide à détecter une substitution."
+        },
+        {
+          "q": "Quitter le cadre de paiement prévu mérite quoi ?",
+          "choix": [
+            "Une acceptation automatique",
+            "Un partage immédiat du code bancaire",
+            "Une vérification des risques et protections"
+          ],
+          "rep": "Une vérification des risques et protections",
+          "expl": "Le changement peut modifier les garanties et le circuit de paiement."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-12-06"
+    },
+    {
+      "titre": "Gain, emploi, relation : trois appâts à examiner",
+      "accroche": "Une promesse peut devenir un prétexte pour demander toujours plus.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Le placement miraculeux",
+          "texte": "Un gain élevé présenté comme certain et sans risque doit alerter. Vérifie les autorisations et l’identité réelle auprès des sources officielles ; le nom d’une entreprise autorisée peut lui aussi être usurpé.",
+          "schema": ""
+        },
+        {
+          "titre": "Le faux emploi",
+          "texte": "Un prétendu recruteur peut demander de payer un matériel, une formation ou des frais pour être embauché. Ne paie pas sous pression ; vérifie l’offre auprès de l’organisation par un contact indépendant.",
+          "schema": ""
+        },
+        {
+          "titre": "La relation utilisée comme levier",
+          "texte": "Une relation en ligne peut évoluer vers des demandes d’argent et de secret. L’attachement ne prouve pas l’identité ni l’urgence annoncée. Demander un regard extérieur peut aider à prendre du recul.",
+          "schema": ""
+        },
+        {
+          "titre": "Le piège du encore un paiement",
+          "texte": "Après une première somme, on peut réclamer des frais pour débloquer le gain ou récupérer l’argent perdu. Avoir déjà payé n’oblige pas à payer davantage ; une récupération garantie peut être une nouvelle arnaque.",
+          "schema": "Suite de trois demandes d’argent ; au deuxième maillon, panneau arrêter et vérifier. Flèche sortie vers aide indépendante, sans récompense finale dessinée."
+        }
+      ],
+      "dans_ta_vie": "Tu peux repérer une demande nouvelle derrière une promesse qui paraissait d’abord séduisante.",
+      "securite": "Analyse uniquement des messages et sites inventés sur papier. Ne contacte pas d’escroc, ne clique sur aucun lien suspect et ne teste aucun paiement. N’utilise ni mot de passe, ni code, ni coordonnées réels. Un mineur peut demander l’aide d’un adulte de confiance.",
+      "defi": "Pendant quatre minutes, classe trois demandes fictives : paiement pour un emploi, gain garanti, urgence d’une relation en ligne. Pour chacune, note l’alerte et une vérification indépendante, sans enquêter sur une personne réelle.",
+      "quiz": [
+        {
+          "q": "Le nom d’une entreprise autorisée suffit-il à authentifier un message ?",
+          "choix": [
+            "Oui, sans autre vérification",
+            "Non, son identité peut être usurpée",
+            "Oui, si le rendement est élevé"
+          ],
+          "rep": "Non, son identité peut être usurpée",
+          "expl": "Il faut aussi vérifier le véritable interlocuteur."
+        },
+        {
+          "q": "Un recruteur inattendu exige des frais immédiats. Que faire ?",
+          "choix": [
+            "Payer pour confirmer sa motivation",
+            "Envoyer son code de carte",
+            "Ne pas payer et vérifier l’offre indépendamment"
+          ],
+          "rep": "Ne pas payer et vérifier l’offre indépendamment",
+          "expl": "La demande peut faire partie d’une fausse offre."
+        },
+        {
+          "q": "Avoir déjà payé oblige-t-il à continuer pour récupérer ?",
+          "choix": [
+            "Non",
+            "Oui, jusqu’à la fin du scénario",
+            "Oui, si un nouvel interlocuteur promet le remboursement"
+          ],
+          "rep": "Non",
+          "expl": "Un paiement passé ne rend pas la demande suivante fiable."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-12-07"
+    },
+    {
+      "titre": "Après un doute ou un piège : agir sans honte",
+      "accroche": "La première action utile dépend de ce qui a réellement été transmis.",
+      "duree_min": 8,
+      "cartes": [
+        {
+          "titre": "Couper la relation suspecte",
+          "texte": "Ne poursuis pas les échanges pour obtenir des aveux. Garde les éléments utiles sans t’exposer davantage : messages, dates, coordonnées reçues et justificatifs peuvent servir aux démarches.",
+          "schema": ""
+        },
+        {
+          "titre": "Argent ou carte concernés",
+          "texte": "Si des données de paiement ont été communiquées ou une opération suspecte effectuée, contacte immédiatement ta banque par ses coordonnées officielles pour les mesures adaptées, notamment l’opposition si nécessaire.",
+          "schema": ""
+        },
+        {
+          "titre": "Accès à un compte concerné",
+          "texte": "Si un secret d’accès a été révélé, sécurise le compte depuis un appareil fiable via le service officiel. Fais-toi accompagner si l’appareil lui-même a pu être contrôlé ou infecté.",
+          "schema": ""
+        },
+        {
+          "titre": "Trouver la bonne aide",
+          "texte": "En France, 17Cyber est un service d’assistance en ligne. Un SMS frauduleux peut être signalé au 33700. Signalement et plainte ont des rôles différents ; aucune démarche ne garantit automatiquement un remboursement.",
+          "schema": "Trois ressources distinctes : banque pour moyens de paiement, assistance en ligne, autorités pour plainte. Aucune flèche remboursement garanti."
+        }
+      ],
+      "dans_ta_vie": "Tu peux décrire ce qui s’est passé et chercher l’aide correspondante sans rester seul face au problème.",
+      "securite": "Analyse uniquement des messages et sites inventés sur papier. Ne contacte pas d’escroc, ne clique sur aucun lien suspect et ne teste aucun paiement. N’utilise ni mot de passe, ni code, ni coordonnées réels. Un mineur peut demander l’aide d’un adulte de confiance. Aucun appel ou signalement d’entraînement. En cas de menace ou de danger immédiat en France, appelle le 17 ou le 112. Le nom du service en ligne 17Cyber ne remplace pas ces numéros d’urgence. Un proche de confiance peut aider à faire les démarches.",
+      "defi": "Pendant quatre minutes, crée une fiche papier pour trois scénarios fictifs : message seulement reçu, secret transmis, paiement suspect. Indique l’interlocuteur pertinent et les preuves à conserver, sans aucune démarche réelle.",
+      "quiz": [
+        {
+          "q": "Des données de paiement ont été transmises. Quel interlocuteur contacter rapidement ?",
+          "choix": [
+            "Uniquement l’auteur du message",
+            "Le prétendu récupérateur d’argent",
+            "La banque par ses coordonnées officielles"
+          ],
+          "rep": "La banque par ses coordonnées officielles",
+          "expl": "Elle peut mettre en œuvre les mesures bancaires adaptées."
+        },
+        {
+          "q": "17Cyber est ici quoi ?",
+          "choix": [
+            "Un service d’assistance en ligne",
+            "Le nom d’un virement sécurisé",
+            "Un code secret universel"
+          ],
+          "rep": "Un service d’assistance en ligne",
+          "expl": "Il oriente selon les situations de cybermalveillance."
+        },
+        {
+          "q": "Un signalement garantit-il un remboursement ?",
+          "choix": [
+            "Oui, toujours",
+            "Non",
+            "Oui, dès qu’une capture existe"
+          ],
+          "rep": "Non",
+          "expl": "Les démarches et leurs résultats dépendent du cas."
+        }
+      ],
+      "video": {
+        "titre": "",
+        "chaine": ""
+      },
+      "id": "CM-12-08"
+    }
+  ]
+}
