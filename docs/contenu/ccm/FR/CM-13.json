@@ -1,0 +1,543 @@
+{
+ "id": "CM-13",
+ "titre": "Les fausses infos et les images truquées",
+ "public": "ado-adulte",
+ "lecons": [
+  {
+   "titre": "Qu’est-ce qui est vraiment affirmé ?",
+   "accroche": "Avant de vérifier, il faut savoir quelle phrase on cherche à établir.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Un fait vérifiable",
+     "texte": "« La piscine ferme à 18 heures » décrit une information qu’on peut vérifier pour un lieu et une date. Un fait annoncé peut être exact ou faux : sa forme ne suffit pas à le valider.",
+     "schema": ""
+    },
+    {
+     "titre": "Une opinion n’est pas un horaire",
+     "texte": "« Cette piscine est la plus agréable » exprime un jugement selon des critères à préciser. Une préférence ne se vérifie pas comme une heure de fermeture, même si elle mérite d’être expliquée.",
+     "schema": ""
+    },
+    {
+     "titre": "Une hypothèse reste provisoire",
+     "texte": "« La fermeture vient peut-être d’une panne » propose une explication à vérifier. Retirer le « peut-être » transforme une hypothèse en affirmation plus forte, sans apporter de nouvelle preuve.",
+     "schema": ""
+    },
+    {
+     "titre": "Erreur ou tromperie ?",
+     "texte": "Une information fausse peut venir d’une erreur, d’un manque de contexte ou d’une volonté de tromper. On peut vérifier son contenu sans prétendre connaître automatiquement l’intention de son auteur.",
+     "schema": "Quatre cartes : fait annoncé, opinion, hypothèse, contenu fictif. Une loupe vise l’affirmation vérifiable ; intention de l’auteur reste une case séparée."
+    }
+   ],
+   "dans_ta_vie": "Tu peux isoler un point vérifiable au lieu de discuter d’un message entier comme d’un bloc.",
+   "securite": "Les exercices utilisent des textes et dessins fictifs sans personne identifiable. Ne crée pas de fausse accusation, de faux document officiel ni d’image intime ou humiliante. Ne téléverse pas d’image privée dans un outil de recherche ou de détection.",
+   "defi": "Pendant quatre minutes, écris un horaire fictif, une préférence et une hypothèse sur une activité inventée. Pour chaque phrase, indique ce qu’il faudrait vérifier ou quels critères il faudrait expliquer.",
+   "quiz": [
+    {
+     "q": "Quelle phrase annonce un fait vérifiable ?",
+     "choix": [
+      "Cette piscine est la plus agréable",
+      "La piscine ferme à 18 heures",
+      "J’aime cette couleur"
+     ],
+     "rep": "La piscine ferme à 18 heures",
+     "expl": "Un horaire se vérifie pour le lieu et la date concernés."
+    },
+    {
+     "q": "Que change la suppression de « peut-être » ?",
+     "choix": [
+      "Elle prouve la cause",
+      "Elle transforme une préférence en chiffre",
+      "L’hypothèse est présentée plus fortement, sans preuve nouvelle"
+     ],
+     "rep": "L’hypothèse est présentée plus fortement, sans preuve nouvelle",
+     "expl": "La force de la formulation ne garantit pas l’exactitude."
+    },
+    {
+     "q": "Une information fausse prouve-t-elle une intention de tromper ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, si elle a été partagée"
+     ],
+     "rep": "Non",
+     "expl": "Il faut distinguer le contenu erroné de l’intention supposée."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-13-01"
+  },
+  {
+   "titre": "Remonter jusqu’à la source",
+   "accroche": "Une capture d’écran est un morceau de document, pas son histoire complète.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Trouver le point de départ",
+     "texte": "Qui a produit l’information ? Un témoin, un organisme, un média ou un compte qui copie ? Le partage le plus visible n’est pas nécessairement la source de départ.",
+     "schema": ""
+    },
+    {
+     "titre": "Ouvrir le document complet",
+     "texte": "Un titre ou une capture peut retirer une précision essentielle. Cherche le texte, l’enregistrement ou les données d’origine quand ils sont accessibles, puis lis ce qui entoure l’extrait.",
+     "schema": ""
+    },
+    {
+     "titre": "Vérifier la date utile",
+     "texte": "Date de publication et date de l’événement peuvent différer. Une ancienne fermeture repostée aujourd’hui ne prouve pas que le lieu ferme maintenant.",
+     "schema": "Deux calendriers : événement ancien en orange, publication récente en bleu. Flèche repartage entre eux, sans déplacer la date de l’événement."
+    },
+    {
+     "titre": "Identifier n’est pas croire aveuglément",
+     "texte": "Une source identifiable peut aussi se tromper. Son intérêt est de permettre d’examiner la méthode, le contexte et les corrections possibles, plutôt que croire une affirmation sans origine.",
+     "schema": "Chaîne source initiale vers copies A et B ; loupe sur auteur, date, document et méthode au niveau de la source, pas sur le nombre de copies."
+    }
+   ],
+   "dans_ta_vie": "Tu peux retrouver le contexte qui manque à un extrait partagé.",
+   "securite": "Les exercices utilisent des textes et dessins fictifs sans personne identifiable. Ne crée pas de fausse accusation, de faux document officiel ni d’image intime ou humiliante. Ne téléverse pas d’image privée dans un outil de recherche ou de détection.",
+   "defi": "Pendant quatre minutes, dessine un document fictif puis une capture qui en retire une précision. Fais retrouver à un proche l’auteur, la date de l’événement et la phrase manquante grâce au document complet.",
+   "quiz": [
+    {
+     "q": "Le partage le plus visible est-il forcément la source initiale ?",
+     "choix": [
+      "Oui, avec beaucoup de vues",
+      "Oui, s’il arrive en premier dans ton fil",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "La visibilité et l’origine sont différentes."
+    },
+    {
+     "q": "Pourquoi chercher le document complet ?",
+     "choix": [
+      "Pour retrouver les précisions retirées de l’extrait",
+      "Pour remplacer toute vérification",
+      "Pour compter uniquement les réactions"
+     ],
+     "rep": "Pour retrouver les précisions retirées de l’extrait",
+     "expl": "L’extrait peut changer le sens en supprimant le contexte."
+    },
+    {
+     "q": "Une publication récente garantit-elle un événement récent ?",
+     "choix": [
+      "Oui, par définition",
+      "Non",
+      "Oui, si la photo est nette"
+     ],
+     "rep": "Non",
+     "expl": "Un ancien événement peut être republié aujourd’hui."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-13-02"
+  },
+  {
+   "titre": "Trois copies ne font pas trois confirmations",
+   "accroche": "L’indépendance compte davantage que le nombre de répétitions.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Rechercher plusieurs chemins",
+     "texte": "Deux sources indépendantes peuvent apporter des éléments différents sur le même fait. Trois comptes qui reprennent un seul message restent trois relais d’une même origine.",
+     "schema": ""
+    },
+    {
+     "titre": "Regarder la méthode",
+     "texte": "Une affirmation appuyée sur un document accessible ou des observations expliquées se vérifie mieux qu’une certitude sans élément. La méthode et les limites comptent davantage qu’un ton assuré.",
+     "schema": ""
+    },
+    {
+     "titre": "Garder les catégories ouvertes",
+     "texte": "Selon les éléments, un point peut être établi, contredit ou encore non vérifié. « Non vérifié » ne signifie ni vrai ni faux ; cela signifie qu’on ne dispose pas encore d’éléments suffisants.",
+     "schema": ""
+    },
+    {
+     "titre": "Ne pas tout mettre à égalité",
+     "texte": "Une rumeur isolée ne pèse pas autant qu’un ensemble solide de résultats concordants. Rester ouvert à une correction n’oblige pas à considérer toutes les affirmations comme également étayées.",
+     "schema": "Arbre : source unique vers trois copies, séparé de deux enquêtes distinctes. Balance compare qualité des éléments, sans compter simplement les bulles."
+    }
+   ],
+   "dans_ta_vie": "Tu peux évaluer ce qui soutient une information au lieu de compter seulement ses reprises.",
+   "securite": "Les exercices utilisent des textes et dessins fictifs sans personne identifiable. Ne crée pas de fausse accusation, de faux document officiel ni d’image intime ou humiliante. Ne téléverse pas d’image privée dans un outil de recherche ou de détection.",
+   "defi": "Pendant quatre minutes, dessine trois reprises d’un même message et une vérification fondée sur un document distinct. Classe une affirmation inventée comme établie, contredite ou non vérifiée en expliquant les éléments disponibles.",
+   "quiz": [
+    {
+     "q": "Trois comptes copient un même message. Combien d’origines cela peut-il représenter ?",
+     "choix": [
+      "Une seule",
+      "Forcément trois enquêtes indépendantes",
+      "Forcément trois témoins directs"
+     ],
+     "rep": "Une seule",
+     "expl": "La répétition ne crée pas une confirmation indépendante."
+    },
+    {
+     "q": "« Non vérifié » signifie quoi ?",
+     "choix": [
+      "Forcément faux",
+      "Les éléments disponibles ne permettent pas encore de conclure",
+      "Forcément vrai"
+     ],
+     "rep": "Les éléments disponibles ne permettent pas encore de conclure",
+     "expl": "Il faut conserver la distinction entre incertitude et réfutation."
+    },
+    {
+     "q": "Quel élément aide le plus à examiner une affirmation ?",
+     "choix": [
+      "Une voix très assurée",
+      "Un grand nombre d’exclamations",
+      "Une méthode et des documents accessibles"
+     ],
+     "rep": "Une méthode et des documents accessibles",
+     "expl": "On peut vérifier le chemin qui conduit à la conclusion."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-13-03"
+  },
+  {
+   "titre": "Le chiffre qui impressionne a besoin d’un cadre",
+   "accroche": "Une hausse de cent pour cent peut concerner dix cas supplémentaires.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Demander sur combien",
+     "texte": "« 20 personnes ont répondu oui » ne décrit pas la même proportion dans un groupe de 25 que dans un groupe de 1 000. Le total concerné, appelé dénominateur, donne l’échelle.",
+     "schema": ""
+    },
+    {
+     "titre": "Relatif et nombre de cas",
+     "texte": "Dans un exemple fictif, passer de 10 à 20 cas correspond à un doublement, donc +100 %. Cela représente aussi 10 cas supplémentaires. Les deux descriptions sont justes mais éclairent différemment.",
+     "schema": ""
+    },
+    {
+     "titre": "Pourcentage et points",
+     "texte": "Dans un même groupe fictif de 100 personnes, passer de 10 % à 20 % fait gagner 10 points de pourcentage. Cela reste un doublement relatif, pas une hausse relative de 10 %.",
+     "schema": ""
+    },
+    {
+     "titre": "Lire les axes",
+     "texte": "Un graphique montre des valeurs selon une échelle. Vérifie unité, période et départ de l’axe : une échelle resserrée peut faire paraître un petit écart très grand.",
+     "schema": "Deux graphiques des mêmes valeurs 10 et 20 : premier axe de 0 à 100, second de 9 à 21 avec départ 9 bien indiqué. Valeurs écrites sur les deux."
+    }
+   ],
+   "dans_ta_vie": "Tu peux reformuler un chiffre spectaculaire sans perdre sa base de comparaison.",
+   "securite": "Les exercices utilisent des textes et dessins fictifs sans personne identifiable. Ne crée pas de fausse accusation, de faux document officiel ni d’image intime ou humiliante. Ne téléverse pas d’image privée dans un outil de recherche ou de détection.",
+   "defi": "Pendant quatre minutes, dessine 100 cases avec 10 puis 20 cases colorées. Écris trois lectures : 10 cas de plus, +10 points, +100 % relativement. Vérifie que chaque lecture garde sa base et son contexte fictifs.",
+   "quiz": [
+    {
+     "q": "Pourquoi demander le total du groupe ?",
+     "choix": [
+      "Pour supprimer les réponses",
+      "Pour connaître la proportion représentée",
+      "Pour choisir le chiffre le plus impressionnant"
+     ],
+     "rep": "Pour connaître la proportion représentée",
+     "expl": "Le dénominateur donne une échelle au nombre annoncé."
+    },
+    {
+     "q": "Passer de 10 à 20 cas représente quelle hausse relative ?",
+     "choix": [
+      "10 %",
+      "20 %",
+      "100 %"
+     ],
+     "rep": "100 %",
+     "expl": "Le nombre a doublé par rapport aux 10 cas initiaux."
+    },
+    {
+     "q": "Passer de 10 % à 20 % ajoute combien de points de pourcentage ?",
+     "choix": [
+      "10 points",
+      "100 points",
+      "2 points"
+     ],
+     "rep": "10 points",
+     "expl": "Les points mesurent ici la différence entre les deux pourcentages."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-13-04"
+  },
+  {
+   "titre": "Une vraie image peut raconter une fausse histoire",
+   "accroche": "Le piège se trouve parfois autour de l’image plutôt que dans ses pixels.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Le cadrage choisit",
+     "texte": "Photographier une partie d’une scène laisse le reste hors champ. Un cadrage peut être utile sans être trompeur, mais il ne montre pas tout ce qui existe autour.",
+     "schema": ""
+    },
+    {
+     "titre": "Le recadrage change l’impression",
+     "texte": "Un groupe serré dans un coin peut sembler remplir tout un lieu si l’on retire l’espace vide autour. Le nombre de personnes n’a pas changé, seulement la partie montrée.",
+     "schema": "Vue large d’une salle avec huit silhouettes à gauche et espace vide à droite ; rectangle de recadrage autour des huit. Zoom conserve exactement les mêmes silhouettes."
+    },
+    {
+     "titre": "La légende ajoute une affirmation",
+     "texte": "Une photo de pluie peut être réelle et porter un faux lieu ou une fausse date. L’authenticité de l’image ne valide donc pas automatiquement la phrase qui l’accompagne.",
+     "schema": ""
+    },
+    {
+     "titre": "La vidéo a aussi un avant",
+     "texte": "Couper une séquence, modifier son ordre ou remplacer le son peut changer le sens. Chercher une version plus longue aide parfois à retrouver le contexte, sans garantir à elle seule toute la vérité.",
+     "schema": "Ruban de trois scènes A, B, C ; extrait B isolé puis retour au ruban complet. Piste sonore séparée en dessous pour montrer qu’elle peut différer."
+    }
+   ],
+   "dans_ta_vie": "Tu peux vérifier ce que l’image montre et ce que sa présentation affirme en plus.",
+   "securite": "Les exercices utilisent des textes et dessins fictifs sans personne identifiable. Ne crée pas de fausse accusation, de faux document officiel ni d’image intime ou humiliante. Ne téléverse pas d’image privée dans un outil de recherche ou de détection.",
+   "defi": "Pendant quatre minutes, dessine une scène ordinaire puis un cadre qui en retire un élément important. Ajoute deux légendes fictives différentes et explique comment chacune change l’interprétation sans modifier le dessin.",
+   "quiz": [
+    {
+     "q": "Un recadrage change-t-il forcément le nombre de personnes présentes dans la scène d’origine ?",
+     "choix": [
+      "Oui, il crée toujours des personnes",
+      "Oui, il supprime physiquement le reste",
+      "Non, il change la partie montrée"
+     ],
+     "rep": "Non, il change la partie montrée",
+     "expl": "L’image visible et la scène entière ne sont pas identiques."
+    },
+    {
+     "q": "Une photo réelle garantit-elle sa légende ?",
+     "choix": [
+      "Non",
+      "Oui, toujours",
+      "Oui, si elle est en couleur"
+     ],
+     "rep": "Non",
+     "expl": "Lieu, date et commentaire doivent aussi être vérifiés."
+    },
+    {
+     "q": "Pourquoi chercher une vidéo plus longue ?",
+     "choix": [
+      "Pour garantir automatiquement chaque parole",
+      "Pour retrouver un contexte éventuellement retiré",
+      "Pour compter seulement les vues"
+     ],
+     "rep": "Pour retrouver un contexte éventuellement retiré",
+     "expl": "L’extrait peut cacher l’avant ou l’après."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-13-05"
+  },
+  {
+   "titre": "Rechercher l’histoire d’une image",
+   "accroche": "Retrouver une ancienne publication peut changer le récit présenté.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "Chercher avec l’image",
+     "texte": "Une recherche d’image inversée utilise une image pour chercher des versions semblables en ligne. Elle peut aider à retrouver d’autres publications et leurs contextes.",
+     "schema": ""
+    },
+    {
+     "titre": "Comparer les contextes",
+     "texte": "Si la même image apparaît dans une publication antérieure, examine date, lieu et auteur. Cela peut contredire une légende récente ; il faut toutefois vérifier que les images correspondent réellement.",
+     "schema": ""
+    },
+    {
+     "titre": "L’absence de résultat ne prouve rien",
+     "texte": "Un moteur ne connaît pas toutes les images. Une image recadrée ou nouvelle peut rester introuvable. Aucun résultat ne prouve donc ni authenticité ni fabrication.",
+     "schema": ""
+    },
+    {
+     "titre": "Une première trace n’est pas une naissance",
+     "texte": "La plus ancienne copie trouvée n’est pas forcément la première publication existante. Complète avec des sources et des indices de contexte, sans transformer un résultat de recherche en certitude totale.",
+     "schema": "Image à gauche vers trois résultats datés à droite. Le plus ancien trouvé porte trace connue, pas origine certaine ; flèche de vérification vers contexte."
+    }
+   ],
+   "dans_ta_vie": "Tu peux comprendre ce qu’une recherche d’image apporte et ce qu’elle laisse encore ouvert.",
+   "securite": "Les exercices utilisent des textes et dessins fictifs sans personne identifiable. Ne crée pas de fausse accusation, de faux document officiel ni d’image intime ou humiliante. Ne téléverse pas d’image privée dans un outil de recherche ou de détection.",
+   "defi": "Pendant quatre minutes, joue une recherche sur papier : trois copies fictives du même dessin portent des dates et légendes différentes. Repère la contradiction possible, puis note ce qu’il faudrait encore vérifier. Aucun téléversement.",
+   "quiz": [
+    {
+     "q": "Que recherche une recherche d’image inversée ?",
+     "choix": [
+      "Des images semblables et leurs publications",
+      "Uniquement les mots du titre",
+      "Automatiquement l’identité de toute personne"
+     ],
+     "rep": "Des images semblables et leurs publications",
+     "expl": "Elle aide à retrouver des usages et contextes."
+    },
+    {
+     "q": "Aucun résultat prouve-t-il que l’image est authentique ?",
+     "choix": [
+      "Oui",
+      "Non",
+      "Oui, si la recherche est rapide"
+     ],
+     "rep": "Non",
+     "expl": "Le moteur peut ne pas connaître cette image."
+    },
+    {
+     "q": "La copie la plus ancienne trouvée est-elle forcément la première existante ?",
+     "choix": [
+      "Oui, dans tous les cas",
+      "Oui, si la date est lisible",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "Les résultats disponibles ne couvrent pas nécessairement toute l’histoire."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-13-06"
+  },
+  {
+   "titre": "Images et voix fabriquées : garder plusieurs repères",
+   "accroche": "Un contenu très réaliste peut ne pas enregistrer un événement réel.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "L’image peut être fabriquée",
+     "texte": "Des outils d’intelligence artificielle génèrent ou modifient images, sons et vidéos. Un hypertrucage, ou deepfake, peut notamment faire paraître qu’une personne a dit ou fait quelque chose.",
+     "schema": ""
+    },
+    {
+     "titre": "Pas de défaut obligatoire",
+     "texte": "Un détail étrange peut inviter à vérifier, mais les contenus fabriqués n’ont pas tous des mains déformées ou une voix robotique. Inversement, une réduction de qualité du fichier peut abîmer un contenu authentique.",
+     "schema": ""
+    },
+    {
+     "titre": "Un détecteur peut se tromper",
+     "texte": "Un outil peut classer à tort une image réelle comme artificielle ou manquer une fabrication. Son résultat est un indice à examiner, pas une preuve suffisante pour accuser quelqu’un.",
+     "schema": ""
+    },
+    {
+     "titre": "Revenir à l’événement",
+     "texte": "Qui publie ? Quelle origine est documentée ? Existe-t-il une confirmation indépendante de l’événement ? Des informations sur la création du fichier peuvent aider sans prouver à elles seules que tout le récit est exact.",
+     "schema": "Trois repères autour d’un contenu réaliste : origine, contexte, confirmation indépendante. Résultat de détecteur en petit cadre indice, sans marteau de verdict."
+    }
+   ],
+   "dans_ta_vie": "Tu peux éviter de conclure « vrai » parce que c’est réaliste, ou « faux » parce qu’un outil le déclare.",
+   "securite": "Les exercices utilisent des textes et dessins fictifs sans personne identifiable. Ne crée pas de fausse accusation, de faux document officiel ni d’image intime ou humiliante. Ne téléverse pas d’image privée dans un outil de recherche ou de détection.",
+   "defi": "Pendant quatre minutes, prépare une grille de vérification pour une vidéo fictive : auteur, origine, contexte et confirmation indépendante. Ajoute une ligne résultat de détecteur en précisant ses limites. Ne fabrique pas de vidéo de personne réelle.",
+   "quiz": [
+    {
+     "q": "Un hypertrucage peut donner quelle impression ?",
+     "choix": [
+      "Qu’un compte bancaire est garanti",
+      "Qu’une personne a dit ou fait quelque chose",
+      "Qu’une source est forcément indépendante"
+     ],
+     "rep": "Qu’une personne a dit ou fait quelque chose",
+     "expl": "Le réalisme apparent peut porter sur une action ou une parole fabriquée."
+    },
+    {
+     "q": "Un contenu fabriqué doit-il toujours avoir un défaut visible ?",
+     "choix": [
+      "Oui, toujours dans les mains",
+      "Oui, toujours dans la voix",
+      "Non"
+     ],
+     "rep": "Non",
+     "expl": "L’apparence seule n’est pas un test universel."
+    },
+    {
+     "q": "Un détecteur suffit-il à accuser une personne ?",
+     "choix": [
+      "Non",
+      "Oui, quel que soit son fonctionnement",
+      "Oui, avec un résultat coloré"
+     ],
+     "rep": "Non",
+     "expl": "Des erreurs de classification sont possibles."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-13-07"
+  },
+  {
+   "titre": "Partager moins vite, corriger clairement",
+   "accroche": "Tu peux être utile sans diffuser une affirmation incertaine à tout le monde.",
+   "duree_min": 8,
+   "cartes": [
+    {
+     "titre": "L’émotion n’est pas une preuve",
+     "texte": "Un contenu qui t’émeut fortement ou qui confirme ton avis mérite la même vérification qu’un contenu qui te déplaît. Être d’accord avec la conclusion ne valide pas ses éléments.",
+     "schema": ""
+    },
+    {
+     "titre": "Garder l’incertitude visible",
+     "texte": "Si un point n’est pas établi, tu peux ne pas le partager. Dire « je ne sais pas encore » est plus exact que choisir un camp seulement pour terminer la discussion.",
+     "schema": ""
+    },
+    {
+     "titre": "Corriger ce que tu as diffusé",
+     "texte": "Si tu as partagé une erreur, indique ce qui était inexact, la correction et sa source. Fais-le auprès des destinataires concernés sans rediffuser inutilement un contenu humiliant.",
+     "schema": ""
+    },
+    {
+     "titre": "Contester sans harceler",
+     "texte": "Tu peux demander une source ou expliquer un problème précis sans insulter l’auteur. Pour une information de santé ou une alerte de sécurité, utilise les ressources compétentes plutôt qu’une chaîne non vérifiée.",
+     "schema": "Publication incertaine vers pause ; erreur déjà partagée vers correction et destinataires initiaux. Chemin vers insultes ou nouvelle diffusion massive barré."
+    }
+   ],
+   "dans_ta_vie": "Tu peux ralentir la diffusion d’une erreur et réparer plus clairement un partage déjà fait.",
+   "securite": "Les exercices utilisent des textes et dessins fictifs sans personne identifiable. Ne crée pas de fausse accusation, de faux document officiel ni d’image intime ou humiliante. Ne téléverse pas d’image privée dans un outil de recherche ou de détection.",
+   "defi": "Pendant quatre minutes, invente une petite erreur sans enjeu, comme un horaire d’activité. Rédige sa correction avec un document source fictif et indique à qui elle devrait parvenir. Aucun message réel à envoyer.",
+   "quiz": [
+    {
+     "q": "Une information conforme à ton avis demande-t-elle aussi une vérification ?",
+     "choix": [
+      "Non",
+      "Seulement si elle vient d’un inconnu",
+      "Oui"
+     ],
+     "rep": "Oui",
+     "expl": "L’accord personnel ne valide pas les éléments."
+    },
+    {
+     "q": "Que faire si les éléments manquent ?",
+     "choix": [
+      "Garder l’incertitude visible et éviter le partage",
+      "Présenter l’affirmation comme certaine",
+      "Choisir la version la plus populaire"
+     ],
+     "rep": "Garder l’incertitude visible et éviter le partage",
+     "expl": "On peut suspendre la conclusion."
+    },
+    {
+     "q": "Une correction utile indique quoi ?",
+     "choix": [
+      "Uniquement que tout le monde se trompe",
+      "L’erreur, la correction et sa source",
+      "Seulement une nouvelle image sans explication"
+     ],
+     "rep": "L’erreur, la correction et sa source",
+     "expl": "Les destinataires doivent comprendre ce qui change et pourquoi."
+    }
+   ],
+   "video": {
+    "titre": "",
+    "chaine": ""
+   },
+   "id": "CM-13-08"
+  }
+ ]
+}
