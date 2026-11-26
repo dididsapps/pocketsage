@@ -11,7 +11,7 @@ Envoie-moi chaque planche telle quelle (PNG) : je découpe, j'aligne les pieds e
 Reprends exactement ce garçon de 11 ans (même visage, mêmes cheveux blonds bouclés, mêmes taches de rousseur, même corps, même pantalon jean large, mêmes baskets grises, t-shirt blanc).
 Deux changements obligatoires :
 1. Style : rendu 3D d'animation, doux et coloré, façon film d'animation pour enfants (pas photo réaliste) : peau lisse, grands yeux expressifs, éclairage studio doux.
-2. Veste : garde le blouson teddy bleu marine à manches beiges et rayures aux poignets, mais SANS AUCUN logo, écusson, lettre, texte ni personnage dessus (pas de « P », pas de Snoopy, pas de « Peanuts »). Veste unie.
+2. Veste : garde le blouson teddy bleu marine à manches beiges et rayures aux poignets ; remplace le « P » par les lettres « YO » sur la poitrine gauche et mets les lettres « SH » sur la poitrine droite (même style de lettres brodées blanches bordées de rouge). Retire tout le reste : pas de Snoopy, pas de « Peanuts », aucun autre logo, écusson ou texte.
 Image : le garçon en entier, debout, de face, bras le long du corps, sourire léger. Fond transparent, aucun texte. Format 1024 × 1536.
 Cette image devient la référence pour toutes les suivantes.
 ```
