@@ -167,7 +167,7 @@ const AV_ISO=/^avatar-\d\d_(4-8-ans|9-13-ans|14-18-ans|18-et-plus)$/;
 function avId(){try{const p=window.P&&window.P();if(!p||!p.avatarId||p.avatarId==='boy1')return 'andrew';return AV_ISO.test(p.avatarId)?p.avatarId:null;}catch(e){return 'andrew';}}
 const AVS={};function avSheet(n){const id=avId()||'andrew',k=id+'|'+n;if(!AVS[k]){const i=new Image();i.onload=()=>{i.ok=1;};i.src=(id==='andrew'?'assets/interieur/andrew_'+n:'assets/interieur/av/'+id+'_'+n)+'.webp?v='+VER;AVS[k]=i;}return AVS[k];}
 function useSprites(){return avId()!==null;}
-let FALL=null;function fallback(){if(FALL)return FALL;const i=new Image();try{const p=window.P();let src=null;if(p&&p.avatarId){if(p.avatarId==='boy1')src=IMG_AVATAR_BOY1;else{const a=PNG_AVATARS.find(x=>x.id===p.avatarId);if(a)src=_GH+a.f;}}if(src){i.onload=()=>{i.ok=1;};i.src=src;}}catch(e){}FALL=i;return i;}
+let FALL=null;function fallback(){if(FALL)return FALL;const i=new Image();try{const p=window.P();let src=null;if(p&&p.avatarId){if(p.avatarId==='boy1')src=IMG_AVATAR_BOY1;else{const a=PNG_AVATARS.find(x=>x.id===p.avatarId);if(a)src=_av(a.f);}}if(src){i.onload=()=>{i.ok=1;};i.src=src;}}catch(e){}FALL=i;return i;}
 function drawAvatar(c,x,y,pose,frameIdx,flip,lift){
   if(pose!=='sleep'){c.save();c.fillStyle='rgba(0,0,0,.22)';c.beginPath();c.ellipse(x,y,10,4.5,0,0,7);c.fill();c.restore();}
   if(useSprites()){const sheet=pose==='walkF'?avSheet('walk_front'):pose==='walkB'||pose==='sitB'?avSheet('walk_back'):avSheet('poses');

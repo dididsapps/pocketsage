@@ -230,7 +230,7 @@ window.w3Hooks.draw.push(ctx=>{const p=pet();if(!p)return;petDecay();const w=W()
 // ── Famille (5 personnes maximum) ──────────────────────────────────────
 const ROLES=['Papa','Maman','Frère','Sœur','Papi','Mamie','Bébé','Ami(e)'];
 const FAM=[];const FIMG={};
-function famImg(av){if(!FIMG[av]){const i=new Image();i.onload=()=>{i.ok=1;};try{const a=(window.PNG_AVATARS||[]).find(x=>x.id===av);if(a)i.src=_GH+a.f;}catch(e){}FIMG[av]=i;}return FIMG[av];}
+function famImg(av){if(!FIMG[av]){const i=new Image();i.onload=()=>{i.ok=1;};try{const a=(window.PNG_AVATARS||[]).find(x=>x.id===av);if(a)i.src=_av(a.f);}catch(e){}FIMG[av]=i;}return FIMG[av];}
 function openFamily(){
   const e=X();let role=ROLES[0],av=null;
   const avs=(window.PNG_AVATARS||[]).slice(0,40);
@@ -238,7 +238,7 @@ function openFamily(){
     <div class="fam-list">${e.family.map((m,i)=>`<div><b>${m.name}</b> <small>${m.role}</small><button data-del="${i}">✖</button></div>`).join('')||'<p>Personne pour l’instant. Ajoute ta famille : elle vivra dans ta ville !</p>'}</div>
     ${e.family.length<5?`<div class="fam-add"><b>Ajouter :</b><div class="fam-roles">${ROLES.map(r=>`<button data-r="${r}" class="${r===role?'on':''}">${r}</button>`).join('')}</div>
       <input class="mp-in" id="fname" maxlength="16" placeholder="Prénom">
-      <div class="fam-avs">${avs.map(a=>`<button data-av="${a.id}"><img src="${_GH+a.f}" alt="" loading="lazy" onerror="this.replaceWith(document.createTextNode('🙂'))"></button>`).join('')}</div>
+      <div class="fam-avs">${avs.map(a=>`<button data-av="${a.id}"><img src="${_av(a.f)}" alt="" loading="lazy" onerror="this.replaceWith(document.createTextNode('🙂'))"></button>`).join('')}</div>
       <button id="fadd" class="mp-main">➕ Ajouter à ma famille</button></div>`:''}`,'mp-fam');
   o.querySelectorAll('[data-del]').forEach(b=>b.onclick=()=>{e.family.splice(+b.dataset.del,1);FAM.length=0;save();o.remove();openFamily();});
   o.querySelectorAll('[data-r]').forEach(b=>b.onclick=()=>{role=b.dataset.r;o.querySelectorAll('[data-r]').forEach(x=>x.classList.toggle('on',x===b));});

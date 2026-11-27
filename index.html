@@ -1091,7 +1091,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 /* Hide Netlify badge */
 [data-netlify-deploy-id],[aria-label="Netlify"]{display:none!important}
 </style>
-<link rel="stylesheet" href="css/jeux.css?v=108">
+<link rel="stylesheet" href="css/jeux.css?v=109">
 </head>
 <body>
 
@@ -1660,13 +1660,15 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   <button class="nb" data-nav="legal" onclick="showLegal()"><span class="ni">📋</span><span class="nl">Légal</span></button>
 </div>
 
-<script src="js/jeux.js?v=108"></script>
-<script src="js/jeux-cerveau.js?v=108"></script>
-<script src="js/coach-voix.js?v=108"></script>
-<script src="js/monde-interieur.js?v=108"></script>
-<script src="js/monde-plus.js?v=108"></script>
+<script src="js/jeux.js?v=109"></script>
+<script src="js/jeux-cerveau.js?v=109"></script>
+<script src="js/coach-voix.js?v=109"></script>
+<script src="js/monde-interieur.js?v=109"></script>
+<script src="js/monde-plus.js?v=109"></script>
 <script>
 const _GH="https://pub-8cdc5500f1ab4785ba254b7335f7a68a.r2.dev/avatars/";
+// Fichier d'avatar : nom seul → CDN R2 ; chemin « avatars/… » → servi par le site. Une humeur peut avoir plusieurs GIF (tirage au hasard).
+function _av(f){if(Array.isArray(f))f=f[Math.floor(Math.random()*f.length)];return /^(https?:|avatars\/|assets\/)/.test(f||'')?f:_GH+f;}
 const IMG_AVATAR_BOY1=_GH+"Andrew_7-ans_4-8-ans_garcon_cheveux-chatains_tenue-basket-marine_3d_neutre.png";
 // GIFs Sensei par humeur (4 niveaux)
 const IMG_SENSEI_OK=_GH+'Sensei_heureux.gif';                          // 51-75%
@@ -1680,6 +1682,12 @@ const IMG_ANDREW_KO=_GH+'Andrew_7-ans_4-8-ans_pas-bien-du-tout_mains-sur-visage.
 const IMG_ANDREW_ENCOURAGE=_GH+'Andrew_7-ans_4-8-ans_pas-bien_non-index-leve.gif';
 // GIF_MAP : tous les avatars PNG (16 avatars × 4 groupes d'âge × 4 humeurs)
 var GIF_MAP = {
+  "avatar-17_9-13-ans": {
+    content: ["avatars/avatar-17_9-13-ans_garcon_peau-claire_cheveux-blonds-boucles_teddy-marine_3d_content_pouce.gif","avatars/avatar-17_9-13-ans_garcon_peau-claire_cheveux-blonds-boucles_teddy-marine_3d_content_applaudit.gif"],
+    pasBien: ["avatars/avatar-17_9-13-ans_garcon_peau-claire_cheveux-blonds-boucles_teddy-marine_3d_pas-bien_epaules.gif","avatars/avatar-17_9-13-ans_garcon_peau-claire_cheveux-blonds-boucles_teddy-marine_3d_pas-bien_tete.gif"],
+    pasBienDuTout: ["avatars/avatar-17_9-13-ans_garcon_peau-claire_cheveux-blonds-boucles_teddy-marine_3d_pas-bien-du-tout_mains.gif","avatars/avatar-17_9-13-ans_garcon_peau-claire_cheveux-blonds-boucles_teddy-marine_3d_pas-bien-du-tout_pied.gif"],
+    superContent: ["avatars/avatar-17_9-13-ans_garcon_peau-claire_cheveux-blonds-boucles_teddy-marine_3d_super-content_saut.gif","avatars/avatar-17_9-13-ans_garcon_peau-claire_cheveux-blonds-boucles_teddy-marine_3d_super-content_danse.gif"]
+  },
   "avatar-01_14-18-ans": {
     content: "avatar-01_14-18-ans_fille_peau-foncee_cheveux-boucles_bomber-emeraude_3d_content_clin-oeil-complice.gif",
     pasBien: "avatar-01_14-18-ans_fille_peau-foncee_cheveux-boucles_bomber-emeraude_3d_pas-bien_paume-et-tete.gif",
@@ -11695,6 +11703,7 @@ var PNG_AVATARS=[
   {id:'avatar-14_9-13-ans',f:'avatar-14_9-13-ans_garcon_peau-foncee_cheveux-boucles-degrades_surchemise-beige_3d_neutre.png',age:'9-13'},
   {id:'avatar-15_9-13-ans',f:'avatar-15_9-13-ans_fille_peau-mate_cheveux-noirs-chignon_ensemble-sport-turquoise_3d_neutre.png',age:'9-13'},
   {id:'avatar-16_9-13-ans',f:'avatar-16_9-13-ans_garcon_peau-claire_cheveux-bruns-courts_veste-verte_pantalon-marine_3d_neutre.png',age:'9-13'},
+  {id:'avatar-17_9-13-ans',f:'avatars/avatar-17_9-13-ans_garcon_peau-claire_cheveux-blonds-boucles_teddy-marine_3d_neutre.png',age:'9-13'},
   // 14-18 ans
   {id:'avatar-01_14-18-ans',f:'avatar-01_14-18-ans_fille_peau-foncee_cheveux-boucles_bomber-emeraude_3d_neutre.png',age:'14-18'},
   {id:'avatar-02_14-18-ans',f:'avatar-02_14-18-ans_garcon_peau-claire_cheveux-blonds_veste-jean_3d_neutre.png',age:'14-18'},
@@ -11777,7 +11786,7 @@ function buildAvatarGrid(){
   // 16 avatars de la tranche
   var EMOJIS=['🧒🏿','👦🏻','👧🏼','👦🏾','👧🏻','👦🏿','👧🏽','👦🏼','👧🏾','👦🏽','👧🏿','👦🏻','👧🏼','👦🏾','👧🏻','👦🏿'];
   list.forEach(function(av,i){
-    g.appendChild(mkAvItem(av.id, _GH+av.f, EMOJIS[i%EMOJIS.length], prevId===av.id));
+    g.appendChild(mkAvItem(av.id, _av(av.f), EMOJIS[i%EMOJIS.length], prevId===av.id));
   });
 }
 
@@ -11790,7 +11799,7 @@ if(avatarId==='boy1'){
 // Vérifier si c'est un PNG avatar (avatar-XX_...)
 var pngAv=PNG_AVATARS.find(function(a){return a.id===avatarId;});
 if(pngAv){
-  return '<img class="char-img" src="'+_GH+pngAv.f+'" style="height:'+h+'px;width:auto" loading="lazy">';
+  return '<img class="char-img" src="'+_av(pngAv.f)+'" style="height:'+h+'px;width:auto" loading="lazy">';
 }
 // Fallback SVG legacy
 const av=CHAR_AVATARS.find(function(a){return a.id===avatarId;})||CHAR_AVATARS[0];
@@ -12327,7 +12336,7 @@ function showReactOverlay(win){
     }else if(GIF_MAP[p.avatarId]){
       var gm=GIF_MAP[p.avatarId];
       var avatarKey=win?(Math.random()<.5?'content':'superContent'):(Math.random()<.5?'pasBienDuTout':'pasBien');
-      var avatarGif=_GH+gm[avatarKey];
+      var avatarGif=_av(gm[avatarKey]);
       avEl.innerHTML='<img src="'+avatarGif+'" style="height:110px;width:auto" alt="Avatar">';
     }else{
       var avSvg=getAvatarSVG(p.avatarId,'md');
@@ -15920,7 +15929,7 @@ function showFinal(list,mod){
   }else if(p&&p.avatarId&&GIF_MAP[p.avatarId]){
     var gm=GIF_MAP[p.avatarId];
     var mk=pct<=0.25?'pasBienDuTout':pct<=0.5?'pasBien':pct<=0.75?'content':'superContent';
-    avatarGif=_GH+gm[mk];
+    avatarGif=_av(gm[mk]);
   }
   var charsEl=document.getElementById('sc-chars');
   if(charsEl){
@@ -16613,7 +16622,7 @@ function openProfil(){
     hdr.textContent=gr.label;
     avGrid.appendChild(hdr);
     PNG_AVATARS.filter(function(a){return a.age===gr.key;}).forEach(function(av,i){
-      avGrid.appendChild(mkProfAvItem(av.id,_GH+av.f,EMOJIS2[i%16],p.avatarId===av.id,function(){
+      avGrid.appendChild(mkProfAvItem(av.id,_av(av.f),EMOJIS2[i%16],p.avatarId===av.id,function(){
         avGrid.querySelectorAll('.av-item').forEach(function(el){el.classList.remove('sel');});
         this.classList.add('sel');p.avatarId=av.id;saveApp();buildProfBar();buildHome();sndTap();
       }));
@@ -20097,7 +20106,7 @@ function lifeScreenPos(){const L=W3.life;const a=toIso(L.pos.col,L.pos.row),h0=w
 function lifeAvatarEl(){
   let av=document.getElementById('w3-av');const wrap=document.getElementById('world3-wrap');if(!wrap)return null;
   if(!av){av=document.createElement('img');av.id='w3-av';av.alt='';av.style.cssText='position:absolute;z-index:5;pointer-events:none;display:none;width:auto';
-    let src=null;try{const p=P();if(p&&p.avatarId){if(p.avatarId==='boy1')src=IMG_AVATAR_BOY1;else{const a=PNG_AVATARS.find(x=>x.id===p.avatarId);if(a)src=_GH+a.f;}}}catch(e){}
+    let src=null;try{const p=P();if(p&&p.avatarId){if(p.avatarId==='boy1')src=IMG_AVATAR_BOY1;else{const a=PNG_AVATARS.find(x=>x.id===p.avatarId);if(a)src=_av(a.f);}}}catch(e){}
     if(src){av.onload=()=>{av.dataset.ok='1';};av.src=src;}wrap.appendChild(av);}
   return av;
 }
@@ -20450,14 +20459,14 @@ window.transferCoinsToWorld=function(n){
 
 })();
 </script>
-<script src="js/questions-plus-data.js?v=108"></script>
-<script src="js/questions-plus.js?v=108"></script>
-<script src="js/parcours-data.js?v=108"></script>
-<script src="js/parcours.js?v=108"></script>
-<script src="js/fiches.js?v=108"></script>
-<script src="js/relax.js?v=108"></script>
-<script src="js/ccm.js?v=108"></script>
-<script src="js/sport-illus.js?v=108"></script>
+<script src="js/questions-plus-data.js?v=109"></script>
+<script src="js/questions-plus.js?v=109"></script>
+<script src="js/parcours-data.js?v=109"></script>
+<script src="js/parcours.js?v=109"></script>
+<script src="js/fiches.js?v=109"></script>
+<script src="js/relax.js?v=109"></script>
+<script src="js/ccm.js?v=109"></script>
+<script src="js/sport-illus.js?v=109"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
